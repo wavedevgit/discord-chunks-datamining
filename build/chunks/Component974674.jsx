@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk508312 = require("./508312.js"),
+  Chunk509442 = require("./509442.js"),
   Chunk793030 = require("./793030.js"),
   Chunk438784 = require("./438784.jsx"),
   Chunk696826 = require("./696826.jsx"),
@@ -139,6 +139,8 @@ function P(e, t, n, r) {
       return _.QS.AVATAR_DECORATION_STATUS_TYPING_48;
     case g.EF.SIZE_56:
       return _.QS.AVATAR_DECORATION_STATUS_TYPING_56;
+    case g.EF.SIZE_72:
+      return _.QS.AVATAR_DECORATION_STATUS_TYPING_72;
     case g.EF.SIZE_80:
       return _.QS.AVATAR_DECORATION_STATUS_TYPING_80;
     case g.EF.SIZE_96:
@@ -163,6 +165,8 @@ function P(e, t, n, r) {
       return _.QS.AVATAR_DECORATION_STATUS_MOBILE_48;
     case g.EF.SIZE_56:
       return _.QS.AVATAR_DECORATION_STATUS_MOBILE_56;
+    case g.EF.SIZE_72:
+      return _.QS.AVATAR_DECORATION_STATUS_MOBILE_72;
     case g.EF.SIZE_80:
       return _.QS.AVATAR_DECORATION_STATUS_MOBILE_80;
     case g.EF.SIZE_96:
@@ -187,6 +191,8 @@ function P(e, t, n, r) {
       return _.QS.AVATAR_DECORATION_STATUS_ROUND_48;
     case g.EF.SIZE_56:
       return _.QS.AVATAR_DECORATION_STATUS_ROUND_56;
+    case g.EF.SIZE_72:
+      return _.QS.AVATAR_DECORATION_STATUS_ROUND_72;
     case g.EF.SIZE_80:
       return _.QS.AVATAR_DECORATION_STATUS_ROUND_80;
     case g.EF.SIZE_96:
@@ -216,6 +222,8 @@ function D(e, t, n, r) {
       return _.QS.AVATAR_STATUS_TYPING_48;
     case g.EF.SIZE_56:
       return _.QS.AVATAR_STATUS_TYPING_56;
+    case g.EF.SIZE_72:
+      return _.QS.AVATAR_STATUS_TYPING_72;
     case g.EF.SIZE_80:
       return _.QS.AVATAR_STATUS_TYPING_80;
     case g.EF.SIZE_96:
@@ -240,6 +248,8 @@ function D(e, t, n, r) {
       return _.QS.AVATAR_STATUS_MOBILE_48;
     case g.EF.SIZE_56:
       return _.QS.AVATAR_STATUS_MOBILE_56;
+    case g.EF.SIZE_72:
+      return _.QS.AVATAR_STATUS_MOBILE_72;
     case g.EF.SIZE_80:
       return _.QS.AVATAR_STATUS_MOBILE_80;
     case g.EF.SIZE_96:
@@ -264,6 +274,8 @@ function D(e, t, n, r) {
       return _.QS.AVATAR_STATUS_ROUND_48;
     case g.EF.SIZE_56:
       return _.QS.AVATAR_STATUS_ROUND_56;
+    case g.EF.SIZE_72:
+      return _.QS.AVATAR_STATUS_ROUND_72;
     case g.EF.SIZE_80:
       return _.QS.AVATAR_STATUS_ROUND_80;
     case g.EF.SIZE_96:

@@ -62,33 +62,31 @@ let h = e => {
     useShorterCTA: h = false,
     showGradient: m,
     confirmationFooter: g,
-    paymentModalBanner: E,
-    color: b
-  } = e, y = _(e, ["textOptions", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "paymentModalBanner", "color"]);
-  let O = (0, o.ZP)(),
+    color: E
+  } = e, b = _(e, ["textOptions", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "color"]);
+  let y = (0, o.ZP)(),
     {
-      buttonText: v,
-      marketingSubscriptionTierSkuId: I
+      buttonText: O,
+      marketingSubscriptionTierSkuId: v
     } = (0, c.G)({
       hasActivePromotion: d,
       subscriptionTier: n,
       useShorterCTA: h,
       isPersistentCTA: p
     }),
-    T = (0, s.N)(),
-    S = null == T ? true : T.subscription_trial,
-    A = null != S && I === S.sku_id,
-    C = null != b ? b : (0, i.wj)(O) ? a.Tt.BRAND_INVERTED : a.Tt.BRAND;
+    I = (0, s.N)(),
+    T = null == I ? true : I.subscription_trial,
+    S = null != T && v === T.sku_id,
+    A = null != E ? E : (0, i.wj)(y) ? a.Tt.BRAND_INVERTED : a.Tt.BRAND;
   return (0, r.jsx)(l.Z, f({
-    color: C,
+    color: A,
     textOptions: f({
-      textOverride: v,
-      textClassName: A ? u.freeTrialText : true
+      textOverride: O,
+      textClassName: S ? u.freeTrialText : true
     }, t),
     onlyShineOnHover: true,
-    subscriptionTier: I,
+    subscriptionTier: v,
     showGradient: m,
-    confirmationFooter: g,
-    paymentModalBanner: E
-  }, y))
+    confirmationFooter: g
+  }, b))
 }

@@ -1,7 +1,8 @@
-/** Chunk was on 54400 **/
-/** chunk id: 427261, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 427261, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  h: () => d
+  h: () => c
 });
 var Chunk951288 = require("./951288.js"),
   Chunk990547 = require("./990547.js"),
@@ -9,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk213609 = require("./213609.js"),
   Chunk839683 = require("./839683.js");
-let d = e => {
+let c = e => {
   let {
     componentId: t,
     promotionBannerMarketingComponentFields: n
@@ -18,20 +19,20 @@ let d = e => {
     type: i.ImpressionTypes.VIEW,
     name: i.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
     properties: {
-      component_type: l.I.PAYMENT_MODAL_BANNER,
+      component_type: a.I.PAYMENT_MODAL_BANNER,
       component_id: t
     }
   }), (0, r.jsx)("div", {
-    className: o.container,
+    className: l.container,
     children: (0, r.jsxs)("div", {
-      className: o.content,
+      className: l.content,
       children: [(0, r.jsx)("div", {
-        children: (0, r.jsx)(a.Eep, {
+        children: (0, r.jsx)(o.Eep, {
           src: n.assetUrl,
           width: 48,
           height: 48
         })
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-primary",
         children: n.body

@@ -74,39 +74,37 @@ let _ = function(e) {
     premiumModalAnalyticsLocation: f,
     applicationId: _,
     confirmationFooter: p,
-    paymentModalBanner: h,
-    buttonTextOverride: m,
-    defaultTextOverride: g,
-    iconOverride: E,
-    variantOverride: b
-  } = e, y = d(e, ["subscriptionTier", "onClick", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "applicationId", "confirmationFooter", "paymentModalBanner", "buttonTextOverride", "defaultTextOverride", "iconOverride", "variantOverride"]);
-  let O = {
+    buttonTextOverride: h,
+    defaultTextOverride: m,
+    iconOverride: g,
+    variantOverride: E
+  } = e, b = d(e, ["subscriptionTier", "onClick", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "applicationId", "confirmationFooter", "buttonTextOverride", "defaultTextOverride", "iconOverride", "variantOverride"]);
+  let y = {
       onClick: n,
       subscriptionTier: t,
       postSuccessGuild: s,
       onSubscribeModalClose: c,
       premiumModalAnalyticsLocation: f,
       applicationId: _,
-      confirmationFooter: p,
-      paymentModalBanner: h
+      confirmationFooter: p
     },
     {
-      subscribeButtonProps: v
+      subscribeButtonProps: O
     } = (0, o.F)({
       subscriptionTier: t,
-      buttonTextOverride: m,
-      defaultTextOverride: g,
-      iconOverride: E,
-      variantOverride: b
+      buttonTextOverride: h,
+      defaultTextOverride: m,
+      iconOverride: g,
+      variantOverride: E
     });
-  return (0, r.jsx)(a.Z, u(l({}, O), {
+  return (0, r.jsx)(a.Z, u(l({}, y), {
     children: e => {
       let {
         onClick: t
       } = e;
       return (0, r.jsx)(i.zxk, l({
         onClick: t
-      }, v, y))
+      }, O, b))
     }
   }))
 }

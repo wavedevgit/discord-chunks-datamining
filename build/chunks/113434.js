@@ -143,8 +143,15 @@ function K(e, t) {
     f = (null == (i = e.userStatus) ? true : i.claimedAt) != null,
     _ = (null == (a = t.userStatus) ? true : a.claimedAt) != null,
     p = (null == (o = e.userStatus) ? true : o.enrolledAt) != null,
-    h = (null == (s = t.userStatus) ? true : s.enrolledAt) != null;
-  return d ? f !== _ ? f ? H : V : p !== h ? p ? V : H : eo(e.config.expiresAt, t.config.expiresAt, 1) : f !== _ ? f ? V : H : p !== h ? p ? V : H : eo(e.config.expiresAt, t.config.expiresAt, 0)
+    h = (null == (s = t.userStatus) ? true : s.enrolledAt) != null,
+    {
+      enabled: m,
+      minutes: g
+    } = (0, w.eC)(G.dr.QUEST_HOME_DESKTOP),
+    E = O.Z.Millis.MINUTE * g,
+    b = e3(e, E),
+    y = e3(t, E);
+  return d ? m && b !== y && (b || y) ? b ? H : V : f !== _ ? f ? H : V : p !== h ? p ? V : H : eo(e.config.expiresAt, t.config.expiresAt, 1) : f !== _ ? f ? V : H : p !== h ? p ? V : H : eo(e.config.expiresAt, t.config.expiresAt, 0)
 }
 
 function z(e, t) {
@@ -961,10 +968,15 @@ function e1(e) {
   }, [n, i])
 }
 let e2 = e => {
-  let t = false,
-    n = r.useMemo(() => {
-      var e;
-      return (null == (e = b.default.getCurrentUser()) ? true : e.isStaff()) === true
-    }, []);
-  return t || n || e.preview
-}
+    let t = false,
+      n = r.useMemo(() => {
+        var e;
+        return (null == (e = b.default.getCurrentUser()) ? true : e.isStaff()) === true
+      }, []);
+    return t || n || e.preview
+  },
+  e3 = (e, t) => {
+    var n, r, i;
+    let a = (null == (n = e.userStatus) ? true : n.completedAt) != null;
+    return (null == (r = e.userStatus) ? true : r.enrolledAt) != null && !a && Date.now() - new Date(null == (i = e.userStatus) ? true : i.enrolledAt).getTime() > t
+  }

@@ -203,7 +203,7 @@ async function et(e, t, n, r) {
     stale: [],
     channels: []
   }))])), _ = await v.Z.fetchStaleChannels.measureAsync(() => null != e && null != f && f.stale.length > 0 ? (0, l.dI)(() => ee(e, f.stale)) : Promise.resolve([]));
-  O.l2.getCachedEnabled() ? (w.verbose("loadLateLazyCache: yielding to react"), await new Promise(e => setTimeout(e, 0))) : w.verbose("loadLateLazyCache: not yielding to react"), v.Z.loadLazyCache.recordStart();
+  O.E3.getCachedEnabled() ? w.verbose("loadLateLazyCache: not yielding to react") : (w.verbose("loadLateLazyCache: yielding to react"), await new Promise(e => setTimeout(e, 0))), v.Z.loadLazyCache.recordStart();
   let p = y.Z.getSocket();
   en(() => {
     let i = performance.now();

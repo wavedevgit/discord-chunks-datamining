@@ -34,7 +34,7 @@ let o = "1144058522808614923",
         colors: [2949343]
       },
       getName: () => Chunk388032.intl.string(Chunk388032.t["4g+5bq"]),
-      getHeaderSrc: () => require("./808236.js").Z,
+      getHeaderSrc: () => require("./430597.js").Z,
       getBannerSrc: e => e ? n(957901).Z : n(673497).Z
     },
     shadow_realm: {

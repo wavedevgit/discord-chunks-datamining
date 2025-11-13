@@ -1,12 +1,12 @@
 /** Chunk was on 54400 **/
 /** chunk id: 14476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => x
+  c: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -17,85 +17,85 @@ var Chunk951288 = require("./951288.js"),
   Chunk396728 = require("./396728.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk632939 = require("./632939.js");
-let x = e => {
+let g = e => {
   let t, n, {
-      skuId: l,
-      assetId: x,
-      user: _,
-      claimed: j,
-      onSelect: g,
-      productName: b,
-      a11yLabel: y,
-      selectedSkuId: v,
-      category: L,
-      type: S,
-      palette: O
+      skuId: a,
+      assetId: g,
+      user: v,
+      claimed: x,
+      onSelect: j,
+      productName: y,
+      a11yLabel: P,
+      selectedSkuId: S,
+      category: _,
+      type: O,
+      palette: C
     } = e,
-    P = i.useRef(null),
+    w = l.useRef(null),
     {
-      isHoveringOrFocusing: E
-    } = (0, c.Z)(P),
-    w = !j && E,
-    I = (0, C.ZP)(),
-    M = (0, o.wj)(I);
-  return S === s.Z.AVATAR_DECORATION ? (t = {
-    type: s.Z.AVATAR_DECORATION,
-    label: y,
-    asset: x
+      isHoveringOrFocusing: k
+    } = (0, u.Z)(w),
+    E = !x && k,
+    I = (0, c.ZP)(),
+    T = (0, s.wj)(I);
+  return O === o.Z.AVATAR_DECORATION ? (t = {
+    type: o.Z.AVATAR_DECORATION,
+    label: P,
+    asset: g
   }, n = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(p.R, {
+    children: [(0, r.jsx)(m.R, {
       item: t,
-      user: _,
-      isHighlighted: w,
+      user: v,
+      isHighlighted: E,
       avatarSize: d.EFr.SIZE_96,
-      isPurchased: j
-    }), j && (0, r.jsx)(d.dz2, {
+      isPurchased: x
+    }), x && (0, r.jsx)(d.dz2, {
       size: "custom",
       width: 48,
       height: 48,
       color: d.TVs.colors.WHITE,
-      className: f.claimedIcon
+      className: b.claimedIcon
     })]
-  })) : S === s.Z.NAMEPLATE && (t = {
-    type: s.Z.NAMEPLATE,
-    label: y,
-    asset: x,
-    palette: null != O ? O : "none"
+  })) : O === o.Z.NAMEPLATE && (t = {
+    type: o.Z.NAMEPLATE,
+    label: P,
+    asset: g,
+    palette: null != C ? C : "none"
   }, n = (0, r.jsx)(h.Z, {
     nameplate: t,
-    user: _,
-    isHighlighted: w,
-    isPurchased: j,
+    user: v,
+    isHighlighted: E,
+    isPurchased: x,
     size: "small"
   })), (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)(d.kL8, {
-      ref: P,
-      "aria-label": null != b ? b : "",
+      ref: w,
+      "aria-label": null != y ? y : "",
       onClick: () => {
-        null == l || null == g || j || g(l)
+        null == a || null == j || x || j(a)
       },
-      className: a()(M ? f.shopCardDark : f.shopCard, {
-        [f.shopCardAnimation]: !j,
-        [M ? f.shopCardDarkHighlighted : f.shopCardHighlighted]: w,
-        [f.shopCardSelected]: v === l
+      className: i()(T ? b.shopCardDark : b.shopCard, {
+        [b.shopCardAnimation]: !x,
+        [T ? b.shopCardDarkHighlighted : b.shopCardHighlighted]: E,
+        [b.shopCardSelected]: S === a
       }),
       children: [(0, r.jsx)("div", {
-        className: a()(f.preview, {
-          [f.avatarPreview]: S === s.Z.AVATAR_DECORATION,
-          [f.nameplatePreview]: S === s.Z.NAMEPLATE,
-          [f.previewTrick]: L === u.KN.Trick,
-          [f.previewTreat]: L === u.KN.Treat,
-          [f.shopCardClaimed]: j
+        className: i()(b.preview, {
+          [b.avatarPreview]: O === o.Z.AVATAR_DECORATION,
+          [b.nameplatePreview]: O === o.Z.NAMEPLATE,
+          [b.previewTrick]: _ === p.KN.Trick,
+          [b.previewTreat]: _ === p.KN.Treat,
+          [b.shopCardClaimed]: x
         }),
         children: null != t && n
       }), (0, r.jsxs)("div", {
-        className: f.productName,
+        className: b.productName,
         children: [(0, r.jsx)(d.Heading, {
           variant: "heading-md/extrabold",
-          children: b
+          children: y
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
-          children: j ? m.intl.string(m.t["6cfuDj"]) : m.intl.string(m.t.QQsaCc)
+          children: x ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)
         })]
       })]
     })

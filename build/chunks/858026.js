@@ -1,12 +1,12 @@
 /** Chunk was on 54400 **/
 /** chunk id: 858026, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk647438 = require("./647438.js"),
   Chunk699758 = require("./699758.js");
 
-function l(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -25,7 +25,7 @@ function l(e) {
   return e
 }
 
-function a(e, t) {
+function i(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -38,28 +38,28 @@ function a(e, t) {
   }), e
 }
 
-function s(e) {
+function o(e) {
   var t;
   let {
     claimableVariants: n,
-    defaultSelection: s,
-    selectedGiftingPromotionReward: o,
+    defaultSelection: o,
+    selectedGiftingPromotionReward: s,
     setSelectedGiftingPromotionReward: d,
-    hasUserMadeSelection: C
-  } = e, c = null != n && n.length > 0, [u, p] = r.useState(null != (t = null == s ? true : s.defaultCategory) ? t : i.KN.Trick), h = r.useRef(u), m = r.useMemo(() => c ? n.flatMap(e => e.variants.length < i.mo ? [] : a(l({}, e.variants[u]), {
+    hasUserMadeSelection: c
+  } = e, u = null != n && n.length > 0, [p, m] = r.useState(null != (t = null == o ? true : o.defaultCategory) ? t : l.KN.Trick), h = r.useRef(p), f = r.useMemo(() => u ? n.flatMap(e => e.variants.length < l.mo ? [] : i(a({}, e.variants[p]), {
     name: e.name
-  })) : [], [n, u, c]), f = r.useMemo(() => null != o && m.some(e => e.skuId === o.skuId), [m, o]);
+  })) : [], [n, p, u]), b = r.useMemo(() => null != s && f.some(e => e.skuId === s.skuId), [f, s]);
   if (r.useEffect(() => {
-      c && ((null == s ? true : s.defaultCategory) == null || C || p(s.defaultCategory))
-    }, [null == s ? true : s.defaultCategory, C, c]), r.useEffect(() => {
-      c && (h.current === u || f || d(true), h.current = u)
-    }, [u, f, d, c]), !c) return null;
-  let x = n.length > 1;
-  return a(l({}, x && {
-    selectedCategory: u
-  }, x && {
-    setSelectedCategory: p
+      u && ((null == o ? true : o.defaultCategory) == null || c || m(o.defaultCategory))
+    }, [null == o ? true : o.defaultCategory, c, u]), r.useEffect(() => {
+      u && (h.current === p || b || d(true), h.current = p)
+    }, [p, b, d, u]), !u) return null;
+  let g = n.length > 1;
+  return i(a({}, g && {
+    selectedCategory: p
+  }, g && {
+    setSelectedCategory: m
   }), {
-    shouldRenderCategoryControl: x
+    shouldRenderCategoryControl: g
   })
 }

@@ -1,12 +1,12 @@
 /** Chunk was on 54400 **/
 /** chunk id: 831895, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk347896 = require("./347896.js"),
   Chunk699758 = require("./699758.js"),
@@ -14,62 +14,62 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk807276 = require("./807276.js");
 
-function p(e) {
-  var t, n, l, p;
+function m(e) {
+  var t, n, a, m;
   let {
     defaultCategory: h,
-    onCategoryChange: m,
-    className: f
-  } = e, [x, _] = i.useState(h), [j, g] = i.useState(null), b = (0, o.Z)(), y = i.useMemo(() => [{
-    name: c.intl.string(c.t["6Zuivx"]),
+    onCategoryChange: f,
+    className: b
+  } = e, [g, v] = l.useState(h), [x, j] = l.useState(null), y = (0, s.Z)(), P = l.useMemo(() => [{
+    name: u.intl.string(u.t["6Zuivx"]),
     value: d.KN.Trick,
     key: "Trick",
-    icon: (0, r.jsx)(s.yDF, {
+    icon: (0, r.jsx)(o.yDF, {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => g(d.KN.Trick),
-    onMouseLeave: () => g(null)
+    onMouseEnter: () => j(d.KN.Trick),
+    onMouseLeave: () => j(null)
   }, {
-    name: c.intl.string(c.t["2UeOlY"]),
+    name: u.intl.string(u.t["2UeOlY"]),
     value: d.KN.Treat,
     key: "Treat",
-    icon: (0, r.jsx)(s.sq, {
+    icon: (0, r.jsx)(o.sq, {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => g(d.KN.Treat),
-    onMouseLeave: () => g(null)
-  }], []), v = i.useCallback(e => {
-    _(e.value), m(e.value)
-  }, [m]), L = null == b || null == (n = b.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, S = null == b || null == (p = b.segmentedControlAnimations) || null == (l = p.treat) ? true : l.getAnimationData;
+    onMouseEnter: () => j(d.KN.Treat),
+    onMouseLeave: () => j(null)
+  }], []), S = l.useCallback(e => {
+    v(e.value), f(e.value)
+  }, [f]), _ = null == y || null == (n = y.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, O = null == y || null == (m = y.segmentedControlAnimations) || null == (a = m.treat) ? true : a.getAnimationData;
   return (0, r.jsxs)("div", {
-    className: a()(u.container, f),
-    children: [(0, r.jsx)(C.w, {
-      options: y,
-      value: x,
-      onChange: v
-    }), j === d.KN.Trick && null != L && (0, r.jsx)("div", {
-      className: a()(u.animationOverlay, u.trickAnimation),
-      children: (0, r.jsx)(s.Fmz, {
+    className: i()(p.container, b),
+    children: [(0, r.jsx)(c.w, {
+      options: P,
+      value: g,
+      onChange: S
+    }), x === d.KN.Trick && null != _ && (0, r.jsx)("div", {
+      className: i()(p.animationOverlay, p.trickAnimation),
+      children: (0, r.jsx)(o.Fmz, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
-        className: u.lottieAnimation,
-        importData: L,
-        renderer: s.Fmz.Renderers.SVG,
-        versionKey: +(j === d.KN.Trick)
+        className: p.lottieAnimation,
+        importData: _,
+        renderer: o.Fmz.Renderers.SVG,
+        versionKey: +(x === d.KN.Trick)
       })
-    }), j === d.KN.Treat && null != S && (0, r.jsx)("div", {
-      className: a()(u.animationOverlay, u.treatAnimation),
-      children: (0, r.jsx)(s.Fmz, {
+    }), x === d.KN.Treat && null != O && (0, r.jsx)("div", {
+      className: i()(p.animationOverlay, p.treatAnimation),
+      children: (0, r.jsx)(o.Fmz, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
-        className: u.lottieAnimation,
-        importData: S,
-        renderer: s.Fmz.Renderers.SVG,
-        versionKey: +(j === d.KN.Treat)
+        className: p.lottieAnimation,
+        importData: O,
+        renderer: o.Fmz.Renderers.SVG,
+        versionKey: +(x === d.KN.Treat)
       })
     })]
   })

@@ -96,22 +96,21 @@ function R(e) {
     analyticsLocation: w,
     analyticsSourceLocation: x,
     confirmationFooter: L,
-    paymentModalBanner: M,
-    isGift: j = false,
-    giftMessage: k,
-    giftStyle: U,
-    giftingOrigin: G,
-    subscriptionTier: B,
-    trialId: Z,
-    postSuccessGuild: F,
-    openInvoiceId: V,
-    applicationId: H,
-    referralTrialOfferId: Y,
-    giftRecipient: W,
-    returnRef: K,
-    subscription: z,
-    skipConfirm: q
-  } = null != e ? e : {}, X = false, Q = null != (t = (0, b.b)()) ? t : (0, o.Z)(), J = h.default.getCurrentUser(), $ = (0, E.M5)(J, v.PremiumTypes.TIER_2), ee = a()("payment-modal"), et = (0, E.Wz)(B), en = false;
+    isGift: M = false,
+    giftMessage: j,
+    giftStyle: k,
+    giftingOrigin: U,
+    subscriptionTier: G,
+    trialId: B,
+    postSuccessGuild: Z,
+    openInvoiceId: F,
+    applicationId: V,
+    referralTrialOfferId: H,
+    giftRecipient: Y,
+    returnRef: W,
+    subscription: K,
+    skipConfirm: z
+  } = null != e ? e : {}, q = false, X = null != (t = (0, b.b)()) ? t : (0, o.Z)(), Q = h.default.getCurrentUser(), J = (0, E.M5)(Q, v.PremiumTypes.TIER_2), $ = a()("payment-modal"), ee = (0, E.Wz)(G), et = false;
   return (0, s.ZDy)(async () => {
     let {
       default: e
@@ -121,21 +120,21 @@ function R(e) {
         onClose: n
       } = t, a = C(t, ["onClose"]);
       return (0, r.jsx)(e, A(T({}, a), {
-        loadId: Q,
-        subscriptionTier: B,
-        skuId: et,
-        isGift: j,
-        giftMessage: k,
-        giftStyle: U,
-        giftingOrigin: G,
-        giftRecipient: W,
+        loadId: X,
+        subscriptionTier: G,
+        skuId: ee,
+        isGift: M,
+        giftMessage: j,
+        giftStyle: k,
+        giftingOrigin: U,
+        giftRecipient: Y,
         initialPlanId: i,
         followupSKUInfo: I,
         onClose: (e, t) => {
-          if (en) return;
-          en = true, g.S.dispatch(O.CkL.PREMIUM_PAYMENT_MODAL_CLOSED);
+          if (et) return;
+          et = true, g.S.dispatch(O.CkL.PREMIUM_PAYMENT_MODAL_CLOSED);
           let r = () => {
-            n(), null == S || S(e), e && (null == R || R(), (0, p.M)(j, $, t) && g.S.dispatch(O.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
+            n(), null == S || S(e), e && (null == R || R(), (0, p.M)(M, J, t) && g.S.dispatch(O.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
               type: "PREMIUM_PAYMENT_MODAL_CLOSE",
               didSucceed: e
             })
@@ -145,7 +144,7 @@ function R(e) {
           }, y.P) : r()
         },
         onComplete: e => {
-          X = true, null == N || N(), (0, p.M)(j, $, (0, E.k5)(null == e ? true : e.subscription)) && (0, f.H)(true)
+          q = true, null == N || N(), (0, p.M)(M, J, (0, E.k5)(null == e ? true : e.subscription)) && (0, f.H)(true)
         },
         onSubscriptionConfirmation: R,
         analyticsLocations: P,
@@ -153,39 +152,38 @@ function R(e) {
         analyticsLocation: w,
         analyticsSourceLocation: x,
         confirmationFooter: L,
-        paymentModalBanner: M,
-        trialId: Z,
-        postSuccessGuild: F,
+        trialId: B,
+        postSuccessGuild: Z,
         planGroup: v.Y1,
-        openInvoiceId: V,
-        applicationId: H,
-        referralTrialOfferId: Y,
-        returnRef: K,
-        subscription: z,
-        skipConfirm: !!q,
-        wasTier2PremiumBeforePurchase: $
+        openInvoiceId: F,
+        applicationId: V,
+        referralTrialOfferId: H,
+        returnRef: W,
+        subscription: K,
+        skipConfirm: !!z,
+        wasTier2PremiumBeforePurchase: J
       }))
     }
   }, {
     onCloseRequest: () => {
-      en || (en = true, g.S.dispatch(O.CkL.PREMIUM_PAYMENT_MODAL_CLOSED), _.Z.isDisplayingWowMomentConfirmation && _.Z.isAnimated ? setTimeout(() => {
-        (0, s.Mr3)(ee)
-      }, y.P) : (0, s.Mr3)(ee))
+      et || (et = true, g.S.dispatch(O.CkL.PREMIUM_PAYMENT_MODAL_CLOSED), _.Z.isDisplayingWowMomentConfirmation && _.Z.isAnimated ? setTimeout(() => {
+        (0, s.Mr3)($)
+      }, y.P) : (0, s.Mr3)($))
     },
-    modalKey: ee,
+    modalKey: $,
     onCloseCallback: () => {
-      X || m.default.track(O.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: Q,
+      q || m.default.track(O.rMx.PAYMENT_FLOW_CANCELED, {
+        load_id: X,
         payment_type: O.Zuq[O.GZQ.SUBSCRIPTION],
         location: null != w ? w : D,
         source: x,
         subscription_type: O.NYc.PREMIUM,
-        is_gift: j,
-        sku_id: et,
-        eligible_for_trial: null != Z,
-        application_id: H,
+        is_gift: M,
+        sku_id: ee,
+        eligible_for_trial: null != B,
+        application_id: V,
         location_stack: P
-      }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == S || S(X), X && (null == R || R())
+      }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == S || S(q), q && (null == R || R())
     }
   })
 }

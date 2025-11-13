@@ -1,7 +1,8 @@
-/** Chunk was on 54400 **/
-/** chunk id: 381507, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 381507, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,7 +17,29 @@ var Chunk780384 = require("./780384.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk908780 = require("./908780.js");
-let m = () => {
+
+function h(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function m(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      h(e, t, n[t])
+    })
+  }
+  return e
+}
+let g = () => {
   let e = (0, Chunk105759.Z)(),
     {
       avatarSrc: t,
@@ -26,32 +49,15 @@ let m = () => {
       size: Chunk268685.EF.SIZE_32,
       animateOnHover: true
     }),
-    m = (0, Chunk410030.Fg)(),
-    f = (0, Chunk780384.ap)(m),
-    x = Chunk51144.ZP.getName(module),
-    _ = f ? Chunk898969.Z : Chunk703614.Z;
+    h = (0, Chunk410030.Fg)(),
+    g = (0, Chunk780384.ap)(h),
+    E = Chunk51144.ZP.getName(module),
+    b = g ? Chunk898969.Z : Chunk703614.Z;
   return null == module ? null : (0, Chunk951288.jsxs)("div", {
     className: Chunk908780.attributionBannerContainer,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk908780.avatarContainer,
-      children: (0, Chunk951288.jsx)(Chunk481060.qEK, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({
+      children: (0, Chunk951288.jsx)(Chunk481060.qEK, m({
         src: exports,
         "aria-label": module.username,
         size: Chunk268685.EF.SIZE_32
@@ -60,9 +66,9 @@ let m = () => {
       variant: "text-xs/bold",
       className: Chunk908780.bannerHeader,
       children: Chunk388032.intl.format(Chunk388032.t.oxhCOl, {
-        userName: x
+        userName: E
       })
-    }), (0, Chunk951288.jsx)(_, {
+    }), (0, Chunk951288.jsx)(b, {
       className: Chunk908780.bannerIcon
     })]
   })

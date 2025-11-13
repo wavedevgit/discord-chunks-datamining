@@ -1,5 +1,6 @@
-/** Chunk was on 54400 **/
-/** chunk id: 908780, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 908780, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   attributionBannerContainer: "attributionBannerContainer__7b5f3",
   avatarContainer: "avatarContainer__7b5f3",

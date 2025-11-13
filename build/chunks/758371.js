@@ -46,24 +46,24 @@ function u(e, t, n, i, a) {
       let e = r.default.getUser(n.getRecipientId());
       if (null != e) return a ? o.intl.formatToPlainString(o.t.JddpN2, {
         username: e.globalName,
-        appName: t.name
+        appName: t
       }) : o.intl.formatToPlainString(o.t.gYVkSW, {
         username: e.globalName,
-        appName: t.name
+        appName: t
       })
     }
     return a ? o.intl.formatToPlainString(o.t["2N1kNS"], {
-      appName: t.name
+      appName: t
     }) : o.intl.formatToPlainString(o.t.IA6uDV, {
-      appName: t.name
+      appName: t
     })
   }
   return a ? o.intl.formatToPlainString(o.t.XE8axA, {
     username: e.author.globalName,
-    appName: t.name
+    appName: t
   }) : o.intl.formatToPlainString(o.t.hgcjOn, {
     username: e.author.globalName,
-    appName: t.name
+    appName: t
   })
 }
 

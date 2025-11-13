@@ -90,37 +90,35 @@ let y = function(e) {
     shinyButtonClassName: A,
     showGradient: C = false,
     confirmationFooter: N,
-    paymentModalBanner: R,
-    color: P,
-    iconColor: D = "currentColor"
-  } = e, w = E(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "paymentModalBanner", "color", "iconColor"]);
-  let x = (0, o.e7)([c.Z], () => c.Z.isFocused()),
-    L = (0, d.Z)({
+    color: R,
+    iconColor: P = "currentColor"
+  } = e, D = E(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "color", "iconColor"]);
+  let w = (0, o.e7)([c.Z], () => c.Z.isFocused()),
+    x = (0, d.Z)({
       subscriptionTier: t,
       buttonTextOverride: null == m ? true : m.textOverride,
       defaultTextOverride: null == m ? true : m.subscribeText
     }),
-    M = {
+    L = {
       onClick: n,
       subscriptionTier: t,
       postSuccessGuild: y,
       onSubscribeModalClose: O,
       premiumModalAnalyticsLocation: v,
       applicationId: S,
-      confirmationFooter: N,
-      paymentModalBanner: R
+      confirmationFooter: N
     };
 
-  function j(e) {
-    let n = null != P ? P : t === f.Si.TIER_1 ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN;
-    return (0, r.jsx)(u.Z, g(h({}, M), {
+  function M(e) {
+    let n = null != R ? R : t === f.Si.TIER_1 ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN;
+    return (0, r.jsx)(u.Z, g(h({}, L), {
       children: o => {
         let {
           onClick: c
         } = o;
         return (0, r.jsxs)(l.gtL, g(h({
           "data-migration-pending": true,
-          disabled: L.disabled,
+          disabled: x.disabled,
           onClick: c,
           innerClassName: _.premiumSubscribeButton,
           color: n,
@@ -130,24 +128,24 @@ let y = function(e) {
             [_.tier2Gradient]: C && t === f.Si.TIER_2,
             [_.tier1Gradient]: C && t === f.Si.TIER_1
           }, p),
-          buttonShineClassName: "buttonShineClassName" in w ? w.buttonShineClassName : n === s.Tt.BRAND_INVERTED ? _.brandShine : true,
-          pauseAnimation: !x || T
-        }, w, e), {
+          buttonShineClassName: "buttonShineClassName" in D ? D.buttonShineClassName : n === s.Tt.BRAND_INVERTED ? _.brandShine : true,
+          pauseAnimation: !w || T
+        }, D, e), {
           children: [I && (0, r.jsx)(l.SrA, {
             size: "md",
-            color: D,
+            color: P,
             className: a()(_.premiumIcon, b)
           }), (0, r.jsx)("span", {
             className: a()(_.buttonText, null == m ? true : m.textClassName),
-            children: L.buttonText
+            children: x.buttonText
           })]
         }))
       }
     }))
   }
-  return null != L.buttonTooltipText ? (0, r.jsx)(l.aML, {
+  return null != x.buttonTooltipText ? (0, r.jsx)(l.aML, {
     "data-migration-pending": true,
-    text: L.buttonTooltipText,
-    children: j
-  }) : j()
+    text: x.buttonTooltipText,
+    children: M
+  }) : M()
 }

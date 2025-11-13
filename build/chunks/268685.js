@@ -18,7 +18,7 @@ let r = 1.5,
   a = .125,
   o = .2;
 var s = function(e) {
-    return e.SIZE_16 = "SIZE_16", e.SIZE_20 = "SIZE_20", e.SIZE_24 = "SIZE_24", e.SIZE_32 = "SIZE_32", e.SIZE_40 = "SIZE_40", e.SIZE_44 = "SIZE_44", e.SIZE_48 = "SIZE_48", e.SIZE_56 = "SIZE_56", e.SIZE_80 = "SIZE_80", e.SIZE_96 = "SIZE_96", e.SIZE_120 = "SIZE_120", e.SIZE_152 = "SIZE_152", e.DEPRECATED_SIZE_30 = "DEPRECATED_SIZE_30", e.DEPRECATED_SIZE_60 = "DEPRECATED_SIZE_60", e.DEPRECATED_SIZE_100 = "DEPRECATED_SIZE_100", e
+    return e.SIZE_16 = "SIZE_16", e.SIZE_20 = "SIZE_20", e.SIZE_24 = "SIZE_24", e.SIZE_32 = "SIZE_32", e.SIZE_40 = "SIZE_40", e.SIZE_44 = "SIZE_44", e.SIZE_48 = "SIZE_48", e.SIZE_56 = "SIZE_56", e.SIZE_72 = "SIZE_72", e.SIZE_80 = "SIZE_80", e.SIZE_96 = "SIZE_96", e.SIZE_120 = "SIZE_120", e.SIZE_152 = "SIZE_152", e.DEPRECATED_SIZE_30 = "DEPRECATED_SIZE_30", e.DEPRECATED_SIZE_60 = "DEPRECATED_SIZE_60", e.DEPRECATED_SIZE_100 = "DEPRECATED_SIZE_100", e
   }({}),
   l = function(e) {
     return e.BLACK = "black", e.WHITE = "white", e
@@ -74,6 +74,12 @@ let u = Object.freeze({
     status: 14,
     stroke: 4,
     offset: 2
+  }),
+  SIZE_72: Object.freeze({
+    size: 72,
+    status: 16,
+    stroke: 6,
+    offset: 4
   }),
   SIZE_80: Object.freeze({
     size: 80,
