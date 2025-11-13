@@ -577,7 +577,7 @@ class e2 extends Chunk647438.PureComponent {
       var t, n;
       let i = null == (t = this.editorRef) ? true : t.getSlateEditor();
       null != i && (U.Q.select(i, []), i.insertText(e), null == (n = this.editorRef) || n.focus())
-    }), eY(this, "renderAttachButton", (e, t) => (0, i.jsx)(k.Z, {
+    }), eY(this, "renderAttachButton", (e, t) => (0, i.jsx)(D.Z, {
       className: t,
       channel: this.props.channel,
       draftType: ev.d.ChannelMessage,
@@ -686,7 +686,7 @@ class e3 extends Chunk647438.PureComponent {
         guildId: null == Chunk555573 ? true : Chunk555573.guild_id,
         location: "ChannelChat"
       }),
-      k = Chunk516887 && null != Chunk827498 && null != Chunk555573 && null != Chunk555573.guild_id;
+      D = Chunk516887 && null != Chunk827498 && null != Chunk555573 && null != Chunk555573.guild_id;
     return (0, Chunk951288.jsx)(Chunk410575.Z, {
       page: (0, Chunk934415.mE)(this.props.channel),
       children: (0, Chunk951288.jsx)(Chunk549006.sW, {
@@ -860,14 +860,14 @@ let e8 = Chunk647438.memo(function(e) {
   } = e, {
     placeholder: a,
     accessibilityLabel: o
-  } = (0, eD.Z)({
+  } = (0, ek.Z)({
     channel: t
   }), s = (0, eo.S)(eP.default.getCurrentUser(), t), [c] = (0, z.AB)(null == n ? true : n.id), u = (0, V.Ux)(null == n ? true : n.id), h = (0, d.e7)([eP.default], () => eP.default.getCurrentUser()), f = (0, d.e7)([ex.ZP], () => {
     var e, t, i;
     return null != h && null != (i = null == (e = ex.ZP.getMember(null != (t = null == n ? true : n.id) ? t : ez.lds, null == h ? true : h.id)) ? true : e.isPending) && i
   }), m = (0, d.e7)([ei.Z], () => ei.Z.isEnabled()), g = (0, ea.Z)(t.id), y = (0, q.Z)(t.id), C = (0, ep.k)(t.id), _ = (0, d.e7)([eE.Z], () => eE.Z.getVoiceChannelId()), x = (0, d.e7)([eC.Z], () => eC.Z.getChannel(_)), j = (0, d.e7)([eP.default], () => t.type !== ez.d4z.DM ? null : eP.default.getUser(t.getRecipientId())), O = (0, d.e7)([er.ZP, eb.default], () => er.ZP.getUserCombo(eb.default.getId(), t.id)), E = (0, b.iD)(t), S = (0, b.d7)(t), P = E.length > 0 || t.rateLimitPerUser > 0 || null != O || null != S, {
     showLinkedLobbyApplicationLoadingIndicator: I
-  } = (0, ek.Z)(t.linkedLobby), Z = (0, B.Z)("ChannelChat");
+  } = (0, eD.Z)(t.linkedLobby), Z = (0, B.Z)("ChannelChat");
   return (0, i.jsx)(e3, {
     channel: t,
     isEditing: null != (0, d.e7)([e_.Z], () => e_.Z.getEditingMessageId(t.id)),

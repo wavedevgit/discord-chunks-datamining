@@ -58,10 +58,10 @@ function v(e) {
       I(null != (i = null == r ? true : r.code) ? i : null)
     }()
   }, [S, t.id]);
-  let k = r.useCallback(() => {
+  let D = r.useCallback(() => {
       _(true)
     }, []),
-    D = r.useCallback(() => {
+    k = r.useCallback(() => {
       _(false), A(false)
     }, []);
   return null == P ? null : (0, i.jsx)(c.yRy, {
@@ -93,8 +93,8 @@ function v(e) {
       inviteKey: P,
       onHoverOrFocus: A
     }, e)),
-    onRequestOpen: k,
-    onRequestClose: D,
+    onRequestOpen: D,
+    onRequestClose: k,
     children: e => (0, i.jsx)(c.P3F, {
       innerRef: l,
       className: a()(y.clickable, C.voiceUser, C.userSmall, C.clickable),

@@ -93,7 +93,7 @@ let z = Chunk647438.memo(function(e) {
     autoTrackExposure: false
   }), {
     onShareClick: eo
-  } = (0, y.Z)(W.id), es = (0, o.e7)([v.qc], () => v.qc.hasHotspot(v.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), ec = (0, c.s9z)(e => (0, c.DEQ)(e, U.Qr)), eu = (0, o.e7)([P.Z], () => P.Z.hasLayers()), ed = (0, o.e7)([g.Z], () => g.Z.hasClips()), [ep, eh] = r.useState(null), ef = (0, m.Go)() && (en || ed), em = W.isPrivate(), eg = (0, o.e7)([Z.Z], () => em || Z.Z.can(D.Plq.ATTACH_FILES, W) && Z.Z.can(D.Plq.SEND_MESSAGES, W)), eb = (0, d.Z)(ei);
+  } = (0, y.Z)(W.id), es = (0, o.e7)([v.qc], () => v.qc.hasHotspot(v.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), ec = (0, c.s9z)(e => (0, c.DEQ)(e, U.Qr)), eu = (0, o.e7)([P.Z], () => P.Z.hasLayers()), ed = (0, o.e7)([g.Z], () => g.Z.hasClips()), [ep, eh] = r.useState(null), ef = (0, m.Go)() && (en || ed), em = W.isPrivate(), eg = (0, o.e7)([Z.Z], () => em || Z.Z.can(k.Plq.ATTACH_FILES, W) && Z.Z.can(k.Plq.SEND_MESSAGES, W)), eb = (0, d.Z)(ei);
   (null == eb ? true : eb.newClipIds.length) !== (null == ei ? true : ei.newClipIds.length) && (null != (t = null == ei ? true : ei.newClipIds.length) ? t : 0) > 0 && null == ep && es && el && !ec && !ea && !eu && eh("recentClips");
   let ey = (0, o.e7)([I.Z], () => I.Z.hasCurrentUserSentMessageSinceAppStart());
 
@@ -122,8 +122,8 @@ let z = Chunk647438.memo(function(e) {
         null == (n = $.current) || n.activateUploadDialogue()
       }
     };
-    return N.S.subscribe(D.CkL.UPLOAD_FILE, e), () => {
-      N.S.unsubscribe(D.CkL.UPLOAD_FILE, e)
+    return N.S.subscribe(k.CkL.UPLOAD_FILE, e), () => {
+      N.S.unsubscribe(k.CkL.UPLOAD_FILE, e)
     }
   });
   let ev = (0, O.NE)(W),
@@ -140,7 +140,7 @@ let z = Chunk647438.memo(function(e) {
     }),
     eP = (0, h.o)(),
     eI = null != (l = null == er ? true : er.length) ? l : 0,
-    eZ = (0, k.Z)({
+    eZ = (0, D.Z)({
       canAttachFiles: eg,
       canStartThreads: ev || e_,
       useSlate: ex,
@@ -231,7 +231,7 @@ let z = Chunk647438.memo(function(e) {
             requireConfirm: true,
             showLargeMessageDialog: i,
             origin: "file_picker"
-          }), N.S.dispatchToLastSubscribed(D.CkL.TEXTAREA_FOCUS), e.currentTarget.value = ""
+          }), N.S.dispatchToLastSubscribed(k.CkL.TEXTAREA_FOCUS), e.currentTarget.value = ""
         },
         multiple: W.rateLimitPerUser <= 0,
         tabIndex: false,

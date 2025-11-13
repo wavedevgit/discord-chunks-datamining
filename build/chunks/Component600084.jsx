@@ -77,15 +77,15 @@ function F(e) {
     canManageRoles: M,
     canReadMessageHistory: R
   } = (0, l.cj)([x.Z], () => ({
-    canManageRoles: x.Z.can(k.Plq.MANAGE_ROLES, p),
-    canReadMessageHistory: x.Z.can(k.Plq.READ_MESSAGE_HISTORY, p)
-  })), L = (0, l.e7)([b.Z], () => _ === k.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, _]), {
+    canManageRoles: x.Z.can(D.Plq.MANAGE_ROLES, p),
+    canReadMessageHistory: x.Z.can(D.Plq.READ_MESSAGE_HISTORY, p)
+  })), L = (0, l.e7)([b.Z], () => _ === D.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, _]), {
     systemDMRedesignEnabled: F
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
   }, {
     autoTrackExposure: null != (t = p.isSystemDM()) && t
-  }), G = (0, u.Z)(null != (n = null == P ? true : P.id) ? n : k.lds), {
+  }), G = (0, u.Z)(null != (n = null == P ? true : P.id) ? n : D.lds), {
     authorizedAppToken: z,
     authorizedAppsFetchState: W
   } = (0, l.cj)([v.default], () => ({
@@ -95,7 +95,7 @@ function F(e) {
     location: "EmptyMessages"
   }).enabledDesktop;
   if (r.useEffect(() => {
-      _ === k.d4z.DM && null == L && null != P && o.Z.wait(() => (0, y.Z)(p.getRecipientId(), P.getAvatarURL(null, 80), {
+      _ === D.d4z.DM && null == L && null != P && o.Z.wait(() => (0, y.Z)(p.getRecipientId(), P.getAvatarURL(null, 80), {
         withMutualGuilds: true
       }))
     }, [L, _, p, P]), r.useEffect(() => {
@@ -106,7 +106,7 @@ function F(e) {
     channel: p,
     children: U.intl.string(U.t.Rzvnig)
   });
-  if (_ === k.d4z.DM) {
+  if (_ === D.d4z.DM) {
     let e;
     return null != P && null != G ? null != z && (e = (0, i.jsxs)("div", {
       className: B.buttonContainer,
@@ -150,7 +150,7 @@ function F(e) {
         children: U.intl.string(U.t.M8Ao6I)
       })]
     });
-    else if (p.hasFlag(D.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(I.Z, {
+    else if (p.hasFlag(k.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(I.Z, {
     channel: p
   });
   else return (0, i.jsx)(N.Z, {

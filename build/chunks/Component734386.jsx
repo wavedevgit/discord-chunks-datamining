@@ -40,7 +40,7 @@ function w(e) {
   } = e, [n, l] = r.useState(false), o = (0, m.ZP)(t, true), w = t.guild_id, M = (0, u.e7)([_.Z], () => null != w ? _.Z.getSortedRoles(w) : true), R = (0, u.e7)([O.default, x.Z], () => {
     var e;
     return O.default.getUser(null == (e = x.Z.getGuild(w)) ? true : e.ownerId)
-  }), L = r.useMemo(() => null != M ? M.filter(e => !(0, v.fI)(e)) : [], [M]), k = r.useMemo(() => s()(L).filter(e => {
+  }), L = r.useMemo(() => null != M ? M.filter(e => !(0, v.fI)(e)) : [], [M]), D = r.useMemo(() => s()(L).filter(e => {
     if (null == w) returnfalse;
     let n = E.I0({
       forceRoles: {
@@ -49,7 +49,7 @@ function w(e) {
       context: t
     });
     return c.Db(n, c.$e(Z.Plq.ADMINISTRATOR, Z.Plq.VIEW_CHANNEL))
-  }).value(), [t, w, L]), D = (0, u.Wu)([O.default], () => {
+  }).value(), [t, w, L]), k = (0, u.Wu)([O.default], () => {
     let e = {};
     for (let n of (null != R && (e[R.id] = R), Object.values(t.permissionOverwrites))) {
       if (n.type !== f.BN.MEMBER || null != e[n.id]) continue;
@@ -105,13 +105,13 @@ function w(e) {
     }) : null, (0, i.jsxs)("div", {
       className: N.members,
       children: [function() {
-        if (1 !== D.length || k.length > 0) return (0, i.jsx)(d.Z, {
+        if (1 !== k.length || D.length > 0) return (0, i.jsx)(d.Z, {
           guildId: t.guild_id,
           className: N.avatars,
           maxUsers: 5,
-          users: D
+          users: k
         });
-        let e = D[0],
+        let e = k[0],
           n = S.ZP.getName(e);
         return (0, i.jsxs)("div", {
           className: N.avatars,
@@ -131,13 +131,13 @@ function w(e) {
             children: T.intl.string(T.t.rt0ERW)
           })]
         })
-      }(), k.map((e, n) => {
+      }(), D.map((e, n) => {
         var r, l;
         let o = null != (l = e.colorString) ? l : Z.Pbq,
           s = (null == (r = e.tags) ? true : r.guild_connections) !== true;
         return U ? (0, i.jsx)(I.Z, {
           className: a()(N.role, {
-            [N.last]: n === k.length - 1
+            [N.last]: n === D.length - 1
           }),
           roleName: e.name,
           roleColor: o,
@@ -148,7 +148,7 @@ function w(e) {
           }
         }, e.id) : (0, i.jsx)(b.Z, {
           className: a()(N.role, {
-            [N.last]: n === k.length - 1
+            [N.last]: n === D.length - 1
           }),
           roleName: e.name,
           roleColor: o,
