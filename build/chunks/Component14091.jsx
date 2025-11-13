@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk171900 = require("./171900.js"),
   Chunk607802 = require("./607802.js"),
   Chunk375123 = require("./375123.js"),
-  Chunk56522 = require("./56522.js"),
+  Chunk28964 = require("./28964.js"),
   Chunk759209 = require("./759209.js"),
   Chunk532428 = require("./532428.js"),
   Chunk406326 = require("./406326.jsx"),
@@ -381,26 +381,26 @@ function V(e) {
   } = e, {
     isFeedbackVisible: l,
     dismissFeedbackEntrypoint: a
-  } = function(e) {
-    let [t, n] = i.useState(false), r = (0, O.M)({
+  } = function() {
+    let [e, t] = i.useState(false), n = (0, O.M_)({
       location: "SearchResults"
     }), {
-      enabled: l,
-      force: a
+      enabled: r,
+      force: l
     } = (0, x.f)({
       location: "SearchResults"
-    }), s = e.type === A.aib.DMS || e.type === A.aib.CHANNEL, o = r && s || l;
+    }), a = n && r;
     return i.useEffect(() => {
-      o && a && n(true)
-    }, [a, o, l]), (0, u.ZP)(() => {
-      o && (a || h.Z.possiblyShowFeedbackModal(D.nw.SEARCH_RESULTS, () => n(true), () => n(false)))
+      a && l && t(true)
+    }, [l, a, r]), (0, u.ZP)(() => {
+      a && (l || h.Z.possiblyShowFeedbackModal(D.nw.SEARCH_RESULTS, () => t(true), () => t(false)))
     }), {
       dismissFeedbackEntrypoint: i.useCallback(() => {
-        n(false)
+        t(false)
       }, []),
-      isFeedbackVisible: t
+      isFeedbackVisible: e
     }
-  }(t), o = (0, _.Tm)(t), c = (0, s.cj)([b.Z, R.Z], () => {
+  }(), o = (0, _.Tm)(t), c = (0, s.cj)([b.Z, R.Z], () => {
     var e, t, n, r, i;
     return {
       isSearching: null != (e = b.Z.getIsFetching(o)) && e,

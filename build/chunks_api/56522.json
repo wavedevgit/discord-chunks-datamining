@@ -1,1 +1,0 @@
-{"id":"56522","type":"experiment","data":{"kind":"user","id":"2025-06_search_desktop_xdm_feedback","label":"Search Desktop XDM Feedback Experiment","defaultConfig":"a","treatments":[{"id":1,"label":"Enables feedback in xDM control and treatment groups","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

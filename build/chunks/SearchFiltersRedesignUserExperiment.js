@@ -2,12 +2,15 @@
 /** chunk id: 28964, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  g: () => l,
-  k: () => s
+  M_: () => l,
+  g_: () => u,
+  kU: () => c,
+  rY: () => s
 });
 var Chunk818083 = require("./818083.js"),
   Chunk154579 = require("./154579.js");
 let a = {
+    isInExperiment: false,
     isEnabled: false,
     isHasFilterElevated: false
   },
@@ -17,9 +20,18 @@ let a = {
     label: "Search Filters Redesign",
     defaultConfig: a,
     treatments: [{
+      id: 0,
+      label: "Control",
+      config: {
+        isInExperiment: true,
+        isEnabled: false,
+        isHasFilterElevated: false
+      }
+    }, {
       id: 1,
       label: "Top Filters",
       config: {
+        isInExperiment: true,
         isEnabled: true,
         isHasFilterElevated: false
       }
@@ -27,6 +39,7 @@ let a = {
       id: 2,
       label: "Top Filters (has: before mentions:)",
       config: {
+        isInExperiment: true,
         isEnabled: true,
         isHasFilterElevated: true
       }
@@ -34,6 +47,42 @@ let a = {
   });
 
 function s(e) {
+  let {
+    location: t,
+    autoTrackExposure: n = true
+  } = e, r = (0, i.ro)({
+    location: t,
+    autoTrackExposure: n
+  }), {
+    isInExperiment: a
+  } = o.getCurrentConfig({
+    location: t
+  }, {
+    autoTrackExposure: n,
+    disable: r
+  });
+  return a
+}
+
+function l(e) {
+  let {
+    location: t,
+    autoTrackExposure: n = true
+  } = e, r = (0, i.nd)({
+    location: t,
+    autoTrackExposure: n
+  }), {
+    isInExperiment: a
+  } = o.useExperiment({
+    location: t
+  }, {
+    autoTrackExposure: n,
+    disable: r
+  });
+  return a
+}
+
+function c(e) {
   let {
     location: t,
     autoTrackExposure: n = true
@@ -51,7 +100,7 @@ function s(e) {
   return a
 }
 
-function l(e) {
+function u(e) {
   let {
     location: t,
     autoTrackExposure: n = true

@@ -67,7 +67,7 @@ function S(e) {
     isSearching: p,
     documentsIndexed: h,
     selectedChannelId: C
-  } = e, I = (0, m.k)({
+  } = e, I = (0, m.kU)({
     location: "SearchHeader"
   }), S = (0, y.I)(t), {
     totalFilters: Z
