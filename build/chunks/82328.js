@@ -29,7 +29,7 @@ class r {
   static getAppVersion() {
     try {
       var e;
-      return (e = "467984", true !== module) ? module : "unknown"
+      return (e = "467997", true !== module) ? module : "unknown"
     } catch (e) {
       return "unknown"
     }
