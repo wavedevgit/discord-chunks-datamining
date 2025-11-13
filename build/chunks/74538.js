@@ -1525,8 +1525,8 @@ function ti(e) {
   return (0, f.ks)(f._G, e)
 }
 
-function ta(e, t) {
-  return (0, f.ks)(f.j4, e, t)
+function ta(e) {
+  return (0, f.ks)(f.j4, e)
 }
 
 function to(e) {
@@ -1573,8 +1573,8 @@ function tm(e, t) {
   return "high" === e ? (0, f.ks)(f.O8, t) : "mid" === e && (0, f.ks)(f.g7, t)
 }
 
-function tg(e, t) {
-  return (0, f.ks)(f.$0, e, t)
+function tg(e) {
+  return (0, f.ks)(f.$0, e)
 }
 
 function tE(e) {

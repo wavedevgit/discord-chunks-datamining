@@ -93,6 +93,6 @@ let j = new f(Chunk848246.q.INCREASED_GUILD_LIMIT),
   }),
   Z = [C, N];
 
-function F(e, t, n) {
-  return !((0, s.U)("canUserUse", t) || null !== n && n === c.a$.FP_ONLY && Z.includes(e)) && e.getFeatureValue(t)
+function F(e, t) {
+  return !((0, s.U)("canUserUse", t) || null != t && t.isPremiumWithFractionalPremiumOnly() && Z.includes(e)) && e.getFeatureValue(t)
 }

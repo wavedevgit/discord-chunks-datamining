@@ -154,13 +154,13 @@ class O extends Chunk81825.Z {
   hasFreePremium() {
     return this.isStaff() || this.hasFlag(Chunk981631.xW$.PARTNER) || this.isStaffPersonal()
   }
-  isPremiumWithFractionalPremium() {
-    var e;
-    return (0, Chunk111361.I5)(this, Chunk474936.PremiumTypes.TIER_2) && (null == (e = this.premiumState) ? true : module.premiumSource) === Chunk813820.d3.FRACTIONAL_NITRO
-  }
   isPremiumWithPremiumGroup() {
     var e;
     return (0, Chunk111361.I5)(this, Chunk474936.PremiumTypes.TIER_2) && (null == (e = this.premiumState) ? true : module.premiumSource) === Chunk813820.d3.SUBSCRIPTION_GROUP
+  }
+  isPremiumWithFractionalPremiumOnly() {
+    var e, t, n;
+    return (0, Chunk111361.I5)(this, Chunk474936.PremiumTypes.TIER_2) && ((null == (e = this.premiumState) ? true : module.premiumSubscriptionType) === Chunk813820.W$.NONE_UNSPECIFIED || (null == (t = this.premiumState) ? true : exports.premiumSubscriptionType) === Chunk813820.W$.BOOST_ONLY) && (null == (n = this.premiumState) ? true : require.premiumSource) === Chunk813820.d3.FRACTIONAL_NITRO
   }
   isFractionalPremiumWithNoSubscription() {
     var e;
