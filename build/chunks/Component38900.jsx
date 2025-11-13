@@ -2,8 +2,8 @@
 /** chunk id: 38900, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  K: () => g,
-  Z: () => p
+  K: () => p,
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk887353 = require("./887353.js"),
   Chunk198501 = require("./198501.js"),
   Chunk300179 = require("./300179.js");
-let g = () => (0, Chunk951288.jsx)("div", {
+let p = () => (0, Chunk951288.jsx)("div", {
     className: i()(Chunk198501.skeleton, Chunk300179.shopCard),
     children: (0, Chunk951288.jsxs)("div", {
       className: Chunk198501.cardBody,
@@ -30,7 +30,7 @@ let g = () => (0, Chunk951288.jsx)("div", {
       })]
     })
   }),
-  p = () => {
+  g = () => {
     let e = Chunk128922.Z.useConfig({
       location: "ShopSkeleton"
     }).showCardsV2;
@@ -49,7 +49,7 @@ let g = () => (0, Chunk951288.jsx)("div", {
           })
         }), Array.from({
           length: 12
-        }, (t, n) => e ? (0, r.jsx)(o.Z, {}, n) : (0, r.jsx)(g, {}, n))]
+        }, (t, n) => e ? (0, r.jsx)(o.Z, {}, n) : (0, r.jsx)(p, {}, n))]
       }, n))
     })
   }

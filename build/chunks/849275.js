@@ -32,7 +32,7 @@ function _(e) {
   }, [t]), x = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[a.m.POPULAR]) ? e : []
-  }, [t]), E = v.length > 0 && b, [S, O] = r.useState(E ? a.m.RECOMMENDED : a.m.POPULAR), y = (0, h.Z)(), j = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), k = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()), I = (0, g.a)(), [T, L] = r.useState([]), B = r.useCallback(() => {
+  }, [t]), E = v.length > 0 && b, [S, O] = r.useState(E ? a.m.RECOMMENDED : a.m.POPULAR), y = (0, h.Z)(), j = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), k = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()), I = (0, p.a)(), [T, L] = r.useState([]), B = r.useCallback(() => {
     O(a.m.RANDOM), L(i().shuffle(j))
   }, [j]);
   r.useEffect(() => {
@@ -54,7 +54,7 @@ function _(e) {
   return {
     sortType: S,
     setSortType: O,
-    sortedItems: (0, p.l)(P),
+    sortedItems: (0, g.l)(P),
     sortOptions: r.useMemo(() => {
       let e = [{
         value: a.m.POPULAR,

@@ -96,11 +96,11 @@ let M = (0, Chunk884697.IC)(90),
       return (null == (t = b.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
     }), [n, X.rankedSkuIds, ec.length]), {
       cardContainerRef: ed,
-      totalCards: eg
+      totalCards: ep
     } = (e => {
-      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, p.Z)(() => {
+      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, g.Z)(() => {
         (null == a ? true : a.current) != null && n(Math.max(1, Math.floor((a.current.offsetWidth + r) / (246 + r))))
-      }), a = (0, g.y)(i, [r, e], {
+      }), a = (0, p.y)(i, [r, e], {
         fireOnMount: true,
         fireOnDepsChange: true,
         enabled: e
@@ -111,7 +111,7 @@ let M = (0, Chunk884697.IC)(90),
         }, [i, a, e]),
         totalCards: e ? t : true
       }
-    })(U !== Z.AW.ORBS), ep = (0, S.a)()(ec), ef = (0, O.l)(ep).slice(0, eg), eh = (0, P.St)(ef), eC = U === Z.AW.ORBS ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), em = (0, E.FF)("CollectiblesContent"), e_ = null != W && W.isOrbsExclusive, eb = x.Z.useConfig({
+    })(U !== Z.AW.ORBS), eg = (0, S.a)()(ec), ef = (0, O.l)(eg).slice(0, ep), eh = (0, P.St)(ef), eC = U === Z.AW.ORBS ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), em = (0, E.FF)("CollectiblesContent"), e_ = null != W && W.isOrbsExclusive, eb = x.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, ev = () => {
       U === Z.AW.ORBS ? ((0, h.Y)({
@@ -213,7 +213,7 @@ let M = (0, Chunk884697.IC)(90),
           }),
           ref: ed,
           children: n || eu ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(null != eg ? eg : 4)].map((e, t) => eb ? (0, r.jsx)(T.Z, {}, t) : (0, r.jsx)(y.K, {}, t))
+            children: [...Array(null != ep ? ep : 4)].map((e, t) => eb ? (0, r.jsx)(T.Z, {}, t) : (0, r.jsx)(y.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: eh.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);

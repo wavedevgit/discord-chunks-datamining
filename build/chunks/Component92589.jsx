@@ -2,7 +2,7 @@
 /** chunk id: 92589, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -32,25 +32,25 @@ function d(e) {
   }
   return e
 }
-let g = e => {
+let p = e => {
   let {
     immersiveBannerBlock: t,
     onVisibilityChange: n
-  } = e, g = (0, l.O)(e => {
+  } = e, p = (0, l.O)(e => {
     null == n || n(e)
   }, .33, null != n), {
-    bannerUrl: p,
+    bannerUrl: g,
     bannerAnimatedUrl: f
   } = (0, o._M)(t), h = null != t.textColor ? {
     color: t.textColor
   } : true, C = null != t.body && "" !== t.body, m = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
   return (0, r.jsxs)("div", {
-    ref: g,
+    ref: p,
     className: u.immersiveBannerBlock,
     children: [(0, r.jsx)("div", {
       className: u.banner,
-      children: null != p && (0, r.jsx)(s.Z, {
-        bannerStatic: p,
+      children: null != g && (0, r.jsx)(s.Z, {
+        bannerStatic: g,
         bannerAnimated: f
       })
     }), (0, r.jsx)("div", {

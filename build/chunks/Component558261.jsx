@@ -43,11 +43,11 @@ let P = e => {
       selectedVariantIndex: s,
       hasDiscountOffer: u,
       discountOfferAmount: d,
-      text: g
-    } = e, p = (0, _.XM)(t, i, false), f = u ? L.intl.formatToPlainString(L.t["5U5RB5"], {
+      text: p
+    } = e, g = (0, _.XM)(t, i, false), f = u ? L.intl.formatToPlainString(L.t["5U5RB5"], {
       discountOfferAmount: d
     }) : L.intl.formatToPlainString(L.t["cNSL/j"], {
-      price: p
+      price: g
     });
     return (0, r.jsx)(a.Button, {
       variant: "primary",
@@ -62,7 +62,7 @@ let P = e => {
           variantsReturnStyle: l.v.VARIANTS_GROUP
         })
       },
-      text: null != g ? g : f,
+      text: null != p ? p : f,
       fullWidth: true
     })
   },
@@ -173,7 +173,7 @@ let P = e => {
         })
       }),
       onClick: e => {
-        e.stopPropagation(), null == c || c("claim with orbs button"), (0, g.qA)({
+        e.stopPropagation(), null == c || c("claim with orbs button"), (0, p.qA)({
           skuId: (0, S.S)({
             product: t,
             selectedVariantIndex: o
@@ -224,7 +224,7 @@ let P = e => {
       text: c,
       prioritizedCurrency: u,
       onClickAnalytics: d
-    } = e, g = (0, i.e7)([p.default], () => p.default.getCurrentUser()), h = f.ZP.canUseCollectibles(g), {
+    } = e, p = (0, i.e7)([g.default], () => g.default.getCurrentUser()), h = f.ZP.canUseCollectibles(p), {
       isPurchased: m,
       isPartiallyOwnedBundle: S
     } = (0, x.L)(t), O = (0, _.G1)(t), k = (0, _.rN)(t), {

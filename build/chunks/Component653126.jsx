@@ -57,11 +57,11 @@ let k = Chunk647438.memo(function(e) {
       previewingVariantIndex: K,
       handleEntering: Y,
       handleLeaving: q
-    } = (0, S.f)(t), J = (0, g.Nd)(), Q = null == J ? true : J.tab, X = (0, O.zQ)(t), $ = l.useRef(null), {
+    } = (0, S.f)(t), J = (0, p.Nd)(), Q = null == J ? true : J.tab, X = (0, O.zQ)(t), $ = l.useRef(null), {
       isHoveringOrFocusing: ee
     } = (0, d.Z)($), {
       handleCardVisibilityChange: et
-    } = (0, p.E)(t.skuId, Q === y.AW.CATALOG ? "full" : Q), en = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, G), er = t.type === o.Z.VARIANTS_GROUP && !k, el = !T || !L, ei = !(I && i) || er, ea = ei || el, eo = el || er;
+    } = (0, g.E)(t.skuId, Q === y.AW.CATALOG ? "full" : Q), en = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, G), er = t.type === o.Z.VARIANTS_GROUP && !k, el = !T || !L, ei = !(I && i) || er, ea = ei || el, eo = el || er;
     return (0, r.jsx)(s.$, {
       innerRef: $,
       onChange: et,
