@@ -13,6 +13,7 @@ let r = (0, require("./427164.js").le)({
     moveAppsEntrypointToOverflow: false,
     expressionsCombinedIntoEmojiButton: false,
     renameAppsToAppCommandsInOverflow: false,
+    reorderExpressionPickerTabs: false,
     reducedGap: false,
     iconOrder: {
       upload: null,
@@ -32,6 +33,7 @@ let r = (0, require("./427164.js").le)({
       moveAppsEntrypointToOverflow: false,
       expressionsCombinedIntoEmojiButton: false,
       renameAppsToAppCommandsInOverflow: true,
+      reorderExpressionPickerTabs: true,
       reducedGap: true,
       iconOrder: {
         upload: null,
@@ -50,6 +52,7 @@ let r = (0, require("./427164.js").le)({
       moveAppsEntrypointToOverflow: false,
       expressionsCombinedIntoEmojiButton: true,
       renameAppsToAppCommandsInOverflow: true,
+      reorderExpressionPickerTabs: false,
       reducedGap: true,
       iconOrder: {
         emoji: 1,
@@ -68,6 +71,7 @@ let r = (0, require("./427164.js").le)({
       moveAppsEntrypointToOverflow: true,
       expressionsCombinedIntoEmojiButton: true,
       renameAppsToAppCommandsInOverflow: false,
+      reorderExpressionPickerTabs: false,
       reducedGap: true,
       iconOrder: {
         appLauncher: null,
@@ -86,6 +90,7 @@ let r = (0, require("./427164.js").le)({
       moveAppsEntrypointToOverflow: true,
       expressionsCombinedIntoEmojiButton: false,
       renameAppsToAppCommandsInOverflow: false,
+      reorderExpressionPickerTabs: true,
       reducedGap: true,
       iconOrder: {
         appLauncher: null,
@@ -104,6 +109,7 @@ let r = (0, require("./427164.js").le)({
       moveAppsEntrypointToOverflow: false,
       expressionsCombinedIntoEmojiButton: false,
       renameAppsToAppCommandsInOverflow: false,
+      reorderExpressionPickerTabs: false,
       reducedGap: false,
       iconOrder: {
         upload: null,

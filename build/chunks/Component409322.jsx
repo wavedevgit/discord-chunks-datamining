@@ -28,21 +28,21 @@ function u(e) {
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
     v = null != p ? m.slice(0, p) : m,
-    g = null != p ? m.slice(p) : [],
-    x = null != y ? y : l.Fragment,
-    h = null != (t = null == j ? true : j(d, g.length)) ? t : (n = g.length, d ? c.intl.formatToPlainString(c.t["3SHL+d"], {
+    x = null != p ? m.slice(p) : [],
+    g = null != y ? y : l.Fragment,
+    h = null != (t = null == j ? true : j(d, x.length)) ? t : (n = x.length, d ? c.intl.formatToPlainString(c.t["3SHL+d"], {
       count: n
     }) : c.intl.formatToPlainString(c.t["8JRFyZ"], {
       count: n
     }));
-  return (0, r.jsx)(x, {
+  return (0, r.jsx)(g, {
     children: (0, r.jsxs)(o.Kqy, {
       gap: 8,
       children: [v.map((e, t) => (0, r.jsxs)(l.Fragment, {
         children: [(0, r.jsx)(i.Z, {
           node: e
-        }), g.length > 0 && t !== v.length - 1 && (0, r.jsx)(o.izJ, {})]
-      }, e.key)), g.length > 0 && (0, r.jsxs)("div", {
+        }), x.length > 0 && t !== v.length - 1 && (0, r.jsx)(o.izJ, {})]
+      }, e.key)), x.length > 0 && (0, r.jsxs)("div", {
         className: s.collapsibleContainer,
         children: [(0, r.jsx)(o.izJ, {
           className: s.hoverDivider
@@ -53,10 +53,10 @@ function u(e) {
           compact: true,
           children: (0, r.jsx)(o.Kqy, {
             gap: 8,
-            children: g.map((e, t) => (0, r.jsxs)(l.Fragment, {
+            children: x.map((e, t) => (0, r.jsxs)(l.Fragment, {
               children: [(0, r.jsx)(i.Z, {
                 node: e
-              }), t !== g.length - 1 && (0, r.jsx)(o.izJ, {})]
+              }), t !== x.length - 1 && (0, r.jsx)(o.izJ, {})]
             }, e.key))
           })
         })]

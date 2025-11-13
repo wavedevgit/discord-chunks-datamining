@@ -17,30 +17,30 @@ function c(t, e) {
     {
       searchResults: E
     } = (0, u.F)(),
-    d = new Set;
+    S = new Set;
   for (let t of E) {
     let e = t;
     for (; null != e;) {
-      var S;
-      let t = null == (S = c[e]) ? true : S.parent;
+      var d;
+      let t = null == (d = c[e]) ? true : d.parent;
       if (null == t) {
-        d.add(e);
+        S.add(e);
         break
       }
       e = t
     }
   }
-  let T = (0, o.Z)(n, null != e ? e : "", d),
-    [I, g] = i.useState(T),
-    O = function(t, e) {
+  let T = (0, o.Z)(n, null != e ? e : "", S),
+    [I, O] = i.useState(T),
+    g = function(t, e) {
       if (t.size !== e.size) returntrue;
       for (let n of t)
         if (!e.has(n)) returntrue;
       returnfalse
     }(I, T);
   return i.useEffect(() => {
-    O && g(T)
-  }, [O, T]), i.useMemo(() => {
+    g && O(T)
+  }, [g, T]), i.useMemo(() => {
     var t, e, i;
     let l = new s.Z;
     return {

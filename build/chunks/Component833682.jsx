@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
 let Chunk775322 = require("./775322.js"),
   Chunk853453 = require("./853453.js");
 
-function A() {
+function N() {
   let t = (0, Chunk442837.e7)([Chunk210887.Z], () => (0, Chunk793030.apv)(Chunk210887.Z.theme));
   return (0, Chunk951288.jsx)("img", {
     src: module ? Chunk775322 : Chunk853453,
@@ -30,7 +30,7 @@ function A() {
   })
 }
 
-function N() {
+function A() {
   let t = Chunk647438.useCallback(t => {
       a.Z.setNoiseCancellation(t === T.Q4.KRISP, T.MP), a.Z.setNoiseSuppression(t === T.Q4.STANDARD, T.MP)
     }, []),
@@ -45,9 +45,9 @@ function N() {
       isNoiseSuppressionSupported: Chunk131951.Z.isNoiseSuppressionSupported(),
       isNoiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported()
     })),
-    d = require ? Chunk803567.Q4.STANDARD : Chunk803567.Q4.NONE,
-    S = exports ? Chunk803567.Q4.KRISP : Chunk210887,
-    O = Chunk647438.useMemo(() => {
+    S = require ? Chunk803567.Q4.STANDARD : Chunk803567.Q4.NONE,
+    d = exports ? Chunk803567.Q4.KRISP : Chunk210887,
+    g = Chunk647438.useMemo(() => {
       let t = [];
       return Chunk509613 && module.push({
         label: Chunk388032.intl.string(Chunk388032.t.rdoNzt),
@@ -71,7 +71,7 @@ function N() {
       value: Chunk313789,
       onChange: module,
       options: Chunk775322
-    }), Chunk509613 && (0, Chunk951288.jsx)(A, {})]
+    }), Chunk509613 && (0, Chunk951288.jsx)(N, {})]
   })
 }
 let f = (0, Chunk509613.ON)(Chunk313789.n.VOICE_NOISE_SUPPRESSION_SETTING, {
@@ -79,5 +79,5 @@ let f = (0, Chunk509613.ON)(Chunk313789.n.VOICE_NOISE_SUPPRESSION_SETTING, {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isInputProfileCustom() && Chunk131951.Z.isNoiseSuppressionSupported())
   },
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.t8Qhib), Chunk388032.intl.string(Chunk388032.t.hmfkCi)],
-  render: () => (0, Chunk951288.jsx)(N, {})
+  render: () => (0, Chunk951288.jsx)(A, {})
 })

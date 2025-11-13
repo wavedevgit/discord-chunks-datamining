@@ -42,7 +42,9 @@ function j(e) {
     null == E || N || (0, g.U5)(E)
   }, [N, E]), null == t) ? null : _ ? (0, r.jsx)(s.Z, {}) : (0, r.jsxs)("div", {
     ref: n,
-    children: [(0, r.jsxs)(a.vwX, {
+    children: [(0, r.jsxs)(a.Heading, {
+      variant: "heading-md/medium",
+      color: "header-primary",
       className: x.title,
       children: [b.intl.string(b.t["5XZKy/"]), (0, r.jsx)(p.xl, {
         guild: t

@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 206942, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => O
 }), require("./951288.js"), require("./647438.js");
 var Chunk442837 = require("./442837.js");
 require("./481060.js");
@@ -14,13 +14,13 @@ var Chunk292556 = require("./292556.js"),
   Chunk407458 = require("./407458.js"),
   Chunk388032 = require("./388032.jsx");
 require("./649926.js");
-let d = {
+let S = {
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
     useDisabledMessage: () => (0, Chunk734934.p)() ? Chunk388032.intl.string(Chunk388032.t.cIRG0s) : true
   },
-  S = {
+  d = {
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.XBrJT6),
     sound: "call_ringing"
   },
@@ -35,7 +35,7 @@ let d = {
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
     setValue: t => l.default.toggleDisableAllSounds(t)
   }),
-  g = (0, Chunk509613.$l)(Chunk313789.n.NOTIFICATION_SOUNDS_LIST, {
+  O = (0, Chunk509613.$l)(Chunk313789.n.NOTIFICATION_SOUNDS_LIST, {
     collapseAfter: 4,
     useCollapsibleTitle: (t, e) => t ? E.intl.formatToPlainString(E.t["0JYT98"], {
       count: e
@@ -43,5 +43,5 @@ let d = {
       count: e
     }),
     ContextProvider: Chunk299426.u,
-    buildLayout: () => [(0, Chunk407458.j)(d), T, (0, Chunk407458.j)(S), I]
+    buildLayout: () => [(0, Chunk407458.j)(S), T, (0, Chunk407458.j)(d), I]
   })

@@ -201,7 +201,7 @@ function J(e) {
   } = i.useContext(S.ZP), e_ = (0, d.e7)([R.Z], () => !R.Z.hasLoadedStickerPacks), ep = (0, A.V2)({
     location: "expression_picker"
   }), eh = (0, d.e7)([w.Z], () => w.Z.isOpen()), em = null != en, eg = (0, _.Jw)(null != en ? en : ""), {
-    expressionsCombinedIntoEmojiButton: eE
+    reorderExpressionPickerTabs: eE
   } = b.n.useConfig({
     location: "expression_picker"
   }), eb = (null == (t = z.gifs) ? true : t.allowSending) && !c.tq && null != V, ey = (null == (n = z.stickers) ? true : n.allowSending) && null != Y, eO = !(null == (a = z.expressionPicker) ? true : a.onlyEmojis) && (eb || ey), ev = (0, v.qt)({

@@ -12,20 +12,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk36192 = require("./36192.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let d = (0, Chunk509613.x1)(Chunk313789.n.SESSIONS_PANE, {
+let S = (0, Chunk509613.x1)(Chunk313789.n.SESSIONS_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     buildLayout: () => [],
     render: () => (0, Chunk951288.jsx)(Chunk36192.Z, {})
   }),
-  S = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
+  d = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
-    buildLayout: () => [d]
+    buildLayout: () => [S]
   }),
   T = (0, Chunk509613.m7)(Chunk313789.n.SESSIONS_SIDEBAR_ITEM, {
     icon: Chunk657707.dW3,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     getLegacySearchKey: () => Chunk726985.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
-    buildLayout: () => [S],
+    buildLayout: () => [d],
     trailing: {
       type: Chunk28682.PU.BADGE_NEW,
       getDismissibleContentTypes: () => [Chunk704215.z.AUTH_SESSIONS_NEW]

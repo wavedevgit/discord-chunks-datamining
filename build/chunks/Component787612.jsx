@@ -22,7 +22,9 @@ function g(e) {
     className: u.container,
     children: [(0, r.jsxs)("div", {
       className: u.column,
-      children: [(0, r.jsxs)(i.vwX, {
+      children: [(0, r.jsxs)(i.Heading, {
+        variant: "heading-md/medium",
+        color: "header-primary",
         className: u.title,
         children: [d.intl.string(d.t.tzGY0q), (0, r.jsx)(a.hH, {
           guild: t

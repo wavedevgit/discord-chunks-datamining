@@ -1,7 +1,7 @@
 /** Chunk was on 18729 **/
 /** chunk id: 914578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,7 +46,7 @@ function v(e) {
   })
 }
 
-function g() {
+function x() {
   let e = Chunk647438.useRef(null),
     t = Chunk906467.Z.isDeveloper;
   return (0, Chunk951288.jsxs)("div", {

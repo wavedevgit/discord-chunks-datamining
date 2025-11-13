@@ -1,39 +1,46 @@
 /** Chunk was on 18729 **/
 /** chunk id: 4794, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => u
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk59662 = require("./59662.js"),
   Chunk36361 = require("./36361.jsx"),
   Chunk530171 = require("./530171.jsx"),
+  Chunk175993 = require("./175993.jsx"),
   Chunk445642 = require("./445642.js");
-let s = Chunk647438.memo(function(e) {
+let u = Chunk647438.memo(function(e) {
   let {
     node: t
   } = e, {
     useTitle: n,
-    layout: s,
-    useSubtitle: u
-  } = t, [d, f] = l.useState(false), {
-    navTransition: b
+    layout: u,
+    useSubtitle: d,
+    notice: f
+  } = t, [b, p] = l.useState(false), {
+    navTransition: y
   } = (0, o.t)();
   l.useEffect(() => {
-    (null == b ? true : b.targetAccordionKey) === t.key && f(true)
-  }, [null == b ? true : b.targetAccordionKey, t.key]);
-  let p = null == n ? true : n(d),
-    y = null == u ? true : u();
+    (null == y ? true : y.targetAccordionKey) === t.key && p(true)
+  }, [null == y ? true : y.targetAccordionKey, t.key]);
+  let j = null == n ? true : n(b),
+    m = null == d ? true : d();
   return (0, r.jsx)("div", {
-    className: c.accordion,
-    children: (0, r.jsx)(a.I, {
-      title: p,
-      subtitle: y,
-      isOpen: d,
-      setIsOpen: f,
-      children: s.map(e => (0, r.jsx)(i.Z, {
+    className: s.accordion,
+    children: (0, r.jsxs)(a.I, {
+      title: j,
+      subtitle: m,
+      isOpen: b,
+      setIsOpen: p,
+      children: [null != f && (0, r.jsx)("div", {
+        className: s.notice,
+        children: (0, r.jsx)(c.Z, {
+          notice: f
+        })
+      }), u.map(e => (0, r.jsx)(i.Z, {
         node: e
-      }, e.key))
+      }, e.key))]
     })
   })
 })

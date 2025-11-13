@@ -60,7 +60,7 @@ function S(e) {
     {
       node: a,
       directory: s
-    } = (0, f.Z)(g.Z, i),
+    } = (0, f.Z)(x.Z, i),
     u = null != t && null != s.entry(t) ? t : true,
     y = l.useRef(null);
   return ((0, c.ZP)(() => {
@@ -93,7 +93,7 @@ function S(e) {
     emptyState: _,
     sidebarFooter: v.Z,
     onPanelChange: e => {
-      let t = (0, x.getUserSettingsSectionsByWebUserSettings)().get(e);
+      let t = (0, g.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (P({
         destinationPanel: t,
         originPanel: y.current

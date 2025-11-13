@@ -4,7 +4,7 @@ require.d(exports, {
   $l: () => I,
   CB: () => T,
   Em: () => f,
-  IC: () => d,
+  IC: () => S,
   J9: () => Z,
   ON: () => L,
   Ql: () => function t(e, n) {
@@ -34,12 +34,12 @@ require.d(exports, {
     }
     return e
   },
-  UO: () => N,
-  Uc: () => g,
+  UO: () => A,
+  Uc: () => O,
   ax: () => _,
-  k4: () => S,
+  k4: () => d,
   m7: () => o,
-  qs: () => A,
+  qs: () => N,
   so: () => s,
   vB: () => a,
   wf: () => c,
@@ -106,11 +106,11 @@ function E(t, e) {
   return r(t, i.Jq.PANE, e)
 }
 
-function d(t, e) {
+function S(t, e) {
   return r(t, i.Jq.SPLIT, e)
 }
 
-function S(t, e) {
+function d(t, e) {
   return r(t, i.Jq.CATEGORY, e)
 }
 
@@ -122,11 +122,11 @@ function I(t, e) {
   return r(t, i.Jq.LIST, e)
 }
 
-function g(t, e) {
+function O(t, e) {
   return r(t, i.Jq.FIELD_SET, e)
 }
 
-function O(t, e, n) {
+function g(t, e, n) {
   return u(l({}, n), {
     key: t,
     type: e
@@ -134,25 +134,25 @@ function O(t, e, n) {
 }
 
 function _(t, e) {
-  return O(t, i.Jq.BUTTON, e)
-}
-
-function A(t, e) {
-  return O(t, i.Jq.TOGGLE, e)
+  return g(t, i.Jq.BUTTON, e)
 }
 
 function N(t, e) {
-  return O(t, i.Jq.SLIDER, e)
+  return g(t, i.Jq.TOGGLE, e)
+}
+
+function A(t, e) {
+  return g(t, i.Jq.SLIDER, e)
 }
 
 function f(t, e) {
-  return O(t, i.Jq.SELECT, e)
+  return g(t, i.Jq.SELECT, e)
 }
 
 function Z(t, e) {
-  return O(t, i.Jq.RADIO, e)
+  return g(t, i.Jq.RADIO, e)
 }
 
 function L(t, e) {
-  return O(t, i.Jq.CUSTOM, e)
+  return g(t, i.Jq.CUSTOM, e)
 }

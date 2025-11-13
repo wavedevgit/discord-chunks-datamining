@@ -53,8 +53,8 @@ function y(e) {
     directory: j,
     target: m,
     defaultTarget: v,
-    onClose: g,
-    sidebarHeader: x,
+    onClose: x,
+    sidebarHeader: g,
     sidebarFooter: h,
     onPanelChange: O,
     emptyState: P
@@ -69,17 +69,17 @@ function y(e) {
   });
   let C = d.Z.useField("currentPanelKey"),
     _ = d.Z.useField("targetKey"),
-    [w, E] = l.useState(j),
-    N = l.useMemo(() => w.get(null != C ? C : S), [w, C, S]),
-    k = l.useCallback(() => Z(true), []),
-    [T, Z] = l.useState({
+    [N, w] = l.useState(j),
+    E = l.useMemo(() => N.get(null != C ? C : S), [N, C, S]),
+    T = l.useCallback(() => Z(true), []),
+    [k, Z] = l.useState({
       target: S,
       targetAccordionKey: null == (n = j.entry(S)) ? true : n.parentAccordionKey,
       animateScroll: false,
-      complete: k
+      complete: T
     }),
     {
-      navigateWithValidation: D
+      navigateWithValidation: I
     } = (0, s.Cu)();
   l.useEffect(() => {
     if (null == _) return;
@@ -93,11 +93,11 @@ function y(e) {
     let t = {
       target: _,
       targetAccordion: e.parentAccordionKey,
-      complete: k
+      complete: T
     };
     if (e.targetPanelKey !== C) {
       let n = e.targetPanelKey;
-      D(() => {
+      I(() => {
         d.Z.setState({
           targetKey: true,
           currentPanelKey: n,
@@ -111,25 +111,25 @@ function y(e) {
     })), d.Z.setState({
       targetKey: true
     })
-  }, [C, _, k, j, D, O]);
-  let I = l.useMemo(() => ({
-      navTransition: T
-    }), [T]),
-    R = () => D(g),
+  }, [C, _, T, j, I, O]);
+  let D = l.useMemo(() => ({
+      navTransition: k
+    }), [k]),
+    R = () => I(x),
     A = null != C ? j.get(C) : true;
   return (0, r.jsx)(u.j.Provider, {
-    value: I,
+    value: D,
     children: (0, r.jsxs)("div", {
       className: f.container,
       children: [(0, r.jsx)(c.P, {
         root: y,
-        header: x,
+        header: g,
         footer: h,
         onClose: R,
         emptyState: P
       }), (0, r.jsx)(a.Z, {
         onClose: R,
-        setting: null != A ? A : N
+        setting: null != A ? A : E
       })]
     })
   })

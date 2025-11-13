@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 815194, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk509613 = require("./509613.js"),
   Chunk131951 = require("./131951.js"),
   Chunk313789 = require("./313789.js"),
-  Chunk595373 = require("./595373.js"),
+  Chunk595373 = require("./595373.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk53179 = require("./53179.js");
@@ -30,14 +30,14 @@ function I() {
       className: Chunk53179.keybindContainer,
       children: (0, Chunk951288.jsx)(Chunk825209.Z, {
         defaultValue: module,
-        onChange: t => r.Z.setMode(d.pM4.PUSH_TO_TALK, {
+        onChange: t => r.Z.setMode(S.pM4.PUSH_TO_TALK, {
           shortcut: t
         })
       })
     })
   })
 }
-let g = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
+let O = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
   usePredicate: Chunk595373.p,
   render: () => (0, Chunk951288.jsx)(I, {}),
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)]

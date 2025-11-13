@@ -1,15 +1,24 @@
 /** Chunk was on 9452 **/
 /** chunk id: 776570, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => S
 });
-var Chunk509613 = require("./509613.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk509613 = require("./509613.js"),
+  Chunk28682 = require("./28682.js"),
+  Chunk825655 = require("./825655.jsx"),
   Chunk313789 = require("./313789.js"),
   Chunk665388 = require("./665388.js"),
   Chunk589741 = require("./589741.js"),
   Chunk97951 = require("./97951.jsx"),
   Chunk388032 = require("./388032.jsx");
-let o = (0, Chunk509613.k4)(Chunk313789.n.VOICE_CATEGORY, {
+let S = (0, Chunk509613.k4)(Chunk313789.n.VOICE_CATEGORY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.K3lovD),
+  notice: {
+    type: Chunk28682.y1.STRONGLY_DISCOURAGED_CUSTOM,
+    render: () => (0, Chunk951288.jsx)(Chunk825655.Z, {
+      sourcePage: "voice"
+    })
+  },
   buildLayout: () => [Chunk665388.Z, Chunk589741.Z, Chunk97951.Z]
 })

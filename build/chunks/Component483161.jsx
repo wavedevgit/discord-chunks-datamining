@@ -20,13 +20,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk88651 = require("./88651.js");
-let N = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
+let A = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
     buildLayout: () => [],
     render: Chunk564344.Z
   }),
   f = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+q"]),
-    buildLayout: () => [N],
+    buildLayout: () => [A],
     notice: {
       stores: [Chunk778825.Z, Chunk25990.Z],
       element: Chunk398140.Z
