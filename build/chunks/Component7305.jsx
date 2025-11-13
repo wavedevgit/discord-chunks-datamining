@@ -63,15 +63,15 @@ function D(e) {
   let {
     analyticsLocation: t,
     analyticsObject: n,
-    analyticsSourceLocation: a,
+    analyticsSourceLocation: l,
     onComplete: s,
     transitionState: c,
     initialPlanId: u,
     subscriptionTier: p,
     onClose: h,
     trialId: x,
-    trialFooterMessageOverride: y,
-    reviewWarningMessage: P,
+    trialFooterMessageOverride: j,
+    reviewWarningMessage: y,
     openInvoiceId: S,
     onSubscriptionConfirmation: _,
     renderPurchaseConfirmation: C,
@@ -88,7 +88,7 @@ function D(e) {
   } = e, {
     analyticsLocations: D
   } = (0, d.ZP)();
-  l.useEffect(() => {
+  a.useEffect(() => {
     m.Z.isLoadedForPremiumSKUs() || i.Z.wait(() => (0, o.Y2)())
   }, []);
   let {
@@ -97,14 +97,14 @@ function D(e) {
     isGift: H,
     giftMessage: G,
     giftRecipient: U
-  } = (0, b.wD)(), K = H && (0, f.pO)(U) && F === v.h8.PLAN_SELECT;
+  } = (0, b.wD)(), z = H && (0, f.pO)(U) && F === v.h8.PLAN_SELECT;
   return (0, r.jsx)(O.Z, {
     isConfirmationStep: F === v.h8.CONFIRM && null == L && null == C,
-    children: (0, r.jsx)(j.PaymentModal, {
+    children: (0, r.jsx)(P.PaymentModal, {
       analyticsLocations: D,
       analyticsLocation: t,
       analyticsObject: n,
-      analyticsSourceLocation: a,
+      analyticsSourceLocation: l,
       analyticsSubscriptionType: R.NYc.PREMIUM,
       onComplete: s,
       transitionState: c,
@@ -114,8 +114,8 @@ function D(e) {
       onClose: h,
       trialId: x,
       isGift: H,
-      trialFooterMessageOverride: y,
-      reviewWarningMessage: P,
+      trialFooterMessageOverride: j,
+      reviewWarningMessage: y,
       planGroup: M.Y1,
       openInvoiceId: S,
       onSubscriptionConfirmation: _,
@@ -128,7 +128,7 @@ function D(e) {
       referralTrialOfferId: N,
       skuId: A,
       shakeWhilePurchasing: true,
-      isDynamicModal: K,
+      isDynamicModal: z,
       returnRef: Z,
       skipConfirm: B,
       continueSessionToInitialStep: L
@@ -139,8 +139,8 @@ function D(e) {
 function F(e) {
   var t, n;
   let {
-    initialPlanId: l,
-    handleStepChange: a,
+    initialPlanId: a,
+    handleStepChange: l,
     referralTrialOfferId: i
   } = e, {
     paymentSources: o,
@@ -154,12 +154,12 @@ function F(e) {
     skuId: s,
     referralTrialOfferId: i
   }), h = (0, k.Fv)(m), f = (0, u.id)(d, c, p);
-  return (0, r.jsx)(y.J, (t = B({}, e), n = n = {
+  return (0, r.jsx)(j.J, (t = B({}, e), n = n = {
     breadcrumbSteps: L,
     onReturn: () => {
       let e = Object.values(o),
-        t = e.length < 1 && null == l ? v.h8.PLAN_SELECT : v.h8.REVIEW;
-      h && (t = v.h8.REVIEW), f && e.length < 1 && (t = v.h8.SELECT_FREE_SKU), a(t, {
+        t = e.length < 1 && null == a ? v.h8.PLAN_SELECT : v.h8.REVIEW;
+      h && (t = v.h8.REVIEW), f && e.length < 1 && (t = v.h8.SELECT_FREE_SKU), l(t, {
         trackedFromStep: v.h8.PAYMENT_TYPE
       })
     }
@@ -178,7 +178,7 @@ let H = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     return [{
       key: null,
-      renderStep: e => (0, r.jsx)(j.I, B({}, e))
+      renderStep: e => (0, r.jsx)(P.I, B({}, e))
     }, {
       key: Chunk409813.h8.SKU_SELECT,
       renderStep: e => (0, r.jsx)(I.q, B({}, e)),
@@ -238,10 +238,10 @@ let H = function() {
   G = H();
 
 function U(e) {
-  let t = (0, a.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()),
+  let t = (0, l.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()),
     n = (0, c.Vi)() ? M.Xh.PREMIUM_MONTH_TIER_2 : true,
     {
-      analyticsLocations: l
+      analyticsLocations: a
     } = (0, d.ZP)(e.analyticsLocations, s.Z.PREMIUM_PAYMENT_MODAL),
     {
       confirmationFooter: i,
@@ -250,32 +250,32 @@ function U(e) {
       giftMessage: m,
       giftRecipient: f,
       giftStyle: v,
-      isGift: j,
-      loadId: y,
-      referralCode: P,
+      isGift: P,
+      loadId: j,
+      referralCode: y,
       subscriptionTier: S
     } = e;
   if (null != S && !Object.values(M.Si).includes(S)) throw Error("subscriptionTier must be a premium subscription");
   let _ = (0, p.ao)({
     location: "PremiumPaymentSelect",
     giftRecipient: f,
-    isGift: null != j && j
+    isGift: null != P && P
   });
   return (0, r.jsx)(d.Gt, {
-    value: l,
+    value: a,
     children: (0, r.jsx)(g.PaymentContextProvider, {
-      loadId: y,
+      loadId: j,
       activeSubscription: null != e.subscription ? e.subscription : t,
       stepConfigs: H(_),
       skuIDs: [...M.YQ],
-      isGift: j,
+      isGift: P,
       defaultPlanId: null != n ? n : o,
-      referralCode: P,
+      referralCode: y,
       wasTier2PremiumBeforePurchase: e.wasTier2PremiumBeforePurchase,
       children: (0, r.jsx)(x.c1, {
         confirmationFooter: i,
         children: (0, r.jsx)(b.KB, {
-          isGift: j,
+          isGift: P,
           giftRecipient: null == f ? true : f,
           giftMessage: m,
           giftStyle: v,

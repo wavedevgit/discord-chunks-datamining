@@ -87,15 +87,16 @@ function h(e) {
   }
 }
 
-function m(e, t) {
+function m(e, t, n) {
   if (null != e && null != t) {
-    let n = t.background,
-      r = e.backgroundImage;
+    var r, i;
+    let a = t.background,
+      o = e.backgroundImage;
     return {
-      backgroundImage: "".concat(r, ", ").concat(n),
+      backgroundImage: "".concat(o, ", ").concat(a),
       backgroundColor: "lightgray",
-      backgroundSize: "cover, auto",
-      backgroundPosition: "right center, 0% 0%",
+      backgroundSize: null != (r = null == n ? true : n.backgroundSize) ? r : "auto 110%, auto",
+      backgroundPosition: null != (i = null == n ? true : n.backgroundPosition) ? i : "right 90% center, 0% 0%",
       backgroundRepeat: "no-repeat, no-repeat"
     }
   }

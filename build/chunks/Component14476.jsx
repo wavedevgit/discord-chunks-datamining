@@ -19,19 +19,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk632939 = require("./632939.js");
 let g = e => {
   let t, n, {
-      skuId: a,
+      skuId: l,
       assetId: g,
       user: v,
       claimed: x,
-      onSelect: j,
-      productName: y,
-      a11yLabel: P,
+      onSelect: P,
+      productName: j,
+      a11yLabel: y,
       selectedSkuId: S,
       category: _,
       type: O,
       palette: C
     } = e,
-    w = l.useRef(null),
+    w = a.useRef(null),
     {
       isHoveringOrFocusing: k
     } = (0, u.Z)(w),
@@ -40,7 +40,7 @@ let g = e => {
     T = (0, s.wj)(I);
   return O === o.Z.AVATAR_DECORATION ? (t = {
     type: o.Z.AVATAR_DECORATION,
-    label: P,
+    label: y,
     asset: g
   }, n = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.R, {
@@ -58,7 +58,7 @@ let g = e => {
     })]
   })) : O === o.Z.NAMEPLATE && (t = {
     type: o.Z.NAMEPLATE,
-    label: P,
+    label: y,
     asset: g,
     palette: null != C ? C : "none"
   }, n = (0, r.jsx)(h.Z, {
@@ -70,14 +70,14 @@ let g = e => {
   })), (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)(d.kL8, {
       ref: w,
-      "aria-label": null != y ? y : "",
+      "aria-label": null != j ? j : "",
       onClick: () => {
-        null == a || null == j || x || j(a)
+        null == l || null == P || x || P(l)
       },
       className: i()(T ? b.shopCardDark : b.shopCard, {
         [b.shopCardAnimation]: !x,
         [T ? b.shopCardDarkHighlighted : b.shopCardHighlighted]: E,
-        [b.shopCardSelected]: S === a
+        [b.shopCardSelected]: S === l
       }),
       children: [(0, r.jsx)("div", {
         className: i()(b.preview, {
@@ -92,7 +92,7 @@ let g = e => {
         className: b.productName,
         children: [(0, r.jsx)(d.Heading, {
           variant: "heading-md/extrabold",
-          children: y
+          children: j
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           children: x ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)

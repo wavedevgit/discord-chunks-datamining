@@ -15,12 +15,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk807276 = require("./807276.js");
 
 function m(e) {
-  var t, n, a, m;
+  var t, n, l, m;
   let {
     defaultCategory: h,
     onCategoryChange: f,
     className: b
-  } = e, [g, v] = l.useState(h), [x, j] = l.useState(null), y = (0, s.Z)(), P = l.useMemo(() => [{
+  } = e, [g, v] = a.useState(h), [x, P] = a.useState(null), j = (0, s.Z)(), y = a.useMemo(() => [{
     name: u.intl.string(u.t["6Zuivx"]),
     value: d.KN.Trick,
     key: "Trick",
@@ -28,8 +28,8 @@ function m(e) {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => j(d.KN.Trick),
-    onMouseLeave: () => j(null)
+    onMouseEnter: () => P(d.KN.Trick),
+    onMouseLeave: () => P(null)
   }, {
     name: u.intl.string(u.t["2UeOlY"]),
     value: d.KN.Treat,
@@ -38,15 +38,15 @@ function m(e) {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => j(d.KN.Treat),
-    onMouseLeave: () => j(null)
-  }], []), S = l.useCallback(e => {
+    onMouseEnter: () => P(d.KN.Treat),
+    onMouseLeave: () => P(null)
+  }], []), S = a.useCallback(e => {
     v(e.value), f(e.value)
-  }, [f]), _ = null == y || null == (n = y.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, O = null == y || null == (m = y.segmentedControlAnimations) || null == (a = m.treat) ? true : a.getAnimationData;
+  }, [f]), _ = null == j || null == (n = j.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, O = null == j || null == (m = j.segmentedControlAnimations) || null == (l = m.treat) ? true : l.getAnimationData;
   return (0, r.jsxs)("div", {
     className: i()(p.container, b),
     children: [(0, r.jsx)(c.w, {
-      options: P,
+      options: y,
       value: g,
       onChange: S
     }), x === d.KN.Trick && null != _ && (0, r.jsx)("div", {

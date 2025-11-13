@@ -24,9 +24,9 @@ function g(e) {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
     selectedGiftingPromotionReward: g
-  } = e, v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), x = (0, l.e7)([o.Z], () => o.Z.useReducedMotion), {
-    analyticsLocations: j
-  } = (0, s.ZP)(), y = i.EFr.SIZE_32, P = (0, d.Z)(null == g ? true : g.assetId, y, !x), S = (0, p.Z)(), _ = null == S ? true : S.giftPurchaseConfirmation;
+  } = e, v = (0, a.e7)([m.default], () => m.default.getCurrentUser()), x = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), {
+    analyticsLocations: P
+  } = (0, s.ZP)(), j = i.EFr.SIZE_32, y = (0, d.Z)(null == g ? true : g.assetId, j, !x), S = (0, p.Z)(), _ = null == S ? true : S.giftPurchaseConfirmation;
   return null == n || null == _ ? null : (0, r.jsx)(h.O3, {
     children: (0, r.jsx)(i.mzw, {
       align: u.Z.Align.CENTER,
@@ -35,17 +35,17 @@ function g(e) {
         className: b.promotionalFooter,
         children: [(0, r.jsx)(i.Xo$, {
           "aria-label": null == v ? true : v.username,
-          size: y,
-          src: null == v ? true : v.getAvatarURL(true, (0, i.pxk)(y), !x),
-          avatarDecoration: P
-        }), (0, r.jsx)(a.zxk, {
+          size: j,
+          src: null == v ? true : v.getAvatarURL(true, (0, i.pxk)(j), !x),
+          avatarDecoration: y
+        }), (0, r.jsx)(l.zxk, {
           variant: "primary",
           text: _.collectRewardButtonText(),
           onClick: () => {
             t(), (0, c.Z)({
               product: n,
               shouldShowPromotionalExperience: true,
-              analyticsLocations: j,
+              analyticsLocations: P,
               purchaseType: f.o8.PROMOTIONAL
             })
           }

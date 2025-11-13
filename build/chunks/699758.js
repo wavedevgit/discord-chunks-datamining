@@ -1,17 +1,17 @@
 /** Chunk was on 54400 **/
 /** chunk id: 699758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  KN: () => a,
+  KN: () => l,
   ZP: () => o,
   mo: () => i
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk647438 = require("./647438.js"),
-  a = ((r = {})[r.Trick = 0] = "Trick", r[r.Treat = 1] = "Treat", r);
+  l = ((r = {})[r.Trick = 0] = "Trick", r[r.Treat = 1] = "Treat", r);
 let i = 2;
 
 function o(e, t, n) {
-  let r = l.useRef(Math.random());
-  return l.useMemo(() => {
+  let r = a.useRef(Math.random());
+  return a.useMemo(() => {
     if (null == e || 0 === e.length) return null;
     if (null == t || 0 === t.length) {
       let t = null != n && e.some(e => e.skuId === n.skuId) ? n : e[0];
@@ -20,15 +20,15 @@ function o(e, t, n) {
         defaultHighlightedReward: t
       }
     }
-    let l = [],
-      a = new Map,
+    let a = [],
+      l = new Map,
       o = new Map;
     for (let n of t)
       if (n.variants.length >= i)
         for (let t = 0; t < i; t++) {
           let r = t,
             i = n.variants[t];
-          e.some(e => e.skuId === i.skuId) && (o.set(i.skuId, r), a.has(r) || (l.push(r), a.set(r, function(e, t) {
+          e.some(e => e.skuId === i.skuId) && (o.set(i.skuId, r), l.has(r) || (a.push(r), l.set(r, function(e, t) {
             return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function o(e, t, n) {
             name: n.name
           }))))
         }
-    if (0 === l.length) return null;
+    if (0 === a.length) return null;
     if (null != n) {
       let e = o.get(n.skuId);
       if (null != e) return {
@@ -68,10 +68,10 @@ function o(e, t, n) {
         defaultHighlightedReward: n
       }
     }
-    let s = l[Math.floor(r.current * l.length)];
+    let s = a[Math.floor(r.current * a.length)];
     return {
       defaultCategory: s,
-      defaultHighlightedReward: a.get(s)
+      defaultHighlightedReward: l.get(s)
     }
   }, [e, t, n])
 }

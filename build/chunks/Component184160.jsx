@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
   Chunk807163 = require("./807163.jsx"),
   Chunk74538 = require("./74538.js"),
@@ -21,20 +21,20 @@ function h(e) {
     handleStepChange: t,
     handleClose: n
   } = e, {
-    activeSubscription: l,
+    activeSubscription: a,
     selectedSkuId: h,
     setSelectedPlanId: f,
     startedPaymentFlowWithPaymentSourcesRef: b
   } = (0, c.JL)(), {
     isGift: g
-  } = (0, d.wD)(), v = null != l ? (0, s.Af)(l) : null, x = null != v ? (0, s.gq)(v.planId) : null, j = null != v ? (0, s.Rd)(v.planId) : null, y = (0, p.Kp)({
+  } = (0, d.wD)(), v = null != a ? (0, s.Af)(a) : null, x = null != v ? (0, s.gq)(v.planId) : null, P = null != v ? (0, s.Rd)(v.planId) : null, j = (0, p.Kp)({
     isTrial: false,
     isGift: g,
     selectedSkuId: h,
     startedPaymentFlowWithPaymentSources: b.current
   });
-  return a()(null != j, "Expected premium type"), (0, r.jsx)(o.Z, {
-    premiumType: j,
+  return l()(null != P, "Expected premium type"), (0, r.jsx)(o.Z, {
+    premiumType: P,
     titleText: m.intl.string(m.t["7VcWW0"]),
     subtitleText: m.intl.format(m.t.Qk34Ik, {
       subscriptionName: x
@@ -46,7 +46,7 @@ function h(e) {
         variant: "primary",
         text: m.intl.string(m.t["3PatSz"]),
         onClick: () => {
-          y ? (f((0, p.nA)(h, l)), t(u.h8.REVIEW)) : t(u.h8.PLAN_SELECT)
+          j ? (f((0, p.nA)(h, a)), t(u.h8.REVIEW)) : t(u.h8.PLAN_SELECT)
         }
       }), (0, r.jsx)(i.Button, {
         variant: "secondary",

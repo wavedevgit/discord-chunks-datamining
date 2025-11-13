@@ -1,7 +1,7 @@
-/** Chunk was on 96413 **/
-/** chunk id: 221300, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 93582 **/
+/** chunk id: 221300, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,62 +13,62 @@ var Chunk979554 = require("./979554.js"),
   Chunk688192 = require("./688192.jsx"),
   Chunk232644 = require("./232644.js");
 
-function d(e) {
+function u(e) {
   let {
-    item: t,
-    profileOwner: r,
-    isHighlighted: d,
-    surface: f = c.Y.PROFILE_MODAL
-  } = e, h = t.collectiblesItem;
+    item: i,
+    profileOwner: t,
+    isHighlighted: u,
+    surface: m = c.Y.PROFILE_MODAL
+  } = e, h = i.collectiblesItem;
   switch (h.type) {
-    case s.Z.PROFILE_EFFECT:
-      return (0, i.jsx)("div", {
-        className: u.profileEffectPreview,
-        children: (0, i.jsx)(o.Z, {
+    case r.Z.PROFILE_EFFECT:
+      return (0, n.jsx)("div", {
+        className: d.profileEffectPreview,
+        children: (0, n.jsx)(o.Z, {
           skuId: h.skuId,
-          isHighlighted: d,
+          isHighlighted: u,
           isPurchased: false,
           removeSetHeight: true
         })
       });
-    case s.Z.AVATAR_DECORATION:
-      return (0, i.jsx)("div", {
-        className: u.avatarDecorationPreview,
-        children: (0, i.jsx)(l.R, {
+    case r.Z.AVATAR_DECORATION:
+      return (0, n.jsx)("div", {
+        className: d.avatarDecorationPreview,
+        children: (0, n.jsx)(a.R, {
           item: h,
-          user: r,
-          isHighlighted: d,
+          user: t,
+          isHighlighted: u,
           isPurchased: false,
-          avatarSize: a.EFr.SIZE_80
+          avatarSize: s.EFr.SIZE_80
         })
       });
-    case s.Z.NAMEPLATE:
-      return (0, i.jsxs)("div", {
-        className: u.nameplatePreview,
-        children: [(0, i.jsx)("div", {
-          className: u.nameplateTopLeft,
-          children: (0, i.jsx)(n.Z, {
-            user: r,
+    case r.Z.NAMEPLATE:
+      return (0, n.jsxs)("div", {
+        className: d.nameplatePreview,
+        children: [(0, n.jsx)("div", {
+          className: d.nameplateTopLeft,
+          children: (0, n.jsx)(l.Z, {
+            user: t,
             nameplate: h,
-            isHighlighted: d,
+            isHighlighted: u,
             showPlaceholderUser: true,
             showStatus: true,
             isPurchased: false,
             nameplatePreviewSize: "default",
-            width: f === c.Y.GIFTING_FLOW ? 136 : 200
+            width: m === c.Y.GIFTING_FLOW ? 136 : 200
           })
-        }), (0, i.jsx)("div", {
-          className: u.nameplateBottomRight,
+        }), (0, n.jsx)("div", {
+          className: d.nameplateBottomRight,
           "aria-hidden": true,
-          children: (0, i.jsx)(n.Z, {
-            user: r,
+          children: (0, n.jsx)(l.Z, {
+            user: t,
             nameplate: h,
-            isHighlighted: d,
+            isHighlighted: u,
             showPlaceholderUser: true,
             showStatus: true,
             isPurchased: false,
             nameplatePreviewSize: "default",
-            width: f === c.Y.GIFTING_FLOW ? 136 : 200
+            width: m === c.Y.GIFTING_FLOW ? 136 : 200
           })
         })]
       });

@@ -51,7 +51,7 @@ function f() {
         maxRewardImageSrc: _.getImageUrl(true, exports),
         claimableRewards: require,
         size: Chunk481060.EFr.SIZE_48,
-        imageScaling: 2.4
+        imageScaling: exports ? 1.9 : 2.4
       })
     })]
   })

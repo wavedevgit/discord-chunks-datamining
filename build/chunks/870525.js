@@ -1,4 +1,4 @@
-/** Chunk was on 38388 **/
+/** Chunk was on 11788 **/
 /** chunk id: 870525, original params: e,t,n (module,exports,require) **/
 module.exports = {
   keyboardShortcutsModal: "keyboardShortcutsModal_f061f6",

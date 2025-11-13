@@ -1,13 +1,13 @@
-/** Chunk was on 96413 **/
-/** chunk id: 688192, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 93582 **/
+/** chunk id: 688192, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
-  Y: () => x,
-  Z: () => y
+  Y: () => C,
+  Z: () => b
 });
-var i, Chunk951288 = require("./951288.js"),
+var n, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  n = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -23,117 +23,117 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk232644 = require("./232644.js"),
-  x = ((i = {}).GIFTING_FLOW = "gifting_flow", i.PROFILE_MODAL = "profile_modal", i.PROFILE_SIDEBAR = "profile_sidebar", i);
+  C = ((n = {}).GIFTING_FLOW = "gifting_flow", n.PROFILE_MODAL = "profile_modal", n.PROFILE_SIDEBAR = "profile_sidebar", n);
 
-function y(e) {
+function b(e) {
   let {
-    item: t,
-    wishlistId: r,
-    isOwner: i,
-    surface: l = "profile_modal",
-    cardRef: x,
-    renderItemPreview: y,
-    accessibleLabel: w,
-    onCardClick: E,
+    item: i,
+    wishlistId: t,
+    isOwner: n,
+    surface: a = "profile_modal",
+    cardRef: C,
+    renderItemPreview: b,
+    accessibleLabel: P,
+    onCardClick: N,
     buttonCTALabel: S,
-    buttonIcon: _,
-    isOwned: N = false,
-    renderSourceIcon: Z,
-    giftingOrigin: k,
-    source: F
-  } = e, L = a.useRef(null), T = a.useRef(null), C = null != x ? x : T, {
-    analyticsLocations: A
-  } = (0, u.ZP)(), M = i && true === t.isOwned && null != t.gifterUserId, D = null != t.gifterUserId ? h.default.getUser(t.gifterUserId) : null, R = null != D ? m.ZP.getName(D) : null, W = M && null != D && null != R && "" !== R, z = W ? (0, s.jsx)(c.qEK, {
-    src: D.getAvatarURL(true, 48),
+    buttonIcon: k,
+    isOwned: T = false,
+    renderSourceIcon: L,
+    giftingOrigin: O,
+    source: B
+  } = e, E = s.useRef(null), R = s.useRef(null), H = null != C ? C : R, {
+    analyticsLocations: y
+  } = (0, d.ZP)(), G = n && true === i.isOwned && null != i.gifterUserId, M = null != i.gifterUserId ? h.default.getUser(i.gifterUserId) : null, W = null != M ? f.ZP.getName(M) : null, F = G && null != M && null != W && "" !== W, Z = F ? (0, r.jsx)(c.qEK, {
+    src: M.getAvatarURL(true, 48),
     size: c.EFr.SIZE_48,
-    "aria-label": R
-  }) : null, H = (0, s.jsx)("div", {
-    className: I.cardStateIconWrapper,
-    children: (0, s.jsx)(c.sV5, {
+    "aria-label": W
+  }) : null, A = (0, r.jsx)("div", {
+    className: v.cardStateIconWrapper,
+    children: (0, r.jsx)(c.sV5, {
       size: "custom",
       color: c.TVs.colors.WHITE,
       width: 38,
       height: 38,
-      className: n()(I.cardStateIcon, I.checkmark),
-      "aria-label": P.intl.string(P.t.L5Pt9L)
+      className: l()(v.cardStateIcon, v.checkmark),
+      "aria-label": j.intl.string(j.t.L5Pt9L)
     })
-  }), U = (0, s.jsx)("div", {
-    className: I.overlay,
-    children: (0, s.jsx)(c.Button, {
+  }), D = (0, r.jsx)("div", {
+    className: v.overlay,
+    children: (0, r.jsx)(c.Button, {
       focusProps: {
-        ringTarget: C
+        ringTarget: H
       },
       variant: "primary",
       size: "sm",
       text: S,
-      icon: _,
+      icon: k,
       onClick: e => {
-        e.stopPropagation(), B()
+        e.stopPropagation(), z()
       },
       fullWidth: true
     })
-  }), B = () => {
-    if (k === O.Wt.DM_CHANNEL_WISHLIST) {
-      let e = F === f.lr.WISHLIST ? "wishlist" : "shop";
-      p.default.track(b.rMx.GIFTING_ITEM_CLICKED, {
-        sku_id: t.skuId,
+  }), z = () => {
+    if (O === x.Wt.DM_CHANNEL_WISHLIST) {
+      let e = B === m.lr.WISHLIST ? "wishlist" : "shop";
+      _.default.track(w.rMx.GIFTING_ITEM_CLICKED, {
+        sku_id: i.skuId,
         item_source: e,
-        wishlist_id: F === f.lr.WISHLIST ? r : null
+        wishlist_id: B === m.lr.WISHLIST ? t : null
       })
-    } else if (null != r) {
+    } else if (null != t) {
       var e;
-      let i = d.Z.getWishlist(r),
-        s = null != (e = null == i ? true : i.hasThirdPartySku()) && e;
-      (0, v.Er)({
-        wishlistId: r,
-        action: j.NW.WISHLIST_ITEM_CLICKED,
-        skuId: t.skuId,
-        analyticsLocations: A,
-        hasThirdPartySku: s
+      let n = u.Z.getWishlist(t),
+        r = null != (e = null == n ? true : n.hasThirdPartySku()) && e;
+      (0, p.Er)({
+        wishlistId: t,
+        action: g.NW.WISHLIST_ITEM_CLICKED,
+        skuId: i.skuId,
+        analyticsLocations: y,
+        hasThirdPartySku: r
       })
     }
-    E()
-  }, G = (0, s.jsxs)("div", {
-    ref: L,
-    className: I.container,
-    children: [(0, s.jsxs)("div", {
-      ref: C,
-      className: n()(I.card, {
-        [I.isOwned]: N,
-        [I.smallCard]: "gifting_flow" === l,
-        [I.largeCard]: "profile_modal" === l
+    N()
+  }, Y = (0, r.jsxs)("div", {
+    ref: E,
+    className: v.container,
+    children: [(0, r.jsxs)("div", {
+      ref: H,
+      className: l()(v.card, {
+        [v.isOwned]: T,
+        [v.smallCard]: "gifting_flow" === a,
+        [v.largeCard]: "profile_modal" === a
       }),
-      onClick: B,
-      children: [(0, s.jsx)(c.nn4, {
-        children: (0, s.jsx)(c.H, {
-          children: w
+      onClick: z,
+      children: [(0, r.jsx)(c.nn4, {
+        children: (0, r.jsx)(c.H, {
+          children: P
         })
-      }), (0, s.jsx)("div", {
-        className: I.cardPreview,
-        children: y()
-      }), N && H, "profile_modal" === l ? U : (0, s.jsx)(c.P3F, {
+      }), (0, r.jsx)("div", {
+        className: v.cardPreview,
+        children: b()
+      }), T && A, "profile_modal" === a ? D : (0, r.jsx)(c.P3F, {
         "aria-label": S,
         focusProps: {
-          ringTarget: C
+          ringTarget: H
         },
         onClick: e => {
-          e.stopPropagation(), B()
+          e.stopPropagation(), z()
         }
       })]
-    }), null != Z && Z(), i && null != r && (0, s.jsx)(g.Z, {
+    }), null != L && L(), n && null != t && (0, r.jsx)(I.Z, {
       iconSize: "sm",
-      item: t,
-      wishlistId: r,
-      className: I.removeItemButton
+      item: i,
+      wishlistId: t,
+      className: v.removeItemButton
     })]
   });
-  return W ? (0, s.jsx)(o.i_, {
+  return F ? (0, r.jsx)(o.i_, {
     asContainer: true,
-    title: P.intl.formatToPlainString(P.t.TL4ktE, {
-      username: R
+    title: j.intl.formatToPlainString(j.t.TL4ktE, {
+      username: W
     }),
-    body: t.skuName,
-    asset: z,
-    children: G
-  }) : G
+    body: i.skuName,
+    asset: Z,
+    children: Y
+  }) : Y
 }

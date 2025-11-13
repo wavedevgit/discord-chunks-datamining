@@ -2,7 +2,7 @@
 /** chunk id: 124566, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => y
+  D9: () => O
 });
 var Chunk979554 = require("./979554.js"),
   Chunk242433 = require("./242433.js"),
@@ -43,6 +43,9 @@ let m = {
     gradient: ["rgba(177, 186, 253, 1)", "rgba(91, 108, 242, 1)", "rgba(21, 18, 99, 1)"]
   },
   y = {
+    gradient: ["rgba(74, 87, 192, 1)", "rgba(8, 5, 67, 1)"]
+  },
+  O = {
     rewards: [m, g, E],
     rewardAssetIdMap: (0, Chunk717401.YV)([m, g, E]),
     chatGiftIcon: {
@@ -91,7 +94,8 @@ let m = {
       getImageUrl: e => e ? f.Z : d.Z,
       title: () => Chunk388032.intl.string(Chunk388032.t.Eeqjcv),
       body: () => Chunk388032.intl.string(Chunk388032.t.IuMZS3),
-      getBackgroundImageUrl: () => Chunk191333.Z
+      getBackgroundImageUrl: () => Chunk191333.Z,
+      gradientConfig: y
     },
     giftPurchaseConfirmation: {
       yearGiftText: Chunk388032.t["0Z0G7m"],

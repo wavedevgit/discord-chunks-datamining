@@ -119,6 +119,11 @@ let u = Chunk647438.createContext(null),
         null != e && (0, s.V1)(c({
           analyticsLocations: t
         }, e, n))
+      }, [module, exports]),
+      trackUserProfileWishlistAction: Chunk647438.useCallback(n => {
+        null != e && (0, s.Er)(c({
+          analyticsLocations: t
+        }, e, n))
       }, [module, exports])
     }
   }

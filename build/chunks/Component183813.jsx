@@ -30,7 +30,7 @@ function O(e) {
   var t;
   let {
     handleStepChange: n,
-    handleClose: a
+    handleClose: l
   } = e, {
     selectedPlan: O,
     selectedSkuId: C,
@@ -40,14 +40,14 @@ function O(e) {
     selectedGiftingPromotionReward: E,
     claimableRewards: I,
     claimableVariants: T
-  } = (0, v.wD)(), N = (0, u.Z)(), R = (0, o.e7)([b.default], () => b.default.getCurrentUser()), M = (0, p.ZP)(I, T, E), [A, Z] = l.useState(null == M || null == (t = M.defaultHighlightedReward) ? true : t.skuId), [B, L] = l.useState(false), D = (0, m.Z)({
+  } = (0, v.wD)(), N = (0, u.Z)(), R = (0, o.e7)([b.default], () => b.default.getCurrentUser()), M = (0, p.ZP)(I, T, E), [A, Z] = a.useState(null == M || null == (t = M.defaultHighlightedReward) ? true : t.skuId), [B, L] = a.useState(false), D = (0, m.Z)({
     claimableVariants: T,
     claimableRewards: I,
     defaultSelection: M,
     selectedGiftingPromotionReward: E,
     setSelectedGiftingPromotionReward: k,
     hasUserMadeSelection: B
-  }), F = l.useMemo(() => {
+  }), F = a.useMemo(() => {
     var e, t;
     if (null == T || 0 === T.length) return null != (e = null == N ? true : N.rewards) ? e : [];
     let n = null != (t = null == D ? true : D.selectedCategory) ? t : p.KN.Trick;
@@ -84,24 +84,24 @@ function O(e) {
       }), t)
     })
   }, [T, null == N ? true : N.rewards, null == D ? true : D.selectedCategory]);
-  l.useEffect(() => {
+  a.useEffect(() => {
     let e = null == M ? true : M.defaultHighlightedReward;
     !B && null == E && null != e && null != e && F.some(t => t.skuId === e.skuId) && (k(e), Z(e.skuId))
   }, [M, B, E, F, k]), i()(null != O, "Expected plan to selected"), i()(null != C, "Expected selectedSkuId"), i()(null != w, "Step should be set");
-  let H = l.useMemo(() => null != A && (null != I ? I : []).some(e => e.skuId === A), [A, I]),
-    G = l.useMemo(() => null != E && F.some(e => e.skuId === E.skuId), [F, E]),
-    U = l.useMemo(() => 0 === F.length || null == A || !G || !H, [F, A, H, G]);
-  l.useEffect(() => {
+  let H = a.useMemo(() => null != A && (null != I ? I : []).some(e => e.skuId === A), [A, I]),
+    G = a.useMemo(() => null != E && F.some(e => e.skuId === E.skuId), [F, E]),
+    U = a.useMemo(() => 0 === F.length || null == A || !G || !H, [F, A, H, G]);
+  a.useEffect(() => {
     if (0 === F.length) {
       Z(true), k(true);
       return
     }
     H && F.some(e => e.skuId === A) || null == A || (Z(true), k(true))
   }, [F, H, A, k]);
-  let K = e => {
+  let z = e => {
       k(F.find(t => t.skuId === e)), Z(e), L(true)
     },
-    z = F.map(e => {
+    K = F.map(e => {
       var t, n;
       return (0, r.jsx)(d.c, {
         skuId: e.skuId,
@@ -110,25 +110,25 @@ function O(e) {
         a11yLabel: null == (n = e.a11yLabel) ? true : n.call(e),
         claimed: null != I && I.every(t => t.skuId !== e.skuId),
         user: R,
-        onSelect: K,
+        onSelect: z,
         selectedSkuId: A,
         category: null == D ? true : D.selectedCategory,
         type: e.type,
         palette: e.palette
       }, e.skuId)
     }),
-    W = (0, r.jsx)(y.O3, {
+    W = (0, r.jsx)(j.O3, {
       children: (0, r.jsx)(s.mzw, {
         "data-migration-pending": true,
         className: _.modalFooter,
         children: (0, r.jsx)(f.y, {
           onStepChange: e => {
-            null != R && null != E && g.default.track(P.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != R && null != E && g.default.track(y.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: R.id,
               reward_sku_id: E.skuId
             }), n(e)
           },
-          onBackClick: () => n(j.h8.PLAN_SELECT),
+          onBackClick: () => n(P.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
           planOptions: [O.id],
@@ -156,7 +156,7 @@ function O(e) {
       }), (0, r.jsx)(s.olH, {
         "data-migration-pending": true,
         className: _.closeButton,
-        onClick: a
+        onClick: l
       })]
     }), (0, r.jsx)(s.hzk, {
       "data-migration-pending": true,
@@ -169,7 +169,7 @@ function O(e) {
           onCategoryChange: D.setSelectedCategory
         }), (0, r.jsx)("div", {
           className: _.giftRewardShopCardsGrid,
-          children: z
+          children: K
         })]
       })
     }), W]

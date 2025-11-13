@@ -1,7 +1,7 @@
 /** Chunk was on 14953 **/
 /** chunk id: 874139, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,22 +10,39 @@ var Chunk951288 = require("./951288.js"),
   Chunk636466 = require("./636466.jsx"),
   Chunk541699 = require("./541699.js"),
   Chunk321947 = require("./321947.js"),
+  Chunk221292 = require("./221292.js"),
+  Chunk471341 = require("./471341.js"),
   Chunk502762 = require("./502762.jsx"),
   Chunk5337 = require("./5337.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk815743 = require("./815743.js");
 
-function f(e) {
+function m(e) {
   let {
     wishlistItems: t = [],
     profileOwner: n,
-    onClick: f,
-    wishlistId: g
+    onClick: m,
+    wishlistId: b
   } = e, {
-    analyticsLocations: m
-  } = (0, a.ZP)(), {
-    cards: b,
-    singleItem: _
+    analyticsLocations: _
+  } = (0, a.ZP)(), y = (0, i.useCallback)(e => {
+    let {
+      wishlistId: t,
+      action: n,
+      skuId: r
+    } = e;
+    null != t && (0, d.Er)({
+      wishlistId: t,
+      action: n,
+      skuId: r,
+      analyticsLocations: _
+    })
+  }, [_]), O = (0, u.Z)({
+    wishlistId: null != b ? b : null,
+    onAction: y
+  }), {
+    cards: x,
+    singleItem: j
   } = (0, i.useMemo)(() => {
     let e = [],
       r = null;
@@ -34,51 +51,52 @@ function f(e) {
         a = 3 === e.length && t.length > 4;
       if (l.isOwned) continue;
       let d = e.length;
-      (0, o.Q)(l) ? e.push((0, u.c)(l, {
+      (0, o.Q)(l) ? e.push((0, h.c)(l, {
         index: d,
         moreCount: a ? t.length - 4 + 1 : true,
         profileOwner: n,
-        analyticsLocations: m,
-        onViewWishlist: f,
-        wishlistId: g
+        analyticsLocations: _,
+        onViewWishlist: m,
+        wishlistId: b
       })): (0, c.F)(l) && e.push((0, s.J)(l, {
         index: d,
         moreCount: a ? t.length - 4 + 1 : true,
         profileOwner: n,
-        analyticsLocations: m,
-        onViewWishlist: f,
-        wishlistId: g
+        analyticsLocations: _,
+        onViewWishlist: m,
+        wishlistId: b
       })), 1 === e.length && null == r && (r = l)
     }
     return {
       cards: e,
       singleItem: r
     }
-  }, [t, n, m, f, g]);
-  if (0 === b.length) return null;
-  let y = 1 === b.length && null != _,
-    O = b;
-  return y && ((0, o.Q)(_) ? O = (0, u.g)(_, {
+  }, [t, n, _, m, b]);
+  if (0 === x.length) return null;
+  let v = 1 === x.length && null != j,
+    C = x;
+  return v && ((0, o.Q)(j) ? C = (0, h.g)(j, {
     profileOwner: n,
-    analyticsLocations: m,
-    wishlistId: g,
-    onViewWishlist: f
-  }) : (0, c.F)(_) && (O = (0, s.B)(_, {
+    analyticsLocations: _,
+    wishlistId: b,
+    onViewWishlist: m
+  }) : (0, c.F)(j) && (C = (0, s.B)(j, {
     profileOwner: n,
-    analyticsLocations: m,
-    wishlistId: g,
-    onViewWishlist: f
-  }))), (0, r.jsxs)(d.Z.Overlay, {
-    className: h.container,
+    analyticsLocations: _,
+    wishlistId: b,
+    onViewWishlist: m
+  }))), (0, r.jsxs)(p.Z.Overlay, {
+    ref: O,
+    className: g.container,
     children: [(0, r.jsx)("div", {
-      className: h.header,
+      className: g.header,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
-        children: p.intl.string(p.t["7lZ31J"])
+        children: f.intl.string(f.t["7lZ31J"])
       })
     }), (0, r.jsx)("div", {
-      className: h.cardsContainer,
-      children: O
+      className: g.cardsContainer,
+      children: C
     })]
   })
 }

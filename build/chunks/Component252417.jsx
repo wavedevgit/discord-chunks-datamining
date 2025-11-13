@@ -1,4 +1,4 @@
-/** Chunk was on 96413 **/
+/** Chunk was on 90320 **/
 /** chunk id: 252417, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -31,25 +31,25 @@ function P(e) {
     onSelect: y
   } = e, {
     theme: w,
-    themeType: E
-  } = (0, m.z)(), S = s.useMemo(() => t.isNonUserBot() || (0, f.W)(t, x), [t, x]), {
+    themeType: S
+  } = (0, m.z)(), E = s.useMemo(() => t.isNonUserBot() || (0, f.W)(t, x), [t, x]), {
     activities: _,
     isMobileOnline: N
   } = (0, a.cj)([p.Z], () => ({
     activities: p.Z.getActivities(t.id),
     isMobileOnline: p.Z.isMobileOnline(t.id)
-  })), Z = (0, h.Z)(t.id), {
-    voiceActivityStatusEnabled: k
+  })), k = (0, h.Z)(t.id), {
+    voiceActivityStatusEnabled: Z
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
     voiceChannel: F
   } = (0, u.Z)({
-    userId: k ? t.id : true,
+    userId: Z ? t.id : true,
     guildId: I
   });
   return (0, i.jsxs)(l.P3F, {
-    focusProps: E === g.l.MODAL_V2 ? {
+    focusProps: S === g.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -105,8 +105,8 @@ function P(e) {
       src: t.getAvatarURL(I, O),
       "aria-label": t.username,
       size: b,
-      status: S ? v.Skl.UNKNOWN : P,
-      statusBackdropColor: S ? true : (0, l.QFD)(w),
+      status: E ? v.Skl.UNKNOWN : P,
+      statusBackdropColor: E ? true : (0, l.QFD)(w),
       isMobile: N,
       className: j.avatar
     }), (0, i.jsxs)("div", {
@@ -118,7 +118,7 @@ function P(e) {
       }), (0, i.jsx)(d.Z, {
         user: t,
         activities: _,
-        applicationStream: Z,
+        applicationStream: k,
         voiceChannel: F
       })]
     })]
