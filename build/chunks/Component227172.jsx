@@ -82,7 +82,7 @@ let k = {
       numOtherParticipants: er
     } = (0, I.Z)(y, 3), ei = y.extra.platform, ea = null != ei ? k[ei] : null, eo = ei === a.z.XBOX ? M.ABu.XBOX : ei === a.z.PLAYSTATION ? M.ABu.PLAYSTATION : true, es = (0, N.Z)(eo), {
       data: el
-    } = (0, m.IX)(y.extra.application_id), ec = (0, d.q)(el, "MemberListGamingContentPopout"), eu = (0, g.L)(null != (n = null != (t = null == K ? true : K.application_id) ? t : null == z ? true : z.applicationId) ? n : null == el ? true : el.id), ed = i.useCallback(e => {
+    } = (0, m.IX)(y.extra.application_id), ec = (0, d.q)(el), eu = (0, g.L)(null != (n = null != (t = null == K ? true : K.application_id) ? t : null == z ? true : z.applicationId) ? n : null == el ? true : el.id), ed = i.useCallback(e => {
       if ((null == V ? true : V.src) == null || null == b || null == H) return;
       let t = er > 0 ? (0, C.VY)({
         entry: y,
