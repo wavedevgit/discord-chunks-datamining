@@ -28,6 +28,7 @@ let _ = new Set,
 
 function g(e) {
   var t;
+  if (u.y3) returntrue;
   if (null == h) returnfalse;
   let n = null != (t = null == h ? true : h.isCrashedDisabled) && t;
   return !!e || !n
@@ -119,7 +120,9 @@ class w extends(r = Chunk442837.ZP.Store) {
   }
 }
 f(w, "displayName", "Overlay-v3-Native-Input-Lock-Store");
-let x = new w(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
+let x = new w(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {
+    OVERLAY_SET_INPUT_LOCKED: A
+  } : {
     OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: T,
     OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: S,
     OVERLAY_SET_INPUT_LOCKED: A,

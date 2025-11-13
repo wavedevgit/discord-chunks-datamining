@@ -2,10 +2,12 @@
 /** chunk id: 454399, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => O
+  i: () => I
 }), require("./35282.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk635041 = require("./635041.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk314910 = require("./314910.jsx"),
@@ -17,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk966327 = require("./966327.js"),
   Chunk890955 = require("./890955.js");
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,20 +28,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,15 +52,15 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e, t) {
+function O(e, t) {
   if (null == e) return {};
-  var n, r, i = y(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,7 +68,7 @@ function b(e, t) {
   return i
 }
 
-function y(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -74,110 +76,112 @@ function y(e, t) {
   return i
 }
 
-function O(e) {
+function I(e) {
   let t;
   var {
     children: n,
-    title: h,
+    title: a,
     body: g,
-    asset: y,
-    asContainer: O = false,
-    element: v = "span",
-    position: I = "top",
-    align: T = "center",
-    spacing: S,
-    caretConfig: A,
-    layerContext: C,
-    targetElementRef: N,
-    anchorRef: R,
-    positionKey: P,
-    ariaHidden: D = false
-  } = e, w = b(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]);
-  let x = (0, _.c)(N),
-    L = i.useId(),
-    M = D ? true : L,
-    j = null != h && ("string" != typeof h || "" !== h),
-    k = i.useMemo(() => (0, r.jsxs)("div", {
-      className: p.richTooltipContent,
-      children: [null != y && (0, r.jsx)("div", {
-        className: p.assetContainer,
-        children: y
+    asset: b,
+    asContainer: v = false,
+    element: I = "span",
+    position: T = "top",
+    align: S = "center",
+    spacing: A,
+    caretConfig: C,
+    layerContext: N,
+    targetElementRef: R,
+    anchorRef: P,
+    positionKey: D,
+    ariaHidden: w = false
+  } = e, x = O(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]);
+  let L = (0, h.c)(R),
+    M = i.useId(),
+    j = w ? true : M,
+    k = null != a && ("string" != typeof a || "" !== a),
+    U = i.useMemo(() => (0, r.jsxs)("div", {
+      className: o()(m.richTooltipContent, {
+        [m.noAsset]: null == b
+      }),
+      children: [null != b && (0, r.jsx)("div", {
+        className: m.assetContainer,
+        children: b
       }), (0, r.jsxs)("div", {
-        className: p.textContent,
-        children: [j && (0, r.jsx)(o.Text, {
+        className: m.textContent,
+        children: [k && (0, r.jsx)(l.Text, {
           variant: "text-sm/bold",
-          children: h
-        }), (0, r.jsx)(o.Text, {
-          variant: "text-sm/medium",
-          color: j ? "text-secondary" : "text-primary",
+          children: a
+        }), (0, r.jsx)(l.Text, {
+          variant: "text-sm/normal",
+          color: k ? "text-secondary" : "text-default",
           children: g
         })]
       })]
-    }), [y, h, g, j]),
+    }), [b, a, g, k]),
     {
-      isVisible: U,
-      triggerProps: G
-    } = (0, d.l)(m({
-      targetElementRef: x.targetElementRef
-    }, w)),
-    B = null != P ? P : "".concat((0, u.Sw)(null != h ? h : ""), "|").concat((0, u.Sw)(g)),
-    Z = (0, f.Q)({
-      shouldShow: U
+      isVisible: G,
+      triggerProps: B
+    } = (0, _.l)(E({
+      targetElementRef: L.targetElementRef
+    }, x)),
+    Z = null != D ? D : "".concat((0, f.Sw)(null != a ? a : ""), "|").concat((0, f.Sw)(g)),
+    F = (0, p.Q)({
+      shouldShow: G
     });
-  if (O) {
-    let e = D ? G : E(m({}, G), {
-      onFocus: (0, u.tS)(G.onFocus, e => {
+  if (v) {
+    let e = w ? B : y(E({}, B), {
+      onFocus: (0, f.tS)(B.onFocus, e => {
         let t = e.target;
         if (null != t) {
           var n;
-          let e = (0, u.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, L);
+          let e = (0, f.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, M);
           t.setAttribute("aria-describedby", e)
         }
       }),
-      onBlur: (0, u.tS)(G.onBlur, e => {
+      onBlur: (0, f.tS)(B.onBlur, e => {
         let t = e.target;
         if (null != t) {
           let e = t.getAttribute("aria-describedby");
           if (null != e) {
-            let n = e.split(" ").filter(e => e !== L);
+            let n = e.split(" ").filter(e => e !== M);
             n.length > 0 ? t.setAttribute("aria-describedby", n.join(" ")) : t.removeAttribute("aria-describedby")
           }
         }
       })
     });
-    t = (0, u.FX)({
-      tag: v,
+    t = (0, f.FX)({
+      tag: I,
       children: n,
       triggerHandlers: e,
-      triggerRef: x.triggerRef
+      triggerRef: L.triggerRef
     })
   } else {
     if (!i.isValidElement(n)) return null;
-    t = (0, u.C9)(n, G, M, x.triggerRef)
+    t = (0, f.C9)(n, B, j, L.triggerRef)
   }
-  let F = Z((e, t) => t ? (0, r.jsx)(c.pn, {
+  let V = F((e, t) => t ? (0, r.jsx)(d.pn, {
     isRichTooltip: true,
-    children: (0, r.jsx)(l.N, {
-      isVisible: U,
+    children: (0, r.jsx)(u.N, {
+      isVisible: G,
       isRendered: true,
-      targetElementRef: x.targetElementRef,
-      anchorRef: R,
-      id: L,
-      content: k,
-      position: I,
-      align: T,
-      spacing: S,
-      caretConfig: A,
-      layerContext: null != C ? C : s.nz,
+      targetElementRef: L.targetElementRef,
+      anchorRef: P,
+      id: M,
+      content: U,
+      position: T,
+      align: S,
+      spacing: A,
+      caretConfig: C,
+      layerContext: null != N ? N : c.nz,
       animationStyle: e,
-      positionKey: B,
+      positionKey: Z,
       "data-mana-component": "rich-tooltip"
     })
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [t, D || null == k ? null : (0, r.jsx)(a.n, {
-      id: L,
-      children: k
-    }), F]
+    children: [t, w || null == U ? null : (0, r.jsx)(s.n, {
+      id: M,
+      children: U
+    }), V]
   })
 }

@@ -351,7 +351,7 @@ class eb extends(r = Chunk442837.ZP.Store) {
     return null != t && t.pinned
   }
   getTargetPID() {
-    return null != L ? L : Chunk145597.UNSET_PID
+    return Chunk987650.y3 && (L === Chunk145597.UNSET_PID || null == L) ? Chunk145597.DEV_PID : null != L ? L : Chunk145597.UNSET_PID
   }
   getFocusedPID() {
     return w
@@ -389,7 +389,9 @@ class eb extends(r = Chunk442837.ZP.Store) {
   }
 }
 T(eb, "displayName", "Overlay-V3-Store");
-let ey = new eb(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
+let ey = new eb(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {
+    OVERLAY_FOCUSED: eu
+  } : {
     OVERLAY_UPDATE_OVERLAY_METHOD: eh,
     OVERLAY_UPDATE_OVERLAY_STATE: em,
     OVERLAY_FOCUSED: eu,
