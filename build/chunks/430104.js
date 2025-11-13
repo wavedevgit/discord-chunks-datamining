@@ -20,6 +20,6 @@ function o() {
 }
 
 function s() {
-  let e = (0, Chunk81643.kJ)();
+  let e = (0, Chunk81643.M$)();
   return (0, Chunk312870.U)("shouldAgeVerifyToSpeakForCurrentUser") && !module
 }
