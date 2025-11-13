@@ -2,13 +2,16 @@
 /** chunk id: 225890, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => O
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk749210 = require("./749210.js"),
+  Chunk906732 = require("./906732.jsx"),
   Chunk305325 = require("./305325.js"),
   Chunk281956 = require("./281956.js"),
+  Chunk542256 = require("./542256.js"),
   Chunk922482 = require("./922482.js"),
   Chunk592125 = require("./592125.js"),
   Chunk271383 = require("./271383.js"),
@@ -18,42 +21,55 @@ var Chunk951288 = require("./951288.js"),
   Chunk924301 = require("./924301.js"),
   Chunk482241 = require("./482241.js"),
   Chunk11868 = require("./11868.jsx"),
-  Chunk231338 = require("./231338.js");
+  Chunk981631 = require("./981631.js");
 
-function E(e) {
+function O(e) {
   let {
     code: t
-  } = e, [n, E, b] = t.split("-"), {
-    guildScheduledEvent: y,
-    guild: O,
-    channel: v,
-    isMember: I
-  } = (0, a.cj)([p.ZP, d.Z, c.Z, u.ZP, f.default], () => {
+  } = e, [n, O, v] = t.split("-"), {
+    analyticsLocations: I
+  } = (0, s.ZP)(), {
+    guildScheduledEvent: T,
+    guild: S,
+    channel: A,
+    isMember: C
+  } = (0, a.cj)([g.ZP, p.Z, f.Z, _.ZP, h.default], () => {
     var e, t;
-    let r = null != (t = p.ZP.getGuildScheduledEvent(E)) ? t : true,
-      i = d.Z.getGuild(n),
-      a = c.Z.getChannel(null == r ? true : r.channel_id);
+    let r = null != (t = g.ZP.getGuildScheduledEvent(O)) ? t : true,
+      i = p.Z.getGuild(n),
+      a = f.Z.getChannel(null == r ? true : r.channel_id);
     return {
       guildScheduledEvent: r,
       guild: i,
       channel: a,
-      isMember: u.ZP.isMember(n, null == (e = f.default.getCurrentUser()) ? true : e.id)
+      isMember: _.ZP.isMember(n, null == (e = h.default.getCurrentUser()) ? true : e.id)
     }
-  }, [n, E]);
+  }, [n, O]), N = () => {
+    if ((0, u.o)({
+        guild: S,
+        isMember: C,
+        analyticsLocations: I
+      }) === u.e.PROCEED) {
+      if ((0, c.n)(n)) return void(0, l.hk)(n);
+      o.Z.joinGuild(n, {
+        source: y.vtS.GUILD_EVENT_EMBED
+      }).catch(() => {})
+    }
+  };
 
-  function T() {
-    if ((0, s.n)(n)) return void(0, o.hk)(n);
-    (null == v ? true : v.isGuildStageVoice()) ? (0, l.Cq)(v) : (null == v ? true : v.isGuildVoice()) && h.Z.joinVoiceEvent(v.guild_id, v.id)
+  function R() {
+    if ((0, c.n)(n)) return void(0, l.hk)(n);
+    (null == A ? true : A.isGuildStageVoice()) ? (0, d.Cq)(A) : (null == A ? true : A.isGuildVoice()) && E.Z.joinVoiceEvent(A.guild_id, A.id)
   }
   return i.useEffect(() => {
-    (null == y ? true : y.id) == null && h.Z.fetchGuildEvent(n, E), _.Z.getGuildEventUserCounts(n, E, null != b ? [b] : []), _.Z.getGuildEventsForCurrentUser(n)
-  }, [E, n, null == y ? true : y.id, b]), (0, r.jsx)(m.ZP, {
-    guild: O,
-    channel: v,
-    guildScheduledEvent: y,
-    isMember: I,
-    onAcceptInstantInvite: g.dG,
-    onTransitionToInviteChannel: T,
-    recurrenceId: b
+    (null == T ? true : T.id) == null && E.Z.fetchGuildEvent(n, O), m.Z.getGuildEventUserCounts(n, O, null != v ? [v] : []), m.Z.getGuildEventsForCurrentUser(n)
+  }, [O, n, null == T ? true : T.id, v]), (0, r.jsx)(b.ZP, {
+    guild: S,
+    channel: A,
+    guildScheduledEvent: T,
+    isMember: C,
+    onAcceptInstantInvite: N,
+    onTransitionToInviteChannel: R,
+    recurrenceId: v
   })
 }

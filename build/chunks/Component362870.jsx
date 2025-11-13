@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 362870, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,6 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk509442 = require("./509442.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk704215 = require("./704215.js"),
+  Chunk952265 = require("./952265.js"),
   Chunk481060 = require("./481060.js"),
   Chunk515753 = require("./515753.jsx"),
   Chunk393903 = require("./393903.js"),
@@ -22,32 +23,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk228624 = require("./228624.js");
-let v = Math.ceil(Math.sqrt(115200)),
-  I = (v - 240) / 2,
-  C = function(e) {
+let I = Math.ceil(Math.sqrt(115200)),
+  C = (I - 240) / 2,
+  S = function(e) {
     var t, n;
     let {
       selected: l
-    } = e, C = (0, o.JA)("quests"), S = i.useRef(null), {
-      shouldShowPopover: T,
-      shouldShowGradientAndBadge: N,
-      dismissContent: j
+    } = e, S = (0, o.JA)("quests"), T = i.useRef(null), {
+      shouldShowPopover: N,
+      shouldShowGradientAndBadge: j,
+      dismissContent: P
     } = function() {
-      let [e, t] = (0, h.US)([c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING], E.R.PRIVATE_CHANNELS_LIST, true), n = i.useCallback(() => {
-        t(E.L.TAKE_ACTION)
-      }, [t]);
+      let e = (0, u.f9)(),
+        [t, n] = (0, g.US)(e ? [] : [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING], O.R.PRIVATE_CHANNELS_LIST, true),
+        r = i.useCallback(() => {
+          n(O.L.TAKE_ACTION)
+        }, [n]);
       return {
-        shouldShowPopover: e === c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING,
-        shouldShowGradientAndBadge: !(0, f.Nj)(c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING),
-        dismissContent: n
+        shouldShowPopover: t === c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING,
+        shouldShowGradientAndBadge: !(0, h.Nj)(c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING),
+        dismissContent: r
       }
-    }(), P = i.useCallback(() => {
-      m.Z.getState().setUtmCurrentContext({
+    }(), x = i.useCallback(() => {
+      _.Z.getState().setUtmCurrentContext({
         utmContentCurrent: "PRIMARY_QUEST_HOME"
       })
     }, []), [{
-      glowSpring: x
-    }, A] = (0, u.q_F)(() => ({
+      glowSpring: A
+    }, Z] = (0, d.q_F)(() => ({
       from: {
         glowSpring: 0
       },
@@ -58,8 +61,8 @@ let v = Math.ceil(Math.sqrt(115200)),
         friction: 12
       }
     })), [{
-      shineSpring: Z
-    }, w] = (0, u.q_F)(() => ({
+      shineSpring: w
+    }, L] = (0, d.q_F)(() => ({
       from: {
         shineSpring: 0
       },
@@ -69,47 +72,47 @@ let v = Math.ceil(Math.sqrt(115200)),
         tension: 170,
         friction: 38
       }
-    })), L = i.useCallback(() => {
-      w({
+    })), R = i.useCallback(() => {
+      L({
         shineSpring: 1
-      }), A({
+      }), Z({
         glowSpring: 1,
         delay: 200
       })
-    }, [w, A]), R = i.useCallback(() => {
-      w({
+    }, [L, Z]), D = i.useCallback(() => {
+      L({
         shineSpring: 0,
         immediate: true
-      }), A({
+      }), Z({
         glowSpring: 0,
         delay: 0
       })
-    }, [w, A]), D = i.useCallback(() => {
-      w({
+    }, [L, Z]), M = i.useCallback(() => {
+      L({
         shineSpring: 1,
         delay: 500
-      }), A({
+      }), Z({
         glowSpring: 1,
         delay: 700
-      }), g.default.track(b.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
-    }, [w, A]), [M, k] = i.useState(false), U = i.useCallback(e => {
-      k(e.contentRect.width)
-    }, []), G = (0, p.y)(U, [], {
+      }), m.default.track(E.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+    }, [L, Z]), [k, U] = i.useState(false), G = i.useCallback(e => {
+      U(e.contentRect.width)
+    }, []), B = (0, f.y)(G, [], {
       fireOnMount: true
     });
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: y.wrapper,
-        onMouseEnter: L,
-        onMouseLeave: R,
-        onFocus: L,
-        onBlur: R,
-        ref: G,
+        className: v.wrapper,
+        onMouseEnter: R,
+        onMouseLeave: D,
+        onFocus: R,
+        onBlur: D,
+        ref: B,
         style: {
           "--custom-shine-dimensions": "".concat(240, "px"),
-          "--custom-shine-rotated-dimensions-delta": "".concat(I, "px")
+          "--custom-shine-rotated-dimensions-delta": "".concat(C, "px")
         },
-        children: (0, r.jsx)(d.Qj, (t = function(e) {
+        children: (0, r.jsx)(p.Qj, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -128,33 +131,33 @@ let v = Math.ceil(Math.sqrt(115200)),
           return e
         }({
           className: a()({
-            [y.withGradientAndBadge]: N
+            [v.withGradientAndBadge]: j
           }),
-          icon: u.qDn,
-          listItemRef: S,
-          onClick: P,
-          route: b.Z5c.QUEST_HOME_V2,
+          icon: d.qDn,
+          listItemRef: T,
+          onClick: x,
+          route: E.Z5c.QUEST_HOME_V2,
           selected: l,
-          text: O.intl.string(O.t.JALI2K)
-        }, C), n = n = {
-          children: N && (0, r.jsxs)(r.Fragment, {
+          text: y.intl.string(y.t.JALI2K)
+        }, S), n = n = {
+          children: j && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(s.animated.div, {
-              className: y.shine,
+              className: v.shine,
               style: {
-                transform: Z.to(e => "translateX(calc(".concat(e * M, "px + ").concat(e * v, "px)) translateY(-50%) rotate(45deg)"))
+                transform: w.to(e => "translateX(calc(".concat(e * k, "px + ").concat(e * I, "px)) translateY(-50%) rotate(45deg)"))
               }
             }), (0, r.jsx)(s.animated.div, {
-              className: y.glow,
+              className: v.glow,
               style: {
-                opacity: x.to({
+                opacity: A.to({
                   range: [0, 1],
                   output: [0, .5]
                 })
               }
-            }), (0, r.jsx)(u.IGR, {
-              className: y.badge,
-              text: O.intl.string(O.t.y2b7CA),
-              color: u.TVs.colors.BG_BRAND.css
+            }), (0, r.jsx)(d.IGR, {
+              className: v.badge,
+              text: y.intl.string(y.t.y2b7CA),
+              color: d.TVs.colors.BG_BRAND.css
             })]
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -167,11 +170,11 @@ let v = Math.ceil(Math.sqrt(115200)),
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
-      }), T && (0, r.jsx)(_.Z, {
-        targetElementRef: S,
-        onNavigateToQuestHome: P,
-        onRender: D,
-        onRequestClose: j
+      }), N && (0, r.jsx)(b.Z, {
+        targetElementRef: T,
+        onNavigateToQuestHome: x,
+        onRender: M,
+        onRequestClose: P
       })]
     })
   }

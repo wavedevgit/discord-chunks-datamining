@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk237583 = require("./237583.jsx"),
   Chunk63063 = require("./63063.js"),
   Chunk870569 = require("./870569.jsx"),
-  Chunk582642 = require("./582642.jsx"),
+  Chunk345243 = require("./345243.jsx"),
   Chunk115530 = require("./115530.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -69,7 +69,7 @@ class I extends Chunk647438.PureComponent {
         children: this.isHost() ? Chunk388032.intl.formatToPlainString(Chunk388032.t["6UJ7mh"], {
           count: this.props.party.length
         }) : Chunk388032.intl.string(Chunk388032.t.RZufbH)
-      }), (0, Chunk951288.jsx)(Chunk582642.Z, {
+      }), (0, Chunk951288.jsx)(Chunk345243.Z, {
         children: Chunk388032.intl.string(Chunk388032.t["0ZHLIi"])
       })]
     })

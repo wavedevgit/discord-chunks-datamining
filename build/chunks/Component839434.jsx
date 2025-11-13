@@ -29,7 +29,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk662304 = require("./662304.jsx"),
   Chunk989941 = require("./989941.js"),
   Chunk552282 = require("./552282.js"),
-  Chunk582642 = require("./582642.jsx"),
+  Chunk345243 = require("./345243.jsx"),
   Chunk565799 = require("./565799.js"),
   Chunk501655 = require("./501655.js"),
   Chunk786915 = require("./786915.jsx"),
@@ -299,7 +299,7 @@ class el extends(i = Chunk647438.PureComponent) {
               className: Chunk226833.streaming,
               variant: "text-sm/normal",
               children: Chunk388032.intl.string(Chunk388032.t.XKYej5)
-            }), (0, Chunk951288.jsx)(Chunk582642.Z, {
+            }), (0, Chunk951288.jsx)(Chunk345243.Z, {
               children: null != (e = null == Chunk692547 ? true : Chunk692547.name) ? module : Chunk765250
             })]
           })]

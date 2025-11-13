@@ -1,3 +1,0 @@
-/** Chunk was on 32340 **/
-/** chunk id: 650351, original params: a (module,exports,require) **/
-module.exports = JSON.parse('{"klSpfs":["Editar ajustes"],"NzUuLD":["+",[1,"count"]," ",[6,"count",{"one":["mensaje"],"other":["mensajes"]},0,"cardinal"]],"O+racd":["No hay notificaciones."],"5H2Jd6":["Mostrar todos"],"Ko8NGn":["Mostrar marcadores"],"dcpdhC":["Selecciona un mensaje para ir a la conversaci\xf3n."],"VAK+h9":["\xa1Te damos la bienvenida a tu centro de notificaciones!"]}')

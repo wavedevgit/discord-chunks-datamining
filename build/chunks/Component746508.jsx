@@ -85,7 +85,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk63063 = require("./63063.js"),
   Chunk51144 = require("./51144.js"),
   Chunk870569 = require("./870569.jsx"),
-  Chunk582642 = require("./582642.jsx"),
+  Chunk345243 = require("./345243.jsx"),
   Chunk594117 = require("./594117.jsx"),
   Chunk226323 = require("./226323.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -569,7 +569,7 @@ class e$ extends Chunk647438.PureComponent {
           to: module,
           onClick: this.handleChannelLinkClick,
           onContextMenu: this.handleChannelLinkContextMenu,
-          children: (0, Chunk951288.jsx)(Chunk582642.Z, {
+          children: (0, Chunk951288.jsx)(Chunk345243.Z, {
             className: Chunk890332.channel,
             children: (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-xs/medium",

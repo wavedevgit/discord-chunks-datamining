@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk862149 = require("./862149.jsx"),
   Chunk982183 = require("./982183.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk400705 = require("./400705.js"),
+  Chunk133948 = require("./133948.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk809946 = require("./809946.js");
 
@@ -89,7 +89,7 @@ function R() {
           style: {
             textAlign: "center"
           },
-          children: Chunk388032.intl.string(Chunk400705.default["O+racd"])
+          children: Chunk388032.intl.string(Chunk133948.default["O+racd"])
         })]
       }), (0, Chunk951288.jsx)(Chunk755721.zx, {
         onClick: () => (0, Chunk370774.j4)(module),
@@ -97,7 +97,7 @@ function R() {
         style: {
           fontWeight: 600
         },
-        children: Chunk388032.intl.string(Chunk400705.default.klSpfs)
+        children: Chunk388032.intl.string(Chunk133948.default.klSpfs)
       })]
     })
   })

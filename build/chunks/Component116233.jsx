@@ -11,7 +11,7 @@ var Chunk493683 = require("./493683.js"),
   Chunk907995 = require("./907995.jsx"),
   Chunk342386 = require("./342386.js"),
   Chunk484710 = require("./484710.js"),
-  Chunk602698 = require("./602698.js");
+  Chunk597754 = require("./597754.js");
 
 function u() {
   let e = (0, Chunk631885.ZM)(),
@@ -21,7 +21,7 @@ function u() {
       })
     };
   return (0, Chunk951288.jsx)(Chunk907995.f, {
-    label: Chunk602698.default.i284fU,
+    label: Chunk597754.default.i284fU,
     labelHook: exports,
     noticeType: Chunk484710.nq.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE,
     count: module.length

@@ -92,8 +92,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk352609 = require("./352609.js"),
-  Chunk602698 = require("./602698.js"),
+  Chunk88406 = require("./88406.js"),
+  Chunk597754 = require("./597754.js"),
   Chunk202323 = require("./202323.js");
 
 function ej(e, t, n) {
@@ -183,8 +183,8 @@ let eB = () => {
       hasTOTPEnabled: e$,
       developerMode: e0,
       isAdultUser: e1,
-      hasSecureFramesVerifiedUserIds: e3,
-      hasIgnoredUsers: e2,
+      hasSecureFramesVerifiedUserIds: e2,
+      hasIgnoredUsers: e3,
       hasBlockedUsers: e4,
       isEligibleForSensitiveContentDefaults: e8,
       inputMode: e5,
@@ -575,7 +575,7 @@ let eB = () => {
         section: eP.oAB.DATA_AND_PRIVACY,
         searchableTitles: [ew.intl.string(ew.t["5b3FNI"])],
         parent: eN.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-        predicate: () => e3
+        predicate: () => e2
       },
       [eN.s6.PRIVACY_FAMILY_CENTER]: {
         section: eP.oAB.FAMILY_CENTER,
@@ -671,7 +671,7 @@ let eB = () => {
         parent: eN.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
         label: ew.intl.string(ew.t["3wRort"]),
         element: eS.ZP,
-        predicate: () => e2 || e4
+        predicate: () => e3 || e4
       },
       [eN.s6.BLOCKED_USERS]: {
         section: eP.oAB.CONTENT_AND_SOCIAL,
@@ -687,7 +687,7 @@ let eB = () => {
         searchableTitles: [ew.intl.string(ew.t["93ZDWE"])],
         label: ew.intl.string(ew.t["93ZDWE"]),
         element: eS.yo,
-        predicate: () => e2
+        predicate: () => e3
       },
       [eN.s6.PREMIUM]: {
         section: eP.oAB.PREMIUM,

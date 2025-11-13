@@ -658,14 +658,14 @@ function e$(e) {
 }
 let e0 = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
   e1 = e => th(e) || w.Z.isProgressingOnDesktop(e.id),
-  e3 = (e, t) => {
+  e2 = (e, t) => {
     var n, r, a, o;
     let s = null == (o = e.userStatus) || null == (a = o.progress) || null == (r = a[t.type]) || null == (n = r.heartbeat) ? true : n.lastBeatAt;
     if (null == s || !e1(e)) return 0;
     let l = Date.now() - new Date(s).valueOf();
     return (0, i.floor)(l / S.Z.Millis.SECOND, 2)
   },
-  e2 = (e, t) => {
+  e3 = (e, t) => {
     var n, r, i, a, o;
     let s = null == (r = e.userStatus) || null == (n = r.progress) ? true : n[t.type],
       l = null != (o = null != (a = null == s ? true : s.value) ? a : null == (i = e.userStatus) ? true : i.streamProgressSeconds) ? o : 0;
@@ -673,14 +673,14 @@ let e0 = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
       let n = w.Z.getOptimisticProgress(e.id, t.type);
       return null == n || n < l ? l : n
     }
-    return l + e3(e, t)
+    return l + e2(e, t)
   },
   e4 = .99,
   e8 = (e, t) => {
     var n;
     let r = t.target;
     if ((null == (n = e.userStatus) ? true : n.completedAt) != null) return r;
-    let a = Math.min(r * e4, e2(e, t));
+    let a = Math.min(r * e4, e3(e, t));
     return Math.max((0, i.floor)(a, 2), 0)
   },
   e5 = e => {

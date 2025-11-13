@@ -68,7 +68,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk63063 = require("./63063.js"),
   Chunk358085 = require("./358085.js"),
   Chunk381096 = require("./381096.js"),
-  Chunk582642 = require("./582642.jsx"),
+  Chunk345243 = require("./345243.jsx"),
   Chunk115530 = require("./115530.jsx"),
   Chunk339144 = require("./339144.jsx"),
   Chunk441248 = require("./441248.jsx"),
@@ -318,7 +318,7 @@ class eN extends Chunk647438.PureComponent {
     let d = (0, Chunk951288.jsx)(Chunk690221.Z, {
         href: module,
         onClick: this.handleChannelLinkClick,
-        children: (0, Chunk951288.jsx)(Chunk582642.Z, {
+        children: (0, Chunk951288.jsx)(Chunk345243.Z, {
           className: Chunk800339.channel,
           children: Chunk442837
         })

@@ -15,7 +15,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk792258 = require("./792258.jsx"),
   Chunk657825 = require("./657825.jsx"),
   Chunk872608 = require("./872608.jsx"),
-  Chunk602698 = require("./602698.js"),
+  Chunk597754 = require("./597754.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk336888 = require("./336888.js");
 let m = () => {
@@ -28,7 +28,7 @@ let m = () => {
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "text-md/medium",
         className: Chunk336888.sectionHeader,
-        children: Chunk388032.intl.string(Chunk602698.default.BxbvS7)
+        children: Chunk388032.intl.string(Chunk597754.default.BxbvS7)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk336888.avatarList,
         children: 1 === module.length ? (0, Chunk951288.jsx)(Chunk657825.Z, {
@@ -46,7 +46,7 @@ let m = () => {
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "text-md/medium",
         className: Chunk336888.sectionHeader,
-        children: Chunk388032.intl.string(Chunk602698.default.Lq9Set)
+        children: Chunk388032.intl.string(Chunk597754.default.Lq9Set)
       }), 1 === exports.length ? (0, Chunk951288.jsx)(Chunk792258.Z, {
         guildId: exports[0].guild_id,
         customSubtext: (0, Chunk546791.Kp)(exports[0].messages_sent, exports[0].call_count),

@@ -714,7 +714,7 @@ let eJ = async (e, t) => {
       r = l.P[t];
     r || (r = (0, l.r)(t)), r.report(e / 1e3)
   }
-}, e0 = 5e3, e1 = 6e4, e3 = 0, e2, e4 = false, e8 = [], e5 = e => {
+}, e0 = 5e3, e1 = 6e4, e2 = 0, e3, e4 = false, e8 = [], e5 = e => {
   var t, n, r, i;
   if (null != (t = e.event) && t.includes("Sprig_Scroll")) {
     let t = null == (i = null == (r = null == (n = JSON.parse(e.event)) ? true : n.data) ? true : r.payload) ? true : i.xPath;
@@ -752,14 +752,14 @@ let eJ = async (e, t) => {
 }, te = false, tt = async (e = false) => {
   if (!te) try {
     te = true;
-    let t = parseInt(e2 ?? "0");
+    let t = parseInt(e3 ?? "0");
     if (0 === t) return;
     let n = await ev.getPendingCaptures({
         beforePresent: true,
         isBeforeType: e
       }),
       r = await ev.openDB();
-    await Promise.all(n.map(async e => (await r.delete("pendingCaptures", e.uuid), tl(e.captureParams, e.canUpload)))), e2 = (t - n.length).toString(), l.a.setItem("sprig.pendingCount", e2)
+    await Promise.all(n.map(async e => (await r.delete("pendingCaptures", e.uuid), tl(e.captureParams, e.canUpload)))), e3 = (t - n.length).toString(), l.a.setItem("sprig.pendingCount", e3)
   } finally {
     te = false
   }
@@ -955,7 +955,7 @@ let eJ = async (e, t) => {
     }
   }, "Error in scheduling/capturing replay")
 }, tc = async () => {
-  parseInt(e2 ?? "0") || Chunk555256.a.removeItem("sprig.isCapturingHeatmap"), Chunk555256.a.getItem("sprig.teardownAfterCapture") && (em(), tu(), Chunk555256.a.removeItem("sprig.teardownAfterCapture"))
+  parseInt(e3 ?? "0") || Chunk555256.a.removeItem("sprig.isCapturingHeatmap"), Chunk555256.a.getItem("sprig.teardownAfterCapture") && (em(), tu(), Chunk555256.a.removeItem("sprig.teardownAfterCapture"))
 }, tu = async () => ef() ? Chunk555256.b.debug("ReplayDisabled-ClearData") : Promise.all([ev.deleteBySessionId("events", eu), ev.deleteBySessionId("pendingCaptures", eu)]).catch(e => {
   eb("Error clearing user replay data", e)
 }), td = async e => {
@@ -967,9 +967,9 @@ let eJ = async (e, t) => {
   if (null != i && i.length) return void l.b.info("PendingCaptureExists", {
     surveyId: n
   });
-  t && (eO(), l.a.setItem("sprig.isCapturingHeatmap", "true"), e3 = Date.now(), el.inactivityInterval || (el.inactivityInterval = window.setInterval(() => {
+  t && (eO(), l.a.setItem("sprig.isCapturingHeatmap", "true"), e2 = Date.now(), el.inactivityInterval || (el.inactivityInterval = window.setInterval(() => {
     var e;
-    e = e3, Date.now() - e >= 3e4 && ey(() => ev.markPendingHeatmapsReady(), "Error in heatmap inactivity")
+    e = e2, Date.now() - e >= 3e4 && ey(() => ev.markPendingHeatmapsReady(), "Error in heatmap inactivity")
   }, 1e3)));
   let a = {
     ...e,
@@ -979,7 +979,7 @@ let eJ = async (e, t) => {
   };
   "beforeAndAfter" === e.replayParams.replayDurationType && (a.replayParams.replayDurationSeconds *= 2), a.replayParams.replayDurationType = "before";
   let o = e.triggerTimestamp + 1e3 * e.replayParams.replayDurationSeconds;
-  a.triggerTimestamp = o, e2 = (parseInt(e2 ?? "0") + 1).toString(), l.a.setItem("sprig.pendingCount", e2), await (await ev.openDB()).add("pendingCaptures", {
+  a.triggerTimestamp = o, e3 = (parseInt(e3 ?? "0") + 1).toString(), l.a.setItem("sprig.pendingCount", e3), await (await ev.openDB()).add("pendingCaptures", {
     canUpload: false,
     captureParams: a,
     sessionId: eu,
@@ -1046,7 +1046,7 @@ let eJ = async (e, t) => {
         triggerSnapshot: () => {
           eO()
         }
-      }), e2 = l.a.getItem("sprig.pendingCount"), el.isRecording) return;
+      }), e3 = l.a.getItem("sprig.pendingCount"), el.isRecording) return;
     if (r && l.a.setItem("sprig.teardownAfterCapture", "true"), ef()) return l.b.debug("ReplayDisabled");
     if (await (async () => {
         var e;
@@ -1104,7 +1104,7 @@ let eJ = async (e, t) => {
         };
       el.stopRecording = s({
         emit: (e, t) => {
-          if (e.type === f.Custom && (e3 = Date.now()), ef() || e_()) return;
+          if (e.type === f.Custom && (e2 = Date.now()), ef() || e_()) return;
           if (t && e.type === f.Meta) u = performance.now();
           else if (t && u && e.type === f.FullSnapshot) {
             let e = performance.now() - u;

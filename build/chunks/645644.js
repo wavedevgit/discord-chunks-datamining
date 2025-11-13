@@ -66,7 +66,7 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = 4,
+let P = 5,
   D = false,
   w = new Chunk710845.Z("OverlayUsageStatsManager");
 D || (w.verbose = () => {});
@@ -294,7 +294,8 @@ class U {
       a = {
         legacy_override: true === i,
         enabled: r || i,
-        quns_mode: this.getQunsName(o.Ng.QUNS_UNKNOWN)
+        quns_mode: this.getQunsName(o.Ng.QUNS_UNKNOWN),
+        current_method: e
       };
     if (null != t) {
       let {
@@ -311,9 +312,9 @@ class U {
     if (null == n) return C({
       original_method: e
     }, a);
-    let s = n.any_other_method;
+    let s = e !== n.original_method ? e : true;
     return C(R(C({}, n), {
-      any_other_method: e !== s ? e : s
+      any_other_method: null != s ? s : n.any_other_method
     }), a)
   }
   static getGameName(e) {
@@ -384,13 +385,14 @@ class U {
       b = (0, Chunk581567.G8)(this.game),
       y = null != (r = this.overlayMethodStats) ? Chunk772848 : this.buildOverlayMethodStats(Chunk371651, this.game),
       O = null != Chunk145597.any_other_method ? Chunk837268.gl[Chunk145597.any_other_method] : null,
-      v = Chunk626135.enabledLegacy || Chunk626135.enabledOOP;
+      v = null != Chunk145597.current_method ? Chunk837268.gl[Chunk145597.current_method] : null,
+      I = Chunk626135.enabledLegacy || Chunk626135.enabledOOP;
     return {
       usage: R(C(R(C({
         event_uuid: this.uuid,
         overlay_usage_stats_version: P
       }, this.notificationAnalytics.getAnalytics(), this.widgetAnalytics.getAnalytics(), this.screenAnalytics.getAnalytics(), Chunk449224), {
-        overlay_status_game_enabled: Chunk554174,
+        overlay_status_game_enabled: Chunk938038,
         overlay_status_game_source: Chunk626135.source,
         game_name: null != (i = Chunk998502.gameName) ? Chunk379649 : null,
         game_id: null != (a = Chunk998502.gameId) ? Chunk570140 : null,
@@ -420,6 +422,7 @@ class U {
       }), Chunk145597), {
         original_method: Chunk837268.gl[Chunk145597.original_method],
         any_other_method: Chunk830917,
+        current_method: Chunk554174,
         last_overlay_state: this.overlayState
       }),
       notifications: this.notificationAnalytics.getCounterAnalytics(this.uuid)

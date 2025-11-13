@@ -1,5 +1,5 @@
 /** Chunk was on 80448 **/
-/** chunk id: 860277, original params: t,e,r (module,exports,require) **/
+/** chunk id: 860277, original params: t,r,e (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
@@ -11,23 +11,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk198358 = require("./198358.jsx"),
   Chunk612776 = require("./612776.js"),
   Chunk268685 = require("./268685.js"),
-  Chunk506945 = require("./506945.js"),
+  Chunk892694 = require("./892694.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p(t) {
   let {
-    step: e
+    step: r
   } = t, {
-    users: r,
+    users: e,
     sidekick: p
   } = (0, l.e7)([s.Z], () => s.Z.getCheckpointData());
   return (0, i.jsxs)(d.Z, {
-    children: [e === c.ij.FRIENDS_INTRO && (0, i.jsxs)("div", {
+    children: [r === c.ij.FRIENDS_INTRO && (0, i.jsxs)("div", {
       children: [(0, i.jsx)(n.xvT, {
         variant: "display-md",
         color: "text-primary",
         children: x.intl.string(u.default["4xZpq4"])
-      }), r.map(t => (0, i.jsxs)("div", {
+      }), e.map(t => (0, i.jsxs)("div", {
         children: [(0, i.jsx)(a.Z, {
           user: t,
           size: o.EF.SIZE_120
@@ -37,7 +37,7 @@ function p(t) {
           children: t.username
         })]
       }, t.id))]
-    }), e === c.ij.FRIENDS_BEST && (0, i.jsxs)("div", {
+    }), r === c.ij.FRIENDS_BEST && (0, i.jsxs)("div", {
       children: [(0, i.jsx)(n.xvT, {
         variant: "display-md",
         color: "text-primary",
@@ -50,11 +50,11 @@ function p(t) {
         color: "text-primary",
         children: x.intl.format(u.default.wz2JuF, {
           user: p.user.username,
-          userHook: (t, e) => (0, i.jsx)(n.xvT, {
+          userHook: (t, r) => (0, i.jsx)(n.xvT, {
             variant: "display-lg",
             color: "text-primary",
             children: t
-          }, e)
+          }, r)
         })
       }), (0, i.jsx)(n.xvT, {
         variant: "display-sm",

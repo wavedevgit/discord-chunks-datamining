@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk342386 = require("./342386.js"),
   Chunk981631 = require("./981631.js"),
   Chunk930441 = require("./930441.js"),
-  Chunk602698 = require("./602698.js"),
+  Chunk597754 = require("./597754.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk286661 = require("./286661.js");
 let E = () => {
@@ -34,12 +34,12 @@ let E = () => {
   }, [require]), (0, Chunk951288.jsx)("div", {
     className: Chunk286661.container,
     children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk602698.default.USIXU7),
+      label: Chunk388032.intl.string(Chunk597754.default.USIXU7),
       children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
         checked: module,
-        description: Chunk388032.intl.string(Chunk602698.default["5MdB3j"]),
+        description: Chunk388032.intl.string(Chunk597754.default["5MdB3j"]),
         onChange: Chunk695346.Ex.updateSetting,
-        label: Chunk388032.intl.string(Chunk602698.default.zkEceS)
+        label: Chunk388032.intl.string(Chunk597754.default.zkEceS)
       }), module ? (0, Chunk951288.jsx)(Chunk481060.Zbd, {
         className: Chunk286661.enableCard,
         type: Chunk481060.Zbd.Types.CUSTOM,
@@ -50,7 +50,7 @@ let E = () => {
             children: (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-sm/semibold",
               color: "text-default",
-              children: Chunk388032.intl.string(Chunk602698.default.xAVm7K)
+              children: Chunk388032.intl.string(Chunk597754.default.xAVm7K)
             })
           }), (0, Chunk951288.jsx)(Chunk481060.P3F, {
             children: (0, Chunk951288.jsx)(Chunk799899.rU, {
@@ -61,7 +61,7 @@ let E = () => {
                   scrollRestoration: false
                 }
               },
-              children: Chunk388032.intl.string(Chunk602698.default.cUIXFY)
+              children: Chunk388032.intl.string(Chunk597754.default.cUIXFY)
             })
           }), (0, Chunk951288.jsx)(Chunk481060.G2e, {
             icon: Chunk481060.ZSh,
@@ -71,9 +71,9 @@ let E = () => {
         })
       }) : null, (0, Chunk951288.jsx)(Chunk481060.rsf, {
         checked: !!exports[Chunk930441.$Z.FAMILY_CENTER_DIGEST],
-        description: Chunk388032.intl.string(Chunk602698.default.y34S46),
+        description: Chunk388032.intl.string(Chunk597754.default.y34S46),
         onChange: E,
-        label: Chunk388032.intl.string(Chunk602698.default.irvJKR)
+        label: Chunk388032.intl.string(Chunk597754.default.irvJKR)
       })]
     })
   })

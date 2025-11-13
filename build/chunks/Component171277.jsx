@@ -21,7 +21,7 @@ function p(e) {
   return (0, i.jsxs)("div", {
     className: d.root,
     children: [(0, i.jsx)(o.Fmz, {
-      importData: () => n.e("87522").then(n.t.bind(n, 141923, 19)).then(e => {
+      importData: () => n.e("78698").then(n.t.bind(n, 141923, 19)).then(e => {
         let {
           default: t
         } = e;

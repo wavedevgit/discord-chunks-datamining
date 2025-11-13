@@ -54,7 +54,7 @@ let j = {
   CollectiblesExpiryModal: async () => {
     let {
       default: e
-    } = await require.e("77370").then(require.bind(require, 83950));
+    } = await require.e("77370").then(require.bind(require, 682013));
     return t => (0, a.jsx)(e, b({}, t))
   },
   EmailEnterModal: async () => {

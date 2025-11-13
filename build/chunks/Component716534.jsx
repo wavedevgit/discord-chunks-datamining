@@ -158,8 +158,8 @@ function q(e) {
     e0 = ee.paymentSourceId,
     e1 = (0, I.$)($, e0),
     {
-      hasEntitlements: e3,
-      entitlements: e2
+      hasEntitlements: e2,
+      entitlements: e3
     } = (0, V.H)(ek.id, eD),
     e4 = (0, P.Ap)(ee.paymentSourceId),
     e8 = (0, O.sE)(el, e0, Q),
@@ -318,7 +318,7 @@ function q(e) {
         label: eh ? K.intl.string(K.t["YH7B+D"]) : K.intl.string(K.t["mmDvV+"]),
         paymentSources: Object.values($),
         selectedPaymentSourceId: e0,
-        prependOption: e3 && !eh ? {
+        prependOption: e2 && !eh ? {
           label: K.intl.string(K.t.IGU7El),
           value: null
         } : null,
@@ -330,10 +330,10 @@ function q(e) {
         className: o()({
           [z.premiumBrandRefreshInputBackground]: eR
         })
-      }), e3 && null == e0 ? (0, r.jsx)("div", {
+      }), e2 && null == e0 ? (0, r.jsx)("div", {
         className: z.paymentSourceOptionalWarning,
         children: K.intl.format(K.t["2wPRSF"], {
-          months: e2.length
+          months: e3.length
         })
       }) : null, em ? null : (0, r.jsx)(_.b, {
         currencies: et,

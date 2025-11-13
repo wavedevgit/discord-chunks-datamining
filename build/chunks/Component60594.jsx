@@ -228,7 +228,7 @@ function es(e) {
       (0, F.t)(), (0, F.T)(null != e ? e : e$)
     }, [e$]);
 
-  function e8(e) {
+  function e4(e) {
     if (e.preventDefault(), 1 === eI) return e3();
     if (2 === eI) return eE(3);
     if (null != e$) return eE(1);
@@ -247,7 +247,7 @@ function es(e) {
       })
     } else e2()
   }
-  let e4 = i.useCallback(e => {
+  let e8 = i.useCallback(e => {
       eD(e), null != e && (eC && (null == e ? true : e.id.startsWith("camera:")) !== true ? e1(e.id.split(":")[1]) : e1(true), eE(3), eA(true))
     }, [eC]),
     e7 = i.useCallback(e => {
@@ -379,7 +379,7 @@ function es(e) {
         children: () => {
           var e;
           return (0, r.jsxs)("form", {
-            onSubmit: e8,
+            onSubmit: e4,
             ref: eh,
             children: [(0, r.jsxs)(h.MyZ, {
               springConfig: el(ei({}, c.config.stiff), {
@@ -400,11 +400,11 @@ function es(e) {
                 children: (0, r.jsx)("div", {
                   className: en.modalSize,
                   children: eC ? (0, r.jsx)(J.se, {
-                    onSourceSelect: e4,
+                    onSourceSelect: e8,
                     selectedSource: ek
                   }) : (0, r.jsx)(J.oA, {
                     selectedSource: ek,
-                    onChangeSelectedSource: e4
+                    onChangeSelectedSource: e8
                   })
                 })
               }), (0, r.jsx)(h.Mi4, {
@@ -425,7 +425,7 @@ function es(e) {
                     onChangeSelectedResolution: e => e5(eG, e, eW),
                     onChangeSelectedPreset: e => e5(e, eF, eW),
                     onChangeSelectedChannelId: eM,
-                    onChangeSelectedSource: e4,
+                    onChangeSelectedSource: e8,
                     onChangeSource: () => tt(),
                     onChangeAudioDevice: e => eL(e),
                     onChangeGuild: () => eE(0),

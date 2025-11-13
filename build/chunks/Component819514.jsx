@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk294218 = require("./294218.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk43617 = require("./43617.js"),
+  Chunk797013 = require("./797013.js"),
   Chunk625221 = require("./625221.js");
 
 function I(e, t, n) {
@@ -127,7 +127,7 @@ class w extends Chunk647438.PureComponent {
           }],
           actionBarInput: module ? true : (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
             checked: Chunk647438,
-            label: Chunk388032.intl.string(Chunk43617.default["8yIKem"]),
+            label: Chunk388032.intl.string(Chunk797013.default["8yIKem"]),
             onChange: e => this.handleToggleResolveFlag(e)
           })
         }, Chunk726521), {

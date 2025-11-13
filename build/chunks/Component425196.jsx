@@ -1,5 +1,5 @@
 /** Chunk was on 80448 **/
-/** chunk id: 425196, original params: t,e,r (module,exports,require) **/
+/** chunk id: 425196, original params: t,r,e (module,exports,require) **/
 require.d(exports, {
   Z: () => s
 });
@@ -10,10 +10,10 @@ var Chunk951288 = require("./951288.js"),
 
 function s(t) {
   let {
-    step: e
+    step: r
   } = t;
   return (0, i.jsx)(l.Z, {
-    children: e === a.ij.END_REWARD && (0, i.jsx)(n.xvT, {
+    children: r === a.ij.END_REWARD && (0, i.jsx)(n.xvT, {
       variant: "display-lg",
       color: "text-primary",
       children: "Thanks for being a capital G Gamer."

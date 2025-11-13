@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk309945 = require("./309945.jsx"),
   Chunk385902 = require("./385902.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk269794 = require("./269794.js"),
-  Chunk459196 = require("./459196.js"),
+  Chunk732031 = require("./732031.js"),
+  Chunk18853 = require("./18853.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk547885 = require("./547885.js");
 
@@ -27,7 +27,7 @@ function j() {
     className: Chunk547885.staffContainer,
     children: (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "text-sm/medium",
-      children: Chunk388032.intl.string(Chunk459196.default.l9n4QZ)
+      children: Chunk388032.intl.string(Chunk18853.default.l9n4QZ)
     })
   })
 }
