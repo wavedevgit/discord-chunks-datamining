@@ -72,7 +72,7 @@ function S(e) {
   }), S = (0, y.I)(t), {
     totalFilters: Z
   } = (0, b.p4)(S, t), P = i.useMemo(() => {
-    if (t.type === x.aib.DMS) {
+    if (t.type === O.aib.DMS) {
       var e, n;
       let t = null != (n = null == (e = (0, f.$G)(S).channel_id) ? true : e.length) ? n : 0;
       return t > 0 ? j.intl.format(j.t.A2dqWG, {
@@ -81,16 +81,16 @@ function S(e) {
     }
     return null
   }, [t.type, S]), [T, N] = i.useState(null), A = i.useMemo(() => p ? [] : [s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [p]), [D, L] = (0, u.US)(A), M = D === s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, k = i.useCallback(e => {
-    null != e && M && L(O.L.USER_DISMISS), N(e)
+    null != e && M && L(x.L.USER_DISMISS), N(e)
   }, [L, M]), U = i.useCallback(e => {
-    L("user:explicit" === e ? O.L.USER_DISMISS : O.L.AUTO_DISMISS)
+    L("user:explicit" === e ? x.L.USER_DISMISS : x.L.AUTO_DISMISS)
   }, [L]), G = i.useCallback(() => {
     k(null), _.Z.openSearchFiltersModal(t)
   }, [t, k]), H = i.useMemo(() => Z > 0 ? j.intl.format(j.t.uaR4sI, {
     filterCount: Z
   }) : j.intl.string(j.t.UdhTtk), [Z]), F = (0, g.UX)({
     location: "SearchHeader"
-  }), B = t.type === x.aib.DMS || t.type === x.aib.CHANNEL, V = i.useMemo(() => I && F ? (0, r.jsxs)("div", {
+  }), B = t.type === O.aib.DMS || t.type === O.aib.CHANNEL, V = i.useMemo(() => I && F ? (0, r.jsxs)("div", {
     className: v.searchModeAndFiltersContainer,
     children: [(0, r.jsx)(d.Button, {
       variant: "secondary",
@@ -147,15 +147,15 @@ function S(e) {
     onItemSelect: l,
     children: [(0, r.jsx)(d.njP.Item, {
       className: v.searchHeaderTab,
-      id: x.QIO.NEWEST,
+      id: O.QIO.NEWEST,
       children: j.intl.string(j.t.rLjqbS)
     }), (0, r.jsx)(d.njP.Item, {
       className: v.searchHeaderTab,
-      id: x.QIO.OLDEST,
+      id: O.QIO.OLDEST,
       children: j.intl.string(j.t.a1BaUr)
     }), (0, r.jsx)(d.njP.Item, {
       className: v.searchHeaderTab,
-      id: x.QIO.MOST_RELEVANT,
+      id: O.QIO.MOST_RELEVANT,
       children: j.intl.string(j.t.FtR97k)
     })]
   }), [H, G, I, T, F, B, l, t, n, C, M, k, U]);
@@ -220,7 +220,7 @@ function P(e) {
         color: "text-muted",
         children: (0, r.jsx)(d.Anchor, {
           className: v.helpdeskLink,
-          href: h.Z.getArticleURL(x.BhN.SEARCH_INDEXING),
+          href: h.Z.getArticleURL(O.BhN.SEARCH_INDEXING),
           children: j.intl.string(j.t["G3EA+4"])
         })
       }), (0, r.jsx)(Z, {})]
@@ -274,7 +274,7 @@ function R(e) {
     if (m !== e) {
       if (e) {
         let e = {
-          type: x.aib.DMS
+          type: O.aib.DMS
         };
         _.Z.transitionQueryStateToSearchContext(n, e, t => {
           _.Z.cleanUpPrivateChannelSearchState(), _.Z.fetchMessages({
@@ -285,7 +285,7 @@ function R(e) {
         })
       } else {
         let e = {
-          type: x.aib.CHANNEL,
+          type: O.aib.CHANNEL,
           channelId: l
         };
         _.Z.transitionQueryStateToSearchContext(n, e, t => {
@@ -298,7 +298,7 @@ function R(e) {
       }
       s(null), p.rR.updateSetting(e)
     }
-  }, [m, s, n, l]), [y, O] = i.useMemo(() => [m ? j.intl.string(j.t["8lklch"]) : j.intl.string(j.t.ji3jTF), m ? j.intl.string(j.t.RMQZCa) : j.intl.string(j.t["v/PagC"])], [m]), v = i.useMemo(() => ({
+  }, [m, s, n, l]), [y, x] = i.useMemo(() => [m ? j.intl.string(j.t["8lklch"]) : j.intl.string(j.t.ji3jTF), m ? j.intl.string(j.t.RMQZCa) : j.intl.string(j.t["v/PagC"])], [m]), v = i.useMemo(() => ({
     align: "end"
   }), []);
   return (0, r.jsxs)(r.Fragment, {
@@ -351,7 +351,7 @@ function R(e) {
       shouldShow: u,
       onRequestClose: c,
       title: y,
-      body: O,
+      body: x,
       caretConfig: v,
       badge: "new"
     })]
@@ -366,13 +366,13 @@ function w(e) {
     setOpenPopout: a
   } = e, s = i.useRef(null), o = i.useMemo(() => [{
     label: j.intl.string(j.t.CbaapP),
-    value: x.QIO.NEWEST
+    value: O.QIO.NEWEST
   }, {
     label: j.intl.string(j.t.OukXZj),
-    value: x.QIO.OLDEST
+    value: O.QIO.OLDEST
   }, {
     label: j.intl.string(j.t.q8gB52),
-    value: x.QIO.MOST_RELEVANT
+    value: O.QIO.MOST_RELEVANT
   }], []), c = i.useCallback(e => {
     a(null), n(e)
   }, [a, n]);

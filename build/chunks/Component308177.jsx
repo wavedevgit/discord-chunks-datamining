@@ -1,7 +1,7 @@
 /** Chunk was on 14953 **/
 /** chunk id: 308177, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,12 +23,12 @@ var Chunk951288 = require("./951288.js"),
 function y(e) {
   return e.type === d.Ui.VOICE
 }
-let x = (0, Chunk112724.Z)(e => {
+let O = (0, Chunk112724.Z)(e => {
   var t, n;
   let {
     channel: a,
-    width: x,
-    onScroll: O,
+    width: O,
+    onScroll: x,
     popoutType: j
   } = e, {
     selectedParticipantId: v,
@@ -38,7 +38,7 @@ let x = (0, Chunk112724.Z)(e => {
     selectedParticipantId: s.Z.getSelectedParticipantId(a.id),
     largeStream: s.Z.getStageStreamSize(a.id),
     chatOpen: s.Z.getChatOpen(a.id)
-  }), [a.id]), S = (0, c.Io)(a.id), E = (0, c.Rk)(a.id, d.pV.AUDIENCE), Z = (0, l.e7)([o.Z], () => null != v ? o.Z.getParticipant(a.id, v) : null), P = (0, c.w8)(a.id, d.pV.SPEAKER), T = P.filter(y), N = null != P.find(e => e.type === d.Ui.STREAM), R = Math.floor((x - 32) / 102), w = x < 424 ? 1 : x < 624 ? 2 : x < 824 || I ? 3 : 4, A = {
+  }), [a.id]), S = (0, c.Io)(a.id), E = (0, c.Rk)(a.id, d.pV.AUDIENCE), Z = (0, l.e7)([o.Z], () => null != v ? o.Z.getParticipant(a.id, v) : null), P = (0, c.w8)(a.id, d.pV.SPEAKER), T = P.filter(y), N = null != P.find(e => e.type === d.Ui.STREAM), R = Math.floor((O - 32) / 102), w = O < 424 ? 1 : O < 624 ? 2 : O < 824 || I ? 3 : 4, A = {
     [d.pV.SPEAKER]: w,
     [d.pV.AUDIENCE]: R,
     [d.pV.SELECTED]: 1
@@ -52,7 +52,7 @@ let x = (0, Chunk112724.Z)(e => {
       speakerTileWidth: n,
       speakerTileHeight: r
     }
-  })(x, w), H = C ? x - 32 : Math.min(x - 64, 3 * U + 8), F = e => e === L.length - 1 || 0 === E && 1 === e, [B, V] = i.useState(false), [z, W] = i.useState(false);
+  })(O, w), H = C ? O - 32 : Math.min(O - 64, 3 * U + 8), F = e => e === L.length - 1 || 0 === E && 1 === e, [B, V] = i.useState(false), [z, W] = i.useState(false);
   return (0, r.jsx)(h.Z, {
     sections: k,
     renderSection: e => {
@@ -130,6 +130,6 @@ let x = (0, Chunk112724.Z)(e => {
     footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!F(e),
     className: _.scroller,
     chunkSize: 60,
-    onScroll: O
+    onScroll: x
   })
 })

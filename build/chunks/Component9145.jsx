@@ -54,7 +54,7 @@ function V(e) {
     maxHeight: V,
     connectedLocation: z,
     renderExternalHeader: W
-  } = e, Y = (0, N.Z)(), q = (0, s.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(z), [z]), K = (0, T.p)(z), Q = (0, s.e7)([x.Z], () => x.Z.getChannel(K)), X = (0, Z.gb)(q), J = (0, Z.uF)(X), $ = i.useCallback(() => {
+  } = e, Y = (0, N.Z)(), q = (0, s.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(z), [z]), K = (0, T.p)(z), Q = (0, s.e7)([O.Z], () => O.Z.getChannel(K)), X = (0, Z.gb)(q), J = (0, Z.uF)(X), $ = i.useCallback(() => {
     (0, S.tg)(k.Ez.PIP)
   }, []), ee = i.useRef(null), et = (0, s.e7)([E.ZP], () => E.ZP.getFocusedLayout()), en = et !== k.MI.NO_CHAT, [er, ei] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : V) ? n : null), el = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
@@ -86,9 +86,9 @@ function V(e) {
   }
   let eh = J.get(null != (l = null == Y ? true : Y.id) ? l : ""),
     ef = (0, s.e7)([j.Z], () => j.Z.getChannelId()),
-    eg = (0, s.Wu)([O.ZP], () => {
+    eg = (0, s.Wu)([x.ZP], () => {
       var e;
-      return null == Q ? [] : Array.from(null != (e = null == eh ? true : eh.embeddedActivity.userIds) ? e : []).map(e => O.ZP.getMember(Q.guild_id, e))
+      return null == Q ? [] : Array.from(null != (e = null == eh ? true : eh.embeddedActivity.userIds) ? e : []).map(e => x.ZP.getMember(Q.guild_id, e))
     }, [eh, Q]),
     em = i.useMemo(() => {
       let e = new Map;
@@ -150,7 +150,7 @@ function V(e) {
   if (null == Y) return null;
   let ey = [];
   null != eh && (ey = Array.from(eh.embeddedActivity.userIds).map(e => v.default.getUser(e)).filter(e => null != e && true !== e));
-  let ex = e => {
+  let eO = e => {
     var t;
     if (null == e || true === e || e === w.ag) return null;
     let n = em.get(e.id),
@@ -204,7 +204,7 @@ function V(e) {
             users: ey,
             size: F,
             max: 6,
-            renderUser: ex
+            renderUser: eO
           }), (0, r.jsxs)("div", {
             className: H.footerButtons,
             children: [(0, r.jsxs)("div", {

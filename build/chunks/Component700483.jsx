@@ -129,9 +129,9 @@ function ed(e) {
     onSelect: n
   } = e, o = (0, v.bp)(), {
     canManageGuildEvent: c
-  } = (0, C.XJ)(t), p = (0, l.e7)([Y.Z], () => Y.Z.getStageInstanceByChannel(t.id), [t.id]), h = (0, l.e7)([x.ZP], () => x.ZP.getGuildScheduledEvent(null == p ? true : p.guild_scheduled_event_id)), {
+  } = (0, C.XJ)(t), p = (0, l.e7)([Y.Z], () => Y.Z.getStageInstanceByChannel(t.id), [t.id]), h = (0, l.e7)([O.ZP], () => O.ZP.getGuildScheduledEvent(null == p ? true : p.guild_scheduled_event_id)), {
     suppress: f
-  } = (0, Z.Z)(t), g = M.default.getId(), [_] = (0, er.Z)(t), y = W.ZP.isModerator(g, t.id), O = (0, V.B)(t.id), j = c(h), {
+  } = (0, Z.Z)(t), g = M.default.getId(), [_] = (0, er.Z)(t), y = W.ZP.isModerator(g, t.id), x = (0, V.B)(t.id), j = c(h), {
     parentAnalyticsLocation: I
   } = (0, u.ZP)(), S = i.useRef(null), E = () => (function(e) {
     let {
@@ -187,7 +187,7 @@ function ed(e) {
         popoutOpen: i
       })
     }
-  }) : f && !O || _ ? (0, r.jsx)(A.Z, {
+  }) : f && !x || _ ? (0, r.jsx)(A.Z, {
     label: el.intl.string(el.t.SMKyih),
     onClick: E
   }) : (0, r.jsx)(A.Z, {
@@ -247,8 +247,8 @@ let eh = Chunk647438.memo(function(e) {
     suppress: s,
     selfMute: o,
     mute: c
-  } = (0, Z.Z)(t), d = (0, V.B)(t.id), m = (0, ee.Z)(t.id), x = (0, l.e7)([_.default], () => null != _.default.getAwaitingRemoteSessionInfo()), {
-    cameraUnavailable: O,
+  } = (0, Z.Z)(t), d = (0, V.B)(t.id), m = (0, ee.Z)(t.id), O = (0, l.e7)([_.default], () => null != _.default.getAwaitingRemoteSessionInfo()), {
+    cameraUnavailable: x,
     enabled: j
   } = (0, I.Z)(), v = (0, E.Z)(t), {
     limit: C,
@@ -288,7 +288,7 @@ let eh = Chunk647438.memo(function(e) {
         centerButton: true,
         hasPermission: v,
         enabled: j,
-        cameraUnavailable: O,
+        cameraUnavailable: x,
         onChange: P.r,
         onCameraUnavailable: N.Z,
         channelLimitReached: w,
@@ -341,7 +341,7 @@ let eh = Chunk647438.memo(function(e) {
             suppress: s,
             popoutOpen: i,
             onClick: () => (0, g.Z)(c, s, "Stage Channel Controls"),
-            awaitingRemote: x
+            awaitingRemote: O
           })
         }
       }), z && X]
@@ -398,7 +398,7 @@ let eg = Chunk647438.memo(function(e) {
     className: ea.containerColumn,
     children: [(0, r.jsxs)("div", {
       className: ea.eventPrompts,
-      children: [u ? (0, r.jsx)(O.Z, {
+      children: [u ? (0, r.jsx)(x.Z, {
         channelId: null == t ? true : t.id
       }) : null, (0, r.jsx)("div", {
         className: ea.separator

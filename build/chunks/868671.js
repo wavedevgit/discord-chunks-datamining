@@ -2,7 +2,7 @@
 /** chunk id: 868671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   H: () => j,
-  T: () => O
+  T: () => x
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -22,14 +22,14 @@ var Chunk647438 = require("./647438.js"),
   Chunk809017 = require("./809017.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let O = 0;
+let x = 0;
 
 function j(e) {
   let {
     memberStoreProps: {
       groups: t,
       rows: n,
-      version: O
+      version: x
     },
     channelId: j,
     guildId: v
@@ -39,7 +39,7 @@ function j(e) {
     impressionCappedEntryIds: Z
   } = (0, g.Z)(j), P = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), N = (0, i.e7)([s.Z], () => s.Z.getChannel(j)), R = (0, i.e7)([o.Z], () => o.Z.getGuild(v), [v]), w = (0, h.E)(R), A = null != w && w && (null == N ? true : N.isForumChannel()) === false, [D, L, M, k] = r.useMemo(() => {
     let e;
-    if (null == E || 0 === E.length || null == S || !A) return [t, n, O];
+    if (null == E || 0 === E.length || null == S || !A) return [t, n, x];
     let r = C ? E.length : 3,
       i = E.slice(0, r);
     e = P ? [{
@@ -55,7 +55,7 @@ function j(e) {
       key: _.G,
       count: e.length,
       index: n.length,
-      title: x.intl.string(x.t["6gwSFY"]),
+      title: O.intl.string(O.t["6gwSFY"]),
       onToggleExpand: () => {
         I(e => {
           let t = !e;
@@ -74,7 +74,7 @@ function j(e) {
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [j, E, C, t, v, S, n, O, P, A]), U = r.useRef(0), G = r.useRef(E), H = r.useRef(true), F = r.useRef({
+  }, [j, E, C, t, v, S, n, x, P, A]), U = r.useRef(0), G = r.useRef(E), H = r.useRef(true), F = r.useRef({
     impressionCappedEntryIds: Z
   }), B = r.useCallback(e => {
     var t;

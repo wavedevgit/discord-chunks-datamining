@@ -41,8 +41,8 @@ function v(e) {
       width: 20
     }),
     color: o.Z.unsafe_rawColors.PRIMARY_700.css,
-    title: O.intl.string(O.t["jMLfp/"]),
-    description: O.intl.string(O.t["Vd/rEX"]),
+    title: x.intl.string(x.t["jMLfp/"]),
+    description: x.intl.string(x.t["Vd/rEX"]),
     onClick: t,
     className: n
   })
@@ -67,15 +67,15 @@ function C(e) {
       color: "header-secondary",
       children: function(e) {
         if (0 === e.length) return "";
-        if (1 === e.length) return O.intl.formatToPlainString(O.t["5ULgaQ"], {
+        if (1 === e.length) return x.intl.formatToPlainString(x.t["5ULgaQ"], {
           first: e[0].userNick
         });
-        if (2 === e.length) return O.intl.formatToPlainString(O.t.BHK0Op, {
+        if (2 === e.length) return x.intl.formatToPlainString(x.t.BHK0Op, {
           first: e[0].userNick,
           second: e[1].userNick
         });
         let t = e.length - 2;
-        return O.intl.formatToPlainString(O.t.T3MT4n, {
+        return x.intl.formatToPlainString(x.t.T3MT4n, {
           first: e[0].userNick,
           second: e[1].userNick,
           numOthers: t
@@ -91,7 +91,7 @@ function I(e) {
     onContinueClick: n
   } = e, l = (0, s.e7)([b.Z], () => b.Z.can(_.yP, t), [t]), o = t.guild_id, {
     canCreateGuildEvent: d
-  } = (0, g.XJ)(t), u = (0, x.Z)(t.id), y = i.useRef(null);
+  } = (0, g.XJ)(t), u = (0, O.Z)(t.id), y = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: j.container,
     ref: y,
@@ -104,12 +104,12 @@ function I(e) {
         children: [(0, r.jsx)(c.Heading, {
           className: j.__invalid_title,
           variant: "heading-xxl/normal",
-          children: O.intl.string(O.t.QGnDLs)
+          children: x.intl.string(x.t.QGnDLs)
         }), (0, r.jsx)(c.Text, {
           tag: "div",
           className: j.subtitle,
           variant: "heading-lg/normal",
-          children: O.intl.string(O.t.djfK36)
+          children: x.intl.string(x.t.djfK36)
         })]
       }), u ? null : (0, r.jsx)(h.Z, {
         channelId: t.id

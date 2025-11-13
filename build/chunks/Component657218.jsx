@@ -191,8 +191,8 @@ function X(e) {
       textAreaState: n,
       setTextAreaState: r
     }
-  }(t, f), x = (0, k.vH)(t), {
-    isGeneratingAI: O,
+  }(t, f), O = (0, k.vH)(t), {
+    isGeneratingAI: x,
     enableAIFeatures: j,
     getThreadNameInputAccessory: C
   } = (0, H.U)({
@@ -273,11 +273,11 @@ function X(e) {
     parentChannel: t,
     parentMessageId: n,
     threadSettings: p,
-    privateThreadMode: x,
+    privateThreadMode: O,
     textAreaState: b,
     location: l,
     enableAIFeatures: j
-  }), R = (0, k.oD)(p, x) ? c.qtY : c.or_;
+  }), R = (0, k.oD)(p, O) ? c.qtY : c.or_;
   return (0, r.jsx)("div", {
     className: z.chat,
     onMouseDown: u,
@@ -309,14 +309,14 @@ function X(e) {
                   updateThreadSettings: m,
                   error: I,
                   disabled: N,
-                  isGeneratingAI: O,
+                  isGeneratingAI: x,
                   enableAIFeatures: j,
                   getThreadNameInputAccessory: C
                 }), t.type === B.d4z.GUILD_TEXT ? (0, r.jsx)(J, {
                   startedFromMessage: null != n,
                   threadSettings: p,
                   updateThreadSettings: m,
-                  privateThreadMode: x
+                  privateThreadMode: O
                 }) : null]
               })]
             }), (0, r.jsx)(et, {
@@ -435,7 +435,7 @@ function ee(e) {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(O.Z, {
+    children: [(0, r.jsx)(x.Z, {
       channelId: t.id,
       type: q,
       canAttachFiles: y
@@ -444,7 +444,7 @@ function ee(e) {
       children: (0, r.jsx)(c.pdY, {
         error: j
       })
-    }), (0, r.jsx)(x.ZP, {
+    }), (0, r.jsx)(O.ZP, {
       type: q,
       channel: t,
       placeholder: V.intl.string(V.t.taZfIC),

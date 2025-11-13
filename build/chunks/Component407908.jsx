@@ -22,9 +22,9 @@ function b(e) {
   var t, n;
   let {
     channel: b
-  } = e, _ = i.useContext(p.AnalyticsContext), y = (0, c.Aq)(), x = g.intl.string(m.default["Beo/7v"]), {
-    firstMessage: O
-  } = (0, a.cl)(b), j = null == O || null == (t = O.messageSnapshots) ? true : t[0], v = null == j || null == (n = j.moderatorReport) ? true : n.reported_user_id;
+  } = e, _ = i.useContext(p.AnalyticsContext), y = (0, c.Aq)(), O = g.intl.string(m.default["Beo/7v"]), {
+    firstMessage: x
+  } = (0, a.cl)(b), j = null == x || null == (t = x.messageSnapshots) ? true : t[0], v = null == j || null == (n = j.moderatorReport) ? true : n.reported_user_id;
   return b.isModeratorReportChannel() && null != v ? (0, r.jsx)(o.ZP.Icon, {
     onClick: () => {
       (0, u.Kh)(b.id), (0, d.i)(), (0, s.r)(b.guild_id, v, b.id, {
@@ -32,8 +32,8 @@ function b(e) {
         sourceLocation: null != location ? location : _.location
       }), y.dispatch(h.CkL.POPOUT_CLOSE)
     },
-    tooltip: x,
+    tooltip: O,
     icon: l.HI3,
-    "aria-label": x
+    "aria-label": O
   }) : null
 }

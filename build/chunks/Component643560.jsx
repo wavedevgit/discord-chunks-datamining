@@ -55,15 +55,15 @@ function f(e) {
     isEntryAdmin: b,
     canEdit: _,
     canRemove: y
-  } = (0, d.Z)(t), x = (0, s.Z)({
+  } = (0, d.Z)(t), O = (0, s.Z)({
     id: t.guildId,
     label: u.intl.string(u.t["94lLD7"]),
     onSuccess: g
   });
   i.useEffect(() => {
-    _ || y || null != x || (0, a.Zy)()
+    _ || y || null != O || (0, a.Zy)()
   });
-  let O = () => {
+  let x = () => {
     c.kx(t.channelId, t.guildId)
   };
 
@@ -97,7 +97,7 @@ function f(e) {
             header: u.intl.string(u.t.KUxYWH),
             confirmText: u.intl.string(u.t.N86XcP),
             cancelText: u.intl.string(u.t["ETE/oC"]),
-            onConfirm: O
+            onConfirm: x
           }, e), {
             children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
@@ -118,7 +118,7 @@ function f(e) {
         color: "danger"
       })]
     }), (0, r.jsx)(l.kSQ, {
-      children: x
+      children: O
     })]
   })
 }

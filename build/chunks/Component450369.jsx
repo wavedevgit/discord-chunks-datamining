@@ -129,7 +129,7 @@ let k = 16 / 9,
     } = i.useContext(c.Sfi), {
       id: g,
       blocked: b,
-      ignored: O
+      ignored: x
     } = t, v = (0, o.Wu)([I.Z], () => I.Z.getAllActiveStreams(), []), {
       selectedParticipant: C,
       largeStream: S
@@ -138,7 +138,7 @@ let k = 16 / 9,
       largeStream: null != l && m.Z.getStageStreamSize(l.id)
     })), T = i.useCallback((e, t) => {
       if (e.type === A.fO.STREAM && 0 === v.filter(t => (0, y.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
-        if (!(0, x.p9)(l, P.Z, E.Z, Z.Z, _.default)[0]) return;
+        if (!(0, O.p9)(l, P.Z, E.Z, Z.Z, _.default)[0]) return;
         (0, p.rn)((0, y.my)(e.id), {
           forceMultiple: t.shiftKey
         })
@@ -149,7 +149,7 @@ let k = 16 / 9,
       aspectRatio: k,
       fit: n.type === A.fO.USER ? j.L.COVER : true,
       blocked: b,
-      ignored: O,
+      ignored: x,
       channel: l,
       className: D.tile,
       inCall: true,
@@ -170,7 +170,7 @@ let k = 16 / 9,
       popoutType: d
     } = e, {
       newestAnalyticsLocation: p
-    } = (0, f.ZP)(h.Z.STAGE_TILE), _ = (0, O.bp)(), y = l.getGuildId(), x = S.default.getId();
+    } = (0, f.ZP)(h.Z.STAGE_TILE), _ = (0, x.bp)(), y = l.getGuildId(), O = S.default.getId();
     a()(null != y, "Channel cannot be guildless");
     let {
       user: j
@@ -182,7 +182,7 @@ let k = 16 / 9,
           name: s.ImpressionNames.CALL_TILE_CONTEXT_MENU,
           properties: {
             location: "StageTile",
-            is_tile_owner: j.id === x,
+            is_tile_owner: j.id === O,
             tile_type: e
           }
         })

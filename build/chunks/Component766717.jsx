@@ -1,51 +1,52 @@
 /** Chunk was on 14953 **/
 /** chunk id: 766717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk221292 = require("./221292.js"),
   Chunk239990 = require("./239990.js");
-
-function o(e) {
+let c = Chunk647438.forwardRef(function(e, t) {
   let {
-    onCardClick: t,
-    tooltipText: n,
-    shouldScalePreview: o = true,
-    renderPreview: c,
-    moreCount: d,
-    isSingleCard: u = false,
-    skuId: p,
-    analyticsLocations: h,
-    wishlistId: f
-  } = e, g = o ? s.cardPreview : s.cardPreviewNoScale, m = u ? s.cardSingle : s.card, b = null != d && d > 0;
-  return (0, r.jsx)(i.u, {
-    text: n,
+    onCardClick: n,
+    tooltipText: i,
+    shouldScalePreview: c = true,
+    renderPreview: d,
+    moreCount: u,
+    isSingleCard: p = false,
+    skuId: h,
+    analyticsLocations: f,
+    wishlistId: g
+  } = e, m = c ? o.cardPreview : o.cardPreviewNoScale, b = p ? o.cardSingle : o.card, _ = null != u && u > 0;
+  return (0, r.jsx)(l.u, {
+    text: i,
     position: "top",
-    children: (0, r.jsxs)(l.P3F, {
+    children: (0, r.jsxs)(a.P3F, {
       onClick: () => {
-        t(), (0, a.Er)({
-          action: b ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-          analyticsLocations: h,
-          skuId: b ? null : p,
-          wishlistId: f
+        n(), (0, s.Er)({
+          action: _ ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
+          analyticsLocations: f,
+          skuId: _ ? null : h,
+          wishlistId: g
         })
       },
-      className: m,
-      "aria-label": n,
+      className: b,
+      "aria-label": i,
+      innerRef: t,
       children: [(0, r.jsx)("div", {
-        className: g,
-        children: c()
-      }), b && (0, r.jsx)("div", {
-        className: s.moreOverlay,
-        children: (0, r.jsxs)(l.Text, {
+        className: m,
+        children: d()
+      }), _ && (0, r.jsx)("div", {
+        className: o.moreOverlay,
+        children: (0, r.jsxs)(a.Text, {
           variant: "text-xs/medium",
           color: "always-white",
-          children: ["+", d]
+          children: ["+", u]
         })
       })]
     })
   })
-}
+})

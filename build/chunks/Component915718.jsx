@@ -164,16 +164,16 @@ function D(e) {
   } = e, i = (0, m.Z)(), s = (0, l.e7)([h.Z], () => h.Z.getMode(n.id)), o = (0, l.e7)([I.Z], () => I.Z.isInChannel(n.id)), c = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
     callActive: d,
     callUnavailable: f
-  } = (0, l.cj)([x.Z], () => ({
-    callActive: x.Z.isCallActive(n.id),
-    callUnavailable: x.Z.isCallUnavailable(n.id)
+  } = (0, l.cj)([O.Z], () => ({
+    callActive: O.Z.isCallActive(n.id),
+    callUnavailable: O.Z.isCallUnavailable(n.id)
   })), g = n.getRecipientId(), {
     notFriend: _,
     isBlocked: y
   } = (0, l.cj)([v.Z], () => ({
     notFriend: n.type === Z.d4z.DM && null != g && !v.Z.isFriend(g),
     isBlocked: n.type === Z.d4z.DM && null != g && v.Z.isBlocked(g)
-  })), j = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, p.Z)(n.id), T = (0, l.e7)([O.Z], () => O.Z.hasLayers());
+  })), j = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, p.Z)(n.id), T = (0, l.e7)([x.Z], () => x.Z.hasLayers());
   return (P && !T && E.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == j ? true : j.bot)) ? null : (0, r.jsx)(A, {
     channel: n,
     mode: s,

@@ -1,7 +1,7 @@
 /** Chunk was on 14953 **/
 /** chunk id: 801405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,12 +21,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk228488 = require("./228488.js"),
   Chunk981631 = require("./981631.js");
 
-function x(e) {
+function O(e) {
   let {
     channel: t,
     appContext: n,
-    popoutOpen: x,
-    popoutWindow: O,
+    popoutOpen: O,
+    popoutWindow: x,
     currentWindow: j
   } = e, {
     parentAnalyticsLocation: v
@@ -51,15 +51,15 @@ function x(e) {
       currentDocument: T,
       rootNode: N
     } = i.useMemo(() => {
-      let e = null != O && C ? O.document : document,
+      let e = null != x && C ? x.document : document,
         t = j.document.getElementById("app-mount");
       return {
         currentWindow: j,
         currentDocument: e,
         rootNode: t
       }
-    }, [O, C, j]),
-    R = x && !C,
+    }, [x, C, j]),
+    R = O && !C,
     w = E === y.WtW.VIDEO && Z && !R,
     A = i.useCallback((e, r) => {
       r !== e && (s.Z.updateLayout(t.id, r, n), r === y.AEg.FULL_SCREEN && t.isPrivate() && m.S.dispatch(y.CkL.TEXTAREA_BLUR))
@@ -121,7 +121,7 @@ function x(e) {
   }, [Z, C]), w) ? (0, r.jsx)(h.Z, {
     themeable: false,
     node: N,
-    guestWindow: O,
+    guestWindow: x,
     onClick: L(S)
   }) : null
 }

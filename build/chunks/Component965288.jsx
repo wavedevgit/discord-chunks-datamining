@@ -138,11 +138,11 @@ let Z = Chunk647438.memo(function(e) {
     } = e, {
       user: s,
       blocked: u
-    } = t, j = l.getGuildId(), v = x.default.getId(), {
+    } = t, j = l.getGuildId(), v = O.default.getId(), {
       newestAnalyticsLocation: Z
-    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), T = (0, _.bp)(), N = (0, d.e7)([O.ZP], () => {
+    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), T = (0, _.bp)(), N = (0, d.e7)([x.ZP], () => {
       var e;
-      return null != j && (null == (e = O.ZP.getMember(j, s.id)) ? true : e.premiumSince) != null
+      return null != j && (null == (e = x.ZP.getMember(j, s.id)) ? true : e.premiumSince) != null
     }, [j, s.id]), R = i.useRef(null);
     o()(null != j, "Channel cannot be guildless");
     let w = i.useCallback(e => {

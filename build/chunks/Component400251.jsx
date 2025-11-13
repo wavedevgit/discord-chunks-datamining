@@ -84,7 +84,7 @@ function T(e) {
     entry: t
   } = e, [l, s] = i.useState(false), d = i.useRef(null), {
     canEdit: u
-  } = (0, O.Z)(t);
+  } = (0, x.Z)(t);
   return (0, r.jsx)("div", {
     className: a()(I.actionButtonsContainer, {
       [I.forceButtonsShow]: l
@@ -158,7 +158,7 @@ let N = e => {
   var t;
   let {
     entry: l
-  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([_.Z], () => _.Z.getGuild(l.guildId)), O = async () => {
+  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([_.Z], () => _.Z.getGuild(l.guildId)), x = async () => {
     o(true);
     try {
       h ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
@@ -208,7 +208,7 @@ let N = e => {
             children: (0, r.jsx)(f.Z, {
               className: I.icon,
               iconSrc: S,
-              guild: (0, x.e)(l),
+              guild: (0, O.e)(l),
               size: f.Z.Sizes.MEDIUM,
               active: true
             })
@@ -263,7 +263,7 @@ let N = e => {
         children: (0, r.jsx)(c.Button, {
           loading: a,
           variant: h ? "secondary" : "active",
-          onClick: O,
+          onClick: x,
           text: P,
           fullWidth: true
         })

@@ -78,8 +78,8 @@ let b = e => {
       currentCategoryId: m,
       handleSelectCategory: _,
       categoryCounts: y,
-      allEntriesCount: x,
-      isLoading: O
+      allEntriesCount: O,
+      isLoading: x
     } = e;
     return (0, r.jsx)("div", {
       className: h.pageContainer,
@@ -103,7 +103,7 @@ let b = e => {
             children: [(0, r.jsx)(s.njP.Item, {
               className: f.tabBarItem,
               id: d.AR.ALL,
-              children: "".concat(p.intl.string(p.t.hEAa2a), " (").concat(x, ")")
+              children: "".concat(p.intl.string(p.t.hEAa2a), " (").concat(O, ")")
             }, d.AR.ALL), (0, d.b7)(t.id).map(e => {
               let {
                 value: t,
@@ -116,7 +116,7 @@ let b = e => {
               }, t)
             })]
           })
-        }), O && null == n ? (0, r.jsx)(s.$jN, {
+        }), x && null == n ? (0, r.jsx)(s.$jN, {
           className: h.spinner
         }) : null == n ? true : n.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [true !== e.header ? (0, r.jsx)(s.Text, {

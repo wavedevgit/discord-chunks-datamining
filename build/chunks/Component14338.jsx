@@ -1,7 +1,7 @@
 /** Chunk was on 14953 **/
 /** chunk id: 14338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -51,13 +51,13 @@ function y(e, t) {
   }), e
 }
 
-function x(e) {
+function O(e) {
   let {
     channel: t,
     speaker: l,
     className: g
-  } = e, x = i.useRef(null), {
-    newestAnalyticsLocation: O
+  } = e, O = i.useRef(null), {
+    newestAnalyticsLocation: x
   } = (0, u.ZP)(), j = (0, h.bp)(), {
     reducedMotion: v
   } = i.useContext(o.Sfi), C = (0, d.Z)({
@@ -74,24 +74,24 @@ function x(e) {
         showMediaItems: true,
         showStageChannelItems: true,
         showChatItems: false,
-        onInteraction: (0, p.u)("GuildChannelUserContextMenu", O)
+        onInteraction: (0, p.u)("GuildChannelUserContextMenu", x)
       }))
     }, {
       context: j
     })
   };
   return (0, r.jsx)(f.Z, {
-    targetElementRef: x,
+    targetElementRef: O,
     user: l.user,
     guildId: t.guild_id,
     channelId: t.id,
     clickTrap: true,
     children: e => (0, r.jsx)(s.u, {
-      targetElementRef: x,
+      targetElementRef: O,
       __unsupportedReactNodeAsText: l.userNick,
       position: "bottom",
       children: (0, r.jsx)(o.P3F, y(_({}, e), {
-        innerRef: x,
+        innerRef: O,
         onClick: t => {
           t.stopPropagation(), e.onClick(t)
         },
@@ -108,7 +108,7 @@ function x(e) {
   })
 }
 
-function O(e) {
+function x(e) {
   let {
     speakers: t,
     channel: n
@@ -118,7 +118,7 @@ function O(e) {
     guildId: n.guild_id,
     users: t,
     max: 10,
-    renderUser: (e, t, i) => (0, r.jsx)(x, {
+    renderUser: (e, t, i) => (0, r.jsx)(O, {
       channel: n,
       speaker: e,
       className: t

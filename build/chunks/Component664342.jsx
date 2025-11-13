@@ -87,7 +87,7 @@ function T(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(x.ZP.Icon, P(Z({}, e), {
+      return (0, r.jsx)(O.ZP.Icon, P(Z({}, e), {
         ref: s,
         onClick: o,
         tooltip: n ? null : c,
@@ -104,13 +104,13 @@ function N(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), x = (0, u.Z)(t), v = (0, g.Z)(t), C = (0, m.Z)(t), I = (0, a.Z)(t), Z = (0, d.Z)(t), P = (0, f.Z)(t.id), T = (0, h.Z)(t), N = (0, o.Z)(t), R = (0, s.Z)(t), w = (0, _.Z)({
+  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), O = (0, u.Z)(t), v = (0, g.Z)(t), C = (0, m.Z)(t), I = (0, a.Z)(t), Z = (0, d.Z)(t), P = (0, f.Z)(t.id), T = (0, h.Z)(t), N = (0, o.Z)(t), R = (0, s.Z)(t), w = (0, _.Z)({
     id: t.id,
     label: E.intl.string(E.t.DQ797g)
   }), A = (0, b.Z)(t), D = (0, p.Z)(t);
 
   function L() {
-    (0, O.Kh)(t.id)
+    (0, x.Kh)(t.id)
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "thread-context",
@@ -126,7 +126,7 @@ function N(e) {
     }), (0, r.jsxs)(l.kSQ, {
       children: [v, C]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [T, x, P, D]
+      children: [T, O, P, D]
     }), (0, r.jsxs)(l.kSQ, {
       children: [(0, r.jsx)(l.sNh, {
         id: "search",
@@ -167,7 +167,7 @@ function R(e) {
       channel: t
     }) : null, (0, r.jsx)(T, {
       channel: t
-    }), (0, r.jsx)(x.ZP.Icon, {
+    }), (0, r.jsx)(O.ZP.Icon, {
       icon: l.Dio,
       tooltip: E.intl.string(E.t.cpT0Cq),
       onClick: () => (0, I.vN)((0, y.e)(t), null != n ? n : t.parent_id)

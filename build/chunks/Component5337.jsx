@@ -61,17 +61,19 @@ function m(e, t) {
   let {
     profileOwner: n,
     analyticsLocations: l,
-    wishlistId: s
-  } = t, o = g(e, {
+    wishlistId: s,
+    onViewWishlist: o
+  } = t, c = g(e, {
     profileOwner: n,
     analyticsLocations: l,
-    onViewWishlist: () => {},
+    onViewWishlist: o,
     isSingleCard: true,
-    wishlistId: s
+    wishlistId: s,
+    index: 0
   });
   return (0, r.jsxs)("div", {
     className: h.singleItemContainer,
-    children: [o, (0, r.jsxs)("div", {
+    children: [c, (0, r.jsxs)("div", {
       className: h.singleItemInfo,
       children: [(0, r.jsx)(a.P3F, {
         onClick: () => {
