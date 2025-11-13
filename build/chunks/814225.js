@@ -2,6 +2,7 @@
 /** chunk id: 814225, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Ag: () => m,
   P3: () => _,
   ZK: () => f,
   en: () => h
@@ -214,4 +215,8 @@ function h(e) {
     if (a.isValid()) return a.format(r)
   }
   return n
+}
+
+function m(e) {
+  return e === o.POd.SOCIAL_LAYER_GAME_ITEM
 }

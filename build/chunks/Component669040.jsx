@@ -219,7 +219,9 @@ let z = 0,
         glowOpacity: er,
         enableBrandRefresh: eu
       }) : ed(e) ? (0, r.jsx)("div", {
-        className: K.nitroBottomDivider
+        className: o()(K.nitroBottomDivider, {
+          [K.brandRefresh]: eu
+        })
       }) : null, [er, ef, ed, eE, eu]),
       eO = i.useCallback(e => ef(e) ? ei : ed(e) ? ea : 0, [ef, ed]),
       ev = i.useCallback(e => {

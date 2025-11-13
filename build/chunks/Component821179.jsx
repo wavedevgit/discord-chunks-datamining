@@ -28,9 +28,9 @@ function g(e) {
   } = e, {
     theme: O,
     themeType: P
-  } = (0, u.z)(), I = t.hasAvatarForGuild(g.id);
+  } = (0, d.z)(), I = t.hasAvatarForGuild(g.id);
   return (0, i.jsxs)(l.P3F, {
-    focusProps: P === h.l.MODAL_V2 ? {
+    focusProps: P === p.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -87,7 +87,7 @@ function g(e) {
       guild: g,
       showBadge: true,
       className: null != g.icon ? m.icon : m.noIcon,
-      badgeStrokeColor: (0, o.Lq)((0, a.wj)(O) ? p.Ilk.PRIMARY_600 : p.Ilk.WHITE_500),
+      badgeStrokeColor: (0, o.Lq)((0, a.wj)(O) ? h.Ilk.PRIMARY_600 : h.Ilk.WHITE_500),
       badgeTooltipColor: l.r6K.PRIMARY,
       badgeTooltipDelay: f.vB,
       size: c.Z.Sizes.MEDIUM,
@@ -108,7 +108,7 @@ function g(e) {
           variant: "text-xs/medium",
           children: (0, i.jsx)(s.Z, {
             delay: f.vB,
-            children: null != j ? j : d.ZP.getName(g.id, true, t)
+            children: null != j ? j : u.ZP.getName(g.id, true, t)
           })
         })]
       }), !I && null != j && (0, i.jsx)(l.Text, {

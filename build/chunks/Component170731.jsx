@@ -178,8 +178,8 @@ let E = function(e) {
     popularCollectiblesProducts: I,
     wishlistError: N
   }), {
-    theme: G,
-    primaryColor: y,
+    theme: y,
+    primaryColor: G,
     secondaryColor: M
   } = (0, u.Z)({
     user: i,
@@ -188,9 +188,9 @@ let E = function(e) {
     profileThemeStyle: W,
     profileThemeClassName: F
   } = (0, m.Z)({
-    theme: G,
+    theme: y,
     themeType: null,
-    primaryColor: y,
+    primaryColor: G,
     secondaryColor: M
   }), Z = r.useCallback(() => {
     (0, h.openUserProfileModal)({

@@ -332,7 +332,8 @@ let v = e => {
       analyticsLocations: i,
       action: a,
       wishlistId: o,
-      skuId: s
+      skuId: s,
+      hasThirdPartySku: l
     } = e;
     C(O(b({}, e), {
       action: a
@@ -340,6 +341,7 @@ let v = e => {
       location_stack: i,
       action_type: a,
       wishlist_id: o,
-      sku_id: s
+      sku_id: s,
+      has_3p_sku: l
     }))
   }

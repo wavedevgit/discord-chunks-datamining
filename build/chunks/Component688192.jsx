@@ -1,8 +1,8 @@
 /** Chunk was on 96413 **/
 /** chunk id: 688192, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Y: () => I,
-  Z: () => x
+  Y: () => x,
+  Z: () => y
 });
 var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,6 +11,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
+  Chunk607550 = require("./607550.js"),
   Chunk602733 = require("./602733.js"),
   Chunk594174 = require("./594174.js"),
   Chunk626135 = require("./626135.js"),
@@ -22,111 +23,117 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk232644 = require("./232644.js"),
-  I = ((i = {}).GIFTING_FLOW = "gifting_flow", i.PROFILE_MODAL = "profile_modal", i.PROFILE_SIDEBAR = "profile_sidebar", i);
+  x = ((i = {}).GIFTING_FLOW = "gifting_flow", i.PROFILE_MODAL = "profile_modal", i.PROFILE_SIDEBAR = "profile_sidebar", i);
 
-function x(e) {
+function y(e) {
   let {
     item: t,
     wishlistId: r,
     isOwner: i,
     surface: l = "profile_modal",
-    cardRef: I,
-    renderItemPreview: x,
-    accessibleLabel: y,
-    onCardClick: w,
-    buttonCTALabel: E,
-    buttonIcon: S,
-    isOwned: _ = false,
-    renderSourceIcon: N,
-    giftingOrigin: Z,
-    source: k
-  } = e, F = a.useRef(null), L = a.useRef(null), C = null != I ? I : L, {
-    analyticsLocations: T
-  } = (0, d.ZP)(), A = i && true === t.isOwned && null != t.gifterUserId, M = null != t.gifterUserId ? f.default.getUser(t.gifterUserId) : null, D = null != M ? h.ZP.getName(M) : null, R = A && null != M && null != D && "" !== D, W = R ? (0, s.jsx)(c.qEK, {
-    src: M.getAvatarURL(true, 48),
+    cardRef: x,
+    renderItemPreview: y,
+    accessibleLabel: w,
+    onCardClick: E,
+    buttonCTALabel: S,
+    buttonIcon: _,
+    isOwned: N = false,
+    renderSourceIcon: Z,
+    giftingOrigin: k,
+    source: F
+  } = e, L = a.useRef(null), T = a.useRef(null), C = null != x ? x : T, {
+    analyticsLocations: A
+  } = (0, u.ZP)(), M = i && true === t.isOwned && null != t.gifterUserId, D = null != t.gifterUserId ? h.default.getUser(t.gifterUserId) : null, R = null != D ? m.ZP.getName(D) : null, W = M && null != D && null != R && "" !== R, z = W ? (0, s.jsx)(c.qEK, {
+    src: D.getAvatarURL(true, 48),
     size: c.EFr.SIZE_48,
-    "aria-label": D
-  }) : null, z = (0, s.jsx)("div", {
-    className: P.cardStateIconWrapper,
+    "aria-label": R
+  }) : null, H = (0, s.jsx)("div", {
+    className: I.cardStateIconWrapper,
     children: (0, s.jsx)(c.sV5, {
       size: "custom",
       color: c.TVs.colors.WHITE,
       width: 38,
       height: 38,
-      className: n()(P.cardStateIcon, P.checkmark),
-      "aria-label": O.intl.string(O.t.L5Pt9L)
+      className: n()(I.cardStateIcon, I.checkmark),
+      "aria-label": P.intl.string(P.t.L5Pt9L)
     })
-  }), H = (0, s.jsx)("div", {
-    className: P.overlay,
+  }), U = (0, s.jsx)("div", {
+    className: I.overlay,
     children: (0, s.jsx)(c.Button, {
       focusProps: {
         ringTarget: C
       },
       variant: "primary",
       size: "sm",
-      text: E,
-      icon: S,
+      text: S,
+      icon: _,
       onClick: e => {
-        e.stopPropagation(), U()
+        e.stopPropagation(), B()
       },
       fullWidth: true
     })
-  }), U = () => {
-    if (Z === b.Wt.DM_CHANNEL_WISHLIST) {
-      let e = k === u.lr.WISHLIST ? "wishlist" : "shop";
-      p.default.track(j.rMx.GIFTING_ITEM_CLICKED, {
+  }), B = () => {
+    if (k === O.Wt.DM_CHANNEL_WISHLIST) {
+      let e = F === f.lr.WISHLIST ? "wishlist" : "shop";
+      p.default.track(b.rMx.GIFTING_ITEM_CLICKED, {
         sku_id: t.skuId,
         item_source: e,
-        wishlist_id: k === u.lr.WISHLIST ? r : null
+        wishlist_id: F === f.lr.WISHLIST ? r : null
       })
-    } else null != r && (0, m.Er)({
-      wishlistId: r,
-      action: g.NW.WISHLIST_ITEM_CLICKED,
-      skuId: t.skuId,
-      analyticsLocations: T
-    });
-    w()
-  }, B = (0, s.jsxs)("div", {
-    ref: F,
-    className: P.container,
+    } else if (null != r) {
+      var e;
+      let i = d.Z.getWishlist(r),
+        s = null != (e = null == i ? true : i.hasThirdPartySku()) && e;
+      (0, v.Er)({
+        wishlistId: r,
+        action: j.NW.WISHLIST_ITEM_CLICKED,
+        skuId: t.skuId,
+        analyticsLocations: A,
+        hasThirdPartySku: s
+      })
+    }
+    E()
+  }, G = (0, s.jsxs)("div", {
+    ref: L,
+    className: I.container,
     children: [(0, s.jsxs)("div", {
       ref: C,
-      className: n()(P.card, {
-        [P.isOwned]: _,
-        [P.smallCard]: "gifting_flow" === l,
-        [P.largeCard]: "profile_modal" === l
+      className: n()(I.card, {
+        [I.isOwned]: N,
+        [I.smallCard]: "gifting_flow" === l,
+        [I.largeCard]: "profile_modal" === l
       }),
-      onClick: U,
+      onClick: B,
       children: [(0, s.jsx)(c.nn4, {
         children: (0, s.jsx)(c.H, {
-          children: y
+          children: w
         })
       }), (0, s.jsx)("div", {
-        className: P.cardPreview,
-        children: x()
-      }), _ && z, "profile_modal" === l ? H : (0, s.jsx)(c.P3F, {
-        "aria-label": E,
+        className: I.cardPreview,
+        children: y()
+      }), N && H, "profile_modal" === l ? U : (0, s.jsx)(c.P3F, {
+        "aria-label": S,
         focusProps: {
           ringTarget: C
         },
         onClick: e => {
-          e.stopPropagation(), U()
+          e.stopPropagation(), B()
         }
       })]
-    }), null != N && N(), i && null != r && (0, s.jsx)(v.Z, {
+    }), null != Z && Z(), i && null != r && (0, s.jsx)(g.Z, {
       iconSize: "sm",
       item: t,
       wishlistId: r,
-      className: P.removeItemButton
+      className: I.removeItemButton
     })]
   });
-  return R ? (0, s.jsx)(o.i_, {
+  return W ? (0, s.jsx)(o.i_, {
     asContainer: true,
-    title: O.intl.formatToPlainString(O.t.TL4ktE, {
-      username: D
+    title: P.intl.formatToPlainString(P.t.TL4ktE, {
+      username: R
     }),
     body: t.skuName,
-    asset: W,
-    children: B
-  }) : B
+    asset: z,
+    children: G
+  }) : G
 }

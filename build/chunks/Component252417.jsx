@@ -35,16 +35,16 @@ function P(e) {
   } = (0, m.z)(), S = s.useMemo(() => t.isNonUserBot() || (0, f.W)(t, x), [t, x]), {
     activities: _,
     isMobileOnline: N
-  } = (0, a.cj)([h.Z], () => ({
-    activities: h.Z.getActivities(t.id),
-    isMobileOnline: h.Z.isMobileOnline(t.id)
-  })), Z = (0, p.Z)(t.id), {
+  } = (0, a.cj)([p.Z], () => ({
+    activities: p.Z.getActivities(t.id),
+    isMobileOnline: p.Z.isMobileOnline(t.id)
+  })), Z = (0, h.Z)(t.id), {
     voiceActivityStatusEnabled: k
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
     voiceChannel: F
-  } = (0, d.Z)({
+  } = (0, u.Z)({
     userId: k ? t.id : true,
     guildId: I
   });
@@ -115,7 +115,7 @@ function P(e) {
         user: t,
         className: j.tag,
         discriminatorClass: j.discriminator
-      }), (0, i.jsx)(u.Z, {
+      }), (0, i.jsx)(d.Z, {
         user: t,
         activities: _,
         applicationStream: Z,

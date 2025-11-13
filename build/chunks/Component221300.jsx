@@ -1,7 +1,7 @@
 /** Chunk was on 96413 **/
 /** chunk id: 221300, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,44 +13,44 @@ var Chunk979554 = require("./979554.js"),
   Chunk688192 = require("./688192.jsx"),
   Chunk232644 = require("./232644.js");
 
-function u(e) {
+function d(e) {
   let {
     item: t,
     profileOwner: r,
-    isHighlighted: u,
+    isHighlighted: d,
     surface: f = c.Y.PROFILE_MODAL
-  } = e, p = t.collectiblesItem;
-  switch (p.type) {
+  } = e, h = t.collectiblesItem;
+  switch (h.type) {
     case s.Z.PROFILE_EFFECT:
       return (0, i.jsx)("div", {
-        className: d.profileEffectPreview,
+        className: u.profileEffectPreview,
         children: (0, i.jsx)(o.Z, {
-          skuId: p.skuId,
-          isHighlighted: u,
+          skuId: h.skuId,
+          isHighlighted: d,
           isPurchased: false,
           removeSetHeight: true
         })
       });
     case s.Z.AVATAR_DECORATION:
       return (0, i.jsx)("div", {
-        className: d.avatarDecorationPreview,
+        className: u.avatarDecorationPreview,
         children: (0, i.jsx)(l.R, {
-          item: p,
+          item: h,
           user: r,
-          isHighlighted: u,
+          isHighlighted: d,
           isPurchased: false,
           avatarSize: a.EFr.SIZE_80
         })
       });
     case s.Z.NAMEPLATE:
       return (0, i.jsxs)("div", {
-        className: d.nameplatePreview,
+        className: u.nameplatePreview,
         children: [(0, i.jsx)("div", {
-          className: d.nameplateTopLeft,
+          className: u.nameplateTopLeft,
           children: (0, i.jsx)(n.Z, {
             user: r,
-            nameplate: p,
-            isHighlighted: u,
+            nameplate: h,
+            isHighlighted: d,
             showPlaceholderUser: true,
             showStatus: true,
             isPurchased: false,
@@ -58,12 +58,12 @@ function u(e) {
             width: f === c.Y.GIFTING_FLOW ? 136 : 200
           })
         }), (0, i.jsx)("div", {
-          className: d.nameplateBottomRight,
+          className: u.nameplateBottomRight,
           "aria-hidden": true,
           children: (0, i.jsx)(n.Z, {
             user: r,
-            nameplate: p,
-            isHighlighted: u,
+            nameplate: h,
+            isHighlighted: d,
             showPlaceholderUser: true,
             showStatus: true,
             isPurchased: false,

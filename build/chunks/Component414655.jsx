@@ -104,14 +104,18 @@ function C(e) {
     wishlist: R,
     error: G
   } = (0, b.kZ)(n, t.id), L = i.useCallback(() => {
+    var e;
     if (null == n) return;
-    let e = A ? a.f.PRIVATE : a.f.PUBLIC;
-    Z(!A), m.Z.updateWishlistVisibility(n, e), (0, y.Er)({
+    let t = A ? a.f.PRIVATE : a.f.PUBLIC;
+    Z(!A), m.Z.updateWishlistVisibility(n, t);
+    let r = null != (e = null == R ? true : R.hasThirdPartySku()) && e;
+    (0, y.Er)({
       wishlistId: n,
       action: A ? P.NW.WISHLIST_TOGGLE_PRIVATE : P.NW.WISHLIST_TOGGLE_PUBLIC,
-      analyticsLocations: D
+      analyticsLocations: D,
+      hasThirdPartySku: r
     })
-  }, [n, A, D]), B = i.useCallback(() => {
+  }, [n, A, D, R]), B = i.useCallback(() => {
     (0, o.pT)(), (0, f.mK)({
       analyticsLocations: D,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
