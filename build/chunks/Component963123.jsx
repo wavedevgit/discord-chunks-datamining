@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk713447 = require("./713447.js"),
-  Chunk509442 = require("./509442.js"),
+  Chunk203463 = require("./203463.js"),
   Chunk574583 = require("./574583.js"),
   Chunk754700 = require("./754700.js"),
   Chunk442837 = require("./442837.js"),
@@ -170,7 +170,7 @@ function $(e) {
       timestampSec: 0,
       duration: 10
     }
-  }, c.X), e6 = (0, x.km)(e => e.setVideoProgress), e7 = (0, x.km)(e => e.muted), e9 = (0, x.km)(e => e.volume), e3 = (0, d.e7)([v.Z], () => v.Z.useReducedMotion), e5 = (0, o.useRef)(null), te = (0, o.useRef)(null), tt = o.useRef(true), tn = (null == (t = es.userStatus) ? true : t.completedAt) != null, [tr, to] = o.useState(null), [tl, ti] = o.useState(false), [ta, ts] = o.useState(false), [tc, tu] = o.useState(null), td = tn ? null != (I = null == (n = e5.current) ? true : n.duration) ? I : 0 : Math.max(e4.maxTimestampSec, eI.progressSeconds), tm = o.useMemo(() => (0, T.T)({
+  }, c.X), e6 = (0, x.km)(e => e.setVideoProgress), e7 = (0, x.km)(e => e.muted), e3 = (0, x.km)(e => e.volume), e9 = (0, d.e7)([v.Z], () => v.Z.useReducedMotion), e5 = (0, o.useRef)(null), te = (0, o.useRef)(null), tt = o.useRef(true), tn = (null == (t = es.userStatus) ? true : t.completedAt) != null, [tr, to] = o.useState(null), [tl, ti] = o.useState(false), [ta, ts] = o.useState(false), [tc, tu] = o.useState(null), td = tn ? null != (I = null == (n = e5.current) ? true : n.duration) ? I : 0 : Math.max(e4.maxTimestampSec, eI.progressSeconds), tm = o.useMemo(() => (0, T.T)({
     quest: es,
     location: U.dr.VIDEO_MODAL
   }), [es]), {
@@ -373,7 +373,7 @@ function $(e) {
     t7 = e => {
       tu(t => (null == t ? true : t.id) === e.id ? null : t)
     },
-    t9 = o.useCallback(() => {
+    t3 = o.useCallback(() => {
       if (null == e5.current || (tm.info("[QV] | handleTracksLoaded: textTracks.length: ".concat(e5.current.textTracks.length)), 0 === e5.current.textTracks.length)) return;
       let e = e5.current.textTracks[0];
       if (e.mode = "hidden", null != e.cues)
@@ -385,11 +385,11 @@ function $(e) {
   o.useEffect(() => {
     if (null == te.current) return;
     let e = te.current;
-    return e.addEventListener("load", t9), () => {
-      null != e && e.removeEventListener("load", t9)
+    return e.addEventListener("load", t3), () => {
+      null != e && e.removeEventListener("load", t3)
     }
-  }, [te, t9]);
-  let t3 = o.useCallback(e => {
+  }, [te, t3]);
+  let t9 = o.useCallback(e => {
       var t;
       tm.info("[QV] | logVideoError: errorType: ".concat(e, ", videoProgress: ").concat(null == (t = e5.current) ? true : t.currentTime, ", videoAssetId: ").concat(tC, ", connectionSpeed: ").concat(eU)), tk(e)
     }, [eU, tk, e5, tC, tm]),
@@ -428,16 +428,16 @@ function $(e) {
     var e, t;
     return no({
       captionHeightSpring: ep && null != tc && null != (t = null == (e = nn.current) ? true : e.clientHeight) ? t : 0,
-      immediate: e3
+      immediate: e9
     }), () => {
       nr.stop()
     }
-  }, [ep, no, e3, tc, nr]), o.useEffect(() => (nt({
+  }, [ep, no, e9, tc, nr]), o.useEffect(() => (nt({
     controlBarAnimSpring: t$ || eK ? 1 : 0,
-    immediate: e3
+    immediate: e9
   }), () => {
     ne.stop()
-  }), [t$, nt, e3, eK, ne]);
+  }), [t$, nt, e9, eK, ne]);
   let nl = ex === L.rq.ENDED,
     ni = (0, B.p)({
       quest: es,
@@ -523,7 +523,7 @@ function $(e) {
           tm.info("[QV] | handleLoadedData: loadingFirstChunk: ".concat(eL)), eL && (t_(null != e2.current ? performance.now() - e2.current : null), eV(false), null != tS.current && (tS.current.config.minAutoBitrate = 8e5))
         },
         onLoadedMetadata: e => {
-          null != e5.current && (tm.info("[QV] | handleLoadedMetadata | videoAssetId: ".concat(tC)), ti(true), tb !== R.n1.VIDEO_HLS && t8(tv), e7 ? e5.current.volume = 0 : e5.current.volume = e9)
+          null != e5.current && (tm.info("[QV] | handleLoadedMetadata | videoAssetId: ".concat(tC)), ti(true), tb !== R.n1.VIDEO_HLS && t8(tv), e7 ? e5.current.volume = 0 : e5.current.volume = e3)
         },
         onLoadStart: () => {
           e2.current = performance.now(), ty(eU), tm.info("[QV] | handleLoadStart | loadingStartTime: ".concat(e2.current))
@@ -555,10 +555,10 @@ function $(e) {
         onSeeked: () => {
           tm.info("[QV] | handleSeeked"), ts(true)
         },
-        onAbort: () => t3(L.CY.ABORT),
-        onError: () => t3(L.CY.ERROR),
-        onEmptied: () => t3(L.CY.EMPTIED),
-        onStalled: () => t3(L.CY.STALLED),
+        onAbort: () => t9(L.CY.ABORT),
+        onError: () => t9(L.CY.ERROR),
+        onEmptied: () => t9(L.CY.EMPTIED),
+        onStalled: () => t9(L.CY.STALLED),
         onClick: () => {
           tm.info("[QV] | handleVideoClick"), t4()
         },
@@ -571,7 +571,7 @@ function $(e) {
           srcLang: "en",
           default: true
         }), null != th && tb !== R.n1.VIDEO_HLS && (0, r.jsx)("source", {
-          onError: () => t3(L.CY.SOURCE_ERROR),
+          onError: () => t9(L.CY.SOURCE_ERROR),
           src: th.url,
           type: th.mimetype
         })]
