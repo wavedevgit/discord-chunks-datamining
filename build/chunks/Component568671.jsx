@@ -42,7 +42,7 @@ function _() {
       (0, Chunk481060.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([require.e("2892"), require.e("48168")]).then(require.bind(require, 978305));
+        } = await Promise.all([require.e("16828"), require.e("48168")]).then(require.bind(require, 978305));
         return t => (0, r.jsx)(e, f({}, t))
       }), Chunk626135.default.track(Chunk981631.rMx.FAMILY_CENTER_ACTION, {
         action: Chunk292352.YC.ShowQRCodeModal

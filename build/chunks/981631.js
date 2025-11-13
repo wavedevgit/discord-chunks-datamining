@@ -1795,7 +1795,7 @@ var t$ = function(e) {
     return e.TWITCH = "twitch", e.YOUTUBE = "youtube", e.SKYPE = "skype", e.STEAM = "steam", e.LEAGUE_OF_LEGENDS = "leagueoflegends", e.BATTLENET = "battlenet", e.BLUESKY = "bluesky", e.BUNGIE = "bungie", e.REDDIT = "reddit", e.TWITTER = "twitter", e.TWITTER_LEGACY = "twitter_legacy", e.SPOTIFY = "spotify", e.FACEBOOK = "facebook", e.XBOX = "xbox", e.SAMSUNG = "samsung", e.CONTACTS = "contacts", e.INSTAGRAM = "instagram", e.MASTODON = "mastodon", e.SOUNDCLOUD = "soundcloud", e.GITHUB = "github", e.PLAYSTATION = "playstation", e.PLAYSTATION_STAGING = "playstation-stg", e.EPIC_GAMES = "epicgames", e.RIOT_GAMES = "riotgames", e.ROBLOX = "roblox", e.PAYPAL = "paypal", e.EBAY = "ebay", e.TIKTOK = "tiktok", e.CRUNCHYROLL = "crunchyroll", e.DOMAIN = "domain", e.AMAZON_MUSIC = "amazon-music", e
   }({}),
   t0 = function(e) {
-    return e.DESKTOP = "desktop", e.XBOX = "xbox", e.SAMSUNG = "samsung", e.IOS = "ios", e.ANDROID = "android", e.EMBEDDED = "embedded", e.PS4 = "ps4", e.PS5 = "ps5", e
+    return e.DESKTOP = "desktop", e.XBOX = "xbox", e.SAMSUNG = "samsung", e.IOS = "ios", e.ANDROID = "android", e.EMBEDDED = "embedded", e.PS4 = "ps4", e.PS5 = "ps5", e.META_QUEST = "meta_quest", e
   }({}),
   t1 = function(e) {
     return e[e.PRIVATE = 0] = "PRIVATE", e[e.PUBLIC = 1] = "PUBLIC", e
