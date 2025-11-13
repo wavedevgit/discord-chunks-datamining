@@ -1,8 +1,8 @@
 /** Chunk was on 57336 **/
 /** chunk id: 207055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => U
-}), require("./388685.js"), require("./539854.js");
+  Z: () => H
+}), require("./388685.js"), require("./290780.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -18,6 +18,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk574176 = require("./574176.js"),
   Chunk106301 = require("./106301.js"),
   Chunk882522 = require("./882522.js"),
+  Chunk819349 = require("./819349.jsx"),
+  Chunk771027 = require("./771027.js"),
   Chunk512384 = require("./512384.jsx"),
   Chunk763624 = require("./763624.js"),
   Chunk463421 = require("./463421.js"),
@@ -37,41 +39,41 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk524484 = require("./524484.js"),
   Chunk968080 = require("./968080.js");
-let D = Chunk647438.memo(e => {
+let U = Chunk647438.memo(e => {
   var t, n, r, l;
   let {
     mute: a,
     deaf: s,
-    user: x,
-    channel: P,
-    sessionId: I,
-    nick: L
-  } = e, D = x.id, k = (0, o.e7)([O.default], () => O.default.getId() === D, [D]), [U, B, H] = (0, o.Wu)([S.Z], () => k ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(D), false, S.Z.isLocalVideoDisabled(D)], [k, D]), V = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(D)), F = (0, c.Z)({
-    userId: D,
+    user: y,
+    channel: C,
+    sessionId: O,
+    nick: Z
+  } = e, T = y.id, D = (0, o.e7)([S.default], () => S.default.getId() === T, [T]), [U, B, H] = (0, o.Wu)([I.Z], () => D ? [!I.Z.isSupported() || I.Z.isSelfMute() || I.Z.isSelfMutedTemporarily(), I.Z.isSelfDeaf(), false] : [!I.Z.isSupported() || I.Z.isLocalMute(T), false, I.Z.isLocalVideoDisabled(T)], [D, T]), V = (0, o.e7)([A.Z], () => A.Z.isPrioritySpeaker(T)), F = (0, c.Z)({
+    userId: T,
     checkSoundSharing: true
-  }), G = (0, o.e7)([T.Z], () => T.Z.isCurrentUserPTTLatched()), z = k && G, W = (0, o.e7)([E.ZP], () => E.ZP.isGuestOrLurker(P.guild_id, D)), q = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(P.id).has(D)), K = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).find(e => {
+  }), G = (0, o.e7)([A.Z], () => A.Z.isCurrentUserPTTLatched()), z = D && G, W = (0, o.e7)([P.ZP], () => P.ZP.isGuestOrLurker(C.guild_id, T)), q = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(C.id).has(T)), K = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(C.id).find(e => {
     let {
       userIds: t
     } = e;
-    return t.has(D)
-  }), [D, P.id]), Y = (0, p.Z)(null != K ? [K.applicationId] : []), X = (0, v.Z)(D, P.guild_id)[0], J = null != (n = (0, d.IX)(null == X ? true : X.application_id).data) ? n : true, [Q, $] = (0, o.Wu)([j.Z], () => [j.Z.getStreamForUser(D, P.getGuildId()), j.Z.getActiveStreamForUser(D, P.getGuildId())], [P, D]), ee = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(I)), et = A.ZP.useName(x), en = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(P.id, D), [P.id, D]), {
+    return t.has(T)
+  }), [T, C.id]), Y = (0, p.Z)(null != K ? [K.applicationId] : []), X = (0, x.Z)(T, C.guild_id)[0], J = null != (n = (0, d.IX)(null == X ? true : X.application_id).data) ? n : true, [Q, $] = (0, o.Wu)([E.Z], () => [E.Z.getStreamForUser(T, C.getGuildId()), E.Z.getActiveStreamForUser(T, C.getGuildId())], [C, T]), ee = (0, o.e7)([N.Z], () => N.Z.getSessionById(O)), et = M.ZP.useName(y), en = (0, o.e7)([w.Z], () => w.Z.getVoicePlatformForChannel(C.id, T), [C.id, T]), {
     enableHangStatus: ei
   } = (0, m.bN)({
-    guildId: P.guild_id,
+    guildId: C.guild_id,
     location: "VoiceUsers"
-  }), er = (0, f.ZP)(P, true, x), el = (0, o.e7)([g.Z], () => k ? g.Z.getHangStatusActivity() : null, [k]), ea = (0, b.j)(D), eo = (0, _.Eu)(P.id, D), {
+  }), er = (0, f.ZP)(C, true, y), el = (0, o.e7)([g.Z], () => D ? g.Z.getHangStatusActivity() : null, [D]), ea = (0, b.j)(T), eo = (0, j.Eu)(C.id, T), {
     enableVCStatusIcons: es,
     enableRequestToStream: ec
-  } = C.A.useExperiment({
-    guildId: P.guild_id,
+  } = _.A.useExperiment({
+    guildId: C.guild_id,
     location: "VoiceUsers"
   }, {
     autoTrackExposure: (null == X ? true : X.session_id) != null
   });
-  return (0, i.jsx)(y.Z, {
-    shakeLocation: R.oZ.VOICE_USER,
+  return (0, i.jsx)(v.Z, {
+    shakeLocation: k.oZ.VOICE_USER,
     isShaking: F,
-    children: (0, i.jsx)(w.ZP, (r = function(e) {
+    children: (0, i.jsx)(R.ZP, (r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -89,12 +91,12 @@ let D = Chunk647438.memo(e => {
       }
       return e
     }({}, e), l = l = {
-      nick: null != L ? L : et,
+      nick: null != Z ? Z : et,
       canDrag: e.canDrag && !W,
       disconnected: eo,
       otherClientSessionType: null == ee || null == (t = ee.clientInfo) ? true : t.os,
       voicePlatform: en,
-      localMute: U && !k,
+      localMute: U && !D,
       localVideoDisabled: H,
       mute: a || U,
       deaf: s || B,
@@ -103,14 +105,14 @@ let D = Chunk647438.memo(e => {
       ringing: q,
       priority: V,
       embeddedApplication: Y[0],
-      isStreaming: null != Q && Q.channelId === P.id,
-      isWatching: null != $ && $.state !== M.jm8.ENDED,
+      isStreaming: null != Q && Q.channelId === C.id,
+      isWatching: null != $ && $.state !== L.jm8.ENDED,
       isGuest: W,
-      isSelf: k,
+      isSelf: D,
       requestToStreamActivity: ec ? X : true,
       application: (es || ei) && (null == X ? true : X.session_id) != null ? J : true,
-      showHangStatus: er && ei && (k || null != ea),
-      hangStatusActivity: k ? el : ea
+      showHangStatus: er && ei && (D || null != ea),
+      hangStatusActivity: D ? el : ea
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -123,9 +125,9 @@ let D = Chunk647438.memo(e => {
     }), r))
   })
 });
-D.displayName = "ConnectedVoiceUser";
-let k = [],
-  U = function(e) {
+U.displayName = "ConnectedVoiceUser";
+let B = [],
+  H = function(e) {
     let {
       allowPreviews: t = true,
       allowDragging: n = true,
@@ -137,33 +139,36 @@ let k = [],
       location: m,
       numAudience: g,
       withGuildIcon: b = false,
-      className: y,
-      children: C,
-      isThread: v = false
-    } = e, [j, E] = r.useState(null), [S, Z] = r.useState(false), T = r.useRef(null), N = (0, _.Es)(l.id, null != c ? c : k), A = r.useRef(new s.sW(50, () => {
-      E(T.current), T.current = null
-    })), R = r.useRef(new s.sW(175, () => {
-      E(null)
-    })), U = r.useCallback(e => {
-      t && (Z(true), R.current.cancel(), T.current = e, A.current.delay())
-    }, [t]), B = r.useCallback(e => {
-      t && (A.current.cancel(), j === e && (Z(false), R.current.delay()))
-    }, [t, j]), H = (0, o.Wu)([I.Z], () => {
+      className: v,
+      children: _,
+      isThread: x = false
+    } = e, [E, P] = r.useState(null), [I, N] = r.useState(false), A = r.useRef(null), w = (0, j.Es)(l.id, null != c ? c : B), {
+      shouldShow: M,
+      dismiss: k
+    } = (0, C.Lb)(l), H = r.useRef(new s.sW(50, () => {
+      P(A.current), A.current = null
+    })), V = r.useRef(new s.sW(175, () => {
+      P(null)
+    })), F = r.useCallback(e => {
+      t && (N(true), V.current.cancel(), A.current = e, H.current.delay())
+    }, [t]), G = r.useCallback(e => {
+      t && (H.current.cancel(), E === e && (N(false), V.current.delay()))
+    }, [t, E]), z = (0, o.Wu)([T.Z], () => {
       if (u) return [];
       let e = new Set;
-      return null == N || N.forEach(t => {
+      return null == w || w.forEach(t => {
         let {
           user: n
         } = t;
-        I.Z.getActivities(n.id, l.guild_id).forEach(t => {
+        T.Z.getActivities(n.id, l.guild_id).forEach(t => {
           null != t.application_id && e.add(t.application_id)
         })
       }), Array.from(e)
     });
-    (0, p.Z)(H);
-    let V = (() => {
-      if (null == N || 0 === N.length) return null;
-      let e = u && N.length > d + 1 ? N.slice(0, d) : N,
+    (0, p.Z)(z);
+    let W = (() => {
+      if (null == w || 0 === w.length) return null;
+      let e = u && w.length > d + 1 ? w.slice(0, d) : w,
         t = h.Z.getGuildRingingUsers(l.id),
         r = e.map(e => {
           var r;
@@ -172,10 +177,10 @@ let k = [],
             nick: o,
             voiceState: s
           } = e, c = t.has(a.id);
-          return (0, i.jsx)(D, {
+          return (0, i.jsx)(U, {
             user: a,
             nick: o,
-            isSelfOnOtherClient: O.default.getId() === a.id && s.sessionId !== O.default.getSessionId(),
+            isSelfOnOtherClient: S.default.getId() === a.id && s.sessionId !== S.default.getSessionId(),
             mute: s.isVoiceMuted(),
             deaf: s.isVoiceDeafened(),
             video: s.selfVideo,
@@ -184,29 +189,32 @@ let k = [],
             sessionId: null != (r = s.sessionId) ? r : "",
             channel: l,
             collapsed: u,
-            canDrag: n && P.Z.can(M.Plq.MOVE_MEMBERS, l),
-            showPreview: U,
-            hidePreview: B,
-            previewIsOpen: S,
-            shouldShowHoverPopout: j === a.id,
+            canDrag: n && Z.Z.can(L.Plq.MOVE_MEMBERS, l),
+            showPreview: F,
+            hidePreview: G,
+            previewIsOpen: I,
+            shouldShowHoverPopout: E === a.id,
             tabIndex: f,
             location: m
           }, "voice-user-".concat(a.id, "-").concat(c))
         });
-      return null != g && g > 0 ? r.push((0, i.jsx)(w.ul, {
+      return M && r.unshift((0, i.jsx)(y.S, {
+        channel: l,
+        onClose: k
+      }, "voice-invite-suggestions-button")), null != g && g > 0 ? r.push((0, i.jsx)(R.ul, {
         collapsed: u,
         numAudience: g
-      })) : u && N.length > d + 1 && r.push((0, i.jsx)(w.XX, {
-        numUsers: N.length - d
+      })) : u && w.length > d + 1 && r.push((0, i.jsx)(R.XX, {
+        numUsers: w.length - d
       })), r
     })();
-    return null == V && null == C ? null : (0, i.jsxs)(x.eJ, {
-      className: a()(y, L.list, {
-        [L.collapsed]: u,
-        [L.withGuildIcon]: b,
-        [L.isThread]: v
+    return null == W && null == _ ? null : (0, i.jsxs)(O.eJ, {
+      className: a()(v, D.list, {
+        [D.collapsed]: u,
+        [D.withGuildIcon]: b,
+        [D.isThread]: x
       }),
       collapsed: u,
-      children: [V, C]
+      children: [W, _]
     })
   }

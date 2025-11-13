@@ -1,12 +1,12 @@
-/** Chunk was on 14323 **/
+/** Chunk was on 18295 **/
 /** chunk id: 216306, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Fo: () => S,
   KY: () => L,
   Uo: () => _,
-  fU: () => C,
-  qw: () => T,
-  tn: () => P
+  fU: () => P,
+  qw: () => Z,
+  tn: () => C
 }), require("./290780.js");
 var Chunk647438 = require("./647438.js"),
   Chunk658722 = require("./658722.js"),
@@ -50,7 +50,7 @@ function S(e, t, n, i) {
         channel: r
       } = n;
       "null" === r.id && (e.null = t.null.filter(e => s(e, i))), e[r.id] = t[r.id].filter(e => s(e, i))
-    }), e._categories = t._categories.filter(t => "null" === t.channel.id || 0 === i.length || e[t.channel.id].length > 0), (0, u.Z)(e._categories, e).forEach(N), e
+    }), e._categories = t._categories.filter(t => "null" === t.channel.id || 0 === i.length || e[t.channel.id].length > 0), (0, d.Z)(e._categories, e).forEach(N), e
   }, [t, n, s, i])
 }
 
@@ -74,14 +74,14 @@ function L(e) {
 
 function _(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null;
-  (0, f.n)(e, t), (0, d.y5)(t.map(e => ({
+  (0, f.n)(e, t), (0, u.y5)(t.map(e => ({
     channelId: e,
     readStateType: w.W.CHANNEL,
     messageId: O.ZP.lastMessageId(e)
   }))), null != n && (0, v.uL)(j.Z5c.CHANNEL(e, n))
 }
 
-function P(e, t, n, r) {
+function C(e, t, n, r) {
   let i = (0, h.Nj)(c.z.CHANNEL_BROWSER_NUX),
     l = (0, o.cj)([m.Z], () => {
       let t = {},
@@ -110,7 +110,7 @@ function P(e, t, n, r) {
   }), a
 }
 
-function C(e) {
+function P(e) {
   var t, n;
   let r = (0, o.e7)([D.Z], () => D.Z.getCategories(e)),
     i = r._categories.length,
@@ -120,7 +120,7 @@ function C(e) {
   return null == a ? 0 : 0 === a.length ? l.index + 2 - i : a[a.length - 1].index + 2 - i
 }
 
-function T(e) {
+function Z(e) {
   var t;
   return E.intl.formatToPlainString(E.t["8N0BHR"], {
     timeAgo: s()(b.default.extractTimestamp(null != (t = O.ZP.lastMessageId(e)) ? t : e)).fromNow()

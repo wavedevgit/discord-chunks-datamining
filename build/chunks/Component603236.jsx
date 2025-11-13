@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 /** chunk id: 603236, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => E,
+  I: () => y,
   S: () => f
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
@@ -33,14 +33,14 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     } = e;
     return (0, i.jsx)(u.Z, {
       value: t,
-      hideMessage: l ? S.intl.string(S.t["6HzNgZ"]) : null,
+      hideMessage: l ? x.intl.string(x.t["6HzNgZ"]) : null,
       buttonColor: a.zx.Colors.BRAND,
       onCopy: s,
       autoFocus: n,
       disabled: r
     })
   }),
-  E = e => {
+  y = e => {
     let {
       guild: t,
       noInvitesAvailable: n,
@@ -48,8 +48,8 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       onClose: a,
       modalState: u,
       isApplicationBypassToggleEnabled: c,
-      setInviteFlags: E,
-      copyValue: y,
+      setInviteFlags: y,
+      copyValue: E,
       changePage: C,
       inviteChannel: _,
       source: b,
@@ -58,8 +58,8 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       disabled: A,
       application: P
     } = e, {
-      maxAge: Z,
-      maxUses: M,
+      maxAge: M,
+      maxUses: Z,
       networkError: w,
       showVanityURL: j,
       flags: V
@@ -77,27 +77,27 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     return (0, i.jsxs)(o.Kqy, {
       gap: 16,
       children: [(0, i.jsx)(f, {
-        value: y,
+        value: E,
         autoFocus: r,
         onCopy: O,
         disabled: A
       }), c && (0, i.jsx)(o.rsf, {
         checked: (0, h.yE)(V, s.$.IS_APPLICATION_BYPASS),
-        onChange: e => E((0, h.mB)(V, s.$.IS_APPLICATION_BYPASS, e)),
+        onChange: e => y((0, h.mB)(V, s.$.IS_APPLICATION_BYPASS, e)),
         disabled: A,
-        label: S.intl.string(S.t["1i1bUl"]),
-        description: S.intl.string(S.t["jvd/LF"])
+        label: x.intl.string(x.t["1i1bUl"]),
+        description: x.intl.string(x.t["jvd/LF"])
       }), n || j ? null : (0, i.jsxs)(o.Text, {
         variant: "text-xs/normal",
-        className: x.footerText,
-        children: [(0, v.Vg)(Z, M), " ", r ? (0, i.jsx)(o.Anchor, {
+        className: S.footerText,
+        children: [(0, v.Vg)(M, Z), " ", r ? (0, i.jsx)(o.Anchor, {
           onClick: () => C(I.RV.SETTINGS),
-          children: S.intl.string(S.t["VNe8P/"])
+          children: x.intl.string(x.t["VNe8P/"])
         }) : null]
       }), !n && r && j ? (0, i.jsxs)(o.Text, {
         variant: "text-xs/normal",
-        className: x.footerText,
-        children: [S.intl.string(S.t["0M2U95"]), " "]
+        className: S.footerText,
+        children: [x.intl.string(x.t["0M2U95"]), " "]
       }) : null, null != w ? (0, i.jsx)(p.W, {
         guild: t,
         error: w,

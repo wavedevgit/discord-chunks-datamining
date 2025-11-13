@@ -119,7 +119,7 @@ class ed extends(i = Chunk647438.PureComponent) {
       maxAge: p,
       maxUses: I,
       temporary: m,
-      flags: x
+      flags: S
     } = Chunk775086;
     if (Chunk951288) {
       let n = null == module ? true : module.id;
@@ -476,7 +476,7 @@ class ed extends(i = Chunk647438.PureComponent) {
       };
       "" === e && "" !== n.query ? (l.sectionVisibility = es({}, n.defaultSectionVisibility), l.defaultSectionVisibility = {}) : "" !== e && "" === n.query && (l.defaultSectionVisibility = es({}, n.sectionVisibility), l.sectionVisibility = {}), null == (t = this._scroller) || t.scrollTo({
         to: 0
-      }), (0, x.C)(e), i(l)
+      }), (0, S.C)(e), i(l)
     }), el(this, "handleClearSearch", () => {
       this.handleQueryChange("")
     }), el(this, "handleToggleMaxAge", () => {
@@ -614,20 +614,20 @@ let eg = Chunk647438.forwardRef(function(e, t) {
     analyticsLocation: m
   } = e, {
     analyticsLocations: b
-  } = (0, y.ZP)(E.Z.INSTANT_INVITE_MODAL), T = (0, v.e7)([G.Z, w.Z, j.ZP], () => {
+  } = (0, E.ZP)(y.Z.INSTANT_INVITE_MODAL), T = (0, v.e7)([G.Z, w.Z, j.ZP], () => {
     if (null != r) return r;
     let e = G.Z.getChannelId(),
       t = null == e || (0, ee.AB)(e) ? true : w.Z.getChannel(e);
     return (null == t ? true : t.isThread()) && (t = w.Z.getChannel(t.parent_id)), null != t ? t : j.ZP.getDefaultChannel(a.id, true, X.Plq.CREATE_INSTANT_INVITE)
   }, [r, a.id]), P = null;
   null != d ? P = $.Iq.STREAM : null != c && (P = $.Iq.EMBEDDED_APPLICATION);
-  let Z = null != r ? r.getGuildId() : null != a ? a.id : null,
+  let M = null != r ? r.getGuildId() : null != a ? a.id : null,
     U = (0, H.xU)({
-      guildId: Z,
+      guildId: M,
       location: "InstantInviteModalConnected"
     }),
     k = (0, H.WV)({
-      guildId: Z,
+      guildId: M,
       location: "InstantInviteModalConnected"
     }),
     F = (0, v.e7)([V.Z], () => {
@@ -641,15 +641,15 @@ let eg = Chunk647438.forwardRef(function(e, t) {
     {
       isFriendsInVCInvitesEnabled: W
     } = (0, q.am)({
-      guildId: null != Z ? Z : true,
+      guildId: null != M ? M : true,
       location: "instant_invite_modal",
       autoTrackExposure: true
     }),
     [z, Y, Q, J] = (0, v.Wu)([O.Z, D.ZP], () => [O.Z.getInviteSuggestionRows(), O.Z.getTotalSuggestionsCount() >= 1, O.Z.getInitialCounts(), null != r && null != T ? D.ZP.getVoiceStatesForChannel(T) : null], [T, r]),
     et = s.useMemo(() => {
       let e = null != T ? T.id : null;
-      return null != Z ? M.ZP.getProps(Z, e) : true
-    }, [T, Z]),
+      return null != M ? Z.ZP.getProps(M, e) : true
+    }, [T, M]),
     en = (0, v.e7)([R.Z], () => null != T && R.Z.can(X.Plq.CREATE_INSTANT_INVITE, T), [T]),
     ei = null === F || !en,
     el = (null == T ? true : T.type) === X.d4z.GUILD_VOICE,
@@ -661,14 +661,14 @@ let eg = Chunk647438.forwardRef(function(e, t) {
           user: n
         } = t;
         e.add(n.id)
-      }) : null != Z && null != et && P !== $.Iq.EMBEDDED_APPLICATION && et.rows.forEach(t => {
-        t.type === M.so.MEMBER && e.add(t.userId)
+      }) : null != M && null != et && P !== $.Iq.EMBEDDED_APPLICATION && et.rows.forEach(t => {
+        t.type === Z.so.MEMBER && e.add(t.userId)
       }), e
-    }, [el, et, d, J, Z, P]),
+    }, [el, et, d, J, M, P]),
     eg = null == r ? true : r.id,
     eh = (0, v.e7)([A.Z], () => A.Z.getStageInstanceByChannel(eg), [eg]);
   s.useEffect(() => {
-    (0, x.x)({
+    (0, S.x)({
       omitUserIds: ec,
       guild: a,
       channel: r,
@@ -676,21 +676,21 @@ let eg = Chunk647438.forwardRef(function(e, t) {
       inviteTargetType: P
     }).catch(X.VqG)
   }, [ec, r, a, c, P]);
-  let [ev] = (0, C.Z)(null != c ? [c] : []), ep = null != F ? F.code : true, eI = null == F ? true : F.maxAge, em = null == F ? true : F.maxUses, eS = null == F ? true : F.temporary, ex = a.vanityURLCode, ef = null != ex && ex.length > 0, eE = !en && !(null == T ? true : T.isGuildVocal()) && ef, ey = null != (n = null == F ? true : F.flags) ? n : 0;
+  let [ev] = (0, C.Z)(null != c ? [c] : []), ep = null != F ? F.code : true, eI = null == F ? true : F.maxAge, em = null == F ? true : F.maxUses, ex = null == F ? true : F.temporary, eS = a.vanityURLCode, ef = null != eS && eS.length > 0, ey = !en && !(null == T ? true : T.isGuildVocal()) && ef, eE = null != (n = null == F ? true : F.flags) ? n : 0;
   en || (null == eh ? true : eh.invite_code) == null || (ep = eh.invite_code);
-  let eC = s.useMemo(() => W && el ? (0, B.Qq)(z, Z) : null, [W, el, z, Z]),
+  let eC = s.useMemo(() => W && el ? (0, B.Qq)(z, M) : null, [W, el, z, M]),
     [e_, eb] = s.useState({
       query: "",
       maxAgeOptions: k,
       maxAge: null != (i = null != eI ? eI : U) ? i : H.zv,
       savedMaxAge: eI === ea.value ? null != U ? U : eo.value : ea.value,
       maxUses: null != em && 0 !== em ? em : eu.value,
-      temporary: null != eS && eS,
+      temporary: null != ex && ex,
       networkError: true,
-      showVanityURL: eE,
+      showVanityURL: ey,
       currentPage: null != I ? I : $.RV.MAIN,
       lastPage: true,
-      flags: ey,
+      flags: eE,
       sectionVisibility: {},
       defaultSectionVisibility: {}
     }),
@@ -703,7 +703,7 @@ let eg = Chunk647438.forwardRef(function(e, t) {
         lastPage: e_.currentPage
       })
     }, [e_.currentPage, eT]),
-    eA = el && !eE && !ei && !er,
+    eA = el && !ey && !ei && !er,
     {
       enabled: eP
     } = N.o.useExperiment({
@@ -713,8 +713,8 @@ let eg = Chunk647438.forwardRef(function(e, t) {
       autoTrackExposure: eA
     }),
     {
-      maxAge: eZ,
-      maxUses: eM,
+      maxAge: eM,
+      maxUses: eZ,
       temporary: ew,
       savedMaxAge: ej,
       flags: eV
@@ -728,15 +728,15 @@ let eg = Chunk647438.forwardRef(function(e, t) {
     }, [eN, e_, p]),
     eR = s.useCallback(() => {
       let e = null == T ? true : T.id;
-      0 === eM && 0 === eZ && !ew && eE ? eT({
+      0 === eZ && 0 === eM && !ew && ey ? eT({
         networkError: true,
         showVanityURL: true
       }) : en && null != e && (eT({
         networkError: true,
         showVanityURL: false
-      }), S.ZP.createInvite(e, {
-        max_age: eZ,
-        max_uses: eM,
+      }), x.ZP.createInvite(e, {
+        max_age: eM,
+        max_uses: eZ,
         target_type: P,
         target_user_id: d,
         target_application_id: null == ev ? true : ev.id,
@@ -744,23 +744,23 @@ let eg = Chunk647438.forwardRef(function(e, t) {
         flags: eV
       }, o).catch(e => eT({
         networkError: e,
-        showVanityURL: eE
-      }))), eZ !== ea.value && ej !== ea.value && eT({
+        showVanityURL: ey
+      }))), eM !== ea.value && ej !== ea.value && eT({
         savedMaxAge: ea.value
       })
-    }, [eE, en, T, o, null == ev ? true : ev.id, P, d, eZ, eM, ew, eT, ej, eV]),
+    }, [ey, en, T, o, null == ev ? true : ev.id, P, d, eM, eZ, ew, eT, ej, eV]),
     eU = (0, f.Z)(T),
     eG = (0, f.Z)((0, L.yE)(eV, g.$.IS_APPLICATION_BYPASS)),
     ek = null != eU && eU !== T,
     eD = null != eG && eG !== (0, L.yE)(eV, g.$.IS_APPLICATION_BYPASS);
   s.useEffect(() => {
-    !eE && (ek || eD) && eR()
-  }, [eR, ek, eD, eE]);
+    !ey && (ek || eD) && eR()
+  }, [eR, ek, eD, ey]);
   let {
     canCreateApplicationBypassInvites: eF,
     isManualApprovalGuild: eL
   } = (0, K.R)(a);
-  return (0, l.jsx)(y.Gt, {
+  return (0, l.jsx)(E.Gt, {
     value: b,
     children: (0, l.jsx)(ed, {
       ref: t,
@@ -770,7 +770,7 @@ let eg = Chunk647438.forwardRef(function(e, t) {
       guild: a,
       guildScheduledEvent: u,
       streamUserId: d,
-      vanityURLCode: ex,
+      vanityURLCode: eS,
       targetType: P,
       targetUserId: d,
       application: ev,
@@ -785,7 +785,7 @@ let eg = Chunk647438.forwardRef(function(e, t) {
       analyticsLocation: m,
       transitionState: h,
       onClose: p,
-      canShowVanityURL: eE,
+      canShowVanityURL: ey,
       isGuestInviteCreationToggleEnabled: eP && eA,
       shouldHideTemporaryInviteToggle: eP && eA || eL,
       modalState: e_,

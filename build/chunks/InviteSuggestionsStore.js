@@ -2,7 +2,7 @@
 /** chunk id: 751771, original params: e,t,n (module,exports,require) **/
 let i, l, s, r, a, o;
 require.d(exports, {
-  Z: () => Z
+  Z: () => M
 }), require("./388685.js"), require("./642613.js");
 var u, d, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -33,12 +33,12 @@ function N(e) {
     guildId: null == s ? true : s.id,
     location: "InviteSuggestionsStore",
     autoTrackExposure: false
-  }), n = new Set, i = (null == r ? true : r.type) === E.d4z.GUILD_VOICE, l = null;
-  null == s || o === y.Iq.EMBEDDED_APPLICATION || t && i || (l = s.id);
+  }), n = new Set, i = (null == r ? true : r.type) === y.d4z.GUILD_VOICE, l = null;
+  null == s || o === E.Iq.EMBEDDED_APPLICATION || t && i || (l = s.id);
   let a = (0, m.rh)(C, l);
   for (let e of (null == a || f.Z.isBlockedOrIgnored(a.id) || n.add(a.id), p.Z.getUserAffinities())) n.add(e.otherUserId);
   let u = new Set;
-  return o === y.Iq.EMBEDDED_APPLICATION && v.Z.getChannelHistory().map(e => S.Z.getChannel(e)).filter(I.lm).filter(e => e.type === E.d4z.GUILD_TEXT).filter(e => x.Z.can(E.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => u.add(e.id)), (0, m.an)({
+  return o === E.Iq.EMBEDDED_APPLICATION && v.Z.getChannelHistory().map(e => x.Z.getChannel(e)).filter(I.lm).filter(e => e.type === y.d4z.GUILD_TEXT).filter(e => S.Z.can(y.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => u.add(e.id)), (0, m.an)({
     query: e,
     omitUserIds: C,
     suggestedUserIds: n,
@@ -86,7 +86,7 @@ class P extends(u = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : P[d] = "InviteSuggestionsStore";
-let Z = new P(Chunk570140.Z, {
+let M = new P(Chunk570140.Z, {
   LOAD_INVITE_SUGGESTIONS: function(e) {
     let {
       omitUserIds: t,

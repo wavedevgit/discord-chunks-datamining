@@ -23,8 +23,8 @@ let a = e => {
   } = e, {
     maxAgeOptions: I,
     maxAge: m,
-    maxUses: S,
-    temporary: x,
+    maxUses: x,
+    temporary: S,
     flags: f
   } = n;
   return (0, i.jsx)(l.u, {
@@ -46,8 +46,8 @@ let a = e => {
       shouldHideTemporaryInviteToggle: a,
       maxAgeOptions: I,
       maxAge: m,
-      maxUses: S,
-      temporary: x,
+      maxUses: x,
+      temporary: S,
       onToggleTemporary: u,
       onSelectMaxAge: d,
       onSelectMaxUses: c,

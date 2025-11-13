@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk334405 = require("./334405.js"),
   Chunk977007 = require("./977007.js");
 
-function k(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -86,7 +86,7 @@ function B(e) {
     location: "HangStatusPicker"
   }), X = (0, _.V)(K), J = r.useRef(null), [Q, $] = r.useState(null != (n = null == z ? true : z.status) ? n : ""), [ee, et] = r.useState(null != (l = null == z ? true : z.emoji) ? l : null), [en, ei] = r.useState(false), er = (0, u.e7)([v.Z], () => v.Z.getCurrentHangStatus()), el = X[er], ea = q.length > 0, eo = null == Q || "" === Q.trim(), es = (0, O.Z)(B), ec = Q.trim().length > 0 && Q.trim() !== (null == z || null == (t = z.status) ? true : t.trim()) || null != ee && !s()(ee, null == z ? true : z.emoji), [eu, ed] = r.useState(false), ep = (0, u.e7)([v.Z], () => v.Z.getFavoritedStatuses().length >= v.o), eh = Q.length > 0 || null != ee, [ef, em] = (0, m.US)([d.z.HANG_STATUS_POPOVER_NUX]);
   r.useEffect(() => {
-    b.default.track(A.rMx.HANG_STATUS_PICKER_OPENED, U(k({}, (0, x.Z)(B.id)), {
+    b.default.track(A.rMx.HANG_STATUS_PICKER_OPENED, U(D({}, (0, x.Z)(B.id)), {
       num_favorites: q.length,
       num_recents: W.length
     }))
@@ -140,7 +140,7 @@ function B(e) {
     }, [es, ee, B.id]),
     e_ = r.useCallback((e, t) => {
       let n = (0, j.Z)(t);
-      (!ep || e) && ((0, y.tg)(n ? t : t.status, n ? null : t.emoji), b.default.track(A.rMx.HANG_STATUS_FAVORITE_CLICKED, U(k({}, (0, x.Z)(B.id)), {
+      (!ep || e) && ((0, y.tg)(n ? t : t.status, n ? null : t.emoji), b.default.track(A.rMx.HANG_STATUS_FAVORITE_CLICKED, U(D({}, (0, x.Z)(B.id)), {
         favorited: !e
       })))
     }, [B.id, ep]),
@@ -198,7 +198,7 @@ function B(e) {
       shouldShow: ef === d.z.HANG_STATUS_POPOVER_NUX,
       graphic: {
         type: "image",
-        src: D.Z
+        src: k.Z
       },
       targetElementRef: J,
       onRequestClose: () => em(w.L.DISMISS)
