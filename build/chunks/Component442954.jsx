@@ -151,7 +151,7 @@ let j = {
     } = await require.e("51749").then(require.bind(require, 800740));
     return t => (0, a.jsx)(e, v(b({}, t), {
       mediaEngineContext: l.Yn.DEFAULT,
-      title: "Voice Settings"
+      subtitle: "Devtools subtitle"
     }))
   },
   DynamicGraphicDemo: async () => {

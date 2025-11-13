@@ -145,8 +145,8 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
               default: e
             } = await n.e("51749").then(n.bind(n, 800740));
             return t => {
-              var n, i;
-              return (0, r.jsx)(e, (n = function(e) {
+              var n, i, s;
+              return (0, r.jsx)(e, (i = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);
@@ -163,22 +163,19 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
                   })
                 }
                 return e
-              }({}, t), i = i = {
+              }({}, t), s = s = {
                 mediaEngineContext: a,
-                title: l.application.name,
-                onClose: () => {
-                  t.onClose()
-                }
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+                subtitle: null != (n = l.application.name) ? n : true
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                   var r = Object.getOwnPropertySymbols(e);
                   n.push.apply(n, r)
                 }
                 return n
-              })(Object(i)).forEach(function(e) {
-                Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-              }), n))
+              })(Object(s)).forEach(function(e) {
+                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+              }), i))
             }
           }, {
             contextKey: o === b.IlC.POPOUT ? i.u1M : i.z1l,

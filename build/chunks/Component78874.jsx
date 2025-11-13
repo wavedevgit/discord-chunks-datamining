@@ -18,9 +18,9 @@ var Chunk442837 = require("./442837.js"),
 
 function p(t, e) {
   let n = (0, i.e7)([a.ZP], () => a.ZP.getRunningVerifiedApplicationIds().includes(t.id), [t.id]),
-    p = (0, i.e7)([o.Z, b.Z, u.Z, c.Z], () => (0, s.t)({
+    p = (0, i.e7)([o.Z, d.Z, u.Z, c.Z], () => (0, s.t)({
       LibraryApplicationStore: o.Z,
-      LaunchableGameStore: b.Z,
+      LaunchableGameStore: d.Z,
       DispatchApplicationStore: u.Z,
       ConnectedAppsStore: c.Z,
       applicationId: t.id,
@@ -29,7 +29,7 @@ function p(t, e) {
   return n || !p ? null : (0, r.jsx)(l.sNh, {
     id: "launch",
     label: f.intl.string(f.t.XKUw8m),
-    action: () => d.playApplication(t.id, t, {
+    action: () => b.playApplication(t.id, t, {
       analyticsParams: {
         location: e
       }

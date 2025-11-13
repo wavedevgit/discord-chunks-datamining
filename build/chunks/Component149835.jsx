@@ -41,9 +41,9 @@ function O(t, e) {
   if (n && !t.isHidden()) return null;
 
   function y() {
-    let e = (0, d.x9)(t.getFlags(), b.eHb.HIDDEN);
-    c.h(t.id, t.branchId, e), s.default.track(b.rMx.APPLICATION_SETTINGS_UPDATED, p({
-      hidden_enabled: (0, d.yE)(e, b.eHb.HIDDEN)
+    let e = (0, b.x9)(t.getFlags(), d.eHb.HIDDEN);
+    c.h(t.id, t.branchId, e), s.default.track(d.rMx.APPLICATION_SETTINGS_UPDATED, p({
+      hidden_enabled: (0, b.yE)(e, d.eHb.HIDDEN)
     }, t.getAnalyticsData()))
   }
   return (0, r.jsx)(a.sNh, {

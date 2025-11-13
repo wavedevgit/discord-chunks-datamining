@@ -411,7 +411,7 @@ class el extends(i = Chunk647438.PureComponent) {
         } = await n.e("51749").then(n.bind(n, 800740));
         return n => (0, r.jsx)(s, es(er({}, n), {
           mediaEngineContext: e,
-          title: null != t ? null : i
+          subtitle: null != t ? true : i
         }))
       })
     }), ei(this, "handlePin", () => {

@@ -63,7 +63,7 @@ function Z(t) {
     onSelect: c
   } = t, o = I(v({}, null != i ? i.location : null), {
     object: j.qAy.CONTEXT_MENU
-  }), u = (0, f.Z)(n, o), Z = (0, p.Z)(n), S = (0, y.Z)(n), A = (0, h.Z)(n), m = (0, g.Z)(n), E = (0, b.Z)(n, e), w = (0, O.Z)(n, e), T = (0, s.Z)(n, e), D = (0, d.Z)(e);
+  }), u = (0, f.Z)(n, o), Z = (0, p.Z)(n), S = (0, y.Z)(n), A = (0, h.Z)(n), m = (0, g.Z)(n), E = (0, d.Z)(n, e), w = (0, O.Z)(n, e), T = (0, s.Z)(n, e), D = (0, b.Z)(e);
   return (0, r.jsxs)(l.v2r, {
     navId: "game-context",
     onClose: a.Zy,
