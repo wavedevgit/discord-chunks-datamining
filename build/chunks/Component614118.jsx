@@ -2,13 +2,14 @@
 /** chunk id: 614118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk100527 = require("./100527.js"),
   Chunk602733 = require("./602733.js"),
   Chunk594174 = require("./594174.js"),
   Chunk55563 = require("./55563.js"),
@@ -24,72 +25,76 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk54602 = require("./54602.js");
 
-function v(e) {
-  var t, n, v, I, T, S, A, C;
+function I(e) {
+  var t, n, I, T, S, A, C, N;
   let {
-    guildId: N,
-    skuId: R,
-    channel: P
-  } = e, D = (0, o.e7)([d.Z], () => d.Z.isFetchingForSKU(R)), w = (0, o.e7)([u.Z], () => u.Z.get(R)), x = null == w ? true : w.applicationId;
-  (0, l.p2)();
-  let L = (0, o.e7)([c.default], () => P.isDM() && null != P.recipients && 0 !== P.recipients.length ? c.default.getUser(P.recipients[0]) : null),
+    guildId: R,
+    skuId: P,
+    channel: D
+  } = e, w = (0, o.e7)([f.Z], () => f.Z.isFetchingForSKU(P)), x = (0, o.e7)([d.Z], () => d.Z.get(P)), L = null == x ? true : x.applicationId;
+  (0, c.p2)();
+  let M = (0, o.e7)([u.default], () => D.isDM() && null != D.recipients && 0 !== D.recipients.length ? u.default.getUser(D.recipients[0]) : null),
     {
-      primaryIconAsset: M,
-      primaryIconLabel: j
-    } = i.useMemo(() => (0, _.FE)(w, x), [w, x]);
+      primaryIconAsset: j,
+      primaryIconLabel: k
+    } = i.useMemo(() => (0, p.FE)(x, L), [x, L]);
   i.useEffect(() => {
-    null == N || null == R || d.Z.isFetchingForSKU(R) || (0, p.y)(N, R)
-  }, [N, R]);
-  let k = i.useCallback(e => {
-      e.stopPropagation(), (null == w ? true : w.applicationId) != null && null != N && (0, h.g)({
-        skuId: R,
-        applicationId: w.applicationId,
-        guildId: N,
+    null == R || null == P || f.Z.isFetchingForSKU(P) || (0, h.y)(R, P)
+  }, [R, P]);
+  let U = i.useCallback(e => {
+      e.stopPropagation(), (null == x ? true : x.applicationId) != null && null != R && (0, m.g)({
+        skuId: P,
+        applicationId: x.applicationId,
+        guildId: R,
         isStorefront: false
       })
-    }, [R, null == w ? true : w.applicationId, N]),
-    U = i.useCallback(() => {
-      null != w && (0, m.P)(w, {
-        isGift: false
-      })
-    }, [w]),
+    }, [P, null == x ? true : x.applicationId, R]),
     G = i.useCallback(() => {
-      null != w && (0, m.P)(w, {
-        isGift: true,
-        giftRecipient: null != L ? L : true
+      null != x && (0, g.P)(x, {
+        isGift: false
+      }, {
+        analyticsLocations: [l.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_PURCHASE_BUTTON]
       })
-    }, [w, L]);
-  return D && null == w ? (0, r.jsx)("div", {
-    className: O.container,
+    }, [x]),
+    B = i.useCallback(() => {
+      null != x && (0, g.P)(x, {
+        isGift: true,
+        giftRecipient: null != M ? M : true
+      }, {
+        analyticsLocations: [l.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_GIFT_BUTTON]
+      })
+    }, [x, M]);
+  return w && null == x ? (0, r.jsx)("div", {
+    className: v.container,
     children: (0, r.jsx)(s.$jN, {
-      className: O.spinner
+      className: v.spinner
     })
-  }) : null == w ? null : (0, r.jsxs)("div", {
-    className: O.container,
-    children: [(0, r.jsx)(E.C, {
-      className: O.card,
-      applicationId: w.applicationId,
-      skuId: R,
-      variant: E.Z.EMBEDDED,
-      onClick: k
+  }) : null == x ? null : (0, r.jsxs)("div", {
+    className: v.container,
+    children: [(0, r.jsx)(b.C, {
+      className: v.card,
+      applicationId: x.applicationId,
+      skuId: P,
+      variant: b.Z.EMBEDDED,
+      onClick: U
     }), (0, r.jsxs)("div", {
-      className: O.details,
+      className: v.details,
       children: [(0, r.jsxs)("div", {
-        className: O.detailsTitleDescription,
+        className: v.detailsTitleDescription,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/bold",
           lineClamp: 1,
-          children: w.name
+          children: x.name
         }), (0, r.jsxs)("div", {
-          className: O.detailsDescription,
-          children: [null != M && (0, r.jsx)("img", {
-            src: M.toString(),
-            alt: j,
-            className: O.iconAsset
+          className: v.detailsDescription,
+          children: [null != j && (0, r.jsx)("img", {
+            src: j.toString(),
+            alt: k,
+            className: v.iconAsset
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/semibold",
             lineClamp: 1,
-            children: (0, f.T4)(null != (T = null == (t = w.price) ? true : t.amount) ? T : 0, null != (S = null == (n = w.price) ? true : n.currency) ? S : b.pK.USD)
+            children: (0, _.T4)(null != (S = null == (t = x.price) ? true : t.amount) ? S : 0, null != (A = null == (n = x.price) ? true : n.currency) ? A : y.pK.USD)
           })]
         })]
       }), (0, r.jsxs)(a.hE2, {
@@ -97,18 +102,18 @@ function v(e) {
         fullWidth: true,
         children: [(0, r.jsx)(a.zxk, {
           variant: "secondary",
-          onClick: k,
-          text: y.intl.string(y.t.KLBTgF),
+          onClick: U,
+          text: O.intl.string(O.t.KLBTgF),
           fullWidth: true
         }), (0, r.jsx)(a.zxk, {
           variant: "primary",
-          onClick: U,
-          text: y.intl.format(y.t.Xp5WTn, {
-            price: (0, f.T4)(null != (A = null == (v = w.price) ? true : v.amount) ? A : 0, null != (C = null == (I = w.price) ? true : I.currency) ? C : b.pK.USD)
+          onClick: G,
+          text: O.intl.format(O.t.Xp5WTn, {
+            price: (0, _.T4)(null != (C = null == (I = x.price) ? true : I.amount) ? C : 0, null != (N = null == (T = x.price) ? true : T.currency) ? N : y.pK.USD)
           }),
           fullWidth: true
-        }), (0, r.jsx)(g.Z, {
-          onGift: G
+        }), (0, r.jsx)(E.Z, {
+          onGift: B
         })]
       })]
     })]

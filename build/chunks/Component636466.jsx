@@ -1,8 +1,8 @@
 /** Chunk was on 14953 **/
 /** chunk id: 636466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => S,
-  J: () => C
+  B: () => E,
+  J: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,6 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk952265 = require("./952265.js"),
   Chunk907862 = require("./907862.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk100527 = require("./100527.js"),
   Chunk728345 = require("./728345.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk766717 = require("./766717.jsx"),
@@ -24,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk758650 = require("./758650.js"),
   Chunk976218 = require("./976218.js");
 
-function j(e) {
+function v(e) {
   let {
     targetElementRef: t,
     onRequestClose: n,
@@ -41,24 +42,24 @@ function j(e) {
     align: "center",
     onRequestClose: n,
     actions: [{
-      text: y.intl.string(y.t.RzWDqY),
+      text: O.intl.string(O.t.RzWDqY),
       variant: "primary",
       onClick: i
     }],
     targetElementRef: t,
-    title: y.intl.string(y.t.qh9t5c),
-    body: y.intl.string(y.t.iM6fxV),
+    title: O.intl.string(O.t.qh9t5c),
+    body: O.intl.string(O.t.iM6fxV),
     graphic: true
   })
 }
 
-function v(e) {
+function C(e) {
   var t, n, {
       showPopover: o,
       onViewWishlist: c,
       onCardClick: d
     } = e,
-    f = function(e, t) {
+    u = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -75,19 +76,19 @@ function v(e) {
     }(e, ["showPopover", "onViewWishlist", "onCardClick"]);
   let g = i.useRef(null),
     m = (0, s.f9)(),
-    _ = (0, l.e7)([h.Z], () => h.Z.hasLayers()),
-    [y, O] = (0, u.US)([a.z.GAME_SHOP_WISHLIST_POPOVER], b.R.SIDEBAR, true),
+    b = (0, l.e7)([f.Z], () => f.Z.hasLayers()),
+    [y, O] = (0, p.US)([a.z.GAME_SHOP_WISHLIST_POPOVER], _.R.SIDEBAR, true),
     x = i.useCallback(() => {
-      O(b.L.USER_DISMISS), d()
+      O(_.L.USER_DISMISS), d()
     }, [d, O]),
-    v = i.useCallback(() => {
-      O(b.L.USER_DISMISS)
+    j = i.useCallback(() => {
+      O(_.L.USER_DISMISS)
     }, [O]),
     C = i.useCallback(() => {
-      O(b.L.USER_DISMISS), c()
+      O(_.L.USER_DISMISS), c()
     }, [c, O]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(p.Z, (t = function(e) {
+    children: [(0, r.jsx)(h.Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -104,7 +105,7 @@ function v(e) {
         })
       }
       return e
-    }({}, f), n = n = {
+    }({}, u), n = n = {
       onCardClick: x,
       ref: g
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -116,15 +117,15 @@ function v(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), o && y === a.z.GAME_SHOP_WISHLIST_POPOVER && !m && !_ && (0, r.jsx)(j, {
+    }), t)), o && y === a.z.GAME_SHOP_WISHLIST_POPOVER && !m && !b && (0, r.jsx)(v, {
       targetElementRef: g,
-      onRequestClose: v,
+      onRequestClose: j,
       onActionClick: C
     })]
   })
 }
 
-function C(e, t) {
+function I(e, t) {
   let {
     index: n,
     moreCount: i,
@@ -133,22 +134,24 @@ function C(e, t) {
     profileOwner: s,
     analyticsLocations: o,
     wishlistId: c
-  } = t, d = null != i && i > 0, u = d ? y.intl.string(y.t.TxBQzD) : y.intl.string(y.t.ilhtIa);
-  return (0, r.jsx)(v, {
+  } = t, u = null != i && i > 0, p = u ? O.intl.string(O.t.TxBQzD) : O.intl.string(O.t.ilhtIa);
+  return (0, r.jsx)(C, {
     onCardClick: () => {
-      if (d) return void l();
-      (0, f.P)(e.sku, {
+      if (u) return void l();
+      (0, g.P)(e.sku, {
         isGift: true,
         giftRecipient: s,
-        giftingOrigin: _.Wt.USER_PROFILE_WISHLIST
+        giftingOrigin: y.Wt.USER_PROFILE_WISHLIST
+      }, {
+        analyticsLocations: [d.Z.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
       })
     },
-    tooltipText: u,
+    tooltipText: p,
     shouldScalePreview: false,
-    renderPreview: () => (0, r.jsx)(g.A, {
-      containerClassName: O.card,
-      backgroundImageClassName: O.cardBackgroundImage,
-      foregroundImageClassName: O.cardImage,
+    renderPreview: () => (0, r.jsx)(m.A, {
+      containerClassName: x.card,
+      backgroundImageClassName: x.cardBackgroundImage,
+      foregroundImageClassName: x.cardImage,
       sku: e.sku,
       shape: "custom"
     }),
@@ -157,33 +160,35 @@ function C(e, t) {
     skuId: e.skuId,
     analyticsLocations: o,
     wishlistId: c,
-    showPopover: 0 === n && e.sku.applicationId === m.t9,
+    showPopover: 0 === n && e.sku.applicationId === b.t9,
     onViewWishlist: l
   }, e.skuId)
 }
 
-function I(e) {
+function S(e) {
   let {
     item: t,
     card: n,
     profileOwner: i
   } = e, {
     data: l
-  } = (0, d.IX)(t.sku.applicationId);
+  } = (0, u.IX)(t.sku.applicationId);
   return (0, r.jsxs)("div", {
-    className: x.singleItemContainer,
+    className: j.singleItemContainer,
     children: [n, (0, r.jsx)("div", {
-      className: x.singleItemInfo,
+      className: j.singleItemInfo,
       children: (0, r.jsxs)(c.P3F, {
         onClick: () => {
-          (0, f.P)(t.sku, {
+          (0, g.P)(t.sku, {
             isGift: true,
             giftRecipient: i,
-            giftingOrigin: _.Wt.USER_PROFILE_WISHLIST
+            giftingOrigin: y.Wt.USER_PROFILE_WISHLIST
+          }, {
+            analyticsLocations: [d.Z.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
           })
         },
-        className: x.singleItemName,
-        "aria-label": y.intl.string(y.t.ilhtIa),
+        className: j.singleItemName,
+        "aria-label": O.intl.string(O.t.ilhtIa),
         children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
@@ -192,7 +197,7 @@ function I(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: y.intl.format(y.t["CqpEC+"], {
+          children: O.intl.format(O.t["CqpEC+"], {
             applicationName: null == l ? true : l.name
           })
         })]
@@ -201,13 +206,13 @@ function I(e) {
   })
 }
 
-function S(e, t) {
+function E(e, t) {
   let {
     profileOwner: n,
     analyticsLocations: i,
     wishlistId: l,
     onViewWishlist: a
-  } = t, s = C(e, {
+  } = t, s = I(e, {
     index: 0,
     profileOwner: n,
     analyticsLocations: i,
@@ -215,7 +220,7 @@ function S(e, t) {
     isSingleCard: true,
     wishlistId: l
   });
-  return (0, r.jsx)(I, {
+  return (0, r.jsx)(S, {
     item: e,
     card: s,
     profileOwner: n

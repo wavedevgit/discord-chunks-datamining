@@ -22,7 +22,10 @@ function d(e) {
     variant: "fixed",
     onClose: t,
     "aria-label": "DevTools Actions",
-    children: [i, u]
+    children: [i, (0, r.jsx)(l.kSQ, {
+      "aria-label": "Playgrounds",
+      children: u
+    })]
   })
 }
 

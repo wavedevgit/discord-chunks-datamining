@@ -279,7 +279,7 @@ function q(e) {
 }
 
 function X() {
-  return Promise.all([require.e("13193"), require.e("32249"), require.e("24875")]).then(require.bind(require, 536687))
+  return Promise.all([require.e("13193"), require.e("75909"), require.e("38746")]).then(require.bind(require, 215113))
 }
 
 function Q(e) {
@@ -397,7 +397,7 @@ function en(e) {
   (0, s.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("74990"), n.e("16794")]).then(n.bind(n, 570387));
+    } = await Promise.all([n.e("74990"), n.e("53145")]).then(n.bind(n, 627080));
     return n => (0, r.jsx)(t, k(M({}, n), {
       questId: e.id,
       questName: e.config.messages.questName

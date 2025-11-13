@@ -1,4 +1,4 @@
-/** Chunk was on 32249 **/
+/** Chunk was on 75909 **/
 /** chunk id: 82328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   v: () => r
@@ -29,7 +29,7 @@ class r {
   static getAppVersion() {
     try {
       var e;
-      return (e = "468018", true !== module) ? module : "unknown"
+      return (e = "468039", true !== module) ? module : "unknown"
     } catch (e) {
       return "unknown"
     }
