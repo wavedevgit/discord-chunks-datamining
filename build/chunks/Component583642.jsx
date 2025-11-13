@@ -213,7 +213,8 @@ let C = Chunk647438.forwardRef(function(e, t) {
       children: (0, r.jsx)(u.hGg, {
         onSelect: f,
         maxDate: l()().local(),
-        minDate: S
+        minDate: S,
+        calendarClassName: T.calendar
       })
     })
   }),
