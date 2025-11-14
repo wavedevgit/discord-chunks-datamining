@@ -1,15 +1,15 @@
 /** Chunk was on 29709 **/
 /** chunk id: 46145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => g
 }), require("./388685.js"), require("./290780.js");
-var i, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk592125 = require("./592125.js"),
   Chunk271383 = require("./271383.js"),
   Chunk430824 = require("./430824.js");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,32 +17,32 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = [],
+let c = [],
   d = new Set;
-class f extends(i = Chunk442837.ZP.PersistedStore) {
+class p extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(s.ZP, o.Z, a.Z), d = new Set([...u = null != (t = null == e ? true : e.channelHistory) ? t : []])
+    this.waitFor(o.ZP, a.Z, s.Z), d = new Set([...c = null != (t = null == e ? true : e.channelHistory) ? t : []])
   }
   getState() {
     return {
-      channelHistory: u
+      channelHistory: c
     }
   }
   getChannelHistory() {
-    return u
+    return c
   }
 }
-c(f, "displayName", "RecentVoiceChannelStore"), c(f, "persistKey", "RecentVoiceChannelStore");
-let p = new f(Chunk570140.Z, {
+u(p, "displayName", "RecentVoiceChannelStore"), u(p, "persistKey", "RecentVoiceChannelStore");
+let g = new p(Chunk570140.Z, {
   POST_CONNECTION_OPEN: function() {
-    d = new Set([...u])
+    d = new Set([...c])
   },
   VOICE_CHANNEL_SELECT: function(e) {
     var t, n;
     let {
-      channelId: i
+      channelId: r
     } = e;
-    return null != i && !!(null != (n = null == (t = a.Z.getChannel(i)) ? true : t.isVocal()) && n) && (d.has(i) ? ((u = u.filter(e => e !== i)).unshift(i), d = new Set([...u])) : (u.unshift(i), d.add(i)), u.length > 10 && (u.length = 10, d = new Set([...u])), true)
+    return null != r && !!(null != (n = null == (t = s.Z.getChannel(r)) ? true : t.isVocal()) && n) && (d.has(r) ? ((c = c.filter(e => e !== r)).unshift(r), d = new Set([...c])) : (c.unshift(r), d.add(r)), c.length > 10 && (c.length = 10, d = new Set([...c])), true)
   }
 })

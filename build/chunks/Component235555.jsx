@@ -54,7 +54,7 @@ class E extends Chunk647438.PureComponent {
       (0, o.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
+        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("74820")]).then(n.bind(n, 881351));
         return n => (0, r.jsx)(e, function(e, t) {
           return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);

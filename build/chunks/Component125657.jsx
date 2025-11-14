@@ -1,7 +1,7 @@
 /** Chunk was on 86736 **/
 /** chunk id: 125657, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,44 +17,53 @@ var Chunk951288 = require("./951288.js"),
   Chunk598077 = require("./598077.js"),
   Chunk271383 = require("./271383.js"),
   Chunk485386 = require("./485386.js"),
+  Chunk768581 = require("./768581.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk144645 = require("./144645.js");
 
-function j(e) {
+function v(e) {
   var t;
   let {
     guild: n,
-    applicationIntegration: j
+    applicationIntegration: v
   } = e, {
-    application: v
-  } = j, O = null != v.bot ? new b.Z(v.bot) : null, y = (0, a.e7)([g.ZP], () => null != O ? g.ZP.getMember(n.id, O.id) : null, [O, n]), _ = (0, a.e7)([f.Z], () => f.Z.getEveryoneRole(n)), C = (0, a.Wu)([f.Z], () => {
+    application: O
+  } = v, y = null != O.bot ? new b.Z(O.bot) : null, _ = (0, a.e7)([g.ZP], () => null != y ? g.ZP.getMember(n.id, y.id) : null, [y, n]), C = (0, a.e7)([f.Z], () => f.Z.getEveryoneRole(n)), N = (0, a.Wu)([f.Z], () => {
     var e;
-    return f.Z.getManyRoles(n.id, null != (e = null == y ? true : y.roles) ? e : [])
-  }), N = null == O ? true : O.id;
+    return f.Z.getManyRoles(n.id, null != (e = null == _ ? true : _.roles) ? e : [])
+  }), S = null == y ? true : y.id;
   r.useEffect(() => {
-    null != N && s.Z.requestMembersById(n.id, N)
-  }, [n.id, N]);
-  let S = r.useMemo(() => l.$e(_.permissions, ...C.map(e => e.permissions)), [C, _]);
-  return null == O ? null : (0, i.jsx)(o.Zbd, {
+    null != S && s.Z.requestMembersById(n.id, S)
+  }, [n.id, S]);
+  let E = r.useMemo(() => l.$e(C.permissions, ...N.map(e => e.permissions)), [N, C]);
+  if (null == y) return null;
+  let I = h.ZP.getApplicationIconURL({
+    id: O.id,
+    guildMember: _,
+    bot: O.bot,
+    icon: O.icon,
+    size: 32
+  });
+  return (0, i.jsx)(o.Zbd, {
     editable: true,
-    className: x.card,
+    className: j.card,
     children: (0, i.jsxs)(p.Z, {
       direction: p.Z.Direction.VERTICAL,
       children: [(0, i.jsxs)(p.Z, {
         align: p.Z.Align.CENTER,
         children: [(0, i.jsx)("img", {
           alt: "",
-          src: O.getAvatarURL(n.id, 32),
-          className: x.iconWrapper
+          src: I,
+          className: j.iconWrapper
         }), (0, i.jsx)(o.Text, {
           color: "header-primary",
           variant: "text-sm/normal",
-          children: h.intl.format(h.t.GyhzGw, {
-            user: O.toString()
+          children: x.intl.format(x.t.GyhzGw, {
+            user: y.toString()
           })
         }), (0, i.jsx)(u.Z, {
-          className: x.tag,
-          verified: O.isVerifiedBot()
+          className: j.tag,
+          verified: y.isVerifiedBot()
         })]
       }), function(e, t, n, r) {
         let a = [],
@@ -62,13 +71,13 @@ function j(e) {
         for (let e of m.VY) l.e$(r, e) ? a.push(e) : s.push(e);
         return (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(o.izJ, {
-            className: x.divider
+            className: j.divider
           }), n.length > 0 ? (0, i.jsx)(o.gNt, {
-            label: h.intl.format(h.t.PCs0oo, {
+            label: x.intl.format(x.t.PCs0oo, {
               numRoles: n.length
             }),
             children: (0, i.jsx)(c.ZP, {
-              className: x.rolePills,
+              className: j.rolePills,
               user: e,
               guild: t,
               userRoleIds: n,
@@ -77,12 +86,12 @@ function j(e) {
             })
           }) : null, a.length > 0 || s.length > 0 ? (0, i.jsx)(d.Z, {
             grantedPermissions: a,
-            grantedPermissionsHeader: h.intl.string(h.t["hA4+su"]),
+            grantedPermissionsHeader: x.intl.string(x.t["hA4+su"]),
             disabledPermissions: s,
-            disabledPermissionsHeader: h.intl.string(h.t["/rEZ2i"])
+            disabledPermissionsHeader: x.intl.string(x.t["/rEZ2i"])
           }) : null]
         })
-      }(O, n, null != (t = null == y ? true : y.roles) ? t : [], S)]
+      }(y, n, null != (t = null == _ ? true : _.roles) ? t : [], E)]
     })
   })
 }

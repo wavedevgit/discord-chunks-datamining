@@ -309,12 +309,12 @@ function M(e) {
   else return p.ub.APP
 }
 
-function k(e, t) {
-  var n, r;
+function k(e, t, n) {
+  var r, i;
   return {
     type: p.Qi.APPLICATION,
     id: e.id,
-    name: null != (r = null == e || null == (n = e.bot) ? true : n.username) ? r : e.name,
+    name: null != (i = null != n ? n : null == e || null == (r = e.bot) ? true : r.username) ? i : e.name,
     icon: e.icon,
     application: e,
     isUserApp: null != t && t

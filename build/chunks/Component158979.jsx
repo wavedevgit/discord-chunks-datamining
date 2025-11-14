@@ -1,6 +1,5 @@
 /** Chunk was on 63141 **/
 /** chunk id: 158979, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => y
 });
@@ -88,9 +87,9 @@ function y(e) {
         onNotificationClick: (e, t) => {
           b("unlock");
           let c = (0, a.getPID)();
-          s.Z.updateNotificationStatus(t);
-          let u = o.default.isOverlayOOPEnabledForPid(c);
-          if (u ? s.Z.setInputLocked(false, c) : s.Z.setInstanceLocked(false), null == l.default.getCurrentUser()) return;
+          o.Z.updateNotificationStatus(t);
+          let u = l.default.isOverlayOOPEnabledForPid(c);
+          if (u ? o.Z.setInputLocked(false, c) : o.Z.setInstanceLocked(false), null == s.default.getCurrentUser()) return;
           let h = u ? {
             contextKey: r.u1M
           } : true;
@@ -115,7 +114,7 @@ function y(e) {
       let {
         game: t
       } = e, {
-        trackView: l,
+        trackView: s,
         trackClick: p
       } = (0, c.R)(u.n0.GoLiveNonVoiceNudge, {
         notif_type: u.n0.GoLiveNonVoiceNudge
@@ -129,14 +128,14 @@ function y(e) {
         hint: () => (0, i.jsx)(m, {}),
         renderFooter: () => (0, i.jsx)(m, {}),
         onNotificationShow: () => {
-          l()
+          s()
         },
         onNotificationClick: (e, t) => {
           p("unlock");
-          let l = (0, a.getPID)();
-          s.Z.updateNotificationStatus(t);
-          let c = o.default.isOverlayOOPEnabledForPid(l);
-          c ? s.Z.setInputLocked(false, l) : s.Z.setInstanceLocked(false);
+          let s = (0, a.getPID)();
+          o.Z.updateNotificationStatus(t);
+          let c = l.default.isOverlayOOPEnabledForPid(s);
+          c ? o.Z.setInputLocked(false, s) : o.Z.setInstanceLocked(false);
           let u = c ? {
             contextKey: r.u1M
           } : true;
@@ -145,7 +144,7 @@ function y(e) {
               default: e
             } = await Promise.all([n.e("4093"), n.e("47863"), n.e("33641")]).then(n.bind(n, 60594));
             return t => (0, i.jsx)(e, g(f({}, t), {
-              sourcePID: l,
+              sourcePID: s,
               selectSource: false,
               selectGuild: true,
               analyticsLocation: d.Sbl.OVERLAY_NUDGE

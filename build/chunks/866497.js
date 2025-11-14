@@ -1,6 +1,5 @@
 /** Chunk was on 63141 **/
 /** chunk id: 866497, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   container: "container__350af",
   clickBlocker: "clickBlocker__350af",

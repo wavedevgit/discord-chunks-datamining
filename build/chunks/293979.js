@@ -57,11 +57,12 @@ function L(e) {
         id: e.id,
         icon: e.icon,
         botIconFirst: true,
-        bot: null != n ? e.bot : true
+        bot: null != n ? e.bot : true,
+        guildMember: n
       });
     return {
       applicationIconURL: r,
-      applicationName: null != n && null != e.bot ? e.bot.username : e.name,
+      applicationName: (null == n ? true : n.nick) != null ? n.nick : null != e.bot ? e.bot.username : e.name,
       applicationBaseUrl: (0, p.ZP)(e.id)
     }
   }, [e.id, e.icon, e.name, e.bot])

@@ -58,7 +58,7 @@ function O(e) {
     transitionState: n,
     onClose: O,
     analyticsData: y
-  } = e, _ = (0, a.e7)([s.Z], () => s.Z.getGuild(t), [t]), C = !!(null == _ ? true : _.features.has(f.GuildFeatures.INVITES_DISABLED)), [N] = r.useState(false), [S, E] = r.useState(g.Fl), w = (0, a.e7)([m.Z], () => m.Z.getGuildIncident(t)), I = (0, u.BT)(_), P = (0, p.SG)(w) || C, T = (0, p.sN)(w), [Z, k] = r.useState(P), [D, A] = r.useState(T), [R, L] = r.useState(false), M = Z !== P || D !== T || R, U = C && !I;
+  } = e, _ = (0, a.e7)([s.Z], () => s.Z.getGuild(t), [t]), C = !!(null == _ ? true : _.features.has(f.GuildFeatures.INVITES_DISABLED)), [N] = r.useState(false), [S, E] = r.useState(g.Fl), I = (0, a.e7)([m.Z], () => m.Z.getGuildIncident(t)), P = (0, u.BT)(_), w = (0, p.SG)(I) || C, T = (0, p.sN)(I), [Z, k] = r.useState(w), [A, D] = r.useState(T), [R, L] = r.useState(false), M = Z !== w || A !== T || R, U = C && !P;
   if (null == _) return O(), null;
 
   function B() {
@@ -75,9 +75,9 @@ function O(e) {
     }, {
       text: h.intl.string(h.t["pwm/z0"]),
       onClick: () => {
-        (P || T) && !Z && !D ? ((0, d.n)(_.id, false, false), (0, o.ZDy)(() => Promise.resolve(e => (0, i.jsx)(b.default, v(j({}, e), {
+        (w || T) && !Z && !A ? ((0, d.n)(_.id, false, false), (0, o.ZDy)(() => Promise.resolve(e => (0, i.jsx)(b.default, v(j({}, e), {
           guildId: t
-        }))))) : (0, d.n)(_.id, Z, D, S);
+        }))))) : (0, d.n)(_.id, Z, A, S);
         let {
           source: e,
           alertType: n,
@@ -88,8 +88,8 @@ function O(e) {
           source: e,
           raid_alert_id: r,
           raid_alert_type: n,
-          intervention_type_enabled: (0, p.sO)(Z, D),
-          intervention_type_disabled: (0, p.lk)(Z, D),
+          intervention_type_enabled: (0, p.sO)(Z, A),
+          intervention_type_disabled: (0, p.lk)(Z, A),
           duration: 60 * S
         }), O()
       },
@@ -150,9 +150,9 @@ function O(e) {
           className: x.toggle,
           children: (0, i.jsx)(o.rsf, {
             onChange: function() {
-              A(e => !e)
+              D(e => !e)
             },
-            checked: D
+            checked: A
           })
         })]
       })]

@@ -1,6 +1,5 @@
 /** Chunk was on 63141 **/
 /** chunk id: 71264, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   sidebar: "sidebar__9835e",
   children: "children__9835e",

@@ -1,32 +1,32 @@
-/** Chunk was on 72615 **/
-/** chunk id: 86392, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 76802 **/
+/** chunk id: 86392, original params: t,e,i (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  p: () => c
+  p: () => o
 });
 var Chunk573654 = require("./573654.js");
 
-function i(e, n, t) {
-  return n in e ? Object.defineProperty(e, n, {
-    value: t,
+function r(t, e, i) {
+  return e in t ? Object.defineProperty(t, e, {
+    value: i,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[n] = t, e
+  }) : t[e] = i, t
 }
 var a = false,
-  o = false,
-  c = function() {
-    var e;
+  s = false,
+  o = function() {
+    var t;
 
-    function n(e) {
-      if (!(this instanceof n)) throw TypeError("Cannot call a class as a function");
-      i(this, "internalMonitor", true), i(this, "sourceId", null), this.internalMonitor = e.getMonitor()
+    function e(t) {
+      if (!(this instanceof e)) throw TypeError("Cannot call a class as a function");
+      r(this, "internalMonitor", true), r(this, "sourceId", null), this.internalMonitor = t.getMonitor()
     }
-    return e = [{
+    return t = [{
         key: "receiveHandlerId",
-        value: function(e) {
-          this.sourceId = e
+        value: function(t) {
+          this.sourceId = t
         }
       }, {
         key: "getHandlerId",
@@ -47,27 +47,27 @@ var a = false,
         key: "isDragging",
         value: function() {
           if (!this.sourceId) returnfalse;
-          (0, Chunk573654.k)(!o, "You may not call monitor.isDragging() inside your isDragging() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
+          (0, Chunk573654.k)(!s, "You may not call monitor.isDragging() inside your isDragging() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
           try {
-            return o = true, this.internalMonitor.isDraggingSource(this.sourceId)
+            return s = true, this.internalMonitor.isDraggingSource(this.sourceId)
           } finally {
-            o = false
+            s = false
           }
         }
       }, {
         key: "subscribeToStateChange",
-        value: function(e, n) {
-          return this.internalMonitor.subscribeToStateChange(e, n)
+        value: function(t, e) {
+          return this.internalMonitor.subscribeToStateChange(t, e)
         }
       }, {
         key: "isDraggingSource",
-        value: function(e) {
-          return this.internalMonitor.isDraggingSource(e)
+        value: function(t) {
+          return this.internalMonitor.isDraggingSource(t)
         }
       }, {
         key: "isOverTarget",
-        value: function(e, n) {
-          return this.internalMonitor.isOverTarget(e, n)
+        value: function(t, e) {
+          return this.internalMonitor.isOverTarget(t, e)
         }
       }, {
         key: "getTargetIds",
@@ -86,18 +86,18 @@ var a = false,
         }
       }, {
         key: "subscribeToOffsetChange",
-        value: function(e) {
-          return this.internalMonitor.subscribeToOffsetChange(e)
+        value: function(t) {
+          return this.internalMonitor.subscribeToOffsetChange(t)
         }
       }, {
         key: "canDragSource",
-        value: function(e) {
-          return this.internalMonitor.canDragSource(e)
+        value: function(t) {
+          return this.internalMonitor.canDragSource(t)
         }
       }, {
         key: "canDropOnTarget",
-        value: function(e) {
-          return this.internalMonitor.canDropOnTarget(e)
+        value: function(t) {
+          return this.internalMonitor.canDropOnTarget(t)
         }
       }, {
         key: "getItemType",
@@ -145,10 +145,10 @@ var a = false,
           return this.internalMonitor.getDifferenceFromInitialOffset()
         }
       }],
-      function(e, n) {
-        for (var t = 0; t < n.length; t++) {
-          var r = n[t];
-          r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
+      function(t, e) {
+        for (var i = 0; i < e.length; i++) {
+          var n = e[i];
+          n.enumerable = n.enumerable || false, n.configurable = true, "value" in n && (n.writable = true), Object.defineProperty(t, n.key, n)
         }
       }(exports.prototype, module), exports
   }()

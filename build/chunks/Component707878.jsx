@@ -1,6 +1,5 @@
 /** Chunk was on 63141 **/
 /** chunk id: 707878, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => b
 }), require("./388685.js");
@@ -20,12 +19,12 @@ let g = Object.values(Chunk987650.wF).map(e => 100 * e),
   m = (0, Chunk313201.hQ)();
 class y extends Chunk647438.PureComponent {
   handleUpdateBackgroundOpacity(e) {
-    l.Z.setTextWidgetOpacity((0, d.Z)(e / 100)), l.Z.track(h.rMx.OVERLAY_SETTINGS_UPDATED, {
+    s.Z.setTextWidgetOpacity((0, d.Z)(e / 100)), s.Z.track(h.rMx.OVERLAY_SETTINGS_UPDATED, {
       text_opacity_slider: e
     })
   }
   handlePreviewBackgroundOpacity(e) {
-    l.Z.setTextWidgetOpacity((0, d.Z)(e / 100))
+    s.Z.setTextWidgetOpacity((0, d.Z)(e / 100))
   }
   render() {
     return (0, Chunk951288.jsx)("div", {

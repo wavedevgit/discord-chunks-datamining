@@ -1,13 +1,12 @@
 /** Chunk was on 63141 **/
 /** chunk id: 649561, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => L
 }), require("./388685.js"), require("./358797.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk818405 = require("./818405.js"),
@@ -85,11 +84,11 @@ class k extends Chunk647438.PureComponent {
         theme: Chunk981631.BRd.DARK,
         children: r => (0, i.jsxs)(p.P3F, {
           innerRef: this.contentDomRef,
-          className: o()(r, P.container),
+          className: l()(r, P.container),
           onClick: e => e.stopPropagation(),
           children: [(0, i.jsx)(y.ZP, {
             expand: true,
-            icon: (0, i.jsx)(v.Z, {
+            icon: (0, i.jsx)(_.Z, {
               width: 40,
               height: 40,
               className: P.notificationIcon
@@ -100,11 +99,11 @@ class k extends Chunk647438.PureComponent {
             onConfirmClick: this.handleReload,
             onDismissClick: this.hideNotification,
             locked: false
-          }), n && null != e ? (0, i.jsxs)(Z.ZP, {
+          }), n && null != e ? (0, i.jsxs)(x.ZP, {
             className: P.stackTrace,
-            children: [(0, i.jsx)(Z.ZP.Bar, {
+            children: [(0, i.jsx)(x.ZP.Bar, {
               children: "Error Details"
-            }), (0, i.jsx)(Z.ZP.Content, {
+            }), (0, i.jsx)(x.ZP.Content, {
               className: P.stackTraceCode,
               children: (0, i.jsx)("code", {
                 className: P.code,
@@ -180,7 +179,7 @@ class A extends Chunk647438.PureComponent {
         pid: i
       }]
     }), setImmediate(() => window.addEventListener("click", D));
-    let s = (0, E.V6)(e, x.gl.Hook, {
+    let o = (0, E.V6)(e, S.gl.Hook, {
       extra: t
     });
     f.Z.track(C.rMx.APP_CRASHED, {
@@ -188,7 +187,7 @@ class A extends Chunk647438.PureComponent {
       extra: t,
       error_message: e.message,
       error_stack: e.stack,
-      sentry_issue_id: s,
+      sentry_issue_id: o,
       error_level: "fatal"
     }), R()
   }

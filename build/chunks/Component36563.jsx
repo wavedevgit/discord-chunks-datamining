@@ -123,7 +123,7 @@ function I(e) {
         onContextMenu: t => (0, d.jW)(t, async () => {
           let {
             default: t
-          } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
+          } = await Promise.all([n.e("79695"), n.e("69220"), n.e("77635")]).then(n.bind(n, 881351));
           return n => (0, r.jsx)(t, y(E({}, n), {
             user: e,
             guildId: s,

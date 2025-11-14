@@ -1,12 +1,12 @@
 /** Chunk was on 29709 **/
 /** chunk id: 388380, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-let a = {
+let s = {
   async fetch() {
     try {
       let e = await Chunk544891.tn.get({
@@ -24,7 +24,7 @@ let a = {
     }
   },
   ignore(e) {
-    i.tn.del({
+    r.tn.del({
       url: l.ANM.FRIEND_SUGGESTION(e),
       rejectWithError: true
     })

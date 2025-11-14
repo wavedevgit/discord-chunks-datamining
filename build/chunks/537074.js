@@ -1,6 +1,5 @@
 /** Chunk was on 63141 **/
 /** chunk id: 537074, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   privateChannels: "privateChannels_ee924e",
   searchBar: "searchBar_ee924e",

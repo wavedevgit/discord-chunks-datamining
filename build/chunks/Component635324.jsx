@@ -1,6 +1,5 @@
 /** Chunk was on 63141 **/
 /** chunk id: 635324, original params: e,t,n (module,exports,require) **/
-"use strict";
 require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk149765 = require("./149765.js"),
@@ -19,13 +18,13 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
     var n, i, r = function(e, t) {
       if (null == e) return {};
       var n, i, r = {},
-        s = Object.keys(e);
-      for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        o = Object.keys(e);
+      for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
       return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var s = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
   }(e.authorizeProps, ["authorizations", "permissions"]);
@@ -35,16 +34,16 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
     let {
       location: n
     } = e;
-    o.Z.dispatch({
+    l.Z.dispatch({
       type: "OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE",
       clientId: t,
       location: n
     })
   }
-  let p = l.Hn;
+  let p = s.Hn;
   try {
     p = r.vB(null != c ? c : 0)
-  } catch (e) {}(0, s.ZDy)(async () => {
+  } catch (e) {}(0, o.ZDy)(async () => {
     let {
       OAuth2AuthorizeModal: e
     } = await Promise.resolve().then(n.bind(n, 69580));
@@ -85,7 +84,7 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
   }, {
     modalKey: u,
     onCloseRequest: () => {
-      (0, s.Mr3)(u), h({})
+      (0, o.Mr3)(u), h({})
     }
   })
 })

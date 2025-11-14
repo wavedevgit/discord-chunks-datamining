@@ -1,9 +1,9 @@
 /** Chunk was on 29709 **/
 /** chunk id: 5254, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => I
 }), require("./388685.js");
-var i, Chunk392711 = require("./392711.js"),
+var r, Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -12,7 +12,7 @@ var i, Chunk392711 = require("./392711.js"),
   Chunk388380 = require("./388380.js"),
   Chunk72937 = require("./72937.js");
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,10 +20,10 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = {},
-  g = 0,
+let g = {},
+  f = 0,
   h = false,
-  y = false;
+  O = false;
 
 function m(e) {
   var t;
@@ -31,69 +31,69 @@ function m(e) {
   return {
     key: e.suggested_user.id,
     name: null == (t = l().first(e.reasons)) ? true : t.name,
-    user: new o.Z(e.suggested_user),
+    user: new a.Z(e.suggested_user),
     mutualFriendsCount: e.mutual_friends_count,
     contactNames: n
   }
 }
-class O extends(i = Chunk442837.ZP.Store) {
+class E extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
   getSuggestionCount() {
-    return g
+    return f
   }
   getSuggestions() {
-    return Object.entries(p).map(e => {
+    return Object.entries(g).map(e => {
       let [t, n] = e;
       return n
     })
   }
   getSuggestion(e) {
-    return p[e]
+    return g[e]
   }
 }
-f(O, "displayName", "FriendSuggestionStore");
-let N = new O(Chunk570140.Z, {
+p(E, "displayName", "FriendSuggestionStore");
+let I = new E(Chunk570140.Z, {
   CONNECTION_OPEN: function(e) {
-    p = {}, (g = e.friendSuggestionCount) > 0 ? (y = true, !h && y && (h = true, y = false, u.Z.fetch())) : (0, d.Z)()
+    g = {}, (f = e.friendSuggestionCount) > 0 ? (O = true, !h && O && (h = true, O = false, c.Z.fetch())) : (0, d.Z)()
   },
   FRIEND_SUGGESTION_CREATE: function(e) {
     var t, n;
-    let i = m(e.suggestion);
-    if (null != p[i.key]) returnfalse;
-    g++, t = function(e) {
+    let r = m(e.suggestion);
+    if (null != g[r.key]) returnfalse;
+    f++, t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          f(e, t, n[t])
+        }))), r.forEach(function(t) {
+          p(e, t, n[t])
         })
       }
       return e
-    }({}, p), n = n = {
-      [i.key]: i
+    }({}, g), n = n = {
+      [r.key]: r
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), p = t
+    }), g = t
   },
   FRIEND_SUGGESTION_DELETE: function(e) {
-    g = Math.max(0, --g), delete p[e.suggestedUserId]
+    f = Math.max(0, --f), delete g[e.suggestedUserId]
   },
   LOAD_FRIEND_SUGGESTIONS_SUCCESS: function(e) {
     var t;
-    h = false, t = e.suggestions, p = l().chain(t).map(e => m(e)).keyBy(e => e.key).value(), g = l().keys(p).length
+    h = false, t = e.suggestions, g = l().chain(t).map(e => m(e)).keyBy(e => e.key).value(), f = l().keys(g).length
   },
   LOAD_FRIEND_SUGGESTIONS_FAILURE: function() {
-    h = false, p = {}
+    h = false, g = {}
   }
 })

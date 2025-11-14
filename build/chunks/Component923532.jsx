@@ -1,13 +1,12 @@
 /** Chunk was on 63141 **/
 /** chunk id: 923532, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk399606 = require("./399606.js"),
   Chunk822183 = require("./822183.js"),
   Chunk673125 = require("./673125.js"),
@@ -19,10 +18,10 @@ function p(e) {
   let {
     streamerId: t,
     channelId: n
-  } = e, s = r.useRef(null), a = (0, l.e7)([u.default], () => u.default.getCurrentUser());
-  return o()(null != a, "user cannot be null"), (0, d.Z)(s, a, t, n), (0, i.jsx)("canvas", {
+  } = e, o = r.useRef(null), a = (0, s.e7)([u.default], () => u.default.getCurrentUser());
+  return l()(null != a, "user cannot be null"), (0, d.Z)(o, a, t, n), (0, i.jsx)("canvas", {
     className: h.canvas,
-    ref: s
+    ref: o
   })
 }
 
@@ -32,14 +31,14 @@ function f(e) {
     channelId: n,
     streamerId: r
   } = e, {
-    isSharedCanvasEnabled: s
+    isSharedCanvasEnabled: o
   } = a.Z.useExperiment({
     guildId: t,
     location: "f0d1b1_1"
   }, {
     autoTrackExposure: true
-  }), o = (0, l.e7)([c.Z], () => c.Z.visibleOverlayCanvas);
-  return s && o ? (0, i.jsx)(p, {
+  }), l = (0, s.e7)([c.Z], () => c.Z.visibleOverlayCanvas);
+  return o && l ? (0, i.jsx)(p, {
     guildId: t,
     channelId: n,
     streamerId: r

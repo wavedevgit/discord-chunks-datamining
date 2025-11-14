@@ -354,8 +354,19 @@ function Y(e) {
     bot: i,
     botIconFirst: a,
     fallbackAvatar: o = true,
-    keepAspectRatio: s
+    keepAspectRatio: s,
+    guildMember: l
   } = e;
+  if ((null == i ? true : i.id) != null && null != l && null != l.avatar) {
+    let e = D({
+      userId: i.id,
+      guildId: l.guildId,
+      avatar: l.avatar,
+      canAnimate: false,
+      size: r
+    });
+    if (null != e) return e
+  }
   if (null != i && a) {
     let e = R(i, false, r);
     if (null != e) return e

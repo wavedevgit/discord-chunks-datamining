@@ -1,6 +1,5 @@
 /** Chunk was on 63141 **/
 /** chunk id: 435413, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   wrapper: "wrapper_e9b191",
   wrapperAccepted: "wrapperAccepted_e9b191",

@@ -69,7 +69,7 @@ function m(e) {
         (0, o.jW)(t, async () => {
           let {
             default: t
-          } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
+          } = await Promise.all([n.e("79695"), n.e("69220"), n.e("77635")]).then(n.bind(n, 881351));
           return n => (0, r.jsx)(t, h(_({}, n), {
             user: e
           }))

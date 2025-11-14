@@ -2,19 +2,21 @@
 /** chunk id: 809090, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
   Chunk686546 = require("./686546.jsx"),
+  Chunk271383 = require("./271383.js"),
   Chunk768581 = require("./768581.js"),
   Chunk895924 = require("./895924.js"),
   Chunk557545 = require("./557545.js"),
   Chunk970952 = require("./970952.js");
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,20 +25,20 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,15 +49,15 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function E(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -63,7 +65,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -71,60 +73,67 @@ function g(e, t) {
   return i
 }
 
-function E(e) {
+function y(e) {
   var {
     section: t,
-    isSelected: n,
-    width: a,
-    height: f,
-    className: p,
-    selectable: g = false,
-    isSquircle: E,
-    onFocus: b,
-    onBlur: y,
-    onMouseOver: O,
-    onMouseLeave: v
-  } = e, I = m(e, ["section", "isSelected", "width", "height", "className", "selectable", "isSquircle", "onFocus", "onBlur", "onMouseOver", "onMouseLeave"]);
-  let [T, S] = i.useState(false), A = i.useCallback(() => {
-    S(true), null == b || b()
-  }, [b]), C = i.useCallback(() => {
-    S(false), null == y || y()
-  }, [y]), N = i.useCallback(() => {
-    S(true), null == O || O()
-  }, [O]), R = i.useCallback(() => {
-    S(false), null == v || v()
-  }, [v]), P = i.useMemo(() => {
+    channel: {
+      guild_id: n
+    },
+    isSelected: a,
+    width: p,
+    height: m,
+    className: b,
+    selectable: y = false,
+    isSquircle: O,
+    onFocus: v,
+    onBlur: I,
+    onMouseOver: T,
+    onMouseLeave: S
+  } = e, A = E(e, ["section", "channel", "isSelected", "width", "height", "className", "selectable", "isSquircle", "onFocus", "onBlur", "onMouseOver", "onMouseLeave"]);
+  let [C, N] = i.useState(false), R = i.useCallback(() => {
+    N(true), null == v || v()
+  }, [v]), P = i.useCallback(() => {
+    N(false), null == I || I()
+  }, [I]), D = i.useCallback(() => {
+    N(true), null == T || T()
+  }, [T]), w = i.useCallback(() => {
+    N(false), null == S || S()
+  }, [S]), x = (0, s.e7)([c.ZP], () => {
+    var e, r, i, a;
+    return (null == (r = t.application) || null == (e = r.bot) ? true : e.id) != null ? c.ZP.getMember(n, null == (a = t.application) || null == (i = a.bot) ? true : i.id) : null
+  }), L = i.useMemo(() => {
     var e;
-    return t.type !== c.Qi.APPLICATION ? d : l.ZP.getApplicationIconURL({
+    return t.type !== d.Qi.APPLICATION ? _ : u.ZP.getApplicationIconURL({
       id: t.id,
       icon: t.icon,
       bot: null == (e = t.application) ? true : e.bot,
       botIconFirst: true,
-      size: a
+      guildMember: x,
+      size: p
     })
-  }, [t, a]);
-  return (0, r.jsx)("div", h(_({}, I), {
-    className: o()(u.wrapper, p, {
-      [u.selectable]: g,
-      [u.selected]: g && n
+  }, [t, p, x]);
+  return (0, r.jsx)("div", g(h({}, A), {
+    className: o()(f.wrapper, b, {
+      [f.selectable]: y,
+      [f.selected]: y && a
     }),
-    onFocus: A,
-    onBlur: C,
-    onMouseOver: N,
-    onMouseLeave: R,
-    children: (0, r.jsx)(s.ZP, {
-      className: u.mask,
-      mask: E || g && (n || T) ? s.QS.SQUIRCLE : s.QS.AVATAR_DEFAULT,
-      width: a,
-      height: f,
+    onFocus: R,
+    onBlur: P,
+    onMouseOver: D,
+    onMouseLeave: w,
+    children: (0, r.jsx)(l.ZP, {
+      className: f.mask,
+      mask: O || y && (a || C) ? l.QS.SQUIRCLE : l.QS.AVATAR_DEFAULT,
+      width: p,
+      height: m,
       children: (0, r.jsx)("img", {
         alt: "",
-        className: u.icon,
+        className: f.icon,
         style: {
-          width: a,
-          height: f
+          width: p,
+          height: m
         },
-        src: P
+        src: L
       })
     })
   }))
