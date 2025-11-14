@@ -321,7 +321,7 @@ function Q(e) {
   }, {
     modalKey: (0, E.u7)(n.id),
     backdropStyle: s.fCB.IMMERSIVE,
-    onCloseCallback: () => (0, E.Mo)({
+    onCloseCallback: () => (0, E.Th)({
       questId: n.id,
       sourceQuestContent: o,
       videoSessionId: d
