@@ -35,6 +35,7 @@ let u = .5,
   f = false,
   _ = Object.freeze({
     userAffinities: [],
+    userFlags: {},
     lastFetched: 0
   }),
   p = c({}, _);
@@ -49,9 +50,10 @@ function m() {
 
 function g(e) {
   let {
-    affineUsers: t
+    affineUsers: t,
+    userFlags: n
   } = e;
-  p.lastFetched = Date.now(), f = false, p.userAffinities = t, h()
+  p.lastFetched = Date.now(), f = false, p.userAffinities = t, p.userFlags = n, h()
 }
 
 function E() {
@@ -63,7 +65,11 @@ function b() {
 }
 class y extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(o.Z), null != e && (p.userAffinities = e.userAffinities, p.lastFetched = e.lastFetched, h()), this.syncWith([o.Z], h)
+    if (this.waitFor(o.Z), null != e) {
+      var t;
+      p.userAffinities = e.userAffinities, p.userFlags = null != (t = e.userFlags) ? t : {}, p.lastFetched = e.lastFetched, h()
+    }
+    this.syncWith([o.Z], h)
   }
   shouldFetch() {
     if (!f) return Date.now() - p.lastFetched > Chunk496232.K
@@ -76,6 +82,9 @@ class y extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getUserAffinitiesMap() {
     return d
+  }
+  getUserFlags() {
+    return p.userFlags
   }
   compare(e, t) {
     var n, r, i, a;

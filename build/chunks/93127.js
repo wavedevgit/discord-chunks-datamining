@@ -2,15 +2,16 @@
 /** chunk id: 93127, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _: () => l
+  _: () => c
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk480294 = require("./480294.js"),
+  Chunk286715 = require("./286715.js"),
   Chunk752048 = require("./752048.js"),
   Chunk981631 = require("./981631.js");
 
-function l() {
+function c() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
   return Chunk752048.Z.shouldFetch() && Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION) ? (Chunk570140.Z.dispatch({
     type: "LOAD_USER_AFFINITIES_V2"
@@ -18,14 +19,18 @@ function l() {
     url: Chunk981631.ANM.USER_AFFINITIES_V2,
     retries: 3 * !!module,
     oldFormErrors: true,
-    rejectWithError: false
+    rejectWithError: false,
+    query: {
+      user_flags: Chunk286715.r.RECENTLY_RETURNED
+    }
   }).then(e => {
+    var t;
     let {
-      body: t
+      body: n
     } = e;
     i.Z.dispatch({
       type: "LOAD_USER_AFFINITIES_V2_SUCCESS",
-      affineUsers: t.user_affinities.map(e => {
+      affineUsers: n.user_affinities.map(e => {
         var t, n, r, i, a, o, s, l;
         return {
           otherUserId: e.other_user_id,
@@ -41,7 +46,8 @@ function l() {
           communicationProbability: null != (s = e.communication_probability) ? s : 0,
           communicationRank: null != (l = e.communication_rank) ? l : 0
         }
-      })
+      }),
+      userFlags: null != (t = n.user_flags) ? t : {}
     })
   }, () => {
     Chunk570140.Z.dispatch({
