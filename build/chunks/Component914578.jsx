@@ -1,12 +1,12 @@
 /** Chunk was on 16985 **/
 /** chunk id: 914578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
   Chunk163379 = require("./163379.jsx"),
@@ -46,7 +46,7 @@ function v(e) {
   })
 }
 
-function x() {
+function g() {
   let e = Chunk647438.useRef(null),
     t = Chunk906467.Z.isDeveloper;
   return (0, Chunk951288.jsxs)("div", {
@@ -99,7 +99,7 @@ function x() {
           })
         },
         children: (t, n) => {
-          var l, o;
+          var l, i;
           return (0, r.jsx)(a.Anchor, (l = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -117,10 +117,10 @@ function x() {
               })
             }
             return e
-          }({}, t), o = o = {
+          }({}, t), i = i = {
             ref: e,
             useDefaultUnderlineStyles: false,
-            className: i()(m.moreButton, {
+            className: o()(m.moreButton, {
               [m.active]: n.isShown
             }),
             children: (0, r.jsx)(a.Text, {
@@ -129,15 +129,15 @@ function x() {
               color: "currentColor",
               children: j.intl.string(j.t["UKOtz+"])
             })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(o)).forEach(function(e) {
-            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+          })(Object(i)).forEach(function(e) {
+            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
           }), l))
         }
       })]

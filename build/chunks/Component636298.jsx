@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
@@ -36,11 +36,11 @@ function j(e) {
     title: t,
     badge: n,
     onClose: l
-  } = e, o = (0, u.Ll)();
+  } = e, i = (0, u.Ll)();
   return (0, r.jsx)(s.f6W, {
-    theme: o,
+    theme: i,
     children: e => (0, r.jsxs)("div", {
-      className: i()(p.contentHeader, e),
+      className: o()(p.contentHeader, e),
       children: [(0, r.jsxs)("div", {
         className: p.contentHeaderLeft,
         children: [a.tq && (0, r.jsx)(y, {
@@ -66,10 +66,10 @@ let m = Chunk647438.memo(function(e) {
   var t, n;
   let {
     onClose: l,
-    setting: o
-  } = e, c = null != (n = null == o ? true : o.useTitle()) ? n : "", s = null == o || null == (t = o.useBadge) ? true : t.call(o), u = d.Z.useField("showNavigationMobile");
+    setting: i
+  } = e, c = null != (n = null == i ? true : i.useTitle()) ? n : "", s = null == i || null == (t = i.useBadge) ? true : t.call(i), u = d.Z.useField("showNavigationMobile");
   return (0, r.jsxs)("div", {
-    className: i()(p.content, {
+    className: o()(p.content, {
       [p.mobile]: a.tq,
       [p.mobileNavigationOpen]: u
     }),
@@ -79,8 +79,8 @@ let m = Chunk647438.memo(function(e) {
       onClose: l
     }), (0, r.jsx)("div", {
       className: p.contentBody,
-      children: null != o && (0, r.jsx)(f.Z, {
-        node: o
+      children: null != i && (0, r.jsx)(f.Z, {
+        node: i
       })
     })]
   })

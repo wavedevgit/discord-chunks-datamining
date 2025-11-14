@@ -22,8 +22,8 @@ function a(e) {
     onValueRender: b,
     asValueChanges: p
   } = t, [y] = l.useState(() => a()), j = u(), m = null == d ? true : d(), v = null == f ? true : f();
-  return (0, r.jsx)(i.X, {
-    children: (0, r.jsx)(o.iRW, {
+  return (0, r.jsx)(o.X, {
+    children: (0, r.jsx)(i.iRW, {
       label: j,
       description: m,
       disabled: v,

@@ -1,17 +1,17 @@
 /** Chunk was on 16985 **/
 /** chunk id: 598612, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => i
+  Y: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
   Chunk836519 = require("./836519.js");
 
-function i(e) {
+function o(e) {
   let {
     title: t,
     subtitle: n,
-    badge: i,
+    badge: o,
     type: a = "primary"
   } = e;
   return "secondary" === a ? (0, r.jsx)(l.Kqy, {
@@ -32,12 +32,12 @@ function i(e) {
       right: 12
     },
     children: [(0, r.jsxs)("div", {
-      className: o.headerTitle,
+      className: i.headerTitle,
       children: [(0, r.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: t
-      }), null != i && i]
+      }), null != o && o]
     }), null != n && (0, r.jsx)(l.xvT, {
       variant: "text-md/normal",
       color: "text-secondary",

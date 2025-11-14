@@ -53,13 +53,13 @@ function y(e) {
     directory: j,
     target: m,
     defaultTarget: v,
-    onClose: x,
-    sidebarHeader: g,
+    onClose: g,
+    sidebarHeader: x,
     sidebarFooter: h,
     onPanelChange: O,
     emptyState: P
   } = e, S = null != m && (null == (t = j.entry(m)) ? true : t.targetPanelKey) != null ? m : v;
-  (0, o.ZP)(() => {
+  (0, i.ZP)(() => {
     let e = j.entry(S).targetPanelKey;
     return d.Z.setState({
       targetKey: S,
@@ -69,8 +69,8 @@ function y(e) {
   });
   let C = d.Z.useField("currentPanelKey"),
     _ = d.Z.useField("targetKey"),
-    [N, w] = l.useState(j),
-    E = l.useMemo(() => N.get(null != C ? C : S), [N, C, S]),
+    [N, E] = l.useState(j),
+    w = l.useMemo(() => N.get(null != C ? C : S), [N, C, S]),
     T = l.useCallback(() => Z(true), []),
     [k, Z] = l.useState({
       target: S,
@@ -84,7 +84,7 @@ function y(e) {
   l.useEffect(() => {
     if (null == _) return;
     let e = j.entry(_);
-    if (null == e) return void i.Z.setState({
+    if (null == e) return void o.Z.setState({
       query: ""
     });
     if (null == e.targetPanelKey) return void d.Z.setState({
@@ -113,9 +113,10 @@ function y(e) {
     })
   }, [C, _, T, j, I, O]);
   let D = l.useMemo(() => ({
-      navTransition: k
-    }), [k]),
-    R = () => I(x),
+      navTransition: k,
+      directory: j
+    }), [k, j]),
+    R = () => I(g),
     A = null != C ? j.get(C) : true;
   return (0, r.jsx)(u.j.Provider, {
     value: D,
@@ -123,13 +124,13 @@ function y(e) {
       className: f.container,
       children: [(0, r.jsx)(c.P, {
         root: y,
-        header: g,
+        header: x,
         footer: h,
         onClose: R,
         emptyState: P
       }), (0, r.jsx)(a.Z, {
         onClose: R,
-        setting: null != A ? A : E
+        setting: null != A ? A : w
       })]
     })
   })

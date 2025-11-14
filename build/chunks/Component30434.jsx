@@ -14,7 +14,7 @@ function a(e) {
     children: n
   } = e, {
     navTransition: a
-  } = (0, i.t)(), c = l.useRef(null), s = l.useContext(o.Sf).reducedMotion.enabled;
+  } = (0, o.t)(), c = l.useRef(null), s = l.useContext(i.Sf).reducedMotion.enabled;
   return l.useEffect(() => {
     if ((null == a ? true : a.target) === t.key) {
       var e;

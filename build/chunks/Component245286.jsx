@@ -46,21 +46,21 @@ function S(e) {
     var n, r, l = function(e, t) {
       if (null == e) return {};
       var n, r, l = {},
-        o = Object.keys(e);
-      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
       return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
   }(e, ["target"]);
-  let i = j.Z.useField("query"),
+  let o = j.Z.useField("query"),
     {
       node: a,
       directory: s
-    } = (0, f.Z)(x.Z, i),
+    } = (0, f.Z)(g.Z, o),
     u = null != t && null != s.entry(t) ? t : true,
     y = l.useRef(null);
   return ((0, c.ZP)(() => {
@@ -69,7 +69,7 @@ function S(e) {
       destinationPanel: e,
       originPanel: null
     }), y.current = e)
-  }), (0, o.e7)([p.default], () => null != p.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
+  }), (0, i.e7)([p.default], () => null != p.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -93,7 +93,7 @@ function S(e) {
     emptyState: _,
     sidebarFooter: v.Z,
     onPanelChange: e => {
-      let t = (0, g.getUserSettingsSectionsByWebUserSettings)().get(e);
+      let t = (0, x.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (P({
         destinationPanel: t,
         originPanel: y.current
@@ -107,7 +107,7 @@ function S(e) {
 function C() {
   let e = Chunk996733.Z.useField("query"),
     t = Chunk647438.useRef(null),
-    [n, o] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),
+    [n, i] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),
     c = Chunk647438.useMemo(() => ({
       title: Chunk388032.intl.string(Chunk388032.t.Kv519a),
       body: Chunk388032.intl.string(Chunk388032.t.cTGJBZ),

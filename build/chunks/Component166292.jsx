@@ -12,8 +12,8 @@ let a = Chunk647438.memo(function(e) {
     node: t
   } = e;
   return (0, r.jsx)("div", {
-    className: i.split,
-    children: t.layout.map(e => (0, r.jsx)(o.Z, {
+    className: o.split,
+    children: t.layout.map(e => (0, r.jsx)(i.Z, {
       node: e
     }, e.key))
   })

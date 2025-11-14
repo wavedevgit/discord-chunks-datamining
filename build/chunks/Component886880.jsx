@@ -17,13 +17,13 @@ function c(e) {
     markAsDismissed: s,
     props: u
   } = e, [d, f] = l.useState(false), b = l.useRef(null);
-  (0, i.ZP)(() => (b.current = setTimeout(() => f(true), 250), () => {
+  (0, o.ZP)(() => (b.current = setTimeout(() => f(true), 250), () => {
     clearTimeout(b.current), s(a.L.AUTO_DISMISS)
   }));
   let p = l.useCallback(e => {
     s("user:explicit" === e ? a.L.USER_DISMISS : a.L.AUTO_DISMISS)
   }, [s]);
-  return (0, r.jsx)(o.Z, function(e) {
+  return (0, r.jsx)(i.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

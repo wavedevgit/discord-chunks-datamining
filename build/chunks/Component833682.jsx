@@ -32,7 +32,7 @@ function N() {
 
 function A() {
   let t = Chunk647438.useCallback(t => {
-      a.Z.setNoiseCancellation(t === T.Q4.KRISP, T.MP), a.Z.setNoiseSuppression(t === T.Q4.STANDARD, T.MP)
+      a.Z.setNoiseCancellation(t === d.Q4.KRISP, d.MP), a.Z.setNoiseSuppression(t === d.Q4.STANDARD, d.MP)
     }, []),
     {
       noiseCancellation: e,
@@ -46,7 +46,7 @@ function A() {
       isNoiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported()
     })),
     S = require ? Chunk803567.Q4.STANDARD : Chunk803567.Q4.NONE,
-    d = exports ? Chunk803567.Q4.KRISP : Chunk210887,
+    T = exports ? Chunk803567.Q4.KRISP : Chunk210887,
     g = Chunk647438.useMemo(() => {
       let t = [];
       return Chunk509613 && module.push({

@@ -21,8 +21,8 @@ function c(t, e) {
   for (let t of E) {
     let e = t;
     for (; null != e;) {
-      var d;
-      let t = null == (d = c[e]) ? true : d.parent;
+      var T;
+      let t = null == (T = c[e]) ? true : T.parent;
       if (null == t) {
         S.add(e);
         break
@@ -30,17 +30,17 @@ function c(t, e) {
       e = t
     }
   }
-  let T = (0, o.Z)(n, null != e ? e : "", S),
-    [I, O] = i.useState(T),
+  let d = (0, o.Z)(n, null != e ? e : "", S),
+    [I, O] = i.useState(d),
     g = function(t, e) {
       if (t.size !== e.size) returntrue;
       for (let n of t)
         if (!e.has(n)) returntrue;
       returnfalse
-    }(I, T);
+    }(I, d);
   return i.useEffect(() => {
-    g && O(T)
-  }, [g, T]), i.useMemo(() => {
+    g && O(d)
+  }, [g, d]), i.useMemo(() => {
     var t, e, i;
     let l = new s.Z;
     return {

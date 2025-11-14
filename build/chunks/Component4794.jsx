@@ -20,7 +20,7 @@ let u = Chunk647438.memo(function(e) {
     notice: f
   } = t, [b, p] = l.useState(false), {
     navTransition: y
-  } = (0, o.t)();
+  } = (0, i.t)();
   l.useEffect(() => {
     (null == y ? true : y.targetAccordionKey) === t.key && p(true)
   }, [null == y ? true : y.targetAccordionKey, t.key]);
@@ -38,7 +38,7 @@ let u = Chunk647438.memo(function(e) {
         children: (0, r.jsx)(c.Z, {
           notice: f
         })
-      }), u.map(e => (0, r.jsx)(i.Z, {
+      }), u.map(e => (0, r.jsx)(o.Z, {
         node: e
       }, e.key))]
     })

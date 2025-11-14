@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 798922, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  F: () => T
+  F: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
@@ -17,15 +17,15 @@ let S = (0, Chunk509613.x1)(Chunk313789.n.SESSIONS_PANE, {
     buildLayout: () => [],
     render: () => (0, Chunk951288.jsx)(Chunk36192.Z, {})
   }),
-  d = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
+  T = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     buildLayout: () => [S]
   }),
-  T = (0, Chunk509613.m7)(Chunk313789.n.SESSIONS_SIDEBAR_ITEM, {
+  d = (0, Chunk509613.m7)(Chunk313789.n.SESSIONS_SIDEBAR_ITEM, {
     icon: Chunk657707.dW3,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     getLegacySearchKey: () => Chunk726985.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
-    buildLayout: () => [d],
+    buildLayout: () => [T],
     trailing: {
       type: Chunk28682.PU.BADGE_NEW,
       getDismissibleContentTypes: () => [Chunk704215.z.AUTH_SESSIONS_NEW]

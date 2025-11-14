@@ -3,25 +3,25 @@
 require.d(exports, {
   Z: () => function t(e, n, r) {
     var s, a, o, c, E, S;
-    let d = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
+    let T = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
     if (!n.has(e.key)) return null;
-    if (!(0, i.Lk)(e)) return r.register(e, null == (c = d.panel) ? true : c.key, null == (E = d.category) ? true : E.key, null == (S = d.accordion) ? true : S.key), e;
-    let T = d;
-    e.type === i.Jq.SIDEBAR_ITEM && (T = u(l({}, d), {
+    if (!(0, i.Lk)(e)) return r.register(e, null == (c = T.panel) ? true : c.key, null == (E = T.category) ? true : E.key, null == (S = T.accordion) ? true : S.key), e;
+    let d = T;
+    e.type === i.Jq.SIDEBAR_ITEM && (d = u(l({}, T), {
       panel: e.layout[0]
-    })), e.type === i.Jq.PANEL && (T = u(l({}, d), {
+    })), e.type === i.Jq.PANEL && (d = u(l({}, T), {
       panel: e
-    })), e.type === i.Jq.CATEGORY && (T = u(l({}, d), {
+    })), e.type === i.Jq.CATEGORY && (d = u(l({}, T), {
       category: e
-    })), e.type === i.Jq.ACCORDION && (T = u(l({}, d), {
+    })), e.type === i.Jq.ACCORDION && (d = u(l({}, T), {
       accordion: e
     }));
-    let I = e.layout.map(e => t(e, n, r, T)).filter(t => null != t);
+    let I = e.layout.map(e => t(e, n, r, d)).filter(t => null != t);
     if (0 === I.length && !("render" in e || e.type === i.Jq.SIDEBAR_ITEM && "onClick" in e)) return null;
     let O = u(l({}, e), {
       layout: I
     });
-    return r.register(O, null == (s = T.panel) ? true : s.key, null == (a = T.category) ? true : a.key, null == (o = T.accordion) ? true : o.key), O
+    return r.register(O, null == (s = d.panel) ? true : s.key, null == (a = d.category) ? true : a.key, null == (o = d.accordion) ? true : o.key), O
   }
 });
 var Chunk28682 = require("./28682.js");

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk996435 = require("./996435.js"),
@@ -18,7 +18,7 @@ function b(e) {
   var t, n;
   let {
     onClick: l,
-    active: o,
+    active: i,
     node: a,
     visibleContent: s,
     itemProps: d
@@ -46,8 +46,8 @@ function b(e) {
     }
     return e
   }({
-    className: i()(f.item, {
-      [f.active]: o
+    className: o()(f.item, {
+      [f.active]: i
     }),
     onClick: l
   }, d), n = n = {
@@ -67,7 +67,7 @@ function b(e) {
       children: (0, r.jsx)(u.W, {
         trailing: y,
         visibleContent: s,
-        isSelected: o
+        isSelected: i
       })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -86,16 +86,16 @@ function p(e) {
   let {
     node: t,
     visibleContent: n,
-    hoisted: o = false
-  } = e, i = l.useMemo(() => t.layout[0], [t]), c = s.Z.useField("currentPanelKey"), u = null != c && c === (null == i ? true : i.key), f = null != i ? () => s.Z.setState({
-    targetKey: i.key,
+    hoisted: i = false
+  } = e, o = l.useMemo(() => t.layout[0], [t]), c = s.Z.useField("currentPanelKey"), u = null != c && c === (null == o ? true : o.key), f = null != o ? () => s.Z.setState({
+    targetKey: o.key,
     showNavigationMobile: false
   }) : t.onClick, p = l.useMemo(() => {
     var e;
-    return (null != (e = null == i ? true : i.layout.flatMap(e => e.layout)) ? e : []).filter(e => null != e.useTitle || null != e.useNavigationTitle)
-  }, [i]);
+    return (null != (e = null == o ? true : o.layout.flatMap(e => e.layout)) ? e : []).filter(e => null != e.useTitle || null != e.useNavigationTitle)
+  }, [o]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [o ? (0, r.jsx)("li", {
+    children: [i ? (0, r.jsx)("li", {
       children: (0, r.jsx)(b, {
         onClick: f,
         active: u,

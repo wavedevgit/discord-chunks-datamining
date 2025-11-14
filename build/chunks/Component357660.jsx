@@ -22,7 +22,7 @@ function d(e) {
   } = (0, c.Cu)(), f = null == t ? true : t.stores;
   l.useEffect(() => {
     if (null != f) {
-      let e = new o.Fh(f, () => {
+      let e = new i.Fh(f, () => {
         d(f)
       });
       return e.attach("SettingPanelNotice"), d(f), () => {
@@ -41,7 +41,7 @@ function d(e) {
     })
   }, [t, s]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [n, (0, r.jsx)(i.W, {
+    children: [n, (0, r.jsx)(o.W, {
       component: "div",
       children: b
     })]

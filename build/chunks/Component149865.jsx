@@ -25,26 +25,26 @@ let c = Chunk647438.memo(function(e) {
       "aria-describedby": y ? p : true,
       children: [(0, r.jsxs)("div", {
         className: a.header,
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(i.Text, {
           tag: "legend",
           variant: "text-md/semibold",
           color: "header-primary",
           className: a.title,
           children: f
-        }), y ? (0, r.jsx)(o.Text, {
+        }), y ? (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           id: p,
           className: a.subtitle,
           children: b
         }) : null]
-      }), (0, r.jsx)(o.Kqy, {
+      }), (0, r.jsx)(i.Kqy, {
         direction: "vertical",
         gap: 8,
         children: d.map((e, t) => (0, r.jsxs)(l.Fragment, {
-          children: [(0, r.jsx)(i.Z, {
+          children: [(0, r.jsx)(o.Z, {
             node: e
-          }), "separators" === s && t !== d.length - 1 && (0, r.jsx)(o.izJ, {
+          }), "separators" === s && t !== d.length - 1 && (0, r.jsx)(i.izJ, {
             className: a.divider
           })]
         }, e.key))

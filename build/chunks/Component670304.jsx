@@ -15,9 +15,9 @@ let c = Chunk647438.memo(function(e) {
   return null != t.render ? (0, r.jsx)(t.render, {}) : (0, r.jsx)("div", {
     className: a.pane,
     children: t.layout.map((e, n) => (0, r.jsxs)(l.Fragment, {
-      children: [(0, r.jsx)(i.Z, {
+      children: [(0, r.jsx)(o.Z, {
         node: e
-      }), n !== t.layout.length - 1 && (0, r.jsx)(o.izJ, {
+      }), n !== t.layout.length - 1 && (0, r.jsx)(i.izJ, {
         className: a.divider
       })]
     }, e.key))

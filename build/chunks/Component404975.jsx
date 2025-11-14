@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk873546 = require("./873546.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,10 +23,10 @@ function v(e) {
   let {
     root: t,
     header: n,
-    footer: o,
+    footer: i,
     onClose: y,
     emptyState: v
-  } = e, g = p.Z.useField("showNavigationMobile"), h = l.useRef(null), O = l.useMemo(() => {
+  } = e, x = p.Z.useField("showNavigationMobile"), h = l.useRef(null), O = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -59,9 +59,9 @@ function v(e) {
           visibleContent: l
         } = t;
         return (0, r.jsxs)("div", {
-          className: i()(m.sidebar, e, {
+          className: o()(m.sidebar, e, {
             [m.mobile]: c.tq,
-            [m.mobileNavigationOpen]: g
+            [m.mobileNavigationOpen]: x
           }),
           children: [(0, r.jsxs)("div", {
             className: m.fixedContent,
@@ -75,7 +75,7 @@ function v(e) {
                 "aria-label": j.intl.string(j.t.cpT0Cq)
               })
             }), (0, r.jsx)("div", {
-              children: P.map(e => (0, r.jsx)(x, {
+              children: P.map(e => (0, r.jsx)(g, {
                 section: e,
                 visibleContent: l,
                 hoisted: true
@@ -86,20 +86,20 @@ function v(e) {
             children: (0, r.jsx)(a.SJ, {
               children: e => {
                 var t, n, {
-                    ref: i
+                    ref: o
                   } = e,
                   a = function(e, t) {
                     if (null == e) return {};
                     var n, r, l = function(e, t) {
                       if (null == e) return {};
                       var n, r, l = {},
-                        o = Object.keys(e);
-                      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+                        i = Object.keys(e);
+                      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
                       return l
                     }(e, t);
                     if (Object.getOwnPropertySymbols) {
-                      var o = Object.getOwnPropertySymbols(e);
-                      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+                      var i = Object.getOwnPropertySymbols(e);
+                      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
                     }
                     return l
                   }(e, ["ref"]);
@@ -123,18 +123,18 @@ function v(e) {
                 }({
                   ref: e => {
                     var t;
-                    h.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+                    h.current = e, o.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
                   },
                   className: m.navScroller,
                   fade: true
                 }, a), n = n = {
                   children: [(0, r.jsx)("nav", {
                     className: m.nav,
-                    children: S.map(e => (0, r.jsx)(x, {
+                    children: S.map(e => (0, r.jsx)(g, {
                       section: e,
                       visibleContent: l
                     }, e.key))
-                  }), null != o && (0, r.jsx)(o, {})]
+                  }), null != i && (0, r.jsx)(i, {})]
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                   var n = Object.keys(e);
                   if (Object.getOwnPropertySymbols) {
@@ -154,28 +154,28 @@ function v(e) {
   })
 }
 
-function x(e) {
+function g(e) {
   var t;
   let {
     section: n,
     visibleContent: l,
-    hoisted: o = false
-  } = e, i = null == (t = n.useLabel) ? true : t.call(n);
+    hoisted: i = false
+  } = e, o = null == (t = n.useLabel) ? true : t.call(n);
   return (0, r.jsxs)("ul", {
     className: m.section,
-    "aria-label": i,
-    children: [null != i && (0, r.jsx)("div", {
+    "aria-label": o,
+    children: [null != o && (0, r.jsx)("div", {
       className: m.sectionLabel,
       children: (0, r.jsx)(s.Heading, {
         className: m.label,
         variant: "heading-sm/medium",
         color: "text-tertiary",
-        children: i
+        children: o
       })
     }), n.layout.map(e => (0, r.jsx)(y.y, {
       node: e,
       visibleContent: l,
-      hoisted: o
+      hoisted: i
     }, e.key))]
   })
 }

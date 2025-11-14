@@ -22,7 +22,7 @@ let u = Chunk647438.memo(function(e) {
   } = t, p = null == n ? true : n(), y = null == f ? true : f();
   return l.useEffect(() => {
     null == d || d()
-  }, [d]), (0, r.jsxs)(o.Kqy, {
+  }, [d]), (0, r.jsxs)(i.Kqy, {
     gap: 16,
     children: [(0, r.jsx)(a.Y, {
       title: p,
@@ -32,7 +32,7 @@ let u = Chunk647438.memo(function(e) {
       children: (0, r.jsx)(c.Z, {
         notice: b
       })
-    }), u.map(e => (0, r.jsx)(i.Z, {
+    }), u.map(e => (0, r.jsx)(o.Z, {
       node: e
     }, e.key))]
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 51397, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => T
 });
 var Chunk442837 = require("./442837.js"),
   Chunk846027 = require("./846027.js"),
@@ -27,7 +27,7 @@ let c = (0, Chunk509613.UO)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_SLIDER, {
     useValue: () => (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getAttenuateWhileSpeakingOthers()),
     setValue: t => l.Z.setAttenuation(r.Z.getAttenuation(), r.Z.getAttenuateWhileSpeakingSelf(), t)
   }),
-  d = (0, Chunk509613.Uc)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_FIELD_SET, {
+  T = (0, Chunk509613.Uc)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_FIELD_SET, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.oSdBvW),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["0A/8Rt"]),
     usePredicate: () => (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.supports(Chunk65154.AN.ATTENUATION)),
