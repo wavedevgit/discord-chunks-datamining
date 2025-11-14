@@ -39,14 +39,12 @@ function b(e) {
     children: t,
     selected: n,
     className: i,
-    usesCardRows: o = false,
-    isAutoHeight: s = false
+    usesCardRows: o = false
   } = e;
   return (0, r.jsx)("div", {
     className: a()(g.container, g.openOnHover, {
       [g.selected]: n,
-      [g.usesCardRows]: o,
-      [g.isAutoHeight]: s
+      [g.usesCardRows]: o
     }, i),
     children: t
   })

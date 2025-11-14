@@ -901,11 +901,12 @@ function eK(e) {
 }
 
 function ez(e) {
-  let t = (0, c.e7)([d.ZP], () => d.ZP.getCurrentEmbeddedActivity());
+  let t = (0, c.e7)([d.ZP], () => d.ZP.getCurrentEmbeddedActivity()),
+    n = (0, R.Mo)(e);
   return {
     launchInGameActivity: r.useCallback(() => {
-      null != t && t.applicationId === e.config.application.id ? (0, f.Z)("guild_id" in t.location ? t.location.guild_id : null, t.location) : (0, h.uL)(B.Z5c.ACTIVITY_DETAILS(e.config.application.id))
-    }, [t, e.config.application.id])
+      null != n && (null != t && t.applicationId === n ? (0, f.Z)("guild_id" in t.location ? t.location.guild_id : null, t.location) : (0, h.uL)(B.Z5c.ACTIVITY_DETAILS(n)))
+    }, [t, n])
   }
 }
 let eq = () => (0, Chunk442837.Wu)([Chunk569984.Z], () => [...Chunk569984.Z.quests.values()]).some(e => e.preview),

@@ -36,11 +36,10 @@ let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
       showCoverImage: false
     }), {
       data: I
-    } = (0, l.IX)(n.extra.application_id), T = (0, s.q)(I) && O, S = T ? [a.z.CLOUD_PLAY_NEW_BADGE] : [], [A] = (0, u.US)(S), C = T;
+    } = (0, l.IX)(n.extra.application_id), T = (0, s.q)(I) && O, S = T ? [a.z.CLOUD_PLAY_NEW_BADGE] : [], [A] = (0, u.US)(S);
     return (0, r.jsxs)(p.Zb, {
       selected: b,
       usesCardRows: true,
-      isAutoHeight: C,
       children: [(0, r.jsxs)(p.lS, {
         children: [(0, r.jsxs)(p.e$, {
           children: [(0, r.jsx)(p.F9, {
