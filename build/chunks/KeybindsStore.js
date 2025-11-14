@@ -243,14 +243,14 @@ function ei(e) {
 
 function ea(e, t, n, r) {
   if (g.isPlatformEmbedded) try {
-    E.ZP.inputEventRegister(parseInt(e), t, n, r)
+    E.ZP.inputEventRegister(e, t, n, r)
   } catch (n) {
     throw D.error("Failed to register native keybind", {
       eventId: e,
       shortcut: t
     }, n), n
   } else {
-    eo(e);
+    eo(e.toString());
     let i = (0, _.r)(document);
     r.keyup && i.bindGlobal((0, y.BB)(t), () => n(false), "keyup"), r.keydown && i.bindGlobal((0, y.BB)(t), () => n(true), "keydown"), Z[e] = i
   }
@@ -281,13 +281,17 @@ function es(e) {
   if (0 === t.length || null == t || n === v.kg4.UNASSIGNED || !r) return;
   if (null == Y[n]) return void D.error("[kb store] KeybindStore: Looking for callback action ".concat(n, " but it doesn't exist in this version. Skipping"));
   let i = e.id,
-    a = Y[n].keyEvents;
-  e.action === v.kg4.TOGGLE_MUTE && er(), e.action === v.kg4.TOGGLE_OVERLAY_INPUT_LOCK && et(), ea(i, t, e => $(i, e), N({
+    a = parseInt(i, 10);
+  if (isNaN(a)) return void D.error("[kb store] KeybindStore: Keybind id is not a number. Skipping registration.", {
+    keybind: e
+  });
+  let o = Y[n].keyEvents;
+  e.action === v.kg4.TOGGLE_MUTE && er(), e.action === v.kg4.TOGGLE_OVERLAY_INPUT_LOCK && et(), ea(a, t, e => $(i, e), N({
     focused: true,
     blurred: true,
     keydown: false,
     keyup: false
-  }, a)), d.Z.validateKeybind((0, y.BB)(t))
+  }, o)), d.Z.validateKeybind((0, y.BB)(t))
 }
 
 function el(e) {
