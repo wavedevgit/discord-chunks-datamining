@@ -49,7 +49,7 @@ let y = e => {
       }, [i, a, e]),
       totalCards: e ? t : true
     }
-  })(i !== S.AW.ORBS), {
+  })(i !== O.AW.ORBS), {
     products: T
   } = ((e, t, n, r) => {
     let i = (0, x.Z)(),
@@ -66,8 +66,8 @@ let y = e => {
   }), [t, n.rankedSkuIds, T.length]), B = t || L;
   return (0, r.jsx)("div", {
     className: a()({
-      [O.row]: i === S.AW.HOME,
-      [O.feed]: i === S.AW.ORBS
+      [S.row]: i === O.AW.HOME,
+      [S.feed]: i === O.AW.ORBS
     }),
     ref: k,
     children: B ? (0, r.jsx)(r.Fragment, {
@@ -93,7 +93,7 @@ let y = e => {
           },
           children: (0, r.jsx)(m.Z, {
             skuId: null == e ? true : e.skuId,
-            prioritizedCurrency: i === S.AW.ORBS ? _.tA.ORBS : true,
+            prioritizedCurrency: i === O.AW.ORBS ? _.tA.ORBS : true,
             onClickAnalytics: (0, _.wO)(e, i, f)
           }, e.skuId)
         }, null == e ? true : e.skuId)

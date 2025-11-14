@@ -80,7 +80,7 @@ function B(e) {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(S.Z, {
+        return (0, r.jsx)(O.Z, {
           handleTransition: o,
           onClose: t
         })
@@ -148,7 +148,7 @@ function P(e) {
     enabled: p
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
-  }), S = (0, h.Y)({
+  }), O = (0, h.Y)({
     location: "CollectiblesShopHeaderBar"
   }), P = [{
     tab: y.AW.HOME,
@@ -213,12 +213,12 @@ function P(e) {
             handleTransition: n
           }, l)
         })
-      }), (p || R || S) && (0, r.jsxs)("div", {
+      }), (p || R || O) && (0, r.jsxs)("div", {
         className: T.alignedRightContent,
-        children: [R && (0, r.jsx)(O.Z, {
+        children: [R && (0, r.jsx)(S.Z, {
           handleTransition: n,
           selectedTab: t
-        }), S && (0, r.jsx)(c.P3F, {
+        }), O && (0, r.jsx)(c.P3F, {
           className: T.wishlistButton,
           onClick: Z,
           "aria-label": I.intl.string(I.t["7lZ31J"]),

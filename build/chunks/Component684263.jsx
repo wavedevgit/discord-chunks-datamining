@@ -29,11 +29,11 @@ let _ = Chunk647438.memo(function(e) {
     firstProfileEffect: _,
     firstAvatarDecoration: b,
     firstNameplate: v
-  } = (0, p.Rj)(t), x = (0, g.O1)(b), E = (0, c.ZP)(), S = (0, o.ap)(E), O = null != v && null != b && null != _, y = O ? s.EFr.SIZE_72 : s.EFr.SIZE_80;
+  } = (0, p.Rj)(t), x = (0, g.O1)(b), E = (0, c.ZP)(), O = (0, o.ap)(E), S = null != v && null != b && null != _, y = S ? s.EFr.SIZE_72 : s.EFr.SIZE_80;
   return (0, r.jsxs)("div", {
     className: a()(h.container, {
-      [h.twoItemBundle]: !O,
-      [h.threeItemBundle]: O
+      [h.twoItemBundle]: !S,
+      [h.threeItemBundle]: S
     }),
     children: [null != _ && (0, r.jsx)("div", {
       className: h.profileEffectShopPreview,
@@ -43,7 +43,7 @@ let _ = Chunk647438.memo(function(e) {
         isPurchased: n,
         removeSetHeight: true
       })
-    }), O && (0, r.jsx)("div", {
+    }), S && (0, r.jsx)("div", {
       className: h.nameplatePreview,
       children: (0, r.jsx)(u.Z, {
         user: i,
@@ -61,7 +61,7 @@ let _ = Chunk647438.memo(function(e) {
         avatarSize: y,
         isPurchased: n,
         isHighlighted: l,
-        avatarPlaceholderSrc: S ? m : C,
+        avatarPlaceholderSrc: O ? m : C,
         className: h.avatar
       })
     })]

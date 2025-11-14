@@ -34,7 +34,7 @@ function k(e) {
     products: t,
     header: n,
     category: l
-  } = e, i = (0, s.e7)([u.default], () => u.default.getCurrentUser()), a = (0, O.St)(t), o = p.Z.useConfig({
+  } = e, i = (0, s.e7)([u.default], () => u.default.getCurrentUser()), a = (0, S.St)(t), o = p.Z.useConfig({
     location: "Products"
   }).showCardsV2, g = (0, d.sp)();
   return null == i || 0 === t.length ? null : (0, r.jsxs)("div", {
@@ -104,7 +104,7 @@ function L(e) {
   } = e, u = (0, d.sp)(), p = (0, E.R)(), f = null != (t = null == u ? true : u.sessionId) ? t : "", {
     noCache: h,
     includeUnpublished: m
-  } = (0, S.Z)(), b = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+  } = (0, O.Z)(), b = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
     } = e;

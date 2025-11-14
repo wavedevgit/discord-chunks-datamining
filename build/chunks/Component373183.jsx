@@ -27,7 +27,7 @@ let v = Chunk647438.memo(function(e) {
     rewardSkuId: n
   } = e, i = l.useRef(null), {
     isHoveringOrFocusing: v
-  } = (0, d.Z)(i), x = l.useMemo(() => t.products.filter(e => e.skuId !== n).map(e => e.skuId), [t.products, n]), E = (0, s.e7)([g.Z], () => g.Z.getPurchases(x)), S = e => {
+  } = (0, d.Z)(i), x = l.useMemo(() => t.products.filter(e => e.skuId !== n).map(e => e.skuId), [t.products, n]), E = (0, s.e7)([g.Z], () => g.Z.getPurchases(x)), O = e => {
     e.stopPropagation();
     {
       let e = p.Z.getProduct(n);
@@ -43,7 +43,7 @@ let v = Chunk647438.memo(function(e) {
         }
       })
     }
-  }, O = l.useMemo(() => E.length === x.length, [E, x]);
+  }, S = l.useMemo(() => E.length === x.length, [E, x]);
   return (0, r.jsx)(o.kL8, {
     ref: i,
     className: a()(C.productCardContainer, {
@@ -53,7 +53,7 @@ let v = Chunk647438.memo(function(e) {
       category: t.name
     }),
     onClick: e => {
-      S(e)
+      O(e)
     },
     children: (0, r.jsxs)("div", {
       className: C.productCardContentContainer,
@@ -83,7 +83,7 @@ let v = Chunk647438.memo(function(e) {
                 color: "text-primary",
                 children: h.intl.string(h.t["0mDmg/"])
               }), (0, r.jsx)(c.u, {
-                text: O ? h.intl.string(h.t.cKH3tk) : h.intl.formatToPlainString(h.t["8aMDPc"], {
+                text: S ? h.intl.string(h.t.cKH3tk) : h.intl.formatToPlainString(h.t["8aMDPc"], {
                   totalCount: x.length
                 }),
                 align: "right",
@@ -117,10 +117,10 @@ let v = Chunk647438.memo(function(e) {
               fullWidth: true,
               children: (0, r.jsx)(o.zxk, {
                 variant: "primary",
-                onClick: S,
+                onClick: O,
                 text: h.intl.string(h.t.VnVTNc),
                 fullWidth: true,
-                disabled: !O
+                disabled: !S
               })
             })
           })]

@@ -32,28 +32,28 @@ function _(e) {
   }, [t]), x = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[a.m.POPULAR]) ? e : []
-  }, [t]), E = v.length > 0 && b, [S, O] = r.useState(E ? a.m.RECOMMENDED : a.m.POPULAR), y = (0, h.Z)(), j = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), k = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()), I = (0, p.a)(), [T, L] = r.useState([]), B = r.useCallback(() => {
-    O(a.m.RANDOM), L(i().shuffle(j))
+  }, [t]), E = v.length > 0 && b, [O, S] = r.useState(E ? a.m.RECOMMENDED : a.m.POPULAR), y = (0, h.Z)(), j = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), k = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()), I = (0, p.a)(), [T, L] = r.useState([]), B = r.useCallback(() => {
+    S(a.m.RANDOM), L(i().shuffle(j))
   }, [j]);
   r.useEffect(() => {
     L(i().shuffle(j))
   }, [j]);
   let P = r.useMemo(() => {
     let e = [];
-    if (S === a.m.RECENT) e = j;
-    else if (S === a.m.PRICE_LOW_TO_HIGH) e = (0, d.hC)([...j], n, _);
-    else if (S === a.m.RECOMMENDED) {
+    if (O === a.m.RECENT) e = j;
+    else if (O === a.m.PRICE_LOW_TO_HIGH) e = (0, d.hC)([...j], n, _);
+    else if (O === a.m.RECOMMENDED) {
       let t = y(v);
       e = l ? (0, d.Qf)(t, k) : t
-    } else if (S === a.m.POPULAR) {
+    } else if (O === a.m.POPULAR) {
       let t = y(x);
       e = l ? (0, d.Qf)(t, k) : t
-    } else S === a.m.RANDOM && (e = T);
+    } else O === a.m.RANDOM && (e = T);
     return _ ? (0, f.cf)(I(e)) : I(e)
-  }, [S, _, I, n, j, y, v, l, k, x, T]);
+  }, [O, _, I, n, j, y, v, l, k, x, T]);
   return {
-    sortType: S,
-    setSortType: O,
+    sortType: O,
+    setSortType: S,
     sortedItems: (0, g.l)(P),
     sortOptions: r.useMemo(() => {
       let e = [{

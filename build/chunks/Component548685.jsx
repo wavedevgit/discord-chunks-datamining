@@ -45,8 +45,8 @@ let A = e => {
     prioritizeUserDiscounts: Z,
     tab: w,
     buttonContainerClassName: H,
-    orbsSupportedOnly: M
-  } = e, D = (0, o.e7)([p.default], () => p.default.getCurrentUser()), F = C.ZP.canUseCollectibles(D), W = (0, I.B)("FeedBlock"), {
+    orbsSupportedOnly: D
+  } = e, M = (0, o.e7)([p.default], () => p.default.getCurrentUser()), F = C.ZP.canUseCollectibles(M), W = (0, I.B)("FeedBlock"), {
     sortType: V,
     setSortType: U,
     sortedItems: z,
@@ -57,7 +57,7 @@ let A = e => {
     sortedSkuIds: A,
     isPremiumUser: F,
     prioritizeUserDiscounts: Z,
-    orbsSupportedOnly: M
+    orbsSupportedOnly: D
   }), q = (0, k.St)(z), J = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, o.e7)([g.Z], () => g.Z.isFocused()), X = !J && Q, {
     animationPhase: $,
     startAnimation: ee
@@ -72,7 +72,7 @@ let A = e => {
   }, [ee, U, en]), ei = b.Z.useConfig({
     location: "FeedBlock"
   }).showCardsV2;
-  return null == D ? null : (0, r.jsxs)("div", {
+  return null == M ? null : (0, r.jsxs)("div", {
     className: a()(N.popularPicksSection, N.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: N.blockHeader,
@@ -134,14 +134,14 @@ let A = e => {
     }), (0, r.jsx)("div", {
       className: N.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => ei ? (0, r.jsx)(O.Z, {}, t + 1) : (0, r.jsx)(v.K, {}, t + 1))
+        children: [...Array(12)].map((e, t) => ei ? (0, r.jsx)(S.Z, {}, t + 1) : (0, r.jsx)(v.K, {}, t + 1))
       }) : q.slice(0, R).map((e, t) => {
         let n, l = _.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (X)
           if ($ === y.g.SHUFFLE_OUT) return ei ? (0, r.jsx)("div", {
             className: N.shuffleOutro,
-            children: (0, r.jsx)(O.Z, {
+            children: (0, r.jsx)(S.Z, {
               skipPulseAnimation: true
             })
           }, "".concat(e.skuId, "-").concat(t)) : (0, r.jsx)("div", {
@@ -161,13 +161,13 @@ let A = e => {
             className: n,
             children: (0, r.jsx)(E.Z, {
               skuId: null == e ? true : e.skuId,
-              prioritizedCurrency: w === T.AW.ORBS ? S.tA.ORBS : true,
-              onClickAnalytics: (0, S.wO)(e, w, et)
+              prioritizedCurrency: w === T.AW.ORBS ? O.tA.ORBS : true,
+              onClickAnalytics: (0, O.wO)(e, w, et)
             })
           }) : (0, r.jsx)(x.Z, {
             product: e,
             category: l,
-            user: D,
+            user: M,
             tab: w,
             className: n
           })

@@ -2,7 +2,7 @@
 /** chunk id: 838819, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => M
+  default: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -53,11 +53,11 @@ let H = e => {
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, i, r]), t
   },
-  M = function(e) {
+  D = function(e) {
     let {
       tab: t = N.AW.HOME
     } = e;
-    (0, h.z)(f.f), (0, O.f)();
+    (0, h.z)(f.f), (0, S.f)();
     let n = (0, p.Z)((0, o.Z)()),
       i = (0, s.e7)([m.default], () => m.default.getCurrentUser());
     (0, C.p2)();
@@ -66,10 +66,10 @@ let H = e => {
         onClose: R
       } = (0, L.Db)(),
       {
-        currentTab: M,
-        hasFilters: D
+        currentTab: D,
+        hasFilters: M
       } = (0, j.S)(),
-      F = l.useMemo(() => t === N.AW.HOME && M && D() ? M : t, [t, M, D]),
+      F = l.useMemo(() => t === N.AW.HOME && D && M() ? D : t, [t, D, M]),
       {
         categories: W,
         refreshCategories: V
@@ -79,7 +79,7 @@ let H = e => {
         sessionId: n,
         tab: F
       }),
-      U = (0, S.O)(W),
+      U = (0, O.O)(W),
       [z, G] = l.useState(),
       K = (0, s.e7)([b.Z], () => {
         var e;

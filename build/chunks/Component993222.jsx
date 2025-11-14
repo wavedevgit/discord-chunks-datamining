@@ -32,7 +32,7 @@ let v = e => {
     } = e, {
       isPurchased: v,
       isPartiallyOwnedBundle: x
-    } = (0, g.L)(t), E = (0, p.G1)(t), S = (0, a.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), O = (null == S ? true : S.unpublishedAt) != null ? (0, p.OT)(S.unpublishedAt) : null, y = (0, a.e7)([s.default], () => s.default.getCurrentUser()), j = c.ZP.canUseCollectibles(y), k = (0, C.Iw)(t), {
+    } = (0, g.L)(t), E = (0, p.G1)(t), O = (0, a.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), S = (null == O ? true : O.unpublishedAt) != null ? (0, p.OT)(O.unpublishedAt) : null, y = (0, a.e7)([s.default], () => s.default.getCurrentUser()), j = c.ZP.canUseCollectibles(y), k = (0, C.Iw)(t), {
       isOrbExclusive: I
     } = (0, m.Ip)({
       product: t,
@@ -40,12 +40,12 @@ let v = e => {
       prioritizedCurrency: h,
       hasDiscountOffer: null != k
     }), T = n;
-    if (null == T && (null == O || l ? !x && !v && (0, p.Yq)(t.skuId) ? T = f.Zh.NEW : I ? T = f.Zh.ORBS_EXCLUSIVE : E && (T = f.Zh.NITRO_EXCLUSIVE) : T = f.Zh.LIMITED_TIME), null == T || T === f.Zh.NONE) return null;
+    if (null == T && (null == S || l ? !x && !v && (0, p.Yq)(t.skuId) ? T = f.Zh.NEW : I ? T = f.Zh.ORBS_EXCLUSIVE : E && (T = f.Zh.NITRO_EXCLUSIVE) : T = f.Zh.LIMITED_TIME), null == T || T === f.Zh.NONE) return null;
     let L = null;
     switch (T) {
       case f.Zh.LIMITED_TIME:
-        L = null != O ? O > 1 ? _.intl.formatToPlainString(_.t.Io7ozn, {
-          days: O
+        L = null != S ? S > 1 ? _.intl.formatToPlainString(_.t.Io7ozn, {
+          days: S
         }) : _.intl.string(_.t.Bc13HF) : _.intl.string(_.t["h/uBCR"]);
         break;
       case f.Zh.NEW:

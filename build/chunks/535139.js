@@ -19,17 +19,18 @@ function u(e) {
   var t;
   let {
     allowedFlows: n = ["rpc", "web"]
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, c = (0, l.t)(e), u = (0, i.t)(null == c ? true : c.id, "AUTHORIZE_REQUEST"), d = n.includes("rpc") && u, f = n.includes("web") && (null == c ? true : c.connectionEntrypointUrl) != null, _ = d || f, {
-    token: p,
-    fetched: h
-  } = (0, s.o)(null != (t = null == c ? true : c.parentId) ? t : null == c ? true : c.id), m = h && null != p;
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, c = (0, l.t)(e), u = (0, i.t)(null == c ? true : c.id, "AUTHORIZE_REQUEST"), d = n.includes("rpc") && u, f = n.includes("web") && (null == c ? true : c.connectionEntrypointUrl) != null, _ = d ? "rpc" : f ? "web" : null, p = d || f, {
+    token: h,
+    fetched: m
+  } = (0, s.o)(null != (t = null == c ? true : c.parentId) ? t : null == c ? true : c.id), g = m && null != h;
   return {
-    fetched: h,
-    hasAlreadyLinked: m,
-    canStartAuthorization: _,
+    fetched: m,
+    hasAlreadyLinked: g,
+    canStartAuthorization: p,
     startAuthorization: r.useCallback(() => null == c ? null : d ? (a.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", e => e.socket.application.id === c.id, {}), "rpc") : f ? ((0, o.q)({
       href: c.connectionEntrypointUrl
     }), "web") : null, [d, f, c]),
-    connectionApp: c
+    connectionApp: c,
+    preferredFlow: _
   }
 }

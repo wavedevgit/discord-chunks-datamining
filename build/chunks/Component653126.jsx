@@ -45,8 +45,8 @@ let k = Chunk647438.memo(function(e) {
       onMouseEnter: Z,
       onMouseLeave: w,
       onFocus: H,
-      onBlur: M,
-      primaryCTAText: D,
+      onBlur: D,
+      primaryCTAText: M,
       secondaryCTAIcon: F,
       productNameClassName: W,
       badgeClassName: V,
@@ -57,7 +57,7 @@ let k = Chunk647438.memo(function(e) {
       previewingVariantIndex: K,
       handleEntering: Y,
       handleLeaving: q
-    } = (0, S.f)(t), J = (0, p.Nd)(), Q = null == J ? true : J.tab, X = (0, O.zQ)(t), $ = l.useRef(null), {
+    } = (0, O.f)(t), J = (0, p.Nd)(), Q = null == J ? true : J.tab, X = (0, S.zQ)(t), $ = l.useRef(null), {
       isHoveringOrFocusing: ee
     } = (0, d.Z)($), {
       handleCardVisibilityChange: et
@@ -74,7 +74,7 @@ let k = Chunk647438.memo(function(e) {
           [j.hovered]: ee
         }),
         onFocus: () => null == H ? true : H(t.skuId),
-        onBlur: () => null == M ? true : M(t.skuId),
+        onBlur: () => null == D ? true : D(t.skuId),
         onMouseEnter: () => null == Z ? true : Z(t.skuId),
         onMouseLeave: () => null == w ? true : w(t.skuId),
         children: (0, r.jsxs)("div", {
@@ -136,7 +136,7 @@ let k = Chunk647438.memo(function(e) {
                     skuId: t.skuId,
                     cardRef: $,
                     onClick: A,
-                    text: D,
+                    text: M,
                     prioritizedCurrency: z,
                     onClickAnalytics: G
                   }), !L && (0, r.jsx)(_.Z, {

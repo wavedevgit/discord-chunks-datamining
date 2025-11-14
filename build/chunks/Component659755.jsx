@@ -37,16 +37,16 @@ let E = e => {
           [x.faded]: (o || s) && !n,
           [x.fullPreview]: c
         }),
-        children: (0, r.jsx)(S, {
+        children: (0, r.jsx)(O, {
           product: t,
           isCardHovered: n
         })
-      }), o && (0, r.jsx)(O, {
+      }), o && (0, r.jsx)(S, {
         hidden: n
       })]
     })
   },
-  S = e => {
+  O = e => {
     let {
       product: t,
       isCardHovered: n
@@ -90,7 +90,7 @@ let E = e => {
         return null
     }
   },
-  O = e => {
+  S = e => {
     let {
       hidden: t
     } = e;

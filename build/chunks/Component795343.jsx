@@ -41,20 +41,20 @@ function I(e) {
   } = e, T = (0, d.sp)(), L = null != (t = null == T ? true : T.sessionId) ? t : "", {
     noCache: B,
     includeUnpublished: P
-  } = (0, S.Z)(), N = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, O.Z)(), N = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: A,
     currentPage: R,
     totalCount: Z,
     isFetchingResults: w
-  } = (0, C.a)(), H = (0, o.Wu)([p.Z], () => p.Z.getProductsBySkus(A)), M = l.useCallback(() => {
+  } = (0, C.a)(), H = (0, o.Wu)([p.Z], () => p.Z.getProductsBySkus(A)), D = l.useCallback(() => {
     var e;
     null == i || null == (e = i.current) || e.scrollToTop({
       animate: true
     })
-  }, [i]), D = null == A ? true : A.join("");
+  }, [i]), M = null == A ? true : A.join("");
   l.useEffect(() => {
-    M()
-  }, [D, M]);
+    D()
+  }, [M, D]);
   let F = (0, f.a)(),
     W = l.useMemo(() => F(H), [F, H]);
   l.useEffect(() => {
@@ -105,7 +105,7 @@ function I(e) {
       className: a()({
         [j.productsEmpty]: J
       }),
-      children: [J && (0, r.jsx)(O.Z, {}), (0, r.jsxs)("div", {
+      children: [J && (0, r.jsx)(S.Z, {}), (0, r.jsxs)("div", {
         className: a()(j.products, {
           [j.loadIn]: K
         }),

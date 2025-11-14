@@ -24,12 +24,12 @@ let m = e => {
     wideBannerBlock: m,
     handleTransition: _,
     tab: b
-  } = e, v = u.Z.getCategoryByStoreListingId(m.categoryStoreListingId), x = l.useRef(null), E = l.useRef(null), [S, O] = l.useState();
+  } = e, v = u.Z.getCategoryByStoreListingId(m.categoryStoreListingId), x = l.useRef(null), E = l.useRef(null), [O, S] = l.useState();
   l.useEffect(() => {
     let e = E.current;
     if (null == e) return;
     let t = () => {
-      e.naturalWidth > 0 && e.naturalHeight > 0 && O(1080 * (e.naturalHeight / e.naturalWidth))
+      e.naturalWidth > 0 && e.naturalHeight > 0 && S(1080 * (e.naturalHeight / e.naturalWidth))
     };
     return e.complete ? t() : e.onload = t, () => {
       e.onload = null
@@ -65,13 +65,13 @@ let m = e => {
             [C.wideBannerArtOrbs]: I
           }),
           style: {
-            height: null != S ? "".concat(S, "px") : "auto"
+            height: null != O ? "".concat(O, "px") : "auto"
           }
         })
       }), (0, r.jsx)("div", {
         className: C.wideBannerContentContainer,
         style: {
-          maxHeight: null != S ? "".concat(S, "px") : "auto"
+          maxHeight: null != O ? "".concat(O, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
           className: C.wideBannerTextContainer,

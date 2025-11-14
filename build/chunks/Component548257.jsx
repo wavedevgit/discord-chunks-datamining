@@ -56,12 +56,12 @@ let y = {
       heroLogo: P,
       heroBannerStatic: N,
       heroBannerAnimated: A
-    } = (0, _.hr)(s), R = null != (t = null == L ? true : L.responsive) && t, Z = null == L ? true : L.backgroundStyle, w = C === x.AW.ORBS ? S.intl.string(S.t["1CdL8d"]) : S.intl.string(S.t.xYKa1T), H = (0, m.FF)("CollectiblesContent");
+    } = (0, _.hr)(s), R = null != (t = null == L ? true : L.responsive) && t, Z = null == L ? true : L.backgroundStyle, w = C === x.AW.ORBS ? O.intl.string(O.t["1CdL8d"]) : O.intl.string(O.t.xYKa1T), H = (0, m.FF)("CollectiblesContent");
     return null != I && (n || s !== y) ? (0, r.jsxs)("div", {
       ref: k,
-      className: O.heroBlock,
+      className: S.heroBlock,
       children: [(0, r.jsx)("div", {
-        className: O.banner,
+        className: S.banner,
         style: null != Z ? {
           background: Z
         } : true,
@@ -71,34 +71,34 @@ let y = {
           isResponsive: R
         })
       }), (0, r.jsxs)("div", {
-        className: O.heroBlockContent,
+        className: S.heroBlockContent,
         children: [(0, r.jsxs)("div", {
-          className: i()(O.heroHeaderContainer, {
-            [O.responsive]: R
+          className: i()(S.heroHeaderContainer, {
+            [S.responsive]: R
           }),
           children: [n ? (0, r.jsx)("div", {
-            className: O.heroHeaderBadgeLogoSummaryContainer
+            className: S.heroHeaderBadgeLogoSummaryContainer
           }) : (0, r.jsxs)("div", {
-            className: O.heroHeaderBadgeLogoSummaryContainer,
+            className: S.heroHeaderBadgeLogoSummaryContainer,
             children: [null != s.unpublishedAt && (0, r.jsx)(u.IGR, {
               disableColor: true,
-              text: S.intl.string(S.t["h/uBCR"]),
-              className: O.limitedTimeBadge
+              text: O.intl.string(O.t["h/uBCR"]),
+              className: S.limitedTimeBadge
             }), (0, r.jsxs)("div", {
-              className: O.heroLogoNameContainer,
+              className: S.heroLogoNameContainer,
               children: [null != P && (0, r.jsx)("img", {
-                className: O.heroHeaderLogo,
+                className: S.heroHeaderLogo,
                 src: P,
                 alt: s.name,
                 style: null == B ? true : B.toDesktopStyles()
               }), null != s.title && (0, r.jsx)(u.Heading, {
                 variant: "heading-xxl/bold",
-                className: O.title,
+                className: S.title,
                 color: "header-primary",
                 children: s.title
               }), "" !== s.summary && (0, r.jsx)(u.Text, {
                 variant: "text-md/normal",
-                className: O.subHeaderText,
+                className: S.subHeaderText,
                 style: null != s.bannerTextColor ? {
                   color: s.bannerTextColor
                 } : true,
@@ -106,7 +106,7 @@ let y = {
               })]
             })]
           }), !n && (0, r.jsx)("div", {
-            className: O.heroHeaderButtonContainer,
+            className: S.heroHeaderButtonContainer,
             children: (0, r.jsx)(u.Button, {
               variant: "overlay-primary",
               onClick: () => {

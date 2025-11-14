@@ -41,7 +41,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let D = (0, Chunk884697.IC)(90),
+let M = (0, Chunk884697.IC)(90),
   F = {
     rankedSkuIds: [],
     name: "",
@@ -71,7 +71,7 @@ let D = (0, Chunk884697.IC)(90),
         name: W.name,
         unpublishedAt: W.unpublishedAt,
         logoUrl: (0, v.uV)(null != (t = W.heroLogo) ? t : W.logo, {
-          size: D
+          size: M
         }),
         categorySkuId: W.skuId,
         bannerAsset: W.heroBannerAsset,
@@ -111,7 +111,7 @@ let D = (0, Chunk884697.IC)(90),
         }, [i, a, e]),
         totalCards: e ? t : true
       }
-    })(U !== Z.AW.ORBS), eg = (0, S.a)()(ec), ef = (0, O.l)(eg).slice(0, ep), eh = (0, P.St)(ef), eC = U === Z.AW.ORBS ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), em = (0, E.FF)("CollectiblesContent"), e_ = null != W && W.isOrbsExclusive, eb = x.Z.useConfig({
+    })(U !== Z.AW.ORBS), eg = (0, O.a)()(ec), ef = (0, S.l)(eg).slice(0, ep), eh = (0, P.St)(ef), eC = U === Z.AW.ORBS ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), em = (0, E.FF)("CollectiblesContent"), e_ = null != W && W.isOrbsExclusive, eb = x.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, ev = () => {
       U === Z.AW.ORBS ? ((0, h.Y)({
@@ -136,15 +136,15 @@ let D = (0, Chunk884697.IC)(90),
     };
     return null != q && (n || X !== F) ? (0, r.jsxs)("div", {
       ref: G,
-      className: M.heroBlock,
+      className: D.heroBlock,
       children: [eo ? (0, N.gT)({
         isCustomCursorEnabled: Y,
-        className: M.riveEventOverlay,
+        className: D.riveEventOverlay,
         riveEventTargetRef: K
       }) : null, (0, r.jsx)("div", {
-        className: a()(M.banner, {
-          [M.rivBanner]: eo,
-          [M.responsive]: ei
+        className: a()(D.banner, {
+          [D.rivBanner]: eo,
+          [D.responsive]: ei
         }),
         style: null != ea ? {
           background: ea
@@ -157,41 +157,41 @@ let D = (0, Chunk884697.IC)(90),
           eventTargetRef: K
         })
       }), (0, r.jsxs)("div", {
-        className: M.heroBlockContent,
+        className: D.heroBlockContent,
         children: [eo ? (0, r.jsx)("div", {
-          className: M.rivBannerButtonContainer,
+          className: D.rivBannerButtonContainer,
           children: !n && (0, r.jsx)(d.Button, {
             variant: "overlay-primary",
             onClick: ev,
             text: eC
           })
         }) : (0, r.jsxs)("div", {
-          className: a()(M.heroHeaderContainer, {
-            [M.responsive]: ei
+          className: a()(D.heroHeaderContainer, {
+            [D.responsive]: ei
           }),
           children: [n ? (0, r.jsx)("div", {
-            className: M.heroHeaderBadgeLogoSummaryContainer
+            className: D.heroHeaderBadgeLogoSummaryContainer
           }) : (0, r.jsxs)("div", {
-            className: M.heroHeaderBadgeLogoSummaryContainer,
+            className: D.heroHeaderBadgeLogoSummaryContainer,
             children: [null != X.unpublishedAt && (0, r.jsx)(d.IGR, {
               disableColor: true,
               text: H.intl.string(H.t["h/uBCR"]),
-              className: M.limitedTimeBadge
+              className: D.limitedTimeBadge
             }), (0, r.jsxs)("div", {
-              className: M.heroLogoNameContainer,
+              className: D.heroLogoNameContainer,
               children: [null != et && (0, r.jsx)("img", {
-                className: M.heroHeaderLogo,
+                className: D.heroHeaderLogo,
                 src: et,
                 alt: X.name,
                 style: null == ee ? true : ee.toDesktopStyles()
               }), null != X.title && (0, r.jsx)(d.Heading, {
                 variant: "heading-xxl/bold",
-                className: M.title,
+                className: D.title,
                 color: "header-primary",
                 children: X.title
               }), "" !== X.summary && (0, r.jsx)(d.Text, {
                 variant: e_ ? "text-lg/medium" : "text-md/normal",
-                className: e_ ? M.orbsSubHeaderText : M.subHeaderText,
+                className: e_ ? D.orbsSubHeaderText : D.subHeaderText,
                 style: null != X.bannerTextColor ? {
                   color: X.bannerTextColor
                 } : true,
@@ -199,7 +199,7 @@ let D = (0, Chunk884697.IC)(90),
               })]
             })]
           }), !n && (0, r.jsx)("div", {
-            className: M.heroHeaderButtonContainer,
+            className: D.heroHeaderButtonContainer,
             children: (0, r.jsx)(d.Button, {
               variant: "overlay-primary",
               onClick: ev,
@@ -208,8 +208,8 @@ let D = (0, Chunk884697.IC)(90),
           })]
         }), (0, r.jsx)("div", {
           className: a()({
-            [M.row]: U === Z.AW.HOME,
-            [M.feed]: U === Z.AW.ORBS
+            [D.row]: U === Z.AW.HOME,
+            [D.feed]: U === Z.AW.ORBS
           }),
           ref: ed,
           children: n || eu ? (0, r.jsx)(r.Fragment, {

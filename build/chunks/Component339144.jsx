@@ -150,24 +150,25 @@ let L = Chunk647438.memo(function(e) {
         canStartAuthorization: ei,
         startAuthorization: el,
         hasAlreadyLinked: eo,
-        connectionApp: ea
+        connectionApp: ea,
+        preferredFlow: es
       } = (0, m.F)(z, {
         allowedFlows: [m.r.RPC, m.r.WEB]
       }),
-      es = N.Z.useConfig({
+      ec = N.Z.useConfig({
         location: "ActivityActions"
       }).enabled,
-      ec = i.useRef(null),
-      [eu, ed] = i.useState(false);
+      eu = i.useRef(null),
+      [ed, ep] = i.useState(false);
     i.useEffect(() => () => {
-      null != ec.current && clearTimeout(ec.current)
+      null != eu.current && clearTimeout(eu.current)
     }, []), i.useEffect(() => {
-      eo && (ed(false), null != ec.current && (clearTimeout(ec.current), ec.current = null))
+      eo && (ep(false), null != eu.current && (clearTimeout(eu.current), eu.current = null))
     }, [eo]);
-    let ep = null == Q ? null : (0, r.jsx)(k, {
+    let ef = null == Q ? null : (0, r.jsx)(k, {
         guildId: Q
       }),
-      ef = (null != B || null == F || (0, p.R)()) && (L || E) ? (L ? (a = false, s = () => {
+      eh = (null != B || null == F || (0, p.R)()) && (L || E) ? (L ? (a = false, s = () => {
         en(), (0, b.v)(X, b.d.STREAM, false)
       }, f = u.g5r, y = A.intl.string(A.t.S5anIc)) : U ? (a = false, s = () => {
         er(), (0, b.v)(X, b.d.STREAM, true)
@@ -182,34 +183,34 @@ let L = Chunk647438.memo(function(e) {
           icon: f
         })
       })) : null,
-      eh = J && null == F ? (0, r.jsx)(Z.Z, {
+      eg = J && null == F ? (0, r.jsx)(Z.Z, {
         ref: K,
         tooltipText: A.intl.string(A.t["hC/Zey"]),
         onClick: $,
         icon: u.ejJ
       }) : null,
-      eg = null == F ? null : (0, r.jsx)(Z.Z, {
+      em = null == F ? null : (0, r.jsx)(Z.Z, {
         tooltipText: A.intl.string(A.t["R/FK4A"]),
         onClick: ee(F.applicationId, F.location),
         icon: u.PBZ
       }),
-      em = null == V ? null : (0, r.jsx)(Z.Z, {
+      eb = null == V ? null : (0, r.jsx)(Z.Z, {
         tooltipText: A.intl.string(A.t["R/FK4A"]),
         onClick: et(V.applicationId),
         icon: u.PBZ
       }),
-      eb = null == C ? null : (0, r.jsx)(_.Z, {}),
-      e_ = es && ei && !eo ? (0, r.jsx)(M, {
+      e_ = null == C ? null : (0, r.jsx)(_.Z, {}),
+      ey = ec && ei && !eo ? (0, r.jsx)(M, {
         runningGame: B,
         startAuthorization: () => {
-          ed(true), null != ec.current && clearTimeout(ec.current), ec.current = setTimeout(() => {
-            ed(false)
-          }, 9e4), el()
+          es !== m.r.WEB && (ep(true), null != eu.current && clearTimeout(eu.current), eu.current = setTimeout(() => {
+            ep(false)
+          }, 9e4)), el()
         },
         connectionApp: ea,
         ref: Y
       }) : null,
-      ey = es && ei && !eo ? (0, r.jsx)(c.J2, {
+      eO = ec && ei && !eo ? (0, r.jsx)(c.J2, {
         title: A.intl.string(A.t.ULvRFd),
         body: A.intl.string(A.t["HJJDr+"]),
         targetElementRef: Y,
@@ -218,14 +219,14 @@ let L = Chunk647438.memo(function(e) {
         caretConfig: {
           align: "center"
         },
-        shouldShow: eu,
+        shouldShow: ed,
         onRequestClose: () => {
-          ed(false), null != ec.current && (clearTimeout(ec.current), ec.current = null)
+          ep(false), null != eu.current && (clearTimeout(eu.current), eu.current = null)
         }
       }) : null;
-    return null == ef && null == eh && null == eg && null == em && null == e_ && null == ep ? null : (0, r.jsxs)("div", {
+    return null == eh && null == eg && null == em && null == eb && null == ey && null == ef ? null : (0, r.jsxs)("div", {
       className: R.actions,
-      children: [null != (t = null != ep ? ep : e_) ? t : eh, ef, null != (l = null != eg ? eg : em) ? l : eb, ey]
+      children: [null != (t = null != ef ? ef : ey) ? t : eg, eh, null != (l = null != em ? em : eb) ? l : e_, eO]
     })
   }),
   M = Chunk647438.forwardRef(function(e, t) {

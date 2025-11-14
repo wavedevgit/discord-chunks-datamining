@@ -55,7 +55,7 @@ function E(e, t) {
   }), e
 }
 
-function S(e, t) {
+function O(e, t) {
   if (null == e) return {};
   var n, r, l = function(e, t) {
     if (null == e) return {};
@@ -70,7 +70,7 @@ function S(e, t) {
   }
   return l
 }
-let O = e => {
+let S = e => {
     var t, n;
     let {
       product: i,
@@ -87,7 +87,7 @@ let O = e => {
           var t, {
               ref: n
             } = e,
-            l = S(e, ["ref"]);
+            l = O(e, ["ref"]);
           return (0, r.jsx)("div", E(x({
             className: a()({
               [v.collapsed]: d,
@@ -118,7 +118,7 @@ let O = e => {
       zIndex: c
     } = e, u = (0, o.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(t.variantLabel)), {
       onFocus: g
-    } = u, f = S(u, ["onFocus"]), {
+    } = u, f = O(u, ["onFocus"]), {
       isPurchased: h
     } = (0, C.L)(t);
     return (0, r.jsx)(p.u, {
@@ -170,7 +170,7 @@ let O = e => {
     } = e, u = (0, m.LJ)(t), p = (0, h.o)(u);
     return null == u || u.type !== c.Z.VARIANTS_GROUP || null == u.variants || 0 === u.variants.length ? null : (0, r.jsxs)("div", {
       className: a()(v.productVariantsOuterContainer, s),
-      children: [(0, r.jsx)(O, {
+      children: [(0, r.jsx)(S, {
         product: u,
         onVariantEnter: i,
         onVariantExit: o,
