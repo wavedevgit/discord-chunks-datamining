@@ -1,7 +1,7 @@
 /** Chunk was on 75909 **/
 /** chunk id: 449788, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,38 +17,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e) {
+function E(e) {
   let {
     floatRight: t
   } = e, {
     quest: n,
-    sourceQuestContent: g,
-    isPortrait: E
+    sourceQuestContent: E,
+    isPortrait: g
   } = o.useContext(m.VideoQuestModalContext), O = (0, s.aM)(), {
     enabled: b,
     variant: h
   } = d.EO.useConfig({
     location: f.dr.VIDEO_MODAL
-  }), S = h === d.m_.OVERLAY_SHARE_ON_VIDEO, [C, y] = (0, p.G6)(v.intl.string(v.t.RDE0Sc), v.intl.string(v.t["+5kSoW"]), 1700), [_, x] = o.useState(false), j = o.useRef(null), D = (0, c.vB)(n.config), T = o.useCallback(() => {
+  }), S = h === d.m_.OVERLAY_SHARE_ON_VIDEO, [C, y] = (0, p.G6)(v.intl.string(v.t.RDE0Sc), v.intl.string(v.t["+5kSoW"]), 1700), [_, x] = o.useState(false), j = o.useRef(null), D = (0, c.vB)(n.config), P = o.useCallback(() => {
     D && ((0, c.f2)(n.id, {
       content: u.jn.VIDEO_MODAL,
       ctaContent: a.jZ.COPY_QUEST_URL,
       impressionId: O,
-      sourceQuestContent: g
-    }), (b || E) && (0, i.showToast)((0, i.createToast)(v.intl.string(v.t["+5kSoW"]), i.ToastType.SUCCESS)), y(), x(true), null != j.current && clearTimeout(j.current), j.current = setTimeout(() => {
+      sourceQuestContent: E
+    }), (b || g) && (0, i.showToast)((0, i.createToast)(v.intl.string(v.t["+5kSoW"]), i.ToastType.SUCCESS)), y(), x(true), null != j.current && clearTimeout(j.current), j.current = setTimeout(() => {
       x(false)
     }, 1700))
-  }, [O, D, n.id, g, y, b, E]);
+  }, [O, D, n.id, E, y, b, g]);
   return (o.useEffect(() => () => {
     null != j.current && clearTimeout(j.current)
-  }, []), D) ? b || E ? (0, r.jsx)("div", {
+  }, []), D) ? b || g ? (0, r.jsx)("div", {
     style: {
       marginLeft: t ? "auto" : true
     },
     children: _ ? (0, r.jsx)(i.hU, {
       variant: "active",
       icon: i.owK,
-      onClick: T,
+      onClick: P,
       "aria-label": v.intl.string(v.t.RDE0Sc)
     }) : (0, r.jsx)(l.u, {
       text: S || !b ? true : v.intl.string(v.t.WqhZss),
@@ -56,12 +56,12 @@ function g(e) {
         variant: S ? "overlay-secondary" : "secondary",
         icon: b ? i.aAc : i.TIy,
         "aria-label": v.intl.string(v.t.RDE0Sc),
-        onClick: T
+        onClick: P
       })
     })
   }) : (0, r.jsx)(i.Button, {
     variant: "secondary",
     text: C,
-    onClick: T
+    onClick: P
   }) : null
 }

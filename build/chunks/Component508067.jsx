@@ -28,31 +28,31 @@ function v(e) {
     animate: n,
     interactionEnabled: l,
     backgroundColor: v,
-    preloadedBuffers: g,
-    duration: E,
+    preloadedBuffers: E,
+    duration: g,
     rounded: O,
     maxSeekableTime: b,
     onClick: h,
     onScrubBack: S,
     onScrubForward: C
-  } = e, [y, _] = o.useState(null), [x, j] = o.useState(null), [D, T] = o.useState(null), [P, R] = o.useState(false), I = o.useRef(null), N = e => {
+  } = e, [y, _] = o.useState(null), [x, j] = o.useState(null), [D, P] = o.useState(null), [T, R] = o.useState(false), I = o.useRef(null), N = e => {
     I.current = e, _(e)
   };
   o.useEffect(() => {
-    null != y && (null == b ? T(null) : T(f(b, E, y)))
-  }, [y, b, E]);
-  let w = (0, c.Z)(e => {
+    null != y && (null == b ? P(null) : P(f(b, g, y)))
+  }, [y, b, g]);
+  let A = (0, c.Z)(e => {
       N(e.contentRect)
     }),
-    A = (0, s.y)(w);
+    w = (0, s.y)(A);
   o.useLayoutEffect(() => {
-    null != A.current && N(A.current.getBoundingClientRect())
-  }, [A]), o.useEffect(() => {
+    null != w.current && N(w.current.getBoundingClientRect())
+  }, [w]), o.useEffect(() => {
     let e = () => {
-      null != A.current && N(A.current.getBoundingClientRect())
+      null != w.current && N(w.current.getBoundingClientRect())
     };
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, [A]);
+  }, [w]);
   let k = e => {
       j(e.clientX)
     },
@@ -62,30 +62,30 @@ function v(e) {
       } = e;
       t === d.mR.ArrowLeft && null != S ? (e.preventDefault(), e.stopPropagation(), S()) : t === d.mR.ArrowRight && null != C && (e.preventDefault(), e.stopPropagation(), C())
     }, [S, C]),
-    L = null != x && null != y ? p(x, y, E) : 0,
+    L = null != x && null != y ? p(x, y, g) : 0,
     V = (0, u.yv)(L),
-    Z = null != y ? y.right - f(t / 100 * E, E, y) : null,
+    Z = null != y ? y.right - f(t / 100 * g, g, y) : null,
     F = null != x && null != y ? y.right - x : null,
     B = null != D && null != y ? y.right - D : null;
   return (0, r.jsxs)("div", {
     className: m.cont,
-    ref: A,
+    ref: w,
     children: [(0, r.jsxs)(a.P3F, {
       className: i()(m.hitboxArea, {
         [m.interactionEnabled]: l
       }),
       ignoreKeyPress: true,
       onClick: e => {
-        l && null != h && h(p(e.clientX, e.currentTarget.getBoundingClientRect(), E))
+        l && null != h && h(p(e.clientX, e.currentTarget.getBoundingClientRect(), g))
       },
       onMouseEnter: e => {
-        l && (null != A.current && N(A.current.getBoundingClientRect()), R(true), k(e))
+        l && (null != w.current && N(w.current.getBoundingClientRect()), R(true), k(e))
       },
       onMouseLeave: e => {
         l && (R(false), j(null))
       },
       onMouseMove: e => {
-        l && P && k(e)
+        l && T && k(e)
       },
       onKeyDown: M,
       tabIndex: l ? true : false,
@@ -95,9 +95,9 @@ function v(e) {
           bottom: 12
         }
       },
-      children: [null == g ? true : g.map(e => (0, r.jsx)("div", {
+      children: [null == E ? true : E.map(e => (0, r.jsx)("div", {
         className: i()(m.buffer, {
-          [m.bufferHovered]: P,
+          [m.bufferHovered]: T,
           [m.rounded]: O
         }),
         style: {
@@ -119,9 +119,9 @@ function v(e) {
         percent: t,
         foregroundColor: "#FFFFFF",
         backgroundColor: null != v ? v : true,
-        size: P ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
+        size: T ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
         animate: n
-      }), P && null != V && (0, r.jsx)(a.Text, {
+      }), T && null != V && (0, r.jsx)(a.Text, {
         className: m.timeDisplay,
         variant: "text-xs/normal",
         style: {
@@ -129,7 +129,7 @@ function v(e) {
           color: "#FFFFFF"
         },
         children: V
-      }), P && l && null != Z && (0, r.jsx)("div", {
+      }), T && l && null != Z && (0, r.jsx)("div", {
         className: m.grabber,
         style: {
           right: "".concat(Z - 6, "px")

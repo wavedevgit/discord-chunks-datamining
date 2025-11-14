@@ -1,7 +1,7 @@
 /** Chunk was on 75909 **/
 /** chunk id: 589313, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,23 +17,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g() {
+function E() {
   var e, t, n;
   let {
-    quest: g,
-    sourceQuestContent: E,
+    quest: E,
+    sourceQuestContent: g,
     onClose: O
   } = Chunk647438.useContext(Chunk215113.VideoQuestModalContext), {
     enabled: b
   } = Chunk937797.EO.useConfig({
     location: Chunk46140.dr.VIDEO_MODAL
-  }), h = (0, Chunk113434.tP)(g), S = null != (0, Chunk509212.LM)(g.config), C = (0, Chunk969227.D)({
-    quest: g,
+  }), h = (0, Chunk113434.tP)(E), S = null != (0, Chunk509212.LM)(E.config), C = (0, Chunk969227.D)({
+    quest: E,
     questContent: Chunk497505.jn.QUEST_HOME_DESKTOP,
-    sourceQuestContent: E,
+    sourceQuestContent: g,
     onClick: O,
     shouldShowShopIfAlreadyClaimed: true
-  }), y = (null == (e = g.userStatus) ? true : module.claimedAt) != null ? S ? Chunk388032.intl.string(Chunk388032.t.WYchde) : Chunk388032.intl.string(Chunk388032.t.vTgCWx) : Chunk388032.intl.string(Chunk388032.t.cfY4PE), _ = (null == (t = g.userStatus) ? true : exports.completedAt) == null && b ? h ? Chunk388032.intl.string(Chunk388032.t.NJ6Bnm) : Chunk388032.intl.string(Chunk388032.t.USNO1K) : true;
+  }), y = (null == (e = E.userStatus) ? true : module.claimedAt) != null ? S ? Chunk388032.intl.string(Chunk388032.t.WYchde) : Chunk388032.intl.string(Chunk388032.t.vTgCWx) : Chunk388032.intl.string(Chunk388032.t.cfY4PE), _ = (null == (t = E.userStatus) ? true : exports.completedAt) == null && b ? h ? Chunk388032.intl.string(Chunk388032.t.NJ6Bnm) : Chunk388032.intl.string(Chunk388032.t.USNO1K) : true;
   return (0, Chunk951288.jsx)(Chunk28664.u, {
     text: _,
     children: (0, Chunk951288.jsx)("div", {
@@ -52,10 +52,10 @@ function g() {
               }
             }
           }
-        })(g, b),
+        })(E, b),
         onClick: C,
         text: y,
-        disabled: (null == (n = g.userStatus) ? true : require.completedAt) == null
+        disabled: (null == (n = E.userStatus) ? true : require.completedAt) == null
       })
     })
   })

@@ -30,19 +30,19 @@ function S(e) {
     quest: _,
     sourceQuestContent: x,
     onClose: j
-  } = o.useContext(g.VideoQuestModalContext), {
+  } = o.useContext(E.VideoQuestModalContext), {
     enabled: D
   } = d.EO.useConfig({
-    location: E.dr.VIDEO_MODAL
-  }), [T, P] = o.useState(false), R = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), I = o.useRef(null == (t = _.userStatus) ? true : t.completedAt), [N, w] = o.useState(false), {
-    completedRatio: A,
+    location: g.dr.VIDEO_MODAL
+  }), [P, T] = o.useState(false), R = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), I = o.useRef(null == (t = _.userStatus) ? true : t.completedAt), [N, A] = o.useState(false), {
+    completedRatio: w,
     completedRatioDisplay: k
   } = (0, c.I)(_), M = o.useMemo(() => m.r.build(_.config).defaultRewardName, [_]), L = (null == (n = _.userStatus) ? true : n.completedAt) != null, V = (null == (S = _.userStatus) ? true : S.claimedAt) != null, Z = O.intl.formatToPlainString(L && !V && D ? O.t.NRp4K4 : O.t["12IWP2"], {
     rewardName: M
   });
   o.useEffect(() => {
     var e, t;
-    null == I.current && (null == (e = _.userStatus) ? true : e.completedAt) != null && D && w(true), I.current = null == (t = _.userStatus) ? true : t.completedAt
+    null == I.current && (null == (e = _.userStatus) ? true : e.completedAt) != null && D && A(true), I.current = null == (t = _.userStatus) ? true : t.completedAt
   }, [null == (C = _.userStatus) ? true : C.completedAt, D]);
   let F = (0, v.D)({
       quest: _,
@@ -64,10 +64,10 @@ function S(e) {
       position: y,
       text: Z,
       onTooltipShow: () => {
-        P(true)
+        T(true)
       },
       onTooltipHide: () => {
-        P(false)
+        T(false)
       },
       children: (0, r.jsx)(a.P3F, {
         className: b.progressCont,
@@ -80,15 +80,15 @@ function S(e) {
         children: (0, r.jsx)(p.Z, {
           quest: _,
           size: 48,
-          percentComplete: A,
-          percentCompleteText: T ? k : true,
+          percentComplete: w,
+          percentCompleteText: P ? k : true,
           percentCompleteTextVariant: "text-sm/medium",
           children: (0, r.jsx)(f.Z, {
             className: b.questProgressRewardTile,
             quest: _,
             questContent: u.jn.VIDEO_MODAL,
             autoplay: false,
-            location: E.dr.VIDEO_MODAL,
+            location: g.dr.VIDEO_MODAL,
             sourceQuestContent: x
           })
         })

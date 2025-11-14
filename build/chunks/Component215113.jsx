@@ -89,14 +89,14 @@ function F(e) {
     impressionRef: F,
     parentModalOpenStartClockTime: B,
     sourceQuestContent: H
-  } = e, U = (0, E.il)(b), q = (0, O.tP)(b), Y = (0, g.aM)(), [G, Q] = o.useState(U.progressSeconds), [W, K] = o.useState(142), {
+  } = e, U = (0, g.il)(b), q = (0, O.tP)(b), Y = (0, E.aM)(), [G, Q] = o.useState(U.progressSeconds), [W, K] = o.useState(142), {
     variant: z,
     enabled: X
   } = S.EO.useConfig({
-    location: w.dr.VIDEO_MODAL
+    location: A.dr.VIDEO_MODAL
   }), J = null == (n = b.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.X.WATCH_VIDEO];
   s()(null != J, "VideoQuestModal: videoTask must not be null");
-  let $ = (0, E.ZS)(J),
+  let $ = (0, g.ZS)(J),
     ee = "portrait" === $,
     et = (0, p.Z)(e => {
       K(e.target.offsetHeight)
@@ -110,7 +110,7 @@ function F(e) {
       impressionId: Y
     }),
     el = (0, u.e7)([f.Z], () => f.Z.getState().theme),
-    ei = (0, d.wjy)(el) ? A.BR.DARK : A.BR.LIGHT,
+    ei = (0, d.wjy)(el) ? w.BR.DARK : w.BR.LIGHT,
     ea = o.useMemo(() => ({
       quest: b,
       sourceQuestContent: H,
@@ -170,7 +170,7 @@ function F(e) {
                   alt: b.config.messages.gameTitle,
                   className: i()(M.contentHeaderLogotype, M.accentOnHover),
                   src: (0, C.fh)(b, C.eC.LOGO_TYPE, ei).url
-                }), (0, r.jsx)(P.Z, {}), (0, r.jsxs)("div", {
+                }), (0, r.jsx)(T.Z, {}), (0, r.jsxs)("div", {
                   className: M.questHeading,
                   children: [(0, r.jsx)(d.Heading, {
                     variant: "heading-md/semibold",
@@ -201,7 +201,7 @@ function F(e) {
                 className: M.portraitContentRow,
                 children: [q ? null : (0, r.jsx)(D.Z, {
                   tooltipPosition: "top"
-                }), (0, r.jsx)(j.Z, {}), !er && (0, r.jsx)(T.Z, {
+                }), (0, r.jsx)(j.Z, {}), !er && (0, r.jsx)(P.Z, {
                   floatRight: true
                 })]
               }) : null, (0, r.jsxs)("div", {
@@ -216,7 +216,7 @@ function F(e) {
                   })]
                 }), X ? (0, r.jsx)(_.Z, {
                   handlePrimaryCtaClick: eo
-                }) : (0, r.jsx)(T.Z, {})]
+                }) : (0, r.jsx)(P.Z, {})]
               })]
             }) : (0, r.jsxs)("div", {
               className: i()(M.contentFooter, X ? M.contentFooterV2 : M.contentFooterV1),
@@ -233,7 +233,7 @@ function F(e) {
                 className: i()(M.contentFooterButtonCont, {
                   [M.contentFooterButtonContV2]: X
                 }),
-                children: [!er && (0, r.jsx)(T.Z, {}), (0, r.jsx)(x.Z, {}), X ? (0, r.jsx)(_.Z, {
+                children: [!er && (0, r.jsx)(P.Z, {}), (0, r.jsx)(x.Z, {}), X ? (0, r.jsx)(_.Z, {
                   handlePrimaryCtaClick: eo
                 }) : null]
               })]
