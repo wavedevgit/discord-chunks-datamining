@@ -6,9 +6,9 @@ require.d(exports, {
 var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
   Chunk92885 = require("./92885.js"),
-  Chunk206942 = require("./206942.js"),
+  Chunk32832 = require("./32832.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.k4)(Chunk313789.n.NOTIFICATIONS_SOUNDS_CATEGORY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.LweOYy),
-  buildLayout: () => [Chunk92885.D, Chunk206942.Z]
+  buildLayout: () => [Chunk92885.D, Chunk32832.Z]
 })

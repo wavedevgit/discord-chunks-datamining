@@ -82,6 +82,7 @@ let a = [{
     }) : s.intl.formatToPlainString(s.t.ji1uNt, {
       count: e
     }),
+    useCollapsibleSubtitle: () => Chunk388032.intl.string(Chunk388032.t.LYO7bT),
     ContextProvider: Chunk299426.u,
     buildLayout: () => a.map(t => (0, r.j)(t))
   })

@@ -708,6 +708,7 @@ class eh extends(r = Chunk647438.PureComponent) {
           }, "readonly-".concat(j.id));
         case eo.d4z.PUBLIC_THREAD:
         case eo.d4z.PRIVATE_THREAD:
+        case eo.d4z.ANNOUNCEMENT_THREAD:
           return (0, i.jsx)($.Z, {
             channel: j,
             guild: r,
