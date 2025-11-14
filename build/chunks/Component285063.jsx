@@ -20,6 +20,7 @@ function s(e) {
   });
   returntrue !== n ? l : (0, r.jsx)(i.u, {
     __unsupportedReactNodeAsText: t.full,
+    ariaHidden: true,
     children: l
   })
 }
