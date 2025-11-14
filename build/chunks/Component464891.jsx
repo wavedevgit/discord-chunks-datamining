@@ -215,7 +215,6 @@ let et = Chunk647438.memo(function(e) {
         [U.a.SYSTEM_TAG]: T,
         [U.a.BADGES]: w
       },
-      renderRemixTag: true,
       previewGuildId: o,
       preview: b,
       subscribeToGroupId: y,
@@ -254,8 +253,7 @@ function en(e, t, n) {
       onContextMenu: l,
       onPopoutRequestClose: f,
       decorations: n,
-      preview: true,
-      renderRemixTag: true
+      preview: true
     }), s && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("i", {
         className: W.separator,

@@ -2,7 +2,7 @@
 /** chunk id: 177839, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,14 +15,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk66595 = require("./66595.jsx"),
   Chunk535322 = require("./535322.jsx"),
-  Chunk477734 = require("./477734.js"),
   Chunk626135 = require("./626135.js"),
   Chunk881100 = require("./881100.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk504186 = require("./504186.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,39 +30,39 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
-let v = e => e ? E.intl.string(E.t.QX14gI) : E.intl.string(E.t.RGadQR),
-  I = e => {
+let O = e => e ? g.intl.string(g.t.QX14gI) : g.intl.string(g.t.RGadQR),
+  v = e => {
     let {
       isShowingAll: t,
       onClick: n
     } = e;
     return (0, r.jsxs)(l.P3F, {
       onClick: n,
-      className: b.customButton,
-      children: [t ? E.intl.string(E.t.maZaN3) : E.intl.string(E.t["37C26f"]), t ? (0, r.jsx)(l.u04, {
+      className: E.customButton,
+      children: [t ? g.intl.string(g.t.maZaN3) : g.intl.string(g.t["37C26f"]), t ? (0, r.jsx)(l.u04, {
         size: "md",
         color: "currentColor",
-        className: b.arrow
+        className: E.arrow
       }) : (0, r.jsx)(l.CJ0, {
         size: "md",
         color: "currentColor",
-        className: b.arrow
+        className: E.arrow
       })]
     })
   },
-  T = e => {
+  I = e => {
     let {
       title: t,
       description: n,
@@ -79,73 +78,73 @@ let v = e => e ? E.intl.string(E.t.QX14gI) : E.intl.string(E.t.RGadQR),
     return (0, r.jsx)(d.Gt, {
       value: m,
       children: (0, r.jsxs)("div", {
-        className: o()(b.perkCard, i),
+        className: o()(E.perkCard, i),
         children: [p ? (0, r.jsx)(_.Z, {
-          className: b.perkCardNewBadge,
+          className: E.perkCardNewBadge,
           shouldInheritBackgroundColor: true,
           shouldInheritTextColor: true
         }) : null, h ? (0, r.jsx)(f.Z, {
-          className: b.perkCardEarlyAccessBadge
+          className: E.perkCardEarlyAccessBadge
         }) : null, (0, r.jsx)("img", {
           src: a,
           alt: "",
-          className: o()(s, b.perksCardArt)
+          className: o()(s, E.perksCardArt)
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsxs)(l.Heading, {
             variant: "heading-lg/extrabold",
-            className: b.perkCardHeading,
+            className: E.perkCardHeading,
             children: [t, " ", c]
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
-            className: b.perkCardDescription,
+            className: E.perkCardDescription,
             children: "function" == typeof n ? n(m) : n
           })]
         })]
       })
     })
   },
-  S = e => {
+  T = e => {
     let {
       className: t,
       isSubscriberNitroHome: n = false
-    } = e, [a, u] = i.useState(false), f = (0, m.N)({
-      styles: b
+    } = e, [a, u] = i.useState(false), f = (0, h.N)({
+      styles: E
     }), _ = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
-      analyticsLocations: E
-    } = (0, d.ZP)(), y = (0, p._f)(), S = () => {
-      h.default.track(g.rMx.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
-        location_stack: E,
+      analyticsLocations: g
+    } = (0, d.ZP)(), b = () => {
+      p.default.track(m.rMx.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
+        location_stack: g,
         was_expanded: a
       }), u(!a)
-    }, A = [f.emoji, f.streaming, f.upload, f.customAppIcons, f.soundboard, y ? f.remix : f.videoBackground, f.superReactions, f.stickersPremiumPerk, f.badgeAlt];
+    }, T = [f.emoji, f.streaming, f.upload, f.customAppIcons, f.soundboard, f.videoBackground, f.superReactions, f.stickersPremiumPerk, f.badgeAlt];
     return (0, r.jsxs)("div", {
-      className: o()(b.perksContainer, t, {
-        [b.partiallyHidden]: n && !a,
-        [b.subscriberNitroHome]: n,
-        [b.reducedMotion]: _
+      className: o()(E.perksContainer, t, {
+        [E.partiallyHidden]: n && !a,
+        [E.subscriberNitroHome]: n,
+        [E.reducedMotion]: _
       }),
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-xxl/extrabold",
-        className: b.perksTitle,
-        children: v(n)
+        className: E.perksTitle,
+        children: O(n)
       }), (0, r.jsx)("div", {
-        className: o()(b.perkCardContainer, {
-          [b.perkCardContainerExpanded]: a
+        className: o()(E.perkCardContainer, {
+          [E.perkCardContainerExpanded]: a
         }),
-        children: A.map(e => null != e && (0, r.jsx)(T, O({}, e), e.title))
+        children: T.map(e => null != e && (0, r.jsx)(I, y({}, e), e.title))
       }), n && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: o()({
-            [b.sizeGizmo]: !a,
-            [b.sizeGizmoExpanded]: a
+            [E.sizeGizmo]: !a,
+            [E.sizeGizmoExpanded]: a
           }),
-          children: (0, r.jsx)(I, {
-            onClick: S,
+          children: (0, r.jsx)(v, {
+            onClick: b,
             isShowingAll: a
           })
         }), (0, r.jsx)("div", {
-          className: o()(b.cover, {
-            [b.hidden]: a
+          className: o()(E.cover, {
+            [E.hidden]: a
           })
         })]
       })]
