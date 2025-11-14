@@ -39,7 +39,7 @@ let E = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_RESOLUTION, {
     value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE,
     label: Chunk388032.intl.string(Chunk388032.t.XjXqzh)
   }],
-  usePredicate: Chunk924557.Go,
+  usePredicate: Chunk924557.w9,
   setValue: t => {
     let {
       clipsQuality: e

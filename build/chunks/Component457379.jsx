@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
 let S = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_HARDWARE_CLASSIFICATION_WARNING, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.SIxrIF)],
   usePredicate: () => {
-    let t = (0, Chunk924557.Go)(),
+    let t = (0, Chunk924557.w9)(),
       e = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification());
     return module && exports === Chunk894694.xH.BELOW_MINIMUM
   },

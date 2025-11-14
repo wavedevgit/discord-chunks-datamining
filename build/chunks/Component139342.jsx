@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk431220 = require("./431220.js");
 let _ = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_KEYBIND, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.pf54EU), Chunk388032.intl.string(Chunk388032.t["QyB/jK"])],
-  usePredicate: Chunk924557.Go,
+  usePredicate: Chunk924557.w9,
   render: () => {
     let t = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true));
     r()(null != module, "Save clip keybind unset");

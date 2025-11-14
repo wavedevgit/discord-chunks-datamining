@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk312839 = require("./312839.js"),
   Chunk556296 = require("./556296.js"),
   Chunk13140 = require("./13140.js"),
-  Chunk435064 = require("./435064.js"),
+  Chunk341569 = require("./341569.js"),
   Chunk981631 = require("./981631.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
@@ -21,7 +21,7 @@ function h() {
     trackClick: t
   } = (0, Chunk312839.R)(Chunk987650.n0.ClipsReminderNotification, {
     notif_type: Chunk987650.n0.ClipsReminderNotification
-  }), n = Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP), h = Chunk435064.Z.getSettings().clipsEnabled;
+  }), n = Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP), h = (0, Chunk341569.LI)();
   if (null == require || !h) return null;
   let p = Chunk13140.BB(require.shortcut, true);
   return {

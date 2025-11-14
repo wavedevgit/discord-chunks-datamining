@@ -5,9 +5,9 @@ require.d(exports, {
   Z: () => g
 }), require("./997841.js");
 var Chunk928801 = require("./928801.js"),
-  Chunk924557 = require("./924557.js"),
   Chunk435064 = require("./435064.js"),
   Chunk779618 = require("./779618.js"),
+  Chunk341569 = require("./341569.js"),
   Chunk594190 = require("./594190.js"),
   Chunk441167 = require("./441167.js"),
   Chunk695346 = require("./695346.js"),
@@ -39,18 +39,17 @@ class g extends Chunk928801.Z {
       d = Chunk695346.tU.getSetting();
     r = (0, Chunk630388.mB)(Chunk928801, Chunk981631.BVn.ALLOW_VOICE_RECORDING, Chunk592125);
     let _ = (0, Chunk779618.Z)(Chunk131951.Z),
-      m = (0, Chunk924557.ln)() && Chunk435064.Z.getSettings().clipsEnabled && ((null == (e = Chunk199902.Z.getCurrentUserActiveStream()) ? true : module.state) === Chunk981631.jm8.ACTIVE || (null == (t = Chunk199902.Z.getCurrentUserActiveStream()) ? true : exports.state) === Chunk981631.jm8.PAUSED),
-      g = Chunk435064.Z.isDecoupledGameClippingEnabled(),
-      E = Chunk936349 && Chunk435064.Z.getSettings().decoupledClipsEnabled && (null == (n = Chunk594190.ZP.getVisibleGame()) ? true : require.windowHandle) != null && g;
-    r = (0, Chunk630388.mB)(Chunk928801, Chunk981631.BVn.CLIPS_ENABLED, m || E);
+      m = (0, Chunk341569.LI)() && ((null == (e = Chunk199902.Z.getCurrentUserActiveStream()) ? true : module.state) === Chunk981631.jm8.ACTIVE || (null == (t = Chunk199902.Z.getCurrentUserActiveStream()) ? true : exports.state) === Chunk981631.jm8.PAUSED),
+      g = (0, Chunk341569.CY)() && (null == (n = Chunk594190.ZP.getVisibleGame()) ? true : require.windowHandle) != null;
+    r = (0, Chunk630388.mB)(Chunk928801, Chunk981631.BVn.CLIPS_ENABLED, m || g);
     let {
-      enableViewerClipping: b
+      enableViewerClipping: E
     } = Chunk441167.Z.getCurrentConfig({
       location: "computeVoiceFlags"
     }, {
       autoTrackExposure: false
-    }), y = b && Chunk936349 && Chunk435064.Z.getSettings().viewerClipsEnabled;
-    return (0, Chunk630388.mB)(Chunk928801, Chunk981631.BVn.ALLOW_ANY_VIEWER_CLIPS, y)
+    }), b = E && Chunk936349 && Chunk435064.Z.getSettings().viewerClipsEnabled;
+    return (0, Chunk630388.mB)(Chunk928801, Chunk981631.BVn.ALLOW_ANY_VIEWER_CLIPS, b)
   }
   getInitialState() {
     return {

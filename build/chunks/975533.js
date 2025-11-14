@@ -13,7 +13,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk317770 = require("./317770.js"),
   Chunk100527 = require("./100527.js"),
   Chunk924557 = require("./924557.js"),
-  Chunk435064 = require("./435064.js"),
+  Chunk341569 = require("./341569.js"),
   Chunk39604 = require("./39604.js"),
   Chunk891304 = require("./891304.js"),
   Chunk569545 = require("./569545.js"),
@@ -261,9 +261,7 @@ let U = {
     },
     [Chunk981631.kg4.SAVE_CLIP]: {
       onTrigger: () => {
-        let e = (0, Chunk924557.ln)(),
-          t = Chunk435064.Z.getSettings().clipsEnabled;
-        module && exports && (Chunk626135.default.track(Chunk981631.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, Chunk39604.br)())
+        (0, Chunk341569.LI)() && (Chunk626135.default.track(Chunk981631.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, Chunk39604.br)())
       },
       keyEvents: {
         keyup: false,
@@ -272,9 +270,7 @@ let U = {
     },
     [Chunk981631.kg4.SAVE_SCREENSHOT]: {
       onTrigger: () => {
-        let e = (0, Chunk924557.ln)(),
-          t = Chunk435064.Z.getSettings().clipsEnabled;
-        module && exports && (0, Chunk924557.iL)() && (Chunk626135.default.track(Chunk981631.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, Chunk39604.ZW)())
+        (0, Chunk341569.LI)() && (0, Chunk924557.iL)() && (Chunk626135.default.track(Chunk981631.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, Chunk39604.ZW)())
       },
       keyEvents: {
         keyup: false,

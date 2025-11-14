@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 let d = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_STORAGE_LOCATION, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.s4773E), Chunk388032.intl.string(Chunk388032.t.svjwGh)],
-  usePredicate: Chunk924557.Go,
+  usePredicate: Chunk924557.w9,
   render: () => {
     let t = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().storageLocation),
       e = async () => {

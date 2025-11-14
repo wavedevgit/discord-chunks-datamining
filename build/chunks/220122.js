@@ -9,10 +9,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk594190 = require("./594190.js"),
   Chunk199902 = require("./199902.js"),
   Chunk131951 = require("./131951.js"),
-  Chunk924557 = require("./924557.js"),
   Chunk474639 = require("./474639.js"),
   Chunk435064 = require("./435064.js"),
   Chunk779618 = require("./779618.js"),
+  Chunk341569 = require("./341569.js"),
   Chunk39604 = require("./39604.js");
 require("./460779.js");
 var Chunk356659 = require("./356659.js"),
@@ -30,17 +30,16 @@ class m extends Chunk474639.Z {
     })
   }
   applyNativeClipsSettings(e) {
-    if (!(0, d.Z)(s.Z)) return;
-    let t = (0, l.ln)(),
-      n = u.Z.getSettings(),
-      r = (n.clipsEnabled || n.decoupledClipsEnabled) && t,
-      i = s.Z.getMediaEngine();
-    if (i.setClipBufferLength(r ? n.clipsLength / 1e3 : 0), (null == e ? true : e.settings.decoupledClipsEnabled) === true && this.fireClipsInitEvent(), null == e || (null == e ? true : e.settings.clipsQuality) != null) {
+    if (!(0, u.Z)(s.Z)) return;
+    let t = c.Z.getSettings(),
+      n = (0, d.LI)(),
+      r = s.Z.getMediaEngine();
+    if (r.setClipBufferLength(n ? t.clipsLength / 1e3 : 0), (null == e ? true : e.settings.decoupledClipsEnabled) === true && this.fireClipsInitEvent(), null == e || (null == e ? true : e.settings.clipsQuality) != null) {
       let {
-        frameRate: t,
-        resolution: r
-      } = n.clipsQuality, a = r <= 480 ? r / 3 * 4 : r / 9 * 16, o = r;
-      i.setClipsQualitySettings(a, o, t) || null == e || this.fireClipsInitEvent()
+        frameRate: n,
+        resolution: i
+      } = t.clipsQuality, a = i <= 480 ? i / 3 * 4 : i / 9 * 16, o = i;
+      r.setClipsQualitySettings(a, o, n) || null == e || this.fireClipsInitEvent()
     }
   }
   handleClipsInitOnToggleDetection(e) {
@@ -52,22 +51,15 @@ class m extends Chunk474639.Z {
     null != t && (e.added.find(e => e.pid === t.pid) ? setTimeout(() => this.fireClipsInitEvent(), _.jp) : this.fireClipsInitEvent())
   }
   fireClipsInitEvent() {
-    if (!(0, Chunk779618.Z)(Chunk131951.Z)) return;
-    let e = (0, Chunk924557.ln)(),
-      t = Chunk435064.Z.getSettings();
-    if (!(exports.clipsEnabled && module) || null != Chunk199902.Z.getCurrentUserActiveStream()) return;
-    let n = Chunk594190.ZP.getVisibleGame();
-    (null == require ? true : require.pid) != null && (null == require ? true : require.windowHandle) != null && null != require.name && "" !== require.name && Chunk570140.Z.dispatch({
+    if (!(0, Chunk341569.LI)() || null != Chunk199902.Z.getCurrentUserActiveStream()) return;
+    let e = Chunk594190.ZP.getVisibleGame();
+    if ((null == module ? true : module.pid) == null || (null == module ? true : module.windowHandle) == null || null == module.name || "" === module.name) return;
+    let t = Chunk435064.Z.getSettings();
+    Chunk570140.Z.dispatch({
       type: "CLIPS_INIT",
-      sourceId: "window:".concat(null == require ? true : require.windowHandle),
-      applicationName: require.name,
+      sourceId: "window:".concat(null == module ? true : module.windowHandle),
+      applicationName: module.name,
       quality: exports.clipsQuality
-    })
-  }
-  disableClips() {
-    Chunk39604.em({
-      clipsEnabled: false,
-      trackAnalytics: false
     })
   }
   loadClipsFromStorage() {

@@ -8,7 +8,7 @@ var Chunk147913 = require("./147913.js"),
   Chunk594190 = require("./594190.js"),
   Chunk594174 = require("./594174.js"),
   Chunk979651 = require("./979651.js"),
-  Chunk435064 = require("./435064.js"),
+  Chunk341569 = require("./341569.js"),
   Chunk39604 = require("./39604.js"),
   Chunk626968 = require("./626968.js");
 
@@ -50,7 +50,7 @@ class d extends Chunk147913.Z {
   }
   async updateActiveHandlers() {
     this.ensureInitialized();
-    let e = Chunk435064.Z.getSettings().clipsEnabled,
+    let e = (0, Chunk341569.LI)(),
       t = Chunk594190.ZP.getRunningGames(),
       n = this.isUserInVoiceChannel();
     if (!module) return void await this.stopAllHandlers();

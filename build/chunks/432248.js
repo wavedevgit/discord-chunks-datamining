@@ -31,6 +31,6 @@ let E = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_LENGTH, {
       count: 2
     })
   }],
-  usePredicate: Chunk924557.Go,
+  usePredicate: Chunk924557.w9,
   setValue: t => r.eU(t)
 })

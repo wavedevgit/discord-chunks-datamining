@@ -31,7 +31,7 @@ let E = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_FRAME_RATE, {
       fps: Chunk37113.ApplicationStreamFPS.FPS_60
     })
   }],
-  usePredicate: Chunk924557.Go,
+  usePredicate: Chunk924557.w9,
   setValue: t => {
     let {
       clipsQuality: e

@@ -15,7 +15,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.CLIPS_ENABLE_REMINDERS, {
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.m4Cjj9),
   useValue: () => (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().remindersEnabled),
   usePredicate: () => {
-    let t = (0, Chunk924557.Go)(),
+    let t = (0, Chunk924557.w9)(),
       {
         showClipsHeaderEntrypoint: e
       } = Chunk924557.NV.useExperiment({

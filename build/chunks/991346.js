@@ -152,7 +152,7 @@ function W() {
     k = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSearchParams()),
     j = (0, Chunk631885.gU)(),
     G = (0, Chunk168308.bC)(),
-    B = (0, Chunk924557.Go)(),
+    B = (0, Chunk924557.w9)(),
     [Z] = (0, Chunk706140.cv)(B ? [Chunk704215.z.CLIPS_SETTINGS_BETA_TAG] : []),
     {
       shouldMergeGameSettings: F

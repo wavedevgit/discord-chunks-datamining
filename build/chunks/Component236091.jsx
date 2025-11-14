@@ -11,21 +11,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk358221 = require("./358221.js"),
   Chunk594190 = require("./594190.js"),
   Chunk199902 = require("./199902.js"),
-  Chunk924557 = require("./924557.js"),
   Chunk435064 = require("./435064.js"),
+  Chunk341569 = require("./341569.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk363862 = require("./363862.js");
 let g = e => {
   let {
     channelId: t
-  } = e, n = (0, d.Go)(), g = p.Z.isDecoupledGameClippingEnabled();
-  return (0, r.e7)([u.Z, s.Z, p.Z, c.ZP], () => {
+  } = e;
+  return (0, r.e7)([u.Z, s.Z, d.Z, c.ZP], () => {
     var e;
     if (null == t) returnfalse;
-    let i = u.Z.getCurrentUserActiveStream(),
-      r = null == (e = c.ZP.getVisibleGame()) ? true : e.windowHandle;
-    return null != i && !!p.Z.getSettings().clipsEnabled && !!n || null != r && !!p.Z.getSettings().decoupledClipsEnabled && !!g || s.Z.getParticipants(t).some(e => e.type === h.fO.USER && p.Z.isClipsEnabledForUser(e.user.id))
+    let n = u.Z.getCurrentUserActiveStream(),
+      i = null == (e = c.ZP.getVisibleGame()) ? true : e.windowHandle;
+    return !!(null != n && (0, p.LI)() || null != i && (0, p.CY)()) || s.Z.getParticipants(t).some(e => e.type === h.fO.USER && d.Z.isClipsEnabledForUser(e.user.id))
   }) ? (0, i.jsx)(a.u, {
     text: f.intl.string(f.t.DJXW3G),
     children: (0, i.jsxs)("div", {

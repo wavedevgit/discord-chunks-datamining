@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk862220 = require("./862220.js");
 
-function g(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -40,7 +40,7 @@ function g(e) {
   return e
 }
 
-function j(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -87,8 +87,8 @@ function x(e) {
     favoriteClips: N,
     allClips: M
   } = (0, b.n)(), {
-    onShareClick: Z
-  } = (0, p.Z)(t), D = (0, i.e7)([d.Z], () => d.Z.getExportingClipIds().length > 0), L = (0, y.f)(e => e.selectedGameId), H = r.useMemo(() => {
+    onShareClick: D
+  } = (0, p.Z)(t), Z = (0, i.e7)([d.Z], () => d.Z.getExportingClipIds().length > 0), L = (0, y.f)(e => e.selectedGameId), H = r.useMemo(() => {
     var e;
     return null == L || "favorites" === L ? null : null != (e = S.find(e => e.applicationId === L)) ? e : null
   }, [L, S]), T = r.useMemo(() => {
@@ -110,7 +110,7 @@ function x(e) {
       let {
         default: t
       } = await n.e("81409").then(n.bind(n, 210480));
-      return n => (0, l.jsx)(t, j(g({}, n), {
+      return n => (0, l.jsx)(t, g(j({}, n), {
         clips: e,
         onAfterDelete: () => {
           V(), n.onClose()
@@ -121,10 +121,10 @@ function x(e) {
     })
   }, [M, k, V]), z = r.useCallback(async () => {
     let e = M.filter(e => k.has(e.id));
-    await Z({
+    await D({
       clips: e
     }), V()
-  }, [M, k, Z, V]), B = r.useMemo(() => ({
+  }, [M, k, D, V]), B = r.useMemo(() => ({
     selectedClipIds: k,
     toggleClipSelection: R,
     clearSelection: V,
@@ -134,7 +134,7 @@ function x(e) {
     value: P,
     children: (0, l.jsx)(O.Provider, {
       value: B,
-      children: (0, l.jsx)(s.A, j(g({
+      children: (0, l.jsx)(s.A, g(j({
         onClose: x
       }, w), {
         children: (0, l.jsxs)("div", {
@@ -163,7 +163,7 @@ function x(e) {
                       size: "sm",
                       variant: "icon-only",
                       "aria-label": h.intl.string(h.t.RDE0Sc),
-                      loading: D
+                      loading: Z
                     })
                   }), (0, l.jsx)(a.u, {
                     text: h.intl.string(h.t.oyYWHE),

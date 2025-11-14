@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk547972 = require("./547972.js"),
   Chunk556296 = require("./556296.js"),
   Chunk13140 = require("./13140.js"),
-  Chunk435064 = require("./435064.js"),
+  Chunk341569 = require("./341569.js"),
   Chunk981631 = require("./981631.js"),
   Chunk332325 = require("./332325.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -21,11 +21,11 @@ var Chunk951288 = require("./951288.js"),
 function h(e) {
   let {
     isEmptyBecauseQuery: t
-  } = e, n = (0, s.e7)([u.ZP], () => u.ZP.getKeybindForAction(m.kg4.SAVE_CLIP)), i = (0, s.e7)([p.Z], () => p.Z.getSettings().clipsEnabled), h = t ? b.noSearchResultsImage : b.noClipsImage, v = r.useCallback(() => {
+  } = e, n = (0, s.e7)([u.ZP], () => u.ZP.getKeybindForAction(m.kg4.SAVE_CLIP)), i = (0, p.z8)(), h = t ? b.noSearchResultsImage : b.noClipsImage, v = r.useCallback(() => {
     (0, o.Z)(f.Z.CLIPS, {
       stackingBehavior: "stack"
     })
-  }, []), g = (() => {
+  }, []), j = (() => {
     if (!i) return y.intl.format(y.t["3iveao"], {
       onClick: v
     });
@@ -58,7 +58,7 @@ function h(e) {
         className: a()(b.noClipsText, {
           [b.noSearchResultsText]: t
         }),
-        children: g
+        children: j
       })]
     })
   })

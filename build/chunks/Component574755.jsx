@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
 function y() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(), t = (0, Chunk924557.Go)(), n = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()), {
+  } = (0, Chunk906732.ZP)(), t = (0, Chunk924557.w9)(), n = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()), {
     enableAdvancedSignals: y
   } = Chunk924557.NV.useExperiment({
     location: "clips_settings"

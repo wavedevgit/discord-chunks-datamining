@@ -13,8 +13,8 @@ var Chunk392711 = require("./392711.js"),
   Chunk570140 = require("./570140.js"),
   Chunk861687 = require("./861687.js"),
   Chunk437263 = require("./437263.js"),
-  Chunk924557 = require("./924557.js"),
   Chunk435064 = require("./435064.js"),
+  Chunk341569 = require("./341569.js"),
   Chunk631053 = require("./631053.js"),
   Chunk581567 = require("./581567.js"),
   Chunk594190 = require("./594190.js"),
@@ -405,8 +405,8 @@ class V extends Chunk861687.Z {
       share_application_id: Chunk570140,
       share_application_executable: Chunk861687,
       share_application_distributor: Chunk437263,
-      share_application_distributor_game_id: Chunk924557,
-      share_application_game_metadata: Chunk435064,
+      share_application_distributor_game_id: Chunk435064,
+      share_application_game_metadata: Chunk341569,
       video_layout: this.videoStreamStats.getLayout(),
       client_event_source: Chunk392711,
       voice_backend_version: this.voiceVersion,
@@ -441,18 +441,17 @@ class V extends Chunk861687.Z {
     if (null == o) return;
     i = o.getNetworkStats(), a = this.isOwner ? o.getCodecUsageStats("streamer", this.userId) : o.getCodecUsageStats("receiver", r);
     let s = null,
-      l = (0, d.ln)(),
-      c = f.Z.getSettings(),
-      u = this.isOwner ? {
-        clips_enabled: c.clipsEnabled && l,
-        clips_buffer_length: c.clipsLength
+      l = d.Z.getSettings(),
+      c = this.isOwner ? {
+        clips_enabled: (0, f.LI)(),
+        clips_buffer_length: l.clipsLength
       } : {},
-      p = this.isOwner ? {
+      u = this.isOwner ? {
         bandwidth_estimation_experiment: this.getBandwidthEstimationExperiment()
       } : {};
     o.getOutboundStats().forEach(t => {
       var r;
-      (null != (r = t.num_frames) ? r : 0) > 0 && S.default.track(w.rMx.VIDEO_STREAM_ENDED, j(M({}, a, i, s, this.videoStreamStats.getStats(), t, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), u, p), {
+      (null != (r = t.num_frames) ? r : 0) > 0 && S.default.track(w.rMx.VIDEO_STREAM_ENDED, j(M({}, a, i, s, this.videoStreamStats.getStats(), t, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), c, u), {
         app_hardware_acceleration_enabled: A.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,
@@ -466,7 +465,7 @@ class V extends Chunk861687.Z {
     }), o.getInboundParticipants().forEach(t => {
       var r;
       let l = o.getInboundStats(t);
-      (null != (r = null == l ? true : l.num_frames) ? r : 0) > 0 && S.default.track(w.rMx.VIDEO_STREAM_ENDED, j(M({}, a, i, s, this.videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), u, p), {
+      (null != (r = null == l ? true : l.num_frames) ? r : 0) > 0 && S.default.track(w.rMx.VIDEO_STREAM_ENDED, j(M({}, a, i, s, this.videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), c, u), {
         app_hardware_acceleration_enabled: A.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,

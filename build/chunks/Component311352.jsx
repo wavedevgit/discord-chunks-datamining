@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk819640 = require("./819640.js"),
   Chunk556296 = require("./556296.js"),
   Chunk13140 = require("./13140.js"),
-  Chunk924557 = require("./924557.js"),
   Chunk435064 = require("./435064.js"),
+  Chunk341569 = require("./341569.js"),
   Chunk39604 = require("./39604.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -109,25 +109,19 @@ let x = e => {
         parentAnalyticsLocation: t
       } = (0, Chunk906732.ZP)(),
       n = (0, Chunk399606.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
-      o = (0, Chunk924557.Go)(),
-      {
-        clipsEnabled: s,
-        isAtMaxSavingClipsOperations: d
-      } = (0, Chunk399606.cj)([Chunk435064.Z], () => ({
-        clipsEnabled: Chunk435064.Z.getSettings().clipsEnabled,
-        isAtMaxSavingClipsOperations: Chunk435064.Z.getIsAtMaxSaveClipOperations()
-      })),
-      v = (0, Chunk399606.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP));
-    if (!(Chunk704215 && Chunk239091) || null == Chunk611372 || require) return null;
-    let C = Chunk13140.BB(Chunk611372.shortcut, true);
+      o = (0, Chunk341569.z8)(),
+      s = (0, Chunk399606.e7)([Chunk435064.Z], () => Chunk435064.Z.getIsAtMaxSaveClipOperations()),
+      d = (0, Chunk399606.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP));
+    if (!Chunk704215 || null == Chunk765585 || require) return null;
+    let v = Chunk13140.BB(Chunk765585.shortcut, true);
     return (0, Chunk951288.jsx)(x, {
-      keybindString: C,
+      keybindString: Chunk611372,
       targetElementRef: module,
       children: (0, Chunk951288.jsx)(Chunk870569.Z, {
         ref: module,
-        disabled: Chunk765585,
-        tooltipText: null != Chunk611372 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.HIMcv1, {
-          hotkey: Chunk13140.BB(null == Chunk611372 ? true : Chunk611372.shortcut, true)
+        disabled: Chunk239091,
+        tooltipText: null != Chunk765585 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.HIMcv1, {
+          hotkey: Chunk13140.BB(null == Chunk765585 ? true : Chunk765585.shortcut, true)
         }) : Chunk388032.intl.string(Chunk388032.t.s52pju),
         onClick: () => {
           (0, Chunk39604.br)(), (0, Chunk522651.v)(exports, Chunk522651.d.CLIP)

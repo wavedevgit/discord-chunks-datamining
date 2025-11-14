@@ -43,13 +43,13 @@ let T = function(e) {
     actionsDisabled: O,
     isNew: S,
     onClick: E
-  } = e, N = (0, u.Wu)([j.default], () => h.users.map(e => j.default.getUser(e)).filter(w.lm)), M = (0, u.e7)([v.Z], () => null != h.channelId ? v.Z.getChannel(h.channelId) : null), T = (0, u.e7)([g.Z], () => null != h.guildId ? g.Z.getGuild(h.guildId) : null), {
+  } = e, N = (0, u.Wu)([g.default], () => h.users.map(e => g.default.getUser(e)).filter(w.lm)), M = (0, u.e7)([v.Z], () => null != h.channelId ? v.Z.getChannel(h.channelId) : null), T = (0, u.e7)([j.Z], () => null != h.guildId ? j.Z.getGuild(h.guildId) : null), {
     analyticsLocations: V
   } = (0, y.ZP)(f.Z.CLIPS_GALLERY_ITEM), {
     selectedClipIds: U,
     toggleClipSelection: z,
     isMultiSelectMode: B
-  } = r.useContext(Z.U), [G, F] = r.useState(false), Y = r.useRef(null), K = (0, o.Z)(null != (b = null == (t = h.editMetadata) ? true : t.start) ? b : 0), q = U.has(h.id), X = h.type === I.NJ.SCREENSHOT, W = "" === h.applicationName && (null == M ? true : M.name) != null && "" !== M.name ? M.name : h.applicationName, J = (0, C.Xf)(new Date(P.default.extractTimestamp(h.id))), Q = r.useMemo(() => {
+  } = r.useContext(D.U), [G, F] = r.useState(false), Y = r.useRef(null), K = (0, o.Z)(null != (b = null == (t = h.editMetadata) ? true : t.start) ? b : 0), q = U.has(h.id), X = h.type === I.NJ.SCREENSHOT, W = "" === h.applicationName && (null == M ? true : M.name) != null && "" !== M.name ? M.name : h.applicationName, J = (0, C.Xf)(new Date(P.default.extractTimestamp(h.id))), Q = r.useMemo(() => {
     let e = [];
     if (h.type === I.NJ.VOICE_CLIP)(null == T ? true : T.name) != null && e.push(T.name), (null == M ? true : M.name) != null && e.push(M.name);
     else {
@@ -107,18 +107,18 @@ let T = function(e) {
           actionsDisabled: O,
           showShareAndEdit: true,
           onShare: () => {
-            x.default.track(D.rMx.CLIP_GALLERY_CARD_BUTTON_CLICKED, {
+            x.default.track(Z.rMx.CLIP_GALLERY_CARD_BUTTON_CLICKED, {
               type: "share"
             })
           },
           onEdit: () => {
-            x.default.track(D.rMx.CLIP_GALLERY_CARD_BUTTON_CLICKED, {
+            x.default.track(Z.rMx.CLIP_GALLERY_CARD_BUTTON_CLICKED, {
               type: "edit"
             })
           },
           onBeforeDelete: $,
           onAfterDelete: () => {
-            x.default.track(D.rMx.CLIP_GALLERY_CARD_BUTTON_CLICKED, {
+            x.default.track(Z.rMx.CLIP_GALLERY_CARD_BUTTON_CLICKED, {
               type: "delete"
             })
           }
@@ -139,7 +139,7 @@ let T = function(e) {
   }, [h, B, U, O, $, el]), ei = r.useCallback(e => {
     O || (e.preventDefault(), e.stopPropagation(), er(e))
   }, [O, er]), ea = r.useCallback(e => {
-    O || (e.shiftKey ? (e.preventDefault(), z(h.id)) : B ? z(h.id) : null != E && E(h), x.default.track(D.rMx.CLIP_GALLERY_CARD_CLICKED))
+    O || (e.shiftKey ? (e.preventDefault(), z(h.id)) : B ? z(h.id) : null != E && E(h), x.default.track(Z.rMx.CLIP_GALLERY_CARD_CLICKED))
   }, [O, B, z, h, E]);
   return (0, l.jsx)(y.Gt, {
     value: V,

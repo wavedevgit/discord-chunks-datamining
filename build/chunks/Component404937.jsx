@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_QUALITY_INFOBOX, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["Z+MfqT"])],
-  usePredicate: Chunk924557.Go,
+  usePredicate: Chunk924557.w9,
   render: () => (0, Chunk951288.jsx)(Chunk494620.Z, {
     look: Chunk494620.z.INFO,
     children: Chunk388032.intl.string(Chunk388032.t["Z+MfqT"])
