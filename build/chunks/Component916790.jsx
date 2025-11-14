@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk299608 = require("./299608.js"),
-  o = require.n(Chunk299608),
+  s = require.n(Chunk299608),
   Chunk913527 = require("./913527.js"),
   d = require.n(Chunk913527),
   Chunk28664 = require("./28664.jsx"),
@@ -149,8 +149,8 @@ function R(e) {
       })
     }
   }] : k, [t]), {
-    TabBar: s,
-    renderSelectedTab: o
+    TabBar: o,
+    renderSelectedTab: s
   } = (0, E.ZP)({
     tabs: i
   }, [i]);
@@ -158,7 +158,7 @@ function R(e) {
     className: T.subPanel,
     minHeight: 100,
     initialHeight: n,
-    children: [(0, a.jsx)(s, {}), (0, a.jsxs)(x.ZP, {
+    children: [(0, a.jsx)(o, {}), (0, a.jsxs)(x.ZP, {
       className: l()(N.headerBar, T.subPanelHeaderBar),
       children: [(0, a.jsx)(x.ZP.Icon, {
         icon: p.xVZ,
@@ -183,7 +183,7 @@ function R(e) {
           }))
         }
       })]
-    }), o({
+    }), s({
       actionLog: t
     })]
   })
@@ -237,7 +237,7 @@ function D() {
     i = function(e) {
       let [t, n] = r.useState(e.logs);
       return r.useEffect(() => {
-        let t = o()(() => {
+        let t = s()(() => {
           n([...e.logs])
         }, 500);
         return e.on("log", t), () => {
@@ -245,7 +245,7 @@ function D() {
         }
       }, [e]), t
     }(Chunk570140.Z.actionLogger),
-    s = Chunk647438.useMemo(() => Chunk120356.map(e => ({
+    o = Chunk647438.useMemo(() => Chunk120356.map(e => ({
       key: e.id.toString(),
       actionLog: e
     })).toReversed(), [Chunk120356]),
@@ -258,7 +258,7 @@ function D() {
     }, []);
   (0, Chunk301801.BO)(exports, Chunk886118 ? Chunk913527 : Chunk299608, Chunk428530, Z);
   let y = Chunk647438.useCallback(e => {
-      d(s), b(e)
+      d(o), b(e)
     }, [Chunk299608]),
     C = exports.trim().length > 0,
     E = Chunk647438.useMemo(() => Chunk484036 ? Chunk755721 : Chunk886118 ? Chunk913527 : Chunk299608, [Chunk299608, Chunk755721, Chunk484036, Chunk886118, Chunk913527]),

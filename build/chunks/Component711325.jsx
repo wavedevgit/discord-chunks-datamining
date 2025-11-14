@@ -23,8 +23,8 @@ function d(e) {
       children: "Preselected Gradient"
     }), (0, a.jsx)("div", {
       className: c.themes,
-      children: s.vs.map(e => {
-        let r = d !== o.BRd.LIGHT ? e.darkBackground : e.lightBackground,
+      children: o.vs.map(e => {
+        let r = d !== s.BRd.LIGHT ? e.darkBackground : e.lightBackground,
           i = t === e.name;
         return (0, a.jsx)(l.S4, {
           onSelect: () => n(e),

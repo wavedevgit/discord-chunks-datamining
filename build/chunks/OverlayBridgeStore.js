@@ -253,7 +253,7 @@ async function eb(e) {
   });
   let r = q.get(e);
   if (null != r) return void el.warn("Trying to attach to pid=".concat(e, ", that is already in status: ").concat(r));
-  await f.Z.updateOverlayState(e, I.mM.WAITING_FOR_OVERLAY_OPEN), e_ = "attach.getOverlayModule";
+  await f.Z.updateOverlayState(e, I.mM.WAITING_FOR_OVERLAY_OPEN, "attachPID"), e_ = "attach.getOverlayModule";
   let i = await (0, G.K)();
   if (null == i) return void el.error("Trying to attach to pid=".concat(e, ", but overlay module failed loaded"));
   e_ = "attach.transitionOverlayPIDStatus", eg(e, "ATTACHING"), e_ = "attach.attachToProcess";
@@ -376,7 +376,7 @@ function eC(e, t, n) {
     height: n.graphics_height
   });
   let s = eu(e);
-  L.default.track(B.rMx.OVERLAY_HOOK_RESULT, s), el.info("Overlay connection to ".concat(e, " ").concat(t ? "succeeded" : "failed"), s), t ? (f.Z.updateOverlayState(e, I.mM.OVERLAY_RENDERING), eg(e, "CONNECTED", "CONNECTING")) : (f.Z.updateOverlayState(e, I.mM.OVERLAY_CRASHED), eg(e, "CONNECT_FAILED", "CONNECTING"))
+  L.default.track(B.rMx.OVERLAY_HOOK_RESULT, s), el.info("Overlay connection to ".concat(e, " ").concat(t ? "succeeded" : "failed"), s), t ? (f.Z.updateOverlayState(e, I.mM.OVERLAY_RENDERING, "onConnectComplete"), eg(e, "CONNECTED", "CONNECTING")) : (f.Z.updateOverlayState(e, I.mM.OVERLAY_CRASHED, "onConnectComplete"), eg(e, "CONNECT_FAILED", "CONNECTING"))
 }
 
 function eN() {
@@ -482,7 +482,7 @@ function ej(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "cd377b7e334a35b568985bb299c6a48ff004ba22"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "f0798a91ecef92247f68b9b1c7c8efcb9ce6356b"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {

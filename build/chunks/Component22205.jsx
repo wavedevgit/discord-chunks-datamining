@@ -181,7 +181,7 @@ class L extends Chunk647438.PureComponent {
         onCrashDisabled: () => {
           var e;
           let t = null != (e = this.pid) ? module : Chunk610394.Z.getTargetPID();
-          Chunk13245.Z.updateOverlayState(exports, Chunk837268.mM.OVERLAY_CRASHED_DISABLED), this.setState({
+          Chunk13245.Z.updateOverlayState(exports, Chunk837268.mM.OVERLAY_CRASHED_DISABLED, "OOPOverlayErrorBoundary"), this.setState({
             showError: false
           })
         },

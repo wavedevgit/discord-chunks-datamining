@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  s = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -65,10 +65,10 @@ function I(e) {
     name: t,
     children: n,
     copyValue: i
-  } = e, [l, s] = r.useState(false);
+  } = e, [l, o] = r.useState(false);
   return r.useEffect(() => {
     if (l) {
-      let e = setTimeout(() => s(false), 1e3);
+      let e = setTimeout(() => o(false), 1e3);
       return () => clearTimeout(e)
     }
   }, [l]), (0, a.jsxs)("div", {
@@ -81,7 +81,7 @@ function I(e) {
     }), (0, a.jsx)(u.P3F, {
       tag: "span",
       className: O.copyPropertyButton,
-      onClick: () => (0, f.JG)(JSON.stringify(i), () => s(true)),
+      onClick: () => (0, f.JG)(JSON.stringify(i), () => o(true)),
       children: l ? (0, a.jsx)(u.kmB, {
         color: "currentColor",
         size: "sm"
@@ -105,9 +105,9 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
           timestamp: r,
           fingerprint: i
         },
-        onClose: s,
+        onClose: o,
         filteredEvents: c
-      } = e, d = g.default.getUser(i), h = o()(r);
+      } = e, d = g.default.getUser(i), h = s()(r);
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(p.ZP, {
@@ -157,7 +157,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
           }), (0, a.jsx)(p.ZP.Icon, {
             icon: u.k$p,
             tooltip: "Close",
-            onClick: s
+            onClick: o
           })]
         }), (0, a.jsxs)(_.E, {
           className: O.commonProperties,
@@ -167,7 +167,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             children: (0, a.jsxs)("time", {
               dateTime: r.toISOString(),
               title: (0, b.vc)(h, "LLLL"),
-              children: ["(", o().locale(), ") ", (0, b.Y4)(h)]
+              children: ["(", s().locale(), ") ", (0, b.Y4)(h)]
             })
           }), null != d && (0, a.jsx)(_.Z9, {
             name: "User",
@@ -270,14 +270,14 @@ function Z() {
   let e = Chunk647438.useRef(null),
     [t, n] = Chunk647438.useState(""),
     i = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
-    [s, o] = Chunk647438.useState(() => Object.keys(R)),
+    [o, s] = Chunk647438.useState(() => Object.keys(R)),
     [m, p] = Chunk647438.useState(Chunk120816.Z.loggedEvents),
     h = Chunk647438.useCallback(e => {
       p(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, A, [Chunk120356]);
   let g = Chunk129861.filter(e => {
-      for (let t of s)
+      for (let t of o)
         if (R[t].filter(e)) returntrue;
       returnfalse
     }),
@@ -314,9 +314,9 @@ function Z() {
         children: Object.entries(R).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(u.P3F, {
-            className: l()(O.filter, s.includes(t) && O.activeFilter),
+            className: l()(O.filter, o.includes(t) && O.activeFilter),
             onClick: () => {
-              o(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
+              s(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },
             children: n.label
           }, t)

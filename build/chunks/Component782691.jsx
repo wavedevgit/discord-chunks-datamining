@@ -63,7 +63,7 @@ let y = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), i = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = r.useState(true), O = r.useRef({}), [T, N] = r.useState(false), [P, I] = r.useState(false), [w, k] = r.useState([]), [R, A] = r.useState(y), Z = r.useRef([]), [D, L] = r.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, h.n6)(), i = (0, s.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = r.useState(true), O = r.useRef({}), [T, N] = r.useState(false), [P, I] = r.useState(false), [w, k] = r.useState([]), [R, A] = r.useState(y), Z = r.useRef([]), [D, L] = r.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       id: C,
       skuId: C,
       title: C,
@@ -72,12 +72,12 @@ let y = {
       reducedMotionSrc: "",
       thumbnailPreviewSrc: "",
       effects: w,
-      animationType: s.y.ANIMATION_TYPE_UNSPECIFIED
-    }), [w]), F = e => {
+      animationType: o.y.ANIMATION_TYPE_UNSPECIFIED
+    }), [w]), B = e => {
       let t = e.currentTarget.files;
       return null == t ? null : t[0]
-    }, B = (e, t) => {
-      let n = F(t);
+    }, F = (e, t) => {
+      let n = B(t);
       null != n && (0, x.i0)(n, t => {
         A(a => _(j({}, a), {
           [e]: (0, x.z)(t, n)
@@ -140,7 +140,7 @@ let y = {
             O.current.animated = e
           },
           onChange: e => {
-            let t = F(e);
+            let t = B(e);
             null != t && (0, x.i0)(t, async e => {
               let n = await (0, x.Xv)(e, t, w.length);
               k(e => [...e, n])
@@ -151,19 +151,19 @@ let y = {
           ref: e => {
             O.current.thumbnail = e
           },
-          onChange: e => B(x.cq.THUMBNAIL, e),
+          onChange: e => F(x.cq.THUMBNAIL, e),
           multiple: false
         }), (0, a.jsx)(u.Z, {
           ref: e => {
             O.current.static = e
           },
-          onChange: e => B(x.cq.STATIC, e),
+          onChange: e => F(x.cq.STATIC, e),
           multiple: false
         }), (0, a.jsx)(u.Z, {
           ref: e => {
             O.current.reducedMotion = e
           },
-          onChange: e => B(x.cq.REDUCED_MOTION, e),
+          onChange: e => F(x.cq.REDUCED_MOTION, e),
           multiple: false
         })]
       }), (0, a.jsxs)("div", {
@@ -499,7 +499,7 @@ let y = {
                   O.current["randomized-".concat(t)] = e
                 },
                 onChange: e => ((e, t) => {
-                  let n = F(e);
+                  let n = B(e);
                   null != n && (0, x.i0)(n, e => {
                     k(a => {
                       let r = [...a],

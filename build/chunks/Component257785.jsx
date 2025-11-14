@@ -40,14 +40,14 @@ let u = e => {
       children: t
     }), (0, a.jsxs)("dd", {
       className: c.propertyValue,
-      children: [n, null != i ? (0, a.jsx)(s.P3F, {
+      children: [n, null != i ? (0, a.jsx)(o.P3F, {
         tag: "span",
         className: c.copyPropertyButton,
-        onClick: () => (0, o.JG)(i, () => d(true)),
-        children: l ? (0, a.jsx)(s.kmB, {
+        onClick: () => (0, s.JG)(i, () => d(true)),
+        children: l ? (0, a.jsx)(o.kmB, {
           color: "currentColor",
           size: "sm"
-        }) : (0, a.jsx)(s.TIy, {
+        }) : (0, a.jsx)(o.TIy, {
           color: "currentColor",
           size: "sm"
         })
@@ -60,7 +60,7 @@ function m(e) {
   let {
     value: t
   } = e;
-  return (0, a.jsx)(s.FZ5, {
+  return (0, a.jsx)(o.FZ5, {
     checked: t
   })
 }

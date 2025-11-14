@@ -37,33 +37,33 @@ function c(e) {
     }
     return e
   })({
-    renderHeader: () => (0, a.jsx)(s.Text, {
+    renderHeader: () => (0, a.jsx)(o.Text, {
       variant: "text-sm/semibold",
       children: e.key
     })
   }, e)), [t]), h = 0 === n.length ? [1] : [n.length];
   return (0, a.jsx)("div", {
-    className: o.tableContainer,
-    children: (0, a.jsx)(s.Tvr, {
+    className: s.tableContainer,
+    children: (0, a.jsx)(o.Tvr, {
       className: i,
-      innerClassName: o.table,
+      innerClassName: s.table,
       sections: h,
       sectionHeight: 40,
       renderSection: e => {
         let {
           section: t
-        } = e, r = o.tableHeader;
+        } = e, r = s.tableHeader;
         return (0, a.jsx)("div", {
           className: r,
           children: p.map(e => {
             var r, i;
             let l = e.cellClassName,
-              s = {
+              o = {
                 width: "calc(".concat(null != (i = e.cellWidth) ? i : "1fr", " - ").concat(16, "px)")
               };
             return (0, a.jsx)("div", {
               className: l,
-              style: s,
+              style: o,
               children: null == (r = e.renderHeader) ? true : r.call(e, e, n)
             }, "dev-tools-th-".concat(t, "-").concat(e.key))
           })
@@ -76,23 +76,23 @@ function c(e) {
         } = e, r = n[t];
         if (null == r) return null;
         let i = r.key,
-          h = l()(o.tableRow, {
-            [o.selectedTableRow]: i === u,
+          h = l()(s.tableRow, {
+            [s.selectedTableRow]: i === u,
             rowClassName: c
           });
-        return (0, a.jsx)(s.P3F, {
+        return (0, a.jsx)(o.P3F, {
           className: h,
           onClick: () => null == d ? true : d(r),
           children: p.map(e => {
             var n, i;
             let l = e.cellClassName,
-              s = {
+              o = {
                 width: "calc(".concat(null != (i = e.cellWidth) ? i : "1fr", " - ").concat(16, "px)"),
                 height: "calc(".concat(m, "px - ").concat(16, "px)")
               };
             return (0, a.jsx)("div", {
               className: l,
-              style: s,
+              style: o,
               children: null == (n = e.render) ? true : n.call(e, r, true, t)
             }, "dev-tools-td-".concat(t, "-").concat(e.key))
           })

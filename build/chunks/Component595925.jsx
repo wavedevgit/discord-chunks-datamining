@@ -1,7 +1,7 @@
 /** Chunk was on 99904 **/
 /** chunk id: 595925, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => o
+  O: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,7 +10,7 @@ var Chunk159691 = require("./159691.js"),
   Chunk901446 = require("./901446.js"),
   Chunk29594 = require("./29594.jsx");
 
-function o() {
+function s() {
   return (0, Chunk951288.jsxs)(Chunk29594.E_, {
     label: "Open New Revenue Storybook",
     direction: "vertical",

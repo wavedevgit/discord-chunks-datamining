@@ -302,13 +302,15 @@ function eR(e) {
     source: y.d0.LAUNCHER,
     enabledOOP: false,
     enabledLegacy: false,
-    overlayMethod: y.gl.Disabled
+    overlayMethod: y.gl.Disabled,
+    reason: "Game is launcher"
   };
   if ("pid" in i && !v.Z.acquireLock(i.pid)) return {
     source: y.d0.GLOBAL_OVERLAY_LOCK_FAILED,
     enabledOOP: false,
     enabledLegacy: false,
-    overlayMethod: y.gl.Disabled
+    overlayMethod: y.gl.Disabled,
+    reason: "Another Discord instance running overlay for this pid"
   };
   let a = n.getGameByName(i.name);
   if (null != a) {
@@ -317,7 +319,8 @@ function eR(e) {
       source: y.d0.LIBRARY_APPLICATION,
       enabledOOP: e.isOverlayV3Enabled(),
       enabledLegacy: e.isLegacyOverlayEnabled(),
-      overlayMethod: y.gl.Disabled
+      overlayMethod: y.gl.Disabled,
+      reason: "Some library application thing?"
     }
   }
   let o = (0, O.NW)("getRawOverlayGameStatus") && (0, x.supportsOutOfProcess)() && !t,
@@ -334,7 +337,8 @@ function eR(e) {
       source: e && !s ? y.d0.OOP_DEFAULT : y.d0.USER_OVERRIDE,
       enabledOOP: e,
       enabledLegacy: t,
-      overlayMethod: c ? n : y.gl.Hook
+      overlayMethod: c ? n : y.gl.Hook,
+      reason: "Enabled from persistent"
     }
   }
   let f = null == i.id ? null : el[i.id];
@@ -347,14 +351,16 @@ function eR(e) {
       source: e && !s ? y.d0.OOP_DEFAULT_DATABASE : y.d0.DATABASE,
       enabledOOP: e,
       enabledLegacy: t,
-      overlayMethod: c ? n : y.gl.Hook
+      overlayMethod: c ? n : y.gl.Hook,
+      reason: "Enabled from overlayOptions"
     }
   }
   return {
     source: y.d0.DEFAULT,
     enabledOOP: Y || c,
     enabledLegacy: Y,
-    overlayMethod: c ? y.gl.OutOfProcess : y.gl.Disabled
+    overlayMethod: c ? y.gl.OutOfProcess : y.gl.Disabled,
+    reason: "Default enablement"
   }
 }
 

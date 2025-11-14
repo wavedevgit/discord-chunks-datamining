@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk108514 = require("./108514.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js");
-let o = {
+let s = {
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Messages_Opt.lottie": () => require.e("49190").then(require.t.bind(require, 871413, 17)),
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Notifications_Opt.lottie": () => require.e("30611").then(require.t.bind(require, 34195, 17)),
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Servers_CombinedEE.lottie": () => require.e("35981").then(require.t.bind(require, 590990, 17)),
@@ -209,7 +209,7 @@ function d() {
     children: (0, Chunk951288.jsxs)(Chunk793030.Kqy, {
       gap: 24,
       children: [(0, Chunk951288.jsx)(Chunk481060.VcW, {
-        options: Object.keys(o).map(e => ({
+        options: Object.keys(s).map(e => ({
           label: e,
           value: e
         })),
@@ -232,7 +232,7 @@ function d() {
         disabled: null == module,
         onClick: async () => {
           if (null == module) return;
-          let t = o[module],
+          let t = s[module],
             n = new Blob([JSON.stringify(module.endsWith(".lottie") ? await exports().then(c) : await exports())], {
               type: "application/json"
             }),
@@ -248,7 +248,7 @@ function d() {
         },
         children: (0, Chunk951288.jsx)(Chunk481060.Fmz, {
           importData: () => {
-            let t = o[module];
+            let t = s[module];
             return module.endsWith(".lottie") ? exports().then(c) : exports()
           }
         }, module)

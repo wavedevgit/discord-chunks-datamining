@@ -1,7 +1,7 @@
 /** Chunk was on 99904 **/
 /** chunk id: 383832, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o,
+  Z: () => s,
   y: () => c
 });
 var Chunk951288 = require("./951288.js");
@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk71509 = require("./71509.js");
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -29,12 +29,12 @@ function s(e) {
   return e
 }
 
-function o() {
+function s() {
   (0, Chunk481060.ZDy)(async () => {
     let {
       default: e
     } = await require.e("55944").then(require.bind(require, 266653));
-    return t => (0, a.jsx)(e, s({}, t))
+    return t => (0, a.jsx)(e, o({}, t))
   }, {
     onCloseCallback: () => {
       Chunk570140.Z.dispatch({
@@ -53,8 +53,8 @@ function c() {
     } = await Promise.all([require.e("52030"), require.e("41619"), require.e("24374")]).then(require.bind(require, 153069));
     return t => {
       var n, r;
-      return (0, a.jsx)(e, (n = s({}, t), r = r = {
-        onBackPressed: o
+      return (0, a.jsx)(e, (n = o({}, t), r = r = {
+        onBackPressed: s
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

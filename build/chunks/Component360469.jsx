@@ -1,5 +1,5 @@
 /** Chunk was on 80448 **/
-/** chunk id: 360469, original params: t,r,e (module,exports,require) **/
+/** chunk id: 360469, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   Z: () => o
 });
@@ -15,7 +15,7 @@ function o() {
   let {
     messages: {
       numMessagesSent: t,
-      numMessagesSentPercentile: r
+      numMessagesSentPercentile: e
     }
   } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData());
   return (0, Chunk951288.jsxs)(Chunk198358.Z, {
@@ -30,11 +30,11 @@ function o() {
       color: "text-primary",
       children: Chunk388032.intl.format(Chunk892694.default.ixvOza, {
         percent: 100 - exports,
-        percentHook: (t, r) => (0, i.jsx)(n.xvT, {
+        percentHook: (t, e) => (0, r.jsx)(n.xvT, {
           variant: "display-sm",
           color: "text-primary",
           children: t
-        }, r)
+        }, e)
       })
     })]
   })

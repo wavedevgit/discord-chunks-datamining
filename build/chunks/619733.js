@@ -3,11 +3,11 @@
 require.d(exports, {
   AK: () => c,
   EK: () => l,
-  IX: () => s,
+  IX: () => o,
   SW: () => h,
   SY: () => d,
   Sg: () => m,
-  TG: () => o,
+  TG: () => s,
   YX: () => u,
   Z4: () => g,
   nd: () => x,
@@ -16,7 +16,7 @@ require.d(exports, {
 var a, Chunk763600 = require("./763600.js"),
   Chunk48541 = require("./48541.js"),
   l = 12633 == require.j ? ((a = {}).SELECT_GAME = "select-game", a.SERVER_SETTINGS = "server-settings", a) : null;
-let s = {
+let o = {
     steps: {
       "select-game": {
         onBack: {
@@ -38,9 +38,9 @@ let s = {
       }
     }
   },
-  o = 24,
+  s = 24,
   c = 680,
-  d = 12633 == require.j ? c - 2 * o : null,
+  d = 12633 == require.j ? c - 2 * s : null,
   u = 10,
   m = 32,
   p = 1e3,

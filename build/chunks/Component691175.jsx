@@ -18,15 +18,15 @@ var Chunk951288 = require("./951288.js"),
 let x = [Chunk657707.tBG, Chunk657707.b7C, Chunk657707.OgN, Chunk657707.e5I, Chunk657707.Ffc, Chunk657707.WXD, Chunk657707.EmW, Chunk657707.Jmo, Chunk657707.Vy8, Chunk657707.yxC, Chunk657707.RJm, Chunk657707.y3H, Chunk657707.vqy, Chunk657707.ED8, Chunk657707.ZRV, Chunk657707.GsA, Chunk657707.GuY, Chunk657707.aXf, Chunk657707.ewm],
   g = ["text-default", "text-feedback-positive", "text-feedback-warning", "text-feedback-info", "text-feedback-critical"],
   f = () => {
-    let [e, t] = Chunk647438.useState(""), [n, i] = Chunk647438.useState(""), [l, s] = Chunk647438.useState(false);
+    let [e, t] = Chunk647438.useState(""), [n, i] = Chunk647438.useState(""), [l, o] = Chunk647438.useState(false);
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)("form", {
         onSubmit: async a => {
-          a.preventDefault(), s(true);
+          a.preventDefault(), o(true);
           try {
             await (0, d.UK)(e, n), t(""), i("")
           } finally {
-            s(false)
+            o(false)
           }
         },
         children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
@@ -87,7 +87,7 @@ let x = [Chunk657707.tBG, Chunk657707.b7C, Chunk657707.OgN, Chunk657707.e5I, Chu
     } = e, {
       id: n,
       summary: i
-    } = t, f = u.Z.getUsersForPool(n), b = (0, o.e7)([p.default], () => p.default.getId()), v = x[Number(n) % x.length], j = g[Number(n) % g.length], _ = r.useCallback(() => {
+    } = t, f = u.Z.getUsersForPool(n), b = (0, s.e7)([p.default], () => p.default.getId()), v = x[Number(n) % x.length], j = g[Number(n) % g.length], _ = r.useCallback(() => {
       (0, d.KZ)(n)
     }, [n]);
     return (0, a.jsx)(c.Kqy, {
@@ -146,7 +146,7 @@ let x = [Chunk657707.tBG, Chunk657707.b7C, Chunk657707.OgN, Chunk657707.e5I, Chu
                   className: l()({
                     [h.userInfoDisabled]: b === e.id
                   }),
-                  children: [(0, a.jsx)(s.tBG, {
+                  children: [(0, a.jsx)(o.tBG, {
                     size: "custom",
                     width: 20,
                     height: 20,
@@ -166,7 +166,7 @@ let x = [Chunk657707.tBG, Chunk657707.b7C, Chunk657707.OgN, Chunk657707.e5I, Chu
                 }), b === e.id ? (0, a.jsx)(c.Text, {
                   variant: "text-sm/normal",
                   color: "text-feedback-positive",
-                  children: (0, a.jsx)(s.owK, {
+                  children: (0, a.jsx)(o.owK, {
                     size: "sm",
                     color: "currentColor"
                   })
@@ -179,7 +179,7 @@ let x = [Chunk657707.tBG, Chunk657707.b7C, Chunk657707.OgN, Chunk657707.e5I, Chu
           }, e.id)), (0, a.jsx)("div", {
             className: h.buttonContainer,
             children: (0, a.jsx)(c.Button, {
-              icon: s.XHJ,
+              icon: o.XHJ,
               text: "",
               size: "sm",
               variant: "secondary",

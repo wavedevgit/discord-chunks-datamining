@@ -45,7 +45,7 @@ function d(e) {
     className: l()(c.accordionContainer, u, {
       [c.opened]: C
     }),
-    children: [(0, a.jsxs)(s.P3F, {
+    children: [(0, a.jsxs)(o.P3F, {
       className: c.header,
       onClick: S,
       children: [null != t && (0, a.jsx)("div", {
@@ -53,11 +53,11 @@ function d(e) {
         children: t
       }), (0, a.jsxs)("div", {
         className: c.title,
-        children: [(0, a.jsx)(s.Text, {
+        children: [(0, a.jsx)(o.Text, {
           variant: "eyebrow",
           color: "header-secondary",
           children: n
-        }), null != i && "" !== i && (0, a.jsx)(s.Text, {
+        }), null != i && "" !== i && (0, a.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "interactive-normal",
           children: i
@@ -66,10 +66,10 @@ function d(e) {
         className: l()(c.caret, {
           [c.opened]: C
         }),
-        children: (0, a.jsx)(o.Z, {
+        children: (0, a.jsx)(s.Z, {
           width: 18,
           height: 18,
-          direction: o.Z.Directions.DOWN
+          direction: s.Z.Directions.DOWN
         })
       })]
     }), (0, a.jsx)("div", {

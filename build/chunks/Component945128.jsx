@@ -24,18 +24,18 @@ let d = e => {
     children: [(0, a.jsx)(i.Heading, {
       variant: "heading-lg/bold",
       className: c.title,
-      children: o.intl.string(s.default.v52itt)
+      children: s.intl.string(o.default.v52itt)
     }), (0, a.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "text-muted",
       className: c.description,
-      children: o.intl.string(s.default["5am8D3"])
+      children: s.intl.string(o.default["5am8D3"])
     }), (0, a.jsx)(i.Kqy, {
       direction: "horizontal",
       justify: "end",
       children: (0, a.jsx)(i.Button, {
         variant: "primary",
-        text: o.intl.string(s.default["GDsHl+"]),
+        text: s.intl.string(o.default["GDsHl+"]),
         onClick: d,
         disabled: n
       })

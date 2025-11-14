@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk658722 = require("./658722.js"),
-  o = require.n(Chunk658722),
+  s = require.n(Chunk658722),
   Chunk913527 = require("./913527.js"),
   d = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -65,11 +65,11 @@ let O = [{
           descriptor: n,
           exposureType: r,
           excluded: i,
-          timestamp: s,
-          location: o,
+          timestamp: o,
+          location: s,
           previouslyTracked: c
         }
-      } = e, u = d()(s);
+      } = e, u = d()(o);
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsxs)(x.ZP, {
           className: l()(E.headerBar, S.subPanelHeaderBar),
@@ -84,7 +84,7 @@ let O = [{
           children: [(0, a.jsx)(v.Z9, {
             name: "Timestamp (local)",
             children: (0, a.jsx)("time", {
-              dateTime: s.toISOString(),
+              dateTime: o.toISOString(),
               title: (0, g.vc)(u, "LLLL"),
               children: (0, g.Y4)(u)
             })
@@ -126,7 +126,7 @@ let O = [{
           }), (0, a.jsx)(v.Z9, {
             name: "Location",
             children: (0, a.jsx)("code", {
-              children: o
+              children: s
             })
           })]
         })]
@@ -135,7 +135,7 @@ let O = [{
   }];
 
 function N() {
-  let [e, t] = Chunk647438.useState(""), n = Chunk647438.useRef(null), i = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), x = Chunk658722.find(e => e.key === c), {
+  let [e, t] = Chunk647438.useState(""), n = Chunk647438.useRef(null), i = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), o = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || s()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), x = Chunk658722.find(e => e.key === c), {
     TabBar: g,
     renderSelectedTab: v
   } = (0, Chunk621060.ZP)({

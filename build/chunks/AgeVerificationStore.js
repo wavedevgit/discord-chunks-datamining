@@ -5,14 +5,14 @@ require.d(exports, {
 });
 var a, r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let s = null,
-  o = false;
+let o = null,
+  s = false;
 class c extends(r = Chunk442837.ZP.Store) {
   get loading() {
-    return o
+    return s
   }
   get methods() {
-    return s
+    return o
   }
 }(a = "displayName") in c ? Object.defineProperty(c, a, {
   value: "AgeVerificationStore",
@@ -22,15 +22,15 @@ class c extends(r = Chunk442837.ZP.Store) {
 }) : c[a] = "AgeVerificationStore";
 let d = new c(Chunk570140.Z, {
   AGE_VERIFICATION_METHODS_LOAD_START: function() {
-    o = true
+    s = true
   },
   AGE_VERIFICATION_METHODS_LOAD_SUCCESS: function(e) {
     let {
       methods: t
     } = e;
-    s = t, o = false
+    o = t, s = false
   },
   AGE_VERIFICATION_METHODS_LOAD_FAILURE: function() {
-    o = false
+    s = false
   }
 })

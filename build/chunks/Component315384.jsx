@@ -73,15 +73,15 @@ function p() {
       }), (0, Chunk951288.jsx)("ul", {
         children: exports.map(e => (0, a.jsx)("li", {
           children: (0, a.jsxs)("div", {
-            children: [(0, a.jsx)(s.Text, {
+            children: [(0, a.jsx)(o.Text, {
               selectable: true,
               variant: "text-md/normal",
               children: e.id
-            }), (0, a.jsxs)(s.Text, {
+            }), (0, a.jsxs)(o.Text, {
               selectable: true,
               variant: "text-md/normal",
               children: ["Type: ", m[e.skuId]]
-            }), (0, a.jsxs)(s.Text, {
+            }), (0, a.jsxs)(o.Text, {
               selectable: true,
               variant: "text-md/normal",
               children: ["Consumed? : ", e.consumed ? "Yes" : "No"]

@@ -22,7 +22,7 @@ let x = [{
       let {
         channelName: t
       } = e;
-      return (0, a.jsx)(s.Text, {
+      return (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -34,7 +34,7 @@ let x = [{
       let {
         channelId: t
       } = e;
-      return (0, a.jsx)(s.Text, {
+      return (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -47,7 +47,7 @@ let x = [{
       let {
         channelName: t
       } = e;
-      return (0, a.jsx)(s.Text, {
+      return (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -59,7 +59,7 @@ let x = [{
       let {
         loadState: t
       } = e;
-      return (0, a.jsx)(s.Text, {
+      return (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -71,7 +71,7 @@ let x = [{
       let {
         channelId: t
       } = e;
-      return (0, a.jsx)(s.Text, {
+      return (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -129,7 +129,7 @@ function f() {
             label: "Nav On Click",
             checked: !!S,
             onChange: e => {
-              o.Z.dispatch({
+              s.Z.dispatch({
                 type: "NOTIFICATIONS_INBOX_SET_DEV_OVERRIDES",
                 navOnClick: e
               })

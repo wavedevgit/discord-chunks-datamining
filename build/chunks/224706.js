@@ -2,7 +2,7 @@
 /** chunk id: 224706, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => G
 }), require("./388685.js"), require("./35282.js"), require("./415506.js");
 var Chunk664751 = require("./664751.js"),
   Chunk990547 = require("./990547.js"),
@@ -16,7 +16,7 @@ var Chunk664751 = require("./664751.js"),
   Chunk710845 = require("./710845.js"),
   Chunk48131 = require("./48131.js"),
   Chunk813370 = require("./813370.js"),
-  Chunk669764 = require("./669764.js"),
+  Chunk346951 = require("./346951.js"),
   Chunk594190 = require("./594190.js"),
   Chunk706454 = require("./706454.js"),
   Chunk757266 = require("./757266.js"),
@@ -35,10 +35,9 @@ var Chunk664751 = require("./664751.js"),
   Chunk701488 = require("./701488.js"),
   Chunk388032 = require("./388032.jsx");
 let x = 3,
-  L = 20,
-  M = new Chunk710845.Z("GamesActionCreators");
+  L = new Chunk710845.Z("GamesActionCreators");
 
-function k(e) {
+function M(e) {
   let {
     applicationId: t,
     secret: n,
@@ -57,20 +56,20 @@ function k(e) {
       try {
         if (r.startsWith("http")) {
           let e = window.open(r, "_blank");
-          (null == e || e.closed || true === e.closed) && (M.warn("Deep link popup was blocked by browser, trying location.href", {
+          (null == e || e.closed || true === e.closed) && (L.warn("Deep link popup was blocked by browser, trying location.href", {
             applicationId: t
           }), window.location.href = r)
         } else window.location.href = r;
         return Promise.resolve()
       } catch (e) {
-        M.warn("Failed to open deep link, falling back to desktop launch", {
+        L.warn("Failed to open deep link, falling back to desktop launch", {
           applicationId: t,
           error: e.message
         })
       }
     }
   }
-  G({
+  U({
     applicationId: t,
     channelId: r,
     embedded: a,
@@ -91,14 +90,14 @@ function k(e) {
   }))
 }
 
-function j(e, t) {
+function k(e, t) {
   return null == e || "" === e ? null : {
     distributor: e,
     sku: t
   }
 }
 
-function U(e) {
+function j(e) {
   return o.tn.post({
     url: P.ANM.OAUTH2_AUTHORIZE,
     query: {
@@ -126,7 +125,7 @@ function U(e) {
     throw e
   })
 }
-async function G(e) {
+async function U(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -160,7 +159,7 @@ async function G(e) {
     if (null == e) throw Error("Missing dispatch game when launching");
     let i = y.Z.getLibraryApplication(t, n);
     if (null == i) throw Error("Missing library application when launching");
-    d = U(t).then(t => T.Z.launchDispatchApplication(e, t, g.default.locale, i.getBranchName(), r))
+    d = j(t).then(t => T.Z.launchDispatchApplication(e, t, g.default.locale, i.getBranchName(), r))
   } else {
     let e = u.Z.getApplication(t);
     d = null != e ? T.Z.launch(e) : T.Z.launchGame(t)
@@ -191,7 +190,7 @@ async function G(e) {
     error: f
   }), Promise.reject(f))
 }
-let B = {
+let G = {
   addGame(e, t) {
     l.Z.dispatch({
       type: "RUNNING_GAME_ADD_OVERRIDE",
@@ -236,7 +235,7 @@ let B = {
   },
   identifyGame: (e, t) => (0, d.Z)().then(t => new Promise((n, r) => {
     if (null == t) return void r(Error("Game utils module not loaded"));
-    t.identifyGame(e, (t, i) => (M.log("Identified game: ", {
+    t.identifyGame(e, (t, i) => (L.log("Identified game: ", {
       status: t,
       name: i.name,
       iconHash: i.iconHash,
@@ -255,34 +254,10 @@ let B = {
       forceFetch: t
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
       forceFetch: false
-    }, n = t ? e : e.filter(h.Z.canFetch);
-    if (0 === n.length) return;
-    l.Z.dispatch({
-      type: "DETECTABLE_GAME_SUPPLEMENTAL_FETCH",
-      applicationIds: n
-    });
-    let r = async e => {
-      try {
-        let t = await o.tn.get({
-          url: P.ANM.APPLICATIONS_GAMES_SUPPLEMENTAL,
-          query: {
-            application_ids: e
-          },
-          rejectWithError: true
-        });
-        l.Z.dispatch({
-          type: "DETECTABLE_GAME_SUPPLEMENTAL_FETCH_SUCCESS",
-          applicationIds: e,
-          supplementalGameData: t.body.supplemental_game_data
-        })
-      } catch (t) {
-        l.Z.dispatch({
-          type: "DETECTABLE_GAME_SUPPLEMENTAL_FETCH_FAILURE",
-          applicationIds: e
-        })
-      }
     };
-    for (; n.length > 0;) r(n.splice(0, L))
+    (0, h.R)(e, {
+      forceFetch: t
+    })
   },
   getDetectableGames() {
     if (!Chunk77498.Z.canFetchDetectableGames()) return;
@@ -343,7 +318,7 @@ let B = {
       sku: a,
       executableName: s
     } = e, c = (0, d.F)(s);
-    M.log("Reporting unverified game: ", {
+    L.log("Reporting unverified game: ", {
       name: t,
       executableName: s,
       iconHash: n,
@@ -357,7 +332,7 @@ let B = {
         name: t,
         os: (0, S.getPlatformName)(),
         icon: n,
-        distributor_application: j(i, a),
+        distributor_application: k(i, a),
         executable: c,
         publisher: r,
         report_version: x
@@ -400,7 +375,7 @@ let B = {
       game: e
     })
   },
-  launch: G,
+  launch: U,
   async join(e) {
     let {
       userId: t,
@@ -431,7 +406,7 @@ let B = {
     try {
       let e = (0, S.platformPrefersDeepLink)(),
         l = await C.Z.getJoinSecret(t, n, r, i, a);
-      return null == f && k({
+      return null == f && M({
         applicationId: r,
         secret: l,
         channelId: i,
@@ -449,5 +424,5 @@ let B = {
       }), false
     }
   },
-  joinWithSecret: k
+  joinWithSecret: M
 }

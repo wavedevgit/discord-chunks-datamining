@@ -59,7 +59,7 @@ function m() {
       vcProbability: a
     } = e;
     return {
-      user: s.default.getUser(t),
+      user: o.default.getUser(t),
       affinity: n,
       vcProbability: a,
       key: t

@@ -19,7 +19,7 @@ function u(e) {
     subheading: u,
     children: m,
     height: p
-  } = e, h = (0, s.Dt)(), x = r.useRef(null), g = (0, l.q_F)({
+  } = e, h = (0, o.Dt)(), x = r.useRef(null), g = (0, l.q_F)({
     from: {
       transform: "translate3d(-110%, 0, 0)",
       height: p
@@ -50,7 +50,7 @@ function u(e) {
           "aria-label": c.intl.string(c.t.WAI6xu),
           className: d.closeButton,
           onClick: () => {
-            t(o.L.USER_DISMISS)
+            t(s.L.USER_DISMISS)
           },
           children: (0, a.jsx)(l.Dio, {
             color: "currentColor"

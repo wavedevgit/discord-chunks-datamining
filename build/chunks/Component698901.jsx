@@ -9,16 +9,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk536442 = require("./536442.js"),
   Chunk983380 = require("./983380.js");
 
-function o(e) {
+function s(e) {
   let {
     hotspotLocation: t
-  } = e, [n, o] = (0, r.Wu)([l.qc], () => [l.qc.hasHotspot(t, true), l.qc.getHotspotOverride(t)]);
+  } = e, [n, s] = (0, r.Wu)([l.qc], () => [l.qc.hasHotspot(t, true), l.qc.getHotspotOverride(t)]);
   return (0, a.jsx)(i.q4e, {
     label: t,
     helperText: n ? "Active" : true,
     errorMessage: n ? "Inactive" : true,
-    className: s.overrideSelect,
-    value: o,
+    className: o.overrideSelect,
+    value: s,
     options: [{
       value: true,
       label: "No Override"
@@ -40,7 +40,7 @@ function c() {
     className: Chunk983380.hotspotsSection,
     children: (0, Chunk951288.jsx)(Chunk481060.Kqy, {
       gap: 20,
-      children: Object.keys(Chunk536442.v6).sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(o, {
+      children: Object.keys(Chunk536442.v6).sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(s, {
         hotspotLocation: e
       }, e))
     })

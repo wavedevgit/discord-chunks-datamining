@@ -38,7 +38,7 @@ let S = async () => {
   }
 }, E = async (e, t) => {
   try {
-    await s.tn.post({
+    await o.tn.post({
       url: j.ANM.CREATE_USER_OFFER(e, t),
       rejectWithError: true
     })
@@ -47,7 +47,7 @@ let S = async () => {
   }
 }, O = async (e, t) => {
   try {
-    await s.tn.del({
+    await o.tn.del({
       url: j.ANM.UPDATE_USER_OFFER(e, t),
       rejectWithError: true
     })
@@ -79,7 +79,7 @@ let S = async () => {
     await Chunk431.Z.forceReset(), await (0, Chunk937579.Tf)()
   }
 }, P = async e => {
-  await s.tn.post({
+  await o.tn.post({
     url: j.ANM.CREATE_REVERSE_TRIAL,
     body: {
       ends_at: e
@@ -89,7 +89,7 @@ let S = async () => {
 };
 
 function I(e) {
-  var t, n, i, o, m;
+  var t, n, i, s, m;
   let {
     offer: p,
     offerOptions: f,
@@ -120,15 +120,15 @@ function I(e) {
   null != D && (L = "".concat(L, " from @").concat(D.username));
   let M = null != k,
     U = null != k && new Date(k).getTime() < Date.now(),
-    F = (null == Z ? true : Z.sku_id) === _.Si.TIER_0,
-    B = async () => {
+    B = (null == Z ? true : Z.sku_id) === _.Si.TIER_0,
+    F = async () => {
       N(true), M ? await G({
         expiresAt: null
       }) : await (0, u.ab)(p), b(), N(false)
     }, G = async e => {
       N(true);
       try {
-        await s.tn.patch({
+        await o.tn.patch({
           url: j.ANM.UPDATE_USER_OFFER(w, "trial"),
           body: function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -178,7 +178,7 @@ function I(e) {
   }, [v, S]);
   let z = "Active";
   return M && (z = "Acked"), U && (z = "Expired"), (0, a.jsxs)("div", {
-    className: l()(y.card, F ? y.gradientWrapperTier0 : y.gradientWrapperTier2),
+    className: l()(y.card, B ? y.gradientWrapperTier0 : y.gradientWrapperTier2),
     children: [(0, a.jsx)("div", {
       className: l()(y.row, y.nameRow),
       children: (0, a.jsx)(c.Heading, {
@@ -229,7 +229,7 @@ function I(e) {
         color: "always-white",
         children: ["Trial Length:", " ", (0, g.if)({
           intervalType: null != (i = null == Z ? true : Z.interval) ? i : _.rV.MONTH,
-          intervalCount: null != (o = null == Z ? true : Z.interval_count) ? o : 1,
+          intervalCount: null != (s = null == Z ? true : Z.interval_count) ? s : 1,
           capitalize: false
         })]
       })
@@ -264,7 +264,7 @@ function I(e) {
     }), (0, a.jsxs)("div", {
       className: y.badgeContainer,
       children: [(0, a.jsx)(c.P3F, {
-        onClick: B,
+        onClick: F,
         className: l()(y.badge, y.clickable, {
           [y.acked]: M,
           [y.expired]: U
@@ -304,7 +304,7 @@ function w(e) {
   var t, n;
   let {
     offer: i,
-    offerOptions: o,
+    offerOptions: s,
     forceRefetch: m
   } = e, [p, g] = r.useState(false), [f, b] = r.useState(false), [v, _] = r.useState(false), [C, S] = r.useState(false);
   r.useEffect(() => {
@@ -322,7 +322,7 @@ function w(e) {
     applied_at: N,
     discount_id: P,
     discount: I
-  } = i, w = null != (n = null == (t = o.find(e => {
+  } = i, w = null != (n = null == (t = s.find(e => {
     let {
       value: t
     } = e;
@@ -337,7 +337,7 @@ function w(e) {
     } = e;
     _(true);
     try {
-      await s.tn.patch({
+      await o.tn.patch({
         url: j.ANM.UPDATE_USER_OFFER(E, "discount"),
         body: {
           expires_at: t
@@ -471,14 +471,14 @@ function w(e) {
 }
 
 function k() {
-  let [e, t] = Chunk647438.useState([]), [n, i] = Chunk647438.useState([]), [l, s] = Chunk647438.useState(), [d, h] = Chunk647438.useState(), [x, g] = Chunk647438.useState([]), [_, O] = Chunk647438.useState([]), [k, R] = Chunk647438.useState(true), [A, Z] = Chunk647438.useState(10080), [D, L] = Chunk647438.useState([]), {
+  let [e, t] = Chunk647438.useState([]), [n, i] = Chunk647438.useState([]), [l, o] = Chunk647438.useState(), [d, h] = Chunk647438.useState(), [x, g] = Chunk647438.useState([]), [_, O] = Chunk647438.useState([]), [k, R] = Chunk647438.useState(true), [A, Z] = Chunk647438.useState(10080), [D, L] = Chunk647438.useState([]), {
     entitlements: M,
     deleteFractionalPremium: U,
-    refreshEntitlementList: F
+    refreshEntitlementList: B
   } = (0, Chunk232867.m)();
   Chunk647438.useEffect(() => {
-    F()
-  }, [F]), Chunk647438.useEffect(() => {
+    B()
+  }, [B]), Chunk647438.useEffect(() => {
     L(M.filter(e => e.sourceType === j.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
   }, [M]), Chunk647438.useEffect(() => {
     (0 === module.length || 0 === require.length || k) && S().then(e => {
@@ -490,22 +490,22 @@ function k() {
           label: t,
           value: e.discount[t]
         }));
-      t(n), i(a), null == l && s(n[0].value), null == d && h(a[0].value)
+      t(n), i(a), null == l && o(n[0].value), null == d && h(a[0].value)
     })
   }, [module, require, l, Chunk105713, k]), Chunk647438.useEffect(() => {
     k && (R(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), T().then(e => {
       g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), O(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [k]);
-  let B = async () => {
+  let F = async () => {
     null != l && (await E(l, "trial"), R(true))
   }, G = async () => {
     null != Chunk105713 && (await E(Chunk105713, "discount"), R(true))
   }, z = async () => {
     await N(), R(true)
-  }, V = async () => {
+  }, H = async () => {
     let e = new Date(Date.now() + 60 * A * 1e3).toISOString();
-    await P(module), F()
+    await P(module), B()
   };
   return (0, Chunk951288.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
@@ -553,12 +553,12 @@ function k() {
             isSelected: e => l === e,
             placeholder: "Trial Type",
             serialize: e => String(e),
-            select: e => s(e),
+            select: e => o(e),
             popoutLayerContext: Chunk246992.O$
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Create",
-            onClick: B
+            onClick: F
           })]
         })]
       }), (0, Chunk951288.jsxs)("section", {
@@ -632,7 +632,7 @@ function k() {
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Create",
-            onClick: V
+            onClick: H
           })]
         })]
       }), D.length > 0 && (0, Chunk951288.jsxs)("div", {

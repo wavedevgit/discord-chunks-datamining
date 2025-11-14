@@ -24,10 +24,10 @@ var Chunk481060 = require("./481060.js"),
 function v(e) {
   let {
     dismissibleContent: t
-  } = e, n = p.Z.useIsEligible(), m = (0, s.Nj)(t), {
+  } = e, n = p.Z.useIsEligible(), m = (0, o.Nj)(t), {
     analyticsLocations: v
   } = (0, l.ZP)(i.Z.HOLIDAY_COACHMARK), j = e => {
-    (0, s.Q3)(t, {
+    (0, o.Q3)(t, {
       dismissAction: e
     })
   }, _ = () => {
@@ -37,7 +37,7 @@ function v(e) {
       analyticsLocations: v
     }), j(g.L.TAKE_ACTION)
   };
-  return n && !m ? (0, a.jsx)(o.ZP, {
+  return n && !m ? (0, a.jsx)(s.ZP, {
     children: (0, a.jsxs)("div", {
       className: b.wrapper,
       children: [(0, a.jsxs)("div", {

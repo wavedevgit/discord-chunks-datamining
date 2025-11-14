@@ -66,7 +66,7 @@ function p(e) {
     trailing: x,
     renderSubmenu: g,
     ref: f
-  } = e, b = null != n, v = (0, s.Q1)({
+  } = e, b = null != n, v = (0, o.Q1)({
     action: t,
     onClick: n
   }), [j, _] = r.useState(false), y = r.useRef(null), C = null != f ? f : y, S = null != g, E = S && b, O = {
@@ -116,7 +116,7 @@ function p(e) {
         children: P()
       }), (0, a.jsx)(l.P3F, u(d({
         className: c.submenuIconWrapper,
-        "aria-label": o.intl.string(o.t.PdRCRg)
+        "aria-label": s.intl.string(s.t.PdRCRg)
       }, e), {
         onClick: T,
         focusProps: O,

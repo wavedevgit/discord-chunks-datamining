@@ -57,8 +57,8 @@ function j() {
     if (null == a) return;
     let i = a.username,
       l = g.ZP.getGlobalName(a),
-      s = m.Z.getNickname(a.id);
-    b.info("username: ".concat(i)), b.info("global name: ".concat(l)), b.info("nickname: ".concat(s)), v()
+      o = m.Z.getNickname(a.id);
+    b.info("username: ".concat(i)), b.info("global name: ".concat(l)), b.info("nickname: ".concat(o)), v()
   }), b.info("END Logging DM Channels\n")
 }
 
@@ -88,8 +88,8 @@ function _() {
     if (null == a) return;
     let i = a.username,
       l = g.ZP.getGlobalName(a),
-      s = m.Z.getNickname(a.id);
-    b.info("username: ".concat(i)), b.info("global name: ".concat(l)), b.info("nickname: ".concat(s)), v()
+      o = m.Z.getNickname(a.id);
+    b.info("username: ".concat(i)), b.info("global name: ".concat(l)), b.info("nickname: ".concat(o)), v()
   }), b.info("END Logging DM Channels\n")
 }
 
@@ -115,16 +115,16 @@ function C() {
   module.forEach(e => {
     (0, h.lM)(e) ? t.push(e): e.isDM() ? a.push(e) : e.isMultiUserDM() ? i.push(e) : n.push(e)
   }), b.info("START Frecency"), b.info("Guilds"), exports.forEach(e => {
-    let t = o.Z.getScoreWithoutFetchingLatest(e.id);
+    let t = s.Z.getScoreWithoutFetchingLatest(e.id);
     b.info("id: ".concat(e.id, " - name: ").concat(e.name, " - Frecency Score: ").concat(t))
   }), v(), b.info("DM Channels"), Chunk279779.forEach(e => {
-    let t = o.Z.getScoreWithoutFetchingLatest(e.id);
+    let t = s.Z.getScoreWithoutFetchingLatest(e.id);
     b.info("id: ".concat(e.id, " - Frecency Score: ").concat(t))
   }), v(), b.info("Group DM Channels"), Chunk710845.forEach(e => {
-    let t = o.Z.getScoreWithoutFetchingLatest(e.id);
+    let t = s.Z.getScoreWithoutFetchingLatest(e.id);
     b.info("id: ".concat(e.id, " - Frecency Score: ").concat(t)), b.info("default name: ".concat((0, r.on)(e, p.default, m.Z))), b.info("name: ".concat((0, r.F6)(e, p.default, m.Z)))
   }), v(), b.info("Guild Channels"), require.forEach(e => {
-    let t = o.Z.getScoreWithoutFetchingLatest(e.id);
+    let t = s.Z.getScoreWithoutFetchingLatest(e.id);
     b.info("id: ".concat(e.id, " - Frecency Score: ").concat(t))
   }), v(), b.info("END Frecency\n")
 }
@@ -155,7 +155,7 @@ function S() {
       case f.h8.USER:
         b.info("user id: ".concat(e.record.id)), b.info("username: ".concat(e.record.username)), b.info("global name: ".concat(g.ZP.getGlobalName(e.record))), b.info("nickname: ".concat(m.Z.getNickname(e.record.id))), b.info("guild nicknames: ".concat(d.ZP.getNicknames(e.record.id)))
     }
-    b.info("frecency score: ".concat(o.Z.getScoreWithoutFetchingLatest(e.record.id))), v()
+    b.info("frecency score: ".concat(s.Z.getScoreWithoutFetchingLatest(e.record.id))), v()
   }), b.info("END Quick Switcher State\n")
 }
 async function E() {

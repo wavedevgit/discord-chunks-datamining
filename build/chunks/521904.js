@@ -8070,6 +8070,310 @@ let {
         opacity: .3
       }
     },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "ORANGE_NEW_80",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "ORANGE_NEW_80",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "ORANGE_NEW_80",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "ORANGE_NEW_80",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "ILLO_ORANGE_40",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "ILLO_ORANGE_40",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "ILLO_ORANGE_40",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "ILLO_ORANGE_40",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "ILLO_PURPLE_50",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "ILLO_PURPLE_50",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "ILLO_PURPLE_50",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "ILLO_PURPLE_50",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "ILLO_PURPLE_40",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "ILLO_PURPLE_40",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "ILLO_PURPLE_40",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "ILLO_PURPLE_40",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_EMERALD_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "ILLO_GREEN_70",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "ILLO_GREEN_70",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "ILLO_GREEN_70",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "ILLO_GREEN_70",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_EMERALD_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "ILLO_GREEN_40",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "ILLO_GREEN_40",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "ILLO_GREEN_40",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "ILLO_GREEN_40",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_GOLD_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "YELLOW_NEW_41",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "YELLOW_NEW_41",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "YELLOW_NEW_41",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "YELLOW_NEW_41",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_GOLD_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "ILLO_YELLOW_50",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "ILLO_YELLOW_50",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "ILLO_YELLOW_50",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "ILLO_YELLOW_50",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_OPAL_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "BLUE_NEW_50",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "BLUE_NEW_50",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "BLUE_NEW_50",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "BLUE_NEW_50",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_OPAL_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "TEAL_NEW_25",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "TEAL_NEW_25",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "TEAL_NEW_25",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "TEAL_NEW_25",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_PLATINUM_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "TEAL_NEW_74",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "TEAL_NEW_74",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "TEAL_NEW_74",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "TEAL_NEW_74",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_PLATINUM_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "TEAL_NEW_20",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "TEAL_NEW_20",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "TEAL_NEW_20",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "TEAL_NEW_20",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_RUBY_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "RED_NEW_80",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "RED_NEW_80",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "RED_NEW_80",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "RED_NEW_80",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_RUBY_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "RED_NEW_44",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "RED_NEW_44",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "RED_NEW_44",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "RED_NEW_44",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_SILVER_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "NEUTRAL_58",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_58",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_58",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_58",
+        opacity: .18
+      }
+    },
+    EXPRESSIVE_GRADIENT_TENURE_BADGE_SILVER_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: .24
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_12",
+        opacity: .18
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_12",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_12",
+        opacity: .18
+      }
+    },
     FOCUS_PRIMARY: {
       category: "generic",
       [r.DARK]: {

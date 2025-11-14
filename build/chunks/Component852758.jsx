@@ -106,7 +106,7 @@ function T() {
     types: T,
     captchaKey: N,
     onCaptchaVerify: e => {
-      s.tn.post({
+      o.tn.post({
         url: y.ANM.CAPTCHA,
         body: {
           captcha_key: e
@@ -119,7 +119,7 @@ function T() {
     },
     theme: exports,
     onClick: e => {
-      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? w() : (0, o.ZDy)(async () => {
+      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? w() : (0, s.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));

@@ -16,9 +16,9 @@ function d(e) {
     displayProfile: t,
     handleOpenUserProfileModal: n,
     height: d
-  } = e, u = (0, o.Un)({
+  } = e, u = (0, s.Un)({
     location: "AccountProfilePopoutUpsell"
-  }), m = (0, s.ww)(t), p = r.useMemo(() => {
+  }), m = (0, o.ww)(t), p = r.useMemo(() => {
     let e = [];
     return u && !m && e.push(i.z.GAME_WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), e
   }, [u, m]);

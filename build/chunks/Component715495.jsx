@@ -54,7 +54,7 @@ function j(e, t) {
 
 function _() {
   var e, t;
-  let [n, i] = (0, Chunk647438.useState)(false), [s, d] = (0, Chunk647438.useState)(false), [h, g] = (0, Chunk647438.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
+  let [n, i] = (0, Chunk647438.useState)(false), [o, d] = (0, Chunk647438.useState)(false), [h, g] = (0, Chunk647438.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
     setToolsCache: O,
     removeToolsCache: T
   } = (0, Chunk396821.L3)(), {
@@ -160,9 +160,9 @@ function _() {
 function y(e) {
   let {
     nameplate: t
-  } = e, [n, i] = (0, r.useState)(320), s = (0, r.useRef)(null), o = (0, r.useRef)(null), c = (0, r.useRef)(null), d = (0, r.useRef)(document), u = (0, r.useCallback)(e => {
-    if (null != s.current) {
-      let t = s.current.getBoundingClientRect();
+  } = e, [n, i] = (0, r.useState)(320), o = (0, r.useRef)(null), s = (0, r.useRef)(null), c = (0, r.useRef)(null), d = (0, r.useRef)(document), u = (0, r.useCallback)(e => {
+    if (null != o.current) {
+      let t = o.current.getBoundingClientRect();
       i(Math.max(264, Math.min(432, e.clientX - t.left)))
     }
   }, []), m = (0, r.useCallback)(e => {
@@ -173,17 +173,17 @@ function y(e) {
         e.preventDefault(), u(e)
       },
       a = () => {
-        null != o.current && (t.removeEventListener("mousemove", o.current), o.current = null), null != c.current && (t.removeEventListener("mouseup", c.current), c.current = null)
+        null != s.current && (t.removeEventListener("mousemove", s.current), s.current = null), null != c.current && (t.removeEventListener("mouseup", c.current), c.current = null)
       };
-    o.current = n, c.current = a, t.addEventListener("mousemove", n), t.addEventListener("mouseup", a)
+    s.current = n, c.current = a, t.addEventListener("mousemove", n), t.addEventListener("mouseup", a)
   }, [u]);
   return (0, r.useEffect)(() => () => {
-    null != o.current && (d.current.removeEventListener("mousemove", o.current), o.current = null), null != c.current && (d.current.removeEventListener("mouseup", c.current), c.current = null)
+    null != s.current && (d.current.removeEventListener("mousemove", s.current), s.current = null), null != c.current && (d.current.removeEventListener("mouseup", c.current), c.current = null)
   }, []), (0, a.jsx)(l.zJl, {
     className: b.previewsContainer,
     orientation: "horizontal",
     children: (0, a.jsxs)("div", {
-      ref: s,
+      ref: o,
       className: b.previews,
       style: {
         width: "".concat(n, "px")
@@ -296,7 +296,7 @@ function O(e) {
         className: b.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, a.jsx)(s.Z, {
+      }), (0, a.jsx)(o.Z, {
         nameplate: t,
         user: n,
         currentUser: n
@@ -305,12 +305,12 @@ function O(e) {
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, a.jsxs)("div", {
-        children: [(0, a.jsx)(s.Z, {
+        children: [(0, a.jsx)(o.Z, {
           nameplate: t,
           selected: true,
           user: n,
           currentUser: n
-        }), (0, a.jsx)(s.Z, {
+        }), (0, a.jsx)(o.Z, {
           selected: true,
           user: n,
           currentUser: n

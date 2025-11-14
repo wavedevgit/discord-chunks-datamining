@@ -32,7 +32,7 @@ function b(e) {
     hasAlreadyLinked: E,
     canStartAuthorization: O,
     startAuthorization: T
-  } = (0, o.F)(C), N = (0, m.ZP)(_), P = null == N || null == (t = N.widgets) ? true : t.some(e => e instanceof d.q && e.applicationId === (null == C ? true : C.id));
+  } = (0, s.F)(C), N = (0, m.ZP)(_), P = null == N || null == (t = N.widgets) ? true : t.some(e => e instanceof d.q && e.applicationId === (null == C ? true : C.id));
   return null != y && null != y.edit_profile_upsell_image && null != C && S ? (0, a.jsx)(c.ZP, {
     bypassAutoDismiss: true,
     contentTypes: E ? P ? [] : [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : O ? [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
@@ -43,7 +43,7 @@ function b(e) {
       } = e;
       if (null == t) return null;
       let i = t === l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
-      return (0, a.jsx)(s.J2, {
+      return (0, a.jsx)(o.J2, {
         targetElementRef: n,
         position: "right",
         gradientColor: "blue",

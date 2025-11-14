@@ -32,11 +32,11 @@ function h(e) {
     r.Z.dispatch({
       type: "GAME_SERVER_FETCH_CATALOG_SUCCESS",
       guildId: e,
-      catalog: o.j.reduce((e, t) => (e[t.id] = t, e), {})
+      catalog: s.j.reduce((e, t) => (e[t.id] = t, e), {})
     })
   }, 5e3);
   let l = null != (n = null == (t = i.default.getCurrentUser()) ? true : t.isStaff()) && n;
-  return (0, s.Kb)({
+  return (0, o.Kb)({
     url: p.ANM.COLLECTION_PUBLISHED_LISTINGS_SKU(m.SW),
     query: {
       guild_id: e,
@@ -66,7 +66,7 @@ function x(e) {
     r.Z.dispatch({
       type: "GAME_SERVER_FETCH_INSTANCES_SUCCESS",
       guildId: e,
-      instances: o.K.reduce((e, t) => (e[t.id] = t, e), {})
+      instances: s.K.reduce((e, t) => (e[t.id] = t, e), {})
     })
   }, 5e3), Promise.resolve()) : a.tn.get({
     url: p.ANM.GAME_SERVERS(e),
@@ -92,13 +92,13 @@ function g(e, t) {
     retries: 3
   }).then(n => {
     if (null != n.body) {
-      var a, i, l, s;
-      let o = null != (s = null == (l = n.body.tenant_metadata) || null == (i = l.guild_monetization) || null == (a = i.game_server) ? true : a.instructions.pc) ? s : [];
+      var a, i, l, o;
+      let s = null != (o = null == (l = n.body.tenant_metadata) || null == (i = l.guild_monetization) || null == (a = i.game_server) ? true : a.instructions.pc) ? o : [];
       r.Z.dispatch({
         type: "GAME_SERVER_FETCH_GAME_INSTRUCTIONS_SUCCESS",
         guildId: e,
         skuId: t,
-        instructions: o
+        instructions: s
       })
     }
   })

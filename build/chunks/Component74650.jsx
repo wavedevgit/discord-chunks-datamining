@@ -21,7 +21,7 @@ function x(e) {
   let {
     markAsDismissed: t,
     onCTA: n
-  } = e, x = (0, r.e7)([o.default], () => o.default.getCurrentUser()), g = (0, c.M5)(x, u.PremiumTypes.TIER_2);
+  } = e, x = (0, r.e7)([s.default], () => s.default.getCurrentUser()), g = (0, c.M5)(x, u.PremiumTypes.TIER_2);
   return (0, a.jsx)("div", {
     className: p.popup,
     children: (0, a.jsxs)("div", {
@@ -53,7 +53,7 @@ function x(e) {
         onClick: () => {
           t(d.L.TAKE_ACTION), n()
         }
-      }) : (0, a.jsx)(s.Z, {
+      }) : (0, a.jsx)(o.Z, {
         onClick: () => {
           t(d.L.TAKE_ACTION)
         },

@@ -27,14 +27,14 @@ function _(e) {
     task: t,
     handleSubmit: n,
     disabled: i
-  } = e, [l, s] = r.useState(t), o = r.useMemo(() => ({
+  } = e, [l, o] = r.useState(t), s = r.useMemo(() => ({
     task: l,
-    setTask: s
-  }), [l, s]);
+    setTask: o
+  }), [l, o]);
   return r.useEffect(() => {
-    s(t)
+    o(t)
   }, [t]), (0, a.jsxs)(u.y.Provider, {
-    value: o,
+    value: s,
     children: [(0, a.jsx)(x.Z, {}), (0, a.jsx)(h.Z, {
       onSubmit: n,
       disabled: i
@@ -97,9 +97,9 @@ let y = function(e) {
       className: v.artwork,
       src: j,
       alt: ""
-    }), N ? (0, a.jsx)(o.default, {
+    }), N ? (0, a.jsx)(s.default, {
       transitionState: i.Dvm.ENTERED,
-      entryPoint: s.cU.SAFETY_FLOWS,
+      entryPoint: o.cU.SAFETY_FLOWS,
       onClose: g.dG,
       onComplete: async () => {
         await T({

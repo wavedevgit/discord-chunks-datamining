@@ -7,5 +7,6 @@ require.d(exports, {
 let r = (0, require("./972959.js").H)(() => ({
   query: "",
   isActive: false,
+  isFocused: false,
   selected: null
 }))

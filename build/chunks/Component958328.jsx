@@ -25,7 +25,7 @@ function v(e) {
   let {
     title: t,
     can: n
-  } = e, r = n ? o.dz2 : o.Dio, l = (0, a.jsx)("div", {
+  } = e, r = n ? s.dz2 : s.Dio, l = (0, a.jsx)("div", {
     className: i()(f.iconOuter, n ? f.iconCheck : f.iconCross),
     children: (0, a.jsx)(r, {
       className: f.icon
@@ -35,7 +35,7 @@ function v(e) {
     className: f.scope,
     children: [l, (0, a.jsx)("div", {
       className: f.scopeInner,
-      children: (0, a.jsx)(o.Text, {
+      children: (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
       })

@@ -58,8 +58,8 @@ class g extends Chunk647438.Component {
       title: e,
       description: t,
       icons: n,
-      style: a,
-      className: i
+      style: i,
+      className: a
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
       ref: this.elementDOMRef,
@@ -94,7 +94,7 @@ class g extends Chunk647438.Component {
     super(...e), t = this, f(this, "state", {
       isDragging: false,
       isOverZone: false
-    }), f(this, "dragOverTimeout", null), f(this, "elementDOMRef", a.createRef()), f(this, "isAllDropFiles", e => {
+    }), f(this, "dragOverTimeout", null), f(this, "elementDOMRef", i.createRef()), f(this, "isAllDropFiles", e => {
       for (let n = 0; n < e.length; n++) try {
         var t;
         let r = null != (t = e[n].webkitGetAsEntry()) ? t : e[n].getAsEntry();
@@ -106,9 +106,9 @@ class g extends Chunk647438.Component {
       let n = arguments.length > 1 && true !== arguments[1] && arguments[1],
         r = e.dataTransfer;
       if (null == r) returntrue;
-      let a = Array.isArray(r.types) && false !== r.types.indexOf("text/uri-list") && false === r.types.indexOf("application/json"),
-        i = null != r.items && !t.isAllDropFiles(r.items);
-      return !a && !i || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
+      let i = Array.isArray(r.types) && false !== r.types.indexOf("text/uri-list") && false === r.types.indexOf("application/json"),
+        a = null != r.items && !t.isAllDropFiles(r.items);
+      return !i && !a || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
         isDragging: false
       }), (0, d.openUploadError)({
         title: u.intl.string(u.t.azO1Pe),
@@ -117,11 +117,11 @@ class g extends Chunk647438.Component {
     }), f(this, "handleDragOver", e => {
       var t, n, r;
       if (!this.preventUnwantedDrop(e)) returnfalse;
-      let a = e.dataTransfer;
-      if (null != a) {
-        if ("move" === a.effectAllowed ? a.dropEffect = "move" : a.dropEffect = "copy", (0, o.nfh)(d.A) && (0, o.Mr3)(d.A), e.stopPropagation(), e.preventDefault(), null == (t = (n = this.props).onDragOver) || t.call(n, e), !this.state.isDragging) {
+      let i = e.dataTransfer;
+      if (null != i) {
+        if ("move" === i.effectAllowed ? i.dropEffect = "move" : i.dropEffect = "copy", (0, o.nfh)(d.A) && (0, o.Mr3)(d.A), e.stopPropagation(), e.preventDefault(), null == (t = (n = this.props).onDragOver) || t.call(n, e), !this.state.isDragging) {
           let e = null == (r = this.elementDOMRef.current) ? true : r.ownerDocument.defaultView;
-          (null != e && a.types instanceof e.DOMStringList && a.types.contains("application/x-moz-file") || false !== a.types.indexOf("Files")) && this.setState(e => e.isDragging ? {} : {
+          (null != e && i.types instanceof e.DOMStringList && i.types.contains("application/x-moz-file") || false !== i.types.indexOf("Files")) && this.setState(e => e.isDragging ? {} : {
             isDragging: true
           })
         }

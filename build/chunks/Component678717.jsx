@@ -67,7 +67,7 @@ function T(e) {
   } = e, r = (0, v.F)(), {
     TabBar: i,
     renderSelectedTab: l,
-    selectedTabId: o
+    selectedTabId: s
   } = (0, j.ZP)({
     tabs: r,
     initialSelectedTabId: null != (t = f.Z.lastOpenTabId) ? t : true,
@@ -78,10 +78,10 @@ function T(e) {
     }
   }, [r]);
   return (0, u.Z)({
-    type: s.ImpressionTypes.PANE,
-    name: s.ImpressionNames.VIEW_PANEL_DEVTOOLS,
+    type: o.ImpressionTypes.PANE,
+    name: o.ImpressionNames.VIEW_PANEL_DEVTOOLS,
     properties: {
-      panel: o
+      panel: s
     }
   }), (0, a.jsxs)(b.Gk, {
     children: [(0, a.jsxs)(m.ZP, {

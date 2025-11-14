@@ -98,7 +98,7 @@ function O() {
     t = (0, Chunk780384.wj)((0, Chunk410030.ZP)());
   if (!module) return null;
   let n = S[module],
-    o = E[module],
+    s = E[module],
     c = {
       currentBadge: (0, Chunk291175.fv)(module),
       currentBadgeTextGradient: exports ? null == require ? true : require.dark : null == require ? true : require.light,

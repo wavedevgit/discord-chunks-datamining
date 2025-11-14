@@ -24,14 +24,14 @@ let u = function(e) {
     loading: l.Z.loading
   })), {
     initiateAgeVerification: h
-  } = (0, o.WD)({
+  } = (0, s.WD)({
     onComplete: t,
     entryPoint: i.cU.EXPRESSIVE_GET_STARTED,
     shouldShowExpressiveModal: true,
     classificationId: u
   });
   return a.useEffect(() => {
-    null == m && (0, s.Jh)()
+    null == m && (0, o.Jh)()
   }, [m]), {
     ageVerificationMethods: null == m ? true : m.map(e => {
       let t = c.ed[e];

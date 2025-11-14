@@ -198,7 +198,8 @@ class en extends Chunk647438.PureComponent {
           enabledOOP: null != (t = null == _ ? true : _.oopEnabled) ? t : I.enabledOOP,
           enabledLegacy: null != (n = null == _ ? true : _.legacyEnabled) ? n : I.enabledLegacy,
           overlayMethod: null != (r = null == _ ? true : _.overlayMethod) ? r : I.overlayMethod,
-          source: null != (i = null == _ ? true : _.source) ? i : I.source
+          source: null != (i = null == _ ? true : _.source) ? i : I.source,
+          reason: "ChatAutoAnalytics"
         },
         S = null != (l = P.default.getOverlayMethod(y.pid)) ? l : C.overlayMethod;
       if (setTimeout(() => {

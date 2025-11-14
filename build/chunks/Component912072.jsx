@@ -17,11 +17,11 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   let {
     devSettingsCategory: t
-  } = e, n = (0, s.e7)([d.ZP], () => d.ZP.allByCategory(t), [t], s.pF), i = r.useMemo(() => n.map(e => {
+  } = e, n = (0, o.e7)([d.ZP], () => d.ZP.allByCategory(t), [t], o.pF), i = r.useMemo(() => n.map(e => {
     let [t, n, {
       label: r
     }] = e;
-    return (0, a.jsx)(o.rsf, {
+    return (0, a.jsx)(s.rsf, {
       label: r,
       description: t,
       checked: n,

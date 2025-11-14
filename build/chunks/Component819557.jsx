@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk262441 = require("./262441.js");
 
@@ -28,7 +28,7 @@ function c(e) {
   let {
     icon: t,
     title: n,
-    description: a,
+    description: i,
     iconClassName: s,
     color: c,
     listType: d = "icon",
@@ -43,7 +43,7 @@ function c(e) {
           className: o.number,
           children: (0, r.jsx)(l.sV5, {
             color: "green",
-            className: i()(o.icon, s)
+            className: a()(o.icon, s)
           })
         });
         else return (0, r.jsx)(l.Heading, {
@@ -56,7 +56,7 @@ function c(e) {
         className: o.iconContainer,
         children: (0, r.jsx)(t, {
           color: null != c ? c : "currentColor",
-          className: i()(o.icon, s)
+          className: a()(o.icon, s)
         })
       })
     })(), (0, r.jsxs)("div", {
@@ -64,17 +64,17 @@ function c(e) {
       children: [(0, r.jsx)(l.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
-        className: i()({
+        className: a()({
           [o.completedText]: u
         }),
         children: n
-      }), null != a && (0, r.jsx)(l.Text, {
+      }), null != i && (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
-        className: i()({
+        className: a()({
           [o.completedText]: u
         }),
-        children: a
+        children: i
       })]
     })]
   })

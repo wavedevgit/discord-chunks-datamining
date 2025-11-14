@@ -19,8 +19,8 @@ function m(e) {
     setting: n,
     depth: i,
     highlight: l
-  } = e, s = null == (t = r.useContext(h)) ? true : t.get(n), o = null;
-  return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(m, {
+  } = e, o = null == (t = r.useContext(h)) ? true : t.get(n), s = null;
+  return null != o && o.length > 0 && (s = o.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(m, {
     setting: e,
     depth: i + 1,
     highlight: l
@@ -28,7 +28,7 @@ function m(e) {
     title: n,
     initExpanded: i <= 2,
     highlight: l,
-    children: o
+    children: s
   })
 }
 
@@ -36,10 +36,10 @@ function p(e) {
   let {
     setting: t,
     depth: n
-  } = e, r = (0, s.Lk)(t) && (t.type === s.Jq.SIDEBAR_ITEM && t.layout.some(e => null == e ? true : e.layout.some(e => null != e.render)) || t.type === s.Jq.PANEL && t.layout.some(e => null != e.render) || t.type === s.Jq.PANE && null != t.render), i = null;
-  if ((0, s.Lk)(t)) {
-    var l, o, d;
-    let e = null == (d = t.parent) || null == (o = d.parent) || null == (l = o.getLegacySearchKey) ? true : l.call(o);
+  } = e, r = (0, o.Lk)(t) && (t.type === o.Jq.SIDEBAR_ITEM && t.layout.some(e => null == e ? true : e.layout.some(e => null != e.render)) || t.type === o.Jq.PANEL && t.layout.some(e => null != e.render) || t.type === o.Jq.PANE && null != t.render), i = null;
+  if ((0, o.Lk)(t)) {
+    var l, s, d;
+    let e = null == (d = t.parent) || null == (s = d.parent) || null == (l = s.getLegacySearchKey) ? true : l.call(s);
     0 === t.layout.length && null != e ? i = (0, a.jsx)(m, {
       setting: e,
       depth: n + 1,
@@ -62,7 +62,7 @@ function x() {
   let [e, t] = Chunk647438.useState(false), {
     legacySettingDirectory: n
   } = (0, Chunk546697.q)(), {
-    node: s
+    node: o
   } = (0, Chunk131051.Z)(Chunk920952.Z, "");
   return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
     className: Chunk547481.root,

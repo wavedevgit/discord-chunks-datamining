@@ -58,7 +58,7 @@ let f = new g(Chunk570140.Z, {
       exposureType: a,
       excluded: r,
       location: l,
-      previouslyTracked: s
+      previouslyTracked: o
     } = e;
     d.Z.isDeveloper && x && (h = [...h, {
       key: (0, i.Z)(),
@@ -67,7 +67,7 @@ let f = new g(Chunk570140.Z, {
       exposureType: a,
       excluded: r,
       location: l,
-      previouslyTracked: s,
+      previouslyTracked: o,
       timestamp: new Date
     }]).length > 500 && h.shift()
   },

@@ -402,11 +402,12 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
       pid: e,
       overlayMethod: t
     }),
-    updateOverlayState(e, t) {
+    updateOverlayState(e, t, n) {
       i.Z.dispatch({
         type: "OVERLAY_UPDATE_OVERLAY_STATE",
         pid: e,
-        overlayState: t
+        overlayState: t,
+        reason: n
       })
     },
     successfullyShown(e) {
@@ -427,12 +428,13 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
       pid: e,
       trackedGame: t
     }),
-    trackOverlayStateChanged(e, t, n) {
+    trackOverlayStateChanged(e, t, n, r) {
       i.Z.dispatch({
         type: "OVERLAY_TRACK_STATE_CHANGED",
         pid: e,
         oldState: t,
-        newState: n
+        newState: n,
+        reason: r
       })
     },
     overlayUIFocusedPid(e, t) {

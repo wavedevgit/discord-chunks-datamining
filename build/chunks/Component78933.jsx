@@ -63,7 +63,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk54482 = require("./54482.js"),
   Chunk116649 = require("./116649.js");
 
-function eo(e) {
+function es(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -111,18 +111,18 @@ function ec(e) {
   }), () => W.Z.setState({
     isOpen: false
   })), []);
-  let ey = (0, s.e7)([B.Z], () => B.Z.getStatus(t.id)),
-    eC = F.Cr.useSetting(),
+  let ey = (0, o.e7)([F.Z], () => F.Z.getStatus(t.id)),
+    eC = B.Cr.useSetting(),
     eS = (0, $.F)(eC),
-    eE = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
+    eE = (0, o.e7)([G.Z], () => G.Z.hidePersonalInformation),
     eO = (0, f.p)(),
-    eT = F.Sb.useSetting(),
+    eT = B.Sb.useSetting(),
     eN = (0, $.I)(ey),
     eP = (0, q.g)(n),
     eI = (0, v.Z)({
       analyticsLocations: eg
     }),
-    ew = (0, H.I5)(t),
+    ew = (0, V.I5)(t),
     ek = (0, h.p)({
       location: "UserProfileAccountPopout"
     }),
@@ -139,22 +139,22 @@ function ec(e) {
       eU(false)
     }, 500)
   }, []);
-  let eF = e => {
-      null == n || n(), (0, O.openUserProfileModal)(eo({
+  let eB = e => {
+      null == n || n(), (0, O.openUserProfileModal)(es({
         customStatusPrompt: eL,
         sourceAnalyticsLocations: eg
       }, ef, e))
     },
-    eB = (0, E.Z)({
+    eF = (0, E.Z)({
       location: "UserProfileAccountPopout"
     }),
     eG = (null == ex ? true : ex.widgets) != null && ex.widgets.length > 0,
-    ez = eG ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
-    [eV, eH] = (0, g.US)(ez),
-    eW = eV === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
+    ez = eG ? [] : [s.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
+    [eH, eV] = (0, g.US)(ez),
+    eW = eH === s.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     eK = r.useCallback(() => {
-      eH(en.L.USER_DISMISS), n()
-    }, [eH, n]),
+      eV(en.L.USER_DISMISS), n()
+    }, [eV, n]),
     eq = r.useCallback(() => {
       ep && null != em || (eI(), eK())
     }, [eI, eK, ep, em]),
@@ -178,7 +178,7 @@ function ec(e) {
         "data-layer": "base",
         children: [(0, a.jsx)(Q.Z, {
           displayProfile: ex,
-          handleOpenUserProfileModal: eF,
+          handleOpenUserProfileModal: eB,
           height: ev
         }), (0, a.jsxs)(A.Z, {
           className: el.themeContainer,
@@ -186,7 +186,7 @@ function ec(e) {
           displayProfile: ex,
           themeType: er.l.POPOUT,
           children: [(0, a.jsxs)("div", {
-            className: es.header,
+            className: eo.header,
             children: [(0, a.jsx)(P.Z, {
               user: t,
               displayProfile: ex,
@@ -195,7 +195,7 @@ function ec(e) {
               user: t,
               displayProfile: ex,
               themeType: er.l.POPOUT,
-              onOpenProfile: eh ? true : eF
+              onOpenProfile: eh ? true : eB
             }), (0, a.jsx)(L.Z, {
               ref: eA,
               user: t,
@@ -211,8 +211,8 @@ function ec(e) {
             children: [(0, a.jsx)(Z.Z, {
               user: t,
               className: el.username,
-              nickname: V.ZP.getName(em, null, t),
-              onOpenProfile: eh ? true : eF,
+              nickname: H.ZP.getName(em, null, t),
+              onOpenProfile: eh ? true : eB,
               pronouns: null == ex ? true : ex.pronouns,
               tags: (0, a.jsx)(N.Z, {
                 displayProfile: ex,
@@ -234,10 +234,10 @@ function ec(e) {
               bio: null == ex ? true : ex.bio,
               hidePersonalInformation: eE,
               onClose: n
-            }), eB && eG && (0, a.jsx)(M.Z, {
+            }), eF && eG && (0, a.jsx)(M.Z, {
               widgets: ex.widgets,
               onClick: () => {
-                n(), eF({
+                n(), eB({
                   section: ea.oh.WIDGETS
                 })
               }
@@ -247,7 +247,7 @@ function ec(e) {
             }), eR ? (0, a.jsx)(R.Z, {
               user: t,
               currentUser: t,
-              onOpenUserProfileModal: eF,
+              onOpenUserProfileModal: eB,
               onClose: n
             }) : (0, a.jsx)(w.Z, {
               user: t,
@@ -321,7 +321,7 @@ function ec(e) {
                             }
                             return r
                           }(e, ["onClose"]);
-                        return (0, a.jsx)(l.IX, (t = eo({
+                        return (0, a.jsx)(l.IX, (t = es({
                           onClose: r
                         }, i), n = n = {
                           size: "sm",
