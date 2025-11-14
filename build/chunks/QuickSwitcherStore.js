@@ -144,7 +144,7 @@ function X() {
     Object.values(Chunk601070.Z.getActiveJoinedUnreadThreadsForGuild(require)).forEach(t => {
       for (let n in t) {
         let t = q(n);
-        null == t || a.has(t.record.id) || e.push(t)
+        null == t || a.has(t.record.id) || Y.includes(n) || e.push(t)
       }
     }), module.length > 0 && (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t.ieCAhD))), i = i.concat(module))
   }
