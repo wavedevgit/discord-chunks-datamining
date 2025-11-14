@@ -2,7 +2,8 @@
 /** chunk id: 566697, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  R: () => R,
+  Z: () => P
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,6 +34,7 @@ let N = {
     xlarge: Chunk481060.EFr.SIZE_48,
     large: Chunk481060.EFr.SIZE_40,
     small: Chunk481060.EFr.SIZE_24,
+    xsmall: Chunk481060.EFr.SIZE_20,
     default: Chunk481060.EFr.SIZE_32
   },
   R = Chunk647438.memo(function(e) {
@@ -81,6 +83,7 @@ let N = {
       children: (0, r.jsxs)(c.Rny, {
         className: o()(P, S.nameplatePreview, {
           [S.nameplatePurchased]: B && !w,
+          [S.xsmall]: "xsmall" === G,
           [S.small]: "small" === G,
           [S.large]: "large" === G,
           [S.xlarge]: "xlarge" === G,
@@ -135,4 +138,5 @@ let N = {
         })]
       })
     })
-  })
+  }),
+  P = R

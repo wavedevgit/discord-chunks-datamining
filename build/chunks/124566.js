@@ -100,7 +100,7 @@ let m = {
     giftPurchaseConfirmation: {
       yearGiftText: Chunk388032.t["0Z0G7m"],
       monthGiftText: Chunk388032.t.qyhlUP,
-      collectRewardButtonText: () => Chunk388032.intl.string(Chunk388032.t["3d0Nmb"]),
+      collectRewardButtonText: () => Chunk388032.intl.string(Chunk388032.t.kMYVwv),
       rewardCollectedText: () => Chunk388032.intl.string(Chunk388032.t.eZrmtq)
     }
   }

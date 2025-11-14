@@ -39,14 +39,14 @@ let k = Chunk647438.memo(function(e) {
       hideSecondaryCTA: L,
       badgeOverride: B,
       skipLimitedTimeCheck: P,
-      onClickCard: A,
-      onClickPrimaryCTA: N,
+      onClickCard: N,
+      onClickPrimaryCTA: A,
       onClickSecondaryCTA: R,
       onMouseEnter: Z,
       onMouseLeave: w,
       onFocus: H,
-      onBlur: D,
-      primaryCTAText: M,
+      onBlur: M,
+      primaryCTAText: D,
       secondaryCTAIcon: F,
       productNameClassName: W,
       badgeClassName: V,
@@ -57,24 +57,24 @@ let k = Chunk647438.memo(function(e) {
       previewingVariantIndex: K,
       handleEntering: Y,
       handleLeaving: q
-    } = (0, S.f)(t), J = (0, g.Nd)(), Q = null == J ? true : J.tab, X = (0, O.zQ)(t), $ = l.useRef(null), {
+    } = (0, S.f)(t), J = (0, p.Nd)(), Q = null == J ? true : J.tab, X = (0, O.zQ)(t), $ = l.useRef(null), {
       isHoveringOrFocusing: ee
     } = (0, d.Z)($), {
       handleCardVisibilityChange: et
-    } = (0, p.E)(t.skuId, Q === y.AW.CATALOG ? "full" : Q), en = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, G), er = t.type === o.Z.VARIANTS_GROUP && !k, el = !T || !L, ei = !(I && i) || er, ea = ei || el, eo = el || er;
+    } = (0, g.E)(t.skuId, Q === y.AW.CATALOG ? "full" : Q), en = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, G), er = t.type === o.Z.VARIANTS_GROUP && !k, el = !T || !L, ei = !(I && i) || er, ea = ei || el, eo = el || er;
     return (0, r.jsx)(s.$, {
       innerRef: $,
       onChange: et,
       threshold: 0,
       children: (0, r.jsx)(c.kL8, {
         ref: $,
-        onClick: null != A ? A : en,
+        onClick: null != N ? N : en,
         "aria-label": X,
         className: a()(U, j.productCardContainer, {
           [j.hovered]: ee
         }),
         onFocus: () => null == H ? true : H(t.skuId),
-        onBlur: () => null == D ? true : D(t.skuId),
+        onBlur: () => null == M ? true : M(t.skuId),
         onMouseEnter: () => null == Z ? true : Z(t.skuId),
         onMouseLeave: () => null == w ? true : w(t.skuId),
         children: (0, r.jsxs)("div", {
@@ -135,8 +135,8 @@ let k = Chunk647438.memo(function(e) {
                   children: [!T && (0, r.jsx)(m.Z, {
                     skuId: t.skuId,
                     cardRef: $,
-                    onClick: N,
-                    text: M,
+                    onClick: A,
+                    text: D,
                     prioritizedCurrency: z,
                     onClickAnalytics: G
                   }), !L && (0, r.jsx)(_.Z, {

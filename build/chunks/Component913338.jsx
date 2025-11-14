@@ -15,9 +15,9 @@ function c(e) {
   let {
     option: t,
     selected: n,
-    onClick: l,
+    onClick: a,
     disabled: c = false
-  } = e, u = a.useCallback(e => l(t), [l, t]);
+  } = e, u = l.useCallback(e => a(t), [a, t]);
   return (0, r.jsx)(o.P3F, {
     className: i()(d.item, {
       [d.itemSelected]: n,
@@ -43,19 +43,19 @@ function u(e) {
   let {
     options: t,
     value: n,
-    onChange: l,
+    onChange: a,
     className: o,
     disabled: s = false
-  } = e, u = a.useMemo(() => t.findIndex(e => e.value === n), [t, n]), p = a.useCallback(e => {
+  } = e, u = l.useMemo(() => t.findIndex(e => e.value === n), [t, n]), p = l.useCallback(e => {
     var t;
-    let a = n === e.value;
+    let l = n === e.value;
     return (0, r.jsx)(c, {
-      selected: a,
+      selected: l,
       option: e,
-      onClick: l,
+      onClick: a,
       disabled: s
     }, null != (t = e.key) ? t : String(e.value))
-  }, [n, l, s]);
+  }, [n, a, s]);
   return (0, r.jsx)("div", {
     className: i()(d.container, o, {
       [d.disabledContainer]: s,

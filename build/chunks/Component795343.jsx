@@ -41,20 +41,20 @@ function I(e) {
   } = e, T = (0, d.sp)(), L = null != (t = null == T ? true : T.sessionId) ? t : "", {
     noCache: B,
     includeUnpublished: P
-  } = (0, S.Z)(), A = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
-    skus: N,
+  } = (0, S.Z)(), N = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
+    skus: A,
     currentPage: R,
     totalCount: Z,
     isFetchingResults: w
-  } = (0, C.a)(), H = (0, o.Wu)([g.Z], () => g.Z.getProductsBySkus(N)), D = l.useCallback(() => {
+  } = (0, C.a)(), H = (0, o.Wu)([p.Z], () => p.Z.getProductsBySkus(A)), M = l.useCallback(() => {
     var e;
     null == i || null == (e = i.current) || e.scrollToTop({
       animate: true
     })
-  }, [i]), M = null == N ? true : N.join("");
+  }, [i]), D = null == A ? true : A.join("");
   l.useEffect(() => {
-    D()
-  }, [M, D]);
+    M()
+  }, [D, M]);
   let F = (0, f.a)(),
     W = l.useMemo(() => F(H), [F, H]);
   l.useEffect(() => {
@@ -73,7 +73,7 @@ function I(e) {
       queryPageSize: G
     } = (0, h.S)(),
     [K, Y] = l.useState(false),
-    q = n || w || null == A;
+    q = n || w || null == N;
   l.useEffect(() => {
     if (q) return void Y(false);
     W.length > 0 && Y(true)
@@ -96,7 +96,7 @@ function I(e) {
         page_type: "catalog"
       }), z((e - 1) * G)
     }, [T, G, z]),
-    X = p.Z.useConfig({
+    X = g.Z.useConfig({
       location: "CollectiblesFilterableShop"
     }).showCardsV2;
   return (0, r.jsxs)(x.zp.Provider, {
@@ -111,7 +111,7 @@ function I(e) {
         }),
         ref: V,
         children: [q && [...Array(G)].map((e, t) => X ? (0, r.jsx)(E.Z, {}, t) : (0, r.jsx)(_.K, {}, t)), !q && W.map((e, t) => {
-          let n = g.Z.getCategory(e.categorySkuId);
+          let n = p.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {
               tilePosition: t
@@ -121,7 +121,7 @@ function I(e) {
               onClickAnalytics: (0, x.wO)(e, I, T)
             }, e.skuId) : (0, r.jsx)(b.Z, {
               product: e,
-              user: A,
+              user: N,
               category: n,
               tab: I
             }, e.skuId)

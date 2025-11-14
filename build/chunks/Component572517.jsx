@@ -26,16 +26,16 @@ function h() {
       claimableRewards: v
     } = (0, Chunk987209.wD)();
   if (null == g || null == v) return null;
-  let x = null == (e = g.getBackgroundImageUrl) ? true : module.call(g, f),
-    P = (0, Chunk717401.Yr)(x),
-    j = null == (t = g.gradientConfig) ? true : exports.call(g, {
+  let P = null == (e = g.getBackgroundImageUrl) ? true : module.call(g, f),
+    x = (0, Chunk717401.Yr)(P),
+    y = null == (t = g.gradientConfig) ? true : exports.call(g, {
       isDarkMode: f,
       isAndroid: false
     }),
-    y = (0, Chunk717401.Tl)(j, {
+    j = (0, Chunk717401.Tl)(y, {
       colorStops: [0, 12, 100]
     }),
-    S = (0, Chunk717401.$q)(P, y, {
+    S = (0, Chunk717401.$q)(x, j, {
       backgroundSize: "cover, auto",
       backgroundPosition: "right center, 0% 0%"
     });

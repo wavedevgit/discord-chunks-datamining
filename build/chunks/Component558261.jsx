@@ -43,11 +43,11 @@ let P = e => {
       selectedVariantIndex: s,
       hasDiscountOffer: u,
       discountOfferAmount: d,
-      text: g
-    } = e, p = (0, _.XM)(t, i, false), f = u ? L.intl.formatToPlainString(L.t["5U5RB5"], {
+      text: p
+    } = e, g = (0, _.XM)(t, i, false), f = u ? L.intl.formatToPlainString(L.t["5U5RB5"], {
       discountOfferAmount: d
     }) : L.intl.formatToPlainString(L.t["cNSL/j"], {
-      price: p
+      price: g
     });
     return (0, r.jsx)(a.Button, {
       variant: "primary",
@@ -62,11 +62,11 @@ let P = e => {
           variantsReturnStyle: l.v.VARIANTS_GROUP
         })
       },
-      text: null != g ? g : f,
+      text: null != p ? p : f,
       fullWidth: true
     })
   },
-  A = e => {
+  N = e => {
     let {
       isClaimPremiumProductDisabled: t,
       text: n
@@ -82,7 +82,7 @@ let P = e => {
       showGradient: true
     })
   },
-  N = e => {
+  A = e => {
     let {
       handlePreviewButtonClick: t,
       text: n
@@ -173,7 +173,7 @@ let P = e => {
         })
       }),
       onClick: e => {
-        e.stopPropagation(), null == c || c("claim with orbs button"), (0, g.qA)({
+        e.stopPropagation(), null == c || c("claim with orbs button"), (0, p.qA)({
           skuId: (0, S.S)({
             product: t,
             selectedVariantIndex: o
@@ -201,7 +201,7 @@ let P = e => {
       fullWidth: true
     })
   },
-  D = e => {
+  M = e => {
     let {
       handlePreviewButtonClick: t,
       text: n
@@ -215,7 +215,7 @@ let P = e => {
       fullWidth: true
     })
   },
-  M = e => {
+  D = e => {
     let {
       product: t,
       cardRef: n,
@@ -224,7 +224,7 @@ let P = e => {
       text: c,
       prioritizedCurrency: u,
       onClickAnalytics: d
-    } = e, g = (0, i.e7)([p.default], () => p.default.getCurrentUser()), h = f.ZP.canUseCollectibles(g), {
+    } = e, p = (0, i.e7)([g.default], () => g.default.getCurrentUser()), h = f.ZP.canUseCollectibles(p), {
       isPurchased: m,
       isPartiallyOwnedBundle: S
     } = (0, x.L)(t), O = (0, _.G1)(t), k = (0, _.rN)(t), {
@@ -234,7 +234,7 @@ let P = e => {
       isPartiallyOwnedBundle: S,
       isPurchased: m
     }), L = (0, y.Iw)(t), B = null != L, {
-      shouldCheckoutWithOrbs: M,
+      shouldCheckoutWithOrbs: D,
       hasSufficientOrbs: F,
       checkoutEligiblePrices: W
     } = (0, j.Ip)({
@@ -255,11 +255,11 @@ let P = e => {
       skuId: t.skuId,
       text: c
     });
-    if (O && !h && !k) return (0, r.jsx)(A, {
+    if (O && !h && !k) return (0, r.jsx)(N, {
       isClaimPremiumProductDisabled: G,
       text: c
     });
-    if (!T || I) return (0, r.jsx)(N, {
+    if (!T || I) return (0, r.jsx)(A, {
       handlePreviewButtonClick: U,
       text: c
     });
@@ -276,7 +276,7 @@ let P = e => {
       text: c,
       onClickAnalytics: d
     });
-    if (M && F) return (0, r.jsx)(H, {
+    if (D && F) return (0, r.jsx)(H, {
       product: t,
       checkoutEligiblePrices: W,
       analyticsLocations: V,
@@ -284,12 +284,12 @@ let P = e => {
       text: c,
       onClickAnalytics: d
     });
-    if (M && !F)
-      if (W.length > 1) return (0, r.jsx)(D, {
+    if (D && !F)
+      if (W.length > 1) return (0, r.jsx)(M, {
         handlePreviewButtonClick: U,
         text: c
       });
-      else return (0, r.jsx)(N, {
+      else return (0, r.jsx)(A, {
         handlePreviewButtonClick: U,
         text: c
       });
@@ -315,7 +315,7 @@ let P = e => {
     } = e, s = (0, E.LJ)(t), c = (0, m.o)(s);
     if (null == s) return null;
     let u = (0, O.W)(s, c);
-    return (0, r.jsx)(M, {
+    return (0, r.jsx)(D, {
       product: u,
       cardRef: n,
       selectedVariantIndex: c,

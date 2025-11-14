@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk647438 = require("./647438.js"),
   Chunk699758 = require("./699758.js");
 
-function l(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function o(e) {
     selectedGiftingPromotionReward: s,
     setSelectedGiftingPromotionReward: d,
     hasUserMadeSelection: c
-  } = e, u = null != n && n.length > 0, [p, m] = r.useState(null != (t = null == o ? true : o.defaultCategory) ? t : a.KN.Trick), h = r.useRef(p), f = r.useMemo(() => u ? n.flatMap(e => e.variants.length < a.mo ? [] : i(l({}, e.variants[p]), {
+  } = e, u = null != n && n.length > 0, [p, m] = r.useState(null != (t = null == o ? true : o.defaultCategory) ? t : l.KN.Trick), h = r.useRef(p), f = r.useMemo(() => u ? n.flatMap(e => e.variants.length < l.mo ? [] : i(a({}, e.variants[p]), {
     name: e.name
   })) : [], [n, p, u]), b = r.useMemo(() => null != s && f.some(e => e.skuId === s.skuId), [f, s]);
   if (r.useEffect(() => {
@@ -55,7 +55,7 @@ function o(e) {
       u && (h.current === p || b || d(true), h.current = p)
     }, [p, b, d, u]), !u) return null;
   let g = n.length > 1;
-  return i(l({}, g && {
+  return i(a({}, g && {
     selectedCategory: p
   }, g && {
     setSelectedCategory: m

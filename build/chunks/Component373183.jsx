@@ -27,10 +27,10 @@ let v = Chunk647438.memo(function(e) {
     rewardSkuId: n
   } = e, i = l.useRef(null), {
     isHoveringOrFocusing: v
-  } = (0, d.Z)(i), x = l.useMemo(() => t.products.filter(e => e.skuId !== n).map(e => e.skuId), [t.products, n]), E = (0, s.e7)([p.Z], () => p.Z.getPurchases(x)), S = e => {
+  } = (0, d.Z)(i), x = l.useMemo(() => t.products.filter(e => e.skuId !== n).map(e => e.skuId), [t.products, n]), E = (0, s.e7)([g.Z], () => g.Z.getPurchases(x)), S = e => {
     e.stopPropagation();
     {
-      let e = g.Z.getProduct(n);
+      let e = p.Z.getProduct(n);
       null != e && (0, f.Z)({
         product: e,
         analyticsLocations: [],

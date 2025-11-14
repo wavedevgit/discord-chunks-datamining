@@ -27,12 +27,12 @@ var Chunk951288 = require("./951288.js"),
 function S(e) {
   let t, {
       handleClose: n,
-      planGroup: l,
+      planGroup: a,
       onSubscriptionConfirmation: S,
       renderPurchaseConfirmation: _,
       postSuccessGuild: O,
-      followupSKUInfo: C,
-      continueSessionToInitialStep: w
+      followupSKUInfo: w,
+      continueSessionToInitialStep: C
     } = e,
     {
       activeSubscription: k,
@@ -46,8 +46,8 @@ function S(e) {
       startingFractionalPremiumEndsAtRef: Z
     } = (0, b.JL)(),
     {
-      isGift: B,
-      giftRecipient: L,
+      isGift: L,
+      giftRecipient: B,
       giftCode: D,
       hasSentMessage: F,
       isSendingMessage: H,
@@ -58,28 +58,28 @@ function S(e) {
     {
       confirmationFooter: K
     } = (0, g.zb)(),
-    W = (0, c.id)(T, B, U),
+    W = (0, c.id)(T, L, U),
     Y = (0, d.Z)(),
     V = (0, c.a5)(T),
     q = (0, c.tK)(null == z ? true : z.skuId),
-    J = (0, P.$)(E, I),
-    Q = B && null != z && V;
+    J = (0, x.$)(E, I),
+    Q = L && null != z && V;
   i()(null != T, "Expected plan to selected"), i()(null != N, "Expected selectedSkuId"), i()(null != R, "Step should be set");
-  let X = a.useCallback(() => {
+  let X = l.useCallback(() => {
     n(), null == S || S()
   }, [n, S]);
-  a.useEffect(() => {
-    !B || null == L || null == D || F || H || (0, m.pO)(L) || G({
+  l.useEffect(() => {
+    !L || null == B || null == D || F || H || (0, m.pO)(B) || G({
       onSubscriptionConfirmation: S
     })
-  }, [G, B, L, D, F, H, S]), a.useEffect(() => {
+  }, [G, L, B, D, F, H, S]), l.useEffect(() => {
     null != Y && null != Y.reminderNotice && W && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, (0, u.m)(), {
-      dismissAction: y.L.INDIRECT_ACTION
+      dismissAction: j.L.INDIRECT_ACTION
     })
   }, [Y, W]);
-  let $ = null != w ? p.PI.DEEPLINK_TO_DESKTOP_APP : true;
+  let $ = null != C ? p.PI.DEEPLINK_TO_DESKTOP_APP : true;
   if (null != _) t = _(T, X, M);
-  else if (B) t = (0, r.jsx)(p.TB, {
+  else if (L) t = (0, r.jsx)(p.TB, {
     planId: T.id,
     onClose: X
   });
@@ -87,9 +87,9 @@ function S(e) {
     let e = A.current === T.id ? {
       postSuccessGuild: O
     } : {
-      followupSKUInfo: C,
+      followupSKUInfo: w,
       startingPremiumSubscriptionPlanId: A.current,
-      isDowngrade: null != k && (0, h.GY)(k, T.id, l)
+      isDowngrade: null != k && (0, h.GY)(k, T.id, a)
     };
     t = (0, r.jsx)(p.ZP, function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -119,8 +119,8 @@ function S(e) {
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(v.C3, {
-      children: [(0, r.jsx)(j.Z, {}), t]
-    }), null != K && K, Q && null != q && (0, r.jsx)(x.Z, {
+      children: [(0, r.jsx)(y.Z, {}), t]
+    }), null != K && K, Q && null != q && (0, r.jsx)(P.Z, {
       onClose: X,
       selectedPromotionalDecoPurchaseRecord: q,
       selectedGiftingPromotionReward: z

@@ -51,7 +51,7 @@ function v(e) {
     I = (0, d.FF)("CollectiblesContent"),
     {
       searchError: T
-    } = (0, g.a)();
+    } = (0, p.a)();
   return I && null != T ? (0, r.jsx)(m.Z, {}) : null != h ? (0, r.jsx)(f.Z, {
     onRetry: u,
     errorMessage: h,
@@ -60,7 +60,7 @@ function v(e) {
     handleTransition: k,
     tab: t,
     transitionState: s
-  }) : (0, r.jsx)(p.Z, {
+  }) : (0, r.jsx)(g.Z, {
     tab: t,
     sortedCategories: n,
     initialCategoryId: S,

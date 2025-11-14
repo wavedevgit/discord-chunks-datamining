@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk703656 = require("./703656.js"),
   Chunk314897 = require("./314897.js"),
+  Chunk594174 = require("./594174.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
@@ -60,30 +60,30 @@ function b(e) {
   let {
     token: t,
     onClose: n
-  } = e, [a, s] = i.useState("loading"), h = (0, o.e7)([d.default], () => d.default.isAuthenticated());
+  } = e, [a, o] = i.useState("loading");
   i.useEffect(() => {
     f.default.track(_.rMx.ONE_TIME_LOGIN_MODAL_OPENED, {
       has_token: null != t
     })
   }, [t]);
-  let m = i.useCallback(async () => {
+  let h = i.useCallback(async () => {
     try {
       if (null == t) {
-        s("error"), f.default.track(_.rMx.ONE_TIME_LOGIN_ERROR, {
+        o("error"), f.default.track(_.rMx.ONE_TIME_LOGIN_ERROR, {
           source: "web_modal",
           error_reason: "missing_token",
           error_message: "No token provided"
         });
         return
       }
-      s("loading"), f.default.track(_.rMx.ONE_TIME_LOGIN_ATTEMPTED, {
+      o("loading"), f.default.track(_.rMx.ONE_TIME_LOGIN_ATTEMPTED, {
         source: "web_modal"
-      }), await l.Z.oneTimeLogin(t), s("success"), f.default.track(_.rMx.LOGIN_SUCCESSFUL, {
+      }), await s.Z.oneTimeLogin(t), o("success"), f.default.track(_.rMx.LOGIN_SUCCESSFUL, {
         source: "web_modal",
         login_method: "one_time_login"
       })
     } catch (t) {
-      s("error");
+      o("error");
       let e = t instanceof Error ? t.message : "Login failed";
       f.default.track(_.rMx.ONE_TIME_LOGIN_ERROR, {
         source: "web_modal",
@@ -93,26 +93,36 @@ function b(e) {
     }
   }, [t]);
   i.useEffect(() => {
-    if (h) return void s("success");
-    m()
-  }, [m, h]);
-  let g = i.useCallback(() => {
+    if (u.default.isAuthenticated()) return void o("already_logged_in");
+    h()
+  }, [h]);
+  let m = i.useCallback(() => {
     f.default.track(_.rMx.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, {
       current_state: a
     }), null == n || n()
   }, [n, a]);
   switch (i.useEffect(() => {
-      "success" === a && (null == n || n(), (0, u.uL)(_.Z5c.ME))
+      "success" === a && (null == n || n(), (0, c.uL)(_.Z5c.ME))
     }, [a, n]), a) {
+    case "already_logged_in":
+      var g, E;
+      return {
+        title: p.intl.string(p.t.MKW8z2), subtitle: p.intl.formatToPlainString(p.t.YOeM7B, {
+          username: null != (E = null == (g = d.default.getCurrentUser()) ? true : g.username) ? E : "current user"
+        }), actions: [{
+          onClick: m,
+          text: p.intl.string(p.t["3PatSz"])
+        }]
+      };
     case "loading":
     case "success":
       return {
-        title: p.intl.string(p.t.W9uNdG), body: (0, r.jsx)(c.Hh, {})
+        title: p.intl.string(p.t.W9uNdG), body: (0, r.jsx)(l.Hh, {})
       };
     case "error":
       return {
         title: p.intl.string(p.t.RtCSr1), subtitle: p.intl.string(p.t["S+YjYJ"]), actions: [{
-          onClick: g,
+          onClick: m,
           text: p.intl.string(p.t["ETE/oC"])
         }]
       };
@@ -147,5 +157,5 @@ function y(e) {
 }
 
 function O(e) {
-  (0, s.ZDy)(() => Promise.resolve(t => (0, r.jsx)(y, m({}, t, e))))
+  (0, o.ZDy)(() => Promise.resolve(t => (0, r.jsx)(y, m({}, t, e))))
 }

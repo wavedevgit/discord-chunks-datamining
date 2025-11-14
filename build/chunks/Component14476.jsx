@@ -19,28 +19,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk632939 = require("./632939.js");
 let g = e => {
   let t, n, {
-      skuId: l,
+      skuId: a,
       assetId: g,
       user: v,
-      claimed: x,
-      onSelect: P,
-      productName: j,
-      a11yLabel: y,
+      claimed: P,
+      onSelect: x,
+      productName: y,
+      a11yLabel: j,
       selectedSkuId: S,
       category: _,
       type: O,
-      palette: C
+      palette: w
     } = e,
-    w = a.useRef(null),
+    C = l.useRef(null),
     {
       isHoveringOrFocusing: k
-    } = (0, u.Z)(w),
-    E = !x && k,
+    } = (0, u.Z)(C),
+    E = !P && k,
     I = (0, c.ZP)(),
     T = (0, s.wj)(I);
   return O === o.Z.AVATAR_DECORATION ? (t = {
     type: o.Z.AVATAR_DECORATION,
-    label: y,
+    label: j,
     asset: g
   }, n = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.R, {
@@ -48,8 +48,8 @@ let g = e => {
       user: v,
       isHighlighted: E,
       avatarSize: d.EFr.SIZE_96,
-      isPurchased: x
-    }), x && (0, r.jsx)(d.dz2, {
+      isPurchased: P
+    }), P && (0, r.jsx)(d.dz2, {
       size: "custom",
       width: 48,
       height: 48,
@@ -58,26 +58,26 @@ let g = e => {
     })]
   })) : O === o.Z.NAMEPLATE && (t = {
     type: o.Z.NAMEPLATE,
-    label: y,
+    label: j,
     asset: g,
-    palette: null != C ? C : "none"
+    palette: null != w ? w : "none"
   }, n = (0, r.jsx)(h.Z, {
     nameplate: t,
     user: v,
     isHighlighted: E,
-    isPurchased: x,
+    isPurchased: P,
     size: "small"
   })), (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)(d.kL8, {
-      ref: w,
-      "aria-label": null != j ? j : "",
+      ref: C,
+      "aria-label": null != y ? y : "",
       onClick: () => {
-        null == l || null == P || x || P(l)
+        null == a || null == x || P || x(a)
       },
       className: i()(T ? b.shopCardDark : b.shopCard, {
-        [b.shopCardAnimation]: !x,
+        [b.shopCardAnimation]: !P,
         [T ? b.shopCardDarkHighlighted : b.shopCardHighlighted]: E,
-        [b.shopCardSelected]: S === l
+        [b.shopCardSelected]: S === a
       }),
       children: [(0, r.jsx)("div", {
         className: i()(b.preview, {
@@ -85,17 +85,17 @@ let g = e => {
           [b.nameplatePreview]: O === o.Z.NAMEPLATE,
           [b.previewTrick]: _ === p.KN.Trick,
           [b.previewTreat]: _ === p.KN.Treat,
-          [b.shopCardClaimed]: x
+          [b.shopCardClaimed]: P
         }),
         children: null != t && n
       }), (0, r.jsxs)("div", {
         className: b.productName,
         children: [(0, r.jsx)(d.Heading, {
           variant: "heading-md/extrabold",
-          children: j
+          children: y
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
-          children: x ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)
+          children: P ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)
         })]
       })]
     })

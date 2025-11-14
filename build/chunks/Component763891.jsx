@@ -43,15 +43,15 @@ function R(e) {
     isFetchingCategories: n,
     scrollerRef: R,
     tab: Z
-  } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
-    noCache: D,
-    includeUnpublished: M
-  } = (0, E.Z)(), F = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, o.ap)(z), [K, Y, q] = l.useMemo(() => {
+  } = e, w = (0, p.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
+    noCache: M,
+    includeUnpublished: D
+  } = (0, E.Z)(), F = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, o.ap)(z), [K, Y, q] = l.useMemo(() => {
     switch (Z) {
       case S.AW.AVATAR_DECORATIONS:
         return [y.intl.string(y.t.dRZYNE), G ? L.Z : T.Z, i.Z.AVATAR_DECORATION];
       case S.AW.PROFILE_EFFECTS:
-        return [y.intl.string(y.t["1cNjtx"]), G ? N.Z : A.Z, i.Z.PROFILE_EFFECT];
+        return [y.intl.string(y.t["1cNjtx"]), G ? A.Z : N.Z, i.Z.PROFILE_EFFECT];
       case S.AW.NAMEPLATES:
         return [y.intl.string(y.t.V68Fqz), G ? P.Z : B.Z, i.Z.NAMEPLATE];
       case S.AW.BUNDLES:
@@ -66,18 +66,18 @@ function R(e) {
       sessionId: H,
       checkpoint: m.a.SHOP_MOUNTED,
       tab: Z,
-      unpublishedCategoriesShown: M,
-      cacheDisabled: D
+      unpublishedCategoriesShown: D,
+      cacheDisabled: M
     })
   }, []), l.useEffect(() => {
     n || (0, m.n)({
       sessionId: H,
       checkpoint: m.a.SHOP_RENDERED,
       tab: Z,
-      unpublishedCategoriesShown: M,
-      cacheDisabled: D
+      unpublishedCategoriesShown: D,
+      cacheDisabled: M
     })
-  }, [H, M, D, n, Z]);
+  }, [H, D, M, n, Z]);
   let $ = f.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;
@@ -94,8 +94,8 @@ function R(e) {
     }), (0, r.jsx)("div", {
       className: j.products,
       children: X.slice(40 * (V - 1), 40 * V).map((e, t) => {
-        let n = p.Z.getCategory(e.categorySkuId);
-        return null == n ? null : (0, r.jsx)(g.k0, {
+        let n = g.Z.getCategory(e.categorySkuId);
+        return null == n ? null : (0, r.jsx)(p.k0, {
           newValue: {
             tilePosition: t
           },

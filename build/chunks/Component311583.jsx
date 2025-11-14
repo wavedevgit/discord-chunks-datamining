@@ -26,7 +26,7 @@ let h = e => {
       icon: h,
       prioritizedCurrency: C,
       onClickAnalytics: m
-    } = e, _ = (0, o.Nd)(), b = null == _ ? true : _.tab, v = (0, a.sp)(), x = (0, g.J)(t, C), E = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, m);
+    } = e, _ = (0, o.Nd)(), b = null == _ ? true : _.tab, v = (0, a.sp)(), x = (0, p.J)(t, C), E = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, m);
     return null != d || null != h ? (0, r.jsx)(l.hU, {
       variant: "primary",
       "aria-label": f.intl.string(f.t.SKNnqq),
@@ -36,7 +36,7 @@ let h = e => {
       }
     }) : x ? (0, r.jsx)(a.k0, {
       newValue: {
-        pageCategory: b === p.AW.HOME || null == v ? true : v.pageCategory
+        pageCategory: b === g.AW.HOME || null == v ? true : v.pageCategory
       },
       children: (0, r.jsx)(c.Z, {
         primary: true,
@@ -55,13 +55,13 @@ let h = e => {
       icon: i,
       prioritizedCurrency: a,
       onClickAnalytics: o
-    } = e, c = (0, u.LJ)(t), g = (0, s.o)(c);
+    } = e, c = (0, u.LJ)(t), p = (0, s.o)(c);
     if (null == c) return null;
-    let p = (0, d.W)(c, g);
+    let g = (0, d.W)(c, p);
     return (0, r.jsx)(h, {
-      product: p,
+      product: g,
       cardRef: n,
-      selectedVariantIndex: g,
+      selectedVariantIndex: p,
       onClick: l,
       icon: i,
       prioritizedCurrency: a,

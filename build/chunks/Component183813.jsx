@@ -30,24 +30,24 @@ function O(e) {
   var t;
   let {
     handleStepChange: n,
-    handleClose: l
+    handleClose: a
   } = e, {
     selectedPlan: O,
-    selectedSkuId: C,
-    step: w
-  } = (0, x.JL)(), {
+    selectedSkuId: w,
+    step: C
+  } = (0, P.JL)(), {
     setSelectedGiftingPromotionReward: k,
     selectedGiftingPromotionReward: E,
     claimableRewards: I,
     claimableVariants: T
-  } = (0, v.wD)(), N = (0, u.Z)(), R = (0, o.e7)([b.default], () => b.default.getCurrentUser()), M = (0, p.ZP)(I, T, E), [A, Z] = a.useState(null == M || null == (t = M.defaultHighlightedReward) ? true : t.skuId), [B, L] = a.useState(false), D = (0, m.Z)({
+  } = (0, v.wD)(), N = (0, u.Z)(), R = (0, o.e7)([b.default], () => b.default.getCurrentUser()), M = (0, p.ZP)(I, T, E), [A, Z] = l.useState(null == M || null == (t = M.defaultHighlightedReward) ? true : t.skuId), [L, B] = l.useState(false), D = (0, m.Z)({
     claimableVariants: T,
     claimableRewards: I,
     defaultSelection: M,
     selectedGiftingPromotionReward: E,
     setSelectedGiftingPromotionReward: k,
-    hasUserMadeSelection: B
-  }), F = a.useMemo(() => {
+    hasUserMadeSelection: L
+  }), F = l.useMemo(() => {
     var e, t;
     if (null == T || 0 === T.length) return null != (e = null == N ? true : N.rewards) ? e : [];
     let n = null != (t = null == D ? true : D.selectedCategory) ? t : p.KN.Trick;
@@ -84,14 +84,14 @@ function O(e) {
       }), t)
     })
   }, [T, null == N ? true : N.rewards, null == D ? true : D.selectedCategory]);
-  a.useEffect(() => {
+  l.useEffect(() => {
     let e = null == M ? true : M.defaultHighlightedReward;
-    !B && null == E && null != e && null != e && F.some(t => t.skuId === e.skuId) && (k(e), Z(e.skuId))
-  }, [M, B, E, F, k]), i()(null != O, "Expected plan to selected"), i()(null != C, "Expected selectedSkuId"), i()(null != w, "Step should be set");
-  let H = a.useMemo(() => null != A && (null != I ? I : []).some(e => e.skuId === A), [A, I]),
-    G = a.useMemo(() => null != E && F.some(e => e.skuId === E.skuId), [F, E]),
-    U = a.useMemo(() => 0 === F.length || null == A || !G || !H, [F, A, H, G]);
-  a.useEffect(() => {
+    !L && null == E && null != e && null != e && F.some(t => t.skuId === e.skuId) && (k(e), Z(e.skuId))
+  }, [M, L, E, F, k]), i()(null != O, "Expected plan to selected"), i()(null != w, "Expected selectedSkuId"), i()(null != C, "Step should be set");
+  let H = l.useMemo(() => null != A && (null != I ? I : []).some(e => e.skuId === A), [A, I]),
+    G = l.useMemo(() => null != E && F.some(e => e.skuId === E.skuId), [F, E]),
+    U = l.useMemo(() => 0 === F.length || null == A || !G || !H, [F, A, H, G]);
+  l.useEffect(() => {
     if (0 === F.length) {
       Z(true), k(true);
       return
@@ -99,7 +99,7 @@ function O(e) {
     H && F.some(e => e.skuId === A) || null == A || (Z(true), k(true))
   }, [F, H, A, k]);
   let z = e => {
-      k(F.find(t => t.skuId === e)), Z(e), L(true)
+      k(F.find(t => t.skuId === e)), Z(e), B(true)
     },
     K = F.map(e => {
       var t, n;
@@ -117,18 +117,18 @@ function O(e) {
         palette: e.palette
       }, e.skuId)
     }),
-    W = (0, r.jsx)(j.O3, {
+    W = (0, r.jsx)(y.O3, {
       children: (0, r.jsx)(s.mzw, {
         "data-migration-pending": true,
         className: _.modalFooter,
         children: (0, r.jsx)(f.y, {
           onStepChange: e => {
-            null != R && null != E && g.default.track(y.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != R && null != E && g.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: R.id,
               reward_sku_id: E.skuId
             }), n(e)
           },
-          onBackClick: () => n(P.h8.PLAN_SELECT),
+          onBackClick: () => n(x.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
           planOptions: [O.id],
@@ -156,7 +156,7 @@ function O(e) {
       }), (0, r.jsx)(s.olH, {
         "data-migration-pending": true,
         className: _.closeButton,
-        onClick: l
+        onClick: a
       })]
     }), (0, r.jsx)(s.hzk, {
       "data-migration-pending": true,

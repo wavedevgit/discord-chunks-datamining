@@ -2,7 +2,7 @@
 /** chunk id: 859788, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,28 +14,28 @@ var Chunk120356 = require("./120356.js"),
   Chunk70097 = require("./70097.jsx"),
   Chunk451478 = require("./451478.js"),
   Chunk410572 = require("./410572.js");
-let g = e => {
+let p = e => {
   let {
     bannerStatic: t,
     bannerAnimated: n,
     bannerRive: l,
-    isResponsive: g = false,
-    eventTargetRef: p
+    isResponsive: p = false,
+    eventTargetRef: g
   } = e, f = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), h = (0, a.e7)([u.Z], () => u.Z.isFocused()), C = null != n && !f && h;
   return null != l ? (0, r.jsx)(o.B, {
     src: l,
     fit: "fit-width",
-    eventTargetRef: p
+    eventTargetRef: g
   }) : C ? (0, r.jsx)(c.Z, {
     className: i()({
-      [d.responsive]: g
+      [d.responsive]: p
     }, d.bannerAsset, d.bannerVideoBackground),
     src: n,
     autoPlay: true,
     loop: true
   }) : (0, r.jsx)("div", {
     className: i()({
-      [d.responsive]: g
+      [d.responsive]: p
     }, d.bannerAsset, d.bannerImage),
     style: {
       backgroundImage: "url(".concat(t, ")")
