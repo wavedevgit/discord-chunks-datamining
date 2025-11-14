@@ -87,8 +87,8 @@ function w(e, t) {
   var n, r, c, h, w;
   let x, L = (0, O.hp)(e),
     M = P(t),
-    j = d.Z.getChannel(M),
-    k = "streamKey" in t ? t.streamKey : true,
+    k = d.Z.getChannel(M),
+    j = "streamKey" in t ? t.streamKey : true,
     U = "mediaContext" in t ? t.mediaContext : true,
     G = "underlyingError" in t ? t.underlyingError : true,
     B = "errorMessage" in t ? t.errorMessage : true,
@@ -102,10 +102,10 @@ function w(e, t) {
     z = "audioOutputDeviceName" in t ? t.audioOutputDeviceName : true,
     q = "videoDeviceName" in t ? t.videoDeviceName : true,
     X = "userId" in t ? t.userId : true,
-    Q = null != k ? (0, l.my)(k) : null,
-    J = null != k ? m.Z.getRTCConnection(k) : null,
-    $ = null != k ? J : _.Z.getRTCConnection(),
-    ee = null != k ? null == J || null == (n = J.analyticsContext) ? true : n.streamApplication : null,
+    Q = null != j ? (0, l.my)(j) : null,
+    J = null != j ? m.Z.getRTCConnection(j) : null,
+    $ = null != j ? J : _.Z.getRTCConnection(),
+    ee = null != j ? null == J || null == (n = J.analyticsContext) ? true : n.streamApplication : null,
     {
       resolution: et,
       fps: en
@@ -121,8 +121,8 @@ function w(e, t) {
     ec = null != Q ? Q.ownerId : X,
     eu = null != J ? null == J ? true : J.getVoiceParticipantType() : es ? "sender" : "receiver",
     ed = null != (r = null == $ ? true : $.getMediaEngineConnectionId()) ? r : null;
-  x = null != k && null != Q ? es ? null == $ || null == (c = $.getOutboundStats()) ? true : c.find(e => e.quality === I.y7) : null == $ ? true : $.getInboundStats(Q.ownerId) : es ? null != (w = i().maxBy(null != (h = null == $ ? true : $.getOutboundStats()) ? h : [], e => e.num_frames)) ? w : null : null != ec ? null == $ ? true : $.getInboundStats(ec) : null, (0, g.q)().then(t => {
-    var n, r, i, s, l, c, u, d, h, m, g, O, P, w, k, X, ee, ef, e_, ep, eh, em, eg, eE, eb, ey, eO, ev, eI, eT, eS, eA, eC, eN, eR, eP, eD, ew, ex, eL, eM, ej, ek, eU, eG, eB, eZ, eF, eV;
+  x = null != j && null != Q ? es ? null == $ || null == (c = $.getOutboundStats()) ? true : c.find(e => e.quality === I.y7) : null == $ ? true : $.getInboundStats(Q.ownerId) : es ? null != (w = i().maxBy(null != (h = null == $ ? true : $.getOutboundStats()) ? h : [], e => e.num_frames)) ? w : null : null != ec ? null == $ ? true : $.getInboundStats(ec) : null, (0, g.q)().then(t => {
+    var n, r, i, s, l, c, u, d, h, m, g, O, P, w, j, X, ee, ef, e_, ep, eh, em, eg, eE, eb, ey, eO, ev, eI, eT, eS, eA, eC, eN, eR, eP, eD, ew, ex, eL, eM, ek, ej, eU, eG, eB, eZ, eF, eV;
     let eH = {
       error_name: e.valueOf(),
       error_code: L.errorCode,
@@ -130,9 +130,9 @@ function w(e, t) {
       error_category: L.category,
       underlying_error: null != G ? G : null,
       error_message: null != B ? B : null,
-      guild_id: null != (w = null == j ? true : j.guild_id) ? w : null,
+      guild_id: null != (w = null == k ? true : k.guild_id) ? w : null,
       channel_id: null != M ? M : null,
-      channel_type: null != (k = null == j ? true : j.type) ? k : null,
+      channel_type: null != (j = null == k ? true : k.type) ? j : null,
       rtc_connection_id: null != F ? F : null,
       media_session_id: null != (X = null != Z ? Z : _.Z.getMediaSessionId()) ? X : null,
       parent_media_session_id: null != (ee = null == J ? true : J.parentMediaSessionId) ? ee : null,
@@ -172,8 +172,8 @@ function w(e, t) {
       cpu_memory: null != (ex = null == t ? true : t.cpu_memory) ? ex : null,
       gpu_brand: null != (eL = null == t ? true : t.gpu_brand) ? eL : null,
       gpu_count: null != (eM = null == t ? true : t.gpu_count) ? eM : null,
-      gpu_memory: null != (ej = null == t ? true : t.gpu_memory) ? ej : null,
-      gpu_device_vendor_id: null != (ek = null == t ? true : t.gpu_device_vendor_id) ? ek : null,
+      gpu_memory: null != (ek = null == t ? true : t.gpu_memory) ? ek : null,
+      gpu_device_vendor_id: null != (ej = null == t ? true : t.gpu_device_vendor_id) ? ej : null,
       gpu_device_device_id: null != (eU = null == t ? true : t.gpu_device_device_id) ? eU : null,
       gpu_device_sub_sys_id: null != (eG = null == t ? true : t.gpu_device_sub_sys_id) ? eG : null,
       gpu_device_revision: null != (eB = null == t ? true : t.gpu_device_revision) ? eB : null,

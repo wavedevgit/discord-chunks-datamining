@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 613548, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -81,8 +81,8 @@ function R(e) {
   } = (0, T.Z)({
     location: "ChannelCallHeaderToolbar"
   }), L = !P && R && (t.isGuildVoiceOrThread() || t.isGroupDM()), {
-    enabled: D,
-    inInbox: k
+    enabled: k,
+    inInbox: D
   } = y.Z.useExperiment({
     location: "ChannelCallHeaderToolbar"
   }), U = [];
@@ -151,7 +151,7 @@ function R(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n))
     }
-  }, "call-members-popout")), D && !k && U.push((0, i.jsx)(C.Z, {
+  }, "call-members-popout")), k && !D && U.push((0, i.jsx)(C.Z, {
     className: w.button
   }, "for-later")), L && U.push((0, i.jsx)(E.Z, {
     className: a()(w.button, {

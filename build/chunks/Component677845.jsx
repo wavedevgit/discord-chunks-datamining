@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 677845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -40,7 +40,7 @@ function S(e) {
     popoutType: A
   } = e, w = (0, m.bp)() === O.IlC.POPOUT, M = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
-  } = (0, x.d)(), L = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), D = (0, b.bt)(I.id, t), k = r.useCallback(() => {
+  } = (0, x.d)(), L = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), k = (0, b.bt)(I.id, t), D = r.useCallback(() => {
     (0, a.j)(() => {
       x.d.setState({
         dismissedActivityEntryPointTileChannel: I.id
@@ -61,7 +61,7 @@ function S(e) {
     F = (0, h.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     G = (0, u.KF)(I.id) !== u.jy.CAN_LAUNCH,
     z = null != R && R === I.id,
-    W = D.map(e => t => (0, i.jsx)(_.ZP, {
+    W = k.map(e => t => (0, i.jsx)(_.ZP, {
       participant: e,
       channel: I,
       className: E.tile,
@@ -88,7 +88,7 @@ function S(e) {
     guild: M,
     width: e,
     inPopout: w,
-    handleClose: k,
+    handleClose: D,
     userParticipantCount: L
   })) : W.push(e => (0, i.jsx)(j.Z, {
     width: e,
@@ -100,13 +100,13 @@ function S(e) {
     guild: M,
     width: e,
     inPopout: w,
-    handleClose: k,
+    handleClose: D,
     userParticipantCount: L
   })));
   let q = r.useCallback(e => {
     var t, n;
-    return null != (n = null == (t = D[e]) ? true : t.id) ? n : "empty-tile"
-  }, [D]);
+    return null != (n = null == (t = k[e]) ? true : t.id) ? n : "empty-tile"
+  }, [k]);
   return (0, i.jsx)(g.Z, {
     className: Z,
     keyExtractor: q,

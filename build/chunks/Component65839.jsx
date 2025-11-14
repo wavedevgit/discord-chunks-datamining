@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 91053 **/
 /** chunk id: 65839, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -79,7 +79,7 @@ let b = e => {
       handleSelectCategory: _,
       categoryCounts: y,
       allEntriesCount: O,
-      isLoading: x
+      isLoading: j
     } = e;
     return (0, r.jsx)("div", {
       className: h.pageContainer,
@@ -116,7 +116,7 @@ let b = e => {
               }, t)
             })]
           })
-        }), x && null == n ? (0, r.jsx)(s.$jN, {
+        }), j && null == n ? (0, r.jsx)(s.$jN, {
           className: h.spinner
         }) : null == n ? true : n.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [true !== e.header ? (0, r.jsx)(s.Text, {

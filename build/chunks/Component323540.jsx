@@ -21,7 +21,7 @@ function u(e) {
   } = e, {
     ref: g,
     width: I
-  } = (0, r.ZP)(), [x, v] = i.useMemo(() => (null == p ? true : p.skuIds) == null || (null == p ? true : p.skuIds.length) === 0 ? [
+  } = (0, r.ZP)(), [x, m] = i.useMemo(() => (null == p ? true : p.skuIds) == null || (null == p ? true : p.skuIds.length) === 0 ? [
     [],
     []
   ] : (null == p ? true : p.leaderboard) == null || null == I || I <= 516 ? [
@@ -41,7 +41,7 @@ function u(e) {
       }), (0, l.jsx)(s.Z, {
         applicationId: t,
         guildId: u,
-        skuIds: v
+        skuIds: m
       }), null == (n = p.sections) ? true : n.map((e, n) => {
         var i;
         return (0, l.jsx)(s.Z, {

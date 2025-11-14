@@ -95,12 +95,12 @@ let D = (0, Chunk884697.IC)(90),
       var t;
       return (null == (t = b.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
     }), [n, Q.rankedSkuIds, eu.length]), {
-      cardContainerRef: ep,
-      totalCards: eg
+      cardContainerRef: eg,
+      totalCards: ep
     } = (e => {
-      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, g.Z)(() => {
+      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, p.Z)(() => {
         (null == a ? true : a.current) != null && n(Math.max(1, Math.floor((a.current.offsetWidth + r) / (246 + r))))
-      }), a = (0, p.y)(i, [r, e], {
+      }), a = (0, g.y)(i, [r, e], {
         fireOnMount: true,
         fireOnDepsChange: true,
         enabled: e
@@ -111,7 +111,7 @@ let D = (0, Chunk884697.IC)(90),
         }, [i, a, e]),
         totalCards: e ? t : true
       }
-    })(V !== R.AW.ORBS), ef = (0, S.a)()(eu), eh = (0, O.l)(ef).slice(0, eg), eC = (0, B.St)(eh), em = V === R.AW.ORBS ? w.intl.string(w.t["1CdL8d"]) : w.intl.string(w.t.xYKa1T), e_ = (0, E.FF)("CollectiblesContent"), eb = null != F && F.isOrbsExclusive, ev = () => {
+    })(V !== R.AW.ORBS), ef = (0, S.a)()(eu), eh = (0, O.l)(ef).slice(0, ep), eC = (0, B.St)(eh), em = V === R.AW.ORBS ? w.intl.string(w.t["1CdL8d"]) : w.intl.string(w.t.xYKa1T), e_ = (0, E.FF)("CollectiblesContent"), eb = null != F && F.isOrbsExclusive, ev = () => {
       V === R.AW.ORBS ? ((0, h.Y)({
         pageType: Z.ZY5.SHOP_ORBS_TAB,
         sectionType: Z.jXE.ORBS_SHOP_HERO_BLOCK,
@@ -208,9 +208,9 @@ let D = (0, Chunk884697.IC)(90),
             [H.row]: V === R.AW.HOME,
             [H.feed]: V === R.AW.ORBS
           }),
-          ref: ep,
+          ref: eg,
           children: n || ed ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(null != eg ? eg : 4)].map((e, t) => (0, r.jsx)(k.Z, {}, t))
+            children: [...Array(null != ep ? ep : 4)].map((e, t) => (0, r.jsx)(k.Z, {}, t))
           }) : (0, r.jsxs)(r.Fragment, {
             children: [null == ec && null != Q.rewardSkuId && null != X && (0, r.jsx)(_.k0, {
               newValue: {

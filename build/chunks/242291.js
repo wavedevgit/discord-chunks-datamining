@@ -6,7 +6,7 @@ require.d(exports, {
   GN: () => P,
   M2: () => x,
   Nq: () => N,
-  SZ: () => j,
+  SZ: () => k,
   aC: () => M,
   lF: () => G,
   pI: () => A,
@@ -101,7 +101,7 @@ function L(e) {
 
 function M(e, t) {
   (0, l.PS)(e, n => {
-    n.joinSound = true, k({
+    n.joinSound = true, j({
       guildId: e,
       changeType: y.MW.REMOVED,
       soundType: y.jy.ENTRY,
@@ -110,7 +110,7 @@ function M(e, t) {
   }, l.fy.INFREQUENT_USER_ACTION)
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   (0, l.PS)(e, r => {
     let i = t.guildId === I.X8,
       a = i ? y.H$.DEFAULT : y.H$.CUSTOM,
@@ -118,7 +118,7 @@ function j(e, t, n) {
     r.joinSound = {
       soundId: t.soundId,
       guildId: i ? I.hY : t.guildId
-    }, k({
+    }, j({
       guildId: e,
       changeType: o,
       soundSource: a,
@@ -128,7 +128,7 @@ function j(e, t, n) {
   }, l.fy.INFREQUENT_USER_ACTION)
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t,
     changeType: n,

@@ -9,8 +9,8 @@ require.d(exports, {
   Dd: () => N,
   Ft: () => w,
   TK: () => B,
-  X0: () => j,
-  XA: () => k,
+  X0: () => k,
+  XA: () => j,
   Z8: () => v,
   bD: () => P,
   nG: () => A,
@@ -309,7 +309,7 @@ function M(e) {
   else return p.ub.APP
 }
 
-function j(e, t) {
+function k(e, t) {
   var n, r;
   return {
     type: p.Qi.APPLICATION,
@@ -321,7 +321,7 @@ function j(e, t) {
   }
 }
 
-function k(e) {
+function j(e) {
   let t = e.id,
     n = e.options,
     r = null == n ? true : n.find(e => e.type === u.jw.SUB_COMMAND_GROUP);

@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 786915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -77,14 +77,14 @@ function C(e) {
     M = null == C ? true : C.getGuildId(),
     R = (0, a.e7)([p.Z], () => null != M ? p.Z.getGuild(M) : null, [M]),
     L = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : true),
-    D = null == t || O ? o.ejJ : o.gQj,
-    k = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
+    k = null == t || O ? o.ejJ : o.gQj,
+    D = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
   return null != L && E ? (0, i.jsx)(m.Z, {
     onClick: () => {
       null != w && (0, u.v)(w, u.d.INVITE), s.h7(L, false, A)
     },
-    iconComponent: D,
-    label: k,
+    iconComponent: k,
+    label: D,
     iconClassName: S,
     look: P,
     size: I,
@@ -144,8 +144,8 @@ function C(e) {
           guildScheduledEvent: j
         })
     },
-    iconComponent: D,
-    label: k,
+    iconComponent: k,
+    label: D,
     iconClassName: S,
     look: P,
     size: I,

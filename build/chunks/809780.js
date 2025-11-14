@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 809780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   As: () => F,
@@ -183,7 +183,7 @@ class z extends Chunk836560.EventEmitter {
         channelId: t,
         newestUnreadMessageId: n
       } = e;
-      d.Z.wait(() => h.ack(t, {
+      d.Z.wait(() => f.ack(t, {
         section: M.jXE.INBOX,
         object: M.qAy.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
         objectType: M.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -194,12 +194,12 @@ class z extends Chunk836560.EventEmitter {
         channels: this.updateChannel(t, e => B(U({}, e), {
           deleted: true
         }))
-      }), f.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
+      }), h.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
     }, this.undoMarkChannelRead = () => {
       if (0 === this.undoStack.length) return;
       let e = this.undoStack.pop();
       if (null == e) return;
-      h.ack(e.channelId, {
+      f.ack(e.channelId, {
         section: M.jXE.INBOX,
         object: M.qAy.UNDO_MARK_AS_READ,
         objectType: M.AnalyticsObjectTypes.ACK_MANUAL
@@ -220,7 +220,7 @@ class z extends Chunk836560.EventEmitter {
         channels: this.state.channels.filter(t => t.channelId !== e)
       }), this.maybeLoadMore()
     }, this.markAllRead = () => {
-      h.y5(this.state.channels.map(e => ({
+      f.y5(this.state.channels.map(e => ({
         channelId: e.channelId,
         messageId: e.newestUnreadMessageId
       }))), this.setState({

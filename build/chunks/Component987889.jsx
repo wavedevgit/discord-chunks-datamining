@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 987889, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -103,7 +103,7 @@ function S(e) {
     Menu: c,
     interactionType: u,
     actionType: d
-  } = e, p = (0, g.fJ)(), [h, f] = (0, i.useState)(false), [m, _] = (0, i.useState)(false), y = (0, i.useRef)(null), {
+  } = e, p = (0, g.fJ)(), [f, h] = (0, i.useState)(false), [m, _] = (0, i.useState)(false), y = (0, i.useRef)(null), {
     openMenu: O,
     closeMenu: C
   } = (0, b.z)();
@@ -131,8 +131,8 @@ function S(e) {
       position: "top",
       spacing: 4,
       asContainer: true,
-      onTooltipShow: () => f(true),
-      onTooltipHide: () => f(false),
+      onTooltipShow: () => h(true),
+      onTooltipHide: () => h(false),
       children: (0, r.jsx)(a.P3F, {
         innerRef: y,
         className: v.action,
@@ -149,7 +149,7 @@ function S(e) {
           message: n,
           "aria-label": l,
           className: v.actionIcon,
-          size: h ? "sm" : "xs"
+          size: f ? "sm" : "xs"
         }))
       })
     })
@@ -175,13 +175,13 @@ let I = {
   [Chunk982183.r0.BOOKMARK]: {
     type: "menu",
     label: Chunk388032.intl.string(Chunk388032.t["9p3D9p"]),
-    Icon: e => null != h.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.plf, j({}, e)) : (0, r.jsx)(a.gt9, j({}, e)),
+    Icon: e => null != f.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.plf, j({}, e)) : (0, r.jsx)(a.gt9, j({}, e)),
     interactionType: Chunk804932.s_.BOOKMARK,
     Menu: e => {
       let {
         message: t,
         renderPopoutProps: n
-      } = e, i = (0, l.e7)([h.Z], () => h.Z.getSavedMessage(t.channel_id, t.id)), o = (0, d.x)({
+      } = e, i = (0, l.e7)([f.Z], () => f.Z.getSavedMessage(t.channel_id, t.id)), o = (0, d.x)({
         message: t,
         savedMessage: i
       });
@@ -223,7 +223,7 @@ let I = {
         channel: t,
         renderPopoutProps: n
       } = e;
-      return t.isThread() ? (0, r.jsx)(f.Z, x(j({}, n), {
+      return t.isThread() ? (0, r.jsx)(h.Z, x(j({}, n), {
         channel: t,
         navId: "thread-context",
         label: O.intl.string(O.t["1NBjqb"])

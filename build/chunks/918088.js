@@ -128,13 +128,13 @@ function P(e, t) {
     x = null != w ? d.ZP.getSelfMember(w) : null,
     L = (0, l.EY)(x),
     M = (0, c.b)(x),
-    j = !E && A && !N && _ && !L && !M;
+    k = !E && A && !N && _ && !L && !M;
   return {
     poll: s,
     canTapAnswers: D,
     canRemoveVote: N && _ && !h,
     canShowVoteCounts: P,
-    canSubmitVote: j,
+    canSubmitVote: k,
     expirationLabel: p,
     hasSelectedAnswer: A,
     hasVoted: N,
@@ -179,8 +179,8 @@ function D(e, t) {
     canSubmitVote: x,
     expirationLabel: L = T.intl.string(T.t["e+J3JZ"]),
     hasSelectedAnswer: M,
-    hasVoted: j,
-    isEditingVote: k,
+    hasVoted: k,
+    isEditingVote: j,
     isExpired: U,
     isInteractive: G,
     reactions: B,
@@ -202,10 +202,10 @@ function D(e, t) {
       u = 0 === Y ? 0 : c / Y,
       d = Z.has(o),
       f = c >= K && 0 !== c,
-      _ = j && null != (a = null == l ? true : l.me_vote) && a,
+      _ = k && null != (a = null == l ? true : l.me_vote) && a,
       h = C({
         didSelfVote: _,
-        hasVoted: j,
+        hasVoted: k,
         isExpired: U,
         isSelected: d,
         isLeader: f,
@@ -234,8 +234,8 @@ function D(e, t) {
   }), q = (0, r.EQ)({
     isExpired: U,
     canSubmitVote: x,
-    hasVoted: j,
-    isEditingVote: k,
+    hasVoted: k,
+    isEditingVote: j,
     canRemoveVote: D,
     isInteractive: G,
     showResults: H
@@ -273,7 +273,7 @@ function D(e, t) {
   })), X = (0, m.isIOS)() ? T.intl.string(T.t["PVATM/"]) : T.intl.string(T.t.cHfFql), Q = (0, r.EQ)({
     isExpired: U,
     isInteractive: G,
-    isEditingVote: k
+    isEditingVote: j
   }).with({
     isInteractive: false,
     isExpired: false
@@ -295,7 +295,7 @@ function D(e, t) {
     presentation: "text",
     enabled: true,
     type: "showVoterDetails"
-  })), J = !G || U || j || H ? true : {
+  })), J = !G || U || k || H ? true : {
     label: T.intl.string(T.t["/KHAUF"]),
     presentation: "textButton",
     enabled: true,
@@ -341,7 +341,7 @@ function D(e, t) {
     canSelectMultipleAnswers: $,
     hasSelectedAnswer: M,
     canShowVoteCounts: w,
-    hasVoted: j,
+    hasVoted: k,
     isExpired: U,
     myAvatarUrl: g,
     secondaryAction: Q,

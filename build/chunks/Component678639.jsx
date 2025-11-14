@@ -25,8 +25,8 @@ function f(e) {
   let {
     store: t,
     dataGetter: n
-  } = e, [r, l] = i.useState(n(t));
-  return i.useEffect(() => {
+  } = e, [i, l] = r.useState(n(t));
+  return r.useEffect(() => {
     let e = () => l(n(t));
     return e(), t.addChangeListener(e), () => {
       t.removeChangeListener(e)
@@ -34,7 +34,7 @@ function f(e) {
   }, [t, n]), (0, a.jsx)(o.zJl, {
     className: x.inspectorContainer,
     children: (0, a.jsx)(d.Z, {
-      data: r
+      data: i
     })
   })
 }
@@ -86,8 +86,8 @@ function j(e) {
     store: t,
     initialHeight: n
   } = e, {
-    TabBar: i,
-    renderSelectedTab: r
+    TabBar: r,
+    renderSelectedTab: i
   } = (0, p.ZP)({
     tabs: v
   }, []);
@@ -95,7 +95,7 @@ function j(e) {
     className: x.subPanel,
     minHeight: 100,
     initialHeight: n,
-    children: [(0, a.jsx)(i, {}), (0, a.jsxs)(c.ZP, {
+    children: [(0, a.jsx)(r, {}), (0, a.jsxs)(c.ZP, {
       className: l()(h.headerBar, x.subPanelHeaderBar),
       children: [(0, a.jsx)(c.ZP.Icon, {
         icon: o.lO_,
@@ -103,7 +103,7 @@ function j(e) {
       }), (0, a.jsx)(c.ZP.Title, {
         children: t.getName()
       })]
-    }), r({
+    }), i({
       store: t
     })]
   })
@@ -112,7 +112,7 @@ function j(e) {
 function _() {
   let e = Chunk647438.useRef(null),
     [t, n] = Chunk647438.useState(""),
-    r = Chunk442837.yh.getAll(),
+    i = Chunk442837.yh.getAll(),
     c = Chunk647438.useMemo(() => Chunk120356.map(e => ({
       key: e._dispatchToken,
       store: e

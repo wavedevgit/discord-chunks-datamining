@@ -66,7 +66,7 @@ function M(e) {
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -77,8 +77,8 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -211,7 +211,7 @@ function F(e) {
       analyticsSource: c.Z.QUEST_HOME_PAGE
     })
   }, []), L = null == (t = (0, g.WD)()) ? true : t.getId(), {
-    launchInGameActivity: j
+    launchInGameActivity: k
   } = (0, b.zB)(n), G = (0, E.Rt)(n), B = i.useMemo(() => n.config.features.includes(P.S7.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE), [n.config.features]);
   return i.useMemo(() => {
     if (!B && (0, E.HJ)(n) && r !== b.OH.COMPLETED && r !== b.OH.CLAIMED) {
@@ -279,7 +279,7 @@ function F(e) {
               questContentPosition: s,
               questContentRowIndex: l,
               sourceQuestContent: O
-            }), j())
+            }), k())
           }
         };
       case b.OH.ACCEPTED:
@@ -323,7 +323,7 @@ function F(e) {
             text: e,
             tooltipText: x.intl.string(x.t.hsbwjv),
             onClick: () => {
-              n.config.features.includes(P.S7.START_QUEST_CTA) && j()
+              n.config.features.includes(P.S7.START_QUEST_CTA) && k()
             }
           }
         }
@@ -344,10 +344,10 @@ function F(e) {
           onClick: v,
           text: (0, E.wj)(n.config) ? x.intl.string(x.t.bAGFz3) : x.intl.string(x.t.vTgCWx)
         };
-        if (a) return k(M({}, i), {
+        if (a) return j(M({}, i), {
           text: x.intl.string(x.t.MAS7uK)
         });
-        if ((0, E.vQ)(n.config)) return k(M({}, i), {
+        if ((0, E.vQ)(n.config)) return j(M({}, i), {
           text: x.intl.string(x.t.vTgCWx)
         });
         if ((0, E.Bg)(n.config)) return {
@@ -360,11 +360,11 @@ function F(e) {
           text: x.intl.string(x.t.WYchde),
           onClick: R
         };
-        return k(M({}, i), {
+        return j(M({}, i), {
           text: x.intl.string(x.t.bAGFz3)
         })
     }
-  }, [r, p, I, _, v, a, n, o, s, l, L, T, C, R, y, j, O, B, G])
+  }, [r, p, I, _, v, a, n, o, s, l, L, T, C, R, y, k, O, B, G])
 }
 
 function V() {

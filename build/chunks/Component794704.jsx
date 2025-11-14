@@ -261,12 +261,12 @@ let eL = new Set([Chunk837268.mM.INITIALIZING, Chunk837268.mM.WAITING_FOR_SCREEN
     e.preventDefault(), e.stopPropagation()
   };
 
-function ej(e) {
+function ek(e) {
   var t, n, a;
   let {
     runningGame: o,
     runningGameApplication: s
-  } = e, c = null == o ? true : o.pid, u = (0, _.e7)([j.default], () => null == o || null == c ? null : j.default.getTrackedGameByPid(c), [o, c], l()), {
+  } = e, c = null == o ? true : o.pid, u = (0, _.e7)([k.default], () => null == o || null == c ? null : k.default.getTrackedGameByPid(c), [o, c], l()), {
     enabledLegacy: d,
     enabledOOP: f
   } = (0, _.cj)([Q.Z, $.Z], () => {
@@ -291,7 +291,7 @@ function ej(e) {
     {
       legacyEnabled: w,
       oopEnabled: L
-    } = (0, _.cj)([j.default], () => j.default.getGlobalEnabledStatus()),
+    } = (0, _.cj)([k.default], () => k.default.getGlobalEnabledStatus()),
     M = (e, t) => {
       var n, r, i;
       if (null == o) return;
@@ -311,7 +311,7 @@ function ej(e) {
           b.Z.setEnabled(w, e), (0, D.ou)(e, D.OverlayToggledClientSettingType.OOP, null != (r = o.id) ? r : null)
       }(a || s) && (0, B.l)(a ? D.OverlayToggledClientSettingType.LEGACY_GAME : D.OverlayToggledClientSettingType.OOP_GAME, null != (i = o.id) ? i : null)
     },
-    k = (e, t) => {
+    j = (e, t) => {
       let n = !t && e,
         r = !L && g,
         i = !w && y,
@@ -493,7 +493,7 @@ function ej(e) {
         checked: g && L || y && w,
         disabled: G,
         onChange: e => {
-          U(e, k(e, g && L || y && w))
+          U(e, j(e, g && L || y && w))
         }
       })
     }),
@@ -537,7 +537,7 @@ function ej(e) {
   })
 }
 
-function ek(e) {
+function ej(e) {
   let {
     game: t,
     gameApplication: n
@@ -571,7 +571,7 @@ function eU(e) {
   };
   return (0, r.jsx)(ew, {
     title: t.name,
-    icon: (0, r.jsx)(ek, {
+    icon: (0, r.jsx)(ej, {
       game: u,
       gameApplication: n
     }),
@@ -1077,7 +1077,7 @@ function eq(e) {
   let {
     runningGame: t,
     runningGameApplication: n
-  } = e, a = null == n ? true : n.id, o = (0, _.e7)([U.Z], () => U.Z.isLimitedInteractionOverrideEnabled(a), [a]), s = i.useMemo(() => null != t && (0, k.H8)(t.pid), [t]), l = (0, M.Z)({
+  } = e, a = null == n ? true : n.id, o = (0, _.e7)([U.Z], () => U.Z.isLimitedInteractionOverrideEnabled(a), [a]), s = i.useMemo(() => null != t && (0, j.H8)(t.pid), [t]), l = (0, M.Z)({
     location: "overlay_user_settings"
   }), {
     disableClickableRegions: c,
@@ -1152,7 +1152,7 @@ function eX(e) {
       title: ep.intl.string(ep.t["9cb1Uz"]),
       children: [o ? (0, r.jsx)(ez, {}) : null, (0, r.jsxs)("div", {
         className: eh.overlayEnabledSettingsContainer,
-        children: [(0, r.jsx)(ej, {
+        children: [(0, r.jsx)(ek, {
           runningGame: i,
           runningGameApplication: a
         }), (0, r.jsx)(eB, {}), (0, r.jsx)(eG, {})]

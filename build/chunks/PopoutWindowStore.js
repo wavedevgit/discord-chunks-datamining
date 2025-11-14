@@ -87,9 +87,9 @@ let A = new Chunk710845.Z("PopoutWindowStore"),
   x = "app-mount",
   L = () => $.emitChange(),
   M = s().debounce(L, 150),
-  j = false;
+  k = false;
 
-function k(e, t) {
+function j(e, t) {
   let n = t.document,
     r = n.head;
   for (let e of (a()(null != r, "Body for popout window is null!"), document.querySelectorAll("style"))) {
@@ -140,7 +140,7 @@ function F(e) {
     n = D[e];
   if (null == t) return void A.warn("Failed to open window", e);
   let r = t.document;
-  (0, g.uF)(r, L), t.addEventListener("focus", L), t.addEventListener("blur", L), t.addEventListener("resize", M), j ? k(e, t) : Z(e, t);
+  (0, g.uF)(r, L), t.addEventListener("focus", L), t.addEventListener("blur", L), t.addEventListener("resize", M), k ? j(e, t) : Z(e, t);
   let i = (0, l.createRoot)(r.getElementById(x));
   a()(null != i, "No render target for popout!"), P[e] = i, i.render(n(e))
 }

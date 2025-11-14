@@ -1,7 +1,7 @@
 /** Chunk was on 99904 **/
 /** chunk id: 17597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => T
+  default: () => O
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,16 +47,16 @@ function E(e) {
     }
   }) : null
 }
-let T = function(e) {
+let O = function(e) {
   let {
     transitionState: t,
     entryPoint: n,
     onClose: u,
     onComplete: j,
-    dismissable: T,
-    classificationId: O
-  } = e, [N, P] = i.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = i.useRef(N), [w, k] = (0, c.US)([N], true, true), R = i.useMemo(() => (0, r.Z)(), []), A = i.useRef(false), Z = (0, m.GE)();
-  i.useEffect(() => {
+    dismissable: O,
+    classificationId: T
+  } = e, [N, P] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = r.useRef(N), [w, k] = (0, c.US)([N], true, true), R = r.useMemo(() => (0, i.Z)(), []), A = r.useRef(false), Z = (0, m.GE)();
+  r.useEffect(() => {
     I.current = w
   }, [w]);
   let {
@@ -69,22 +69,22 @@ let T = function(e) {
     onMethodClick: () => {
       P(s.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
     },
-    classificationId: O
+    classificationId: T
   });
-  return i.useLayoutEffect(() => () => {
+  return r.useLayoutEffect(() => () => {
     if (A.current) return;
     let e = I.current;
     null != e && (A.current = true, p.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
-  }, []), i.useEffect(() => {
+  }, []), r.useEffect(() => {
     (0, g.lA)(R, g.d_.EXPRESSIVE_PRIMARY, n)
   }, [R, n]), (0, a.jsx)(l.ExpressiveModal, {
     transitionState: t,
     onClose: u,
     gradientColor: "blue",
-    dismissable: T,
+    dismissable: O,
     graphic: {
       type: "image",
       src: S.Z
@@ -145,14 +145,14 @@ let T = function(e) {
           let {
             title: t,
             description: n,
-            onClick: i
+            onClick: r
           } = e;
           return (0, a.jsx)(d.JZ, {
             variant: "clickable",
             title: t,
             description: n,
             buttonDisabled: D,
-            onButtonPress: () => i(R)
+            onButtonPress: () => r(R)
           }, t)
         })
       })]

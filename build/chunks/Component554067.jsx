@@ -36,7 +36,7 @@ function h(e) {
     ignoreKeyPress: true,
     className: f.searchBar,
     onClick: () => {
-      n !== d.AW.CATALOG && t(d.AW.CATALOG), s.default.track(p.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      n !== d.AW.CATALOG && t(d.AW.CATALOG), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == b ? true : b.sessionId,
         page_section: null == b ? true : b.pageSection,
         page_category: null == b ? true : b.pageCategory,
@@ -54,7 +54,7 @@ function h(e) {
       query: m,
       onChange: _,
       onClear: () => {
-        _(""), s.default.track(p.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        _(""), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == b ? true : b.sessionId,
           page_section: null == b ? true : b.pageSection,
           page_category: null == b ? true : b.pageCategory,
@@ -64,7 +64,7 @@ function h(e) {
           page_type: n
         })
       },
-      placeholder: "en-US" === v ? g.intl.string(g.t.arz34K) : g.intl.string(g.t["hIt/Nm"])
+      placeholder: "en-US" === v ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])
     })
   })
 }

@@ -13,13 +13,13 @@ let l = e => {
     footerInput: n
   } = e;
   return 0 === t.length && null == n ? null : (0, a.jsxs)("footer", {
-    className: r.footer,
+    className: i.footer,
     children: [null != n && (0, a.jsx)("div", {
       children: n
-    }), (0, a.jsx)(i.hE2, {
-      className: r.buttonGroup,
+    }), (0, a.jsx)(r.hE2, {
+      className: i.buttonGroup,
       justify: "end",
-      children: t.map((e, t) => (0, a.jsx)(i.zxk, function(e) {
+      children: t.map((e, t) => (0, a.jsx)(r.zxk, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(n);

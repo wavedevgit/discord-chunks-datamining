@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./388685.js");
 var a, Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -99,7 +99,7 @@ let x = () => {
       n = (null == r ? true : r.id) === (null == exports ? true : exports.id);
     null == exports || require || (r = exports)
   };
-class j extends(a = Chunk442837.ZP.PersistedStore) {
+class k extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && (r = (null == e ? true : e.gradientPresetId) != null ? I.qt[e.gradientPresetId] : true), this.waitFor(g.Z, u.Z, f.Z, _.ZP, h.Z, E.default), this.syncWith([E.default], x), this.syncWith([u.Z], L)
   }
@@ -132,8 +132,8 @@ class j extends(a = Chunk442837.ZP.PersistedStore) {
     }])
   }
 }
-S(j, "displayName", "ClientThemesBackgroundStore"), S(j, "persistKey", "ClientThemesBackgroundStore");
-let k = new j(Chunk570140.Z, {
+S(k, "displayName", "ClientThemesBackgroundStore"), S(k, "persistKey", "ClientThemesBackgroundStore");
+let j = new k(Chunk570140.Z, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: N,
   UPDATE_MOBILE_PENDING_THEME_INDEX: R,
   RESET_PREVIEW_CLIENT_THEME: P,

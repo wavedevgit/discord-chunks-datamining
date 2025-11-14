@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 91053 **/
 /** chunk id: 442336, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -58,12 +58,12 @@ function b(e) {
       c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let x = e => {
+  let j = e => {
       e.shiftKey ? s.Z.updateChannelOverrideSettings(t.guild_id, t.id, {
         muted: !b
       }, d.UE.muted(!b)) : O(e => !e)
     },
-    j = f.intl.string(f.t.h850Ss);
+    x = f.intl.string(f.t.h850Ss);
   return (0, r.jsx)(a.yRy, {
     targetElementRef: n,
     shouldShow: y,
@@ -84,10 +84,10 @@ function b(e) {
       } = t;
       return (0, r.jsx)(u.ZP.Icon, m(g({}, e), {
         ref: n,
-        onClick: x,
-        tooltip: i ? null : j,
+        onClick: j,
+        tooltip: i ? null : x,
         icon: b || _ !== h.bL.ALL_MESSAGES ? a.owu : a.Dkj,
-        "aria-label": j,
+        "aria-label": x,
         selected: i
       }))
     }

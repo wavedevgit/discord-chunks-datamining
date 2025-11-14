@@ -75,7 +75,7 @@ function C(e) {
     allowTextSelectionOnPress: x,
     ref: L,
     ...M
-  } = O(e), [j, k] = (0, y.useState)(false), U = (0, y.useRef)({
+  } = O(e), [k, j] = (0, y.useState)(false), U = (0, y.useRef)({
     isPressed: false,
     ignoreEmulatedMouseEvents: false,
     didFirePressStart: false,
@@ -96,7 +96,7 @@ function C(e) {
       let n = new I("pressstart", t, e);
       a(n), i = n.shouldStopPropagation
     }
-    return n && n(true), r.isTriggeringEvent = false, r.didFirePressStart = true, k(true), i
+    return n && n(true), r.isTriggeringEvent = false, r.didFirePressStart = true, j(true), i
   }), F = (0, f.i)((e, r, i = true) => {
     let a = U.current;
     if (!a.didFirePressStart) returnfalse;
@@ -106,7 +106,7 @@ function C(e) {
       let t = new I("pressend", r, e);
       o(t), s = t.shouldStopPropagation
     }
-    if (n && n(false), k(false), t && i && !u) {
+    if (n && n(false), j(false), t && i && !u) {
       let n = new I("press", r, e);
       t(n), s && (s = n.shouldStopPropagation)
     }
@@ -255,7 +255,7 @@ function C(e) {
       e.disposables = []
     }
   }, [x]), {
-    isPressed: v || j,
+    isPressed: v || k,
     pressProps: (0, c.d)(M, z, {
       [A]: true
     })

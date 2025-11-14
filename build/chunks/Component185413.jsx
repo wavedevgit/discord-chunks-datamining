@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 185413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => j
@@ -89,8 +89,8 @@ function O(e) {
   } = (0, g.Q)(a, d, d.accessPermissions, O), L = m.Z.useSections({
     roles: w,
     members: M
-  }), D = h && 0 === Object.keys(S).length;
-  async function k() {
+  }), k = h && 0 === Object.keys(S).length;
+  async function D() {
     if (null == d || 0 === Object.keys(S).length) return void p();
     Z(true);
     try {
@@ -158,7 +158,7 @@ function O(e) {
         renderRow: m.Z.renderRow,
         sections: L
       },
-      actions: D ? [{
+      actions: k ? [{
         variant: "secondary",
         text: C.intl.string(C.t.u46sxe),
         onClick: p
@@ -169,7 +169,7 @@ function O(e) {
       }, {
         variant: "primary",
         text: C.intl.string(C.t.i4jeWR),
-        onClick: k,
+        onClick: D,
         loading: I
       }]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

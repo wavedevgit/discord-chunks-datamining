@@ -15,7 +15,7 @@ function d(e) {
   let {
     icon: t,
     title: n,
-    subtitle: r,
+    subtitle: i,
     children: d,
     className: u,
     isExpanded: m,
@@ -23,15 +23,15 @@ function d(e) {
     defaultExpanded: h = false,
     onOpen: x,
     maxHeight: g
-  } = e, [f, b] = i.useState(h), v = i.useRef(null), [j, _] = i.useState(null), y = true !== m, C = y ? m : f;
-  i.useEffect(() => {
+  } = e, [f, b] = r.useState(h), v = r.useRef(null), [j, _] = r.useState(null), y = true !== m, C = y ? m : f;
+  r.useEffect(() => {
     C && null != v.current && _(v.current.scrollHeight)
   }, [C, d]);
-  let S = i.useCallback(() => {
+  let S = r.useCallback(() => {
       let e = !C;
       y || b(e), null == p || p(e), e && null != x && x()
     }, [C, y, p, x]),
-    E = i.useMemo(() => {
+    E = r.useMemo(() => {
       if (C) {
         if (null != g) return {
           maxHeight: "number" == typeof g ? "".concat(g, "px") : g
@@ -57,10 +57,10 @@ function d(e) {
           variant: "eyebrow",
           color: "header-secondary",
           children: n
-        }), null != r && "" !== r && (0, a.jsx)(s.Text, {
+        }), null != i && "" !== i && (0, a.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "interactive-normal",
-          children: r
+          children: i
         })]
       }), (0, a.jsx)("div", {
         className: l()(c.caret, {

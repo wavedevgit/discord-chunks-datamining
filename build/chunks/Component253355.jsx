@@ -2,7 +2,7 @@
 /** chunk id: 253355, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,27 +16,27 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk638758 = require("./638758.js");
 
-function g(e) {
+function p(e) {
   let {
     category: t
   } = e, n = (0, l.e7)([i.Z], () => i.Z.useReducedMotion), s = (0, l.e7)([o.Z], () => o.Z.isFocused()), {
-    catalogBannerStatic: g,
+    catalogBannerStatic: p,
     catalogBannerAnimated: f
   } = (0, u.Oi)(t);
   return (0, r.jsxs)("div", {
-    className: p.catalogBanner,
+    className: g.catalogBanner,
     children: [(0, r.jsx)("img", {
-      className: p.catalogBannerImage,
-      src: g,
+      className: g.catalogBannerImage,
+      src: p,
       alt: t.name
     }), null != f && !n && s && (0, r.jsx)(a.Z, {
       src: f,
-      className: p.animationAsset,
+      className: g.animationAsset,
       autoPlay: true,
       loop: true
     }), (0, r.jsx)(c.Z, {
       category: t,
-      className: p.limitedTimeBadge,
+      className: g.limitedTimeBadge,
       daysRemainingText: d.t["8gsP5M"]
     })]
   })

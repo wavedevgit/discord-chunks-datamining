@@ -52,8 +52,8 @@ let I = 1e3,
     }, [w]);
     let M = (0, f.P)(R, !!P, D),
       {
-        mediaUrls: j,
-        isSuccess: k
+        mediaUrls: k,
+        isSuccess: j
       } = (0, E.Z)(!a && M && x),
       U = (0, i.useRef)(null),
       [G, B] = (0, i.useState)(false),
@@ -62,14 +62,14 @@ let I = 1e3,
       [Y, W] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
-        M && n && !Y && "none" === V && (a || !k ? (H("static"), a || (W(true), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (H("animated"), F(true), e = true), c.Z.dispatch({
+        M && n && !Y && "none" === V && (a || !j ? (H("static"), a || (W(true), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (H("animated"), F(true), e = true), c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: true,
           isAnimated: e
         }), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
           wow_moment_type: e ? "animated" : "static"
         }))
-      }, [a, M, n, k, Y, V]), (0, i.useEffect)(() => {
+      }, [a, M, n, j, Y, V]), (0, i.useEffect)(() => {
         function e() {
           B(true), N()
         }
@@ -94,7 +94,7 @@ let I = 1e3,
             onEnded: C,
             className: o()(y.video, "entry" === I ? y.visible : y.hidden),
             children: (0, r.jsx)("source", {
-              src: j.modalGlowEntry
+              src: k.modalGlowEntry
             })
           })
         }), (0, r.jsx)(d.Z, {
@@ -104,7 +104,7 @@ let I = 1e3,
           loop: true,
           className: o()(y.video, "idle" === I ? y.visible : y.hidden),
           children: (0, r.jsx)("source", {
-            src: j.modalGlowIdle
+            src: k.modalGlowIdle
           })
         }), (0, r.jsx)(d.Z, {
           ref: A,
@@ -112,7 +112,7 @@ let I = 1e3,
           muted: true,
           className: o()(y.video, "exit" === I ? y.visible : y.hidden),
           children: (0, r.jsx)("source", {
-            src: j.modalGlowExit
+            src: k.modalGlowExit
           })
         })]
       }), (0, r.jsx)("div", {

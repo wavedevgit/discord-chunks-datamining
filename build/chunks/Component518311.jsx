@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 518311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => em,
@@ -144,7 +144,7 @@ let eo = (0, Chunk313201.hQ)(),
       onConfirm: t,
       channelIds: n
     } = e, i = ea(e, ["onConfirm", "channelIds"]);
-    let l = (0, u.Wu)([D.Z], () => Array.from(n).map(D.Z.getChannel), [n]);
+    let l = (0, u.Wu)([k.Z], () => Array.from(n).map(k.Z.getChannel), [n]);
     return (0, r.jsx)(c.Modal, el(er({
       title: et.intl.string(et.t.uFHxNd),
       subtitle: et.intl.string(et.t.rIsSqE),
@@ -855,9 +855,9 @@ function eh(e) {
   var {
     channel: t
   } = e, n = ea(e, ["channel"]);
-  let i = (0, u.cj)([U.Z, k.Z, F.Z], () => {
+  let i = (0, u.cj)([U.Z, D.Z, F.Z], () => {
     let e;
-    return null != t && null != (e = k.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, U.Z.getState()), {
+    return null != t && null != (e = D.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, U.Z.getState()), {
       invite: e,
       hideDiscriminator: F.Z.hidePersonalInformation,
       hideInstantInvites: F.Z.hideInstantInvites
@@ -1014,7 +1014,7 @@ function eg(e) {
 
 function eb(e) {
   let t = ey(e);
-  return new Set((0, a.chain)(D.Z.getMutablePrivateChannels()).values().filter(e => (0, L.bc)(e.type)).filter(e => ey(e.recipients) === t).map(e => e.id).value())
+  return new Set((0, a.chain)(k.Z.getMutablePrivateChannels()).values().filter(e => (0, L.bc)(e.type)).filter(e => ey(e.recipients) === t).map(e => e.id).value())
 }
 
 function ey(e) {

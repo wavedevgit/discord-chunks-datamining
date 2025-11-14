@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 91053 **/
 /** chunk id: 874139, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -41,8 +41,8 @@ function m(e) {
     wishlistId: null != b ? b : null,
     onAction: y
   }), {
-    cards: x,
-    singleItem: j
+    cards: j,
+    singleItem: x
   } = (0, i.useMemo)(() => {
     let e = [],
       r = null;
@@ -72,15 +72,15 @@ function m(e) {
       singleItem: r
     }
   }, [t, n, _, m, b]);
-  if (0 === x.length) return null;
-  let v = 1 === x.length && null != j,
-    C = x;
-  return v && ((0, o.Q)(j) ? C = (0, h.g)(j, {
+  if (0 === j.length) return null;
+  let v = 1 === j.length && null != x,
+    C = j;
+  return v && ((0, o.Q)(x) ? C = (0, h.g)(x, {
     profileOwner: n,
     analyticsLocations: _,
     wishlistId: b,
     onViewWishlist: m
-  }) : (0, c.F)(j) && (C = (0, s.B)(j, {
+  }) : (0, c.F)(x) && (C = (0, s.B)(x, {
     profileOwner: n,
     analyticsLocations: _,
     wishlistId: b,

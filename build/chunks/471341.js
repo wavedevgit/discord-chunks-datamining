@@ -1,21 +1,21 @@
-/** Chunk was on 90320 **/
-/** chunk id: 471341, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 65354 **/
+/** chunk id: 471341, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => l
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk907331 = require("./907331.js");
 
-function a(e) {
+function l(e) {
   let {
     wishlistId: t,
-    onAction: r
-  } = e, [a, l] = (0, i.useState)(false), n = (0, i.useCallback)(e => {
-    e && null != t && (r({
+    onAction: n
+  } = e, [l, o] = (0, r.useState)(false), a = (0, r.useCallback)(e => {
+    e && null != t && (n({
       action: "VIEW_WISHLIST",
       wishlistId: t,
       skuId: null
-    }), l(true))
-  }, [r, t]);
-  return (0, s.O)(n, true, null != t && !a)
+    }), o(true))
+  }, [n, t]);
+  return (0, i.O)(a, true, null != t && !l)
 }

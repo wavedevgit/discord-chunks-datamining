@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ei
@@ -175,8 +175,8 @@ class en extends Chunk98597.ZP {
       locked: s,
       sorting: d,
       isUserOver: p,
-      connectChannelDropTarget: h,
-      connectChannelDragSource: f,
+      connectChannelDropTarget: f,
+      connectChannelDragSource: h,
       connectUserDropTarget: g,
       connectDragPreview: m,
       canReorderChannel: b,
@@ -417,7 +417,7 @@ function ei(e) {
       bypassLimit: k.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), f = (0, g.ZP)(n), m = (0, v.ZP)(n), y = (0, P.qY)(n.id), {
+  }), f = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), h = (0, g.ZP)(n), m = (0, v.ZP)(n), y = (0, P.qY)(n.id), {
     enabled: O
   } = b.W.useExperiment({
     guildId: t.id,
@@ -450,9 +450,9 @@ function ei(e) {
   }), V = T && null == F;
   return (0, r.jsx)(er, et(ee({
     channelName: m,
-    embeddedApps: f,
+    embeddedApps: h,
     embeddedActivityType: q.IIU.PLAYING,
-    video: h,
+    video: f,
     hasActiveEvent: null != y,
     isSubscriptionGated: x,
     needSubscriptionToAccess: E

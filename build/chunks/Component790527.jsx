@@ -71,8 +71,8 @@ function w(e) {
       guildBoostProps: x,
       analyticsSource: L,
       analyticsLocation: M,
-      body: j,
-      context: k,
+      body: k,
+      context: j,
       glowUp: U,
       modalClassName: G,
       modalContentClassName: B,
@@ -213,7 +213,7 @@ function w(e) {
         type: w,
         subscriptionTier: null != (a = null == eg || null == (n = eg.subscription_trial) ? true : n.sku_id) ? a : T.Si.TIER_2,
         headingText: P,
-        context: k,
+        context: j,
         analyticsLocationObject: M,
         discountOffer: eE,
         trialOffer: eg,
@@ -235,7 +235,7 @@ function w(e) {
           }) : true, eu, (0, r.jsx)(c.Text, {
             variant: e_ ? "text-sm/normal" : "text-md/normal",
             className: o()(H, C.subHeader),
-            children: j
+            children: k
           })]
         })]
       })

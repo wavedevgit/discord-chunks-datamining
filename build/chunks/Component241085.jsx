@@ -160,9 +160,9 @@ function x(e) {
     setUploadIds: x,
     currentUploads: L,
     error: M
-  } = (0, C.t)(e), j = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(E));
-  l()(null != j, "FileUploadActionComponent requires a valid channel");
-  let k = i.useCallback(e => {
+  } = (0, C.t)(e), k = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(E));
+  l()(null != k, "FileUploadActionComponent requires a valid channel");
+  let j = i.useCallback(e => {
       var t;
       e.preventDefault(), (null == (t = e.dataTransfer) ? true : t.types.includes("Files")) && m(true)
     }, []),
@@ -178,7 +178,7 @@ function x(e) {
           maxValues: a
         })
       });
-      if ((0, T.Bf)(e, j.guild_id)) return (0, I.G)(j, e);
+      if ((0, T.Bf)(e, k.guild_id)) return (0, I.G)(k, e);
       let n = e.map(e => {
         let n = (0, A.VD)(O),
           r = {
@@ -196,7 +196,7 @@ function x(e) {
         }), n
       });
       x(v.concat(n))
-    }, [v, a, j, x, O, E]),
+    }, [v, a, k, x, O, E]),
     B = i.useCallback(e => {
       var t, n;
       e.preventDefault(), m(false), G(Array.from(null != (n = null == (t = e.dataTransfer) ? true : t.files) ? n : []), "drag_drop")
@@ -210,10 +210,10 @@ function x(e) {
     };
   return (i.useEffect(() => {
     let e = u.current;
-    return null == e || e.addEventListener("dragover", k), null == e || e.addEventListener("dragleave", U), null == e || e.addEventListener("drop", B), () => {
-      null == e || e.removeEventListener("dragover", k), null == e || e.removeEventListener("dragleave", U), null == e || e.removeEventListener("drop", B)
+    return null == e || e.addEventListener("dragover", j), null == e || e.addEventListener("dragleave", U), null == e || e.addEventListener("drop", B), () => {
+      null == e || e.removeEventListener("dragover", j), null == e || e.removeEventListener("dragleave", U), null == e || e.removeEventListener("drop", B)
     }
-  }, [k, U, B]), 1 === a && 1 === L.length) ? (0, r.jsx)(w, {
+  }, [j, U, B]), 1 === a && 1 === L.length) ? (0, r.jsx)(w, {
     upload: L[0],
     handleRemoveFile: F,
     singleFileInput: true
@@ -228,7 +228,7 @@ function x(e) {
       fileInputRef: s,
       minValues: n,
       maxValues: a,
-      guildId: j.guild_id
+      guildId: k.guild_id
     }), L.length > 0 && (0, r.jsx)("div", {
       className: R.files,
       children: L.map(e => (0, r.jsx)(w, {

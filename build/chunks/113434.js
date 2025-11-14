@@ -9,7 +9,7 @@ require.d(exports, {
   Fy: () => eN,
   GI: () => ew,
   Gd: () => eW,
-  I: () => ek,
+  I: () => ej,
   J2: () => W,
   Jf: () => eT,
   KX: () => eL,
@@ -20,7 +20,7 @@ require.d(exports, {
   Rf: () => eI,
   SU: () => e1,
   Wi: () => eh,
-  _Q: () => ej,
+  _Q: () => ek,
   _s: () => ex,
   aV: () => eX,
   bA: () => ed,
@@ -638,7 +638,7 @@ var eM = function(e) {
   return e[e.UNACCEPTED = 0] = "UNACCEPTED", e[e.ACCEPTED = 1] = "ACCEPTED", e[e.IN_PROGRESS = 2] = "IN_PROGRESS", e[e.COMPLETED = 3] = "COMPLETED", e[e.CLAIMED = 4] = "CLAIMED", e
 }({});
 
-function ej(e) {
+function ek(e) {
   var t, n, r;
   let i = (null == (t = e.userStatus) ? true : t.enrolledAt) != null,
     a = (null == (n = e.userStatus) ? true : n.completedAt) != null,
@@ -647,7 +647,7 @@ function ej(e) {
   return o ? 4 : a ? 3 : s && i ? 2 : 1 * !!i
 }
 
-function ek(e) {
+function ej(e) {
   let t = (0, c.e7)([m.default], () => m.default.locale),
     {
       percentComplete: n
@@ -669,7 +669,7 @@ function eU(e, t, n) {
   var r, i;
   let a = eI(e),
     o = (0, R.b7)(e),
-    s = (0, j.DD)({
+    s = (0, k.DD)({
       quest: e,
       taskDetails: a,
       location: G.dr.QUEST_HOME_DESKTOP,
@@ -822,7 +822,7 @@ function eY(e) {
     popoutTargetElementRef: l,
     onGameSheetOpened: c,
     onGameSheetClosed: u
-  } = e, d = eg(r.useMemo(() => U.r.build(i.config).rewardsExpireAt, [i.config])), f = eI(i), _ = eT(i), p = (null == (t = i.userStatus) ? true : t.completedAt) != null, h = (null == (n = i.userStatus) ? true : n.enrolledAt) != null, m = f.percentComplete > 0, g = eO(i), E = (0, j.DD)({
+  } = e, d = eg(r.useMemo(() => U.r.build(i.config).rewardsExpireAt, [i.config])), f = eI(i), _ = eT(i), p = (null == (t = i.userStatus) ? true : t.completedAt) != null, h = (null == (n = i.userStatus) ? true : n.enrolledAt) != null, m = f.percentComplete > 0, g = eO(i), E = (0, k.DD)({
     quest: i,
     location: G.dr.QUESTS_BAR,
     questContent: D.jn.QUEST_BAR_V2,
@@ -861,7 +861,7 @@ function eW(e, t) {
   return r.useMemo(() => {
     if (null == n) return null;
     let e = null != t ? t : (0, l.wj)(i) ? B.BRd.DARK : B.BRd.LIGHT;
-    return (0, k.fh)(n, k.eC.COSPONSOR_LOGO_TYPE, e)
+    return (0, j.fh)(n, j.eC.COSPONSOR_LOGO_TYPE, e)
   }, [i, t, n])
 }
 

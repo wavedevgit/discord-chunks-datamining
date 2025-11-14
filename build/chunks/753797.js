@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 753797, original params: e,t,n (module,exports,require) **/
 module.exports = {
   chatIcon: "chatIcon__233f8",

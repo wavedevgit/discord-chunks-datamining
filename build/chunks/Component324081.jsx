@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 324081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -111,7 +111,7 @@ function Z(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, a.e7)([C.default], () => t.isDM() ? C.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, h.x)(t) : i.getAvatarURL(true, 40);
+  } = e, i = (0, a.e7)([C.default], () => t.isDM() ? C.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, f.x)(t) : i.getAvatarURL(true, 40);
   return (0, r.jsx)(s.P3F, {
     onClick: n,
     tabIndex: false,
@@ -145,14 +145,14 @@ function T(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([O.Z], () => O.Z.getChannel(t.parent_id)), u = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, f.ZP)(t, false), h = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
+  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([O.Z], () => O.Z.getChannel(t.parent_id)), u = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, h.ZP)(t, false), f = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(A, {
     channel: t
   }) : (0, r.jsx)(s.P3F, {
     className: l()(S.subtext, S.guildName),
     onClick: n,
-    children: h
+    children: f
   });
   return (0, r.jsxs)("div", {
     className: S.channelNameSection,
@@ -209,21 +209,21 @@ function A(e) {
   } = (0, c.U)({
     location: "RecentsChannelHeader"
   }), {
-    voiceChannel: h
+    voiceChannel: f
   } = (0, d.Z)({
     userId: null == n ? true : n.id
-  }), f = s ? h : true;
+  }), h = s ? f : true;
   return (0, u.Z)({
     activities: l,
     status: i,
     applicationStream: o,
-    voiceChannel: f
+    voiceChannel: h
   }) ? (0, r.jsx)(p.Z, {
     location: "RecentsChannelHeader",
     user: n,
     activities: l,
     applicationStream: o,
-    voiceChannel: f,
+    voiceChannel: h,
     hideTooltip: true
   }) : null
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 91053 **/
 /** chunk id: 23536, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -33,11 +33,11 @@ function _(e) {
       items: null != (e = null == r ? true : r.items) ? e : b,
       state: null != (n = null == r ? true : r.state) ? n : f.M.LOADING
     }
-  }), x = i.useMemo(() => y.map(e => e.message), [y]), j = (0, l.e7)([g.ZP], () => g.ZP.hasUnreadPins(t.id));
+  }), j = i.useMemo(() => y.map(e => e.message), [y]), x = (0, l.e7)([g.ZP], () => g.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
-    j && o.Z.ackPins(t.id)
-  }, [j, t.id]), (0, c.ZP)(() => {
-    x.some(d.k5) && o.Z.fetchPins(t.id, {
+    x && o.Z.ackPins(t.id)
+  }, [x, t.id]), (0, c.ZP)(() => {
+    j.some(d.k5) && o.Z.fetchPins(t.id, {
       reset: true
     })
   });
@@ -56,7 +56,7 @@ function _(e) {
     children: (0, r.jsx)(p.ZP, {
       channel: t,
       onFetch: v,
-      messages: x,
+      messages: j,
       loading: O === f.M.LOADING,
       hasMore: O === f.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",

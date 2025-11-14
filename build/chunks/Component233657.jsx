@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 233657, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -58,8 +58,8 @@ function _(e) {
     hasUnread: y,
     mentionCount: O
   } = (0, i.cj)([u.ZP], () => ({
-    hasUnread: u.ZP.hasUnread(t.id, h.W.GUILD_EVENT),
-    mentionCount: u.ZP.getMentionCount(t.id, h.W.GUILD_EVENT)
+    hasUnread: u.ZP.hasUnread(t.id, f.W.GUILD_EVENT),
+    mentionCount: u.ZP.getMentionCount(t.id, f.W.GUILD_EVENT)
   }), [t.id]), v = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
   async function j() {
     await (0, o.ZDy)(async () => {
@@ -72,9 +72,9 @@ function _(e) {
     }), (0, s.Q3)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
   let x = (0, c.ZP)(t.id),
-    C = x.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSu, {
+    C = x.length > 0 ? h.intl.formatToPlainString(h.t.IBdqSu, {
       number: x.length
-    }) : f.intl.string(f.t.tlopTM);
+    }) : h.intl.string(h.t.tlopTM);
   return (0, r.jsx)(p.m, {
     id: "upcoming-events-".concat(t.id),
     renderIcon: e => (0, r.jsx)(o.Que, {

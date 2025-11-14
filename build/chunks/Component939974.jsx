@@ -1,4 +1,4 @@
-/** Chunk was on 38058 **/
+/** Chunk was on 36113 **/
 /** chunk id: 939974, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk680604 = require("./680604.js");
 
-function v(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function j(e) {
       targetRef: i,
       widget: t,
       additionalMenuItems: l,
-      children: t => (0, r.jsxs)(c.P3F, O(v({
+      children: t => (0, r.jsxs)(c.P3F, v(O({
         innerRef: i,
         className: a()(y.button, n),
         "data-dnd-name": o,
@@ -139,7 +139,7 @@ let x = e => {
         let {
           default: e
         } = await n.e("70887").then(n.bind(n, 37668));
-        return t => (0, r.jsx)(e, O(v({}, t), {
+        return t => (0, r.jsx)(e, v(O({}, t), {
           userId: f.default.getId(),
           widget: i,
           trackUserProfileEditAction: o

@@ -45,9 +45,9 @@ let P = new Chunk710845.Z("ConnectionStore"),
   x = null,
   L = true,
   M = null,
-  j = null;
+  k = null;
 
-function k() {
+function j() {
   return Chunk955132.Wb.isClosed() ? (P.verbose("Socket is reconnecting because of starting new session"), Chunk955132.Wb.connect()) : (P.verbose("Socket is not reconnecting during a new session because it is not closed"), false)
 }
 
@@ -75,7 +75,7 @@ async function B(e) {
       })
     }
   }
-  I.GC.update(t, true), L = false, j = null
+  I.GC.update(t, true), L = false, k = null
 }
 
 function Z() {
@@ -83,7 +83,7 @@ function Z() {
 }
 
 function F() {
-  j = null
+  k = null
 }
 
 function V(e) {
@@ -94,7 +94,7 @@ function H(e) {
   return I.GC.update({
     guildId: e.guildId,
     channelId: e.channelId
-  }), j = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, O.isIOS)() && M === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(true) : I.Wb.isClosed() && (T.Y(false), I.Wb.connect())), false
+  }), k = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, O.isIOS)() && M === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(true) : I.Wb.isClosed() && (T.Y(false), I.Wb.connect())), false
 }
 
 function Y() {
@@ -113,7 +113,7 @@ function K(e) {
   return t.reduce((e, t) => {
     if (f.default.getId() !== t.userId) return e;
     if (t.sessionId === x) {
-      if (null != j) return P.verbose("Ignoring voice state for own session due to VSU lock on channel:", j), e;
+      if (null != k) return P.verbose("Ignoring voice state for own session due to VSU lock on channel:", k), e;
       I.GC.setState({
         guildId: t.guildId,
         channelId: t.channelId
@@ -141,7 +141,7 @@ function q(e) {
     channelId: t
   } = e;
   if (t === I.GC.channelId) {
-    if (j === t) returnfalse;
+    if (k === t) returnfalse;
     I.GC.setState({
       guildId: null,
       channelId: null
@@ -327,7 +327,7 @@ class eE extends(r = Chunk442837.ZP.Store) {
 }
 N(eE, "displayName", "GatewayConnectionStore");
 let eb = new eE(Chunk570140.Z, {
-  START_SESSION: k,
+  START_SESSION: j,
   LOGIN_SUCCESS: G,
   LOGOUT: U,
   CLEAR_CACHES: V,

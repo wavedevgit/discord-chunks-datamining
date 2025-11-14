@@ -46,7 +46,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,7 +71,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -79,10 +79,10 @@ function U(e, t) {
 function G(e) {
   var t, n, a, M;
   let {
-    embedUrl: k,
+    embedUrl: j,
     message: G,
     channel: B
-  } = e, Z = i.useRef(null), F = i.useRef(null), V = (0, R.J)(k, G), {
+  } = e, Z = i.useRef(null), F = i.useRef(null), V = (0, R.J)(j, G), {
     setPopout: H
   } = (0, b.Z)(G.id, D.d$), Y = (0, E.qo)(G, B, H, true), W = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [X, Q] = i.useState((null == V ? true : V.coverImage) == null), J = (0, c.e7)([I.ZP, T.default], () => {
     var e;
@@ -130,7 +130,7 @@ function G(e) {
       roleId: er,
       avatarUrl: V.avatarUrl,
       newAnalyticsLocations: [d.Z.USERNAME],
-      children: e => (0, r.jsx)(u.rz2, U(j({}, e), {
+      children: e => (0, r.jsx)(u.rz2, U(k({}, e), {
         ref: Z,
         name: V.authorName,
         colorString: et,
@@ -212,7 +212,7 @@ function G(e) {
           children: e => (0, r.jsx)("div", {
             onMouseEnter: e_,
             onMouseLeave: e_,
-            children: (0, r.jsx)(u.qEK, U(j({}, e), {
+            children: (0, r.jsx)(u.qEK, U(k({}, e), {
               ref: F,
               size: u.EFr.SIZE_40,
               src: ef,

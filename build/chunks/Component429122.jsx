@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 429122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => _,
@@ -42,15 +42,15 @@ function m(e) {
   let {
     hasDivider: c,
     canHaveVoiceSummary: p
-  } = (0, d.ie)(n, o, t), f = c ? a ? 9 : h.QP : 0;
-  if (!p || t === u.wZ) return f;
+  } = (0, d.ie)(n, o, t), h = c ? a ? 9 : f.QP : 0;
+  if (!p || t === u.wZ) return h;
   let g = n.getNamedCategoryFromSection(t);
-  return null == g ? f : (0, d.V5)({
+  return null == g ? h : (0, d.V5)({
     category: g,
     selectedChannelId: i,
     selectedVoiceChannelId: l,
     voiceStates: r
-  }) ? (a ? "cozy" === s ? 42 : 34 : h.Vf) + f : f
+  }) ? (a ? "cozy" === s ? 42 : 34 : f.Vf) + h : h
 }
 
 function b(e, t, n) {
@@ -66,7 +66,7 @@ let _ = Chunk647438.memo(function(e) {
     sectionIndex: t,
     guildChannels: n,
     guildChannelsVersion: p,
-    voiceStates: h,
+    voiceStates: f,
     guildId: m,
     selectedChannelId: b,
     selectedVoiceChannelId: _,
@@ -88,18 +88,18 @@ let _ = Chunk647438.memo(function(e) {
     channels: C,
     selectedChannelId: b,
     selectedVoiceChannelId: _,
-    voiceStates: h
-  }), [C, b, _, h]);
+    voiceStates: f
+  }), [C, b, _, f]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(g, {
     guildChannels: n,
     guildChannelsVersion: p
   });
   let S = O ? (0, r.jsx)("div", {
-    className: f.sectionDivider
+    className: h.sectionDivider
   }) : null;
   return v && 0 !== E.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: f.voiceUserSummary,
+      className: h.voiceUserSummary,
       children: (0, r.jsx)(o.ZP, {
         renderIcon: true,
         users: E,

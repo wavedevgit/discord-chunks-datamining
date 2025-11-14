@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 289481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -60,7 +60,7 @@ let S = Chunk647438.memo(function(e) {
     }
     let {
       opacity: p,
-      size: h
+      size: f
     } = (0, d.q_F)({
       config: {
         clamp: true,
@@ -72,16 +72,16 @@ let S = Chunk647438.memo(function(e) {
       onRest: () => {
         n(t.channelId)
       }
-    }, "animate-always"), f = {
+    }, "animate-always"), h = {
       opacity: p,
-      height: h.to(e => {
+      height: f.to(e => {
         var t, n;
         return u ? (t = o, (n = s) + (t - n) * e) : "auto"
       })
     };
     return (0, r.jsx)(a.animated.div, {
       ref: l,
-      style: f,
+      style: h,
       children: (0, r.jsx)(I, E({}, e))
     })
   }),
@@ -94,7 +94,7 @@ let S = Chunk647438.memo(function(e) {
     } = e, a = (0, c.e7)([m.Z], () => m.Z.getChannel(t.channelId));
     if (i.useEffect(() => {
         null == a || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || p.Z.wait(() => {
-          (0, h.ack)(t.channelId, {
+          (0, f.ack)(t.channelId, {
             section: j.jXE.INBOX,
             object: j.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
             objectType: j.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -102,7 +102,7 @@ let S = Chunk647438.memo(function(e) {
         })
       }), null == a || !t.hasLoadedAnything) return null;
     let s = (e, r) => {
-      (0, f.yw)(j.rMx.INBOX_CHANNEL_CLICKED, {
+      (0, h.yw)(j.rMx.INBOX_CHANNEL_CLICKED, {
         channel_id: t.channelId,
         guild_id: t.guildId
       });
@@ -154,7 +154,7 @@ function P(e) {
       color: "currentColor"
     }),
     onClick: function() {
-      o && null != t.guildId ? i(t.guildId) : n(t), (0, f.yw)(j.rMx.INBOX_CHANNEL_ACKED, {
+      o && null != t.guildId ? i(t.guildId) : n(t), (0, h.yw)(j.rMx.INBOX_CHANNEL_ACKED, {
         channel_id: t.channelId,
         guild_id: t.guildId,
         marked_all_channels_as_read: false,
@@ -177,7 +177,7 @@ function N(e) {
         [C.collapsed]: t.collapsed
       }),
       onClick: function() {
-        n(t), (0, f.yw)(j.rMx.INBOX_CHANNEL_COLLAPSED, {
+        n(t), (0, h.yw)(j.rMx.INBOX_CHANNEL_COLLAPSED, {
           channel_id: t.channelId,
           guild_id: t.guildId,
           num_unread_channels_remaining: i(),

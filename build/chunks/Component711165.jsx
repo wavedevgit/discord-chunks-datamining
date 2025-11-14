@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 711165, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _: () => w
@@ -196,7 +196,7 @@ let R = Chunk647438.memo(function(e) {
       default:
         (0, C.vE)(e)
     }
-  }(t.state), h = i.useCallback(() => {
+  }(t.state), f = i.useCallback(() => {
     (0, m.gD)(t.scheduledMessageId).then(() => {
       (0, y.C$)()
     }).catch(e => {
@@ -222,7 +222,7 @@ let R = Chunk647438.memo(function(e) {
         children: d
       }), (0, r.jsxs)("div", {
         className: N.channelMessageAndButtons,
-        children: [(0, r.jsx)(f.Z, {
+        children: [(0, r.jsx)(h.Z, {
           message: a,
           channel: n,
           className: N.message,
@@ -238,7 +238,7 @@ let R = Chunk647438.memo(function(e) {
             "aria-label": P.intl.string(P.t.SBcdAN)
           }), (0, r.jsx)(u.hU, {
             icon: p.k$p,
-            onClick: h,
+            onClick: f,
             "aria-label": P.intl.string(P.t.O3sL8F),
             variant: "icon-only"
           })]

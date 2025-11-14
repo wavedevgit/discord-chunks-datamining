@@ -72,7 +72,7 @@ class v extends(o = Chunk442837.ZP.Store) {
     return null != e ? f.get(e) : true
   }
   getPurchases(e) {
-    return null != e ? e.map(e => f.get(e)).filter(e => null != e) : true
+    return e.map(e => f.get(e)).filter(e => null != e)
   }
 }
 u(v, "displayName", "CollectiblesPurchaseStore");

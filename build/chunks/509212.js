@@ -26,7 +26,7 @@ require.d(exports, {
   K: () => eM,
   KM: () => eK,
   Kr: () => eR,
-  LM: () => ej,
+  LM: () => ek,
   Mo: () => tK,
   NI: () => tW,
   NL: () => tX,
@@ -47,7 +47,7 @@ require.d(exports, {
   WP: () => ed,
   Xh: () => eb,
   Xv: () => ew,
-  ZS: () => tk,
+  ZS: () => tj,
   ZZ: () => et,
   Zp: () => tL,
   _D: () => ee,
@@ -78,7 +78,7 @@ require.d(exports, {
   uN: () => tV,
   vB: () => tz,
   vQ: () => ex,
-  vR: () => ek,
+  vR: () => ej,
   wj: () => eL,
   xN: () => eD,
   xn: () => eC,
@@ -213,7 +213,7 @@ function et(e, t) {
 }
 
 function en(e, t) {
-  let n = j.r.build(t.config).applications;
+  let n = k.r.build(t.config).applications;
   return null != n && n.some(t => t.id === e)
 }
 
@@ -250,7 +250,7 @@ function eo(e) {
 function es(e) {
   return (0, a.EQ)(e).with({
     config_version: 2
-  }, e => (0, k.Q)(e)).exhaustive()
+  }, e => (0, j.Q)(e)).exhaustive()
 }
 
 function el(e) {
@@ -348,7 +348,7 @@ function ep(e) {
       secondary: e.colors.secondary
     },
     rewards: e.rewards.map(e_),
-    cosponsorMetadata: (0, k.s)(e.cosponsor_metadata)
+    cosponsorMetadata: (0, j.s)(e.cosponsor_metadata)
   }
 }
 
@@ -536,12 +536,12 @@ function eM(e) {
   return null != (t = e.rewardsConfig.rewards.find(e => e.type === c.w.IN_GAME)) ? t : null
 }
 
-function ej(e) {
+function ek(e) {
   let t = e.rewardsConfig.rewards.find(e => e.type === c.w.VIRTUAL_CURRENCY);
   return null == t ? true : t.orbQuantity
 }
 
-function ek(e, t) {
+function ej(e, t) {
   return e.targetedContent.includes(t)
 }
 
@@ -601,17 +601,17 @@ function eY(e) {
 
 function eW(e) {
   if (!(0, M.CD)("QuestUtils") || null == e) returnfalse;
-  let t = j.r.build(e.config).applications;
+  let t = k.r.build(e.config).applications;
   return null != t && t.length > 1
 }
 
 function eK(e) {
-  let t = j.r.build(e.config).application.id;
+  let t = k.r.build(e.config).application.id;
   return eH(e) && t === U.Ts
 }
 
 function ez(e, t) {
-  return j.r.build(e.config).features.has(t)
+  return k.r.build(e.config).features.has(t)
 }
 
 function eq(e) {
@@ -631,7 +631,7 @@ function eX(e) {
 }
 
 function eQ(e, t) {
-  let n = j.r.build(e.config).ctaLink,
+  let n = k.r.build(e.config).ctaLink,
     r = eX(e);
   null != r && (n = r), (0, D._3)({
     questId: e.id,
@@ -764,7 +764,7 @@ let e0 = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
 
 function te(e) {
   var t, n, r, i;
-  let a = j.r.build(e.config).defaultInGameTask;
+  let a = k.r.build(e.config).defaultInGameTask;
   if (null == a) return null;
   let o = null != (i = null == (r = e.userStatus) || null == (n = r.progress) || null == (t = n[a.type]) ? true : t.value) ? i : 0,
     s = e0(a.target, o);
@@ -1011,11 +1011,11 @@ function tM(e) {
   let t = tL(e);
   return null != t && U.v6.has(t)
 }
-let tj = "landscape";
+let tk = "landscape";
 
-function tk(e) {
+function tj(e) {
   let t = e.assets.video;
-  return null == t || null == t.width || null == t.height ? tj : t.width > t.height ? "landscape" : "portrait"
+  return null == t || null == t.width || null == t.height ? tk : t.width > t.height ? "landscape" : "portrait"
 }
 let tU = e => e.percentComplete > 0 ? Z.intl.formatToPlainString(Z.t["c59/Tp"], {
   remainTime: to(e)
@@ -1029,7 +1029,7 @@ function tG(e, t) {
 
 function tB(e) {
   var t, n, r, i;
-  let a = j.r.build(e).defaultWatchVideoTask;
+  let a = k.r.build(e).defaultWatchVideoTask;
   return null != (i = null != (r = null != (n = null == (t = e.ctaConfig) ? true : t.buttonLabel) ? n : null == a ? true : a.messages.videoEndCtaButtonLabel) ? r : null == a ? true : a.messages.videoEndCtaTitle) ? i : Z.intl.string(Z.t.iiTtpJ)
 }
 

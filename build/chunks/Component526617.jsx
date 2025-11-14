@@ -255,22 +255,22 @@ function eu(e) {
     categories: ew,
     allSounds: ex,
     soundCounts: eL
-  } = (0, B.ZP)(a, {}, e_), [eM, ej] = i.useState([]), ek = (0, B.FS)(ew, eM, eN), eU = (0, b.Iu)(e => e.isNitroLockedSectionVisible), [eG, eB] = i.useState(false), eZ = i.useMemo(() => ek.filter(e => e.items.length > 0), [ek]), eF = i.useMemo(() => eZ.findLastIndex(e => !!(0, w._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), [eZ]), eV = !eS && J && false !== eF, eH = i.useMemo(() => eV ? [0, 0, 8, 0] : [0, 0, 0, 0], [eV]), eY = A.T4.useSetting(), eW = i.useMemo(() => new Set(eY), [eY]), eK = null == a, ez = w.ZP.canUseCustomCallSounds(eT), eq = i.useCallback(e => {
+  } = (0, B.ZP)(a, {}, e_), [eM, ek] = i.useState([]), ej = (0, B.FS)(ew, eM, eN), eU = (0, b.Iu)(e => e.isNitroLockedSectionVisible), [eG, eB] = i.useState(false), eZ = i.useMemo(() => ej.filter(e => e.items.length > 0), [ej]), eF = i.useMemo(() => eZ.findLastIndex(e => !!(0, w._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), [eZ]), eV = !eS && J && false !== eF, eH = i.useMemo(() => eV ? [0, 0, 8, 0] : [0, 0, 0, 0], [eV]), eY = A.T4.useSetting(), eW = i.useMemo(() => new Set(eY), [eY]), eK = null == a, ez = w.ZP.canUseCustomCallSounds(eT), eq = i.useCallback(e => {
     eW.has(e) ? eW.delete(e) : eW.add(e), A.T4.updateSetting(Array.from(eW))
   }, [eW]), eX = i.useCallback((e, t, n, r) => {
     if (null != I && !P) return I(e, n);
-    let i = (0, j.Nq)(eT, e, a, false);
+    let i = (0, k.Nq)(eT, e, a, false);
     if (null != I && P && i) I(e, n);
-    else if (!X && i && (0, j.C0)(a)) {
+    else if (!X && i && (0, k.C0)(a)) {
       var o;
-      (0, j.GN)(e, null != (o = null == a ? true : a.id) ? o : Y.lds, t, r), eR && D.default.track(Y.rMx.SEARCH_RESULT_SELECTED, {
+      (0, k.GN)(e, null != (o = null == a ? true : a.id) ? o : Y.lds, t, r), eR && D.default.track(Y.rMx.SEARCH_RESULT_SELECTED, {
         search_type: Y.aib.SOUNDBOARD,
         channel_id: null == a ? true : a.id,
         query: eN,
         location_stack: t
       })
     } else {
-      if ((0, j.Nq)(eT, e, a)) return;
+      if ((0, k.Nq)(eT, e, a)) return;
       J && eI(e)
     }
   }, [X, eT, a, J, eR, eN, I, P]), eQ = i.useCallback((e, t) => {
@@ -372,7 +372,7 @@ function eu(e) {
         [q.brandRefresh]: em
       })
     }) : null
-  }, [eF, eV, eZ.length, em]), e6 = i.useCallback(e => ej((0, G.cK)(e, Array.from(ex.values()).flat(), eT, a, eE)), [a, eT, ex, eE]), e7 = i.useCallback(e => {
+  }, [eF, eV, eZ.length, em]), e6 = i.useCallback(e => ek((0, G.cK)(e, Array.from(ex.values()).flat(), eT, a, eE)), [a, eT, ex, eE]), e7 = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -442,7 +442,7 @@ function eu(e) {
   }, []), ti = "https://cdn.discordapp.com/assets/premium/roadblocks/soundboard_dark.png", ta = i.useCallback(() => {
     var e;
     let t = L.Z.getSoundById(ea),
-      n = new Audio((0, k.Z)(ea));
+      n = new Audio((0, j.Z)(ea));
     null != eg.current && eg.current.pause(), eg.current = n, n.currentTime = 0, n.volume = (0, U.Z)(null != (e = null == t ? true : t.volume) ? e : 1), n.play()
   }, [eg]), to = (0, l.e7)([C.Z], () => C.Z.getMediaSessionId());
   return (0, h.Z)({

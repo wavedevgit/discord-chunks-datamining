@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 223730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S$: () => m,
@@ -51,7 +51,7 @@ function _(e) {
     },
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
-      children: f.intl.string(n ? h.default["3GrhnF"] : h.default["54ycKJ"])
+      children: h.intl.string(n ? f.default["3GrhnF"] : f.default["54ycKJ"])
     }), (0, r.jsx)(d.c, {
       guildIds: p
     })]

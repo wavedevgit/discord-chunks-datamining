@@ -178,13 +178,13 @@ function Q(e) {
     x = "location" in c ? 2 : 1,
     M = y.default.getCurrentUser();
   if (null == M) return;
-  let j = C.ZP.getShelfActivities(I),
-    k = S.Z.getState().shelfOrder,
+  let k = C.ZP.getShelfActivities(I),
+    j = S.Z.getState().shelfOrder,
     G = (0, N.Z)({
       applicationId: r,
-      activityConfigs: j
+      activityConfigs: k
     }),
-    B = 1 + k.findIndex(e => e === r),
+    B = 1 + j.findIndex(e => e === r),
     {
       releasePhase: Z
     } = Y(G),
@@ -257,7 +257,7 @@ class $ extends Chunk317770.Z {
         }
         of C.ZP.getSelfEmbeddedActivities().values()) {
         let r = (0, L.p)(t);
-        null != r && (0, k.Z)(r) && r !== e && this.leaveActivity({
+        null != r && (0, j.Z)(r) && r !== e && this.leaveActivity({
           location: t,
           applicationId: n
         })
@@ -370,7 +370,7 @@ class $ extends Chunk317770.Z {
       if ((null == u ? true : u.applicationId) === a) return;
       let d = await f.ZP.fetchApplication(a);
       if (!(0, w.a)()) return void this.showLaunchErrorModal(G.intl.string(G.t.UXoQTp));
-      if (!(0, j.Z)(null == d || null == (t = d.embedded_activity_config) ? true : t.supported_platforms)) return void this.showLaunchErrorModal(G.intl.string(G.t.uGDCcw));
+      if (!(0, k.Z)(null == d || null == (t = d.embedded_activity_config) ? true : t.supported_platforms)) return void this.showLaunchErrorModal(G.intl.string(G.t.uGDCcw));
       let _ = null != (n = null == c ? true : c.getGuildId()) ? n : true,
         {
           activityConfigs: p,

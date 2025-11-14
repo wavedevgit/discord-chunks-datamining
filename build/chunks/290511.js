@@ -23,8 +23,8 @@ require.d(exports, {
   l7: () => O,
   md: () => E,
   qm: () => p,
-  rZ: () => k,
-  t9: () => j,
+  rZ: () => j,
+  t9: () => k,
   yZ: () => C,
   yx: () => h,
   zz: () => T
@@ -199,16 +199,16 @@ function M(e) {
   } : null
 }
 
-function j(e) {
+function k(e) {
   let t = [];
   return 0 !== e.connection_type && 1 !== e.connection_type ? t.push("Invalid connection type") : (0 === e.connection_type ? ((0, a.Ew)(e.application_id) && t.push("Application ID is required for application connections"), (0, a.Ew)(e.provider_id) || t.push("Platform ID not allowed for application connections")) : 1 === e.connection_type && ((0, a.Ew)(e.provider_id) ? t.push("Platform ID is required for platform connections") : x.includes(e.provider_id) || t.push("Invalid platform ID"), (0, a.Ew)(e.application_id) || t.push("Application ID not allowed for platform connections")), null != e.description && e.description.length > m && t.push("Description must be ".concat(m, " characters or less"))), t
 }
 
-function k(e) {
+function j(e) {
   let t = [],
     n = new Set;
   for (let [r, i] of e.entries()) {
-    let e = j(i);
+    let e = k(i);
     t.push(...e.map(e => "Connection ".concat(r + 1, ": ").concat(e)));
     let a = L(i);
     n.has(a) && t.push("Duplicate connection configuration"), n.add(a)

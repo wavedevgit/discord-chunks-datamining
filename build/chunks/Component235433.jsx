@@ -47,10 +47,10 @@ function v(e) {
     })
   }, [S, w, n]), M = (0, i.useCallback)(() => {
     (0, s.NI)(null), _.default.track(g.rMx.DISPLAY_NAME_STYLES_REMOVED)
-  }, []), j = (0, i.useCallback)(() => {
+  }, []), k = (0, i.useCallback)(() => {
     (0, f.N_)(null)
-  }, []), k = true !== N || (null != n ? null != C : null != A);
-  if (!I && !k) return null;
+  }, []), j = true !== N || (null != n ? null != C : null != A);
+  if (!I && !j) return null;
   let U = true !== N ? N : C;
   return (0, r.jsx)(m.Z, {
     title: b.intl.string(y.default["86GtGH"]),
@@ -68,7 +68,7 @@ function v(e) {
         size: "sm",
         text: b.intl.string(y.default.vJqrIg),
         onClick: L
-      }), null == n && k && (0, r.jsx)(o.Button, {
+      }), null == n && j && (0, r.jsx)(o.Button, {
         variant: "secondary",
         size: "sm",
         text: b.intl.string(y.default.ymq8WQ),
@@ -77,7 +77,7 @@ function v(e) {
         variant: "secondary",
         size: "sm",
         text: b.intl.string(y.default["j/KRxc"]),
-        onClick: j
+        onClick: k
       })]
     })
   })

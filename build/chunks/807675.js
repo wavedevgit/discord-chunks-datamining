@@ -4,7 +4,7 @@
 require.d(exports, {
   K: () => d,
   y: () => _
-}), require("./539854.js"), require("./35282.js");
+}), require("./539854.js"), require("./704826.js"), require("./35282.js");
 var Chunk593473 = require("./593473.js"),
   Chunk243814 = require("./243814.js"),
   Chunk149765 = require("./149765.js"),
@@ -36,7 +36,7 @@ function _(e) {
     h = f(null != (i = null != (n = d.guild_id) ? n : null == (t = o.Z.getChannel(p)) ? true : t.guild_id) ? i : s.Z.getGuildId());
   return {
     clientId: null != (c = d.client_id) ? c : "",
-    scopes: (null != (u = d.scope) ? u : "").split(" ").filter(e => e.length > 0),
+    scopes: (null != (u = d.scope) ? u : "").replace(/\+/g, " ").split(" ").filter(e => e.length > 0),
     responseType: d.response_type,
     redirectUri: d.redirect_uri,
     codeChallenge: d.code_challenge,

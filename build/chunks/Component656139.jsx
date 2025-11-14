@@ -77,7 +77,7 @@ let A = e => {
           }
         })
       })
-    }, j = e => {
+    }, k = e => {
       let {
         eligibleRecipients: t
       } = e;
@@ -128,7 +128,7 @@ let A = e => {
       actionBarInput: M({
         eligibleRecipients: x
       }),
-      children: j({
+      children: k({
         eligibleRecipients: x
       })
     })

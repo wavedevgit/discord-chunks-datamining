@@ -82,7 +82,7 @@ function R() {
   }), L = (0, Chunk924557.PP)();
   o()(null != R, "Save clip keybind unset"), o()(null != P, "Save screenshot keybind unset");
   let M = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    j = Chunk647438.useMemo(() => [{
+    k = Chunk647438.useMemo(() => [{
       value: Chunk356659.OT.SECONDS_30,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv/3"], {
         count: 30
@@ -98,7 +98,7 @@ function R() {
         count: 2
       })
     }], [M]),
-    k = Chunk647438.useMemo(() => [{
+    j = Chunk647438.useMemo(() => [{
       value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_480,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
         resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_480
@@ -182,7 +182,7 @@ function R() {
       label: Chunk388032.intl.string(Chunk388032.t.OgfUio),
       description: Chunk388032.intl.string(Chunk388032.t.H7j4tY),
       value: Chunk512722,
-      options: j
+      options: k
     }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
       onChange: e => b.yi({
         resolution: e,
@@ -191,7 +191,7 @@ function R() {
       label: Chunk388032.intl.string(Chunk388032.t.aFudZJ),
       description: Chunk388032.intl.string(Chunk388032.t.nIrkW5),
       value: S.resolution,
-      options: k
+      options: j
     }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
       onChange: e => b.yi({
         resolution: S.resolution,

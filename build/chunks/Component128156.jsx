@@ -1,4 +1,4 @@
-/** Chunk was on 38058 **/
+/** Chunk was on 36113 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -49,15 +49,15 @@ function w(e) {
     stream: Z
   } = (0, g.Z)(t.id), {
     voiceChannel: R,
-    voiceActivity: G
+    voiceActivity: L
   } = (0, p.Z)({
     userId: t.id,
     guildId: S
-  }), L = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, M = (0, i.e7)([u.Z, s.Z], () => {
-    let e = B ? u.Z.getStatus() : s.Z.getStatus(t.id);
+  }), M = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), G = t.id === n.id, B = (0, i.e7)([u.Z, s.Z], () => {
+    let e = G ? u.Z.getStatus() : s.Z.getStatus(t.id);
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), U = N.length > 0 || null != Z, F = D && null == Z && null == G && null != R, W = !M && (U || F), H = A.length > 0;
-  if (!W && !H && L) return (0, r.jsx)("div", {
+  }), U = N.length > 0 || null != Z, F = D && null == Z && null == L && null != R, W = !B && (U || F), H = A.length > 0;
+  if (!W && !H && M) return (0, r.jsx)("div", {
     className: I.cards,
     children: Array.from({
       length: 8
@@ -72,11 +72,11 @@ function w(e) {
       })]
     }, t))
   });
-  if (!W && !H && !L) {
+  if (!W && !H && !M) {
     var z;
-    return B ? (0, r.jsx)(v.Uf, {
+    return G ? (0, r.jsx)(O.Uf, {
       onClose: C
-    }) : (0, r.jsx)(v.P9, {
+    }) : (0, r.jsx)(O.P9, {
       user: t,
       guildId: null != (z = null == w ? true : w.guildId) ? z : S,
       channelId: E,
@@ -86,7 +86,7 @@ function w(e) {
   return (0, r.jsxs)(j.F, {
     className: I.scroller,
     fade: true,
-    children: [W ? (0, r.jsx)(O.Z, {
+    children: [W ? (0, r.jsx)(v.Z, {
       heading: P.intl.string(P.t.J6STd9),
       children: (0, r.jsxs)("ul", {
         className: I.cards,
@@ -120,9 +120,9 @@ function w(e) {
           })
         })]
       })
-    }) : null, H ? (0, r.jsx)(O.Z, {
+    }) : null, H ? (0, r.jsx)(v.Z, {
       heading: P.intl.string(P.t.jzgEoL),
-      introText: B ? P.intl.format(P.t["4bk9Ak"], {
+      introText: G ? P.intl.format(P.t["4bk9Ak"], {
         learnMoreHook: (e, t) => (0, r.jsx)(a.Anchor, {
           href: d.Z.getArticleURL(_.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e

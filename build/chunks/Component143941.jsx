@@ -133,26 +133,26 @@ function R(e) {
     nuxGraphic: T
   } = e, [A, N] = (0, _.US)([l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), R = A === l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
     analyticsLocations: P
-  } = (0, d.ZP)(), D = g.default.getCurrentUser(), w = null != D ? p.Z.getFirstWishlistId(D.id) : null, x = (0, m.ny)(w, t), L = i.useRef(null), [M, j] = i.useState(null);
+  } = (0, d.ZP)(), D = g.default.getCurrentUser(), w = null != D ? p.Z.getFirstWishlistId(D.id) : null, x = (0, m.ny)(w, t), L = i.useRef(null), [M, k] = i.useState(null);
   i.useEffect(() => {
-    j(null)
+    k(null)
   }, [t]);
-  let k = null !== M ? M : x,
+  let j = null !== M ? M : x,
     U = (0, f.X)(L),
-    G = k ? u.h_8 : u.Pzh,
-    B = k || U ? I.wishlistedOrHoveredIconColor : I.normalIconColor,
+    G = j ? u.h_8 : u.Pzh,
+    B = j || U ? I.wishlistedOrHoveredIconColor : I.normalIconColor,
     Z = i.useCallback(async e => {
-      if (e.stopPropagation(), k && null != w) {
-        j(false);
+      if (e.stopPropagation(), j && null != w) {
+        k(false);
         try {
-          await h.Z.removeSkuFromWishlist(w, t, P), j(null)
+          await h.Z.removeSkuFromWishlist(w, t, P), k(null)
         } catch (e) {
-          j(null), (0, u.showToast)((0, u.createToast)(v.intl.string(v.t.F8FvUy), u.ToastType.FAILURE)), u.uvj.announce(v.intl.string(v.t.F8FvUy))
+          k(null), (0, u.showToast)((0, u.createToast)(v.intl.string(v.t.F8FvUy), u.ToastType.FAILURE)), u.uvj.announce(v.intl.string(v.t.F8FvUy))
         }
       } else {
-        j(true);
+        k(true);
         try {
-          await h.Z.addSkuToWishlist(t, P), j(null), R && null != T && ((0, u.ZDy)(async () => {
+          await h.Z.addSkuToWishlist(t, P), k(null), R && null != T && ((0, u.ZDy)(async () => {
             let {
               default: e
             } = await n.e("36340").then(n.bind(n, 874533));
@@ -161,12 +161,12 @@ function R(e) {
             }))
           }), N(O.L.USER_DISMISS))
         } catch (e) {
-          j(null), (0, u.showToast)((0, u.createToast)(v.intl.string(v.t.F8FvUy), u.ToastType.FAILURE)), u.uvj.announce(v.intl.string(v.t.F8FvUy))
+          k(null), (0, u.showToast)((0, u.createToast)(v.intl.string(v.t.F8FvUy), u.ToastType.FAILURE)), u.uvj.announce(v.intl.string(v.t.F8FvUy))
         }
       }
-    }, [k, w, t, P, R, T, N]),
-    F = k ? v.intl.string(v.t.yr9TTf) : v.intl.string(v.t["8DkMEQ"]);
-  return (b || k) && null != D ? E ? (0, r.jsx)(c.u, {
+    }, [j, w, t, P, R, T, N]),
+    F = j ? v.intl.string(v.t.yr9TTf) : v.intl.string(v.t["8DkMEQ"]);
+  return (b || j) && null != D ? E ? (0, r.jsx)(c.u, {
     text: null != y ? y : F,
     "aria-label": null != y ? y : F,
     children: (0, r.jsx)(u.P3F, {

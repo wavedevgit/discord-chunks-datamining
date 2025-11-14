@@ -44,8 +44,8 @@ function L(e) {
     onNext: s,
     legalTermsNodeRef: L,
     flashLegalTerms: M,
-    invoiceError: j,
-    planError: k,
+    invoiceError: k,
+    planError: j,
     onPurchaseError: U,
     baseAnalyticsData: G,
     flowStartTime: B,
@@ -101,13 +101,13 @@ function L(e) {
     ex = (0, m.U)(),
     eL = (0, c.e7)([C.Z], () => C.Z.currentOrderId),
     eM = null,
-    ej = null;
+    ek = null;
   if (et === P.GZQ.ONE_TIME) {
-    var ek;
-    l()(null != ei, "SKU must be selected for one-time purchases"), eM = null != (ek = ea[ei]) ? ek : null, l()(null != eM, "SKU must exist and be fetched.");
+    var ej;
+    l()(null != ei, "SKU must be selected for one-time purchases"), eM = null != (ej = ea[ei]) ? ej : null, l()(null != eM, "SKU must exist and be fetched.");
     let e = eo[ei],
       t = null != en ? en : y.c;
-    ej = null != e ? e[t] : null
+    ek = null != e ? e[t] : null
   }
   let eU = (0, _.Iw)(et === P.GZQ.ONE_TIME ? f.Z.getProduct(ei) : true),
     eG = null !== eU,
@@ -135,7 +135,7 @@ function L(e) {
         onNext: s,
         metadata: W,
         sku: eM,
-        skuPricePreview: ej,
+        skuPricePreview: ek,
         purchaseType: et,
         referralCode: es,
         loadId: el.loadId,
@@ -176,8 +176,8 @@ function L(e) {
       className: w.discountFooterBackground
     }), (0, r.jsx)(b.Z, {
       legalTermsNodeRef: L,
-      invoiceError: j,
-      planError: k,
+      invoiceError: k,
+      planError: j,
       disablePurchase: z,
       flashLegalTerms: M,
       isSubmitting: eA,

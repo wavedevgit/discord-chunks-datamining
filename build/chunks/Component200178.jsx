@@ -23,7 +23,7 @@ function p() {
       value: a,
       idx: t
     }
-  }), [], Chunk442837.pF), r = Chunk647438.useMemo(() => 0 === module.length ? require : require.filter(t => {
+  }), [], Chunk442837.pF), i = Chunk647438.useMemo(() => 0 === module.length ? require : require.filter(t => {
     let {
       word: n
     } = t;
@@ -79,7 +79,7 @@ function p() {
               let {
                 word: t,
                 value: n,
-                idx: i
+                idx: r
               } = e;
               return (0, a.jsxs)("div", {
                 className: l()(u.tableRow, m.tableRow),
@@ -87,7 +87,7 @@ function p() {
                   className: m.indexColumn,
                   children: (0, a.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    children: i + 1
+                    children: r + 1
                   })
                 }), (0, a.jsx)("div", {
                   className: m.wordColumn,
@@ -102,7 +102,7 @@ function p() {
                     children: n
                   })
                 })]
-              }, "".concat(t, "-").concat(i))
+              }, "".concat(t, "-").concat(r))
             })]
           })
         })

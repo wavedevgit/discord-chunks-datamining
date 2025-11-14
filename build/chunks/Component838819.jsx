@@ -58,7 +58,7 @@ let H = e => {
       tab: t = A.AW.HOME
     } = e;
     (0, h.z)(f.f), (0, O.f)();
-    let n = (0, p.Z)((0, o.Z)()),
+    let n = (0, g.Z)((0, o.Z)()),
       i = (0, s.e7)([m.default], () => m.default.getCurrentUser());
     (0, C.p2)();
     let c = (0, P.B)("CollectiblesShop"),
@@ -113,7 +113,7 @@ let H = e => {
     let {
       analyticsLocations: er
     } = (0, x.MV)(Q);
-    return (0, r.jsx)(g.Gt, {
+    return (0, r.jsx)(p.Gt, {
       value: er,
       children: (0, r.jsx)(_.k0, {
         newValue: {

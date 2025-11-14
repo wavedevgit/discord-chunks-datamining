@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Ds: () => U,
-  YB: () => j,
+  YB: () => k,
   of: () => G,
-  q5: () => k
+  q5: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -56,7 +56,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   var t, n, i;
   let {
     channel: a,
@@ -66,8 +66,8 @@ function j(e) {
     onMouseLeave: N,
     onJumpToChannel: w,
     idle: M,
-    selectedParticipant: j,
-    embeddedActivity: k
+    selectedParticipant: k,
+    embeddedActivity: j
   } = e, U = (0, p.bp)() === P.IlC.POPOUT, G = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), B = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), Z = false === (null == (t = null == B ? true : B.disabled) || t), F = (0, u.Z)([s])[0], V = (0, m.Z)(a), {
     parentAnalyticsLocation: H
   } = (0, c.ZP)(), Y = e => {
@@ -113,7 +113,7 @@ function j(e) {
             channelId: a.id,
             guildId: a.getGuildId(),
             className: L.__invalid_leftTrayIcon,
-            participant: j,
+            participant: k,
             compact: true
           })
         })]
@@ -130,7 +130,7 @@ function j(e) {
           onClosePopout: D.Vq
         }), (0, r.jsx)(O.Z, {
           applicationId: s,
-          location: k.location,
+          location: j.location,
           className: x.rightPipIcon
         })]
       })]
@@ -138,7 +138,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   var t, n;
   let {
     channel: i,

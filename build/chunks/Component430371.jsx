@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 430371, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -72,8 +72,8 @@ function I(e) {
       channel: M,
       selectedParticipant: R,
       showParticipants: L = true,
-      className: D,
-      width: k,
+      className: k,
+      width: D,
       height: U,
       layout: B,
       idle: H
@@ -96,11 +96,11 @@ function I(e) {
     ea = (null != (t = (0, c.Z)(R.id)) ? t : R.id) !== R.id,
     eo = 0;
   (J || et) && (eo += 72), J && !et && (er ? eo += 48 : eo += 8), et && (eo += .5 * P + 8);
-  let es = r.useMemo(() => J && Q ? k / (U - 2 * eo) : $ && null != G && G.width > 0 && G.height > 0 ? G.width / G.height : S, [$, G, J, k, U, eo, Q]),
+  let es = r.useMemo(() => J && Q ? D / (U - 2 * eo) : $ && null != G && G.width > 0 && G.height > 0 ? G.width / G.height : S, [$, G, J, D, U, eo, Q]),
     ec = U - 2 * eo,
-    eu = J && Q ? k : ec * es,
-    ed = Math.floor(Math.min(k, eu) / es),
-    ep = U > k / es + 72 + P + 8;
+    eu = J && Q ? D : ec * es,
+    ed = Math.floor(Math.min(D, eu) / es),
+    ep = U > D / es + 72 + P + 8;
   n = et || J ? et ? false : false : 40 + Math.max(0, 72 - (U - ed) / 2), r.useEffect(() => {
     let e = setTimeout(() => {
       K(false)
@@ -164,9 +164,9 @@ function I(e) {
     {
       visibleParticipants: ex,
       participantTileWidth: ej
-    } = (0, C.ZB)(k, N);
+    } = (0, C.ZB)(D, N);
   return (0, i.jsxs)("div", {
-    className: a()(j.root, x.flexCenter, D),
+    className: a()(j.root, x.flexCenter, k),
     children: [(0, i.jsxs)("div", {
       className: j.tileWrapper,
       style: {
@@ -196,11 +196,11 @@ function I(e) {
                 style: e,
                 children: (0, i.jsx)(g.ZP, {
                   focused: true,
-                  noBorder: eu >= k || ec >= U,
+                  noBorder: eu >= D || ec >= U,
                   channel: M,
                   className: x.focusedVideo,
                   videoComponent: V,
-                  width: k,
+                  width: D,
                   participant: t,
                   onClick: l,
                   onDoubleClick: Z,
@@ -247,7 +247,7 @@ function I(e) {
       })]
     }), e_.length > 0 ? (0, i.jsx)(b.Z, {
       onContextMenuParticipant: I,
-      width: k,
+      width: D,
       height: U,
       channel: M,
       participants: e_,

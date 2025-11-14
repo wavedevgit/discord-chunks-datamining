@@ -119,7 +119,7 @@ function g(e) {
     describedById: D,
     helperTextId: w,
     descriptionId: x
-  } = C, L = null == y ? true : y.horizontalControlColumnWidth, M = "group" === g || "radiogroup" === g, j = M ? "span" : "label", k = M ? "fieldset" : "div", U = M ? (0, r.jsx)("legend", {
+  } = C, L = null == y ? true : y.horizontalControlColumnWidth, M = "group" === g || "radiogroup" === g, k = M ? "span" : "label", j = M ? "fieldset" : "div", U = M ? (0, r.jsx)("legend", {
     id: N,
     children: (0, r.jsx)(s.n, {
       children: t
@@ -128,7 +128,7 @@ function g(e) {
     "aria-hidden": M,
     "data-interactive": I,
     id: N,
-    tag: j,
+    tag: k,
     variant: "text-md/medium",
     color: "text-primary",
     htmlFor: R,
@@ -159,7 +159,7 @@ function g(e) {
   });
   return (0, r.jsx)(d.z.Provider, {
     value: C,
-    children: (0, r.jsxs)(k, {
+    children: (0, r.jsxs)(j, {
       role: g,
       ref: A,
       className: f.container,

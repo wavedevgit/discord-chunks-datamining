@@ -1,1 +1,1 @@
-{"id":"71133","type":"experiment","data":{"kind":"guild","id":"2025-10_voice_invite_suggestions","label":"Voice Invite Suggestions","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Voice Invite Suggestions - Enabled","config":{"enabled":true}}]},"fromModule":{"id":"57336"}}
+{"id":"71133","type":"experiment","data":{"kind":"guild","id":"2025-10_voice_invite_suggestions","label":"Voice Invite Suggestions","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Voice Invite Suggestions - Enabled","config":{"enabled":true}}]},"fromModule":{"id":"34740"}}

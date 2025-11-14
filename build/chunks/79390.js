@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   D$: () => P,
-  N4: () => j,
+  N4: () => k,
   UI: () => R,
   Uu: () => S,
   cS: () => D,
-  cZ: () => k,
+  cZ: () => j,
   e1: () => B,
   eQ: () => N,
   fw: () => C,
@@ -149,7 +149,7 @@ function M(e, t) {
   return null != t ? (0, o.aF)(s, t) : s
 }
 
-function j(e) {
+function k(e) {
   let t = (0, u.ZH)(e),
     n = M(e, E.Dv);
   return y.intl.format(y.t.Vn97Ka, {
@@ -158,7 +158,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   return e.reduce((e, t) => {
     var n, r;
     return e + (null != (r = null == (n = t.count_details) ? true : n.vote) ? r : 0)

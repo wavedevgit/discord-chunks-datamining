@@ -1,7 +1,7 @@
-/** Chunk was on 38058 **/
+/** Chunk was on 36113 **/
 /** chunk id: 682085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,11 +21,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk66582 = require("./66582.js");
 
-function O() {
+function v() {
   let {
     trackUserProfileEditAction: e
   } = (0, Chunk785717.KZ)(), t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), {
-    application: O,
+    application: v,
     config: j
   } = (0, Chunk50130.G)(), {
     token: x,
@@ -76,7 +76,7 @@ function O() {
       stackingBehavior: "stack"
     })
   }, [module]);
-  if (null == exports || null == O || null == P || !_) return (0, Chunk951288.jsx)("div", {
+  if (null == exports || null == v || null == P || !_) return (0, Chunk951288.jsx)("div", {
     className: Chunk66582.loading,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
@@ -92,7 +92,7 @@ function O() {
       variant: "text-sm/normal",
       color: "text-secondary",
       children: Chunk388032.intl.format(Chunk388032.t.YnNFWa, {
-        applicationName: O.name
+        applicationName: v.name
       })
     })]
   });
@@ -113,7 +113,7 @@ function O() {
               size: 32
             }), w, (0, r.jsx)(m.Z, {
               user: t,
-              application: O,
+              application: v,
               onDismiss: i
             }), (0, r.jsx)(b.Z, {})]
           });

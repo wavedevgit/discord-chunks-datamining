@@ -54,9 +54,9 @@ function j(e, t) {
 
 function _() {
   var e, t;
-  let [n, r] = (0, Chunk647438.useState)(false), [s, d] = (0, Chunk647438.useState)(false), [h, g] = (0, Chunk647438.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
-    setToolsCache: T,
-    removeToolsCache: O
+  let [n, i] = (0, Chunk647438.useState)(false), [s, d] = (0, Chunk647438.useState)(false), [h, g] = (0, Chunk647438.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
+    setToolsCache: O,
+    removeToolsCache: T
   } = (0, Chunk396821.L3)(), {
     setImgCache: N
   } = (0, Chunk396821.W_)(), P = (0, Chunk647438.useCallback)(e => {
@@ -79,8 +79,8 @@ function _() {
       preview: true
     }))
   }, []), w = (0, Chunk647438.useCallback)(e => {
-    O(e)
-  }, [O]);
+    T(e)
+  }, [T]);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk30827.controls,
@@ -106,7 +106,7 @@ function _() {
         children: [require && (0, Chunk951288.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk951288.jsx)(Chunk711325.Z, {
           selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
           onSelect: e => {
-            (null == h ? true : h.src) != null && T(h.src, h.src, e), I(e)
+            (null == h ? true : h.src) != null && O(h.src, h.src, e), I(e)
           }
         })]
       })]
@@ -127,7 +127,7 @@ function _() {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               a = await n.arrayBuffer();
-            N(t, t, (0, p.xh)(a)), T(t, t, m.jD)
+            N(t, t, (0, p.xh)(a)), O(t, t, m.jD)
           }
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk30827.uploadedArea,
@@ -160,12 +160,12 @@ function _() {
 function y(e) {
   let {
     nameplate: t
-  } = e, [n, r] = (0, i.useState)(320), s = (0, i.useRef)(null), o = (0, i.useRef)(null), c = (0, i.useRef)(null), d = (0, i.useRef)(document), u = (0, i.useCallback)(e => {
+  } = e, [n, i] = (0, r.useState)(320), s = (0, r.useRef)(null), o = (0, r.useRef)(null), c = (0, r.useRef)(null), d = (0, r.useRef)(document), u = (0, r.useCallback)(e => {
     if (null != s.current) {
       let t = s.current.getBoundingClientRect();
-      r(Math.max(264, Math.min(432, e.clientX - t.left)))
+      i(Math.max(264, Math.min(432, e.clientX - t.left)))
     }
-  }, []), m = (0, i.useCallback)(e => {
+  }, []), m = (0, r.useCallback)(e => {
     e.preventDefault(), e.stopPropagation();
     let t = e.currentTarget.ownerDocument;
     d.current = t;
@@ -177,7 +177,7 @@ function y(e) {
       };
     o.current = n, c.current = a, t.addEventListener("mousemove", n), t.addEventListener("mouseup", a)
   }, [u]);
-  return (0, i.useEffect)(() => () => {
+  return (0, r.useEffect)(() => () => {
     null != o.current && (d.current.removeEventListener("mousemove", o.current), o.current = null), null != c.current && (d.current.removeEventListener("mouseup", c.current), c.current = null)
   }, []), (0, a.jsx)(l.zJl, {
     className: b.previewsContainer,
@@ -191,12 +191,12 @@ function y(e) {
       children: [(0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
         children: "Memberlist"
-      }), (0, a.jsx)(T, {
+      }), (0, a.jsx)(O, {
         nameplate: t
       }), (0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
         children: "DMs"
-      }), (0, a.jsx)(O, {
+      }), (0, a.jsx)(T, {
         nameplate: t
       }), (0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
@@ -215,12 +215,12 @@ function C(e) {
   let {
     src: t,
     onSetStatic: n,
-    removeAsset: i
+    removeAsset: r
   } = e;
   return (0, a.jsxs)("div", {
     className: b.uploaded,
     children: [(0, a.jsx)(l.P3F, {
-      onClick: () => i(t),
+      onClick: () => r(t),
       className: b.xicon,
       children: (0, a.jsx)(l.Dio, {
         size: "custom",
@@ -284,10 +284,10 @@ function E(e) {
   })
 }
 
-function T(e) {
+function O(e) {
   let {
     nameplate: t
-  } = e, n = (0, r.e7)([d.default], () => d.default.getCurrentUser());
+  } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser());
   return (0, a.jsx)("div", {
     className: b.preview,
     children: (0, a.jsxs)("div", {
@@ -320,7 +320,7 @@ function T(e) {
   })
 }
 
-function O(e) {
+function T(e) {
   let {
     nameplate: t
   } = e;

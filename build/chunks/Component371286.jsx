@@ -19,7 +19,7 @@ function u(e) {
     subheading: u,
     children: m,
     height: p
-  } = e, h = (0, s.Dt)(), x = i.useRef(null), g = (0, l.q_F)({
+  } = e, h = (0, s.Dt)(), x = r.useRef(null), g = (0, l.q_F)({
     from: {
       transform: "translate3d(-110%, 0, 0)",
       height: p
@@ -37,7 +37,7 @@ function u(e) {
       null != x.current && x.current.focus()
     }
   });
-  return (0, a.jsx)(r.animated.div, {
+  return (0, a.jsx)(i.animated.div, {
     className: d.container,
     style: g,
     children: (0, a.jsxs)("aside", {

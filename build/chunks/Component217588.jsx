@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk564651 = require("./564651.js"),
   Chunk975900 = require("./975900.js");
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -156,7 +156,7 @@ let X = e => {
         let {
           channel: e
         } = m.current;
-        T.default.track(D.rMx.OPEN_POPOUT, k({
+        T.default.track(D.rMx.OPEN_POPOUT, j({
           type: D.jXE.STICKER_POPOUT,
           guild_id: e.getGuildId(),
           sticker_pack_id: n.pack_id
@@ -206,8 +206,8 @@ let X = e => {
       } = e,
       [A, C] = i.useState(null),
       [N, P] = i.useState(false),
-      j = I.default.getCurrentUser(),
-      U = S.ZP.canUseCustomStickersEverywhere(j),
+      k = I.default.getCurrentUser(),
+      U = S.ZP.canUseCustomStickersEverywhere(k),
       B = (0, s.e7)([v.Z], () => v.Z.getGuild(n.guild_id)),
       Z = null != B,
       [H, W] = i.useState(false),
@@ -218,7 +218,7 @@ let X = e => {
       }), [a.guild_id]),
       {
         current: J
-      } = i.useRef(k({
+      } = i.useRef(j({
         guild_id: a.getGuildId()
       }, (0, p.v_)(a))),
       $ = {
@@ -252,7 +252,7 @@ let X = e => {
         } = ee.current;
         e()
       }, [N, A]), (0, _.ZP)(() => {
-        T.default.track(D.rMx.OPEN_POPOUT, k({
+        T.default.track(D.rMx.OPEN_POPOUT, j({
           type: ei
         }, J))
       }), !N) return (0, r.jsx)(b.SE, {
@@ -339,7 +339,7 @@ let X = e => {
                 align: h.Z.Align.START,
                 justify: h.Z.Justify.START,
                 className: M.otherEmojisContainer,
-                children: t.map(e => (0, r.jsx)(c.u, G(k({
+                children: t.map(e => (0, r.jsx)(c.u, G(j({
                   text: e.name
                 }, b.b_), {
                   children: (0, r.jsx)("div", {

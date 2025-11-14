@@ -83,11 +83,11 @@ function M(e) {
   return n.length <= 1 ? e : [...t, [...n].sort(L)[0]].sort(L)
 }
 
-function j(e, t) {
+function k(e, t) {
   I[e] = t, T[e] = M(t)
 }
 
-function k(e) {
+function j(e) {
   delete I[e], delete T[e]
 }
 
@@ -125,7 +125,7 @@ function U(e, t) {
 }
 
 function G(e) {
-  if (delete v[e], k(e), delete S[e], delete A[e], null == O[e]) return;
+  if (delete v[e], j(e), delete S[e], delete A[e], null == O[e]) return;
   let t = Object.values(O[e]),
     n = t.reduce((e, t) => {
       let n = t.processedAtTimestamp,
@@ -134,7 +134,7 @@ function G(e) {
         a = null != e.activities ? e.activities.length : 0;
       return n > r || n === r && i > a ? t : e
     }, t[0]);
-  n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0 ? (v[e] = n.status, j(e, n.activities), S[e] = B(Object.values(t).flatMap(e => {
+  n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0 ? (v[e] = n.status, k(e, n.activities), S[e] = B(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
   })), null != n.clientStatus && (A[e] = n.clientStatus)) : s().every(O[e], e => e.status === E.Skl.OFFLINE && (null == e.hiddenActivities || 0 === e.hiddenActivities.length)) ? delete O[e] : n.status === E.Skl.OFFLINE && t.some(e => null != e.hiddenActivities && e.hiddenActivities.length > 0) && (S[e] = B(Object.values(t).flatMap(e => {
@@ -156,7 +156,7 @@ function Z(e) {
   let n = s().maxBy(Object.values(t), e => e.processedAtTimestamp);
   if (n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0) {
     var r;
-    v[e] = n.status, j(e, n.activities), S[e] = null != (r = n.hiddenActivities) ? r : [], null != n.clientStatus && (A[e] = n.clientStatus)
+    v[e] = n.status, k(e, n.activities), S[e] = null != (r = n.hiddenActivities) ? r : [], null != n.clientStatus && (A[e] = n.clientStatus)
   }
 }
 
@@ -449,7 +449,7 @@ function et(e) {
 function en(e) {
   let t = m.default.getId();
   if (v[t] === e.status && I[t] === e.activities && S[t] === e.hiddenActivities) returnfalse;
-  v[t] = e.status, j(t, [...e.activities].sort(L)), S[t] = [...e.hiddenActivities].sort(L), delete C[t]
+  v[t] = e.status, k(t, [...e.activities].sort(L)), S[t] = [...e.hiddenActivities].sort(L), delete C[t]
 }
 
 function er(e) {
@@ -464,7 +464,7 @@ class ei extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk106301.Z, Chunk594174.default)
   }
   setCurrentUserOnConnectionOpen(e, t) {
-    v[m.default.getId()] = e, j(m.default.getId(), [...t].sort(L))
+    v[m.default.getId()] = e, k(m.default.getId(), [...t].sort(L))
   }
   getStatus(e) {
     var t, n;

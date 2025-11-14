@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 326838, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -31,7 +31,7 @@ function y(e) {
     isHoveringOrFocusing: d
   } = (0, p.Z)(c);
   return i.useEffect(() => {
-    n || (0, f.Br)(t)
+    n || (0, h.Br)(t)
   }, [t, n]), (0, r.jsxs)("div", {
     className: _.container,
     ref: c,
@@ -62,7 +62,7 @@ function y(e) {
             size: "xs"
           }),
           onClick: () => {
-            (0, f.UF)(t)
+            (0, h.UF)(t)
           }
         })]
       })]
@@ -93,16 +93,16 @@ function O(e) {
     expired: t,
     invite: n,
     isHoveringInvite: l
-  } = e, o = (0, a.e7)([h.Z], () => h.Z.isInviteGameInstalled(n)), p = (0, a.e7)([h.Z], () => h.Z.isInviteJoinable(n)), [g, m] = i.useState(false), y = i.useCallback(async () => {
+  } = e, o = (0, a.e7)([f.Z], () => f.Z.isInviteGameInstalled(n)), p = (0, a.e7)([f.Z], () => f.Z.isInviteJoinable(n)), [g, m] = i.useState(false), y = i.useCallback(async () => {
     m(true);
     try {
-      await (0, f.MH)(n)
+      await (0, h.MH)(n)
     } catch (e) {}
     m(false)
   }, [n]), O = i.useCallback(async () => {
     m(true);
     try {
-      await (0, f.Ol)(n)
+      await (0, h.Ol)(n)
     } catch (e) {}
     m(false)
   }, [n]);

@@ -108,7 +108,7 @@ function y(e) {
     noHover: L
   } = e, M = (0, l.Yzy)(null != g, m(p({}, b), {
     keys: e => e ? "children" : "icon"
-  })), j = e => {
+  })), k = e => {
     let {
       component: t
     } = e;
@@ -157,13 +157,13 @@ function y(e) {
       return t ? (0, r.jsx)(s.animated.div, {
         style: e,
         className: o()(f.buttonWrapper, a),
-        children: j({
+        children: k({
           component: g
         })
       }, i) : null != h ? (0, r.jsx)(s.animated.div, {
         style: e,
         className: o()(f.buttonWrapper, a),
-        children: j({
+        children: k({
           component: (0, r.jsx)(h, {
             className: o()(f.icon, _, {
               [f.pulseIcon]: C

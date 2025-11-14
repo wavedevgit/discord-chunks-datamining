@@ -32,7 +32,7 @@ let v = e => {
     } = e, {
       isPurchased: v,
       isPartiallyOwnedBundle: x
-    } = (0, g.L)(t), E = (0, p.G1)(t), S = (0, a.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), O = (null == S ? true : S.unpublishedAt) != null ? (0, p.OT)(S.unpublishedAt) : null, y = (0, a.e7)([s.default], () => s.default.getCurrentUser()), j = c.ZP.canUseCollectibles(y), k = (0, C.Iw)(t), {
+    } = (0, p.L)(t), E = (0, g.G1)(t), S = (0, a.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), O = (null == S ? true : S.unpublishedAt) != null ? (0, g.OT)(S.unpublishedAt) : null, y = (0, a.e7)([s.default], () => s.default.getCurrentUser()), j = c.ZP.canUseCollectibles(y), k = (0, C.Iw)(t), {
       isOrbExclusive: I
     } = (0, m.Ip)({
       product: t,
@@ -40,7 +40,7 @@ let v = e => {
       prioritizedCurrency: h,
       hasDiscountOffer: null != k
     }), T = n;
-    if (null == T && (null == O || l ? !x && !v && (0, p.Yq)(t.skuId) ? T = f.Zh.NEW : I ? T = f.Zh.ORBS_EXCLUSIVE : E && (T = f.Zh.NITRO_EXCLUSIVE) : T = f.Zh.LIMITED_TIME), null == T || T === f.Zh.NONE) return null;
+    if (null == T && (null == O || l ? !x && !v && (0, g.Yq)(t.skuId) ? T = f.Zh.NEW : I ? T = f.Zh.ORBS_EXCLUSIVE : E && (T = f.Zh.NITRO_EXCLUSIVE) : T = f.Zh.LIMITED_TIME), null == T || T === f.Zh.NONE) return null;
     let L = null;
     switch (T) {
       case f.Zh.LIMITED_TIME:

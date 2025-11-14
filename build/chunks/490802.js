@@ -56,12 +56,12 @@ function h(e) {
     w = (0, d.useMemo)(() => g(D.resolvedOptions().calendar), [g, D]),
     [x, L] = (0, u.z)(e.value, null != (t = e.defaultValue) ? t : null, e.onChange),
     [M] = (0, d.useState)(x),
-    j = (0, d.useMemo)(() => {
+    k = (0, d.useMemo)(() => {
       var e;
       return null != (e = (0, r.Ai)(x, w)) ? e : null
     }, [x, w]),
-    [k, U] = (0, d.useState)(() => (0, r.OJ)(e.placeholderValue, N, w, R)),
-    G = j || k,
+    [j, U] = (0, d.useState)(() => (0, r.OJ)(e.placeholderValue, N, w, R)),
+    G = k || j,
     B = "gregory" === w.identifier && "BC" === G.era,
     Z = (0, d.useMemo)(() => {
       var t;
@@ -89,7 +89,7 @@ function h(e) {
   }, [w, N, W, R, e.placeholderValue]), x && Object.keys(W).length < Object.keys(Y).length && K(W = {
     ...Y
   }), null == x && Object.keys(W).length === Object.keys(Y).length && (K(W = {}), U((0, r.OJ)(e.placeholderValue, N, w, R)));
-  let X = j && Object.keys(W).length >= Object.keys(Y).length ? j : k,
+  let X = k && Object.keys(W).length >= Object.keys(Y).length ? k : j,
     Q = t => {
       if (e.isDisabled || e.isReadOnly) return;
       let n = Object.keys(W),
@@ -129,7 +129,7 @@ function h(e) {
     ea = e.validationState || (ei ? "invalid" : null);
   return {
     ...er,
-    value: j,
+    value: k,
     defaultValue: null != (n = e.defaultValue) ? n : M,
     dateValue: J,
     calendar: w,
@@ -188,7 +188,7 @@ function h(e) {
       L(null), Q(i)
     },
     formatValue(e) {
-      if (!j) return "";
+      if (!k) return "";
       let t = (0, r.oE)(e, Z);
       return new(0, a.C)(h, t).format(J)
     },

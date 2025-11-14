@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Recurring3PModal: () => B,
-  gu: () => k,
+  gu: () => j,
   wQ: () => Z
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
@@ -172,7 +172,7 @@ let w = {
       })
     }, t)
   }),
-  j = e => {
+  k = e => {
     let {
       promotionRecurrences: t
     } = e, [n, o] = i.useState(t.length > 1), [l, c] = i.useState([]), [u, f] = i.useState(new Set);
@@ -254,7 +254,7 @@ let w = {
       })]
     })
   },
-  k = e => {
+  j = e => {
     let {
       percentage: t
     } = e, n = () => {
@@ -347,7 +347,7 @@ let w = {
                 days: t - e.getDate()
               })
             })
-          }), (0, r.jsx)(k, {
+          }), (0, r.jsx)(j, {
             percentage: n
           }), (0, r.jsx)("div", {
             className: S.cards,
@@ -356,7 +356,7 @@ let w = {
               return r.localeCompare(n)
             }).map(e => {
               let [t, n] = e;
-              return (0, r.jsx)(j, {
+              return (0, r.jsx)(k, {
                 promotionRecurrences: n
               }, t)
             })

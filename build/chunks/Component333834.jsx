@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -110,11 +110,11 @@ function D(e) {
     loadMore: l,
     renderLoadingState: a,
     renderMessageGroup: d,
-    scrollerClassName: f,
+    scrollerClassName: h,
     className: g,
     listName: P,
     ignoreGrouping: N = false
-  } = e, D = (0, O.fJ)(), L = i.useRef(null), M = (0, h.Z)(P, L), {
+  } = e, D = (0, O.fJ)(), L = i.useRef(null), M = (0, f.Z)(P, L), {
     entrypoint: k,
     notificationCenterVariant: G
   } = (0, y.pN)({
@@ -312,7 +312,7 @@ function D(e) {
               var t;
               L.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(Z.messagesPopout, f),
+            className: o()(Z.messagesPopout, h),
             onScroll: K,
             fade: true
           }, l), n = n = {

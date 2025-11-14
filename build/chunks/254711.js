@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Kh: () => B,
-  Tm: () => j
+  Tm: () => k
 }), require("./388685.js"), require("./781311.js"), require("./415506.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -76,7 +76,7 @@ let L = require("./227419.jsx").Z,
     var n;
     return null == (n = e.find(e => e.name === t)) ? true : n.value
   },
-  j = {
+  k = {
     [Chunk689079.bi.BUILT_IN]: {
       id: Chunk689079.bi.BUILT_IN,
       type: Chunk895924.Qi.BUILT_IN,
@@ -92,7 +92,7 @@ let L = require("./227419.jsx").Z,
       }
     }
   },
-  k = [...L, {
+  j = [...L, {
     id: "-1",
     untranslatedName: "shrug",
     displayName: "shrug",
@@ -695,8 +695,8 @@ let L = require("./227419.jsx").Z,
       })
     }
   }],
-  G = k.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
+  G = j.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
   B = (e, t, n) => {
-    let r = t ? k : G;
+    let r = t ? j : G;
     return r.filter(t => e.includes(t.type) && (!n || t.inputType === T.iw.BUILT_IN_TEXT || t.inputType === T.iw.BUILT_IN_INTEGRATION))
   }

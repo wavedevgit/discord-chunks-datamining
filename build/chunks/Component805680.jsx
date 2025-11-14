@@ -116,7 +116,7 @@ let q = Chunk957825.Om + Chunk149203.Su.MEDIUM,
       "aria-controls": t ? s : true
     }, l), {
       onClick: () => {
-        E.ZP.trackWithMetadata(j.rMx.EXPRESSION_PICKER_TAB_CLICKED, {
+        E.ZP.trackWithMetadata(k.rMx.EXPRESSION_PICKER_TAB_CLICKED, {
           tab: i,
           badged: false
         }), (0, L.hr)(i)
@@ -221,7 +221,7 @@ function J(e) {
       n = n.parentNode
     }(0, L._Q)();
     let r = null == (t = (0, u.uB)(e)) ? true : t.activeElement;
-    (null == r || "BODY" === r.tagName) && x.S.dispatchToLastSubscribed(j.CkL.TEXTAREA_FOCUS)
+    (null == r || "BODY" === r.tagName) && x.S.dispatchToLastSubscribed(k.CkL.TEXTAREA_FOCUS)
   }, [et, eg, em, eh]), eT = i.useCallback(() => {
     (0, L._Q)()
   }, []);
@@ -229,15 +229,15 @@ function J(e) {
     let e = () => {
       ec === M.X1.GIF && (0, L._Q)()
     };
-    return ed.addEventListener("mousedown", eI), ed.addEventListener("contextmenu", eI), ef.subscribe(j.CkL.POPOUT_CLOSE, eT), x.S.subscribe(j.CkL.CLOSE_GIF_PICKER, e), () => {
-      ed.removeEventListener("mousedown", eI), ed.removeEventListener("contextmenu", eI), ef.unsubscribe(j.CkL.POPOUT_CLOSE, eT), x.S.unsubscribe(j.CkL.CLOSE_GIF_PICKER, e)
+    return ed.addEventListener("mousedown", eI), ed.addEventListener("contextmenu", eI), ef.subscribe(k.CkL.POPOUT_CLOSE, eT), x.S.subscribe(k.CkL.CLOSE_GIF_PICKER, e), () => {
+      ed.removeEventListener("mousedown", eI), ed.removeEventListener("contextmenu", eI), ef.unsubscribe(k.CkL.POPOUT_CLOSE, eT), x.S.unsubscribe(k.CkL.CLOSE_GIF_PICKER, e)
     }
   }, [ec, eT, eI, ed, ef]), (0, p.Tbt)(er);
   let [eS, eA] = (0, y.US)(ep ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eC, eN] = i.useState(false);
   i.useEffect(() => {
     ec === M.X1.SOUNDBOARD && eN(true)
   }, [ec]), i.useEffect(() => () => {
-    eC && eA(k.L.TAKE_ACTION)
+    eC && eA(j.L.TAKE_ACTION)
   }, [eC, eA]), i.useEffect(() => {
     (0, L.ql)("")
   }, []), i.useEffect(() => {
@@ -245,7 +245,7 @@ function J(e) {
   }, [eg, em]), i.useEffect(() => {
     if (null != eo.current && !ei.current) {
       var e, t, n, r;
-      ec === M.X1.EMOJI ? (null == ea || null == (e = ea.current) ? true : e.onPickerOpen) != null && (null == ea || null == (t = ea.current) || t.onPickerOpen(), ei.current = true) : ec === M.X1.STICKER ? (null == ea || null == (n = ea.current) ? true : n.onPickerOpen) == null || e_ || (null == ea || null == (r = ea.current) || r.onPickerOpen(), ei.current = true) : (E.ZP.trackWithMetadata(j.rMx.EXPRESSION_PICKER_OPENED, {
+      ec === M.X1.EMOJI ? (null == ea || null == (e = ea.current) ? true : e.onPickerOpen) != null && (null == ea || null == (t = ea.current) || t.onPickerOpen(), ei.current = true) : ec === M.X1.STICKER ? (null == ea || null == (n = ea.current) ? true : n.onPickerOpen) == null || e_ || (null == ea || null == (r = ea.current) || r.onPickerOpen(), ei.current = true) : (E.ZP.trackWithMetadata(k.rMx.EXPRESSION_PICKER_OPENED, {
         width: eo.current.offsetWidth,
         tab: ec,
         badged: false
@@ -277,7 +277,7 @@ function J(e) {
         children: Z.intl.string(Z.t.nf1s3u)
       })
     }) : null,
-    ej = (0, r.jsx)(X, {
+    ek = (0, r.jsx)(X, {
       id: U.td,
       "aria-controls": U.cZ,
       "aria-selected": ec === M.X1.EMOJI,
@@ -286,7 +286,7 @@ function J(e) {
       children: Z.intl.string(Z.t.Xu3wE3)
     });
   return (0, r.jsx)(m.Z, {
-    section: j.jXE.EXPRESSION_PICKER,
+    section: k.jXE.EXPRESSION_PICKER,
     children: (0, r.jsx)(T.W5, {
       className: o()(F.positionLayer, ex),
       targetRef: l,
@@ -329,9 +329,9 @@ function J(e) {
                   role: "tablist",
                   "aria-label": Z.intl.string(Z.t["2j4Vgd"]),
                   children: [eE ? (0, r.jsxs)(r.Fragment, {
-                    children: [ej, eL, eM]
+                    children: [ek, eL, eM]
                   }) : (0, r.jsxs)(r.Fragment, {
-                    children: [eL, eM, ej]
+                    children: [eL, eM, ek]
                   }), ep && eD && (0, r.jsx)(X, {
                     id: U.Hr,
                     "aria-controls": U.gV,

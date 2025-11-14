@@ -10,42 +10,38 @@ var Chunk647438 = require("./647438.js"),
   Chunk607070 = require("./607070.js");
 
 function o(e) {
-  let [t, n] = r.useState(false), [o, s] = r.useState(false), l = r.useRef(e.current), c = (0, i.e7)([a.Z], () => a.Z.keyboardModeEnabled);
+  let [t, n] = r.useState(false), [o, s] = r.useState(false), l = (0, i.e7)([a.Z], () => a.Z.keyboardModeEnabled);
   r.useEffect(() => {
-    l.current = e.current
-  }, [e]), r.useEffect(() => {
-    let e = l.current;
-    if (null == e) return;
+    let t = e.current;
+    if (null == t) return;
     n(false), s(false);
-    let t = () => n(true),
-      r = () => n(false),
-      i = () => s(true),
-      a = t => {
-        e.contains(t.relatedTarget) || s(false)
+    let r = () => n(true),
+      i = () => n(false),
+      a = () => s(true),
+      o = e => {
+        t.contains(e.relatedTarget) || s(false)
       };
-    return e.addEventListener("mouseenter", t), e.addEventListener("mouseleave", r), e.addEventListener("focusin", i), e.addEventListener("focusout", a), () => {
-      e.removeEventListener("mouseenter", t), e.removeEventListener("mouseleave", r), e.removeEventListener("focusin", i), e.removeEventListener("focusout", a)
+    return t.addEventListener("mouseenter", r), t.addEventListener("mouseleave", i), t.addEventListener("focusin", a), t.addEventListener("focusout", o), () => {
+      t.removeEventListener("mouseenter", r), t.removeEventListener("mouseleave", i), t.removeEventListener("focusin", a), t.removeEventListener("focusout", o)
     }
-  }, [l]);
-  let u = c && o;
+  }, [e]);
+  let c = l && o;
   return {
     isHovering: t,
-    isFocusing: u,
-    isHoveringOrFocusing: t || u
+    isFocusing: c,
+    isHoveringOrFocusing: t || c
   }
 }
 
 function s(e) {
-  let [t, n] = r.useState(false), i = r.useRef(e.current);
+  let [t, n] = r.useState(false);
   return r.useEffect(() => {
-    i.current = e.current
-  }, [e]), r.useEffect(() => {
-    let e = i.current;
-    if (null == e) return;
-    let t = () => n(true),
-      r = () => n(false);
-    return e.addEventListener("mouseenter", t), e.addEventListener("mouseleave", r), () => {
-      e.removeEventListener("mouseenter", t), e.removeEventListener("mouseleave", r)
+    let t = e.current;
+    if (null == t) return;
+    let r = () => n(true),
+      i = () => n(false);
+    return t.addEventListener("mouseenter", r), t.addEventListener("mouseleave", i), () => {
+      t.removeEventListener("mouseenter", r), t.removeEventListener("mouseleave", i)
     }
-  }, [i]), t
+  }, [e]), t
 }

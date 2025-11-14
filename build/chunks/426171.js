@@ -71,7 +71,7 @@ let m = "".concat("#").concat("itemSkuId", "="),
                   let r = null == (o = n.variants) ? true : o.findIndex(e => e.skuId === t);
                   null != r && r > false && (0, d.$)(n, r)
                 }
-              }(0, g.T)({
+              }(0, p.T)({
                 product: e,
                 category: a,
                 analyticsSource: r,

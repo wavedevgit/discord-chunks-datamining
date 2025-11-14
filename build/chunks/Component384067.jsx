@@ -41,9 +41,9 @@ let m = e => {
     } = (0, d.E)(y, "home", "marketing wide banner"),
     {
       bannerURL: k
-    } = (0, p.UI)(m);
+    } = (0, g.UI)(m);
   if (null == k) return null;
-  let I = b === g.AW.ORBS;
+  let I = b === p.AW.ORBS;
   return (0, r.jsx)(o.$, {
     innerRef: x,
     onChange: j,

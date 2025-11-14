@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 819349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => v
@@ -58,10 +58,10 @@ function v(e) {
       I(null != (i = null == r ? true : r.code) ? i : null)
     }()
   }, [S, t.id]);
-  let D = r.useCallback(() => {
+  let k = r.useCallback(() => {
       _(true)
     }, []),
-    k = r.useCallback(() => {
+    D = r.useCallback(() => {
       _(false), A(false)
     }, []);
   return null == P ? null : (0, i.jsx)(c.yRy, {
@@ -93,8 +93,8 @@ function v(e) {
       inviteKey: P,
       onHoverOrFocus: A
     }, e)),
-    onRequestOpen: D,
-    onRequestClose: k,
+    onRequestOpen: k,
+    onRequestClose: D,
     children: e => (0, i.jsx)(c.P3F, {
       innerRef: l,
       className: a()(y.clickable, C.voiceUser, C.userSmall, C.clickable),

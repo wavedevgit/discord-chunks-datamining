@@ -150,13 +150,13 @@ function w(e) {
     recentlyUsedEmojis: b,
     analyticsOverride: T,
     ref: A
-  } = e, w = (0, d.Dt)(), [x, L] = i.useState(false), M = (0, _.wC)(t.guild_id), j = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
+  } = e, w = (0, d.Dt)(), [x, L] = i.useState(false), M = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: N
   })).slice(0, y.e5);
-  null != b && b.length > 0 && j.splice(j.length - 1, 1, b[0]);
-  let k = e => {
+  null != b && b.length > 0 && k.splice(k.length - 1, 1, b[0]);
+  let j = e => {
       L(e), null == p || p(e)
     },
     U = e => {
@@ -165,10 +165,10 @@ function w(e) {
         willClose: n
       } = e;
       if (null == t && n) return void a();
-      null != t && u(t), k(!n), n && g.kJ.setSearchPlaceholder(null)
+      null != t && u(t), j(!n), n && g.kJ.setSearchPlaceholder(null)
     },
     G = e => {
-      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? k(true) : k(!x))
+      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? j(true) : j(!x))
     };
   return (0, r.jsxs)(c.VqE, {
     "aria-labelledby": w,
@@ -201,7 +201,7 @@ function w(e) {
           accessory: (0, r.jsx)(D, {
             otherAccessories: null == m ? true : m.accessory,
             isEmojiPickerExpanded: x,
-            onSetExpanded: k,
+            onSetExpanded: j,
             onFocus: l
           }),
           onKeyDown: G
@@ -210,7 +210,7 @@ function w(e) {
         className: I.slotsContainer,
         children: (0, r.jsx)("div", {
           className: o()(I.slots, I.slotsWide),
-          children: j.map(e => {
+          children: k.map(e => {
             let n = E.ZP.isEmojiDisabled({
               emoji: e,
               channel: t,

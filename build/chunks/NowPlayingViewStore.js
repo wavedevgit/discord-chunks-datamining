@@ -137,7 +137,7 @@ function es(e) {
 }
 
 function el(e) {
-  let t = j.Z.getVoiceStateForUser(e);
+  let t = k.Z.getVoiceStateForUser(e);
   return (null == t ? true : t.channelId) != null && w.Z.canWithPartialContext(U.Plq.VIEW_CHANNEL, {
     channelId: t.channelId
   }) ? t.channelId : null
@@ -193,11 +193,11 @@ function ef(e, t, n) {
           activity: r,
           userId: e.id,
           application: d,
-          channelId: null == (A = j.Z.getVoiceStateForUser(e.id)) ? true : A.channelId,
+          channelId: null == (A = k.Z.getVoiceStateForUser(e.id)) ? true : A.channelId,
           currentUser: i,
           isActivitiesEnabledForCurrentPlatform: t,
           ChannelStore: N.Z,
-          VoiceStateStore: j.Z,
+          VoiceStateStore: k.Z,
           PermissionStore: w.Z,
           GuildStore: D.Z
         }) !== c.Fw.CAN_JOIN) continue
@@ -232,7 +232,7 @@ function ef(e, t, n) {
       o = D.Z.getGuild(i);
     if (Z.has(i) && B.has(t) || null == n || null == o || n.id === o.afkChannelId) null == n && (r = null, U = true);
     else {
-      let e = j.Z.getVoiceStatesForChannel(n.id),
+      let e = k.Z.getVoiceStatesForChannel(n.id),
         l = (0, v.HG)("NowPlayingViewStore - voiceMembers"),
         c = ed;
       null != l && (c = e => {
@@ -245,7 +245,7 @@ function ef(e, t, n) {
           userId: t
         } = e;
         return M.default.getUser(t)
-      }).filter(k.lm).orderBy([c], ["desc"]).value();
+      }).filter(j.lm).orderBy([c], ["desc"]).value();
       u.filter(e => !d.includes(e.id)).forEach(e => s.push(e)), U ? Z.has(i) || (r = null) : (r = o, U = true), Z.add(i), B.add(t), G.push({
         channel: n,
         guild: o,

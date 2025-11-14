@@ -88,26 +88,26 @@ function I(e) {
     type: b,
     maxValues: v,
     disabled: I
-  } = t, T = (0, p.Wo)(t), [S, A] = i.useState(false), [C, N] = i.useState(false), [R, P] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [D, w] = i.useState(new Set(R.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [M, j] = i.useState(0);
+  } = t, T = (0, p.Wo)(t), [S, A] = i.useState(false), [C, N] = i.useState(false), [R, P] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [D, w] = i.useState(new Set(R.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [M, k] = i.useState(0);
   i.useEffect(() => {
     let e = (null != g ? g : []).map(e => e.value);
     if (e.every(e => x.includes(e)) && x.every(t => e.includes(t))) return;
     L(e);
     let t = new Map(null == g ? true : g.map(e => [e.value, e]));
-    P(t), w(new Set(t.keys())), j(e => e + 1)
+    P(t), w(new Set(t.keys())), k(e => e + 1)
   }, [g, x]);
-  let k = (0, f.CJ)();
-  l()(null != k, "SearchableSelectActionComponent must be rendered inside a ComponentStateContext");
+  let j = (0, f.CJ)();
+  l()(null != j, "SearchableSelectActionComponent must be rendered inside a ComponentStateContext");
   let {
     state: U,
     executeStateUpdate: G,
     visualState: B,
     isDisabled: Z,
     error: F
-  } = k.useComponentState(t, R.size > 0 ? {
+  } = j.useComponentState(t, R.size > 0 ? {
     type: b,
     selectedOptions: Array.from(R.values())
-  } : true), V = null != k.modal, H = v > 1, Y = B === _.gH.LOADING;
+  } : true), V = null != j.modal, H = v > 1, Y = B === _.gH.LOADING;
   i.useEffect(() => {
     if ((null == U ? true : U.type) === u.re.USER_SELECT || (null == U ? true : U.type) === u.re.ROLE_SELECT || (null == U ? true : U.type) === u.re.MENTIONABLE_SELECT || (null == U ? true : U.type) === u.re.CHANNEL_SELECT) {
       let e = new Map(U.selectedOptions.map(e => [e.value, e]));

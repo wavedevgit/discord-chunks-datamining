@@ -1,7 +1,7 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 193154, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,8 +32,8 @@ function p(e) {
   return e
 }
 
-function h(e) {
-  let [t, h] = i.useState(false), f = (0, l.Ie)("guild-".concat(e.id));
+function f(e) {
+  let [t, f] = i.useState(false), h = (0, l.Ie)("guild-".concat(e.id));
   return (0, r.jsx)(c.H, {
     children: (0, r.jsx)(u.Z, {
       text: e.name,
@@ -48,10 +48,10 @@ function h(e) {
         children: (0, r.jsx)(o.LYs, p({
           name: e.name,
           onMouseEnter: () => {
-            h(true)
+            f(true)
           },
           onMouseLeave: () => {
-            h(false)
+            f(false)
           },
           onClick: () => {
             (0, o.ZDy)(async () => {
@@ -70,7 +70,7 @@ function h(e) {
             canAnimate: false,
             size: 42
           }) : null
-        }, f))
+        }, h))
       })
     })
   })

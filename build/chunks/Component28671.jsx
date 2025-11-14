@@ -1,4 +1,4 @@
-/** Chunk was on 38058 **/
+/** Chunk was on 36113 **/
 /** chunk id: 28671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -27,7 +27,7 @@ function b(e) {
   } = (0, c.KZ)(), y = i.useMemo(() => new s.q({
     type: a.l.APPLICATION,
     applicationId: n.id
-  }), [n.id]), v = i.useCallback(() => {
+  }), [n.id]), O = i.useCallback(() => {
     null != y && ((0, u.qH)(y.type, y, true), h({
       action: "WIDGET_ADDED",
       widgetEdited: y.type
@@ -66,7 +66,7 @@ function b(e) {
               applicationName: n.name
             }),
             onClick: () => {
-              b(p.L.TAKE_ACTION), v()
+              b(p.L.TAKE_ACTION), O()
             }
           })
         })]

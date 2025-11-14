@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk584973 = require("./584973.jsx"),
   Chunk608007 = require("./608007.js");
 
@@ -14,7 +14,7 @@ function o(e) {
   let {
     activity: t,
     className: n,
-    emojiClassName: i,
+    emojiClassName: r,
     textClassName: o,
     placeholderText: c,
     soloEmojiClassName: d,
@@ -28,10 +28,10 @@ function o(e) {
     emoji: x
   } = t, g = null != t.state && "" !== t.state ? t.state : c;
   return (0, a.jsxs)("div", {
-    className: r()(s.__invalid_container, n),
+    className: i()(s.__invalid_container, n),
     children: [p || null == x ? null : (0, a.jsx)(l.Z, {
       emoji: x,
-      className: r()(s.emoji, i, null != d ? {
+      className: i()(s.emoji, r, null != d ? {
         [d]: null == g || "" === g
       } : null),
       animate: u,

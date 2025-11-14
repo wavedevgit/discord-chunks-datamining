@@ -226,9 +226,9 @@ let S = e => {
     } = e, {
       themeFilters: n,
       onToggleTheme: i
-    } = (0, C.S)(), o = (0, p.ZP)() === b.BR.DARK, s = l.useCallback(e => {
+    } = (0, C.S)(), o = (0, g.ZP)() === b.BR.DARK, s = l.useCallback(e => {
       if (n.has(e) || o) return "always-white"
-    }, [n, o]), u = l.useCallback(e => n.has(e) || o ? d.TVs.colors.WHITE : d.TVs.colors.INTERACTIVE_NORMAL, [n, o]), g = l.useMemo(() => [{
+    }, [n, o]), u = l.useCallback(e => n.has(e) || o ? d.TVs.colors.WHITE : d.TVs.colors.INTERACTIVE_NORMAL, [n, o]), p = l.useMemo(() => [{
       name: v.intl.string(v.t.aVBOKh),
       icon: (0, r.jsx)(d.Hzt, {
         size: "xs",
@@ -307,7 +307,7 @@ let S = e => {
         children: v.intl.string(v.t.t1Ztrp)
       }), (0, r.jsx)("div", {
         className: x.themeRow,
-        children: g.map(e => {
+        children: p.map(e => {
           let {
             name: l,
             icon: o,

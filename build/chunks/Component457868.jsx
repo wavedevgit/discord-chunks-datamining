@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 91053 **/
 /** chunk id: 457868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => X
@@ -75,7 +75,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
     } = e, o = i.useRef(null), d = (0, p.e7)([R.Z], () => R.Z.isTyping(t.id, a)), h = (0, p.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), m = (0, p.e7)([P.Z], () => {
       var e;
       return (null == h ? true : h.colorRoleId) != null ? null == (e = P.Z.getRole(t.guild_id, h.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), _ = (0, p.e7)([w.default], () => w.default.getCurrentUser()), y = (null == b ? true : b.id) === (null == _ ? true : _.id), x = (0, p.e7)([T.Z, N.Z], () => y ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), v = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), C = (0, p.e7)([T.Z, N.Z], () => y ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), A = (0, p.e7)([E.Z], () => E.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), M = (0, p.e7)([I.Z], () => I.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
+    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), _ = (0, p.e7)([w.default], () => w.default.getCurrentUser()), y = (null == b ? true : b.id) === (null == _ ? true : _.id), j = (0, p.e7)([T.Z, N.Z], () => y ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), v = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), C = (0, p.e7)([T.Z, N.Z], () => y ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), A = (0, p.e7)([E.Z], () => E.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), M = (0, p.e7)([I.Z], () => I.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -118,7 +118,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           object: H.qAy.BOOST_GEM_ICON
         }
       })
-    }, [t.guild_id]), q = (0, j.K)({
+    }, [t.guild_id]), q = (0, x.K)({
       user: b,
       guildId: t.guild_id
     }), [K, Q] = i.useState(false);
@@ -160,7 +160,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           user: b,
           currentUser: _,
           nick: null == h ? true : h.nick,
-          status: x,
+          status: j,
           activities: C,
           colorString: null == h ? true : h.colorString,
           colorStrings: null == h ? true : h.colorStrings,
@@ -193,7 +193,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       label: n,
       count: i,
       guildId: l
-    } = e, a = (0, x.p9)({
+    } = e, a = (0, j.p9)({
       roleId: t,
       guildId: l,
       size: 16
@@ -309,8 +309,8 @@ function X(e) {
     }, [t.guild_id, t.id, t.type]), O) return (0, r.jsx)(J, {
     channel: t
   });
-  let x = o().omit(g.containerProps, ["ref"]),
-    j = M.iJ(n);
+  let j = o().omit(g.containerProps, ["ref"]),
+    x = M.iJ(n);
   return (0, r.jsx)(_.Gt, {
     value: s,
     children: (0, r.jsx)(c.bG, {
@@ -347,7 +347,7 @@ function X(e) {
                 channel: t,
                 sectionId: a,
                 userId: l[i],
-                guildOwnerId: j
+                guildOwnerId: x
               }, l[i])
             },
             footerHeight: e => 80 * (u[e] === f && t.type === H.d4z.PRIVATE_THREAD),
@@ -358,7 +358,7 @@ function X(e) {
             innerTag: "ul",
             sections: u.map(e => e.userIds.length),
             fade: true
-          }, x, e), l)
+          }, j, e), l)
         })
       })
     })

@@ -2,7 +2,7 @@
 /** chunk id: 619307, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ph: () => j,
+  Ph: () => k,
   UN: () => R,
   cY: () => A,
   gz: () => C,
@@ -179,8 +179,8 @@ function w(e) {
     popoutLayerContext: w,
     optionClassName: L,
     closeOnSelect: M,
-    select: j,
-    isSelected: k,
+    select: k,
+    isSelected: j,
     serialize: U,
     clear: G,
     hideIcon: B = false,
@@ -209,15 +209,15 @@ function w(e) {
     }, [et, X]),
     er = (0, c.O)(en),
     ei = i.useCallback(e => {
-      if (j(e), M) {
+      if (k(e), M) {
         var t;
         null == (t = J.current) || t.focus()
       }
-    }, [j, M, J]),
+    }, [k, M, J]),
     ea = i.useCallback(e => {
       e.stopPropagation(), null == G || G()
     }, [G]),
-    eo = t.filter(e => k(e.value));
+    eo = t.filter(e => j(e.value));
   return i.useLayoutEffect(() => {
     if (f) {
       var e;
@@ -245,7 +245,7 @@ function w(e) {
         closeOnSelect: M,
         maxVisibleItems: l,
         width: "auto" === h ? true : null != h ? h : $,
-        isSelected: k,
+        isSelected: j,
         closePopout: n,
         buttonHeight: null != ee ? ee : 0,
         onSelect: ei,
@@ -542,7 +542,7 @@ function M(e) {
   }))
 }
 
-function j(e) {
+function k(e) {
   var t, n, {
       renderLeading: i,
       renderTrailing: a

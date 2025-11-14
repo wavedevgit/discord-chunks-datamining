@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk602733 = require("./602733.js"),
   Chunk55563 = require("./55563.js"),
   Chunk411935 = require("./411935.js"),
-  Chunk210218 = require("./210218.js"),
+  Chunk417317 = require("./417317.js"),
   Chunk705338 = require("./705338.js"),
   Chunk436585 = require("./436585.jsx"),
   Chunk720983 = require("./720983.jsx"),
@@ -53,12 +53,12 @@ function h(e) {
         guildId: r,
         storefront: a,
         selectedPageIndex: d
-      }), (0, l.jsx)(v.$, {
+      }), (0, l.jsx)(m.$, {
         applicationId: a.applicationId,
         guildId: r,
         page: a.pages[d]
       })]
-    }), (0, l.jsx)(m.n, {
+    }), (0, l.jsx)(v.n, {
       applicationId: a.applicationId,
       backgroundImageAssetId: null == (t = a.pages[d]) || null == (n = t.leaderboard) ? true : n.backgroundImageAssetId
     })]
@@ -72,22 +72,21 @@ function j(e) {
     guildId: t,
     gameShopPageIndex: a,
     gameShopSkuId: g
-  } = n.params, I = (0, d.e7)([p.Z], () => null != t ? p.Z.getStorefrontData(t) : true), x = (0, d.e7)([c.Z], () => c.Z.get(g), [g]);
+  } = n.params, I = (0, p.Z)({
+    guildId: t
+  }), x = (0, d.e7)([c.Z], () => c.Z.get(g), [g]);
   (0, s.p2)();
-  let v = i.useMemo(() => {
+  let m = i.useMemo(() => {
     if (null == a) return 0;
     let e = parseInt(a, 10);
     return isNaN(e) || null != I && null != I.storefront && e >= I.storefront.pages.length ? 0 : e
   }, [a, I]);
   return (i.useEffect(() => {
-    null != t && (0, u.m0)(t, v, null != g ? g : null)
-  }, [t, v, g]), i.useEffect(() => {
-    var e;
-    null != t && (null == (e = p.Z.getStorefrontData(t)) ? true : e.loading) !== true && (0, u.YL)(t)
-  }, [t]), ((null == I ? true : I.storefront) != null || (null == I ? true : I.error)) && !(null == I ? true : I.loading) && null != t && (null == I ? true : I.storefront) != null) ? (0, l.jsx)(h, {
+    null != t && (0, u.m0)(t, m, null != g ? g : null)
+  }, [t, m, g]), ((null == I ? true : I.storefront) != null || (null == I ? true : I.error)) && !(null == I ? true : I.loading) && null != t && (null == I ? true : I.storefront) != null) ? (0, l.jsx)(h, {
     storefront: I.storefront,
     guildId: t,
-    selectedPageIndex: v,
+    selectedPageIndex: m,
     selectedSku: x
   }) : (0, l.jsx)("div", {
     className: r()(f.spinner, f.container),

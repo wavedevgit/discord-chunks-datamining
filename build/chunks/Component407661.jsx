@@ -105,9 +105,9 @@ function C(e) {
     displayNameStyles: P
   } = (0, f.ZP)(a), D = (0, _.X7)(g, R, C), w = (0, d.j)({
     displayNameStyles: P
-  }), x = S(i, a), L = (0, m.NE)(i, a), M = n.showThreadPromptOnReply && x >= I && L, j = () => (0, h.uL)(y.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
+  }), x = S(i, a), L = (0, m.NE)(i, a), M = n.showThreadPromptOnReply && x >= I && L, k = () => (0, h.uL)(y.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
-  function k(e) {
+  function j(e) {
     e.stopPropagation(), (0, p.qx)(i.id, !s)
   }
 
@@ -121,7 +121,7 @@ function C(e) {
       children: [(0, r.jsxs)("div", {
         className: v.replyBar,
         children: [(0, r.jsx)(c.P3F, {
-          onClick: j,
+          onClick: k,
           focusProps: {
             offset: {
               top: false,
@@ -154,7 +154,7 @@ function C(e) {
               children: (0, r.jsx)(c.P3F, {
                 role: "switch",
                 "aria-checked": s,
-                onClick: k,
+                onClick: j,
                 children: (0, r.jsxs)(c.Text, {
                   variant: "text-sm/bold",
                   color: s ? "text-link" : "text-muted",

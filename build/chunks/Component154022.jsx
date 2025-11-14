@@ -108,7 +108,7 @@ function en(e) {
       location: "UserSettingsAccessibility"
     }).enabled,
     i = (0, E.A)("UserSettingsAccessibility");
-  return (0, r.jsx)(j.Z, {
+  return (0, r.jsx)(k.Z, {
     title: V.intl.string(V.t.G0neg7),
     children: (0, r.jsxs)(c.Kqy, {
       gap: 16,
@@ -165,7 +165,7 @@ function en(e) {
           variant: "text-md/normal",
           children: V.intl.format(V.t.DHpTjT, {
             onAppearanceClick() {
-              (0, k.openUserSettings)(x.n.APPEARANCE_PANEL, {
+              (0, j.openUserSettings)(x.n.APPEARANCE_PANEL, {
                 section: B.oAB.APPEARANCE
               })
             }

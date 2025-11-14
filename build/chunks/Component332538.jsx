@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 332538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Wj: () => w,
@@ -44,8 +44,8 @@ function Z(e) {
           shouldShow: d
         } = (0, S._)(e, "useGuildPowerupsChannelListIndicators"),
         p = (0, u.OA)(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, e),
-        h = d && !p,
-        f = (0, o.e7)([b.Z], () => b.Z.getStateForGuild(e));
+        f = d && !p,
+        h = (0, o.e7)([b.Z], () => b.Z.getStateForGuild(e));
       return i.useMemo(() => {
         var e, i, o, a;
         if (null == t) return {
@@ -54,8 +54,8 @@ function Z(e) {
         };
         let {
           unlockedPowerups: u
-        } = t, d = (0, E.h)([...Object.values(u), ...Object.values(null != (i = null == f ? true : f.entitlements) ? i : {})]), p = null != (o = null == n ? true : n.lastSeenWarningNotification) ? o : Date.now(), g = new Date(null == (e = d[d.length - 1]) ? true : e.ends_at).getTime(), m = null != (a = null == n ? true : n.lastBoostCount) ? a : 0;
-        return d.length > 0 && p < g || h ? {
+        } = t, d = (0, E.h)([...Object.values(u), ...Object.values(null != (i = null == h ? true : h.entitlements) ? i : {})]), p = null != (o = null == n ? true : n.lastSeenWarningNotification) ? o : Date.now(), g = new Date(null == (e = d[d.length - 1]) ? true : e.ends_at).getTime(), m = null != (a = null == n ? true : n.lastBoostCount) ? a : 0;
+        return d.length > 0 && p < g || f ? {
           trailing: (0, r.jsx)(s.Mgn, {
             color: s.TVs.colors.STATUS_WARNING,
             size: "sm"
@@ -71,20 +71,20 @@ function Z(e) {
           trailing: true,
           showUnread: false
         }
-      }, [l, null == n ? true : n.lastBoostCount, null == n ? true : n.lastSeenWarningNotification, t, h, null == f ? true : f.entitlements])
+      }, [l, null == n ? true : n.lastBoostCount, null == n ? true : n.lastSeenWarningNotification, t, f, null == h ? true : h.entitlements])
     }(e, n, t),
     Z = function(e, t) {
       let [n, r] = (0, d.US)(null != t ? [a.z.GUILD_POWERUP_PERKS_COACHMARK] : []), s = n === a.z.GUILD_POWERUP_PERKS_COACHMARK, {
         available: c
-      } = (0, C.Z)(e), u = (0, o.e7)([h.Z], () => {
+      } = (0, C.Z)(e), u = (0, o.e7)([f.Z], () => {
         var t, n;
-        return null != (n = null == (t = h.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)) && n
+        return null != (n = null == (t = f.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)) && n
       }), _ = (0, o.e7)([b.Z], () => b.Z.getLowestGameCostForGuild(e)), y = function(e, t) {
         let n = (0, j.qI)(e, "GuildPowerupsChannelRow"),
           r = (0, m.BU)(e, "GuildPowerupsChannelRow"),
-          a = (0, o.e7)([h.Z], () => {
+          a = (0, o.e7)([f.Z], () => {
             var t;
-            return null == (t = h.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)
+            return null == (t = f.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)
           });
         return i.useMemo(() => {
           if (r && !a) return I.Du.GAME_SERVER_HOSTING;
@@ -127,7 +127,7 @@ function Z(e) {
         if (null != n) return n;
         let r = function(e, t, n) {
           var r, i;
-          let l = null != (i = null == (r = h.Z.getGuild(e)) ? true : r.premiumTier) ? i : P.Eu4.NONE,
+          let l = null != (i = null == (r = f.Z.getGuild(e)) ? true : r.premiumTier) ? i : P.Eu4.NONE,
             o = Array.from(I.Tg.values()).flatMap(r => r.length <= 0 || r.some(e => {
               if (null != t.unlockedPowerups[e]) returntrue;
               let n = I.Rx[e];
@@ -135,7 +135,7 @@ function Z(e) {
             }) ? [] : r.map(r => {
               let i = t.allPowerups[r];
               return null == i || n < i.cost || (0, x.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
-            })).filter(f.lm);
+            })).filter(h.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, p.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
               type: v.J.PERKS_PURCHASABLE,

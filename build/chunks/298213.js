@@ -78,7 +78,7 @@ function m(e) {
     location: r,
     onConfirm: i,
     onCancel: a
-  } = e, u = (0, o.c_)("useFriendRequestActions"), d = (0, s.q)(r), f = u || d, _ = l.Z.isStranger(t);
+  } = e, u = (0, o.c_)("useFriendRequestActions"), d = (0, s.q)("maybeConfirmFriendRequestAccept"), f = u || d, _ = l.Z.isStranger(t);
   return null == n && f && false !== _ ? _ && f ? void(0, c.c)({
     onConfirm: () => {
       h({

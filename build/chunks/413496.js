@@ -34,12 +34,12 @@ var Chunk507604 = require("./507604.js"),
   x = Chunk46015("".slice),
   L = /^\?<[^\s\d!#%&*+<=>@^][^\s!#%&*+<=>@^]*>/,
   M = /a/g,
-  j = /a/g,
-  k = new A(M) !== M,
+  k = /a/g,
+  j = new A(M) !== M,
   U = Chunk751954.MISSED_STICKY,
   G = Chunk751954.UNSUPPORTED_Y,
-  B = Chunk507604 && (!k || U || Chunk923646 || Chunk204954 || Chunk621523(function() {
-    return j[S] = false, A(M) !== M || A(j) === j || "/a/i" !== String(A(M, "i"))
+  B = Chunk507604 && (!j || U || Chunk923646 || Chunk204954 || Chunk621523(function() {
+    return k[S] = false, A(M) !== M || A(k) === k || "/a/i" !== String(A(M, "i"))
   })),
   Z = function(e) {
     for (var t, n = e.length, r = 0, i = "", a = false; r <= n; r++) {

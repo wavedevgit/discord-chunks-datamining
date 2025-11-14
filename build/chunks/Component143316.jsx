@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 143316, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -17,17 +17,17 @@ function p(e) {
   let {
     type: t,
     onClick: n
-  } = e, [l, p] = i.useState(false), f = () => {
+  } = e, [l, p] = i.useState(false), h = () => {
     n(), a.default.track(c.rMx.INBOX_CHANNEL_ACKED, {
       marked_all_channels_as_read: true,
       num_unread_channels_remaining: 0
     })
   }, g = e => {
-    e.shiftKey ? f() : p(true)
+    e.shiftKey ? h() : p(true)
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [l ? (0, r.jsx)(h, {
-      confirm: f,
+    children: [l ? (0, r.jsx)(f, {
+      confirm: h,
       cancel: () => p(false)
     }) : null, "bottom-floating" === t ? (0, r.jsx)(s.a, {
       text: u.intl.string(u.t["8k+6QY"]),
@@ -46,7 +46,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     cancel: t,
     confirm: n

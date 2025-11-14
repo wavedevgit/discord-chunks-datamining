@@ -1,4 +1,4 @@
-/** Chunk was on 38058 **/
+/** Chunk was on 36113 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => j
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk932366 = require("./932366.js"),
   Chunk133458 = require("./133458.js");
 
-function O(e) {
+function v(e) {
   let {
     index: t,
     widgetType: n,
@@ -47,16 +47,16 @@ function O(e) {
     }),
     onReorder: (e, t) => (0, s.Eq)(n, e, t),
     onEnd: () => g(a.applicationId),
-    className: v.container,
-    dropBeforeClassName: v.dropIndicatorBefore,
-    dropAfterClassName: v.dropIndicatorAfter,
-    draggingClassName: v.isDragging,
+    className: O.container,
+    dropBeforeClassName: O.dropIndicatorBefore,
+    dropAfterClassName: O.dropIndicatorAfter,
+    draggingClassName: O.isDragging,
     children: (0, r.jsxs)("div", {
       ref: p,
-      className: v.dragHandleContainer,
+      className: O.dragHandleContainer,
       children: [c, (0, r.jsx)(u.e_, {
         buttonRef: f(a.applicationId),
-        className: v.dragHandle,
+        className: O.dragHandle,
         focusProps: {
           ringTarget: p
         }
@@ -91,17 +91,17 @@ function j(e) {
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: u,
-      className: l()(I ? v.socialProofBackdrop : true, null == x || u ? true : y.hoverActiveEffect),
+      className: l()(I ? O.socialProofBackdrop : true, null == x || u ? true : y.hoverActiveEffect),
       hideTooltip: T,
       coverRef: j
     }), E && (0, r.jsx)(g.Z, {
       game: t,
       widgetType: i,
-      className: v.removeGameButton,
+      className: O.removeGameButton,
       iconSize: "xs",
       onRemove: () => null == h ? true : h(t.applicationId)
     }), !u && (0, r.jsx)(p.Z, {
-      className: v.socialProof,
+      className: O.socialProof,
       applicationId: t.applicationId,
       guildId: a,
       channelId: s,
@@ -110,7 +110,7 @@ function j(e) {
   });
   return P ? (0, r.jsx)("div", {
     className: y.loadingCover
-  }) : E ? (0, r.jsx)(O, {
+  }) : E ? (0, r.jsx)(v, {
     widgetType: i,
     index: null != d ? d : 0,
     game: t,
@@ -118,7 +118,7 @@ function j(e) {
     gameName: _,
     children: C()
   }) : (0, r.jsx)("div", {
-    className: v.container,
+    className: O.container,
     children: C()
   })
 }

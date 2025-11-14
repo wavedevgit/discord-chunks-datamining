@@ -51,7 +51,7 @@ function v(e, t) {
     L = (0, h.v)(d.O),
     M = a === m.Ie.NORMAL ? L : true;
   if (n) return null;
-  let j = S === b.X1.GIF && A === a;
+  let k = S === b.X1.GIF && A === a;
   return (0, r.jsx)(u.u, {
     keyboardShortcut: T ? true : M,
     text: y.intl.string(T ? y.t.mE2e8A : y.t.nffuyb),
@@ -67,10 +67,10 @@ function v(e, t) {
         onClick: () => {
           P(), x()
         },
-        isActive: j,
+        isActive: k,
         pulse: v,
         "aria-label": y.intl.string(y.t.PtVpk2),
-        "aria-expanded": j,
+        "aria-expanded": k,
         "aria-haspopup": "dialog",
         "aria-controls": C,
         children: (0, r.jsx)(D, {

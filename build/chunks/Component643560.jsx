@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 91053 **/
 /** chunk id: 643560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => f
@@ -63,16 +63,16 @@ function f(e) {
   i.useEffect(() => {
     _ || y || null != O || (0, a.Zy)()
   });
-  let x = () => {
+  let j = () => {
     c.kx(t.channelId, t.guildId)
   };
 
-  function j() {
+  function x() {
     (0, a.Zy)(), null == g || g()
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "guild-entry-context",
-    onClose: j,
+    onClose: x,
     "aria-label": u.intl.string(u.t.HpQykc),
     onSelect: f,
     children: [(0, r.jsxs)(l.kSQ, {
@@ -87,7 +87,7 @@ function f(e) {
             return n => (0, r.jsx)(e, h(p({}, n), {
               entry: t
             }))
-          }), j()
+          }), x()
         }
       }) : null, y ? (0, r.jsx)(l.sNh, {
         id: "remove-from-hub",
@@ -97,7 +97,7 @@ function f(e) {
             header: u.intl.string(u.t.KUxYWH),
             confirmText: u.intl.string(u.t.N86XcP),
             cancelText: u.intl.string(u.t["ETE/oC"]),
-            onConfirm: x
+            onConfirm: j
           }, e), {
             children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
@@ -105,14 +105,14 @@ function f(e) {
                 guildName: t.name
               })
             })
-          }))), j()
+          }))), x()
         },
         color: "danger"
       }) : null, b ? null : (0, r.jsx)(l.sNh, {
         id: "report-server-listing",
         label: u.intl.string(u.t.Aen9eh),
         action: function() {
-          null != t && ((0, o.sq)(t), j())
+          null != t && ((0, o.sq)(t), x())
         },
         icon: l.U65,
         color: "danger"

@@ -2,7 +2,7 @@
 /** chunk id: 496600, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ct: () => j,
+  Ct: () => k,
   px: () => U,
   uz: () => M
 }), require("./388685.js");
@@ -113,8 +113,8 @@ function M(e) {
     required: b
   } = u, O = i.useId(), I = i.useRef(null), [T, S] = i.useState(null), [A, C] = i.useState(false), [N, P] = i.useState(""), [D, x] = i.useState(""), {
     options: M,
-    loading: j,
-    onQueryChange: k
+    loading: k,
+    onQueryChange: j
   } = (0, v.U)({
     active: null == o || o,
     options: c,
@@ -123,8 +123,8 @@ function M(e) {
     x(e), P(null != t ? t : e)
   }, []);
   i.useEffect(() => {
-    k(N)
-  }, [k, N]), i.useEffect(() => {
+    j(N)
+  }, [j, N]), i.useEffect(() => {
     o || S(null)
   }, [o, S]);
   let G = i.useMemo(() => "" === N ? M : (0, s.Lu)(M, N, null != E ? E : L), [M, N, E]),
@@ -160,7 +160,7 @@ function M(e) {
       maxOptionsVisible: a,
       query: D,
       setQuery: U,
-      loading: j,
+      loading: k,
       handleSelectionChange: V,
       isOpen: o,
       setIsOpen: l,
@@ -171,7 +171,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   var {
     ref: t
   } = e, n = w(e, ["ref"]);
@@ -184,13 +184,13 @@ function j(e) {
   return (0, r.jsx)(c.g, D(R({}, a), {
     "data-mana-component": "combobox",
     layoutConfig: l,
-    children: (0, r.jsx)(k, D(R({}, o), {
+    children: (0, r.jsx)(j, D(R({}, o), {
       ref: t
     }))
   }))
 }
 
-function k(e) {
+function j(e) {
   let {
     id: t,
     autoFocus: n,
@@ -206,8 +206,8 @@ function k(e) {
     wrapTags: N,
     ref: P
   } = e, w = i.useRef(null), x = i.useRef(null), L = i.useRef(null), M = i.useContext(u.z), {
-    activeDescendantIndex: j,
-    setActiveDescendantIndex: k,
+    activeDescendantIndex: k,
+    setActiveDescendantIndex: j,
     selectionMode: U,
     disabled: G,
     readOnly: B,
@@ -231,7 +231,7 @@ function k(e) {
     setQuery: ei,
     isEditing: ea,
     setIsEditing: eo
-  } = (0, y.T)(), es = "multiple" === U && q, el = null != j ? (0, I.cA)(H, j) : true;
+  } = (0, y.T)(), es = "multiple" === U && q, el = null != k ? (0, I.cA)(H, k) : true;
   i.useEffect(() => {
     var e;
     null != el && (null == (e = document.getElementById(el)) || e.scrollIntoView({
@@ -286,7 +286,7 @@ function k(e) {
         case "ArrowDown":
         case "PageDown":
           if (n = "PageDown" === e.key ? 10 : 1, 0 === t || (e.preventDefault(), null == $ || $(true), e.altKey)) return;
-          k(e => {
+          j(e => {
             if (null === e) return 0;
             let r = e + n;
             return r >= t && W ? 0 : Math.min(r, t - 1)
@@ -295,15 +295,15 @@ function k(e) {
         case "ArrowUp":
         case "PageUp":
           if (n = "PageUp" === e.key ? 10 : 1, 0 === t) return;
-          e.preventDefault(), k(e => {
+          e.preventDefault(), j(e => {
             if (null === e) return 0;
             let r = e - n;
             return r < 0 && W ? t - 1 : Math.max(r, 0)
           }), null == $ || $(true);
           break;
         case "Enter":
-          if (e.preventDefault(), e.stopPropagation(), null == j || 0 === t) return;
-          let r = en[j];
+          if (e.preventDefault(), e.stopPropagation(), null == k || 0 === t) return;
+          let r = en[k];
           if (true === r.disabled || V && 1 === et.length && et.includes(r)) return;
           X("single" === U ? [r] : (0, I.cq)(U, et, r));
           break;
@@ -318,17 +318,17 @@ function k(e) {
           break;
         case "Home":
           if (e.preventDefault(), 0 === t) return;
-          k(0);
+          j(0);
           break;
         case "End":
           if (e.preventDefault(), 0 === t) return;
-          k(t - 1)
+          j(t - 1)
       }
       null == v || v(e)
-    }, [U, V, F, q, W, v, eu, X, et, er, $, en, j, k]),
+    }, [U, V, F, q, W, v, eu, X, et, er, $, en, k, j]),
     eE = i.useCallback(e => {
-      eo(true), ei(e.target.value), null == $ || $(true), null == p || p(e), k(null)
-    }, [p, eo, ei, $, k]),
+      eo(true), ei(e.target.value), null == $ || $(true), null == p || p(e), j(null)
+    }, [p, eo, ei, $, j]),
     eb = i.useMemo(() => {
       if (0 === et.length) return null;
       if ("single" === U) {

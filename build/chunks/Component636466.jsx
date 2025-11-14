@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 91053 **/
 /** chunk id: 636466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => E,
@@ -78,10 +78,10 @@ function C(e) {
     m = (0, s.f9)(),
     b = (0, l.e7)([f.Z], () => f.Z.hasLayers()),
     [y, O] = (0, p.US)([a.z.GAME_SHOP_WISHLIST_POPOVER], _.R.SIDEBAR, true),
-    x = i.useCallback(() => {
+    j = i.useCallback(() => {
       O(_.L.USER_DISMISS), d()
     }, [d, O]),
-    j = i.useCallback(() => {
+    x = i.useCallback(() => {
       O(_.L.USER_DISMISS)
     }, [O]),
     C = i.useCallback(() => {
@@ -106,7 +106,7 @@ function C(e) {
       }
       return e
     }({}, u), n = n = {
-      onCardClick: x,
+      onCardClick: j,
       ref: g
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -119,7 +119,7 @@ function C(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)), o && y === a.z.GAME_SHOP_WISHLIST_POPOVER && !m && !b && (0, r.jsx)(v, {
       targetElementRef: g,
-      onRequestClose: j,
+      onRequestClose: x,
       onActionClick: C
     })]
   })
@@ -149,9 +149,9 @@ function I(e, t) {
     tooltipText: p,
     shouldScalePreview: false,
     renderPreview: () => (0, r.jsx)(m.A, {
-      containerClassName: x.card,
-      backgroundImageClassName: x.cardBackgroundImage,
-      foregroundImageClassName: x.cardImage,
+      containerClassName: j.card,
+      backgroundImageClassName: j.cardBackgroundImage,
+      foregroundImageClassName: j.cardImage,
       sku: e.sku,
       shape: "custom"
     }),
@@ -174,9 +174,9 @@ function S(e) {
     data: l
   } = (0, u.IX)(t.sku.applicationId);
   return (0, r.jsxs)("div", {
-    className: j.singleItemContainer,
+    className: x.singleItemContainer,
     children: [n, (0, r.jsx)("div", {
-      className: j.singleItemInfo,
+      className: x.singleItemInfo,
       children: (0, r.jsxs)(c.P3F, {
         onClick: () => {
           (0, g.P)(t.sku, {
@@ -187,7 +187,7 @@ function S(e) {
             analyticsLocations: [d.Z.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
           })
         },
-        className: j.singleItemName,
+        className: x.singleItemName,
         "aria-label": O.intl.string(O.t.ilhtIa),
         children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",

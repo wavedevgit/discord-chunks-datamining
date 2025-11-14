@@ -99,13 +99,13 @@ let T = function(e) {
     } : []
   });
   if (0 === M.length) return null;
-  let j = (M = M.filter(e => {
+  let k = (M = M.filter(e => {
       let t = e.id !== l.h8.ADD_PAYMENT_STEPS,
         n = e.id === l.h8.ADD_PAYMENT_STEPS && !x.current;
       return !b || b && (t || n)
     })).find(e => e.id === D),
-    k = null != (i = null == j || null == (n = j.sectionHeaderText) ? true : n.call(j)) ? i : null == j ? true : j.label,
-    U = null != k && null != D,
+    j = null != (i = null == k || null == (n = k.sectionHeaderText) ? true : n.call(k)) ? i : null == k ? true : k.label,
+    U = null != j && null != D,
     G = C && U && D === l.h8.REVIEW,
     B = A ? "nitro-pink" : "nitro-green",
     Z = A ? p.intl.string(p.t.lG6a5x) : p.intl.string(p.t["t9uG/o"]);
@@ -146,7 +146,7 @@ let T = function(e) {
       discountAmount: R
     }), U && (0, r.jsx)(v, {
       isOneStepCheckout: C,
-      headerText: k,
+      headerText: j,
       step: D,
       filteredBreadcrumbs: M
     }), G && (0, r.jsx)("div", {

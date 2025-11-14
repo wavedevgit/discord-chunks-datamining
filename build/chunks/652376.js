@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 652376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -17,17 +17,17 @@ function c(e) {
     u = null != n && c.includes(n),
     d = false,
     p = false,
-    h = false,
-    f = (0, i.e7)([a.Z], () => a.Z.getChannelId()),
+    f = false,
+    h = (0, i.e7)([a.Z], () => a.Z.getChannelId()),
     g = null == (t = (0, l.Z)()) ? true : t.guild_id,
     m = null != g && c.includes(g),
-    b = (0, i.e7)([s.Z], () => null != f && s.Z.hasVideo(f), [f]),
+    b = (0, i.e7)([s.Z], () => null != h && s.Z.hasVideo(h), [h]),
     _ = (0, i.e7)([o.Z], () => o.Z.getCurrentUserActiveStream());
-  return u && (d = !b, p = b, h = null != _ && null != _.guildId && c.includes(_.guildId)), r.useMemo(() => ({
+  return u && (d = !b, p = b, f = null != _ && null != _.guildId && c.includes(_.guildId)), r.useMemo(() => ({
     audio: d,
     video: p,
-    screenshare: h,
+    screenshare: f,
     liveStage: m,
     isCurrentUserConnected: u
-  }), [d, p, h, m, u])
+  }), [d, p, f, m, u])
 }

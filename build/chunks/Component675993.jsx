@@ -94,7 +94,7 @@ function x(e) {
         className: b ? C.overviewContainerWithVideo : C.overviewContainerNoVideo,
         children: [(0, r.jsx)(M, {
           application: n
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(k, {
           application: n
         }), _.length > 0 ? (0, r.jsx)(G, {
           description: _
@@ -170,7 +170,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     application: t
   } = e, n = i.useMemo(() => {
@@ -179,7 +179,7 @@ function j(e) {
   }, [t]);
   return (0, y.ye)(t) ? (0, r.jsxs)("div", {
     className: C.tagsContainer,
-    children: [(0, r.jsx)(k, {
+    children: [(0, r.jsx)(j, {
       application: t
     }), n.map((e, t) => (0, r.jsx)("div", {
       className: C.tagContainer,
@@ -192,7 +192,7 @@ function j(e) {
   }) : null
 }
 
-function k(e) {
+function j(e) {
   var t;
   let {
     application: n

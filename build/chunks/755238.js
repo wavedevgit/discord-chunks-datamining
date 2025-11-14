@@ -88,19 +88,19 @@ function h(e, t, n) {
       onBlur: P.onBlur,
       onFocus: L
     }), [L, P.onBlur]),
-    j = (0, _.p)(n, {
+    k = (0, _.p)(n, {
       isDisabled: 0 !== t.collection.size
     }),
-    k = (0, c.d)(x, {
+    j = (0, c.d)(x, {
       role: "grid",
       id: D,
       "aria-multiselectable": "multiple" === S.selectionMode ? "true" : true
     }, t.isKeyboardNavigationDisabled ? M : P, 0 === t.collection.size && {
-      tabIndex: j ? false : 0
+      tabIndex: k ? false : 0
     } || true, w);
-  return h && (k["aria-rowcount"] = t.collection.size, k["aria-colcount"] = t.collection.columnCount), (0, a.B)({
+  return h && (j["aria-rowcount"] = t.collection.size, j["aria-colcount"] = t.collection.columnCount), (0, a.B)({
     getRowText: y
   }, t), {
-    gridProps: k
+    gridProps: j
   }
 }

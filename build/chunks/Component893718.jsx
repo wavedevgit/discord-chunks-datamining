@@ -6,7 +6,7 @@ require.d(exports, {
   Sg: () => eT,
   TE: () => ex,
   ZP: () => eB,
-  aT: () => ek,
+  aT: () => ej,
   ae: () => eS,
   bL: () => eI,
   hJ: () => eN,
@@ -139,9 +139,9 @@ function eI(e, t, a, o, s) {
     var g, E, b;
     if (l) return;
     c(true);
-    let y = null != (E = null == (g = k.Z.getStickerPreview(s, t.drafts.type)) ? true : g.map(e => e.id)) ? E : [],
+    let y = null != (E = null == (g = j.Z.getStickerPreview(s, t.drafts.type)) ? true : g.map(e => e.id)) ? E : [],
       O = null != (b = W.Z.getUploads(s, t.drafts.type)) ? b : [],
-      v = (0, j.q5)(s);
+      v = (0, k.q5)(s);
     if (null == d && !_ && !m && (0, D.CB)(O, s)) {
       c(false), (0, p.ZDy)(async () => {
         let {
@@ -218,7 +218,7 @@ function eA(e) {
     n || (o === ee.Ie.CREATE_ANNOUNCEMENT_POST || (0, G.Hc)(i, r, a, o.drafts.type) ? ((0, er._H)({
       sticker: e,
       stickerSelectLocation: i,
-      isReplacement: null != k.Z.getStickerPreview(a, o.drafts.type),
+      isReplacement: null != j.Z.getStickerPreview(a, o.drafts.type),
       analyticsLocations: l
     }), (0, U.eu)(a, e, o.drafts.type)) : (s({
       value: "",
@@ -377,7 +377,7 @@ function eM(e, t, n) {
   }
 }
 
-function ej(e, t) {
+function ek(e, t) {
   let [n, r] = i.useState(null), a = i.useCallback(() => {
     var e, n;
     let i, a = null == (e = t.current) ? true : e.getSlateEditor();
@@ -387,7 +387,7 @@ function ej(e, t) {
     e.off("selection-changed", a)
   }), [a, e]), n
 }
-let ek = e => {
+let ej = e => {
     let {
       enabled: t,
       onlyExactMatch: n
@@ -425,8 +425,8 @@ function eG(e, t) {
     id: D,
     required: w,
     disabled: x,
-    placeholder: j,
-    accessibilityLabel: k,
+    placeholder: k,
+    accessibilityLabel: j,
     channel: U,
     type: G,
     focused: B,
@@ -542,18 +542,18 @@ function eG(e, t) {
       shouldHideExpressionPicker: tP,
       handleOuterClick: tD
     } = eL(G, e$),
-    tw = ej(tc, e$),
-    tx = ek(f),
+    tw = ek(tc, e$),
+    tx = ej(f),
     {
       currentAutocompleteType: tL,
       handleAutocompleteVisibilityChange: tM
     } = eU(),
     {
-      moveAppsEntrypointToOverflow: tj
+      moveAppsEntrypointToOverflow: tk
     } = $.n.useConfig({
       location: "ChannelAppLauncher"
     }),
-    tk = (0, S.Z)({
+    tj = (0, S.Z)({
       type: G
     });
   (0, J.S)(tc, U.guild_id, U.id);
@@ -578,8 +578,8 @@ function eG(e, t) {
       ref: eJ,
       className: ep.hiddenAppLauncherAnchor
     }),
-    tz = tk ? (0, r.jsx)(v.Z, {
-      align: tj && G !== ee.Ie.SIDEBAR ? "left" : "right",
+    tz = tj ? (0, r.jsx)(v.Z, {
+      align: tk && G !== ee.Ie.SIDEBAR ? "left" : "right",
       positionTargetRef: eJ,
       channel: U
     }) : null,
@@ -648,7 +648,7 @@ function eG(e, t) {
               [ep.sansAttachButtonUserProfileReply]: G === ee.Ie.USER_PROFILE_REPLY
             }),
             onMouseDown: tD,
-            children: [tz, tj && tK, tB, (0, r.jsx)(p.tEY, {
+            children: [tz, tk && tK, tB, (0, r.jsx)(p.tEY, {
               ringTarget: eX,
               ringClassName: ep.focusRing,
               children: (0, r.jsx)(et.Z, {
@@ -659,9 +659,9 @@ function eG(e, t) {
                 textValue: f,
                 richValue: h,
                 disabled: e9,
-                placeholder: j,
+                placeholder: k,
                 required: w,
-                accessibilityLabel: k,
+                accessibilityLabel: j,
                 isPreviewing: (e6 || e7) && tn,
                 channel: U,
                 type: G,
@@ -696,7 +696,7 @@ function eG(e, t) {
                 "aria-labelledby": eB,
                 showValueWhenDisabled: ez
               })
-            }), tq, !tj && tK]
+            }), tq, !tk && tK]
           })]
         }), ta ? null : (0, r.jsx)(T.Z, {
           ref: eQ,

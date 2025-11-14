@@ -13,14 +13,14 @@ function o(e) {
   let {
     selected: t,
     nameplate: n
-  } = e, o = (0, r.x)(), c = new l.mn({
+  } = e, o = (0, i.x)(), c = new l.mn({
     id: "0",
     type: s.d4z.DM,
     name: "self",
     guild_id: "0",
     recipients: [o.id]
   });
-  return (0, a.jsx)(i.RS, {
+  return (0, a.jsx)(r.RS, {
     selected: t,
     channel: c,
     user: o,

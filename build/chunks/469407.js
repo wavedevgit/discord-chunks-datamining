@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 469407, original params: e,t,n (module,exports,require) **/
 module.exports = {
   friendWrapper: "friendWrapper_bbd192",

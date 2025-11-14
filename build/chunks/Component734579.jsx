@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 734579, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -31,7 +31,7 @@ let O = Chunk647438.memo(function(e) {
   let S = i.useCallback(() => {
       var e, n;
       E(_.L.USER_DISMISS);
-      let r = null != (n = null == (e = h.Z.getStorefrontState(t.id)) ? true : e.activePage) ? n : 0;
+      let r = null != (n = null == (e = f.Z.getStorefrontState(t.id)) ? true : e.activePage) ? n : 0;
       (0, p.uL)(b.Z5c.CHANNELS_GAME_SHOP(t.id, r))
     }, [t, E]),
     I = i.useCallback(() => {
@@ -95,7 +95,7 @@ let O = Chunk647438.memo(function(e) {
         text: y.intl.string(y.t.y2b7CA),
         color: u.Z.BG_BRAND
       }) : null
-    }), j || x || C !== o.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(f.Z, {
+    }), j || x || C !== o.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(h.Z, {
       onActionClick: S,
       onRequestClose: I,
       targetElementRef: v

@@ -1,4 +1,4 @@
-/** Chunk was on 38058 **/
+/** Chunk was on 36113 **/
 /** chunk id: 232083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -82,9 +82,9 @@ function p(e) {
   } = e, b = (0, i.e7)([a.default], () => a.default.getId() === s.id), {
     getManageButtonForWidget: h
   } = (0, u.j)(), y = h(d), {
-    expanded: v,
-    setExpanded: O
-  } = (0, o.g)(), j = v ? m : m.slice(0, 2), x = m.length > 2, _ = (0, r.jsxs)(r.Fragment, {
+    expanded: O,
+    setExpanded: v
+  } = (0, o.g)(), j = O ? m : m.slice(0, 2), x = m.length > 2, _ = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g, (t = f({}, e), n = n = {
       games: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -97,8 +97,8 @@ function p(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)), x && (0, r.jsx)(c.Z, {
-      expanded: v,
-      onClick: () => O(e => !e)
+      expanded: O,
+      onClick: () => v(e => !e)
     })]
   });
   return b && !p ? (0, r.jsx)(l.d, {

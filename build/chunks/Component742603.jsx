@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 742603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -67,12 +67,12 @@ function H(e) {
   } = e, a = (0, S.Z)(n, t, r);
   return null == t || null == r ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.Z, {
-      className: k.avatar,
+      className: D.avatar,
       size: s.EFr.SIZE_24,
       user: t,
       animate: false
     }), (0, i.jsx)(s.Text, {
-      className: k.playingText,
+      className: D.playingText,
       variant: "text-md/medium",
       color: l,
       children: a
@@ -92,12 +92,12 @@ function V(e) {
     d = null != o;
   if ((null == r ? true : r.type) === M.fO.ACTIVITY) null != n && (t = (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(C.ZP.Divider, {
-      className: k.divider
+      className: D.divider
     }), (0, i.jsx)(m.Z, {
       game: n,
-      className: k.activityIcon
+      className: D.activityIcon
     }), (0, i.jsx)(s.Text, {
-      className: k.playingText,
+      className: D.playingText,
       variant: "text-md/normal",
       color: "none",
       children: (0, u.Z)(n.name)
@@ -111,7 +111,7 @@ function V(e) {
       n = r.stream;
     t = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(C.ZP.Divider, {
-        className: k.divider
+        className: D.divider
       }), (0, i.jsx)(H, {
         user: e,
         channel: l,
@@ -127,7 +127,7 @@ function V(e) {
     recurrenceId: c
   }));
   return (0, i.jsx)("div", {
-    className: k.container,
+    className: D.container,
     children: t
   })
 }
@@ -145,20 +145,20 @@ function F(e) {
   } = (0, a.cj)([I.Z], () => ({
     focusedParticipant: I.Z.getSelectedParticipant(t.id),
     participantsOpen: I.Z.getParticipantsOpen(t.id)
-  }), [t.id]), y = (0, h.ZP)(t), x = (0, f.KS)(t), [S] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = D.intl.string(D.t.BVZqJl);
-  t.isDM() ? P = D.intl.string(D.t.jN2DfZ) : t.isGroupDM() && (P = D.intl.string(D.t["e5y+gm"]));
+  }), [t.id]), y = (0, h.ZP)(t), x = (0, f.KS)(t), [S] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = k.intl.string(k.t.BVZqJl);
+  t.isDM() ? P = k.intl.string(k.t.jN2DfZ) : t.isGroupDM() && (P = k.intl.string(k.t["e5y+gm"]));
   let T = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     A = t.isGuildVoice() && u && null != T && T.length > 0,
     R = (0, Z.ZP)(t),
     B = A ? (0, i.jsx)(o.u, {
       asContainer: true,
-      text: D.intl.string(D.t.Mgpxiw),
+      text: k.intl.string(k.t.Mgpxiw),
       delay: 500,
       position: "bottom",
       shouldShow: R,
       children: (0, i.jsxs)(s.P3F, {
-        className: l()(k.channelStatusClickable, {
-          [k.hoverable]: R
+        className: l()(D.channelStatusClickable, {
+          [D.hoverable]: R
         }),
         onClick: R ? function() {
           (0, s.ZDy)(async () => {
@@ -191,8 +191,8 @@ function F(e) {
         } : true,
         children: [(0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
-          className: l()(k.channelStatus, U.markup, {
-            [k.hoverable]: R
+          className: l()(D.channelStatus, U.markup, {
+            [D.hoverable]: R
           }),
           children: j.Z.parseVoiceChannelStatus(T, true, {
             channelId: t.id
@@ -200,7 +200,7 @@ function F(e) {
         }), R && (0, i.jsx)(s.vdY, {
           size: "custom",
           color: "currentColor",
-          className: l()(k.pencilIcon, k.hoverable),
+          className: l()(D.pencilIcon, D.hoverable),
           width: 14,
           height: 14
         })]
@@ -210,15 +210,15 @@ function F(e) {
       channelId: t.id
     });
   return (0, i.jsxs)("div", {
-    className: k.subtitleContainer,
+    className: D.subtitleContainer,
     children: [(0, i.jsx)(s.f6W, {
       theme: L.BR.DARK,
       children: e => (0, i.jsxs)(C.ZP, {
         onDoubleClick: v.O,
         transparent: true,
-        className: l()(e, k.headerBar),
-        innerClassName: k.headerBarChildren,
-        toolbarClassName: k.toolbar,
+        className: l()(e, D.headerBar),
+        innerClassName: D.headerBarChildren,
+        toolbarClassName: D.toolbar,
         childrenBottom: B,
         toolbar: (0, i.jsx)(N.Z, {
           channel: t,
@@ -228,18 +228,18 @@ function F(e) {
           exitFullScreen: g
         }),
         children: [(0, i.jsx)(C.ZP.Title, {
-          wrapperClassName: k.title,
+          wrapperClassName: D.title,
           children: (0, i.jsxs)(i.Fragment, {
             children: [null != x ? (0, i.jsx)(C.ZP.ChannelIcon, {
               icon: x,
               "aria-label": P
             }) : null, y, H && (0, i.jsx)(o.u, {
-              text: D.intl.string(D.t.QyZ4Td),
+              text: k.intl.string(k.t.QyZ4Td),
               children: (0, i.jsx)(s.tQf, {
                 size: "xs",
-                "aria-label": D.intl.string(D.t.VHXh8a),
+                "aria-label": k.intl.string(k.t.VHXh8a),
                 color: s.TVs.colors.INTERACTIVE_NORMAL,
-                className: k.secureFramesIcon
+                className: D.secureFramesIcon
               })
             })]
           })

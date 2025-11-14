@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 91053 **/
 /** chunk id: 277117, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -79,13 +79,13 @@ function w(e) {
         })]
       })
     }), M === P.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(j.Z, {
         user: t,
         channelId: A.id,
         applicationId: k
       })
     }), U.map(e => (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(j.Z, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
@@ -139,7 +139,7 @@ function w(e) {
       }), (0, r.jsx)(C.Z, {
         heading: t.bot ? N.intl.string(N.t["A//N4k"]) : N.intl.string(N.t.a6XYD9),
         headingColor: "header-primary",
-        children: (0, r.jsx)(j.Z, {
+        children: (0, r.jsx)(x.Z, {
           userId: t.id
         })
       })]

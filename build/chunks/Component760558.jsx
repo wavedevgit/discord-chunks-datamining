@@ -39,17 +39,17 @@ let I = e => {
     [P, D] = i.useState(C[0]),
     [w, x] = i.useState(false),
     [L, M] = i.useState(n),
-    [j, k] = i.useState(null != t ? t : A.slice(0, 1)),
-    U = i.useMemo(() => null == j ? [] : j.map(e => {
+    [k, j] = i.useState(null != t ? t : A.slice(0, 1)),
+    U = i.useMemo(() => null == k ? [] : k.map(e => {
       let {
         premiumGuildSubscription: t
       } = e;
       return f.Z.getGuild(null == t ? true : t.guildId)
-    }).filter(e => null != e), [j]),
+    }).filter(e => null != e), [k]),
     G = i.useMemo(() => {
       var e;
-      return (null == j || null == (e = j[0]) ? true : e.premiumGuildSubscription) != null
-    }, [j]),
+      return (null == k || null == (e = k[0]) ? true : e.premiumGuildSubscription) != null
+    }, [k]),
     B = () => (S("SUCCESS" === P), p.default.track(y.rMx.MODAL_DISMISSED, {
       type: y.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
       location_section: a
@@ -78,8 +78,8 @@ let I = e => {
           }), (0, r.jsxs)("div", {
             className: v.quantitySelectorWrapper,
             children: [(0, r.jsx)(c.FiK, {
-              value: j.length,
-              onChange: e => k(A.slice(0, e)),
+              value: k.length,
+              onChange: e => j(A.slice(0, e)),
               minValue: 1,
               maxValue: A.length
             }), (0, r.jsx)(c.Text, {
@@ -101,20 +101,20 @@ let I = e => {
       }),
       CONFIRM() {
         if (null == L) return null;
-        let e = j.filter(e => (0, h.tl)(e)).length,
-          t = j.length,
+        let e = k.filter(e => (0, h.tl)(e)).length,
+          t = k.length,
           n = U.length,
           i = "CONFIRM" === C[0] ? B : () => D(C[C.indexOf(P) - 1]),
           a = async () => {
-            if (x(false), null != L && (null == j ? true : j.length) !== 0) {
-              o()(!j.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
+            if (x(false), null != L && (null == k ? true : k.length) !== 0) {
+              o()(!k.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
               try {
-                await Promise.all(j.map(e => {
+                await Promise.all(k.map(e => {
                   let {
                     premiumGuildSubscription: t
                   } = e;
                   return null != t ? (0, u.dG)(t.guildId, t.id) : Promise.resolve()
-                })), await (0, u.W3)(L.id, j.map(e => {
+                })), await (0, u.W3)(L.id, k.map(e => {
                   let {
                     id: t
                   } = e;
@@ -181,7 +181,7 @@ let I = e => {
           children: (0, r.jsx)(b.R7, {
             guild: L,
             isTransfer: G,
-            guildBoostQuantity: j.length,
+            guildBoostQuantity: k.length,
             onClose: B,
             didPurchaseOnFractionalPremium: false
           })

@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk599832 = require("./599832.js"),
   Chunk451429 = require("./451429.js");
-let T = [{
+let O = [{
     key: "id",
     cellClassName: Chunk599832.eventColumn,
     render(e) {
@@ -54,7 +54,7 @@ let T = [{
       return t.toLocaleString()
     }
   }],
-  O = [{
+  T = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -63,8 +63,8 @@ let T = [{
         loggedTrigger: {
           experimentId: t,
           descriptor: n,
-          exposureType: i,
-          excluded: r,
+          exposureType: r,
+          excluded: i,
           timestamp: s,
           location: o,
           previouslyTracked: c
@@ -111,12 +111,12 @@ let T = [{
           }), (0, a.jsx)(v.Z9, {
             name: "Exposure type",
             children: (0, a.jsx)("code", {
-              children: i
+              children: r
             })
           }), (0, a.jsx)(v.Z9, {
             name: "Excluded",
             children: (0, a.jsx)(v.wl, {
-              value: r
+              value: i
             })
           }), (0, a.jsx)(v.Z9, {
             name: "Previously tracked",
@@ -135,11 +135,11 @@ let T = [{
   }];
 
 function N() {
-  let [e, t] = Chunk647438.useState(""), n = Chunk647438.useRef(null), r = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), x = Chunk658722.find(e => e.key === c), {
+  let [e, t] = Chunk647438.useState(""), n = Chunk647438.useRef(null), i = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), x = Chunk658722.find(e => e.key === c), {
     TabBar: g,
     renderSelectedTab: v
   } = (0, Chunk621060.ZP)({
-    tabs: O
+    tabs: T
   }, []), N = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk647438.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
@@ -174,7 +174,7 @@ function N() {
         onClick: Chunk31336.Zw
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: T,
+      columns: O,
       data: Chunk658722,
       selectedRowKey: Chunk913527,
       onClickRow: e => d(e.key)

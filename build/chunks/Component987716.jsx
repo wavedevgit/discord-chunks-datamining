@@ -95,7 +95,7 @@ let A = e => {
     orientation: "horizontal"
   }), {
     ref: L
-  } = x, M = T(x, ["ref"]), j = (0, d.MY)(y, t), k = j === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = j !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.Z)({
+  } = x, M = T(x, ["ref"]), k = (0, d.MY)(y, t), j = k === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = k !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.Z)({
     location: "GiftAnimationOptions"
   }), Z = e => {
     null != R && R(null == e ? true : e)
@@ -111,7 +111,7 @@ let A = e => {
         className: b.animation
       }) : (0, r.jsx)(l.$jN, {
         className: b.spinner
-      }), k && (0, r.jsxs)("div", {
+      }), j && (0, r.jsxs)("div", {
         className: o()(b.soundEmojiContainer, B && b.refresh),
         children: [(0, r.jsx)(u.Z, {
           sound: C,

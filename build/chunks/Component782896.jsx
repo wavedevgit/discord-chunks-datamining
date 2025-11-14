@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 782896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => m
@@ -15,12 +15,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk906530 = require("./906530.js");
 
-function f(e) {
+function h(e) {
   let {
     children: t
   } = e;
   return (0, r.jsx)(a.ZP, {
-    className: h.facepileItemContainer,
+    className: f.facepileItemContainer,
     mask: a.ZP.Masks.SQUIRCLE,
     width: 25,
     height: 25,
@@ -34,16 +34,16 @@ function g(e) {
     numTruncated: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: h.guildIconList,
+    className: f.guildIconList,
     children: [t.map(e => (0, r.jsxs)("div", {
-      className: h.guildIconItem,
+      className: f.guildIconItem,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(u.V, {
           guild: e,
           size: 20
         })
       }), (0, r.jsx)(o.Text, {
-        className: h.guildIconItemText,
+        className: f.guildIconItemText,
         variant: "text-xs/medium",
         children: e.name
       })]
@@ -91,15 +91,15 @@ function m(e) {
     }),
     position: "top",
     children: (0, r.jsxs)("div", {
-      className: h.facepile,
-      children: [b.map(e => (0, r.jsx)(f, {
+      className: f.facepile,
+      children: [b.map(e => (0, r.jsx)(h, {
         children: (0, r.jsx)(u.V, {
           guild: e,
           size: 20
         })
-      }, e.id)), _ > 0 && (0, r.jsx)(f, {
+      }, e.id)), _ > 0 && (0, r.jsx)(h, {
         children: (0, r.jsxs)(o.Text, {
-          className: h.textItem,
+          className: f.textItem,
           color: "text-secondary",
           variant: "text-xxs/semibold",
           children: ["+", _]

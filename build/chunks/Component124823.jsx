@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 91053 **/
 /** chunk id: 124823, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -122,7 +122,7 @@ function w(e) {
               children: [(0, r.jsx)(v.Z, {
                 heading: P.intl.string(P.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(x.Z, {
+                children: (0, r.jsx)(j.Z, {
                   userBio: null == D ? true : D.bio,
                   userId: n.id,
                   animateOnHoverOrFocusOnly: true,
@@ -131,7 +131,7 @@ function w(e) {
               }), (0, r.jsx)(v.Z, {
                 heading: P.intl.string(P.t["A//N4k"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(j.Z, {
+                children: (0, r.jsx)(x.Z, {
                   userId: n.id
                 })
               })]

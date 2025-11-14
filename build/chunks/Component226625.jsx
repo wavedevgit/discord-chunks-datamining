@@ -24,22 +24,22 @@ function x(e) {
   let {
     className: t,
     pageMultiplier: n
-  } = e, r = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [s, x] = i.useState({
+  } = e, i = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [s, x] = r.useState({
     x: 0,
     y: 0
-  }), g = i.useMemo(() => o().throttle(e => {
-    if (!r) x({
+  }), g = r.useMemo(() => o().throttle(e => {
+    if (!i) x({
       x: (window.innerWidth - e.pageX * n) / 90,
       y: (window.innerHeight - e.pageY * n) / 90
     })
-  }, 20), [n, r]);
-  i.useEffect(() => (window.addEventListener("mousemove", g), () => window.removeEventListener("mousemove", g)), [g]);
+  }, 20), [n, i]);
+  r.useEffect(() => (window.addEventListener("mousemove", g), () => window.removeEventListener("mousemove", g)), [g]);
   let [f, b] = (0, u.q_F)(() => ({
     x: 0,
     y: 0,
     config: h
   }));
-  return i.useEffect(() => {
+  return r.useEffect(() => {
     b({
       x: s.x,
       y: s.y

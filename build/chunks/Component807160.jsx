@@ -222,7 +222,7 @@ function ey(e) {
     guildProductListingId: a
   } = e, o = (0, O.hO)(r, a, {
     requireCurrentGuild: false
-  }), s = (0, f.e7)([v.Z], () => v.Z.getGuildProductFetchState(a) === v.M.FETCHING), l = null == o ? true : o.role_id, c = (0, f.e7)([k.Z], () => null != l ? k.Z.getRole(r, l) : true, [r, l]), u = (0, S.Z)({
+  }), s = (0, f.e7)([v.Z], () => v.Z.getGuildProductFetchState(a) === v.M.FETCHING), l = null == o ? true : o.role_id, c = (0, f.e7)([j.Z], () => null != l ? j.Z.getRole(r, l) : true, [r, l]), u = (0, S.Z)({
     guildId: r,
     productId: a
   }), d = (null != (n = null == o || null == (t = o.attachments) ? true : t.length) ? n : 0) > 0, h = null != c;

@@ -110,13 +110,13 @@ let O = "default",
       numberOfTimesDismissed: 0
     }
   };
-async function j() {
+async function k() {
   if (M.clipsSettings.storageLocation !== O || null == Chunk579806.Z || null == Chunk579806.Z.remoteApp) return;
   let e = await Chunk579806.Z.remoteApp.getPath("documents");
   M.clipsSettings.storageLocation = module, eu.emitChange()
 }
 
-function k(e) {
+function j(e) {
   let {
     classification: t
   } = e, n = M.hardwareClassification;
@@ -365,7 +365,7 @@ function el(e) {
 }
 class ec extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
-    null != e && (M = e), j(), this.waitFor(s.ZP)
+    null != e && (M = e), k(), this.waitFor(s.ZP)
   }
   getClips() {
     return I
@@ -553,7 +553,7 @@ let eu = new ec(Chunk570140.Z, {
     RTC_CONNECTION_FLAGS: en,
     CLIPS_SHOW_CALL_WARNING: W,
     VOICE_CHANNEL_SELECT: K,
-    CLIPS_CLASSIFY_HARDWARE: k,
+    CLIPS_CLASSIFY_HARDWARE: j,
     CLIPS_INIT: z,
     CLIPS_INIT_FAILURE: q,
     CLIPS_DISMISS_EDUCATION: ei,

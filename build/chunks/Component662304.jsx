@@ -1,7 +1,7 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 662304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,15 +22,15 @@ function p(e) {
   }(e) % d.length])
 }
 
-function h(e) {
+function f(e) {
   var t;
   let {
     title: n,
     className: l,
     icon: a
-  } = e, [d, h] = i.useState(p(n));
+  } = e, [d, f] = i.useState(p(n));
   return i.useEffect(() => {
-    h(p(n))
+    f(p(n))
   }, [n]), (0, r.jsxs)("div", {
     className: o()(u.wrapper, l),
     children: [(0, r.jsx)(c.ZP, {

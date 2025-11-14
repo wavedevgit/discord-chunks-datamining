@@ -1,7 +1,7 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 603592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,11 +13,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk682662 = require("./682662.jsx"),
   Chunk662146 = require("./662146.jsx"),
   Chunk790952 = require("./790952.js");
-let h = Chunk647438.forwardRef(function(e, t) {
+let f = Chunk647438.forwardRef(function(e, t) {
   var n, l;
   let {
-    id: h,
-    onClick: f,
+    id: f,
+    onClick: h,
     onContextMenu: g,
     icon: m,
     selected: b,
@@ -32,7 +32,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
     onMouseEnter: S,
     onMouseLeave: I,
     onMouseDown: P
-  } = e, N = (0, a.Ie)(h), [Z, w] = i.useState(false);
+  } = e, N = (0, a.Ie)(f), [Z, w] = i.useState(false);
   return (0, r.jsxs)(u.H, {
     children: [j ? (0, r.jsx)("div", {
       className: p.pill,
@@ -77,7 +77,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
           className: o()(p.circleIconButton, x, {
             [p.selected]: b || Z
           }),
-          onClick: f,
+          onClick: h,
           "aria-label": "string" == typeof _ && null == C ? _ : C,
           "aria-selected": b,
           onContextMenu: g,

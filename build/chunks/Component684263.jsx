@@ -29,7 +29,7 @@ let _ = Chunk647438.memo(function(e) {
     firstProfileEffect: _,
     firstAvatarDecoration: b,
     firstNameplate: v
-  } = (0, p.Rj)(t), x = (0, g.O1)(b), E = (0, c.ZP)(), S = (0, o.ap)(E), O = null != v && null != b && null != _, y = O ? s.EFr.SIZE_72 : s.EFr.SIZE_80;
+  } = (0, g.Rj)(t), x = (0, p.O1)(b), E = (0, c.ZP)(), S = (0, o.ap)(E), O = null != v && null != b && null != _, y = O ? s.EFr.SIZE_72 : s.EFr.SIZE_80;
   return (0, r.jsxs)("div", {
     className: a()(h.container, {
       [h.twoItemBundle]: !O,

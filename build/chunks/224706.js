@@ -38,7 +38,7 @@ let x = 3,
   L = 20,
   M = new Chunk710845.Z("GamesActionCreators");
 
-function j(e) {
+function k(e) {
   let {
     applicationId: t,
     secret: n,
@@ -91,7 +91,7 @@ function j(e) {
   }))
 }
 
-function k(e, t) {
+function j(e, t) {
   return null == e || "" === e ? null : {
     distributor: e,
     sku: t
@@ -357,7 +357,7 @@ let B = {
         name: t,
         os: (0, S.getPlatformName)(),
         icon: n,
-        distributor_application: k(i, a),
+        distributor_application: j(i, a),
         executable: c,
         publisher: r,
         report_version: x
@@ -431,7 +431,7 @@ let B = {
     try {
       let e = (0, S.platformPrefersDeepLink)(),
         l = await C.Z.getJoinSecret(t, n, r, i, a);
-      return null == f && j({
+      return null == f && k({
         applicationId: r,
         secret: l,
         channelId: i,
@@ -449,5 +449,5 @@ let B = {
       }), false
     }
   },
-  joinWithSecret: j
+  joinWithSecret: k
 }

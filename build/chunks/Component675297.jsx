@@ -63,14 +63,14 @@ function T(e) {
   } = e, w = (0, i.e7)([u.Z], () => u.Z.getGuild(n), [n]), x = (0, i.e7)([c.Z], () => {
     var e;
     return c.Z.getRole(n, null != (e = null == t ? true : t.role_id) ? e : y.lds)
-  }), L = (0, o.U)(t, I), M = (0, m.C)(t), j = (0, f.SO)(w), {
-    shouldHideGuildPurchaseEntryPoints: k
+  }), L = (0, o.U)(t, I), M = (0, m.C)(t), k = (0, f.SO)(w), {
+    shouldHideGuildPurchaseEntryPoints: j
   } = (0, l.uP)(n), U = (0, m.k)(t), G = (0, E.Z)({
     guildId: n,
     guildProductListingId: t.id,
     sourceAnalyticsLocations: O
   });
-  if (null == w || k) return null;
+  if (null == w || j) return null;
   let B = () => (0, b.e)({
       guildId: n,
       guildProductListingId: t.id,
@@ -90,13 +90,13 @@ function T(e) {
     H = (0, r.jsx)(g.m, {
       product: t,
       guildId: n,
-      showEditProduct: j,
+      showEditProduct: k,
       showUnpublishProduct: false,
       showCopyLink: true,
       showTestDownload: false,
       showDeleteProduct: false,
       showReportProduct: true,
-      onEditProduct: j ? Z : () => {},
+      onEditProduct: k ? Z : () => {},
       onUnpublishProduct: () => {},
       onDeleteProduct: () => {},
       onReportProduct: F,

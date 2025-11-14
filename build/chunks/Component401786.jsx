@@ -2,7 +2,7 @@
 /** chunk id: 401786, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => k
+  default: () => j
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -114,14 +114,14 @@ function M(e) {
         [], true
       ]
     }
-  }, [o]), j = i.useRef(O);
+  }, [o]), k = i.useRef(O);
   i.useEffect(() => {
-    j.current = O
+    k.current = O
   }), i.useEffect(() => {
-    M && j.current()
+    M && k.current()
   }, [M]);
   let {
-    premiumSubscriptionPlan: k,
+    premiumSubscriptionPlan: j,
     premiumGuildPlan: U
   } = (0, l.cj)([v.Z], () => {
     let e = v.Z.get(o.planId);
@@ -145,7 +145,7 @@ function M(e) {
     analyticsLocations: G,
     analyticsLocation: f.Z.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
   });
-  if (null == F || null == k || null == U || null == B) return (0, r.jsx)(c.$jN, {});
+  if (null == F || null == j || null == U || null == B) return (0, r.jsx)(c.$jN, {});
   let V = o.items.some(e => {
       let {
         planId: t
@@ -167,7 +167,7 @@ function M(e) {
     {
       interval: W,
       intervalCount: K
-    } = k,
+    } = j,
     z = P.intl.format(P.t["0W23cu"], {
       endDate: F.subscriptionPeriodStart
     });
@@ -228,7 +228,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     premiumSubscription: t,
     fractionalPremiumInfo: n,
@@ -260,7 +260,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let t, {
     guildBoostSlot: n,
     transitionState: a,
@@ -306,7 +306,7 @@ function k(e) {
       });
       break;
     case 3:
-      t = (0, r.jsx)(j, {
+      t = (0, r.jsx)(k, {
         premiumSubscription: s,
         fractionalPremiumInfo: d,
         onClose: o,

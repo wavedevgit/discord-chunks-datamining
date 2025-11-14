@@ -3537,6 +3537,63 @@ let {
         opacity: 1
       }
     },
+    CHECKPOINT_PERSONA_EIGHT_BACKGROUND_OVERLAY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_EIGHT_GRADIENT_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_GRADIENT_END_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_EIGHT_GRADIENT_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_GRADIENT_START_RAW",
+        opacity: 1
+      }
+    },
     CHECKPOINT_PERSONA_EIGHT_PRIMARY: {
       category: "generic",
       [r.DARK]: {
@@ -3553,6 +3610,82 @@ let {
       },
       [r.DARKER]: {
         raw: "CHECKPOINT_PERSONA_EIGHT_PRIMARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_EIGHT_SECONDARY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_EIGHT_SECONDARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_FIVE_BACKGROUND_OVERLAY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_FIVE_GRADIENT_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_GRADIENT_END_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_FIVE_GRADIENT_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_GRADIENT_START_RAW",
         opacity: 1
       }
     },
@@ -3575,6 +3708,82 @@ let {
         opacity: 1
       }
     },
+    CHECKPOINT_PERSONA_FIVE_SECONDARY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_FIVE_SECONDARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_FOUR_BACKGROUND_OVERLAY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_FOUR_GRADIENT_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_GRADIENT_END_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_FOUR_GRADIENT_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_GRADIENT_START_RAW",
+        opacity: 1
+      }
+    },
     CHECKPOINT_PERSONA_FOUR_PRIMARY: {
       category: "generic",
       [r.DARK]: {
@@ -3591,6 +3800,82 @@ let {
       },
       [r.DARKER]: {
         raw: "CHECKPOINT_PERSONA_FOUR_PRIMARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_FOUR_SECONDARY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_FOUR_SECONDARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_NINE_BACKGROUND_OVERLAY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_NINE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_NINE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_NINE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_NINE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_NINE_GRADIENT_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_NINE_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_NINE_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_NINE_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_NINE_GRADIENT_END_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_NINE_GRADIENT_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_NINE_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_NINE_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_NINE_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_NINE_GRADIENT_START_RAW",
         opacity: 1
       }
     },
@@ -3613,6 +3898,82 @@ let {
         opacity: 1
       }
     },
+    CHECKPOINT_PERSONA_NINE_SECONDARY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_NINE_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_NINE_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_NINE_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_NINE_SECONDARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_ONE_BACKGROUND_OVERLAY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_ONE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ONE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ONE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_ONE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_ONE_GRADIENT_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_ONE_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ONE_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ONE_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_ONE_GRADIENT_END_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_ONE_GRADIENT_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_ONE_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ONE_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ONE_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_ONE_GRADIENT_START_RAW",
+        opacity: 1
+      }
+    },
     CHECKPOINT_PERSONA_ONE_PRIMARY: {
       category: "generic",
       [r.DARK]: {
@@ -3629,6 +3990,82 @@ let {
       },
       [r.DARKER]: {
         raw: "CHECKPOINT_PERSONA_ONE_PRIMARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_ONE_SECONDARY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_ONE_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ONE_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ONE_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_ONE_SECONDARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_SEVEN_BACKGROUND_OVERLAY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_SEVEN_GRADIENT_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_GRADIENT_END_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_SEVEN_GRADIENT_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_GRADIENT_START_RAW",
         opacity: 1
       }
     },
@@ -3651,6 +4088,82 @@ let {
         opacity: 1
       }
     },
+    CHECKPOINT_PERSONA_SEVEN_SECONDARY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_SEVEN_SECONDARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_SIX_BACKGROUND_OVERLAY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_SIX_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SIX_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SIX_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_SIX_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_SIX_GRADIENT_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_SIX_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SIX_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SIX_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_SIX_GRADIENT_END_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_SIX_GRADIENT_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_SIX_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SIX_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SIX_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_SIX_GRADIENT_START_RAW",
+        opacity: 1
+      }
+    },
     CHECKPOINT_PERSONA_SIX_PRIMARY: {
       category: "generic",
       [r.DARK]: {
@@ -3667,6 +4180,82 @@ let {
       },
       [r.DARKER]: {
         raw: "CHECKPOINT_PERSONA_SIX_PRIMARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_SIX_SECONDARY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_SIX_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SIX_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_SIX_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_SIX_SECONDARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_THREE_BACKGROUND_OVERLAY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_THREE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_THREE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_THREE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_THREE_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_THREE_GRADIENT_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_THREE_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_THREE_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_THREE_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_THREE_GRADIENT_END_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_THREE_GRADIENT_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_THREE_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_THREE_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_THREE_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_THREE_GRADIENT_START_RAW",
         opacity: 1
       }
     },
@@ -3689,6 +4278,82 @@ let {
         opacity: 1
       }
     },
+    CHECKPOINT_PERSONA_THREE_SECONDARY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_THREE_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_THREE_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_THREE_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_THREE_SECONDARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_TWO_BACKGROUND_OVERLAY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_TWO_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_TWO_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_TWO_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_TWO_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_TWO_GRADIENT_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_TWO_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_TWO_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_TWO_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_TWO_GRADIENT_END_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_TWO_GRADIENT_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_TWO_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_TWO_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_TWO_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_TWO_GRADIENT_START_RAW",
+        opacity: 1
+      }
+    },
     CHECKPOINT_PERSONA_TWO_PRIMARY: {
       category: "generic",
       [r.DARK]: {
@@ -3708,6 +4373,82 @@ let {
         opacity: 1
       }
     },
+    CHECKPOINT_PERSONA_TWO_SECONDARY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_TWO_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_TWO_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_TWO_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_TWO_SECONDARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_ZERO_BACKGROUND_OVERLAY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_BACKGROUND_OVERLAY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_ZERO_GRADIENT_END: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_GRADIENT_END_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_GRADIENT_END_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_ZERO_GRADIENT_START: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_GRADIENT_START_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_GRADIENT_START_RAW",
+        opacity: 1
+      }
+    },
     CHECKPOINT_PERSONA_ZERO_PRIMARY: {
       category: "generic",
       [r.DARK]: {
@@ -3724,6 +4465,25 @@ let {
       },
       [r.DARKER]: {
         raw: "CHECKPOINT_PERSONA_ZERO_PRIMARY_RAW",
+        opacity: 1
+      }
+    },
+    CHECKPOINT_PERSONA_ZERO_SECONDARY: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_SECONDARY_RAW",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "CHECKPOINT_PERSONA_ZERO_SECONDARY_RAW",
         opacity: 1
       }
     },

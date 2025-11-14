@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 91053 **/
 /** chunk id: 664342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -110,7 +110,7 @@ function N(e) {
   }), A = (0, b.Z)(t), D = (0, p.Z)(t);
 
   function L() {
-    (0, x.Kh)(t.id)
+    (0, j.Kh)(t.id)
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "thread-context",
@@ -134,7 +134,7 @@ function N(e) {
         icon: l.rgF,
         action: function() {
           L(), setTimeout(() => {
-            j.S.dispatch(S.CkL.FOCUS_SEARCH, {
+            x.S.dispatch(S.CkL.FOCUS_SEARCH, {
               prefillCurrentChannel: false
             })
           }, 2e3)
@@ -144,7 +144,7 @@ function N(e) {
         label: E.intl.string(E.t["2BSH7n"]),
         icon: l.rgF,
         action: function() {
-          L(), j.S.dispatch(S.CkL.TOGGLE_CHANNEL_PINS)
+          L(), x.S.dispatch(S.CkL.TOGGLE_CHANNEL_PINS)
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {

@@ -73,8 +73,8 @@ let P = new Chunk710845.Z("GuildMemberStore"),
   x = {},
   L = {},
   M = {},
-  j = false,
-  k = 0,
+  k = false,
+  j = 0,
   U = 0,
   G = {},
   B = {},
@@ -101,7 +101,7 @@ function V(e, t) {
 }
 
 function H(e) {
-  k += 1, G[e] = k
+  j += 1, G[e] = j
 }
 
 function Y(e) {
@@ -207,7 +207,7 @@ function X(e) {
 }
 
 function Q(e) {
-  j ? j = false : (D = {}, w = {}), M = {}, $(e)
+  k ? k = false : (D = {}, w = {}), M = {}, $(e)
 }
 
 function J(e) {
@@ -241,7 +241,7 @@ function et(e) {
     guildMembers: t,
     guilds: n
   } = e;
-  j = true, D = C({}, t), w = {}, L = {}, er(n)
+  k = true, D = C({}, t), w = {}, L = {}, er(n)
 }
 
 function en(e) {
@@ -266,9 +266,9 @@ function er(e) {
 function ei(e) {
   var t, n;
   if (null == e.guildId || null == T.Z.getGuild(e.guildId)) returnfalse;
-  j = true, D[e.guildId] = null != (t = D[e.guildId]) ? t : {};
+  k = true, D[e.guildId] = null != (t = D[e.guildId]) ? t : {};
   let r = false;
-  for (let t of (j = true, D[e.guildId] = null != (n = D[e.guildId]) ? n : {}, e.members)) null == D[e.guildId][t.userId] && (r = true, D[e.guildId][t.userId] = t);
+  for (let t of (k = true, D[e.guildId] = null != (n = D[e.guildId]) ? n : {}, e.members)) null == D[e.guildId][t.userId] && (r = true, D[e.guildId][t.userId] = t);
   return r
 }
 
@@ -716,7 +716,7 @@ function eM(e) {
   })
 }
 
-function ej(e) {
+function ek(e) {
   let {
     location: t,
     participants: n
@@ -724,7 +724,7 @@ function ej(e) {
   return null != r && ev(r, n)
 }
 
-function ek(e) {
+function ej(e) {
   let t = v.Z.getChannel(e.channelId);
   return eR(e.resolved, null == t ? true : t.guild_id)
 }
@@ -821,7 +821,7 @@ class eU extends(r = Chunk442837.ZP.Store) {
     return M
   }
   getCommunicationDisabledVersion() {
-    return k
+    return j
   }
   getPendingRoleUpdates(e) {
     var t;
@@ -875,6 +875,6 @@ let eG = new eU(Chunk570140.Z, {
   SEARCH_MESSAGES_SUCCESS: eM,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: eM,
   MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eg,
-  EMBEDDED_ACTIVITY_UPDATE_V2: ej,
-  INTERACTION_MODAL_CREATE: ek
+  EMBEDDED_ACTIVITY_UPDATE_V2: ek,
+  INTERACTION_MODAL_CREATE: ej
 })

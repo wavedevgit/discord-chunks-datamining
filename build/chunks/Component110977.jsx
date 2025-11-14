@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 110977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => g
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk132789 = require("./132789.js"),
   Chunk78480 = require("./78480.js");
 
-function f() {
+function h() {
   return (0, Chunk951288.jsx)("div", {
     className: o()(Chunk132789.row, Chunk132789.rowGuildName),
     children: (0, Chunk951288.jsx)("span", {
@@ -51,9 +51,9 @@ let g = Chunk647438.memo(function(e) {
     spacing: 12,
     position: "right",
     align: "center",
-    text: (0, r.jsx)(f, {}),
+    text: (0, r.jsx)(h, {}),
     "aria-label": t,
-    tooltipClassName: h.listItemTooltip,
+    tooltipClassName: f.listItemTooltip,
     children: e => {
       var t, i;
       return (0, r.jsx)("div", (t = function(e) {

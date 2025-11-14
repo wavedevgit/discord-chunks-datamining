@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 901492, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => c
@@ -32,7 +32,7 @@ function c(e) {
       return i
     }(e, ["channel", "category"]);
   let p = (0, o.ZP)(c, true),
-    h = (0, o.ZP)(u);
+    f = (0, o.ZP)(u);
   return (0, r.jsx)(l.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -62,7 +62,7 @@ function c(e) {
       selectable: false,
       children: a.intl.format(a.t["iKW+jY"], {
         channelName: p,
-        categoryName: h
+        categoryName: f
       })
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

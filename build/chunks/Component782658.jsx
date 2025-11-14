@@ -54,11 +54,11 @@ function N(e) {
     } = (0, l.ZP)(),
     L = (0, a.e7)([h.Z], () => (null == R ? true : R.guild) != null ? h.Z.getGuild(R.guild.id) : null, [R]),
     M = (0, a.e7)([p.default], () => p.default.getId()),
-    j = (0, a.e7)([u.ZP], () => {
+    k = (0, a.e7)([u.ZP], () => {
       var e;
       return u.ZP.getGuildScheduledEvent(null == (e = w.guild_scheduled_event) ? true : e.id)
     }, [w]),
-    k = () => {
+    j = () => {
       null != w.channel && o.ZP.transitionToInviteSync(w)
     },
     U = () => {
@@ -73,7 +73,7 @@ function N(e) {
       })
     },
     G = (0, r.jsx)(v.Z, {
-      onTransitionToInviteChannel: k,
+      onTransitionToInviteChannel: j,
       onAcceptInstantInvite: U,
       currentUserId: M,
       guild: L,
@@ -102,7 +102,7 @@ function N(e) {
       switch ((0, _.VR)(w)) {
         case _.wx.GROUP_DM:
           G = (0, r.jsx)(O.Z, {
-            onTransitionToInviteChannel: k,
+            onTransitionToInviteChannel: j,
             onAcceptInstantInvite: U,
             currentUserId: M,
             invite: w,
@@ -119,7 +119,7 @@ function N(e) {
         default:
           if ((0, _.TY)(w)) {
             G = (0, r.jsx)(A.Z, {
-              onTransitionToInviteChannel: k,
+              onTransitionToInviteChannel: j,
               onAcceptInstantInvite: U,
               currentUserId: M,
               message: n,
@@ -130,12 +130,12 @@ function N(e) {
           }
           if ((0, _.Tx)(w)) {
             G = (0, r.jsx)(d.ZP, {
-              guildScheduledEvent: j,
+              guildScheduledEvent: k,
               guild: w.guild,
               channel: w.channel,
               isMember: null != L,
               onAcceptInstantInvite: U,
-              onTransitionToInviteChannel: k
+              onTransitionToInviteChannel: j
             });
             break
           }
@@ -147,7 +147,7 @@ function N(e) {
             });
             break
           }(0, c.l)(w) && (G = (0, r.jsx)(I.Z, {
-            onTransitionToInviteChannel: k,
+            onTransitionToInviteChannel: j,
             onAcceptInstantInvite: U,
             isMemberOfGuild: null != L,
             invite: w,

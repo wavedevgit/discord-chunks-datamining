@@ -119,8 +119,8 @@ function eL(e, t) {
   }), e
 }
 let eM = new Chunk710845.Z("MediaEngineStore"),
-  ej = "MediaEngineStore",
-  ek = 4,
+  ek = "MediaEngineStore",
+  ej = 4,
   eU = 1,
   eG = 1,
   eB = 1,
@@ -283,8 +283,8 @@ let tR = false,
   tx = {},
   tL = null,
   tM = true,
-  tj = false,
   tk = false,
+  tj = false,
   tU = false;
 
 function tG() {
@@ -431,7 +431,7 @@ function tq(e, t) {
 async function tX(e, t) {
   if ((0, ed.isIOS)() || (0, ed.isMac)()) {
     let e = await e$.getSystemMicrophoneMode();
-    "" !== e && "standard" !== e && j.Z.getConfig({
+    "" !== e && "standard" !== e && k.Z.getConfig({
       location: "setNoiseCancellation"
     }).disabledModes.includes(e) && (t = false)
   }
@@ -800,10 +800,10 @@ let t8 = new class {
 function t5() {
   var e;
   let t = Chunk433517.K.get("audio");
-  null != exports && (Chunk433517.K.set(ej, {
+  null != exports && (Chunk433517.K.set(ek, {
     [Chunk65154.Yn.DEFAULT]: exports
-  }), Chunk433517.K.remove("audio")), e0 = null != (e = Chunk433517.K.get(ej)) ? module : {}, p().each(e0, e => {
-    if (p().defaultsDeep(e, eQ()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, eh.Kd)(e.modeOptions.shortcut)), null != e.modeOptions && e.vadUseKrispSettingVersion !== ek && (e.vadUseKrispSettingVersion = ek, e.modeOptions.vadUseKrisp = true), e.qosMigrated || (e.qosMigrated = true, e.qos = false), !e.vadThrehsoldMigrated) {
+  }), Chunk433517.K.remove("audio")), e0 = null != (e = Chunk433517.K.get(ek)) ? module : {}, p().each(e0, e => {
+    if (p().defaultsDeep(e, eQ()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, eh.Kd)(e.modeOptions.shortcut)), null != e.modeOptions && e.vadUseKrispSettingVersion !== ej && (e.vadUseKrispSettingVersion = ej, e.modeOptions.vadUseKrisp = true), e.qosMigrated || (e.qosMigrated = true, e.qos = false), !e.vadThrehsoldMigrated) {
       var t;
       e.vadThrehsoldMigrated = true, (null == (t = e.modeOptions) ? true : t.threshold) === false && (e.modeOptions.threshold = eW)
     }
@@ -815,11 +815,11 @@ function t6(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eR.Yn.DEFAULT,
     n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     r = tB(t);
-  return Object.assign(r, e), !__OVERLAY__ && n && y.K.set(ej, e0), r
+  return Object.assign(r, e), !__OVERLAY__ && n && y.K.set(ek, e0), r
 }
 
 function t7() {
-  Chunk433517.K.remove(ej), location.reload()
+  Chunk433517.K.remove(ek), location.reload()
 }
 
 function t9() {
@@ -976,7 +976,7 @@ function nf(e) {
   let t = tZ();
   if (t3() && (t4() ? rf(eR.iA.AUTOMATIC) : t.automaticAudioSubsystem && r_()), e$.supports(eR.AN.OFFLOAD_ADM_CONTROLS)) {
     let e = false;
-    (0, ed.isDesktop)() ? e = (0, k.E)({
+    (0, ed.isDesktop)() ? e = (0, j.E)({
       location: "handleConnectionOpen"
     }).enabled: ((0, ed.isIOS)() || (0, ed.isAndroid)()) && (e = (0, U.W)({
       location: "handleConnectionOpen"
@@ -1282,11 +1282,11 @@ function nM(e) {
   }), e$.setAudioInputBypassSystemProcessing(n.bypassSystemInputProcessing), t8.update(), nW()
 }
 
-function nj(e) {
+function nk(e) {
   return e3 !== e.required && (e3 = e.required, e.required || e$.interact(), true)
 }
 
-function nk(e) {
+function nj(e) {
   let {
     inputDevices: t,
     outputDevices: n,
@@ -1389,7 +1389,7 @@ async function nK() {
   var e, t, n, r;
   if (!e$.supports(Chunk65154.AN.VAAPI)) return;
   let i = 4098;
-  (null == (t = window.DiscordNative) || null == (e = exports.processUtils) ? true : module.getSystemInfo) != null && (null != (r = null == (n = (await window.DiscordNative.processUtils.getSystemInfo()).electronGPUInfo) ? true : require.gpuDevice) ? r : []).some(e => e.vendorId === i) && (tU = true, tk = e$.supports(Chunk65154.AN.GAMESCOPE_CAPTURE))
+  (null == (t = window.DiscordNative) || null == (e = exports.processUtils) ? true : module.getSystemInfo) != null && (null != (r = null == (n = (await window.DiscordNative.processUtils.getSystemInfo()).electronGPUInfo) ? true : require.gpuDevice) ? r : []).some(e => e.vendorId === i) && (tU = true, tj = e$.supports(Chunk65154.AN.GAMESCOPE_CAPTURE))
 }
 
 function nz(e) {
@@ -1829,7 +1829,7 @@ function rC(e) {
     let r = n,
       i = eQ();
     return e[r] = p().merge(i, t[r]), e
-  }, {}), y.K.set(ej, e0), t9()
+  }, {}), y.K.set(ek, e0), t9()
 }
 
 function rN(e) {
@@ -1878,10 +1878,10 @@ function rM() {
   tA = false
 }
 
-function rj(e) {
+function rk(e) {
   tM = e.enabled
 }
-class rk extends(u = Chunk442837.ZP.Store) {
+class rj extends(u = Chunk442837.ZP.Store) {
   initialize() {
     t$(), t5(), ra(), nA(), tx = {
       [Chunk65154.AN.VIDEO]: e$.supports(Chunk65154.AN.VIDEO),
@@ -2251,7 +2251,7 @@ class rk extends(u = Chunk442837.ZP.Store) {
     return tU
   }
   getUseGamescopeCapture() {
-    return tk
+    return tj
   }
   getOpenH264() {
     return tZ().openH264
@@ -2273,10 +2273,10 @@ class rk extends(u = Chunk442837.ZP.Store) {
     return null != (e = tZ().modeOptions.vadKrispActivationThreshold) ? module : eF
   }
   hasActiveCallKitCall() {
-    return tj
+    return tk
   }
   setHasActiveCallKitCall(e) {
-    tj = e
+    tk = e
   }
   supportsScreenSoundshare() {
     return (0, Chunk358085.isMac)() ? e$.supports(Chunk65154.AN.SOUNDSHARE) && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.yG) && t2() : (0, Chunk358085.isWindows)() ? e$.supports(Chunk65154.AN.SCREEN_SOUNDSHARE) && this.getExperimentalSoundshare() : !!(0, Chunk358085.isLinux)() && e$.supports(Chunk65154.AN.SCREEN_SOUNDSHARE)
@@ -2359,8 +2359,8 @@ function rU(e) {
       t["delayed_task_".concat(e, "_name")] = n.name, t["delayed_task_".concat(e, "_longest_queue_time_ns")] = n.longestQueueTimeNs
     } return t.full_task_report = JSON.stringify(n), t
 }
-eD(rk, "displayName", "MediaEngineStore");
-let rG = r = new rk(Chunk570140.Z, {
+eD(rj, "displayName", "MediaEngineStore");
+let rG = r = new rj(Chunk570140.Z, {
   VOICE_CHANNEL_SELECT: rp,
   VOICE_STATE_UPDATES: ng,
   CONNECTION_OPEN: nf,
@@ -2398,7 +2398,7 @@ let rG = r = new rk(Chunk570140.Z, {
   MEDIA_ENGINE_SET_USE_SYSTEM_SCREENSHARE_PICKER: n8,
   AUDIO_SET_ATTENUATION: n5,
   AUDIO_SET_QOS: n6,
-  MEDIA_ENGINE_DEVICES: nk,
+  MEDIA_ENGINE_DEVICES: nj,
   AUDIO_VOLUME_CHANGE: nU,
   AUDIO_RESET: n7,
   AUDIO_INPUT_DETECTED: n9,
@@ -2410,7 +2410,7 @@ let rG = r = new rk(Chunk570140.Z, {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: rv,
   MEDIA_ENGINE_SET_VIDEO_DEVICE: nL,
   MEDIA_ENGINE_SET_EXPERIMENTAL_ENCODERS: n$,
-  MEDIA_ENGINE_INTERACTION_REQUIRED: nj,
+  MEDIA_ENGINE_INTERACTION_REQUIRED: nk,
   USER_SETTINGS_MODAL_INIT: rI,
   USER_SETTINGS_MODAL_SET_SECTION: rI,
   CERTIFIED_DEVICES_SET: rT,
@@ -2433,7 +2433,7 @@ let rG = r = new rk(Chunk570140.Z, {
   USER_SETTINGS_PROTO_UPDATE: nO,
   CLIPS_INIT: ry,
   CLIPS_SETTINGS_UPDATE: rO,
-  MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE: rj,
+  MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE: rk,
   VOICE_FILTER_REQUEST_SWITCH: rs,
   VOICE_FILTER_LOOPBACK_TOGGLE: ro,
   VOICE_FILTER_APPLIED: rc,

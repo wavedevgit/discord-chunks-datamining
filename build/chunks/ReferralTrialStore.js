@@ -83,14 +83,14 @@ function M(e) {
   g.add(e)
 }
 
-function j(e) {
+function k(e) {
   let {
     userTrialOffer: t
   } = e;
   null != t && (g.delete(t.id), E.add(t.id), b.set(t.id, t))
 }
 
-function k(e) {
+function j(e) {
   let {
     userTrialOfferId: t
   } = e;
@@ -194,8 +194,8 @@ let W = new Y(Chunk570140.Z, {
   BILLING_REFERRALS_REMAINING_FETCH_FAIL: w,
   BILLING_CREATE_REFERRAL_SUCCESS: x,
   CREATE_REFERRALS_SUCCESS: L,
-  BILLING_REFERRAL_RESOLVE_SUCCESS: j,
-  BILLING_REFERRAL_RESOLVE_FAIL: k,
+  BILLING_REFERRAL_RESOLVE_SUCCESS: k,
+  BILLING_REFERRAL_RESOLVE_FAIL: j,
   REFERRALS_FETCH_ELIGIBLE_USER_START: F,
   REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: V,
   REFERRALS_FETCH_ELIGIBLE_USER_FAIL: H,

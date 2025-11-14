@@ -20,11 +20,11 @@ function h(e) {
     targetElementRef: t,
     markAsDismissed: n,
     children: h
-  } = e, x = (0, i.e7)([o.default], () => o.default.getId()), g = (0, i.e7)([l.Z], () => l.Z.useReducedMotion), f = (0, c.bg)({
+  } = e, x = (0, r.e7)([o.default], () => o.default.getId()), g = (0, r.e7)([l.Z], () => l.Z.useReducedMotion), f = (0, c.bg)({
     location: "GameWidgetsPopover"
   });
   return (0, a.jsxs)(a.Fragment, {
-    children: [h, (0, a.jsx)(r.J2, {
+    children: [h, (0, a.jsx)(i.J2, {
       targetElementRef: t,
       badge: f ? {
         type: "early_access",

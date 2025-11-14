@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 98493, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => d,
@@ -17,13 +17,13 @@ function d(e) {
   let {
     guildId: t,
     guildJoinRequests: n
-  } = e, i = r.useRef(false), [d, p] = r.useState(null), h = r.useRef(null), f = r.useRef(false);
+  } = e, i = r.useRef(false), [d, p] = r.useState(null), f = r.useRef(null), h = r.useRef(false);
   return {
     fetchNextPage: r.useCallback(async (e, r) => {
       if (i.current) return;
       let g = "".concat(e, "-").concat(r),
         m = false;
-      if (g !== h.current && (h.current = g, f.current = false, m = true), f.current) return;
+      if (g !== f.current && (f.current = g, h.current = false, m = true), h.current) return;
       null != d && p(null);
       let b = function(e, t, n, r) {
         let i = n === c.wB.SUBMITTED;
@@ -75,7 +75,7 @@ function d(e) {
           let {
             guild_join_requests: t
           } = e.body;
-          t.length < u && (f.current = true)
+          t.length < u && (h.current = true)
         }
       } catch (e) {
         p(new o.Hx(e).getAnyErrorMessage())

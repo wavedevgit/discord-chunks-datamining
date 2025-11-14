@@ -27,9 +27,9 @@ let u = e => {
   let {
     name: t,
     children: n,
-    copyValue: r
-  } = e, [l, d] = i.useState(false);
-  return i.useEffect(() => {
+    copyValue: i
+  } = e, [l, d] = r.useState(false);
+  return r.useEffect(() => {
     if (l) {
       let e = setTimeout(() => d(false), 1e3);
       return () => clearTimeout(e)
@@ -40,10 +40,10 @@ let u = e => {
       children: t
     }), (0, a.jsxs)("dd", {
       className: c.propertyValue,
-      children: [n, null != r ? (0, a.jsx)(s.P3F, {
+      children: [n, null != i ? (0, a.jsx)(s.P3F, {
         tag: "span",
         className: c.copyPropertyButton,
-        onClick: () => (0, o.JG)(r, () => d(true)),
+        onClick: () => (0, o.JG)(i, () => d(true)),
         children: l ? (0, a.jsx)(s.kmB, {
           color: "currentColor",
           size: "sm"

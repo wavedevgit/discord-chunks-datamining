@@ -1,4 +1,4 @@
-/** Chunk was on 38058 **/
+/** Chunk was on 36113 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -86,12 +86,12 @@ function D(e) {
     wishlistId: n,
     currentUser: _,
     wishlistSettings: P
-  } = (0, l.cj)([v.Z, h.default], () => {
-    let e = v.Z.getFirstWishlistId(t.id);
+  } = (0, l.cj)([O.Z, h.default], () => {
+    let e = O.Z.getFirstWishlistId(t.id);
     return {
       wishlistId: e,
       currentUser: h.default.getCurrentUser(),
-      wishlistSettings: null != e ? v.Z.getWishlistSettings(t.id, e) : null
+      wishlistSettings: null != e ? O.Z.getWishlistSettings(t.id, e) : null
     }
   }), D = (0, g.c)({
     location: "user-profile-modal-v2-wishlist"
@@ -102,9 +102,9 @@ function D(e) {
     (null == P ? true : P.visibility) != null && R(P.visibility === a.f.PUBLIC)
   }, [null == P ? true : P.visibility]);
   let {
-    wishlist: G,
-    error: L
-  } = (0, b.kZ)(n, t.id), B = i.useCallback(e => {
+    wishlist: L,
+    error: M
+  } = (0, b.kZ)(n, t.id), G = i.useCallback(e => {
     let {
       wishlistId: t,
       action: n,
@@ -116,22 +116,22 @@ function D(e) {
       skuId: r,
       analyticsLocations: k
     })
-  }, [k]), M = (0, O.Z)({
+  }, [k]), B = (0, v.Z)({
     wishlistId: n,
-    onAction: B
+    onAction: G
   }), U = i.useCallback(() => {
     var e;
     if (null == n) return;
     let t = Z ? a.f.PRIVATE : a.f.PUBLIC;
     R(!Z), m.Z.updateWishlistVisibility(n, t);
-    let r = null != (e = null == G ? true : G.hasThirdPartySku()) && e;
+    let r = null != (e = null == L ? true : L.hasThirdPartySku()) && e;
     (0, y.Er)({
       wishlistId: n,
       action: Z ? I.NW.WISHLIST_TOGGLE_PRIVATE : I.NW.WISHLIST_TOGGLE_PUBLIC,
       analyticsLocations: k,
       hasThirdPartySku: r
     })
-  }, [n, Z, k, G]), F = i.useCallback(() => {
+  }, [n, Z, k, L]), F = i.useCallback(() => {
     (0, o.pT)(), (0, f.mK)({
       analyticsLocations: k,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
@@ -141,7 +141,7 @@ function D(e) {
       guildId: w.ON
     })
   }, []);
-  return null != L ? null : null == G || 0 === G.items.length ? (0, r.jsx)(j.F, {
+  return null != M ? null : null == L || 0 === L.items.length ? (0, r.jsx)(j.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
       className: E.emptyStateContainer,
@@ -177,7 +177,7 @@ function D(e) {
     className: E.scroller,
     fade: true,
     children: [(0, r.jsxs)("div", {
-      ref: M,
+      ref: B,
       className: E.headerRow,
       children: [(0, r.jsxs)("div", {
         className: E.teenDisclaimer,
@@ -185,7 +185,7 @@ function D(e) {
           variant: "text-xs/semibold",
           color: "text-secondary",
           children: S.intl.format(S.t.r6Y1Lg, {
-            count: G.items.length
+            count: L.items.length
           })
         }), !Z && (0, r.jsx)(c.u, {
           text: S.intl.string(S.t.RX7D9h),
@@ -228,7 +228,7 @@ function D(e) {
         handleOpenGameShop: W
       })]
     }), (0, r.jsx)(x.Z, {
-      items: G.items,
+      items: L.items,
       profileOwner: t,
       isOwner: N
     })]

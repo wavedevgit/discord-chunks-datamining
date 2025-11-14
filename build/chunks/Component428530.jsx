@@ -42,7 +42,7 @@ function x(e) {
   } = e, n = (0, l.ZP)();
   return (0, a.jsx)("div", {
     className: c.inspectorWrapper,
-    children: (0, a.jsx)(i.L, {
+    children: (0, a.jsx)(r.L, {
       data: t,
       theme: "light" === n ? p : m,
       invertTheme: false,

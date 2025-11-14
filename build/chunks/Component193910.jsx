@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 193910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -66,8 +66,8 @@ function L(e) {
     options: b,
     onFileUpload: x,
     onClose: L,
-    onSelect: D,
-    draftType: k,
+    onSelect: k,
+    draftType: D,
     editorTextContent: U,
     setValue: B,
     openClips: H
@@ -160,7 +160,7 @@ function L(e) {
       r = U.match(M);
     null != r && (i = r[1], n = r[2], e = r[3], i += r[4]), (0, S.d)([(0, E.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, k), O.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== i && O.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, D), O.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== i && O.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
       plainText: i
     })
   }
@@ -171,7 +171,7 @@ function L(e) {
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id]), (0, i.jsx)(s.v2r, {
-    onSelect: D,
+    onSelect: k,
     navId: "channel-attach",
     onClose: L,
     "aria-label": A.intl.string(A.t.Xm41aV),

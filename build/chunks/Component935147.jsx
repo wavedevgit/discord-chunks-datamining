@@ -182,7 +182,7 @@ function z(e) {
               variant: "text-sm/normal",
               children: F.intl.string(F.t.xeEC20)
             })]
-          }), (0, r.jsx)(k.Z, {
+          }), (0, r.jsx)(j.Z, {
             className: V.customizationSection,
             user: H,
             pendingAvatarSrc: (0, I.SD)({
@@ -214,7 +214,7 @@ function z(e) {
           }), (0, r.jsx)(x.Z, {
             user: H,
             className: V.customizationSection
-          }), !eo && (0, r.jsx)(j.Z, {
+          }), !eo && (0, r.jsx)(k.Z, {
             className: V.customizationSection,
             sectionTitle: F.intl.string(F.t.wR5wOo),
             user: H,

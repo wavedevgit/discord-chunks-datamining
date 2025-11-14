@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 91053 **/
 /** chunk id: 842332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => h
@@ -75,7 +75,7 @@ function h(e) {
         loading: f
       }
     }, [_, y, f, n, h.textValue]),
-    x = i.useCallback(function() {
+    j = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       return _ ? (0, r.jsx)(a.u, {
         text: u.intl.string(u.t.ZF2oBs),
@@ -95,7 +95,7 @@ function h(e) {
     isGeneratingAI: f,
     generateAIName: y,
     enableAIFeatures: _,
-    renderAiGenerateButton: x,
+    renderAiGenerateButton: j,
     getThreadNameInputAccessory: O
   }
 }

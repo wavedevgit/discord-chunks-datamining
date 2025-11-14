@@ -25,8 +25,8 @@ let l = {
         null != module.current && module.current.stopIfPlaying("all")
       }, []),
       c = Chunk647438.useCallback(t => {
-        var i, s;
-        return (0, a.jsx)(r.L, (i = function(e) {
+        var r, s;
+        return (0, a.jsx)(i.L, (r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               a = Object.keys(n);
@@ -47,7 +47,7 @@ let l = {
           src: () => n.e("2199").then(n.t.bind(n, 71307, 19)),
           ref: e,
           markers: l
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var a = Object.getOwnPropertySymbols(e);
@@ -55,8 +55,8 @@ let l = {
           }
           return n
         })(Object(s)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
-        }), i))
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(s, e))
+        }), r))
       }, []);
     return {
       events: {

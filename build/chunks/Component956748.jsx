@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk492938 = require("./492938.js");
@@ -13,15 +13,15 @@ let c = e => {
   let {
     showStatus: t,
     width: n,
-    opacity: i,
+    opacity: r,
     size: c = "default"
   } = e, d = "small" === c ? l.EFr.SIZE_24 : l.EFr.SIZE_32;
   return (0, a.jsxs)("div", {
-    className: r()(o.nameplatePlaceholderUserRow, {
+    className: i()(o.nameplatePlaceholderUserRow, {
       [o.smallRow]: "small" === c
     }),
     style: {
-      opacity: i
+      opacity: r
     },
     children: [(0, a.jsx)(l.qEK, {
       src: null,
@@ -31,7 +31,7 @@ let c = e => {
       "aria-hidden": true,
       imageClassName: o.nameplatePlaceholderAvatar
     }), (0, a.jsx)("div", {
-      className: r()(o.nameplatePlaceholderBar, {
+      className: i()(o.nameplatePlaceholderBar, {
         [o.smallBar]: "small" === c
       }),
       style: {

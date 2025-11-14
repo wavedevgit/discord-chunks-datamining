@@ -111,7 +111,7 @@ function I(e) {
     M = i.useCallback(() => {
       null !== D.current && D.current.pause(), null == N || N()
     }, [N]),
-    j = i.useCallback(() => {
+    k = i.useCallback(() => {
       null !== D.current && D.current.pause();
       let e = x();
       (0, l.K)({
@@ -121,7 +121,7 @@ function I(e) {
         shouldHideMediaOptions: true
       }), null == N || N(), null == C || C()
     }, [x, C, N]),
-    k = w ? (0, r.jsx)(a.zsu, {
+    j = w ? (0, r.jsx)(a.zsu, {
       type: "image",
       src: b
     }) : (0, r.jsxs)(r.Fragment, {
@@ -142,7 +142,7 @@ function I(e) {
           playing: false,
           size: "sm",
           "aria-label": h.intl.string(p.default.YpT3kk),
-          onClick: j
+          onClick: k
         })
       })]
     });
@@ -157,7 +157,7 @@ function I(e) {
         caretConfig: T
       }), (0, r.jsx)("div", {
         className: m.assetContainer,
-        children: k
+        children: j
       }), (0, r.jsx)(f.Y, {
         title: t,
         body: n,

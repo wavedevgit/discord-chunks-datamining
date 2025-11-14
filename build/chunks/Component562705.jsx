@@ -25,8 +25,8 @@ function j(e) {
   let {
     groupName: t,
     targetElementRef: n
-  } = e, i = (0, h.Z)(), s = (0, r.e7)([o.Z], () => o.Z.useReducedMotion), m = (0, d.Z)(e => e.isOpen), p = (0, r.e7)([u.Z], () => u.Z.getLayers().includes(f.S9g.USER_SETTINGS));
-  return s || null == i || m || p ? null : (0, a.jsx)(c.Nq, {
+  } = e, r = (0, h.Z)(), s = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), m = (0, d.Z)(e => e.isOpen), p = (0, i.e7)([u.Z], () => u.Z.getLayers().includes(f.S9g.USER_SETTINGS));
+  return s || null == r || m || p ? null : (0, a.jsx)(c.Nq, {
     contentType: l.z.NITRO_TENURE_BADGE_LEVEL_UP,
     timeRecurringConfig: {
       cooldownDurationMs: 12096e5
@@ -35,11 +35,11 @@ function j(e) {
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: r
+        markAsDismissed: i
       } = e;
       return (0, a.jsx)(_, {
-        recentlyLeveledTenureBadge: i,
-        markAsDismissed: r,
+        recentlyLeveledTenureBadge: r,
+        markAsDismissed: i,
         targetElementRef: n,
         shouldShow: t === l.z.NITRO_TENURE_BADGE_LEVEL_UP
       })
@@ -51,18 +51,18 @@ function _(e) {
   var t;
   let {
     recentlyLeveledTenureBadge: n,
-    markAsDismissed: r,
+    markAsDismissed: i,
     targetElementRef: l,
     shouldShow: o
   } = e, c = g.Qh.indexOf(n), u = (0, x.J)(g.Qh[c > 0 ? c - 1 : c], {
     ambient: true
-  }), h = (0, i.useCallback)(() => {
-    r(b.L.TAKE_ACTION), d.Z.setState({
+  }), h = (0, r.useCallback)(() => {
+    i(b.L.TAKE_ACTION), d.Z.setState({
       shouldRenderTenureLevelUp: true
     }), m.S.dispatch(f.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
-  }, [r]), j = (0, i.useCallback)(() => {
-    r(b.L.USER_DISMISS)
-  }, [r]), _ = g.vK[n], y = v.intl.formatToPlainString(v.t.ewkaVR, {
+  }, [i]), j = (0, r.useCallback)(() => {
+    i(b.L.USER_DISMISS)
+  }, [i]), _ = g.vK[n], y = v.intl.formatToPlainString(v.t.ewkaVR, {
     timeMilestone: null == (t = (0, p.q)(_.id, _.tenureReqNumMonths)) ? true : t.toLocaleLowerCase()
   }), C = [{
     text: v.intl.string(v.t.RzWDqY),

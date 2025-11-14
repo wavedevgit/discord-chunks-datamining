@@ -122,13 +122,13 @@ exports.default = function() {
         value: "select",
         description: '"select"'
       },
-      j = function(e) {
+      k = function(e) {
         return {
           type: "selectFormat",
           options: e
         }
       },
-      k = "=",
+      j = "=",
       U = {
         type: "literal",
         value: "=",
@@ -328,7 +328,7 @@ exports.default = function() {
 
     function ex() {
       var e;
-      return (e = eM()) === i && (e = ek()), e
+      return (e = eM()) === i && (e = ej()), e
     }
 
     function eL() {
@@ -344,7 +344,7 @@ exports.default = function() {
       return e = eO, (t = eL()) !== i && (ev = e, t = u(t)), e = t
     }
 
-    function ej() {
+    function ek() {
       var e, n, r;
       if ((e = eQ()) === i) {
         if (e = eO, n = [], d.test(t.charAt(eO)) ? (r = t.charAt(eO), eO++) : (r = i, 0 === eC && eR(f)), r !== i)
@@ -355,9 +355,9 @@ exports.default = function() {
       return e
     }
 
-    function ek() {
+    function ej() {
       var e, n, r, a, o, s, c;
-      return e = eO, 123 === t.charCodeAt(eO) ? (n = _, eO++) : (n = i, 0 === eC && eR(p)), n !== i && ez() !== i && (r = ej()) !== i && ez() !== i ? (a = eO, 44 === t.charCodeAt(eO) ? (o = m, eO++) : (o = i, 0 === eC && eR(g)), o !== i && (s = ez()) !== i && (c = eU()) !== i ? a = o = [o, s, c] : (eO = a, a = l), a === i && (a = h), a !== i && (o = ez()) !== i ? (125 === t.charCodeAt(eO) ? (s = E, eO++) : (s = i, 0 === eC && eR(b)), s !== i ? (ev = e, e = n = y(r, a)) : (eO = e, e = l)) : (eO = e, e = l)) : (eO = e, e = l), e
+      return e = eO, 123 === t.charCodeAt(eO) ? (n = _, eO++) : (n = i, 0 === eC && eR(p)), n !== i && ez() !== i && (r = ek()) !== i && ez() !== i ? (a = eO, 44 === t.charCodeAt(eO) ? (o = m, eO++) : (o = i, 0 === eC && eR(g)), o !== i && (s = ez()) !== i && (c = eU()) !== i ? a = o = [o, s, c] : (eO = a, a = l), a === i && (a = h), a !== i && (o = ez()) !== i ? (125 === t.charCodeAt(eO) ? (s = E, eO++) : (s = i, 0 === eC && eR(b)), s !== i ? (ev = e, e = n = y(r, a)) : (eO = e, e = l)) : (eO = e, e = l)) : (eO = e, e = l), e
     }
 
     function eU() {
@@ -389,7 +389,7 @@ exports.default = function() {
               if (a = [], (o = eH()) !== i)
                 for (; o !== i;) a.push(o), o = eH();
               else a = l;
-              a !== i ? (ev = e, e = n = j(a)) : (eO = e, e = l)
+              a !== i ? (ev = e, e = n = k(a)) : (eO = e, e = l)
             } else eO = e, e = l;
       else eO = e, e = l;
       else eO = e, e = l;
@@ -399,7 +399,7 @@ exports.default = function() {
 
     function eV() {
       var e, n, r, a;
-      return e = eO, n = eO, 61 === t.charCodeAt(eO) ? (r = k, eO++) : (r = i, 0 === eC && eR(U)), r !== i && (a = eQ()) !== i ? n = r = [r, a] : (eO = n, n = l), n !== i && (n = t.substring(e, eO)), (e = n) === i && (e = e$()), e
+      return e = eO, n = eO, 61 === t.charCodeAt(eO) ? (r = j, eO++) : (r = i, 0 === eC && eR(U)), r !== i && (a = eQ()) !== i ? n = r = [r, a] : (eO = n, n = l), n !== i && (n = t.substring(e, eO)), (e = n) === i && (e = e$()), e
     }
 
     function eH() {

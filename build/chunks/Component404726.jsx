@@ -86,21 +86,21 @@ function d(e) {
       autoBind: true
     }), L.setupRiveListeners())
   }, [L, _, D, b]);
-  let j = i.useRef(0);
+  let k = i.useRef(0);
   i.useEffect(() => {
     if (null == L) return;
     L.play();
     let e = t => {
-      null != t.data && "number" == typeof t.data && (j.current = t.data, t.data > 0 && ("halt" === y && N.reducedMotion.enabled && L.isPlaying && L.pause(), L.off(o.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (k.current = t.data, t.data > 0 && ("halt" === y && N.reducedMotion.enabled && L.isPlaying && L.pause(), L.off(o.EventType.Advance, e)))
     };
     return L.on(o.EventType.Advance, e), () => {
       L.off(o.EventType.Advance, e)
     }
   }, [L, N.reducedMotion.enabled, y]);
-  let k = i.useRef(false);
+  let j = i.useRef(false);
   return i.useEffect(() => {
-    if (null != L) return !P && k.current && L.isPlaying && j.current > 0 ? L.pause() : P && !L.isPlaying && k.current && L.play(), () => {
-      null != L && P && (k.current = null != L.frameRequestId)
+    if (null != L) return !P && j.current && L.isPlaying && k.current > 0 ? L.pause() : P && !L.isPlaying && j.current && L.play(), () => {
+      null != L && P && (j.current = null != L.frameRequestId)
     }
   }, [L, P]), (0, r.jsx)(M, {
     className: p,

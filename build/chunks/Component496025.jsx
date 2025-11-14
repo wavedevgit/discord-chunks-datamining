@@ -1,7 +1,7 @@
 /** Chunk was on 99904 **/
 /** chunk id: 496025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => T
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
 function E() {
   var e;
   let t = (0, Chunk442837.Wu)([Chunk55589.Z], () => Chunk55589.Z.getSortedChannels()[1]),
-    [n, r] = Chunk647438.useState(exports.length > 0 ? exports[0].channelId : true),
+    [n, i] = Chunk647438.useState(exports.length > 0 ? exports[0].channelId : true),
     {
       selectedChannel: l,
       options: d
@@ -83,7 +83,7 @@ function E() {
   })
 }
 
-function T() {
+function O() {
   let e = Chunk647438.useCallback(() => {
     Chunk493683.Z.openPrivateChannel({
       recipientIds: [Chunk37812.I]
@@ -97,13 +97,13 @@ function T() {
   })
 }
 
-function O() {
+function T() {
   let e = (0, Chunk442837.e7)([Chunk432877.ZP], () => Chunk432877.ZP.allByCategory(Chunk432877.zU.MESSAGING), [], Chunk442837.pF).map(e => {
     let [t, n, {
-      label: i
+      label: r
     }] = e;
     return (0, a.jsx)(c.rsf, {
-      label: i,
+      label: r,
       description: t,
       checked: n,
       onChange: e => (0, v.Z)(t, e)
@@ -115,6 +115,6 @@ function O() {
       className: Chunk165432.divider
     }), (0, Chunk951288.jsx)(E, {}), (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk951288.jsx)(T, {})]
+    }), (0, Chunk951288.jsx)(O, {})]
   })
 }

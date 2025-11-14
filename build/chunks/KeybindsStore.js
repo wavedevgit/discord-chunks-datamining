@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   Ek: () => w,
-  I1: () => k,
+  I1: () => j,
   ZP: () => ev,
   vN: () => B
 }), require("./388685.js"), require("./539854.js"), require("./704826.js"), require("./35282.js");
@@ -86,7 +86,7 @@ function x() {
 }
 let L = "1001",
   M = 10,
-  j = function(e) {
+  k = function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     return {
       id: L,
@@ -97,7 +97,7 @@ let L = "1001",
       params: {}
     }
   },
-  k = e => {
+  j = e => {
     let t = (0, y.UR)("shift");
     return null != t && (1 !== e.length || e[0][1] !== t)
   },
@@ -129,7 +129,7 @@ function G(e) {
   let n = (0, y.Kd)(e),
     r = (0, b.T_)("`"),
     i = null != (t = null == r ? true : r.keyCode) ? t : (0, y.UR)("`");
-  return k(n) ? n : null == i ? (U("Unable to get backtick code for overlay default keybind", e, n, {
+  return j(n) ? n : null == i ? (U("Unable to get backtick code for overlay default keybind", e, n, {
     rawBacktickShape: r
   }), null) : (U("Default overlay keybind is unsupported", e, n, {
     rawBacktickCode: i
@@ -139,13 +139,13 @@ let B = () => {
     let e = x();
     "shift" === module && (U("Default overlay keybind is only shift", module, null), e = "shift+`");
     let t = G(module);
-    if (null == exports) return j([], false);
-    if (k(exports)) return j(exports, true);
+    if (null == exports) return k([], false);
+    if (j(exports)) return k(exports, true);
     let n = (0, Chunk13140.UR)("shift"),
       r = (0, Chunk378799.T_)("`");
     return 0 === exports.length ? U("Default overlay keybind combo is empty", module, exports) : null == require ? U("Unable to get shift code", module, exports, {
       shiftCode: require
-    }) : null == r && U("Unable to get backtick code", module, exports), j(exports, false)
+    }) : null == r && U("Unable to get backtick code", module, exports), k(exports, false)
   },
   Z = {},
   F = {},

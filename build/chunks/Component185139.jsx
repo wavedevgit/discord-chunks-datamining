@@ -45,26 +45,26 @@ function O(e) {
     hasCurrencies: L = false
   } = e, M = null;
   null != v && null == (0, p.ly)(v) ? M = v : null != R ? M = R : null != D && (M = D);
-  let j = null != M ? M.message : "";
-  null != M && M instanceof d.HF && (M.code === f.SM.CARD_DECLINED && L && (j += " ".concat(E.intl.string(E.t.iWvwQS))), M.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (j = E.intl.string(E.t.ypuSd8)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (j = E.intl.string(E.t.mXMmWE)));
+  let k = null != M ? M.message : "";
+  null != M && M instanceof d.HF && (M.code === f.SM.CARD_DECLINED && L && (k += " ".concat(E.intl.string(E.t.iWvwQS))), M.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (k = E.intl.string(E.t.ypuSd8)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (k = E.intl.string(E.t.mXMmWE)));
   let {
-    stripe: k
+    stripe: j
   } = (0, _.JL)();
-  N = N || null == k;
+  N = N || null == j;
   let U = i.useRef(new l.V7);
   i.useEffect(() => {
     let e = U.current;
-    return null != k || e.isStarted() ? null != k && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
+    return null != j || e.isStarted() ? null != j && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
       let e = Error("Stripe took too long to load");
       (0, h.q2)(e)
     }), () => {
       e.stop()
     }
-  }, [k]);
+  }, [j]);
   let G = t.includes(p.h8.PAYMENT_TYPE) ? p.h8.PAYMENT_TYPE : p.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(a.Elements, {
     options: g.OBo,
-    stripe: k,
+    stripe: j,
     children: [I, (0, r.jsxs)("div", {
       className: s()("paymentModalContent", b.content),
       children: [S && n !== p.h8.CONFIRM ? (0, r.jsx)(u.Z, {
@@ -89,7 +89,7 @@ function O(e) {
           ref: P,
           children: (0, r.jsx)(c.M14, {
             type: "critical",
-            children: j
+            children: k
           })
         }), N ? (0, r.jsx)(c.$jN, {
           className: b.loadingBlock

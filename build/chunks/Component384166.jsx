@@ -1,4 +1,4 @@
-/** Chunk was on 38058 **/
+/** Chunk was on 36113 **/
 /** chunk id: 384166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -54,7 +54,7 @@ function j(e) {
       d.S.unsubscribe(y.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
-    I && s.uvj.announce(v.intl.string(v.t["0Y/qkL"]))
+    I && s.uvj.announce(O.intl.string(O.t["0Y/qkL"]))
   }, [I]);
   let T = i.useCallback(async () => {
       try {
@@ -88,27 +88,27 @@ function j(e) {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
-      className: l()(O.content, {
-        [O.emphasized]: a
+      className: l()(v.content, {
+        [v.emphasized]: a
       }),
-      "aria-label": v.intl.string(v.t["odDw+z"]),
+      "aria-label": O.intl.string(O.t["odDw+z"]),
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/medium",
         color: "text-primary",
-        className: O.message,
-        children: v.intl.string(v.t["/lQiX/"])
+        className: v.message,
+        children: O.intl.string(O.t["/lQiX/"])
       }), (0, r.jsxs)("div", {
-        className: O.actions,
+        className: v.actions,
         children: [(0, r.jsx)(s.Button, {
           size: "sm",
           variant: "secondary",
-          text: v.intl.string(v.t.yBZMsQ),
+          text: O.intl.string(O.t.yBZMsQ),
           onClick: C,
           disabled: !I || w
         }), (0, r.jsx)(s.Button, {
           size: "sm",
           variant: "primary",
-          text: v.intl.string(v.t["R3BPH+"]),
+          text: O.intl.string(O.t["R3BPH+"]),
           onClick: T,
           loading: w,
           disabled: !I || w

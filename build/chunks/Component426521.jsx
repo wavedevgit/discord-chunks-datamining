@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 426521, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => U
@@ -43,7 +43,7 @@ function D(e) {
   } = e, u = null == (t = c.message) ? true : t.content;
   if (null == u) return (0, r.jsx)("div", {});
   let d = null != (a = b.default.getUser(null == (i = c.message) || null == (n = i.author) ? true : n.id)) ? a : new m.Z(null == (l = c.message) ? true : l.author),
-    h = p.Z.parse(u);
+    f = p.Z.parse(u);
   return (0, r.jsxs)("div", {
     className: T.messagePreviewContainer,
     children: [(0, r.jsx)(s.Z, {
@@ -53,7 +53,7 @@ function D(e) {
       className: T.messagePreviewText,
       variant: "text-sm/normal",
       lineClamp: 2,
-      children: h
+      children: f
     })]
   })
 }
@@ -99,7 +99,7 @@ function k(e) {
   let {
     applicationId: t
   } = e, n = (0, l.e7)([u.Z], () => u.Z.getApplication(t));
-  return null == n ? (0, r.jsx)("div", {}) : (0, r.jsx)(h.Z, {
+  return null == n ? (0, r.jsx)("div", {}) : (0, r.jsx)(f.Z, {
     application: n
   }, n.id)
 }
@@ -110,8 +110,8 @@ let G = Chunk647438.memo(function(e) {
       ackedBeforeId: s
     } = e, {
       analyticsLocations: u
-    } = (0, c.ZP)(), h = (0, S.I)(l, s), g = i.useCallback(async () => {
-      if (h || (0, v.wt)(l), null != l.item_enum && l.item_enum === j.AM.FIND_FRIENDS) return void(0, o.ZDy)(async () => {
+    } = (0, c.ZP)(), f = (0, S.I)(l, s), g = i.useCallback(async () => {
+      if (f || (0, v.wt)(l), null != l.item_enum && l.item_enum === j.AM.FIND_FRIENDS) return void(0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("6074").then(n.bind(n, 443189));
@@ -146,7 +146,7 @@ let G = Chunk647438.memo(function(e) {
           let t = r.match("^/users/(\\d+)");
           if (null != t && 2 === t.length) {
             var e;
-            (0, f.openUserProfileModal)({
+            (0, h.openUserProfileModal)({
               userId: t[1],
               messageId: null == (e = l.message) ? true : e.id,
               sourceAnalyticsLocations: u
@@ -157,10 +157,10 @@ let G = Chunk647438.memo(function(e) {
           action_type: j.ud.CLICKED,
           notification_center_id: l.id,
           item_type: l.type,
-          acked: h
+          acked: f
         })
       }
-    }, [l, h, u]), m = null;
+    }, [l, f, u]), m = null;
     l.type === j.O7.INCOMING_FRIEND_REQUESTS && null != l.other_user ? m = (0, r.jsx)(P.Z, {
       userId: l.other_user.id
     }) : l.type === j.O7.INCOMING_GAME_FRIEND_REQUESTS && null != l.other_user && (m = (0, r.jsx)(P.Z, {
@@ -192,7 +192,7 @@ let G = Chunk647438.memo(function(e) {
         },
         "aria-label": E,
         onClick: g,
-        children: [h ? null : (0, r.jsx)("div", {
+        children: [f ? null : (0, r.jsx)("div", {
           className: T.unread
         }), (0, r.jsx)(I.U, {
           item: l
@@ -202,7 +202,7 @@ let G = Chunk647438.memo(function(e) {
             item: l
           }), (0, r.jsxs)(o.Text, {
             variant: "text-md/normal",
-            color: h ? "text-muted" : "text-default",
+            color: f ? "text-muted" : "text-default",
             children: ["string" != typeof E ? E : p.Z.parse(E), R]
           }), (null == (t = l.message) ? true : t.content) != null ? (0, r.jsx)(D, {
             item: l
@@ -210,7 +210,7 @@ let G = Chunk647438.memo(function(e) {
             item: l
           }) : null, (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
-            color: h ? "text-muted" : "header-secondary",
+            color: f ? "text-muted" : "header-secondary",
             children: (0, x.a3)(y.default.extractTimestamp(l.id))
           }), m]
         })]

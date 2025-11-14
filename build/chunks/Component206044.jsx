@@ -79,8 +79,8 @@ let w = (0, Chunk203463.animated)(Chunk481060.CJ0),
       expansionSpring: x,
       isAnimating: L,
       isExpanded: M,
-      isInteracting: j,
-      contentPosition: k,
+      isInteracting: k,
+      contentPosition: j,
       toggleExpanded: U,
       sourceQuestContent: G
     } = e, {
@@ -94,7 +94,7 @@ let w = (0, Chunk203463.animated)(Chunk481060.CJ0),
         questId: a.id,
         questContent: N,
         questContentCTA: M ? p.jZ.COLLAPSE : p.jZ.EXPAND,
-        questContentPosition: k,
+        questContentPosition: j,
         sourceQuestContent: G
       })
     }, er = () => null != F && null != H && F < H, ei = (0, r.jsx)(b.ZP, {
@@ -118,7 +118,7 @@ let w = (0, Chunk203463.animated)(Chunk481060.CJ0),
       },
       children: [(0, r.jsx)(E.Z, {
         quest: a,
-        isInteracting: j,
+        isInteracting: k,
         containerClassName: C.questSplashContainer,
         imageSize: {
           width: 660,
@@ -236,7 +236,7 @@ let w = (0, Chunk203463.animated)(Chunk481060.CJ0),
           children: [(0, r.jsx)(v.r, {
             questContent: N,
             quest: a,
-            questContentPosition: k,
+            questContentPosition: j,
             shouldShowDisclosure: true,
             hideLearnMore: z,
             showShareLink: !n && q,

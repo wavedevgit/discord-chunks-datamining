@@ -14,26 +14,26 @@ let d = e => {
   let {
     onSubmit: t,
     disabled: n
-  } = e, d = i.useCallback(async () => {
+  } = e, d = r.useCallback(async () => {
     await t({
       type: l.rY.Empty
     }), window.location.reload()
   }, [t]);
   return (0, a.jsxs)("div", {
     className: c.container,
-    children: [(0, a.jsx)(r.Heading, {
+    children: [(0, a.jsx)(i.Heading, {
       variant: "heading-lg/bold",
       className: c.title,
       children: o.intl.string(s.default.v52itt)
-    }), (0, a.jsx)(r.Text, {
+    }), (0, a.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "text-muted",
       className: c.description,
       children: o.intl.string(s.default["5am8D3"])
-    }), (0, a.jsx)(r.Kqy, {
+    }), (0, a.jsx)(i.Kqy, {
       direction: "horizontal",
       justify: "end",
-      children: (0, a.jsx)(r.Button, {
+      children: (0, a.jsx)(i.Button, {
         variant: "primary",
         text: o.intl.string(s.default["GDsHl+"]),
         onClick: d,

@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 734190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -176,7 +176,7 @@ let k = Chunk647438.memo(function(e) {
     p.Z.preload(t.guild_id, t.id)
   }, [t.guild_id, t.id]), Y = i.useCallback(e => {
     let i = _.Z.getChannel(t.id);
-    null != i && (0, h.jW)(e, async () => {
+    null != i && (0, f.jW)(e, async () => {
       let {
         default: e
       } = await n.e("40157").then(n.bind(n, 422200));
@@ -257,7 +257,7 @@ let k = Chunk647438.memo(function(e) {
               className: T.threadIconWithAvatar,
               children: [(0, r.jsx)(M, {
                 thread: t
-              }), null == z ? null : (0, r.jsx)(f.Z, {
+              }), null == z ? null : (0, r.jsx)(h.Z, {
                 user: z,
                 size: d.EFr.SIZE_16
               })]

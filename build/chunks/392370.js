@@ -189,7 +189,7 @@ function x(e) {
 }
 
 function L(e) {
-  return [M(e), j(e), k(e), U(e), G(e)]
+  return [M(e), k(e), j(e), U(e), G(e)]
 }
 
 function M(e) {
@@ -200,7 +200,7 @@ function M(e) {
   }
 }
 
-function j(e) {
+function k(e) {
   let t = null == e ? true : e.split(" "),
     n = t[0],
     r = t.slice(1).join(" ");
@@ -211,7 +211,7 @@ function j(e) {
   }
 }
 
-function k(e) {
+function j(e) {
   return t => {
     let n = t.untranslatedName,
       r = t.displayName;

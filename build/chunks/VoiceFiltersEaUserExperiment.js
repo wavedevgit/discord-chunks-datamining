@@ -39,7 +39,7 @@ function s(e) {
     location: t
   }, {
     autoTrackExposure: false
-  }), a = (0, i.Hu)({
+  }), a = (0, r.Hu)({
     location: "VoiceFiltersEarlyAccess",
     autoTrackExposure: true
   });

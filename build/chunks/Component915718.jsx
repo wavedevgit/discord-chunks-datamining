@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 91053 **/
 /** chunk id: 915718, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -173,13 +173,13 @@ function D(e) {
   } = (0, l.cj)([v.Z], () => ({
     notFriend: n.type === Z.d4z.DM && null != g && !v.Z.isFriend(g),
     isBlocked: n.type === Z.d4z.DM && null != g && v.Z.isBlocked(g)
-  })), j = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, p.Z)(n.id), T = (0, l.e7)([x.Z], () => x.Z.hasLayers());
-  return (P && !T && E.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == j ? true : j.bot)) ? null : (0, r.jsx)(A, {
+  })), x = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, p.Z)(n.id), T = (0, l.e7)([j.Z], () => j.Z.hasLayers());
+  return (P && !T && E.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == x ? true : x.bot)) ? null : (0, r.jsx)(A, {
     channel: n,
     mode: s,
     inCall: o,
     callActive: d,
-    isProvisional: null != (t = null == j ? true : j.isProvisional) && t,
+    isProvisional: null != (t = null == x ? true : x.isProvisional) && t,
     callUnavailable: f,
     notFriend: _,
     isBlocked: y,

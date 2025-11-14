@@ -5,6 +5,7 @@ require.d(exports, {
   $z: () => N,
   I1: () => E,
   IZ: () => b,
+  Ix: () => D,
   PJ: () => S,
   Qb: () => g,
   Yc: () => v,
@@ -16,6 +17,7 @@ require.d(exports, {
   t6: () => m,
   tA: () => P,
   tI: () => O,
+  yn: () => w,
   z4: () => T,
   zW: () => h
 }), require("./781311.js"), require("./388685.js");
@@ -391,5 +393,26 @@ function P(e) {
     search_session_id: l.Z.getSessionId(t),
     search_query_id: l.Z.getQueryId(t),
     search_autocomplete_select_action: n
+  })
+}
+var D = function(e) {
+  return e.SEARCH_HEADER = "search_header", e.USER_SETTINGS = "user_settings", e
+}({});
+
+function w(e) {
+  let {
+    searchContext: t,
+    prevIsCrossDMSettingEnabled: n,
+    isCrossDMSettingEnabled: i,
+    location: a
+  } = e;
+  r.ZP.trackWithMetadata(c.rMx.SEARCH_CROSS_DM_SETTING_UPDATE, {
+    search_id: null != t ? f(t) : null,
+    search_type: null == t ? true : t.type,
+    search_session_id: null != t ? l.Z.getSessionId(t) : null,
+    search_query_id: null != t ? l.Z.getQueryId(t) : null,
+    prev_is_cross_dm_setting_enabled: n,
+    is_cross_dm_setting_enabled: i,
+    setting_location: a
   })
 }

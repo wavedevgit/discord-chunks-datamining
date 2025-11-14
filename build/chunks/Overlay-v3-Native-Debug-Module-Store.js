@@ -128,14 +128,14 @@ function M(e) {
   return D("crashed"), true
 }
 
-function j(e) {
+function k(e) {
   let {
     zones: t
   } = e;
   return P(t, "set_click_zones"), true
 }
 
-function k() {
+function j() {
   return D("refresh_host_window"), true
 }
 
@@ -168,8 +168,8 @@ m(Z, "displayName", "Overlay-v3-Native-Debug-Module-Store");
 let F = new Z(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
   OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: U,
   OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: G,
-  OVERLAY_SET_CLICK_ZONES: j,
+  OVERLAY_SET_CLICK_ZONES: k,
   OVERLAY_FOCUSED: B,
-  OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: k,
+  OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: j,
   OVERLAY_CRASHED: M
 })

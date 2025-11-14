@@ -74,8 +74,8 @@ let k = [{
 function R(e) {
   var t, n;
   let {
-    type: i
-  } = e, r = (0, u.e7)([E.Z], () => E.Z.getFilters()), l = null != (n = null == r || null == (t = r.types) ? true : t.has(i)) && n;
+    type: r
+  } = e, i = (0, u.e7)([E.Z], () => E.Z.getFilters()), l = null != (n = null == i || null == (t = i.types) ? true : t.has(r)) && n;
   return (0, a.jsx)(p.rsf, {
     checked: l,
     onChange: function() {
@@ -85,7 +85,7 @@ function R(e) {
       }) : h.Z.dispatch({
         type: "CONTENT_INVENTORY_SET_FILTERS",
         filters: {
-          types: new Set([i])
+          types: new Set([r])
         }
       })
     }
@@ -95,7 +95,7 @@ function R(e) {
 function A() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)),
-    r = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getDebugImpressionCappingDisabled()),
+    i = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getDebugImpressionCappingDisabled()),
     l = (0, Chunk442837.e7)([Chunk71585.Z], () => Chunk71585.Z.getDebugFastImpressionCappingEnabled()),
     s = function(e) {
       let t = o().groupBy(e, e => e.content_type);

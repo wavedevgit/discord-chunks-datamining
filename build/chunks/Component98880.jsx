@@ -167,7 +167,7 @@ function J(e) {
   } = e, m = i.useCallback(e => {
     if ((0, w.BQ)(t)) {
       let n = t instanceof A.ZP ? t : A.ZP.createFromServer(t);
-      (0, u.vq)(e, e => (0, r.jsx)(j.Z, Y({
+      (0, u.vq)(e, e => (0, r.jsx)(k.Z, Y({
         application: n
       }, e)))
     }
@@ -227,7 +227,7 @@ function $(e) {
     __unsupportedReactNodeAsText: s,
     children: (0, r.jsxs)("div", {
       className: o()(Z.iconContainer, n),
-      children: [(0, r.jsx)(k.Z, {
+      children: [(0, r.jsx)(j.Z, {
         src: c,
         className: Z.iconCard,
         "aria-hidden": true,
@@ -295,7 +295,7 @@ function ee(e) {
       className: o()(Z.appDetailsContainer, {
         [Z.appDetailsRowContainer]: "row" === n
       }),
-      children: [(0, r.jsx)(k.Z, {
+      children: [(0, r.jsx)(j.Z, {
         src: m,
         className: o()(Z.icon, {
           [Z.rowIcon]: "row" === n

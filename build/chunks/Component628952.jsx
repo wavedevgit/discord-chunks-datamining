@@ -82,7 +82,7 @@ let C = e => {
   if (null == R) return null;
   let [M] = R.items;
   l()(null != M, "Product item should not be empty");
-  let j = () => {
+  let k = () => {
       if ((null == R ? true : R.type) === c.Z.BUNDLE) return null;
       switch (M.type) {
         case c.Z.AVATAR_DECORATION:
@@ -95,7 +95,7 @@ let C = e => {
           return null
       }
     },
-    k = null != P && P.id !== (null == w ? true : w.id) && R.type !== c.Z.BUNDLE && M.type !== c.Z.NAMEPLATE && !N,
+    j = null != P && P.id !== (null == w ? true : w.id) && R.type !== c.Z.BUNDLE && M.type !== c.Z.NAMEPLATE && !N,
     U = () => {
       null != t && null != s && s(t)
     };
@@ -105,7 +105,7 @@ let C = e => {
       className: o()(v.previewTitleContainer, C),
       children: (0, r.jsx)(d.gNt, {
         label: O.intl.string(O.t.PpoJzt),
-        children: k && (0, r.jsx)(d.yRy, {
+        children: j && (0, r.jsx)(d.yRy, {
           targetElementRef: L,
           preload: () => (0, p.Z)(P.id, P.getAvatarURL(null, 80)),
           renderPopout: e => (0, r.jsx)(_.Z, A(T({}, e), {
@@ -150,7 +150,7 @@ let C = e => {
           }), (0, r.jsx)(d.Heading, {
             variant: "heading-sm/medium",
             color: "header-secondary",
-            children: j()
+            children: k()
           })]
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/semibold",

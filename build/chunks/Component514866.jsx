@@ -1,12 +1,12 @@
 /** Chunk was on 99904 **/
 /** chunk id: 514866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk668757 = require("./668757.js"),
   Chunk481060 = require("./481060.js"),
   Chunk168107 = require("./168107.jsx"),
@@ -15,13 +15,16 @@ var Chunk120356 = require("./120356.js"),
   Chunk110478 = require("./110478.jsx"),
   Chunk677106 = require("./677106.js"),
   Chunk906605 = require("./906605.js"),
+  Chunk359119 = require("./359119.js"),
   Chunk423932 = require("./423932.jsx"),
   Chunk695346 = require("./695346.js"),
   Chunk306052 = require("./306052.jsx"),
+  Chunk944486 = require("./944486.js"),
   Chunk594174 = require("./594174.js"),
+  Chunk134612 = require("./134612.js"),
   Chunk517269 = require("./517269.js"),
   Chunk197571 = require("./197571.js");
-let j = () => {
+let C = () => {
   Promise.all([require.e("52030"), require.e("1286")]).then(require.bind(require, 24031)).then(e => {
     let {
       openMFAModal: t
@@ -42,35 +45,76 @@ let j = () => {
   })
 };
 
-function _() {
+function S() {
   let e = Chunk594174.default.getCurrentUser(),
     t = null == module ? true : module.isStaff(),
-    n = Chunk695346.Rt.useSetting();
+    r = Chunk695346.Rt.useSetting();
   return (0, Chunk951288.jsxs)(Chunk481060.Ttm, {
     children: [(0, Chunk951288.jsx)("div", {
-      className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
+      className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
       children: (0, Chunk951288.jsx)(Chunk306052.g, {
         isDevTools: true
       })
     }), (0, Chunk951288.jsx)("div", {
-      className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
+      className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: "Launch MFA",
-        onClick: j
+        onClick: C
       })
     }), (0, Chunk951288.jsx)("div", {
-      className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
+      className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: "Launch Vibing Wumpus",
         onClick: () => (0, Chunk423932.Z)()
       })
+    }), (0, Chunk951288.jsx)("div", {
+      className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+        variant: "primary",
+        size: "sm",
+        text: "Launch Safety Tools Modal",
+        onClick: () => (() => {
+          let e = Chunk944486.Z.getChannelId(),
+            t = null != module ? module : "21154681615024128";
+          (0, Chunk481060.ZDy)(async () => {
+            let {
+              default: e
+            } = await Promise.all([require.e("37031"), require.e("89650"), require.e("76144")]).then(require.bind(require, 611446));
+            return n => (0, a.jsx)(e, function(e) {
+              for (var t = 1; t < arguments.length; t++) {
+                var n = null != arguments[t] ? arguments[t] : {},
+                  a = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(n, e).enumerable
+                }))), a.forEach(function(t) {
+                  var a;
+                  a = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: a,
+                    enumerable: true,
+                    configurable: true,
+                    writable: true
+                  }) : e[t] = a
+                })
+              }
+              return e
+            }({
+              otherUserId: "9876543210",
+              channelId: t,
+              warningId: "test-warning-id",
+              warningType: h.pj.INAPPROPRIATE_CONVERSATION_TIER_2
+            }, n))
+          }, {
+            modalKey: Chunk134612.X_
+          })
+        })()
+      })
     }), exports && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)("div", {
-        className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
+        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
@@ -78,7 +122,7 @@ function _() {
           onClick: () => (0, Chunk677106.Z)()
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
+        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
@@ -86,7 +130,7 @@ function _() {
           onClick: () => (0, Chunk110478.N)()
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
+        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
@@ -94,7 +138,7 @@ function _() {
           onClick: () => (0, Chunk963886.E)()
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
+        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
@@ -104,7 +148,7 @@ function _() {
           })
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
+        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
@@ -112,7 +156,7 @@ function _() {
           onClick: Chunk906605.YU
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
+        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
@@ -120,11 +164,11 @@ function _() {
           onClick: Chunk668757.$R
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
+        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Ignore profile speedbump disabled",
-          checked: require,
-          onChange: e => x.Rt.updateSetting(e)
+          checked: Chunk120356,
+          onChange: e => g.Rt.updateSetting(e)
         })
       })]
     })]

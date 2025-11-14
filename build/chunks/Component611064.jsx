@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 91053 **/
 /** chunk id: 611064, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => b,
@@ -30,7 +30,7 @@ let _ = Chunk647438.memo(function(e) {
       expandedCount: y
     } = e,
     O = (0, l.e7)([d.Z], () => d.Z.hidden),
-    x = i.useCallback(e => {
+    j = i.useCallback(e => {
       (0, s.jW)(e, async () => {
         let {
           MemberListContentSettingsMenu: e
@@ -51,7 +51,7 @@ let _ = Chunk647438.memo(function(e) {
       onClick: e => {
         if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return O ? (0, c.lY)() : y > 3 ? b() : (0, h.dG4)()
       },
-      onContextMenu: x,
+      onContextMenu: j,
       tag: "span",
       "aria-hidden": true,
       className: g.headerContainer,

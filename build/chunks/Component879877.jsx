@@ -1,4 +1,4 @@
-/** Chunk was on 38058 **/
+/** Chunk was on 36113 **/
 /** chunk id: 879877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -50,13 +50,13 @@ function h(e) {
           },
           disableInteraction: h
         }, e))
-      }), C > 0 && (k ? (0, r.jsx)(O, {
+      }), C > 0 && (k ? (0, r.jsx)(v, {
         onClick: () => {
           N(false), w({
             action: "COLLAPSE_GAME_TAGS"
           })
         }
-      }) : (0, r.jsx)(v, {
+      }) : (0, r.jsx)(O, {
         numHidden: C,
         onClick: () => {
           N(true), w({
@@ -121,7 +121,7 @@ let y = e => {
       })]
     })
   },
-  v = e => {
+  O = e => {
     let {
       numHidden: t,
       onClick: n,
@@ -151,7 +151,7 @@ let y = e => {
       })
     })
   },
-  O = e => {
+  v = e => {
     let {
       onClick: t
     } = e;

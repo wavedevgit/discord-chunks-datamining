@@ -55,7 +55,8 @@ function f(e) {
   d[t] = {
     storefront: null,
     loading: true,
-    error: false
+    error: false,
+    fetchedAt: null
   }, d = s({}, d)
 }
 
@@ -67,7 +68,8 @@ function _(e) {
   d[t] = {
     storefront: n,
     loading: false,
-    error: false
+    error: false,
+    fetchedAt: Date.now()
   }, d = s({}, d)
 }
 
@@ -83,7 +85,8 @@ function p(e) {
   }) : d[t] = {
     storefront: n,
     loading: false,
-    error: false
+    error: false,
+    fetchedAt: Date.now()
   }, d = s({}, d)
 }
 
@@ -94,7 +97,8 @@ function h(e) {
   d[t] = {
     storefront: null,
     loading: false,
-    error: true
+    error: true,
+    fetchedAt: null
   }, d = s({}, d)
 }
 

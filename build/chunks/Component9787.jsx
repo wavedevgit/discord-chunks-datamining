@@ -102,7 +102,7 @@ function x(e, t) {
     mouseOnly: _ = false,
     restMs: p = 0,
     move: h = true
-  } = t, m = C(), g = A(), E = (0, a.II)(f), b = (0, a.II)(d), y = (0, a.II)(n), O = (0, a.II)(p), v = i.useRef(), I = i.useRef(false), T = i.useRef(), S = i.useRef(false), N = i.useRef(true), x = i.useRef(false), L = i.useRef(() => {}), M = i.useRef(false), j = (0, a.iW)(() => {
+  } = t, m = C(), g = A(), E = (0, a.II)(f), b = (0, a.II)(d), y = (0, a.II)(n), O = (0, a.II)(p), v = i.useRef(), I = i.useRef(false), T = i.useRef(), S = i.useRef(false), N = i.useRef(true), x = i.useRef(false), L = i.useRef(() => {}), M = i.useRef(false), k = (0, a.iW)(() => {
     var e;
     let t = null == (e = o.current.openEvent) ? true : e.type;
     return (null == t ? true : t.includes("mouse")) && "mousedown" !== t
@@ -122,14 +122,14 @@ function x(e, t) {
     if (!u || !E.current || !n) return;
 
     function e(e) {
-      j() && r(false, e, "hover")
+      k() && r(false, e, "hover")
     }
     let t = (0, a.Me)(c.floating).documentElement;
     return t.addEventListener("mouseleave", e), () => {
       t.removeEventListener("mouseleave", e)
     }
-  }, [c.floating, n, r, u, E, j]);
-  let k = i.useCallback(function(e, t, n) {
+  }, [c.floating, n, r, u, E, k]);
+  let j = i.useCallback(function(e, t, n) {
       true === t && (t = true), true === n && (n = "hover");
       let i = D(b.current, "close", v.current);
       i && !T.current ? (R(I), I.current = window.setTimeout(() => r(false, e, n), i)) : t && (R(I), r(false, e, n))
@@ -174,7 +174,7 @@ function x(e, t) {
           x: e.clientX,
           y: e.clientY,
           onClose() {
-            G(), U(), B() || k(e, true, "safe-polygon")
+            G(), U(), B() || j(e, true, "safe-polygon")
           }
         });
         let r = T.current;
@@ -183,7 +183,7 @@ function x(e, t) {
         };
         return
       }
-      "touch" === v.current && (0, a.r3)(c.floating, e.relatedTarget) || k(e)
+      "touch" === v.current && (0, a.r3)(c.floating, e.relatedTarget) || j(e)
     }
 
     function i(e) {
@@ -193,7 +193,7 @@ function x(e, t) {
         x: e.clientX,
         y: e.clientY,
         onClose() {
-          G(), U(), B() || k(e)
+          G(), U(), B() || j(e)
         }
       })(e))
     }
@@ -203,11 +203,11 @@ function x(e, t) {
     }
 
     function d(e) {
-      B() || k(e, false)
+      B() || j(e, false)
     }
-  }, [c, u, e, _, h, k, U, G, r, n, y, m, b, E, o, B, O]), (0, a.Xj)(() => {
+  }, [c, u, e, _, h, j, U, G, r, n, y, m, b, E, o, B, O]), (0, a.Xj)(() => {
     var e, t;
-    if (u && n && null != (e = E.current) && null != (e = e.__options) && e.blockPointerEvents && j()) {
+    if (u && n && null != (e = E.current) && null != (e = e.__options) && e.blockPointerEvents && k()) {
       x.current = true;
       let e = c.floating;
       if ((0, s.kK)(c.domReference) && e) {
@@ -220,7 +220,7 @@ function x(e, t) {
         }
       }
     }
-  }, [u, n, g, c, m, E, j]), (0, a.Xj)(() => {
+  }, [u, n, g, c, m, E, k]), (0, a.Xj)(() => {
     n || (v.current = true, M.current = false, U(), G())
   }, [n, U, G]), i.useEffect(() => () => {
     U(), R(I), R(S), G()
@@ -250,7 +250,7 @@ function x(e, t) {
 let L = null,
   M = 0;
 
-function j(e, t) {
+function k(e, t) {
   if (!e || !t) returnfalse;
   let n = null == t.getRootNode ? true : t.getRootNode();
   if (e.contains(t)) returntrue;
@@ -264,7 +264,7 @@ function j(e, t) {
   returnfalse
 }
 
-function k(e) {
+function j(e) {
   return "composedPath" in e ? e.composedPath()[0] : e.target
 }
 
@@ -889,13 +889,13 @@ function ev(e) {
       let {
         clientX: h,
         clientY: m
-      } = e, g = [h, m], E = k(e), b = "mouseleave" === e.type, y = j(c.floating, E), O = j(c.domReference, E), v = c.domReference.getBoundingClientRect(), I = c.floating.getBoundingClientRect(), T = l.split("-")[0], S = n > I.right - I.width / 2, A = o > I.bottom - I.height / 2, C = eO(g, v), N = I.width > v.width, P = I.height > v.height, D = (N ? v : I).left, w = (N ? v : I).right, x = (P ? v : I).top, L = (P ? v : I).bottom;
+      } = e, g = [h, m], E = j(e), b = "mouseleave" === e.type, y = k(c.floating, E), O = k(c.domReference, E), v = c.domReference.getBoundingClientRect(), I = c.floating.getBoundingClientRect(), T = l.split("-")[0], S = n > I.right - I.width / 2, A = o > I.bottom - I.height / 2, C = eO(g, v), N = I.width > v.width, P = I.height > v.height, D = (N ? v : I).left, w = (N ? v : I).right, x = (P ? v : I).top, L = (P ? v : I).bottom;
       if (y && (a = true, !b)) return;
       if (O && (a = false), O && !b) {
         a = true;
         return
       }
-      if (b && (0, s.kK)(e.relatedTarget) && j(c.floating, e.relatedTarget) || _ && eb(_.nodesRef.current, f).length) return;
+      if (b && (0, s.kK)(e.relatedTarget) && k(c.floating, e.relatedTarget) || _ && eb(_.nodesRef.current, f).length) return;
       if ("top" === T && o >= v.bottom - 1 || "bottom" === T && o <= v.top + 1 || "left" === T && n >= v.right - 1 || "right" === T && n <= v.left + 1) return p();
       let M = [];
       switch (T) {

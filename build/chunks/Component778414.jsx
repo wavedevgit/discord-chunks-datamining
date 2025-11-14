@@ -1,8 +1,8 @@
-/** Chunk was on 38058 **/
+/** Chunk was on 36113 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => W,
-  Z: () => B
+  Z: () => G
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk830202 = require("./830202.js");
 
-function G(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function G(e) {
   return e
 }
 
-function L(e, t) {
+function M(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -74,18 +74,18 @@ function L(e, t) {
   return i
 }
 
-function B(e) {
+function G(e) {
   var {
     widget: t
-  } = e, n = L(e, ["widget"]);
-  return t instanceof h.q ? (0, r.jsx)(I.Z, G({
+  } = e, n = M(e, ["widget"]);
+  return t instanceof h.q ? (0, r.jsx)(I.Z, L({
     widget: t
-  }, n)) : t instanceof y.zy ? (0, r.jsx)(C.Z, G({
+  }, n)) : t instanceof y.zy ? (0, r.jsx)(C.Z, L({
     widget: t
   }, n)) : null
 }
 
-function M() {
+function B() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk830202.ukTeenDisclaimer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
@@ -106,7 +106,7 @@ function U(e) {
     application: n
   } = (0, j.G)(), {
     token: i
-  } = (0, d.o)(null == n ? true : n.id), a = (0, P.Z)(t.id), l = (0, v.k)({
+  } = (0, d.o)(null == n ? true : n.id), a = (0, P.Z)(t.id), l = (0, O.k)({
     location: "ApplicationWidgetUpsell"
   }), o = a.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !l || null == i || o ? null : (0, r.jsx)(f.ZP, {
@@ -135,10 +135,10 @@ function F(e) {
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
     }, [e, t, n]), "GB" === e && n
-  })(), d = (0, v.k)({
+  })(), d = (0, O.k)({
     location: "UserProfileModalV2Widgets"
   }), f = 0 === l.length && c, j = i.useMemo(() => l.filter(y.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
-  (0, O.J)(c, j);
+  (0, v.J)(c, j);
   var I = t.id;
   (0, _.s)(x);
   let {
@@ -149,9 +149,9 @@ function F(e) {
     null !== C.current && T()
   }, [T]);
   let k = () => (0, r.jsxs)(r.Fragment, {
-    children: [c && s && (0, r.jsx)(M, {}), c && (0, r.jsx)(U, {
+    children: [c && s && (0, r.jsx)(B, {}), c && (0, r.jsx)(U, {
       user: t
-    }), l.map((e, i) => (0, r.jsx)(B, {
+    }), l.map((e, i) => (0, r.jsx)(G, {
       widget: e,
       user: t,
       guildId: n,
@@ -170,7 +170,7 @@ function F(e) {
 function W(e) {
   var {
     user: t
-  } = e, n = L(e, ["user"]);
+  } = e, n = M(e, ["user"]);
   let a = i.useRef(null);
   (0, x.r)({
     container: a.current
@@ -185,7 +185,7 @@ function W(e) {
     fade: true,
     children: [(0, r.jsx)(T.Z, {
       scrollerRef: a
-    }), (0, r.jsx)(F, G({
+    }), (0, r.jsx)(F, L({
       user: t
     }, n))]
   })

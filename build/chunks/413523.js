@@ -2,10 +2,11 @@
 /** chunk id: 413523, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Lc: () => D,
   Yr: () => P,
-  ZP: () => x,
+  ZP: () => L,
   gN: () => R,
-  sI: () => D
+  sI: () => w
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   Chunk759174 = require("./759174.js"),
@@ -90,14 +91,19 @@ function P(e) {
       return (null == (t = e.voiceState) ? true : t.selfVideo) ? r = "\x03" : (null == (n = e.voiceState) ? true : n.selfStream) && (r = "\x04"), "".concat(r).concat((0, y.Z)(e.userNick, e.user))
   }
 }
-var D = function(e) {
+
+function D(e, t) {
+  let [, n] = e, [, r] = t;
+  return n === r
+}
+var w = function(e) {
   return e.VIDEO = "VIDEO", e.STREAM = "STREAM", e.FILTERED = "FILTERED", e.SPEAKING = "SPEAKING", e.ACTIVITY = "ACTIVITY", e.NOT_POPPED_OUT = "NOT_POPPED_OUT", e
 }({});
 
-function w(e) {
+function x(e) {
   return u.default.getId() === e && p.Z.isCurrentUserPTTLatched()
 }
-class x {
+class L {
   get version() {
     return this.participantByIndex.version
   }
@@ -147,7 +153,7 @@ class x {
         });
         return t && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, C(S({}, n), {
           speaking: t,
-          latched: w(e),
+          latched: x(e),
           lastSpoke: this.lastSpoke[e],
           soundsharing: p.Z.isSoundSharing(e)
         })), true
@@ -212,7 +218,7 @@ class x {
         userId: e,
         checkIsMuted: true
       }),
-      latched: w(e),
+      latched: x(e),
       lastSpoke: null != (i = this.lastSpoke[e]) ? i : 0,
       soundsharing: p.Z.isSoundSharing(e),
       ringing: D,
@@ -221,11 +227,11 @@ class x {
       localVideoDisabled: _.Z.isLocalVideoDisabled(T.id),
       isPoppedOut: this.poppedOutParticipants.has(T.id)
     }), v.push(b));
-    let x = null != (o = c.Z.getStreamForUser(e, P)) ? o : c.Z.getActiveStreamForUser(e, P);
-    if (null != x && x.channelId === this.channelId) {
-      let t = (0, l.V9)(x),
+    let w = null != (o = c.Z.getStreamForUser(e, P)) ? o : c.Z.getActiveStreamForUser(e, P);
+    if (null != w && w.channelId === this.channelId) {
+      let t = (0, l.V9)(w),
         n = this.getParticipant(t),
-        r = x.ownerId === u.default.getId() && c.Z.isSelfStreamHidden(this.channelId),
+        r = w.ownerId === u.default.getId() && c.Z.isSelfStreamHidden(this.channelId),
         i = (null == n ? true : n.type) === O.fO.STREAM ? {
           maxResolution: null != n.maxResolution ? S({}, n.maxResolution) : true,
           maxFrameRate: n.maxFrameRate
@@ -236,7 +242,7 @@ class x {
         userVideo: null != (d = null == A ? true : A.selfVideo) && d,
         user: T,
         userNick: E.ZP.getName(P, this.channelId, T),
-        stream: x,
+        stream: w,
         isPoppedOut: this.poppedOutParticipants.has(t)
       }), v.push(y)
     }

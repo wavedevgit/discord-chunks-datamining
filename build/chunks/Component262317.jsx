@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   XX: () => U,
@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk92024 = require("./92024.js");
 
-function D(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -59,7 +59,7 @@ function D(e) {
   return e
 }
 
-function k(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -157,13 +157,13 @@ let H = (0, Chunk888651.$)(function(e) {
     null != t && n.has(t) && (eP && eI(false), eE && eS(false)), eL()
   }, eL = () => {
     (et || ey || ew) && (null == ea || ea(h.id))
-  }, eD = e => {
+  }, ek = e => {
     e ? ex.current = setTimeout(() => {
       eO(true)
     }, 150 * !!es) : clearTimeout(ex.current)
   };
   r.useEffect(() => () => clearTimeout(ex.current), []);
-  let ek = e => {
+  let eD = e => {
       e && eO(false)
     },
     eU = () => {
@@ -181,7 +181,7 @@ let H = (0, Chunk888651.$)(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("96306")]).then(n.bind(n, 757387));
-        return t => (0, i.jsx)(e, k(D({}, t), {
+        return t => (0, i.jsx)(e, D(k({}, t), {
           user: h,
           guildId: U.guild_id,
           channel: U,
@@ -193,11 +193,11 @@ let H = (0, Chunk888651.$)(function(e) {
         }))
       })
     },
-    eH = e => ef ? (0, i.jsx)(j.$, k(D({}, e), {
+    eH = e => ef ? (0, i.jsx)(j.$, D(k({}, e), {
       channel: U,
       setIsHangStatusInputFocused: eS,
       setIsEmojiPickerOpen: eT
-    })) : null != eg ? (0, i.jsx)(O.I, k(D({}, e), {
+    })) : null != eg ? (0, i.jsx)(O.I, D(k({}, e), {
       hangStatusActivity: eg,
       channel: U,
       userId: h.id
@@ -273,7 +273,7 @@ let H = (0, Chunk888651.$)(function(e) {
             var r;
             return (0, i.jsx)(o.u, {
               text: null != (r = (0, y.Z)(ec)) ? r : R.intl.string(R.t.IyYqqY),
-              children: (0, i.jsx)(P.ZP, D({
+              children: (0, i.jsx)(P.ZP, k({
                 ref: eC
               }, n))
             })
@@ -287,12 +287,12 @@ let H = (0, Chunk888651.$)(function(e) {
             onRequestClose: eR,
             align: ey && eA && !ef ? "center" : true,
             spacing: ey && eA ? 8 : 0,
-            children: () => (0, i.jsx)(P.ZP, k(D({}, n), {
+            children: () => (0, i.jsx)(P.ZP, D(k({}, n), {
               ref: eC,
               onMouseDown: e.onMouseDown,
               onKeyDown: e.onKeyDown,
-              handleHoverHangStatus: eD,
-              handleHoverIcons: ek,
+              handleHoverHangStatus: ek,
+              handleHoverIcons: eD,
               onAddHangStatusClicked: () => eI(true)
             }))
           })

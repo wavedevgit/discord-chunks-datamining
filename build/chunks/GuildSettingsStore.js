@@ -285,7 +285,7 @@ function eM(e) {
   ec.delete(t.id), eu++
 }
 
-function ej(e) {
+function ek(e) {
   if (null == s || s.id !== e.guild.id) returnfalse;
   {
     let e = N.Z.getGuild(s.id);
@@ -297,7 +297,7 @@ function ej(e) {
     let t = o = e,
       n = G({}, s);
     V.forEach(r => {
-      if (!Y.has(r) && ("rulesChannelId" !== r && "publicUpdatesChannelId" !== r || n[r] !== k.b4) && "features" !== r) {
+      if (!Y.has(r) && ("rulesChannelId" !== r && "publicUpdatesChannelId" !== r || n[r] !== j.b4) && "features" !== r) {
         if ("ownerConfiguredContentLevel" === r) {
           t = (0, v.t8)(t, r, e[r]);
           return
@@ -308,7 +308,7 @@ function ej(e) {
   }
 }
 
-function ek(e) {
+function ej(e) {
   if (null == s || s.id !== e.guild.id) returnfalse;
   eg()
 }
@@ -401,7 +401,7 @@ function eX(e) {
     metadata: _
   } = e;
   null != s && f === s.id && (false === eo && (eo = true), el = es = {
-    primaryCategoryId: null != (t = _.primaryCategoryId) ? t : j.o3,
+    primaryCategoryId: null != (t = _.primaryCategoryId) ? t : k.o3,
     secondaryCategoryIds: null != (n = _.secondaryCategoryIds) ? n : [],
     keywords: null != (r = _.keywords) ? r : [],
     emojiDiscoverabilityEnabled: null != (i = _.emojiDiscoverabilityEnabled) ? i : F,
@@ -659,8 +659,8 @@ let tt = new te(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_ROLE_CREATE: eG,
   GUILD_ROLE_UPDATE: eB,
   GUILD_ROLE_DELETE: eZ,
-  GUILD_UPDATE: ej,
-  GUILD_DELETE: ek,
+  GUILD_UPDATE: ek,
+  GUILD_DELETE: ej,
   GUILD_PROFILE_FETCH_SUCCESS: e8,
   GUILD_PROFILE_UPDATE: e5,
   GUILD_PROFILE_UPDATE_SUCCESS: e6,

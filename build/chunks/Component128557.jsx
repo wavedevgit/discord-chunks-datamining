@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 128557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M,
@@ -110,11 +110,11 @@ function M(e) {
     canInvite: M,
     canManageGuild: R,
     canMessage: L
-  } = (0, f.TE)(t, l), D = (0, s.e7)([v.default], () => {
+  } = (0, f.TE)(t, l), k = (0, s.e7)([v.default], () => {
     var e, t;
     return (null == (e = v.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = v.default.getCurrentUser()) ? true : t.mobile) === true
   }), {
-    guildPopulated: k,
+    guildPopulated: D,
     guildMessaged: U,
     guildPersonalized: B
   } = (0, f.h_)(l), {
@@ -194,7 +194,7 @@ function M(e) {
         }))
       }, [e])
     }
-  }(l), W = !(D || k || U || B), {
+  }(l), W = !(k || D || U || B), {
     titleAnimatedStyle: q,
     opacities: K
   } = function(e) {
@@ -252,7 +252,7 @@ function M(e) {
     children: (0, i.jsx)(w, {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0Ta),
-      completed: k,
+      completed: D,
       onClick: H
     })
   }, "invite")), R && Q.push((0, i.jsx)(o.Z.div, {
@@ -285,7 +285,7 @@ function M(e) {
     children: (0, i.jsx)(w, {
       iconUrl: u.yIb,
       header: Z.intl.string(Z.t.pGVNI9),
-      completed: D,
+      completed: k,
       onClick: G
     })
   }, "download")), Q.push((0, i.jsx)(o.Z.div, {

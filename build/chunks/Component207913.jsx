@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 207913, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -82,7 +82,7 @@ function V(e) {
     isSelected: a,
     isUnread: s,
     groupedMessages: p
-  } = e, h = n.type === M.d4z.UNKNOWN ? d.VL1 : (0, g.KS)(n, null), m = (0, f.ZP)(n, false), b = (0, c.e7)([Z.Z], () => Z.Z.getGuild(n.getGuildId())), {
+  } = e, f = n.type === M.d4z.UNKNOWN ? d.VL1 : (0, g.KS)(n, null), m = (0, h.ZP)(n, false), b = (0, c.e7)([Z.Z], () => Z.Z.getGuild(n.getGuildId())), {
     nick: y,
     colorString: O
   } = (0, _.ZP)(t), {
@@ -200,7 +200,7 @@ function V(e) {
             [U.unread]: s,
             [U.selected]: a
           }),
-          children: [null !== h && (0, r.jsx)(h, {
+          children: [null !== f && (0, r.jsx)(f, {
             size: "xxs",
             className: U.inlineIcon
           }), (0, r.jsxs)(d.Text, {
@@ -241,10 +241,10 @@ function H(e) {
     direction: "horizontal",
     gap: 4,
     inert: true,
-    children: [(0, r.jsx)(h.ZP, {
+    children: [(0, r.jsx)(f.ZP, {
       users: n,
       useFallbackUserForPopout: true,
-      size: h.u8.SIZE_16
+      size: f.u8.SIZE_16
     }), (0, r.jsx)(d.Text, {
       variant: "text-sm/medium",
       className: U.overflowText,
@@ -303,11 +303,11 @@ function W(e) {
         c = (0, m.Z)(t),
         u = t.stickerItems.length > 0,
         p = t.isPoll(),
-        h = t.type === M.uaV.POLL_RESULT,
-        f = t.hasFlag(M.iLy.IS_VOICE_MESSAGE),
+        f = t.type === M.uaV.POLL_RESULT,
+        h = t.hasFlag(M.iLy.IS_VOICE_MESSAGE),
         g = t.type === M.uaV.USER_JOIN,
         _ = null;
-      1 === s ? _ = d.XBm : s > 1 ? _ = d.Ka2 : c ? _ = b.Z : p || h ? _ = d.QDj : u ? _ = d.SlE : f && (_ = d.gj8);
+      1 === s ? _ = d.XBm : s > 1 ? _ = d.Ka2 : c ? _ = b.Z : p || f ? _ = d.QDj : u ? _ = d.SlE : h && (_ = d.gj8);
       let O = true,
         v = null;
       if (e)
@@ -315,11 +315,11 @@ function W(e) {
         else if (p) {
         var j;
         O = false, v = null == (j = t.poll) ? true : j.question.text
-      } else v = h ? G.intl.string(G.t.sad2PH) : i ? G.intl.string(G.t.p0oZmy) : s > 1 ? G.intl.formatToPlainString(G.t.rtfTKp, {
+      } else v = f ? G.intl.string(G.t.sad2PH) : i ? G.intl.string(G.t.p0oZmy) : s > 1 ? G.intl.formatToPlainString(G.t.rtfTKp, {
         count: s
       }) : 1 === s ? G.intl.string(G.t.tCcq5p) : u ? G.intl.format(G.t.zY4v1B, {
         stickerName: t.stickerItems[0].name
-      }) : f ? G.intl.string(G.t.slFYgi) : g ? G.intl.string(G.t.Yvvfw9) : G.intl.string(G.t.sDqZHL);
+      }) : h ? G.intl.string(G.t.slFYgi) : g ? G.intl.string(G.t.Yvvfw9) : G.intl.string(G.t.sDqZHL);
       else O = false, v = (0, r.jsx)(y.ZP, {
         content: a,
         message: t,
@@ -369,10 +369,10 @@ let K = (0, Chunk647438.memo)(function(e) {
     message: l,
     groupedMessages: a,
     isUnread: u
-  } = e, h = l.message, f = (0, A.fJ)(), {
+  } = e, f = l.message, h = (0, A.fJ)(), {
     params: g
   } = (0, s.$B)(), m = (0, c.e7)([P.Z], () => {
-    if (null == h) return null;
+    if (null == f) return null;
     let e = P.Z.getChannel(l.channelId);
     return null != e ? e : new S.nl({
       id: l.channelId,
@@ -382,32 +382,32 @@ let K = (0, Chunk647438.memo)(function(e) {
     })
   }), b = (0, R.z)(e => {
     var t;
-    return e.isMenuOpenForMessage(null != (t = null == h ? true : h.id) ? t : null)
+    return e.isMenuOpenForMessage(null != (t = null == f ? true : f.id) ? t : null)
   }), {
     notificationCenterVariant: _
   } = (0, w.pN)({
     location: "NotificationsInboxMessageUnit"
-  }), y = i.useMemo(() => "".concat(null == h ? true : h.author.username, ": ").concat(null == m ? true : m.name), [null == h ? true : h.author.username, null == m ? true : m.name]), O = null != (t = null == a ? true : a.map(e => e.message).filter(e => null != e)) ? t : [];
-  return null == h || null == m ? null : (0, r.jsx)(d.kL8, {
+  }), y = i.useMemo(() => "".concat(null == f ? true : f.author.username, ": ").concat(null == m ? true : m.name), [null == f ? true : f.author.username, null == m ? true : m.name]), O = null != (t = null == a ? true : a.map(e => e.message).filter(e => null != e)) ? t : [];
+  return null == f || null == m ? null : (0, r.jsx)(d.kL8, {
     "aria-label": y,
     className: o()(U.messageClickableContainer, {
-      [U.selected]: h.id === g.messageId,
+      [U.selected]: f.id === g.messageId,
       [U.actionMenuOpen]: b
     }),
     onClick: () => {
       T.Z.inboxItemClick({
-        message: h,
+        message: f,
         channel: m,
         isUnread: u,
         isSidebar: _ === w.jP.SIDEBAR,
-        viewId: f
+        viewId: h
       })
     },
     onContextMenu: e => {
       e.preventDefault(), (0, A.Qz)({
         interactionType: A.s_.CONTEXT_MENU,
-        message: h,
-        viewId: f
+        message: f,
+        viewId: h
       }), (0, p.jW)(e, async () => {
         let {
           default: e
@@ -420,9 +420,9 @@ let K = (0, Chunk647438.memo)(function(e) {
       })
     },
     children: (0, r.jsx)(V, {
-      message: h,
+      message: f,
       channel: m,
-      isSelected: h.id === g.messageId,
+      isSelected: f.id === g.messageId,
       groupedMessages: O,
       isUnread: u
     })

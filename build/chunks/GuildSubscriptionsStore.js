@@ -120,7 +120,7 @@ function M(e) {
   }), false
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t,
     userIds: n
@@ -130,7 +130,7 @@ function j(e) {
   }), false
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t
   } = e;
@@ -253,8 +253,8 @@ let q = new z(Chunk570140.Z, {
   GUILD_CREATE: x,
   GUILD_DELETE: L,
   GUILD_SUBSCRIPTIONS_MEMBERS_ADD: M,
-  GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE: j,
-  GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES: k,
+  GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE: k,
+  GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES: j,
   GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES: U,
   GUILD_SUBSCRIPTIONS_CHANNEL: B,
   GUILD_SUBSCRIPTIONS: G,

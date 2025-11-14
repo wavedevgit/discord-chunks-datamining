@@ -46,26 +46,26 @@ function b(e) {
   let {
     status: t,
     currentStatus: n,
-    description: i
+    description: r
   } = e, l = t !== m.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
     children: x.map(e => {
       let {
-        duration: i,
+        duration: r,
         label: l
       } = e;
-      return (0, a.jsx)(r.sNh, {
-        id: "".concat(t, "-").concat(i),
+      return (0, a.jsx)(i.sNh, {
+        id: "".concat(t, "-").concat(r),
         label: l(),
         action: () => (0, u.Z)({
           nextStatus: t,
           prevStatus: n,
-          durationMillis: i
+          durationMillis: r
         }),
         dontCloseOnAction: true
-      }, null != i ? i : g)
+      }, null != r ? r : g)
     })
   });
-  return (0, a.jsx)(r.sNh, {
+  return (0, a.jsx)(i.sNh, {
     id: t,
     className: h.expiringStatusMenuItem,
     keepItemStyles: true,
@@ -76,7 +76,7 @@ function b(e) {
       } = e;
       return (0, a.jsxs)("div", {
         className: h.statusItem,
-        children: [(0, a.jsx)(r.qbd, {
+        children: [(0, a.jsx)(i.qbd, {
           status: t,
           className: h.icon,
           size: 10,
@@ -84,9 +84,9 @@ function b(e) {
         }), (0, a.jsx)("div", {
           className: h.status,
           children: (0, d.u5)(t)
-        }), null != i && (0, a.jsx)("div", {
+        }), null != r && (0, a.jsx)("div", {
           className: h.description,
-          children: i
+          children: r
         })]
       })
     },
@@ -107,13 +107,13 @@ function v(e) {
     n = f(t, new Date),
     a = new Date;
   a.setDate(a.getDate() + 1);
-  let i = f(t, a);
+  let r = f(t, a);
   return n ? p.intl.formatToPlainString(p.t.ZxxHIO, {
     timeString: p.intl.data.formatTime(t, {
       format: "short"
     })
   }) : p.intl.formatToPlainString(p.t["9OFjSe"], {
-    dateString: i ? p.intl.data.formatRelativeTime(1, "day", {
+    dateString: r ? p.intl.data.formatRelativeTime(1, "day", {
       numeric: "auto"
     }) : p.intl.data.formatDate(t, {
       dateStyle: "short"
@@ -148,11 +148,11 @@ function j(e) {
       children: x.map(t => {
         let {
           duration: n,
-          label: i
+          label: r
         } = t;
-        return (0, a.jsx)(r.sNh, {
+        return (0, a.jsx)(i.sNh, {
           id: "".concat(e, "-").concat(n),
-          label: i(),
+          label: r(),
           action: () => {
             (0, l.oW)(true, n)
           },
@@ -180,8 +180,8 @@ function j(e) {
       description: f(m.Skl.INVISIBLE)
     });
   return (0, a.jsxs)(a.Fragment, {
-    children: [_, (0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), y, C, S, c || n ? (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(r.sNh, {
+    children: [_, (0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), y, C, S, c || n ? (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(i.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
         className: h.expiringStatusMenuItem,
@@ -189,14 +189,14 @@ function j(e) {
         hasSubmenu: true,
         label: () => (0, a.jsxs)("div", {
           className: h.statusItem,
-          children: [(0, a.jsx)(r.owu, {
+          children: [(0, a.jsx)(i.owu, {
             size: "xxs",
             className: h.icon
           }), (0, a.jsxs)("div", {
             className: h.focusModeTitle,
-            children: [p.intl.string(p.t.gJRnwK), (0, a.jsx)(r.IGR, {
+            children: [p.intl.string(p.t.gJRnwK), (0, a.jsx)(i.IGR, {
               text: n ? p.intl.string(p.t.ApAu9f) : u ? p.intl.string(p.t.gH3Frd) : p.intl.string(p.t["64pl82"]),
-              color: n ? i.Z.BRAND_500 : u ? i.Z.RED_400 : i.Z.PRIMARY_500
+              color: n ? r.Z.BRAND_500 : u ? r.Z.RED_400 : r.Z.PRIMARY_500
             })]
           }), (0, a.jsx)("div", {
             className: h.description,

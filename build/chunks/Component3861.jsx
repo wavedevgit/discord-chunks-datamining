@@ -1,4 +1,4 @@
-/** Chunk was on 57336 **/
+/** Chunk was on 34740 **/
 /** chunk id: 3861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -46,8 +46,8 @@ let v = (0, Chunk112724.Z)(e => {
   r.useEffect(() => {
     d.S.dispatch(b.CkL.REMEASURE_TARGET)
   }, [T, N, L.width, L.height]);
-  let D = r.useMemo(() => n.filter(e => e.type !== y.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, v]),
-    k = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(E.id), [E.id]);
+  let k = r.useMemo(() => n.filter(e => e.type !== y.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, v]),
+    D = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(E.id), [E.id]);
   if ((null == R ? true : R.channelId) === E.id) return (0, i.jsx)(h.Z, {
     height: N
   });
@@ -65,7 +65,7 @@ let v = (0, Chunk112724.Z)(e => {
   });
   if (n = I ? n : t, null == a) {
     if (0 === n.length) {
-      let e = t.length > 0 && !k;
+      let e = t.length > 0 && !D;
       return (0, i.jsx)(g.Z, {
         channelId: E.id,
         allPoppedOut: e
@@ -78,7 +78,7 @@ let v = (0, Chunk112724.Z)(e => {
       children: (0, i.jsx)(f.Z, {
         channel: E,
         className: C.videoGrid,
-        participants: D,
+        participants: k,
         totalNumberOfParticipants: t.length,
         onClick: x,
         onDoubleClick: O,
@@ -93,7 +93,7 @@ let v = (0, Chunk112724.Z)(e => {
     onContextMenuParticipant: j,
     onSelectParticipant: x,
     selectedParticipant: a,
-    filteredParticipants: D,
+    filteredParticipants: k,
     participants: t,
     popoutType: M,
     className: P,

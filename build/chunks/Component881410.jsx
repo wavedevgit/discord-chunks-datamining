@@ -1,7 +1,7 @@
-/** Chunk was on 38058 **/
+/** Chunk was on 36113 **/
 /** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  wl: () => v,
+  wl: () => O,
   yX: () => y
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
@@ -70,8 +70,8 @@ function h(e) {
     widget: n,
     onAddGame: h,
     children: y
-  } = e, v = b(e, ["widgetType", "widget", "onAddGame", "children"]);
-  let [O] = (0, o.ynZ)(), [j, x] = i.useState(""), _ = i.useRef(""), P = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
+  } = e, O = b(e, ["widgetType", "widget", "onAddGame", "children"]);
+  let [v] = (0, o.ynZ)(), [j, x] = i.useState(""), _ = i.useRef(""), P = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
     trackUserProfileEditAction: I
   } = (0, u.KZ)(), w = (0, l.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)), S = i.useCallback(e => {
     (0, d.ES)(t, {
@@ -96,7 +96,7 @@ function h(e) {
   }, [j, I, t, C]), k = i.useMemo(() => "" !== j.trim() && w ? f.intl.format(f.t.jhiTsN, {
     searchTerm: j.trim()
   }) : f.intl.string(f.t.QwSXv8), [j, w]);
-  return (0, r.jsx)(o.yRy, m(p({}, v), {
+  return (0, r.jsx)(o.yRy, m(p({}, O), {
     onRequestOpen: () => {
       I({
         action: "PRESS_ADD_GAME",
@@ -119,7 +119,7 @@ function h(e) {
         className: g.gameSearchCombobox,
         placeholder: f.intl.string(f.t["5h0QOP"]),
         autoFocus: true,
-        value: O,
+        value: v,
         onChange: e => {
           S(e), t()
         },
@@ -166,7 +166,7 @@ function y(e) {
   }))
 }
 
-function v(e) {
+function O(e) {
   let t = i.useRef(null);
   return (0, r.jsx)(h, m(p({
     targetElementRef: t,

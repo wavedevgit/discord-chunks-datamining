@@ -1,4 +1,4 @@
-/** Chunk was on 11788 **/
+/** Chunk was on 65354 **/
 /** chunk id: 424785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => X
@@ -137,8 +137,8 @@ class Y extends Chunk98597.ZP {
       connectUserDropTarget: s,
       connectDragPreview: d,
       canReorderChannel: p,
-      canMoveMembers: h,
-      stageInstance: f,
+      canMoveMembers: f,
+      stageInstance: h,
       isSubscriptionGated: m,
       needSubscriptionToAccess: b,
       unread: _,
@@ -306,7 +306,7 @@ function X(e) {
       bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), h = (0, S.ZP)(n.id), f = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, x.pV.AUDIENCE), {
+  }), p = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), f = (0, S.ZP)(n.id), h = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, x.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
   } = (0, _.Z)(n.id), y = (0, a.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), O = (0, E.xJ)(n.id), v = (0, M.Z)({
@@ -320,9 +320,9 @@ function X(e) {
   }), N = e.connected && null == v;
   return (0, r.jsx)(q, K(W({
     categoryCollapsed: p,
-    connectAction: h,
+    connectAction: f,
     numAudience: g,
-    stageInstance: f,
+    stageInstance: h,
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
   }, c, d, e), {

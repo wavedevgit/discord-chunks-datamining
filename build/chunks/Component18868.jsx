@@ -49,11 +49,11 @@ let m = () => {
     let {
       className: t,
       onDrop: n
-    } = e, [r, h] = i.useState(false), x = i.useRef(null), g = i.useCallback(e => {
+    } = e, [i, h] = r.useState(false), x = r.useRef(null), g = r.useCallback(e => {
       p(e), h(true), (0, s.Mr3)(c.A)
-    }, []), f = i.useCallback(e => {
+    }, []), f = r.useCallback(e => {
       p(e), h(false)
-    }, []), b = i.useCallback(async e => {
+    }, []), b = r.useCallback(async e => {
       p(e), h(false);
       let t = e.dataTransfer;
       if (null == t) return void m();
@@ -71,7 +71,7 @@ let m = () => {
       onDrop: b,
       children: (0, a.jsx)("div", {
         className: l()(u.uploadModal, {
-          [u.droppable]: r
+          [u.droppable]: i
         }),
         children: (0, a.jsxs)("div", {
           className: u.inner,

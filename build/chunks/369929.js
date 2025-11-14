@@ -1,4 +1,4 @@
-/** Chunk was on 38058 **/
+/** Chunk was on 36113 **/
 /** chunk id: 369929, original params: e,t,n (module,exports,require) **/
 module.exports = {
   gameShopLabelContainer: "gameShopLabelContainer__80465",

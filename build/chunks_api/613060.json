@@ -1,1 +1,1 @@
-{"id":"613060","type":"store","data":{"name":"ViewHistoryStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"hasViewed","args":["e"]}],"events":["VIEW_HISTORY_MARK_VIEW"]},"fromModule":{"id":"11788"}}
+{"id":"613060","type":"store","data":{"name":"ViewHistoryStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"hasViewed","args":["e"]}],"events":["VIEW_HISTORY_MARK_VIEW"]},"fromModule":{"id":"65354"}}

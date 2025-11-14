@@ -100,8 +100,8 @@ function y(e) {
     } = (0, u.l)(h({
       targetElementRef: w.targetElementRef
     }, D)),
-    j = P ? true : x,
-    k = (0, d.Q)({
+    k = P ? true : x,
+    j = (0, d.Q)({
       shouldShow: L
     }),
     {
@@ -147,9 +147,9 @@ function y(e) {
     })
   } else {
     if (!i.isValidElement(n)) return null;
-    t = (0, c.C9)(n, M, j, w.triggerRef)
+    t = (0, c.C9)(n, M, k, w.triggerRef)
   }
-  let Z = k((e, t) => t ? (0, r.jsx)(l.N, {
+  let Z = j((e, t) => t ? (0, r.jsx)(l.N, {
     isVisible: L,
     isRendered: true,
     targetElementRef: w.targetElementRef,

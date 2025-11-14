@@ -71,8 +71,8 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
       entry: n,
       showCoverImage: false
     }), {
-      user: j,
-      details: k,
+      user: k,
+      details: j,
       activity: U,
       embeddedActivity: G
     } = (0, C.n)(n), {
@@ -88,13 +88,13 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
         applicationId: n.extra.application_id
       })
     }, z = i.useCallback(e => {
-      if ((null == M ? true : M.src) == null || null == t || null == j) return;
+      if ((null == M ? true : M.src) == null || null == t || null == k) return;
       let r = W > 0 ? w({
         entry: n,
         channel: t,
         users: [H, Y],
         countOthers: W
-      }) : D(n, t, j);
+      }) : D(n, t, k);
       return (0, I.C4)({
         entry: n,
         applicationImageSrc: null == M ? true : M.src,
@@ -104,7 +104,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
         colors: [B, Z],
         channelId: e
       })
-    }, [null == M ? true : M.src, t, V, n, F, W, H, Y, B, Z, j]), {
+    }, [null == M ? true : M.src, t, V, n, F, W, H, Y, B, Z, k]), {
       data: q
     } = (0, h.IX)(n.extra.application_id), X = (0, u.Z)({
       application: q,
@@ -116,7 +116,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
     }, {
       autoTrackExposure: true
     });
-    if (null == j) return null;
+    if (null == k) return null;
     let J = (0, r.jsx)(S.PZ, {
         location: S.Gt.POPOUT,
         entry: n
@@ -125,7 +125,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
         channel: t,
         userDescription: (0, v.kr)(n) ? R.t.vPg1JT : R.t.rPqqts,
         title: n.extra.activity_name,
-        subtitle: k,
+        subtitle: j,
         badges: J,
         entry: n,
         showCoverImage: false,
@@ -137,7 +137,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
       et = ee ? (0, r.jsx)(d.Z, {
         embeddedActivity: G,
         activity: U,
-        user: j,
+        user: k,
         variant: "primary",
         size: "md",
         icon: o.YVR
@@ -165,10 +165,10 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
         children: (0, r.jsx)(A.WT, {
           onReaction: b,
           onVoiceChannelPreview: x,
-          user: j,
+          user: k,
           channel: t,
           generateReactionImage: z,
-          reactionImageAltText: P(n, j),
+          reactionImageAltText: P(n, k),
           entry: n,
           buttons: ea
         })

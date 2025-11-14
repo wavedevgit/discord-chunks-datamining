@@ -63,7 +63,7 @@ var Chunk46973 = require("./46973.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js");
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -72,14 +72,14 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -119,12 +119,12 @@ async function Z(e) {
   } = e;
   await a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
-    settings: k({
+    settings: j({
       clipsEnabled: t
     }, !t && {
       decoupledClipsEnabled: false
     })
-  }), r && I.default.track(L.rMx.CLIPS_SETTINGS_UPDATED, k({
+  }), r && I.default.track(L.rMx.CLIPS_SETTINGS_UPDATED, j({
     clips_enabled: t,
     guild_id: n
   }, !t && {
@@ -139,12 +139,12 @@ function F(e) {
   } = e;
   a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
-    settings: G(k({}, t && {
+    settings: G(j({}, t && {
       clipsEnabled: true
     }), {
       decoupledClipsEnabled: t
     })
-  }), n && I.default.track(L.rMx.CLIPS_SETTINGS_UPDATED, G(k({}, t && {
+  }), n && I.default.track(L.rMx.CLIPS_SETTINGS_UPDATED, G(j({}, t && {
     clips_enabled: true
   }), {
     decoupled_clips_enabled: t
@@ -237,7 +237,7 @@ function q(e, t) {
       a = null != (n = p.get(i)) ? n : 0;
     p.set(i, a + r)
   }
-  return G(k({}, e), {
+  return G(j({}, e), {
     frames_encoded_nvidia_cuda: null != (r = p.get(l.Su.NVIDIA_CUDA)) ? r : 0,
     frames_encoded_nvidia_direct3d: null != (i = p.get(l.Su.NVIDIA_DIRECT_3D)) ? i : 0,
     frames_encoded_openh264: null != (a = p.get(l.Su.OPENH264)) ? a : 0,
@@ -300,7 +300,7 @@ async function Q(e) {
     p = z(e);
   null != e && a.Z.dispatch({
     type: "CLIPS_SAVE_CLIP_PLACEHOLDER",
-    clip: G(k({}, o), {
+    clip: G(j({}, o), {
       pending: true,
       filepath: c
     })
@@ -317,7 +317,7 @@ async function Q(e) {
     } catch (e) {
       x.jF.warn("Failed to generate clip thumbnail:", e)
     }
-    return o.thumbnail = r, o.length = e, x.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(r.length, " bytes thumbnail.")), await d.updateClipMetadata(c, JSON.stringify(o)), G(k({}, o), {
+    return o.thumbnail = r, o.length = e, x.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(r.length, " bytes thumbnail.")), await d.updateClipMetadata(c, JSON.stringify(o)), G(j({}, o), {
       filepath: c
     })
   } catch (r) {
@@ -437,7 +437,7 @@ async function $(e, t) {
   let v = (0, _.GN)("clip_save", .5),
     I = performance.now();
   try {
-    let e = G(k({}, f), {
+    let e = G(j({}, f), {
         filepath: y,
         length: 0,
         thumbnail: ""
@@ -465,7 +465,7 @@ function ee(e, t) {
 async function et(e, t) {
   let n = A.Z.getClips().find(t => t.id === e);
   if (null == n) return;
-  let r = k({}, n, t);
+  let r = j({}, n, t);
   null != await (0, P.w)(r) && (await b.Z.getMediaEngine().updateClipMetadata(r.filepath, JSON.stringify(r)), I.default.track(L.rMx.CLIP_EDITED, {
     clip_id: r.id
   }), a.Z.dispatch({
@@ -496,7 +496,7 @@ async function ea(e) {
   let n = await s.Z.clips.loadClipsDirectory(e),
     r = [];
   for (let e of n) {
-    let t = await (0, P.w)(G(k({}, e.metadata), {
+    let t = await (0, P.w)(G(j({}, e.metadata), {
       filepath: e.filepath
     }));
     null != t && r.push(t)
@@ -546,7 +546,7 @@ function eu(e) {
   a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
     settings: {
-      clipSignals: k({}, A.Z.getSettings().clipSignals, e)
+      clipSignals: j({}, A.Z.getSettings().clipSignals, e)
     }
   })
 }
@@ -556,7 +556,7 @@ function ed(e) {
   null != t && (t("emotion_classifier", e.emotionClassifier), t("wake_word_detector", e.wakeWordDetector), t("yell_detector", e.yellDetector), t("whisper_transcription", e.whisperTranscription)), a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
     settings: {
-      mlPipelinesEnabled: k({}, A.Z.getSettings().mlPipelinesEnabled, e)
+      mlPipelinesEnabled: j({}, A.Z.getSettings().mlPipelinesEnabled, e)
     }
   })
 }

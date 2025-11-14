@@ -166,7 +166,7 @@ class K extends Chunk647438.PureComponent {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t["FRep5/"]),
-          onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(j.default, Y(V({}, e), {
+          onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(k.default, Y(V({}, e), {
             onSuccess: e.onClose
           })))
         })
@@ -297,7 +297,7 @@ class K extends Chunk647438.PureComponent {
         panelClassName: Chunk343396.tabPanel,
         onTabChange: e => {
           C.default.track(U.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-            target_tab_name: e === k.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
+            target_tab_name: e === j.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
           })
         },
         defaultTabIndex: "ACCOUNT_STANDING" === module ? 1 : true,

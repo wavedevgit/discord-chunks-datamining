@@ -56,7 +56,7 @@ let I = [{
 function w(e) {
   let {
     actionLog: t
-  } = e, n = i.useMemo(() => t.traces.map(e => ({
+  } = e, n = r.useMemo(() => t.traces.map(e => ({
     key: e.name,
     trace: e
   })), [t]);
@@ -75,23 +75,23 @@ let k = [{
     var t;
     let {
       actionLog: n
-    } = e, i = d()(n.createdAt);
+    } = e, r = d()(n.createdAt);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)(y.E, {
-        className: O.actionProperties,
+        className: T.actionProperties,
         children: [(0, a.jsx)(y.Z9, {
           name: "Created at",
           children: (0, a.jsx)("time", {
             dateTime: null == (t = n.createdAt) ? true : t.toISOString(),
-            title: (0, j.vc)(i, "LLLL"),
-            children: (0, j.Y4)(i)
+            title: (0, j.vc)(r, "LLLL"),
+            children: (0, j.Y4)(r)
           })
         }), (0, a.jsxs)(y.Z9, {
           name: "Total Time",
           children: [P(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(p.zJl, {
-        className: O.inspectorContainer,
+        className: T.inspectorContainer,
         children: (0, a.jsx)(_.Z, {
           data: n.action
         })
@@ -116,11 +116,11 @@ function R(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, r = i.useMemo(() => t.error ? [...k, {
+  } = e, i = r.useMemo(() => t.error ? [...k, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(b.Z, {
-        className: O.errorIcon
+        className: T.errorIcon
       }), "Error"]
     }),
     group: E.v0.NONE,
@@ -130,7 +130,7 @@ function R(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: l()(O.errorToolbar, N.toolbar),
+          className: l()(T.errorToolbar, N.toolbar),
           children: (0, a.jsx)("div", {
             className: N.toolbarGroup,
             children: (0, a.jsx)(m.zx, {
@@ -141,7 +141,7 @@ function R(e) {
             })
           })
         }), (0, a.jsx)(p.zJl, {
-          className: O.inspectorContainer,
+          className: T.inspectorContainer,
           children: (0, a.jsx)(_.Z, {
             data: t.error
           })
@@ -152,14 +152,14 @@ function R(e) {
     TabBar: s,
     renderSelectedTab: o
   } = (0, E.ZP)({
-    tabs: r
-  }, [r]);
+    tabs: i
+  }, [i]);
   return (0, a.jsxs)(C.Z, {
-    className: O.subPanel,
+    className: T.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(s, {}), (0, a.jsxs)(x.ZP, {
-      className: l()(N.headerBar, O.subPanelHeaderBar),
+      className: l()(N.headerBar, T.subPanelHeaderBar),
       children: [(0, a.jsx)(x.ZP.Icon, {
         icon: p.xVZ,
         tooltip: t.name
@@ -174,7 +174,7 @@ function R(e) {
           var e;
           let n = JSON.stringify(Object.keys(e = t.action).reduce((t, n) => {
             var a;
-            return t[n] = (a = e[n], T.Jn9.test(a) ? "REDACTED" : a), t
+            return t[n] = (a = e[n], O.Jn9.test(a) ? "REDACTED" : a), t
           }, {}), null, 2);
           (0, v.JG)(n, () => (0, p.showToast)({
             id: "copy-action-log-name",
@@ -197,7 +197,7 @@ let A = [{
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [t.error && (0, a.jsx)(b.Z, {
-          className: O.errorIcon
+          className: T.errorIcon
         }), t.name]
       })
     }
@@ -234,9 +234,9 @@ let A = [{
 function D() {
   let e = Chunk647438.useRef(null),
     [t, n] = Chunk647438.useState(""),
-    r = function(e) {
-      let [t, n] = i.useState(e.logs);
-      return i.useEffect(() => {
+    i = function(e) {
+      let [t, n] = r.useState(e.logs);
+      return r.useEffect(() => {
         let t = o()(() => {
           n([...e.logs])
         }, 500);
@@ -262,7 +262,7 @@ function D() {
     }, [Chunk299608]),
     C = exports.trim().length > 0,
     E = Chunk647438.useMemo(() => Chunk484036 ? Chunk755721 : Chunk886118 ? Chunk913527 : Chunk299608, [Chunk299608, Chunk755721, Chunk484036, Chunk886118, Chunk913527]),
-    T = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
+    O = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
     className: l()(Chunk451429.panel, Chunk687278.panel),

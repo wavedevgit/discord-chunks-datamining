@@ -1,4 +1,4 @@
-/** Chunk was on 38058 **/
+/** Chunk was on 36113 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => J
@@ -167,7 +167,7 @@ function R(e) {
   let {
     component: t
   } = e;
-  if (Array.isArray(t)) return L(t);
+  if (Array.isArray(t)) return M(t);
   switch (t.type) {
     case "HERO":
       let {
@@ -187,17 +187,17 @@ function R(e) {
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(B, k(D({}, i), {
-        body: L(n)
+      return (0, r.jsx)(G, k(D({}, i), {
+        body: M(n)
       }));
     case "GRID":
-      return (0, r.jsx)(M, {
-        children: L(t.children)
+      return (0, r.jsx)(B, {
+        children: M(t.children)
       });
     case "FIELD":
       return (0, r.jsx)(U, {
-        value: G(t.value),
-        name: G(t.name)
+        value: L(t.value),
+        name: L(t.name)
       });
     case "TEXT":
       return (0, r.jsx)(F, D({}, t));
@@ -210,17 +210,17 @@ function R(e) {
   }
 }
 
-function G(e, t) {
+function L(e, t) {
   return (0, r.jsx)(R, {
     component: e
   }, t)
 }
 
-function L(e) {
-  return e.map((e, t) => G(e, t))
+function M(e) {
+  return e.map((e, t) => L(e, t))
 }
 
-function B(e) {
+function G(e) {
   let {
     title: t,
     body: n,
@@ -264,7 +264,7 @@ function B(e) {
   })
 }
 
-function M(e) {
+function B(e) {
   let {
     children: t
   } = e;
@@ -288,7 +288,7 @@ function F(e) {
   let {
     content: t
   } = e, n = i.useId(), a = (0, h._)();
-  return null != t ? (0, r.jsx)(v.Z, {
+  return null != t ? (0, r.jsx)(O.Z, {
     type: u.re.TEXT_DISPLAY,
     id: n,
     content: t,
@@ -343,13 +343,13 @@ function H(e) {
 
 function z() {
   let e = function() {
-      let e = Chunk647438.useContext(Y);
+      let e = Chunk647438.useContext(q);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
       return module
     }(),
     {
       game: t
-    } = q(module.widget);
+    } = Y(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
     className: Chunk18827.socialProof,
     applicationId: exports.id,
@@ -384,9 +384,9 @@ function V(e, t) {
   let a = t.variables[i];
   return null == a || "unfurled_media" !== a.type ? null : a.media
 }
-let Y = Chunk647438.createContext(null);
+let q = Chunk647438.createContext(null);
 
-function q(e) {
+function Y(e) {
   return (0, o.cj)([f.Z, w.Z, P.Z], () => {
     let t = f.Z.getApplication(e.applicationId);
     return {
@@ -460,7 +460,7 @@ let J = Object.assign(function(e) {
     application: f,
     game: m,
     config: b
-  } = q(n), h = null == f ? true : f.getIconURL(16), y = (0, x.O)(t.id).data, v = null == y ? true : y.find(e => e.application_id === n.applicationId), j = (0, p.Z)({
+  } = Y(n), h = null == f ? true : f.getIconURL(16), y = (0, x.O)(t.id).data, O = null == y ? true : y.find(e => e.application_id === n.applicationId), j = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == m ? true : m.id,
     source: g.m1.UserProfile,
@@ -471,7 +471,7 @@ let J = Object.assign(function(e) {
     hasAlreadyLinked: w,
     canStartAuthorization: E,
     startAuthorization: N
-  } = (0, d.F)(f), Z = null == a && P && !w && E, G = (0, r.jsxs)(r.Fragment, {
+  } = (0, d.F)(f), Z = null == a && P && !w && E, L = (0, r.jsxs)(r.Fragment, {
     children: [null != h ? (0, r.jsx)("img", {
       className: C.appIcon,
       src: h,
@@ -486,9 +486,9 @@ let J = Object.assign(function(e) {
         className: C.textPlaceholder
       })
     })]
-  }), L = null == m ? (0, r.jsx)("div", {
+  }), M = null == m ? (0, r.jsx)("div", {
     className: C.header,
-    children: G
+    children: L
   }) : (0, r.jsx)(c.u, {
     asContainer: true,
     text: T.intl.string(T.t.ajHoOr),
@@ -496,9 +496,9 @@ let J = Object.assign(function(e) {
       className: l()(C.header, C.headerClickable),
       onClick: j,
       "aria-label": T.intl.string(T.t.ajHoOr),
-      children: G
+      children: L
     })
-  }), B = (0, o.e7)([_.default], () => _.default.locale), M = i.useMemo(() => {
+  }), G = (0, o.e7)([_.default], () => _.default.locale), B = i.useMemo(() => {
     let e = function(e, t, n) {
       var r, i, a;
       let l = new Intl.NumberFormat(n, {
@@ -519,7 +519,7 @@ let J = Object.assign(function(e) {
           if ("object" == typeof n) {
             if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
               type: "unfurled_media",
-              media: (0, O.ym)(n)
+              media: (0, v.ym)(n)
             }]
           } else if ("string" == typeof n) return [t, {
             type: "string",
@@ -534,7 +534,7 @@ let J = Object.assign(function(e) {
         config: t,
         numberFormat: l
       }
-    }(null != v ? v : null, null != b ? b : null, B);
+    }(null != O ? O : null, null != b ? b : null, G);
     return A.map(function t(n) {
       switch (n.type) {
         case "HERO":
@@ -563,29 +563,29 @@ let J = Object.assign(function(e) {
           return n
       }
     })
-  }, [b, v, B]);
+  }, [b, O, G]);
   return (0, r.jsxs)(S.Z, k(D({}, e), {
     userId: t.id,
     widget: n,
     className: l()(C.widgetContainer, u && C.subtle),
-    headerTitle: L,
+    headerTitle: M,
     additionalManageWidgetMenuItems: null != m ? (0, r.jsx)(s.sNh, {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: s.iWm,
       action: j
     }) : null,
-    children: [(0, r.jsx)(Y.Provider, {
+    children: [(0, r.jsx)(q.Provider, {
       value: e,
       children: (0, r.jsx)(X, {
         widget: n,
         children: (0, r.jsx)(R, {
-          component: M
+          component: B
         })
       })
     }), (0, r.jsxs)("div", {
       className: C.footer,
-      children: [null != v || Z ? null : (0, r.jsxs)("div", {
+      children: [null != O || Z ? null : (0, r.jsxs)("div", {
         className: C.stillSyncing,
         children: [(0, r.jsx)(s.wGF, {
           size: "xxs"
