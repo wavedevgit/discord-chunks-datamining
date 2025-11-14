@@ -131,8 +131,8 @@ function O(e) {
     k = i.useCallback((e, t) => {
       null == v || v(t)
     }, [v]),
-    j = i.useCallback(() => {
-      null == v || v()
+    j = i.useCallback(e => {
+      null == v || v(e)
     }, [v]),
     U = i.useCallback(e => {
       L(e)
@@ -147,6 +147,7 @@ function O(e) {
     scrollBehavior: S,
     modal: N,
     returnRef: R,
+    gradientOffsetBottom: 0,
     children: (0, r.jsxs)("div", {
       ref: P,
       "data-mana-component": "popover",
@@ -164,7 +165,8 @@ function O(e) {
         title: n,
         body: a
       }), null != b && b.length > 0 ? (0, r.jsx)(l.k, {
-        actions: b
+        actions: b,
+        className: _.actionBar
       }) : null, null != M && (0, r.jsx)(c.$, {
         caretConfig: M,
         className: G

@@ -2,8 +2,8 @@
 /** chunk id: 494424, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S,
-  c: () => T
+  Z: () => A,
+  c: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,76 +17,79 @@ var Chunk951288 = require("./951288.js"),
   Chunk660000 = require("./660000.js"),
   Chunk848572 = require("./848572.js"),
   Chunk654939 = require("./654939.jsx"),
+  Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
-let E = 1,
-  b = 15;
+let b = 1,
+  y = 15;
 
-function y() {
-  let e = I();
+function O() {
+  let e = T();
   return 1 === module ? Chunk388032.intl.string(Chunk388032.t.NBae0i) : Chunk388032.intl.format(Chunk388032.t.GSynLW, {
     time: module
   })
 }
 
-function O() {
+function v() {
   let e = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumSubscription());
   return null != module && module.status === Chunk981631.O0b.CANCELED ? module : null
 }
 
-function v() {
-  let e = O(),
-    t = I();
-  return null != module && exports >= E && exports <= b
+function I() {
+  let e = v(),
+    t = T();
+  return null != module && exports >= b && exports <= y
 }
 
-function I() {
-  let e = O();
+function T() {
+  let e = v();
   return null != module ? (0, Chunk74538.YN)(module) : 0
 }
 
-function T(e, t) {
-  let n = (0, _.Rw)(),
-    r = v(),
+function S(e, t) {
+  let n = (0, _.kG)(),
+    r = I(),
     i = (0, f.S)(e, t);
-  return (null == n ? true : n.status) === _.Vq.EARNED && r && i
+  return null != n && r && i
 }
-let S = e => {
+let A = e => {
+  var t;
   let {
-    markAsDismissed: t,
-    children: n,
-    mode: a = "popover",
-    tooltipDelay: c = 300,
-    targetElementRef: d
+    markAsDismissed: n,
+    children: a,
+    mode: c = "popover",
+    tooltipDelay: d = 300,
+    targetElementRef: f
   } = e, {
-    analyticsLocations: f
-  } = (0, s.ZP)(o.Z.TIERED_TENURE_BADGE_CHURN_REMINDER), _ = y(), O = I(), v = (0, i.useCallback)(() => {
-    u.default.track(h.rMx.TOOLTIP_VIEWED, {
+    analyticsLocations: v
+  } = (0, s.ZP)(o.Z.TIERED_TENURE_BADGE_CHURN_REMINDER), I = O(), S = T(), A = null != (t = (0, _.kG)()) ? t : h.VU.PREMIUM_TENURE_1_MONTH, C = (0, i.useCallback)(() => {
+    u.default.track(m.rMx.TOOLTIP_VIEWED, {
       type: "tiered_tenure_badge_churn_reminder"
     })
-  }, []), T = (0, i.useCallback)(() => {
-    null == t || t(m.L.TAKE_ACTION), (0, l.Z)({
+  }, []), N = (0, i.useCallback)(() => {
+    null == n || n(g.L.TAKE_ACTION), (0, l.Z)({
       initialPlanId: null,
       subscriptionTier: null,
-      analyticsLocations: f
+      analyticsLocations: v
     })
-  }, [t, f]), S = [{
-    text: g.intl.string(g.t.iIvF2z),
+  }, [n, v]), R = [{
+    text: E.intl.string(E.t.iIvF2z),
     variant: "expressive",
-    onClick: T
-  }], A = O >= E && O <= b ? Math.max(1, Math.min(100, (b - O) / b * 100)) : 1, C = O <= 10 ? "critical" : "warning";
+    onClick: N
+  }], P = S >= b && S <= y ? Math.max(1, Math.min(100, (y - S) / y * 100)) : 1, D = S <= 10 ? "critical" : "warning";
   return (0, r.jsx)(p.Z, {
-    targetElementRef: d,
-    body: _,
-    mode: a,
-    tooltipDelay: c,
-    markAsDismissed: t,
-    progressCircleText: "" + O,
-    progressCirclePercent: A,
-    progressCircleUrgency: C,
-    actions: S,
-    onShow: "tooltip" === a ? v : true,
-    children: n
+    badgeId: A,
+    targetElementRef: f,
+    body: I,
+    mode: c,
+    tooltipDelay: d,
+    markAsDismissed: n,
+    progressCircleText: "" + S,
+    progressCirclePercent: P,
+    progressCircleUrgency: D,
+    actions: R,
+    onShow: "tooltip" === c ? C : true,
+    children: a
   })
 }

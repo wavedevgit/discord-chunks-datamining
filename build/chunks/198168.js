@@ -3,7 +3,8 @@
 "use strict";
 require.d(exports, {
   DynamicGraphicComponent: () => i,
-  _: () => o
+  _: () => o,
+  a: () => a
 });
 var Chunk647438 = require("./647438.js"),
   i = function(e) {
