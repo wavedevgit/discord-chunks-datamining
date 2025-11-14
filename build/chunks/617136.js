@@ -93,17 +93,17 @@ function D(e) {
 }
 
 function w(e, t, n) {
-  var r, i;
-  let a = y.r.build(e.config),
-    s = (0, o.Gy)(n).uuid;
+  var r;
+  let i = y.r.build(e.config),
+    a = (0, o.Gy)(n).uuid;
   return T({
     quest_id: e.id,
-    quest_type: a.questType,
-    game_id: a.application.id,
-    game_name: a.application.name,
-    application_ids: null != (i = null == (r = a.applications) ? true : r.map(e => e.id)) ? i : [],
-    client_ad_session_id: s,
-    billing_session_id: D(s)
+    quest_type: i.questType,
+    game_id: i.application.id,
+    game_name: i.application.name,
+    application_ids: null != (r = (0, h.MC)(e)) ? r : [],
+    client_ad_session_id: a,
+    billing_session_id: D(a)
   }, (0, h.qe)(e.id, t))
 }
 
