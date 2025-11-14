@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk345959 = require("./345959.js"),
-  l = require.n(Chunk345959),
+  i = require.n(Chunk345959),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -52,8 +52,8 @@ function _(e) {
   let {
     recording: t,
     playing: n,
-    onPlay: r,
-    onStop: i
+    onPlay: l,
+    onStop: r
   } = e;
   return (0, a.jsx)(c.zF9, {
     collapsibleContent: (0, a.jsx)(j, {
@@ -72,7 +72,7 @@ function _(e) {
         }), (0, a.jsx)(c.P3F, {
           tag: "span",
           onClick: e => {
-            e.stopPropagation(), n ? i() : r(t)
+            e.stopPropagation(), n ? r() : l(t)
           },
           children: n ? (0, a.jsx)(c.fpf, {
             size: "xxs"
@@ -83,12 +83,12 @@ function _(e) {
           tag: "span",
           onClick: e => {
             e.stopPropagation();
-            let n = new Blob([l()(t.audioBuffer)], {
+            let n = new Blob([i()(t.audioBuffer)], {
                 type: "audio/wav"
               }),
               a = URL.createObjectURL(n),
-              r = document.createElement("a");
-            r.href = a, r.download = "".concat(t.inputName, "-").concat(new Date(t.createdAt).toLocaleString(), ".wav"), r.click(), URL.revokeObjectURL(a)
+              l = document.createElement("a");
+            l.href = a, l.download = "".concat(t.inputName, "-").concat(new Date(t.createdAt).toLocaleString(), ".wav"), l.click(), URL.revokeObjectURL(a)
           },
           children: (0, a.jsx)(c._8t, {
             size: "xxs"
@@ -102,11 +102,11 @@ function _(e) {
 function y() {
   let {
     name: e
-  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk647438.useState(false), [i, l] = Chunk647438.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [y, C] = Chunk647438.useState(null), S = Chunk647438.useRef(null), E = Chunk647438.useRef(null), [T, O] = Chunk647438.useState(.5), {
+  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk647438.useState(false), [r, i] = Chunk647438.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [y, C] = Chunk647438.useState(null), S = Chunk647438.useRef(null), E = Chunk647438.useRef(null), [O, T] = Chunk647438.useState(.5), {
     krispModels: N,
     krispModelOverride: P,
-    inputMode: I,
-    echoCancellation: w,
+    inputMode: w,
+    echoCancellation: I,
     autoThreshold: k,
     vadUseKrisp: R,
     vadKrispActivationThreshold: A,
@@ -142,7 +142,7 @@ function y() {
   function H(e) {
     if (t && V(), z(), null == G) return;
     let n = G.createBufferSource();
-    n.buffer = e.audioBuffer, E.current = G.createGain(), E.current.gain.value = T, n.connect(E.current), E.current.connect(G.destination), n.loop = true, n.start(), S.current = n, C(e)
+    n.buffer = e.audioBuffer, E.current = G.createGain(), E.current.gain.value = O, n.connect(E.current), E.current.connect(G.destination), n.loop = true, n.start(), S.current = n, C(e)
   }
   Chunk647438.useEffect(() => {
     z()
@@ -209,7 +209,7 @@ function y() {
           checked: U,
           onChange: e => d.Z.setNoiseCancellationEnableStats(e)
         })]
-      }), I === Chunk65154.pM.VOICE_ACTIVITY && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), w === Chunk65154.pM.VOICE_ACTIVITY && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Auto Threshold",
           checked: k,
@@ -241,7 +241,7 @@ function y() {
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: "Echo Cancellation",
-        checked: w,
+        checked: I,
         onChange: e => d.Z.setEchoCancellation(e)
       }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 4,
@@ -251,24 +251,24 @@ function y() {
         }), (0, Chunk951288.jsx)(Chunk755721.zx, {
           color: exports ? Chunk755721.zx.Colors.RED : Chunk755721.zx.Colors.BRAND,
           onClick: exports ? V : function() {
-            z(), require(true), Chunk846027.Z.setLoopback("krisp_test", true), Chunk131951.Z.getMediaEngine().startRecordingRawSamples((t, a, r) => {
+            z(), require(true), Chunk846027.Z.setLoopback("krisp_test", true), Chunk131951.Z.getMediaEngine().startRecordingRawSamples((t, a, l) => {
               n(false), d.Z.setLoopback("krisp_test", false);
-              let i = new AudioBuffer({
+              let r = new AudioBuffer({
                 length: t.length,
-                sampleRate: r,
+                sampleRate: l,
                 numberOfChannels: a
               });
               for (let e = 0; e < a; e++) {
                 let n = new Float32Array(t.length / a);
-                for (let r = 0; r < t.length / a; r++) n[r] = t[r * a + e] / 32768;
-                i.copyToChannel(n, e)
+                for (let l = 0; l < t.length / a; l++) n[l] = t[l * a + e] / 32768;
+                r.copyToChannel(n, e)
               }
-              l(t => [...t, {
+              i(t => [...t, {
                 inputName: e,
-                audioBuffer: i,
+                audioBuffer: r,
                 createdAt: Date.now(),
                 suppression: B,
-                echoCancellation: w,
+                echoCancellation: I,
                 krispSuppressionLevel: j
               }])
             })
@@ -277,9 +277,9 @@ function y() {
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
         label: "Volume",
-        initialValue: T,
+        initialValue: O,
         asValueChanges: function(e) {
-          null != E.current && (E.current.gain.value = e, O(e))
+          null != E.current && (E.current.gain.value = e, T(e))
         },
         minValue: 0,
         maxValue: 1

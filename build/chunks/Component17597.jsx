@@ -1,7 +1,7 @@
 /** Chunk was on 99904 **/
 /** chunk id: 17597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => T
+  default: () => O
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,18 +47,18 @@ function E(e) {
     }
   }) : null
 }
-let T = function(e) {
+let O = function(e) {
   let {
     transitionState: t,
     entryPoint: n,
     onClose: u,
     onComplete: j,
-    dismissable: T,
-    classificationId: O
-  } = e, [N, P] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = r.useRef(N), [w, k] = (0, c.US)([N], true, true), R = r.useMemo(() => (0, i.Z)(), []), A = r.useRef(false), Z = (0, m.GE)();
-  r.useEffect(() => {
-    I.current = w
-  }, [w]);
+    dismissable: O,
+    classificationId: T
+  } = e, [N, P] = l.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), w = l.useRef(N), [I, k] = (0, c.US)([N], true, true), R = l.useMemo(() => (0, r.Z)(), []), A = l.useRef(false), Z = (0, m.GE)();
+  l.useEffect(() => {
+    w.current = I
+  }, [I]);
   let {
     loading: D,
     ageVerificationMethods: L
@@ -69,22 +69,22 @@ let T = function(e) {
     onMethodClick: () => {
       P(s.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
     },
-    classificationId: O
+    classificationId: T
   });
-  return r.useLayoutEffect(() => () => {
+  return l.useLayoutEffect(() => () => {
     if (A.current) return;
-    let e = I.current;
+    let e = w.current;
     null != e && (A.current = true, p.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
-  }, []), r.useEffect(() => {
+  }, []), l.useEffect(() => {
     (0, g.lA)(R, g.d_.EXPRESSIVE_PRIMARY, n)
-  }, [R, n]), (0, a.jsx)(l.ExpressiveModal, {
+  }, [R, n]), (0, a.jsx)(i.ExpressiveModal, {
     transitionState: t,
     onClose: u,
     gradientColor: "blue",
-    dismissable: T,
+    dismissable: O,
     graphic: {
       type: "image",
       src: S.Z
@@ -145,14 +145,14 @@ let T = function(e) {
           let {
             title: t,
             description: n,
-            onClick: r
+            onClick: l
           } = e;
           return (0, a.jsx)(d.JZ, {
             variant: "clickable",
             title: t,
             description: n,
             buttonDisabled: D,
-            onButtonPress: () => r(R)
+            onButtonPress: () => l(R)
           }, t)
         })
       })]

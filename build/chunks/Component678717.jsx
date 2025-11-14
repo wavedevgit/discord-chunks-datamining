@@ -1,13 +1,13 @@
 /** Chunk was on 99904 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => I,
-  openDevToolsPopout: () => T
+  default: () => w,
+  openDevToolsPopout: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,26 +31,26 @@ function E(e) {
   let {
     resizableNode: t,
     onResize: n,
-    onResizeEnd: r
-  } = e, i = (0, d.Z)({
+    onResizeEnd: l
+  } = e, r = (0, d.Z)({
     minDimension: f.h,
     resizableDomNodeRef: t,
     onElementResize: n,
-    onElementResizeEnd: r,
+    onElementResizeEnd: l,
     orientation: d.y.HORIZONTAL_LEFT
   });
   return (0, a.jsx)("div", {
-    onMouseDown: i,
+    onMouseDown: r,
     className: C.resizeHandle
   })
 }
 
-function T() {
+function O() {
   (0, Chunk788983.bA)(Chunk981631.KJ3.DEVTOOLS_POPOUT, () => (0, Chunk951288.jsx)(Chunk238246.Z, {
     windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
     withTitleBar: true,
-    children: (0, Chunk951288.jsx)(I, {
+    children: (0, Chunk951288.jsx)(w, {
       mobile: false,
       isPopout: true
     })
@@ -60,23 +60,23 @@ function T() {
   })
 }
 
-function O(e) {
+function T(e) {
   var t;
   let {
     isPopout: n = false
-  } = e, r = (0, v.F)(), {
-    TabBar: i,
-    renderSelectedTab: l,
+  } = e, l = (0, v.F)(), {
+    TabBar: r,
+    renderSelectedTab: i,
     selectedTabId: o
   } = (0, j.ZP)({
-    tabs: r,
+    tabs: l,
     initialSelectedTabId: null != (t = f.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
       (0, g.Qh)({
         lastOpenTabId: e
       })
     }
-  }, [r]);
+  }, [l]);
   return (0, u.Z)({
     type: s.ImpressionTypes.PANE,
     name: s.ImpressionNames.VIEW_PANEL_DEVTOOLS,
@@ -90,7 +90,7 @@ function O(e) {
         children: [(0, a.jsx)(m.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
-          onClick: T
+          onClick: O
         }), (0, a.jsx)(m.ZP.Icon, {
           icon: c.Dio,
           tooltip: y.intl.string(y.t.cpT0Cq),
@@ -103,7 +103,7 @@ function O(e) {
       }), (0, a.jsx)(m.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(b.Br, {
+    }), (0, a.jsx)(r, {}), i(), (0, a.jsx)(b.Br, {
       className: C.layerContainer
     })]
   })
@@ -112,8 +112,8 @@ function O(e) {
 function N() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
-    [n, i] = Chunk647438.useState(null),
-    l = Chunk647438.useCallback(e => (0, g.Qh)({
+    [n, r] = Chunk647438.useState(null),
+    i = Chunk647438.useCallback(e => (0, g.Qh)({
       sidebarWidth: e
     }), []);
   return (Chunk647438.useEffect(() => {
@@ -129,27 +129,27 @@ function N() {
     children: [(0, Chunk951288.jsx)(E, {
       resizableNode: module,
       onResize: Chunk120356,
-      onResizeEnd: l
+      onResizeEnd: i
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk951288.jsx)(O, {})
+      children: (0, Chunk951288.jsx)(T, {})
     })]
   })
 }
 
 function P() {
   return (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.displayTools) ? (0, Chunk951288.jsx)("div", {
-    className: l()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
+    className: i()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk951288.jsx)(O, {})
+      children: (0, Chunk951288.jsx)(T, {})
     })
   }) : (0, Chunk951288.jsx)("div", {
     className: Chunk552883.container,
     children: (0, Chunk951288.jsx)(Chunk481060.P3F, {
       onClick: Chunk31336.SO,
       children: (0, Chunk951288.jsxs)(Chunk665149.ZP, {
-        className: l()(Chunk451429.headerBar, Chunk552883.mobileHeaderCollapsed),
+        className: i()(Chunk451429.headerBar, Chunk552883.mobileHeaderCollapsed),
         toolbar: (0, Chunk951288.jsx)(Chunk259580.Z, {
           direction: Chunk259580.Z.Directions.UP
         }),
@@ -164,14 +164,14 @@ function P() {
   })
 }
 
-function I(e) {
+function w(e) {
   let {
     mobile: t,
     isPopout: n = false
   } = e;
   return t ? (0, a.jsx)(P, {}) : n ? (0, a.jsx)("div", {
     className: C.popoutContainer,
-    children: (0, a.jsx)(O, {
+    children: (0, a.jsx)(T, {
       isPopout: true
     })
   }) : (0, a.jsx)(N, {})

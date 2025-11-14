@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk665149 = require("./665149.jsx"),
@@ -25,16 +25,16 @@ function f(e) {
   let {
     store: t,
     dataGetter: n
-  } = e, [i, l] = r.useState(n(t));
-  return r.useEffect(() => {
-    let e = () => l(n(t));
+  } = e, [r, i] = l.useState(n(t));
+  return l.useEffect(() => {
+    let e = () => i(n(t));
     return e(), t.addChangeListener(e), () => {
       t.removeChangeListener(e)
     }
   }, [t, n]), (0, a.jsx)(o.zJl, {
     className: x.inspectorContainer,
     children: (0, a.jsx)(d.Z, {
-      data: i
+      data: r
     })
   })
 }
@@ -86,8 +86,8 @@ function j(e) {
     store: t,
     initialHeight: n
   } = e, {
-    TabBar: r,
-    renderSelectedTab: i
+    TabBar: l,
+    renderSelectedTab: r
   } = (0, p.ZP)({
     tabs: v
   }, []);
@@ -95,15 +95,15 @@ function j(e) {
     className: x.subPanel,
     minHeight: 100,
     initialHeight: n,
-    children: [(0, a.jsx)(r, {}), (0, a.jsxs)(c.ZP, {
-      className: l()(h.headerBar, x.subPanelHeaderBar),
+    children: [(0, a.jsx)(l, {}), (0, a.jsxs)(c.ZP, {
+      className: i()(h.headerBar, x.subPanelHeaderBar),
       children: [(0, a.jsx)(c.ZP.Icon, {
         icon: o.lO_,
         tooltip: t.getName()
       }), (0, a.jsx)(c.ZP.Title, {
         children: t.getName()
       })]
-    }), i({
+    }), r({
       store: t
     })]
   })
@@ -112,7 +112,7 @@ function j(e) {
 function _() {
   let e = Chunk647438.useRef(null),
     [t, n] = Chunk647438.useState(""),
-    i = Chunk442837.yh.getAll(),
+    r = Chunk442837.yh.getAll(),
     c = Chunk647438.useMemo(() => Chunk120356.map(e => ({
       key: e._dispatchToken,
       store: e
@@ -126,7 +126,7 @@ function _() {
     p = Chunk120356.find(e => e._dispatchToken === d);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
-    className: l()(Chunk451429.panel, Chunk104444.panel),
+    className: i()(Chunk451429.panel, Chunk104444.panel),
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk104444.toolbar,
       children: (0, Chunk951288.jsx)(Chunk481060.E1j, {

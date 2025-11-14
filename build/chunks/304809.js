@@ -1,11 +1,11 @@
 /** Chunk was on 99904 **/
 /** chunk id: 304809, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => r
+  N: () => l
 });
 let a = null;
 
-function r() {
+function l() {
   if (null == a) try {
     a = new AudioContext
   } catch (e) {}

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk678717 = require("./678717.jsx"),
@@ -27,7 +27,7 @@ let g = e => {
           t(1)
         },
         children: (0, a.jsx)("div", {
-          className: l()(x.banner, x.pfxBanner),
+          className: i()(x.banner, x.pfxBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -39,7 +39,7 @@ let g = e => {
           t(2)
         },
         children: (0, a.jsx)("div", {
-          className: l()(x.banner, x.nameplateBanner),
+          className: i()(x.banner, x.nameplateBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -51,7 +51,7 @@ let g = e => {
           t(3)
         },
         children: (0, a.jsx)("div", {
-          className: l()(x.banner, x.bundlesBanner),
+          className: i()(x.banner, x.bundlesBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",

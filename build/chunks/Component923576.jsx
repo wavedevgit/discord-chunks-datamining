@@ -56,7 +56,7 @@ function b() {
       endedAt: true,
       premium_streak_started_at: p.default.fromTimestamp(t.getTime())
     };
-    b(true), await l.tn.patch({
+    b(true), await i.tn.patch({
       url: "/debug/subscriptions/".concat(_.id),
       body: n,
       rejectWithError: false

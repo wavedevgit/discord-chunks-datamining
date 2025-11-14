@@ -16,19 +16,19 @@ var Chunk647438 = require("./647438.js"),
 function m(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "product",
     m = (0, s.sp)(),
-    p = (0, r.e7)([o.Z], () => o.Z.getProduct(e)),
+    p = (0, l.e7)([o.Z], () => o.Z.getProduct(e)),
     h = (0, d.x)(),
-    x = l.ZP.canUseCollectibles(h),
+    x = i.ZP.canUseCollectibles(h),
     g = a.useRef(null),
     f = a.useCallback(() => {
       let a = null != p ? (0, c.Vw)(p, x, false) : null,
-        r = null != p ? (0, c.eu)(p, x, false) : true;
-      i.default.track(u.rMx.COLLECTIBLES_TILE_IMPRESSION, {
+        l = null != p ? (0, c.eu)(p, x, false) : true;
+      r.default.track(u.rMx.COLLECTIBLES_TILE_IMPRESSION, {
         collectibles_shop_session_id: null == m ? true : m.sessionId,
         sku_id: e,
         display_price: null == a ? true : a.amount,
         display_price_currency: null == a ? true : a.currency.toString(),
-        display_price_strikethrough: r,
+        display_price_strikethrough: l,
         position: null == m ? true : m.tilePosition,
         page_type: t,
         page_category: null == m ? true : m.pageCategory,

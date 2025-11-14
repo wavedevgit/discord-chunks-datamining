@@ -28,55 +28,55 @@ function y(e) {
   let {
     targetElementRef: n,
     onClose: y
-  } = e, [C, S] = r.useState(false), {
+  } = e, [C, S] = l.useState(false), {
     trackUserProfileEditAction: E
-  } = (0, u.KZ)(), T = (0, l.e7)([b.default], () => b.default.getId()), {
-    config: O,
+  } = (0, u.KZ)(), O = (0, i.e7)([b.default], () => b.default.getId()), {
+    config: T,
     application: N
   } = (0, h.G)(), {
     fetched: P,
-    hasAlreadyLinked: I,
-    canStartAuthorization: w,
+    hasAlreadyLinked: w,
+    canStartAuthorization: I,
     startAuthorization: k
-  } = (0, c.F)(N), R = (0, x.ZP)(T), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == N ? true : N.id));
-  return null != O && null != O.edit_profile_upsell_image && null != N && P ? (0, a.jsx)(d.ZP, {
+  } = (0, c.F)(N), R = (0, x.ZP)(O), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == N ? true : N.id));
+  return null != T && null != T.edit_profile_upsell_image && null != N && P ? (0, a.jsx)(d.ZP, {
     bypassAutoDismiss: true,
-    contentTypes: I ? A ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : w ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+    contentTypes: w ? A ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : I ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: r
+        markAsDismissed: l
       } = e;
       if (null == t) return null;
-      let l = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
+      let i = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
       return (0, a.jsx)(o.J2, {
         targetElementRef: n,
         position: "right",
         gradientColor: "blue",
         graphic: {
           type: "image",
-          src: O.edit_profile_upsell_image
+          src: T.edit_profile_upsell_image
         },
         title: _.intl.format(_.t.TXDztH, {
           applicationName: N.name
         }),
-        body: l ? _.intl.string(_.t["63Kso0"]) : _.intl.string(_.t.HwXoeC),
+        body: i ? _.intl.string(_.t["63Kso0"]) : _.intl.string(_.t.HwXoeC),
         onRequestClose: () => {
-          r(v.L.USER_DISMISS)
+          l(v.L.USER_DISMISS)
         },
-        actions: [l ? {
+        actions: [i ? {
           text: _.intl.string(_.t.VSLDly),
           onClick: () => {
             S(true), (0, g.openUserProfileModal)({
-              userId: T,
+              userId: O,
               section: j.oh.WIDGETS
             }).then(() => {
-              r(v.L.TAKE_ACTION), y(), (0, p.qH)(i.l.APPLICATION, new m.q({
+              l(v.L.TAKE_ACTION), y(), (0, p.qH)(r.l.APPLICATION, new m.q({
                 applicationId: N.id,
-                type: i.l.APPLICATION
+                type: r.l.APPLICATION
               })), E({
                 action: "WIDGET_ADDED",
-                widgetEdited: i.l.APPLICATION
+                widgetEdited: r.l.APPLICATION
               }), (0, f.L$)(j.qb.WIDGET_ADDED)
             }).finally(() => S(false))
           },
@@ -85,10 +85,10 @@ function y(e) {
           text: _.intl.string(_.t["DSJi3+"]),
           onClick: () => {
             k(), S(true), (0, g.openUserProfileModal)({
-              userId: T,
+              userId: O,
               section: j.oh.WIDGETS
             }).then(() => {
-              r(v.L.TAKE_ACTION), y()
+              l(v.L.TAKE_ACTION), y()
             }).finally(() => S(false))
           },
           loading: C

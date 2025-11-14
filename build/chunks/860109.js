@@ -24,7 +24,10 @@ function s(e) {
     saturation: m
   } = (0, o.ZF)(), {
     highContrastModeEnabled: g
-  } = r.useContext(a.S), E = r.useRef(null), b = l();
+  } = r.useContext(a.S), E = r.useRef(null), b = l(), y = r.useCallback((e, t) => {
+    let n = null == e ? true : e[t];
+    return null == n ? null : "object" == typeof n && "value" in n ? n.value : n
+  }, []);
   c({
     rive: t,
     artboard: n,
@@ -42,49 +45,56 @@ function s(e) {
         if (e.signal.aborted) return;
         let s = n[0],
           _ = n[1],
-          y = null != _ && "object" == typeof _ && "type" in _,
-          O = y ? _.type : r[s],
-          v = y ? _.value : _;
-        switch (O) {
+          O = null != _ && "object" == typeof _ && "type" in _,
+          v = O ? _.type : r[s],
+          I = O ? _.value : _;
+        switch (v) {
           case "color":
-            let [I, T, S, A] = v.resolve({
-              theme: h,
-              saturation: m,
-              highContrastModeEnabled: g
-            }).rgba();
-            null == (a = t.viewModelInstance) || null == (i = a.color(s)) || i.rgba(I, T, S, 255 * A);
+            if ("number" == typeof I) {
+              let e = null == (i = t.viewModelInstance) ? true : i.color(s);
+              null != e && (e.value = I)
+            } else {
+              let [e, n, r, i] = I.resolve({
+                theme: h,
+                saturation: m,
+                highContrastModeEnabled: g
+              }).rgba();
+              null == (o = t.viewModelInstance) || null == (a = o.color(s)) || a.rgba(e, n, r, 255 * i)
+            }
             break;
           case "number":
-            let C = null == (o = t.viewModelInstance) ? true : o.number(s);
-            null != C && (C.value = v);
+            let T = null == (l = t.viewModelInstance) ? true : l.number(s);
+            null != T && (T.value = I);
             break;
           case "boolean":
-            let N = null == (l = t.viewModelInstance) ? true : l.boolean(s);
-            null != N && (N.value = v);
+            let S = null == (c = t.viewModelInstance) ? true : c.boolean(s);
+            null != S && (S.value = I);
             break;
           case "trigger":
-            null != v && ("boolean" == typeof v ? v : 0 !== v) && (null == (c = E.current) ? true : c[s]) !== v && (null == (d = t.viewModelInstance) || null == (u = d.trigger(s)) || u.trigger());
+            let A = null != I && ("boolean" == typeof I ? I : 0 !== I),
+              C = y(E.current, s);
+            A && C !== I && (null == (d = t.viewModelInstance) || null == (u = d.trigger(s)) || u.trigger());
             break;
           case "string":
-            let R = null == (f = t.viewModelInstance) ? true : f.string(s);
-            null != R && (R.value = v);
+            let N = null == (f = t.viewModelInstance) ? true : f.string(s);
+            null != N && (N.value = I);
             break;
           case "image":
-            if (null != v) {
-              let n = await b(v, e.signal);
+            if (null != I) {
+              let n = await b(I, e.signal);
               if (e.signal.aborted) return;
               let r = null == (p = t.viewModelInstance) ? true : p.image(s);
               null != r && (r.value = n)
             }
             break;
           default:
-            console.warn("Unknown property type: ".concat(O))
+            console.warn("Unknown property type: ".concat(v))
         }
       }
     }(), () => {
       e.abort(), E.current = _
     }
-  }, [_, t, n, s, h, null == t ? true : t.viewModelInstance, m, g, b])
+  }, [y, _, t, n, s, h, null == t ? true : t.viewModelInstance, m, g, b])
 }
 
 function l() {

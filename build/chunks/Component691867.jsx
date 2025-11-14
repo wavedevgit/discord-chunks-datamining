@@ -14,14 +14,14 @@ var Chunk951288 = require("./951288.js"),
 function d() {
   let e = (0, Chunk442837.e7)([Chunk91311.Z], () => Chunk91311.Z.allWithDescriptions(), [], Chunk442837.pF),
     t = Chunk647438.useMemo(() => module.map(e => {
-      let [t, n, r] = e;
+      let [t, n, l] = e;
       return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(l.rsf, {
-          label: r,
+        children: [(0, a.jsx)(i.rsf, {
+          label: l,
           description: t,
           checked: n,
           onChange: e => (0, s.Z)(t, e)
-        }, t), (0, a.jsx)(l.izJ, {
+        }, t), (0, a.jsx)(i.izJ, {
           gap: 16
         })]
       })

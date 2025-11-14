@@ -25,8 +25,8 @@ let o = (0, Chunk427164.le)({
     }
   }),
   s = (0, Chunk818083.B)({
-    id: "2024-11_seasonal_gifting_reminder",
-    label: "Seasonal Gifting Reminder 2024",
+    id: "2025-11_seasonal_gifting_2025_reminder",
+    label: "Seasonal Gifting 2025 Reminder",
     kind: "user",
     defaultConfig: {
       enabled: false

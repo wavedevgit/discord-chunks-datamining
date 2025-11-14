@@ -18,21 +18,21 @@ function d(e) {
     height: d
   } = e, u = (0, o.Un)({
     location: "AccountProfilePopoutUpsell"
-  }), m = (0, s.ww)(t), p = r.useMemo(() => {
+  }), m = (0, s.ww)(t), p = l.useMemo(() => {
     let e = [];
-    return u && !m && e.push(i.z.GAME_WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), e
+    return u && !m && e.push(r.z.GAME_WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), e
   }, [u, m]);
-  return (0, a.jsx)(l.ZP, {
+  return (0, a.jsx)(i.ZP, {
     contentTypes: p,
     bypassAutoDismiss: true,
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: r
+        markAsDismissed: l
       } = e;
-      return null == d ? null : t === i.z.GAME_WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_UPSELL ? (0, a.jsx)(c.Z, {
+      return null == d ? null : t === r.z.GAME_WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_UPSELL ? (0, a.jsx)(c.Z, {
         handleOpenUserProfileModal: n,
-        markAsDismissed: r,
+        markAsDismissed: l,
         height: d
       }) : null
     }

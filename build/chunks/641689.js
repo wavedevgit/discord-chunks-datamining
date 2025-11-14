@@ -1,10 +1,10 @@
 /** Chunk was on 99904 **/
 /** chunk id: 641689, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => l,
-  messagesLoader: () => r
+  default: () => i,
+  messagesLoader: () => l
 });
-letChunk137062 = require("./137062.js"), r = a({
+letChunk137062 = require("./137062.js"), l = a({
   bg: () => require.e("40743").then(require.t.bind(require, 47042, 19)),
   cs: () => require.e("6839").then(require.t.bind(require, 799603, 19)),
   da: () => require.e("69305").then(require.t.bind(require, 860649, 19)),
@@ -36,4 +36,4 @@ letChunk137062 = require("./137062.js"), r = a({
   "zh-CN": () => require.e("95858").then(require.t.bind(require, 122088, 19)),
   "zh-TW": () => require.e("1901").then(require.t.bind(require, 137424, 19)),
   "en-US": () => require.e("25163").then(require.bind(require, 568655))
-}, "en-US"), Chunk137062 = require("./137062.js"), l = i(r)
+}, "en-US"), Chunk137062 = require("./137062.js"), i = r(l)

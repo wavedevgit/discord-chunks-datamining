@@ -64,8 +64,8 @@ function v(e) {
     state: t,
     setState: n
   } = e, {
-    scales: i
-  } = t, [l, s] = r.useState(null), o = (0, a.jsxs)("div", {
+    scales: r
+  } = t, [i, s] = l.useState(null), o = (0, a.jsxs)("div", {
     className: h.section,
     children: [(0, a.jsx)(d.VcW, {
       options: b,
@@ -91,7 +91,7 @@ function v(e) {
       popoutLayerContext: m.O$
     }), (0, a.jsx)("ul", {
       className: h.overrides,
-      children: i.map(e => (0, a.jsx)("li", {
+      children: r.map(e => (0, a.jsx)("li", {
         children: (0, a.jsx)(d.P3F, {
           onClick: () => s(e.name),
           style: {
@@ -106,7 +106,7 @@ function v(e) {
         })
       }, e.name))
     })]
-  }), u = i.find(e => e.name === l), f = null != u ? (0, a.jsx)(j, {
+  }), u = r.find(e => e.name === i), f = null != u ? (0, a.jsx)(j, {
     onClose: () => s(null),
     scale: u,
     setState: n
@@ -120,7 +120,7 @@ function j(e) {
   let {
     scale: t,
     setState: n,
-    onClose: r
+    onClose: l
   } = e, {
     name: c,
     base: x,
@@ -136,7 +136,7 @@ function j(e) {
     children: [(0, a.jsxs)("div", {
       className: h.titleWithIcon,
       children: [(0, a.jsx)(d.P3F, {
-        onClick: r,
+        onClick: l,
         style: {
           maxWidth: 80
         },
@@ -151,7 +151,7 @@ function j(e) {
           let e = Object.entries(S).reduce((e, t) => {
             let [n, a] = t;
             return e[n] = {
-              value: (0, i.Z)((0, l.Z)(a, p.HW.sRGB), {
+              value: (0, r.Z)((0, i.Z)(a, p.HW.sRGB), {
                 format: "hex"
               }),
               type: "color"
@@ -243,7 +243,7 @@ function j(e) {
         className: h.paletteOverrides,
         "data-columnar": b,
         children: Object.entries(S).map((e, n) => {
-          let [r, c] = e, u = (0, p.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = E[r];
+          let [l, c] = e, u = (0, p.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = E[l];
           return (0, a.jsxs)("div", {
             style: {
               backgroundColor: u
@@ -262,11 +262,11 @@ function j(e) {
                 opacity: .75,
                 color: m
               },
-              children: [(0, i.Z)((0, l.Z)(c, p.HW.sRGB), {
+              children: [(0, r.Z)((0, i.Z)(c, p.HW.sRGB), {
                 format: "hex"
               }).toUpperCase(), " - ", u]
             })]
-          }, r)
+          }, l)
         })
       })]
     })]
@@ -277,7 +277,7 @@ function _(e) {
   let {
     scale: t,
     onRemove: n
-  } = e, s = r.useMemo(() => Object.values((0, p.XM)(t)).map(e => (0, i.Z)((0, l.Z)(e, p.HW.sRGB), {
+  } = e, s = l.useMemo(() => Object.values((0, p.XM)(t)).map(e => (0, r.Z)((0, i.Z)(e, p.HW.sRGB), {
     format: "hex"
   })), [t]);
   return (0, a.jsxs)("li", {

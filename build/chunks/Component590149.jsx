@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk422665 = require("./422665.js");
@@ -15,7 +15,7 @@ function d(e) {
   let {
     icon: t,
     title: n,
-    subtitle: i,
+    subtitle: r,
     children: d,
     className: u,
     isExpanded: m,
@@ -23,15 +23,15 @@ function d(e) {
     defaultExpanded: h = false,
     onOpen: x,
     maxHeight: g
-  } = e, [f, b] = r.useState(h), v = r.useRef(null), [j, _] = r.useState(null), y = true !== m, C = y ? m : f;
-  r.useEffect(() => {
+  } = e, [f, b] = l.useState(h), v = l.useRef(null), [j, _] = l.useState(null), y = true !== m, C = y ? m : f;
+  l.useEffect(() => {
     C && null != v.current && _(v.current.scrollHeight)
   }, [C, d]);
-  let S = r.useCallback(() => {
+  let S = l.useCallback(() => {
       let e = !C;
       y || b(e), null == p || p(e), e && null != x && x()
     }, [C, y, p, x]),
-    E = r.useMemo(() => {
+    E = l.useMemo(() => {
       if (C) {
         if (null != g) return {
           maxHeight: "number" == typeof g ? "".concat(g, "px") : g
@@ -42,7 +42,7 @@ function d(e) {
       }
     }, [g, C, j]);
   return (0, a.jsxs)("div", {
-    className: l()(c.accordionContainer, u, {
+    className: i()(c.accordionContainer, u, {
       [c.opened]: C
     }),
     children: [(0, a.jsxs)(s.P3F, {
@@ -57,13 +57,13 @@ function d(e) {
           variant: "eyebrow",
           color: "header-secondary",
           children: n
-        }), null != i && "" !== i && (0, a.jsx)(s.Text, {
+        }), null != r && "" !== r && (0, a.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "interactive-normal",
-          children: i
+          children: r
         })]
       }), (0, a.jsx)("div", {
-        className: l()(c.caret, {
+        className: i()(c.caret, {
           [c.opened]: C
         }),
         children: (0, a.jsx)(o.Z, {
@@ -74,7 +74,7 @@ function d(e) {
       })]
     }), (0, a.jsx)("div", {
       ref: v,
-      className: l()(c.content, {
+      className: i()(c.content, {
         [c.opened]: C
       }),
       style: E,
