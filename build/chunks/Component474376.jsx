@@ -26,13 +26,13 @@ var Chunk442837 = require("./442837.js"),
 function _(e) {
   let t = (0, r.e7)([u.default], () => u.default.getCurrentUser()),
     n = (0, r.e7)([d.Z], () => d.Z.hidePersonalInformation),
-    _ = (0, r.e7)([s.Z], () => (0, i.wj)(s.Z.theme)),
+    _ = (0, r.e7)([o.Z], () => (0, i.wj)(o.Z.theme)),
     {
       multiAccountUsers: y
     } = (0, g.L)(),
     C = y.map(r => {
       let i = new c.Z(r),
-        s = i.id === (null == t ? true : t.id),
+        o = i.id === (null == t ? true : t.id),
         d = r.tokenStatus === x.q.INVALID,
         u = n ? null : "#".concat(i.discriminator);
       return (0, a.jsx)(l.sNh, {
@@ -62,14 +62,14 @@ function _(e) {
                 variant: "text-sm/normal",
                 children: u
               })]
-            }), s && (0, a.jsx)(l.owK, {
+            }), o && (0, a.jsx)(l.owK, {
               size: "sm",
-              color: (0, o.Lq)(t ? b.Ilk.WHITE_500 : b.Ilk.BRAND_500),
-              secondaryColor: (0, o.Lq)(t && _ || t && !_ ? b.Ilk.BRAND_500 : b.Ilk.WHITE_500),
+              color: (0, s.Lq)(t ? b.Ilk.WHITE_500 : b.Ilk.BRAND_500),
+              secondaryColor: (0, s.Lq)(t && _ || t && !_ ? b.Ilk.BRAND_500 : b.Ilk.WHITE_500),
               className: j.activeIcon
             }), d && (0, a.jsx)(l.Mgn, {
-              color: (0, o.Lq)(b.Ilk.RED_400),
-              secondaryColor: (0, o.Lq)(t && _ || t && !_ ? b.Ilk.BRAND_500 : b.Ilk.WHITE_500),
+              color: (0, s.Lq)(b.Ilk.RED_400),
+              secondaryColor: (0, s.Lq)(t && _ || t && !_ ? b.Ilk.BRAND_500 : b.Ilk.WHITE_500),
               size: "xs",
               className: j.activeIcon
             })]

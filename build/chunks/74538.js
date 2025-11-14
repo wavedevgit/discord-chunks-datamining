@@ -30,8 +30,9 @@ require.d(exports, {
   W_: () => eB,
   Wz: () => tI,
   XK: () => eQ,
+  YN: () => tU,
   Z8: () => eg,
-  ZP: () => tU,
+  ZP: () => tG,
   Zx: () => eJ,
   _O: () => tT,
   a5: () => eF,
@@ -1678,7 +1679,11 @@ function tk(e) {
 function tj(e) {
   return null == e ? 0 : Math.max((0, y.wY)(new Date, new Date(e)), 0)
 }
-let tU = Object.freeze({
+
+function tU(e) {
+  return Math.max(1, Math.ceil((0, y.jc)(new Date(e.currentPeriodEnd), new Date)))
+}
+let tG = Object.freeze({
   isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < G,
   isPremiumAtLeast: Chunk111361.yd,
   isPremium: Chunk111361.I5,
@@ -1725,6 +1730,8 @@ let tU = Object.freeze({
   getUnactivatedFractionalPremiumHours: tL,
   castPremiumSubscriptionAsSkuId: tI,
   calculateDiscountPercentageForYearlyPlan: tk,
+  getDaysSincePremium: tj,
+  getDaysRemainingUntilSubscriptionCurrentPeriodEnds: tU,
   canUseAnimatedEmojis: e6,
   canUseEmojisEverywhere: e7,
   canUseSoundboardEverywhere: e9,

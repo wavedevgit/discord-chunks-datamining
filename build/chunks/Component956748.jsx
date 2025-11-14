@@ -17,8 +17,8 @@ let c = e => {
     size: c = "default"
   } = e, d = "small" === c ? l.EFr.SIZE_24 : l.EFr.SIZE_32;
   return (0, a.jsxs)("div", {
-    className: i()(s.nameplatePlaceholderUserRow, {
-      [s.smallRow]: "small" === c
+    className: i()(o.nameplatePlaceholderUserRow, {
+      [o.smallRow]: "small" === c
     }),
     style: {
       opacity: r
@@ -26,13 +26,13 @@ let c = e => {
     children: [(0, a.jsx)(l.qEK, {
       src: null,
       size: d,
-      status: t ? o.Skl.ONLINE : true,
+      status: t ? s.Skl.ONLINE : true,
       statusColor: "var(--border-subtle)",
       "aria-hidden": true,
-      imageClassName: s.nameplatePlaceholderAvatar
+      imageClassName: o.nameplatePlaceholderAvatar
     }), (0, a.jsx)("div", {
-      className: i()(s.nameplatePlaceholderBar, {
-        [s.smallBar]: "small" === c
+      className: i()(o.nameplatePlaceholderBar, {
+        [o.smallBar]: "small" === c
       }),
       style: {
         maxWidth: null != n ? n : "100px"

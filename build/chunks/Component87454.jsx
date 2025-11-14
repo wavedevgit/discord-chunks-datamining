@@ -36,22 +36,22 @@ let d = Chunk647438.memo(function(e) {
         "aria-label": h ? "Copied" : "Copy"
       }), (0, a.jsx)(l.rsf, {
         label: "".concat(n.toLowerCase(), " (").concat(i.z[n], ")"),
-        description: (0, s.qh)(u) ? function(e) {
+        description: (0, o.qh)(u) ? function(e) {
           var t, n;
-          let a = null == (n = o.Z.settings.userContent) || null == (t = n.recurringDismissibleContentStates) ? true : t[e];
+          let a = null == (n = s.Z.settings.userContent) || null == (t = n.recurringDismissibleContentStates) ? true : t[e];
           if (null == a) return null;
           let r = [],
             {
               lastDismissedVersion: i,
               lastDismissedAtMs: l,
-              lastDismissedObjectId: s
+              lastDismissedObjectId: o
             } = a;
           if (true !== i && 0 !== i && r.push("last_dismissed_version: ".concat(i)), true !== l) {
             let e = Number(l),
               t = Number.isNaN(e) ? "n/a" : new Date(e).toLocaleString();
             r.push("last_dismissed_at: ".concat(t))
           }
-          return (true !== s && "0" !== s && r.push("last_dismissed_object_id: ".concat(s)), 0 === r.length) ? null : r.join(", ")
+          return (true !== o && "0" !== o && r.push("last_dismissed_object_id: ".concat(o)), 0 === r.length) ? null : r.join(", ")
         }(u) : null,
         checked: m,
         onChange: g

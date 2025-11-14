@@ -15,8 +15,8 @@ var Chunk647438 = require("./647438.js"),
 
 function m(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "product",
-    m = (0, o.sp)(),
-    p = (0, r.e7)([s.Z], () => s.Z.getProduct(e)),
+    m = (0, s.sp)(),
+    p = (0, r.e7)([o.Z], () => o.Z.getProduct(e)),
     h = (0, d.x)(),
     x = l.ZP.canUseCollectibles(h),
     g = a.useRef(null),

@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk137062 = require("./137062.js"),
   Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  s = require.n(Chunk913527),
   Chunk330711 = require("./330711.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -48,7 +48,7 @@ function g() {
         children: Chunk330711.Z.getLocale()
       }), (0, Chunk951288.jsx)(Chunk257785.Z9, {
         name: "Moment",
-        children: o().locale()
+        children: s().locale()
       })]
     }), (0, Chunk951288.jsxs)(Chunk665149.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {

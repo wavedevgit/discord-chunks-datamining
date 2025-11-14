@@ -13,14 +13,14 @@ let l = e => {
     onSubmit: n,
     disabled: l
   } = e, {
-    task: o
-  } = (0, r.T)(), s = i.o[o.ui_component.component.type];
-  return null == s ? null : (0, a.jsx)(s, {
-    configData: o.ui_component.component.data,
+    task: s
+  } = (0, r.T)(), o = i.o[s.ui_component.component.type];
+  return null == o ? null : (0, a.jsx)(o, {
+    configData: s.ui_component.component.data,
     onSubmit: n,
-    taskId: o.task_id,
-    flowId: null == (t = o.flow_context) ? true : t.flow_id,
-    assignmentId: o.assignment_id,
+    taskId: s.task_id,
+    flowId: null == (t = s.flow_context) ? true : t.flow_id,
+    assignmentId: s.assignment_id,
     disabled: l
   })
 }

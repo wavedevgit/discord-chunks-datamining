@@ -25,8 +25,8 @@ function j(e) {
   let {
     groupName: t,
     targetElementRef: n
-  } = e, r = (0, h.Z)(), o = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), m = (0, d.Z)(e => e.isOpen), p = (0, i.e7)([u.Z], () => u.Z.getLayers().includes(f.S9g.USER_SETTINGS));
-  return o || null == r || m || p ? null : (0, a.jsx)(c.Nq, {
+  } = e, r = (0, h.Z)(), s = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), m = (0, d.Z)(e => e.isOpen), p = (0, i.e7)([u.Z], () => u.Z.getLayers().includes(f.S9g.USER_SETTINGS));
+  return s || null == r || m || p ? null : (0, a.jsx)(c.Nq, {
     contentType: l.z.NITRO_TENURE_BADGE_LEVEL_UP,
     timeRecurringConfig: {
       cooldownDurationMs: 12096e5
@@ -53,7 +53,7 @@ function _(e) {
     recentlyLeveledTenureBadge: n,
     markAsDismissed: i,
     targetElementRef: l,
-    shouldShow: s
+    shouldShow: o
   } = e, c = g.Qh.indexOf(n), u = (0, x.J)(g.Qh[c > 0 ? c - 1 : c], {
     ambient: true
   }), h = (0, r.useCallback)(() => {
@@ -69,10 +69,10 @@ function _(e) {
     variant: "primary",
     onClick: h
   }];
-  return (0, a.jsx)(o.J, {
+  return (0, a.jsx)(s.J, {
     targetElementRef: l,
     onRequestClose: j,
-    shouldShow: s,
+    shouldShow: o,
     caretConfig: {
       align: "center"
     },

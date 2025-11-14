@@ -27,14 +27,14 @@ function _(e) {
     task: t,
     handleSubmit: n,
     disabled: i
-  } = e, [l, o] = r.useState(t), s = r.useMemo(() => ({
+  } = e, [l, s] = r.useState(t), o = r.useMemo(() => ({
     task: l,
-    setTask: o
-  }), [l, o]);
+    setTask: s
+  }), [l, s]);
   return r.useEffect(() => {
-    o(t)
+    s(t)
   }, [t]), (0, a.jsxs)(u.y.Provider, {
-    value: s,
+    value: o,
     children: [(0, a.jsx)(x.Z, {}), (0, a.jsx)(h.Z, {
       onSubmit: n,
       disabled: i
@@ -44,7 +44,7 @@ function _(e) {
 let y = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = r.useState(null), [h, x] = r.useState(true), [y, C] = r.useState(null), [S, E] = r.useState(false), O = r.useCallback(async () => {
+  } = e, [n, u] = r.useState(null), [h, x] = r.useState(true), [y, C] = r.useState(null), [S, E] = r.useState(false), T = r.useCallback(async () => {
     x(true), C(null);
     try {
       var e;
@@ -70,7 +70,7 @@ let y = function(e) {
     } finally {
       x(false)
     }
-  }, [t]), T = r.useCallback(async e => {
+  }, [t]), O = r.useCallback(async e => {
     if (null !== n) {
       E(true);
       try {
@@ -79,16 +79,16 @@ let y = function(e) {
           flow_id: n.flow_context.flow_id,
           data: e
         };
-        await (0, d.Wl)(t), O()
+        await (0, d.Wl)(t), T()
       } catch (e) {
         C(b.intl.string(f.default["+QRSxc"]))
       } finally {
         E(false)
       }
     }
-  }, [n, O]);
+  }, [n, T]);
   (0, l.ZP)(() => {
-    O()
+    T()
   });
   let N = r.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
@@ -97,12 +97,12 @@ let y = function(e) {
       className: v.artwork,
       src: j,
       alt: ""
-    }), N ? (0, a.jsx)(s.default, {
+    }), N ? (0, a.jsx)(o.default, {
       transitionState: i.Dvm.ENTERED,
-      entryPoint: o.cU.SAFETY_FLOWS,
+      entryPoint: s.cU.SAFETY_FLOWS,
       onClose: g.dG,
       onComplete: async () => {
-        await T({
+        await O({
           type: m.rY.Empty
         })
       },
@@ -149,13 +149,13 @@ let y = function(e) {
                 fullWidth: true,
                 text: b.intl.string(b.t["7NqTJn"]),
                 onClick: () => {
-                  O()
+                  T()
                 }
               })]
             })]
           }), null === y && null != n && (0, a.jsx)(_, {
             task: n,
-            handleSubmit: T,
+            handleSubmit: O,
             disabled: S
           })]
         })

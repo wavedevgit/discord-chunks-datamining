@@ -90,36 +90,50 @@ function S(e) {
     hasVideo: S = false,
     gradientColor: A,
     onPositionChange: C,
-    scrollBehavior: N = "sticky"
-  } = e, [R, P] = i.useState(p), [D, w] = i.useState(E), x = i.useRef(E), L = (0, c.e7)([d.Z], () => d.Z.getLayers()), M = null != (t = L[L.length - 1]) ? t : "base", k = i.useMemo(() => {
-    var e, t;
-    return null == a.current || (null != (t = null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) ? t : "base") === M
-  }, [a, M]);
+    onNudgeChange: N,
+    scrollBehavior: R = "sticky",
+    modal: P = false,
+    returnRef: D
+  } = e, [w, x] = i.useState(p), [L, M] = i.useState(E), k = i.useRef(E), j = i.useRef(0), U = (0, c.e7)([d.Z], () => d.Z.getLayers()), G = null != (t = U[U.length - 1]) ? t : "base", B = i.useRef(C);
   i.useEffect(() => {
-    k && p ? P(true) : k || P(false)
-  }, [k, p]);
-  let j = () => {
-      P(false)
+    B.current = C
+  }, [C]);
+  let Z = i.useCallback(e => {
+      var t;
+      null != e && e !== k.current && (k.current = e, M(e), null == (t = B.current) || t.call(B, e))
+    }, []),
+    F = i.useMemo(() => {
+      var e, t;
+      return null == a.current || (null != (t = null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) ? t : "base") === G
+    }, [a, G]);
+  i.useEffect(() => {
+    F && p ? x(true) : F || x(false)
+  }, [F, p]), i.useEffect(() => {
+    Z(E)
+  }, [E, Z]);
+  let V = () => {
+      x(false)
     },
-    U = (0, _.i)({
+    H = (0, _.i)({
       shouldShow: p,
-      caretPosition: (0, f.z)(D),
-      onExitComplete: j
+      caretPosition: (0, f.z)(L),
+      onExitComplete: V
     }),
-    G = e => {
+    Y = e => {
       var {
         setPopoutRef: t,
-        position: i
-      } = e, a = y(e, ["setPopoutRef", "position"]);
-      return null != i && i !== x.current && (x.current = i, w(i), null == C || C(i)), U((e, i) => {
+        position: i,
+        nudge: a
+      } = e, c = y(e, ["setPopoutRef", "position", "nudge"]);
+      return Z(i), a !== j.current && (j.current = a, null == N || N(a)), H((e, i) => {
         if (!i) return null;
-        let c = (0, r.jsx)(l.VqE, b(g({}, a), {
+        let a = (0, r.jsx)(l.VqE, b(g({}, c), {
           setDialogRef: t,
-          modal: false,
+          modal: P,
           className: o()(null != A ? h.popoverContentWithGradient : h.popover, {
             [h["popover--video"]]: S
           }),
-          returnRef: true,
+          returnRef: D,
           children: n
         }));
         return (0, r.jsx)(s.animated.div, {
@@ -129,16 +143,16 @@ function S(e) {
             offsetBottom: .4,
             color: A,
             className: h.popoverGradientWrapper,
-            children: c
-          }) : c
+            children: a
+          }) : a
         })
       })
     };
   return (0, r.jsx)(u.H, {
     targetElementRef: a,
-    shouldShow: R,
+    shouldShow: w,
     onRequestClose: m,
-    position: D,
+    position: L,
     align: O,
     spacing: v + I,
     layerContext: true,
@@ -146,11 +160,11 @@ function S(e) {
     popoutKey: true,
     fixed: false,
     autoInvert: true,
-    nudgeAlignIntoViewport: "top" === D || "bottom" === D,
+    nudgeAlignIntoViewport: "top" === L || "bottom" === L,
     closeOnClickOutside: false,
     ignoreModalClicks: true,
-    scrollBehavior: N,
-    renderPopout: G,
+    scrollBehavior: R,
+    renderPopout: Y,
     children: T
   })
 }

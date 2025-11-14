@@ -17,42 +17,42 @@ function c(e) {
     onCTA: c
   } = e;
   return (0, a.jsxs)("div", {
-    className: s.popup,
+    className: o.popup,
     children: [(0, a.jsxs)("div", {
-      className: s.background,
+      className: o.background,
       children: [(0, a.jsx)("div", {
-        className: s.blur0
+        className: o.blur0
       }), (0, a.jsx)("div", {
-        className: s.blur1
+        className: o.blur1
       }), (0, a.jsx)("div", {
-        className: s.blur2
+        className: o.blur2
       })]
     }), (0, a.jsxs)("div", {
-      className: s.content,
+      className: o.content,
       children: [(0, a.jsx)(r.P3F, {
-        className: s.closeIcon,
+        className: o.closeIcon,
         onClick: () => t(l.L.USER_DISMISS),
         children: (0, a.jsx)(r.Dio, {})
       }), (0, a.jsx)("img", {
         src: n(414190),
-        className: s.art,
+        className: o.art,
         alt: ""
       }), (0, a.jsxs)("div", {
         children: [(0, a.jsxs)(r.Heading, {
           variant: "heading-md/semibold",
           color: "header-primary",
-          className: s.heading,
-          children: [o.intl.string(o.t.MLt8H4), (0, a.jsx)(i.Z, {
-            className: s.betaTag
+          className: o.heading,
+          children: [s.intl.string(s.t.MLt8H4), (0, a.jsx)(i.Z, {
+            className: o.betaTag
           })]
         }), (0, a.jsx)(r.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: o.intl.string(o.t["l+lSLp"])
+          children: s.intl.string(s.t["l+lSLp"])
         })]
       }), (0, a.jsx)(r.Button, {
         variant: "primary",
-        text: o.intl.string(o.t["9WdoB+"]),
+        text: s.intl.string(s.t["9WdoB+"]),
         fullWidth: true,
         onClick: () => {
           t(l.L.TAKE_ACTION), c()

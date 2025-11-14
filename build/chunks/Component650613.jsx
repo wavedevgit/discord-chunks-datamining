@@ -20,11 +20,11 @@ var Chunk951288 = require("./951288.js"),
 function g(e) {
   let {
     id: t
-  } = e, n = (0, r.e7)([s.default], () => s.default.getUser(t));
+  } = e, n = (0, r.e7)([o.default], () => o.default.getUser(t));
   return null == n ? null : (0, a.jsx)(i.P3F, {
     className: x.entryAuthor,
     onClick: function() {
-      (0, o.openUserProfileModal)({
+      (0, s.openUserProfileModal)({
         sourceAnalyticsLocations: [l.Z.DEV_TOOLS],
         userId: t
       })
@@ -46,9 +46,9 @@ function f() {
       for (let a of null != (e = null == exports ? true : exports.entries) ? module : []) require[(0, Chunk719247.T)(Chunk951288.content)] = Chunk719247.Z.canRenderContent(Chunk951288.content);
       return require
     }, [exports]),
-    o = (0, Chunk442837.e7)([Chunk71585.Z], () => Chunk71585.Z.getImpressionCappedItemIds());
+    s = (0, Chunk442837.e7)([Chunk71585.Z], () => Chunk71585.Z.getImpressionCappedItemIds());
   if (null == require) return null;
-  let s = null == exports || null == (e = exports.entries) ? true : module.flatMap(e => {
+  let o = null == exports || null == (e = exports.entries) ? true : module.flatMap(e => {
     let {
       content: t
     } = e;
@@ -65,7 +65,7 @@ function f() {
       }), (0, p.n2)(t) && (0, a.jsxs)(i.Text, {
         variant: "text-md/normal",
         children: ["Expired at ", t.expires_at]
-      }), o.has(t.id) && (0, a.jsx)(i.Text, {
+      }), s.has(t.id) && (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         children: "Impression capped"
       })]

@@ -14,12 +14,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk342214 = require("./342214.js");
 
 function u(e, t, n, u, m) {
-  let p = (0, r.e7)([s.Z], () => s.Z.getGuild(e)),
-    h = (0, o.Z)({
+  let p = (0, r.e7)([o.Z], () => o.Z.getGuild(e)),
+    h = (0, s.Z)({
       guild: p,
       analyticsLocations: t
     }),
-    x = (0, o.Z)({
+    x = (0, s.Z)({
       analyticsLocations: t
     });
   return (0, a.jsxs)(a.Fragment, {

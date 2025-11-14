@@ -7,7 +7,7 @@ require.d(exports, {
 });
 var Chunk647438 = require("./647438.js"),
   i = function(e) {
-    return e[e.DEMO = 0] = "DEMO", e[e.COLLECTIBLES_PREVIEW = 1] = "COLLECTIBLES_PREVIEW", e[e.GUILD_TAG_COACHMARK_ASSET = 2] = "GUILD_TAG_COACHMARK_ASSET", e[e.ACCOUNT_LINK_DISPLAY = 3] = "ACCOUNT_LINK_DISPLAY", e[e.GAME_SERVER_GAME_INSTRUCTIONS_ASSET = 4] = "GAME_SERVER_GAME_INSTRUCTIONS_ASSET", e[e.APPLICATION_IMAGE_HEADER = 5] = "APPLICATION_IMAGE_HEADER", e[e.SOCIAL_LAYER_SKU_PREVIEW = 6] = "SOCIAL_LAYER_SKU_PREVIEW", e[e.GUILD_POWERUPS_COACHMARK_ASSET = 7] = "GUILD_POWERUPS_COACHMARK_ASSET", e[e.BADGE_IMAGE_WITH_COUNTDOWN_TIMER = 8] = "BADGE_IMAGE_WITH_COUNTDOWN_TIMER", e
+    return e[e.DEMO = 0] = "DEMO", e[e.COLLECTIBLES_PREVIEW = 1] = "COLLECTIBLES_PREVIEW", e[e.GUILD_TAG_COACHMARK_ASSET = 2] = "GUILD_TAG_COACHMARK_ASSET", e[e.ACCOUNT_LINK_DISPLAY = 3] = "ACCOUNT_LINK_DISPLAY", e[e.GAME_SERVER_GAME_INSTRUCTIONS_ASSET = 4] = "GAME_SERVER_GAME_INSTRUCTIONS_ASSET", e[e.APPLICATION_IMAGE_HEADER = 5] = "APPLICATION_IMAGE_HEADER", e[e.SOCIAL_LAYER_SKU_PREVIEW = 6] = "SOCIAL_LAYER_SKU_PREVIEW", e[e.GUILD_POWERUPS_COACHMARK_ASSET = 7] = "GUILD_POWERUPS_COACHMARK_ASSET", e[e.BADGE_IMAGE_WITH_PROGRESS_CIRCLE = 8] = "BADGE_IMAGE_WITH_PROGRESS_CIRCLE", e
   }({});
 let a = {
     0: () => Promise.resolve().then(require.bind(require, 564172)),
@@ -18,7 +18,7 @@ let a = {
     5: () => require.e("11909").then(require.bind(require, 255111)),
     6: () => require.e("68500").then(require.bind(require, 995348)),
     7: () => require.e("21844").then(require.bind(require, 492391)),
-    8: () => require.e("34567").then(require.bind(require, 48198))
+    8: () => require.e("84735").then(require.bind(require, 558592))
   },
   o = {
     0: Chunk647438.lazy(a[0]),

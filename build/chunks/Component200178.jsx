@@ -85,19 +85,19 @@ function p() {
                 className: l()(u.tableRow, m.tableRow),
                 children: [(0, a.jsx)("div", {
                   className: m.indexColumn,
-                  children: (0, a.jsx)(s.Text, {
+                  children: (0, a.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     children: r + 1
                   })
                 }), (0, a.jsx)("div", {
                   className: m.wordColumn,
-                  children: (0, a.jsx)(s.Text, {
+                  children: (0, a.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     children: t
                   })
                 }), (0, a.jsx)("div", {
                   className: m.valueColumn,
-                  children: (0, a.jsx)(s.Text, {
+                  children: (0, a.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     children: n
                   })

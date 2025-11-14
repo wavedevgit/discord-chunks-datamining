@@ -27,7 +27,7 @@ function h(e) {
   let {
     levelUpData: t
   } = e, n = r.useRef(null), i = r.useCallback(() => {
-    s.Z.setState({
+    o.Z.setState({
       shouldRenderTenureLevelUp: false
     })
   }, []);

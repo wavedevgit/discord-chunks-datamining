@@ -23,7 +23,7 @@ let f = new Chunk710845.Z("GuildTagCoachmark");
 function b(e) {
   function t(t) {
     var n;
-    s.Z.dispatch({
+    o.Z.dispatch({
       type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
       guildId: e.guild.id,
       lastSeenInfo: {
@@ -46,7 +46,7 @@ function b(e) {
     variant: "secondary"
   }];
   return (0, a.jsxs)(a.Fragment, {
-    children: [e.children, (0, a.jsx)(o.J2, {
+    children: [e.children, (0, a.jsx)(s.J2, {
       targetElementRef: e.targetElementRef,
       shouldShow: true,
       position: "top",
@@ -72,7 +72,7 @@ function b(e) {
 function v(e) {
   function t(t) {
     var n;
-    s.Z.dispatch({
+    o.Z.dispatch({
       type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
       guildId: e.guild.id,
       lastSeenInfo: {
@@ -95,7 +95,7 @@ function v(e) {
     variant: "secondary"
   }];
   return (0, a.jsxs)(a.Fragment, {
-    children: [e.children, (0, a.jsx)(o.J2, {
+    children: [e.children, (0, a.jsx)(s.J2, {
       targetElementRef: e.targetElementRef,
       shouldShow: true,
       position: "top",

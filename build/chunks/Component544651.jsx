@@ -1,7 +1,7 @@
 /** Chunk was on 99904 **/
 /** chunk id: 544651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  r: () => s
+  r: () => o
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,26 +9,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk547481 = require("./547481.js");
 
-function s(e) {
+function o(e) {
   let {
     title: t,
     initExpanded: n,
-    highlight: s,
+    highlight: o,
     children: c
   } = e, [d, u] = r.useState(n), m = r.useCallback(() => {
     u(!d)
-  }, [d]), p = s ? "status-warning" : "text-default";
+  }, [d]), p = o ? "status-warning" : "text-default";
   return null == c ? (0, a.jsx)("div", {
-    className: o.settingNode,
+    className: s.settingNode,
     children: (0, a.jsx)(i.Text, {
       variant: "text-md/normal",
       color: p,
       children: t
     })
   }) : (0, a.jsxs)("div", {
-    className: o.settingNode,
+    className: s.settingNode,
     children: [(0, a.jsxs)(i.P3F, {
-      className: o.headerBar,
+      className: s.headerBar,
       onClick: m,
       children: [(0, a.jsx)(i.Text, {
         variant: "text-md/bold",
@@ -36,10 +36,10 @@ function s(e) {
         children: t
       }), (0, a.jsx)(l.Z, {
         direction: d ? l.Z.Directions.DOWN : l.Z.Directions.RIGHT,
-        className: o.headerCaret
+        className: s.headerCaret
       })]
     }), d && (0, a.jsx)("div", {
-      className: o.settingNodeChildren,
+      className: s.settingNodeChildren,
       children: c
     })]
   })

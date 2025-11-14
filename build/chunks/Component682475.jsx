@@ -1,7 +1,7 @@
 /** Chunk was on 99904 **/
 /** chunk id: 682475, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => es
+  F: () => eo
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -64,7 +64,7 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk621060 = require("./621060.jsx"),
   Chunk46140 = require("./46140.js");
 
-function es() {
+function eo() {
   return Chunk647438.useMemo(() => {
     let e = [{
       id: "analytics",

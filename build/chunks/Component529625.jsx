@@ -24,7 +24,7 @@ function h() {
   let e = p.useField("isRecording"),
     t = p.useField("isUploading"),
     n = p.useField("isSuccess"),
-    o = p.useField("errorMessage"),
+    s = p.useField("errorMessage"),
     h = Chunk647438.useRef([]),
     x = Chunk647438.useRef(""),
     g = Chunk647438.useCallback(() => {

@@ -1,7 +1,7 @@
 /** Chunk was on 99904 **/
 /** chunk id: 651667, original params: e,t,n (module,exports,require) **/
 function a(e) {
-  var t, n, a, r, i, l, o, s, c, d;
+  var t, n, a, r, i, l, s, o, c, d;
   let u = e.skus.map(e => {
       let t = e.tenant_metadata.plan_features.map(e => ({
         title: e.title,
@@ -22,7 +22,7 @@ function a(e) {
     provider: null == (l = e.tenant_metadata) || null == (i = l.guild_monetization) || null == (r = i.game_server) ? true : r.provider,
     plans: u,
     baseCost: m,
-    disabled: null == (c = e.tenant_metadata) || null == (s = c.guild_monetization) || null == (o = s.game_server) ? true : o.disabled
+    disabled: null == (c = e.tenant_metadata) || null == (o = c.guild_monetization) || null == (s = o.game_server) ? true : s.disabled
   }
 }
 require.d(exports, {

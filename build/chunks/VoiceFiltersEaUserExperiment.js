@@ -2,7 +2,7 @@
 /** chunk id: 963590, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => l,
-  Z: () => o
+  Z: () => s
 });
 var Chunk818083 = require("./818083.js"),
   Chunk875527 = require("./875527.js"),
@@ -30,7 +30,7 @@ let l = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function s(e) {
   let {
     location: t
   } = e, {

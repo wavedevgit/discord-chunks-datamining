@@ -63,7 +63,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk54482 = require("./54482.js"),
   Chunk116649 = require("./116649.js");
 
-function es(e) {
+function eo(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -111,18 +111,18 @@ function ec(e) {
   }), () => W.Z.setState({
     isOpen: false
   })), []);
-  let ey = (0, o.e7)([F.Z], () => F.Z.getStatus(t.id)),
-    eC = B.Cr.useSetting(),
+  let ey = (0, s.e7)([B.Z], () => B.Z.getStatus(t.id)),
+    eC = F.Cr.useSetting(),
     eS = (0, $.F)(eC),
-    eE = (0, o.e7)([G.Z], () => G.Z.hidePersonalInformation),
-    eO = (0, f.p)(),
-    eT = B.Sb.useSetting(),
+    eE = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
+    eT = (0, f.p)(),
+    eO = F.Sb.useSetting(),
     eN = (0, $.I)(ey),
     eP = (0, q.g)(n),
     eI = (0, v.Z)({
       analyticsLocations: eg
     }),
-    ew = (0, V.I5)(t),
+    ew = (0, H.I5)(t),
     ek = (0, h.p)({
       location: "UserProfileAccountPopout"
     }),
@@ -139,22 +139,22 @@ function ec(e) {
       eU(false)
     }, 500)
   }, []);
-  let eB = e => {
-      null == n || n(), (0, O.openUserProfileModal)(es({
+  let eF = e => {
+      null == n || n(), (0, T.openUserProfileModal)(eo({
         customStatusPrompt: eL,
         sourceAnalyticsLocations: eg
       }, ef, e))
     },
-    eF = (0, E.Z)({
+    eB = (0, E.Z)({
       location: "UserProfileAccountPopout"
     }),
     eG = (null == ex ? true : ex.widgets) != null && ex.widgets.length > 0,
-    ez = eG ? [] : [s.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
-    [eH, eV] = (0, g.US)(ez),
-    eW = eH === s.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
+    ez = eG ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
+    [eV, eH] = (0, g.US)(ez),
+    eW = eV === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     eK = r.useCallback(() => {
-      eV(en.L.USER_DISMISS), n()
-    }, [eV, n]),
+      eH(en.L.USER_DISMISS), n()
+    }, [eH, n]),
     eq = r.useCallback(() => {
       ep && null != em || (eI(), eK())
     }, [eI, eK, ep, em]),
@@ -178,7 +178,7 @@ function ec(e) {
         "data-layer": "base",
         children: [(0, a.jsx)(Q.Z, {
           displayProfile: ex,
-          handleOpenUserProfileModal: eB,
+          handleOpenUserProfileModal: eF,
           height: ev
         }), (0, a.jsxs)(A.Z, {
           className: el.themeContainer,
@@ -186,16 +186,16 @@ function ec(e) {
           displayProfile: ex,
           themeType: er.l.POPOUT,
           children: [(0, a.jsxs)("div", {
-            className: eo.header,
+            className: es.header,
             children: [(0, a.jsx)(P.Z, {
               user: t,
               displayProfile: ex,
               themeType: er.l.POPOUT
-            }), (0, a.jsx)(T.Z, {
+            }), (0, a.jsx)(O.Z, {
               user: t,
               displayProfile: ex,
               themeType: er.l.POPOUT,
-              onOpenProfile: eh ? true : eB
+              onOpenProfile: eh ? true : eF
             }), (0, a.jsx)(L.Z, {
               ref: eA,
               user: t,
@@ -211,8 +211,8 @@ function ec(e) {
             children: [(0, a.jsx)(Z.Z, {
               user: t,
               className: el.username,
-              nickname: H.ZP.getName(em, null, t),
-              onOpenProfile: eh ? true : eB,
+              nickname: V.ZP.getName(em, null, t),
+              onOpenProfile: eh ? true : eF,
               pronouns: null == ex ? true : ex.pronouns,
               tags: (0, a.jsx)(N.Z, {
                 displayProfile: ex,
@@ -234,10 +234,10 @@ function ec(e) {
               bio: null == ex ? true : ex.bio,
               hidePersonalInformation: eE,
               onClose: n
-            }), eF && eG && (0, a.jsx)(M.Z, {
+            }), eB && eG && (0, a.jsx)(M.Z, {
               widgets: ex.widgets,
               onClick: () => {
-                n(), eB({
+                n(), eF({
                   section: ea.oh.WIDGETS
                 })
               }
@@ -247,7 +247,7 @@ function ec(e) {
             }), eR ? (0, a.jsx)(R.Z, {
               user: t,
               currentUser: t,
-              onOpenUserProfileModal: eB,
+              onOpenUserProfileModal: eF,
               onClose: n
             }) : (0, a.jsx)(w.Z, {
               user: t,
@@ -286,7 +286,7 @@ function ec(e) {
                       status: ey,
                       size: 12
                     }),
-                    trailing: (eO || ey === et.Skl.DND) && (0, a.jsx)(c.owu, {
+                    trailing: (eT || ey === et.Skl.DND) && (0, a.jsx)(c.owu, {
                       size: "xxs"
                     }),
                     renderSubmenu: i.tq ? true : e => {
@@ -321,7 +321,7 @@ function ec(e) {
                             }
                             return r
                           }(e, ["onClose"]);
-                        return (0, a.jsx)(l.IX, (t = es({
+                        return (0, a.jsx)(l.IX, (t = eo({
                           onClose: r
                         }, i), n = n = {
                           size: "sm",
@@ -371,7 +371,7 @@ function ec(e) {
                         children: eP
                       })
                     }
-                  }), !__OVERLAY__ && z.wS && eT && (0, a.jsx)(J.V4, {
+                  }), !__OVERLAY__ && z.wS && eO && (0, a.jsx)(J.V4, {
                     action: "COPY_USER_ID",
                     icon: c.VuL,
                     label: ei.intl.string(ei.t["/AXYnE"]),

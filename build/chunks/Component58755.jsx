@@ -65,7 +65,7 @@ function v(e) {
     setState: n
   } = e, {
     scales: i
-  } = t, [l, o] = r.useState(null), s = (0, a.jsxs)("div", {
+  } = t, [l, s] = r.useState(null), o = (0, a.jsxs)("div", {
     className: h.section,
     children: [(0, a.jsx)(d.VcW, {
       options: b,
@@ -93,7 +93,7 @@ function v(e) {
       className: h.overrides,
       children: i.map(e => (0, a.jsx)("li", {
         children: (0, a.jsx)(d.P3F, {
-          onClick: () => o(e.name),
+          onClick: () => s(e.name),
           style: {
             cursor: "pointer"
           },
@@ -107,10 +107,10 @@ function v(e) {
       }, e.name))
     })]
   }), u = i.find(e => e.name === l), f = null != u ? (0, a.jsx)(j, {
-    onClose: () => o(null),
+    onClose: () => s(null),
     scale: u,
     setState: n
-  }) : s;
+  }) : o;
   return (0, a.jsx)("div", {
     children: f
   })
@@ -243,7 +243,7 @@ function j(e) {
         className: h.paletteOverrides,
         "data-columnar": b,
         children: Object.entries(S).map((e, n) => {
-          let [r, c] = e, u = (0, p.HI)(c), m = (0, o.Z)((0, s.Z)("black"), c) > 4.5 ? "black" : "white", h = E[r];
+          let [r, c] = e, u = (0, p.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = E[r];
           return (0, a.jsxs)("div", {
             style: {
               backgroundColor: u
@@ -277,7 +277,7 @@ function _(e) {
   let {
     scale: t,
     onRemove: n
-  } = e, o = r.useMemo(() => Object.values((0, p.XM)(t)).map(e => (0, i.Z)((0, l.Z)(e, p.HW.sRGB), {
+  } = e, s = r.useMemo(() => Object.values((0, p.XM)(t)).map(e => (0, i.Z)((0, l.Z)(e, p.HW.sRGB), {
     format: "hex"
   })), [t]);
   return (0, a.jsxs)("li", {
@@ -303,7 +303,7 @@ function _(e) {
       })]
     }), (0, a.jsx)("div", {
       className: h.palettePreview,
-      children: o.map(e => (0, a.jsx)("span", {
+      children: s.map(e => (0, a.jsx)("span", {
         style: {
           width: 16,
           height: 16,

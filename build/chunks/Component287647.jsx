@@ -24,10 +24,10 @@ function v(e) {
   let {
     markAsDismissed: t,
     targetElementRef: n,
-    children: s
+    children: o
   } = e, {
     analyticsLocations: v
-  } = (0, o.ZP)(), j = (0, r.useRef)(null), _ = (0, i.e7)([u.Z], () => u.Z.isFocused()), y = (0, r.useCallback)(() => {
+  } = (0, s.ZP)(), j = (0, r.useRef)(null), _ = (0, i.e7)([u.Z], () => u.Z.isFocused()), y = (0, r.useCallback)(() => {
     t(h.L.TAKE_ACTION), (0, d.openUserSettings)(c.n.PROFILE_PANEL, {
       section: p.oAB.PROFILE_CUSTOMIZATION,
       analyticsLocations: v
@@ -43,7 +43,7 @@ function v(e) {
     var e, t, n;
     _ && (null == (e = j.current) ? true : e.paused) ? null == (t = j.current) || t.play().catch(b.error) : _ || null == (n = j.current) || n.pause()
   }, [_]), (0, a.jsxs)(a.Fragment, {
-    children: [s, (0, a.jsx)(l.J, {
+    children: [o, (0, a.jsx)(l.J, {
       targetElementRef: n,
       shouldShow: true,
       onRequestClose: C,

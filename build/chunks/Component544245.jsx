@@ -28,7 +28,7 @@ function p() {
   let e = m.useField("includeFrecency"),
     t = m.useField("includeFriends"),
     n = m.useField("includeDMs"),
-    o = m.useField("includeGDMs"),
+    s = m.useField("includeGDMs"),
     p = m.useField("includeQuickSwitcherState"),
     h = m.useField("includeUserSearchWorkerState"),
     x = m.useField("isUploading"),
@@ -42,7 +42,7 @@ function p() {
         includeDMs: a,
         includeQuickSwitcherState: r,
         includeUserSearchWorkerState: i,
-        isUploading: o
+        isUploading: s
       } = m.getState();
       if (!Chunk972959) try {
         m.setState({

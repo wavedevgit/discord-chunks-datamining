@@ -30,8 +30,8 @@ let m = u(d),
   p = u(d);
 
 function h(e) {
-  return s.Jn9.test(e) ? (0, a.jsx)(o.ZP, {
-    type: o.ZP.Types.TEXT,
+  return o.Jn9.test(e) ? (0, a.jsx)(s.ZP, {
+    type: s.ZP.Types.TEXT,
     children: () => e
   }) : e
 }

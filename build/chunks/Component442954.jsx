@@ -87,7 +87,7 @@ let j = {
       default: e
     } = await require.e("22447").then(require.bind(require, 686768));
     return t => (0, a.jsx)(e, v(b({}, t), {
-      entryPoint: s.cU.DEV_TOOLS_AGE_VERIFICATION_RETRY_MODAL
+      entryPoint: o.cU.DEV_TOOLS_AGE_VERIFICATION_RETRY_MODAL
     }))
   },
   ExistingUserAgeGatePrompt: async () => {
@@ -158,7 +158,7 @@ let j = {
     let {
       DynamicGraphicComponent: e
     } = await Promise.resolve().then(require.bind(require, 198168));
-    return t => (0, a.jsx)(o.Ioy, v(b({}, t), {
+    return t => (0, a.jsx)(s.Ioy, v(b({}, t), {
       title: "Dynamic Graphics Demo",
       subtitle: "This modal demonstrates the dynamic graphics system",
       graphic: {
@@ -212,8 +212,8 @@ let j = {
       paymentSourceId: "test-payment-source",
       renewalMutations: null,
       hasActiveTrial: false
-    }, o = Chunk647438.forwardRef((n, o) => {
-      let [s, c] = r.useState(null);
+    }, s = Chunk647438.forwardRef((n, s) => {
+      let [o, c] = r.useState(null);
       return (0, a.jsx)(t.Provider, {
         value: {
           setStep: () => {},
@@ -234,13 +234,13 @@ let j = {
           renewalInvoiceDetails: null,
           handleCancellation: async () => {},
           applyOffer: async () => {},
-          pauseDuration: s,
+          pauseDuration: o,
           setPauseDuration: c
         },
         children: (0, a.jsx)(e, {})
       })
     });
-    return Chunk481060.displayName = "PremiumSubscriptionPauseModalWrapper", e => (0, a.jsx)(o, b({}, e))
+    return Chunk481060.displayName = "PremiumSubscriptionPauseModalWrapper", e => (0, a.jsx)(s, b({}, e))
   },
   NewMemberActionModal: async () => {
     let {
@@ -324,15 +324,15 @@ let j = {
         name: "PS4 - Office",
         platform: "playstation"
       }
-    }, o = n => {
+    }, s = n => {
       let r = t.default.getDevicesForPlatform,
-        o = t.default.getFetchingDevices,
-        s = t.default.getLastSelectedDeviceByPlatform,
+        s = t.default.getFetchingDevices,
+        o = t.default.getLastSelectedDeviceByPlatform,
         c = t.default.getAwaitingRemoteSessionInfo;
-      t.default.getDevicesForPlatform = e => e === p.ABu.PLAYSTATION ? l : r.call(t.default, e), t.default.getFetchingDevices = e => e !== p.ABu.PLAYSTATION && o.call(t.default, e), t.default.getLastSelectedDeviceByPlatform = e => e === p.ABu.PLAYSTATION ? "device-1" : s.call(t.default, e), t.default.getAwaitingRemoteSessionInfo = () => null;
+      t.default.getDevicesForPlatform = e => e === p.ABu.PLAYSTATION ? l : r.call(t.default, e), t.default.getFetchingDevices = e => e !== p.ABu.PLAYSTATION && s.call(t.default, e), t.default.getLastSelectedDeviceByPlatform = e => e === p.ABu.PLAYSTATION ? "device-1" : o.call(t.default, e), t.default.getAwaitingRemoteSessionInfo = () => null;
       let d = n.onClose;
       return n.onClose = async () => {
-        t.default.getDevicesForPlatform = r, t.default.getFetchingDevices = o, t.default.getLastSelectedDeviceByPlatform = s, t.default.getAwaitingRemoteSessionInfo = c, await d()
+        t.default.getDevicesForPlatform = r, t.default.getFetchingDevices = s, t.default.getLastSelectedDeviceByPlatform = o, t.default.getAwaitingRemoteSessionInfo = c, await d()
       }, (0, a.jsx)(e, v(b({}, n), {
         channel: i,
         platform: p.ABu.PLAYSTATION
@@ -525,33 +525,33 @@ let j = {
       Checkbox: i,
       ButtonGroup: l
     } = await Promise.resolve().then(require.bind(require, 481060)), {
-      DisableCommunicationDuration: o,
-      getFriendlyDurationString: s
+      DisableCommunicationDuration: s,
+      getFriendlyDurationString: o
     } = await Promise.resolve().then(require.bind(require, 590433)), c = await Promise.resolve().then(require.t.bind(require, 647438, 19)), d = "TestUser";
 
     function u(n) {
-      let [u, m] = c.useState(o.DURATION_60_SEC), [p, h] = c.useState(""), [x, g] = c.useState(false), [f, b] = c.useState(false), v = [{
-        value: o.DURATION_60_SEC,
-        label: s(o.DURATION_60_SEC)
+      let [u, m] = c.useState(s.DURATION_60_SEC), [p, h] = c.useState(""), [x, g] = c.useState(false), [f, b] = c.useState(false), v = [{
+        value: s.DURATION_60_SEC,
+        label: o(s.DURATION_60_SEC)
       }, {
-        value: o.DURATION_5_MIN,
-        label: s(o.DURATION_5_MIN)
+        value: s.DURATION_5_MIN,
+        label: o(s.DURATION_5_MIN)
       }, {
-        value: o.DURATION_10_MIN,
-        label: s(o.DURATION_10_MIN)
+        value: s.DURATION_10_MIN,
+        label: o(s.DURATION_10_MIN)
       }, {
-        value: o.DURATION_1_HOUR,
-        label: s(o.DURATION_1_HOUR)
+        value: s.DURATION_1_HOUR,
+        label: o(s.DURATION_1_HOUR)
       }, {
-        value: o.DURATION_1_DAY,
-        label: s(o.DURATION_1_DAY)
+        value: s.DURATION_1_DAY,
+        label: o(s.DURATION_1_DAY)
       }, {
-        value: o.DURATION_1_WEEK,
-        label: s(o.DURATION_1_WEEK)
+        value: s.DURATION_1_WEEK,
+        label: o(s.DURATION_1_WEEK)
       }], j = c.useCallback(async () => {
         g(true), console.log("GuildDisableCommunicationModal: Timing out user", {
           user: d,
-          duration: s(u),
+          duration: o(u),
           reason: null != p ? p : "No reason provided",
           resolveFlag: f
         }), await new Promise(e => setTimeout(e, 1e3)), g(false), n.onClose()
@@ -639,12 +639,12 @@ let j = {
       Text: t,
       Heading: r,
       Checkbox: i
-    } = await Promise.resolve().then(require.bind(require, 481060)), l = await Promise.resolve().then(require.t.bind(require, 647438, 19)), o = "Level 3 Server Boost", s = 200, c = 60, d = 8;
+    } = await Promise.resolve().then(require.bind(require, 481060)), l = await Promise.resolve().then(require.t.bind(require, 647438, 19)), s = "Level 3 Server Boost", o = 200, c = 60, d = 8;
 
     function u(n) {
       let [u, m] = l.useState(false), [p, h] = l.useState(false), x = l.useCallback(async () => {
         h(true), console.log("GuildPowerupDeactivateModal: Deactivating powerup", {
-          powerup: o,
+          powerup: s,
           guildId: "123456789"
         }), await new Promise(e => setTimeout(e, 2e3)), h(false), n.onClose()
       }, [n]);
@@ -656,12 +656,12 @@ let j = {
         children: [(0, a.jsxs)(r, {
           variant: "heading-lg/semibold",
           className: "mb-2",
-          children: ["Deactivate ", o]
+          children: ["Deactivate ", s]
         }), (0, a.jsxs)(t, {
           variant: "text-sm/normal",
           className: "mb-4",
           color: "text-secondary",
-          children: ["This will remove the ", o, " from your server and disable all associated features."]
+          children: ["This will remove the ", s, " from your server and disable all associated features."]
         }), (0, a.jsxs)("div", {
           className: "mb-4",
           style: {
@@ -683,7 +683,7 @@ let j = {
             children: [(0, a.jsxs)(t, {
               variant: "text-sm/normal",
               color: "text-secondary",
-              children: ["• ", s, " emoji slots"]
+              children: ["• ", o, " emoji slots"]
             }), (0, a.jsxs)(t, {
               variant: "text-sm/normal",
               color: "text-secondary",
@@ -883,10 +883,10 @@ let j = {
       Text: r,
       Heading: i,
       Anchor: l
-    } = await Promise.resolve().then(require.bind(require, 481060)), o = await Promise.resolve().then(require.t.bind(require, 647438, 19));
+    } = await Promise.resolve().then(require.bind(require, 481060)), s = await Promise.resolve().then(require.t.bind(require, 647438, 19));
 
-    function s(n) {
-      let [s, c] = o.useState(false), [d, u] = o.useState(false);
+    function o(n) {
+      let [o, c] = s.useState(false), [d, u] = s.useState(false);
       return (0, a.jsx)(t, v(b({}, n), {
         header: "Consent CheckBox Examples",
         confirmText: "Close",
@@ -908,7 +908,7 @@ let j = {
               },
               children: "Terms of Service Consent"
             }), (0, a.jsx)(e, {
-              value: s,
+              value: o,
               onChange: c,
               subText: (0, a.jsxs)("span", {
                 children: ["I agree to Discord's", " ", (0, a.jsx)(l, {
@@ -929,7 +929,7 @@ let j = {
               style: {
                 marginTop: "8px"
               },
-              children: ["Consent status: ", s ? "Agreed" : "Not agreed"]
+              children: ["Consent status: ", o ? "Agreed" : "Not agreed"]
             })]
           }), (0, a.jsxs)("div", {
             children: [(0, a.jsx)(i, {
@@ -969,7 +969,7 @@ let j = {
         })
       }))
     }
-    return Chunk480916.displayName = "ConsentCheckBoxModalContent", e => (0, a.jsx)(s, b({}, e))
+    return Chunk480916.displayName = "ConsentCheckBoxModalContent", e => (0, a.jsx)(o, b({}, e))
   },
   GuildRaidLockdownFeedbackModal: async () => {
     let {

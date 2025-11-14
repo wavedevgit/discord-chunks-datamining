@@ -12,7 +12,7 @@ function o(e) {
   let {
     user: t,
     guildId: n
-  } = e, o = (0, i.e7)([a.ZP], () => null != n && null != t ? a.ZP.getMember(n, t.id) : null);
+  } = e, o = (0, a.e7)([i.ZP], () => null != n && null != t ? i.ZP.getMember(n, t.id) : null);
   return (0, r.useMemo)(() => {
     var e;
     if (null == t) return;

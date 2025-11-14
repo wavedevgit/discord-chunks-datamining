@@ -1,7 +1,7 @@
 /** Chunk was on 99904 **/
 /** chunk id: 789639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  i: () => o
+  i: () => s
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,19 +13,19 @@ let l = {
       duration: 66
     }
   },
-  o = () => {
+  s = () => {
     let e = Chunk647438.useRef(null),
       t = Chunk647438.useCallback(() => {
         null != module.current && module.current.play("all")
       }, []),
-      o = Chunk647438.useCallback(() => {
+      s = Chunk647438.useCallback(() => {
         null != module.current && module.current.play("all")
       }, []),
-      s = Chunk647438.useCallback(() => {
+      o = Chunk647438.useCallback(() => {
         null != module.current && module.current.stopIfPlaying("all")
       }, []),
       c = Chunk647438.useCallback(t => {
-        var r, o;
+        var r, s;
         return (0, a.jsx)(i.L, (r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -43,25 +43,25 @@ let l = {
             })
           }
           return e
-        }({}, t), o = o = {
+        }({}, t), s = s = {
           src: () => n.e("2199").then(n.t.bind(n, 71307, 19)),
           ref: e,
           markers: l
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var a = Object.getOwnPropertySymbols(e);
             n.push.apply(n, a)
           }
           return n
-        })(Object(o)).forEach(function(e) {
-          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
+        })(Object(s)).forEach(function(e) {
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(s, e))
         }), r))
       }, []);
     return {
       events: {
-        onMouseEnter: o,
-        onMouseLeave: s
+        onMouseEnter: s,
+        onMouseLeave: o
       },
       play: exports,
       getDuration: Chunk647438.useCallback(() => {

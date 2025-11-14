@@ -21,8 +21,8 @@ function m() {
     let n, {
         id: l
       } = t,
-      o = a.getToken(l);
-    if (null == o || "" === o) return void i.Z.dispatch({
+      s = a.getToken(l);
+    if (null == s || "" === s) return void i.Z.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE",
       userId: l
     });
@@ -34,7 +34,7 @@ function m() {
       n = await r.tn.get({
         url: d.ANM.ME,
         headers: {
-          authorization: o
+          authorization: s
         },
         retries: 3,
         rejectWithError: false

@@ -31,7 +31,7 @@ function f(e) {
     return e(), t.addChangeListener(e), () => {
       t.removeChangeListener(e)
     }
-  }, [t, n]), (0, a.jsx)(s.zJl, {
+  }, [t, n]), (0, a.jsx)(o.zJl, {
     className: x.inspectorContainer,
     children: (0, a.jsx)(d.Z, {
       data: i
@@ -98,7 +98,7 @@ function j(e) {
     children: [(0, a.jsx)(r, {}), (0, a.jsxs)(c.ZP, {
       className: l()(h.headerBar, x.subPanelHeaderBar),
       children: [(0, a.jsx)(c.ZP.Icon, {
-        icon: s.lO_,
+        icon: o.lO_,
         tooltip: t.getName()
       }), (0, a.jsx)(c.ZP.Title, {
         children: t.getName()

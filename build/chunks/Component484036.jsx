@@ -15,16 +15,16 @@ function c(e) {
     resizableNode: t,
     minHeight: n,
     onResize: r
-  } = e, i = (0, o.Z)({
+  } = e, i = (0, s.Z)({
     minDimension: n,
     resizableDomNodeRef: t,
     onElementResize: r,
-    orientation: o.y.VERTICAL_TOP,
+    orientation: s.y.VERTICAL_TOP,
     usePointerEvents: true
   });
   return (0, a.jsx)("div", {
     onPointerDown: i,
-    className: s.resizeHandle
+    className: o.resizeHandle
   })
 }
 
@@ -33,21 +33,21 @@ function d(e) {
     children: t,
     className: n,
     initialHeight: i,
-    minHeight: o
+    minHeight: s
   } = e, d = r.useRef(null), [u, m] = r.useState(i);
   return (0, a.jsxs)("div", {
     ref: d,
-    className: s.container,
+    className: o.container,
     style: {
-      minHeight: o,
+      minHeight: s,
       height: u
     },
     children: [(0, a.jsx)(c, {
       resizableNode: d,
-      minHeight: o,
+      minHeight: s,
       onResize: m
     }), (0, a.jsx)("div", {
-      className: l()(s.subPanelContent, n),
+      className: l()(o.subPanelContent, n),
       children: t
     })]
   })

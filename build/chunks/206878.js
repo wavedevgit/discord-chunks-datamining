@@ -37,8 +37,8 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let o = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Chunk281598.jE.PDP_BACKGROUND, Chunk281598.jE.LOGO, Chunk281598.jE.MOBILE_BANNER, Chunk281598.jE.MOBILE_BACKGROUND]),
-  s = ["intro", "idle", "reduced_motion", "static", "thumbnail"],
+let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Chunk281598.jE.PDP_BACKGROUND, Chunk281598.jE.LOGO, Chunk281598.jE.MOBILE_BANNER, Chunk281598.jE.MOBILE_BACKGROUND]),
+  o = ["intro", "idle", "reduced_motion", "static", "thumbnail"],
   c = {
     max: 5e6,
     warn: 2e6
@@ -153,10 +153,10 @@ let o = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
               addError: n
             });
             let i = new Set(t.collectionFiles.map(e => e.name)),
-              l = Array.from(o).filter(e => !i.has(e));
+              l = Array.from(s).filter(e => !i.has(e));
             l.length > 0 && n("Missing required files", l);
-            let s = Object.values(r.jE).filter(e => !o.has(e)).filter(e => !i.has(e));
-            s.length > 0 && a("Missing optional assets", s)
+            let o = Object.values(r.jE).filter(e => !s.has(e)).filter(e => !i.has(e));
+            o.length > 0 && a("Missing optional assets", o)
           })({
             files: n,
             addError: m,
@@ -179,9 +179,9 @@ let o = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
                 }),
                 addError: n
               }), b(r.aB.PROFILE_EFFECT, i, n, a);
-              let o = s.filter(e => !l.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => "".concat(t, "/").concat(e));
-              o.length > 0 && n("Missing required PFX files with prefix", o), l.some(e => e.endsWith(".txt")) || n("PFX configs required - please include both exports! (exception: duplicate variant configs are optional)", [t]);
-              let c = l.filter(e => !s.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
+              let s = o.filter(e => !l.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => "".concat(t, "/").concat(e));
+              s.length > 0 && n("Missing required PFX files with prefix", s), l.some(e => e.endsWith(".txt")) || n("PFX configs required - please include both exports! (exception: duplicate variant configs are optional)", [t]);
+              let c = l.filter(e => !o.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
               c.length > 0 && a("Contains unrecognized files", c)
             })
           })({

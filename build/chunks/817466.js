@@ -1,7 +1,7 @@
 /** Chunk was on 99904 **/
 /** chunk id: 817466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => T
 });
 var Chunk780384 = require("./780384.js"),
   Chunk410030 = require("./410030.js"),
@@ -93,12 +93,12 @@ let S = {
     }
   };
 
-function O() {
+function T() {
   let e = (0, Chunk804413.Z)(),
     t = (0, Chunk780384.wj)((0, Chunk410030.ZP)());
   if (!module) return null;
   let n = S[module],
-    s = E[module],
+    o = E[module],
     c = {
       currentBadge: (0, Chunk291175.fv)(module),
       currentBadgeTextGradient: exports ? null == require ? true : require.dark : null == require ? true : require.light,

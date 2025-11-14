@@ -31,7 +31,7 @@ function p(e, t) {
   }).catch(() => (l.Z.showFailedToast(m.wQ.GENERIC_ERROR), null))
 }
 async function h(e, t) {
-  return await s.Z.get({
+  return await o.Z.get({
     url: u.ANM.GENERATED_POOL_BY_ID(e),
     trackedActionData: {
       event: a.NetworkActionNames.USER_LOGIN
@@ -45,12 +45,12 @@ async function h(e, t) {
     if (!n) return void l.Z.showFailedToast(m.wQ.GENERIC_ERROR);
     let {
       generated_pool: i,
-      users: s
+      users: o
     } = a;
     r.Z.dispatch({
       type: "GENERATED_POOL_BY_ID_FETCH_SUCCESS",
       pool: c.w.fromServer(i).setPassword(t),
-      users: s.map(e => new o.Z(e))
+      users: o.map(e => new s.Z(e))
     })
   }).catch(() => (l.Z.showFailedToast(m.wQ.GENERIC_ERROR), null))
 }

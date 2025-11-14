@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk203463 = require("./203463.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -24,10 +24,10 @@ function x(e) {
   let {
     className: t,
     pageMultiplier: n
-  } = e, i = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [o, x] = r.useState({
+  } = e, i = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [s, x] = r.useState({
     x: 0,
     y: 0
-  }), g = r.useMemo(() => s().throttle(e => {
+  }), g = r.useMemo(() => o().throttle(e => {
     if (!i) x({
       x: (window.innerWidth - e.pageX * n) / 90,
       y: (window.innerHeight - e.pageY * n) / 90
@@ -41,10 +41,10 @@ function x(e) {
   }));
   return r.useEffect(() => {
     b({
-      x: o.x,
-      y: o.y
+      x: s.x,
+      y: s.y
     })
-  }, [o.x, o.y, b]), (0, a.jsx)(c.animated.div, {
+  }, [s.x, s.y, b]), (0, a.jsx)(c.animated.div, {
     style: {
       transform: (0, c.to)([f.x, f.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
     },

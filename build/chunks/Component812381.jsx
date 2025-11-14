@@ -30,7 +30,7 @@ let d = () => {
       options: exports,
       value: module,
       onChange: e => {
-        (0, o.fi)(e)
+        (0, s.fi)(e)
       }
     })]
   })

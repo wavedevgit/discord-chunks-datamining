@@ -59,7 +59,7 @@ function g() {
     }),
     g = Chunk647438.useMemo(() => Object.values(null != require ? require : {})[0], [require]),
     f = Chunk647438.useCallback(t => {
-      null != g && null != e && s.Z.dispatch({
+      null != g && null != e && o.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: e,
         instance: x(h({}, g), {
@@ -67,7 +67,7 @@ function g() {
         })
       })
     }, [g, module]),
-    b = Chunk647438.useMemo(() => Object.values(Chunk660815.V).map(e => (0, a.jsx)(o.Button, {
+    b = Chunk647438.useMemo(() => Object.values(Chunk660815.V).map(e => (0, a.jsx)(s.Button, {
       variant: "primary",
       text: e,
       onClick: () => {

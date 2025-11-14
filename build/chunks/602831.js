@@ -1,8 +1,8 @@
 /** Chunk was on 99904 **/
 /** chunk id: 602831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => s,
-  j: () => o
+  K: () => o,
+  j: () => s
 }), require("./388685.js");
 var Chunk763600 = require("./763600.js"),
   Chunk660815 = require("./660815.js");
@@ -60,8 +60,8 @@ function l(e, t) {
     gameId: "1"
   }
 }
-let o = [l("1", "GameServer Test #1"), l("2", "GameServer Test #2"), l("3", "GameServer Test #3"), l("4", "GameServer Test #4"), l("5", "GameServer Test #5"), l("6", "GameServer Test #6"), l("7", "GameServer Test #7"), l("8", "GameServer Test #8"), l("9", "GameServer Test #9"), l("10", "GameServer Test #10"), l("11", "GameServer Test #11"), l("12", "GameServer Test #12")],
-  s = [{
+let s = [l("1", "GameServer Test #1"), l("2", "GameServer Test #2"), l("3", "GameServer Test #3"), l("4", "GameServer Test #4"), l("5", "GameServer Test #5"), l("6", "GameServer Test #6"), l("7", "GameServer Test #7"), l("8", "GameServer Test #8"), l("9", "GameServer Test #9"), l("10", "GameServer Test #10"), l("11", "GameServer Test #11"), l("12", "GameServer Test #12")],
+  o = [{
     id: "1",
     gameId: "1",
     name: "GameServer Test #1",

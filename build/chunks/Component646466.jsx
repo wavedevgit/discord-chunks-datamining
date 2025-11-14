@@ -75,7 +75,7 @@ let h = [{
         previewProfileEffectSkuId: t,
         setPreviewProfileEffectSkuId: n
       } = (0, Chunk619899.N9)(),
-      o = Chunk647438.useMemo(() => [x, ...module.map(e => ({
+      s = Chunk647438.useMemo(() => [x, ...module.map(e => ({
         label: e.name,
         value: e.skuId
       }))], [module]);
@@ -134,13 +134,13 @@ let h = [{
       clearIgnoredFiles: n
     } = e, {
       collectionAssets: l
-    } = (0, s.xq)(), {
-      deleteCollectionAsset: o,
+    } = (0, o.xq)(), {
+      deleteCollectionAsset: s,
       clearAssets: c
-    } = (0, s.N9)(), d = r.useMemo(() => Object.values(l).map(e => ({
+    } = (0, o.N9)(), d = r.useMemo(() => Object.values(l).map(e => ({
       label: e.name,
       value: e.type
-    })), [l]), u = r.useCallback(e => o(e), [o]), p = r.useCallback(() => {
+    })), [l]), u = r.useCallback(e => s(e), [s]), p = r.useCallback(() => {
       c(), t(), n()
     }, [c, t, n]);
     return 0 === d.length ? null : (0, a.jsxs)(a.Fragment, {
@@ -210,8 +210,8 @@ let h = [{
       reset: t,
       validationComplete: n,
       warnings: l,
-      errors: o
-    } = (0, Chunk206878.g)(), s = Object.entries(Chunk637443), d = Object.entries(Chunk373071), p = Chunk619899.length > 0, h = Chunk281598.length > 0, x = Chunk647438.useCallback(n => {
+      errors: s
+    } = (0, Chunk206878.g)(), o = Object.entries(Chunk637443), d = Object.entries(Chunk373071), p = Chunk619899.length > 0, h = Chunk281598.length > 0, x = Chunk647438.useCallback(n => {
       t(), e(n)
     }, [module, exports]);
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -304,7 +304,7 @@ let h = [{
       clearAssets: n
     } = (0, Chunk619899.N9)(), {
       ignoredFilenames: l,
-      clearAssets: o,
+      clearAssets: s,
       clearIgnoredFilenames: u,
       processAndUpsertAssets: p
     } = (0, Chunk281598.hm)(), h = Chunk647438.useCallback(e => {

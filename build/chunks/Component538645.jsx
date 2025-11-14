@@ -25,7 +25,7 @@ let b = "Make sure you're only uploading text files!",
       effect: i,
       onClick: l
     } = e, {
-      deleteConfig: o
+      deleteConfig: s
     } = (0, x.n6)();
     return (0, a.jsxs)(c.P3F, {
       className: f.previewCard,
@@ -46,7 +46,7 @@ let b = "Make sure you're only uploading text files!",
           variant: "critical-secondary",
           text: "Delete",
           onClick: e => {
-            e.preventDefault(), e.stopPropagation(), o(i.skuId)
+            e.preventDefault(), e.stopPropagation(), s(i.skuId)
           }
         })]
       })]
@@ -66,21 +66,21 @@ function j() {
       var t, n, a, r;
       let i = C.toLowerCase(),
         l = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
-        o = null != (r = null == (n = e.config.description) ? true : n.toLowerCase()) ? r : "";
-      return l.includes(i) || o.includes(i)
+        s = null != (r = null == (n = e.config.description) ? true : n.toLowerCase()) ? r : "";
+      return l.includes(i) || s.includes(i)
     }), [C, y]),
-    O = Chunk647438.useCallback((e, n) => {
+    T = Chunk647438.useCallback((e, n) => {
       if (null == n || !e.type.startsWith("text/")) return (0, m.Eo)(b);
       let [a, r] = n.split(",");
       if (!a.includes("text/plain")) return (0, m.Eo)(b);
       let i = JSON.parse(atob(r));
-      i.skuId = (0, o.Z)(), t(i), (0, m.XA)("Profile Effect (maybe??) imported!")
+      i.skuId = (0, s.Z)(), t(i), (0, m.XA)("Profile Effect (maybe??) imported!")
     }, [exports]),
-    T = Chunk647438.useCallback(e => {
+    O = Chunk647438.useCallback(e => {
       var t;
       if ((null == (t = e.currentTarget) ? true : t.files) == null) return void(0, m.Eo)("Error uploading file. Try again!");
-      (0, m.Kr)(e.currentTarget.files, O, m.Eo)
-    }, [O]);
+      (0, m.Kr)(e.currentTarget.files, T, m.Eo)
+    }, [T]);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk558270.root,
     children: [null == Chunk120356 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -122,7 +122,7 @@ function j() {
             children: "Import Shared Config"
           }), (0, Chunk951288.jsx)(Chunk53281.Z, {
             ref: _,
-            onChange: T,
+            onChange: O,
             multiple: false
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.Button, {

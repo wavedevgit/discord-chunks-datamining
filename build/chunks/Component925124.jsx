@@ -38,23 +38,23 @@ let S = async () => {
   }
 }, E = async (e, t) => {
   try {
-    await o.tn.post({
+    await s.tn.post({
       url: j.ANM.CREATE_USER_OFFER(e, t),
       rejectWithError: true
     })
   } catch (e) {} finally {
     await (0, u.Tf)()
   }
-}, O = async (e, t) => {
+}, T = async (e, t) => {
   try {
-    await o.tn.del({
+    await s.tn.del({
       url: j.ANM.UPDATE_USER_OFFER(e, t),
       rejectWithError: true
     })
   } catch (e) {} finally {
     await (0, u.Tf)()
   }
-}, T = async () => {
+}, O = async () => {
   try {
     let {
       body: e
@@ -79,7 +79,7 @@ let S = async () => {
     await Chunk431.Z.forceReset(), await (0, Chunk937579.Tf)()
   }
 }, P = async e => {
-  await o.tn.post({
+  await s.tn.post({
     url: j.ANM.CREATE_REVERSE_TRIAL,
     body: {
       ends_at: e
@@ -89,21 +89,21 @@ let S = async () => {
 };
 
 function I(e) {
-  var t, n, i, s, m;
+  var t, n, i, o, m;
   let {
     offer: p,
     offerOptions: f,
     forceRefetch: b
-  } = e, [v, C] = r.useState(false), [S, E] = r.useState(false), [T, N] = r.useState(false), [P, I] = r.useState(false);
+  } = e, [v, C] = r.useState(false), [S, E] = r.useState(false), [O, N] = r.useState(false), [P, I] = r.useState(false);
   r.useEffect(() => {
-    T && I(true);
+    O && I(true);
     let e = setTimeout(() => {
       I(false)
     }, 500);
     return () => {
       clearTimeout(e)
     }
-  }, [T]);
+  }, [O]);
   let {
     id: w,
     expires_at: k,
@@ -120,15 +120,15 @@ function I(e) {
   null != D && (L = "".concat(L, " from @").concat(D.username));
   let M = null != k,
     U = null != k && new Date(k).getTime() < Date.now(),
-    B = (null == Z ? true : Z.sku_id) === _.Si.TIER_0,
-    F = async () => {
+    F = (null == Z ? true : Z.sku_id) === _.Si.TIER_0,
+    B = async () => {
       N(true), M ? await G({
         expiresAt: null
       }) : await (0, u.ab)(p), b(), N(false)
     }, G = async e => {
       N(true);
       try {
-        await o.tn.patch({
+        await s.tn.patch({
           url: j.ANM.UPDATE_USER_OFFER(w, "trial"),
           body: function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -178,7 +178,7 @@ function I(e) {
   }, [v, S]);
   let z = "Active";
   return M && (z = "Acked"), U && (z = "Expired"), (0, a.jsxs)("div", {
-    className: l()(y.card, B ? y.gradientWrapperTier0 : y.gradientWrapperTier2),
+    className: l()(y.card, F ? y.gradientWrapperTier0 : y.gradientWrapperTier2),
     children: [(0, a.jsx)("div", {
       className: l()(y.row, y.nameRow),
       children: (0, a.jsx)(c.Heading, {
@@ -229,7 +229,7 @@ function I(e) {
         color: "always-white",
         children: ["Trial Length:", " ", (0, g.if)({
           intervalType: null != (i = null == Z ? true : Z.interval) ? i : _.rV.MONTH,
-          intervalCount: null != (s = null == Z ? true : Z.interval_count) ? s : 1,
+          intervalCount: null != (o = null == Z ? true : Z.interval_count) ? o : 1,
           capitalize: false
         })]
       })
@@ -264,7 +264,7 @@ function I(e) {
     }), (0, a.jsxs)("div", {
       className: y.badgeContainer,
       children: [(0, a.jsx)(c.P3F, {
-        onClick: F,
+        onClick: B,
         className: l()(y.badge, y.clickable, {
           [y.acked]: M,
           [y.expired]: U
@@ -284,7 +284,7 @@ function I(e) {
       })]
     }), (0, a.jsx)(c.P3F, {
       onClick: async () => {
-        N(true), await O(w, "trial"), b(), N(false)
+        N(true), await T(w, "trial"), b(), N(false)
       },
       children: (0, a.jsx)(c.XHJ, {
         size: "md",
@@ -293,7 +293,7 @@ function I(e) {
       })
     }), (0, a.jsx)("div", {
       className: l()(y.loadingContainer, {
-        [y.isLoading]: T || P
+        [y.isLoading]: O || P
       }),
       children: (0, a.jsx)(c.$jN, {})
     })]
@@ -304,7 +304,7 @@ function w(e) {
   var t, n;
   let {
     offer: i,
-    offerOptions: s,
+    offerOptions: o,
     forceRefetch: m
   } = e, [p, g] = r.useState(false), [f, b] = r.useState(false), [v, _] = r.useState(false), [C, S] = r.useState(false);
   r.useEffect(() => {
@@ -318,16 +318,16 @@ function w(e) {
   }, [v]);
   let {
     id: E,
-    expires_at: T,
+    expires_at: O,
     applied_at: N,
     discount_id: P,
     discount: I
-  } = i, w = null != (n = null == (t = s.find(e => {
+  } = i, w = null != (n = null == (t = o.find(e => {
     let {
       value: t
     } = e;
     return t === P
-  })) ? true : t.label) ? n : "Unknown", k = null != T, R = null != T && new Date(T).getTime() < Date.now(), A = async () => {
+  })) ? true : t.label) ? n : "Unknown", k = null != O, R = null != O && new Date(O).getTime() < Date.now(), A = async () => {
     _(true), k ? await Z({
       expiresAt: null
     }) : await (0, u.ab)(true, i), m(), _(false)
@@ -337,7 +337,7 @@ function w(e) {
     } = e;
     _(true);
     try {
-      await o.tn.patch({
+      await s.tn.patch({
         url: j.ANM.UPDATE_USER_OFFER(E, "discount"),
         body: {
           expires_at: t
@@ -377,7 +377,7 @@ function w(e) {
         children: w
       }), (0, a.jsx)(c.P3F, {
         onClick: async () => {
-          _(true), await O(E, "discount"), m(), _(false)
+          _(true), await T(E, "discount"), m(), _(false)
         },
         children: (0, a.jsx)(c.XHJ, {
           size: "md",
@@ -435,7 +435,7 @@ function w(e) {
         children: ["Expires (", (0, d.Z)(), "):"]
       }), (0, a.jsx)("input", {
         type: "datetime-local",
-        value: (0, x.mm)(T),
+        value: (0, x.mm)(O),
         onChange: e => Z({
           expiresAt: "" !== e.target.value ? new Date(e.target.value).toISOString() : null
         })
@@ -471,14 +471,14 @@ function w(e) {
 }
 
 function k() {
-  let [e, t] = Chunk647438.useState([]), [n, i] = Chunk647438.useState([]), [l, o] = Chunk647438.useState(), [d, h] = Chunk647438.useState(), [x, g] = Chunk647438.useState([]), [_, O] = Chunk647438.useState([]), [k, R] = Chunk647438.useState(true), [A, Z] = Chunk647438.useState(10080), [D, L] = Chunk647438.useState([]), {
+  let [e, t] = Chunk647438.useState([]), [n, i] = Chunk647438.useState([]), [l, s] = Chunk647438.useState(), [d, h] = Chunk647438.useState(), [x, g] = Chunk647438.useState([]), [_, T] = Chunk647438.useState([]), [k, R] = Chunk647438.useState(true), [A, Z] = Chunk647438.useState(10080), [D, L] = Chunk647438.useState([]), {
     entitlements: M,
     deleteFractionalPremium: U,
-    refreshEntitlementList: B
+    refreshEntitlementList: F
   } = (0, Chunk232867.m)();
   Chunk647438.useEffect(() => {
-    B()
-  }, [B]), Chunk647438.useEffect(() => {
+    F()
+  }, [F]), Chunk647438.useEffect(() => {
     L(M.filter(e => e.sourceType === j.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
   }, [M]), Chunk647438.useEffect(() => {
     (0 === module.length || 0 === require.length || k) && S().then(e => {
@@ -490,22 +490,22 @@ function k() {
           label: t,
           value: e.discount[t]
         }));
-      t(n), i(a), null == l && o(n[0].value), null == d && h(a[0].value)
+      t(n), i(a), null == l && s(n[0].value), null == d && h(a[0].value)
     })
   }, [module, require, l, Chunk105713, k]), Chunk647438.useEffect(() => {
-    k && (R(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), T().then(e => {
-      g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), O(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
+    k && (R(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), O().then(e => {
+      g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), T(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [k]);
-  let F = async () => {
+  let B = async () => {
     null != l && (await E(l, "trial"), R(true))
   }, G = async () => {
     null != Chunk105713 && (await E(Chunk105713, "discount"), R(true))
   }, z = async () => {
     await N(), R(true)
-  }, H = async () => {
+  }, V = async () => {
     let e = new Date(Date.now() + 60 * A * 1e3).toISOString();
-    await P(module), B()
+    await P(module), F()
   };
   return (0, Chunk951288.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
@@ -553,12 +553,12 @@ function k() {
             isSelected: e => l === e,
             placeholder: "Trial Type",
             serialize: e => String(e),
-            select: e => o(e),
+            select: e => s(e),
             popoutLayerContext: Chunk246992.O$
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Create",
-            onClick: F
+            onClick: B
           })]
         })]
       }), (0, Chunk951288.jsxs)("section", {
@@ -632,7 +632,7 @@ function k() {
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Create",
-            onClick: H
+            onClick: V
           })]
         })]
       }), D.length > 0 && (0, Chunk951288.jsxs)("div", {

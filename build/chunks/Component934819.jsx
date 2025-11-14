@@ -51,7 +51,7 @@ function m() {
       }
     }, []),
     h = Chunk647438.useMemo(() => module.map(e => {
-      let t = s.default.getUser(e),
+      let t = o.default.getUser(e),
         n = null != t ? c.ZP.getName(t) : "Unknown";
       return (0, a.jsx)("div", {
         className: d.detailsRow,

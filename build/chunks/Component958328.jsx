@@ -25,7 +25,7 @@ function v(e) {
   let {
     title: t,
     can: n
-  } = e, r = n ? s.dz2 : s.Dio, l = (0, a.jsx)("div", {
+  } = e, r = n ? o.dz2 : o.Dio, l = (0, a.jsx)("div", {
     className: i()(f.iconOuter, n ? f.iconCheck : f.iconCross),
     children: (0, a.jsx)(r, {
       className: f.icon
@@ -35,7 +35,7 @@ function v(e) {
     className: f.scope,
     children: [l, (0, a.jsx)("div", {
       className: f.scopeInner,
-      children: (0, a.jsx)(s.Text, {
+      children: (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -63,7 +63,7 @@ function j() {
         can: r
       }, t)
     }),
-    O = Object.values(null != S ? S : {}).map(e => {
+    T = Object.values(null != S ? S : {}).map(e => {
       let {
         title: t,
         flag: n
@@ -88,7 +88,7 @@ function j() {
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: null != Chunk120356 ? "Permissions in ".concat(Chunk120356.name) : "No guild selected"
-        }), O]
+        }), T]
       })]
     })
   })

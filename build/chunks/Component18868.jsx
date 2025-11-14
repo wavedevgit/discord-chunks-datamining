@@ -50,7 +50,7 @@ let m = () => {
       className: t,
       onDrop: n
     } = e, [i, h] = r.useState(false), x = r.useRef(null), g = r.useCallback(e => {
-      p(e), h(true), (0, o.Mr3)(c.A)
+      p(e), h(true), (0, s.Mr3)(c.A)
     }, []), f = r.useCallback(e => {
       p(e), h(false)
     }, []), b = r.useCallback(async e => {
@@ -75,22 +75,22 @@ let m = () => {
         }),
         children: (0, a.jsxs)("div", {
           className: u.inner,
-          children: [(0, a.jsx)(s.Z, {
+          children: [(0, a.jsx)(o.Z, {
             icons: d.J6
-          }), (0, a.jsx)(o.Heading, {
+          }), (0, a.jsx)(s.Heading, {
             variant: "heading-lg/bold",
             children: "Upload Shop Assets"
           }), (0, a.jsxs)("div", {
             className: u.instructions,
-            children: [(0, a.jsx)(o.Text, {
+            children: [(0, a.jsx)(s.Text, {
               variant: "text-sm/normal",
               children: "Drop file(s) into this panel to preview Shop assets!"
-            }), (0, a.jsxs)(o.Text, {
+            }), (0, a.jsxs)(s.Text, {
               variant: "text-sm/normal",
-              children: ["Click", (0, a.jsx)(o.idN, {
+              children: ["Click", (0, a.jsx)(s.idN, {
                 className: u.questionIcon,
                 size: "xs",
-                color: o.TVs.colors.TEXT_DEFAULT
+                color: s.TVs.colors.TEXT_DEFAULT
               }), "above for more instructions."]
             })]
           })]

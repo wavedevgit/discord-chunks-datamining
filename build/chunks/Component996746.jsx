@@ -14,7 +14,7 @@ function c(e) {
   var t;
   let {
     nameplate: n
-  } = e, c = (0, r.e7)([o.default], () => o.default.getCurrentUser()), d = null != (t = s.ZP.useName(c)) ? t : "";
+  } = e, c = (0, r.e7)([s.default], () => s.default.getCurrentUser()), d = null != (t = o.ZP.useName(c)) ? t : "";
   return (0, a.jsx)(l.m, {
     username: d,
     selfMute: false,

@@ -47,7 +47,7 @@ function b(e) {
     status: t,
     currentStatus: n,
     description: r
-  } = e, l = t !== m.Skl.ONLINE, o = (0, a.jsx)(a.Fragment, {
+  } = e, l = t !== m.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
     children: x.map(e => {
       let {
         duration: r,
@@ -97,7 +97,7 @@ function b(e) {
       })
     },
     dontCloseOnAction: true,
-    children: l ? o : true
+    children: l ? s : true
   })
 }
 
@@ -125,12 +125,12 @@ function v(e) {
 }
 
 function j(e) {
-  let t = s.Cr.useSetting(),
+  let t = o.Cr.useSetting(),
     n = (0, l.p)(),
-    c = o.e.useExperiment({
+    c = s.e.useExperiment({
       location: "UserProfileAccountPopout"
     }).allowQuietMode || n,
-    d = s.fv.useSetting(),
+    d = o.fv.useSetting(),
     u = e === m.Skl.DND,
     f = n => {
       let a = v(t);
