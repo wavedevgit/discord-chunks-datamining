@@ -13,21 +13,17 @@ var Chunk120356 = require("./120356.js"),
   Chunk796914 = require("./796914.js"),
   Chunk149715 = require("./149715.js");
 
-function u(e) {
-  let {
-    iconClassName: t,
-    textClassName: n
-  } = e;
-  return (0, r.jsxs)("div", {
-    className: a()(l.paymentModalLockIcon, c.flex, c.alignCenter),
-    children: [(0, r.jsx)(o.mBM, {
+function u() {
+  return (0, Chunk951288.jsxs)("div", {
+    className: a()(Chunk796914.paymentModalLockIcon, Chunk149715.flex, Chunk149715.alignCenter),
+    children: [(0, Chunk951288.jsx)(Chunk481060.mBM, {
       size: "sm",
       color: "currentColor",
-      className: a()(l.lockIcon, t)
-    }), (0, r.jsx)(o.Text, {
+      className: Chunk796914.lockIcon
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
-      className: a()(l.lockIconText, null != n ? n : true),
-      children: s.intl.string(s.t.Kv6Z4I)
+      className: Chunk796914.lockIconText,
+      children: Chunk388032.intl.string(Chunk388032.t.Kv6Z4I)
     })]
   })
 }

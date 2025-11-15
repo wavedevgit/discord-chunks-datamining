@@ -1,1 +1,0 @@
-{"id":"14401","type":"experiment","data":{"kind":"user","id":"2025-07_shop_summer_sale_cohort_2","label":"Shop Summer Sale Cohort 2","commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","defaultConfig":{},"treatments":[{"id":1,"label":"Bucket 1","config":{}},{"id":2,"label":"Bucket 2","config":{}}]},"fromModule":{"id":"1272"}}
