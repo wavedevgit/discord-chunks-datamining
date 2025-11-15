@@ -2,7 +2,7 @@
 /** chunk id: 373183, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,78 +13,65 @@ var Chunk951288 = require("./951288.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk104505 = require("./104505.js"),
+  Chunk335131 = require("./335131.js"),
   Chunk597688 = require("./597688.js"),
   Chunk1870 = require("./1870.js"),
   Chunk832149 = require("./832149.jsx"),
+  Chunk911390 = require("./911390.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk290181 = require("./290181.js"),
   Chunk250967 = require("./250967.js"),
   Chunk182975 = require("./182975.js"),
   Chunk655603 = require("./655603.js");
-let v = Chunk647438.memo(function(e) {
+let E = Chunk647438.memo(function(e) {
   let {
     category: t,
     rewardSkuId: n
   } = e, i = l.useRef(null), {
-    isHoveringOrFocusing: v
-  } = (0, d.Z)(i), x = l.useMemo(() => t.products.filter(e => e.skuId !== n).map(e => e.skuId), [t.products, n]), E = (0, s.e7)([g.Z], () => g.Z.getPurchases(x)), O = e => {
-    e.stopPropagation();
-    {
-      let e = p.Z.getProduct(n);
-      null != e && (0, f.Z)({
-        product: e,
-        analyticsLocations: [],
-        overrideGraphic: {
-          type: "video",
-          src: _.Z,
-          fallbackImageSrc: m.Z,
-          loop: false,
-          aspectRatio: "16/9"
-        }
-      })
-    }
-  }, S = l.useMemo(() => E.length === x.length, [E, x]);
-  return (0, r.jsx)(o.kL8, {
+    isHoveringOrFocusing: E
+  } = (0, d.Z)(i), {
+    readyToClaim: O,
+    collectibleProductSkuIds: S,
+    collectedSkuIds: y
+  } = (0, C.q)(t, n), j = (0, s.e7)([f.Z], () => f.Z.isClaiming === n);
+  return (0, r.jsx)("div", {
     ref: i,
-    className: a()(C.productCardContainer, {
-      [C.hovered]: v
+    className: a()(_.productCardContainer, {
+      [_.hovered]: E
     }),
-    "aria-label": h.intl.formatToPlainString(h.t.Ez6aHE, {
+    "aria-label": m.intl.formatToPlainString(m.t.Ez6aHE, {
       category: t.name
     }),
-    onClick: e => {
-      O(e)
-    },
     children: (0, r.jsxs)("div", {
-      className: C.productCardContentContainer,
+      className: _.productCardContentContainer,
       children: [(0, r.jsx)("div", {
-        className: C.productPreviewContainer,
+        className: _.productPreviewContainer,
         children: (0, r.jsx)("img", {
           alt: "Reward Bow",
-          src: b.Z
+          src: x.Z
         })
       }), (0, r.jsx)("div", {
-        className: C.headerContainer,
+        className: _.headerContainer,
         children: (0, r.jsx)(u.IGR, {
-          text: h.intl.string(h.t.rykAJ9),
+          text: m.intl.string(m.t.rykAJ9),
           disableColor: true,
-          className: C.unlockRewardBadge
+          className: _.unlockRewardBadge
         })
       }), (0, r.jsx)("div", {
-        className: C.footerContainer,
+        className: _.footerContainer,
         children: (0, r.jsxs)("div", {
-          className: C.footerContent,
+          className: _.footerContent,
           children: [(0, r.jsxs)("div", {
-            className: C.footerInfoContainer,
+            className: _.footerInfoContainer,
             children: [(0, r.jsxs)("div", {
-              className: C.footerInfo,
+              className: _.footerInfo,
               children: [(0, r.jsx)(o.xvT, {
                 variant: "text-lg/bold",
                 color: "text-primary",
-                children: h.intl.string(h.t["0mDmg/"])
+                children: m.intl.string(m.t["0mDmg/"])
               }), (0, r.jsx)(c.u, {
-                text: S ? h.intl.string(h.t.cKH3tk) : h.intl.formatToPlainString(h.t["8aMDPc"], {
-                  totalCount: x.length
+                text: O ? m.intl.string(m.t.cKH3tk) : m.intl.formatToPlainString(m.t["8aMDPc"], {
+                  totalCount: S.length
                 }),
                 align: "right",
                 caretConfig: {
@@ -93,34 +80,65 @@ let v = Chunk647438.memo(function(e) {
                 },
                 position: "top",
                 children: (0, r.jsx)("span", {
-                  className: C.questionIconContainer,
+                  className: _.questionIconContainer,
                   children: (0, r.jsx)(o.idN, {
                     size: "xs"
                   })
                 })
               })]
             }), (0, r.jsx)("div", {
-              className: C.progressContainer,
+              className: _.progressContainer,
               children: (0, r.jsx)(o.xvT, {
                 variant: "text-sm/normal",
                 color: "text-secondary",
-                children: h.intl.formatToPlainString(h.t["5TwASM"], {
-                  collectedCount: E.length,
-                  totalCount: x.length
+                children: m.intl.formatToPlainString(m.t["5TwASM"], {
+                  collectedCount: y.length,
+                  totalCount: S.length
                 })
               })
             })]
           }), (0, r.jsx)("div", {
-            className: C.footerButtonContainer,
+            className: _.footerButtonContainer,
             children: (0, r.jsx)(o.hE2, {
               wrap: false,
               fullWidth: true,
               children: (0, r.jsx)(o.zxk, {
                 variant: "primary",
-                onClick: O,
-                text: h.intl.string(h.t.VnVTNc),
+                onClick: e => {
+                  e.stopPropagation(), O && (0, p.wW)(t.skuId, n).then(() => {
+                    let e = g.Z.getProduct(n);
+                    null != e && (0, h.Z)({
+                      product: e,
+                      analyticsLocations: [],
+                      overrideGraphic: {
+                        type: "video",
+                        src: v.Z,
+                        fallbackImageSrc: b.Z,
+                        loop: false,
+                        aspectRatio: "16/9"
+                      }
+                    })
+                  }).catch(() => {
+                    (0, u.ZDy)(() => Promise.resolve(e => (0, r.jsx)(o.Modal, {
+                      transitionState: e.transitionState,
+                      onClose: e.onClose,
+                      size: "sm",
+                      title: m.intl.string(m.t.SRTlyA),
+                      actions: [{
+                        text: m.intl.string(m.t.TyCVIq),
+                        onClick: e.onClose,
+                        variant: "primary"
+                      }],
+                      children: (0, r.jsx)("div", {
+                        children: m.intl.string(m.t["0YpIF/"])
+                      })
+                    })))
+                  })
+                },
+                text: m.intl.string(m.t.VnVTNc),
                 fullWidth: true,
-                disabled: !S
+                disabled: !O,
+                loading: j
               })
             })
           })]

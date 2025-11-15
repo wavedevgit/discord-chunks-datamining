@@ -68,6 +68,20 @@ let m = {
       analyticsLocation: Chunk100527.Z.GIFTING_PROMOTION_COACHMARK,
       analyticsPage: Chunk981631.ZY5.PREMUIM_UPSELL_GIFTING_PROMOTION
     },
+    reminderNagbar: {
+      description: () => Chunk388032.intl.string(Chunk388032.t.veQg0t),
+      cta: () => Chunk388032.intl.string(Chunk388032.t.RzWDqY),
+      analyticsLocation: Chunk100527.Z.SEASONAL_GIFTING_REMINDER_NAGBAR,
+      analyticsPage: Chunk981631.ZY5.PREMUIM_UPSELL_GIFTING_PROMOTION
+    },
+    reminderNotice: {
+      getImageUrl: (e, t) => t ? u.Z : c.Z,
+      title: () => Chunk388032.intl.string(Chunk388032.t.bLOiLM),
+      description: () => Chunk388032.intl.string(Chunk388032.t["cE/UX7"]),
+      cta: () => Chunk388032.intl.string(Chunk388032.t.RzWDqY),
+      analyticsLocation: Chunk100527.Z.GIFTING_PROMOTION_COACHMARK,
+      analyticsPage: Chunk981631.ZY5.PREMUIM_UPSELL_GIFTING_PROMOTION
+    },
     planSelection: {
       heading: () => Chunk388032.intl.string(Chunk388032.t.OEtqpm),
       subheading: function() {

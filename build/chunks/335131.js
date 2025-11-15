@@ -16,7 +16,8 @@ require.d(exports, {
   oK: () => w,
   oc: () => L,
   p8: () => Y,
-  qg: () => k
+  qg: () => k,
+  wW: () => W
 }), require("./388685.js"), require("./49124.js");
 var Chunk561842 = require("./561842.js"),
   Chunk664081 = require("./664081.js"),
@@ -337,4 +338,31 @@ let P = e => {
       type: "COLLECTIBLES_SKIP_NUM_CATEGORIES",
       skipNumCategories: e
     })
+  }, W = async (e, t) => {
+    s.Z.dispatch({
+      type: "COLLECTIBLES_CLAIM",
+      skuId: t
+    });
+    try {
+      var n;
+      let r = await o.tn.put({
+        url: S.ANM.COLLECTIBLES_CLAIM_CATEGORY_REWARD,
+        body: {
+          category_id: e
+        },
+        rejectWithError: true
+      });
+      s.Z.dispatch({
+        type: "COLLECTIBLES_CLAIM_SUCCESS",
+        skuId: t,
+        purchases: null == (n = r.body) ? true : n.map(y.Z.fromServer)
+      })
+    } catch (n) {
+      let e = new l.Hx(n);
+      throw s.Z.dispatch({
+        type: "COLLECTIBLES_CLAIM_FAILURE",
+        skuId: t,
+        error: e
+      }), e
+    }
   }
