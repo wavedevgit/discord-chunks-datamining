@@ -1,7 +1,7 @@
 /** Chunk was on 47863 **/
 /** chunk id: 328242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => E
 }), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk602804 = require("./602804.js");
 
-function T(e) {
+function Z(e) {
   let {
     source: t
   } = e;
@@ -46,7 +46,7 @@ function T(e) {
   })
 }
 
-function Z(e) {
+function I(e) {
   let {
     source: t,
     selected: n,
@@ -82,7 +82,7 @@ function Z(e) {
       })
     }), (0, r.jsxs)("div", {
       className: P.sourceNameContainer,
-      children: [(0, r.jsx)(T, {
+      children: [(0, r.jsx)(Z, {
         source: t
       }), (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
@@ -93,7 +93,7 @@ function Z(e) {
   })
 }
 
-function I(e) {
+function E(e) {
   let {
     onClick: t
   } = e, [{
@@ -103,26 +103,26 @@ function I(e) {
     sourceType: o,
     fetchingSources: g,
     selectedSource: O,
-    discordSourceId: T,
-    hasPermission: I
+    discordSourceId: Z,
+    hasPermission: E
   }] = (0, y.E_)(), {
     smarterSourceOrdering: N
   } = (0, j.E)({
     location: "GoLiveSourceGrid"
-  }), R = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), A = (0, d.cj)([p.ZP], () => {
+  }), A = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), R = (0, d.cj)([p.ZP], () => {
     let e = p.ZP.getCandidateGames(),
       t = {};
     for (let n of e) null != n.windowHandle && (t[n.windowHandle] = n.exeName);
     return t
-  }), M = (0, d.e7)([_.Z], () => _.Z.quests), k = (0, S.jx)(M, R, n);
+  }), M = (0, d.e7)([_.Z], () => _.Z.quests), k = (0, b.jx)(M, A, n);
   i.useEffect(() => ((0, h.Ky)(), h.P7), []);
-  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, S.ov)(t, null == k ? true : k.source.id, T, A) - (0, S.ov)(e, null == k ? true : k.source.id, T, A)) : n, [k, N, n, T, A]);
+  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, b.ov)(t, null == k ? true : k.source.id, Z, R) - (0, b.ov)(e, null == k ? true : k.source.id, Z, R)) : n, [k, N, n, Z, R]);
   if (g) {
-    if (false === I) {
+    if (false === E) {
       let e = false;
       if ((0, x.isMac)()) {
-        var B, L;
-        let t = null === f.Z || true === f.Z || null == (L = f.Z.remoteApp) || null == (B = L.getVersion) ? true : B.call(L);
+        var L, B;
+        let t = null === f.Z || true === f.Z || null == (B = f.Z.remoteApp) || null == (L = B.getVersion) ? true : L.call(B);
         e = !v.o || "0.0.0" === t || a().satisfies(t, "0.0.363")
       }
       return (0, r.jsxs)("div", {
@@ -146,17 +146,17 @@ function I(e) {
     })
   }
   let G = [];
-  return (G = o === c.vA.WINDOW ? D : o === c.vA.SCREEN ? s : l, o === c.vA.CAMERA && 0 === G.length) ? (0, r.jsx)(E, {}) : (0, r.jsx)("div", {
+  return (G = o === c.vA.WINDOW ? D : o === c.vA.SCREEN ? s : l, o === c.vA.CAMERA && 0 === G.length) ? (0, r.jsx)(T, {}) : (0, r.jsx)("div", {
     className: P.root,
-    children: G.map(e => (0, r.jsx)(Z, {
+    children: G.map(e => (0, r.jsx)(I, {
       onClick: t,
       source: e,
-      selected: null != O && "windowHandle" in O ? (0, b.Z)(e.id, O.windowHandle) : (null == O ? true : O.id) === e.id
+      selected: null != O && "windowHandle" in O ? (0, S.Z)(e.id, O.windowHandle) : (null == O ? true : O.id) === e.id
     }, e.id))
   })
 }
 
-function E() {
+function T() {
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk602804.emptyState,
     children: [(0, Chunk54381.jsx)(Chunk481060.Odl, {

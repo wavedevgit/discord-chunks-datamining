@@ -44,10 +44,11 @@ function j(e) {
       value: e.id
     }
   });
-  return (0, l.jsx)(x.Z, {
-    title: g.intl.string(g.t["eg7R/k"]),
+  return (0, l.jsx)(g.Z, {
+    title: x.intl.string(x.t["eg7R/k"]),
     scrollerInnerClassName: h.channelSelectScrollerInner,
     children: (0, l.jsx)(i.Gu, {
+      "data-migration-pending": true,
       options: Z,
       value: n,
       itemInfoClassName: h.channelInfoWrapper,

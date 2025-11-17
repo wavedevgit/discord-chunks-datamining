@@ -1,125 +1,35 @@
-/** Chunk was on 47863 **/
+/** Chunk was on 69844 **/
 /** chunk id: 970731, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  DF: () => m,
-  ZP: () => j
+  Z: () => u
 });
-var r, i, Chunk54381 = require("./54381.js");
-require("./473749.js");
-var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
+  Chunk149765 = require("./149765.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk493773 = require("./493773.js"),
-  Chunk921944 = require("./921944.js"),
-  Chunk164208 = require("./164208.js");
-
-function p(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
-    })
-  }
-  return e
-}
-
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-var m = ((r = {}).TOP_CENTER = "caretTopCenter", r.TOP_RIGHT = "caretTopRight", r.TOP_LEFT = "caretTopLeft", r.BOTTOM_CENTER = "caretBottomCenter", r.BOTTOM_LEFT = "caretBottomLeft", r.BOTTOM_RIGHT = "caretBottomRight", r.LEFT_CENTER = "caretLeftCenter", r.LEFT_TOP = "caretLeftTop", r.RIGHT_CENTER = "caretRightCenter", r.RIGHT_TOP = "caretRightTop", r),
-  _ = ((i = {})[i.ADJACENT = 0] = "ADJACENT", i[i.STACKED = 1] = "STACKED", i);
-let g = Object.freeze({
-    brand: Chunk164208.colorBrand,
-    primary: Chunk164208.colorPrimary
-  }),
-  x = Object.freeze({
-    brand: "always-white",
-    primary: "header-primary"
-  }),
-  v = Object.freeze({
-    brand: "always-white",
-    primary: "text-default"
-  });
-
-function j(e) {
+  Chunk995648 = require("./995648.jsx"),
+  Chunk422559 = require("./422559.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk690629 = require("./690629.js");
+let u = function(e) {
+  var t;
   let {
-    color: t = "brand",
-    className: n,
-    header: r,
-    headerClassName: i,
-    content: s,
-    contentClassName: m,
-    buttonCTA: _,
-    secondaryButtonCTA: j,
-    onClick: b,
-    onSecondaryClick: S,
-    buttonProps: y = {
-      color: a.zx.Colors.BRAND,
-      look: a.zx.Looks.FILLED
-    },
-    secondaryButtonProps: C = {
-      color: a.zx.Colors.BRAND_INVERTED
-    },
-    onComponentMount: O,
-    asset: w,
-    markAsDismissed: P,
-    caretPosition: T = "caretTopCenter",
-    buttonLayout: Z = 0
-  } = e;
-  (0, d.ZP)(() => {
-    null == O || O()
-  });
-  let I = null != j;
-  return (0, l.jsxs)("div", {
-    className: o()(n, g[t], f.upsellTooltipWrapper, f[T]),
-    children: [w, null == r ? null : (0, l.jsx)(c.Heading, {
-      color: x[t],
-      className: o()(i, f.upsellTooltipHeader),
-      variant: "heading-md/semibold",
-      children: r
-    }), (0, l.jsx)(c.Text, {
-      color: v[t],
-      className: o()(m, f.content),
-      variant: "text-sm/normal",
-      children: s
-    }), null != _ || I ? (0, l.jsxs)("div", {
-      className: o()(f.upsellButtonsContainer, {
-        [f.upsellButtonsAdjacent]: 0 === Z,
-        [f.upsellButtonsStacked]: 1 === Z
-      }),
-      children: [I ? (0, l.jsx)(a.zx, h(p({}, C), {
-        fullWidth: 1 === Z,
-        onClick: () => {
-          null == S || S(), null == P || P(u.L.SECONDARY)
-        },
-        children: j
-      })) : null, null == _ ? null : (0, l.jsx)(a.zx, h(p({}, y), {
-        fullWidth: !I || 1 === Z,
-        onClick: e => {
-          b(e), null == P || P(u.L.PRIMARY)
-        },
-        children: _
-      }))]
-    }) : null]
-  })
+    application: n
+  } = e, u = a.useMemo(() => {
+    var e;
+    let t = null == n || null == (e = n.install_params) ? true : e.permissions;
+    if (null != t) return o.VY.filter(e => i.e$(i.vB(t), e))
+  }, [null == n || null == (t = n.install_params) ? true : t.permissions]);
+  return null != u && u.length > 0 ? (0, r.jsxs)("div", {
+    className: d.sectionContainer,
+    children: [(0, r.jsx)(l.Heading, {
+      variant: "heading-lg/semibold",
+      color: "header-primary",
+      children: c.intl.string(c.t.runNF8)
+    }), (0, r.jsx)(s.Z, {
+      className: d.contentContainer,
+      grantedPermissions: u,
+      grantedPermissionsHeader: c.intl.string(c.t.SLgiNH)
+    })]
+  }) : null
 }
-j.CaretPosition = m, j.ButtonLayout = _

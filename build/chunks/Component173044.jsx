@@ -26,11 +26,11 @@ function v(e) {
   let {
     onClose: j
   } = e, {
-    analyticsLocations: b
-  } = (0, o.ZP)(s.Z.GO_LIVE_MODAL_V2), S = (0, d.N)(), y = (0, c.N)(), C = (null == S || null == (t = S.subscription_trial) ? true : t.sku_id) === m.Si.TIER_2 || (0, f.Wp)(y, m.Si.TIER_2), O = g.intl.string(_.default["+f+cqk"]);
-  return C && (null != S ? O = (0, p.Rt)({
-    intervalType: null == S || null == (n = S.subscription_trial) ? true : n.interval,
-    intervalCount: null == S || null == (v = S.subscription_trial) ? true : v.interval_count
+    analyticsLocations: S
+  } = (0, o.ZP)(s.Z.GO_LIVE_MODAL_V2), b = (0, d.N)(), y = (0, c.N)(), C = (null == b || null == (t = b.subscription_trial) ? true : t.sku_id) === m.Si.TIER_2 || (0, f.Wp)(y, m.Si.TIER_2), O = g.intl.string(_.default["+f+cqk"]);
+  return C && (null != b ? O = (0, p.Rt)({
+    intervalType: null == b || null == (n = b.subscription_trial) ? true : n.interval,
+    intervalCount: null == b || null == (v = b.subscription_trial) ? true : v.interval_count
   }) : null != y && (O = g.intl.formatToPlainString(g.t.bkQ4bH, {
     percent: y.discount.amount
   }))), (0, r.jsxs)("div", {
@@ -45,7 +45,7 @@ function v(e) {
       }), g.intl.format(g.t.sLJ3EV, {
         onNitroClick: function() {
           (0, h.E)({
-            analyticsLocation: b[0],
+            analyticsLocation: S[0],
             onClose: j
           })
         }

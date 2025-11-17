@@ -86,8 +86,8 @@ function D(e) {
       needsDemo: c,
       analyticsLocation: o,
       onClick: d,
-      onClose: x,
-      setIsHovering: g
+      onClose: g,
+      setIsHovering: x
     } = e,
     {
       value: h,
@@ -103,8 +103,8 @@ function D(e) {
     }),
     children: (0, l.jsx)("div", {
       className: E.textContainer,
-      onMouseEnter: () => g(true),
-      onMouseLeave: () => g(false),
+      onMouseEnter: () => x(true),
+      onMouseLeave: () => x(false),
       children: (0, l.jsx)(m.Text, {
         variant: "text-xs/bold",
         className: s()(E.selectorNitroText, E.enhancedSelectorNitroText),
@@ -113,7 +113,7 @@ function D(e) {
     })
   }), t = () => R({
     analyticsLocation: o,
-    onClose: x
+    onClose: g
   })) : (n = (0, l.jsx)("div", {
     className: E.textContainer,
     children: (0, l.jsx)(m.Text, {
@@ -145,12 +145,12 @@ function U(e) {
     onPresetChange: v,
     targetGuildPremiumTier: U,
     captureDeviceSelected: _
-  } = e, w = (0, o.e7)([S.default], () => {
-    let e = S.default.getCurrentUser();
+  } = e, w = (0, o.e7)([N.default], () => {
+    let e = N.default.getCurrentUser();
     return c()(null != e, "StreamSettings: user cannot be undefined"), e
-  }), M = (0, o.e7)([Z.Z, f.Z], () => f.Z.getChannel(Z.Z.getVoiceChannelId())), L = N.ZP.canStreamQuality(N.U2.MID, w), {
+  }), M = (0, o.e7)([Z.Z, f.Z], () => f.Z.getChannel(Z.Z.getVoiceChannelId())), L = S.ZP.canStreamQuality(S.U2.MID, w), {
     location: B
-  } = (0, g.O)(), G = (0, h.Zq)({
+  } = (0, x.O)(), G = (0, h.Zq)({
     autoTrackExposure: false
   }), z = (0, p.B4)(), F = !L && !G, [W, V] = r.useState(false), H = _ ? P.z8 : P.WC, X = A(k({}, B), {
     section: T.jXE.STREAM_SETTINGS
@@ -216,7 +216,7 @@ function U(e) {
       glow: W
     }) : null, z && (0, l.jsx)(C.c, {})]
   });
-  return (0, l.jsx)(x.Z, A(k({}, X), {
+  return (0, l.jsx)(g.Z, A(k({}, X), {
     children: (0, l.jsx)("div", {
       className: O.modalContent,
       children: (0, l.jsxs)("div", {

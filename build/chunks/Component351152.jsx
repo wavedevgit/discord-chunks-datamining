@@ -1,7 +1,7 @@
 /** Chunk was on 47863 **/
 /** chunk id: 351152, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => b
 }), require("./361932.js"), require("./187205.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -23,7 +23,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk542257 = require("./542257.js"),
   Chunk949678 = require("./949678.js");
 
-function b(e) {
+function S(e) {
   let {
     guildId: t,
     onClick: n
@@ -51,7 +51,7 @@ function b(e) {
   }) : null
 }
 
-function S(e) {
+function b(e) {
   let {
     onSelectGuild: t
   } = e, n = (0, a.e7)([h.ZP], () => h.ZP.getGuildFolders());
@@ -62,7 +62,7 @@ function S(e) {
       let {
         guildIds: n
       } = e;
-      return n.map(e => (0, r.jsx)(b, {
+      return n.map(e => (0, r.jsx)(S, {
         guildId: e,
         onClick: t
       }, e))

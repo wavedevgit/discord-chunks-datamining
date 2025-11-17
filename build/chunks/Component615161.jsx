@@ -53,7 +53,7 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = {
+let S = {
     screenSources: [],
     windowSources: [],
     deviceSources: [],
@@ -72,7 +72,7 @@ let b = {
     nativeSourceType: "",
     discordSourceId: ""
   },
-  S = Chunk473749.createContext(b),
+  b = Chunk473749.createContext(S),
   y = Chunk473749.createContext(() => {
     throw Error("Using uninitialized GoLiveModalContextDispatch")
   });
@@ -162,7 +162,7 @@ function O(e) {
   } = e;
   return (0, r.jsx)(y.Provider, {
     value: t,
-    children: (0, r.jsx)(S.Provider, {
+    children: (0, r.jsx)(b.Provider, {
       value: n,
       children: i
     })
@@ -178,22 +178,22 @@ function w(e, t, n) {
     location: "useCreateGoLiveModalState"
   }), {
     preset: a,
-    resolution: S,
+    resolution: b,
     fps: y,
     soundshareEnabled: O
   } = (0, c.cj)([p.Z], () => p.Z.getState());
   s && (a = g.ApplicationStreamPresets.PRESET_AUTO);
   let w = (0, c.e7)([h.Z], () => h.Z.getInputDeviceId()),
     P = null != (r = f.I0.useSetting()) && r,
-    T = null != (l = f.eo.useSetting()) && l;
-  a in g.ApplicationStreamPresets && (a !== g.ApplicationStreamPresets.PRESET_AUTO || o) || (a = g.ApplicationStreamPresets.PRESET_VIDEO), (0, _.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, S, y, t, n) || (S = g.ApplicationStreamResolutions.RESOLUTION_720, y = g.ApplicationStreamFPS.FPS_30);
-  let [Z, I] = i.useReducer(C, j(v({}, b), {
+    Z = null != (l = f.eo.useSetting()) && l;
+  a in g.ApplicationStreamPresets && (a !== g.ApplicationStreamPresets.PRESET_AUTO || o) || (a = g.ApplicationStreamPresets.PRESET_VIDEO), (0, _.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, b, y, t, n) || (b = g.ApplicationStreamResolutions.RESOLUTION_720, y = g.ApplicationStreamFPS.FPS_30);
+  let [I, E] = i.useReducer(C, j(v({}, S), {
     muteStreamAudio: !O,
     preset: a,
-    resolution: S,
+    resolution: b,
     fps: y,
     hidePreview: P,
-    notifyFriends: T,
+    notifyFriends: Z,
     selectedSource: e,
     audioSourceId: w
   }));
@@ -201,21 +201,21 @@ function w(e, t, n) {
     var e, t;
     u.Z.hasPermission(x.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
-    }).then(e => I({
+    }).then(e => E({
       type: "set_has_permission",
       value: e
     })), null == (e = (t = d.Z.window).getMediaSourceId) || e.call(t).then(e => {
-      I({
+      E({
         type: "set_discord_source_id",
         sourceId: null != e ? e : ""
       })
     })
   }, []), {
-    state: Z,
-    dispatch: I
+    state: I,
+    dispatch: E
   }
 }
 
 function P() {
-  return [Chunk473749.useContext(S), Chunk473749.useContext(y)]
+  return [Chunk473749.useContext(b), Chunk473749.useContext(y)]
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 47863 **/
 /** chunk id: 560749, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => T
 }), require("./35282.js"), require("./539854.js"), require("./388685.js"), require("./387201.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,23 +31,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk603410 = require("./603410.js");
 
-function I(e) {
+function E(e) {
   let {
     result: t,
     onSelectChannel: n
-  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([y.ZP, S.default], () => y.ZP.getVoiceStatesForChannel(t.record).map(e => S.default.getUser(e.user.id)).filter(C.lm));
+  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([y.ZP, b.default], () => y.ZP.getVoiceStatesForChannel(t.record).map(e => b.default.getUser(e.user.id)).filter(C.lm));
   return (0, r.jsxs)(c.P3F, {
-    className: Z.channelResult,
+    className: I.channelResult,
     onClick: () => n(t.record.id),
     children: [(0, r.jsxs)("div", {
-      className: Z.channelResultInfo,
+      className: I.channelResultInfo,
       children: [(0, r.jsx)("img", {
         alt: "",
         src: null != i ? (0, m.EB)(i, 32) : true,
-        className: Z.guildIcon
+        className: I.guildIcon
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsxs)(c.Text, {
-          className: Z.channelName,
+          className: I.channelName,
           variant: "text-md/medium",
           color: "interactive-normal",
           children: [(0, r.jsx)(c.gj8, {
@@ -68,7 +68,7 @@ function I(e) {
   })
 }
 
-function E(e) {
+function T(e) {
   let {
     onSelectChannel: t,
     className: n
@@ -80,9 +80,9 @@ function E(e) {
     searchOptions: {
       frecencyBoosters: true
     }
-  }), S = (0, o.Wu)([b.Z, x.ZP, _.Z, v.Z, j.Z], () => {
+  }), b = (0, o.Wu)([S.Z, x.ZP, _.Z, v.Z, j.Z], () => {
     let e = [],
-      t = b.Z.getGuildId();
+      t = S.Z.getGuildId();
     if (null == t) return e;
     for (let n of x.ZP.getVocalChannelIds(t)) {
       let t = _.Z.getChannel(n);
@@ -98,17 +98,17 @@ function E(e) {
     }
     for (let n of g.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === w.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
     return e
-  }), E = i.useMemo(() => {
+  }), T = i.useMemo(() => {
     let e = new Set(y.map(e => e.id)),
-      t = new Set(S.map(e => e.id));
-    return [...S.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, u.Z)(e.id)).filter(C.lm), ...y.filter(e => !t.has(e.id)).map(e => (0, u.Z)(e.id)).filter(C.lm)]
-  }, [y, S]), R = "" !== a ? m : E;
+      t = new Set(b.map(e => e.id));
+    return [...b.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, u.Z)(e.id)).filter(C.lm), ...y.filter(e => !t.has(e.id)).map(e => (0, u.Z)(e.id)).filter(C.lm)]
+  }, [y, b]), A = "" !== a ? m : T;
   return (0, r.jsxs)("div", {
-    className: s()(Z.root, n),
+    className: s()(I.root, n),
     children: [(0, r.jsx)("div", {
-      className: Z.searchBar,
+      className: I.searchBar,
       children: (0, r.jsx)(c.E1j, {
-        placeholder: T.intl.string(T.t["3jvv+6"]),
+        placeholder: Z.intl.string(Z.t["3jvv+6"]),
         query: a,
         onChange: e => l({
           query: e,
@@ -120,22 +120,22 @@ function E(e) {
         }),
         autoFocus: true
       })
-    }), R.length > 0 ? (0, r.jsx)(c.aVo, {
+    }), A.length > 0 ? (0, r.jsx)(c.aVo, {
       renderListHeader: function() {
         return (0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "text-muted",
-          children: T.intl.string(P.default.FZ9Fl7)
+          children: Z.intl.string(P.default.FZ9Fl7)
         })
       },
-      sections: [R.length],
+      sections: [A.length],
       sectionHeight: 0,
       rowHeight: 48,
       renderRow: function(e) {
         let {
           rowIndex: n
-        } = e, i = R[n];
-        return (0, r.jsx)(I, {
+        } = e, i = A[n];
+        return (0, r.jsx)(E, {
           result: i,
           onSelectChannel: t
         }, i.record.id)

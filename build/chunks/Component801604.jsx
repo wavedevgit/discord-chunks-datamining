@@ -65,14 +65,14 @@ function w() {
     fps: _,
     muteStreamAudio: w,
     selectedSource: P,
-    sourceType: T,
-    audioSourceId: Z
-  }] = (0, Chunk615161.E_)(), [I, E] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_INPUT, {
+    sourceType: Z,
+    audioSourceId: I
+  }] = (0, Chunk615161.E_)(), [E, T] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_INPUT, {
     location: "StreamSettingsSummary"
-  }), N = I.concat(E), [R, A] = null != (n = (0, Chunk396678.Z)(Chunk728345)) ? require : [Chunk925329, Chunk556389], M = (0, Chunk672811.L)(Chunk728345), k = (0, Chunk891180.M)(R), D = T === Chunk268146.vA.CAMERA, B = null != P, L = null != P ? null == P || null == (e = P.id) ? true : module.startsWith(Chunk268146.vA.CAMERA) : D, G = Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_AUTO, U = B ? true : Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_VIDEO ? Chunk388032.intl.string(Chunk604415.default.MuHUFe) : Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_DOCUMENTS ? Chunk388032.intl.string(Chunk604415.default.y0JuYR) : Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_AUTO ? Chunk388032.intl.string(Chunk604415.default.m4jtlc) : true, F = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getUseSystemScreensharePicker() && (0, Chunk358085.isLinux)());
+  }), N = E.concat(T), [A, R] = null != (n = (0, Chunk396678.Z)(Chunk728345)) ? require : [Chunk925329, Chunk556389], M = (0, Chunk672811.L)(Chunk728345), k = (0, Chunk891180.M)(A), D = Z === Chunk268146.vA.CAMERA, L = null != P, B = null != P ? null == P || null == (e = P.id) ? true : module.startsWith(Chunk268146.vA.CAMERA) : D, G = Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_AUTO, U = L ? true : Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_VIDEO ? Chunk388032.intl.string(Chunk604415.default.MuHUFe) : Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_DOCUMENTS ? Chunk388032.intl.string(Chunk604415.default.y0JuYR) : Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_AUTO ? Chunk388032.intl.string(Chunk604415.default.m4jtlc) : true, F = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getUseSystemScreensharePicker() && (0, Chunk358085.isLinux)());
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk214795.root,
-    children: [B && (0, Chunk54381.jsx)(O, {
+    children: [L && (0, Chunk54381.jsx)(O, {
       source: P
     }), (0, Chunk54381.jsxs)("div", {
       className: Chunk214795.summary,
@@ -80,12 +80,12 @@ function w() {
         className: Chunk214795.sourceOrPresetName,
         variant: "text-md/semibold",
         color: "header-primary",
-        children: B ? null != (i = null == P ? true : P.name) ? Chunk120356 : Chunk388032.intl.string(Chunk604415.default["hJMA+x"]) : M
+        children: L ? null != (i = null == P ? true : P.name) ? Chunk120356 : Chunk388032.intl.string(Chunk604415.default["hJMA+x"]) : M
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         className: Chunk214795.summaryDetail,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: [B && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [L && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
           children: [(0, Chunk54381.jsxs)("span", {
             className: Chunk214795.iconSummaryContainer,
             children: [(0, Chunk54381.jsx)(Chunk481060.ewm, {
@@ -100,7 +100,7 @@ function w() {
           children: [(0, Chunk54381.jsx)(C, {}), (0, Chunk54381.jsx)("span", {
             children: k
           }), (0, Chunk54381.jsx)(C, {}), (0, Chunk54381.jsx)("span", {
-            children: "".concat(A, "fps")
+            children: "".concat(R, "fps")
           })]
         }), w && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
           children: [(0, Chunk54381.jsx)(C, {}), (0, Chunk54381.jsxs)("span", {
@@ -111,15 +111,15 @@ function w() {
               color: "currentColor"
             }), Chunk388032.intl.string(Chunk604415.default.FzMGWR)]
           })]
-        }), !w && !L && F && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        }), !w && !B && F && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
           children: [(0, Chunk54381.jsx)(C, {}), Chunk388032.intl.string(Chunk604415.default["n9/rUq"])]
-        }), L ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        }), B ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
           children: [(0, Chunk54381.jsx)(C, {}), (0, Chunk54381.jsx)("span", {
             children: null == (t = N.find(e => {
               let {
                 id: t
               } = e;
-              return Z === t
+              return I === t
             })) ? true : exports.name
           })]
         }) : null]
