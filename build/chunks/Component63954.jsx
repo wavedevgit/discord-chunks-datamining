@@ -29,9 +29,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk899457 = require("./899457.jsx"),
   Chunk110560 = require("./110560.jsx"),
   Chunk78826 = require("./78826.jsx"),
-  Chunk37303 = require("./37303.jsx"),
   Chunk134483 = require("./134483.jsx"),
   Chunk683650 = require("./683650.jsx"),
+  Chunk752367 = require("./752367.jsx"),
   Chunk70956 = require("./70956.js"),
   Chunk188764 = require("./188764.js");
 
@@ -713,7 +713,7 @@ function W() {
           children: "Quest Card Embed"
         }), X ? (0, Chunk54381.jsx)(Chunk683650.o, {
           questId: W.id
-        }) : (0, Chunk54381.jsx)(Chunk37303.Z, {
+        }) : (0, Chunk54381.jsx)(Chunk752367.X, {
           quest: W,
           location: Chunk497505.jn.QUESTS_EMBED,
           sourceQuestContent: Chunk497505.jn.INTERNAL_PREVIEW_TOOL

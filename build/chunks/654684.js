@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 266843, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 654684, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   O: () => c,
@@ -9,7 +9,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393903 = require("./393903.js"),
   Chunk448986 = require("./448986.js"),
-  Chunk87894 = require("./87894.js");
+  Chunk724684 = require("./724684.js");
 
 function l() {
   let [e, t] = Chunk473749.useState("lg"), [n, i] = Chunk473749.useState(true), l = (0, Chunk448986.Z)(e => {
