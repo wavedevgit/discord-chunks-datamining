@@ -2,7 +2,7 @@
 /** chunk id: 370039, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  a: () => d
+  a: () => p
 });
 var Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
@@ -10,19 +10,24 @@ var Chunk647438 = require("./647438.js"),
   Chunk74538 = require("./74538.js"),
   Chunk1870 = require("./1870.js"),
   Chunk884697 = require("./884697.js"),
+  Chunk27123 = require("./27123.js"),
   Chunk330349 = require("./330349.js"),
   Chunk724994 = require("./724994.js");
-let d = () => {
+let p = () => {
   let e = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     t = null != module && Chunk74538.ZP.canUseCollectibles(module);
   return (0, Chunk647438.useCallback)(e => null == e || 0 === e.length ? e : e.filter(e => {
     let {
       isPurchased: n
-    } = (0, u.U)(o.Z, e);
+    } = (0, d.U)(o.Z, e);
     if (!(0, s.x6)(e) || (0, s.rN)(e) || n) returntrue;
+    if (!(0, u.N)(e)) returnfalse;
+    if ((0, c.r1)(e)) return null != (0, c.T4)({
+      product: e,
+      isPremiumUser: t
+    });
     let r = (0, s.gc)(t),
       l = (0, s.ql)(e, r);
-    if (!(0, c.N)(e)) returnfalse;
     if (null == l || 0 === l.amount) returntrue;
     let i = 0;
     return null != e.bundledProducts && (i = e.bundledProducts.reduce((e, t) => {
