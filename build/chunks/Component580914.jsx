@@ -64,7 +64,7 @@ let M = (0, Chunk884697.IC)(90),
       onVisibilityChange: z
     } = e, G = (0, o.O)(e => {
       null == z || z(e)
-    }, .1, null != z), K = l.useRef(null), Y = (0, A.B)("HeroBlock"), q = (0, u.e7)([C.default], () => C.default.getCurrentUser()), J = (0, B.Z)(), Q = (0, _.sp)(), X = l.useMemo(() => {
+    }, .1, null != z), K = l.useRef(null), Y = (0, A.B)("HeroBlock"), q = (0, u.e7)([m.default], () => m.default.getCurrentUser()), J = (0, B.Z)(), Q = (0, _.sp)(), X = l.useMemo(() => {
       var e, t;
       return null != V ? V : null == W ? F : {
         rankedSkuIds: null != (e = W.heroRanking) ? e : [],
@@ -111,7 +111,7 @@ let M = (0, Chunk884697.IC)(90),
         }, [i, a, e]),
         totalCards: e ? t : true
       }
-    })(U !== Z.AW.ORBS), eh = (0, O.a)()(ec), eC = (0, S.l)(eh).slice(0, ef), em = (0, P.St)(eC), e_ = ed ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), eb = (0, E.FF)("CollectiblesContent"), ev = x.Z.useConfig({
+    })(U !== Z.AW.ORBS), eh = (0, O.a)()(ec), em = (0, S.l)(eh).slice(0, ef), eC = (0, P.St)(em), e_ = ed ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), eb = (0, E.FF)("CollectiblesContent"), ev = x.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, ex = () => {
       ed ? ((0, h.Y)({
@@ -125,7 +125,7 @@ let M = (0, Chunk884697.IC)(90),
         categorySkuId: !eb || ep ? X.categorySkuId : true,
         isInternalShopDeeplink: true,
         isOrbsExclusive: ep
-      }), m.default.track(w.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      }), C.default.track(w.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == Q ? true : Q.sessionId,
         sku_id: X.categorySkuId,
         page_type: U,
@@ -215,7 +215,7 @@ let M = (0, Chunk884697.IC)(90),
           children: n || eu ? (0, r.jsx)(r.Fragment, {
             children: [...Array(null != ef ? ef : 4)].map((e, t) => ev ? (0, r.jsx)(T.Z, {}, t) : (0, r.jsx)(y.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
-            children: em.map((e, t) => {
+            children: eC.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);
               return null == e || null == n ? null : (0, r.jsx)(_.k0, {
                 newValue: {

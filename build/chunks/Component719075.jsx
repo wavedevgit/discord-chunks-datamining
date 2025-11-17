@@ -30,11 +30,11 @@ let v = e => {
     } = (0, d.G)(t.skuId), {
       isPurchased: v,
       isPartiallyOwnedBundle: x
-    } = (0, p.L)(t), E = (0, u.G1)(t), O = (0, u.rN)(t), S = l.useMemo(() => (0, u.BH)(t, f), [t, f]), y = (0, C.Iw)(t), {
+    } = (0, p.L)(t), E = (0, u.G1)(t), O = (0, u.rN)(t), S = l.useMemo(() => (0, u.BH)(t, f), [t, f]), y = (0, m.Iw)(t), {
       checkoutEligiblePrices: j,
       hasSufficientOrbs: k,
       shouldCheckoutWithOrbs: I
-    } = (0, m.Ip)({
+    } = (0, C.Ip)({
       product: t,
       isPremiumUser: f,
       prioritizedCurrency: n,

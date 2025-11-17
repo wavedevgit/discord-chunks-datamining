@@ -113,9 +113,9 @@ let k = Chunk473749.memo(function(e) {
                     skuId: t.skuId,
                     className: a()(W, j.productName)
                   }), !I && (0, r.jsx)("div", {
-                    className: j.priceContainer,
+                    className: j.footerInfoShrinkOnHover,
                     "aria-hidden": true,
-                    children: (0, r.jsx)(C.Z, {
+                    children: (0, r.jsx)(m.Z, {
                       skuId: t.skuId,
                       prioritizedCurrency: z
                     })
@@ -132,7 +132,7 @@ let k = Chunk473749.memo(function(e) {
                   wrap: false,
                   className: j.footerButtonGroup,
                   fullWidth: true,
-                  children: [!T && (0, r.jsx)(m.Z, {
+                  children: [!T && (0, r.jsx)(C.Z, {
                     skuId: t.skuId,
                     cardRef: $,
                     onClick: A,

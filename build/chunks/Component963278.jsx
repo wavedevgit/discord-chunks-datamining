@@ -65,8 +65,8 @@ let v = e => {
             },
             children: E ? (0, r.jsx)(h.Z, {
               skuId: a,
-              prioritizedCurrency: i === m.AW.ORBS ? C.tA.ORBS : true,
-              onClickAnalytics: (0, C.wO)(e, i, O)
+              prioritizedCurrency: i === C.AW.ORBS ? m.tA.ORBS : true,
+              onClickAnalytics: (0, m.wO)(e, i, O)
             }, a) : (0, r.jsx)(f.Z, {
               product: e,
               category: l,

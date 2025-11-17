@@ -60,19 +60,19 @@ function R(e) {
   }, [Z, G]), J = (0, h.a)(), Q = l.useMemo(() => J(W.filter(e => {
     var t;
     return e.type === q || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
-  })), [W, q, J]), X = (0, C.l)(Q);
+  })), [W, q, J]), X = (0, m.l)(Q);
   l.useEffect(() => {
-    (0, m.n)({
+    (0, C.n)({
       sessionId: H,
-      checkpoint: m.a.SHOP_MOUNTED,
+      checkpoint: C.a.SHOP_MOUNTED,
       tab: Z,
       unpublishedCategoriesShown: M,
       cacheDisabled: D
     })
   }, []), l.useEffect(() => {
-    n || (0, m.n)({
+    n || (0, C.n)({
       sessionId: H,
-      checkpoint: m.a.SHOP_RENDERED,
+      checkpoint: C.a.SHOP_RENDERED,
       tab: Z,
       unpublishedCategoriesShown: M,
       cacheDisabled: D

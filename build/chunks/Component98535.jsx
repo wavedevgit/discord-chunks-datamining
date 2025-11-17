@@ -52,11 +52,11 @@ function v(e) {
     {
       searchError: T
     } = (0, p.a)();
-  return I && null != T ? (0, r.jsx)(m.Z, {}) : null != h ? (0, r.jsx)(f.Z, {
+  return I && null != T ? (0, r.jsx)(C.Z, {}) : null != h ? (0, r.jsx)(f.Z, {
     onRetry: u,
     errorMessage: h,
     errorOrigin: f.i.SHOP_PAGE
-  }) : b.includes(t) ? (0, r.jsx)(C.Z, {
+  }) : b.includes(t) ? (0, r.jsx)(m.Z, {
     handleTransition: k,
     tab: t,
     transitionState: s

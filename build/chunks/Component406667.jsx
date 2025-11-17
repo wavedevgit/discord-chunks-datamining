@@ -77,11 +77,11 @@ let S = e => {
       onVariantEnter: c,
       onVariantExit: u,
       isCollapsed: d
-    } = e, p = (0, h.o)(i), f = null != (n = null == (t = i.variants) ? true : t.length) ? n : 0, C = l.useCallback((e, t) => {
+    } = e, p = (0, h.o)(i), f = null != (n = null == (t = i.variants) ? true : t.length) ? n : 0, m = l.useCallback((e, t) => {
       e.stopPropagation(), (0, h.$)(i, t)
-    }, [i]), m = (0, g.Z)("shop-variants-group-".concat(i.storeListingId), s.hy.HORIZONTAL);
+    }, [i]), C = (0, g.Z)("shop-variants-group-".concat(i.storeListingId), s.hy.HORIZONTAL);
     return 0 === f ? null : (0, r.jsx)(o.bG, {
-      navigator: m,
+      navigator: C,
       children: (0, r.jsx)(o.SJ, {
         children: e => {
           var t, {
@@ -101,7 +101,7 @@ let S = e => {
               onVariantEnter: () => c(t),
               onVariantExit: u,
               zIndex: f - Math.abs(p - t),
-              onClick: e => C(e, t)
+              onClick: e => m(e, t)
             }, e.variantValue))
           }))
         }
@@ -120,7 +120,7 @@ let S = e => {
       onFocus: g
     } = u, f = O(u, ["onFocus"]), {
       isPurchased: h
-    } = (0, C.L)(t);
+    } = (0, m.L)(t);
     return (0, r.jsx)(p.u, {
       text: b.intl.string(b.t["6cfuDj"]),
       shouldShow: h,
@@ -167,7 +167,7 @@ let S = e => {
       onVariantEnter: i,
       onVariantExit: o,
       className: s
-    } = e, u = (0, m.LJ)(t), p = (0, h.o)(u);
+    } = e, u = (0, C.LJ)(t), p = (0, h.o)(u);
     return null == u || u.type !== c.Z.VARIANTS_GROUP || null == u.variants || 0 === u.variants.length ? null : (0, r.jsxs)("div", {
       className: a()(v.productVariantsOuterContainer, s),
       children: [(0, r.jsx)(S, {

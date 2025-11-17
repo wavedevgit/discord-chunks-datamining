@@ -2,7 +2,7 @@
 /** chunk id: 384067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,13 +18,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let m = e => {
+let C = e => {
   var t, n, i;
   let {
-    wideBannerBlock: m,
+    wideBannerBlock: C,
     handleTransition: _,
     tab: b
-  } = e, v = u.Z.getCategoryByStoreListingId(m.categoryStoreListingId), x = l.useRef(null), E = l.useRef(null), [O, S] = l.useState();
+  } = e, v = u.Z.getCategoryByStoreListingId(C.categoryStoreListingId), x = l.useRef(null), E = l.useRef(null), [O, S] = l.useState();
   l.useEffect(() => {
     let e = E.current;
     if (null == e) return;
@@ -41,7 +41,7 @@ let m = e => {
     } = (0, d.E)(y, "home", "marketing wide banner"),
     {
       bannerURL: k
-    } = (0, p.UI)(m);
+    } = (0, p.UI)(C);
   if (null == k) return null;
   let I = b === g.AW.ORBS;
   return (0, r.jsx)(o.$, {
@@ -50,51 +50,51 @@ let m = e => {
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: x,
-      className: a()(C.row, C.between, C.bannerBlockContainer, C.centeredSection, {
-        [C.extraRounded]: I
+      className: a()(m.row, m.between, m.bannerBlockContainer, m.centeredSection, {
+        [m.extraRounded]: I
       }),
       children: [(0, r.jsx)("div", {
-        className: a()(C.wideBannerBackgroundImg, {
-          [C.extraRounded]: I
+        className: a()(m.wideBannerBackgroundImg, {
+          [m.extraRounded]: I
         }),
         children: (0, r.jsx)("img", {
           ref: E,
           src: k,
-          alt: m.title,
-          className: a()(C.wideBannerArt, {
-            [C.wideBannerArtOrbs]: I
+          alt: C.title,
+          className: a()(m.wideBannerArt, {
+            [m.wideBannerArtOrbs]: I
           }),
           style: {
             height: null != O ? "".concat(O, "px") : "auto"
           }
         })
       }), (0, r.jsx)("div", {
-        className: C.wideBannerContentContainer,
+        className: m.wideBannerContentContainer,
         style: {
           maxHeight: null != O ? "".concat(O, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
-          className: C.wideBannerTextContainer,
+          className: m.wideBannerTextContainer,
           children: [(0, r.jsx)(s.Heading, {
             style: {
-              color: null != (n = m.bannerTextColor) ? n : "var(--header-primary)"
+              color: null != (n = C.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: I ? C.wideBannerOrbsHeading : true,
+            className: I ? m.wideBannerOrbsHeading : true,
             variant: I ? "heading-xl/bold" : "heading-lg/semibold",
-            children: m.title
+            children: C.title
           }), (0, r.jsx)(s.Text, {
             style: {
-              color: null != (i = m.bannerTextColor) ? i : "var(--text-muted)"
+              color: null != (i = C.bannerTextColor) ? i : "var(--text-muted)"
             },
             lineClamp: 2,
             variant: I ? "text-md/medium" : "text-sm/medium",
             children: I ? h.intl.format(h.t.SFFP7K, {
               helpdeskArticle: c.Z.getArticleURL(f.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
-            }) : m.body
+            }) : C.body
           })]
         })
-      }), true !== m.disableCta && (0, r.jsx)("div", {
-        className: C.wideBannerBlockButton,
+      }), true !== C.disableCta && (0, r.jsx)("div", {
+        className: m.wideBannerBlockButton,
         children: (0, r.jsx)(s.Button, {
           variant: "overlay-primary",
           onClick: () => {

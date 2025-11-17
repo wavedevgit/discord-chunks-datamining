@@ -2,7 +2,7 @@
 /** chunk id: 311583, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -24,9 +24,9 @@ let h = e => {
       cardRef: s,
       onClick: d,
       icon: h,
-      prioritizedCurrency: C,
-      onClickAnalytics: m
-    } = e, _ = (0, o.Nd)(), b = null == _ ? true : _.tab, v = (0, a.sp)(), x = (0, p.J)(t, C), E = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, m);
+      prioritizedCurrency: m,
+      onClickAnalytics: C
+    } = e, _ = (0, o.Nd)(), b = null == _ ? true : _.tab, v = (0, a.sp)(), x = (0, p.J)(t, m), E = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, C);
     return null != d || null != h ? (0, r.jsx)(l.hU, {
       variant: "primary",
       "aria-label": f.intl.string(f.t.SKNnqq),
@@ -47,7 +47,7 @@ let h = e => {
       })
     }) : null
   },
-  C = e => {
+  m = e => {
     let {
       skuId: t,
       cardRef: n,

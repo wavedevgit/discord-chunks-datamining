@@ -61,7 +61,7 @@ let _ = Chunk473749.memo(function(e) {
         avatarSize: y,
         isPurchased: n,
         isHighlighted: l,
-        avatarPlaceholderSrc: O ? m : C,
+        avatarPlaceholderSrc: O ? C : m,
         className: h.avatar
       })
     })]

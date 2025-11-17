@@ -46,7 +46,7 @@ let y = {
       isLoading: n = false,
       handleTransition: l,
       heroBlock: s,
-      tab: C,
+      tab: m,
       onVisibilityChange: j
     } = e, k = (0, a.O)(e => {
       null == j || j(e)
@@ -56,7 +56,7 @@ let y = {
       heroLogo: P,
       heroBannerStatic: N,
       heroBannerAnimated: A
-    } = (0, _.hr)(s), R = null != (t = null == L ? true : L.responsive) && t, Z = null == L ? true : L.backgroundStyle, w = C === x.AW.ORBS ? O.intl.string(O.t["1CdL8d"]) : O.intl.string(O.t.xYKa1T), H = (0, m.FF)("CollectiblesContent");
+    } = (0, _.hr)(s), R = null != (t = null == L ? true : L.responsive) && t, Z = null == L ? true : L.backgroundStyle, w = m === x.AW.ORBS ? O.intl.string(O.t["1CdL8d"]) : O.intl.string(O.t.xYKa1T), H = (0, C.FF)("CollectiblesContent");
     return null != I && (n || s !== y) ? (0, r.jsxs)("div", {
       ref: k,
       className: S.heroBlock,
@@ -110,7 +110,7 @@ let y = {
             children: (0, r.jsx)(u.Button, {
               variant: "overlay-primary",
               onClick: () => {
-                C === x.AW.ORBS ? ((0, p.Y)({
+                m === x.AW.ORBS ? ((0, p.Y)({
                   pageType: E.ZY5.SHOP_ORBS_TAB,
                   sectionType: E.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: E.qAy.CTA_TO_QUEST_HOME
@@ -123,7 +123,7 @@ let y = {
                 }), f.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == T ? true : T.sessionId,
                   sku_id: s.categorySkuId,
-                  page_type: C,
+                  page_type: m,
                   page_section: null == T ? true : T.pageSection,
                   page_category: null == T ? true : T.pageCategory,
                   cta_name: "shop reward category hero button"
@@ -135,7 +135,7 @@ let y = {
         }), (0, r.jsx)(v.Z, {
           isBlockLoading: n,
           heroBlock: s,
-          tab: C
+          tab: m
         })]
       })]
     }) : null

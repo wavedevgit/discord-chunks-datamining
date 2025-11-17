@@ -18,18 +18,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk310582 = require("./310582.js");
 let h = e => {
   var t, n, h;
-  let C, {
-    category: m,
+  let m, {
+    category: C,
     subblock: _,
     badgeText: b,
     handleTransition: v
   } = e;
-  null != _ && (C = null == (t = c.Z.getCategoryByStoreListingId(null == _ ? true : _.categoryStoreListingId)) ? true : t.skuId);
-  let x = null != (n = null != C ? C : null == m ? true : m.skuId) ? n : "",
+  null != _ && (m = null == (t = c.Z.getCategoryByStoreListingId(null == _ ? true : _.categoryStoreListingId)) ? true : t.skuId);
+  let x = null != (n = null != m ? m : null == C ? true : C.skuId) ? n : "",
     {
       handleCardVisibilityChange: E
     } = (0, u.E)(x, "home", "marketing featured block"),
-    O = (0, d.YG)(m, _),
+    O = (0, d.YG)(C, _),
     S = l.useRef(null),
     y = null == _ ? true : _.bodyText,
     j = (0, s.sp)();
@@ -65,7 +65,7 @@ let h = e => {
           sourceButton: "shop marketing tile",
           categorySkuId: x,
           isInternalShopDeeplink: true,
-          isOrbsExclusive: null == m ? true : m.isOrbsExclusive
+          isOrbsExclusive: null == C ? true : C.isOrbsExclusive
         }), o.default.track(p.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == j ? true : j.sessionId,
           sku_id: x,
@@ -102,7 +102,7 @@ let h = e => {
               sourceButton: "shop marketing take me there button",
               categorySkuId: x,
               isInternalShopDeeplink: true,
-              isOrbsExclusive: null == m ? true : m.isOrbsExclusive
+              isOrbsExclusive: null == C ? true : C.isOrbsExclusive
             }), e.stopPropagation(), o.default.track(p.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == j ? true : j.sessionId,
               sku_id: x,

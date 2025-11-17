@@ -59,8 +59,8 @@ let H = e => {
     } = e;
     (0, h.z)(f.f), (0, S.f)();
     let n = (0, p.Z)((0, o.Z)()),
-      i = (0, s.e7)([m.default], () => m.default.getCurrentUser());
-    (0, C.p2)();
+      i = (0, s.e7)([C.default], () => C.default.getCurrentUser());
+    (0, m.p2)();
     let c = (0, P.B)("CollectiblesShop"),
       {
         onClose: R

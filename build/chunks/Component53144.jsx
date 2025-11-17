@@ -2,7 +2,7 @@
 /** chunk id: 53144, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => O
+  Y: () => b
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,13 +11,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk893776 = require("./893776.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk703656 = require("./703656.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk594174 = require("./594174.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,20 +24,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,42 +48,42 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e) {
+function g(e) {
   let {
     token: t,
     onClose: n
   } = e, [a, o] = i.useState("loading");
   i.useEffect(() => {
-    f.default.track(_.rMx.ONE_TIME_LOGIN_MODAL_OPENED, {
+    u.default.track(d.rMx.ONE_TIME_LOGIN_MODAL_OPENED, {
       has_token: null != t
     })
   }, [t]);
-  let h = i.useCallback(async () => {
+  let _ = i.useCallback(async () => {
     try {
       if (null == t) {
-        o("error"), f.default.track(_.rMx.ONE_TIME_LOGIN_ERROR, {
+        o("error"), u.default.track(d.rMx.ONE_TIME_LOGIN_ERROR, {
           source: "web_modal",
           error_reason: "missing_token",
           error_message: "No token provided"
         });
         return
       }
-      o("loading"), f.default.track(_.rMx.ONE_TIME_LOGIN_ATTEMPTED, {
+      o("loading"), u.default.track(d.rMx.ONE_TIME_LOGIN_ATTEMPTED, {
         source: "web_modal"
-      }), await s.Z.oneTimeLogin(t), o("success"), f.default.track(_.rMx.LOGIN_SUCCESSFUL, {
+      }), await s.Z.oneTimeLogin(t), o("success"), u.default.track(d.rMx.LOGIN_SUCCESSFUL, {
         source: "web_modal",
         login_method: "one_time_login"
       })
     } catch (t) {
       o("error");
       let e = t instanceof Error ? t.message : "Login failed";
-      f.default.track(_.rMx.ONE_TIME_LOGIN_ERROR, {
+      u.default.track(d.rMx.ONE_TIME_LOGIN_ERROR, {
         source: "web_modal",
         error_reason: "api_error",
         error_message: e
@@ -93,37 +91,26 @@ function b(e) {
     }
   }, [t]);
   i.useEffect(() => {
-    if (u.default.isAuthenticated()) return void o("already_logged_in");
-    h()
-  }, [h]);
-  let m = i.useCallback(() => {
-    f.default.track(_.rMx.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, {
+    _()
+  }, [_]);
+  let p = i.useCallback(() => {
+    u.default.track(d.rMx.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, {
       current_state: a
     }), null == n || n()
   }, [n, a]);
   switch (i.useEffect(() => {
-      "success" === a && (null == n || n(), (0, c.uL)(_.Z5c.ME))
+      "success" === a && (null == n || n(), (0, c.uL)(d.Z5c.ME))
     }, [a, n]), a) {
-    case "already_logged_in":
-      var g, E;
-      return {
-        title: p.intl.string(p.t.MKW8z2), subtitle: p.intl.formatToPlainString(p.t.YOeM7B, {
-          username: null != (E = null == (g = d.default.getCurrentUser()) ? true : g.username) ? E : "current user"
-        }), actions: [{
-          onClick: m,
-          text: p.intl.string(p.t["3PatSz"])
-        }]
-      };
     case "loading":
     case "success":
       return {
-        title: p.intl.string(p.t.W9uNdG), body: (0, r.jsx)(l.Hh, {})
+        title: f.intl.string(f.t.W9uNdG), body: (0, r.jsx)(l.Hh, {})
       };
     case "error":
       return {
-        title: p.intl.string(p.t.RtCSr1), subtitle: p.intl.string(p.t["S+YjYJ"]), actions: [{
-          onClick: m,
-          text: p.intl.string(p.t["ETE/oC"])
+        title: f.intl.string(f.t.RtCSr1), subtitle: f.intl.string(f.t["S+YjYJ"]), actions: [{
+          onClick: p,
+          text: f.intl.string(f.t["ETE/oC"])
         }]
       };
     default:
@@ -131,14 +118,14 @@ function b(e) {
   }
 }
 
-function y(e) {
+function E(e) {
   let {
     title: t,
     subtitle: n,
     body: i,
     actions: o
-  } = b(e);
-  return (0, r.jsxs)(a.IX, E(m({}, e), {
+  } = g(e);
+  return (0, r.jsxs)(a.IX, m(p({}, e), {
     onClose: () => {
       var t;
       return Promise.resolve(null == (t = e.onClose) ? true : t.call(e))
@@ -156,6 +143,6 @@ function y(e) {
   }))
 }
 
-function O(e) {
-  (0, o.ZDy)(() => Promise.resolve(t => (0, r.jsx)(y, m({}, t, e))))
+function b(e) {
+  (0, o.ZDy)(() => Promise.resolve(t => (0, r.jsx)(E, p({}, t, e))))
 }

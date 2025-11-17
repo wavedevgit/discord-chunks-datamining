@@ -46,7 +46,7 @@ let A = e => {
     tab: w,
     buttonContainerClassName: H,
     orbsSupportedOnly: D
-  } = e, M = (0, o.e7)([p.default], () => p.default.getCurrentUser()), F = C.ZP.canUseCollectibles(M), W = (0, I.B)("FeedBlock"), {
+  } = e, M = (0, o.e7)([p.default], () => p.default.getCurrentUser()), F = m.ZP.canUseCollectibles(M), W = (0, I.B)("FeedBlock"), {
     sortType: V,
     setSortType: U,
     sortedItems: z,
@@ -61,7 +61,7 @@ let A = e => {
   }), q = (0, k.St)(z), J = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, o.e7)([g.Z], () => g.Z.isFocused()), X = !J && Q, {
     animationPhase: $,
     startAnimation: ee
-  } = (0, y.y)(), et = (0, m.sp)(), en = null != (t = null == et ? true : et.sessionId) ? t : "", er = l.useRef(null), el = l.useCallback(e => {
+  } = (0, y.y)(), et = (0, C.sp)(), en = null != (t = null == et ? true : et.sessionId) ? t : "", er = l.useRef(null), el = l.useCallback(e => {
     ee({
       isShuffling: false,
       onOutroComplete: () => U(e)
@@ -151,7 +151,7 @@ let A = e => {
             })
           }, "".concat(e.skuId, "-").concat(t));
           else $ === y.g.SORT_OUT ? n = N.sortChangedOutro : $ === y.g.SHUFFLE_IN ? n = N.shuffleIntro : $ === y.g.SORT_IN && (n = N.sortChangedIntro);
-        return (0, r.jsx)(m.k0, {
+        return (0, r.jsx)(C.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",

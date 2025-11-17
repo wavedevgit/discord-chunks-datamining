@@ -56,7 +56,7 @@ let y = e => {
       a = (0, o.e7)([p.Z], () => p.Z.products),
       s = l.useMemo(() => e ? [] : a.size > 0 ? i(t.rankedSkuIds).filter(e => e.skuId !== t.rewardSkuId || null != r) : [], [e, i, t.rankedSkuIds, a, r, t.rewardSkuId]),
       c = (0, h.a)()(s),
-      u = (0, C.l)(c).slice(0, n);
+      u = (0, m.l)(c).slice(0, n);
     return {
       products: (0, E.St)(u)
     }
@@ -91,7 +91,7 @@ let y = e => {
             pageSection: "top 4",
             categoryPosition: 0
           },
-          children: (0, r.jsx)(m.Z, {
+          children: (0, r.jsx)(C.Z, {
             skuId: null == e ? true : e.skuId,
             prioritizedCurrency: i === O.AW.ORBS ? _.tA.ORBS : true,
             onClickAnalytics: (0, _.wO)(e, i, f)

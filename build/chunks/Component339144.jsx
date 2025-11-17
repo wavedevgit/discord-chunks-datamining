@@ -165,8 +165,9 @@ let L = Chunk473749.memo(function(e) {
     }, []), i.useEffect(() => {
       eo && (ep(false), null != eu.current && (clearTimeout(eu.current), eu.current = null))
     }, [eo]);
-    let ef = null == Q ? null : (0, r.jsx)(k, {
-        guildId: Q
+    let ef = null == Q || null == z ? null : (0, r.jsx)(k, {
+        guildId: Q,
+        applicationId: z.id
       }),
       eh = (null != B || null == F || (0, p.R)()) && (L || E) ? (L ? (a = false, s = () => {
         en(), (0, b.v)(X, b.d.STREAM, false)
@@ -252,24 +253,35 @@ let L = Chunk473749.memo(function(e) {
 
 function k(e) {
   let {
-    guildId: t
-  } = e, n = i.useRef(null), [l, o] = (0, y.US)([s.z.GAME_SHOP_RTC_POPOVER], T.R.ACCOUNT_NAME_ZONE, true), a = i.useCallback(() => {
+    applicationId: t,
+    guildId: n
+  } = e, l = i.useRef(null);
+  i.useEffect(() => {
+    P.default.track(w.rMx.RTC_GAME_SHOP_BUTTON_VIEWED, {
+      application_id: t
+    })
+  }, [t]);
+  let [o, a] = (0, y.US)([s.z.GAME_SHOP_RTC_POPOVER], T.R.ACCOUNT_NAME_ZONE, true), c = i.useCallback(() => {
     (0, C.Z)({
-      guildId: t
-    }), o(T.L.USER_DISMISS)
-  }, [t, o]), c = i.useCallback(() => {
-    o(T.L.USER_DISMISS)
-  }, [o]);
+      guildId: n
+    }), a(T.L.USER_DISMISS)
+  }, [n, a]), d = i.useCallback(() => {
+    P.default.track(w.rMx.RTC_GAME_SHOP_BUTTON_CLICKED, {
+      application_id: t
+    }), c()
+  }, [t, c]), p = i.useCallback(() => {
+    a(T.L.USER_DISMISS)
+  }, [a]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(Z.Z, {
       tooltipText: A.intl.string(A.t.vyaWs7),
-      onClick: a,
+      onClick: d,
       icon: u.EOn,
-      ref: n
-    }), l === s.z.GAME_SHOP_RTC_POPOVER ? (0, r.jsx)(E.Z, {
-      onActionClick: a,
-      onRequestClose: c,
-      targetElementRef: n,
+      ref: l
+    }), o === s.z.GAME_SHOP_RTC_POPOVER ? (0, r.jsx)(E.Z, {
+      onActionClick: c,
+      onRequestClose: p,
+      targetElementRef: l,
       position: "top",
       align: "center",
       caretConfig: {

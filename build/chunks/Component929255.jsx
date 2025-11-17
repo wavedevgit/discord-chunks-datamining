@@ -39,7 +39,7 @@ function y(e) {
   let g = (0, d.FF)("CollectiblesBrowse"),
     f = l.useRef(null),
     {
-      handleScroll: C
+      handleScroll: m
     } = (0, s.z)(f, t),
     {
       setCategoryRef: _,
@@ -69,7 +69,7 @@ function y(e) {
       children: [(0, r.jsx)(o.yWw, {
         className: S.shopScroll,
         ref: f,
-        onScroll: C,
+        onScroll: m,
         children: (0, r.jsx)(j, {
           isSmallScreen: E,
           filterBarOpen: v,
@@ -83,7 +83,7 @@ function y(e) {
         className: S.divider
       }), v && !E && (0, r.jsx)(o.Ttm, {
         className: S.filterBar,
-        children: (0, r.jsx)(m.Z, {})
+        children: (0, r.jsx)(C.Z, {})
       })]
     })
   })
@@ -146,7 +146,7 @@ let j = e => {
             children: [(0, r.jsx)(o.Text, {
               variant: "text-md/semibold",
               children: O.intl.string(O.t.uaX705)
-            }), (0, r.jsx)(C.Z, {})]
+            }), (0, r.jsx)(m.Z, {})]
           }), (0, r.jsx)("div", {
             ref: A,
             children: (0, r.jsx)(o.Button, {
@@ -173,7 +173,7 @@ let j = e => {
           ref: I,
           children: (0, r.jsx)(o.Den, {
             className: S.filterOverlayContent,
-            children: (0, r.jsx)(m.Z, {})
+            children: (0, r.jsx)(C.Z, {})
           })
         })]
       }), k && !T ? (0, r.jsx)(b.Z, {
