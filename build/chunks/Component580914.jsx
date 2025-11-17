@@ -94,9 +94,9 @@ let M = (0, Chunk884697.IC)(90),
     } = (0, L.hr)(X), ei = null != (t = null == $ ? true : $.responsive) && t, ea = null == $ ? true : $.backgroundStyle, eo = null != el, es = (0, u.e7)([b.Z], () => b.Z.products), ec = l.useMemo(() => n ? [] : es.size > 0 ? J(X.rankedSkuIds) : [], [n, J, X.rankedSkuIds, es]), eu = l.useMemo(() => !n && 0 !== X.rankedSkuIds.length && !(ec.length > 0) && X.rankedSkuIds.every(e => {
       var t;
       return (null == (t = b.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-    }), [n, X.rankedSkuIds, ec.length]), {
-      cardContainerRef: ed,
-      totalCards: ep
+    }), [n, X.rankedSkuIds, ec.length]), ed = U === Z.AW.ORBS, ep = null != W && W.isOrbsExclusive, {
+      cardContainerRef: eg,
+      totalCards: ef
     } = (e => {
       let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, g.Z)(() => {
         (null == a ? true : a.current) != null && n(Math.max(1, Math.floor((a.current.offsetWidth + r) / (246 + r))))
@@ -111,10 +111,10 @@ let M = (0, Chunk884697.IC)(90),
         }, [i, a, e]),
         totalCards: e ? t : true
       }
-    })(U !== Z.AW.ORBS), eg = (0, O.a)()(ec), ef = (0, S.l)(eg).slice(0, ep), eh = (0, P.St)(ef), eC = U === Z.AW.ORBS ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), em = (0, E.FF)("CollectiblesContent"), e_ = null != W && W.isOrbsExclusive, eb = x.Z.useConfig({
+    })(U !== Z.AW.ORBS), eh = (0, O.a)()(ec), eC = (0, S.l)(eh).slice(0, ef), em = (0, P.St)(eC), e_ = ed ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), eb = (0, E.FF)("CollectiblesContent"), ev = x.Z.useConfig({
       location: "HeroBlock"
-    }).showCardsV2, ev = () => {
-      U === Z.AW.ORBS ? ((0, h.Y)({
+    }).showCardsV2, ex = () => {
+      ed ? ((0, h.Y)({
         pageType: w.ZY5.SHOP_ORBS_TAB,
         sectionType: w.jXE.ORBS_SHOP_HERO_BLOCK,
         ctaObject: w.qAy.CTA_TO_QUEST_HOME
@@ -122,9 +122,9 @@ let M = (0, Chunk884697.IC)(90),
         fromContent: s.j.ORBS_SHOP_HERO_CTA
       })) : (i({
         sourceButton: "shop latest category hero",
-        categorySkuId: !em || e_ ? X.categorySkuId : true,
+        categorySkuId: !eb || ep ? X.categorySkuId : true,
         isInternalShopDeeplink: true,
-        isOrbsExclusive: e_
+        isOrbsExclusive: ep
       }), m.default.track(w.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == Q ? true : Q.sessionId,
         sku_id: X.categorySkuId,
@@ -162,8 +162,8 @@ let M = (0, Chunk884697.IC)(90),
           className: D.rivBannerButtonContainer,
           children: !n && (0, r.jsx)(d.Button, {
             variant: "overlay-primary",
-            onClick: ev,
-            text: eC
+            onClick: ex,
+            text: e_
           })
         }) : (0, r.jsxs)("div", {
           className: a()(D.heroHeaderContainer, {
@@ -190,8 +190,8 @@ let M = (0, Chunk884697.IC)(90),
                 color: "header-primary",
                 children: X.title
               }), "" !== X.summary && (0, r.jsx)(d.Text, {
-                variant: e_ ? "text-lg/medium" : "text-md/normal",
-                className: e_ ? D.orbsSubHeaderText : D.subHeaderText,
+                variant: "text-md/normal",
+                className: ed ? D.orbsSubHeaderText : D.subHeaderText,
                 style: null != X.bannerTextColor ? {
                   color: X.bannerTextColor
                 } : true,
@@ -202,8 +202,8 @@ let M = (0, Chunk884697.IC)(90),
             className: D.heroHeaderButtonContainer,
             children: (0, r.jsx)(d.Button, {
               variant: "overlay-primary",
-              onClick: ev,
-              text: eC
+              onClick: ex,
+              text: e_
             })
           })]
         }), (0, r.jsx)("div", {
@@ -211,11 +211,11 @@ let M = (0, Chunk884697.IC)(90),
             [D.row]: U === Z.AW.HOME,
             [D.feed]: U === Z.AW.ORBS
           }),
-          ref: ed,
+          ref: eg,
           children: n || eu ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(null != ep ? ep : 4)].map((e, t) => eb ? (0, r.jsx)(T.Z, {}, t) : (0, r.jsx)(y.K, {}, t))
+            children: [...Array(null != ef ? ef : 4)].map((e, t) => ev ? (0, r.jsx)(T.Z, {}, t) : (0, r.jsx)(y.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
-            children: eh.map((e, t) => {
+            children: em.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);
               return null == e || null == n ? null : (0, r.jsx)(_.k0, {
                 newValue: {
@@ -223,7 +223,7 @@ let M = (0, Chunk884697.IC)(90),
                   pageSection: "top 4",
                   categoryPosition: 0
                 },
-                children: eb && (null == e ? true : e.skuId) != null ? (0, r.jsx)(k.Z, {
+                children: ev && (null == e ? true : e.skuId) != null ? (0, r.jsx)(k.Z, {
                   skuId: null == e ? true : e.skuId,
                   prioritizedCurrency: U === Z.AW.ORBS ? I.tA.ORBS : true,
                   onClickAnalytics: (0, I.wO)(e, U, Q)
