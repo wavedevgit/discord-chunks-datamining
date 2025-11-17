@@ -1,7 +1,7 @@
 /** Chunk was on 65354 **/
 /** chunk id: 520116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => I
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,11 +25,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk557047 = require("./557047.js");
 let C = {
-  left: 4,
-  right: false
-};
+    left: 4,
+    right: false
+  },
+  E = [Chunk981631.uaV.THREAD_CREATED];
 
-function E(e) {
+function S(e) {
   var t, n, l;
   let {
     channel: o,
@@ -43,7 +44,7 @@ function E(e) {
       var t;
       null == (t = document.querySelector('[data-recents-channel="'.concat(o.id, '"]'))) || t.focus()
     }
-  }, [o.id]);
+  }, [o.id]), b = E.includes(s.type);
   return (0, r.jsx)(c.tEY, {
     offset: C,
     children: (0, r.jsxs)("div", (n = function(e) {
@@ -67,7 +68,7 @@ function E(e) {
       className: x.messageContainer,
       onKeyDown: m
     }, g), l = l = {
-      children: [(0, r.jsx)(y.Z, {
+      children: [!b && (0, r.jsx)(y.Z, {
         className: x.jumpButton,
         onJump: e => f(e, s.id)
       }), (0, r.jsx)(h.Z, {
@@ -94,7 +95,7 @@ function E(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   var t, n;
   let {
     channel: i,
@@ -106,7 +107,7 @@ function S(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: false
-  }), y = g.jU.useSetting(), C = (0, p.P1)(l), S = false, I = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), P = null != (n = null == (t = b.default.getUser(m.default.getId())) ? true : t.hasFlag(v.xW$.SPAMMER)) && n, N = [];
+  }), y = g.jU.useSetting(), C = (0, p.P1)(l), E = false, I = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), P = null != (n = null == (t = b.default.getUser(m.default.getId())) ? true : t.hasFlag(v.xW$.SPAMMER)) && n, N = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
@@ -120,7 +121,7 @@ function S(e) {
         }, t)), e = o()(n.timestamp)
       }
       let i = null == t || (0, d.Z)(l, t, n);
-      t = n, S = S || (0, p.DQ)(n), N.push((0, r.jsx)(E, {
+      t = n, E = E || (0, p.DQ)(n), N.push((0, r.jsx)(S, {
         channel: l,
         message: n,
         compact: y,
@@ -135,7 +136,7 @@ function S(e) {
       children: [j.intl.string(j.t["9OB9hq"]), " ›"]
     }, "view-all")), 0 === N.length && (N = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
-  return S && C && u.Z.trackExposure({
+  return E && C && u.Z.trackExposure({
     location: "20e3b0_2"
   }), (0, r.jsx)("div", {
     className: x.messages,
