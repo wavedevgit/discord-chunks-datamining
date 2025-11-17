@@ -60,7 +60,7 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = e => {
+let P = Chunk473749.memo(function(e) {
   let {
     onClick: t
   } = e;
@@ -77,7 +77,7 @@ let P = e => {
       children: C.intl.string(C.t.H9jxS1)
     })]
   })
-};
+});
 
 function T(e) {
   let {
@@ -154,7 +154,7 @@ function T(e) {
     })
   })
 }
-let N = e => {
+let N = Chunk473749.memo(function(e) {
   var t;
   let {
     entry: l
@@ -272,4 +272,4 @@ let N = e => {
       entry: l
     })]
   })
-}
+})

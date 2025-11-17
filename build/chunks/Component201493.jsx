@@ -90,7 +90,8 @@ let v = e => {
       primary_category_id: C
     })
   }, [t.id, v.id, C]);
-  let k = (0, f.G)(t) ? () => {
+  let k = (0, f.G)(t),
+    U = i.useMemo(() => k ? () => {
       (0, a.ZDy)(async () => {
         let {
           default: e
@@ -131,23 +132,23 @@ let v = e => {
           }), i))
         }
       })
-    } : true,
-    U = e => {
+    } : true, [k, v.name, v.id, t.id, C]),
+    G = e => {
       0 !== w.trim().length && e.key === j.vn.ENTER && (u.Rq(t.id, w), d.default.track(O.rMx.GUILD_DIRECTORY_SEARCH, {
         directory_channel_id: t.id,
         directory_guild_id: v.id
       }))
     },
-    G = () => {
+    H = () => {
       A(""), u.So(t.id)
     };
   return D ? (0, r.jsx)(_.Z, {
     searchQuery: w,
     setSearchQuery: A,
     mostRecentQuery: T,
-    handleSearchKeyPress: U,
-    handleClearSearch: G,
-    handleCreateOrAddGuild: k,
+    handleSearchKeyPress: G,
+    handleClearSearch: H,
+    handleCreateOrAddGuild: U,
     searchResults: R,
     searchFetching: N
   }) : null == P && null == C ? (0, r.jsx)("div", {
@@ -159,15 +160,15 @@ let v = e => {
     className: x.pageContainer,
     children: (0, r.jsx)(g.Z, {
       guild: v,
-      onAddGuild: k
+      onAddGuild: U
     })
   }) : (0, r.jsx)(m.Z, {
     channel: t,
     searchQuery: w,
     setSearchQuery: A,
-    handleSearchKeyPress: U,
-    handleClearSearch: G,
-    handleCreateOrAddGuild: k,
+    handleSearchKeyPress: G,
+    handleClearSearch: H,
+    handleCreateOrAddGuild: U,
     currentCategoryId: C,
     handleSelectCategory: e => {
       u.Su(t.id, e)
