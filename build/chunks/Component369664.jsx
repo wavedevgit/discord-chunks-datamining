@@ -467,8 +467,8 @@ let eW = Chunk473749.memo(function() {
               body: Chunk388032.intl.format(Chunk388032.t.azKEPy, {
                 email: null == Chunk913527 ? true : Chunk913527.email
               }),
-              secondaryConfirmText: Chunk388032.intl.string(Chunk388032.t.oP5zGA),
-              onConfirmSecondary: Chunk391650.j
+              cancelText: Chunk388032.intl.string(Chunk388032.t.Vm8akB),
+              onCancel: Chunk391650.j
             })
           },
           children: Chunk388032.intl.string(Chunk388032.t.WnX4J2)
