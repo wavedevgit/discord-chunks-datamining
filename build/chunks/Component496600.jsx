@@ -109,63 +109,64 @@ function M(e) {
     formatOption: h,
     onSelectionChange: m,
     value: g,
-    matchSorterOptions: E,
-    required: b
-  } = u, O = i.useId(), I = i.useRef(null), [T, S] = i.useState(null), [A, C] = i.useState(false), [N, P] = i.useState(""), [D, x] = i.useState(""), {
-    options: M,
-    loading: k,
-    onQueryChange: j
+    customMatchSorter: E,
+    matchSorterOptions: b,
+    required: O
+  } = u, I = i.useId(), T = i.useRef(null), [S, A] = i.useState(null), [C, N] = i.useState(false), [P, D] = i.useState(""), [x, M] = i.useState(""), {
+    options: k,
+    loading: j,
+    onQueryChange: U
   } = (0, v.U)({
     active: null == o || o,
     options: c,
     renderOption: h
-  }), U = i.useCallback((e, t) => {
-    x(e), P(null != t ? t : e)
+  }), G = i.useCallback((e, t) => {
+    M(e), D(null != t ? t : e)
   }, []);
   i.useEffect(() => {
-    j(N)
-  }, [j, N]), i.useEffect(() => {
-    o || S(null)
-  }, [o, S]);
-  let G = i.useMemo(() => "" === N ? M : (0, s.Lu)(M, N, null != E ? E : L), [M, N, E]),
-    B = i.useRef(true),
-    Z = i.useMemo(() => ("single" === d && (B.current = M.find(e => e.value === g)), null == g || Array.isArray(g) && 0 === g.length) ? [] : (Array.isArray(g) ? g : [g]).map(e => M.find(t => t.value === e)).filter(e => null != e), [g, M, d]);
+    U(P)
+  }, [U, P]), i.useEffect(() => {
+    o || A(null)
+  }, [o, A]);
+  let B = i.useMemo(() => "" === P ? k : null != E ? E(k, P) : (0, s.Lu)(k, P, null != b ? b : L), [k, P, E, b]),
+    Z = i.useRef(true),
+    F = i.useMemo(() => ("single" === d && (Z.current = k.find(e => e.value === g)), null == g || Array.isArray(g) && 0 === g.length) ? [] : (Array.isArray(g) ? g : [g]).map(e => k.find(t => t.value === e)).filter(e => null != e), [g, k, d]);
   i.useEffect(() => {
     if (o) {
       var e, t;
-      U(null != (t = null == (e = B.current) ? true : e.label) ? t : "", "")
+      G(null != (t = null == (e = Z.current) ? true : e.label) ? t : "", "")
     }
-  }, [o, U]);
-  let F = f || _,
-    V = i.useCallback(e => {
+  }, [o, G]);
+  let V = f || _,
+    H = i.useCallback(e => {
       var t, n, r, i;
-      if (F || b && 0 === e.length) return;
+      if (V || O && 0 === e.length) return;
       let a = Array.from(e);
-      "multiple" === d && a.length < 1 ? m([]) : "multiple" === d ? m(a.map(e => e.value)) : m(null != (n = null == (t = a[0]) ? true : t.value) ? n : null), p && o && (null == l || l(false)), "single" === d && U(null != (i = null == (r = a[0]) ? true : r.label) ? i : "", ""), C(false)
-    }, [F, d, m, p, o, l, b, U]),
-    H = Z.length > 0;
+      "multiple" === d && a.length < 1 ? m([]) : "multiple" === d ? m(a.map(e => e.value)) : m(null != (n = null == (t = a[0]) ? true : t.value) ? n : null), p && o && (null == l || l(false)), "single" === d && G(null != (i = null == (r = a[0]) ? true : r.label) ? i : "", ""), N(false)
+    }, [V, d, m, p, o, l, O, G]),
+    Y = F.length > 0;
   return (0, r.jsx)(y.Z.Provider, {
     value: R({
-      activeDescendantIndex: T,
-      setActiveDescendantIndex: S,
-      listBoxId: O,
-      inputFieldRef: I,
-      isInert: F,
+      activeDescendantIndex: S,
+      setActiveDescendantIndex: A,
+      listBoxId: I,
+      inputFieldRef: T,
+      isInert: V,
       isCollapsible: n,
-      hasValue: H,
+      hasValue: Y,
       value: g,
-      options: M,
-      filteredOptions: G,
-      selectedOptions: Z,
+      options: k,
+      filteredOptions: B,
+      selectedOptions: F,
       maxOptionsVisible: a,
-      query: D,
-      setQuery: U,
-      loading: k,
-      handleSelectionChange: V,
+      query: x,
+      setQuery: G,
+      loading: j,
+      handleSelectionChange: H,
       isOpen: o,
       setIsOpen: l,
-      isEditing: A,
-      setIsEditing: C
+      isEditing: C,
+      setIsEditing: N
     }, u),
     children: t
   })

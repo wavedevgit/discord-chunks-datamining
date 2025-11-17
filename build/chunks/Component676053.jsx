@@ -2,10 +2,11 @@
 /** chunk id: 676053, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => I
+  M: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk150677 = require("./150677.js"),
   Chunk793030 = require("./793030.js"),
   Chunk159691 = require("./159691.js"),
   Chunk70097 = require("./70097.jsx"),
@@ -15,11 +16,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk966902 = require("./966902.jsx"),
   Chunk562618 = require("./562618.jsx"),
   Chunk803866 = require("./803866.jsx"),
+  Chunk231338 = require("./231338.js"),
   Chunk681287 = require("./681287.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk37751 = require("./37751.js");
 
-function g(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,20 +30,20 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,15 +54,15 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function O(e, t) {
+function I(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -68,7 +70,7 @@ function O(e, t) {
   return i
 }
 
-function v(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -76,95 +78,100 @@ function v(e, t) {
   return i
 }
 
-function I(e) {
-  var {
-    title: t,
-    body: n,
-    assetUrl: g,
-    previewUrl: b = g,
-    disableMediaViewer: v = false,
-    action: I,
-    caretConfig: T = {
-      position: "bottom",
-      align: "center"
-    },
-    badge: S,
-    textLink: A,
-    onWatchVideo: C,
-    onRequestClose: N,
-    popoverRef: R
-  } = e, P = O(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
-  let D = i.useRef(null),
-    w = (0, a.j1L)(b),
-    x = i.useCallback(() => ({
-      type: "VIDEO",
-      url: g,
-      proxyUrl: g,
-      alt: t,
-      width: 1280,
-      height: 720,
-      className: m.media
-    }), [g, t]),
-    L = i.useCallback(() => {
-      null !== D.current && D.current.pause(), null == N || N()
-    }, [N]),
-    M = i.useCallback(() => {
-      null !== D.current && D.current.pause(), null == N || N()
-    }, [N]),
-    k = i.useCallback(() => {
-      null !== D.current && D.current.pause();
-      let e = x();
-      (0, l.K)({
+function S(e) {
+  var t, n, b, {
+      title: O,
+      body: T,
+      assetUrl: S,
+      previewUrl: A = S,
+      disableMediaViewer: C = false,
+      action: N,
+      caretConfig: R = {
+        position: "bottom",
+        align: "center"
+      },
+      badge: P,
+      textLink: D,
+      onWatchVideo: w,
+      onRequestClose: x,
+      popoverRef: L
+    } = e,
+    M = I(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
+  let {
+    reducedMotion: k
+  } = i.useContext(o.Sfi), j = (0, a.C)(), U = null != (b = null == (t = (n = (0, o.ZFG)()).isWindowFocused) ? true : t.call(n)) ? b : j, G = i.useRef(null), B = (0, o.j1L)(A), Z = i.useCallback(() => ({
+    type: "VIDEO",
+    url: S,
+    proxyUrl: S,
+    alt: O,
+    width: 1280,
+    height: 720,
+    className: E.media
+  }), [S, O]);
+  i.useEffect(() => {
+    var e, t;
+    null != G.current && (!k.enabled && U ? null == (e = G.current) || e.play().catch(h.dG) : null == (t = G.current) || t.pause())
+  }, [U, k.enabled]);
+  let F = i.useCallback(() => {
+      null !== G.current && G.current.pause(), null == x || x()
+    }, [x]),
+    V = i.useCallback(() => {
+      null !== G.current && G.current.pause(), null == x || x()
+    }, [x]),
+    H = i.useCallback(() => {
+      null !== G.current && G.current.pause();
+      let e = Z();
+      (0, c.K)({
         items: [e],
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: true
-      }), null == N || N(), null == C || C()
-    }, [x, C, N]),
-    j = w ? (0, r.jsx)(a.zsu, {
+      }), null == x || x(), null == w || w()
+    }, [Z, w, x]),
+    Y = B ? (0, r.jsx)(o.zsu, {
       type: "image",
-      src: b
+      src: A
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(s.Z, {
-        ref: D,
-        src: b,
+      children: [(0, r.jsx)(l.Z, {
+        ref: G,
+        src: A,
         width: 232,
         height: 131,
-        autoPlay: true,
+        autoPlay: !k.enabled && U,
         muted: true,
         loop: true,
         playsInline: true,
         controls: false,
         preload: "metadata"
-      }), !v && (0, r.jsx)("div", {
-        className: m.playButton,
-        children: (0, r.jsx)(o.JM1, {
+      }), !C && (0, r.jsx)("div", {
+        className: E.playButton,
+        children: (0, r.jsx)(s.JM1, {
           playing: false,
           size: "sm",
-          "aria-label": h.intl.string(p.default.YpT3kk),
-          onClick: k
+          "aria-label": g.intl.string(m.default.YpT3kk),
+          onClick: H
         })
       })]
     });
-  return (0, r.jsx)(c.m, y(E({}, P), {
-    onRequestClose: L,
+  return (0, r.jsx)(u.m, v(y({}, M), {
+    onRequestClose: F,
     hasVideo: true,
     children: (0, r.jsxs)("div", {
-      ref: R,
-      children: [(0, r.jsx)(_.N, {
-        onClick: M
-      }), (0, r.jsx)(d.$, {
-        caretConfig: T
+      ref: L,
+      children: [(0, r.jsx)(p.N, {
+        onClick: V
+      }), (0, r.jsx)(f.$, {
+        caretConfig: R
       }), (0, r.jsx)("div", {
-        className: m.assetContainer,
-        children: j
-      }), (0, r.jsx)(f.Y, {
-        title: t,
-        body: n,
-        badge: S,
-        textLink: A
-      }), null != I ? (0, r.jsx)(u.k, {
-        actions: [I]
+        className: E.assetContainer,
+        children: Y
+      }), (0, r.jsx)(_.Y, {
+        title: O,
+        body: T,
+        badge: P,
+        textLink: D
+      }), null != N ? (0, r.jsx)(d.k, {
+        actions: [N]
       }) : null]
     })
   }))

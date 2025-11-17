@@ -333,19 +333,26 @@ let D = {
     l.Z.dispatch({
       type: "LOGIN"
     });
-    let t = (await g.Z.post({
-      url: b.ANM.ONE_TIME_LOGIN,
-      body: {
-        ticket: e
-      },
-      oldFormErrors: true,
-      trackedActionData: {
-        event: i.NetworkActionNames.USER_ONE_TIME_LOGIN
-      },
-      rejectWithError: true
-    })).body.token;
-    if (!t) throw Error("No token in response");
-    return await this.loginToken(t, false), t
+    try {
+      let t = (await g.Z.post({
+        url: b.ANM.ONE_TIME_LOGIN,
+        body: {
+          ticket: e
+        },
+        oldFormErrors: true,
+        trackedActionData: {
+          event: i.NetworkActionNames.USER_ONE_TIME_LOGIN
+        },
+        rejectWithError: true
+      })).body.token;
+      if (!t) throw Error("No token in response");
+      return await this.loginToken(t, false), t
+    } catch (e) {
+      throw l.Z.dispatch({
+        type: "LOGIN_FAILURE",
+        error: new c.yZ(e)
+      }), e
+    }
   },
   loginReset(e) {
     l.Z.dispatch({
