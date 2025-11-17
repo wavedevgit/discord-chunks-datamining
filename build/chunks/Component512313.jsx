@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => x
 }), require("./642613.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk131051 = require("./131051.js"),
   Chunk28682 = require("./28682.js"),
@@ -56,31 +56,31 @@ function p(e) {
     children: r
   })
 }
-let h = Chunk647438.createContext(null);
+let h = Chunk473749.createContext(null);
 
 function x() {
-  let [e, t] = Chunk647438.useState(false), {
+  let [e, t] = Chunk473749.useState(false), {
     legacySettingDirectory: n
   } = (0, Chunk546697.q)(), {
     node: s
   } = (0, Chunk131051.Z)(Chunk920952.Z, "");
-  return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
+  return (0, Chunk54381.jsxs)(Chunk481060.zJl, {
     className: Chunk547481.root,
-    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/bold",
       children: "Settings Tree"
-    }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
       checked: module,
       onChange: e => t(e),
       label: "Show Legacy Settings Tree"
-    }), (0, Chunk951288.jsx)(h.Provider, {
+    }), (0, Chunk54381.jsx)(h.Provider, {
       value: require,
-      children: (0, Chunk951288.jsxs)("div", {
+      children: (0, Chunk54381.jsxs)("div", {
         className: Chunk547481.tree,
-        children: [module && (0, Chunk951288.jsx)(m, {
+        children: [module && (0, Chunk54381.jsx)(m, {
           setting: "root",
           depth: 1
-        }, "root"), !module && (0, Chunk951288.jsx)(p, {
+        }, "root"), !module && (0, Chunk54381.jsx)(p, {
           setting: Chunk28682,
           depth: 1
         }, Chunk28682.key)]

@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => o
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk5888 = require("./5888.js"),
@@ -18,14 +18,14 @@ function o() {
       numMessagesSentPercentile: e
     }
   } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData());
-  return (0, Chunk951288.jsxs)(Chunk198358.Z, {
-    children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
+  return (0, Chunk54381.jsxs)(Chunk198358.Z, {
+    children: [(0, Chunk54381.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
       children: Chunk388032.intl.format(Chunk892694.default.nPTMHj, {
         numMessages: module
       })
-    }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
+    }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
       children: Chunk388032.intl.format(Chunk892694.default.ixvOza, {

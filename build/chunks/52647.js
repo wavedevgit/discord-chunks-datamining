@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => c
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk704215 = require("./704215.js"),
   Chunk570140 = require("./570140.js"),
   Chunk972118 = require("./972118.js"),
@@ -14,7 +14,7 @@ let c = () => {
   let e = (0, Chunk972118.Z)(Chunk704215.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL),
     t = (0, Chunk972118.Z)(Chunk704215.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK),
     n = (0, Chunk972118.Z)(Chunk704215.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK),
-    c = Chunk647438.useCallback(() => {
+    c = Chunk473749.useCallback(() => {
       module.isDismissed && module.handleToggleDismissState(), exports.isDismissed && exports.handleToggleDismissState(), require.isDismissed && require.handleToggleDismissState(), Chunk570140.Z.dispatch({
         type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_RESET"
       })

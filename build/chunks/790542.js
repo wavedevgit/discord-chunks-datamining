@@ -4,7 +4,7 @@
 require.d(exports, {
   A: () => s
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk751648 = require("./751648.js"),
   Chunk479766 = require("./479766.js");
@@ -19,7 +19,7 @@ function s() {
     isFetching: Chunk479766.Z.isFetchingBalance,
     error: Chunk479766.Z.fetchBalanceError
   }));
-  return (0, Chunk647438.useEffect)(() => {
+  return (0, Chunk473749.useEffect)(() => {
     null !== module || null !== require || exports || (0, Chunk751648.ZO)()
   }, [module, require, exports]), {
     balance: module,

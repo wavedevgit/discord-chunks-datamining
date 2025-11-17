@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => L
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk831209 = require("./831209.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -41,11 +41,11 @@ function R() {
     t = [];
   module && exports.push(Chunk704215.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
   let [n] = (0, Chunk706140.cv)(exports);
-  return Chunk647438.useEffect(() => () => {
+  return Chunk473749.useEffect(() => () => {
     require === Chunk704215.z.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, Chunk266454.Q3)(Chunk704215.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
       dismissAction: Chunk921944.L.TAKE_ACTION
     })
-  }, [require]), (0, Chunk951288.jsx)(Chunk243778.ZP, {
+  }, [require]), (0, Chunk54381.jsx)(Chunk243778.ZP, {
     contentTypes: exports,
     children: e => {
       let {

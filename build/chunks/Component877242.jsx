@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => b
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk681715 = require("./681715.js"),
@@ -27,7 +27,7 @@ function b() {
     sourceQuestContent: n,
     isPortrait: l,
     onClose: b
-  } = Chunk647438.useContext(Chunk215113.VideoQuestModalContext), h = (0, Chunk915750.aM)(), S = (0, Chunk113434.tP)(exports), C = Chunk647438.useRef(null), {
+  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), h = (0, Chunk915750.aM)(), S = (0, Chunk113434.tP)(exports), C = Chunk473749.useRef(null), {
     isHoveringOrFocusing: y
   } = (0, Chunk104505.Z)(C), _ = (0, Chunk684245.e)({
     quest: exports,
@@ -35,19 +35,19 @@ function b() {
     sourceQuestContent: require,
     impressionId: h
   }), x = null == (e = exports.config.videoMetadata) ? true : module.messages.videoEndCtaSubtitle, j = true !== x && !(0, Chunk624138.Ew)(x);
-  return (0, Chunk951288.jsx)(Chunk681715.u, {
+  return (0, Chunk54381.jsx)(Chunk681715.u, {
     text: Chunk388032.intl.string(Chunk388032.t.EuHF34),
-    children: (0, Chunk951288.jsx)(Chunk481060.P3F, {
+    children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
       onClick: () => _(Chunk497505.jn.VIDEO_MODAL, Chunk617136.jZ.OPEN_GAME_LINK),
       className: Chunk273339.adInfoClickable,
-      children: (0, Chunk951288.jsxs)("div", {
+      children: (0, Chunk54381.jsxs)("div", {
         className: i()(Chunk273339.contentHeaderGameInfo, Chunk273339.contentHeaderGameInfoHoverable, {
           [Chunk273339.contentHeaderGameInfoHoverableExpired]: S
         }),
         ref: C,
-        children: [(0, Chunk951288.jsx)("div", {
+        children: [(0, Chunk54381.jsx)("div", {
           className: Chunk273339.contentFooterAdDetailedInfo,
-          children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
+          children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-md/medium",
             color: "header-primary",
             className: i()(Chunk273339.adDetailsTextSecondary, {
@@ -58,20 +58,20 @@ function b() {
               questName: exports.config.messages.questName
             })
           })
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           className: i()(Chunk273339.contentFooterAdDetailedInfo, {
             [Chunk273339.contentFooterAdDetailedInfoPortrait]: Chunk120356
           }),
-          children: [(0, Chunk951288.jsx)("div", {
+          children: [(0, Chunk54381.jsx)("div", {
             className: i()(Chunk273339.adDetailsTextPrimary, {
               [Chunk273339.adDetailsTextPrimaryPortrait]: Chunk120356,
               [Chunk273339.addFourPxMarginRight]: Chunk120356
             }),
-            children: (0, Chunk951288.jsx)(Chunk481060.owK, {
+            children: (0, Chunk54381.jsx)(Chunk481060.owK, {
               size: "xs",
               color: y ? Chunk481060.TVs.colors.ICON_PRIMARY.css : Chunk481060.TVs.colors.ICON_TERTIARY.css
             })
-          }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
+          }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-sm/medium",
             className: i()(Chunk273339.adDetailsTextPrimary, {
               [Chunk273339.adDetailsTextPrimaryPortrait]: Chunk120356,
@@ -80,13 +80,13 @@ function b() {
             color: y ? "text-primary" : "text-secondary",
             lineClamp: 1,
             children: exports.config.messages.gamePublisher
-          }), j ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-            children: [(0, Chunk951288.jsx)("div", {
+          }), j ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+            children: [(0, Chunk54381.jsx)("div", {
               "aria-hidden": "true",
               className: i()(Chunk273339.dotSpacer, {
                 [Chunk273339.dotSpacerPortrait]: Chunk120356
               })
-            }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
+            }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
               className: i()(Chunk273339.adDetailsTextSecondary, {
                 [Chunk273339.adDetailsTextSecondaryPortrait]: Chunk120356
               }),

@@ -15,7 +15,7 @@ require.d(exports, {
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk327432 = require("./327432.js"),
-  Chunk755712 = require("./755712.js"),
+  Chunk685578 = require("./685578.js"),
   Chunk339227 = require("./339227.js"),
   Chunk42530 = require("./42530.js");
 
@@ -60,13 +60,13 @@ function f(e, t) {
 require("./789952.js");
 let _ = false;
 {
-  let e = Chunk755712.F3.findDocumentOrShadowRoot;
-  Chunk755712.F3.findDocumentOrShadowRoot = t => {
+  let e = Chunk685578.F3.findDocumentOrShadowRoot;
+  Chunk685578.F3.findDocumentOrShadowRoot = t => {
     var n, r;
     return null != (r = null == (n = t.windowContext) ? true : n.renderWindow.document) ? r : e(t)
   }, _ = true
 }
-let p = f(u({}, Chunk327432.ML, Chunk755712.F3), {
+let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
     richValue: e => e.children,
     blocks: e => p.richValue(e).map((e, t) => [e, [t]]),
     isBlock: (e, t) => m.isElement(t) && a.ML.isBlock(e, t),

@@ -4,7 +4,7 @@
 require.d(exports, {
   a: () => o
 });
-var Chunk191336 = require("./191336.js");
+var Chunk663042 = require("./663042.js");
 
 function l(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -45,7 +45,7 @@ let a = {
     searchError: null,
     isFetchingResults: false
   },
-  o = (0, Chunk191336.U)(e => i(l({}, a), {
+  o = (0, Chunk663042.U)(e => i(l({}, a), {
     onSetResponse: t => {
       let n = Math.floor(t.pageOffset / t.pageLimit) + 1;
       e(i(l({}, t), {

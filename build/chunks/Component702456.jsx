@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => x
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -132,21 +132,21 @@ function x() {
           } else break;
         return require
       }, [module]),
-      n = Chunk647438.useMemo(() => {
+      n = Chunk473749.useMemo(() => {
         var n, r;
         if (exports.length < 5) returnfalse;
         let i = module.findIndex(e => e.otherUserId === t[4].id);
-        return !!(Chunk647438 < module.length - 1) && !!((null == (n = module[Chunk647438]) ? true : require.communicationProbability) - .25 <= (null == (r = module[Chunk647438 + 1]) ? true : Chunk951288.communicationProbability))
+        return !!(Chunk473749 < module.length - 1) && !!((null == (n = module[Chunk473749]) ? true : require.communicationProbability) - .25 <= (null == (r = module[Chunk473749 + 1]) ? true : Chunk54381.communicationProbability))
       }, [module, exports]);
     return exports.length < 3 ? null : {
       frequentFriends: exports,
       showCompetitiveSpot: require
     }
-  }(), n = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)), [l, c] = Chunk647438.useState({
+  }(), n = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)), [l, c] = Chunk473749.useState({
     scrollLeft: 0,
     scrollWidth: 0,
     clientWidth: 0
-  }), d = Chunk647438.useRef(null), p = Chunk647438.useCallback(() => {
+  }), d = Chunk473749.useRef(null), p = Chunk473749.useCallback(() => {
     var e;
     let t = null == (e = Chunk100527.current) ? true : module.getScrollerNode();
     null != exports && Chunk493683({
@@ -155,11 +155,11 @@ function x() {
       clientWidth: exports.clientWidth
     })
   }, []);
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     (null == exports ? true : exports.frequentFriends.length) != null && Chunk367907()
   }, [null == exports ? true : exports.frequentFriends.length, null == exports ? true : exports.showCompetitiveSpot, Chunk367907]);
   let g = (0, Chunk393903.y)(Chunk367907, []),
-    m = Chunk647438.useCallback(e => {
+    m = Chunk473749.useCallback(e => {
       let t = e.currentTarget;
       c({
         scrollLeft: t.scrollLeft,
@@ -172,23 +172,23 @@ function x() {
     frequentFriends: b,
     showCompetitiveSpot: O
   } = exports, x = Chunk120356.scrollWidth > Chunk120356.clientWidth, A = Chunk120356.scrollLeft > 0, Z = Chunk120356.scrollLeft < Chunk120356.scrollWidth - Chunk120356.clientWidth - 2;
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk944658.frequentFriendsRow,
-      children: [(0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk944658.frequentFriendsHeader,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
           className: Chunk944658.frequentFriendsTitle,
           children: Chunk388032.intl.string(Chunk388032.t.QEh90H)
-        }), (0, Chunk951288.jsx)(Chunk481060.aML, {
+        }), (0, Chunk54381.jsx)(Chunk481060.aML, {
           "data-migration-pending": true,
           text: Chunk388032.intl.string(Chunk388032.t.tqCMcU),
           children: e => (0, r.jsx)(o.d3s, j(N({}, e), {
             className: T.frequentFriendsInfoIcon
           }))
         })]
-      }), (0, Chunk951288.jsx)(Chunk481060.xVE, {
+      }), (0, Chunk54381.jsx)(Chunk481060.xVE, {
         ref: e => {
           d.current = e, g.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
@@ -204,6 +204,6 @@ function x() {
           isCompetitive: t === b.length - 1 && O
         }, e.id))
       })]
-    }), (0, Chunk951288.jsx)(Chunk791250.d, {})]
+    }), (0, Chunk54381.jsx)(Chunk791250.d, {})]
   })
 }

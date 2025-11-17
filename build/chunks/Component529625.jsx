@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => h
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk881052 = require("./881052.js"),
   Chunk972959 = require("./972959.js"),
@@ -25,19 +25,19 @@ function h() {
     t = p.useField("isUploading"),
     n = p.useField("isSuccess"),
     s = p.useField("errorMessage"),
-    h = Chunk647438.useRef([]),
-    x = Chunk647438.useRef(""),
-    g = Chunk647438.useCallback(() => {
+    h = Chunk473749.useRef([]),
+    x = Chunk473749.useRef(""),
+    g = Chunk473749.useCallback(() => {
       let {
         results: e,
         query: t
       } = Chunk823385.Z.getProps();
       (h.current !== module || x.current !== exports) && (h.current = module, x.current = exports, (0, Chunk620481.OC)())
     }, []);
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     if (module) return Chunk823385.Z.addChangeListener(g), () => Chunk823385.Z.removeChangeListener(g)
   }, [g, module]);
-  let f = Chunk647438.useCallback(async () => {
+  let f = Chunk473749.useCallback(async () => {
     let {
       isUploading: e
     } = p.getState();
@@ -62,20 +62,20 @@ function h() {
       })
     }
   }, []);
-  return (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+  return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
     label: "Debug Logs Session",
     description: "Click to emit debug logs as you search in the Quick Switcher. Includes your search term and all results. For each result, includes the record id, associated names, and frecency scores.",
-    children: [(0, Chunk951288.jsx)(Chunk481060.Wn, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Wn, {
       messageType: Chunk481060.QYI.INFO,
       children: "When you are done, please remember to upload the logs."
-    }), (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
+    }), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: module ? "critical-primary" : "primary",
         onClick: () => p.setState({
           isRecording: !module
         }),
         text: module ? "Stop Recording" : "Start Recording"
-      }), (0, Chunk951288.jsx)(Chunk608934.a, {
+      }), (0, Chunk54381.jsx)(Chunk608934.a, {
         isUploading: exports,
         isSuccess: require,
         errorMessage: Chunk972959,

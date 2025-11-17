@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => s
 }), require("./388685.js"), require("./539854.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk768943 = require("./768943.js"),
   Chunk429828 = require("./429828.js");
 
@@ -13,14 +13,14 @@ function o() {
 }
 
 function s() {
-  let [e, t] = Chunk647438.useState(o), n = Chunk647438.useRef(Chunk768943.Z.getIsStale());
-  return Chunk647438.useEffect(() => {
+  let [e, t] = Chunk473749.useState(o), n = Chunk473749.useRef(Chunk768943.Z.getIsStale());
+  return Chunk473749.useEffect(() => {
     let e = Chunk768943.Z.getLastChanged();
 
     function r() {
       let r = Chunk768943.Z.getLastChanged();
-      if (module !== Chunk647438) {
-        if (e = Chunk647438, require.current && !Chunk768943.Z.getIsStale()) {
+      if (module !== Chunk473749) {
+        if (e = Chunk473749, require.current && !Chunk768943.Z.getIsStale()) {
           require.current = false, exports(o());
           return
         }
@@ -33,8 +33,8 @@ function s() {
         })
       }
     }
-    return Chunk768943.Z.addChangeListener(Chunk647438), () => {
-      Chunk768943.Z.removeChangeListener(Chunk647438)
+    return Chunk768943.Z.addChangeListener(Chunk473749), () => {
+      Chunk768943.Z.removeChangeListener(Chunk473749)
     }
   }, []), (0, Chunk429828.Z)(), module
 }

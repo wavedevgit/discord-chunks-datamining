@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => U
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk683860 = require("./683860.js"),
@@ -74,7 +74,7 @@ function B(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let U = Chunk647438.memo(function(e) {
+let U = Chunk473749.memo(function(e) {
   let {
     id: t,
     threadId: n,
@@ -355,14 +355,14 @@ function q(e) {
   })
 }
 let K = e => e.preventDefault(),
-  X = Chunk647438.memo(function(e) {
+  X = Chunk473749.memo(function(e) {
     return (0, r.jsx)(r.Fragment, {
       children: (0, v.Yi)(B(z({}, e), {
         analyticsSource: "ForumPostMediaPreviewImage"
       }))
     })
   }),
-  Y = Chunk647438.memo(function(e) {
+  Y = Chunk473749.memo(function(e) {
     let {
       mediaAttachments: t,
       globalSpoilerRenderSetting: n,

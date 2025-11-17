@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => I
 }), require("./388685.js"), require("./457542.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -165,12 +165,12 @@ function v(e) {
 
 function I() {
   let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
-    t = Chunk647438.useMemo(() => module.filter(e => u.Z.isSupported(e.type)), [module]),
-    [n, o] = Chunk647438.useState([]),
-    c = Chunk647438.useCallback(e => l.Z.refresh(e.type, e.id).finally(() => {
+    t = Chunk473749.useMemo(() => module.filter(e => u.Z.isSupported(e.type)), [module]),
+    [n, o] = Chunk473749.useState([]),
+    c = Chunk473749.useCallback(e => l.Z.refresh(e.type, e.id).finally(() => {
       o(t => [...t, e.id])
     }), []);
-  return 0 === exports.length ? null : (0, Chunk951288.jsx)(Chunk481060.C3N, {
+  return 0 === exports.length ? null : (0, Chunk54381.jsx)(Chunk481060.C3N, {
     className: Chunk673449.container,
     label: Chunk388032.intl.string(Chunk388032.t.aw0GVS),
     children: exports.map(e => (0, r.jsx)(v, {

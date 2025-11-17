@@ -5,9 +5,9 @@ require.d(exports, {
   A: () => x,
   S: () => b
 }), require("./388685.js"), require("./781311.js"), require("./642613.js"), require("./49124.js");
-var Chunk647438 = require("./647438.js"),
-  Chunk191336 = require("./191336.js"),
-  Chunk180059 = require("./180059.js"),
+var Chunk473749 = require("./473749.js"),
+  Chunk663042 = require("./663042.js"),
+  Chunk690775 = require("./690775.js"),
   Chunk497598 = require("./497598.js"),
   Chunk792091 = require("./792091.js"),
   Chunk653654 = require("./653654.js"),
@@ -84,7 +84,7 @@ let f = {
     } = e;
     return t.size > 0 || n.size > 0 || "" !== r.trim() ? C : l.size > 0 ? h : f
   },
-  b = (0, Chunk191336.U)((0, Chunk180059.XR)((e, t) => p(d({}, m), {
+  b = (0, Chunk663042.U)((0, Chunk690775.XR)((e, t) => p(d({}, m), {
     hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === f.sortType && t().sort.sortDirection === f.sortDirection,
     hasFilters: () => {
       let {
@@ -238,7 +238,7 @@ let f = {
       setSearchError: t,
       setIsFetchingResults: n
     } = (0, Chunk149705.a)(), l = (0, Chunk870289.FF)("collectibles_shop_header_bar");
-    Chunk647438.useEffect(() => {
+    Chunk473749.useEffect(() => {
       let r = r => {
         let i = async () => {
           n(true);
@@ -266,8 +266,8 @@ let f = {
         };
         l && 0 !== r.limit && i()
       };
-      Chunk647438(v(b.getState()));
-      let i = b.subscribe(v, Chunk647438, {
+      Chunk473749(v(b.getState()));
+      let i = b.subscribe(v, Chunk473749, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
         a = b.subscribe(e => e.hasFilters(), (e, t) => {
@@ -279,7 +279,7 @@ let f = {
           }
         });
       return () => {
-        Chunk180059(), Chunk497598()
+        Chunk690775(), Chunk497598()
       }
-    }, [module, exports, require, Chunk191336])
+    }, [module, exports, require, Chunk663042])
   }

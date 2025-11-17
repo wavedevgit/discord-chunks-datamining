@@ -4,8 +4,8 @@ let n;
 require.d(exports, {
   $: () => f
 });
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
@@ -51,7 +51,7 @@ let g = "Footer Navigation",
       })
     })
   };
-class f extends(r = Chunk647438.PureComponent) {
+class f extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.setState({
       token: (0, Chunk213919.getToken)(),
@@ -270,45 +270,45 @@ class f extends(r = Chunk647438.PureComponent) {
         }), t]
       }, e.title)
     });
-    return (0, Chunk951288.jsx)(Chunk622535.$, {
+    return (0, Chunk54381.jsx)(Chunk622535.$, {
       innerRef: this.ref,
       onChange: this.handleVisibility,
-      children: (0, Chunk951288.jsxs)("footer", {
+      children: (0, Chunk54381.jsxs)("footer", {
         ref: this.ref,
         className: o()((0, Chunk982905.l)(Chunk10416, "footer", module), r),
         style: exports,
-        children: [Chunk120356 ? (0, Chunk951288.jsx)(O, {
+        children: [Chunk120356 ? (0, Chunk54381.jsx)(O, {
           colorVariant: module,
           animate: Chunk213919
-        }) : null, (0, Chunk951288.jsxs)("div", {
+        }) : null, (0, Chunk54381.jsxs)("div", {
           className: Chunk10416.footerContent,
-          children: [(0, Chunk951288.jsxs)("div", {
+          children: [(0, Chunk54381.jsxs)("div", {
             className: Chunk10416.navigation,
-            children: [(0, Chunk951288.jsx)("div", {
+            children: [(0, Chunk54381.jsx)("div", {
               className: Chunk10416.logoWrap,
-              children: (0, Chunk951288.jsx)(n, {
+              children: (0, Chunk54381.jsx)(n, {
                 className: Chunk10416.logo,
                 href: Chunk231338.am.INDEX,
                 eventName: g,
                 data: {
                   linkClicked: "logo"
                 },
-                children: (0, Chunk951288.jsx)("img", {
+                children: (0, Chunk54381.jsx)("img", {
                   alt: Chunk330711.Z.Messages.NAVIGATION_HOME,
                   src: require("./131529.js")
                 })
               })
             }), Chunk436620]
-          }), (0, Chunk951288.jsx)("div", {
+          }), (0, Chunk54381.jsx)("div", {
             className: Chunk10416.separator
-          }), (0, Chunk951288.jsxs)("div", {
+          }), (0, Chunk54381.jsxs)("div", {
             className: Chunk10416.joinDiscord,
-            children: [(0, Chunk951288.jsxs)("div", {
+            children: [(0, Chunk54381.jsxs)("div", {
               className: Chunk10416.stats,
-              children: [(0, Chunk951288.jsx)("h2", {
+              children: [(0, Chunk54381.jsx)("h2", {
                 className: Chunk10416.readyToJoin,
                 children: Chunk330711.Z.Messages.FOOTER_READY_TO_TRY_DISCORD
-              }), (0, Chunk951288.jsx)("h3", {
+              }), (0, Chunk54381.jsx)("h3", {
                 className: Chunk10416.joinOtherPlayers,
                 children: Chunk330711.Z.Messages.FOOTER_JOIN_OVER_PLAYERS_TODAY.format({
                   num: Chunk231338.vS

@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => E
 }), require("./388685.js"), require("./415506.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -34,7 +34,7 @@ function S(t, e, s) {
     writable: true
   }) : t[e] = s, t
 }
-class N extends Chunk647438.Component {
+class N extends Chunk473749.Component {
   fetchInstallSize() {
     let {
       applicationId: t,
@@ -43,8 +43,8 @@ class N extends Chunk647438.Component {
       manifestIds: l,
       buildSizeKB: n
     } = this.props;
-    null != require && null != Chunk951288 && null == Chunk647438 && Chunk570140.Z.wait(() => {
-      (0, Chunk689241.q)(module, exports, require, Chunk951288)
+    null != require && null != Chunk54381 && null == Chunk473749 && Chunk570140.Z.wait(() => {
+      (0, Chunk689241.q)(module, exports, require, Chunk54381)
     })
   }
   componentDidMount() {
@@ -54,7 +54,7 @@ class N extends Chunk647438.Component {
       buildId: s,
       manifestIds: l
     } = this.props;
-    null == require || null == Chunk951288 ? (0, Chunk57513.l)(module, exports) : this.fetchInstallSize()
+    null == require || null == Chunk54381 ? (0, Chunk57513.l)(module, exports) : this.fetchInstallSize()
   }
   componentDidUpdate(t) {
     (this.props.buildId !== t.buildId || this.props.manifestIds !== t.manifestIds) && this.fetchInstallSize()
@@ -69,7 +69,7 @@ class N extends Chunk647438.Component {
       hasError: e,
       hasAcceptedNeccessaryTerms: s
     } = this.state;
-    return (0, Chunk951288.jsx)(Chunk481060.Button, {
+    return (0, Chunk54381.jsx)(Chunk481060.Button, {
       variant: "active",
       text: Chunk388032.intl.string(Chunk388032.t.nL0WvC),
       disabled: exports || null == module || !require,
@@ -85,62 +85,62 @@ class N extends Chunk647438.Component {
       selectedInstallationPath: n,
       isInstalling: a
     } = this.state, r = null != module && module.getSplashURL(440);
-    return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
+    return (0, Chunk54381.jsxs)(Chunk481060.Y0X, {
       transitionState: require,
       size: Chunk481060.CgR.SMALL,
       "aria-label": Chunk388032.intl.string(Chunk388032.t.PphjtJ),
       parentComponent: "ApplicationInstallationModal",
-      children: [null != Chunk570140 ? (0, Chunk951288.jsx)("div", {
+      children: [null != Chunk570140 ? (0, Chunk54381.jsx)("div", {
         className: Chunk912278.splash,
         style: {
           backgroundImage: "url(".concat(Chunk570140, ")")
         }
-      }) : null, (0, Chunk951288.jsxs)(Chunk481060.xBx, {
+      }) : null, (0, Chunk54381.jsxs)(Chunk481060.xBx, {
         justify: Chunk600164.Z.Justify.BETWEEN,
-        children: [(0, Chunk951288.jsx)(Chunk600164.Z.Child, {
+        children: [(0, Chunk54381.jsx)(Chunk600164.Z.Child, {
           grow: 1,
-          children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
+          children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
             children: Chunk388032.intl.string(Chunk388032.t.PphjtJ)
           })
-        }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
+        }), (0, Chunk54381.jsx)(Chunk600164.Z.Child, {
           grow: 0,
-          children: (0, Chunk951288.jsx)(Chunk481060.olH, {
+          children: (0, Chunk54381.jsx)(Chunk481060.olH, {
             onClick: this.close
           })
         })]
-      }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
-        children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.hzk, {
+        children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
           align: Chunk600164.Z.Align.CENTER,
-          children: [(0, Chunk951288.jsx)(Chunk925329.Z, {
+          children: [(0, Chunk54381.jsx)(Chunk925329.Z, {
             game: module,
             size: Chunk925329.A.MEDIUM,
             className: Chunk912278.gameIcon
-          }), (0, Chunk951288.jsx)("div", {
+          }), (0, Chunk54381.jsx)("div", {
             className: Chunk912278.gameName,
             children: null != module && module.name
-          }), null != exports ? (0, Chunk951288.jsx)("div", {
+          }), null != exports ? (0, Chunk54381.jsx)("div", {
             className: Chunk912278.installSize,
             children: (0, Chunk424218.BU)(exports, {
               useKibibytes: true
             })
           }) : null]
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: Chunk912278.divider
-        }), (0, Chunk951288.jsx)(Chunk94692.Z, {
+        }), (0, Chunk54381.jsx)(Chunk94692.Z, {
           autoFocus: true,
           className: Chunk912278.selector,
-          value: Chunk647438,
+          value: Chunk473749,
           requiredDiskKB: exports,
           onChange: this.handleChangePath
-        }), (0, Chunk951288.jsx)(Chunk672971.Z, {
+        }), (0, Chunk54381.jsx)(Chunk672971.Z, {
           eulaId: module.eulaId,
           applicationName: module.name,
           disabled: Chunk442837,
           onChange: this.handlePurchaseTermsChange,
           className: Chunk912278.terms
         })]
-      }), (0, Chunk951288.jsx)(Chunk481060.mzw, {
+      }), (0, Chunk54381.jsx)(Chunk481060.mzw, {
         children: this.renderButton()
       })]
     })

@@ -3,11 +3,11 @@
 require.d(exports, {
   Z: () => S
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk442748 = require("./442748.js"),
+  Chunk636606 = require("./636606.js"),
   Chunk893999 = require("./893999.js"),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -44,7 +44,7 @@ function E(e) {
   }
   return e
 }
-let S = Chunk647438.memo(function(e) {
+let S = Chunk473749.memo(function(e) {
     let {
       channel: t,
       deleteChannel: n
@@ -85,7 +85,7 @@ let S = Chunk647438.memo(function(e) {
       children: (0, r.jsx)(I, E({}, e))
     })
   }),
-  I = Chunk647438.memo(function(e) {
+  I = Chunk473749.memo(function(e) {
     let {
       channel: t,
       onJump: n,

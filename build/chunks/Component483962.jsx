@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => m
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk831218 = require("./831218.jsx"),
   Chunk840780 = require("./840780.jsx"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk537074 = require("./537074.js");
 let g = () => (0, Chunk51596.$Z)("DM_SEARCH"),
-  m = Chunk647438.memo(function() {
+  m = Chunk473749.memo(function() {
     let e = (0, Chunk442837.e7)([Chunk237997.default], () => Chunk237997.default.isLocked((0, Chunk145597.getPID)()) ? "true" : "false"),
       t = (0, Chunk905423.Z)(e => {
         let {
@@ -24,25 +24,25 @@ let g = () => (0, Chunk51596.$Z)("DM_SEARCH"),
         } = e;
         return t
       });
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk537074.privateChannels,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: Chunk537074.searchBar,
-        children: (0, Chunk951288.jsx)("button", {
+        children: (0, Chunk54381.jsx)("button", {
           type: "button",
           className: Chunk537074.searchBarComponent,
           onClick: g,
           children: Chunk388032.intl.string(Chunk388032.t.LzcpeZ)
         })
-      }), (0, Chunk951288.jsx)(Chunk831218.Z, {
+      }), (0, Chunk54381.jsx)(Chunk831218.Z, {
         padding: 8,
         theme: Chunk981631.BRd.DARK,
         version: module,
         selectedChannelId: exports
-      }), (0, Chunk951288.jsx)("section", {
+      }), (0, Chunk54381.jsx)("section", {
         className: Chunk537074.panels,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWK),
-        children: (0, Chunk951288.jsx)(Chunk840780.Z, {
+        children: (0, Chunk54381.jsx)(Chunk840780.Z, {
           guildId: null
         })
       })]

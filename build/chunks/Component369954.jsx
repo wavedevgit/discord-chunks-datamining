@@ -4,8 +4,8 @@
 require.d(exports, {
   J: () => S
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
@@ -59,18 +59,18 @@ let v = e => {
       n = () => {
         Chunk230711.Z.setSection(Chunk981631.oAB.CONTENT_AND_SOCIAL)
       };
-    return (0, Chunk951288.jsxs)(Chunk793030.Kqy, {
+    return (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
       justify: "space-between",
       direction: "horizontal",
       align: "center",
       gap: 32,
-      children: [(0, Chunk951288.jsxs)(Chunk793030.Kqy, {
+      children: [(0, Chunk54381.jsxs)(Chunk793030.Kqy, {
         direction: "vertical",
         gap: 4,
-        children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
+        children: [(0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-sm/semibold",
           children: Chunk388032.intl.string(Chunk597754.default.ahKIJO)
-        }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
+        }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-md/medium",
           color: "text-tertiary",
           children: Chunk388032.intl.format(Chunk597754.default.X9rW0j, {
@@ -80,7 +80,7 @@ let v = e => {
             }, t)
           })
         })]
-      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         text: Chunk388032.intl.formatToPlainString(Chunk597754.default.ggcjPR, {
           count: module.length
         }),
@@ -96,31 +96,31 @@ let v = e => {
       {
         handleTabChange: n
       } = (0, Chunk841409.Z)();
-    Chunk647438.useEffect(() => {
+    Chunk473749.useEffect(() => {
       (null == module ? true : module.id) != null && exports && Chunk260722.ZP.fetchTeenSettingsAndConsents(null == module ? true : module.id)
     }, [null == module ? true : module.id, exports]);
     let o = e => {
       n(e)
     };
-    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsxs)(Chunk793030.Kqy, {
+    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsxs)(Chunk793030.Kqy, {
         direction: "vertical",
         gap: 4,
-        children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
+        children: [(0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-sm/semibold",
           children: Chunk388032.intl.string(Chunk597754.default.ahKIJO)
-        }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
+        }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-md/medium",
           color: "text-tertiary",
           children: Chunk388032.intl.string(Chunk597754.default.Sv236e)
         })]
-      }), (0, Chunk951288.jsx)(v, {
+      }), (0, Chunk54381.jsx)(v, {
         title: Chunk388032.intl.string(Chunk388032.t["+o1pDZ"]),
         buttonText: Chunk388032.intl.string(Chunk388032.t.bt75uw),
         onButtonPress: () => Chunk481060(Chunk292352.dG.CONTENT_AND_SOCIAL)
-      }), (0, Chunk951288.jsx)(Chunk511010.Z, {
+      }), (0, Chunk54381.jsx)(Chunk511010.Z, {
         className: Chunk271650.divider
-      }), (0, Chunk951288.jsx)(v, {
+      }), (0, Chunk54381.jsx)(v, {
         title: Chunk388032.intl.string(Chunk388032.t.OAuOHD),
         buttonText: Chunk388032.intl.string(Chunk388032.t.bt75uw),
         onButtonPress: () => Chunk481060(Chunk292352.dG.DATA_AND_PRIVACY)
@@ -130,8 +130,8 @@ let v = e => {
   S = () => {
     let e = (0, Chunk981312.U)(),
       t = (0, Chunk631885.ZM)();
-    return (0, Chunk277537.PO)("settings-controls") && 0 !== exports.length ? (0, Chunk951288.jsx)("div", {
+    return (0, Chunk277537.PO)("settings-controls") && 0 !== exports.length ? (0, Chunk54381.jsx)("div", {
       className: Chunk271650.container,
-      children: module ? (0, Chunk951288.jsx)(I, {}) : (0, Chunk951288.jsx)(T, {})
+      children: module ? (0, Chunk54381.jsx)(I, {}) : (0, Chunk54381.jsx)(T, {})
     }) : null
   }

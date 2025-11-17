@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk346486 = require("./346486.jsx"),
@@ -26,18 +26,18 @@ function d() {
       }
     }),
     d = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getLastFeedFetchDate(Chunk206583.YN.GLOBAL_FEED));
-  return (0, Chunk951288.jsxs)("div", {
-    children: [exports ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+  return (0, Chunk54381.jsxs)("div", {
+    children: [exports ? (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "(fetching)"
-    }) : (0, Chunk951288.jsxs)(Chunk481060.Text, {
+    }) : (0, Chunk54381.jsxs)(Chunk481060.Text, {
       variant: "text-md/normal",
-      children: ["Next fetch: ", null != require ? (0, Chunk951288.jsx)(Chunk346486.Z, {
+      children: ["Next fetch: ", null != require ? (0, Chunk54381.jsx)(Chunk346486.Z, {
         deadline: require
       }) : module ? "(awaiting push)" : "(unscheduled)"]
-    }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
       variant: "text-md/normal",
-      children: ["Last fetch:", " ", null != d ? (0, Chunk951288.jsx)(Chunk371991.x3, {
+      children: ["Last fetch:", " ", null != d ? (0, Chunk54381.jsx)(Chunk371991.x3, {
         inline: true,
         entry: {
           start: d.getTime()

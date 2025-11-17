@@ -4,8 +4,8 @@ require.d(exports, {
   E: () => N,
   Z: () => Z
 }), require("./388685.js"), require("./539854.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
@@ -99,7 +99,7 @@ let S = {
     })
   }
 };
-class I extends Chunk647438.PureComponent {
+class I extends Chunk473749.PureComponent {
   renderText() {
     let {
       state: e,
@@ -107,7 +107,7 @@ class I extends Chunk647438.PureComponent {
     } = this.props;
     if (module.type === Chunk981631.vxO.UPDATING || module.type === Chunk981631.vxO.REPAIRING || module.type === Chunk981631.vxO.INSTALLING) {
       if (exports) return Chunk388032.intl.string(Chunk388032.t["5oxtFS"]);
-      else if (module.stage === Chunk981631.f07.PATCHING || module.stage === Chunk981631.f07.REPAIRING) return (0, Chunk951288.jsx)(Chunk353042.Z, {
+      else if (module.stage === Chunk981631.f07.PATCHING || module.stage === Chunk981631.f07.REPAIRING) return (0, Chunk54381.jsx)(Chunk353042.Z, {
         getHistoricalTotalBytes: Chunk417363.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
         children: this.renderProgressBody
@@ -147,7 +147,7 @@ class I extends Chunk647438.PureComponent {
     })
   }
 }
-class P extends(r = Chunk647438.PureComponent) {
+class P extends(r = Chunk473749.PureComponent) {
   componentWillAppear(e) {
     this.state.animationScale.setValue(1), e()
   }
@@ -169,7 +169,7 @@ class P extends(r = Chunk647438.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == module || null == exports ? Chunk388032.intl.string(Chunk388032.t.cw57ar) : (0, Chunk951288.jsx)(I, {
+    return null == module || null == exports ? Chunk388032.intl.string(Chunk388032.t.cw57ar) : (0, Chunk54381.jsx)(I, {
       application: module,
       state: exports,
       isPaused: require
@@ -181,7 +181,7 @@ class P extends(r = Chunk647438.PureComponent) {
       isPaused: t,
       className: n
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk748780.Z.div, {
+    return (0, Chunk54381.jsx)(Chunk748780.Z.div, {
       style: {
         transform: [{
           scale: this.state.animationScale
@@ -189,15 +189,15 @@ class P extends(r = Chunk647438.PureComponent) {
       },
       className: a()(require, Chunk820093.progressContainer),
       onClick: this.handleOnClick,
-      children: (0, Chunk951288.jsx)(Chunk28664.u, {
+      children: (0, Chunk54381.jsx)(Chunk28664.u, {
         __unsupportedReactNodeAsText: this.getTooltipText(),
         position: "right",
         "aria-label": false,
-        children: (0, Chunk951288.jsx)("div", {
-          children: (0, Chunk951288.jsx)(Chunk481060._3P, {
+        children: (0, Chunk54381.jsx)("div", {
+          children: (0, Chunk54381.jsx)(Chunk481060._3P, {
             percent: module,
             colorOverride: exports ? Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css : null,
-            children: (0, Chunk951288.jsx)(Chunk481060._8t, {
+            children: (0, Chunk54381.jsx)(Chunk481060._8t, {
               size: "md",
               color: "currentColor",
               className: Chunk820093.downloadIcon

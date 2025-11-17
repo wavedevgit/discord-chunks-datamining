@@ -3,8 +3,8 @@
 require.r(exports), require.d(exports, {
   default: () => A
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk37234 = require("./37234.js"),
   Chunk230711 = require("./230711.js"),
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk839469 = require("./839469.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let y = Chunk647438.forwardRef(function() {
+let y = Chunk473749.forwardRef(function() {
     Chunk45493.Z.trackExposure({
       location: "cd25e4_1"
     }), Chunk254901.Z.useExperiment({
@@ -57,7 +57,7 @@ let y = Chunk647438.forwardRef(function() {
       {
         analyticsLocations: w
       } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS);
-    Chunk647438.useEffect(() => {
+    Chunk473749.useEffect(() => {
       null != require && (require !== j || y !== P) && (0, Chunk88658.QB)({
         destinationPane: require,
         originPane: null != j ? j : null,
@@ -69,15 +69,15 @@ let y = Chunk647438.forwardRef(function() {
     let {
       hasSearchResults: C,
       searchResults: v
-    } = (0, Chunk839469.F)(), G = (0, Chunk991346.VO)(), R = (0, Chunk991346.q8)(v), U = Chunk647438.useMemo(() => C ? R : G, [C, R, G]), B = (0, Chunk332473.b)(), F = (0, Chunk113434.iO)(), I = Chunk647438.useCallback(e => {
+    } = (0, Chunk839469.F)(), G = (0, Chunk991346.VO)(), R = (0, Chunk991346.q8)(v), U = Chunk473749.useMemo(() => C ? R : G, [C, R, G]), B = (0, Chunk332473.b)(), F = (0, Chunk113434.iO)(), I = Chunk473749.useCallback(e => {
       l.Z.setSection(e)
     }, []);
-    return (0, Chunk951288.jsx)(Chunk906732.Gt, {
+    return (0, Chunk54381.jsx)(Chunk906732.Gt, {
       value: w,
-      children: (0, Chunk951288.jsx)(Chunk410575.Z, {
+      children: (0, Chunk54381.jsx)(Chunk410575.Z, {
         root: true,
         page: Chunk981631.ZY5.USER_SETTINGS,
-        children: (0, Chunk951288.jsx)(Chunk503089.ZP, {
+        children: (0, Chunk54381.jsx)(Chunk503089.ZP, {
           theme: module,
           title: Chunk388032.intl.string(Chunk388032.t.cduTBL),
           sidebarTheme: exports,
@@ -92,13 +92,13 @@ let y = Chunk647438.forwardRef(function() {
       })
     })
   }),
-  A = Chunk647438.forwardRef(function() {
+  A = Chunk473749.forwardRef(function() {
     let e = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getAnalyticsLocations()),
       {
         analyticsLocations: t
       } = (0, Chunk906732.ZP)(module);
-    return (0, Chunk951288.jsx)(Chunk906732.Gt, {
+    return (0, Chunk54381.jsx)(Chunk906732.Gt, {
       value: exports,
-      children: (0, Chunk951288.jsx)(y, {})
+      children: (0, Chunk54381.jsx)(y, {})
     })
   })

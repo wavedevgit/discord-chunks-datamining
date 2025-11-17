@@ -5,8 +5,8 @@ require.d(exports, {
   C: () => R,
   Z: () => N
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -42,13 +42,13 @@ function C(e) {
 }
 
 function N() {
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsxs)(Chunk921801.F, {
+  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    children: [(0, Chunk54381.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_SOUNDBOARD,
-      children: [(0, Chunk951288.jsx)(Chunk918257.Z, {}), (0, Chunk951288.jsx)(Chunk970813.Z, {})]
-    }), (0, Chunk951288.jsx)(Chunk921801.F, {
+      children: [(0, Chunk54381.jsx)(Chunk918257.Z, {}), (0, Chunk54381.jsx)(Chunk970813.Z, {})]
+    }), (0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
-      children: (0, Chunk951288.jsx)(R, {})
+      children: (0, Chunk54381.jsx)(R, {})
     })]
   })
 }
@@ -56,15 +56,15 @@ function N() {
 function R() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(), [t, n] = Chunk647438.useState(Chunk710111.hY), s = (0, Chunk893663.tT)(exports), d = C(Chunk596454), E = (null == Chunk596454 ? true : Chunk596454.type) === Chunk893663.zx.GLOBAL, y = (0, Chunk442837.e7)([Chunk763296.Z], () => Chunk763296.Z.hasFetchedAllSounds()) && null != Chunk596454 && null == Chunk921801;
-  Chunk647438.useEffect(() => {
+  } = (0, Chunk906732.ZP)(), [t, n] = Chunk473749.useState(Chunk710111.hY), s = (0, Chunk893663.tT)(exports), d = C(Chunk596454), E = (null == Chunk596454 ? true : Chunk596454.type) === Chunk893663.zx.GLOBAL, y = (0, Chunk442837.e7)([Chunk763296.Z], () => Chunk763296.Z.hasFetchedAllSounds()) && null != Chunk596454 && null == Chunk921801;
+  Chunk473749.useEffect(() => {
     Chunk918257 && (0, Chunk242291.tt)({
       location: module
     })
-  }, [Chunk918257, module]), Chunk647438.useEffect(() => {
+  }, [Chunk918257, module]), Chunk473749.useEffect(() => {
     (0, Chunk208049.w)()
   }, []);
-  let O = Chunk647438.useCallback((e, t) => {
+  let O = Chunk473749.useCallback((e, t) => {
     let {
       inDropdown: n
     } = t;
@@ -72,13 +72,13 @@ function R() {
       guildId: e.value
     }) : null
   }, []);
-  return (0, Chunk951288.jsx)(Chunk738486.Z, {
-    children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+  return (0, Chunk54381.jsx)(Chunk738486.Z, {
+    children: (0, Chunk54381.jsxs)(Chunk481060.C3N, {
       label: Chunk388032.intl.string(Chunk388032.t.nzUc3B),
       description: Chunk388032.intl.format(Chunk388032.t.u9RWmv, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOUNDBOARD)
       }),
-      children: [(0, Chunk951288.jsx)(Chunk856768.Z, {
+      children: [(0, Chunk54381.jsx)(Chunk856768.Z, {
         guildId: exports,
         className: Chunk647484.guildSelector,
         globalOption: {
@@ -90,21 +90,21 @@ function R() {
         },
         renderOptionSuffix: Chunk970813,
         hideDivider: true
-      }), (0, Chunk951288.jsxs)(Chunk993413.Z, {
+      }), (0, Chunk54381.jsxs)(Chunk993413.Z, {
         title: Chunk388032.intl.format(Chunk388032.t.I2TsYN, {
-          nitroWheelHook: () => (0, Chunk951288.jsx)(Chunk481060.SrA, {
+          nitroWheelHook: () => (0, Chunk54381.jsx)(Chunk481060.SrA, {
             size: "md",
             color: "currentColor",
             className: Chunk647484.nitroWheel
           })
         }),
-        children: [(0, Chunk951288.jsx)(Chunk331642.Z, {
+        children: [(0, Chunk54381.jsx)(Chunk331642.Z, {
           sound: Chunk921801,
           isGlobal: Chunk581883,
           onSelect: n => {
             null == n ? (0, p.aC)(t, e) : (0, p.SZ)(t, n, e)
           }
-        }), Chunk918257 && (0, Chunk951288.jsx)(Chunk481060.Wn, {
+        }), Chunk918257 && (0, Chunk54381.jsx)(Chunk481060.Wn, {
           className: Chunk647484.notice,
           messageType: Chunk481060.QYI.WARNING,
           children: Chunk388032.intl.string(Chunk388032.t.WkPsFR)

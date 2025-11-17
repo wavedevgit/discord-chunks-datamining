@@ -3,8 +3,8 @@
 require.d(exports, {
   ZP: () => k
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   n = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -58,14 +58,14 @@ function O(e) {
 }
 
 function U() {
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    children: [(0, Chunk54381.jsx)("div", {
       className: Chunk107785.title,
-      children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-xl/bold",
         children: Chunk388032.intl.string(Chunk388032.t["PFp+aJ"])
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk107785.description,
       variant: "text-md/medium",
       color: "header-secondary",
@@ -75,9 +75,9 @@ function U() {
 }
 
 function E() {
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: Chunk107785.erroredContent,
-    children: (0, Chunk951288.jsx)(Chunk481060.Eep, {
+    children: (0, Chunk54381.jsx)(Chunk481060.Eep, {
       src: Chunk334202,
       width: 225,
       height: 160

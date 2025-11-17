@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => d
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -12,14 +12,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx");
-class p extends Chunk647438.Component {
+class p extends Chunk473749.Component {
   render() {
     let {
       user: e,
       transitionState: t,
       onClose: r
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk233787.C, {
+    return (0, Chunk54381.jsx)(Chunk233787.C, {
       transitionState: exports,
       onClose: async () => {
         await require(false)

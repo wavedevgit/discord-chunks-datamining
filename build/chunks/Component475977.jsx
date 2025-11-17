@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => m
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -21,15 +21,15 @@ let m = () => {
   var e;
   let {
     analyticsLocations: t
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), n = Chunk647438.useRef(null), {
+  } = (0, Chunk906732.ZP)(Chunk100527.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), n = Chunk473749.useRef(null), {
     asset: m,
     popoutAsset: g,
     title: E,
     body: b,
     version: y,
     revertTextColor: O
-  } = (0, Chunk196033.W)(), v = Chunk647438.useContext(Chunk924052.Tx), I = null != (e = null == v ? true : v.navigateWithValidation) ? module : e => e();
-  Chunk647438.useEffect(() => {
+  } = (0, Chunk196033.W)(), v = Chunk473749.useContext(Chunk924052.Tx), I = null != (e = null == v ? true : v.navigateWithValidation) ? module : e => e();
+  Chunk473749.useEffect(() => {
     Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UPSELL_VIEWED, {
       type: Chunk474936.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
       location_stack: exports,
@@ -42,34 +42,34 @@ let m = () => {
       analyticsSource: Chunk100527.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
     }))
   };
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     ref: require,
     className: Chunk227919.container,
     style: {
       backgroundImage: "url(".concat(m, ")")
     },
-    children: [(0, Chunk951288.jsx)("div", {
+    children: [(0, Chunk54381.jsx)("div", {
       className: Chunk227919.artContainer,
       "aria-hidden": true,
       role: "presentation",
-      children: (0, Chunk951288.jsx)("img", {
+      children: (0, Chunk54381.jsx)("img", {
         src: g,
         className: Chunk227919.art,
         alt: ""
       })
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk227919.mainColumn,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/extrabold",
         color: O ? "redesign-button-overlay-text" : "currentColor",
         className: Chunk227919.title,
         children: E
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: O ? "redesign-button-overlay-text" : "currentColor",
         children: b
       })]
-    }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Button, {
       onClick: T,
       variant: "overlay-primary",
       text: Chunk388032.intl.string(Chunk388032.t.fYfGgK)

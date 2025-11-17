@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => _
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk441167 = require("./441167.js"),
@@ -29,15 +29,15 @@ function _() {
       viewerClipsEnabled: n
     } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
     _ = (0, Chunk779618.Z)(Chunk131951.Z);
-  return (0, Chunk951288.jsxs)(Chunk481060.l09, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+  return (0, Chunk54381.jsxs)(Chunk481060.l09, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.AGDDkH),
       description: Chunk388032.intl.string(Chunk388032.t["wW9/zQ"]),
       checked: module,
       onChange: e => d.yg({
         allowVoiceRecording: e
       })
-    }), exports && _ && (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    }), exports && _ && (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.NWw7kY),
       description: Chunk388032.intl.string(Chunk388032.t["0vjy8N"]),
       checked: require,

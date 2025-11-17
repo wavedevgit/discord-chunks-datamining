@@ -6,8 +6,8 @@ require.d(exports, {
   x: () => d,
   y: () => c
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js");
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,7 +38,7 @@ function s(e, t) {
     level: e
   }
 }
-let l = Chunk647438.createContext(s(2, {
+let l = Chunk473749.createContext(s(2, {
   current: false
 }));
 
@@ -75,7 +75,7 @@ function u(e) {
 function d() {
   let {
     getLevelAndMarkUsed: e
-  } = Chunk647438.useContext(l);
+  } = Chunk473749.useContext(l);
   return module()
 }
 l.displayName = "HeadingLevelContext"

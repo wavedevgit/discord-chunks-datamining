@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => c
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js"),
   Chunk823162 = require("./823162.js"),
@@ -17,7 +17,7 @@ function c() {
       var e;
       return null == (e = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed
     });
-  return Chunk647438.useEffect(() => {
+  return Chunk473749.useEffect(() => {
     null == module && (0, Chunk823162.hi)()
   }, [module]), null != module && !!l.has(module.alpha2) && !!exports
 }

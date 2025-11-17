@@ -3,13 +3,13 @@
 require.d(exports, {
   V: () => l
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk388032 = require("./388032.jsx");
 
 function l() {
-  let [e, t] = Chunk647438.useState(false), [n, l] = Chunk647438.useState(false), [r, o] = Chunk647438.useState(false);
+  let [e, t] = Chunk473749.useState(false), [n, l] = Chunk473749.useState(false), [r, o] = Chunk473749.useState(false);
   return {
-    rules: Chunk647438.useMemo(() => [{
+    rules: Chunk473749.useMemo(() => [{
       key: "healthy",
       title: Chunk388032.intl.string(Chunk388032.t.jIi9gq),
       body: Chunk388032.intl.string(Chunk388032.t["4uUAXh"]),

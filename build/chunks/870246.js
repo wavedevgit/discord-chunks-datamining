@@ -4,7 +4,7 @@ require.d(exports, {
   $: () => i,
   w: () => s
 });
-var n, Chunk647438 = require("./647438.js"),
+var n, Chunk473749 = require("./473749.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   s = ((n = {}).DETAIL = "Boost Perk Shop Details", n.DEACTIVATE = "Boost Perk Shop Disable", n);

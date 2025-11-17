@@ -5,7 +5,7 @@ require.d(exports, {
   I: () => u,
   a: () => d
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk339085 = require("./339085.js"),
   Chunk633302 = require("./633302.js"),
@@ -56,5 +56,5 @@ function d() {
   let e = Chunk695346.Ok.useSetting(),
     t = null == module ? true : module.emojiId,
     n = (0, Chunk442837.e7)([Chunk339085.ZP], () => null != exports && "0" !== exports ? Chunk339085.ZP.getUsableCustomEmojiById(exports) : null, [exports]);
-  return (0, Chunk647438.useMemo)(() => null != module ? c(module, require) : null, [module, require])
+  return (0, Chunk473749.useMemo)(() => null != module ? c(module, require) : null, [module, require])
 }

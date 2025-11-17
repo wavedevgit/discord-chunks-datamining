@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => y
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk4962 = require("./4962.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk796787 = require("./796787.js");
-class O extends Chunk647438.Component {
+class O extends Chunk473749.Component {
   renderReasons(e, t, n) {
     return 0 === e.length && 0 === t.length ? null : (0, r.jsx)("div", {
       className: E.section,
@@ -60,12 +60,12 @@ class O extends Chunk647438.Component {
     } = this.props;
     if (0 === module.length && 0 === exports.length && null == require.staffNotes) return null;
     let s = this.getReviewToRender();
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: a()(Chunk796787.root, Chunk120356),
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: Chunk796787.header,
         children: Chunk388032.intl.string(Chunk388032.t.qABFpX)
-      }), this.renderReasons(module, exports, Chunk647438), null != Chunk442837 ? (0, Chunk951288.jsx)(Chunk4962.Z, {
+      }), this.renderReasons(module, exports, Chunk473749), null != Chunk442837 ? (0, Chunk54381.jsx)(Chunk4962.Z, {
         data: Chunk442837,
         className: Chunk796787.review
       }) : null]

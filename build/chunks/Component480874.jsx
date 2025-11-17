@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => N
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk797303 = require("./797303.js");
 
 function N() {
-  let e = Chunk647438.useRef(null),
+  let e = Chunk473749.useRef(null),
     t = (0, Chunk727813.Z)(),
     n = (0, Chunk355350.w)(),
     l = (0, Chunk26373.V)(),
@@ -38,7 +38,7 @@ function N() {
     {
       channelId: P
     } = (0, Chunk488634._)(),
-    x = Chunk647438.useCallback(() => {
+    x = Chunk473749.useCallback(() => {
       (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t["EDYbS+"]), Chunk481060.ToastType.FAILURE))
     }, []),
     {
@@ -46,7 +46,7 @@ function N() {
     } = (0, Chunk486622.m)({
       onError: x
     }),
-    Z = Chunk647438.useCallback(() => {
+    Z = Chunk473749.useCallback(() => {
       A(exports.map(e => e.channel.id))
     }, [exports, A]);
   (0, Chunk493773.ZP)(() => {
@@ -56,7 +56,7 @@ function N() {
       name: Chunk286379.V.SPAM_MESSAGE_REQUEST_VIEW
     })
   });
-  let w = Chunk647438.useCallback(e => {
+  let w = Chunk473749.useCallback(e => {
       var n, i;
       let {
         row: s
@@ -72,18 +72,18 @@ function N() {
         hasSingleMessageRequest: l
       }, u)
     }, [exports, Chunk120356, P]),
-    L = Chunk647438.useCallback(() => (0, Chunk951288.jsxs)(Chunk82295.Z, {
+    L = Chunk473749.useCallback(() => (0, Chunk54381.jsxs)(Chunk82295.Z, {
       className: Chunk797303.sectionTitle,
       children: [Chunk388032.intl.format(Chunk388032.t.C79Edh, {
         count: require
-      }), N && require > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), N && require > 0 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           className: Chunk797303.titleDivider,
           variant: "eyebrow",
           color: "header-secondary",
           tag: "span",
           children: "•"
-        }), (0, Chunk951288.jsx)(Chunk481060.Avr, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Avr, {
           textVariant: "text-sm/normal",
           text: Chunk388032.intl.string(Chunk388032.t.p6t7RC),
           onClick: Z,
@@ -91,11 +91,11 @@ function N() {
         })]
       }) : null]
     }, "message-requests-spam-title"), [require, Z, N]);
-  return 0 === exports.length ? (0, Chunk951288.jsx)(Chunk307947.Z, {
+  return 0 === exports.length ? (0, Chunk54381.jsx)(Chunk307947.Z, {
     section: Chunk687683.pS.SPAM
-  }) : (0, Chunk951288.jsx)(Chunk91192.bG, {
+  }) : (0, Chunk54381.jsx)(Chunk91192.bG, {
     navigator: j,
-    children: (0, Chunk951288.jsx)(Chunk91192.SJ, {
+    children: (0, Chunk54381.jsx)(Chunk91192.SJ, {
       children: n => {
         var {
           ref: i,

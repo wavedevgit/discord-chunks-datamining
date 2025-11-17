@@ -3,11 +3,11 @@
 require.d(exports, {
   Z: () => H
 }), require("./415506.js"), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk843611 = require("./843611.js"),
+  Chunk828700 = require("./828700.js"),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -234,7 +234,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       children: (0, i.jsx)("div", w({}, u))
     })
   };
-class B extends(r = Chunk647438.PureComponent) {
+class B extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     let {
       fetched: e
@@ -321,20 +321,20 @@ class B extends(r = Chunk647438.PureComponent) {
       r = exports.length > 0;
     return r ? null : (e = "" !== require ? Chunk388032.intl.format(Chunk388032.t["4Q1TAr"], {
       query: require
-    }) : Chunk388032.intl.string(Chunk388032.t["0Y+0PY"]), (0, Chunk951288.jsxs)("div", {
+    }) : Chunk388032.intl.string(Chunk388032.t["0Y+0PY"]), (0, Chunk54381.jsxs)("div", {
       className: r ? Chunk117554.emptyStateSmall : Chunk117554.emptyStateLarge,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: Chunk117554.emptyWumpus
-      }), (0, Chunk951288.jsx)(Chunk600164.Z, {
+      }), (0, Chunk54381.jsx)(Chunk600164.Z, {
         grow: 0,
         shrink: +!!r,
         direction: Chunk600164.Z.Direction.VERTICAL,
-        children: (0, Chunk951288.jsxs)("div", {
+        children: (0, Chunk54381.jsxs)("div", {
           className: Chunk117554.emptyStateText,
-          children: [(0, Chunk951288.jsx)("div", {
+          children: [(0, Chunk54381.jsx)("div", {
             className: Chunk117554.emptyStateHeader,
             children: Chunk388032.intl.string(Chunk388032.t.Lw8X2j)
-          }), (0, Chunk951288.jsx)("div", {
+          }), (0, Chunk54381.jsx)("div", {
             className: Chunk117554.emptyStateDescription,
             children: module
           })]
@@ -353,8 +353,8 @@ class B extends(r = Chunk647438.PureComponent) {
       overflowMenuRowKey: s,
       highlightedApplicationKey: o
     } = this.state;
-    return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-      children: [require.length > 0 ? (0, Chunk951288.jsx)(Chunk167533.Z, {
+    return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
+      children: [require.length > 0 ? (0, Chunk54381.jsx)(Chunk167533.Z, {
         columns: U,
         data: require,
         sortData: false,
@@ -370,7 +370,7 @@ class B extends(r = Chunk647438.PureComponent) {
         stickyHeader: Chunk120356,
         rowProps: {
           activeRowKey: null != s ? s : r,
-          highlightedApplicationKey: Chunk843611,
+          highlightedApplicationKey: Chunk828700,
           onMouseEnter: this.handleRowMouseEnter,
           onMouseLeave: this.handleRowMouseLeave,
           onContextMenu: this.handleApplicationContextMenu,

@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => p
 });
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -24,7 +24,7 @@ let f = {
   BLOCK: Chunk574657.block,
   INLINE: Chunk574657.inline
 };
-class _ extends(r = Chunk647438.PureComponent) {
+class _ extends(r = Chunk473749.PureComponent) {
   render() {
     let {
       children: e,
@@ -33,16 +33,16 @@ class _ extends(r = Chunk647438.PureComponent) {
       type: r = f.BLOCK,
       style: a
     } = this.props;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: s()(exports, r),
-      style: Chunk647438,
-      children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
+      style: Chunk473749,
+      children: [(0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-sm/bold",
         tag: "div",
         color: "text-feedback-positive",
         className: Chunk574657.pro,
         children: [Chunk388032.intl.string(Chunk388032.t["8tvIiN"]), ":"]
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         className: s()(Chunk574657.tip, require),
         variant: "text-sm/normal",
         children: module

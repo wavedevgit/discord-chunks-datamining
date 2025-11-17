@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => X
 }), require("./388685.js"), require("./415506.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -114,9 +114,9 @@ class Y extends Chunk98597.ZP {
       speakerVoiceStates: i,
       numAudience: l
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk207055.Z, {
+    return (0, Chunk54381.jsx)(Chunk207055.Z, {
       channel: module,
-      voiceStates: Chunk647438,
+      voiceStates: Chunk473749,
       collapsed: exports,
       tabIndex: require,
       location: Chunk981631.Sbl.GUILD_CHANNEL_LIST,
@@ -147,21 +147,21 @@ class Y extends Chunk98597.ZP {
       isFavoriteSuggestion: v
     } = this.props, {
       shouldShowGuildVerificationPopout: j
-    } = this.state, x = this.getVoiceStatesCount(), C = (0, Chunk951288.jsxs)("li", {
+    } = this.state, x = this.getVoiceStatesCount(), C = (0, Chunk54381.jsxs)("li", {
       className: o()(this.getModeClass(), {
         [Chunk55940.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
-      children: [(0, Chunk951288.jsx)(Chunk481060.yRy, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.yRy, {
         targetElementRef: this.channelItemRef,
         position: "right",
         renderPopout: this.renderPopout,
         spacing: 0,
         onRequestClose: this.closeGuildVerificationPopout,
         shouldShow: Chunk431328,
-        children: () => (0, Chunk951288.jsx)(Chunk28664.u, {
+        children: () => (0, Chunk54381.jsx)(Chunk28664.u, {
           text: this.getTooltipText(),
-          children: (0, Chunk951288.jsxs)(Chunk473403.ZP, {
+          children: (0, Chunk54381.jsxs)(Chunk473403.ZP, {
             ref: this.channelItemRef,
             className: Chunk55940.iconVisibility,
             iconClassName: o()({
@@ -173,7 +173,7 @@ class Y extends Chunk98597.ZP {
             unread: require ? Chunk66999 : true,
             resolvedUnreadSetting: Chunk378844,
             mentionCount: Chunk359110,
-            locked: Chunk647438,
+            locked: Chunk473749,
             onClick: () => {
               this.handleClick()
             },

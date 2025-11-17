@@ -4,7 +4,7 @@ require.d(exports, {
   K: () => g,
   O: () => u
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk37234 = require("./37234.js"),
   Chunk749681 = require("./749681.js"),
@@ -31,11 +31,11 @@ function u(e) {
 }
 
 function g() {
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk912743.rowContainer,
-    children: [(0, Chunk951288.jsx)("div", {
+    children: [(0, Chunk54381.jsx)("div", {
       children: Chunk388032.intl.string(Chunk388032.t.AKcFUj)
-    }), (0, Chunk951288.jsx)(Chunk481060.rgF, {
+    }), (0, Chunk54381.jsx)(Chunk481060.rgF, {
       size: "xs",
       color: "currentColor",
       className: Chunk912743.linkIcon

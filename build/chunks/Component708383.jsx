@@ -3,16 +3,16 @@
 require.d(exports, {
   Z: () => p
 }), require("./35282.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
-  Chunk843611 = require("./843611.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
+  Chunk828700 = require("./828700.js"),
   Chunk749210 = require("./749210.js"),
   Chunk287734 = require("./287734.js"),
   Chunk765717 = require("./765717.jsx"),
   Chunk893607 = require("./893607.js"),
   Chunk703656 = require("./703656.js"),
   Chunk981631 = require("./981631.js");
-class h extends Chunk647438.Component {
+class h extends Chunk473749.Component {
   componentDidUpdate(e) {
     let {
       location: t
@@ -43,20 +43,20 @@ class h extends Chunk647438.Component {
     (0, Chunk893607.Ss)(exports) && (0, Chunk893607.cq)(require) ? (Chunk749210.Z.selectGuild(exports), Chunk287734.default.selectChannel({
       guildId: exports,
       channelId: require,
-      messageId: Chunk951288
+      messageId: Chunk54381
     })) : (0, Chunk703656.dL)(Chunk981631.Z5c.ME)
   }
   render() {
     return null
   }
 }
-let p = () => (0, Chunk951288.jsxs)(Chunk843611.rs, {
-  children: [(0, Chunk951288.jsx)(Chunk765717.Z, {
+let p = () => (0, Chunk54381.jsxs)(Chunk828700.rs, {
+  children: [(0, Chunk54381.jsx)(Chunk765717.Z, {
     path: Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
       optional: true
     }), ":messageId?"),
     component: h
-  }), (0, Chunk951288.jsx)(Chunk765717.Z, {
+  }), (0, Chunk54381.jsx)(Chunk765717.Z, {
     component: h
   })]
 })

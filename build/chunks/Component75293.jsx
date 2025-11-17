@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => h
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk159691 = require("./159691.js"),
   Chunk923928 = require("./923928.js"),
   Chunk594190 = require("./594190.js"),
@@ -20,7 +20,7 @@ function p(t, e, n) {
     writable: true
   }) : t[e] = n, t
 }
-class c extends Chunk647438.Component {
+class c extends Chunk473749.Component {
   componentDidMount() {
     let {
       pid: t
@@ -33,7 +33,7 @@ class c extends Chunk647438.Component {
     })
   }
   render() {
-    return (0, Chunk951288.jsx)(Chunk159691.u_l, {
+    return (0, Chunk54381.jsx)(Chunk159691.u_l, {
       size: "md",
       title: Chunk388032.intl.string(Chunk388032.t["4xSkEB"]),
       subtitle: Chunk388032.intl.string(Chunk388032.t.UCEXPq),

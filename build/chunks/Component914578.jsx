@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => g
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -47,44 +47,44 @@ function v(e) {
 }
 
 function g() {
-  let e = Chunk647438.useRef(null),
+  let e = Chunk473749.useRef(null),
     t = Chunk906467.Z.isDeveloper;
-  return (0, Chunk951288.jsxs)("div", {
-    children: [exports && (0, Chunk951288.jsx)(Chunk481060.P3F, {
+  return (0, Chunk54381.jsxs)("div", {
+    children: [exports && (0, Chunk54381.jsx)(Chunk481060.P3F, {
       className: Chunk989281.devToolsEducation,
       onClick: () => (0, Chunk31336.d8)(),
-      children: (0, Chunk951288.jsx)(Chunk924983.$, {
+      children: (0, Chunk54381.jsx)(Chunk924983.$, {
         legacy: false
       })
-    }), (0, Chunk951288.jsx)(Chunk604227.Z, {
+    }), (0, Chunk54381.jsx)(Chunk604227.Z, {
       compact: true
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk989281.links,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Anchor, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Anchor, {
         href: Chunk981631.EYA.PRIVACY,
-        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Text, {
           tag: "span",
           variant: "text-xxs/normal",
           color: "currentColor",
           children: Chunk388032.intl.string(Chunk388032.t["Knf/f/"])
         })
-      }), (0, Chunk951288.jsx)("span", {
+      }), (0, Chunk54381.jsx)("span", {
         className: Chunk989281.bullet,
         "aria-hidden": "true",
         children: "•"
-      }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Anchor, {
         href: Chunk981631.EYA.TERMS,
-        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Text, {
           tag: "span",
           variant: "text-xxs/normal",
           color: "currentColor",
           children: Chunk388032.intl.string(Chunk388032.t.uFSTGq)
         })
-      }), (0, Chunk951288.jsx)("span", {
+      }), (0, Chunk54381.jsx)("span", {
         className: Chunk989281.bullet,
         "aria-hidden": "true",
         children: "•"
-      }), (0, Chunk951288.jsx)(Chunk481060.yRy, {
+      }), (0, Chunk54381.jsx)(Chunk481060.yRy, {
         targetElementRef: module,
         position: "top",
         align: "center",

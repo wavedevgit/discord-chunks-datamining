@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => G
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk913527 = require("./913527.js"),
   o = require.n(Chunk913527),
   Chunk873546 = require("./873546.js"),
@@ -89,7 +89,7 @@ let k = "???",
       }))
     })
   };
-class U extends Chunk647438.Component {
+class U extends Chunk473749.Component {
   getSystemMessageHeader() {
     let e = Chunk594174.default.getUser(this.trialOffer.user_id);
     if (this.isSender) return Chunk388032.intl.format(Chunk388032.t["4/EMxl"], {
@@ -110,9 +110,9 @@ class U extends Chunk647438.Component {
     return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? Chunk388032.intl.formatToPlainString(Chunk388032.t["Mptau/"], {
       username: exports
     }) : this.offerExpired ? this.isSender ? Chunk388032.intl.string(Chunk388032.t["9SNdf4"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["H0+MxK"], {
-      userName: Chunk951288
+      userName: Chunk54381
     }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.IiWKwg, {
-      senderUserName: Chunk951288,
+      senderUserName: Chunk54381,
       recipientUserName: exports
     })
   }
@@ -124,10 +124,10 @@ class U extends Chunk647438.Component {
   renderActions() {
     let e = this.currentUser.id !== this.trialOffer.user_id || (0, Chunk74538.I5)(this.currentUser) || !this.currentUser.verified || (0, Chunk786397.B)(this.trialOffer),
       t = this.renderExpirationDate();
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk269143.buttonContainer,
-      children: [(0, Chunk951288.jsx)("div", {
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+      children: [(0, Chunk54381.jsx)("div", {
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           disabled: module,
           size: "sm",
@@ -142,7 +142,7 @@ class U extends Chunk647438.Component {
             })
           }
         })
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk269143.metadata,
         children: exports
       })]
@@ -163,7 +163,7 @@ class U extends Chunk647438.Component {
     }) : (0, Chunk93237.F6)(require.valueOf())
   }
   renderMedia() {
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: Chunk269143.referral
     })
   }
@@ -191,28 +191,28 @@ class U extends Chunk647438.Component {
         return this.offerExpired ? {
           headerText: Chunk388032.intl.string(Chunk388032.t.nYvpUl),
           bodyText: Chunk388032.intl.formatToPlainString(Chunk388032.t.wJdBEZ, {
-            sender: Chunk951288
+            sender: Chunk54381
           })
         } : {
           headerText: Chunk388032.intl.string(Chunk388032.t.HtTvXA),
           bodyText: Chunk388032.intl.formatToPlainString(Chunk388032.t.wOQByA, {
-            sender: Chunk951288
+            sender: Chunk54381
           })
         }
       },
-      t = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk740594.Z, {
+      t = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [(0, Chunk54381.jsx)(Chunk740594.Z, {
           subscriptionTier: Chunk474936.Si.TIER_2,
           buttonTextOverride: Chunk388032.intl.string(Chunk388032.t.O0etsF),
           size: "md",
           variantOverride: "expressive"
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           color: "text-secondary",
           children: this.renderExpirationDate()
         })]
       }),
-      n = (0, Chunk951288.jsx)(Chunk481060.Button, {
+      n = (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         disabled: false,
         size: "md",
@@ -223,7 +223,7 @@ class U extends Chunk647438.Component {
         text: Chunk388032.intl.string(Chunk388032.t.Lm2nFc)
       }),
       i = this.isSender ? require : exports,
-      a = (0, Chunk951288.jsx)(Chunk481060.Eep, {
+      a = (0, Chunk54381.jsx)(Chunk481060.Eep, {
         src: Chunk295234.Z,
         height: 84,
         width: 144,
@@ -233,36 +233,36 @@ class U extends Chunk647438.Component {
         headerText: o,
         bodyText: s
       } = module();
-    return (0, Chunk951288.jsxs)(Chunk834129.Z, {
+    return (0, Chunk54381.jsxs)(Chunk834129.Z, {
       className: Chunk269143.systemMessageContainerDMEmbedXP,
-      iconNode: (0, Chunk951288.jsx)(Chunk481060.SrA, {
+      iconNode: (0, Chunk54381.jsx)(Chunk481060.SrA, {
         size: "md",
         color: "currentColor"
       }),
       iconContainerClassName: Chunk269143.systemMessageContainerIcon,
       compact: this.compact,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "text-primary",
         children: this.getSystemMessageHeader()
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk269143.containerDMEmbedXP,
-        children: [Chunk913527, (0, Chunk951288.jsxs)("div", {
+        children: [Chunk913527, (0, Chunk54381.jsxs)("div", {
           className: Chunk269143.contentDMEmbedXP,
-          children: [(0, Chunk951288.jsxs)("div", {
+          children: [(0, Chunk54381.jsxs)("div", {
             className: Chunk269143.contentTextDMEmbedXP,
-            children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+            children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
               variant: "heading-md/semibold",
               color: "header-primary",
               children: o
-            }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+            }), (0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-md/medium",
               color: "text-secondary",
               children: Chunk873546
             })]
-          }), (0, Chunk951288.jsx)("div", {
+          }), (0, Chunk54381.jsx)("div", {
             className: Chunk269143.buttonContainerDMEmbedXP,
-            children: Chunk647438
+            children: Chunk473749
           })]
         })]
       })]

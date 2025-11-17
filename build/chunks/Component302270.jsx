@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => k
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -230,40 +230,40 @@ function k(e) {
 }
 
 function U() {
-  return (0, Chunk951288.jsxs)("svg", {
+  return (0, Chunk54381.jsxs)("svg", {
     width: "36",
     height: "36",
     viewBox: "0 0 36 36",
     fill: "none",
-    children: [(0, Chunk951288.jsxs)("g", {
+    children: [(0, Chunk54381.jsxs)("g", {
       clipPath: "url(#clip0_595_59940)",
-      children: [(0, Chunk951288.jsx)("path", {
+      children: [(0, Chunk54381.jsx)("path", {
         d: "M36 18C36 19.8 33.075 21.15 32.625 22.725C32.175 24.3 33.525 27.225 32.625 28.575C31.725 29.925 28.35 29.25 27 30.375C25.65 31.5 25.2 34.425 23.625 35.1C22.05 35.775 19.8 33.3 18 33.3C16.2 33.3 13.95 35.55 12.375 35.1C10.8 34.65 10.35 31.275 9 30.375C7.65 29.475 4.5 29.925 3.375 28.575C2.25 27.225 3.825 24.525 3.375 22.725C2.925 20.925 0 19.8 0 18C0 16.2 2.925 14.85 3.375 13.275C3.825 11.7 2.475 8.77497 3.375 7.42496C4.275 6.07497 7.65 6.74997 9 5.62497C10.35 4.49997 10.8 1.57497 12.375 0.899965C13.95 0.224965 16.2 2.69997 18 2.69997C19.8 2.69997 22.05 0.449965 23.625 0.899965C25.2 1.34997 25.65 4.49997 27 5.62497C28.35 6.74997 31.5 6.07497 32.625 7.42496C33.75 8.77497 32.175 11.475 32.625 13.275C33.075 15.075 36 16.2 36 18Z",
         fill: "url(#paint0_linear_595_59940)"
-      }), (0, Chunk951288.jsx)("path", {
+      }), (0, Chunk54381.jsx)("path", {
         d: "M15.75 20.7001L18 22.9501L20.25 20.7001V15.3001L18 13.0501L15.75 15.3001V20.7001Z",
         fill: "white"
-      }), (0, Chunk951288.jsx)("path", {
+      }), (0, Chunk54381.jsx)("path", {
         d: "M18 6.75L11.25 13.5V22.5L18 29.25L24.75 22.5V13.5L18 6.75ZM22.5 21.6L18 26.1L13.5 21.6V14.4L18 9.9L22.5 14.4V21.6Z",
         fill: "white"
       })]
-    }), (0, Chunk951288.jsxs)("defs", {
-      children: [(0, Chunk951288.jsxs)("linearGradient", {
+    }), (0, Chunk54381.jsxs)("defs", {
+      children: [(0, Chunk54381.jsxs)("linearGradient", {
         id: "paint0_linear_595_59940",
         x1: "2.4046e-06",
         y1: "35.2166",
         x2: "35.7182",
         y2: "-1.45185",
         gradientUnits: "userSpaceOnUse",
-        children: [(0, Chunk951288.jsx)("stop", {
+        children: [(0, Chunk54381.jsx)("stop", {
           stopColor: "#3E70DD"
-        }), (0, Chunk951288.jsx)("stop", {
+        }), (0, Chunk54381.jsx)("stop", {
           offset: "1",
           stopColor: "#B377F3"
         })]
-      }), (0, Chunk951288.jsx)("clipPath", {
+      }), (0, Chunk54381.jsx)("clipPath", {
         id: "clip0_595_59940",
-        children: (0, Chunk951288.jsx)("rect", {
+        children: (0, Chunk54381.jsx)("rect", {
           width: "36",
           height: "36",
           fill: "white"

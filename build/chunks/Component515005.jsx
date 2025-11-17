@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => w
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -84,7 +84,7 @@ function N(e, t) {
 let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions),
   P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewPadding),
   D = 250,
-  w = Chunk647438.memo(function(e) {
+  w = Chunk473749.memo(function(e) {
     let {
       isDisplayingIndividualStickers: t = false,
       preferAnimation: a = true,

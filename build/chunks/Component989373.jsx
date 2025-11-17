@@ -4,8 +4,8 @@ require.r(exports), require.d(exports, {
   default: () => O,
   waitForCSSLoad: () => x
 }), require("./388685.js"), require("./415506.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk13245 = require("./13245.js"),
   Chunk493773 = require("./493773.js"),
@@ -81,7 +81,7 @@ async function D(e, t) {
     }
   }
 }
-let O = Chunk647438.memo(function(e) {
+let O = Chunk473749.memo(function(e) {
   let {
     withTitleBar: t,
     windowKey: n

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => b
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk770146 = require("./770146.jsx"),
@@ -104,7 +104,7 @@ let g = [{
       })]
     })
   };
-class _ extends Chunk647438.PureComponent {
+class _ extends Chunk473749.PureComponent {
   render() {
     let {
       sku: e
@@ -126,9 +126,9 @@ class _ extends Chunk647438.PureComponent {
         tooltip: l()
       }, t)
     });
-    return 0 === exports.length ? null : (0, Chunk951288.jsxs)("div", {
+    return 0 === exports.length ? null : (0, Chunk54381.jsxs)("div", {
       className: Chunk126373.features,
-      children: [(0, Chunk951288.jsx)(Chunk770146.Z, {
+      children: [(0, Chunk54381.jsx)(Chunk770146.Z, {
         children: Chunk388032.intl.string(Chunk388032.t.XXENra)
       }), exports]
     })

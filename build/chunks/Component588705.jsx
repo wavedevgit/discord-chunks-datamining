@@ -4,8 +4,8 @@ require.d(exports, {
   R: () => j,
   Z: () => b
 }), require("./415506.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388905 = require("./388905.jsx"),
@@ -24,14 +24,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk245335 = require("./245335.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk620838 = require("./620838.js");
-let j = () => (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-    children: [(0, Chunk951288.jsx)(Chunk388905.qE, {
+let j = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
+    children: [(0, Chunk54381.jsx)(Chunk388905.qE, {
       src: null,
       size: Chunk481060.EFr.DEPRECATED_SIZE_100,
       className: Chunk620838.avatar
-    }), (0, Chunk951288.jsx)(Chunk388905.DK, {
+    }), (0, Chunk54381.jsx)(Chunk388905.DK, {
       children: Chunk388032.intl.string(Chunk388032.t["3rE1P8"])
-    }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
+    }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
       className: Chunk620838.inviteResolvingGuildName,
       children: Chunk388032.intl.string(Chunk388032.t.ZTNur7)
     })]

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => p
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk565138 = require("./565138.jsx"),
@@ -20,14 +20,14 @@ function p() {
       guilds: t,
       numGuildsJoined: e
     }
-  } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()), i = (0, Chunk647438.useMemo)(() => module.map(t => {
+  } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()), i = (0, Chunk473749.useMemo)(() => module.map(t => {
     let {
       guild: e
     } = t;
     return d.Z.getGuild(e.id)
   }).filter(t => null != t), [module]);
-  return (0, Chunk951288.jsxs)(Chunk198358.Z, {
-    children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
+  return (0, Chunk54381.jsxs)(Chunk198358.Z, {
+    children: [(0, Chunk54381.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
       children: Chunk388032.intl.format(Chunk892694.default.mAroeJ, {

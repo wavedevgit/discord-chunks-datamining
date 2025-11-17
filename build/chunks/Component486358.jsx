@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => v
 }), require("./953529.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk902840 = require("./902840.js"),
@@ -26,55 +26,55 @@ let v = function() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild, []), n = (0, Chunk442837.e7)([Chunk496675.Z], () => null != exports && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, exports)), v = (0, Chunk34586.E)(exports), O = (0, Chunk902840.l9)(null != exports ? exports : true);
-  return null == exports ? null : (0, Chunk951288.jsx)(Chunk906732.Gt, {
+  return null == exports ? null : (0, Chunk54381.jsx)(Chunk906732.Gt, {
     value: module,
-    children: (0, Chunk951288.jsxs)("main", {
+    children: (0, Chunk54381.jsxs)("main", {
       className: Chunk566945.container,
-      children: [(0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
+      children: [(0, Chunk54381.jsxs)("div", {
+        children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
           variant: "heading-lg/semibold",
           color: "header-primary",
           children: Chunk388032.intl.string(Chunk388032.t["6TAHbx"])
-        }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
+        }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-sm/medium",
           color: "header-secondary",
           tag: "p",
           className: Chunk566945.description,
           children: Chunk388032.intl.string(Chunk388032.t.XCGZFk)
         })]
-      }), true === O && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk354031.P, {
+      }), true === O && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [(0, Chunk54381.jsx)(Chunk354031.P, {
           canManageGuild: require,
           features: exports.features
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: Chunk566945.divider
         })]
-      }), (0, Chunk951288.jsx)(Chunk335438.l, {
+      }), (0, Chunk54381.jsx)(Chunk335438.l, {
         canManageGuild: require,
         guild: exports
-      }), true !== v && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)("div", {
+      }), true !== v && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [(0, Chunk54381.jsx)("div", {
           className: Chunk566945.divider
-        }), (0, Chunk951288.jsx)(Chunk723914.q, {
+        }), (0, Chunk54381.jsx)(Chunk723914.q, {
           isInventoryFeedEnabled: v,
           canManageGuild: require,
           features: exports.features
         })]
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk566945.divider
-      }), (0, Chunk951288.jsx)(Chunk30818.z, {
+      }), (0, Chunk54381.jsx)(Chunk30818.z, {
         guildId: exports.id,
         defaultSettings: exports.defaultMessageNotifications,
         canManageGuild: require
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk566945.divider
-      }), (0, Chunk951288.jsx)(Chunk997698.L, {
+      }), (0, Chunk54381.jsx)(Chunk997698.L, {
         canManageGuild: require,
         guild: exports
-      }), true === require && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)("div", {
+      }), true === require && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [(0, Chunk54381.jsx)("div", {
           className: Chunk566945.divider
-        }), (0, Chunk951288.jsx)(Chunk166805.P, {
+        }), (0, Chunk54381.jsx)(Chunk166805.P, {
           guildId: exports.id
         })]
       })]

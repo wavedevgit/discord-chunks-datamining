@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => et
 }), require("./388685.js"), require("./49124.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
@@ -50,11 +50,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk206583 = require("./206583.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk226788 = require("./226788.js");
-let V = () => (0, Chunk951288.jsxs)("div", {
+let V = () => (0, Chunk54381.jsxs)("div", {
   className: Chunk226788.gameBadge,
-  children: [(0, Chunk951288.jsx)(Chunk481060.YqE, {
+  children: [(0, Chunk54381.jsx)(Chunk481060.YqE, {
     size: "xxs"
-  }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+  }), (0, Chunk54381.jsx)(Chunk481060.Text, {
     variant: "text-sm/normal",
     color: "text-muted",
     children: Chunk388032.intl.string(Chunk388032.t.kAlUsy)

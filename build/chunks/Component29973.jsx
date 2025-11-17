@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 /** chunk id: 29973, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -69,7 +69,7 @@ let m = {
   MEDIUM: Chunk919686.sizeMedium,
   LARGE: Chunk919686.sizeLarge
 };
-class g extends(r = Chunk647438.PureComponent) {
+class g extends(r = Chunk473749.PureComponent) {
   calculateScroll() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this._scroller;
     if (null == module) return;
@@ -91,7 +91,7 @@ class g extends(r = Chunk647438.PureComponent) {
     let {
       hideSeparator: e
     } = this.state;
-    return Chunk647438.Children.map(this.props.children, t => a.isValidElement(t) ? t.type === l.hzk || t.type === l.YAO ? a.cloneElement(t, {
+    return Chunk473749.Children.map(this.props.children, t => a.isValidElement(t) ? t.type === l.hzk || t.type === l.YAO ? a.cloneElement(t, {
       scrollerRef: this.setRef,
       onScroll: this.handleScroll,
       onResize: this.handleScroll
@@ -109,8 +109,8 @@ class g extends(r = Chunk647438.PureComponent) {
         fullscreenOnMobile: o
       } = module,
       l = p(module, ["className", "children", "tag", "size", "fullscreenOnMobile"]);
-    return (0, Chunk951288.jsx)(r, _(d({
-      className: s()(Chunk919686.modal, exports, Chunk647438, {
+    return (0, Chunk54381.jsx)(r, _(d({
+      className: s()(Chunk919686.modal, exports, Chunk473749, {
         [Chunk919686.fullscreenOnMobile]: Chunk120356
       })
     }, Chunk481060), {

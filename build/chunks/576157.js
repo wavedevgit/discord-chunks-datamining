@@ -4,7 +4,7 @@
 require.d(exports, {
   w: () => c
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk704215 = require("./704215.js"),
   Chunk211644 = require("./211644.js"),
   Chunk266454 = require("./266454.js"),
@@ -13,7 +13,7 @@ var Chunk647438 = require("./647438.js"),
 
 function c() {
   let e = (0, Chunk266454.Nj)(Chunk704215.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE);
-  return Chunk647438.useEffect(() => {
+  return Chunk473749.useEffect(() => {
     if (!module) return (0, Chunk605236.kk)(Chunk704215.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE), () => {
       (0, Chunk211644.gE)({
         content: Chunk704215.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE
@@ -21,7 +21,7 @@ function c() {
     }
   }, [module]), {
     shouldShowNewBadge: !module,
-    markNewBadgeAsDismissed: Chunk647438.useCallback(() => {
+    markNewBadgeAsDismissed: Chunk473749.useCallback(() => {
       (0, Chunk266454.Q3)(Chunk704215.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE, {
         dismissAction: Chunk921944.L.TAKE_ACTION
       })

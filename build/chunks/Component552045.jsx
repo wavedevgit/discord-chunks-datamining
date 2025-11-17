@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => y
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -27,13 +27,13 @@ let b = () => {
       {
         handleTabChange: n
       } = (0, Chunk841409.Z)();
-    return (0, Chunk631885.VM)() || exports && module ? null : (0, Chunk951288.jsx)("div", {
+    return (0, Chunk631885.VM)() || exports && module ? null : (0, Chunk54381.jsx)("div", {
       className: Chunk26919.button,
-      children: exports ? (0, Chunk951288.jsx)(Chunk481060.Button, {
+      children: exports ? (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.LhlgY9),
         onClick: () => require(Chunk292352.dG.REQUESTS)
-      }) : (0, Chunk951288.jsx)(Chunk568671.Z, {})
+      }) : (0, Chunk54381.jsx)(Chunk568671.Z, {})
     })
   },
   y = () => {
@@ -44,27 +44,27 @@ let b = () => {
       }), Chunk388032.intl.format(Chunk597754.default.EMCf6j, {
         articleLink: "https://support.discord.com/hc/articles/14155043715735"
       }));
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: a()(Chunk26919.container, Chunk519279.box),
-      children: [(0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)("div", {
-          children: (0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk54381.jsxs)("div", {
+        children: [(0, Chunk54381.jsx)("div", {
+          children: (0, Chunk54381.jsxs)("div", {
             className: Chunk26919.headerText,
-            children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+            children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
               variant: "heading-xl/medium",
-              children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
+              children: (0, Chunk54381.jsx)(Chunk481060.y5t, {
                 children: exports
               })
-            }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+            }), (0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-sm/medium",
               color: "text-muted",
               children: require
             })]
           })
-        }), (0, Chunk951288.jsx)(b, {})]
-      }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)(b, {})]
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk26919.headerImage,
-        children: (0, Chunk951288.jsx)("img", {
+        children: (0, Chunk54381.jsx)("img", {
           src: module ? Chunk633488 : Chunk361848,
           alt: Chunk388032.intl.string(Chunk597754.default.ffg6xd)
         })

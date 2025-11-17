@@ -5,8 +5,8 @@ require.d(exports, {
   c: () => d,
   j: () => f
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk168107 = require("./168107.jsx"),
   Chunk480916 = require("./480916.js"),
   Chunk925513 = require("./925513.js"),
@@ -20,7 +20,7 @@ function d() {
     t = () => {
       window.open(Chunk63063.Z.getArticleURL(module), "_blank")
     };
-  return (0, Chunk951288.jsx)(Chunk907995.f, {
+  return (0, Chunk54381.jsx)(Chunk907995.f, {
     label: Chunk388032.t.EUo0yj,
     labelHook: exports,
     noticeType: Chunk484710.nq.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
@@ -33,7 +33,7 @@ function f() {
       entryPoint: Chunk480916.cU.CONTENT_AND_SOCIAL_NOTICE
     })
   };
-  return (0, Chunk951288.jsx)(Chunk907995.f, {
+  return (0, Chunk54381.jsx)(Chunk907995.f, {
     label: Chunk388032.t.OX4ybh,
     labelHook: module,
     noticeType: Chunk484710.nq.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE

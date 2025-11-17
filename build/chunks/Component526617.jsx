@@ -5,8 +5,8 @@ require.d(exports, {
   O: () => es,
   Z: () => eu
 }), require("./388685.js"), require("./856094.js"), require("./472816.js"), require("./794429.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
@@ -213,7 +213,7 @@ function el(e) {
 }
 
 function ec() {
-  return (0, Chunk951288.jsx)(Chunk788911.Z, {
+  return (0, Chunk54381.jsx)(Chunk788911.Z, {
     message: Chunk388032.intl.string(Chunk388032.t.bgDdNK)
   })
 }
@@ -328,12 +328,12 @@ function eu(e) {
       nitroTierName: e,
       onClick: e0
     })
-  }, [e0]), e2 = i.useCallback(e => e$(e, t) ? er : en, [t, e$]), e3 = i.useCallback(e => {
+  }, [e0]), e3 = i.useCallback(e => e$(e, t) ? er : en, [t, e$]), e2 = i.useCallback(e => {
     let t = e === eZ.length - 1;
     return eV && t ? 50 : eV && e === eF ? 20 : 0
   }, [eZ.length, eV, eF]), e4 = i.useCallback((e, t) => (0, r.jsx)("div", {
     children: t
-  }, e), []), e8 = i.useCallback((e, n) => {
+  }, e), []), e5 = i.useCallback((e, n) => {
     let i = "".concat(e.key),
       a = J && es(e.categoryInfo, eS, t),
       o = e$(n, t),
@@ -358,7 +358,7 @@ function eu(e) {
       showNitroDivider: o && eV,
       enablePickerUpsellPremiumBrandRefresh: em
     }, "header-".concat(i))
-  }, [eW, eq, t, e$, J, eS, eV, em]), e5 = i.useCallback((e, t) => {
+  }, [eW, eq, t, e$, J, eS, eV, em]), e8 = i.useCallback((e, t) => {
     let n = t === eZ.length - 1,
       i = t === eF;
     return eV && n ? (0, r.jsx)("div", {
@@ -490,14 +490,14 @@ function eu(e) {
       hasSearchResults: eM.length > 0,
       defaultSearchPlaceholder: z.intl.string(z.t.sKt3xS),
       renderRow: eJ,
-      renderSectionHeader: e8,
-      renderSectionFooter: e5,
+      renderSectionHeader: e5,
+      renderSectionFooter: e8,
       renderSection: e4,
       renderCategoryList: te,
       renderHeaderAccessories: e9,
       rowHeight: et,
-      sectionHeaderHeight: e2,
-      sectionFooterHeight: e3,
+      sectionHeaderHeight: e3,
+      sectionFooterHeight: e2,
       listPadding: eH,
       itemNodeWidth: ei,
       gridNavigatorId: eP,

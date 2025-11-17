@@ -3,21 +3,21 @@
 require.d(exports, {
   Z: () => p
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk77878 = require("./77878.jsx"),
   Chunk770146 = require("./770146.jsx"),
   Chunk600164 = require("./600164.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk315208 = require("./315208.js");
-class d extends Chunk647438.PureComponent {
+class d extends Chunk473749.PureComponent {
   renderContentRatingImage() {
     let {
       contentRating: e,
       contentRatingAgency: t
     } = this.props.sku;
-    return null == module || null == exports ? null : (0, Chunk951288.jsx)(Chunk77878.Z, {
+    return null == module || null == exports ? null : (0, Chunk54381.jsx)(Chunk77878.Z, {
       className: Chunk315208.rating,
       agency: exports,
       rating: module.rating
@@ -89,13 +89,13 @@ class d extends Chunk647438.PureComponent {
         }
       },
       l = module.descriptors.map(e => i[t][e]).join(", ");
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: require,
-      children: [(0, Chunk951288.jsx)(Chunk770146.Z, {
+      children: [(0, Chunk54381.jsx)(Chunk770146.Z, {
         children: Chunk388032.intl.string(Chunk388032.t.q9Zqgl)
-      }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
+      }), (0, Chunk54381.jsxs)(Chunk600164.Z, {
         className: Chunk315208.content,
-        children: [this.renderContentRatingImage(), (0, Chunk951288.jsx)("div", {
+        children: [this.renderContentRatingImage(), (0, Chunk54381.jsx)("div", {
           className: Chunk315208.__invalid_info,
           children: Chunk77878
         })]

@@ -6,8 +6,8 @@ require.d(exports, {
   bL: () => y,
   kA: () => N
 }), require("./539854.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
@@ -88,28 +88,28 @@ let y = e => {
     })
   },
   P = () => {
-    let e = (0, Chunk951288.jsx)(Chunk28664.u, {
+    let e = (0, Chunk54381.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t.q3PkL5),
-      children: (0, Chunk951288.jsx)(Chunk481060.d3s, {
+      children: (0, Chunk54381.jsx)(Chunk481060.d3s, {
         size: "xs",
         color: "currentColor",
         className: Chunk698128.amountDisclaimer
       })
     });
-    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [Chunk388032.intl.string(Chunk388032.t["/MWnxs"]), " ", module]
     })
   },
   w = () => {
-    let e = (0, Chunk951288.jsx)(Chunk28664.u, {
+    let e = (0, Chunk54381.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t.cIGvZI),
-      children: (0, Chunk951288.jsx)(Chunk481060.d3s, {
+      children: (0, Chunk54381.jsx)(Chunk481060.d3s, {
         size: "xs",
         color: "currentColor",
         className: Chunk698128.statusDisclaimer
       })
     });
-    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [Chunk388032.intl.string(Chunk388032.t.oypxxw), " ", module]
     })
   },
@@ -153,7 +153,7 @@ let y = e => {
   }, {
     key: "amount",
     cellClassName: a()(Chunk698128.amountColumn, Chunk698128.cellAlignRight),
-    renderHeader: () => (0, Chunk951288.jsx)(P, {}),
+    renderHeader: () => (0, Chunk54381.jsx)(P, {}),
     render(e, t) {
       let {
         expandedRows: n
@@ -172,7 +172,7 @@ let y = e => {
   }, {
     key: "status",
     cellClassName: a()(Chunk698128.statusColumn, Chunk698128.cellAlignRight),
-    renderHeader: () => (0, Chunk951288.jsx)(w, {}),
+    renderHeader: () => (0, Chunk54381.jsx)(w, {}),
     render(e) {
       let {
         ppgStatus: t,

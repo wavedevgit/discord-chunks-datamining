@@ -3,13 +3,13 @@
 require.d(exports, {
   Z: () => s
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk252618 = require("./252618.js"),
   Chunk358085 = require("./358085.js"),
   Chunk388032 = require("./388032.jsx");
 
 function s() {
-  return Chunk647438.useEffect(() => {
+  return Chunk473749.useEffect(() => {
     Chunk358085.isPlatformEmbedded || (0, Chunk252618.EM)({
       messages: [Chunk388032.intl.string(Chunk388032.t.KIX3cl), Chunk388032.intl.string(Chunk388032.t["UbO+8i"]), Chunk388032.intl.string(Chunk388032.t.MbySu9)],
       interval: 600,

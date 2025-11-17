@@ -1,0 +1,25 @@
+/** Chunk was on 66382 **/
+/** chunk id: 996213, original params: e,t,r (module,exports,require) **/
+"use strict";
+require.d(exports, {
+  Z: () => a
+});
+var Chunk473749 = require("./473749.js"),
+  Chunk857614 = require("./857614.js");
+let a = function() {
+  var e = (0, Chunk857614.default)({
+    default: {
+      picker: {
+        width: "14px",
+        height: "14px",
+        borderRadius: "6px",
+        transform: "translate(-7px, -1px)",
+        backgroundColor: "rgb(248, 248, 248)",
+        boxShadow: "0 1px 4px 0 rgba(0, 0, 0, 0.37)"
+      }
+    }
+  });
+  return Chunk473749.createElement("div", {
+    style: module.picker
+  })
+}

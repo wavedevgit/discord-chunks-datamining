@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => O
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -60,8 +60,8 @@ function y(e, t) {
 
 function O() {
   let e = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    [t, g] = Chunk647438.useState(module),
-    [b] = Chunk647438.useState(() => (0, Chunk388032.getAvailableLocales)().map(e => {
+    [t, g] = Chunk473749.useState(module),
+    [b] = Chunk473749.useState(() => (0, Chunk388032.getAvailableLocales)().map(e => {
       let t;
       try {
         t = n(621287)("./".concat(e.value, ".png"))
@@ -89,7 +89,7 @@ function O() {
         })
       })
     })),
-    O = Chunk647438.useCallback(e => {
+    O = Chunk473749.useCallback(e => {
       let {
         value: t
       } = e;
@@ -99,9 +99,9 @@ function O() {
         })
       })
     }, []);
-  return (0, Chunk951288.jsx)(Chunk273313.Z, {
+  return (0, Chunk54381.jsx)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.IHMsPn),
-    children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
+    children: (0, Chunk54381.jsx)(Chunk755721.Gu, {
       label: Chunk388032.intl.string(Chunk388032.t["mx+sp7"]),
       onChange: O,
       options: b,

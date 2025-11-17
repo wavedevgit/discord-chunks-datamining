@@ -4,8 +4,8 @@ require.d(exports, {
   X: () => R,
   Z: () => L
 }), require("./953529.js"), require("./388685.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk345074 = require("./345074.js"),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
@@ -74,9 +74,9 @@ let Z = "dismissedCommunityFeaturesUpsell",
         guild: Chunk999382.Z.getGuild(),
         errors: Chunk999382.Z.getErrors()
       })),
-      l = Object.keys(Chunk647438),
+      l = Object.keys(Chunk473749),
       s = Chunk345074.length > 0 ? Chunk345074[0] : null;
-    return e = "rules_channel_id" === Chunk544891 ? Chunk388032.intl.string(Chunk388032.t["7IrBYt"]) : null != Chunk544891 ? Chunk647438[Chunk544891] : true, (0, Chunk951288.jsx)(Chunk796027.Z, {
+    return e = "rules_channel_id" === Chunk544891 ? Chunk388032.intl.string(Chunk388032.t["7IrBYt"]) : null != Chunk544891 ? Chunk473749[Chunk544891] : true, (0, Chunk54381.jsx)(Chunk796027.Z, {
       submitting: require,
       onReset: () => {
         null != exports && Chunk434404.Z.init(exports.id)
@@ -213,7 +213,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         isGuildAdmin: Chunk496675.Z.can(Chunk981631.Plq.ADMINISTRATOR, module)
       })),
       s = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != module ? Chunk984933.ZP.getChannels(module.id) : null),
-      c = Chunk647438.useMemo(Chunk929834.jb, []),
+      c = Chunk473749.useMemo(Chunk929834.jb, []),
       u = true !== Chunk433517.K.get(Z);
     if (null == module) return null;
     let m = [];
@@ -240,16 +240,16 @@ let Z = "dismissedCommunityFeaturesUpsell",
           description: e
         })
       };
-    return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+    return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       gap: 24,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.nRtNqn)
-      }), Chunk755721 ? (0, Chunk951288.jsx)(D, {
+      }), Chunk755721 ? (0, Chunk54381.jsx)(D, {
         discoveryEnabled: module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE),
         onboardingEnabled: module.features.has(Chunk981631.GuildFeatures.GUILD_ONBOARDING),
         guild: module
-      }) : null, (0, Chunk951288.jsx)(Chunk481060.VcW, {
+      }) : null, (0, Chunk54381.jsx)(Chunk481060.VcW, {
         layout: "horizontal-responsive",
         label: Chunk388032.intl.string(Chunk388032.t["otcXP/"]),
         description: Chunk388032.intl.string(Chunk388032.t.BtwmYB),
@@ -261,7 +261,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         },
         isDisabled: !exports
-      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.VcW, {
+      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk481060.VcW, {
         layout: "horizontal-responsive",
         label: Chunk388032.intl.string(Chunk388032.t.vAyDGU),
         description: Chunk388032.intl.string(Chunk388032.t.ZFeonu),
@@ -273,7 +273,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         },
         isDisabled: !require
-      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.VcW, {
+      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk481060.VcW, {
         layout: "horizontal-responsive",
         label: Chunk388032.intl.string(Chunk388032.t.sMkYE8),
         description: Chunk388032.intl.string(Chunk388032.t.htioQo),
@@ -285,7 +285,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         },
         isDisabled: !exports
-      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.VcW, {
+      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk481060.VcW, {
         layout: "horizontal-responsive",
         label: Chunk388032.intl.string(Chunk388032.t.pO60fy),
         description: Chunk388032.intl.string(Chunk388032.t.aIR73T),
@@ -297,9 +297,9 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         },
         isDisabled: !exports
-      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (() => {
+      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (() => {
         var n;
-        if (null != module) return (0, Chunk951288.jsx)(Chunk481060.Kx8, {
+        if (null != module) return (0, Chunk54381.jsx)(Chunk481060.Kx8, {
           label: Chunk388032.intl.string(Chunk388032.t["RSfm+i"]),
           description: Chunk388032.intl.string(Chunk388032.t["/B6PRw"]),
           value: null != (n = module.description) ? require : "",
@@ -308,14 +308,14 @@ let Z = "dismissedCommunityFeaturesUpsell",
           maxLength: Chunk345074.Us,
           disabled: !exports
         })
-      })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.gNt, {
+      })(), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t.c1BmbC),
         description: Chunk388032.intl.string(Chunk388032.t.aQzVF8),
         layout: "horizontal",
-        children: (0, Chunk951288.jsx)(Chunk28664.u, {
+        children: (0, Chunk54381.jsx)(Chunk28664.u, {
           text: require ? null : Chunk388032.intl.string(Chunk388032.t["pjG+T3"]),
           "aria-label": require ? true : Chunk388032.intl.string(Chunk388032.t["pjG+T3"]),
-          children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+          children: (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "critical-primary",
             size: "sm",
             text: Chunk388032.intl.string(Chunk388032.t.c1BmbC),
@@ -357,7 +357,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
   },
   L = () => {
     let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild());
-    return null == module ? null : module.features.has(Chunk981631.GuildFeatures.COMMUNITY) ? (0, Chunk951288.jsx)(A, {}) : (0, Chunk951288.jsx)(Chunk906512.Z, {
+    return null == module ? null : module.features.has(Chunk981631.GuildFeatures.COMMUNITY) ? (0, Chunk54381.jsx)(A, {}) : (0, Chunk54381.jsx)(Chunk906512.Z, {
       guild: module
     })
   }

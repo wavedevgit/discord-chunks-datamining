@@ -4,9 +4,9 @@
 require.d(exports, {
   Z: () => eh
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
-  Chunk574583 = require("./574583.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
+  Chunk55160 = require("./55160.js"),
   Chunk442837 = require("./442837.js"),
   Chunk477690 = require("./477690.js"),
   Chunk481060 = require("./481060.js"),
@@ -340,7 +340,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       }, [g, t])
     }
   },
-  eh = Chunk647438.forwardRef(function(e, t) {
+  eh = Chunk473749.forwardRef(function(e, t) {
     let {
       collapsedStickersCategories: n,
       gridWidth: s,

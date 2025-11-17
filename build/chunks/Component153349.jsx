@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => M
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -63,7 +63,7 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = Chunk647438.memo(function(e) {
+let w = Chunk473749.memo(function(e) {
     let {
       toggleRequestToSpeakSidebar: t,
       chatOpen: n
@@ -86,7 +86,7 @@ let w = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  A = Chunk647438.memo(function(e) {
+  A = Chunk473749.memo(function(e) {
     var t;
     let {
       channel: l,
@@ -191,7 +191,7 @@ let w = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  D = Chunk647438.memo(function(e) {
+  D = Chunk473749.memo(function(e) {
     let {
       channel: t
     } = e, [n, i] = (0, S.h)(t.id);
@@ -201,15 +201,15 @@ let w = Chunk647438.memo(function(e) {
       onChange: i
     })
   }),
-  L = Chunk647438.memo(function() {
-    return (0, Chunk951288.jsxs)("div", {
+  L = Chunk473749.memo(function() {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk112848.emptyStateContainer,
-      children: [(0, Chunk951288.jsx)(Chunk618896.Z, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk618896.Z, {}), (0, Chunk54381.jsx)(Chunk481060.Text, {
         className: Chunk112848.emptyStateTitle,
         variant: "text-lg/semibold",
         color: "header-primary",
         children: Chunk388032.intl.string(Chunk388032.t["7R24mX"])
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         className: Chunk112848.emptyStateBody,
         variant: "text-sm/normal",
         color: "header-secondary",

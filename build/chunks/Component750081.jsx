@@ -2,9 +2,9 @@
 /** chunk id: 750081, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./358797.js");
-var r, i, a, o, s, Chunk951288 = require("./951288.js");
-require("./92138.js"), require("./647438.js");
-var Chunk602954 = require("./602954.js"),
+var r, i, a, o, s, Chunk54381 = require("./54381.js");
+require("./92138.js"), require("./473749.js");
+var Chunk748721 = require("./748721.js"),
   Chunk512722 = require("./512722.js"),
   d = require.n(Chunk512722),
   Chunk832037 = require("./832037.jsx"),
@@ -41,7 +41,7 @@ Chunk857192.default.cssDebuggingEnabled && require.e("95666").then(require.bind(
 let Z = 5 * Chunk70956.Z.Millis.MINUTE,
   F = document.getElementById("app-mount");
 d()(null != F, "Could not find app-mount"), F.className = __OVERLAY__ ? "" : Chunk113752.appMount;
-let V = (0, Chunk602954.createRoot)(F),
+let V = (0, Chunk748721.createRoot)(F),
   H = {
     "/oauth2/authorize": Chunk534713.Z,
     "/one-time": Chunk758731.Z
@@ -73,7 +73,7 @@ if (null != Chunk579806.Z) {
     nativeBuildNumber: null == exports ? true : exports.toString()
   });
   let l = Object.keys(require).filter(e => null != n[e]).map(e => "".concat(e, ": ").concat(n[e])).join(", ");
-  new Chunk710845.Z().log("[NATIVE INFO] host ".concat(module, ", modules: ").concat(Chunk951288, ", build: ").concat(exports)), Chunk998502.ZP.pauseFrameEvictor(), Chunk998502.ZP.initializeExitHook(), Chunk998502.ZP.initializeWERHandler()
+  new Chunk710845.Z().log("[NATIVE INFO] host ".concat(module, ", modules: ").concat(Chunk54381, ", build: ").concat(exports)), Chunk998502.ZP.pauseFrameEvictor(), Chunk998502.ZP.initializeExitHook(), Chunk998502.ZP.initializeWERHandler()
 }
 if ((0, Chunk473159.O)(window), __OVERLAY__) W(Chunk832037.Z.Overlay);
 else if (null != window.require && null == window.DiscordNative) W(Chunk832037.Z.OutdatedClient);

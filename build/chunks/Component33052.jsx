@@ -4,7 +4,7 @@
 require.d(exports, {
   K: () => f
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -27,23 +27,23 @@ function f() {
     h = (0, Chunk717401.Tl)(_.gradientConfig, {
       defaultAngle: 180
     });
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk897159.promotionalGiftMessage,
     style: null != p ? p : h,
-    children: [(0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk897159.promotionalTextSection,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
         children: _.heading()
-      }), null != _.subheading && (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), null != _.subheading && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "always-white",
         children: _.subheading(require.length)
       })]
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk897159.avatar,
-      children: (0, Chunk951288.jsx)(Chunk897942.Z, {
+      children: (0, Chunk54381.jsx)(Chunk897942.Z, {
         maxRewardImageSrc: _.getImageUrl(true, exports),
         claimableRewards: require,
         size: Chunk481060.EFr.SIZE_80

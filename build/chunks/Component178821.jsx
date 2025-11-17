@@ -10,8 +10,8 @@ require.d(exports, {
   nU: () => S,
   tO: () => x
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -386,8 +386,8 @@ function C(e) {
 }
 
 function S() {
-  let [, e] = Chunk647438.useState({});
-  Chunk647438.useEffect(() => {
+  let [, e] = Chunk473749.useState({});
+  Chunk473749.useEffect(() => {
     let t = setInterval(() => {
       module({})
     }, h);
@@ -399,21 +399,21 @@ function S() {
 
 function O() {
   let e = (0, Chunk442837.e7)([Chunk38618.Z], () => Chunk38618.Z.getSocket()),
-    [t, r] = Chunk647438.useState(false);
-  return S(), (0, Chunk951288.jsx)("div", {
+    [t, r] = Chunk473749.useState(false);
+  return S(), (0, Chunk54381.jsx)("div", {
     className: l()(Chunk451429.panel, Chunk499504.panel),
-    children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
+    children: (0, Chunk54381.jsxs)(Chunk481060.zJl, {
       className: Chunk499504.panel,
-      children: [(0, Chunk951288.jsx)(y, {
+      children: [(0, Chunk54381.jsx)(y, {
         socket: module,
         isAverageFrameTime: exports
-      }), (0, Chunk951288.jsx)(T, {
+      }), (0, Chunk54381.jsx)(T, {
         socket: module,
         isAverageFrameTime: exports,
         onToggleAverageFrameTime: require
-      }), (0, Chunk951288.jsx)(R, {
+      }), (0, Chunk54381.jsx)(R, {
         socket: module
-      }), (0, Chunk951288.jsx)(C, {
+      }), (0, Chunk54381.jsx)(C, {
         socket: module
       })]
     })

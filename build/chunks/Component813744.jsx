@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => f
 }), require("./388685.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk314910 = require("./314910.jsx"),
@@ -24,25 +24,25 @@ function f() {
     }),
     [f, _] = (0, Chunk442837.Wu)([Chunk517100.Z], () => [Chunk517100.Z.isIdle(), Chunk517100.Z.isAFK()]),
     p = [];
-  return f || _ || p.push("ACTIVE"), f && p.push("IDLE"), _ && p.push("AFK"), require && exports ? (0, Chunk951288.jsx)(Chunk314910.ZP, {
-    children: (0, Chunk951288.jsxs)("div", {
+  return f || _ || p.push("ACTIVE"), f && p.push("IDLE"), _ && p.push("AFK"), require && exports ? (0, Chunk54381.jsx)(Chunk314910.ZP, {
+    children: (0, Chunk54381.jsxs)("div", {
       className: Chunk954479.container,
-      children: [(0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk954479.status,
-        children: [(0, Chunk951288.jsx)(Chunk481060.qbd, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.qbd, {
           status: p.includes("ACTIVE") ? Chunk231338.Sk.ONLINE : Chunk231338.Sk.IDLE,
           className: Chunk954479.statusIndicator
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "IDLE STATUS:"
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: Chunk954479.statusText,
-          children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+          children: (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-md/bold",
             children: p.join(" + ")
           })
         })]
-      }), f && (0, Chunk951288.jsxs)(Chunk481060.Text, {
+      }), f && (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Idle since:", " ", new Date(null != (e = Chunk517100.Z.getIdleSince()) ? module : 0).toLocaleDateString(true, {
           year: "numeric",

@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => ed
 }), require("./704826.js"), require("./35282.js"), require("./781311.js"), require("./388685.js"), require("./314940.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk593473 = require("./593473.js"),
@@ -85,7 +85,7 @@ function ea(e) {
 Chunk442837.ZP.initialize();
 let eo = /\.$/,
   ec = e => Array.isArray(e) ? e.map(e => e.replace(eo, "")).join(". ").trim() : e;
-class eu extends(r = Chunk647438.PureComponent) {
+class eu extends(r = Chunk473749.PureComponent) {
   get registrationSource() {
     let {
       giftCode: e,
@@ -189,23 +189,23 @@ class eu extends(r = Chunk647438.PureComponent) {
     });
     try {
       this.inGuildOrChannelInviteFlow() ? await (0, Chunk481230.ZP)({
-        consent: Chunk951288,
+        consent: Chunk54381,
         invite: Chunk442837,
         giftCodeSKUId: Chunk846519,
         usedUsernameSuggestion: Chunk481060,
         globalName: Chunk899370,
-        birthday: Chunk647438
+        birthday: Chunk473749
       }) : await (0, Chunk481230.R$)({
         email: module,
         username: Chunk893776,
         globalName: Chunk899370,
-        consent: Chunk951288,
+        consent: Chunk54381,
         password: r,
         invite: Chunk442837,
         usedUsernameSuggestion: Chunk481060,
         guildTemplateCode: null == a ? true : a.code,
         giftCodeSKUId: Chunk846519,
-        birthday: Chunk647438,
+        birthday: Chunk473749,
         promoEmailConsent: Chunk28664.required ? Chunk28664 : null
       }), null == Chunk278074 || Chunk278074()
     } catch (t) {
@@ -227,7 +227,7 @@ class eu extends(r = Chunk647438.PureComponent) {
     } = this.state, {
       consentRequired: t
     } = this.props;
-    return exports ? (0, Chunk951288.jsx)(Chunk853268.default, {
+    return exports ? (0, Chunk54381.jsx)(Chunk853268.default, {
       value: module,
       onChange: e => this.setState({
         consent: e
@@ -238,7 +238,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       }),
       marginTopStyle: Chunk33724.consentBox,
       subtextClassName: Chunk33724.consentSubText
-    }) : (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }) : (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
       className: a()(Chunk197571.marginTop8, Chunk33724.consentSubText),
@@ -256,14 +256,14 @@ class eu extends(r = Chunk647438.PureComponent) {
         globalName: e
       })
     }, n = this.state.globalName;
-    return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
+    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
       className: module,
-      children: [(0, Chunk951288.jsx)(Chunk588705.R, {}), (0, Chunk951288.jsxs)(Chunk388905.gO, {
+      children: [(0, Chunk54381.jsx)(Chunk588705.R, {}), (0, Chunk54381.jsxs)(Chunk388905.gO, {
         className: Chunk33724.authBlock,
-        children: [(0, Chunk951288.jsx)(Chunk28664.u, {
+        children: [(0, Chunk54381.jsx)(Chunk28664.u, {
           text: Chunk388032.intl.string(Chunk388032.t["hBB85/"]),
           position: "right",
-          children: (0, Chunk951288.jsx)(Chunk388905.II, {
+          children: (0, Chunk54381.jsx)(Chunk388905.II, {
             label: Chunk388032.intl.string(Chunk388032.t["9AjdkD"]),
             autoFocus: true,
             className: Chunk197571.marginBottom8,
@@ -274,7 +274,7 @@ class eu extends(r = Chunk647438.PureComponent) {
             onFocus: () => this.trackInputFocus("username"),
             onBlur: () => this.trackInputBlur("username")
           })
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
           className: a()(Chunk197571.marginTop20, Chunk33724.consentSubText),
@@ -282,17 +282,17 @@ class eu extends(r = Chunk647438.PureComponent) {
             termsURL: Chunk981631.EYA.TERMS,
             privacyURL: Chunk981631.EYA.PRIVACY
           })
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: Chunk197571.marginTop8,
-          children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+          children: (0, Chunk54381.jsx)(Chunk481060.Button, {
             text: Chunk388032.intl.string(Chunk388032.t["825cFy"]),
             variant: "primary",
             fullWidth: true,
             disabled: true
           })
-        }), Chunk188785.a ? null : (0, Chunk951288.jsx)("div", {
+        }), Chunk188785.a ? null : (0, Chunk54381.jsx)("div", {
           className: Chunk197571.marginTop20,
-          children: (0, Chunk951288.jsx)(Chunk481060.Avr, {
+          children: (0, Chunk54381.jsx)(Chunk481060.Avr, {
             text: Chunk388032.intl.string(Chunk388032.t["1lWxux"]),
             textVariant: "text-sm/normal",
             disabled: true
@@ -305,10 +305,10 @@ class eu extends(r = Chunk647438.PureComponent) {
     let {
       invite: e
     } = this.props;
-    return (null == module ? true : module.guild_scheduled_event) != null ? (0, Chunk951288.jsx)(Chunk639946.r, {
+    return (null == module ? true : module.guild_scheduled_event) != null ? (0, Chunk54381.jsx)(Chunk639946.r, {
       channel: module.channel,
       guildScheduledEvent: module.guild_scheduled_event
-    }) : (0, Chunk951288.jsx)(Chunk588705.Z, {
+    }) : (0, Chunk54381.jsx)(Chunk588705.Z, {
       invite: module,
       inUnclaimedFlow: true
     })
@@ -320,11 +320,11 @@ class eu extends(r = Chunk647438.PureComponent) {
       consent: t,
       registering: n
     } = this.state, r = Chunk388032.intl.string(Chunk388032.t["825cFy"]);
-    return (0, Chunk951288.jsx)(Chunk28664.u, {
+    return (0, Chunk54381.jsx)(Chunk28664.u, {
       text: !exports && module ? Chunk388032.intl.string(Chunk388032.t.AY4IVA) : null,
-      children: (0, Chunk951288.jsx)("div", {
+      children: (0, Chunk54381.jsx)("div", {
         className: Chunk197571.marginTop8,
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           text: r,
           variant: "primary",
           fullWidth: true,
@@ -354,16 +354,16 @@ class eu extends(r = Chunk647438.PureComponent) {
         globalName: e
       })
     };
-    return (0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsxs)(Chunk388905.ZP, {
+    return (0, Chunk54381.jsxs)("div", {
+      children: [(0, Chunk54381.jsxs)(Chunk388905.ZP, {
         onSubmit: this.handleSubmit,
         tag: "form",
         className: exports,
-        children: [this.renderInviteHeader(), Chunk990547 ? (0, Chunk951288.jsx)("div", {
+        children: [this.renderInviteHeader(), Chunk990547 ? (0, Chunk54381.jsx)("div", {
           className: Chunk33724.divider
-        }) : null, (0, Chunk951288.jsxs)(Chunk388905.gO, {
+        }) : null, (0, Chunk54381.jsxs)(Chunk388905.gO, {
           className: Chunk990547 ? true : Chunk33724.authBlock,
-          children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
             helperText: Chunk388032.intl.string(Chunk388032.t["330TCc"]),
             label: Chunk388032.intl.string(Chunk388032.t["9AjdkD"]),
             error: null != a ? a : ec(null != r ? r : require),
@@ -382,26 +382,26 @@ class eu extends(r = Chunk647438.PureComponent) {
                 globalNameFocused: false
               }), this.trackInputBlur("global_name")
             }
-          }), Chunk188785.a ? null : (0, Chunk951288.jsx)(Chunk13430.Z, {
+          }), Chunk188785.a ? null : (0, Chunk54381.jsx)(Chunk13430.Z, {
             label: Chunk388032.intl.string(Chunk388032.t.rhBeKe),
             wrapperClassName: Chunk33724.inviteBirthdayInput,
             name: "date_of_birth",
             onChange: this.handleBirthdayChange,
             ref: this.dateOfBirthRef,
-            error: null != Chunk593473 ? Chunk593473 : ec(Chunk647438),
+            error: null != Chunk593473 ? Chunk593473 : ec(Chunk473749),
             value: Chunk278074
-          }), this.renderConsentComponent(), this.renderInviteButton(), Chunk188785.a ? null : (0, Chunk951288.jsx)("div", {
+          }), this.renderConsentComponent(), this.renderInviteButton(), Chunk188785.a ? null : (0, Chunk54381.jsx)("div", {
             className: Chunk197571.marginTop20,
-            children: (0, Chunk951288.jsx)(Chunk481060.Avr, {
+            children: (0, Chunk54381.jsx)(Chunk481060.Avr, {
               text: Chunk388032.intl.string(Chunk388032.t["1lWxux"]),
               textVariant: "text-sm/normal",
               onClick: this.handleGotoLogin
             })
           })]
         })]
-      }), null != module && Chunk990547 ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
+      }), null != module && Chunk990547 ? (0, Chunk54381.jsx)(Chunk388905.ZP, {
         className: Chunk197571.marginTop20,
-        children: (0, Chunk951288.jsx)(Chunk792766.y, {
+        children: (0, Chunk54381.jsx)(Chunk792766.y, {
           guild: module.guild,
           onlineCount: module.approximate_presence_count
         })
@@ -414,7 +414,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         message: e
       }
     } = this.state;
-    return "string" != typeof module ? null : (0, Chunk951288.jsx)(Chunk388905.i_, {
+    return "string" != typeof module ? null : (0, Chunk54381.jsx)(Chunk388905.i_, {
       className: a()(Chunk197571.marginTop20, Chunk33724.errorMessage),
       children: module
     })
@@ -613,17 +613,17 @@ class eu extends(r = Chunk647438.PureComponent) {
     let {
       isUnderage: e
     } = this.props, t = this.inGuildOrChannelInviteFlow();
-    if (module || this.hasError("date_of_birth")) return (0, Chunk951288.jsx)(Chunk224841.Z, {});
+    if (module || this.hasError("date_of_birth")) return (0, Chunk54381.jsx)(Chunk224841.Z, {});
     let {
       giftCode: n,
       invite: r,
       guildTemplate: s
     } = this.props, l = null != r && null == r.guild && null == r.channel && null != r.inviter;
-    return null != r && exports ? r.state === Chunk981631.r2o.RESOLVING ? this.renderInviteResolving() : this.renderInvite() : null != Chunk647438 ? this.renderFull(() => (0, Chunk951288.jsx)(Chunk473855.Z, {
-      guildTemplate: Chunk647438
-    }), true) : null != require ? this.renderFull(() => (0, Chunk951288.jsx)(Chunk481153.Z, {
+    return null != r && exports ? r.state === Chunk981631.r2o.RESOLVING ? this.renderInviteResolving() : this.renderInvite() : null != Chunk473749 ? this.renderFull(() => (0, Chunk54381.jsx)(Chunk473855.Z, {
+      guildTemplate: Chunk473749
+    }), true) : null != require ? this.renderFull(() => (0, Chunk54381.jsx)(Chunk481153.Z, {
       giftCode: require
-    })) : null != r && Chunk120356 && r.state === Chunk981631.r2o.RESOLVED ? this.renderFull(() => (0, Chunk951288.jsx)(Chunk588705.Z, {
+    })) : null != r && Chunk120356 && r.state === Chunk981631.r2o.RESOLVED ? this.renderFull(() => (0, Chunk54381.jsx)(Chunk588705.Z, {
       invite: r,
       isRegister: true
     })) : this.renderFull()

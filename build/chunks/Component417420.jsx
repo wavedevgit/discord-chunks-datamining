@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk921801 = require("./921801.js"),
   Chunk626135 = require("./626135.js"),
@@ -16,9 +16,9 @@ var Chunk481060 = require("./481060.js"),
 
 function d() {
   let e = Chunk695346.qF.useSetting();
-  return (0, Chunk951288.jsx)(Chunk921801.F, {
+  return (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
-    children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t["3Ppr1h"]),
       description: Chunk388032.intl.string(Chunk388032.t.WNbX4O),
       checked: module,

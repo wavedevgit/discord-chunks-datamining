@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => E
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk704215 = require("./704215.js"),
@@ -195,9 +195,9 @@ function Z(e) {
 }
 
 function P() {
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: Chunk865239.spinnerWrapper,
-    children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
+    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
       type: Chunk481060.$jN.Type.SPINNING_CIRCLE,
       className: Chunk865239.spinner,
       itemClassName: Chunk865239.spinnerPath
@@ -230,12 +230,12 @@ function T(e) {
 }
 
 function N() {
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       color: "header-secondary",
       children: Chunk388032.intl.string(Chunk388032.t.uixzLf)
-    }), (0, Chunk951288.jsx)(P, {})]
+    }), (0, Chunk54381.jsx)(P, {})]
   })
 }
 

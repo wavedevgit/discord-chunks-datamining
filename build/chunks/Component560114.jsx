@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => eh
 }), require("./997841.js"), require("./388685.js");
-var i, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var i, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -97,7 +97,7 @@ let {
   INVITE_OPTIONS_7_DAYS: eo,
   INVITE_OPTIONS_UNLIMITED: eu
 } = Chunk971130.ZP;
-class ed extends(i = Chunk647438.PureComponent) {
+class ed extends(i = Chunk473749.PureComponent) {
   componentDidMount() {
     let {
       inviteChannel: e,
@@ -121,7 +121,7 @@ class ed extends(i = Chunk647438.PureComponent) {
       temporary: m,
       flags: S
     } = Chunk775086;
-    if (Chunk951288) {
+    if (Chunk54381) {
       let n = null == module ? true : module.id;
       if (null == require) return;
       Chunk442837({
@@ -153,7 +153,7 @@ class ed extends(i = Chunk647438.PureComponent) {
       Chunk626135.default.track(Chunk981631.rMx.OPEN_MODAL, {
         type: "Send Stream Invite",
         source: i,
-        location: Chunk647438,
+        location: Chunk473749,
         other_user_id: Chunk120356,
         application_id: null != exports ? exports.id : null,
         application_name: null != exports ? exports.name : null,
@@ -162,7 +162,7 @@ class ed extends(i = Chunk647438.PureComponent) {
     } else(null == u ? true : u.id) != null || Chunk626135.default.track(Chunk981631.rMx.OPEN_MODAL, {
       type: "Instant Invite Modal",
       source: i,
-      location: Chunk647438
+      location: Chunk473749
     })
   }
   componentWillUnmount() {
@@ -180,9 +180,9 @@ class ed extends(i = Chunk647438.PureComponent) {
       modalState: i
     } = this.props, {
       showVanityURL: l
-    } = i, s = Chunk951288 ? exports : null != module ? module : exports;
-    return null == Chunk647438 ? Chunk647438 : (0, Chunk264229.tV)({
-      baseCode: Chunk647438,
+    } = i, s = Chunk54381 ? exports : null != module ? module : exports;
+    return null == Chunk473749 ? Chunk473749 : (0, Chunk264229.tV)({
+      baseCode: Chunk473749,
       guildScheduledEventId: null == require ? true : require.id
     })
   }
@@ -190,14 +190,14 @@ class ed extends(i = Chunk647438.PureComponent) {
     let {
       inviteChannel: e
     } = this.props;
-    return (0, Chunk447003.Z)(module) ? (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk447003.Z)(module) ? (0, Chunk54381.jsxs)("div", {
       className: Chunk451964.warningContainer,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Mgn, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Mgn, {
         size: "custom",
         className: Chunk451964.warningIcon,
         color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css,
         width: 12
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
         children: Chunk388032.intl.string(Chunk388032.t.x1SQZb)
@@ -212,7 +212,7 @@ class ed extends(i = Chunk647438.PureComponent) {
       application: r,
       inviteChannel: a
     } = this.props;
-    if (e = null != Chunk647438 ? Chunk388032.intl.string(Chunk388032.t["6VQaqd"]) : null != Chunk120356 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.ZdK3dW, {
+    if (e = null != Chunk473749 ? Chunk388032.intl.string(Chunk388032.t["6VQaqd"]) : null != Chunk120356 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.ZdK3dW, {
         applicationName: Chunk120356.name
       }) : null != i ? Chunk388032.intl.string(Chunk388032.t.JKV4FL) : (null == a ? true : a.isGuildStageVoice()) ? Chunk388032.intl.string(Chunk388032.t.zTrsH0) : Chunk388032.intl.formatToPlainString(Chunk388032.t.NvVBJU, {
         name: require.name
@@ -245,8 +245,8 @@ class ed extends(i = Chunk647438.PureComponent) {
     } = module, s = this.getListProps();
     return {
       bodyContent: true,
-      controls: (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [exports && (0, Chunk951288.jsx)(Chunk481060.E1j, {
+      controls: (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [exports && (0, Chunk54381.jsx)(Chunk481060.E1j, {
           size: "sm",
           query: i,
           onChange: this.handleQueryChange,
@@ -255,7 +255,7 @@ class ed extends(i = Chunk647438.PureComponent) {
           onClear: this.handleClearSearch
         }), !require.features.has(Chunk981631.GuildFeatures.HUB) && this.renderChannelWarning()]
       }),
-      listProps: Chunk647438
+      listProps: Chunk473749
     }
   }
   getListProps() {
@@ -267,9 +267,9 @@ class ed extends(i = Chunk647438.PureComponent) {
     return 0 === module.length ? {
       sections: [1],
       sectionHeight: 0,
-      renderRow: () => (0, Chunk951288.jsx)("div", {
+      renderRow: () => (0, Chunk54381.jsx)("div", {
         className: Chunk451964.inviteRowEmptyState,
-        children: (0, Chunk951288.jsx)(Chunk481060.OZU, {
+        children: (0, Chunk54381.jsx)(Chunk481060.OZU, {
           children: Chunk388032.intl.string(Chunk388032.t.ojoWgX)
         })
       }),
@@ -277,9 +277,9 @@ class ed extends(i = Chunk647438.PureComponent) {
     } : null == i ? {
       sections: [1],
       sectionHeight: 0,
-      renderRow: () => (0, Chunk951288.jsx)("div", {
+      renderRow: () => (0, Chunk54381.jsx)("div", {
         className: Chunk451964.inviteRowEmptyState,
-        children: (0, Chunk951288.jsx)(Chunk481060.OZU, {
+        children: (0, Chunk54381.jsx)(Chunk481060.OZU, {
           children: Chunk388032.intl.string(Chunk388032.t.hzPwGG)
         })
       }),
@@ -311,13 +311,13 @@ class ed extends(i = Chunk647438.PureComponent) {
       a = Chunk594174.default.getCurrentUser();
     u()(null != a, "InstantInviteModal: user cannot be undefined");
     let o = (0, Chunk601964.eM)(exports, a) ? Chunk388032.intl.string(Chunk388032.t.HFbByJ) : Chunk388032.intl.string(Chunk388032.t.ueBhA9);
-    return null != i ? o = Chunk388032.intl.string(Chunk388032.t.CXpS1I) : null != Chunk647438 && (o = Chunk388032.intl.string(Chunk388032.t.ueCrHB)), {
-      bodyContent: (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+    return null != i ? o = Chunk388032.intl.string(Chunk388032.t.CXpS1I) : null != Chunk473749 && (o = Chunk388032.intl.string(Chunk388032.t.ueCrHB)), {
+      bodyContent: (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           className: Chunk451964.subText,
           variant: "text-sm/normal",
           children: Chunk512722
-        }), (0, Chunk951288.jsx)(Chunk603236.I, er(es({}, this.props), {
+        }), (0, Chunk54381.jsx)(Chunk603236.I, er(es({}, this.props), {
           setInviteFlags: this.handleSetInviteFlags,
           copyValue: Chunk120356
         }))]
@@ -341,25 +341,25 @@ class ed extends(i = Chunk647438.PureComponent) {
     } = Chunk512722, d = null, c = (0, Chunk366980.Z)(null != (e = this.getInviteKey()) ? module : "");
     if (require) {
       let e = Chunk388032.intl.string(Chunk388032.t.MLkj7N);
-      null != Chunk647438 ? e = Chunk388032.intl.string(Chunk388032.t["1b9neu"]) : null != Chunk120356 ? e = Chunk388032.intl.string(Chunk388032.t.iI1gMg) : null != i ? e = Chunk388032.intl.string(Chunk388032.t.KaWCyD) : (null == a ? true : a.isGuildStageVoice()) && (e = Chunk388032.intl.string(Chunk388032.t["2frWa3"])), d = (0, Chunk951288.jsx)(Chunk481060.gNt, {
+      null != Chunk473749 ? e = Chunk388032.intl.string(Chunk388032.t["1b9neu"]) : null != Chunk120356 ? e = Chunk388032.intl.string(Chunk388032.t.iI1gMg) : null != i ? e = Chunk388032.intl.string(Chunk388032.t.KaWCyD) : (null == a ? true : a.isGuildStageVoice()) && (e = Chunk388032.intl.string(Chunk388032.t["2frWa3"])), d = (0, Chunk54381.jsx)(Chunk481060.gNt, {
         label: module,
-        children: (0, Chunk951288.jsx)(Chunk603236.I, er(es({}, this.props), {
+        children: (0, Chunk54381.jsx)(Chunk603236.I, er(es({}, this.props), {
           setInviteFlags: this.handleSetInviteFlags,
           copyValue: c
         }))
       })
-    } else exports || (d = (0, Chunk951288.jsxs)("div", {
+    } else exports || (d = (0, Chunk54381.jsxs)("div", {
       className: Chunk451964.footerWithCheckbox,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Checkbox, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Checkbox, {
         checked: u === ea.value,
         onChange: this.handleToggleMaxAge,
         label: Chunk388032.intl.string(Chunk388032.t["QKJru/"])
-      }), (0, Chunk951288.jsx)(Chunk681715.u, {
+      }), (0, Chunk54381.jsx)(Chunk681715.u, {
         text: Chunk388032.intl.string(Chunk388032.t.Yx4IiC),
-        children: (0, Chunk951288.jsx)(Chunk481060.P3F, {
+        children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
           onClick: this.openSettings,
           className: Chunk103126.cursorPointer,
-          children: (0, Chunk951288.jsx)(Chunk481060.ewm, {
+          children: (0, Chunk54381.jsx)(Chunk481060.ewm, {
             size: "sm",
             color: Chunk692547.Z.unsafe_rawColors.PRIMARY_400.css
           })
@@ -377,7 +377,7 @@ class ed extends(i = Chunk647438.PureComponent) {
     } = this.props, {
       currentPage: s
     } = module;
-    switch (Chunk647438) {
+    switch (Chunk473749) {
       case Chunk245335.RV.MAIN:
         let {
           title: r, subtitle: a
@@ -386,7 +386,7 @@ class ed extends(i = Chunk647438.PureComponent) {
           controls: u,
           listProps: d
         } = this.getBodyContent();
-        return (0, Chunk951288.jsx)(Chunk775086.u, {
+        return (0, Chunk54381.jsx)(Chunk775086.u, {
           transitionState: require,
           onClose: i,
           title: Chunk120356,
@@ -398,7 +398,7 @@ class ed extends(i = Chunk647438.PureComponent) {
           children: Chunk512722
         });
       case Chunk245335.RV.SETTINGS:
-        return (0, Chunk951288.jsx)(Chunk585385.D, er(es({}, this.props), {
+        return (0, Chunk54381.jsx)(Chunk585385.D, er(es({}, this.props), {
           onSetInviteFlags: this.handleSetInviteFlags,
           headerId: this._headerId,
           onSelectMaxAge: this.handleSelectMaxAge,
@@ -416,7 +416,7 @@ class ed extends(i = Chunk647438.PureComponent) {
       isFriendsInVCInvitesEnabled: t,
       sections: n
     } = this.props;
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: a()({
         [Chunk451964.isFriendsInVCInvitesExperiment]: exports && null != require,
         [Chunk451964.wrapper]: module
@@ -599,7 +599,7 @@ el(ed, "defaultProps", {
   analyticsLocation: Chunk981631.Sbl.GUILD_CREATE_INVITE_SUGGESTION,
   defaultMaxAge: eo.value
 });
-let eg = Chunk647438.forwardRef(function(e, t) {
+let eg = Chunk473749.forwardRef(function(e, t) {
   var n, i;
   let {
     channel: r,

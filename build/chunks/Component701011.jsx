@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => O
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
@@ -33,8 +33,8 @@ function O() {
       channelId: exports,
       guildId: require
     }
-  }), O = Chunk647438.useRef(null), j = (0, Chunk110924.Z)(module);
-  Chunk647438.useEffect(() => {
+  }), O = Chunk473749.useRef(null), j = (0, Chunk110924.Z)(module);
+  Chunk473749.useEffect(() => {
     null != module ? clearTimeout(O.current) : null != j && null == module && (O.current = window.setTimeout(() => {
       (0, Chunk788983.xv)(Chunk981631.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
@@ -44,29 +44,29 @@ function O() {
       return null == exports ? true : Chunk812206.Z.getApplication(exports)
     }),
     P = (0, Chunk426419.P)();
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: Chunk427509.container,
-    children: null == module || null == x ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
+    children: null == module || null == x ? (0, Chunk54381.jsx)(Chunk481060.$jN, {
       className: Chunk427509.iframe
-    }) : (0, Chunk951288.jsx)("div", {
+    }) : (0, Chunk54381.jsx)("div", {
       className: Chunk427509.loadedContentContainer,
-      children: (0, Chunk951288.jsxs)("div", {
+      children: (0, Chunk54381.jsxs)("div", {
         className: Chunk427509.iframeAndHeaderContainer,
-        children: [(0, Chunk951288.jsx)("div", {
+        children: [(0, Chunk54381.jsx)("div", {
           className: Chunk427509.headerContainer,
-          children: (0, Chunk951288.jsx)(Chunk325749.Z, {
+          children: (0, Chunk54381.jsx)(Chunk325749.Z, {
             applicationId: x.id,
             channelId: exports
           })
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: Chunk427509.iframeContainer,
-          children: (0, Chunk951288.jsx)(Chunk781780.Z, {
+          children: (0, Chunk54381.jsx)(Chunk781780.Z, {
             channelId: exports,
             guildId: require,
             embeddedActivity: module,
             application: x
           })
-        }), P ? (0, Chunk951288.jsx)(Chunk554370.Z, {
+        }), P ? (0, Chunk54381.jsx)(Chunk554370.Z, {
           isEmbeddedActivity: true
         }) : null]
       })

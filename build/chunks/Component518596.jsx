@@ -8,7 +8,7 @@ require.r(exports), require.d(exports, {
   openUserSettings: () => y,
   openUserSettingsFromParsedUrl: () => S
 }), require("./388685.js"), require("./35282.js");
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk37234 = require("./37234.js"),
@@ -170,7 +170,7 @@ function I() {
 function T() {
   let e = I(),
     t = new Map;
-  for (let [n, r] of module.entries()) exports.set(Chunk951288, require);
+  for (let [n, r] of module.entries()) exports.set(Chunk54381, require);
   return exports
 }
 

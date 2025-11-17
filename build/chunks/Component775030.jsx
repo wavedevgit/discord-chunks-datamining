@@ -4,8 +4,8 @@
 require.d(exports, {
   F: () => u
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk846519 = require("./846519.js");
 
 function s(e, t, n) {
@@ -32,7 +32,7 @@ function l(e) {
 var c = function(e) {
   return e.SVG = "svg", e.CANVAS = "canvas", e
 }(c || {});
-class u extends(r = Chunk647438.Component) {
+class u extends(r = Chunk473749.Component) {
   componentDidMount() {
     null != this.props.versionKey && this.props.versionKey < 0 || this.loadAnimation()
   }
@@ -46,7 +46,7 @@ class u extends(r = Chunk647438.Component) {
     null != this.animation && (this.props.shouldAnimate && (null == e || !e.shouldAnimate) ? this.props.resetOnPlay ? this.animation.goToAndPlay(0) : this.animation.play() : !this.props.shouldAnimate && (null == e || e.shouldAnimate) && (this.animation.pause(), null != this.props.pauseAtFrame && this.animation.goToAndStop(this.props.pauseAtFrame, true)))
   }
   render() {
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: this.props.className,
       ref: this.animationRef
     })

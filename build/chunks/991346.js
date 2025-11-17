@@ -8,7 +8,7 @@ require.d(exports, {
   ji: () => ee,
   q8: () => J
 }), require("./836215.js"), require("./472816.js"), require("./794429.js"), require("./388685.js"), require("./467055.js"), require("./539854.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk493544 = require("./493544.jsx"),
@@ -134,7 +134,7 @@ function Y() {
     shouldMergeGameSettings: module,
     showRedesignedThirdPartyAccessSettings: exports
   });
-  return Chunk647438.useMemo(() => [{
+  return Chunk473749.useMemo(() => [{
     header: Chunk388032.intl.string(Chunk388032.t["zkoeq/"]),
     settings: [...require.map(e => {
       let {
@@ -205,7 +205,7 @@ function W() {
     ec = (0, Chunk945577.UX)({
       location: "useGenerateUserSettingsSections"
     });
-  return Chunk647438.useMemo(() => (0, Chunk620163.iE)({
+  return Chunk473749.useMemo(() => (0, Chunk620163.iE)({
     unseenGiftCount: Chunk906467,
     showPrepaidPaymentPastDueWarning: Chunk413182,
     searchParams: Chunk839469,
@@ -331,11 +331,11 @@ function Q() {
     } = Chunk413182.b.useExperiment({
       location: "settings"
     }),
-    i = Chunk647438.useMemo(() => H({
+    i = Chunk473749.useMemo(() => H({
       shouldMergeGameSettings: exports,
       showRedesignedThirdPartyAccessSettings: require
     }), [exports, require]);
-  return Chunk647438.useMemo(() => q(Chunk442837, module), [Chunk442837, module])
+  return Chunk473749.useMemo(() => q(Chunk442837, module), [Chunk442837, module])
 }
 
 function J(e) {

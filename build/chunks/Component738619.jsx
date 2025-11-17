@@ -5,8 +5,8 @@ require.d(exports, {
   d7: () => k,
   iD: () => _
 }), require("./539854.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -53,7 +53,7 @@ function T(e) {
   return e
 }
 let C = [];
-class N extends Chunk647438.PureComponent {
+class N extends Chunk473749.PureComponent {
   componentDidMount() {
     this.timeout = setTimeout(() => {
       this.setState({
@@ -78,13 +78,13 @@ class N extends Chunk647438.PureComponent {
     let {
       activity: e
     } = this.props;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: l()(Chunk458182.activityInviteEducation, {
         [Chunk458182.activityInviteEducationFadeIn]: this.state.fadeIn
       }),
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: Chunk458182.activityInviteEducationArrow
-      }), (0, Chunk951288.jsx)("span", {
+      }), (0, Chunk54381.jsx)("span", {
         children: Chunk388032.intl.format(Chunk388032.t["i/MoCt"], {
           game: module.name,
           dismissOnClick: this.handleDismissInviteEducation

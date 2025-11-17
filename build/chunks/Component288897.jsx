@@ -4,11 +4,11 @@
 require.d(exports, {
   Z: () => R
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk755712 = require("./755712.js"),
+  Chunk685578 = require("./685578.js"),
   Chunk239091 = require("./239091.js"),
   Chunk728285 = require("./728285.jsx"),
   Chunk358085 = require("./358085.js"),
@@ -80,7 +80,7 @@ function C(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class N extends Chunk647438.PureComponent {
+class N extends Chunk473749.PureComponent {
   componentDidMount() {
     this.props.editor.events.addListener("onChange", this.handleOnChange)
   }
@@ -133,10 +133,10 @@ class N extends Chunk647438.PureComponent {
     let {
       editor: n
     } = this.props, r = Chunk887490.bN.isEditorEmpty(require) && null == require.composition;
-    if (Chunk951288 !== this.state.showPlaceholder && this.setState({
-        showPlaceholder: Chunk951288
+    if (Chunk54381 !== this.state.showPlaceholder && this.setState({
+        showPlaceholder: Chunk54381
       }), null == (e = (t = this.props).onChange) || module.call(exports, Chunk887490.bN.richValue(require)), false === this.props.canFocus) {
-      let e = Chunk755712.F3.findDocumentOrShadowRoot(require).getSelection();
+      let e = Chunk685578.F3.findDocumentOrShadowRoot(require).getSelection();
       null != module && this.isSelectionPartiallyInside(module) && (null == module || module.removeAllRanges())
     }
   }
@@ -192,23 +192,23 @@ class N extends Chunk647438.PureComponent {
       showPlaceholder: false
     });
     let i = null != require.selection && Chunk887490.M8.isCollapsed(require.selection) ? Chunk887490.bN.leaf(require, require.selection.anchor.path) : null;
-    if (null == Chunk647438) {
-      require.composition = Chunk951288;
+    if (null == Chunk473749) {
+      require.composition = Chunk54381;
       return
     }
     if (null != (null != require.selection && Chunk887490.M8.isCollapsed(require.selection) ? Chunk887490.bN.above(require, {
-        at: Chunk647438[1],
+        at: Chunk473749[1],
         match: e => m.bN.isInline(n, e),
         mode: "lowest"
-      }) : null) && (Chunk951288.startedInsideInline = true), Chunk887490.bN.isEditorEmpty(require)) {
+      }) : null) && (Chunk54381.startedInsideInline = true), Chunk887490.bN.isEditorEmpty(require)) {
       Chunk436660.Q.insertNodes(require, {
         text: "\uFEFF"
       }, {
         select: true
-      }), Chunk951288.insertedPrefix = true, require.composition = Chunk951288;
+      }), Chunk54381.insertedPrefix = true, require.composition = Chunk54381;
       return
     }
-    let a = Chunk755712.F3.findDocumentOrShadowRoot(this.props.editor).getSelection(),
+    let a = Chunk685578.F3.findDocumentOrShadowRoot(this.props.editor).getSelection(),
       o = (null != (e = null == Chunk120356 ? true : Chunk120356.rangeCount) ? module : 0) > 0 ? null == Chunk120356 ? true : Chunk120356.getRangeAt(0) : null;
     if (null == (null != o ? Chunk887490.bN.toSlateRange(require, o, {
         exactMatch: true,
@@ -220,7 +220,7 @@ class N extends Chunk647438.PureComponent {
       });
       require.selection = null, null != module ? Chunk436660.Q.select(require, module) : Chunk436660.Q.select(require, null != (t = require.selection) ? exports : Chunk887490.bN.end(require, []))
     }
-    require.composition = Chunk951288
+    require.composition = Chunk54381
   }
   handleCompositionEnd(e) {
     let {
@@ -352,17 +352,17 @@ class N extends Chunk647438.PureComponent {
         renderExtraLeaf: b
       } = module,
       v = A(module, ["editor", "className", "containerClassName", "canFocus", "autoFocus", "placeholder", "decorate", "channelId", "guildId", "onChange", "onFocus", "onBlur", "onKeyDown", "onKeyUp", "renderExtraElement", "renderExtraLeaf"]);
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       ref: this.containerRef,
-      className: Chunk647438,
-      children: [this.state.showPlaceholder ? (0, Chunk951288.jsx)("div", {
+      className: Chunk473749,
+      children: [this.state.showPlaceholder ? (0, Chunk54381.jsx)("div", {
         className: o()(Chunk115488.placeholder, require),
         "aria-hidden": true,
         children: Chunk728285
-      }) : null, (0, Chunk951288.jsx)(Chunk755712.mH, {
+      }) : null, (0, Chunk54381.jsx)(Chunk685578.mH, {
         editor: exports,
         value: [...this.state.initialValue],
-        children: (0, Chunk951288.jsx)(Chunk755712.CX, S(I({}, v), {
+        children: (0, Chunk54381.jsx)(Chunk685578.CX, S(I({}, v), {
           className: o()(Chunk430864.markup, Chunk115488.editor, require),
           decorate: Chunk358085,
           renderElement: this.renderElement,

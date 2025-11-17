@@ -17,14 +17,14 @@ require.d(exports, {
   vB: () => eU,
   x2: () => eR
 }), require("./388685.js"), require("./415506.js"), require("./781311.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk836560 = require("./836560.js"),
   Chunk512722 = require("./512722.js"),
   c = require.n(Chunk512722),
-  Chunk574583 = require("./574583.js"),
+  Chunk55160 = require("./55160.js"),
   Chunk873546 = require("./873546.js"),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
@@ -280,12 +280,12 @@ function eR(e, t, n) {
 }
 
 function eP() {
-  let e = Chunk647438.useRef(null),
-    t = Chunk647438.useCallback(() => {
+  let e = Chunk473749.useRef(null),
+    t = Chunk473749.useCallback(() => {
       var t;
       null == (t = module.current) || exports.onMaybeShowAutocomplete()
     }, []),
-    n = Chunk647438.useCallback(() => {
+    n = Chunk473749.useCallback(() => {
       var t;
       null == (t = module.current) || exports.onHideAutocomplete()
     }, []);
@@ -405,10 +405,10 @@ let ej = e => {
       enabled: e
     } = (0, Chunk657871.zM)("ChannelTextAreaContainer", {
       autoTrackExposure: false
-    }), [t, n] = Chunk647438.useState(null);
+    }), [t, n] = Chunk473749.useState(null);
     return {
       currentAutocompleteType: exports,
-      handleAutocompleteVisibilityChange: Chunk647438.useCallback((t, r) => {
+      handleAutocompleteVisibilityChange: Chunk473749.useCallback((t, r) => {
         e && n(r), t && (0, R._Q)()
       }, [module])
     }
@@ -464,17 +464,17 @@ function eG(e, t) {
     analyticsLocations: eq
   } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eX = eD(t), eQ = i.useRef(null), eJ = i.useRef(null), e$ = i.useRef(null), e0 = i.useRef(null), e1 = i.useRef(null);
   null == eZ || eZ(e$.current);
-  let e2 = (0, y.Z)(U),
-    [e3, e4] = i.useState(!e2);
+  let e3 = (0, y.Z)(U),
+    [e2, e4] = i.useState(!e3);
   (0, m.PM)(eX, e => {
     let {
       width: t
     } = e;
-    return e4(!e2 && (null == t || t > eb))
+    return e4(!e3 && (null == t || t > eb))
   });
   let {
-    activeCommand: e8,
-    activeCommandSection: e5
+    activeCommand: e5,
+    activeCommandSection: e8
   } = (0, _.cj)([I.Z], () => {
     var e, t;
     return {
@@ -488,7 +488,7 @@ function eG(e, t) {
     canAttachFiles: te,
     canCreateThreads: tt,
     canEveryoneSendMessages: tn
-  } = ex(U, G, e8, x), tr = G.toolbarType === ee.OW.STATIC, ti = !Z.dN.useSetting() && !(0, Q.isAndroidWeb)() && null != window.ResizeObserver, ta = !ti || !(null == (n = G.commands) ? true : n.enabled) || !B || f !== ef.GI, to = (0, L.Z)(), {
+  } = ex(U, G, e5, x), tr = G.toolbarType === ee.OW.STATIC, ti = !Z.dN.useSetting() && !(0, Q.isAndroidWeb)() && null != window.ResizeObserver, ta = !ti || !(null == (n = G.commands) ? true : n.enabled) || !B || f !== ef.GI, to = (0, L.Z)(), {
     fontSize: ts
   } = (0, _.cj)([g.Z], () => ({
     fontSize: g.Z.fontSize
@@ -560,13 +560,13 @@ function eG(e, t) {
   let tU = null != W,
     tG = e9 && !((e6 || e7) && tn) || t_ && (null == (s = G.submit) ? true : s.useDisabledStylesOnSubmit),
     tB = null;
-  null != e8 ? tB = null == H ? true : H(e8, e5, ep.attachButton) : (!e9 || tt) && (tB = null == V ? true : V(tU, ep.attachButton));
-  let tZ = ti && null != h && !e9 && G.showCharacterCount && null == e8,
-    tF = ti && !__OVERLAY__ && null != h && null == e8 && G.toolbarType !== ee.OW.NONE && !e9,
+  null != e5 ? tB = null == H ? true : H(e5, e8, ep.attachButton) : (!e9 || tt) && (tB = null == V ? true : V(tU, ep.attachButton));
+  let tZ = ti && null != h && !e9 && G.showCharacterCount && null == e5,
+    tF = ti && !__OVERLAY__ && null != h && null == e5 && G.toolbarType !== ee.OW.NONE && !e9,
     tV = (0, ei.c)({
       channel: U,
       type: G,
-      activeCommand: e8,
+      activeCommand: e5,
       pendingReply: W,
       pendingScheduledMessage: eK,
       selectedAutocompleteInputType: tw
@@ -589,7 +589,7 @@ function eG(e, t) {
       channel: U,
       handleSubmit: th,
       isEmpty: tH,
-      showAllButtons: e3
+      showAllButtons: e2
     }),
     tX = tZ ? (0, r.jsx)(es.Z, {
       type: G,
@@ -750,4 +750,4 @@ function eG(e, t) {
     })
   })
 }
-let eB = Chunk647438.memo(Chunk647438.forwardRef(eG))
+let eB = Chunk473749.memo(Chunk473749.forwardRef(eG))

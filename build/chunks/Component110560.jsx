@@ -19,8 +19,8 @@ require.r(exports), require.d(exports, {
   openQuestsRewardCodeModal: () => B,
   openVideoQuestModal: () => Q
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk772848 = require("./772848.js"),
   Chunk271579 = require("./271579.js"),
   Chunk756647 = require("./756647.js"),
@@ -259,7 +259,7 @@ function K() {
   let r = null != exports ? "#".concat(exports) : "";
   require && Chunk836768.Z.setState({
     selectedTab: Chunk49898.GlobalDiscoveryTab.QUESTS
-  }), (0, Chunk342386.default)(), (0, Chunk703656.uL)((require ? Chunk981631.Z5c.QUEST_HOME : Chunk981631.Z5c.QUEST_HOME_V2) + Chunk951288)
+  }), (0, Chunk342386.default)(), (0, Chunk703656.uL)((require ? Chunk981631.Z5c.QUEST_HOME : Chunk981631.Z5c.QUEST_HOME_V2) + Chunk54381)
 }
 let z = .2;
 
@@ -397,7 +397,7 @@ function en(e) {
   (0, s.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("82777"), n.e("53145")]).then(n.bind(n, 627080));
+    } = await Promise.all([n.e("69611"), n.e("53145")]).then(n.bind(n, 627080));
     return n => (0, r.jsx)(t, j(M({}, n), {
       questId: e.id,
       questName: e.config.messages.questName

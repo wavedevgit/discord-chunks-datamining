@@ -5,8 +5,8 @@ require.d(exports, {
   Z: () => N,
   _: () => A
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -84,7 +84,7 @@ function S(e) {
     className: s()(p.resizeHandle, v[l])
   })
 }
-class A extends(r = Chunk647438.PureComponent) {
+class A extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.setPosition(this.props.position)
   }
@@ -219,12 +219,12 @@ class A extends(r = Chunk647438.PureComponent) {
     } : null != Chunk347469 && (f = {
       width: Chunk522501,
       transition: this.state.isResizing ? "none" : "width 0.2s ease-in-out"
-    }), (0, Chunk951288.jsxs)(Chunk689425.Z, {
+    }), (0, Chunk54381.jsxs)(Chunk689425.Z, {
       dragAnywhere: true,
       ref: this.handleSetDraggableRef,
       className: s()(Chunk639965.pictureInPictureWindow, Chunk120356, {
         [Chunk639965.hidden]: r,
-        [Chunk639965.borderRadius]: Chunk647438
+        [Chunk639965.borderRadius]: Chunk473749
       }),
       maxX: module,
       maxY: exports,
@@ -232,11 +232,11 @@ class A extends(r = Chunk647438.PureComponent) {
       onDragStart: this.handleDragStart,
       onDrag: this.handleDrag,
       onDragEnd: this.handleDragEnd,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         ref: this.handleSetInnerDivRef,
         style: Chunk981631,
         children: this.props.children
-      }), null != Chunk347469 ? (0, Chunk951288.jsx)(S, {
+      }), null != Chunk347469 ? (0, Chunk54381.jsx)(S, {
         onResize: this.handleResize,
         onResizeEnd: this.handleResizeEnd,
         resizableNode: this._innerDivRef,
@@ -376,4 +376,4 @@ let C = e => {
       })
     })
   },
-  N = Chunk647438.memo(C)
+  N = Chunk473749.memo(C)

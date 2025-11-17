@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => d
 }), require("./583741.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -20,7 +20,7 @@ function d() {
     let t = null == (e = Chunk435064.Z.getLastClipsSession()) ? true : module.newClipIds;
     return null == exports ? [] : Chunk435064.Z.getClips().slice(0, 4).filter(e => t.includes(e.id))
   });
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: l()(Chunk538454.thumbnailStack, {
       [Chunk538454["height-1"]]: 1 === require.length,
       [Chunk538454["height-2"]]: 2 === require.length,

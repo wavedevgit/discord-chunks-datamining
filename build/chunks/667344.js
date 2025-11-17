@@ -4,7 +4,7 @@
 require.d(exports, {
   Qb: () => f
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk588486 = require("./588486.js"),
   Chunk492435 = require("./492435.js"),
@@ -55,15 +55,15 @@ function d(e) {
 }
 
 function f() {
-  (0, Chunk647438.useEffect)(() => {
+  (0, Chunk473749.useEffect)(() => {
     (0, Chunk872780.e)(Chunk588486.dR.APP)
   }, []);
   let e = (0, Chunk442837.e7)([Chunk633289.Z], () => Chunk633289.Z.getExperimentsMetadata()),
     t = (0, Chunk442837.e7)([Chunk633289.Z], () => Chunk633289.Z.getRegisteredExperiments()),
-    n = (0, Chunk647438.useMemo)(() => u(module, exports), [module, exports]),
+    n = (0, Chunk473749.useMemo)(() => u(module, exports), [module, exports]),
     o = (0, Chunk442837.e7)([Chunk633289.Z], () => Chunk633289.Z.getClientOverrides());
   return {
     experiments: require,
-    overridesInfo: (0, Chunk647438.useMemo)(() => d(Chunk492435), [Chunk492435])
+    overridesInfo: (0, Chunk473749.useMemo)(() => d(Chunk492435), [Chunk492435])
   }
 }

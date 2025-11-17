@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => f
 }), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
@@ -61,7 +61,7 @@ function O(e) {
     })
   })
 }
-let f = Chunk647438.memo(function(e) {
+let f = Chunk473749.memo(function(e) {
   let {
     member: t,
     onNavigate: n

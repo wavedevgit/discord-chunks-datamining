@@ -3,7 +3,7 @@
 require.d(exports, {
   g: () => d
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
   Chunk351780 = require("./351780.js"),
   Chunk231765 = require("./231765.jsx"),
@@ -22,7 +22,7 @@ let S = (0, Chunk509613.x1)(Chunk313789.n.POGGERMODE_PANE, {
     buildLayout: () => [S]
   }),
   d = (0, Chunk509613.m7)(Chunk313789.n.POGGERMODE_SIDEBAR_ITEM, {
-    icon: () => (0, Chunk951288.jsx)("img", {
+    icon: () => (0, Chunk54381.jsx)("img", {
       alt: "",
       src: require("./348621.js"),
       className: Chunk781652.poggermodeIcon

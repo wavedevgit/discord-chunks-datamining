@@ -6,8 +6,8 @@ require.d(exports, {
   c8: () => b,
   oQ: () => O
 }), require("./953529.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
@@ -53,7 +53,7 @@ function E(e) {
 }
 
 function b() {
-  return (0, Chunk951288.jsx)(E, {
+  return (0, Chunk54381.jsx)(E, {
     className: Chunk840416.settings
   })
 }

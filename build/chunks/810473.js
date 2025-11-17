@@ -1,9 +1,9 @@
-/** Chunk was on 36113 **/
+/** Chunk was on 52708 **/
 /** chunk id: 810473, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk296009 = require("./296009.js"),
   Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js"),
@@ -23,7 +23,7 @@ function d() {
       location: "useAvailableWidgetTypes"
     }),
     g = d || require;
-  return Chunk647438.useMemo(() => {
+  return Chunk473749.useMemo(() => {
     let e = new Set(exports.map(e => e.type));
     return Object.values(Chunk296009.l).filter(t => (t !== i.l.APPLICATION || !!f) && (!o.Ki.includes(t) || !!g) && !e.has(t))
   }, [exports, g, f])

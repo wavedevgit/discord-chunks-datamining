@@ -3,23 +3,23 @@
 require.d(exports, {
   Y: () => s
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk726115 = require("./726115.js"),
   Chunk859921 = require("./859921.js"),
   Chunk128449 = require("./128449.js");
 
 function s() {
   let e = Chunk859921.Z.useField("selectedTab"),
-    t = Chunk647438.useMemo(() => [Chunk128449.vf.FEATURED, Chunk128449.vf.GAMING, Chunk128449.vf.MUSIC, Chunk128449.vf.ENTERTAINMENT, Chunk128449.vf.TECH, Chunk128449.vf.EDUCATION, Chunk128449.vf.HUBS].map(e => ({
+    t = Chunk473749.useMemo(() => [Chunk128449.vf.FEATURED, Chunk128449.vf.GAMING, Chunk128449.vf.MUSIC, Chunk128449.vf.ENTERTAINMENT, Chunk128449.vf.TECH, Chunk128449.vf.EDUCATION, Chunk128449.vf.HUBS].map(e => ({
       id: e,
       label: (0, i.vb)(e)
     })), []),
-    n = Chunk647438.useCallback(e => {
+    n = Chunk473749.useCallback(e => {
       l.Z.setState({
         selectedTab: e
       })
     }, []);
-  return Chunk647438.useEffect(() => {
+  return Chunk473749.useEffect(() => {
     null != module && exports.some(t => t.id === e) || require(exports[0].id)
   }, [module, exports, require]), {
     tabs: exports,

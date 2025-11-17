@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => q
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -78,7 +78,7 @@ function z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class W extends Chunk647438.PureComponent {
+class W extends Chunk473749.PureComponent {
   componentDidMount() {
     let {
       isFollowable: e,
@@ -144,7 +144,7 @@ class W extends Chunk647438.PureComponent {
           break;
         default:
           Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.rEBKvg), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), Chunk33154.buttonVariant = "primary", Chunk33154.onButtonClick = this.handleShowMemberVerification
-      } else if (Chunk270801 || null == Chunk652730) Chunk647438 && !Chunk983736 ? (Chunk33154.message = Chunk388032.intl.string(Chunk388032.t["2dThMM"]), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["50gfOv"]), Chunk33154.onButtonClick = this.handleVerifyPhone) : Chunk512722 ? (Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.FkGPS5), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.lm1UKt), Chunk33154.onButtonClick = this.handleResendVerification) : a ? (Chunk33154.message = Chunk388032.intl.formatToPlainString(Chunk388032.t.IH7RMF, {
+      } else if (Chunk270801 || null == Chunk652730) Chunk473749 && !Chunk983736 ? (Chunk33154.message = Chunk388032.intl.string(Chunk388032.t["2dThMM"]), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["50gfOv"]), Chunk33154.onButtonClick = this.handleVerifyPhone) : Chunk512722 ? (Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.FkGPS5), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.lm1UKt), Chunk33154.onButtonClick = this.handleResendVerification) : a ? (Chunk33154.message = Chunk388032.intl.formatToPlainString(Chunk388032.t.IH7RMF, {
         min: Chunk981631.YeM.MEMBER_AGE
       }), Chunk33154.countdown = Chunk442837) : Chunk693789 && (Chunk33154.message = Chunk388032.intl.formatToPlainString(Chunk388032.t["2JA2GH"], {
         min: Chunk981631.YeM.ACCOUNT_AGE
@@ -156,7 +156,7 @@ class W extends Chunk647438.PureComponent {
         }), null != Chunk652730.connectionEntrypointUrl && (Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.S0W8Z5), Chunk33154.onButtonClick = () => {
           window.open(Chunk652730.connectionEntrypointUrl, "_blank")
         })
-      } return (0, Chunk951288.jsx)(Chunk481060.yRy, {
+      } return (0, Chunk54381.jsx)(Chunk481060.yRy, {
       targetElementRef: this.textAreaContainerRef,
       position: "top",
       align: "left",

@@ -10,7 +10,7 @@ require.d(exports, {
   lr: () => g,
   t7: () => m
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk913527 = require("./913527.js"),
   a = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -28,7 +28,7 @@ function h() {
     t = (0, Chunk775412._O)(),
     n = (0, Chunk622909.N)(),
     r = m();
-  return null != module || exports || null != require || Chunk647438
+  return null != module || exports || null != require || Chunk473749
 }
 let m = () => {
     var e;
@@ -91,7 +91,7 @@ let m = () => {
       t = m(),
       n = null !== module && module.hasPremiumNitroMonthly,
       r = !!(null == module ? true : module.hasActiveTrial);
-    return require && !Chunk647438 && !exports
+    return require && !Chunk473749 && !exports
   },
   y = e => {
     for (let t of e.invoiceItems) {

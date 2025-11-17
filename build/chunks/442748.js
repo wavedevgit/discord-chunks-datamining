@@ -1,15 +1,23 @@
-/** Chunk was on web.js **/
-/** chunk id: 442748, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 23032 **/
+/** chunk id: 442748, original params: e,t (module,exports,require) **/
 "use strict";
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var Chunk266261 = require("./266261.js");
-Object.keys(Chunk266261).forEach(function(e) {
-  "default" !== e && Object.defineProperty(t, e, {
-    enumerable: true,
-    get: function() {
-      return r[e]
-    }
-  })
-})
+exports.__esModule = true, exports.default = {
+  scheme: "tomorrow",
+  author: "chris kempson (http://chriskempson.com)",
+  base00: "#1d1f21",
+  base01: "#282a2e",
+  base02: "#373b41",
+  base03: "#969896",
+  base04: "#b4b7b4",
+  base05: "#c5c8c6",
+  base06: "#e0e0e0",
+  base07: "#ffffff",
+  base08: "#cc6666",
+  base09: "#de935f",
+  base0A: "#f0c674",
+  base0B: "#b5bd68",
+  base0C: "#8abeb7",
+  base0D: "#81a2be",
+  base0E: "#b294bb",
+  base0F: "#a3685a"
+}, module.exports = exports.default

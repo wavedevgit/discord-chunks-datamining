@@ -9,7 +9,7 @@ require.d(exports, {
   xF: () => f,
   z8: () => _
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
-var Chunk843611 = require("./843611.js"),
+var Chunk828700 = require("./828700.js"),
   Chunk972959 = require("./972959.js"),
   Chunk703656 = require("./703656.js"),
   Chunk370210 = require("./370210.js"),
@@ -47,13 +47,13 @@ function h() {
       search: u
     }
   } = (0, Chunk703656.s1)();
-  if (null != (0, Chunk843611.LX)(Chunk972959, {
+  if (null != (0, Chunk828700.LX)(Chunk972959, {
       path: Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS,
       exact: true
     })) return {
     type: "home"
   };
-  if (null != (0, Chunk843611.LX)(Chunk972959, {
+  if (null != (0, Chunk828700.LX)(Chunk972959, {
       path: Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_SEARCH,
       exact: true
     })) {
@@ -64,11 +64,11 @@ function h() {
       n = module.get("q");
     null != require && "" !== require && (exports.query = require);
     let r = Number(module.get("category_id"));
-    Number.isInteger(Chunk843611) && Chunk843611 !== Chunk216780.MU && (exports.categoryId = Chunk843611.toString());
+    Number.isInteger(Chunk828700) && Chunk828700 !== Chunk216780.MU && (exports.categoryId = Chunk828700.toString());
     let i = Number(module.get("page"));
     return null != Chunk972959 && Chunk972959 > 1 && (exports.page = Chunk972959), exports
   }
-  let d = (0, Chunk843611.LX)(Chunk972959, {
+  let d = (0, Chunk828700.LX)(Chunk972959, {
       path: [Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY(":categoryId")],
       exact: true
     }),
@@ -79,7 +79,7 @@ function h() {
     type: "category",
     categoryId: f
   };
-  let _ = (0, Chunk843611.LX)(Chunk972959, {
+  let _ = (0, Chunk828700.LX)(Chunk972959, {
       path: [Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(":applicationId"), Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", ":section"), Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId")],
       exact: true
     }),

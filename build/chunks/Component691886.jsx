@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => y
 }), require("./539854.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -51,8 +51,8 @@ function _(e) {
 }
 
 function v() {
-  return (0, Chunk951288.jsx)(_, {
-    icon: (0, Chunk951288.jsx)(Chunk481060.qJs, {
+  return (0, Chunk54381.jsx)(_, {
+    icon: (0, Chunk54381.jsx)(Chunk481060.qJs, {
       size: "md",
       color: "currentColor",
       className: Chunk858783.labelIcon

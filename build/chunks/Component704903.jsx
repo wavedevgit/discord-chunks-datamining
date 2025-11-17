@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => v
 }), require("./388685.js");
-var n, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var n, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
@@ -24,7 +24,7 @@ function f(t, e, i) {
     writable: true
   }) : t[e] = i, t
 }
-class C extends(n = Chunk647438.PureComponent) {
+class C extends(n = Chunk473749.PureComponent) {
   async componentDidMount() {
     let [t, {
       default: e
@@ -49,34 +49,34 @@ class C extends(n = Chunk647438.PureComponent) {
       email: n,
       password: a
     } = this.state;
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: Chunk831319.container,
-      children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 40,
-        children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
           gap: 20,
-          children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
             label: Chunk388032.intl.string(Chunk388032.t.dI4d4S),
             value: n,
             error: module,
             onChange: this.handleEmailChange,
             onKeyPress: this.handleKeyPress,
             autoFocus: true
-          }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+          }), (0, Chunk54381.jsx)(Chunk481060.oil, {
             label: Chunk388032.intl.string(Chunk388032.t["CIGa+7"]),
             type: "password",
-            value: Chunk647438,
+            value: Chunk473749,
             error: exports,
             onChange: this.handlePasswordChange,
             onKeyPress: this.handleKeyPress
           })]
-        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           text: Chunk388032.intl.string(Chunk388032.t.v740sh),
           variant: "primary",
           fullWidth: true,
           onClick: this.handleVerify,
           loading: require,
-          disabled: 0 === n.length || 0 === Chunk647438.length
+          disabled: 0 === n.length || 0 === Chunk473749.length
         })]
       })
     })
@@ -85,19 +85,19 @@ class C extends(n = Chunk647438.PureComponent) {
     let {
       canChange: t
     } = this.props;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk831319.container,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: Chunk197571.marginTop20,
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           text: Chunk388032.intl.string(Chunk388032.t.LdUkO6),
           variant: "secondary",
           fullWidth: true,
           onClick: this.handleResendEmail
         })
-      }), module && (0, Chunk951288.jsx)("div", {
+      }), module && (0, Chunk54381.jsx)("div", {
         className: Chunk197571.marginTop20,
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           text: Chunk388032.intl.string(Chunk388032.t.oP5zGA),
           variant: "primary",
           fullWidth: true,
@@ -117,19 +117,19 @@ class C extends(n = Chunk647438.PureComponent) {
       } = this.props;
     return t = exports && null != require ? Chunk388032.intl.format(Chunk388032.t.JqLgQL, {
       email: require
-    }) : n ? Chunk388032.intl.string(Chunk388032.t.tSXg8O) : Chunk388032.intl.string(Chunk388032.t.KW5DEh), (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
-      transitionState: Chunk647438,
+    }) : n ? Chunk388032.intl.string(Chunk388032.t.tSXg8O) : Chunk388032.intl.string(Chunk388032.t.KW5DEh), (0, Chunk54381.jsxs)(Chunk481060.Y0X, {
+      transitionState: Chunk473749,
       "aria-labelledby": this._headerId,
       className: r()(Chunk831319.emailVerificationModal, Chunk149715.vertical, Chunk149715.alignCenter, Chunk149715.justifyCenter, Chunk197571.marginTop60),
       parentComponent: "EmailVerificationModal",
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: Chunk831319.animationContainer,
         ref: this.setLottieRef
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         id: this._headerId,
         className: r()(Chunk831319.title, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t["1MPz27"])
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: r()(Chunk831319.body, Chunk197571.marginBottom20),
         children: module
       }), n ? this.renderActions() : this.renderInputs()]

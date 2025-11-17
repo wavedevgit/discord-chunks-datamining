@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => m
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
@@ -23,7 +23,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 let p = 150;
-class h extends(r = Chunk647438.PureComponent) {
+class h extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.updateMediaBar()
   }
@@ -57,7 +57,7 @@ class h extends(r = Chunk647438.PureComponent) {
       focused: O,
       dragging: v
     } = this.state, I = Chunk481060.gj8;
-    return _ || g === h ? I = Chunk481060.OyP : g < m / 2 && (I = Chunk481060.X2j), (0, Chunk951288.jsxs)("div", {
+    return _ || g === h ? I = Chunk481060.OyP : g < m / 2 && (I = Chunk481060.X2j), (0, Chunk54381.jsxs)("div", {
       className: s()(require, Chunk717255.container),
       onMouseEnter: () => {
         clearTimeout(this._hoverTimeout), this.setState({
@@ -75,7 +75,7 @@ class h extends(r = Chunk647438.PureComponent) {
         focused: false
       }),
       onKeyDown: this.handleKeyDown,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: s()(Chunk717255.volumeButtonSlider, r, {
           [Chunk717255.sliderVisible]: y || O || v
         }),
@@ -89,8 +89,8 @@ class h extends(r = Chunk647438.PureComponent) {
             hovered: false
           }), p)
         },
-        children: (0, Chunk951288.jsx)(Chunk540026.Z, {
-          sliderClassName: Chunk647438,
+        children: (0, Chunk54381.jsx)(Chunk540026.Z, {
+          sliderClassName: Chunk473749,
           type: Chunk540026.Z.Types.VOLUME,
           value: g / m,
           onDrag: this.handleValueChange,
@@ -99,13 +99,13 @@ class h extends(r = Chunk647438.PureComponent) {
           currentWindow: Chunk120356,
           ref: this._mediaBar
         })
-      }), (0, Chunk951288.jsx)(Chunk755721.zx, {
+      }), (0, Chunk54381.jsx)(Chunk755721.zx, {
         className: Chunk717255.volumeButton,
         "aria-label": Chunk388032.intl.string(Chunk388032.t["19lt24"]),
         size: Chunk755721.zx.Sizes.NONE,
         look: Chunk755721.zx.Looks.BLANK,
         onClick: this.handleToggleMute,
-        children: (0, Chunk951288.jsx)(I, {
+        children: (0, Chunk54381.jsx)(I, {
           color: exports,
           className: module
         })

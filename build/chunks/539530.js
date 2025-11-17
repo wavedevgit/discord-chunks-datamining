@@ -4,7 +4,7 @@ require.d(exports, {
   $0: () => d,
   ZP: () => h
 }), require("./388685.js"), require("./539854.js");
-var l, Chunk647438 = require("./647438.js"),
+var l, Chunk473749 = require("./473749.js"),
   Chunk399606 = require("./399606.js"),
   Chunk597688 = require("./597688.js"),
   Chunk1870 = require("./1870.js"),
@@ -23,7 +23,7 @@ let p = {
       [t, n] = (0, Chunk399606.Wu)([Chunk597688.Z], () => [Chunk597688.Z.categories, Chunk597688.Z.products]);
     return Chunk235897.Z.useConfig({
       location: "use nameplate sections"
-    }), (0, Chunk647438.useMemo)(() => {
+    }), (0, Chunk473749.useMemo)(() => {
       let l = (0, Chunk884697.Y)(module, exports).reduce((t, l) => {
         let r = e.get(l.skuId),
           i = (0, o.G1)(null != r ? r : n.get(l.skuId));

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => O
 });
-var s, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var s, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   h = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
@@ -29,7 +29,7 @@ function b(t, e, i) {
 }
 let y = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
   x = 1 / 120;
-class E extends(s = Chunk647438.Component) {
+class E extends(s = Chunk473749.Component) {
   componentDidMount() {
     this.initialize()
   }
@@ -80,7 +80,7 @@ class E extends(s = Chunk647438.Component) {
       hideFallback: e,
       embedded: i
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk481060.Sfi.Consumer, {
+    return (0, Chunk54381.jsx)(Chunk481060.Sfi.Consumer, {
       children: s => {
         let {
           reducedMotion: r

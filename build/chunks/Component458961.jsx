@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => _
 }), require("./388685.js"), require("./953529.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -231,7 +231,7 @@ function J(e) {
       productId: ei
     }, e)), e6)
   }, [eA, e6, ei]);
-  let e8 = async e => {
+  let e7 = async e => {
     let t = (0, F.pM)({
       newRoleParams: eR
     });
@@ -253,8 +253,8 @@ function J(e) {
   }, [ew, eA, eu]), r.useEffect(() => {
     e$ && eJ(true)
   }, [e$]);
-  let e7 = r.useRef(null),
-    e2 = !e3 || !ed && es >= S.dD;
+  let e2 = r.useRef(null),
+    e8 = !e3 || !ed && es >= S.dD;
   return (0, n.jsxs)(g.Y0X, {
     transitionState: er,
     size: g.CgR.DYNAMIC,
@@ -290,7 +290,7 @@ function J(e) {
       children: [(0, n.jsx)(g.zJl, {
         children: (0, n.jsxs)("div", {
           className: L.productFieldsSection,
-          ref: e7,
+          ref: e2,
           children: [(0, n.jsx)(g.oil, {
             label: B.intl.string(B.t.Hsk7xT),
             error: null == ew ? true : ew.getFirstFieldErrorMessage("name"),
@@ -341,7 +341,7 @@ function J(e) {
             children: (0, n.jsx)(N.s, {
               onFileAdded: () => {
                 var e;
-                null == (e = e7.current) || e.scrollIntoView({
+                null == (e = e2.current) || e.scrollIntoView({
                   behavior: "smooth",
                   block: "end"
                 })
@@ -362,13 +362,13 @@ function J(e) {
         children: (0, n.jsxs)("div", {
           className: L.productPreview,
           children: [(0, n.jsx)(X.Z, {
-            disabled: e2,
+            disabled: e8,
             disabledTooltip: ed ? B.intl.string(B.t["0NQ00t"]) : es >= S.dD ? B.intl.format(B.t.IqWPVt, {
               maxProducts: S.dD
             }) : B.intl.string(B.t["Ax89/c"]),
             published: ed,
             onClick: () => {
-              o()(e3, "Attempting to publish/unpublish when not allowed"), eJ(ed ? "unpublish" : "publish"), e8(R(D({}, e_), {
+              o()(e3, "Attempting to publish/unpublish when not allowed"), eJ(ed ? "unpublish" : "publish"), e7(R(D({}, e_), {
                 published: !ed
               }))
             },
@@ -447,7 +447,7 @@ function J(e) {
             disabled: !e1,
             loading: eL,
             onClick: () => {
-              o()(e1, "cannot save changes for published product without adding all fields"), eJ("update_publish"), e8(e_)
+              o()(e1, "cannot save changes for published product without adding all fields"), eJ("update_publish"), e7(e_)
             }
           }) : (0, n.jsx)(g.Button, {
             variant: "secondary",
@@ -455,7 +455,7 @@ function J(e) {
             disabled: !e0,
             loading: eL,
             onClick: () => {
-              o()(e0, "cannot save changes without name or price tier"), eJ("draft"), e8(e_)
+              o()(e0, "cannot save changes without name or price tier"), eJ("draft"), e7(e_)
             }
           })
         })]

@@ -13,7 +13,7 @@ require.d(exports, {
   fQ: () => S,
   t$: () => I
 }), require("./539854.js"), require("./388685.js"), require("./290780.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk357156 = require("./357156.js"),
   Chunk695346 = require("./695346.js"),
@@ -116,7 +116,7 @@ let v = e => {
   },
   S = e => true,
   A = () => {
-    Chunk647438.useEffect(() => {
+    Chunk473749.useEffect(() => {
       (0, Chunk268350.$p)()
     }, [])
   },
@@ -182,7 +182,7 @@ function D() {
   var e, t;
   let n = (0, Chunk516373.D)(),
     r = N;
-  return (null == require || null == (e = require.stickerFrecency) ? true : module.stickers) != null && (r = Object.keys(null == require || null == (t = require.stickerFrecency) ? true : exports.stickers)), Chunk647438
+  return (null == require || null == (e = require.stickerFrecency) ? true : module.stickers) != null && (r = Object.keys(null == require || null == (t = require.stickerFrecency) ? true : exports.stickers)), Chunk473749
 }
 
 function w() {

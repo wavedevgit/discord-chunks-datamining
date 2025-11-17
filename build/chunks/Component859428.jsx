@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => b
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
 let b = () => {
   let e = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []),
     t = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module), [module]),
-    [n, a] = Chunk647438.useState(false);
+    [n, a] = Chunk473749.useState(false);
   if (null == exports) return null;
   let b = () => {
       (0, Chunk703656.s1)().goBack()
@@ -38,25 +38,25 @@ let b = () => {
         Chunk120356(false)
       }
     };
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: o()(Chunk990186.notice, Chunk226910.notice),
-    children: [(0, Chunk951288.jsxs)(Chunk755721.zx, {
+    children: [(0, Chunk54381.jsxs)(Chunk755721.zx, {
       look: Chunk755721.zx.Looks.OUTLINED,
       color: Chunk755721.zx.Colors.WHITE,
       size: Chunk755721.zx.Sizes.NONE,
       className: o()(Chunk990186.button, Chunk990186.back),
       innerClassName: Chunk990186.iconButton,
       onClick: b,
-      children: [(0, Chunk951288.jsx)(Chunk481060.whL, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.whL, {
         size: "xs",
         color: "currentColor",
         className: Chunk990186.arrow
       }), Chunk388032.intl.string(Chunk388032.t["13/7kX"])]
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk990186.header,
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t["N/y2WE"])
-    }), (0, Chunk951288.jsx)(Chunk755721.zx, {
+    }), (0, Chunk54381.jsx)(Chunk755721.zx, {
       className: Chunk990186.button,
       look: Chunk755721.zx.Looks.OUTLINED,
       color: Chunk755721.zx.Colors.WHITE,

@@ -3,8 +3,8 @@
 require.d(exports, {
   ZP: () => k
 }), require("./781311.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -60,11 +60,11 @@ function L(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = Chunk647438.memo(function() {
-    return (0, Chunk951288.jsx)(Chunk28664.u, {
+let M = Chunk473749.memo(function() {
+    return (0, Chunk54381.jsx)(Chunk28664.u, {
       "data-pending-richtooltip-migration": true,
       text: Chunk388032.intl.string(Chunk388032.t["vu/MiQ"]),
-      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
         className: Chunk303572.unknownInvite,
@@ -72,10 +72,10 @@ let M = Chunk647438.memo(function() {
       })
     })
   }),
-  x = Chunk647438.memo(function() {
-    return (0, Chunk951288.jsx)(Chunk28664.u, {
+  x = Chunk473749.memo(function() {
+    return (0, Chunk54381.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t.OrCp9h),
-      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
         className: Chunk303572.unknownInvite,
@@ -93,7 +93,7 @@ let M = Chunk647438.memo(function() {
     [Chunk327999.gq.BOT]: {
       type: Chunk327999.gq.BOT,
       getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.HumZAi),
-      icon: (0, Chunk951288.jsx)(Chunk481060.wGt, {
+      icon: (0, Chunk54381.jsx)(Chunk481060.wGt, {
         size: "custom",
         color: "currentColor",
         className: Chunk303572.robot,
@@ -105,7 +105,7 @@ let M = Chunk647438.memo(function() {
     [Chunk327999.gq.INTEGRATION]: {
       type: Chunk327999.gq.INTEGRATION,
       getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.gmCUFw),
-      icon: (0, Chunk951288.jsx)(Chunk481060.tYf, {
+      icon: (0, Chunk54381.jsx)(Chunk481060.tYf, {
         size: "custom",
         color: "currentColor",
         height: 12,
@@ -116,7 +116,7 @@ let M = Chunk647438.memo(function() {
     [Chunk327999.gq.DISCOVERY]: {
       type: Chunk327999.gq.DISCOVERY,
       getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t["Ql/e9Y"]),
-      icon: (0, Chunk951288.jsx)(Chunk481060.Jmo, {
+      icon: (0, Chunk54381.jsx)(Chunk481060.Jmo, {
         size: "custom",
         color: "currentColor",
         height: 12,
@@ -127,7 +127,7 @@ let M = Chunk647438.memo(function() {
     [Chunk327999.gq.HUB]: {
       type: Chunk327999.gq.HUB,
       getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.Op8B3O),
-      icon: (0, Chunk951288.jsx)(Chunk481060.aVH, {
+      icon: (0, Chunk54381.jsx)(Chunk481060.aVH, {
         size: "custom",
         color: "currentColor",
         height: 12,
@@ -138,7 +138,7 @@ let M = Chunk647438.memo(function() {
     [Chunk327999.gq.INVITE]: {
       type: Chunk327999.gq.INVITE,
       getJoinTypeLabel: e => e,
-      icon: (0, Chunk951288.jsx)(Chunk481060.xPt, {
+      icon: (0, Chunk54381.jsx)(Chunk481060.xPt, {
         size: "custom",
         color: "currentColor",
         height: 12,
@@ -149,7 +149,7 @@ let M = Chunk647438.memo(function() {
     [Chunk327999.gq.VANITY_URL]: {
       type: Chunk327999.gq.VANITY_URL,
       getJoinTypeLabel: e => e,
-      icon: (0, Chunk951288.jsx)(Chunk481060.xPt, {
+      icon: (0, Chunk54381.jsx)(Chunk481060.xPt, {
         size: "custom",
         color: "currentColor",
         height: 12,
@@ -162,7 +162,7 @@ let M = Chunk647438.memo(function() {
       getJoinTypeLabel: e => null != e ? C.intl.formatToPlainString(C.t["VHLp+u"], {
         code: e
       }) : C.intl.string(C.t.vdu7oS),
-      icon: (0, Chunk951288.jsx)(Chunk785195.Z, {
+      icon: (0, Chunk54381.jsx)(Chunk785195.Z, {
         height: 12,
         width: 12
       }),
@@ -171,7 +171,7 @@ let M = Chunk647438.memo(function() {
     [Chunk327999.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL]: {
       type: Chunk327999.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL,
       getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t["9/ZreX"]),
-      icon: (0, Chunk951288.jsx)(Chunk481060.iWm, {
+      icon: (0, Chunk54381.jsx)(Chunk481060.iWm, {
         size: "custom",
         color: "currentColor",
         height: 12,
@@ -388,7 +388,7 @@ function G(e) {
       return (0, r.jsx)(M, U({}, g))
   }
 }
-let k = Chunk647438.memo(function(e) {
+let k = Chunk473749.memo(function(e) {
   var t, n;
   let {
     userId: i,

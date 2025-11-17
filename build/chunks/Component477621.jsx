@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => x
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk661111 = require("./661111.js"),
   Chunk626135 = require("./626135.js"),
@@ -36,7 +36,7 @@ function m(e) {
   }
   return e
 }
-class f extends Chunk647438.PureComponent {
+class f extends Chunk473749.PureComponent {
   componentDidMount() {
     this.mountedAt = Date.now(), this.maxScrolledPercentage = 0, this.track(Chunk981631.rMx.CHANGE_LOG_OPENED, {}, true)
   }
@@ -45,7 +45,7 @@ class f extends Chunk647438.PureComponent {
   }
   render() {
     var e, t;
-    return (0, Chunk951288.jsx)(Chunk554226.Z, (e = m({}, this.props), t = t = {
+    return (0, Chunk54381.jsx)(Chunk554226.Z, (e = m({}, this.props), t = t = {
       onClose: this.close,
       onScroll: this.handleScroll,
       track: this.track

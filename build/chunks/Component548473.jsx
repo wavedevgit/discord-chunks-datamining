@@ -6,8 +6,8 @@ require.d(exports, {
   _I: () => A,
   xm: () => C
 }), require("./49124.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk500923 = require("./500923.js"),
@@ -83,9 +83,9 @@ function G(e) {
 
 function C() {
   let e = G(Chunk180504);
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: a()(Chunk577436.leftArt, Chunk577436.altFloat),
-    children: (0, Chunk951288.jsx)("div", {
+    children: (0, Chunk54381.jsx)("div", {
       ref: module,
       className: Chunk577436.grillingIsland
     })
@@ -94,9 +94,9 @@ function C() {
 
 function P() {
   let e = G(Chunk535170);
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: a()(Chunk577436.rightArt, Chunk577436.altFloat),
-    children: (0, Chunk951288.jsx)("div", {
+    children: (0, Chunk54381.jsx)("div", {
       ref: module,
       className: Chunk577436.waffleIsland
     })

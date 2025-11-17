@@ -3,7 +3,7 @@
 require.d(exports, {
   F: () => d
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk657707 = require("./657707.js"),
   Chunk704215 = require("./704215.js"),
   Chunk509613 = require("./509613.js"),
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
 let S = (0, Chunk509613.x1)(Chunk313789.n.SESSIONS_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     buildLayout: () => [],
-    render: () => (0, Chunk951288.jsx)(Chunk36192.Z, {})
+    render: () => (0, Chunk54381.jsx)(Chunk36192.Z, {})
   }),
   T = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),

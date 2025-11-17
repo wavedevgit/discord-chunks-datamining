@@ -4,11 +4,11 @@
 require.d(exports, {
   Z: () => i
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js");
+var Chunk473749 = require("./473749.js");
 
 function i() {
-  let [e, t] = Chunk647438.useState(null), n = Chunk647438.useRef(null);
-  return Chunk647438.useEffect(() => {
+  let [e, t] = Chunk473749.useState(null), n = Chunk473749.useRef(null);
+  return Chunk473749.useEffect(() => {
     null != module && null != require.current && require.current.scrollIntoView({
       behavior: "smooth"
     })

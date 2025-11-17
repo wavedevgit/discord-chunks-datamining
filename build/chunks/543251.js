@@ -1,4 +1,49 @@
 /** Chunk was on web.js **/
 /** chunk id: 543251, original params: e (module,exports,re quire) **/
 "use strict";
-module.exports = "/assets/64a3062175c34dab.svg"
+var t = function() {
+  function e(e, t) {
+    for (var n = 0; n < t.length; n++) {
+      var r = t[n];
+      r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
+    }
+  }
+  return function(t, n, r) {
+    return n && e(t.prototype, n), r && e(t, r), t
+  }
+}();
+
+function n(e, t) {
+  if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
+}
+module.exports = function() {
+  function e() {
+    n(this, module)
+  }
+  return t(module, [{
+    key: "__attach",
+    value: function() {}
+  }, {
+    key: "__detach",
+    value: function() {}
+  }, {
+    key: "__getValue",
+    value: function() {}
+  }, {
+    key: "__getAnimatedValue",
+    value: function() {
+      return this.__getValue()
+    }
+  }, {
+    key: "__addChild",
+    value: function(e) {}
+  }, {
+    key: "__removeChild",
+    value: function(e) {}
+  }, {
+    key: "__getChildren",
+    value: function() {
+      return []
+    }
+  }]), module
+}()

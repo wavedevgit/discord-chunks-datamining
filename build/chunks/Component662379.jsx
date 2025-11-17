@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => g
 }), require("./953529.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -49,22 +49,22 @@ function g() {
     imageSrc: Chunk217684,
     description: Chunk388032.intl.string(Chunk388032.t.c8krDQ)
   }];
-  return (0, Chunk951288.jsxs)("div", {
-    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+  return (0, Chunk54381.jsxs)("div", {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       children: Chunk388032.intl.string(Chunk388032.t.R9rNIk)
-    }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
+    }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
       size: 24
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk964269.howItWorksContainer,
       children: module.map(e => (0, r.jsx)(u, {
         imageSrc: e.imageSrc,
         description: e.description
       }, e.imageSrc))
-    }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
+    }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
       size: 24
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: Chunk388032.intl.format(Chunk388032.t.oxW30N, {

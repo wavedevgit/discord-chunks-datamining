@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => g
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk538211 = require("./538211.js"),
@@ -20,7 +20,7 @@ function b(t, n, e) {
     writable: true
   }) : t[n] = e, t
 }
-class d extends Chunk647438.PureComponent {
+class d extends Chunk473749.PureComponent {
   render() {
     let {
       isStreamer: t,
@@ -29,7 +29,7 @@ class d extends Chunk647438.PureComponent {
     } = this.props, {
       problem: r
     } = this.state;
-    return (0, Chunk951288.jsxs)(Chunk159691.u_l, {
+    return (0, Chunk54381.jsxs)(Chunk159691.u_l, {
       title: Chunk388032.intl.string(Chunk388032.t.qnJ9W3),
       subtitle: Chunk388032.intl.string(Chunk388032.t["7vw0h+"]),
       actions: [{
@@ -40,11 +40,11 @@ class d extends Chunk647438.PureComponent {
         text: Chunk388032.intl.string(Chunk388032.t.E48BIc),
         variant: "primary",
         onClick: this.handleSubmit,
-        disabled: null == Chunk647438
+        disabled: null == Chunk473749
       }],
       onClose: require,
       transitionState: exports,
-      children: [(0, Chunk951288.jsx)(Chunk648159.Z, {}), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+      children: [(0, Chunk54381.jsx)(Chunk648159.Z, {}), (0, Chunk54381.jsx)(Chunk481060.q4e, {
         label: Chunk388032.intl.string(Chunk388032.t["6Y1t5P"]),
         placeholder: Chunk388032.intl.string(Chunk388032.t.U0kGk6),
         options: (0, Chunk538211.Z)({
@@ -52,7 +52,7 @@ class d extends Chunk647438.PureComponent {
           isEndStream: false
         }),
         onChange: this.handleChanged,
-        value: Chunk647438,
+        value: Chunk473749,
         maxVisibleItems: 4
       })]
     })

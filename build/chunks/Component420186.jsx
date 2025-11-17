@@ -3,8 +3,8 @@
 require.d(exports, {
   R: () => x
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk590965 = require("./590965.js"),
   Chunk590149 = require("./590149.jsx"),
@@ -29,38 +29,38 @@ let x = () => {
       inviteCode: E
     } = (0, Chunk978986.XW)(),
     I = null == (e = Chunk590965.Z.getProps().invite) ? true : module.is_nickname_changeable,
-    j = Chunk647438.useCallback(() => {
+    j = Chunk473749.useCallback(() => {
       Chunk626135.default.track(Chunk981631.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
         guild_id: v,
         invite_code: E
       })
     }, [v, E]);
-  return (0, Chunk951288.jsxs)(Chunk590149.Z, {
+  return (0, Chunk54381.jsxs)(Chunk590149.Z, {
     className: Chunk181174.accordion,
-    icon: (0, Chunk951288.jsx)(Chunk481060.ewm, {
+    icon: (0, Chunk54381.jsx)(Chunk481060.ewm, {
       size: "md"
     }),
     title: Chunk388032.intl.string(Chunk388032.t["A5wHQ/"]),
     subtitle: Chunk388032.intl.string(Chunk388032.t.UKCSEd),
     onOpen: j,
     maxHeight: I ? 220 : 130,
-    children: [I && (0, Chunk951288.jsxs)("div", {
+    children: [I && (0, Chunk54381.jsxs)("div", {
       className: Chunk181174.serverNickname,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         color: "header-secondary",
         children: Chunk388032.intl.string(Chunk388032.t.me1lRk)
-      }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+      }), (0, Chunk54381.jsx)(Chunk481060.oil, {
         placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8yp"]),
         maxLength: Chunk981631.l$U,
         value: require,
         onChange: f
       })]
-    }), (0, Chunk951288.jsx)(Chunk51331.ZP, {
+    }), (0, Chunk54381.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk388032.t["/2ed37"]),
       value: x,
       onChange: N
-    }), exports && (0, Chunk951288.jsx)(Chunk51331.ZP, {
+    }), exports && (0, Chunk54381.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk388032.t.bN4m1G),
       value: g,
       onChange: h

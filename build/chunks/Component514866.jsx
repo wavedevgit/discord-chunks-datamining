@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => S
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
   Chunk668757 = require("./668757.js"),
@@ -49,31 +49,31 @@ function S() {
   let e = Chunk594174.default.getCurrentUser(),
     t = null == module ? true : module.isStaff(),
     l = Chunk695346.Rt.useSetting();
-  return (0, Chunk951288.jsxs)(Chunk481060.Ttm, {
-    children: [(0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsxs)(Chunk481060.Ttm, {
+    children: [(0, Chunk54381.jsx)("div", {
       className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
-      children: (0, Chunk951288.jsx)(Chunk306052.g, {
+      children: (0, Chunk54381.jsx)(Chunk306052.g, {
         isDevTools: true
       })
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
-      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: "Launch MFA",
         onClick: C
       })
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
-      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: "Launch Vibing Wumpus",
         onClick: () => (0, Chunk423932.Z)()
       })
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
-      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: "Launch Safety Tools Modal",
@@ -112,34 +112,34 @@ function S() {
           })
         })()
       })
-    }), exports && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)("div", {
+    }), exports && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsx)("div", {
         className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Launch Clicker Game",
           onClick: () => (0, Chunk677106.Z)()
         })
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Launch Captcha Test Tool",
           onClick: () => (0, Chunk110478.N)()
         })
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Launch Age Verification Test Tool",
           onClick: () => (0, Chunk963886.E)()
         })
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Launch Age Verification Modal",
@@ -147,25 +147,25 @@ function S() {
             entryPoint: Chunk480916.cU.DEV_TOOLS_QUICK_ACTIONS
           })
         })
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Reset Hang Status State",
           onClick: Chunk906605.YU
         })
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Force libdiscore Crash",
           onClick: Chunk668757.$R
         })
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
-        children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Ignore profile speedbump disabled",
           checked: Chunk120356,
           onChange: e => g.Rt.updateSetting(e)

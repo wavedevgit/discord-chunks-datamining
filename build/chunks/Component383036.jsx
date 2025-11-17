@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => f
 }), require("./388685.js"), require("./781311.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -58,10 +58,10 @@ let g = e => {
       }),
       j = f ? exports : v,
       _ = f || !b && j.size > 0,
-      [y, C] = Chunk647438.useState(""),
-      [S, E] = Chunk647438.useState(null),
-      [O, T] = Chunk647438.useState(null);
-    return (Chunk647438.useEffect(() => {
+      [y, C] = Chunk473749.useState(""),
+      [S, E] = Chunk473749.useState(null),
+      [O, T] = Chunk473749.useState(null);
+    return (Chunk473749.useEffect(() => {
       if ("" === y.trim() || !_) {
         E(null), T(null);
         return
@@ -69,56 +69,56 @@ let g = e => {
       let e = Chunk597688.Z.getProduct(y),
         t = Chunk597688.Z.getCategoryForProduct(y);
       null != module && null != exports ? (E(module), T(exports)) : (E(null), T(null))
-    }, [y, _]), b) ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }, [y, _]), b) ? (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "Loading categories and collectibles..."
-    }) : null == module ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }) : null == module ? (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "No user found"
-    }) : (0, Chunk951288.jsxs)("div", {
+    }) : (0, Chunk54381.jsxs)("div", {
       className: Chunk277790.container,
-      children: [(0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk277790.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Product Configuration"
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           className: Chunk277790.inputSection,
-          children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-md/semibold",
             className: Chunk277790.inputLabel,
             children: "Primary Product SKU ID"
-          }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+          }), (0, Chunk54381.jsx)(Chunk481060.oil, {
             value: y,
             onChange: C,
             placeholder: "Enter product SKU ID"
-          }), !_ && "" !== y.trim() && (0, Chunk951288.jsx)(Chunk481060.Text, {
+          }), !_ && "" !== y.trim() && (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             className: Chunk277790.loadingText,
             children: "Loading products..."
-          }), _ && "" !== y.trim() && null == S && (0, Chunk951288.jsx)(Chunk481060.Text, {
+          }), _ && "" !== y.trim() && null == S && (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             className: Chunk277790.errorText,
             children: "Product not found"
-          }), null != S && (0, Chunk951288.jsxs)(Chunk481060.Text, {
+          }), null != S && (0, Chunk54381.jsxs)(Chunk481060.Text, {
             variant: "text-sm/normal",
             className: Chunk277790.successText,
             children: ["Found: ", S.name]
           })]
         })]
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk277790.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Product Preview"
-        }), null != S && null != O ? (0, Chunk951288.jsxs)("div", {
+        }), null != S && null != O ? (0, Chunk54381.jsxs)("div", {
           className: Chunk277790.previewContainer,
-          children: [(0, Chunk951288.jsx)(g, {
+          children: [(0, Chunk54381.jsx)(g, {
             product: S,
             user: module,
             category: O,
             tab: Chunk215023.AW.HOME
-          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             onClick: () => {
               null != S && null != module && (0, Chunk832149.Z)({
@@ -128,9 +128,9 @@ let g = e => {
             },
             text: "Show Collectibles Collected Modal"
           })]
-        }) : (0, Chunk951288.jsx)("div", {
+        }) : (0, Chunk54381.jsx)("div", {
           className: Chunk277790.placeholder,
-          children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+          children: (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-md/normal",
             className: Chunk277790.mutedText,
             children: "Enter a valid product SKU ID to see the preview"

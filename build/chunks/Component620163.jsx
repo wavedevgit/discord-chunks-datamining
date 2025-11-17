@@ -8,7 +8,7 @@ require.d(exports, {
   c$: () => eZ,
   iE: () => eY
 }), require("./539854.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk990547 = require("./990547.js"),
   Chunk704215 = require("./704215.js"),
   Chunk692547 = require("./692547.js"),
@@ -143,9 +143,9 @@ let eB = () => {
   eZ = () => {
     let e = eB(),
       [t] = (0, Chunk243778.US)(module);
-    return exports === Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE || exports === Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_BADGE ? (0, Chunk951288.jsx)(Chunk481060.lBU, {
+    return exports === Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE || exports === Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_BADGE ? (0, Chunk54381.jsx)(Chunk481060.lBU, {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
-    }) : exports === Chunk704215.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE || exports === Chunk704215.z.HALLOWEEN_APP_ICONS_APPEARANCE_SETTINGS_WEB_BADGE ? (0, Chunk951288.jsx)(Chunk481060.IGR, {
+    }) : exports === Chunk704215.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE || exports === Chunk704215.z.HALLOWEEN_APP_ICONS_APPEARANCE_SETTINGS_WEB_BADGE ? (0, Chunk54381.jsx)(Chunk481060.IGR, {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     }) : null
   },
@@ -158,7 +158,7 @@ let eB = () => {
   eV = () => {
     let e = eF(),
       [t] = (0, Chunk243778.US)(module);
-    return exports === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE || exports === Chunk704215.z.WIDGETS_USER_SETTINGS_NEW_BADGE ? (0, Chunk951288.jsx)(Chunk481060.IGR, {
+    return exports === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE || exports === Chunk704215.z.WIDGETS_USER_SETTINGS_NEW_BADGE ? (0, Chunk54381.jsx)(Chunk481060.IGR, {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     }) : null
   },
@@ -183,11 +183,11 @@ let eB = () => {
       hasTOTPEnabled: e$,
       developerMode: e0,
       isAdultUser: e1,
-      hasSecureFramesVerifiedUserIds: e2,
-      hasIgnoredUsers: e3,
+      hasSecureFramesVerifiedUserIds: e3,
+      hasIgnoredUsers: e2,
       hasBlockedUsers: e4,
-      isEligibleForSensitiveContentDefaults: e8,
-      inputMode: e5,
+      isEligibleForSensitiveContentDefaults: e5,
+      inputMode: e8,
       activeInputProfile: e6,
       isInputProfileCustom: e7,
       isDataUsage3PToggleEnabled: e9,
@@ -231,7 +231,7 @@ let eB = () => {
         searchableTitles: [ew.intl.string(ew.t["/52UYy"]), ew.intl.string(ew.t.sK0dmH), ew.intl.string(ew.t.XxRj7f), ew.intl.string(ew.t.yNGjyK), ew.intl.string(ew.t.KPGVWl)],
         section: eP.oAB.ACCOUNT,
         parent: eN.s6.ACCOUNT_PROFILE,
-        predicate: () => e8
+        predicate: () => e5
       },
       [eN.s6.ACCOUNT_USERNAME]: {
         searchableTitles: [ew.intl.string(ew.t["+JkHPw"])],
@@ -575,7 +575,7 @@ let eB = () => {
         section: eP.oAB.DATA_AND_PRIVACY,
         searchableTitles: [ew.intl.string(ew.t["5b3FNI"])],
         parent: eN.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-        predicate: () => e2
+        predicate: () => e3
       },
       [eN.s6.PRIVACY_FAMILY_CENTER]: {
         section: eP.oAB.FAMILY_CENTER,
@@ -671,7 +671,7 @@ let eB = () => {
         parent: eN.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
         label: ew.intl.string(ew.t["3wRort"]),
         element: eS.ZP,
-        predicate: () => e3 || e4
+        predicate: () => e2 || e4
       },
       [eN.s6.BLOCKED_USERS]: {
         section: eP.oAB.CONTENT_AND_SOCIAL,
@@ -687,7 +687,7 @@ let eB = () => {
         searchableTitles: [ew.intl.string(ew.t["93ZDWE"])],
         label: ew.intl.string(ew.t["93ZDWE"]),
         element: eS.yo,
-        predicate: () => e3
+        predicate: () => e2
       },
       [eN.s6.PREMIUM]: {
         section: eP.oAB.PREMIUM,
@@ -1028,7 +1028,7 @@ let eB = () => {
         section: eP.oAB.VOICE,
         searchableTitles: [ew.intl.string(ew.t["sqUm+k"]), ew.intl.string(ew.t.nuFtHH)],
         parent: eN.s6.VOICE_AND_VIDEO_VOICE,
-        predicate: () => e5 === eD.pM.VOICE_ACTIVITY && e7
+        predicate: () => e8 === eD.pM.VOICE_ACTIVITY && e7
       },
       [eN.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT]: {
         section: eP.oAB.VOICE,

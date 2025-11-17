@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => _
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
   Chunk546791 = require("./546791.js"),
@@ -42,13 +42,13 @@ function _() {
       (0, Chunk481060.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([require.e("82777"), require.e("48168")]).then(require.bind(require, 978305));
+        } = await Promise.all([require.e("69611"), require.e("48168")]).then(require.bind(require, 978305));
         return t => (0, r.jsx)(e, f({}, t))
       }), Chunk626135.default.track(Chunk981631.rMx.FAMILY_CENTER_ACTION, {
         action: Chunk292352.YC.ShowQRCodeModal
       })
     };
-  return (0, Chunk951288.jsx)(Chunk481060.Button, {
+  return (0, Chunk54381.jsx)(Chunk481060.Button, {
     icon: Chunk481060.IkH,
     variant: "primary",
     text: module,

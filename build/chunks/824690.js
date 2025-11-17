@@ -4,15 +4,15 @@
 require.d(exports, {
   Z: () => o
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk695346 = require("./695346.js"),
   Chunk36703 = require("./36703.js");
 
 function o() {
-  let [e, t] = Chunk647438.useState(Chunk695346.AY.getSetting());
+  let [e, t] = Chunk473749.useState(Chunk695346.AY.getSetting());
   return {
     volume: module,
-    onVolumeChange: Chunk647438.useCallback(e => {
+    onVolumeChange: Chunk473749.useCallback(e => {
       let n = (0, a.A)(e);
       t(n), i.AY.updateSetting(n)
     }, [])

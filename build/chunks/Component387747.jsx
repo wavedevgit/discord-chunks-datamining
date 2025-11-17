@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => p
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk410575 = require("./410575.jsx"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -21,29 +21,29 @@ function p() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS_GIFT_INVENTORY);
-  return (0, Chunk951288.jsxs)(Chunk906732.Gt, {
+  return (0, Chunk54381.jsxs)(Chunk906732.Gt, {
     value: module,
-    children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+    children: [(0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.GIFT_CODE_REDEMPTION,
-      children: (0, Chunk951288.jsx)(Chunk410575.Z, {
+      children: (0, Chunk54381.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.LIBRARY_INVENTORY_CODE_REDEMPTION,
-        children: (0, Chunk951288.jsx)(Chunk541540.Z, {})
+        children: (0, Chunk54381.jsx)(Chunk541540.Z, {})
       })
-    }), (0, Chunk951288.jsx)(Chunk921801.F, {
+    }), (0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.GIFT_INVENTORY_QUESTS,
-      children: (0, Chunk951288.jsx)(Chunk410575.Z, {
+      children: (0, Chunk54381.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.QUESTS,
-        children: (0, Chunk951288.jsx)(Chunk625252.Z, {})
+        children: (0, Chunk54381.jsx)(Chunk625252.Z, {})
       })
-    }), (0, Chunk951288.jsx)(Chunk921801.F, {
+    }), (0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.GIFT_INVENTORY_LIST,
-      children: (0, Chunk951288.jsx)(Chunk410575.Z, {
+      children: (0, Chunk54381.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.LIBRARY_INVENTORY_GIFTS_LIST,
-        children: (0, Chunk951288.jsx)(Chunk29599.Z, {})
+        children: (0, Chunk54381.jsx)(Chunk29599.Z, {})
       })
-    }), (0, Chunk951288.jsx)(Chunk921801.F, {
+    }), (0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.GIFT_BLOCKED_PAYMENTS,
-      children: (0, Chunk951288.jsx)(Chunk89057.c8, {})
+      children: (0, Chunk54381.jsx)(Chunk89057.c8, {})
     })]
   })
 }

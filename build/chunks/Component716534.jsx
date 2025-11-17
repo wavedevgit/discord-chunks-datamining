@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => q
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -158,12 +158,12 @@ function q(e) {
     e0 = ee.paymentSourceId,
     e1 = (0, T.$)($, e0),
     {
-      hasEntitlements: e2,
-      entitlements: e3
+      hasEntitlements: e3,
+      entitlements: e2
     } = (0, V.H)(ej.id, eD),
     e4 = (0, D.Ap)(ee.paymentSourceId),
-    e8 = (0, O.sE)(el, e0, Q),
-    e5 = (0, v.Kp)({
+    e5 = (0, O.sE)(el, e0, Q),
+    e8 = (0, v.Kp)({
       isTrial: eh,
       isGift: eD,
       selectedSkuId: ey,
@@ -179,7 +179,7 @@ function q(e) {
       excludeReverseTrial: false,
       excludeReverseTrialFromCountdown: true
     }),
-    te = !e5 && e9.isFractionalPremiumActive && Y.dJ.has(Q),
+    te = !e8 && e9.isFractionalPremiumActive && Y.dJ.has(Q),
     tt = i.useMemo(() => (0, D.V7)({
       skuId: ey,
       isPremium: ev,
@@ -187,7 +187,7 @@ function q(e) {
       currentSubscription: eb,
       defaultPlanId: eO
     }), [ey, eb, eO, ev]),
-    tn = (0, v.$g)(e5, eV, ej),
+    tn = (0, v.$g)(e8, eV, ej),
     tr = i.useMemo(() => eh && null != eV ? eV : eA && null != eY ? eY : true, [eA, eh, eV, eY]);
   if (i.useEffect(() => {
       eD ? eT(eq) : eT(eV)
@@ -262,7 +262,7 @@ function q(e) {
     });
   eD && !eQ ? ta = K.intl.string(K.t.J5a0eb) : eD && eQ ? ta = "" : (0, D.PV)(ej.id) && (ta = D.ZP.getBillingReviewSubheader(null, ej));
   let to = null != eF && eF.length > 0 && (e0 === N.c || null === e1) && eN ? B.w.SELECT_PAYMENT_METHOD : true;
-  return e8 ? null : (0, r.jsxs)("div", {
+  return e5 ? null : (0, r.jsxs)("div", {
     className: z.stepBody,
     children: [(0, r.jsx)(B.Y, {
       paymentRestrictionBannerType: to
@@ -278,7 +278,7 @@ function q(e) {
         variant: "text-sm/normal",
         children: eu
       })]
-    }), e5 && (0, r.jsxs)("div", {
+    }), e8 && (0, r.jsxs)("div", {
       children: [(0, r.jsx)(k.UN, {
         negativeMarginTop: true,
         negativeMarginBottom: true
@@ -321,7 +321,7 @@ function q(e) {
         label: eh ? K.intl.string(K.t["YH7B+D"]) : K.intl.string(K.t["mmDvV+"]),
         paymentSources: Object.values($),
         selectedPaymentSourceId: e0,
-        prependOption: e2 && !eh ? {
+        prependOption: e3 && !eh ? {
           label: K.intl.string(K.t.IGU7El),
           value: null
         } : null,
@@ -333,10 +333,10 @@ function q(e) {
         className: o()({
           [z.premiumBrandRefreshInputBackground]: eR
         })
-      }), e2 && null == e0 ? (0, r.jsx)("div", {
+      }), e3 && null == e0 ? (0, r.jsx)("div", {
         className: z.paymentSourceOptionalWarning,
         children: K.intl.format(K.t["2wPRSF"], {
-          months: e3.length
+          months: e2.length
         })
       }) : null, em ? null : (0, r.jsx)(_.b, {
         currencies: et,

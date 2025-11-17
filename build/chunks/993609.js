@@ -6,7 +6,7 @@ function r(e, t) {
 require.d(exports, {
   z: () => i
 }), require("./388685.js");
-let i = (0, require("./191336.js").U)((e, t) => ({
+let i = (0, require("./663042.js").U)((e, t) => ({
   openMenus: new Set,
   isMenuOpenForMessage: e => Array.from(t().openMenus).some(t => null != e && t.startsWith("".concat(e, ":"))),
   openMenu: (t, n) => {

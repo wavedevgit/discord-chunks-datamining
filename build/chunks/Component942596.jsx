@@ -5,8 +5,8 @@ require.d(exports, {
   Y: () => z,
   Z: () => et
 }), require("./997841.js"), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -92,9 +92,9 @@ let q = {
     VoiceChannel: [108, 60],
     ActivityFeed: [900, 500]
   },
-  X = (0, Chunk438139.Z)(class extends Chunk647438.PureComponent {
+  X = (0, Chunk438139.Z)(class extends Chunk473749.PureComponent {
     render() {
-      return (0, Chunk951288.jsx)("div", {
+      return (0, Chunk54381.jsx)("div", {
         className: Chunk206733.timestamp,
         children: this.props.message
       })
@@ -122,7 +122,7 @@ function J(e) {
     className: F.platformIcon
   })
 }
-class $ extends(r = Chunk647438.PureComponent) {
+class $ extends(r = Chunk473749.PureComponent) {
   get activity() {
     let {
       activity: e,
@@ -197,9 +197,9 @@ class $ extends(r = Chunk647438.PureComponent) {
     })
   }
   renderXboxImage() {
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: Chunk206733.assets,
-      children: (0, Chunk951288.jsx)("img", {
+      children: (0, Chunk54381.jsx)("img", {
         alt: "",
         src: Chunk726542.Z.get(Chunk981631.ABu.XBOX).icon.customPNG,
         className: s()(this.getTypeClass("assetsLargeImage", "Xbox"))
@@ -522,21 +522,21 @@ class $ extends(r = Chunk647438.PureComponent) {
     (0, Chunk802856.Z)(c) ? (e = this.renderXboxImage(), _ = true) : null == (e = this.renderImage(c)) && (_ = null != (e = this.renderGameImage(c)));
     let p = this.renderName(c),
       h = this.renderDetails(c),
-      g = this.renderState(c, Chunk647438),
+      g = this.renderState(c, Chunk473749),
       E = this.renderTimePlayed(c),
       b = this.renderChannelDetails(c),
       y = null != require ? require() : null,
       O = this.renderTimeBar(c),
       v = ![module, Chunk410030, Chunk726542, Chunk686546, Chunk925329, Chunk565138, Chunk168524].some(e => null != e);
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: s()(this.getTypeClass("activity"), r),
-      children: [this.renderHeader(Chunk833858), (0, Chunk951288.jsx)("div", {
+      children: [this.renderHeader(Chunk833858), (0, Chunk54381.jsx)("div", {
         className: s()(Chunk438139 ? Chunk206733.bodyAlignCenter : Chunk206733.bodyNormal),
-        children: (0, Chunk951288.jsxs)("div", {
+        children: (0, Chunk54381.jsxs)("div", {
           className: Chunk206733.activityDetails,
-          children: [module, this.isStreamerOnTypeActivityFeed() ? null : (0, Chunk951288.jsxs)(Chunk600164.Z.Child, {
+          children: [module, this.isStreamerOnTypeActivityFeed() ? null : (0, Chunk54381.jsxs)(Chunk600164.Z.Child, {
             className: s()((0, Chunk153066.l)(Chunk206733, "content", Chunk438139 ? "GameImage" : null != module ? "Images" : "NoImages", exports)),
-            children: [(0, Chunk951288.jsxs)(Chunk481060.P3F, {
+            children: [(0, Chunk54381.jsxs)(Chunk481060.P3F, {
               className: s()(null != Chunk512722 && Chunk206733.openGameProfile),
               onClick: null != Chunk512722 ? e => {
                 l(e), null == o || o()
@@ -545,7 +545,7 @@ class $ extends(r = Chunk647438.PureComponent) {
             }), Chunk810568, Chunk780384 ? null : Chunk565138, Chunk194983 ? Chunk168524 : null]
           })]
         })
-      }), Chunk780384 ? Chunk168524 : null, (0, Chunk951288.jsx)(J, {
+      }), Chunk780384 ? Chunk168524 : null, (0, Chunk54381.jsx)(J, {
         activity: c
       })]
     })

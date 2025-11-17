@@ -4,8 +4,8 @@
 require.d(exports, {
   o: () => m
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
@@ -54,7 +54,7 @@ let h = {
   friction: 7,
   tension: 60
 };
-class m extends(r = Chunk647438.Component) {
+class m extends(r = Chunk473749.Component) {
   componentWillAppear(e) {
     this.animateTo(1).start(e)
   }
@@ -91,7 +91,7 @@ class m extends(r = Chunk647438.Component) {
       className: e,
       children: t
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk748780.Z.div, {
+    return (0, Chunk54381.jsx)(Chunk748780.Z.div, {
       className: s()(module, Chunk684640.slider),
       style: this.getAnimatedStyle(),
       children: exports

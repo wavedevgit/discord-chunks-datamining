@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => W
 }), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -79,15 +79,15 @@ function B(e, t) {
 }
 let Z = () => {
     let e = (0, Chunk346497.W)();
-    return (0, Chunk951288.jsx)(Chunk382791.Cy, {
+    return (0, Chunk54381.jsx)(Chunk382791.Cy, {
       text: module,
       className: Chunk17355.bogoPillWithSparkles,
       colorOptions: Chunk382791.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     })
   },
-  F = () => (0, Chunk951288.jsx)("div", {
+  F = () => (0, Chunk54381.jsx)("div", {
     className: Chunk17355.mostPopularPill,
-    children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
+    children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
       className: Chunk17355.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
       children: Chunk388032.intl.string(Chunk388032.t["o/oRJB"])

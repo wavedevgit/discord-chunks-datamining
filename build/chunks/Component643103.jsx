@@ -3,8 +3,8 @@
 require.d(exports, {
   p: () => N
 }), require("./642613.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk435935 = require("./435935.jsx"),
@@ -21,7 +21,7 @@ function _(e, t, a) {
     writable: true
   }) : e[t] = a, e
 }
-class N extends Chunk647438.PureComponent {
+class N extends Chunk473749.PureComponent {
   componentDidMount() {
     this.callChangeLocale(Chunk330711.Z.getLocale())
   }
@@ -51,26 +51,26 @@ class N extends Chunk647438.PureComponent {
           alt: e.name
         }), e.name]
       }, e.code)
-    })), (0, Chunk951288.jsxs)("div", {
+    })), (0, Chunk54381.jsxs)("div", {
       className: l()(Chunk405948.localePicker, Chunk120356),
       onMouseEnter: this.open,
       onMouseLeave: this.close,
       onClick: this.toggle,
-      children: [(0, Chunk951288.jsxs)(Chunk435935.k, {
+      children: [(0, Chunk54381.jsxs)(Chunk435935.k, {
         align: Chunk435935.k.Align.CENTER,
         className: (0, Chunk982905.l)(Chunk405948, "opener", module ? "Open" : null),
-        children: [(0, Chunk951288.jsx)("span", {
+        children: [(0, Chunk54381.jsx)("span", {
           className: Chunk405948.line
-        }), (0, Chunk951288.jsx)("img", {
+        }), (0, Chunk54381.jsx)("img", {
           className: Chunk405948.localeIcon,
           src: Chunk431138.r.ICON_TRANSLATE,
           alt: "Choose Locale"
-        }), (0, Chunk951288.jsx)("img", {
+        }), (0, Chunk54381.jsx)("img", {
           className: Chunk405948.arrowIcon,
           src: Chunk431138.r.ICON_ARROW_DOWN,
           alt: "Open Locale"
         })]
-      }), (0, Chunk951288.jsx)("ul", {
+      }), (0, Chunk54381.jsx)("ul", {
         className: (0, Chunk982905.l)(Chunk405948, "localeList", module ? "Open" : "Closed"),
         children: Chunk330711
       })]

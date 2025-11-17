@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => eo
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -114,7 +114,7 @@ let ee = Chunk998502.ZP.getEnableHardwareAcceleration(),
       y: 0
     }
   },
-  en = Chunk647438.memo(function(e) {
+  en = Chunk473749.memo(function(e) {
     let {
       colorString: t,
       colorStrings: l,
@@ -217,7 +217,7 @@ let ee = Chunk998502.ZP.getEnableHardwareAcceleration(),
       }
     })
   }),
-  er = Chunk647438.memo(function(e) {
+  er = Chunk473749.memo(function(e) {
     let {
       colorRoleId: t
     } = e, n = $(e, ["colorRoleId"]), {
@@ -238,7 +238,7 @@ let ee = Chunk998502.ZP.getEnableHardwareAcceleration(),
       nameplate: h
     }))
   }),
-  ei = Chunk647438.memo(function(e) {
+  ei = Chunk473749.memo(function(e) {
     let {
       id: t,
       title: l,
@@ -303,7 +303,7 @@ function el(e) {
     itemProps: n
   })
 }
-class ea extends Chunk647438.Component {
+class ea extends Chunk473749.Component {
   shouldComponentUpdate(e) {
     return e.channel.id !== this.props.channel.id || e.version !== this.props.version || e.groups.length !== this.props.groups.length
   }
@@ -338,11 +338,11 @@ class ea extends Chunk647438.Component {
       scrollTop: n
     } = module.getScrollerState(), {
       rowHeight: r
-    } = this.props, i = Math.floor(exports / Chunk951288);
+    } = this.props, i = Math.floor(exports / Chunk54381);
     return this.getContentFeedAdjustedDimensions({
       height: exports,
-      rowHeight: Chunk951288,
-      rowsVisible: Chunk647438,
+      rowHeight: Chunk54381,
+      rowsVisible: Chunk473749,
       y: require
     })
   }
@@ -353,7 +353,7 @@ class ea extends Chunk647438.Component {
       channel: n,
       sectionHeight: i
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk481060.Wdt, {
+    return (0, Chunk54381.jsx)(Chunk481060.Wdt, {
       children: l => (0, r.jsx)(Z.FG, {
         children: s => (0, r.jsx)("aside", {
           className: a()(K.membersWrap, K.hiddenMembers),

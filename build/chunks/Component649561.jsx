@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => L
 }), require("./388685.js"), require("./358797.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -56,7 +56,7 @@ function D() {
     }]
   })
 }
-class k extends Chunk647438.PureComponent {
+class k extends Chunk473749.PureComponent {
   componentDidMount() {
     this.notificationTimer = setTimeout(this.hideNotification, T), Chunk13245.Z.track(Chunk981631.rMx.NOTIFICATION_VIEWED, {
       notif_type: Chunk987650.n0.OverlayCrashed
@@ -77,10 +77,10 @@ class k extends Chunk647438.PureComponent {
     } = this.state, {
       notificationTimer: r
     } = this;
-    return null == Chunk647438 ? null : (0, Chunk951288.jsx)(Chunk692546.Z, {
+    return null == Chunk473749 ? null : (0, Chunk54381.jsx)(Chunk692546.Z, {
       contentDomRef: this.contentDomRef,
       observe: false,
-      children: (0, Chunk951288.jsx)(Chunk481060.f6W, {
+      children: (0, Chunk54381.jsx)(Chunk481060.f6W, {
         theme: Chunk981631.BRd.DARK,
         children: r => (0, i.jsxs)(p.P3F, {
           innerRef: this.contentDomRef,
@@ -153,7 +153,7 @@ let R = a().throttle(() => {
 }, 100, {
   trailing: false
 });
-class A extends Chunk647438.PureComponent {
+class A extends Chunk473749.PureComponent {
   componentDidCatch(e, t) {
     let n = (0, b.s1)().location;
     this.setState({
@@ -199,10 +199,10 @@ class A extends Chunk647438.PureComponent {
       error: n,
       info: r
     } = this.state;
-    return null != require ? (0, Chunk951288.jsx)(k, {
+    return null != require ? (0, Chunk54381.jsx)(k, {
       error: require,
-      info: Chunk647438
-    }) : (0, Chunk951288.jsx)("div", {
+      info: Chunk473749
+    }) : (0, Chunk54381.jsx)("div", {
       className: exports,
       children: module
     })

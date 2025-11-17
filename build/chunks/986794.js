@@ -5,13 +5,13 @@ require.d(exports, {
   M: () => o,
   u: () => a
 });
-var Chunk647438 = require("./647438.js");
+var Chunk473749 = require("./473749.js");
 let i = {
     size: true,
     fullWidth: true
   },
-  a = Chunk647438.createContext(i),
+  a = Chunk473749.createContext(i),
   o = () => {
-    let e = Chunk647438.useContext(a);
+    let e = Chunk473749.useContext(a);
     return null == module ? i : module
   }

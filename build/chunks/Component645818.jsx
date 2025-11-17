@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => E
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -26,7 +26,7 @@ let h = (0, Chunk481060.GSL)(Chunk863969.Z),
     [Chunk981631.TzF.CONFLICT]: h,
     [Chunk981631.TzF.ERROR]: h
   });
-class b extends Chunk647438.PureComponent {
+class b extends Chunk473749.PureComponent {
   componentDidMount() {
     this.getIsRecentlySynced() && this.setRecentlySyncedTimeout()
   }
@@ -88,11 +88,11 @@ class b extends Chunk647438.PureComponent {
     } = this.props, i = null == module ? {
       type: Chunk981631.TzF.DONE
     } : module, l = this.getIsRecentlySynced();
-    (m.has(Chunk647438.type) || Chunk442837) && (exports.id, this.getStop(Chunk647438, Chunk442837));
-    let a = Chunk442837 ? g : _[Chunk647438.type];
-    return (0, Chunk951288.jsx)(Chunk28664.u, {
-      text: this.getTooltip(Chunk647438, Chunk442837),
-      children: (0, Chunk951288.jsx)(Chunk846519, {
+    (m.has(Chunk473749.type) || Chunk442837) && (exports.id, this.getStop(Chunk473749, Chunk442837));
+    let a = Chunk442837 ? g : _[Chunk473749.type];
+    return (0, Chunk54381.jsx)(Chunk28664.u, {
+      text: this.getTooltip(Chunk473749, Chunk442837),
+      children: (0, Chunk54381.jsx)(Chunk846519, {
         className: require
       })
     })

@@ -4,7 +4,7 @@
 require.d(exports, {
   W: () => g
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk115434 = require("./115434.js"),
   Chunk264181 = require("./264181.js"),
   Chunk442837 = require("./442837.js"),
@@ -57,7 +57,7 @@ let g = () => {
   let e = (0, Chunk619899.zL)(Chunk281598.jE.UPSELL_BANNER),
     t = (0, Chunk619899.zL)(Chunk281598.jE.UPSELL_BANNER_POPOUT),
     n = (0, Chunk442837.e7)([Chunk874703.Z], () => Chunk874703.Z.getMarketingBySurface(Chunk115434.K.EDIT_PROFILE_SETTINGS)),
-    _ = Chunk647438.useMemo(() => null != require ? require : {
+    _ = Chunk473749.useMemo(() => null != require ? require : {
       asset: Chunk78230,
       popoutAsset: Chunk513767,
       title: Chunk388032.intl.string(Chunk388032.t.QZVVBh),
@@ -65,7 +65,7 @@ let g = () => {
       version: 0,
       revertTextColor: false
     }, [require]);
-  return Chunk647438.useMemo(() => m(p({}, _), {
+  return Chunk473749.useMemo(() => m(p({}, _), {
     type: Chunk264181.Z.BANNER,
     asset: null != module ? module : _.asset,
     popoutAsset: null != exports ? exports : _.popoutAsset

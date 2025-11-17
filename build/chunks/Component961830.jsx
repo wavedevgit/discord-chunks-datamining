@@ -8,8 +8,8 @@ require.d(exports, {
   wo: () => O,
   yp: () => I
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk853872 = require("./853872.js"),
   Chunk409813 = require("./409813.js"),
   Chunk276442 = require("./276442.js"),
@@ -78,11 +78,11 @@ let g = {
   },
   b = {
     key: Chunk409813.h8.AWAITING_PURCHASE_TOKEN_AUTH,
-    renderStep: () => (0, Chunk951288.jsx)(Chunk380898.Z, {})
+    renderStep: () => (0, Chunk54381.jsx)(Chunk380898.Z, {})
   },
   y = {
     key: Chunk409813.h8.AWAITING_AUTHENTICATION,
-    renderStep: () => (0, Chunk951288.jsx)(Chunk793541.Z, {}),
+    renderStep: () => (0, Chunk54381.jsx)(Chunk793541.Z, {}),
     options: {
       renderHeader: true
     }

@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => f
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk719711 = require("./719711.js"),
   Chunk433517 = require("./433517.js"),
   Chunk579806 = require("./579806.js"),
@@ -19,7 +19,7 @@ function d(e) {
 }
 
 function f() {
-  return Chunk647438.useEffect(() => {
+  return Chunk473749.useEffect(() => {
     window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && true !== Chunk433517.K.get(Chunk719711.SV) && Chunk998502.ZP.supportsFeature(Chunk981631.eRX.USER_DATA_CACHE) && (Chunk286035.Te(), Chunk579806.Z.userDataCache.getCached().then(e => {
       if (null == e) {
         c.kb(), s.default.track(u.rMx.DOMAIN_MIGRATED, {

@@ -5,8 +5,8 @@ require.d(exports, {
   default: () => Z,
   s: () => B
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk990547 = require("./990547.js"),
   Chunk311570 = require("./311570.js"),
   Chunk793030 = require("./793030.js"),
@@ -373,12 +373,12 @@ let V = e => {
     } = (0, Chunk576645.t6)(Chunk317951.D1);
     if (null == exports || 0 === exports) return null;
     let n = (null == module ? true : module.type) === Chunk981631.qc2.DEVELOPER_GIFT ? Chunk388032.t["b+P6ra"] : Chunk388032.t.RiQ4ci;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk393919.remaining,
-      children: [(0, Chunk951288.jsx)(Chunk481060.l22, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.l22, {
         color: "currentColor",
         className: Chunk393919.shootingStar
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         color: "none",
         variant: "text-sm/semibold",
         children: Chunk388032.intl.formatToPlainString(require, {
@@ -429,24 +429,24 @@ let V = e => {
       })
     })
   },
-  q = () => (0, Chunk951288.jsx)("div", {
+  q = () => (0, Chunk54381.jsx)("div", {
     className: Chunk393919.anomaly,
-    children: (0, Chunk951288.jsxs)("div", {
+    children: (0, Chunk54381.jsxs)("div", {
       className: Chunk393919.error,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Eep, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Eep, {
         src: Chunk99713,
         width: U,
         height: j
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.oKJdSs)
       })]
     })
   }),
-  X = () => (0, Chunk951288.jsx)("div", {
+  X = () => (0, Chunk54381.jsx)("div", {
     className: Chunk393919.anomaly,
-    children: (0, Chunk951288.jsx)("div", {
+    children: (0, Chunk54381.jsx)("div", {
       className: Chunk393919.spinner,
-      children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
+      children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
     })
   })

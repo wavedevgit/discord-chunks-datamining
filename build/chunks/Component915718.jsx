@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => D
 }), require("./388685.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk907862 = require("./907862.js"),
@@ -42,7 +42,7 @@ function w(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class A extends Chunk647438.PureComponent {
+class A extends Chunk473749.PureComponent {
   componentDidMount() {
     Chunk585483.S.subscribe(Chunk981631.CkL.CALL_START, this.handleVoiceClick)
   }
@@ -59,11 +59,11 @@ class A extends Chunk647438.PureComponent {
       mode: c,
       isProvisional: d
     } = this.props;
-    if (require || Chunk647438 && Chunk26151 === Chunk981631.WtW.VOICE) return null;
+    if (require || Chunk473749 && Chunk26151 === Chunk981631.WtW.VOICE) return null;
     let u = Chunk907862.isManaged(),
       p = null,
       h = false;
-    return Chunk287734 ? (h = true, p = Chunk388032.intl.string(Chunk388032.t.izMR7o), e = Chunk481060.aML.Colors.RED) : Chunk131951.Z.supports(Chunk65154.AN.VIDEO) ? Chunk704215 ? (p = Chunk388032.intl.string(Chunk388032.t.PHzjvX), e = Chunk481060.aML.Colors.RED, h = true) : Chunk647438 && Chunk26151 === Chunk981631.WtW.VIDEO ? (t = this.handleJoinVideoCall, p = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.W68MhH)) : (t = this.handleStartVideoCall, p = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.oCqlGG)) : (h = true, t = this.handleBrowserNotSupported, p = Chunk388032.intl.string(Chunk388032.t.UVpg3U)), (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
+    return Chunk287734 ? (h = true, p = Chunk388032.intl.string(Chunk388032.t.izMR7o), e = Chunk481060.aML.Colors.RED) : Chunk131951.Z.supports(Chunk65154.AN.VIDEO) ? Chunk704215 ? (p = Chunk388032.intl.string(Chunk388032.t.PHzjvX), e = Chunk481060.aML.Colors.RED, h = true) : Chunk473749 && Chunk26151 === Chunk981631.WtW.VIDEO ? (t = this.handleJoinVideoCall, p = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.W68MhH)) : (t = this.handleStartVideoCall, p = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.oCqlGG)) : (h = true, t = this.handleBrowserNotSupported, p = Chunk388032.intl.string(Chunk388032.t.UVpg3U)), (0, Chunk54381.jsx)(Chunk665149.ZP.Icon, {
       icon: Chunk481060.Odl,
       onClick: exports,
       disabled: Chunk358221 || Chunk442837,
@@ -84,8 +84,8 @@ class A extends Chunk647438.PureComponent {
     if (require) return null;
     let h = Chunk287734.isManaged(),
       f = false;
-    Chunk451576 ? (f = true, e = Chunk388032.intl.string(Chunk388032.t.izMR7o), t = Chunk481060.aML.Colors.RED) : Chunk442837 ? (e = Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.LW2Ghr) : Chunk388032.intl.string(Chunk388032.t.rF7lN5), t = Chunk481060.aML.Colors.RED, f = true) : Chunk26151 ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvX), t = Chunk481060.aML.Colors.RED, f = true) : e = Chunk647438 ? Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.fdEeb5) : Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.focH1t);
-    let m = (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
+    Chunk451576 ? (f = true, e = Chunk388032.intl.string(Chunk388032.t.izMR7o), t = Chunk481060.aML.Colors.RED) : Chunk442837 ? (e = Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.LW2Ghr) : Chunk388032.intl.string(Chunk388032.t.rF7lN5), t = Chunk481060.aML.Colors.RED, f = true) : Chunk26151 ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvX), t = Chunk481060.aML.Colors.RED, f = true) : e = Chunk473749 ? Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.fdEeb5) : Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.focH1t);
+    let m = (0, Chunk54381.jsx)(Chunk665149.ZP.Icon, {
       ref: this.iconRef,
       icon: Chunk481060.Csw,
       onClick: this.handleVoiceClick,
@@ -93,8 +93,8 @@ class A extends Chunk647438.PureComponent {
       tooltip: module,
       tooltipColor: exports
     });
-    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [Chunk590293, (0, Chunk951288.jsx)(Chunk243778.ZP, {
+    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [Chunk590293, (0, Chunk54381.jsx)(Chunk243778.ZP, {
         contentTypes: Chunk607070,
         children: e => {
           let {
@@ -119,7 +119,7 @@ class A extends Chunk647438.PureComponent {
     })
   }
   render() {
-    return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
+    return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
       children: [this.renderVoiceCallButton(), this.renderVideoCallButton()]
     })
   }

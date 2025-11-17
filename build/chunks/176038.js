@@ -6,7 +6,7 @@ require.d(exports, {
   th: () => O,
   ub: () => N
 }), require("./388685.js"), require("./457542.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk524437 = require("./524437.js"),
   Chunk809206 = require("./809206.js"),
   Chunk153867 = require("./153867.js"),
@@ -40,7 +40,7 @@ async function E() {
   try {
     if (exports) {
       let t, a = [...module, null],
-        l = S(Chunk647438);
+        l = S(Chunk473749);
       if (null != Chunk524437) {
         var n;
         let e = Chunk469115.qt[Chunk524437];
@@ -67,8 +67,8 @@ async function O() {
     n = (0, Chunk884697.jT)(module),
     a = exports.length > 0,
     l = require.length > 0;
-  if (Chunk647438 || Chunk524437) try {
-    if (Chunk647438) {
+  if (Chunk473749 || Chunk524437) try {
+    if (Chunk473749) {
       let e = S([...exports, null]);
       (0, Chunk150039.PO)(module)
     }
@@ -94,7 +94,7 @@ function T() {
 }
 
 function N() {
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     var e, t, n, a, l;
     let b = Chunk594174.default.getCurrentUser(),
       v = Chunk695346.L1.getSetting(),
@@ -105,7 +105,7 @@ function N() {
       S = Chunk981631.backgroundGradientPresetId,
       E = null == Chunk74538 || null == (e = Chunk74538.avatarDecoration) ? true : module.skuId,
       O = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-      T = null != E && null != (a = Chunk959517.find(e => e.skuId === E)) ? Chunk647438 : null,
+      T = null != E && null != (a = Chunk959517.find(e => e.skuId === E)) ? Chunk473749 : null,
       N = null != O && null != (l = y.find(e => e.skuId === O)) ? Chunk524437 : null,
       P = Chunk607070.Z.fontSize,
       w = Chunk607070.Z.messageGroupSpacing,

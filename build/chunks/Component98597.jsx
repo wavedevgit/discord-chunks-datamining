@@ -7,8 +7,8 @@ require.d(exports, {
   hR: () => w,
   jo: () => Z
 });
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -201,18 +201,18 @@ function R(e) {
     })
   })
 }
-class D extends(r = Chunk647438.PureComponent) {
+class D extends(r = Chunk473749.PureComponent) {
   renderEditButton() {
-    return (0, Chunk951288.jsx)(w, P({}, this.props))
+    return (0, Chunk54381.jsx)(w, P({}, this.props))
   }
   renderInviteButton() {
-    return (0, Chunk951288.jsx)(T, P({}, this.props))
+    return (0, Chunk54381.jsx)(T, P({}, this.props))
   }
   renderRemoveSuggestionButton() {
-    return (0, Chunk951288.jsx)(A, P({}, this.props))
+    return (0, Chunk54381.jsx)(A, P({}, this.props))
   }
   renderAcceptSuggestionButton() {
-    return (0, Chunk951288.jsx)(R, P({}, this.props))
+    return (0, Chunk54381.jsx)(R, P({}, this.props))
   }
   getClassName() {
     let {

@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk846519 = require("./846519.js"),
   Chunk147913 = require("./147913.js"),
-  Chunk941033 = require("./941033.js"),
+  Chunk603113 = require("./603113.js"),
   Chunk594190 = require("./594190.js"),
   Chunk509003 = require("./509003.js"),
   Chunk131951 = require("./131951.js"),
@@ -87,7 +87,7 @@ class b extends Chunk147913.Z {
     let e = Chunk885110.Z.findActivity(e => e.type === h.IIU.PLAYING),
       t = Chunk594190.ZP.getCurrentGameForAnalytics();
     return {
-      game_platform: (0, Chunk941033.Z)(module),
+      game_platform: (0, Chunk603113.Z)(module),
       game_name: null != module ? module.name : null,
       game_exe_name: null != exports ? exports.exeName : null,
       game_id: null != module ? module.application_id : null,

@@ -4,12 +4,12 @@
 require.d(exports, {
   r: () => o
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk88658 = require("./88658.js"),
   Chunk695346 = require("./695346.js");
 
 function o() {
   let e = Chunk695346.xq.useSetting(),
-    t = Chunk647438.useMemo(() => (0, Chunk88658.bL)(module), [module]);
+    t = Chunk473749.useMemo(() => (0, Chunk88658.bL)(module), [module]);
   return exports.mutualGuilds && !exports.all
 }

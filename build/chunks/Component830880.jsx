@@ -3,8 +3,8 @@
 require.d(exports, {
   R: () => _
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk704215 = require("./704215.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk907995 = require("./907995.jsx"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
 
 function _() {
   let [e, t] = (0, Chunk243778.US)([Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE]);
-  return Chunk647438.useMemo(() => module === Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE, [module]) ? (0, Chunk951288.jsx)(Chunk907995.f, {
+  return Chunk473749.useMemo(() => module === Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE, [module]) ? (0, Chunk54381.jsx)(Chunk907995.f, {
     label: Chunk388032.t.zqv4nV,
     labelHook: () => {
       (0, Chunk518596.openUserSettings)(Chunk313789.n.CONTENT_AND_SOCIAL_PANEL, {

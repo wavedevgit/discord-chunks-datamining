@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => Z
 }), require("./388685.js"), require("./49124.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
@@ -267,12 +267,12 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
   };
 
 function Z() {
-  let e = Chunk647438.useRef(null),
-    [t, n] = Chunk647438.useState(""),
+  let e = Chunk473749.useRef(null),
+    [t, n] = Chunk473749.useState(""),
     r = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
-    [s, o] = Chunk647438.useState(() => Object.keys(R)),
-    [m, p] = Chunk647438.useState(Chunk120816.Z.loggedEvents),
-    h = Chunk647438.useCallback(e => {
+    [s, o] = Chunk473749.useState(() => Object.keys(R)),
+    [m, p] = Chunk473749.useState(Chunk120816.Z.loggedEvents),
+    h = Chunk473749.useCallback(e => {
       p(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, A, [Chunk120356]);
@@ -281,7 +281,7 @@ function Z() {
         if (R[t].filter(e)) returntrue;
       returnfalse
     }),
-    [f, b] = Chunk647438.useState(true),
+    [f, b] = Chunk473749.useState(true),
     _ = Chunk594174.find(e => e.key === f),
     {
       TabBar: P,
@@ -289,27 +289,27 @@ function Z() {
     } = (0, Chunk621060.ZP)({
       tabs: k
     }, []);
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     ref: module,
     className: i()(Chunk451429.panel, Chunk599832.panel),
-    children: [(0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk599832.toolbar,
-      children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
+      children: [(0, Chunk54381.jsx)(Chunk755721.zx, {
         className: Chunk599832.toolbarButton,
         look: Chunk755721.zx.Looks.BLANK,
         size: Chunk755721.zx.Sizes.ICON,
         onClick: Chunk31336.Zw,
-        children: (0, Chunk951288.jsx)("span", {
+        children: (0, Chunk54381.jsx)("span", {
           title: Chunk388032.intl.string(Chunk388032.t.VkKicb),
-          children: (0, Chunk951288.jsx)(Chunk481060.XHJ, {
+          children: (0, Chunk54381.jsx)(Chunk481060.XHJ, {
             size: "md",
             color: "currentColor",
             "aria-label": Chunk388032.intl.string(Chunk388032.t.VkKicb)
           })
         })
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk599832.toolbarDivider
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk599832.filters,
         children: Object.entries(R).map(e => {
           let [t, n] = e;
@@ -322,25 +322,25 @@ function Z() {
           }, t)
         })
       })]
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk599832.toolbar,
-      children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
+      children: (0, Chunk54381.jsx)(Chunk481060.E1j, {
         size: "sm",
         query: exports,
         onChange: require,
         onClear: () => require(""),
         placeholder: "Search by event name"
       })
-    }), (0, Chunk951288.jsx)(Chunk681619.Z, {
+    }), (0, Chunk54381.jsx)(Chunk681619.Z, {
       columns: N,
       data: Chunk594174,
       selectedRowKey: Chunk572004,
       onClickRow: e => b(e.key)
-    }), null != Chunk257785 && (0, Chunk951288.jsxs)(Chunk484036.Z, {
+    }), null != Chunk257785 && (0, Chunk54381.jsxs)(Chunk484036.Z, {
       className: Chunk599832.subPanel,
       minHeight: 100,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300,
-      children: [(0, Chunk951288.jsx)(P, {}), w({
+      children: [(0, Chunk54381.jsx)(P, {}), w({
         loggedEvent: Chunk257785,
         onClose: () => Chunk55935(true),
         filteredEvents: Chunk594174

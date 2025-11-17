@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => y
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let y = Chunk647438.memo(function(e) {
+let y = Chunk473749.memo(function(e) {
   let {
     channel: t
   } = e, n = (0, d.Z)(), l = (0, s.e7)([f.Z], () => f.Z.isInChannel(t.id)), y = (0, s.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), O = (0, s.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {

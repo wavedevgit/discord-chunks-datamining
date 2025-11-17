@@ -4,14 +4,14 @@
 require.d(exports, {
   Z: () => S
 }), require("./388685.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk215569 = require("./215569.js"),
   Chunk481060 = require("./481060.js"),
   Chunk566006 = require("./566006.js"),
-  Chunk60174 = require("./60174.jsx"),
+  Chunk490597 = require("./490597.jsx"),
   Chunk453687 = require("./453687.js"),
   Chunk434624 = require("./434624.jsx"),
   Chunk287151 = require("./287151.jsx"),
@@ -64,7 +64,7 @@ let O = (e, t) => null == e && null == t || e === t,
     let n = v(e, t);
     return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
   };
-class T extends Chunk647438.PureComponent {
+class T extends Chunk473749.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let n = e.message.reactions.length;
     return 0 === t.reactionsCount && n > 0 ? {
@@ -97,7 +97,7 @@ class T extends Chunk647438.PureComponent {
     } = this.state, N = v ? Chunk893973 : Chunk127947, R = A > 0;
     if (!R && !y) return null;
     let P = y || R;
-    return (0, Chunk951288.jsxs)(Chunk215569.W, {
+    return (0, Chunk54381.jsxs)(Chunk215569.W, {
       component: "div",
       className: o()(N.reactions, b),
       transitionAppear: !C,
@@ -110,28 +110,28 @@ class T extends Chunk647438.PureComponent {
       onMouseLeave: () => this.setState({
         isHovered: false
       }),
-      children: [(0, Chunk951288.jsx)(Chunk434624.l, {
+      children: [(0, Chunk54381.jsx)(Chunk434624.l, {
         reactions: S,
         message: module,
         readOnly: require,
-        isLurking: Chunk647438,
+        isLurking: Chunk473749,
         isGuest: Chunk120356,
         isPendingMember: Chunk566006,
         isForumToolbar: g,
         useChatFontScaling: v,
         className: O
-      }), T > 0 && (0, Chunk951288.jsx)(Chunk481060.P3F, {
+      }), T > 0 && (0, Chunk54381.jsx)(Chunk481060.P3F, {
         onClick: t => {
           t.stopPropagation(), (0, _.op)(E, e)
         },
         className: o()(N.reaction, O, N.remainingReactions),
         "aria-label": Chunk388032.intl.string(Chunk388032.t.lfIHs4),
-        children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
+        children: (0, Chunk54381.jsxs)(Chunk481060.Text, {
           className: N.reactionInner,
           variant: "text-sm/normal",
           children: ["+", T]
         })
-      }), !exports && !I && (0, Chunk951288.jsx)(Chunk60174.X, {
+      }), !exports && !I && (0, Chunk54381.jsx)(Chunk490597.X, {
         tabIndex: P || this.state.isHovered ? 0 : false,
         message: module,
         channel: E,

@@ -7,7 +7,7 @@ require.d(exports, {
   c7: () => p,
   mw: () => g
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk311570 = require("./311570.js"),
   Chunk399606 = require("./399606.js"),
   Chunk335131 = require("./335131.js"),
@@ -57,18 +57,18 @@ let _ = Chunk311570.v.VARIANTS_GROUP;
 function p() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     [t, n, i, l, c, u] = (0, Chunk399606.Wu)([Chunk1870.Z], () => [Chunk1870.Z.isFetching, Chunk1870.Z.isClaiming, Chunk1870.Z.fetchError, Chunk1870.Z.claimError, Chunk1870.Z.purchases, Chunk1870.Z.hasPreviouslyFetched]),
-    d = (0, Chunk647438.useRef)(Chunk1870.Z.hasPreviouslyFetched);
-  (0, Chunk647438.useEffect)(() => {
+    d = (0, Chunk473749.useRef)(Chunk1870.Z.hasPreviouslyFetched);
+  (0, Chunk473749.useEffect)(() => {
     d.current = u
   }, [u]);
-  let f = (0, Chunk647438.useRef)(Chunk1870.Z.fetchError);
-  (0, Chunk647438.useEffect)(() => {
+  let f = (0, Chunk473749.useRef)(Chunk1870.Z.fetchError);
+  (0, Chunk473749.useEffect)(() => {
     f.current = Chunk311570
   }, [Chunk311570]);
-  let p = (0, Chunk647438.useRef)(Chunk1870.Z.isFetching);
-  return (0, Chunk647438.useEffect)(() => {
+  let p = (0, Chunk473749.useRef)(Chunk1870.Z.isFetching);
+  return (0, Chunk473749.useEffect)(() => {
     p.current = exports
-  }, [exports]), (0, Chunk647438.useEffect)(() => {
+  }, [exports]), (0, Chunk473749.useEffect)(() => {
     p.current || true === module && d.current && null == f.current || (0, Chunk335131.qg)({
       variantsReturnStyle: _
     })

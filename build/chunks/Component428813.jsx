@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => u
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk270394 = require("./270394.jsx"),
   Chunk388610 = require("./388610.js"),
@@ -33,7 +33,7 @@ function u() {
       invites: h,
       loading: g
     } = (0, Chunk442837.cj)([Chunk388610.Z], () => Chunk388610.Z.getInvites(), []);
-  return (0, Chunk951288.jsx)(Chunk270394.Z, {
+  return (0, Chunk54381.jsx)(Chunk270394.Z, {
     invites: h,
     loading: g,
     guild: require,

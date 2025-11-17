@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => g
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk990547 = require("./990547.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
@@ -40,28 +40,28 @@ function g() {
         from: Chunk550385.tE.SETTING
       }), (0, Chunk342386.default)()
     };
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk640744.container,
-    children: [(0, Chunk951288.jsx)("div", {
+    children: [(0, Chunk54381.jsx)("div", {
       className: Chunk640744.iconContainer,
-      children: (0, Chunk951288.jsx)("img", {
+      children: (0, Chunk54381.jsx)("img", {
         src: Chunk758335.Z,
         className: Chunk640744.bannerImage,
         alt: ""
       })
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk640744.textContent,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         color: "text-primary",
         children: exports
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk422129.default.nla4RG)
       })]
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk640744.buttonContainer,
-      children: (0, Chunk951288.jsx)(Chunk159691.zxk, {
+      children: (0, Chunk54381.jsx)(Chunk159691.zxk, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.uw9zI7),
         onClick: require

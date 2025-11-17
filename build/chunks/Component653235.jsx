@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => D
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -79,7 +79,7 @@ function R(e) {
     format: null != (t = null == n ? true : n.format) ? t : u.EO.IMAGE
   }
 }
-class P extends Chunk647438.PureComponent {
+class P extends Chunk473749.PureComponent {
   componentDidMount() {
     0 === this.props.trendingCategories.length && (0, Chunk68405.Tg)()
   }
@@ -107,12 +107,12 @@ class P extends Chunk647438.PureComponent {
     })
   }
   render() {
-    return (0, Chunk951288.jsx)(Chunk527429.Z, {
+    return (0, Chunk54381.jsx)(Chunk527429.Z, {
       getItemGrid: this.getItemGrid,
       getCoordsMap: this.getCoordsMap,
       onFocus: this.handleFocus,
       onSelect: this.handleSelect,
-      children: (0, Chunk951288.jsx)(Chunk132748.Z, {
+      children: (0, Chunk54381.jsx)(Chunk132748.Z, {
         desiredItemWidth: 200,
         maxColumns: 6,
         children: this.renderContent

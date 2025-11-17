@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => A
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -112,7 +112,7 @@ function A() {
       var e;
       return (null == (e = Chunk146282.Z.getFeedState(Chunk206583.YN.GLOBAL_FEED)) ? true : module.loading) === true
     }),
-    [R, A] = Chunk647438.useState(""),
+    [R, A] = Chunk473749.useState(""),
     D = (0, Chunk442837.e7)([Chunk77498.Z, Chunk812206.Z], () => {
       var e, t, n;
       return parseInt(R) > 0 ? R : null != (n = null == (e = Chunk77498.Z.getGameByName(R)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(R)) ? true : exports.id
@@ -131,19 +131,19 @@ function A() {
     }),
     U = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
     F = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: Chunk451429.panel,
-    children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
+    children: (0, Chunk54381.jsxs)(Chunk481060.zJl, {
       className: Chunk680027.content,
-      children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 8,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           children: "Inventory"
-        }), Chunk392711.length > 0 && (0, Chunk951288.jsx)(Chunk681619.Z, {
+        }), Chunk392711.length > 0 && (0, Chunk54381.jsx)(Chunk681619.Z, {
           columns: k,
           data: Chunk392711
-        }), (0, Chunk951288.jsx)(Chunk789086.Z, {}), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), (0, Chunk54381.jsx)(Chunk789086.Z, {}), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Refresh Now",
           fullWidth: true,
@@ -156,12 +156,12 @@ function A() {
           },
           loading: Chunk876215
         })]
-      }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 8,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           children: "Impression Capping"
-        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Clear Impressions",
           fullWidth: true,
@@ -170,7 +170,7 @@ function A() {
               type: "CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS"
             })
           }
-        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Log Impressions",
           fullWidth: true,
@@ -179,7 +179,7 @@ function A() {
               type: "CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS"
             })
           }
-        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: Chunk120356 ? "Enable Impression Capping" : "Disable Impression Capping",
           fullWidth: true,
@@ -188,7 +188,7 @@ function A() {
               type: "CONTENT_INVENTORY_DEBUG_TOGGLE_IMPRESSION_CAPPING"
             })
           }
-        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: i ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
           fullWidth: true,
@@ -198,12 +198,12 @@ function A() {
             })
           }
         })]
-      }), false, (0, Chunk951288.jsx)(Chunk650613.Z, {}), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      }), false, (0, Chunk54381.jsx)(Chunk650613.Z, {}), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 8,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           children: "Game Profile"
-        }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+        }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           placeholder: "App ID or full name",
           onChange: e => (0 === e.length || e.length >= 18) && A(e),
           onKeyDown: e => {
@@ -211,22 +211,22 @@ function A() {
           },
           error: R.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : R + " - try by id", ".") : true,
           helperText: null != L ? "Game profile found" : true
-        }), (0, Chunk951288.jsx)("ul", {
+        }), (0, Chunk54381.jsx)("ul", {
           children: U.map(e => (0, a.jsx)("li", {
             children: (0, a.jsx)(Z, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
         })]
-      }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 8,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           children: "Activity Sharing"
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Force show game:"
-        }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
+        }), (0, Chunk54381.jsx)(Chunk481060.PhF, {
           options: Chunk780106.h.map(e => ({
             label: e,
             value: e

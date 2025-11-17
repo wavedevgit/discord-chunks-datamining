@@ -4,7 +4,7 @@
 require.d(exports, {
   sI: () => _
 }), require("./388685.js"), require("./953529.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk588486 = require("./588486.js"),
   Chunk499533 = require("./499533.js"),
@@ -47,7 +47,7 @@ function _() {
   let e = (0, Chunk442837.cj)([Chunk353926.Z], () => Chunk353926.Z.getRegisteredExperiments()),
     t = (0, Chunk442837.cj)([Chunk353926.Z], () => Chunk353926.Z.getAllExperimentOverrideDescriptors());
   return {
-    experiments: (0, Chunk647438.useMemo)(() => d(module), [module]),
-    overridesInfo: (0, Chunk647438.useMemo)(() => f(exports), [exports])
+    experiments: (0, Chunk473749.useMemo)(() => d(module), [module]),
+    overridesInfo: (0, Chunk473749.useMemo)(() => f(exports), [exports])
   }
 }

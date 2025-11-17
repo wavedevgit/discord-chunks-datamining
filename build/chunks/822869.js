@@ -9,7 +9,7 @@ require.d(exports, {
   mh: () => h,
   sF: () => f
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   Chunk367907 = require("./367907.js"),
   Chunk592125 = require("./592125.js"),
@@ -92,7 +92,7 @@ function _(e) {
 }
 
 function p() {
-  return Chunk647438.useMemo(() => (0, Chunk392711.once)((e, t, n) => {
+  return Chunk473749.useMemo(() => (0, Chunk392711.once)((e, t, n) => {
     s.default.track(l.rMx.FORWARD_ADD_RECIPIENT, {
       channel_id: e,
       message_id: t,
@@ -102,7 +102,7 @@ function p() {
 }
 
 function h() {
-  return Chunk647438.useMemo(() => (0, Chunk392711.once)((e, t) => {
+  return Chunk473749.useMemo(() => (0, Chunk392711.once)((e, t) => {
     s.default.track(l.rMx.FORWARD_EDIT_SEARCH, {
       channel_id: e,
       message_id: t
@@ -111,7 +111,7 @@ function h() {
 }
 
 function m() {
-  return Chunk647438.useMemo(() => (0, Chunk392711.once)((e, t) => {
+  return Chunk473749.useMemo(() => (0, Chunk392711.once)((e, t) => {
     s.default.track(l.rMx.FORWARD_EDIT_CONTEXT_MESSAGE, {
       channel_id: e,
       message_id: t

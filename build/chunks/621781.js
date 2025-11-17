@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => r
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk706454 = require("./706454.js"),
   Chunk356659 = require("./356659.js"),
@@ -11,7 +11,7 @@ var Chunk647438 = require("./647438.js"),
 
 function r() {
   let t = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale);
-  return Chunk647438.useMemo(() => [{
+  return Chunk473749.useMemo(() => [{
     value: Chunk356659.OT.SECONDS_30,
     label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv/3"], {
       count: 30

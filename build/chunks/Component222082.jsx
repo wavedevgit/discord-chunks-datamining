@@ -5,7 +5,7 @@ require.d(exports, {
   nv: () => c,
   xv: () => l
 });
-var Chunk951288 = require("./951288.js");
+var Chunk54381 = require("./54381.js");
 
 function l(e) {
   let {
@@ -26,6 +26,6 @@ function c(e) {
 }
 
 function a() {
-  return (0, Chunk951288.jsx)("p", {})
+  return (0, Chunk54381.jsx)("p", {})
 }
-require("./647438.js")
+require("./473749.js")

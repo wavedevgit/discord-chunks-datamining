@@ -1,11 +1,11 @@
-/** Chunk was on 36113 **/
+/** Chunk was on 52708 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => W,
   Z: () => G
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -86,11 +86,11 @@ function G(e) {
 }
 
 function B() {
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk830202.ukTeenDisclaimer,
-    children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.d3s, {
       size: "xs"
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       "aria-label": Chunk388032.intl.string(Chunk388032.t["7blcz6"]),
       variant: "text-xs/normal",
       color: "text-muted",

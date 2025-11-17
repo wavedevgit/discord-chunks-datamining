@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => f
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk722687 = require("./722687.js"),
   Chunk838436 = require("./838436.jsx"),
   Chunk51331 = require("./51331.jsx"),
@@ -19,8 +19,8 @@ function f() {
   var e;
   let t = null != (e = (0, Chunk652262.M)()) ? module : true,
     n = Chunk722687.O8.useControlledSetting(exports);
-  return (0, Chunk951288.jsx)(Chunk838436.U, {
-    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
+  return (0, Chunk54381.jsx)(Chunk838436.U, {
+    children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk597754.default.ZhaNu8),
       note: Chunk388032.intl.format(Chunk597754.default.cnCK6b, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)

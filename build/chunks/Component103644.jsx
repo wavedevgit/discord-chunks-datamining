@@ -3,7 +3,7 @@
 require.d(exports, {
   X: () => c
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
   Chunk197344 = require("./197344.js"),
   Chunk509613 = require("./509613.js"),
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
 let c = (0, Chunk509613.ON)(Chunk313789.n.SOUNDS_HOLIDAY_NOTICE, {
   usePredicate: () => null != Chunk197344.Z.useHolidaySoundpack(),
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.fgSHf8)],
-  render: () => (0, Chunk951288.jsx)(Chunk793030.xvT, {
+  render: () => (0, Chunk54381.jsx)(Chunk793030.xvT, {
     variant: "text-md/normal",
     color: "text-secondary",
     children: Chunk388032.intl.format(Chunk388032.t.Eup6Wv, {

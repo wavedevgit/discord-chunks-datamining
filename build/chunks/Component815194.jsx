@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => O
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk846027 = require("./846027.js"),
@@ -23,12 +23,12 @@ function I() {
     } = Chunk131951.Z.getModeOptions();
     return module
   });
-  return (0, Chunk951288.jsx)(Chunk793030.gNt, {
+  return (0, Chunk54381.jsx)(Chunk793030.gNt, {
     label: Chunk388032.intl.string(Chunk388032.t["o+BJQR"]),
     layout: "horizontal",
-    children: (0, Chunk951288.jsx)("div", {
+    children: (0, Chunk54381.jsx)("div", {
       className: Chunk53179.keybindContainer,
-      children: (0, Chunk951288.jsx)(Chunk825209.Z, {
+      children: (0, Chunk54381.jsx)(Chunk825209.Z, {
         defaultValue: module,
         onChange: t => r.Z.setMode(S.pM4.PUSH_TO_TALK, {
           shortcut: t
@@ -39,6 +39,6 @@ function I() {
 }
 let O = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
   usePredicate: Chunk595373.p,
-  render: () => (0, Chunk951288.jsx)(I, {}),
+  render: () => (0, Chunk54381.jsx)(I, {}),
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)]
 })

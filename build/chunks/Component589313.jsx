@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => E
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -23,7 +23,7 @@ function E() {
     quest: E,
     sourceQuestContent: g,
     onClose: O
-  } = Chunk647438.useContext(Chunk215113.VideoQuestModalContext), {
+  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), {
     enabled: b
   } = Chunk937797.EO.useConfig({
     location: Chunk46140.dr.VIDEO_MODAL
@@ -34,10 +34,10 @@ function E() {
     onClick: O,
     shouldShowShopIfAlreadyClaimed: true
   }), y = (null == (e = E.userStatus) ? true : module.claimedAt) != null ? S ? Chunk388032.intl.string(Chunk388032.t.WYchde) : Chunk388032.intl.string(Chunk388032.t.vTgCWx) : Chunk388032.intl.string(Chunk388032.t.cfY4PE), _ = (null == (t = E.userStatus) ? true : exports.completedAt) == null && b ? h ? Chunk388032.intl.string(Chunk388032.t.NJ6Bnm) : Chunk388032.intl.string(Chunk388032.t.USNO1K) : true;
-  return (0, Chunk951288.jsx)(Chunk28664.u, {
+  return (0, Chunk54381.jsx)(Chunk28664.u, {
     text: _,
-    children: (0, Chunk951288.jsx)("div", {
-      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+    children: (0, Chunk54381.jsx)("div", {
+      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: b ? "secondary" : "primary",
         fullWidth: true,
         icon: ((e, t) => {

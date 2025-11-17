@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => f
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk174609 = require("./174609.js"),
@@ -23,7 +23,7 @@ function f() {
       newestAnalyticsLocation: n
     } = (0, Chunk906732.ZP)(),
     f = (0, Chunk526665.wy)(require);
-  return module === Chunk981631.IlC.APP || Chunk358085.isPlatformEmbedded || f ? (0, Chunk951288.jsx)(Chunk481060.sNh, {
+  return module === Chunk981631.IlC.APP || Chunk358085.isPlatformEmbedded || f ? (0, Chunk54381.jsx)(Chunk481060.sNh, {
     id: "voice-and-video-settings",
     label: Chunk388032.intl.string(Chunk388032.t.dsXapM),
     action: () => {

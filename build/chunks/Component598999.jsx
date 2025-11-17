@@ -6,8 +6,8 @@ require.d(exports, {
   h4: () => B,
   nH: () => Z
 }), require("./388685.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -136,20 +136,20 @@ let B = e => {
       })]
     })
   };
-class F extends Chunk647438.PureComponent {
+class F extends Chunk473749.PureComponent {
   renderJumpButton() {
     let {
       jumping: e
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
+    return (0, Chunk54381.jsxs)(Chunk481060.P3F, {
       className: Chunk129633.jumpButton,
       onClick: this.handleClickJump,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: o()(Chunk129633.__invalid_text, {
           hidden: module
         }),
         children: Chunk388032.intl.string(Chunk388032.t.k5WiPf)
-      }), (0, Chunk951288.jsx)(Chunk481060.$jN, {
+      }), (0, Chunk54381.jsx)(Chunk481060.$jN, {
         type: Chunk481060.$jN.Type.PULSING_ELLIPSIS,
         className: o()(Chunk129633.loading, {
           [Chunk129633.visible]: module
@@ -164,11 +164,11 @@ class F extends Chunk647438.PureComponent {
       canManageMessages: n,
       channel: i
     } = this.props;
-    return null != module && (exports || require || null != Chunk647438 && Chunk647438.isPrivate()) ? (0, Chunk951288.jsx)(Chunk755721.zx, {
+    return null != module && (exports || require || null != Chunk473749 && Chunk473749.isPrivate()) ? (0, Chunk54381.jsx)(Chunk755721.zx, {
       look: Chunk755721.zx.Looks.BLANK,
       size: Chunk755721.zx.Sizes.NONE,
       onClick: this.handleClickClose,
-      children: (0, Chunk951288.jsx)(Chunk481060.Dio, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Dio, {
         size: "md",
         color: "currentColor",
         className: Chunk129633.closeIcon
@@ -176,7 +176,7 @@ class F extends Chunk647438.PureComponent {
     }) : null
   }
   render() {
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk129633.actionButtons,
       children: [this.renderJumpButton(), this.renderCloseButton()]
     })

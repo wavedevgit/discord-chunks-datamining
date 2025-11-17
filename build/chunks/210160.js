@@ -3,10 +3,10 @@
 require.d(exports, {
   S: () => i
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js");
+var Chunk473749 = require("./473749.js");
 
 function i() {
-  let [e, t] = Chunk647438.useState(null), n = Chunk647438.useRef(new Map), i = Chunk647438.useRef(new Map), l = Chunk647438.useCallback((e, r) => {
+  let [e, t] = Chunk473749.useState(null), n = Chunk473749.useRef(new Map), i = Chunk473749.useRef(new Map), l = Chunk473749.useCallback((e, r) => {
     let l = n.current.get(e);
     null == l && (l = new Set, n.current.set(e, l));
     let s = i.current.get(e);
@@ -17,7 +17,7 @@ function i() {
       }, 100);
       i.current.set(e, n)
     }
-  }, []), s = Chunk647438.useCallback((e, r) => {
+  }, []), s = Chunk473749.useCallback((e, r) => {
     let l = n.current.get(e);
     if (null == l) return;
     l.delete(r);
@@ -29,7 +29,7 @@ function i() {
       i.current.set(e, n)
     }
   }, []);
-  return Chunk647438.useEffect(() => {
+  return Chunk473749.useEffect(() => {
     let e = i.current;
     return () => {
       module.forEach(e => clearTimeout(e))

@@ -4,12 +4,12 @@
 require.d(exports, {
   f: () => o
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk751648 = require("./751648.js"),
   Chunk388032 = require("./388032.jsx");
 
 function o() {
-  let [e, t] = (0, Chunk647438.useState)(""), [n, o] = (0, Chunk647438.useState)([]), [s, l] = (0, Chunk647438.useState)(null), [c, u] = (0, Chunk647438.useState)(false);
+  let [e, t] = (0, Chunk473749.useState)(""), [n, o] = (0, Chunk473749.useState)([]), [s, l] = (0, Chunk473749.useState)(null), [c, u] = (0, Chunk473749.useState)(false);
 
   function d(e, t, n) {
     let r = () => {
@@ -29,7 +29,7 @@ function o() {
       onRedeemFail: s
     })
   }
-  return (0, Chunk647438.useEffect)(() => {
+  return (0, Chunk473749.useEffect)(() => {
     if (null != s) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWrd"], {
       amount: "1 orb",
       errorMessage: s.message

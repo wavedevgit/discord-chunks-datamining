@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => u
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
@@ -47,7 +47,7 @@ function d(e) {
 
 function p() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     style: {
       display: "flex",
       flexDirection: "row",
@@ -57,15 +57,15 @@ function p() {
     className: l()(Chunk495940.wrapper, {
       [Chunk495940.noAnimation]: module
     }),
-    children: [(0, Chunk951288.jsx)("div", {
+    children: [(0, Chunk54381.jsx)("div", {
       className: l()(Chunk495940.avatar, Chunk495940.loadingAnimation)
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk495940.lineContainer,
-      children: [(0, Chunk951288.jsx)(d, {
+      children: [(0, Chunk54381.jsx)(d, {
         className: l()(Chunk495940.lineMedium, Chunk495940.loadingAnimation)
-      }), (0, Chunk951288.jsx)(d, {
+      }), (0, Chunk54381.jsx)(d, {
         className: l()(Chunk495940.lineShort, Chunk495940.loadingAnimation)
-      }), (0, Chunk951288.jsx)(d, {
+      }), (0, Chunk54381.jsx)(d, {
         className: l()(Chunk495940.lineLong, Chunk495940.loadingAnimation)
       })]
     })]

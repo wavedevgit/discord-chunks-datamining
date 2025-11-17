@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => O
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk823379 = require("./823379.js"),
   Chunk106976 = require("./106976.js"),
@@ -72,14 +72,14 @@ function E(e, t) {
   return i
 }
 let b = "https://support.discord.com/hc/en-us";
-class y extends Chunk647438.PureComponent {
+class y extends Chunk473749.PureComponent {
   static getDerivedStateFromError(e) {
     return {
       hasError: true
     }
   }
   render() {
-    return this.state.hasError ? (0, Chunk951288.jsxs)(Chunk481060.qXd, {
+    return this.state.hasError ? (0, Chunk54381.jsxs)(Chunk481060.qXd, {
       color: Chunk481060.DM8.DANGER,
       style: {
         borderRadius: 0

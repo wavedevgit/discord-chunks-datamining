@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => N
 }), require("./413496.js"), require("./433524.js"), require("./35282.js");
-var r, i, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, i, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk159635 = require("./159635.js"),
@@ -152,7 +152,7 @@ let T = O(b({}, u().defaultRules), {
   }),
   S = u().parserFor(T),
   A = u().reactFor(u().ruleOutput(T, "react"));
-class C extends(i = Chunk647438.PureComponent) {
+class C extends(i = Chunk473749.PureComponent) {
   render() {
     let {
       className: e,
@@ -163,9 +163,9 @@ class C extends(i = Chunk647438.PureComponent) {
     } = this.props, o = i(r("".concat(exports, "\n\n"), b({
       inline: false
     }, require)));
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: l()(Chunk963071.markdown, module),
-      children: Chunk647438
+      children: Chunk473749
     })
   }
 }

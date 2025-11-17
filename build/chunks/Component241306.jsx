@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => u
 }), require("./953529.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
   Chunk441494 = require("./441494.jsx"),
   Chunk296643 = require("./296643.jsx"),
@@ -19,29 +19,29 @@ function u() {
   } = (0, Chunk343312.JL)(), t = (0, Chunk162190.Z)(null == module ? true : module.gameId, "cover");
   if (null == module) return null;
   let u = null == module ? true : module.plans.find(e => e.id === n);
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk333275.container,
-    children: [(0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk333275.content,
-      children: [(0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk333275.headerContainer,
-        children: [(0, Chunk951288.jsx)("img", {
+        children: [(0, Chunk54381.jsx)("img", {
           src: null != require ? require : "",
           className: Chunk333275.image,
           alt: module.name
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           className: Chunk333275.header,
-          children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
+          children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
             variant: "heading-lg/semibold",
             color: "text-primary",
             children: module.name
-          }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
+          }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
             variant: "text-md/medium",
             color: "text-secondary",
             children: null == u ? true : u.name
           })]
         })]
-      }), null != u && (0, Chunk951288.jsx)("div", {
+      }), null != u && (0, Chunk54381.jsx)("div", {
         className: Chunk333275.statsGrid,
         children: u.specifications.map((e, n) => {
           var t;
@@ -62,13 +62,13 @@ function u() {
             })]
           }, n)
         })
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk333275.poweredBy,
-        children: (0, Chunk951288.jsx)(Chunk296643.Z, {})
+        children: (0, Chunk54381.jsx)(Chunk296643.Z, {})
       })]
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk333275.imageBackground,
-      children: (0, Chunk951288.jsx)(Chunk441494.b, {
+      children: (0, Chunk54381.jsx)(Chunk441494.b, {
         imageUrl: null != require ? require : ""
       })
     })]

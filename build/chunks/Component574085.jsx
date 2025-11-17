@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => p
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk723047 = require("./723047.js"),
   Chunk727843 = require("./727843.jsx"),
@@ -69,8 +69,8 @@ function p() {
     null != t ? s[t] = o : s.push(o), p(s)
   }
   let h = (0, Chunk723047.mY)();
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(Chunk861345.p, {
+  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    children: [(0, Chunk54381.jsx)(Chunk861345.p, {
       benefits: require,
       onEdit: function(e) {
         (0, i.h7j)(i => (0, r.jsx)(o.DI, m(g({}, i), {
@@ -89,9 +89,9 @@ function p() {
         r.splice(t, 0, i), p(r)
       },
       guildId: exports
-    }), require.length > 0 ? (0, Chunk951288.jsx)(Chunk481060.LZC, {
+    }), require.length > 0 ? (0, Chunk54381.jsx)(Chunk481060.LZC, {
       size: 8
-    }) : null, (0, Chunk951288.jsx)(Chunk861345.s, {
+    }) : null, (0, Chunk54381.jsx)(Chunk861345.s, {
       onClick: function() {
         (0, Chunk481060.h7j)(e => (0, r.jsx)(o.DI, m(g({}, e), {
           guildId: t,

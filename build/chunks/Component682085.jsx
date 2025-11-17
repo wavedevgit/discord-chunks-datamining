@@ -1,10 +1,10 @@
-/** Chunk was on 36113 **/
+/** Chunk was on 52708 **/
 /** chunk id: 682085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk296009 = require("./296009.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -30,10 +30,10 @@ function v() {
   } = (0, Chunk50130.G)(), {
     token: x,
     fetched: _
-  } = (0, Chunk491662.o)(null == j ? true : j.application_id), P = Chunk647438.useMemo(() => (null == j ? true : j.application_id) != null ? new Chunk931847.q({
+  } = (0, Chunk491662.o)(null == j ? true : j.application_id), P = Chunk473749.useMemo(() => (null == j ? true : j.application_id) != null ? new Chunk931847.q({
     type: Chunk296009.l.APPLICATION,
     applicationId: j.application_id
-  }) : null, [null == j ? true : j.application_id]), I = Chunk647438.useCallback(() => {
+  }) : null, [null == j ? true : j.application_id]), I = Chunk473749.useCallback(() => {
     module({
       action: "PRESS_ADD_WIDGET"
     }), (0, Chunk481060.ZDy)(async () => {
@@ -76,19 +76,19 @@ function v() {
       stackingBehavior: "stack"
     })
   }, [module]);
-  if (null == exports || null == v || null == P || !_) return (0, Chunk951288.jsx)("div", {
+  if (null == exports || null == v || null == P || !_) return (0, Chunk54381.jsx)("div", {
     className: Chunk66582.loading,
-    children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
+    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   });
-  if (null == x) return (0, Chunk951288.jsx)(Chunk795990.Z, {});
-  let w = (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+  if (null == x) return (0, Chunk54381.jsx)(Chunk795990.Z, {});
+  let w = (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
     gap: 4,
     className: Chunk66582.header,
-    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-md/medium",
       color: "header-primary",
       children: Chunk388032.intl.string(Chunk388032.t["oqalC+"])
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
       children: Chunk388032.intl.format(Chunk388032.t.YnNFWa, {
@@ -96,7 +96,7 @@ function v() {
       })
     })]
   });
-  return (0, Chunk951288.jsx)(Chunk243778.ZP, {
+  return (0, Chunk54381.jsx)(Chunk243778.ZP, {
     contentTypes: [Chunk704215.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
     bypassAutoDismiss: true,
     children: e => {

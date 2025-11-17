@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => h
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -27,7 +27,7 @@ let _ = {
   [Chunk481060.EFr.SIZE_32]: Chunk433409.avatarSmall,
   [Chunk481060.EFr.SIZE_40]: Chunk433409.avatarLarge
 };
-class p extends(r = Chunk647438.Component) {
+class p extends(r = Chunk473749.Component) {
   render() {
     let {
       type: e,
@@ -36,28 +36,28 @@ class p extends(r = Chunk647438.Component) {
       childrenClassName: r,
       doNotAnimate: a
     } = this.props;
-    return "2" === module ? (0, Chunk951288.jsxs)("div", {
+    return "2" === module ? (0, Chunk54381.jsxs)("div", {
       className: s()(Chunk433409.multiplePlaceholder, Chunk433409.multiplePlaceholderAnimated, require),
-      children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
-        children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
+        children: [(0, Chunk54381.jsx)("div", {
           className: s()(Chunk433409.placeholderAvatar, _[exports], Chunk433409.avatarMasked)
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: s()(Chunk433409.placeholderAvatar, _[exports], Chunk433409.avatarMasked)
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: s()(Chunk433409.placeholderAvatar, _[exports])
         })]
-      }), (0, Chunk951288.jsx)(Chunk600164.Z, {
+      }), (0, Chunk54381.jsx)(Chunk600164.Z, {
         grow: 1,
         className: Chunk433409.mulitplePlaceholderUsername,
         style: {
           maxWidth: this.placeholderMaxWidth
         }
       })]
-    }) : (0, Chunk951288.jsxs)(Chunk600164.Z, {
-      className: s()(Chunk433409.placeholder, !Chunk647438 && Chunk433409.placeholderAnimated, require),
-      children: [(0, Chunk951288.jsx)("div", {
+    }) : (0, Chunk54381.jsxs)(Chunk600164.Z, {
+      className: s()(Chunk433409.placeholder, !Chunk473749 && Chunk433409.placeholderAnimated, require),
+      children: [(0, Chunk54381.jsx)("div", {
         className: s()(Chunk433409.placeholderAvatar, _[exports], r)
-      }), (0, Chunk951288.jsx)(Chunk600164.Z, {
+      }), (0, Chunk54381.jsx)(Chunk600164.Z, {
         grow: 1,
         className: s()(Chunk433409.placeholderUsername, r),
         style: {

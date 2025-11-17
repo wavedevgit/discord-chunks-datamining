@@ -10,9 +10,9 @@ require.d(exports, {
   xq: () => O,
   zL: () => v
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./642613.js"), require("./704826.js"), require("./35282.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  Chunk191336 = require("./191336.js"),
+  Chunk663042 = require("./663042.js"),
   Chunk979554 = require("./979554.js"),
   Chunk731965 = require("./731965.js"),
   Chunk373071 = require("./373071.js"),
@@ -95,7 +95,7 @@ function E(e) {
 function b(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let y = (0, Chunk191336.U)(e => ({
+let y = (0, Chunk663042.U)(e => ({
     previewEnabled: false,
     collectionAssets: {},
     avatarDecorationAssets: {},
@@ -191,7 +191,7 @@ let y = (0, Chunk191336.U)(e => ({
   O = () => {
     let e = y(e => e.collectionAssets),
       t = y(e => e.avatarDecorationAssets);
-    return Chunk647438.useMemo(() => ({
+    return Chunk473749.useMemo(() => ({
       collectionAssets: Object.values(module).sort((e, t) => e.name.localeCompare(t.name)),
       avatarDecorationAssets: Object.values(exports).sort((e, t) => e.name.localeCompare(t.name))
     }), [module, exports])

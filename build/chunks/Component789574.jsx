@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => x,
   j: () => j
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk13107 = require("./13107.js"),
   Chunk442837 = require("./442837.js"),
   Chunk796027 = require("./796027.jsx"),
@@ -67,11 +67,11 @@ function j() {
     guild: Chunk999382.Z.getGuild(),
     submitting: Chunk999382.Z.isSubmitting()
   })), c = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.can(Chunk981631.Plq.KICK_MEMBERS, exports)), x = false, j = null;
-  return Chunk490655 || (null == (e = Chunk145260.default.editedIntegration) ? true : module.expire_behavior) !== Chunk13107.l.KICK || (x = true, j = (0, Chunk951288.jsx)(Chunk481060.Text, {
+  return Chunk490655 || (null == (e = Chunk145260.default.editedIntegration) ? true : module.expire_behavior) !== Chunk13107.l.KICK || (x = true, j = (0, Chunk54381.jsx)(Chunk481060.Text, {
     color: "text-danger",
     variant: "text-md/normal",
     children: Chunk388032.intl.string(Chunk388032.t["mrO/ZQ"])
-  })), (0, Chunk951288.jsx)(Chunk796027.Z, {
+  })), (0, Chunk54381.jsx)(Chunk796027.Z, {
     submitting: require,
     disabled: x,
     errorMessage: j,

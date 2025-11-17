@@ -3,13 +3,13 @@
 require.d(exports, {
   Z: () => ei
 }), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./388685.js"), require("./781311.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
-  Chunk442748 = require("./442748.js"),
+  Chunk636606 = require("./636606.js"),
   Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
@@ -108,7 +108,7 @@ function et(e, t) {
 function en(e) {
   return null == e ? "unnamed_file" : e.replace(/\s/g, "_")
 }
-let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
+let ei = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
   var n, l, o, u;
   let {
     textValue: p,
@@ -236,9 +236,9 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     editorHeight: e2,
     handleResize: e3
   } = (0, V.oR)(ei), {
-    handleTab: e8,
-    handleEnter: e4,
-    handleMoveSelection: e7
+    handleTab: e4,
+    handleEnter: e7,
+    handleMoveSelection: e8
   } = function(e, t, n) {
     let i = r.useCallback(() => {
       var i, r;
@@ -256,8 +256,8 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
       }, [n])
     }
   }(eQ, eN, eF), {
-    expressionPickerView: e6,
-    shouldHideExpressionPicker: e5,
+    expressionPickerView: e5,
+    shouldHideExpressionPicker: e6,
     handleOuterClick: e9
   } = (0, V.iV)(D, eA), te = (0, V.aT)(p), {
     currentAutocompleteType: tt,
@@ -376,9 +376,9 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                     onFocus: ec,
                     onKeyDown: eu,
                     onSubmit: eX,
-                    onTab: e8,
-                    onEnter: e4,
-                    onMoveSelection: e7,
+                    onTab: e4,
+                    onEnter: e7,
+                    onMoveSelection: e8,
                     onSelectionChanged: eK,
                     onMaybeShowAutocomplete: e$,
                     onHideAutocomplete: e0,
@@ -479,7 +479,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           textValue: p,
           focused: G,
           isEditorIdle: te,
-          expressionPickerView: e6,
+          expressionPickerView: e5,
           type: D,
           editorRef: eA,
           onSendMessage: eX,
@@ -489,7 +489,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           setValue: (e, t) => null == Y ? true : Y(null, e, t),
           position: ev
         })]
-      }), e5 ? null : (0, i.jsx)(S.Z, {
+      }), e6 ? null : (0, i.jsx)(S.Z, {
         positionTargetRef: eT,
         type: D,
         onSelectGIF: tr,

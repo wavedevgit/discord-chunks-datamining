@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => E
 }), require("./388685.js");
-var i, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var i, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -36,31 +36,31 @@ function v(e) {
     onClose: t
   })
 }
-class O extends(i = Chunk647438.PureComponent) {
+class O extends(i = Chunk473749.PureComponent) {
   render() {
     let {
       selectedGuildId: e,
       locked: t,
       contained: n,
       className: i
-    } = this.props, o = null != module ? (0, Chunk951288.jsx)(Chunk178528.Z, {
+    } = this.props, o = null != module ? (0, Chunk54381.jsx)(Chunk178528.Z, {
       guildId: module,
       onDragStart: this.onDragStart
-    }, module) : (0, Chunk951288.jsx)(Chunk711553.Z, {
+    }, module) : (0, Chunk54381.jsx)(Chunk711553.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.YUU0RF),
       renderSettings: v,
       onDragStart: this.onDragStart,
-      children: (0, Chunk951288.jsx)(Chunk483962.Z, {})
+      children: (0, Chunk54381.jsx)(Chunk483962.Z, {})
     }), l = require ? "div" : Chunk518084.ZP;
-    return (0, Chunk951288.jsxs)(Chunk120356, {
+    return (0, Chunk54381.jsxs)(Chunk120356, {
       className: s()(Chunk585816.base, {
         [Chunk585816.widget]: !require
       }, i),
-      children: [(0, Chunk951288.jsx)(Chunk416568.Z, {
+      children: [(0, Chunk54381.jsx)(Chunk416568.Z, {
         isOverlay: true,
         disableAppDownload: true,
         isVisible: !exports
-      }), Chunk647438]
+      }), Chunk473749]
     })
   }
   constructor(...e) {

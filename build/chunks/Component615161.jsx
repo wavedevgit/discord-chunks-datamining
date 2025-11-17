@@ -5,8 +5,8 @@ require.d(exports, {
   Ti: () => w,
   Yw: () => O
 }), require("./415506.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk856901 = require("./856901.js"),
@@ -72,8 +72,8 @@ let b = {
     nativeSourceType: "",
     discordSourceId: ""
   },
-  S = Chunk647438.createContext(b),
-  y = Chunk647438.createContext(() => {
+  S = Chunk473749.createContext(b),
+  y = Chunk473749.createContext(() => {
     throw Error("Using uninitialized GoLiveModalContextDispatch")
   });
 
@@ -217,5 +217,5 @@ function w(e, t, n) {
 }
 
 function P() {
-  return [Chunk647438.useContext(S), Chunk647438.useContext(y)]
+  return [Chunk473749.useContext(S), Chunk473749.useContext(y)]
 }

@@ -5,7 +5,7 @@ require.d(exports, {
   J: () => l,
   M: () => c
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk433517 = require("./433517.js"),
   Chunk765504 = require("./765504.js"),
   Chunk865066 = require("./865066.js");
@@ -21,7 +21,7 @@ function c() {
   } = Chunk765504.Z.useConfig({
     location: "useSystemServiceAutoInstall"
   });
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     module && null == Chunk433517.K.get(s) && (l(), (0, Chunk865066.sU)("first-start", false))
   }, [module])
 }

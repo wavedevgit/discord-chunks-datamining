@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => h
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk82950 = require("./82950.jsx"),
   Chunk623624 = require("./623624.jsx"),
@@ -13,14 +13,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk241626 = require("./241626.js");
-class f extends Chunk647438.PureComponent {
+class f extends Chunk473749.PureComponent {
   render() {
     let {
       guild: e,
       memberCount: t,
       markAsDismissed: n
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk82950.Z, {
+    return (0, Chunk54381.jsx)(Chunk82950.Z, {
       guild: module,
       onDismissed: () => require(Chunk921944.L.UNKNOWN),
       onClick: this.handleButtonClick,

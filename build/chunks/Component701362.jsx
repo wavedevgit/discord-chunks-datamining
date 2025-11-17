@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => M
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -86,7 +86,7 @@ function x(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class L extends Chunk647438.PureComponent {
+class L extends Chunk473749.PureComponent {
   componentDidMount() {
     let {
       user: e,
@@ -135,15 +135,15 @@ class L extends Chunk647438.PureComponent {
       onAction: a,
       hideTip: s
     } = this.props;
-    return null == require ? null : (0, Chunk951288.jsx)("div", {
+    return null == require ? null : (0, Chunk54381.jsx)("div", {
       className: o()(Chunk839021.streamPreviewWrapper, {
-        [Chunk839021.mounted]: Chunk647438
+        [Chunk839021.mounted]: Chunk473749
       }),
-      children: (0, Chunk951288.jsxs)("div", {
+      children: (0, Chunk54381.jsxs)("div", {
         className: Chunk839021.streamPreview,
-        children: [this.renderPreview(require), (0, Chunk951288.jsxs)("div", {
+        children: [this.renderPreview(require), (0, Chunk54381.jsxs)("div", {
           className: Chunk839021.body,
-          children: [null != module ? (0, Chunk951288.jsx)(Chunk717881.Z, {
+          children: [null != module ? (0, Chunk54381.jsx)(Chunk717881.Z, {
             hideHeader: true,
             type: Chunk717881.P.STREAM_PREVIEW,
             activity: module,
@@ -157,7 +157,7 @@ class L extends Chunk647438.PureComponent {
               }
             },
             onAction: Chunk120356
-          }) : (0, Chunk951288.jsx)(Chunk850827.Z, {
+          }) : (0, Chunk54381.jsx)(Chunk850827.Z, {
             type: Chunk717881.P.STREAM_PREVIEW,
             applicationStream: require,
             user: exports,
@@ -165,7 +165,7 @@ class L extends Chunk647438.PureComponent {
             channelId: require.channelId,
             className: Chunk839021.activityActions,
             onAction: Chunk120356
-          }), !Chunk442837 && (0, Chunk951288.jsx)(Chunk576855.Z, {
+          }), !Chunk442837 && (0, Chunk54381.jsx)(Chunk576855.Z, {
             type: Chunk576855.Z.Types.INLINE,
             className: Chunk839021.protip,
             children: __OVERLAY__ ? Chunk388032.intl.string(Chunk388032.t.YRdw70) : Chunk388032.intl.string(Chunk388032.t.CCTgbF)

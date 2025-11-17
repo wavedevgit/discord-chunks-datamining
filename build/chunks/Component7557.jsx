@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => p
 }), require("./388685.js"), require("./539854.js");
-var r, i, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, i, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk600164 = require("./600164.jsx"),
@@ -19,12 +19,12 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class f extends(r = Chunk647438.PureComponent) {
+class f extends(r = Chunk473749.PureComponent) {
   render() {
     let {
       className: e
     } = this.props;
-    return (0, Chunk951288.jsx)("input", {
+    return (0, Chunk54381.jsx)("input", {
       ref: this.setCodeBlockRef,
       className: l()(Chunk501640.input, module),
       maxLength: 1,
@@ -64,7 +64,7 @@ class f extends(r = Chunk647438.PureComponent) {
 d(f, "defaultProps", {
   autoFocus: false
 });
-class _ extends(i = Chunk647438.PureComponent) {
+class _ extends(i = Chunk473749.PureComponent) {
   render() {
     let {
       className: e,
@@ -72,9 +72,9 @@ class _ extends(i = Chunk647438.PureComponent) {
     } = this.props, {
       codes: n
     } = this.state, r = [];
-    for (let e = 0; module < require.length; module++) module === require.length / 2 && r.push((0, Chunk951288.jsx)("div", {
+    for (let e = 0; module < require.length; module++) module === require.length / 2 && r.push((0, Chunk54381.jsx)("div", {
       className: Chunk501640.spacer
-    }, "spacer")), r.push((0, Chunk951288.jsx)(f, {
+    }, "spacer")), r.push((0, Chunk54381.jsx)(f, {
       ref: t => this.setCodeBlockRef(e, t),
       code: require[module],
       autoFocus: 0 === module,
@@ -82,7 +82,7 @@ class _ extends(i = Chunk647438.PureComponent) {
       onKeyDown: t => this.handleKeyDown(e, t),
       className: exports
     }, module));
-    return (0, Chunk951288.jsx)(Chunk600164.Z, {
+    return (0, Chunk54381.jsx)(Chunk600164.Z, {
       align: Chunk600164.Z.Align.CENTER,
       justify: Chunk600164.Z.Justify.CENTER,
       className: module,

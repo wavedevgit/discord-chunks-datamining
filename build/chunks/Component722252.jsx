@@ -3,15 +3,15 @@
 require.d(exports, {
   Z: () => p
 }), require("./415506.js"), require("./953529.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk149765 = require("./149765.js"),
   Chunk481060 = require("./481060.js"),
   Chunk208884 = require("./208884.js"),
   Chunk453628 = require("./453628.jsx"),
   Chunk996987 = require("./996987.jsx"),
   Chunk55667 = require("./55667.js");
-class u extends Chunk647438.PureComponent {
+class u extends Chunk473749.PureComponent {
   getOverwriteValue(e) {
     let {
       allow: t,
@@ -118,9 +118,9 @@ class u extends Chunk647438.PureComponent {
       spec: t,
       className: n
     } = this.props;
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: require,
-      children: (0, Chunk951288.jsx)(Chunk481060.C3N, {
+      children: (0, Chunk54381.jsx)(Chunk481060.C3N, {
         label: exports.title,
         description: null != (e = (0, Chunk208884._u)(exports.description)) ? module : true,
         children: exports.permissions.map(this.renderComponent, this)

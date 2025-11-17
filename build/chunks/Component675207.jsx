@@ -5,9 +5,9 @@ require.r(exports), require.d(exports, {
   VerifyAccountLoading: () => v,
   default: () => m
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./457542.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
-  Chunk843611 = require("./843611.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
+  Chunk828700 = require("./828700.js"),
   Chunk873546 = require("./873546.js"),
   Chunk604039 = require("./604039.js"),
   Chunk755721 = require("./755721.js"),
@@ -26,7 +26,7 @@ let S = null != window.opener;
 
 function m() {
   var e, t;
-  let n = (0, Chunk843611.k6)(),
+  let n = (0, Chunk828700.k6)(),
     i = (0, Chunk169382.l)(),
     u = Chunk755721.get("code"),
     O = Chunk755721.get("oauth_verifier"),
@@ -35,13 +35,13 @@ function m() {
     m = null != (t = Chunk755721.get("iss")) ? exports : true,
     {
       type: w
-    } = (0, Chunk843611.UO)(),
+    } = (0, Chunk828700.UO)(),
     R = (0, Chunk656649.vJ)(w),
-    [A, T] = Chunk647438.useState(false),
-    [D, x] = Chunk647438.useState(false),
+    [A, T] = Chunk473749.useState(false),
+    [D, x] = Chunk473749.useState(false),
     Z = (0, Chunk733427.Z)(),
     k = null == Chunk536285 ? null != Chunk481060 ? Chunk481060 : "" : Chunk536285;
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     let e;
     if (null != Chunk130560) return;
     for (let t of Chunk755721.keys()) exports.startsWith("openid.") && (null == module && (e = {}), module[exports] = Chunk755721.get(exports));
@@ -71,13 +71,13 @@ function m() {
           state: Chunk388032,
           openidParams: module,
           iss: m,
-          handleCallbackResponse: Chunk951288
+          handleCallbackResponse: Chunk54381
         })) return;
       let c = await h(exports, Chunk388032, k, module, m);
-      0 === Chunk647438 ? T(true) : 1 === Chunk647438 ? require.replace("".concat(Chunk981631.Z5c.CONNECTIONS_ERROR(exports), "?").concat(Chunk755721.toString())) : 3 === Chunk647438 ? Chunk873546.tq ? x(true) : require.replace("".concat(Chunk981631.Z5c.CONNECTIONS_ERROR(exports), "?").concat(Chunk755721.toString())) : j({
+      0 === Chunk473749 ? T(true) : 1 === Chunk473749 ? require.replace("".concat(Chunk981631.Z5c.CONNECTIONS_ERROR(exports), "?").concat(Chunk755721.toString())) : 3 === Chunk473749 ? Chunk873546.tq ? x(true) : require.replace("".concat(Chunk981631.Z5c.CONNECTIONS_ERROR(exports), "?").concat(Chunk755721.toString())) : j({
         platformType: exports,
         state: Chunk388032,
-        handleCallbackResponse: Chunk951288,
+        handleCallbackResponse: Chunk54381,
         handleCallbackError: e => {
           var r;
           (null == e || null == (r = e.body) ? true : r.code) != null && i.append("error-code", e.body.code), n.replace("".concat(C.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
@@ -87,7 +87,7 @@ function m() {
         iss: m
       })
     }()
-  }, [k, require, Chunk130560, w, Chunk755721, Chunk388032, m]), Chunk647438.useEffect(() => {
+  }, [k, require, Chunk130560, w, Chunk755721, Chunk388032, m]), Chunk473749.useEffect(() => {
     let e;
     if (!A) return;
     let t = 0;
@@ -97,30 +97,30 @@ function m() {
         handoff_status: c,
         success_redirect: o
       } = (await Chunk457330.Z.getHandoffStatus(R, Chunk388032)).body;
-      if (Chunk647438 === Chunk604039.g.HANDOFF_SUCCESS)
-        if (null == Chunk591759.Z.toURLSafe(Chunk843611)) return require.replace(Chunk981631.Z5c.CONNECTIONS_SUCCESS(R));
+      if (Chunk473749 === Chunk604039.g.HANDOFF_SUCCESS)
+        if (null == Chunk591759.Z.toURLSafe(Chunk828700)) return require.replace(Chunk981631.Z5c.CONNECTIONS_SUCCESS(R));
         else {
-          window.location = Chunk843611;
+          window.location = Chunk828700;
           return
-        } if (Chunk647438 === Chunk604039.g.HANDOFF_ERROR || exports >= 10) return require.replace(Chunk981631.Z5c.CONNECTIONS_ERROR(R));
+        } if (Chunk473749 === Chunk604039.g.HANDOFF_ERROR || exports >= 10) return require.replace(Chunk981631.Z5c.CONNECTIONS_ERROR(R));
       e = setTimeout(() => {
-        Z() && (t += 1, Chunk951288())
+        Z() && (t += 1, Chunk54381())
       }, 1e3)
     }
-    return Chunk951288(), () => {
+    return Chunk54381(), () => {
       null != module && clearTimeout(module)
     }
   }, [Z, require, R, A, Chunk388032]);
-  let I = Chunk647438.useMemo(() => {
+  let I = Chunk473749.useMemo(() => {
     if (null != R) return "discord://".concat(Chunk981631.Z5c.CONNECTIONS(R), "/?").concat(Chunk755721.toString())
   }, [R, Chunk755721]);
-  return null != R && Chunk726542.Z.isSupported(R) ? D ? (0, Chunk951288.jsx)(E, {
+  return null != R && Chunk726542.Z.isSupported(R) ? D ? (0, Chunk54381.jsx)(E, {
     platformType: R,
     deeplink: I,
     onClick: () => {
       x(false), T(true)
     }
-  }) : (0, Chunk951288.jsx)(v, {
+  }) : (0, Chunk54381.jsx)(v, {
     platformType: R
   }) : null
 }

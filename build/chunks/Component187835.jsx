@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => s
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk603592 = require("./603592.jsx"),
   Chunk388032 = require("./388032.jsx");
@@ -12,7 +12,7 @@ let a = "DOWNLOAD_APPS";
 
 function s() {
   let e = (0, Chunk481060.s9z)(e => (0, i.DEQ)(e, a));
-  return (0, Chunk951288.jsx)(Chunk603592.Z, {
+  return (0, Chunk54381.jsx)(Chunk603592.Z, {
     id: "app-download-button",
     onClick: () => {
       (0, Chunk481060.ZDy)(async () => {

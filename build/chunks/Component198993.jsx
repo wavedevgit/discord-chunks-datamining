@@ -5,11 +5,11 @@ require.d(exports, {
   c2: () => v,
   cK: () => m
 });
-var n, o, s, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var n, o, s, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   c = require.n(Chunk120356),
-  Chunk416533 = require("./416533.js"),
+  Chunk696097 = require("./696097.js"),
   Chunk678249 = require("./678249.js");
 
 function f(e, r, t) {
@@ -39,7 +39,7 @@ let p = Object.freeze({
     SIZE_60: "size-60"
   }),
   Chunk515695 = require("./515695.js");
-class y extends(o = Chunk647438.PureComponent) {
+class y extends(o = Chunk473749.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -61,14 +61,14 @@ class y extends(o = Chunk647438.PureComponent) {
         }
         return o
       }(module, ["className", "text"]);
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       style: {
         width: n.size,
         height: n.size,
         backgroundColor: n.bgColor
       },
       className: c()(Chunk678249.qrCodeContainer, exports),
-      children: (0, Chunk951288.jsx)(Chunk416533.default, C({
+      children: (0, Chunk54381.jsx)(Chunk696097.default, C({
         value: require,
         level: "M"
       }, n))
@@ -80,16 +80,16 @@ f(y, "defaultProps", {
   bgColor: "#ffffff",
   fgColor: "#000000"
 });
-class v extends(s = Chunk647438.PureComponent) {
+class v extends(s = Chunk473749.PureComponent) {
   render() {
     let {
       overlaySize: e
     } = this.props, r = p[null != module ? module : "SIZE_40"];
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk678249.qrCodeOverlayContainer,
-      children: [(0, Chunk951288.jsx)(y, C({}, this.props)), (0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)(y, C({}, this.props)), (0, Chunk54381.jsx)("div", {
         className: Chunk678249.qrCodeOverlay,
-        children: (0, Chunk951288.jsx)("img", {
+        children: (0, Chunk54381.jsx)("img", {
           className: Chunk678249[exports],
           src: Chunk515695,
           alt: ""

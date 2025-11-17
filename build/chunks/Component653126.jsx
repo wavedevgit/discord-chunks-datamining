@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => I
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk29121 = require("./29121.js"),
   Chunk215023 = require("./215023.js"),
   Chunk213301 = require("./213301.js");
-let k = Chunk647438.memo(function(e) {
+let k = Chunk473749.memo(function(e) {
     let {
       product: t,
       hideWishlistButton: n,

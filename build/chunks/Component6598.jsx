@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => u
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk399606 = require("./399606.js"),
   Chunk607070 = require("./607070.js"),
   Chunk55373 = require("./55373.jsx"),
@@ -13,10 +13,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk798500 = require("./798500.js");
 let u = () => {
   let e = (0, Chunk399606.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    children: [(0, Chunk54381.jsx)("div", {
       className: Chunk460196.jumpingWumpusContainer,
-      children: (0, Chunk951288.jsx)(Chunk55373.ZP, {
+      children: (0, Chunk54381.jsx)(Chunk55373.ZP, {
         scaleAnimationData: {
           startScale: .9,
           endScale: 1,
@@ -29,13 +29,13 @@ let u = () => {
         },
         animateXAxisWiggle: true,
         isMotionReduced: module,
-        children: (0, Chunk951288.jsx)("img", {
+        children: (0, Chunk54381.jsx)("img", {
           src: Chunk798500.Z,
           alt: "",
           className: Chunk460196.jumpingWumpus
         })
       })
-    }), (0, Chunk951288.jsx)(Chunk761006.Z, {
+    }), (0, Chunk54381.jsx)(Chunk761006.Z, {
       isMotionReduced: module,
       boltContainerClassName: Chunk460196.boltContainer,
       carContainerClassName: Chunk460196.carContainer,

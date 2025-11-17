@@ -8,7 +8,7 @@ require.d(exports, {
   tE: () => o,
   wh: () => a
 });
-var Chunk191336 = require("./191336.js"),
+var Chunk663042 = require("./663042.js"),
   Chunk731965 = require("./731965.js"),
   a = function(e) {
     return e.CLIENT_THEMES = "CLIENT_THEMES", e.APP_ICON = "APP_ICON", e.CUSTOM_THEME = "CUSTOM_THEME", e
@@ -16,7 +16,7 @@ var Chunk191336 = require("./191336.js"),
   o = function(e) {
     return e.CLIENT_THEMES_EDITOR = "CLIENT_THEMES_EDITOR", e.SETTING = "SETTING", e.SHARE_MESSAGE = "SHARE_MESSAGE", e
   }({});
-let s = (0, Chunk191336.U)(() => ({
+let s = (0, Chunk663042.U)(() => ({
   activePanel: null,
   metadata: null
 }));

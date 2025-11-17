@@ -6,13 +6,13 @@ require.d(exports, {
   tf: () => i,
   zH: () => o
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   i = function(e) {
     return (0, r.useEffect)(e, [])
   },
   a = function() {
-    var e = (0, Chunk647438.useState)(0)[1],
-      t = (0, Chunk647438.useRef)(false);
+    var e = (0, Chunk473749.useState)(0)[1],
+      t = (0, Chunk473749.useRef)(false);
     return i(function() {
         return function() {
           exports.current = true

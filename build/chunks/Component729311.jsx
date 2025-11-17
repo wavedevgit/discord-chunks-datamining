@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => Z,
   j: () => R
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk796027 = require("./796027.jsx"),
   Chunk194983 = require("./194983.jsx"),
@@ -250,7 +250,7 @@ function R() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild),
     t = (0, Chunk442837.e7)([Chunk889369.Z], () => Chunk889369.Z.submitting),
     n = (0, Chunk442837.e7)([Chunk208665.Z], () => Chunk208665.Z.advancedMode);
-  return null == module ? null : (0, Chunk951288.jsx)(Chunk796027.Z, {
+  return null == module ? null : (0, Chunk54381.jsx)(Chunk796027.Z, {
     onSave: () => {
       (0, Chunk743475.DO)(module).then(() => {
         require && (0, Chunk570961.rS)(module, {

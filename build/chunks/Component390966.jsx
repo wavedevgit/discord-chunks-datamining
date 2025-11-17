@@ -4,8 +4,8 @@
 require.d(exports, {
   z: () => T
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk894017 = require("./894017.js"),
-  Chunk954313 = require("./954313.js"),
+  Chunk854698 = require("./854698.js"),
   Chunk849464 = require("./849464.js"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -116,10 +116,10 @@ function O(e) {
 }
 
 function v() {
-  return (0, Chunk951288.jsx)(Chunk481060.IGR, {
+  return (0, Chunk54381.jsx)(Chunk481060.IGR, {
     className: Chunk646615.newBadge,
     color: Chunk692547.Z.unsafe_rawColors.BRAND_260.css,
-    text: (0, Chunk951288.jsx)(Chunk481060.Text, {
+    text: (0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk646615.newBadgeText,
       variant: "text-xs/bold",
       children: Chunk388032.intl.string(Chunk388032.t.y2b7CA)

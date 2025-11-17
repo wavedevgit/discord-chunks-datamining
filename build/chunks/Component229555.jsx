@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => p
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
@@ -35,27 +35,27 @@ let _ = (e, t) => (null == e ? true : e.status) === c.Vq.EARNED ? d.intl.format(
     } = exports, E = Chunk388032.intl.string(h), b = (0, Chunk553896.q)(p, m), y = {
       "--custom-badge-glow-color": (0, Chunk302221.rj)(exports.glowColor, .5)
     };
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk726185.container,
       style: y,
-      children: [(0, Chunk951288.jsx)("div", {}), " ", (0, Chunk951288.jsx)("img", {
+      children: [(0, Chunk54381.jsx)("div", {}), " ", (0, Chunk54381.jsx)("img", {
         src: Chunk120356,
         alt: E,
         className: a()(Chunk726185.badgeImage, {
           [Chunk726185.upcomingBadge]: exports.status === Chunk848572.Vq.UPCOMING,
           [Chunk726185.wide]: g
         })
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk726185.textColumn,
-        children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
+        children: [(0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-lg/semibold",
           className: Chunk726185.badgeText,
           children: E
-        }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
+        }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-md/normal",
           className: Chunk726185.badgeText,
           children: b
-        }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
+        }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-xs/normal",
           children: _(exports, require)
         })]

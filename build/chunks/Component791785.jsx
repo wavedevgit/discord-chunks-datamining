@@ -5,11 +5,11 @@ require.d(exports, {
   I: () => ee,
   PaymentModal: () => $
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk548680 = require("./548680.js"),
+  Chunk35387 = require("./35387.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -181,8 +181,8 @@ function $(e) {
       eligible_for_discount: e$,
       sku_product_line: null == ew ? true : ew.productLine
     }, t)),
-    e2 = (0, G.m)(eG, eU),
-    e3 = null != eH ? eH.getDiscountIdIfExists() : true;
+    e3 = (0, G.m)(eG, eU),
+    e2 = null != eH ? eH.getDiscountIdIfExists() : true;
   i.useEffect(() => {
     e1(e => {
       let n = null != eS ? (0, D.aS)(eS.id, false, eW, ek) : true;
@@ -200,7 +200,7 @@ function $(e) {
       continue_session_initial_step: eb,
       custom_checkout_flow: eV,
       has_saved_payment_source: ej,
-      discount_id: null != eJ ? eJ.discount_id : e3
+      discount_id: null != eJ ? eJ.discount_id : e2
     }))
   }), i.useEffect(() => {
     if (null == eS && (null != eZ && null != eb ? eA(eZ) : eA(j)), null != eu) eT(eu);
@@ -218,7 +218,7 @@ function $(e) {
         emoji_name: eW && e && (null == eq ? true : eq.id) == null ? null == eq ? true : eq.surrogates : true,
         sound_id: eW && e ? null == eX ? true : eX.soundId : true,
         duration_ms: t - ex.startTime,
-        payment_source_type: null == e2 ? true : e2.type
+        payment_source_type: null == e3 ? true : e3.type
       }));
       let {
         enabled: n
@@ -226,9 +226,9 @@ function $(e) {
         location: "PaymentModal emitPaymentFlowSuccess"
       });
       eW && null != eK && null != a && n && (0, O.n)(a) && (0, y.Ni)(eK.id)
-    }, [e0, eq, ez, eK, eW, eX, ex.startTime, e2, a]),
-    e8 = i.useMemo(() => () => null == Z ? true : Z(eO === M.A.COMPLETED, eI), [Z, eO, eI]),
-    e5 = (0, s.Z)(() => Date.now(), [eD]),
+    }, [e0, eq, ez, eK, eW, eX, ex.startTime, e3, a]),
+    e5 = i.useMemo(() => () => null == Z ? true : Z(eO === M.A.COMPLETED, eI), [Z, eO, eI]),
+    e8 = (0, s.Z)(() => Date.now(), [eD]),
     e6 = i.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
         {
@@ -238,7 +238,7 @@ function $(e) {
           emitPaymentFlowLoadedEvent: a
         } = t,
         o = Date.now();
-      if (e === L.h8.CONFIRM && (e4(), null == m || m(i), eE)) return void e8();
+      if (e === L.h8.CONFIRM && (e4(), null == m || m(i), eE)) return void e5();
       eN(e), null == ed || ed(e), eR(null), eC(null), e === L.h8.ADD_PAYMENT_STEPS && (u.Z.wait(f.fw), u.Z.wait(_.pB));
       let s = null != n ? n : eD;
       if (null === s || a) return void R.default.track(V.rMx.PAYMENT_FLOW_LOADED, X(z({}, e0), {
@@ -249,16 +249,16 @@ function $(e) {
       R.default.track(V.rMx.PAYMENT_FLOW_STEP, X(z({}, e0, r), {
         from_step: s,
         to_step: e === L.h8.ADD_PAYMENT_STEPS ? L.h8.PAYMENT_TYPE : e,
-        step_duration_ms: o - e5,
+        step_duration_ms: o - e8,
         flow_duration_ms: o - ex.startTime
       }))
-    }, [eN, ed, eR, eC, eD, eb, e0, e5, ex.startTime, e4, m, eE, e8, ej]);
-  (0, T.bp)(eD, eP, e6, ev), (0, L.dZ)(eD, eO, ev), (0, S.p)(eD, eL, e6), (0, E.Z)(e8), (0, A.w)(eM, () => Z(false), eW), (0, T.D6)(eP);
+    }, [eN, ed, eR, eC, eD, eb, e0, e8, ex.startTime, e4, m, eE, e5, ej]);
+  (0, T.bp)(eD, eP, e6, ev), (0, L.dZ)(eD, eO, ev), (0, S.p)(eD, eL, e6), (0, E.Z)(e5), (0, A.w)(eM, () => Z(false), eW), (0, T.D6)(eP);
   let e7 = {
       initialPlanId: j,
       subscriptionTier: U,
       handleStepChange: e6,
-      handleClose: e8,
+      handleClose: e5,
       analyticsData: e0,
       setAnalyticsData: e1,
       trialId: K,
@@ -278,7 +278,7 @@ function $(e) {
     e9 = (0, B.U)({
       renderHeader: eo,
       referralTrialOfferId: ec,
-      handleClose: e8
+      handleClose: e5
     });
   return (0, r.jsx)(c.UkV, {
     className: W.shaker,

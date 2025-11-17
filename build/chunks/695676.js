@@ -6,11 +6,11 @@ require.d(exports, {
   hH: () => o,
   uX: () => a
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   i = function(e) {
     return e.HOME = "home", e.LIST = "list", e.APPLICATION = "application", e
   }({});
-let a = Chunk647438.createContext({
+let a = Chunk473749.createContext({
   history: [],
   discard: {},
   currentView: true,
@@ -22,5 +22,5 @@ let a = Chunk647438.createContext({
 });
 
 function o() {
-  return Chunk647438.useContext(a)
+  return Chunk473749.useContext(a)
 }

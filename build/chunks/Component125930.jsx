@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => O
 }), require("./781311.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
@@ -22,7 +22,7 @@ let _ = {
   [Chunk981631.TaA.MACOS]: Chunk358085.PlatformTypes.OSX,
   [Chunk981631.TaA.LINUX]: Chunk358085.PlatformTypes.LINUX
 };
-class b extends Chunk647438.PureComponent {
+class b extends Chunk473749.PureComponent {
   render() {
     let {
       active: e,
@@ -30,7 +30,7 @@ class b extends Chunk647438.PureComponent {
       pageSize: n,
       onClick: i
     } = this.props, l = require === Chunk843445.b.LARGE;
-    return (0, Chunk951288.jsx)(Chunk755721.zx, {
+    return (0, Chunk54381.jsx)(Chunk755721.zx, {
       size: Chunk120356 ? Chunk755721.zx.Sizes.MIN : Chunk755721.zx.Sizes.LARGE,
       fullWidth: !Chunk120356,
       color: module ? Chunk688510.tabSelectedColor : Chunk688510.tabNotSelectedColor,
@@ -40,12 +40,12 @@ class b extends Chunk647438.PureComponent {
         [Chunk688510.tabSelected]: module,
         [Chunk688510.tabNotSelected]: !module
       }),
-      onClick: Chunk647438,
+      onClick: Chunk473749,
       children: exports
     })
   }
 }
-class E extends Chunk647438.PureComponent {
+class E extends Chunk473749.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let {
       systemRequirements: n
@@ -63,11 +63,11 @@ class E extends Chunk647438.PureComponent {
     } = this.props, {
       selectedOperatingSystem: n
     } = this.state, i = Object.keys(exports);
-    return 1 === Chunk647438.length ? null : (0, Chunk951288.jsxs)(Chunk600164.Z, {
+    return 1 === Chunk473749.length ? null : (0, Chunk54381.jsxs)(Chunk600164.Z, {
       className: Chunk688510.tabs,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: Chunk688510.separator
-      }), Chunk647438.map(t => (0, r.jsx)(b, {
+      }), Chunk473749.map(t => (0, r.jsx)(b, {
         active: t === n,
         onClick: () => this.handleSelectOperatingSystem(t),
         pageSize: e,
@@ -139,15 +139,15 @@ class E extends Chunk647438.PureComponent {
       minimum: e,
       recommended: t
     } = this.props.systemRequirements[this.state.selectedOperatingSystem];
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk688510.requirementsContainer,
       children: [this.renderRequirementsSection(module, Chunk388032.intl.string(Chunk388032.t.QCCMXE)), this.renderRequirementsSection(exports, Chunk388032.intl.string(Chunk388032.t.He39wq))]
     })
   }
   render() {
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: this.props.className,
-      children: [(0, Chunk951288.jsx)(Chunk770146.Z, {
+      children: [(0, Chunk54381.jsx)(Chunk770146.Z, {
         children: Chunk388032.intl.string(Chunk388032.t.IkOAol)
       }), this.renderTabs(), this.renderBody()]
     })

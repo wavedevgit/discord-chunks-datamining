@@ -1,10 +1,10 @@
-/** Chunk was on 36113 **/
+/** Chunk was on 52708 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => $
 }), require("./467055.js"), require("./388685.js"), require("./35282.js"), require("./415506.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -344,14 +344,14 @@ function z(e) {
 
 function K() {
   let e = function() {
-      let e = Chunk647438.useContext(Y);
+      let e = Chunk473749.useContext(Y);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
       return module
     }(),
     {
       game: t
     } = X(module.widget);
-  return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
+  return null == exports ? null : (0, Chunk54381.jsx)(Chunk919498.Z, {
     className: Chunk18827.socialProof,
     applicationId: exports.id,
     guildId: module.guildId,
@@ -385,7 +385,7 @@ function q(e, t) {
   let a = t.variables[i];
   return null == a || "unfurled_media" !== a.type ? null : a.media
 }
-let Y = Chunk647438.createContext(null);
+let Y = Chunk473749.createContext(null);
 
 function X(e) {
   return (0, o.cj)([f.Z, S.Z, I.Z], () => {

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => c
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
   Chunk695346 = require("./695346.js"),
@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
 function c() {
   let e = Chunk695346.dN.useSetting(),
     t = Chunk695346.R$.useSetting();
-  return module ? null : (0, Chunk951288.jsx)(Chunk481060.S89, {
+  return module ? null : (0, Chunk54381.jsx)(Chunk481060.S89, {
     id: "preview-markdown-toggle",
     label: Chunk388032.intl.string(Chunk388032.t.sHJ9wZ),
     action: () => {

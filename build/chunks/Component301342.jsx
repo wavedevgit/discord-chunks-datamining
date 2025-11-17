@@ -7,8 +7,8 @@ require.d(exports, {
   kw: () => R,
   rj: () => A
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
@@ -66,7 +66,7 @@ function I(e, t) {
 function P(e) {
   e.stopPropagation()
 }
-let N = Chunk647438.memo(function(e) {
+let N = Chunk473749.memo(function(e) {
     let t, {
         channel: l,
         connectChannelDragSource: d,
@@ -200,7 +200,7 @@ let N = Chunk647438.memo(function(e) {
     return null != g && null != d ? g(d(H)) : H
   }),
   Z = (0, Chunk146773.B)(N),
-  w = Chunk647438.memo(function(e) {
+  w = Chunk473749.memo(function(e) {
     let {
       name: t,
       onDismiss: n,
@@ -234,7 +234,7 @@ let N = Chunk647438.memo(function(e) {
       })
     })
   }),
-  T = Chunk647438.memo(function(e) {
+  T = Chunk473749.memo(function(e) {
     let {
       category: t
     } = e, n = (0, s.e7)([v.Z], () => v.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {
@@ -251,7 +251,7 @@ let N = Chunk647438.memo(function(e) {
       })
     })
   }),
-  A = Chunk647438.memo(function(e) {
+  A = Chunk473749.memo(function(e) {
     let {
       category: t,
       channel: n
@@ -273,7 +273,7 @@ let N = Chunk647438.memo(function(e) {
       }
     })
   }),
-  R = Chunk647438.memo(function(e) {
+  R = Chunk473749.memo(function(e) {
     let {
       channel: t
     } = e;

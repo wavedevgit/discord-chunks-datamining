@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => b
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk223245 = require("./223245.js"),
@@ -51,20 +51,20 @@ function b() {
     disableSounds: y,
     disableNotifications: O,
     enableContentProtection: v
-  } = (0, Chunk442837.cj)([Chunk246946.Z], () => E({}, Chunk246946.Z.getSettings())), I = () => (0, Chunk951288.jsxs)(Chunk481060.Zbd, {
+  } = (0, Chunk442837.cj)([Chunk246946.Z], () => E({}, Chunk246946.Z.getSettings())), I = () => (0, Chunk54381.jsxs)(Chunk481060.Zbd, {
     type: Chunk481060.Zbd.Types.PRIMARY,
     className: Chunk40086.noticeCard,
-    children: [(0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+    children: [(0, Chunk54381.jsxs)("div", {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/medium",
         children: Chunk388032.intl.string(Chunk388032.t.bxGbHL)
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         children: Chunk388032.intl.format(Chunk388032.t["4rmZnx"], {
           streamkitURL: Chunk981631.EYA.STREAMKIT
         })
       })]
-    }), (0, Chunk951288.jsx)("img", {
+    }), (0, Chunk54381.jsx)("img", {
       src: require("./560264.js"),
       width: 184,
       height: 110,
@@ -72,7 +72,7 @@ function b() {
       className: Chunk40086.noticeImage
     })]
   }), T = () => {
-    if (Chunk358085.isPlatformEmbedded) return (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    if (Chunk358085.isPlatformEmbedded) return (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t["PKDAJ/"]),
       description: Chunk388032.intl.string(Chunk388032.t.ZPi4lM),
       checked: exports,
@@ -87,64 +87,64 @@ function b() {
       section: Chunk981631.oAB.KEYBINDS
     })
   };
-  return (0, Chunk951288.jsx)(Chunk273313.Z, {
+  return (0, Chunk54381.jsx)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.S5GfOW),
-    children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+    children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       gap: 24,
-      children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+      children: [(0, Chunk54381.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.STREAMER_MODE_INTEGRATIONS,
         children: I()
-      }), (0, Chunk951288.jsx)(Chunk921801.F, {
+      }), (0, Chunk54381.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.STREAMER_MODE_ENABLE,
-        children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
           gap: 16,
-          children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t.p9ZAJZ),
             description: Chunk388032.intl.format(Chunk388032.t.MLVL2M, {
               onClick: A
             }),
             checked: module,
             onChange: e => S("enabled", e)
-          }), T(), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
+          }), T(), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
         })
-      }), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
         label: Chunk388032.intl.string(Chunk388032.t["+1H47t"]),
         className: Chunk40086.sectionLabel,
-        children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+        children: [(0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
-          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t.UpQziA),
             description: Chunk388032.intl.string(Chunk388032.t["+9Lra7"]),
             checked: b,
             onChange: e => S("hidePersonalInformation", e)
           })
-        }), (0, Chunk951288.jsx)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
-          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t.q7WNGv),
             description: Chunk388032.intl.string(Chunk388032.t.m7mS2U),
             checked: g,
             onChange: e => S("hideInstantInvites", e)
           })
-        }), (0, Chunk951288.jsx)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_DISABLE_SOUNDS,
-          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t.o56OZu),
             description: Chunk388032.intl.string(Chunk388032.t.eAkaik),
             checked: y,
             onChange: e => S("disableSounds", e)
           })
-        }), (0, Chunk951288.jsx)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
-          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t.qmYiYd),
             description: Chunk388032.intl.string(Chunk388032.t["ZAmpQ/"]),
             checked: O,
             onChange: e => S("disableNotifications", e)
           })
-        }), (0, Chunk951288.jsx)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
-          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t["iA81+a"]),
             description: Chunk388032.intl.string(Chunk388032.t.P4vj0h),
             checked: v,

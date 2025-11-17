@@ -5,8 +5,8 @@ require.d(exports, {
   ZP: () => D,
   fD: () => R
 }), require("./388685.js"), require("./49124.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk481060 = require("./481060.js"),
@@ -80,13 +80,13 @@ function P(e) {
 }
 
 function D() {
-  let [e] = Chunk647438.useState(() => R()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), f = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), h = Chunk647438.useCallback(e => {
+  let [e] = Chunk473749.useState(() => R()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), f = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), h = Chunk473749.useCallback(e => {
     g.bm.updateSetting(!e)
-  }, []), T = Chunk647438.useCallback(e => {
+  }, []), T = Chunk473749.useCallback(e => {
     e ? (0, s.h7j)(e => (0, r.jsx)(b.Z, S({}, e))) : l.mc()
-  }, []), A = Chunk647438.useCallback(e => {
+  }, []), A = Chunk473749.useCallback(e => {
     (0, u.BV)(e, c.Z.USER_SETTINGS)
-  }, []), N = Chunk647438.useCallback(e => {
+  }, []), N = Chunk473749.useCallback(e => {
     (0, s.h7j)(t => {
       let n = e ? I.intl.format(I.t.LYXRxL, {}) : I.intl.format(I.t.uDP3Kz, {});
       return (0, r.jsx)(s.ConfirmModal, C(S({
@@ -109,71 +109,71 @@ function D() {
     warpEnabled: Chunk956097.Z.enabled,
     warpConnecting: Chunk956097.Z.connecting,
     warpLog: Chunk956097.Z.log
-  })), L = Chunk647438.useCallback(e => {
+  })), L = Chunk473749.useCallback(e => {
     e ? d.Z.connect() : d.Z.disconnect()
   }, []);
-  return (0, Chunk951288.jsx)(Chunk273313.Z, {
+  return (0, Chunk54381.jsx)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["8/udY0"]),
-    children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+    children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       gap: 16,
-      children: [(0, Chunk951288.jsxs)(Chunk921801.F, {
+      children: [(0, Chunk54381.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_DEVELOPER_MODE,
-        children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t.ObIb1Q),
           description: Chunk388032.intl.format(Chunk388032.t["CY6q/Q"], {
             apiDocsUrl: Chunk981631.EYA.API_DOCS
           }),
           checked: require,
           onChange: Chunk695346.Sb.updateSetting
-        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
-      }), (0, Chunk951288.jsx)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
+      }), (0, Chunk54381.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
-        children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
           gap: 16,
-          children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t["eOC/F2"]),
             description: Chunk388032.intl.string(Chunk388032.t.Afc7l6),
             checked: module,
             onChange: N
-          }), !module && (0, Chunk951288.jsx)(Chunk494620.Z, {
+          }), !module && (0, Chunk54381.jsx)(Chunk494620.Z, {
             look: Chunk494620.z.WARNING,
             children: Chunk388032.intl.string(Chunk388032.t.j7S6IX)
-          }), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
+          }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
         })
-      }), (0, Chunk951288.jsxs)(Chunk921801.F, {
+      }), (0, Chunk54381.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
-        children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t.fi3UQN),
           description: Chunk388032.intl.string(Chunk388032.t["8mYp37"]),
           checked: !exports,
           onChange: Chunk998502
-        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
-      }), (0, Chunk951288.jsxs)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
+      }), (0, Chunk54381.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
-        children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t.erOqlh),
           description: Chunk388032.intl.string(Chunk388032.t["52hMnD"]),
           checked: null != Chunk433517,
           onChange: T
-        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
-      }), (0, Chunk951288.jsxs)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
+      }), (0, Chunk54381.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN,
-        children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t.qDZryG),
           description: Chunk388032.intl.string(Chunk388032.t["B/qU4K"]),
           checked: Chunk947851,
           onChange: A
-        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
-      }), (0, Chunk951288.jsx)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
+      }), (0, Chunk54381.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_CF_WARP,
-        children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
           gap: 16,
-          children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: "Enable WARP",
             description: "Enable WARP Proxy Connection",
             checked: D,
             onChange: L
-          }), w ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : null, (0, Chunk951288.jsx)(Chunk481060.Text, {
+          }), w ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : null, (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "code",
             children: x.map((e, t) => (0, r.jsx)("div", {
               children: JSON.stringify(e)

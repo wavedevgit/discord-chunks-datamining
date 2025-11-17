@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => S
 }), require("./415506.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -58,12 +58,12 @@ class C extends Chunk98597.ZP {
       connectChannelDragSource: i,
       connectDragPreview: l,
       canReorderChannel: a
-    } = this.props, s = (0, Chunk951288.jsx)("li", {
+    } = this.props, s = (0, Chunk54381.jsx)("li", {
       className: o()(this.getClassName(), {
         [Chunk55940.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
-      children: (0, Chunk951288.jsxs)(Chunk473403.ZP, {
+      children: (0, Chunk54381.jsxs)(Chunk473403.ZP, {
         className: Chunk55940.iconVisibility,
         channel: module,
         selected: exports,
@@ -78,7 +78,7 @@ class C extends Chunk98597.ZP {
         children: [this.renderInviteButton(), this.renderEditButton()]
       })
     });
-    return Chunk442837 ? require(Chunk647438(Chunk493683)) : Chunk493683
+    return Chunk442837 ? require(Chunk473749(Chunk493683)) : Chunk493683
   }
   constructor(...e) {
     super(...e), v(this, "handleContextMenu", e => {
@@ -123,7 +123,7 @@ class C extends Chunk98597.ZP {
   }
 }
 let E = (0, Chunk146773.B)(C),
-  S = Chunk647438.memo(function(e) {
+  S = Chunk473749.memo(function(e) {
     let {
       channel: t,
       guild: n,

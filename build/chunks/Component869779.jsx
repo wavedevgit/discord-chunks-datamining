@@ -4,8 +4,8 @@
 require.r(exports), require.d(exports, {
   default: () => B
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -49,7 +49,7 @@ function D(e) {
     location: n
   })
 }
-class k extends Chunk647438.PureComponent {
+class k extends Chunk473749.PureComponent {
   componentDidMount() {
     D(this.props.section, null, this.props.analyticsLocation)
   }
@@ -83,7 +83,7 @@ class k extends Chunk647438.PureComponent {
       canManageWebhooks: b,
       canUnlinkChannel: x
     } = this.props;
-    return null == Chunk647438 ? null : (0, Chunk951288.jsx)(Chunk503089.ZP, {
+    return null == Chunk473749 ? null : (0, Chunk54381.jsx)(Chunk503089.ZP, {
       theme: module,
       sidebarTheme: exports,
       section: null != require ? require : Chunk981631.CoT.OVERVIEW,
@@ -173,7 +173,7 @@ class k extends Chunk647438.PureComponent {
           predicate: () => a && !t.isModeratorReportChannel()
         }]
       }({
-        channel: Chunk647438,
+        channel: Chunk473749,
         category: Chunk442837,
         canManageRoles: Chunk570140,
         canManageChannels: Chunk367907,
@@ -200,7 +200,7 @@ function B() {
     canManageWebhooks: null != module && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_WEBHOOKS, module),
     canUnlinkChannel: (0, Chunk685929.C)(module, Chunk496675.Z)
   })), p = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(null == module ? true : module.parent_id));
-  return (0, Chunk951288.jsx)(k, {
+  return (0, Chunk54381.jsx)(k, {
     channel: module,
     category: Chunk471445,
     canManageChannels: (null == module ? true : module.isThread()) ? Chunk787014 : Chunk503089,
@@ -211,7 +211,7 @@ function B() {
     formState: require,
     theme: Chunk481060,
     sidebarTheme: Chunk570140,
-    section: Chunk647438,
+    section: Chunk473749,
     analyticsLocation: exports
   })
 }

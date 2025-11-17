@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => x
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -92,16 +92,16 @@ function P(e) {
 }
 
 function D() {
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: o()(Chunk975279.mainWrapper, Chunk975279.mainBody),
-    children: [(0, Chunk951288.jsx)(Chunk481060.owK, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.owK, {
       color: Chunk481060.TVs.colors.ICON_PRIMARY,
       size: "refresh_sm"
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       color: "text-primary",
       children: Chunk388032.intl.string(Chunk388032.t["0PhgpK"])
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       children: Chunk388032.intl.string(Chunk388032.t.HYg2Hn)

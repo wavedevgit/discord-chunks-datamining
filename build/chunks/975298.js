@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => S
 }), require("./642613.js"), require("./583741.js"), require("./388685.js"), require("./415506.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
@@ -122,7 +122,7 @@ function S() {
     excludeReverseTrialFromCountdown: false
   }, i = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), a = (0, Chunk442837.Wu)([Chunk580130.Z], () => Chunk580130.Z.getFractionalPremium({
     excludeReverseTrial: exports
-  })), s = (0, Chunk442837.e7)([Chunk580130.Z], () => Chunk580130.Z.fetchedAllEntitlements), l = (0, Chunk442837.Wu)([Chunk580130.Z], () => Chunk580130.Z.getUnactivatedFractionalPremiumUnits()), h = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), [m, E] = Chunk647438.useState(I({
+  })), s = (0, Chunk442837.e7)([Chunk580130.Z], () => Chunk580130.Z.fetchedAllEntitlements), l = (0, Chunk442837.Wu)([Chunk580130.Z], () => Chunk580130.Z.getUnactivatedFractionalPremiumUnits()), h = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), [m, E] = Chunk473749.useState(I({
     isFetching: T(module, Chunk512722) || Chunk580130.Z.fetchingAllEntitlements,
     entitlements: a,
     unactivatedFractionalPremiumUnits: l,
@@ -135,7 +135,7 @@ function S() {
     T(module, Chunk512722) && (0, Chunk496929.p0)({
       entitlementType: Chunk981631.qc2.FRACTIONAL_REDEMPTION
     })
-  }), Chunk647438.useEffect(() => {
+  }), Chunk473749.useEffect(() => {
     let e = I({
       entitlements: a,
       unactivatedFractionalPremiumUnits: l,

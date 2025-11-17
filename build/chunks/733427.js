@@ -3,10 +3,10 @@
 require.d(exports, {
   Z: () => c
 });
-var Chunk647438 = require("./647438.js");
+var Chunk473749 = require("./473749.js");
 let c = () => {
-  let e = Chunk647438.useRef(true);
-  return Chunk647438.useEffect(() => () => {
+  let e = Chunk473749.useRef(true);
+  return Chunk473749.useEffect(() => () => {
     module.current = false
-  }, []), Chunk647438.useCallback(() => module.current, [])
+  }, []), Chunk473749.useCallback(() => module.current, [])
 }

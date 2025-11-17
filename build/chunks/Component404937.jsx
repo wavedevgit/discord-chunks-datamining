@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => o
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk924557 = require("./924557.js"),
   Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
 let o = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_QUALITY_INFOBOX, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["Z+MfqT"])],
   usePredicate: Chunk924557.w9,
-  render: () => (0, Chunk951288.jsx)(Chunk494620.Z, {
+  render: () => (0, Chunk54381.jsx)(Chunk494620.Z, {
     look: Chunk494620.z.INFO,
     children: Chunk388032.intl.string(Chunk388032.t["Z+MfqT"])
   })

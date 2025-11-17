@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => Y
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -407,8 +407,8 @@ let Y = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     canSyncChannel: null != require && Chunk496675.Z.can(Chunk231338.Pl.MANAGE_ROLES, require),
     category: require,
     channel: exports,
-    filteredMembers: Chunk647438,
-    filteredRoles: Chunk951288,
+    filteredMembers: Chunk473749,
+    filteredRoles: Chunk54381,
     guild: module,
     isPrivateGuildChannel: s,
     locked: Chunk277053.Z.locked,

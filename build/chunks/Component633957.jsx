@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => F
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -204,7 +204,7 @@ function B(e) {
     }
   })
 }
-let Z = Chunk647438.memo(e => {
+let Z = Chunk473749.memo(e => {
   let {
     start: t
   } = e, [n, r] = i.useState(0), a = (0, x.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
@@ -216,4 +216,4 @@ let Z = Chunk647438.memo(e => {
   }, [c, t]), (0, I.m)(n)
 });
 Z.displayName = "ActivityRuntimeCounter";
-let F = Chunk647438.memo(B)
+let F = Chunk473749.memo(B)

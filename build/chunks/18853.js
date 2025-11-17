@@ -5,7 +5,7 @@ require.r(exports), require.d(exports, {
   default: () => o,
   messagesLoader: () => i
 });
-letChunk137062 = require("./137062.js"), i = r({
+letChunk963225 = require("./963225.js"), i = r({
   bg: () => require.e("35471").then(require.t.bind(require, 70929, 19)),
   cs: () => require.e("37233").then(require.t.bind(require, 670168, 19)),
   da: () => require.e("60351").then(require.t.bind(require, 769828, 19)),
@@ -13,7 +13,7 @@ letChunk137062 = require("./137062.js"), i = r({
   el: () => require.e("12625").then(require.t.bind(require, 941547, 19)),
   "en-GB": () => require.e("47121").then(require.t.bind(require, 327756, 19)),
   "es-419": () => require.e("98286").then(require.t.bind(require, 187695, 19)),
-  "es-ES": () => require.e("24922").then(require.t.bind(require, 199561, 19)),
+  "es-ES": () => require.e("24922").then(require.t.bind(require, 752244, 19)),
   fi: () => require.e("20447").then(require.t.bind(require, 436321, 19)),
   fr: () => require.e("5571").then(require.t.bind(require, 920199, 19)),
   hi: () => require.e("15214").then(require.t.bind(require, 672224, 19)),
@@ -37,4 +37,4 @@ letChunk137062 = require("./137062.js"), i = r({
   "zh-CN": () => require.e("91566").then(require.t.bind(require, 577689, 19)),
   "zh-TW": () => require.e("1800").then(require.t.bind(require, 786187, 19)),
   "en-US": () => require.e("9370").then(require.bind(require, 653665))
-}, "en-US"), Chunk137062 = require("./137062.js"), o = a(i)
+}, "en-US"), Chunk963225 = require("./963225.js"), o = a(i)

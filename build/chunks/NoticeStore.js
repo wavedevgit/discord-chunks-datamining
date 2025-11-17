@@ -716,11 +716,11 @@ function e1(e) {
   })) && e0()
 }
 
-function e2(e) {
+function e3(e) {
   eH = e.notice
 }
 
-function e3(e) {
+function e2(e) {
   return null != eH && (null == e.id || e.id === eH.id) && (eq(eH.type, e.isTemporary, e.untilAtLeast), e0())
 }
 
@@ -731,11 +731,11 @@ function e4(e) {
   return eq(t), e0()
 }
 
-function e8() {
+function e5() {
   return Chunk246946.Z.enabled || delete eZ[Chunk981631.kVF.STREAMER_MODE], e0()
 }
 
-function e5() {
+function e8() {
   return delete eZ[Chunk981631.kVF.DISPATCH_ERROR], e0()
 }
 
@@ -814,14 +814,14 @@ let tr = new tn(Chunk570140.Z, {
   BILLING_SUBSCRIPTION_UPDATE_SUCCESS: e0,
   BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: e0,
   VOICE_STATE_UPDATES: e1,
-  STREAMER_MODE_UPDATE: e8,
-  RUNNING_STREAMER_TOOLS_CHANGE: e8,
-  DISPATCH_APPLICATION_ERROR: e5,
+  STREAMER_MODE_UPDATE: e5,
+  RUNNING_STREAMER_TOOLS_CHANGE: e5,
+  DISPATCH_APPLICATION_ERROR: e8,
   DISPATCH_APPLICATION_LAUNCH_SETUP_START: e6,
   DISPATCH_APPLICATION_INSTALL_SCRIPTS_PROGRESS_UPDATE: e7,
   DISPATCH_APPLICATION_LAUNCH_SETUP_COMPLETE: e9,
-  NOTICE_SHOW: e2,
-  NOTICE_DISMISS: e3,
+  NOTICE_SHOW: e3,
+  NOTICE_DISMISS: e2,
   NOTICE_DISABLE: e4,
   LOGOUT: tt,
   SUBSCRIPTION_PLANS_FETCH_SUCCESS: e0,

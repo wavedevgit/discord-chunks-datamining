@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => N,
   y: () => T
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -59,7 +59,7 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Z = Chunk647438.memo(function(e) {
+let Z = Chunk473749.memo(function(e) {
     let {
       guildId: t,
       channelId: n,
@@ -88,7 +88,7 @@ let Z = Chunk647438.memo(function(e) {
       }) : null]
     })
   }),
-  P = Chunk647438.memo(function(e) {
+  P = Chunk473749.memo(function(e) {
     var t;
     let {
       participant: n,
@@ -128,10 +128,10 @@ let Z = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  T = () => (0, Chunk951288.jsx)("div", {
+  T = () => (0, Chunk54381.jsx)("div", {
     className: Chunk383519.tileBaseContainer
   }),
-  N = Chunk647438.memo(function(e) {
+  N = Chunk473749.memo(function(e) {
     let {
       participant: t,
       channel: l

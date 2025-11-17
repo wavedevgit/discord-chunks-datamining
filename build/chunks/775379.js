@@ -4,7 +4,7 @@
 require.d(exports, {
   S: () => a
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js");
+var Chunk473749 = require("./473749.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -14,7 +14,7 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a extends Chunk647438.PureComponent {
+class a extends Chunk473749.PureComponent {
   static getDerivedStateFromError(e) {
     return {
       error: e

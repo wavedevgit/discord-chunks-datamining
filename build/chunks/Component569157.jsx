@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk544245 = require("./544245.jsx"),
   Chunk934819 = require("./934819.jsx"),
@@ -12,8 +12,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk530146 = require("./530146.js");
 
 function d() {
-  return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
+  return (0, Chunk54381.jsxs)(Chunk481060.zJl, {
     className: Chunk530146.panel,
-    children: [(0, Chunk951288.jsx)(Chunk529625.Z, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk544245.Z, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk681140.Z, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk934819.Z, {})]
+    children: [(0, Chunk54381.jsx)(Chunk529625.Z, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk544245.Z, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk681140.Z, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk934819.Z, {})]
   })
 }

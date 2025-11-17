@@ -3,15 +3,15 @@
 require.d(exports, {
   Z: () => er
 }), require("./583741.js"), require("./997841.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk224706 = require("./224706.js"),
   Chunk593472 = require("./593472.js"),
   Chunk579806 = require("./579806.js"),
-  Chunk941033 = require("./941033.js"),
+  Chunk603113 = require("./603113.js"),
   Chunk367907 = require("./367907.js"),
   Chunk731429 = require("./731429.js"),
   Chunk188471 = require("./188471.js"),
@@ -124,7 +124,7 @@ async function et(e) {
     game_metadata: (0, A.sD)(a)
   }), null != I && O.ZP.addExecutableTrackedByAnalytics(I)
 }
-class en extends Chunk647438.PureComponent {
+class en extends Chunk473749.PureComponent {
   componentDidUpdate(e) {
     var t, n, r, i, l, a;
     let {
@@ -284,7 +284,7 @@ function er() {
     voiceChannelBitrate: null == Chunk224706 ? true : Chunk224706.bitrate,
     runningGame: Chunk829907,
     runningGamePid: null != Chunk829907 ? Chunk829907.pid : null,
-    gamePlatform: (0, Chunk941033.Z)(Chunk371651),
+    gamePlatform: (0, Chunk603113.Z)(Chunk371651),
     gameName: null != Chunk371651 ? Chunk371651.name : null,
     gameId: null != Chunk371651 ? Chunk371651.application_id : null,
     gameExeName: null != Chunk829907 ? Chunk829907.exeName : null,
@@ -293,8 +293,8 @@ function er() {
     postableChannelCount: Chunk509003,
     isTextInVoice: Chunk392711,
     numMessageRequests: Chunk427679
-  }, R = Chunk647438.useRef(Chunk695346);
-  Chunk647438.useEffect(() => {
+  }, R = Chunk473749.useRef(Chunk695346);
+  Chunk473749.useEffect(() => {
     Chunk77498.current = Chunk695346
   }, [Chunk695346]);
   let {
@@ -305,7 +305,7 @@ function er() {
     selectedChannelId: J,
     selectedGuildId: $
   } = Chunk695346;
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     if (Chunk375954 && null != Chunk823379) {
       let e = (0, Chunk731429.K)(Chunk592125.Z.getChannel(Chunk823379), true);
       (0, Chunk367907.yw)(Chunk981631.rMx.CHANNEL_OPENED, ee({}, module, (0, Chunk367907.$H)(Chunk823379))), (0, Chunk188471.a)(Chunk981631.rMx.CHANNEL_OPENED_CLICKSTREAM, {
@@ -314,11 +314,11 @@ function er() {
         channel_is_nsfw: Chunk77498.current.isNSFWChannel
       })
     }
-  }, [Chunk375954, Chunk823379]), Chunk647438.useEffect(() => {
+  }, [Chunk375954, Chunk823379]), Chunk473749.useEffect(() => {
     Chunk375954 && null == $ && (Chunk237997 === Chunk981631.Z5c.FRIENDS || Chunk237997 === Chunk981631.Z5c.ME_ACTIVITY) && (0, Chunk176881.Z)({
       tab_opened: Chunk19780
     })
-  }, [Chunk375954, Chunk19780, Chunk237997, $]), Chunk647438.useEffect(() => {
+  }, [Chunk375954, Chunk19780, Chunk237997, $]), Chunk473749.useEffect(() => {
     if (Chunk375954 && null != $) {
       var e, t, n, r;
       let i = (n = ee({}, Chunk630388 ? {
@@ -329,25 +329,25 @@ function er() {
         premium_progress_bar_enabled: null != (t = null == (e = Chunk430824.Z.getGuild(Chunk914010.Z.getGuildId())) ? true : module.premiumProgressBarEnabled) && exports,
         viewing_all_channels: !Chunk9156.ZP.isOptInEnabled($),
         num_recent_channels: Chunk734307.Z.recentsChannelCount($)
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(require, Object.getOwnPropertyDescriptors(Chunk951288)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(require, Object.getOwnPropertyDescriptors(Chunk54381)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(Chunk951288)).forEach(function(e) {
+      })(Object(Chunk54381)).forEach(function(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), require);
-      (0, Chunk367907.yw)(Chunk981631.rMx.GUILD_VIEWED, Chunk647438), (0, Chunk188471.a)(Chunk981631.rMx.GUILD_VIEWED_CLICKSTREAM, {
+      (0, Chunk367907.yw)(Chunk981631.rMx.GUILD_VIEWED, Chunk473749), (0, Chunk188471.a)(Chunk981631.rMx.GUILD_VIEWED_CLICKSTREAM, {
         guildId: $
       })
     }
   }, [Chunk375954, $, Chunk630388]);
-  let et = Chunk647438.useRef(false);
-  return Chunk647438.useEffect(() => {
+  let et = Chunk473749.useRef(false);
+  return Chunk473749.useEffect(() => {
     Chunk375954 && null == $ && Chunk237997 === Chunk981631.Z5c.MESSAGE_REQUESTS && !et.current && (et.current = true, Chunk626135.default.track(Chunk981631.rMx.MESSAGE_REQUESTS_INITIALIZED, {
       num_message_requests: Chunk77498.current.numMessageRequests
     }))
-  }, [Chunk375954, $, Chunk237997]), (0, Chunk951288.jsx)(en, ee({}, Chunk695346))
+  }, [Chunk375954, $, Chunk237997]), (0, Chunk54381.jsx)(en, ee({}, Chunk695346))
 }

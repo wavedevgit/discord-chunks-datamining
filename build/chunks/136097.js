@@ -5,7 +5,7 @@ require.d(exports, {
   h: () => u,
   p: () => d
 }), require("./388685.js"), require("./642613.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk913527 = require("./913527.js"),
   a = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -15,11 +15,11 @@ var Chunk647438 = require("./647438.js"),
 
 function u() {
   let e = (0, Chunk442837.cj)([Chunk673096.Z], () => Chunk673096.Z.getSessions());
-  return Chunk647438.useMemo(() => {
+  return Chunk473749.useMemo(() => {
     let t = [...module],
       n = null,
       r = Chunk314897.default.getAuthSessionIdHash();
-    if (null != Chunk647438) {
+    if (null != Chunk473749) {
       let e = exports.findIndex(e => e.id_hash === r);
       module >= 0 && (n = exports.splice(module, 1)[0])
     }

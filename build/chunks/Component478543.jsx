@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => C
 }), require("./388685.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -46,15 +46,15 @@ function O(e) {
 }
 
 function v() {
-  return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-    children: [(0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
+    children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk322108.buildInfo,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: o()(Chunk322108.barLoader, Chunk322108.barTitle)
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk322108.barLoader
       })]
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk322108.buttonLoader
     })]
   })

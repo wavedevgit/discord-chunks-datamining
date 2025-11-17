@@ -3,8 +3,8 @@
 require.r(exports), require.d(exports, {
   default: () => F
 }), require("./388685.js"), require("./781311.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -79,31 +79,31 @@ function B(e) {
 }
 
 function U() {
-  let e = Chunk647438.useCallback(() => {
+  let e = Chunk473749.useCallback(() => {
       (0, Chunk881294.qF)()
     }, []),
-    t = Chunk647438.useCallback(() => {
+    t = Chunk473749.useCallback(() => {
       (0, Chunk881294.rf)()
     }, []);
-  return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
+  return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
     className: Chunk813525.nagbar,
-    children: [(0, Chunk951288.jsx)(Chunk481060.gw7, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.gw7, {
       size: "custom",
       color: "white",
       className: Chunk813525.logo
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       tag: "span",
       color: "always-white",
       variant: "text-md/normal",
       children: Chunk388032.intl.string(Chunk388032.t.Ol3MIt)
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk813525.nagbarActionContainer,
-      children: [(0, Chunk951288.jsx)(Chunk481060.NoS, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.NoS, {
         onClick: module,
         noticeType: Chunk981631.kVF.LOGIN,
         children: Chunk388032.intl.string(Chunk388032.t["825cFy"])
-      }), (0, Chunk951288.jsx)(Chunk481060.NoS, {
+      }), (0, Chunk54381.jsx)(Chunk481060.NoS, {
         onClick: exports,
         noticeType: Chunk981631.kVF.REGISTER,
         minor: true,
@@ -132,18 +132,18 @@ let F = function() {
       categoryId: W
     } = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.SEARCH ? Chunk548514 : {},
     X = (0, Chunk442837.e7)([Chunk678694.Z], () => Chunk678694.Z.getCategories()),
-    K = Chunk647438.useMemo(() => [(0, Chunk216780.KQ)(), ...X], [X]),
-    q = Chunk647438.useMemo(() => K.find(e => e.id === Number(W)), [K, W]),
+    K = Chunk473749.useMemo(() => [(0, Chunk216780.KQ)(), ...X], [X]),
+    q = Chunk473749.useMemo(() => K.find(e => e.id === Number(W)), [K, W]),
     {
       tabs: Q,
       selectedTab: J,
       onSelectTab: $
     } = (0, Chunk119014.i)(null == z ? true : z.toString()),
-    [ee, et] = Chunk647438.useState(true),
+    [ee, et] = Chunk473749.useState(true),
     en = Chunk258971.z8.useField("trackedOpenedFromExternalEntrypoint"),
     er = Chunk258971.z8.useField("sessionId"),
     ea = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     if (!en && null == er) {
       let e = (0, Chunk726115.PM)();
       Chunk626135.default.track(Chunk981631.rMx.APP_DIRECTORY_OPENED, {
@@ -159,11 +159,11 @@ let F = function() {
         guildId: null
       })
     }
-  }, [er, en, null == ea ? true : ea.id]), Chunk647438.useEffect(() => {
+  }, [er, en, null == ea ? true : ea.id]), Chunk473749.useEffect(() => {
     Chunk471518.CP()
-  }, []), Chunk647438.useEffect(() => {
+  }, []), Chunk473749.useEffect(() => {
     F && Chunk471518.g5()
-  }, [F]), Chunk647438.useEffect(() => Chunk258971.aQ.setState({
+  }, [F]), Chunk473749.useEffect(() => Chunk258971.aQ.setState({
     lastItem: Chunk548514
   }), [Chunk548514]);
   let {
@@ -190,13 +190,13 @@ let F = function() {
     setSearchBarState: e => j.Z.setState({
       searchBarState: e
     })
-  }), e_ = Chunk647438.useCallback(e => {
+  }), e_ = Chunk473749.useCallback(e => {
     $(e), es && ed(), y()
-  }, [es, ed, $, Chunk370210]), ef = Chunk647438.useCallback(e => (0, T.ph)({
+  }, [es, ed, $, Chunk370210]), ef = Chunk473749.useCallback(e => (0, T.ph)({
     applicationId: e
-  }), []), eb = el || es, ex = Chunk647438.useCallback(() => {
+  }), []), eb = el || es, ex = Chunk473749.useCallback(() => {
     null != (0, Chunk258971.Uc)() ? (0, Chunk703656.op)() : (0, Chunk133743.Yp)()
-  }, []), ev = Chunk647438.useMemo(() => (0, Chunk392711.debounce)(e => {
+  }, []), ev = Chunk473749.useMemo(() => (0, Chunk392711.debounce)(e => {
     let {
       scrollTop: t,
       offsetHeight: n,
@@ -207,7 +207,7 @@ let F = function() {
       scroll_visible_percentile: (t + n) / r,
       current_page: a
     })
-  }, 200), []), eC = Chunk647438.useCallback((e, t) => {
+  }, 200), []), eC = Chunk473749.useCallback((e, t) => {
     n(e), ev({
       scrollTop: e.currentTarget.scrollTop,
       offsetHeight: e.currentTarget.offsetHeight,
@@ -215,27 +215,27 @@ let F = function() {
       location: t
     })
   }, [ev, require]), ej = ei ? Chunk481060.iWm : Chunk481060.jje;
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: l()(Chunk813525.outerContainer, {
       [Chunk813525.loggedOutContainer]: exports
     }),
-    children: [exports ? (0, Chunk951288.jsx)(U, {}) : null, (0, Chunk951288.jsxs)("div", {
+    children: [exports ? (0, Chunk54381.jsx)(U, {}) : null, (0, Chunk54381.jsxs)("div", {
       className: Chunk813525.innerContainer,
-      children: [(0, Chunk951288.jsxs)(Chunk611928.ZP, {
+      children: [(0, Chunk54381.jsxs)(Chunk611928.ZP, {
         variant: eb ? Chunk611928._6.RELATIVE : Chunk611928._6.OVERLAY,
-        children: [!eb && (0, Chunk951288.jsx)(Chunk611928.z6, {
+        children: [!eb && (0, Chunk54381.jsx)(Chunk611928.z6, {
           scrollPosition: Chunk120356
-        }), el ? (0, Chunk951288.jsx)(B, {
+        }), el ? (0, Chunk54381.jsx)(B, {
           applicationId: H,
           hideDetailHeaderButtons: ee,
           onClickBack: ex
-        }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-          children: [es ? (0, Chunk951288.jsx)(Chunk611928.Cm, {
+        }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+          children: [es ? (0, Chunk54381.jsx)(Chunk611928.Cm, {
             icon: Chunk481060.j9r,
             onClick: ex
-          }) : (0, Chunk951288.jsx)(Chunk611928.aV, {
+          }) : (0, Chunk54381.jsx)(Chunk611928.aV, {
             icon: ej
-          }), es ? (0, Chunk951288.jsx)(Chunk481060.Heading, {
+          }), es ? (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
             color: "header-primary",
             className: Chunk813525.searchHeader,
@@ -244,12 +244,12 @@ let F = function() {
             }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.Qhj5Br, {
               categoryName: null != (e = null == q ? true : q.name) ? module : Chunk388032.intl.string(Chunk388032.t.E407b7)
             })
-          }) : (0, Chunk951288.jsx)(h.Z, {
+          }) : (0, Chunk54381.jsx)(h.Z, {
             tabs: Q,
             selectedTab: J,
             onTabSelect: e_,
             onAvailableWidthChange: em
-          }), (0, Chunk951288.jsx)(Chunk680180.Z, {
+          }), (0, Chunk54381.jsx)(Chunk680180.Z, {
             query: eo,
             placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
             onTextChange: ec,
@@ -260,19 +260,19 @@ let F = function() {
             onBlur: eg
           })]
         })]
-      }), el ? (0, Chunk951288.jsx)(Chunk666697.Z, {
+      }), el ? (0, Chunk54381.jsx)(Chunk666697.Z, {
         onScroll: e => eC(e, N.m_.APPLICATION),
         onSelectApplication: ef,
         applicationId: H,
         initialTab: V,
         onButtonsVisibilityChange: et
-      }) : es ? (0, Chunk951288.jsx)(Chunk569527.Z, {
+      }) : es ? (0, Chunk54381.jsx)(Chunk569527.Z, {
         onSelectApplication: ef,
         onScroll: e => eC(e, N.m_.SEARCH)
-      }) : J === Chunk979007.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, Chunk951288.jsx)(Chunk370648.Z, {
+      }) : J === Chunk979007.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, Chunk54381.jsx)(Chunk370648.Z, {
         onScroll: e => eC(e, N.m_.HOME),
         onSelectApplication: ef
-      }) : (0, Chunk951288.jsx)(Chunk726941.Z, {
+      }) : (0, Chunk54381.jsx)(Chunk726941.Z, {
         tabId: Number(J),
         onScroll: e => eC(e, N.m_.CATEGORY),
         onSelectApplication: ef

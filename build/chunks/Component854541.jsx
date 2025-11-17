@@ -7,8 +7,8 @@ require.d(exports, {
   jH: () => P,
   zH: () => x
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk44315 = require("./44315.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk164688 = require("./164688.js");
+  Chunk701224 = require("./701224.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,7 +79,7 @@ function I(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let T = Chunk647438.lazy(() => Promise.all([require.e("3115"), require.e("28102")]).then(require.bind(require, 534828))),
+let T = Chunk473749.lazy(() => Promise.all([require.e("66382"), require.e("28102")]).then(require.bind(require, 534828))),
   S = 7,
   A = () => Promise.resolve();
 
@@ -153,7 +153,7 @@ function N(e) {
     }))
   })
 }
-class R extends Chunk647438.PureComponent {
+class R extends Chunk473749.PureComponent {
   render() {
     let {
       color: e,
@@ -162,16 +162,16 @@ class R extends Chunk647438.PureComponent {
       disabled: i,
       allowBlackCustomColor: a
     } = this.props;
-    return (0, Chunk951288.jsx)(N, {
+    return (0, Chunk54381.jsx)(N, {
       isDefault: true,
       color: module,
       isSelected: module === require || 0 === require && !Chunk120356,
       onClick: exports,
-      disabled: Chunk647438
+      disabled: Chunk473749
     })
   }
 }
-class P extends Chunk647438.PureComponent {
+class P extends Chunk473749.PureComponent {
   render() {
     let {
       customColor: e,
@@ -180,12 +180,12 @@ class P extends Chunk647438.PureComponent {
       "aria-label": i,
       presets: a
     } = this.props;
-    return (0, Chunk951288.jsx)(N, {
+    return (0, Chunk54381.jsx)(N, {
       isCustom: true,
       color: module,
       isSelected: exports === module && !Chunk120356.includes(module),
       disabled: require,
-      "aria-label": Chunk647438
+      "aria-label": Chunk473749
     })
   }
 }
@@ -294,7 +294,7 @@ function D(e) {
     children: j
   })
 }
-let w = Chunk647438.memo(D);
+let w = Chunk473749.memo(D);
 
 function x(e) {
   let {

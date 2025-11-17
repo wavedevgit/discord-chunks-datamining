@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => Z
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
@@ -60,21 +60,21 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class P extends Chunk647438.PureComponent {
+class P extends Chunk473749.PureComponent {
   render() {
     let {
       user: e,
       onContextMenu: t
     } = this.props;
-    return (0, Chunk951288.jsxs)("span", {
+    return (0, Chunk54381.jsxs)("span", {
       onContextMenu: exports,
       className: Chunk404211.userHook,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk51144.ZP.getUserTag(module, {
           mode: "username"
         })
-      }), "0" !== module.discriminator && (0, Chunk951288.jsxs)(Chunk481060.Text, {
+      }), "0" !== module.discriminator && (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-xs/normal",
         className: Chunk404211.discrim,
         children: ["#", module.discriminator]
@@ -82,7 +82,7 @@ class P extends Chunk647438.PureComponent {
     })
   }
 }
-let w = Chunk647438.forwardRef((e, t) => {
+let w = Chunk473749.forwardRef((e, t) => {
   let n, {
       log: l,
       className: o,

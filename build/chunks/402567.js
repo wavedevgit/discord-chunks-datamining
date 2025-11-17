@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk597688 = require("./597688.js"),
@@ -21,13 +21,13 @@ let f = Object.keys(Chunk211712.hq),
 
 function p() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    [t, n] = (0, Chunk647438.useState)(_()),
+    [t, n] = (0, Chunk473749.useState)(_()),
     {
       banner: f,
       themeColors: p,
       avatarDecorationSkuId: h,
       displayNameStyles: m
-    } = (0, Chunk647438.useMemo)(() => {
+    } = (0, Chunk473749.useMemo)(() => {
       let n = (0, Chunk211712.Ib)(exports);
       return {
         banner: require.getBannerSrc(module),
@@ -40,7 +40,7 @@ function p() {
       let e = Chunk597688.Z.getProduct(h);
       return (0, Chunk922347.M)(null == module ? true : module.items[0]) ? module.items[0] : null
     });
-  (0, Chunk647438.useEffect)(() => {
+  (0, Chunk473749.useEffect)(() => {
     (0, Chunk350327.x3)({
       banner: f,
       themeColors: p,
@@ -48,7 +48,7 @@ function p() {
       displayNameStyles: m
     })
   }, [f, p, g, m]);
-  let E = (0, Chunk647438.useCallback)(() => {
+  let E = (0, Chunk473749.useCallback)(() => {
     let e = _(exports);
     require(module), Chunk626135.default.track(Chunk981631.rMx.TRY_IT_OUT_PRESET_SHUFFLED, {
       preset: module

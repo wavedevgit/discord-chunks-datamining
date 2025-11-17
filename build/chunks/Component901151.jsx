@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => C
 }), require("./642613.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk524437 = require("./524437.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -117,9 +117,9 @@ function T(e) {
 
 function S() {
   let e = Chunk695346._j.useSetting();
-  return (0, Chunk951288.jsx)(Chunk838436.U, {
+  return (0, Chunk54381.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
-    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
+    children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk388032.t.XpBObB),
       note: Chunk388032.intl.format(Chunk388032.t.oZsHTD, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SLAYER_GAME_FRIENDS)
@@ -143,12 +143,12 @@ function A() {
       name: Chunk388032.intl.string(Chunk388032.t.AolKwN),
       value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
     }];
-  return (0, Chunk951288.jsxs)(Chunk838436.U, {
+  return (0, Chunk54381.jsxs)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_AND_SAFETY_IN_GAME_DMS,
-    children: [(0, Chunk951288.jsx)(Chunk838436.H, {
+    children: [(0, Chunk54381.jsx)(Chunk838436.H, {
       header: Chunk388032.intl.string(Chunk388032.t["ms+Tme"]),
       description: Chunk388032.intl.string(Chunk388032.t["4NN4+/"])
-    }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
+    }), (0, Chunk54381.jsx)(Chunk481060.FXm, {
       value: exports,
       options: require,
       onChange: e => d.JG.updateSetting(e)
@@ -161,21 +161,21 @@ function C() {
     showLoadingIndicator: e,
     slayerSdkApplications: t
   } = (0, Chunk749876.Z)(true);
-  return (0, Chunk951288.jsx)(Chunk546957.Z, {
-    children: module ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : exports.length > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(T, {
+  return (0, Chunk54381.jsx)(Chunk546957.Z, {
+    children: module ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : exports.length > 0 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsx)(T, {
         applications: exports
-      }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)(S, {}), (0, Chunk54381.jsx)("div", {
         className: Chunk42101.divider
-      }), (0, Chunk951288.jsx)(A, {})]
-    }) : (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsx)(A, {})]
+    }) : (0, Chunk54381.jsxs)("div", {
       className: Chunk42101.emptyContainer,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",
         className: Chunk42101.noGamesConnectedText,
         children: Chunk388032.intl.string(Chunk388032.t["+0U77d"])
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
         children: Chunk388032.intl.format(Chunk388032.t.V8wClM, {

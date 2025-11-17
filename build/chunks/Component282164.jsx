@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => _
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk873115 = require("./873115.js"),
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk618541 = require("./618541.js"),
   Chunk975060 = require("./975060.js"),
   Chunk388032 = require("./388032.jsx");
-class f extends Chunk647438.PureComponent {
+class f extends Chunk473749.PureComponent {
   componentDidMount() {
     null != this.props.paypalClient && Chunk873115.f6()
   }
@@ -25,7 +25,7 @@ class f extends Chunk647438.PureComponent {
       braintreeEmail: e,
       paypalClient: t
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk481060.oil, {
+    return (0, Chunk54381.jsx)(Chunk481060.oil, {
       label: Chunk388032.intl.string(Chunk388032.t.QQBAos),
       leading: {
         type: "image",

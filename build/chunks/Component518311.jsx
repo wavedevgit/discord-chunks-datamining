@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => em,
   l: () => eg
 }), require("./642613.js"), require("./415506.js"), require("./539854.js"), require("./388685.js"), require("./35282.js"), require("./49124.js");
-var i, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var i, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
@@ -176,7 +176,7 @@ let eo = (0, Chunk313201.hQ)(),
       }, e.id))
     }))
   };
-class ed extends(i = Chunk647438.PureComponent) {
+class ed extends(i = Chunk473749.PureComponent) {
   componentDidUpdate(e) {
     if (e.selectedUsers !== this.props.selectedUsers || e.query !== this.props.query) {
       var t, n;
@@ -260,7 +260,7 @@ class ed extends(i = Chunk647438.PureComponent) {
       variant: "primary",
       disabled: i,
       onClick: this.handleInviteUsers,
-      text: Chunk951288
+      text: Chunk54381
     }
   }
   renderAddUsersButton() {
@@ -271,9 +271,9 @@ class ed extends(i = Chunk647438.PureComponent) {
     if (null == module || module.isDM()) return;
     let n = this.getRemaining(),
       i = 0 === exports.size || require < 0;
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: Chunk918324.addButton,
-      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t.OYkgVk),
@@ -322,9 +322,9 @@ class ed extends(i = Chunk647438.PureComponent) {
     return Chunk392711.forEach(e => {
       let t = G.default.getUser(e);
       null != t && o.push(X.ZP.getName(t))
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk918324.searchBar,
-      children: [(0, Chunk951288.jsx)(Chunk794433.Z, {
+      children: [(0, Chunk54381.jsx)(Chunk794433.Z, {
         ref: this.searchBarRef,
         className: Chunk918324.searchBarComponent,
         autoFocus: true,
@@ -333,7 +333,7 @@ class ed extends(i = Chunk647438.PureComponent) {
         size: Chunk794433.Z.Sizes.MEDIUM,
         maxHeight: this.props.inBornThisNamedExperiment ? 110 : true,
         query: exports,
-        selectedRow: Chunk647438,
+        selectedRow: Chunk473749,
         sections: [null != (e = null == i ? true : i.length) ? module : 0],
         tags: Chunk913527,
         onSelect: this.handleSelect,
@@ -345,7 +345,7 @@ class ed extends(i = Chunk647438.PureComponent) {
           "aria-labelledby": eo,
           "aria-controls": es,
           "aria-expanded": true,
-          "aria-activedescendant": "user-row-".concat(Chunk647438),
+          "aria-activedescendant": "user-row-".concat(Chunk473749),
           autoComplete: "off"
         }
       }), this.renderAddUsersButton()]
@@ -356,21 +356,21 @@ class ed extends(i = Chunk647438.PureComponent) {
       hasFriends: e,
       results: t
     } = this.props;
-    return this.isNotFriends() || !module ? null : this.isPartyFull() ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+    return this.isNotFriends() || !module ? null : this.isPartyFull() ? (0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk918324.popoutContent,
       variant: "text-md/normal",
       color: "text-secondary",
       children: Chunk388032.intl.format(Chunk388032.t.xYr004, {
         number: this.getMaxParticipants()
       })
-    }) : 0 === exports.length ? (0, Chunk951288.jsx)("div", {
+    }) : 0 === exports.length ? (0, Chunk54381.jsx)("div", {
       className: Chunk918324.noResults,
-      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: Chunk388032.intl.string(Chunk388032.t.SV4DJ1)
       })
-    }) : (0, Chunk951288.jsx)(Chunk481060.aVo, {
+    }) : (0, Chunk54381.jsx)(Chunk481060.aVo, {
       ref: this.scrollerRef,
       sections: [exports.length],
       className: Chunk918324.scroller,
@@ -394,7 +394,7 @@ class ed extends(i = Chunk647438.PureComponent) {
     let {
       hasFriends: e
     } = this.props;
-    return this.isNotFriends() || !module ? null : this.isPartyFull() ? (0, Chunk951288.jsx)("div", {
+    return this.isNotFriends() || !module ? null : this.isPartyFull() ? (0, Chunk54381.jsx)("div", {
       children: Chunk388032.intl.format(Chunk388032.t.xYr004, {
         number: this.getMaxParticipants()
       })
@@ -409,9 +409,9 @@ class ed extends(i = Chunk647438.PureComponent) {
       sections: [1],
       sectionHeight: 0,
       rowHeight: 32,
-      renderRow: () => (0, Chunk951288.jsx)("div", {
+      renderRow: () => (0, Chunk54381.jsx)("div", {
         className: Chunk918324.noResults,
-        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           color: "text-muted",
           children: Chunk388032.intl.string(Chunk388032.t.SV4DJ1)
@@ -450,21 +450,21 @@ class ed extends(i = Chunk647438.PureComponent) {
     } = this.state;
     if (null == module || !module.isMultiUserDM() || this.isPartyFull()) return null;
     let l = null != exports ? (0, Chunk366980.Z)(exports.code) : "",
-      a = Chunk647438.length > 0;
-    return (0, Chunk951288.jsx)(Chunk481060.gNt, {
+      a = Chunk473749.length > 0;
+    return (0, Chunk54381.jsx)(Chunk481060.gNt, {
       label: Chunk388032.intl.string(Chunk388032.t.t3O2BR),
-      helperText: Chunk647438.length > 0 ? Chunk388032.intl.format(Chunk388032.t.ZVdJMy, {
+      helperText: Chunk473749.length > 0 ? Chunk388032.intl.format(Chunk388032.t.ZVdJMy, {
         numHours: "".concat(24)
       }) : true,
-      children: (0, Chunk951288.jsx)(Chunk481060.kO8, {
+      children: (0, Chunk54381.jsx)(Chunk481060.kO8, {
         supportsCopy: Chunk572004.wS,
         placeholder: (0, Chunk366980.Z)(Chunk388032.intl.string(Chunk388032.t.lPVBqP)),
-        value: Chunk392711 ? require ? Chunk388032.intl.string(Chunk388032.t["6HzNgZ"]) : Chunk647438 : "",
+        value: Chunk392711 ? require ? Chunk388032.intl.string(Chunk388032.t["6HzNgZ"]) : Chunk473749 : "",
         buttonColor: Chunk755721.zx.Colors.BRAND,
         text: Chunk392711 ? i ? Chunk388032.intl.string(Chunk388032.t.q30c5i) : Chunk388032.intl.string(Chunk388032.t.OpuAlK) : Chunk388032.intl.string(Chunk388032.t.qzxqUf),
         mode: i ? Chunk481060.uA3.SUCCESS : Chunk481060.uA3.DEFAULT,
         onCopy: () => {
-          Chunk392711 ? this.handleCopyInvite(Chunk647438) : this.createInvite()
+          Chunk392711 ? this.handleCopyInvite(Chunk473749) : this.createInvite()
         }
       })
     })
@@ -498,7 +498,7 @@ class ed extends(i = Chunk647438.PureComponent) {
     };
     if (this.isPartyFull()) return {};
     if (null == exports) return {
-      actionBarInput: require.size > 1 ? (0, Chunk951288.jsx)(ep, {
+      actionBarInput: require.size > 1 ? (0, Chunk54381.jsx)(ep, {
         previewIcon: this.state.previewIcon,
         selectedUsers: require,
         channelName: this.state.newChannelName,
@@ -530,37 +530,37 @@ class ed extends(i = Chunk647438.PureComponent) {
       actionBarInput: l,
       actions: a
     } = this.getFooterProps();
-    return i ? (0, Chunk951288.jsx)(Chunk793030.Modal, {
+    return i ? (0, Chunk54381.jsx)(Chunk793030.Modal, {
       transitionState: null != exports ? exports : Chunk481060.Dvm.ENTERED,
       onClose: async () => await require(),
       title: this.getTitle(),
       subtitle: this.getSubtitle(),
       input: null != (e = this.renderSearchBar()) ? module : true,
-      actionBarInput: Chunk647438,
+      actionBarInput: Chunk473749,
       listProps: this.getListProps(),
       actions: null != Chunk392711 ? Chunk392711 : [],
       children: this.renderBody()
-    }) : (0, Chunk951288.jsxs)("div", {
+    }) : (0, Chunk54381.jsxs)("div", {
       className: Chunk918324.popout,
-      children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
+      children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
         className: Chunk918324.popoutContent,
         variant: "heading-lg/semibold",
         color: "text-primary",
         children: this.getTitle()
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         className: Chunk918324.popoutContent,
         variant: "text-md/normal",
         color: "text-secondary",
         children: this.getSubtitle()
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk918324.popoutContent,
         children: this.renderSearchBar()
-      }), this.renderPopoutBody(), null != Chunk647438 && (0, Chunk951288.jsx)("div", {
+      }), this.renderPopoutBody(), null != Chunk473749 && (0, Chunk54381.jsx)("div", {
         className: Chunk918324.footer,
-        children: Chunk647438
-      }), null != Chunk392711 && (0, Chunk951288.jsx)("div", {
+        children: Chunk473749
+      }), null != Chunk392711 && (0, Chunk54381.jsx)("div", {
         className: Chunk918324.popoutContent,
-        children: (0, Chunk951288.jsx)(Chunk793030.hE2, {
+        children: (0, Chunk54381.jsx)(Chunk793030.hE2, {
           padding: {
             top: 12
           },

@@ -8,9 +8,9 @@ require.d(exports, {
   ZD: () => A,
   yY: () => I
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
-  Chunk574583 = require("./574583.js"),
-  Chunk51835 = require("./51835.js"),
+var Chunk473749 = require("./473749.js"),
+  Chunk55160 = require("./55160.js"),
+  Chunk748521 = require("./748521.js"),
   Chunk731965 = require("./731965.js");
 
 function s(e, t, n) {
@@ -60,7 +60,7 @@ let d = {
     onlyWhenBlurred: false,
     interval: 1e3
   },
-  p = (0, Chunk51835.F)(() => ({
+  p = (0, Chunk748521.F)(() => ({
     titles: [d],
     notificationCount: true,
     flashQueue: []
@@ -133,29 +133,29 @@ function T() {
       flashQueue: t
     } = e, n = h(e).filter(e => null != e).join(" | "), r = m(e);
     return ["".concat(r).concat(n), t[0]]
-  }, Chunk574583.X), [n, a] = Chunk647438.useState(false), o = Chunk647438.useRef(0), s = null == exports ? true : exports.messages[Chunk731965.current % exports.messages.length];
-  return Chunk647438.useEffect(() => {
+  }, Chunk55160.X), [n, a] = Chunk473749.useState(false), o = Chunk473749.useRef(0), s = null == exports ? true : exports.messages[Chunk731965.current % exports.messages.length];
+  return Chunk473749.useEffect(() => {
     if (null == exports) {
-      Chunk731965.current = 0, Chunk51835(false);
+      Chunk731965.current = 0, Chunk748521(false);
       return
     }
     if (document.hasFocus() && exports.onlyWhenBlurred) {
-      y(exports.id), Chunk51835(false);
+      y(exports.id), Chunk748521(false);
       return
     }
     let e = setInterval(() => {
       if (Chunk731965.current >= exports.count) {
-        y(exports.id), Chunk51835(false);
+        y(exports.id), Chunk748521(false);
         return
       }
-      Chunk51835(e => !e || (o.current += 1, false))
+      Chunk748521(e => !e || (o.current += 1, false))
     }, exports.interval);
     return () => clearInterval(module)
   }, [exports]), require ? s : module
 }
 
 function S() {
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     function e() {
       O()
     }
@@ -173,7 +173,7 @@ function A() {
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
   S();
   let t = T();
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     let n = exports === d.base;
     module && require || (document.title = exports)
   }, [module, exports])

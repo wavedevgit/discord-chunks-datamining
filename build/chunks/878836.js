@@ -5,7 +5,7 @@ require.d(exports, {
   M: () => m,
   S: () => g
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk710845 = require("./710845.js"),
@@ -50,7 +50,7 @@ let h = new Chunk710845.Z("useStripePaymentElementOptions"),
       p = null != (a = Chunk351402.inputBackgroundColor) ? Chunk493773 : Chunk947673.hex(),
       h = null != (o = Chunk351402.tabBackgroundColor) ? Chunk710845 : Chunk947673.hex();
     return {
-      elementsAppearance: Chunk647438.useMemo(() => ({
+      elementsAppearance: Chunk473749.useMemo(() => ({
         theme: Chunk720452,
         variables: {
           colorText: Chunk561448,

@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => R,
   r: () => S
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
@@ -152,15 +152,15 @@ let S = {
       children: x
     })
   },
-  A = () => (0, Chunk951288.jsx)("div", {
+  A = () => (0, Chunk54381.jsx)("div", {
     className: Chunk542736.paginationVideoOverlay,
-    children: (0, Chunk951288.jsx)(Chunk283756.Z, {
+    children: (0, Chunk54381.jsx)(Chunk283756.Z, {
       inactive: true,
       className: Chunk542736.paginationVideoPlayPill,
       renderLinkComponent: Chunk524444.iT
     })
   });
-class L extends(r = Chunk647438.PureComponent) {
+class L extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     Chunk585483.S.subscribe(Chunk981631.CkL.CAROUSEL_PREV, this.manualPrevious), Chunk585483.S.subscribe(Chunk981631.CkL.CAROUSEL_NEXT, this.manualNext)
   }
@@ -208,7 +208,7 @@ class L extends(r = Chunk647438.PureComponent) {
       animate: n,
       hoveringPreviousItem: r,
       hoveringNextItem: i
-    } = this.state, l = (0, Chunk951288.jsx)(Chunk519160.ZP, {
+    } = this.state, l = (0, Chunk54381.jsx)(Chunk519160.ZP, {
       items: module,
       itemSize: this.getItemSize(),
       renderItem: this.renderItem,
@@ -216,17 +216,17 @@ class L extends(r = Chunk647438.PureComponent) {
       animate: require,
       edgeItems: 2
     });
-    return module.length <= 1 ? Chunk120356 : (0, Chunk951288.jsxs)("div", {
+    return module.length <= 1 ? Chunk120356 : (0, Chunk54381.jsxs)("div", {
       className: Chunk542736.carouselButtonsContainer,
-      children: [Chunk120356, (0, Chunk951288.jsx)(Chunk44488.am, {
+      children: [Chunk120356, (0, Chunk54381.jsx)(Chunk44488.am, {
         onClick: this.manualPrevious,
         className: s()(Chunk542736.arrow, {
           [Chunk542736.arrowHovered]: r
         })
-      }), (0, Chunk951288.jsx)(Chunk44488.Pz, {
+      }), (0, Chunk54381.jsx)(Chunk44488.Pz, {
         onClick: this.manualNext,
         className: s()(Chunk542736.arrow, {
-          [Chunk542736.arrowHovered]: Chunk647438
+          [Chunk542736.arrowHovered]: Chunk473749
         })
       })]
     })
@@ -245,19 +245,19 @@ class L extends(r = Chunk647438.PureComponent) {
       playingVideo: l,
       hasInteracted: s
     } = this.state;
-    return (0, Chunk951288.jsxs)(Chunk679056.Z, {
+    return (0, Chunk54381.jsxs)(Chunk679056.Z, {
       pauseOnHover: true,
       onInterval: this.autoNext,
       interval: require,
       className: exports,
       disable: Chunk120356 || s || r,
-      children: [this.renderCarousel(), (0, Chunk951288.jsx)("div", {
+      children: [this.renderCarousel(), (0, Chunk54381.jsx)("div", {
         className: Chunk542736.pagination,
-        children: (0, Chunk951288.jsx)(Chunk44488.ZP, {
+        children: (0, Chunk54381.jsx)(Chunk44488.ZP, {
           renderItem: this.renderPaginationItem,
           scrollToPadding: 85,
           items: module,
-          selectedIndex: Chunk647438,
+          selectedIndex: Chunk473749,
           onSetItem: e => this.setItem(e, true),
           paginationContainerClass: Chunk542736.scroller,
           align: module.length < 6 ? Chunk44488.ZP.Align.LEFT : Chunk44488.ZP.Align.CENTER

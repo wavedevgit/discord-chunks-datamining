@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => f
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk153867 = require("./153867.js"),
@@ -17,9 +17,9 @@ var Chunk442837 = require("./442837.js"),
 
 function f() {
   let e = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.disableVoiceChannelChangeAlert);
-  return (0, Chunk951288.jsx)(Chunk921801.F, {
+  return (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT,
-    children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.e7LIiY),
       description: Chunk388032.intl.string(Chunk388032.t.YCCMkJ),
       checked: !module,

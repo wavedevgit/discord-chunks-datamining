@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => ei
 }), require("./539854.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -243,7 +243,7 @@ function q(e) {
 
 function X() {
   let e = (0, Chunk442837.e7)([Chunk487419.Z], () => Chunk487419.Z.getGuildAlertSettings()),
-    [t, n] = Chunk647438.useState(null),
+    [t, n] = Chunk473749.useState(null),
     a = Chunk709054.default.keys(module).map(t => {
       let n = e[t];
       return {
@@ -251,22 +251,22 @@ function X() {
         value: n.guildId
       }
     });
-  return 0 === Object.keys(module).length ? null : (0, Chunk951288.jsx)(Chunk921801.F, {
+  return 0 === Object.keys(module).length ? null : (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_COMMUNITY_ACTIVITY_ALERTS,
-    children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+    children: (0, Chunk54381.jsxs)(Chunk481060.C3N, {
       label: Chunk388032.intl.string(Chunk388032.t.D9yVAH),
       description: Chunk388032.intl.string(Chunk388032.t["0PhAOH"]),
-      children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.q4e, {
         label: Chunk388032.intl.string(Chunk388032.t.Q0PsXX),
         value: exports,
         onChange: e => {
           n(e)
         },
         options: Chunk392711
-      }), null != exports ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+      }), null != exports ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [(0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_COMMUNITY_IN_APP_ALERTS,
-          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t.u6dc5B),
             description: Chunk388032.intl.string(Chunk388032.t.z8Td48),
             checked: !module[exports].disableRaidAlertNag,
@@ -276,9 +276,9 @@ function X() {
               }, Chunk675478.fy.INFREQUENT_USER_ACTION)
             }
           })
-        }), (0, Chunk951288.jsx)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_COMMUNITY_PUSH_NOTIFICATIONS,
-          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t.P8MG6q),
             description: Chunk388032.intl.string(Chunk388032.t.PyxXs8),
             checked: !module[exports].disableRaidAlertPush,
@@ -293,7 +293,7 @@ function X() {
     })
   })
 }
-class Q extends Chunk647438.PureComponent {
+class Q extends Chunk473749.PureComponent {
   handleDesktopChange(e) {
     let t = e ? G.qrD.ALL : G.qrD.NEVER;
     t !== G.qrD.NEVER ? K("UserSettingsModal") : d.default.setDesktopType(t)
@@ -320,53 +320,53 @@ class Q extends Chunk647438.PureComponent {
         minutes: e
       })
     }));
-    return (0, Chunk951288.jsx)(Chunk273313.Z, {
+    return (0, Chunk54381.jsx)(Chunk273313.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.HcoRu0),
-      children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 16,
-        children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+        children: [(0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_ENABLE_DESKTOP,
-          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t["/0WCll"]),
             checked: module !== Chunk981631.qrD.NEVER && !Chunk433517,
             description: Chunk433517 ? Chunk388032.intl.string(Chunk388032.t.cIRG0s) : Chunk388032.intl.string(Chunk388032.t.wF9ih3),
             onChange: this.handleDesktopChange,
             disabled: Chunk433517
           })
-        }), (0, Chunk951288.jsx)($, {}), (0, Chunk951288.jsx)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)($, {}), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_UNREAD_MESSAGE_BADGE,
-          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t.VH8AIJ),
             description: Chunk388032.intl.string(Chunk388032.t["9K4qwX"]),
             checked: !require,
             onChange: this.handleToggleShowUnreadBadge
           })
-        }), (0, Chunk951288.jsx)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_ENABLE_TASKBAR_FLASHING,
-          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t.xSmFQG),
             description: Chunk388032.intl.string(Chunk388032.t.bd4j4x),
-            checked: Chunk647438,
+            checked: Chunk473749,
             onChange: this.handleToggleShowFlash
           })
-        }), (0, Chunk951288.jsx)(ee, {}), (0, Chunk951288.jsx)(eo, {}), (0, Chunk951288.jsx)(es, {}), (0, Chunk951288.jsx)(el, {}), (0, Chunk951288.jsx)(ea, {}), (0, Chunk951288.jsxs)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)(ee, {}), (0, Chunk54381.jsx)(eo, {}), (0, Chunk54381.jsx)(es, {}), (0, Chunk54381.jsx)(el, {}), (0, Chunk54381.jsx)(ea, {}), (0, Chunk54381.jsxs)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_PUSH_INACTIVE_TIMEOUT,
-          children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.q4e, {
             label: Chunk388032.intl.string(Chunk388032.t.TTvjd9),
             description: Chunk388032.intl.string(Chunk388032.t.Xytv9C),
             value: exports,
             onChange: Chunk695346.CM.updateSetting,
             options: Chunk87051
-          }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+          }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
             gap: 16
           })]
-        }), this.renderTTS(), (0, Chunk951288.jsx)(X, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+        }), this.renderTTS(), (0, Chunk54381.jsx)(X, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {
           gap: 24
-        }), (0, Chunk951288.jsx)(q, {
+        }), (0, Chunk54381.jsx)(q, {
           disabledSounds: Chunk392711,
           disableAllSounds: Chunk442837,
           notifyMessagesInSelectedChannel: Chunk524437
-        }), (0, Chunk951288.jsx)(Chunk33656.Z, {})]
+        }), (0, Chunk54381.jsx)(Chunk33656.Z, {})]
       })
     })
   }
@@ -425,9 +425,9 @@ function $() {
       autoTrackExposure: false
     }).enabled,
     t = (0, Chunk442837.e7)([Chunk9156.ZP], () => Chunk9156.ZP.mentionOnAllMessages);
-  return module ? (0, Chunk951288.jsx)(Chunk921801.F, {
+  return module ? (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_MENTION_ON_ALL_MESSAGES,
-    children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: "Mention on all messages?",
       description: "Increments the mention count when receiving a message in a channel set to 'All Messages'",
       checked: exports,
@@ -439,13 +439,13 @@ function $() {
 }
 
 function ee() {
-  let [e, t] = Chunk647438.useState(false), n = (0, Chunk442837.e7)([Chunk594174.default], () => {
+  let [e, t] = Chunk473749.useState(false), n = (0, Chunk442837.e7)([Chunk594174.default], () => {
     var e;
     return null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()
   }), a = (0, Chunk442837.e7)([Chunk9156.ZP], () => Chunk9156.ZP.useNewNotifications);
-  return Chunk392711 || require ? (0, Chunk951288.jsx)(Chunk921801.F, {
+  return Chunk392711 || require ? (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_UNREAD_SETTINGS,
-    children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: "New Unreads Setting (Experimental)",
       description: "Turns off the new unread setting that allows you to pick which channels are most important in a server.",
       checked: Chunk392711,
@@ -480,7 +480,7 @@ function ei() {
     ttsType: Chunk292959.Z.getTTSType(),
     notifyMessagesInSelectedChannel: Chunk292959.Z.getNotifyMessagesInSelectedChannel()
   }));
-  return (0, Chunk951288.jsx)(er, W(H({}, module), {
+  return (0, Chunk54381.jsx)(er, W(H({}, module), {
     afkTimeout: Chunk695346.CM.useSetting()
   }))
 }
@@ -502,9 +502,9 @@ function ea() {
     };
   return Chunk106371.Z.getCurrentConfig({
     location: "webSettings"
-  }).enableInAppNotifications ? (0, Chunk951288.jsxs)(Chunk921801.F, {
+  }).enableInAppNotifications ? (0, Chunk54381.jsxs)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_REACTIONS,
-    children: [(0, Chunk951288.jsx)(Chunk481060.FXm, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.FXm, {
       label: Chunk388032.intl.string(Chunk388032.t.Rq0NFs),
       description: Chunk388032.intl.string(Chunk388032.t.oWF6eQ),
       options: exports,
@@ -512,7 +512,7 @@ function ea() {
         value: e
       }),
       value: module
-    }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+    }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
       gap: 16
     })]
   }) : null
@@ -521,19 +521,19 @@ function ea() {
 function eo() {
   let e = Chunk695346.d8.useSetting(),
     t = Chunk695346.JN.useSetting();
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    children: [(0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.NOTIFICATIONS_VOICE_ACTIVITY,
-      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.wtk08S),
         description: Chunk388032.intl.string(Chunk388032.t.rngMNx),
         badge: "beta",
         checked: module,
         onChange: Chunk210176.I
       })
-    }), (0, Chunk951288.jsx)(Chunk921801.F, {
+    }), (0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.NOTIFICATIONS_GO_LIVE,
-      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.pW4TMp),
         description: Chunk388032.intl.string(Chunk388032.t["H+WYqZ"]),
         checked: exports,
@@ -545,9 +545,9 @@ function eo() {
 
 function es() {
   let e = Chunk695346.JY.useSetting();
-  return (0, Chunk951288.jsx)(Chunk921801.F, {
+  return (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_FRIEND_ONLINE,
-    children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t["uvIi/4"]),
       description: Chunk388032.intl.string(Chunk388032.t.E6O06k),
       checked: module,
@@ -558,9 +558,9 @@ function es() {
 
 function el() {
   let e = Chunk695346.V6.useSetting();
-  return (0, Chunk951288.jsx)(Chunk921801.F, {
+  return (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_USER_RESURRECTION,
-    children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.Zyn45S),
       description: Chunk388032.intl.string(Chunk388032.t.XdihbD),
       checked: module,

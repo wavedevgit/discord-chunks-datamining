@@ -5,8 +5,8 @@ require.d(exports, {
   E: () => E,
   Z: () => b
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -92,26 +92,26 @@ function b() {
     supportsHookSoundshare: Chunk131951.Z.supportsHookSoundshare(),
     useSystemScreensharePicker: Chunk131951.Z.getUseSystemScreensharePicker()
   }));
-  return (0, Chunk951288.jsxs)(Chunk921801.F, {
+  return (0, Chunk54381.jsxs)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
-    children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+    children: [(0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_VIDEO_HOOK,
-      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.GmWk2E),
         description: Chunk388032.intl.string(Chunk388032.t["Fj/xn1"]),
         checked: module,
         onChange: e => s.Z.setVideoHook(e)
       })
-    }), require && Chunk755721 && (0, Chunk951288.jsx)(Chunk921801.F, {
+    }), require && Chunk755721 && (0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_EXPERIMENTAL_SOUNDSHARE,
-      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t["4I0qzZ"]),
         checked: exports,
         onChange: e => s.Z.setExperimentalSoundshare(e)
       })
-    }), (0, Chunk951288.jsx)(Chunk921801.F, {
+    }), (0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_SYSTEM_PICKER,
-      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.ie1mgY),
         checked: Chunk579806,
         onChange: E

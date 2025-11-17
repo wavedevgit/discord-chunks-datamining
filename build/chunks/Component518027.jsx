@@ -3,8 +3,8 @@
 require.d(exports, {
   J: () => p
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk430742 = require("./430742.js"),
   Chunk541716 = require("./541716.js"),
@@ -19,30 +19,30 @@ let p = () => {
     message: e,
     channel: t,
     updateMessageText: n
-  } = (0, Chunk135102.C$)(), p = (0, Chunk442837.e7)([Chunk703558.Z], () => Chunk703558.Z.getDraft(module.channel_id, Chunk703558.d.ChannelMessage)), [g, h] = Chunk647438.useState(() => (0, Chunk752305.eK)(p)), {
+  } = (0, Chunk135102.C$)(), p = (0, Chunk442837.e7)([Chunk703558.Z], () => Chunk703558.Z.getDraft(module.channel_id, Chunk703558.d.ChannelMessage)), [g, h] = Chunk473749.useState(() => (0, Chunk752305.eK)(p)), {
     textValue: _,
     richValue: m
   } = g;
-  (0, Chunk647438.useEffect)(() => {
+  (0, Chunk473749.useEffect)(() => {
     require(_)
   }, [require, _]);
-  let y = Chunk647438.useCallback((t, n, r) => {
+  let y = Chunk473749.useCallback((t, n, r) => {
       h({
         textValue: n,
         richValue: r
       }), l.Z.saveDraft(e.channel_id, n, u.d.ChannelMessage)
     }, [module]),
-    [O, C] = Chunk647438.useState(false),
-    j = Chunk647438.useCallback(() => C(true), []),
-    w = Chunk647438.useCallback(() => C(false), []);
-  (0, Chunk647438.useEffect)(() => () => {
+    [O, C] = Chunk473749.useState(false),
+    j = Chunk473749.useCallback(() => C(true), []),
+    w = Chunk473749.useCallback(() => C(false), []);
+  (0, Chunk473749.useEffect)(() => () => {
     Chunk430742.Z.clearDraft(module.channel_id, Chunk703558.d.ChannelMessage)
   }, [module]);
   let v = async () => ({
     shouldClear: true,
     shouldRefocus: false
   });
-  return (0, Chunk951288.jsx)(Chunk893718.ZP, {
+  return (0, Chunk54381.jsx)(Chunk893718.ZP, {
     innerClassName: Chunk784562.messageInput,
     onChange: y,
     placeholder: Chunk388032.intl.string(Chunk388032.t.ZroO3G),

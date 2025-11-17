@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => x
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk430824 = require("./430824.js"),
@@ -66,7 +66,7 @@ function x() {
     t.delete(e), j(t)
   }
   let I = (0, Chunk723047.mY)();
-  return (0, Chunk951288.jsxs)(Chunk481060.gNt, {
+  return (0, Chunk54381.jsxs)(Chunk481060.gNt, {
     label: Chunk388032.intl.string(Chunk388032.t["D0qeO+"]),
     description: Chunk388032.intl.format(Chunk388032.t.zuwely, {
       premiumEmojiMaximum: y
@@ -75,7 +75,7 @@ function x() {
       handleTransitionToManageEmoji: O
     }),
     disabled: I,
-    children: [(0, Chunk951288.jsx)(Chunk331146.E, {
+    children: [(0, Chunk54381.jsx)(Chunk331146.E, {
       tierEmojiIds: x,
       guildId: exports,
       onRemoveEmoji: function(e) {
@@ -90,9 +90,9 @@ function x() {
           }))
         })
       }
-    }), null != x && x.size > 0 ? (0, Chunk951288.jsx)(Chunk481060.LZC, {
+    }), null != x && x.size > 0 ? (0, Chunk54381.jsx)(Chunk481060.LZC, {
       size: 8
-    }) : null, (0, Chunk951288.jsx)(Chunk861345.s, {
+    }) : null, (0, Chunk54381.jsx)(Chunk861345.s, {
       onClick: function() {
         (0, Chunk481060.ZDy)(async () => {
           let {

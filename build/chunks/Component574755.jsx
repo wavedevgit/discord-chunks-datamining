@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => y
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -32,7 +32,7 @@ function y() {
   }, {
     autoTrackExposure: false
   });
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     (0, Chunk266454.Q3)(Chunk704215.z.CLIPS_SETTINGS_BETA_TAG)
   });
   let O = [{
@@ -54,11 +54,11 @@ function y() {
       subsection: Chunk526761.Sr
     }],
     v = O.findIndex(e => null != e.subsection && e.subsection === n);
-  return (0, Chunk951288.jsx)(Chunk906732.Gt, {
+  return (0, Chunk54381.jsx)(Chunk906732.Gt, {
     value: module,
-    children: (0, Chunk951288.jsx)(Chunk10298.N, {
+    children: (0, Chunk54381.jsx)(Chunk10298.N, {
       header: Chunk388032.intl.string(Chunk388032.t.z2jK6X),
-      children: (0, Chunk951288.jsx)(Chunk526156.Z, {
+      children: (0, Chunk54381.jsx)(Chunk526156.Z, {
         parentSetting: Chunk726985.s6.CLIPS,
         settingsSection: Chunk981631.oAB.CLIPS,
         tabs: O,

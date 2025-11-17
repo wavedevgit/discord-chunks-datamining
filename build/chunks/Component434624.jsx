@@ -4,8 +4,8 @@
 require.d(exports, {
   l: () => T
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
@@ -74,7 +74,7 @@ function O(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let v = Chunk647438.memo(function(e) {
+let v = Chunk473749.memo(function(e) {
   let t, n, {
       useChatFontScaling: i,
       hideEmoji: a,
@@ -139,7 +139,7 @@ function I(e) {
   var t;
   return "".concat(e.type === f.O.BURST ? "burst:" : "").concat(null != (t = e.emoji.id) ? t : 0, ":").concat(e.emoji.name)
 }
-let T = Chunk647438.memo(function(e) {
+let T = Chunk473749.memo(function(e) {
   var {
     showImmediate: t,
     reactions: n

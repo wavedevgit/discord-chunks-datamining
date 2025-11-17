@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => h
 }), require("./388685.js"), require("./781311.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk435064 = require("./435064.js"),
@@ -57,12 +57,12 @@ function h() {
     autoClipPhrases: e,
     maxAutoClips: t,
     clipSignals: n
-  } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()), [d, _] = Chunk647438.useState(""), h = Chunk647438.useMemo(() => module.map(e => ({
+  } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()), [d, _] = Chunk473749.useState(""), h = Chunk473749.useMemo(() => module.map(e => ({
     id: e,
     label: e
-  })), [module]), m = Chunk647438.useCallback(e => {
+  })), [module]), m = Chunk473749.useCallback(e => {
     _(e)
-  }, []), g = Chunk647438.useCallback(t => {
+  }, []), g = Chunk473749.useCallback(t => {
     if ("Enter" === t.key || "," === t.key) {
       t.preventDefault();
       let n = d.trim().toLowerCase();
@@ -71,31 +71,31 @@ function h() {
       let t = e.slice(0, false);
       l.a2(t)
     }
-  }, [d, module]), E = Chunk647438.useCallback(t => {
+  }, [d, module]), E = Chunk473749.useCallback(t => {
     let n = Array.from(t)[0],
       r = e.filter(e => e !== n);
     l.a2(r)
-  }, [module]), b = Chunk647438.useCallback(e => {
+  }, [module]), b = Chunk473749.useCallback(e => {
     l.Rr(p(f({}, n), {
       enableGameSignals: e
     }))
-  }, [require]), y = Chunk647438.useCallback(e => {
+  }, [require]), y = Chunk473749.useCallback(e => {
     l.Rr(p(f({}, n), {
       enableDistributedSignals: e
     }))
-  }, [require]), O = Chunk647438.useCallback(e => {
+  }, [require]), O = Chunk473749.useCallback(e => {
     l.Rr(p(f({}, n), {
       enablePhraseSignals: e
     }))
-  }, [require]), v = Chunk647438.useCallback(e => {
+  }, [require]), v = Chunk473749.useCallback(e => {
     l.W6(Math.floor(e))
-  }, []), I = Chunk647438.useMemo(() => {
+  }, []), I = Chunk473749.useMemo(() => {
     let e = [Chunk356659.qb];
     for (let t = 10; exports <= Chunk356659.b0; t += 10) module.push(exports);
     return module[module.length - 1] !== Chunk356659.b0 && module.push(Chunk356659.b0), module
   }, []);
-  return (0, Chunk951288.jsxs)(Chunk481060.l09, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.iRW, {
+  return (0, Chunk54381.jsxs)(Chunk481060.l09, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.iRW, {
       label: Chunk388032.intl.string(Chunk388032.t.yfsrDI),
       description: Chunk388032.intl.string(Chunk388032.t.vlDHdC),
       initialValue: exports,
@@ -106,22 +106,22 @@ function h() {
       onValueChange: v,
       markers: I,
       onMarkerRender: e => "".concat(Math.floor(e))
-    }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.iV6KcI),
       description: Chunk388032.intl.string(Chunk388032.t["dJ2tX+"]),
       checked: require.enableGameSignals,
       onChange: b
-    }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t["01JPeO"]),
       description: Chunk388032.intl.string(Chunk388032.t["Xnx+Co"]),
       checked: require.enableDistributedSignals,
       onChange: y
-    }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.nHsilt),
       description: Chunk388032.intl.string(Chunk388032.t["s6wq+m"]),
       checked: require.enablePhraseSignals,
       onChange: O
-    }), require.enablePhraseSignals && (0, Chunk951288.jsx)(Chunk481060.oil, {
+    }), require.enablePhraseSignals && (0, Chunk54381.jsx)(Chunk481060.oil, {
       value: d,
       onChange: m,
       onKeyDown: g,

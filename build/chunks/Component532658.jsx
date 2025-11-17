@@ -6,11 +6,11 @@ require.d(exports, {
   e5: () => G,
   px: () => U
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk442748 = require("./442748.js"),
+  Chunk636606 = require("./636606.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -156,7 +156,7 @@ function W(e, t) {
     setHideConnectedAnimation: l
   }), [a, n, s, l])
 }
-let K = Chunk647438.memo(function(e) {
+let K = Chunk473749.memo(function(e) {
     let {
       nick: t,
       connectedOn: n,
@@ -221,7 +221,7 @@ let K = Chunk647438.memo(function(e) {
       })
     })
   }),
-  z = Chunk647438.memo(function(e) {
+  z = Chunk473749.memo(function(e) {
     let {
       avatarSize: t,
       userId: n,
@@ -247,8 +247,8 @@ let K = Chunk647438.memo(function(e) {
       })
     })
   }),
-  q = Chunk647438.memo(Chunk481060.qEK),
-  X = Chunk647438.memo(function(e) {
+  q = Chunk473749.memo(Chunk481060.qEK),
+  X = Chunk473749.memo(function(e) {
     let {
       channel: t,
       flipped: n = false,
@@ -447,7 +447,7 @@ let K = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  Q = Chunk647438.memo(function(e) {
+  Q = Chunk473749.memo(function(e) {
     let {
       widgetId: t,
       channel: a,

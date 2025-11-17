@@ -4,14 +4,14 @@
 require.d(exports, {
   F: () => a
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk295141 = require("./295141.js");
 let a = () => {
-  let [e, t] = Chunk647438.useState(false), [n, a] = Chunk647438.useState(null);
+  let [e, t] = Chunk473749.useState(false), [n, a] = Chunk473749.useState(null);
   return {
     loading: module,
     error: require,
-    getTrialPurchaseEligibility: Chunk647438.useCallback(async (e, n, r) => {
+    getTrialPurchaseEligibility: Chunk473749.useCallback(async (e, n, r) => {
       t(true), a(null);
       try {
         return await (0, i.LB)(e, n, r)

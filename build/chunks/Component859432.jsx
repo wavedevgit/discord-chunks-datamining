@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => W
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -76,7 +76,7 @@ function Y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let W = Chunk647438.memo(function(e) {
+let W = Chunk473749.memo(function(e) {
   let {
     guild: t,
     onClose: a,

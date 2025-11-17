@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => i
 }), require("./539854.js"), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk999382 = require("./999382.js"),
   Chunk905128 = require("./905128.js"),
@@ -15,7 +15,7 @@ function i() {
       var t;
       return null == (t = Chunk905128.Z.getStateForGuild(null == module ? true : module.id)) ? true : exports.allPowerups
     });
-  return (0, Chunk647438.useMemo)(() => {
+  return (0, Chunk473749.useMemo)(() => {
     let n = Chunk131085.QV.map(e => ({
         kind: e
       })),
@@ -32,7 +32,7 @@ function i() {
       e.features.has(a) ? n.push(...d) : r.push(...d)
     }), {
       unlockedBadges: require,
-      lockedBadges: Chunk647438
+      lockedBadges: Chunk473749
     }
   }, [null == module ? true : module.features, exports])
 }

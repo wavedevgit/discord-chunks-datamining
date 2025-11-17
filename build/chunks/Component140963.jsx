@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => I
 }), require("./781311.js"), require("./35282.js"), require("./388685.js"), require("./704826.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -58,7 +58,7 @@ function b(e, t) {
 }
 let y = ":",
   O = /(\t|\s)/;
-class v extends Chunk647438.PureComponent {
+class v extends Chunk473749.PureComponent {
   componentDidMount() {
     this.props.disableAutoFocus || (Promise.resolve().then(() => {
       var e;
@@ -94,10 +94,10 @@ class v extends Chunk647438.PureComponent {
       r = module.selectionEnd;
     for (; require > 0 && !O.test(exports[require - 1]);) require--;
     let i = module.selectionEnd;
-    for (; Chunk647438 < exports.length && !O.test(exports[Chunk647438]);) Chunk647438++;
+    for (; Chunk473749 < exports.length && !O.test(exports[Chunk473749]);) Chunk473749++;
     return {
-      word: exports.slice(require, Chunk951288),
-      fullWord: exports.slice(require, Chunk647438),
+      word: exports.slice(require, Chunk54381),
+      fullWord: exports.slice(require, Chunk473749),
       isAtStart: 0 === require
     }
   }
@@ -175,11 +175,11 @@ class v extends Chunk647438.PureComponent {
       "aria-expanded": m,
       "aria-activedescendant": g
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk459273.d9, {
+    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsx)(Chunk459273.d9, {
         event: Chunk981631.CkL.GLOBAL_CLIPBOARD_PASTE,
         handler: this.handleGlobalPaste
-      }), (0, Chunk951288.jsx)(Chunk481060.lcI, {
+      }), (0, Chunk54381.jsx)(Chunk481060.lcI, {
         ref: this.handleSetRef,
         className: o()(Chunk239091, Chunk358085),
         id: Chunk555573,
@@ -187,7 +187,7 @@ class v extends Chunk647438.PureComponent {
         fontWidthEstimate: 6,
         placeholder: require,
         disabled: exports || Chunk998698,
-        required: Chunk647438,
+        required: Chunk473749,
         onChange: this.handleOnChange,
         onResize: Chunk120356,
         onKeyPress: this.handleKeyPress,

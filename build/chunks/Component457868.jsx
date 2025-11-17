@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => X
 }), require("./388685.js"), require("./583741.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -66,7 +66,7 @@ function z(e) {
 }
 let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
   Y = 44 + Chunk276264.x,
-  q = Chunk647438.memo(function(e) {
+  q = Chunk473749.memo(function(e) {
     let {
       channel: t,
       sectionId: l,
@@ -187,7 +187,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       }
     })
   }),
-  K = Chunk647438.memo(function(e) {
+  K = Chunk473749.memo(function(e) {
     let {
       id: t,
       label: n,
@@ -217,7 +217,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       })]
     })
   }),
-  Q = Chunk647438.memo(function(e) {
+  Q = Chunk473749.memo(function(e) {
     let {
       channel: t
     } = e;

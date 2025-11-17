@@ -4,8 +4,8 @@
 require.d(exports, {
   t: () => f
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk704215 = require("./704215.js"),
   Chunk231757 = require("./231757.jsx"),
   Chunk63063 = require("./63063.js"),
@@ -16,12 +16,12 @@ var Chunk704215 = require("./704215.js"),
 let d = "PS two way upsell",
   f = () => {
     let e = Chunk63063.Z.getArticleURL(Chunk981631.BhN.PS_CONNECTION);
-    return (0, Chunk951288.jsx)(Chunk249881.t, {
+    return (0, Chunk54381.jsx)(Chunk249881.t, {
       title: Chunk388032.intl.string(Chunk388032.t.v20wwm),
       body: Chunk388032.intl.format(Chunk388032.t.lTZBit, {
         help_article: module
       }),
-      img: (0, Chunk951288.jsx)("img", {
+      img: (0, Chunk54381.jsx)("img", {
         src: Chunk359734,
         width: "82",
         height: "auto",

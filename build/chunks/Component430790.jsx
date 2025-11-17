@@ -1,10 +1,10 @@
-/** Chunk was on 36113 **/
+/** Chunk was on 52708 **/
 /** chunk id: 430790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk388032 = require("./388032.jsx"),
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
 function s() {
   let {
     trackUserProfileEditAction: e
-  } = (0, Chunk785717.KZ)(), t = Chunk647438.useCallback(() => {
+  } = (0, Chunk785717.KZ)(), t = Chunk473749.useCallback(() => {
     module({
       action: "PRESS_ADD_WIDGET"
     }), (0, Chunk481060.ZDy)(async () => {
@@ -56,13 +56,13 @@ function s() {
       stackingBehavior: "stack"
     })
   }, [module]);
-  return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
+  return (0, Chunk54381.jsxs)(Chunk481060.P3F, {
     className: Chunk684066.addWidgetButton,
     onClick: exports,
-    children: [(0, Chunk951288.jsx)(Chunk481060.qJs, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.qJs, {
       size: "sm",
       color: "currentColor"
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: "text-default",
       children: Chunk388032.intl.string(Chunk388032.t["lBG2s/"])

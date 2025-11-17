@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => eo
 }), require("./539854.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -50,7 +50,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk977594 = require("./977594.js");
 let K = !Chunk358085.isPlatformEmbedded && false,
-  X = K ? (0, Chunk951288.jsx)(Chunk70097.Z, {
+  X = K ? (0, Chunk54381.jsx)(Chunk70097.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
     className: Chunk977594.videoDev,
     autoPlay: true,
@@ -102,7 +102,7 @@ function q(e) {
     }
   })
 }
-let $ = Chunk647438.memo(function(e) {
+let $ = Chunk473749.memo(function(e) {
     let {
       keybind: t,
       onClick: n,
@@ -132,7 +132,7 @@ let $ = Chunk647438.memo(function(e) {
       })
     })
   }),
-  ee = Chunk647438.memo(function(e) {
+  ee = Chunk473749.memo(function(e) {
     let {
       locked: t,
       focused: n
@@ -168,7 +168,7 @@ function er(e) {
 }
 
 function el() {
-  return (0, Chunk442837.e7)([Chunk338949.Z], () => Chunk338949.Z.hasRenderDebugMode(Chunk837268.GO.WindowContainer)) ? (0, Chunk951288.jsx)("div", {
+  return (0, Chunk442837.e7)([Chunk338949.Z], () => Chunk338949.Z.hasRenderDebugMode(Chunk837268.GO.WindowContainer)) ? (0, Chunk54381.jsx)("div", {
     className: Chunk977594.windowContainerDebug
   }) : null
 }

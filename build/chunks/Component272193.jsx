@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => m
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -22,20 +22,20 @@ function m() {
         total: e
       })
     };
-  return (0, Chunk951288.jsx)(Chunk481060.zJl, {
+  return (0, Chunk54381.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
-    children: (0, Chunk951288.jsxs)("div", {
+    children: (0, Chunk54381.jsxs)("div", {
       className: Chunk636503.panelInner,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         className: Chunk636503.panelHeader,
         variant: "text-lg/bold",
         children: "Friend Anniversary"
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk636503.panelRow,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Reset gift message cooldown"
-        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Reset",
@@ -45,12 +45,12 @@ function m() {
             })
           }
         })]
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk636503.panelRow,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Reset badge cooldown"
-        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Reset",
@@ -60,12 +60,12 @@ function m() {
             })
           }
         })]
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk636503.panelRow,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Clear last seen friend anniversaries in All Friends"
-        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Clear",
@@ -75,12 +75,12 @@ function m() {
             })
           }
         })]
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk636503.panelRow,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Select number of friend anniversaries to generate"
-        }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+        }), (0, Chunk54381.jsx)(Chunk481060.q4e, {
           className: Chunk636503.anniversaryCountSelect,
           options: [{
             label: "None",
@@ -112,7 +112,7 @@ function m() {
             t(e)
           },
           popoutLayerContext: Chunk246992.O$
-        }), (0, Chunk951288.jsx)(Chunk755721.zx, {
+        }), (0, Chunk54381.jsx)(Chunk755721.zx, {
           look: Chunk755721.zx.Looks.LINK,
           className: Chunk636503.anniversaryCountResetButton,
           onClick: () => {

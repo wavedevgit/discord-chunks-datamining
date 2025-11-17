@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => g
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
@@ -18,14 +18,14 @@ var Chunk951288 = require("./951288.js"),
 let g = function() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), n = Chunk647438.useRef(null);
-  Chunk647438.useEffect(() => {
+  } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), n = Chunk473749.useRef(null);
+  Chunk473749.useEffect(() => {
     null == require.current && (require.current = exports)
   }, [exports]);
   let g = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.LIGHT),
     m = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.DARKER),
     _ = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.MIDNIGHT),
-    b = Chunk647438.useMemo(() => [{
+    b = Chunk473749.useMemo(() => [{
       theme: Chunk981631.BRd.LIGHT,
       label: Chunk388032.t.K2sFfo,
       color: g.hex()
@@ -38,7 +38,7 @@ let g = function() {
       label: Chunk388032.t.Do4ZJx,
       color: _.hex()
     }], [g, m, _]),
-    E = Chunk647438.useCallback(t => {
+    E = Chunk473749.useCallback(t => {
       (0, u.Yk)({
         isPersisted: true,
         analyticsLocations: e,
@@ -47,12 +47,12 @@ let g = function() {
         theme: t
       })
     }, [module]),
-    O = Chunk647438.useCallback(() => {
+    O = Chunk473749.useCallback(() => {
       null != require.current && E(require.current)
     }, [E]);
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: Chunk932720.themeSection,
-    children: (0, Chunk951288.jsxs)("div", {
+    children: (0, Chunk54381.jsxs)("div", {
       className: Chunk932720.themeSelector,
       children: [b.map(e => (0, r.jsxs)("button", {
         type: "button",
@@ -68,7 +68,7 @@ let g = function() {
           className: h.themeLabel,
           children: f.intl.string(e.label)
         })]
-      }, e.theme)), (0, Chunk951288.jsx)(Chunk481060.hU, {
+      }, e.theme)), (0, Chunk54381.jsx)(Chunk481060.hU, {
         onClick: O,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.yBZMsQ),
         icon: Chunk481060.DuK,

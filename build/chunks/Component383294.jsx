@@ -3,11 +3,11 @@
 require.d(exports, {
   default: () => Z
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk442748 = require("./442748.js"),
+  Chunk636606 = require("./636606.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
@@ -35,14 +35,14 @@ var Chunk951288 = require("./951288.js"),
 
 function R() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    [t, n] = Chunk647438.useState(!module),
-    [s, d] = Chunk647438.useState(false),
-    b = Chunk647438.useRef(null),
+    [t, n] = Chunk473749.useState(!module),
+    [s, d] = Chunk473749.useState(false),
+    b = Chunk473749.useRef(null),
     m = (0, Chunk410030.ZP)(),
     h = (0, Chunk481060.apv)(Chunk335131),
     j = Chunk507808 ? Chunk345554.Z : Chunk582425.Z,
     y = Chunk507808 ? Chunk466674.Z : Chunk88490.Z;
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     if (!exports && !module) {
       var n;
       null == (n = Chunk100527.current) || require.play()
@@ -60,12 +60,12 @@ function R() {
       friction: 26
     }
   });
-  return (0, Chunk951288.jsxs)(Chunk442748.animated.div, {
+  return (0, Chunk54381.jsxs)(Chunk636606.animated.div, {
     className: Chunk378658.videoLayers,
     style: Chunk960919,
-    children: [!Chunk120356 && (0, Chunk951288.jsx)("div", {
+    children: [!Chunk120356 && (0, Chunk54381.jsx)("div", {
       className: Chunk378658.videoPlaceholder
-    }), (0, Chunk951288.jsx)(Chunk70097.Z, {
+    }), (0, Chunk54381.jsx)(Chunk70097.Z, {
       ref: Chunk100527,
       autoPlay: false,
       loop: true,
@@ -75,11 +75,11 @@ function R() {
         [Chunk378658.hidden]: exports
       }),
       controls: false,
-      children: (0, Chunk951288.jsx)("source", {
+      children: (0, Chunk54381.jsx)("source", {
         src: Chunk82856,
         type: "video/webm"
       })
-    }), (0, Chunk951288.jsx)(Chunk70097.Z, {
+    }), (0, Chunk54381.jsx)(Chunk70097.Z, {
       autoPlay: true,
       muted: true,
       playsInline: true,
@@ -91,7 +91,7 @@ function R() {
       onEnded: () => {
         require(false)
       },
-      children: (0, Chunk951288.jsx)("source", {
+      children: (0, Chunk54381.jsx)("source", {
         src: Chunk43747,
         type: "video/webm"
       })

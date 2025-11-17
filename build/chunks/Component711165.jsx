@@ -3,8 +3,8 @@
 require.d(exports, {
   _: () => w
 }), require("./642613.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
@@ -38,26 +38,26 @@ let Z = {
 };
 
 function w() {
-  return Chunk647438.useEffect(() => {
+  return Chunk473749.useEffect(() => {
     (0, Chunk45251.kg)()
-  }, []), (0, Chunk951288.jsx)(T, {})
+  }, []), (0, Chunk54381.jsx)(T, {})
 }
 
 function T() {
   let e = (0, Chunk442837.e7)([Chunk156012.Z], () => Chunk156012.Z.getScheduledMessagesForInbox(), []),
-    t = Chunk647438.useMemo(() => Object.values(module).sort((e, t) => new Date(e.sendAtTimestamp) > new Date(t.sendAtTimestamp) ? false : 1), [module]),
+    t = Chunk473749.useMemo(() => Object.values(module).sort((e, t) => new Date(e.sendAtTimestamp) > new Date(t.sendAtTimestamp) ? false : 1), [module]),
     n = (0, Chunk442837.e7)([Chunk156012.Z], () => Chunk156012.Z.loading, []),
-    l = Chunk647438.useRef(null),
+    l = Chunk473749.useRef(null),
     o = (0, Chunk724757.Z)("scheduled-messages", Chunk120356);
-  return require ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
+  return require ? (0, Chunk54381.jsx)(Chunk481060.$jN, {
     className: Chunk909136.loadingPlaceholder
-  }) : 0 === exports.length ? (0, Chunk951288.jsx)(Chunk240126.Z, {
+  }) : 0 === exports.length ? (0, Chunk54381.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.T39,
     header: Chunk388032.intl.string(Chunk388032.t.aJQZfZ),
     tip: Chunk388032.intl.string(Chunk388032.t.rCN4pN)
-  }) : (0, Chunk951288.jsx)(Chunk91192.bG, {
+  }) : (0, Chunk54381.jsx)(Chunk91192.bG, {
     navigator: o,
-    children: (0, Chunk951288.jsx)(Chunk91192.SJ, {
+    children: (0, Chunk54381.jsx)(Chunk91192.SJ, {
       children: e => {
         var n, i, {
             ref: o
@@ -153,7 +153,7 @@ function A(e) {
     })
   })
 }
-let R = Chunk647438.memo(function(e) {
+let R = Chunk473749.memo(function(e) {
   let {
     scheduledMessage: t,
     channel: n,

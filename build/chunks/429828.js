@@ -4,11 +4,11 @@
 require.d(exports, {
   Z: () => a
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk192720 = require("./192720.js");
 
 function a() {
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     (0, Chunk192720.sE)()
   }, [])
 }

@@ -3,13 +3,13 @@
 require.d(exports, {
   default: () => ea
 }), require("./388685.js"), require("./539854.js"), require("./35282.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
-  Chunk442748 = require("./442748.js"),
+  Chunk636606 = require("./636606.js"),
   Chunk209739 = require("./209739.js"),
   u = require.n(Chunk209739),
   Chunk442837 = require("./442837.js"),
@@ -247,10 +247,10 @@ function eo(e) {
       })
     } else e2()
   }
-  let e8 = i.useCallback(e => {
+  let e7 = i.useCallback(e => {
       eD(e), null != e && (eC && (null == e ? true : e.id.startsWith("camera:")) !== true ? e1(e.id.split(":")[1]) : e1(true), eE(3), eR(true))
     }, [eC]),
-    e7 = i.useCallback(e => {
+    e8 = i.useCallback(e => {
       eq(e);
       eE(L ? 2 : 3)
     }, [L]),
@@ -392,7 +392,7 @@ function eo(e) {
                 children: (0, r.jsx)("div", {
                   className: en.modalSize,
                   children: (0, r.jsx)(V.Z, {
-                    onSelectGuild: e7
+                    onSelectGuild: e8
                   })
                 })
               }), (0, r.jsx)(h.Mi4, {
@@ -400,11 +400,11 @@ function eo(e) {
                 children: (0, r.jsx)("div", {
                   className: en.modalSize,
                   children: eC ? (0, r.jsx)(J.se, {
-                    onSourceSelect: e8,
+                    onSourceSelect: e7,
                     selectedSource: ek
                   }) : (0, r.jsx)(J.oA, {
                     selectedSource: ek,
-                    onChangeSelectedSource: e8
+                    onChangeSelectedSource: e7
                   })
                 })
               }), (0, r.jsx)(h.Mi4, {
@@ -425,7 +425,7 @@ function eo(e) {
                     onChangeSelectedResolution: e => e5(eG, e, eW),
                     onChangeSelectedPreset: e => e5(e, eF, eW),
                     onChangeSelectedChannelId: eM,
-                    onChangeSelectedSource: e8,
+                    onChangeSelectedSource: e7,
                     onChangeSource: () => tt(),
                     onChangeAudioDevice: e => eL(e),
                     onChangeGuild: () => eE(0),

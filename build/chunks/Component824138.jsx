@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => C
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
@@ -55,7 +55,7 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class I extends Chunk647438.PureComponent {
+class I extends Chunk473749.PureComponent {
   isHost() {
     let {
       currentUser: e,
@@ -64,12 +64,12 @@ class I extends Chunk647438.PureComponent {
     return module.id === (null == exports ? true : exports.id)
   }
   renderTitle() {
-    return (0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(Chunk115530.Z, {
+    return (0, Chunk54381.jsxs)("div", {
+      children: [(0, Chunk54381.jsx)(Chunk115530.Z, {
         children: this.isHost() ? Chunk388032.intl.formatToPlainString(Chunk388032.t["6UJ7mh"], {
           count: this.props.party.length
         }) : Chunk388032.intl.string(Chunk388032.t.RZufbH)
-      }), (0, Chunk951288.jsx)(Chunk345243.Z, {
+      }), (0, Chunk54381.jsx)(Chunk345243.Z, {
         children: Chunk388032.intl.string(Chunk388032.t["0ZHLIi"])
       })]
     })
@@ -78,14 +78,14 @@ class I extends Chunk647438.PureComponent {
     let {
       onStopListening: e
     } = this.props;
-    return this.isHost() ? null : (0, Chunk951288.jsx)(Chunk870569.Z, {
+    return this.isHost() ? null : (0, Chunk54381.jsx)(Chunk870569.Z, {
       tooltipText: Chunk388032.intl.string(Chunk388032.t.LeZSpz),
       onClick: module,
       icon: Chunk481060.Dio
     })
   }
   renderHelpIcon() {
-    return this.isHost() ? (0, Chunk951288.jsx)(Chunk870569.Z, {
+    return this.isHost() ? (0, Chunk54381.jsx)(Chunk870569.Z, {
       tooltipText: Chunk388032.intl.string(Chunk388032.t.U7N2Hs),
       onClick: () => {
         window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.SPOTIFY_CONNECTION), "_blank")
@@ -94,18 +94,18 @@ class I extends Chunk647438.PureComponent {
     }) : null
   }
   render() {
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk79822.listeningAlong,
-      children: [this.renderTitle(), (0, Chunk951288.jsx)(Chunk600164.Z, {
+      children: [this.renderTitle(), (0, Chunk54381.jsx)(Chunk600164.Z, {
         justify: Chunk600164.Z.Justify.END,
         className: Chunk79822.party,
-        children: (0, Chunk951288.jsx)(Chunk237583.Z, {
+        children: (0, Chunk54381.jsx)(Chunk237583.Z, {
           users: this.props.party,
           max: this.isHost() ? 5 : 4,
           renderUser: this.renderPartyMember,
           renderMoreUsers: this.renderPartyMemberOverflow
         })
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk79822.icons,
         children: [this.renderHelpIcon(), this.renderStopListeningButton()]
       })]

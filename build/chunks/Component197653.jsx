@@ -6,9 +6,9 @@ require.d(exports, {
   am: () => o,
   e4: () => c
 }), require("./388685.js"), require("./415506.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js");
-let a = Chunk647438.createContext(null),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js");
+let a = Chunk473749.createContext(null),
   o = {
     Root(e) {
       let {
@@ -53,7 +53,7 @@ let a = Chunk647438.createContext(null),
   };
 
 function s() {
-  let e = Chunk647438.useContext(a);
+  let e = Chunk473749.useContext(a);
   if (null == module) throw Error("Cannot use the ComponentLayoutLimitContext system when not within the context");
   return module
 }
@@ -68,15 +68,15 @@ function l(e) {
 
 function c() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
-    t = Chunk647438.useRef(null),
-    [n, r] = Chunk647438.useState(0),
-    [a, o] = Chunk647438.useState(0);
-  return Chunk647438.useLayoutEffect(() => {
+    t = Chunk473749.useRef(null),
+    [n, r] = Chunk473749.useState(0),
+    [a, o] = Chunk473749.useState(0);
+  return Chunk473749.useLayoutEffect(() => {
     if (null == exports.current) return;
     let n = new ResizeObserver(() => {
       let n = exports.current.getBoundingClientRect().width,
         i = getComputedStyle(exports.current);
-      Chunk951288(require + (parseFloat(Chunk647438.marginLeft) + parseFloat(Chunk647438.marginRight))), module && o(require - (parseFloat(Chunk647438.paddingLeft) + parseFloat(Chunk647438.paddingRight) + parseFloat(Chunk647438.borderLeftWidth) + parseFloat(Chunk647438.borderRightWidth)))
+      Chunk54381(require + (parseFloat(Chunk473749.marginLeft) + parseFloat(Chunk473749.marginRight))), module && o(require - (parseFloat(Chunk473749.paddingLeft) + parseFloat(Chunk473749.paddingRight) + parseFloat(Chunk473749.borderLeftWidth) + parseFloat(Chunk473749.borderRightWidth)))
     });
     return require.observe(exports.current), () => require.disconnect()
   }, [module]), [exports, require, a]

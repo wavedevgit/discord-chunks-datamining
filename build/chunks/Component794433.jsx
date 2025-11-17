@@ -5,8 +5,8 @@ require.d(exports, {
   F: () => h,
   Z: () => g
 }), require("./539854.js"), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -43,7 +43,7 @@ let p = Object.freeze({
 var h = function(e) {
   return e.MEMBER = "MEMBER", e.ROLE = "ROLE", e.CHANNEL = "CHANNEL", e.USER = "USER", e
 }({});
-class m extends(r = Chunk647438.Component) {
+class m extends(r = Chunk473749.Component) {
   componentDidMount() {
     let e = this.containerRef.current;
     null != module && (this.previousHeight = module.offsetHeight)
@@ -62,7 +62,7 @@ class m extends(r = Chunk647438.Component) {
       n = exports - this.previousHeight;
     if (0 !== require) {
       var r, i;
-      this.previousHeight = exports, null == (r = (i = this.props).onHeightChange) || r.call(Chunk951288, require)
+      this.previousHeight = exports, null == (r = (i = this.props).onHeightChange) || r.call(Chunk54381, require)
     }
   }
   handleKeyDownGrid(e) {
@@ -188,10 +188,10 @@ class m extends(r = Chunk647438.Component) {
         className: d.close,
         "aria-label": u.intl.string(u.t.N86XcP)
       })]
-    }, t))))), (0, Chunk951288.jsx)(Chunk481060.tEY, {
+    }, t))))), (0, Chunk54381.jsx)(Chunk481060.tEY, {
       focusTarget: this.ref,
       ringTarget: this.containerRef,
-      children: (0, Chunk951288.jsx)(Chunk481060.f6W, {
+      children: (0, Chunk54381.jsx)(Chunk481060.f6W, {
         theme: r,
         children: r => (0, i.jsx)("div", {
           ref: this.containerRef,

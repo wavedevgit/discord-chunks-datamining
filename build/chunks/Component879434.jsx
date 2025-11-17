@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => f
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
@@ -85,15 +85,15 @@ let g = e => {
     })
   },
   f = () => {
-    let [e, t] = Chunk647438.useState(0);
-    return (0, Chunk951288.jsxs)(Chunk793030.zJl, {
+    let [e, t] = Chunk473749.useState(0);
+    return (0, Chunk54381.jsxs)(Chunk793030.zJl, {
       className: Chunk511130.wrapper,
-      children: [(0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk511130.nav,
-        children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
+        children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
           variant: "heading-xxl/medium",
           children: "Collectibles DevTools"
-        }), 0 !== module && (0, Chunk951288.jsx)(Chunk793030.zxk, {
+        }), 0 !== module && (0, Chunk54381.jsx)(Chunk793030.zxk, {
           variant: "primary",
           onClick: () => exports(0),
           text: "Back"
@@ -101,13 +101,13 @@ let g = e => {
       }), (() => {
         switch (module) {
           case 1:
-            return (0, Chunk951288.jsx)(Chunk538645.Z, {});
+            return (0, Chunk54381.jsx)(Chunk538645.Z, {});
           case 2:
-            return (0, Chunk951288.jsx)(Chunk715495.Z, {});
+            return (0, Chunk54381.jsx)(Chunk715495.Z, {});
           case 3:
-            return (0, Chunk951288.jsx)(Chunk383036.Z, {});
+            return (0, Chunk54381.jsx)(Chunk383036.Z, {});
           default:
-            return (0, Chunk951288.jsx)(g, {
+            return (0, Chunk54381.jsx)(g, {
               setTab: exports
             })
         }

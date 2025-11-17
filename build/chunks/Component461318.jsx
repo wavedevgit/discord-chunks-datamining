@@ -4,14 +4,14 @@
 require.d(exports, {
   De: () => a
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk282003 = require("./282003.jsx");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
+var Chunk186318 = require("./186318.jsx");
 let a = {
   title: "Nitro Components",
   stories: [{
     name: "Cancellation Flow",
-    component: () => (0, Chunk951288.jsx)(Chunk282003.k, {}),
+    component: () => (0, Chunk54381.jsx)(Chunk186318.k, {}),
     id: "cancellation-flow",
     controls: {}
   }, {

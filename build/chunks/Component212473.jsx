@@ -3,7 +3,7 @@
 require.d(exports, {
   KL: () => d
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk657707 = require("./657707.js"),
   Chunk703288 = require("./703288.jsx"),
   Chunk574755 = require("./574755.jsx"),
@@ -14,11 +14,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.x1)(Chunk313789.n.CLIPS_PANE, {
     buildLayout: () => [],
-    render: () => (0, Chunk951288.jsx)(Chunk574755.Z, {})
+    render: () => (0, Chunk54381.jsx)(Chunk574755.Z, {})
   }),
   T = (0, Chunk509613.wf)(Chunk313789.n.CLIPS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.z2jK6X),
-    useBadge: () => (0, Chunk951288.jsx)(Chunk703288.Z, {}),
+    useBadge: () => (0, Chunk54381.jsx)(Chunk703288.Z, {}),
     buildLayout: () => [S]
   }),
   d = (0, Chunk509613.m7)(Chunk313789.n.CLIPS_SIDEBAR_ITEM, {

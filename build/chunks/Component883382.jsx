@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => g
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk924628 = require("./924628.js"),
   Chunk915009 = require("./915009.js"),
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
 
 function g() {
   let e = (0, Chunk442837.cj)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)),
-    [t, n] = Chunk647438.useState(module),
+    [t, n] = Chunk473749.useState(module),
     g = (0, Chunk915009.LN)(),
     E = e => {
       e ? (0, o.g)([p.pjP.PERSONALIZATION], []).catch(f.S).then(() => n(true)) : (0, f.V)({
@@ -34,9 +34,9 @@ function g() {
         body: h.intl.string(h.t.gJvDDh)
       })
     };
-  return (0, Chunk951288.jsx)(Chunk838436.U, {
+  return (0, Chunk54381.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DATA_PERSONALIZE_V2,
-    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
+    children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk388032.t.MNKzyg),
       note: Chunk388032.intl.format(Chunk388032.t["eQL/Mr"], {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DATA_USED_FOR_RECOMMENDED)

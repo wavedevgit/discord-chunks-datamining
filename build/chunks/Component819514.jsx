@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => M
 }), require("./997841.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
@@ -60,7 +60,7 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class w extends Chunk647438.PureComponent {
+class w extends Chunk473749.PureComponent {
   render() {
     let e, t, {
         report: n,
@@ -89,22 +89,22 @@ class w extends Chunk647438.PureComponent {
         return r
       }(Chunk120356, ["channel", "message", "showContextMenuHint", "moderatorReportData"]),
       f = s.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && (0, Chunk630388.yE)(Chunk332148.flags, Chunk981631.iLy.CROSSPOSTED);
-    Chunk904245 && (e = (0, Chunk951288.jsx)(Chunk576855.Z, {
+    Chunk904245 && (e = (0, Chunk54381.jsx)(Chunk576855.Z, {
       className: Chunk625221.spacingTop,
       children: Chunk388032.intl.format(Chunk388032.t.IxY7E6, {})
-    })), (0, Chunk970257.vc)(Chunk332148) && (t = (0, Chunk951288.jsx)("div", {
+    })), (0, Chunk970257.vc)(Chunk332148) && (t = (0, Chunk54381.jsx)("div", {
       className: Chunk625221.spacingTop,
-      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.x0jzo9),
         checked: require,
         onChange: this.handleToggleReport
       })
     }));
     let m = Chunk501517 ? Chunk388032.intl.string(Chunk388032.t["2kHABX"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS4),
-      b = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)("div", {
+      b = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [(0, Chunk54381.jsx)("div", {
           className: Chunk625221.message,
-          children: (0, Chunk951288.jsx)(Chunk294218.Z, {
+          children: (0, Chunk54381.jsx)(Chunk294218.Z, {
             channel: s,
             message: Chunk332148,
             disableInteraction: true
@@ -115,9 +115,9 @@ class w extends Chunk647438.PureComponent {
       let {
         isFlagResolved: e
       } = Chunk933557;
-      return (0, Chunk951288.jsx)(Chunk372900.Z.Provider, {
+      return (0, Chunk54381.jsx)(Chunk372900.Z.Provider, {
         value: s.guild_id,
-        children: (0, Chunk951288.jsx)(Chunk793030.Modal, _(P({
+        children: (0, Chunk54381.jsx)(Chunk793030.Modal, _(P({
           title: Chunk388032.intl.string(Chunk388032.t.MWMcg7),
           subtitle: Chunk699516,
           actions: [{
@@ -125,8 +125,8 @@ class w extends Chunk647438.PureComponent {
             text: Chunk388032.intl.string(Chunk388032.t.oyYWHE),
             onClick: this.handleDelete
           }],
-          actionBarInput: module ? true : (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
-            checked: Chunk647438,
+          actionBarInput: module ? true : (0, Chunk54381.jsx)(Chunk481060.Checkbox, {
+            checked: Chunk473749,
             label: Chunk388032.intl.string(Chunk797013.default["8yIKem"]),
             onChange: e => this.handleToggleResolveFlag(e)
           })
@@ -135,9 +135,9 @@ class w extends Chunk647438.PureComponent {
         }))
       })
     }
-    return (0, Chunk951288.jsx)(Chunk372900.Z.Provider, {
+    return (0, Chunk54381.jsx)(Chunk372900.Z.Provider, {
       value: s.guild_id,
-      children: (0, Chunk951288.jsx)(Chunk793030.Modal, {
+      children: (0, Chunk54381.jsx)(Chunk793030.Modal, {
         title: Chunk501517 ? Chunk388032.intl.string(Chunk388032.t.aIz1oV) : Chunk388032.intl.string(Chunk388032.t.MWMcg7),
         subtitle: Chunk699516,
         actions: [{

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => V
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
   Chunk317381 = require("./317381.js"),
@@ -91,8 +91,8 @@ function w() {
     return {
       channelType: exports,
       guildId: require,
-      connected: Chunk647438 === Chunk981631.hes.RTC_CONNECTED,
-      connectHasStarted: !Chunk951288 && Chunk647438 !== Chunk981631.hes.DISCONNECTED || Chunk647438 === Chunk981631.hes.RTC_CONNECTED,
+      connected: Chunk473749 === Chunk981631.hes.RTC_CONNECTED,
+      connectHasStarted: !Chunk54381 && Chunk473749 !== Chunk981631.hes.DISCONNECTED || Chunk473749 === Chunk981631.hes.RTC_CONNECTED,
       awaitingRemote: null != Chunk258609.default.getAwaitingRemoteSessionInfo(),
       connectedRemote: null != Chunk258609.default.getRemoteSessionId()
     }
@@ -177,17 +177,17 @@ function G() {
       s = Chunk199902.Z.getAllActiveStreams();
     if (null != require) {
       let r = Chunk592125.Z.getChannel(require);
-      null != Chunk951288 && (e = Chunk951288.type, t = Chunk938475.ZP.countVoiceStatesForChannel(Chunk951288.id) - !!Chunk979651.Z.isInChannel(Chunk951288.id), i = Chunk199902.Z.getAllApplicationStreamsForChannel(Chunk951288.id).map(e => e.ownerId))
+      null != Chunk54381 && (e = Chunk54381.type, t = Chunk938475.ZP.countVoiceStatesForChannel(Chunk54381.id) - !!Chunk979651.Z.isInChannel(Chunk54381.id), i = Chunk199902.Z.getAllApplicationStreamsForChannel(Chunk54381.id).map(e => e.ownerId))
     }
     let o = null;
     return (null == (o = 1 === Chunk317381.length ? Chunk317381[0] : Chunk199902.Z.getCurrentUserActiveStream()) ? true : Chunk16609.state) === Chunk981631.jm8.CONNECTING && (o = null), null != Chunk16609 && (l = (0, Chunk569545.V9)(Chunk16609), a = Chunk199902.Z.getViewerIds(Chunk392711).filter(e => e !== r).length), {
       channelType: module,
       voiceChannelId: require,
       voiceChannelUserCount: exports,
-      streamingUserIds: Chunk647438,
+      streamingUserIds: Chunk473749,
       singleActiveStreamKey: Chunk392711,
       singleActiveStreamViewerCount: Chunk442837,
-      currentUserId: Chunk951288,
+      currentUserId: Chunk54381,
       allActiveStreams: Chunk317381
     }
   }, (e, t) => {
@@ -230,12 +230,12 @@ function B() {
       i = Chunk314897.default.getId(),
       l = (0, Chunk823379.lm)(exports) ? Chunk317381.ZP.getEmbeddedActivitiesForChannel(exports) : Chunk317381.i6,
       a = (0, Chunk823379.lm)(module) ? Chunk317381.ZP.getEmbeddedActivitiesForChannel(module) : Chunk317381.i6,
-      u = (0, Chunk823379.lm)(Chunk951288) ? Chunk317381.ZP.getEmbeddedActivitiesForChannel(Chunk951288) : Chunk317381.i6,
+      u = (0, Chunk823379.lm)(Chunk54381) ? Chunk317381.ZP.getEmbeddedActivitiesForChannel(Chunk54381) : Chunk317381.i6,
       d = (0, Chunk823379.lm)(require) ? Chunk317381.ZP.getSelfEmbeddedActivityForLocation(require) : null;
     return {
       connectedActivityLocation: require,
       voiceChannelId: module,
-      currentUserId: Chunk647438,
+      currentUserId: Chunk473749,
       channelActivities: Chunk392711,
       connectedChannelActivities: Chunk258609,
       userConnectedActivity: Chunk569545,
@@ -286,7 +286,7 @@ function H() {
 }
 
 function V() {
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(A, {}), (0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(w, {}), (0, Chunk951288.jsx)(L, {}), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(G, {}), (0, Chunk951288.jsx)(U, {}), (0, Chunk951288.jsx)(B, {}), (0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(M, {}), (0, Chunk951288.jsx)(H, {})]
+  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    children: [(0, Chunk54381.jsx)(A, {}), (0, Chunk54381.jsx)(Z, {}), (0, Chunk54381.jsx)(w, {}), (0, Chunk54381.jsx)(L, {}), (0, Chunk54381.jsx)(D, {}), (0, Chunk54381.jsx)(k, {}), (0, Chunk54381.jsx)(G, {}), (0, Chunk54381.jsx)(U, {}), (0, Chunk54381.jsx)(B, {}), (0, Chunk54381.jsx)(R, {}), (0, Chunk54381.jsx)(M, {}), (0, Chunk54381.jsx)(H, {})]
   })
 }

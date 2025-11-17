@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => s
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk873546 = require("./873546.js"),
   Chunk2109 = require("./2109.js"),
   Chunk124566 = require("./124566.js");
@@ -15,5 +15,5 @@ function s() {
   } = Chunk2109.ZP.useConfig({
     location: "useGiftingPromotionConfig"
   });
-  return Chunk647438.useMemo(() => Chunk873546.tq || Chunk873546.Em ? null : module ? Chunk124566.D9 : null, [module])
+  return Chunk473749.useMemo(() => Chunk873546.tq || Chunk873546.Em ? null : module ? Chunk124566.D9 : null, [module])
 }

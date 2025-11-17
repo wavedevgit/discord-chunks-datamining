@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => s
 }), require("./539854.js"), require("./583741.js"), require("./388685.js");
-var r, Chunk647438 = require("./647438.js"),
+var r, Chunk473749 = require("./473749.js"),
   Chunk846519 = require("./846519.js");
 
 function o(e, t, n) {
@@ -14,7 +14,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a extends(r = Chunk647438.Component) {
+class a extends(r = Chunk473749.Component) {
   componentDidMount() {
     this.update(), this._interval.start(this.props.updateInterval, this.update)
   }

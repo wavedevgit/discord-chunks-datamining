@@ -3,8 +3,8 @@
 require.d(exports, {
   S: () => g
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -16,15 +16,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk78480 = require("./78480.js");
 
 function h() {
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: o()(Chunk132789.row, Chunk132789.rowGuildName),
-    children: (0, Chunk951288.jsx)("span", {
+    children: (0, Chunk54381.jsx)("span", {
       className: o()(Chunk132789.guildNameText, Chunk132789.guildNameTextLimitedSize, Chunk448213.tooltipText),
       children: Chunk388032.intl.string(Chunk388032.t["4tSWQg"])
     })
   })
 }
-let g = Chunk647438.memo(function(e) {
+let g = Chunk473749.memo(function(e) {
   let {
     "aria-label": t = false,
     children: n

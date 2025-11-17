@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => G
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -120,65 +120,65 @@ function G() {
     }),
     ed = (null == V || null == (n = V.widgets) ? true : require.some(e => A.Ki.includes(e.type))) === true,
     ef = eu || ed,
-    e_ = () => en ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk134795.Z, {
+    e_ = () => en ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsx)(Chunk134795.Z, {
         showRemoveBannerButton: ei,
         errors: $.banner,
         onBannerChange: Chunk350327.g_,
         forcedDivider: true
-      }, "banner"), (0, Chunk951288.jsx)(Chunk451392.Z, {
+      }, "banner"), (0, Chunk54381.jsx)(Chunk451392.Z, {
         user: F,
         pendingAvatarSrc: ee,
         pendingColors: X,
         onThemeColorsChange: Chunk350327.z5,
         forcedDivider: true
       })]
-    }) : (0, Chunk951288.jsx)(Chunk610966.Z, {
+    }) : (0, Chunk54381.jsx)(Chunk610966.Z, {
       user: F,
       savedUserColor: null == V ? true : V.accentColor,
       pendingColor: q,
       setPendingAccentColor: Chunk350327.CM
     }, "color");
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk436360.sectionsContainer,
-    children: [(0, Chunk951288.jsx)(Chunk349177.Z, {
+    children: [(0, Chunk54381.jsx)(Chunk349177.Z, {
       placeholder: F.username,
       errors: es,
       currentGlobalName: F.globalName,
       pendingGlobalName: Y,
       onGlobalNameChange: Chunk809206.W0,
       user: F
-    }), (0, Chunk951288.jsx)(Chunk906364.Z, {
+    }), (0, Chunk54381.jsx)(Chunk906364.Z, {
       sectionTitle: Chunk388032.intl.string(Chunk388032.t["+T3RI/"]),
       errors: $.pronouns,
       onPronounsChange: Chunk350327.ID,
       pendingPronouns: z,
       currentPronouns: null != (B = null == V ? true : V.pronouns) ? B : ""
-    }, "pronouns"), ef && (0, Chunk951288.jsx)(Chunk9617.Z, {}), (0, Chunk951288.jsx)(Chunk532432.Z, {
+    }, "pronouns"), ef && (0, Chunk54381.jsx)(Chunk9617.Z, {}), (0, Chunk54381.jsx)(Chunk532432.Z, {
       onAvatarChange: Chunk809206.I5,
       showRemoveAvatarButton: er,
       errors: $.avatar,
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.lqaIxI),
       forcedDivider: true
-    }, "avatar"), (0, Chunk951288.jsx)(Chunk433411.Z, {
+    }, "avatar"), (0, Chunk54381.jsx)(Chunk433411.Z, {
       user: F,
       sectionTitle: Chunk388032.intl.string(Chunk388032.t["7v0T9P"])
-    }, "decoration"), (0, Chunk951288.jsx)(Chunk818420.Z, {
+    }, "decoration"), (0, Chunk54381.jsx)(Chunk818420.Z, {
       user: F
-    }), (0, Chunk951288.jsx)(Chunk513901.Z, {
+    }), (0, Chunk54381.jsx)(Chunk513901.Z, {
       user: F,
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.wR5wOo)
-    }, "effect"), e_(), (0, Chunk951288.jsx)(Chunk126631.Z, {
+    }, "effect"), e_(), (0, Chunk54381.jsx)(Chunk126631.Z, {
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.NepzEw),
       errors: el,
       onBioChange: e => (0, d.xQ)(e, null == V ? true : V.bio),
       pendingBio: K,
       currentBio: null != (Z = null == V ? true : V.bio) ? Z : ""
-    }, "bio"), ec.length > 0 && (0, Chunk951288.jsx)(Chunk74469.Z, {
+    }, "bio"), ec.length > 0 && (0, Chunk54381.jsx)(Chunk74469.Z, {
       availablePrimaryGuilds: ec,
       pendingPrimaryGuildId: J,
       onChange: e => (0, s.s4)(e)
-    }), null != eo && (0, Chunk951288.jsx)(Chunk872736.Z, {
+    }), null != eo && (0, Chunk54381.jsx)(Chunk872736.Z, {
       legacyUsername: eo,
       pendingLegacyUsernameDisabled: Q
     }, "legacy_username")]

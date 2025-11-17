@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => G
 }), require("./539854.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
@@ -84,17 +84,17 @@ let N = (0, Chunk663993.Un)({
     name: "CollectiblesShop"
   }),
   Z = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("70018"), require.e("36599"), require.e("7654"), require.e("76692"), require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("86736"), require.e("6850"), require.e("58227"), require.e("44686"), require.e("384"), require.e("95140")]).then(require.bind(require, 994763)),
+    createPromise: () => Promise.all([require.e("70363"), require.e("36599"), require.e("7654"), require.e("76692"), require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("86736"), require.e("6850"), require.e("58227"), require.e("44686"), require.e("384"), require.e("95140")]).then(require.bind(require, 994763)),
     webpackId: 994763,
     name: "GuildSettings"
   }),
   w = {
-    [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk951288.jsx)(N, {}),
-    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(x, {}),
-    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(Z, {}),
-    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(A, {}),
-    [Chunk981631.S9g.COMPONENT_PLAYGROUND]: () => (0, Chunk951288.jsx)(j, {}),
-    [Chunk981631.S9g.CHECKPOINT]: () => (0, Chunk951288.jsx)(P, {})
+    [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk54381.jsx)(N, {}),
+    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk54381.jsx)(x, {}),
+    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk54381.jsx)(Z, {}),
+    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk54381.jsx)(A, {}),
+    [Chunk981631.S9g.COMPONENT_PLAYGROUND]: () => (0, Chunk54381.jsx)(j, {}),
+    [Chunk981631.S9g.CHECKPOINT]: () => (0, Chunk54381.jsx)(P, {})
   },
   L = "SHOWN",
   R = "HIDDEN",
@@ -104,9 +104,9 @@ let N = (0, Chunk663993.Un)({
   };
 
 function M() {
-  return Chunk647438.useEffect(() => (Chunk714338.Z.enable(), Chunk714338.Z.enableTemp(Chunk134616.u), () => Chunk714338.Z.disableTemp()), []), null
+  return Chunk473749.useEffect(() => (Chunk714338.Z.enable(), Chunk714338.Z.enableTemp(Chunk134616.u), () => Chunk714338.Z.disableTemp()), []), null
 }
-class k extends(r = Chunk647438.PureComponent) {
+class k extends(r = Chunk473749.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.mode ? {
       animating: true,
@@ -203,7 +203,7 @@ class k extends(r = Chunk647438.PureComponent) {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(exports, ["name", "mode", "children", "baseLayer"]), u = r === R, p = module || Chunk215569 ? this.getAnimatedStyle() : null, f = !Chunk215569 && !Chunk120356, h = (0, Chunk951288.jsx)(Chunk748780.Z.div, T(S({
+    }(exports, ["name", "mode", "children", "baseLayer"]), u = r === R, p = module || Chunk215569 ? this.getAnimatedStyle() : null, f = !Chunk215569 && !Chunk120356, h = (0, Chunk54381.jsx)(Chunk748780.Z.div, T(S({
       ref: e => this.containerRef.current = null != e ? e.componentRef : true,
       "data-layer": null != require ? require : "base",
       "aria-hidden": Chunk215569,
@@ -232,9 +232,9 @@ class k extends(r = Chunk647438.PureComponent) {
       }),
       style: Chunk37234
     }, Chunk442837), {
-      children: Chunk647438
+      children: Chunk473749
     }));
-    return Chunk120356 ? Chunk714338 : (0, Chunk951288.jsx)(Chunk481060.EqS, {
+    return Chunk120356 ? Chunk714338 : (0, Chunk54381.jsx)(Chunk481060.EqS, {
       containerRef: this.containerRef,
       children: Chunk714338
     })
@@ -272,7 +272,7 @@ class k extends(r = Chunk647438.PureComponent) {
 C(k, "defaultProps", {
   baseLayer: false
 }), C(k, "contextType", Chunk481060.Sfi);
-class U extends Chunk647438.PureComponent {
+class U extends Chunk473749.PureComponent {
   componentDidMount() {
     Chunk585483.S.subscribe(Chunk981631.CkL.LAYER_POP_ESCAPE_KEY, Chunk37234.xf)
   }
@@ -287,11 +287,11 @@ class U extends Chunk647438.PureComponent {
     } = this.props, {
       length: r
     } = exports, l = [];
-    return Chunk647438.push((0, Chunk951288.jsx)(k, {
+    return Chunk473749.push((0, Chunk54381.jsx)(k, {
       mode: 0 !== r || require ? R : L,
       baseLayer: true,
       children: module
-    }, "layer-base")), exports.forEach((e, t) => l.push(this.renderComponent(e, t, r))), Chunk647438
+    }, "layer-base")), exports.forEach((e, t) => l.push(this.renderComponent(e, t, r))), Chunk473749
   }
   renderComponent(e, t, n) {
     let r;
@@ -302,7 +302,7 @@ class U extends Chunk647438.PureComponent {
     }, "layer-".concat(t))
   }
   renderArtisanalHack() {
-    return (0, Chunk951288.jsx)(Chunk481060.f6W, {
+    return (0, Chunk54381.jsx)(Chunk481060.f6W, {
       theme: this.props.sidebarTheme,
       children: e => (0, i.jsx)("div", {
         className: s()(I.bg, e)
@@ -310,8 +310,8 @@ class U extends Chunk647438.PureComponent {
     })
   }
   render() {
-    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [this.renderArtisanalHack(), (0, Chunk951288.jsx)(Chunk215569.W, {
+    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [this.renderArtisanalHack(), (0, Chunk54381.jsx)(Chunk215569.W, {
         component: "div",
         className: s()(Chunk256076.layers, this.props.className),
         children: this.renderLayers()

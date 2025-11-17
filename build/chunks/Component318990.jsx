@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => _
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
@@ -47,19 +47,19 @@ function _() {
       animateOnHover: true
     }),
     _ = e => null != e.globalName ? e.globalName : e.username,
-    p = Chunk647438.useMemo(() => module.length >= 2 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.c7ETJH, {
+    p = Chunk473749.useMemo(() => module.length >= 2 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.c7ETJH, {
       username: _(module[0])
     }) : 1 === module.length ? Chunk388032.intl.formatToPlainString(Chunk388032.t.dpjXPL, {
       username: _(module[0])
     }) : "", [module]);
-  return 0 === module.length ? null : (0, Chunk951288.jsxs)("div", {
+  return 0 === module.length ? null : (0, Chunk54381.jsxs)("div", {
     className: Chunk880406.container,
-    children: [(0, Chunk951288.jsx)(Chunk481060.qEK, f({
+    children: [(0, Chunk54381.jsx)(Chunk481060.qEK, f({
       className: Chunk880406.__invalid_icon,
       src: require,
       "aria-label": exports.username,
       size: Chunk481060.EFr.SIZE_24
-    }, d)), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }, d)), (0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk880406.text,
       variant: "text-sm/normal",
       color: "always-white",

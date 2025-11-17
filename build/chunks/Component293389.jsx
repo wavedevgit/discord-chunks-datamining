@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => Y
 }), require("./388685.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -389,14 +389,14 @@ function Z(e) {
 }
 
 function F() {
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: o()(Chunk149715.flexCenter, Chunk740508.notDetected, Chunk740508.activeGame),
-    children: (0, Chunk951288.jsxs)("div", {
+    children: (0, Chunk54381.jsxs)("div", {
       className: o()(Chunk740508.gameNameLastPlayed, Chunk149715.vertical),
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: Chunk740508.gameName,
         children: Chunk388032.intl.string(Chunk388032.t.H68X9x)
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk740508.lastPlayed,
         children: Chunk388032.intl.string(Chunk388032.t.T5Ilmw)
       })]

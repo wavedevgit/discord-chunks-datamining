@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => _
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
   r = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -25,7 +25,7 @@ let _ = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_SCREENSHOT_KEYBIND, {
     let t = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
       e = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_SCREENSHOT, true));
     r()(null != module, "Save clip keybind unset"), r()(null != exports, "Save screenshot keybind unset");
-    let n = Chunk647438.useCallback(t => {
+    let n = Chunk473749.useCallback(t => {
       var n, i;
       o.Z.setKeybind((n = function(t) {
         for (var e = 1; e < arguments.length; e++) {
@@ -57,13 +57,13 @@ let _ = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_SCREENSHOT_KEYBIND, {
         Object.defineProperty(n, t, Object.getOwnPropertyDescriptor(i, t))
       }), n))
     }, [exports]);
-    return (0, Chunk951288.jsx)(Chunk481060.gNt, {
+    return (0, Chunk54381.jsx)(Chunk481060.gNt, {
       label: Chunk388032.intl.string(Chunk388032.t["0U/hj7"]),
       description: Chunk388032.intl.string(Chunk388032.t["5zxkdo"]),
       layout: "horizontal",
-      children: (0, Chunk951288.jsx)("div", {
+      children: (0, Chunk54381.jsx)("div", {
         className: Chunk431220.keyRecorder,
-        children: (0, Chunk951288.jsx)(Chunk825209.Z, {
+        children: (0, Chunk54381.jsx)(Chunk825209.Z, {
           defaultValue: exports.shortcut,
           onChange: require
         })

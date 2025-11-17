@@ -10,7 +10,7 @@ require.d(exports, {
   wO: () => y,
   zp: () => m
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk979554 = require("./979554.js"),
   Chunk399606 = require("./399606.js"),
   Chunk100527 = require("./100527.js"),
@@ -23,12 +23,12 @@ var Chunk647438 = require("./647438.js"),
   Chunk619899 = require("./619899.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js");
-let m = Chunk647438.createContext({
+let m = Chunk473749.createContext({
   flattenProductVariants: false
 });
 
 function g() {
-  return Chunk647438.useContext(m).flattenProductVariants
+  return Chunk473749.useContext(m).flattenProductVariants
 }
 var E = function(e) {
     return e.NONE = "none", e.NEW = "new", e.ORBS_EXCLUSIVE = "orbs_exclusive", e.LIMITED_TIME = "limited_time", e.NITRO_EXCLUSIVE = "nitro_exclusive", e

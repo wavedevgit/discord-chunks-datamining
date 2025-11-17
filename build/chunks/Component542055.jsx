@@ -4,8 +4,8 @@ require.d(exports, {
   U: () => O,
   default: () => x
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk352065 = require("./352065.jsx"),
@@ -52,7 +52,7 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = Chunk647438.createContext({
+let O = Chunk473749.createContext({
   selectedClipIds: new Set,
   toggleClipSelection: () => {},
   clearSelection: () => {},

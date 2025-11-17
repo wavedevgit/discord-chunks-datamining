@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => l
 }), require("./388685.js"), require("./35282.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js");
 
 function o(e, t, n) {
@@ -16,15 +16,15 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends Chunk647438.PureComponent {
+class s extends Chunk473749.PureComponent {
   render() {
     let {
       text: e,
       lastItem: t,
       className: n
     } = this.props;
-    return (0, Chunk951288.jsxs)("span", {
-      children: [(0, Chunk951288.jsx)(Chunk481060.Anchor, {
+    return (0, Chunk54381.jsxs)("span", {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Anchor, {
         className: require,
         onClick: this.handleClick,
         children: module
@@ -41,7 +41,7 @@ class s extends Chunk647438.PureComponent {
     })
   }
 }
-class l extends Chunk647438.PureComponent {
+class l extends Chunk473749.PureComponent {
   render() {
     let e = this.props.artists.split("; ");
     if (!this.props.canOpen) return module.join(", ");

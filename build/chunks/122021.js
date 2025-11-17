@@ -6,7 +6,7 @@ require.d(exports, {
   fq: () => E,
   rR: () => b
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -44,11 +44,11 @@ function E() {
     t = g({
       forUserProfile: false
     }),
-    n = Chunk647438.useMemo(() => {
+    n = Chunk473749.useMemo(() => {
       let t = new Set;
       return module.forEach(e => t.add(e.type)), exports
     }, [module]);
-  return Chunk647438.useMemo(() => a().sortBy(Chunk726542.Z.filter(exports), [e => {
+  return Chunk473749.useMemo(() => a().sortBy(Chunk726542.Z.filter(exports), [e => {
     var t;
     return !(h.has(e.type) && Date.now() < (null != (t = h.get(e.type)) ? t : 0) + m)
   }, e => n.has(e.type), e => e.hasMetadata, e => !f.vbS.has(e.type), e => e.name]), [require, exports])

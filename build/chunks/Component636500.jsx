@@ -3,19 +3,19 @@
 require.d(exports, {
   Z: () => s
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk649157 = require("./649157.jsx"),
   Chunk451429 = require("./451429.js");
 
 function s() {
-  return (0, Chunk951288.jsx)(Chunk481060.zJl, {
+  return (0, Chunk54381.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
-    children: (0, Chunk951288.jsx)("div", {
+    children: (0, Chunk54381.jsx)("div", {
       style: {
         padding: "var(--space-8)"
       },
-      children: (0, Chunk951288.jsx)(Chunk649157.Z, {})
+      children: (0, Chunk54381.jsx)(Chunk649157.Z, {})
     })
   })
 }

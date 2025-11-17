@@ -3,7 +3,7 @@
 require.d(exports, {
   d: () => d
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk224706 = require("./224706.js"),
   Chunk515970 = require("./515970.js"),
@@ -12,10 +12,10 @@ var Chunk647438 = require("./647438.js"),
 function d() {
   let t = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getFetchState()),
     e = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()),
-    i = (0, Chunk647438.useMemo)(() => null != exports.applications ? exports.applications.applications.map(t => t.game.id) : [], [exports.applications]);
-  (0, Chunk647438.useEffect)(() => {
+    i = (0, Chunk473749.useMemo)(() => null != exports.applications ? exports.applications.applications.map(t => t.game.id) : [], [exports.applications]);
+  (0, Chunk473749.useEffect)(() => {
     module === Chunk5888.p.INIT && (0, Chunk515970.p)()
-  }, [module]), (0, Chunk647438.useEffect)(() => {
+  }, [module]), (0, Chunk473749.useEffect)(() => {
     Chunk224706.Z.getDetectableGamesSupplemental(require)
   }, [require])
 }

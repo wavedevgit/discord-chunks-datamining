@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => h
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
@@ -22,19 +22,19 @@ var Chunk120356 = require("./120356.js"),
   Chunk87819 = require("./87819.js");
 
 function N() {
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk87819.header,
-    children: [(0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk87819.headerTitle,
-      children: [(0, Chunk951288.jsx)(Chunk777288.Z, {
+      children: [(0, Chunk54381.jsx)(Chunk777288.Z, {
         width: 16,
         height: 16
-      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.cf5lgh)
       })]
-    }), (0, Chunk951288.jsx)("div", {
-      children: (0, Chunk951288.jsx)(Chunk481060.M2$, {
+    }), (0, Chunk54381.jsx)("div", {
+      children: (0, Chunk54381.jsx)(Chunk481060.M2$, {
         shortcut: "esc",
         keyClassName: Chunk87819.keyComboInner,
         className: Chunk87819.keyComboContainer

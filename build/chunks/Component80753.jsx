@@ -3,8 +3,8 @@
 require.r(exports), require.d(exports, {
   default: () => p
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk377171 = require("./377171.js"),
@@ -14,14 +14,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk915312 = require("./915312.js");
 
 function p() {
-  let [e, t] = Chunk647438.useState(false), i = (0, Chunk915312.LL)(), {
+  let [e, t] = Chunk473749.useState(false), i = (0, Chunk915312.LL)(), {
     reporting: p
   } = Chunk481637.Z.useExperiment({
     location: "be7a1c_1"
   }, {
     autoTrackExposure: false
   });
-  return (Chunk647438.useEffect(() => {
+  return (Chunk473749.useEffect(() => {
     if (p && module && null != require) return require.forEach(e => {
       e.elements.forEach(e => {
         e.setAttribute(d.OF, "")
@@ -33,7 +33,7 @@ function p() {
         })
       })
     }
-  }, [require, p, module]), p && null != require && 0 !== require.length) ? (0, Chunk951288.jsxs)("div", {
+  }, [require, p, module]), p && null != require && 0 !== require.length) ? (0, Chunk54381.jsxs)("div", {
     style: {
       backgroundColor: Chunk377171.Z.BACKGROUND_FEEDBACK_CRITICAL,
       color: Chunk377171.Z.TEXT_FEEDBACK_CRITICAL,
@@ -41,18 +41,18 @@ function p() {
       alignItems: "center",
       padding: "8px 12px"
     },
-    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/semibold",
       color: "text-feedback-critical",
       children: "Accessibility compliance issue(s) detected, check in-app DevTools"
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       style: {
         display: "grid",
         gridAutoFlow: "column",
         gap: 4,
         marginLeft: "auto"
       },
-      children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
+      children: [(0, Chunk54381.jsx)(Chunk755721.zx, {
         size: Chunk755721.zx.Sizes.TINY,
         color: Chunk755721.zx.Colors.RED,
         style: {
@@ -60,7 +60,7 @@ function p() {
         },
         onClick: Chunk31336.SO,
         children: "Open DevTools"
-      }), (0, Chunk951288.jsxs)(Chunk755721.zx, {
+      }), (0, Chunk54381.jsxs)(Chunk755721.zx, {
         size: Chunk755721.zx.Sizes.TINY,
         color: Chunk755721.zx.Colors.RED,
         style: {

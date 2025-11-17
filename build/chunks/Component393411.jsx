@@ -5,8 +5,8 @@ require.d(exports, {
   R: () => W,
   Z: () => K
 }), require("./415506.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -166,12 +166,12 @@ function H(e) {
 }
 
 function Y() {
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk965406.wordMark,
-    children: [(0, Chunk951288.jsx)(Chunk754347.Z, {
+    children: [(0, Chunk54381.jsx)(Chunk754347.Z, {
       className: Chunk965406.discordWordmark,
       "aria-label": Chunk388032.intl.string(Chunk388032.t.FSOz78)
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk965406.classicWordmark
     })]
   })
@@ -181,13 +181,13 @@ function W() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.ACCOUNT_CREDIT_BANNER);
-  return (0, Chunk951288.jsx)(V, {
-    wordMark: (0, Chunk951288.jsx)(Y, {}),
-    subscriptionInfo: (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)(V, {
+    wordMark: (0, Chunk54381.jsx)(Y, {}),
+    subscriptionInfo: (0, Chunk54381.jsx)("div", {
       className: Chunk965406.planInfo,
       children: Chunk388032.intl.string(Chunk388032.t.R0GJL2)
     }),
-    buttons: (0, Chunk951288.jsx)(Chunk987997.Z, {
+    buttons: (0, Chunk54381.jsx)(Chunk987997.Z, {
       className: Chunk965406.toolsButton,
       onClick: () => (0, Chunk963249.Z)({
         subscriptionTier: Chunk474936.Si.TIER_1,

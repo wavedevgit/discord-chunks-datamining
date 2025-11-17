@@ -4,10 +4,10 @@
 require.d(exports, {
   T: () => a
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js");
-let a = () => (0, Chunk951288.jsx)("div", {
-  children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
+let a = () => (0, Chunk54381.jsx)("div", {
+  children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
     type: Chunk481060.RAz.SPINNING_CIRCLE
   })
 })

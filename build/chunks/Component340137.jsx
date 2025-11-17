@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => j
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk948789 = require("./948789.js"),
@@ -137,17 +137,17 @@ function N(e) {
 function j() {
   let {
     focusSectionProps: e
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = Chunk647438.useRef(null), {
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = Chunk473749.useRef(null), {
     notificationCenterVariant: n
   } = (0, Chunk821020.pN)({
     location: "NotificationsInboxButton"
-  }), l = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()), a = Chunk647438.useMemo(() => Chunk981631.Z5c.CHANNEL(Chunk981631.STv, null != Chunk120356 ? Chunk120356 : true), [Chunk120356]), c = (0, Chunk128008.mv)();
-  return require === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(N, {
+  }), l = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()), a = Chunk473749.useMemo(() => Chunk981631.Z5c.CHANNEL(Chunk981631.STv, null != Chunk120356 ? Chunk120356 : true), [Chunk120356]), c = (0, Chunk128008.mv)();
+  return require === Chunk821020.jP.SIDEBAR ? (0, Chunk54381.jsx)(N, {
     onClick: () => {
       Chunk212605(), (0, Chunk948789.uL)(a)
     },
     focusSectionProps: module
-  }) : require === Chunk821020.jP.POPOUT ? (0, Chunk951288.jsx)(Chunk961040.Z, {
+  }) : require === Chunk821020.jP.POPOUT ? (0, Chunk54381.jsx)(Chunk961040.Z, {
     targetElementRef: exports,
     popoutPosition: "bottom",
     popoutAlign: "left",

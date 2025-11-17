@@ -5,8 +5,8 @@ require.d(exports, {
   k: () => m,
   u: () => h
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
@@ -29,7 +29,7 @@ let h = {
   SUCCESS: "success",
   ERROR: "error"
 };
-class m extends(r = Chunk647438.PureComponent) {
+class m extends(r = Chunk473749.PureComponent) {
   select() {
     var e;
     null == (e = this.inputRef.current) || module.select()
@@ -80,27 +80,27 @@ class m extends(r = Chunk647438.PureComponent) {
       default:
         e = this.props.buttonColor
     }
-    return (0, Chunk951288.jsx)(Chunk481060.tEY, {
+    return (0, Chunk54381.jsx)(Chunk481060.tEY, {
       focusTarget: this.inputRef,
       ringTarget: this.containerRef,
-      children: (0, Chunk951288.jsx)("div", {
-        className: s()((0, Chunk153066.l)(Chunk147103, "copyInput", require), Chunk647438),
+      children: (0, Chunk54381.jsx)("div", {
+        className: s()((0, Chunk153066.l)(Chunk147103, "copyInput", require), Chunk473749),
         ref: this.containerRef,
-        children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
+        children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
           className: Chunk147103.layout,
-          children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
+          children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
             className: Chunk147103.inputWrapper,
-            children: [this.renderInput(g), g ? (0, Chunk951288.jsx)("div", {
+            children: [this.renderInput(g), g ? (0, Chunk54381.jsx)("div", {
               className: Chunk147103.hiddenMessage,
               children: r
             }) : null]
-          }), p ? (0, Chunk951288.jsx)(Chunk600164.Z, {
+          }), p ? (0, Chunk54381.jsx)(Chunk600164.Z, {
             shrink: 1,
             grow: 0,
             style: {
               margin: 0
             },
-            children: (0, Chunk951288.jsx)(Chunk755721.zx, {
+            children: (0, Chunk54381.jsx)(Chunk755721.zx, {
               "data-migration-pending": true,
               className: Chunk147103.button,
               onClick: this.handleButtonClick,

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => k
 }), require("./388685.js"), require("./642613.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk544891 = require("./544891.js"),
@@ -471,16 +471,16 @@ function I(e) {
 }
 
 function k() {
-  let [e, t] = Chunk647438.useState([]), [n, r] = Chunk647438.useState([]), [i, s] = Chunk647438.useState(), [d, h] = Chunk647438.useState(), [x, g] = Chunk647438.useState([]), [_, O] = Chunk647438.useState([]), [k, R] = Chunk647438.useState(true), [A, Z] = Chunk647438.useState(10080), [D, L] = Chunk647438.useState([]), {
+  let [e, t] = Chunk473749.useState([]), [n, r] = Chunk473749.useState([]), [i, s] = Chunk473749.useState(), [d, h] = Chunk473749.useState(), [x, g] = Chunk473749.useState([]), [_, O] = Chunk473749.useState([]), [k, R] = Chunk473749.useState(true), [A, Z] = Chunk473749.useState(10080), [D, L] = Chunk473749.useState([]), {
     entitlements: M,
     deleteFractionalPremium: U,
     refreshEntitlementList: F
   } = (0, Chunk232867.m)();
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     F()
-  }, [F]), Chunk647438.useEffect(() => {
+  }, [F]), Chunk473749.useEffect(() => {
     L(M.filter(e => e.sourceType === j.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
-  }, [M]), Chunk647438.useEffect(() => {
+  }, [M]), Chunk473749.useEffect(() => {
     (0 === module.length || 0 === require.length || k) && S().then(e => {
       let n = Object.keys(e.trial).map(t => ({
           label: t,
@@ -492,7 +492,7 @@ function k() {
         }));
       t(n), r(a), null == i && s(n[0].value), null == d && h(a[0].value)
     })
-  }, [module, require, i, Chunk105713, k]), Chunk647438.useEffect(() => {
+  }, [module, require, i, Chunk105713, k]), Chunk473749.useEffect(() => {
     k && (R(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), T().then(e => {
       g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), O(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
@@ -507,47 +507,47 @@ function k() {
     let e = new Date(Date.now() + 60 * A * 1e3).toISOString();
     await P(module), F()
   };
-  return (0, Chunk951288.jsx)(Chunk481060.zJl, {
+  return (0, Chunk54381.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
-    children: (0, Chunk951288.jsxs)("div", {
+    children: (0, Chunk54381.jsxs)("div", {
       className: Chunk711322.panelInner,
-      children: [(0, Chunk951288.jsxs)("section", {
+      children: [(0, Chunk54381.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: "Utils"
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           className: Chunk711322.buttons,
-          children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             size: "sm",
             text: "Clear all User Offers",
             onClick: z
-          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             size: "sm",
             text: "Clear Mobile Trials DismissibleContent",
             onClick: () => (0, Chunk675478.w9)(Chunk704215.z.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE)
-          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             size: "sm",
             text: "Clear Offer Nagbar DismissibleContent",
             onClick: () => (0, Chunk675478.Z1)(Chunk704215.z.NAGBAR_NOTICE_OFFER_EXPIRING)
-          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             size: "sm",
             text: "Refresh DevTools",
             onClick: () => R(true)
           })]
         })]
-      }), (0, Chunk951288.jsxs)("section", {
+      }), (0, Chunk54381.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: "Create a Trial Offer"
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           className: Chunk711322.inputRow,
-          children: [(0, Chunk951288.jsx)(Chunk481060.PhF, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.PhF, {
             className: Chunk711322.input,
             options: module,
             isSelected: e => i === e,
@@ -555,20 +555,20 @@ function k() {
             serialize: e => String(e),
             select: e => s(e),
             popoutLayerContext: Chunk246992.O$
-          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Create",
             onClick: B
           })]
         })]
-      }), (0, Chunk951288.jsxs)("section", {
+      }), (0, Chunk54381.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: "Create a Discount Offer"
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           className: Chunk711322.inputRow,
-          children: [(0, Chunk951288.jsx)(Chunk481060.PhF, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.PhF, {
             className: Chunk711322.input,
             options: require,
             isSelected: e => d === e,
@@ -576,15 +576,15 @@ function k() {
             serialize: e => String(e),
             select: e => h(e),
             popoutLayerContext: Chunk246992.O$
-          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Create",
             onClick: G
           })]
         })]
-      }), Chunk55935.length > 0 && (0, Chunk951288.jsxs)("section", {
+      }), Chunk55935.length > 0 && (0, Chunk54381.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: "Existing Trial Offers"
         }), Chunk55935.map(t => (0, a.jsx)(w, {
@@ -592,9 +592,9 @@ function k() {
           offerOptions: e,
           forceRefetch: () => R(true)
         }, t.id))]
-      }), Chunk474936.length > 0 && (0, Chunk951288.jsxs)("section", {
+      }), Chunk474936.length > 0 && (0, Chunk54381.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: "Existing Discount Offers"
         }), Chunk474936.map(e => (0, a.jsx)(I, {
@@ -602,14 +602,14 @@ function k() {
           offerOptions: n,
           forceRefetch: () => R(true)
         }, e.id))]
-      }), (0, Chunk951288.jsxs)("section", {
+      }), (0, Chunk54381.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: "Create a Reverse Trial Entitlement"
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           className: Chunk711322.inputRow,
-          children: [(0, Chunk951288.jsx)(Chunk481060.PhF, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.PhF, {
             className: Chunk711322.input,
             options: [{
               label: "5 minutes",
@@ -629,20 +629,20 @@ function k() {
             serialize: e => String(e),
             select: e => Z(e),
             popoutLayerContext: Chunk246992.O$
-          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Create",
             onClick: V
           })]
         })]
-      }), D.length > 0 && (0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), D.length > 0 && (0, Chunk54381.jsxs)("div", {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           style: {
             marginTop: "15px"
           },
           variant: "text-md/bold",
           children: "Active reverse trial"
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           children: D.map(e => (0, a.jsx)(f.D, {
             entitlement: e,
             active: true,

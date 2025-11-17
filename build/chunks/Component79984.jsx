@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -18,7 +18,7 @@ function d() {
     {
       styleLarge: t,
       styleSmall: n
-    } = Chunk647438.useMemo(() => ({
+    } = Chunk473749.useMemo(() => ({
       styleLarge: {
         width: "".concat(10 + 50 * Math.random(), "%")
       },
@@ -26,28 +26,28 @@ function d() {
         width: "".concat(30 + 60 * Math.random(), "%")
       }
     }), []);
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: o()(Chunk75243.container, {
       [Chunk75243.noAnimation]: module
     }),
-    children: [(0, Chunk951288.jsx)("div", {
+    children: [(0, Chunk54381.jsx)("div", {
       className: Chunk75243.iconPlaceholder
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk75243.textContainer,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: Chunk75243.textPlaceholder,
         style: exports,
-        children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
           className: Chunk75243.hidden,
           variant: "heading-md/semibold",
           color: "header-primary",
           lineClamp: 1,
           children: "_"
         })
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk75243.textPlaceholder,
         style: require,
-        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Text, {
           className: Chunk75243.hidden,
           variant: "text-sm/normal",
           color: "text-secondary",
@@ -55,7 +55,7 @@ function d() {
           children: "_"
         })
       })]
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk75243.underline
     })]
   })

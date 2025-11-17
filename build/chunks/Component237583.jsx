@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => h
 }), require("./539854.js"), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -28,7 +28,7 @@ function _(e, t, n) {
     children: e
   }, n)
 }
-class p extends(r = Chunk647438.PureComponent) {
+class p extends(r = Chunk473749.PureComponent) {
   renderUsers() {
     let {
       users: e,
@@ -36,20 +36,20 @@ class p extends(r = Chunk647438.PureComponent) {
       renderUser: n = this.defaultRenderUser,
       renderMoreUsers: r
     } = this.props, i = [], a = module.length === exports ? module.length : exports - 1, o = 0;
-    for (; Chunk120356 < Chunk647438 && Chunk120356 < module.length;) {
+    for (; Chunk120356 < Chunk473749 && Chunk120356 < module.length;) {
       let t = Chunk120356 === module.length - 1;
-      Chunk951288.push(require(module[Chunk120356] || null, exports ? null : Chunk322991.avatarMasked, "user-".concat(Chunk120356), exports)), Chunk120356++
+      Chunk54381.push(require(module[Chunk120356] || null, exports ? null : Chunk322991.avatarMasked, "user-".concat(Chunk120356), exports)), Chunk120356++
     }
     if (Chunk120356 < module.length) {
       let t = Math.min(module.length - Chunk120356, 99);
-      Chunk951288.push(r("+".concat(exports), Chunk322991.moreUsers, "more-users", exports))
+      Chunk54381.push(r("+".concat(exports), Chunk322991.moreUsers, "more-users", exports))
     }
-    return Chunk951288
+    return Chunk54381
   }
   renderIcon() {
-    return this.props.icon ? (0, Chunk951288.jsx)("div", {
+    return this.props.icon ? (0, Chunk54381.jsx)("div", {
       className: Chunk322991.iconContainer,
-      children: (0, Chunk951288.jsx)(Chunk481060.gj8, {
+      children: (0, Chunk54381.jsx)(Chunk481060.gj8, {
         size: "xs",
         color: "currentColor",
         colorClass: Chunk322991.foreground,
@@ -61,7 +61,7 @@ class p extends(r = Chunk647438.PureComponent) {
     let {
       className: e
     } = this.props;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: s()(module, Chunk322991.container),
       ref: e => {
         this._ref = e

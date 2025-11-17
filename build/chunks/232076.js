@@ -4,7 +4,7 @@
 require.d(exports, {
   B: () => f
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk975298 = require("./975298.js"),
   Chunk594174 = require("./594174.js"),
@@ -20,7 +20,7 @@ let f = function() {
     f = (0, Chunk775412._O)(),
     _ = (0, Chunk975298.Z)(),
     p = (null == exports ? true : exports.verified) === true && (0, Chunk111361.M5)(exports, Chunk474936.PremiumTypes.TIER_2) && _.fetched && _.fractionalState !== Chunk474936.a$.FP_ONLY && !require && !f;
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     p && !module && Chunk276444.Z.checkAndFetchReferralsRemaining()
   }, [p, module])
 }

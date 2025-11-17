@@ -4,7 +4,7 @@
 require.d(exports, {
   R: () => s
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk52647 = require("./52647.js"),
   Chunk605532 = require("./605532.js");
@@ -17,16 +17,16 @@ let s = {
       let {
         resetOnboardingExperience: e
       } = (0, Chunk52647.Z)();
-      return (0, Chunk951288.jsxs)("div", {
+      return (0, Chunk54381.jsxs)("div", {
         className: Chunk605532.verticalContainer,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           color: "text-feedback-info",
           style: {
             marginBottom: "8px"
           },
           children: "Use this to reset your user's DCF Orb Onboarding state."
-        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           onClick: () => module(),
           text: "Reset Announcement Modal State"
         })]

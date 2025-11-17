@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => E
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -67,19 +67,19 @@ let O = {
       })]
     })
   },
-  y = () => (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+  y = () => (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
     gap: 8,
-    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       children: Chunk388032.intl.string(Chunk388032.t["9N2OWD"])
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.format(Chunk388032.t.hxLviw, {
         fileSize: (0, Chunk424218.IC)(Chunk611480.Ht, {
           useKibibytes: true
         })
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.format(Chunk388032.t.UBj0aX, {
         articleUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.STICKERS_UPLOAD)
@@ -126,23 +126,23 @@ let O = {
       } = (0, Chunk906732.ZP)(Chunk100527.Z.STICKERS);
     if (null == module) return null;
     let o = module.premiumTier !== Chunk981631.Eu4.NONE || exports.length > 0;
-    return (0, Chunk951288.jsx)(Chunk906732.Gt, {
+    return (0, Chunk54381.jsx)(Chunk906732.Gt, {
       value: require,
-      children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 16,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.R5nQkS)
-        }), Chunk623624 ? (0, Chunk951288.jsxs)("div", {
-          children: [(0, Chunk951288.jsx)(N, {
+        }), Chunk623624 ? (0, Chunk54381.jsxs)("div", {
+          children: [(0, Chunk54381.jsx)(N, {
             guild: module,
             guildStickers: exports
-          }), (0, Chunk951288.jsx)(y, {})]
-        }) : (0, Chunk951288.jsx)(C, {
+          }), (0, Chunk54381.jsx)(y, {})]
+        }) : (0, Chunk54381.jsx)(C, {
           guild: module
-        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
           className: Chunk96761.divider
-        }), (0, Chunk951288.jsx)(Chunk145499.Z, {
+        }), (0, Chunk54381.jsx)(Chunk145499.Z, {
           guild: module
         })]
       })

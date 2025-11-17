@@ -5,8 +5,8 @@ require.d(exports, {
   E: () => b,
   Z: () => O
 }), require("./388685.js"), require("./642613.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -78,7 +78,7 @@ let b = {
   Colors: Chunk585237.Z.Colors,
   Looks: Chunk585237.Z.Looks
 };
-class y extends Chunk647438.PureComponent {
+class y extends Chunk473749.PureComponent {
   render() {
     let e = this.props,
       {
@@ -89,7 +89,7 @@ class y extends Chunk647438.PureComponent {
         onSKUSelect: o
       } = module,
       s = g(module, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
-    return (0, Chunk951288.jsx)(Chunk585237.Z, m(p({
+    return (0, Chunk54381.jsx)(Chunk585237.Z, m(p({
       onClick: this.handleClick,
       onDropdownClick: exports.length > 0 ? this.handleContextMenu : null,
       onContextMenu: exports.length > 0 ? this.handleContextMenu : true

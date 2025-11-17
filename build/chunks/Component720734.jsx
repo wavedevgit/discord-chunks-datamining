@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => tf,
   m: () => th
 }), require("./388685.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -286,7 +286,7 @@ function tp(e) {
     })
   })
 }
-class th extends Chunk647438.PureComponent {
+class th extends Chunk473749.PureComponent {
   get isCopiedStreakGodlike() {
     let {
       copiedStreak: e
@@ -310,7 +310,7 @@ class th extends Chunk647438.PureComponent {
     let {
       copiedStreak: e
     } = this.state, t = [Chunk388032.intl.string(Chunk388032.t.MSaeTe), Chunk388032.intl.string(Chunk388032.t.UmrCw7), Chunk388032.intl.string(Chunk388032.t.gKE0Jq), Chunk388032.intl.string(Chunk388032.t["4DSKbi"]), Chunk388032.intl.string(Chunk388032.t["+8ENdT"]), Chunk388032.intl.string(Chunk388032.t.GlWHv8), Chunk388032.intl.string(Chunk388032.t.hIzxU9), Chunk388032.intl.string(Chunk388032.t["26uMPL"]), Chunk388032.intl.string(Chunk388032.t.uFs7R2), Chunk388032.intl.string(Chunk388032.t.bLXdcY), Chunk388032.intl.string(Chunk388032.t.gPg9fS)], n = Math.min(Math.max(0, module - 1), exports.length - 1);
-    return (0, Chunk951288.jsx)(Chunk481060.UkV, {
+    return (0, Chunk54381.jsx)(Chunk481060.UkV, {
       isShaking: this.isCopiedStreakGodlike,
       children: exports[require]
     })
@@ -327,18 +327,18 @@ class th extends Chunk647438.PureComponent {
       voiceActivityStatusEnabled: s,
       voiceChannel: o
     } = this.props;
-    if (null == Chunk647438) return null;
+    if (null == Chunk473749) return null;
     if ((0, Chunk326255.Z)({
         activities: exports,
         status: Chunk120356,
         applicationStream: require,
         voiceChannel: Chunk392711 ? o : true
-      })) return (0, Chunk951288.jsx)(Chunk570928.Z, {
+      })) return (0, Chunk54381.jsx)(Chunk570928.Z, {
       hoverText: i,
       forceHover: module,
-      children: (0, Chunk951288.jsx)(Chunk771173.Z, {
+      children: (0, Chunk54381.jsx)(Chunk771173.Z, {
         location: "Account",
-        user: Chunk647438,
+        user: Chunk473749,
         activities: exports,
         applicationStream: require,
         voiceChannel: Chunk392711 ? o : true,
@@ -352,18 +352,18 @@ class th extends Chunk647438.PureComponent {
       } = e;
       return t === te.IIU.CUSTOM_STATUS
     });
-    return null != Chunk374470 ? (0, Chunk951288.jsx)(Chunk570928.Z, {
+    return null != Chunk374470 ? (0, Chunk54381.jsx)(Chunk570928.Z, {
       hoverText: i,
       forceHover: module,
-      children: (0, Chunk951288.jsx)(Chunk427217.Z, {
+      children: (0, Chunk54381.jsx)(Chunk427217.Z, {
         activity: Chunk374470,
         emojiClassName: Chunk25874.emoji,
         className: Chunk25874.customStatus
       })
-    }) : null != Chunk120356 && Chunk120356 !== Chunk981631.Skl.UNKNOWN && Chunk647438.hasUniqueUsername() ? (0, Chunk951288.jsx)(Chunk570928.Z, {
+    }) : null != Chunk120356 && Chunk120356 !== Chunk981631.Skl.UNKNOWN && Chunk473749.hasUniqueUsername() ? (0, Chunk54381.jsx)(Chunk570928.Z, {
       hoverText: i,
       forceHover: module,
-      children: (0, Chunk951288.jsx)(Chunk963056.Z, {
+      children: (0, Chunk54381.jsx)(Chunk963056.Z, {
         text: Chunk51144.ZP.humanizeStatus(Chunk120356)
       })
     }) : i
@@ -470,8 +470,8 @@ class th extends Chunk647438.PureComponent {
       isQuestBarEmpty: l,
       isListenAlongVisible: r
     } = this.props, s = this.state.hovered;
-    return null == module ? null : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.Wdt, {
+    return null == module ? null : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Wdt, {
         children: e => (0, a.jsxs)("div", {
           ref: this.containerRef,
           className: i()(tr.container, {
@@ -498,7 +498,7 @@ class th extends Chunk647438.PureComponent {
             dismissTooltips: this.dismissTooltips
           }))]
         })
-      }), (0, Chunk951288.jsx)(Chunk427347.Z, {})]
+      }), (0, Chunk54381.jsx)(Chunk427347.Z, {})]
     })
   }
   constructor(...e) {
@@ -613,7 +613,7 @@ class th extends Chunk647438.PureComponent {
         copiedStreak: n
       } = this.state;
       if (null == e) return;
-      (0, eY.JG)(e8.ZP.getUserTag(e, {
+      (0, eY.JG)(e4.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
       })), eK.default.track(te.rMx.TEXT_COPIED, {
@@ -681,7 +681,7 @@ class th extends Chunk647438.PureComponent {
           })
         }), (0, a.jsx)("div", {
           className: tr.panelSubtextContainer,
-          children: (0, a.jsx)(e7.Z, {
+          children: (0, a.jsx)(e6.Z, {
             children: this.renderStatus()
           })
         })]
@@ -761,12 +761,12 @@ function tx(e) {
 function tg(e) {
   let {
     shouldShowDeviceChangedNotifications: t
-  } = (0, e6.P)({
+  } = (0, e7.P)({
     location: "Account.useDeviceChangedTooltip",
     autoTrackExposure: false
   }), n = (0, d.e7)([eF.Z], () => null != eF.Z.getChannelId()), a = (0, et.Fh)(e), r = l.useRef(new m.V7), [i, s] = l.useState(false);
   l.useEffect(() => {
-    n && a && ((0, e6._)({
+    n && a && ((0, e7._)({
       location: "Account.useDeviceChangedTooltip (exposure tracking)",
       autoTrackExposure: true
     }), t && (s(true), r.current.start(tm, () => {
@@ -844,7 +844,7 @@ function tf() {
     F = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     B = null == exports ? true : exports.avatarDecoration,
     G = (0, Chunk541638.R)(exports, null != Chunk575175 ? Chunk575175 : true),
-    z = (0, Chunk676742.Z)(Chunk647438 ? Chunk795318 : Chunk522651),
+    z = (0, Chunk676742.Z)(Chunk473749 ? Chunk795318 : Chunk522651),
     H = Chunk5192.ZP.useName(null != Chunk575175 ? Chunk575175 : true, null, exports),
     K = null != (e = Chunk51144.ZP.useName(exports)) ? module : "",
     {
@@ -863,7 +863,7 @@ function tf() {
     } = (0, Chunk906732.ZP)(Chunk100527.Z.ACCOUNT),
     er = (0, Chunk850020.K)({
       user: exports,
-      guildId: Chunk647438 && null != Chunk575175 ? Chunk575175 : true
+      guildId: Chunk473749 && null != Chunk575175 ? Chunk575175 : true
     }),
     {
       isQuestBarEmpty: ei,
@@ -877,9 +877,9 @@ function tf() {
         a = [];
       if (null != exports ? e = exports.partyId : null != require && null != require.party && null != require.party.id && (e = require.party.id), null != module) {
         var l;
-        a = o()(Array.from(null != (l = Chunk831506.Z.getParty(module)) ? Chunk647438 : [])).map(e => eH.default.getUser(e)).filter(Chunk823379.lm).value()
+        a = o()(Array.from(null != (l = Chunk831506.Z.getParty(module)) ? Chunk473749 : [])).map(e => eH.default.getUser(e)).filter(Chunk823379.lm).value()
       }
-      return Chunk951288.length > 1
+      return Chunk54381.length > 1
     }),
     eh = (0, Chunk172416.Un)({
       location: "AccountConnected"
@@ -896,12 +896,12 @@ function tf() {
     shouldShowTooltip: eb,
     dismissTooltip: ev
   } = tg(Chunk65154.h7.AUDIO_OUTPUT);
-  return (0, Chunk951288.jsx)(Chunk906732.Gt, {
+  return (0, Chunk54381.jsx)(Chunk906732.Gt, {
     value: Chunk379839,
-    children: (0, Chunk951288.jsx)(th, {
+    children: (0, Chunk54381.jsx)(th, {
       currentUser: exports,
-      username: Chunk647438 ? Chunk243778 : Chunk386725,
-      transitionAccountPanel: Chunk647438,
+      username: Chunk473749 ? Chunk243778 : Chunk386725,
+      transitionAccountPanel: Chunk473749,
       activities: Chunk120356,
       applicationStream: Chunk374470,
       voiceChannel: Chunk239091,

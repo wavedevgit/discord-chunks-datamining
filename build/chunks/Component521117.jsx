@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => b
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
@@ -97,16 +97,16 @@ function E(e) {
   }, s))
 }
 let b = () => {
-  let e = Chunk647438.useRef(null);
+  let e = Chunk473749.useRef(null);
 
   function t() {
     null !== module.current && ((0, Chunk481060.Mr3)(module.current), module.current = null)
   }
-  let [o, l] = (0, Chunk442837.Wu)([Chunk209590.Z], () => [Chunk209590.Z.shouldShowWarning(), Chunk209590.Z.isAFKChannel()], []), d = Chunk647438.useCallback(() => {
+  let [o, l] = (0, Chunk442837.Wu)([Chunk209590.Z], () => [Chunk209590.Z.shouldShowWarning(), Chunk209590.Z.isAFKChannel()], []), d = Chunk473749.useCallback(() => {
     module.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(E, _({
       afk: l
     }, e)))
-  }, [Chunk923928]), f = Chunk647438.useCallback(() => {
+  }, [Chunk923928]), f = Chunk473749.useCallback(() => {
     (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
@@ -118,7 +118,7 @@ let b = () => {
       null != t && (e.current = t)
     })
   }, []);
-  return Chunk647438.useEffect(() => (Chunk159691 && (0, Chunk503856.p)() ? f() : Chunk159691 ? Chunk388032() : exports(), () => {
+  return Chunk473749.useEffect(() => (Chunk159691 && (0, Chunk503856.p)() ? f() : Chunk159691 ? Chunk388032() : exports(), () => {
     exports()
   }), [Chunk159691, Chunk388032, f]), null
 }

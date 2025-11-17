@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => m
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk703656 = require("./703656.js"),
   Chunk769654 = require("./769654.js"),
@@ -42,19 +42,19 @@ function g(e, t, n) {
 
 function m() {
   let e = Chunk430824.Z.getGuildsArray().filter(e => e.features.has(p.GuildFeatures.HUB));
-  return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-    children: [(0, Chunk951288.jsxs)("header", {
+  return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
+    children: [(0, Chunk54381.jsxs)("header", {
       className: Chunk184904.header,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: Chunk388032.intl.string(Chunk388032.t.IuMx1Y)
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         tag: "div",
         variant: "heading-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.DwevPs)
       })]
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk184904.grid,
       children: [module.map(e => g(u.ZP.getGuildIconURL({
         id: e.id,

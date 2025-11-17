@@ -5,8 +5,8 @@ require.d(exports, {
   ZP: () => O,
   gN: () => b
 }), require("./388685.js"), require("./415506.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
@@ -63,7 +63,7 @@ let h = {
 function b(e, t) {
   return (e % t + t) % t
 }
-class y extends(r = Chunk647438.Component) {
+class y extends(r = Chunk473749.Component) {
   componentDidMount() {
     this.animatedIndex.setValue(this.props.currentIndex)
   }
@@ -133,9 +133,9 @@ class y extends(r = Chunk647438.Component) {
       itemSize: n,
       className: r
     } = this.props;
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: s()(Chunk582235.singleItemWrapper, Chunk582235.viewport, r),
-      children: (0, Chunk951288.jsx)("div", {
+      children: (0, Chunk54381.jsx)("div", {
         className: Chunk582235.singleItem,
         style: {
           width: require.width,
@@ -169,7 +169,7 @@ class y extends(r = Chunk647438.Component) {
         className: u.item,
         children: a(e, t - c, this.interpolateValueForItem(t - c))
       }, t));
-    return (0, Chunk951288.jsx)(Chunk748780.Z.div, {
+    return (0, Chunk54381.jsx)(Chunk748780.Z.div, {
       className: Chunk582235.carousel,
       style: {
         opacity: r,
@@ -188,7 +188,7 @@ class y extends(r = Chunk647438.Component) {
       hideOverflow: n
     } = this.props;
     if (module.length <= 0) throw Error("Carousel has no items");
-    return 1 === module.length ? this.renderSingleItem() : (0, Chunk951288.jsx)("div", {
+    return 1 === module.length ? this.renderSingleItem() : (0, Chunk54381.jsx)("div", {
       className: s()({
         [Chunk582235.viewport]: require
       }, exports),

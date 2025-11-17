@@ -4,9 +4,9 @@
 require.d(exports, {
   A: () => b
 }), require("./49124.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
-  Chunk289008 = require("./289008.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
+  Chunk575053 = require("./575053.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk241209 = require("./241209.jsx"),
@@ -64,10 +64,10 @@ let f = {
   g = "``";
 
 function E() {
-  let [e, t] = Chunk647438.useState(m(p)), [n, c] = Chunk647438.useState(p), [_, E] = Chunk647438.useState(m(h)), [b, y] = Chunk647438.useState(h), [O, v] = Chunk647438.useState(null), [I, T] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk29594.DS, {
+  let [e, t] = Chunk473749.useState(m(p)), [n, c] = Chunk473749.useState(p), [_, E] = Chunk473749.useState(m(h)), [b, y] = Chunk473749.useState(h), [O, v] = Chunk473749.useState(null), [I, T] = Chunk473749.useState((0, Chunk54381.jsx)(Chunk29594.DS, {
     errorLabel: f.CONFIGURABLE,
     elementOptions: p,
-    children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
+    children: (0, Chunk54381.jsx)(Chunk575053.ExpressCheckoutElement, {
       onConfirm: e => {
         console.log("ExpressCheckoutElement onConfirm event: ", e)
       },
@@ -77,15 +77,15 @@ function E() {
     try {
       let t = JSON.parse(module),
         n = JSON.parse(_);
-      T(null), T((0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
+      T(null), T((0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [(0, Chunk54381.jsxs)(Chunk481060.Text, {
           variant: "text-md/normal",
           className: Chunk328310.labelSpacing,
           children: ["Element updated at: ", new Date().toString()]
-        }), (0, Chunk951288.jsx)(Chunk29594.DS, {
+        }), (0, Chunk54381.jsx)(Chunk29594.DS, {
           errorLabel: f.CONFIGURABLE,
           elementOptions: exports,
-          children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
+          children: (0, Chunk54381.jsx)(Chunk575053.ExpressCheckoutElement, {
             onConfirm: e => {
               console.log("ExpressCheckoutElement onConfirm event: ", e)
             },
@@ -97,77 +97,77 @@ function E() {
       console.error("ConfigurableStripeExpressCheckoutElement - error parsing JSON: ", module), v("Error parsing JSON. Check console for more information.")
     }
   };
-  return (0, Chunk951288.jsxs)("div", {
-    children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
+  return (0, Chunk54381.jsxs)("div", {
+    children: [(0, Chunk54381.jsxs)(Chunk481060.Text, {
       variant: "text-md/normal",
       className: Chunk328310.labelSpacing,
-      children: ["Try configuring options for the Stripe Element container and Express Checkout Element here. Not all settings will change the appearance or functionality of the checkout button - use this to figure out the customizability of the Express Checkout Element.", (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)("br", {}), "Start by changing the `borderRadius` or `buttonHeight` as a test!"]
-    }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+      children: ["Try configuring options for the Stripe Element container and Express Checkout Element here. Not all settings will change the appearance or functionality of the checkout button - use this to figure out the customizability of the Express Checkout Element.", (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)("br", {}), "Start by changing the `borderRadius` or `buttonHeight` as a test!"]
+    }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
       variant: "text-md/normal",
       className: Chunk328310.labelSpacing,
-      children: [(0, Chunk951288.jsx)("b", {
+      children: [(0, Chunk54381.jsx)("b", {
         children: "elements.options:"
-      }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk29594.lD, {
+      }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)(Chunk29594.lD, {
         href: "https://github.com/stripe/stripe-js/blob/master/types/stripe-js/elements-group.d.ts#L632"
       })]
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk328310.textarea,
-      children: (0, Chunk951288.jsx)(Chunk481060.Kx8, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Kx8, {
         placeholder: "Stripe Elements Container Options",
         showCharacterCount: true,
         value: module,
         onChange: exports,
         rows: 7
       })
-    }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
       variant: "text-md/normal",
       className: Chunk328310.labelSpacing,
-      children: [(0, Chunk951288.jsx)("b", {
+      children: [(0, Chunk54381.jsx)("b", {
         children: "expressCheckoutElement.options:"
-      }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk29594.lD, {
+      }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)(Chunk29594.lD, {
         href: "https://github.com/stripe/stripe-js/blob/master/types/stripe-js/elements/express-checkout.d.ts#L314"
-      }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk29594.lD, {
+      }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)(Chunk29594.lD, {
         href: "https://docs.stripe.com/elements/express-checkout-element/migration#customize-express-checkout-element"
       })]
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk328310.textarea,
-      children: (0, Chunk951288.jsx)(Chunk481060.Kx8, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Kx8, {
         placeholder: "Stripe Express Checkout Element Options",
         showCharacterCount: true,
         value: _,
         onChange: E,
         rows: 7
       })
-    }), null != O && (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), null != O && (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       color: "text-danger",
       children: O
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: Chunk328310.applyChangesButton,
-      children: (0, Chunk951288.jsx)(Chunk159691.zxk, {
+      children: (0, Chunk54381.jsx)(Chunk159691.zxk, {
         variant: "primary",
         size: "sm",
         text: "Apply Changes",
         onClick: S
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       className: Chunk328310.labelSpacing,
       children: "Current Element Options:"
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
-      children: (0, Chunk951288.jsx)(Chunk241209.Z, {
+      children: (0, Chunk54381.jsx)(Chunk241209.Z, {
         className: Chunk328310.markdown,
         children: "".concat(g, " ").concat(m(require), " ").concat(g)
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       className: Chunk328310.labelSpacing,
       children: "Current Express Checkout Element Options:"
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
-      children: (0, Chunk951288.jsx)(Chunk241209.Z, {
+      children: (0, Chunk54381.jsx)(Chunk241209.Z, {
         className: Chunk328310.markdown,
         children: "".concat(g, " ").concat(m(b), " ").concat(g)
       })
@@ -178,20 +178,20 @@ let b = {
   name: "Stripe Components",
   id: "stripe-components",
   component: function() {
-    return (0, Chunk951288.jsx)(Chunk563132.PaymentContextProvider, {
+    return (0, Chunk54381.jsx)(Chunk563132.PaymentContextProvider, {
       stepConfigs: [],
       skuIDs: [],
       activeSubscription: null,
-      children: (0, Chunk951288.jsxs)(Chunk29594.$0, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: (0, Chunk54381.jsxs)(Chunk29594.$0, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-xl/semibold",
           children: "Stripe Express Checkout Buttons"
-        }), (0, Chunk951288.jsx)(Chunk29594.E_, {
+        }), (0, Chunk54381.jsx)(Chunk29594.E_, {
           label: f.DEFAULT,
-          children: (0, Chunk951288.jsx)("div", {
-            children: (0, Chunk951288.jsx)(Chunk29594.DS, {
+          children: (0, Chunk54381.jsx)("div", {
+            children: (0, Chunk54381.jsx)(Chunk29594.DS, {
               errorLabel: f.DEFAULT,
-              children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
+              children: (0, Chunk54381.jsx)(Chunk575053.ExpressCheckoutElement, {
                 onConfirm: e => {
                   console.log("ExpressCheckoutElement onConfirm event: ", e)
                 },
@@ -225,9 +225,9 @@ let b = {
               })]
             })
           }, e)
-        }), (0, Chunk951288.jsx)(Chunk29594.E_, {
+        }), (0, Chunk54381.jsx)(Chunk29594.E_, {
           label: f.CONFIGURABLE,
-          children: (0, Chunk951288.jsx)(E, {})
+          children: (0, Chunk54381.jsx)(E, {})
         })]
       })
     })

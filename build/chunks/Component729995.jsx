@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => N
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk2052 = require("./2052.js"),
@@ -200,23 +200,23 @@ function E(e) {
 
 function I() {
   let e = "• ";
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk820983.notice,
-    children: [(0, Chunk951288.jsx)("img", {
+    children: [(0, Chunk54381.jsx)("img", {
       className: Chunk820983.wumpus,
       src: require("./33631.js"),
       alt: "wumpus"
-    }), (0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+    }), (0, Chunk54381.jsxs)("div", {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
         color: "header-primary",
         className: Chunk820983.header,
         children: Chunk388032.intl.string(Chunk388032.t.WslWRL)
-      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: [module, Chunk388032.intl.string(Chunk388032.t.z9k21H)]
-      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: [module, Chunk388032.intl.string(Chunk388032.t.t1Lele)]

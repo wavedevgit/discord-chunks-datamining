@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => f
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk846519 = require("./846519.js");
 
 function s(e, t, n) {
@@ -46,7 +46,7 @@ function u(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class d extends(r = Chunk647438.Component) {
+class d extends(r = Chunk473749.Component) {
   static getDerivedStateFromProps(e) {
     return e.disable ? {
       hovered: false
@@ -92,7 +92,7 @@ class d extends(r = Chunk647438.Component) {
       onMouseLeave: this.handleResume,
       onBlur: this.handleResume
     };
-    return (0, Chunk951288.jsx)("div", u(l({}, r), {
+    return (0, Chunk54381.jsx)("div", u(l({}, r), {
       className: exports,
       children: module
     }))

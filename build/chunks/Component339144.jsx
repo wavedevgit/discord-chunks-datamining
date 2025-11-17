@@ -4,8 +4,8 @@ require.d(exports, {
   J: () => L,
   y: () => D
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk144269 = require("./144269.jsx"),
@@ -46,7 +46,7 @@ function D(e, t, n) {
   }
   returnfalse
 }
-let L = Chunk647438.memo(function(e) {
+let L = Chunk473749.memo(function(e) {
     var t, l;
     let a, s, f, y, {
         stream: C,
@@ -229,7 +229,7 @@ let L = Chunk647438.memo(function(e) {
       children: [null != (t = null != ef ? ef : ey) ? t : eg, eh, null != (l = null != em ? em : eb) ? l : e_, eO]
     })
   }),
-  M = Chunk647438.forwardRef(function(e, t) {
+  M = Chunk473749.forwardRef(function(e, t) {
     let {
       runningGame: n,
       startAuthorization: i,

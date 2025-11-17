@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => ea
 }), require("./388685.js"), require("./539854.js"), require("./997841.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk535655 = require("./535655.js"),
@@ -130,13 +130,13 @@ function ea(e) {
 }
 
 function eo() {
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk729755.developerShelfControlsContainer,
-    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk729755.developerShelfControlsLabel,
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t.tZ3FNs)
-    }), (0, Chunk951288.jsx)(Chunk427996.W, {
+    }), (0, Chunk54381.jsx)(Chunk427996.W, {
       hideSearch: true
     })]
   })

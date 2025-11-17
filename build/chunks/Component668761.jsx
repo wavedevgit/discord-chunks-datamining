@@ -4,8 +4,8 @@ require.d(exports, {
   f: () => p,
   y: () => h
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk312839 = require("./312839.js"),
   Chunk556296 = require("./556296.js"),
@@ -27,16 +27,16 @@ function h() {
   return {
     title: Chunk388032.intl.format(Chunk388032.t.S5uhCN, {
       keybind: p,
-      keybindHook: () => (0, Chunk951288.jsx)("span", {
+      keybindHook: () => (0, Chunk54381.jsx)("span", {
         style: {
           display: "inline-block"
         },
-        children: (0, Chunk951288.jsx)(Chunk481060.M2$, {
+        children: (0, Chunk54381.jsx)(Chunk481060.M2$, {
           shortcut: p
         })
       })
     }),
-    icon: (0, Chunk951288.jsx)(Chunk481060.AlX, {
+    icon: (0, Chunk54381.jsx)(Chunk481060.AlX, {
       size: "xs",
       color: "currentColor"
     }),

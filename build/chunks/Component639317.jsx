@@ -5,8 +5,8 @@ let r;
 require.d(exports, {
   g: () => y
 });
-var i, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var i, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk58654 = require("./58654.js"),
@@ -71,7 +71,7 @@ function g(e, t) {
 }
 let E = "\n  visibility:hidden;\n  overflow:hidden;\n  position:absolute;\n  z-index:-1000;\n  top:0;\n  right:0;\n",
   b = ["letter-spacing", "line-height", "padding-top", "padding-bottom", "font-family", "font-weight", "font-size", "text-transform", "width", "padding-left", "padding-right", "border-width", "box-sizing"];
-class y extends(i = Chunk647438.PureComponent) {
+class y extends(i = Chunk473749.PureComponent) {
   componentDidMount() {
     var e, t;
     null == (e = (t = this.props).onResize) || module.call(exports, true), Promise.resolve().then(() => this.calculateSize())
@@ -93,7 +93,7 @@ class y extends(i = Chunk647438.PureComponent) {
       fontWidthEstimate: n,
       rows: i
     } = this.props, a = null != (e = this.props.value) ? module : exports.value;
-    if (null != require && false === Chunk951288.indexOf("\n") && Chunk951288.length * require < .8 * exports.offsetWidth) return void this.setState({
+    if (null != require && false === Chunk54381.indexOf("\n") && Chunk54381.length * require < .8 * exports.offsetWidth) return void this.setState({
       height: true
     });
     null == r && null != document.body && (r = document.createElement("textarea"), document.body.appendChild(r));
@@ -103,9 +103,9 @@ class y extends(i = Chunk647438.PureComponent) {
       boxSizing: l,
       sizingStyle: c
     } = this.calculateNodeStyling(exports);
-    r.setAttribute("style", Chunk58654 + ";" + E), r.value = Chunk951288, null != i ? r.setAttribute("rows", "".concat(i)) : r.removeAttribute("rows");
+    r.setAttribute("style", Chunk58654 + ";" + E), r.value = Chunk54381, null != i ? r.setAttribute("rows", "".concat(i)) : r.removeAttribute("rows");
     let u = r.scrollHeight;
-    "border-box" === l ? u += Chunk120356 : "content-box" === l && (u -= Chunk647438), this.setState({
+    "border-box" === l ? u += Chunk120356 : "content-box" === l && (u -= Chunk473749), this.setState({
       height: Chunk793030
     })
   }
@@ -161,11 +161,11 @@ class y extends(i = Chunk647438.PureComponent) {
       i = m(module, ["style", "className", "onResize"]);
     delete i.fontWidthEstimate;
     let o = _({}, this.state, exports);
-    return (0, Chunk951288.jsx)(Chunk793030.tEY, {
-      children: (0, Chunk951288.jsx)("textarea", h(_({}, i), {
+    return (0, Chunk54381.jsx)(Chunk793030.tEY, {
+      children: (0, Chunk54381.jsx)("textarea", h(_({}, i), {
         className: l()(require, Chunk154257.scrollbarGhostHairline),
         ref: this.handleSetRef,
-        style: Chunk647438,
+        style: Chunk473749,
         onChange: this.handleChange
       }))
     })

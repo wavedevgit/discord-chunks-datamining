@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => j
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
@@ -27,7 +27,7 @@ function C(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class T extends Chunk647438.PureComponent {
+class T extends Chunk473749.PureComponent {
   handleValueRender(e) {
     return "".concat((-((100 - e) * 1)).toFixed(0), "dB")
   }
@@ -35,7 +35,7 @@ class T extends Chunk647438.PureComponent {
     let {
       autoThreshold: e
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    return (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.I1Zuq0),
       checked: module,
       onChange: this.handleAutoThresholdChange
@@ -46,7 +46,7 @@ class T extends Chunk647438.PureComponent {
       autoThreshold: e,
       threshold: t
     } = this.props;
-    if (!module) return (0, Chunk951288.jsx)(Chunk481060.iRW, {
+    if (!module) return (0, Chunk54381.jsx)(Chunk481060.iRW, {
       initialValue: exports + 100,
       onValueRender: this.handleValueRender,
       onValueChange: this.handleSensitivityChange,
@@ -55,9 +55,9 @@ class T extends Chunk647438.PureComponent {
     })
   }
   render() {
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: Chunk197571.marginBottom20,
-      children: (0, Chunk951288.jsxs)(Chunk481060.gNt, {
+      children: (0, Chunk54381.jsxs)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
         role: "group",
         children: [this.renderAutomaticVADToggle(), this.renderSlider()]

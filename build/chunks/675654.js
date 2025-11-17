@@ -9,7 +9,7 @@ require.d(exports, {
   rq: () => c,
   vv: () => Chunk177351
 });
-var Chunk238651 = require("./238651.js");
+var Chunk921254 = require("./921254.js");
 let Chunk177351 = require("./177351.js"),
   a = ["#FF73FA", "#FFC0FF", "#FFD836", "#FF9A15", "#A5F7DE", "#51BC9D", "#AEC7FF", "#3E70DD"],
   o = [require("./294521.js"), Chunk177351, require("./817812.js"), require("./602002.js"), require("./673910.js"), require("./337242.js"), require("./678282.js"), {
@@ -42,4 +42,4 @@ let Chunk177351 = require("./177351.js"),
       maxValue: 28
     }
   },
-  c = new Chunk238651.qA
+  c = new Chunk921254.qA

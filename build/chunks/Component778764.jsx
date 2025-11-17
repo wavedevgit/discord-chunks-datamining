@@ -5,8 +5,8 @@ require.d(exports, {
   RegisterWebAuthnCredentialModal: () => P,
   Z: () => w
 }), require("./388685.js"), require("./49124.js"), require("./457542.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk849055 = require("./849055.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -293,12 +293,12 @@ function w() {
     credentials: Chunk15980.Z.getCredentials(),
     hasPendingRegisterTrigger: Chunk15980.Z.hasPendingRegisterTrigger()
   }));
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     exports || Chunk365007.hL()
-  }, [exports]), Chunk647438.useEffect(() => () => {
+  }, [exports]), Chunk473749.useEffect(() => () => {
     Chunk15980.Z.hasPendingRegisterTrigger() && Chunk365007.vg()
   }, []);
-  let [a, s] = Chunk647438.useState(false), c = Chunk647438.useCallback(() => {
+  let [a, s] = Chunk473749.useState(false), c = Chunk473749.useCallback(() => {
     Chunk755721(true), Chunk365007.startRegisterWebAuthnCredential().then(e => {
       let {
         ticket: t,
@@ -314,16 +314,16 @@ function w() {
       Chunk755721(false)
     })
   }, []);
-  return Chunk647438.useEffect(() => {
+  return Chunk473749.useEffect(() => {
     require && !Chunk849055 && (Chunk365007.vg(), Chunk239091())
-  }, [require, Chunk849055, Chunk239091]), (0, Chunk951288.jsxs)(Chunk481060.gNt, {
+  }, [require, Chunk849055, Chunk239091]), (0, Chunk54381.jsxs)(Chunk481060.gNt, {
     label: Chunk388032.intl.string(Chunk388032.t.y7SXYX),
     description: Chunk388032.intl.string(Chunk388032.t.TMukAN),
-    children: [module.length > 0 && (0, Chunk951288.jsx)("div", {
+    children: [module.length > 0 && (0, Chunk54381.jsx)("div", {
       className: Chunk421156.credentialList,
       children: module.map(L)
-    }), (0, Chunk951288.jsx)("div", {
-      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+    }), (0, Chunk54381.jsx)("div", {
+      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t.vrOCCk),

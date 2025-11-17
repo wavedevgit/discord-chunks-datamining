@@ -5,7 +5,7 @@ require.d(exports, {
   G: () => c,
   Q: () => l
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk232567 = require("./232567.js"),
   Chunk594174 = require("./594174.js"),
@@ -15,7 +15,7 @@ let l = 3;
 function c() {
   let e = (0, Chunk442837.Wu)([Chunk276444.Z], () => Chunk276444.Z.getSentUserIds()),
     t = (0, Chunk442837.Wu)([Chunk594174.default], () => module.map(e => o.default.getUser(e)).filter(e => null != e));
-  return Chunk647438.useEffect(() => {
+  return Chunk473749.useEffect(() => {
     module.forEach(e => {
       (0, a.PR)(e)
     })

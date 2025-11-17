@@ -3,8 +3,8 @@
 require.d(exports, {
   o: () => N
 }), require("./388685.js");
-var n, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var n, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk948789 = require("./948789.js"),
   Chunk66037 = require("./66037.jsx"),
   Chunk248108 = require("./248108.jsx"),
@@ -20,7 +20,7 @@ function u(e, t, a) {
   }) : e[t] = a, e
 }
 let _ = Chunk231338.j_.MAIN_NAVIGATION_MENU;
-class N extends(n = Chunk647438.PureComponent) {
+class N extends(n = Chunk473749.PureComponent) {
   render() {
     let e, t = (0, Chunk948789.fQ)(this.context.router),
       {

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => A
 }), require("./953529.js"), require("./388685.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -69,8 +69,8 @@ function N(e) {
 }
 
 function Z() {
-  let e = Chunk647438.useMemo(() => u()((0, Chunk612226.Rv)()).groupBy(e => e.group).value(), []);
-  return (0, Chunk951288.jsx)("div", {
+  let e = Chunk473749.useMemo(() => u()((0, Chunk612226.Rv)()).groupBy(e => e.group).value(), []);
+  return (0, Chunk54381.jsx)("div", {
     className: Chunk870525.keyboardShortcutList,
     children: P.map(t => {
       let n = e[t],
@@ -110,7 +110,7 @@ function Z() {
     })
   })
 }
-class w extends Chunk647438.PureComponent {
+class w extends Chunk473749.PureComponent {
   componentDidMount() {
     this.lastInputedKeys = [], Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_UP, this.scrollPageUp), Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
       capture: true
@@ -132,48 +132,48 @@ class w extends Chunk647438.PureComponent {
       LEFT: n,
       RIGHT: i
     } = this.state;
-    return (0, Chunk951288.jsxs)(Chunk748780.Z.div, {
+    return (0, Chunk54381.jsxs)(Chunk748780.Z.div, {
       className: Chunk870525.keyboardShortcutsModal,
       style: this.getStyles(),
-      children: [(0, Chunk951288.jsxs)(Chunk481060.H, {
+      children: [(0, Chunk54381.jsxs)(Chunk481060.H, {
         className: Chunk870525.modalTitle,
-        children: [(0, Chunk951288.jsx)("div", {
+        children: [(0, Chunk54381.jsx)("div", {
           className: Chunk870525.content,
           children: Chunk388032.intl.string(Chunk388032.t["1BdUtx"])
-        }), (0, Chunk951288.jsx)(Chunk481060.M2$, {
+        }), (0, Chunk54381.jsx)(Chunk481060.M2$, {
           shortcut: "mod+/"
         })]
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk870525.modalSubtitle,
         children: Chunk388032.intl.string(Chunk388032.t["2t19lU"])
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk870525.ddrArrows,
-        children: [(0, Chunk951288.jsx)(T, {
+        children: [(0, Chunk54381.jsx)(T, {
           arrow: "LEFT",
           isActive: require,
           className: Chunk870525.left,
           children: "left"
-        }), (0, Chunk951288.jsx)(T, {
+        }), (0, Chunk54381.jsx)(T, {
           arrow: "DOWN",
           isActive: exports,
           className: Chunk870525.down,
           children: "down"
-        }), (0, Chunk951288.jsx)(T, {
+        }), (0, Chunk54381.jsx)(T, {
           arrow: "UP",
           isActive: module,
           className: Chunk870525.up,
           children: "up"
-        }), (0, Chunk951288.jsx)(T, {
+        }), (0, Chunk54381.jsx)(T, {
           arrow: "RIGHT",
-          isActive: Chunk647438,
+          isActive: Chunk473749,
           className: Chunk870525.right,
           children: "right"
         })]
-      }), (0, Chunk951288.jsx)(Chunk481060.yWw, {
+      }), (0, Chunk54381.jsx)(Chunk481060.yWw, {
         ref: this.scrollerRef,
         fade: true,
-        children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
-          children: (0, Chunk951288.jsx)(Z, {})
+        children: (0, Chunk54381.jsx)(Chunk481060.y5t, {
+          children: (0, Chunk54381.jsx)(Z, {})
         })
       })]
     })

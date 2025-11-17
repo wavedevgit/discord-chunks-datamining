@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => y
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594190 = require("./594190.js"),
@@ -54,36 +54,36 @@ function g(e) {
 
 function E() {
   let e = (0, Chunk865066.O9)(),
-    [t, n] = Chunk647438.useState(false),
-    [c, d] = Chunk647438.useState(() => (0, Chunk865066.aL)()),
+    [t, n] = Chunk473749.useState(false),
+    [c, d] = Chunk473749.useState(() => (0, Chunk865066.aL)()),
     f = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getSystemServiceStatus("input-service")),
-    m = Chunk647438.useCallback(async () => {
+    m = Chunk473749.useCallback(async () => {
       require(true), Chunk823379 ? await (0, Chunk865066.OK)("windows-settings") : await (0, Chunk865066.sU)("windows-settings"), require(false), Chunk358085((0, Chunk865066.aL)())
     }, [Chunk823379]);
   if (!module) return null;
   let E = "running" === Chunk998502.state;
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk761588.systemServiceContainer,
-    children: [(0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk761588.systemServiceTextContainer,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",
         children: Chunk388032.intl.string(Chunk388032.t.roHq80)
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: Chunk388032.intl.format(Chunk388032.t["8CAL+D"], {
           helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SYSTEM_SERVICE)
         })
-      }), Chunk823379 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), Chunk823379 ? (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: E ? "text-feedback-positive" : "text-feedback-warning",
         children: E ? Chunk388032.intl.string(Chunk388032.t.KHVMkW) : Chunk388032.intl.format(Chunk388032.t["5Rlr0b"], {
           status: g(Chunk998502)
         })
       }) : null]
-    }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Button, {
       variant: Chunk823379 ? "critical-secondary" : "primary",
       loading: exports,
       onClick: m,
@@ -91,7 +91,7 @@ function E() {
     })]
   })
 }
-class b extends Chunk647438.PureComponent {
+class b extends Chunk473749.PureComponent {
   async componentDidMount() {
     this.setState({
       openOnStartup: await Chunk998502.ZP.getSetting("OPEN_ON_STARTUP", true),
@@ -105,30 +105,30 @@ class b extends Chunk647438.PureComponent {
       startMinimized: t,
       minimizeToTray: n
     } = this.state, i = (0, Chunk358085.isLinux)() ? Chunk388032.intl.string(Chunk388032.t["7pPjTW"]) : Chunk388032.intl.string(Chunk388032.t.ZkDZov);
-    return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+    return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       gap: 16,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: Chunk647438
-      }), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+        children: Chunk473749
+      }), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t.WQm4p1),
           description: Chunk388032.intl.string(Chunk388032.t["s/cQrU"]),
           checked: module,
           onChange: this.handleToggleOpenOnStartup
-        }), (0, Chunk358085.isWindows)() ? (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        }), (0, Chunk358085.isWindows)() ? (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t.n7Yjes),
           description: Chunk388032.intl.string(Chunk388032.t.o2FSjB),
           checked: !!module && exports,
           disabled: !module,
           onChange: this.handleToggleStartMinimized
-        }) : null, (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        }) : null, (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t.abLFes),
           description: Chunk388032.intl.string(Chunk388032.t["mVuX+j"]),
           checked: require,
           onChange: this.handleToggleMinimizeToTray
-        }), (0, Chunk951288.jsx)(E, {})]
+        }), (0, Chunk54381.jsx)(E, {})]
       })]
     })
   }

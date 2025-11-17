@@ -5,8 +5,8 @@ require.d(exports, {
   Z: () => k,
   d: () => j
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -82,7 +82,7 @@ function M(e) {
 }
 
 function k() {
-  let e = Chunk647438.useRef(null),
+  let e = Chunk473749.useRef(null),
     t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     n = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId(exports)),
     {
@@ -106,39 +106,39 @@ function k() {
       } = e;
       null != t && (T.Z.isFullServerPreview(t) && (0, g.uL)(A.Z5c.CHANNEL(t)), _.ZP.shouldShowOnboarding(t) && (f.Z.finishOnboarding(t), (0, p.EI)(t)), (0, I.mL)(t), n && m.Z.open(t, o), o === A.pNK.ROLE_SUBSCRIPTIONS && (0, h.GN)(t))
     };
-  return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
+  return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
     className: Chunk829675.notice,
-    children: [(0, Chunk951288.jsxs)(w, {
+    children: [(0, Chunk54381.jsxs)(w, {
       onClick: () => G({
         backToSettings: true
       }),
       className: Chunk829675.backButton,
-      children: [(0, Chunk951288.jsx)(Chunk671533.Z, {
+      children: [(0, Chunk54381.jsx)(Chunk671533.Z, {
         width: 16,
         height: 16,
         direction: Chunk671533.Z.Directions.LEFT,
         className: Chunk829675.backArrow
       }), k]
-    }), U && Chunk755721 ? (0, Chunk951288.jsx)("div", {
+    }), U && Chunk755721 ? (0, Chunk54381.jsx)("div", {
       className: Chunk829675.noticeContents,
-      children: (0, Chunk951288.jsx)("div", {
+      children: (0, Chunk54381.jsx)("div", {
         className: Chunk829675.noticeText,
         children: Chunk388032.intl.string(Chunk388032.t.PxbiAf)
       })
-    }) : (0, Chunk951288.jsxs)("div", {
+    }) : (0, Chunk54381.jsxs)("div", {
       className: Chunk829675.noticeContents,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: Chunk829675.noticeText,
         children: Chunk755721 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["0PHahI"], {
           numRoles: Object.keys(Chunk120356).length
         }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.vMlK8t, {
           numRoles: Object.keys(Chunk120356).length
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.yRy, {
+      }), (0, Chunk54381.jsx)(Chunk481060.yRy, {
         targetElementRef: module,
         position: "bottom",
-        renderPopout: () => (0, Chunk951288.jsx)(Chunk889695.Z, {
+        renderPopout: () => (0, Chunk54381.jsx)(Chunk889695.Z, {
           guildId: exports
         }),
         children: t => {
@@ -156,25 +156,25 @@ function k() {
             })]
           })
         }
-      }), Chunk755721 && (0, Chunk951288.jsx)(Chunk28664.u, {
+      }), Chunk755721 && (0, Chunk54381.jsx)(Chunk28664.u, {
         asContainer: true,
         text: Chunk388032.intl.string(Chunk388032.t.mW4DUE),
-        children: (0, Chunk951288.jsx)(Chunk481060.Mgn, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Mgn, {
           size: "xs",
           color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
         })
-      }), Chunk358085 && (0, Chunk951288.jsx)(Chunk28664.u, {
+      }), Chunk358085 && (0, Chunk54381.jsx)(Chunk28664.u, {
         asContainer: true,
         text: Chunk388032.intl.formatToPlainString(Chunk388032.t.eummvd, {
           maxTiers: Chunk293810.fF,
           maxProducts: Chunk302463.dD
         }),
-        children: (0, Chunk951288.jsx)(Chunk481060.Mgn, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Mgn, {
           size: "xs",
           color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
         })
       })]
-    }), Chunk755721 || o === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? null : (0, Chunk951288.jsx)(x, {
+    }), Chunk755721 || o === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? null : (0, Chunk54381.jsx)(x, {
       onClick: () => G({
         backToSettings: false
       })

@@ -4,13 +4,13 @@
 require.d(exports, {
   E: () => o
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk907331 = require("./907331.js");
 let a = 100,
   o = function() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
-      [t, n] = (0, Chunk647438.useState)(1),
-      o = (0, Chunk647438.useMemo)(() => ({
+      [t, n] = (0, Chunk473749.useState)(1),
+      o = (0, Chunk473749.useMemo)(() => ({
         threshold: Array.from({
           length: a + 1
         }, (e, t) => t / a)

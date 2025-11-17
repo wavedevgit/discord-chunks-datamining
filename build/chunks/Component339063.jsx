@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => d
 }), require("./388685.js"), require("./35282.js"), require("./781311.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -28,19 +28,19 @@ let d = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_PHRASES, {
   },
   render: () => {
     let t = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().autoClipPhrases),
-      [e, n] = Chunk647438.useState(module.join(", ")),
-      a = Chunk647438.useMemo(() => (0, Chunk392711.debounce)(t => {
+      [e, n] = Chunk473749.useState(module.join(", ")),
+      a = Chunk473749.useMemo(() => (0, Chunk392711.debounce)(t => {
         let e = t.split(",").map(t => t.trim()).filter(t => t.length > 0);
         c.a2(e)
       }, 200), []),
-      E = Chunk647438.useCallback(t => {
+      E = Chunk473749.useCallback(t => {
         n(t), a(t)
       }, [Chunk924557]);
-    return (0, Chunk951288.jsx)(Chunk481060.gNt, {
+    return (0, Chunk54381.jsx)(Chunk481060.gNt, {
       label: Chunk388032.intl.string(Chunk388032.t.JIze0o),
       description: Chunk388032.intl.string(Chunk388032.t.dA2fYk),
       layout: "vertical",
-      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
+      children: (0, Chunk54381.jsx)(Chunk481060.oil, {
         value: exports,
         onChange: Chunk509613
       })

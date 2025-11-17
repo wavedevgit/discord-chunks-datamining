@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => w
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -36,7 +36,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class O extends Chunk647438.PureComponent {
+class O extends Chunk473749.PureComponent {
   componentDidMount() {
     Chunk626135.default.track(Chunk981631.rMx.OPEN_MODAL, {
       type: "Follow Channel Modal",
@@ -62,18 +62,18 @@ class O extends Chunk647438.PureComponent {
     } = this.state, {
       onClose: r
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
+    return (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
       direction: "horizontal-reverse",
-      children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t["3aOv+h"]),
         loading: require,
         onClick: this.handleFollow,
         disabled: null == module || null == exports
-      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "secondary",
         text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
-        onClick: Chunk647438
+        onClick: Chunk473749
       })]
     })
   }
@@ -106,9 +106,9 @@ class O extends Chunk647438.PureComponent {
         category: n
       }
     }), d = 0 === i.length, c = Chunk570140 ? Chunk388032.intl.string(Chunk388032.t["6b6QoF"]) : Chunk388032.intl.string(Chunk388032.t.Z0quyN);
-    return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+    return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       gap: 16,
-      children: [(0, Chunk951288.jsx)(Chunk481060.VcW, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.VcW, {
         label: Chunk388032.intl.string(Chunk388032.t.xFn72s),
         value: require,
         options: i,
@@ -124,9 +124,9 @@ class O extends Chunk647438.PureComponent {
             size: m.Z.Sizes.MINI
           })
         })(e)
-      }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
+      }), (0, Chunk54381.jsx)(Chunk481060.VcW, {
         label: Chunk388032.intl.string(Chunk388032.t.PDn2fR),
-        value: Chunk647438,
+        value: Chunk473749,
         options: Chunk442837,
         isDisabled: 0 === Chunk442837.length,
         onChange: this.handleChannelSelect,
@@ -141,7 +141,7 @@ class O extends Chunk647438.PureComponent {
             className: M.icon
           })
         })(e)
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: Chunk570140 || null != Chunk120356 ? "text-danger" : "text-muted",
         className: Chunk910742.bottomMargin,
@@ -155,20 +155,20 @@ class O extends Chunk647438.PureComponent {
         nsfw: e
       }
     } = this.props;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk910742.body,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         id: this.state.headerId,
         children: Chunk388032.intl.string(Chunk388032.t.mvPFbA)
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         color: "text-muted",
         className: i()(Chunk910742.topMargin, {
           [Chunk910742.formMargin]: !module
         }),
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk388032.t.kbpkxJ)
-      }), module ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), module ? (0, Chunk54381.jsx)(Chunk481060.Text, {
         className: i()(Chunk910742.formMargin, Chunk910742.topMargin),
         color: "text-danger",
         variant: "text-sm/normal",
@@ -182,23 +182,23 @@ class O extends Chunk647438.PureComponent {
       guildToFollow: t,
       channelNameToFollow: n,
       channel: r
-    } = this.props, a = null != (e = (0, Chunk471445.KS)(Chunk647438)) ? module : Chunk481060.MqZ;
-    return (0, Chunk951288.jsxs)(Chunk481060.xBx, {
+    } = this.props, a = null != (e = (0, Chunk471445.KS)(Chunk473749)) ? module : Chunk481060.MqZ;
+    return (0, Chunk54381.jsxs)(Chunk481060.xBx, {
       className: Chunk910742.header,
-      children: [(0, Chunk951288.jsx)(Chunk565138.Z, {
+      children: [(0, Chunk54381.jsx)(Chunk565138.Z, {
         guild: exports,
         size: Chunk565138.Z.Sizes.LARGE
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk910742.channelContainer,
-        children: (0, Chunk951288.jsxs)("div", {
+        children: (0, Chunk54381.jsxs)("div", {
           className: Chunk910742.channel,
-          children: [(0, Chunk951288.jsx)(Chunk120356, {
+          children: [(0, Chunk54381.jsx)(Chunk120356, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
             className: Chunk910742.channelIcon
-          }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+          }), (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-md/medium",
             className: Chunk910742.channelName,
             children: require
@@ -211,14 +211,14 @@ class O extends Chunk647438.PureComponent {
     let {
       transitionState: e
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
+    return (0, Chunk54381.jsxs)(Chunk481060.Y0X, {
       transitionState: module,
       "aria-labelledby": this.state.headerId,
       parentComponent: "FollowModal",
-      children: [this.renderHeader(), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
+      children: [this.renderHeader(), (0, Chunk54381.jsxs)(Chunk481060.hzk, {
         className: Chunk910742.content,
         children: [this.renderBody(), this.renderForm()]
-      }), (0, Chunk951288.jsx)(Chunk481060.mzw, {
+      }), (0, Chunk54381.jsx)(Chunk481060.mzw, {
         children: this.renderFooter()
       })]
     })

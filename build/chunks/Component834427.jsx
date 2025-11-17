@@ -4,8 +4,8 @@
 require.d(exports, {
   S: () => c
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js");
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,7 +26,7 @@ let s = "file-input",
     cursor: e ? "not-allowed" : "pointer",
     fontSize: 0
   });
-class c extends(r = Chunk647438.Component) {
+class c extends(r = Chunk473749.Component) {
   render() {
     let {
       disabled: e,
@@ -37,7 +37,7 @@ class c extends(r = Chunk647438.Component) {
       "aria-hidden": o,
       id: c
     } = this.props, u = "";
-    return this.props.filters && (u = this.props.filters.map(e => e.extensions.map(e => ".".concat(e)).join(",")).join(",")), (0, Chunk951288.jsx)("input", {
+    return this.props.filters && (u = this.props.filters.map(e => e.extensions.map(e => ".".concat(e)).join(",")).join(",")), (0, Chunk54381.jsx)("input", {
       id: c,
       style: l(module),
       className: require || s,
@@ -50,7 +50,7 @@ class c extends(r = Chunk647438.Component) {
       multiple: this.props.multiple,
       accept: u,
       name: r,
-      "aria-label": Chunk647438,
+      "aria-label": Chunk473749,
       "aria-hidden": o || true,
       ref: e => {
         this._input = e

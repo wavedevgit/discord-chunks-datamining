@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => g
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk725803 = require("./725803.js"),
@@ -22,8 +22,8 @@ function g() {
       loading: g
     } = (0, Chunk725803.Z)(null == module ? true : module.id, Chunk674563.wW.GUILD_ROLE_SUBSCRIPTIONS),
     m = null != require && (null == module ? true : module.features.has(Chunk981631.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) === true;
-  return (0, Chunk951288.jsx)("main", {
-    children: null == module || !exports || g ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : (0, Chunk951288.jsx)(Chunk469351.t, {
+  return (0, Chunk54381.jsx)("main", {
+    children: null == module || !exports || g ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : (0, Chunk54381.jsx)(Chunk469351.t, {
       guildId: module.id,
       hasValidApplication: m
     })

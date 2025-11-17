@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => S
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
@@ -106,9 +106,9 @@ function S(e) {
 
 function C() {
   let e = Chunk996733.Z.useField("query"),
-    t = Chunk647438.useRef(null),
+    t = Chunk473749.useRef(null),
     [n, i] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),
-    c = Chunk647438.useMemo(() => ({
+    c = Chunk473749.useMemo(() => ({
       title: Chunk388032.intl.string(Chunk388032.t.Kv519a),
       body: Chunk388032.intl.string(Chunk388032.t.cTGJBZ),
       badge: "new",
@@ -116,28 +116,28 @@ function C() {
       align: "center",
       scrollBehavior: "sticky"
     }), []),
-    d = Chunk647438.useCallback(e => {
+    d = Chunk473749.useCallback(e => {
       j.Z.setState({
         query: e
       })
     }, []),
-    f = Chunk647438.useCallback(() => {
+    f = Chunk473749.useCallback(() => {
       Chunk996733.Z.setState({
         query: ""
       })
     }, []);
-  return (0, Chunk951288.jsx)("div", {
-    children: (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsx)("div", {
+    children: (0, Chunk54381.jsxs)("div", {
       className: Chunk942408.searchBarContainer,
-      children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.E1j, {
         size: "md",
         query: module,
         onChange: Chunk82084,
         onClear: Chunk131051
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk942408.popoverAnchor,
         ref: exports
-      }), (0, Chunk951288.jsx)(Chunk886880.Z, {
+      }), (0, Chunk54381.jsx)(Chunk886880.Z, {
         dismissibleContentType: Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER,
         targetElementRef: exports,
         visibleContent: require,
@@ -149,13 +149,13 @@ function C() {
 }
 
 function _() {
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk942408.emptySearchResultsContainer,
-    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/semibold",
       color: "text-primary",
       children: Chunk388032.intl.string(Chunk388032.t.zihbmv)
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
       children: Chunk388032.intl.string(Chunk388032.t.XclvsB)

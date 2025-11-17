@@ -4,8 +4,8 @@
 require.d(exports, {
   U: () => P
 }), require("./388685.js"), require("./781311.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk688619 = require("./688619.js"),
   o = require.n(Chunk688619),
   Chunk120356 = require("./120356.js"),
@@ -25,13 +25,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk209289 = require("./209289.js");
 
 function v() {
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: Chunk209289.loader,
-    children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
+    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   })
 }
 let I = (0, Chunk608787.Un)({
-    createPromise: () => Promise.all([require.e("3115"), require.e("35855")]).then(require.bind(require, 164267)),
+    createPromise: () => Promise.all([require.e("66382"), require.e("35855")]).then(require.bind(require, 164267)),
     webpackId: 164267,
     name: "CustomThemeColorPickerControlV2",
     renderLoader: v

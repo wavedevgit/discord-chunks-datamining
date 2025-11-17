@@ -5,8 +5,8 @@ require.d(exports, {
   I: () => eE,
   Z: () => eb
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk399606 = require("./399606.js"),
   Chunk704215 = require("./704215.js"),
   Chunk410030 = require("./410030.js"),
@@ -129,7 +129,7 @@ let eb = () => {
       hideRestrictedProfile: true,
       section: Chunk228168.oh.WIDGETS
     })
-  }, eG = Chunk647438.useCallback(() => {
+  }, eG = Chunk473749.useCallback(() => {
     (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
       section: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
       analyticsLocations: module
@@ -435,7 +435,7 @@ let eb = () => {
       pillText: Chunk388032.intl.string(Chunk388032.t.oW0eUd).toLocaleUpperCase(),
       description: Chunk388032.intl.format(Chunk388032.t.zh1X7u, {}),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.w7s5Qr),
-      customContent: (0, Chunk951288.jsx)(Chunk554930.C, {
+      customContent: (0, Chunk54381.jsx)(Chunk554930.C, {
         percentage: eF
       })
     }
@@ -444,7 +444,7 @@ let eb = () => {
     name: "tenureBadge",
     title: Chunk388032.intl.string(Chunk388032.t.rnsqpa),
     pillText: Chunk388032.intl.string(Chunk388032.t["jyYgZ+"]).toLocaleUpperCase(),
-    perkComponent: (0, Chunk951288.jsx)(Chunk229555.Z, {}),
+    perkComponent: (0, Chunk54381.jsx)(Chunk229555.Z, {}),
     cardVariant: Chunk391110.zW.NITRO_GRADIENT_HOVER_BORDER,
     onClick: () => (0, Chunk768865.k)({
       analyticsLocations: module

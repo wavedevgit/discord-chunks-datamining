@@ -594,14 +594,14 @@ function e1(e) {
   }), ej(), ex(), i && eS()
 }
 
-function e2(e) {
+function e3(e) {
   let t = eA(e.game);
   delete eo.gameOverrides[t], delete eo.enableOverlay[t], delete eo.enableDetection[t], eo.gamesSeen = eo.gamesSeen.filter(e => eA(e) !== t), ea[t] && (et.forEach(e => {
     t === eA(e) && (e.hidden = true)
   }), delete ea[t]), et.some(e => eA(e) === t) && eS(), ej(), ex()
 }
 
-function e3(e) {
+function e2(e) {
   var t;
   if (__OVERLAY__ || !D.isPlatformEmbedded) return;
   let n = w.ZP.getDiscordUtils().notifyGameLaunched;
@@ -614,7 +614,7 @@ function e4() {
   Chunk353926.Z.hasLoadedExperiments && K.length > 0 && (eG(K), K = [])
 }
 
-function e8(e) {
+function e5(e) {
   let {
     status: t,
     modules: n
@@ -738,7 +738,7 @@ function e8(e) {
     })
   })
 });
-class e5 extends(i = Chunk442837.ZP.Store) {
+class e8 extends(i = Chunk442837.ZP.Store) {
   initialize() {
     var e, t, n, r, i;
     let a = null != (e = Chunk433517.K.get(H)) ? module : {
@@ -871,8 +871,8 @@ class e5 extends(i = Chunk442837.ZP.Store) {
     return (null == (t = Q[e]) ? true : t.state) === "running"
   }
 }
-G(e5, "displayName", "RunningGameStore");
-let e6 = new e5(Chunk570140.Z, {
+G(e8, "displayName", "RunningGameStore");
+let e6 = new e8(Chunk570140.Z, {
     RUNNING_GAMES_CHANGE: eF,
     CANDIDATE_GAMES_CHANGE: eV,
     PERMISSION_CLEAR_PTT_ADMIN_WARNING: eH,
@@ -883,13 +883,13 @@ let e6 = new e5(Chunk570140.Z, {
     RUNNING_GAME_TOGGLE_OVERLAY: e$,
     RUNNING_GAME_TOGGLE_DETECTION: e0,
     RUNNING_GAME_EDIT_NAME: e1,
-    RUNNING_GAME_DELETE_ENTRY: e2,
+    RUNNING_GAME_DELETE_ENTRY: e3,
     GAMES_DATABASE_UPDATE: es,
-    GAME_LAUNCH_SUCCESS: e3,
+    GAME_LAUNCH_SUCCESS: e2,
     GAME_DETECTION_WATCH_CANDIDATE_GAMES_START: eq,
     GAME_DETECTION_DEBUGGING_START: eX,
     GAME_DETECTION_DEBUGGING_STOP: eQ,
     GAME_DETECTION_DEBUGGING_TICK: eJ,
-    SYSTEM_SERVICE_INITIALIZE: e8
+    SYSTEM_SERVICE_INITIALIZE: e5
   }),
   e7 = e6

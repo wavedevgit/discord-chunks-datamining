@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => c
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk399606 = require("./399606.js"),
   Chunk675478 = require("./675478.js"),
   Chunk208049 = require("./208049.js"),
@@ -15,7 +15,7 @@ function c() {
   let e = (0, Chunk771784.q3)("useFetchSoundboardData");
   return {
     fetching: (0, Chunk399606.e7)([Chunk763296.Z], () => Chunk763296.Z.isFetchingAnySounds()),
-    maybeFetchData: Chunk647438.useCallback(() => {
+    maybeFetchData: Chunk473749.useCallback(() => {
       Chunk208049.w(), Chunk675478.DZ.loadIfNecessary()
     }, [module.sortingStrategy])
   }

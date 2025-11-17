@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => v
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
@@ -88,8 +88,8 @@ function O(e) {
 }
 
 function v() {
-  let [e, t] = (0, Chunk442837.Wu)([Chunk594190.ZP], () => [Chunk594190.ZP.canShowAdminWarning, Chunk594190.ZP.getVisibleGame()], []), n = (0, Chunk442837.e7)([Chunk19780.Z], () => Chunk19780.Z.isConnected(), []), o = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode() === Chunk981631.pM4.PUSH_TO_TALK, []), l = null != exports && exports.elevated && require && Chunk159691 && module, c = Chunk647438.useRef(null);
-  return Chunk647438.useEffect(() => {
+  let [e, t] = (0, Chunk442837.Wu)([Chunk594190.ZP], () => [Chunk594190.ZP.canShowAdminWarning, Chunk594190.ZP.getVisibleGame()], []), n = (0, Chunk442837.e7)([Chunk19780.Z], () => Chunk19780.Z.isConnected(), []), o = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode() === Chunk981631.pM4.PUSH_TO_TALK, []), l = null != exports && exports.elevated && require && Chunk159691 && module, c = Chunk473749.useRef(null);
+  return Chunk473749.useEffect(() => {
     if (!(0, Chunk865066.s2)(Chunk594190.ZP)) return Chunk923928 ? Chunk493773.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(O, E({
       currentGame: t
     }, e))) : module(), () => {

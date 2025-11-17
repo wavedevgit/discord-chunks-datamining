@@ -4,8 +4,8 @@
 require.d(exports, {
   iZ: () => M
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk289008 = require("./289008.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk575053 = require("./575053.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -75,12 +75,12 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
     let {
       elementsAppearanceOptions: e
     } = (0, Chunk878836.M)();
-    return (0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+    return (0, Chunk54381.jsxs)("div", {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         className: Chunk605532.headerWithSpacing,
         children: "Default Options"
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         children: Object.entries(module).map(e => {
           let [t, n] = e;
           return (0, r.jsx)(_.T, {

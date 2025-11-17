@@ -31,7 +31,7 @@ require.d(exports, {
   iO: () => eC,
   kJ: () => eP,
   ly: () => em,
-  m4: () => e2,
+  m4: () => e3,
   me: () => eB,
   qI: () => eV,
   qb: () => eZ,
@@ -46,7 +46,7 @@ require.d(exports, {
   z6: () => eD,
   zB: () => ez
 }), require("./388685.js"), require("./642613.js"), require("./539854.js"), require("./953529.js"), require("./314940.js");
-var Chunk647438 = require("./647438.js");
+var Chunk473749 = require("./473749.js");
 require("./512722.js");
 var Chunk392711 = require("./392711.js"),
   Chunk278074 = require("./278074.js"),
@@ -97,7 +97,7 @@ function W() {
       fetchPolicy: "cache-only",
       callerSource: "unknown"
     },
-    [t, n] = Chunk647438.useState(false),
+    [t, n] = Chunk473749.useState(false),
     i = (0, Chunk442837.Wu)([Chunk569984.Z], () => [...Chunk569984.Z.quests.values()]),
     a = (0, Chunk442837.Wu)([Chunk569984.Z], () => [...Chunk569984.Z.excludedQuests.values()]),
     {
@@ -113,7 +113,7 @@ function W() {
     u = Chunk937797.DL.useConfig({
       location: Chunk46140.dr.USE_QUESTS
     });
-  return Chunk647438.useEffect(() => {
+  return Chunk473749.useEffect(() => {
     if ("cache-only" !== module.fetchPolicy && ("cache-and-network" === module.fetchPolicy || "cache-or-network" === module.fetchPolicy && 0 === Chunk959078) && Chunk780384 && !exports && !Chunk754700) {
       if (require(true), (0, Chunk22095.xw)(), !Chunk410030.enabled || "focused" === Chunk15624.Z.getState()) {
         let {
@@ -149,8 +149,8 @@ function K(e, t) {
       minutes: g
     } = (0, w.eC)(G.dr.QUEST_HOME_DESKTOP),
     E = O.Z.Millis.MINUTE * g,
-    b = e3(e, E),
-    y = e3(t, E);
+    b = e2(e, E),
+    y = e2(t, E);
   return d ? m && b !== y && (b || y) ? b ? H : V : f !== _ ? f ? H : V : p !== h ? p ? V : H : eo(e.config.expiresAt, t.config.expiresAt, 1) : f !== _ ? f ? V : H : p !== h ? p ? V : H : eo(e.config.expiresAt, t.config.expiresAt, 0)
 }
 
@@ -324,10 +324,10 @@ function ed(e) {
 }
 
 function ef() {
-  let e = Chunk647438.useRef(false),
+  let e = Chunk473749.useRef(false),
     t = (0, Chunk442837.Wu)([Chunk569984.Z], () => Array.from(Chunk569984.Z.claimedQuests.values())),
     n = (0, Chunk442837.e7)([Chunk569984.Z], () => Chunk569984.Z.isFetchingClaimedQuests);
-  return Chunk647438.useEffect(() => {
+  return Chunk473749.useEffect(() => {
     require || module.current || (module.current = true, (0, Chunk22095.Ag)())
   }, [require]), {
     claimedQuests: exports,
@@ -503,24 +503,24 @@ function eC() {
     fetchPolicy: "cache-or-network",
     callerSource: "settings_badge"
   }), n = e_();
-  return Chunk647438.useMemo(() => {
+  return Chunk473749.useMemo(() => {
     let r = [];
-    if (exports || 0 === module.length) return Chunk647438;
+    if (exports || 0 === module.length) return Chunk473749;
     for (let t of module) {
       var i;
       if (!(0, Chunk509212.vR)(exports, Chunk497505.jn.GIFT_INVENTORY_SETTINGS_BADGE) || null != (i = require.get(exports.id)) && Chunk392711) continue;
       if ((null == exports ? true : exports.userStatus) == null) {
-        Chunk647438.push(exports);
+        Chunk473749.push(exports);
         continue
       }
       let e = null != exports.userStatus.claimedAt,
         a = (0, Chunk509212.zE)(exports.userStatus, Chunk497505.jn.GIFT_INVENTORY_SETTINGS_BADGE);
       if (!module && !Chunk278074) {
-        Chunk647438.push(exports);
+        Chunk473749.push(exports);
         continue
       }
     }
-    return Chunk647438
+    return Chunk473749
   }, [module, require, exports])
 }
 
@@ -567,14 +567,14 @@ function eD() {
     xboxAccounts: n,
     playstationAccounts: i,
     xboxAndPlaystationAccounts: a
-  } = Chunk647438.useMemo(() => {
+  } = Chunk473749.useMemo(() => {
     let e = exports.filter(e => false === e.revoked),
       n = module.filter(e => e.type === B.ABu.XBOX),
       r = module.filter(e => e.type === B.ABu.PLAYSTATION),
-      i = require.concat(Chunk647438);
+      i = require.concat(Chunk473749);
     return {
       xboxAccounts: require,
-      playstationAccounts: Chunk647438,
+      playstationAccounts: Chunk473749,
       xboxAndPlaystationAccounts: Chunk392711
     }
   }, [exports]);
@@ -622,11 +622,11 @@ let ew = e => {
     let {
       xboxAccounts: e,
       playstationAccounts: t
-    } = eD(), n = module.length > 0, r = exports.length > 0, i = require && !Chunk647438 || !require && Chunk647438, a = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_PLAYSTATION), o = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_XBOX), s = Chunk388032.intl.format(Chunk388032.t.beN4DG, {
+    } = eD(), n = module.length > 0, r = exports.length > 0, i = require && !Chunk473749 || !require && Chunk473749, a = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_PLAYSTATION), o = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_XBOX), s = Chunk388032.intl.format(Chunk388032.t.beN4DG, {
       psHelpdeskArticle: Chunk278074,
       xboxHelpdeskArticle: Chunk754700
     }), l = Chunk388032.intl.format(Chunk388032.t.HVS7nh, {
-      helpdeskArticle: Chunk647438 ? Chunk278074 : Chunk754700
+      helpdeskArticle: Chunk473749 ? Chunk278074 : Chunk754700
     });
     return {
       message: Chunk392711 ? Chunk780384 : Chunk959078,
@@ -927,11 +927,11 @@ let eq = () => (0, Chunk442837.Wu)([Chunk569984.Z], () => [...Chunk569984.Z.ques
   },
   eJ = () => {
     let e = (0, Chunk442837.Wu)([Chunk569984.Z], () => [...Chunk569984.Z.quests.values()]);
-    return Chunk647438.useMemo(() => module.filter(e => e.preview), [module])
+    return Chunk473749.useMemo(() => module.filter(e => e.preview), [module])
   };
 
 function e$() {
-  return Chunk647438.useMemo(() => Chunk46140.Ew.map(e => {
+  return Chunk473749.useMemo(() => Chunk46140.Ew.map(e => {
     let [t, n] = e;
     return {
       heading: (0, R.T2)(t),
@@ -941,7 +941,7 @@ function e$() {
 }
 
 function e0() {
-  return Chunk647438.useMemo(() => Object.keys(Chunk46140.yq).map(e => ({
+  return Chunk473749.useMemo(() => Object.keys(Chunk46140.yq).map(e => ({
     label: (0, R.NL)(G.yq[e]),
     value: G.yq[e]
   })), [])
@@ -968,7 +968,7 @@ function e1(e) {
     }), o.current = t
   }, [n, i])
 }
-let e2 = e => {
+let e3 = e => {
     let t = false,
       n = r.useMemo(() => {
         var e;
@@ -976,7 +976,7 @@ let e2 = e => {
       }, []);
     return t || n || e.preview
   },
-  e3 = (e, t) => {
+  e2 = (e, t) => {
     var n, r, i;
     let a = (null == (n = e.userStatus) ? true : n.completedAt) != null;
     return (null == (r = e.userStatus) ? true : r.enrolledAt) != null && !a && Date.now() - new Date(null == (i = e.userStatus) ? true : i.enrolledAt).getTime() > t

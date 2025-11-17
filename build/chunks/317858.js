@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => v
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk166516 = require("./166516.js"),
   l = require.n(Chunk166516),
   Chunk525654 = require("./525654.js"),
@@ -42,9 +42,9 @@ function v() {
         n = Chunk888369.default.hasAnyUnread(),
         r = Chunk292959.Z.getDisableUnreadBadge(),
         i = module + exports;
-      return 0 === Chunk166516 && require && !Chunk647438 && (i = false), Chunk166516
+      return 0 === Chunk166516 && require && !Chunk473749 && (i = false), Chunk166516
     });
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     if (!module) return;
     let t = Chunk998502.ZP.bounceDock("critical"),
       n = (0, Chunk252618.EM)({
@@ -54,7 +54,7 @@ function v() {
     return () => {
       null == exports || exports(), require()
     }
-  }, [module]), Chunk647438.useEffect(() => {
+  }, [module]), Chunk473749.useEffect(() => {
     y(exports)
-  }, [exports]), Chunk647438.useEffect(() => () => y(0), [])
+  }, [exports]), Chunk473749.useEffect(() => () => y(0), [])
 }

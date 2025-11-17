@@ -6,8 +6,8 @@ require.d(exports, {
   ZP: () => eu,
   rp: () => V
 }), require("./415506.js"), require("./953529.js"), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -103,8 +103,8 @@ function F(e) {
 function V(e) {
   return "autocomplete-".concat(e, "-title")
 }
-let H = Chunk647438.createContext(null);
-class Y extends Chunk647438.PureComponent {
+let H = Chunk473749.createContext(null);
+class Y extends Chunk473749.PureComponent {
   isSelectable() {
     return this.selectable
   }
@@ -146,7 +146,7 @@ class Y extends Chunk647438.PureComponent {
     let {
       index: e
     } = this.props;
-    return this.isSelectable() ? (0, Chunk951288.jsx)(Chunk91192.mh, {
+    return this.isSelectable() ? (0, Chunk54381.jsx)(Chunk91192.mh, {
       id: "".concat(module),
       children: e => this.renderClickable(e)
     }) : this.renderClickable()
@@ -177,14 +177,14 @@ class W extends Y {
       description: t,
       badge: n
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk965386.RX, {
-      children: [(0, Chunk951288.jsx)(Chunk965386.z5, {
-        children: (0, Chunk951288.jsxs)(Chunk965386.BR, {
-          children: [module, " ", null != require && (0, Chunk951288.jsx)(Chunk313666.C, {
+    return (0, Chunk54381.jsxs)(Chunk965386.RX, {
+      children: [(0, Chunk54381.jsx)(Chunk965386.z5, {
+        children: (0, Chunk54381.jsxs)(Chunk965386.BR, {
+          children: [module, " ", null != require && (0, Chunk54381.jsx)(Chunk313666.C, {
             type: require
           })]
         })
-      }), null != exports ? (0, Chunk951288.jsx)(Chunk965386.dY, {
+      }), null != exports ? (0, Chunk54381.jsx)(Chunk965386.dY, {
         children: exports
       }) : null]
     })
@@ -232,7 +232,7 @@ class q extends Y {
     let {
       className: e
     } = this.props;
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: s()(module, Chunk512746.divider)
     })
   }
@@ -250,23 +250,23 @@ class X extends Y {
       hidePersonalInformation: a,
       guildId: o
     } = this.props, s = null == Chunk120356 ? Chunk699516.Z.getNickname(exports.id) : null;
-    return (0, Chunk951288.jsxs)(Chunk965386.RX, {
-      children: [(0, Chunk951288.jsx)(Chunk965386.Tw, {
-        children: (0, Chunk951288.jsx)(Chunk481060.qEK, {
+    return (0, Chunk54381.jsxs)(Chunk965386.RX, {
+      children: [(0, Chunk54381.jsx)(Chunk965386.Tw, {
+        children: (0, Chunk54381.jsx)(Chunk481060.qEK, {
           size: Chunk481060.EFr.SIZE_24,
           src: exports.getAvatarURL(Chunk120356, 24),
           "aria-hidden": true,
           status: r
         })
-      }), (0, Chunk951288.jsx)(Chunk965386.z5, {
-        children: (0, Chunk951288.jsx)(Chunk965386.BR, {
+      }), (0, Chunk54381.jsx)(Chunk965386.z5, {
+        children: (0, Chunk54381.jsx)(Chunk965386.BR, {
           children: null != (e = null != require ? require : s) ? module : Chunk51144.ZP.getName(exports)
         })
-      }), (0, Chunk951288.jsxs)(Chunk965386.dY, {
+      }), (0, Chunk54381.jsxs)(Chunk965386.dY, {
         children: [Chunk51144.ZP.getUserTag(exports, {
           mode: "username",
-          identifiable: Chunk647438 ? "never" : "always"
-        }), Chunk647438 || exports.hasUniqueUsername() ? null : (0, Chunk951288.jsxs)("span", {
+          identifiable: Chunk473749 ? "never" : "always"
+        }), Chunk473749 || exports.hasUniqueUsername() ? null : (0, Chunk54381.jsxs)("span", {
           className: Chunk512746.descriptionDiscriminator,
           children: ["#", exports.discriminator]
         })]
@@ -287,43 +287,43 @@ class Q extends Y {
       selected: c,
       layout: u = "horizontal"
     } = this.props, d = null == Chunk392711 ? Chunk699516.Z.getNickname(exports.id) : null, _ = null != (e = null != require ? require : Chunk313666) ? module : Chunk51144.ZP.getName(exports);
-    return (0, Chunk951288.jsxs)(Chunk965386.RX, {
+    return (0, Chunk54381.jsxs)(Chunk965386.RX, {
       className: s()({
         [Chunk512746.verticalLayout]: "vertical-suggestion" === Chunk91192
       }),
-      children: [(0, Chunk951288.jsx)(Chunk965386.Tw, {
-        children: (0, Chunk951288.jsx)(Chunk481060.qEK, {
+      children: [(0, Chunk54381.jsx)(Chunk965386.Tw, {
+        children: (0, Chunk54381.jsx)(Chunk481060.qEK, {
           size: Chunk481060.EFr.SIZE_32,
           src: exports.getAvatarURL(Chunk392711, 32),
           "aria-hidden": true,
-          status: Chunk647438
+          status: Chunk473749
         })
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk512746.autocompleteContentWrapper,
         "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t["9v/R+j"], {
           name: Chunk607070
         }),
-        children: [(0, Chunk951288.jsx)(Chunk965386.z5, {
-          children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk965386.z5, {
+          children: (0, Chunk54381.jsx)(Chunk481060.Text, {
             className: Chunk512746.autocompleteRowHeading,
             color: "interactive-active",
             variant: "text-sm/medium",
             children: Chunk607070
           })
-        }), (0, Chunk951288.jsx)(Chunk965386.dY, {
-          children: null == r || r === Chunk607070.toLocaleLowerCase() || r === exports.username.toLocaleLowerCase() ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        }), (0, Chunk54381.jsx)(Chunk965386.dY, {
+          children: null == r || r === Chunk607070.toLocaleLowerCase() || r === exports.username.toLocaleLowerCase() ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
             children: [Chunk51144.ZP.getUserTag(exports, {
               mode: "username",
               identifiable: Chunk120356 ? "never" : "always"
-            }), Chunk120356 || exports.hasUniqueUsername() ? null : (0, Chunk951288.jsxs)("span", {
+            }), Chunk120356 || exports.hasUniqueUsername() ? null : (0, Chunk54381.jsxs)("span", {
               className: Chunk512746.descriptionDiscriminator,
               children: ["#", exports.discriminator]
             })]
           }) : r
         })]
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk512746.keyComboContainer,
-        children: c ? (0, Chunk951288.jsx)(Chunk481060.M2$, {
+        children: c ? (0, Chunk54381.jsx)(Chunk481060.M2$, {
           shortcut: "tab",
           dim: true
         }) : null
@@ -343,26 +343,26 @@ class J extends Y {
     } = this.props, {
       colorString: r,
       colorStrings: a
-    } = module, o = "dot" === Chunk607070.Z.roleStyle, l = "username" === Chunk607070.Z.roleStyle && (null != r || null != Chunk647438), c = (0, Chunk884902.AQ)(require, module, Chunk647438), u = null != c && Chunk392711, {
+    } = module, o = "dot" === Chunk607070.Z.roleStyle, l = "username" === Chunk607070.Z.roleStyle && (null != r || null != Chunk473749), c = (0, Chunk884902.AQ)(require, module, Chunk473749), u = null != c && Chunk392711, {
       gradientStyle: d,
       gradientClassname: p
     } = (0, Chunk481060.JUn)({
-      colorStrings: Chunk647438,
+      colorStrings: Chunk473749,
       useReducedMotion: Chunk607070.Z.useReducedMotion,
       roleStyle: "username",
       includeConvenienceGlow: true
     }), h = Chunk392711 ? j({}, Chunk91192 ? Chunk313666 : {
       color: null != r ? r : true
     }) : true;
-    return (0, Chunk951288.jsxs)(Chunk965386.RX, {
-      children: [(0, Chunk951288.jsx)(Chunk965386.z5, {
-        children: (0, Chunk951288.jsxs)(Chunk965386.BR, {
-          children: [Chunk120356 && (0, Chunk951288.jsx)(Chunk481060.FhE, {
+    return (0, Chunk54381.jsxs)(Chunk965386.RX, {
+      children: [(0, Chunk54381.jsx)(Chunk965386.z5, {
+        children: (0, Chunk54381.jsxs)(Chunk965386.BR, {
+          children: [Chunk120356 && (0, Chunk54381.jsx)(Chunk481060.FhE, {
             className: Chunk512746.roleDot,
             color: r,
             colors: c,
             tooltip: false
-          }), (0, Chunk951288.jsxs)("span", {
+          }), (0, Chunk54381.jsxs)("span", {
             className: s()({
               [Chunk895924]: Chunk91192
             }),
@@ -371,7 +371,7 @@ class J extends Y {
             children: ["@", module.name]
           })]
         })
-      }), exports ? null : (0, Chunk951288.jsx)(Chunk965386.dY, {
+      }), exports ? null : (0, Chunk54381.jsx)(Chunk965386.dY, {
         children: Chunk388032.intl.string(Chunk388032.t["/91tbr"])
       })]
     })
@@ -383,15 +383,15 @@ class $ extends Y {
       timestamp: e,
       description: t
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk965386.RX, {
-      children: [(0, Chunk951288.jsx)(Chunk965386.z5, {
-        children: (0, Chunk951288.jsx)(Chunk965386.BR, {
-          children: (0, Chunk951288.jsx)(Chunk285063.Z, {
+    return (0, Chunk54381.jsxs)(Chunk965386.RX, {
+      children: [(0, Chunk54381.jsx)(Chunk965386.z5, {
+        children: (0, Chunk54381.jsx)(Chunk965386.BR, {
+          children: (0, Chunk54381.jsx)(Chunk285063.Z, {
             node: module,
             showTooltip: false
           })
         })
-      }), null != exports ? (0, Chunk951288.jsx)(Chunk965386.dY, {
+      }), null != exports ? (0, Chunk54381.jsx)(Chunk965386.dY, {
         children: exports
       }) : null]
     })
@@ -403,16 +403,16 @@ class ee extends Y {
       channel: e,
       category: t
     } = this.props, n = module.type === Chunk981631.d4z.GUILD_CATEGORY ? Chunk481060.ROc : (0, Chunk471445.KS)(module);
-    return (0, Chunk951288.jsxs)(Chunk965386.RX, {
-      children: [null != require && (0, Chunk951288.jsx)(Chunk965386.Tw, {
-        children: (0, Chunk951288.jsx)(require, {
+    return (0, Chunk54381.jsxs)(Chunk965386.RX, {
+      children: [null != require && (0, Chunk54381.jsx)(Chunk965386.Tw, {
+        children: (0, Chunk54381.jsx)(require, {
           className: Chunk512746.icon
         })
-      }), (0, Chunk951288.jsx)(Chunk965386.z5, {
-        children: (0, Chunk951288.jsx)(Chunk965386.BR, {
+      }), (0, Chunk54381.jsx)(Chunk965386.z5, {
+        children: (0, Chunk54381.jsx)(Chunk965386.BR, {
           children: (0, Chunk933557.F6)(module, Chunk594174.default, Chunk699516.Z)
         })
-      }), null != exports ? (0, Chunk951288.jsx)(Chunk965386.dY, {
+      }), null != exports ? (0, Chunk54381.jsx)(Chunk965386.dY, {
         children: exports.name
       }) : null]
     })
@@ -423,19 +423,19 @@ class et extends Y {
     let {
       command: e
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk965386.RX, {
-      children: [(0, Chunk951288.jsx)(Chunk965386.Tw, {
-        children: (0, Chunk951288.jsx)(Chunk481060.XZC, {
+    return (0, Chunk54381.jsxs)(Chunk965386.RX, {
+      children: [(0, Chunk54381.jsx)(Chunk965386.Tw, {
+        children: (0, Chunk54381.jsx)(Chunk481060.XZC, {
           size: "xs",
           color: "currentColor",
           className: Chunk512746.icon,
           colorClass: Chunk512746.iconForeground
         })
-      }), (0, Chunk951288.jsx)(Chunk965386.z5, {
-        children: (0, Chunk951288.jsx)(Chunk965386.BR, {
+      }), (0, Chunk54381.jsx)(Chunk965386.z5, {
+        children: (0, Chunk54381.jsx)(Chunk965386.BR, {
           children: module.displayName
         })
-      }), (0, Chunk951288.jsx)(Chunk965386.dY, {
+      }), (0, Chunk54381.jsx)(Chunk965386.dY, {
         children: module.displayDescription
       })]
     })
@@ -455,11 +455,11 @@ class en extends Y {
     } = this.props, {
       hovered: o
     } = this.state, s = this.isSelectable();
-    return module.inputType === Chunk895924.iw.PLACEHOLDER ? (0, Chunk951288.jsx)(Chunk342687.Z, {}) : (0, Chunk951288.jsx)(Chunk237375.Z, {
+    return module.inputType === Chunk895924.iw.PLACEHOLDER ? (0, Chunk54381.jsx)(Chunk342687.Z, {}) : (0, Chunk54381.jsx)(Chunk237375.Z, {
       command: module,
       channel: exports,
       showImage: require,
-      showOptions: Chunk120356 || s && Chunk647438,
+      showOptions: Chunk120356 || s && Chunk473749,
       section: r,
       isSelectable: s
     })
@@ -471,7 +471,7 @@ class er extends Y {
       emoji: e,
       sentinel: t,
       guild: n
-    } = this.props, r = Chunk695346.Yk.getSetting(), a = null != module.id || "" !== module.url ? (0, Chunk951288.jsx)("img", {
+    } = this.props, r = Chunk695346.Yk.getSetting(), a = null != module.id || "" !== module.url ? (0, Chunk54381.jsx)("img", {
       alt: "",
       className: Chunk512746.emojiImage,
       src: null != module.id ? Chunk768581.ZP.getEmojiURL({
@@ -479,17 +479,17 @@ class er extends Y {
         animated: module.animated && r,
         size: Chunk185923.$U
       }) : module.url
-    }) : (0, Chunk951288.jsx)("span", {
+    }) : (0, Chunk54381.jsx)("span", {
       className: Chunk512746.emojiRaw,
       children: module.surrogates
-    }), o = null != require ? (0, Chunk951288.jsx)(Chunk965386.dY, {
+    }), o = null != require ? (0, Chunk54381.jsx)(Chunk965386.dY, {
       children: require.name
     }) : null;
-    return (0, Chunk951288.jsxs)(Chunk965386.RX, {
-      children: [(0, Chunk951288.jsx)(Chunk965386.Tw, {
-        children: Chunk647438
-      }), (0, Chunk951288.jsx)(Chunk965386.z5, {
-        children: (0, Chunk951288.jsxs)(Chunk965386.BR, {
+    return (0, Chunk54381.jsxs)(Chunk965386.RX, {
+      children: [(0, Chunk54381.jsx)(Chunk965386.Tw, {
+        children: Chunk473749
+      }), (0, Chunk54381.jsx)(Chunk965386.z5, {
+        children: (0, Chunk54381.jsxs)(Chunk965386.BR, {
           children: [exports, module.name, exports]
         })
       }), Chunk120356]
@@ -511,18 +511,18 @@ class ei extends Y {
       {
         hovered: l
       } = this.state;
-    return (0, Chunk378233.jl)(s) ? n = null == (e = Chunk926491.Z.getStickerPack(s.pack_id)) ? true : module.name : (0, Chunk378233.J8)(s) && (n = null == (t = Chunk430824.Z.getGuild(s.guild_id)) ? true : exports.name), (0, Chunk951288.jsxs)(Chunk965386.RX, {
-      children: [(0, Chunk951288.jsx)(Chunk965386.Tw, {
-        children: Chunk647438(s, Chunk392711 || true === Chunk120356)
-      }), (0, Chunk951288.jsxs)(Chunk965386.z5, {
-        children: [(0, Chunk951288.jsx)(Chunk965386.BR, {
+    return (0, Chunk378233.jl)(s) ? n = null == (e = Chunk926491.Z.getStickerPack(s.pack_id)) ? true : module.name : (0, Chunk378233.J8)(s) && (n = null == (t = Chunk430824.Z.getGuild(s.guild_id)) ? true : exports.name), (0, Chunk54381.jsxs)(Chunk965386.RX, {
+      children: [(0, Chunk54381.jsx)(Chunk965386.Tw, {
+        children: Chunk473749(s, Chunk392711 || true === Chunk120356)
+      }), (0, Chunk54381.jsxs)(Chunk965386.z5, {
+        children: [(0, Chunk54381.jsx)(Chunk965386.BR, {
           children: s.name
-        }), null != r && (0, Chunk951288.jsx)(Chunk965386.wL, {
+        }), null != r && (0, Chunk54381.jsx)(Chunk965386.wL, {
           children: Chunk388032.intl.format(Chunk388032.t.PAutaQ, {
             queryMatch: r
           })
         })]
-      }), null != require && (0, Chunk951288.jsx)(Chunk965386.dY, {
+      }), null != require && (0, Chunk54381.jsx)(Chunk965386.dY, {
         children: require
       })]
     })
@@ -538,7 +538,7 @@ class ea extends Y {
       height: t,
       src: n
     } = this.props;
-    return (0, Chunk951288.jsx)("img", {
+    return (0, Chunk54381.jsx)("img", {
       alt: "",
       src: require,
       width: module,
@@ -551,21 +551,21 @@ class ea extends Y {
 }
 class eo extends Y {
   renderContent() {
-    return (0, Chunk951288.jsx)(Chunk203247.Z, {
+    return (0, Chunk54381.jsx)(Chunk203247.Z, {
       emojis: this.props.emojis
     })
   }
 }
 class es extends Y {
   renderContent() {
-    return (0, Chunk951288.jsx)(Chunk887120.Z, j({}, this.props))
+    return (0, Chunk54381.jsx)(Chunk887120.Z, j({}, this.props))
   }
 }
 class el extends Y {
   renderContent() {
     let {
       game: e
-    } = this.props, t = (0, Chunk951288.jsx)("img", {
+    } = this.props, t = (0, Chunk54381.jsx)("img", {
       alt: "",
       className: Chunk512746.icon,
       src: Chunk768581.ZP.getApplicationIconURL({
@@ -574,18 +574,18 @@ class el extends Y {
         size: 32
       })
     });
-    return (0, Chunk951288.jsxs)(Chunk965386.RX, {
-      children: [(0, Chunk951288.jsx)(Chunk965386.Tw, {
+    return (0, Chunk54381.jsxs)(Chunk965386.RX, {
+      children: [(0, Chunk54381.jsx)(Chunk965386.Tw, {
         children: exports
-      }), (0, Chunk951288.jsx)(Chunk965386.z5, {
-        children: (0, Chunk951288.jsx)(Chunk965386.BR, {
+      }), (0, Chunk54381.jsx)(Chunk965386.z5, {
+        children: (0, Chunk54381.jsx)(Chunk965386.BR, {
           children: module.name
         })
       })]
     })
   }
 }
-class ec extends(r = Chunk647438.PureComponent) {
+class ec extends(r = Chunk473749.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -595,13 +595,13 @@ class ec extends(r = Chunk647438.PureComponent) {
         id: o
       } = module,
       l = B(module, ["children", "className", "innerClassName", "id"]);
-    return Chunk647438.Children.count(exports) > 0 ? (0, Chunk951288.jsx)(H.Provider, {
+    return Chunk473749.Children.count(exports) > 0 ? (0, Chunk54381.jsx)(H.Provider, {
       value: {
         id: null != Chunk120356 ? Chunk120356 : ""
       },
-      children: (0, Chunk951288.jsx)("div", {
+      children: (0, Chunk54381.jsx)("div", {
         className: s()(Chunk512746.autocomplete, require),
-        children: (0, Chunk951288.jsx)("div", G(j({
+        children: (0, Chunk54381.jsx)("div", G(j({
           className: s()(Chunk512746.autocompleteInner, r)
         }, Chunk392711), {
           children: exports

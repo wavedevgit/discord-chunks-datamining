@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => S,
   c: () => Z
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -78,11 +78,11 @@ function f(e) {
 
 function Z() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: s()(Chunk476215.reverseTrialEducationBannerContainer, {
       [Chunk476215.reducedMotion]: module
     }),
-    children: [(0, Chunk951288.jsx)(Chunk481060.Fmz, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Fmz, {
       className: s()(Chunk476215.unlockAnimation, {
         [Chunk476215.reducedMotion]: module
       }),
@@ -90,7 +90,7 @@ function Z() {
       shouldAnimate: !module,
       pauseAtFrame: module ? 149 : true,
       importData: () => require.e("21812").then(require.t.bind(require, 741855, 19))
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/medium",
       className: Chunk476215.reverseTrialEducationText,
       children: Chunk388032.intl.format(Chunk388032.t.GimLpS, {})

@@ -4,8 +4,8 @@ require.d(exports, {
   f: () => g,
   y: () => m
 }), require("./35282.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk341569 = require("./341569.js"),
   Chunk522474 = require("./522474.js"),
@@ -35,7 +35,7 @@ function m() {
         keybind: g.split("+")
       }, t)
     }),
-    icon: (0, Chunk951288.jsx)(Chunk481060.AlX, {
+    icon: (0, Chunk54381.jsx)(Chunk481060.AlX, {
       size: "lg",
       color: "currentColor"
     }),

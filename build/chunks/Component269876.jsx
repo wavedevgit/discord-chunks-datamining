@@ -5,8 +5,8 @@ require.d(exports, {
   B: () => O,
   Z: () => v
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -25,8 +25,8 @@ var Chunk951288 = require("./951288.js"),
 let y = (0, Chunk313201.hQ)();
 
 function O() {
-  let e, [t, n] = Chunk647438.useState(false),
-    [a, _] = Chunk647438.useState(false),
+  let e, [t, n] = Chunk473749.useState(false),
+    [a, _] = Chunk473749.useState(false),
     {
       threshold: O,
       autoThreshold: v
@@ -47,30 +47,30 @@ function O() {
       autoThreshold: t
     })
   }
-  return Chunk647438.useEffect(() => {
+  return Chunk473749.useEffect(() => {
     let e = new Chunk846519.V7;
     return module.start(1e3, () => {
       Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceActivity, S), module.stop()
     }), () => {
       Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, S), module.stop()
     }
-  }, []), e = v ? (0, Chunk951288.jsxs)("section", {
+  }, []), e = v ? (0, Chunk54381.jsxs)("section", {
     className: Chunk192294.inputSensitivityToggle,
-    children: [(0, Chunk951288.jsx)("div", {
+    children: [(0, Chunk54381.jsx)("div", {
       className: Chunk192294.inputSensitivitySlider,
-      children: (0, Chunk951288.jsx)("div", {
+      children: (0, Chunk54381.jsx)("div", {
         className: o()(Chunk192294.inputSensitivityBar, Chunk192294.sliderBar, {
           [Chunk192294.speaking]: Chunk120356
         })
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       className: Chunk197571.marginBottom8,
       children: Chunk388032.intl.string(Chunk388032.t.W3K5Im)
     })]
-  }) : (0, Chunk951288.jsx)("section", {
+  }) : (0, Chunk54381.jsx)("section", {
     className: o()(Chunk192294.inputSensitivityToggle, Chunk192294.manual),
-    children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
+    children: (0, Chunk54381.jsx)(Chunk481060.iRW, {
       initialValue: O + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
       onValueChange: e => A(-((100 - e) * 1), v),
@@ -81,20 +81,20 @@ function O() {
         background: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
       },
       "aria-labelledby": y,
-      children: (0, Chunk951288.jsxs)("div", {
+      children: (0, Chunk54381.jsxs)("div", {
         className: o()(Chunk192294.sliderBar, Chunk192294.microphone, Chunk192294.inputSensitivityBar, Chunk89079.bar),
-        children: [(0, Chunk951288.jsx)("div", {
+        children: [(0, Chunk54381.jsx)("div", {
           className: o()(Chunk192294.fill, Chunk192294.inputSensitivityBarFill),
           style: {
             width: exports + 100 + "%"
           }
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: "grow"
         })]
       })
     })
-  }), (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [module, !T && (0, Chunk951288.jsx)(Chunk481060.Wn, {
+  }), (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    children: [module, !T && (0, Chunk54381.jsx)(Chunk481060.Wn, {
       messageType: Chunk481060.QYI.WARNING,
       className: Chunk197571.marginBottom8,
       children: Chunk388032.intl.format(Chunk388032.t["O13I+O"], {
@@ -125,13 +125,13 @@ function v() {
       autoThreshold: t
     })
   }
-  return (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+  return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
     label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
     className: Chunk192294.sensitivity,
-    children: [Chunk647438 && (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    children: [Chunk473749 && (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.I1Zuq0),
       checked: exports,
       onChange: t => a(e, t)
-    }), (0, Chunk951288.jsx)(O, {})]
+    }), (0, Chunk54381.jsx)(O, {})]
   })
 }

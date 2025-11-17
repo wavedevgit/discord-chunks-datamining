@@ -6,8 +6,8 @@ require.d(exports, {
   ZP: () => T,
   cO: () => O
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
@@ -134,22 +134,22 @@ function T() {
   }, {
     value: Chunk981631.pM4.PUSH_TO_TALK,
     name: y ? Chunk388032.intl.string(Chunk388032.t["1AINrB"]) : Chunk388032.intl.string(Chunk388032.t.Q8gkVL)
-  }], s = Chunk647438.useCallback(t => {
+  }], s = Chunk473749.useCallback(t => {
     let {
       value: n
     } = t;
     I(n, e)
   }, [module]);
-  return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+  return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
     gap: 20,
-    children: [(0, Chunk951288.jsx)(Chunk481060.FXm, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.FXm, {
       label: Chunk388032.intl.string(Chunk388032.t["pS+K2L"]),
       onChange: e => s({
         value: e
       }),
       options: require,
       value: exports
-    }), exports === Chunk981631.pM4.PUSH_TO_TALK && (0, Chunk951288.jsx)(v, {
+    }), exports === Chunk981631.pM4.PUSH_TO_TALK && (0, Chunk54381.jsx)(v, {
       inputMode: exports
     })]
   })

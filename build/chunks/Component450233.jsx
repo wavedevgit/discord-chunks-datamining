@@ -4,15 +4,15 @@ require.d(exports, {
   G: () => h,
   Z: () => m
 });
-var r, i, l, a, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, i, l, a, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk16084 = require("./16084.js"),
   Chunk855775 = require("./855775.js"),
   Chunk388032 = require("./388032.jsx"),
   h = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
-class g extends(a = Chunk647438.PureComponent) {
+class g extends(a = Chunk473749.PureComponent) {
   getText(e, t) {
     if (429 === e.status) switch (t) {
       case "SHORT":
@@ -36,7 +36,7 @@ class g extends(a = Chunk647438.PureComponent) {
       purchaseError: t,
       messageStyle: n
     } = this.props;
-    return null == exports ? null : (0, Chunk951288.jsx)("div", {
+    return null == exports ? null : (0, Chunk54381.jsx)("div", {
       className: module,
       children: this.getText(exports, require)
     })

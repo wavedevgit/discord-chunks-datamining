@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => g
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk660815 = require("./660815.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -57,8 +57,8 @@ function g() {
       var t;
       return null == (t = Chunk60482.Z.getStateForGuild(module)) ? true : exports.instances
     }),
-    g = Chunk647438.useMemo(() => Object.values(null != require ? require : {})[0], [require]),
-    f = Chunk647438.useCallback(t => {
+    g = Chunk473749.useMemo(() => Object.values(null != require ? require : {})[0], [require]),
+    f = Chunk473749.useCallback(t => {
       null != g && null != e && o.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: e,
@@ -67,14 +67,14 @@ function g() {
         })
       })
     }, [g, module]),
-    b = Chunk647438.useMemo(() => Object.values(Chunk660815.V).map(e => (0, a.jsx)(s.Button, {
+    b = Chunk473749.useMemo(() => Object.values(Chunk660815.V).map(e => (0, a.jsx)(s.Button, {
       variant: "primary",
       text: e,
       onClick: () => {
         f(e)
       }
     }, e)), [f]),
-    v = Chunk647438.useCallback(() => {
+    v = Chunk473749.useCallback(() => {
       null != g && null != module && Chunk570140.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: module,
@@ -85,36 +85,36 @@ function g() {
         })
       })
     }, [g, module]);
-  return null == module ? null : (0, Chunk951288.jsxs)(Chunk481060.zJl, {
+  return null == module ? null : (0, Chunk54381.jsxs)(Chunk481060.zJl, {
     className: Chunk238642.container,
-    children: [(0, Chunk951288.jsx)("div", {
+    children: [(0, Chunk54381.jsx)("div", {
       className: Chunk238642.section,
-      children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/normal",
         children: "Current guild: ".concat(exports)
       })
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk238642.section,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         children: "Set server state for first server: ".concat(null == g ? true : g.name)
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk238642.buttonContainer,
         children: b
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         children: "Remove Server Info"
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk238642.buttonContainer,
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Remove IP Address & Game Server Panel URL",
           onClick: v
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         children: "Reset server"
-      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: "Reset",
         onClick: () => {

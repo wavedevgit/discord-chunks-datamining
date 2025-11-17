@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => k
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -46,7 +46,7 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.initialize();
-class D extends Chunk647438.PureComponent {
+class D extends Chunk473749.PureComponent {
   componentDidMount() {
     (0, Chunk108427.e)("guildTemplate"), Chunk436620.KO || Chunk954824.Z.launch("discord://" + Chunk981631.Z5c.GUILD_TEMPLATE(this.props.code), () => true)
   }
@@ -73,24 +73,24 @@ class D extends Chunk647438.PureComponent {
     })
   }
   renderInvalidGuildTemplate() {
-    return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk951288.jsx)(Chunk388905.Ee, {
+    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
+      children: [(0, Chunk54381.jsx)(Chunk388905.Ee, {
         src: require("./167969.js"),
         className: Chunk197571.marginBottom8
-      }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
+      }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
         className: l()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.C7ZRNw)
-      }), (0, Chunk951288.jsx)(Chunk388905.DK, {
+      }), (0, Chunk54381.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t.A6MwXE)
       }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B), this.handleContinue)]
     })
   }
   renderAppOpened() {
-    return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
+    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
+      children: [(0, Chunk54381.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.csrAMJ)
-      }), (0, Chunk951288.jsx)(Chunk388905.DK, {
+      }), (0, Chunk54381.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t["m1+IBn"])
       }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B), this.handleContinue)]
     })
@@ -99,18 +99,18 @@ class D extends Chunk647438.PureComponent {
     let {
       guildTemplate: e
     } = this.props;
-    return (o()(null != module, "guild template must not be null"), module.state === Chunk260539.Rj.RESOLVING) ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
+    return (o()(null != module, "guild template must not be null"), module.state === Chunk260539.Rj.RESOLVING) ? (0, Chunk54381.jsx)(Chunk388905.ZP, {
       className: Chunk160033.authBox,
-      children: (0, Chunk951288.jsx)(Chunk306453.Z, {
+      children: (0, Chunk54381.jsx)(Chunk306453.Z, {
         guildTemplate: module
       })
-    }) : (0, Chunk951288.jsx)(M, {
+    }) : (0, Chunk54381.jsx)(M, {
       guildTemplate: module
     })
   }
   renderContinue() {
-    return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
+    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
+      children: [(0, Chunk54381.jsx)(Chunk388905.Dx, {
         children: Chunk388032.intl.string(Chunk388032.t.fOc4gn)
       }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B), this.handleContinue)]
     })
@@ -131,14 +131,14 @@ class D extends Chunk647438.PureComponent {
         return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVU"]));
       case Chunk260539.Rj.RESOLVED:
         if (require || !Chunk436620.KO) return this.renderAuthenticatedOrDownload();
-        if (this.props.login) return (0, Chunk951288.jsx)(Chunk781428.Z, {
+        if (this.props.login) return (0, Chunk54381.jsx)(Chunk781428.Z, {
           guildTemplate: module,
-          transitionTo: Chunk647438,
+          transitionTo: Chunk473749,
           location: Chunk120356
         });
-        return (0, Chunk951288.jsx)(Chunk423527.Z, {
+        return (0, Chunk54381.jsx)(Chunk423527.Z, {
           guildTemplate: module,
-          transitionTo: Chunk647438,
+          transitionTo: Chunk473749,
           location: Chunk120356,
           onRegister: () => {
             (0, Chunk929809.c)(Chunk701476.M5.ORGANIC_REGISTERED_GUILD_TEMPLATE), Chunk390885.Z.flowStart(Chunk630724.MK.ORGANIC_GUILD_TEMPLATES, Chunk630724.EW.NUF_STARTED)

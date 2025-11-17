@@ -3,11 +3,11 @@
 require.d(exports, {
   Z: () => j
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
-  Chunk442748 = require("./442748.js"),
+  Chunk636606 = require("./636606.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
 let h = {
     [Chunk228168.qb.WIDGET_ADDED]: {
       message: Chunk388032.intl.string(Chunk388032.t.fFP1Uy),
-      icon: (0, Chunk951288.jsx)(Chunk481060.dz2, {
+      icon: (0, Chunk54381.jsx)(Chunk481060.dz2, {
         size: "sm",
         color: Chunk481060.TVs.colors.STATUS_POSITIVE.css
       }),
@@ -27,7 +27,7 @@ let h = {
     },
     [Chunk228168.qb.WIDGET_REMOVED]: {
       message: Chunk388032.intl.string(Chunk388032.t.zzsK7h),
-      icon: (0, Chunk951288.jsx)(Chunk481060.dz2, {
+      icon: (0, Chunk54381.jsx)(Chunk481060.dz2, {
         size: "sm",
         color: Chunk481060.TVs.colors.STATUS_POSITIVE.css
       }),
@@ -35,7 +35,7 @@ let h = {
     },
     [Chunk228168.qb.WIDGET_SAVE_FAILURE]: {
       message: Chunk388032.intl.string(Chunk388032.t["84MExs"]),
-      icon: (0, Chunk951288.jsx)(Chunk481060.Uz9, {
+      icon: (0, Chunk54381.jsx)(Chunk481060.Uz9, {
         size: "sm",
         color: Chunk481060.TVs.colors.STATUS_DANGER.css
       }),
@@ -44,7 +44,7 @@ let h = {
     },
     [Chunk228168.qb.SOMETHING_WENT_WRONG]: {
       message: Chunk388032.intl.string(Chunk388032.t.F8FvUy),
-      icon: (0, Chunk951288.jsx)(Chunk481060.Uz9, {
+      icon: (0, Chunk54381.jsx)(Chunk481060.Uz9, {
         size: "sm",
         color: Chunk481060.TVs.colors.STATUS_DANGER.css
       }),

@@ -4,8 +4,8 @@
 require.d(exports, {
   pl: () => N
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk409813 = require("./409813.js"),
   Chunk742956 = require("./742956.jsx"),
@@ -92,7 +92,7 @@ let v = [{
       useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHq)
     }
   }],
-  I = () => (0, Chunk951288.jsx)(Chunk481060.Text, {
+  I = () => (0, Chunk54381.jsx)(Chunk481060.Text, {
     variant: "text-sm/normal",
     children: "Purchase button is disabled for this story"
   }),

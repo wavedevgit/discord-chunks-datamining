@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => u
 }), require("./388685.js"), require("./853839.js"), require("./570086.js"), require("./479048.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk164617 = require("./164617.js"),
   Chunk793030 = require("./793030.js"),
   Chunk692547 = require("./692547.js"),
@@ -16,26 +16,26 @@ function u() {
   let e = Object.keys(Chunk164617).map(e => (0, a.jsx)(h, {
     riveName: e
   }, e));
-  return (0, Chunk951288.jsx)(Chunk793030.w0Z, {
+  return (0, Chunk54381.jsx)(Chunk793030.w0Z, {
     style: {
       maxHeight: "100%"
     },
-    children: (0, Chunk951288.jsxs)(Chunk793030.Kqy, {
+    children: (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
       gap: 24,
       padding: 8,
       style: {
         boxSizing: "border-box"
       },
-      children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
+      children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
         variant: "heading-lg/medium",
         children: "Rive Inspector"
-      }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
+      }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
         variant: "text-md/normal",
         children: "Upload a .riv file to view the animation and interact with its data binding configuration."
-      }), (0, Chunk951288.jsx)(m, {}), (0, Chunk951288.jsx)(Chunk793030.X6q, {
+      }), (0, Chunk54381.jsx)(m, {}), (0, Chunk54381.jsx)(Chunk793030.X6q, {
         variant: "heading-lg/medium",
         children: "Rive Overrides"
-      }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
+      }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
         variant: "text-md/normal",
         children: "Upload a .riv file to replace an existing Rive animation in the app with the new one. Useful for previewing updated versions of existing animations before uploading them via the Rive pipeline."
       }), module]
@@ -44,12 +44,12 @@ function u() {
 }
 
 function m() {
-  let [e, t] = Chunk647438.useState(null), [n, r] = Chunk647438.useState(null), [s, o] = Chunk647438.useState(null), c = Chunk647438.useRef(null), [u, m] = Chunk647438.useState(400), [x, g] = Chunk647438.useState(400), f = Chunk647438.useCallback(() => {
+  let [e, t] = Chunk473749.useState(null), [n, r] = Chunk473749.useState(null), [s, o] = Chunk473749.useState(null), c = Chunk473749.useRef(null), [u, m] = Chunk473749.useState(400), [x, g] = Chunk473749.useState(400), f = Chunk473749.useCallback(() => {
     setTimeout(() => {
       var e, t;
       Chunk333200(null != (t = null == (e = Chunk159691.current) ? true : module.getProperties()) ? exports : {}), Chunk164617({})
     }, 1e3)
-  }, []), b = Chunk647438.useCallback((e, t) => {
+  }, []), b = Chunk473749.useCallback((e, t) => {
     null != n && r(n => {
       var a, l, r;
       return l = function(e) {
@@ -85,45 +85,45 @@ function m() {
         Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(r, e))
       }), l
     })
-  }, [Chunk692547, require]), v = Chunk647438.useCallback(e => {
+  }, [Chunk692547, require]), v = Chunk473749.useCallback(e => {
     o(null), r(null), t(e)
   }, []);
-  return (0, Chunk951288.jsxs)(Chunk793030.Kqy, {
+  return (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
     gap: 16,
-    children: [(0, Chunk951288.jsx)(h, {
+    children: [(0, Chunk54381.jsx)(h, {
       riveName: "Rive inspector",
       onRiveLoad: v
-    }), null != module && (0, Chunk951288.jsx)("div", {
+    }), null != module && (0, Chunk54381.jsx)("div", {
       style: {
         width: u,
         height: x
       },
-      children: (0, Chunk951288.jsx)(Chunk481060.BmE, {
+      children: (0, Chunk54381.jsx)(Chunk481060.BmE, {
         src: module,
         ref: Chunk159691,
         onLoad: f,
         dynamicDataBinding: null != require ? require : {}
       })
-    }), null != module && null == require ? (0, Chunk951288.jsx)(Chunk793030.$jN, {}) : null, null != require && (0, Chunk951288.jsxs)(Chunk793030.Kqy, {
-      children: [(0, Chunk951288.jsxs)(Chunk793030.Kqy, {
+    }), null != module && null == require ? (0, Chunk54381.jsx)(Chunk793030.$jN, {}) : null, null != require && (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
+      children: [(0, Chunk54381.jsxs)(Chunk793030.Kqy, {
         gap: 8,
-        children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
+        children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
           variant: "heading-lg/medium",
           children: "Dimensions"
-        }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+        }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           type: "number",
           label: "width",
           value: u.toString(),
           onChange: e => m(parseInt(e))
-        }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+        }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           type: "number",
           label: "height",
           value: x.toString(),
           onChange: e => g(parseInt(e))
         })]
-      }), (0, Chunk951288.jsxs)(Chunk793030.Kqy, {
+      }), (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
         gap: 8,
-        children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
+        children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
           variant: "heading-lg/medium",
           children: "Data Binding"
         }), Object.keys(null != Chunk692547 ? Chunk692547 : {}).map(e => {

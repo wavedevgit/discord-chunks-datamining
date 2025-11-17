@@ -5,8 +5,8 @@ require.d(exports, {
   Z: () => et,
   q: () => $
 }), require("./35282.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk593473 = require("./593473.js"),
@@ -88,11 +88,11 @@ function X(e, t) {
 }
 
 function $() {
-  return (0, Chunk951288.jsx)(Chunk388905.ZP, {
-    children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
+  return (0, Chunk54381.jsx)(Chunk388905.ZP, {
+    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   })
 }
-class ee extends(r = Chunk647438.PureComponent) {
+class ee extends(r = Chunk473749.PureComponent) {
   static getDerivedStateFromProps(e) {
     let {
       handoffAvailable: t,
@@ -110,7 +110,7 @@ class ee extends(r = Chunk647438.PureComponent) {
       invite: r,
       location: i
     } = this.props;
-    module && !exports ? (0, Chunk899742.is)() : exports && this.loginOrSSO(exports, Chunk951288, true), Chunk626135.default.track(Chunk981631.rMx.LOGIN_VIEWED, X(Q({
+    module && !exports ? (0, Chunk899742.is)() : exports && this.loginOrSSO(exports, Chunk54381, true), Chunk626135.default.track(Chunk981631.rMx.LOGIN_VIEWED, X(Q({
       location: null != r ? "Invite Login Page" : "Non-Invite Login Page",
       login_source: this.loginSource,
       authenticated: exports
@@ -154,7 +154,7 @@ class ee extends(r = Chunk647438.PureComponent) {
       else if (null != require.channel) return "dm_invite";
       else if (null != require.inviter) return "friend_invite"
     }
-    return null != Chunk951288 ? (0, Chunk743142.L)(Chunk951288) : null
+    return null != Chunk54381 ? (0, Chunk743142.L)(Chunk54381) : null
   }
   get giftCodeSKUId() {
     let {
@@ -194,12 +194,12 @@ class ee extends(r = Chunk647438.PureComponent) {
     let {
       authBoxClassName: e
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
+    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
       className: module,
-      children: [(0, Chunk951288.jsx)(Chunk388905.Hh, {}), (0, Chunk951288.jsx)(Chunk388905.Dx, {
+      children: [(0, Chunk54381.jsx)(Chunk388905.Hh, {}), (0, Chunk54381.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.S6RMNA)
-      }), (0, Chunk951288.jsx)(Chunk388905.DK, {
+      }), (0, Chunk54381.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t.YZiJbh)
       })]
     })
@@ -208,24 +208,24 @@ class ee extends(r = Chunk647438.PureComponent) {
     let {
       authBoxClassName: e
     } = this.props, t = this.props.loginStatus === Chunk981631.u34.ACCOUNT_DISABLED, n = exports ? Chunk388032.intl.string(Chunk388032.t["j3rC+U"]) : Chunk388032.intl.string(Chunk388032.t.ZFWofo), r = exports ? Chunk388032.intl.string(Chunk388032.t["6eNTWe"]) : Chunk388032.intl.string(Chunk388032.t["pCBti+"]);
-    return (0, Chunk951288.jsx)(Chunk388905.ZP, {
+    return (0, Chunk54381.jsx)(Chunk388905.ZP, {
       tag: "form",
       onSubmit: this.handleReset,
       className: module,
-      children: (0, Chunk951288.jsxs)(Chunk481060.y5t, {
-        component: (0, Chunk951288.jsx)(Chunk388905.Dx, {
+      children: (0, Chunk54381.jsxs)(Chunk481060.y5t, {
+        component: (0, Chunk54381.jsx)(Chunk388905.Dx, {
           className: Chunk197571.marginBottom8,
           children: require
         }),
-        children: [(0, Chunk951288.jsx)(Chunk388905.DK, {
+        children: [(0, Chunk54381.jsx)(Chunk388905.DK, {
           className: Chunk197571.marginBottom20,
           children: r
-        }), (0, Chunk951288.jsxs)(Chunk388905.gO, {
-          children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), (0, Chunk54381.jsxs)(Chunk388905.gO, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
             text: Chunk388032.intl.string(Chunk388032.t.JhDw5o),
             fullWidth: true,
             type: "submit"
-          }), (0, Chunk951288.jsx)("div", {
+          }), (0, Chunk54381.jsx)("div", {
             className: a()(Chunk197571.marginTop8, Chunk132825.needAccount),
             children: Chunk388032.intl.format(Chunk388032.t.js2rr5, {
               onClick: this.handleCancelAccountDeletion
@@ -240,11 +240,11 @@ class ee extends(r = Chunk647438.PureComponent) {
       authBoxClassName: e,
       country: t
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
+    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
       className: module,
-      children: [(0, Chunk951288.jsx)(Chunk588705.R, {}), (0, Chunk951288.jsxs)(Chunk388905.gO, {
+      children: [(0, Chunk54381.jsx)(Chunk588705.R, {}), (0, Chunk54381.jsxs)(Chunk388905.gO, {
         className: Chunk197571.marginTop20,
-        children: [(0, Chunk951288.jsx)(Chunk952802.Z, {
+        children: [(0, Chunk54381.jsx)(Chunk952802.Z, {
           className: Chunk197571.marginBottom20,
           alpha2: exports.alpha2,
           countryCode: exports.code.split(" ")[0],
@@ -261,7 +261,7 @@ class ee extends(r = Chunk647438.PureComponent) {
           value: this.state.login,
           autoFocus: true,
           required: true
-        }), (0, Chunk951288.jsx)(Chunk388905.II, {
+        }), (0, Chunk54381.jsx)(Chunk388905.II, {
           className: Chunk197571.marginBottom20,
           label: Chunk388032.intl.string(Chunk388032.t["CIGa+7"]),
           onChange: e => this.setState({
@@ -273,21 +273,21 @@ class ee extends(r = Chunk647438.PureComponent) {
           spellCheck: "false",
           value: this.state.password,
           required: true
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: Chunk197571.marginBottom8,
-          children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+          children: (0, Chunk54381.jsx)(Chunk481060.Button, {
             text: Chunk388032.intl.string(Chunk388032.t.dKhVQN),
             fullWidth: true,
             type: "submit",
             disabled: true
           })
-        }), (0, Chunk951288.jsx)(Chunk481060.Avr, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Avr, {
           text: Chunk388032.intl.string(Chunk388032.t.wWIufs),
           textVariant: "text-sm/normal",
           disabled: true
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: Chunk197571.marginTop4,
-          children: (0, Chunk951288.jsx)(Chunk481060.Avr, {
+          children: (0, Chunk54381.jsx)(Chunk481060.Avr, {
             text: Chunk388032.intl.string(Chunk388032.t.tmE73r),
             textVariant: "text-sm/normal",
             disabled: true
@@ -415,15 +415,15 @@ class ee extends(r = Chunk647438.PureComponent) {
       authBoxClassName: e,
       showMobileWebHandoff: t
     } = this.props;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk132825.__invalid_pageContainer,
-      children: [(0, Chunk951288.jsx)(Chunk388905.ZP, {
+      children: [(0, Chunk54381.jsx)(Chunk388905.ZP, {
         onSubmit: this.handleLogin,
         tag: "form",
         className: module,
         expanded: true,
         children: this.renderDefaultForm(true)
-      }), exports && (0, Chunk951288.jsx)(Chunk86779.Z, {})]
+      }), exports && (0, Chunk54381.jsx)(Chunk86779.Z, {})]
     })
   }
   renderGuildTemplate(e) {
@@ -441,11 +441,11 @@ class ee extends(r = Chunk647438.PureComponent) {
       ticket: this.props.mfaTicket,
       methods: this.props.mfaMethods
     };
-    return (0, Chunk951288.jsx)(Chunk388905.ZP, {
+    return (0, Chunk54381.jsx)(Chunk388905.ZP, {
       style: {
         padding: 0
       },
-      children: (0, Chunk951288.jsx)(Chunk124860.Cd, {
+      children: (0, Chunk54381.jsx)(Chunk124860.Cd, {
         mfaFinish: this.handleTokenSubmitMFA,
         mfaChallenge: module,
         onEarlyClose: () => {
@@ -463,10 +463,10 @@ class ee extends(r = Chunk647438.PureComponent) {
     } = this.props, {
       phoneVerifyError: t
     } = this.state;
-    return (0, Chunk951288.jsx)(Chunk388905.ZP, {
+    return (0, Chunk54381.jsx)(Chunk388905.ZP, {
       tag: "form",
       className: module,
-      children: (0, Chunk951288.jsx)(Chunk379760.Z, {
+      children: (0, Chunk54381.jsx)(Chunk379760.Z, {
         title: Chunk388032.intl.string(Chunk388032.t.w55Oco),
         subtitle: Chunk388032.intl.format(Chunk388032.t.CfRZBj, {
           onResendClick: this.handleResendCode
@@ -483,10 +483,10 @@ class ee extends(r = Chunk647438.PureComponent) {
     } = this.props, {
       phoneVerifyError: t
     } = this.state;
-    return (0, Chunk951288.jsx)(Chunk388905.ZP, {
+    return (0, Chunk54381.jsx)(Chunk388905.ZP, {
       tag: "form",
       className: module,
-      children: (0, Chunk951288.jsx)(Chunk379760.Z, {
+      children: (0, Chunk54381.jsx)(Chunk379760.Z, {
         title: Chunk388032.intl.string(Chunk388032.t["+xqy3d"]),
         subtitle: Chunk388032.intl.format(Chunk388032.t.ef4uZ7, {
           onResendClick: this.handleResendCode
@@ -503,7 +503,7 @@ class ee extends(r = Chunk647438.PureComponent) {
         dismissedChooseAccount: true
       }))
     };
-    return (0, Chunk951288.jsx)(Chunk913583.Z, {
+    return (0, Chunk54381.jsx)(Chunk913583.Z, {
       onDismiss: module
     })
   }
@@ -517,7 +517,7 @@ class ee extends(r = Chunk647438.PureComponent) {
       checkingHandoff: s,
       redirecting: l
     } = this.state;
-    if (Chunk120356 || Chunk647438) return (0, Chunk951288.jsx)($, {});
+    if (Chunk120356 || Chunk473749) return (0, Chunk54381.jsx)($, {});
     if (r) return this.renderHandOffAvailable();
     switch (require) {
       case Chunk981631.u34.LOGGING_IN_MFA_SMS:

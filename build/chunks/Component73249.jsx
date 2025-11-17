@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => k
 }), require("./388685.js"), require("./415506.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -87,7 +87,7 @@ function P() {
     zoomed: e,
     setZoomed: t
   } = (0, Chunk212459.Y)();
-  return (0, Chunk951288.jsx)(I, {
+  return (0, Chunk54381.jsx)(I, {
     onClick: () => {
       (0, Chunk254109.yg)(module ? Chunk254109.uG.ZOOM_OUT_BUTTON_PRESSED : Chunk254109.uG.ZOOM_IN_BUTTON_PRESSED), exports(!module)
     },
@@ -299,7 +299,7 @@ function Z(e) {
     }
   }) : null
 }
-let k = Chunk647438.memo(function(e) {
+let k = Chunk473749.memo(function(e) {
   let {
     item: t,
     hideMediaOptions: n

@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => f
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk457330 = require("./457330.js"),
@@ -16,22 +16,22 @@ var Chunk951288 = require("./951288.js"),
 let f = () => {
   let e = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
     t = (0, Chunk410030.ZP)();
-  return (Chunk647438.useEffect(() => {
+  return (Chunk473749.useEffect(() => {
     Chunk457330.Z.fetch()
-  }, []), module) ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+  }, []), module) ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
     gap: 16,
-    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       children: Chunk388032.intl.string(Chunk388032.t["Ig/XFa"])
-    }), (0, Chunk951288.jsxs)(Chunk481060.ubH, {
+    }), (0, Chunk54381.jsxs)(Chunk481060.ubH, {
       theme: exports,
-      children: [(0, Chunk951288.jsx)(Chunk481060.oxh, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.oxh, {
         darkSrc: require("./703152.js"),
         lightSrc: require("./548617.js"),
         width: 230,
         height: 220
-      }), (0, Chunk951288.jsx)(Chunk481060.OZU, {
+      }), (0, Chunk54381.jsx)(Chunk481060.OZU, {
         note: Chunk388032.intl.string(Chunk388032.t.WenGZ2),
         children: Chunk388032.intl.string(Chunk388032.t.aoLS84)
       })]

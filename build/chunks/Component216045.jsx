@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => Q
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -108,7 +108,7 @@ function q() {
     }),
     t = (0, Chunk266454.Nj)(Chunk704215.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
     n = module && !exports;
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     require && (0, Chunk266454.Q3)(Chunk704215.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
       forceTrack: true
     })
@@ -117,7 +117,7 @@ function q() {
 
 function X() {
   let [e, t] = (0, Chunk243778.US)([Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE]), n = module === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE;
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     require && exports(Chunk921944.L.TAKE_ACTION)
   }, [require, exports])
 }
@@ -151,16 +151,16 @@ function Q() {
       analyticsLocations: J,
       newestAnalyticsLocation: $
     } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS_USER_PROFILE);
-  q(), X(), Chunk647438.useEffect(() => () => Chunk570140.Z.wait(Chunk809206.W3), []);
-  let [ee, et] = Chunk647438.useState(false), {
+  q(), X(), Chunk473749.useEffect(() => () => Chunk570140.Z.wait(Chunk809206.W3), []);
+  let [ee, et] = Chunk473749.useState(false), {
     showRedesign: en
   } = Chunk413182.b.useExperiment({
     location: "profile customization"
-  }), er = !Q, ei = Chunk647438.useRef(null);
-  return require ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk906732.Gt, {
+  }), er = !Q, ei = Chunk473749.useRef(null);
+  return require ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (0, Chunk54381.jsxs)(Chunk906732.Gt, {
     value: J,
-    children: [(0, Chunk951288.jsx)(Chunk475977.Z, {}), (0, Chunk951288.jsx)(Chunk296810.Z, {
-      profilePreview: (0, Chunk951288.jsx)(Chunk678135.Z, W(H({
+    children: [(0, Chunk54381.jsx)(Chunk475977.Z, {}), (0, Chunk54381.jsx)(Chunk296810.Z, {
+      profilePreview: (0, Chunk54381.jsx)(Chunk678135.Z, W(H({
         user: exports,
         canUsePremiumCustomization: Q,
         onUpsellClick: Chunk265159.Z,
@@ -168,28 +168,28 @@ function Q() {
       }, Chunk373230), {
         pendingAvatar: Chunk921944
       })),
-      nameplatePreview: (0, Chunk951288.jsx)(Chunk566697.Z, W(H({
+      nameplatePreview: (0, Chunk54381.jsx)(Chunk566697.Z, W(H({
         user: exports,
         nameplate: V
       }, Chunk373230), {
         className: null == V ? Chunk391371.nameplatePreviewPlaceholder : true,
         isHighlighted: true
       })),
-      children: (0, Chunk951288.jsx)(Chunk532495.Z, {})
-    }), en && (0, Chunk951288.jsx)(Chunk610794.Z, {}), (0, Chunk951288.jsx)(Chunk622535.$, {
+      children: (0, Chunk54381.jsx)(Chunk532495.Z, {})
+    }), en && (0, Chunk54381.jsx)(Chunk610794.Z, {}), (0, Chunk54381.jsx)(Chunk622535.$, {
       innerRef: ei,
       onChange: e => et(e),
       threshold: .25,
       active: er,
-      children: (0, Chunk951288.jsx)("div", {
+      children: (0, Chunk54381.jsx)("div", {
         ref: ei,
-        children: (0, Chunk951288.jsx)(Chunk935147.Z, {
+        children: (0, Chunk54381.jsx)(Chunk935147.Z, {
           user: exports,
           shouldShow: er,
           isVisible: ee
         })
       })
-    }), er && !Y && (0, Chunk951288.jsx)(Chunk53691.p, {
+    }), er && !Y && (0, Chunk54381.jsx)(Chunk53691.p, {
       className: Chunk391371.floatingNitroUpsell,
       showUpsell: er && !ee,
       text: Chunk388032.intl.format(Chunk388032.t.TmfgI2, {
@@ -198,7 +198,7 @@ function Q() {
         })
       }),
       textVariant: "heading-md/medium",
-      button: (0, Chunk951288.jsx)(Chunk481060.Button, {
+      button: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "expressive",
         onClick: () => {
           var e;

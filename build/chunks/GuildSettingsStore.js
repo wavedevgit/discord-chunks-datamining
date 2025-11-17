@@ -456,7 +456,7 @@ function e1(e) {
   }))
 }
 
-function e2(e) {
+function e3(e) {
   let {
     guildId: t,
     errors: n
@@ -464,7 +464,7 @@ function e2(e) {
   null != s && t === s.id && (z = null != n ? n : {})
 }
 
-function e3(e) {
+function e2(e) {
   let {
     guildId: t,
     primaryCategoryId: n,
@@ -494,14 +494,14 @@ function e4(e) {
   null != s && t === s.id && (z = null != n ? n : {})
 }
 
-function e8(e) {
+function e5(e) {
   let {
     profile: t
   } = e;
   t.id === (null == s ? true : s.id) && (l = c = t)
 }
 
-function e5(e) {
+function e8(e) {
   let {
     guildId: t
   } = e;
@@ -661,11 +661,11 @@ let tt = new te(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_ROLE_DELETE: eZ,
   GUILD_UPDATE: ek,
   GUILD_DELETE: ej,
-  GUILD_PROFILE_FETCH_SUCCESS: e8,
-  GUILD_PROFILE_UPDATE: e5,
+  GUILD_PROFILE_FETCH_SUCCESS: e5,
+  GUILD_PROFILE_UPDATE: e8,
   GUILD_PROFILE_UPDATE_SUCCESS: e6,
   GUILD_PROFILE_UPDATE_FAILURE: e7,
-  GUILD_PROFILE_UPDATE_VISIBILITY: e5,
+  GUILD_PROFILE_UPDATE_VISIBILITY: e8,
   GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS: e9,
   GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE: e7,
   USER_CONNECTIONS_UPDATE: eK,
@@ -676,8 +676,8 @@ let tt = new te(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_DISCOVERY_METADATA_FETCH_FAIL: eQ,
   GUILD_DISCOVERY_CATEGORY_ADD: e0,
   GUILD_DISCOVERY_CATEGORY_DELETE: e1,
-  GUILD_DISCOVERY_CATEGORY_UPDATE_FAIL: e2,
-  GUILD_UPDATE_DISCOVERY_METADATA: e3,
+  GUILD_DISCOVERY_CATEGORY_UPDATE_FAIL: e3,
+  GUILD_UPDATE_DISCOVERY_METADATA: e2,
   GUILD_UPDATE_DISCOVERY_METADATA_FAIL: e4,
   GUILD_DISCOVERY_SLUG_FETCH_SUCCESS: eJ,
   GUILD_DISCOVERY_SLUG_FETCH_FAIL: e$,

@@ -4,8 +4,8 @@ require.d(exports, {
   V: () => j,
   Z: () => O
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -56,7 +56,7 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class j extends Chunk647438.PureComponent {
+class j extends Chunk473749.PureComponent {
   componentDidMount() {
     this.updateCache()
   }
@@ -82,12 +82,12 @@ class j extends Chunk647438.PureComponent {
       offsetWidth: i,
       offsetHeight: r
     } = require, l = {
-      offsetX: (this.props.targetWidth - Chunk951288) / 2,
-      offsetY: (this.props.targetHeight - Chunk647438) / 2
+      offsetX: (this.props.targetWidth - Chunk54381) / 2,
+      offsetY: (this.props.targetHeight - Chunk473749) / 2
     };
     switch (this.props.position) {
       case "left":
-        Chunk120356.offsetX = -Chunk951288;
+        Chunk120356.offsetX = -Chunk54381;
         break;
       case "right":
         Chunk120356.offsetX = this.props.targetWidth;
@@ -96,7 +96,7 @@ class j extends Chunk647438.PureComponent {
         Chunk120356.offsetY = this.props.targetHeight;
         break;
       default:
-        Chunk120356.offsetY = -Chunk647438
+        Chunk120356.offsetY = -Chunk473749
     }
     Chunk120356.offsetX += null != (e = this.props.offset.x) ? module : 0, Chunk120356.offsetY += null != (t = this.props.offset.y) ? exports : 0, this.setState(Chunk120356)
   }
@@ -129,8 +129,8 @@ class j extends Chunk647438.PureComponent {
       offsetX: b,
       offsetY: y
     } = this.state, v = {
-      left: null != Chunk232495 ? Chunk647438.x + Chunk232495 : true,
-      top: null != Chunk10401 ? Chunk647438.y + Chunk10401 : true
+      left: null != Chunk232495 ? Chunk473749.x + Chunk232495 : true,
+      top: null != Chunk10401 ? Chunk473749.y + Chunk10401 : true
     }, j = e => {
       let t = n && !e;
       return {
@@ -139,7 +139,7 @@ class j extends Chunk647438.PureComponent {
         [C.highPriority]: u
       }
     }, O = this.getTutorialPopoutText();
-    return (0, Chunk951288.jsx)(Chunk350707.ZP, x(_({
+    return (0, Chunk54381.jsx)(Chunk350707.ZP, x(_({
       innerRef: this.contentRef,
       position: Chunk451478,
       renderMedia: Chunk512722,
@@ -208,7 +208,7 @@ let O = 12633 == require.j ? function() {
     shouldShowAny: Chunk10401.Z.shouldShowAnyIndicators() && !Chunk819640.Z.hasLayers(),
     windowFocused: Chunk451478.Z.isFocused()
   }));
-  return Chunk647438 ? (0, Chunk951288.jsx)(Chunk951288.Fragment, {
+  return Chunk473749 ? (0, Chunk54381.jsx)(Chunk54381.Fragment, {
     children: Object.entries(module).map(e => {
       let [r, l] = e, a = t[r];
       return s()(null != a, "Missing tutorial definition for ".concat(r)), (0, i.jsx)(j, _({

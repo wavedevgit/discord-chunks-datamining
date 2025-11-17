@@ -3,7 +3,7 @@
 require.d(exports, {
   g: () => v
 }), require("./388685.js"), require("./35282.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk281598 = require("./281598.js");
 
 function r(e) {
@@ -103,7 +103,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
     if (null != l)
       for (let e of t) e.name.endsWith(".txt") || f(l, e, n, a)
   }, v = () => {
-    let [e, t] = Chunk647438.useState(false), [n, c] = Chunk647438.useState({}), [d, u] = Chunk647438.useState({}), m = Chunk647438.useCallback(function(e) {
+    let [e, t] = Chunk473749.useState(false), [n, c] = Chunk473749.useState({}), [d, u] = Chunk473749.useState({}), m = Chunk473749.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
       u(n => {
         var a;
@@ -112,7 +112,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
           [e]: [...l, ...t]
         })
       })
-    }, []), p = Chunk647438.useCallback(function(e) {
+    }, []), p = Chunk473749.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
       c(n => {
         var a;
@@ -121,14 +121,14 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
           [e]: [...l, ...t]
         })
       })
-    }, []), v = Chunk647438.useCallback(() => {
+    }, []), v = Chunk473749.useCallback(() => {
       exports(false), u({}), c({})
     }, []);
     return {
       validationComplete: module,
       errors: d,
       warnings: require,
-      validateShopAssetPackage: Chunk647438.useCallback(async e => {
+      validateShopAssetPackage: Chunk473749.useCallback(async e => {
         try {
           var n;
           if (0 === e.length) return void m("No files found");

@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => h
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk921801 = require("./921801.js"),
@@ -33,12 +33,12 @@ function p(e) {
 
 function h() {
   let e = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
-    t = Chunk647438.useRef(null),
+    t = Chunk473749.useRef(null),
     {
       categories: n,
       initialized: h
     } = (0, Chunk442837.cj)([Chunk151662.Z], () => Chunk151662.Z.getEmailSettings());
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     if (null == h)(0, Chunk960412.Y7)();
     else if (module === Chunk930441.vG.toUpperCase()) {
       var n;
@@ -57,11 +57,11 @@ function h() {
     [Chunk930441.$Z.TIPS]: Chunk726985.s6.NOTIFICATIONS_EMAILS_TIPS,
     [Chunk930441.$Z.RECOMMENDATIONS_AND_EVENTS]: Chunk726985.s6.NOTIFICATIONS_EMAILS_RECOMMENDATIONS_AND_EVENTS
   };
-  return h ? (0, Chunk951288.jsxs)(Chunk921801.F, {
+  return h ? (0, Chunk54381.jsxs)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_EMAILS,
-    children: [(0, Chunk951288.jsx)("div", {
+    children: [(0, Chunk54381.jsx)("div", {
       ref: exports
-    }), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+    }), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
       label: Chunk388032.intl.string(Chunk388032.t.TPchzM),
       children: [Chunk930441.Od.map(e => {
         let {
@@ -78,13 +78,13 @@ function h() {
           setting: o,
           children: l
         }, i()) : l
-      }), (0, Chunk951288.jsxs)(Chunk921801.F, {
+      }), (0, Chunk54381.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.NOTIFICATIONS_EMAILS_UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Avr, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Avr, {
           disabled: !m,
           text: Chunk388032.intl.string(Chunk388032.t.Ra9Pwk),
           onClick: Chunk960412.oc
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           children: Chunk388032.intl.string(Chunk388032.t.iYjQ8X)
         })]

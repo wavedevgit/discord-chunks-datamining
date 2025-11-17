@@ -4,15 +4,15 @@
 require.d(exports, {
   f: () => o
 }), require("./388685.js"), require("./539854.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk399606 = require("./399606.js"),
   Chunk570140 = require("./570140.js"),
   Chunk615006 = require("./615006.js");
 
 function o() {
-  let e = Chunk647438.useRef(new Map),
+  let e = Chunk473749.useRef(new Map),
     t = (0, Chunk399606.e7)([Chunk615006.Z], () => Chunk615006.Z.getUserDiscounts());
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     let n = module.current,
       r = Date.now(),
       l = [];

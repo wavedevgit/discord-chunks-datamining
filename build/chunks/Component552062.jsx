@@ -4,8 +4,8 @@ require.d(exports, {
   B: () => m,
   Z: () => Z
 }), require("./388685.js"), require("./415506.js");
-var i, r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var i, r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk902704 = require("./902704.js"),
@@ -120,7 +120,7 @@ function E(e, t) {
       throw Error("getOrientedCoords: Invalid orientation: ".concat(e))
   }
 }
-class S extends(i = Chunk647438.Component) {
+class S extends(i = Chunk473749.Component) {
   shouldComponentUpdate(e, t) {
     return !(0, c.Z)(t, this.state) || !(0, c.Z)(e, this.props, ["anchor", "size", "minSize", "container"]) || !(0, c.Z)(e.anchor, this.props.anchor) || !(0, c.Z)(e.size, this.props.size) || !(0, c.Z)(e.minSize, this.props.minSize) || !(0, c.Z)(e.container, this.props.container)
   }
@@ -266,48 +266,48 @@ class S extends(i = Chunk647438.Component) {
       resizeX: t,
       active: n
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-      children: [module ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-        children: [(0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
+      children: [module ? (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
+        children: [(0, Chunk54381.jsx)("div", {
           className: a()(Chunk768666.resizeNorth, {
             [Chunk768666.resizeNSCursor]: require
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_NORTH")
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: a()(Chunk768666.resizeSouth, {
             [Chunk768666.resizeNSCursor]: require
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_SOUTH")
         })]
-      }) : null, exports ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-        children: [(0, Chunk951288.jsx)("div", {
+      }) : null, exports ? (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
+        children: [(0, Chunk54381.jsx)("div", {
           className: a()(Chunk768666.resizeEast, {
             [Chunk768666.resizeEWCursor]: require
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_EAST")
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: a()(Chunk768666.resizeWest, {
             [Chunk768666.resizeEWCursor]: require
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_WEST")
         })]
-      }) : null, exports && module ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-        children: [(0, Chunk951288.jsx)("div", {
+      }) : null, exports && module ? (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
+        children: [(0, Chunk54381.jsx)("div", {
           className: a()(Chunk768666.resizeNorthWest, {
             [Chunk768666.resizeNWSECursor]: require
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_NORTH_WEST")
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: a()(Chunk768666.resizeNorthEast, {
             [Chunk768666.resizeNESWCursor]: require
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_NORTH_EAST")
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: a()(Chunk768666.resizeSouthWest, {
             [Chunk768666.resizeNESWCursor]: require
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_SOUTH_WEST")
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: a()(Chunk768666.resizeSouthEast, {
             [Chunk768666.resizeNWSECursor]: require
           }),
@@ -332,9 +332,9 @@ class S extends(i = Chunk647438.Component) {
         operationStarted: d
       }
     } = this;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       ref: this.ref,
-      style: f({}, Chunk120356, Chunk647438, r, null != Chunk902704 ? {
+      style: f({}, Chunk120356, Chunk473749, r, null != Chunk902704 ? {
         zIndex: 1e3
       } : true, exports ? {
         visibility: "hidden"

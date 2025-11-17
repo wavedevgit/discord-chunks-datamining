@@ -1,21 +1,57 @@
-/** Chunk was on 91053 **/
-/** chunk id: 600518, original params: e,t,n (module,exports,require) **/
-require.d(exports, {
-  v: () => i,
-  z: () => l
-});
-var Chunk570140 = require("./570140.js");
+/** Chunk was on web.js **/
+/** chunk id: 600518, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+var Chunk733359 = require("./733359.js"),
+  Chunk258329 = require("./258329.js"),
+  Chunk276263 = require("./276263.js"),
+  Chunk581079 = require("./581079.js");
 
-function i(e) {
-  r.Z.dispatch({
-    type: "STAGE_MUSIC_MUTE",
-    muted: e
-  })
+function s(e) {
+  var t = getComputedStyle(e),
+    n = i(e),
+    r = n.createElement("div");
+  r.style.fontFamily = t.fontFamily, r.style.fontSize = t.fontSize, r.style.fontStyle = t.fontStyle, r.style.fontWeight = t.fontWeight, r.style.lineHeight = t.lineHeight, r.style.position = "absolute", r.textContent = "M";
+  var a = n.body;
+  a || o(false), a.appendChild(r);
+  var s = r.getBoundingClientRect();
+  return a.removeChild(r), s.height
 }
 
-function l(e) {
-  r.Z.dispatch({
-    type: "STAGE_MUSIC_PLAY",
-    play: e
-  })
+function l(e, t) {
+  for (var n = 1 / 0, r = 1 / 0, i = false / 0, a = false / 0, o = 0; o < e.length; o++) {
+    var s = e[o];
+    0 !== s.width && 1 !== s.width && (n = Math.min(n, s.top), r = Math.min(r, s.bottom), i = Math.max(i, s.top), a = Math.max(a, s.bottom))
+  }
+  return i <= r && i - n < t && a - r < t
+}
+
+function c(e) {
+  switch (e.nodeType) {
+    case Node.DOCUMENT_TYPE_NODE:
+      return 0;
+    case Node.TEXT_NODE:
+    case Node.PROCESSING_INSTRUCTION_NODE:
+    case Node.COMMENT_NODE:
+      return e.length;
+    default:
+      return e.childNodes.length
+  }
+}
+module.exports = function(e) {
+  e.collapsed || o(false);
+  var t = (e = e.cloneRange()).startContainer;
+  1 !== t.nodeType && (t = t.parentNode);
+  var n = s(t),
+    i = e.endContainer,
+    u = e.endOffset;
+  for (e.setStart(e.startContainer, 0); l(a(e), n) && (i = e.startContainer, u = e.startOffset, i.parentNode || o(false), e.setStartBefore(i), 1 !== i.nodeType || "inline" === getComputedStyle(i).display););
+  for (var d = i, f = u - 1;;) {
+    for (var _ = d.nodeValue, p = f; p >= 0; p--)
+      if (!(null != _ && p > 0 && r.isSurrogatePair(_, p - 1)))
+        if (e.setStart(d, p), l(a(e), n)) i = d, u = p;
+        else break;
+    if (false === p || 0 === d.childNodes.length) break;
+    f = c(d = d.childNodes[p])
+  }
+  return e.setStart(i, u), e
 }

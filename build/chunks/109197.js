@@ -7,9 +7,9 @@ require.d(exports, {
   Yf: () => p,
   wO: () => d
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
-  Chunk100568 = require("./100568.js"),
-  Chunk417865 = require("./417865.js"),
+var Chunk473749 = require("./473749.js"),
+  Chunk891371 = require("./891371.js"),
+  Chunk692992 = require("./692992.js"),
   Chunk313426 = require("./313426.js");
 let o = "FRIEND_USER",
   a = "FRIEND_GROUP";
@@ -70,7 +70,7 @@ function d() {
     [{
       isOver: t,
       canDrop: n
-    }, r] = (0, Chunk417865.L)({
+    }, r] = (0, Chunk692992.L)({
       accept: o,
       canDrop: () => !module,
       drop: e => {
@@ -87,7 +87,7 @@ function d() {
     });
   return {
     isOver: exports && require,
-    drop: Chunk647438
+    drop: Chunk473749
   }
 }
 

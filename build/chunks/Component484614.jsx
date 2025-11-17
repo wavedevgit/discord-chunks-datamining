@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => g
 });
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk846519 = require("./846519.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -51,7 +51,7 @@ function p(e, t) {
   }), e
 }
 let h = 1e3;
-class m extends(r = Chunk647438.PureComponent) {
+class m extends(r = Chunk473749.PureComponent) {
   componentWillUnmount() {
     this._timeout.stop()
   }
@@ -61,7 +61,7 @@ class m extends(r = Chunk647438.PureComponent) {
     } = this.props, {
       mode: t
     } = this.state, n = exports === Chunk481060.kO8.Modes.SUCCESS ? Chunk388032.intl.string(Chunk388032.t.t5VZ88) : module;
-    return (0, Chunk951288.jsx)(Chunk481060.kO8, p(f({}, this.props), {
+    return (0, Chunk54381.jsx)(Chunk481060.kO8, p(f({}, this.props), {
       onCopy: this.handleCopy,
       mode: exports,
       text: require,

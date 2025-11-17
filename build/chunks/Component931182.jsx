@@ -4,7 +4,7 @@
 require.d(exports, {
   n: () => f
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk925513 = require("./925513.js"),
   Chunk526156 = require("./526156.jsx"),
   Chunk838436 = require("./838436.jsx"),
@@ -19,21 +19,21 @@ function f() {
     t = [{
       setting: "SEXUALLY_EXPLICIT_MEDIA_REDACTION",
       title: Chunk388032.intl.string(Chunk388032.t.GYpoAq),
-      component: () => (0, Chunk951288.jsx)(Chunk291511.P, {}),
+      component: () => (0, Chunk54381.jsx)(Chunk291511.P, {}),
       orientation: "vertical"
     }, {
       setting: "GORE_MEDIA_REDACTION",
       title: Chunk388032.intl.string(Chunk388032.t["16/3Bi"]),
-      component: () => (0, Chunk951288.jsx)(Chunk295822.I, {}),
+      component: () => (0, Chunk54381.jsx)(Chunk295822.I, {}),
       orientation: "vertical"
     }];
-  return (0, Chunk951288.jsxs)(Chunk838436.U, {
-    children: [(0, Chunk951288.jsx)(Chunk838436.H, {
+  return (0, Chunk54381.jsxs)(Chunk838436.U, {
+    children: [(0, Chunk54381.jsx)(Chunk838436.H, {
       header: Chunk388032.intl.string(Chunk388032.t["Hj/But"]),
       description: Chunk388032.intl.format(Chunk388032.t["H/Icz+"], {
         learnMoreLink: Chunk63063.Z.getArticleURL(module)
       })
-    }), (0, Chunk951288.jsx)(Chunk526156.z, {
+    }), (0, Chunk54381.jsx)(Chunk526156.z, {
       tabs: exports,
       orientation: "vertical",
       tabsClassName: Chunk852017.tabs

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => Z
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -39,7 +39,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 let P = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
-class w extends Chunk647438.Component {
+class w extends Chunk473749.Component {
   componentDidMount() {
     this.measure();
     let {
@@ -86,14 +86,14 @@ class w extends Chunk647438.Component {
     })
   }
   renderTierNone() {
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk744834.tierDefaultUnlocked,
       ref: this.defaultTierRef,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",
         children: Chunk388032.intl.string(Chunk388032.t["76OoX8"])
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         className: Chunk744834.tierDefaultUnlockedDescription,
@@ -107,16 +107,16 @@ class w extends Chunk647438.Component {
       uniqueSubscriberCount: t,
       guildId: n
     } = this.props;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       ref: this.defaultTierRef,
       className: Chunk744834.subscribers,
-      children: [(0, Chunk951288.jsx)(Chunk237583.Z, {
+      children: [(0, Chunk54381.jsx)(Chunk237583.Z, {
         guildId: null != require ? require : true,
         users: module,
         renderUser: this.renderSubscriber,
         renderMoreUsers: this.renderMoreSubscribers,
         max: 5
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk744834.subscriberCount,
         children: Chunk388032.intl.format(Chunk388032.t["0r7snZ"], {
           count: exports
@@ -132,14 +132,14 @@ class w extends Chunk647438.Component {
       uniqueSubscriberCount: i,
       tiers: l
     } = this.props;
-    return null == require ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
+    return null == require ? (0, Chunk54381.jsx)(Chunk481060.$jN, {
       type: Chunk481060.$jN.Type.SPINNING_CIRCLE
-    }) : null == module ? null : (0, Chunk951288.jsx)("div", {
-      children: (0, Chunk951288.jsxs)("div", {
+    }) : null == module ? null : (0, Chunk54381.jsx)("div", {
+      children: (0, Chunk54381.jsxs)("div", {
         className: Chunk744834.content,
-        children: [this.renderProgressBar(Chunk120356), (0, Chunk951288.jsxs)("div", {
+        children: [this.renderProgressBar(Chunk120356), (0, Chunk54381.jsxs)("div", {
           className: Chunk744834.tiers,
-          children: [0 === Chunk647438 ? this.renderTierNone() : this.renderSubscribers(), Chunk120356.map((r, i, l) => t({
+          children: [0 === Chunk473749 ? this.renderTierNone() : this.renderSubscribers(), Chunk120356.map((r, i, l) => t({
             tier: r,
             tiers: l,
             tierIndex: i,
@@ -262,8 +262,8 @@ let Z = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk905128.Z, Chunk999382.
     })).filter(e => null != e.user).value();
   return {
     guildId: require,
-    currentTier: Chunk951288,
-    levelSubscriptionCount: Chunk647438,
+    currentTier: Chunk54381,
+    levelSubscriptionCount: Chunk473749,
     subscribers: Chunk392711,
     uniqueSubscriberCount: a.size()
   }

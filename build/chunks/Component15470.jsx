@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => y,
   i: () => x
 }), require("./35282.js"), require("./388685.js"), require("./953529.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk159635 = require("./159635.js"),
@@ -90,7 +90,7 @@ let b = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
   }),
   v = o().parserFor(x),
   C = o().reactFor(o().ruleOutput(x, "react"));
-class j extends Chunk647438.PureComponent {
+class j extends Chunk473749.PureComponent {
   componentDidMount() {
     if (null != this._container) {
       let {
@@ -112,18 +112,18 @@ class j extends Chunk647438.PureComponent {
       collapsed: s,
       collapsable: o
     } = this.state;
-    return (0, Chunk951288.jsxs)("div", {
-      className: Chunk647438,
-      children: [(0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsxs)("div", {
+      className: Chunk473749,
+      children: [(0, Chunk54381.jsx)("div", {
         className: l()({
           [Chunk395155.collapsed]: o && Chunk159635
         }),
-        children: (0, Chunk951288.jsxs)("div", {
+        children: (0, Chunk54381.jsxs)("div", {
           ref: this.setContentContainerRef,
-          children: [(0, Chunk951288.jsx)("div", {
+          children: [(0, Chunk54381.jsx)("div", {
             className: Chunk395155.blurb,
             children: require
-          }), (0, Chunk951288.jsx)(Chunk241209.Z, {
+          }), (0, Chunk54381.jsx)(Chunk241209.Z, {
             className: Chunk395155.description,
             parser: v,
             output: C,
@@ -134,7 +134,7 @@ class j extends Chunk647438.PureComponent {
             children: exports
           })]
         })
-      }), o ? (0, Chunk951288.jsx)(Chunk755721.zx, {
+      }), o ? (0, Chunk54381.jsx)(Chunk755721.zx, {
         className: Chunk395155.toggleCollapseButton,
         onClick: this.handleToggleCollapse,
         color: Chunk755721.zx.Colors.PRIMARY,

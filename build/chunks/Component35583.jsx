@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => _
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
@@ -24,7 +24,7 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk647438.PureComponent {
+class m extends Chunk473749.PureComponent {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.memoizedMode ? {
       memoizedMode: e.mode,
@@ -50,7 +50,7 @@ class m extends Chunk647438.PureComponent {
   render() {
     switch (this.props.mode) {
       case "UPDATE_AVAILABLE":
-        return (0, Chunk951288.jsx)(Chunk665149.JO, {
+        return (0, Chunk54381.jsx)(Chunk665149.JO, {
           hideOnClick: false,
           tooltip: Chunk388032.intl.string(Chunk388032.t["zp9d/4"]),
           foreground: Chunk979905.downloadArrow,
@@ -60,7 +60,7 @@ class m extends Chunk647438.PureComponent {
         });
       case "UPDATE_MANUALLY":
       case "UPDATE_DOWNLOADED":
-        return (0, Chunk951288.jsx)(Chunk665149.JO, {
+        return (0, Chunk54381.jsx)(Chunk665149.JO, {
           tooltip: Chunk388032.intl.string(Chunk388032.t.u18OXF),
           foreground: Chunk979905.updateIconForeground,
           onClick: this.handleInstallDownload,

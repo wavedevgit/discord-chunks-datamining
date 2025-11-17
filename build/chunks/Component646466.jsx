@@ -3,8 +3,8 @@
 require.d(exports, {
   O: () => E
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk373071 = require("./373071.js"),
   Chunk637443 = require("./637443.jsx"),
@@ -75,27 +75,27 @@ let h = [{
         previewProfileEffectSkuId: t,
         setPreviewProfileEffectSkuId: n
       } = (0, Chunk619899.N9)(),
-      s = Chunk647438.useMemo(() => [x, ...module.map(e => ({
+      s = Chunk473749.useMemo(() => [x, ...module.map(e => ({
         label: e.name,
         value: e.skuId
       }))], [module]);
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk198764.previewSelector,
-      children: [(0, Chunk951288.jsx)(Chunk481060.LZC, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.LZC, {
         size: 16
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk198764.headingContainer,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/bold",
           children: "Preview Profile Effect"
-        }), (0, Chunk951288.jsx)(Chunk481060.hU, {
+        }), (0, Chunk54381.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           size: "sm",
           onClick: b,
           icon: Chunk481060.idN,
           "aria-label": "Open PFX preview instructions"
         })]
-      }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+      }), (0, Chunk54381.jsx)(Chunk481060.q4e, {
         options: Chunk637443,
         value: exports,
         maxVisibleItems: 30,
@@ -109,18 +109,18 @@ let h = [{
       setPreviewAvatarDecorationSkuId: t
     } = (0, Chunk619899.N9)(), {
       avatarDecorationAssets: n
-    } = (0, Chunk619899.xq)(), i = Chunk647438.useMemo(() => [g, ...require.map(e => ({
+    } = (0, Chunk619899.xq)(), i = Chunk473749.useMemo(() => [g, ...require.map(e => ({
       label: e.name,
       value: e.name
     }))], [require]);
-    return 0 === require.length ? null : (0, Chunk951288.jsxs)("div", {
+    return 0 === require.length ? null : (0, Chunk54381.jsxs)("div", {
       className: Chunk198764.previewSelector,
-      children: [(0, Chunk951288.jsx)(Chunk481060.LZC, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.LZC, {
         size: 16
-      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/bold",
         children: "Preview Avatar Decorations"
-      }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+      }), (0, Chunk54381.jsx)(Chunk481060.q4e, {
         options: Chunk373071,
         value: module,
         maxVisibleItems: 30,
@@ -211,40 +211,40 @@ let h = [{
       validationComplete: n,
       warnings: i,
       errors: s
-    } = (0, Chunk206878.g)(), o = Object.entries(Chunk637443), d = Object.entries(Chunk373071), p = Chunk619899.length > 0, h = Chunk281598.length > 0, x = Chunk647438.useCallback(n => {
+    } = (0, Chunk206878.g)(), o = Object.entries(Chunk637443), d = Object.entries(Chunk373071), p = Chunk619899.length > 0, h = Chunk281598.length > 0, x = Chunk473749.useCallback(n => {
       t(), e(n)
     }, [module, exports]);
-    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk18868.L, {
+    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsx)(Chunk18868.L, {
         onDrop: x
-      }), require ? (0, Chunk951288.jsxs)("div", {
+      }), require ? (0, Chunk54381.jsxs)("div", {
         className: Chunk198764.validationSummary,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           color: p ? "text-danger" : "text-default",
           children: "".concat(Chunk619899.length, " errors")
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           color: h ? "text-feedback-warning" : "text-default",
           children: "".concat(Chunk281598.length, " warnings")
-        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           onClick: exports,
           text: "Reset"
         })]
-      }) : (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }) : (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: "Drop asset folder to validate."
-      }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
+      }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
         size: 16
-      }), p && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      }), p && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/bold",
           children: "Errors"
-        }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
+        }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
           size: 8
-        }), (0, Chunk951288.jsx)("ul", {
+        }), (0, Chunk54381.jsx)("ul", {
           className: Chunk198764.validationIssuesList,
           children: Chunk619899.map((e, t) => {
             let [n, l] = e;
@@ -266,13 +266,13 @@ let h = [{
             }, "".concat(n, "-").concat(t))
           })
         })]
-      }), h && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      }), h && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/bold",
           children: "Warnings"
-        }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
+        }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
           size: 8
-        }), (0, Chunk951288.jsx)("ul", {
+        }), (0, Chunk54381.jsx)("ul", {
           className: Chunk198764.validationIssuesList,
           children: Object.entries(Chunk373071).map((e, t) => {
             let [n, l] = e;
@@ -307,44 +307,44 @@ let h = [{
       clearAssets: s,
       clearIgnoredFilenames: u,
       processAndUpsertAssets: p
-    } = (0, Chunk281598.hm)(), h = Chunk647438.useCallback(e => {
+    } = (0, Chunk281598.hm)(), h = Chunk473749.useCallback(e => {
       n(), p(e)
     }, [p, require]);
-    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk18868.L, {
+    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsx)(Chunk18868.L, {
         onDrop: h
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: "Drop files in this panel to begin preview."
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk198764.previewToggleContainer,
-        children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
           checked: module,
           onChange: e => t(e)
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Enable Preview"
-        }), (0, Chunk951288.jsx)(Chunk481060.hU, {
+        }), (0, Chunk54381.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           size: "sm",
           onClick: f,
           icon: Chunk481060.idN,
           "aria-label": "Open preview instructions"
         })]
-      }), (0, Chunk951288.jsx)(v, {}), (0, Chunk951288.jsx)(j, {}), (0, Chunk951288.jsx)(_, {
+      }), (0, Chunk54381.jsx)(v, {}), (0, Chunk54381.jsx)(j, {}), (0, Chunk54381.jsx)(_, {
         clearAssets: Chunk637443,
         clearIgnoredFiles: Chunk206878
-      }), (0, Chunk951288.jsx)(y, {
+      }), (0, Chunk54381.jsx)(y, {
         ignoredFiles: Chunk373071,
         handleClearIgnoredFiles: Chunk206878
       })]
     })
   },
   E = () => {
-    let [e, t] = Chunk647438.useState("preview");
-    return (0, Chunk951288.jsxs)("div", {
+    let [e, t] = Chunk473749.useState("preview");
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk198764.container,
-      children: [(0, Chunk951288.jsx)(Chunk481060.sY7, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.sY7, {
         options: h,
         value: module,
         onChange: e => {
@@ -355,9 +355,9 @@ let h = [{
         },
         className: Chunk198764.panelModeControl,
         optionClassName: Chunk198764.panelModeControlOption
-      }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
+      }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
         size: 8
-      }), "preview" === module && (0, Chunk951288.jsx)(S, {}), "validate" === module && (0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsx)(Chunk481060.LZC, {
+      }), "preview" === module && (0, Chunk54381.jsx)(S, {}), "validate" === module && (0, Chunk54381.jsx)(C, {}), (0, Chunk54381.jsx)(Chunk481060.LZC, {
         size: 16
       })]
     })

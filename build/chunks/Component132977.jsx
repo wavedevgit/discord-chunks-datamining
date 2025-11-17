@@ -6,8 +6,8 @@ require.d(exports, {
   gt: () => I,
   rH: () => b
 });
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
@@ -83,7 +83,7 @@ let y = {
     default: Chunk929370.shineInnerDefault,
     small: Chunk929370.shineInnerSmall
   };
-class v extends(r = Chunk647438.PureComponent) {
+class v extends(r = Chunk473749.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -92,15 +92,15 @@ class v extends(r = Chunk647438.PureComponent) {
         shinePaused: r
       } = module,
       a = g(module, ["className", "shineSize", "shinePaused"]);
-    return (0, Chunk951288.jsx)(Chunk748780.Z.div, m(p({}, Chunk647438), {
+    return (0, Chunk54381.jsx)(Chunk748780.Z.div, m(p({}, Chunk473749), {
       className: s()(Chunk929370.shineContainer, exports, {
         [Chunk929370.shinePaused]: r
       }),
-      children: (0, Chunk951288.jsx)(Chunk600164.Z, {
+      children: (0, Chunk54381.jsx)(Chunk600164.Z, {
         align: Chunk600164.Z.Align.CENTER,
         justify: Chunk600164.Z.Justify.CENTER,
         className: y[require],
-        children: (0, Chunk951288.jsx)("div", {
+        children: (0, Chunk54381.jsx)("div", {
           className: O[require]
         })
       })

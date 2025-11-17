@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => Z
 }), require("./953529.js"), require("./314940.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk278074 = require("./278074.js"),
@@ -104,39 +104,39 @@ function x(e) {
 }
 
 function L() {
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: o()(Chunk790680.box, Chunk519279.box, Chunk790680.linkingBanner, Chunk790680.linkingBannerParent),
-    children: [(0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk790680.linkingBannerUpper,
-      children: [(0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: [(0, Chunk54381.jsxs)("div", {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           className: Chunk197571.marginBottom8,
           variant: "heading-xl/medium",
-          children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
+          children: (0, Chunk54381.jsx)(Chunk481060.y5t, {
             children: Chunk388032.intl.string(Chunk597754.default.pHEnV5)
           })
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
           className: Chunk197571.marginBottom20,
           children: Chunk388032.intl.string(Chunk597754.default["1J/gZ4"])
         })]
-      }), (0, Chunk951288.jsx)("img", {
+      }), (0, Chunk54381.jsx)("img", {
         className: Chunk790680.bannerArt,
         src: Chunk926895,
         alt: Chunk388032.intl.string(Chunk597754.default["r+PDmu"])
       })]
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk790680.steps,
-      children: [(0, Chunk951288.jsx)(x, {
+      children: [(0, Chunk54381.jsx)(x, {
         header: Chunk388032.intl.string(Chunk597754.default["7xxAni"]),
         description: Chunk388032.intl.string(Chunk597754.default["1M9So2"]),
         stepNumber: 1
-      }), (0, Chunk951288.jsx)(x, {
+      }), (0, Chunk54381.jsx)(x, {
         header: Chunk388032.intl.string(Chunk597754.default["AXgx+a"]),
         description: Chunk388032.intl.string(Chunk597754.default.GzMFnb),
         stepNumber: 2
-      }), (0, Chunk951288.jsx)(x, {
+      }), (0, Chunk54381.jsx)(x, {
         header: Chunk388032.intl.string(Chunk597754.default.MZn1tG),
         description: Chunk388032.intl.string(Chunk597754.default["8rLBxD"]),
         stepNumber: 3
@@ -147,24 +147,24 @@ function L() {
 
 function M() {
   let e = (0, Chunk631885.VM)();
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: o()(Chunk790680.box, Chunk519279.box, Chunk790680.linkingBanner),
-    children: [(0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+    children: [(0, Chunk54381.jsxs)("div", {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         className: Chunk197571.marginBottom8,
         variant: "heading-xl/medium",
-        children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
+        children: (0, Chunk54381.jsx)(Chunk481060.y5t, {
           children: Chunk388032.intl.string(Chunk597754.default.zUCWEL)
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
         className: Chunk197571.marginBottom20,
         children: Chunk388032.intl.format(Chunk597754.default.yMnoDl, {
           link: "https://support.discord.com/hc/articles/14155060633623"
         })
-      }), module ? null : (0, Chunk951288.jsx)(Chunk568671.Z, {})]
-    }), (0, Chunk951288.jsx)("img", {
+      }), module ? null : (0, Chunk54381.jsx)(Chunk568671.Z, {})]
+    }), (0, Chunk54381.jsx)("img", {
       className: Chunk790680.bannerArt,
       src: Chunk926895,
       alt: Chunk388032.intl.string(Chunk597754.default["r+PDmu"])
@@ -237,21 +237,21 @@ let j = () => {
         count: exports.length,
         max: require
       },
-      a = (0, Chunk785681.o)(Chunk388032.intl.formatToPlainString(Chunk597754.default["+tnO34"], Chunk647438), Chunk388032.intl.formatToPlainString(Chunk597754.default["pu6/U0"], Chunk647438));
-    return exports.length > 0 ? (0, Chunk951288.jsx)(k, {
+      a = (0, Chunk785681.o)(Chunk388032.intl.formatToPlainString(Chunk597754.default["+tnO34"], Chunk473749), Chunk388032.intl.formatToPlainString(Chunk597754.default["pu6/U0"], Chunk473749));
+    return exports.length > 0 ? (0, Chunk54381.jsx)(k, {
       sectionType: Chunk292352.ne.ACTIVE,
       sectionTitle: Chunk120356,
       requests: exports
-    }) : (0, Chunk951288.jsxs)("div", {
+    }) : (0, Chunk54381.jsxs)("div", {
       className: Chunk790680.section,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         className: Chunk197571.marginBottom8,
         variant: "eyebrow",
         color: "header-secondary",
         children: Chunk120356
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk790680.box,
-        children: (0, Chunk951288.jsx)(Chunk895328.Z, {
+        children: (0, Chunk54381.jsx)(Chunk895328.Z, {
           text: Chunk388032.intl.string(Chunk597754.default.C4ScLD)
         })
       })]
@@ -265,9 +265,9 @@ let j = () => {
       }), Chunk388032.intl.formatToPlainString(Chunk597754.default.RcTgiE, {
         maxConnections: exports
       }));
-    return module ? (0, Chunk951288.jsx)("div", {
+    return module ? (0, Chunk54381.jsx)("div", {
       className: Chunk790680.maxConnectionInfo,
-      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xxs/medium",
         color: "text-muted",
         children: require
@@ -289,15 +289,15 @@ let j = () => {
       }, () => Chunk388032.intl.format(Chunk597754.default["6tsC8u"], {
         helpLink: Chunk134612.$l
       })).otherwise(() => null);
-    return null == require ? null : (0, Chunk951288.jsxs)("div", {
+    return null == require ? null : (0, Chunk54381.jsxs)("div", {
       className: Chunk197571.marginTop20,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         className: Chunk790680.supportHeader,
         variant: "heading-sm/semibold",
-        children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
+        children: (0, Chunk54381.jsx)(Chunk481060.y5t, {
           children: Chunk388032.intl.string(Chunk597754.default["7/tVhv"])
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
         children: require
@@ -311,7 +311,7 @@ let j = () => {
       }), Chunk388032.intl.formatToPlainString(Chunk597754.default.Q8XnAa, {
         count: module.length
       }));
-    return 0 === module.length ? null : (0, Chunk951288.jsx)(k, {
+    return 0 === module.length ? null : (0, Chunk54381.jsx)(k, {
       sectionType: Chunk292352.ne.PENDING,
       sectionTitle: exports,
       requests: module
@@ -319,8 +319,8 @@ let j = () => {
   },
   Z = () => {
     let e = (0, Chunk880257.Z)();
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk790680.container,
-      children: [module ? (0, Chunk951288.jsx)(L, {}) : (0, Chunk951288.jsx)(M, {}), (0, Chunk951288.jsx)(j, {}), (0, Chunk951288.jsx)(B, {}), (0, Chunk951288.jsx)(U, {}), (0, Chunk951288.jsx)(G, {})]
+      children: [module ? (0, Chunk54381.jsx)(L, {}) : (0, Chunk54381.jsx)(M, {}), (0, Chunk54381.jsx)(j, {}), (0, Chunk54381.jsx)(B, {}), (0, Chunk54381.jsx)(U, {}), (0, Chunk54381.jsx)(G, {})]
     })
   }

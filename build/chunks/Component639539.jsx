@@ -3,12 +3,12 @@
 require.d(exports, {
   J: () => y
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk164369 = require("./164369.js"),
-  Chunk442748 = require("./442748.js"),
+  Chunk636606 = require("./636606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk70956 = require("./70956.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -108,14 +108,14 @@ let f = e => {
     })
   },
   b = () => {
-    let [e, t] = Chunk647438.useState(false);
-    Chunk647438.useEffect(() => {
+    let [e, t] = Chunk473749.useState(false);
+    Chunk473749.useEffect(() => {
       let e;
       return ! function n() {
         let r = Date.now();
         e = setTimeout(() => {
           exports(e => !e), require()
-        }, Math.max(100, (Math.floor(Chunk951288 / Chunk70956.Z.Millis.HALF_SECOND) + 1) * Chunk70956.Z.Millis.HALF_SECOND - Chunk951288))
+        }, Math.max(100, (Math.floor(Chunk54381 / Chunk70956.Z.Millis.HALF_SECOND) + 1) * Chunk70956.Z.Millis.HALF_SECOND - Chunk54381))
       }(), () => {
         clearTimeout(module)
       }
@@ -126,12 +126,12 @@ let f = e => {
         duration: 100
       }
     });
-    return (0, Chunk951288.jsxs)(Chunk442748.animated.div, {
+    return (0, Chunk54381.jsxs)(Chunk636606.animated.div, {
       style: require,
       className: Chunk636433.colonContainer,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: Chunk636433.tinyDot
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk636433.tinyDot
       })]
     })

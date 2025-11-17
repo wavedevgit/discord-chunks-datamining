@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => c
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk703656 = require("./703656.js"),
   Chunk52647 = require("./52647.js"),
@@ -15,19 +15,19 @@ let c = function() {
     resetOnboardingExperience: e,
     resetQuestStatus: t
   } = (0, Chunk52647.Z)();
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: Chunk906406.container,
-    children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+    children: (0, Chunk54381.jsxs)(Chunk481060.C3N, {
       label: "Virtual Currency Configuration",
       description: "Click the button below to reset your onboarding state for Virtual Currency.",
-      children: [(0, Chunk951288.jsx)("div", {
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+      children: [(0, Chunk54381.jsx)("div", {
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           text: "Reset Onboarding State",
           onClick: () => {
             module(), exports(), (0, Chunk703656.uL)(Chunk981631.Z5c.APP)
           }
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.Wn, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Wn, {
         messageType: Chunk481060.QYI.INFO,
         children: "Your may have to refresh your client after being redirected to the main application in order to see these"
       })]

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => T
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
@@ -75,10 +75,10 @@ function k(e) {
 }
 
 function L() {
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.nn4, {
+  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.nn4, {
       children: Chunk388032.intl.string(Chunk388032.t.pfChQr)
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk694781.wishlistBannerGrid,
       children: Array.from({
         length: Chunk602733.zL

@@ -5,8 +5,8 @@ require.d(exports, {
   G_: () => b,
   g: () => E
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -103,7 +103,7 @@ function g(e) {
     })]
   })
 }
-let E = Chunk647438.memo(function(e) {
+let E = Chunk473749.memo(function(e) {
     let {
       whatsNewBoxes: t
     } = (0, l.ZP)();
@@ -113,7 +113,7 @@ let E = Chunk647438.memo(function(e) {
       startLeftAligned: e.enablePremiumBrandRefreshDesign
     }, e))
   }),
-  b = Chunk647438.memo(function(e) {
+  b = Chunk473749.memo(function(e) {
     let {
       bestOfBoxes: t
     } = (0, l.ZP)();

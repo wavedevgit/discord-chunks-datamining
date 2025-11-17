@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => f
 }), require("./290780.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk215569 = require("./215569.js"),
   Chunk481060 = require("./481060.js"),
@@ -32,16 +32,16 @@ function f() {
       }, n.id)
     }),
     g = null == require && null != f ? module[f] : null;
-  return null != g && h.unshift((0, Chunk951288.jsx)(Chunk919436.Z, {
+  return null != g && h.unshift((0, Chunk54381.jsx)(Chunk919436.Z, {
     channel: g
-  }, g.id)), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
+  }, g.id)), (0, Chunk54381.jsx)(Chunk481060.Kqy, {
     id: "guild-list-unread-dms",
     role: "group",
     "aria-label": Chunk388032.intl.string(Chunk388032.t.YUU0RF),
     gap: "xs",
     hidden: h.length < 1,
-    children: (0, Chunk951288.jsx)(Chunk215569.W, {
-      component: Chunk647438.Fragment,
+    children: (0, Chunk54381.jsx)(Chunk215569.W, {
+      component: Chunk473749.Fragment,
       children: h
     })
   })

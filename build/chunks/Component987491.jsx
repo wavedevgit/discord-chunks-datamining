@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => L
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
@@ -108,7 +108,7 @@ function M(e) {
     })
   })
 }
-let Z = Chunk647438.memo(function(e) {
+let Z = Chunk473749.memo(function(e) {
     let {
       joinRequest: t,
       user: n
@@ -162,7 +162,7 @@ let Z = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  D = Chunk647438.memo(function(e) {
+  D = Chunk473749.memo(function(e) {
     let {
       joinRequest: t,
       onSelect: i
@@ -254,24 +254,24 @@ let Z = Chunk647438.memo(function(e) {
     let e = "".concat(Math.floor(50 * Math.random()) + 100, "px"),
       t = "".concat(Math.floor(50 * Math.random()) + 100, "px"),
       n = "".concat(Math.floor(25 * Math.random()) + 50, "px");
-    return (0, Chunk951288.jsxs)("tr", {
+    return (0, Chunk54381.jsxs)("tr", {
       className: a()(Chunk266631.roundedRow, Chunk266631.memberRowContainer),
-      children: [(0, Chunk951288.jsx)("td", {
-        children: (0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk54381.jsx)("td", {
+        children: (0, Chunk54381.jsxs)("div", {
           className: Chunk266631.memberNameContainer,
-          children: [(0, Chunk951288.jsx)("div", {
+          children: [(0, Chunk54381.jsx)("div", {
             className: a()(Chunk106682.placeholderAvatar, Chunk266631.memberAvatar)
-          }), (0, Chunk951288.jsx)("div", {
+          }), (0, Chunk54381.jsx)("div", {
             className: Chunk266631.memberName,
-            children: (0, Chunk951288.jsx)("div", {
+            children: (0, Chunk54381.jsx)("div", {
               className: Chunk106682.placeholderText,
               style: {
                 width: module
               }
             })
-          }), (0, Chunk951288.jsx)("div", {
+          }), (0, Chunk54381.jsx)("div", {
             className: Chunk266631.memberGlobalName,
-            children: (0, Chunk951288.jsx)("div", {
+            children: (0, Chunk54381.jsx)("div", {
               className: Chunk106682.placeholderTextSmall,
               style: {
                 width: exports
@@ -279,15 +279,15 @@ let Z = Chunk647438.memo(function(e) {
             })
           })]
         })
-      }), (0, Chunk951288.jsx)("td", {
+      }), (0, Chunk54381.jsx)("td", {
         className: Chunk266631.mediumCol,
-        children: (0, Chunk951288.jsx)("div", {
+        children: (0, Chunk54381.jsx)("div", {
           className: Chunk106682.placeholderText,
           style: {
             width: require
           }
         })
-      }), (0, Chunk951288.jsx)("td", {
+      }), (0, Chunk54381.jsx)("td", {
         className: Chunk106682.moreOptionsCol
       })]
     })

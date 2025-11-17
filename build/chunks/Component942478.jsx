@@ -3,8 +3,8 @@
 require.d(exports, {
   R: () => u
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk843991 = require("./843991.js"),
   Chunk442837 = require("./442837.js"),
   Chunk796027 = require("./796027.jsx"),
@@ -18,7 +18,7 @@ function u() {
     originalGuild: t,
     submitting: n,
     errors: u
-  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), g = Chunk647438.useMemo(() => (0, Chunk203377.LG)(u), [u]), m = Chunk647438.useCallback(async () => {
+  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), g = Chunk473749.useMemo(() => (0, Chunk203377.LG)(u), [u]), m = Chunk473749.useCallback(async () => {
     if (null == module) return Promise.resolve();
     let n = {
       systemChannelFlags: module.systemChannelFlags,
@@ -35,10 +35,10 @@ function u() {
       await Chunk434404.Z.updateEmbed(module.id, exports, require)
     }
     return Promise.resolve()
-  }, [module, exports]), p = Chunk647438.useCallback(() => {
+  }, [module, exports]), p = Chunk473749.useCallback(() => {
     null != module && Chunk434404.Z.init(module.id)
   }, [module]);
-  return (0, Chunk951288.jsx)(Chunk796027.Z, {
+  return (0, Chunk54381.jsx)(Chunk796027.Z, {
     submitting: require,
     errorMessage: g,
     onSave: m,

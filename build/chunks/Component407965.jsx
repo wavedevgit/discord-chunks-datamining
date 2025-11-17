@@ -4,8 +4,8 @@
 require.d(exports, {
   n: () => y
 }), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk793030 = require("./793030.js"),
@@ -43,12 +43,12 @@ let b = e => {
       let e = Chunk594174.default.getCurrentUser();
       return o()(null != module, "ProfileItem: currentUser cannot be undefined"), module
     });
-    Chunk647438.useEffect(() => {
+    Chunk473749.useEffect(() => {
       (0, Chunk484459.Z)(y.id, y.getAvatarURL(null, 80))
     }, [y]);
     let O = (0, Chunk847903.Z)(),
       v = "US" === O.ipCountryCode && "CA" === O.ipSubdivisionCode;
-    if (Chunk181679) return (0, Chunk951288.jsx)(Chunk793030.Modal, {
+    if (Chunk181679) return (0, Chunk54381.jsx)(Chunk793030.Modal, {
       transitionState: module,
       title: "",
       actions: [],
@@ -70,16 +70,16 @@ let b = e => {
       text: v ? Chunk388032.intl.string(Chunk388032.t.PfnxqD) : Chunk388032.intl.string(Chunk388032.t["3PatSz"]),
       onClick: () => Chunk512722(Chunk45474.R.CONFIRM),
       variant: "primary"
-    }), (0, Chunk951288.jsx)(Chunk793030.Modal, {
+    }), (0, Chunk54381.jsx)(Chunk793030.Modal, {
       transitionState: module,
       title: Chunk388032.intl.string(Chunk388032.t.PWq8TL),
       subtitle: Chunk388032.intl.formatToPlainString(Chunk388032.t.nsGVzg, {}),
       actions: I,
-      preview: null !== Chunk10508 && (0, Chunk951288.jsx)(b, {
+      preview: null !== Chunk10508 && (0, Chunk54381.jsx)(b, {
         churnUserDiscountOffer: Chunk10508
       }),
       onClose: async () => exports(),
-      children: (0, Chunk951288.jsx)(Chunk807163.g, {
+      children: (0, Chunk54381.jsx)(Chunk807163.g, {
         currentUser: y,
         premiumType: require,
         onClose: exports,

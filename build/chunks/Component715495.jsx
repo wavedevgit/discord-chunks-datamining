@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => _
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk276264 = require("./276264.jsx"),
@@ -54,12 +54,12 @@ function j(e, t) {
 
 function _() {
   var e, t;
-  let [n, r] = (0, Chunk647438.useState)(false), [s, d] = (0, Chunk647438.useState)(false), [h, g] = (0, Chunk647438.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
+  let [n, r] = (0, Chunk473749.useState)(false), [s, d] = (0, Chunk473749.useState)(false), [h, g] = (0, Chunk473749.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
     setToolsCache: O,
     removeToolsCache: T
   } = (0, Chunk396821.L3)(), {
     setImgCache: N
-  } = (0, Chunk396821.W_)(), P = (0, Chunk647438.useCallback)(e => {
+  } = (0, Chunk396821.W_)(), P = (0, Chunk473749.useCallback)(e => {
     let t = _[e];
     null != t && g({
       src: t.url,
@@ -73,27 +73,27 @@ function _() {
       src: e,
       preview: true
     }))
-  }, [_]), w = (0, Chunk647438.useCallback)(e => {
+  }, [_]), w = (0, Chunk473749.useCallback)(e => {
     g(t => null == t ? null : j(v({}, t), {
       palette: e,
       preview: true
     }))
-  }, []), I = (0, Chunk647438.useCallback)(e => {
+  }, []), I = (0, Chunk473749.useCallback)(e => {
     T(e)
   }, [T]);
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk30827.controls,
-      children: [(0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk30827.toggles,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
           size: "sm",
           onClick: () => {
             Chunk594174(false), Chunk442837(e => !e)
           },
           variant: "secondary",
           text: "Toggle Themes"
-        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           size: "sm",
           onClick: () => {
             Chunk442837(false), Chunk594174(e => !e)
@@ -101,25 +101,25 @@ function _() {
           variant: "secondary",
           text: "Toggle Gradients"
         })]
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk30827.themePicker,
-        children: [require && (0, Chunk951288.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk951288.jsx)(Chunk711325.Z, {
+        children: [require && (0, Chunk54381.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk54381.jsx)(Chunk711325.Z, {
           selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
           onSelect: e => {
             (null == h ? true : h.src) != null && O(h.src, h.src, e), w(e)
           }
         })]
       })]
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk30827.main,
-      children: [(0, Chunk951288.jsx)(y, {
+      children: [(0, Chunk54381.jsx)(y, {
         nameplate: Chunk996746
-      }, null == Chunk996746 || null == (t = Chunk996746.palette) ? true : exports.name), (0, Chunk951288.jsxs)("div", {
+      }, null == Chunk996746 || null == (t = Chunk996746.palette) ? true : exports.name), (0, Chunk54381.jsxs)("div", {
         className: Chunk30827.buttons,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
           children: "Drag background image to screen"
-        }), (0, Chunk951288.jsx)(Chunk205822.Z, {
+        }), (0, Chunk54381.jsx)(Chunk205822.Z, {
           title: "upload image",
           description: "upload the background",
           icons: Chunk731994.pA,
@@ -129,7 +129,7 @@ function _() {
               a = await n.arrayBuffer();
             N(t, t, (0, p.xh)(a)), O(t, t, m.jD)
           }
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: Chunk30827.uploadedArea,
           children: Object.values(_).map(e => {
             let {
@@ -141,14 +141,14 @@ function _() {
               removeAsset: I
             }, t)
           })
-        }), (0, Chunk951288.jsx)(E, {
+        }), (0, Chunk54381.jsx)(E, {
           label: "gradient override",
           onChange: e => w({
             name: m._j,
             darkBackground: e,
             lightBackground: e
           })
-        }), (0, Chunk951288.jsx)(S, {
+        }), (0, Chunk54381.jsx)(S, {
           label: "set",
           onClick: () => {}
         })]

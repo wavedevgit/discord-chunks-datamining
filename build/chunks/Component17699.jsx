@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => k
 }), require("./388685.js"), require("./781311.js"), require("./953529.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk399606 = require("./399606.js"),
@@ -144,29 +144,29 @@ function R(e) {
     })]
   })
 }
-class D extends Chunk647438.PureComponent {
+class D extends Chunk473749.PureComponent {
   render() {
     var e;
     let {
       user: t,
       guild: n
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
+    return (0, Chunk54381.jsxs)(Chunk481060.P3F, {
       className: Chunk40175.bannedUser,
       onClick: this.handleShowModal,
       onContextMenu: this.handleContextMenu,
-      children: [(0, Chunk951288.jsx)(Chunk481060.qEK, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.qEK, {
         src: exports.getAvatarURL(null == require ? true : require.id, 40),
         "aria-label": exports.username,
         size: Chunk481060.EFr.SIZE_40,
         className: Chunk40175.bannedUserAvatar
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk40175.username,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
           children: null != (e = exports.globalName) ? module : exports.username
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
           children: null != exports.globalName ? exports.username : null
@@ -200,7 +200,7 @@ class D extends Chunk647438.PureComponent {
     })
   }
 }
-let A = Chunk647438.forwardRef(function(e, t) {
+let A = Chunk473749.forwardRef(function(e, t) {
   let {
     guild: n,
     sortedBans: l,
@@ -303,13 +303,13 @@ function k() {
   let {
     guild: c,
     searchQuery: u
-  } = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps(), [], Chunk392711.isEqual), p = null != Chunk479531 && Chunk479531.trim().length > 0, f = (0, Chunk110924.Z)(Chunk367907), h = Chunk367907 !== Chunk906732, [x] = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getBans(), [], Chunk136015.Q), _ = null != (e = null == Chunk246946 ? true : Chunk246946.size) ? module : 0, O = (0, Chunk410030.ZP)(), C = null != (t = null == Chunk239091 ? true : Chunk239091.id) ? exports : Chunk981631.lds, N = Chunk647438.useRef(null), E = Chunk647438.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+  } = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps(), [], Chunk392711.isEqual), p = null != Chunk479531 && Chunk479531.trim().length > 0, f = (0, Chunk110924.Z)(Chunk367907), h = Chunk367907 !== Chunk906732, [x] = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getBans(), [], Chunk136015.Q), _ = null != (e = null == Chunk246946 ? true : Chunk246946.size) ? module : 0, O = (0, Chunk410030.ZP)(), C = null != (t = null == Chunk239091 ? true : Chunk239091.id) ? exports : Chunk981631.lds, N = Chunk473749.useRef(null), E = Chunk473749.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
     if (null == t || 0 === e.trim().length) returnfalse;
     let [
       [n], r
     ] = (0, b.C)(e);
     return !!r.includes(t.id) || null != n && !!(t.username.toLowerCase().includes(n.toLowerCase()) || null != t.globalName && t.globalName.toLowerCase().includes(n.toLowerCase()))
-  }, []), P = Chunk647438.useCallback((e, t, n) => {
+  }, []), P = Chunk473749.useCallback((e, t, n) => {
     if (null == e || 0 === n) return [];
     let r = [];
     for (let n of e.keys()) {
@@ -317,54 +317,54 @@ function k() {
       null != e && E(t)(e) && r.push(e)
     }
     return r
-  }, [Chunk740903]), R = Chunk647438.useMemo(() => P(Chunk246946, Chunk479531, Chunk626135), [Chunk246946, P, Chunk479531, Chunk626135]), D = null != Chunk246946, k = R.length % 1e3 == 0 && R.length > 0 && D, G = 0 === R.length, [M, U] = Chunk647438.useState({
+  }, [Chunk740903]), R = Chunk473749.useMemo(() => P(Chunk246946, Chunk479531, Chunk626135), [Chunk246946, P, Chunk479531, Chunk626135]), D = null != Chunk246946, k = R.length % 1e3 == 0 && R.length > 0 && D, G = 0 === R.length, [M, U] = Chunk473749.useState({
     currentPage: 1,
     pageSize: 100
   });
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     Chunk218867 && 1 !== M.currentPage && U(e => Z(w({}, e), {
       currentPage: 1
     }))
   }, [Chunk218867, M.currentPage]);
-  let B = Chunk647438.useCallback(e => {
+  let B = Chunk473749.useCallback(e => {
       d.Z.fetchGuildBansBatch(C, 1e3, e)
     }, [Chunk434404]),
-    F = Chunk647438.useMemo(() => a().chunk(R, M.pageSize), [M.pageSize, R]),
-    H = Chunk647438.useCallback(e => {
+    F = Chunk473749.useMemo(() => a().chunk(R, M.pageSize), [M.pageSize, R]),
+    H = Chunk473749.useCallback(e => {
       var t, n, r;
       null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > R.length && k && !p && (W.current = null != (r = null == (n = R[R.length - 1]) ? true : n.id) ? r : null, B(W.current)), (null != F[e - 1] || k) && U(t => Z(w({}, t), {
         currentPage: e
       }))
     }, [M.pageSize, R, k, F, B, Chunk367907]),
-    W = Chunk647438.useRef(null);
-  Chunk647438.useEffect(() => {
+    W = Chunk473749.useRef(null);
+  Chunk473749.useEffect(() => {
     B(W.current)
   }, [B]);
-  let z = Chunk647438.useMemo(() => {
+  let z = Chunk473749.useMemo(() => {
     var e;
     return null != (e = F[M.currentPage - 1]) ? module : []
   }, [F, M.currentPage]);
-  return null == Chunk239091 ? null : (0, Chunk951288.jsxs)("div", {
+  return null == Chunk239091 ? null : (0, Chunk54381.jsxs)("div", {
     className: Chunk40175.container,
-    children: [(0, Chunk951288.jsx)(L, {
+    children: [(0, Chunk54381.jsx)(L, {
       guildId: Chunk434404,
       storedSearchQuery: Chunk479531
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk40175.scrollerContainer,
-      children: [!G && (0, Chunk951288.jsx)(A, {
+      children: [!G && (0, Chunk54381.jsx)(A, {
         guild: Chunk239091,
         bans: Chunk246946,
         sortedBans: z,
         ref: Chunk84613
-      }), !k && G && (0, Chunk951288.jsxs)(Chunk481060.ubH, {
+      }), !k && G && (0, Chunk54381.jsxs)(Chunk481060.ubH, {
         theme: Chunk51144,
         className: Chunk40175.emptyState,
-        children: [(0, Chunk951288.jsx)(Chunk481060.oxh, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.oxh, {
           darkSrc: require("./532747.js"),
           lightSrc: require("./433466.js"),
           width: 256,
           height: 212
-        }), (0, Chunk951288.jsx)(Chunk481060.OZU, {
+        }), (0, Chunk54381.jsx)(Chunk481060.OZU, {
           note: Chunk388032.intl.string(Chunk388032.t.zfCsAw),
           style: {
             maxWidth: 300
@@ -372,8 +372,8 @@ function k() {
           children: Chunk388032.intl.string(Chunk388032.t.ZEiY1D)
         })]
       })]
-    }), (0, Chunk951288.jsx)("div", {
-      children: (0, Chunk951288.jsx)(Chunk481060.DsT, {
+    }), (0, Chunk54381.jsx)("div", {
+      children: (0, Chunk54381.jsx)(Chunk481060.DsT, {
         className: Chunk40175.paginationInput,
         totalCount: R.length + (k ? M.pageSize : 0),
         pageSize: M.pageSize,

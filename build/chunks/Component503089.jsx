@@ -7,8 +7,8 @@ require.d(exports, {
   d7: () => C,
   w6: () => A
 }), require("./539854.js"), require("./361932.js"), require("./187205.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk990547 = require("./990547.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
@@ -94,7 +94,7 @@ function N(e) {
     }))
   })
 }
-class R extends Chunk647438.PureComponent {
+class R extends Chunk473749.PureComponent {
   componentDidMount() {
     this.getPredicateSections().forEach(e => {
       let {
@@ -200,17 +200,17 @@ class R extends Chunk647438.PureComponent {
       hideSidebar: o
     } = this.props, s = this.getPredicateSections(), l = Chunk481060.find(e => e.section === n);
     if (null == Chunk213609 || null == require) return null;
-    let u = null != (e = "string" == typeof Chunk213609.label ? Chunk213609.label : Chunk213609.ariaLabel) ? module : Chunk647438;
-    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
-        location: Chunk647438,
+    let u = null != (e = "string" == typeof Chunk213609.label ? Chunk213609.label : Chunk213609.ariaLabel) ? module : Chunk473749;
+    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
+        location: Chunk473749,
         subsection: Chunk243778
-      }), (0, Chunk951288.jsx)(Chunk493544.ZP, {
+      }), (0, Chunk54381.jsx)(Chunk493544.ZP, {
         sidebarTheme: exports,
         scrollerRef: this.scrollerRef,
         section: require,
         sidebar: this.renderSidebar(Chunk481060),
-        content: (0, Chunk951288.jsx)(N, {
+        content: (0, Chunk54381.jsx)(N, {
           section: Chunk213609,
           setPreventNavigation: this.setPreventNavigation,
           scrollerRef: this.scrollerRef

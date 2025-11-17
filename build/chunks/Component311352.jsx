@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => C
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk399606 = require("./399606.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
@@ -104,7 +104,7 @@ let x = e => {
     })
   },
   C = () => {
-    let e = Chunk647438.useRef(null),
+    let e = Chunk473749.useRef(null),
       {
         parentAnalyticsLocation: t
       } = (0, Chunk906732.ZP)(),
@@ -114,10 +114,10 @@ let x = e => {
       d = (0, Chunk399606.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP));
     if (!Chunk704215 || null == Chunk765585 || require) return null;
     let v = Chunk13140.BB(Chunk765585.shortcut, true);
-    return (0, Chunk951288.jsx)(x, {
+    return (0, Chunk54381.jsx)(x, {
       keybindString: Chunk611372,
       targetElementRef: module,
-      children: (0, Chunk951288.jsx)(Chunk870569.Z, {
+      children: (0, Chunk54381.jsx)(Chunk870569.Z, {
         ref: module,
         disabled: Chunk239091,
         tooltipText: null != Chunk765585 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.HIMcv1, {

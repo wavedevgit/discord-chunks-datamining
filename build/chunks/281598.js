@@ -13,7 +13,7 @@ require.d(exports, {
   hm: () => P,
   jE: () => d
 }), require("./388685.js"), require("./539854.js"), require("./472816.js"), require("./794429.js"), require("./642613.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk406432 = require("./406432.js"),
   Chunk619899 = require("./619899.js");
@@ -182,7 +182,7 @@ let m = e => {
     }
     return t.collectionFiles.sort((e, t) => e.name.localeCompare(t.name)), t.avatarDecorationFiles.sort((e, t) => e.name.localeCompare(t.name)), t.ignoredFilenames.sort((e, t) => e.localeCompare(t)), t
   }, P = () => {
-    let [e, t] = Chunk647438.useState(() => ({
+    let [e, t] = Chunk473749.useState(() => ({
       collectionFiles: [],
       avatarDecorationFiles: [],
       profileEffectFilesMap: {},
@@ -190,7 +190,7 @@ let m = e => {
     })), {
       upsertCollectionAsset: n,
       upsertAvatarDecorationAsset: i
-    } = (0, Chunk619899.N9)(), a = Chunk647438.useCallback(async e => {
+    } = (0, Chunk619899.N9)(), a = Chunk473749.useCallback(async e => {
       let r = await R(e);
       t(r), (0 !== r.collectionFiles.length || 0 !== r.avatarDecorationFiles.length) && (r.collectionFiles.forEach(e => {
         E(e, e => {
@@ -202,13 +202,13 @@ let m = e => {
           i(e)
         })
       }))
-    }, [require, Chunk481060]), s = Chunk647438.useCallback(() => {
+    }, [require, Chunk481060]), s = Chunk473749.useCallback(() => {
       exports(e => u(l({}, e), {
         collectionFiles: [],
         avatarDecorationFiles: [],
         profileEffectFilesMap: {}
       }))
-    }, []), c = Chunk647438.useCallback(() => {
+    }, []), c = Chunk473749.useCallback(() => {
       exports(e => u(l({}, e), {
         ignoredFilenames: []
       }))

@@ -6,8 +6,8 @@ require.d(exports, {
   BB: () => tn,
   ZP: () => tr
 }), require("./388685.js"), require("./997841.js"), require("./35282.js"), require("./415506.js"), require("./361932.js"), require("./187205.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk275726 = require("./275726.js"),
@@ -133,7 +133,7 @@ function e1(e) {
   return e
 }
 
-function e2(e, t) {
+function e3(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -144,15 +144,15 @@ function e2(e, t) {
   return n
 }
 
-function e3(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : e2(Object(t)).forEach(function(n) {
+function e2(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : e3(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function e4(e, t) {
   if (null == e) return {};
-  var n, r, i = e8(e, t);
+  var n, r, i = e5(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -160,7 +160,7 @@ function e4(e, t) {
   return i
 }
 
-function e8(e, t) {
+function e5(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -168,14 +168,14 @@ function e8(e, t) {
   return i
 }
 
-function e5() {
-  return (0, Chunk951288.jsxs)("div", {
+function e8() {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk636428.nitroFileSizeUpsell,
-    children: [(0, Chunk951288.jsx)("img", {
+    children: [(0, Chunk54381.jsx)("img", {
       src: Chunk680674,
       className: Chunk636428.nitroBadgeSvg,
       alt: ""
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       children: Chunk388032.intl.format(Chunk388032.t["G/H+s6"], {
@@ -219,7 +219,7 @@ function tt(e, t) {
     return a !== l || i !== s || r.id !== o.id || r.name !== o.name
   })
 }
-class tn extends(r = Chunk647438.Component) {
+class tn extends(r = Chunk473749.Component) {
   shouldRenderInvite(e) {
     let {
       channel: t
@@ -246,27 +246,27 @@ class tn extends(r = Chunk647438.Component) {
     } = this.props, r = null;
     switch (require) {
       case Chunk594173.aD.MARK_AS_FALSE_POSITIVE:
-        r = (0, Chunk951288.jsx)(Chunk674611.Z, {
+        r = (0, Chunk54381.jsx)(Chunk674611.Z, {
           messageId: module.id,
           channelId: exports.id
         });
         break;
       case Chunk594173.aD.AGE_VERIFICATION_RETRY:
-        r = (0, Chunk951288.jsx)(Chunk183431.Z, {
+        r = (0, Chunk54381.jsx)(Chunk183431.Z, {
           channelId: exports.id
         });
         break;
       default:
         return null
     }
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: Chunk636428.ctaButtonContainer,
       children: r
     })
   }
   renderSocialProofingFileSizeNitroUpsell(e) {
     let t = e.attachments.some(e => e.size > eX.Lw);
-    return (0, eC.M)("attachment") && t ? (0, i.jsx)(e5, {}) : null
+    return (0, eC.M)("attachment") && t ? (0, i.jsx)(e8, {}) : null
   }
   renderCodedLinks(e) {
     return 0 === e.codedLinks.length ? null : e.codedLinks.map(t => {
@@ -408,7 +408,7 @@ class tn extends(r = Chunk647438.Component) {
     if (0 === d.length) return null;
     let f = d.map(t => {
         var n;
-        return e3(e1({}, (0, W.JD)(t, e)), {
+        return e2(e1({}, (0, W.JD)(t, e)), {
           original: t.url,
           srcIsAnimated: (0, eO.yE)(null != (n = t.flags) ? n : 0, eq.J0y.IS_ANIMATED)
         })
@@ -569,7 +569,7 @@ class tn extends(r = Chunk647438.Component) {
       channel: e,
       message: t
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk481060.sYh, {
+    return (0, Chunk54381.jsxs)(Chunk481060.sYh, {
       dismissable: true,
       header: Chunk388032.intl.string(Chunk388032.t.VL1KOk),
       confirmText: Chunk388032.intl.string(Chunk388032.t.YEHppG),
@@ -582,12 +582,12 @@ class tn extends(r = Chunk647438.Component) {
           showSuppressModal: false
         })
       },
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-default",
         className: Chunk636428.confirmText,
         children: Chunk388032.intl.string(Chunk388032.t["vXZ+Fo"])
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: Chunk388032.intl.string(Chunk388032.t["5j2by3"])
@@ -603,7 +603,7 @@ class tn extends(r = Chunk647438.Component) {
     } = this.state;
     return null == require ? void this.setState({
       showRemoveAttachmentModal: false
-    }) : (0, Chunk951288.jsx)(Chunk481060.sYh, {
+    }) : (0, Chunk54381.jsx)(Chunk481060.sYh, {
       dismissable: true,
       header: Chunk388032.intl.string(Chunk388032.t.CbTIEo),
       confirmText: Chunk388032.intl.string(Chunk388032.t.kFwAsa),
@@ -619,7 +619,7 @@ class tn extends(r = Chunk647438.Component) {
           attachmentToDelete: null
         })
       },
-      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-default",
         className: Chunk636428.confirmText,
@@ -707,10 +707,10 @@ class tn extends(r = Chunk647438.Component) {
       showSuppressModal: a,
       showRemoveAttachmentModal: o
     } = this.state, l = this.renderEditedTag(exports, r), c = this.renderCodedLinks(exports), u = this.renderGiftCodes(exports), d = this.renderAttachments(exports), f = this.renderCtaButton(), _ = this.renderSocialProofingFileSizeNitroUpsell(exports), p = this.renderEmbeds(exports), h = this.renderActivityInvite(exports), m = this.renderReactions(exports), g = this.renderPublishBump(exports), E = this.renderEphemeralAccessories(exports), b = this.renderStickersAccessories(exports), y = this.renderThreadAccessories(exports), O = this.renderComponentAccessories(exports), v = this.renderThreadRoleMentionWarning(exports), I = this.renderEmbeddedApplicationInstanceEmbed(exports), T = this.renderInteractionPremiumUpsell(exports), S = this.renderMediaPostEmbeds(exports), A = this.renderSafetyPolicyNotice(exports), C = this.renderSafetySystemNotification(exports), N = this.renderMediaObscureNotice(exports), R = this.renderPoll(exports, require), P = this.renderForwardedMessage(exports), D = this.renderReportedMessage(exports), w = this.renderShareClientTheme(exports);
-    return null == Chunk442837 && null == Chunk902704 && null == Chunk637374 && null == Chunk626799 && null == Chunk624367 && null == Chunk377108 && null == Chunk183431 && null == Chunk421474 && null == Chunk603270 && null == Chunk234431 && null == Chunk162297 && null == Chunk446411 && null == Chunk222709 && null == Chunk960904 && null == Chunk161314 && null != Chunk36129 && null == Chunk262777 && null == Chunk761538 && null == Chunk674611 && null == Chunk294734 ? null : (0, Chunk951288.jsxs)("div", {
+    return null == Chunk442837 && null == Chunk902704 && null == Chunk637374 && null == Chunk626799 && null == Chunk624367 && null == Chunk377108 && null == Chunk183431 && null == Chunk421474 && null == Chunk603270 && null == Chunk234431 && null == Chunk162297 && null == Chunk446411 && null == Chunk222709 && null == Chunk960904 && null == Chunk161314 && null != Chunk36129 && null == Chunk262777 && null == Chunk761538 && null == Chunk674611 && null == Chunk294734 ? null : (0, Chunk54381.jsxs)("div", {
       id: (0, Chunk453687.bX)(exports),
       className: s()(module, Chunk636428.container),
-      children: [Chunk674611, Chunk761538, Chunk222709, Chunk262777, Chunk294734, Chunk442837, Chunk377108, Chunk960904, Chunk902704, Chunk481060, Chunk637374, Chunk629710, Chunk626799, Chunk603270, Chunk162297, Chunk446411, Chunk36129, Chunk904245, Chunk275726, Chunk624367, Chunk183431, Chunk421474, Chunk647438 && this.renderSuppressConfirmModal(), Chunk120356 && this.renderRemoveAttachmentConfirmModal(), Chunk234431, Chunk161314, Chunk247206]
+      children: [Chunk674611, Chunk761538, Chunk222709, Chunk262777, Chunk294734, Chunk442837, Chunk377108, Chunk960904, Chunk902704, Chunk481060, Chunk637374, Chunk629710, Chunk626799, Chunk603270, Chunk162297, Chunk446411, Chunk36129, Chunk904245, Chunk275726, Chunk624367, Chunk183431, Chunk421474, Chunk473749 && this.renderSuppressConfirmModal(), Chunk120356 && this.renderRemoveAttachmentConfirmModal(), Chunk234431, Chunk161314, Chunk247206]
     })
   }
   constructor(...e) {
@@ -813,7 +813,7 @@ function tr(e) {
     isActiveChannelOrUnarchivableThread: v,
     isAutomodQuarantined: y
   }), P = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), D = (0, z.Z)(null == n ? true : n.id), w = (0, Q.Z)(r), x = (0, R.v)(r), L = (0, eN._)(n), j = (0, eT.ro)(r.id, r.channel_id), U = (0, C.m8)();
-  return (0, i.jsx)(tn, e3(e1(e3(e1({
+  return (0, i.jsx)(tn, e2(e1(e2(e1({
     canSuppressEmbeds: I,
     canDeleteAttachments: T
   }, N), {
@@ -862,7 +862,7 @@ let ti = e => {
     g = (0, R.v)(n),
     E = (0, eT.ro)(n.id, n.channel_id),
     b = (0, Q.Z)(n);
-  return (0, i.jsx)(tn, e3(e1({}, u), {
+  return (0, i.jsx)(tn, e2(e1({}, u), {
     message: n,
     channel: r,
     disableReactionReads: a,

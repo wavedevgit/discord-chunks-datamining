@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => g
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk153867 = require("./153867.js"),
@@ -26,7 +26,7 @@ let b = (0, Chunk663993.Un)({
   createPromise: () => require.e("4848").then(require.bind(require, 797967)),
   webpackId: 797967
 });
-class f extends Chunk647438.PureComponent {
+class f extends Chunk473749.PureComponent {
   render() {
     let {
       transitionState: e,
@@ -35,9 +35,9 @@ class f extends Chunk647438.PureComponent {
       name: r,
       color: o
     } = this.state;
-    return (0, Chunk951288.jsx)("form", {
+    return (0, Chunk54381.jsx)("form", {
       onSubmit: this.handleSubmit,
-      children: (0, Chunk951288.jsx)(Chunk159691.u_l, {
+      children: (0, Chunk54381.jsx)(Chunk159691.u_l, {
         title: Chunk388032.intl.string(Chunk388032.t.Dx7im5),
         actions: [{
           variant: "primary",
@@ -46,22 +46,22 @@ class f extends Chunk647438.PureComponent {
         }],
         transitionState: module,
         onClose: exports,
-        children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
           gap: 16,
           className: Chunk542560.container,
-          children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
             label: Chunk388032.intl.string(Chunk388032.t.tGRbjA),
             maxLength: Chunk981631.dYL,
             value: require,
             onChange: this.handleNameChange,
             placeholder: Chunk388032.intl.string(Chunk388032.t.xV9hVh),
             autoFocus: true
-          }), (0, Chunk951288.jsx)(Chunk481060.gNt, {
+          }), (0, Chunk54381.jsx)(Chunk481060.gNt, {
             label: Chunk388032.intl.string(Chunk388032.t.xpurRF),
-            children: (0, Chunk951288.jsx)(b, {
+            children: (0, Chunk54381.jsx)(b, {
               defaultColor: Chunk981631.Wyy,
               colors: Chunk981631.pmI,
-              value: null != Chunk647438 ? Chunk647438 : Chunk981631.Wyy,
+              value: null != Chunk473749 ? Chunk473749 : Chunk981631.Wyy,
               onChange: this.handleColorChange
             })
           })]

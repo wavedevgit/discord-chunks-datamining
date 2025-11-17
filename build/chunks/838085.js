@@ -4,15 +4,15 @@
 require.d(exports, {
   Z: () => a
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk393238 = require("./393238.js");
 
 function a() {
   let {
     ref: e,
     width: t
-  } = (0, Chunk393238.ZP)(), [n, a] = Chunk647438.useState();
-  return Chunk647438.useEffect(() => {
+  } = (0, Chunk393238.ZP)(), [n, a] = Chunk473749.useState();
+  return Chunk473749.useEffect(() => {
     null == require && null != exports && a(exports)
   }, [require, exports]), [module, require]
 }

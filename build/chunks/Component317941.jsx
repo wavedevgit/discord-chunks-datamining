@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => U
 }), require("./388685.js"), require("./415506.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
@@ -45,7 +45,7 @@ function x(e, t, n) {
 }
 let L = 512,
   M = 1e3;
-class k extends Chunk647438.PureComponent {
+class k extends Chunk473749.PureComponent {
   componentWillUnmount() {
     this._copyModeTimeout.stop()
   }
@@ -69,10 +69,10 @@ class k extends Chunk647438.PureComponent {
     } = this.props, {
       copyMode: n
     } = this.state;
-    return (0, Chunk951288.jsxs)(Chunk600164.Z, {
+    return (0, Chunk54381.jsxs)(Chunk600164.Z, {
       direction: Chunk600164.Z.Direction.VERTICAL,
       className: Chunk669255.giftCodeRow,
-      children: [(0, Chunk951288.jsx)(Chunk481060.kO8, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.kO8, {
         className: Chunk669255.codeText,
         value: (0, Chunk669079.Nz)(exports.code),
         text: this.copyButtonText,
@@ -82,13 +82,13 @@ class k extends Chunk647438.PureComponent {
         onCopy: this.handleCopy,
         buttonColor: Chunk755721.Tt.BRAND,
         buttonLook: Chunk755721.iL.FILLED
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk669255.subTextRow,
-        children: [null != exports.expiresAt ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
+        children: [null != exports.expiresAt ? (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
           children: [Chunk388032.intl.format(Chunk388032.t.ltVZcJ, {
             hours: exports.expiresAt.diff(l()(), "h")
           }), " —\xa0"]
-        }) : null, (0, Chunk951288.jsx)(Chunk481060.P3F, {
+        }) : null, (0, Chunk54381.jsx)(Chunk481060.P3F, {
           tag: "a",
           onClick: () => this.handleRevoke(exports.code),
           children: Chunk388032.intl.string(Chunk388032.t.v6Yazx)
@@ -116,7 +116,7 @@ class k extends Chunk647438.PureComponent {
     })
   }
 }
-class j extends Chunk647438.PureComponent {
+class j extends Chunk473749.PureComponent {
   componentDidMount() {
     this._loadedAt = Date.now()
   }
@@ -126,15 +126,15 @@ class j extends Chunk647438.PureComponent {
       giftStyle: t,
       application: n
     } = this.props;
-    return (0, Chunk164670.K$)(module) ? (0, Chunk951288.jsx)(Chunk848118.A, {
+    return (0, Chunk164670.K$)(module) ? (0, Chunk54381.jsx)(Chunk848118.A, {
       shape: "square",
       sku: module,
       containerClassName: Chunk669255.giftIcon
-    }) : null != exports ? (0, Chunk951288.jsx)(Chunk981632.Z, {
+    }) : null != exports ? (0, Chunk54381.jsx)(Chunk981632.Z, {
       giftStyle: exports,
       className: Chunk669255.giftIcon,
       shouldAnimate: this.state.isHovered
-    }) : (0, Chunk951288.jsx)(Chunk925329.Z, {
+    }) : (0, Chunk54381.jsx)(Chunk925329.Z, {
       game: require,
       size: Chunk925329.A.MEDIUM,
       skuId: module.id
@@ -146,9 +146,9 @@ class j extends Chunk647438.PureComponent {
       entitlements: t,
       application: n
     } = this.props;
-    return (0, Chunk164670.K$)(module) ? (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk164670.K$)(module) ? (0, Chunk54381.jsxs)("div", {
       className: o()(Chunk669255.subtitleHeader, Chunk669255.applicationSubtitleHeader),
-      children: [(0, Chunk951288.jsx)(Chunk925329.Z, {
+      children: [(0, Chunk54381.jsx)(Chunk925329.Z, {
         game: require,
         size: Chunk925329.A.XSMALL,
         skuId: module.id,
@@ -157,7 +157,7 @@ class j extends Chunk647438.PureComponent {
         applicationName: require.name,
         copies: exports.length
       })]
-    }) : (0, Chunk951288.jsx)("div", {
+    }) : (0, Chunk54381.jsx)("div", {
       className: Chunk669255.subtitleHeader,
       children: Chunk388032.intl.format(Chunk388032.t.zMcvcA, {
         copies: exports.length
@@ -170,26 +170,26 @@ class j extends Chunk647438.PureComponent {
       subscriptionPlan: n,
       giftCodeBatchId: i
     } = this.props;
-    return e = Chunk647438 === Chunk474936.m8 ? Chunk388032.intl.string(Chunk388032.t.odsU6W) : Chunk647438 === Chunk474936.rX && null != require ? Chunk388032.intl.formatToPlainString(require.interval === Chunk474936.rV.MONTH ? Chunk388032.t.uZjpiJ : Chunk388032.t.bJW1EA, {
+    return e = Chunk473749 === Chunk474936.m8 ? Chunk388032.intl.string(Chunk388032.t.odsU6W) : Chunk473749 === Chunk474936.rX && null != require ? Chunk388032.intl.formatToPlainString(require.interval === Chunk474936.rV.MONTH ? Chunk388032.t.uZjpiJ : Chunk388032.t.bJW1EA, {
       skuName: exports.name,
       intervalCount: require.intervalCount
     }) : null == require ? exports.name : Chunk388032.intl.formatToPlainString(require.interval === Chunk474936.rV.MONTH ? Chunk388032.t.rCJvqo : Chunk388032.t.Vd3Iu8, {
       skuName: exports.name,
       intervalCount: require.intervalCount
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk669255.gameName,
       children: module
     })
   }
   renderGenerateGiftCodeRow() {
-    return (0, Chunk951288.jsxs)(Chunk600164.Z, {
+    return (0, Chunk54381.jsxs)(Chunk600164.Z, {
       justify: Chunk600164.Z.Justify.BETWEEN,
       align: Chunk600164.Z.Align.CENTER,
       className: Chunk669255.generateCodeRow,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.lELyPj)
-      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t.Q3Qguo),
@@ -215,33 +215,33 @@ class j extends Chunk647438.PureComponent {
     } = this.props, {
       isOpen: c
     } = this.state;
-    return (0, Chunk951288.jsxs)(Chunk189907.Z, {
+    return (0, Chunk54381.jsxs)(Chunk189907.Z, {
       className: Chunk120356,
-      children: [(0, Chunk951288.jsx)(Chunk481060.P3F, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.P3F, {
         onClick: this.handleToggleOpen,
         className: Chunk669255.card,
         onMouseEnter: () => this.setIsHovered(true),
         onMouseLeave: () => this.setIsHovered(false),
-        children: (0, Chunk951288.jsx)(Chunk189907.Z.Header, {
+        children: (0, Chunk54381.jsx)(Chunk189907.Z.Header, {
           splashArtURL: exports.getSplashURL(L),
-          children: (0, Chunk951288.jsxs)("div", {
+          children: (0, Chunk54381.jsxs)("div", {
             className: Chunk669255.cardHeader,
-            children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
+            children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
               align: Chunk600164.Z.Align.CENTER,
-              children: [this.renderGiftIcon(), (0, Chunk951288.jsxs)("div", {
+              children: [this.renderGiftIcon(), (0, Chunk54381.jsxs)("div", {
                 className: Chunk669255.headerText,
                 children: [this.renderTitle(), this.renderSubtitle()]
               })]
-            }), (0, Chunk951288.jsx)(Chunk259580.Z, {
+            }), (0, Chunk54381.jsx)(Chunk259580.Z, {
               direction: Chunk442837 ? Chunk259580.Z.Directions.UP : Chunk259580.Z.Directions.DOWN,
               className: Chunk669255.expandIcon
             })]
           })
         })
-      }), Chunk442837 ? (0, Chunk951288.jsx)(Chunk189907.Z.Body, {
-        children: Chunk913527 ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
+      }), Chunk442837 ? (0, Chunk54381.jsx)(Chunk189907.Z.Body, {
+        children: Chunk913527 ? (0, Chunk54381.jsx)(Chunk481060.$jN, {
           className: Chunk669255.spinner
-        }) : (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
+        }) : (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
           children: [require.length < module.length ? this.renderGenerateGiftCodeRow() : null, require.map(e => (0, r.jsx)(k, {
             giftCode: e,
             sku: o,

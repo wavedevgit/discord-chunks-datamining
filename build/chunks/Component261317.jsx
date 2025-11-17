@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => P
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk580685 = require("./580685.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -39,15 +39,15 @@ let P = function() {
       fetchGuildProfile: R,
       fetchStatus: D
     } = (0, Chunk65361.u)(null == w ? true : w.id);
-  if (Chunk647438.useEffect(() => {
+  if (Chunk473749.useEffect(() => {
       (0, Chunk266454.Q3)(Chunk704215.z.GUILD_TAG_SERVER_SETTINGS_NEW_BADGE, {
         dismissAction: Chunk921944.L.AUTO
       })
-    }, []), Chunk647438.useEffect(() => {
+    }, []), Chunk473749.useEffect(() => {
       D === Chunk314852.a.NOT_FETCHED && R()
-    }, [R, D]), D !== Chunk314852.a.FETCHED) return (0, Chunk951288.jsx)("div", {
+    }, [R, D]), D !== Chunk314852.a.FETCHED) return (0, Chunk54381.jsx)("div", {
     className: Chunk764009.spinnerContainer,
-    children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
+    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   });
   if (null == w || null == Z) return null;
   let A = Chunk580685.Y.VISIBLE.has(Z.visibility),
@@ -56,8 +56,8 @@ let P = function() {
     G = null != (e = Z.badge) ? module : Chunk131085.QV["0"],
     M = null != (t = Z.badgeColorPrimary) ? exports : Chunk131085.Ek["0"].primary,
     U = null != (n = Z.badgeColorSecondary) ? require : Chunk131085.Ek["0"].secondary,
-    B = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk196902.Z, {
+    B = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsx)(Chunk196902.Z, {
         className: Chunk764009.section,
         guildId: w.id,
         isDisabled: k,
@@ -65,11 +65,11 @@ let P = function() {
         badge: G,
         primaryColor: M,
         secondaryColor: U
-      }), (0, Chunk951288.jsx)(Chunk910494.Z, {
+      }), (0, Chunk54381.jsx)(Chunk910494.Z, {
         className: Chunk764009.section,
         selectedBadge: G,
         guildId: w.id
-      }), (0, Chunk951288.jsx)(Chunk423087.Z, {
+      }), (0, Chunk54381.jsx)(Chunk423087.Z, {
         className: Chunk764009.section,
         guildId: w.id,
         badge: G,
@@ -77,18 +77,18 @@ let P = function() {
         secondaryColor: U
       })]
     });
-  return (0, Chunk951288.jsxs)("div", {
-    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+  return (0, Chunk54381.jsxs)("div", {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       className: Chunk764009.title,
       variant: "heading-lg/semibold",
       children: Chunk388032.intl.string(Chunk766310.default.mf2OwH)
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk764009.container,
-      children: [(0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk764009.leftContent,
-        children: [(0, Chunk951288.jsxs)("div", {
+        children: [(0, Chunk54381.jsxs)("div", {
           className: Chunk764009.descriptionContainer,
-          children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/medium",
             color: "text-secondary",
             children: Chunk388032.intl.format(Chunk766310.default["655Uny"], {
@@ -99,25 +99,25 @@ let P = function() {
                 Chunk434404.Z.setSection(Chunk981631.pNK.ACCESS)
               }
             })
-          }), !A && (0, Chunk951288.jsx)(Chunk494620.Z, {
+          }), !A && (0, Chunk54381.jsx)(Chunk494620.Z, {
             className: Chunk764009.privateProfileWarning,
-            children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+            children: (0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-xs/medium",
               children: Chunk388032.intl.format(Chunk766310.default.CRbkIz, {
                 onClickEditSetting: () => Chunk434404.Z.setSection(Chunk981631.pNK.PROFILE, Chunk981631.KsC.PROFILE_VISIBILITY)
               })
             })
           })]
-        }), L ? (0, Chunk951288.jsxs)("div", {
+        }), L ? (0, Chunk54381.jsxs)("div", {
           className: Chunk764009.enableSwitchContainer,
-          children: [(0, Chunk951288.jsx)("label", {
+          children: [(0, Chunk54381.jsx)("label", {
             htmlFor: "enable-server-tag",
-            children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+            children: (0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-md/semibold",
               color: "header-primary",
               children: Chunk388032.intl.string(Chunk766310.default["1zams8"])
             })
-          }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
             id: "enable-server-tag",
             checked: !k,
             onChange: () => {
@@ -134,28 +134,28 @@ let P = function() {
               })
             }
           })]
-        }) : (0, Chunk951288.jsx)("div", {
+        }) : (0, Chunk54381.jsx)("div", {
           className: Chunk764009.boostingLinkContainer,
-          children: (0, Chunk951288.jsx)(Chunk465682.v, {
+          children: (0, Chunk54381.jsx)(Chunk465682.v, {
             onClick: () => {
               (0, Chunk441536.Z)(w.id, Chunk100527.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), Chunk434404.Z.close()
             }
           })
-        }), k ? (0, Chunk951288.jsx)(Chunk481060.nuw, {
-          children: (0, Chunk951288.jsx)("div", {
+        }), k ? (0, Chunk54381.jsx)(Chunk481060.nuw, {
+          children: (0, Chunk54381.jsx)("div", {
             className: Chunk764009.disabledForm,
             children: B
           })
         }) : B]
-      }), (0, Chunk951288.jsxs)("div", {
+      }), (0, Chunk54381.jsxs)("div", {
         className: Chunk764009.sidebarContainer,
-        children: [(0, Chunk951288.jsx)(Chunk978088.Z, {
+        children: [(0, Chunk54381.jsx)(Chunk978088.Z, {
           guildId: w.id,
           tag: Z.tag,
           badge: G,
           primaryColor: M,
           secondaryColor: U
-        }), !k && (0, Chunk951288.jsx)(Chunk582066.Z, {
+        }), !k && (0, Chunk54381.jsx)(Chunk582066.Z, {
           guildId: w.id
         })]
       })]

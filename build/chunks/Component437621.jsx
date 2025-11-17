@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => G
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -80,7 +80,7 @@ class M extends Chunk98597.ZP {
     let {
       channelInfo: e
     } = this.props;
-    return null == module ? null : (0, Chunk951288.jsx)("div", {
+    return null == module ? null : (0, Chunk54381.jsx)("div", {
       className: Chunk55940.channelInfo,
       children: module
     })
@@ -107,7 +107,7 @@ class M extends Chunk98597.ZP {
       resolvedUnreadSetting: j,
       withGuildIcon: x,
       enableActivities: C
-    } = this.props, E = Chunk9156 && null != Chunk430824 && Chunk430824.length > 0, S = (0, Chunk873696.D)(Chunk665906), I = (0, Chunk951288.jsx)("li", {
+    } = this.props, E = Chunk9156 && null != Chunk430824 && Chunk430824.length > 0, S = (0, Chunk873696.D)(Chunk665906), I = (0, Chunk54381.jsx)("li", {
       className: o()(this.getClassName(), {
         [Chunk55940.disabled]: this.isDisabled(),
         [Chunk55940.selected]: require
@@ -115,20 +115,20 @@ class M extends Chunk98597.ZP {
       "data-dnd-name": module.name,
       onMouseEnter: Chunk493683 || Chunk594174 ? this.handleMouseEnter : true,
       onMouseLeave: Chunk493683 || Chunk594174 ? this.handleMouseLeave : true,
-      children: (0, Chunk951288.jsx)(Chunk481060.yRy, {
+      children: (0, Chunk54381.jsx)(Chunk481060.yRy, {
         targetElementRef: this.channelItemRef,
         position: "right",
         renderPopout: this.renderPopout,
         spacing: 0,
         onRequestClose: this.handleClosePopout,
         shouldShow: Chunk493683 && this.state.shouldShowThreadsPopout || Chunk594174 && this.state.shouldShowActivities,
-        children: () => (0, Chunk951288.jsxs)(Chunk473403.ZP, {
+        children: () => (0, Chunk54381.jsxs)(Chunk473403.ZP, {
           ref: this.channelItemRef,
           className: Chunk55940.iconVisibility,
           channel: module,
           guild: exports,
           selected: !Chunk22082 && require,
-          muted: Chunk647438,
+          muted: Chunk473749,
           unread: Chunk120356,
           mentionCount: Chunk239091,
           hasActiveThreads: Chunk442837,
@@ -147,9 +147,9 @@ class M extends Chunk98597.ZP {
             mentionCount: Chunk239091,
             isSubscriptionGated: Chunk66999
           }),
-          children: [Chunk22082 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          children: [Chunk22082 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
             children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
-          }), !Chunk22082 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          }), !Chunk22082 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
             children: [this.renderChannelInfo(), this.renderInviteButton(), this.renderEditButton()]
           })]
         })

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk13245 = require("./13245.js"),
   Chunk593481 = require("./593481.jsx"),
   Chunk981631 = require("./981631.js");
@@ -17,7 +17,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class c extends Chunk647438.Component {
+class c extends Chunk473749.Component {
   getStyle() {
     let e, t, n, i, {
       props: {
@@ -25,7 +25,7 @@ class c extends Chunk647438.Component {
         zIndex: o
       }
     } = this;
-    switch (Chunk647438) {
+    switch (Chunk473749) {
       case Chunk981631._vf.TOP_LEFT:
       case Chunk981631._vf.BOTTOM_LEFT:
         e = 0;
@@ -33,7 +33,7 @@ class c extends Chunk647438.Component {
       default:
         t = 0
     }
-    switch (Chunk647438) {
+    switch (Chunk473749) {
       case Chunk981631._vf.BOTTOM_LEFT:
       case Chunk981631._vf.BOTTOM_RIGHT:
         n = 0;
@@ -45,7 +45,7 @@ class c extends Chunk647438.Component {
       left: module,
       right: exports,
       bottom: require,
-      top: Chunk951288,
+      top: Chunk54381,
       zIndex: Chunk13245
     }
   }
@@ -80,7 +80,7 @@ class c extends Chunk647438.Component {
       }
       return r
     }(this.props.notification.props, ["renderFooter", "onNotificationShow", "onDismissClick", "onNotificationClick", "onConfirmClick", "onCancelClick"]);
-    return (0, Chunk951288.jsx)(Chunk593481.ZP, (e = function(e) {
+    return (0, Chunk54381.jsx)(Chunk593481.ZP, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);

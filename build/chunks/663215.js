@@ -5,7 +5,7 @@ require.d(exports, {
   FS: () => A,
   ZP: () => S
 }), require("./388685.js"), require("./539854.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk357156 = require("./357156.js"),
   Chunk675478 = require("./675478.js"),
@@ -209,7 +209,7 @@ function A(e, t, n) {
 }
 
 function C() {
-  return Chunk647438.useEffect(() => {
+  return Chunk473749.useEffect(() => {
     Chunk675478.DZ.loadIfNecessary()
   }, []), (0, Chunk442837.e7)([Chunk178106.Z], () => Chunk178106.Z.frecentlyPlayedSounds)
 }

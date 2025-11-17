@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => Z
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -44,7 +44,7 @@ let w = 512,
   B = l().debounce(() => {
     (0, Chunk367907.yw)(Chunk981631.rMx.APPLICATION_COMMAND_BROWSER_SCROLLED)
   }, 300),
-  Z = Chunk647438.forwardRef(function(e, t) {
+  Z = Chunk473749.forwardRef(function(e, t) {
     let {
       channel: n,
       canOnlyUseTextCommands: a

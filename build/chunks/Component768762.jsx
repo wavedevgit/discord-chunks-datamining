@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => p
 });
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -31,13 +31,13 @@ let d = {
     [d.DOWN]: Chunk192754.down,
     [d.LEFT]: Chunk192754.left
   };
-class _ extends(r = Chunk647438.PureComponent) {
+class _ extends(r = Chunk473749.PureComponent) {
   render() {
     let {
       direction: e,
       className: t
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk481060.wj7, {
+    return (0, Chunk54381.jsx)(Chunk481060.wj7, {
       size: "md",
       color: "currentColor",
       className: s()(exports, {

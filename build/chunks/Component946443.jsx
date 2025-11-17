@@ -5,8 +5,8 @@ require.d(exports, {
   ZP: () => S,
   h6: () => P
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk525654 = require("./525654.js"),
@@ -198,14 +198,14 @@ function I(e) {
 }
 
 function P() {
-  return (0, Chunk951288.jsx)(Chunk240126.Z, {
+  return (0, Chunk54381.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.xx7,
     disableStars: true,
     header: Chunk388032.intl.string(Chunk388032.t["KG/ynf"]),
     tip: Chunk388032.intl.string(Chunk388032.t.cvcKzX)
   })
 }
-let N = () => (0, Chunk951288.jsx)(Chunk143316.Z, {
+let N = () => (0, Chunk54381.jsx)(Chunk143316.Z, {
   onClick: () => Chunk585483.S.dispatch(Chunk981631.CkL.INBOX_MARK_ALL_UNREADS_READ),
   type: "top-header"
 })

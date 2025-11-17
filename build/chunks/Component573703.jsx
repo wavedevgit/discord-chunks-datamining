@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => C
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
   Chunk376340 = require("./376340.jsx"),
@@ -14,14 +14,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk38920 = require("./38920.js");
 
 function u() {
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: Chunk224942.__invalid_getCrunchyrollApp,
-    children: (0, Chunk951288.jsx)("div", {
+    children: (0, Chunk54381.jsx)("div", {
       className: Chunk224942.__invalid_getCrunchyrollAppBody,
-      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: (0, Chunk951288.jsx)(Chunk481060.Anchor, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.CRUNCHYROLL_CONNECTION),
           children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
         })

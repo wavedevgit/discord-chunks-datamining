@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => _
 }), require("./388685.js"), require("./642613.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk990547 = require("./990547.js"),
   Chunk46973 = require("./46973.js"),
   Chunk481060 = require("./481060.js"),
@@ -212,7 +212,7 @@ let j = {
       paymentSourceId: "test-payment-source",
       renewalMutations: null,
       hasActiveTrial: false
-    }, s = Chunk647438.forwardRef((n, s) => {
+    }, s = Chunk473749.forwardRef((n, s) => {
       let [o, c] = l.useState(null);
       return (0, a.jsx)(t.Provider, {
         value: {
@@ -275,7 +275,7 @@ let j = {
       default: e
     } = await require.e("638").then(require.bind(require, 543974)), t = await Promise.resolve().then(require.bind(require, 258609)), {
       createChannelRecord: l
-    } = await Promise.resolve().then(require.bind(require, 131704)), r = Chunk647438({
+    } = await Promise.resolve().then(require.bind(require, 131704)), r = Chunk473749({
       id: "123456789",
       name: "test-voice-channel",
       type: 2,
@@ -527,7 +527,7 @@ let j = {
     } = await Promise.resolve().then(require.bind(require, 481060)), {
       DisableCommunicationDuration: s,
       getFriendlyDurationString: o
-    } = await Promise.resolve().then(require.bind(require, 590433)), c = await Promise.resolve().then(require.t.bind(require, 647438, 19)), d = "TestUser";
+    } = await Promise.resolve().then(require.bind(require, 590433)), c = await Promise.resolve().then(require.t.bind(require, 473749, 19)), d = "TestUser";
 
     function u(n) {
       let [u, m] = c.useState(s.DURATION_60_SEC), [p, h] = c.useState(""), [x, g] = c.useState(false), [f, b] = c.useState(false), v = [{
@@ -639,7 +639,7 @@ let j = {
       Text: t,
       Heading: l,
       Checkbox: r
-    } = await Promise.resolve().then(require.bind(require, 481060)), i = await Promise.resolve().then(require.t.bind(require, 647438, 19)), s = "Level 3 Server Boost", o = 200, c = 60, d = 8;
+    } = await Promise.resolve().then(require.bind(require, 481060)), i = await Promise.resolve().then(require.t.bind(require, 473749, 19)), s = "Level 3 Server Boost", o = 200, c = 60, d = 8;
 
     function u(n) {
       let [u, m] = i.useState(false), [p, h] = i.useState(false), x = i.useCallback(async () => {
@@ -883,7 +883,7 @@ let j = {
       Text: l,
       Heading: r,
       Anchor: i
-    } = await Promise.resolve().then(require.bind(require, 481060)), s = await Promise.resolve().then(require.t.bind(require, 647438, 19));
+    } = await Promise.resolve().then(require.bind(require, 481060)), s = await Promise.resolve().then(require.t.bind(require, 473749, 19));
 
     function o(n) {
       let [o, c] = s.useState(false), [d, u] = s.useState(false);
@@ -1045,7 +1045,7 @@ let j = {
       splash: null,
       banner: null,
       homeHeader: null,
-      features: [Chunk647438.COMMUNITY],
+      features: [Chunk473749.COMMUNITY],
       preferredLocale: "en-US",
       afkChannelId: null,
       afkTimeout: 300,
@@ -1153,49 +1153,49 @@ let j = {
   FamilyCenterQRCodeModal: async () => {
     let {
       default: e
-    } = await Promise.all([require.e("82777"), require.e("90688")]).then(require.bind(require, 978305));
+    } = await Promise.all([require.e("69611"), require.e("90688")]).then(require.bind(require, 978305));
     return t => (0, a.jsx)(e, b({}, t))
   }
 };
 
 function _() {
-  let e = Chunk647438.useMemo(() => Object.keys(j).map(e => ({
+  let e = Chunk473749.useMemo(() => Object.keys(j).map(e => ({
       label: e,
       value: e
     })).sort((e, t) => e.label.localeCompare(t.label)), []),
-    [t, n] = Chunk647438.useState(module[0].value);
-  return (0, Chunk951288.jsx)(Chunk481060.zJl, {
+    [t, n] = Chunk473749.useState(module[0].value);
+  return (0, Chunk54381.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
-    children: (0, Chunk951288.jsxs)("div", {
+    children: (0, Chunk54381.jsxs)("div", {
       className: Chunk711322.panelInner,
-      children: [(0, Chunk951288.jsxs)("section", {
+      children: [(0, Chunk54381.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: "Open a Modal"
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           className: Chunk711322.inputRow,
-          children: [(0, Chunk951288.jsx)(Chunk481060.PhF, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.PhF, {
             className: Chunk711322.input,
             options: module,
             isSelected: e => t === e,
             serialize: e => e,
             select: e => n(e),
             popoutLayerContext: Chunk246992.O$
-          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Open",
             onClick: () => (0, Chunk481060.ZDy)(j[exports])
           })]
         })]
-      }), (0, Chunk951288.jsxs)("section", {
+      }), (0, Chunk54381.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: "Wow moment"
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           className: Chunk711322.inputRow,
-          children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+          children: (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Open",
             onClick: () => {

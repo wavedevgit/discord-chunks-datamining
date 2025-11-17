@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => m
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk752048 = require("./752048.js"),
@@ -25,7 +25,7 @@ let u = [{
   }
 }, {
   key: "affinity",
-  renderHeader: () => (0, Chunk951288.jsx)(Chunk481060.Text, {
+  renderHeader: () => (0, Chunk54381.jsx)(Chunk481060.Text, {
     variant: "text-sm/semibold",
     children: "COMMUNICATION AFFINITY"
   }),
@@ -38,7 +38,7 @@ let u = [{
   }
 }, {
   key: "vcProbability",
-  renderHeader: () => (0, Chunk951288.jsx)(Chunk481060.Text, {
+  renderHeader: () => (0, Chunk54381.jsx)(Chunk481060.Text, {
     variant: "text-sm/semibold",
     children: "VOICE AFFINITY"
   }),
@@ -65,7 +65,7 @@ function m() {
       key: t
     }
   }));
-  return 0 === module.length ? null : (0, Chunk951288.jsx)(Chunk681619.Z, {
+  return 0 === module.length ? null : (0, Chunk54381.jsx)(Chunk681619.Z, {
     className: Chunk451429.panel,
     columns: u,
     rowClassName: Chunk996279.row,

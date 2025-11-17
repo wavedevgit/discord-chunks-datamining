@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => c
 }), require("./49124.js"), require("./539854.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk948053 = require("./948053.js"),
   Chunk144725 = require("./144725.js"),
@@ -100,7 +100,7 @@ function c() {
     u = (0, Chunk442837.e7)([Chunk144725.Z], () => Chunk144725.Z.getNextIndexToHydrate()),
     d = (0, Chunk442837.cj)([Chunk144725.Z], () => Chunk144725.Z.getHydratedItems()),
     p = (0, Chunk442837.e7)([Chunk144725.Z], () => Chunk144725.Z.getMissingItems());
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     let e = Date.now() + c.length;
     Chunk948053.Z.ackGravityItems(c.map(t => ({
       id: t.id,
@@ -112,10 +112,10 @@ function c() {
     g = 0;
   for (let t = 0; exports < require.length && !(g >= u); exports++) {
     let r = require[exports];
-    if (g++, p[Chunk647438.id]) continue;
-    let i = d[Chunk647438.id];
-    if (null == Chunk442837 && Chunk647438.type === Chunk797394.Ni.MESSAGE && (null == (e = Chunk647438.data.message_context) ? true : module.reference_message_id) != null && (i = d[Chunk647438.data.message_id]), null != Chunk442837) {
-      let e = o(Chunk647438, Chunk442837, true);
+    if (g++, p[Chunk473749.id]) continue;
+    let i = d[Chunk473749.id];
+    if (null == Chunk442837 && Chunk473749.type === Chunk797394.Ni.MESSAGE && (null == (e = Chunk473749.data.message_context) ? true : module.reference_message_id) != null && (i = d[Chunk473749.data.message_id]), null != Chunk442837) {
+      let e = o(Chunk473749, Chunk442837, true);
       null != module && f.push(module)
     }
   }
@@ -123,8 +123,8 @@ function c() {
     let n = c[module];
     if (g++, p[require.id]) continue;
     let r = d[require.id];
-    if (null == Chunk647438 && require.type === Chunk797394.Ni.MESSAGE && (null == (t = require.data.message_context) ? true : exports.reference_message_id) != null && (r = d[require.data.message_id]), null != Chunk647438) {
-      let e = o(require, Chunk647438, false);
+    if (null == Chunk473749 && require.type === Chunk797394.Ni.MESSAGE && (null == (t = require.data.message_context) ? true : exports.reference_message_id) != null && (r = d[require.data.message_id]), null != Chunk473749) {
+      let e = o(require, Chunk473749, false);
       null != module && h.push(module)
     }
   }

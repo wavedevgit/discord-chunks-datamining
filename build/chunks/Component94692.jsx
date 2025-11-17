@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => g
 }), require("./539854.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk325432 = require("./325432.js"),
@@ -23,7 +23,7 @@ function p(t, e, s) {
   }) : t[e] = s, t
 }
 let I = "select";
-class m extends Chunk647438.PureComponent {
+class m extends Chunk473749.PureComponent {
   fetchAllDirectoryMetadata() {
     let {
       installationPaths: t
@@ -85,10 +85,10 @@ class m extends Chunk647438.PureComponent {
       value: t,
       installationPathsMetadata: e
     } = this.props;
-    return null != exports[module] && false === exports[module].hasPermission ? (0, Chunk951288.jsx)("div", {
+    return null != exports[module] && false === exports[module].hasPermission ? (0, Chunk54381.jsx)("div", {
       className: Chunk901650.error,
       children: Chunk388032.intl.string(Chunk388032.t.cEUT8B)
-    }) : this.hasEnoughDiskSpace(module) ? null : (0, Chunk951288.jsx)("div", {
+    }) : this.hasEnoughDiskSpace(module) ? null : (0, Chunk54381.jsx)("div", {
       className: Chunk901650.error,
       children: Chunk388032.intl.string(Chunk388032.t["duXbE/"])
     })
@@ -110,9 +110,9 @@ class m extends Chunk647438.PureComponent {
       className: e,
       autoFocus: s
     } = this.props;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: exports,
-      children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.q4e, {
         label: Chunk388032.intl.string(Chunk388032.t.WTJuNr),
         autoFocus: require,
         options: this.getOptions(),

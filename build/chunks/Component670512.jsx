@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => _
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
@@ -27,7 +27,7 @@ let m = {
   friction: 15,
   tension: 100
 };
-class b extends(r = Chunk647438.PureComponent) {
+class b extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.setState({
       shown: true
@@ -90,12 +90,12 @@ class b extends(r = Chunk647438.PureComponent) {
     })
   }
   renderContent() {
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk418956.tutorialMessages,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: Chunk418956.searchMessage,
         children: Chunk388032.intl.string(Chunk388032.t.Mp0IGK)
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk418956.selectMessage,
         children: Chunk388032.intl.string(Chunk388032.t["3CbpwH"])
       })]
@@ -107,7 +107,7 @@ class b extends(r = Chunk647438.PureComponent) {
     } = this.props, {
       shown: t
     } = this.state;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       ref: this.rootRef,
       className: a()(Chunk418956.tutorial, {
         [Chunk418956.shown]: exports,

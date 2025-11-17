@@ -4,8 +4,8 @@ require.d(exports, {
   O: () => E,
   Z: () => _
 }), require("./388685.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
@@ -114,7 +114,7 @@ let C = e => {
       })]
     })
   },
-  I = () => (0, Chunk951288.jsx)(Chunk481060.IGR, {
+  I = () => (0, Chunk54381.jsx)(Chunk481060.IGR, {
     color: Chunk831209.Z.BG_BRAND,
     text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
   })

@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => f
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk313789 = require("./313789.js"),
   Chunk736752 = require("./736752.jsx"),
   Chunk518596 = require("./518596.jsx"),
@@ -16,9 +16,9 @@ var Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f() {
-  return (0, Chunk951288.jsx)(Chunk838436.U, {
+  return (0, Chunk54381.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DATA_BASIC_SERVICE_V2,
-    children: (0, Chunk951288.jsx)(Chunk838436.H, {
+    children: (0, Chunk54381.jsx)(Chunk838436.H, {
       header: Chunk388032.intl.string(Chunk388032.t.D60Gfj),
       description: Chunk388032.intl.format(Chunk388032.t.R5N31P, {
         onClick: () => {

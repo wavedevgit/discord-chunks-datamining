@@ -4,11 +4,11 @@ require.r(exports), require.d(exports, {
   default: () => k,
   useAppSidebarState: () => D
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk191336 = require("./191336.js"),
+  Chunk663042 = require("./663042.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk174556 = require("./174556.js"),
@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk950796 = require("./950796.jsx"),
   Chunk741764 = require("./741764.js"),
   Chunk82504 = require("./82504.js");
-let D = (0, Chunk191336.U)(() => ({
+let D = (0, Chunk663042.U)(() => ({
   isOpen: true
 }));
 
@@ -54,8 +54,8 @@ function M(e) {
     focusSectionProps: i
   })
 }
-let k = Chunk647438.memo(function() {
-  Chunk647438.useLayoutEffect(() => {
+let k = Chunk473749.memo(function() {
+  Chunk473749.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
   let {
@@ -84,7 +84,7 @@ let k = Chunk647438.memo(function() {
   } = Chunk99977.c.useConfig({
     location: "AppTitleBar"
   }), k = (0, Chunk442837.e7)([Chunk906467.Z], () => Chunk906467.Z.isDeveloper), U = null !== module && exports === Chunk821020.u3.TITLE_BAR_LEFT, G = null === module;
-  Chunk647438.useLayoutEffect(() => {
+  Chunk473749.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
   let B = (0, Chunk984802.Ll)(),
@@ -98,7 +98,7 @@ let k = Chunk647438.memo(function() {
       } = e;
       return i.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "NOTIFICATIONS_INBOX" : r ? "TITLEBAR_FAST_TRAVEL" : l ? "RECENTS" : "HELP", [t, n, r, l])
     }({
-      showBackForwardButtons: Chunk191336,
+      showBackForwardButtons: Chunk663042,
       showNotificationsInbox: U,
       titlebarFastTravel: require,
       showRecentsButton: G
@@ -107,7 +107,7 @@ let k = Chunk647438.memo(function() {
   let F = a()(Chunk82504.button, {
     [Chunk82504.smallButton]: "sm" === Chunk257966
   });
-  return (0, Chunk951288.jsx)(Chunk481060.Wdt, {
+  return (0, Chunk54381.jsx)(Chunk481060.Wdt, {
     children: e => (0, r.jsx)(c.f6W, {
       theme: B,
       children: t => {

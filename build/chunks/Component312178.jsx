@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => j
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk765250 = require("./765250.js"),
   Chunk13245 = require("./13245.js"),
@@ -92,7 +92,7 @@ let E = {
     })
   }
 };
-class S extends Chunk647438.PureComponent {
+class S extends Chunk473749.PureComponent {
   componentDidUpdate(e) {
     this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (s.Z.track(v.rMx.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
       lastLayoutUpdate: null
@@ -141,7 +141,7 @@ class S extends Chunk647438.PureComponent {
       resizeY: _,
       dragAnywhere: v
     } = exports, O = (0, Chunk906037.eM)({
-      locked: Chunk647438,
+      locked: Chunk473749,
       isPreviewingInGame: Chunk442837,
       pinned: Chunk26229
     }), E = {
@@ -150,7 +150,7 @@ class S extends Chunk647438.PureComponent {
       maxX: require.width,
       maxY: require.height
     }, S = this.renderWidget(module, Chunk990673, Chunk382790);
-    return null == S ? null : (0, Chunk951288.jsx)(Chunk552062.Z, {
+    return null == S ? null : (0, Chunk54381.jsx)(Chunk552062.Z, {
       id: Chunk13245,
       size: Chunk382790,
       anchor: Chunk990673,
@@ -163,7 +163,7 @@ class S extends Chunk647438.PureComponent {
         zIndex: Chunk355863
       },
       dragAnywhere: Chunk981631,
-      active: !Chunk647438 || Chunk765250,
+      active: !Chunk473749 || Chunk765250,
       onUpdate: this.handleUpdate,
       onClick: this.handleFocus,
       onDragStart: this.handleDragStart,

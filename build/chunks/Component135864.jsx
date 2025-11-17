@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => T
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
@@ -104,15 +104,15 @@ function S(e) {
   })
 }
 let T = function() {
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk933767.container,
-    children: [(0, Chunk951288.jsx)("div", {
+    children: [(0, Chunk54381.jsx)("div", {
       className: Chunk933767.header,
-      children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "text-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t["1KqYnl"])
       })
-    }), (0, Chunk951288.jsx)("nav", {
+    }), (0, Chunk54381.jsx)("nav", {
       className: Chunk933767.nav,
       children: Chunk49898.GLOBAL_DISCOVERY_TABS.map(e => (0, r.jsx)(S, {
         tab: e

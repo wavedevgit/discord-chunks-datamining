@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => x
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk913527 = require("./913527.js"),
   r = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -66,22 +66,22 @@ function x() {
       key: e.toString(),
       dismissibleContent: e
     }));
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk607669.panelContainer,
-    children: [(0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk607669.info,
       children: ["Last winner time: ", Chunk913527]
-    }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsxs)("div", {
       className: Chunk607669.info,
       children: ["Last winner: ", null != x ? Chunk704215.z[x] : "None"]
-    }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)("div", {
       className: Chunk607669.candidatesTableContainer,
-      children: (0, Chunk951288.jsx)(Chunk681619.Z, {
+      children: (0, Chunk54381.jsx)(Chunk681619.Z, {
         className: Chunk607669.candidatesTable,
         columns: h,
         data: f
       })
-    }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk681619.Z, {
+    }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)(Chunk681619.Z, {
       columns: p,
       data: g
     })]

@@ -3,12 +3,12 @@
 require.d(exports, {
   Z: () => e_
 }), require("./388685.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk442748 = require("./442748.js"),
-  Chunk574583 = require("./574583.js"),
+  Chunk636606 = require("./636606.js"),
+  Chunk55160 = require("./55160.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk846519 = require("./846519.js"),
@@ -128,7 +128,7 @@ let eh = "server-settings",
       y: 0
     }
   };
-class em extends Chunk647438.PureComponent {
+class em extends Chunk473749.PureComponent {
   static getDerivedStateFromProps(e) {
     let {
       guild: t,
@@ -278,19 +278,19 @@ class em extends Chunk647438.PureComponent {
         enableStudyGroup: l
       } = module,
       a = ef(module, ["isUnavailable", "guild", "selectedChannel", "enableStudyGroup"]);
-    if (exports || null == require) return (0, Chunk951288.jsx)(Chunk591190.Z, {
+    if (exports || null == require) return (0, Chunk54381.jsx)(Chunk591190.Z, {
       withBannerPadding: null != require && null != this.getGuildBannerHash()
     });
     {
-      if (require.features.has(Chunk981631.GuildFeatures.HUB) && !Chunk120356) return (0, Chunk951288.jsx)("div", {
+      if (require.features.has(Chunk981631.GuildFeatures.HUB) && !Chunk120356) return (0, Chunk54381.jsx)("div", {
         className: Chunk971606.hubContainer,
-        children: (0, Chunk951288.jsx)(Chunk258871.Z, {
+        children: (0, Chunk54381.jsx)(Chunk258871.Z, {
           guild: require,
-          channel: null != Chunk647438 ? Chunk647438 : Chunk984933.ZP.getDefaultChannel(require.id)
+          channel: null != Chunk473749 ? Chunk473749 : Chunk984933.ZP.getDefaultChannel(require.id)
         })
       });
       let e = require.id === Chunk647086._ ? Chunk373274.j : Chunk373274.E;
-      return (0, Chunk951288.jsx)(module, ep(ed({
+      return (0, Chunk54381.jsx)(module, ep(ed({
         guild: require
       }, a), {
         guildBanner: this.getGuildBannerHash(),
@@ -304,13 +304,13 @@ class em extends Chunk647438.PureComponent {
     let {
       guild: t
     } = this.props;
-    return (0, Chunk951288.jsxs)("nav", {
+    return (0, Chunk54381.jsxs)("nav", {
       className: Chunk971606.container,
       onContextMenu: this.handleContextMenu,
       "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t.nj5gAZ, {
         guildName: null != (e = null == exports ? true : exports.name) ? module : ""
       }),
-      children: [null != exports && this.renderGuildHeader(this.state.hasGuildSubheader), null != exports && (0, Chunk951288.jsx)(Chunk156978.Z, {
+      children: [null != exports && this.renderGuildHeader(this.state.hasGuildSubheader), null != exports && (0, Chunk54381.jsx)(Chunk156978.Z, {
         guild: exports,
         setHasSubheader: e => this.setState({
           hasGuildSubheader: e
@@ -358,7 +358,7 @@ class em extends Chunk647438.PureComponent {
       null != t && (0, g.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("70018"), n.e("36599"), n.e("7654"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("86736"), n.e("6850"), n.e("58227"), n.e("44686"), n.e("384"), n.e("87154"), n.e("33213"), n.e("1289")]).then(n.bind(n, 545135));
+        } = await Promise.all([n.e("70363"), n.e("36599"), n.e("7654"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("86736"), n.e("6850"), n.e("58227"), n.e("44686"), n.e("384"), n.e("87154"), n.e("33213"), n.e("1289")]).then(n.bind(n, 545135));
         return n => (0, r.jsx)(e, ep(ed({}, n), {
           guild: t
         }))

@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => es
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk79766 = require("./79766.js"),
@@ -270,24 +270,24 @@ let ee = (e, t, i) => {
       headingText: e,
       headingTop: t
     } = eo();
-    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)("img", {
+    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsx)("img", {
         src: Chunk578478,
         alt: "",
         className: Chunk644219.headerArtV2
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk644219.containerV2,
         "data-testid": "subscriber-nitro-home-hero-header",
-        children: (0, Chunk951288.jsxs)("div", {
+        children: (0, Chunk54381.jsxs)("div", {
           className: Chunk644219.contentV2,
-          children: [exports, (0, Chunk951288.jsx)(Chunk481060.Heading, {
+          children: [exports, (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "display-lg",
             color: "always-white",
             className: Chunk644219.header,
             children: module
-          }), (0, Chunk951288.jsx)("div", {
+          }), (0, Chunk54381.jsx)("div", {
             className: Chunk644219.premiumSubscribeButton,
-            children: (0, Chunk951288.jsx)(Chunk736519.Z, {
+            children: (0, Chunk54381.jsx)(Chunk736519.Z, {
               look: Chunk755721.iL.FILLED,
               color: Chunk755721.Tt.BRAND,
               textOptions: {
@@ -295,7 +295,7 @@ let ee = (e, t, i) => {
               },
               className: Chunk644219.button
             })
-          }), (0, Chunk951288.jsx)(Chunk647277._, {
+          }), (0, Chunk54381.jsx)(Chunk647277._, {
             className: Chunk644219.referralBanner
           })]
         })

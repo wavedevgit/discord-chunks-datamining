@@ -4,8 +4,8 @@
 require.d(exports, {
   n: () => R
 }), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./388685.js");
-var r, i, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, i, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk372817 = require("./372817.js"),
@@ -77,7 +77,7 @@ let v = {
     top: Chunk82642.top,
     "top-pill": Chunk82642.topPill
   },
-  I = Chunk647438.forwardRef(function(e, t) {
+  I = Chunk473749.forwardRef(function(e, t) {
     let {
       className: n,
       onClick: r,
@@ -115,7 +115,7 @@ function T(e) {
     style: t
   })
 }
-let S = Chunk647438.forwardRef(function(e, t) {
+let S = Chunk473749.forwardRef(function(e, t) {
   var {
     children: n,
     id: r
@@ -138,7 +138,7 @@ function C(e, t) {
   let n = {};
   return "Selected" === t ? (n.backgroundColor = e, n.color = d.Z.unsafe_rawColors.WHITE_500.css) : ("Hover" === t && (n.backgroundColor = (0, u.wK)(e, .1)), n.color = e), n
 }
-class N extends(r = Chunk647438.Component) {
+class N extends(r = Chunk473749.Component) {
   getStyle() {
     let {
       color: e,
@@ -150,7 +150,7 @@ class N extends(r = Chunk647438.Component) {
       active: a
     } = this.state;
     if (null != module) {
-      if ("side" === r) return null != exports && require === exports || Chunk951288 ? C(module, "Selected") : i ? C(module, "Hover") : C(module);
+      if ("side" === r) return null != exports && require === exports || Chunk54381 ? C(module, "Selected") : i ? C(module, "Hover") : C(module);
       if ("top" === r)
         if (require === exports) return {
           borderColor: module,
@@ -190,14 +190,14 @@ class N extends(r = Chunk647438.Component) {
       look: _,
       disableItemStyles: p
     } = this.props, m = this.props["aria-label"], g = r === require;
-    return (0, Chunk951288.jsx)(Chunk360920.P, {
+    return (0, Chunk54381.jsx)(Chunk360920.P, {
       className: l()(exports, {
         [Chunk82642.item]: !Chunk295907,
         [Chunk82642.brand]: "brand" === Chunk777207,
         [Chunk82642.selected]: null == i && g,
         [Chunk82642.themed]: "grey" === Chunk777207,
         [Chunk82642.disabled]: null == i && Chunk120356,
-        [Chunk82642.destructive]: "destructive" === Chunk647438
+        [Chunk82642.destructive]: "destructive" === Chunk473749
       }),
       style: this.getStyle(),
       role: "tab",
@@ -257,7 +257,7 @@ m(N, "defaultProps", {
   look: "grey",
   disableItemStyles: false
 });
-class R extends(i = Chunk647438.Component) {
+class R extends(i = Chunk473749.Component) {
   render() {
     let {
       className: e,
@@ -267,7 +267,7 @@ class R extends(i = Chunk647438.Component) {
       "aria-label": i,
       orientation: s = "horizontal"
     } = this.props;
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       ref: this.tabBarRef,
       className: l()(module, v[require]),
       style: r,
@@ -275,7 +275,7 @@ class R extends(i = Chunk647438.Component) {
       "aria-orientation": Chunk120356,
       onKeyDown: this.handleKeyDown,
       "aria-label": i,
-      children: Chunk647438.Children.map(exports, this.renderChildren)
+      children: Chunk473749.Children.map(exports, this.renderChildren)
     })
   }
   constructor(...e) {

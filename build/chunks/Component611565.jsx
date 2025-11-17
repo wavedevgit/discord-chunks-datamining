@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => f
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
@@ -104,28 +104,28 @@ function f() {
     let n = d.Z.getChannel(t);
     return e[t] = null != n ? n : null, e
   }, {})), C = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getInboxMessages()), S = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getDevOverrides().navOnClick);
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: Chunk451429.panel,
-    children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
+    children: (0, Chunk54381.jsxs)(Chunk481060.zJl, {
       className: Chunk326588.content,
-      children: [(0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: [(0, Chunk54381.jsxs)("div", {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Inbox"
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           children: ["Inbox Message Count: ", C.length]
         })]
-      }), (0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      }), (0, Chunk54381.jsxs)("div", {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Dev Overrides"
-        }), (0, Chunk951288.jsx)("div", {
+        }), (0, Chunk54381.jsx)("div", {
           style: {
             display: "flex",
             alignItems: "center",
             marginTop: 8
           },
-          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: "Nav On Click",
             checked: !!S,
             onChange: e => {
@@ -136,17 +136,17 @@ function f() {
             }
           })
         })]
-      }), (0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      }), (0, Chunk54381.jsxs)("div", {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Unreads and Badging"
-        }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
+        }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
           size: 8
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           children: ["Unread Recent Mentions Count: ", module]
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           children: ["Unread Channel Count: ", exports.length]
-        }), (0, Chunk951288.jsx)(Chunk681619.Z, {
+        }), (0, Chunk54381.jsx)(Chunk681619.Z, {
           columns: x,
           data: Object.entries(y).map(e => {
             var t;
@@ -158,30 +158,30 @@ function f() {
             }
           })
         })]
-      }), (0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      }), (0, Chunk54381.jsxs)("div", {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Store State"
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           children: ["Is Loading: ", require ? "✅" : "❌"]
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           children: ["Has Preloaded: ", r ? "✅" : "❌"]
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           children: ["Has Loaded Ever: ", Chunk120356 ? "✅" : "❌"]
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           children: ["Has More To Load: ", f ? "✅" : "❌"]
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           children: ["Is Loading Complete: ", b ? "✅" : "❌"]
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           children: ["Last Loading Trigger: ", null == v ? true : v.loadingTrigger]
         })]
-      }), (0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      }), (0, Chunk54381.jsxs)("div", {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Channel Info Map"
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk54381.jsxs)("div", {
           children: ["Total Channels: ", Object.keys(j).length]
-        }), (0, Chunk951288.jsx)(Chunk681619.Z, {
+        }), (0, Chunk54381.jsx)(Chunk681619.Z, {
           columns: g,
           data: Object.entries(j).map(e => {
             var t, n;

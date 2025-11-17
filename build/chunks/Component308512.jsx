@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => c
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk223245 = require("./223245.js"),
@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
 
 function c() {
   let e = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled, []);
-  return (0, Chunk951288.jsx)(Chunk481060.S89, {
+  return (0, Chunk54381.jsx)(Chunk481060.S89, {
     id: "streamer-mode-toggle",
     label: Chunk388032.intl.string(Chunk388032.t.p9ZAJZ),
     action: () => {

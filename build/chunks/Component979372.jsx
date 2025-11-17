@@ -5,8 +5,8 @@ require.d(exports, {
   U: () => d,
   _: () => u
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk632065 = require("./632065.js");
@@ -24,7 +24,7 @@ let l = {
       reduced: Chunk632065.weightReduced
     }
   },
-  c = Chunk647438.createContext({
+  c = Chunk473749.createContext({
     className: true,
     size: "default",
     color: "default",
@@ -32,7 +32,7 @@ let l = {
   });
 
 function u() {
-  return Chunk647438.useContext(c)
+  return Chunk473749.useContext(c)
 }
 
 function d(e) {

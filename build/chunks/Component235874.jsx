@@ -5,8 +5,8 @@ require.d(exports, {
   K: () => O,
   y: () => y
 }), require("./415506.js"), require("./388685.js"), require("./49124.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
   Chunk493773 = require("./493773.js"),
   Chunk930295 = require("./930295.jsx"),
@@ -92,7 +92,7 @@ function b(e) {
   }
   throw Error("Unexpected position: ".concat(e))
 }
-class y extends(r = Chunk647438.Component) {
+class y extends(r = Chunk473749.Component) {
   render() {
     let {
       children: e,
@@ -118,12 +118,12 @@ class y extends(r = Chunk647438.Component) {
       spacing: I = 8,
       clickTrap: T = false
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk930295.H, {
+    return (0, Chunk54381.jsx)(Chunk930295.H, {
       ref: this.ref,
       targetElementRef: this.props.targetElementRef,
       preload: f,
       position: y,
-      align: null != Chunk647438 ? Chunk647438 : b(y),
+      align: null != Chunk473749 ? Chunk473749 : b(y),
       autoInvert: O,
       fixed: Chunk793030,
       nudgeAlignIntoViewport: v,

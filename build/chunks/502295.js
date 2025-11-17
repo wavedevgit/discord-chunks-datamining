@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => a
 });
-var Chunk647438 = require("./647438.js");
+var Chunk473749 = require("./473749.js");
 let i = Object.freeze({
   scrollTop: 0,
   scrollLeft: 0,
@@ -16,8 +16,8 @@ let i = Object.freeze({
 });
 
 function a() {
-  let e = (0, Chunk647438.useRef)(null),
-    t = (0, Chunk647438.useCallback)(() => {
+  let e = (0, Chunk473749.useRef)(null),
+    t = (0, Chunk473749.useCallback)(() => {
       let {
         current: t
       } = module;
@@ -33,7 +33,7 @@ function a() {
         return {
           scrollTop: module,
           scrollLeft: require,
-          scrollHeight: Chunk647438,
+          scrollHeight: Chunk473749,
           scrollWidth: i,
           offsetHeight: a,
           offsetWidth: o,

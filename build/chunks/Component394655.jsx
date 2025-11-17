@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => f
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk905405 = require("./905405.js"),
   Chunk63063 = require("./63063.js"),
   Chunk695346 = require("./695346.js"),
@@ -16,9 +16,9 @@ var Chunk951288 = require("./951288.js"),
 
 function f() {
   let e = (0, Chunk905405.p)();
-  return (0, Chunk951288.jsx)(Chunk838436.U, {
+  return (0, Chunk54381.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_KEYWORD_FILTER_V2,
-    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
+    children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
       value: module,
       onChange: e => o.gw.updateSetting({
         profanity: e,

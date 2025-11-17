@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => x
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
@@ -26,10 +26,10 @@ let p = [{
   };
 
 function x() {
-  let [e, t] = Chunk647438.useState("virtual-currency"), n = Chunk647438.useMemo(() => h[module], [module]);
-  return (0, Chunk951288.jsxs)("div", {
+  let [e, t] = Chunk473749.useState("virtual-currency"), n = Chunk473749.useMemo(() => h[module], [module]);
+  return (0, Chunk54381.jsxs)("div", {
     className: i()(Chunk451429.panel, Chunk226800.container),
-    children: [(0, Chunk951288.jsx)(Chunk481060.njP, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.njP, {
       className: Chunk226800.tabBar,
       selectedItem: module,
       onItemSelect: exports,
@@ -40,10 +40,10 @@ function x() {
         id: e.id,
         children: e.name
       }, e.id))
-    }), (0, Chunk951288.jsx)(Chunk793030.w0Z, {
-      children: (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)(Chunk793030.w0Z, {
+      children: (0, Chunk54381.jsx)("div", {
         className: Chunk226800.content,
-        children: (0, Chunk951288.jsx)(require, {})
+        children: (0, Chunk54381.jsx)(require, {})
       })
     })]
   })

@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk355467 = require("./355467.js"),
   Chunk78839 = require("./78839.js"),
@@ -25,8 +25,8 @@ function u(e) {
 function d() {
   let {
     ensureFresh: e = false
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = (0, Chunk261744.Z)() === Chunk293810.PY.SUBSCRIBED, n = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getActiveGuildSubscriptions()), d = Chunk647438.useRef(false);
-  return Chunk647438.useEffect(() => {
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = (0, Chunk261744.Z)() === Chunk293810.PY.SUBSCRIBED, n = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getActiveGuildSubscriptions()), d = Chunk473749.useRef(false);
+  return Chunk473749.useEffect(() => {
     u({
       ensureFresh: module,
       hasRoleSubscriptions: exports,

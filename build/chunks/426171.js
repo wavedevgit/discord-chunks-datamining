@@ -6,8 +6,8 @@ require.d(exports, {
   u9: () => v,
   xV: () => E
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
-  Chunk843611 = require("./843611.js"),
+var Chunk473749 = require("./473749.js"),
+  Chunk828700 = require("./828700.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk100527 = require("./100527.js"),
@@ -33,19 +33,19 @@ let m = "".concat("#").concat("itemSkuId", "="),
   },
   x = () => {
     let e = (0, Chunk258939.R)(),
-      t = Chunk647438.useRef(null),
-      n = (0, Chunk843611.TH)(),
+      t = Chunk473749.useRef(null),
+      n = (0, Chunk828700.TH)(),
       a = require.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk100527.Z.COLLECTIBLES_SHOP,
       {
         analyticsLocations: m
       } = (0, Chunk906732.ZP)(Chunk607070),
       b = (0, Chunk410127.Z)();
-    Chunk647438.useEffect(() => {
+    Chunk473749.useEffect(() => {
       let e = _.exec(require.hash);
       null != module ? exports.current = module[1] : exports.current = null
     }, [b, require.hash]);
     let v = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
-    Chunk647438.useEffect(() => {
+    Chunk473749.useEffect(() => {
       if (module) return;
       let n = null;
       if (null != v ? n = v : null != exports.current && (n = exports.current), null != require) {

@@ -4,8 +4,8 @@
 require.d(exports, {
   U: () => E
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -30,7 +30,7 @@ let E = () => {
     churnUserDiscountOffer: O,
     discountedPrice: v,
     fullPrice: I
-  } = (0, Chunk594135.a)(), [T, S] = (0, Chunk647438.useState)(false), [A, C] = (0, Chunk647438.useState)(false), N = async () => {
+  } = (0, Chunk594135.a)(), [T, S] = (0, Chunk473749.useState)(false), [A, C] = (0, Chunk473749.useState)(false), N = async () => {
     if (null === O) return void C(true);
     S(true), C(false);
     try {
@@ -39,9 +39,9 @@ let E = () => {
       C(true), S(false)
     }
   };
-  if (null === O || null === v) return (0, Chunk951288.jsx)("div", {
+  if (null === O || null === v) return (0, Chunk54381.jsx)("div", {
     className: Chunk950728.spinnerContainer,
-    children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
+    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   });
   let R = require === Chunk474936.PremiumTypes.TIER_2,
     P = [{
@@ -57,7 +57,7 @@ let E = () => {
       loading: T,
       disabled: T
     }];
-  return (0, Chunk951288.jsxs)(Chunk793030.ExpressiveModal, {
+  return (0, Chunk54381.jsxs)(Chunk793030.ExpressiveModal, {
     graphic: {
       type: "image",
       src: R ? Chunk288541.Z : Chunk997892
@@ -69,15 +69,15 @@ let E = () => {
     })),
     actions: P,
     onClose: async () => exports(),
-    children: [(0, Chunk951288.jsx)("div", {
+    children: [(0, Chunk54381.jsx)("div", {
       className: Chunk950728.offerDetailContainer,
-      children: (0, Chunk951288.jsx)(Chunk10508.o, {
+      children: (0, Chunk54381.jsx)(Chunk10508.o, {
         userDiscountOffer: O,
         offerState: Chunk10508.w.CONFIRMING
       })
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk950728.legalContainer,
-      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
         children: E.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.format(Chunk388032.t.mY3ysK, {
@@ -94,7 +94,7 @@ let E = () => {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })
       })
-    }), A ? (0, Chunk951288.jsx)(Chunk793030.M14, {
+    }), A ? (0, Chunk54381.jsx)(Chunk793030.M14, {
       type: "critical",
       children: Chunk388032.intl.string(Chunk388032.t["5mlOCW"])
     }) : null]

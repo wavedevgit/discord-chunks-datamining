@@ -5,11 +5,11 @@ require.d(exports, {
   j: () => i,
   t: () => a
 }), require("./415506.js");
-var Chunk647438 = require("./647438.js");
-let i = Chunk647438.createContext(true);
+var Chunk473749 = require("./473749.js");
+let i = Chunk473749.createContext(true);
 
 function a() {
-  let e = Chunk647438.useContext(i);
+  let e = Chunk473749.useContext(i);
   if (null == module) throw Error("useSettingsV2Context must be used within a SettingsV2Provider");
   return module
 }

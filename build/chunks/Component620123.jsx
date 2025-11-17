@@ -3,14 +3,14 @@
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk16084 = require("./16084.js"),
   Chunk55563 = require("./55563.js"),
   Chunk388032 = require("./388032.jsx");
-class u extends Chunk647438.Component {
+class u extends Chunk473749.Component {
   componentDidMount() {
     let {
       applicationId: e,
@@ -18,7 +18,7 @@ class u extends Chunk647438.Component {
       selectedSkuId: n,
       onChange: i
     } = this.props;
-    null == exports || 0 === exports.length ? (0, Chunk16084.uE)(module, false) : 1 === exports.length && null == require && Chunk951288(exports[0].id)
+    null == exports || 0 === exports.length ? (0, Chunk16084.uE)(module, false) : 1 === exports.length && null == require && Chunk54381(exports[0].id)
   }
   componentDidUpdate() {
     let {
@@ -35,8 +35,8 @@ class u extends Chunk647438.Component {
       className: n,
       label: r
     } = this.props, l = null != module && 0 === module.length;
-    return (0, Chunk951288.jsx)(Chunk481060.q4e, {
-      label: Chunk647438,
+    return (0, Chunk54381.jsx)(Chunk481060.q4e, {
+      label: Chunk473749,
       options: null != module ? module.map(e => ({
         label: e.name,
         value: e.id

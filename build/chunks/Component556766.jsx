@@ -4,11 +4,11 @@
 require.d(exports, {
   Z: () => N
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
-  Chunk548680 = require("./548680.js"),
+  Chunk35387 = require("./35387.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk317381 = require("./317381.js"),
@@ -84,14 +84,14 @@ function C() {
     n = (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.isSoundDisabled("call_ringing")),
     a = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.disableSounds),
     o = (0, Chunk442837.e7)([Chunk474873.Z], () => Chunk474873.Z.getSoundpack()),
-    y = Chunk647438.useRef(false),
-    v = (0, Chunk548680.Z)(() => {
+    y = Chunk473749.useRef(false),
+    v = (0, Chunk35387.Z)(() => {
       let e = "call_ringing";
       return o === Chunk871465.Y.CLASSIC ? (0, Chunk460181.tu)(A(), module) : (0, Chunk460181.uk)("call_ringing", o)
     }, [o]);
-  return Chunk647438.useEffect(() => () => {
+  return Chunk473749.useEffect(() => () => {
     v.stop()
-  }, [v]), Chunk647438.useEffect(() => {
+  }, [v]), Chunk473749.useEffect(() => {
     if (Chunk392711 || require) {
       y.current && (v.stop(), y.current = false);
       return
@@ -117,4 +117,4 @@ function C() {
     animatedStyle: e
   })))
 }
-let N = Chunk647438.memo(C)
+let N = Chunk473749.memo(C)

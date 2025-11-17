@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => S
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
   Chunk367907 = require("./367907.js"),
@@ -40,7 +40,7 @@ function O(e) {
   }
   return e
 }
-class E extends Chunk647438.Component {
+class E extends Chunk473749.Component {
   componentDidUpdate(e) {
     if (this.props.locked) return null;
     let {
@@ -84,8 +84,8 @@ class E extends Chunk647438.Component {
 let S = Chunk442837.ZP.connectStores([Chunk914010.Z, Chunk944486.Z, Chunk430824.Z, Chunk594174.default, Chunk237997.default, Chunk984933.ZP, Chunk496675.Z, Chunk271383.ZP], () => {
   var e, t, n;
   let i = Chunk914010.Z.getGuildId(),
-    o = Chunk944486.Z.getChannelId(Chunk647438),
-    l = Chunk430824.Z.getGuild(Chunk647438),
+    o = Chunk944486.Z.getChannelId(Chunk473749),
+    l = Chunk430824.Z.getGuild(Chunk473749),
     s = Chunk594174.default.getCurrentUser(),
     a = null != (t = Chunk984933.ZP.getChannels(null == Chunk367907 ? true : Chunk367907.id)[Chunk984933.sH]) ? exports : [],
     c = Chunk188471.length > 0 ? Chunk188471.filter(e => {
@@ -94,9 +94,9 @@ let S = Chunk442837.ZP.connectStores([Chunk914010.Z, Chunk944486.Z, Chunk430824.
       } = e;
       return f.Z.can(r.$e(v.Plq.SEND_MESSAGES, v.Plq.VIEW_CHANNEL), t)
     }).length : 0,
-    d = null != Chunk731429 && null != Chunk647438 && null != (n = null == (e = Chunk271383.ZP.getMember(Chunk647438, Chunk731429.id)) ? true : module.isPending) && require;
+    d = null != Chunk731429 && null != Chunk473749 && null != (n = null == (e = Chunk271383.ZP.getMember(Chunk473749, Chunk731429.id)) ? true : module.isPending) && require;
   return {
-    selectedGuild: Chunk647438,
+    selectedGuild: Chunk473749,
     selectedChannel: Chunk442837,
     locked: Chunk237997.default.isLocked((0, Chunk145597.getPID)()),
     hasPreviewEnabled: null == Chunk367907 ? true : Chunk367907.features.has(Chunk981631.GuildFeatures.PREVIEW_ENABLED),

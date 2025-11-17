@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => g
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
 let g = () => {
   let {
     guild: e
-  } = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps()), [t, n] = Chunk647438.useState(0);
-  switch (Chunk647438.useEffect(() => {
+  } = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps()), [t, n] = Chunk473749.useState(0);
+  switch (Chunk473749.useEffect(() => {
       null != module && Chunk570140.Z.wait(() => {
         (0, Chunk524329.RM)(module.id).then(() => {
           require("./1.js")
@@ -24,11 +24,11 @@ let g = () => {
       })
     }, [module]), exports) {
     case 0:
-      return (0, Chunk951288.jsx)(Chunk481060.$jN, {
+      return (0, Chunk54381.jsx)(Chunk481060.$jN, {
         type: Chunk481060.$jN.Type.SPINNING_CIRCLE
       });
     case 1:
-      return (0, Chunk951288.jsx)(Chunk263155.Z, {
+      return (0, Chunk54381.jsx)(Chunk263155.Z, {
         guild: module
       });
     default:

@@ -4,8 +4,8 @@ require.d(exports, {
   B: () => f,
   b: () => m
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
@@ -14,8 +14,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk624463 = require("./624463.js");
 
 function d() {
-  let [e, t] = Chunk647438.useState(false), [n, i] = Chunk647438.useState(false), [o, d] = Chunk647438.useState(false);
-  Chunk647438.useEffect(() => {
+  let [e, t] = Chunk473749.useState(false), [n, i] = Chunk473749.useState(false), [o, d] = Chunk473749.useState(false);
+  Chunk473749.useEffect(() => {
     let e;
     return require && (e = setTimeout(() => {
       Chunk28664(false)
@@ -33,12 +33,12 @@ function d() {
       }
     }
   };
-  return require ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+  return require ? (0, Chunk54381.jsx)(Chunk481060.Text, {
     className: Chunk624463.verifyConfirmText,
     variant: "text-sm/normal",
     color: "text-feedback-positive",
     children: Chunk388032.intl.string(Chunk388032.t.H3Q7U8)
-  }) : (0, Chunk951288.jsx)(Chunk481060.Button, {
+  }) : (0, Chunk54381.jsx)(Chunk481060.Button, {
     variant: "primary",
     size: "sm",
     text: Chunk489813 ? Chunk388032.intl.string(Chunk388032.t.WnX4J2) : Chunk388032.intl.string(Chunk388032.t["13ofGu"]),
@@ -48,16 +48,16 @@ function d() {
 }
 
 function m() {
-  return (0, Chunk951288.jsx)(Chunk489813.PU, {
+  return (0, Chunk54381.jsx)(Chunk489813.PU, {
     className: Chunk624463.editableRequirementContainer,
     icon: Chunk481060._XJ,
     text: Chunk388032.intl.string(Chunk388032.t.c6EUJI),
     footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TY"]),
     meetsRequirement: false,
-    children: (0, Chunk951288.jsx)(Chunk28664.u, {
+    children: (0, Chunk54381.jsx)(Chunk28664.u, {
       asContainer: true,
       text: Chunk388032.intl.string(Chunk388032.t.mGlP30),
-      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         disabled: true,

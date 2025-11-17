@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => ee
 }), require("./388685.js"), require("./539854.js"), require("./457542.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
@@ -426,16 +426,16 @@ function q(e) {
 }
 
 function X() {
-  return Chunk647438.useEffect(() => () => {
+  return Chunk473749.useEffect(() => () => {
     (0, Chunk266454.Q3)(Chunk704215.z.NEW_CRUNCHYROLL_CONNECTION, {
       dismissAction: Chunk921944.L.AUTO
     })
-  }, []), (0, Chunk951288.jsx)(Chunk481060.gNt, {
+  }, []), (0, Chunk54381.jsx)(Chunk481060.gNt, {
     label: Chunk388032.intl.string(Chunk388032.t.ZeDrUf),
     description: Chunk388032.intl.format(Chunk388032.t["oYc+Gz"], {
       privacyPolicyUrl: Chunk981631.EYA.PRIVACY
     }),
-    children: (0, Chunk951288.jsx)(J, {})
+    children: (0, Chunk54381.jsx)(J, {})
   })
 }
 
@@ -458,23 +458,23 @@ function J() {
     })
   }
   let t = (0, Chunk122021.fq)();
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk11049.connectionsContainer,
     children: [exports.slice(0, 10).map(e => (0, r.jsx)(g.Z, {
       type: e.type,
       className: V.__invalid_accountButton,
       innerClassName: V.accountButtonInner
-    }, e.type)), (0, Chunk951288.jsx)(Chunk28664.u, {
+    }, e.type)), (0, Chunk54381.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t.QqTz8b),
-      children: (0, Chunk951288.jsx)("div", {
+      children: (0, Chunk54381.jsx)("div", {
         className: o()(Chunk11049.accountAddWrapper, Chunk11049.__invalid_accountButton),
-        children: (0, Chunk951288.jsx)(Chunk481060.tEY, {
-          children: (0, Chunk951288.jsx)("button", {
+        children: (0, Chunk54381.jsx)(Chunk481060.tEY, {
+          children: (0, Chunk54381.jsx)("button", {
             className: o()(Chunk11049.accountAddInner, Chunk11049.accountButtonInner),
             type: "button",
             onClick: module,
             "aria-label": Chunk388032.intl.string(Chunk388032.t.Zhcj9X),
-            children: (0, Chunk951288.jsx)(Chunk481060.Fbu, {
+            children: (0, Chunk54381.jsx)(Chunk481060.Fbu, {
               color: "currentColor",
               size: "md",
               "aria-label": Chunk388032.intl.string(Chunk388032.t.QqTz8b)
@@ -525,13 +525,13 @@ let ee = () => {
     n = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
     a = (0, Chunk410030.ZP)(),
     o = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale);
-  return (Chunk647438.useEffect(() => {
+  return (Chunk473749.useEffect(() => {
     Chunk457330.Z.fetch()
-  }, []), module) ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk273313.Z, {
+  }, []), module) ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (0, Chunk54381.jsxs)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
-    children: [(0, Chunk951288.jsx)(X, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+    children: [(0, Chunk54381.jsx)(X, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {
       gap: 24
-    }), (0, Chunk951288.jsx)($, {
+    }), (0, Chunk54381.jsx)($, {
       fetching: exports,
       accounts: require,
       theme: Chunk120356,

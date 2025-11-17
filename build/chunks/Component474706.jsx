@@ -4,7 +4,7 @@
 require.d(exports, {
   f: () => f
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -26,28 +26,28 @@ function f() {
       reverse: true
     }),
     h = null == _ || null == (e = _.getBannerImageUrl) ? true : module.call(_);
-  return null == _ || null == require || 0 === require.length ? null : (0, Chunk951288.jsxs)("div", {
+  return null == _ || null == require || 0 === require.length ? null : (0, Chunk54381.jsxs)("div", {
     className: Chunk487276.container,
     style: p,
-    children: [null != h && (0, Chunk951288.jsx)("div", {
+    children: [null != h && (0, Chunk54381.jsx)("div", {
       className: Chunk487276.bannerImage,
       style: {
         backgroundImage: "url(".concat(h, ")")
       }
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk54381.jsxs)("div", {
       className: Chunk487276.textSection,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/bold",
         color: "always-white",
         children: _.heading()
-      }), null != _.subheading && (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), null != _.subheading && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "always-white",
         children: _.subheading(require.length)
       })]
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk487276.avatar,
-      children: (0, Chunk951288.jsx)(Chunk897942.Z, {
+      children: (0, Chunk54381.jsx)(Chunk897942.Z, {
         maxRewardImageSrc: _.getImageUrl(true, exports),
         claimableRewards: require,
         size: Chunk481060.EFr.SIZE_48,

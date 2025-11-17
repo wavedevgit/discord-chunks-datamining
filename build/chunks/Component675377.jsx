@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => F
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk525654 = require("./525654.js"),
@@ -78,14 +78,14 @@ function F() {
     {
       analyticsLocations: t
     } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS_SOUNDBOARD);
-  return null == module ? null : (0, Chunk951288.jsx)(Chunk906732.Gt, {
+  return null == module ? null : (0, Chunk54381.jsx)(Chunk906732.Gt, {
     value: exports,
-    children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+    children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       gap: 8,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.OWQNYr)
-      }), (0, Chunk951288.jsx)(K, {
+      }), (0, Chunk54381.jsx)(K, {
         guild: module
       })]
     })
@@ -183,9 +183,9 @@ let z = e => {
     }))
   },
   V = () => {
-    let e = Chunk647438.useRef(null);
-    return (0, Chunk951288.jsx)(z, {
-      renderPopoutBody: () => (0, Chunk951288.jsx)(Chunk481060.Text, {
+    let e = Chunk473749.useRef(null);
+    return (0, Chunk54381.jsx)(z, {
+      renderPopoutBody: () => (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: Chunk388032.intl.format(Chunk388032.t.bGXPVt, {})

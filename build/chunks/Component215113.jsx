@@ -4,8 +4,8 @@ require.r(exports), require.d(exports, {
   VideoQuestModalContext: () => Z,
   default: () => B
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -70,7 +70,7 @@ function V(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Z = Chunk647438.createContext({
+let Z = Chunk473749.createContext({
   quest: null,
   sourceQuestContent: null,
   videoSessionId: "",

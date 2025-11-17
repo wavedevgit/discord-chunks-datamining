@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => k
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -87,7 +87,7 @@ let O = e => {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 };
-class P extends Chunk647438.PureComponent {
+class P extends Chunk473749.PureComponent {
   renderBackupCodesSection(e) {
     return (0, r.jsx)(O, {
       label: g.intl.string(g.t.qZZUy6),
@@ -108,16 +108,16 @@ class P extends Chunk647438.PureComponent {
     })
   }
   renderPasskeyCTASection() {
-    return Chunk15980.Z.hasCredentials ? null : (0, Chunk951288.jsxs)(O, {
+    return Chunk15980.Z.hasCredentials ? null : (0, Chunk54381.jsxs)(O, {
       label: Chunk388032.intl.string(Chunk388032.t.xMDCHa),
       text: Chunk388032.intl.string(Chunk388032.t.okgGTu),
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         className: Chunk468412.sectionBody,
         children: Chunk388032.intl.format(Chunk388032.t.OeGXVv, {
           learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SETTING_UP_TWO_FACTOR)
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "active",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t.NIFmCJ),
@@ -184,13 +184,13 @@ class P extends Chunk647438.PureComponent {
     } = this.props, {
       showConfirmModal: t
     } = this.state;
-    return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
+    return (0, Chunk54381.jsxs)(Chunk481060.Y0X, {
       transitionState: module,
       className: Chunk468412.modal,
       parentComponent: "MFAEnableSuccess",
-      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t["681MPV"]), Chunk388032.intl.format(Chunk388032.t["/Nhi8R"], {})), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
+      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t["681MPV"]), Chunk388032.intl.format(Chunk388032.t["/Nhi8R"], {})), (0, Chunk54381.jsxs)(Chunk481060.hzk, {
         className: Chunk468412.modalInner,
-        children: [this.renderPasskeyCTASection(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+        children: [this.renderPasskeyCTASection(), (0, Chunk54381.jsx)(Chunk481060.izJ, {
           className: Chunk468412.divider
         }), this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.M0Dogh, {}))]
       }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.WJFPHJ))]
@@ -202,11 +202,11 @@ class P extends Chunk647438.PureComponent {
     } = this.props, {
       showConfirmModal: t
     } = this.state;
-    return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
+    return (0, Chunk54381.jsxs)(Chunk481060.Y0X, {
       transitionState: module,
       className: Chunk468412.modal,
       parentComponent: "MFAEnableSuccess",
-      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t.x6ielD), Chunk388032.intl.format(Chunk388032.t["/Nhi8R"], {})), (0, Chunk951288.jsx)(Chunk481060.hzk, {
+      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t.x6ielD), Chunk388032.intl.format(Chunk388032.t["/Nhi8R"], {})), (0, Chunk54381.jsx)(Chunk481060.hzk, {
         className: Chunk468412.modalInner,
         children: this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.p59QLQ, {}))
       }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.aoNIXB))]

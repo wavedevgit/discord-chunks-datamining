@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => d
 }), require("./415506.js");
-var s, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var s, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   h = require.n(Chunk120356),
   Chunk156578 = require("./156578.js");
@@ -17,7 +17,7 @@ function o(t, e, i) {
     writable: true
   }) : t[e] = i, t
 }
-class c extends(s = Chunk647438.PureComponent) {
+class c extends(s = Chunk473749.PureComponent) {
   componentDidUpdate(t) {
     t.src !== this.props.src && this.setState({
       loaded: false
@@ -52,7 +52,7 @@ class c extends(s = Chunk647438.PureComponent) {
     } = this.props, {
       loaded: f
     } = this.state;
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: require,
       style: (t = function(t) {
         for (var e = 1; e < arguments.length; e++) {
@@ -78,14 +78,14 @@ class c extends(s = Chunk647438.PureComponent) {
       })(Object(exports)).forEach(function(i) {
         Object.defineProperty(t, i, Object.getOwnPropertyDescriptor(e, i))
       }), module),
-      children: (0, Chunk951288.jsx)("img", {
+      children: (0, Chunk54381.jsx)("img", {
         className: h()(Chunk156578.image, p, {
           [Chunk156578.loaded]: f
         }),
         width: Chunk120356,
         height: c,
         src: s,
-        alt: Chunk647438,
+        alt: Chunk473749,
         onLoad: d
       })
     })

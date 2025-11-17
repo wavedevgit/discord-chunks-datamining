@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => g
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk796027 = require("./796027.jsx"),
   Chunk809206 = require("./809206.js"),
@@ -22,9 +22,9 @@ var Chunk951288 = require("./951288.js"),
 function g() {
   let e = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.getIsSubmitDisabled()),
     t = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.getErrors()),
-    [n, g] = Chunk647438.useState(false),
-    E = Chunk647438.useMemo(() => (null == exports ? true : exports.message) != null ? null == exports ? true : exports.message : Object.keys(null != exports ? exports : {}).length > 0 ? Chunk388032.intl.string(Chunk388032.t["84MExs"]) : null, [exports]),
-    b = Chunk647438.useCallback(async () => {
+    [n, g] = Chunk473749.useState(false),
+    E = Chunk473749.useMemo(() => (null == exports ? true : exports.message) != null ? null == exports ? true : exports.message : Object.keys(null != exports ? exports : {}).length > 0 ? Chunk388032.intl.string(Chunk388032.t["84MExs"]) : null, [exports]),
+    b = Chunk473749.useCallback(async () => {
       var e, t, n, r, i;
       g(true);
       let a = Chunk25990.Z.getAllPending(),
@@ -34,18 +34,18 @@ function g() {
         b = true;
       if (Object.keys(Chunk796027).length > 0) {
         let r = await (0, Chunk809206.Mn)(Chunk796027);
-        if (b = b && null != (t = null == Chunk951288 ? true : Chunk951288.ok) && exports, null == Chunk951288 ? true : Chunk951288.ok) {
-          let e = Chunk951288.body;
+        if (b = b && null != (t = null == Chunk54381 ? true : Chunk54381.ok) && exports, null == Chunk54381 ? true : Chunk54381.ok) {
+          let e = Chunk54381.body;
           true !== Chunk442837.pendingAvatar && (0, Chunk330055.Z)({
             avatarHash: module.avatar,
             avatarId: Chunk796027.avatarId,
             avatarAssetOrigin: null == (n = Chunk442837.pendingAvatar) ? true : require.assetOrigin
           }), (0, Chunk809206.si)()
-        } else(null == Chunk951288 || null == (e = Chunk951288.body) ? true : module.username) != null && (0, Chunk155433.P)()
+        } else(null == Chunk54381 || null == (e = Chunk54381.body) ? true : module.username) != null && (0, Chunk155433.P)()
       }
       if (Object.keys(Chunk388032).length > 0) {
         let e = await (0, Chunk350327.Z)(Chunk388032);
-        b = b && null != (r = null == module ? true : module.ok) && Chunk951288, (null == module ? true : module.ok) ? (0, Chunk350327.pG)() : (0, Chunk647699.r)()
+        b = b && null != (r = null == module ? true : module.ok) && Chunk54381, (null == module ? true : module.ok) ? (0, Chunk350327.pG)() : (0, Chunk647699.r)()
       }
       if (true !== Chunk442837.pendingLegacyUsernameDisabled) try {
         await Chunk695346.R_.updateSetting(Chunk442837.pendingLegacyUsernameDisabled), (0, Chunk809206.iR)()
@@ -58,15 +58,15 @@ function g() {
         } = E;
         if (true !== module) {
           let t = await (0, Chunk321114.c)(module, null !== module);
-          b = b && null != (i = null == exports ? true : exports.ok) && Chunk647438, (null == exports ? true : exports.ok) ? (0, Chunk809206.OU)() : (0, Chunk647699.r)()
+          b = b && null != (i = null == exports ? true : exports.ok) && Chunk473749, (null == exports ? true : exports.ok) ? (0, Chunk809206.OU)() : (0, Chunk647699.r)()
         }
       }
       b && (0, Chunk809206.b9)(), g(false)
     }, []),
-    y = Chunk647438.useCallback(() => {
+    y = Chunk473749.useCallback(() => {
       (0, Chunk809206.W3)()
     }, []);
-  return (0, Chunk951288.jsx)(Chunk796027.Z, {
+  return (0, Chunk54381.jsx)(Chunk796027.Z, {
     submitting: require,
     onSave: b,
     onReset: y,

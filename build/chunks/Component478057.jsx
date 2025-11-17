@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => d
 }), require("./361932.js"), require("./187205.js");
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk37234 = require("./37234.js"),
@@ -18,7 +18,7 @@ function d() {
       return (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) === true || (null == (t = Chunk594174.default.getCurrentUser()) ? true : exports.isStaffPersonal()) === true
     })) return null;
   let e = Chunk653592.componentPlaygroundConfigs.flatMap(e => e.collections);
-  return (0, Chunk951288.jsx)(Chunk481060.sNh, {
+  return (0, Chunk54381.jsx)(Chunk481060.sNh, {
     id: "playgrounds",
     label: "Playgrounds",
     action: () => {
@@ -27,7 +27,7 @@ function d() {
         selectedStory: null
       }), (0, Chunk37234.jN)(Chunk981631.S9g.COMPONENT_PLAYGROUND)
     },
-    children: (0, Chunk951288.jsx)(Chunk481060.kSQ, {
+    children: (0, Chunk54381.jsx)(Chunk481060.kSQ, {
       children: module.map(e => (0, l.jsx)(i.sNh, {
         id: "".concat(e.id, "-playground"),
         label: e.name,

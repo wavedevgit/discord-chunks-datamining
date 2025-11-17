@@ -7,8 +7,8 @@ require.d(exports, {
   kA: () => el,
   qR: () => ec
 }), require("./953529.js"), require("./997841.js"), require("./388685.js"), require("./415506.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -335,11 +335,11 @@ function ee(e) {
 }
 
 function et() {
-  return (0, Chunk951288.jsx)(Chunk28664.u, {
+  return (0, Chunk54381.jsx)(Chunk28664.u, {
     text: Chunk388032.intl.string(Chunk388032.t.CfTySQ),
-    children: (0, Chunk951288.jsx)("div", {
+    children: (0, Chunk54381.jsx)("div", {
       className: Chunk992878.devShelfBadge,
-      children: (0, Chunk951288.jsx)(Chunk880448.Z, {
+      children: (0, Chunk54381.jsx)(Chunk880448.Z, {
         className: Chunk992878.devShelfIcon
       })
     })

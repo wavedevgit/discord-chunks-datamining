@@ -4,8 +4,8 @@ require.d(exports, {
   d: () => f,
   k: () => S
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk630810 = require("./630810.js"),
   Chunk43267 = require("./43267.js"),
@@ -29,7 +29,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 let S = 44;
-class f extends Chunk647438.Component {
+class f extends Chunk473749.Component {
   shouldComponentUpdate(e, t) {
     return this.state.sending !== t.sending || this.state.invited !== t.invited || this.state.hovered !== t.hovered || this.props.user !== e.user || this.props.channel !== e.channel
   }
@@ -38,7 +38,7 @@ class f extends Chunk647438.Component {
       user: l,
       channel: r
     } = this.props;
-    if (null != Chunk647438) t = Chunk647438.getAvatarURL(null == Chunk630810 ? true : Chunk630810.guild_id, 32), n = Chunk51144.ZP.getName(Chunk647438);
+    if (null != Chunk473749) t = Chunk473749.getAvatarURL(null == Chunk630810 ? true : Chunk630810.guild_id, 32), n = Chunk51144.ZP.getName(Chunk473749);
     else if (null != Chunk630810 && (t = (0, Chunk43267.x)(Chunk630810), n = (0, Chunk933557.F6)(Chunk630810, Chunk594174.default, Chunk699516.Z), null == exports && null != Chunk630810.guild_id)) {
       let n = Chunk430824.Z.getGuild(Chunk630810.guild_id);
       null != require && (null != require.icon ? t = Chunk768581.ZP.getGuildIconURL({
@@ -48,14 +48,14 @@ class f extends Chunk647438.Component {
       }) : e = (0, Chunk624138.Zg)(require.name))
     }
     if (null == exports || null == require)
-      if (null != module) return (0, Chunk951288.jsx)(Chunk481060.Text, {
+      if (null != module) return (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         className: Chunk451964.acronym,
         "aria-hidden": true,
         children: module
       });
       else return null;
-    return (0, Chunk951288.jsx)(Chunk481060.qEK, {
+    return (0, Chunk54381.jsx)(Chunk481060.qEK, {
       src: exports,
       "aria-label": require,
       size: Chunk481060.EFr.SIZE_32,
@@ -69,21 +69,21 @@ class f extends Chunk647438.Component {
     } = this.props, {
       sending: n,
       invited: l
-    } = this.state, r = (0, Chunk951288.jsx)(Chunk481060.Button, {
+    } = this.state, r = (0, Chunk54381.jsx)(Chunk481060.Button, {
       variant: "secondary",
-      text: Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.dVT149) : Chunk388032.intl.string(Chunk388032.t.jYnGPG),
+      text: Chunk473749 ? Chunk388032.intl.string(Chunk388032.t.dVT149) : Chunk388032.intl.string(Chunk388032.t.jYnGPG),
       size: "sm",
       loading: require,
       onClick: this.handleClickInvite,
-      disabled: Chunk647438
+      disabled: Chunk473749
     });
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk451964.inviteRow,
       onMouseEnter: this.handleMouseEnter,
       onMouseLeave: this.handleMouseLeave,
-      children: [(0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk451964.inviteRowInfo,
-        children: [this.renderUserOrChannel(), (0, Chunk951288.jsxs)("div", {
+        children: [this.renderUserOrChannel(), (0, Chunk54381.jsxs)("div", {
           className: Chunk451964.inviteRowName,
           children: [Chunk51144.ZP.getName(module), null != exports ? (0, Chunk933557.F6)(exports, Chunk594174.default, Chunk699516.Z, true) : null]
         })]

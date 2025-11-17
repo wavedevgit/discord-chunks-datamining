@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => b
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk481060 = require("./481060.js"),
@@ -39,54 +39,54 @@ function b() {
     D = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
     L = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
     M = Chunk695346.YC.useSetting();
-  return (0, Chunk176038.ub)(), (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk176038.ub)(), (0, Chunk54381.jsxs)("div", {
     className: Chunk685960.container,
-    children: [(0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+    children: [(0, Chunk54381.jsxs)("div", {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: "Randomize customization settings"
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: "Randomly sets appearance-related settings. Leaving this tab or closing devtools will reset to your initial state."
-      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: "Randomize Theme",
         onClick: Chunk176038.aB
-      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: "Randomize Collectibles",
         onClick: Chunk176038.th
-      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: "Randomize Appearance Settings",
         onClick: Chunk176038._Y
       })]
-    }), (0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+    }), (0, Chunk54381.jsxs)("div", {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: "Current Settings"
-      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Theme: ", E]
-      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Client Theme ID:", " ", null != O ? null == (b = Chunk469115.qt[O]) ? true : b.getName() : "None"]
-      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Avatar Decoration: ", null != (_ = null == A ? true : A.name) ? _ : "None"]
-      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Nameplate: ", null != (y = null == Z ? true : Z.name) ? y : "None"]
-      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Font Size: ", D, "px"]
-      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Message Spacing: ", L]
-      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["UI Density: ", M, " (", function(e) {
           switch (e) {

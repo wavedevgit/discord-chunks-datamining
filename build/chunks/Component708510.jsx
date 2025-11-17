@@ -3,8 +3,8 @@
 require.d(exports, {
   O: () => I
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk456268 = require("./456268.js"),
@@ -89,36 +89,36 @@ function I() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild),
     t = (0, Chunk442837.e7)([Chunk658666.Z], () => Chunk658666.Z.pendingState),
     n = (0, Chunk981312.U)();
-  Chunk647438.useEffect(() => {
+  Chunk473749.useEffect(() => {
     (null == module ? true : module.id) != null && Chunk863249.ZP.fetchVerificationForm(module.id)
   }, [null == module ? true : module.id]);
-  let s = Chunk647438.useCallback(t => {
+  let s = Chunk473749.useCallback(t => {
     (null == e ? true : e.id) != null && f.Z.setSelectedJoinType(e.id, t)
   }, [null == module ? true : module.id]);
   if (null == module || null == exports) return null;
   let {
     joinType: d
   } = exports;
-  return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+  return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
     gap: 32,
-    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       color: "header-primary",
       variant: "heading-lg/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.YJlvBM)
-    }), (0, Chunk951288.jsx)(Chunk307375.h, {
+    }), (0, Chunk54381.jsx)(Chunk307375.h, {
       onTypePicked: Chunk456268,
       activeType: Chunk430824,
       guild: module
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: Chunk912231.divider
-    }), !require && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(E, {
+    }), !require && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsx)(E, {
         guildId: module.id
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk912231.divider
       })]
-    }), (0, Chunk951288.jsx)("div", {
-      children: (0, Chunk951288.jsx)(N, {
+    }), (0, Chunk54381.jsx)("div", {
+      children: (0, Chunk54381.jsx)(N, {
         pendingState: exports
       })
     })]

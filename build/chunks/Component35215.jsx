@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => W
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk930295 = require("./930295.jsx"),
   Chunk28664 = require("./28664.jsx"),
@@ -193,20 +193,20 @@ let Z = e => {
       })
     })
   },
-  V = () => (0, Chunk951288.jsxs)("svg", {
+  V = () => (0, Chunk54381.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "75",
     height: "96",
     viewBox: "0 0 75 96",
     fill: "none",
-    children: [(0, Chunk951288.jsx)("rect", {
+    children: [(0, Chunk54381.jsx)("rect", {
       x: "1",
       y: "1",
       width: "73",
       height: "94",
       rx: "8",
       fill: "var(--background-surface-high)"
-    }), (0, Chunk951288.jsx)("rect", {
+    }), (0, Chunk54381.jsx)("rect", {
       x: "0.5",
       y: "0.5",
       width: "74",
@@ -214,7 +214,7 @@ let Z = e => {
       rx: "8.5",
       stroke: "var(--border-normal)",
       strokeOpacity: "0.2"
-    }), (0, Chunk951288.jsx)("path", {
+    }), (0, Chunk54381.jsx)("path", {
       d: "M2.53418 3L73.0342 93.5",
       stroke: "var(--border-normal)",
       strokeOpacity: "0.2"

@@ -4,8 +4,8 @@
 require.d(exports, {
   default: () => N
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./953529.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
@@ -109,19 +109,19 @@ function S(e) {
     }
   })
 }
-class A extends Chunk647438.Component {
+class A extends Chunk473749.Component {
   render() {
     var e;
-    return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk951288.jsx)(S, {
+    return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk54381.jsx)(S, {
       file: this.props.upload.item.file
-    }) : (0, Chunk951288.jsx)("div", {
+    }) : (0, Chunk54381.jsx)("div", {
       className: o()(Chunk374450.fileIcon, {
         [Chunk374450[null != (e = this.props.upload.classification) ? module : ""]]: true
       })
     })
   }
 }
-class C extends Chunk647438.Component {
+class C extends Chunk473749.Component {
   componentDidMount() {
     Chunk358085.isPlatformEmbedded && Chunk998502.ZP.focus()
   }
@@ -143,9 +143,9 @@ class C extends Chunk647438.Component {
     } = this.props, {
       hasSpoiler: a
     } = this.state;
-    return (0, Chunk951288.jsxs)(Chunk793030.Modal, {
+    return (0, Chunk54381.jsxs)(Chunk793030.Modal, {
       transitionState: exports,
-      onClose: Chunk647438,
+      onClose: Chunk473749,
       title: Chunk388032.intl.string(Chunk388032.t.Y8ujqr),
       actions: [{
         variant: "secondary",
@@ -156,13 +156,13 @@ class C extends Chunk647438.Component {
         text: Chunk388032.intl.string(Chunk388032.t["TY+auE"]),
         onClick: this.handleSubmit
       }],
-      children: [(0, Chunk951288.jsx)(A, {
+      children: [(0, Chunk54381.jsx)(A, {
         upload: module
-      }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 24,
-        children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
           gap: 16,
-          children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
             label: Chunk388032.intl.string(Chunk388032.t.ILJuBq),
             value: this.state.filename,
             onChange: e => this.setState({
@@ -171,7 +171,7 @@ class C extends Chunk647438.Component {
             onKeyDown: e => {
               if (e.which === m.yXg.ENTER) return this.handleSubmit()
             }
-          }), module.isImage ? (0, Chunk951288.jsx)(Chunk481060.oil, {
+          }), module.isImage ? (0, Chunk54381.jsx)(Chunk481060.oil, {
             label: Chunk388032.intl.string(Chunk388032.t.eOB2eR),
             placeholder: Chunk388032.intl.string(Chunk388032.t.RNH1jn),
             value: this.state.description,
@@ -182,7 +182,7 @@ class C extends Chunk647438.Component {
               if (e.which === m.yXg.ENTER) return this.handleSubmit()
             }
           }) : null]
-        }), true !== require && (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
+        }), true !== require && (0, Chunk54381.jsx)(Chunk481060.Checkbox, {
           checked: Chunk120356,
           onChange: e => this.setState({
             hasSpoiler: e

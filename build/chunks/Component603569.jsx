@@ -3,7 +3,7 @@
 require.d(exports, {
   a: () => g
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk657707 = require("./657707.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
 let I = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk597754.default.RZqaJn),
     buildLayout: () => [],
-    render: () => (0, Chunk951288.jsx)(Chunk54942.Z, {})
+    render: () => (0, Chunk54381.jsx)(Chunk54942.Z, {})
   }),
   O = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk597754.default.RZqaJn),

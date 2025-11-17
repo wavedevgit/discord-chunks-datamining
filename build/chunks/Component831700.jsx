@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => ei
 }), require("./388685.js"), require("./415506.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -127,13 +127,13 @@ class en extends Chunk98597.ZP {
     } = this.props, o = null == (e = (0, Chunk873696.D)(this.props.subtitle)) ? true : module.subtitle, {
       hovered: a
     } = this.state;
-    return (0, Chunk951288.jsx)(Chunk653577.Z, {
+    return (0, Chunk54381.jsx)(Chunk653577.Z, {
       onClick: this.handleVoiceStatusClick,
       channel: exports,
       connected: require,
       subtitle: o,
       hovered: Chunk442837,
-      enableHangStatus: Chunk647438,
+      enableHangStatus: Chunk473749,
       showEmptyChannelTopic: Chunk120356
     })
   }
@@ -145,12 +145,12 @@ class en extends Chunk98597.ZP {
       withGuildIcon: i,
       tabIndex: l
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk207055.Z, {
+    return (0, Chunk54381.jsx)(Chunk207055.Z, {
       channel: module,
       collapsed: require,
       collapsedMax: 6,
       voiceStates: exports,
-      withGuildIcon: Chunk647438,
+      withGuildIcon: Chunk473749,
       tabIndex: Chunk120356,
       location: Chunk981631.Sbl.GUILD_CHANNEL_LIST
     })
@@ -159,7 +159,7 @@ class en extends Chunk98597.ZP {
     let {
       channelInfo: e
     } = this.props;
-    return null == module ? null : (0, Chunk951288.jsx)("div", {
+    return null == module ? null : (0, Chunk54381.jsx)("div", {
       className: Chunk55940.channelInfo,
       children: module
     })
@@ -191,25 +191,25 @@ class en extends Chunk98597.ZP {
     } = this.props, {
       shouldShowActivities: P,
       shouldShowGuildVerificationPopout: N
-    } = this.state, Z = this.getVoiceStatesCount(), w = (0, Chunk951288.jsxs)("li", {
+    } = this.state, Z = this.getVoiceStatesCount(), w = (0, Chunk54381.jsxs)("li", {
       ref: this.ref,
       className: o()(this.getModeClass(), {
         [Chunk55940.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handleMouseLeave,
-        children: (0, Chunk951288.jsx)(Chunk481060.yRy, {
+        children: (0, Chunk54381.jsx)(Chunk481060.yRy, {
           targetElementRef: this.channelItemRef,
           position: "right",
           renderPopout: this.renderPopout,
           spacing: 0,
           onRequestClose: this.closeGuildVerificationPopout,
           shouldShow: Chunk554747 && !Chunk475179 && !Chunk239091 && !Chunk378844 || Chunk378844,
-          children: () => (0, Chunk951288.jsx)(Chunk28664.u, {
+          children: () => (0, Chunk54381.jsx)(Chunk28664.u, {
             text: this.getTooltipText(),
-            children: (0, Chunk951288.jsxs)(Chunk473403.ZP, {
+            children: (0, Chunk54381.jsxs)(Chunk473403.ZP, {
               ref: this.channelItemRef,
               className: Chunk55940.iconVisibility,
               iconClassName: o()({
@@ -219,7 +219,7 @@ class en extends Chunk98597.ZP {
               channel: module,
               selected: !Chunk305325 && exports,
               connected: require,
-              unread: require ? Chunk647438 : true,
+              unread: require ? Chunk473749 : true,
               resolvedUnreadSetting: Chunk120356,
               mentionCount: Chunk442837,
               locked: Chunk846519,
@@ -234,7 +234,7 @@ class en extends Chunk98597.ZP {
               isFavoriteSuggestion: Chunk305325,
               "aria-label": (0, Chunk201895.ZP)({
                 channel: module,
-                unread: Chunk647438,
+                unread: Chunk473749,
                 mentionCount: Chunk442837,
                 userCount: Chunk574176,
                 embeddedActivitiesCount: Chunk873696.length,
@@ -245,9 +245,9 @@ class en extends Chunk98597.ZP {
                 embeddedApps: Chunk873696
               }),
               withGuildIcon: Chunk281956,
-              children: [Chunk305325 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+              children: [Chunk305325 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
                 children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
-              }), !Chunk305325 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+              }), !Chunk305325 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
                 children: [this.renderOpenChatButton(), this.renderInviteButton(), this.renderEditButton(), this.renderChannelInfo()]
               })]
             })
@@ -255,7 +255,7 @@ class en extends Chunk98597.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return Chunk168611 && (w = Chunk619915(Chunk763624)), Chunk973285 && (w = Chunk146773(Chunk888651(Chunk763624))), Chunk933557 && (w = (0, Chunk951288.jsx)(Chunk155409.Z, {
+    return Chunk168611 && (w = Chunk619915(Chunk763624)), Chunk973285 && (w = Chunk146773(Chunk888651(Chunk763624))), Chunk933557 && (w = (0, Chunk54381.jsx)(Chunk155409.Z, {
       childRef: this.ref,
       tutorialId: "voice-conversations",
       position: "right",

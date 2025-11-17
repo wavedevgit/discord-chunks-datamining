@@ -5,13 +5,13 @@ require.d(exports, {
   F: () => A,
   H: () => N
 }), require("./953529.js"), require("./388685.js"), require("./415506.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk299608 = require("./299608.js"),
   s = require.n(Chunk299608),
   Chunk97613 = require("./97613.js"),
   c = require.n(Chunk97613),
-  Chunk603113 = require("./603113.js"),
+  Chunk24156 = require("./24156.js"),
   Chunk374470 = require("./374470.js"),
   Chunk793030 = require("./793030.js"),
   Chunk846519 = require("./846519.js"),
@@ -64,7 +64,7 @@ function S(e, t) {
 }
 let A = Symbol("POPOUT_PREVENT_CLOSE"),
   C = new Set(["Spacebar", " ", "Enter"]);
-class N extends(r = Chunk647438.Component) {
+class N extends(r = Chunk473749.Component) {
   shouldShowPopout(e, t) {
     return null != e.shouldShow ? e.shouldShow : t.shouldShowPopout
   }
@@ -96,12 +96,12 @@ class N extends(r = Chunk647438.Component) {
   setupShowPopout() {
     var e, t, n, r;
     let i = this.getDomElement();
-    null != Chunk951288 && (null == (e = Chunk951288.ownerDocument) || module.addEventListener("mousedown", this.handleDocumentMouseDown, true), null == (t = Chunk951288.ownerDocument) || exports.addEventListener("mouseup", this.handleDocumentMouseUp, true), "close" === this.props.scrollBehavior ? null == (n = Chunk951288.ownerDocument) || require.addEventListener("scroll", this.handleScroll, true) : "sticky" === this.props.scrollBehavior && (null == (r = Chunk951288.ownerDocument) || r.addEventListener("scroll", this.handleStickyScroll, true)), this.context.windowDispatch.subscribe(this.closeAction, this.handleEscapeClose), this.domElementRef.current = Chunk951288, this.isValidClickStart = false, this.forceUpdate())
+    null != Chunk54381 && (null == (e = Chunk54381.ownerDocument) || module.addEventListener("mousedown", this.handleDocumentMouseDown, true), null == (t = Chunk54381.ownerDocument) || exports.addEventListener("mouseup", this.handleDocumentMouseUp, true), "close" === this.props.scrollBehavior ? null == (n = Chunk54381.ownerDocument) || require.addEventListener("scroll", this.handleScroll, true) : "sticky" === this.props.scrollBehavior && (null == (r = Chunk54381.ownerDocument) || r.addEventListener("scroll", this.handleStickyScroll, true)), this.context.windowDispatch.subscribe(this.closeAction, this.handleEscapeClose), this.domElementRef.current = Chunk54381, this.isValidClickStart = false, this.forceUpdate())
   }
   unsubscribe() {
     var e, t, n, r, i;
     let a = this.domElementRef.current;
-    null != Chunk647438 && (null == (t = Chunk647438.ownerDocument) || exports.removeEventListener("mousedown", this.handleDocumentMouseDown, true), null == (n = Chunk647438.ownerDocument) || require.removeEventListener("mouseup", this.handleDocumentMouseUp, true), null == (r = Chunk647438.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, true), null == (i = Chunk647438.ownerDocument) || Chunk951288.removeEventListener("scroll", this.handleStickyScroll, true)), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE, this.handleEscapeClose), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE_AFTER_MODALS, this.handleEscapeClose), null == (e = this.resizeObserver) || module.disconnect()
+    null != Chunk473749 && (null == (t = Chunk473749.ownerDocument) || exports.removeEventListener("mousedown", this.handleDocumentMouseDown, true), null == (n = Chunk473749.ownerDocument) || require.removeEventListener("mouseup", this.handleDocumentMouseUp, true), null == (r = Chunk473749.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, true), null == (i = Chunk473749.ownerDocument) || Chunk54381.removeEventListener("scroll", this.handleStickyScroll, true)), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE, this.handleEscapeClose), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE_AFTER_MODALS, this.handleEscapeClose), null == (e = this.resizeObserver) || module.disconnect()
   }
   componentWillUnmount() {
     this.unsubscribe(), this.domElementRef.current = null, this.loadingTimeout.stop(), this.validClickTimeout.stop()
@@ -111,7 +111,7 @@ class N extends(r = Chunk647438.Component) {
       children: e,
       useMouseEnter: t
     } = this.props, n = this.shouldShowPopout(this.props, this.state);
-    return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
+    return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
       children: [module(S(I({
         onMouseDown: this.handlePreload
       }, exports ? {
@@ -124,7 +124,7 @@ class N extends(r = Chunk647438.Component) {
       }), {
         isShown: require,
         position: this.state.renderedPosition
-      }), (0, Chunk951288.jsx)(Chunk481060.y5t, {
+      }), (0, Chunk54381.jsx)(Chunk481060.y5t, {
         forceLevel: 2,
         children: this.renderLayer()
       })]
@@ -149,9 +149,9 @@ class N extends(r = Chunk647438.Component) {
       isLoading: p,
       shouldShowLoadingState: g
     } = this.state;
-    return Chunk952265 && !Chunk728285 ? null : (0, Chunk951288.jsx)(Chunk793030.mh4, {
-      layerContext: null != Chunk603113 ? Chunk603113 : Chunk314910.nz,
-      children: (0, Chunk951288.jsx)(Chunk481060.jRF, {
+    return Chunk952265 && !Chunk728285 ? null : (0, Chunk54381.jsx)(Chunk793030.mh4, {
+      layerContext: null != Chunk24156 ? Chunk24156 : Chunk314910.nz,
+      children: (0, Chunk54381.jsx)(Chunk481060.jRF, {
         ref: this.layerRef,
         onMount: this.handlePopoutShow,
         onUnmount: this.handlePopoutHide,
@@ -161,7 +161,7 @@ class N extends(r = Chunk647438.Component) {
         align: exports,
         nudgeAlignIntoViewport: require,
         useRawTargetDimensions: r,
-        spacing: Chunk647438,
+        spacing: Chunk473749,
         autoInvert: Chunk299608,
         fixed: s,
         positionKey: null != Chunk97613 ? Chunk97613 : String(Chunk846519),
@@ -295,7 +295,7 @@ v(N, "defaultProps", {
   autoInvert: false,
   nudgeAlignIntoViewport: false,
   spacing: 0,
-  loadingComponent: (0, Chunk951288.jsx)(Chunk920676.x, {}),
+  loadingComponent: (0, Chunk54381.jsx)(Chunk920676.x, {}),
   closeOnClickOutside: true
 }), v(N, "contextType", Chunk728285.ZP);
 let R = e => {

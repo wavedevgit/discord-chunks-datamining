@@ -3,7 +3,7 @@
 require.d(exports, {
   m: () => m
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk544891 = require("./544891.js"),
   Chunk959546 = require("./959546.js"),
   Chunk981631 = require("./981631.js"),
@@ -37,7 +37,7 @@ let o = async () => (await Chunk544891.tn.get({
     rejectWithError: false
   })
 }, m = () => {
-  let [e, t] = Chunk647438.useState([]), [n, l] = Chunk647438.useState(false), r = (0, Chunk647438.useCallback)(async () => {
+  let [e, t] = Chunk473749.useState([]), [n, l] = Chunk473749.useState(false), r = (0, Chunk473749.useCallback)(async () => {
     try {
       Chunk544891(true);
       let e = await o();
@@ -45,15 +45,15 @@ let o = async () => (await Chunk544891.tn.get({
     } finally {
       Chunk544891(false)
     }
-  }, []), i = (0, Chunk647438.useCallback)(async e => {
+  }, []), i = (0, Chunk473749.useCallback)(async e => {
     await c(e), await r()
   }, [Chunk959546]);
   return {
     grantFractionalPremium: Chunk981631,
-    deleteFractionalPremium: (0, Chunk647438.useCallback)(async e => {
+    deleteFractionalPremium: (0, Chunk473749.useCallback)(async e => {
       await d(e), await r()
     }, [Chunk959546]),
-    triggerNextEntitlementFulfillment: (0, Chunk647438.useCallback)(async () => {
+    triggerNextEntitlementFulfillment: (0, Chunk473749.useCallback)(async () => {
       await u(), await Chunk959546()
     }, [Chunk959546]),
     refreshEntitlementList: Chunk959546,

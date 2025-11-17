@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => I
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk58642 = require("./58642.js"),
@@ -82,7 +82,7 @@ function y(e) {
     }), i]
   })
 }
-class v extends Chunk647438.PureComponent {
+class v extends Chunk473749.PureComponent {
   handleToggleShortcutDesktop(e) {
     c.Xc.updateSetting(e)
   }
@@ -100,32 +100,32 @@ class v extends Chunk647438.PureComponent {
       installShortcutDesktop: t,
       installShortcutStartMenu: n
     } = this.props;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)("div", {
       className: Chunk77839.body,
-      children: [(0, Chunk804739.Q)() ? (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      children: [(0, Chunk804739.Q)() ? (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 16,
-        children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t["9ID+Kh"]),
           description: Chunk388032.intl.string(Chunk388032.t.vT61N0),
           checked: exports,
           onChange: this.handleToggleShortcutDesktop
-        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t.vNpUMz),
           description: Chunk388032.intl.string(Chunk388032.t.cpYp0H),
           checked: require,
           onChange: this.handleToggleShortcutStartMenu
-        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk34305.Z, {})]
-      }) : null, (0, Chunk951288.jsx)(y, {
+        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk34305.Z, {})]
+      }) : null, (0, Chunk54381.jsx)(y, {
         restoreApplication: this.handleRestoreHiddenLibraryApplication,
         applicationViewItems: module
       })]
     })
   }
   render() {
-    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk957657.Z, {
+    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsx)(Chunk957657.Z, {
         currentRoute: Chunk981631.Z5c.APPLICATION_LIBRARY_SETTINGS
-      }), (0, Chunk951288.jsx)(Chunk481060.w0Z, {
+      }), (0, Chunk54381.jsx)(Chunk481060.w0Z, {
         className: Chunk77839.scroller,
         children: this.renderBody()
       })]
@@ -145,5 +145,5 @@ function I() {
     installShortcutStartMenu: Chunk695346.Pe.useSetting(),
     hiddenLibraryApplicationViewItems: (0, Chunk442837.e7)([Chunk490983.Z], () => Chunk490983.Z.hiddenLibraryApplicationViewItems)
   };
-  return (0, Chunk951288.jsx)(v, O({}, module))
+  return (0, Chunk54381.jsx)(v, O({}, module))
 }

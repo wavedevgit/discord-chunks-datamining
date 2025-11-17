@@ -13,20 +13,20 @@ require.d(exports, {
   tK: () => c,
   yX: () => l
 }), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./583741.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk223143 = require("./223143.js"),
   Chunk347896 = require("./347896.js"),
   Chunk474936 = require("./474936.js");
 
 function s() {
-  let [e, t] = Chunk647438.useState(), n = (0, Chunk347896.Z)(), o = null == require ? true : require.rewards, s = null == require ? true : require.variants;
+  let [e, t] = Chunk473749.useState(), n = (0, Chunk347896.Z)(), o = null == require ? true : require.rewards, s = null == require ? true : require.variants;
   null != s && (o = s.flatMap(e => e.variants));
   let {
     purchases: l,
     hasPreviouslyFetched: c,
     fetchPurchasesError: u
-  } = (0, Chunk223143.c7)(), d = Chunk647438.useRef(false);
-  return Chunk647438.useEffect(() => {
+  } = (0, Chunk223143.c7)(), d = Chunk473749.useRef(false);
+  return Chunk473749.useEffect(() => {
     c && !d.current && null != Chunk474936 && (exports(null == u ? Chunk474936.filter(e => null == l.get(e.skuId)) : []), d.current = true)
   }, [Chunk474936, l, c, u]), null != module ? module : true
 }

@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => b
 }), require("./642613.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk497598 = require("./497598.js"),
@@ -25,7 +25,7 @@ let b = () => {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: n
-  } = (0, Chunk501431.S)(), i = (0, Chunk381585.sp)(), b = (0, Chunk811847.B)("CollectiblesSortSelect"), v = require(), x = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== s.E.RELEVANCE || v), [v]), E = Chunk647438.useCallback(e => {
+  } = (0, Chunk501431.S)(), i = (0, Chunk381585.sp)(), b = (0, Chunk811847.B)("CollectiblesSortSelect"), v = require(), x = Chunk473749.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== s.E.RELEVANCE || v), [v]), E = Chunk473749.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
@@ -46,7 +46,7 @@ let b = () => {
       label: C.intl.string(C.t.Y68e5p),
       value: "popularity"
     }
-  }, []), O = Chunk647438.useCallback(e => ({
+  }, []), O = Chunk473749.useCallback(e => ({
     recent: {
       sortType: s.E.RECENCY,
       sortDirection: o.F.DESC
@@ -67,7 +67,7 @@ let b = () => {
       sortType: s.E.RELEVANCE,
       sortDirection: o.F.DESC
     }
-  })[e], []), S = Chunk647438.useCallback(e => {
+  })[e], []), S = Chunk473749.useCallback(e => {
     let n = E(O(e));
     u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == i ? true : i.sessionId,
@@ -79,11 +79,11 @@ let b = () => {
       page_type: "catalog"
     }), t(O(e))
   }, [Chunk120356, E, O, exports]), y = E(module);
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: a()(Chunk182668.container, {
       [Chunk219588.customCursors]: b
     }),
-    children: (0, Chunk951288.jsx)(Chunk481060.PhF, {
+    children: (0, Chunk54381.jsx)(Chunk481060.PhF, {
       options: x.map(E),
       select: S,
       isSelected: e => e === y.value,

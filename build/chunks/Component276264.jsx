@@ -5,8 +5,8 @@ require.d(exports, {
   Z: () => Q,
   x: () => F
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
@@ -97,7 +97,7 @@ function Z(e, t) {
 }
 let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
   V = 3,
-  H = Chunk647438.memo(function(e) {
+  H = Chunk473749.memo(function(e) {
     let {
       isOwner: t,
       lostPermissionTooltipText: n,
@@ -112,7 +112,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })
     }) : null
   }),
-  Y = Chunk647438.memo(function(e) {
+  Y = Chunk473749.memo(function(e) {
     let {
       premiumSince: t,
       onClickPremiumGuildIcon: n
@@ -132,7 +132,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })
     })
   }),
-  W = Chunk647438.memo(function(e) {
+  W = Chunk473749.memo(function(e) {
     let {
       user: t
     } = e;
@@ -144,7 +144,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       verified: t.isVerifiedBot()
     })
   }),
-  K = Chunk647438.memo(function(e) {
+  K = Chunk473749.memo(function(e) {
     let {
       user: t,
       isOwner: n,
@@ -166,7 +166,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })]
     })
   }),
-  z = Chunk647438.memo(function(e) {
+  z = Chunk473749.memo(function(e) {
     let {
       colorRoleName: t,
       colorString: n,
@@ -205,7 +205,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })]
     })
   }),
-  q = Chunk647438.memo(function(e) {
+  q = Chunk473749.memo(function(e) {
     let {
       user: t,
       shouldAnimateStatus: n,
@@ -238,7 +238,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })]
     })
   }),
-  X = Chunk647438.memo(function(e) {
+  X = Chunk473749.memo(function(e) {
     let {
       hideSubtext: t,
       hideTooltip: n = false,
@@ -277,7 +277,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       hideTooltip: n
     })
   }),
-  Q = Chunk647438.memo(function(e) {
+  Q = Chunk473749.memo(function(e) {
     let {
       selected: t = false,
       colorString: n,

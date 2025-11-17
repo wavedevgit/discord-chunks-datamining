@@ -5,11 +5,11 @@ require.d(exports, {
   Y: () => C,
   Z: () => w
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk442748 = require("./442748.js"),
+  Chunk636606 = require("./636606.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -83,7 +83,7 @@ function S(e, t) {
 function A(e) {
   e.currentTarget.scrollTo(0, 0)
 }
-let C = Chunk647438.memo(function(e) {
+let C = Chunk473749.memo(function(e) {
   let {
     maxBodyLines: t,
     expand: n = false,
@@ -269,19 +269,19 @@ let P = {
 };
 
 function D() {
-  let [e, t] = Chunk647438.useState(false), [n, r] = Chunk647438.useState(false), a = (0, Chunk481060.q_F)({
+  let [e, t] = Chunk473749.useState(false), [n, r] = Chunk473749.useState(false), a = (0, Chunk481060.q_F)({
     scale: module ? .975 : 1,
     config: P,
     onRest: () => {
       exports(false), setTimeout(() => {
-        Chunk951288(false)
+        Chunk54381(false)
       }, 300)
     }
   });
   return {
     clickSpring: require ? Chunk120356 : true,
-    handleMouseClick: Chunk647438.useCallback(() => {
-      Chunk951288(true), exports(true)
+    handleMouseClick: Chunk473749.useCallback(() => {
+      Chunk54381(true), exports(true)
     }, [])
   }
 }

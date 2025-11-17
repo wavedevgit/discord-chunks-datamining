@@ -5,7 +5,7 @@ require.d(exports, {
   J: () => h,
   q: () => m
 }), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk781391 = require("./781391.js"),
@@ -20,10 +20,10 @@ var Chunk647438 = require("./647438.js"),
 let h = () => {
     let e = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.gradientPreset),
       t = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.useSystemTheme === Chunk874893.KW.ON),
-      [n, a] = (0, Chunk647438.useState)(exports);
-    return (0, Chunk647438.useEffect)(() => {
+      [n, a] = (0, Chunk473749.useState)(exports);
+    return (0, Chunk473749.useEffect)(() => {
       null == module && Chunk524437(exports)
-    }, [module, exports]), (0, Chunk647438.useCallback)(() => {
+    }, [module, exports]), (0, Chunk473749.useCallback)(() => {
       null != module && ((0, Chunk238302.kj)(), require && (0, Chunk781391.hi)(Chunk874893.KW.ON))
     }, [module, require])
   },
@@ -37,7 +37,7 @@ let h = () => {
       let t = null == (e = Chunk581883.Z.settings.appearance) ? true : module.theme;
       return "default ".concat(exports === Chunk524437.Q2.LIGHT ? Chunk981631.BRd.LIGHT : Chunk981631.BRd.DARK)
     });
-    return (0, Chunk647438.useCallback)(n => {
+    return (0, Chunk473749.useCallback)(n => {
       c.default.track(n, {
         preview_pane_variant: e,
         original_theme: t

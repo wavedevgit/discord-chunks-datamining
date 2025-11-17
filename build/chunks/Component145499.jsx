@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => Z
 }), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
@@ -50,9 +50,9 @@ let T = e => {
       })]
     })
   },
-  P = () => (0, Chunk951288.jsx)("div", {
+  P = () => (0, Chunk54381.jsx)("div", {
     className: Chunk486217.placeholderCard,
-    children: (0, Chunk951288.jsx)("img", {
+    children: (0, Chunk54381.jsx)("img", {
       className: Chunk486217.placeholderImg,
       alt: Chunk388032.intl.string(Chunk388032.t.wl4ntJ),
       src: require("./872732.js")

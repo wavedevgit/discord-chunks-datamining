@@ -3,8 +3,8 @@
 require.r(exports), require.d(exports, {
   default: () => h
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk548668 = require("./548668.jsx"),
   Chunk231262 = require("./231262.jsx"),
   Chunk501522 = require("./501522.jsx"),
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk430355 = require("./430355.js");
-class p extends Chunk647438.Component {
+class p extends Chunk473749.Component {
   shouldScrollToTop(e) {
     let {
       location: t
@@ -29,7 +29,7 @@ class p extends Chunk647438.Component {
       render: a,
       locale: o
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk501522.Z, {
+    return (0, Chunk54381.jsx)(Chunk501522.Z, {
       className: exports,
       shouldScrollToTop: this.shouldScrollToTop,
       render: (t, i) => (0, n.jsxs)(r.Fragment, {

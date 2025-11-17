@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $7l: () => Chunk334431.$7,
-  $92: () => e2,
+  $92: () => e3,
   $Ab: () => x,
   $R1: () => Chunk231338.$R,
   $VG: () => Chunk231338.$V,
@@ -21,7 +21,7 @@ require.d(exports, {
   AzA: () => rm,
   B1h: () => Chunk231338.B1,
   B9o: () => tf,
-  BFP: () => t3,
+  BFP: () => t2,
   BRd: () => Chunk231338.BR,
   BVn: () => rV,
   BZL: () => Chunk231338.BZ,
@@ -57,7 +57,7 @@ require.d(exports, {
   GZQ: () => Chunk231338.GZ,
   GuildFeatures: () => G,
   H0J: () => Chunk231338.H0,
-  HGf: () => n5,
+  HGf: () => n8,
   HN8: () => eF,
   HeQ: () => Chunk231338.He,
   Hqc: () => nS,
@@ -93,7 +93,7 @@ require.d(exports, {
   McO: () => rY,
   NYc: () => Chunk231338.NY,
   NYg: () => nV,
-  N_j: () => n2,
+  N_j: () => n3,
   NgX: () => T,
   O0b: () => n_,
   O0n: () => es,
@@ -107,7 +107,7 @@ require.d(exports, {
   OYC: () => $,
   OcF: () => e9,
   Odu: () => ee,
-  PEY: () => e3,
+  PEY: () => e2,
   PNu: () => ek,
   POd: () => rf,
   PRK: () => e0,
@@ -134,7 +134,7 @@ require.d(exports, {
   Rg9: () => nM,
   S7T: () => Chunk231338.S7,
   S9g: () => nN,
-  SOq: () => n8,
+  SOq: () => n5,
   SRg: () => nT,
   STv: () => eE,
   SaU: () => tZ,
@@ -151,7 +151,7 @@ require.d(exports, {
   TzF: () => nJ,
   U66: () => Chunk231338.U6,
   ULH: () => P,
-  UWR: () => t2,
+  UWR: () => t3,
   Ucd: () => rU,
   Uk1: () => Chunk231338.Uk,
   UkZ: () => rD,
@@ -166,13 +166,13 @@ require.d(exports, {
   VqG: () => Chunk231338.Vq,
   Vzj: () => Chunk231338.Vz,
   WND: () => nu,
-  WtW: () => e5,
+  WtW: () => e8,
   Wyy: () => ne,
   X5t: () => Chunk231338.X5,
   X6Q: () => Chunk231338.X6,
   X7u: () => Chunk231338.X7,
   XAJ: () => eT,
-  XKF: () => n3,
+  XKF: () => n2,
   XmY: () => e1,
   Xyh: () => e4,
   YeM: () => ec,
@@ -225,7 +225,7 @@ require.d(exports, {
   fMv: () => Chunk334431.fM,
   fo$: () => ts,
   frH: () => Chunk231338.fr,
-  fzT: () => t8,
+  fzT: () => t5,
   gLR: () => rZ,
   gg$: () => Chunk231338.gg,
   hBH: () => Chunk470167.h,
@@ -267,7 +267,7 @@ require.d(exports, {
   oCV: () => nl,
   o_z: () => eb,
   p3w: () => tm,
-  p6O: () => t5,
+  p6O: () => t8,
   pAY: () => th,
   pJs: () => D,
   pKx: () => Chunk231338.pK,
@@ -333,7 +333,7 @@ require.d(exports, {
   yb: () => W,
   ylB: () => rw,
   yqN: () => ng,
-  ys_: () => e8,
+  ys_: () => e5,
   z7k: () => tI,
   zMe: () => Chunk231338.zM,
   zQD: () => rK,
@@ -1528,13 +1528,13 @@ let eD = 100,
   e$ = 0xa00000,
   e0 = 524288e3,
   e1 = e => "||".concat(e, "||"),
-  e2 = /^\|\|([\s\S]+?)\|\|/,
-  e3 = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
+  e3 = /^\|\|([\s\S]+?)\|\|/,
+  e2 = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
   e4 = /^\d{17,19}$/;
-var e8 = function(e) {
+var e5 = function(e) {
     return e.MESSAGE = "MESSAGE", e.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED", e.MESSAGE_GROUP_IGNORED = "MESSAGE_GROUP_IGNORED", e.MESSAGE_GROUP_SPAMMER = "MESSAGE_GROUP_SPAMMER", e.THREAD_STARTER_MESSAGE = "THREAD_STARTER_MESSAGE", e.DIVIDER = "DIVIDER", e.JUMP_TARGET = "JUMP_TARGET", e.FORUM_POST_ACTION_BAR = "FORUM_POST_ACTION_BAR", e.MESSAGE_GROUP = "MESSAGE_GROUP", e.DIVIDER_TIME_STAMP = "DIVIDER_TIME_STAMP", e.DIVIDER_NEW_MESSAGES = "DIVIDER_NEW_MESSAGES", e
   }({}),
-  e5 = function(e) {
+  e8 = function(e) {
     return e.VIDEO = "video", e.VOICE = "voice", e
   }({}),
   e6 = function(e) {
@@ -1801,18 +1801,18 @@ var t$ = function(e) {
   t1 = function(e) {
     return e[e.PRIVATE = 0] = "PRIVATE", e[e.PUBLIC = 1] = "PUBLIC", e
   }({});
-let t2 = Object.freeze({
+let t3 = Object.freeze({
     GAME_INVITE_FRAGMENT: "/_discord/join?secret="
   }),
-  t3 = new Set(["facebook", "contacts"]),
+  t2 = new Set(["facebook", "contacts"]),
   t4 = new Set(["spotify", "xbox", "playstation", "playstation-stg", "crunchyroll"]),
-  t8 = Object.freeze({
+  t5 = Object.freeze({
     DESKTOP: "".concat(location.protocol).concat(window.GLOBAL_ENV.API_ENDPOINT, "/download"),
     IOS: "https://itunes.apple.com/app/discord/id985746746",
     ANDROID: "https://play.google.com/store/apps/details?id=com.discord"
   }),
-  t5 = 0x99aab5,
-  t6 = (0, Chunk866442.Rf)(t5),
+  t8 = 0x99aab5,
+  t6 = (0, Chunk866442.Rf)(t8),
   t7 = [1752220, 3066993, 3447003, 0x9b59b6, 0xe91e63, 0xf1c40f, 0xe67e22, 0xe74c3c, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530, 0xad1457, 0xc27c0e, 0xa84300, 0x992d22, 9936031, 5533306],
   t9 = (0, Chunk866442._i)(Chunk674746.Z.BRAND_500);
 i()(null != t9, "Brand color could not be parsed");
@@ -2086,15 +2086,15 @@ let n1 = Object.freeze({
     nvidia_gdn_app: "NVIDIA Cloud Gaming Application",
     roblox: "Roblox"
   }),
-  n2 = 6016,
-  n3 = 3384;
+  n3 = 6016,
+  n2 = 3384;
 var n4 = function(e) {
     return e.USAGE_STATISTICS = "usage_statistics", e.PERSONALIZATION = "personalization", e
   }({}),
-  n8 = function(e) {
+  n5 = function(e) {
     return e[e.MUTUAL_FRIENDS = 2] = "MUTUAL_FRIENDS", e[e.MUTUAL_GUILDS = 4] = "MUTUAL_GUILDS", e[e.NO_RELATION = 8] = "NO_RELATION", e
   }({});
-let n5 = 14,
+let n8 = 14,
   n6 = 30;
 var n7 = function(e) {
   return e.OVERLAY = "OVERLAY", e.APP = "APP", e.POPOUT = "POPOUT", e.CALL_TILE_POPOUT = "CALL_TILE_POPOUT", e

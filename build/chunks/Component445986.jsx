@@ -4,8 +4,8 @@ require.d(exports, {
   Q: () => _,
   Z: () => x
 }), require("./35282.js"), require("./539854.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk33122 = require("./33122.jsx"),
   Chunk761705 = require("./761705.jsx"),
@@ -93,7 +93,7 @@ let f = e => {
     startWith: l
   }))
 };
-class b extends Chunk647438.Component {
+class b extends Chunk473749.Component {
   render() {
     let e = this.props,
       {
@@ -101,7 +101,7 @@ class b extends Chunk647438.Component {
       } = module,
       n = g(module, ["pageSize"]),
       a = exports === Chunk843445.b.SMALL ? Chunk9807.Z : Chunk33122.Z;
-    return (0, Chunk951288.jsx)(Chunk647438, h(m({}, require), {
+    return (0, Chunk54381.jsx)(Chunk473749, h(m({}, require), {
       onCurrentItemClick: this.handleCurrentItemClick
     }))
   }

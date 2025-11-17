@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => eh
 }), require("./415506.js"), require("./953529.js"), require("./539854.js"), require("./290780.js"), require("./388685.js"), require("./997841.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -99,7 +99,7 @@ function ep(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class ef extends Chunk647438.PureComponent {
+class ef extends Chunk473749.PureComponent {
   get isChannelType() {
     return null != this.props.channel
   }
@@ -120,7 +120,7 @@ class ef extends Chunk647438.PureComponent {
       } = Chunk120356.state;
       this._analyticsSource = module, this._extraAnalyticsProperties = exports
     } else this._analyticsSource = Chunk981631.SaU;
-    (null == exports || exports.isSlimDirectoryVersion()) && a(), null != module && (require || Chunk647438 || (0, Chunk496929.yD)(module.applicationId), Chunk951288 && Chunk570140.Z.wait(() => (0, Chunk659429.$)(module.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
+    (null == exports || exports.isSlimDirectoryVersion()) && a(), null != module && (require || Chunk473749 || (0, Chunk496929.yD)(module.applicationId), Chunk54381 && Chunk570140.Z.wait(() => (0, Chunk659429.$)(module.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
   }
   componentDidUpdate(e) {
     let {
@@ -168,12 +168,12 @@ class ef extends Chunk647438.PureComponent {
       videos: 0
     });
     Chunk626135.default.track(Chunk981631.rMx.STORE_LISTING_VIEWED, ed(ep(ed({}, this._extraAnalyticsProperties), {
-      load_id: Chunk951288.loadId,
+      load_id: Chunk54381.loadId,
       has_description: null != exports.description && exports.description.length > 0,
       has_staff_review: null != exports.staffNotes,
-      carousel_image_count: Chunk647438.images,
-      carousel_video_count: Chunk647438.videos,
-      location: Chunk951288.location.page,
+      carousel_image_count: Chunk473749.images,
+      carousel_video_count: Chunk473749.videos,
+      location: Chunk54381.location.page,
       source: this._analyticsSource
     }), (0, Chunk100159.Z)(module, true))), this._trackedViewed = true
   }
@@ -336,11 +336,11 @@ class ef extends Chunk647438.PureComponent {
     if (null == module || null == exports || null == require) return null;
     let i = [],
       l = require.getSplashURL(1024);
-    null != Chunk120356 && Chunk647438.push(Chunk120356), null != exports.headerLogoLightTheme && Chunk647438.unshift((0, Chunk73346._W)(require.id, exports.headerLogoLightTheme, 1024, "jpg"));
+    null != Chunk120356 && Chunk473749.push(Chunk120356), null != exports.headerLogoLightTheme && Chunk473749.unshift((0, Chunk73346._W)(require.id, exports.headerLogoLightTheme, 1024, "jpg"));
     let a = Chunk606081.Z.Product({
         name: module.name,
         description: null != module.summary && "" !== module.summary ? module.summary : exports.tagline,
-        image: Chunk606081.Z.Product.Image(Chunk647438),
+        image: Chunk606081.Z.Product.Image(Chunk473749),
         sku: module.id
       }),
       s = module.getPrice();
@@ -359,7 +359,7 @@ class ef extends Chunk647438.PureComponent {
     let o = Chunk606081.Z.ItemPage({
       mainEntity: a
     });
-    return (0, Chunk951288.jsx)(Chunk606081.Z, {
+    return (0, Chunk54381.jsx)(Chunk606081.Z, {
       data: Chunk846519
     })
   }
@@ -395,41 +395,41 @@ class ef extends Chunk647438.PureComponent {
       matureAgree: l,
       isAuthenticated: a
     } = this.props;
-    if (null == module || null == exports || null == require || require.isSlimDirectoryVersion()) return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-      children: [this.renderHeader(module, exports), (0, Chunk951288.jsx)(Chunk600164.Z, {
+    if (null == module || null == exports || null == require || require.isSlimDirectoryVersion()) return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
+      children: [this.renderHeader(module, exports), (0, Chunk54381.jsx)(Chunk600164.Z, {
         align: Chunk600164.Z.Align.CENTER,
         justify: Chunk600164.Z.Justify.CENTER,
-        children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
+        children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
           className: Chunk561537.spinner
         })
       })]
     });
     if (!Chunk120356 && exports.showAgeGate) {
-      let n = a ? null : (0, Chunk951288.jsx)("div", {
+      let n = a ? null : (0, Chunk54381.jsx)("div", {
         className: Chunk561537.gatedListing,
         children: this.renderListing()
       });
-      return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
+      return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
+        children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
           location: module.name
-        }), this.renderJsonLD(), this.renderHeader(module, exports), (0, Chunk951288.jsx)(Chunk119520.Z, {
+        }), this.renderJsonLD(), this.renderHeader(module, exports), (0, Chunk54381.jsx)(Chunk119520.Z, {
           game: module
         }), require]
       })
     }
-    return a ? (0, Chunk951288.jsxs)("div", {
+    return a ? (0, Chunk54381.jsxs)("div", {
       className: Chunk561537.listingWrapper,
-      children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
+      children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
         location: module.name
-      }), this.renderJsonLD(), (0, Chunk951288.jsx)(Chunk410575.Z, {
+      }), this.renderJsonLD(), (0, Chunk54381.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.NAVIGATION,
         children: this.renderHeader(module, exports)
-      }), (0, Chunk951288.jsx)(Chunk410575.Z, {
+      }), (0, Chunk54381.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.BODY,
         children: this.renderListing()
       })]
-    }) : (0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
+    }) : (0, Chunk54381.jsxs)("div", {
+      children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
         location: module.name
       }), this.renderJsonLD(), this.renderHeader(module, exports), this.renderListing()]
     })

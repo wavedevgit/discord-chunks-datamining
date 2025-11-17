@@ -5,8 +5,8 @@ require.d(exports, {
   Z: () => eb,
   v: () => ec
 }), require("./388685.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
@@ -278,12 +278,12 @@ let eu = (e, t) => {
     } = eO, e1 = i.useMemo(() => ei(en({}, eq), {
       section: null != eQ ? eQ : Q.jXE.EMOJI_PICKER_POPOUT
     }), [eq, eQ]), {
-      analyticsLocations: e2
+      analyticsLocations: e3
     } = (0, b.ZP)(g.Z.EMOJI_PICKER), {
-      diversitySurrogate: e3
+      diversitySurrogate: e2
     } = (0, u.cj)([O.ZP], () => ({
       diversitySurrogate: O.ZP.diversitySurrogate
-    })), e4 = (0, U.DV)(eB, c, l, eP), e8 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e5 = w.d4.useSetting(), e6 = i.useMemo(() => new Set(e5), [e5]), e7 = i.useCallback(e => {
+    })), e4 = (0, U.DV)(eB, c, l, eP), e5 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e8 = w.d4.useSetting(), e6 = i.useMemo(() => new Set(e8), [e8]), e7 = i.useCallback(e => {
       w.d4.updateSetting(Array.from(e))
     }, []), e9 = (0, C.ep)({
       gridWrapperRef: eZ,
@@ -379,7 +379,7 @@ let eu = (e, t) => {
         channelGuildId: eH,
         isBurstReaction: eY
       });
-    ef(eu, eF), e_(eu, e3, eV, eL), i.useEffect(() => {
+    ef(eu, eF), e_(eu, e2, eV, eL), i.useEffect(() => {
       eE || (0, S.ql)("")
     }, [eE]), i.useEffect(() => (M.default.track(Q.rMx.OPEN_POPOUT, en({
       type: null != e$ ? e$ : "Emoji Picker",
@@ -393,13 +393,13 @@ let eu = (e, t) => {
       } = T.kJ.getState().inspectedExpressionPosition;
       (null == (e = tn[n]) ? true : e[t]) == null && 0 !== t && T.kJ.setInspectedExpressionPosition(0, 0)
     }, [tn]), i.useEffect(() => {
-      if ("" === eG.current && "" !== eB && (0, U.PC)(e1, l), 0 === e8 && "" !== eB) eh(e1, eB);
+      if ("" === eG.current && "" !== eB && (0, U.PC)(e1, l), 0 === e5 && "" !== eB) eh(e1, eB);
       else if ("" !== eB && eG.current !== eB) {
         var e;
-        em(e8, null != (e = null == e4 ? true : e4.locked.length) ? e : 0, e1, eB, l)
+        em(e5, null != (e = null == e4 ? true : e4.locked.length) ? e : 0, e1, eB, l)
       }
       eG.current = eB
-    }, [eB, e1, e8, e4, l]);
+    }, [eB, e1, e5, e4, l]);
     let t_ = null != eI ? eI : R ? "div" : _.VqE,
       tp = null != e9;
     if ((null == ej ? true : ej.type) === Y.Bg.PREMIUM) {
@@ -441,7 +441,7 @@ let eu = (e, t) => {
         autoFocus: eL,
         accessory: eM,
         headerClassName: ey,
-        diversitySurrogate: e3,
+        diversitySurrogate: e2,
         isBurstReaction: eY,
         onBurstReactionToggle: tm,
         renderHeader: eA,
@@ -484,7 +484,7 @@ let eu = (e, t) => {
             }, tu), {
               children: tp ? (0, r.jsx)(K.Z, {
                 collapsedSections: e6,
-                diversitySurrogate: e3,
+                diversitySurrogate: e2,
                 emojiGrid: tn,
                 emojiListRef: eF,
                 emojiSize: A,
@@ -525,8 +525,8 @@ let eu = (e, t) => {
       })
     }));
     return (0, r.jsx)(b.Gt, {
-      value: e2,
+      value: e3,
       children: tb
     })
   },
-  eb = Chunk647438.memo(Chunk647438.forwardRef(eE))
+  eb = Chunk473749.memo(Chunk473749.forwardRef(eE))

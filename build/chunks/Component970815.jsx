@@ -5,8 +5,8 @@ require.d(exports, {
   A4: () => E,
   b6: () => Chunk317257.b
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -37,14 +37,14 @@ function p(e) {
   }
   return e
 }
-let h = () => (0, Chunk951288.jsx)("img", {
+let h = () => (0, Chunk54381.jsx)("img", {
     className: Chunk647917.notificationBadge,
     src: require("./808824.js"),
     alt: ""
   }),
   m = "balance-widget-pill",
   g = (e, t) => e === c.b.SELECTED ? f.selected : t ? f.highlighted : f.default,
-  E = (0, Chunk647438.forwardRef)(function(e, t) {
+  E = (0, Chunk473749.forwardRef)(function(e, t) {
     let {
       id: n,
       balance: a,

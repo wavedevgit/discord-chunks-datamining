@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => m
 });
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk987032 = require("./987032.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -24,7 +24,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends(r = Chunk647438.PureComponent) {
+class m extends(r = Chunk473749.PureComponent) {
   get typeString() {
     let {
       paymentSource: e
@@ -63,7 +63,7 @@ class m extends(r = Chunk647438.PureComponent) {
       paymentSource: e,
       descriptionClassName: t
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk481060.Text, {
+    return (0, Chunk54381.jsx)(Chunk481060.Text, {
       className: exports,
       variant: "text-md/semibold",
       children: this.getLabel(module)
@@ -88,25 +88,25 @@ class m extends(r = Chunk647438.PureComponent) {
       showPaymentSourceIcon: a,
       showLabels: s
     } = this.props, u = this.renderSubText();
-    return (0, Chunk951288.jsxs)(Chunk600164.Z, {
-      children: [Chunk647438 && (0, Chunk951288.jsx)(Chunk219929.ZP, {
+    return (0, Chunk54381.jsxs)(Chunk600164.Z, {
+      children: [Chunk473749 && (0, Chunk54381.jsx)(Chunk219929.ZP, {
         type: this.typeString
-      }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
+      }), (0, Chunk54381.jsxs)(Chunk600164.Z, {
         direction: Chunk600164.Z.Direction.VERTICAL,
         className: Chunk916648.descriptionWrapper,
-        children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
+        children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
           align: Chunk600164.Z.Align.CENTER,
-          children: [this.renderDescription(), Chunk987032 && module ? (0, Chunk951288.jsx)("div", {
+          children: [this.renderDescription(), Chunk987032 && module ? (0, Chunk54381.jsx)("div", {
             className: Chunk916648.defaultIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.bBvAEH)
-          }) : null, r ? (0, Chunk951288.jsx)("div", {
+          }) : null, r ? (0, Chunk54381.jsx)("div", {
             className: Chunk916648.premiumIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.YCrcPL)
-          }) : null, Chunk987032 && exports.invalid ? (0, Chunk951288.jsx)("div", {
+          }) : null, Chunk987032 && exports.invalid ? (0, Chunk54381.jsx)("div", {
             className: Chunk916648.invalidIndicator,
             children: Chunk388032.intl.string(Chunk388032.t["851k93"])
           }) : null]
-        }), require && null != Chunk46141 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+        }), require && null != Chunk46141 ? (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
           className: Chunk916648.subText,

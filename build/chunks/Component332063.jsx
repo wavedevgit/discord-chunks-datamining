@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
-var i, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var i, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk274616 = require("./274616.js"),
@@ -19,7 +19,7 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends(i = Chunk647438.Component) {
+class h extends(i = Chunk473749.Component) {
   componentDidMount() {
     let {
       applicationId: e,
@@ -45,9 +45,9 @@ class h extends(i = Chunk647438.Component) {
       className: s,
       label: o
     } = this.props;
-    if (0 === module.length || Chunk647438) return null;
+    if (0 === module.length || Chunk473749) return null;
     let c = i ? module : module.filter(e => e.id !== n);
-    return (0, Chunk951288.jsx)(Chunk481060.q4e, {
+    return (0, Chunk54381.jsx)(Chunk481060.q4e, {
       label: Chunk274616,
       options: Chunk560587.map(e => ({
         label: e.getName(n),

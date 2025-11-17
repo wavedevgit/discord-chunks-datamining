@@ -3,7 +3,7 @@
 require.d(exports, {
   n: () => m
 }), require("./781311.js"), require("./642613.js"), require("./388685.js"), require("./539854.js");
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk658722 = require("./658722.js"),
   i = require.n(Chunk658722),
   Chunk913527 = require("./913527.js"),
@@ -21,11 +21,11 @@ function m() {
   let e = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getClips()),
     t = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getPendingClips()),
     n = (0, Chunk52436.f)();
-  return Chunk647438.useMemo(() => {
+  return Chunk473749.useMemo(() => {
     let l = [...exports, ...module],
       r = new Map,
       a = [];
-    for (let e of Chunk647438) {
+    for (let e of Chunk473749) {
       let t = function(e, t) {
         var n, l, r, a;
         if (t.selectedUserIds.size > 0 && !Array.from(t.selectedUserIds).every(t => e.users.includes(t))) returnfalse;
@@ -47,12 +47,12 @@ function m() {
       }(module, require);
       if (exports && Chunk913527.push(module), null == module.applicationId) continue;
       let l = Chunk658722.get(module.applicationId);
-      null == Chunk647438 ? Chunk658722.set(module.applicationId, {
+      null == Chunk473749 ? Chunk658722.set(module.applicationId, {
         clips: [module],
         filteredClips: exports ? [module] : [],
         mostRecentClipId: module.id,
         name: module.applicationName
-      }) : (Chunk647438.clips.push(module), exports && Chunk647438.filteredClips.push(module), module.id > Chunk647438.mostRecentClipId && (Chunk647438.mostRecentClipId = module.id))
+      }) : (Chunk473749.clips.push(module), exports && Chunk473749.filteredClips.push(module), module.id > Chunk473749.mostRecentClipId && (Chunk473749.mostRecentClipId = module.id))
     }
     let c = p(Chunk913527, require.sortOrder),
       u = p(Chunk913527.filter(e => e.isFavorite), require.sortOrder);
@@ -67,7 +67,7 @@ function m() {
           filteredClips: p(l.filteredClips, n.sortOrder)
         }
       }).sort((e, t) => t.mostRecentClipId.localeCompare(e.mostRecentClipId)),
-      allClips: Chunk647438,
+      allClips: Chunk473749,
       filteredClips: Chunk442837,
       favoriteClips: Chunk435064
     }

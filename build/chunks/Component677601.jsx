@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => eW
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -141,7 +141,7 @@ let eV = {
     [Chunk981631.IlC.OVERLAY]: null,
     [Chunk981631.IlC.CALL_TILE_POPOUT]: null
   };
-class ez extends Chunk647438.PureComponent {
+class ez extends Chunk473749.PureComponent {
   getRootNode() {
     var e, t;
     return (null != (t = null == (e = this.props.popoutWindow) ? true : module.window) ? exports : window).document.getElementById("app-mount")
@@ -204,7 +204,7 @@ class ez extends Chunk647438.PureComponent {
       channel: n,
       inCall: i,
       canPopout: r
-    } = this.props, l = exports === Chunk981631.WtW.VIDEO && Chunk951288 && !(this.popoutOpen && !this.inPopout), a = exports === Chunk981631.WtW.VIDEO && Chunk951288 && this.popoutSupported && Chunk647438, o = exports !== Chunk981631.WtW.VOICE && require.isPrivate() && !this.inPopout && Chunk951288, s = require.type === Chunk981631.d4z.GUILD_VOICE, c = module === Chunk981631.AEg.MINIMUM || module === Chunk981631.AEg.NORMAL, u = this.inPopout && this.nativePopoutSupported, d = {
+    } = this.props, l = exports === Chunk981631.WtW.VIDEO && Chunk54381 && !(this.popoutOpen && !this.inPopout), a = exports === Chunk981631.WtW.VIDEO && Chunk54381 && this.popoutSupported && Chunk473749, o = exports !== Chunk981631.WtW.VOICE && require.isPrivate() && !this.inPopout && Chunk54381, s = require.type === Chunk981631.d4z.GUILD_VOICE, c = module === Chunk981631.AEg.MINIMUM || module === Chunk981631.AEg.NORMAL, u = this.inPopout && this.nativePopoutSupported, d = {
       renderHeader: true,
       useTheme: false,
       useExternalHeader: Chunk990547,
@@ -215,7 +215,7 @@ class ez extends Chunk647438.PureComponent {
       canChangeLayout: Chunk512722,
       canStayOnTop: Chunk442837
     };
-    if (!Chunk951288) return eF(eH({}, Chunk704215), {
+    if (!Chunk54381) return eF(eH({}, Chunk704215), {
       canFullscreen: Chunk120356,
       useTheme: true
     });
@@ -301,8 +301,8 @@ class ez extends Chunk647438.PureComponent {
       participantsListOpen: d
     } = this.props, {
       resizedHeight: p
-    } = this.state, f = Chunk647438 === Chunk981631.WtW.VIDEO, m = module !== Chunk981631.AEg.NO_CHAT && module !== Chunk981631.AEg.FULL_SCREEN && null != Chunk990547, g = Chunk981631.BRd.MIDNIGHT;
-    return (0, Chunk951288.jsxs)("div", {
+    } = this.state, f = Chunk473749 === Chunk981631.WtW.VIDEO, m = module !== Chunk981631.AEg.NO_CHAT && module !== Chunk981631.AEg.FULL_SCREEN && null != Chunk990547, g = Chunk981631.BRd.MIDNIGHT;
+    return (0, Chunk54381.jsxs)("div", {
       className: a()(Chunk598411.wrapper, eV[module], eG[Chunk512722], {
         [Chunk598411.poppedOut]: this.popoutOpen && !this.inPopout && module !== Chunk981631.AEg.NO_CHAT && exports.isPrivate(),
         [Chunk598411.video]: Chunk570140,
@@ -316,7 +316,7 @@ class ez extends Chunk647438.PureComponent {
         maxHeight: Chunk990547,
         height: Chunk846519
       } : true,
-      children: [(0, Chunk951288.jsx)(Chunk481060.f6W, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.f6W, {
         theme: Chunk239091,
         children: t => (0, i.jsx)("div", {
           className: a()(eU.callContainer, l || e !== ek.AEg.FULL_SCREEN ? true : eU.fullScreen, t),
@@ -328,23 +328,23 @@ class ez extends Chunk647438.PureComponent {
             children: e => this.renderContent(e)
           })
         })
-      }), Chunk475179 && (0, Chunk951288.jsx)(Chunk900211.Z, {
+      }), Chunk475179 && (0, Chunk54381.jsx)(Chunk900211.Z, {
         minHeight: Chunk354459._i,
         maxHeight: Chunk990547,
         resizableNode: this._wrapperRef,
         onResize: this.handleCallResize,
         onResizeEnd: this.props.updateStoredCallHeaderHeight
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk598411.channelChatWrapper,
         ref: e => {
           this._channelChatRef.current = e, this.props.channelChatRef.current = e
         },
-        children: (!Chunk442837 || !this.popoutOpen || this.inPopout) && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-          children: [Chunk120356 && (0, Chunk951288.jsx)(Chunk493010.Z, {
+        children: (!Chunk442837 || !this.popoutOpen || this.inPopout) && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+          children: [Chunk120356 && (0, Chunk54381.jsx)(Chunk493010.Z, {
             channel: exports,
             guild: require,
             maxWidth: s
-          }), Chunk704215 && (0, Chunk951288.jsx)(Chunk71127.Z, {
+          }), Chunk704215 && (0, Chunk54381.jsx)(Chunk71127.Z, {
             channel: exports,
             maxWidth: s
           })]

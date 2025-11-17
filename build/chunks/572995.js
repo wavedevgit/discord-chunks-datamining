@@ -6,7 +6,7 @@ require.d(exports, {
   ZP: () => e_,
   y$: () => eu
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk550385 = require("./550385.js"),
@@ -163,7 +163,7 @@ let ef = (e, t) => ec({
       location: "useBentoBoxes"
     }).enabled, I = Chunk340625.Z.useExperiment({
       location: "useBentoBoxes"
-    }), T = (0, Chunk647438.useCallback)(() => {
+    }), T = (0, Chunk473749.useCallback)(() => {
       (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
         section: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
         analyticsLocations: module

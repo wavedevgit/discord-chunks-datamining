@@ -3,8 +3,8 @@
 require.d(exports, {
   a: () => A
 }), require("./388685.js"), require("./539854.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk771950 = require("./771950.js"),
@@ -28,7 +28,7 @@ function k(e, t, a) {
   }) : e[t] = a, e
 }
 let g = Chunk231338.j_.MAIN_NAVIGATION_MENU;
-class A extends Chunk647438.PureComponent {
+class A extends Chunk473749.PureComponent {
   componentDidMount() {
     this.setState({
       isAppCompatible: Chunk436620.KO
@@ -43,43 +43,43 @@ class A extends Chunk647438.PureComponent {
       TrackClick: s,
       avoidRouter: i
     } = this.props;
-    return (0, Chunk951288.jsxs)("header", {
+    return (0, Chunk54381.jsxs)("header", {
       className: l()(Chunk89004.header, module),
-      children: [(0, Chunk951288.jsxs)("nav", {
+      children: [(0, Chunk54381.jsxs)("nav", {
         className: Chunk89004.headerInner,
-        children: [(0, Chunk951288.jsxs)("div", {
+        children: [(0, Chunk54381.jsxs)("div", {
           className: Chunk89004.headerLogo,
-          children: [(0, Chunk951288.jsx)(Chunk120356, {
+          children: [(0, Chunk54381.jsx)(Chunk120356, {
             tag: "div",
             eventName: g,
             data: {
               linkClicked: "logo"
             },
-            children: (0, Chunk951288.jsx)(Chunk66037.Z, {
+            children: (0, Chunk54381.jsx)(Chunk66037.Z, {
               avoidRouter: Chunk771950,
               to: Chunk231338.am.INDEX,
               from: Chunk231338.j_.MAIN_NAVIGATION_MENU,
-              children: (0, Chunk951288.jsx)(Chunk787907.O, {})
+              children: (0, Chunk54381.jsx)(Chunk787907.O, {})
             })
-          }), null != exports ? (0, Chunk951288.jsx)("a", {
+          }), null != exports ? (0, Chunk54381.jsx)("a", {
             className: Chunk89004.skipToContent,
             href: "#".concat(exports),
             children: require
           }) : null]
-        }), (0, Chunk951288.jsx)("ul", {
+        }), (0, Chunk54381.jsx)("ul", {
           className: Chunk89004.headerNav,
-          children: (0, Chunk951288.jsx)(Chunk34211.o, {
+          children: (0, Chunk54381.jsx)(Chunk34211.o, {
             avoidRouter: Chunk771950,
             TrackClick: Chunk120356,
             styles: Chunk89004
           })
-        }), (0, Chunk951288.jsxs)("ul", {
+        }), (0, Chunk54381.jsxs)("ul", {
           className: Chunk89004.headerNavRight,
-          children: [this.renderSocialMediaNav(), (0, Chunk951288.jsx)(Chunk643103.p, {
-            onChange: Chunk647438
+          children: [this.renderSocialMediaNav(), (0, Chunk54381.jsx)(Chunk643103.p, {
+            onChange: Chunk473749
           })]
         })]
-      }), null != exports && (0, Chunk951288.jsx)("div", {
+      }), null != exports && (0, Chunk54381.jsx)("div", {
         id: exports,
         tabIndex: false
       })]

@@ -5,8 +5,8 @@ require.d(exports, {
   T: () => A,
   v: () => S
 }), require("./361932.js"), require("./187205.js"), require("./539854.js"), require("./388685.js"), require("./415506.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk348327 = require("./348327.js"),
@@ -332,23 +332,23 @@ function S(e) {
 }
 
 function A() {
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: o()(Chunk334405.menu, Chunk334405.loader, Chunk334405.flexible),
-    children: (0, Chunk951288.jsx)(Chunk793030.$jN, {})
+    children: (0, Chunk54381.jsx)(Chunk793030.$jN, {})
   })
 }
 
 function C() {
   let e = "♫ (つ｡◕‿‿◕｡)つ ♪",
     t = "♫ ⊂(｡◕‿‿◕｡⊂) ♪",
-    [n, a] = Chunk647438.useState(module);
-  return Chunk647438.useEffect(() => {
+    [n, a] = Chunk473749.useState(module);
+  return Chunk473749.useEffect(() => {
     if (Chunk607070.Z.useReducedMotion) return;
     let n = setInterval(() => {
       Chunk120356(n => n === e ? t : e)
     }, 700);
     return () => clearInterval(require)
-  }, []), (0, Chunk951288.jsx)("div", {
+  }, []), (0, Chunk54381.jsx)("div", {
     style: {
       width: "100%",
       textAlign: "center"

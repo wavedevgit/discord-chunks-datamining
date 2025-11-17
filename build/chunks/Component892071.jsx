@@ -5,8 +5,8 @@ require.d(exports, {
   cE: () => b,
   vP: () => E
 }), require("./415506.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk877371 = require("./877371.js"),
   Chunk580747 = require("./580747.js"),
   Chunk998502 = require("./998502.js");
-let g = Chunk647438.createContext({
+let g = Chunk473749.createContext({
   lang: "",
   style: "",
   className: "",
@@ -27,7 +27,7 @@ let g = Chunk647438.createContext({
 });
 
 function E() {
-  let e = Chunk647438.useContext(g);
+  let e = Chunk473749.useContext(g);
   if (true === module) throw Error("useRootElementContext must be used within a RootElementContextProvider");
   return module
 }

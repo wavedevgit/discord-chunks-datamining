@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => e_
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
@@ -102,7 +102,7 @@ function ed(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class ef extends Chunk647438.PureComponent {
+class ef extends Chunk473749.PureComponent {
   get viewProperties() {
     let {
       participantOnScreen: e,
@@ -110,13 +110,13 @@ class ef extends Chunk647438.PureComponent {
       channel: n
     } = this.props, r = (0, Chunk354459._5)(module), i = null != module && module.type !== Chunk354459.fO.ACTIVITY && module.user.id === exports;
     return {
-      canPopout: Chunk951288 && !Chunk647438,
-      canSettings: Chunk951288 && Chunk647438,
-      canStopStream: Chunk951288,
-      canSeeViewers: Chunk951288,
+      canPopout: Chunk54381 && !Chunk473749,
+      canSettings: Chunk54381 && Chunk473749,
+      canStopStream: Chunk54381,
+      canSeeViewers: Chunk54381,
       canSeeParticipantName: ((null == module ? true : module.type) === Chunk354459.fO.STREAM || (null == module ? true : module.type) === Chunk354459.fO.USER) && require.type !== Chunk981631.d4z.DM,
-      canDisconnect: !Chunk951288,
-      isSelf: Chunk647438
+      canDisconnect: !Chunk54381,
+      isSelf: Chunk473749
     }
   }
   get streamerPaused() {
@@ -169,12 +169,12 @@ class ef extends Chunk647438.PureComponent {
         cameraEncodeError: o
       } = this.props;
     if (null != Chunk512722 && null == o) {
-      if ((null == exports ? true : exports.type) === Chunk354459.fO.STREAM) return (0, Chunk951288.jsx)(Chunk916771.Z, {
+      if ((null == exports ? true : exports.type) === Chunk354459.fO.STREAM) return (0, Chunk54381.jsx)(Chunk916771.Z, {
         stream: exports.stream,
         width: require,
         avError: Chunk512722
       });
-      else if ((null == exports ? true : exports.type) === Chunk354459.fO.USER) return (0, Chunk951288.jsx)(Chunk249212.Z, {
+      else if ((null == exports ? true : exports.type) === Chunk354459.fO.USER) return (0, Chunk54381.jsx)(Chunk249212.Z, {
         userId: exports.user.id,
         width: require,
         avError: Chunk512722
@@ -182,22 +182,22 @@ class ef extends Chunk647438.PureComponent {
     }
     switch (true) {
       case (null == module ? true : module.state) === Chunk981631.jm8.ENDED:
-        return (0, Chunk951288.jsx)(Chunk822296.Z, {
+        return (0, Chunk54381.jsx)(Chunk822296.Z, {
           stream: module,
           width: require
         });
       case (null == module ? true : module.state) === Chunk981631.jm8.FAILED:
-        return (0, Chunk951288.jsx)(Chunk916771.Z, {
+        return (0, Chunk54381.jsx)(Chunk916771.Z, {
           stream: module,
           width: require
         });
       case (null == exports ? true : exports.type) === Chunk354459.fO.HIDDEN_STREAM:
-        return (0, Chunk951288.jsx)(Chunk792517.Z, {
+        return (0, Chunk54381.jsx)(Chunk792517.Z, {
           participant: exports,
           width: require
         });
-      case Chunk647438:
-        return (0, Chunk951288.jsx)(Chunk351483.Z, {
+      case Chunk473749:
+        return (0, Chunk54381.jsx)(Chunk351483.Z, {
           width: require
         })
     }
@@ -211,12 +211,12 @@ class ef extends Chunk647438.PureComponent {
     if ((null == exports ? true : exports.type) === Chunk354459.fO.STREAM || (null == exports ? true : exports.type) === Chunk354459.fO.USER) {
       var n;
       let i = null != (n = Chunk5192.ZP.getNickname(module.getGuildId(), module.id, exports.user)) ? require : Chunk51144.ZP.getName(exports.user);
-      return (0, Chunk951288.jsx)(Chunk481060.Text, {
+      return (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "always-white",
         className: Chunk306762.participantName,
         lineClamp: 1,
-        children: Chunk647438
+        children: Chunk473749
       })
     }
     return null
@@ -228,18 +228,18 @@ class ef extends Chunk647438.PureComponent {
       participantOnScreen: n,
       isVideoEnabled: i,
       width: a
-    } = this.props, o = (0, Chunk933557.F6)(module, Chunk594174.default, Chunk699516.Z), s = (null == require ? true : require.id) === Chunk314897.default.getId() && Chunk647438, l = this.renderStreamState(), c = this.activeStreamForSelectedParticipant, u = null;
-    return (null == require ? true : require.type) !== Chunk354459.fO.ACTIVITY && (null != l ? u = l : ((null == require ? true : require.type) === Chunk354459.fO.USER || (null == require ? true : require.type) === Chunk354459.fO.STREAM) && (u = (0, Chunk951288.jsx)(Chunk484286.Z, {
+    } = this.props, o = (0, Chunk933557.F6)(module, Chunk594174.default, Chunk699516.Z), s = (null == require ? true : require.id) === Chunk314897.default.getId() && Chunk473749, l = this.renderStreamState(), c = this.activeStreamForSelectedParticipant, u = null;
+    return (null == require ? true : require.type) !== Chunk354459.fO.ACTIVITY && (null != l ? u = l : ((null == require ? true : require.type) === Chunk354459.fO.USER || (null == require ? true : require.type) === Chunk354459.fO.STREAM) && (u = (0, Chunk54381.jsx)(Chunk484286.Z, {
       paused: this.streamerPaused,
       streamId: exports,
       component: Chunk131951.Z.getVideoComponent(),
       mirror: Chunk392711,
-      children: (0, Chunk951288.jsx)(Chunk266910.Z, {
+      children: (0, Chunk54381.jsx)(Chunk266910.Z, {
         size: Chunk481060.EFr.SIZE_80,
         src: null == require ? true : require.user.getAvatarURL(module.guild_id, 80),
         "aria-label": null == require ? true : require.user.username
       })
-    }))), (0, Chunk951288.jsx)(Chunk937995.ZP, {
+    }))), (0, Chunk54381.jsx)(Chunk937995.ZP, {
       timeout: 1800,
       children: e => {
         var t;

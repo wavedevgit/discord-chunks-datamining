@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => A
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk921801 = require("./921801.js"),
   Chunk825655 = require("./825655.jsx"),
@@ -30,50 +30,50 @@ var Chunk481060 = require("./481060.js"),
 let S = "".concat(Chunk63063.Z.getArticleURL(Chunk981631.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
 
 function A() {
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsxs)(Chunk603963.Z, {
+  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    children: [(0, Chunk54381.jsxs)(Chunk603963.Z, {
       webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VOICE,
-      children: [(0, Chunk951288.jsx)(Chunk825655.Z, {
+      children: [(0, Chunk54381.jsx)(Chunk825655.Z, {
         sourcePage: "voice"
-      }), (0, Chunk951288.jsxs)(Chunk738486.Z, {
-        children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+      }), (0, Chunk54381.jsxs)(Chunk738486.Z, {
+        children: [(0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.VOICE_AND_VIDEO_DEVICES,
-          children: (0, Chunk951288.jsx)(Chunk625205.Z, {})
-        }), (0, Chunk951288.jsx)(Chunk921801.F, {
+          children: (0, Chunk54381.jsx)(Chunk625205.Z, {})
+        }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.VOICE_AND_VIDEO_VOLUME_CONTROLS,
-          children: (0, Chunk951288.jsx)(Chunk976758.Z, {})
-        }), (0, Chunk951288.jsxs)(Chunk921801.F, {
+          children: (0, Chunk54381.jsx)(Chunk976758.Z, {})
+        }), (0, Chunk54381.jsxs)(Chunk921801.F, {
           setting: Chunk726985.s6.VOICE_AND_VIDEO_MIC_TEST,
-          children: [(0, Chunk951288.jsx)(Chunk823087.Z, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
+          children: [(0, Chunk54381.jsx)(Chunk823087.Z, {}), (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             children: Chunk388032.intl.format(Chunk388032.t["V+B3FH"], {
               guideURL: S
             })
           })]
         })]
-      }), (0, Chunk951288.jsx)(Chunk738486.Z, {
-        children: (0, Chunk951288.jsx)(Chunk921801.F, {
+      }), (0, Chunk54381.jsx)(Chunk738486.Z, {
+        children: (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.VOICE_AND_VIDEO_INPUT_PROFILE,
-          children: (0, Chunk951288.jsx)(Chunk235144.Z, {})
+          children: (0, Chunk54381.jsx)(Chunk235144.Z, {})
         })
-      }), (0, Chunk951288.jsxs)(Chunk738486.Z, {
-        children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+      }), (0, Chunk54381.jsxs)(Chunk738486.Z, {
+        children: [(0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.VOICE_AND_VIDEO_INPUT_MODE,
-          children: (0, Chunk951288.jsx)(Chunk325808.ZP, {})
-        }), (0, Chunk951288.jsx)(Chunk921801.F, {
+          children: (0, Chunk54381.jsx)(Chunk325808.ZP, {})
+        }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.VOICE_AND_VIDEO_SENSITIVITY,
-          children: (0, Chunk951288.jsx)(Chunk269876.Z, {})
+          children: (0, Chunk54381.jsx)(Chunk269876.Z, {})
         })]
       })]
-    }), (0, Chunk951288.jsx)(Chunk603963.Z, {
+    }), (0, Chunk54381.jsx)(Chunk603963.Z, {
       webSetting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
       title: Chunk388032.intl.string(Chunk388032.t["6I6GUv"]),
-      children: (0, Chunk951288.jsx)(Chunk803567.ZP, {})
-    }), (0, Chunk951288.jsx)(Chunk603963.Z, {
+      children: (0, Chunk54381.jsx)(Chunk803567.ZP, {})
+    }), (0, Chunk54381.jsx)(Chunk603963.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["8/udY0"]),
       webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VOICE_ADVANCED,
-      children: (0, Chunk951288.jsxs)(Chunk738486.Z, {
-        children: [(0, Chunk951288.jsx)(Chunk716210.Z, {}), (0, Chunk951288.jsx)(Chunk459674.Z, {}), (0, Chunk951288.jsx)(Chunk429789.Z, {}), (0, Chunk951288.jsx)(Chunk208113.Z, {}), (0, Chunk951288.jsx)(Chunk232388.Z, {})]
+      children: (0, Chunk54381.jsxs)(Chunk738486.Z, {
+        children: [(0, Chunk54381.jsx)(Chunk716210.Z, {}), (0, Chunk54381.jsx)(Chunk459674.Z, {}), (0, Chunk54381.jsx)(Chunk429789.Z, {}), (0, Chunk54381.jsx)(Chunk208113.Z, {}), (0, Chunk54381.jsx)(Chunk232388.Z, {})]
       })
     })]
   })

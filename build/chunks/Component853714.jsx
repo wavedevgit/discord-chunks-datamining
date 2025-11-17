@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => B
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
@@ -85,7 +85,7 @@ function k(e, t) {
   }
   return i
 }
-let G = Chunk647438.forwardRef((e, t) => {
+let G = Chunk473749.forwardRef((e, t) => {
   var {
     onHeaderClick: i,
     guildId: l,
@@ -225,7 +225,7 @@ function M(e) {
   })
 }
 G.displayName = "AuditLogClickWrap";
-class U extends Chunk647438.PureComponent {
+class U extends Chunk473749.PureComponent {
   componentDidMount() {
     (0, Chunk480137.bY)(this.props.guildId), document.addEventListener("click", this.handleOutsideClick)
   }
@@ -246,9 +246,9 @@ class U extends Chunk647438.PureComponent {
       n = this._prevRects;
     if (null == exports.expanded || null == exports.lastExpanded || null == require.expanded || exports.expanded.top < exports.lastExpanded.top) return;
     let r = require.expanded.height - exports.lastExpanded.height,
-      i = module.getScrollerState().scrollTop - Chunk951288;
+      i = module.getScrollerState().scrollTop - Chunk54381;
     module.scrollTo({
-      to: Chunk647438
+      to: Chunk473749
     })
   }
   getRects() {
@@ -267,20 +267,20 @@ class U extends Chunk647438.PureComponent {
     return module
   }
   renderHeader() {
-    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsxs)("div", {
+    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk912864.customHeader,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.SPWLyT)
         }), this.renderHeaderDropdowns()]
-      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
         className: Chunk912864.divider
       })]
     })
   }
   renderSpinner() {
-    return (0, Chunk951288.jsx)(Chunk481060.$jN, {
+    return (0, Chunk54381.jsx)(Chunk481060.$jN, {
       type: Chunk481060.$jN.Type.SPINNING_CIRCLE
     })
   }
@@ -298,20 +298,20 @@ class U extends Chunk647438.PureComponent {
       guildId: d,
       guild: g
     } = this.props;
-    if (a) return (0, Chunk951288.jsx)(Chunk497321.Z, {});
+    if (a) return (0, Chunk54381.jsx)(Chunk497321.Z, {});
     if (Chunk374470 || Chunk91192) return this.renderSpinner();
-    if (0 === Chunk647438.length) {
+    if (0 === Chunk473749.length) {
       let e = Chunk442837 ? Chunk388032.intl.string(Chunk388032.t.tzkaD7) : Chunk388032.intl.string(Chunk388032.t.lNuYhh),
         t = Chunk442837 ? Chunk388032.intl.string(Chunk388032.t.Ww5Tjy) : Chunk388032.intl.string(Chunk388032.t["RHhk+P"]);
-      return (0, Chunk951288.jsxs)(Chunk481060.ubH, {
+      return (0, Chunk54381.jsxs)(Chunk481060.ubH, {
         theme: Chunk120356,
         className: Chunk912864.empty,
-        children: [(0, Chunk951288.jsx)(Chunk481060.oxh, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.oxh, {
           darkSrc: require("./28269.js"),
           lightSrc: require("./357115.js"),
           width: 272,
           height: 130
-        }), (0, Chunk951288.jsx)(Chunk481060.OZU, {
+        }), (0, Chunk54381.jsx)(Chunk481060.OZU, {
           note: module,
           style: {
             maxWidth: 300
@@ -320,8 +320,8 @@ class U extends Chunk647438.PureComponent {
         })]
       })
     }
-    return (0, Chunk951288.jsx)(M, {
-      logs: Chunk647438,
+    return (0, Chunk54381.jsx)(M, {
+      logs: Chunk473749,
       guildId: Chunk333200,
       guild: Chunk480137,
       expandedId: module,
@@ -339,18 +339,18 @@ class U extends Chunk647438.PureComponent {
       hide: t,
       isLoading: n
     } = this.props;
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: Chunk630016.customColumn,
-      children: (0, Chunk951288.jsx)("div", {
+      children: (0, Chunk54381.jsx)("div", {
         className: Chunk630016.customContainer,
-        children: (0, Chunk951288.jsx)(Chunk481060.yWw, {
+        children: (0, Chunk54381.jsx)(Chunk481060.yWw, {
           className: a()(Chunk630016.customScroller, Chunk912864.scroller),
           onScroll: this.handleOnScroll,
           ref: this.handleSetScrollerRef,
-          children: (0, Chunk951288.jsx)("div", {
+          children: (0, Chunk54381.jsx)("div", {
             className: Chunk912864.content,
             ref: this._contentRef,
-            children: (0, Chunk951288.jsxs)(Chunk481060.JcV, {
+            children: (0, Chunk54381.jsxs)(Chunk481060.JcV, {
               containerRef: this._contentRef,
               children: [this.renderHeader(), this.renderContent(), this.renderLoadMore(), !module || exports || require ? null : this.renderSpinner()]
             })

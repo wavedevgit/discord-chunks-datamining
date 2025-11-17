@@ -3,29 +3,29 @@
 require.d(exports, {
   Z: () => c
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk703656 = require("./703656.js"),
   Chunk22095 = require("./22095.js"),
   Chunk981631 = require("./981631.js"),
   Chunk840846 = require("./840846.js");
 let c = function() {
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk840846.container,
-    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       color: "text-feedback-info",
       style: {
         marginBottom: "8px"
       },
       children: "Click the button below to clear your Minor Reward Capping History."
-    }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Button, {
       onClick: () => {
         (0, Chunk22095.it)(), (0, Chunk703656.uL)(Chunk981631.Z5c.QUEST_HOME_V2)
       },
       text: "Clear History"
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       color: "text-feedback-info",
       children: "Your may have to refresh your client after being redirected to the Quest Home in order to see these changes."

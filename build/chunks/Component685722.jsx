@@ -3,17 +3,17 @@
 require.d(exports, {
   Z: () => o
 });
-var Chunk951288 = require("./951288.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk903781 = require("./903781.js");
 
 function o() {
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk903781.container,
-    children: [(0, Chunk951288.jsx)("div", {
+    children: [(0, Chunk54381.jsx)("div", {
       className: l()(Chunk903781.placeholderItem, Chunk903781.chatTextAreaPlaceholder)
-    }), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk54381.jsx)("div", {
       className: l()(Chunk903781.placeholderItem, Chunk903781.appLauncherPlaceholder)
     })]
   })

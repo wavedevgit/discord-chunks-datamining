@@ -7,8 +7,8 @@ require.d(exports, {
   op: () => ep,
   y4: () => eh
 }), require("./388685.js"), require("./781311.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -117,7 +117,7 @@ function ep(e, t, n) {
 function eh(e, t, n) {
   return n === Y.O.BURST && t || n === Y.O.NORMAL && e
 }
-class em extends(r = Chunk647438.PureComponent) {
+class em extends(r = Chunk473749.PureComponent) {
   componentWillAppear(e) {
     this.animateIn(e)
   }
@@ -173,19 +173,19 @@ class em extends(r = Chunk647438.PureComponent) {
         opacity: this.opacity
       },
       L = Chunk120356 ? r : require;
-    if (Chunk120356 && null != Chunk647438) {
+    if (Chunk120356 && null != Chunk473749) {
       var M;
       let {
         accentColor: n,
         backgroundColor: r,
         opacity: i
-      } = Chunk647438, o = null != (M = (0, Chunk866442.wK)(null != r ? r : "", Chunk951288)) ? Chunk695346 : "";
+      } = Chunk473749, o = null != (M = (0, Chunk866442.wK)(null != r ? r : "", Chunk54381)) ? Chunk695346 : "";
       this.isMe() && (Chunk222677.borderColor = r), Chunk222677.background = Chunk120356, e = require, t = require
     }
     let k = null == Chunk33154 ? true : Chunk33154.getBoundingClientRect(),
       j = null != Chunk56314 && null != Chunk592125,
       U = null == Chunk56314;
-    return (0, Chunk951288.jsx)(Chunk481060.yRy, {
+    return (0, Chunk54381.jsx)(Chunk481060.yRy, {
       targetElementRef: {
         current: Chunk33154
       },
@@ -196,18 +196,18 @@ class em extends(r = Chunk647438.PureComponent) {
       position: "top",
       align: "center",
       positionKey: Chunk767714,
-      children: () => (0, Chunk951288.jsx)("div", {
+      children: () => (0, Chunk54381.jsx)("div", {
         onMouseEnter: this.handleEnter,
         onMouseLeave: this.handleLeave,
         ref: this.handleSetReactionRef,
-        children: (0, Chunk951288.jsx)(Chunk748780.Z.div, {
+        children: (0, Chunk54381.jsx)(Chunk748780.Z.div, {
           className: s()(Chunk659215.reaction, Chunk367907, {
             [Chunk659215.reactionMe]: this.isMe(),
             [Chunk659215.reactionReadOnly]: Chunk772848 && !Chunk442837 && !Chunk607070 && !Chunk846519,
             [Chunk659215.shakeReaction]: Chunk906411 && null == Chunk56314
           }),
           style: Chunk222677,
-          children: (0, Chunk951288.jsx)(Chunk481060.yRy, {
+          children: (0, Chunk54381.jsx)(Chunk481060.yRy, {
             targetElementRef: this.upsellPopoutTargetRef,
             renderPopout: this.renderLurkerModeUpsellPopout,
             position: "top",
@@ -530,7 +530,7 @@ class em extends(r = Chunk647438.PureComponent) {
 ea(em, "defaultProps", {
   emojiSizeTooltip: "jumbo"
 });
-let eg = Chunk647438.memo(e => {
+let eg = Chunk473749.memo(e => {
     let {
       type: t,
       burst_colors: n,

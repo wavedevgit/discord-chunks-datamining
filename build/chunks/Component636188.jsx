@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => H
 }), require("./388685.js"), require("./642613.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -218,13 +218,13 @@ function G(e) {
 }
 
 function B() {
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk199306.customBackgroundTooltip,
-    children: [(0, Chunk951288.jsx)(Chunk481060.SrA, {
+    children: [(0, Chunk54381.jsx)(Chunk481060.SrA, {
       size: "md",
       color: "currentColor",
       className: Chunk199306.customBackgroundTooltipIcon
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t["T+yRY3"])
     })]

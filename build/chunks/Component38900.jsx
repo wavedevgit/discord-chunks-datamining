@@ -5,8 +5,8 @@ require.d(exports, {
   K: () => p,
   Z: () => g
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk128922 = require("./128922.js"),
@@ -15,17 +15,17 @@ var Chunk120356 = require("./120356.js"),
   Chunk887353 = require("./887353.js"),
   Chunk198501 = require("./198501.js"),
   Chunk300179 = require("./300179.js");
-let p = () => (0, Chunk951288.jsx)("div", {
+let p = () => (0, Chunk54381.jsx)("div", {
     className: i()(Chunk198501.skeleton, Chunk300179.shopCard),
-    children: (0, Chunk951288.jsxs)("div", {
+    children: (0, Chunk54381.jsxs)("div", {
       className: Chunk198501.cardBody,
-      children: [(0, Chunk951288.jsx)("div", {
+      children: [(0, Chunk54381.jsx)("div", {
         className: Chunk198501.cardAvatar
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk198501.cardTitle
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk198501.cardDescription
-      }), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk54381.jsx)("div", {
         className: Chunk198501.cardSummary
       })]
     })
@@ -34,7 +34,7 @@ let p = () => (0, Chunk951288.jsx)("div", {
     let e = Chunk128922.Z.useConfig({
       location: "ShopSkeleton"
     }).showCardsV2;
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       className: Chunk198501.skeletonsContainer,
       children: Array.from({
         length: 3

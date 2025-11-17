@@ -1,0 +1,29 @@
+/** Chunk was on web.js **/
+/** chunk id: 985407, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+var Chunk65183 = require("./65183.js"),
+  Chunk357415 = require("./357415.js"),
+  Chunk581079 = require("./581079.js"),
+  o = Chunk65183.Repeat;
+module.exports = function(e, t, n, r) {
+  t.isCollapsed() || a(false);
+  var s = null;
+  if (null != n && (s = n.length), null == s || 0 === s) return e;
+  var l = e.getBlockMap(),
+    c = t.getStartKey(),
+    u = t.getStartOffset(),
+    d = l.get(c),
+    f = d.getText(),
+    _ = d.merge({
+      text: f.slice(0, u) + n + f.slice(u, d.getLength()),
+      characterList: i(d.getCharacterList(), o(r, s).toList(), u)
+    }),
+    p = u + s;
+  return e.merge({
+    blockMap: l.set(c, _),
+    selectionAfter: t.merge({
+      anchorOffset: p,
+      focusOffset: p
+    })
+  })
+}

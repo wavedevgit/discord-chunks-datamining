@@ -4,8 +4,8 @@ require.d(exports, {
   l: () => d,
   v: () => m
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk144114 = require("./144114.js"),
@@ -15,16 +15,16 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk624463 = require("./624463.js");
 
 function d() {
-  return (0, Chunk951288.jsx)(Chunk489813.PU, {
+  return (0, Chunk54381.jsx)(Chunk489813.PU, {
     className: Chunk624463.editableRequirementContainer,
     icon: Chunk481060.AtH,
     text: Chunk388032.intl.string(Chunk388032.t.woMjLV),
     footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TY"]),
     meetsRequirement: false,
-    children: (0, Chunk951288.jsx)(Chunk28664.u, {
+    children: (0, Chunk54381.jsx)(Chunk28664.u, {
       asContainer: true,
       text: Chunk388032.intl.string(Chunk388032.t.mGlP30),
-      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         disabled: true,

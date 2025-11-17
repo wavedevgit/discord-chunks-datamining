@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => y
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk13245 = require("./13245.js"),
   Chunk371651 = require("./371651.js"),
@@ -49,9 +49,9 @@ function g(e, t) {
 }
 
 function m() {
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk54381.jsx)("div", {
     className: Chunk653773.footer,
-    children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+    children: (0, Chunk54381.jsx)(Chunk481060.Button, {
       variant: "active",
       size: "sm",
       text: Chunk388032.intl.string(Chunk388032.t.U76Ft2),

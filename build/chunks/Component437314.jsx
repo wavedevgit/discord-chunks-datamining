@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => b,
   j: () => h
 }), require("./415506.js"), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk748780 = require("./748780.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -48,7 +48,7 @@ let g = Object.freeze({
       darkSrc: require("./917847.js"),
       width: 421,
       height: 218,
-      renderContent: () => (0, Chunk951288.jsx)(Chunk481060.OZU, {
+      renderContent: () => (0, Chunk54381.jsx)(Chunk481060.OZU, {
         note: Chunk388032.intl.string(Chunk388032.t.v7HbiQ)
       })
     },
@@ -57,7 +57,7 @@ let g = Object.freeze({
       darkSrc: require("./356634.js"),
       width: 433,
       height: 232,
-      renderContent: () => (0, Chunk951288.jsx)(Chunk481060.OZU, {
+      renderContent: () => (0, Chunk54381.jsx)(Chunk481060.OZU, {
         note: Chunk388032.intl.string(Chunk388032.t["9xdyWB"])
       })
     },
@@ -83,7 +83,7 @@ let g = Object.freeze({
       darkSrc: require("./138715.js"),
       width: 415,
       height: 200,
-      renderContent: () => (0, Chunk951288.jsx)(Chunk481060.OZU, {
+      renderContent: () => (0, Chunk54381.jsx)(Chunk481060.OZU, {
         note: Chunk388032.intl.string(Chunk388032.t["vgI/EF"])
       })
     },
@@ -92,7 +92,7 @@ let g = Object.freeze({
       darkSrc: require("./917847.js"),
       width: 421,
       height: 218,
-      renderContent: () => (0, Chunk951288.jsx)(Chunk481060.OZU, {
+      renderContent: () => (0, Chunk54381.jsx)(Chunk481060.OZU, {
         note: Chunk388032.intl.string(Chunk388032.t["7sW4h1"])
       })
     }
@@ -108,7 +108,7 @@ let g = Object.freeze({
       })
     })
   };
-class _ extends Chunk647438.PureComponent {
+class _ extends Chunk473749.PureComponent {
   render() {
     let {
       type: e,
@@ -133,18 +133,18 @@ class _ extends Chunk647438.PureComponent {
           throw Error("FriendsEmptyState: Invalid empty state")
       }
     }(module);
-    return module === Chunk981631.pJs.ADD_FRIEND ? (0, Chunk951288.jsx)(Chunk748780.Z.div, {
+    return module === Chunk981631.pJs.ADD_FRIEND ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
       className: Chunk755429.friendsEmpty,
       style: r,
-      children: (0, Chunk951288.jsx)(m, {
+      children: (0, Chunk54381.jsx)(m, {
         theme: require
       })
-    }) : (0, Chunk951288.jsx)(Chunk748780.Z.div, {
+    }) : (0, Chunk54381.jsx)(Chunk748780.Z.div, {
       className: Chunk755429.friendsEmpty,
       style: r,
-      children: (0, Chunk951288.jsx)(Chunk481060.ubH, {
+      children: (0, Chunk54381.jsx)(Chunk481060.ubH, {
         theme: require,
-        children: Chunk647438.renderContent(exports)
+        children: Chunk473749.renderContent(exports)
       })
     })
   }

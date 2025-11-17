@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => h
 }), require("./35282.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk703656 = require("./703656.js"),
@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.initialize();
-class h extends(r = Chunk647438.PureComponent) {
+class h extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     (0, Chunk108427.e)("account_revert")
   }
@@ -29,11 +29,11 @@ class h extends(r = Chunk647438.PureComponent) {
     let {
       token: e
     } = this.props.match.params;
-    return (0, Chunk951288.jsx)(Chunk388905.ZP, {
+    return (0, Chunk54381.jsx)(Chunk388905.ZP, {
       style: {
         padding: 0
       },
-      children: (0, Chunk951288.jsx)(Chunk559786.Z, function(e) {
+      children: (0, Chunk54381.jsx)(Chunk559786.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

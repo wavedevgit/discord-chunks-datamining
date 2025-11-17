@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => x
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -73,7 +73,7 @@ function h(e) {
 }
 
 function b() {
-  let e = Chunk647438.useMemo(() => [{
+  let e = Chunk473749.useMemo(() => [{
       backgroundClass: Chunk203552.bannerClubs,
       username: "Wumpus#0000",
       avatar: require("./91055.js"),
@@ -152,15 +152,15 @@ function b() {
         }]
       ]
     }], []),
-    [t, l] = Chunk647438.useState(0),
-    a = Chunk647438.useRef(module);
-  return Chunk647438.useEffect(() => {
+    [t, l] = Chunk473749.useState(0),
+    a = Chunk473749.useRef(module);
+  return Chunk473749.useEffect(() => {
     a.current = module
-  }), Chunk647438.useEffect(() => {
+  }), Chunk473749.useEffect(() => {
     if (Chunk607070.Z.useReducedMotion) return;
     let e = setTimeout(() => Chunk120356((exports + 1) % a.current.length), 6332);
     return () => clearTimeout(module)
-  }, [exports]), (0, Chunk951288.jsx)("div", {
+  }, [exports]), (0, Chunk54381.jsx)("div", {
     className: Chunk203552.bannerContainer,
     "aria-hidden": true,
     children: module.map((e, n) => (0, r.jsx)(h, {

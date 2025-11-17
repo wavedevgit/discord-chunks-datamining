@@ -4,8 +4,8 @@
 require.d(exports, {
   k: () => b
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk150677 = require("./150677.js"),
@@ -69,7 +69,7 @@ function g(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class E extends(r = Chunk647438.PureComponent) {
+class E extends(r = Chunk473749.PureComponent) {
   async componentDidMount() {
     let {
       importData: e,
@@ -89,7 +89,7 @@ class E extends(r = Chunk647438.PureComponent) {
       autoplay: true,
       animationData: Chunk150677,
       rendererSettings: s
-    }), this.animation.addEventListener("loopComplete", this.handleLoopComplete), this.animation.addEventListener("complete", this.handleComplete), this.animation.addEventListener("enterFrame", this.handleEnterFrame), this.playScene(exports), (r && !Chunk647438 || Chunk951288 || Chunk120356) && this.animation.pause())
+    }), this.animation.addEventListener("loopComplete", this.handleLoopComplete), this.animation.addEventListener("complete", this.handleComplete), this.animation.addEventListener("enterFrame", this.handleEnterFrame), this.playScene(exports), (r && !Chunk473749 || Chunk54381 || Chunk120356) && this.animation.pause())
   }
   componentWillUnmount() {
     this.isUnmounted = true, null != this.animation && (this.animation.destroy(), this.animation = true)
@@ -124,7 +124,7 @@ class E extends(r = Chunk647438.PureComponent) {
     }
   }
   render() {
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       ref: this.handleSetRef,
       className: s()(this.props.className, Chunk7034.wrapper)
     })

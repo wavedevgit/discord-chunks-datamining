@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => E
 }), require("./415506.js"), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var r, Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js");
 
 function s(e, t, n) {
@@ -110,7 +110,7 @@ function m(e) {
 function g(e) {
   return null != e ? "".concat(e, "px") : "auto"
 }
-class E extends(r = Chunk647438.PureComponent) {
+class E extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.checkBounds(), this.setDOMPositions(this.position)
   }
@@ -173,12 +173,12 @@ class E extends(r = Chunk647438.PureComponent) {
       bottom: d,
       right: u
     };
-    return (0, Chunk951288.jsx)("div", {
+    return (0, Chunk54381.jsx)("div", {
       ref: this.draggableRef,
       className: exports,
       onMouseDown: this.handleMouseDown,
       style: f,
-      children: Chunk647438.cloneElement(Chunk647438.Children.only(module), {
+      children: Chunk473749.cloneElement(Chunk473749.Children.only(module), {
         flipped: "RIGHT" === Chunk981631,
         verticalFlipped: "BOTTOM" === r,
         checkBounds: this.checkBounds,

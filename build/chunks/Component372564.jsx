@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => O
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk374470 = require("./374470.js"),
@@ -42,22 +42,22 @@ function b(e) {
 function _(e) {
   return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class y extends Chunk647438.Component {
+class y extends Chunk473749.Component {
   render() {
     let {
       channel: e
     } = this.props;
     if (module.isMultiUserDM()) return null;
     let t = null != module.topic && module.topic.length > 0;
-    return null != module.linkedLobby || exports ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk984370.Z.Divider, {}), (0, Chunk951288.jsxs)("div", {
+    return null != module.linkedLobby || exports ? (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
+      children: [(0, Chunk54381.jsx)(Chunk984370.Z.Divider, {}), (0, Chunk54381.jsxs)("div", {
         className: o()(Chunk413140.topic, Chunk413140.expandable, Chunk430864.markup),
         onMouseDown: this.onMouseDown,
         onMouseMove: this.onMouseMove,
         onMouseUp: this.onMouseUp,
         onContextMenu: this.handleContextMenu,
         onClick: this.handleClick,
-        children: [(0, Chunk951288.jsx)(Chunk481060.P3F, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.P3F, {
           onClick: this.handleClick,
           "aria-label": Chunk388032.intl.string(Chunk388032.t.mKwsSp),
           className: Chunk413140.topicClickTarget

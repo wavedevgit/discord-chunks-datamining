@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => Z
 }), require("./784620.js"), require("./973216.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk966117 = require("./966117.js"),
   Chunk197571 = require("./197571.js");
-class C extends Chunk647438.PureComponent {
+class C extends Chunk473749.PureComponent {
   render() {
     var e, t;
     let {
@@ -34,7 +34,7 @@ class C extends Chunk647438.PureComponent {
       hidePersonalInformation: i,
       hostname: o
     } = this.props;
-    if (null == require) return (0, Chunk951288.jsx)(Chunk481060.$jN, {
+    if (null == require) return (0, Chunk54381.jsx)(Chunk481060.$jN, {
       type: Chunk481060.$jN.Type.SPINNING_CIRCLE
     });
     let d = (e = function(e) {
@@ -108,12 +108,12 @@ class C extends Chunk647438.PureComponent {
           children: e
         }, e)
       })(e.displayName, e.bitrate, e.lost));
-    return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+    return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       className: Chunk966117.allowSelection,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/medium",
-        children: Chunk388032.intl.string(Chunk388032.t.wU9IN2) + (null != Chunk647438 ? " - " + Chunk647438 : "")
-      }), (0, Chunk481250.VE)(Chunk226961), 0 === Chunk476221.length ? null : (0, Chunk951288.jsx)(Chunk481060.izJ, {
+        children: Chunk388032.intl.string(Chunk388032.t.wU9IN2) + (null != Chunk473749 ? " - " + Chunk473749 : "")
+      }), (0, Chunk481250.VE)(Chunk226961), 0 === Chunk476221.length ? null : (0, Chunk54381.jsx)(Chunk481060.izJ, {
         className: Chunk197571.marginBottom20
       }), (0, Chunk481250.VE)(Chunk476221)]
     })

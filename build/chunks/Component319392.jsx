@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => g
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk726542 = require("./726542.js"),
   Chunk198993 = require("./198993.jsx"),
@@ -18,34 +18,34 @@ var Chunk481060 = require("./481060.js"),
   Chunk629582 = require("./629582.js");
 
 function b() {
-  return (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk54381.jsxs)("div", {
     className: Chunk99372.getXboxApp,
-    children: [(0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk99372.getXboxAppBody,
-      children: [(0, Chunk951288.jsxs)(Chunk481060.Heading, {
+      children: [(0, Chunk54381.jsxs)(Chunk481060.Heading, {
         className: Chunk99372.getXboxAppHeading,
         variant: "text-lg/semibold",
-        children: [(0, Chunk951288.jsx)("div", {
+        children: [(0, Chunk54381.jsx)("div", {
           className: Chunk99372.xboxLogoBox,
-          children: (0, Chunk951288.jsx)("img", {
+          children: (0, Chunk54381.jsx)("img", {
             src: Chunk726542.Z.get(Chunk981631.ABu.XBOX).icon.whiteSVG,
             alt: ""
           })
         }), Chunk388032.intl.string(Chunk388032.t["12Kx2v"])]
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
         children: Chunk388032.intl.string(Chunk388032.t.M5yEcb)
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: (0, Chunk951288.jsx)(Chunk481060.Anchor, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.XBOX_CONNECTION),
           children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
         })
       })]
-    }), (0, Chunk951288.jsx)(Chunk198993.ZP, {
+    }), (0, Chunk54381.jsx)(Chunk198993.ZP, {
       className: Chunk99372.getXboxAppQR,
       text: Chunk927923.X3,
       size: 90

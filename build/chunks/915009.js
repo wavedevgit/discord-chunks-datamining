@@ -9,7 +9,7 @@ require.d(exports, {
   rD: () => O,
   xf: () => E
 });
-var Chunk647438 = require("./647438.js"),
+var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk925513 = require("./925513.js"),
@@ -52,7 +52,7 @@ let E = () => {
       goreContentNonFriendDm: (0, Chunk800651.n6)(require) ? require : (0, Chunk925513.zR)({
         isDm: true
       }),
-      goreContentFriendDm: (0, Chunk800651.n6)(Chunk647438) ? Chunk647438 : (0, Chunk925513.zR)({
+      goreContentFriendDm: (0, Chunk800651.n6)(Chunk473749) ? Chunk473749 : (0, Chunk925513.zR)({
         isDm: true,
         isFriend: true
       }),
@@ -69,7 +69,7 @@ let E = () => {
 function O() {
   let e = (0, Chunk652262.F)(),
     t = Chunk722687.vB.useControlledSetting(null == module ? true : module.id),
-    n = Chunk647438.useMemo(() => (0, Chunk88658.bL)(exports), [exports]);
+    n = Chunk473749.useMemo(() => (0, Chunk88658.bL)(exports), [exports]);
   return require.mutualGuilds && !require.all
 }
 
