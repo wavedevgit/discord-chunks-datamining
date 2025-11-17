@@ -492,6 +492,18 @@ let l = [{
       whiteSVG: require("./605098.js")
     },
     enabled: true
+  }, {
+    type: Chunk981631.ABu.META_QUEST,
+    name: "Meta Quest",
+    icon: {
+      lightPNG: require("./637291.js"),
+      darkPNG: require("./172471.js"),
+      whitePNG: require("./629350.js"),
+      lightSVG: require("./324064.js"),
+      darkSVG: require("./861380.js"),
+      whiteSVG: require("./916803.js")
+    },
+    enabled: false
   }],
   c = i().keyBy(l, "type"),
   u = {};

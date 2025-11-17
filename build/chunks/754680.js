@@ -14,7 +14,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.ADVANCED_VOICE_ACTIVITY_PROCESSING_SET
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.BbESsg),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.LoOB1F),
   usePredicate: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isAdvancedVoiceActivitySupported())
+    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isAdvancedVoiceActivitySupported() && Chunk131951.Z.isInputProfileCustom())
   },
   useDisabled: function() {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => {

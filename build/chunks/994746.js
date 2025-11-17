@@ -13,13 +13,23 @@ function s(e) {
   let t = (0, i.Z)(e),
     n = null == t ? true : t.icon;
   return e.type === a.IIU.PLAYING && (null == t ? true : t.type) === a.ABu.XBOX ? {
-    text: o.intl.formatToPlainString(o.t.Sq9xJ7, {
-      game: o.intl.string(o.t.Nfvo72)
+    text: o.intl.formatToPlainString(o.t.A17aM8, {
+      platform: o.intl.string(o.t.Nfvo72)
     }),
     platformIcon: n
   } : e.type === a.IIU.PLAYING && (null == t ? true : t.type) === a.ABu.PLAYSTATION ? {
-    text: o.intl.formatToPlainString(o.t.Sq9xJ7, {
-      game: o.intl.string(o.t.fFl4jo)
+    text: o.intl.formatToPlainString(o.t.A17aM8, {
+      platform: o.intl.string(o.t.fFl4jo)
+    }),
+    platformIcon: n
+  } : e.type === a.IIU.PLAYING && (null == t ? true : t.type) === a.ABu.META_QUEST ? {
+    text: o.intl.formatToPlainString(o.t.A17aM8, {
+      platform: o.intl.string(o.t.p6vL0e)
+    }),
+    platformIcon: n
+  } : e.type === a.IIU.WATCHING && (null == t ? true : t.type) === a.ABu.META_QUEST ? {
+    text: o.intl.formatToPlainString(o.t.ENbTKQ, {
+      platform: o.intl.string(o.t.p6vL0e)
     }),
     platformIcon: n
   } : e.type === a.IIU.STREAMING && (null == t ? true : t.type) === a.ABu.TWITCH ? {

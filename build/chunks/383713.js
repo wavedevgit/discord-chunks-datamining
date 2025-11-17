@@ -27,5 +27,8 @@ let E = (0, Chunk509613.qs)(Chunk313789.n.VOICE_ECHO_CANCELLATION_SETTING, {
       page: o.ZY5.USER_SETTINGS,
       section: o.jXE.SETTINGS_VOICE_AND_VIDEO
     })
+  },
+  usePredicate: function() {
+    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isInputProfileCustom())
   }
 })

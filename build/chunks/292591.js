@@ -15,7 +15,7 @@ let E = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AUTOMATIC_GAIN_CONTROL_SETTING, 
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.cUMdH0),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["6EjbvA"]),
   usePredicate: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isAutomaticGainControlSupported())
+    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isAutomaticGainControlSupported() && Chunk131951.Z.isInputProfileCustom())
   },
   useDisabled: function() {
     return (0, Chunk442837.e7)([Chunk131951.Z, Chunk463395.Z], () => {
