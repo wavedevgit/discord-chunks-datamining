@@ -30,7 +30,7 @@ function w(e) {
     quest: t,
     sourceQuestContent: n,
     onLoadComplete: w
-  } = e, O = (0, l.ZP)(), P = (0, o.wjy)(O) ? v.BR.DARK : v.BR.LIGHT, N = (0, p.ly)(t), E = (0, u.aM)(), T = (0, m.vB)(t.config), D = a.useMemo(() => {
+  } = e, O = (0, l.ZP)(), N = (0, o.wjy)(O) ? v.BR.DARK : v.BR.LIGHT, P = (0, p.ly)(t), E = (0, u.aM)(), T = (0, m.vB)(t.config), A = a.useMemo(() => {
     var e;
     let n = null == (e = t.config.ctaConfig) ? true : e.subtitle;
     if (null != n) return n;
@@ -39,12 +39,12 @@ function w(e) {
       o = null == a ? true : a.messages.videoEndCtaSubtitle;
     return (0, c.Ew)(o) ? r.questType !== i.W.GAMEPLAY || t.config.features.includes(g.S7.NON_GAMING_PLAY_QUEST) || (0, m.Pb)(t) ? b.intl.string(b.t.y8Xf3k) : b.intl.string(b.t["wirwN+"]) : o
   }, [t]), {
-    isLoading: I
+    isLoading: D
   } = (0, x.d7)();
   a.useEffect(() => {
-    I || w()
-  }, [I, w]);
-  let A = (0, y.yc)({
+    D || w()
+  }, [D, w]);
+  let I = (0, y.yc)({
     isShareable: T,
     questId: t.id,
     trackingCtx: a.useMemo(() => ({
@@ -78,7 +78,7 @@ function w(e) {
           alt: b.intl.formatToPlainString(b.t.rtm15P, {
             name: t.config.messages.gameTitle
           }),
-          src: (0, f.fh)(t, f.eC.LOGO_TYPE, P).url
+          src: (0, f.fh)(t, f.eC.LOGO_TYPE, N).url
         })
       })
     }), (0, r.jsxs)("div", {
@@ -89,11 +89,13 @@ function w(e) {
           variant: "heading-md/semibold",
           color: "header-primary",
           className: _.partnerTitle,
-          children: t.config.messages.questName
+          children: b.intl.format(b.t.EAYZAr, {
+            questName: t.config.messages.questName
+          })
         }), (0, r.jsx)(o.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: D
+          children: A
         })]
       }), (0, r.jsx)(x.Fl, {
         id: "partner-game-tile",
@@ -103,7 +105,7 @@ function w(e) {
           alt: b.intl.formatToPlainString(b.t.rtm15P, {
             name: t.config.messages.gameTitle
           }),
-          src: (0, f.fh)(t, f.eC.GAME_TILE, P).url
+          src: (0, f.fh)(t, f.eC.GAME_TILE, N).url
         })
       })]
     }), (0, r.jsx)("div", {
@@ -117,13 +119,13 @@ function w(e) {
           text: b.intl.string(b.t.WmfZHZ),
           children: (0, r.jsx)(o.hU, {
             icon: o.xPt,
-            onClick: A,
+            onClick: I,
             "aria-label": b.intl.string(b.t.WmfZHZ),
             variant: "secondary"
           })
         }), (0, r.jsx)(o.zxk, {
           variant: "primary",
-          text: N,
+          text: P,
           onClick: () => {
             (0, m.nc)(t, {
               content: C.jn.REWARD_MODAL,

@@ -46,17 +46,17 @@ function Z(e) {
     loop: true,
     onCanPlayThrough: t,
     children: (0, a.jsx)("source", {
-      src: R.Z,
+      src: E.Z,
       type: "video/webm"
     })
   })
 }
 
-function A(e) {
+function R(e) {
   let {
     onVideoLoaded: t,
     isLoading: n
-  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), b = (0, c.ZP)(), f = (0, l.apv)(b), h = f ? S.Z : P.Z, x = f ? E.Z : L.Z, C = r.useRef(null), _ = r.useRef(null), [j, g] = r.useState(false), [y, v] = r.useState(false), [N, O] = r.useState(false);
+  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), b = (0, c.ZP)(), f = (0, l.apv)(b), h = f ? S.Z : P.Z, x = f ? A.Z : L.Z, C = r.useRef(null), _ = r.useRef(null), [j, g] = r.useState(false), [y, v] = r.useState(false), [N, O] = r.useState(false);
   r.useEffect(() => {
     j && y && N && t()
   }, [j, y, N, t]), r.useEffect(() => {
@@ -130,7 +130,7 @@ function D(e) {
   };
   return (0, a.jsxs)("div", {
     className: w.contentContainer,
-    children: [(0, a.jsx)(A, {
+    children: [(0, a.jsx)(R, {
       isLoading: t,
       onVideoLoaded: s
     }), (0, a.jsxs)("div", {

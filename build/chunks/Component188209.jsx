@@ -1,7 +1,7 @@
 /** Chunk was on 96861 **/
 /** chunk id: 188209, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => S
+  default: () => Z
 }), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk238905 = require("./238905.js");
 
-function A(e) {
+function I(e) {
   let {
     rewardCode: t,
     questContent: n,
@@ -45,7 +45,7 @@ function A(e) {
   return null == t ? null : (0, r.jsx)(c.Z, {
     className: l,
     inputClassName: d,
-    value: u ? D.intl.string(D.t["0n2u0k"]) : t.code,
+    value: u ? A.intl.string(A.t["0n2u0k"]) : t.code,
     buttonColor: s.Tt.PRIMARY,
     onCopy: () => {
       u && (0, h.JG)(t.code), m({
@@ -96,23 +96,23 @@ function R(e) {
     ref: h,
     children: (0, r.jsx)(i.Modal, {
       size: "md",
-      title: D.intl.string(D.t.NkZ7OU),
+      title: A.intl.string(A.t.NkZ7OU),
       actions: [null != g ? {
         variant: "primary",
-        text: D.intl.string(D.t["+zx47d"]),
+        text: A.intl.string(A.t["+zx47d"]),
         onClick: v
       } : {
         variant: "primary",
-        text: D.intl.string(D.t["/g10LC"]),
+        text: A.intl.string(A.t["/g10LC"]),
         onClick: p
       }],
       preview: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
-          className: I.claimInstructionsCodeInputTitle,
-          children: D.intl.string(D.t.srzsU2)
-        }), (0, r.jsx)(A, {
+          className: D.claimInstructionsCodeInputTitle,
+          children: A.intl.string(A.t.srzsU2)
+        }), (0, r.jsx)(I, {
           rewardCode: d,
           questContent: o,
           questId: n.id,
@@ -124,7 +124,7 @@ function R(e) {
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        className: I.claimInstructionsText,
+        className: D.claimInstructionsText,
         children: C.Z.parse(x, false, {
           allowLinks: true
         })
@@ -142,42 +142,42 @@ function q(e) {
     onClaimInstructions: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: I.contentContainer,
+    className: D.contentContainer,
     children: [(0, r.jsx)("div", {
-      className: I.rewardTileContainer,
-      children: (0, r.jsx)(P.Z, {
-        className: I.rewardTileAsset,
+      className: D.rewardTileContainer,
+      children: (0, r.jsx)(N.Z, {
+        className: D.rewardTileAsset,
         quest: t,
         questContent: n,
         location: T.dr.REWARD_CODE_MODAL,
         sourceQuestContent: i
       })
     }), (0, r.jsxs)("div", {
-      className: I.copyContainer,
+      className: D.copyContainer,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        className: I.heading,
-        children: D.intl.string(D.t["5j/Zym"])
+        className: D.heading,
+        children: A.intl.string(A.t["5j/Zym"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: D.intl.format(D.t["ESmp2+"], {
+        children: A.intl.format(A.t["ESmp2+"], {
           onClaimInstructions: o
         })
       })]
-    }), (0, r.jsx)(A, {
-      className: I.mainCodeInput,
+    }), (0, r.jsx)(I, {
+      className: D.mainCodeInput,
       rewardCode: a,
       questContent: n,
       questId: t.id,
       sourceQuestContent: i,
-      inputClassName: I.codeClaimInputSmallFont
+      inputClassName: D.codeClaimInputSmallFont
     })]
   })
 }
 
-function S(e) {
+function Z(e) {
   var t;
   let {
     initialQuest: n,
@@ -187,23 +187,23 @@ function S(e) {
     sourceQuestContent: C,
     questContentPosition: f
   } = e, h = null != (t = (0, g.B4)(n.id)) ? t : n, j = w.r.build(h.config), x = j.rewardPlatforms[0], y = b.jn.REWARD_MODAL, {
-    questStoreRewardCode: P,
-    isFetchingRewardCode: D,
-    isClaimingReward: I
+    questStoreRewardCode: N,
+    isFetchingRewardCode: A,
+    isClaimingReward: D
   } = (0, o.cj)([v.Z], () => ({
     questStoreRewardCode: v.Z.getRewardCode(h.id),
     isFetchingRewardCode: v.Z.isFetchingRewardCode(h.id),
     isClaimingReward: v.Z.isClaimingReward(h.id)
-  })), A = true === c ? (0, p.b)(h) : P, {
-    hasError: S,
-    setHasError: Z
+  })), I = true === c ? (0, p.b)(h) : N, {
+    hasError: Z,
+    setHasError: S
   } = (0, _.uL)({
-    isClaimingReward: I,
-    isFetchingRewardCode: D,
+    isClaimingReward: D,
+    isFetchingRewardCode: A,
     quest: h,
     questContent: y,
     requiresPlatformSelection: false,
-    rewardCode: A,
+    rewardCode: I,
     selectedPlatformType: x,
     preview: c
   });
@@ -216,11 +216,11 @@ function S(e) {
       i && t()
     }, [i, t])
   }(() => {
-    Z(true)
+    S(true)
   });
-  let k = null == A && (D || I),
-    L = S && !I && !D;
-  return (0, r.jsx)(N.Z, {
+  let k = null == I && (A || D),
+    L = Z && !D && !A;
+  return (0, r.jsx)(P.Z, {
     onClose: i,
     transitionState: s,
     quest: h,
@@ -233,7 +233,7 @@ function S(e) {
       children: (0, r.jsx)(q, {
         quest: h,
         questContent: y,
-        rewardCode: A,
+        rewardCode: I,
         sourceQuestContent: C,
         onClaimInstructions: () => {
           (0, l.ZDy)(() => Promise.resolve(e => (0, r.jsx)(O.A, {
@@ -264,7 +264,7 @@ function S(e) {
                 quest: h,
                 questContent: y,
                 sourceQuestContent: C,
-                rewardCode: A,
+                rewardCode: I,
                 rewardPlatform: x,
                 sharedQuestFields: j,
                 questContentPosition: f

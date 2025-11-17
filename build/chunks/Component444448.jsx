@@ -41,26 +41,26 @@ function C(e) {
     }))
   }, [b, I, j, n]), b) ? (0, i.jsxs)(u.C3, {
     children: [(0, i.jsx)(g.Z, {}), (0, i.jsx)(f.Z, {}), (0, i.jsxs)("div", {
-      className: h.confirmation,
+      className: v.confirmation,
       children: [(0, i.jsx)(x.A, {
         sku: I,
         shape: "square",
-        containerClassName: h.skuImage
+        containerClassName: v.skuImage
       }), (0, i.jsx)(o.Heading, {
         variant: "heading-xxl/bold",
-        className: h.confirmationHeader,
-        children: v.intl.string(v.t["5glWta"])
+        className: v.confirmationHeader,
+        children: h.intl.string(h.t["5glWta"])
       }), (0, i.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: v.intl.formatToPlainString(v.t["2VjPTw"], {
+        children: h.intl.formatToPlainString(h.t["2VjPTw"], {
           itemName: I.name,
           giftRecipient: null != (t = null == _ ? true : _.username) ? t : "your recipient"
         })
       }), (0, i.jsx)("div", {
-        className: h.divider
+        className: v.divider
       }), (0, i.jsx)(s.zxk, {
         onClick: n,
-        text: v.intl.string(v.t.cpT0Cq),
+        text: h.intl.string(h.t.cpT0Cq),
         fullWidth: true
       })]
     })]

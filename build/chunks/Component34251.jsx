@@ -70,22 +70,22 @@ function g(e) {
     transitionState: x,
     location: h,
     sourceQuestContent: g
-  } = e, _ = null != (n = (0, l.B4)(a.id)) ? n : a, j = i.useMemo(() => (0, s.K)(_.config), [_]), v = (null == (t = _.userStatus) ? true : t.claimedAt) != null, y = !_.preview && !v, [N, b] = i.useState(y ? "loading" : "claimed");
+  } = e, _ = null != (n = (0, l.B4)(a.id)) ? n : a, j = i.useMemo(() => (0, s.K)(_.config), [_]), v = (null == (t = _.userStatus) ? true : t.claimedAt) != null, N = !_.preview && !v, [y, b] = i.useState(N ? "loading" : "claimed");
   i.useEffect(() => {
-    if (y) {
+    if (N) {
       let e = d.r.build(_.config),
         t = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : c.y$.CROSS_PLATFORM;
       (0, o.QB)(_.id, t, h).then(() => b("claimed")).catch(() => b("error"))
     }
-  }, [_, h, y]);
-  let w = "error" === N || null == j;
+  }, [_, h, N]);
+  let w = "error" === y || null == j;
   return (0, r.jsx)(m.Z, {
     onClose: u,
     transitionState: x,
     quest: _,
     sourceQuestContent: g,
     location: p.dr.INGAME_REWARD_MODAL,
-    isRewardContentLoading: "loading" === N,
+    isRewardContentLoading: "loading" === y,
     rewardContentHasError: w,
     rewardContent: w ? null : (0, r.jsx)(f.Z, {
       rewardName: j.messages.name,

@@ -1,7 +1,7 @@
 /** Chunk was on 41023 **/
 /** chunk id: 305815, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => T
+  default: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk129034 = require("./129034.js");
 
-function P(e) {
+function A(e) {
   var n;
   let {
     quest: t,
@@ -71,16 +71,16 @@ function P(e) {
   })
 }
 
-function T(e) {
+function E(e) {
   var n, t, o;
   let {
     initialQuest: c,
     onClose: j,
     transitionState: N,
     preview: w,
-    location: T,
-    sourceQuestContent: A
-  } = e, E = null != (t = (0, h.B4)(c.id)) ? t : c, D = i.useMemo(() => (0, C.xn)(E.config), [E]), O = (0, l.e7)([f.default], () => f.default.getCurrentUser()), [L, R] = function(e) {
+    location: E,
+    sourceQuestContent: P
+  } = e, T = null != (t = (0, h.B4)(c.id)) ? t : c, D = i.useMemo(() => (0, C.xn)(T.config), [T]), O = (0, l.e7)([f.default], () => f.default.getCurrentUser()), [L, R] = function(e) {
     let {
       product: n,
       isFetching: t
@@ -99,29 +99,29 @@ function T(e) {
       return (0, s.si)(), !!(null == t ? true : t.ok)
     };
     return [r, l]
-  }(null != (o = null == D ? true : D.skuId) ? o : null), S = (null == (n = E.userStatus) ? true : n.claimedAt) != null, k = !w && !S, [I, M] = i.useState(k ? "loading" : "claimed");
+  }(null != (o = null == D ? true : D.skuId) ? o : null), S = (null == (n = T.userStatus) ? true : n.claimedAt) != null, k = !w && !S, [I, M] = i.useState(k ? "loading" : "claimed");
   i.useEffect(() => {
-    k && (0, x.QB)(E.id, v.y$.CROSS_PLATFORM, T).then(() => M("claimed")).catch(() => M("error"))
-  }, [E.id, T, k]);
+    k && (0, x.QB)(T.id, v.y$.CROSS_PLATFORM, E).then(() => M("claimed")).catch(() => M("error"))
+  }, [T.id, E, k]);
   let Z = true === w && null === L && (null == D ? true : D.skuId) !== "",
     W = null == O,
-    B = W || null == L && true !== w || Z || "loading" === I,
-    q = "error" === I || null == D,
+    q = W || null == L && true !== w || Z || "loading" === I,
+    B = "error" === I || null == D,
     G = async () => {
       M("applying"), M(await R() ? "applied" : "claimed")
     };
   return (0, r.jsx)(_.Z, {
     onClose: j,
     transitionState: N,
-    quest: E,
-    sourceQuestContent: A,
+    quest: T,
+    sourceQuestContent: P,
     location: b.dr.COLLECTIBLE_REWARD_MODAL,
-    isRewardContentLoading: B,
-    rewardContentHasError: q,
-    rewardContent: q || W ? null : (0, r.jsx)(y.Z, {
+    isRewardContentLoading: q,
+    rewardContentHasError: B,
+    rewardContent: B || W ? null : (0, r.jsx)(y.Z, {
       rewardName: D.messages.name,
-      children: (0, r.jsx)(P, {
-        quest: E,
+      children: (0, r.jsx)(A, {
+        quest: T,
         avatarDeco: L,
         user: O,
         mode: I,
