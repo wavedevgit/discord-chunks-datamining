@@ -50,7 +50,7 @@ let b = () => (0, Chunk951288.jsx)(Chunk796027.Z, {
       children: [(0, r.jsxs)(i.IX, {
         transitionState: t,
         "aria-labelledby": O,
-        size: "xl",
+        size: "xxl",
         onClose: a,
         children: [(0, r.jsx)("div", {
           className: v.closeButton,

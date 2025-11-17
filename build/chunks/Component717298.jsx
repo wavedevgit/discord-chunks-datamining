@@ -6,13 +6,13 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk209739 = require("./209739.js"),
   a = require.n(Chunk209739),
   Chunk990547 = require("./990547.js"),
-  Chunk435935 = require("./435935.jsx"),
   Chunk268146 = require("./268146.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
   Chunk211266 = require("./211266.js"),
@@ -54,35 +54,35 @@ function X(e) {
   let {
     onClose: n,
     transitionState: l,
-    sourceApplication: s,
+    sourceApplication: o,
     analyticsLocations: X = [],
     selectSource: K = true
-  } = e, Y = i.useRef(performance.now()), q = (0, f.e7)([S.Z], () => S.Z.getUseSystemScreensharePicker() && ((0, w.isLinux)() || (0, w.isMac)() && a().satisfies(null === _.Z || true === _.Z ? true : _.Z.os.release, W.jR))), {
+  } = e, Y = i.useRef(performance.now()), q = (0, u.e7)([S.Z], () => S.Z.getUseSystemScreensharePicker() && ((0, w.isLinux)() || (0, w.isMac)() && a().satisfies(null === _.Z || true === _.Z ? true : _.Z.os.release, W.jR))), {
     analyticsLocations: Q
-  } = (0, v.ZP)(X, x.Z.GO_LIVE_MODAL_V2), $ = (0, f.e7)([C.default], () => C.default.getCurrentUser()), ee = (0, N.Z)(), {
+  } = (0, v.ZP)(X, x.Z.GO_LIVE_MODAL_V2), $ = (0, u.e7)([C.default], () => C.default.getCurrentUser()), ee = (0, N.Z)(), {
     state: et,
     dispatch: en
-  } = (0, k.Ti)(s, $, ee), er = (0, m.Z)((0, w.isWindows)() && null != s && K ? "confirm" : "source_select");
+  } = (0, k.Ti)(o, $, ee), er = (0, m.Z)((0, w.isWindows)() && null != o && K ? "confirm" : "source_select");
   (0, H.Z)(q, en, "confirm" === er);
   let ei = !P.ZP.canStreamQuality(P.ZP.StreamQuality.HIGH, $),
     el = !(0, w.isLinux)(),
-    eo = "confirm" === er,
-    es = !K && null != s && !eo,
-    ea = eo || et.sourceType === u.vA.CAMERA,
-    ec = q && et.sourceType !== u.vA.CAMERA,
+    es = "confirm" === er,
+    eo = !K && null != o && !es,
+    ea = es || et.sourceType === d.vA.CAMERA,
+    ec = q && et.sourceType !== d.vA.CAMERA,
     ed = i.useMemo(() => {
       let e = [{
         name: V.intl.string(V.t.tHoi7u),
-        value: u.vA.WINDOW,
+        value: d.vA.WINDOW,
         icon: p.GON
       }, {
         name: V.intl.string(V.t.MhJ43A),
-        value: u.vA.CAMERA,
+        value: d.vA.CAMERA,
         icon: p.Odl
       }];
       return q || e.splice(1, 0, {
         name: V.intl.string(V.t.slM8rG),
-        value: u.vA.SCREEN,
+        value: d.vA.SCREEN,
         icon: p.pzj
       }), e
     }, [q]),
@@ -110,7 +110,7 @@ function X(e) {
   async function ep(e) {
     await (0, g.Z)({
       channelId: e
-    }) && null != s && ef(s)
+    }) && null != o && ef(o)
   }
   let eh = i.useCallback(() => {
     var e;
@@ -123,96 +123,98 @@ function X(e) {
   return (0, r.jsx)(k.Yw, {
     state: et,
     dispatch: en,
-    children: (0, r.jsxs)(p.Y0X, {
-      impression: {
-        impressionName: c.ImpressionNames.GO_LIVE_MODAL,
-        impressionProperties: {
-          location_stack: Q,
-          application_id: (0, w.isWindows)() ? null == (t = (0, I.Z)(j.ZP, O.Z)) ? true : t.id : true,
-          parent_media_session_id: y.Z.getMediaSessionId()
+    children: (0, r.jsx)(p.IX, {
+      transitionState: l,
+      onClose: n,
+      size: "xl",
+      trackingProps: {
+        impression: {
+          impressionName: c.ImpressionNames.GO_LIVE_MODAL,
+          impressionProperties: {
+            location_stack: Q,
+            application_id: (0, w.isWindows)() ? null == (t = (0, I.Z)(j.ZP, O.Z)) ? true : t.id : true,
+            parent_media_session_id: y.Z.getMediaSessionId()
+          }
         }
       },
-      className: o()(J.root, {
-        [J.nativePicker]: q && null == s,
-        [J.channelSelector]: es,
-        [J.confirmStep]: eo
-      }),
-      size: p.CgR.DYNAMIC,
-      transitionState: l,
-      parentComponent: "GoLiveModalV2",
-      children: [es ? (0, r.jsx)(R.Z, {
-        className: o()(J.channelSelectorComponent, J.withFooter),
-        onSelectChannel: ep
-      }) : eo ? (0, r.jsx)(M.Z, {}) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(p.xBx, {
-          separator: false,
-          className: J.header,
-          children: (0, r.jsx)(p.sY7, {
-            className: J.segmentedControl,
-            value: eu,
-            look: "pill",
-            optionClassName: J.segmentedControlOption,
-            onChange: e => {
-              let {
-                value: t
-              } = e;
-              return en({
-                type: "set_source_type",
-                sourceType: t
-              })
-            },
-            options: ed
-          })
-        }), (0, r.jsx)(p.hzk, {
-          className: J.content,
-          children: q && eu !== u.vA.CAMERA ? (0, r.jsx)(D.Z, {
-            onSourceSelect: eh
-          }) : (0, r.jsx)(B.Z, {
-            onClick: function(e) {
-              var t;
-              (null == (t = e.id) ? true : t.startsWith(u.vA.CAMERA)) ? en({
-                type: "set_selected_source",
-                source: e
-              }): ef(e)
-            }
-          })
-        })]
-      }), (0, r.jsxs)(p.mzw, {
-        className: o()(J.footer, {
-          [J.footerShadow]: !ei && eo
+      children: (0, r.jsxs)("div", {
+        className: s()(J.root, {
+          [J.nativePicker]: q && null == o,
+          [J.channelSelector]: eo,
+          [J.confirmStep]: es
         }),
-        separator: false,
-        direction: d.k.Direction.VERTICAL,
-        children: [(0, r.jsxs)("div", {
-          className: J.footerContent,
-          children: [(0, r.jsx)(F.Z, {}), (0, r.jsxs)("div", {
-            className: J.rightButtonGroup,
-            children: [ei && (0, r.jsx)(G.Z, {
-              onClose: n
-            }), ec && !ea && (0, r.jsx)(A.Z, {
-              mainCTADisabled: !el && "" === et.nativeSourceType,
-              mainCTAOnClick: () => {
-                (0, T.t)(), (0, T.T)(et.nativeSourceType)
+        children: [eo ? (0, r.jsx)(A.Z, {
+          className: s()(J.channelSelectorComponent, J.withFooter),
+          onSelectChannel: ep
+        }) : es ? (0, r.jsx)(M.Z, {}) : (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)("div", {
+            className: J.header,
+            children: (0, r.jsx)(p.sY7, {
+              className: J.segmentedControl,
+              value: eu,
+              look: "pill",
+              optionClassName: J.segmentedControlOption,
+              onChange: e => {
+                let {
+                  value: t
+                } = e;
+                return en({
+                  type: "set_source_type",
+                  sourceType: t
+                })
               },
-              align: "right",
-              ctaText: V.intl.string(V.t.FiBjwU),
-              hideOptionsButton: !ei
-            }), ea && !ec && (0, r.jsx)(A.Z, {
-              mainCTADisabled: null == et.selectedSource,
-              mainCTAOnClick: () => {
-                null != et.selectedChannel ? ep(et.selectedChannel) : null != et.selectedSource && ef(et.selectedSource)
-              },
-              align: "right",
-              hideOptionsButton: !ei,
-              ctaText: V.intl.string(z.default["5AyH/p"])
-            }), (!ei || !(ea || ec)) && (0, r.jsx)(L.Z, {
-              align: "right"
-            })]
+              options: ed
+            })
+          }), (0, r.jsx)(f.w0Z, {
+            className: J.content,
+            children: q && eu !== d.vA.CAMERA ? (0, r.jsx)(D.Z, {
+              onSourceSelect: eh
+            }) : (0, r.jsx)(B.Z, {
+              onClick: function(e) {
+                var t;
+                (null == (t = e.id) ? true : t.startsWith(d.vA.CAMERA)) ? en({
+                  type: "set_selected_source",
+                  source: e
+                }): ef(e)
+              }
+            })
           })]
-        }), ei && (0, r.jsx)(U.Z, {
-          onClose: n
+        }), (0, r.jsxs)("div", {
+          className: J.footer,
+          children: [(0, r.jsxs)("div", {
+            className: J.footerContent,
+            children: [(0, r.jsx)(F.Z, {}), (0, r.jsxs)("div", {
+              className: J.rightButtonGroup,
+              children: [ei && (0, r.jsx)(G.Z, {
+                onClose: n
+              }), ec && !ea && (0, r.jsx)(R.Z, {
+                mainCTADisabled: !el && "" === et.nativeSourceType,
+                mainCTAOnClick: () => {
+                  (0, T.t)(), (0, T.T)(et.nativeSourceType)
+                },
+                align: "right",
+                ctaText: V.intl.string(V.t.FiBjwU),
+                hideOptionsButton: !ei
+              }), ea && !ec && (0, r.jsx)(R.Z, {
+                mainCTADisabled: null == et.selectedSource,
+                mainCTAOnClick: () => {
+                  null != et.selectedChannel ? ep(et.selectedChannel) : null != et.selectedSource && ef(et.selectedSource)
+                },
+                align: "right",
+                hideOptionsButton: !ei,
+                ctaText: V.intl.string(z.default["5AyH/p"])
+              }), (!ei || !(ea || ec)) && (0, r.jsx)(L.Z, {
+                align: "right"
+              })]
+            })]
+          }), ei && (0, r.jsx)("div", {
+            className: J.upsellRibbonContainer,
+            children: (0, r.jsx)(U.Z, {
+              onClose: n
+            })
+          })]
         })]
-      })]
+      })
     })
   })
 }

@@ -50,11 +50,13 @@ function m(e) {
       onContextMenu: e.handleContextMenu,
       className: null != e.handleClick ? g.cursorPointer : null,
       children: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(o.jSM, {
+        children: [(0, r.jsx)(l.u, {
           text: O,
           position: "bottom",
-          className: v,
-          children: null != y ? y : p.ZP.getName(m)
+          children: (0, r.jsx)("span", {
+            className: v,
+            children: null != y ? y : p.ZP.getName(m)
+          })
         }), j && (0, r.jsx)(l.u, {
           text: h.intl.string(h.t.QyZ4Td),
           children: (0, r.jsx)(o.tQf, {

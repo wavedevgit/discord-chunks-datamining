@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk209739 = require("./209739.js"),
   a = require.n(Chunk209739),
   Chunk268146 = require("./268146.js"),
@@ -53,11 +53,11 @@ function Z(e) {
     onClick: i
   } = e, {
     url: l,
-    name: s
+    name: o
   } = t;
   return (0, r.jsxs)(u.P3F, {
     onClick: () => i(t),
-    className: o()(P.source, {
+    className: s()(P.source, {
       [P.selectedSource]: n
     }),
     children: [(0, r.jsx)("div", {
@@ -87,7 +87,7 @@ function Z(e) {
       }), (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
         className: P.sourceName,
-        children: s
+        children: o
       })]
     })]
   })
@@ -99,8 +99,8 @@ function I(e) {
   } = e, [{
     windowSources: n,
     deviceSources: l,
-    screenSources: o,
-    sourceType: s,
+    screenSources: s,
+    sourceType: o,
     fetchingSources: g,
     selectedSource: O,
     discordSourceId: T,
@@ -109,14 +109,14 @@ function I(e) {
     smarterSourceOrdering: N
   } = (0, j.E)({
     location: "GoLiveSourceGrid"
-  }), A = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), R = (0, d.cj)([p.ZP], () => {
+  }), R = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), A = (0, d.cj)([p.ZP], () => {
     let e = p.ZP.getCandidateGames(),
       t = {};
     for (let n of e) null != n.windowHandle && (t[n.windowHandle] = n.exeName);
     return t
-  }), M = (0, d.e7)([_.Z], () => _.Z.quests), k = (0, S.jx)(M, A, n);
+  }), M = (0, d.e7)([_.Z], () => _.Z.quests), k = (0, S.jx)(M, R, n);
   i.useEffect(() => ((0, h.Ky)(), h.P7), []);
-  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, S.ov)(t, null == k ? true : k.source.id, T, R) - (0, S.ov)(e, null == k ? true : k.source.id, T, R)) : n, [k, N, n, T, R]);
+  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, S.ov)(t, null == k ? true : k.source.id, T, A) - (0, S.ov)(e, null == k ? true : k.source.id, T, A)) : n, [k, N, n, T, A]);
   if (g) {
     if (false === I) {
       let e = false;
@@ -146,7 +146,7 @@ function I(e) {
     })
   }
   let G = [];
-  return (G = s === c.vA.WINDOW ? D : s === c.vA.SCREEN ? o : l, s === c.vA.CAMERA && 0 === G.length) ? (0, r.jsx)(E, {}) : (0, r.jsx)("div", {
+  return (G = o === c.vA.WINDOW ? D : o === c.vA.SCREEN ? s : l, o === c.vA.CAMERA && 0 === G.length) ? (0, r.jsx)(E, {}) : (0, r.jsx)("div", {
     className: P.root,
     children: G.map(e => (0, r.jsx)(Z, {
       onClick: t,

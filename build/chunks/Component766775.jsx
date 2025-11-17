@@ -28,7 +28,7 @@ function h(e) {
   return (0, a.jsxs)(r.IX, {
     transitionState: n,
     onClose: i,
-    size: "xl",
+    size: "xxl",
     "aria-labelledby": u,
     children: [(0, a.jsxs)("div", {
       className: f.modalContainer,

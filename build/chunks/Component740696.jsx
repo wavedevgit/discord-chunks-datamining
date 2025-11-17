@@ -84,7 +84,7 @@ function f(t) {
     }
   }), (0, a.jsxs)(i.IX, {
     transitionState: v,
-    size: "xl",
+    size: "xxl",
     onClose: async () => await j(),
     children: [(0, a.jsx)(i.xBx, {
       title: x.intl.string(x.t["6S6WCQ"]),

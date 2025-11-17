@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk812652 = require("./812652.jsx"),
@@ -22,9 +22,9 @@ function u(e) {
   } = e, p = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: d.root,
-    children: [(0, r.jsx)(s.zx, {
-      size: s.zx.Sizes.LARGE,
-      className: o()(d.streamButton, {
+    children: [(0, r.jsx)(o.zx, {
+      size: o.zx.Sizes.LARGE,
+      className: s()(d.streamButton, {
         [d.withOptions]: !f
       }),
       disabled: t,
@@ -45,7 +45,7 @@ function u(e) {
       },
       children: e => {
         var t, n;
-        return (0, r.jsx)(s.zx, (t = function(e) {
+        return (0, r.jsx)(o.zx, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -63,7 +63,7 @@ function u(e) {
           }
           return e
         }({
-          size: s.zx.Sizes.LARGE,
+          size: o.zx.Sizes.LARGE,
           className: d.optionsButton,
           buttonRef: p
         }, e), n = n = {

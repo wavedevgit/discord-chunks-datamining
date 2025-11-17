@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk856901 = require("./856901.js"),
   Chunk268146 = require("./268146.js"),
   Chunk442837 = require("./442837.js"),
@@ -132,7 +132,7 @@ function C(e, t) {
         }),
         c = null == i ? true : i.name;
       if (null != i && (null == (n = i.id) ? true : n.startsWith(a.vA.CAMERA)) && null != c) {
-        let e = o().maxBy(Object.values(h.Z.getInputDevices()), e => (0, s.default)(c, e.name));
+        let e = s().maxBy(Object.values(h.Z.getInputDevices()), e => (0, o.default)(c, e.name));
         l.audioSourceId = null != (r = null == e ? true : e.id) ? r : h.Z.getInputDeviceId()
       }
       return l
@@ -172,8 +172,8 @@ function O(e) {
 function w(e, t, n) {
   var r, l;
   let {
-    defaultAutoQuality: o,
-    allowAutoQuality: s
+    defaultAutoQuality: s,
+    allowAutoQuality: o
   } = (0, m._I)({
     location: "useCreateGoLiveModalState"
   }), {
@@ -182,11 +182,11 @@ function w(e, t, n) {
     fps: y,
     soundshareEnabled: O
   } = (0, c.cj)([p.Z], () => p.Z.getState());
-  o && (a = g.ApplicationStreamPresets.PRESET_AUTO);
+  s && (a = g.ApplicationStreamPresets.PRESET_AUTO);
   let w = (0, c.e7)([h.Z], () => h.Z.getInputDeviceId()),
     P = null != (r = f.I0.useSetting()) && r,
     T = null != (l = f.eo.useSetting()) && l;
-  a in g.ApplicationStreamPresets && (a !== g.ApplicationStreamPresets.PRESET_AUTO || s) || (a = g.ApplicationStreamPresets.PRESET_VIDEO), (0, _.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, S, y, t, n) || (S = g.ApplicationStreamResolutions.RESOLUTION_720, y = g.ApplicationStreamFPS.FPS_30);
+  a in g.ApplicationStreamPresets && (a !== g.ApplicationStreamPresets.PRESET_AUTO || o) || (a = g.ApplicationStreamPresets.PRESET_VIDEO), (0, _.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, S, y, t, n) || (S = g.ApplicationStreamResolutions.RESOLUTION_720, y = g.ApplicationStreamFPS.FPS_30);
   let [Z, I] = i.useReducer(C, j(v({}, b), {
     muteStreamAudio: !O,
     preset: a,

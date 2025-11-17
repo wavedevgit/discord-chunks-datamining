@@ -11,8 +11,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk537413 = require("./537413.js");
 
 function c(e) {
-  let t = (0, r.e7)([s.default], () => s.default.getCurrentUser()),
-    n = (0, r.e7)([o.Z, i.Z], () => i.Z.getChannel(o.Z.getVoiceChannelId())),
+  let t = (0, r.e7)([o.default], () => o.default.getCurrentUser()),
+    n = (0, r.e7)([s.Z, i.Z], () => i.Z.getChannel(s.Z.getVoiceChannelId())),
     c = null == n ? true : n.getGuildId(),
     d = (0, r.e7)([l.Z], () => {
       var e;

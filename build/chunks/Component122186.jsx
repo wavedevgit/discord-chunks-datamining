@@ -1,7 +1,7 @@
 /** Chunk was on 4093 **/
 /** chunk id: 122186, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => N,
+  Z: () => S,
   c: () => Z
 });
 var Chunk951288 = require("./951288.js"),
@@ -98,7 +98,7 @@ function Z() {
   })
 }
 
-function N(e) {
+function S(e) {
   let {
     message: n,
     onClose: t,

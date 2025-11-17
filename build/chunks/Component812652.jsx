@@ -79,13 +79,13 @@ function P(e) {
     muteStreamAudio: I,
     preset: E,
     resolution: N,
-    fps: A,
-    sourceType: R,
+    fps: R,
+    sourceType: A,
     selectedChannel: M
-  }, k] = (0, m.E_)(), D = !(0, d.$s)(M, "StreamOptionsMenu"), B = (0, h.Z)(), [L, G] = null != (t = (0, g.Z)(x.ApplicationStreamPresets.PRESET_VIDEO)) ? t : [x.ApplicationStreamResolutions.RESOLUTION_720, x.ApplicationStreamFPS.FPS_30], [U, F] = null != (n = (0, g.Z)(x.ApplicationStreamPresets.PRESET_DOCUMENTS)) ? n : [x.ApplicationStreamResolutions.RESOLUTION_SOURCE, x.ApplicationStreamFPS.FPS_15], H = (0, s.M)({
+  }, k] = (0, m.E_)(), D = !(0, d.$s)(M, "StreamOptionsMenu"), B = (0, h.Z)(), [L, G] = null != (t = (0, g.Z)(x.ApplicationStreamPresets.PRESET_VIDEO)) ? t : [x.ApplicationStreamResolutions.RESOLUTION_720, x.ApplicationStreamFPS.FPS_30], [U, F] = null != (n = (0, g.Z)(x.ApplicationStreamPresets.PRESET_DOCUMENTS)) ? n : [x.ApplicationStreamResolutions.RESOLUTION_SOURCE, x.ApplicationStreamFPS.FPS_15], H = (0, o.M)({
     deviceType: v.h7.AUDIO_INPUT,
     selectedDeviceId: P,
-    analyticsLocations: [o.Z.GO_LIVE_MODAL_SETTINGS_SELECTION],
+    analyticsLocations: [s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION],
     asSubmenu: true,
     onDeviceSelect: e => (k({
       type: "set_audio_source",
@@ -112,7 +112,7 @@ function P(e) {
         let {
           canUse: t
         } = e;
-        return t(R)
+        return t(A)
       }).map(e => {
         let {
           value: t
@@ -156,7 +156,7 @@ function P(e) {
           let {
             canUse: t
           } = e;
-          return t(R)
+          return t(A)
         }).map(e => {
           let {
             value: t
@@ -169,8 +169,8 @@ function P(e) {
               label: (0, p.M)(t)
             }) : (0, p.M)(t),
             action: () => (function(e) {
-              if (!(0, u.Z)(E, e, A, a.default.getCurrentUser(), B)) return c(), (0, _.E)({
-                analyticsLocation: o.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
+              if (!(0, u.Z)(E, e, R, a.default.getCurrentUser(), B)) return c(), (0, _.E)({
+                analyticsLocation: s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
               });
               k({
                 type: "set_resolution",
@@ -185,13 +185,13 @@ function P(e) {
         children: O.map(e => (0, r.jsx)(l.k5B, {
           group: "frame-rate",
           id: "stream-option-frame-rate-".concat(e),
-          checked: A === e,
+          checked: R === e,
           label: e === x.ApplicationStreamFPS.FPS_60 ? (0, r.jsx)(w, {
             label: "".concat(e, "fps")
           }) : "".concat(e, "fps"),
           action: () => (function(e) {
             if (!(0, u.Z)(E, N, e, a.default.getCurrentUser(), B)) return c(), (0, _.E)({
-              analyticsLocation: o.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
+              analyticsLocation: s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
             });
             k({
               type: "set_fps",
@@ -208,7 +208,7 @@ function P(e) {
         type: "set_mute_audio",
         value: !I
       })
-    }), R === i.vA.CAMERA && H, (0, r.jsxs)(l.sNh, {
+    }), A === i.vA.CAMERA && H, (0, r.jsxs)(l.sNh, {
       id: "advanced-items",
       label: b.intl.string(j.default.eYyK1v),
       children: [(0, r.jsx)(l.S89, {

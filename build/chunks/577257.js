@@ -14,33 +14,33 @@ let c = [Chunk268146.vA.CAMERA],
 
 function u(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    i = (0, l.e7)([s.ZP], () => s.ZP.getRunningGames().length > 0),
+    i = (0, l.e7)([o.ZP], () => o.ZP.getRunningGames().length > 0),
     u = r.useRef(0),
     f = i ? 2e3 : 1e3,
-    p = r.useRef(new o.V7);
+    p = r.useRef(new s.V7);
   r.useEffect(() => {
     if (n) return;
     let r = p.current,
       i = u.current,
       l = {
-        width: 376,
-        height: 212,
+        width: 447,
+        height: 251,
         types: e ? c : d
       };
-    async function o() {
+    async function s() {
       let {
         screenSources: e,
         windowSources: n,
-        cameraSources: s
+        cameraSources: o
       } = await (0, a.t)(l);
       u.current > i || (t({
         type: "set_source_candidates",
         screenSources: e,
         windowSources: n,
-        deviceSources: s
-      }), r.start(f, o))
+        deviceSources: o
+      }), r.start(f, s))
     }
-    return o(), () => {
+    return s(), () => {
       u.current += 1, r.stop()
     }
   }, [t, f, e, n])

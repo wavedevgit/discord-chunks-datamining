@@ -29,17 +29,17 @@ function Z(e) {
   } = e;
   s()(null != n, "Camera capture device cannot be null");
   let a = (0, g.Z)(),
-    [Z, N] = (0, m.Ls)(h.h7.AUDIO_INPUT, {
+    [Z, S] = (0, m.Ls)(h.h7.AUDIO_INPUT, {
       location: "CaptureDeviceConfig"
     }),
-    S = Z.concat(N),
+    N = Z.concat(S),
     [b, C] = r.useState(function(e, n, t) {
       var l;
       let r = n.find(n => n.id === e);
       if (null == r) return null;
       let i = c().reduce(t, (e, n) => (0, o.stringSimilarity)(r.name, n.name) > (0, o.stringSimilarity)(r.name, e.name) ? n : e);
       return null != (l = null == i ? true : i.id) ? l : null
-    }(n.id, a, S));
+    }(n.id, a, N));
   return null != b && i(b), (0, l.jsxs)("div", {
     className: p.modalContent,
     children: [(0, l.jsx)(u.Heading, {

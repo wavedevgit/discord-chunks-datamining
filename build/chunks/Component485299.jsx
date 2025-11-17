@@ -23,16 +23,16 @@ function u() {
         "url" in module && require(module.url);
         return
       }(0, Chunk59468.t)({
-        width: 800,
-        height: 451,
+        width: 960,
+        height: 540,
         types: [Chunk268146.vA.SCREEN, Chunk268146.vA.WINDOW]
       }).then(t => {
         var r;
         let {
           screenSources: i,
           windowSources: l
-        } = t, o = null != (r = l.find(t => "windowHandle" in e ? (0, s.Z)(t.id, e.windowHandle) : t.id === e.id)) ? r : i.find(t => e.id === t.id);
-        null != o && n(o.url)
+        } = t, s = null != (r = l.find(t => "windowHandle" in e ? (0, o.Z)(t.id, e.windowHandle) : t.id === e.id)) ? r : i.find(t => e.id === t.id);
+        null != s && n(s.url)
       })
     }
   }, [module]), (0, Chunk951288.jsx)("div", {

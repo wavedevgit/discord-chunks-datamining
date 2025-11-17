@@ -75,7 +75,7 @@ function v(t) {
     transitionState: i,
     "aria-label": T,
     onClose: e,
-    size: "xl",
+    size: "xxl",
     children: [(0, n.jsx)(s.xBx, {
       leading: A,
       title: T,
