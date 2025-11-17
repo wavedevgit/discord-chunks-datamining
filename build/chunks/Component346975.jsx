@@ -498,11 +498,11 @@ function eO(e) {
   }), e3 = i.useRef(null), {
     updateMasonryListScrollerRef: e1,
     getItemKey: e6,
-    renderGridSection: e4,
-    renderGridItem: e8,
+    renderGridSection: e8,
+    renderGridItem: e4,
     getGridSectionHeight: e9,
-    getSectionProps: e5,
-    handleGridFocus: e2
+    getSectionProps: e2,
+    handleGridFocus: e5
   } = function(e) {
     let {
       masonryListScrollerRef: t,
@@ -656,7 +656,7 @@ function eO(e) {
     tn = (0, em.ZP)({
       id: "forum-grid-view",
       isEnabled: eo && te && !tt,
-      setFocus: e2
+      setFocus: e5
     }),
     tr = (0, eh.Z)({
       listRef: ea,
@@ -712,9 +712,9 @@ function eO(e) {
             getItemKey: e6,
             getSectionHeight: e9,
             getItemHeight: ti,
-            renderSection: e4,
-            renderItem: e8,
-            getSectionProps: e5,
+            renderSection: e8,
+            renderItem: e4,
+            getSectionProps: e2,
             onScroll: j ? e7 : true,
             chunkSize: 350
           }, ts, e), A)

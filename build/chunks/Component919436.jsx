@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk636606 = require("./636606.js"),
+  Chunk878342 = require("./878342.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -184,7 +184,7 @@ class A extends(r = Chunk473749.PureComponent) {
         "aria-hidden": true
       }) : true
     }, Chunk43267));
-    return (0, Chunk54381.jsx)(Chunk636606.animated.div, {
+    return (0, Chunk54381.jsx)(Chunk878342.animated.div, {
       style: this.getAnimatedStyle(),
       children: (0, Chunk54381.jsxs)(Chunk682662.H, {
         children: [(0, Chunk54381.jsx)(Chunk276952.Z, {

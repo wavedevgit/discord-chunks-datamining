@@ -49,13 +49,13 @@ function j(e) {
     item: I,
     isOwner: P,
     giftingOrigin: N = _.Wt.USER_PROFILE_WISHLIST
-  } = S, Z = I.sku, w = Z.applicationId, T = (0, c.q)(w), A = i.useRef(null), R = (0, l.e7)([p.Z], () => null != j && p.Z.hasSentGift(I.skuId, j.id), [I.skuId, j]), D = I.skuName, {
-    buttonCTALabel: L,
-    buttonIcon: M,
-    handleCardClick: k
+  } = S, Z = I.sku, w = Z.applicationId, T = (0, c.q)(w), A = i.useRef(null), R = (0, l.e7)([p.Z], () => null != j && p.Z.hasSentGift(I.skuId, j.id), [I.skuId, j]), D = R || true === I.isOwned, L = I.skuName, {
+    buttonCTALabel: M,
+    buttonIcon: k,
+    handleCardClick: G
   } = i.useMemo(() => {
     var e, t, n, r, i, l, o, c;
-    return P ? {
+    return P || D ? {
       buttonCTALabel: C ? (0, f.T4)(null != (i = null == (n = Z.price) ? true : n.amount) ? i : 0, null != (l = null == (r = Z.price) ? true : r.currency) ? l : y.pK.USD) : O.intl.string(O.t.FdGl5A),
       buttonIcon: true,
       handleCardClick: () => {
@@ -79,7 +79,7 @@ function j(e) {
         }))
       }
     }
-  }, [C, Z, j, R, N, T, x, P]), G = i.useCallback(() => E ? (0, r.jsx)("div", {
+  }, [P, D, C, Z, x, T, R, j, N]), U = i.useCallback(() => E ? (0, r.jsx)("div", {
     className: v.itemIcon,
     children: (0, r.jsx)(o.u, {
       text: O.intl.formatToPlainString(O.t.p3RmJF, {
@@ -94,7 +94,7 @@ function j(e) {
         colorClass: v.itemIconHeart
       })
     })
-  }) : null, [E, j]), U = i.useCallback(() => (0, r.jsx)(b.A, {
+  }) : null, [E, j]), B = i.useCallback(() => (0, r.jsx)(b.A, {
     shape: "custom",
     containerClassName: v.card,
     backgroundImageClassName: v.cardBackgroundImage,
@@ -120,13 +120,13 @@ function j(e) {
     return e
   }({}, S), n = n = {
     cardRef: A,
-    accessibleLabel: D,
-    onCardClick: k,
-    buttonCTALabel: L,
-    buttonIcon: M,
-    isOwned: R,
-    renderItemPreview: U,
-    renderSourceIcon: G
+    accessibleLabel: L,
+    onCardClick: G,
+    buttonCTALabel: M,
+    buttonIcon: k,
+    isOwned: D,
+    renderItemPreview: B,
+    renderSourceIcon: U
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

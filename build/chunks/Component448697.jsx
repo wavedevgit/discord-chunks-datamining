@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  Chunk636606 = require("./636606.js"),
+  Chunk878342 = require("./878342.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk709706 = require("./709706.js"),
@@ -42,7 +42,7 @@ function f() {
       });
     return {
       hasActiveDownloads: Chunk54381,
-      progress: 0 === Chunk481060 ? 0 : Math.floor(Chunk636606 / Chunk481060 * 100)
+      progress: 0 === Chunk481060 ? 0 : Math.floor(Chunk878342 / Chunk481060 * 100)
     }
   }(), {
     activeVoice: n
