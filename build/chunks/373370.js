@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   CR: () => j,
-  DD: () => L
+  DD: () => x
 }), require("./953529.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -339,7 +339,7 @@ function w(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   var t;
   return w(y(E({}, e), {
     currentUser: null != (t = e.currentUser) ? t : a.default.getCurrentUser(),
@@ -349,7 +349,7 @@ function x(e) {
   }))
 }
 
-function L(e) {
+function x(e) {
   let {
     quest: t,
     questContent: n,
@@ -359,7 +359,7 @@ function L(e) {
     questContent: n,
     sourceQuestContent: r
   }), s = (0, i.e7)([a.default], () => a.default.getCurrentUser()), l = (0, c.Jf)(t);
-  return x(y(E({}, e), {
+  return L(y(E({}, e), {
     connectedConsoleLinkOnClick: o,
     currentUser: s,
     withoutMarkdown: false,

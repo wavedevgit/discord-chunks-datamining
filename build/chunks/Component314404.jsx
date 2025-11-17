@@ -202,8 +202,8 @@ function J(e) {
       excludeReverseTrialFromCountdown: true
     }),
     ew = null != eI && B.nG[eI.trial_id].skus.includes(k),
-    ex = null != eS && J.some(e => null == eC ? true : eC.includes(e)) && null != eS.discount,
-    eL = (0, v.aS)(B.Xh.PREMIUM_MONTH_TIER_2, false, ef, eP);
+    eL = null != eS && J.some(e => null == eC ? true : eC.includes(e)) && null != eS.discount,
+    ex = (0, v.aS)(B.Xh.PREMIUM_MONTH_TIER_2, false, ef, eP);
   i.useEffect(() => {
     $ && S.ZP.trackExposure({
       location: "5f89bb_1"
@@ -233,7 +233,7 @@ function J(e) {
     eZ = "HR" === eB && null != eG && eG.currency === F.pK.EUR,
     eF = (0, v.Ap)(eP.paymentSourceId),
     eV = i.useMemo(() => (null == eT ? true : eT.interval) === B.rV.DAY ? (null == eT ? true : eT.interval_count) > 7 ? V.intl.string(V.t.Z1V2cs) : V.intl.string(V.t.MI1rHs) : V.intl.string(V.t["+S5lrV"]), [eT]),
-    eH = !ef && (ex || null != eT && ew && null != et),
+    eH = !ef && (eL || null != eT && ew && null != et),
     eY = null == er || null == (m = er.find(e => e.subscriptionPlanId === B.Xh.PREMIUM_MONTH_TIER_2)) || null == (a = m.discounts) || null == (n = a.find(e => e.type === d.eW.SUBSCRIPTION_PLAN)) ? true : n.amount,
     eW = (e, t, n) => {
       if (!eH) return (0, r.jsx)("div", {
@@ -257,7 +257,7 @@ function J(e) {
           })]
         })
       }
-      if (n && null != eY && null != eL && j === B.Xh.PREMIUM_MONTH_TIER_2) {
+      if (n && null != eY && null != ex && j === B.Xh.PREMIUM_MONTH_TIER_2) {
         var i;
         return (0, r.jsxs)("div", {
           children: [(0, r.jsx)(c.Text, {
@@ -265,8 +265,8 @@ function J(e) {
             className: H.trialPlanSelectHeader,
             children: V.intl.format(V.t["nG7g/E"], {
               numMonths: null != (i = null == eS ? true : eS.discount.user_usage_limit) ? i : "",
-              discountedPrice: (0, I.T4)(eL.amount - eY, eL.currency),
-              regularPrice: (0, I.T4)(eL.amount, eL.currency)
+              discountedPrice: (0, I.T4)(ex.amount - eY, ex.currency),
+              regularPrice: (0, I.T4)(ex.amount, ex.currency)
             })
           }), (0, r.jsx)("hr", {
             className: H.planSelectSeparator
@@ -299,7 +299,7 @@ function J(e) {
         selected: (null == eN ? true : eN.id) === e,
         priceOptions: eP,
         shouldShowUpdatedPaymentModal: eH,
-        isEligibleForDiscount: ex,
+        isEligibleForDiscount: eL,
         discountAmountOff: eY,
         isEligibleForTrial: ew
       }, e))
@@ -313,7 +313,7 @@ function J(e) {
     eQ = eD.isFractionalPremiumActive && (null == b || eX) && !ef && null != j && B.dJ.has(j);
   if (ef) {
     let e = () => {
-        if ((0, y.MY)(e_) === y.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != em) return (0, r.jsx)(L.Z, {
+        if ((0, y.MY)(e_) === y.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != em) return (0, r.jsx)(x.Z, {
           sectionTitle: V.intl.string(V.t.B3miE8),
           className: H.customGiftMessageWrapper,
           innerClassName: H.customGiftMessage,
@@ -352,16 +352,16 @@ function J(e) {
       })]
     })
   }
-  let eJ = !ew && !ex && eM && en;
+  let eJ = !ew && !eL && eM && en;
   return (0, r.jsxs)("div", {
     className: H.stepBody,
-    children: [eQ && (0, r.jsx)(x.n, {
+    children: [eQ && (0, r.jsx)(L.n, {
       fractionalPremiumInfo: eD,
       enablePremiumBrandRefresh: ed
     }), null != eO && !eQ && !eA && (0, r.jsx)("div", {
       className: H.bodyText,
       children: Q(eO, k)
-    }), eW(eI, ew, ex), ez(), eJ && null != eN && null != eG && eK(eN, eG, eN.interval), eq(), !eH && en && (0, r.jsx)(u.Z, {
+    }), eW(eI, ew, eL), ez(), eJ && null != eN && null != eG && eK(eN, eG, eN.interval), eq(), !eH && en && (0, r.jsx)(u.Z, {
       message: V.intl.format(V.t.Om31w8, {
         documentationLink: O.Z.getArticleURL(Z.BhN.LOCALIZED_PRICING)
       })

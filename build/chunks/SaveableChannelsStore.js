@@ -111,8 +111,8 @@ class S extends Chunk750041.Z {
       CHANNEL_DELETE: P,
       CHANNEL_UPDATES: R,
       CONNECTION_OPEN_SUPPLEMENTAL: C,
-      GUILD_DELETE: x,
-      LOGIN_SUCCESS: L,
+      GUILD_DELETE: L,
+      LOGIN_SUCCESS: x,
       THREAD_DELETE: w,
       THREAD_UPDATE: D
     })
@@ -151,11 +151,11 @@ function w(e) {
   S.deleteChannel(e.channel.id)
 }
 
-function x(e) {
+function L(e) {
   return !e.guild.unavailable && (S.deleteGuild(e.guild.id), true)
 }
 
-function L(e) {
+function x(e) {
   v.clear(), I.clear(), T = false
 }
 

@@ -54,7 +54,7 @@ function w(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     onClick: t
   } = e;
@@ -64,7 +64,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   switch (e) {
     case A.pNK.INTEGRATIONS:
       return P.intl.string(P.t.k7LGdh);
@@ -97,7 +97,7 @@ function k() {
       isServerShopPreview: null != exports && Chunk160404.Z.isViewingServerShop(exports)
     }));
   if (null == Chunk120356 || null == exports) return null;
-  let k = L(o),
+  let k = x(o),
     j = M(o),
     U = require === Chunk176505.oC.GUILD_ONBOARDING,
     G = e => {
@@ -174,7 +174,7 @@ function k() {
           color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
         })
       })]
-    }), Chunk755721 || o === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? null : (0, Chunk54381.jsx)(x, {
+    }), Chunk755721 || o === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? null : (0, Chunk54381.jsx)(L, {
       onClick: () => G({
         backToSettings: false
       })

@@ -2,7 +2,7 @@
 /** chunk id: 549817, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./472816.js"), require("./794429.js"), require("./415506.js"), require("./388685.js"), require("./997841.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -129,7 +129,7 @@ function w(e, t, n) {
     removedRoleIds: n
   })
 }
-let x = {
+let L = {
   selectOption(e, t, n, r) {
     let a = O.Z.getOnboardingPrompt(t);
     if (null == a) return;
@@ -156,9 +156,9 @@ let x = {
       C = b.map(e => _.Z.getChannel(e)).filter(E.lm),
       R = (0, I.v)(e, new Set(b), C, true).length,
       w = null == n ? [] : n.options.map(e => e.id),
-      x = O.Z.getConnections(e),
-      L = (0, v.OZ)(x),
-      M = (0, v.N4)(x);
+      L = O.Z.getConnections(e),
+      x = (0, v.OZ)(L),
+      M = (0, v.N4)(L);
     if (m.default.track(T.rMx.GUILD_ONBOARDING_STEP_COMPLETED, P(N({}, (0, l.hH)(e)), {
         step: t.length - 1,
         options_selected: null == n ? 0 : r.filter(e => w.includes(e.id)).length,
@@ -170,8 +170,8 @@ let x = {
         channels_granted: R,
         guild_onboarding_covered_channel_ids: c.map(e => e.id),
         guild_onboarding_uncovered_channel_ids: f.map(e => e.id),
-        provider_connections_connected: L.connected,
-        provider_connections_not_connected: L.notConnected,
+        provider_connections_connected: x.connected,
+        provider_connections_not_connected: x.notConnected,
         application_connections_connected: M.connected,
         application_connections_not_connected: M.notConnected
       })), (0, s.Ju)(e, A.W.GUILD_ONBOARDING_QUESTION, y.default.fromTimestamp(Date.now())), D(e, true), d.Z.isFullServerPreview(e)) {

@@ -45,9 +45,9 @@ function I(e) {
     isDisplayingWowMomentConfirmation: D
   } = (0, m.JL)(), {
     isGift: w,
-    selectedGiftStyle: x,
-    giftRecipient: L
-  } = (0, h.wD)(), M = (null == R ? true : R.productLine) === E.POd.COLLECTIBLES, k = (null == R ? true : R.productLine) === E.POd.SOCIAL_LAYER_GAME_ITEM, j = w && (0, p.pO)(L) && S === g.h8.CONFIRM && null != x && !M && !k, U = null != n && null != S, G = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], B = null != S && !G.includes(S) && null != T, Z = (0, u.N)(a), F = !w && null != Z && null != T && b.nG[Z.trial_id].skus.includes(T), V = (0, c.N)(), H = null == V || null == (t = V.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === T), Y = !w && null != V && null != T && H;
+    selectedGiftStyle: L,
+    giftRecipient: x
+  } = (0, h.wD)(), M = (null == R ? true : R.productLine) === E.POd.COLLECTIBLES, k = (null == R ? true : R.productLine) === E.POd.SOCIAL_LAYER_GAME_ITEM, j = w && (0, p.pO)(x) && S === g.h8.CONFIRM && null != L && !M && !k, U = null != n && null != S, G = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], B = null != S && !G.includes(S) && null != T, Z = (0, u.N)(a), F = !w && null != Z && null != T && b.nG[Z.trial_id].skus.includes(T), V = (0, c.N)(), H = null == V || null == (t = V.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === T), Y = !w && null != V && null != T && H;
   return i.useMemo(() => {
     if (null == S) return;
     let e = null;
@@ -55,7 +55,7 @@ function I(e) {
       className: O.container,
       children: [(0, r.jsx)(d.Z, {
         defaultAnimationState: l.SR.LOOP,
-        giftStyle: x,
+        giftStyle: L,
         className: O.seasonalGiftBoxHeaderIcon
       }), (0, r.jsx)(s.olH, {
         onClick: I,
@@ -73,10 +73,10 @@ function I(e) {
       showTrialBadge: F,
       showDiscountBadge: Y,
       isGift: w,
-      giftRecipient: L,
+      giftRecipient: x,
       isEligibleForTrial: F,
       enablePremiumBrandRefresh: P,
       isDisplayingWowMomentConfirmation: D
     })), e
-  }, [x, I, C, n, A, T, S, F, Y, j, B, U, N, w, L, P, D])
+  }, [L, I, C, n, A, T, S, F, Y, j, B, U, N, w, x, P, D])
 }

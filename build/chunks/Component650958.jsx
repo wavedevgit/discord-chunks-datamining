@@ -118,7 +118,7 @@ function g(e) {
         })
       }
     }, null == b ? true : b(o)), "".concat(t, "-").concat(o))
-  }), x = (0, r.jsx)(a.sNh, {
+  }), L = (0, r.jsx)(a.sNh, {
     id: "SHOW_MORE",
     label: d.intl.string(d.t.E99UMh),
     dontCloseOnAction: true,
@@ -131,16 +131,16 @@ function g(e) {
         location_stack: n
       })
     }
-  }), L = !I && (null == C ? true : C.length) > 0;
+  }), x = !I && (null == C ? true : C.length) > 0;
   return o ? (0, r.jsxs)(a.sNh, h(_({
     id: "".concat(t, "-devices"),
     label: O(),
     subtext: P
   }, E), {
-    children: [w, L && x]
+    children: [w, x && L]
   })) : (0, r.jsxs)(a.kSQ, h(_({
     label: O()
   }, g), {
-    children: [w, L && x]
+    children: [w, x && L]
   }))
 }

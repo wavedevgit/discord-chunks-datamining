@@ -95,8 +95,8 @@ let A = Chunk473749.forwardRef((e, t) => {
     minWidth: P = 0,
     minHeight: D = 0,
     mediaLayoutType: w,
-    limitResponsiveWidth: x = true,
-    accessory: L,
+    limitResponsiveWidth: L = true,
+    accessory: x,
     zoomable: M = true,
     original: k,
     children: j = e => {
@@ -152,7 +152,7 @@ let A = Chunk473749.forwardRef((e, t) => {
     children: n
   });
   let q = null != U ? U() : null;
-  return q = null != q ? q : L, (0, r.jsx)(l.tEY, {
+  return q = null != q ? q : x, (0, r.jsx)(l.tEY, {
     ringTarget: Y,
     focusTarget: W,
     children: (0, r.jsxs)("div", I(O({
@@ -162,7 +162,7 @@ let A = Chunk473749.forwardRef((e, t) => {
         [g.imageWrapperBackground]: c !== p.zo9.READY,
         [g.clickable]: null != G
       }, a),
-      style: N(K, x, F, w)
+      style: N(K, L, F, w)
     }, H), {
       children: [null != k && (0, r.jsx)("a", {
         tabIndex: false,

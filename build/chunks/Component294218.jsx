@@ -71,7 +71,7 @@ function D(e, t) {
 
 function w(e, t) {
   if (null == e) return {};
-  var n, r, i = x(e, t);
+  var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -79,7 +79,7 @@ function w(e, t) {
   return i
 }
 
-function x(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -87,15 +87,15 @@ function x(e, t) {
   return i
 }
 
-function L(e) {
+function x(e) {
   var t, n;
   let {
     message: i,
     compact: a = false,
     className: N,
     onContextMenu: P,
-    onClick: x,
-    hideSimpleEmbedContent: L = true,
+    onClick: L,
+    hideSimpleEmbedContent: x = true,
     channel: M,
     isGroupStart: k,
     animateAvatar: j,
@@ -106,7 +106,7 @@ function L(e) {
     content: Y,
     hasSpoilerEmbeds: W
   } = (0, E.Z)(i, {
-    hideSimpleEmbedContent: L,
+    hideSimpleEmbedContent: x,
     allowList: V || H,
     allowHeading: V || H,
     allowLinks: true,
@@ -139,7 +139,7 @@ function L(e) {
       disableInteraction: F
     })),
     onContextMenu: P,
-    onClick: x,
+    onClick: L,
     hasThread: G && null != Q && i.hasFlag(A.iLy.HAS_THREAD),
     hasReply: i.type === A.uaV.REPLY,
     "aria-labelledby": ee,
@@ -148,4 +148,4 @@ function L(e) {
     author: X
   }, q, Z))
 }
-let M = Chunk473749.memo(L)
+let M = Chunk473749.memo(x)

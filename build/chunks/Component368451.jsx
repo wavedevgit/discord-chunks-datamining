@@ -156,7 +156,7 @@ function T(e) {
   } = S.useComponentState(e, T.length > 0 ? {
     type: t,
     values: T
-  } : true), D = null != S.modal, w = s > 1, x = N === p.gH.LOADING, [L, M] = i.useState(false), [k, j] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(k), B = i.useMemo(() => n.some(e => null != e.emoji), [n]);
+  } : true), D = null != S.modal, w = s > 1, L = N === p.gH.LOADING, [x, M] = i.useState(false), [k, j] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(k), B = i.useMemo(() => n.some(e => null != e.emoji), [n]);
   i.useEffect(() => {
     if ((null == A ? true : A.type) === d.re.STRING_SELECT) {
       let e = new Set(A.values);
@@ -173,8 +173,8 @@ function T(e) {
     }) && G(k)
   }, [k, U, G, C]);
   i.useEffect(() => {
-    !L && (k.size === U.size && Array.from(U).every(e => k.has(e)) || Z())
-  }, [L, k, U, Z]);
+    !x && (k.size === U.size && Array.from(U).every(e => k.has(e)) || Z())
+  }, [x, k, U, Z]);
   let F = c.UNb;
   w ? F = c.gzz : 0 === u && (F = c.s6k);
   let V = (0, c.cYr)({
@@ -186,7 +186,7 @@ function T(e) {
     children: [(0, r.jsx)("div", {
       className: m.container,
       children: (0, r.jsx)(c.PhF, E({
-        isProcessing: x,
+        isProcessing: L,
         isDisabled: g || N === p.gH.DISABLED || R,
         className: o()(m.select, {
           [m.inModal]: D

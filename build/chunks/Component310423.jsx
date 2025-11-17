@@ -88,24 +88,24 @@ function P(e) {
       messageId: S,
       parentOptionKey: D,
       commandOptionSpec: w,
-      sourceAnalyticsLocations: x
+      sourceAnalyticsLocations: L
     } = e,
-    L = null != D ? D + " " + g.name : g.name;
+    x = null != D ? D + " " + g.name : g.name;
   if (g.type === c.jw.SUB_COMMAND || g.type === c.jw.SUB_COMMAND_GROUP) {
     let e = [(0, r.jsxs)(i.Fragment, {
         children: [" ", (0, r.jsx)(l.Text, A(T({}, C), {
           children: null != (n = null == w ? true : w.name_localized) ? n : g.name
         }))]
-      }, L)],
+      }, x)],
       s = Object.fromEntries(null == (t = null != (a = null == w ? true : w.options) ? a : []) ? true : t.map(e => [e.name, e]));
     for (let t of null != (o = g.options) ? o : []) e = e.concat(P({
       option: t,
       channel: v,
       guild: I,
       messageId: S,
-      parentOptionKey: L,
+      parentOptionKey: x,
       commandOptionSpec: s[t.name],
-      sourceAnalyticsLocations: x
+      sourceAnalyticsLocations: L
     }));
     return e
   }
@@ -122,7 +122,7 @@ function P(e) {
             guildId: v.guild_id,
             channelId: v.id,
             messageId: S,
-            sourceAnalyticsLocations: x
+            sourceAnalyticsLocations: L
           }),
           children: [y.ME, e.nick]
         }))
@@ -159,7 +159,7 @@ function P(e) {
             onClick: () => (0, p.openUserProfileModal)({
               userId: t.id,
               guildId: v.guild_id,
-              sourceAnalyticsLocations: x
+              sourceAnalyticsLocations: L
             }),
             children: [y.ME, e.nick]
           }))
@@ -179,7 +179,7 @@ function P(e) {
     children: [(0, r.jsxs)(l.Text, A(T({}, C), {
       children: [" ", null != (d = null == w ? true : w.name_localized) ? d : g.name, ": "]
     })), f]
-  }, L)]
+  }, x)]
 }
 
 function D(e) {

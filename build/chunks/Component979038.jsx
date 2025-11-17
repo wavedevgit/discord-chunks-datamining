@@ -40,10 +40,10 @@ function C(e) {
     application: P
   } = e, {
     themeType: D
-  } = (0, m.z)(), w = (0, c.q)(P), x = (0, f.L)(null != (t = null == C ? true : C.application_id) ? t : null == P ? true : P.id), {
-    analyticsLocations: L
+  } = (0, m.z)(), w = (0, c.q)(P), L = (0, f.L)(null != (t = null == C ? true : C.application_id) ? t : null == P ? true : P.id), {
+    analyticsLocations: x
   } = (0, d.ZP)(u.Z.USER_PROFILE_ACTIVITY_BUTTONS), M = D === A.l.MODAL || D === A.l.MODAL_V2;
-  return x || !w || null == P || M ? (0, s.Z)(C) ? (0, r.jsx)(O.Z, {
+  return L || !w || null == P || M ? (0, s.Z)(C) ? (0, r.jsx)(O.Z, {
     platformType: S.ABu.XBOX,
     icon: () => (0, r.jsx)(h.Z, {}),
     onAction: N
@@ -80,6 +80,6 @@ function C(e) {
     application: P,
     onAction: N,
     onClose: R,
-    analyticsLocations: L
+    analyticsLocations: x
   })
 }

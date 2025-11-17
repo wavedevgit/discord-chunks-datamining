@@ -95,7 +95,7 @@ function S(e) {
     scrollBehavior: P = "sticky",
     modal: D = false,
     returnRef: w
-  } = e, [x, L] = i.useState(p), [M, k] = i.useState(E), j = i.useRef(E), U = i.useRef(0), G = (0, c.e7)([d.Z], () => d.Z.getLayers()), B = null != (t = G[G.length - 1]) ? t : "base", Z = i.useRef(N);
+  } = e, [L, x] = i.useState(p), [M, k] = i.useState(E), j = i.useRef(E), U = i.useRef(0), G = (0, c.e7)([d.Z], () => d.Z.getLayers()), B = null != (t = G[G.length - 1]) ? t : "base", Z = i.useRef(N);
   i.useEffect(() => {
     Z.current = N
   }, [N]);
@@ -108,12 +108,12 @@ function S(e) {
       return null == a.current || (null != (t = null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) ? t : "base") === B
     }, [a, B]);
   i.useEffect(() => {
-    V && p ? L(true) : V || L(false)
+    V && p ? x(true) : V || x(false)
   }, [V, p]), i.useEffect(() => {
     F(E)
   }, [E, F]);
   let H = () => {
-      L(false)
+      x(false)
     },
     Y = (0, _.i)({
       shouldShow: p,
@@ -151,7 +151,7 @@ function S(e) {
     };
   return (0, r.jsx)(u.H, {
     targetElementRef: a,
-    shouldShow: x,
+    shouldShow: L,
     onRequestClose: m,
     position: M,
     align: O,

@@ -85,7 +85,7 @@ function D(e, t, n) {
 
 function w(e, t) {
   var n, r, c, h, w;
-  let x, L = (0, O.hp)(e),
+  let L, x = (0, O.hp)(e),
     M = P(t),
     k = d.Z.getChannel(M),
     j = "streamKey" in t ? t.streamKey : true,
@@ -116,18 +116,18 @@ function w(e, t) {
       exe: ea,
       distributor: eo
     } = (0, s.G8)(ee),
-    es = L.isErrorOutbound,
+    es = x.isErrorOutbound,
     el = null != U ? U : I.Yn.DEFAULT,
     ec = null != Q ? Q.ownerId : X,
     eu = null != J ? null == J ? true : J.getVoiceParticipantType() : es ? "sender" : "receiver",
     ed = null != (r = null == $ ? true : $.getMediaEngineConnectionId()) ? r : null;
-  x = null != j && null != Q ? es ? null == $ || null == (c = $.getOutboundStats()) ? true : c.find(e => e.quality === I.y7) : null == $ ? true : $.getInboundStats(Q.ownerId) : es ? null != (w = i().maxBy(null != (h = null == $ ? true : $.getOutboundStats()) ? h : [], e => e.num_frames)) ? w : null : null != ec ? null == $ ? true : $.getInboundStats(ec) : null, (0, g.q)().then(t => {
-    var n, r, i, s, l, c, u, d, h, m, g, O, P, w, j, X, ee, ef, e_, ep, eh, em, eg, eE, eb, ey, eO, ev, eI, eT, eS, eA, eC, eN, eR, eP, eD, ew, ex, eL, eM, ek, ej, eU, eG, eB, eZ, eF, eV;
+  L = null != j && null != Q ? es ? null == $ || null == (c = $.getOutboundStats()) ? true : c.find(e => e.quality === I.y7) : null == $ ? true : $.getInboundStats(Q.ownerId) : es ? null != (w = i().maxBy(null != (h = null == $ ? true : $.getOutboundStats()) ? h : [], e => e.num_frames)) ? w : null : null != ec ? null == $ ? true : $.getInboundStats(ec) : null, (0, g.q)().then(t => {
+    var n, r, i, s, l, c, u, d, h, m, g, O, P, w, j, X, ee, ef, e_, ep, eh, em, eg, eE, eb, ey, eO, ev, eI, eT, eS, eA, eC, eN, eR, eP, eD, ew, eL, ex, eM, ek, ej, eU, eG, eB, eZ, eF, eV;
     let eH = {
       error_name: e.valueOf(),
-      error_code: L.errorCode,
-      error_severity: L.severity,
-      error_category: L.category,
+      error_code: x.errorCode,
+      error_severity: x.severity,
+      error_category: x.category,
       underlying_error: null != G ? G : null,
       error_message: null != B ? B : null,
       guild_id: null != (w = null == k ? true : k.guild_id) ? w : null,
@@ -143,9 +143,9 @@ function w(e, t) {
       hostname: null != (eh = _.Z.getHostname()) ? eh : null,
       duration: null != (em = null == $ ? true : $.getDurationSeconds()) ? em : null,
       participant_type: null != eu ? eu : null,
-      num_frames: null != (eg = null == x ? true : x.num_frames) ? eg : 0,
-      num_packets: null != (eE = null == x ? true : x.num_packets) ? eE : 0,
-      num_bytes: null != (eb = null == x ? true : x.num_bytes) ? eb : 0,
+      num_frames: null != (eg = null == L ? true : L.num_frames) ? eg : 0,
+      num_packets: null != (eE = null == L ? true : L.num_packets) ? eE : 0,
+      num_bytes: null != (eb = null == L ? true : L.num_bytes) ? eb : 0,
       num_packets_lost: null != (ey = null == (i = A(es, ed, ec)) ? true : i.packetsLost) ? ey : 0,
       video_codec: null != (eO = null != V ? V : (0, a.bU)(null == (s = A(es, ed, ec)) ? true : s.codec.name)) ? eO : null,
       video_encoder: null != (ev = null != H ? H : (0, a.lG)(null == (l = T(ed)) ? true : l.encoderImplementationName)) ? ev : null,
@@ -169,8 +169,8 @@ function w(e, t) {
       share_application_distributor: null != eo ? eo : null,
       cpu_brand: null != (eD = null == t ? true : t.cpu_brand) ? eD : null,
       cpu_vendor: null != (ew = null == t ? true : t.cpu_vendor) ? ew : null,
-      cpu_memory: null != (ex = null == t ? true : t.cpu_memory) ? ex : null,
-      gpu_brand: null != (eL = null == t ? true : t.gpu_brand) ? eL : null,
+      cpu_memory: null != (eL = null == t ? true : t.cpu_memory) ? eL : null,
+      gpu_brand: null != (ex = null == t ? true : t.gpu_brand) ? ex : null,
       gpu_count: null != (eM = null == t ? true : t.gpu_count) ? eM : null,
       gpu_memory: null != (ek = null == t ? true : t.gpu_memory) ? ek : null,
       gpu_device_vendor_id: null != (ej = null == t ? true : t.gpu_device_vendor_id) ? ej : null,

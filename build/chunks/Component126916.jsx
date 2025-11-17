@@ -115,7 +115,7 @@ function b(e) {
         }, t)
       })
     }),
-    x = i.useMemo(() => {
+    L = i.useMemo(() => {
       if (A) returnfalse;
       for (let r of P) {
         var e, t;
@@ -153,7 +153,7 @@ function b(e) {
       variant: "primary",
       text: _.intl.string(_.t.PDTjLN),
       onClick: D,
-      disabled: !x
+      disabled: !L
     }],
     children: (0, r.jsx)("div", {
       style: {

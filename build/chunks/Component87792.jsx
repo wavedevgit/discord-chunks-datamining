@@ -89,7 +89,7 @@ function Z(e) {
   let {
     displayType: t
   } = e, n = (0, h.PO)("family_center_activity_card"), a = i.useCallback(() => {
-    (0, u.showToast)((0, u.createToast)(L.intl.string(x.default.Wu8BK2), u.ToastType.FAILURE))
+    (0, u.showToast)((0, u.createToast)(x.intl.string(L.default.Wu8BK2), u.ToastType.FAILURE))
   }, []), s = (0, O.Z)(), c = (0, E.ws)(t), d = (0, E.C7)(t), m = (0, E.A)(t), {
     loadMore: b,
     isMoreLoading: y
@@ -163,7 +163,7 @@ function Z(e) {
       }) : (0, r.jsx)(u.Text, {
         className: M.loadMore,
         variant: "text-sm/bold",
-        children: L.intl.format(x.default["7dMmJY"], {
+        children: x.intl.format(L.default["7dMmJY"], {
           pageSize: Math.max(1, Math.min(d - k.length, D.iB))
         })
       })

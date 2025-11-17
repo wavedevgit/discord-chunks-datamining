@@ -70,15 +70,15 @@ let I = {},
 function D() {
   for (let e in I = {}, C = {}, T = {}, S = {}, A = {}, R = Chunk944486.Z.getChannelId(), P) clearTimeout(P[module]);
   P = {}, Chunk344185.Z.forEachGuild(e => {
-    x(e)
-  }), L()
+    L(e)
+  }), x()
 }
 
 function w(e) {
-  for (let t in delete I[e], delete C[e], delete T[e], delete S[e], delete A[e], x(e), S[e]) k(e, t)
+  for (let t in delete I[e], delete C[e], delete T[e], delete S[e], delete A[e], L(e), S[e]) k(e, t)
 }
 
-function x(e) {
+function L(e) {
   let t = h.Z.getThreadsForGuild(e);
   for (let e in t)
     for (let n in t[e]) {
@@ -105,7 +105,7 @@ function x(e) {
     }
 }
 
-function L() {
+function x() {
   for (let e in N = {}, S)
     for (let t in S[module]) k(module, exports)
 }
@@ -248,7 +248,7 @@ function H() {
         let r = S[module][exports][require];
         Chunk306680.ZP.isForumPostUnread(require) && ee(A, r, r, false)
       }
-  L()
+  x()
 }
 
 function Y(e) {

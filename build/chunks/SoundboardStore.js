@@ -51,7 +51,7 @@ function w() {
   T = 1
 }
 
-function x(e) {
+function L(e) {
   let {
     updates: t
   } = e;
@@ -64,7 +64,7 @@ function x(e) {
   }), T = 2
 }
 
-function L(e) {
+function x(e) {
   let {
     guild: t
   } = e;
@@ -280,8 +280,8 @@ let J = new Q(Chunk570140.Z, {
   SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FETCH: B,
   SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_SUCCESS: Z,
   SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FAILURE: F,
-  SOUNDBOARD_SOUNDS_RECEIVED: x,
-  GUILD_DELETE: L,
+  SOUNDBOARD_SOUNDS_RECEIVED: L,
+  GUILD_DELETE: x,
   AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: q,
   OVERLAY_INITIALIZE: X
 })

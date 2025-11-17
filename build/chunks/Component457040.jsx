@@ -106,7 +106,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       analyticsLocations: z
     } = (0, _.ZP)(f.Z.STICKER_PICKER), q = (null == (a = (0, E.N)()) ? true : a.subscription_trial) != null, X = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, I.Q)(e => e.showPremiumUpsell), [ea, eo] = (0, h.Iu)(e => [e.searchQuery, e.isSearchSuggestion], s.X), es = i.useRef("");
     i.useImperativeHandle(t, () => ({
-      onPickerOpen: eL
+      onPickerOpen: ex
     }));
     let el = (0, A.Sd)(c),
       ec = 0 === el.filter(e => e.type !== N.Ih.EMPTY_GUILD_UPSELL).length,
@@ -120,7 +120,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       ed = b._O.useSetting(),
       ef = i.useMemo(() => new Set(ed), [ed]),
       e_ = (0, l.e7)([y.default], () => y.default.getCurrentUser()),
-      ep = i.useMemo(() => (0, L.S)(ea, e_, c), [ea, e_, c]),
+      ep = i.useMemo(() => (0, x.S)(ea, e_, c), [ea, e_, c]),
       eh = (0, A.RJ)(),
       em = (0, A.LZ)(),
       eg = (0, l.cj)([C.Z], () => C.Z.getAllGuildStickers()),
@@ -175,7 +175,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         getRowProps: eP,
         gridContainerProps: eD,
         handleGridContainerKeyDown: ew,
-        isUsingKeyboardNavigation: ex
+        isUsingKeyboardNavigation: eL
       } = (0, R.t)({
         columnCounts: eC,
         stickersListRef: ee,
@@ -186,7 +186,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         gridNavigatorId: k.Vr
       });
     i.useEffect(() => p.ZN.resetStoreState, []);
-    let eL = () => {
+    let ex = () => {
       let e = c.getGuildId(),
         t = [];
       if (null !== e) {
@@ -221,7 +221,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       value: z,
       children: [!(q && ec) && (0, r.jsx)("div", {
         className: U.header,
-        children: (0, r.jsx)(x.Z, {
+        children: (0, r.jsx)(L.Z, {
           ref: er,
           onKeyDown: ew,
           stickersListRef: ee,
@@ -244,7 +244,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             getStickerRowProps: eP,
             gridWidth: eu,
             gutterWidth: eA,
-            isUsingKeyboardNavigation: ex,
+            isUsingKeyboardNavigation: eL,
             onSelectSticker: eO,
             rowCount: eI,
             rowCountBySection: eT,

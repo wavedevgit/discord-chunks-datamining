@@ -69,8 +69,8 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = 10,
-  L = 20,
+let L = 10,
+  x = 20,
   M = 15,
   k = 4,
   j = 5,
@@ -236,7 +236,7 @@ function H(e) {
   }, [o]);
   let g = (0, a.e7)([p.Z], () => o.some(e => p.Z.isFetching(e))),
     E = (0, a.e7)([p.Z], () => o.some(e => p.Z.didFetchingFail(e))),
-    y = (0, a.Wu)([p.Z], () => o.map(e => p.Z.getGame(e)).filter(e => null != e).filter(e => (0, m.z6)(e.applicationId)).slice(0, x)),
+    y = (0, a.Wu)([p.Z], () => o.map(e => p.Z.getGame(e)).filter(e => null != e).filter(e => (0, m.z6)(e.applicationId)).slice(0, L)),
     O = i.useMemo(() => {
       let e = y.length;
       return e <= k ? k - e : e === j ? 0 : e <= U ? U - e : G - e
@@ -252,7 +252,7 @@ function H(e) {
         return t => (0, r.jsx)(e, P({}, t))
       }))
     }, [E, t.id, s]), g && !E) {
-    let e = Math.min(o.length, x);
+    let e = Math.min(o.length, L);
     return (0, r.jsxs)("div", {
       className: N.container,
       children: [(0, r.jsx)(Z, {
@@ -335,7 +335,7 @@ function Y(e) {
     onRequestClose: I,
     position: b,
     align: O,
-    spacing: L,
+    spacing: x,
     scrollBehavior: "close",
     ignoreModalClicks: true,
     children: e => a(e, m)

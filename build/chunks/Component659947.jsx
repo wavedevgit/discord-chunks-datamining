@@ -127,7 +127,7 @@ function P(e) {
     l.current = a
   });
   let [u, d] = i.useState(null != (n = null == (t = a.params) ? true : t.channelId) ? n : true), f = i.useCallback(() => {
-    (0, o.ZDy)(async () => e => (0, r.jsx)(x, O(b({}, e), {
+    (0, o.ZDy)(async () => e => (0, r.jsx)(L, O(b({}, e), {
       onSelect: e => {
         d(e), s.Z.setKeybind(O(b({}, l.current), {
           params: {
@@ -145,7 +145,7 @@ function P(e) {
         align: c.Z.Align.STRETCH,
         children: [(0, r.jsx)("div", {
           className: g.selectedVoiceChannel,
-          children: (0, r.jsx)(L, {
+          children: (0, r.jsx)(x, {
             channelId: u
           })
         }), (0, r.jsx)(c.Z.Child, {
@@ -187,7 +187,7 @@ function w(e) {
   }
 }
 
-function x(e) {
+function L(e) {
   let {
     transitionState: t,
     onClose: n,
@@ -217,9 +217,9 @@ function x(e) {
       row: S
     })
   }, [S]);
-  let x = null != v ? v.length : O.length;
+  let L = null != v ? v.length : O.length;
 
-  function L(e) {
+  function x(e) {
     let {
       row: t
     } = e, i = (() => {
@@ -264,10 +264,10 @@ function x(e) {
         break
       }
       case "arrowup":
-        0 === S ? P(x - 1) : P(S - 1);
+        0 === S ? P(L - 1) : P(S - 1);
         break;
       case "arrowdown":
-        S >= x - 1 ? P(0) : P(S + 1)
+        S >= L - 1 ? P(0) : P(S + 1)
     }
   }
   let k = (() => {
@@ -294,18 +294,18 @@ function x(e) {
           placeholder: m.intl.string(m.t.tG0r7g),
           role: "combobox",
           "aria-controls": s,
-          "aria-expanded": x > 0,
-          "aria-activedescendant": x > 0 && null != k ? k : true,
+          "aria-expanded": L > 0,
+          "aria-activedescendant": L > 0 && null != k ? k : true,
           "aria-autocomplete": "list",
           spellCheck: false
         })
-      }), 0 === x && "" !== b && (0, r.jsx)(N, {}), (x > 0 || "" === b) && (0, r.jsx)(o.Tvr, {
+      }), 0 === L && "" !== b && (0, r.jsx)(N, {}), (L > 0 || "" === b) && (0, r.jsx)(o.Tvr, {
         innerId: s,
         innerRole: "listbox",
         "aria-label": m.intl.string(m.t["+N3fW7"]),
         ref: c,
-        sections: [x],
-        renderRow: L,
+        sections: [L],
+        renderRow: x,
         renderListHeader: C,
         renderFooter: A,
         sectionHeight: 0,
@@ -318,7 +318,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     channelId: t
   } = e, {

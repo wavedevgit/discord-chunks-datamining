@@ -9,7 +9,7 @@ require.d(exports, {
   ic: () => A,
   n5: () => R,
   rU: () => w,
-  s8: () => x
+  s8: () => L
 }), require("./388685.js"), require("./35282.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -571,7 +571,7 @@ class w extends Chunk473749.Component {
     })
   }
 }
-class x extends Chunk473749.Component {
+class L extends Chunk473749.Component {
   renderContent() {
     var e, t;
     let n, r, {

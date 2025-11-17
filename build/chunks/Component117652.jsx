@@ -36,7 +36,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk359739 = require("./359739.js"),
   Chunk611344 = require("./611344.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,21 +45,21 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
 }
 let M = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, r.jsx)(j, L({}, e)),
+  renderStep: e => (0, r.jsx)(j, x({}, e)),
   options: {
     isLargeModal: true,
     useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+b"])
@@ -98,8 +98,8 @@ function j(e) {
     giftRecipientError: g,
     setGiftRecipientError: b,
     validatingGiftRecipient: A,
-    giftRecipient: x,
-    recommendedGiftSkuIds: L,
+    giftRecipient: L,
+    recommendedGiftSkuIds: x,
     giftingOrigin: M,
     setValidatingGiftRecipient: j
   } = (0, T.wD)(), {
@@ -120,14 +120,14 @@ function j(e) {
     j(true), null != g && b(), await (0, c.B1)(e.id, t) || b(P.intl.string(P.t["4kgVqQ"])), j(false)
   };
   (0, o.ZP)(() => {
-    null != B && null != x && (M !== R.Wt.DM_CHANNEL_WISHLIST && v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != B && null != L && (M !== R.Wt.DM_CHANNEL_WISHLIST && v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: B
-    }), Q(x, B))
+    }), Q(L, B))
   });
   let J = e => {
       M !== R.Wt.DM_CHANNEL_WISHLIST && v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
-      }), null != x && Q(x, e), Z(e)
+      }), null != L && Q(L, e), Z(e)
     },
     $ = e => {
       let t = H[e],
@@ -162,7 +162,7 @@ function j(e) {
         color: "header-secondary",
         className: D.selectGiftTitle,
         children: X.toLocaleUpperCase()
-      }), L.map(e => $(e)), (0, r.jsx)(U, {
+      }), x.map(e => $(e)), (0, r.jsx)(U, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
@@ -175,7 +175,7 @@ function j(e) {
       if (q) return (0, r.jsxs)("div", {
         className: D.bodyColumnRight,
         children: [(0, r.jsx)(E.s, {
-          giftRecipient: x
+          giftRecipient: L
         }), (0, r.jsx)(m.q, {
           isShopGift: true,
           className: w.adjustedGiftMainAnimation,
@@ -193,7 +193,7 @@ function j(e) {
       return M === R.Wt.USER_PROFILE_WISHLIST || M === R.Wt.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {
         className: D.bodyColumnRight,
         children: [(0, r.jsx)(E.s, {
-          giftRecipient: x
+          giftRecipient: L
         }), ee(), null != e && null != B && (0, r.jsx)(d.Z, {
           skuId: B,
           price: e,
@@ -238,7 +238,7 @@ function j(e) {
         children: (0, r.jsx)(k, {
           onStepChange: t,
           onBackClick: n,
-          disabled: null != g || null == x || x.id === (null == W ? true : W.id) || s.length > R.$n,
+          disabled: null != g || null == L || L.id === (null == W ? true : W.id) || s.length > R.$n,
           loading: A
         })
       })

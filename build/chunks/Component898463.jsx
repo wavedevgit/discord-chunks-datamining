@@ -2,7 +2,7 @@
 /** chunk id: 898463, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x,
+  Z: () => L,
   r: () => w
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
@@ -264,7 +264,7 @@ function w(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     channelId: t,
     draftType: n,

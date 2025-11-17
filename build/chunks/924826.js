@@ -67,10 +67,10 @@ function u(e) {
       scrollToStart: d,
       scrollToEnd: f
     }), [t, d, f]),
-    [w, x] = r.useState(false),
-    L = r.useRef(w);
+    [w, L] = r.useState(false),
+    x = r.useRef(w);
   r.useLayoutEffect(() => {
-    L.current = w
+    x.current = w
   }, [w]), r.useLayoutEffect(() => {
     let e = T.current;
     if (null != e && u) return e.addEventListener("focusin", n), e.addEventListener("focusout", r), e.addEventListener("focus", i), e.addEventListener("scroll", a, {
@@ -80,18 +80,18 @@ function u(e) {
     };
 
     function n() {
-      x(true)
+      L(true)
     }
 
     function r(e) {
-      e.currentTarget.contains(e.relatedTarget) || (x(false), requestAnimationFrame(() => {
+      e.currentTarget.contains(e.relatedTarget) || (L(false), requestAnimationFrame(() => {
         let e = v.current;
         null !== e && null == A((0, l.P1)(e)) && R((0, l.P1)(t, l.kn))
       }))
     }
     async function i() {
       let e = T.current;
-      if (L.current || null == e) return;
+      if (x.current || null == e) return;
       let n = v.current;
       if (g && null !== n) {
         let t = (0, l.P1)(n),
@@ -132,7 +132,7 @@ function u(e) {
       null != t ? P(t) : null == e && null != _ && _()
     }, [D, M, _, P]),
     U = r.useCallback(e => {
-      if (!S.current || !E && !L.current) return;
+      if (!S.current || !E && !x.current) return;
       let n = y === s.hy.HORIZONTAL ? s.R8.RIGHT : s.R8.DOWN,
         r = y === s.hy.HORIZONTAL ? s.R8.LEFT : s.R8.UP;
       switch (e.key) {

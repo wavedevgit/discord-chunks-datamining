@@ -301,9 +301,9 @@ let P = {
   },
   D = /(-# +)/,
   w = (0, Chunk364458.Z)([A, P]),
-  x = (0, Chunk364458.Z)([C, P]),
-  L = Chunk25209._p(w),
-  M = Chunk25209._p(x),
+  L = (0, Chunk364458.Z)([C, P]),
+  x = Chunk25209._p(w),
+  M = Chunk25209._p(L),
   k = {
     max: 1 / 0,
     maxAge: +Chunk70956.Z.Millis.MINUTE,
@@ -322,7 +322,7 @@ function G(e, t, n) {
       allowGameMentions: true,
       allowTimeMentionInput: true
     },
-    a = n ? M : L,
+    a = n ? M : x,
     o = n ? U : j,
     s = o.get(e);
   if (null != s) return s;

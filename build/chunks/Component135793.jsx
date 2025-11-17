@@ -36,7 +36,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk393919 = require("./393919.js"),
   Chunk99713 = require("./99713.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,14 +45,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -92,7 +92,7 @@ let j = 190,
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 135793));
-      return t => (0, r.jsx)(e, k(L({}, t), {
+      return t => (0, r.jsx)(e, k(x({}, t), {
         channel: d,
         message: i,
         onRedeem: a,
@@ -170,8 +170,8 @@ function F(e) {
         variantsReturnStyle: o.v.INDIVIDUAL_PRODUCTS
       })
     }, [D, A]),
-    x = (0, i.useCallback)(() => R ? D() : w(), [D, w, R]),
-    L = (0, i.useMemo)(() => {
+    L = (0, i.useCallback)(() => R ? D() : w(), [D, w, R]),
+    x = (0, i.useMemo)(() => {
       if (null != E) {
         if ("apply" === s) return 3;
         if (E.type === N.qc2.DEVELOPER_GIFT) return 1;
@@ -179,13 +179,13 @@ function F(e) {
       }
       return 0
     }, [E, R, s]),
-    M = (0, i.useMemo)(() => 0 === L ? 1 : c ? 2 : 3 * (null == d), [c, d, L]);
+    M = (0, i.useMemo)(() => 0 === x ? 1 : c ? 2 : 3 * (null == d), [c, d, x]);
   return (0, r.jsx)(V, {
     channel: t,
-    buttonPurchaseState: L,
+    buttonPurchaseState: x,
     buttonDisabledState: M,
     price: p,
-    onActionClick: x,
+    onActionClick: L,
     loading: P,
     selectedEmoji: null != d ? d : true,
     isReaction: l

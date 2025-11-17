@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   NI: () => ed,
-  XI: () => x,
+  XI: () => L,
   YF: () => ec,
   Y_: () => eE,
   bQ: () => es,
@@ -87,7 +87,7 @@ function w(e) {
   return "function" == typeof e ? e() : e
 }
 
-function x(e, t) {
+function L(e, t) {
   true === t && (t = {});
   let {
     open: n,
@@ -102,7 +102,7 @@ function x(e, t) {
     mouseOnly: _ = false,
     restMs: p = 0,
     move: h = true
-  } = t, m = C(), g = A(), E = (0, a.II)(f), b = (0, a.II)(d), y = (0, a.II)(n), O = (0, a.II)(p), v = i.useRef(), I = i.useRef(false), T = i.useRef(), S = i.useRef(false), N = i.useRef(true), x = i.useRef(false), L = i.useRef(() => {}), M = i.useRef(false), k = (0, a.iW)(() => {
+  } = t, m = C(), g = A(), E = (0, a.II)(f), b = (0, a.II)(d), y = (0, a.II)(n), O = (0, a.II)(p), v = i.useRef(), I = i.useRef(false), T = i.useRef(), S = i.useRef(false), N = i.useRef(true), L = i.useRef(false), x = i.useRef(() => {}), M = i.useRef(false), k = (0, a.iW)(() => {
     var e;
     let t = null == (e = o.current.openEvent) ? true : e.type;
     return (null == t ? true : t.includes("mouse")) && "mousedown" !== t
@@ -135,12 +135,12 @@ function x(e, t) {
       i && !T.current ? (R(I), I.current = window.setTimeout(() => r(false, e, n), i)) : t && (R(I), r(false, e, n))
     }, [b, r]),
     U = (0, a.iW)(() => {
-      L.current(), T.current = true
+      x.current(), T.current = true
     }),
     G = (0, a.iW)(() => {
-      if (x.current) {
+      if (L.current) {
         let e = (0, a.Me)(c.floating).body;
-        e.style.pointerEvents = "", e.removeAttribute(P), x.current = false
+        e.style.pointerEvents = "", e.removeAttribute(P), L.current = false
       }
     }),
     B = (0, a.iW)(() => !!o.current.openEvent && ["click", "mousedown"].includes(o.current.openEvent.type));
@@ -165,7 +165,7 @@ function x(e, t) {
 
     function t(e) {
       if (B()) return void G();
-      L.current();
+      x.current();
       let t = (0, a.Me)(c.floating);
       if (R(S), M.current = false, E.current && o.current.floatingContext) {
         n || R(I), T.current = E.current({
@@ -178,7 +178,7 @@ function x(e, t) {
           }
         });
         let r = T.current;
-        t.addEventListener("mousemove", r), L.current = () => {
+        t.addEventListener("mousemove", r), x.current = () => {
           t.removeEventListener("mousemove", r)
         };
         return
@@ -208,7 +208,7 @@ function x(e, t) {
   }, [c, u, e, _, h, j, U, G, r, n, y, m, b, E, o, B, O]), (0, a.Xj)(() => {
     var e, t;
     if (u && n && null != (e = E.current) && null != (e = e.__options) && e.blockPointerEvents && k()) {
-      x.current = true;
+      L.current = true;
       let e = c.floating;
       if ((0, s.kK)(c.domReference) && e) {
         let n = (0, a.Me)(c.floating).body;
@@ -247,7 +247,7 @@ function x(e, t) {
     reference: Z
   } : {}, [u, Z])
 }
-let L = null,
+let x = null,
   M = 0;
 
 function k(e, t) {
@@ -473,7 +473,7 @@ function es(e, t) {
       _ = e
     }
     if (d.length && (0, s.kK)(c) && !(0, a.ex)(c) && !(0, a.r3)(c, o.floating) && Array.from(d).every(e => !(0, a.r3)(_, e))) return;
-    if ((0, s.Re)(c) && L) {
+    if ((0, s.Re)(c) && x) {
       let t = (0, s.Py)(c),
         n = (0, s.Dx)(c),
         r = /auto|scroll/,
@@ -548,7 +548,7 @@ function es(e, t) {
   }, [l, o, u, y, f, n, r, h, c, v, I, R, T, P, D, S, w]), i.useEffect(() => {
     l.current.insideReactTree = false
   }, [l, y, f]);
-  let x = i.useMemo(() => ({
+  let L = i.useMemo(() => ({
       onKeyDown: R,
       ..._ && {
         [ei[p]]: e => {
@@ -561,7 +561,7 @@ function es(e, t) {
         }
       }
     }), [R, r, _, p]),
-    L = i.useMemo(() => ({
+    x = i.useMemo(() => ({
       onKeyDown: R,
       onMouseDown() {
         O.current = true
@@ -574,9 +574,9 @@ function es(e, t) {
       }
     }), [R, f, l]);
   return i.useMemo(() => c ? {
-    reference: x,
-    floating: L
-  } : {}, [c, x, L])
+    reference: L,
+    floating: x
+  } : {}, [c, L, x])
 }
 
 function el(e) {
@@ -889,7 +889,7 @@ function ev(e) {
       let {
         clientX: h,
         clientY: m
-      } = e, g = [h, m], E = j(e), b = "mouseleave" === e.type, y = k(c.floating, E), O = k(c.domReference, E), v = c.domReference.getBoundingClientRect(), I = c.floating.getBoundingClientRect(), T = l.split("-")[0], S = n > I.right - I.width / 2, A = o > I.bottom - I.height / 2, C = eO(g, v), N = I.width > v.width, P = I.height > v.height, D = (N ? v : I).left, w = (N ? v : I).right, x = (P ? v : I).top, L = (P ? v : I).bottom;
+      } = e, g = [h, m], E = j(e), b = "mouseleave" === e.type, y = k(c.floating, E), O = k(c.domReference, E), v = c.domReference.getBoundingClientRect(), I = c.floating.getBoundingClientRect(), T = l.split("-")[0], S = n > I.right - I.width / 2, A = o > I.bottom - I.height / 2, C = eO(g, v), N = I.width > v.width, P = I.height > v.height, D = (N ? v : I).left, w = (N ? v : I).right, L = (P ? v : I).top, x = (P ? v : I).bottom;
       if (y && (a = true, !b)) return;
       if (O && (a = false), O && !b) {
         a = true;
@@ -917,18 +917,18 @@ function ev(e) {
           break;
         case "left":
           M = [
-            [I.right - 1, L],
             [I.right - 1, x],
-            [v.left + 1, x],
-            [v.left + 1, L]
+            [I.right - 1, L],
+            [v.left + 1, L],
+            [v.left + 1, x]
           ];
           break;
         case "right":
           M = [
-            [v.right - 1, L],
             [v.right - 1, x],
-            [I.left + 1, x],
-            [I.left + 1, L]
+            [v.right - 1, L],
+            [I.left + 1, L],
+            [I.left + 1, x]
           ]
       }
 

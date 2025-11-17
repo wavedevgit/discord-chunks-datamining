@@ -70,13 +70,13 @@ function w(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = N[e];
   return null != n ? n : N[e] = w(e, t)
 }
 
-function L(e) {
+function x(e) {
   if (null != e) {
     var t;
     R[e] = (null != (t = R[e]) ? t : 0) + 1
@@ -122,7 +122,7 @@ function B(e) {
       context: n
     });
   if (N[n.id] === i) returnfalse;
-  N[n.id] = i, P += 1, L(n.getGuildId())
+  N[n.id] = i, P += 1, x(n.getGuildId())
 }
 
 function Z(e) {
@@ -140,7 +140,7 @@ function Z(e) {
         user: r,
         context: t
       });
-    N[t.id] !== i && (N[t.id] = i, L(t.getGuildId()), n = true)
+    N[t.id] !== i && (N[t.id] = i, x(t.getGuildId()), n = true)
   }
   return !!n && (P += 1, n)
 }
@@ -151,11 +151,11 @@ function F() {
 
 function V(e) {
   var t;
-  return (null == (t = I.default.getCurrentUser()) ? true : t.id) === e.userId && (L(e.guildId), true)
+  return (null == (t = I.default.getCurrentUser()) ? true : t.id) === e.userId && (x(e.guildId), true)
 }
 
 function H(e) {
-  return !!(0, _.s)(e) && (L(e.guildId), true)
+  return !!(0, _.s)(e) && (x(e.guildId), true)
 }
 
 function Y(e) {
@@ -182,7 +182,7 @@ function K(e) {
   let {
     channel: t
   } = e;
-  return delete N[t.id], P += 1, L(t.guild_id), false
+  return delete N[t.id], P += 1, x(t.guild_id), false
 }
 
 function z(e) {
@@ -193,7 +193,7 @@ function z(e) {
   let n = y.Z.getMutableBasicGuildChannelsForGuild(t);
   a().forEach(n, e => {
     delete N[e.id]
-  }), P += 1, L(t)
+  }), P += 1, x(t)
 }
 
 function q(e) {
@@ -218,7 +218,7 @@ function X(e) {
   let n = y.Z.getMutableBasicGuildChannelsForGuild(t);
   a().forEach(n, e => {
     delete N[e.id]
-  }), P += 1, L(t)
+  }), P += 1, x(t)
 }
 
 function Q(e, t, n, r) {
@@ -228,7 +228,7 @@ function Q(e, t, n, r) {
       let i = y.Z.getChannel(e.parent_id);
       return null == i ? b.Hn : b.Og(e, Q(i, t, n, r), f.Z.hasJoined(e.id))
     }
-    i = x(e.id)
+    i = L(e.id)
   } else(0, E.lM)(e) && (i = D(e.id));
   return true !== t || true !== n || true !== r ? b.uB({
     user: I.default.getCurrentUser(),
@@ -244,7 +244,7 @@ class J extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk592125.Z, Chunk271383.ZP, Chunk430824.Z, Chunk160404.Z, Chunk569471.Z, Chunk41776.Z, Chunk427679.Z, Chunk594174.default)
   }
   getChannelPermissions(e) {
-    return p.Ec.has(e.type) ? w(e.id) : x(e.id)
+    return p.Ec.has(e.type) ? w(e.id) : L(e.id)
   }
   getGuildPermissions(e) {
     return D(e.id)

@@ -77,8 +77,8 @@ function N(e) {
   } = e, {
     staticBannerSrc: D,
     videoBannerSrc: w,
-    bannerAspectRatio: x
-  } = (0, d.E)(A), L = g.ZP.getApplicationIconURL({
+    bannerAspectRatio: L
+  } = (0, d.E)(A), x = g.ZP.getApplicationIconURL({
     id: A.id,
     icon: A.icon
   }), M = (0, i.e7)([f.ZP, h.Z], () => f.ZP.getVisibleRunningGames().find(e => {
@@ -98,8 +98,8 @@ function N(e) {
     title: A.name,
     staticBannerSrc: D,
     videoBannerSrc: w,
-    bannerAspectRatio: x,
-    iconSrc: null != L ? L : true,
+    bannerAspectRatio: L,
+    iconSrc: null != x ? x : true,
     info: G,
     actions: T.author.id === t ? [] : [{
       label: Z,

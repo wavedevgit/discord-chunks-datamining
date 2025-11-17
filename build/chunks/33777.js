@@ -62,8 +62,8 @@ function d(e, t, n) {
   null != t.selectedValue ? t.selectedValue === d && (D = 0) : (t.lastFocusedValue === d || null == t.lastFocusedValue) && (D = 0), O && (D = true);
   let {
     name: w,
-    form: x,
-    descriptionId: L,
+    form: L,
+    descriptionId: x,
     errorMessageId: M,
     validationBehavior: k
   } = r.H.get(t);
@@ -78,14 +78,14 @@ function d(e, t, n) {
       ...R,
       type: "radio",
       name: w,
-      form: x,
+      form: L,
       tabIndex: D,
       disabled: O,
       required: t.isRequired && "native" === k,
       checked: v,
       value: d,
       onChange: I,
-      "aria-describedby": [e["aria-describedby"], t.isInvalid ? M : null, L].filter(Boolean).join(" ") || true
+      "aria-describedby": [e["aria-describedby"], t.isInvalid ? M : null, x].filter(Boolean).join(" ") || true
     }),
     isDisabled: O,
     isSelected: v,

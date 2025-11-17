@@ -8,7 +8,7 @@ require.d(exports, {
   n4: () => M,
   q8: () => C,
   t$: () => S,
-  xl: () => L
+  xl: () => x
 }), require("./415506.js"), require("./388685.js"), require("./781311.js");
 var Chunk683860 = require("./683860.js"),
   Chunk344185 = require("./344185.js"),
@@ -131,7 +131,7 @@ function w(e) {
   return null != (n = null == (t = r.appliedTags) ? true : t.filter(e => o.has(e))) ? n : []
 }
 
-function x(e) {
+function L(e) {
   let t = R(e);
   return null == t ? [] : t.attachments.map(e => {
     var t;
@@ -139,7 +139,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   var t, n, r, i;
   let {
     channelId: a,
@@ -171,7 +171,7 @@ function M(e) {
   } = e, m = l.Z.getChannel(_);
   if (null == m || !m.isForumPost()) return null;
   let g = l.Z.getChannel(m.parent_id);
-  return null != g && g.isForumLikeChannel() ? I(O({}, L({
+  return null != g && g.isForumLikeChannel() ? I(O({}, x({
     channelId: g.id,
     sessionId: p
   })), {
@@ -190,6 +190,6 @@ function M(e) {
     forum_post_is_new: null == (i = h.Z.getReadStateSnapshotAnalytics(m.id)) ? true : i.isNew,
     forum_post_is_unread: null == (c = h.Z.getReadStateSnapshotAnalytics(m.id)) ? true : c.hasUnreads,
     forum_post_is_following: a.Z.hasJoined(m.id),
-    forum_post_attachment_mimetypes: x(m.id)
+    forum_post_attachment_mimetypes: L(m.id)
   }) : null
 }

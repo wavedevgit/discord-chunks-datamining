@@ -9,10 +9,10 @@ require.d(exports, {
   Sq: () => N,
   Wg: () => U,
   Zn: () => C,
-  c2: () => x,
+  c2: () => L,
   eE: () => k,
   iE: () => Z,
-  iK: () => L,
+  iK: () => x,
   l8: () => D,
   lv: () => R,
   m1: () => G,
@@ -158,22 +158,22 @@ function w(e) {
   return null != n && n.hasFocus && (t = r.EditorState.moveFocusToEnd(t)), t
 }
 
-function x(e, t) {
+function L(e, t) {
   let n = N(t);
   return S(e, t, 0, n.length)
 }
 
-function L(e, t) {
+function x(e, t) {
   let n = t.getSelection();
   return n = (n = n.set("focusOffset", e)).set("anchorOffset", e), r.EditorState.forceSelection(t, n)
 }
 
 function M(e) {
-  return L(e.getCurrentContent().getFirstBlock().getText().length, e)
+  return x(e.getCurrentContent().getFirstBlock().getText().length, e)
 }
 
 function k(e) {
-  return L(0, e)
+  return x(0, e)
 }
 
 function j(e) {

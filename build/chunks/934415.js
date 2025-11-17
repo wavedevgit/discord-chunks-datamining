@@ -5,8 +5,8 @@ require.d(exports, {
   EO: () => G,
   LY: () => k,
   Nj: () => Chunk90463.Z,
-  a5: () => L,
-  c4: () => x,
+  a5: () => x,
+  c4: () => L,
   g7: () => D,
   jZ: () => C,
   mE: () => B,
@@ -125,7 +125,7 @@ function w(e) {
   }), a
 }
 
-function x(e) {
+function L(e) {
   let {
     channels: t,
     selectedChannelId: n,
@@ -140,7 +140,7 @@ function x(e) {
   }).map(e => e.user)
 }
 
-function L(e) {
+function x(e) {
   let {
     type: t
   } = e;

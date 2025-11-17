@@ -43,10 +43,6 @@ function m(e) {
       onChange: T,
       disabled: !O,
       helperText: O ? true : p.intl.string(p.t.gzjxQi)
-    }), !O && (0, r.jsx)(a.Text, {
-      variant: "text-sm/normal",
-      className: h.nicknameDisabled,
-      children: p.intl.string(p.t.gzjxQi)
     }), I && v && (0, r.jsx)(c.Z, {
       user: E,
       guildId: b.id,

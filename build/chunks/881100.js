@@ -113,7 +113,7 @@ let j = (e, t, n) => (0, i.wj)(e) ? t : n,
       moreGuilds: {
         title: _.intl.string(_.t.Bv8Pfk),
         description: _.intl.string(_.t.JMfaTU),
-        imageSource: j(i, g, x),
+        imageSource: j(i, g, L),
         imageClassName: t.moreGuildsImage
       },
       moreGuildsAlt: {
@@ -131,19 +131,19 @@ let j = (e, t, n) => (0, i.wj)(e) ? t : n,
       stickers: {
         title: _.intl.string(_.t["1c+xwT"]),
         description: _.intl.string(_.t.hJG8ZN),
-        imageSource: j(i, I, L),
+        imageSource: j(i, I, x),
         imageClassName: t.stickersImage
       },
       stickersBurst: {
         title: _.intl.string(_.t.tzdIwI),
         description: _.intl.string(_.t.hJG8ZN),
-        imageSource: j(i, I, L),
+        imageSource: j(i, I, x),
         imageClassName: t.stickersImage
       },
       stickersPremiumPerk: {
         title: _.intl.string(_.t.tzdIwI),
         description: _.intl.string(_.t.FXlU24),
-        imageSource: j(i, I, L),
+        imageSource: j(i, I, x),
         imageClassName: t.stickersImage
       },
       streaming: {

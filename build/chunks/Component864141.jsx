@@ -50,10 +50,10 @@ function N(e) {
     voiceChannelId: i.id,
     user: t,
     analyticsLocations: D
-  }), x = (0, m.Z)({
+  }), L = (0, m.Z)({
     userId: t.id,
     onAction: w
-  }), L = (0, o.e7)([f.Z], () => f.Z.getGuild(i.guild_id)), M = (0, p.Z)(i), k = (0, d.ZP)(i), {
+  }), x = (0, o.e7)([f.Z], () => f.Z.getGuild(i.guild_id)), M = (0, p.Z)(i), k = (0, d.ZP)(i), {
     channelStatusEnabled: j
   } = (0, _.D)({
     location: "UserProfileVoiceActivityCard"
@@ -77,7 +77,7 @@ function N(e) {
   return (0, r.jsx)(u.Gt, {
     value: D,
     children: (0, r.jsxs)(E.Z, {
-      ref: x,
+      ref: L,
       className: a()(C.card, N),
       onAction: w,
       onClose: R,
@@ -101,7 +101,7 @@ function N(e) {
             className: C.details,
             children: [(0, r.jsx)(y.Z, {
               channel: i,
-              guild: L,
+              guild: x,
               onAction: w,
               onClose: R
             }), j && i.isGuildVoice() && (0, r.jsx)(v.Z, {

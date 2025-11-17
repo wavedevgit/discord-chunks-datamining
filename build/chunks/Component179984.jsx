@@ -98,7 +98,7 @@ let Z = () => {
         premiumType: n
       } = e,
       i = (0, d.ZP)();
-    t = n === P.PremiumTypes.TIER_0 ? (0, l.wj)(i) ? x : L : (0, l.wj)(i) ? M : k;
+    t = n === P.PremiumTypes.TIER_0 ? (0, l.wj)(i) ? L : x : (0, l.wj)(i) ? M : k;
     let a = (0, E.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
@@ -172,8 +172,8 @@ let Z = () => {
     let n, {
         className: a,
         hideCTAs: C = false,
-        headingOverride: x,
-        hidePill: L = false,
+        headingOverride: L,
+        hidePill: x = false,
         selectedPlanColumnClassName: M,
         selectedPlanTier: k = P.PremiumTypes.TIER_2
       } = e,
@@ -264,7 +264,7 @@ let Z = () => {
       withBottomBorder: false,
       withBottomBorderRadius: true,
       buttonsRow: null == J
-    }), n = L ? null : null != J || null != $ ? (0, r.jsx)(N.Cy, {
+    }), n = x ? null : null != J || null != $ ? (0, r.jsx)(N.Cy, {
       text: null != J ? D.intl.string(D.t.IBYG5U) : D.intl.string(D.t.ce1v3V),
       className: w.freeTrialPillWithSparkles,
       colorOptions: J === P.Si.TIER_0 ? z ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : z ? X ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
@@ -278,7 +278,7 @@ let Z = () => {
         children: [(0, r.jsx)(u.Heading, {
           className: o()(w.titleText, w.__invalid_textColor),
           variant: "heading-xxl/extrabold",
-          children: null != x ? x : D.intl.string(D.t.FIbMh9)
+          children: null != L ? L : D.intl.string(D.t.FIbMh9)
         }), (0, r.jsxs)("div", {
           className: w.tableWrapper,
           children: [(0, r.jsx)("div", {

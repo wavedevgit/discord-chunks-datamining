@@ -108,7 +108,7 @@ let ec = 12,
   e_ = 750;
 
 function ep(e, t, n) {
-  (0, h.h7j)(e => (0, i.jsx)(L.default, el(eo({}, e), {
+  (0, h.h7j)(e => (0, i.jsx)(x.default, el(eo({}, e), {
     message: t,
     selectedReaction: n
   })))
@@ -172,7 +172,7 @@ class em extends(r = Chunk473749.PureComponent) {
         }],
         opacity: this.opacity
       },
-      L = Chunk120356 ? r : require;
+      x = Chunk120356 ? r : require;
     if (Chunk120356 && null != Chunk473749) {
       var M;
       let {
@@ -216,7 +216,7 @@ class em extends(r = Chunk473749.PureComponent) {
               className: D.reactionInner,
               onClick: this.handleClick,
               "aria-disabled": u,
-              "aria-label": (0, x.iD)(this.isMe(), L, c, o),
+              "aria-label": (0, L.iD)(this.isMe(), x, c, o),
               "aria-pressed": this.isMe(),
               children: [(0, i.jsx)("div", {
                 className: s()({
@@ -252,11 +252,11 @@ class em extends(r = Chunk473749.PureComponent) {
                 })]
               }), l ? null : (0, i.jsx)(E.Z, {
                 className: D.reactionCount,
-                value: L,
+                value: x,
                 color: e,
                 digitWidth: ec
               }), (0, i.jsx)(R.Z, {
-                count: L,
+                count: x,
                 reactionRef: N
               })]
             }))
@@ -299,7 +299,7 @@ class em extends(r = Chunk473749.PureComponent) {
         analytics: {
           type: $.cd.BURST_REACTION_UPSELL,
           page: (null == c ? true : c.getGuildId()) != null ? J.ZY5.GUILD_CHANNEL : J.ZY5.DM_CHANNEL,
-          section: null != c ? (0, x.s4)(c) : true,
+          section: null != c ? (0, L.s4)(c) : true,
           object: J.qAy.EMOJI_REACTION_UPSELL
         }
       });
@@ -520,7 +520,7 @@ class em extends(r = Chunk473749.PureComponent) {
         type: $.cd.BURST_REACTION_UPSELL,
         location: {
           page: (null == i ? true : i.getGuildId()) != null ? J.ZY5.GUILD_CHANNEL : J.ZY5.DM_CHANNEL,
-          section: (0, x.s4)(i),
+          section: (0, L.s4)(i),
           object: J.qAy.EMOJI_REACTION_TOOLTIP_UPSELL
         }
       })
@@ -631,13 +631,13 @@ let eg = Chunk473749.memo(e => {
           O(false), A(true), r()
         })()
       }, [n, E, T, r]), C) return null;
-    let x = () => {
+    let L = () => {
         b(!E)
       },
-      L = () => {
+      x = () => {
         let e = ee.intl.string(ee.t["Igv+LS"]);
         return (0, i.jsxs)(h.P3F, {
-          onClick: x,
+          onClick: L,
           className: et.reactionEmojiDetailsClickable,
           children: [(0, i.jsx)(h.Text, {
             variant: "text-sm/normal",
@@ -664,7 +664,7 @@ let eg = Chunk473749.memo(e => {
         })]
       });
     return (0, i.jsxs)("div", {
-      children: [M ? k() : L(), y ? (0, i.jsx)(z.SE, {
+      children: [M ? k() : x(), y ? (0, i.jsx)(z.SE, {
         className: et.emojiDetailsLoader
       }) : M && (0, i.jsx)(eE, {
         emojiId: n,

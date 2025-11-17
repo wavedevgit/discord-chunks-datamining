@@ -68,9 +68,9 @@ let _ = "mp4",
   P = [],
   D = [],
   w = [],
-  x = [];
+  L = [];
 
-function L(e) {
+function x(e) {
   C = e.analyticsID
 }
 
@@ -158,7 +158,7 @@ function F(e) {
   let {
     items: t
   } = e;
-  x = t
+  L = t
 }
 class V extends(r = Chunk442837.ZP.Store) {
   getAnalyticsID() {
@@ -183,12 +183,12 @@ class V extends(r = Chunk442837.ZP.Store) {
     return w
   }
   getTrendingSearchTerms() {
-    return x
+    return L
   }
 }
 c(V, "displayName", "GIFPickerViewStore");
 let H = new V(Chunk570140.Z, {
-  GIF_PICKER_INITIALIZE: L,
+  GIF_PICKER_INITIALIZE: x,
   GIF_PICKER_QUERY: M,
   GIF_PICKER_QUERY_SUCCESS: U,
   GIF_PICKER_QUERY_FAILURE: G,

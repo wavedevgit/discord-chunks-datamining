@@ -232,7 +232,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
         premiumProgressBarEnabled: P,
         profile: D,
         moderatorReportingEnabled: w
-      } = t, x = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, L = A(T({
+      } = t, L = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, x = A(T({
         name: n,
         description: r,
         icon: o,
@@ -264,9 +264,9 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
       }), i.tn.patch({
         url: O.ANM.GUILD(e),
         query: {
-          for_discovery: x.isForDiscovery
+          for_discovery: L.isForDiscovery
         },
-        body: L,
+        body: x,
         oldFormErrors: true,
         rejectWithError: false
       }).then(t => {
@@ -280,7 +280,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
             errors: e.body
           }), R.error("Failed to save guild settings", {
             errors: e.body
-          }), x.throwErr) throw e.body
+          }), L.throwErr) throw e.body
       })
     },
     updateGuildModeration: (e, t) => i.tn.patch({

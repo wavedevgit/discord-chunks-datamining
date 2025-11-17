@@ -55,15 +55,15 @@ let h = () => (0, Chunk54381.jsx)("img", {
       disabled: O,
       isInModalOverlay: v,
       className: I
-    } = e, [T, S] = (0, i.useState)(false), A = (0, i.useMemo)(() => g(_, T), [_, T]), [C, N] = (0, i.useState)(false), [R, P] = (0, i.useState)(false), [D, w] = (0, i.useState)(.9 * l.D2), x = null === a;
+    } = e, [T, S] = (0, i.useState)(false), A = (0, i.useMemo)(() => g(_, T), [_, T]), [C, N] = (0, i.useState)(false), [R, P] = (0, i.useState)(false), [D, w] = (0, i.useState)(.9 * l.D2), L = null === a;
     (0, i.useEffect)(() => {
-      x && !C && (N(true), setTimeout(() => {
+      L && !C && (N(true), setTimeout(() => {
         P(true)
       }, 500))
-    }, [x, N, C]), (0, i.useEffect)(() => {
-      R && !x && N(false)
-    }, [x, R]);
-    let L = x || C,
+    }, [L, N, C]), (0, i.useEffect)(() => {
+      R && !L && N(false)
+    }, [L, R]);
+    let x = L || C,
       M = C ? null : a,
       [k, j] = (0, i.useState)(null),
       U = (0, i.useRef)(null),
@@ -80,7 +80,7 @@ let h = () => (0, Chunk54381.jsx)("img", {
         onSetAnimationDurationMS: w
       };
     return (0, r.jsx)(s.P3F, {
-      onClick: L ? true : b,
+      onClick: x ? true : b,
       className: o()(f.clickable, {
         [f.disabled]: O
       }),
@@ -91,19 +91,19 @@ let h = () => (0, Chunk54381.jsx)("img", {
         onMouseLeave: O ? true : () => S(false),
         ref: t,
         className: o()(f.container, A, I, {
-          [f.containerLoading]: L,
+          [f.containerLoading]: x,
           [f.inModalOverlay]: v,
           [f.disabled]: O
         }),
         children: [(0, r.jsx)("div", {
-          className: o()(f.orbsLottieContainer, L ? f.orbIconloading : true),
+          className: o()(f.orbsLottieContainer, x ? f.orbIconloading : true),
           children: (0, r.jsx)(d.ZP, p({}, Z))
         }), (0, r.jsx)(u.Z, {
           value: M,
           onValueChange: B,
           onValueReached: G,
           targetTotalCounterTime: D,
-          className: L ? f.counterLoading : true
+          className: x ? f.counterLoading : true
         }), E && (0, r.jsx)(h, {})]
       })
     })

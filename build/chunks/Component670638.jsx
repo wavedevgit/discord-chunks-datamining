@@ -2,7 +2,7 @@
 /** chunk id: 670638, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => L
+  r: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -86,7 +86,7 @@ function w(e, t) {
   return i
 }
 
-function x(e) {
+function L(e) {
   var t;
   let n = (0, a.e7)([E.Z], () => E.Z.questDeliveryOverride, []),
     u = (0, m.GN)(e.questContent),
@@ -97,13 +97,13 @@ function x(e) {
     D = true === e.showShareLink && (0, m.vB)(e.quest.config),
     {
       handleComplete: w,
-      handleProgress: x,
-      handleResetDismissibilityClick: L,
+      handleProgress: L,
+      handleResetDismissibilityClick: x,
       handleResetStatusClick: M,
       handleOverrideDeliveryClick: k
     } = (0, g.kJ)(e.quest.id),
     j = () => {
-      x(.9 * Math.random() + .03)
+      L(.9 * Math.random() + .03)
     },
     U = i.useCallback(() => {
       if (e.quest.id === I.V6) return void window.open(f.Z.getArticleURL(T.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
@@ -214,7 +214,7 @@ function x(e) {
       children: [(0, r.jsx)(o.sNh, {
         id: "dismiss",
         label: A.intl.string(A.t.JF6W66),
-        action: L
+        action: x
       }), (0, r.jsx)(o.sNh, {
         id: "enrollment",
         label: A.intl.string(A.t.taqkwK),
@@ -260,7 +260,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     children: t,
     onOpen: n,
@@ -288,14 +288,14 @@ function L(e) {
         closePopout: t
       } = e;
       return s ? (0, r.jsx)(u.Z, {
-        children: (0, r.jsx)(x, P(N({}, _), {
+        children: (0, r.jsx)(L, P(N({}, _), {
           quest: l,
           questContent: c,
           questContentPosition: d,
           onClose: t,
           sourceQuestContent: f
         }))
-      }) : (0, r.jsx)(x, P(N({}, _), {
+      }) : (0, r.jsx)(L, P(N({}, _), {
         quest: l,
         questContent: c,
         questContentPosition: d,

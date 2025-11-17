@@ -54,12 +54,12 @@ let C = "recentMentionFilterSettings",
   P = {},
   D = false,
   w = true,
-  x = Chunk433517.K.get(C, {
+  L = Chunk433517.K.get(C, {
     guildFilter: Chunk981631.NgX.ALL_SERVERS,
     everyoneFilter: true,
     roleFilter: true
   }),
-  L = false,
+  x = false,
   M = 0,
   k = false;
 
@@ -85,7 +85,7 @@ function G(e) {
   let {
     guildId: t
   } = e;
-  D = true, null == t && x.guildFilter === T.NgX.THIS_SERVER && X({
+  D = true, null == t && L.guildFilter === T.NgX.THIS_SERVER && X({
     guildFilter: T.NgX.ALL_SERVERS
   })
 }
@@ -129,7 +129,7 @@ function F(e) {
     addedMessages: i
   }), r ? N = N.concat(i) : (N = i, P = {}), a().forEach(i, e => {
     P[e.id] = true
-  }), D = false, w = t, M = (0, l.zO)(), L = true
+  }), D = false, w = t, M = (0, l.zO)(), x = true
 }
 
 function V() {
@@ -141,12 +141,12 @@ function H(e) {
   if ((0, _.Z)(e) && !T.V$x.SELF_MENTIONABLE_SYSTEM.has(e.type)) return null;
   null == t && (t = e.channel_id);
   let n = g.Z.getChannel(t);
-  if (null == n || n.type === T.d4z.DM || x.guildFilter === T.NgX.THIS_SERVER && n.getGuildId() !== O.Z.getGuildId()) return null;
+  if (null == n || n.type === T.d4z.DM || L.guildFilter === T.NgX.THIS_SERVER && n.getGuildId() !== O.Z.getGuildId()) return null;
   let r = m.default.getId();
   if (y.Z.isBlockedOrIgnoredForMessage(e) || (0, p.Z)(e, r)) return null;
   e = B(e);
-  let i = !x.everyoneFilter,
-    a = !x.roleFilter;
+  let i = !L.everyoneFilter,
+    a = !L.roleFilter;
   return (0, f.ZP)({
     message: e,
     userId: r,
@@ -223,25 +223,25 @@ function q(e) {
 }
 
 function X(e) {
-  let t = A({}, x);
-  x = a().defaults(a().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), x), s.K.set(C, x);
-  let n = (e, n) => t[e] !== x[e] && x[e] === n,
+  let t = A({}, L);
+  L = a().defaults(a().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), L), s.K.set(C, L);
+  let n = (e, n) => t[e] !== L[e] && L[e] === n,
     r = n("guildFilter", T.NgX.THIS_SERVER) || n("everyoneFilter", false) || n("roleFilter", false);
   P = {};
   let i = [];
   r && N.forEach(e => {
     let t = H(e);
     null != t && (i.push(t), P[t.id] = true)
-  }), j(N = i), 0 === N.length && (L = false)
+  }), j(N = i), 0 === N.length && (x = false)
 }
 
 function Q() {
-  if (x.guildFilter !== Chunk981631.NgX.THIS_SERVER) returnfalse;
-  L = false
+  if (L.guildFilter !== Chunk981631.NgX.THIS_SERVER) returnfalse;
+  x = false
 }
 
 function J() {
-  N = [], P = {}, L = false, k = false, R = {}
+  N = [], P = {}, x = false, k = false, R = {}
 }
 
 function $(e) {
@@ -294,16 +294,16 @@ class ea extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk375954.Z, Chunk306680.ZP, Chunk699516.Z, Chunk914010.Z, Chunk9156.ZP, Chunk594174.default)
   }
   get hasLoadedEver() {
-    return L
+    return x
   }
   get lastLoaded() {
     return M
   }
   getMentions() {
-    return L || N.length > 0 ? N : null
+    return x || N.length > 0 ? N : null
   }
   getSettingsFilteredMentions() {
-    return L || N.length > 0 ? N.filter(Z) : null
+    return x || N.length > 0 ? N.filter(Z) : null
   }
   hasMention(e) {
     return P[e]
@@ -315,13 +315,13 @@ class ea extends(r = Chunk442837.ZP.Store) {
     return w
   }
   get guildFilter() {
-    return x.guildFilter
+    return L.guildFilter
   }
   get everyoneFilter() {
-    return x.everyoneFilter
+    return L.everyoneFilter
   }
   get roleFilter() {
-    return x.roleFilter
+    return L.roleFilter
   }
   get mentionsAreStale() {
     return k

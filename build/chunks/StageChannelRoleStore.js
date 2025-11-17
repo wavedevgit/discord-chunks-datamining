@@ -126,11 +126,11 @@ function w(e) {
   return C(e.guildId)
 }
 
-function x() {
+function L() {
   b = {}
 }
 
-function L(e) {
+function x(e) {
   let {
     guild: t
   } = e;
@@ -168,12 +168,12 @@ class M extends(r = Chunk442837.ZP.Store) {
 E(M, "displayName", "StageChannelRoleStore");
 let k = new M(Chunk570140.Z, {
   CHANNEL_UPDATES: N,
-  CONNECTION_OPEN: x,
+  CONNECTION_OPEN: L,
   GUILD_MEMBER_REMOVE: P,
   GUILD_MEMBER_UPDATE: P,
   GUILD_ROLE_UPDATE: R,
   PASSIVE_UPDATE_V2: w,
   VOICE_STATE_UPDATES: D,
-  GUILD_CREATE: L,
-  GUILD_DELETE: L
+  GUILD_CREATE: x,
+  GUILD_DELETE: x
 })

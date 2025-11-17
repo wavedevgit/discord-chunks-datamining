@@ -14,7 +14,7 @@ require.d(exports, {
   R4: () => p,
   S7: () => Chunk670081.S,
   Ts: () => y,
-  UP: () => x,
+  UP: () => L,
   V6: () => I,
   V_: () => v,
   XZ: () => _,
@@ -80,10 +80,10 @@ var D = function(e) {
   w = function(e) {
     return e.VIDEO = "task_video", e.PLAY = "task_play", e
   }({}),
-  x = function(e) {
+  L = function(e) {
     return e.VIRTUAL_CURRENCY = "reward_virtual_currency", e.COLLECTIBLE = "reward_collectible", e.IN_GAME = "reward_in_game", e
   }({});
-let L = [{
+let x = [{
     group: "task",
     filter: "task_play"
   }, {
@@ -100,7 +100,7 @@ let L = [{
     filter: "reward_in_game"
   }],
   M = ["reward", "task"],
-  k = Object.entries((0, Chunk392711.groupBy)(L, "group")).sort((e, t) => {
+  k = Object.entries((0, Chunk392711.groupBy)(x, "group")).sort((e, t) => {
     let n = M.indexOf(e[0]),
       r = M.indexOf(t[0]);
     return n < r ? false : +(r < n)

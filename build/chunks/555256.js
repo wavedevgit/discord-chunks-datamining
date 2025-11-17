@@ -306,8 +306,8 @@ let N = {
   },
   D = 10,
   w = false,
-  x = "",
-  L = false,
+  L = "",
+  x = false,
   M = false,
   k = [],
   j = e => e._config && e._config.installationMethod ? e._config.installationMethod : e._gtm ? "web-gtm" : e._segment ? "web-segment" : "web-snippet",
@@ -316,7 +316,7 @@ let N = {
     null != (t = null == e ? true : e.blockedURI) && t.includes(window.UserLeap._API_URL) && (M = true, console.warn(`[Sprig] ${e.blockedURI} is blocked by Content-Security-Policy`))
   },
   G = (e = "") => {
-    w = true, x = e
+    w = true, L = e
   };
 
 function B(e = {}) {
@@ -352,17 +352,17 @@ let Z = async ({
     retries: n,
     shouldDropOnRateLimit: r
   };
-  if (L && !i) return Z(o);
+  if (x && !i) return Z(o);
   let s = {
     ok: false,
     reportError: false
   };
-  if (w) return console.info(`UserLeap - ${x}`), s;
+  if (w) return console.info(`UserLeap - ${L}`), s;
   try {
     let t = await fetch(e, a);
     if (429 === t.status) {
-      if (!L && !r || i) {
-        L = true;
+      if (!x && !r || i) {
+        x = true;
         let n = t.headers.has("ratelimit-reset") ? Number(t.headers.get("ratelimit-reset")) : D;
         return await v(1e3 * n), F(e, {
           ...a,
@@ -372,7 +372,7 @@ let Z = async ({
       }
       return Z(o)
     }
-    if (L = false, k.length && (k.map(e => {
+    if (x = false, k.length && (k.map(e => {
         let t = e.payload;
         F(t.url, {
           ...t.options,

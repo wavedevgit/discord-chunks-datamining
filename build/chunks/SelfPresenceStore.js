@@ -41,8 +41,8 @@ let T = false,
   P = false,
   D = true,
   w = Object.freeze([]),
-  x = Object.freeze([]),
-  L = [],
+  L = Object.freeze([]),
+  x = [],
   M = [];
 
 function k(e) {
@@ -98,7 +98,7 @@ function Z() {
   let r = Chunk797258.Z.getRemoteActivities();
   w !== r && (w = r, t = true);
   let i = Chunk797258.Z.getHiddenActivities();
-  x !== Chunk348327 && (x = Chunk348327), exports && (M = k(L = s()([...N, ...w.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
+  L !== Chunk348327 && (L = Chunk348327), exports && (M = k(x = s()([...N, ...w.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
 }
 
 function F(e) {
@@ -110,7 +110,7 @@ function V() {
 }
 
 function H() {
-  D = false, A = Chunk981631.Skl.UNKNOWN, Z(), Chunk158776.Z.setCurrentUserOnConnectionOpen(S, L)
+  D = false, A = Chunk981631.Skl.UNKNOWN, Z(), Chunk158776.Z.setCurrentUserOnConnectionOpen(S, x)
 }
 
 function Y() {
@@ -137,10 +137,10 @@ class W extends(r = Chunk442837.ZP.Store) {
   }
   getUnfilteredActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return module ? L : N
+    return module ? x : N
   }
   getHiddenActivities() {
-    return x
+    return L
   }
   getPrimaryActivity() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];

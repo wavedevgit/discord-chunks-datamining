@@ -109,7 +109,7 @@ let D = {
       source: a
     }, D))
   },
-  x = () => {
+  L = () => {
     let {
       activitySessionId: e,
       hasPaymentSources: t,
@@ -167,7 +167,7 @@ let D = {
       }, [Chunk481060, Chunk45572, exports])
     }
   },
-  L = e => {
+  x = e => {
     let {
       handleClose: t,
       handleStepChange: n
@@ -192,7 +192,7 @@ let D = {
       product: _
     } = (0, l.T)(s), {
       emitOrbCheckoutPaymentFlowEvent: p
-    } = x(), {
+    } = L(), {
       skuId: g,
       onRedeemVirtualCurrency: E,
       isRedeeming: I,
@@ -243,7 +243,7 @@ let D = {
   },
   k = [{
     key: null,
-    renderStep: e => (0, r.jsx)(L, A({}, e))
+    renderStep: e => (0, r.jsx)(x, A({}, e))
   }, {
     key: Chunk409813.h8.REVIEW,
     renderStep: e => (0, r.jsx)(M, A({}, e)),
@@ -265,7 +265,7 @@ let D = {
       orbProductContext: o
     } = (0, y.C)(), {
       emitOrbCheckoutPaymentFlowEvent: s
-    } = x(), l = (0, i.useMemo)(() => {
+    } = L(), l = (0, i.useMemo)(() => {
       var e, t;
       if (null != o) return {
         price: null != (e = o.orbPriceAmount) ? e : true,

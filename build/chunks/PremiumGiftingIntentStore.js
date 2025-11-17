@@ -73,7 +73,7 @@ function P(e) {
 
 function D() {
   if (null != N) return void K(N);
-  if (L(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
+  if (x(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
   } = Chunk522558.w.getConfig({
@@ -104,20 +104,20 @@ function w(e) {
   return Math.round(s()().diff(e, "years", true))
 }
 
-function x() {
+function L() {
   return Array.from(A).some(e => !T.lastShownFriendsListGiftIntents.includes(e))
 }
 
-function L() {
+function x() {
   S.length = 0, A.clear(), C = {}
 }
 
 function M() {
-  L()
+  x()
 }
 
 function k() {
-  T = I(), L()
+  T = I(), x()
 }
 
 function j() {
@@ -177,7 +177,7 @@ function W(e) {
 }
 
 function K(e) {
-  L();
+  x();
   let {
     enabled: t
   } = p.w.getConfig({
@@ -219,7 +219,7 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
   canShowFriendsTabBadge() {
     var e;
     let t = null != (e = T.friendsTabBadgeLastDismissedTime) ? module : 0;
-    return !(Date.now() - exports <= O) && x()
+    return !(Date.now() - exports <= O) && L()
   }
   getFriendAnniversaryYears(e) {
     let t = C[e];

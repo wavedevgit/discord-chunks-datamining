@@ -60,8 +60,8 @@ function P(e) {
     channelId: P,
     messageId: D,
     roleId: w,
-    openedAt: x,
-    setPopoutRef: L,
+    openedAt: L,
+    setPopoutRef: x,
     closePopout: M,
     disableUserProfileLink: k = __OVERLAY__,
     newAnalyticsLocations: j = [],
@@ -77,8 +77,8 @@ function P(e) {
     roleId: w
   }), F = i.useRef(null), V = (0, u.X)(F);
   i.useEffect(() => {
-    null == L || L(null == F ? true : F.current)
-  }, [F, L]);
+    null == x || x(null == F ? true : F.current)
+  }, [F, x]);
   let H = () => {
       null == M || M(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: B,
@@ -103,7 +103,7 @@ function P(e) {
     value: B,
     children: (0, r.jsx)(_.Mt, {
       value: Z,
-      openedAt: x,
+      openedAt: L,
       fetchStartedAt: null == G ? true : G.fetchStartedAt,
       fetchEndedAt: null == G ? true : G.fetchEndedAt,
       isLoaded: null == G ? true : G.isLoaded,

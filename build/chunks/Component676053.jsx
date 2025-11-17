@@ -93,8 +93,8 @@ function S(e) {
       badge: P,
       textLink: D,
       onWatchVideo: w,
-      onRequestClose: x,
-      popoverRef: L
+      onRequestClose: L,
+      popoverRef: x
     } = e,
     M = I(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
   let {
@@ -113,11 +113,11 @@ function S(e) {
     null != G.current && (!k.enabled && U ? null == (e = G.current) || e.play().catch(h.dG) : null == (t = G.current) || t.pause())
   }, [U, k.enabled]);
   let F = i.useCallback(() => {
-      null !== G.current && G.current.pause(), null == x || x()
-    }, [x]),
+      null !== G.current && G.current.pause(), null == L || L()
+    }, [L]),
     V = i.useCallback(() => {
-      null !== G.current && G.current.pause(), null == x || x()
-    }, [x]),
+      null !== G.current && G.current.pause(), null == L || L()
+    }, [L]),
     H = i.useCallback(() => {
       null !== G.current && G.current.pause();
       let e = Z();
@@ -126,8 +126,8 @@ function S(e) {
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: true
-      }), null == x || x(), null == w || w()
-    }, [Z, w, x]),
+      }), null == L || L(), null == w || w()
+    }, [Z, w, L]),
     Y = B ? (0, r.jsx)(o.zsu, {
       type: "image",
       src: A
@@ -157,7 +157,7 @@ function S(e) {
     onRequestClose: F,
     hasVideo: true,
     children: (0, r.jsxs)("div", {
-      ref: L,
+      ref: x,
       children: [(0, r.jsx)(p.N, {
         onClick: V
       }), (0, r.jsx)(f.$, {

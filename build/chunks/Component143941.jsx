@@ -133,12 +133,12 @@ function R(e) {
     nuxGraphic: T
   } = e, [A, N] = (0, _.US)([l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), R = A === l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
     analyticsLocations: P
-  } = (0, d.ZP)(), D = g.default.getCurrentUser(), w = null != D ? p.Z.getFirstWishlistId(D.id) : null, x = (0, m.ny)(w, t), L = i.useRef(null), [M, k] = i.useState(null);
+  } = (0, d.ZP)(), D = g.default.getCurrentUser(), w = null != D ? p.Z.getFirstWishlistId(D.id) : null, L = (0, m.ny)(w, t), x = i.useRef(null), [M, k] = i.useState(null);
   i.useEffect(() => {
     k(null)
   }, [t]);
-  let j = null !== M ? M : x,
-    U = (0, f.X)(L),
+  let j = null !== M ? M : L,
+    U = (0, f.X)(x),
     G = j ? u.h_8 : u.Pzh,
     B = j || U ? I.wishlistedOrHoveredIconColor : I.normalIconColor,
     Z = i.useCallback(async e => {
@@ -171,7 +171,7 @@ function R(e) {
     "aria-label": null != y ? y : F,
     children: (0, r.jsx)(u.P3F, {
       className: o()(I.wishlistButton, I.disabledButton, a),
-      innerRef: L,
+      innerRef: x,
       onClick: e => e.stopPropagation(),
       "aria-disabled": true,
       children: (0, r.jsx)(G, {
@@ -187,7 +187,7 @@ function R(e) {
     "aria-label": F,
     children: (0, r.jsx)(u.P3F, {
       className: o()(I.wishlistButton, a),
-      innerRef: L,
+      innerRef: x,
       onClick: Z,
       "aria-label": F,
       children: (0, r.jsx)(G, {
@@ -202,7 +202,7 @@ function R(e) {
     "aria-label": null != y ? y : F,
     children: (0, r.jsx)(u.P3F, {
       className: o()(I.wishlistButton, a),
-      innerRef: L,
+      innerRef: x,
       onClick: Z,
       "aria-label": F,
       children: (0, r.jsx)(G, {

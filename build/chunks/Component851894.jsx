@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk813709 = require("./813709.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,14 +44,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -97,8 +97,8 @@ function G(e) {
     let {
       default: t
     } = await n.e("84509").then(n.bind(n, 933696));
-    return n => (0, r.jsx)(t, L({
-      source: k(L({}, e), {
+    return n => (0, r.jsx)(t, x({
+      source: k(x({}, e), {
         page: P.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
       })
     }, n))
@@ -110,11 +110,11 @@ function B(e) {
   let {
     selectedGuild: a
   } = e, {
-    analyticsLocations: x
+    analyticsLocations: L
   } = (0, _.ZP)(d.Z.USER_SETTINGS_GUILD_PROFILE), M = (0, s.e7)([v.default], () => {
     let e = v.default.getCurrentUser();
     return o()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), U = (0, s.e7)([y.ZP], () => null != a ? y.ZP.getMember(a.id, M.id) : null), B = (0, s.e7)([b.Z], () => !b.Z.isFetchingProfile(M.id, null == a ? true : a.id)), Z = (0, s.e7)([O.Z], () => O.Z.hidePersonalInformation), F = (0, s.cj)([A.Z], () => k(L({}, A.Z.getAllPending()), {
+  }), U = (0, s.e7)([y.ZP], () => null != a ? y.ZP.getMember(a.id, M.id) : null), B = (0, s.e7)([b.Z], () => !b.Z.isFetchingProfile(M.id, null == a ? true : a.id)), Z = (0, s.e7)([O.Z], () => O.Z.hidePersonalInformation), F = (0, s.cj)([A.Z], () => k(x({}, A.Z.getAllPending()), {
     source: A.Z.getSource()
   })), {
     source: V,
@@ -138,7 +138,7 @@ function B(e) {
       source: V
     })
   }, [V]), Z) ? (0, r.jsx)(u.Z, {}) : B ? (0, r.jsxs)(_.Gt, {
-    value: x,
+    value: L,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: D.intl.format(D.t["/PTB2E"], {
@@ -158,7 +158,7 @@ function B(e) {
             guildName: null == a ? true : a.name
           })
         }),
-        profilePreview: (0, r.jsx)(g.Z, k(L({}, W), {
+        profilePreview: (0, r.jsx)(g.Z, k(x({}, W), {
           pendingAvatar: K,
           pendingDisplayNameStyles: q,
           user: M,
@@ -166,7 +166,7 @@ function B(e) {
           canUsePremiumCustomization: T.ZP.canUsePremiumProfileCustomization(M),
           onUpsellClick: G
         })),
-        nameplatePreview: (0, r.jsx)(p.Z, k(L({}, W), {
+        nameplatePreview: (0, r.jsx)(p.Z, k(x({}, W), {
           pendingDisplayNameStyles: q,
           user: M,
           guildId: null == a ? true : a.id,

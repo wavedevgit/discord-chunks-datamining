@@ -135,14 +135,14 @@ function w(e) {
   null != e.channelId && (N(), g.clear())
 }
 
-function x(e) {
+function L(e) {
   if (null === e.streamId) {
     let t = O(e.userId, e.context);
     g.set(t, d.Z.NO_OVERRIDE)
   }
 }
 
-function L(e) {
+function x(e) {
   h = e.section
 }
 
@@ -305,13 +305,13 @@ f(V, "displayName", "RTCDebugStore");
 let H = new V(Chunk570140.Z, {
   RTC_DEBUG_MODAL_OPEN: P,
   RTC_DEBUG_MODAL_CLOSE: D,
-  RTC_DEBUG_MODAL_SET_SECTION: L,
+  RTC_DEBUG_MODAL_SET_SECTION: x,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
   RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: B,
   RTC_DEBUG_SET_RECORDING_FLAG: Z,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
   VOICE_CHANNEL_SELECT: w,
-  RTC_CONNECTION_VIDEO: x,
+  RTC_CONNECTION_VIDEO: L,
   MEDIA_ENGINE_CONNECTION_STATS: k
 })

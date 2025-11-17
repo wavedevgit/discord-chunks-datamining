@@ -38,7 +38,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk213285 = require("./213285.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,7 +54,7 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -184,8 +184,8 @@ let K = Chunk473749.memo(function(e) {
       }
     })), T = i.useMemo(() => h || y ? "none" : "block", [h, y]);
     return (0, r.jsx)(s.animated.div, {
-      className: o()(x.connectedAnimationContainer, {
-        [x.right]: d
+      className: o()(L.connectedAnimationContainer, {
+        [L.right]: d
       }),
       style: {
         width: v,
@@ -194,15 +194,15 @@ let K = Chunk473749.memo(function(e) {
       },
       children: (0, r.jsxs)("div", {
         ref: E,
-        className: o()(x.connectedAnimationInnerContainer, {
-          [x.exiting]: "exiting" === O,
-          [x.left]: !d,
-          [x.right]: d
+        className: o()(L.connectedAnimationInnerContainer, {
+          [L.exiting]: "exiting" === O,
+          [L.left]: !d,
+          [L.right]: d
         }),
         children: [d && (0, r.jsx)(c.Fmz, {
           importData: B,
           shouldAnimate: !y,
-          className: x.animation
+          className: L.animation
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
@@ -214,9 +214,9 @@ let K = Chunk473749.memo(function(e) {
         }), !d && (0, r.jsx)(c.Fmz, {
           importData: B,
           shouldAnimate: !y,
-          className: x.animation
+          className: L.animation
         }), (0, r.jsx)("div", {
-          className: x.emptySpace
+          className: L.emptySpace
         })]
       })
     })
@@ -229,7 +229,7 @@ let K = Chunk473749.memo(function(e) {
       guildId: a
     } = e, o = 2 * t, s = -(t / 2);
     return (0, r.jsx)("div", {
-      className: x.effect,
+      className: L.effect,
       style: {
         top: s,
         left: s,
@@ -264,7 +264,7 @@ let K = Chunk473749.memo(function(e) {
       guildId: S,
       isSettingsPreview: R = false,
       voiceState: w,
-      showStreamPreview: L,
+      showStreamPreview: x,
       onShowStreamPreview: M,
       onWatchStream: k,
       connectedOn: j,
@@ -284,8 +284,8 @@ let K = Chunk473749.memo(function(e) {
       userId: s.id,
       context: O
     }) || ei, eo = (0, l.e7)([I.Z], () => I.Z.getStreamForUser(s.id, S)), es = null != eo, el = i.useCallback(() => {
-      (L || null != es) && M(null)
-    }, [M, L, es]), ec = i.useCallback(() => (0, r.jsx)(b.Z, {
+      (x || null != es) && M(null)
+    }, [M, x, es]), ec = i.useCallback(() => (0, r.jsx)(b.Z, {
       user: s,
       channel: t,
       onWatch: () => {
@@ -295,21 +295,21 @@ let K = Chunk473749.memo(function(e) {
         }), el(), k(null != eo ? eo : null))
       },
       onAction: () => k,
-      previewIsOpen: L,
+      previewIsOpen: x,
       location: D.Sbl.UNLOCKED_OVERLAY,
       hideTip: true
-    }), [s, t, eo, L, el, k]), eu = i.useCallback(e => {
+    }), [s, t, eo, x, el, k]), eu = i.useCallback(e => {
       a || null == E || E(e, s)
     }, [a, E, s]), ed = i.useCallback(() => {
       a || null != es && M(s.id)
     }, [a, M, es, s]), ef = a || R, e_ = i.useMemo(() => U(m), [m]), ep = i.useMemo(() => G(e_), [e_]), eh = i.useMemo(() => s.getAvatarURL(S, ep), [s, S, ep]);
     return f === D.OYC.ONLY_WHILE_SPEAKING && ef && !ea || null == $ ? null : n ? (0, r.jsxs)(c.P3F, {
       innerRef: B,
-      className: o()(x.voiceUser, {
-        [x.speaking]: ea,
-        [x.interactive]: !a,
-        [x.flipped]: n,
-        [x.justConnected]: H
+      className: o()(L.voiceUser, {
+        [L.speaking]: ea,
+        [L.interactive]: !a,
+        [L.flipped]: n,
+        [L.justConnected]: H
       }),
       onClick: a ? true : e => null == g ? true : g(e, s),
       onContextMenu: eu,
@@ -319,19 +319,19 @@ let K = Chunk473749.memo(function(e) {
         targetElementRef: F,
         position: "left",
         renderPopout: ec,
-        shouldShow: L,
+        shouldShow: x,
         onRequestClose: el,
         spacing: 0,
         children: () => (0, r.jsxs)("div", {
-          className: x.username,
+          className: L.username,
           ref: F,
           children: [(0, r.jsx)(v.nm, {
             guildId: S,
             user: s,
             video: $.selfVideo,
             isStreaming: es,
-            className: x.voiceIcons,
-            iconClassName: x.voiceIcon,
+            className: L.voiceIcons,
+            iconClassName: L.voiceIcon,
             isWatching: er,
             localMute: ee && !Z,
             localVideoDisabled: en,
@@ -344,7 +344,7 @@ let K = Chunk473749.memo(function(e) {
             primaryGuild: s.primaryGuild,
             userId: s.id,
             contextGuildId: S,
-            className: x.clanTag,
+            className: L.clanTag,
             disableGuildProfile: true,
             onShowProfile: () => {
               (0, P.Ws)(D.Odu.VOICE_V3, {
@@ -366,7 +366,7 @@ let K = Chunk473749.memo(function(e) {
         voiceBackgroundWidth: V,
         rightAlign: true
       }), (0, r.jsx)(q, {
-        className: x.avatar,
+        className: L.avatar,
         size: e_,
         src: eh,
         "aria-hidden": true
@@ -378,18 +378,18 @@ let K = Chunk473749.memo(function(e) {
       })]
     }) : (0, r.jsxs)(c.P3F, {
       innerRef: B,
-      className: o()(x.voiceUser, {
-        [x.speaking]: ea,
-        [x.interactive]: !a,
-        [x.flipped]: n,
-        [x.justConnected]: H
+      className: o()(L.voiceUser, {
+        [L.speaking]: ea,
+        [L.interactive]: !a,
+        [L.flipped]: n,
+        [L.justConnected]: H
       }),
       onClick: a ? true : e => null == g ? true : g(e, s),
       onContextMenu: eu,
       onMouseEnter: ed,
       onMouseLeave: el,
       children: [(0, r.jsx)(q, {
-        className: x.avatar,
+        className: L.avatar,
         size: e_,
         src: eh,
         "aria-hidden": true
@@ -402,12 +402,12 @@ let K = Chunk473749.memo(function(e) {
         targetElementRef: F,
         position: "right",
         renderPopout: ec,
-        shouldShow: L,
+        shouldShow: x,
         onRequestClose: el,
         spacing: 0,
         children: () => (0, r.jsxs)("div", {
-          className: o()(x.username, {
-            [x.streaming]: es
+          className: o()(L.username, {
+            [L.streaming]: es
           }),
           ref: F,
           children: [(0, r.jsx)(c.Text, {
@@ -418,7 +418,7 @@ let K = Chunk473749.memo(function(e) {
             primaryGuild: s.primaryGuild,
             userId: s.id,
             contextGuildId: S,
-            className: x.clanTag,
+            className: L.clanTag,
             disableGuildProfile: true,
             onShowProfile: () => {
               (0, P.Ws)(D.Odu.VOICE_V3, {
@@ -432,8 +432,8 @@ let K = Chunk473749.memo(function(e) {
             user: s,
             video: $.selfVideo,
             isStreaming: es,
-            className: x.voiceIcons,
-            iconClassName: x.voiceIcon,
+            className: L.voiceIcons,
+            iconClassName: L.voiceIcon,
             isWatching: er,
             localMute: ee && !Z,
             localVideoDisabled: en,
@@ -477,7 +477,7 @@ let K = Chunk473749.memo(function(e) {
     let w = e => {
         A(e)
       },
-      x = (e, t) => {
+      L = (e, t) => {
         m || (0, u.jW)(e, async () => {
           let {
             default: e
@@ -503,7 +503,7 @@ let K = Chunk473749.memo(function(e) {
           }))
         })
       },
-      L = i.useCallback(e => {
+      x = i.useCallback(e => {
         var n, r;
         let i = null == (n = S.Z.getWidget(t)) ? true : n.layoutId,
           o = null != i ? null == (r = S.Z.getWidgetsForLayout(i)) ? true : r.find(e => e.type === D.Odu.GO_LIVE) : null;
@@ -544,13 +544,13 @@ let K = Chunk473749.memo(function(e) {
           displayUserMode: l,
           size: p,
           locked: k,
-          onContextMenu: x,
-          onClick: x,
+          onContextMenu: L,
+          onClick: L,
           context: g,
           channel: a,
           showStreamPreview: b.id === T,
           onShowStreamPreview: w,
-          onWatchStream: L,
+          onWatchStream: x,
           isSettingsPreview: m
         })
       }

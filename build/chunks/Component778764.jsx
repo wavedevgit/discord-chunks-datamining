@@ -76,7 +76,7 @@ function P(e) {
     challenge: c,
     showAccountSettingsButton: u = false,
     initialSlide: m = v.x.INIT
-  } = e, O = (0, d.Dt)(), [A, C] = i.useState(T.intl.string(T.t["I/sJtJ"])), [N, R] = i.useState(false), [P, D] = i.useState(m), [w, x] = i.useState(""), [L, M] = i.useState(null), k = async () => {
+  } = e, O = (0, d.Dt)(), [A, C] = i.useState(T.intl.string(T.t["I/sJtJ"])), [N, R] = i.useState(false), [P, D] = i.useState(m), [w, L] = i.useState(""), [x, M] = i.useState(null), k = async () => {
     let e;
     D(v.x.REGISTER);
     let t = g.isPlatformEmbedded && b.ZP.supportsFeature(I.eRX.WEBAUTHN) ? b.ZP.webAuthnRegister(c) : a.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
@@ -86,7 +86,7 @@ function P(e) {
       E.Z.captureException(e), M(T.intl.string(T.t.xSCvBf)), D(v.x.INIT);
       return
     }
-    x(e), D(v.x.NAME)
+    L(e), D(v.x.NAME)
   };
   return (0, r.jsxs)(l.Y0X, {
     transitionState: t,
@@ -117,10 +117,10 @@ function P(e) {
               src: n(773072)
             })
           }), (0, r.jsx)("div", {
-            children: null != L && (0, r.jsx)(l.Text, {
+            children: null != x && (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
               color: "status-danger",
-              children: L
+              children: x
             })
           }), (0, r.jsx)("div", {
             children: (0, r.jsx)(l.Text, {
@@ -321,7 +321,7 @@ function w() {
     description: Chunk388032.intl.string(Chunk388032.t.TMukAN),
     children: [module.length > 0 && (0, Chunk54381.jsx)("div", {
       className: Chunk421156.credentialList,
-      children: module.map(L)
+      children: module.map(x)
     }), (0, Chunk54381.jsx)("div", {
       children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
@@ -335,7 +335,7 @@ function w() {
   })
 }
 
-function x(e) {
+function L(e) {
   if (null !== e.last_used) return (0, r.jsx)(l.Text, {
     variant: "text-sm/normal",
     children: T.intl.format(T.t["7JgxF5"], {
@@ -344,13 +344,13 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   return (0, r.jsxs)("div", {
     className: S.credentialItem,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-md/semibold",
       children: e.name
-    }), x(e), (0, r.jsx)(s.zx, {
+    }), L(e), (0, r.jsx)(s.zx, {
       look: s.zx.Looks.BLANK,
       color: s.zx.Colors.TRANSPARENT,
       size: s.zx.Sizes.ICON,

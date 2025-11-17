@@ -2,10 +2,10 @@
 /** chunk id: 921254, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ji: () => x,
+  Ji: () => L,
   O_: () => D,
   qA: () => c,
-  uR: () => L
+  uR: () => x
 });
 var Chunk473749 = require("./473749.js"),
   Chunk772848 = require("./772848.js");
@@ -583,16 +583,16 @@ var D = Chunk473749.forwardRef(function(e, t) {
     r.useEffect(function() {
       null != C.current && (E(C.current), C.current = m(w))
     }, [E, w, m]);
-    var x = r.useCallback(function(e, t) {
+    var L = r.useCallback(function(e, t) {
         A.current.set(e.id, {
           confetti: e,
           spriteCanvas: t
         }), null == C.current && w()
       }, [w]),
-      L = r.useCallback(function(e, t, n, r, a) {
+      x = r.useCallback(function(e, t, n, r, a) {
         var o, s = R(null != (o = e.id) ? o : (0, i.Z)(), e, n, r, a);
-        return x(s, t), s
-      }, [x]),
+        return L(s, t), s
+      }, [L]),
       M = r.useCallback(function(e) {
         A.current.delete(e)
       }, []),
@@ -604,8 +604,8 @@ var D = Chunk473749.forwardRef(function(e, t) {
       }, []);
     r.useImperativeHandle(t, function() {
       return {
-        createConfetti: L,
-        addConfetti: x,
+        createConfetti: x,
+        addConfetti: L,
         deleteConfetti: M,
         clearConfetti: k,
         getCanvas: j,
@@ -613,7 +613,7 @@ var D = Chunk473749.forwardRef(function(e, t) {
         removeReadyListener: T,
         isReady: v
       }
-    }, [L, x, M, k, j, I, T, v]);
+    }, [x, L, M, k, j, I, T, v]);
     var U = r.useCallback(function(e, t) {
         var n, r, i = t.clickHandler,
           o = t.mouseHandler;
@@ -715,7 +715,7 @@ var D = Chunk473749.forwardRef(function(e, t) {
     height: 0,
     left: "-100%"
   },
-  x = Chunk473749.forwardRef(function(e, t) {
+  L = Chunk473749.forwardRef(function(e, t) {
     var n = e.className,
       i = e.visible,
       a = true !== i && i,
@@ -826,7 +826,7 @@ var D = Chunk473749.forwardRef(function(e, t) {
     })
   });
 
-function L(e, t) {
+function x(e, t) {
   var n, i, a = r.useState(null != (n = null == t ? true : t.isReady) && n),
     o = a[0],
     s = a[1],

@@ -31,8 +31,8 @@ var Chunk507604 = require("./507604.js"),
   P = Chunk46015("".charAt),
   D = Chunk46015("".replace),
   w = Chunk46015("".indexOf),
-  x = Chunk46015("".slice),
-  L = /^\?<[^\s\d!#%&*+<=>@^][^\s!#%&*+<=>@^]*>/,
+  L = Chunk46015("".slice),
+  x = /^\?<[^\s\d!#%&*+<=>@^][^\s!#%&*+<=>@^]*>/,
   M = /a/g,
   k = /a/g,
   j = new A(M) !== M,
@@ -60,8 +60,8 @@ var Chunk507604 = require("./507604.js"),
           s = true;
           break;
         case "(" === t:
-          if (i += t, "?:" === x(e, r + 1, r + 3)) continue;
-          R(L, x(e, r + 1)) && (r += 2, l = true), u++;
+          if (i += t, "?:" === L(e, r + 1, r + 3)) continue;
+          R(x, L(e, r + 1)) && (r += 2, l = true), u++;
           continue;
         case ">" === t && l:
           if ("" === d || b(o, d)) throw new N("Invalid capture group name");

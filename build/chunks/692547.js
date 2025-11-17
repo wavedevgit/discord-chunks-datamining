@@ -2,7 +2,7 @@
 /** chunk id: 692547, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk688619 = require("./688619.js"),
   i = require.n(Chunk688619),
@@ -44,7 +44,7 @@ let {
   colors: l()(b, (e, t) => {
     let n = t;
     return {
-      css: x(n),
+      css: L(n),
       resolve(t) {
         var r, i, a, o, s, l, c;
         let u = e[t.theme],
@@ -71,7 +71,7 @@ let {
     let n = t,
       r = N[n];
     return {
-      css: x(n),
+      css: L(n),
       resolve(e) {
         var t;
         return P(r, null != (t = null == e ? true : e.saturation) ? t : 1)
@@ -79,7 +79,7 @@ let {
     }
   }),
   shadows: l()(I, (e, t) => ({
-    css: x(t),
+    css: L(t),
     resolve: t => ({
       boxShadow: e[t.theme].boxShadow,
       filter: e[t.theme].filter,
@@ -138,9 +138,9 @@ function w(e) {
   return e.toLowerCase().replace(/_/g, "-")
 }
 
-function x(e, t) {
+function L(e, t) {
   let n = null != t ? w(t) : null,
     r = w(e);
   return "var(--".concat([n, r].filter(Boolean).join("-"), ")")
 }
-let L = R
+let x = R

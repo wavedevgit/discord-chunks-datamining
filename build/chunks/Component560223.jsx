@@ -104,10 +104,10 @@ let I = e => {
         fractionalState: D
       } = (0, l.Z)(),
       w = (0, d.W)(),
-      x = (0, u.bg)({
+      L = (0, u.bg)({
         location: "PremiumPerks"
       }),
-      L = c.JH.useExperiment({
+      x = c.JH.useExperiment({
         location: "PremiumPerks"
       }).enabled,
       M = f.Z.useExperiment({
@@ -120,8 +120,8 @@ let I = e => {
         isPremiumSubscriber: P,
         fractionalState: D,
         isInReverseTrial: w,
-        showProfileWidgets: x,
-        showDisplayNameStyles: L,
+        showProfileWidgets: L,
+        showDisplayNameStyles: x,
         recurring3PPromotionExperiment: M
       }),
       j = k.some(e => null != e.pillText);

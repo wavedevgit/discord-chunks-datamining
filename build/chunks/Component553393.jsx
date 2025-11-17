@@ -43,7 +43,7 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function x(e) {
   }
   return e
 }
-let L = "8px",
+let x = "8px",
   M = "11px",
   k = 222;
 
@@ -122,7 +122,7 @@ function j(e) {
     ec = () => {
       ea.dispatch(N.CkL.POPOUT_CLOSE)
     },
-    eu = "top" === F ? "".concat(L, " ").concat(L, " 0 0") : "0 0 ".concat(L, " ").concat(L),
+    eu = "top" === F ? "".concat(x, " ").concat(x, " 0 0") : "0 0 ".concat(x, " ").concat(x),
     ed = () => {
       (0, E._3)({
         questId: G.id,
@@ -162,7 +162,7 @@ function j(e) {
         let {
           default: e
         } = await n.e("85045").then(n.bind(n, 748862));
-        return t => (0, r.jsx)(e, x({
+        return t => (0, r.jsx)(e, L({
           username: null != W ? W : "",
           onConfirm: () => ((0, E._3)({
             questId: G.id,
@@ -294,7 +294,7 @@ function U(e) {
     questContent: y.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: true,
     sourceQuestContent: y.jn.MEMBERS_LIST,
-    children: t => (0, r.jsx)(j, x({
+    children: t => (0, r.jsx)(j, L({
       impressionRef: t
     }, e))
   })

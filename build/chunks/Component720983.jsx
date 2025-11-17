@@ -1,5 +1,5 @@
 /** Chunk was on 77033 **/
-/** chunk id: 720983, original params: e,n,t (module,exports,require) **/
+/** chunk id: 720983, original params: n,e,l (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -11,44 +11,44 @@ var Chunk54381 = require("./54381.js"),
   Chunk705338 = require("./705338.js"),
   Chunk260999 = require("./260999.js");
 
-function c(e) {
+function c(n) {
   let {
-    guildId: n,
-    storefront: t,
+    guildId: e,
+    storefront: l,
     selectedPageIndex: i
-  } = e;
-  if (null == t) return null;
-  let c = null != t.logoAssetId ? (0, d._W)(t.applicationId, t.logoAssetId, 75) : null;
-  return (0, l.jsxs)("div", {
+  } = n;
+  if (null == l) return null;
+  let c = null != l.logoAssetId ? (0, r._W)(l.applicationId, l.logoAssetId, 75) : null;
+  return (0, t.jsxs)("div", {
     className: s.headerContainer,
-    children: [(0, l.jsxs)("div", {
+    children: [(0, t.jsxs)("div", {
       className: s.titleContainer,
-      children: [null != c && (0, l.jsx)("img", {
+      children: [null != c && (0, t.jsx)("img", {
         className: s.logo,
         src: c,
-        alt: t.title
-      }), (0, l.jsx)(r.Text, {
+        alt: l.title
+      }), (0, t.jsx)(d.Text, {
         variant: "text-md/medium",
         color: "text-default",
         lineClamp: 1,
-        children: t.title
+        children: l.title
       })]
-    }), t.pages.map((e, t) => (0, l.jsx)(r.P3F, {
+    }), l.pages.map((n, l) => (0, t.jsx)(d.P3F, {
       onClick: () => {
         (0, o.Z)({
-          guildId: n,
-          pageIndex: t
+          guildId: e,
+          pageIndex: l
         })
       },
       className: a()(s.pageTitleContainer, {
-        [s.selectedPageIndicator]: i === t
+        [s.selectedPageIndicator]: i === l
       }),
-      children: (0, l.jsx)(r.Heading, {
+      children: (0, t.jsx)(d.Heading, {
         variant: "heading-md/semibold",
         color: "text-default",
         lineClamp: 1,
-        children: e.title
+        children: n.title
       })
-    }, "".concat(e.title, "-").concat(t)))]
+    }, "".concat(n.title, "-").concat(l)))]
   })
 }

@@ -127,7 +127,7 @@ function N(e) {
       return (0, o.Z)(t, b.xjy.EMBEDDED) ? h.Z.getGuild(null == (e = p.Z.getChannel(null == (r = m.Z.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != P ? h.Z.getGuild(P.getGuildId()) : null
     }),
     w = (0, a.e7)([h.Z], () => null != R ? h.Z.getGuild(R.guildId) : null),
-    x = (0, a.e7)([c.Z], () => {
+    L = (0, a.e7)([c.Z], () => {
       if (null != t)
         if (null != t.application_id) return c.Z.getApplication(t.application_id);
         else return c.Z.getApplicationByName(t.name);
@@ -141,7 +141,7 @@ function N(e) {
   }, [null == t ? true : t.type, N, P, n.id]), (null == t ? true : t.type) !== b.IIU.HANG_STATUS || N) ? (0, r.jsx)(s.Z, T(v({}, I), {
     activity: t,
     user: n,
-    application: x,
+    application: L,
     hideHeader: y,
     activityGuild: null != D ? D : w,
     showChannelDetails: O,

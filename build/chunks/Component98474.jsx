@@ -76,12 +76,12 @@ function T(e) {
       size: 22
     }),
     colorize: false
-  }], [n.name, n.id]), x = b.x - b.width / 2 * v, L = b.y - b.height / 2 * v, M = (0, l.q_F)({
+  }], [n.name, n.id]), L = b.x - b.width / 2 * v, x = b.y - b.height / 2 * v, M = (0, l.q_F)({
     from: {
       y: g.y
     },
     to: {
-      y: L
+      y: x
     },
     config: {
       duration: O,
@@ -100,7 +100,7 @@ function T(e) {
       opacity: 1
     },
     to: {
-      x: x,
+      x: L,
       scale: v,
       opacity: .4
     },

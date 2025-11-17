@@ -126,7 +126,7 @@ function w(e) {
   return null != t.guild_id && N(t.guild_id, t.id)
 }
 
-function x(e) {
+function L(e) {
   let {
     channels: t
   } = e, n = false;
@@ -134,7 +134,7 @@ function x(e) {
   return n
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     restrictions: n
@@ -184,7 +184,7 @@ let j = new k(Chunk570140.Z, {
   IMPERSONATE_STOP: D,
   CHANNEL_CREATE: w,
   CHANNEL_DELETE: w,
-  CHANNEL_UPDATES: x,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: L,
+  CHANNEL_UPDATES: L,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: x,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: M
 })

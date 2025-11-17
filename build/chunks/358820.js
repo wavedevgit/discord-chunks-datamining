@@ -6,7 +6,7 @@ require.d(exports, {
   ge: () => M,
   r5: () => k,
   rk: () => D,
-  wV: () => L
+  wV: () => x
 }), require("./388685.js"), require("./415506.js"), require("./457542.js");
 var Chunk392711 = require("./392711.js"),
   Chunk544891 = require("./544891.js"),
@@ -190,7 +190,7 @@ async function w(e) {
   if (null == o) throw Error("Voice filters catalog signature is missing");
   return await e.setCatalog(r, o), a
 }
-async function x(e) {
+async function L(e) {
   if (!p.ZP.canCheckVoiceFilterFilesExist()) return;
   let t = Object.keys(e.models).map(e => ({
       id: e,
@@ -208,13 +208,13 @@ async function x(e) {
   let i = t.map(e => e.fileName);
   return (0, o.dZ)(i) && await (0, E.A)(i), r
 }
-async function L() {
+async function x() {
   if (!Chunk709706.Z.isNativeModuleLoaded()) return void S.info("Voice Filter catalog refresh ignored, module not loaded.");
   if (!N) try {
     N = true;
     let e = Chunk998502.ZP.getVoiceFilters(),
       t = await w(module),
-      n = null == Chunk709706.Z.getCatalogLastFetchTime() ? await x(exports) : true;
+      n = null == Chunk709706.Z.getCatalogLastFetchTime() ? await L(exports) : true;
     await Chunk570140.Z.dispatch({
       type: "VOICE_FILTER_CATALOG_FETCH_SUCCESS",
       catalog: exports,
@@ -257,7 +257,7 @@ async function k() {
       }), await Chunk570140.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
         state: Chunk750180.O.LOADED
-      }), await L();
+      }), await x();
       let n = Chunk131951.Z.getMostRecentlyRequestedVoiceFilter();
       if (null != require) {
         var e;

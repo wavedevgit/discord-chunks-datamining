@@ -114,7 +114,7 @@ function O(e) {
       guildId: s,
       channelId: d
     }), [v, a, n, O, s, d]),
-    x = i.useCallback(e => (D.current = Date.now(), null != I) ? I(e, D.current) : (0, r.jsx)(c.Z, h(_({}, e), {
+    L = i.useCallback(e => (D.current = Date.now(), null != I) ? I(e, D.current) : (0, r.jsx)(c.Z, h(_({}, e), {
       user: n,
       currentUser: a,
       guildId: s,
@@ -134,7 +134,7 @@ function O(e) {
     popoutKey: u.Tg,
     shouldShow: C,
     preload: N ? w : true,
-    renderPopout: x,
+    renderPopout: L,
     onRequestOpen: T,
     onRequestClose: S
   }, P), {

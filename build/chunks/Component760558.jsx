@@ -37,8 +37,8 @@ let I = e => {
   let C = [null == t ? "UNUSED_QUANTITY_SELECT" : null, null == n ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
     [N, R] = (0, l.Wu)([d.Z], () => [d.Z.isModifyingAppliedBoost, d.Z.applyBoostError]),
     [P, D] = i.useState(C[0]),
-    [w, x] = i.useState(false),
-    [L, M] = i.useState(n),
+    [w, L] = i.useState(false),
+    [x, M] = i.useState(n),
     [k, j] = i.useState(null != t ? t : A.slice(0, 1)),
     U = i.useMemo(() => null == k ? [] : k.map(e => {
       let {
@@ -100,13 +100,13 @@ let I = e => {
         selectedSlotGuilds: U
       }),
       CONFIRM() {
-        if (null == L) return null;
+        if (null == x) return null;
         let e = k.filter(e => (0, h.tl)(e)).length,
           t = k.length,
           n = U.length,
           i = "CONFIRM" === C[0] ? B : () => D(C[C.indexOf(P) - 1]),
           a = async () => {
-            if (x(false), null != L && (null == k ? true : k.length) !== 0) {
+            if (L(false), null != x && (null == k ? true : k.length) !== 0) {
               o()(!k.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
               try {
                 await Promise.all(k.map(e => {
@@ -114,14 +114,14 @@ let I = e => {
                     premiumGuildSubscription: t
                   } = e;
                   return null != t ? (0, u.dG)(t.guildId, t.id) : Promise.resolve()
-                })), await (0, u.W3)(L.id, k.map(e => {
+                })), await (0, u.W3)(x.id, k.map(e => {
                   let {
                     id: t
                   } = e;
                   return t
                 }), I === E.P.PERK), D("SUCCESS")
               } catch (e) {
-                x(true)
+                L(true)
               }
             }
           }, l = G ? O.intl.string(O.t["PR0n//"]) : O.intl.string(O.t["7KP/fI"]);
@@ -147,7 +147,7 @@ let I = e => {
           }],
           children: G ? (0, r.jsx)(m.Z.TransferBody, {
             fromGuilds: U,
-            toGuild: L,
+            toGuild: x,
             blurb: O.intl.formatToPlainString(O.t.SSA2lu, {
               slotCount: t,
               guildCount: n
@@ -157,7 +157,7 @@ let I = e => {
             slotCount: t,
             canceledCount: e
           }) : (0, r.jsx)(m.Z.ApplyBody, {
-            guild: L,
+            guild: x,
             blurb: O.intl.string(O.t.yTlZV0),
             warning: O.intl.formatToPlainString(O.t.KPnDlu, {
               days: y.o3l,
@@ -179,7 +179,7 @@ let I = e => {
           title: e,
           actions: [],
           children: (0, r.jsx)(b.R7, {
-            guild: L,
+            guild: x,
             isTransfer: G,
             guildBoostQuantity: k.length,
             onClose: B,

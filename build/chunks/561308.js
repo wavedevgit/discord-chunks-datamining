@@ -14,7 +14,7 @@ require.d(exports, {
   ap: () => C,
   bT: () => N,
   dw: () => S,
-  ig: () => x,
+  ig: () => L,
   kr: () => E,
   n2: () => y,
   q_: () => D,
@@ -227,7 +227,7 @@ function w(e) {
   }
 }
 
-function x(e) {
+function L(e) {
   var t;
   return null == (t = g(e, o.N.TRENDING_CONTENT)) ? true : t.trending
 }

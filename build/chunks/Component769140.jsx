@@ -73,7 +73,7 @@ function Z(e) {
   }), {
     previewUrl: J,
     isLoading: $
-  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(W), en = (0, p.Kt)() && (0, p.zd)(null == W ? true : W.id), er = (0, o.e7)([v.Z], () => null != W && !en && v.Z.canBasicChannel(L.S7T.CONNECT, W)), ei = (0, d.Z)($ ? null : J), ea = $ || null == J ? ei : J;
+  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(W), en = (0, p.Kt)() && (0, p.zd)(null == W ? true : W.id), er = (0, o.e7)([v.Z], () => null != W && !en && v.Z.canBasicChannel(x.S7T.CONNECT, W)), ei = (0, d.Z)($ ? null : J), ea = $ || null == J ? ei : J;
   if (null == Y || null == W || false === i.discoverable) return null;
   let eo = () => {
       let e = e => {
@@ -91,7 +91,7 @@ function Z(e) {
         "aria-disabled": !ee,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: H === L.BRd.LIGHT ? B : G
+          src: H === x.BRd.LIGHT ? B : G
         }), V !== M.l.MODAL && V !== M.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             className: U.overlayText,
@@ -181,7 +181,7 @@ function Z(e) {
         tags: (0, r.jsx)(g.ZP, {
           size: g.OH.SMALL
         }),
-        contextMenu: (0, r.jsx)(x.Z, {
+        contextMenu: (0, r.jsx)(L.Z, {
           display: "live",
           user: t,
           onClose: F

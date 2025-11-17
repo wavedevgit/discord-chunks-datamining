@@ -41,7 +41,7 @@ function p(e) {
       null != a && a(e)
     },
     w = o()(_.checkboxOption, "string" == typeof S && _[S], "indicator" !== O && _.spacing),
-    x = (0, r.jsxs)(r.Fragment, {
+    L = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: _.checkboxIndicator,
         ref: v,
@@ -91,7 +91,7 @@ function p(e) {
     className: w,
     "data-selected": t || true,
     "data-disabled": p || true,
-    children: x
+    children: L
   }) : (0, r.jsx)(c.tE, {
     focusTarget: I,
     ringTarget: T,
@@ -106,7 +106,7 @@ function p(e) {
       "data-mana-component": "checkbox",
       className: w,
       value: String(b),
-      children: x
+      children: L
     })
   })
 }

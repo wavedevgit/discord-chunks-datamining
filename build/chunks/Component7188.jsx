@@ -122,12 +122,12 @@ function D(e) {
     N = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), y.PremiumTypes.TIER_1)),
     D = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? true : n.channelId)),
     w = i.useMemo(() => null != n ? [n] : [], [n]),
-    x = i.useCallback(() => {
+    L = i.useCallback(() => {
       null != D && (0, f.Z)(D.getGuildId(), D.id, I)
     }, [D, I]);
   if (null == n || null == D) return null;
-  let L = R;
-  return t || N || (L = P), (0, r.jsx)(o.yRy, {
+  let x = R;
+  return t || N || (x = P), (0, r.jsx)(o.yRy, {
     targetElementRef: v,
     position: "top",
     renderPopout: e => {
@@ -141,7 +141,7 @@ function D(e) {
           activeStreams: w,
           onClose: t,
           showReportOption: true,
-          handleGoLive: x,
+          handleGoLive: L,
           onInteraction: (0, c.u)("ManageStreamsButton", null != S ? S : u, {
             entrypoint: b.A5.OTHER_BUTTON
           })
@@ -152,7 +152,7 @@ function D(e) {
     children: e => (0, r.jsx)(E.Z, T(A(T({}, e), {
       buttonRef: v,
       label: O.intl.string(O.t.tmiYpF),
-      iconComponent: L,
+      iconComponent: x,
       onClick: t => {
         (null != S || null != u) && (0, l.v)(null != S ? S : u, l.d.STREAM_SETTINGS), null == e || e.onClick(t)
       }

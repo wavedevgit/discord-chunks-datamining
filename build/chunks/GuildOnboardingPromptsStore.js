@@ -176,7 +176,7 @@ function w(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     channelIds: n
@@ -186,7 +186,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     connections: n
@@ -293,7 +293,7 @@ let Z = new B(Chunk570140.Z, {
   GUILD_ONBOARDING_UPDATE_RESPONSES_SUCCESS: w,
   GUILD_ONBOARDING_PROMPTS_LOCAL_UPDATE: R,
   GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS: R,
-  GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: x,
-  GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_SUCCESS: L,
+  GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: L,
+  GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_SUCCESS: x,
   GUILD_SETTINGS_ONBOARDING_SET_MODE: M
 })

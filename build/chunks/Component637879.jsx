@@ -179,7 +179,7 @@ function w(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     title: t,
     showDivider: n,
@@ -197,7 +197,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     headerId: t,
     titleText: n,
@@ -225,10 +225,10 @@ function M(e) {
     title: l,
     trailingIcon: c
   } = n.data;
-  return (0, r.jsxs)(x, {
+  return (0, r.jsxs)(L, {
     title: l,
     showDivider: i > 0,
-    children: [(0, r.jsx)(L, {
+    children: [(0, r.jsx)(x, {
       headerId: l,
       titleText: l,
       trailingIcon: c

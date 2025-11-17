@@ -64,7 +64,7 @@ function v(e, t, n) {
   let {
     channel: D,
     type: w
-  } = e, [x, L] = r.useState(() => (0, p.PA)()), M = (0, i.Z)(), k = (0, a.e7)([u.ZP, _.default], () => {
+  } = e, [L, x] = r.useState(() => (0, p.PA)()), M = (0, i.Z)(), k = (0, a.e7)([u.ZP, _.default], () => {
     var e, t;
     let n = _.default.getCurrentUser();
     return null != (t = null != D.guild_id && null != n ? null == (e = u.ZP.getMember(D.guild_id, n.id)) ? true : e.isPending : null) && t
@@ -83,7 +83,7 @@ function v(e, t, n) {
   })), Z = (0, h.Z)({
     navId: "channel-autocomplete",
     scrollerRef: n,
-    state: x,
+    state: L,
     onFocus: e => W.setSelectedIndex(e)
   }), F = null == (E = e.editorRef.current) ? true : E.getCurrentWord(), V = null == (y = e.editorRef.current) ? true : y.getSlateEditor(), H = null;
   null != V && (H = null != (A = null == (S = c.bN.getSelectedParentOfType(V, p.un)) ? true : S[0]) ? A : null);
@@ -108,13 +108,13 @@ function v(e, t, n) {
   return r.useEffect(() => {
     W.updateProps(Y)
   }), r.useImperativeHandle(t, () => W, [W]), r.useEffect(() => {
-    let e = e => L(e);
+    let e = e => x(e);
     return W.on("change", e), W.on("update", M), () => {
       W.off("change", e), W.off("update", M)
     }
   }, [M, W]), r.useEffect(() => {
     var e;
-    let t = null == (e = x.query) ? true : e.typeInfo.stores;
+    let t = null == (e = L.query) ? true : e.typeInfo.stores;
     if (null != t) {
       let e = () => W.queryResults();
       for (let n of t) n.addChangeListener(e);
@@ -122,5 +122,5 @@ function v(e, t, n) {
         for (let n of t) n.removeChangeListener(e)
       }
     }
-  }, [W, null == (T = x.query) ? true : T.typeInfo]), [x, W, Z]
+  }, [W, null == (T = L.query) ? true : T.typeInfo]), [L, W, Z]
 }

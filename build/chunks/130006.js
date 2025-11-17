@@ -30,7 +30,7 @@ module.exports = function(e, t, n, o, p, m, A) {
   l(n, t, o);
   var C, N, R, P = function(e) {
       if (e === p && M) return M;
-      if (!y && e && e in x) return x[e];
+      if (!y && e && e in L) return L[e];
       switch (e) {
         case v:
         case I:
@@ -45,25 +45,25 @@ module.exports = function(e, t, n, o, p, m, A) {
     },
     D = t + " Iterator",
     w = false,
-    x = e.prototype,
-    L = x[O] || x["@@iterator"] || p && x[p],
-    M = !y && L || P(p),
-    k = "Array" === t && x.entries || L;
-  if (k && (C = c(k.call(new e))) !== Object.prototype && C.next && (!a && c(C) !== b && (u ? u(C, b) : s(C[O]) || _(C, O, S)), d(C, D, true, true), a && (h[D] = S)), g && p === I && L && L.name !== I && (!a && E ? f(x, "name", I) : (w = true, M = function() {
-      return i(L, this)
+    L = e.prototype,
+    x = L[O] || L["@@iterator"] || p && L[p],
+    M = !y && x || P(p),
+    k = "Array" === t && L.entries || x;
+  if (k && (C = c(k.call(new e))) !== Object.prototype && C.next && (!a && c(C) !== b && (u ? u(C, b) : s(C[O]) || _(C, O, S)), d(C, D, true, true), a && (h[D] = S)), g && p === I && x && x.name !== I && (!a && E ? f(L, "name", I) : (w = true, M = function() {
+      return i(x, this)
     })), p)
     if (N = {
         values: P(I),
         keys: m ? M : P(v),
         entries: P(T)
       }, A)
-      for (R in N) !y && !w && R in x || _(x, R, N[R]);
+      for (R in N) !y && !w && R in L || _(L, R, N[R]);
     else r({
       target: t,
       proto: true,
       forced: y || w
     }, N);
-  return (!a || A) && x[O] !== M && _(x, O, M, {
+  return (!a || A) && L[O] !== M && _(L, O, M, {
     name: p
   }), h[t] = M, N
 }

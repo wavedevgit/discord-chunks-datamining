@@ -40,10 +40,10 @@ function R(e) {
     guild: P,
     isHoveringOrFocusing: D,
     onOpenProfile: w,
-    channelId: x,
-    onClose: L,
+    channelId: L,
+    onClose: x,
     onRoleClick: M
-  } = e, k = c.ZP.getName(null == P ? true : P.id, x, t), j = (0, i.e7)([u.Z], () => {
+  } = e, k = c.ZP.getName(null == P ? true : P.id, L, t), j = (0, i.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(t.id)) ? true : e.application
   }), U = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), G = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), B = (0, d.b)({
@@ -61,7 +61,7 @@ function R(e) {
       tags: (0, r.jsx)(_.Z, {
         displayProfile: R,
         themeType: S.l.POPOUT,
-        onClose: L
+        onClose: x
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.Z, {
@@ -81,7 +81,7 @@ function R(e) {
       className: C.buttons,
       children: [(0, r.jsx)(b.Z, {
         user: t,
-        closePopout: L,
+        closePopout: x,
         fullWidth: true
       }), (0, r.jsx)(y.Z, {
         user: t,
@@ -92,24 +92,24 @@ function R(e) {
       user: t,
       bio: null == R ? true : R.bio,
       hidePersonalInformation: G,
-      onClose: L
+      onClose: x
     }), B ? (0, r.jsx)(g.Z, {
       user: t,
       currentUser: n,
       guildId: null == P ? true : P.id,
       onOpenUserProfileModal: w,
-      onClose: L
+      onClose: x
     }) : (0, r.jsx)(p.Z, {
       user: t,
       currentUser: n,
       guildId: null == P ? true : P.id,
-      onClose: L
+      onClose: x
     }), (null == j ? true : j.popularApplicationCommandIds) != null && null != U && (0, r.jsx)(f.Z, {
       applicationId: j.id,
       commandIds: j.popularApplicationCommandIds,
       channel: U,
       guildId: null == P ? true : P.id,
-      onClick: L
+      onClick: x
     }), null != P && (0, r.jsx)(m.Z, {
       heading: A.intl.string(A.t["LPJmL/"]),
       children: (0, r.jsx)(I.Z, {

@@ -52,35 +52,35 @@ class S extends Chunk147913.Z {
     let N = Chunk594174.default.getCurrentUser(),
       R = Chunk430824.Z.getGuild(Chunk147913.guildId),
       [P, D] = null != (n = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_DOCUMENTS, N, null == R ? true : R.premiumTier)) ? require : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE, Chunk37113.ApplicationStreamFPS.FPS_5],
-      [w, x] = null != (r = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_VIDEO, N, null == R ? true : R.premiumTier)) ? Chunk579092 : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_720, Chunk37113.ApplicationStreamFPS.FPS_30],
-      L = null;
-    if (A.entropy < y && (S.resolution !== P || S.fps !== D) ? (I.info("Low entropy average, switching to screenshare preset."), L = {
+      [w, L] = null != (r = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_VIDEO, N, null == R ? true : R.premiumTier)) ? Chunk579092 : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_720, Chunk37113.ApplicationStreamFPS.FPS_30],
+      x = null;
+    if (A.entropy < y && (S.resolution !== P || S.fps !== D) ? (I.info("Low entropy average, switching to screenshare preset."), x = {
         qualityOptions: {
           preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
           resolution: P,
           frameRate: D
         },
         context: Chunk46973.Yn.STREAM
-      }) : A.entropy > O && (S.resolution !== w || S.fps !== x) && (I.info("High entropy average, switching to video preset."), L = {
+      }) : A.entropy > O && (S.resolution !== w || S.fps !== L) && (I.info("High entropy average, switching to video preset."), x = {
         qualityOptions: {
           preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
           resolution: w,
-          frameRate: x
+          frameRate: L
         },
         context: Chunk46973.Yn.STREAM
-      }), null != L) {
-      if (null != b.desktopSource) L.desktopSettings = {
+      }), null != x) {
+      if (null != b.desktopSource) x.desktopSettings = {
         sourceId: b.desktopSource.id,
         sound: S.soundshareEnabled
       };
       else {
         if (null == b.cameraSource) return;
-        L.cameraSettings = {
+        x.cameraSettings = {
           videoDeviceGuid: b.cameraSource.videoDeviceGuid,
           audioDeviceGuid: b.cameraSource.audioDeviceGuid
         }
       }
-      Chunk846027.Z.setGoLiveSource(L)
+      Chunk846027.Z.setGoLiveSource(x)
     }
   }
   handlePostConnectionOpen() {

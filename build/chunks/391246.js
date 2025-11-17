@@ -31,8 +31,8 @@ var Chunk127849 = require("./127849.js"),
   P = "prototype",
   D = "Wrong length",
   w = "Wrong index",
-  x = Chunk199838.getterFor(N),
-  L = Chunk199838.getterFor(R),
+  L = Chunk199838.getterFor(N),
+  x = Chunk199838.getterFor(R),
   M = Chunk199838.set,
   k = Chunk127849[N],
   j = k,
@@ -73,7 +73,7 @@ var Chunk127849 = require("./127849.js"),
     })
   },
   et = function(e, t, n, r) {
-    var i = L(e),
+    var i = x(e),
       a = h(n),
       o = !!r;
     if (a + t > i.byteLength) throw new V(w);
@@ -83,7 +83,7 @@ var Chunk127849 = require("./127849.js"),
     return o ? c : Y(c)
   },
   en = function(e, t, n, r, i, a) {
-    var o = L(e),
+    var o = x(e),
       s = h(n),
       l = r(+i),
       c = !!a;
@@ -123,7 +123,7 @@ if (Chunk848120) {
   }), a || (this.byteLength = t, this.detached = false)
 })[P], B = (G = function(e, t, n) {
   f(this, B), f(e, U);
-  var r = x(e),
+  var r = L(e),
     i = r.byteLength,
     o = _(t);
   if (o < 0 || o > i) throw new V("Wrong offset");
@@ -135,7 +135,7 @@ if (Chunk848120) {
     byteOffset: o,
     bytes: r.bytes
   }), a || (this.buffer = e, this.byteLength = n, this.byteOffset = o)
-})[P], Chunk507604 && (ee(j, "byteLength", x), ee(G, "buffer", L), ee(G, "byteLength", L), ee(G, "byteOffset", L)), Chunk477732(B, {
+})[P], Chunk507604 && (ee(j, "byteLength", L), ee(G, "buffer", x), ee(G, "byteLength", x), ee(G, "byteOffset", x)), Chunk477732(B, {
   getInt8: function(e) {
     return et(this, 1, e)[0] << 24 >> 24
   },

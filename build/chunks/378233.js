@@ -11,9 +11,9 @@ require.d(exports, {
   Zt: () => I,
   Zv: () => S,
   _V: () => A,
-  cv: () => L,
+  cv: () => x,
   gM: () => U,
-  jl: () => x,
+  jl: () => L,
   z: () => R
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./415506.js"), require("./781311.js");
 var Chunk134432 = require("./134432.js"),
@@ -69,21 +69,32 @@ let {
 }, A = e => null == e ? null : "".concat(e.name, ".").concat(T(e.format_type)), C = function(e) {
   let {
     isPreview: t = false,
-    size: n = f.lE
+    size: i = f.lE
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   if (null == e.format_type) return null;
-  let i = e.format_type;
-  e.format_type === d.u3.GIF && t && (i = d.u3.PNG);
-  let a = T(i),
-    o = _.ANM.STICKER_ASSET(e.id, a),
-    s = a === d.og.WEBP ? "&quality=lossless" : "";
+  let a = e.format_type;
+  e.format_type === d.u3.GIF && t && (a = d.u3.PNG);
+  let o = T(a),
+    s = _.ANM.STICKER_ASSET(e.id, o),
+    c = false;
+  try {
+    let {
+      getForceSdrEmojisStickersConfig: e
+    } = n(586132);
+    c = e({
+      location: "sticker_url"
+    }).enabled
+  } catch (e) {}
+  let u = c ? "&force_sdr=true" : "",
+    p = o === d.og.WEBP ? "&quality=lossless" : "";
   if ("development" !== m) {
-    if (e.format_type === d.u3.LOTTIE) return "".concat(location.protocol).concat(g).concat(o);
-    let i = e.format_type === d.u3.APNG && t && !(0, l.isAndroid)() ? "&passthrough=false" : "",
+    if (e.format_type === d.u3.LOTTIE) return "".concat(location.protocol).concat(g).concat(s);
+    let n = e.format_type === d.u3.APNG && t && !(0, l.isAndroid)() ? "&passthrough=false" : "",
       a = Math.min(2, (0, r.x_)());
-    return "".concat(location.protocol).concat(h).concat(o, "?size=").concat((0, r.oO)(n * a)).concat(i).concat(s)
+    return "".concat(location.protocol).concat(h).concat(s, "?size=").concat((0, r.oO)(i * a)).concat(n).concat(p).concat(u)
   }
-  return "".concat(location.protocol).concat(h).concat(o)
+  let E = "".concat(location.protocol).concat(h).concat(s);
+  return c ? "".concat(E, "?force_sdr=true") : E
 }, N = e => null != e.match("development" !== m ? O : v), R = e => ({
   type: d.Ih.PACK,
   id: e.id,
@@ -103,7 +114,7 @@ let {
     default:
       returnfalse
   }
-}, w = e => e.type === d.n0.GUILD, x = e => e.type === d.n0.STANDARD, L = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], M = e => {
+}, w = e => e.type === d.n0.GUILD, L = e => e.type === d.n0.STANDARD, x = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], M = e => {
   if (null === e) returnfalse;
   let t = e.guild_id;
   return true !== a.Z.getGuild(t)

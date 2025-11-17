@@ -7,7 +7,7 @@ require.d(exports, {
   Pq: () => v,
   RJ: () => P,
   Sd: () => M,
-  XW: () => L,
+  XW: () => x,
   el: () => T,
   fP: () => A,
   fQ: () => S,
@@ -189,7 +189,7 @@ function w() {
   let e = D();
   return (0, Chunk442837.Wu)([Chunk926491.Z], () => module.map(e => g.Z.getStickerById(e)).filter(e => true !== e), [module])
 }
-let x = e => {
+let L = e => {
     let t = P(),
       {
         packs: n,
@@ -222,7 +222,7 @@ let x = e => {
       }, ...s, ...i]
     }, [n, t, a, s, o, e])
   },
-  L = function(e) {
+  x = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = (0, i.e7)([g.Z], () => g.Z.getStickerById(e.id)),
       [a, o] = r.useState(true),
@@ -258,6 +258,6 @@ let x = e => {
     }, [t]), c) ? [e, s] : [null != n ? n : null, s]
   },
   M = e => {
-    let t = x(e);
+    let t = L(e);
     return r.useMemo(() => t.filter(e => e.type === E.Ih.EMPTY_GUILD_UPSELL || e.stickers.length > 0, []), [t])
   }

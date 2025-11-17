@@ -40,17 +40,17 @@ function v(e) {
     botUserId: null == I || null == (n = I.bot) ? true : n.id
   }), P = null != I && (0, l.ye)(I), D = null != N && P && R, {
     analyticsLocations: w
-  } = (0, o.ZP)(a.Z.ACTIVITY_CUSTOM_LINK), x = (0, i.e7)([h.Z], () => h.Z.getChannelId()), L = (0, y.KF)(x), M = (0, i.e7)([E.ZP], () => {
-    if (null == x) return;
-    let e = E.ZP.getEmbeddedActivitiesForChannel(x).filter(e => e.applicationId === I.id);
+  } = (0, o.ZP)(a.Z.ACTIVITY_CUSTOM_LINK), L = (0, i.e7)([h.Z], () => h.Z.getChannelId()), x = (0, y.KF)(L), M = (0, i.e7)([E.ZP], () => {
+    if (null == L) return;
+    let e = E.ZP.getEmbeddedActivitiesForChannel(L).filter(e => e.applicationId === I.id);
     return e.length > 0 ? e[0].compositeInstanceId : true
-  }), k = (0, i.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()), j = (0, b.Z)(), U = L === y.jy.CAN_LAUNCH, G = null != M && (null == k ? true : k.compositeInstanceId) === M, B = null != T ? T : S.customId, Z = [];
+  }), k = (0, i.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()), j = (0, b.Z)(), U = x === y.jy.CAN_LAUNCH, G = null != M && (null == k ? true : k.compositeInstanceId) === M, B = null != T ? T : S.customId, Z = [];
   U && Z.push({
     label: null == M ? O.intl.string(O.t.RscU7I) : G ? O.intl.string(O.t.DPfdsq) : O.intl.string(O.t.sqe0hj),
     trackingArea: f.j_.PLAY,
     onClick() {
       (0, g.G6)({
-        channelId: null != x ? x : true,
+        channelId: null != L ? L : true,
         applicationId: I.id,
         isStart: null == M,
         embeddedActivitiesManager: j,

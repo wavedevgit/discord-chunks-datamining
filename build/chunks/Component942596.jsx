@@ -316,7 +316,7 @@ class $ extends(r = Chunk473749.PureComponent) {
       application: r,
       activityGuild: a
     } = this.props;
-    return null != e.assets || (0, x.Z)(e) || e.type !== B.IIU.PLAYING || "ActivityFeed" === n || t.bot ? null : null == r && null != a ? (0, i.jsx)("div", {
+    return null != e.assets || (0, L.Z)(e) || e.type !== B.IIU.PLAYING || "ActivityFeed" === n || t.bot ? null : null == r && null != a ? (0, i.jsx)("div", {
       className: s()(F.gameIcon, F.screenshareIcon)
     }) : (0, i.jsx)(E.Z, {
       className: F.gameIcon,
@@ -335,7 +335,7 @@ class $ extends(r = Chunk473749.PureComponent) {
       type: o
     } = e;
     if (o === B.IIU.CUSTOM_STATUS) return null;
-    let l = (0, L.Z)(e),
+    let l = (0, x.Z)(e),
       c = e.name,
       u = c;
     return (o === B.IIU.HANG_STATUS ? u = (0, v.O8)(t.id, e) : l && null != n ? u = (0, i.jsx)("span", {
@@ -368,7 +368,7 @@ class $ extends(r = Chunk473749.PureComponent) {
     }), t = () => {
       (0, S.X)(a.id)
     };
-    else if (!(0, L.Z)(e)) {
+    else if (!(0, x.Z)(e)) {
       if (o = r, s = r, (0, M.Z)(e) && null != r) {
         let t = (t, n) => (0, i.jsx)(A.Z, {
           artists: r,
@@ -434,11 +434,11 @@ class $ extends(r = Chunk473749.PureComponent) {
     let {
       activityGuild: t
     } = this.props;
-    if (!(0, L.Z)(e) || (0, M.Z)(e)) return null;
+    if (!(0, x.Z)(e) || (0, M.Z)(e)) return null;
     let {
       timestamps: n
     } = e;
-    return null == n ? null : (0, x.Z)(e) ? (0, i.jsx)(X, {
+    return null == n ? null : (0, L.Z)(e) ? (0, i.jsx)(X, {
       timestamps: n
     }) : (0, i.jsx)(T.ZP, {
       start: n.start,
@@ -473,7 +473,7 @@ class $ extends(r = Chunk473749.PureComponent) {
       } = e,
       c = o,
       u = o;
-    if (!(0, L.Z)(e) && (c = null == l ? true : l.large_text, u = null == l ? true : l.large_text, (0, M.Z)(e) && null != c)) {
+    if (!(0, x.Z)(e) && (c = null == l ? true : l.large_text, u = null == l ? true : l.large_text, (0, M.Z)(e) && null != c)) {
       let t = (t, n) => null != e.sync_id && null != u ? (0, i.jsx)(f.Anchor, {
         className: F.bodyLink,
         onClick: this.handleOpenSpotifyAlbum,

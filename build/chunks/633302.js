@@ -137,13 +137,13 @@ function w(e) {
   let t = T(e);
   return null != t ? C(t) : null
 }
-let x = new Map;
+let L = new Map;
 
-function L(e) {
-  let t = x.get(e);
+function x(e) {
+  let t = L.get(e);
   if (null == t) {
     let n = b[e];
-    t = o.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(C), x.set(e, t)
+    t = o.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(C), L.set(e, t)
   }
   return t
 }
@@ -238,7 +238,7 @@ let K = {
   setDefaultDiversitySurrogate: R,
   getCategories: D,
   getByName: w,
-  getByCategory: L,
+  getByCategory: x,
   contentHasUnicodeOrEmoji: M,
   translateInlineEmojiToSurrogates: k,
   maybeTranslateSurrogatesToInlineEmoji: V,

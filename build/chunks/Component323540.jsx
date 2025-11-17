@@ -1,5 +1,5 @@
 /** Chunk was on 77033 **/
-/** chunk id: 323540, original params: e,n,t (module,exports,require) **/
+/** chunk id: 323540, original params: n,e,l (module,exports,require) **/
 require.d(exports, {
   $: () => u
 }), require("./388685.js");
@@ -12,44 +12,44 @@ var Chunk54381 = require("./54381.js"),
   Chunk822458 = require("./822458.jsx"),
   Chunk329353 = require("./329353.js");
 
-function u(e) {
-  var n;
+function u(n) {
+  var e;
   let {
-    applicationId: t,
+    applicationId: l,
     guildId: u,
     page: p
-  } = e, {
+  } = n, {
     ref: g,
     width: I
-  } = (0, r.ZP)(), [x, m] = i.useMemo(() => (null == p ? true : p.skuIds) == null || (null == p ? true : p.skuIds.length) === 0 ? [
+  } = (0, d.ZP)(), [x, m] = i.useMemo(() => (null == p ? true : p.skuIds) == null || (null == p ? true : p.skuIds.length) === 0 ? [
     [],
     []
-  ] : (null == p ? true : p.leaderboard) == null || null == I || I <= 516 ? [
+  ] : (null == p ? true : p.leaderboard) == null || null == I || I <= 516 || I < 1104 ? [
     [], null == p ? true : p.skuIds
-  ] : I < 1104 ? [null == p ? true : p.skuIds.slice(0, 1), null == p ? true : p.skuIds.slice(1)] : [null == p ? true : p.skuIds.slice(0, 2), null == p ? true : p.skuIds.slice(2)], [p, I]);
-  return null == p ? null : (0, l.jsx)(a.zJl, {
-    children: (0, l.jsxs)("section", {
+  ] : [null == p ? true : p.skuIds.slice(0, 2), null == p ? true : p.skuIds.slice(2)], [p, I]);
+  return null == p ? null : (0, t.jsx)(a.zJl, {
+    children: (0, t.jsxs)("section", {
       ref: g,
       className: c.container,
-      children: [(0, l.jsx)(o.t, {
+      children: [(0, t.jsx)(o.t, {
         leaderboard: p.leaderboard
-      }), (0, l.jsx)(s.Z, {
-        applicationId: t,
+      }), (0, t.jsx)(s.Z, {
+        applicationId: l,
         guildId: u,
         skuIds: x,
-        variant: d.Z.MEDIUM
-      }), (0, l.jsx)(s.Z, {
-        applicationId: t,
+        variant: r.Z.MEDIUM
+      }), (0, t.jsx)(s.Z, {
+        applicationId: l,
         guildId: u,
         skuIds: m
-      }), null == (n = p.sections) ? true : n.map((e, n) => {
+      }), null == (e = p.sections) ? true : e.map((n, e) => {
         var i;
-        return (0, l.jsx)(s.Z, {
+        return (0, t.jsx)(s.Z, {
           guildId: u,
-          applicationId: t,
-          sectionTitle: null != (i = e.title) ? i : true,
-          skuIds: e.skuIds
-        }, "".concat(e.title, "-").concat(n))
+          applicationId: l,
+          sectionTitle: null != (i = n.title) ? i : true,
+          skuIds: n.skuIds
+        }, "".concat(n.title, "-").concat(e))
       })]
     })
   })

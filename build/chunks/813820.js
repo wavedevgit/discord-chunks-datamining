@@ -703,13 +703,13 @@ class w extends Chunk495852.C {
           a = t.fixed64().toString();
           break;
         case 2:
-          o = L.internalBinaryRead(t, t.uint32(), n);
+          o = x.internalBinaryRead(t, t.uint32(), n);
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.users.v1.UserData.linked_users")
       }
     }
-    e[null != a ? a : "0"] = null != o ? o : L.create()
+    e[null != a ? a : "0"] = null != o ? o : x.create()
   }
   binaryReadMap2(e, t, n) {
     let r = t.uint32(),
@@ -750,7 +750,7 @@ class w extends Chunk495852.C {
     e[null != a ? a : 0] = null != o ? o : B.create()
   }
   internalBinaryWrite(e, t, n) {
-    for (let i of Object.keys(e.linkedUsers)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), L.internalBinaryWrite(e.linkedUsers[i], t, n), t.join().join();
+    for (let i of Object.keys(e.linkedUsers)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), x.internalBinaryWrite(e.linkedUsers[i], t, n), t.join().join();
     for (let i of Object.keys(e.safetyFeatureLimits)) t.tag(2, r.TD.LengthDelimited).fork().tag(1, r.TD.Varint).uint32(parseInt(i)), t.tag(2, r.TD.LengthDelimited).fork(), U.internalBinaryWrite(e.safetyFeatureLimits[i], t, n), t.join().join();
     for (let i of Object.keys(e.safetyFlags)) t.tag(3, r.TD.LengthDelimited).fork().tag(1, r.TD.Varint).uint32(parseInt(i)), t.tag(2, r.TD.LengthDelimited).fork(), B.internalBinaryWrite(e.safetyFlags[i], t, n), t.join().join();
     e.quest && V.internalBinaryWrite(e.quest, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.primaryGuild && R.internalBinaryWrite(e.primaryGuild, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.crossPlatformRestriction && D.internalBinaryWrite(e.crossPlatformRestriction, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.collectibles && C.internalBinaryWrite(e.collectibles, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.premiumState && er.internalBinaryWrite(e.premiumState, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.displayNameStyles && S.internalBinaryWrite(e.displayNameStyles, t.tag(10, r.TD.LengthDelimited).fork(), n).join();
@@ -765,7 +765,7 @@ class w extends Chunk495852.C {
       K: 6,
       V: {
         kind: "message",
-        T: () => L
+        T: () => x
       }
     }, {
       no: 2,
@@ -824,7 +824,7 @@ class w extends Chunk495852.C {
   }
 }
 new w;
-class x extends Chunk495852.C {
+class L extends Chunk495852.C {
   create(e) {
     let t = {
       userId: "0",
@@ -909,7 +909,7 @@ class x extends Chunk495852.C {
     }])
   }
 }
-let L = new x;
+let x = new L;
 class M extends Chunk495852.C {
   create(e) {
     let t = {};

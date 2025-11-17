@@ -69,7 +69,7 @@ function w(e) {
     analyticsLocations: N
   } = (0, f.ZP)(), {
     id: D
-  } = (0, p.p6)(I.h7.VIDEO_INPUT), w = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), x = m.qF.useSetting();
+  } = (0, p.p6)(I.h7.VIDEO_INPUT), w = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), L = m.qF.useSetting();
   return (0, r.jsxs)(c.Kqy, {
     gap: 20,
     children: [d(D), E.Z.isEnabled() ? null : (0, r.jsx)(c.Text, {
@@ -82,7 +82,7 @@ function w(e) {
     }), y ? null : (0, r.jsx)(c.rsf, {
       label: T.intl.string(T.t["3Ppr1h"]),
       description: T.intl.string(T.t.WNbX4O),
-      checked: x,
+      checked: L,
       onChange: e => {
         m.qF.updateSetting(e), b.default.track(O.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e

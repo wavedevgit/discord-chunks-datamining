@@ -94,7 +94,7 @@ function Y(e) {
     size: c,
     locked: u,
     flipped: f
-  } = e, _ = (0, L.e5)(c), p = (0, s.Wu)([I.default, y.Z], () => i.map(e => {
+  } = e, _ = (0, x.e5)(c), p = (0, s.Wu)([I.default, y.Z], () => i.map(e => {
     var t;
     let n = I.default.getUser(e);
     if (null == n) return;
@@ -157,13 +157,13 @@ let K = Chunk473749.memo(function(e) {
     }),
     R = y !== M.Og ? I.slice(0, y) : I,
     w = y !== M.Og ? I.slice(y) : [],
-    x = v.get(w[0]),
+    L = v.get(w[0]),
     B = u === k.OYC.ALWAYS && y !== M.Og;
   return T ? (0, r.jsxs)("div", {
     className: G.voiceUserContainer,
     children: [R.map(e => {
       let i = v.get(e);
-      return null == i ? null : (0, r.jsx)(L.ZP, {
+      return null == i ? null : (0, r.jsx)(x.ZP, {
         sortedVoiceState: i,
         channel: a,
         widgetId: t,
@@ -176,8 +176,8 @@ let K = Chunk473749.memo(function(e) {
         displayUserMode: u,
         locked: d
       }, e)
-    }), B && 1 === w.length && null != x && (0, r.jsx)(L.ZP, {
-      sortedVoiceState: x,
+    }), B && 1 === w.length && null != L && (0, r.jsx)(x.ZP, {
+      sortedVoiceState: L,
       channel: a,
       widgetId: t,
       flipped: !g,
@@ -191,7 +191,7 @@ let K = Chunk473749.memo(function(e) {
     }, w[0]), B && w.length > 1 && (0, r.jsx)(Y, {
       hiddenVoiceStates: w,
       voiceStateMap: v,
-      size: (0, L.px)(b),
+      size: (0, x.px)(b),
       locked: d,
       flipped: !g
     })]
@@ -253,7 +253,7 @@ function q(e) {
   var t;
   let {
     isSettingsPreview: n
-  } = e, i = (0, s.e7)([O.Z, y.Z], () => y.Z.getChannel(O.Z.getVoiceChannelId())), a = (0, f.ZP)(i), o = z(j.Yn.DEFAULT, e.maxDisplayedVoiceStates), l = (0, s.e7)([E.Z], () => E.Z.getStreamerActiveStreamMetadata()), c = (0, x.II)(), d = (0, u.q)(null == c ? true : c.id), p = (0, s.cj)([E.Z, A.default, w.Z], () => {
+  } = e, i = (0, s.e7)([O.Z, y.Z], () => y.Z.getChannel(O.Z.getVoiceChannelId())), a = (0, f.ZP)(i), o = z(j.Yn.DEFAULT, e.maxDisplayedVoiceStates), l = (0, s.e7)([E.Z], () => E.Z.getStreamerActiveStreamMetadata()), c = (0, L.II)(), d = (0, u.q)(null == c ? true : c.id), p = (0, s.cj)([E.Z, A.default, w.Z], () => {
     let e = E.Z.getCurrentUserActiveStream();
     return {
       displayUserMode: A.default.getDisplayUserMode(),

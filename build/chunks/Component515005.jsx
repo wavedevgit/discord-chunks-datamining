@@ -93,8 +93,8 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
       gutterWidth: S,
       inspectedStickerPosition: N,
       isScrolling: w,
-      isUsingKeyboardNavigation: x,
-      onInspect: L,
+      isUsingKeyboardNavigation: L,
+      onInspect: x,
       onSelect: M,
       rowIndex: k,
       stickerClassName: j,
@@ -127,12 +127,12 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
         let f = e.visibleRowIndex === (null == N ? true : N.rowIndex) && e.columnIndex === (null == N ? true : N.columnIndex),
           I = e.type === m.al.STICKER && F && f,
           S = t => {
-            if ((null == w ? true : w.current) === true || (null == x ? true : x.current) === true) return;
+            if ((null == w ? true : w.current) === true || (null == L ? true : L.current) === true) return;
             let n = t.altKey;
             n && e.type === m.al.STICKER && !(0, g.gM)(e.sticker.id) && Q(e.sticker.id), null == M || M(e, n)
           },
           R = (0, s.throttle)(() => {
-            (null == w ? true : w.current) === true || (null == x ? true : x.current) === true || f || null == L || L(e)
+            (null == w ? true : w.current) === true || (null == L ? true : L.current) === true || f || null == x || x(e)
           }, D),
           P = () => {
             e.type === m.al.CREATE_STICKER && (p.default.track(y.rMx.OPEN_MODAL, {

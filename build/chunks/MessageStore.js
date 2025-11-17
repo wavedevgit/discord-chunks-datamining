@@ -34,7 +34,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,7 +42,7 @@ function x(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let L = new Set,
+let x = new Set,
   M = new Chunk710845.Z("MessageStore"),
   k = false;
 
@@ -52,7 +52,7 @@ function j() {
       ready: false,
       loadingMore: false
     }))
-  }), L.clear()
+  }), x.clear()
 }
 
 function U(e) {
@@ -90,7 +90,7 @@ function Z(e) {
   let {
     channelId: t
   } = e;
-  M.log("Clearing messages for ".concat(t)), c.Z.clear(t), L.clear()
+  M.log("Clearing messages for ".concat(t)), c.Z.clear(t), x.clear()
 }
 
 function F(e) {
@@ -146,7 +146,7 @@ function Y(e) {
   let {
     message: t
   } = e;
-  (null == t ? true : t.nonce) != null && L.add(t.nonce)
+  (null == t ? true : t.nonce) != null && x.add(t.nonce)
 }
 
 function W(e) {
@@ -154,11 +154,11 @@ function W(e) {
     channelId: t,
     messageId: n
   } = e;
-  if (null == n || !L.has(n)) returnfalse;
+  if (null == n || !x.has(n)) returnfalse;
   let r = c.Z.getOrCreate(t),
     i = r.get(n);
   if (null == i) returnfalse;
-  r = (r = r.remove(n)).merge([i]), L.delete(n), c.Z.commit(r)
+  r = (r = r.remove(n)).merge([i]), x.delete(n), c.Z.commit(r)
 }
 
 function K(e) {
@@ -172,7 +172,7 @@ function K(e) {
     return
   }
   if (!i.ready) returnfalse;
-  null != n.nonce && n.state !== w.yb.SENDING && L.has(n.nonce) && (i = i.remove(n.nonce), L.delete(n.nonce)), i = i.receiveMessage(n, true === I.Z.isAtBottom(t)), c.Z.commit(i)
+  null != n.nonce && n.state !== w.yb.SENDING && x.has(n.nonce) && (i = i.remove(n.nonce), x.delete(n.nonce)), i = i.receiveMessage(n, true === I.Z.isAtBottom(t)), c.Z.commit(i)
 }
 
 function z(e) {
@@ -200,7 +200,7 @@ function q(e) {
       revealedMessageId: null
     })
   }
-  r = r.remove(t), c.Z.commit(r), L.delete(t)
+  r = r.remove(t), c.Z.commit(r), x.delete(t)
 }
 
 function X(e) {
@@ -220,7 +220,7 @@ function X(e) {
     })
   }
   c.Z.commit(i), t.forEach(e => {
-    L.delete(e)
+    x.delete(e)
   })
 }
 
@@ -353,7 +353,7 @@ function eu(e) {
 function ed() {
   Chunk89892.Z.forEach(e => {
     c.Z.clear(e.channelId)
-  }), L.clear()
+  }), x.clear()
 }
 
 function ef(e) {
@@ -438,7 +438,7 @@ class eh extends(r = Chunk442837.ZP.Store) {
     return k
   }
 }
-x(eh, "displayName", "MessageStore");
+L(eh, "displayName", "MessageStore");
 let em = new eh(Chunk570140.Z, {
   BACKGROUND_SYNC_CHANNEL_MESSAGES: U,
   CONNECTION_OPEN: j,

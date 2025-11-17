@@ -177,7 +177,7 @@ function w(e) {
     popoutClassName: N,
     popoutPosition: R = "bottom",
     popoutLayerContext: w,
-    optionClassName: L,
+    optionClassName: x,
     closeOnSelect: M,
     select: k,
     isSelected: j,
@@ -240,7 +240,7 @@ function w(e) {
         position: i,
         updatePosition: a
       } = e;
-      return (0, r.jsx)(x, {
+      return (0, r.jsx)(L, {
         className: N,
         closeOnSelect: M,
         maxVisibleItems: l,
@@ -252,7 +252,7 @@ function w(e) {
         options: t,
         serialize: U,
         renderOptionLabel: A,
-        optionClassName: L,
+        optionClassName: x,
         updatePosition: a,
         popoutPosition: i
       })
@@ -339,7 +339,7 @@ function w(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     className: t,
     onSelect: n,
@@ -377,9 +377,9 @@ function x(e) {
   let w = i.useCallback((e, t) => {
       n(e), c && !t && a()
     }, [a, n, c]),
-    x = i.useMemo(() => f.map((e, t) => {
+    L = i.useMemo(() => f.map((e, t) => {
       var n;
-      return (0, r.jsx)(L, {
+      return (0, r.jsx)(x, {
         isSelected: d(e.value),
         value: e.value,
         label: m(e),
@@ -414,12 +414,12 @@ function x(e) {
             }
           }, i), {
             role: "listbox",
-            children: x
+            children: L
           })), (0, r.jsx)("div", {
             "aria-hidden": true,
             ref: N,
             className: E.measurement,
-            children: x.slice(0, p)
+            children: L.slice(0, p)
           })]
         })
       }
@@ -427,7 +427,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     className: t,
     value: n,
@@ -610,13 +610,13 @@ function k(e) {
     }))
   }
 
-  function x() {
+  function L() {
     if (null != i || null != a) return e => (0, r.jsxs)("div", {
       className: E.newOptionLabel,
       children: [null == i ? true : i(e), e.label, null == a ? true : a(e)]
     })
   }
   return (0, r.jsx)(w, v(y({}, o), {
-    renderOptionLabel: null != R ? R : x()
+    renderOptionLabel: null != R ? R : L()
   }))
 }

@@ -157,11 +157,11 @@ function w(e) {
   v.syncForcedColors = e.syncForcedColors
 }
 
-function x(e) {
+function L(e) {
   (v = h({}, v)).saturation = e.saturation
 }
 
-function L() {
+function x() {
   (v = h({}, v)).desaturateUserColors = !v.desaturateUserColors
 }
 
@@ -466,8 +466,8 @@ let $ = new J(Chunk570140.Z, {
   ACCESSIBILITY_KEYBOARD_MODE_DISABLE: R,
   ACCESSIBILITY_COLORBLIND_TOGGLE: P,
   ACCESSIBILITY_LOW_CONTRAST_TOGGLE: D,
-  ACCESSIBILITY_SET_SATURATION: x,
-  ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: L,
+  ACCESSIBILITY_SET_SATURATION: L,
+  ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: x,
   ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: Y,
   ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED: F,
   ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: G,

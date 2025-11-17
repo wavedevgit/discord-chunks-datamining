@@ -121,7 +121,7 @@ function w(e) {
   I = {}, O.clear(), e.guilds.forEach(N)
 }
 
-function x(e) {
+function L(e) {
   let {
     threadMessages: t
   } = e;
@@ -133,7 +133,7 @@ function x(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     guild: t
   } = e;
@@ -317,8 +317,8 @@ class q extends(r = Chunk442837.ZP.Store) {
 g(q, "displayName", "ThreadMessageStore");
 let X = new q(Chunk570140.Z, {
   CONNECTION_OPEN: w,
-  OVERLAY_INITIALIZE: x,
-  GUILD_CREATE: L,
+  OVERLAY_INITIALIZE: L,
+  GUILD_CREATE: x,
   GUILD_DELETE: M,
   THREAD_CREATE: k,
   THREAD_UPDATE: k,

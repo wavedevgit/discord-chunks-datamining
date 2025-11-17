@@ -145,7 +145,7 @@ function S(e) {
   for (let n in e) {
     let i = e[n];
     Array.isArray(i) || (i = [i]), i.forEach(e => {
-      (0, r.wB)(t, A(e.attributes)), "object" == typeof e.value && (0, r.wB)(t, L(e.value))
+      (0, r.wB)(t, A(e.attributes)), "object" == typeof e.value && (0, r.wB)(t, x(e.value))
     })
   }
   return t
@@ -195,15 +195,15 @@ function D(e) {
 
 function w(e) {
   let t = [];
-  for (let n in e) t.push(`${x(n)}: ${P(e[n].value)}`);
+  for (let n in e) t.push(`${L(n)}: ${P(e[n].value)}`);
   return t.join("; ")
 }
 
-function x(e) {
+function L(e) {
   return "CiAdrCity" === e ? "CreatorCity" : "CiAdrCtry" === e ? "CreatorCountry" : "CiAdrExtadr" === e ? "CreatorAddress" : "CiAdrPcode" === e ? "CreatorPostalCode" : "CiAdrRegion" === e ? "CreatorRegion" : "CiEmailWork" === e ? "CreatorWorkEmail" : "CiTelWork" === e ? "CreatorWorkPhone" : "CiUrlWork" === e ? "CreatorWorkUrl" : e
 }
 
-function L(e) {
+function x(e) {
   let t = {};
   for (let n in e) try {
     N(n) || (t[R(n)] = M(e[n], n))
@@ -271,7 +271,7 @@ function Y(e, t) {
     value: {},
     attributes: {}
   };
-  return true !== e.value["rdf:Description"] && ((0, r.wB)(n.value, A(e.value["rdf:Description"].attributes)), (0, r.wB)(n.attributes, Z(e)), e = e.value["rdf:Description"]), (0, r.wB)(n.value, L(e.value)), n.description = P(n.value, t), n
+  return true !== e.value["rdf:Description"] && ((0, r.wB)(n.value, A(e.value["rdf:Description"].attributes)), (0, r.wB)(n.attributes, Z(e)), e = e.value["rdf:Description"]), (0, r.wB)(n.value, x(e.value)), n.description = P(n.value, t), n
 }
 
 function W(e) {

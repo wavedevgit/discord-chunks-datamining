@@ -1,14 +1,15 @@
 /** Chunk was on 77033 **/
-/** chunk id: 457489, original params: e,n,t (module,exports,require) **/
+/** chunk id: 457489, original params: n,e,l (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => j
+  default: () => C
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  d = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk703656 = require("./703656.js"),
   Chunk602733 = require("./602733.js"),
   Chunk55563 = require("./55563.js"),
   Chunk411935 = require("./411935.js"),
@@ -20,76 +21,71 @@ var Chunk54381 = require("./54381.js"),
   Chunk171524 = require("./171524.jsx"),
   Chunk140594 = require("./140594.js");
 
-function h(e) {
-  var n, t;
+function j(n) {
+  var e, l;
   let {
     storefront: a,
-    guildId: r,
-    selectedPageIndex: d,
+    guildId: d,
+    selectedPageIndex: r,
     selectedSku: o
-  } = e, s = i.useRef(false);
+  } = n;
   return i.useEffect(() => {
-    let e = () => {
-      s.current = true
-    };
-    return window.addEventListener("popstate", e), () => window.removeEventListener("popstate", e)
-  }, []), i.useEffect(() => {
-    null != o ? (0, I.g)({
+    null != o ? (0, x.g)({
       skuId: o.id,
       applicationId: a.applicationId,
-      guildId: r,
+      guildId: d,
       isStorefront: true,
       onClose: () => {
-        s.current || (0, g.Z)({
-          guildId: r,
-          pageIndex: d
+        "POP" !== (0, s.s1)().action && (0, I.Z)({
+          guildId: d,
+          pageIndex: r
         })
       }
-    }) : null == o && (0, I.U)(), s.current = false
-  }, [r, d, o, a.applicationId]), (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsxs)("div", {
-      className: f.container,
-      children: [(0, l.jsx)(x.Z, {
-        guildId: r,
+    }) : null == o && (0, x.U)()
+  }, [d, r, o, a.applicationId]), (0, t.jsxs)(t.Fragment, {
+    children: [(0, t.jsxs)("div", {
+      className: h.container,
+      children: [(0, t.jsx)(m.Z, {
+        guildId: d,
         storefront: a,
-        selectedPageIndex: d
-      }), (0, l.jsx)(m.$, {
+        selectedPageIndex: r
+      }), (0, t.jsx)(v.$, {
         applicationId: a.applicationId,
-        guildId: r,
-        page: a.pages[d]
+        guildId: d,
+        page: a.pages[r]
       })]
-    }), (0, l.jsx)(v.n, {
+    }), (0, t.jsx)(f.n, {
       applicationId: a.applicationId,
-      backgroundImageAssetId: null == (t = a.pages[d]) || null == (n = t.leaderboard) ? true : n.backgroundImageAssetId
+      backgroundImageAssetId: null == (l = a.pages[r]) || null == (e = l.leaderboard) ? true : e.backgroundImageAssetId
     })]
   })
 }
 
-function j(e) {
+function C(n) {
   let {
-    match: n
-  } = e, {
-    guildId: t,
+    match: e
+  } = n, {
+    guildId: l,
     gameShopPageIndex: a,
-    gameShopSkuId: g
-  } = n.params, I = (0, p.Z)({
-    guildId: t
-  }), x = (0, d.e7)([c.Z], () => c.Z.get(g), [g]);
-  (0, s.p2)();
+    gameShopSkuId: s
+  } = e.params, I = (0, g.Z)({
+    guildId: l
+  }), x = (0, r.e7)([u.Z], () => u.Z.get(s), [s]);
+  (0, c.p2)();
   let m = i.useMemo(() => {
     if (null == a) return 0;
-    let e = parseInt(a, 10);
-    return isNaN(e) || null != I && null != I.storefront && e >= I.storefront.pages.length ? 0 : e
+    let n = parseInt(a, 10);
+    return isNaN(n) || null != I && null != I.storefront && n >= I.storefront.pages.length ? 0 : n
   }, [a, I]);
   return (i.useEffect(() => {
-    null != t && (0, u.m0)(t, m, null != g ? g : null)
-  }, [t, m, g]), ((null == I ? true : I.storefront) != null || (null == I ? true : I.error)) && !(null == I ? true : I.loading) && null != t && (null == I ? true : I.storefront) != null) ? (0, l.jsx)(h, {
+    null != l && (0, p.m0)(l, m, null != s ? s : null)
+  }, [l, m, s]), ((null == I ? true : I.storefront) != null || (null == I ? true : I.error)) && !(null == I ? true : I.loading) && null != l && (null == I ? true : I.storefront) != null) ? (0, t.jsx)(j, {
     storefront: I.storefront,
-    guildId: t,
+    guildId: l,
     selectedPageIndex: m,
     selectedSku: x
-  }) : (0, l.jsx)("div", {
-    className: r()(f.spinner, f.container),
-    children: (0, l.jsx)(o.$jN, {})
+  }) : (0, t.jsx)("div", {
+    className: d()(h.spinner, h.container),
+    children: (0, t.jsx)(o.$jN, {})
   })
 }

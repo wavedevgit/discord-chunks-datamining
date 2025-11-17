@@ -179,7 +179,7 @@ let j = Chunk473749.forwardRef(function(e, t) {
   (0, S.Z)(t, eR, j, eD), (0, N.Z)(eR, eO, K);
   let {
     handleKeyDown: ew,
-    handleKeyUp: ex
+    handleKeyUp: eL
   } = (0, A.Z)({
     editor: eR,
     channel: j,
@@ -193,7 +193,7 @@ let j = Chunk473749.forwardRef(function(e, t) {
     hideAutocomplete: en,
     moveSelection: er
   }), {
-    handlePaste: eL,
+    handlePaste: ex,
     handleGlobalPaste: eM
   } = (0, C.Z)(eR, eS, W), ek = i.useCallback(e => {
     null == et || et()
@@ -220,7 +220,7 @@ let j = Chunk473749.forwardRef(function(e, t) {
     })], [eR, j, eu, ed]),
     eG = i.useCallback(e => {
       let t = (0, D.Z)(eR, e, j.id);
-      return null == t && (t = (0, x.Z)(eR, e)), null == t && (t = (0, L.Z)(eR, e)), t
+      return null == t && (t = (0, L.Z)(eR, e)), null == t && (t = (0, x.Z)(eR, e)), t
     }, [j.id, eR]),
     eB = i.useCallback(e => (0, w.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {
@@ -245,9 +245,9 @@ let j = Chunk473749.forwardRef(function(e, t) {
         onFocus: z,
         onBlur: q,
         onClick: ek,
-        onPaste: eL,
+        onPaste: ex,
         onKeyDown: ew,
-        onKeyUp: ex,
+        onKeyUp: eL,
         decorate: eU,
         renderExtraElement: eG,
         renderExtraLeaf: eB,

@@ -66,13 +66,13 @@ function w(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 require("./928518.js"), require("./972830.js"), require("./704806.js");
-let L = (0, Chunk663993.Un)({
+let x = (0, Chunk663993.Un)({
     createPromise: () => require.e("47620").then(require.bind(require, 576184)),
     webpackId: 576184,
     name: "UnsupportedBrowser"
@@ -333,7 +333,7 @@ class ei extends Chunk473749.Component {
         }
       }), (0, Chunk54381.jsx)(Chunk828700.l_, {
         from: Chunk981631.Z5c.CONNECT_AUTHORIZE,
-        to: x(D({}, location), {
+        to: L(D({}, location), {
           pathname: Chunk981631.Z5c.OAUTH2_AUTHORIZE
         })
       }), (0, Chunk54381.jsx)(Chunk828700.AW, {
@@ -356,7 +356,7 @@ class ei extends Chunk473749.Component {
       })]
     }) : (0, Chunk54381.jsx)(Chunk828700.rs, {
       children: (0, Chunk54381.jsx)(Chunk765717.Z, {
-        component: L
+        component: x
       })
     }), (0, Chunk54381.jsxs)(Chunk329816.Z, {
       skipsSettingDefaultPageTitle: Chunk473749,
@@ -376,7 +376,7 @@ function ea() {
 
 function eo(e) {
   let t = ea();
-  return (0, r.jsx)(ei, x(D({}, e), {
+  return (0, r.jsx)(ei, L(D({}, e), {
     skipsSettingDefaultPageTitle: t
   }))
 }

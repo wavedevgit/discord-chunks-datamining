@@ -70,10 +70,10 @@ function S(e) {
     shouldShowIncidentActions: R,
     incidentData: P,
     isUnderLockdown: D
-  } = (0, p.mI)(C), w = (0, l.n2)(null != (t = null == N ? true : N.id) ? t : g.lds), x = i.useCallback(() => null != N && (0, c._X)(N.id), [N]);
+  } = (0, p.mI)(C), w = (0, l.n2)(null != (t = null == N ? true : N.id) ? t : g.lds), L = i.useCallback(() => null != N && (0, c._X)(N.id), [N]);
   if (null == N || null == P || !R) return null;
-  let L = e => {
-      if (e && w && A !== E.oC.MEMBER_SAFETY && x()) return void _.default.track(g.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
+  let x = e => {
+      if (e && w && A !== E.oC.MEMBER_SAFETY && L()) return void _.default.track(g.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
         notice_type: g.kVF.GUILD_RAID_NOTIFICATION,
         guild_id: N.id
       });
@@ -105,7 +105,7 @@ function S(e) {
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
     }), M, k, (0, r.jsx)(o.EyT, {
       className: y.actionButton,
-      onClick: () => L(false),
+      onClick: () => x(false),
       children: (0, r.jsxs)("div", {
         className: y.actionButtonInner,
         children: [(0, r.jsx)(o.mBM, {
@@ -133,7 +133,7 @@ function S(e) {
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
     }), M, j, !U && (0, r.jsx)(o.EyT, {
       className: y.actionButton,
-      onClick: () => L(true),
+      onClick: () => x(true),
       children: (0, r.jsx)("div", {
         className: y.actionButtonInner,
         children: (0, r.jsx)("span", {

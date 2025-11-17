@@ -108,13 +108,13 @@ function ee(e) {
     excludeSubscriptionPlansBySKU: eo = false,
     excludeSKUPurchasePreviews: es = false,
     wasTier2PremiumBeforePurchase: el = false
-  } = e, ec = (0, Z.Z)(), eu = (0, h.Q)(), ed = (0, x.Z)(), ef = $[0], e_ = (0, c.e7)([I.Z], () => I.Z.get(ef), [ef]), ep = null == e_ ? true : e_.eligiblePaymentGateways, {
+  } = e, ec = (0, Z.Z)(), eu = (0, h.Q)(), ed = (0, L.Z)(), ef = $[0], e_ = (0, c.e7)([I.Z], () => I.Z.get(ef), [ef]), ep = null == e_ ? true : e_.eligiblePaymentGateways, {
     paymentSources: eh,
     hasPaymentSources: em,
     paymentSourceId: eg,
     setPaymentSourceId: eE,
     hasFetchedPaymentSources: eb
-  } = (0, L.Z)({
+  } = (0, x.Z)({
     isGift: ee,
     activeSubscription: K,
     eligiblePaymentGateways: ep
@@ -135,11 +135,11 @@ function ee(e) {
     setStep: eP,
     steps: eD,
     breadcrumbsData: ew,
-    previousStepRef: ex
+    previousStepRef: eL
   } = (0, B.Z)({
     stepConfigs: q,
     breadcrumbs: J
-  }), [eL, eM] = (0, j.Z)(eR), {
+  }), [ex, eM] = (0, j.Z)(eR), {
     paymentError: ek,
     paymentAuthenticationState: ej
   } = (0, M.Z)(), {
@@ -220,12 +220,12 @@ function ee(e) {
     } = (0, g.l)({
       location: "PaymentContext"
     }),
-    tx = (0, P.uH)({
+    tL = (0, P.uH)({
       location: "PaymentModal"
     }),
-    tL = i.useMemo(() => {
-      if (tx) return V.cL.APPLE_PAYMENT_LINK
-    }, [tx]);
+    tx = i.useMemo(() => {
+      if (tL) return V.cL.APPLE_PAYMENT_LINK
+    }, [tL]);
   return (0, r.jsx)(Q.Provider, {
     value: X(z({
       stripe: ec,
@@ -256,8 +256,8 @@ function ee(e) {
       steps: eD,
       stepConfigs: q,
       breadcrumbs: ew,
-      previousStepRef: ex,
-      purchaseState: eL,
+      previousStepRef: eL,
+      purchaseState: ex,
       setPurchaseState: eM,
       paymentAuthenticationState: ej,
       paymentError: ek,
@@ -315,7 +315,7 @@ function ee(e) {
       isDisplayingWowMomentConfirmation: tP,
       premiumBrandRefreshBackgroundClassName: tD,
       wasTier2PremiumBeforePurchase: el,
-      customCheckoutFlow: tL
+      customCheckoutFlow: tx
     }),
     children: (0, r.jsx)(a.Elements, {
       options: H.OBo,

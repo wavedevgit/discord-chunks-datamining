@@ -103,8 +103,8 @@ let C = Chunk473749.memo(function(e) {
     status: P,
     containerRef: D,
     className: w,
-    wrapperClassName: x
-  } = e, [L, M] = i.useState(false), k = n || L || P === g._1z.FOCUSED, j = (0, l.e7)([h.Z, p.Z], () => h.Z.isInputLocked(p.Z.getTargetPID()));
+    wrapperClassName: L
+  } = e, [x, M] = i.useState(false), k = n || x || P === g._1z.FOCUSED, j = (0, l.e7)([h.Z, p.Z], () => h.Z.isInputLocked(p.Z.getTargetPID()));
   i.useEffect(() => {
     null == a || a()
   }, [a]);
@@ -206,7 +206,7 @@ let C = Chunk473749.memo(function(e) {
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: o()(b.overflowWrapper, x),
+      className: o()(b.overflowWrapper, L),
       onScroll: A,
       children: (0, r.jsx)(u.P3F, {
         innerRef: D,
@@ -318,9 +318,9 @@ function w(e) {
     null == p || p(e, c)
   }, [p, c]), w = i.useCallback(e => {
     null == h || h(e, c)
-  }, [h, c]), x = i.useCallback((e, t) => null == g ? true : g(e, c, t), [g, c]), {
+  }, [h, c]), L = i.useCallback((e, t) => null == g ? true : g(e, c, t), [g, c]), {
     props: {
-      onNotificationShow: L,
+      onNotificationShow: x,
       onDismissClick: M,
       renderFooter: k,
       onNotificationClick: j,
@@ -351,7 +351,7 @@ function w(e) {
         onNotificationClick: A,
         onConfirmClick: null != p ? P : true,
         onCancelClick: null != h ? w : true,
-        renderFooter: x,
+        renderFooter: L,
         expand: false,
         index: n,
         locked: a,

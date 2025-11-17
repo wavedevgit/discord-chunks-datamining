@@ -74,10 +74,10 @@ function h(e, t, n) {
       selectionManager: S,
       hasItemActions: !!(O || v)
     }),
-    x = (0, l.z)(e, {
+    L = (0, l.z)(e, {
       labelable: true
     }),
-    L = (0, u.useCallback)(e => {
+    x = (0, u.useCallback)(e => {
       if (S.isFocused) {
         e.currentTarget.contains(e.target) || S.setFocused(false);
         return
@@ -86,12 +86,12 @@ function h(e, t, n) {
     }, [S]),
     M = (0, u.useMemo)(() => ({
       onBlur: P.onBlur,
-      onFocus: L
-    }), [L, P.onBlur]),
+      onFocus: x
+    }), [x, P.onBlur]),
     k = (0, _.p)(n, {
       isDisabled: 0 !== t.collection.size
     }),
-    j = (0, c.d)(x, {
+    j = (0, c.d)(L, {
       role: "grid",
       id: D,
       "aria-multiselectable": "multiple" === S.selectionMode ? "true" : true

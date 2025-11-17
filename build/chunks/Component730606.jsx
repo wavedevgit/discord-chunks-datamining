@@ -130,13 +130,13 @@ function D(e) {
       type: l.l.GenericMedia,
       media: D
     }, c),
-    x = d ? e => {
+    L = d ? e => {
       e.stopPropagation(), e.preventDefault()
     } : () => (0, g.yg)(g.uG.CONTEXT_MENU_OPENED),
-    L = t.length > 1;
+    x = t.length > 1;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y.ZP, {
-      children: e => L ? (0, r.jsxs)(r.Fragment, {
+      children: e => x ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(v.Z, {
           onClick: e => {
             e.stopPropagation(), h.S.dispatch(T.CkL.MODAL_CAROUSEL_PREV)
@@ -164,10 +164,10 @@ function D(e) {
           maxWidth: e,
           maxHeight: t,
           obscured: n,
-          onContextMenu: x
+          onContextMenu: L
         })
       })
-    }), L && (0, r.jsx)(y.ZP, {
+    }), x && (0, r.jsx)(y.ZP, {
       children: e => (0, r.jsx)(O.Z, {
         items: t,
         currentIndex: f,

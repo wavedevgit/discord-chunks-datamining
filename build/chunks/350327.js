@@ -16,7 +16,7 @@ require.d(exports, {
   pG: () => O,
   rf: () => w,
   uV: () => M,
-  x3: () => x,
+  x3: () => L,
   z5: () => C
 });
 var Chunk442837 = require("./442837.js"),
@@ -191,12 +191,12 @@ function w(e) {
   }), E(h.QP.PROFILE_THEME_COLOR)
 }
 
-function x(e) {
+function L(e) {
   a.Z.dispatch(g({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET"
   }, e)), E(h.QP.PRESET)
 }
-async function L() {
+async function x() {
   if (null == Chunk621853.Z.applicationWidgetApplicationConfigs || !(Chunk621853.Z.applicationWidgetApplicationConfigs.length > 0)) {
     Chunk570140.Z.dispatch({
       type: "USER_PROFILE_APPLICATION_WIDGET_APPLICATION_CONFIGS_FETCH_START"
@@ -220,5 +220,5 @@ async function L() {
 let M = (0, Chunk442837.Kb)(Chunk621853.Z, {
   getQueryId: Chunk981631.McO.APPLICATION_WIDGET_APPLICATION_CONFIGS,
   get: () => Chunk621853.Z.applicationWidgetApplicationConfigs,
-  load: () => L()
+  load: () => x()
 })

@@ -2,7 +2,7 @@
 /** chunk id: 581883, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 });
 var r, Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
@@ -215,7 +215,7 @@ class w extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 m(w, "displayName", "UserSettingsProtoStore"), m(w, "persistKey", "UserSettingsProtoStore-Cache");
-let x = new w(Chunk570140.Z, {
+let L = new w(Chunk570140.Z, {
   CACHE_LOADED: P,
   USER_SETTINGS_PROTO_UPDATE: N,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: N,

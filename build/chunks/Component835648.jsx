@@ -104,7 +104,7 @@ function w(e) {
   }))
 }
 
-function x(e, t, n, i, a, o) {
+function L(e, t, n, i, a, o) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
       return (0, r.jsx)(w, C(S({}, i), {
@@ -149,7 +149,7 @@ function x(e, t, n, i, a, o) {
   }
 }
 
-function L(e) {
+function x(e) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
       return v.intl.string(v.t.k8fFjp);
@@ -191,10 +191,10 @@ function k(e) {
     isNitroLocked: o
   } = e, l = (0, s.JA)("soundboard_guild_".concat(n));
   return (0, r.jsx)(c.aML, {
-    text: L(t),
+    text: x(t),
     "aria-label": M(t),
     position: "right",
-    children: e => x(t, i, a, e, l, o)
+    children: e => L(t, i, a, e, l, o)
   })
 }
 

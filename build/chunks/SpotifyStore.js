@@ -40,7 +40,7 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,7 +65,7 @@ function L(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -464,14 +464,14 @@ function ew(e) {
   returnfalse
 }
 
-function ex(e) {
+function eL(e) {
   let {
     userId: t
   } = e;
   return ew(t)
 }
 
-function eL(e) {
+function ex(e) {
   let {
     voiceStates: t
   } = e;
@@ -546,7 +546,7 @@ function ej(e, t, n) {
     artists: [],
     isLocal: false
   });
-  if (null != y && true !== y.is_active && (y = M(x({}, y), {
+  if (null != y && true !== y.is_active && (y = M(L({}, y), {
       is_active: true
     })), null != S && [P.Hw.PLAYLIST, P.Hw.ALBUM].includes(S.type)) {
     let n = eB.getPlayerState(e);
@@ -705,8 +705,8 @@ let eB = new eG(Chunk570140.Z, {
     ACTIVITY_SYNC_STOP: ey,
     SPOTIFY_SET_DEVICES: eA,
     SPOTIFY_SET_ACTIVE_DEVICE: eC,
-    SPEAKING: ex,
-    VOICE_STATE_UPDATES: eL,
+    SPEAKING: eL,
+    VOICE_STATE_UPDATES: ex,
     MEDIA_ENGINE_SET_GO_LIVE_SOURCE: ek
   }),
   eZ = eB

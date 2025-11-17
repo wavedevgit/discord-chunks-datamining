@@ -119,7 +119,7 @@ let q = Chunk957825.Om + Chunk149203.Su.MEDIUM,
         E.ZP.trackWithMetadata(k.rMx.EXPRESSION_PICKER_TAB_CLICKED, {
           tab: i,
           badged: false
-        }), (0, L.hr)(i)
+        }), (0, x.hr)(i)
       },
       "aria-current": t ? "page" : true,
       className: o()(n, F.navButton, F.navItem, {
@@ -195,7 +195,7 @@ function J(e) {
     positionContainerRef: er,
     drawerRef: eo,
     orientation: "left" === $ ? g.y.HORIZONTAL_RIGHT : g.y.HORIZONTAL_LEFT
-  }), ec = (0, L.Iu)(e => e.activeView), eu = (0, N.fQ)(K), {
+  }), ec = (0, x.Iu)(e => e.activeView), eu = (0, N.fQ)(K), {
     renderWindow: ed,
     windowDispatch: ef
   } = i.useContext(S.ZP), e_ = (0, d.e7)([R.Z], () => !R.Z.hasLoadedStickerPacks), ep = (0, A.V2)({
@@ -219,18 +219,18 @@ function J(e) {
       (0, u.kK)(n);) {
       if (n === eo.current || "true" === n.getAttribute("data-menu-item") || "true" === n.getAttribute("data-premium-tutorial-expression-picker-tooltip") || "true" === n.getAttribute("data-premium-tutorial-persistent-coachmark-emoji-step")) return;
       n = n.parentNode
-    }(0, L._Q)();
+    }(0, x._Q)();
     let r = null == (t = (0, u.uB)(e)) ? true : t.activeElement;
-    (null == r || "BODY" === r.tagName) && x.S.dispatchToLastSubscribed(k.CkL.TEXTAREA_FOCUS)
+    (null == r || "BODY" === r.tagName) && L.S.dispatchToLastSubscribed(k.CkL.TEXTAREA_FOCUS)
   }, [et, eg, em, eh]), eT = i.useCallback(() => {
-    (0, L._Q)()
+    (0, x._Q)()
   }, []);
   i.useLayoutEffect(() => {
     let e = () => {
-      ec === M.X1.GIF && (0, L._Q)()
+      ec === M.X1.GIF && (0, x._Q)()
     };
-    return ed.addEventListener("mousedown", eI), ed.addEventListener("contextmenu", eI), ef.subscribe(k.CkL.POPOUT_CLOSE, eT), x.S.subscribe(k.CkL.CLOSE_GIF_PICKER, e), () => {
-      ed.removeEventListener("mousedown", eI), ed.removeEventListener("contextmenu", eI), ef.unsubscribe(k.CkL.POPOUT_CLOSE, eT), x.S.unsubscribe(k.CkL.CLOSE_GIF_PICKER, e)
+    return ed.addEventListener("mousedown", eI), ed.addEventListener("contextmenu", eI), ef.subscribe(k.CkL.POPOUT_CLOSE, eT), L.S.subscribe(k.CkL.CLOSE_GIF_PICKER, e), () => {
+      ed.removeEventListener("mousedown", eI), ed.removeEventListener("contextmenu", eI), ef.unsubscribe(k.CkL.POPOUT_CLOSE, eT), L.S.unsubscribe(k.CkL.CLOSE_GIF_PICKER, e)
     }
   }, [ec, eT, eI, ed, ef]), (0, p.Tbt)(er);
   let [eS, eA] = (0, y.US)(ep ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eC, eN] = i.useState(false);
@@ -239,9 +239,9 @@ function J(e) {
   }, [ec]), i.useEffect(() => () => {
     eC && eA(j.L.TAKE_ACTION)
   }, [eC, eA]), i.useEffect(() => {
-    (0, L.ql)("")
+    (0, x.ql)("")
   }, []), i.useEffect(() => {
-    (!em && (0, _.$s)() || em && !eg) && (0, L._Q)()
+    (!em && (0, _.$s)() || em && !eg) && (0, x._Q)()
   }, [eg, em]), i.useEffect(() => {
     if (null != eo.current && !ei.current) {
       var e, t, n, r;
@@ -256,8 +256,8 @@ function J(e) {
     eP = i.useCallback((e, t) => null == W ? true : W(e, "soundboard_picker", t), [W]),
     eD = (null == (s = z.soundmoji) ? true : s.allowSending) === true && null != W,
     ew = "left" === $ ? "right" : "left",
-    ex = null != ee ? ee : "left" === $ ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight,
-    eL = eb ? (0, r.jsx)(X, {
+    eL = null != ee ? ee : "left" === $ ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight,
+    ex = eb ? (0, r.jsx)(X, {
       id: U._3,
       "aria-controls": U.vO,
       "aria-selected": ec === M.X1.GIF,
@@ -288,7 +288,7 @@ function J(e) {
   return (0, r.jsx)(m.Z, {
     section: k.jXE.EXPRESSION_PICKER,
     children: (0, r.jsx)(T.W5, {
-      className: o()(F.positionLayer, ex),
+      className: o()(F.positionLayer, eL),
       targetRef: l,
       position: J,
       align: $,
@@ -329,9 +329,9 @@ function J(e) {
                   role: "tablist",
                   "aria-label": Z.intl.string(Z.t["2j4Vgd"]),
                   children: [eE ? (0, r.jsxs)(r.Fragment, {
-                    children: [ek, eL, eM]
+                    children: [ek, ex, eM]
                   }) : (0, r.jsxs)(r.Fragment, {
-                    children: [eL, eM, ek]
+                    children: [ex, eM, ek]
                   }), ep && eD && (0, r.jsx)(X, {
                     id: U.Hr,
                     "aria-controls": U.gV,

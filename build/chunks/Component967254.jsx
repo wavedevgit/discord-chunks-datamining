@@ -2,7 +2,7 @@
 /** chunk id: 967254, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => L
+  N: () => x
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -201,7 +201,7 @@ let C = e => {
       })
     }, a)
   },
-  x = e => {
+  L = e => {
     let {
       status: t,
       classifications: n
@@ -250,14 +250,14 @@ let C = e => {
       })]
     })
   },
-  L = () => {
+  x = () => {
     let e = (0, Chunk613734.y9)(),
       t = (0, Chunk613734.KM)();
     return 0 === module.length && 0 === exports.length ? null : (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(x, {
+      children: [(0, Chunk54381.jsx)(L, {
         status: "active",
         classifications: module
-      }), (0, Chunk54381.jsx)(x, {
+      }), (0, Chunk54381.jsx)(L, {
         status: "expired",
         classifications: exports
       })]

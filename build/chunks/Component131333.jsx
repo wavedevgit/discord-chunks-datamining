@@ -82,7 +82,7 @@ function w(e) {
     if (null != e.match(new RegExp(":".concat(t, "(_tone[1-9])?")))) return t;
   return null
 }
-let x = {
+let L = {
   enter: {
     BEG: 0,
     END: 22
@@ -97,7 +97,7 @@ let x = {
   }
 };
 
-function L() {
+function x() {
   return require.e("77843").then(require.t.bind(require, 931152, 19)).then(e => {
     let {
       default: t
@@ -208,10 +208,10 @@ function j(e) {
           animationRef: I,
           className: p.lottieAnimation,
           nextScene: l,
-          sceneSegments: x,
+          sceneSegments: L,
           onScenePlay: O,
           onSceneComplete: v,
-          importData: L,
+          importData: x,
           pauseWhileUnfocused: false
         })
       })

@@ -44,7 +44,7 @@ var Chunk98278 = require("./98278.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -60,7 +60,7 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -163,16 +163,16 @@ let G = e => {
 
 function Z(e) {
   return e.config.features.includes(P.S7.START_QUEST_CTA) ? (0, E.pO)(e) ? e.config.features.includes(P.S7.CLOUD_GAMING_ACTIVITY) ? {
-    text: x.intl.string(x.t["+qoymD"]),
+    text: L.intl.string(L.t["+qoymD"]),
     questContentCTA: m.jZ.START_QUEST
   } : {
-    text: x.intl.string(x.t["Ie9++s"]),
+    text: L.intl.string(L.t["Ie9++s"]),
     questContentCTA: m.jZ.START_QUEST
   } : {
-    text: x.intl.string(x.t["hRIVy+"]),
+    text: L.intl.string(L.t["hRIVy+"]),
     questContentCTA: m.jZ.START_QUEST
   } : {
-    text: x.intl.string(x.t.l7E81v),
+    text: L.intl.string(L.t.l7E81v),
     questContentCTA: m.jZ.ACCEPT_QUEST
   }
 }
@@ -210,12 +210,12 @@ function F(e) {
       analyticsLocations: [],
       analyticsSource: c.Z.QUEST_HOME_PAGE
     })
-  }, []), L = null == (t = (0, g.WD)()) ? true : t.getId(), {
+  }, []), x = null == (t = (0, g.WD)()) ? true : t.getId(), {
     launchInGameActivity: k
   } = (0, b.zB)(n), G = (0, E.Rt)(n), B = i.useMemo(() => n.config.features.includes(P.S7.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE), [n.config.features]);
   return i.useMemo(() => {
     if (!B && (0, E.HJ)(n) && r !== b.OH.COMPLETED && r !== b.OH.CLAIMED) {
-      let e = x.intl.string(x.t.BkZhUI);
+      let e = L.intl.string(L.t.BkZhUI);
       return {
         text: e,
         tooltipText: e,
@@ -224,9 +224,9 @@ function F(e) {
     }
     switch (r) {
       case b.OH.UNACCEPTED:
-        let e = x.intl.string(x.t.kUQLMJ),
+        let e = L.intl.string(L.t.kUQLMJ),
           t = m.jZ.ACCEPT_QUEST;
-        return p && (e = x.intl.string(x.t.umdNin), t = m.jZ.START_QUEST), (y || (0, E.pO)(n)) && ({
+        return p && (e = L.intl.string(L.t.umdNin), t = m.jZ.START_QUEST), (y || (0, E.pO)(n)) && ({
           text: e,
           questContentCTA: t
         } = Z(n)), {
@@ -285,7 +285,7 @@ function F(e) {
       case b.OH.ACCEPTED:
       case b.OH.IN_PROGRESS:
         if (I && _) return {
-          text: x.intl.string(x.t.Cfye4v),
+          text: L.intl.string(L.t.Cfye4v),
           tooltipText: null,
           onClick: () => (0, E.gI)({
             quest: n
@@ -294,12 +294,12 @@ function F(e) {
             ctaContent: m.jZ.CONNECT_CONSOLE,
             position: s,
             rowIndex: l,
-            impressionId: L,
+            impressionId: x,
             sourceQuestContent: O
           })
         };
         if (B && (0, E.HJ)(n)) return {
-          text: x.intl.string(x.t.IsH2Sp),
+          text: L.intl.string(L.t.IsH2Sp),
           tooltipText: null,
           onClick: () => {
             (0, N.openPushToPhoneModal)(n)
@@ -307,7 +307,7 @@ function F(e) {
         };
         if (p) return {
           text: (0, E.F9)(T),
-          tooltipText: x.intl.string(x.t.hsbwjv),
+          tooltipText: L.intl.string(L.t.hsbwjv),
           onClick: () => (0, N.openVideoQuestModal)({
             quest: n,
             questContent: o,
@@ -321,18 +321,18 @@ function F(e) {
           } = Z(n);
           return {
             text: e,
-            tooltipText: x.intl.string(x.t.hsbwjv),
+            tooltipText: L.intl.string(L.t.hsbwjv),
             onClick: () => {
               n.config.features.includes(P.S7.START_QUEST_CTA) && k()
             }
           }
         }
         return {
-          text: x.intl.string(x.t.cfY4PE), tooltipText: x.intl.string(x.t.hsbwjv), onClick: null
+          text: L.intl.string(L.t.cfY4PE), tooltipText: L.intl.string(L.t.hsbwjv), onClick: null
         };
       case b.OH.COMPLETED:
         return {
-          text: x.intl.string(x.t.cfY4PE), tooltipText: null, onClick: v
+          text: L.intl.string(L.t.cfY4PE), tooltipText: null, onClick: v
         };
       case b.OH.CLAIMED:
         let i = {
@@ -342,29 +342,29 @@ function F(e) {
         if ((0, S.i)("useCtaConfig")) return {
           tooltipText: null,
           onClick: v,
-          text: (0, E.wj)(n.config) ? x.intl.string(x.t.bAGFz3) : x.intl.string(x.t.vTgCWx)
+          text: (0, E.wj)(n.config) ? L.intl.string(L.t.bAGFz3) : L.intl.string(L.t.vTgCWx)
         };
         if (a) return j(M({}, i), {
-          text: x.intl.string(x.t.MAS7uK)
+          text: L.intl.string(L.t.MAS7uK)
         });
         if ((0, E.vQ)(n.config)) return j(M({}, i), {
-          text: x.intl.string(x.t.vTgCWx)
+          text: L.intl.string(L.t.vTgCWx)
         });
         if ((0, E.Bg)(n.config)) return {
           tooltipText: null,
           onClick: C,
-          text: x.intl.string(x.t["eQX+gg"])
+          text: L.intl.string(L.t["eQX+gg"])
         };
         else if ((0, E.xN)(n.config)) return {
           tooltipText: null,
-          text: x.intl.string(x.t.WYchde),
+          text: L.intl.string(L.t.WYchde),
           onClick: R
         };
         return j(M({}, i), {
-          text: x.intl.string(x.t.bAGFz3)
+          text: L.intl.string(L.t.bAGFz3)
         })
     }
-  }, [r, p, I, _, v, a, n, o, s, l, L, T, C, R, y, k, O, B, G])
+  }, [r, p, I, _, v, a, n, o, s, l, x, T, C, R, y, k, O, B, G])
 }
 
 function V() {
@@ -461,6 +461,6 @@ function K(e) {
     trackingCtx: r
   } = e;
   return (0, l.h)(i.useCallback(() => {
-    t && ((0, E.f2)(n, r), (0, s.showToast)((0, s.createToast)(x.intl.string(x.t["+5kSoW"]), s.ToastType.SUCCESS)))
+    t && ((0, E.f2)(n, r), (0, s.showToast)((0, s.createToast)(L.intl.string(L.t["+5kSoW"]), s.ToastType.SUCCESS)))
   }, [t, n, r]), 3e3, [], W)
 }

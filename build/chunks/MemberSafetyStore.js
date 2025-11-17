@@ -125,7 +125,7 @@ function w(e) {
   return r.updateMembersByMemberIds(i)
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     addedMembers: n
@@ -139,7 +139,7 @@ function x(e) {
   return r.updateMembersByMemberIds(i)
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     members: n
@@ -417,8 +417,8 @@ let J = new Q(Chunk570140.Z, {
   GUILD_ROLE_MEMBER_REMOVE: D,
   GUILD_ROLE_MEMBER_ADD: D,
   THREAD_MEMBER_LIST_UPDATE: w,
-  THREAD_MEMBERS_UPDATE: x,
-  LOAD_ARCHIVED_THREADS_SUCCESS: L,
+  THREAD_MEMBERS_UPDATE: L,
+  LOAD_ARCHIVED_THREADS_SUCCESS: x,
   LOAD_FORUM_POSTS: M,
   INITIALIZE_MEMBER_SAFETY_STORE: H,
   MEMBER_SAFETY_NEW_MEMBER_TIMESTAMP_REFRESH: Y,

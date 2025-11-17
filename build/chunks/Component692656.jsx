@@ -78,7 +78,7 @@ function ea(e) {
     setSearchQuery: o,
     setScroller: s,
     isScrollCloseToBottom: l
-  } = e, c = (0, _.e7)([m.Z], () => m.Z.getIsEnabled(), []), u = n === x._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, j.Yn)(n), f = !(0, j.Yn)(n), h = n === x._b.TEXT, [E, b] = ep(true), [y, O] = ep(u), [v, I] = ep(d), [T, S] = ep(f), A = E && y && v && T, C = (d || u) && !A, N = f && c;
+  } = e, c = (0, _.e7)([m.Z], () => m.Z.getIsEnabled(), []), u = n === L._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, j.Yn)(n), f = !(0, j.Yn)(n), h = n === L._b.TEXT, [E, b] = ep(true), [y, O] = ep(u), [v, I] = ep(d), [T, S] = ep(f), A = E && y && v && T, C = (d || u) && !A, N = f && c;
   i.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null == (e = t.channel) ? true : e.guild_id : true;
@@ -87,7 +87,7 @@ function ea(e) {
       force: true
     })
   }, [t]), i.useEffect(() => {
-    n === x._b.VOICE && g.ux()
+    n === L._b.VOICE && g.ux()
   }, [n]);
   let R = a.length > 0;
   return (0, r.jsxs)("div", {
@@ -121,8 +121,8 @@ function ea(e) {
           context: t,
           onEmptyState: S
         }), A && (0, r.jsx)(F.A, {
-          type: x.LG.HOME_EMPTY,
-          textContent: n === x._b.TEXT ? q.intl.string(q.t.iKZctW) : q.intl.string(q.t.RL7Ncg)
+          type: L.LG.HOME_EMPTY,
+          textContent: n === L._b.TEXT ? q.intl.string(q.t.iKZctW) : q.intl.string(q.t.RL7Ncg)
         }), C && (0, r.jsx)(H.Z, {})]
       })
     })]
@@ -207,10 +207,10 @@ function ec(e) {
     context: t,
     entrypoint: n,
     onEmptyState: a
-  } = e, o = n === x._b.VOICE, {
+  } = e, o = n === L._b.VOICE, {
     frecentApps: s,
     loading: l
-  } = (0, L.f)({
+  } = (0, x.f)({
     context: t,
     onlyActivityApps: o,
     allowCommandFetch: true,
@@ -228,16 +228,16 @@ function ec(e) {
     handleViewMore: _
   } = eE({
     title: d,
-    look: n === x._b.VOICE ? G.U4.LARGE_BANNER : G.U4.ROW,
+    look: n === L._b.VOICE ? G.U4.LARGE_BANNER : G.U4.ROW,
     items: c,
     limit: et,
-    sectionName: x.L3.RECENT_APPS
+    sectionName: L.L3.RECENT_APPS
   });
   i.useEffect(() => {
     l || 0 !== f.length && (0, O.yw)(K.rMx.APP_LAUNCHER_FRECENTS_SEEN, {
       num: f.length,
-      section_name: x.L3.RECENT_APPS,
-      location: x.G0.HOME,
+      section_name: L.L3.RECENT_APPS,
+      location: L.G0.HOME,
       source: n
     })
   }, [f.length, n, l]);
@@ -264,8 +264,8 @@ function ec(e) {
             context: t,
             application: i,
             look: G.U4.ICON,
-            location: x.G0.HOME,
-            sectionName: x.L3.RECENT_APPS,
+            location: L.G0.HOME,
+            sectionName: L.L3.RECENT_APPS,
             resultsPosition: n,
             isOneClickCTA: true,
             fetchesApplication: false
@@ -273,8 +273,8 @@ function ec(e) {
             context: t,
             application: i,
             look: G.U4.ICON,
-            location: x.G0.HOME,
-            sectionName: x.L3.RECENT_APPS,
+            location: L.G0.HOME,
+            sectionName: L.L3.RECENT_APPS,
             resultsPosition: n
           }, i.id)
         })
@@ -297,7 +297,7 @@ function eu(e) {
     {
       trackSectionImpressionRef: l
     } = (0, Z.Z)({
-      sectionName: x.L3.ACTIVITIES,
+      sectionName: L.L3.ACTIVITIES,
       numItems: o.length,
       numVisibleItems: o.length
     }),
@@ -324,7 +324,7 @@ function eu(e) {
           application: i,
           look: s,
           location: I.Vh.APP_LAUNCHER_HOME,
-          sectionName: x.L3.ACTIVITIES,
+          sectionName: L.L3.ACTIVITIES,
           resultsPosition: t,
           sectionOverallPosition: 0,
           isOneClickCTA: !c,
@@ -339,7 +339,7 @@ function ed(e) {
   let {
     context: t,
     onEmptyState: n
-  } = e, a = x.L3.APPS_IN_THIS_SERVER, {
+  } = e, a = L.L3.APPS_IN_THIS_SERVER, {
     appsInThisServer: o,
     isLoading: s
   } = (0, M.Z)({
@@ -592,7 +592,7 @@ function em(e) {
   })), l = (0, _.e7)([C.Z], () => C.Z.getCollections({
     surface: ei,
     activeState: r
-  })), c = n === x._b.VOICE;
+  })), c = n === L._b.VOICE;
   return {
     fetchState: s,
     recommendationsSections: i.useMemo(() => c ? (0, j.pF)(l) : l, [l, c]),

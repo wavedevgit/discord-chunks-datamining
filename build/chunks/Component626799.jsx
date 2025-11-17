@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $: () => M,
-  Z: () => L
+  Z: () => x
 }), require("./388685.js"), require("./415506.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -226,6 +226,6 @@ function w(e) {
     libraryApplication: null != n ? E.Z.getLibraryApplication(n.applicationId, n.applicationId, true) : null
   }
 }
-let x = (0, Chunk112724.Z)((0, Chunk730749.Z)(P)),
-  L = Chunk442837.ZP.connectStores(D, w)(x),
+let L = (0, Chunk112724.Z)((0, Chunk730749.Z)(P)),
+  x = Chunk442837.ZP.connectStores(D, w)(L),
   M = (0, Chunk730749.Z)(Chunk442837.ZP.connectStores(D, w)(P))

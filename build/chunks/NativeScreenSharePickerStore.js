@@ -6,7 +6,7 @@ require.d(exports, {
   UB: () => w,
   Uc: () => I,
   ZP: () => H,
-  kE: () => x
+  kE: () => L
 });
 var i, Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -65,13 +65,13 @@ function w() {
   }), [])
 }
 
-function x() {
+function L() {
   return (0, Chunk473749.useEffect)(() => (A++, D(), () => {
     --A, D()
   }), [])
 }
 
-function L() {
+function x() {
   let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId());
   return T = null != module && (0, Chunk74299.Z)(Chunk131951.Z) && (0, Chunk102172.JL)(module, Chunk430824.Z, Chunk496675.Z, false), D(), false
 }
@@ -98,7 +98,7 @@ function j() {
 }
 class U extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk131951.Z, Chunk944486.Z, Chunk592125.Z, Chunk430824.Z, Chunk496675.Z], L), L()
+    this.syncWith([Chunk131951.Z, Chunk944486.Z, Chunk592125.Z, Chunk430824.Z, Chunk496675.Z], x), x()
   }
   supported() {
     return R()

@@ -112,11 +112,11 @@ function R(e) {
     setDevice: P,
     Icon: D,
     getCanSetDevice: w,
-    getWarningMessage: x,
-    getLocation: L
+    getWarningMessage: L,
+    getLocation: x
   } = N(t), {
     analyticsLocations: M
-  } = (0, d.ZP)(), k = (0, s.e7)([f.Z], () => f.Z.theme), [j, U] = i.useState(u), G = L(a), [B, Z] = (0, E.Ls)(t, {
+  } = (0, d.ZP)(), k = (0, s.e7)([f.Z], () => f.Z.theme), [j, U] = i.useState(u), G = x(a), [B, Z] = (0, E.Ls)(t, {
     location: G
   }), {
     id: F
@@ -126,7 +126,7 @@ function R(e) {
     location: "".concat(G, "/SingleSelectDevices")
   }), W = (0, r.jsx)(c.Wn, {
     messageType: c.QYI.WARNING,
-    children: x()
+    children: L()
   }), K = i.useCallback(e => {
     if (e === C) U(true), m.default.track(b.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
       device_type: t,

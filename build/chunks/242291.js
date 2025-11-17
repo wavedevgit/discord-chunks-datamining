@@ -4,13 +4,13 @@
 require.d(exports, {
   C0: () => R,
   GN: () => P,
-  M2: () => x,
+  M2: () => L,
   Nq: () => N,
   SZ: () => k,
   aC: () => M,
   lF: () => G,
   pI: () => A,
-  sR: () => L,
+  sR: () => x,
   tt: () => U
 }), require("./539854.js");
 var Chunk399606 = require("./399606.js"),
@@ -74,7 +74,7 @@ function w() {
   var e, t;
   return Object.values(null != (t = null == (e = Chunk581883.Z.settings.guilds) ? true : module.guilds) ? exports : {}).some(e => null != e.joinSound)
 }
-async function x(e) {
+async function L(e) {
   let t = p.default.getCurrentUser(),
     n = (0, o.Z)(),
     r = (0, v.k9)(e);
@@ -88,7 +88,7 @@ async function x(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     isSoundboardButtonDisabled: t = false
   } = e, n = (0, r.e7)([p.default], () => p.default.getCurrentUser()), a = [];

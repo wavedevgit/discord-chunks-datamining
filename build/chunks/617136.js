@@ -8,9 +8,9 @@ require.d(exports, {
   _3: () => k,
   _F: () => U,
   _b: () => R,
-  dA: () => L,
+  dA: () => x,
   jZ: () => M,
-  mH: () => x,
+  mH: () => L,
   uk: () => P
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
@@ -107,7 +107,7 @@ function w(e, t, n) {
   }, (0, h.qe)(e.id, t))
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   return {
     content_id: e,
     content_name: R(e),
@@ -116,7 +116,7 @@ function x(e, t, n) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     questId: t,
     event: n,
@@ -150,10 +150,10 @@ async function k(e) {
     trackGuildAndChannelMetadata: u = false,
     sourceQuestContent: d
   } = e, f = m.Z.getQuest(t), p = await (0, a.S)(R(n)), g = (0, h.jY)(n);
-  L({
+  x({
     questId: t,
     event: v.rMx.QUEST_CONTENT_CLICKED,
-    properties: A(T({}, x(n, o, s), (0, c.Z)()), {
+    properties: A(T({}, L(n, o, s), (0, c.Z)()), {
       cta_name: r,
       quest_status: null != f ? P(f) : null,
       impression_id: l,
@@ -175,8 +175,8 @@ function j(e) {
     questId: r,
     mode: i,
     prevMode: a
-  } = e, o = x(t);
-  L({
+  } = e, o = L(t);
+  x({
     questId: r,
     event: v.rMx.QUEST_BAR_MODE_CHANGED,
     properties: {
@@ -192,7 +192,7 @@ function j(e) {
 function U() {
   let e = (0, Chunk915750.WD)();
   return Chunk473749.useCallback(t => {
-    L(A(T({}, t), {
+    x(A(T({}, t), {
       properties: A(T({}, t.properties), {
         impression_id: null == e ? true : e.getId()
       })
@@ -216,7 +216,7 @@ function G() {
       e({
         questId: n,
         event: v.rMx.QUEST_CONTENT_CLICKED,
-        properties: A(T({}, x(r, s, l), (0, c.Z)()), {
+        properties: A(T({}, L(r, s, l), (0, c.Z)()), {
           cta_name: o,
           quest_status: null != f ? P(f) : null,
           click_id: (0, i.Z)(),

@@ -36,7 +36,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk483012 = require("./483012.js"),
   Chunk955132 = require("./955132.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,14 +45,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -101,7 +101,7 @@ let G = new Chunk710845.Z("ConnectionStore"),
     };
     let r = (0, b.q_)(t),
       i = v.Z.getChannel(t.id),
-      a = null == i ? true : i.merge(k(L({}, r), {
+      a = null == i ? true : i.merge(k(x({}, r), {
         recipients: i.recipients,
         bitrate: null != (n = r.bitrate) ? n : i.bitrate
       }));
@@ -861,7 +861,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     requiredAction: e.required_action
   })
 }), Y(["USER_NOTE_UPDATE"], e => {
-  q(L({
+  q(x({
     type: "USER_NOTE_UPDATE"
   }, e))
 }), Y(["RELATIONSHIP_ADD"], e => {
@@ -1071,7 +1071,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     type: "MESSAGE_REACTION_ADD_MANY",
     channelId: e.channel_id,
     messageId: e.message_id,
-    reactions: e.votes.map(e => k(L({}, e), {
+    reactions: e.votes.map(e => k(x({}, e), {
       emoji: {
         id: e.answer_id,
         name: ""
@@ -1573,7 +1573,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     openid_params: e.openid_params
   })
 }), Y(["DELETED_ENTITY_IDS"], e => {
-  q(L({
+  q(x({
     type: "DELETED_ENTITY_IDS"
   }, e))
 }), W(["CHANNEL_SYNC"], e => v.o.loadGuildIds([e.guild_id]), e => {
@@ -1677,7 +1677,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     inviteIds: e.invite_ids
   })
 }), Y(["CONVERSATION_SUMMARY_UPDATE"], e => {
-  q(L({
+  q(x({
     type: "CONVERSATION_SUMMARY_UPDATE"
   }, e))
 }), Y(["PREMIUM_MARKETING_PREVIEW"], e => {

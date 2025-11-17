@@ -42,8 +42,8 @@ let w = (0, Chunk730749.Z)(e => {
     applicationStream: o,
     className: u,
     guildId: w,
-    channelId: x,
-    source: L,
+    channelId: L,
+    source: x,
     buttonVariant: M,
     type: k,
     onAction: j
@@ -71,14 +71,14 @@ let w = (0, Chunk730749.Z)(e => {
           activity: t,
           user: i,
           guildId: w,
-          channelId: x,
-          source: L,
+          channelId: L,
+          source: x,
           onAction: j
         }),
         n = (0, r.jsx)(A.Z, {
           activity: t,
           user: i,
-          source: L,
+          source: x,
           onAction: j
         });
       return (0, r.jsxs)(c.ButtonGroup, {

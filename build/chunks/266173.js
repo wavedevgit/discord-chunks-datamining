@@ -179,12 +179,12 @@ function D() {
   return Object.values(Chunk486016.i)
 }
 let w = new Set([Chunk486016.i.WELCOME_GENERAL, Chunk486016.i.GO_LIVE_NUDGE, Chunk486016.i.GAME_ACTIVITY]),
-  x = "overlay-negative-widget-experiment-bucket";
-class L extends Chunk147913.Z {
+  L = "overlay-negative-widget-experiment-bucket";
+class x extends Chunk147913.Z {
   constructor() {
     var e, t;
     super(), e = this, h(this, "_settings", new P), h(this, "_hasInitialized", false), h(this, "_isProcessing", false), h(this, "_appliedExperimentBucket", "control"), h(this, "setAppliedExperimentBucket", e => {
-      this._appliedExperimentBucket = e, i.K.set(x, e)
+      this._appliedExperimentBucket = e, i.K.set(L, e)
     }), h(this, "getRawAppliedExperimentBucket", () => (0, Chunk32300.hb)("applied-experiment-bucket")), h(this, "getWidgetExperimentSettings", e => {
       let {
         voiceWidgetDefaultUnpinned: t,
@@ -272,7 +272,7 @@ class L extends Chunk147913.Z {
       EXPERIMENT_OVERRIDE_BUCKET: this.handleExperimentOverrideBucket,
       OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: this.handleSetNotificationDisabledSetting,
       LAYOUT_SET_PINNED: this.handleSetPinned
-    }), this._appliedExperimentBucket = null != (t = Chunk433517.K.get(x)) ? exports : "control"
+    }), this._appliedExperimentBucket = null != (t = Chunk433517.K.get(L)) ? exports : "control"
   }
 }
-let M = new L
+let M = new x

@@ -181,16 +181,16 @@ function w(e) {
   e.userId in b && delete b[e.userId]
 }
 
-function x() {
+function L() {
   for (let [e, t] of Chunk709054.default.entries(b))
     for (let [n, r] of Chunk709054.default.entries(exports)) {
       let t = r[0];
       null != exports && ("" === exports.draft || "" === exports.draft.trim()) && S(require, 0, module)
     }
 }
-class L extends(r = Chunk442837.ZP.PersistedStore) {
+class x extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    b = null != e ? e : {}, x(), this.waitFor(u.default, d.Z, f.Z)
+    b = null != e ? e : {}, L(), this.waitFor(u.default, d.Z, f.Z)
   }
   getState() {
     return b
@@ -243,7 +243,7 @@ class L extends(r = Chunk442837.ZP.PersistedStore) {
     return null == n ? null : n[1]
   }
 }
-_(L, "displayName", "DraftStore"), _(L, "persistKey", "DraftStore"), _(L, "migrations", [e => {
+_(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migrations", [e => {
   if (null == e) return {};
   for (let t in e) "timestamp" in e[t] && (e[t] = {
     0: e[t]
@@ -257,7 +257,7 @@ _(L, "displayName", "DraftStore"), _(L, "persistKey", "DraftStore"), _(L, "migra
   for (let t in e) r[t] = e[t];
   return n
 }]);
-let M = new L(Chunk570140.Z, {
+let M = new x(Chunk570140.Z, {
   CONNECTION_OPEN: C,
   LOGOUT: D,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: w,

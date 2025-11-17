@@ -8,7 +8,7 @@ require.d(exports, {
   Gu: () => B,
   JQ: () => A,
   NE: () => b,
-  RG: () => x,
+  RG: () => L,
   Xb: () => k,
   Xu: () => O,
   Y: () => G,
@@ -17,7 +17,7 @@ require.d(exports, {
   kn: () => D,
   tM: () => E,
   tc: () => P,
-  xl: () => L,
+  xl: () => x,
   yw: () => U
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
@@ -136,12 +136,12 @@ function w(e) {
   return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null == (t = e.threadMetadata) ? true : t.locked) !== true && n)
 }
 
-function x(e) {
+function L(e) {
   var t;
   return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null == (t = e.threadMetadata) ? true : t.locked) !== true && p.Z.can(g.Plq.SEND_MESSAGES_IN_THREADS, e))
 }
 
-function L(e) {
+function x(e) {
   let t = p.Z.can(g.Plq.MANAGE_THREADS, e);
   return e.isArchivedLockedThread() && !t
 }

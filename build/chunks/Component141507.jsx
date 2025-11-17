@@ -45,8 +45,8 @@ let D = e => {
     }) : null
   },
   w = Chunk473749.memo(function(e) {
-    let t, w, x, {
-        className: L,
+    let t, w, L, {
+        className: x,
         emojiGrid: M,
         guildId: k,
         pickerIntention: j,
@@ -154,7 +154,7 @@ let D = e => {
       guild: F,
       shouldAnimate: !H && V
     }) : null;
-    x = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t.XCmLfG) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? K.has(t.guildId) ? C.intl.string(C.t["/K2RDH"]) : C.intl.string(C.t.NZI2Zk) : (0, y.nY)(t);
+    L = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t.XCmLfG) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? K.has(t.guildId) ? C.intl.string(C.t["/K2RDH"]) : C.intl.string(C.t.NZI2Zk) : (0, y.nY)(t);
     let $ = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t["Z/r7IS"]) : D({
       inspectedEmoji: t,
       channel: U,
@@ -163,10 +163,10 @@ let D = e => {
       guild: F
     });
     return (0, r.jsx)(p.Z, {
-      className: L,
+      className: x,
       graphicPrimary: w,
       graphicSecondary: J,
-      titlePrimary: x,
+      titlePrimary: L,
       titleSecondary: $,
       isFavorite: W,
       emojiSubCategory: q

@@ -30,11 +30,11 @@ var r = "function" == typeof Map && Map.prototype,
   P = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
   D = "function" == typeof Symbol && Symbol.toStringTag && (typeof Symbol.toStringTag === P ? "object" : "symbol") ? Symbol.toStringTag : null,
   w = Object.prototype.propertyIsEnumerable,
-  x = ("function" == typeof Reflect ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(e) {
+  L = ("function" == typeof Reflect ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(e) {
     return e.__proto__
   } : null);
 
-function L(e, t) {
+function x(e, t) {
   if (e === 1 / 0 || e === false / 0 || e != e || e && e > false && e < 1e3 || v.call(/e/, t)) return t;
   var n = /[0-9](?=(?:[0-9]{3})+(?![0-9]))/g;
   if ("number" == typeof e) {
@@ -135,11 +135,11 @@ module.exports = function e(t, r, i, s) {
   if ("number" == typeof t) {
     if (0 === t) return 1 / 0 / t > 0 ? "0" : "-0";
     var _ = String(t);
-    return f ? L(t, _) : _
+    return f ? x(t, _) : _
   }
   if ("bigint" == typeof t) {
     var h = String(t) + "n";
-    return f ? L(t, h) : h
+    return f ? x(t, h) : h
   }
   var m = true === l.depth ? 5 : l.depth;
   if (true === i && (i = 0), i >= m && m > 0 && "object" == typeof t) return V(t) ? "[Array]" : "[Object]";
@@ -207,7 +207,7 @@ module.exports = function e(t, r, i, s) {
   if ("undefined" != typeof globalThis && t === globalThis || true !== n.g && t === n.g) return "{ [object globalThis] }";
   if (!H(t) && !Y(t)) {
     var ey = eg(t, y),
-      eO = x ? x(t) === Object.prototype : t instanceof Object || t.constructor === Object,
+      eO = L ? L(t) === Object.prototype : t instanceof Object || t.constructor === Object,
       ev = t instanceof Object ? "" : "null prototype",
       eI = !eO && D && Object(t) === t && D in t ? E.call(ee(t), 8, false) : ev ? "Object" : "",
       eT = (eO || "function" != typeof t.constructor ? "" : t.constructor.name ? t.constructor.name + " " : "") + (eI || ev ? "[" + T.call(I.call([], eI || [], ev || []), ": ") + "] " : "");

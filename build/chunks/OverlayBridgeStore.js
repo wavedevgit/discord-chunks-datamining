@@ -178,7 +178,7 @@ let e_ = "none",
       ed((0, U.getPID)(), Y(V({}, r), {
         error_description: n,
         success: false
-      })), L.default.track(B.rMx.OVERLAY_HOOK_RESULT, eu((0, U.getPID)()))
+      })), x.default.track(B.rMx.OVERLAY_HOOK_RESULT, eu((0, U.getPID)()))
     },
     timeoutMs: 18e4
   });
@@ -201,7 +201,7 @@ function em() {
           var t, n, r, i, a, o, s;
           if (null == l) continue;
           let e = null != l.processName ? w.Z.getGameByExecutable(l.processName) : null;
-          L.default.track(B.rMx.OVERLAY_HOOK_CRASHED, {
+          x.default.track(B.rMx.OVERLAY_HOOK_CRASHED, {
             process_name: null == l ? true : l.processName,
             game_name: null != (t = null == e ? true : e.name) ? t : null,
             game_id: null != (n = null == e ? true : e.id) ? n : null,
@@ -371,12 +371,12 @@ function eC(e, t, n) {
       success: t,
       overlay_method: I.gl[I.gl.Hook]
     }, n);
-  ed(e, V({}, o)), (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), Z.bv, {
+  ed(e, V({}, o)), (0, d.te)(U.OVERLAY_LAYOUT_ID, L.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), Z.bv, {
     width: n.graphics_width,
     height: n.graphics_height
   });
   let s = eu(e);
-  L.default.track(B.rMx.OVERLAY_HOOK_RESULT, s), el.info("Overlay connection to ".concat(e, " ").concat(t ? "succeeded" : "failed"), s), t ? (f.Z.updateOverlayState(e, I.mM.OVERLAY_RENDERING, "onConnectComplete"), eg(e, "CONNECTED", "CONNECTING")) : (f.Z.updateOverlayState(e, I.mM.OVERLAY_CRASHED, "onConnectComplete"), eg(e, "CONNECT_FAILED", "CONNECTING"))
+  x.default.track(B.rMx.OVERLAY_HOOK_RESULT, s), el.info("Overlay connection to ".concat(e, " ").concat(t ? "succeeded" : "failed"), s), t ? (f.Z.updateOverlayState(e, I.mM.OVERLAY_RENDERING, "onConnectComplete"), eg(e, "CONNECTED", "CONNECTING")) : (f.Z.updateOverlayState(e, I.mM.OVERLAY_CRASHED, "onConnectComplete"), eg(e, "CONNECT_FAILED", "CONNECTING"))
 }
 
 function eN() {
@@ -403,7 +403,7 @@ function eP(e) {
     case B.BmY.CONNECT:
       let t = D.default.getToken();
       if (null == t) break;
-      (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), Z.bv), Promise.all([(0, T.Z)(t, e.pid), o.ZP.PersistedStore.getAllStates()]).then(t => {
+      (0, d.te)(U.OVERLAY_LAYOUT_ID, L.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), Z.bv), Promise.all([(0, T.Z)(t, e.pid), o.ZP.PersistedStore.getAllStates()]).then(t => {
         let [n, r] = t, {
           pid: i,
           token: a
@@ -450,17 +450,17 @@ async function eD(e, t) {
 function ew(e, t) {
   e ? setTimeout(() => eD(e, t), 200) : eD(e, t)
 }
-let ex = null;
+let eL = null;
 
-function eL(e) {
+function ex(e) {
   let {
     locked: t,
     pid: n
   } = e, r = q.get(n);
   if ((ee.has(n) && ev(true), null != r && null != K[n]) && (t || "READY" === r || "CRASHED" === r)) {
-    if (t ? en.delete(n) : en.add(n), eo.clear(), null != ex && (clearTimeout(ex), ex = null, t)) return;
-    t ? ew(t, n) : ex = setTimeout(() => {
-      ew(t, n), ex = null
+    if (t ? en.delete(n) : en.add(n), eo.clear(), null != eL && (clearTimeout(eL), eL = null, t)) return;
+    t ? ew(t, n) : eL = setTimeout(() => {
+      ew(t, n), eL = null
     }, 100)
   }
 }
@@ -482,7 +482,7 @@ function ej(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "850eda1470931760fc296427a592780f9dcc716b"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "73be09f26eedd4cf663fc4af65631c1572b1c34e"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {
@@ -668,7 +668,7 @@ let e0 = new e$(Chunk570140.Z, __OVERLAY__ ? {
     RUNNING_GAMES_CHANGE: eK,
     OVERLAY_SET_ENABLED: eH,
     OVERLAY_FOCUSED: eG,
-    OVERLAY_SET_INPUT_LOCKED: eL,
+    OVERLAY_SET_INPUT_LOCKED: ex,
     OVERLAY_ACTIVATE_REGION: eM,
     OVERLAY_DEACTIVATE_ALL_REGIONS: ek,
     RPC_SERVER_READY: ej,

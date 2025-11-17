@@ -96,9 +96,9 @@ function T(e) {
     w = e => {
       t = e
     },
-    x = h ? v : O,
-    L = u.default.getCurrentUser();
-  if (!(null == L ? true : L.verified)) return void(0, a.ZDy)(async () => {
+    L = h ? v : O,
+    x = u.default.getCurrentUser();
+  if (!(null == x ? true : x.verified)) return void(0, a.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("88470"), n.e("20102")]).then(n.bind(n, 444688));
@@ -140,7 +140,7 @@ function T(e) {
       onStepChange: w
     }))
   }, {
-    modalKey: x,
+    modalKey: L,
     onCloseCallback: () => {
       P || d.default.track(p.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: D,
@@ -154,7 +154,7 @@ function T(e) {
       })
     },
     onCloseRequest: () => {
-      null != t && I.has(t) && (0, a.Mr3)(x)
+      null != t && I.has(t) && (0, a.Mr3)(L)
     }
   })
 }

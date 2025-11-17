@@ -66,12 +66,12 @@ function w(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = require("./227419.jsx").Z,
+let x = require("./227419.jsx").Z,
   M = (e, t) => {
     var n;
     return null == (n = e.find(e => e.name === t)) ? true : n.value
@@ -92,7 +92,7 @@ let L = require("./227419.jsx").Z,
       }
     }
   },
-  j = [...L, {
+  j = [...x, {
     id: "-1",
     untranslatedName: "shrug",
     displayName: "shrug",
@@ -582,7 +582,7 @@ let L = require("./227419.jsx").Z,
       },
       required: true,
       get choices() {
-        return (0, Chunk590433.tr)().map(e => x(D({}, e), {
+        return (0, Chunk590433.tr)().map(e => L(D({}, e), {
           name: e.label,
           displayName: e.label
         }))

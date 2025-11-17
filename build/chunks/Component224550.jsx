@@ -47,9 +47,9 @@ let g = (e, t, n, r) => {
         basePrice: P,
         currentSubscription: D,
         skuId: w,
-        applicationName: x
+        applicationName: L
       } = e,
-      L = (0, i.e7)([o.Z], () => o.Z.inReverseTrial());
+      x = (0, i.e7)([o.Z], () => o.Z.inReverseTrial());
     if (A) return null;
     let M = null == e.planGroup ? [] : e.planGroup;
     if (null != T) {
@@ -115,7 +115,7 @@ let g = (e, t, n, r) => {
           break;
         case f.POd.SOCIAL_LAYER_GAME_ITEM:
           B = j, G = h.intl.format(h.t.CVITgq, {
-            applicationName: null != x ? x : "game's"
+            applicationName: null != L ? L : "game's"
           });
           break;
         default:
@@ -156,7 +156,7 @@ let g = (e, t, n, r) => {
           paidURL: f.EYA.PAID_TERMS,
           contactLink: f.EYA.CONTACT,
           helpdeskArticle: l.Z.getArticleURL(f.BhN.BILLING)
-        }) : L && N === f.POd.BOOST && null != P ? h.intl.format(h.t["2nKy/0"], {
+        }) : x && N === f.POd.BOOST && null != P ? h.intl.format(h.t["2nKy/0"], {
           price: (0, u.T4)(P.amount, P.currency),
           paidServiceTermsArticle: f.EYA.PAID_TERMS,
           contactUsArticle: f.EYA.CONTACT,

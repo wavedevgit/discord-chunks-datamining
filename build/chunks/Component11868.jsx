@@ -2,7 +2,7 @@
 /** chunk id: 11868, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Qt: () => x,
+  Qt: () => L,
   ZP: () => j
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
@@ -40,7 +40,7 @@ let D = (e, t) => n => {
     let r = p.Z.getChannel(e.channel_id);
     null != r && (n.stopPropagation(), (0, _.Cq)(r), null == t || t(n))
   },
-  x = (e, t) => {
+  L = (e, t) => {
     switch (null == e ? true : e.entity_type) {
       case N.WX.STAGE_INSTANCE:
         return w(e, t);
@@ -49,7 +49,7 @@ let D = (e, t) => n => {
     }
     return () => {}
   },
-  L = (e, t) => t && [N.WX.STAGE_INSTANCE, N.WX.VOICE].includes(null == e ? true : e.entity_type),
+  x = (e, t) => t && [N.WX.STAGE_INSTANCE, N.WX.VOICE].includes(null == e ? true : e.entity_type),
   M = Chunk473749.memo(function(e) {
     var t;
     let {
@@ -64,7 +64,7 @@ let D = (e, t) => n => {
     }, [n]), p = (0, A.u)(a, o), g = i.useCallback(e => {
       u && null != a && (e.stopPropagation(), (0, c.Bk)(a))
     }, [u, a]), E = i.useCallback(e => {
-      x(a)(e)
+      L(a)(e)
     }, [a]);
     if (null == _) return null;
     let y = null == p ? true : p.IconComponent,
@@ -105,7 +105,7 @@ let D = (e, t) => n => {
           })]
         }), (0, r.jsx)("div", {
           className: P.channelInfoContainer,
-          children: L(a, u) ? (0, r.jsx)(l.P3F, {
+          children: x(a, u) ? (0, r.jsx)(l.P3F, {
             className: P.channelLocationLink,
             onClick: E,
             children: O

@@ -4,8 +4,8 @@
 require.d(exports, {
   W2: () => P,
   ZP: () => M,
-  rT: () => x,
-  xI: () => L
+  rT: () => L,
+  xI: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -123,7 +123,7 @@ function w(e) {
   })))
 }
 
-function x(e) {
+function L(e) {
   (0, s.h7j)(t => (0, r.jsx)(s.ConfirmModal, R(C({
     header: T.intl.string(T.t["7UXEF2"]),
     confirmText: T.intl.string(T.t.BddRzS),
@@ -137,7 +137,7 @@ function x(e) {
     })
   })))
 }
-async function L(e) {
+async function x(e) {
   let {
     onUploadStart: t,
     onUploadFinish: n
@@ -166,7 +166,7 @@ function M() {
     aecDumpEnabled: Chunk131951.Z.getAecDump(),
     supportsConnectionReplay: Chunk131951.Z.supports(Chunk65154.AN.CONNECTION_REPLAY)
   })), d = (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.isStreamInfoOverlayEnabled), _ = (0, Chunk442837.e7)([Chunk226961.ZP], () => Chunk226961.ZP.shouldRecordNextConnection()), p = Chunk473749.useCallback(async () => {
-    await L({
+    await x({
       onUploadStart: () => exports(true)
     })
   }, []);
@@ -218,7 +218,7 @@ function M() {
           label: Chunk388032.intl.string(Chunk388032.t["726JHL"]),
           description: Chunk388032.intl.string(Chunk388032.t["/7ak9Q"]),
           checked: require,
-          onChange: x
+          onChange: L
         }), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
           size: "sm",
           children: [(0, Chunk54381.jsx)(Chunk481060.Button, {

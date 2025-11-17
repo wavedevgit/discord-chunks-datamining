@@ -116,18 +116,18 @@ function O(e) {
       onNudgeChange: D
     } = e,
     w = E(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isTooltip", "modal", "returnRef", "popoverRef", "onNudgeChange"]);
-  let [x, L] = i.useState(null != I ? I : "top");
+  let [L, x] = i.useState(null != I ? I : "top");
   i.useEffect(() => {
-    null != I && L(I)
+    null != I && x(I)
   }, [I]);
   let M = i.useMemo(() => {
       var e;
       return {
-        position: (0, d.z)(x),
+        position: (0, d.z)(L),
         align: null != (e = null == T ? true : T.align) ? e : "center",
         customOffset: null == T ? true : T.customOffset
       }
-    }, [x, T]),
+    }, [L, T]),
     k = i.useCallback((e, t) => {
       null == v || v(t)
     }, [v]),
@@ -135,11 +135,11 @@ function O(e) {
       null == v || v(e)
     }, [v]),
     U = i.useCallback(e => {
-      L(e)
+      x(e)
     }, []),
     G = C ? _.caretHoverable : true;
   return (0, r.jsx)(s.m, g(h({}, w), {
-    position: x,
+    position: L,
     onRequestClose: k,
     gradientColor: O,
     onPositionChange: U,

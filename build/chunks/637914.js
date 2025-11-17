@@ -50,8 +50,8 @@ var a, Chunk50153 = require("./50153.js"),
   P = RegExp(S, "g"),
   D = RegExp("&#13;?", "g"),
   w = RegExp("&#8203;?", "g"),
-  x = ["bold", "bolder", "500", "600", "700", "800", "900"],
-  L = ["light", "lighter", "normal", "100", "200", "300", "400"],
+  L = ["bold", "bolder", "500", "600", "700", "800", "900"],
+  x = ["light", "lighter", "normal", "100", "200", "300", "400"],
   M = ["className", "href", "rel", "target", "title"],
   k = ["alt", "className", "height", "src", "width"],
   j = (i(a = {}, Chunk606166("public/DraftStyleDefault/depth0"), 0), i(a, Chunk606166("public/DraftStyleDefault/depth1"), 1), i(a, Chunk606166("public/DraftStyleDefault/depth2"), 2), i(a, Chunk606166("public/DraftStyleDefault/depth3"), 3), i(a, Chunk606166("public/DraftStyleDefault/depth4"), 4), a),
@@ -99,7 +99,7 @@ var a, Chunk50153 = require("./50153.js"),
       i = n.style.fontStyle,
       a = n.style.textDecoration;
     return t.withMutations(function(e) {
-      x.indexOf(r) >= 0 ? e.add("BOLD") : L.indexOf(r) >= 0 && e.remove("BOLD"), "italic" === i ? e.add("ITALIC") : "normal" === i && e.remove("ITALIC"), "underline" === a && e.add("UNDERLINE"), "line-through" === a && e.add("STRIKETHROUGH"), "none" === a && (e.remove("UNDERLINE"), e.remove("STRIKETHROUGH"))
+      L.indexOf(r) >= 0 ? e.add("BOLD") : x.indexOf(r) >= 0 && e.remove("BOLD"), "italic" === i ? e.add("ITALIC") : "normal" === i && e.remove("ITALIC"), "underline" === a && e.add("UNDERLINE"), "line-through" === a && e.add("STRIKETHROUGH"), "none" === a && (e.remove("UNDERLINE"), e.remove("STRIKETHROUGH"))
     })
   },
   H = function(e) {

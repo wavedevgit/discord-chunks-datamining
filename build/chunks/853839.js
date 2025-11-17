@@ -39,7 +39,7 @@ var Chunk98405 = require("./98405.js"),
     return f(g, e) && g[e].m ? g[e].c : 0
   },
   w = function() {
-    Chunk170322(this, x);
+    Chunk170322(this, L);
     var e = arguments.length,
       t = Chunk759319(module < 1 ? true : arguments[0]),
       n = Chunk759319(module < 2 ? true : arguments[1], "Error"),
@@ -54,8 +54,8 @@ var Chunk98405 = require("./98405.js"),
       Chunk154028.name = v, c(this, "stack", Chunk530575(1, Chunk742850(Chunk154028.stack, 1)))
     }
   },
-  x = w.prototype = Chunk713411(C),
-  L = function(e) {
+  L = w.prototype = Chunk713411(C),
+  x = function(e) {
     return {
       enumerable: true,
       configurable: true,
@@ -63,11 +63,11 @@ var Chunk98405 = require("./98405.js"),
     }
   },
   M = function(e) {
-    return L(function() {
+    return x(function() {
       return R(this)[e]
     })
   };
-Chunk507604 && (Chunk573078(x, "code", M("code")), Chunk573078(x, "message", M("message")), Chunk573078(x, "name", M("name"))), c(x, "constructor", Chunk530575(1, w));
+Chunk507604 && (Chunk573078(L, "code", M("code")), Chunk573078(L, "message", M("message")), Chunk573078(L, "name", M("name"))), c(L, "constructor", Chunk530575(1, w));
 var k = Chunk621523(function() {
     return !(new S instanceof T)
   }),
@@ -88,7 +88,7 @@ Chunk98405({
 });
 var Z = Chunk154028(v),
   F = Z.prototype;
-for (var V in j && (Chunk511696 || S === Z) && Chunk556585(F, "toString", Chunk266101), U && Chunk507604 && S === Z && Chunk573078(F, "code", L(function() {
+for (var V in j && (Chunk511696 || S === Z) && Chunk556585(F, "toString", Chunk266101), U && Chunk507604 && S === Z && Chunk573078(F, "code", x(function() {
     return D(Chunk179122(this).name)
   })), Chunk17204)
   if (Chunk77025(Chunk17204, V)) {

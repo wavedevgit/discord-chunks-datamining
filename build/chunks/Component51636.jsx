@@ -72,7 +72,7 @@ let R = Chunk473749.memo(e => {
     dismissibleContentType: a,
     forceShadow: h,
     cardType: b
-  } = e, y = null == e ? true : e.onCtaClick, S = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [C, D] = i.useState(false), [w, x] = i.useState(false), L = b === E.gM.CARD_CAROUSEL_FIRST_ROW || b === E.gM.CARD_CAROUSEL_SECOND_ROW || b === E.gM.CARD_CAROUSEL_THIRD_ROW, M = (0, g.Z)(), [k, j] = (0, _.cv)(null != a && n ? [a] : []), {
+  } = e, y = null == e ? true : e.onCtaClick, S = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [C, D] = i.useState(false), [w, L] = i.useState(false), x = b === E.gM.CARD_CAROUSEL_FIRST_ROW || b === E.gM.CARD_CAROUSEL_SECOND_ROW || b === E.gM.CARD_CAROUSEL_THIRD_ROW, M = (0, g.Z)(), [k, j] = (0, _.cv)(null != a && n ? [a] : []), {
     easterEggLevel: U,
     isEasterEggTriggered: G,
     onHover: B,
@@ -96,12 +96,12 @@ let R = Chunk473749.memo(e => {
   });
   let Y = k !== a || null == a || w,
     W = e => {
-      C && "transform" === e.propertyName && e.target.classList.contains(T.flipCard) && (x(true), p.default.track(O.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
+      C && "transform" === e.propertyName && e.target.classList.contains(T.flipCard) && (L(true), p.default.track(O.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
         card_type: t
       }), null != a && j(v.L.TAKE_ACTION))
     };
   return (i.useEffect(() => {
-    S && C && (x(true), p.default.track(O.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
+    S && C && (L(true), p.default.track(O.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
       card_type: t
     }), null != a && j(v.L.TAKE_ACTION))
   }, [S, C, a, t, j]), (0, f.Z)({
@@ -144,8 +144,8 @@ let R = Chunk473749.memo(e => {
     className: T.hoverWrapper,
     children: (0, r.jsx)("div", {
       className: o()({
-        [T.noFlipCardContainer]: !L,
-        [T.noFlipCardContainerCarousel]: L,
+        [T.noFlipCardContainer]: !x,
+        [T.noFlipCardContainerCarousel]: x,
         [T.forceShadow]: h,
         [T.reducedMotion]: S
       }),

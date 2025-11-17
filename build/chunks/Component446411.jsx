@@ -97,7 +97,7 @@ function $(e, t) {
 }
 
 function ee(e) {
-  let t = x.Z.toURLSafe(e);
+  let t = L.Z.toURLSafe(e);
   return null == t ? e : (t.searchParams.set("format", "png"), t.toString())
 }
 
@@ -127,7 +127,7 @@ function et(e) {
     onControlsShow: R,
     onVolumeChange: P,
     onMute: w,
-    href: x,
+    href: L,
     placeholder: M,
     placeholderVersion: k,
     sourceMetadata: U
@@ -210,7 +210,7 @@ function et(e) {
       children: (0, i.jsx)("div", {
         className: s()(B.embedVideo, o),
         style: a,
-        children: (0, i.jsx)(L.ZP, {
+        children: (0, i.jsx)(x.ZP, {
           provider: f,
           src: d.url,
           style: e,
@@ -250,7 +250,7 @@ function et(e) {
         className: B.centerContent,
         children: b ? (0, i.jsx)(E.Z, {
           onPlay: null != d ? H : null,
-          externalURL: x,
+          externalURL: L,
           renderLinkComponent: g,
           messageId: null == U || null == (t = U.message) ? true : t.id,
           channelId: null == U || null == (n = U.message) ? true : n.channel_id
