@@ -61,17 +61,16 @@ let o = (0, Chunk818083.B)({
   name: "2025-10-display-name-styles-mobile",
   kind: "user",
   defaultConfig: {
-    enabled: false,
-    dmEffects: false
+    enabled: false
   },
   variations: {
     1: {
       enabled: true,
-      dmEffects: false
+      surfaces: 2
     },
     2: {
       enabled: true,
-      dmEffects: true
+      surfaces: 1
     }
   }
 })

@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk313201 = require("./313201.js"),
   Chunk877371 = require("./877371.js"),
   Chunk243778 = require("./243778.jsx"),
-  Chunk594928 = require("./594928.js"),
+  Chunk272157 = require("./272157.js"),
   Chunk829716 = require("./829716.jsx"),
   Chunk786761 = require("./786761.js"),
   Chunk3148 = require("./3148.js"),
@@ -104,9 +104,9 @@ function en(e) {
     autoTrackExposure: true
   }).enabled;
   let t = (0, m.A)("UserSettingsAccessibility"),
-    n = y.fN.useExperiment({
+    n = (0, y.i)({
       location: "UserSettingsAccessibility"
-    }).enabled,
+    }),
     i = (0, E.A)("UserSettingsAccessibility");
   return (0, r.jsx)(k.Z, {
     title: V.intl.string(V.t.G0neg7),

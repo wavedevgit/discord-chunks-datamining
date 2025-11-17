@@ -2,9 +2,9 @@
 /** chunk id: 748770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Br: () => m,
-  L9: () => g,
-  ZP: () => E
+  Br: () => h,
+  L9: () => m,
+  ZP: () => g
 });
 var Chunk32662 = require("./32662.js"),
   Chunk544891 = require("./544891.js"),
@@ -15,11 +15,10 @@ var Chunk32662 = require("./32662.js"),
   Chunk675478 = require("./675478.js"),
   Chunk605338 = require("./605338.js"),
   Chunk777261 = require("./777261.js"),
-  Chunk164207 = require("./164207.js"),
   Chunk1844 = require("./1844.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js");
-async function m() {
+async function h() {
   if (!Chunk1844.Z.isFetchingActivePromotions) try {
     let t;
     Chunk570140.Z.dispatch({
@@ -28,11 +27,7 @@ async function m() {
       location: "5731cc_1"
     }, {
       autoTrackExposure: false
-    }).enabled ? Chunk981631.ANM.PROMOTIONS : Chunk164207.t.getCurrentConfig({
-      location: "5731cc_1"
-    }, {
-      autoTrackExposure: false
-    }).previewEnabled ? Chunk981631.ANM.OUTBOUND_PROMOTIONS_PREVIEW : Chunk981631.ANM.OUTBOUND_PROMOTIONS;
+    }).enabled ? Chunk981631.ANM.PROMOTIONS : Chunk981631.ANM.OUTBOUND_PROMOTIONS;
     let n = Chunk32662.H.DESKTOP,
       a = await Chunk544891.tn.get({
         url: exports,
@@ -60,7 +55,7 @@ async function m() {
     })
   }
 }
-async function g() {
+async function m() {
   if (!Chunk1844.Z.isFetchingActiveBogoPromotion) try {
     Chunk570140.Z.dispatch({
       type: "ACTIVE_BOGO_PROMOTION_FETCH"
@@ -82,8 +77,8 @@ async function g() {
     })
   }
 }
-let E = {
-  fetchActivePromotions: m,
+let g = {
+  fetchActivePromotions: h,
   dismissOutboundPromotionNotice: function() {
     Chunk570140.Z.dispatch({
       type: "OUTBOUND_PROMOTION_NOTICE_DISMISS"
@@ -100,5 +95,5 @@ let E = {
       type: "OUTBOUND_PROMOTIONS_SEEN"
     })
   },
-  fetchActiveBogoPromotion: g
+  fetchActiveBogoPromotion: m
 }

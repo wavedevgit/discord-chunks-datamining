@@ -1,1 +1,0 @@
-{"id":"164207","type":"experiment","data":{"kind":"user","id":"2021-06_preview_promotions","label":"Promotions Preview","defaultConfig":{"previewEnabled":false},"treatments":[{"id":1,"label":"Preview Enabled","config":{"previewEnabled":true}}]},"fromModule":{"id":"web.js"}}

@@ -25,10 +25,10 @@ let l = [],
       actions: l,
       onClose: t,
       size: "md",
-      subtitle: a.intl.format(a.t.y2Dgd4, {
+      subtitle: a.intl.format(a.t.zlG59w, {
         questName: p
       }),
-      title: a.intl.string(a.t.tQWM2E),
+      title: a.intl.string(a.t.g3jrBu),
       transitionState: r,
       children: (0, n.jsx)("div", {
         className: c.qrCodeWrapper,

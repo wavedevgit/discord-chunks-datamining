@@ -8,13 +8,13 @@ var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk364747 = require("./364747.js"),
-  Chunk594928 = require("./594928.js");
+  Chunk272157 = require("./272157.js");
 
 function l(e) {
   let {
     location: t
-  } = e, n = s.fN.useExperiment({
+  } = e, n = (0, s.i)({
     location: t
   }), l = (0, i.e7)([a.Z], () => a.Z.displayNameStylesEnabled), c = (0, r.useContext)(o.k);
-  return n.enabled && (l || c.overrideSettings)
+  return n && (l || c.overrideSettings)
 }

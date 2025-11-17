@@ -9,13 +9,22 @@ let r = (0, require("./818083.js").B)({
   id: "2025-10_word_frequency_store_rollout",
   label: "Word Frequency Store",
   defaultConfig: {
-    enabled: false
+    enabled: false,
+    resetDataIfUnused: false
   },
   treatments: [{
     id: 1,
     label: "Enable Word Frequency Store",
     config: {
-      enabled: true
+      enabled: true,
+      resetDataIfUnused: false
+    }
+  }, {
+    id: 2,
+    label: "Reset data if unused",
+    config: {
+      enabled: false,
+      resetDataIfUnused: true
     }
   }]
 })
