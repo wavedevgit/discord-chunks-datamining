@@ -14,5 +14,10 @@ let a = {
     component: () => (0, Chunk951288.jsx)(Chunk282003.k, {}),
     id: "cancellation-flow",
     controls: {}
+  }, {
+    name: "Expressive Progress",
+    component: require("./427730.jsx").Z,
+    id: "expressive-progress",
+    controls: {}
   }]
 }

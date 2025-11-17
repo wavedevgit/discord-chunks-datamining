@@ -103,17 +103,18 @@ function O(e) {
     onRequestClose: S,
     onClosePopout: A,
     shouldShow: C,
-    shouldPreload: N = true
-  } = e, R = m(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
-  let P = i.useRef(true),
-    D = i.useCallback(() => null != v ? v() : (0, l.Z)(n.id, null != O ? O : n.getAvatarURL(s, E), {
+    shouldPreload: N = true,
+    onRoleClick: R
+  } = e, P = m(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload", "onRoleClick"]);
+  let D = i.useRef(true),
+    w = i.useCallback(() => null != v ? v() : (0, l.Z)(n.id, null != O ? O : n.getAvatarURL(s, E), {
       type: "popout",
       withMutualGuilds: n.id !== a.id,
       withMutualFriends: !n.bot && n.id !== a.id,
       guildId: s,
       channelId: d
     }), [v, a, n, O, s, d]),
-    w = i.useCallback(e => (P.current = Date.now(), null != I) ? I(e, P.current) : (0, r.jsx)(c.Z, h(_({}, e), {
+    x = i.useCallback(e => (D.current = Date.now(), null != I) ? I(e, D.current) : (0, r.jsx)(c.Z, h(_({}, e), {
       user: n,
       currentUser: a,
       guildId: s,
@@ -123,19 +124,20 @@ function O(e) {
       disableUserProfileLink: g,
       newAnalyticsLocations: b,
       appContext: y,
-      openedAt: P.current,
+      openedAt: D.current,
       closePopout: () => {
         e.closePopout(), null == A || A()
-      }
-    })), [n, a, I, s, d, p, f, g, b, y, A]);
+      },
+      onRoleClick: R
+    })), [n, a, I, s, d, p, f, g, b, y, A, R]);
   return (0, r.jsx)(o.yRy, h(_({
     popoutKey: u.Tg,
     shouldShow: C,
-    preload: N ? D : true,
-    renderPopout: w,
+    preload: N ? w : true,
+    renderPopout: x,
     onRequestOpen: T,
     onRequestClose: S
-  }, R), {
+  }, P), {
     children: t
   }))
 }

@@ -46,18 +46,19 @@ function M(e) {
     isHoveringOrFocusing: j,
     onOpenProfile: U,
     channelId: G,
-    onClose: B
-  } = e, Z = u.ZP.useName(null == k ? true : k.id, G, t), {
-    relationshipType: F,
-    originApplicationId: V
+    onClose: B,
+    onRoleClick: Z
+  } = e, F = u.ZP.useName(null == k ? true : k.id, G, t), {
+    relationshipType: V,
+    originApplicationId: H
   } = (0, i.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), H = (0, o.vh)(t.id), Y = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), W = (0, f.b)({
+  })), Y = (0, o.vh)(t.id), W = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), K = (0, f.b)({
     location: "UserProfilePopoutBody"
-  }), K = t.id === n.id, z = (0, _.Z)({
+  }), z = t.id === n.id, q = (0, _.Z)({
     location: "UserProfilePopoutBody"
-  }), q = (null == M ? true : M.widgets) != null && M.widgets.length > 0, X = z && q, Q = (0, d.I5)(n);
+  }), X = (null == M ? true : M.widgets) != null && M.widgets.length > 0, Q = q && X, J = (0, d.I5)(n);
   return (0, r.jsxs)(a.Ttm, {
     fade: true,
     className: L.body,
@@ -68,9 +69,9 @@ function M(e) {
       onClose: B,
       usernameIcon: t.hasAvatarForGuild(null == k ? true : k.id) && (0, r.jsx)(C.Z, {
         user: t,
-        nickname: Z
+        nickname: F
       }),
-      nickname: Z,
+      nickname: F,
       pronouns: null == M ? true : M.pronouns,
       tags: (0, r.jsx)(p.Z, {
         displayProfile: M,
@@ -80,20 +81,20 @@ function M(e) {
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(g.Z, {
           userId: t.id
-        }), !Y && (0, r.jsx)(T.Z, {
+        }), !W && (0, r.jsx)(T.Z, {
           userId: t.id,
           isVisible: j,
           onOpenProfile: U
         })]
       })
-    }), F === D.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
+    }), V === D.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
       children: (0, r.jsx)(E.Z, {
         user: t,
         guildId: null == k ? true : k.id,
         channelId: G,
-        applicationId: V
+        applicationId: H
       })
-    }), H.map(e => (0, r.jsx)(v.Z.Overlay, {
+    }), Y.map(e => (0, r.jsx)(v.Z.Overlay, {
       children: (0, r.jsx)(E.Z, {
         user: t,
         isGameRelationship: true,
@@ -102,7 +103,7 @@ function M(e) {
       })
     }, e.applicationId)), (0, r.jsx)(b.Z, {
       user: t
-    }), !K && (0, r.jsx)(R.Z, {
+    }), !z && (0, r.jsx)(R.Z, {
       user: t,
       onOpenProfile: e => null == U ? true : U({
         section: e
@@ -123,19 +124,19 @@ function M(e) {
     }) : (0, r.jsx)(A.Z, {
       user: t,
       bio: null == M ? true : M.bio,
-      hidePersonalInformation: Y,
+      hidePersonalInformation: W,
       onClose: B
-    }), X && (0, r.jsx)(S.Z, {
+    }), Q && (0, r.jsx)(S.Z, {
       widgets: null == M ? true : M.widgets,
       onClick: () => {
         null == U || U({
           section: P.oh.WIDGETS
         })
       }
-    }), K && (0, r.jsx)(h.Z, {
-      isPremiumUser: Q,
+    }), z && (0, r.jsx)(h.Z, {
+      isPremiumUser: J,
       onInteraction: B
-    }), W ? (0, r.jsx)(O.Z, {
+    }), K ? (0, r.jsx)(O.Z, {
       user: t,
       currentUser: n,
       guildId: null == k ? true : k.id,
@@ -149,7 +150,8 @@ function M(e) {
     }), null != k && (0, r.jsx)(N.Z, {
       user: t,
       currentUser: n,
-      guild: k
+      guild: k,
+      onRoleClick: Z
     })]
   })
 }
