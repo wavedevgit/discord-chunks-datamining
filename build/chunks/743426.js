@@ -77,7 +77,6 @@ class I extends Chunk47770.Z {
     returntrue
   }
   supports(e) {
-    var t, n;
     switch (e) {
       case h.AN.LEGACY_AUDIO_SUBSYSTEM:
         return (0, d.eJ)(h.eR.VOICE_LEGACY_SUBSYSTEM);
@@ -105,13 +104,10 @@ class I extends Chunk47770.Z {
         return (0, d.eJ)(h.eR.HYBRID_VIDEO);
       case h.AN.ATTENUATION:
       case h.AN.VIDEO_HOOK:
+        var t;
         return (null === i() || true === i() || null == (t = i().os) ? true : t.family) != null && /^win/i.test(i().os.family);
       case h.AN.EXPERIMENTAL_SOUNDSHARE:
         return (0, d.eJ)(h.eR.SOUNDSHARE_LOOPBACK);
-      case h.AN.OPEN_H264:
-        return (null === i() || true === i() || null == (n = i().os) ? true : n.family) != null && /^win|linux|OS X/i.test(i().os.family);
-      case h.AN.EXPERIMENTAL_ENCODERS:
-        return (0, d.eJ)(h.eR.EXPERIMENTAL_ENCODERS);
       case h.AN.REMOTE_LOCUS_NETWORK_CONTROL:
         return (0, d.eJ)(h.eR.REMOTE_LOCUS_NETWORK_CONTROL);
       case h.AN.SCREEN_PREVIEWS:

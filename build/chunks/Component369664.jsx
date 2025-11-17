@@ -532,22 +532,6 @@ let eW = Chunk647438.memo(function() {
           children: Chunk388032.intl.string(Chunk388032.t.R9GHya)
         })]
       });
-    case Chunk981631.kVF.H264_DISABLED:
-      return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DANGER,
-        children: [(0, Chunk951288.jsx)(Chunk481060.RyX, {
-          onClick: () => {
-            eH()
-          }
-        }), Chunk388032.intl.string(Chunk388032.t.HcErZT), (0, Chunk951288.jsx)(Chunk481060.EyT, {
-          onClick: () => {
-            (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
-              section: Chunk981631.oAB.VOICE
-            })
-          },
-          children: Chunk388032.intl.string(Chunk388032.t["51hI/g"])
-        })]
-      });
     case Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK:
       if (null == c.metadata) return null;
       let {

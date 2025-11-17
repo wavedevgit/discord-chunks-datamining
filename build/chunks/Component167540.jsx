@@ -2,7 +2,7 @@
 /** chunk id: 167540, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,12 +18,11 @@ var Chunk100527 = require("./100527.js"),
   Chunk186934 = require("./186934.jsx"),
   Chunk520384 = require("./520384.jsx"),
   Chunk154784 = require("./154784.jsx"),
-  Chunk267006 = require("./267006.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 
-function y() {
+function b() {
   let e = Chunk131951.Z.supports(Chunk65154.AN.SIDECHAIN_COMPRESSION),
     {
       analyticsLocations: t
@@ -40,12 +39,6 @@ function y() {
       webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VIDEO_STREAMING,
       children: (0, Chunk951288.jsxs)(Chunk738486.Z, {
         children: [(0, Chunk951288.jsx)(Chunk520384.Z, {}), module && (0, Chunk951288.jsx)(Chunk186934.Z, {}), (0, Chunk951288.jsx)(Chunk546997.Z, {})]
-      })
-    }), (0, Chunk951288.jsx)(Chunk603963.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["8/udY0"]),
-      webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VIDEO_ADVANCED,
-      children: (0, Chunk951288.jsx)(Chunk738486.Z, {
-        children: (0, Chunk951288.jsx)(Chunk267006.Z, {})
       })
     })]
   })

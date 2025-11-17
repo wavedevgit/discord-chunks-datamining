@@ -403,6 +403,12 @@ let e7 = e => (0, r.jsx)(T.Z, ek({}, e)),
               to: eZ.Z5c.SETTINGS("authorized-apps")
             });
           case "open-shop":
+            let {
+              tab: n
+            } = (0, s.parse)(e.location.search);
+            if (Object.values(eL.AW).includes(n)) return (0, r.jsx)(o.l_, {
+              to: eZ.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n)
+            });
             return (0, r.jsx)(o.l_, {
               to: eZ.Z5c.COLLECTIBLES_SHOP
             });
@@ -424,9 +430,9 @@ let e7 = e => (0, r.jsx)(T.Z, ek({}, e)),
               to: eZ.Z5c.SETTINGS("content-and-social", "connected-games")
             });
           case "boost":
-            let n = t.params.guildId;
+            let i = t.params.guildId;
             return (0, r.jsx)(o.l_, {
-              to: eZ.Z5c.POWERUP_STORE(n)
+              to: eZ.Z5c.POWERUP_STORE(i)
             });
           case "boost-settings":
             return (0, r.jsx)(o.l_, {

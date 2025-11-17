@@ -85,7 +85,6 @@ class N extends Chunk47770.Z {
       case T.AN.AUTO_ENABLE:
       case T.AN.DESKTOP_CAPTURE_FORMAT:
       case T.AN.VIDEO_HOOK:
-      case T.AN.OPEN_H264:
       case T.AN.AEC_DUMP:
       case T.AN.DISABLE_VIDEO:
       case T.AN.CONNECTION_REPLAY:

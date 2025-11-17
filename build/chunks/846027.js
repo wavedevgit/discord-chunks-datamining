@@ -394,12 +394,6 @@ let S = {
         location: t
       })
     },
-    setExperimentalEncoders(e) {
-      C() || ((0, s.Z)("experimental_encoders_enabled", e, d.Z.getExperimentalEncoders()), r.Z.dispatch({
-        type: "MEDIA_ENGINE_SET_EXPERIMENTAL_ENCODERS",
-        enabled: e
-      }))
-    },
     setAttenuation(e, t, n) {
       C() || ((() => {
         let r = d.Z.getAttenuation(),
@@ -471,12 +465,6 @@ let S = {
         type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE",
         settings: e
       })
-    },
-    setOpenH264(e) {
-      C() || ((0, s.Z)("open_h264_enabled", e, d.Z.getOpenH264()), r.Z.dispatch({
-        type: "MEDIA_ENGINE_SET_OPEN_H264",
-        enabled: e
-      }))
     },
     setAecDump(e) {
       C() || ((0, s.Z)("diagnostic_audio_recording_enabled", e, d.Z.getAecDump()), r.Z.dispatch({

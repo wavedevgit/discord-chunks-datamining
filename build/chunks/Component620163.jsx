@@ -1077,33 +1077,10 @@ let eB = () => {
         searchableTitles: [ew.intl.string(ew.t["8/udY0"])],
         parent: eN.s6.VOICE_AND_VIDEO
       },
-      [eN.s6.VOICE_AND_VIDEO_VIDEO_ADVANCED]: {
-        section: eP.oAB.VOICE,
-        searchableTitles: [ew.intl.string(ew.t["8/udY0"])],
-        parent: eN.s6.VOICE_AND_VIDEO_VIDEO_TAB,
-        predicate: () => !(0, V.isWeb)()
-      },
       [eN.s6.VOICE_AND_VIDEO_VOICE_ADVANCED]: {
         section: eP.oAB.VOICE,
         searchableTitles: [ew.intl.string(ew.t["8/udY0"])],
         parent: eN.s6.VOICE_AND_VIDEO_VOICE_TAB
-      },
-      [eN.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO]: {
-        section: eP.oAB.VOICE,
-        searchableTitles: [ew.intl.string(ew.t.Tceiqx)],
-        parent: eN.s6.VOICE_AND_VIDEO_VIDEO_ADVANCED
-      },
-      [eN.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_OPENH264]: {
-        section: eP.oAB.VOICE,
-        searchableTitles: [ew.intl.string(ew.t["71Ve1y"])],
-        parent: eN.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO,
-        predicate: () => U.Z.supports(eD.AN.OPEN_H264)
-      },
-      [eN.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_EXPERIMENTAL_ENCODERS]: {
-        section: eP.oAB.VOICE,
-        searchableTitles: [ew.intl.string(ew.t.AxnPm1)],
-        parent: eN.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO,
-        predicate: () => "stable" !== H.ZP.releaseChannel && U.Z.isExperimentalEncodersSupported()
       },
       [eN.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING]: {
         section: eP.oAB.VOICE,

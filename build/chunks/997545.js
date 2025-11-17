@@ -415,21 +415,6 @@ class x extends Chunk839548.Z {
       voiceFilters: null != this.voiceFilterId
     })
   }
-  setExperimentalEncoders(e) {
-    this.experimentalEncoders = e, this.conn.setTransportOptions({
-      experimentalEncoders: this.experimentalEncoders
-    })
-  }
-  setHardwareH264(e) {
-    this.hardwareH264 = e, this.conn.setTransportOptions({
-      hardwareH264: this.hardwareH264
-    })
-  }
-  setSoftwareH264(e) {
-    this.softwareH264 = e, this.conn.setTransportOptions({
-      softwareH264: this.softwareH264
-    })
-  }
   setQoS(e) {
     this.qos = e, this.conn.setTransportOptions({
       qos: this.qos
@@ -720,8 +705,7 @@ class x extends Chunk839548.Z {
       return {
         "level-asymmetry-allowed": "1",
         "packetization-mode": "1",
-        "profile-level-id": "android" === (0, b.zS)().platform ? t : e,
-        "software-h264": this.softwareH264 ? "1" : "0"
+        "profile-level-id": "android" === (0, b.zS)().platform ? t : e
       }
     }
   }
@@ -763,11 +747,9 @@ class x extends Chunk839548.Z {
         rtxType: null != (a = null == o ? true : o.rtxPayloadType) ? a : 0,
         params: this.getCodecParams(o.name, true)
       };
-      this.experimentFlags.has(O.V8.RESET_DECODER_ON_ERRORS) && (n.params["reset-on-errors"] = "1"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_ERRORS) && (n.params["fallback-after-errors"] = "3"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS) && (n.params["fallback-on-consecutive-errors"] = "1"), this.experimentFlags.has(O.V8.SIGNAL_AV1_HARDWARE_DECODE) && (n.params["hardware-av1-decode"] = "1");
-      let r = this.hardwareH264 && this.useElectronVideo ? "1" : "0";
-      n.params["hardware-h264"] = r, c.push(n), o.name === t && (u = A(T({}, n), {
+      this.experimentFlags.has(O.V8.RESET_DECODER_ON_ERRORS) && (n.params["reset-on-errors"] = "1"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_ERRORS) && (n.params["fallback-after-errors"] = "3"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS) && (n.params["fallback-on-consecutive-errors"] = "1"), this.experimentFlags.has(O.V8.SIGNAL_AV1_HARDWARE_DECODE) && (n.params["hardware-av1-decode"] = "1"), n.params["hardware-h264"] = this.useElectronVideo ? "1" : "0", c.push(n), o.name === t && (u = A(T({}, n), {
         params: this.getCodecParams(o.name, false)
-      }), this.experimentFlags.has(O.V8.VIDEOTOOLBOX_RATE_CONTROL) && (u.params["fixed-rate-presentation-timestamps"] = "1"), this.experimentFlags.has(O.V8.LOW_LATENCY_RATE_CONTROL) && (u.params["low-latency-rate-control"] = "1"), u.params["hardware-h264"] = r)
+      }), this.experimentFlags.has(O.V8.VIDEOTOOLBOX_RATE_CONTROL) && (u.params["fixed-rate-presentation-timestamps"] = "1"), this.experimentFlags.has(O.V8.LOW_LATENCY_RATE_CONTROL) && (u.params["low-latency-rate-control"] = "1"))
     }
     return {
       videoEncoder: u,
@@ -796,9 +778,6 @@ class x extends Chunk839548.Z {
       callMinBitRate: Chunk149396.mN,
       callMaxBitRate: Chunk149396.mC,
       encodingVideoDegradationPreference: this.videoDegradationPreference,
-      experimentalEncoders: this.experimentalEncoders,
-      hardwareH264: this.hardwareH264,
-      softwareH264: this.softwareH264,
       reconnectInterval: this.reconnectInterval
     });
     return (0, Chunk992774.eJ)(Chunk149396.eR.VIDEO_EFFECTS) && this.context === Chunk149396.Yn.STREAM && (module.enableVideoEffects = true), this.experimentFlags.has(Chunk65154.V8.MUTE_BEFORE_PROCESSING) && (module.muteBeforeProcessing = true), this.experimentFlags.has(Chunk65154.V8.PTT_BEFORE_PROCESSING) && (module.pttBeforeProcessing = true), this.experimentFlags.has(Chunk65154.V8.SKIP_ENCODE) && (module.skipEncode = true), module
@@ -858,7 +837,7 @@ class x extends Chunk839548.Z {
   constructor(e, t, n) {
     super(e, t), I(this, "mediaEngineConnectionId", "Native-".concat(P++)), I(this, "goLiveSourceIdentifier", true), I(this, "selfVideo", false), I(this, "codecs", []), I(this, "videoEncoderFallbackPending", false), I(this, "desktopDegradationPreference", (0, b.zS)().DegradationPreference.MAINTAIN_FRAMERATE), I(this, "sourceDesktopDegradationPreference", (0, b.zS)().DegradationPreference.DISABLED), I(this, "videoDegradationPreference", (0, b.zS)().DegradationPreference.BALANCED), I(this, "localPans", {}), I(this, "remoteAudioSSRCs", {}), I(this, "remoteVideoSSRCs", {}), I(this, "inputMode", v.pM.VOICE_ACTIVITY), I(this, "vadThreshold", false), I(this, "vadAutoThreshold", true), I(this, "vadKrispActivationThreshold", .5), I(this, "vadUseKrisp", true), I(this, "vadLeading", 5), I(this, "vadTrailing", 25), I(this, "vadDuringPreProcess", false), I(this, "pttReleaseDelay", 20), I(this, "soundshareActive", false), I(this, "soundshareId", null), I(this, "soundshareSentSpeakingEvent", false), I(this, "echoCancellation", true), I(this, "noiseSuppression", true), I(this, "automaticGainControl", {
       enabled: true
-    }), I(this, "noiseCancellation", false), I(this, "noiseCancellationDuringProcessing", false), I(this, "noiseCancellationAfterProcessing", false), I(this, "vadAfterWebrtc", false), I(this, "voiceFilterId", null), I(this, "experimentalEncoders", false), I(this, "hardwareH264", true), I(this, "softwareH264", true), I(this, "attenuationFactor", .5), I(this, "attenuateWhileSpeakingSelf", false), I(this, "attenuateWhileSpeakingOthers", true), I(this, "qos", true), I(this, "conn", true), I(this, "minimumJitterBufferLevel", 0), I(this, "postponeDecodeLevel", 100), I(this, "reconnectInterval", 6e4), I(this, "keyframeInterval", 0), I(this, "clipsKeyFrameInterval", 0), I(this, "videoQualityMeasurement", ""), I(this, "videoEncoderExperiments", ""), I(this, "numFastUdpReconnects", 0), I(this, "simulcastLQDisabledSsrc", true), I(this, "lastPreparedTransitionId", false), I(this, "lastExecutedTransitionId", false), I(this, "logger", true), I(this, "transportInfo", true), I(this, "beginInitializeAt", true), I(this, "onConnectCallbackAt", true), I(this, "onVideoCodecsCallbackAt", true), I(this, "onEncryptionModesCallbackAt", true), I(this, "handleSpeakingNative", (e, t) => {
+    }), I(this, "noiseCancellation", false), I(this, "noiseCancellationDuringProcessing", false), I(this, "noiseCancellationAfterProcessing", false), I(this, "vadAfterWebrtc", false), I(this, "voiceFilterId", null), I(this, "attenuationFactor", .5), I(this, "attenuateWhileSpeakingSelf", false), I(this, "attenuateWhileSpeakingOthers", true), I(this, "qos", true), I(this, "conn", true), I(this, "minimumJitterBufferLevel", 0), I(this, "postponeDecodeLevel", 100), I(this, "reconnectInterval", 6e4), I(this, "keyframeInterval", 0), I(this, "clipsKeyFrameInterval", 0), I(this, "videoQualityMeasurement", ""), I(this, "videoEncoderExperiments", ""), I(this, "numFastUdpReconnects", 0), I(this, "simulcastLQDisabledSsrc", true), I(this, "lastPreparedTransitionId", false), I(this, "lastExecutedTransitionId", false), I(this, "logger", true), I(this, "transportInfo", true), I(this, "beginInitializeAt", true), I(this, "onConnectCallbackAt", true), I(this, "onVideoCodecsCallbackAt", true), I(this, "onEncryptionModesCallbackAt", true), I(this, "handleSpeakingNative", (e, t) => {
       let n = v.Dg.NONE;
       n = "boolean" == typeof t ? t ? v.Dg.VOICE : v.Dg.NONE : t, this.handleSpeakingFlags(e, n)
     }), I(this, "handleNativeMuteToggled", () => {
