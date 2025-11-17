@@ -391,7 +391,7 @@ class z extends Chunk473749.PureComponent {
       let {
         searchContext: t
       } = this.props;
-      L.Z.updateSearchEditorState(t, e)
+      x.Z.updateSearchEditorState(t, e)
     }), H(this, "getPopoutRef", () => {
       let {
         current: e
@@ -421,7 +421,7 @@ class z extends Chunk473749.PureComponent {
         if (e.preventDefault(), v.xb(a)) this.blurEditor();
         else {
           let e = v.FZ(a);
-          L.Z.updateSearchEditorState(o, e), this.setState({
+          x.Z.updateSearchEditorState(o, e), this.setState({
             focused: true
           })
         }
@@ -463,7 +463,7 @@ function q(e) {
   let l = (0, u.e7)([j.Z], () => j.Z.getIsSearchTokensInitialized()),
     c = i.useRef(l);
   i.useEffect(() => {
-    l && c.current !== l && (c.current = l, x.Z.ensureSearchInputDecorators(t))
+    l && c.current !== l && (c.current = l, L.Z.ensureSearchInputDecorators(t))
   }, [l, t]);
   let f = i.useMemo(() => null != s ? s : v.nR(I.Jl(D.ZP)), [s]),
     {
@@ -504,7 +504,7 @@ function q(e) {
         searchContext: t,
         query: r,
         queryString: n
-      }), L.Z.updateSearchMode(t, Z.QIO.NEWEST), K({
+      }), x.Z.updateSearchMode(t, Z.QIO.NEWEST), K({
         searchContext: t,
         searchQueryString: n,
         searchEverywhere: i,

@@ -55,7 +55,7 @@ let j = () => (0, Chunk54381.jsx)("div", {
     let {
       markAsDismissed: t
     } = e, n = (0, R.q)(), i = () => {
-      null != t && t(L.L.DISMISS), n(w.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)()
+      null != t && t(x.L.DISMISS), n(w.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)()
     };
     return (0, r.jsxs)("div", {
       className: k.editorHeader,
@@ -83,8 +83,8 @@ let j = () => (0, Chunk54381.jsx)("div", {
     } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), [u, d] = (0, l.Wu)([T.default, C.Z], () => [C.Z.gradientPreset, A.ZP.isPremium(T.default.getCurrentUser())]), _ = (0, b.N)(), p = (0, A.Rt)({
       intervalType: null == _ || null == (t = _.subscription_trial) ? true : t.interval,
       intervalCount: null == _ || null == (n = _.subscription_trial) ? true : n.interval_count
-    }), g = d ? M.intl.string(M.t.IJI7yk) : (null == _ || null == (i = _.subscription_trial) ? true : i.sku_id) === x.Si.TIER_2 ? p : M.intl.string(M.t.mr4K7D), E = e => {
-      e && (null == a || a(), null != o && o(L.L.PRIMARY), null != u && ((0, D.Yk)({
+    }), g = d ? M.intl.string(M.t.IJI7yk) : (null == _ || null == (i = _.subscription_trial) ? true : i.sku_id) === L.Si.TIER_2 ? p : M.intl.string(M.t.mr4K7D), E = e => {
+      e && (null == a || a(), null != o && o(x.L.PRIMARY), null != u && ((0, D.Yk)({
         isPersisted: true,
         themeName: c.Us[u.id],
         analyticsLocations: s
@@ -94,7 +94,7 @@ let j = () => (0, Chunk54381.jsx)("div", {
       })))
     };
     return (0, r.jsx)(y.Z, {
-      subscriptionTier: x.Si.TIER_2,
+      subscriptionTier: L.Si.TIER_2,
       defaultTextOverride: g,
       premiumModalAnalyticsLocation: {
         object: w.qAy.BUTTON_CTA,
@@ -113,7 +113,7 @@ let j = () => (0, Chunk54381.jsx)("div", {
     } = (0, l.cj)([C.Z], () => ({
       isPreview: C.Z.isPreview
     })), [o, c] = i.useState(false), d = (0, R.q)(), f = () => {
-      null != t && t(L.L.DISMISS), d(w.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)(), n || (0, I.openUserSettings)(v.n.APPEARANCE_PANEL, {
+      null != t && t(x.L.DISMISS), d(w.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)(), n || (0, I.openUserSettings)(v.n.APPEARANCE_PANEL, {
         section: w.oAB.APPEARANCE
       })
     }, _ = (0, E.B)({
@@ -163,7 +163,7 @@ function Z(e) {
   })), u = (0, g.oq)().activePanel === g.wh.CLIENT_THEMES, f = (0, R.q)();
   i.useEffect(() => f(w.rMx.CLIENT_THEME_PREVIEW_VIEWED), [f]), i.useEffect(() => {
     s && S.default.track(w.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: x.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+      type: L.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       location_stack: a
     })
   }, [s, a]);

@@ -110,7 +110,7 @@ function D(e) {
     innerRef: T
   } = e, {
     reducedMotion: S
-  } = i.useContext(f.S), D = i.useRef(null), w = i.useRef(null), L = null != T ? T : w, x = (0, l.l)({
+  } = i.useContext(f.S), D = i.useRef(null), w = i.useRef(null), x = null != T ? T : w, L = (0, l.l)({
     isSelected: t,
     onChange: E,
     isDisabled: n
@@ -123,7 +123,7 @@ function D(e) {
     isDisabled: n,
     "aria-describedby": v,
     "aria-labelledby": I
-  }, x, L), {
+  }, L, x), {
     hoverProps: U,
     isHovered: G
   } = (0, o.X)({
@@ -149,7 +149,7 @@ function D(e) {
   };
   return (0, r.jsx)(_.tE, b(g({}, y), {
     ringTarget: D,
-    focusTarget: L,
+    focusTarget: x,
     within: true,
     offset: false,
     children: (0, r.jsxs)("label", b(g({}, k), {
@@ -201,7 +201,7 @@ function D(e) {
         })
       })), (0, r.jsx)(p.n, {
         children: (0, r.jsx)("input", b(g({}, M), {
-          ref: L
+          ref: x
         }))
       })]
     }))

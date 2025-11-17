@@ -98,20 +98,20 @@ function y(e) {
     N(true), null == T || T()
   }, [T]), w = i.useCallback(() => {
     N(false), null == S || S()
-  }, [S]), L = (0, s.e7)([c.ZP], () => {
+  }, [S]), x = (0, s.e7)([c.ZP], () => {
     var e, r, i, a;
     return (null == (r = t.application) || null == (e = r.bot) ? true : e.id) != null ? c.ZP.getMember(n, null == (a = t.application) || null == (i = a.bot) ? true : i.id) : null
-  }), x = i.useMemo(() => {
+  }), L = i.useMemo(() => {
     var e;
     return t.type !== d.Qi.APPLICATION ? _ : u.ZP.getApplicationIconURL({
       id: t.id,
       icon: t.icon,
       bot: null == (e = t.application) ? true : e.bot,
       botIconFirst: true,
-      guildMember: L,
+      guildMember: x,
       size: p
     })
-  }, [t, p, L]);
+  }, [t, p, x]);
   return (0, r.jsx)("div", g(h({}, A), {
     className: o()(f.wrapper, b, {
       [f.selectable]: y,
@@ -133,7 +133,7 @@ function y(e) {
           width: p,
           height: m
         },
-        src: x
+        src: L
       })
     })
   }))

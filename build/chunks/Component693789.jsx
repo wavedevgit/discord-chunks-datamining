@@ -149,8 +149,8 @@ function v(e) {
     onMouseUp: P,
     onMouseEnter: D,
     onMouseLeave: w,
-    onKeyDown: L,
-    children: x,
+    onKeyDown: x,
+    children: L,
     rel: M,
     buttonRef: k,
     focusProps: j,
@@ -178,7 +178,7 @@ function v(e) {
       onMouseDown: _ ? true : R,
       onMouseEnter: D,
       onMouseLeave: w,
-      onKeyDown: _ ? true : L,
+      onKeyDown: _ ? true : x,
       type: v,
       disabled: _,
       style: I,
@@ -198,7 +198,7 @@ function v(e) {
         itemClassName: u.spinnerItem
       }) : null, (0, r.jsx)("div", {
         className: o()(u.contents, A),
-        children: x
+        children: L
       })]
     }))
   }));

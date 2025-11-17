@@ -109,7 +109,7 @@ let R = (e, t) => "".concat(e, ":").concat(t),
           names: e
         }) : e
       },
-      L = d && !R;
+      x = d && !R;
     return (0, r.jsx)(l.tEY, {
       children: (0, r.jsx)("button", A(T({}, P), {
         className: o()(v.emojiItem, {
@@ -133,7 +133,7 @@ let R = (e, t) => "".concat(e, ":").concat(t),
           size: b,
           surrogateCodePoint: I,
           allowAnimatedEmoji: S,
-          isLocked: L
+          isLocked: x
         })
       }))
     })
@@ -155,8 +155,8 @@ function D(e) {
     selectedItemClassName: N,
     getEmojiItemProps: D,
     isMediumSize: w,
-    isLargeSize: L,
-    pulseItemKey: x,
+    isLargeSize: x,
+    pulseItemKey: L,
     allowAnimatedEmoji: M,
     setPulseItemKey: k,
     messageId: j,
@@ -201,11 +201,11 @@ function D(e) {
       ref: l,
       emoji: W,
       isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(W),
-      isLargeSize: L,
+      isLargeSize: x,
       isMediumSize: w,
       isInspected: o,
       isDisabled: z,
-      showPulse: x === a,
+      showPulse: L === a,
       allowAnimatedEmoji: M,
       onFocus: null != u ? u : Q,
       onMouseMove: Q,

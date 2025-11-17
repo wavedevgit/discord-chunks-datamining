@@ -18,7 +18,7 @@ require.d(exports, {
   bj: () => U,
   kk: () => M,
   mA: () => B,
-  oK: () => L,
+  oK: () => x,
   po: () => I,
   qN: () => G,
   u9: () => k,
@@ -179,18 +179,18 @@ function w(e, t) {
   return (0, r.e7)([s.Z], () => D(e, t))
 }
 
-function L(e, t) {
+function x(e, t) {
   if ((0, m.Bh)(e)) returntrue;
   let n = s.Z.getGuildDismissedContentState(t);
   return null != n && null != n[e] && null != n[e].lastDismissedAtMs && "0" !== n[e].lastDismissedAtMs
 }
-let x = new Set([Chunk704215.z.ACCOUNT_LINK_INVITE_FRIENDS, Chunk704215.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER, Chunk704215.z.ACCOUNT_LINK_PROMPT]);
+let L = new Set([Chunk704215.z.ACCOUNT_LINK_INVITE_FRIENDS, Chunk704215.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER, Chunk704215.z.ACCOUNT_LINK_PROMPT]);
 
 function M(e, t, n, r) {
   if ((0, h.cI)(e) || p.Z.hasUserHitDCCap(e, null == t ? true : t.guildId)) return;
   let o = d.Z.getConfig({
     location: "requestMarkDismissibleContentAsShown"
-  }).enabled && null == r && x.has(e);
+  }).enabled && null == r && L.has(e);
   (!n || o) && (a.Z.dispatch({
     type: "DCF_EVENT_LOGGED",
     eventType: u.D.DC_SHOW_REQUEST,

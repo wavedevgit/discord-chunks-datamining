@@ -33,7 +33,7 @@ function C(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, C = (0, m.c_)(), N = (0, p.q)(), R = h.h2.useSetting().includes(n), P = (0, l.LN)(), D = h.mX.useSetting(), w = h.zA.useSetting().includes(n), L = i.useCallback(e => {
+  } = e, C = (0, m.c_)(), N = (0, p.q)(), R = h.h2.useSetting().includes(n), P = (0, l.LN)(), D = h.mX.useSetting(), w = h.zA.useSetting().includes(n), x = i.useCallback(e => {
     let r = (0, f.gl)();
     e ? r.delete(n) : r.add(n), h.zA.updateSetting(Array.from(r)), u.default.track(T.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: y.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
@@ -42,7 +42,7 @@ function C(e) {
     })
   }, [t, n]);
 
-  function x(e, t) {
+  function L(e, t) {
     u.default.track(T.rMx.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
       default_guilds_restricted: e,
       applied_to_existing_guilds: t
@@ -53,15 +53,15 @@ function C(e) {
     if (!e && (0, _.S)()) return void o.Z.showAgeVerificationGetStartedModal({
       entryPoint: s.cU.MESSAGE_REQUESTS_SETTINGS
     });
-    t ? L(e) : k(!e)
+    t ? x(e) : k(!e)
   }
 
   function k(e) {
     let t = () => {
-        h.mX.updateSetting(e), h.zA.updateSetting(e ? c.Z.getGuildIds() : []), x(e, true)
+        h.mX.updateSetting(e), h.zA.updateSetting(e ? c.Z.getGuildIds() : []), L(e, true)
       },
       n = () => {
-        h.mX.updateSetting(e), x(e, false)
+        h.mX.updateSetting(e), L(e, false)
       };
     (0, b.V)({
       header: S.intl.string(S.t.yAfu1p),

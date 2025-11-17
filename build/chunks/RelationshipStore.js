@@ -102,12 +102,12 @@ function w(e) {
   }), D()
 }
 
-function L(e) {
+function x(e) {
   for (let [t, n] of(p.clear(), N.clear(), e.relationships)) R(t, n);
   D()
 }
 
-function x(e) {
+function L(e) {
   let t = p.get(e.relationship.id);
   R(e.relationship.id, e.relationship.type), null != e.relationship.nickname && (h = f(u({}, h), {
     [e.relationship.id]: e.relationship.nickname
@@ -260,8 +260,8 @@ class G extends(r = Chunk442837.ZP.Store) {
 c(G, "displayName", "RelationshipStore");
 let B = new G(Chunk570140.Z, {
   CONNECTION_OPEN: w,
-  OVERLAY_INITIALIZE: L,
-  RELATIONSHIP_ADD: x,
+  OVERLAY_INITIALIZE: x,
+  RELATIONSHIP_ADD: L,
   RELATIONSHIP_REMOVE: M,
   RELATIONSHIP_UPDATE: k,
   RELATIONSHIP_PENDING_INCOMING_REMOVED: j,

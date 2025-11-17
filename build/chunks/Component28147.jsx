@@ -55,7 +55,7 @@ function w(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,8 +66,8 @@ function L(e, t) {
   return n
 }
 
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function L(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -161,8 +161,8 @@ function F(e) {
   i.useLayoutEffect(() => y(false), [A]);
   let {
     ref: w,
-    isTransitioning: L,
-    onTransitionEnd: x
+    isTransitioning: x,
+    onTransitionEnd: L
   } = (0, O.Z)({
     key: s,
     isExpanded: D,
@@ -176,7 +176,7 @@ function F(e) {
       num: o.length
     })
   }, [o.length, v, b]);
-  let M = D || L,
+  let M = D || x,
     k = D ? T.Z.buttonTypes.VIEW_LESS : T.Z.buttonTypes.VIEW_MORE,
     j = M ? o : E;
   return (0, r.jsxs)("div", {
@@ -187,7 +187,7 @@ function F(e) {
     }), (0, r.jsx)("div", {
       className: P.sectionContentContainer,
       ref: w,
-      onTransitionEnd: x,
+      onTransitionEnd: L,
       children: j.map((e, t) => {
         let {
           command: n,
@@ -239,7 +239,7 @@ function V(e) {
     ref: e => {
       t.current = e
     },
-    children: (0, r.jsx)(b.kA, x(w({}, e), {
+    children: (0, r.jsx)(b.kA, L(w({}, e), {
       tracksImpression: false,
       enableVideoBanner: true
     }))

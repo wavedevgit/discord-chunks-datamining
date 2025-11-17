@@ -334,7 +334,7 @@ let V = Chunk428595.Z.RULES,
           return null != t ? {
             content: "@".concat(t.name)
           } : {
-            content: "@".concat(x.intl.string(x.t["11pdXZ"]))
+            content: "@".concat(L.intl.string(L.t["11pdXZ"]))
           }
         }
         return {
@@ -569,7 +569,7 @@ let el = {
       R.ZP.isEmojiPremiumLocked({
         emoji: t,
         channel: e,
-        intention: L.Hz.CHAT
+        intention: x.Hz.CHAT
       }) ? i.invalidEmojis.push(t) : n || i.validNonShortcutEmojis.push(t)
     }), i
   },

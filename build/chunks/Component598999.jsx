@@ -72,9 +72,9 @@ function w(e, t) {
   }), e
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
-  var n, r, i = x(e, t);
+  var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -82,7 +82,7 @@ function L(e, t) {
   return i
 }
 
-function x(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -220,7 +220,7 @@ function H(e) {
     scrollerClassName: b,
     className: T,
     listName: S
-  } = e, R = i.useRef(null), D = (0, p.Z)(S, R), x = (0, u.e7)([y.ZP], () => y.ZP.hasNotice()), B = (0, u.e7)([O.Z], () => O.Z.windowSize());
+  } = e, R = i.useRef(null), D = (0, p.Z)(S, R), L = (0, u.e7)([y.ZP], () => y.ZP.hasNotice()), B = (0, u.e7)([O.Z], () => O.Z.windowSize());
   i.useEffect(() => {
     v.default.track(A.rMx.OPEN_POPOUT, {
       type: t
@@ -290,7 +290,7 @@ function H(e) {
     K = {
       maxHeight: B.height - M - k - 48
     };
-  x && (K.maxHeight -= j);
+  L && (K.maxHeight -= j);
   let z = null != d && a;
   return (0, r.jsx)("div", {
     className: o()(T, N.messagesPopoutWrap),
@@ -310,7 +310,7 @@ function H(e) {
             children: e => {
               var {
                 ref: t
-              } = e, n = L(e, ["ref"]);
+              } = e, n = x(e, ["ref"]);
               return (0, r.jsx)("div", w(P({
                 ref: t
               }, n), {

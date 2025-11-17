@@ -4,7 +4,7 @@
 require.d(exports, {
   X9: () => M,
   b8: () => k,
-  hz: () => L
+  hz: () => x
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
@@ -42,14 +42,14 @@ let w = e => {
   }), t
 };
 
-function L(e) {
+function x(e) {
   var t;
   let n = (0, A.CJ)(),
     r = null == n || null == (t = n.modal) ? true : t.components[0];
   return (null == r ? true : r.type) === u.re.ACTION_ROW && r.components[0].id === e
 }
 
-function x(e) {
+function L(e) {
   return r.useMemo(() => {
     let t = y.Z.getGuildId(),
       n = null != t && null != e.bot ? b.ZP.getMember(t, e.bot.id) : true,
@@ -88,7 +88,7 @@ function M(e, t) {
   let {
     applicationIconURL: v,
     applicationName: I
-  } = x(n);
+  } = L(n);
   return {
     components: a,
     applicationIconURL: v,
@@ -110,7 +110,7 @@ function k(e) {
     applicationIconURL: r,
     applicationName: i,
     applicationBaseUrl: o
-  } = x(t), s = g.Z.getChannel(e.channelId);
+  } = L(t), s = g.Z.getChannel(e.channelId);
   a()(null != s, "channel should not be null");
   let l = {
     instance_id: "".concat(e.channelId, ":").concat(t.id, ":").concat(n),

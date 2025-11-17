@@ -108,7 +108,7 @@ function V(e) {
         children: [(0, r.jsxs)("div", {
           className: M.headerLabel,
           children: [t, s && null != l && (0, r.jsx)(N.Cy, {
-            text: x.intl.formatToPlainString(x.t.iiLbvu, {
+            text: L.intl.formatToPlainString(L.t.iiLbvu, {
               percent: l
             }),
             className: M.discountPill,
@@ -148,7 +148,7 @@ function H(e) {
           }), (0, r.jsxs)("div", {
             className: M.headerColumnB,
             children: [t, s && null != l && (0, r.jsx)(N.Cy, {
-              text: x.intl.formatToPlainString(x.t.iiLbvu, {
+              text: L.intl.formatToPlainString(L.t.iiLbvu, {
                 percent: l
               }),
               className: M.discountPill,
@@ -272,7 +272,7 @@ let K = function(e) {
           pauseEndsAt: i.pauseEndsAt
         }
       });
-      i.status === w.O0b.PAUSED && i.pauseReason !== L.Id.USER_TEMPORARY_BAN ? (0, h.Z)({
+      i.status === w.O0b.PAUSED && i.pauseReason !== x.Id.USER_TEMPORARY_BAN ? (0, h.Z)({
         initialPlanId: i.premiumPlanIdFromItems,
         analyticsLocations: W,
         analyticsLocation: k,
@@ -289,7 +289,7 @@ let K = function(e) {
     },
     ec = e => (s()(null != o, "Expected renewalInvoicePreview"), (0, r.jsx)("div", {
       className: M.planInfo,
-      children: ee ? x.intl.format(x.t["/SfHwl"], {
+      children: ee ? L.intl.format(L.t["/SfHwl"], {
         weeks: 1
       }) : (0, O.qV)({
         planId: e,
@@ -313,7 +313,7 @@ let K = function(e) {
             variant: "overlay-primary",
             size: "sm",
             loading: N,
-            text: x.intl.string(x.t.obRG6Y).toLocaleUpperCase()
+            text: L.intl.string(L.t.obRG6Y).toLocaleUpperCase()
           })
         })
       }
@@ -330,7 +330,7 @@ let K = function(e) {
               disabled: N,
               onClick: et,
               size: "sm",
-              text: x.intl.string(x.t.eFlYVA)
+              text: L.intl.string(L.t.eFlYVA)
             })
           }) : (0, r.jsx)("div", {
             className: M.secondaryBannerTextButtonContainer,
@@ -339,7 +339,7 @@ let K = function(e) {
               onClick: en,
               disabled: N,
               size: "sm",
-              text: x.intl.string(x.t["ETE/oC"])
+              text: L.intl.string(L.t["ETE/oC"])
             })
           }), (0, r.jsx)(l.u, {
             text: t,
@@ -355,7 +355,7 @@ let K = function(e) {
                   subscription: i
                 })
               },
-              text: x.intl.string(x.t["dylp/7"])
+              text: L.intl.string(L.t["dylp/7"])
             })
           })]
         })
@@ -366,7 +366,7 @@ let K = function(e) {
         children: (0, r.jsx)(c.Button, {
           variant: "overlay-primary",
           size: "sm",
-          text: x.intl.string(x.t.iIvF2z),
+          text: L.intl.string(L.t.iIvF2z),
           loading: N,
           onClick: ea
         })
@@ -378,7 +378,7 @@ let K = function(e) {
             size: "sm",
             onClick: er,
             loading: N,
-            text: x.intl.string(x.t["ETE/oC"])
+            text: L.intl.string(L.t["ETE/oC"])
           });
         case w.O0b.PAUSE_PENDING:
           return (0, r.jsxs)("div", {
@@ -390,7 +390,7 @@ let K = function(e) {
                 disabled: N,
                 onClick: en,
                 size: "sm",
-                text: x.intl.string(x.t.cM1H0K)
+                text: L.intl.string(L.t.cM1H0K)
               })
             }), (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
@@ -398,7 +398,7 @@ let K = function(e) {
               children: (0, r.jsx)(c.Button, {
                 variant: "overlay-primary",
                 size: "sm",
-                text: x.intl.string(x.t.TgV5Qf),
+                text: L.intl.string(L.t.TgV5Qf),
                 loading: N,
                 onClick: eo
               })
@@ -418,13 +418,13 @@ let K = function(e) {
                 onClick: es,
                 disabled: N,
                 size: "sm",
-                text: x.intl.string(x.t.jNHWt6)
+                text: L.intl.string(L.t.jNHWt6)
               }) : (0, r.jsx)(c.Avr, {
                 variant: "always-white",
                 onClick: el,
                 disabled: N,
                 size: "sm",
-                text: x.intl.string(x.t.cM1H0K)
+                text: L.intl.string(L.t.cM1H0K)
               })
             }), (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
@@ -432,7 +432,7 @@ let K = function(e) {
               children: (0, r.jsx)(c.Button, {
                 variant: "overlay-primary",
                 size: "sm",
-                text: x.intl.string(x.t.zpi5pg),
+                text: L.intl.string(L.t.zpi5pg),
                 loading: N,
                 onClick: eo
               })
@@ -463,7 +463,7 @@ let K = function(e) {
         className: M.wordMark,
         children: [(0, r.jsx)(b.Z, {
           className: M.discordWordmark,
-          "aria-label": x.intl.string(x.t["t9uG/o"])
+          "aria-label": L.intl.string(L.t["t9uG/o"])
         }), (0, r.jsx)("div", {
           className: M.basicWordmark
         })]
@@ -475,7 +475,7 @@ let K = function(e) {
     case D.PremiumTypes.TIER_2:
       eh = (0, r.jsx)(E.Z, {
         className: M.planName,
-        "aria-label": x.intl.string(x.t.lpNrPu)
+        "aria-label": L.intl.string(L.t.lpNrPu)
       })
   }
   let em = F.includes(i.status) && !z ? H : V;

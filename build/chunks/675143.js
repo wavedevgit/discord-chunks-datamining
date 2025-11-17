@@ -58,9 +58,9 @@ function E(e, t, n) {
         date: e
       })), t.minValue && (0, a.KC)(b, t.minValue) ? e += ", " + I.format("minimumDate") : t.maxValue && (0, a.KC)(b, t.maxValue) && (e += ", " + I.format("maximumDate")), e
     }, [T, P, I, S, D, b, t, v]),
-    L = "";
-  "anchorDate" in t && A && !t.isReadOnly && N && (L = t.anchorDate ? I.format("finishRangeSelectionPrompt") : I.format("startRangeSelectionPrompt"));
-  let x = (0, s.P)(L),
+    x = "";
+  "anchorDate" in t && A && !t.isReadOnly && N && (x = t.anchorDate ? I.format("finishRangeSelectionPrompt") : I.format("startRangeSelectionPrompt"));
+  let L = (0, s.P)(x),
     M = (0, m.useRef)(false),
     k = (0, m.useRef)(false),
     j = (0, m.useRef)(true),
@@ -138,7 +138,7 @@ function E(e, t, n) {
       "aria-disabled": !N || true,
       "aria-label": w,
       "aria-invalid": R || true,
-      "aria-describedby": [R ? O : true, x["aria-describedby"]].filter(Boolean).join(" ") || true,
+      "aria-describedby": [R ? O : true, L["aria-describedby"]].filter(Boolean).join(" ") || true,
       onPointerEnter(e) {
         "highlightDate" in t && ("touch" !== e.pointerType || t.isDragging) && N && t.highlightDate(b)
       },

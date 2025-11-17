@@ -11,9 +11,9 @@ require.d(exports, {
   Zt: () => I,
   Zv: () => S,
   _V: () => A,
-  cv: () => x,
+  cv: () => L,
   gM: () => U,
-  jl: () => L,
+  jl: () => x,
   z: () => R
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./415506.js"), require("./781311.js");
 var Chunk134432 = require("./134432.js"),
@@ -114,7 +114,7 @@ let {
     default:
       returnfalse
   }
-}, w = e => e.type === d.n0.GUILD, L = e => e.type === d.n0.STANDARD, x = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], M = e => {
+}, w = e => e.type === d.n0.GUILD, x = e => e.type === d.n0.STANDARD, L = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], M = e => {
   if (null === e) returnfalse;
   let t = e.guild_id;
   return true !== a.Z.getGuild(t)

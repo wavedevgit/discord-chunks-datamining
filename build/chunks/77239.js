@@ -18,8 +18,8 @@ module.exports = function(e, t, n, p, h, m, g, E) {
     P = 0,
     D = 0,
     w = 0,
-    L = 0,
     x = 0,
+    L = 0,
     M = 0,
     k = 0,
     j = 0,
@@ -32,28 +32,28 @@ module.exports = function(e, t, n, p, h, m, g, E) {
     H = 0;
   for (R = 0; R <= i; R++) Z[R] = 0;
   for (P = 0; P < p; P++) Z[t[n + P]]++;
-  for (L = N, w = i; w >= 1 && 0 === Z[w]; w--);
-  if (L > w && (L = w), 0 === w) return h[m++] = 0x1400000, h[m++] = 0x1400000, E.bits = 1, 0;
+  for (x = N, w = i; w >= 1 && 0 === Z[w]; w--);
+  if (x > w && (x = w), 0 === w) return h[m++] = 0x1400000, h[m++] = 0x1400000, E.bits = 1, 0;
   for (D = 1; D < w && 0 === Z[D]; D++);
-  for (L < D && (L = D), k = 1, R = 1; R <= i; R++)
+  for (x < D && (x = D), k = 1, R = 1; R <= i; R++)
     if (k <<= 1, (k -= Z[R]) < 0) return false;
   if (k > 0 && (e === s || 1 !== w)) return false;
   for (R = 1, F[1] = 0; R < i; R++) F[R + 1] = F[R] + Z[R];
   for (P = 0; P < p; P++) 0 !== t[n + P] && (g[F[t[n + P]]++] = P);
-  if (e === s ? (G = V = g, T = 19) : e === l ? (G = u, B -= 257, V = d, H -= 257, T = 256) : (G = f, V = _, T = false), U = 0, P = 0, R = D, I = m, x = L, M = 0, O = false, v = (j = 1 << L) - 1, e === l && j > a || e === c && j > o) return 1;
+  if (e === s ? (G = V = g, T = 19) : e === l ? (G = u, B -= 257, V = d, H -= 257, T = 256) : (G = f, V = _, T = false), U = 0, P = 0, R = D, I = m, L = x, M = 0, O = false, v = (j = 1 << x) - 1, e === l && j > a || e === c && j > o) return 1;
   for (;;) {
-    S = R - M, g[P] < T ? (A = 0, C = g[P]) : g[P] > T ? (A = V[H + g[P]], C = G[B + g[P]]) : (A = 96, C = 0), b = 1 << R - M, D = y = 1 << x;
+    S = R - M, g[P] < T ? (A = 0, C = g[P]) : g[P] > T ? (A = V[H + g[P]], C = G[B + g[P]]) : (A = 96, C = 0), b = 1 << R - M, D = y = 1 << L;
     do h[I + (U >> M) + (y -= b)] = S << 24 | A << 16 | C; while (0 !== y);
     for (b = 1 << R - 1; U & b;) b >>= 1;
     if (0 !== b ? (U &= b - 1, U += b) : U = 0, P++, 0 == --Z[R]) {
       if (R === w) break;
       R = t[n + g[P]]
     }
-    if (R > L && (U & v) !== O) {
-      for (0 === M && (M = L), I += D, k = 1 << (x = R - M); x + M < w && !((k -= Z[x + M]) <= 0);) x++, k <<= 1;
-      if (j += 1 << x, e === l && j > a || e === c && j > o) return 1;
-      h[O = U & v] = L << 24 | x << 16 | I - m
+    if (R > x && (U & v) !== O) {
+      for (0 === M && (M = x), I += D, k = 1 << (L = R - M); L + M < w && !((k -= Z[L + M]) <= 0);) L++, k <<= 1;
+      if (j += 1 << L, e === l && j > a || e === c && j > o) return 1;
+      h[O = U & v] = x << 24 | L << 16 | I - m
     }
   }
-  return 0 !== U && (h[I + U] = R - M << 24 | 4194304), E.bits = L, 0
+  return 0 !== U && (h[I + U] = R - M << 24 | 4194304), E.bits = x, 0
 }

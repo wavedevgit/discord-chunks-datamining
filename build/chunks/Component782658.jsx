@@ -50,9 +50,9 @@ function N(e) {
       code: ""
     },
     {
-      analyticsLocations: L
+      analyticsLocations: x
     } = (0, l.ZP)(),
-    x = (0, a.e7)([h.Z], () => (null == R ? true : R.guild) != null ? h.Z.getGuild(R.guild.id) : null, [R]),
+    L = (0, a.e7)([h.Z], () => (null == R ? true : R.guild) != null ? h.Z.getGuild(R.guild.id) : null, [R]),
     M = (0, a.e7)([p.default], () => p.default.getId()),
     k = (0, a.e7)([u.ZP], () => {
       var e;
@@ -62,11 +62,11 @@ function N(e) {
       null != w.channel && o.ZP.transitionToInviteSync(w)
     },
     U = () => {
-      let e = null == x && (null == R ? true : R.guild) != null ? g.Qs(R.guild) : x;
+      let e = null == L && (null == R ? true : R.guild) != null ? g.Qs(R.guild) : L;
       (0, f.o)({
         guild: e,
-        isMember: null != x,
-        analyticsLocations: L
+        isMember: null != L,
+        analyticsLocations: x
       }) === f.e.PROCEED && o.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: t,
         context: N("Invite Button Embed")
@@ -76,7 +76,7 @@ function N(e) {
       onTransitionToInviteChannel: j,
       onAcceptInstantInvite: U,
       currentUserId: M,
-      guild: x,
+      guild: L,
       invite: w,
       message: n
     });
@@ -123,7 +123,7 @@ function N(e) {
               onAcceptInstantInvite: U,
               currentUserId: M,
               message: n,
-              guild: x,
+              guild: L,
               invite: w
             });
             break
@@ -133,7 +133,7 @@ function N(e) {
               guildScheduledEvent: k,
               guild: w.guild,
               channel: w.channel,
-              isMember: null != x,
+              isMember: null != L,
               onAcceptInstantInvite: U,
               onTransitionToInviteChannel: j
             });
@@ -149,7 +149,7 @@ function N(e) {
           }(0, c.l)(w) && (G = (0, r.jsx)(I.Z, {
             onTransitionToInviteChannel: j,
             onAcceptInstantInvite: U,
-            isMemberOfGuild: null != x,
+            isMemberOfGuild: null != L,
             invite: w,
             message: n
           }))

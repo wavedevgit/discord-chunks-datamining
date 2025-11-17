@@ -94,11 +94,11 @@ function q(e) {
     {
       isGift: eD,
       giftRecipient: ew,
-      selectedGiftStyle: eL
+      selectedGiftStyle: ex
     } = (0, E.wD)(),
-    ex = (0, M.N)(),
-    eM = null == ex || null == (t = ex.discount) ? true : t.plan_ids.some(e => Y.GP[e].skuId === ey),
-    ek = !eD && null != ex && null != ey && eM,
+    eL = (0, M.N)(),
+    eM = null == eL || null == (t = eL.discount) ? true : t.plan_ids.some(e => Y.GP[e].skuId === ey),
+    ek = !eD && null != eL && null != ey && eM,
     ej = (0, u.e7)([C.Z], () => C.Z.get(Q));
   l()(null != ej, "Missing plan");
   let eU = [{
@@ -109,7 +109,7 @@ function q(e) {
     eB = null != ey ? ey : "",
     eZ = (0, u.e7)([R.Z], () => R.Z.get(eB), [eB]),
     eF = null == eZ ? true : eZ.eligiblePaymentGateways,
-    [eV, eH] = (0, x.ED)({
+    [eV, eH] = (0, L.ED)({
       items: eU,
       renewal: false,
       preventFetch: eA || eD || eG,
@@ -119,7 +119,7 @@ function q(e) {
       trialId: el,
       metadata: ed
     }),
-    [eY, eW] = (0, x.ED)({
+    [eY, eW] = (0, L.ED)({
       subscriptionId: null == eb ? true : eb.id,
       items: eU,
       renewal: true,
@@ -129,7 +129,7 @@ function q(e) {
       currency: ee.currency,
       metadata: ed
     }),
-    [eK, ez] = (0, x.ED)({
+    [eK, ez] = (0, L.ED)({
       items: [{
         planId: Y.Xh.PREMIUM_MONTH_TIER_2,
         quantity: 1
@@ -141,7 +141,7 @@ function q(e) {
       currency: ee.currency,
       metadata: ed
     }),
-    [eq, eX] = (0, x.o5)({
+    [eq, eX] = (0, L.o5)({
       paymentSourceId: ee.paymentSourceId,
       skuId: ey,
       subscriptionPlanId: Q,
@@ -306,10 +306,10 @@ function q(e) {
     }), !eh && "" !== ta && (0, r.jsx)(f.Heading, {
       variant: "heading-md/semibold",
       children: ta
-    }), eQ && null != eL && (0, r.jsxs)(r.Fragment, {
+    }), eQ && null != ex && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(G.Z, {
-        defaultAnimationState: L.SR.LOOP,
-        giftStyle: eL,
+        defaultAnimationState: x.SR.LOOP,
+        giftStyle: ex,
         shouldAnimate: true,
         className: z.giftMainAnimation
       }), (0, r.jsx)(H.s, {

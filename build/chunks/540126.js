@@ -456,7 +456,7 @@ class es extends ei {
   constructor(e, t) {
     var n;
     if (super(e), !e.optInEnabled && !ev()) return;
-    this.channels = o()(null != (n = D.ZP.getGuildFavorites(e.id)) ? n : []).map(e => S.Z.getChannel(e)).filter(x.lm).map(e => new em(this, e, t)).keyBy(e => e.id).value();
+    this.channels = o()(null != (n = D.ZP.getGuildFavorites(e.id)) ? n : []).map(e => S.Z.getChannel(e)).filter(L.lm).map(e => new em(this, e, t)).keyBy(e => e.id).value();
     let r = h.Z.getSuggestedChannelId(e.id),
       i = S.Z.getChannel(r);
     null != i && null != r && (this.channels[r] = new em(this, i, W(H({}, t), {
@@ -804,7 +804,7 @@ function ey(e, t, n) {
         type: "event",
         name: r.name
       };
-      let i = L.ZP.getVoiceStatesForChannel(e);
+      let i = x.ZP.getVoiceStatesForChannel(e);
       if (n && t && (0, k.a)(i)) return {
         type: "go-live"
       };
@@ -816,7 +816,7 @@ function ey(e, t, n) {
       let o = s.ZP.getEmbeddedActivitiesForChannel(e.id).map(e => {
         var t;
         return null == (t = l.Z.getApplication(e.applicationId)) ? true : t.name
-      }).filter(x.lm);
+      }).filter(L.lm);
       if (o.length > 0) return {
         type: "embedded-activities",
         name: o.join(", ")

@@ -2,7 +2,7 @@
 /** chunk id: 172800, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -71,7 +71,7 @@ function D(e, t) {
 
 function w(e, t) {
   if (null == e) return {};
-  var n, r, i = L(e, t);
+  var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -79,21 +79,21 @@ function w(e, t) {
   return i
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let x = e => {
+let L = e => {
   let {
     emojiDescriptors: t,
     emojiSize: a,
     onSelect: N,
     onSelectSoundmoji: P,
-    onInspect: L,
-    surrogateCodePoint: x,
+    onInspect: x,
+    surrogateCodePoint: L,
     getEmojiItemProps: M,
     getEmojiRowProps: k,
     isScrolling: j,
@@ -145,7 +145,7 @@ let x = e => {
             tabIndex: g,
             onFocus: E
           } = h, b = w(h, ["ref", "tabIndex", "onFocus"]), y = el.rowIndex === _ && el.columnIndex === p, O = () => {
-            j.current || U.current || L(e)
+            j.current || U.current || x(e)
           };
           return (0, i.createElement)("li", D(R({}, b), {
             key: t
@@ -228,11 +228,11 @@ let x = e => {
             isInspected: o,
             isScrolling: j,
             isUsingKeyboardNavigation: U,
-            surrogateCodePoint: x,
+            surrogateCodePoint: L,
             allowAnimatedEmoji: B,
             selectedItemClassName: H,
             onSelect: N,
-            onInspect: L,
+            onInspect: x,
             channelGuildId: F,
             getEmojiItemProps: M,
             isMediumSize: ep,

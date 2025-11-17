@@ -158,7 +158,7 @@ function w(e) {
   }), true
 }
 
-function L(e) {
+function x(e) {
   var t, n;
   let {
     createWindowTriggeringPID: r
@@ -170,7 +170,7 @@ function L(e) {
   return S(r, a), true
 }
 
-function x(e) {
+function L(e) {
   var t, n;
   let {
     createWindowTriggeringPID: r
@@ -218,8 +218,8 @@ class U extends(r = Chunk442837.ZP.Store) {
 m(U, "displayName", "Overlay-v3-Native-Analytics-Store");
 let G = new U(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
   OVERLAY_V3_PRE_CREATE_POPOUT: w,
-  OVERLAY_V3_POST_CREATE_POPOUT: L,
-  OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: x,
+  OVERLAY_V3_POST_CREATE_POPOUT: x,
+  OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: L,
   OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: k,
   OVERLAY_SUCCESSFULLY_SHOWN: j,
   OVERLAY_CRASHED: D,

@@ -94,8 +94,8 @@ function I(e) {
     anchorRef: P,
     positionKey: D,
     ariaHidden: w = false
-  } = e, L = O(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]);
-  let x = (0, h.c)(R),
+  } = e, x = O(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]);
+  let L = (0, h.c)(R),
     M = i.useId(),
     k = w ? true : M,
     j = null != a && ("string" != typeof a || "" !== a),
@@ -122,8 +122,8 @@ function I(e) {
       isVisible: G,
       triggerProps: B
     } = (0, _.l)(E({
-      targetElementRef: x.targetElementRef
-    }, L)),
+      targetElementRef: L.targetElementRef
+    }, x)),
     Z = null != D ? D : "".concat((0, f.Sw)(null != a ? a : ""), "|").concat((0, f.Sw)(g)),
     F = (0, p.Q)({
       shouldShow: G
@@ -153,18 +153,18 @@ function I(e) {
       tag: I,
       children: n,
       triggerHandlers: e,
-      triggerRef: x.triggerRef
+      triggerRef: L.triggerRef
     })
   } else {
     if (!i.isValidElement(n)) return null;
-    t = (0, f.C9)(n, B, k, x.triggerRef)
+    t = (0, f.C9)(n, B, k, L.triggerRef)
   }
   let V = F((e, t) => t ? (0, r.jsx)(d.pn, {
     isRichTooltip: true,
     children: (0, r.jsx)(u.N, {
       isVisible: G,
       isRendered: true,
-      targetElementRef: x.targetElementRef,
+      targetElementRef: L.targetElementRef,
       anchorRef: P,
       id: M,
       content: U,

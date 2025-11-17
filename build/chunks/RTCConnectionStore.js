@@ -181,12 +181,12 @@ function w(e) {
   }, false)
 }
 
-function L(e) {
+function x(e) {
   if (null == r || null != e.guildId && e.guildId !== r.guildId || null != e.channelId && e.channelId !== r.getNextChannelId()) returnfalse;
   r.connect(e.endpoint, e.token)
 }
 
-function x() {
+function L() {
   b = null
 }
 
@@ -388,9 +388,9 @@ let q = new z(Chunk570140.Z, __OVERLAY__ ? {} : {
   VOICE_STATE_UPDATES: w,
   VOICE_CHANNEL_SELECT: G,
   AUDIO_SET_NOISE_CANCELLATION: F,
-  VOICE_SERVER_UPDATE: L,
-  CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: x,
-  REMOTE_SESSION_CONNECT: x,
+  VOICE_SERVER_UPDATE: x,
+  CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: L,
+  REMOTE_SESSION_CONNECT: L,
   CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: M,
   GUILD_DELETE: k,
   CHANNEL_DELETE: U,

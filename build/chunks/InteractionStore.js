@@ -160,11 +160,11 @@ function w(e) {
   i = t.id, k(n)
 }
 
-function L() {
+function x() {
   r = true, i = true
 }
 
-function x(e) {
+function L(e) {
   let {
     modalKey: t
   } = e;
@@ -240,8 +240,8 @@ let G = new U(Chunk570140.Z, {
   MESSAGE_CREATE: N,
   CHANNEL_SELECT: P,
   INTERACTION_IFRAME_MODAL_CREATE: w,
-  INTERACTION_IFRAME_MODAL_CLOSE: L,
-  INTERACTION_IFRAME_MODAL_KEY_CREATE: x,
+  INTERACTION_IFRAME_MODAL_CLOSE: x,
+  INTERACTION_IFRAME_MODAL_KEY_CREATE: L,
   INTERACTION_MODAL_CREATE: D,
   EMBEDDED_ACTIVITY_UPDATE_V2: M
 })

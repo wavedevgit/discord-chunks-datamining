@@ -345,11 +345,11 @@ function eT(e) {
   } = e;
   i.useEffect(() => p.Z.wait(() => (0, h.X8)()), []);
   let a = (0, d.e7)([g.Z], () => g.Z.useReducedMotion),
-    [s, l] = (0, d.Wu)([M.Z, L.Z], () => {
+    [s, l] = (0, d.Wu)([M.Z, x.Z], () => {
       let e = M.Z.boostSlots,
         t = new Map;
       u()(e).map("premiumGuildSubscription").map("guildId").forEach(e => {
-        if (null != L.Z.getGuild(e)) {
+        if (null != x.Z.getGuild(e)) {
           var n;
           let r = null != (n = t.get(e)) ? n : 0;
           t.set(e, r + 1)
@@ -357,7 +357,7 @@ function eT(e) {
       });
       let n = null,
         r = 0;
-      return t.size > 0 && ([n, r] = Array.from(t.entries()).reduce((e, t) => t[1] > e[1] ? t : e)), [L.Z.getGuild(n), r]
+      return t.size > 0 && ([n, r] = Array.from(t.entries()).reduce((e, t) => t[1] > e[1] ? t : e)), [x.Z.getGuild(n), r]
     }),
     c = null != s && l > 0,
     f = eE().boostItemVisual,
@@ -538,8 +538,8 @@ let eP = function(e) {
     isDowngrade: m = false,
     subtitleIcon: g,
     subtitleClassName: E
-  } = e, b = (0, d.e7)([x.default], () => {
-    let e = x.default.getCurrentUser();
+  } = e, b = (0, d.e7)([L.default], () => {
+    let e = L.default.getCurrentUser();
     return l()(null != e, "ProfileItem: currentUser cannot be undefined"), e
   });
   i.useEffect(() => {

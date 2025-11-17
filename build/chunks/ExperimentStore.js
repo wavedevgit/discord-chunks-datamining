@@ -73,8 +73,8 @@ let O = "scientist:triggered",
     rawGuildExperiments: []
   },
   w = {},
-  L = {},
   x = {},
+  L = {},
   M = {},
   k = {},
   j = null,
@@ -278,7 +278,7 @@ function et(e) {
     current_snapshot_source: D.source,
     current_snapshot_session_id: D.sessionId,
     current_snapshot_fingerprint: D.fingerprint
-  }), w = {}, L = {}, x = {};
+  }), w = {}, x = {}, L = {};
   let r = "CONNECTION_OPEN" === e.type || null == e.fingerprint || e.fingerprint === d.default.getFingerprint(),
     {
       experiments: i,
@@ -331,7 +331,7 @@ function en(e) {
     }
   }), null != n && n.forEach(e => {
     let [t, n, s, l, c, u, d, f, _, p] = e;
-    L[t] = {
+    x[t] = {
       hashKey: n,
       revision: s,
       populations: l.map(ee),
@@ -387,7 +387,7 @@ let ei = 1e4;
 function ea(e, t) {
   var n, r;
   let i = B(t),
-    a = L["".concat(i)];
+    a = x["".concat(i)];
   if (null == a) return null;
   let {
     revision: o,
@@ -460,7 +460,7 @@ function es(e) {
       source: t.assignmentSource,
       sessionId: t.assignmentSessionId,
       fingerprint: t.assignmentFingerprint
-    }), L = eo(t.loadedGuildExperiments), x = {}, __OVERLAY__) {
+    }), x = eo(t.loadedGuildExperiments), L = {}, __OVERLAY__) {
     var r;
     j = null != (r = t.cookieOverrides) ? r : null, ef()
   }
@@ -480,7 +480,7 @@ function ec(e) {
 }
 
 function eu() {
-  C = false, N = {}, L = {}, Chunk433517.K.remove(O)
+  C = false, N = {}, x = {}, Chunk433517.K.remove(O)
 }
 
 function ed() {
@@ -612,9 +612,9 @@ function eE(e) {
   let {
     guild: t
   } = e;
-  for (let e in x) {
+  for (let e in L) {
     let [n] = e.split(":");
-    t.id === n && delete x[e]
+    t.id === n && delete L[e]
   }
 }
 class eb extends Chunk750041.Z {
@@ -623,7 +623,7 @@ class eb extends Chunk750041.Z {
   }
   loadCache() {
     let e = this.readSnapshot(eb.LATEST_SNAPSHOT_VERSION);
-    null != module && ("loadedUserExperiments" in module ? (w = module.loadedUserExperiments, L = eo(module.loadedGuildExperiments), Object.values(w).forEach(e => e.loadedFromCache = true), Object.values(L).forEach(e => e.loadedFromCache = true)) : en(module, true))
+    null != module && ("loadedUserExperiments" in module ? (w = module.loadedUserExperiments, x = eo(module.loadedGuildExperiments), Object.values(w).forEach(e => e.loadedFromCache = true), Object.values(x).forEach(e => e.loadedFromCache = true)) : en(module, true))
   }
   takeSnapshot() {
     return {
@@ -650,9 +650,9 @@ class eb extends Chunk750041.Z {
       r = k[e];
     if (U && null != r) return r;
     let i = "".concat(n, ":").concat(e);
-    if (i in x) return x[i];
+    if (i in L) return L[i];
     let a = ea(n, e);
-    return x[i] = a, a
+    return L[i] = a, a
   }
   getUserExperimentBucket(e) {
     let t = this.getUserExperimentDescriptor(e);
@@ -666,13 +666,13 @@ class eb extends Chunk750041.Z {
     return w
   }
   getGuildExperiments() {
-    return L
+    return x
   }
   getLoadedUserExperiment(e) {
     return w[B(e)]
   }
   getLoadedGuildExperiment(e) {
-    return L[B(e)]
+    return x[B(e)]
   }
   getRecentExposures(e, t) {
     let n = "".concat(e, "|").concat(t, "|");
@@ -705,16 +705,16 @@ class eb extends Chunk750041.Z {
       let r = exports[require];
       null != Chunk392711 && (module[Chunk392711] = w[require].bucket)
     }
-    for (let t in x) {
-      let n = x[exports];
+    for (let t in L) {
+      let n = L[exports];
       null != require && (module[exports] = require.bucket)
     }
     return module
   }
   getSerializedState() {
     let e = {};
-    for (let t in L)
-      for (let n of (module[exports] = JSON.parse(JSON.stringify(L[exports])), module[exports].populations)) require.filters = [];
+    for (let t in x)
+      for (let n of (module[exports] = JSON.parse(JSON.stringify(x[exports])), module[exports].populations)) require.filters = [];
     return {
       hasLoadedExperiments: C,
       trackedExposureExperiments: N,

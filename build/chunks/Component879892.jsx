@@ -92,9 +92,9 @@ async function v(e) {
     inPopout: P,
     applicationId: D,
     intent: w
-  } = e, L = P ? i.u1M : i.z1l, x = l.default.getCurrentUser();
-  if (null == x) return;
-  if (!x.verified) return void(0, i.ZDy)(async () => {
+  } = e, x = P ? i.u1M : i.z1l, L = l.default.getCurrentUser();
+  if (null == L) return;
+  if (!L.verified) return void(0, i.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("88470"), n.e("20102")]).then(n.bind(n, 444688));
@@ -107,7 +107,7 @@ async function v(e) {
       }))
     }
   }, {
-    contextKey: L
+    contextKey: x
   });
   let M = [];
   u.Z.isLoadedForPremiumSKUs() || M.push((0, s.Y2)()), c.Z.hasFetched || (M.push(a.jg()), M.push((0, o.X8)())), M.length > 0 && (null == I || I(true), await Promise.allSettled(M), null == I || I(false));
@@ -147,7 +147,7 @@ async function v(e) {
       onCloseRequest: () => {
         (0, i.Mr3)(O), U(false)
       },
-      contextKey: L
+      contextKey: x
     })
   } else(0, _.Z)({
     analyticsLocations: t,

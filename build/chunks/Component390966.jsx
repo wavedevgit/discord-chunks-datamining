@@ -164,8 +164,8 @@ function T(e) {
   null == p && (p = a === h.WX.EXTERNAL ? m.intl.string(m.t.IyZxjH) : m.intl.string(m.t["X2K3/4"]));
   let w = (0, f.Z)(N, C),
     [{
-      startDateTimeString: L,
-      endDateTimeString: x,
+      startDateTimeString: x,
+      endDateTimeString: L,
       currentOrPastEvent: M,
       upcomingEvent: k,
       diffMinutes: j
@@ -177,13 +177,13 @@ function T(e) {
       clearInterval(e)
     }
   }, [t, u]);
-  let G = L;
-  null != x && "" !== x && (G = m.intl.formatToPlainString(m.t.tXbu7I, {
-    start: L,
-    end: x
+  let G = x;
+  null != L && "" !== L && (G = m.intl.formatToPlainString(m.t.tXbu7I, {
+    start: x,
+    end: L
   }));
   let B = i.useMemo(() => n === h.p1.CANCELED || (null == w ? true : w.is_canceled) ? 5 : n === h.p1.ACTIVE ? 3 : h.$I.has(n) ? 4 : M ? 2 : +!!k, [n, null == w ? true : w.is_canceled, M, k]),
-    Z = y(B, G, p, x, j),
+    Z = y(B, G, p, L, j),
     {
       Icon: F,
       iconColor: V,
@@ -194,9 +194,9 @@ function T(e) {
       textBrand: R,
       textPositive: P,
       textDanger: D,
-      endDateTimeString: x,
-      startDateTimeString: L
-    }), [B, R, P, D, x, L]),
+      endDateTimeString: L,
+      startDateTimeString: x
+    }), [B, R, P, D, L, x]),
     W = null;
   if (null != A) {
     let e = (0, _.Ho)(A);

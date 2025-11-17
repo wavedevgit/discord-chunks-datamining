@@ -38,10 +38,10 @@ function h(e, t) {
   let P = f.Z.getGuildMemberProfile(e, T),
     D = f.Z.getMutualGuilds(e),
     w = f.Z.getMutualFriends(e),
-    L = f.Z.getMutualFriendsCount(e),
-    x = null == w && O,
-    M = null == L && y,
-    k = null == D && b || x || M,
+    x = f.Z.getMutualFriendsCount(e),
+    L = null == w && O,
+    M = null == x && y,
+    k = null == D && b || L || M,
     j = null == T ? null == N : null == P,
     U = !j && (R || k);
   if (!j && !U) return Promise.resolve();

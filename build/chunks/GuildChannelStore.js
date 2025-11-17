@@ -50,8 +50,8 @@ let T = "SELECTABLE",
       name: "Uncategorized"
     })
   },
-  L = k(Chunk981631.kod),
-  x = [],
+  x = k(Chunk981631.kod),
+  L = [],
   M = {};
 
 function k(e) {
@@ -291,7 +291,7 @@ class el extends(r = Chunk442837.ZP.Store) {
     return C
   }
   getChannels(e) {
-    return null != e ? j(e) : L
+    return null != e ? j(e) : x
   }
   getFirstChannelOfType(e, t, n) {
     let r = this.getChannels(e)[n].find(t);
@@ -338,7 +338,7 @@ class el extends(r = Chunk442837.ZP.Store) {
         channel: t
       } = e;
       return t.id
-    })) ? n : x
+    })) ? n : L
   }
   hasSelectableChannel(e, t) {
     return this.getSelectableChannelIds(e).includes(t)

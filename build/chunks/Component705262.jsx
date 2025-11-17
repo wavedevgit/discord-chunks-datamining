@@ -245,7 +245,7 @@ let H = Object.freeze({
           backgroundGradientPresetId: e.id,
           theme: e.theme,
           useSystemTheme: m ? w.KW.OFF : true
-        }, L.fy.SLOW_USER_ACTION), (0, p.XO)(p.wh.CLIENT_THEMES), (0, I.default)()
+        }, x.fy.SLOW_USER_ACTION), (0, p.XO)(p.wh.CLIENT_THEMES), (0, I.default)()
       }, D = () => {
         if (!E) return null;
         let e = R.qt[s.Us.EASTER_EGG];
@@ -341,21 +341,21 @@ let H = Object.freeze({
         isSelected: c && d,
         onSelect: () => p("system")
       }), (0, r.jsx)(N.bD, {
-        theme: x.BR.LIGHT,
-        isSelected: c && !d && l === x.BR.LIGHT,
-        onSelect: () => p(x.BR.LIGHT)
+        theme: L.BR.LIGHT,
+        isSelected: c && !d && l === L.BR.LIGHT,
+        onSelect: () => p(L.BR.LIGHT)
       }), (0, r.jsx)(N.bD, {
-        theme: x.BR.DARK,
-        isSelected: c && !d && l === x.BR.DARK,
-        onSelect: () => p(x.BR.DARK)
+        theme: L.BR.DARK,
+        isSelected: c && !d && l === L.BR.DARK,
+        onSelect: () => p(L.BR.DARK)
       }), (0, r.jsx)(N.bD, {
-        theme: x.BR.DARKER,
-        isSelected: c && !d && l === x.BR.DARKER,
-        onSelect: () => p(x.BR.DARKER)
+        theme: L.BR.DARKER,
+        isSelected: c && !d && l === L.BR.DARKER,
+        onSelect: () => p(L.BR.DARKER)
       }), (0, r.jsx)(N.bD, {
-        theme: x.BR.MIDNIGHT,
-        isSelected: c && !d && l === x.BR.MIDNIGHT,
-        onSelect: () => p(x.BR.MIDNIGHT)
+        theme: L.BR.MIDNIGHT,
+        isSelected: c && !d && l === L.BR.MIDNIGHT,
+        onSelect: () => p(L.BR.MIDNIGHT)
       }), !n && !t && (0, r.jsx)(N.bD, {
         theme: "system",
         isSelected: c && d,

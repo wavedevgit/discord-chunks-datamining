@@ -89,11 +89,11 @@ function w() {
   v = true
 }
 
-function L() {
+function x() {
   y = true
 }
 
-function x(e) {
+function L(e) {
   var t;
   b = {}, e.invites.forEach(e => {
     b[e.code] = _.Z.createFromServer(e)
@@ -135,7 +135,7 @@ let j = new k(Chunk570140.Z, {
   INSTANT_INVITE_REVOKE_SUCCESS: C,
   FRIEND_INVITE_REVOKE_REQUEST: D,
   FRIEND_INVITE_CREATE_REQUEST: w,
-  FRIEND_INVITES_FETCH_REQUEST: L,
-  FRIEND_INVITES_FETCH_RESPONSE: x,
+  FRIEND_INVITES_FETCH_REQUEST: x,
+  FRIEND_INVITES_FETCH_RESPONSE: L,
   INSTANT_INVITE_CLEAR: M
 })

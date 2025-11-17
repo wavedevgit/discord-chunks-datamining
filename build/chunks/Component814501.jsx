@@ -178,12 +178,12 @@ function R(e, t, n, r) {
 }
 
 function P() {
-  let [e, t] = Chunk473749.useState(false), [n, o] = Chunk473749.useState(false), [d, p] = Chunk473749.useState(null), [m, y] = Chunk473749.useState(null), [v, A] = Chunk473749.useState(T.defaultValue), [P, D] = Chunk473749.useState(null), w = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.paymentSources), L = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), x = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.defaultPaymentSourceId);
+  let [e, t] = Chunk473749.useState(false), [n, o] = Chunk473749.useState(false), [d, p] = Chunk473749.useState(null), [m, y] = Chunk473749.useState(null), [v, A] = Chunk473749.useState(T.defaultValue), [P, D] = Chunk473749.useState(null), w = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.paymentSources), x = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), L = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.defaultPaymentSourceId);
   Chunk473749.useEffect(() => {
-    L || (0, Chunk355467.tZ)()
-  }, [L]), Chunk473749.useEffect(() => {
-    null != x && null == P && D(x)
-  }, [x, P]);
+    x || (0, Chunk355467.tZ)()
+  }, [x]), Chunk473749.useEffect(() => {
+    null != L && null == P && D(L)
+  }, [L, P]);
   let M = Chunk473749.useRef(null);
   Chunk473749.useEffect(() => {
     if (null == Chunk793202 || "" === Chunk793202) {
@@ -299,10 +299,10 @@ function P() {
           children: [(0, Chunk54381.jsx)(Chunk481060.PhF, I(O({}, j), {
             options: k,
             placeholder: "Select a payment source...",
-            isDisabled: !L,
+            isDisabled: !x,
             label: "Payment Source",
             clearable: true
-          })), !L && (0, Chunk54381.jsx)(Chunk481060.Text, {
+          })), !x && (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             className: Chunk328310.labelSpacing,

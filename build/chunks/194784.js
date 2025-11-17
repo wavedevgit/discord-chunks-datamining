@@ -62,13 +62,13 @@ function b(e, t, n) {
     P = (0, p.q)(h(r.Z), "@react-aria/datepicker"),
     D = "hour" === t.maxGranularity ? "selectedTimeDescription" : "selectedDateDescription",
     w = "hour" === t.maxGranularity ? "time" : "date",
-    L = t.value ? P.format(D, {
+    x = t.value ? P.format(D, {
       [w]: t.formatValue({
         month: "long"
       })
     }) : "",
-    x = (0, o.P)(L),
-    M = "presentation" === e[g] ? S["aria-describedby"] : [x["aria-describedby"], S["aria-describedby"]].filter(Boolean).join(" ") || true,
+    L = (0, o.P)(x),
+    M = "presentation" === e[g] ? S["aria-describedby"] : [L["aria-describedby"], S["aria-describedby"]].filter(Boolean).join(" ") || true,
     k = e[E],
     j = (0, u.useMemo)(() => k || (0, a.E7)(n), [k, n]),
     U = (0, i.H)(t, n, "presentation" === e[g]);

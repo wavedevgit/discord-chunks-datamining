@@ -43,7 +43,7 @@ var r, Chunk473749 = require("./473749.js"),
   Chunk689079 = require("./689079.js"),
   Chunk981631 = require("./981631.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -59,7 +59,7 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -430,7 +430,7 @@ class ep extends(r = Chunk442837.ZP.Store) {
       c = null == r || (null == l ? true : l.hasBaseAccessPermissions) === true,
       u = false !== t.applicationCommands,
       d = false;
-    n.allowFetch && (u && c && null != r && eN(r) && (O.default.track(L.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
+    n.allowFetch && (u && c && null != r && eN(r) && (O.default.track(x.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
       miss: null == i.result,
       size: Object.keys(eh.indices).length
     }), eR(i) && null != r && (null != r.guild_id ? (0, A.j)({
@@ -478,10 +478,10 @@ class ep extends(r = Chunk442837.ZP.Store) {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "indices", {}), x(this, "applicationIndices", new Map), x(this, "applicationIndicesVersion", 0), x(this, "oldLocale", p.default.locale), x(this, "collator", new Intl.Collator(p.default.locale, W))
+    super(...e), L(this, "indices", {}), L(this, "applicationIndices", new Map), L(this, "applicationIndicesVersion", 0), L(this, "oldLocale", p.default.locale), L(this, "collator", new Intl.Collator(p.default.locale, W))
   }
 }
-x(ep, "displayName", "ApplicationCommandIndexStore");
+L(ep, "displayName", "ApplicationCommandIndexStore");
 let eh = new ep(Chunk570140.Z, {
     LOGOUT: J,
     CONNECTION_OPEN: ee,
@@ -508,7 +508,7 @@ function eg(e, t, n) {
         });
         return
       }
-      n && t && eN(e.channel) && (O.default.track(L.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
+      n && t && eN(e.channel) && (O.default.track(x.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
         miss: null == o.result,
         size: Object.keys(eh.indices).length
       }), eR(o) && (null != e.channel.guild_id ? (0, A.j)({
@@ -528,7 +528,7 @@ function eE(e, t) {
     return null != (t = eh.indices[e]) ? t : H
   });
   return i.useEffect(() => {
-    n && null != e && (t && (O.default.track(L.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
+    n && null != e && (t && (O.default.track(x.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
       miss: null == a.result,
       size: Object.keys(eh.indices).length
     }), eR(a) && (0, A.j)({
@@ -654,7 +654,7 @@ function eA(e) {
     installOnDemand: T = false
   } = e, {
     commandTypes: A
-  } = c, N = null == p ? true : p.toLowerCase(), R = null == N ? true : N.split(" "), P = m === C.D.ONLY_TEXT, D = m !== C.D.DENY ? (0, I.Kh)(A, true, P) : [], L = [], x = {
+  } = c, N = null == p ? true : p.toLowerCase(), R = null == N ? true : N.split(" "), P = m === C.D.ONLY_TEXT, D = m !== C.D.DENY ? (0, I.Kh)(A, true, P) : [], x = [], L = {
     permissionContext: c,
     query: N,
     splitQuery: R,
@@ -697,10 +697,10 @@ function eA(e) {
         }
     } else null != r ? (t = r.descriptor, n = Object.values(r.commands)) : null != i ? (t = i.descriptor, n = Object.values(i.commands)) : null != a && (t = a.descriptor, n = Object.values(a.commands));
     o()(null != t, "Failed to select application descriptor"), o()(null != n, "Failed to select list of application commands");
-    let c = eC(t, n, s, l, x);
-    null != c && L.push(c)
+    let c = eC(t, n, s, l, L);
+    null != c && x.push(c)
   }
-  if (v.applications.useFrecency && h.DZ.loadIfNecessary(), L.sort((e, t) => {
+  if (v.applications.useFrecency && h.DZ.loadIfNecessary(), x.sort((e, t) => {
       if (v.applications.useScore && O === C.p.APPLICATION_ONLY) {
         var n, r, i, a;
         let o = null != (i = null == (n = e.data[0]) ? true : n.score) ? i : Number.MAX_VALUE,
@@ -714,10 +714,10 @@ function eA(e) {
       }
       return eU(e.section.name, t.section.name)
     }), D.length > 0 || true === y) {
-    let e = eC(I.Tm[w.bi.BUILT_IN], D, true, true, x);
-    null != e && L.push(e)
+    let e = eC(I.Tm[w.bi.BUILT_IN], D, true, true, L);
+    null != e && x.push(e)
   }
-  let Z = L.flatMap(e => e.data.map(t => j(M({}, t), {
+  let Z = x.flatMap(e => e.data.map(t => j(M({}, t), {
     section: e.section
   })));
   if (O === C.p.COMMAND_ONLY || O === C.p.COMMAND_OR_APPLICATION) {
@@ -745,8 +745,8 @@ function eA(e) {
   }
   return {
     commands: Z,
-    descriptors: L.map(e => e.section),
-    sectionedCommands: L,
+    descriptors: x.map(e => e.section),
+    sectionedCommands: x,
     loading: (null == u ? true : u.fetchState.fetching) === true || (null == f ? true : f.fetchState.fetching) === true || null != E && (null == (r = _.get(E)) ? true : r.fetchState.fetching) === true
   }
 }
@@ -784,7 +784,7 @@ function eC(e, t, n, r, i) {
 
 function eN(e) {
   var t;
-  return (null == e ? true : e.guild_id) != null || e.type === L.d4z.DM && (null == (t = y.default.getUser(e.getRecipientId())) ? true : t.bot) === true
+  return (null == e ? true : e.guild_id) != null || e.type === x.d4z.DM && (null == (t = y.default.getUser(e.getRecipientId())) ? true : t.bot) === true
 }
 
 function eR(e) {
@@ -813,24 +813,24 @@ function ew(e, t) {
     description: null != (i = null != (r = e.description_default) ? r : e.description) ? i : "",
     dm_permission: e.dm_permission,
     name: null != (a = e.name_default) ? a : e.name,
-    options: null != (o = null == (n = e.options) ? true : n.map(eL)) ? o : [],
+    options: null != (o = null == (n = e.options) ? true : n.map(ex)) ? o : [],
     permissions: null != e.permissions ? eM(e.permissions, t) : true
   });
   return e.description !== e.description_default && (s.description_localized = e.description), e.name !== e.name_default && (s.name_localized = e.name), s
 }
 
-function eL(e) {
+function ex(e) {
   var t, n, r, i;
   let a = j(M({}, e), {
-    choices: null == (t = e.choices) ? true : t.map(ex),
+    choices: null == (t = e.choices) ? true : t.map(eL),
     description: null != (r = e.description_default) ? r : e.description,
     name: null != (i = e.name_default) ? i : e.name,
-    options: null == (n = e.options) ? true : n.map(eL)
+    options: null == (n = e.options) ? true : n.map(ex)
   });
   return e.description !== e.description_default && (a.description_localized = e.description), e.name !== e.name_default && (a.name_localized = e.name), a
 }
 
-function ex(e) {
+function eL(e) {
   var t;
   let n = j(M({}, e), {
     name: null != (t = e.name_default) ? t : e.name

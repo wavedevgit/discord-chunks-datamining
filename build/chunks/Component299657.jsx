@@ -40,7 +40,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk166893 = require("./166893.js");
 let j = function(e) {
   let {
-    entrypoint: t = x.EZ.UserSettings
+    entrypoint: t = L.EZ.UserSettings
   } = e;
   (0, y.z)(b.X);
   let n = (0, m.Q)(),
@@ -54,10 +54,10 @@ let j = function(e) {
     Z = null == B ? true : B.id,
     F = (0, D.N)(),
     V = (0, P.N)(),
-    H = (0, g.V)(x.nS),
+    H = (0, g.V)(L.nS),
     [Y, W] = i.useState(true),
     K = i.useRef(0),
-    z = (0, A.M5)(B, x.PremiumTypes.TIER_2),
+    z = (0, A.M5)(B, L.PremiumTypes.TIER_2),
     q = (0, R.Z)({
       location: "PremiumMarketingPage"
     }),
@@ -78,10 +78,10 @@ let j = function(e) {
     n && (null != F || null != V) && (0, N.ab)(F, V)
   }, [n, F, V]);
   let Q = (0, s.e7)([O.Z], () => O.Z.enabled),
-    J = t === x.EZ.ApplicationStoreHome,
+    J = t === L.EZ.ApplicationStoreHome,
     $ = Q ? (0, r.jsx)(f.Z, {}) : n ? (0, r.jsx)(E.c8, {}) : J && z ? (0, r.jsx)(h.Gt, {
       value: j,
-      children: (0, r.jsx)(L.Z, {
+      children: (0, r.jsx)(x.Z, {
         userId: Z
       })
     }) : U && H && G ? null : (0, r.jsx)("div", {

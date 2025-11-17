@@ -90,20 +90,20 @@ function G(e) {
     O = (0, g.Pz)(n.id, y),
     v = null != a,
     I = (0, m.Z)(n, v);
-  v && c ? t = L.intl.format(L.t.pkxVx6, {
+  v && c ? t = x.intl.format(x.t.pkxVx6, {
     endDate: I,
     onClickDetails: E
-  }) : v && !c ? t = L.intl.format(L.t["4sFeob"], {
+  }) : v && !c ? t = x.intl.format(x.t["4sFeob"], {
     endDate: I,
     onClickDetails: E
-  }) : !v && c ? t = L.intl.format(L.t["RBnE+l"], {
+  }) : !v && c ? t = x.intl.format(x.t["RBnE+l"], {
     endDate: I,
     onClickDetails: E
-  }) : v || c || (t = L.intl.format(L.t["57+7Qn"], {
+  }) : v || c || (t = x.intl.format(x.t["57+7Qn"], {
     endDate: I,
     onClickDetails: E
   }));
-  let T = v ? L.intl.string(L.t["2cHUti"]) : L.intl.string(L.t.O13yhz),
+  let T = v ? x.intl.string(x.t["2cHUti"]) : x.intl.string(x.t.O13yhz),
     S = i.useCallback(() => h(false), []),
     {
       outboundTitle: A,
@@ -111,17 +111,17 @@ function G(e) {
     } = n;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: o()(x.skuCard, x.promotionCard),
+      className: o()(L.skuCard, L.promotionCard),
       children: [(0, r.jsxs)("div", {
-        className: x.mainPromotionCardContainer,
+        className: L.mainPromotionCardContainer,
         children: [(0, r.jsxs)("div", {
-          className: x.promotionCardLeftContainer,
+          className: L.promotionCardLeftContainer,
           children: [(0, r.jsx)("div", {
-            className: x.promotionIcon,
+            className: L.promotionIcon,
             children: (0, r.jsx)("img", {
               alt: "",
               src: O,
-              className: x.promotionIconImage
+              className: L.promotionIconImage
             })
           }), (0, r.jsxs)("div", {
             children: [(0, r.jsx)(u.Heading, {
@@ -130,7 +130,7 @@ function G(e) {
             }), (0, r.jsx)(u.Text, {
               variant: "text-sm/normal",
               color: "text-default",
-              className: x.__invalid_promotionText,
+              className: L.__invalid_promotionText,
               children: t
             })]
           })]
@@ -141,7 +141,7 @@ function G(e) {
           size: "sm"
         })]
       }), c && (0, r.jsx)(u.Text, {
-        className: x.promotionLegalese,
+        className: L.promotionLegalese,
         variant: "text-xs/normal",
         color: "header-secondary",
         children: p.Z.parse(C, false, {
@@ -317,7 +317,7 @@ let B = function() {
             giftStyle: i
           } = (0, S.Z0)(e);
           return (0, r.jsx)(N.Z, {
-            className: x.skuCard,
+            className: L.skuCard,
             skuId: t,
             subscriptionPlanId: n,
             entitlements: s[e],

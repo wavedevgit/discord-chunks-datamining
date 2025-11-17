@@ -2,7 +2,7 @@
 /** chunk id: 488977, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./997841.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -65,26 +65,26 @@ function w(e, t) {
   return n
 }
 
-function L(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function x(e) {
+function L(e) {
   var t;
   let {
     application: a,
     context: P,
     className: w,
-    sectionName: x
+    sectionName: L
   } = e, M = i.useRef(null), k = (0, s.e7)([I.Z], () => I.Z.entrypoint()), j = (0, T.L1)(a), U = (0, _.Eb)(j), G = (0, d.R)(a.id), B = (0, s.e7)([g.Z], () => {
     var e;
     return null != (e = g.Z.getGuildId()) ? e : true
   }, []), Z = {
     location: u.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
     application_id: a.id,
-    section_name: x,
+    section_name: L,
     source: I.Z.lastShownEntrypoint()
   }, F = E.default.getCurrentUser(), V = (0, p.Z)({
     id: a.id,
@@ -146,7 +146,7 @@ function x(e) {
               id: "add-app",
               label: N.intl.string(N.t.NgXl3C),
               action: () => {
-                null == j.customInstallUrl && (0, c.yw)(C.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, Z), (0, v.L)(L(D({}, j), {
+                null == j.customInstallUrl && (0, c.yw)(C.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, Z), (0, v.L)(x(D({}, j), {
                   oauth2Callback: e => {
                     let {
                       location: t
@@ -177,7 +177,7 @@ function x(e) {
       },
       align: "right",
       position: "bottom",
-      children: e => (0, r.jsx)(l.P3F, L(D({
+      children: e => (0, r.jsx)(l.P3F, x(D({
         innerRef: M
       }, e), {
         onClick: e.onClick,

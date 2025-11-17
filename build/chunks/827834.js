@@ -108,7 +108,7 @@ exports.default = function() {
         value: "selectordinal",
         description: '"selectordinal"'
       },
-      L = function(e) {
+      x = function(e) {
         return {
           type: e.type,
           ordinal: true,
@@ -116,7 +116,7 @@ exports.default = function() {
           options: e.options
         }
       },
-      x = "select",
+      L = "select",
       M = {
         type: "literal",
         value: "select",
@@ -322,16 +322,16 @@ exports.default = function() {
 
     function ew() {
       var e, t, n;
-      for (e = eO, t = [], n = eL(); n !== i;) t.push(n), n = eL();
+      for (e = eO, t = [], n = ex(); n !== i;) t.push(n), n = ex();
       return t !== i && (ev = e, t = s(t)), e = t
     }
 
-    function eL() {
+    function ex() {
       var e;
       return (e = eM()) === i && (e = ej()), e
     }
 
-    function ex() {
+    function eL() {
       var e, n, r, a, o, s;
       if (e = eO, n = [], r = eO, (a = ez()) !== i && (o = e$()) !== i && (s = ez()) !== i ? r = a = [a, o, s] : (eO = r, r = l), r !== i)
         for (; r !== i;) n.push(r), r = eO, (a = ez()) !== i && (o = e$()) !== i && (s = ez()) !== i ? r = a = [a, o, s] : (eO = r, r = l);
@@ -341,7 +341,7 @@ exports.default = function() {
 
     function eM() {
       var e, t;
-      return e = eO, (t = ex()) !== i && (ev = e, t = u(t)), e = t
+      return e = eO, (t = eL()) !== i && (ev = e, t = u(t)), e = t
     }
 
     function ek() {
@@ -377,12 +377,12 @@ exports.default = function() {
 
     function eZ() {
       var e, n, r, a;
-      return e = eO, t.substr(eO, 13) === D ? (n = D, eO += 13) : (n = i, 0 === eC && eR(w)), n !== i && ez() !== i ? (44 === t.charCodeAt(eO) ? (r = m, eO++) : (r = i, 0 === eC && eR(g)), r !== i && ez() !== i && (a = eW()) !== i ? (ev = e, e = n = L(a)) : (eO = e, e = l)) : (eO = e, e = l), e
+      return e = eO, t.substr(eO, 13) === D ? (n = D, eO += 13) : (n = i, 0 === eC && eR(w)), n !== i && ez() !== i ? (44 === t.charCodeAt(eO) ? (r = m, eO++) : (r = i, 0 === eC && eR(g)), r !== i && ez() !== i && (a = eW()) !== i ? (ev = e, e = n = x(a)) : (eO = e, e = l)) : (eO = e, e = l), e
     }
 
     function eF() {
       var e, n, r, a, o;
-      if (e = eO, t.substr(eO, 6) === x ? (n = x, eO += 6) : (n = i, 0 === eC && eR(M)), n !== i)
+      if (e = eO, t.substr(eO, 6) === L ? (n = L, eO += 6) : (n = i, 0 === eC && eR(M)), n !== i)
         if (ez() !== i)
           if (44 === t.charCodeAt(eO) ? (r = m, eO++) : (r = i, 0 === eC && eR(g)), r !== i)
             if (ez() !== i) {

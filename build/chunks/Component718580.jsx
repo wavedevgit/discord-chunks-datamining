@@ -126,14 +126,14 @@ function N(e) {
     {
       reducedMotion: w
     } = i.useContext(d.Sfi),
-    L = i.useContext(h.Z),
-    x = C[R].impressionName,
+    x = i.useContext(h.Z),
+    L = C[R].impressionName,
     M = O(b({}, C[R].impressionProperties), {
       location_stack: N
     });
-  L({
+  x({
     type: l.ImpressionTypes.MODAL,
-    name: x,
+    name: L,
     properties: M,
     _stackContext: {
       isSlide: true

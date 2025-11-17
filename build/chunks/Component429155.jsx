@@ -37,24 +37,24 @@ let f = 20,
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: false
-    }), [n]), L = (0, u.Qs)({
+    }), [n]), x = (0, u.Qs)({
       activeCategoryIndex: D,
       isScrolling: N,
       listRef: R,
       onActiveCategoryIndexChange: a.setActiveCategoryIndex,
       scrollOffset: f,
       searchQuery: P
-    }), x = i.useCallback(e => {
-      L(e), p({
+    }), L = i.useCallback(e => {
+      x(e), p({
         listRef: R,
         searchQuery: P,
         nitroLockedSectionStates: w,
         scrollTop: e
       }), null == C || C(e)
-    }, [L, P, w, C]);
+    }, [x, P, w, C]);
     return i.useEffect(() => {
-      null != R.current && x(0)
-    }, [x, R]), (0, u.Xs)({
+      null != R.current && L(0)
+    }, [L, R]), (0, u.Xs)({
       searchQuery: P,
       activeCategoryIndex: D,
       listRef: R
@@ -99,7 +99,7 @@ let f = 20,
       children: [P.length > 0 && !c && null != y ? y() : (0, r.jsx)(o.Z, {
         role: "none presentation",
         listPadding: _,
-        onScroll: x,
+        onScroll: L,
         renderRow: h,
         renderSection: m,
         renderSectionHeader: g,

@@ -94,12 +94,12 @@ let y = function(e) {
     iconColor: P = "currentColor"
   } = e, D = E(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "color", "iconColor"]);
   let w = (0, o.e7)([c.Z], () => c.Z.isFocused()),
-    L = (0, d.Z)({
+    x = (0, d.Z)({
       subscriptionTier: t,
       buttonTextOverride: null == m ? true : m.textOverride,
       defaultTextOverride: null == m ? true : m.subscribeText
     }),
-    x = {
+    L = {
       onClick: n,
       subscriptionTier: t,
       postSuccessGuild: y,
@@ -111,14 +111,14 @@ let y = function(e) {
 
   function M(e) {
     let n = null != R ? R : t === f.Si.TIER_1 ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN;
-    return (0, r.jsx)(u.Z, g(h({}, x), {
+    return (0, r.jsx)(u.Z, g(h({}, L), {
       children: o => {
         let {
           onClick: c
         } = o;
         return (0, r.jsxs)(l.gtL, g(h({
           "data-migration-pending": true,
-          disabled: L.disabled,
+          disabled: x.disabled,
           onClick: c,
           innerClassName: _.premiumSubscribeButton,
           color: n,
@@ -137,15 +137,15 @@ let y = function(e) {
             className: a()(_.premiumIcon, b)
           }), (0, r.jsx)("span", {
             className: a()(_.buttonText, null == m ? true : m.textClassName),
-            children: L.buttonText
+            children: x.buttonText
           })]
         }))
       }
     }))
   }
-  return null != L.buttonTooltipText ? (0, r.jsx)(l.aML, {
+  return null != x.buttonTooltipText ? (0, r.jsx)(l.aML, {
     "data-migration-pending": true,
-    text: L.buttonTooltipText,
+    text: x.buttonTooltipText,
     children: M
   }) : M()
 }

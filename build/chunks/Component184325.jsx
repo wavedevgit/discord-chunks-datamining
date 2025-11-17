@@ -85,7 +85,7 @@ let Z = e => {
   } = e;
   return t.id === y.l.ORB_PROFILE_BADGE ? (0, r.jsx)(O.Z, {
     showSubtext: !i && !t.isPreviewMode
-  }) : true !== n && t.id !== x.a ? (0, r.jsx)(h.Z, {
+  }) : true !== n && t.id !== L.a ? (0, r.jsx)(h.Z, {
     profileBadge: t,
     tenureBadge: n
   }) : t.description
@@ -106,7 +106,7 @@ function F(e) {
   } = (0, u.ZP)(c.Z.BADGE), {
     context: Y,
     trackUserProfileAction: W
-  } = (0, A.KZ)(), K = v.default.getCurrentUser(), z = (0, T.yd)(null == K ? true : K.premiumType, L.PremiumTypes.TIER_2), q = (0, R.Of)(null != (t = null == K ? true : K.id) ? t : null), X = (0, N.Z)(q).some(e => e.id === y.l.ORB_PROFILE_BADGE), Q = (0, _.c)(K, "UserProfileBadgeList"), J = (0, f.B)("UserProfileBadgeList");
+  } = (0, A.KZ)(), K = v.default.getCurrentUser(), z = (0, T.yd)(null == K ? true : K.premiumType, x.PremiumTypes.TIER_2), q = (0, R.Of)(null != (t = null == K ? true : K.id) ? t : null), X = (0, N.Z)(q).some(e => e.id === y.l.ORB_PROFILE_BADGE), Q = (0, _.c)(K, "UserProfileBadgeList"), J = (0, f.B)("UserProfileBadgeList");
   return (0, r.jsx)("div", {
     className: o()(k.container, a),
     "aria-label": M.intl.string(M.t.VWV0y5),
@@ -115,7 +115,7 @@ function F(e) {
       var n;
       let i = e.id === y.l.ORB_PROFILE_BADGE,
         a = (0, S.fv)(e.id),
-        u = null != a || e.id === x.a,
+        u = null != a || e.id === L.a,
         f = (null == O ? true : O.userId) === (null == K ? true : K.id),
         v = t => {
           if (W({
@@ -167,9 +167,9 @@ function F(e) {
             analyticsLocations: H
           }, Y))
         },
-        A = true !== a && e.id !== x.a,
+        A = true !== a && e.id !== L.a,
         R = A && J,
-        L = f && Q && A,
+        x = f && Q && A,
         M = (0, r.jsx)("img", {
           alt: " ",
           "aria-hidden": true,
@@ -203,7 +203,7 @@ function F(e) {
           children: n
         }, "".concat(e.id, "-").concat(t))
       }
-      if (L) {
+      if (x) {
         let n = (0, r.jsx)(s.Anchor, B(U({}, q), {
           ref: V,
           children: M
@@ -220,7 +220,7 @@ function F(e) {
         })),
         ee = Z({
           badge: e,
-          tieredTenureBadge: u && e.id !== x.a ? a : true,
+          tieredTenureBadge: u && e.id !== L.a ? a : true,
           currentUserOwnsOrbBadge: X
         });
       return (0, r.jsx)(s.jSM, {

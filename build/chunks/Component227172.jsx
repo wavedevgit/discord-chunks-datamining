@@ -69,7 +69,7 @@ let j = {
       appName: W,
       activity: K,
       embeddedActivity: z
-    } = (0, x.n)(y), {
+    } = (0, L.n)(y), {
       primaryColor: q,
       secondaryColor: X
     } = (0, R.Z)(null == V ? true : V.src), Q = (0, o.e7)([E.default], () => E.default.locale), {
@@ -109,7 +109,7 @@ let j = {
       }),
       e_ = null == $ ? (0, r.jsx)(w.wG, {
         channel: b,
-        headerIcons: null == ea ? null : (0, r.jsx)(L.Z, {
+        headerIcons: null == ea ? null : (0, r.jsx)(x.Z, {
           onClick: es,
           Icon: ea,
           "aria-label": k.intl.string(k.t.YR4cHH)

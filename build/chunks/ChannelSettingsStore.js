@@ -63,9 +63,9 @@ let C = Chunk981631.QZA.CLOSED,
   P = false,
   D = false,
   w = null,
-  L = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
+  x = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
 
-function x(e) {
+function L(e) {
   if (null == a || a.id !== e) returnfalse;
   if (a === o) {
     let t = O.Z.getChannel(e);
@@ -127,7 +127,7 @@ let Z = d().debounce(() => {
   if (null == o || null == a) returnfalse;
   let e = o.toJS(),
     t = a.toJS();
-  L.every(n => e[n] === t[n]) && o !== a && (o = a, $.emitChange())
+  x.every(n => e[n] === t[n]) && o !== a && (o = a, $.emitChange())
 }, 500);
 
 function F(e) {
@@ -199,7 +199,7 @@ function W(e) {
 }
 
 function K(e) {
-  return !!x(e) && null != o && (null != l && null == o.permissionOverwrites[l] && (l = o.getGuildId()), true)
+  return !!L(e) && null != o && (null != l && null == o.permissionOverwrites[l] && (l = o.getGuildId()), true)
 }
 
 function z(e) {

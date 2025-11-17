@@ -10,8 +10,8 @@ require.d(exports, {
   g: () => k,
   iV: () => M,
   n9: () => U,
-  pR: () => x,
-  rn: () => L,
+  pR: () => L,
+  rn: () => x,
   tK: () => D,
   xc: () => G
 });
@@ -89,7 +89,7 @@ function w(e, t) {
   return i()(null != n, "Cannot join a null voice channel"), !b.Z.isInChannel(t) && (0, y.rY)(n, b.Z, g.Z)
 }
 
-function L(e, t) {
+function x(e, t) {
   let {
     defaultWatchMultipleStreams: n
   } = (0, c.$)({
@@ -115,7 +115,7 @@ function L(e, t) {
   }), o || null != t && t.noFocus || T.Z.selectParticipant(e.channelId, a)
 }
 
-function x(e, t) {
+function L(e, t) {
   s.Z.dispatch({
     type: "STREAM_UPDATE_SELF_HIDDEN",
     channelId: e,
@@ -129,7 +129,7 @@ function M(e, t) {
     channelId: r
   } = e;
   if (null != n && w(n, r)) return;
-  L(e, t);
+  x(e, t);
   let i = f.Z.getWindowOpen(S.KJ3.CHANNEL_CALL_POPOUT),
     a = E.Z.getVoiceChannelId();
   i && a === r || (0, d.Z)(e)

@@ -3,8 +3,9 @@
 "use strict";
 require.d(exports, {
   M_: () => l,
-  g_: () => u,
+  g_: () => d,
   kU: () => c,
+  q$: () => u,
   rY: () => s
 });
 var Chunk818083 = require("./818083.js"),
@@ -101,6 +102,24 @@ function c(e) {
 }
 
 function u(e) {
+  let {
+    location: t,
+    autoTrackExposure: n = true
+  } = e, r = (0, i.ro)({
+    location: t,
+    autoTrackExposure: n
+  }), {
+    isHasFilterElevated: a
+  } = o.getCurrentConfig({
+    location: t
+  }, {
+    autoTrackExposure: n,
+    disable: r
+  });
+  return a
+}
+
+function d(e) {
   let {
     location: t,
     autoTrackExposure: n = true

@@ -93,8 +93,8 @@ function I(e) {
   });
   let D = I >= v.length - 1,
     w = D ? s.r6K.RED : s.r6K.GREEN,
-    L = S ? w : s.r6K.PRIMARY,
-    x = () => {
+    x = S ? w : s.r6K.PRIMARY,
+    L = () => {
       var e;
       if (!S) return t;
       let n = (0, a.clamp)(I - 1, 0, v.length - 1),
@@ -112,11 +112,11 @@ function I(e) {
     };
   return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
-    text: x(),
+    text: L(),
     delay: h,
     "aria-label": _,
     dataMeticulousIgnore: E,
-    color: L,
+    color: x,
     forceOpen: C,
     onAnimationRest: M,
     children: e => {

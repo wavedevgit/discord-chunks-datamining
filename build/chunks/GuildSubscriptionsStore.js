@@ -96,14 +96,14 @@ function w() {
   S.reset()
 }
 
-function L(e) {
+function x(e) {
   let {
     guild: t
   } = e;
   t.id === v.Z.getGuildId() && V()
 }
 
-function x(e) {
+function L(e) {
   let {
     guild: t
   } = e;
@@ -250,8 +250,8 @@ let q = new z(Chunk570140.Z, {
   LOGOUT: w,
   VOICE_CHANNEL_SELECT: F,
   CHANNEL_SELECT: F,
-  GUILD_CREATE: L,
-  GUILD_DELETE: x,
+  GUILD_CREATE: x,
+  GUILD_DELETE: L,
   GUILD_SUBSCRIPTIONS_MEMBERS_ADD: M,
   GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE: k,
   GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES: j,

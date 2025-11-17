@@ -114,10 +114,10 @@ function S(e) {
     P = R && (null == N ? true : N.disabled),
     D = R ? null == N ? true : N.label : n,
     w = null != g,
-    L = null != D && D.length > 0,
-    x = i === d.ZJ.LINK && null != b && b.length > 0,
+    x = null != D && D.length > 0,
+    L = i === d.ZJ.LINK && null != b && b.length > 0,
     M = A === m.gH.LOADING || R && null == N;
-  return t = x ? () => {
+  return t = L ? () => {
     (0, p.q)({
       href: null != b ? b : "",
       shouldConfirm: true
@@ -129,11 +129,11 @@ function S(e) {
     disabled: _ || A === m.gH.DISABLED || C || P,
     onClick: t,
     onContextMenu: e => {
-      x && (0, c.vq)(e, e => (0, r.jsx)(T, v(y({}, e), {
+      L && (0, c.vq)(e, e => (0, r.jsx)(T, v(y({}, e), {
         url: b
       })))
     },
-    role: x ? "link" : "button",
+    role: L ? "link" : "button",
     children: [(0, r.jsxs)("div", {
       className: a()(E.content, {
         [E.hidden]: M,
@@ -148,16 +148,16 @@ function S(e) {
         })
       }) : null, w ? (0, r.jsx)(u.Z, {
         className: a()({
-          [E.textEmoji]: L
+          [E.textEmoji]: x
         }),
         src: g.src,
         emojiId: g.id,
         emojiName: g.name,
         animated: g.animated
-      }) : null, L ? (0, r.jsx)("div", {
+      }) : null, x ? (0, r.jsx)("div", {
         className: E.label,
         children: D
-      }) : null, x ? (0, r.jsx)(l.rgF, {
+      }) : null, L ? (0, r.jsx)(l.rgF, {
         size: "xs",
         color: "currentColor",
         className: E.launchIcon

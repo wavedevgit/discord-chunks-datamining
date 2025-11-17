@@ -199,7 +199,7 @@ function eb(e) {
   } = e, r = (0, O.hO)(t, n, {
     requireCurrentGuild: false
   }), o = (0, I.C)(r), s = (0, f.e7)([U.Z], () => U.Z.getGuild(t)), l = (null == r ? true : r.role_id) != null && (null == r ? true : r.attachments_count) === 0 ? ee.intl.string(ee.t.H11qcT) : o, c = a.useCallback(async () => {
-    (null == s ? true : s.features.has(Q.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, A.Z)(Q.Z5c.GUILD_PRODUCT(t, n)) : await (0, A.Z)(Q.Z5c.CHANNEL(t)), (0, x.default)()
+    (null == s ? true : s.features.has(Q.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, A.Z)(Q.Z5c.GUILD_PRODUCT(t, n)) : await (0, A.Z)(Q.Z5c.CHANNEL(t)), (0, L.default)()
   }, [s, t, n]);
   return (0, i.jsxs)(i.Fragment, {
     children: [null != l && (0, i.jsx)(eE, {

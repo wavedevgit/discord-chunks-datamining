@@ -334,14 +334,14 @@ function ew(e) {
   eR(t)
 }
 
-function eL(e) {
+function ex(e) {
   let {
     streamKey: t
   } = e;
   ei(t)
 }
 
-function ex(e) {
+function eL(e) {
   let {
     user_status: t
   } = e, n = (0, G.T)({
@@ -608,9 +608,9 @@ let eq = new ez(Chunk570140.Z, {
     QUESTS_DISMISS_CONTENT_BEGIN: eP,
     QUESTS_DISMISS_CONTENT_SUCCESS: eD,
     QUESTS_DISMISS_CONTENT_FAILURE: ew,
-    QUESTS_USER_STATUS_UPDATE: ex,
+    QUESTS_USER_STATUS_UPDATE: eL,
     STREAM_CLOSE: eE,
-    QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: eL,
+    QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: ex,
     QUESTS_PREVIEW_UPDATE_SUCCESS: eM,
     QUESTS_DELIVERY_OVERRIDE: ek,
     QUESTS_SELECT_TASK_PLATFORM: ej,

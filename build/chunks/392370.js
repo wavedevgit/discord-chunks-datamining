@@ -147,7 +147,7 @@ function w(e, t) {
   return (0, f.un)(n, r)
 }
 
-function L(e) {
+function x(e) {
   let t = (0, _.k)("channel" === e.type ? e.channel : true, [c.yU.CHAT]),
     n = {};
   return r => {
@@ -188,7 +188,7 @@ function L(e) {
   }
 }
 
-function x(e) {
+function L(e) {
   return [M(e), k(e), j(e), U(e), G(e)]
 }
 
@@ -290,8 +290,8 @@ function V(e) {
     guildId: "channel" === t.type ? t.channel.guild_id : null
   }), m = r.useMemo(() => s ? (0, E.N)(d, {
     limit: i,
-    filterPredicates: [L(t)],
-    bucketPredicates: x(n),
+    filterPredicates: [x(t)],
+    bucketPredicates: L(n),
     sortComparers: B({
       channel: "channel" === t.type ? t.channel : true
     })

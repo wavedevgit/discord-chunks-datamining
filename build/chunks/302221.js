@@ -13,7 +13,7 @@ require.d(exports, {
   rj: () => p,
   vq: () => g,
   wh: () => D,
-  xj: () => x
+  xj: () => L
 }), require("./415506.js"), require("./388685.js"), require("./35282.js"), require("./539854.js"), require("./642613.js");
 var Chunk688619 = require("./688619.js"),
   i = require.n(Chunk688619);
@@ -304,16 +304,16 @@ function w(e) {
         v: 0
       }
     }
-  }).sort(L)[0].hex
+  }).sort(x)[0].hex
 }
 
-function L(e, t) {
+function x(e, t) {
   let n = e.hsv,
     r = t.hsv;
   return r.s + r.v - (n.s + n.v)
 }
 
-function x(e) {
+function L(e) {
   var t;
   let {
     colorRGB: n,

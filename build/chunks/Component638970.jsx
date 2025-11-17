@@ -70,7 +70,7 @@ function P(e, t) {
 let D = 250,
   w = 24;
 
-function L(e, t) {
+function x(e, t) {
   switch (t.type) {
     case "MEASUREMENT_COMPLETE":
       return P(N({}, e), {
@@ -91,7 +91,7 @@ function L(e, t) {
       return (0, h.vE)(t)
   }
 }
-let x = {
+let L = {
   animationPhase: "awaitingInput",
   height: "auto"
 };
@@ -123,7 +123,7 @@ function M(e) {
     voiceActivityStatusEnabled: F
   } = (0, u.U)({
     location: "UserProfileStackedActivity"
-  }), V = F && null == j && null == G && null != U, H = (0, b.yi)(), Y = (null == H ? true : H.interactionSource) === I.n_.ACTIVITY, W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), q = i.useRef(null), [X, Q] = i.useReducer(L, x), {
+  }), V = F && null == j && null == G && null != U, H = (0, b.yi)(), Y = (null == H ? true : H.interactionSource) === I.n_.ACTIVITY, W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), q = i.useRef(null), [X, Q] = i.useReducer(x, L), {
     height: J,
     animationPhase: $
   } = X, ee = "awaitingInput" !== $, et = "animating" === $ || "done" === $, en = [], er = {

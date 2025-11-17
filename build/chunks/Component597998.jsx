@@ -73,7 +73,7 @@ function D(e, t) {
 
 function w(e, t) {
   if (null == e) return {};
-  var n, r, i = L(e, t);
+  var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -81,14 +81,14 @@ function w(e, t) {
   return i
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let x = 16,
+let L = 16,
   M = e => {
     let {
       hangStatusActivity: t,
@@ -111,7 +111,7 @@ let x = 16,
       className: C.icons,
       children: (0, r.jsx)(E.Z, {
         userId: s,
-        size: x,
+        size: L,
         hangStatusActivity: t,
         className: o()(C.icon, n)
       })
@@ -149,8 +149,8 @@ function j(e) {
     otherClientSessionType: P,
     voicePlatform: D,
     application: w,
-    guildId: L,
-    channelId: x,
+    guildId: x,
+    channelId: L,
     user: k,
     disconnected: j,
     hangStatusActivity: U,
@@ -236,8 +236,8 @@ function j(e) {
       children: Q ? (0, r.jsx)(G, {
         application: w,
         iconClassName: N,
-        guildId: L,
-        channelId: x,
+        guildId: x,
+        channelId: L,
         userId: k.id
       }, "".concat(k.id, "-game")) : (0, r.jsx)(M, {
         userId: k.id,
@@ -270,8 +270,8 @@ let U = function(e) {
     priority: S,
     speaking: N,
     latched: P,
-    collapsed: L,
-    mute: x,
+    collapsed: x,
+    mute: L,
     serverMute: M,
     guildId: k,
     nick: U,
@@ -300,11 +300,11 @@ let U = function(e) {
   };
 
   function $() {
-    return S && !L ? (0, r.jsx)(l.u, {
+    return S && !x ? (0, r.jsx)(l.u, {
       text: A.intl.string(A.t.BVK71i),
       children: (0, r.jsx)("div", {
         className: o()(C.iconPriortySpeaker, {
-          [C.iconPriortySpeakerSpeaking]: !x && !M && N
+          [C.iconPriortySpeakerSpeaking]: !L && !M && N
         })
       })
     }) : null
@@ -327,7 +327,7 @@ let U = function(e) {
   function et() {
     let e = (0, r.jsxs)("div", {
         className: o()(i, C.username, K, {
-          [C.usernameSpeaking]: !x && !M && N
+          [C.usernameSpeaking]: !L && !M && N
         }),
         children: [null != U ? U : v.ZP.getName(Y), G ? (0, r.jsxs)("span", {
           className: C.guestSuffix,
@@ -345,7 +345,7 @@ let U = function(e) {
           source: d ? I.jXE.OVERLAY : I.Sbl.VOICE_PANEL
         }
       };
-    return !L || d ? (0, r.jsx)(g.Z, D(R({}, t), {
+    return !x || d ? (0, r.jsx)(g.Z, D(R({}, t), {
       children: e
     })) : null
   }

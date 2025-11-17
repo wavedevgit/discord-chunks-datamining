@@ -85,8 +85,8 @@ function P(e, t) {
 }
 let D = 4,
   w = 268,
-  L = 2,
-  x = e => {
+  x = 2,
+  L = e => {
     if (null == e) return 0;
     let {
       width: t
@@ -113,12 +113,12 @@ function M(e) {
     V.current = 0
   }, [f]), i.useLayoutEffect(() => {
     if (G) return;
-    let e = x(Z.current),
-      t = x(F.current),
+    let e = L(Z.current),
+      t = L(F.current),
       n = [],
       r = w - e - t;
-    for (let e = 0; e < L; e++) {
-      let t = e === L - 1 ? r : w;
+    for (let e = 0; e < x; e++) {
+      let t = e === x - 1 ? r : w;
       for (let e = 0, r = n.length; r < f.length; r++) {
         let i = f[r],
           a = C.current[i.id];

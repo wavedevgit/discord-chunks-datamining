@@ -92,8 +92,8 @@ var P = function(e) {
 }({});
 let D = ["TOP_LEFT", "TOP_RIGHT"],
   w = (0, Chunk468194.Mg)(Chunk477690.Z.USER_PREMIUM_GUILD_SUBSCRIPTION_EASTER_EGG_SIZE),
-  L = 11,
-  x = 125,
+  x = 11,
+  L = 125,
   M = {
     leafPosition: {
       x: 85,
@@ -110,8 +110,8 @@ let D = ["TOP_LEFT", "TOP_RIGHT"],
   F = Object.freeze({
     TOP_LEFT: {
       getConfettiPosition: e => ({
-        x: e - L,
-        y: e - x
+        x: e - x,
+        y: e - L
       }),
       confettiVelocityDirection: {
         x: 1,
@@ -125,8 +125,8 @@ let D = ["TOP_LEFT", "TOP_RIGHT"],
     },
     TOP_RIGHT: {
       getConfettiPosition: e => ({
-        x: L,
-        y: e - x
+        x: x,
+        y: e - L
       }),
       confettiVelocityDirection: {
         x: false,
@@ -140,8 +140,8 @@ let D = ["TOP_LEFT", "TOP_RIGHT"],
     },
     BOTTOM_LEFT: C(S({}, M), {
       getConfettiPosition: e => ({
-        x: e - L,
-        y: x
+        x: e - x,
+        y: L
       }),
       confettiVelocityDirection: {
         x: 1,
@@ -150,8 +150,8 @@ let D = ["TOP_LEFT", "TOP_RIGHT"],
     }),
     BOTTOM_RIGHT: C(S({}, M), {
       getConfettiPosition: e => ({
-        x: L,
-        y: x
+        x: x,
+        y: L
       }),
       confettiVelocityDirection: {
         x: false,
@@ -371,27 +371,27 @@ function en(e) {
     } = i.useContext(d.Sfi),
     D = (0, b.ZP)(n),
     w = D.nick,
-    L = s(D);
+    x = s(D);
   t = null == c || null == o ? u > 1 ? v.intl.format(v.t.yfC9ds, {
     username: w,
-    usernameHook: L,
+    usernameHook: x,
     numSubscriptions: u
   }) : v.intl.format(v.t["57St/7"], {
     username: w,
-    usernameHook: L
+    usernameHook: x
   }) : u > 1 ? v.intl.format(v.t.PO9uJD, {
     username: w,
-    usernameHook: L,
+    usernameHook: x,
     numSubscriptions: u,
     guildName: o.name,
     newTierName: (0, E.nW)(c)
   }) : v.intl.format(v.t.cUfTTE, {
     username: w,
-    usernameHook: L,
+    usernameHook: x,
     guildName: o.name,
     newTierName: (0, E.nW)(c)
   });
-  let x = i.useCallback(() => {
+  let L = i.useCallback(() => {
       if (!P.enabled)
         if (A || 0 !== Math.floor(Math.random() * N)) {
           var e;
@@ -421,7 +421,7 @@ function en(e) {
     children: (0, r.jsx)(d.Ucv, {
       color: d.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: I.icon,
-      onMouseEnter: x
+      onMouseEnter: L
     })
   });
   return (0, r.jsxs)(y.Z, {

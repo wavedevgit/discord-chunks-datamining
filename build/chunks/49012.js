@@ -47,10 +47,10 @@ function R(e, t) {
       onCancel: P,
       shouldConfirm: D,
       messageId: w,
-      channelId: L
+      channelId: x
     } = e,
-    x = i().sanitizeUrl(e.href);
-  if (null == x) {
+    L = i().sanitizeUrl(e.href);
+  if (null == L) {
     null != t && t.preventDefault(), a.Z.show({
       title: C.intl.string(C.t.x87gan),
       body: C.intl.format(C.t["9rqRwl"], {
@@ -61,21 +61,21 @@ function R(e, t) {
     });
     return
   }
-  let M = x;
+  let M = L;
   try {
-    decodeURI(x)
+    decodeURI(L)
   } catch (e) {
-    M = encodeURI(x)
+    M = encodeURI(L)
   }
   let k = null,
     j = false,
     U = w,
-    G = L,
+    G = x,
     B = null;
-  if (null != w && null != L) {
+  if (null != w && null != x) {
     var Z, F, V;
-    let e = v.Z.getMessage(L, w),
-      t = E.Z.getBasicChannel(L);
+    let e = v.Z.getMessage(x, w),
+      t = E.Z.getBasicChannel(x);
     k = null != (V = null == t ? true : t.guild_id) ? V : null;
     let n = b.Z.getGuild(k),
       r = (null == e || null == (Z = e.messageReference) ? true : Z.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(A.iLy.IS_CROSSPOST)) && null != k;
@@ -84,14 +84,14 @@ function R(e, t) {
       a = (null == e ? true : e.hasFlag(A.iLy.EPHEMERAL)) === true;
     j = null != e && !a && (r || i)
   }
-  if (null != L) {
-    let e = E.Z.getChannel(L),
+  if (null != x) {
+    let e = E.Z.getChannel(x),
       t = b.Z.getGuild(null == e ? true : e.getGuildId());
     null != e && null != t && t.features.has(A.GuildFeatures.DISCOVERABLE) && S.default.track(A.rMx.URL_CLICKED, {
       url_domain: (0, O.F)(M),
       guild_id: t.id,
       channel_id: e.id
-    }), (0, u.Z)(L) && S.default.track(A.rMx.CHANGE_LOG_CTA_CLICKED, {
+    }), (0, u.Z)(x) && S.default.track(A.rMx.CHANGE_LOG_CTA_CLICKED, {
       cta_type: "inline_link",
       target: M
     })
@@ -110,7 +110,7 @@ function R(e, t) {
   let H = () => {
       if (j && _.Z.trackAnnouncementMessageLinkClicked({
           messageId: U,
-          channelId: L,
+          channelId: x,
           guildId: k,
           sourceChannelId: G,
           sourceGuildId: B
@@ -135,7 +135,7 @@ function R(e, t) {
     z = "http:" !== K && "https:" !== K;
   if (!z && (W || y.Z.isTrustedDomain(M)) || z && y.Z.isTrustedProtocol(M)) return void(null == t || null != D && D ? H() : j && _.Z.trackAnnouncementMessageLinkClicked({
     messageId: U,
-    channelId: L,
+    channelId: x,
     guildId: k,
     sourceChannelId: G,
     sourceGuildId: B

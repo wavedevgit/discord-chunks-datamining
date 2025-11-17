@@ -94,8 +94,8 @@ function A(e) {
       renderListItem: P,
       renderEmptyState: D,
       maxVisibleItems: w = 5,
-      loading: L = false,
-      onBlur: x,
+      loading: x = false,
+      onBlur: L,
       onFocus: M,
       typeahead: k = false
     } = e,
@@ -140,7 +140,7 @@ function A(e) {
         children: e.label
       })
     }), []);
-  if (L) t = (0, r.jsx)("div", {
+  if (x) t = (0, r.jsx)("div", {
     className: E.loadingSpinnerWrapper,
     "aria-busy": true,
     children: (0, r.jsx)(p.$, {
@@ -189,9 +189,9 @@ function A(e) {
           onKeyDown: i
         } = e, a = I(e, ["ref", "onKeyDown"]);
         return (0, r.jsx)("div", v(y({
-          onBlur: x,
+          onBlur: L,
           onFocus: M,
-          "aria-busy": L,
+          "aria-busy": x,
           ref: n,
           onKeyDown: e => {
             null == i || i(e), W(e)

@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk343396 = require("./343396.js"),
   Chunk197571 = require("./197571.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,14 +44,14 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -286,40 +286,40 @@ class U extends Chunk473749.PureComponent {
   }
   openPhoneVerificationModal() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-    (0, Chunk481060.h7j)(t => (0, r.jsx)(E.default, x({
+    (0, Chunk481060.h7j)(t => (0, r.jsx)(E.default, L({
       reason: h.L.USER_SETTINGS_UPDATE
     }, t, e)), {
       modalKey: Chunk815660.M
     })
   }
   constructor(...e) {
-    super(...e), L(this, "state", {
+    super(...e), x(this, "state", {
       revealed: false,
       password: ""
-    }), L(this, "togglePhoneNumberVisibility", e => {
+    }), x(this, "togglePhoneNumberVisibility", e => {
       e.preventDefault(), this.setState({
         revealed: !this.state.revealed
       })
-    }), L(this, "handleDisableMFA", () => {
+    }), x(this, "handleDisableMFA", () => {
       d.Z.show({
         title: P.intl.string(P.t["D+aE7g"]),
         body: P.intl.string(P.t.EA4ZEk),
         cancelText: P.intl.string(P.t["ETE/oC"]),
         onConfirm: () => u.Z.disable()
       })
-    }), L(this, "generateBackupCodes", async () => {
+    }), x(this, "generateBackupCodes", async () => {
       let e = O.Z.getVerificationKey();
       await u.Z.confirmViewBackupCodes(e, true)
-    }), L(this, "sendMFABackupCodesVerificationKeyEmail", () => {
-      (0, c.h7j)(e => (0, r.jsx)(g.Z, k(x({}, e), {
+    }), x(this, "sendMFABackupCodesVerificationKeyEmail", () => {
+      (0, c.h7j)(e => (0, r.jsx)(g.Z, k(L({}, e), {
         handleSubmit: e => u.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
           this.viewBackupCodes(e)
         }),
         title: P.intl.string(P.t.PsQmzU),
         actionText: P.intl.string(P.t.ajkYcF)
       })))
-    }), L(this, "viewBackupCodes", e => {
-      (0, c.h7j)(t => (0, r.jsx)(p.Z, k(x({}, t), {
+    }), x(this, "viewBackupCodes", e => {
+      (0, c.h7j)(t => (0, r.jsx)(p.Z, k(L({}, t), {
         handleSubmit: e => u.Z.confirmViewBackupCodes(e, false).then(() => t.onClose()),
         maxLength: 8,
         title: P.intl.string(P.t["mGppp/"]),
@@ -333,7 +333,7 @@ class U extends Chunk473749.PureComponent {
       })), {
         stackingBehavior: "stack"
       })
-    }), L(this, "getDownloadFileContents", () => {
+    }), x(this, "getDownloadFileContents", () => {
       let e = this.props.backupCodes.map(e => {
           let {
             consumed: t,
@@ -345,17 +345,17 @@ class U extends Chunk473749.PureComponent {
           email: this.props.currentUser.email
         });
       return "".concat(t, "\r\n\r\n").concat(e)
-    }), L(this, "handleChangePhoneNumber", () => {
+    }), x(this, "handleChangePhoneNumber", () => {
       this.openPhoneVerificationModal()
-    }), L(this, "handleEnableSMS", () => {
+    }), x(this, "handleEnableSMS", () => {
       let {
         currentUser: e
       } = this.props;
       null == e.phone ? this.openPhoneVerificationModal({
         onAddedPhone: u.Z.enableSMS
       }) : u.Z.enableSMS()
-    }), L(this, "handleDisableSMS", () => {
-      (0, c.h7j)(e => (0, r.jsx)(g.Z, k(x({}, e), {
+    }), x(this, "handleDisableSMS", () => {
+      (0, c.h7j)(e => (0, r.jsx)(g.Z, k(L({}, e), {
         handleSubmit: u.Z.disableSMS,
         title: P.intl.string(P.t.KLWnit),
         children: P.intl.string(P.t["W0/Duf"])
@@ -371,7 +371,7 @@ function G(e) {
     togglingSMS: O.Z.togglingSMS,
     hasTOTPEnabled: y.default.hasTOTPEnabled()
   }));
-  return (0, r.jsx)(U, x({
+  return (0, r.jsx)(U, L({
     currentUser: t
   }, n, e))
 }

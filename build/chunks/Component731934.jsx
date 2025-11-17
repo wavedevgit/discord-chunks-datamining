@@ -71,7 +71,7 @@ function w(e, t) {
   return i
 }
 
-function L(e) {
+function x(e) {
   let {
     header: t,
     description: n,
@@ -103,7 +103,7 @@ function L(e) {
   })
 }
 
-function x() {
+function L() {
   return (0, Chunk54381.jsxs)("div", {
     className: o()(Chunk790680.box, Chunk519279.box, Chunk790680.linkingBanner, Chunk790680.linkingBannerParent),
     children: [(0, Chunk54381.jsxs)("div", {
@@ -128,15 +128,15 @@ function x() {
       })]
     }), (0, Chunk54381.jsxs)("div", {
       className: Chunk790680.steps,
-      children: [(0, Chunk54381.jsx)(L, {
+      children: [(0, Chunk54381.jsx)(x, {
         header: Chunk388032.intl.string(Chunk597754.default["7xxAni"]),
         description: Chunk388032.intl.string(Chunk597754.default["1M9So2"]),
         stepNumber: 1
-      }), (0, Chunk54381.jsx)(L, {
+      }), (0, Chunk54381.jsx)(x, {
         header: Chunk388032.intl.string(Chunk597754.default["AXgx+a"]),
         description: Chunk388032.intl.string(Chunk597754.default.GzMFnb),
         stepNumber: 2
-      }), (0, Chunk54381.jsx)(L, {
+      }), (0, Chunk54381.jsx)(x, {
         header: Chunk388032.intl.string(Chunk597754.default.MZn1tG),
         description: Chunk388032.intl.string(Chunk597754.default["8rLBxD"]),
         stepNumber: 3
@@ -321,6 +321,6 @@ let j = () => {
     let e = (0, Chunk880257.Z)();
     return (0, Chunk54381.jsxs)("div", {
       className: Chunk790680.container,
-      children: [module ? (0, Chunk54381.jsx)(x, {}) : (0, Chunk54381.jsx)(M, {}), (0, Chunk54381.jsx)(j, {}), (0, Chunk54381.jsx)(B, {}), (0, Chunk54381.jsx)(U, {}), (0, Chunk54381.jsx)(G, {})]
+      children: [module ? (0, Chunk54381.jsx)(L, {}) : (0, Chunk54381.jsx)(M, {}), (0, Chunk54381.jsx)(j, {}), (0, Chunk54381.jsx)(B, {}), (0, Chunk54381.jsx)(U, {}), (0, Chunk54381.jsx)(G, {})]
     })
   }

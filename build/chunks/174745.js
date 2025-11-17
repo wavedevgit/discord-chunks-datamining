@@ -84,15 +84,15 @@ module.exports = function(e) {
         P = N.getType(),
         D = n(N),
         w = true,
-        L = true,
-        x = true;
-      D && (w = D.component, L = D.props, x = D.editable);
+        x = true,
+        L = true;
+      D && (w = D.component, x = D.props, L = D.editable);
       var M = g || v.get(R),
         k = c.encode(R, 0, 0),
         j = {
           contentState: E,
           block: N,
-          blockProps: L,
+          blockProps: x,
           blockStyleFn: r,
           customStyleMap: o,
           customStyleFn: s,
@@ -121,8 +121,8 @@ module.exports = function(e) {
           "data-offset-key": k,
           key: R
         };
-      true !== x && (Y = a({}, Y, {
-        contentEditable: x,
+      true !== L && (Y = a({}, Y, {
+        contentEditable: L,
         suppressContentEditableWarning: true
       }));
       var W = u.createElement(B, Y, u.createElement(H, i({}, j, {

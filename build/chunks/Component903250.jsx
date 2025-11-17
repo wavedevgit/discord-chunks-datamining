@@ -40,10 +40,10 @@ let P = (e, t) => {
       isEligibleForBogoPromotion: D,
       videoRef: w
     } = e, {
-      analyticsLocations: L
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), x = (0, g._O)(), M = (0, m.Nx)(), k = (0, s.e7)([h.Z], () => h.Z.affinities), j = (0, E.Z)(), U = null != j, G = P ? l.Tt.WHITE : l.Tt.BRAND, B = k.length > 0, Z = S.intl.string(S.t.YCZldK), F = (0, p.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+      analyticsLocations: x
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), L = (0, g._O)(), M = (0, m.Nx)(), k = (0, s.e7)([h.Z], () => h.Z.affinities), j = (0, E.Z)(), U = null != j, G = P ? l.Tt.WHITE : l.Tt.BRAND, B = k.length > 0, Z = S.intl.string(S.t.YCZldK), F = (0, p.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
     return (0, r.jsx)(f.Gt, {
-      value: L,
+      value: x,
       children: (0, r.jsxs)("div", {
         className: o()(A.container, A.heroHeadingContainer, n),
         ref: t,
@@ -66,7 +66,7 @@ let P = (e, t) => {
                 smallerText: false,
                 isApplicationHome: true
               })
-            }), x ? (0, r.jsx)("div", {
+            }), L ? (0, r.jsx)("div", {
               className: o()(A.buttonContainer, A.marketingPageCTAContainer, {
                 [A.marketingPageCTAMargin]: !(B || U)
               }),

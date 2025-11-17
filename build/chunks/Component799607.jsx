@@ -66,10 +66,10 @@ let d = function(e) {
     e && (O.current = true), D(), b("closing")
   }, [D]);
   i.useEffect(() => D, [D]);
-  let L = i.useCallback(() => {
+  let x = i.useCallback(() => {
       "closed" === E && (D(), b("opening-mouse"))
     }, [D, E]),
-    x = i.useCallback(() => {
+    L = i.useCallback(() => {
       v && w(false)
     }, [w, v]),
     M = i.useCallback(() => {
@@ -109,8 +109,8 @@ let d = function(e) {
       R(e)
     }, []);
   return (0, r.jsxs)("div", {
-    onMouseEnter: L,
-    onMouseLeave: x,
+    onMouseEnter: x,
+    onMouseLeave: L,
     onFocus: M,
     children: [t, (0, r.jsx)(a.RB, {
       targetElementRef: n,

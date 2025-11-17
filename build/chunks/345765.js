@@ -72,7 +72,7 @@ function w(e) {
   true !== t && (clearTimeout(t), T.delete(e))
 }
 
-function L() {
+function x() {
   var e;
   let t = null != (e = A.get(v)) ? module : 0;
   if (exports > 0 && exports <= y || (w(v), !D(v))) return;
@@ -83,12 +83,12 @@ function L() {
   P(v, {
     loading: false,
     nextFetchDate: new Date(Date.now() + Chunk570140)
-  }), T.set(v, setTimeout(() => x({
+  }), T.set(v, setTimeout(() => L({
     feedId: v,
     feature: Chunk126313.L.INBOX
   }), Chunk570140))
 }
-async function x(e) {
+async function L(e) {
   let {
     feedId: t,
     feature: n,
@@ -110,13 +110,13 @@ async function x(e) {
       feed: r
     }), A.set(t, 0), S.delete(t), P(t, {
       loading: false
-    }), t === v && (C = null, L())
+    }), t === v && (C = null, x())
   } catch (o) {
     var i;
     let e = null != (i = A.get(t)) ? i : 0;
     if (e < y) {
       let i = f.Z.Millis.MINUTE * Math.pow(2, e) + R(e);
-      T.set(t, setTimeout(() => x({
+      T.set(t, setTimeout(() => L({
         feedId: t,
         feature: n,
         force: r
@@ -130,7 +130,7 @@ async function x(e) {
 }
 
 function M() {
-  L()
+  x()
 }
 
 function k() {
@@ -146,7 +146,7 @@ function U(e) {
     feedId: t,
     feature: n
   } = e;
-  w(t), x({
+  w(t), L({
     feedId: t,
     feature: n,
     force: true
@@ -157,7 +157,7 @@ function G(e) {
   let {
     refreshAfterMs: t
   } = e, n = m.Z.getFeed(v);
-  (null == n ? true : n.refresh_stale_inbox_after_ms) != null && (C = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), L())
+  (null == n ? true : n.refresh_stale_inbox_after_ms) != null && (C = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), x())
 }
 
 function B(e) {
@@ -170,7 +170,7 @@ function B(e) {
 }
 
 function Z() {
-  x({
+  L({
     feedId: Chunk206583.YN.GLOBAL_FEED,
     feature: Chunk126313.L.GAME_PROFILE
   })

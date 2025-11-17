@@ -89,16 +89,16 @@ function w(e, t) {
   return "object" == typeof e && null !== e && null != e.key ? P("" + e.key) : t.toString(36)
 }
 
-function L() {}
+function x() {}
 
-function x(e) {
+function L(e) {
   switch (e.status) {
     case "fulfilled":
       return e.value;
     case "rejected":
       throw e.reason;
     default:
-      switch ("string" == typeof e.status ? e.then(L, L) : (e.status = "pending", e.then(function(t) {
+      switch ("string" == typeof e.status ? e.then(x, x) : (e.status = "pending", e.then(function(t) {
           "pending" === e.status && (e.status = "fulfilled", e.value = t)
         }, function(t) {
           "pending" === e.status && (e.status = "rejected", e.reason = t)
@@ -143,7 +143,7 @@ function M(e, t, n, r, o) {
   else if ("function" == typeof(u = m(e)))
     for (e = u.call(e), u = 0; !(r = e.next()).done;) s = c + w(r = r.value, u++), l += M(r, t, n, s, o);
   else if ("object" === s) {
-    if ("function" == typeof e.then) return M(x(e), t, n, r, o);
+    if ("function" == typeof e.then) return M(L(e), t, n, r, o);
     throw Error("Objects are not valid as a React child (found: " + ("[object Object]" === (t = String(e)) ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.")
   }
   return l

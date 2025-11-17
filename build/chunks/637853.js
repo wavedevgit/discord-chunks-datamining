@@ -8,7 +8,7 @@ require.d(exports, {
   O5: () => I,
   OZ: () => j,
   V7: () => C,
-  VF: () => x,
+  VF: () => L,
   b$: () => y,
   d9: () => w,
   dF: () => A,
@@ -156,11 +156,11 @@ function w(e, t) {
   }), i), n]
 }
 
-function L(e, t) {
+function x(e, t) {
   return e[0].length === t[0].length && e[1].length === t[1].length && (0, i.Z)(e[0], t[0]) && (0, i.Z)(e[1], t[1])
 }
 
-function x(e, t) {
+function L(e, t) {
   return (0, r.e7)([l.ZP], () => {
     let n = l.ZP.getChannels(e),
       r = [],
@@ -168,7 +168,7 @@ function x(e, t) {
       a = {};
     for (let e of n[l.sH])(0, h.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (a[e.channel.id] = e, r.push(e.channel), N(e.channel) && i.push(e.channel.id));
     return [i, r]
-  }, [e, t], L)
+  }, [e, t], x)
 }
 
 function M(e) {

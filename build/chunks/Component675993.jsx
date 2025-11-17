@@ -2,7 +2,7 @@
 /** chunk id: 675993, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -55,7 +55,7 @@ function P(e) {
 let D = 2,
   w = 2e3;
 
-function L(e) {
+function x(e) {
   let {
     context: t,
     application: n,
@@ -112,13 +112,13 @@ function L(e) {
           hasCommands: f
         })]
       })]
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(L, {
       application: n
     })]
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     application: t
   } = e, n = (0, y.Cb)(t), i = (0, y.Hu)(t);

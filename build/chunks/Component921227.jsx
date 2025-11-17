@@ -104,10 +104,10 @@ function b(e) {
       defaultDirty: N = false
     } = e,
     R = m(e, ["className", "inputClassName", "disabled", "editable", "inputRef", "prefixElement", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty"]);
-  let [P, D] = i.useState(N), w = E(T, S), L = e => {
+  let [P, D] = i.useState(N), w = E(T, S), x = e => {
     var t, n;
     null == (t = R.onChange) || t.call(R, e.currentTarget.value, y), D(true), null == (n = w.setHasValue) || n.call(w, "" !== e.currentTarget.value)
-  }, x = e => {
+  }, L = e => {
     var t, n;
     null == (t = R.onFocus) || t.call(R, e, y), null == (n = w.setIsFocused) || n.call(w, true)
   }, M = e => {
@@ -141,9 +141,9 @@ function b(e) {
         defaultValue: S
       }, R), {
         "aria-labelledby": null != (t = R["aria-labelledby"]) ? t : w.titleId,
-        onChange: L,
+        onChange: x,
         onBlur: M,
-        onFocus: x,
+        onFocus: L,
         ref: p
       }))
     })), (0, r.jsx)(c.V, {

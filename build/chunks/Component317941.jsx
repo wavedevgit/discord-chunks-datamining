@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk669255 = require("./669255.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function L(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let x = 512,
+let L = 512,
   M = 1e3;
 class k extends Chunk473749.PureComponent {
   componentWillUnmount() {
@@ -97,9 +97,9 @@ class k extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), L(this, "_copyModeTimeout", new u.V7), L(this, "state", {
+    super(...e), x(this, "_copyModeTimeout", new u.V7), x(this, "state", {
       copyMode: f.uA3.DEFAULT
-    }), L(this, "handleCopy", e => {
+    }), x(this, "handleCopy", e => {
       let {
         giftCode: t,
         sku: n
@@ -223,7 +223,7 @@ class j extends Chunk473749.PureComponent {
         onMouseEnter: () => this.setIsHovered(true),
         onMouseLeave: () => this.setIsHovered(false),
         children: (0, Chunk54381.jsx)(Chunk189907.Z.Header, {
-          splashArtURL: exports.getSplashURL(x),
+          splashArtURL: exports.getSplashURL(L),
           children: (0, Chunk54381.jsxs)("div", {
             className: Chunk669255.cardHeader,
             children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
@@ -252,11 +252,11 @@ class j extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), L(this, "_loadedAt", null), L(this, "state", {
+    super(...e), x(this, "_loadedAt", null), x(this, "state", {
       isOpen: false,
       isCreating: false,
       isHovered: false
-    }), L(this, "handleGenerateGiftCode", async e => {
+    }), x(this, "handleGenerateGiftCode", async e => {
       e.stopPropagation();
       let {
         skuId: t,
@@ -269,7 +269,7 @@ class j extends Chunk473749.PureComponent {
         isCreating: false,
         isOpen: true
       })
-    }), L(this, "handleToggleOpen", () => {
+    }), x(this, "handleToggleOpen", () => {
       let {
         skuId: e,
         subscriptionPlanId: t,

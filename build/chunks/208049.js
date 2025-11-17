@@ -9,10 +9,10 @@ require.d(exports, {
   R: () => j,
   TB: () => w,
   XE: () => M,
-  hs: () => L,
+  hs: () => x,
   w: () => N,
   xR: () => k,
-  xU: () => x,
+  xU: () => L,
   xz: () => U
 }), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
@@ -182,12 +182,12 @@ function w(e) {
   }), false) : !t.soundIds.includes(e) && void t.soundIds.push(e), E.fy.INFREQUENT_USER_ACTION)
 }
 
-function L(e) {
+function x(e) {
   c.DZ.updateAsync("favoriteSoundboardSounds", t => {
     t.soundIds = t.soundIds.filter(t => t !== e)
   }, E.fy.INFREQUENT_USER_ACTION)
 }
-async function x(e, t) {
+async function L(e, t) {
   try {
     let n = await a.tn.get({
       url: g.ANM.SOUNDBOARD_SOUND_GUILD_DATA(e, t),

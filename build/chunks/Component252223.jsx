@@ -55,7 +55,7 @@ function w(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,8 +66,8 @@ function L(e, t) {
   return n
 }
 
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function L(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -142,7 +142,7 @@ function B(e) {
     animateEmoji: O = true,
     hasQuest: R = false,
     hideEmoji: D = false,
-    hideTooltip: L = false
+    hideTooltip: x = false
   } = e;
   (0, f.Z)(null == t ? true : t.id);
   let M = (null == a ? true : a.discoverable) !== false ? a : null,
@@ -189,7 +189,7 @@ function B(e) {
   if (K) return null;
   let et = function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
-        t = true === e || L;
+        t = true === e || x;
       if (null != M) return (0, r.jsx)(I.Z, {
         stream: M,
         game: Y,
@@ -227,7 +227,7 @@ function B(e) {
           hideText: false,
           canTruncate: false
         };
-      return null != M && e.push((0, r.jsx)(I.Z, x(w({
+      return null != M && e.push((0, r.jsx)(I.Z, L(w({
         stream: M,
         game: null == n ? true : n.find(d.Z)
       }, t), {
@@ -236,7 +236,7 @@ function B(e) {
         e.push((0, r.jsx)(S.Z, w({
           activity: n
         }, t), "activity-".concat(i)))
-      }), X && e.push((0, r.jsx)(A.Z, x(w({
+      }), X && e.push((0, r.jsx)(A.Z, L(w({
         channel: l
       }, t), {
         showChannelName: true
@@ -248,7 +248,7 @@ function B(e) {
       hasCustomStatusText: z,
       totalActivityCount: Q
     }),
-    ei = () => 0 === Q ? null : J && !W ? L ? (0, r.jsxs)("div", {
+    ei = () => 0 === Q ? null : J && !W ? x ? (0, r.jsxs)("div", {
       className: o()(P.activityContainer, $ && P.iconOnly),
       children: [et(), er()]
     }) : (0, r.jsx)(u.aML, {
@@ -257,7 +257,7 @@ function B(e) {
       delay: C.X,
       text: en(),
       "aria-label": ee,
-      children: e => (0, r.jsxs)("div", x(w({
+      children: e => (0, r.jsxs)("div", L(w({
         className: o()(P.activityContainer, $ && P.iconOnly)
       }, e), {
         children: [et(true), er()]
@@ -272,7 +272,7 @@ function B(e) {
       textSize: y,
       animateEmoji: O,
       hideEmoji: D,
-      hideTooltip: L,
+      hideTooltip: x,
       textClassName: _,
       iconClassName: p,
       tooltipClassName: ea,

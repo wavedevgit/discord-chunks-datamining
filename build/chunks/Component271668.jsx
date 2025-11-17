@@ -34,8 +34,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk57507 = require("./57507.js"),
   Chunk239840 = require("./239840.js");
 let w = 512,
-  L = 7,
-  x = 56,
+  x = 7,
+  L = 56,
   M = 16,
   k = 32,
   j = 20,
@@ -72,7 +72,7 @@ let w = 512,
         applicationCommands: !a
       },
       options: {
-        placeholderCount: L,
+        placeholderCount: x,
         limit: C.tn,
         includeFrecency: true
       },
@@ -91,7 +91,7 @@ let w = 512,
       scrollOffset: j,
       searchQuery: ""
     }), er = e => {
-      let t = q.length * (k + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? L : 0)) * x - w;
+      let t = q.length * (k + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? x : 0)) * L - w;
       Q && e + U > t && ee(), en(e), B(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
@@ -140,7 +140,7 @@ let w = 512,
       },
       onMoveSelection: e => {
         if (0 === J.length) returntrue;
-        let t = Q ? L : 0,
+        let t = Q ? x : 0,
           n = J.length + t,
           r = null == Z ? 0 : Z + e;
         return r >= n ? r = n - 1 : r < 0 && (r = 0), V(r), W(true), true
@@ -231,7 +231,7 @@ let w = 512,
         renderSectionHeader: ec,
         rowCount: q.length,
         rowCountBySection: eo,
-        rowHeight: x,
+        rowHeight: L,
         sectionHeaderHeight: k,
         sectionMarginBottom: ea,
         ref: H,

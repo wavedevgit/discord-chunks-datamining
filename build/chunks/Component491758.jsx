@@ -79,8 +79,8 @@ function D() {
     } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
     D = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()),
     w = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
-    L = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_SCREENSHOT, true)),
-    x = (0, Chunk779618.Z)(Chunk131951.Z),
+    x = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_SCREENSHOT, true)),
+    L = (0, Chunk779618.Z)(Chunk131951.Z),
     {
       showClipsHeaderEntrypoint: M
     } = Chunk924557.NV.useExperiment({
@@ -89,7 +89,7 @@ function D() {
       autoTrackExposure: false
     }),
     k = (0, Chunk924557.PP)();
-  o()(null != w, "Save clip keybind unset"), o()(null != L, "Save screenshot keybind unset");
+  o()(null != w, "Save clip keybind unset"), o()(null != x, "Save screenshot keybind unset");
   let j = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     U = Chunk473749.useMemo(() => [{
       value: Chunk356659.OT.SECONDS_30,
@@ -153,10 +153,10 @@ function D() {
       }))
     }, [w]),
     F = Chunk473749.useCallback(e => {
-      c.Z.setKeybind(P(N({}, L), {
+      c.Z.setKeybind(P(N({}, x), {
         shortcut: e
       }))
-    }, [L]);
+    }, [x]);
   return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
     children: [(0, Chunk54381.jsx)(Chunk494620.Z, {
       children: Chunk388032.intl.string(Chunk388032.t["Z+MfqT"])
@@ -171,7 +171,7 @@ function D() {
         clipsEnabled: e,
         trackAnalytics: true
       })
-    }), require && x && (0, Chunk54381.jsx)(Chunk54381.Fragment, {
+    }), require && L && (0, Chunk54381.jsx)(Chunk54381.Fragment, {
       children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.yXvykv),
         description: Chunk388032.intl.string(Chunk388032.t.YP3ujk),
@@ -228,7 +228,7 @@ function D() {
       children: (0, Chunk54381.jsx)("div", {
         className: Chunk556865.keyRecorder,
         children: (0, Chunk54381.jsx)(Chunk825209.Z, {
-          defaultValue: L.shortcut,
+          defaultValue: x.shortcut,
           onChange: F
         })
       })

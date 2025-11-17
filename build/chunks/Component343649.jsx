@@ -143,8 +143,8 @@ function ep(e) {
     eP = (0, u.e7)([U.Z], () => U.Z.theme),
     eD = i.useRef((0, W.vx)(B.Z.boostSlots)).current,
     ew = (0, u.e7)([C.Z], () => null != el ? C.Z.getGuild(el) : true, [el]),
-    eL = (0, u.e7)([F.Z], () => F.Z.defaultPaymentSourceId),
-    ex = (0, k.fL)(null != eA ? eA : eS ? eL : null),
+    ex = (0, u.e7)([F.Z], () => F.Z.defaultPaymentSourceId),
+    eL = (0, k.fL)(null != eA ? eA : eS ? ex : null),
     {
       paymentSources: eM,
       setPurchaseError: ek,
@@ -156,13 +156,13 @@ function ep(e) {
       paymentError: eF,
       purchaseError: eV,
       purchaseErrorBlockRef: eH
-    } = ex,
+    } = eL,
     eY = Object.keys(eM).length > 0,
     [eW, eK] = i.useState(eh - eD.length),
     [ez, eq] = i.useState(false),
     eX = (0, u.e7)([Z.Z], () => Z.Z.popupCallbackCalled),
     eQ = (0, v.V)(),
-    eJ = i.useMemo(() => null != ey && eN && eQ ? (0, x.g)(ey, eW) : [{
+    eJ = i.useMemo(() => null != ey && eN && eQ ? (0, L.g)(ey, eW) : [{
       planId: ee.Xh.PREMIUM_MONTH_GUILD,
       quantity: eW
     }], [ey, eN, eW, eQ]),
@@ -269,7 +269,7 @@ function ep(e) {
     eQ && (null != V.Z.get(ee.Xh.PREMIUM_MONTH_GUILD) && tp(e = (0, z.DE)(ee.Xh.PREMIUM_MONTH_GUILD, ej, false)), null == ej && null != ey && null != ey.paymentSourceId ? tf(ey.currency) : null != e && tf(e[0]))
   }, [ej, ey, eQ, tg]);
   let tE = (0, k.vP)({
-    paymentModalArgs: ex,
+    paymentModalArgs: eL,
     initialStep: R.h8.PAYMENT_TYPE,
     prependSteps: [R.h8.PLAN_SELECT],
     appendSteps: [R.h8.REVIEW, R.h8.CONFIRM],
@@ -356,7 +356,7 @@ function ep(e) {
               window.location.href = "discord://app/settings/nitro";
               return
             }
-            to(), null != s && s(), (0, L.z)()
+            to(), null != s && s(), (0, x.z)()
           },
           priceOptions: o
         }), ts && null != ey && null != ey.paymentGateway ? e = (0, r.jsxs)("div", {

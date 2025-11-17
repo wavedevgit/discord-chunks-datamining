@@ -253,7 +253,7 @@ function ee(e) {
     description: E
   } = i.useMemo(() => (0, w.sl)(t, {
     fakeAppIconURL: F
-  }), [t]), b = i.useMemo(() => null == E ? null : (0, x.ae)(E), [E]), y = (0, I.ZP)(m, ""), [v, T] = i.useState(false), S = i.useCallback(() => {
+  }), [t]), b = i.useMemo(() => null == E ? null : (0, L.ae)(E), [E]), y = (0, I.ZP)(m, ""), [v, T] = i.useState(false), S = i.useCallback(() => {
     true === l && T(true)
   }, [l]), A = h || (0, w.lf)(t), C = "large_banner" === n || "medium_banner" === n, R = i.useCallback(() => T(false), []), P = (0, s.e7)([p.Z, N.Z], () => p.Z.inDevModeForApplication(t.id) || N.Z.inTestModeForApplication(t.id), [t.id]), D = (0, w.WA)(t);
   return (0, r.jsxs)(r.Fragment, {
@@ -489,7 +489,7 @@ function es(e) {
     location: s
   } = e, {
     pushHistory: l
-  } = (0, L.hH)(), {
+  } = (0, x.hH)(), {
     friends: c
   } = (0, m.Z)(t);
   return {
@@ -504,7 +504,7 @@ function es(e) {
         query: a,
         num_friends_who_play: c.length
       }), l({
-        type: L.gc.APPLICATION,
+        type: x.gc.APPLICATION,
         application: t,
         installOnDemand: o,
         sectionName: n
@@ -540,7 +540,7 @@ function ec(e) {
       activityAction: y,
       buttonVariant: O,
       buttonText: v
-    } = (0, x.P7)({
+    } = (0, L.P7)({
       context: t,
       application: n,
       location: a,

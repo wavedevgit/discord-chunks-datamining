@@ -59,7 +59,7 @@ function w(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,8 +70,8 @@ function L(e, t) {
   return n
 }
 
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function L(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -105,27 +105,27 @@ let B = e => {
     } = e, n = M(e, ["entry"]);
     switch (t.content_type) {
       case l.s.PLAYED_GAME:
-        return (0, r.jsx)(E.Z, x(w({}, n), {
+        return (0, r.jsx)(E.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.WATCHED_MEDIA:
-        return (0, r.jsx)(C.Z, x(w({}, n), {
+        return (0, r.jsx)(C.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(S.ZP, x(w({}, n), {
+        return (0, r.jsx)(S.ZP, L(w({}, n), {
           entry: t
         }));
       case l.s.TOP_ARTIST:
-        return (0, r.jsx)(I.ZP, x(w({}, n), {
+        return (0, r.jsx)(I.ZP, L(w({}, n), {
           entry: t
         }));
       case l.s.LISTENED_SESSION:
-        return (0, r.jsx)(O.ZP, x(w({}, n), {
+        return (0, r.jsx)(O.ZP, L(w({}, n), {
           entry: t
         }));
       case l.s.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(m.Z, x(w({}, n), {
+        return (0, r.jsx)(m.Z, L(w({}, n), {
           entry: t
         }));
       default:
@@ -170,27 +170,27 @@ let B = e => {
     } = e, n = M(e, ["entry"]);
     switch (t.content_type) {
       case l.s.PLAYED_GAME:
-        return (0, r.jsx)(b.Z, x(w({}, n), {
+        return (0, r.jsx)(b.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.WATCHED_MEDIA:
-        return (0, r.jsx)(N.Z, x(w({}, n), {
+        return (0, r.jsx)(N.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(A.Z, x(w({}, n), {
+        return (0, r.jsx)(A.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.TOP_ARTIST:
-        return (0, r.jsx)(T.Z, x(w({}, n), {
+        return (0, r.jsx)(T.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.LISTENED_SESSION:
-        return (0, r.jsx)(v.Z, x(w({}, n), {
+        return (0, r.jsx)(v.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(g.ZP, x(w({}, n), {
+        return (0, r.jsx)(g.ZP, L(w({}, n), {
           entry: t
         }));
       default:
@@ -222,10 +222,10 @@ let B = e => {
       }), [T, _.channel.guild_id, _.channel.id, _.entry, _.requestId, I]),
       A = i.useRef(false),
       [C, N] = i.useState(false),
-      [D, L] = i.useState(false),
+      [D, x] = i.useState(false),
       k = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled);
     i.useEffect(() => {
-      C && k && L(true)
+      C && k && x(true)
     }, [C, k]), i.useLayoutEffect(() => {
       null != m.current && y(true)
     }, []);
@@ -255,11 +255,11 @@ let B = e => {
       }), []),
       W = () => {
         A.current = false, setTimeout(() => {
-          A.current || (N(false), L(k))
+          A.current || (N(false), x(k))
         }, 100)
       };
     return (0, r.jsxs)(r.Fragment, {
-      children: [b && (0, r.jsx)(Z, x(w({}, _), {
+      children: [b && (0, r.jsx)(Z, L(w({}, _), {
         targetElementRef: m
       })), (0, r.jsx)("div", {
         ref: l,
@@ -296,7 +296,7 @@ let B = e => {
             let {
               isShown: n
             } = t;
-            return (0, r.jsx)(u.P3F, x(w({}, e, O), {
+            return (0, r.jsx)(u.P3F, L(w({}, e, O), {
               innerRef: m,
               focusProps: {
                 offset: {
@@ -310,7 +310,7 @@ let B = e => {
                 C || N(true)
               },
               onContextMenu: j,
-              children: (0, r.jsx)(B, x(w({}, _), {
+              children: (0, r.jsx)(B, L(w({}, _), {
                 selected: n,
                 hovered: A.current
               }))

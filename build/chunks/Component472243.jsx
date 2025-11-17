@@ -31,13 +31,13 @@ function y(e) {
     maxCharacterCount: I,
     showRemainingCharsAfterCount: T,
     className: S
-  } = e, A = (0, o.e7)([_.default], () => p.ZP.canUseIncreasedMessageLength(_.default.getCurrentUser())), C = (0, d.Z)(), N = null != I ? I : C, R = null != (y = null != T ? T : I) ? y : C / 10, P = v.length, D = null != O.upsellLongMessages && (null != P ? P : 0) > m.J6R && A, w = null != O.upsellLongMessages && !A, L = (null == (n = (0, f.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2, x = N - P, M = x > R, k = x < 0 && L, j = 0 === x ? E.intl.string(E.t.tU6YQ7) : x > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
-    count: x
+  } = e, A = (0, o.e7)([_.default], () => p.ZP.canUseIncreasedMessageLength(_.default.getCurrentUser())), C = (0, d.Z)(), N = null != I ? I : C, R = null != (y = null != T ? T : I) ? y : C / 10, P = v.length, D = null != O.upsellLongMessages && (null != P ? P : 0) > m.J6R && A, w = null != O.upsellLongMessages && !A, x = (null == (n = (0, f.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2, L = N - P, M = L > R, k = L < 0 && x, j = 0 === L ? E.intl.string(E.t.tU6YQ7) : L > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
+    count: L
   }) : E.intl.string(E.t.YSRIqa), {
     analyticsLocations: U
   } = (0, u.ZP)(c.Z.CHARACTER_COUNT);
-  if (!(D && x >= 0 || !M || w && !M)) return null;
-  let G = x >= 0;
+  if (!(D && L >= 0 || !M || w && !M)) return null;
+  let G = L >= 0;
   return (0, r.jsx)(u.Gt, {
     value: U,
     children: (0, r.jsxs)("div", {
@@ -62,17 +62,17 @@ function y(e) {
             tabularNumbers: true,
             "aria-hidden": true,
             color: G ? "text-default" : "text-danger",
-            children: x
+            children: L
           })
         })]
       }), (0, r.jsx)(l.nn4, {
         children: E.intl.format(E.t.qH8uFW, {
-          count: x
+          count: L
         })
       }), w && !M ? (0, r.jsx)(h.Z, {
         className: b.upsell,
         iconOnly: (null == (i = O.upsellLongMessages) ? true : i.iconOnly) || false,
-        remaining: x
+        remaining: L
       }) : null]
     })
   })

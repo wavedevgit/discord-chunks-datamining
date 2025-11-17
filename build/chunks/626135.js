@@ -103,8 +103,8 @@ let C = {
   P = 1e3,
   D = 1e4,
   w = 6e4,
-  L = 12e4,
-  x = 3e5,
+  x = 12e4,
+  L = 3e5,
   M = 9e5,
   k = 36e5,
   j = 864e5,
@@ -121,11 +121,11 @@ function F(e) {
 }
 let V = {
   [Chunk981631.rMx.APP_OPENED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.APP_BACKGROUND]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.ACK_MESSAGES]: e => e.location_object_type === g.AnalyticsObjectTypes.ACK_MANUAL ? true : {
@@ -186,7 +186,7 @@ let V = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.KEYBOARD_SHORTCUT_USED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => {
       var t;
       return [e.shortcut_name, e.location_object, ...null != (t = e.source_class_list) ? t : []]
@@ -201,15 +201,15 @@ let V = {
     throttleKeys: e => [e.type]
   },
   [Chunk981631.rMx.ROLE_PAGE_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.role_id, e.tab_opened]
   },
   [Chunk981631.rMx.VIDEO_INPUT_INITIALIZED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.AUDIO_INPUT_INITIALIZED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.HUB_ONBOARDING_CAROUSEL_SCROLLED]: {
@@ -263,7 +263,7 @@ let V = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.SUMMARIES_UNREAD_BAR_VIEWED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.ACTIVITY_CARDS_VIEWED]: {
@@ -299,11 +299,11 @@ let V = {
     throttleKeys: e => [e.message_id]
   },
   [Chunk981631.rMx.MEDIA_INPUT_VOLUME_CHANGED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.location_stack]
   },
   [Chunk981631.rMx.MEDIA_OUTPUT_VOLUME_CHANGED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.location_stack]
   },
   [Chunk981631.rMx.APP_DMS_QUICK_LAUNCHER_IMPRESSION]: {
@@ -311,12 +311,12 @@ let V = {
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.USER_VOICE_ACTIVITY_VIEWED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.activity_user_id, e.surface],
     deduplicate: true
   },
   [Chunk981631.rMx.PARTY_VOICE_ACTIVITY_VIEWED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.voice_channel_id],
     deduplicate: true
   },

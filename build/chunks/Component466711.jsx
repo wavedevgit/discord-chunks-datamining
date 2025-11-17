@@ -55,7 +55,7 @@ function w(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,8 +66,8 @@ function L(e, t) {
   return n
 }
 
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function L(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -114,7 +114,7 @@ function k(e) {
   return (0, r.jsx)(l.u, {
     shouldShow: a,
     text: N.intl.string(N.t.Ve9Ge6),
-    children: (0, r.jsx)(S.Z, x(w({
+    children: (0, r.jsx)(S.Z, L(w({
       className: P.button,
       "aria-label": N.intl.string(N.t.Z1RnTk),
       isActive: false,
@@ -152,7 +152,7 @@ function U(e) {
   } = (0, d.ZP)(u.Z.GIFT_BUTTON), [y, I] = i.useState(false), S = (0, a.e7)([E.Z], () => !(null === E.Z || true === E.Z ? true : E.Z.hasLayers())), N = (0, a.e7)([b.default], () => b.default.getCurrentUser()), P = null != N ? O.default.age(N.id) : 0, {
     giftBoxAnimation: D,
     trinketsAnimation: w
-  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, L = null != n.firstTimeNotice && !s && S && P >= j, [x, U] = (0, _.XR)(L ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, f.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != x, B = y || G, Z = (0, v.Ft)(l), F = (0, h.yc)({
+  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, x = null != n.firstTimeNotice && !s && S && P >= j, [L, U] = (0, _.XR)(x ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, f.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != L, B = y || G, Z = (0, v.Ft)(l), F = (0, h.yc)({
     location: "gift-button"
   }), V = l.type === A.d4z.DM;
   if (s) return null;

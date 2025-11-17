@@ -46,7 +46,7 @@ var r, Chunk533937 = require("./533937.js"),
   Chunk947599 = require("./947599.js"),
   D = {},
   w = "undefined" != typeof Uint8Array && Chunk143988 ? Chunk143988(Uint8Array) : r,
-  L = {
+  x = {
     __proto__: null,
     "%AggregateError%": "undefined" == typeof AggregateError ? r : AggregateError,
     "%Array%": Array,
@@ -132,8 +132,8 @@ var r, Chunk533937 = require("./533937.js"),
 if (Chunk143988) try {
   null.error
 } catch (e) {
-  var x = Chunk143988(Chunk143988(module));
-  L["%Error.prototype%"] = x
+  var L = Chunk143988(Chunk143988(module));
+  x["%Error.prototype%"] = L
 }
 var M = function e(t) {
     var n;
@@ -147,7 +147,7 @@ var M = function e(t) {
       var i = e("%AsyncGenerator%");
       i && A && (n = A(i.prototype))
     }
-    return L[t] = n, n
+    return x[t] = n, n
   },
   k = {
     __proto__: null,
@@ -224,8 +224,8 @@ var M = function e(t) {
   },
   K = function(e, t) {
     var n, r = e;
-    if (U(k, r) && (r = "%" + (n = k[r])[0] + "%"), U(L, r)) {
-      var i = L[r];
+    if (U(k, r) && (r = "%" + (n = k[r])[0] + "%"), U(x, r)) {
+      var i = x[r];
       if (i === D && (i = M(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {
         alias: n,
@@ -252,7 +252,7 @@ module.exports = function(e, t) {
       p = F(_, 0, 1),
       h = F(_, false);
     if (('"' === p || "'" === p || "`" === p || '"' === h || "'" === h || "`" === h) && p !== h) throw new c("property names with quotes must have matching quotes");
-    if ("constructor" !== _ && f || (s = true), r += "." + _, U(L, a = "%" + r + "%")) o = L[a];
+    if ("constructor" !== _ && f || (s = true), r += "." + _, U(x, a = "%" + r + "%")) o = x[a];
     else if (null != o) {
       if (!(_ in o)) {
         if (!t) throw new u("base intrinsic for " + e + " exists, but the property is not available.");
@@ -262,7 +262,7 @@ module.exports = function(e, t) {
         var m = O(o, _);
         o = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : o[_]
       } else f = U(o, _), o = o[_];
-      f && !s && (L[a] = o)
+      f && !s && (x[a] = o)
     }
   }
   return o

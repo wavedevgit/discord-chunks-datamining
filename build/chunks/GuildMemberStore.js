@@ -70,8 +70,8 @@ function R(e, t) {
 let P = new Chunk710845.Z("GuildMemberStore"),
   D = {},
   w = {},
-  L = {},
   x = {},
+  L = {},
   M = {},
   k = false,
   j = 0,
@@ -172,7 +172,7 @@ function X(e) {
     iconRoleId: N,
     hoistRoleId: P,
     highestRoleId: w
-  } = q(l, c), x = {
+  } = q(l, c), L = {
     userId: r,
     nick: i,
     guildId: a,
@@ -195,15 +195,15 @@ function X(e) {
     collectibles: b,
     displayNameStyles: v
   };
-  if ((0, g.yE)(null != (t = x.flags) ? t : 0, S.q.IS_GUEST) && (x.flags = (0, g.pj)(null != (n = x.flags) ? n : 0, S.q.BYPASSES_VERIFICATION)), null == D[a]) return x;
+  if ((0, g.yE)(null != (t = L.flags) ? t : 0, S.q.IS_GUEST) && (L.flags = (0, g.pj)(null != (n = L.flags) ? n : 0, S.q.BYPASSES_VERIFICATION)), null == D[a]) return L;
   if (r === O.default.getId())
     if (m.Z.isViewingRoles(a) || m.Z.isFullServerPreview(a)) {
       let e = m.Z.getViewingRoles(a);
-      L[a] = R(C({}, x, m.Z.getMemberOptions(a)), {
+      x[a] = R(C({}, L, m.Z.getMemberOptions(a)), {
         roles: null != e ? y.default.keys(e) : []
       })
-    } else null != L[a] && delete L[a];
-  return x
+    } else null != x[a] && delete x[a];
+  return L
 }
 
 function Q(e) {
@@ -241,7 +241,7 @@ function et(e) {
     guildMembers: t,
     guilds: n
   } = e;
-  k = true, D = C({}, t), w = {}, x = {}, er(n)
+  k = true, D = C({}, t), w = {}, L = {}, er(n)
 }
 
 function en(e) {
@@ -253,7 +253,7 @@ function en(e) {
 
 function er(e) {
   for (let t of e)
-    if (null != t.member && (null == x[t.id] ? x[t.id] = t.member : x[t.id] = R(C({}, t.member), {
+    if (null != t.member && (null == L[t.id] ? L[t.id] = t.member : L[t.id] = R(C({}, t.member), {
         roles: t.member.roles
       }), null != D[t.id])) {
       let e = D[t.id];
@@ -679,14 +679,14 @@ function ew(e) {
   eP(e, null == t ? true : t.guild_id)
 }
 
-function eL(e) {
+function ex(e) {
   let {
     messages: t
   } = e;
   t.forEach(e => ew(e))
 }
 
-function ex(e) {
+function eL(e) {
   let {
     pins: t
   } = e;
@@ -711,7 +711,7 @@ function eM(e) {
         n.push(e)
       })
     })
-  }), eL({
+  }), ex({
     messages: n
   })
 }
@@ -793,7 +793,7 @@ class eU extends(r = Chunk442837.ZP.Store) {
     let n = this.getTrueMember(e, t);
     if (null != n && t === O.default.getId() && (m.Z.isViewingRoles(e) || m.Z.isFullServerPreview(e))) {
       var r;
-      return null != (r = L[e]) ? r : n
+      return null != (r = x[e]) ? r : n
     }
     return n
   }
@@ -810,7 +810,7 @@ class eU extends(r = Chunk442837.ZP.Store) {
   }
   getCachedSelfMember(e) {
     var t;
-    return null != (t = x[e]) ? t : null
+    return null != (t = L[e]) ? t : null
   }
   getNick(e, t) {
     if (null == e || null == t) return null;
@@ -868,10 +868,10 @@ let eG = new eU(Chunk570140.Z, {
   LOCAL_MESSAGES_LOADED: ei,
   MESSAGE_CREATE: eD,
   MESSAGE_UPDATE: eD,
-  LOAD_MESSAGES_SUCCESS: eL,
-  LOAD_MESSAGES_AROUND_SUCCESS: eL,
-  LOAD_RECENT_MENTIONS_SUCCESS: eL,
-  LOAD_PINNED_MESSAGES_SUCCESS: ex,
+  LOAD_MESSAGES_SUCCESS: ex,
+  LOAD_MESSAGES_AROUND_SUCCESS: ex,
+  LOAD_RECENT_MENTIONS_SUCCESS: ex,
+  LOAD_PINNED_MESSAGES_SUCCESS: eL,
   SEARCH_MESSAGES_SUCCESS: eM,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: eM,
   MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eg,

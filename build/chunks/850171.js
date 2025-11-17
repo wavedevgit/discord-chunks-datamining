@@ -236,7 +236,7 @@ let C = async (e, t, r) => {
       let {
         "view.version": t
       } = e;
-      t !== A["x-ul-sdk-version"] && L(), s.e.removeListener("verify.view.version", B)
+      t !== A["x-ul-sdk-version"] && x(), s.e.removeListener("verify.view.version", B)
     };
   s.e.on("verify.view.version", B), window.UserLeap.useMobileStyling = P, (0, s.h)(A) ? (D = "ul-direct-embeded-frame", M = document.head, j = window, U = false, (() => {
     let e = (0, s.g)(window.UserLeap),
@@ -244,7 +244,7 @@ let C = async (e, t, r) => {
       n = window.UserLeap.forceDirectEmbed,
       r = "web" === e["userleap-platform"];
     return t || n && r
-  })() && (w(O, f), G.id = D, window.UserLeap.container.appendChild(G), x(), s.e.emit(s.S.SurveyLifeCycle, {
+  })() && (w(O, f), G.id = D, window.UserLeap.container.appendChild(G), L(), s.e.emit(s.S.SurveyLifeCycle, {
     state: "presented"
   }), s.e.emit(s.S.SurveyPresented, {
     name: s.S.SurveyPresented,
@@ -361,7 +361,7 @@ let D = "0px",
     let r = K();
     n && r && !window.UserLeap.useMobileStyling ? r.appendChild(window.UserLeap.container) : document.body.appendChild(window.UserLeap.container)
   },
-  L = (e, t) => {
+  x = (e, t) => {
     var n;
     G();
     let r = window.UserLeap.container;
@@ -380,12 +380,12 @@ let D = "0px",
       console.warn(`[Sprig] (ERR-412) Error removing UserLeap container by ${e} ` + r), t instanceof Error && window.UserLeap.reportError("dismissActiveSurvey", t)
     }
   },
-  x = () => {
+  L = () => {
     Chunk555256.e.once(Chunk555256.S.SurveyWillClose, ({
       initiator: e,
       studyType: t
     }) => {
-      s.e.removeAllListeners(s.S.CloseSurveyOnOverlayClick), L(e, t)
+      s.e.removeAllListeners(s.S.CloseSurveyOnOverlayClick), x(e, t)
     })
   },
   M = (e, t, n, r) => {
@@ -470,7 +470,7 @@ let D = "0px",
     let c = document.createElement("iframe");
     c.id = o, c.setAttribute("title", "Sprig User Feedback Dialog");
     let u = M(c, e, t, r);
-    x();
+    L();
     let d = false;
     c.setHeight = e => {
       parseInt(c.style.height) == e && d || (d = true, c.style.height = `${e}px`, s.e.emit(s.S.SurveyHeight, {
@@ -947,8 +947,8 @@ let eg = e => {
       r = (0, s.r)("sdk_dom_nodes_count"), i = (0, s.r)("sdk_page_html_characters"), eE(), setInterval(eE, e)
     })(), eD())
   },
-  eL = "test",
-  ex = ["popState", "pushState", "replaceState"],
+  ex = "test",
+  eL = ["popState", "pushState", "replaceState"],
   eM = {},
   ek = "!email",
   ej = "pageUrl",
@@ -976,7 +976,7 @@ function eG(e) {
   })(), s.a.getItem("sprig.isCapturingHeatmap") && (null == (n = null == (t = s.m.replay) ? true : t.checkPendingHeatmapsUrl()) || n.then(e => {
     var t;
     e && (null == (t = s.m.replay) || t.uploadReadyPendingCaptures(true))
-  })), !ei() && a && c && c !== window.location.href && e && ex.includes(e.type) && window.UserLeap("dismissActiveSurvey", s.D.PageChange)
+  })), !ei() && a && c && c !== window.location.href && e && eL.includes(e.type) && window.UserLeap("dismissActiveSurvey", s.D.PageChange)
 }
 let eB = {
     capture: true
@@ -1065,7 +1065,7 @@ function eW() {
 }
 async function eK(e, t) {
   let n = S();
-  e && !t && (window.UserLeap._config.mode = eL);
+  e && !t && (window.UserLeap._config.mode = ex);
   let r = N((0, s.g)(window.UserLeap)),
     i = await I(function(e) {
       let t = new URL(A("1", [v], "questions"));

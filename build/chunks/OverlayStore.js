@@ -462,11 +462,11 @@ function w(e) {
     meta: n
   } = e;
   return N(t, (e, t) => {
-    L(e, n)
+    x(e, n)
   })
 }
 
-function L(e, t) {
+function x(e, t) {
   var n;
   i = O(b({}, i), {
     [e.id]: e.merge({
@@ -475,7 +475,7 @@ function L(e, t) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     widgetId: t,
     pinned: n
@@ -847,7 +847,7 @@ E(z, "displayName", "LayoutStore"), E(z, "persistKey", "LayoutStore"), E(z, "mig
 }]);
 let q = new z(Chunk570140.Z, {
   LAYOUT_CREATE: A,
-  LAYOUT_SET_PINNED: x,
+  LAYOUT_SET_PINNED: L,
   LAYOUT_UPDATE_WIDGET: R,
   LAYOUT_SET_TOP_WIDGET: P,
   LAYOUT_DELETE_WIDGET: U,

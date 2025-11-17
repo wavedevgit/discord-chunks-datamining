@@ -254,7 +254,7 @@ class ea extends Chunk473749.Component {
         name: Chunk388032.intl.string(Chunk388032.t["+o/sOo"]),
         value: Chunk524437.hg.H23
       }],
-      onChange: e => x.hg.updateSetting(e),
+      onChange: e => L.hg.updateSetting(e),
       value: module
     })
   }
@@ -377,12 +377,12 @@ class ea extends Chunk473749.Component {
       let {
         value: t
       } = e;
-      x.jU.updateSetting(t === J), (0, h.ZZ)()
+      L.jU.updateSetting(t === J), (0, h.ZZ)()
     }), K(this, "handleUIDensityChange", e => {
       let {
         value: t
       } = e;
-      t !== c.Pi.UNSET_UI_DENSITY && x.YC.updateSetting(t)
+      t !== c.Pi.UNSET_UI_DENSITY && L.YC.updateSetting(t)
     })
   }
 }

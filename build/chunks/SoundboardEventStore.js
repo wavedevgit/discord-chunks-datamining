@@ -85,7 +85,7 @@ function C(e) {
     soundId: n,
     userId: r
   } = e;
-  if (!x()) return;
+  if (!L()) return;
   let i = n.toString();
   r !== (null == (t = f.default.getCurrentUser()) ? true : t.id) && P(i) && N(i)
 }
@@ -120,7 +120,7 @@ function w() {
   S.overwriteHistory(D(null != exports ? exports : {}), I)
 }
 
-function L(e) {
+function x(e) {
   let {
     settings: {
       type: t
@@ -130,7 +130,7 @@ function L(e) {
   M() && t === E.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (I = [])
 }
 
-function x() {
+function L() {
   return (0, Chunk164878.v)({
     location: "soundboard_event_store",
     autoTrackExposure: false
@@ -167,5 +167,5 @@ b(k, "displayName", "SoundboardEventStore"), b(k, "persistKey", "SoundboardEvent
 let j = new k(Chunk570140.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: A,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: C,
-  USER_SETTINGS_PROTO_UPDATE: L
+  USER_SETTINGS_PROTO_UPDATE: x
 })

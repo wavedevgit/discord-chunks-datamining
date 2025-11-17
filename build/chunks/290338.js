@@ -36,8 +36,8 @@ let v = (0, Chunk473749.createContext)(null),
       validationBehavior: C
     }), R = (0, O.useRef)(null), [P, D] = (0, a.xc)(!e["aria-label"] && !e["aria-labelledby"]), {
       groupProps: w,
-      labelProps: L,
-      fieldProps: x,
+      labelProps: x,
+      fieldProps: L,
       buttonProps: M,
       dialogProps: k,
       calendarProps: j,
@@ -84,13 +84,13 @@ let v = (0, Chunk473749.createContext)(null),
           ref: R,
           isInvalid: N.isInvalid
         }],
-        [o.bd, x],
+        [o.bd, L],
         [r.b, {
           ...M,
           isPressed: N.isOpen
         }],
         [f.n, {
-          ...L,
+          ...x,
           ref: P,
           elementType: "span"
         }],

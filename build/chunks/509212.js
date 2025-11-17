@@ -17,7 +17,7 @@ require.d(exports, {
   Dr: () => ez,
   F9: () => tV,
   FI: () => tU,
-  FX: () => eL,
+  FX: () => ex,
   Fs: () => tD,
   GN: () => eP,
   Gd: () => tj,
@@ -26,7 +26,7 @@ require.d(exports, {
   Jg: () => eH,
   K: () => eB,
   KM: () => eJ,
-  Kr: () => ex,
+  Kr: () => eL,
   LM: () => eZ,
   MC: () => J,
   Mo: () => et,
@@ -56,11 +56,11 @@ require.d(exports, {
   Zp: () => tG,
   _D: () => ei,
   _j: () => tN,
-  _p: () => tx,
+  _p: () => tL,
   _x: () => el,
   b7: () => ta,
   bA: () => tH,
-  f$: () => tL,
+  f$: () => tx,
   f2: () => e2,
   fY: () => tI,
   gI: () => tT,
@@ -469,15 +469,15 @@ function eC(e, t, n) {
 }
 let eN = e => {
   switch (e) {
-    case L.y$.XBOX:
+    case x.y$.XBOX:
       return Z.intl.string(Z.t.G84UWZ);
-    case L.y$.PLAYSTATION:
+    case x.y$.PLAYSTATION:
       return Z.intl.string(Z.t["6IeKx2"]);
-    case L.y$.SWITCH:
+    case x.y$.SWITCH:
       return Z.intl.string(Z.t["1pp0su"]);
-    case L.y$.PC:
+    case x.y$.PC:
       return Z.intl.string(Z.t["YK+wUg"]);
-    case L.y$.CROSS_PLATFORM:
+    case x.y$.CROSS_PLATFORM:
       return Z.intl.string(Z.t.UWVbzV)
   }
 };
@@ -502,12 +502,12 @@ function eR(e) {
 }
 
 function eP(e) {
-  return Object.keys(U.a_).includes(L.jn[e])
+  return Object.keys(U.a_).includes(x.jn[e])
 }
 
 function eD(e, t) {
   if (!eP(t)) returnfalse;
-  let n = L.jn[t];
+  let n = x.jn[t];
   return (0, A.yE)(e.dismissedQuestContent, U.a_[n])
 }
 
@@ -516,12 +516,12 @@ function ew(e) {
   return (null == t ? true : t.type) === c.w.COLLECTIBLE ? t : null
 }
 
-function eL(e) {
+function ex(e) {
   let t = ew(e);
   return null != t && "expiresAtPremium" in t && null != t.expiresAtPremium ? tC(t.expiresAtPremium) : null
 }
 
-function ex(e) {
+function eL(e) {
   let t = ew(e);
   if (null == t || !("expiresAt" in t) || null == t.expiresAt) return null;
   let n = new Date(e.expiresAt),
@@ -998,15 +998,15 @@ function tw(e) {
   return t && r.push(U.cd.DESKTOP), n && r.push(U.cd.CONSOLE), r
 }
 
-function tL(e) {
+function tx(e) {
   var t;
   let n = null == (t = ew(e)) ? true : t.expirationMode;
   return null != n && K.has(n)
 }
 
-function tx(e) {
+function tL(e) {
   var t;
-  return tL(e) && (null == (t = ew(e)) ? true : t.expirationMode) === l.n.PREMIUM_PERMANENT
+  return tx(e) && (null == (t = ew(e)) ? true : t.expirationMode) === l.n.PREMIUM_PERMANENT
 }
 
 function tM(e) {
@@ -1039,9 +1039,9 @@ function tU(e, t) {
 
 function tG(e) {
   return ({
-    [L.jn.QUEST_BAR]: L.Ok.DESKTOP_ACCOUNT_PANEL_AREA,
-    [L.jn.QUEST_BAR_V2]: L.Ok.DESKTOP_ACCOUNT_PANEL_AREA,
-    [L.jn.QUEST_BAR_MOBILE]: L.Ok.MOBILE_HOME_DOCK_AREA
+    [x.jn.QUEST_BAR]: x.Ok.DESKTOP_ACCOUNT_PANEL_AREA,
+    [x.jn.QUEST_BAR_V2]: x.Ok.DESKTOP_ACCOUNT_PANEL_AREA,
+    [x.jn.QUEST_BAR_MOBILE]: x.Ok.MOBILE_HOME_DOCK_AREA
   })[e]
 }
 
@@ -1124,7 +1124,7 @@ function tJ(e) {
     questId: r,
     sourceQuestContent: i,
     videoSessionId: a
-  } = e, o = x.ZP.getState().getVideoProgress(r);
+  } = e, o = L.ZP.getState().getVideoProgress(r);
   if (null == o) return;
   let s = w.Z.getQuest(r);
   null != s && (null == (t = s.userStatus) ? true : t.enrolledAt) != null && (null == (n = s.userStatus) ? true : n.completedAt) == null && tU(s, o.maxTimestampSec);

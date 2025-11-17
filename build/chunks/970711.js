@@ -15,7 +15,7 @@ require.d(exports, {
   BQ: () => eN,
   C2: () => ej,
   Cn: () => ea,
-  D7: () => eL,
+  D7: () => ex,
   DZ: () => ev,
   F8: () => em,
   G0: () => ts,
@@ -37,7 +37,7 @@ require.d(exports, {
   S: () => ei,
   S6: () => J,
   Tc: () => e1,
-  UE: () => ex,
+  UE: () => eL,
   Ub: () => v,
   Uj: () => eC,
   V3: () => e2,
@@ -285,15 +285,15 @@ function P(e, t, n, i) {
 }
 let D = ["bytes"],
   w = ["omit", "same-origin", "include"],
-  L = ["same-origin", "no-cors", "cors", "navigate"],
-  x = "undefined" == typeof FinalizationRegistry ? {
+  x = ["same-origin", "no-cors", "cors", "navigate"],
+  L = "undefined" == typeof FinalizationRegistry ? {
     register: () => {},
     unregister: () => {}
   } : new FinalizationRegistry(e => r.__wbg_blockeddomainsstore_free(e >>> 0, 1));
 class M {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, x.unregister(this), module
+    return this.__wbg_ptr = 0, L.unregister(this), module
   }
   free() {
     let e = this.__destroy_into_raw();
@@ -668,13 +668,13 @@ function ew() {
   }, arguments)
 }
 
-function eL() {
+function ex() {
   return u(function(e) {
     return new Blob(e)
   }, arguments)
 }
 
-function ex(e) {
+function eL(e) {
   return e.next
 }
 
@@ -755,7 +755,7 @@ function eQ(e, t, n) {
 }
 
 function eJ(e, t) {
-  e.mode = L[t]
+  e.mode = x[t]
 }
 
 function e$(e, t) {

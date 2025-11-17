@@ -140,7 +140,7 @@ function w(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     saveAsDefault: t
   } = e;
@@ -151,7 +151,7 @@ function L(e) {
   }), a = null
 }
 
-function x(e) {
+function L(e) {
   let {
     status: t,
     emoji: n
@@ -233,7 +233,7 @@ let U = new j(Chunk570140.Z, {
   UPDATE_HANG_STATUS_CUSTOM: D,
   UPDATE_HANG_STATUS_GAME_ACTIVITY: w,
   DELETE_INVALID_HANG_STATUSES: k,
-  CLEAR_HANG_STATUS: L,
-  UPDATE_FAVORITE_HANG_STATUS: x,
+  CLEAR_HANG_STATUS: x,
+  UPDATE_FAVORITE_HANG_STATUS: L,
   RESET_HANG_STATUS_STATE: R
 })

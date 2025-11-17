@@ -42,8 +42,8 @@ function I(e) {
   (0, u.Z)(null == t ? true : t.id);
   let D = (null == a ? true : a.discoverable) !== false ? a : null,
     w = (0, f.E)("ActivityStatus", I),
-    L = (0, l.e7)([_.default], () => _.default.getId() === (null == t ? true : t.id)),
-    x = (0, l.e7)([d.Z], () => w ? L ? d.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === O.IIU.HANG_STATUS) : null : null),
+    x = (0, l.e7)([_.default], () => _.default.getId() === (null == t ? true : t.id)),
+    L = (0, l.e7)([d.Z], () => w ? x ? d.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === O.IIU.HANG_STATUS) : null : null),
     M = i.useMemo(() => {
       var e, t;
       let r = null == n ? true : n.find(e => {
@@ -58,7 +58,7 @@ function I(e) {
     }, [n]);
   if ((0, l.e7)([p.Z], () => p.Z.isBlockedOrIgnored(null == t ? true : t.id))) return null;
   let k = (null == t ? true : t.bot) === true,
-    j = ((null == M ? true : M.state) != null || null != x) && "xs" === A,
+    j = ((null == M ? true : M.state) != null || null != L) && "xs" === A,
     U = () => {
       if (null != D) return (0, r.jsx)(m.Z, {
         stream: D,
@@ -97,7 +97,7 @@ function I(e) {
       [v.textXs]: "xs" === A,
       [v.textSm]: "sm" === A
     }),
-    B = () => null == M && null == x ? null : (0, r.jsx)(g.Z, {
+    B = () => null == M && null == L ? null : (0, r.jsx)(g.Z, {
       customStatusActivity: M,
       textSize: A,
       animateEmoji: C,
@@ -107,7 +107,7 @@ function I(e) {
       iconClassName: S,
       tooltipClassName: G,
       voiceChannel: I,
-      hangStatus: x,
+      hangStatus: L,
       userId: null == t ? true : t.id
     });
   return (0, r.jsxs)("div", {

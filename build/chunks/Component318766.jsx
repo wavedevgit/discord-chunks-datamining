@@ -2,7 +2,7 @@
 /** chunk id: 318766, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L,
+  Z: () => x,
   u: () => P
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -98,7 +98,7 @@ function w(e) {
     "--custom-emoji-sprite-col": e % C
   }
 }
-let L = function(e) {
+let x = function(e) {
   let {
     tabIndex: t,
     className: n,
@@ -107,15 +107,15 @@ let L = function(e) {
     onClick: S,
     "aria-controls": C,
     focusProps: N,
-    ref: L,
-    allowKeybindHint: x
+    ref: x,
+    allowKeybindHint: L
   } = e, [M, k] = i.useState(false), [j, U] = i.useState(50), G = M || I, B = (0, E.l)(v, "emojiButton", G ? "Hovered" : "Normal"), Z = w(j), F = i.useCallback(() => {
     if (G) return;
     let e = Math.floor(Math.random() * R);
     k(true), U(e), (0, m.x)(y.qR.EmojiButtonMouseEntered)
   }, [G, k, U]), V = i.useCallback(() => {
     k(false)
-  }, [k]), H = i.useCallback(() => (0, m.x)(y.qR.EmojiButtonFocused), []), Y = (0, g.B4)(), [W, K] = (0, h.US)(Y ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), z = W === c.z.TRIAL_NUX_EMOJI_BUTTON, q = !I && z, X = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), Q = i.useRef(null), J = null != L ? L : Q, $ = (0, p.v)(f.S), {
+  }, [k]), H = i.useCallback(() => (0, m.x)(y.qR.EmojiButtonFocused), []), Y = (0, g.B4)(), [W, K] = (0, h.US)(Y ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), z = W === c.z.TRIAL_NUX_EMOJI_BUTTON, q = !I && z, X = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), Q = i.useRef(null), J = null != x ? x : Q, $ = (0, p.v)(f.S), {
     tooltipsWithKeybinds: ee,
     expressionsCombinedIntoEmojiButton: et
   } = p.n.useConfig({
@@ -183,7 +183,7 @@ let L = function(e) {
     targetElementRef: J,
     shouldShow: true,
     text: en,
-    keyboardShortcut: et ? true : x ? $ : true,
+    keyboardShortcut: et ? true : L ? $ : true,
     children: er({})
   }) : er({})
 }

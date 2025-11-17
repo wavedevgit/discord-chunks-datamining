@@ -41,12 +41,12 @@ function O(e) {
     purchaseErrorBlockRef: P,
     planError: D,
     onScroll: w,
-    scrollerClassName: L,
-    hasCurrencies: x = false
+    scrollerClassName: x,
+    hasCurrencies: L = false
   } = e, M = null;
   null != v && null == (0, p.ly)(v) ? M = v : null != R ? M = R : null != D && (M = D);
   let k = null != M ? M.message : "";
-  null != M && M instanceof d.HF && (M.code === f.SM.CARD_DECLINED && x && (k += " ".concat(E.intl.string(E.t.iWvwQS))), M.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (k = E.intl.string(E.t.ypuSd8)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (k = E.intl.string(E.t.mXMmWE)));
+  null != M && M instanceof d.HF && (M.code === f.SM.CARD_DECLINED && L && (k += " ".concat(E.intl.string(E.t.iWvwQS))), M.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (k = E.intl.string(E.t.ypuSd8)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (k = E.intl.string(E.t.mXMmWE)));
   let {
     stripe: j
   } = (0, _.JL)();
@@ -104,7 +104,7 @@ function O(e) {
           sideMargin: 20,
           children: (0, r.jsx)(c.h21, {
             onScroll: w,
-            className: s()(b.scroller, L),
+            className: s()(b.scroller, x),
             children: o
           })
         })]

@@ -36,7 +36,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,7 +52,7 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -238,7 +238,7 @@ let H = e => {
           d = null != l ? _.Z.getRole(l.id, s) : null;
         if (null == d) return {
           type: "text",
-          content: "@".concat(L.intl.string(L.t["YV4F/n"]))
+          content: "@".concat(x.intl.string(x.t["YV4F/n"]))
         };
         let f = (0, u.zI)(null == l ? true : l.id, d) && !(0, c.Gr)(d);
         return {
@@ -286,7 +286,7 @@ let H = e => {
         }
         let l = e[1],
           c = null != l && D.Xyh.test(l.trim()),
-          u = c && n.unknownUserMentionPlaceholder ? "@".concat(L.intl.string(L.t.sKdZ6U)) : e[0];
+          u = c && n.unknownUserMentionPlaceholder ? "@".concat(x.intl.string(x.t.sKdZ6U)) : e[0];
         return {
           userId: i,
           channelId: n.channelId,
@@ -351,7 +351,7 @@ let H = e => {
           channelId: n.channelId,
           content: [{
             type: "text",
-            content: L.intl.string(L.t["11pdXZ"])
+            content: x.intl.string(x.t["11pdXZ"])
           }],
           icon: true
         };
@@ -363,7 +363,7 @@ let H = e => {
           channelId: n.channelId,
           content: [{
             type: "text",
-            content: "".concat(null != (a = null == l ? true : l.name) ? a : L.intl.string(L.t["11pdXZ"]))
+            content: "".concat(null != (a = null == l ? true : l.name) ? a : x.intl.string(x.t["11pdXZ"]))
           }],
           icon: null != l && null != l.icon_hash ? m.ZP.getApplicationIconURL({
             id: l.id,

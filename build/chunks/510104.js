@@ -43,13 +43,13 @@ function f(e, t) {
       strategy: "absolute",
       placement: _
     }),
-    L = (0, s.Z)(Object.assign({}, N, w)),
-    x = O === l.k5 ? L : D,
+    x = (0, s.Z)(Object.assign({}, N, w)),
+    L = O === l.k5 ? x : D,
     M = {
-      top: P.top - x.top + A.top,
-      bottom: x.bottom - P.bottom + A.bottom,
-      left: P.left - x.left + A.left,
-      right: x.right - P.right + A.right
+      top: P.top - L.top + A.top,
+      bottom: L.bottom - P.bottom + A.bottom,
+      left: P.left - L.left + A.left,
+      right: L.right - P.right + A.right
     },
     k = e.modifiersData.offset;
   if (O === l.k5 && k) {

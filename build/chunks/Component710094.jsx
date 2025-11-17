@@ -2,7 +2,7 @@
 /** chunk id: 710094, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => x
+  l: () => L
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,12 +34,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk108626 = require("./108626.js");
-let L = 500;
+let x = 500;
 
-function x(e) {
+function L(e) {
   var t, n;
   let a, {
-      handleStepChange: x,
+      handleStepChange: L,
       trialId: M,
       trialFooterMessageOverride: k,
       reviewWarningMessage: j,
@@ -91,7 +91,7 @@ function x(e) {
     } = (0, m.wD)();
   o()(null != ec, "Step should be set");
   let eS = i.useRef(null),
-    [eA, eC] = (0, l.Z)(false, L),
+    [eA, eC] = (0, l.Z)(false, x),
     eN = null != (n = null != M ? M : F) ? n : null,
     eR = null != eN && (!ed || R.nG[eN].skus.includes(er)) ? eN : null,
     eP = (0, f.N)(F),
@@ -104,16 +104,16 @@ function x(e) {
       behavior: "smooth"
     })
   }, [$]);
-  let eL = i.useCallback((e, t, n) => {
-      K(e), null != t && ep(t), null != n && eh(n), x(E.h8.CONFIRM, {
+  let ex = i.useCallback((e, t, n) => {
+      K(e), null != t && ep(t), null != n && eh(n), L(E.h8.CONFIRM, {
         fulfillment: {
           subscription: e,
           entitlements: t
         }
       })
-    }, [x, K, ep, eh]),
-    ex = (0, S.m)(Q, X),
-    eM = null != en && R.o4.has(en.id) && null != ex && !(0, c.aQ)(ex) ? Error(D.intl.string(D.t["2ik8ih"])) : null,
+    }, [L, K, ep, eh]),
+    eL = (0, S.m)(Q, X),
+    eM = null != en && R.o4.has(en.id) && null != eL && !(0, c.aQ)(eL) ? Error(D.intl.string(D.t["2ik8ih"])) : null,
     ek = i.useRef(null),
     [ej, eU] = i.useState(null),
     eG = !eO && null != eP && null != er && R.nG[eP.trial_id].skus.includes(er),
@@ -130,17 +130,17 @@ function x(e) {
     eY = eO && e_ === P.GZ.ONE_TIME,
     eW = eY || (eH ? eV && ed : ed),
     eK = (0, u.id)(en, eO, eT),
-    ez = i.useCallback(() => eH ? void x(E.h8.SKU_SELECT) : eK ? void x(E.h8.SELECT_FREE_SKU) : eY ? x(E.h8.GIFT_CUSTOMIZATION) : x(E.h8.PLAN_SELECT), [x, eH, eY, eK]),
+    ez = i.useCallback(() => eH ? void L(E.h8.SKU_SELECT) : eK ? void L(E.h8.SELECT_FREE_SKU) : eY ? L(E.h8.GIFT_CUSTOMIZATION) : L(E.h8.PLAN_SELECT), [L, eH, eY, eK]),
     eq = false,
     eX = () => {
-      x(E.h8.ADD_PAYMENT_STEPS)
+      L(E.h8.ADD_PAYMENT_STEPS)
     };
   return e_ === P.GZ.ONE_TIME ? (eq = null == ei && null != X || null != ee, a = (0, r.jsx)(T.Z, {
     hasLegalTermsFlash: eA,
     legalTermsNodeRef: ek,
     onPaymentSourceChange: e => eo(null != e ? e.id : null),
-    handlePaymentSourceAdd: () => x(E.h8.ADD_PAYMENT_STEPS)
-  })) : (eq = null == eg || !eO && null != ex && e_ === P.GZ.SUBSCRIPTION && eG && !ex.canRedeemTrial(), null == W || eE || eO ? (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
+    handlePaymentSourceAdd: () => L(E.h8.ADD_PAYMENT_STEPS)
+  })) : (eq = null == eg || !eO && null != eL && e_ === P.GZ.SUBSCRIPTION && eG && !eL.canRedeemTrial(), null == W || eE || eO ? (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
     selectedPlanId: en.id,
     planGroup: U,
     paymentSources: Q,
@@ -148,7 +148,7 @@ function x(e) {
     priceOptions: J,
     currencies: q,
     onCurrencyChange: e => ea(e),
-    handlePaymentSourceAdd: () => x(E.h8.ADD_PAYMENT_STEPS),
+    handlePaymentSourceAdd: () => L(E.h8.ADD_PAYMENT_STEPS),
     setHasAcceptedTerms: ef,
     legalTermsNodeRef: ek,
     hasLegalTermsFlash: eA,
@@ -197,7 +197,7 @@ function x(e) {
         premiumSubscription: null != W ? W : null,
         setPurchaseState: es,
         onBack: ez,
-        onNext: eL,
+        onNext: ex,
         onPurchaseError: e => el(e),
         legalTermsNodeRef: ek,
         flashLegalTerms: () => eC(true),

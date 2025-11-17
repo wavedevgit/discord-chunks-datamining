@@ -15,8 +15,8 @@ require.d(exports, {
   eT: () => Y,
   gU: () => et,
   gl: () => F,
-  is: () => L,
-  it: () => x,
+  is: () => x,
+  it: () => L,
   lL: () => ee,
   lx: () => Q,
   m0: () => k,
@@ -134,13 +134,13 @@ async function w(e) {
     errorHints: []
   }
 }
-async function L(e) {
+async function x(e) {
   await i.tn.post({
     url: S.ANM.QUEST_ON_CONSOLE_STOP(e),
     rejectWithError: false
   })
 }
-async function x() {
+async function L() {
   await Chunk544891.tn.del({
     url: Chunk981631.ANM.QUESTS_RESET_RECENT_QUEST_COMPLETIONS,
     rejectWithError: false

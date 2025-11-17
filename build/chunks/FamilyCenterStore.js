@@ -55,10 +55,10 @@ let h = null,
   m = null,
   g = {},
   E = false,
-  b = x(),
+  b = L(),
   y = M(),
   O = null,
-  v = L(),
+  v = x(),
   I = false,
   T = false,
   S = null,
@@ -70,12 +70,12 @@ let h = null,
   D = {},
   w = {};
 
-function L() {
+function x() {
   var e, t, n, r;
   return (null == (t = window) || null == (e = exports.location) ? true : module.pathname) === Chunk292352.ix.FAMILY_CENTER_MY_FAMILY ? Chunk292352.dG.REQUESTS : (null == (r = window) || null == (n = Chunk133080.location) ? true : require.pathname) === Chunk292352.ix.FAMILY_CENTER_SETTINGS ? Chunk292352.dG.SETTINGS : Chunk292352.dG.ACTIVITY
 }
 
-function x() {
+function L() {
   let e = new Map;
   return module.set(Chunk292352.MY.USER_ADD, new Map), module.set(Chunk292352.MY.GUILD_ADD, new Map), module.set(Chunk292352.MY.USER_INTERACTION, new Map), module.set(Chunk292352.MY.GUILD_INTERACTION, new Map), module.set(Chunk292352.MY.USER_CALLED, new Map), module.set(Chunk292352.MY.TOTAL_VOICE_MINUTES, new Map), module.set(Chunk292352.MY.PURCHASES, new Map), module
 }
@@ -104,7 +104,7 @@ function j(e) {
 }
 
 function U(e, t) {
-  let n = t ? b : x();
+  let n = t ? b : L();
   return e.forEach(e => {
     let t = e.display_type,
       r = n.get(t);
@@ -289,7 +289,7 @@ function en(e) {
 }
 
 function er() {
-  h = null, m = null, g = {}, b = x(), y = M(), w = {}, T = false, S = null, v = L(), E = false, C = [], N = [], R = null, P = null, D = {}
+  h = null, m = null, g = {}, b = L(), y = M(), w = {}, T = false, S = null, v = x(), E = false, C = [], N = [], R = null, P = null, D = {}
 }
 class ei extends Chunk750041.Z {
   initialize() {

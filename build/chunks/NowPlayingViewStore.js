@@ -97,7 +97,7 @@ function et() {
 }
 
 function en(e) {
-  return L.Z.findActivity(e, e => e.type !== U.IIU.CUSTOM_STATUS)
+  return x.Z.findActivity(e, e => e.type !== U.IIU.CUSTOM_STATUS)
 }
 
 function er(e) {
@@ -158,7 +158,7 @@ function eu(e, t) {
 }
 
 function ed(e) {
-  return x.Z.isFriend(e.id)
+  return L.Z.isFriend(e.id)
 }
 
 function ef(e, t, n) {
@@ -173,7 +173,7 @@ function ef(e, t, n) {
     g = false,
     E = [];
   for (let e of s) {
-    var S, A, R, x;
+    var S, A, R, L;
     let t = C.Z.getAnyStreamForUser(e.id),
       n = N.Z.getChannel(null == t ? true : t.channelId);
     if ((0, p.Y3)(n)) continue;
@@ -217,7 +217,7 @@ function ef(e, t, n) {
       game: d,
       activity: r,
       activityUser: e,
-      startedPlayingTime: null != (x = null == r || null == (S = r.timestamps) ? true : S.start) ? x : null == r ? true : r.created_at,
+      startedPlayingTime: null != (L = null == r || null == (S = r.timestamps) ? true : S.start) ? L : null == r ? true : r.created_at,
       playingMembers: O
     })
   }
@@ -260,7 +260,7 @@ function ef(e, t, n) {
     isSpotifyActivity: g,
     priorityMembers: f.map(e => ({
       user: e,
-      status: L.Z.getStatus(e.id)
+      status: x.Z.getStatus(e.id)
     })),
     partiedMembers: s,
     showPlayingMembers: _,
@@ -308,7 +308,7 @@ function em(e) {
 }
 
 function eg(e) {
-  return e.partiedMembers.some(e => x.Z.isBlockedOrIgnored(e.id))
+  return e.partiedMembers.some(e => L.Z.isBlockedOrIgnored(e.id))
 }
 
 function eE(e) {

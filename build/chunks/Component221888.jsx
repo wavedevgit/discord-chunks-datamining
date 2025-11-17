@@ -2,7 +2,7 @@
 /** chunk id: 221888, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -148,9 +148,9 @@ function w(e) {
     })
   })
 }
-let L = [];
+let x = [];
 
-function x(e) {
+function L(e) {
   let {
     channelId: t,
     guildId: a,
@@ -159,18 +159,18 @@ function x(e) {
     compact: m = false,
     disableInteraction: y = false,
     maxVisibleUsers: I = 3
-  } = e, S = i.useRef(null), C = (0, h.Z)(), [P, x] = i.useState(false), M = i.useRef(new u.sW(R, () => x(false))), k = (0, c.Wu)([g.Z, E.default], () => {
+  } = e, S = i.useRef(null), C = (0, h.Z)(), [P, L] = i.useState(false), M = i.useRef(new u.sW(R, () => L(false))), k = (0, c.Wu)([g.Z, E.default], () => {
     if (s.type === O.fO.STREAM) {
       let e = g.Z.getViewerIds(s.id);
-      return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(b.lm) : L
+      return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(b.lm) : x
     }
-    return s.type === O.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => E.default.getUser(e.userId)).filter(b.lm) : L
+    return s.type === O.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => E.default.getUser(e.userId)).filter(b.lm) : x
   }, [s]);
   i.useEffect(() => {
-    C && (M.current.cancel(), x(false))
+    C && (M.current.cancel(), L(false))
   }, [C]);
   let j = i.useCallback(() => {
-      M.current.cancel(), x(true)
+      M.current.cancel(), L(true)
     }, []),
     U = i.useCallback(() => {
       M.current.delay()

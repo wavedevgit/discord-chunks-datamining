@@ -417,12 +417,12 @@ function w() {
   return r
 }
 
-function L(e) {
+function x(e) {
   var t = eg(String(e));
   returnfalse !== T.test(t)
 }
 
-function x(e) {
+function L(e) {
   if (true === e) return new eh;
   for (var t = new eh, e = "string" == typeof e ? [e] : e, n = eE(e), r = n.length, i = 0; i < r;) {
     var a = String(i);
@@ -575,7 +575,7 @@ function Y(e, t, n) {
       if (arguments[0] === y) return r
     }
   }), r["[[initializedIntlObject]]"] = true;
-  var a = x(t);
+  var a = L(t);
   n = true === n ? {} : eE(n);
   var o = new ep,
     s = F(n, "localeMatcher", "string", new eh("lookup", "best fit"), "best fit");
@@ -587,7 +587,7 @@ function Y(e, t, n) {
     _ = F(n, "style", "string", new eh("decimal", "percent", "currency"), "decimal");
   r["[[style]]"] = _;
   var p = F(n, "currency", "string");
-  if (true !== p && !L(p)) throw RangeError("'" + p + "' is not a valid currency code");
+  if (true !== p && !x(p)) throw RangeError("'" + p + "' is not a valid currency code");
   if ("currency" === _ && true === p) throw TypeError("Currency code is required when style is currency");
   if ("currency" === _) {
     p = p.toUpperCase(), r["[[currency]]"] = p;
@@ -752,7 +752,7 @@ function $(e, t, n) {
       if (arguments[0] === y) return r
     }
   }), r["[[initializedIntlObject]]"] = true;
-  var a = x(t),
+  var a = L(t),
     n = en(n, "any", "date"),
     o = new ep;
   v = F(n, "localeMatcher", "string", new eh("lookup", "best fit"), "best fit"), o["[[localeMatcher]]"] = v;
@@ -987,7 +987,7 @@ function ef(e) {
   var t = em(),
     n = arguments[1],
     r = this["[[availableLocales]]"],
-    i = x(e);
+    i = L(e);
   return t.exp.test(t.input), Z(r, i, n)
 }
 

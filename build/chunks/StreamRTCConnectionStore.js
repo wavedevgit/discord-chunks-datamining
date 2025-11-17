@@ -42,7 +42,7 @@ let S = {},
   D = Chunk981631.hVg.THEATRE,
   w = {};
 
-function L(e, t, n, i) {
+function x(e, t, n, i) {
   return o()(null != r, "Creating RTCConnection without session."), new _.Z({
     sessionId: r,
     streamKey: e,
@@ -55,18 +55,18 @@ function L(e, t, n, i) {
   })
 }
 
-function x() {
+function L() {
   l().forEach(w, (e, t) => {
     e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete w[t], delete P[t]
   })
 }
 
 function M(e) {
-  r = e.sessionId, x()
+  r = e.sessionId, L()
 }
 
 function k() {
-  r = null, x()
+  r = null, L()
 }
 
 function j(e) {
@@ -147,7 +147,7 @@ function G(e) {
       goLiveModalDurationMs: R[t],
       analyticsLocations: null == (c = S[t]) ? true : c.analyticsLocations
     });
-    o = L(t, n, r, e), w[t] = o
+    o = x(t, n, r, e), w[t] = o
   }
   delete P[t], d.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",

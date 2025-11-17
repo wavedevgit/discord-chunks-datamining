@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   E2: () => A,
-  Kp: () => L,
+  Kp: () => x,
   LI: () => b,
   MH: () => w,
   Qr: () => E,
@@ -102,7 +102,7 @@ let f = 60,
       n = (0, Chunk277537.vE)("settings-controls");
     return (null == module ? true : module.nsfwAllowed) === false && exports && require
   },
-  L = (e, t) => t > 0 && 0 === e ? d.intl.formatToPlainString(u.default["L/Cj7S"], {
+  x = (e, t) => t > 0 && 0 === e ? d.intl.formatToPlainString(u.default["L/Cj7S"], {
     callCount: t
   }) : e > 0 && 0 === t ? d.intl.formatToPlainString(u.default["6X1F0i"], {
     messageCount: e

@@ -118,7 +118,7 @@ function w() {
   let e = Chunk592125.Z.getMutablePrivateChannels();
   for (let t in module) v.set(exports, S(module[exports]))
 }
-let L = (() => {
+let x = (() => {
   let e = [],
     t = [],
     n = [];
@@ -138,12 +138,12 @@ let L = (() => {
     }), t = Chunk913527), require
   }
 })();
-class x extends(r = Chunk442837.ZP.Store) {
+class L extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk355298.Z, Chunk306680.ZP, Chunk333984.Z, Chunk9156.ZP, Chunk594174.default), this.syncWith([Chunk9156.ZP, Chunk355298.Z], A)
   }
   getPrivateChannelIds() {
-    return L()
+    return x()
   }
   getSortedChannels() {
     return [v.values("FAVORITE"), v.values("DEFAULT")]
@@ -159,8 +159,8 @@ class x extends(r = Chunk442837.ZP.Store) {
     }), module
   }
 }
-b(x, "displayName", "PrivateChannelSortStore");
-let M = new x(Chunk570140.Z, {
+b(L, "displayName", "PrivateChannelSortStore");
+let M = new L(Chunk570140.Z, {
   CONNECTION_OPEN: A,
   CONNECTION_OPEN_SUPPLEMENTAL: A,
   OVERLAY_INITIALIZE: A,

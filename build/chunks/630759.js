@@ -6,8 +6,8 @@ require.d(exports, {
   LO: () => w,
   TQ: () => D,
   UB: () => H,
-  ZU: () => L,
-  Zn: () => x,
+  ZU: () => x,
+  Zn: () => L,
   aZ: () => R,
   bo: () => M,
   fz: () => W,
@@ -71,7 +71,7 @@ function w(e, t, n) {
   } else O.Z.deleteSecureFramesTransientKey(e)
 }
 
-function L(e, t) {
+function x(e, t) {
   I.Z.openSecureFramesUpdateConfirmation({
     title: C.intl.string(C.t.hdL152),
     subtitle: C.intl.string(C.t["8VGYKg"]),
@@ -81,7 +81,7 @@ function L(e, t) {
   })
 }
 
-function x(e) {
+function L(e) {
   let t = h.default.getUser(e),
     n = y.ZP.getName(t);
   I.Z.openSecureFramesUpdateConfirmation({

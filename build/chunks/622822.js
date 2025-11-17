@@ -9,7 +9,7 @@ require.d(exports, {
   RW: () => H,
   Y3: () => q,
   Yt: () => R,
-  _I: () => L,
+  _I: () => x,
   _t: () => K,
   a1: () => G,
   bN: () => N,
@@ -112,11 +112,11 @@ function w(e) {
   return t && n && (null == e ? true : e.features.has(E.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD))
 }
 
-function L(e) {
-  return null != e && x(f.Z.getGuild(e))
+function x(e) {
+  return null != e && L(f.Z.getGuild(e))
 }
 
-function x(e) {
+function L(e) {
   return null != e && (0, a.u)("age_verification_utils") && (0, o.sf)() && e.features.has(E.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD)
 }
 
@@ -254,7 +254,7 @@ function Y(e, t, n) {
     (0, m.mN)(e);
     return
   }
-  return L(e) ? void(0, m.mN)(g.L0.LARGE_GUILD) : Q() && F(t) ? void(0, m.mN)(null != n ? n : g.L0.NSFW_CHANNEL) : true
+  return x(e) ? void(0, m.mN)(g.L0.LARGE_GUILD) : Q() && F(t) ? void(0, m.mN)(null != n ? n : g.L0.NSFW_CHANNEL) : true
 }
 let W = e => null != e && (e.isNSFW() || (0, c.Y2)(f.Z.getGuild(e.guild_id))),
   K = e => {
@@ -282,7 +282,7 @@ function q(e) {
   if (e.isNSFW() && h) returntrue;
   let m = e.guild_id,
     g = f.Z.getGuild(m);
-  return null != g && ((0, c.Y2)(g) && h || x(g) && p)
+  return null != g && ((0, c.Y2)(g) && h || L(g) && p)
 }
 
 function X(e) {

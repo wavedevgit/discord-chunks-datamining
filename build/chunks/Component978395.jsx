@@ -61,7 +61,7 @@ function M(e) {
   }), X = (null == M ? true : M.widgets) != null && M.widgets.length > 0, Q = q && X, J = (0, d.I5)(n);
   return (0, r.jsxs)(a.Ttm, {
     fade: true,
-    className: x.body,
+    className: L.body,
     children: [(0, r.jsx)(I.Z, {
       user: t,
       guildId: null == k ? true : k.id,
@@ -109,9 +109,9 @@ function M(e) {
         section: e
       })
     }), t.isProvisional ? (0, r.jsx)(v.Z.Overlay, {
-      className: x.card,
+      className: L.card,
       children: (0, r.jsx)(y.Z, {
-        heading: L.intl.string(L.t.Iyka0U),
+        heading: x.intl.string(x.t.Iyka0U),
         headingIcon: (0, r.jsx)(a.Mgn, {
           size: "xxs",
           color: a.TVs.colors.HEADER_PRIMARY

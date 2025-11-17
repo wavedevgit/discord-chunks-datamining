@@ -104,7 +104,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       ownerTooltipText: i
     } = e;
     return null != t && t && null == n ? (0, r.jsx)(s.u, {
-      __unsupportedReactNodeAsText: null != i ? i : x.intl.string(x.t.pclUFJ),
+      __unsupportedReactNodeAsText: null != i ? i : L.intl.string(L.t.pclUFJ),
       children: (0, r.jsx)(c.CEn, {
         size: "md",
         color: "currentColor",
@@ -118,7 +118,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       onClickPremiumGuildIcon: n
     } = e;
     return null == t ? null : (0, r.jsx)(s.u, {
-      text: x.intl.formatToPlainString(x.t.IWkAq7, {
+      text: L.intl.formatToPlainString(L.t.IWkAq7, {
         date: t
       }),
       asContainer: true,
@@ -234,7 +234,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })), (0, r.jsx)(T.Z, {
         confettiSpawnRef: p,
         shouldFire: d && null != h && t.id !== h.id,
-        confettiLocation: L.Hn.MEMBER_USER
+        confettiLocation: x.Hn.MEMBER_USER
       })]
     })
   }),
@@ -296,8 +296,8 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       shouldAnimateStatus: T = false,
       isMobile: R,
       premiumSince: w,
-      channel: L,
-      guildId: x,
+      channel: x,
+      guildId: L,
       className: k,
       nameplate: U,
       hideClanTag: Z = false,
@@ -320,7 +320,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       voiceChannel: eE
     } = (0, _.Z)({
       userId: el,
-      guildId: x
+      guildId: L
     }), {
       voiceActivityStatusEnabled: eb
     } = (0, d.U)({
@@ -333,10 +333,10 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       userId: el,
       size: c.EFr.SIZE_32,
       animateOnHover: !(t || ef),
-      guildId: x
+      guildId: L
     }), eT = null != eo ? eo : {}, {
       onFocus: eS
-    } = eT, eA = B(eT, ["onFocus"]), eC = (0, S.X7)(x, el, null != a ? a : null), [eN, eR] = i.useState(false);
+    } = eT, eA = B(eT, ["onFocus"]), eC = (0, S.X7)(L, el, null != a ? a : null), [eN, eR] = i.useState(false);
     i.useEffect(() => {
       t && eR(false)
     }, [t]);
@@ -345,10 +345,10 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       ew = i.useCallback(() => {
         e_(true)
       }, []),
-      eL = i.useCallback(() => {
+      ex = i.useCallback(() => {
         e_(false)
       }, []),
-      ex = i.useCallback(() => {
+      eL = i.useCallback(() => {
         eh(true), null == eS || eS()
       }, [eS]),
       eM = i.useCallback(() => {
@@ -390,7 +390,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         onMouseDown: Y,
         onContextMenu: J,
         onMouseEnter: ew,
-        onMouseLeave: eL,
+        onMouseLeave: ex,
         onBlur: eM,
         hovered: ef,
         name: null == p ? (0, r.jsx)("span", {
@@ -402,7 +402,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
             colorStrings: eC,
             hideClanTag: Z,
             user: b,
-            guildId: x,
+            guildId: L,
             isHovering: ef
           })
         }) : (0, r.jsx)(s.u, {
@@ -416,7 +416,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
               colorStrings: eC,
               hideClanTag: Z,
               user: b,
-              guildId: x,
+              guildId: L,
               isHovering: ef
             })
           })
@@ -443,7 +443,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           applicationStream: v,
           voiceStatusChannel: ey,
           user: b,
-          channel: L,
+          channel: x,
           isHoveringOrFocusing: ef || ep,
           quest: eP,
           hideTooltip: H
@@ -462,7 +462,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         "aria-posinset": en,
         id: ei,
         tabIndex: ea,
-        onFocus: ex,
+        onFocus: eL,
         focusProps: {
           offset: {
             top: 4,

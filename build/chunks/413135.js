@@ -254,7 +254,7 @@ function w(e, t, n) {
     }
     null === u ? (u = 65533, d = 1) : u > 65535 && (u -= 65536, r.push(u >>> 10 & 1023 | 55296), u = 56320 | 1023 & u), r.push(u), i += d
   }
-  return x(r)
+  return L(r)
 }
 r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
   try {
@@ -405,12 +405,12 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
     data: Array.prototype.slice.call(this._arr || this, 0)
   }
 };
-var L = 4096;
+var x = 4096;
 
-function x(e) {
+function L(e) {
   var t = e.length;
-  if (t <= L) return String.fromCharCode.apply(String, e);
-  for (var n = "", r = 0; r < t;) n += String.fromCharCode.apply(String, e.slice(r, r += L));
+  if (t <= x) return String.fromCharCode.apply(String, e);
+  for (var n = "", r = 0; r < t;) n += String.fromCharCode.apply(String, e.slice(r, r += x));
   return n
 }
 

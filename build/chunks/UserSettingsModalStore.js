@@ -2,7 +2,7 @@
 /** chunk id: 663389, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -161,7 +161,7 @@ class w extends(r = Chunk442837.ZP.Store) {
   }
 }
 l(w, "displayName", "UserSettingsModalStore");
-let L = new w(Chunk570140.Z, {
+let x = new w(Chunk570140.Z, {
   USER_SETTINGS_MODAL_OPEN: O,
   USER_SETTINGS_MODAL_INIT: v,
   USER_SETTINGS_MODAL_CLOSE: I,

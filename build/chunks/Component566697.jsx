@@ -46,8 +46,8 @@ let N = {
       className: P,
       innerClassName: D,
       isHighlighted: w,
-      showStatus: L,
-      showPlaceholderUser: x,
+      showStatus: x,
+      showPlaceholderUser: L,
       pendingGlobalName: M,
       pendingNickname: k,
       pendingAvatarDecoration: j,
@@ -93,18 +93,18 @@ let N = {
           nameplate: Y,
           hovered: w,
           placement: v.i.PREVIEW,
-          content: x ? true : z
+          content: L ? true : z
         }, null == a ? true : a.skuId), (0, r.jsxs)("div", {
           className: S.overlayContainer,
           children: [null != t ? (0, r.jsx)("div", {
-            className: o()(S.avatarContainer, !x && S.avatarVisible),
+            className: o()(S.avatarContainer, !L && S.avatarVisible),
             children: (0, r.jsx)(d.Z, {
               ref: z,
               avatar: (0, r.jsx)(f.Z, {
                 user: t,
                 guildId: n,
                 avatarSize: J,
-                status: L ? W : true,
+                status: x ? W : true,
                 avatarDecorationOverride: Q,
                 "aria-hidden": true
               }),
@@ -123,7 +123,7 @@ let N = {
               withDisplayNameStyles: null != $
             })
           }) : null, (0, r.jsxs)("div", {
-            className: o()(S.avatarContainer, x && S.avatarVisible),
+            className: o()(S.avatarContainer, L && S.avatarVisible),
             children: [(0, r.jsx)(c.qEK, {
               src: H ? A : C,
               size: J,

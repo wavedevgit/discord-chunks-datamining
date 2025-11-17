@@ -85,8 +85,8 @@ let T = function(e) {
   } = e, A = E === _.PremiumTypes.TIER_2, C = (0, c.Fv)(b), N = (0, d.N)(), R = null == N || null == (t = N.discount) ? true : t.amount, P = A ? O : y, {
     step: D,
     breadcrumbs: w,
-    startedPaymentFlowWithPaymentSourcesRef: L,
-    isDisplayingWowMomentConfirmation: x
+    startedPaymentFlowWithPaymentSourcesRef: x,
+    isDisplayingWowMomentConfirmation: L
   } = (0, s.JL)();
   if (null == w || 0 === w.length) return null;
   let M = w.flatMap(e => {
@@ -101,7 +101,7 @@ let T = function(e) {
   if (0 === M.length) return null;
   let k = (M = M.filter(e => {
       let t = e.id !== l.h8.ADD_PAYMENT_STEPS,
-        n = e.id === l.h8.ADD_PAYMENT_STEPS && !L.current;
+        n = e.id === l.h8.ADD_PAYMENT_STEPS && !x.current;
       return !b || b && (t || n)
     })).find(e => e.id === D),
     j = null != (i = null == k || null == (n = k.sectionHeaderText) ? true : n.call(k)) ? i : null == k ? true : k.label,
@@ -109,7 +109,7 @@ let T = function(e) {
     G = C && U && D === l.h8.REVIEW,
     B = A ? "nitro-pink" : "nitro-green",
     Z = A ? p.intl.string(p.t.lG6a5x) : p.intl.string(p.t["t9uG/o"]);
-  return x ? (0, r.jsx)("div", {
+  return L ? (0, r.jsx)("div", {
     className: h.container,
     children: (0, r.jsx)(o.$1m, {
       color: B,

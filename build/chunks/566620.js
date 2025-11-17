@@ -123,7 +123,7 @@ async function el(e) {
     customId: E,
     inviterUserId: b,
     onConfirmActivityLaunchChecksAlertOpen: y
-  } = e, O = x.Z.getChannel(r), v = null != (t = null == O ? true : O.getGuildId()) ? t : true;
+  } = e, O = L.Z.getChannel(r), v = null != (t = null == O ? true : O.getGuildId()) ? t : true;
   if (null == v && !(null != (n = null == O ? true : O.isPrivate()) && n)) returnfalse;
   let C = (0, N.r)();
   try {
@@ -257,7 +257,7 @@ async function eu(e) {
     }), await (0, h.FN)({
       type: "user"
     });
-    let e = x.Z.getChannel(r),
+    let e = L.Z.getChannel(r),
       {
         isAuthorized: n
       } = await (0, b.L)({
@@ -270,7 +270,7 @@ async function eu(e) {
       reason: 2
     }
   }
-  let y = x.Z.getChannel(r),
+  let y = L.Z.getChannel(r),
     O = null != i ? M.Z.getGuild(i) : null;
   if (null == y) return {
     result: "failure",
@@ -344,7 +344,7 @@ async function ed(e) {
       isStart: o,
       guildId: s
     } = e,
-    c = L.default.getSessionId(),
+    c = x.default.getSessionId(),
     u = j.default.getCurrentUser(),
     d = n;
   if (null == d) return {
@@ -360,14 +360,14 @@ async function ed(e) {
     result: "failure",
     reason: 3
   };
-  let _ = x.Z.getChannel(i);
+  let _ = L.Z.getChannel(i);
   if (null == _) return {
     result: "failure",
     reason: 3
   };
   let p = (0, z.e4)({
     channelId: i,
-    ChannelStore: x.Z,
+    ChannelStore: L.Z,
     GuildStore: M.Z,
     PermissionStore: k.Z,
     VoiceStateStore: U.Z
@@ -606,7 +606,7 @@ async function eg(e) {
     target_type: er.Iq.EMBEDDED_APPLICATION,
     target_application_id: r
   }, i);
-  null != x.Z.getChannel(n) && f.Z.sendInvite(n, o.code, i, a)
+  null != L.Z.getChannel(n) && f.Z.sendInvite(n, o.code, i, a)
 }
 async function eE(e) {
   let {
@@ -621,7 +621,7 @@ async function eE(e) {
     target_application_id: n
   }, i);
   await c.Z.ensurePrivateChannel(r).then(e => {
-    let t, n = x.Z.getChannel(e);
+    let t, n = L.Z.getChannel(e);
     if (null == n) throw Error("Private channel not found");
     null != o && (t = C.ZP.parse(n, o).content), f.Z.sendInvite(e, s.code, i, a, t)
   })
@@ -693,7 +693,7 @@ async function eS(e, t) {
     })
   } catch (l) {
     var n;
-    let r = x.Z.getChannel(t),
+    let r = L.Z.getChannel(t),
       a = null != (n = null == r ? true : r.guild_id) ? n : null,
       o = null != a ? i.E.GUILD_CHANNEL : i.E.PRIVATE_CHANNEL;
     return s.Z.dispatch({

@@ -207,13 +207,13 @@ function w(e, t, n) {
   return R(t, e, n)
 }
 
-function L(e, n) {
+function x(e, n) {
   return e.sort(function(e, r) {
     return t.compareBuild(e, r, n)
   })
 }
 
-function x(e, n) {
+function L(e, n) {
   return e.sort(function(e, r) {
     return t.compareBuild(r, e, n)
   })
@@ -278,7 +278,7 @@ function F(e, t) {
   if (!(this instanceof F)) return new F(e, t);
   r("comparator", e, t), this.options = t, this.loose = !!t.loose, this.parse(e), this.semver === V ? this.value = "" : this.value = this.operator + this.semver.version, r("comp", this)
 }
-exports.rcompareIdentifiers = S, exports.major = A, exports.minor = C, exports.patch = N, exports.compare = R, exports.compareLoose = P, exports.compareBuild = D, exports.rcompare = w, exports.sort = L, exports.rsort = x, exports.gt = M, exports.lt = k, exports.eq = j, exports.neq = U, exports.gte = G, exports.lte = B, exports.cmp = Z, exports.Comparator = F;
+exports.rcompareIdentifiers = S, exports.major = A, exports.minor = C, exports.patch = N, exports.compare = R, exports.compareLoose = P, exports.compareBuild = D, exports.rcompare = w, exports.sort = x, exports.rsort = L, exports.gt = M, exports.lt = k, exports.eq = j, exports.neq = U, exports.gte = G, exports.lte = B, exports.cmp = Z, exports.Comparator = F;
 var V = {};
 
 function H(e, t) {

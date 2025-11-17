@@ -78,12 +78,12 @@ let w = (e, t) => {
     var n;
     return !!(null == (n = e.discounts) ? true : n.some(e => e.type === t))
   },
-  L = (e, t) => {
+  x = (e, t) => {
     var n, r, i;
     return e.subscriptionPlanPrice - (null != (i = null == (r = e.discounts) || null == (n = r.find(e => e.type === t)) ? true : n.amount) ? i : 0)
   };
 
-function x(e, t, n, r) {
+function L(e, t, n, r) {
   let i = w(e, d.eW.PREMIUM_TRIAL);
   switch (e.subscriptionPlanId) {
     case T.Xh.PREMIUM_MONTH_LEGACY:
@@ -142,7 +142,7 @@ function M(e) {
     inTrialPeriod: _
   } = e, h = (0, c.e7)([p.Z], () => p.Z.get(n.subscriptionPlanId)), m = null == (t = (0, O.N)(f)) ? true : t.subscription_trial;
   l()(null != h, "Missing subscriptionPlan");
-  let b = x(n, h, d, (0, g.if)({
+  let b = L(n, h, d, (0, g.if)({
     intervalType: null == m ? true : m.interval,
     intervalCount: null == m ? true : m.interval_count
   }));
@@ -238,7 +238,7 @@ function U(e) {
   let c = o.find(e => !(0, g.Z8)(e.subscriptionPlanId) && e.amount < 0),
     u = o.find(e => null == e.subscriptionPlanId && null != e.discounts && e.discounts.find(e => e.type === d.eW.PREMIUM_LEGACY_UPGRADE_PROMOTION)),
     f = w(s, d.eW.PREMIUM_TRIAL),
-    _ = L(s, d.eW.SUBSCRIPTION_PLAN),
+    _ = x(s, d.eW.SUBSCRIPTION_PLAN),
     p = s.quantity * _,
     h = s.amount + (null != c ? c.amount : 0) - p + (null != u ? u.amount : 0),
     m = o.filter(e => e.subscriptionPlanId === T.Xh.PREMIUM_MONTH_GUILD || e.subscriptionPlanId === T.Xh.PREMIUM_YEAR_GUILD).reduce((e, t) => e + t.amount, 0);

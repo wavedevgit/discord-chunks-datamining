@@ -85,8 +85,8 @@ function R(e, t) {
 let P = 490,
   D = 490,
   w = 245,
-  L = 200,
-  x = 120,
+  x = 200,
+  L = 120,
   M = Chunk473749.forwardRef(function(e, t) {
     var n, a, T, A, R, M, k, j, U;
     let {
@@ -137,10 +137,10 @@ let P = 490,
         [I.minimal]: (null == (T = z.query) ? true : T.type) === b.eq.MENTION_SUGGESTIONS
       },
       ei = P;
-    null != $ && (ei = (null == (M = B.autocomplete) ? true : M.small) ? L : (null == (k = z.query) ? true : k.type) === b.eq.EMOJIS_AND_STICKERS ? D : w);
+    null != $ && (ei = (null == (M = B.autocomplete) ? true : M.small) ? x : (null == (k = z.query) ? true : k.type) === b.eq.EMOJIS_AND_STICKERS ? D : w);
     let ea = Math.max(Z, null != (j = null == V || null == (A = V.current) ? true : A.clientHeight) ? j : 0),
       eo = Math.min(.5 * window.innerHeight, ea);
-    ei = Math.min(window.innerHeight - x - eo - (null != H ? H : 0), ei);
+    ei = Math.min(window.innerHeight - L - eo - (null != H ? H : 0), ei);
     let es = (0, r.jsx)(_.ZP, {
       id: Y,
       className: o()(I.autocomplete, er),

@@ -46,10 +46,10 @@ function v(e, t) {
     {
       Component: D,
       events: w,
-      play: L
+      play: x
     } = (0, c.V)(),
-    x = (0, h.v)(d.O),
-    M = a === m.Ie.NORMAL ? x : true;
+    L = (0, h.v)(d.O),
+    M = a === m.Ie.NORMAL ? L : true;
   if (n) return null;
   let k = S === b.X1.GIF && A === a;
   return (0, r.jsx)(u.u, {
@@ -65,7 +65,7 @@ function v(e, t) {
         onMouseEnter: w.onMouseEnter,
         onMouseLeave: w.onMouseLeave,
         onClick: () => {
-          P(), L()
+          P(), x()
         },
         isActive: k,
         pulse: v,

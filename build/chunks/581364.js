@@ -5,7 +5,7 @@ require.d(exports, {
   $z: () => R,
   BH: () => C,
   BO: () => D,
-  D7: () => x,
+  D7: () => L,
   Dd: () => N,
   Ft: () => w,
   TK: () => B,
@@ -259,14 +259,14 @@ function w(e) {
   if (n.ownerId === r.userId || t.can(g.Pl.ADMINISTRATOR, n)) returntrue;
   let s = n.id;
   if (null != a) {
-    let e = L(r, s, a);
+    let e = x(r, s, a);
     if ("boolean" == typeof e) return e
   }
-  let l = L(r, s, i);
+  let l = x(r, s, i);
   return ("boolean" != typeof l || !!l) && (null == o || !c.fS(o, D) && t.can(o, n))
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   let r = n[(0, f.rE)(e.userId, p.Kw.USER)];
   if (null != r) return r.permission;
   let i = false;
@@ -279,7 +279,7 @@ function L(e, t, n) {
   return null != a ? a.permission : null
 }
 
-function x(e) {
+function L(e) {
   switch (e) {
     case p.bB.CHAT:
     case p.bB.APPLICATION_LAUNCHER:

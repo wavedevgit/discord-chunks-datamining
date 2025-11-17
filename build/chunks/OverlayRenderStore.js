@@ -84,8 +84,8 @@ function D(e, t) {
   return i
 }
 let w = new Chunk710845.Z("OverlayRenderStore"),
-  L = Chunk837268.R5.UNSET,
-  x = false,
+  x = Chunk837268.R5.UNSET,
+  L = false,
   M = false,
   k = false,
   j = (0, Chunk358085.isWindows)() && Chunk358085.isPlatformEmbedded && !__OVERLAY__,
@@ -110,7 +110,7 @@ function W(e, t, n) {
 }
 
 function K() {
-  return x
+  return L
 }
 
 function z() {
@@ -209,7 +209,7 @@ async function ei(e) {
 
 function ea(e, t) {
   var n, r;
-  switch (L) {
+  switch (x) {
     case b.R5.UNSET:
       break;
     case b.R5.IN_PROCESS_V2:
@@ -411,8 +411,8 @@ async function ef(e) {
   });
   let i = ea(n, r);
   if (n.overlayMethod === i.overlayMethod && n.oopEnabled === i.enabledOOP && n.legacyEnabled === i.enabledLegacy || (U === m.UNSET_PID || null === U) && n.state === b.mM.OVERLAY_RENDERING) return t;
-  let a = L === b.R5.OUT_OF_PROCESS_V3 || L === b.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
-    o = L === b.R5.IN_PROCESS_V2,
+  let a = x === b.R5.OUT_OF_PROCESS_V3 || x === b.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
+    o = x === b.R5.IN_PROCESS_V2,
     s = (0, v.PD)(r, z()),
     l = (0, v.DH)(n, r, z());
   w.verbose("Overlay method different for pid ".concat(e), {
@@ -477,21 +477,21 @@ async function eg(e, t) {
     newLegacyEnabled: e,
     newOopEnabled: t
   });
-  let n = e !== x,
+  let n = e !== L,
     r = t !== M;
-  if (x = e, M = t, E.v.update({
-      legacyEnabled: x,
+  if (L = e, M = t, E.v.update({
+      legacyEnabled: L,
       oopEnabled: M
     }), w.info("setOverlayEnabled", {
       newOopEnabled: t,
       newLegacyEnabled: e
-    }), M && r && (0, m.setOutOfProcessSupport)(true), x || M) n && w.info("Legacy change"), r && w.info("OOP change"), eI();
+    }), M && r && (0, m.setOutOfProcessSupport)(true), L || M) n && w.info("Legacy change"), r && w.info("OOP change"), eI();
   else
     for (let e of Q()) await es(e), await (0, a._v)(16)
 }
 
 function eE() {
-  ed(), k = false, Z = null, ex()
+  ed(), k = false, Z = null, eL()
 }
 
 function eb(e) {
@@ -566,7 +566,7 @@ function eA(e) {
 }
 
 function eC(e) {
-  return L = e.mode, eI(), true
+  return x = e.mode, eI(), true
 }
 
 function eN(e) {
@@ -594,7 +594,7 @@ function ew(e) {
   return !(0, m.isValidGamePID)(e.pid) || ((0, m.setPID)(e.pid), true)
 }
 
-function eL(e) {
+function ex(e) {
   s.Z.updateOverlayState(e.pid, b.mM.OVERLAY_RENDERING, "handleOverlaySuccessfullyShown"), ee(e.pid) && et(e.pid, "successfullyShown", true, "handleOverlaySuccessfullyShown"), W(e.pid, "overlay_successfully_shown", {
     pid: e.pid
   });
@@ -602,7 +602,7 @@ function eL(e) {
   null != t && s.Z.updateTrackedGame(e.pid, t)
 }
 
-function ex() {
+function eL() {
   Chunk353926.Z.hasLoadedExperiments && !k && (k = true, eg(Chunk454991.v.legacyEnabled, Chunk454991.v.oopEnabled))
 }
 
@@ -615,7 +615,7 @@ function ek() {
 }
 class ej extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk353926.Z, Chunk77498.Z, Chunk624864.Z, Chunk594190.ZP), this.syncWith([Chunk353926.Z], ex)
+    this.waitFor(Chunk314897.default, Chunk353926.Z, Chunk77498.Z, Chunk624864.Z, Chunk594190.ZP), this.syncWith([Chunk353926.Z], eL)
   }
   getDevToolsFocusedPidsWithTimestamp() {
     return Y
@@ -624,7 +624,7 @@ class ej extends(r = Chunk442837.ZP.Store) {
     return k
   }
   getForcedRenderMode() {
-    return L
+    return x
   }
   isAnyOverlayRendering() {
     return this.getOverlayRenderingTrackedGames().length > 0
@@ -704,7 +704,7 @@ let eU = new ej(Chunk570140.Z, !j ? {} : {
     OVERLAY_CRASHED: eA,
     OVERLAY_RELOAD: eS,
     OVERLAY_FOCUSED: ew,
-    OVERLAY_SUCCESSFULLY_SHOWN: eL,
+    OVERLAY_SUCCESSFULLY_SHOWN: ex,
     OVERLAY_RENDER_DEBUG_MODE: eP,
     OVERLAY_RENDER_DEBUG_CLEAR_TRACKED_PIDS: eD
   }),

@@ -426,7 +426,7 @@ function ei(e) {
     id: t.id,
     label: Y.intl.string(Y.t["/AXYnE"])
   }), a = j.Sb.useSetting(), o = i.useRef(null);
-  return a && x.wS ? (0, r.jsx)(f.yRy, {
+  return a && L.wS ? (0, r.jsx)(f.yRy, {
     targetElementRef: o,
     renderPopout: e => {
       let {

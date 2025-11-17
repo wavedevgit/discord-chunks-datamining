@@ -85,7 +85,7 @@ let S = {},
     version: false,
     mute_config: null
   },
-  L = {
+  x = {
     [Chunk981631.bL.ALL_MESSAGES]: T(v({}, w), {
       message_notifications: Chunk981631.bL.ALL_MESSAGES
     }),
@@ -93,7 +93,7 @@ let S = {},
       message_notifications: Chunk981631.bL.ONLY_MENTIONS
     })
   },
-  x = {},
+  L = {},
   M = {},
   k = "null",
   j = new Set,
@@ -111,7 +111,7 @@ function Z(e, t) {
     });
   P.clearTimer(e), a().forEach(i, e => {
     D.clearTimer(e.channel_id)
-  }), F(e, s), S[e] = s, x[e] = ed(S[e]);
+  }), F(e, s), S[e] = s, L[e] = ed(S[e]);
   let l = a().filter(s.channel_overrides, e => {
     var t;
     return f.yE(null != (t = e.flags) ? t : 0, y.ic.OPT_IN_ENABLED)
@@ -200,7 +200,7 @@ function z(e, t, n) {
 
 function q(e) {
   let t = h.Z.getGuild(e);
-  return L[null != t ? t.defaultMessageNotifications : g.bL.ALL_MESSAGES]
+  return x[null != t ? t.defaultMessageNotifications : g.bL.ALL_MESSAGES]
 }
 
 function X() {
@@ -214,7 +214,7 @@ function Q(e) {
 }
 
 function J(e) {
-  null != e.userGuildSettings && 0 !== e.userGuildSettings.length && (S = {}, x = {}, M = {}, e.userGuildSettings.forEach(e => {
+  null != e.userGuildSettings && 0 !== e.userGuildSettings.length && (S = {}, L = {}, M = {}, e.userGuildSettings.forEach(e => {
     let t = e.guild_id;
     S[t] = e;
     let n = new Set,
@@ -224,12 +224,12 @@ function J(e) {
       let a = e.channel_overrides[t];
       (0, l.m$)(a) && n.add(t), f.yE(null != (i = a.flags) ? i : 0, y.ic.OPT_IN_ENABLED) && r.add(t)
     }
-    x[t] = n, M[t] = r
+    L[t] = n, M[t] = r
   }))
 }
 
 function $(e) {
-  en(e.notificationSettings), P.reset(), D.reset(), e.userGuildSettings.partial || (S = {}, x = {}, M = {});
+  en(e.notificationSettings), P.reset(), D.reset(), e.userGuildSettings.partial || (S = {}, L = {}, M = {});
   let t = new Set;
   for (let n in e.userGuildSettings.entries.forEach(e => {
       let n = e;
@@ -245,8 +245,8 @@ function ee(e) {
     mutedChannels: r,
     optedInChannelsByGuild: i
   } = t;
-  S = v({}, n), x = {}, M = {}, _.default.keys(r).forEach(e => {
-    x[e] = new Set(r[e])
+  S = v({}, n), L = {}, M = {}, _.default.keys(r).forEach(e => {
+    L[e] = new Set(r[e])
   }), _.default.keys(i).forEach(e => {
     M[e] = new Set(i[e])
   })
@@ -356,7 +356,7 @@ class ep extends(r = Chunk442837.ZP.PersistedStore) {
     if (this.waitFor(p.Z, h.Z, c.Z, u.Z, m.default), null != e) {
       var t, n;
       C = null != (t = e.useNewNotifications) && t, "userGuildSettings" in e && (S = e.userGuildSettings, M = a().mapValues(null != (n = e.optedInChannelsByGuild) ? n : {}, e => new Set(e)), a().forEach(S, (e, t) => {
-        x[t] = ed(e)
+        L[t] = ed(e)
       }))
     }
   }
@@ -414,7 +414,7 @@ class ep extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getMutedChannels(e) {
     var t;
-    return null != (t = x[e]) ? t : j
+    return null != (t = L[e]) ? t : j
   }
   isChannelMuted(e, t) {
     var n;
@@ -463,7 +463,7 @@ class ep extends(r = Chunk442837.ZP.PersistedStore) {
   getAllSettings() {
     return {
       userGuildSettings: S,
-      mutedChannels: x,
+      mutedChannels: L,
       optedInChannelsByGuild: M
     }
   }

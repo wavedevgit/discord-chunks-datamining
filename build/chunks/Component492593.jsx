@@ -98,16 +98,16 @@ let O = function(e) {
     hasThread: P,
     isSystemMessage: D,
     hasReply: w,
-    author: L,
-    onMouseEnter: x,
+    author: x,
+    onMouseEnter: L,
     onMouseLeave: M
   } = e, k = b(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
-  let j = (0, s.e7)([_.Z], () => (null == L ? true : L.guildId) == null || (null == L ? true : L.colorRoleId) == null ? null : _.Z.getRole(L.guildId, L.colorRoleId)),
-    U = (0, f.yH)(null == L ? true : L.guildId, j) && (0, d.S2)(L),
+  let j = (0, s.e7)([_.Z], () => (null == x ? true : x.guildId) == null || (null == x ? true : x.colorRoleId) == null ? null : _.Z.getRole(x.guildId, x.colorRoleId)),
+    U = (0, f.yH)(null == x ? true : x.guildId, j) && (0, d.S2)(x),
     [G, B] = i.useState(false),
     Z = i.useCallback(e => {
-      B(true), null == x || x(e)
-    }, [x]),
+      B(true), null == L || L(e)
+    }, [L]),
     F = i.useCallback(e => {
       B(false), null == M || M(e)
     }, [M]),
@@ -123,7 +123,7 @@ let O = function(e) {
         children: (0, r.jsxs)("div", E(m({
           className: o()(t, {
             [p.gradient]: U,
-            [p.withDisplayNameStyles]: V && (null == L ? true : L.displayNameStyles) != null && (null == L ? true : L.guildId) == null,
+            [p.withDisplayNameStyles]: V && (null == x ? true : x.displayNameStyles) != null && (null == x ? true : x.guildId) == null,
             [p.wrapper]: true,
             [p.contentOnly]: a,
             [p.compact]: n,

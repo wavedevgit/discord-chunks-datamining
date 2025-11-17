@@ -90,10 +90,10 @@ async function N(e, t) {
     P = f.Z.getVoiceChannelId(),
     D = c.Z.getChannel(P),
     w = null == D ? true : D.getGuildId(),
-    L = null == (n = u.Z.getGuild(w)) ? true : n.premiumTier;
+    x = null == (n = u.Z.getGuild(w)) ? true : n.premiumTier;
   if (null == R || null == D || null == P) return [false, "no user or channel"];
-  let x = null;
-  if (null == (x = "number" == typeof e ? a.ZP.getGameForPID(e) : e)) return [false, "no source"];
+  let L = null;
+  if (null == (L = "number" == typeof e ? a.ZP.getGameForPID(e) : e)) return [false, "no source"];
   if (!d.Z.getUseSystemScreensharePicker() && !await o.Z.hasPermission(O.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
     })) return [false, "no permission"];
@@ -109,18 +109,18 @@ async function N(e, t) {
   });
   G !== y.ApplicationStreamPresets.PRESET_AUTO || B || (G = y.ApplicationStreamPresets.PRESET_VIDEO);
   let Z = G === y.ApplicationStreamPresets.PRESET_AUTO ? y.ApplicationStreamPresets.PRESET_VIDEO : G,
-    [F, V] = null != (b = (0, g.Z)(Z, R, L)) ? b : [],
+    [F, V] = null != (b = (0, g.Z)(Z, R, x)) ? b : [],
     H = null != (v = null != F ? F : null == t ? true : t.resolution) ? v : k,
     Y = null != (T = null != V ? V : null == t ? true : t.fps) ? T : j,
     W = null != (A = null == t ? true : t.previewDisabled) ? A : s.I0.getSetting(),
     K = null != (N = null == t ? true : t.soundshareEnabled) ? N : U;
-  return (0, m.Z)(Z, H, Y, R, L, D) || (G = y.ApplicationStreamPresets.PRESET_VIDEO, H = y.ApplicationStreamResolutions.RESOLUTION_720, Y = y.ApplicationStreamFPS.FPS_30), (0, i.Rc)({
+  return (0, m.Z)(Z, H, Y, R, x, D) || (G = y.ApplicationStreamPresets.PRESET_VIDEO, H = y.ApplicationStreamResolutions.RESOLUTION_720, Y = y.ApplicationStreamFPS.FPS_30), (0, i.Rc)({
     preset: G,
     resolution: H,
     frameRate: Y,
     soundshareEnabled: K
-  }), (0, i.WH)(w, P, S(I({}, C(x)), {
-    audioSourceId: (null == (p = x.id) ? true : p.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
+  }), (0, i.WH)(w, P, S(I({}, C(L)), {
+    audioSourceId: (null == (p = L.id) ? true : p.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
     sound: K,
     previewDisabled: W,
     goLiveModalDurationMs: null == t ? true : t.goLiveModalDurationMs,

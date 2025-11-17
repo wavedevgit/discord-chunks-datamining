@@ -9,7 +9,7 @@ require.d(exports, {
   LX: () => N,
   TH: () => M,
   UO: () => k,
-  k6: () => x,
+  k6: () => L,
   l_: () => I,
   rs: () => D,
   s6: () => h
@@ -253,23 +253,23 @@ function w(e) {
     };
   return n.displayName = t, n.WrappedComponent = e, _()(n, e)
 }
-var L = Chunk473749.useContext;
+var x = Chunk473749.useContext;
 
-function x() {
-  return L(p)
+function L() {
+  return x(p)
 }
 
 function M() {
-  return L(h).location
+  return x(h).location
 }
 
 function k() {
-  var e = L(h).match;
+  var e = x(h).match;
   return module ? module.params : {}
 }
 
 function j(e) {
   var t = M(),
-    n = L(h).match;
+    n = x(h).match;
   return e ? N(t.pathname, e) : n
 }

@@ -4,7 +4,7 @@
 require.d(exports, {
   Eb: () => w,
   Fx: () => k,
-  IM: () => L,
+  IM: () => x,
   J2: () => F,
   r$: () => D
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
@@ -105,7 +105,7 @@ function D(e, t) {
         members: r
       })
     })) ? n : [],
-    c = x(t, r, e => ({
+    c = L(t, r, e => ({
       id: e.id,
       members: e.members,
       presences: e.presences,
@@ -132,7 +132,7 @@ function w() {
   })
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   var r, {
       users: a,
       relationships: s,
@@ -148,7 +148,7 @@ function L(e, t, n) {
     null != t && (e.recipients = t.map(e => (i()(null != P[e], "Missing user in compressed ready payload"), P[e]))), delete e.recipient_ids
   });
   let _ = null != (r = null == u ? true : u.map((e, t) => true === e.unavailable ? e : (e.members = j(P, null == c ? true : c[t]), Z(e)))) ? r : [],
-    p = x(t, u, e => Z(e));
+    p = L(t, u, e => Z(e));
   return null != p && _.push(p), T(v({}, d), {
     users: a,
     presences: [],
@@ -158,7 +158,7 @@ function L(e, t, n) {
   })
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   return null == R || R.identifyTime !== e || null != t && t.some(e => e.id === R.guild.id) ? null : n(R.guild)
 }
 

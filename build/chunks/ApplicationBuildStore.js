@@ -45,11 +45,11 @@ function w(e) {
   D.start(e + Math.random() * N, c.o)
 }
 
-function L() {
-  return !Chunk695346.bm.getSetting() && (w(R), x())
+function x() {
+  return !Chunk695346.bm.getSetting() && (w(R), L())
 }
 
-function x() {
+function L() {
   if (!(0, Chunk804739.Q)() || Chunk695346.bm.getSetting()) returnfalse;
   let e = Chunk283595.Z.entitledBranchIds,
     t = [];
@@ -185,7 +185,7 @@ function W(e) {
 }
 class K extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk283595.Z], x), this.waitFor(Chunk812206.Z, Chunk417363.Z, Chunk391690.Z, Chunk283595.Z, Chunk581883.Z)
+    this.syncWith([Chunk283595.Z], L), this.waitFor(Chunk812206.Z, Chunk417363.Z, Chunk391690.Z, Chunk283595.Z, Chunk581883.Z)
   }
   getTargetBuildId(e, t) {
     return null == I[t] ? null : I[t].id
@@ -208,7 +208,7 @@ class K extends(r = Chunk442837.ZP.Store) {
 }
 O(K, "displayName", "ApplicationBuildStore");
 let z = new K(Chunk570140.Z, {
-  CONNECTION_OPEN: L,
+  CONNECTION_OPEN: x,
   GAMES_DATABASE_UPDATE: M,
   APPLICATION_BUILD_FETCH_START: j,
   APPLICATION_BUILD_FETCH_SUCCESS: U,

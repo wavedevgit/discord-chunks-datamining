@@ -180,7 +180,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
   w = e => (0, r.jsx)(R, O(b({}, e), {
     storyType: "stripe-address-element"
   })),
-  L = {
+  x = {
     theme: {
       label: "Theme",
       type: "select",
@@ -211,11 +211,11 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       defaultValue: "#00000014"
     }
   },
-  x = {
+  L = {
     name: "Joined Payment + Address",
     id: "joined-payment-address-elements",
     component: P,
-    controls: b({}, L)
+    controls: b({}, x)
   },
   M = {
     title: "Payment Elements",
@@ -223,11 +223,11 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       name: "Stripe Payment Element",
       id: "stripe-payment-element",
       component: D,
-      controls: b({}, L)
+      controls: b({}, x)
     }, {
       name: "Stripe Address Element",
       id: "stripe-address-element",
       component: w,
-      controls: b({}, L)
-    }, x]
+      controls: b({}, x)
+    }, L]
   }

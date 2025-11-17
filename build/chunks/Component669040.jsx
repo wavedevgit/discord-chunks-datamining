@@ -79,7 +79,7 @@ let z = 0,
       isUsingKeyboardNavigation: N,
       allowAnimatedEmoji: P,
       channelGuildId: D,
-      channelId: x,
+      channelId: L,
       messageId: M,
       isBurstReaction: k,
       listHeaderClassName: Y,
@@ -113,7 +113,7 @@ let z = 0,
       let {
         columnIndex: t,
         visibleRowIndex: n
-      } = e, r = e.type === B.ld.SOUNDMOJI ? null : e.type === B.ld.EMOJI ? (0, L.nY)(e.emoji) : e.name;
+      } = e, r = e.type === B.ld.SOUNDMOJI ? null : e.type === B.ld.EMOJI ? (0, x.nY)(e.emoji) : e.name;
       el.current !== V.xAR && window.cancelAnimationFrame(el.current), el.current = window.requestAnimationFrame(() => {
         E.kJ.setInspectedExpressionPosition(t, n, y.u.MOUSE_EVENT), E.kJ.setSearchPlaceholder(r), el.current = V.xAR
       })
@@ -143,13 +143,13 @@ let z = 0,
         channelGuildId: D,
         category: i.sectionId,
         selectedItemClassName: K.__invalid_selectedItem,
-        channelId: x,
+        channelId: L,
         messageId: M,
         isBurstReaction: k,
         inNitroLockedSection: i.isNitroLocked,
         handleScrollUpOnSectionCollapse: o
       }, e)
-    }), [a, m, s, ec, ep, c, f, O, v, A, N, P, eh, D, x, M, k, eo]);
+    }), [a, m, s, ec, ep, c, f, O, v, A, N, P, eh, D, L, M, k, eo]);
     i.useEffect(() => () => {
       var e, t;
       return null == (t = em.cache) || null == (e = t.clear) ? true : e.call(t)
@@ -257,11 +257,11 @@ let z = 0,
       rowCount: S,
       isUsingKeyboardNavigation: C,
       channelGuildId: R,
-      channelId: L,
+      channelId: x,
       messageId: k,
       isBurstReaction: j,
       listHeaderClassName: U
-    } = e, G = i.useRef(false), Z = E.kJ.useStore(e => e.activeCategoryIndex), F = (0, b.Iu)(e => e.searchQuery), H = P.Yk.useSetting(), q = (0, u.e7)([D.default], () => D.default.getCurrentUser()), X = (0, x.I5)(q), {
+    } = e, G = i.useRef(false), Z = E.kJ.useStore(e => e.activeCategoryIndex), F = (0, b.Iu)(e => e.searchQuery), H = P.Yk.useSetting(), q = (0, u.e7)([D.default], () => D.default.getCurrentUser()), X = (0, L.I5)(q), {
       location: Q
     } = (0, h.O)(), {
       analyticsLocations: J
@@ -290,7 +290,7 @@ let z = 0,
       isUsingKeyboardNavigation: C,
       allowAnimatedEmoji: H,
       channelGuildId: R,
-      channelId: L,
+      channelId: x,
       messageId: k,
       isBurstReaction: j,
       listHeaderClassName: U,

@@ -372,7 +372,7 @@ function et(e) {
   return (0, r.jsx)("div", {
     className: f,
     children: s ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(x.q, {}), (0, r.jsx)(d.zxk, {
+      children: [(0, r.jsx)(L.q, {}), (0, r.jsx)(d.zxk, {
         variant: "secondary",
         onClick: u,
         text: B.intl.string(B.t["13/7kX"])
@@ -415,7 +415,7 @@ function en(e) {
   }).enabled, y = (0, N.jJ)(), I = (0, N.SK)(), T = i.useRef(false), {
     colors: S,
     chassisMixAmount: C,
-    gradientAngle: x,
+    gradientAngle: L,
     setColors: k,
     setChassisMixAmount: U,
     setGradientAngle: F
@@ -427,10 +427,10 @@ function en(e) {
       customUserThemeSettings: {
         colors: S,
         gradientColorStops: [],
-        gradientAngle: x,
+        gradientAngle: L,
         baseMix: C
       }
-    }), (0, w.u7)(S, C, x, Y, z), null == a || a(j.L.TAKE_ACTION), W || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
+    }), (0, w.u7)(S, C, L, Y, z), null == a || a(j.L.TAKE_ACTION), W || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
   }, en = () => {
     y(N._m.RESET_BUTTON), (0, w.uf)()
   }, er = S.length > 0;
@@ -469,7 +469,7 @@ function en(e) {
             variant: "text-sm/semibold",
             color: "text-secondary",
             children: B.intl.string(G.default.uSL2Gy)
-          }), (0, r.jsx)(L.U, {
+          }), (0, r.jsx)(x.U, {
             onChange: e => {
               H(e), 0 === S.length && (0, N.lT)(S, e, k)
             },
@@ -484,7 +484,7 @@ function en(e) {
             color: "text-secondary",
             children: B.intl.string(G.default.F1t0c8)
           }), S.length > 1 && (0, r.jsx)(X, {
-            gradientAngle: x,
+            gradientAngle: L,
             setGradientAngle: F
           }), (0, r.jsx)(Q, {
             chassisMixAmount: C,

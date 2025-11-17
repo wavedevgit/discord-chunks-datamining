@@ -2,7 +2,7 @@
 /** chunk id: 206044, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -69,15 +69,15 @@ function D(e, t) {
   }), e
 }
 let w = (0, Chunk636606.animated)(Chunk481060.CJ0),
-  L = e => {
+  x = e => {
     var t;
     let {
       isQuestExpired: n,
       quest: a,
       location: N,
       size: P,
-      expansionSpring: L,
-      isAnimating: x,
+      expansionSpring: x,
+      isAnimating: L,
       isExpanded: M,
       isInteracting: k,
       contentPosition: j,
@@ -133,7 +133,7 @@ let w = (0, Chunk636606.animated)(Chunk481060.CJ0),
             [C.headerContentEmbed]: q
           }),
           style: {
-            y: z ? L.to({
+            y: z ? x.to({
               range: [0, 1],
               output: [I.DJ, 0]
             }) : true
@@ -141,13 +141,13 @@ let w = (0, Chunk636606.animated)(Chunk481060.CJ0),
           children: [z && (0, r.jsx)(s.animated.div, {
             className: C.headerCollapsedContent,
             style: {
-              opacity: L.to({
+              opacity: x.to({
                 range: [0, 1],
                 output: [1, 0]
               }),
-              visibility: x || !M ? "inherit" : "hidden"
+              visibility: L || !M ? "inherit" : "hidden"
             },
-            "aria-hidden": !x && M,
+            "aria-hidden": !L && M,
             children: (0, r.jsxs)(u.kL8, {
               "aria-label": A.intl.string(A.t.dcl9MQ),
               onClick: en,
@@ -183,13 +183,13 @@ let w = (0, Chunk636606.animated)(Chunk481060.CJ0),
               [C.outerContainerEmbed]: q
             }),
             style: {
-              opacity: L.to({
+              opacity: x.to({
                 range: [0, 1],
                 output: [0, 1]
               }),
-              visibility: x || M ? "inherit" : "hidden"
+              visibility: L || M ? "inherit" : "hidden"
             },
-            "aria-hidden": !x && !M,
+            "aria-hidden": !L && !M,
             children: (0, r.jsxs)("div", {
               className: C.headerExpandedWrapper,
               children: [(0, r.jsxs)("div", {
@@ -228,7 +228,7 @@ let w = (0, Chunk636606.animated)(Chunk481060.CJ0),
         }), (0, r.jsxs)(s.animated.div, {
           className: C.iconsContainer,
           style: {
-            top: z ? L.to({
+            top: z ? x.to({
               range: [0, 1],
               output: [I.DJ / 2 - I.Z$ / 2, I.jc]
             }) : I.jc
@@ -243,10 +243,10 @@ let w = (0, Chunk636606.animated)(Chunk481060.CJ0),
             sourceQuestContent: G,
             children: e => (0, r.jsx)(s.animated.div, {
               style: {
-                opacity: L,
-                visibility: x || M ? "inherit" : "hidden"
+                opacity: x,
+                visibility: L || M ? "inherit" : "hidden"
               },
-              "aria-hidden": !x && !M,
+              "aria-hidden": !L && !M,
               children: (0, r.jsx)(u.P3F, D(R({}, e), {
                 className: C.iconWrapper,
                 "aria-label": A.intl.string(A.t.DEoVWZ),
@@ -262,7 +262,7 @@ let w = (0, Chunk636606.animated)(Chunk481060.CJ0),
             "aria-label": M ? A.intl.string(A.t.iTcuma) : A.intl.string(A.t.dcl9MQ),
             children: (0, r.jsx)(w, {
               style: {
-                rotate: L.to({
+                rotate: x.to({
                   range: [0, 1],
                   output: [0, 180]
                 })

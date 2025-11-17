@@ -188,7 +188,7 @@ function ey(e) {
     onVoiceChannelPreview: m
   }), {
     embeddedActivity: D
-  } = (0, $.Z)(o), w = eA(D), L = null != P && 0 === s.length ? [P] : s, x = L.length > 0, M = L.length >= 2, [k, U] = i.useState(!x), B = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), Z = null != t && g ? ec.intl.formatToPlainString(ec.t["8lzR/R"], {
+  } = (0, $.Z)(o), w = eA(D), x = null != P && 0 === s.length ? [P] : s, L = x.length > 0, M = x.length >= 2, [k, U] = i.useState(!L), B = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), Z = null != t && g ? ec.intl.formatToPlainString(ec.t["8lzR/R"], {
     channel: "#".concat(t.name)
   }) : ec.intl.formatToPlainString(ec.t["4c+CAx"], {
     channel: "@".concat(B)
@@ -306,7 +306,7 @@ function ey(e) {
                 })
               })
             }) : true
-          }), x && (0, r.jsx)(p.P3F, {
+          }), L && (0, r.jsx)(p.P3F, {
             onClick: () => X(false),
             className: eu.primaryActionPopoutMessageCloseIcon,
             children: (0, r.jsx)(p.Dio, {
@@ -324,7 +324,7 @@ function ey(e) {
             onClick: () => X(true),
             size: M ? "sm" : "md",
             text: ec.intl.string(ec.t.OAJQlP)
-          }, "toggleMessageMode"), L]
+          }, "toggleMessageMode"), x]
         })]
       })
     })
@@ -367,7 +367,7 @@ let eO = e => {
             emojiName: t.name
           }),
           shouldShow: !s && true,
-          children: (0, r.jsx)(x.u, {
+          children: (0, r.jsx)(L.u, {
             emoji: t,
             isDisabled: !a,
             onClick: () => n({
@@ -583,8 +583,8 @@ function eS(e) {
       fallbackApplication: w
     } = (0, $.Z)(y),
     {
-      largeImage: L,
-      smallImage: x
+      largeImage: x,
+      smallImage: L
     } = (0, z.YC)(S, null != D ? D : w),
     {
       largeImage: M
@@ -618,11 +618,11 @@ function eS(e) {
         })
       }), (0, r.jsxs)("div", {
         className: eu.streamingPopoutHeader,
-        children: [null != L && (0, r.jsx)("div", {
+        children: [null != x && (0, r.jsx)("div", {
           className: eu.popoutThumbnailContainer,
           children: (0, r.jsx)(Q.E, {
-            image: L,
-            smallImage: x,
+            image: x,
+            smallImage: L,
             onClick: null != l ? l : T,
             size: Q.J.SIZE_72
           })
@@ -664,7 +664,7 @@ function eA(e) {
       className: eu.voiceChannelPopoutReactorHeader,
       children: [(0, r.jsxs)(p.P3F, {
         "aria-label": ec.intl.string(ec.t["W/A4Qp"]),
-        onClick: () => (0, L.Kh)(n.id),
+        onClick: () => (0, x.Kh)(n.id),
         className: eu.voiceChannelPopoutReactorChannel,
         children: [(0, r.jsx)(D.Z, {
           guild: t,
@@ -733,7 +733,7 @@ function eC(e) {
   };
   let E = null != o,
     b = () => {
-      m.Z.updateChatOpen(s.id, true), (0, L.Kh)(s.id), null == a || a(s)
+      m.Z.updateChatOpen(s.id, true), (0, x.Kh)(s.id), null == a || a(s)
     },
     y = () => {
       v.Z.handleVoiceConnect({

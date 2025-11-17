@@ -125,11 +125,11 @@ let ef = (e, t) => ec({
     },
     emojis: {
       thumbnail: w.Z,
-      assetUrl: e ? D.Z : L.Z
+      assetUrl: e ? D.Z : x.Z
     },
     noLimits: {
       thumbnail: M.Z,
-      assetUrl: e ? x.Z : k.Z
+      assetUrl: e ? L.Z : k.Z
     }
   } : {
     referralProgram: {
@@ -215,7 +215,7 @@ let ef = (e, t) => ec({
       onClick: Chunk985443,
       badgeText: Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase(),
       videoUrl: Chunk184071.displayNameStyles.assetUrl
-    }, L = {
+    }, x = {
       name: "recurring3PPromotions",
       title: Chunk388032.intl.string(Chunk388032.t.m7PucM),
       description: Chunk388032.intl.format(Chunk388032.t.mqSNPd, {}),
@@ -228,7 +228,7 @@ let ef = (e, t) => ec({
       badgeText: Chunk388032.intl.string(Chunk388032.t.oW0eUd).toLocaleUpperCase(),
       previewImage: Chunk184071.recurring3PPromotions.thumbnail,
       videoUrl: Chunk184071.recurring3PPromotions.thumbnail
-    }, x = {
+    }, L = {
       name: "showYourStyle",
       title: Chunk388032.intl.string(Chunk388032.t.Ij3Zmv),
       description: Chunk388032.intl.string(Chunk388032.t.UsOUxY),

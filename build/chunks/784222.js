@@ -47,7 +47,7 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,7 +72,7 @@ function x(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -89,7 +89,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
       emojiSearchResults: f,
       gridWidth: _,
       emojiPaddingHorizontal: w,
-      emojiSpriteSize: x,
+      emojiSpriteSize: L,
       shouldShowSoundmojiInEmojiPicker: k,
       showOnlyUnicode: U
     } = e, G = (0, s.e7)([c.ZP], () => c.ZP.categories), B = r.useMemo(() => U ? d.ZP.getCategories() : G, [G, U]), Z = (0, s.e7)([E.Z], () => E.Z.getGuild(null == t ? true : t.getGuildId()), [t]), F = null == t ? null : t.getGuildId(), V = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(F), [F]), H = (0, A.NJ)(F), Y = (0, A.wC)(F), W = (0, A.q5)(F), {
@@ -118,7 +118,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
         u = 0,
         p = 0;
       if (null != V && null != _) {
-        let h = Math.floor(_ / (x + 2 * w)),
+        let h = Math.floor(_ / (L + 2 * w)),
           m = 3 * h,
           y = (o, d) => {
             let f = new Map,
@@ -158,7 +158,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                   return {
                     type: 0,
                     emoji: e,
-                    size: x,
+                    size: L,
                     isDisabled: f.get(e),
                     rowIndex: p,
                     columnIndex: G && t ? n + 1 : n,
@@ -171,7 +171,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                   type: 1,
                   guildId: O.id,
                   name: D.intl.string(D.t["Z/r7IS"]),
-                  size: x,
+                  size: L,
                   rowIndex: p,
                   columnIndex: 0,
                   visibleRowIndex: u
@@ -182,7 +182,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                     type: 1,
                     guildId: O.id,
                     name: D.intl.string(D.t["Z/r7IS"]),
-                    size: x,
+                    size: L,
                     rowIndex: e,
                     columnIndex: t.length,
                     visibleRowIndex: u
@@ -194,7 +194,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                     type: 2,
                     guildId: O.id,
                     name: D.intl.string(D.t.NZI2Zk),
-                    size: x,
+                    size: L,
                     rowIndex: e,
                     columnIndex: t.length,
                     visibleRowIndex: u,
@@ -206,7 +206,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
               p++
             }
             let F = _ ? 0 : B,
-              V = M(L({}, d), {
+              V = M(x({}, d), {
                 count: o.length
               });
             r.push(V), e.push(F)
@@ -330,7 +330,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
         rowCountBySection: e,
         sectionDescriptors: r
       }
-    }, [V, _, x, w, f, n, ei, ea, er, i, Q, X, t, l, K, z, $, B, Z, q, W, Y, H, ee, eo, k])
+    }, [V, _, L, w, f, n, ei, ea, er, i, Q, X, t, l, K, z, $, B, Z, q, W, Y, H, ee, eo, k])
   };
 var G = function(e) {
   return e[e.PREMIUM = 0] = "PREMIUM", e[e.ROLE_SUBSCRIPTION = 1] = "ROLE_SUBSCRIPTION", e

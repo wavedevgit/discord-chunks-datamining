@@ -93,8 +93,8 @@ function P(e) {
     closeOnSelect: T = true,
     shouldFocusWrap: C,
     placeholder: P = y.intl.string(b.default["A+pfVR"]),
-    name: L,
-    form: x,
+    name: x,
+    form: L,
     autoComplete: M,
     maxOptionsVisible: k = 5,
     options: j,
@@ -282,8 +282,8 @@ function P(e) {
           })]
         })
       })), (0, r.jsx)(_.M, {
-        name: L,
-        form: x,
+        name: x,
+        form: L,
         disabled: ec,
         autoComplete: M,
         selectionMode: t,

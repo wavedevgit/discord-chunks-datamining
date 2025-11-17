@@ -55,12 +55,12 @@ let A = (0, Chunk392711.debounce)(Chunk872810.xc, 1e3),
   D = 12 * Chunk70956.Z.Millis.SECOND,
   w = null;
 
-function L(e) {
+function x(e) {
   var t;
   null == (t = C[e]) || t.stop(), delete C[e]
 }
 
-function x(e) {
+function L(e) {
   var t;
   null == (t = N[e]) || t.stop(), delete N[e]
 }
@@ -102,7 +102,7 @@ class U extends Chunk147913.Z {
       } = e, {
         channelId: r
       } = (0, O.my)(t), i = _.Z.getChannel(r);
-      j(t, null == i ? true : i.isGuildStageVoice()), L(t), n || d.Z.getAllActiveStreams().forEach(e => {
+      j(t, null == i ? true : i.isGuildStageVoice()), x(t), n || d.Z.getAllActiveStreams().forEach(e => {
         let n = (0, O.V9)(e);
         e.ownerId !== f.default.getId() && n !== t && (0, o.g)(n, false)
       })
@@ -123,7 +123,7 @@ class U extends Chunk147913.Z {
       let {
         streamKey: n
       } = e;
-      x(n);
+      L(n);
       let {
         ownerId: r,
         guildId: i
@@ -138,20 +138,20 @@ class U extends Chunk147913.Z {
       let {
         streamKey: t
       } = e;
-      x(t)
+      L(t)
     }), T(this, "handleStreamDelete", e => {
       let {
         reason: t,
         streamKey: n
       } = e;
-      x(n), t === I.si2.STREAM_FULL && ((0, l.kr)(S({
+      L(n), t === I.si2.STREAM_FULL && ((0, l.kr)(S({
         type: l.u.STREAM_FULL
       }, (0, c.rT)(n))), (0, o.aP)(n, false), this.platformShowStreamFull())
     }), T(this, "handleStreamClose", e => {
       let {
         streamKey: t
       } = e;
-      L(t), x(t)
+      x(t), L(t)
     }), T(this, "handleVoiceChannelSelect", e => {
       let {
         channelId: t
@@ -187,7 +187,7 @@ class U extends Chunk147913.Z {
               n.start(R, () => (0, o.aP)(t, false)), C[t] = n
             }
             if (a && e.state === I.jm8.ENDED) {
-              L((0, O.V9)(e));
+              x((0, O.V9)(e));
               let n = d.Z.getStreamForUser(t, r);
               if (null == n) return;
               (0, o.rn)(n)

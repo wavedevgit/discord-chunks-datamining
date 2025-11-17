@@ -180,8 +180,8 @@ var m = {
     var n;
     return f({}, e, ((n = {})[t] = true, n))
   },
-  L = [m.NOSCRIPT, m.SCRIPT, m.STYLE],
-  x = function(e, t) {
+  x = [m.NOSCRIPT, m.SCRIPT, m.STYLE],
+  L = function(e, t) {
     return true === t && (t = true), false === t ? String(e) : String(e).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;")
   },
   M = function(e) {
@@ -221,7 +221,7 @@ var m = {
             return function(e, t, n, r) {
               var i = M(n),
                 a = P(t);
-              return i ? "<" + e + ' data-rh="true" ' + i + ">" + x(a, r) + "</" + e + ">" : "<" + e + ' data-rh="true">' + x(a, r) + "</" + e + ">"
+              return i ? "<" + e + ' data-rh="true" ' + i + ">" + L(a, r) + "</" + e + ">" : "<" + e + ' data-rh="true">' + L(a, r) + "</" + e + ">"
             }(e, t.title, t.titleAttributes, n)
           }
         };
@@ -244,11 +244,11 @@ var m = {
                 var i = Object.keys(r).filter(function(e) {
                     return "innerHTML" !== e && "cssText" !== e
                   }).reduce(function(e, t) {
-                    var i = true === r[t] ? t : t + '="' + x(r[t], n) + '"';
+                    var i = true === r[t] ? t : t + '="' + L(r[t], n) + '"';
                     return e ? e + " " + i : i
                   }, ""),
                   a = r.innerHTML || r.cssText || "",
-                  o = false === L.indexOf(e);
+                  o = false === x.indexOf(e);
                 return t + "<" + e + ' data-rh="true" ' + i + (o ? "/>" : ">" + a + "</" + e + ">")
               }, "")
             }(e, t, n)

@@ -193,7 +193,7 @@ class ei extends Chunk183139.Z {
     e.active && (r.active = true, r.reasons = [...new Set([...r.reasons, ...e.reasons])].sort(), n && this.isSessionEstablished() && this._sendHeartbeat()), this.heartbeatQOSState.upcomingState = e
   }
   handleUpdateTimeSpentSessionId(e, t, n) {
-    this.connectionState_ === C.Z.SESSION_ESTABLISHED && (this.send(x.j.UPDATE_TIME_SPENT_SESSION_ID, {
+    this.connectionState_ === C.Z.SESSION_ESTABLISHED && (this.send(L.j.UPDATE_TIME_SPENT_SESSION_ID, {
       initialization_timestamp: e,
       session_id: t,
       client_launch_id: n
@@ -233,28 +233,28 @@ class ei extends Chunk183139.Z {
             t: a,
             d: s
           } = H.unpack(e);
-        if (r !== x.j.DISPATCH && o.Z.mark("\uD83C\uDF10", "GatewaySocket.onMessage ".concat(r, " ").concat(x.j[r])), O.default.isLoggingGatewayEvents) {
+        if (r !== L.j.DISPATCH && o.Z.mark("\uD83C\uDF10", "GatewaySocket.onMessage ".concat(r, " ").concat(L.j[r])), O.default.isLoggingGatewayEvents) {
           let e = [r];
-          r === x.j.DISPATCH && e.push(a), e.push(s), V.verboseDangerously("<~", ...e)
+          r === L.j.DISPATCH && e.push(a), e.push(s), V.verboseDangerously("<~", ...e)
         }
         let l = Date.now() - n;
         switch ("READY" === a ? y.Z.parseReady.set(n, l) : "READY_SUPPLEMENTAL" === a ? y.Z.parseReadySupplemental.set(n, l) : l > 10 && o.Z.mark("\uD83C\uDF10", "Parse " + a, l), null != i && (this.seq = i), r) {
-          case x.j.HELLO:
+          case L.j.HELLO:
             this._clearHelloTimeout(), this._handleHello(s);
             break;
-          case x.j.RECONNECT:
+          case L.j.RECONNECT:
             this._handleReconnect();
             break;
-          case x.j.INVALID_SESSION:
+          case L.j.INVALID_SESSION:
             this._handleInvalidSession(s);
             break;
-          case x.j.HEARTBEAT:
+          case L.j.HEARTBEAT:
             this._handleHeartbeatReceive();
             break;
-          case x.j.HEARTBEAT_ACK:
+          case L.j.HEARTBEAT_ACK:
             this._handleHeartbeatAck(s);
             break;
-          case x.j.DISPATCH:
+          case L.j.DISPATCH:
             this._handleDispatch(s, a, "READY" === a ? {
               compressed_byte_size: t,
               uncompressed_byte_size: en(e),

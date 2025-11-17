@@ -59,7 +59,7 @@ let b = () => {
     let [e, t] = Chunk473749.useState(Chunk474936.PremiumTypes.TIER_0), [n, h] = Chunk473749.useState(Chunk45474.R.WHAT_YOU_LOSE), [g, b] = Chunk473749.useState(null), [O, v] = Chunk473749.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [I, T] = Chunk473749.useState([]), [S, A] = Chunk473749.useState(() => {
       let e = new Date;
       return module.setMonth(module.getMonth() + 1), module
-    }), [C, N] = Chunk473749.useState(null), [R, P] = Chunk473749.useState(false), [D, w] = Chunk473749.useState(false), [L, x] = Chunk473749.useState(false);
+    }), [C, N] = Chunk473749.useState(null), [R, P] = Chunk473749.useState(false), [D, w] = Chunk473749.useState(false), [x, L] = Chunk473749.useState(false);
     (0, Chunk473749.useEffect)(() => {
       (0, Chunk821849.Y2)()
     }, []), (0, Chunk473749.useEffect)(() => {
@@ -133,9 +133,9 @@ let b = () => {
       })), require !== Chunk45474.R.PREVIEW && null !== C && N(null)
     }, [require, g, S, O, C]);
     let M = Chunk473749.useCallback(async () => {
-      x(true), await (0, Chunk481060.ZDy)(async () => t => (0, r.jsx)(u.x, E(m({}, t), {
+      L(true), await (0, Chunk481060.ZDy)(async () => t => (0, r.jsx)(u.x, E(m({}, t), {
         onClose: () => {
-          t.onClose(), x(false)
+          t.onClose(), L(false)
         },
         premiumType: e,
         churnDiscount: g,
@@ -176,8 +176,8 @@ let b = () => {
       })))
     }, [module, g, O, C, R, D, require, S]);
     return (0, Chunk473749.useEffect)(() => {
-      L && M()
-    }, [require, L, M]), (0, Chunk54381.jsxs)(Chunk29594.pg, {
+      x && M()
+    }, [require, x, M]), (0, Chunk54381.jsxs)(Chunk29594.pg, {
       children: [(0, Chunk54381.jsxs)(Chunk29594.BZ, {
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
@@ -266,7 +266,7 @@ let b = () => {
         })
       }), (0, Chunk54381.jsx)(Chunk29594.dv, {}), (0, Chunk54381.jsx)(Chunk481060.Button, {
         onClick: () => {
-          x(true)
+          L(true)
         },
         variant: "primary",
         size: "md",

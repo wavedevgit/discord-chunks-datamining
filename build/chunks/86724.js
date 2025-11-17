@@ -129,7 +129,7 @@ function N(e) {
   } = e, {
     command: _,
     commandText: p
-  } = x(i), h = o.activeCommand;
+  } = L(i), h = o.activeCommand;
   if (!l && (null == h || null == (t = h.integration_types) ? true : t.includes(r.Y.GUILD_INSTALL)) || u && (null == h ? true : h.inputType) !== c.iw.BUILT_IN_TEXT && (null == h ? true : h.inputType) !== c.iw.BUILT_IN_INTEGRATION) return null != _ && P(i, s.id, h, true), null;
   if (null != _) {
     if (y.bN.isEditorEmpty(i) || null == h) return P(i, s.id, h, false), null;
@@ -139,7 +139,7 @@ function N(e) {
     if (null != h && d) {
       let e = R(i, s, o),
         t = m.tM(i, h, s.id);
-      return L({
+      return x({
         guildId: s.guild_id,
         channelId: s.id,
         command: h,
@@ -177,7 +177,7 @@ function N(e) {
         mode: "lowest"
       }),
       r = null != (n = null == t ? true : t[0].optionName) ? n : null;
-    return L({
+    return x({
       guildId: s.guild_id,
       channelId: s.id,
       command: h,
@@ -358,7 +358,7 @@ function w(e, t) {
   }), true)
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     channelId: n,
@@ -394,7 +394,7 @@ function L(e) {
   h && a.g7(n, _)
 }
 
-function x(e) {
+function L(e) {
   let t = m.cr(e);
   if (null == t) return {
     command: null,
@@ -418,7 +418,7 @@ function M(e, t) {
   let {
     command: i,
     commandText: a
-  } = x(e);
+  } = L(e);
   !(null == i || null == a || a.endsWith(" ")) && y.Jz.equals(r, {
     path: O.u9,
     offset: i.displayName.length + 1

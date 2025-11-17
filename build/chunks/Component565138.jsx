@@ -159,9 +159,9 @@ class R extends Chunk473749.PureComponent {
       } = require,
       D = T(require, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
       w = N[Chunk442837],
-      L = null != Chunk451478 ? Chunk481060.P3F : "div",
-      x = (0, Chunk601964.gM)(r);
-    return (0, Chunk54381.jsxs)(L, I(O({
+      x = null != Chunk451478 ? Chunk481060.P3F : "div",
+      L = (0, Chunk601964.gM)(r);
+    return (0, Chunk54381.jsxs)(x, I(O({
       className: s()(Chunk965005.icon, Chunk473749, (0, Chunk153066.l)(Chunk965005, "iconSize", Chunk442837), {
         [null != (e = (0, Chunk153066.l)(Chunk965005, "iconActive", Chunk442837)) ? module : ""]: Chunk319498,
         [Chunk965005.iconInactive]: !Chunk319498,
@@ -169,7 +169,7 @@ class R extends Chunk473749.PureComponent {
       }),
       "aria-hidden": C,
       style: null == r.icon ? O({
-        fontSize: (null != (t = w[x.length]) ? exports : w[w.length - 1]) * Chunk891819
+        fontSize: (null != (t = w[L.length]) ? exports : w[w.length - 1]) * Chunk891819
       }, Chunk692547) : Chunk692547,
       onClick: null != Chunk956664 || null == Chunk451478 ? true : Chunk451478,
       tabIndex: S

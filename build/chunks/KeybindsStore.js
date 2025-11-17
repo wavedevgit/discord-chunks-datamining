@@ -79,17 +79,17 @@ let D = new Chunk710845.Z("KeybindsStore"),
     params: {}
   };
 
-function L() {
+function x() {
   var e;
   let t = null != (e = (0, Chunk378799.pz)(false).get("Backquote")) ? module : "`";
   return "+" === exports ? t = "plus" : 0 === exports.length && (t = "`"), "shift+".concat(exports)
 }
-let x = "1001",
+let L = "1001",
   M = 10,
   k = function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     return {
-      id: x,
+      id: L,
       action: v.kg4.TOGGLE_OVERLAY_INPUT_LOCK,
       shortcut: e,
       enabled: t,
@@ -136,7 +136,7 @@ function G(e) {
   }), [...n, [S.Mo.KEYBOARD_KEY, i, (0, y.dU)()]])
 }
 let B = () => {
-    let e = L();
+    let e = x();
     "shift" === module && (U("Default overlay keybind is only shift", module, null), e = "shift+`");
     let t = G(module);
     if (null == exports) return k([], false);
@@ -413,7 +413,7 @@ let eg = [function() {
     returntrue
   }, false)
 }, function() {
-  return !!Chunk808506.default.getAnyGlobalEnabledOverlay() && eh(Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK, L())
+  return !!Chunk808506.default.getAnyGlobalEnabledOverlay() && eh(Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK, x())
 }, function() {
   return !!Chunk808506.default.getAnyGlobalEnabledOverlay() && eh(Chunk981631.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, "]`")
 }, function() {

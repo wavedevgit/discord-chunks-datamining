@@ -53,10 +53,10 @@ function E(e) {
   i.useEffect(() => {
     n(145260)
   }, []);
-  let L = i.useCallback(() => {
+  let x = i.useCallback(() => {
       (null == T ? true : T.id) != null && (c.Z.open(T.id, m.pNK.INTEGRATIONS), s.Z.setSection(m.b4C.APPLICATION, I), null == v || v())
     }, [I, null == T ? true : T.id, v]),
-    x = i.useCallback(() => {
+    L = i.useCallback(() => {
       (0, f.openUserSettings)(u.n.AUTHORIZED_APPS_PANEL, {
         section: m.oAB.AUTHORIZED_APPS
       });
@@ -70,10 +70,10 @@ function E(e) {
   return w && S && M.push((0, r.jsx)(o.sNh, {
     id: "manage-server-integration",
     label: g.intl.string(g.t.IuSJT8),
-    action: L
+    action: x
   }, "manage-server-integration")), D && P && M.push((0, r.jsx)(o.sNh, {
     id: "manage-authorized-app",
     label: g.intl.string(g.t.V8ruvz),
-    action: x
+    action: L
   }, "manage-authorized-app")), M
 }

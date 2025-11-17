@@ -100,12 +100,12 @@ function O(e) {
     colorStrings: c,
     roleStyle: "username",
     animateGradient: E || v || (null == O ? true : O.animate)
-  }), L = (0, f.EJ)(n), x = {
+  }), x = (0, f.EJ)(n), L = {
     className: o()(p.name, g, y, {
       [p.username]: A,
       [D]: R
     }),
-    children: L
+    children: x
   }, M = {
     className: o()(p.nameGlow, w, y),
     children: n
@@ -129,7 +129,7 @@ function O(e) {
         tag: "span",
         color: "currentColor",
         variant: b
-      }, x)) : (0, r.jsx)("span", m({}, x)), R && (null != b ? (0, r.jsx)(s.xvT, m({
+      }, L)) : (0, r.jsx)("span", m({}, L)), R && (null != b ? (0, r.jsx)(s.xvT, m({
         tag: "span",
         color: "currentColor",
         "aria-hidden": true,

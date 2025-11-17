@@ -38,13 +38,13 @@ require.d(exports, {
   T4: () => M,
   UP: () => ep,
   V6: () => R,
-  Wp: () => ex,
+  Wp: () => eL,
   Xc: () => V,
   Xk: () => j,
   Xr: () => eh,
   YC: () => e3,
-  Yk: () => eL,
-  _O: () => x,
+  Yk: () => ex,
+  _O: () => L,
   _j: () => eV,
   bh: () => es,
   bm: () => ef,
@@ -52,7 +52,7 @@ require.d(exports, {
   cP: () => Y,
   co: () => eE,
   d$: () => F,
-  d4: () => L,
+  d4: () => x,
   d8: () => C,
   dN: () => y,
   eR: () => I,
@@ -177,8 +177,8 @@ let C = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
   })),
   D = (0, Chunk560997.Zc)("notifications", "focusModeExpiresAtMs", e => null != e ? e : "0", e => e),
   w = [],
-  L = (0, Chunk560997.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : w, e => e),
-  x = (0, Chunk560997.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : w, e => e),
+  x = (0, Chunk560997.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : w, e => e),
+  L = (0, Chunk560997.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : w, e => e),
   M = (0, Chunk560997.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : w, e => e),
   k = (0, Chunk560997.Zc)("textAndImages", "viewImageDescriptions", e => {
     var t;
@@ -508,7 +508,7 @@ let eP = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
     var e;
     return !Chunk244827.Z.active && (null == (e = Chunk263937.Z.getOverride("gifAutoPlay")) ? true : module.value)
   })),
-  eL = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateEmoji", e => {
+  ex = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateEmoji", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -520,7 +520,7 @@ let eP = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
     var e;
     return !Chunk244827.Z.active && (null == (e = Chunk263937.Z.getOverride("animateEmoji")) ? true : module.value)
   })),
-  ex = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateStickers", e => {
+  eL = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateStickers", e => {
     var t;
     return null != (t = null == e ? true : e.value) ? t : b.yr.ALWAYS_ANIMATE
   }, e => o.yC.create({

@@ -112,7 +112,7 @@ function w(e) {
   O = e.afk
 }
 
-function L(e) {
+function x(e) {
   let {
     userId: t,
     speakingFlags: n
@@ -120,7 +120,7 @@ function L(e) {
   return n !== g.Dg.NONE && t === h.default.getId() && M({}), false
 }
 
-function x(e) {
+function L(e) {
   let {
     state: t
   } = e;
@@ -168,8 +168,8 @@ E(j, "displayName", "IdleStore");
 let U = new j(Chunk570140.Z, {
   IDLE: D,
   AFK: w,
-  SPEAKING: L,
-  APP_STATE_UPDATE: x,
+  SPEAKING: x,
+  APP_STATE_UPDATE: L,
   OVERLAY_SET_NOT_IDLE: M,
   CHANNEL_SELECT: M,
   VOICE_CHANNEL_SELECT: M,

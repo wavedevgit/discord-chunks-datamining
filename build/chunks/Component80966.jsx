@@ -95,8 +95,8 @@ class m extends Chunk473749.Component {
         onPause: P,
         onEnded: D,
         onControlsShow: w,
-        onControlsHide: L,
-        onVolumeChange: x,
+        onControlsHide: x,
+        onVolumeChange: L,
         onMute: M,
         disableArrowKeySeek: k,
         alt: j = Chunk388032.intl.string(Chunk388032.t.FlNoSV)
@@ -145,10 +145,10 @@ class m extends Chunk473749.Component {
           onPlay: R,
           onPause: P,
           onEnded: D,
-          onVolumeChange: x,
+          onVolumeChange: L,
           onMute: M,
           onControlsShow: w,
-          onControlsHide: L,
+          onControlsHide: x,
           mimeType: S,
           downloadable: b,
           disableArrowKeySeek: k

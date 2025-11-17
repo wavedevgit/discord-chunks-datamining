@@ -56,8 +56,8 @@ let T = 26,
   P = null,
   D = null,
   w = 0,
-  L = 0,
-  x = {
+  x = 0,
+  L = {
     state: "uninitialized"
   },
   M = Chunk19780.Z.getState(),
@@ -66,7 +66,7 @@ let T = 26,
 
 function U() {
   if (null != P) return;
-  let e = 0 === L ? 0 : S - (performance.now() - L);
+  let e = 0 === x ? 0 : S - (performance.now() - x);
   Chunk960048.Z.addBreadcrumb({
     message: "Received Last Heartbeat Event Timestamp. Time Until Next Heartbeat: ".concat(module / 1e3, " seconds. Scheduling Heartbeat")
   }), P = {
@@ -131,11 +131,11 @@ async function F() {
     client_heartbeat_initialization_timestamp: exports.createdAtTimestamp,
     client_heartbeat_version: T
   }, (0, Chunk343420.O)(), Z());
-  Chunk626135.default.track(Chunk981631.rMx.CLIENT_HEARTBEAT, Chunk772848), L = performance.now(), (0, Chunk188471.Z)()
+  Chunk626135.default.track(Chunk981631.rMx.CLIENT_HEARTBEAT, Chunk772848), x = performance.now(), (0, Chunk188471.Z)()
 }
 
 function V() {
-  if (!(null != j && (0, Chunk733879.y)()) || performance.now() - L <= S) return;
+  if (!(null != j && (0, Chunk733879.y)()) || performance.now() - x <= S) return;
   let e = {
     client_heartbeat_version: T
   };
@@ -184,10 +184,10 @@ function X(e) {
 }
 
 function Q() {
-  Chunk433517.K.remove(C), x = {
+  Chunk433517.K.remove(C), L = {
     state: "loaded",
     session: null
-  }, B(), L = 0
+  }, B(), x = 0
 }
 
 function J() {
@@ -239,9 +239,9 @@ async function eo() {
   var e;
   let t = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     n = null,
-    a = "loaded" === x.state ? null == (e = x.session) ? true : module.uuid : null;
+    a = "loaded" === L.state ? null == (e = L.session) ? true : module.uuid : null;
   try {
-    n = "uninitialized" === x.state ? X(await Chunk433517.K.getAfterRefresh(C)) : x.session
+    n = "uninitialized" === L.state ? X(await Chunk433517.K.getAfterRefresh(C)) : L.session
   } catch (e) {
     Chunk960048.Z.captureException(module)
   }
@@ -252,7 +252,7 @@ async function eo() {
         createdAtTimestamp: module,
         lastUsedTimestamp: module,
         version: Chunk686325.EI
-      }, w = 0), require.lastUsedTimestamp = module, q(require)) : null != require && (0, Chunk686325.qK)(require) && (n = null), x = {
+      }, w = 0), require.lastUsedTimestamp = module, q(require)) : null != require && (0, Chunk686325.qK)(require) && (n = null), L = {
         state: "loaded",
         session: require
       }, null != require && Chunk442837 !== require.uuid && exports) {
@@ -264,6 +264,6 @@ async function eo() {
 }
 
 function es() {
-  let e = "uninitialized" === x.state ? X(Chunk433517.K.get(C)) : x.session;
+  let e = "uninitialized" === L.state ? X(Chunk433517.K.get(C)) : L.session;
   return null == module || (0, Chunk686325.qK)(module) ? null : module
 }

@@ -2,7 +2,7 @@
 /** chunk id: 915750, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B5: () => x,
+  B5: () => L,
   PI: () => P,
   WD: () => j,
   aM: () => U,
@@ -61,7 +61,7 @@ let C = 100,
 function w(e, t) {
   return "".concat(e, "_").concat(t)
 }
-class L {
+class x {
   getId() {
     return this.id
   }
@@ -190,7 +190,7 @@ class L {
       let {
         triggeredByStatusChange: t
       } = e;
-      return this.stop(), new L({
+      return this.stop(), new x({
         questContent: this.questContent,
         questOrQuests: this.quests,
         questContentRowIndex: this.questContentRowIndex,
@@ -226,7 +226,7 @@ class L {
     }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = P, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = f
   }
 }
-let x = (e, t) => {
+let L = (e, t) => {
     let n = Array.isArray(e) ? e.sort().map(e => e.id).join("_") : e.id;
     return "".concat(n, "_").concat(t)
   },
@@ -262,7 +262,7 @@ function G(e) {
     let r = a && t,
       i = (n || c || d) && r,
       o = (n || c) && !r || d;
-    (i || o) && null != f.current && f.current.stop(), i && (f.current = new L({
+    (i || o) && null != f.current && f.current.stop(), i && (f.current = new x({
       questOrQuests: e.questOrQuests,
       questContent: e.questContent,
       questContentPosition: e.questContentPosition,

@@ -111,7 +111,7 @@ function U(e) {
     })
   }, [et, en, Z, er.applicationId, er.id, es, X, J]);
   let ep = null != ei && ei.length > 0 && (Z === I.c || null === e_) && Q ? E.w.SELECT_PAYMENT_METHOD : true,
-    eh = er.productLine === x.POd.SOCIAL_LAYER_GAME_ITEM,
+    eh = er.productLine === L.POd.SOCIAL_LAYER_GAME_ITEM,
     em = ee && !eh;
   return (0, r.jsxs)("div", {
     className: k.stepBody,
@@ -123,7 +123,7 @@ function U(e) {
       color: f.Z.Colors.WARNING,
       className: k.errorBlock,
       children: M.intl.string(M.t.OvMyMd)
-    }, "TEST_MODE") : null, (0, A.yE)(U.flags, x.udG.EMBEDDED) && q === h.O.ERROR ? (0, r.jsx)(f.Z, {
+    }, "TEST_MODE") : null, (0, A.yE)(U.flags, L.udG.EMBEDDED) && q === h.O.ERROR ? (0, r.jsx)(f.Z, {
       icon: (0, c.GSL)(S.Z),
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.ERROR,
@@ -139,14 +139,14 @@ function U(e) {
       giftRecipient: $
     }) : null, (0, r.jsx)(c.gNt, {
       label: J ? M.intl.string(M.t.PEjaCx) : M.intl.string(M.t.sail9P),
-      children: null != es ? (0, r.jsx)(L.B, {
+      children: null != es ? (0, r.jsx)(x.B, {
         sku: er,
         skuPricePreview: es,
         application: U
       }) : null == z ? (0, r.jsx)(c.$jN, {
         type: c.$jN.Type.WANDERING_CUBES,
         className: k.invoiceSpinner
-      }) : (0, r.jsx)(L.E, {
+      }) : (0, r.jsx)(x.E, {
         sku: er,
         value: ""
       })

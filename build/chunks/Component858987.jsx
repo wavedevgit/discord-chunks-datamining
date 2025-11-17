@@ -110,14 +110,14 @@ function I(e) {
   } = e, {
     application: D,
     selectedPlan: w,
-    hasAcceptedTerms: L,
-    purchaseType: x,
+    hasAcceptedTerms: x,
+    purchaseType: L,
     paymentSourceId: M,
     activeSubscription: k,
     devShelfFetchState: j,
     hasPaymentSources: U
   } = (0, c.JL)(), G = O({
-    purchaseType: x,
+    purchaseType: L,
     plan: w,
     premiumSubscription: g,
     isGift: b,
@@ -172,16 +172,16 @@ function I(e) {
   });
   if (S) return (0, r.jsx)(o.Button, {
     variant: "expressive",
-    "data-testid": L ? "purchase" : "submitButton",
+    "data-testid": x ? "purchase" : "submitButton",
     text: G,
-    onClick: L ? A : () => v(n, f),
+    onClick: x ? A : () => v(n, f),
     loading: h,
     iconPosition: "start",
     icon: () => (0, r.jsx)(o.SrA, {
       color: "currentColor"
     })
   });
-  else if (!L) return (0, r.jsx)(o.aML, {
+  else if (!x) return (0, r.jsx)(o.aML, {
     "data-migration-pending": true,
     text: m.intl.string(m.t.XdvBLS),
     children: e => (0, r.jsx)(o.Button, y(E({

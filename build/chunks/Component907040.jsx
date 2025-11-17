@@ -248,11 +248,11 @@ let eu = (e, t) => {
       } = e,
       {
         onFocus: ew,
-        onKeyDown: eL,
-        autoFocus: ex = true,
+        onKeyDown: ex,
+        autoFocus: eL = true,
         accessory: eM
       } = ev,
-      ek = (0, u.e7)([L.ZP], () => null != f ? L.ZP.getDefaultChannel(f) : null, [f]),
+      ek = (0, u.e7)([x.ZP], () => null != f ? x.ZP.getDefaultChannel(f) : null, [f]),
       [ej, eU] = i.useState(null),
       eG = i.useRef(""),
       eB = (0, S.Iu)(e => e.searchQuery),
@@ -262,7 +262,7 @@ let eu = (e, t) => {
     null == c && null != ek && (c = ek);
     let eH = null != (a = null != (n = null == c ? true : c.getGuildId()) ? n : f) ? a : null,
       [eY, eW] = i.useState(false),
-      eK = x.default.getCurrentUser(),
+      eK = L.default.getCurrentUser(),
       ez = (0, k.I5)(eK);
     i.useImperativeHandle(t, () => ({
       onPickerOpen: ta
@@ -379,7 +379,7 @@ let eu = (e, t) => {
         channelGuildId: eH,
         isBurstReaction: eY
       });
-    ef(eu, eF), e_(eu, e2, eV, ex), i.useEffect(() => {
+    ef(eu, eF), e_(eu, e2, eV, eL), i.useEffect(() => {
       eE || (0, S.ql)("")
     }, [eE]), i.useEffect(() => (M.default.track(Q.rMx.OPEN_POPOUT, en({
       type: null != e$ ? e$ : "Emoji Picker",
@@ -434,11 +434,11 @@ let eu = (e, t) => {
         pickerIntention: l,
         emojiListRef: eF,
         onKeyDown: e => {
-          null == td || td(e), null == eL || eL(e)
+          null == td || td(e), null == ex || ex(e)
         },
         searchBarRef: eV,
         onFocus: ew,
-        autoFocus: ex,
+        autoFocus: eL,
         accessory: eM,
         headerClassName: ey,
         diversitySurrogate: e2,

@@ -542,12 +542,12 @@
                     P = r.float_array(I),
                     D = 0,
                     w = 0,
-                    L = [{
+                    x = [{
                       in_time: 0,
                       out_time: 0,
                       tempo: a
                     }],
-                    x = 0,
+                    L = 0,
                     M = 0,
                     k = 1,
                     j = 0,
@@ -556,8 +556,8 @@
                     B = 0,
                     Z = {
                       mapOutputToInputTime: function(e) {
-                        for (var t = L.length - 1; e < L[t].out_time && t > 0;) t--;
-                        var n = L[t];
+                        for (var t = x.length - 1; e < x[t].out_time && t > 0;) t--;
+                        var n = x[t];
                         return n.in_time + n.tempo * (e - n.out_time)
                       },
                       flush: function(e) {
@@ -568,8 +568,8 @@
                         for (t = 0; t < d.length; t++) d[t] = 0;
                         if (e) {
                           w = Math.max(0, w - e), D = Z.mapOutputToInputTime(w);
-                          for (var r = L.length - 1; w <= L[r].out_time && r >= 0;) L.pop(), r--;
-                          L.push({
+                          for (var r = x.length - 1; w <= x[r].out_time && r >= 0;) x.pop(), r--;
+                          x.push({
                             in_time: D,
                             out_time: w,
                             tempo: a
@@ -584,8 +584,8 @@
                           for (var n = e.length / t | 0, r = 0, i = 0; i < n; i++) r += e[i * t];
                           return .9 / r
                         }(p, _), a = e;
-                        var t = L[L.length - 1];
-                        t.out_time == w ? t.tempo = e : L.push({
+                        var t = x[x.length - 1];
+                        t.out_time == w ? t.tempo = e : x.push({
                           in_time: D,
                           out_time: w,
                           tempo: e
@@ -637,12 +637,12 @@
                           } else b[G] = F(t, n, B), y[G] = 0, R[G] = 1, P[G] = 0
                         }
                         g[E] = 2 * s;
-                        var L = g[v = 0],
-                          x = g[v + 1],
+                        var x = g[v = 0],
+                          L = g[v + 1],
                           M = R[v],
                           k = P[v];
                         for (m = 1; m < t.length - 1; m++) {
-                          m >= L && m - L > x - m && (L = g[++v], x = g[v + 1], M = R[v], k = P[v]);
+                          m >= x && m - x > L - m && (x = g[++v], L = g[v + 1], M = R[v], k = P[v]);
                           var j = t[m] * M - n[m] * k,
                             U = t[m] * k + n[m] * M;
                           t[m] = j, n[m] = U
@@ -657,7 +657,7 @@
                       var e = 0 | (j += 2 * U);
                       j -= e;
                       for (var t = 0; t < s; t++) l.m_re[t] = p[t] * u[t], l.m_im[t] = p[t] * u[f + t];
-                      r.blit(u, 2 * f, u, 0, s - f), l.inplace(false), l.unpack(g, E, b, y), H(x, g, E, 0, 0, _ / f), H(x + 1, b, y, 0, 0, (_ + e) / f), r.blit(b, 0, O, 0, m), r.blit(y, 0, v, 0, m), l.repack(g, E, b, y), l.inplace(true);
+                      r.blit(u, 2 * f, u, 0, s - f), l.inplace(false), l.unpack(g, E, b, y), H(L, g, E, 0, 0, _ / f), H(L + 1, b, y, 0, 0, (_ + e) / f), r.blit(b, 0, O, 0, m), r.blit(y, 0, v, 0, m), l.repack(g, E, b, y), l.inplace(true);
                       var n = d.length;
                       for (r.blit(d, M, d, 0, n - M), t = n - M; t < n; t++) d[t] = 0;
                       var i = 0,
@@ -667,7 +667,7 @@
                       for (t = s - _; t < s; t++) Math.abs(2 * l.m_im[t]) > i && (i = Math.abs(2 * l.m_im[t]));
                       var o = 1 / Math.floor(s / (2 * _));
                       for (a * i > o && (a = o / i), t = 0; t < s; t++) d[t] += a * l.m_re[t], d[t + _ + e] += a * l.m_im[t];
-                      return x += 2, M = 2 * _ + e
+                      return L += 2, M = 2 * _ + e
                     };
                   return Z.process = function(e) {
                     var n = e[0].length,
@@ -1342,8 +1342,8 @@
             P = "READY",
             D = "PLAYING",
             w = "SEEKING",
-            L = "ERROR",
-            x = "NOT_SEEKING",
+            x = "ERROR",
+            L = "NOT_SEEKING",
             M = "BISECT_TO_TARGET",
             k = "BISECT_TO_KEYPOINT",
             j = "LINEAR_TO_TARGET",
@@ -1362,7 +1362,7 @@
             function n(e) {
               var r;
               if ((0, i.default)(this, n), r = t.call(this), (e = e || {}).base = e.base || p.default.base, r._options = e, r._instanceId = "ogvjs" + ++n.instanceCount, true !== e.worker ? r._enableWorker = !!e.worker : r._enableWorker = !!window.Worker, !p.default.wasmSupported()) throw Error("WebAssembly not supported");
-              return r._enableThreading = !!e.threading, r._enableSIMD = !!e.simd, r._state = A, r._seekState = x, r._detectedType = null, r._canvas = document.createElement("canvas"), r._frameSink = null, r.className = r._instanceId, (0, m.default)((0, o.default)(r), S), r._view = r._canvas, r._view.style.position = "absolute", r._view.style.top = "0", r._view.style.left = "0", r._view.style.width = "100%", r._view.style.height = "100%", r._view.style.objectFit = "contain", r.appendChild(r._view), r._startTime = I(), r._codec = null, r._audioInfo = null, r._videoInfo = null, r._actionQueue = [], r._audioFeeder = null, r._muted = false, r._initialPlaybackPosition = 0, r._initialPlaybackOffset = 0, r._prebufferingAudio = false, r._initialSeekTime = 0, r._currentSrc = "", r._crossOrigin = null, r._streamEnded = false, r._mediaError = null, r._dataEnded = false, r._byteLength = 0, r._duration = null, r._lastSeenTimestamp = null, r._nextProcessingTimer, r._nextFrameTimer = null, r._loading = false, r._started = false, r._paused = true, r._ended = false, r._startedPlaybackInDocument = false, r._stream = true, r._framesProcessed = 0, r._targetPerFrameTime = 1e3 / 60, r._actualPerFrameTime = 0, r._totalFrameTime = 0, r._totalFrameCount = 0, r._playTime = 0, r._bufferTime = 0, r._drawingTime = 0, r._proxyTime = 0, r._totalJitter = 0, r._droppedAudio = 0, r._delayedAudio = 0, r._lateFrames = 0, r._poster = "", r._thumbnail = null, r._frameEndTimestamp = 0, r._audioEndTimestamp = 0, r._decodedFrames = [], r._pendingFrames = [], r._lastFrameDecodeTime = 0, r._lastFrameVideoCpuTime = 0, r._lastFrameAudioCpuTime = 0, r._lastFrameDemuxerCpuTime = 0, r._lastFrameDrawingTime = 0, r._lastFrameBufferTime = 0, r._lastFrameProxyTime = 0, r._lastVideoCpuTime = 0, r._lastAudioCpuTime = 0, r._lastDemuxerCpuTime = 0, r._lastBufferTime = 0, r._lastProxyTime = 0, r._lastDrawingTime = 0, r._lastFrameTimestamp = 0, r._currentVideoCpuTime = 0, r._lastTimeUpdate = 0, r._timeUpdateInterval = 250, r._seekTargetTime = 0, r._bisectTargetTime = 0, r._seekMode = null, r._lastSeekPosition = null, r._seekBisector = null, r._didSeek = null, r._depth = 0, r._needProcessing = false, r._pendingFrame = 0, r._pendingAudio = 0, r._framePipelineDepth = 8, r._frameParallelism = r._enableThreading ? Math.min(16, navigator.hardwareConcurrency) || 1 : 0, r._audioPipelineDepth = 12, r._videoInfo = null, r._audioInfo = null, r._width = 0, r._height = 0, r._volume = 1, r._playbackRate = 1, Object.defineProperties((0, o.default)(r), {
+              return r._enableThreading = !!e.threading, r._enableSIMD = !!e.simd, r._state = A, r._seekState = L, r._detectedType = null, r._canvas = document.createElement("canvas"), r._frameSink = null, r.className = r._instanceId, (0, m.default)((0, o.default)(r), S), r._view = r._canvas, r._view.style.position = "absolute", r._view.style.top = "0", r._view.style.left = "0", r._view.style.width = "100%", r._view.style.height = "100%", r._view.style.objectFit = "contain", r.appendChild(r._view), r._startTime = I(), r._codec = null, r._audioInfo = null, r._videoInfo = null, r._actionQueue = [], r._audioFeeder = null, r._muted = false, r._initialPlaybackPosition = 0, r._initialPlaybackOffset = 0, r._prebufferingAudio = false, r._initialSeekTime = 0, r._currentSrc = "", r._crossOrigin = null, r._streamEnded = false, r._mediaError = null, r._dataEnded = false, r._byteLength = 0, r._duration = null, r._lastSeenTimestamp = null, r._nextProcessingTimer, r._nextFrameTimer = null, r._loading = false, r._started = false, r._paused = true, r._ended = false, r._startedPlaybackInDocument = false, r._stream = true, r._framesProcessed = 0, r._targetPerFrameTime = 1e3 / 60, r._actualPerFrameTime = 0, r._totalFrameTime = 0, r._totalFrameCount = 0, r._playTime = 0, r._bufferTime = 0, r._drawingTime = 0, r._proxyTime = 0, r._totalJitter = 0, r._droppedAudio = 0, r._delayedAudio = 0, r._lateFrames = 0, r._poster = "", r._thumbnail = null, r._frameEndTimestamp = 0, r._audioEndTimestamp = 0, r._decodedFrames = [], r._pendingFrames = [], r._lastFrameDecodeTime = 0, r._lastFrameVideoCpuTime = 0, r._lastFrameAudioCpuTime = 0, r._lastFrameDemuxerCpuTime = 0, r._lastFrameDrawingTime = 0, r._lastFrameBufferTime = 0, r._lastFrameProxyTime = 0, r._lastVideoCpuTime = 0, r._lastAudioCpuTime = 0, r._lastDemuxerCpuTime = 0, r._lastBufferTime = 0, r._lastProxyTime = 0, r._lastDrawingTime = 0, r._lastFrameTimestamp = 0, r._currentVideoCpuTime = 0, r._lastTimeUpdate = 0, r._timeUpdateInterval = 250, r._seekTargetTime = 0, r._bisectTargetTime = 0, r._seekMode = null, r._lastSeekPosition = null, r._seekBisector = null, r._didSeek = null, r._depth = 0, r._needProcessing = false, r._pendingFrame = 0, r._pendingAudio = 0, r._framePipelineDepth = 8, r._frameParallelism = r._enableThreading ? Math.min(16, navigator.hardwareConcurrency) || 1 : 0, r._audioPipelineDepth = 12, r._videoInfo = null, r._audioInfo = null, r._width = 0, r._height = 0, r._volume = 1, r._playbackRate = 1, Object.defineProperties((0, o.default)(r), {
                 src: {
                   get: function() {
                     return this.getAttribute("src") || ""
@@ -1539,7 +1539,7 @@
                 },
                 error: {
                   get: function() {
-                    return this._state === L ? this._mediaError ? this._mediaError : new g.default("unknown error occurred in media procesing") : null
+                    return this._state === x ? this._mediaError ? this._mediaError : new g.default("unknown error occurred in media procesing") : null
                   }
                 },
                 preload: {
@@ -1661,7 +1661,7 @@
             }, {
               key: "_stopVideo",
               value: function() {
-                this._log("STOPPING"), this._state = A, this._seekState = x, this._started = false, this._ended = false, this._frameEndTimestamp = 0, this._audioEndTimestamp = 0, this._lastFrameDecodeTime = 0, this._prebufferingAudio = false, this._actionQueue.splice(0, this._actionQueue.length), this._stream && (this._stream.abort(), this._stream = null, this._streamEnded = false), this._codec && (this._codec.close(), this._codec = null, this._pendingFrame = 0, this._pendingAudio = 0, this._dataEnded = false), this._videoInfo = null, this._audioInfo = null, this._audioFeeder && (this._audioFeeder.close(), this._audioFeeder = null), this._nextProcessingTimer && (clearTimeout(this._nextProcessingTimer), this._nextProcessingTimer = null), this._nextFrameTimer && (clearTimeout(this._nextFrameTimer), this._nextFrameTimer = null), this._frameSink && (this._frameSink.clear(), this._frameSink = null), this._decodedFrames && (this._decodedFrames = []), this._pendingFrames && (this._pendingFrames = []), this._initialSeekTime = 0, this._initialPlaybackPosition = 0, this._initialPlaybackOffset = 0, this._duration = null
+                this._log("STOPPING"), this._state = A, this._seekState = L, this._started = false, this._ended = false, this._frameEndTimestamp = 0, this._audioEndTimestamp = 0, this._lastFrameDecodeTime = 0, this._prebufferingAudio = false, this._actionQueue.splice(0, this._actionQueue.length), this._stream && (this._stream.abort(), this._stream = null, this._streamEnded = false), this._codec && (this._codec.close(), this._codec = null, this._pendingFrame = 0, this._pendingAudio = 0, this._dataEnded = false), this._videoInfo = null, this._audioInfo = null, this._audioFeeder && (this._audioFeeder.close(), this._audioFeeder = null), this._nextProcessingTimer && (clearTimeout(this._nextProcessingTimer), this._nextProcessingTimer = null), this._nextFrameTimer && (clearTimeout(this._nextFrameTimer), this._nextFrameTimer = null), this._frameSink && (this._frameSink.clear(), this._frameSink = null), this._decodedFrames && (this._decodedFrames = []), this._pendingFrames && (this._pendingFrames = []), this._initialSeekTime = 0, this._initialPlaybackPosition = 0, this._initialPlaybackOffset = 0, this._duration = null
               }
             }, {
               key: "_doFrameComplete",
@@ -1706,7 +1706,7 @@
             }, {
               key: "_onStreamError",
               value: function(e) {
-                "AbortError" === e.name ? this._log("i/o promise canceled; ignoring") : (this._log("i/o error: " + e), this._mediaError = new g.default(g.default.MEDIA_ERR_NETWORK, String(e)), this._state = L, this._stopPlayback())
+                "AbortError" === e.name ? this._log("i/o promise canceled; ignoring") : (this._log("i/o error: " + e), this._mediaError = new g.default(g.default.MEDIA_ERR_NETWORK, String(e)), this._state = x, this._stopPlayback())
               }
             }, {
               key: "_seek",
@@ -1756,7 +1756,7 @@
               key: "_continueSeekedPlayback",
               value: function() {
                 var e = this;
-                this._seekState = x, this._state = P, this._frameEndTimestamp = this._codec.frameTimestamp, this._audioEndTimestamp = this._codec.audioTimestamp, this._codec.hasAudio ? this._seekTargetTime = this._codec.audioTimestamp : this._seekTargetTime = this._codec.frameTimestamp, this._initialPlaybackOffset = this._seekTargetTime;
+                this._seekState = L, this._state = P, this._frameEndTimestamp = this._codec.frameTimestamp, this._audioEndTimestamp = this._codec.audioTimestamp, this._codec.hasAudio ? this._seekTargetTime = this._codec.audioTimestamp : this._seekTargetTime = this._codec.frameTimestamp, this._initialPlaybackOffset = this._seekTargetTime;
                 var t = function() {
                   e._lastTimeUpdate = e._seekTargetTime, e._fireEventAsync("timeupdate"), e._fireEventAsync("seeked"), e._isProcessing() || e._pingProcessing()
                 };
@@ -1856,7 +1856,7 @@
                 else if (this._state == w) this._doProcessSeeking();
                 else if (this._state == D) this._doProcessPlay();
                 else {
-                  if (this._state != L) throw Error("Unexpected OGVPlayer state " + this._state);
+                  if (this._state != x) throw Error("Unexpected OGVPlayer state " + this._state);
                   this._doProcessError()
                 }
               }
@@ -1922,7 +1922,7 @@
             }, {
               key: "_doProcessSeeking",
               value: function() {
-                if (this._seekState == x) throw Error("seeking in invalid state (not seeking?)");
+                if (this._seekState == L) throw Error("seeking in invalid state (not seeking?)");
                 if (this._seekState == M) this._doProcessBisectionSeek();
                 else if (this._seekState == k) this._doProcessBisectionSeek();
                 else {

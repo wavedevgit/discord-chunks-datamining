@@ -134,8 +134,8 @@ let ey = new Chunk710845.Z("AutocompleteUtils"),
   eP = 3,
   eD = 11,
   ew = 6,
-  eL = 8,
-  ex = 1,
+  ex = 8,
+  eL = 1,
   eM = 1e3,
   ek = .2,
   ej = .1,
@@ -170,23 +170,23 @@ function ez(e) {
       a = r.filter(e => (0, en.lM)(e));
       break;
     case eu.h8.USER:
-      a = r.filter(e => e instanceof x.Sf && e.type === ec.d4z.DM);
+      a = r.filter(e => e instanceof L.Sf && e.type === ec.d4z.DM);
       break;
     case eu.h8.GROUP_DM:
-      a = r.filter(e => e instanceof x.Sf && e.isMultiUserDM());
+      a = r.filter(e => e instanceof L.Sf && e.isMultiUserDM());
       break;
     case eu.h8.TEXT_CHANNEL:
-      a = r.filter(e => e instanceof x.Sf && (0, x.r8)(e.type));
+      a = r.filter(e => e instanceof L.Sf && (0, L.r8)(e.type));
       break;
     case eu.h8.VOICE_CHANNEL:
-      a = r.filter(e => e instanceof x.Sf && e.isGuildVocal())
+      a = r.filter(e => e instanceof L.Sf && e.isGuildVocal())
   }
   let o = {};
   for (let t of a) {
     let {
       id: n
     } = t, r = G.Z.getScoreWithoutFetchingLatest(n);
-    if (e === eu.h8.USER && t instanceof x.mn) {
+    if (e === eu.h8.USER && t instanceof L.mn) {
       if (t.type === ec.d4z.DM) o[n = t.getRecipientId()] = 1 + r / i;
       else if (t.type === ec.d4z.GROUP_DM) {
         let e = t.recipients.length;
@@ -287,25 +287,25 @@ function e1(e) {
     case P.MO.CORRELATED_EMOJI:
       return ew;
     case P.MO.TAG:
-      return ex;
+      return eL;
     case P.MO.GUILD_NAME:
     case P.MO.PACK_NAME:
-      return eL;
+      return ex;
     default:
       return 1
   }
 }
 
 function e3(e) {
-  return e === Z.sH || e !== Z.Zb && !!(0, x.Q5)(e)
+  return e === Z.sH || e !== Z.Zb && !!(0, L.Q5)(e)
 }
 
 function e2(e, t, n) {
-  return e === t || (!!n || !!(0, x.Km)(t)) && (e === Z.sH ? (0, x.r8)(t) || (0, x.bw)(t) : e === Z.Zb && (0, x.bw)(t))
+  return e === t || (!!n || !!(0, L.Km)(t)) && (e === Z.sH ? (0, L.r8)(t) || (0, L.bw)(t) : e === Z.Zb && (0, L.bw)(t))
 }
 
 function e4(e, t) {
-  return e === Z.sH && (0, x.bw)(t)
+  return e === Z.sH && (0, L.bw)(t)
 }
 
 function e5(e) {
@@ -553,7 +553,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         y = G.Z.getMaxScore();
       for (let e of t) {
         var O;
-        if (!e2(l, e.type, null != r) || (0, x.Km)(e.type) && !W.Z.can(u ? e.accessPermissions : ec.Plq.VIEW_CHANNEL, e) || !o(e)) continue;
+        if (!e2(l, e.type, null != r) || (0, L.Km)(e.type) && !W.Z.can(u ? e.accessPermissions : ec.Plq.VIEW_CHANNEL, e) || !o(e)) continue;
         let t = [...m],
           i = e.name.toLocaleLowerCase(),
           s = p && n === e.id,
@@ -568,7 +568,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
             c = Math.min(eI - eA, c)
           }
           0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e4(l, e.type) && (c = Math.max(c - eC, eA / 2)), e.isThread() && (e.isActiveThread() || (c -= eN), w.Z.hasJoined(e.id) || (c -= eR)), c = Math.min(c + Math.min(null != (O = G.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eP, c >= eI ? eO : eI), b.push({
-            type: (0, x.bw)(e.type) ? eu.h8.VOICE_CHANNEL : eu.h8.TEXT_CHANNEL,
+            type: (0, L.bw)(e.type) ? eu.h8.VOICE_CHANNEL : eu.h8.TEXT_CHANNEL,
             record: e,
             score: eK(c, d[e.id]),
             comparator: (0, _.F6)(e, Q.default, z.Z),
@@ -930,7 +930,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         id: ed.HY.CUSTOMIZE_COMMUNITY,
         name: e_.intl.string(e_.t.h9mGOP)
       }], c = [];
-      for (let e of l)(e.id !== ed.HY.SERVER_GUIDE || a) && (e.id !== ed.HY.CHANNEL_BROWSER || o) && (e.id !== ed.HY.CUSTOMIZE_COMMUNITY || s) && eQ(e.name.toLocaleLowerCase(), i, false) > 0 && c.push(new x.nl({
+      for (let e of l)(e.id !== ed.HY.SERVER_GUIDE || a) && (e.id !== ed.HY.CHANNEL_BROWSER || o) && (e.id !== ed.HY.CUSTOMIZE_COMMUNITY || s) && eQ(e.name.toLocaleLowerCase(), i, false) > 0 && c.push(new L.nl({
         id: e.id,
         name: e.name,
         type: ec.d4z.UNKNOWN,
@@ -1013,7 +1013,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         maxCount: i = ec.rnv,
         matchComparator: a
       } = e;
-      return L.DZ.loadIfNecessary(), {
+      return x.DZ.loadIfNecessary(), {
         emojis: g.ZP.searchWithoutFetchingLatest({
           channel: n,
           query: t,
@@ -1029,7 +1029,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         i = Q.default.getCurrentUser(),
         a = new Set,
         o = [];
-      for (let s of (L.DZ.loadIfNecessary(), e)) {
+      for (let s of (x.DZ.loadIfNecessary(), e)) {
         if ("" === s) continue;
         let e = s.toLocaleLowerCase(),
           l = (0, es._I)(e),
@@ -1061,7 +1061,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
     },
     querySoundmoji(e, t) {
       let n = Q.default.getCurrentUser();
-      S.Z.isFetching() || S.Z.hasFetchedAllSounds() || (0, T.w)(), L.DZ.loadIfNecessary();
+      S.Z.isFetching() || S.Z.hasFetchedAllSounds() || (0, T.w)(), x.DZ.loadIfNecessary();
       let r = Array.from(S.Z.getSounds().values()).reduce((e, n) => (n.forEach(n => {
         (0, I.Z)(n, null == t ? true : t.guild_id, null == t ? true : t.id) && e.push(n)
       }), e), []);

@@ -88,8 +88,8 @@ let R = Chunk473749.forwardRef(function(e, t) {
       className: P,
       role: D,
       onRemove: w,
-      guildId: L,
-      disableBorderColor: x,
+      guildId: x,
+      disableBorderColor: L,
       onMouseDown: M,
       onRoleClick: k
     } = e,
@@ -101,7 +101,7 @@ let R = Chunk473749.forwardRef(function(e, t) {
     B = (0, E.p9)({
       roleId: D.id,
       size: 16,
-      guildId: L
+      guildId: x
     }),
     Z = (0, c.e7)([h.Z], () => h.Z.roleStyle),
     F = (0, m.t)("user_profile_member_role"),
@@ -125,20 +125,20 @@ let R = Chunk473749.forwardRef(function(e, t) {
             default: e
           } = await n.e("88146").then(n.bind(n, 501171));
           return t => (0, r.jsx)(e, A(T({}, t), {
-            guildId: L,
+            guildId: x,
             roleId: D.id,
             channelId: true
           }))
         })
       }
-    }, [F, L, D.id, k]),
+    }, [F, x, D.id, k]),
     W = (0, _.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
     K = null != (I = D.colorString) ? I : W,
     z = null != (S = (0, l.wK)(K, .6)) ? S : true,
     q = u.Z.unsafe_rawColors.WHITE_500.css,
     X = (0, l._i)(K);
   null != X && .3 > (0, l.Bd)(X) && (q = u.Z.unsafe_rawColors.PRIMARY_630.css);
-  let Q = (0, b._f)(L, D, D.colorStrings);
+  let Q = (0, b._f)(x, D, D.colorStrings);
   N = V ? (0, r.jsx)(g.Z, {
     className: v.roleFlowerStar,
     iconClassName: R ? v.roleVerifiedIcon : true,
@@ -158,9 +158,9 @@ let R = Chunk473749.forwardRef(function(e, t) {
   let J = i.useMemo(() => {
       var t;
       return T({
-        borderColor: x ? true : z
+        borderColor: L ? true : z
       }, null != (t = e.style) ? t : {})
-    }, [z, x, e.style]),
+    }, [z, L, e.style]),
     $ = () => R ? (0, r.jsx)(f.u, {
       asContainer: true,
       text: O.intl.string(O.t.u3RVsH),

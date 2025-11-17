@@ -77,9 +77,9 @@ function w(e, t) {
   }), e
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
-  var n, r, i = x(e, t);
+  var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -87,7 +87,7 @@ function L(e, t) {
   return i
 }
 
-function x(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -132,7 +132,7 @@ function j(e) {
   var {
     guild: t,
     application: n
-  } = e, a = L(e, ["guild", "application"]);
+  } = e, a = x(e, ["guild", "application"]);
   let {
     onClose: o
   } = a, s = i.useCallback(() => {
@@ -180,7 +180,7 @@ function U(e) {
   var {
     guild: t,
     application: n
-  } = e, a = L(e, ["guild", "application"]);
+  } = e, a = x(e, ["guild", "application"]);
   let o = C.intl.string(C.t.se5gLj);
   i.useEffect(() => {
     O.default.track(A.rMx.OAUTH2_AUTHORIZE_SUCCESS_VIEWED, {
@@ -207,7 +207,7 @@ function U(e) {
 function G(e) {
   var {
     application: t
-  } = e, n = L(e, ["application"]);
+  } = e, n = x(e, ["application"]);
   let {
     onClose: a
   } = n;

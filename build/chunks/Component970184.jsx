@@ -161,7 +161,7 @@ function w(e, t, n, r) {
   }
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   let r = (0, a.e7)([O.Z], () => O.Z.getInteractionComponentState(e.customId, t.id)),
     {
       error: s,
@@ -184,7 +184,7 @@ function L(e, t, n) {
   }
 }
 
-function x(e) {
+function L(e) {
   return () => {
     throw Error("".concat(e, " does not support state"))
   }
@@ -217,7 +217,7 @@ function j(e) {
       getParents: e => (0, y.cd)(n.components, e)
     };
     if (null != a) return {
-      useComponentState: L.bind(null, a),
+      useComponentState: x.bind(null, a),
       channelId: a.channelId,
       containerId: a.customId,
       modal: a,
@@ -227,7 +227,7 @@ function j(e) {
       getParents: e => (0, y.cd)(a.components, e)
     };
     if (null != o) return {
-      useComponentState: x("ApplicationWidget"),
+      useComponentState: L("ApplicationWidget"),
       containerId: R(o),
       applicationWidget: o,
       validators: s,

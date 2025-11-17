@@ -87,7 +87,7 @@ async function F(e) {
     context: k,
     commandTargetId: j,
     maxSizeCallback: U,
-    commandOrigin: G = L.bB.CHAT,
+    commandOrigin: G = x.bB.CHAT,
     sectionName: B,
     interactionLifecycleOptionsFactory: Z = K,
     source: F
@@ -103,7 +103,7 @@ async function F(e) {
   }), await y.Z.unarchiveThreadIfNecessary(k.channel.id);
   let q = [],
     X = [],
-    Q = (0, x.D7)(W);
+    Q = (0, L.D7)(W);
   if (null != C.options)
     for (let e of C.options) {
       let t;
@@ -143,7 +143,7 @@ async function F(e) {
         case c.jw.CHANNEL:
           if ("channelMention" === a.type) t = a.channelId;
           else if ("text" === a.type)
-            if ((0, x.BH)(a.text)) t = a.text.trim();
+            if ((0, L.BH)(a.text)) t = a.text.trim();
             else {
               let e = (0, _.K)(a.text, null == (h = k.guild) ? true : h.id, k.channel.id);
               i()((null == e ? true : e.type) === "channelMention", "Failed to resolve ".concat(a.text)), t = e.channelId
@@ -151,7 +151,7 @@ async function F(e) {
         case c.jw.ROLE:
           if ("roleMention" === a.type) t = a.roleId;
           else if ("text" === a.type)
-            if ((0, x.BH)(a.text)) t = a.text.trim();
+            if ((0, L.BH)(a.text)) t = a.text.trim();
             else {
               let e = (0, _.K)(a.text, null == (m = k.guild) ? true : m.id, k.channel.id, {
                 allowUsers: false
@@ -163,7 +163,7 @@ async function F(e) {
         case c.jw.USER:
           if ("userMention" === a.type) t = a.userId;
           else if ("text" === a.type)
-            if ((0, x.BH)(a.text)) t = a.text.trim();
+            if ((0, L.BH)(a.text)) t = a.text.trim();
             else {
               let e = (0, _.K)(a.text, null == (E = k.guild) ? true : E.id, k.channel.id, {
                 allowRoles: false
@@ -175,7 +175,7 @@ async function F(e) {
           else if ("roleMention" === a.type) t = a.roleId;
           else if ("textMention" === a.type && "@everyone" === a.text) t = null == (b = k.guild) ? true : b.id;
           else if ("text" === a.type)
-            if ((0, x.BH)(a.text)) t = a.text.trim();
+            if ((0, L.BH)(a.text)) t = a.text.trim();
             else {
               let e = (0, _.K)(a.text, null == (v = k.guild) ? true : v.id, k.channel.id);
               (null == e ? true : e.type) === "userMention" ? t = e.userId: (null == e ? true : e.type) === "roleMention" ? t = e.roleId : (null == e ? true : e.type) === "textMention" && "@everyone" === e.text ? t = null == (T = k.guild) ? true : T.id : i()(false, "Failed to resolve ".concat(a.text))
@@ -223,7 +223,7 @@ async function F(e) {
     location: z(W),
     source: H
   }), C.execute(q, k);
-  if (C.inputType === L.iw.BUILT_IN || C.inputType === L.iw.BUILT_IN_TEXT || C.inputType === L.iw.BUILT_IN_INTEGRATION) return;
+  if (C.inputType === x.iw.BUILT_IN || C.inputType === x.iw.BUILT_IN_TEXT || C.inputType === x.iw.BUILT_IN_INTEGRATION) return;
   let J = {
       version: C.version,
       id: null != (S = null == (t = C.rootCommand) ? true : t.id) ? S : C.id,
@@ -391,26 +391,26 @@ async function K(e, t, n) {
 
 function z(e) {
   switch (e) {
-    case L.bB.APPLICATION_LAUNCHER:
-      return L.Vh.APP_LAUNCHER;
-    case L.bB.APP_LAUNCHER_APPLICATION_VIEW:
-      return L.Vh.APP_LAUNCHER_APPLICATION_VIEW;
-    case L.bB.IMAGE_RECS_MENU:
-      return L.Vh.IMAGE_RECS_MENU;
-    case L.bB.IMAGE_RECS_SUBMENU:
-      return L.Vh.IMAGE_RECS_SUBMENU;
-    case L.bB.ACTIVITY_INSTANCE_EMBED:
-      return L.Vh.ACTIVITY_INSTANCE_EMBED;
-    case L.bB.ACTIVITY_BOOKMARK_EMBED:
-      return L.Vh.ACTIVITY_BOOKMARK_EMBED;
-    case L.bB.MINI_SHELF:
-      return L.Vh.ACTIVITIES_MINI_SHELF;
-    case L.bB.VOICE_TILE_ACTIVITY_SUGGESTIONS:
-      return L.Vh.VC_TILE_ACTIVITY_SUGGESTION;
-    case L.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON:
-      return L.Vh.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
+    case x.bB.APPLICATION_LAUNCHER:
+      return x.Vh.APP_LAUNCHER;
+    case x.bB.APP_LAUNCHER_APPLICATION_VIEW:
+      return x.Vh.APP_LAUNCHER_APPLICATION_VIEW;
+    case x.bB.IMAGE_RECS_MENU:
+      return x.Vh.IMAGE_RECS_MENU;
+    case x.bB.IMAGE_RECS_SUBMENU:
+      return x.Vh.IMAGE_RECS_SUBMENU;
+    case x.bB.ACTIVITY_INSTANCE_EMBED:
+      return x.Vh.ACTIVITY_INSTANCE_EMBED;
+    case x.bB.ACTIVITY_BOOKMARK_EMBED:
+      return x.Vh.ACTIVITY_BOOKMARK_EMBED;
+    case x.bB.MINI_SHELF:
+      return x.Vh.ACTIVITIES_MINI_SHELF;
+    case x.bB.VOICE_TILE_ACTIVITY_SUGGESTIONS:
+      return x.Vh.VC_TILE_ACTIVITY_SUGGESTION;
+    case x.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON:
+      return x.Vh.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
     default:
-      return L.Vh.SLASH_UI
+      return x.Vh.SLASH_UI
   }
 }
 async function q(e, t) {

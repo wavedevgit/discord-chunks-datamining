@@ -105,7 +105,7 @@ function C(e) {
     displayNameStyles: P
   } = (0, f.ZP)(a), D = (0, _.X7)(g, R, C), w = (0, d.j)({
     displayNameStyles: P
-  }), L = S(i, a), x = (0, m.NE)(i, a), M = n.showThreadPromptOnReply && L >= I && x, k = () => (0, h.uL)(y.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
+  }), x = S(i, a), L = (0, m.NE)(i, a), M = n.showThreadPromptOnReply && x >= I && L, k = () => (0, h.uL)(y.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
   function j(e) {
     e.stopPropagation(), (0, p.qx)(i.id, !s)
@@ -178,7 +178,7 @@ function C(e) {
       }), M && (0, r.jsx)(A, {
         channel: i,
         message: a,
-        replyChainLength: L
+        replyChainLength: x
       })]
     })
   })

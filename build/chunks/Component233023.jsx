@@ -57,7 +57,7 @@ function m(e) {
     hideTooltip: I || P
   }));
   let w = P && (null != D ? " ".concat(R) : R),
-    L = () => {
+    x = () => {
       let e = null != N && !v && !P;
       return I || e ? (0, r.jsxs)(r.Fragment, {
         children: [D, w]
@@ -71,6 +71,6 @@ function m(e) {
     variant: "text-".concat(y, "/medium"),
     color: "none",
     className: a()(p.truncated, n),
-    children: L()
+    children: x()
   })
 }

@@ -86,7 +86,7 @@ function N(e) {
     timestamp: new Date(e.timestamp),
     editedTimestamp: null != e.edited_timestamp ? new Date(e.edited_timestamp) : null,
     attachments: w(e),
-    embeds: x(e),
+    embeds: L(e),
     components: (0, o.uZ)(null != (t = e.components) ? t : []),
     codedLinks: y.V$x.NON_PARSED.has(e.type) ? [] : (0, a.ZP)(e.content)
   }))
@@ -105,20 +105,20 @@ function R(e) {
     P = null != (l = e.mention_games) ? l : [],
     D = e.message_reference,
     w = A(e),
-    x = null,
+    L = null,
     j = null == e ? true : e.gift_info,
     U = e.gifting_prompt,
     G = null != e.interaction ? c.Z.createFromServer(e.interaction) : null,
     B = e.type === y.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
     Z = e.content;
-  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (p = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, Z = ""), C(e)) ? T(v({}, x), {
+  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (p = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, Z = ""), C(e)) ? T(v({}, L), {
     id: e.id,
     channel_id: e.channel_id,
     type: y.uaV.DEFAULT,
     author: w,
     timestamp: O.timestamp,
     isUnsupported: true
-  }) : T(v({}, e, x, O.toJS()), {
+  }) : T(v({}, e, L, O.toJS()), {
     author: w,
     webhookId: e.webhook_id,
     blocked: _.Z.isBlockedForMessage(e) || null != B && _.Z.isBlocked(B),
@@ -140,7 +140,7 @@ function R(e) {
     giftCodes: (0, m.Fp)(e) ? (0, m.Q_)(null == e ? true : e.embeds[0].url) : (0, m.Q_)(e.content),
     content: Z,
     referralTrialOfferId: p,
-    call: L(e.call, O.timestamp),
+    call: x(e.call, O.timestamp),
     messageSnapshots: k(e),
     reactions: M(null != h ? h : e.reactions, e.poll),
     interaction: G,
@@ -170,7 +170,7 @@ function D(e, t) {
   });
   let n = e,
     r = false;
-  if (null != t.call && (n = n.set("call", L(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", w(t))), null != t.application && (n = n.set("application", t.application)), null != t.activity && (n = n.set("activity", t.activity)), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", x(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", k(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, o.uZ)(t.components))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
+  if (null != t.call && (n = n.set("call", x(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", w(t))), null != t.application && (n = n.set("application", t.application)), null != t.activity && (n = n.set("activity", t.activity)), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", L(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", k(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, o.uZ)(t.components))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
     var i;
     n = n.set("reactions", M(null != (i = e.reactions) ? i : t.reactions))
   }
@@ -186,7 +186,7 @@ function w(e) {
   }))
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null != e) {
     let n = null != e.ended_timestamp ? i()(new Date(e.ended_timestamp)) : null,
       r = null != n ? i().duration(n.diff(t)) : null;
@@ -199,7 +199,7 @@ function L(e, t) {
   return null
 }
 
-function x(e) {
+function L(e) {
   if (null == e.embeds) return [];
   let t = e.embeds.map(t => (0, h.kC)(e.channel_id, e.id, t));
   return (0, h.o3)(t)

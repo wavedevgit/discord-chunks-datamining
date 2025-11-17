@@ -71,7 +71,7 @@ function D(e, t) {
 
 function w(e, t) {
   if (null == e) return {};
-  var n, r, i = L(e, t);
+  var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -79,7 +79,7 @@ function w(e, t) {
   return i
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -87,7 +87,7 @@ function L(e, t) {
   return i
 }
 
-function x(e) {
+function L(e) {
   let {
     children: t,
     className: n
@@ -136,7 +136,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
       })]
     });
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(x, {
+      children: [(0, r.jsx)(L, {
         children: f
       }), (0, r.jsx)(u.tEY, {
         ringClassName: C.ring,
@@ -182,7 +182,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
       trackUserProfileAction: R
     } = (0, b.KZ)(), P = (0, h.p)({
       location: "CustomStatusBubble"
-    }), D = null != _ ? S.Hp : 0, w = S.hT + D, L = S.YF + D, M = i.useRef(null), k = i.useRef(null), j = i.useRef(null), U = i.useRef(w), G = i.useRef(L), B = null != _ && null == p, [Z, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!B && I), K = I && Z, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
+    }), D = null != _ ? S.Hp : 0, w = S.hT + D, x = S.YF + D, M = i.useRef(null), k = i.useRef(null), j = i.useRef(null), U = i.useRef(w), G = i.useRef(x), B = null != _ && null == p, [Z, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!B && I), K = I && Z, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
     i.useEffect(() => () => q.stop(), [q]), i.useEffect(() => {
       null == N || N.onInteractionPopoutTargetRefChange(M)
     }, [N]);
@@ -198,12 +198,12 @@ let M = Chunk473749.forwardRef(function(e, t) {
       let e = k.current.getBoundingClientRect().height,
         t = j.current.getBoundingClientRect().height;
       W(t > e), U.current = e, G.current = t, Q({
-        maxHeight: "".concat(Math.min(V ? U.current : G.current, V ? w : L), "px")
+        maxHeight: "".concat(Math.min(V ? U.current : G.current, V ? w : x), "px")
       })
-    }, [K, p, _, Q, V, w, L]);
+    }, [K, p, _, Q, V, w, x]);
     let J = e => {
         Y && (e ? Q({
-          maxHeight: "".concat(Math.min(G.current, L), "px"),
+          maxHeight: "".concat(Math.min(G.current, x), "px"),
           delay: z ? 0 : S.zS,
           config: {
             clamp: true,
@@ -258,7 +258,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
           })
         })
       }),
-      eo = (0, r.jsxs)(x, {
+      eo = (0, r.jsxs)(L, {
         children: [er, ei]
       });
     return null == O ? (0, r.jsxs)(r.Fragment, {
@@ -362,9 +362,9 @@ function U(e) {
   }, [f, _, t, n]);
   let [A, N] = i.useState(false), P = i.useCallback(e => {
     (e || !m) && N(e)
-  }, [m]), L = e => null == e ? null : null != e.id ? "`" + ":".concat(e.name, ":") + "`" : g.ZP.translateSurrogatesToInlineEmoji(e.name), x = (e, t) => null == e ? t : "".concat(e, " ").concat(t), M = () => {
-    let e = L(t);
-    return null == n ? e : x(e, n)
+  }, [m]), x = e => null == e ? null : null != e.id ? "`" + ":".concat(e.name, ":") + "`" : g.ZP.translateSurrogatesToInlineEmoji(e.name), L = (e, t) => null == e ? t : "".concat(e, " ").concat(t), M = () => {
+    let e = x(t);
+    return null == n ? e : L(e, n)
   };
   return (0, r.jsx)(O.Z, {
     user: a,

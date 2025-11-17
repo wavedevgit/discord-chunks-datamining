@@ -99,7 +99,7 @@ function w(e, t, n, r) {
   }
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   let r = n === p.default.getId(),
     i = y.Z.isMobileOnline(n),
     a = r ? O.Z.getStatus() : y.Z.getStatus(n, e),
@@ -118,7 +118,7 @@ function L(e, t, n) {
   })
 }
 
-function x(e) {
+function L(e) {
   let t = h.Z.getChannel(e);
   return null == t ? R : null == t.memberListId ? M(t) : t.memberListId
 }
@@ -169,7 +169,7 @@ class k {
     } = t;
     if (null != n) this.rows.splice(e, 0, w(this.guildId, n.id, n.count));
     else if (null != r) {
-      let t = L(this.guildId, this.ownerId, r.user.id);
+      let t = x(this.guildId, this.ownerId, r.user.id);
       if (null == t) return;
       this.rows.splice(e, 0, t), this.members[r.user.id] = t
     }
@@ -182,7 +182,7 @@ class k {
     } = t, i = this.rows[e];
     if (null != i && "MEMBER" === i.type && delete this.members[i.user.id], null != n) this.rows[e] = w(this.guildId, n.id, n.count);
     else if (null != r) {
-      let t = L(this.guildId, this.ownerId, r.user.id);
+      let t = x(this.guildId, this.ownerId, r.user.id);
       if (null == t) return;
       this.rows[e] = t, this.members[r.user.id] = t
     }
@@ -194,7 +194,7 @@ class k {
   }
   rebuildMember(e) {
     let t = this.members[e];
-    null != t && (Object.assign(t, L(this.guildId, this.ownerId, e)), this.version++)
+    null != t && (Object.assign(t, x(this.guildId, this.ownerId, e)), this.version++)
   }
   rebuildMembers() {
     let e = Object.keys(this.members);
@@ -317,7 +317,7 @@ class q extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk594174.default, Chunk430824.Z, Chunk485386.Z, Chunk592125.Z, Chunk271383.ZP, Chunk158776.Z, Chunk885110.Z, Chunk314897.default, Chunk650774.Z, Chunk199902.Z, Chunk353926.Z), this.syncWith([Chunk885110.Z], K), this.syncWith([Chunk199902.Z], W)
   }
   getProps(e, t) {
-    let n = U.get(e, x(t));
+    let n = U.get(e, L(t));
     return {
       listId: "".concat(n.guildId, ":").concat(n.listId),
       groups: n.groups,
@@ -326,7 +326,7 @@ class q extends(r = Chunk442837.ZP.Store) {
     }
   }
   getRows(e, t) {
-    return U.get(e, x(t)).rows
+    return U.get(e, L(t)).rows
   }
 }
 S(q, "displayName", "ChannelMemberStore");

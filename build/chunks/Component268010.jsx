@@ -51,7 +51,7 @@ let I = (e, t, n) => {
     }), {
       primaryColor: N,
       secondaryColor: R
-    } = (0, m.Z)(null == C ? true : C.src), P = (0, a.e7)([s.default], () => s.default.locale), D = (0, h.Z)(O.ABu.CRUNCHYROLL), w = (0, _.ap)(n.extra.media_assets_large_text), L = i.useCallback(e => {
+    } = (0, m.Z)(null == C ? true : C.src), P = (0, a.e7)([s.default], () => s.default.locale), D = (0, h.Z)(O.ABu.CRUNCHYROLL), w = (0, _.ap)(n.extra.media_assets_large_text), x = i.useCallback(e => {
       if (null != A && (null == C ? true : C.src) != null) return (0, p.B)({
         entry: n,
         mediaImageSrc: null == C ? true : C.src,
@@ -62,7 +62,7 @@ let I = (e, t, n) => {
         colors: [N, R],
         channelId: e
       })
-    }, [t, n, w, P, null == C ? true : C.src, N, R, A]), x = () => {
+    }, [t, n, w, P, null == C ? true : C.src, N, R, A]), L = () => {
       if (null == n.extra.url) return;
       let e = d.Z.safeParseWithQuery(n.extra.url);
       null != e && null != e.protocol && null != e.hostname && (0, c.q)({
@@ -88,15 +88,15 @@ let I = (e, t, n) => {
             entry: n
           }, t))
         }),
-        onClickTitle: x,
-        onClickThumbnail: x
+        onClickTitle: L,
+        onClickThumbnail: L
       }), (0, r.jsx)(b.St, {
         children: (0, r.jsx)(b.WT, {
           onReaction: u,
           onVoiceChannelPreview: S,
           user: A,
           channel: t,
-          generateReactionImage: L,
+          generateReactionImage: x,
           reactionImageAltText: T(n, A),
           entry: n
         })

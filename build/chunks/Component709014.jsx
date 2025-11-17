@@ -56,10 +56,10 @@ function g(e, t) {
     width: E,
     height: b
   } : (0, u.m)(g), D = !(0, _.Z)("lottie_hover_multiple_loop"), w = i.useContext(c.Sfi).reducedMotion.enabled, {
-    enabled: L
+    enabled: x
   } = d.Z.useExperiment({
     location: "LottieIcon web entry point"
-  }), x = w || !L, M = i.useRef(O);
+  }), L = w || !x, M = i.useRef(O);
   return (0, f.zq)(() => {
     var e, t;
     null == T || T({
@@ -69,7 +69,7 @@ function g(e, t) {
     play: e => {
       if (null == R.current) return;
       let t = null == N.current;
-      if (N.current = e, x) {
+      if (N.current = e, L) {
         let t = I[e];
         R.current.resetSegments(true), R.current.setSegment(t.start + t.duration, t.start + t.duration), R.current.stop()
       } else {
@@ -79,14 +79,14 @@ function g(e, t) {
       }
     },
     stop: () => {
-      if (null == R.current || x) return
+      if (null == R.current || L) return
     },
     stopIfPlaying: e => {
-      null == R.current || x || N.current === e && (R.current.resetSegments(true), R.current.setSegment(I[e].start, I[e].start), R.current.stop())
+      null == R.current || L || N.current === e && (R.current.resetSegments(true), R.current.setSegment(I[e].start, I[e].start), R.current.stop())
     },
     getDuration: e => null == R.current ? null : R.current.getDuration(e),
     getCurrentFrame: () => null == R.current ? null : R.current.currentFrame
-  }), [x, D, I, v]), i.useEffect(() => {
+  }), [L, D, I, v]), i.useEffect(() => {
     null == S && h().then(e => A(e.default))
   }, [S, h]), i.useEffect(() => (Promise.resolve().then(n.t.bind(n, 500923, 23)).then(e => {
     var t, n;
@@ -97,7 +97,7 @@ function g(e, t) {
       o = null != (n = null != (t = N.current) ? t : M.current) ? n : a;
     if (null != o && null != I[o]) {
       let e = I[o];
-      r = [x ? e.start : null != v ? v : e.start, e.start + e.duration]
+      r = [L ? e.start : null != v ? v : e.start, e.start + e.duration]
     }
     null != C.current && (R.current = i.loadAnimation({
       container: C.current,
@@ -110,7 +110,7 @@ function g(e, t) {
   }), () => {
     var e;
     null == (e = R.current) || e.destroy()
-  }), [S, I, v, x]), (0, r.jsx)("div", {
+  }), [S, I, v, L]), (0, r.jsx)("div", {
     style: m({
       "--__lottieIconColor": null != a && "string" == typeof a ? a : null == a ? true : a.css,
       display: "flex"

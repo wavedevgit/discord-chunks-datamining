@@ -37,7 +37,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,7 +53,7 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -113,7 +113,7 @@ class F {
     goLiveModalDurationMs: a,
     analyticsLocations: o
   }) {
-    x(this, "streamRegion", true), x(this, "streamApplication", true), x(this, "streamSourceType", true), x(this, "actionContext", true), x(this, "maxViewers", true), x(this, "nativePickerStyleUsed", true), x(this, "startTime", true), x(this, "endTime", true), x(this, "goLiveModalDurationMs", true), x(this, "numViewers", true), x(this, "analyticsLocations", true), this.streamRegion = e, this.streamApplication = t, this.streamSourceType = n, this.actionContext = r, this.maxViewers = i, this.goLiveModalDurationMs = a, this.numViewers = i, this.analyticsLocations = null != o ? o : []
+    L(this, "streamRegion", true), L(this, "streamApplication", true), L(this, "streamSourceType", true), L(this, "actionContext", true), L(this, "maxViewers", true), L(this, "nativePickerStyleUsed", true), L(this, "startTime", true), L(this, "endTime", true), L(this, "goLiveModalDurationMs", true), L(this, "numViewers", true), L(this, "analyticsLocations", true), this.streamRegion = e, this.streamApplication = t, this.streamSourceType = n, this.actionContext = r, this.maxViewers = i, this.goLiveModalDurationMs = a, this.numViewers = i, this.analyticsLocations = null != o ? o : []
   }
 }
 class V extends Chunk861687.Z {
@@ -245,7 +245,7 @@ class V extends Chunk861687.Z {
               desktop_capturer_type: u,
               media_session_id: m,
               rtc_connection_id: g,
-              context: L.Yn.STREAM,
+              context: x.Yn.STREAM,
               activity: d,
               soundshare_session: null != (v = null == E || null == (O = E.desktopSource) ? true : O.soundshareSession) ? v : true,
               share_game_name: C,
@@ -501,12 +501,12 @@ class V extends Chunk861687.Z {
       sessionId: e,
       guildId: f,
       channelId: _,
-      context: L.Yn.STREAM,
+      context: x.Yn.STREAM,
       streamServerId: n,
       streamChannelId: u,
       parentMediaSessionId: c,
       joinVoiceId: null
-    }), x(this, "analyticsContext", true), x(this, "videoStreamStats", true), x(this, "streamContext", true), x(this, "streamKey", true), x(this, "isStreamer", true), x(this, "updateVideoStreamId", true), x(this, "bandwidthSamples", []), x(this, "goliveCurrentMaxResolution", true), x(this, "_firstFrameDelivered", false), x(this, "soundshareFailuresReported", {}), x(this, "errorTimer", new s.V7), this.streamContext = d, this.streamKey = t, this.isStreamer = o, this.videoStreamStats = new N.Z(r, this.isOwner), this.analyticsContext = a, this.updateVideoStreamId = i().debounce((e, t) => {
+    }), L(this, "analyticsContext", true), L(this, "videoStreamStats", true), L(this, "streamContext", true), L(this, "streamKey", true), L(this, "isStreamer", true), L(this, "updateVideoStreamId", true), L(this, "bandwidthSamples", []), L(this, "goliveCurrentMaxResolution", true), L(this, "_firstFrameDelivered", false), L(this, "soundshareFailuresReported", {}), L(this, "errorTimer", new s.V7), this.streamContext = d, this.streamKey = t, this.isStreamer = o, this.videoStreamStats = new N.Z(r, this.isOwner), this.analyticsContext = a, this.updateVideoStreamId = i().debounce((e, t) => {
       let {
         guildId: n,
         channelId: r,
@@ -520,7 +520,7 @@ class V extends Chunk861687.Z {
         streamId: e,
         rtcServerId: t,
         mediaEngineConnectionId: this.getMediaEngineConnectionId(),
-        context: L.Yn.STREAM
+        context: x.Yn.STREAM
       })
     }, 200), this.videoStreamStats.start(), this.initializeEvents()
   }

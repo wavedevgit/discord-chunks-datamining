@@ -73,8 +73,8 @@ function E(e) {
   i.useEffect(() => {
     S(null)
   }, [O, S]), l()(null != w, "Unknown step for current payment flow.");
-  let L = null != (c = null == w || null == (t = w.options) ? true : t.hideSlider) && c,
-    x = null == w || null == (n = w.options) ? true : n.bodyClassName,
+  let x = null != (c = null == w || null == (t = w.options) ? true : t.hideSlider) && c,
+    L = null == w || null == (n = w.options) ? true : n.bodyClassName,
     M = null == w || null == (a = w.options) ? true : a.sliderBodyClassName;
   switch (true !== b && b && (M = p.sliderBodyLarge), O) {
     case f.h8.ADD_PAYMENT_STEPS:
@@ -87,10 +87,10 @@ function E(e) {
       D && !P && (m = "100%")
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [null == (h = null == w || null == (s = w.options) ? true : s.renderHeader) || h ? E : null, w.renderStep(y), null == O || L ? null : (0, r.jsxs)(r.Fragment, {
+    children: [null == (h = null == w || null == (s = w.options) ? true : s.renderHeader) || h ? E : null, w.renderStep(y), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         "data-migration-pending": true,
-        className: o()(x, p.body, C, {
+        className: o()(L, p.body, C, {
           [p.reviewStep]: O === f.h8.REVIEW,
           [p.addPaymentStepForPremium]: O === f.h8.ADD_PAYMENT_STEPS && D
         }),

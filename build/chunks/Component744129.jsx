@@ -92,12 +92,12 @@ function Z(e) {
     isApplicationHome: _ = false
   } = e, p = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), E = (0, s.e7)([h.default], () => h.default.getCurrentUser()), b = (0, I.N)(), O = null == b || null == (t = b.subscription_trial) ? true : t.sku_id, v = (null == p ? true : p.hasActiveTrial) ? null == E ? true : E.premiumType : null, T = (0, N.y_)(v, O), S = null != T, A = (0, c.ap)((0, d.ZP)()), w = (0, y.yc)({
     location: "PremiumBrandRefreshTierCards"
-  }), x = (0, r.jsxs)(r.Fragment, {
+  }), L = (0, r.jsxs)(r.Fragment, {
     children: [S && (0, r.jsx)(C.E, {
       text: T,
-      className: L.pill
+      className: x.pill
     }), (0, r.jsx)(g.Z, {
-      className: L.wordmark,
+      className: x.wordmark,
       color: A ? "black" : "white"
     }), (0, r.jsx)(P.Z, {
       isGift: l,
@@ -109,9 +109,9 @@ function Z(e) {
       enablePremiumBrandRefresh: true,
       headingVariant: "text-md/medium",
       headingColor: "text-primary",
-      headerClassName: L.priceHeader
+      headerClassName: x.priceHeader
     }), (0, r.jsx)("hr", {
-      className: L.divider
+      className: x.divider
     }), (0, r.jsx)(R.ql, {
       enablePremiumBrandRefresh: true,
       isApplicationHome: _
@@ -119,15 +119,15 @@ function Z(e) {
   });
   return w ? (0, r.jsx)(u.$1m, {
     color: "nitro-green",
-    className: a()(L.card, L.tier0, o, {
-      [L.pillMargin]: !_ && S
+    className: a()(x.card, x.tier0, o, {
+      [x.pillMargin]: !_ && S
     }),
-    children: x
+    children: L
   }) : (0, r.jsx)("div", {
-    className: a()(L.card, L.tier0, o, {
-      [L.pillMargin]: !_ && S
+    className: a()(x.card, x.tier0, o, {
+      [x.pillMargin]: !_ && S
     }),
-    children: x
+    children: L
   })
 }
 
@@ -148,27 +148,27 @@ function F(e) {
     children: [(0, r.jsx)("img", {
       src: M,
       alt: "",
-      className: a()(L.bigCloud, L[y])
+      className: a()(x.bigCloud, x[y])
     }), (0, r.jsx)("img", {
-      src: x,
+      src: L,
       alt: "",
-      className: a()(L.smallCloud, L[y])
+      className: a()(x.smallCloud, x[y])
     }), (0, r.jsx)("img", {
       src: k,
       alt: "",
-      className: a()(L.wumpus, L[y])
+      className: a()(x.wumpus, x[y])
     })]
   });
   return (0, r.jsxs)(u.$1m, {
     color: "nitro-pink",
-    className: a()(L.card, l, {
-      [L.withGiftBanner]: g
+    className: a()(x.card, l, {
+      [x.withGiftBanner]: g
     }),
     children: [(0, r.jsx)(W, {}), (0, r.jsx)(C.E, {
       text: null != Y ? Y : w.intl.string(w.t["6bEcYr"]),
-      className: L.pill
+      className: x.pill
     }), (0, r.jsx)(E.Z, {
-      className: L.wordmark,
+      className: x.wordmark,
       color: H ? "black" : "white"
     }), (0, r.jsx)(P.Z, {
       isGift: f,
@@ -180,16 +180,16 @@ function F(e) {
       enablePremiumBrandRefresh: true,
       headingVariant: "text-md/medium",
       headingColor: "text-primary",
-      headerClassName: L.priceHeader
+      headerClassName: x.priceHeader
     }), (0, r.jsx)("hr", {
-      className: L.divider
+      className: x.divider
     }), (0, r.jsx)(R.nT, {
       featureSet: o,
       isModal: _,
       isGift: f,
       enablePremiumBrandRefresh: true,
       isApplicationHome: T,
-      firstFeatureItemClassName: "inCard" === y ? L.firstFeatureItemContainer : true
+      firstFeatureItemClassName: "inCard" === y ? x.firstFeatureItemContainer : true
     }), n, g && (0, r.jsx)(O.f, {})]
   })
 }
@@ -208,7 +208,7 @@ let V = e => {
   }), {
     disabled: _
   } = d, p = (0, r.jsx)("div", {
-    className: L.CTAButton,
+    className: x.CTAButton,
     children: (0, r.jsx)(l.zxk, B(U({
       size: "md",
       fullWidth: true
@@ -217,10 +217,10 @@ let V = e => {
     }))
   }), h = (0, r.jsx)("div", {
     className: a()({
-      [L.premiumCardHover]: !n
+      [x.premiumCardHover]: !n
     }),
     children: (0, r.jsx)(c, U({
-      className: L.applicationHomeCard,
+      className: x.applicationHomeCard,
       ctaButton: p,
       showYearlyPrice: true,
       isApplicationHome: true
@@ -256,23 +256,23 @@ function H(e) {
   return (0, r.jsx)(p.Gt, {
     value: i,
     children: (0, r.jsxs)("div", {
-      className: a()(L.premiumCardsContainer, n),
+      className: a()(x.premiumCardsContainer, n),
       children: [(0, r.jsx)(o.X, {
         variant: "display-md",
         color: "header-primary",
-        className: L.premiumCardsHeader,
+        className: x.premiumCardsHeader,
         children: w.intl.string(w.t.vLz3Zs)
       }), (0, r.jsxs)("div", {
         ref: l,
-        className: L.premiumCards,
+        className: x.premiumCards,
         children: [(0, r.jsx)(V, {
           subscriptionTier: D.Si.TIER_0,
           isReducedMotion: c,
-          className: L.tier0CardOrder
+          className: x.tier0CardOrder
         }), (0, r.jsx)(V, {
           subscriptionTier: D.Si.TIER_2,
           isReducedMotion: c,
-          className: L.tier2CardOrder,
+          className: x.tier2CardOrder,
           tierCardProps: {
             wumpusPosition: "inCorner"
           }

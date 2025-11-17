@@ -117,10 +117,10 @@ function k(e) {
     }), N !== T.Ie.NORMAL || et || X.push({
       key: "spacer",
       node: (0, r.jsx)("div", {
-        className: x.spacer
+        className: L.spacer
       }, "spacer")
     })), (null == (a = N.emojis) ? true : a.button) != null && (null == V || null != H && H.type !== u.jw.ATTACHMENT)) {
-    let e = K && null != q ? q : L.X1.EMOJI;
+    let e = K && null != q ? q : x.X1.EMOJI;
     X.push({
       key: "emoji",
       node: (0, r.jsx)(S.Z, {
@@ -145,8 +145,8 @@ function k(e) {
   });
   let en = (0, s.chain)(X).filter(e => null != W[e.key]).sortBy(e => W[e.key]).map(e => e.node).value();
   return 0 === en.length ? null : (0, r.jsx)("div", {
-    className: o()(x.buttons, {
-      [x.reducedGap]: z
+    className: o()(L.buttons, {
+      [L.reducedGap]: z
     }),
     children: en
   })

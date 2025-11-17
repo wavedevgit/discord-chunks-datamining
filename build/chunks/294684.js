@@ -32,11 +32,11 @@ var Chunk98405 = require("./98405.js"),
   Chunk338045 = require("./338045.js"),
   Chunk751736 = require("./751736.js"),
   Chunk992914 = require("./992914.js"),
-  L = Chunk751736("iterator"),
-  x = "URLSearchParams",
-  M = x + "Iterator",
+  x = Chunk751736("iterator"),
+  L = "URLSearchParams",
+  M = L + "Iterator",
   k = Chunk199838.set,
-  j = Chunk199838.getterFor(x),
+  j = Chunk199838.getterFor(L),
   U = Chunk199838.getterFor(M),
   G = Chunk242606("fetch"),
   B = Chunk242606("Request"),
@@ -149,7 +149,7 @@ var Chunk98405 = require("./98405.js"),
       index: 0,
       kind: t
     })
-  }, x, function() {
+  }, L, function() {
     var e = U(this),
       t = module.target,
       n = module.index++;
@@ -167,7 +167,7 @@ var Chunk98405 = require("./98405.js"),
     this.entries = [], this.url = null, true !== e && (I(e) ? this.parseObject(e) : this.parseQuery("string" == typeof e ? "?" === q(e, 0) ? en(e, 1) : e : T(e)))
   };
 em.prototype = {
-  type: x,
+  type: L,
   bindURL: function(e) {
     this.url = e, this.update()
   },
@@ -278,7 +278,7 @@ if (Chunk477732(eE, {
     }
   }, {
     enumerable: true
-  }), Chunk556585(eE, L, eE.entries, {
+  }), Chunk556585(eE, x, eE.entries, {
     name: "entries"
   }), Chunk556585(eE, "toString", function() {
     return j(this).serialize()
@@ -290,7 +290,7 @@ if (Chunk477732(eE, {
     },
     configurable: true,
     enumerable: true
-  }), Chunk25124(eg, x), Chunk98405({
+  }), Chunk25124(eg, L), Chunk98405({
     global: true,
     constructor: true,
     forced: !Chunk394227
@@ -302,7 +302,7 @@ if (Chunk477732(eE, {
     eO = function(e) {
       if (I(e)) {
         var t, n = e.body;
-        if (O(n) === x) return eb(t = e.headers ? new Z(e.headers) : new Z, "content-type") || ey(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), S(e, {
+        if (O(n) === L) return eb(t = e.headers ? new Z(e.headers) : new Z, "content-type") || ey(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), S(e, {
           body: A(0, T(n)),
           headers: A(0, t)
         })

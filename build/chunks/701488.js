@@ -2,11 +2,11 @@
 /** chunk id: 701488, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $y: () => x,
+  $y: () => L,
   Cr: () => y,
   Ev: () => s,
   Fu: () => h,
-  GM: () => L,
+  GM: () => x,
   Gu: () => D,
   JT: () => p,
   K8: () => O,
@@ -94,7 +94,7 @@ let N = {
   P = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
   D = [...P, Chunk981631.d4z.GUILD_VOICE],
   w = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
-var L = function(e) {
+var x = function(e) {
   return e.NORMAL = "normal", e.FULL_SCREEN = "full-screen", e
 }({});
-let x = 216e5
+let L = 216e5

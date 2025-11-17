@@ -50,7 +50,7 @@ let D = o().throttle(() => {
   }),
   w = 10 * Chunk70956.Z.Millis.SECOND;
 
-function L(e) {
+function x(e) {
   var t, n;
   let {
     error: a,
@@ -73,10 +73,10 @@ function L(e) {
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => null == l ? true : l(), 200))
     }, [o, l, O]),
-    L = i.useCallback(e => {
+    x = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (y(true), null != m.current && clearTimeout(m.current)) : y(false)
     }, [y]),
-    x = i.useCallback(e => {
+    L = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
     M = (0, d.e7)([T.Z], () => T.Z.getFocusedRunningGame()),
@@ -116,9 +116,9 @@ function L(e) {
       height: 40,
       className: R.notificationIcon
     }),
-    onNotificationClick: L,
+    onNotificationClick: x,
     onConfirmClick: D,
-    onCancelClick: null != M ? x : true,
+    onCancelClick: null != M ? L : true,
     onDismissClick: o,
     expand: true,
     locked: true,
@@ -131,7 +131,7 @@ function L(e) {
     wrapperClassName: R.errorNotificationWrapper
   })
 }
-class x extends Chunk473749.PureComponent {
+class L extends Chunk473749.PureComponent {
   componentDidCatch(e, t) {
     let n = (0, g.s1)().location;
     this.setState({
@@ -165,7 +165,7 @@ class x extends Chunk473749.PureComponent {
     } = this.state;
     return null != require ? Chunk473749 ? (0, Chunk54381.jsx)(Chunk333031.Z, {
       className: Chunk534887.errorClickNotification,
-      children: (0, Chunk54381.jsx)(L, {
+      children: (0, Chunk54381.jsx)(x, {
         error: require,
         onLock: () => {
           var e;
@@ -204,4 +204,4 @@ class x extends Chunk473749.PureComponent {
     }), P(this, "pid", null)
   }
 }
-let M = x
+let M = L

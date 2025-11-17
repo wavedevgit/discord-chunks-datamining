@@ -43,7 +43,7 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,7 +68,7 @@ function x(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -142,7 +142,7 @@ function Z(e) {
   } = (0, s.cj)([_.ZP], () => ({
     canToggleDetection: null == v || _.ZP.isDetectionEnabled(v),
     isCurrentGameDetectionEnabled: _.ZP.isDetectionEnabled(I)
-  })), D = (0, s.e7)([_.ZP], () => _.ZP.getVisibleGame()), [w, x] = i.useState(false), k = i.useMemo(() => (0, g.le)(I) ? O ? I.gameName : C.intl.formatToPlainString(C.t.G6BGdx, {
+  })), D = (0, s.e7)([_.ZP], () => _.ZP.getVisibleGame()), [w, L] = i.useState(false), k = i.useMemo(() => (0, g.le)(I) ? O ? I.gameName : C.intl.formatToPlainString(C.t.G6BGdx, {
     subgameName: I.gameName
   }) : I.name, [I, O]), [G, B] = i.useState(null != k ? k : "???"), F = o()(P.flexCenter, {
     [N.game]: !a,
@@ -175,7 +175,7 @@ function Z(e) {
       let {
         Modal: e
       } = await Promise.resolve().then(n.bind(n, 793030));
-      return t => (0, r.jsx)(e, M(L({}, t), {
+      return t => (0, r.jsx)(e, M(x({}, t), {
         title: C.intl.formatToPlainString(C.t.PZ4fKc, {
           platform: k
         }),
@@ -203,13 +203,13 @@ function Z(e) {
     y.default.track(S.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? true : e.id,
       game_name: (0, g.le)(I) ? I.gameName : I.name
-    }), x(true), (0, c.ZDy)(async () => {
+    }), L(true), (0, c.ZDy)(async () => {
       let {
         default: t
       } = await n.e("82077").then(n.bind(n, 953848));
       return n => {
         var i, a, o;
-        return (0, r.jsx)(t, M(L({}, n), {
+        return (0, r.jsx)(t, M(x({}, n), {
           detectedActivity: {
             name: null != (i = I.name) ? i : "",
             application_id: null != (o = null != (a = null == e ? true : e.id) ? a : I.id) ? o : true,
@@ -230,7 +230,7 @@ function Z(e) {
       }), (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         text: C.intl.string(C.t["4PJP5p"]),
-        children: e => (0, r.jsx)(h.Z, M(L({
+        children: e => (0, r.jsx)(h.Z, M(x({
           className: N.gameVerifiedIcon,
           size: U,
           color: l.Z.unsafe_rawColors.BRAND_500.css
@@ -288,7 +288,7 @@ function Z(e) {
     }), i = t ? (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
       text: C.intl.string(C.t.Vfw2L5),
-      children: e => (0, r.jsx)("i", L({
+      children: e => (0, r.jsx)("i", x({
         className: N.overlayWarningIcon
       }, e))
     }) : null;
@@ -297,7 +297,7 @@ function Z(e) {
       children: [i, (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         text: C.intl.string(C.t["1+O+Tu"]),
-        children: t => (0, r.jsx)(c.P3F, M(L({}, t), {
+        children: t => (0, r.jsx)(c.P3F, M(x({}, t), {
           "aria-label": C.intl.string(C.t["1+O+Tu"]),
           className: N.toggleIcon,
           onClick: () => W(!e),
@@ -326,7 +326,7 @@ function Z(e) {
       children: (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         text: C.intl.string(C.t.QmitzM),
-        children: e => T ? (0, r.jsx)(c.P3F, M(L({}, e), {
+        children: e => T ? (0, r.jsx)(c.P3F, M(x({}, e), {
           "aria-label": C.intl.string(C.t.QmitzM),
           className: N.toggleIcon,
           onClick: K,
@@ -342,7 +342,7 @@ function Z(e) {
       children: (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         text: C.intl.string(C.t["y0B+lo"]),
-        children: e => (0, r.jsx)(c.P3F, M(L({}, e), {
+        children: e => (0, r.jsx)(c.P3F, M(x({}, e), {
           "aria-label": C.intl.string(C.t["y0B+lo"]),
           className: N.toggleIcon,
           onClick: z,
@@ -482,7 +482,7 @@ let H = (0, Chunk251625.oH)(function() {
           },
           align: "center",
           position: "bottom",
-          children: e => (0, r.jsx)(c.Avr, M(L({}, e), {
+          children: e => (0, r.jsx)(c.Avr, M(x({}, e), {
             buttonRef: h,
             variant: "primary",
             textVariant: "text-sm/medium",

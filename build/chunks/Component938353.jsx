@@ -290,7 +290,7 @@ class tn extends(r = Chunk473749.Component) {
         code: r,
         message: e
       }, r);
-      if (n === S.g.APP_DIRECTORY_PROFILE) return (0, i.jsx)(x.Z, {
+      if (n === S.g.APP_DIRECTORY_PROFILE) return (0, i.jsx)(L.Z, {
         code: r,
         message: e
       }, r);
@@ -533,7 +533,7 @@ class tn extends(r = Chunk473749.Component) {
     })
   }
   renderEphemeralAccessories(e) {
-    return (0, eA.Pv)(e) ? (0, i.jsx)(ex.Z, {
+    return (0, eA.Pv)(e) ? (0, i.jsx)(eL.Z, {
       message: e,
       onDeleteMessage: () => {
         _.Z.dismissAutomatedMessage(e)
@@ -639,7 +639,7 @@ class tn extends(r = Chunk473749.Component) {
       application: t,
       activityInstance: n
     } = e;
-    return null == t || null == n ? null : (0, i.jsx)(eL.Z, {
+    return null == t || null == n ? null : (0, i.jsx)(ex.Z, {
       application: t,
       channelId: this.props.channel.id,
       guildId: this.props.channel.guild_id,
@@ -742,7 +742,7 @@ class tn extends(r = Chunk473749.Component) {
       } = this.props, p = (0, eS.BP)(e, r, d, f);
       if (e.type === eq.hBH.GIFT) return null;
       let h = e6.includes(e.type) ? e.url : null != (s = null == (a = e.image) ? true : a.url) ? s : null == (o = e.video) ? true : o.url;
-      return (0, i.jsx)(L.h.Provider, {
+      return (0, i.jsx)(x.h.Provider, {
         value: (0, eK.P)(h, e.image, e.video),
         children: (0, i.jsx)(I.ZP, e1({
           embed: e,
@@ -812,14 +812,14 @@ function tr(e) {
     communicationDisabled: O,
     isActiveChannelOrUnarchivableThread: v,
     isAutomodQuarantined: y
-  }), P = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), D = (0, z.Z)(null == n ? true : n.id), w = (0, Q.Z)(r), L = (0, R.v)(r), x = (0, eN._)(n), j = (0, eT.ro)(r.id, r.channel_id), U = (0, C.m8)();
+  }), P = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), D = (0, z.Z)(null == n ? true : n.id), w = (0, Q.Z)(r), x = (0, R.v)(r), L = (0, eN._)(n), j = (0, eT.ro)(r.id, r.channel_id), U = (0, C.m8)();
   return (0, i.jsx)(tn, e2(e1(e2(e1({
     canSuppressEmbeds: I,
     canDeleteAttachments: T
   }, N), {
     disableReactionReads: !!A || N.disableReactionReads
   }), e), {
-    hasSpoilerEmbeds: e.hasSpoilerEmbeds && x,
+    hasSpoilerEmbeds: e.hasSpoilerEmbeds && L,
     isLurking: h && p,
     isGuest: m && p,
     isPendingMember: g && p,
@@ -833,7 +833,7 @@ function tr(e) {
     showListsAndHeaders: P,
     showMaskedLinks: P,
     shouldHideMediaOptions: D,
-    enabledContentHarmTypeFlags: L,
+    enabledContentHarmTypeFlags: x,
     ctaButtonType: j,
     shouldAgeVerify: U
   }))

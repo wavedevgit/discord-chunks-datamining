@@ -170,7 +170,7 @@ function w(e, t, n, r) {
   return !(e !== t || null == n || r.has(n)) && (r.add(n), true)
 }
 
-function L(e) {
+function x(e) {
   var t, n;
   let {
     channelId: r,
@@ -196,7 +196,7 @@ function L(e) {
   }
   returnfalse
 }
-class x extends(r = Chunk442837.ZP.Store) {
+class L extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk351780.Z, Chunk944486.Z)
   }
@@ -231,10 +231,10 @@ class x extends(r = Chunk442837.ZP.Store) {
     return null != i ? (0, f.KH)(i, r) * n : 0
   }
 }
-h(x, "displayName", "PoggermodeStore");
-let M = new x(Chunk570140.Z, {
+h(L, "displayName", "PoggermodeStore");
+let M = new L(Chunk570140.Z, {
     POGGERMODE_UPDATE_COMBO: P,
     POGGERMODE_UPDATE_MESSAGE_COMBO: D,
-    MESSAGE_CREATE: L
+    MESSAGE_CREATE: x
   }),
   k = M

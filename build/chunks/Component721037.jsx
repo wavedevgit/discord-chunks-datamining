@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk408491 = require("./408491.js"),
   Chunk639965 = require("./639965.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function L(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let x = {
+let L = {
     [Chunk981631.NYg.VIDEO]: Chunk442917.Z,
     [Chunk981631.NYg.ACTIVITY]: Chunk866885.Z,
     [Chunk981631.NYg.FRAME]: Chunk857096.Z
@@ -74,7 +74,7 @@ class j extends Chunk473749.PureComponent {
     } = this.props, E = document.body.style.getPropertyValue("--custom-guild-sidebar-width"), b = "" !== Chunk238246 ? parseInt(Chunk238246, 10) : Chunk981631.PrS, y = Chunk866885.width - Chunk928518 - (Chunk591472 ? Chunk857096 : 0), O = null != Chunk950796, v = !Chunk358221 && Chunk740492 && Chunk591472 && Chunk210887 < Chunk354459.oo;
     return (0, Chunk54381.jsxs)(Chunk522501._X, {
       children: [(0, Chunk54381.jsx)(Chunk241915.Z, {
-        pictureInPictureComponents: x,
+        pictureInPictureComponents: L,
         selectedPIPWindow: module,
         pipWindows: exports,
         pipWidth: require,
@@ -94,9 +94,9 @@ class j extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), L(this, "handleWindowMove", (e, t) => {
+    super(...e), x(this, "handleWindowMove", (e, t) => {
       o.Ao(e, t)
-    }), L(this, "handleWindowResize", e => {
+    }), x(this, "handleWindowResize", e => {
       o.d7(e, P.cL.VIDEO)
     })
   }
@@ -109,12 +109,12 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     } = e,
     v = b.Z.getWindowOpen(N.KJ3.CHANNEL_CALL_POPOUT),
     w = b.Z.getWindowOpen(N.KJ3.ACTIVITY_POPOUT),
-    L = s.ZP.getCurrentEmbeddedActivity(),
-    x = (0, c.p)(null == L ? true : L.location),
-    M = null != L && !(0, u.Z)(x, I.Z, S.Z),
+    x = s.ZP.getCurrentEmbeddedActivity(),
+    L = (0, c.p)(null == x ? true : x.location),
+    M = null != x && !(0, u.Z)(L, I.Z, S.Z),
     j = s.ZP.getActivityPanelMode(),
     U = M && j === R.Ez.PANEL,
-    G = null != L && null != x && (null == (t = f.Z.getSelectedParticipant(x)) ? true : t.type) === P.fO.ACTIVITY,
+    G = null != x && null != L && (null == (t = f.Z.getSelectedParticipant(L)) ? true : t.type) === P.fO.ACTIVITY,
     B = p.Z.getConnectedFrame(),
     Z = p.Z.getFrameLayoutMode() === D.U.FOCUSED,
     F = null != m,
@@ -132,7 +132,7 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     }) ? e - (0, _.Y7)({
       isPopoutWindow: F
     }) : e;
-  h = null != L && w || F && M || F && null != B ? null : F || !v || M || null != B ? null != L && U ? null != (n = T.Z.pipActivityWindow) ? n : T.Z.pipVideoWindow : null != B && Z ? null != (i = null != (r = T.Z.pipFrameWindow) ? r : T.Z.pipVideoWindow) ? i : T.Z.pipActivityWindow : null != (o = null != (a = T.Z.pipVideoWindow) ? a : T.Z.pipActivityWindow) ? o : T.Z.pipFrameWindow : null;
+  h = null != x && w || F && M || F && null != B ? null : F || !v || M || null != B ? null != x && U ? null != (n = T.Z.pipActivityWindow) ? n : T.Z.pipVideoWindow : null != B && Z ? null != (i = null != (r = T.Z.pipFrameWindow) ? r : T.Z.pipVideoWindow) ? i : T.Z.pipActivityWindow : null != (o = null != (a = T.Z.pipVideoWindow) ? a : T.Z.pipActivityWindow) ? o : T.Z.pipFrameWindow : null;
   let z = Array.from(T.Z.pipWindows.values()),
     q = T.Z.pipWidth(P.cL.VIDEO),
     X = z.find(e => e.component === N.NYg.VIDEO),
@@ -143,7 +143,7 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     et = S.Z.getChannelId() === ee,
     en = null != ee && f.Z.getChatOpen(ee),
     er = U || G,
-    ei = er && null != L && (0, l.q)(L.applicationId),
+    ei = er && null != x && (0, l.q)(x.applicationId),
     ea = !er && null != h && et && en;
   return {
     selectedPIPWindow: h,

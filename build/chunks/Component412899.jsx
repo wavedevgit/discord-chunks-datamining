@@ -159,8 +159,8 @@ let z = Chunk473749.forwardRef(function(e, t) {
       guildId: v
     }),
     w = (0, _.e7)([b.Z], () => b.Z.roleStyle),
-    L = (0, S._f)(v, E, E.colorStrings),
-    x = (null == (a = E.tags) ? true : a.guild_connections) === null,
+    x = (0, S._f)(v, E, E.colorStrings),
+    L = (null == (a = E.tags) ? true : a.guild_connections) === null,
     M = i.useCallback(e => {
       (0, m.jW)(e, async () => {
         let {
@@ -177,7 +177,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
     V = null != (l = (0, f.wK)(B, .6)) ? l : true,
     H = p.Z.unsafe_rawColors.WHITE_500.css,
     Y = (0, f._i)(B);
-  null != Y && .3 > (0, f.Bd)(Y) && (H = p.Z.unsafe_rawColors.PRIMARY_630.css), c = x ? (0, r.jsx)(y.Z, {
+  null != Y && .3 > (0, f.Bd)(Y) && (H = p.Z.unsafe_rawColors.PRIMARY_630.css), c = L ? (0, r.jsx)(y.Z, {
     className: j.roleFlowerStar,
     iconClassName: d ? j.roleVerifiedIcon : true,
     color: B,
@@ -185,12 +185,12 @@ let z = Chunk473749.forwardRef(function(e, t) {
   }) : "dot" === w ? (0, r.jsx)(h.FhE, {
     className: j.roleDot,
     color: B,
-    colors: L,
+    colors: x,
     background: false,
     tooltip: false
   }) : (0, r.jsx)(h.xko, {
     color: B,
-    colors: L
+    colors: x
   });
   let W = i.useMemo(() => {
     var t;
@@ -368,10 +368,10 @@ function Q(e) {
     }
     A(t => e < R.length ? e : t)
   }, [f, p, R]);
-  let U = L.default.getCurrentUser();
+  let U = x.default.getCurrentUser();
   l()(null != U, "MemberRolesList: currentUser cannot be undefined");
   let B = !m && w.Z.can(M.Plq.MANAGE_ROLES, a),
-    V = x.e9(a, U.id),
+    V = L.e9(a, U.id),
     K = i.useMemo(() => "roles-".concat((0, c.Z)()), []),
     Q = (0, d.ZP)({
       id: K,
@@ -385,7 +385,7 @@ function Q(e) {
       return (0, r.jsx)(z, {
         className: E,
         role: e,
-        canRemove: (null == (t = e.tags) ? true : t.guild_connections) === null ? n.id === U.id : B && x.r6(a, U.id, V, e),
+        canRemove: (null == (t = e.tags) ? true : t.guild_connections) === null ? n.id === U.id : B && L.r6(a, U.id, V, e),
         onRemove: () => v(e),
         ref: t => O(e.id, t),
         guildId: a.id,

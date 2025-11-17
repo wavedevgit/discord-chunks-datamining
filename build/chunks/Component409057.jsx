@@ -155,7 +155,7 @@ function K(e) {
         }), el(e)
       }
     })
-  }, ed = () => i.type === U.IIU.HANG_STATUS ? (0, r.jsx)(L.f, {
+  }, ed = () => i.type === U.IIU.HANG_STATUS ? (0, r.jsx)(x.f, {
     variant: "heading-sm/semibold",
     text: (0, b.O8)(t.id, i),
     id: Q
@@ -165,29 +165,29 @@ function K(e) {
       size: "xxs",
       color: s.TVs.colors.TEXT_DEFAULT,
       className: F.voiceIcon
-    }), (0, r.jsx)(L.f, {
+    }), (0, r.jsx)(x.f, {
       variant: "heading-sm/semibold",
       text: K.name,
       id: Q
     })]
-  }) : (0, u.Z)(i) || (0, v.dS)(i) ? (0, r.jsx)(L.f, {
+  }) : (0, u.Z)(i) || (0, v.dS)(i) ? (0, r.jsx)(x.f, {
     variant: "heading-sm/semibold",
     text: i.name,
     id: Q
   }) : null != i.details ? (0, r.jsx)(h._, {
     href: i.details_url,
-    children: (0, r.jsx)(L.f, {
+    children: (0, r.jsx)(x.f, {
       variant: "heading-sm/semibold",
       text: i.details,
       id: Q
     })
-  }) : (0, r.jsx)(L.f, {
+  }) : (0, r.jsx)(x.f, {
     variant: "heading-sm/semibold",
     text: i.name,
     id: Q
   }), ef = () => {
     if (i.type === U.IIU.HANG_STATUS) return null;
-    if ((0, d.Z)(i) && null != Y) return (0, r.jsx)(L.Z, {
+    if ((0, d.Z)(i) && null != Y) return (0, r.jsx)(x.Z, {
       variant: "text-xs/normal",
       text: Z.intl.formatToPlainString(Z.t["hq/Qze"], {
         guildName: Y.name
@@ -200,21 +200,21 @@ function K(e) {
     });
     if ((0, u.Z)(i)) return (0, r.jsx)(h._, {
       href: i.details_url,
-      children: (0, r.jsx)(L.Z, {
+      children: (0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
         text: i.details
       })
     });
     if ((0, v.dS)(i)) {
       var e;
-      return (0, r.jsx)(L.Z, {
+      return (0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
         text: null == i || null == (e = i.assets) ? true : e.small_text
       })
     }
     return (0, r.jsx)(h._, {
       href: i.state_url,
-      children: (0, r.jsx)(L.Z, {
+      children: (0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
         text: i.state
       })
@@ -228,14 +228,14 @@ function K(e) {
         numSpeakers: null == (a = i.party) ? true : a.size[0],
         numListeners: (null == (o = i.party) ? true : o.size[1]) - (null == (s = i.party) ? true : s.size[0])
       });
-      return (0, r.jsx)(L.Z, {
+      return (0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
         text: e
       })
     }
     return (null == (n = i.assets) ? true : n.large_text) != null ? (0, r.jsx)(h._, {
       href: null == (l = i.assets) ? true : l.large_url,
-      children: (0, r.jsx)(L.Z, {
+      children: (0, r.jsx)(x.Z, {
         text: null == (c = i.assets) ? true : c.large_text,
         variant: "text-xs/normal"
       })
@@ -246,11 +246,11 @@ function K(e) {
       className: F.gameState,
       children: [(0, r.jsx)(h._, {
         href: i.state_url,
-        children: (0, r.jsx)(L.Z, {
+        children: (0, r.jsx)(x.Z, {
           variant: "text-xs/normal",
           text: i.state
         })
-      }), (0, r.jsx)(L.Z, {
+      }), (0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
         text: Z.intl.formatToPlainString(Z.t["u//9By"], {
           count: "0",
@@ -261,11 +261,11 @@ function K(e) {
       className: F.gameState,
       children: [(0, r.jsx)(h._, {
         href: i.state_url,
-        children: (0, r.jsx)(L.Z, {
+        children: (0, r.jsx)(x.Z, {
           variant: "text-xs/normal",
           text: i.state
         })
-      }), (0, r.jsx)(L.Z, {
+      }), (0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
         text: 0 === i.party.size[1] ? Z.intl.formatToPlainString(Z.t.IM4J4e, {
           count: i.party.size[0]
@@ -276,7 +276,7 @@ function K(e) {
       })]
     }) : null == i.party ? (0, r.jsx)(h._, {
       href: i.state_url,
-      children: (0, r.jsx)(L.Z, {
+      children: (0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
         text: i.state
       })
@@ -301,7 +301,7 @@ function K(e) {
       }), el(e)
     },
     children: [ed(), ef(), e_()]
-  }), eg = () => null == Y || null == K ? null : (0, r.jsx)(x.Z, {
+  }), eg = () => null == Y || null == K ? null : (0, r.jsx)(L.Z, {
     user: t,
     guild: Y,
     channel: K,

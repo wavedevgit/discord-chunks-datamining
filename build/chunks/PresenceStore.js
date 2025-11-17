@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => ea,
-  f: () => x
+  f: () => L
 }), require("./539854.js"), require("./388685.js"), require("./642613.js"), require("./361932.js"), require("./187205.js"), require("./583741.js");
 var r, Chunk348327 = require("./348327.js"),
   a = require.n(Chunk348327),
@@ -66,13 +66,13 @@ function w(e, t) {
   return D(t) - D(e)
 }
 
-function L(e, t) {
+function x(e, t) {
   var n, r;
   return (null != (n = t.created_at) ? n : 0) - (null != (r = e.created_at) ? r : 0)
 }
 
-function x(e, t) {
-  return P(e, t) || w(e, t) || L(e, t)
+function L(e, t) {
+  return P(e, t) || w(e, t) || x(e, t)
 }
 
 function M(e) {
@@ -80,7 +80,7 @@ function M(e) {
   let t = [],
     n = [];
   for (let r of e) r.type === E.IIU.PLAYING ? n.push(r) : t.push(r);
-  return n.length <= 1 ? e : [...t, [...n].sort(x)[0]].sort(x)
+  return n.length <= 1 ? e : [...t, [...n].sort(L)[0]].sort(L)
 }
 
 function k(e, t) {
@@ -188,7 +188,7 @@ function F(e) {
     let {
       visible: e,
       hidden: c
-    } = U(o.length > 1 ? [...o].sort(x) : o, n), d = B([...null != s ? s : [], ...c]), f = u[t];
+    } = U(o.length > 1 ? [...o].sort(L) : o, n), d = B([...null != s ? s : [], ...c]), f = u[t];
     o = null != f && a()(f.activities, e) ? f.activities : e, u[t] = {
       status: r,
       clientStatus: i,
@@ -228,7 +228,7 @@ function V(e) {
     let {
       visible: e,
       hidden: l
-    } = U(a.length > 1 ? [...a].sort(x) : a, n), u = B([...null != o ? o : [], ...l]);
+    } = U(a.length > 1 ? [...a].sort(L) : a, n), u = B([...null != o ? o : [], ...l]);
     c[t] = {
       status: r,
       clientStatus: i,
@@ -449,7 +449,7 @@ function et(e) {
 function en(e) {
   let t = m.default.getId();
   if (v[t] === e.status && I[t] === e.activities && S[t] === e.hiddenActivities) returnfalse;
-  v[t] = e.status, k(t, [...e.activities].sort(x)), S[t] = [...e.hiddenActivities].sort(x), delete C[t]
+  v[t] = e.status, k(t, [...e.activities].sort(L)), S[t] = [...e.hiddenActivities].sort(L), delete C[t]
 }
 
 function er(e) {
@@ -464,7 +464,7 @@ class ei extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk106301.Z, Chunk594174.default)
   }
   setCurrentUserOnConnectionOpen(e, t) {
-    v[m.default.getId()] = e, k(m.default.getId(), [...t].sort(x))
+    v[m.default.getId()] = e, k(m.default.getId(), [...t].sort(L))
   }
   getStatus(e) {
     var t, n;

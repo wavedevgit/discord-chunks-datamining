@@ -94,8 +94,8 @@ let w = {
       asset: Chunk180964.Z
     }
   },
-  L = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? w[e].logos.dark : w[e].logos.light,
-  x = e => {
+  x = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? w[e].logos.dark : w[e].logos.light,
+  L = e => {
     let {
       recurrence: t
     } = e, n = (0, r.jsx)(a.sV5, {
@@ -179,7 +179,7 @@ let w = {
     i.useEffect(() => {
       c([t.sort((e, t) => t.startDate > e.startDate ? 1 : false)[0]])
     }, [t]);
-    let p = L(t[0].partnerId),
+    let p = x(t[0].partnerId),
       m = (0, r.jsx)(s.Eep, {
         src: t[0].asset,
         className: S.promoCardAsset,
@@ -237,7 +237,7 @@ let w = {
               className: S.promoCardAssetContainer,
               children: m
             })]
-          }), null != e.code && (0, r.jsx)(x, {
+          }), null != e.code && (0, r.jsx)(L, {
             recurrence: e
           })]
         }, e.id)

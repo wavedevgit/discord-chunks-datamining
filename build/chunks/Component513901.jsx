@@ -59,9 +59,9 @@ function O(e) {
       location_stack: C
     })
   }, [N, C]);
-  let L = A || true !== P ? null != P : null != R;
+  let x = A || true !== P ? null != P : null != R;
 
-  function x() {
+  function L() {
     A ? (0, d.Ju)(null) : (0, p.UK)(null, null == n ? true : n.id)
   }
   let M = T ? l.gtL : s.zx;
@@ -82,14 +82,14 @@ function O(e) {
           [y.buttonHighlighted]: T
         }),
         children: b.intl.string(b.t["/dRfCf"])
-      }), L && (0, r.jsx)("div", {
+      }), x && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: y.removeButton,
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
           text: null != n ? b.intl.string(b.t.CHf9iJ) : b.intl.string(b.t.uMuafO),
-          onClick: x
+          onClick: L
         })
       })]
     })

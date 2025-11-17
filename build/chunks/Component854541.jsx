@@ -5,7 +5,7 @@ require.d(exports, {
   AG: () => R,
   Z$: () => w,
   jH: () => P,
-  zH: () => L
+  zH: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -223,7 +223,7 @@ function D(e) {
       input: e
     })
   }, [A, D]), i.useEffect(() => s, [s]);
-  let L = e => {
+  let x = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
       if (!(0, c.FX)(t)) return void w(e => O(b({}, e), {
         input: t
@@ -239,12 +239,12 @@ function D(e) {
         input: t
       }), a(n)
     },
-    x = async () => {
+    L = async () => {
       if (null != I) try {
         let {
           sRGBHex: e
         } = await I.open();
-        L(e)
+        x(e)
       } catch (e) {}
     }, M = i.useCallback(e => {
       w(t => O(b({}, t), {
@@ -268,12 +268,12 @@ function D(e) {
         })
       }), p, (0, r.jsx)(f.oil, {
         value: D.input.slice(1),
-        onChange: L,
+        onChange: x,
         maxLength: S - 1,
         leading: "#",
         trailing: E && null != I ? {
           icon: f.ilE,
-          onClick: x,
+          onClick: L,
           "aria-label": m.intl.string(m.t["0dU9Ny"])
         } : true
       }), null != l && l.length > 0 && (0, r.jsx)("div", {
@@ -284,7 +284,7 @@ function D(e) {
             backgroundColor: e
           },
           className: g.suggestedColor,
-          onClick: () => L(e)
+          onClick: () => x(e)
         }, "".concat(e, "-").concat(t)))
       }), h]
     }), U = null != y ? y : d.V;
@@ -296,7 +296,7 @@ function D(e) {
 }
 let w = Chunk473749.memo(D);
 
-function L(e) {
+function x(e) {
   let {
     className: t,
     defaultColor: n,

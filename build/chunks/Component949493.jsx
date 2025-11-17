@@ -2,7 +2,7 @@
 /** chunk id: 949493, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -52,7 +52,7 @@ let R = () => (0, Chunk54381.jsxs)(Chunk893996.Z, {
     children: [(0, Chunk54381.jsx)(R, {}), (0, Chunk54381.jsx)(P, {}), (0, Chunk54381.jsx)(D, {})]
   });
 
-function L() {
+function x() {
   let e = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
     t = [{
       title: Chunk388032.intl.string(Chunk388032.t["/7xJCF"]),

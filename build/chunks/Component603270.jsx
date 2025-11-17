@@ -2,8 +2,8 @@
 /** chunk id: 603270, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => x,
-  P: () => L
+  F: () => L,
+  P: () => x
 }), require("./388685.js"), require("./997841.js"), require("./953529.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -76,7 +76,7 @@ function w(e, t) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     appId: t,
     message: a
@@ -128,7 +128,7 @@ function L(e) {
         area: "open_store_button"
       })
     },
-    L = () => {
+    x = () => {
       (0, I.X)(t, I.B.STORE_EMBED)
     };
   return (0, r.jsx)(M, {
@@ -138,7 +138,7 @@ function L(e) {
     }),
     description: S,
     link: "".concat(location.protocol, "//").concat(location.host).concat(A.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(u.id, C.GlobalDiscoveryAppsSections.STORE)),
-    onLinkCopy: L,
+    onLinkCopy: x,
     iconSrc: E,
     onIconClick: D,
     children: (0, r.jsx)("div", {
@@ -151,7 +151,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   var t, a;
   let {
     appId: o,
@@ -168,8 +168,8 @@ function x(e) {
     var e;
     return null == (e = h.Z.getBasicChannel(u.channel_id)) ? true : e.guild_id
   }, [u]), P = i.useMemo(() => null != b ? (0, v.y)(b, 45) : true, [b]), D = (0, T.R)(null != (a = null == b ? true : b.id) ? a : ""), {
-    openModal: L,
-    subscriptionPurchaseButtonState: x
+    openModal: x,
+    subscriptionPurchaseButtonState: L
   } = (0, p.Z)({
     skuId: c,
     initialSubscribeForGuild: O
@@ -270,14 +270,14 @@ function x(e) {
         onClick: V,
         text: N.intl.string(N.t.DXYfjO)
       }), k ? null != g ? (0, r.jsx)(S.pV, {
-        onClick: L,
+        onClick: x,
         appId: b.id,
         subscriptionType: j ? "user" : "guild",
         skuId: m.id,
         icon: l.EOn,
         onHasClicked: H,
         subscriptionPlan: g,
-        state: x
+        state: L
       }) : (0, r.jsx)(l.Button, {
         variant: "primary",
         text: N.intl.string(N.t.uuzaAK),

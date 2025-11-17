@@ -104,14 +104,14 @@ function w(e) {
   }, o.K.set(E, r), false
 }
 
-function L(e) {
+function x(e) {
   let {
     channel: t
   } = e;
   return N(t.id)
 }
 
-function x() {
+function L() {
   A = Chunk885110.Z.getStatus() === Chunk981631.Skl.DND || Chunk695346.QZ.getSetting()
 }
 
@@ -125,7 +125,7 @@ function M() {
 }
 class k extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk358221.Z, Chunk592125.Z, Chunk885110.Z, Chunk581883.Z, Chunk451478.Z), this.syncWith([Chunk885110.Z], x), this.syncWith([Chunk581883.Z], x), this.syncWith([Chunk358221.Z], M)
+    this.waitFor(Chunk314897.default, Chunk358221.Z, Chunk592125.Z, Chunk885110.Z, Chunk581883.Z, Chunk451478.Z), this.syncWith([Chunk885110.Z], L), this.syncWith([Chunk581883.Z], L), this.syncWith([Chunk358221.Z], M)
   }
   getIncomingCalls() {
     return A ? I : Array.from(T.values())
@@ -149,5 +149,5 @@ let j = new k(Chunk570140.Z, {
   GUILD_RING_STOP: P,
   VOICE_CHANNEL_SELECT: D,
   INCOMING_CALL_MOVE: w,
-  CHANNEL_DELETE: L
+  CHANNEL_DELETE: x
 })

@@ -80,7 +80,7 @@ function R(e) {
     P = (0, a.e7)([h.Z, p.Z], () => p.Z.getChannel(h.Z.getChannelId())),
     D = (0, s.Z)(P),
     w = t.id,
-    L = i.useCallback(() => {
+    x = i.useCallback(() => {
       if (null != R)
         if (D) {
           let e = h.Z.getCurrentlySelectedChannelId(),
@@ -95,7 +95,7 @@ function R(e) {
           applicationId: R.id
         }, R))
     }, [R, D, w, null == P ? true : P.guild_id, n]),
-    x = D ? T.intl.string(T.t["Cia+A8"]) : T.intl.string(T.t.NgXl3C);
+    L = D ? T.intl.string(T.t["Cia+A8"]) : T.intl.string(T.t.NgXl3C);
   if (null == R || !(0, d.Eb)(R)) return null;
   let {
     customInstallUrl: M
@@ -127,17 +127,17 @@ function R(e) {
       return (0, r.jsx)(v.O1, A({
         buttonRef: N,
         action: "PRESS_ADD_APP",
-        text: x,
+        text: L,
         icon: j,
         onContextMenu: t,
-        onClick: L
+        onClick: x
       }, n, S))
     }
   }) : (0, r.jsx)(v.O1, A({
     action: "PRESS_ADD_APP",
-    text: x,
+    text: L,
     icon: j,
-    onClick: L,
+    onClick: x,
     variant: "primary"
   }, S))
 }
