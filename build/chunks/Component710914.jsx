@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 710914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,76 +10,78 @@ var Chunk54381 = require("./54381.js"),
   Chunk392711 = require("./392711.js"),
   Chunk828700 = require("./828700.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk509212 = require("./509212.js"),
   Chunk497505 = require("./497505.js"),
   Chunk415104 = require("./415104.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk701913 = require("./701913.js");
 
-function h(e) {
+function g(e) {
   let {
     quests: t,
-    isFetching: n,
-    hasFetched: l,
-    hasFiltersApplied: h = false,
-    onClearFilters: g
-  } = e, m = i.useRef(false), _ = (0, o.TH)(), b = i.useMemo(() => {
-    if (_.hash.length > 0) {
-      let e = _.hash.slice(1);
-      for (let n of t)
-        if (n.id === e) return e
+    excludedQuests: n,
+    isFetching: l,
+    hasFetched: g,
+    hasFiltersApplied: m = false,
+    onClearFilters: _
+  } = e, b = i.useRef(false), E = (0, o.TH)(), O = i.useMemo(() => {
+    if (E.hash.length > 0) {
+      let e = E.hash.slice(1),
+        r = (0, u._x)(e, t, n);
+      if (null != r) return r.id
     }
     return null
-  }, [t, _.hash]);
+  }, [t, n, E.hash]);
   i.useEffect(() => {
-    m.current = false
-  }, [_.hash]), i.useEffect(() => {
-    if (null == b || m.current || n || !l) return;
-    let e = document.getElementById("quest-tile-".concat(b));
+    b.current = false
+  }, [E.hash]), i.useEffect(() => {
+    if (null == O || b.current || l || !g) return;
+    let e = document.getElementById("quest-tile-".concat(O));
     null == e || e.scrollIntoView({
       behavior: "smooth",
       block: "center"
-    }), m.current = true
-  }, [t, b, _, n, l]);
-  let E = null != b,
-    [O, y] = i.useState(window.innerWidth);
+    }), b.current = true
+  }, [t, O, E, l, g]);
+  let y = null != O,
+    [v, I] = i.useState(window.innerWidth);
   i.useEffect(() => {
     let e = (0, s.debounce)(() => {
-      y(window.innerWidth)
+      I(window.innerWidth)
     }, 250);
     return window.addEventListener("resize", e), () => {
       window.removeEventListener("resize", e)
     }
   }, []);
-  let v = O >= 1610 ? 3 : O >= 1340 ? 2 : 1;
-  return n && 0 === t.length ? (0, r.jsx)(c.$jN, {
-    className: f.spinner
+  let C = v >= 1610 ? 3 : v >= 1340 ? 2 : 1;
+  return l && 0 === t.length ? (0, r.jsx)(c.$jN, {
+    className: h.spinner
   }) : 0 === t.length ? (0, r.jsxs)("div", {
-    className: f.emptyStateContainer,
+    className: h.emptyStateContainer,
     children: [(0, r.jsx)(c.Heading, {
       variant: "heading-xl/semibold",
-      children: p.intl.string(h ? p.t.PBfFnx : p.t.NqFP6z)
+      children: f.intl.string(m ? f.t.PBfFnx : f.t.NqFP6z)
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       color: "text-secondary",
-      children: h ? p.intl.format(p.t.LdYS1H, {
-        onClick: g
-      }) : p.intl.string(p.t.LhD4yH)
+      children: m ? f.intl.format(f.t.LdYS1H, {
+        onClick: _
+      }) : f.intl.string(f.t.LhD4yH)
     })]
   }) : (0, r.jsx)("div", {
-    className: f.container,
+    className: h.container,
     children: t.map((e, t) => {
-      let n = Math.floor(t / v);
-      return (0, r.jsx)(d.Z, {
+      let n = Math.floor(t / C);
+      return (0, r.jsx)(p.Z, {
         quest: e,
-        questContent: u.jn.QUEST_HOME_DESKTOP,
+        questContent: d.jn.QUEST_HOME_DESKTOP,
         contentPosition: t,
         rowIndex: n,
-        className: a()(f.questTile, {
-          [f.selected]: E && e.id === b,
-          [f.unselected]: E && e.id !== b
+        className: a()(h.questTile, {
+          [h.selected]: y && e.id === O,
+          [h.unselected]: y && e.id !== O
         }),
-        sourceQuestContent: u.jn.QUEST_HOME_DESKTOP
+        sourceQuestContent: d.jn.QUEST_HOME_DESKTOP
       }, e.id)
     })
-  }, b)
+  }, O)
 }

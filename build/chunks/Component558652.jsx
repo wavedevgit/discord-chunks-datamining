@@ -19,18 +19,19 @@ let h = [];
 function g() {
   let [e, t] = Chunk473749.useState(Chunk46140.yq.SUGGESTED), [n, g] = Chunk473749.useState(h), {
     quests: m,
-    isFetchingCurrentQuests: _,
-    hasFetched: b
+    excludedQuests: _,
+    isFetchingCurrentQuests: b,
+    hasFetched: E
   } = (0, Chunk113434.bA)(Chunk113434.e5.ALL, Chunk473749.useMemo(() => ({
     sortMethod: module,
     filters: require
-  }), [module, require])), E = Chunk473749.useCallback(() => {
+  }), [module, require])), O = Chunk473749.useCallback(() => {
     g(h)
-  }, []), O = Chunk473749.useRef(null), y = Chunk473749.useRef(null), v = (0, Chunk828700.TH)(), I = (0, Chunk828700.k6)();
+  }, []), y = Chunk473749.useRef(null), v = Chunk473749.useRef(null), I = (0, Chunk828700.TH)(), C = (0, Chunk828700.k6)();
   return Chunk473749.useEffect(() => {
-    if ("" !== v.hash && null != O.current && null != y.current) {
+    if ("" !== I.hash && null != y.current && null != v.current) {
       var t, r;
-      (module !== O.current || require !== y.current) && I.replace((t = function(e) {
+      (module !== y.current || require !== v.current) && C.replace((t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -47,7 +48,7 @@ function g() {
           })
         }
         return e
-      }({}, v), r = r = {
+      }({}, I), r = r = {
         hash: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(exports, Object.getOwnPropertyDescriptors(Chunk54381)) : (function(e, t) {
         var n = Object.keys(e);
@@ -60,10 +61,10 @@ function g() {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), exports))
     }
-  }, [module, require, v, I]), Chunk473749.useEffect(() => {
-    O.current = module
+  }, [module, require, I, C]), Chunk473749.useEffect(() => {
+    y.current = module
   }, [module]), Chunk473749.useEffect(() => {
-    y.current = require
+    v.current = require
   }, [require]), (0, Chunk113434.SU)({
     selectedSortMethod: module,
     selectedFilters: require,
@@ -87,10 +88,11 @@ function g() {
       })]
     }), (0, Chunk54381.jsx)(Chunk710914.Z, {
       quests: m,
-      isFetching: _,
-      hasFetched: b,
+      excludedQuests: _,
+      isFetching: b,
+      hasFetched: E,
       hasFiltersApplied: require.length > 0,
-      onClearFilters: E
+      onClearFilters: O
     })]
   })
 }

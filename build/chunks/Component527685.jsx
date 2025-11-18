@@ -24,7 +24,7 @@ let u = e => {
     variant: u,
     override: d,
     labelledBy: f
-  } = e, _ = null != d && "unset" === u, p = (0, s.ZP)(), h = null != (t = null == d ? true : d[p]) ? t : null == d ? true : d.default, m = i.useMemo(() => (n - a) / (c - a) * 100, [n, a, c]), g = 24 + m / 100 * 30, E = (g - 10) / 2, b = n === a;
+  } = e, _ = null != d && "unset" === u, p = (0, s.ZP)(), h = null != (t = null == d ? true : d[p]) ? t : null == d ? true : d.default, m = i.useMemo(() => (n - a) / (c - a) * 100, [n, a, c]), g = 24 + m / 100 * 30, E = (g - 4) / 2, b = n === a;
   return (0, r.jsx)("div", {
     className: o()(l.progressContainer, l[u]),
     style: {
