@@ -14,5 +14,6 @@ module.exports = {
   guildNameTextLimitedSize: "guildNameTextLimitedSize_b1f768",
   muteText: "muteText_b1f768",
   muteTextWithActivity: "muteTextWithActivity_b1f768",
-  invitesDisabledTooltip: "invitesDisabledTooltip_b1f768"
+  invitesDisabledTooltip: "invitesDisabledTooltip_b1f768",
+  dialogWrapper: "dialogWrapper_b1f768"
 }
