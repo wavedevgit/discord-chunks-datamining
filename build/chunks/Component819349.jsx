@@ -135,7 +135,7 @@ function _(e) {
             text: b.intl.string(b.t["EE+P0H"]),
             overflowOnly: true,
             children: (0, i.jsx)(c.Text, {
-              variant: "text-md/normal",
+              variant: "text-sm/medium",
               className: y.label,
               lineClamp: 1,
               children: b.intl.string(b.t["EE+P0H"])

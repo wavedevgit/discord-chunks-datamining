@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 742603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => V
+  Z: () => F
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -80,7 +80,7 @@ function H(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: r,
@@ -132,7 +132,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     channel: t,
     guild: r,
@@ -246,7 +246,7 @@ function V(e) {
         }), (0, i.jsx)(_.TS, {
           channel: t,
           guild: r
-        }), (0, i.jsx)(F, {
+        }), (0, i.jsx)(V, {
           focusedApplication: S,
           focusedParticipant: b,
           channel: t

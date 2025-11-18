@@ -36,7 +36,7 @@ function O(e) {
   } = e, P = (0, s.bp)(), {
     id: I,
     type: Z
-  } = O, T = (0, r.e7)([u.Z], () => u.Z.getGuild(O.guild_id), [O.guild_id]), N = (0, r.e7)([d.Z], () => d.Z.getSelectedParticipant(I)), A = (null == N ? true : N.type) === v.fO.STREAM ? N.stream : null, w = (0, r.e7)([a.Z], () => (null == N ? true : N.type) === v.fO.ACTIVITY ? a.Z.getApplication(N.applicationId) : true), M = (0, h.Z)(I), R = (0, y.Z)(I), L = (0, m.Z)(O, T, null == A ? true : A.ownerId, null == w ? true : w.id), k = (0, p.Z)(I), D = (0, C.Z)(), U = (0, c.$A)(I), B = (0, c.j8)(I), H = (0, b.Z)(A, P), F = (0, g.Z)(w, I), V = (0, f.Z)(), G = (0, o.Z)(O);
+  } = O, T = (0, r.e7)([u.Z], () => u.Z.getGuild(O.guild_id), [O.guild_id]), N = (0, r.e7)([d.Z], () => d.Z.getSelectedParticipant(I)), A = (null == N ? true : N.type) === v.fO.STREAM ? N.stream : null, w = (0, r.e7)([a.Z], () => (null == N ? true : N.type) === v.fO.ACTIVITY ? a.Z.getApplication(N.applicationId) : true), M = (0, h.Z)(I), R = (0, y.Z)(I), L = (0, m.Z)(O, T, null == A ? true : A.ownerId, null == w ? true : w.id), k = (0, p.Z)(I), D = (0, C.Z)(), U = (0, c.$A)(I), B = (0, c.j8)(I), H = (0, b.Z)(A, P), V = (0, g.Z)(w, I), F = (0, f.Z)(), G = (0, o.Z)(O);
   return (0, i.jsxs)(l.v2r, {
     className: j.menu,
     onClose: t,
@@ -47,13 +47,13 @@ function O(e) {
     children: [(0, i.jsx)(l.kSQ, {
       children: Z !== _.d4z.GUILD_STAGE_VOICE ? L : null
     }), (0, i.jsxs)(l.kSQ, {
-      children: [Z === _.d4z.GUILD_STAGE_VOICE ? U : null, Z === _.d4z.GUILD_STAGE_VOICE ? B : null, E || Z === _.d4z.GUILD_STAGE_VOICE ? null : k, V, Z !== _.d4z.GUILD_STAGE_VOICE ? M : null, Z === _.d4z.GUILD_STAGE_VOICE || Z === _.d4z.GUILD_VOICE ? R : null]
+      children: [Z === _.d4z.GUILD_STAGE_VOICE ? U : null, Z === _.d4z.GUILD_STAGE_VOICE ? B : null, E || Z === _.d4z.GUILD_STAGE_VOICE ? null : k, F, Z !== _.d4z.GUILD_STAGE_VOICE ? M : null, Z === _.d4z.GUILD_STAGE_VOICE || Z === _.d4z.GUILD_VOICE ? R : null]
     }), (0, i.jsx)(l.kSQ, {
       children: G
     }), (0, i.jsx)(l.kSQ, {
       children: D
     }), (0, i.jsxs)(l.kSQ, {
-      children: [null != A ? H : null, null != w ? F : null]
+      children: [null != A ? H : null, null != w ? V : null]
     })]
   })
 }

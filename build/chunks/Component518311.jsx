@@ -824,7 +824,7 @@ function ep(e) {
     analyticsLocations: s
   } = (0, E.ZP)(j.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, Z.a)(j.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, P.pT)(Array.from(t), G.default, F.Z);
+  let c = (0, P.pT)(Array.from(t), G.default, V.Z);
   return (0, r.jsxs)("div", {
     className: en.customizationContainer,
     children: [(0, r.jsx)(T.B, {
@@ -855,12 +855,12 @@ function eh(e) {
   var {
     channel: t
   } = e, n = ea(e, ["channel"]);
-  let i = (0, u.cj)([U.Z, D.Z, V.Z], () => {
+  let i = (0, u.cj)([U.Z, D.Z, F.Z], () => {
     let e;
     return null != t && null != (e = D.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, U.Z.getState()), {
       invite: e,
-      hideDiscriminator: V.Z.hidePersonalInformation,
-      hideInstantInvites: V.Z.hideInstantInvites
+      hideDiscriminator: F.Z.hidePersonalInformation,
+      hideInstantInvites: F.Z.hideInstantInvites
     })
   });
   return (0, r.jsx)(ed, er({
