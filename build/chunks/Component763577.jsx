@@ -44,12 +44,12 @@ function u() {
 }
 
 function m() {
-  let [e, t] = Chunk473749.useState(null), [n, r] = Chunk473749.useState(null), [s, o] = Chunk473749.useState(null), c = Chunk473749.useRef(null), [u, m] = Chunk473749.useState(400), [x, g] = Chunk473749.useState(400), f = Chunk473749.useCallback(() => {
+  let [e, t] = Chunk473749.useState(null), [n, r] = Chunk473749.useState(null), [s, o] = Chunk473749.useState(null), [c, u] = Chunk473749.useState([]), m = Chunk473749.useRef(null), [x, g] = Chunk473749.useState(400), [f, b] = Chunk473749.useState(400), v = Chunk473749.useCallback(() => {
     setTimeout(() => {
-      var e, t;
-      Chunk333200(null != (t = null == (e = Chunk159691.current) ? true : module.getProperties()) ? exports : {}), Chunk164617({})
+      var e, t, n, a;
+      Chunk333200(null != (n = null == (e = m.current) ? true : module.getProperties()) ? require : {}), u(null != (a = null == (t = m.current) ? true : exports.getArtboards()) ? Chunk54381 : []), Chunk164617({})
     }, 1e3)
-  }, []), b = Chunk473749.useCallback((e, t) => {
+  }, []), j = Chunk473749.useCallback((e, t) => {
     null != n && r(n => {
       var a, l, r;
       return l = function(e) {
@@ -85,23 +85,23 @@ function m() {
         Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(r, e))
       }), l
     })
-  }, [Chunk692547, require]), v = Chunk473749.useCallback(e => {
+  }, [Chunk692547, require]), _ = Chunk473749.useCallback(e => {
     o(null), r(null), t(e)
   }, []);
   return (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
     gap: 16,
     children: [(0, Chunk54381.jsx)(h, {
       riveName: "Rive inspector",
-      onRiveLoad: v
+      onRiveLoad: _
     }), null != module && (0, Chunk54381.jsx)("div", {
       style: {
-        width: u,
-        height: x
+        width: x,
+        height: f
       },
       children: (0, Chunk54381.jsx)(Chunk481060.BmE, {
         src: module,
-        ref: Chunk159691,
-        onLoad: f,
+        ref: m,
+        onLoad: v,
         dynamicDataBinding: null != require ? require : {}
       })
     }), null != module && null == require ? (0, Chunk54381.jsx)(Chunk793030.$jN, {}) : null, null != require && (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
@@ -113,13 +113,13 @@ function m() {
         }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           type: "number",
           label: "width",
-          value: u.toString(),
-          onChange: e => m(parseInt(e))
+          value: x.toString(),
+          onChange: e => g(parseInt(e))
         }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           type: "number",
           label: "height",
-          value: x.toString(),
-          onChange: e => g(parseInt(e))
+          value: f.toString(),
+          onChange: e => b(parseInt(e))
         })]
       }), (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
         gap: 8,
@@ -132,7 +132,8 @@ function m() {
             property: e,
             type: null == s || null == (t = s[e]) ? true : t.type,
             value: null != (i = null == n || null == (l = n[e]) ? true : l.value) ? i : null == s || null == (r = s[e]) ? true : r.value,
-            onChange: t => b(e, t)
+            onChange: t => j(e, t),
+            artboards: c
           }, e)
         })]
       })]
@@ -145,7 +146,8 @@ function p(e) {
     property: t,
     type: n,
     value: l,
-    onChange: r
+    onChange: r,
+    artboards: c
   } = e;
   return "string" === n ? (0, a.jsx)(d.oil, {
     label: t,
@@ -173,6 +175,7 @@ function p(e) {
     value: l,
     onSelectionChange: e => r(e),
     closeOnSelect: true,
+    placeholder: "Select a color...",
     options: Object.entries(s.Z.colors).map(e => {
       let [t, n] = e;
       return {
@@ -181,6 +184,18 @@ function p(e) {
         id: t
       }
     })
+  }) : "artboard" === n ? (0, a.jsx)(o.V, {
+    selectionMode: "single",
+    label: t,
+    value: l,
+    onSelectionChange: e => r(e),
+    closeOnSelect: true,
+    placeholder: "Select an artboard...",
+    options: c.map(e => ({
+      label: e,
+      value: e,
+      id: e
+    }))
   }) : null
 }
 

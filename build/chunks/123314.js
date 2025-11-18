@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
-/** chunk id: 865288, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 123314, original params: e,t,n (module,exports,re quire) **/
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var Chunk473749 = require("./473749.js"),
-  Chunk559853 = require("./559853.js"),
+  Chunk460444 = require("./460444.js"),
   a = function(e) {
     return e && "object" == typeof e && "default" in e ? e : {
       default: e
@@ -357,57 +357,60 @@ function S(e) {
 function A(e, t) {
   true === t && (t = {});
   var n = r.useState(null),
-    s = n[0],
-    l = n[1],
-    c = r.useRef(null),
-    d = r.useState(null),
-    f = d[0],
-    _ = d[1],
-    p = !!e,
-    h = E(t),
-    m = u(),
-    g = r.useCallback(function() {
-      if (f) {
-        if (f.layout && f.layout.fit === i.Fit.Layout && s) {
-          var e = m * f.layout.layoutScaleFactor;
-          f.devicePixelRatioUsed = m, f.artboardWidth = (null == s ? true : s.width) / e, f.artboardHeight = (null == s ? true : s.height) / e
+    l = n[0],
+    c = n[1],
+    d = r.useRef(null),
+    f = r.useRef(null),
+    _ = r.useState(null),
+    p = _[0],
+    h = _[1],
+    m = !!e,
+    g = E(t),
+    y = u(),
+    O = r.useCallback(function() {
+      if (p) {
+        if (p.layout && p.layout.fit === i.Fit.Layout && l) {
+          var e = y * p.layout.layoutScaleFactor;
+          p.devicePixelRatioUsed = y, p.artboardWidth = (null == l ? true : l.width) / e, p.artboardHeight = (null == l ? true : l.height) / e
         }
-        f.startRendering(), f.resizeToCanvas()
+        p.startRendering(), p.resizeToCanvas()
       }
-    }, [f, m]);
+    }, [p, y]);
   b({
-    riveLoaded: !!f,
-    canvasElem: s,
-    containerRef: c,
-    options: h,
-    onCanvasHasResized: g,
-    artboardBounds: null == f ? true : f.bounds
+    riveLoaded: !!p,
+    canvasElem: l,
+    containerRef: d,
+    options: g,
+    onCanvasHasResized: O,
+    artboardBounds: null == p ? true : p.bounds
   });
-  var y = r.useCallback(function(e) {
-    null === e && s && (s.height = 0, s.width = 0), l(e)
+  var v = r.useCallback(function(e) {
+    null === e && l && (l.height = 0, l.width = 0), c(e)
   }, []);
   r.useEffect(function() {
-    if (s && e) {
-      var t, n = null != f;
-      if (null == f) {
-        var r = h.useOffscreenRenderer;
-        (t = new i.Rive(o(o({
+    if (l && e) {
+      var t, n = null != p;
+      if (null == p) {
+        var r = g.useOffscreenRenderer,
+          a = e.onRiveReady,
+          c = s(e, ["onRiveReady"]);
+        t = new i.Rive(o(o({
           useOffscreenRenderer: r
-        }, e), {
-          canvas: s
-        }))).on(i.EventType.Load, function() {
-          n = true, s ? _(t) : t.cleanup()
+        }, c), {
+          canvas: l
+        })), null != f.current && f.current.cleanup(), f.current = t, t.on(i.EventType.Load, function() {
+          n = true, a && a(t), l ? h(t) : t.cleanup()
         })
       }
       return function() {
         n || null == t || t.cleanup()
       }
     }
-  }, [s, p, f]);
-  var O = r.useCallback(function(e) {
-      c.current = e
+  }, [l, m, p]);
+  var I = r.useCallback(function(e) {
+      d.current = e
     }, []),
-    v = {
+    A = {
       observe: r.useCallback(function(e, t) {
         T().registerCallback(e, t)
       }, []),
@@ -415,44 +418,48 @@ function A(e, t) {
         T().removeCallback(e)
       }, [])
     },
-    I = v.observe,
-    A = v.unobserve;
+    C = A.observe,
+    N = A.unobserve;
   r.useEffect(function() {
     var e, t = false,
       n = function() {
-        if (s && t) {
-          var e = s.getBoundingClientRect();
-          e.width > 0 && e.height > 0 && e.top < (window.innerHeight || document.documentElement.clientHeight) && e.bottom > 0 && e.left < (window.innerWidth || document.documentElement.clientWidth) && e.right > 0 && (null == f || f.startRendering(), t = false)
+        if (l && t) {
+          var e = l.getBoundingClientRect();
+          e.width > 0 && e.height > 0 && e.top < (window.innerHeight || document.documentElement.clientHeight) && e.bottom > 0 && e.left < (window.innerWidth || document.documentElement.clientWidth) && e.right > 0 && (null == p || p.startRendering(), t = false)
         }
       };
-    return s && false !== h.shouldUseIntersectionObserver && I(s, function(r) {
-        r.isIntersecting ? f && f.startRendering() : f && f.stopRendering(), t = !r.isIntersecting, clearTimeout(e), r.isIntersecting || 0 !== r.boundingClientRect.width || (e = setTimeout(n, 10))
+    return l && false !== g.shouldUseIntersectionObserver && C(l, function(r) {
+        r.isIntersecting ? p && p.startRendering() : p && p.stopRendering(), t = !r.isIntersecting, clearTimeout(e), r.isIntersecting || 0 !== r.boundingClientRect.width || (e = setTimeout(n, 10))
       }),
       function() {
-        s && A(s)
+        l && N(l)
       }
-  }, [I, A, f, s, h.shouldUseIntersectionObserver]), r.useEffect(function() {
+  }, [C, N, p, l, g.shouldUseIntersectionObserver]), r.useEffect(function() {
     return function() {
-      f && (f.cleanup(), _(null))
+      p && (p.cleanup(), h(null))
     }
-  }, [f, s]);
-  var C = null == e ? true : e.animations;
+  }, [p, l]), r.useEffect(function() {
+    return function() {
+      null != f.current && f.current.cleanup()
+    }
+  }, []);
+  var R = null == e ? true : e.animations;
   r.useEffect(function() {
-    f && C && (f.isPlaying ? (f.stop(f.animationNames), f.play(C)) : f.isPaused && (f.stop(f.animationNames), f.pause(C)))
-  }, [C, f]);
-  var N = r.useCallback(function(e) {
+    p && R && (p.isPlaying ? (p.stop(p.animationNames), p.play(R)) : p.isPaused && (p.stop(p.animationNames), p.pause(R)))
+  }, [R, p]);
+  var P = r.useCallback(function(e) {
     return a.default.createElement(S, o({
-      setContainerRef: O,
-      setCanvasRef: y
+      setContainerRef: I,
+      setCanvasRef: v
     }, e))
-  }, [y, O]);
+  }, [v, I]);
   return {
-    canvas: s,
-    container: c.current,
-    setCanvasRef: y,
-    setContainerRef: O,
-    rive: f,
-    RiveComponent: N
+    canvas: l,
+    container: d.current,
+    setCanvasRef: v,
+    setContainerRef: I,
+    rive: p,
+    RiveComponent: P
   }
 }
 
@@ -631,6 +638,25 @@ exports.default = function(e) {
       f(a = null != i ? e.instanceByName(i) || null : o ? (null == (t = e.defaultInstance) ? true : t.call(e)) || null : l ? (null == (n = e.instance) ? true : n.call(e)) || null : (null == (r = e.defaultInstance) ? true : r.call(e)) || null), c && a && c.viewModelInstance !== a && c.bindViewModelInstance(a)
     } else f(null)
   }, [e, i, o, l, c]), d
+}, exports.useViewModelInstanceArtboard = function(e, t) {
+  return {
+    setValue: C(e, t, {
+      getProperty: r.useCallback(function(e, t) {
+        return e.artboard(t)
+      }, []),
+      getValue: r.useCallback(function() {}, []),
+      defaultValue: null,
+      buildPropertyOperations: r.useCallback(function(e) {
+        return {
+          setValue: function(t) {
+            e(function(e) {
+              e.value = t
+            })
+          }
+        }
+      }, [])
+    }).setValue
+  }
 }, exports.useViewModelInstanceBoolean = function(e, t) {
   var n = C(e, t, {
     getProperty: r.useCallback(function(e, t) {
@@ -728,6 +754,86 @@ exports.default = function(e) {
     values: n.extendedData || [],
     setValue: n.setValue
   }
+}, exports.useViewModelInstanceImage = function(e, t) {
+  return {
+    setValue: C(e, t, {
+      getProperty: r.useCallback(function(e, t) {
+        return e.image(t)
+      }, []),
+      getValue: r.useCallback(function() {}, []),
+      defaultValue: null,
+      buildPropertyOperations: r.useCallback(function(e) {
+        return {
+          setValue: function(t) {
+            e(function(e) {
+              e.value = t
+            })
+          }
+        }
+      }, [])
+    }).setValue
+  }
+}, exports.useViewModelInstanceList = function(e, t) {
+  var n, i = r.useState(0)[1],
+    a = C(e, t, {
+      getProperty: r.useCallback(function(e, t) {
+        return e.list(t)
+      }, []),
+      getValue: r.useCallback(function(e) {
+        return e.length
+      }, []),
+      defaultValue: null,
+      onPropertyEvent: function() {
+        i(function(e) {
+          return e + 1
+        })
+      },
+      buildPropertyOperations: r.useCallback(function(e) {
+        return {
+          addInstance: function(t) {
+            e(function(e) {
+              return e.addInstance(t)
+            })
+          },
+          addInstanceAt: function(t, n) {
+            var r = false;
+            return e(function(e) {
+              r = e.addInstanceAt(t, n)
+            }), r
+          },
+          removeInstance: function(t) {
+            e(function(e) {
+              return e.removeInstance(t)
+            })
+          },
+          removeInstanceAt: function(t) {
+            e(function(e) {
+              return e.removeInstanceAt(t)
+            })
+          },
+          getInstanceAt: function(t) {
+            var n = null;
+            return e(function(e) {
+              n = e.instanceAt(t)
+            }), n
+          },
+          swap: function(t, n) {
+            e(function(e) {
+              return e.swap(t, n)
+            })
+          }
+        }
+      }, [])
+    });
+  return {
+    length: null != (n = a.value) ? n : 0,
+    addInstance: a.addInstance,
+    addInstanceAt: a.addInstanceAt,
+    removeInstance: a.removeInstance,
+    removeInstanceAt: a.removeInstanceAt,
+    getInstanceAt: a.getInstanceAt,
+    swap: a.swap
+  }
 }, exports.useViewModelInstanceNumber = function(e, t) {
   var n = C(e, t, {
     getProperty: r.useCallback(function(e, t) {
@@ -795,7 +901,7 @@ exports.default = function(e) {
       }, [])
     }).trigger
   }
-}, Object.keys(Chunk559853).forEach(function(e) {
+}, Object.keys(Chunk460444).forEach(function(e) {
   "default" === e || t.hasOwnProperty(e) || Object.defineProperty(t, e, {
     enumerable: true,
     get: function() {

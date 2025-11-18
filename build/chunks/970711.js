@@ -13,19 +13,19 @@ require.d(exports, {
   B: () => ey,
   B8: () => I,
   BQ: () => eN,
+  Bm: () => ta,
   C2: () => ej,
   Cn: () => ea,
   D7: () => eL,
   DZ: () => ev,
   F8: () => em,
-  G0: () => ts,
   G6: () => ti,
   H0: () => q,
   Hh: () => eY,
   IU: () => eJ,
   KD: () => en,
   KE: () => eB,
-  KJ: () => ta,
+  KH: () => ts,
   Mc: () => ed,
   OU: () => eK,
   On: () => ek,
@@ -53,12 +53,13 @@ require.d(exports, {
   a9: () => eS,
   aQ: () => eM,
   am: () => eW,
+  bG: () => to,
   d$: () => Q,
   dE: () => e7,
   dJ: () => M,
   dN: () => eb,
   eD: () => eR,
-  eW: () => S,
+  eW: () => T,
   ej: () => eZ,
   ex: () => eP,
   fY: () => tl,
@@ -70,7 +71,6 @@ require.d(exports, {
   jm: () => eU,
   jx: () => eE,
   k7: () => eI,
-  kI: () => to,
   kK: () => e8,
   kn: () => el,
   kr: () => eA,
@@ -89,7 +89,7 @@ require.d(exports, {
   qb: () => eg,
   qt: () => th,
   r3: () => ew,
-  rs: () => T,
+  rs: () => S,
   sB: () => e6,
   uX: () => ec,
   up: () => eH,
@@ -256,12 +256,12 @@ function I(e, t, n, i, a) {
   r.installLogCallback(e, t, n, i, a)
 }
 
-function T(e, t) {
-  return r.rustMultiply(e, t)
+function T() {
+  return r.initLibdiscore()
 }
 
-function S() {
-  return r.initLibdiscore()
+function S(e, t) {
+  return r.rustMultiply(e, t)
 }
 
 function A() {
@@ -269,19 +269,19 @@ function A() {
 }
 
 function C(e, t) {
-  r._dyn_core__ops__function__FnMut_____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h2a939e4ee92a7144(e, t)
+  r._dyn_core__ops__function__FnMut_____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h075cb6f1f85a8e52(e, t)
 }
 
 function N(e, t) {
-  r._dyn_core__ops__function__FnMut_____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h4bf5429fc1029200(e, t)
+  r._dyn_core__ops__function__FnMut_____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h458d4dbdc7d6e3c4(e, t)
 }
 
 function R(e, t, n) {
-  r.closure541_externref_shim(e, t, n)
+  r.closure575_externref_shim(e, t, n)
 }
 
 function P(e, t, n, i) {
-  r.closure575_externref_shim(e, t, n, i)
+  r.closure611_externref_shim(e, t, n, i)
 }
 let D = ["bytes"],
   w = ["omit", "same-origin", "include"],
@@ -349,17 +349,17 @@ class G {
     let e = this.__destroy_into_raw();
     r.__wbg_intounderlyingbytesource_free(module, 0)
   }
-  get type() {
-    return D[r.intounderlyingbytesource_type(this.__wbg_ptr)]
-  }
   get autoAllocateChunkSize() {
     return r.intounderlyingbytesource_autoAllocateChunkSize(this.__wbg_ptr) >>> 0
+  }
+  pull(e) {
+    return r.intounderlyingbytesource_pull(this.__wbg_ptr, e)
   }
   start(e) {
     r.intounderlyingbytesource_start(this.__wbg_ptr, e)
   }
-  pull(e) {
-    return r.intounderlyingbytesource_pull(this.__wbg_ptr, e)
+  get type() {
+    return D[r.intounderlyingbytesource_type(this.__wbg_ptr)]
   }
   cancel() {
     let e = this.__destroy_into_raw();
@@ -379,16 +379,16 @@ class Z {
     let e = this.__destroy_into_raw();
     r.__wbg_intounderlyingsink_free(module, 0)
   }
-  write(e) {
-    return r.intounderlyingsink_write(this.__wbg_ptr, e)
+  abort(e) {
+    let t = this.__destroy_into_raw();
+    return r.intounderlyingsink_abort(t, e)
   }
   close() {
     let e = this.__destroy_into_raw();
     return r.intounderlyingsink_close(module)
   }
-  abort(e) {
-    let t = this.__destroy_into_raw();
-    return r.intounderlyingsink_abort(t, e)
+  write(e) {
+    return r.intounderlyingsink_write(this.__wbg_ptr, e)
   }
 }
 let F = "undefined" == typeof FinalizationRegistry ? {
@@ -833,15 +833,15 @@ function ti(e) {
 }
 
 function ta(e, t, n) {
-  return y(e, t, 542, R)
+  return y(e, t, 576, R)
 }
 
 function to(e, t, n) {
-  return y(e, t, 359, C)
+  return y(e, t, 389, C)
 }
 
 function ts(e, t, n) {
-  return y(e, t, 384, N)
+  return y(e, t, 429, N)
 }
 
 function tl(e, t) {

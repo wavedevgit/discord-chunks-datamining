@@ -6,8 +6,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk902778 = require("./902778.js"),
-  Chunk865288 = require("./865288.js"),
+  Chunk662386 = require("./662386.js"),
+  Chunk123314 = require("./123314.js"),
   Chunk150677 = require("./150677.js"),
   Chunk213305 = require("./213305.js"),
   Chunk402453 = require("./402453.jsx"),
@@ -63,12 +63,28 @@ function f(e) {
     getProperties: () => {
       var e, t;
       return null != (t = null == j || null == (e = j.viewModelInstance) ? true : e.properties.reduce((e, t) => {
-        var n, r, i;
-        return e[t.name] = {
+        var n, r, i, a, o;
+        return "viewModel" === t.type && (null == j || null == (o = j.viewModelInstance) || null == (a = o.viewModel(t.name)) || a.properties.forEach(n => {
+          var r, i, a;
+          e[t.name + "/" + n.name] = {
+            type: n.type,
+            value: null == j || null == (a = j.viewModelInstance) || null == (i = a[n.type]) || null == (r = i.call(a, "".concat(t.name, "/").concat(n.name))) ? true : r.value
+          }
+        })), e[t.name] = {
           type: t.type,
           value: null == j || null == (i = j.viewModelInstance) || null == (r = i[t.type]) || null == (n = r.call(i, t.name)) ? true : n.value
         }, e
       }, {})) ? t : {}
+    },
+    getArtboards: () => {
+      if (null == j) return [];
+      let e = new Set,
+        t = j.riveFile.getInstance();
+      for (let n = 0; n < t.artboardCount(); n++) {
+        let r = t.artboardByIndex(n);
+        e.add(r.name)
+      }
+      return Array.from(e)
     }
   }), [j]), (0, d.P)({
     rive: j,
@@ -124,4 +140,4 @@ function f(e) {
     style: g
   })
 }
-Chunk865288.RuntimeLoader.setWasmUrl(Chunk902778)
+Chunk123314.RuntimeLoader.setWasmUrl(Chunk662386)
