@@ -2,10 +2,10 @@
 /** chunk id: 391594, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   $0: () => M,
-  Xw: () => C,
+  Xw: () => v,
   cf: () => L,
   f1: () => N,
-  ys: () => v
+  ys: () => C
 }), require("./314940.js"), require("./539854.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk921254 = require("./921254.js"),
@@ -30,31 +30,34 @@ var Chunk473749 = require("./473749.js"),
   Chunk302800 = require("./302800.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk252183 = require("./252183.js"),
+  Chunk882789 = require("./882789.js"),
   Chunk388032 = require("./388032.jsx");
 let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
     itemName: t
   }) : null,
-  C = t => {
+  v = t => {
     let {
       product: e,
       overrideTitle: n,
       isVariantsGroupEnabled: i,
       shouldShowPromotionalExperience: r,
       productName: l,
-      itemConsumed: a
+      itemConsumed: a,
+      isRental: s,
+      rentalDuration: u
     } = t;
     if (null != n) return n;
+    if (s) return 1 === u ? _.intl.string(_.t.vAV62L) : _.intl.string(_.t["5Gltxj"]);
     if (R.Vt.ORB_PROFILE_BADGE === e.skuId) return _.intl.string(T.default.nvaTQq);
     if (R.Vt.FRACTIONAL_PREMIUM === e.skuId)
       if (a) return _.intl.string(_.t.t0xkSB);
       else return _.intl.string(_.t.g5W1g8);
     if (i && !r) return _.intl.string(_.t.IMffmm);
-    return _.intl.formatToPlainString(_.t.YNaxMp, {
+    else return _.intl.formatToPlainString(_.t.YNaxMp, {
       itemName: l
     })
   },
-  v = t => {
+  C = t => {
     let {
       product: e,
       overrideDescription: n,
@@ -63,21 +66,27 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
       promotionalRewardCollectedText: l,
       itemConsumed: a,
       isFractionalPremiumActive: o,
-      expiresAt: d
+      expiresAt: d,
+      isRental: c,
+      rentalExpiresAt: p
     } = t;
     if (null != n) return n;
+    if (c && null != p) return _.intl.format(_.t["HQjw+I"], {
+      itemName: i,
+      date: p
+    });
     if (R.Vt.ORB_PROFILE_BADGE === e.skuId) return _.intl.string(T.default.UnPGii);
-    if (R.Vt.FRACTIONAL_PREMIUM !== e.skuId) return (0, s.EQ)(null == e ? true : e.type).with(u.Z.BUNDLE, () => {
-      let {
-        itemOneName: t,
-        itemTwoName: n
-      } = (0, m.Ws)(e);
-      return _.intl.format(_.t.fXw44U, {
-        itemOneName: t,
-        itemTwoName: n
-      })
-    }).with(u.Z.AVATAR_DECORATION, () => r && null != l ? l : k(i)).otherwise(() => k(i));
     {
+      if (R.Vt.FRACTIONAL_PREMIUM !== e.skuId) return (0, s.EQ)(null == e ? true : e.type).with(u.Z.BUNDLE, () => {
+        let {
+          itemOneName: t,
+          itemTwoName: n
+        } = (0, m.Ws)(e);
+        return _.intl.format(_.t.fXw44U, {
+          itemOneName: t,
+          itemTwoName: n
+        })
+      }).with(u.Z.AVATAR_DECORATION, () => r && null != l ? l : k(i)).otherwise(() => k(i));
       let t = _.intl.formatToPlainString(_.t.Cz1G97, {
         days: 3
       });
@@ -100,9 +109,10 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
       handleUseNow: l,
       isApplying: s,
       openProfileSettings: A,
-      itemConsumed: g
-    } = t, I = [];
-    if (R.Vt.ORB_PROFILE_BADGE === e.skuId) I.push({
+      itemConsumed: g,
+      isRental: I
+    } = t, m = [];
+    if (R.Vt.ORB_PROFILE_BADGE === e.skuId) m.push({
       text: _.intl.string(T.default.yfwZuy),
       variant: "primary",
       onClick: () => {
@@ -116,10 +126,10 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
           pageType: S.ZY5.SHOP_ORBS_TAB,
           sectionType: S.jXE.ORBS_BADGE_REDEMPTION_MODAL,
           ctaObject: S.qAy.CTA_TO_QUEST_HOME
-        }), (0, O.navigateToQuestHome)()
+        }), (0, h.navigateToQuestHome)()
       }
     });
-    else if (R.Vt.FRACTIONAL_PREMIUM === e.skuId) g ? I.push({
+    else if (R.Vt.FRACTIONAL_PREMIUM === e.skuId) g ? m.push({
       text: _.intl.string(_.t.cpT0Cq),
       variant: "secondary",
       onClick: n
@@ -129,7 +139,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
       onClick: () => {
         (0, p.$)(n)
       }
-    }) : I.push({
+    }) : m.push({
       text: _.intl.string(_.t.cpT0Cq),
       variant: "secondary",
       onClick: n
@@ -137,14 +147,14 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
       text: _.intl.string(_.t["Jr6N+s"]),
       variant: "primary",
       onClick: () => {
-        (0, b.openUserSettings)(f.n.SUBSCRIPTIONS_PANEL, {
+        (0, b.openUserSettings)(O.n.SUBSCRIPTIONS_PANEL, {
           section: S.oAB.SUBSCRIPTIONS
         }), n()
       }
     });
     else {
       let [t] = e.items;
-      I.push({
+      m.push({
         text: _.intl.string(_.t["2p2aYz"]),
         variant: r ? "secondary" : "primary",
         onClick: () => {
@@ -156,7 +166,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
             return
           }
           if (e.type === u.Z.PROFILE_EFFECT) {
-            a()(t.type === u.Z.PROFILE_EFFECT, "product type and item type are the same"), (0, h.H)({
+            a()(t.type === u.Z.PROFILE_EFFECT, "product type and item type are the same"), (0, f.H)({
               initialSelectedEffect: t,
               analyticsLocations: i
             });
@@ -172,12 +182,12 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
         }
       })
     }
-    return r && I.push({
+    return r && !I && m.push({
       text: _.intl.string(_.t.MAS7uK),
       variant: "primary",
       onClick: l,
       loading: s
-    }), I
+    }), m
   },
   N = (t, e) => {
     let n = i.useMemo(() => (0, I.jm)(t.type, t.skuId), [t.type, t.skuId]);

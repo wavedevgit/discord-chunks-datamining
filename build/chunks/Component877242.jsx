@@ -1,7 +1,7 @@
 /** Chunk was on 75909 **/
 /** chunk id: 877242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,40 +18,40 @@ var Chunk54381 = require("./54381.js"),
   Chunk215113 = require("./215113.jsx"),
   Chunk684245 = require("./684245.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk273339 = require("./273339.js");
+  Chunk290691 = require("./290691.js");
 
-function b() {
+function h() {
   var e;
   let {
     quest: t,
     sourceQuestContent: n,
     isPortrait: l,
-    onClose: b
-  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), h = (0, Chunk915750.aM)(), S = (0, Chunk113434.tP)(exports), C = Chunk473749.useRef(null), {
+    onClose: h
+  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), b = (0, Chunk915750.aM)(), S = (0, Chunk113434.tP)(exports), C = Chunk473749.useRef(null), {
     isHoveringOrFocusing: y
   } = (0, Chunk104505.Z)(C), _ = (0, Chunk684245.e)({
     quest: exports,
-    onClose: b,
+    onClose: h,
     sourceQuestContent: require,
-    impressionId: h
+    impressionId: b
   }), x = null == (e = exports.config.videoMetadata) ? true : module.messages.videoEndCtaSubtitle, j = true !== x && !(0, Chunk624138.Ew)(x);
   return (0, Chunk54381.jsx)(Chunk681715.u, {
     text: Chunk388032.intl.string(Chunk388032.t.EuHF34),
     children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
       onClick: () => _(Chunk497505.jn.VIDEO_MODAL, Chunk617136.jZ.OPEN_GAME_LINK),
-      className: Chunk273339.adInfoClickable,
+      className: Chunk290691.adInfoClickable,
       children: (0, Chunk54381.jsxs)("div", {
-        className: i()(Chunk273339.contentHeaderGameInfo, Chunk273339.contentHeaderGameInfoHoverable, {
-          [Chunk273339.contentHeaderGameInfoHoverableExpired]: S
+        className: i()(Chunk290691.contentHeaderGameInfo, Chunk290691.contentHeaderGameInfoHoverable, {
+          [Chunk290691.contentHeaderGameInfoHoverableExpired]: S
         }),
         ref: C,
         children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk273339.contentFooterAdDetailedInfo,
+          className: Chunk290691.contentFooterAdDetailedInfo,
           children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-md/medium",
             color: "header-primary",
-            className: i()(Chunk273339.adDetailsTextSecondary, {
-              [Chunk273339.adDetailsTextSecondaryPortrait]: Chunk120356
+            className: i()(Chunk290691.adDetailsTextSecondary, {
+              [Chunk290691.adDetailsTextSecondaryPortrait]: Chunk120356
             }),
             lineClamp: Chunk120356 ? true : 1,
             children: Chunk388032.intl.format(Chunk388032.t.EQa7os, {
@@ -59,13 +59,13 @@ function b() {
             })
           })
         }), (0, Chunk54381.jsxs)("div", {
-          className: i()(Chunk273339.contentFooterAdDetailedInfo, {
-            [Chunk273339.contentFooterAdDetailedInfoPortrait]: Chunk120356
+          className: i()(Chunk290691.contentFooterAdDetailedInfo, {
+            [Chunk290691.contentFooterAdDetailedInfoPortrait]: Chunk120356
           }),
           children: [(0, Chunk54381.jsx)("div", {
-            className: i()(Chunk273339.adDetailsTextPrimary, {
-              [Chunk273339.adDetailsTextPrimaryPortrait]: Chunk120356,
-              [Chunk273339.addFourPxMarginRight]: Chunk120356
+            className: i()(Chunk290691.adDetailsTextPrimary, {
+              [Chunk290691.adDetailsTextPrimaryPortrait]: Chunk120356,
+              [Chunk290691.addFourPxMarginRight]: Chunk120356
             }),
             children: (0, Chunk54381.jsx)(Chunk481060.owK, {
               size: "xs",
@@ -73,9 +73,9 @@ function b() {
             })
           }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-sm/medium",
-            className: i()(Chunk273339.adDetailsTextPrimary, {
-              [Chunk273339.adDetailsTextPrimaryPortrait]: Chunk120356,
-              [Chunk273339.addFourPxMarginRight]: Chunk120356
+            className: i()(Chunk290691.adDetailsTextPrimary, {
+              [Chunk290691.adDetailsTextPrimaryPortrait]: Chunk120356,
+              [Chunk290691.addFourPxMarginRight]: Chunk120356
             }),
             color: y ? "text-primary" : "text-secondary",
             lineClamp: 1,
@@ -83,12 +83,12 @@ function b() {
           }), j ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
             children: [(0, Chunk54381.jsx)("div", {
               "aria-hidden": "true",
-              className: i()(Chunk273339.dotSpacer, {
-                [Chunk273339.dotSpacerPortrait]: Chunk120356
+              className: i()(Chunk290691.dotSpacer, {
+                [Chunk290691.dotSpacerPortrait]: Chunk120356
               })
             }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
-              className: i()(Chunk273339.adDetailsTextSecondary, {
-                [Chunk273339.adDetailsTextSecondaryPortrait]: Chunk120356
+              className: i()(Chunk290691.adDetailsTextSecondary, {
+                [Chunk290691.adDetailsTextSecondaryPortrait]: Chunk120356
               }),
               variant: "heading-sm/medium",
               lineClamp: Chunk120356 ? true : 1,

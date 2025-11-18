@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 32923 **/
 /** chunk id: 353398, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q5: () => T,
@@ -25,8 +25,8 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk999382 = require("./999382.js"),
   Chunk260539 = require("./260539.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk86477 = require("./86477.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk232386 = require("./232386.js"),
+  Chunk10198 = require("./10198.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -90,18 +90,18 @@ function P(e) {
 
 function w() {
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk197571.marginBottom4,
+    className: Chunk10198.marginBottom4,
     children: (0, Chunk54381.jsxs)(Chunk481060.y5t, {
       component: (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.KUw7Ss)
       }),
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk197571.marginBottom20,
+        className: Chunk10198.marginBottom20,
         variant: "text-sm/normal",
         children: Chunk388032.intl.format(Chunk388032.t.c0m8bK, {})
       }), (0, Chunk54381.jsx)(R, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-        className: Chunk86477.divider
+        className: Chunk232386.divider
       }), (0, Chunk54381.jsx)(Z, {})]
     })
   })
@@ -148,7 +148,7 @@ function Z() {
     variant: "text-sm/normal",
     children: exports.message
   }) : (0, Chunk54381.jsx)(Chunk481060.$jN, {
-    className: Chunk197571.marginTop40
+    className: Chunk10198.marginTop40
   });
   let o = null != exports && null == exports.getFirstFieldErrorMessage("name") && null == exports.getFirstFieldErrorMessage("description");
   return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
@@ -157,7 +157,7 @@ function Z() {
       guild: module,
       guildTemplate: s
     }), Chunk512722 ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk197571.marginTop8,
+      className: Chunk10198.marginTop8,
       color: "text-danger",
       variant: "text-sm/normal",
       children: exports.getAnyErrorMessage()
@@ -167,63 +167,63 @@ function Z() {
 
 function R() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk86477.descriptionBox,
+    className: Chunk232386.descriptionBox,
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk86477.descriptionSection,
+      className: Chunk232386.descriptionSection,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "eyebrow",
         children: Chunk388032.intl.string(Chunk388032.t["f8u+VO"])
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk86477.descriptionRow,
+        className: Chunk232386.descriptionRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.owK, {
           size: "md",
-          className: Chunk86477.descriptionIcon,
+          className: Chunk232386.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t.K2tn16)]
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk86477.descriptionRow,
+        className: Chunk232386.descriptionRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.owK, {
           size: "md",
-          className: Chunk86477.descriptionIcon,
+          className: Chunk232386.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t.om5gNq)]
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk86477.descriptionRow,
+        className: Chunk232386.descriptionRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.owK, {
           size: "md",
-          className: Chunk86477.descriptionIcon,
+          className: Chunk232386.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t["/VNqdD"])]
       })]
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk86477.descriptionSection,
+      className: Chunk232386.descriptionSection,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "eyebrow",
         children: Chunk388032.intl.string(Chunk388032.t["8zhJEr"])
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk86477.descriptionRow,
+        className: Chunk232386.descriptionRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.k$p, {
           size: "md",
-          className: Chunk86477.descriptionIcon,
+          className: Chunk232386.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t.WOKI6t)]
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk86477.descriptionRow,
+        className: Chunk232386.descriptionRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.k$p, {
           size: "md",
-          className: Chunk86477.descriptionIcon,
+          className: Chunk232386.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t.ddhDJH)]
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk86477.descriptionRow,
+        className: Chunk232386.descriptionRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.k$p, {
           size: "md",
-          className: Chunk86477.descriptionIcon,
+          className: Chunk232386.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t["6Q/DHk"])]
@@ -420,7 +420,7 @@ function U(e) {
       onClick: () => (0, p.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("10778"), n.e("86015")]).then(n.bind(n, 766775));
+        } = await Promise.all([n.e("10778"), n.e("10570")]).then(n.bind(n, 766775));
         return n => {
           var r, l;
           return (0, i.jsx)(e, (r = function(e) {

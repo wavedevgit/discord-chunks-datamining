@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk88406 = require("./88406.js");
+  Chunk308274 = require("./308274.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -128,7 +128,7 @@ function E() {
   }, "role-colors"), (0, Chunk54381.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk54381.jsx)(Chunk481060.S89, {
       id: "display-name-styles",
-      label: Chunk388032.intl.string(Chunk88406.default["2gFUEw"]),
+      label: Chunk388032.intl.string(Chunk308274.default["2gFUEw"]),
       checked: E,
       action: v
     })

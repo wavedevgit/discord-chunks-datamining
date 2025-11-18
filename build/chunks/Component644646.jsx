@@ -2,7 +2,7 @@
 /** chunk id: 644646, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,15 +18,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk509212 = require("./509212.js"),
   Chunk132581 = require("./132581.js"),
   Chunk475595 = require("./475595.js"),
-  Chunk566078 = require("./566078.js"),
   Chunk18578 = require("./18578.jsx"),
   Chunk352084 = require("./352084.jsx"),
   Chunk110560 = require("./110560.jsx"),
   Chunk78826 = require("./78826.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk858191 = require("./858191.js");
+  Chunk497377 = require("./497377.js");
 
-function T(e) {
+function I(e) {
   let {
     appFocused: t,
     location: n
@@ -37,124 +36,124 @@ function T(e) {
   });
   return i ? (0, r.jsx)(c.ZX5, {
     "data-migration-pending": true,
-    className: I.shine,
+    className: v.shine,
     shineSize: c.rHe.SMALL,
     shinePaused: !t
   }) : null
 }
-let S = function(e) {
+let T = function(e) {
   let t, {
       className: n,
       quest: a,
       autoplay: h = true,
-      learnMoreStyle: S = null,
-      learnMoreFontSize: A,
-      sourceQuestContent: C,
-      lazyLoad: N = false,
-      style: R,
-      showShine: P = true,
-      location: D
+      learnMoreStyle: T = null,
+      learnMoreFontSize: S,
+      sourceQuestContent: A,
+      lazyLoad: C = false,
+      style: N,
+      showShine: R = true,
+      location: P
     } = e,
-    w = (0, _.O5)(),
-    L = (0, l.e7)([f.Z], () => f.Z.isFocused()),
-    x = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
-    M = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD), [a]),
-    j = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD_IMAGE), [a]),
-    k = i.useCallback(t => {
+    D = (0, _.O5)(),
+    w = (0, l.e7)([f.Z], () => f.Z.isFocused()),
+    L = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
+    x = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD), [a]),
+    M = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD_IMAGE), [a]),
+    j = i.useCallback(t => {
       var n;
-      (0, s.kK)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), w({
+      (0, s.kK)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), D({
         questId: a.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
         questContentCTA: _.jZ.REWARD_LEARN_MORE,
-        sourceQuestContent: C
-      }), (0, y.navigateToQuestHome)({
+        sourceQuestContent: A
+      }), (0, b.navigateToQuestHome)({
         fromContent: e.questContent,
         questId: a.id
       }), null == (n = e.onClick) || n.call(e, t)
-    }, [w, a.id, e, C]),
-    U = i.useRef(null),
-    G = i.useRef(h),
-    B = (0, p.Bg)(a.config);
+    }, [D, a.id, e, A]),
+    k = i.useRef(null),
+    U = i.useRef(h),
+    G = (0, p.Bg)(a.config);
   return i.useEffect(() => {
-    if (null != U.current) {
-      if (!M.isAnimated || x) {
-        U.current.currentTime = 0, U.current.pause();
+    if (null != k.current) {
+      if (!x.isAnimated || L) {
+        k.current.currentTime = 0, k.current.pause();
         return
       }
-      h && !G.current ? U.current.play() : !h && G.current && (U.current.currentTime = 0, U.current.pause()), G.current = h
+      h && !U.current ? k.current.play() : !h && U.current && (k.current.currentTime = 0, k.current.pause()), U.current = h
     }
-  }, [h, M, x]), t = B ? (0, r.jsx)(O.Fl, {
+  }, [h, x, L]), t = G ? (0, r.jsx)(y.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
-    children: e => (0, r.jsx)(b.Z, {
+    children: e => (0, r.jsx)(E.Z, {
       ref: e,
-      className: I.questRewardTileAsset
+      className: v.questRewardTileAsset
     })
-  }) : N ? (0, r.jsx)(E.K, {
+  }) : C ? (0, r.jsx)(g.K, {
     showVideo: h,
-    imageAsset: null != j ? {
-      asset: j,
+    imageAsset: null != M ? {
+      asset: M,
       assetId: "QuestRewardTile_rewardTileStatic",
-      className: I.imageVideoOverlay,
-      alt: v.intl.string(v.t.UMclVN)
+      className: v.imageVideoOverlay,
+      alt: O.intl.string(O.t.UMclVN)
     } : true,
     videoAsset: {
-      asset: M,
+      asset: x,
       assetId: "QuestRewardTile_rewardTileAnimated",
-      className: o()(I.questRewardTileAsset, I.questRewardTileAssetLazyVideo)
+      className: o()(v.questRewardTileAsset, v.questRewardTileAssetLazyVideo)
     },
     onLoadComplete: e.onLoadComplete
-  }) : M.isAnimated ? (0, r.jsx)(O.Fl, {
+  }) : x.isAnimated ? (0, r.jsx)(y.Fl, {
     id: "QuestRewardTile_rewardTileAnimated",
     children: t => {
       var n;
       return (0, r.jsx)(d.Z, {
         ref: e => {
-          t.current = e, U.current = e
+          t.current = e, k.current = e
         },
-        autoPlay: !x && h,
+        autoPlay: !L && h,
         loop: true,
         muted: true,
         playsInline: true,
-        className: I.questRewardTileAsset,
+        className: v.questRewardTileAsset,
         controls: false,
         onProgress: e.onLoadComplete,
         children: (0, r.jsx)("source", {
-          src: M.url,
-          type: null != (n = M.mimetype) ? n : true
+          src: x.url,
+          type: null != (n = x.mimetype) ? n : true
         })
       })
     }
-  }) : (0, r.jsx)(O.Fl, {
+  }) : (0, r.jsx)(y.Fl, {
     id: "QuestRewardTile_rewardTileStatic",
     children: t => (0, r.jsx)("img", {
       ref: t,
-      alt: g.r.build(a.config).defaultRewardName,
-      className: o()(I.questRewardTileAsset, I.questRewardTileAssetStatic),
-      src: M.url,
+      alt: (0, p.w8)(a.config),
+      className: o()(v.questRewardTileAsset, v.questRewardTileAssetStatic),
+      src: x.url,
       onLoad: e.onLoadComplete
     })
-  }), null == S ? (0, r.jsx)("div", {
-    className: o()(I.questRewardTile, n),
-    style: R,
+  }), null == T ? (0, r.jsx)("div", {
+    className: o()(v.questRewardTile, n),
+    style: N,
     children: t
   }) : (0, r.jsxs)(c.P3F, {
-    className: o()(I.questRewardTileInteractive, I.questRewardTile, I.rewardHighlight, n),
-    onClick: k,
-    style: R,
-    children: [t, P && !x && (0, r.jsx)(T, {
-      appFocused: L,
-      location: D
-    }), "text" === S && (0, r.jsx)(c.Text, {
+    className: o()(v.questRewardTileInteractive, v.questRewardTile, v.rewardHighlight, n),
+    onClick: j,
+    style: N,
+    children: [t, R && !L && (0, r.jsx)(I, {
+      appFocused: w,
+      location: P
+    }), "text" === T && (0, r.jsx)(c.Text, {
       color: "always-white",
       variant: "text-xs/normal",
-      className: I.questRewardTileDetailsLearnMore,
+      className: v.questRewardTileDetailsLearnMore,
       style: {
-        fontSize: A
+        fontSize: S
       },
-      children: v.intl.format(v.t.DYAleT, {})
-    }), "icon" === S && (0, r.jsx)("div", {
-      className: I.questRewardTileDetailsLearnMore,
+      children: O.intl.format(O.t.DYAleT, {})
+    }), "icon" === T && (0, r.jsx)("div", {
+      className: v.questRewardTileDetailsLearnMore,
       children: (0, r.jsx)(c.d3s, {
         size: "xxs",
         color: c.TVs.colors.WHITE.css

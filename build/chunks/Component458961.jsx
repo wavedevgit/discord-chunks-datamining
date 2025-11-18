@@ -42,7 +42,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk179598 = require("./179598.js");
+  Chunk707449 = require("./707449.js");
 
 function D(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -253,8 +253,8 @@ function J(e) {
   }, [ew, eA, eu]), r.useEffect(() => {
     e$ && eJ(true)
   }, [e$]);
-  let e2 = r.useRef(null),
-    e8 = !e3 || !ed && es >= S.dD;
+  let e8 = r.useRef(null),
+    e2 = !e3 || !ed && es >= S.dD;
   return (0, n.jsxs)(g.Y0X, {
     transitionState: er,
     size: g.CgR.DYNAMIC,
@@ -290,7 +290,7 @@ function J(e) {
       children: [(0, n.jsx)(g.zJl, {
         children: (0, n.jsxs)("div", {
           className: L.productFieldsSection,
-          ref: e2,
+          ref: e8,
           children: [(0, n.jsx)(g.oil, {
             label: B.intl.string(B.t.Hsk7xT),
             error: null == ew ? true : ew.getFirstFieldErrorMessage("name"),
@@ -341,7 +341,7 @@ function J(e) {
             children: (0, n.jsx)(N.s, {
               onFileAdded: () => {
                 var e;
-                null == (e = e2.current) || e.scrollIntoView({
+                null == (e = e8.current) || e.scrollIntoView({
                   behavior: "smooth",
                   block: "end"
                 })
@@ -362,7 +362,7 @@ function J(e) {
         children: (0, n.jsxs)("div", {
           className: L.productPreview,
           children: [(0, n.jsx)(X.Z, {
-            disabled: e8,
+            disabled: e2,
             disabledTooltip: ed ? B.intl.string(B.t["0NQ00t"]) : es >= S.dD ? B.intl.format(B.t.IqWPVt, {
               maxProducts: S.dD
             }) : B.intl.string(B.t["Ax89/c"]),

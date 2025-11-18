@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk156142 = require("./156142.jsx"),
   Chunk811364 = require("./811364.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk777461 = require("./777461.js");
+  Chunk918305 = require("./918305.js");
 let v = {
     mana: {
       name: "Mana",

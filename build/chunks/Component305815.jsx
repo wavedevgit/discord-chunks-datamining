@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk291967 = require("./291967.jsx"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk129034 = require("./129034.js");
+  Chunk691864 = require("./691864.js");
 
 function A(e) {
   var n;
@@ -35,7 +35,7 @@ function A(e) {
     onUseNow: a,
     user: l,
     mode: s
-  } = e, d = (0, j.fh)(t, j.eC.REWARD).url, u = (0, h.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == i ? true : i.skuId);
+  } = e, d = (0, j.fh)(t, j.eC.REWARD).url, u = (0, v.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == i ? true : i.skuId);
   return (0, r.jsxs)("div", {
     className: w.contentContainer,
     children: [(0, r.jsx)("div", {
@@ -53,7 +53,7 @@ function A(e) {
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: w.heading,
-        children: N.intl.string(N.t["0/Yz+Y"])
+        children: b.intl.string(b.t["0/Yz+Y"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
@@ -62,7 +62,7 @@ function A(e) {
     }), (0, r.jsx)(o.Button, {
       variant: "secondary",
       size: "sm",
-      text: m ? N.intl.string(N.t.hjaYYn) : N.intl.string(N.t.MAS7uK),
+      text: m ? b.intl.string(b.t.hjaYYn) : b.intl.string(b.t.MAS7uK),
       loading: "applying" === s,
       disabled: "claimed" !== s || m,
       onClick: a,
@@ -76,11 +76,11 @@ function E(e) {
   let {
     initialQuest: c,
     onClose: j,
-    transitionState: N,
+    transitionState: b,
     preview: w,
     location: E,
     sourceQuestContent: P
-  } = e, T = null != (t = (0, h.B4)(c.id)) ? t : c, D = i.useMemo(() => (0, C.xn)(T.config), [T]), O = (0, l.e7)([f.default], () => f.default.getCurrentUser()), [L, R] = function(e) {
+  } = e, D = null != (t = (0, v.B4)(c.id)) ? t : c, T = i.useMemo(() => (0, C.xn)(D.config), [D]), O = (0, l.e7)([f.default], () => f.default.getCurrentUser()), [L, R] = function(e) {
     let {
       product: n,
       isFetching: t
@@ -99,33 +99,33 @@ function E(e) {
       return (0, s.si)(), !!(null == t ? true : t.ok)
     };
     return [r, l]
-  }(null != (o = null == D ? true : D.skuId) ? o : null), S = (null == (n = T.userStatus) ? true : n.claimedAt) != null, k = !w && !S, [I, M] = i.useState(k ? "loading" : "claimed");
+  }(null != (o = null == T ? true : T.skuId) ? o : null), I = (null == (n = D.userStatus) ? true : n.claimedAt) != null, S = !w && !I, [k, M] = i.useState(S ? "loading" : "claimed");
   i.useEffect(() => {
-    k && (0, x.QB)(T.id, v.y$.CROSS_PLATFORM, E).then(() => M("claimed")).catch(() => M("error"))
-  }, [T.id, E, k]);
-  let Z = true === w && null === L && (null == D ? true : D.skuId) !== "",
-    W = null == O,
-    q = W || null == L && true !== w || Z || "loading" === I,
-    B = "error" === I || null == D,
-    G = async () => {
+    S && (0, x.QB)(D.id, h.y$.CROSS_PLATFORM, E).then(() => M("claimed")).catch(() => M("error"))
+  }, [D.id, E, S]);
+  let Z = true === w && null === L && (null == T ? true : T.skuId) !== "",
+    B = null == O,
+    W = B || null == L && true !== w || Z || "loading" === k,
+    q = "error" === k || null == T,
+    z = async () => {
       M("applying"), M(await R() ? "applied" : "claimed")
     };
   return (0, r.jsx)(_.Z, {
     onClose: j,
-    transitionState: N,
-    quest: T,
+    transitionState: b,
+    quest: D,
     sourceQuestContent: P,
-    location: b.dr.COLLECTIBLE_REWARD_MODAL,
-    isRewardContentLoading: q,
-    rewardContentHasError: B,
-    rewardContent: B || W ? null : (0, r.jsx)(y.Z, {
-      rewardName: D.messages.name,
+    location: N.dr.COLLECTIBLE_REWARD_MODAL,
+    isRewardContentLoading: W,
+    rewardContentHasError: q,
+    rewardContent: q || B ? null : (0, r.jsx)(y.Z, {
+      rewardName: T.messages.name,
       children: (0, r.jsx)(A, {
-        quest: T,
+        quest: D,
         avatarDeco: L,
         user: O,
-        mode: I,
-        onUseNow: G
+        mode: k,
+        onUseNow: z
       })
     })
   })

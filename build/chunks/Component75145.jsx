@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk788457 = require("./788457.js");
+  Chunk826522 = require("./826522.js");
 let m = .2,
   g = 41;
 
@@ -29,24 +29,24 @@ function E() {
   return Chunk473749.useEffect(() => () => {
     Chunk410030 && Chunk120356(Chunk921944.L.TAKE_ACTION)
   }, [Chunk410030, Chunk120356]), (0, Chunk54381.jsxs)("div", {
-    className: Chunk788457.nitroTopDividerContainer,
+    className: Chunk826522.nitroTopDividerContainer,
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk788457.nitroTopDividerUpper
+      className: Chunk826522.nitroTopDividerUpper
     }), (0, Chunk54381.jsx)("div", {
-      className: o()(Chunk788457.nitroTopDividerShadow, Chunk788457.glow, {
-        [Chunk788457.reducedMotion]: module || !Chunk410030
+      className: o()(Chunk826522.nitroTopDividerShadow, Chunk826522.glow, {
+        [Chunk826522.reducedMotion]: module || !Chunk410030
       })
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk788457.nitroTopDividerLockContainer,
+      className: Chunk826522.nitroTopDividerLockContainer,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk788457.nitroTopDividerLockBorder
+        className: Chunk826522.nitroTopDividerLockBorder
       }), !module && Chunk410030 && (0, Chunk54381.jsx)(Chunk481060.Fmz, {
-        className: Chunk788457.premiumUnlockAnimation,
+        className: Chunk826522.premiumUnlockAnimation,
         loop: false,
         importData: () => require.e("21812").then(require.t.bind(require, 741855, 19))
       }), (0, Chunk54381.jsxs)("div", {
-        className: o()(Chunk788457.premiumUnlockedWithNitroPillContainer, {
-          [Chunk788457.reducedMotion]: module || !Chunk410030
+        className: o()(Chunk826522.premiumUnlockedWithNitroPillContainer, {
+          [Chunk826522.reducedMotion]: module || !Chunk410030
         }),
         children: [(0, Chunk54381.jsx)(Chunk481060.SrA, {
           size: "xs",
@@ -58,10 +58,10 @@ function E() {
           children: Chunk388032.intl.string(Chunk388032.t["BMw+7I"])
         })]
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk788457.nitroTopDividerLockBorderReversed
+        className: Chunk826522.nitroTopDividerLockBorderReversed
       })]
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk788457.reverseTrialTopDividerLower
+      className: Chunk826522.reverseTrialTopDividerLower
     })]
   })
 }

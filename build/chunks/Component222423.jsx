@@ -11,7 +11,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk410030 = require("./410030.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk110563 = require("./110563.js");
+  Chunk770937 = require("./770937.js");
 let u = "https://cdn.discordapp.com/assets/content/f814e4be3c27004f4e60c1bdad648ee24acfa9716c0be8048cc63b5b869e56a4.png",
   d = "https://cdn.discordapp.com/assets/content/e4ec02f7af5d01c8c168eb814823a94a6bf1ce440e70e35e5a6f18b0fdad3321.png";
 

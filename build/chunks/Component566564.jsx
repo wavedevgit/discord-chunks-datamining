@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk310582 = require("./310582.js");
+  Chunk687983 = require("./687983.js");
 let A = e => {
     var t, n, i;
     let {
@@ -45,7 +45,7 @@ let A = e => {
     } = e, {
       noCache: I,
       includeUnpublished: B
-    } = (0, v.Z)(), A = (0, h.Pc)("CollectiblesFeedShop") && b === L.AW.ORBS, R = (n = function(e) {
+    } = (0, v.Z)(), A = (0, m.Pc)("CollectiblesFeedShop") && b === L.AW.ORBS, R = (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -76,9 +76,9 @@ let A = e => {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
     }), n), [Z, w] = l.useState(false), H = (0, p.sp)(), D = null != (t = null == H ? true : H.sessionId) ? t : "";
     l.useEffect(() => {
-      (0, m.n)({
+      (0, C.n)({
         sessionId: D,
-        checkpoint: m.a.SHOP_MOUNTED,
+        checkpoint: C.a.SHOP_MOUNTED,
         tab: b,
         unpublishedCategoriesShown: B,
         cacheDisabled: I
@@ -89,7 +89,7 @@ let A = e => {
       fetchShopHomeError: F,
       shopBlocks: W,
       refreshShopHome: V
-    } = (0, C.E)(b, {
+    } = (0, h.E)(b, {
       noCache: I,
       includeUnpublished: B,
       includeBundles: true,
@@ -101,9 +101,9 @@ let A = e => {
       V()
     }, [V]);
     return (l.useEffect(() => {
-      null != F || M || 0 === W.length || (0, m.n)({
+      null != F || M || 0 === W.length || (0, C.n)({
         sessionId: D,
-        checkpoint: m.a.SHOP_RENDERED,
+        checkpoint: C.a.SHOP_RENDERED,
         tab: b,
         unpublishedCategoriesShown: B,
         cacheDisabled: I
@@ -164,8 +164,8 @@ let A = e => {
             break;
           case s.z.WIDE_BANNER:
             if (e.isDismissible) {
-              var h;
-              let t = null != (h = e.dismissibleContentVersion) ? h : 0,
+              var m;
+              let t = null != (m = e.dismissibleContentVersion) ? m : 0,
                 {
                   isDismissed: n
                 } = (0, d.H4)(o.z.COLLECTIBLES_SHOP_WIDE_BANNER, t);
@@ -226,20 +226,20 @@ let A = e => {
       transitionState: i
     } = e, a = l.useRef(null), {
       handleScroll: s
-    } = (0, u.z)(a, n), o = (0, b.R)(), d = (0, p.sp)(), [f, h] = l.useState(L.IV), [C, m] = l.useState(false);
+    } = (0, u.z)(a, n), o = (0, b.R)(), d = (0, p.sp)(), [f, m] = l.useState(L.IV), [h, C] = l.useState(false);
     return l.useEffect(() => {
       if (null != a.current) {
         let e = () => {
             if (null == a.current) return;
             let e = a.current.getDistanceFromBottom();
-            f >= 36 ? m(e < 20) : e <= 200 && h(e => e + L.IV)
+            f >= 36 ? C(e < 20) : e <= 200 && m(e => e + L.IV)
           },
           t = a.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [a, f, h, m]), (0, r.jsx)(c.Den, {
+    }, [a, f, m, C]), (0, r.jsx)(c.Den, {
       className: N.shopScroll,
       ref: a,
       onScroll: s,
@@ -275,13 +275,13 @@ let A = e => {
             })]
           })]
         }), (0, r.jsx)(I.Z, {
-          peaking: C,
+          peaking: h,
           transitioning: i === L.f7.OUT
         }), (0, r.jsx)(I.Z, {
           style: {
             left: 1850
           },
-          peaking: C,
+          peaking: h,
           transitioning: i === L.f7.OUT
         })]
       })

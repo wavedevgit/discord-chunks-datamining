@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk421200 = require("./421200.js");
+  Chunk180493 = require("./180493.js");
 
 function L(e) {
   let {
@@ -55,10 +55,10 @@ function B(e) {
     selected: n,
     displayText: i,
     handleTransition: s
-  } = e, [o, u] = l.useState(false), f = l.useRef(null), [h, C] = l.useState(0), m = l.useRef(false), _ = e => {
-    clearTimeout(h), C(setTimeout(() => {
+  } = e, [o, u] = l.useState(false), f = l.useRef(null), [m, h] = l.useState(0), C = l.useRef(false), _ = e => {
+    clearTimeout(m), h(setTimeout(() => {
       u(e)
-    }, 100)), e && (m.current = g.Z.keyboardModeEnabled)
+    }, 100)), e && (C.current = g.Z.keyboardModeEnabled)
   }, b = e => {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), _(true))
   };
@@ -74,7 +74,7 @@ function B(e) {
       onRequestOpen: () => _(true),
       onRequestClose: () => {
         var e;
-        m.current && !g.Z.keyboardModeEnabled && (0, d.Qj)(), _(false), null == (e = f.current) || e.focus()
+        C.current && !g.Z.keyboardModeEnabled && (0, d.Qj)(), _(false), null == (e = f.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -148,7 +148,7 @@ function P(e) {
     enabled: g
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
-  }), O = (0, h.Y)({
+  }), O = (0, m.Y)({
     location: "CollectiblesShopHeaderBar"
   }), P = [{
     tab: y.AW.HOME,
@@ -163,7 +163,7 @@ function P(e) {
   });
   let N = t === y.AW.ORBS ? j.ZY5.SHOP_ORBS_TAB : j.ZY5.COLLECTIBLES_SHOP,
     A = l.useCallback(() => {
-      (0, m.Y)({
+      (0, C.Y)({
         pageType: N,
         sectionType: j.jXE.ORBS_BALANCE_MENU,
         ctaObject: j.qAy.CTA_TO_QUEST_HOME
@@ -173,7 +173,7 @@ function P(e) {
     }, [N]),
     R = (0, E.eN)("collectibles_shop_header_bar"),
     Z = l.useCallback(() => {
-      (null == d ? true : d.id) != null && (0, C.openUserProfileModal)({
+      (null == d ? true : d.id) != null && (0, h.openUserProfileModal)({
         userId: d.id,
         section: k.oh.WISHLIST,
         showGuildProfile: false

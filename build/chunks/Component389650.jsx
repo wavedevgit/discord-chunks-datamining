@@ -36,9 +36,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk894462 = require("./894462.js"),
-  Chunk620842 = require("./620842.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk958047 = require("./958047.js"),
+  Chunk504401 = require("./504401.js"),
+  Chunk10198 = require("./10198.js");
 
 function U(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -104,7 +104,7 @@ class H extends Chunk473749.PureComponent {
       })
     }) : (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
-      className: Chunk894462.keybindMessage,
+      className: Chunk958047.keybindMessage,
       children: this.props.keybindDescriptions[module.action]
     })
   }
@@ -114,17 +114,17 @@ class H extends Chunk473749.PureComponent {
       enabled: t
     } = this.props.keybind;
     return (0, Chunk54381.jsxs)("div", {
-      className: o()(Chunk894462.keybindGroup, {
-        [Chunk620842.card]: !this.props.isUserSettingsRedesignEnabled
+      className: o()(Chunk958047.keybindGroup, {
+        [Chunk504401.card]: !this.props.isUserSettingsRedesignEnabled
       }),
       children: [!module && !this.props.isUserSettingsRedesignEnabled && (0, Chunk54381.jsx)(Chunk225433.Z, {
         "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmB),
-        className: Chunk894462.removeKeybindFloating,
+        className: Chunk958047.removeKeybindFloating,
         onClick: this.handleDeleteKeybind
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk894462.keybindGroupContent,
+        className: Chunk958047.keybindGroupContent,
         children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk894462.item,
+          className: Chunk958047.item,
           children: (0, Chunk54381.jsx)(Chunk481060.q4e, {
             label: Chunk388032.intl.string(Chunk388032.t.UUpAD6),
             value: this.props.keybind.action,
@@ -133,7 +133,7 @@ class H extends Chunk473749.PureComponent {
             isDisabled: module
           })
         }), (0, Chunk54381.jsx)("div", {
-          className: Chunk894462.item,
+          className: Chunk958047.item,
           children: (0, Chunk54381.jsx)(Chunk481060.gNt, {
             label: Chunk388032.intl.string(Chunk388032.t["1La4tC"]),
             children: (0, Chunk54381.jsx)(Chunk825209.Z, {
@@ -142,7 +142,7 @@ class H extends Chunk473749.PureComponent {
             })
           })
         }), !module && this.props.isUserSettingsRedesignEnabled && (0, Chunk54381.jsx)("div", {
-          className: Chunk894462.removeKeybind,
+          className: Chunk958047.removeKeybind,
           children: (0, Chunk54381.jsx)(Chunk481060.hU, {
             variant: "icon-only",
             onClick: this.handleDeleteKeybind,
@@ -150,7 +150,7 @@ class H extends Chunk473749.PureComponent {
             "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmB)
           })
         }), (0, Chunk54381.jsx)("div", {
-          className: Chunk894462.switch,
+          className: Chunk958047.switch,
           children: (0, Chunk54381.jsx)(Chunk481060.aML, {
             "data-migration-pending": true,
             text: Chunk388032.intl.string(Chunk388032.t.uCD7qK),
@@ -315,7 +315,7 @@ class Y extends Chunk473749.PureComponent {
   }
   renderKeybindWarning() {
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk894462.warning,
+      className: Chunk958047.warning,
       children: [(0, Chunk54381.jsx)(Chunk481060.d3s, {
         size: "xs",
         color: Chunk692547.Z.colors.ICON_SECONDARY
@@ -336,9 +336,9 @@ class Y extends Chunk473749.PureComponent {
         title: Chunk388032.intl.string(Chunk388032.t.T9DA2K),
         children: Chunk358085.isPlatformEmbedded ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
           children: [(0, Chunk54381.jsxs)("div", {
-            className: Chunk894462.ctaContainer,
+            className: Chunk958047.ctaContainer,
             children: [this.renderKeybindWarning(), (0, Chunk54381.jsx)("div", {
-              className: Chunk894462.addButton,
+              className: Chunk958047.addButton,
               children: (0, Chunk54381.jsx)(Chunk481060.Button, {
                 size: "md",
                 onClick: this.handleAddKeybind,
@@ -347,31 +347,31 @@ class Y extends Chunk473749.PureComponent {
               })
             })]
           }), (0, Chunk54381.jsx)(Chunk825655.Z, {
-            className: Chunk894462.systemServiceUpsell,
+            className: Chunk958047.systemServiceUpsell,
             sourcePage: "keybinds"
           }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), this.renderKeybinds(require), this.renderEmpty(require)]
         }) : (0, Chunk54381.jsx)(Chunk481060.Wn, {
           messageType: Chunk481060.QYI.INFO,
-          className: Chunk894462.browserNotice,
+          className: Chunk958047.browserNotice,
           children: Chunk388032.intl.format(Chunk388032.t.mPi3F3, {
             downloadLink: Chunk981631.EYA.DOWNLOAD
           })
         })
       }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-        className: Chunk197571.marginBottom60
+        className: Chunk10198.marginBottom60
       }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 48,
         children: [(0, Chunk54381.jsx)(Chunk481060.C3N, {
           label: Chunk388032.intl.string(Chunk388032.t.Lz5KHI),
           children: (0, Chunk54381.jsx)("div", {
-            className: Chunk894462.defaultKeybindGroup,
+            className: Chunk958047.defaultKeybindGroup,
             children: (0, Chunk54381.jsxs)("div", {
-              className: Chunk894462.defaultKeybind,
+              className: Chunk958047.defaultKeybind,
               children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
                 variant: "text-md/normal",
                 children: Chunk388032.intl.string(Chunk388032.t.sMWLBj)
               }), (0, Chunk54381.jsx)("div", {
-                className: Chunk894462.defaultKeybindShortcutGroup,
+                className: Chunk958047.defaultKeybindShortcutGroup,
                 children: (0, Chunk54381.jsx)(Chunk481060.M2$, {
                   shortcut: Chunk721383._.binds["0"]
                 })

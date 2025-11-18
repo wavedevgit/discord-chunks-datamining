@@ -1,13 +1,12 @@
-/** Chunk was on 27978 **/
+/** Chunk was on 32923 **/
 /** chunk id: 970648, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => a
 }), require("./415506.js");
 var Chunk772848 = require("./772848.js"),
   Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
-let l = {
+let a = {
   generateNonce: function() {
     return (0, Chunk772848.Z)()
   },
@@ -17,7 +16,7 @@ let l = {
         handoff_token: t
       }
     } = await i.tn.post({
-      url: s.ANM.HANDOFF,
+      url: l.ANM.HANDOFF,
       body: {
         key: e
       },

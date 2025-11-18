@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk743236 = require("./743236.js"),
   Chunk481060 = require("./481060.js"),
   Chunk939350 = require("./939350.js"),
-  Chunk334405 = require("./334405.js");
+  Chunk515527 = require("./515527.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,7 +76,7 @@ function m(e) {
   }, [g, b]);
   return (0, r.jsxs)("div", h(_({
     ref: y,
-    className: o()(d.item, d.switchItem, d.hideInteraction, u._[t], E, {
+    className: o()(d.item, d.switchItem, d.hideInteraction, u._e[t], E, {
       [d.disabled]: f
     }),
     "aria-checked": a,

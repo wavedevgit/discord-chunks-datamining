@@ -12,7 +12,7 @@ var Chunk907331 = require("./907331.js"),
   Chunk794324 = require("./794324.js"),
   Chunk859788 = require("./859788.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk449177 = require("./449177.js");
+  Chunk80931 = require("./80931.js");
 
 function d(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -41,9 +41,9 @@ let g = e => {
   }, .33, null != n), {
     bannerUrl: p,
     bannerAnimatedUrl: f
-  } = (0, s._M)(t), h = null != t.textColor ? {
+  } = (0, s._M)(t), m = null != t.textColor ? {
     color: t.textColor
-  } : true, C = null != t.body && "" !== t.body, m = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
+  } : true, h = null != t.body && "" !== t.body, C = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
   return (0, r.jsxs)("div", {
     ref: g,
     className: u.immersiveBannerBlock,
@@ -64,15 +64,15 @@ let g = e => {
           variant: "heading-xxl/bold",
           className: u.title,
           color: "header-primary",
-          style: d({}, h),
+          style: d({}, m),
           children: t.title
-        }), C || m ? (0, r.jsxs)(i.Text, {
+        }), h || C ? (0, r.jsxs)(i.Text, {
           variant: "text-md/medium",
-          style: d({}, h),
-          children: [C && t.body, C && m && " ", m && (0, r.jsx)(i.Anchor, {
+          style: d({}, m),
+          children: [h && t.body, h && C && " ", C && (0, r.jsx)(i.Anchor, {
             href: t.helpCenterUrl,
             className: u.learnMoreLink,
-            style: d({}, h),
+            style: d({}, m),
             children: c.intl.string(c.t.O7ADgv)
           })]
         }) : null]

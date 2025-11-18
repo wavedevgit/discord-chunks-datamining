@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk595373 = require("./595373.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk53179 = require("./53179.js");
+  Chunk420496 = require("./420496.js");
 
 function I() {
   let t = (0, Chunk442837.e7)([Chunk131951.Z], () => {
@@ -27,7 +27,7 @@ function I() {
     label: Chunk388032.intl.string(Chunk388032.t["o+BJQR"]),
     layout: "horizontal",
     children: (0, Chunk54381.jsx)("div", {
-      className: Chunk53179.keybindContainer,
+      className: Chunk420496.keybindContainer,
       children: (0, Chunk54381.jsx)(Chunk825209.Z, {
         defaultValue: module,
         onChange: t => r.Z.setMode(S.pM4.PUSH_TO_TALK, {

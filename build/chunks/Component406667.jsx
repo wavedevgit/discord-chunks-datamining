@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk786040 = require("./786040.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk963458 = require("./963458.js");
+  Chunk922948 = require("./922948.js");
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -77,11 +77,11 @@ let S = e => {
       onVariantEnter: c,
       onVariantExit: u,
       isCollapsed: d
-    } = e, g = (0, h.o)(i), f = null != (n = null == (t = i.variants) ? true : t.length) ? n : 0, C = l.useCallback((e, t) => {
-      e.stopPropagation(), (0, h.$)(i, t)
-    }, [i]), m = (0, p.Z)("shop-variants-group-".concat(i.storeListingId), o.hy.HORIZONTAL);
+    } = e, g = (0, m.o)(i), f = null != (n = null == (t = i.variants) ? true : t.length) ? n : 0, h = l.useCallback((e, t) => {
+      e.stopPropagation(), (0, m.$)(i, t)
+    }, [i]), C = (0, p.Z)("shop-variants-group-".concat(i.storeListingId), o.hy.HORIZONTAL);
     return 0 === f ? null : (0, r.jsx)(s.bG, {
-      navigator: m,
+      navigator: C,
       children: (0, r.jsx)(s.SJ, {
         children: e => {
           var t, {
@@ -101,7 +101,7 @@ let S = e => {
               onVariantEnter: () => c(t),
               onVariantExit: u,
               zIndex: f - Math.abs(g - t),
-              onClick: e => C(e, t)
+              onClick: e => h(e, t)
             }, e.variantValue))
           }))
         }
@@ -119,11 +119,11 @@ let S = e => {
     } = e, u = (0, s.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(t.variantLabel)), {
       onFocus: p
     } = u, f = O(u, ["onFocus"]), {
-      isPurchased: h
-    } = (0, C.L)(t);
+      isPurchased: m
+    } = (0, h.L)(t);
     return (0, r.jsx)(g.u, {
       text: b.intl.string(b.t["6cfuDj"]),
-      shouldShow: h,
+      shouldShow: m,
       children: (0, r.jsx)(d.P3F, E(x({
         "aria-label": t.variantLabel,
         onClick: e => {
@@ -141,7 +141,7 @@ let S = e => {
           zIndex: c
         }
       }, f), {
-        children: h && (0, r.jsx)(j, {
+        children: m && (0, r.jsx)(j, {
           variant: t
         })
       }))
@@ -167,7 +167,7 @@ let S = e => {
       onVariantEnter: i,
       onVariantExit: s,
       className: o
-    } = e, u = (0, m.LJ)(t), g = (0, h.o)(u);
+    } = e, u = (0, C.LJ)(t), g = (0, m.o)(u);
     return null == u || u.type !== c.Z.VARIANTS_GROUP || null == u.variants || 0 === u.variants.length ? null : (0, r.jsxs)("div", {
       className: a()(v.productVariantsOuterContainer, o),
       children: [(0, r.jsx)(S, {

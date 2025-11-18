@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 63962 **/
 /** chunk id: 335615, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eo
@@ -49,7 +49,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk559475 = require("./559475.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk32482 = require("./32482.js");
+  Chunk854641 = require("./854641.js");
 
 function Q(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -137,7 +137,7 @@ let ee = Chunk998502.ZP.getEnableHardwareAcceleration(),
       (0, f.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387)), t = H.Z.isInChannel(k.Z.getVoiceChannelId(), d.id);
+        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("19848")]).then(n.bind(n, 757387)), t = H.Z.isInChannel(k.Z.getVoiceChannelId(), d.id);
         return n => (0, r.jsx)(e, J(X({}, n), {
           user: d,
           guildId: O,

@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk954824 = require("./954824.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk827414 = require("./827414.js");
+  Chunk57986 = require("./57986.js");
 let h = [{
     id: "discord",
     getName: () => Chunk388032.intl.string(Chunk388032.t.uON9Ui),
@@ -41,19 +41,19 @@ class u extends Chunk473749.Component {
       url: o
     } = this.props.browser;
     return e = null != Chunk473749 ? (0, Chunk54381.jsx)(Chunk481060.Anchor, {
-      className: Chunk827414.btn,
+      className: Chunk57986.btn,
       href: Chunk473749,
       children: Chunk388032.intl.string(Chunk388032.t["1WjMbC"])
     }) : (0, Chunk54381.jsx)(Chunk319498.rU, {
-      className: Chunk827414.btn,
+      className: Chunk57986.btn,
       to: Chunk981631.Z5c.APPS,
       children: Chunk388032.intl.string(Chunk388032.t["1WjMbC"])
     }), (0, Chunk54381.jsxs)("li", {
-      className: Chunk827414.browserItem,
+      className: Chunk57986.browserItem,
       children: [(0, Chunk54381.jsx)("div", {
-        className: n()(Chunk827414.browserItemText, Chunk827414.browser, Chunk827414[_[exports]])
+        className: n()(Chunk57986.browserItemText, Chunk57986.browser, Chunk57986[_[exports]])
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk827414.browserItemText,
+        className: Chunk57986.browserItemText,
         children: require()
       }), module]
     })
@@ -70,17 +70,17 @@ class x extends Chunk473749.Component {
       browser: e
     }, e.id));
     return (0, Chunk54381.jsx)("div", {
-      className: Chunk827414.unsupportedBrowser,
+      className: Chunk57986.unsupportedBrowser,
       children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk827414.wrap,
+        className: Chunk57986.wrap,
         children: [(0, Chunk54381.jsx)(Chunk481060.H, {
-          className: Chunk827414.title,
+          className: Chunk57986.title,
           children: Chunk388032.intl.string(Chunk388032.t["3h+n+8"])
         }), (0, Chunk54381.jsx)("p", {
-          className: Chunk827414.message,
+          className: Chunk57986.message,
           children: Chunk388032.intl.string(Chunk388032.t.yNDLDL)
         }), (0, Chunk54381.jsx)("ul", {
-          className: Chunk827414.browserList,
+          className: Chunk57986.browserList,
           children: module
         })]
       })

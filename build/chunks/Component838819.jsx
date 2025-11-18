@@ -37,8 +37,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
-  Chunk887353 = require("./887353.js"),
-  Chunk219588 = require("./219588.js");
+  Chunk654664 = require("./654664.js"),
+  Chunk664603 = require("./664603.js");
 let H = e => {
     let {
       children: t,
@@ -57,10 +57,10 @@ let H = e => {
     let {
       tab: t = N.AW.HOME
     } = e;
-    (0, h.z)(f.f), (0, S.f)();
+    (0, m.z)(f.f), (0, S.f)();
     let n = (0, g.Z)((0, s.Z)()),
-      i = (0, o.e7)([m.default], () => m.default.getCurrentUser());
-    (0, C.p2)();
+      i = (0, o.e7)([C.default], () => C.default.getCurrentUser());
+    (0, h.p2)();
     let c = (0, P.B)("CollectiblesShop"),
       {
         onClose: R

@@ -1,7 +1,7 @@
 /** Chunk was on 96861 **/
 /** chunk id: 434717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,121 +16,120 @@ var Chunk54381 = require("./54381.js"),
   Chunk113434 = require("./113434.js"),
   Chunk497505 = require("./497505.js"),
   Chunk475595 = require("./475595.js"),
-  Chunk566078 = require("./566078.js"),
   Chunk477005 = require("./477005.jsx"),
   Chunk78826 = require("./78826.jsx"),
   Chunk667105 = require("./667105.jsx"),
   Chunk46140 = require("./46140.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk985952 = require("./985952.js");
+  Chunk834586 = require("./834586.js");
 
-function w(e) {
+function _(e) {
   let {
     quest: t,
     sourceQuestContent: n,
-    onLoadComplete: w
-  } = e, O = (0, l.ZP)(), N = (0, o.wjy)(O) ? v.BR.DARK : v.BR.LIGHT, P = (0, p.ly)(t), E = (0, u.aM)(), T = (0, m.vB)(t.config), A = a.useMemo(() => {
+    onLoadComplete: _
+  } = e, w = (0, l.ZP)(), O = (0, o.wjy)(w) ? g.BR.DARK : g.BR.LIGHT, N = (0, p.ly)(t), P = (0, d.aM)(), E = (0, m.vB)(t.config), T = a.useMemo(() => {
     var e;
     let n = null == (e = t.config.ctaConfig) ? true : e.subtitle;
     if (null != n) return n;
-    let r = h.r.build(t.config),
-      a = r.defaultWatchVideoTask,
+    let r = (0, m.BI)(t.config),
+      a = (0, m.z1)(t.config),
       o = null == a ? true : a.messages.videoEndCtaSubtitle;
-    return (0, c.Ew)(o) ? r.questType !== i.W.GAMEPLAY || t.config.features.includes(g.S7.NON_GAMING_PLAY_QUEST) || (0, m.Pb)(t) ? b.intl.string(b.t.y8Xf3k) : b.intl.string(b.t["wirwN+"]) : o
+    return (0, c.Ew)(o) ? r !== i.W.GAMEPLAY || t.config.features.includes(y.S7.NON_GAMING_PLAY_QUEST) || (0, m.Pb)(t) ? v.intl.string(v.t.y8Xf3k) : v.intl.string(v.t["wirwN+"]) : o
   }, [t]), {
-    isLoading: D
-  } = (0, x.d7)();
+    isLoading: A
+  } = (0, j.d7)();
   a.useEffect(() => {
-    D || w()
-  }, [D, w]);
-  let I = (0, y.yc)({
-    isShareable: T,
+    A || _()
+  }, [A, _]);
+  let I = (0, x.yc)({
+    isShareable: E,
     questId: t.id,
     trackingCtx: a.useMemo(() => ({
       content: C.jn.REWARD_MODAL,
-      ctaContent: d.jZ.REWARD_MODAL_COPY_LINK,
-      impressionId: E,
+      ctaContent: u.jZ.REWARD_MODAL_COPY_LINK,
+      impressionId: P,
       sourceQuestContent: n
-    }), [E, n])
+    }), [P, n])
   });
   return (0, r.jsxs)("div", {
-    className: _.container,
-    children: [(0, r.jsx)(x.Fl, {
+    className: b.container,
+    children: [(0, r.jsx)(j.Fl, {
       id: "hero-display",
-      children: e => (0, r.jsx)(j.Z, {
+      children: e => (0, r.jsx)(h.Z, {
         quest: t,
         imageSize: {
           width: 908,
           height: 380
         },
-        containerClassName: _.heroDisplayContainer,
+        containerClassName: b.heroDisplayContainer,
         isInteracting: true,
         assetRef: e
       })
     }), (0, r.jsx)("div", {
-      className: _.partnerLogotypeContainer,
-      children: (0, r.jsx)(x.Fl, {
+      className: b.partnerLogotypeContainer,
+      children: (0, r.jsx)(j.Fl, {
         id: "partner-logotype",
         children: e => (0, r.jsx)("img", {
           ref: e,
-          className: _.partnerLogotype,
-          alt: b.intl.formatToPlainString(b.t.rtm15P, {
+          className: b.partnerLogotype,
+          alt: v.intl.formatToPlainString(v.t.rtm15P, {
             name: t.config.messages.gameTitle
           }),
-          src: (0, f.fh)(t, f.eC.LOGO_TYPE, N).url
+          src: (0, f.fh)(t, f.eC.LOGO_TYPE, O).url
         })
       })
     }), (0, r.jsxs)("div", {
-      className: _.partnerContentContainer,
+      className: b.partnerContentContainer,
       children: [(0, r.jsxs)("div", {
-        className: _.partnerCopyContainer,
+        className: b.partnerCopyContainer,
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-md/semibold",
           color: "header-primary",
-          className: _.partnerTitle,
-          children: b.intl.format(b.t.EAYZAr, {
+          className: b.partnerTitle,
+          children: v.intl.format(v.t.EAYZAr, {
             questName: t.config.messages.questName
           })
         }), (0, r.jsx)(o.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: A
+          children: T
         })]
-      }), (0, r.jsx)(x.Fl, {
+      }), (0, r.jsx)(j.Fl, {
         id: "partner-game-tile",
         children: e => (0, r.jsx)("img", {
           ref: e,
-          className: _.partnerGameTile,
-          alt: b.intl.formatToPlainString(b.t.rtm15P, {
+          className: b.partnerGameTile,
+          alt: v.intl.formatToPlainString(v.t.rtm15P, {
             name: t.config.messages.gameTitle
           }),
-          src: (0, f.fh)(t, f.eC.GAME_TILE, N).url
+          src: (0, f.fh)(t, f.eC.GAME_TILE, O).url
         })
       })]
     }), (0, r.jsx)("div", {
-      className: _.bottomContainer,
+      className: b.bottomContainer,
       children: (0, r.jsxs)(o.hE2, {
         size: "sm",
         direction: "horizontal",
         fullWidth: true,
         fullWidthContainer: true,
-        children: [T && (0, r.jsx)(s.u, {
-          text: b.intl.string(b.t.WmfZHZ),
+        children: [E && (0, r.jsx)(s.u, {
+          text: v.intl.string(v.t.WmfZHZ),
           children: (0, r.jsx)(o.hU, {
             icon: o.xPt,
             onClick: I,
-            "aria-label": b.intl.string(b.t.WmfZHZ),
+            "aria-label": v.intl.string(v.t.WmfZHZ),
             variant: "secondary"
           })
         }), (0, r.jsx)(o.zxk, {
           variant: "primary",
-          text: P,
+          text: N,
           onClick: () => {
             (0, m.nc)(t, {
               content: C.jn.REWARD_MODAL,
-              ctaContent: d.jZ.OPEN_GAME_LINK,
-              impressionId: E,
+              ctaContent: u.jZ.OPEN_GAME_LINK,
+              impressionId: P,
               sourceQuestContent: n
             })
           },
@@ -143,16 +142,16 @@ function w(e) {
   })
 }
 
-function O(e) {
+function w(e) {
   let {
     quest: t,
     location: n
   } = e;
-  return (0, r.jsx)(x.p, {
+  return (0, r.jsx)(j.p, {
     source: n,
     questId: t.id,
     isPreview: t.preview,
-    children: (0, r.jsx)(w, function(e) {
+    children: (0, r.jsx)(_, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

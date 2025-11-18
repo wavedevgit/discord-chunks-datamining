@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk703656 = require("./703656.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk433155 = require("./433155.js"),
+  Chunk855445 = require("./855445.js"),
   Chunk322221 = require("./322221.js");
 
 function d() {
@@ -19,22 +19,22 @@ function d() {
     (0, Chunk703656.uL)(Chunk981631.Z5c.GUILD_DISCOVERY), Chunk37234.xf()
   };
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk433155.emptyState,
+    className: Chunk855445.emptyState,
     children: [(0, Chunk54381.jsx)("img", {
       src: Chunk322221,
       alt: "",
-      className: Chunk433155.image
+      className: Chunk855445.image
     }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
-      className: Chunk433155.topSpacing,
+      className: Chunk855445.topSpacing,
       variant: "heading-lg/extrabold",
       children: Chunk388032.intl.string(Chunk388032.t.Z1OZCV)
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk433155.topSpacing,
+      className: Chunk855445.topSpacing,
       variant: "text-md/normal",
       children: Chunk388032.intl.string(Chunk388032.t.ZSt4Tt)
     }), (0, Chunk54381.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: Chunk433155.topSpacing,
+      className: Chunk855445.topSpacing,
       children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.jQ3pqt),

@@ -9,7 +9,7 @@ var Chunk388905 = require("./388905.jsx"),
   Chunk837748 = require("./837748.js"),
   Chunk306453 = require("./306453.jsx"),
   Chunk260539 = require("./260539.js"),
-  Chunk947885 = require("./947885.js");
+  Chunk841475 = require("./841475.js");
 let d = {
   [Chunk260539.HQ.CLASSROOM]: require("./320440.js"),
   [Chunk260539.HQ.LOCAL_COMMUNITIES]: require("./526916.js"),

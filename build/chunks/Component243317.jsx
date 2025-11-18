@@ -9,13 +9,13 @@ require("./473749.js");
 var Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk136038 = require("./136038.js");
+  Chunk730550 = require("./730550.js");
 
 function l() {
   return (0, Chunk54381.jsx)(Chunk28664.u, {
     text: Chunk388032.intl.string(Chunk388032.t["RO/KYj"]),
     children: (0, Chunk54381.jsx)("div", {
-      className: Chunk136038.badge,
+      className: Chunk730550.badge,
       children: (0, Chunk54381.jsx)(Chunk481060.LQn, {
         color: "currentColor",
         size: "custom",

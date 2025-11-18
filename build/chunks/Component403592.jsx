@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk374450 = require("./374450.js");
+  Chunk854835 = require("./854835.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -115,8 +115,8 @@ class A extends Chunk473749.Component {
     return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk54381.jsx)(S, {
       file: this.props.upload.item.file
     }) : (0, Chunk54381.jsx)("div", {
-      className: o()(Chunk374450.fileIcon, {
-        [Chunk374450[null != (e = this.props.upload.classification) ? module : ""]]: true
+      className: o()(Chunk854835.fileIcon, {
+        [Chunk854835[null != (e = this.props.upload.classification) ? module : ""]]: true
       })
     })
   }

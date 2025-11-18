@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk618158 = require("./618158.jsx"),
   Chunk362267 = require("./362267.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk119421 = require("./119421.js");
+  Chunk842250 = require("./842250.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -175,28 +175,28 @@ function I(e) {
   })
 }
 let T = {
-    disconnect: Chunk119421.disconnect,
-    join: Chunk119421.join,
-    red: Chunk119421.red,
-    white: Chunk119421.white,
-    green: Chunk119421.green,
-    yellow: Chunk119421.yellow,
-    primaryDark: Chunk119421.primaryDark,
-    primaryLight: Chunk119421.primaryDark,
-    activeLight: Chunk119421.activeLight,
-    premiumGradient: Chunk119421.premiumGradient
+    disconnect: Chunk842250.disconnect,
+    join: Chunk842250.join,
+    red: Chunk842250.red,
+    white: Chunk842250.white,
+    green: Chunk842250.green,
+    yellow: Chunk842250.yellow,
+    primaryDark: Chunk842250.primaryDark,
+    primaryLight: Chunk842250.primaryDark,
+    activeLight: Chunk842250.activeLight,
+    premiumGradient: Chunk842250.premiumGradient
   },
   S = {
-    disconnect: Chunk119421.disconnect,
-    join: Chunk119421.join,
-    red: Chunk119421.redGlow,
-    white: Chunk119421.white,
-    green: Chunk119421.greenGlow,
-    yellow: Chunk119421.yellow,
-    primaryDark: Chunk119421.primaryDark,
-    primaryLight: Chunk119421.primaryDark,
-    activeLight: Chunk119421.activeLight,
-    premiumGradient: Chunk119421.premiumGradient
+    disconnect: Chunk842250.disconnect,
+    join: Chunk842250.join,
+    red: Chunk842250.redGlow,
+    white: Chunk842250.white,
+    green: Chunk842250.greenGlow,
+    yellow: Chunk842250.yellow,
+    primaryDark: Chunk842250.primaryDark,
+    primaryLight: Chunk842250.primaryDark,
+    activeLight: Chunk842250.activeLight,
+    premiumGradient: Chunk842250.premiumGradient
   };
 
 function A(e) {

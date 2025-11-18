@@ -1,4 +1,4 @@
-/** Chunk was on 65354 **/
+/** Chunk was on 10023 **/
 /** chunk id: 258871, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -82,7 +82,7 @@ let g = [{
     handler: (e, t) => (0, l.ZDy)(async () => {
       let {
         default: i
-      } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("28297")]).then(n.bind(n, 560114));
       return n => (0, r.jsx)(i, h(f({}, n), {
         guild: e,
         channel: t,

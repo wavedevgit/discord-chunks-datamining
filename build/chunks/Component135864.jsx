@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk933767 = require("./933767.js");
+  Chunk662401 = require("./662401.js");
 
 function S(e) {
   let {
@@ -105,15 +105,15 @@ function S(e) {
 }
 let T = function() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk933767.container,
+    className: Chunk662401.container,
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk933767.header,
+      className: Chunk662401.header,
       children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "text-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t["1KqYnl"])
       })
     }), (0, Chunk54381.jsx)("nav", {
-      className: Chunk933767.nav,
+      className: Chunk662401.nav,
       children: Chunk49898.GLOBAL_DISCOVERY_TABS.map(e => (0, r.jsx)(S, {
         tab: e
       }, e))

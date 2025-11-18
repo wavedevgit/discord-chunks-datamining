@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk950728 = require("./950728.js"),
+  Chunk607993 = require("./607993.js"),
   Chunk997892 = require("./997892.js"),
   Chunk288541 = require("./288541.js");
 let E = () => {
@@ -40,7 +40,7 @@ let E = () => {
     }
   };
   if (null === O || null === v) return (0, Chunk54381.jsx)("div", {
-    className: Chunk950728.spinnerContainer,
+    className: Chunk607993.spinnerContainer,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   });
   let R = require === Chunk474936.PremiumTypes.TIER_2,
@@ -70,13 +70,13 @@ let E = () => {
     actions: P,
     onClose: async () => exports(),
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk950728.offerDetailContainer,
+      className: Chunk607993.offerDetailContainer,
       children: (0, Chunk54381.jsx)(Chunk10508.o, {
         userDiscountOffer: O,
         offerState: Chunk10508.w.CONFIRMING
       })
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk950728.legalContainer,
+      className: Chunk607993.legalContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",

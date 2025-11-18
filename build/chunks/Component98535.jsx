@@ -30,8 +30,8 @@ function v(e) {
     transitionState: o,
     updateAnalyticsState: c,
     refreshCategories: u
-  } = e, h = x();
-  E(h);
+  } = e, m = x();
+  E(m);
   let v = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
     [O, S] = l.useState(true),
     [y, j] = l.useState(true),
@@ -52,11 +52,11 @@ function v(e) {
     {
       searchError: T
     } = (0, g.a)();
-  return I && null != T ? (0, r.jsx)(m.Z, {}) : null != h ? (0, r.jsx)(f.Z, {
+  return I && null != T ? (0, r.jsx)(C.Z, {}) : null != m ? (0, r.jsx)(f.Z, {
     onRetry: u,
-    errorMessage: h,
+    errorMessage: m,
     errorOrigin: f.i.SHOP_PAGE
-  }) : b.includes(t) ? (0, r.jsx)(C.Z, {
+  }) : b.includes(t) ? (0, r.jsx)(h.Z, {
     handleTransition: k,
     tab: t,
     transitionState: o
@@ -76,7 +76,7 @@ let x = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Ch
       {
         noCache: n,
         includeUnpublished: r
-      } = (0, h.Z)();
+      } = (0, m.Z)();
     l.useEffect(() => {
       var l, i;
       null != e && o.Z.captureMessage(e, {

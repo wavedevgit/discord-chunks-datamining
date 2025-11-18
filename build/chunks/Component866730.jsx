@@ -1,4 +1,4 @@
-/** Chunk was on 91394 **/
+/** Chunk was on 65347 **/
 /** chunk id: 866730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -12,7 +12,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk713284 = require("./713284.js"),
   Chunk211644 = require("./211644.js"),
   Chunk681619 = require("./681619.jsx"),
-  Chunk607669 = require("./607669.js");
+  Chunk860191 = require("./860191.js");
 let m = e => {
     switch (e) {
       case o.D.DC_DISMISSED:
@@ -67,17 +67,17 @@ function x() {
       dismissibleContent: e
     }));
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk607669.panelContainer,
+    className: Chunk860191.panelContainer,
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk607669.info,
+      className: Chunk860191.info,
       children: ["Last winner time: ", Chunk913527]
     }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsxs)("div", {
-      className: Chunk607669.info,
+      className: Chunk860191.info,
       children: ["Last winner: ", null != x ? Chunk704215.z[x] : "None"]
     }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)("div", {
-      className: Chunk607669.candidatesTableContainer,
+      className: Chunk860191.candidatesTableContainer,
       children: (0, Chunk54381.jsx)(Chunk681619.Z, {
-        className: Chunk607669.candidatesTable,
+        className: Chunk860191.candidatesTable,
         columns: h,
         data: f
       })

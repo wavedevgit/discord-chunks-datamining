@@ -6,7 +6,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk919686 = require("./919686.js");
+  Chunk117477 = require("./117477.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,9 +65,9 @@ function h(e, t) {
   return i
 }
 let m = {
-  SMALL: Chunk919686.sizeSmall,
-  MEDIUM: Chunk919686.sizeMedium,
-  LARGE: Chunk919686.sizeLarge
+  SMALL: Chunk117477.sizeSmall,
+  MEDIUM: Chunk117477.sizeMedium,
+  LARGE: Chunk117477.sizeLarge
 };
 class g extends(r = Chunk473749.PureComponent) {
   calculateScroll() {
@@ -110,8 +110,8 @@ class g extends(r = Chunk473749.PureComponent) {
       } = module,
       l = p(module, ["className", "children", "tag", "size", "fullscreenOnMobile"]);
     return (0, Chunk54381.jsx)(r, _(d({
-      className: s()(Chunk919686.modal, exports, Chunk473749, {
-        [Chunk919686.fullscreenOnMobile]: Chunk120356
+      className: s()(Chunk117477.modal, exports, Chunk473749, {
+        [Chunk117477.fullscreenOnMobile]: Chunk120356
       })
     }, Chunk481060), {
       children: this.renderChildren()

@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 71264 **/
 /** chunk id: 677601, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eW
@@ -93,7 +93,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk354459 = require("./354459.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk598411 = require("./598411.js");
+  Chunk563712 = require("./563712.js");
 
 function eB(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -130,13 +130,13 @@ function eV(e, t) {
   }), e
 }
 let eF = {
-    [Chunk981631.AEg.NORMAL]: Chunk598411.normal,
-    [Chunk981631.AEg.MINIMUM]: Chunk598411.minimum,
-    [Chunk981631.AEg.NO_CHAT]: Chunk598411.noChat,
-    [Chunk981631.AEg.FULL_SCREEN]: Chunk598411.fullScreen
+    [Chunk981631.AEg.NORMAL]: Chunk563712.normal,
+    [Chunk981631.AEg.MINIMUM]: Chunk563712.minimum,
+    [Chunk981631.AEg.NO_CHAT]: Chunk563712.noChat,
+    [Chunk981631.AEg.FULL_SCREEN]: Chunk563712.fullScreen
   },
   eG = {
-    [Chunk981631.IlC.POPOUT]: Chunk598411.popout,
+    [Chunk981631.IlC.POPOUT]: Chunk563712.popout,
     [Chunk981631.IlC.APP]: null,
     [Chunk981631.IlC.OVERLAY]: null,
     [Chunk981631.IlC.CALL_TILE_POPOUT]: null
@@ -303,10 +303,10 @@ class ez extends Chunk473749.PureComponent {
       resizedHeight: p
     } = this.state, f = Chunk473749 === Chunk981631.WtW.VIDEO, m = module !== Chunk981631.AEg.NO_CHAT && module !== Chunk981631.AEg.FULL_SCREEN && null != Chunk990547, g = Chunk981631.BRd.MIDNIGHT;
     return (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk598411.wrapper, eF[module], eG[Chunk512722], {
-        [Chunk598411.poppedOut]: this.popoutOpen && !this.inPopout && module !== Chunk981631.AEg.NO_CHAT && exports.isPrivate(),
-        [Chunk598411.video]: Chunk570140,
-        [Chunk598411.sidebarOpen]: Chunk120356 || Chunk704215
+      className: a()(Chunk563712.wrapper, eF[module], eG[Chunk512722], {
+        [Chunk563712.poppedOut]: this.popoutOpen && !this.inPopout && module !== Chunk981631.AEg.NO_CHAT && exports.isPrivate(),
+        [Chunk563712.video]: Chunk570140,
+        [Chunk563712.sidebarOpen]: Chunk120356 || Chunk704215
       }),
       ref: e => {
         this._wrapperRef.current = e, this.props.wrapperRef.current = e
@@ -335,7 +335,7 @@ class ez extends Chunk473749.PureComponent {
         onResize: this.handleCallResize,
         onResizeEnd: this.props.updateStoredCallHeaderHeight
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk598411.channelChatWrapper,
+        className: Chunk563712.channelChatWrapper,
         ref: e => {
           this._channelChatRef.current = e, this.props.channelChatRef.current = e
         },
@@ -438,7 +438,7 @@ class ez extends Chunk473749.PureComponent {
                 return (0, g.jW)(t, async () => {
                   let {
                     default: t
-                  } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("31589")]).then(n.bind(n, 131404));
+                  } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("10493")]).then(n.bind(n, 131404));
                   return n => (0, i.jsx)(t, eV(eH({}, n), {
                     showChannelCallItems: true,
                     showMediaItems: true,
@@ -452,7 +452,7 @@ class ez extends Chunk473749.PureComponent {
                 return (0, g.jW)(t, async () => {
                   let {
                     default: t
-                  } = await Promise.all([n.e("79695"), n.e("66165"), n.e("49062")]).then(n.bind(n, 354589));
+                  } = await Promise.all([n.e("79695"), n.e("66165"), n.e("92775")]).then(n.bind(n, 354589));
                   return n => (0, i.jsx)(t, eV(eH({}, n), {
                     showChannelCallItems: true,
                     showMediaItems: true,
@@ -470,7 +470,7 @@ class ez extends Chunk473749.PureComponent {
                 return s()(null != l, "GuildID null for guild voice channel"), (0, g.jW)(t, async () => {
                   let {
                     default: t
-                  } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("96306")]).then(n.bind(n, 757387));
+                  } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("87157")]).then(n.bind(n, 757387));
                   return n => (0, i.jsx)(t, eV(eH({}, n), {
                     showMediaItems: true,
                     showChannelCallItems: true,

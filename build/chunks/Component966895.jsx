@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk436912 = require("./436912.js");
+  Chunk776524 = require("./776524.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,7 +29,7 @@ class l extends Chunk473749.PureComponent {
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         color: "text-danger",
         variant: "text-md/normal",
-        className: Chunk436912.labelSpacing,
+        className: Chunk776524.labelSpacing,
         children: "Error rendering component. Check console for more information on the error."
       })
     }) : this.props.children

@@ -14,12 +14,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk800530 = require("./800530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk532223 = require("./532223.js");
+  Chunk468050 = require("./468050.js");
 
 function p() {
   return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.DANGER,
-    className: Chunk532223.nagbar,
+    className: Chunk468050.nagbar,
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       tag: "span",
       color: "always-white",
@@ -58,7 +58,7 @@ function E(e) {
 
 function x() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk532223.pageContainer,
+    className: Chunk468050.pageContainer,
     children: [(0, Chunk54381.jsx)(E, {}), (0, Chunk54381.jsx)(Chunk518560.Z, {})]
   })
 }
@@ -67,7 +67,7 @@ function _() {
   return null == (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getSuspendedUserToken()) && (0, Chunk703656.uL)(Chunk981631.Z5c.LOGIN, {
     source: "suspended_user_safety_hub_page"
   }), (0, Chunk54381.jsxs)("div", {
-    className: Chunk532223.container,
+    className: Chunk468050.container,
     children: [(0, Chunk54381.jsx)(p, {}), (0, Chunk54381.jsx)(x, {})]
   })
 }

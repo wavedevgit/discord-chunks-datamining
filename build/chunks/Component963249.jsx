@@ -114,7 +114,7 @@ function R(e) {
   return (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("84992"), n.e("16"), n.e("54400")]).then(n.bind(n, 7305));
+    } = await Promise.all([n.e("84992"), n.e("16"), n.e("4125")]).then(n.bind(n, 7305));
     return t => {
       var {
         onClose: n

@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk878342 = require("./878342.js"),
+  Chunk636606 = require("./636606.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk619915 = require("./619915.js"),
@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk613322 = require("./613322.js");
+  Chunk477863 = require("./477863.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -153,7 +153,7 @@ class M extends Chunk473749.PureComponent {
       }(require, ["onDragStart"]),
       {
         guild: l
-      } = Chunk878342,
+      } = Chunk636606,
       {
         controller: a,
         renderBanner: c,
@@ -167,8 +167,8 @@ class M extends Chunk473749.PureComponent {
         controller: Chunk619915,
         renderBanner: Chunk554747,
         bannerVisible: Chunk598056,
-        className: Chunk613322.guildHeader,
-        headerClassName: Chunk613322.guildHeaderInner,
+        className: Chunk477863.guildHeader,
+        headerClassName: Chunk477863.guildHeaderInner,
         onMouseDown: Chunk473749,
         disableBannerAnimation: false,
         communityInfoVisible: Chunk905423,
@@ -184,8 +184,8 @@ class M extends Chunk473749.PureComponent {
         })
       }) : null,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk613322.channelList,
-        children: null != Chunk442837 ? (0, Chunk54381.jsx)(Chunk680089, (e = L({}, Chunk878342), t = t = {
+        className: Chunk477863.channelList,
+        children: null != Chunk442837 ? (0, Chunk54381.jsx)(Chunk680089, (e = L({}, Chunk636606), t = t = {
           guild: Chunk442837,
           disableManageChannels: true,
           onScroll: null != Chunk442837 && null != Chunk442837.banner ? this.handleScroll : null
@@ -202,7 +202,7 @@ class M extends Chunk473749.PureComponent {
           withBannerPadding: false
         })
       }), null != Chunk442837 && (0, Chunk54381.jsx)("section", {
-        className: Chunk613322.panels,
+        className: Chunk477863.panels,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWK),
         children: (0, Chunk54381.jsx)(Chunk840780.Z, {
           guildId: Chunk442837.id

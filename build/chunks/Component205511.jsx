@@ -1,4 +1,4 @@
-/** Chunk was on 50433 **/
+/** Chunk was on 33311 **/
 /** chunk id: 205511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk585857 = require("./585857.jsx"),
   Chunk795057 = require("./795057.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk19672 = require("./19672.js");
+  Chunk936289 = require("./936289.js");
 
 function y(e) {
   return (0, r.jsx)(c.Text, {
@@ -70,7 +70,7 @@ function E(e) {
         children: E.map((e, n) => {
           if (e.type === i.K.EXPIRED_CREDENTIAL && o) {
             let s = u.Z.getAccount(e.connected_account_id, e.connected_account_type),
-              o = (0, f.C9)(e),
+              o = (0, f.Uy)(e),
               a = (0, f._j)(e);
             return (0, r.jsx)(y, {
               children: v.intl.format(o, {
@@ -137,7 +137,7 @@ let O = function(e) {
   let {
     quest: t,
     taskDetails: n
-  } = e, o = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), a = (0, h.z6)(), i = s.useMemo(() => (0, f.B3)(t).filter(e => a.xboxAndPlaystationAccounts.find(t => t.type === e)), [a.xboxAndPlaystationAccounts, t]), {
+  } = e, o = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), a = (0, h.z6)(), i = s.useMemo(() => (0, f._4)(t).filter(e => a.xboxAndPlaystationAccounts.find(t => t.type === e)), [a.xboxAndPlaystationAccounts, t]), {
     steps: c,
     hasConnectedAccounts: u,
     isProgressingQuestForLaunchedGame: p,

@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk267642 = require("./267642.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk569029 = require("./569029.js");
+  Chunk912689 = require("./912689.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -94,12 +94,12 @@ let b = function() {
     fractionalState: h
   });
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk569029.wrapper,
+    className: Chunk912689.wrapper,
     children: [(0, Chunk54381.jsx)(Chunk481060.Ucv, {
       color: Chunk481060.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-      className: Chunk569029.boostIcon
+      className: Chunk912689.boostIcon
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk569029.copy,
+      className: Chunk912689.copy,
       color: "header-secondary",
       variant: "text-sm/medium",
       children: Chunk388032.intl.format(Chunk388032.t.kqC5vq, {

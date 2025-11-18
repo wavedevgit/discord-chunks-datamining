@@ -37,7 +37,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk46140 = require("./46140.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk273339 = require("./273339.js");
+  Chunk290691 = require("./290691.js");
 
 function L(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -83,28 +83,28 @@ function F(e) {
   let {
     transitionState: l,
     onClose: a,
-    quest: b,
+    quest: h,
     autoplay: y,
     videoSessionId: I,
     impressionRef: F,
     parentModalOpenStartClockTime: B,
     sourceQuestContent: H
-  } = e, U = (0, g.il)(b), q = (0, O.tP)(b), Y = (0, E.aM)(), [G, Q] = o.useState(U.progressSeconds), [W, K] = o.useState(142), {
-    variant: z,
+  } = e, U = (0, g.il)(h), q = (0, O.tP)(h), Y = (0, E.aM)(), [G, Q] = o.useState(U.progressSeconds), [W, z] = o.useState(142), {
+    variant: K,
     enabled: X
   } = S.EO.useConfig({
     location: A.dr.VIDEO_MODAL
-  }), J = null == (n = b.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.X.WATCH_VIDEO];
+  }), J = null == (n = h.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.X.WATCH_VIDEO];
   s()(null != J, "VideoQuestModal: videoTask must not be null");
   let $ = (0, g.ZS)(J),
     ee = "portrait" === $,
     et = (0, p.Z)(e => {
-      K(e.target.offsetHeight)
+      z(e.target.offsetHeight)
     }),
     en = (0, m.y)(et),
-    er = z === S.m_.OVERLAY_SHARE_ON_VIDEO,
+    er = K === S.m_.OVERLAY_SHARE_ON_VIDEO,
     eo = (0, N.e)({
-      quest: b,
+      quest: h,
       onClose: a,
       sourceQuestContent: H,
       impressionId: Y
@@ -112,12 +112,12 @@ function F(e) {
     el = (0, u.e7)([f.Z], () => f.Z.getState().theme),
     ei = (0, d.wjy)(el) ? w.BR.DARK : w.BR.LIGHT,
     ea = o.useMemo(() => ({
-      quest: b,
+      quest: h,
       sourceQuestContent: H,
       videoSessionId: I,
       isPortrait: ee,
       onClose: a
-    }), [b, H, I, ee, a]);
+    }), [h, H, I, ee, a]);
   return (0, r.jsx)(Z.Provider, {
     value: ea,
     children: (0, r.jsxs)(d.Y0X, {
@@ -165,23 +165,23 @@ function F(e) {
               className: M.contentHeader,
               children: [(0, r.jsxs)(d.P3F, {
                 className: M.contentHeaderGameInfo,
-                onClick: () => eo(h.jn.VIDEO_MODAL, v.jZ.OPEN_GAME_LINK),
+                onClick: () => eo(b.jn.VIDEO_MODAL, v.jZ.OPEN_GAME_LINK),
                 children: [(0, r.jsx)("img", {
-                  alt: b.config.messages.gameTitle,
+                  alt: h.config.messages.gameTitle,
                   className: i()(M.contentHeaderLogotype, M.accentOnHover),
-                  src: (0, C.fh)(b, C.eC.LOGO_TYPE, ei).url
+                  src: (0, C.fh)(h, C.eC.LOGO_TYPE, ei).url
                 }), (0, r.jsx)(T.Z, {}), (0, r.jsxs)("div", {
                   className: M.questHeading,
                   children: [(0, r.jsx)(d.Heading, {
                     variant: "heading-md/semibold",
                     color: "header-primary",
                     children: k.intl.format(k.t.EQa7os, {
-                      questName: b.config.messages.questName
+                      questName: h.config.messages.questName
                     })
                   }), (0, r.jsx)(d.Text, {
                     variant: "text-sm/medium",
                     color: "header-secondary",
-                    children: b.config.messages.gameTitle
+                    children: h.config.messages.gameTitle
                   })]
                 })]
               }), !q && (0, r.jsx)(D.Z, {
@@ -266,11 +266,11 @@ function B(e) {
     }
     return o
   }(e, ["questId", "overrideQuest", "autoplay", "openStartClockTime"]);
-  let a = (0, u.e7)([b.Z], () => b.Z.getQuest(t)),
+  let a = (0, u.e7)([h.Z], () => h.Z.getQuest(t)),
     s = null != n ? n : a;
   return null != s ? (0, r.jsx)(y.A, {
     questOrQuests: s,
-    questContent: h.jn.VIDEO_MODAL,
+    questContent: b.jn.VIDEO_MODAL,
     minViewTimeSeconds: I.zw,
     trackGuildAndChannelMetadata: true,
     sourceQuestContent: i.sourceQuestContent,

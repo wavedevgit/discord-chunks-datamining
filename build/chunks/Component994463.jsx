@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk525654 = require("./525654.js"),
   s = require.n(Chunk525654),
   Chunk748780 = require("./748780.js"),
-  Chunk654339 = require("./654339.js");
+  Chunk601622 = require("./601622.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,11 +62,11 @@ class E extends Chunk473749.Component {
   }
   render() {
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk654339.searchIndexAnimation,
+      className: Chunk601622.searchIndexAnimation,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk654339.searchIndexBackground
+        className: Chunk601622.searchIndexBackground
       }), (0, Chunk54381.jsxs)("svg", {
-        className: Chunk654339.searchIndexForeground,
+        className: Chunk601622.searchIndexForeground,
         width: "320",
         height: "280",
         children: [(0, Chunk54381.jsx)("defs", {
@@ -86,7 +86,7 @@ class E extends Chunk473749.Component {
               fill: "#fff",
               children: (0, Chunk54381.jsx)(Chunk748780.Z.use, {
                 style: c(this.state),
-                className: Chunk654339.mask,
+                className: Chunk601622.mask,
                 xlinkHref: "#search-index-foreground-mask-a"
               })
             }), (0, Chunk54381.jsxs)("g", {
@@ -349,7 +349,7 @@ class E extends Chunk473749.Component {
               })]
             })]
           }), (0, Chunk54381.jsxs)(Chunk748780.Z.g, {
-            className: Chunk654339.magnifyingGlass,
+            className: Chunk601622.magnifyingGlass,
             style: c(this.state),
             children: [(0, Chunk54381.jsx)("path", {
               fill: "#C9D2F0",

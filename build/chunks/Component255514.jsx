@@ -48,8 +48,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk375790 = require("./375790.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk797013 = require("./797013.js"),
-  Chunk520310 = require("./520310.js");
+  Chunk826688 = require("./826688.js"),
+  Chunk880637 = require("./880637.js");
 
 function K(e) {
   for (var t = 1; t < arguments.length; t++) {

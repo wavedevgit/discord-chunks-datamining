@@ -45,7 +45,7 @@ function l(e, t) {
 }
 var Chunk329554 = require("./329554.js"),
   Chunk613990 = require("./613990.js"),
-  Chunk590297 = require("./590297.js"),
+  Chunk229450 = require("./229450.js"),
   Chunk410937 = require("./410937.js"),
   Chunk493807 = require("./493807.js"),
   Chunk529742 = require("./529742.js"),
@@ -69,7 +69,7 @@ var Chunk329554 = require("./329554.js"),
   w = !D,
   L = {
     edit: Chunk529742,
-    composite: Chunk590297,
+    composite: Chunk229450,
     drag: Chunk493807,
     cut: null,
     render: null

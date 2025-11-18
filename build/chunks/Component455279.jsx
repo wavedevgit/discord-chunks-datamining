@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk13140 = require("./13140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk151028 = require("./151028.js");
+  Chunk638675 = require("./638675.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,8 +31,8 @@ var g = function(e) {
   return e.DEFAULT = "DEFAULT", e.RECORDING = "RECORDING", e
 }({});
 let E = {
-  DEFAULT: Chunk151028.__invalid_default,
-  RECORDING: Chunk151028.recording
+  DEFAULT: Chunk638675.__invalid_default,
+  RECORDING: Chunk638675.recording
 };
 class b extends Chunk473749.PureComponent {
   componentWillUnmount() {
@@ -68,13 +68,13 @@ class b extends Chunk473749.PureComponent {
         onClick: this.handleClick,
         onMouseDown: this.handleMouseDown,
         ref: this._containerRef,
-        className: o()(Chunk151028.recorderContainer, E[exports], {
-          [Chunk151028.containerDisabled]: Chunk473749
+        className: o()(Chunk638675.recorderContainer, E[exports], {
+          [Chunk638675.containerDisabled]: Chunk473749
         }),
         children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
-          className: Chunk151028.recorderLayout,
+          className: Chunk638675.recorderLayout,
           children: [(0, Chunk54381.jsx)(Chunk600164.Z.Child, {
-            className: Chunk151028.keybindInput,
+            className: Chunk638675.keybindInput,
             children: (0, Chunk54381.jsx)("input", {
               id: this._inputId,
               placeholder: Chunk388032.intl.string(Chunk388032.t.nWRdnl),
@@ -85,7 +85,7 @@ class b extends Chunk473749.PureComponent {
               disabled: "RECORDING" !== this.props.mode || Chunk473749
             })
           }), (0, Chunk54381.jsx)("div", {
-            className: Chunk151028.buttonContainer,
+            className: Chunk638675.buttonContainer,
             children: (0, Chunk54381.jsx)(Chunk481060.Button, {
               size: "sm",
               variant: "RECORDING" === this.props.mode ? "critical-secondary" : "secondary",

@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk361110 = require("./361110.js"),
   Chunk29121 = require("./29121.js"),
   Chunk215023 = require("./215023.js"),
-  Chunk213301 = require("./213301.js");
+  Chunk374874 = require("./374874.js");
 let k = Chunk473749.memo(function(e) {
     let {
       product: t,
@@ -109,13 +109,13 @@ let k = Chunk473749.memo(function(e) {
                 className: j.footerInfoContainer,
                 children: [!(i && I) && (0, r.jsxs)("div", {
                   className: j.footerInfoLeft,
-                  children: [!i && (0, r.jsx)(h.Z, {
+                  children: [!i && (0, r.jsx)(m.Z, {
                     skuId: t.skuId,
                     className: a()(W, j.productName)
                   }), !I && (0, r.jsx)("div", {
                     className: j.footerInfoShrinkOnHover,
                     "aria-hidden": true,
-                    children: (0, r.jsx)(C.Z, {
+                    children: (0, r.jsx)(h.Z, {
                       skuId: t.skuId,
                       prioritizedCurrency: z
                     })
@@ -132,7 +132,7 @@ let k = Chunk473749.memo(function(e) {
                   wrap: false,
                   className: j.footerButtonGroup,
                   fullWidth: true,
-                  children: [!T && (0, r.jsx)(m.Z, {
+                  children: [!T && (0, r.jsx)(C.Z, {
                     skuId: t.skuId,
                     cardRef: et,
                     onClick: A,

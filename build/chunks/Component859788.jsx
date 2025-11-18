@@ -13,7 +13,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk607070 = require("./607070.js"),
   Chunk70097 = require("./70097.jsx"),
   Chunk451478 = require("./451478.js"),
-  Chunk410572 = require("./410572.js");
+  Chunk986783 = require("./986783.js");
 let g = e => {
   let {
     bannerStatic: t,
@@ -21,12 +21,12 @@ let g = e => {
     bannerRive: l,
     isResponsive: g = false,
     eventTargetRef: p
-  } = e, f = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), h = (0, a.e7)([u.Z], () => u.Z.isFocused()), C = null != n && !f && h;
+  } = e, f = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), m = (0, a.e7)([u.Z], () => u.Z.isFocused()), h = null != n && !f && m;
   return null != l ? (0, r.jsx)(s.B, {
     src: l,
     fit: "fit-width",
     eventTargetRef: p
-  }) : C ? (0, r.jsx)(c.Z, {
+  }) : h ? (0, r.jsx)(c.Z, {
     className: i()({
       [d.responsive]: g
     }, d.bannerAsset, d.bannerVideoBackground),

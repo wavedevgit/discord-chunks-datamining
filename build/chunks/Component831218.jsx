@@ -1,4 +1,4 @@
-/** Chunk was on 65354 **/
+/** Chunk was on 10023 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => V
@@ -36,7 +36,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk515753 = require("./515753.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk777126 = require("./777126.js");
+  Chunk704882 = require("./704882.js");
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,7 +77,7 @@ let B = Chunk473749.memo(function() {
     width: "184",
     height: "428",
     viewBox: "0 0 184 428",
-    className: Chunk777126.empty,
+    className: Chunk704882.empty,
     children: [(0, Chunk54381.jsx)("rect", {
       x: 40,
       y: 6,

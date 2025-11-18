@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk723851 = require("./723851.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk84637 = require("./84637.js");
+  Chunk647576 = require("./647576.js");
 let _ = {
   [Chunk981631.TaA.WINDOWS]: {
     icon: Chunk723851.Z,

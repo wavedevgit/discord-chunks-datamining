@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk622999 = require("./622999.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk848747 = require("./848747.js");
+  Chunk804136 = require("./804136.js");
 
 function g(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
@@ -55,11 +55,11 @@ class m extends Chunk473749.Component {
     } = this.state;
     switch (module) {
       case 0:
-        return Chunk848747.authenticationRequiredImage;
+        return Chunk804136.authenticationRequiredImage;
       case 2:
-        return Chunk848747.authenticationSuccessImage;
+        return Chunk804136.authenticationSuccessImage;
       default:
-        return Chunk848747.authenticationFailImage
+        return Chunk804136.authenticationFailImage
     }
   }
   getMessage() {

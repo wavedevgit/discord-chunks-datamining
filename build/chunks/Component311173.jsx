@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 32923 **/
 /** chunk id: 311173, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk273504 = require("./273504.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk140876 = require("./140876.js");
+  Chunk195072 = require("./195072.js");
 let f = Chunk63063.Z.getArticleURL(Chunk981631.BhN.GUILD_AUTOMOD_REGEX);
 
 function h(e) {

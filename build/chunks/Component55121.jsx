@@ -1,5 +1,5 @@
 /** Chunk was on 88742 **/
-/** chunk id: 55121, original params: t,n,i (module,exports,require) **/
+/** chunk id: 55121, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   M: () => _
 });
@@ -12,92 +12,92 @@ var Chunk120356 = require("./120356.js"),
   Chunk22928 = require("./22928.jsx"),
   Chunk438926 = require("./438926.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk475495 = require("./475495.js");
+  Chunk440995 = require("./440995.js");
 
 function _(t) {
   let {
-    sku: n,
-    application: i,
-    primaryCTAButtonProps: e,
+    sku: e,
+    application: n,
+    primaryCTAButtonProps: a,
     transitionState: s,
     onClose: l,
     hasAlreadyLinked: _,
-    canStartAuthorization: f,
+    canStartAuthorization: x,
     bodyText: m,
-    title: g
+    title: p
   } = t;
-  return (0, a.jsxs)(o.IX, {
+  return (0, i.jsxs)(o.IX, {
     transitionState: s,
     onClose: l,
-    children: [(0, a.jsx)(r.y, {
-      sku: n,
-      title: g
-    }), (0, a.jsxs)(o.fef, {
-      children: [(0, a.jsxs)("div", {
-        className: u.modalBody,
-        children: [(0, a.jsx)(c.Text, {
+    children: [(0, i.jsx)(r.y, {
+      sku: e,
+      title: p
+    }), (0, i.jsxs)(o.fef, {
+      children: [(0, i.jsxs)("div", {
+        className: d.modalBody,
+        children: [(0, i.jsx)(c.Text, {
           variant: "text-md/normal",
-          className: u.modalBodyText,
+          className: d.modalBodyText,
           children: m
-        }), (0, a.jsx)(x, {
+        }), (0, i.jsx)(f, {
           isConnected: _,
-          application: i
+          application: n
         })]
-      }), !f && !_ && (0, a.jsx)(c.Text, {
+      }), !x && !_ && (0, i.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: u.cannotLinkAccountWarning,
+        className: d.cannotLinkAccountWarning,
         color: "text-feedback-warning",
-        children: d.intl.string(d.t.GDL8wb)
-      }), !_ && (0, a.jsx)("div", {
-        className: u.expirationWarningContainer,
-        children: (0, a.jsx)(c.Text, {
+        children: u.intl.string(u.t.GDL8wb)
+      }), !_ && (0, i.jsx)("div", {
+        className: d.expirationWarningContainer,
+        children: (0, i.jsx)(c.Text, {
           variant: "text-xs/normal",
           color: "text-secondary",
-          children: d.intl.formatToPlainString(d.t.TTj7ME, {
+          children: u.intl.formatToPlainString(u.t.TTj7ME, {
             numDays: 14
           })
         })
       })]
-    }), (0, a.jsx)(o.Go$, {
-      actions: [e],
+    }), (0, i.jsx)(o.Go$, {
+      actions: [a],
       actionsFullWidth: true
     })]
   })
 }
 
-function x(t) {
+function f(t) {
   let {
-    isConnected: n,
-    application: i
+    isConnected: e,
+    application: n
   } = t;
-  return (0, a.jsx)("div", {
-    className: u.statusContainer,
-    children: (0, a.jsxs)("div", {
-      className: u.statusRow,
-      children: [(0, a.jsxs)("div", {
-        className: u.statusLeft,
-        children: [(0, a.jsx)("div", {
-          className: s()(u.statusIcon, {
-            [u.statusIconConnected]: n,
-            [u.statusIconDisconnected]: !n
+  return (0, i.jsx)("div", {
+    className: d.statusContainer,
+    children: (0, i.jsxs)("div", {
+      className: d.statusRow,
+      children: [(0, i.jsxs)("div", {
+        className: d.statusLeft,
+        children: [(0, i.jsx)("div", {
+          className: s()(d.statusIcon, {
+            [d.statusIconConnected]: e,
+            [d.statusIconDisconnected]: !e
           }),
-          children: n ? (0, a.jsx)(c.dz2, {
+          children: e ? (0, i.jsx)(c.dz2, {
             size: "sm",
             color: "currentColor"
-          }) : (0, a.jsx)(c.Dio, {
+          }) : (0, i.jsx)(c.Dio, {
             size: "sm",
             color: "currentColor"
           })
-        }), (0, a.jsx)(c.Text, {
+        }), (0, i.jsx)(c.Text, {
           variant: "text-md/normal",
-          className: u.statusText,
+          className: d.statusText,
           color: "text-secondary",
-          children: n ? d.intl.string(d.t["LV+CXH"]) : d.intl.string(d.t.Plv1Xk)
+          children: e ? u.intl.string(u.t["LV+CXH"]) : u.intl.string(u.t.Plv1Xk)
         })]
-      }), (0, a.jsx)("div", {
-        className: u.statusRight,
-        children: (0, a.jsx)(l.h, {
-          application: i,
+      }), (0, i.jsx)("div", {
+        className: d.statusRight,
+        children: (0, i.jsx)(l.h, {
+          application: n,
           iconSize: 20
         })
       })]

@@ -10,14 +10,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk645792 = require("./645792.js"),
   Chunk787642 = require("./787642.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk979493 = require("./979493.js");
+  Chunk905528 = require("./905528.js");
 
 function d() {
   return (0, Chunk54381.jsxs)("header", {
-    className: Chunk979493.header,
+    className: Chunk905528.header,
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
-      className: Chunk979493.title,
+      className: Chunk905528.title,
       children: Chunk388032.intl.string(Chunk388032.t.w5uwoI)
     }), (0, Chunk54381.jsx)(Chunk115849.Z, {})]
   })

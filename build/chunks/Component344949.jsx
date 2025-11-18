@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk313789 = require("./313789.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk431220 = require("./431220.js");
+  Chunk299242 = require("./299242.js");
 let _ = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_SCREENSHOT_KEYBIND, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["0U/hj7"]), Chunk388032.intl.string(Chunk388032.t["5zxkdo"])],
   usePredicate: Chunk924557.PP,
@@ -62,7 +62,7 @@ let _ = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_SCREENSHOT_KEYBIND, {
       description: Chunk388032.intl.string(Chunk388032.t["5zxkdo"]),
       layout: "horizontal",
       children: (0, Chunk54381.jsx)("div", {
-        className: Chunk431220.keyRecorder,
+        className: Chunk299242.keyRecorder,
         children: (0, Chunk54381.jsx)(Chunk825209.Z, {
           defaultValue: exports.shortcut,
           onChange: require

@@ -1,4 +1,4 @@
-/** Chunk was on 52708 **/
+/** Chunk was on 11080 **/
 /** chunk id: 264481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P9: () => P,
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk732380 = require("./732380.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk839468 = require("./839468.js");
+  Chunk835540 = require("./835540.js");
 let h = [() => Chunk388032.intl.string(Chunk388032.t.madJdE), () => Chunk388032.intl.string(Chunk388032.t.NYmfoP), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8h), () => Chunk388032.intl.string(Chunk388032.t.DnsJE8)],
   y = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeE), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYj"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1g), () => Chunk388032.intl.string(Chunk388032.t["jhBm0+"])],
   O = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXA), () => Chunk388032.intl.string(Chunk388032.t.aAFW7V), e => m.intl.formatToPlainString(m.t.h2g0cM, {
@@ -107,7 +107,7 @@ function P(e) {
 function I() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk839468.connectionPlatforms,
+    className: Chunk835540.connectionPlatforms,
     children: v.map((t, n) => {
       let i = s.Z.get(t);
       if (null == i) return null;

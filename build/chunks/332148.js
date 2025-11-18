@@ -1,4 +1,4 @@
-/** Chunk was on 79531 **/
+/** Chunk was on 97710 **/
 /** chunk id: 332148, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -14,20 +14,20 @@ let d = {
     async pinMessage(e, t) {
       let {
         id: n,
-        name: r
+        name: i
       } = e;
-      await l.Z.unarchiveThreadIfNecessary(e.id), i.tn.put({
-        url: o.ANM.PIN(n, t),
+      await a.Z.unarchiveThreadIfNecessary(e.id), r.tn.put({
+        url: s.ANM.PIN(n, t),
         oldFormErrors: true,
         rejectWithError: true
       }).catch(() => {
         let t;
         t = e.isPrivate() ? c.intl.formatToPlainString(c.t.Q89oQU, {
-          maxPins: o.tG9
+          maxPins: s.tG9
         }) : c.intl.formatToPlainString(c.t.NnO1S5, {
-          maxPins: o.tG9,
-          channelName: r
-        }), a.Z.show({
+          maxPins: s.tG9,
+          channelName: i
+        }), l.Z.show({
           title: c.intl.string(c.t.HI88Q3),
           body: t,
           confirmText: c.intl.string(c.t.BddRzS)
@@ -35,11 +35,11 @@ let d = {
       })
     },
     async unpinMessage(e, t) {
-      await l.Z.unarchiveThreadIfNecessary(e.id), i.tn.del({
-        url: o.ANM.PIN(e.id, t),
+      await a.Z.unarchiveThreadIfNecessary(e.id), r.tn.del({
+        url: s.ANM.PIN(e.id, t),
         oldFormErrors: true,
         rejectWithError: true
-      }).catch(() => a.Z.show({
+      }).catch(() => l.Z.show({
         title: c.intl.string(c.t.xFjByk),
         body: c.intl.string(c.t["0R/Toc"]),
         confirmText: c.intl.string(c.t["7NqTJn"]),
@@ -48,35 +48,35 @@ let d = {
       }))
     },
     ackPins(e) {
-      r.Z.dispatch({
+      i.Z.dispatch({
         type: "CHANNEL_PINS_ACK",
         channelId: e
       })
     },
     fetchPins(e, t) {
-      var n, l;
-      let a = null != (n = null == t ? true : t.reset) && n,
-        c = null != (l = null == t ? true : t.limit) ? l : 25,
+      var n, a;
+      let l = null != (n = null == t ? true : t.reset) && n,
+        c = null != (a = null == t ? true : t.limit) ? a : 25,
         d = null == t ? true : t.before;
-      (a || function(e, t) {
-        let n = s.Z.getPins(e);
+      (l || function(e, t) {
+        let n = o.Z.getPins(e);
         if (null == n) returntrue;
         switch (n.state) {
-          case s.M.FAILED:
+          case o.M.FAILED:
             returntrue;
-          case s.M.LOADING:
-          case s.M.LOADED_FINISHED:
+          case o.M.LOADING:
+          case o.M.LOADED_FINISHED:
             returnfalse;
-          case s.M.LOADED_HAS_MORE:
+          case o.M.LOADED_HAS_MORE:
             if (null == t) return 0 === n.items.length;
             return n.items.at(false).pinnedAt === t
         }
-      }(e, d)) && (r.Z.dispatch({
+      }(e, d)) && (i.Z.dispatch({
         type: "LOAD_PINNED_MESSAGES",
         channelId: e,
-        reset: a
-      }), i.tn.get({
-        url: o.ANM.PINS(e),
+        reset: l
+      }), r.tn.get({
+        url: s.ANM.PINS(e),
         query: {
           limit: c,
           before: null == d ? true : d.toISOString()
@@ -85,14 +85,14 @@ let d = {
         oldFormErrors: true,
         rejectWithError: true
       }).then(t => {
-        r.Z.dispatch({
+        i.Z.dispatch({
           type: "LOAD_PINNED_MESSAGES_SUCCESS",
           pins: t.body.items,
           channelId: e,
           hasMore: t.body.has_more
         })
       }, () => {
-        r.Z.dispatch({
+        i.Z.dispatch({
           type: "LOAD_PINNED_MESSAGES_FAILURE",
           channelId: e
         })

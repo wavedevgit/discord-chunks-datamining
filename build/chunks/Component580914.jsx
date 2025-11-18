@@ -41,7 +41,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk310582 = require("./310582.js");
+  Chunk687983 = require("./687983.js");
 let F = (0, Chunk884697.IC)(90),
   W = {
     rankedSkuIds: [],
@@ -65,7 +65,7 @@ let F = (0, Chunk884697.IC)(90),
       onVisibilityChange: G
     } = e, K = (0, s.O)(e => {
       null == G || G(e)
-    }, .1, null != G), Y = l.useRef(null), q = (0, R.B)("HeroBlock"), J = (0, u.e7)([C.default], () => C.default.getCurrentUser()), Q = (0, P.Z)(), X = (0, _.sp)(), $ = l.useMemo(() => {
+    }, .1, null != G), Y = l.useRef(null), q = (0, R.B)("HeroBlock"), J = (0, u.e7)([h.default], () => h.default.getCurrentUser()), Q = (0, P.Z)(), X = (0, _.sp)(), $ = l.useMemo(() => {
       var e, t;
       return null != U ? U : null == V ? W : {
         rankedSkuIds: null != (e = V.heroRanking) ? e : [],
@@ -97,7 +97,7 @@ let F = (0, Chunk884697.IC)(90),
       return (null == (t = b.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
     }), [n, $.rankedSkuIds, eu.length]), eg = z === w.AW.ORBS, ep = null != V && V.isOrbsExclusive, {
       cardContainerRef: ef,
-      totalCards: eh
+      totalCards: em
     } = (e => {
       let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, p.Z)(() => {
         (null == a ? true : a.current) != null && n(Math.max(1, Math.floor((a.current.offsetWidth + r) / (246 + r))))
@@ -112,10 +112,10 @@ let F = (0, Chunk884697.IC)(90),
         }, [i, a, e]),
         totalCards: e ? t : true
       }
-    })(z !== w.AW.ORBS), eC = (0, S.a)()(eu), em = (0, y.l)(eC).slice(0, eh), e_ = (0, N.St)(em), eb = eg ? D.intl.string(D.t["1CdL8d"]) : D.intl.string(D.t.xYKa1T), ev = (0, E.FF)("CollectiblesContent"), ex = x.Z.useConfig({
+    })(z !== w.AW.ORBS), eh = (0, S.a)()(eu), eC = (0, y.l)(eh).slice(0, em), e_ = (0, N.St)(eC), eb = eg ? D.intl.string(D.t["1CdL8d"]) : D.intl.string(D.t.xYKa1T), ev = (0, E.FF)("CollectiblesContent"), ex = x.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, eE = (0, O.Pc)("HeroBlock") && $.categorySkuId === w.Hi, eO = (0, O.IT)("HeroBlock"), eS = () => {
-      eg ? ((0, h.Y)({
+      eg ? ((0, m.Y)({
         pageType: H.ZY5.SHOP_ORBS_TAB,
         sectionType: H.jXE.ORBS_SHOP_HERO_BLOCK,
         ctaObject: H.qAy.CTA_TO_QUEST_HOME
@@ -126,7 +126,7 @@ let F = (0, Chunk884697.IC)(90),
         categorySkuId: !ev || ep ? $.categorySkuId : true,
         isInternalShopDeeplink: true,
         isOrbsExclusive: ep
-      }), m.default.track(H.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      }), C.default.track(H.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == X ? true : X.sessionId,
         sku_id: $.categorySkuId,
         page_type: z,
@@ -214,7 +214,7 @@ let F = (0, Chunk884697.IC)(90),
           }),
           ref: ef,
           children: n || ed ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(null != eh ? eh : 4)].map((e, t) => ex ? (0, r.jsx)(L.Z, {}, t) : (0, r.jsx)(j.K, {}, t))
+            children: [...Array(null != em ? em : 4)].map((e, t) => ex ? (0, r.jsx)(L.Z, {}, t) : (0, r.jsx)(j.K, {}, t))
           }) : (0, r.jsx)(T.zp.Provider, {
             value: {
               isRental: eE,

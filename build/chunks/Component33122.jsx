@@ -1,4 +1,4 @@
-/** Chunk was on 69844 **/
+/** Chunk was on 84283 **/
 /** chunk id: 33122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R,
@@ -21,7 +21,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk524444 = require("./524444.jsx"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk542736 = require("./542736.js");
+  Chunk654434 = require("./654434.js");
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -153,10 +153,10 @@ let S = {
     })
   },
   A = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk542736.paginationVideoOverlay,
+    className: Chunk654434.paginationVideoOverlay,
     children: (0, Chunk54381.jsx)(Chunk283756.Z, {
       inactive: true,
-      className: Chunk542736.paginationVideoPlayPill,
+      className: Chunk654434.paginationVideoPlayPill,
       renderLinkComponent: Chunk524444.iT
     })
   });
@@ -217,16 +217,16 @@ class L extends(r = Chunk473749.PureComponent) {
       edgeItems: 2
     });
     return module.length <= 1 ? Chunk120356 : (0, Chunk54381.jsxs)("div", {
-      className: Chunk542736.carouselButtonsContainer,
+      className: Chunk654434.carouselButtonsContainer,
       children: [Chunk120356, (0, Chunk54381.jsx)(Chunk44488.am, {
         onClick: this.manualPrevious,
-        className: s()(Chunk542736.arrow, {
-          [Chunk542736.arrowHovered]: r
+        className: s()(Chunk654434.arrow, {
+          [Chunk654434.arrowHovered]: r
         })
       }), (0, Chunk54381.jsx)(Chunk44488.Pz, {
         onClick: this.manualNext,
-        className: s()(Chunk542736.arrow, {
-          [Chunk542736.arrowHovered]: Chunk473749
+        className: s()(Chunk654434.arrow, {
+          [Chunk654434.arrowHovered]: Chunk473749
         })
       })]
     })
@@ -252,14 +252,14 @@ class L extends(r = Chunk473749.PureComponent) {
       className: exports,
       disable: Chunk120356 || s || r,
       children: [this.renderCarousel(), (0, Chunk54381.jsx)("div", {
-        className: Chunk542736.pagination,
+        className: Chunk654434.pagination,
         children: (0, Chunk54381.jsx)(Chunk44488.ZP, {
           renderItem: this.renderPaginationItem,
           scrollToPadding: 85,
           items: module,
           selectedIndex: Chunk473749,
           onSetItem: e => this.setItem(e, true),
-          paginationContainerClass: Chunk542736.scroller,
+          paginationContainerClass: Chunk654434.scroller,
           align: module.length < 6 ? Chunk44488.ZP.Align.LEFT : Chunk44488.ZP.Align.CENTER
         })
       })]

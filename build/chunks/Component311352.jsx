@@ -1,4 +1,4 @@
-/** Chunk was on 65354 **/
+/** Chunk was on 10023 **/
 /** chunk id: 311352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk39604 = require("./39604.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk611372 = require("./611372.js");
+  Chunk909631 = require("./909631.js");
 
 function j(e) {
   (0, s.jW)(e, async () => {
@@ -115,7 +115,7 @@ let x = e => {
     if (!Chunk704215 || null == Chunk765585 || require) return null;
     let v = Chunk13140.BB(Chunk765585.shortcut, true);
     return (0, Chunk54381.jsx)(x, {
-      keybindString: Chunk611372,
+      keybindString: Chunk909631,
       targetElementRef: module,
       children: (0, Chunk54381.jsx)(Chunk870569.Z, {
         ref: module,

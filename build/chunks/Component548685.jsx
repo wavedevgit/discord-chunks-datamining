@@ -33,8 +33,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk219588 = require("./219588.js"),
-  Chunk310582 = require("./310582.js");
+  Chunk664603 = require("./664603.js"),
+  Chunk687983 = require("./687983.js");
 let A = e => {
   var t;
   let {
@@ -46,7 +46,7 @@ let A = e => {
     tab: w,
     buttonContainerClassName: H,
     orbsSupportedOnly: D
-  } = e, M = (0, s.e7)([g.default], () => g.default.getCurrentUser()), F = C.ZP.canUseCollectibles(M), W = (0, I.B)("FeedBlock"), {
+  } = e, M = (0, s.e7)([g.default], () => g.default.getCurrentUser()), F = h.ZP.canUseCollectibles(M), W = (0, I.B)("FeedBlock"), {
     sortType: V,
     setSortType: U,
     sortedItems: z,
@@ -61,7 +61,7 @@ let A = e => {
   }), q = (0, k.St)(z), J = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, s.e7)([p.Z], () => p.Z.isFocused()), X = !J && Q, {
     animationPhase: $,
     startAnimation: ee
-  } = (0, y.y)(), et = (0, m.sp)(), en = null != (t = null == et ? true : et.sessionId) ? t : "", er = l.useRef(null), el = l.useCallback(e => {
+  } = (0, y.y)(), et = (0, C.sp)(), en = null != (t = null == et ? true : et.sessionId) ? t : "", er = l.useRef(null), el = l.useCallback(e => {
     ee({
       isShuffling: false,
       onOutroComplete: () => U(e)
@@ -86,7 +86,7 @@ let A = e => {
           position: "top",
           "aria-label": B.intl.string(B.t["3taPdj"]),
           children: (0, r.jsx)(c.P3F, {
-            onClick: () => (0, u.Z)(h.Z.getArticleURL(L.BhN.DATA_USED_FOR_RECOMMENDED)),
+            onClick: () => (0, u.Z)(m.Z.getArticleURL(L.BhN.DATA_USED_FOR_RECOMMENDED)),
             className: N.informationIcon,
             children: (0, r.jsx)(c.d3s, {
               size: "sm"
@@ -151,7 +151,7 @@ let A = e => {
             })
           }, "".concat(e.skuId, "-").concat(t));
           else $ === y.g.SORT_OUT ? n = N.sortChangedOutro : $ === y.g.SHUFFLE_IN ? n = N.shuffleIntro : $ === y.g.SORT_IN && (n = N.sortChangedIntro);
-        return (0, r.jsx)(m.k0, {
+        return (0, r.jsx)(C.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",

@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk452785 = require("./452785.js");
+  Chunk25616 = require("./25616.js");
 
 function y(e) {
   let {
@@ -39,12 +39,12 @@ function y(e) {
   let p = (0, d.FF)("CollectiblesBrowse"),
     f = l.useRef(null),
     {
-      handleScroll: C
+      handleScroll: h
     } = (0, o.z)(f, t),
     {
       setCategoryRef: _,
       handleScrollToCategory: b
-    } = (0, h.xV)(f.current),
+    } = (0, m.xV)(f.current),
     [v, x] = l.useState(p && c),
     [E, O] = l.useState(false);
   return l.useEffect(() => {
@@ -69,7 +69,7 @@ function y(e) {
       children: [(0, r.jsx)(s.yWw, {
         className: S.shopScroll,
         ref: f,
-        onScroll: C,
+        onScroll: h,
         children: (0, r.jsx)(j, {
           isSmallScreen: E,
           filterBarOpen: v,
@@ -83,7 +83,7 @@ function y(e) {
         className: S.divider
       }), v && !E && (0, r.jsx)(s.Ttm, {
         className: S.filterBar,
-        children: (0, r.jsx)(m.Z, {})
+        children: (0, r.jsx)(C.Z, {})
       })]
     })
   })
@@ -94,13 +94,13 @@ let j = e => {
     filterBarOpen: n,
     setFilterBarOpen: i,
     tab: o,
-    scrollerRef: h,
+    scrollerRef: m,
     sortedCategories: y,
     setCategoryRef: j
   } = e, k = (0, d.FF)("CollectiblesBrowse"), I = l.useRef(null), T = (0, g.S)(e => e.hasDefaultFilters()), L = (0, u.sp)(), {
     handlePageChange: B,
     currentPage: P
-  } = (0, _.h)(h), N = l.useCallback(e => {
+  } = (0, _.h)(m), N = l.useCallback(e => {
     c.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == L ? true : L.sessionId,
       page_section: null == L ? true : L.pageSection,
@@ -146,7 +146,7 @@ let j = e => {
             children: [(0, r.jsx)(s.Text, {
               variant: "text-md/semibold",
               children: O.intl.string(O.t.uaX705)
-            }), (0, r.jsx)(C.Z, {})]
+            }), (0, r.jsx)(h.Z, {})]
           }), (0, r.jsx)("div", {
             ref: A,
             children: (0, r.jsx)(s.Button, {
@@ -173,14 +173,14 @@ let j = e => {
           ref: I,
           children: (0, r.jsx)(s.Den, {
             className: S.filterOverlayContent,
-            children: (0, r.jsx)(m.Z, {})
+            children: (0, r.jsx)(C.Z, {})
           })
         })]
       }), k && !T ? (0, r.jsx)(b.Z, {
-        scrollerRef: h,
+        scrollerRef: m,
         tab: o
       }, o) : (0, x.RE)(o) ? (0, r.jsx)(v.Z, {
-        scrollerRef: h,
+        scrollerRef: m,
         tab: o
       }, o) : (0, r.jsx)(u.k0, {
         newValue: {

@@ -25,23 +25,23 @@ function E(e) {
     sourceQuestContent: E,
     isPortrait: g
   } = o.useContext(m.VideoQuestModalContext), O = (0, s.aM)(), {
-    enabled: b,
-    variant: h
+    enabled: h,
+    variant: b
   } = d.EO.useConfig({
     location: f.dr.VIDEO_MODAL
-  }), S = h === d.m_.OVERLAY_SHARE_ON_VIDEO, [C, y] = (0, p.G6)(v.intl.string(v.t.RDE0Sc), v.intl.string(v.t["+5kSoW"]), 1700), [_, x] = o.useState(false), j = o.useRef(null), D = (0, c.vB)(n.config), P = o.useCallback(() => {
+  }), S = b === d.m_.OVERLAY_SHARE_ON_VIDEO, [C, y] = (0, p.G6)(v.intl.string(v.t.RDE0Sc), v.intl.string(v.t["+5kSoW"]), 1700), [_, x] = o.useState(false), j = o.useRef(null), D = (0, c.vB)(n.config), P = o.useCallback(() => {
     D && ((0, c.f2)(n.id, {
       content: u.jn.VIDEO_MODAL,
       ctaContent: a.jZ.COPY_QUEST_URL,
       impressionId: O,
       sourceQuestContent: E
-    }), (b || g) && (0, i.showToast)((0, i.createToast)(v.intl.string(v.t["+5kSoW"]), i.ToastType.SUCCESS)), y(), x(true), null != j.current && clearTimeout(j.current), j.current = setTimeout(() => {
+    }), (h || g) && (0, i.showToast)((0, i.createToast)(v.intl.string(v.t["+5kSoW"]), i.ToastType.SUCCESS)), y(), x(true), null != j.current && clearTimeout(j.current), j.current = setTimeout(() => {
       x(false)
     }, 1700))
-  }, [O, D, n.id, E, y, b, g]);
+  }, [O, D, n.id, E, y, h, g]);
   return (o.useEffect(() => () => {
     null != j.current && clearTimeout(j.current)
-  }, []), D) ? b || g ? (0, r.jsx)("div", {
+  }, []), D) ? h || g ? (0, r.jsx)("div", {
     style: {
       marginLeft: t ? "auto" : true
     },
@@ -51,10 +51,10 @@ function E(e) {
       onClick: P,
       "aria-label": v.intl.string(v.t.RDE0Sc)
     }) : (0, r.jsx)(l.u, {
-      text: S || !b ? true : v.intl.string(v.t.WqhZss),
+      text: S || !h ? true : v.intl.string(v.t.WqhZss),
       children: (0, r.jsx)(i.hU, {
         variant: S ? "overlay-secondary" : "secondary",
-        icon: b ? i.aAc : i.TIy,
+        icon: h ? i.aAc : i.TIy,
         "aria-label": v.intl.string(v.t.RDE0Sc),
         onClick: P
       })

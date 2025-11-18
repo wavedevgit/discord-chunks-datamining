@@ -1,33 +1,32 @@
 /** Chunk was on 75909 **/
 /** chunk id: 684245, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  e: () => u
+  e: () => c
 });
 var Chunk473749 = require("./473749.js"),
   Chunk63063 = require("./63063.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk566078 = require("./566078.js"),
   Chunk939389 = require("./939389.js"),
   Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e) {
+function c(e) {
   let {
     quest: t,
     onClose: n,
-    sourceQuestContent: u,
-    impressionId: d
+    sourceQuestContent: c,
+    impressionId: u
   } = e;
   return r.useCallback(async (e, r) => {
-    if (t.id === s.V6) return void window.open(o.Z.getArticleURL(c.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
+    if (t.id === a.V6) return void window.open(o.Z.getArticleURL(s.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
     if (null != n) {
-      let e = i.r.build(t.config).ctaLink;
-      await (0, a.PW)(e) && n()
+      let e = (0, l.zo)(t.config);
+      await (0, i.PW)(e) && n()
     }(0, l.nc)(t, {
       content: e,
       ctaContent: r,
-      impressionId: d,
-      sourceQuestContent: u
+      impressionId: u,
+      sourceQuestContent: c
     })
-  }, [t, n, u, d])
+  }, [t, n, c, u])
 }

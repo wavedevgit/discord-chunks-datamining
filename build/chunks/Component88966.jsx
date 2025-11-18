@@ -1,7 +1,7 @@
-/** Chunk was on 70675 **/
-/** chunk id: 88966, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 97826 **/
+/** chunk id: 88966, original params: e,n,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,16 +14,16 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e, n, t) {
-  let g = (0, u.Aq)();
-  return (0, i.e7)([s.default], () => s.default.getId() === e) || n === d.IlC.POPOUT ? null : (0, l.jsx)(r.sNh, {
+function m(e, n, r) {
+  let m = (0, l.Aq)();
+  return (0, i.e7)([d.default], () => d.default.getId() === e) || n === c.IlC.POPOUT ? null : (0, t.jsx)(s.sNh, {
     id: "message-user",
-    label: c.intl.string(c.t.OAJQlP),
+    label: u.intl.string(u.t.OAJQlP),
     action: () => {
-      (0, o.i)(n, true), a.Z.openPrivateChannel({
+      (0, a.i)(n, true), o.Z.openPrivateChannel({
         recipientIds: e
-      }), g.dispatch(d.CkL.POPOUT_CLOSE), (0, r.pTH)()
+      }), m.dispatch(c.CkL.POPOUT_CLOSE), (0, s.pTH)()
     },
-    icon: t
+    icon: r
   })
 }

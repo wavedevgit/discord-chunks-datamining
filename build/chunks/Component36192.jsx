@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk844642 = require("./844642.js");
+  Chunk792058 = require("./792058.js");
 
 function N() {
   let e, {
@@ -55,12 +55,12 @@ function N() {
     },
     [O, I] = Chunk473749.useState(new Set);
   return Chunk120356 ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (e = null == exports && 0 === require.length ? Chunk100527 ? (0, Chunk54381.jsx)("div", {
-    className: Chunk844642.loading,
+    className: Chunk792058.loading,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   }) : null : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       gap: 24,
-      className: Chunk844642.sessions,
+      className: Chunk792058.sessions,
       children: [(0, Chunk54381.jsx)(Chunk481060.C3N, {
         label: Chunk388032.intl.string(Chunk388032.t.LLS19o),
         children: null != exports ? (0, Chunk54381.jsx)(R, {
@@ -84,7 +84,7 @@ function N() {
       description: Chunk388032.intl.string(Chunk388032.t.OTXyaf),
       children: (0, Chunk54381.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: Chunk844642.logOutAllButton,
+        className: Chunk792058.logOutAllButton,
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "critical-secondary",
           size: "sm",
@@ -101,16 +101,16 @@ function N() {
     header: Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      className: Chunk844642.description,
+      className: Chunk792058.description,
       children: Chunk388032.intl.string(Chunk388032.t.zZp618)
     }), (null == o ? true : o.isStaff()) ? (0, Chunk54381.jsxs)("div", {
-      className: Chunk844642.tools,
+      className: Chunk792058.tools,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk844642.toolsTitle,
+        className: Chunk792058.toolsTitle,
         variant: "text-md/bold",
         children: "DEV TOOLS"
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk844642.toolsTitle,
+        className: Chunk792058.toolsTitle,
         variant: "text-sm/normal",
         color: "text-danger",
         children: "These tools are only shown to staff users."
@@ -198,25 +198,25 @@ function R(e) {
 
 function P() {
   return (0, Chunk54381.jsxs)("div", {
-    className: o()(Chunk844642.session, Chunk844642.legacySession),
+    className: o()(Chunk792058.session, Chunk792058.legacySession),
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk844642.sessionIcon,
+      className: Chunk792058.sessionIcon,
       children: (0, Chunk54381.jsx)(Chunk460562.Z, {
         width: "32",
         height: "32"
       })
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk844642.sessionInfo,
+      className: Chunk792058.sessionInfo,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
-        className: Chunk844642.sessionInfoRow,
+        className: Chunk792058.sessionInfoRow,
         color: "text-muted",
         children: (0, Chunk54381.jsx)("span", {
           children: Chunk388032.intl.string(Chunk388032.t.iUa0sn)
         })
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
-        className: Chunk844642.sessionInfoRow,
+        className: Chunk792058.sessionInfoRow,
         color: "text-muted",
         children: (0, Chunk54381.jsx)("span", {
           children: Chunk388032.intl.format(Chunk388032.t["044+8i"], {

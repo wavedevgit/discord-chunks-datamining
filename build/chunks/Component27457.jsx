@@ -58,7 +58,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk524484 = require("./524484.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk7504 = require("./7504.js");
+  Chunk400872 = require("./400872.js");
 let ei = [Chunk354459.fO.ACTIVITY],
   es = Chunk473749.memo(e => {
     var t, l, s, o, c, h, v;
@@ -225,7 +225,7 @@ let ei = [Chunk354459.fO.ACTIVITY],
         })
     }
     let e4 = i.useRef(null),
-      e5 = y.type === $.fO.STREAM ? u.pzj : u.Odl;
+      e9 = y.type === $.fO.STREAM ? u.pzj : u.Odl;
     return (0, n.jsx)(p.Z, {
       section: q.jXE.VOICE_CHANNEL_TILE,
       children: (0, n.jsx)("div", {
@@ -284,7 +284,7 @@ let ei = [Chunk354459.fO.ACTIVITY],
                 children: e7
               }), eu ? (0, n.jsx)("div", {
                 className: en.selectedScreen,
-                children: (0, n.jsx)(e5, {
+                children: (0, n.jsx)(e9, {
                   size: "md",
                   color: "currentColor",
                   className: en.selectedIcon

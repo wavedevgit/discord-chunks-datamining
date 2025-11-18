@@ -1,4 +1,4 @@
-/** Chunk was on 69844 **/
+/** Chunk was on 84283 **/
 /** chunk id: 453499, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -16,7 +16,7 @@ var r, a, Chunk54381 = require("./54381.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk633448 = require("./633448.js");
+  Chunk72291 = require("./72291.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -42,11 +42,11 @@ class v extends(r = Chunk473749.PureComponent) {
       paginationDotClassName: a,
       paginationDotSelectedClassName: l,
       paginationArrowIconType: s = "arrow"
-    } = this.props, c = o()(Chunk633448.arrowHitbox, {
-      [Chunk633448.arrowHitboxPadding]: require
+    } = this.props, c = o()(Chunk72291.arrowHitbox, {
+      [Chunk72291.arrowHitboxPadding]: require
     }, r);
     return (0, Chunk54381.jsxs)("div", {
-      className: o()(Chunk633448.controls, this.props.className),
+      className: o()(Chunk72291.controls, this.props.className),
       children: [(0, Chunk54381.jsx)("div", {
         className: Chunk392711,
         children: (0, Chunk54381.jsx)(Chunk481060.hU, {
@@ -56,7 +56,7 @@ class v extends(r = Chunk473749.PureComponent) {
           onClick: this.handlePrevious
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk633448.dots,
+        className: Chunk72291.dots,
         children: d().times(exports, t => (0, i.jsx)(p.P3F, {
           onClick: () => this.handleDotClick(t),
           className: t === e ? o()(b.dotSelected, l) : o()(b.dotNormal, a),
@@ -163,9 +163,9 @@ class C extends(a = Chunk473749.PureComponent) {
       visibleIndex: C
     } = this.state;
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk633448.root,
+      className: Chunk72291.root,
       children: [(0, Chunk54381.jsxs)("div", {
-        className: o()(Chunk633448.carouselContainer, require),
+        className: o()(Chunk72291.carouselContainer, require),
         style: Chunk981631,
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handleMouseLeave,
@@ -174,7 +174,7 @@ class C extends(a = Chunk473749.PureComponent) {
             aspectRatio: Chunk388032
           },
           children: (0, Chunk54381.jsx)(Chunk578361.Z, {
-            className: o()(Chunk633448.carousel, r),
+            className: o()(Chunk72291.carousel, r),
             step: C,
             direction: this.getCurrentDirection(),
             springSettings: a,
@@ -182,7 +182,7 @@ class C extends(a = Chunk473749.PureComponent) {
             children: exports(module[C], C)
           })
         }), module.length > 1 && (0, Chunk54381.jsx)(v, {
-          className: o()(Chunk120356, Chunk570140 ? Chunk633448.themedPagination : Chunk633448.pagination),
+          className: o()(Chunk120356, Chunk570140 ? Chunk72291.themedPagination : Chunk72291.pagination),
           arrowClassName: Chunk392711,
           includeHitboxPadding: Chunk585483,
           current: C,

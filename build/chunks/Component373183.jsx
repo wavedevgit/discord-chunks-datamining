@@ -20,8 +20,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk832149 = require("./832149.jsx"),
   Chunk911390 = require("./911390.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk213301 = require("./213301.js"),
-  Chunk290181 = require("./290181.js"),
+  Chunk374874 = require("./374874.js"),
+  Chunk812388 = require("./812388.js"),
   Chunk250967 = require("./250967.js"),
   Chunk182975 = require("./182975.js"),
   Chunk655603 = require("./655603.js");
@@ -35,7 +35,7 @@ let S = Chunk473749.memo(function(e) {
     readyToClaim: y,
     collectibleProductSkuIds: j,
     collectedSkuIds: k
-  } = (0, m.q)(t, n), I = (0, o.e7)([h.Z], () => h.Z.isClaiming === n);
+  } = (0, C.q)(t, n), I = (0, o.e7)([m.Z], () => m.Z.isClaiming === n);
   return (0, r.jsx)("div", {
     ref: i,
     className: a()(b.productCardContainer, v.defaultCursor, {
@@ -122,7 +122,7 @@ let S = Chunk473749.memo(function(e) {
               onClick: e => {
                 e.stopPropagation(), y && (0, p.wW)(t.skuId, n).then(() => {
                   let e = f.Z.getProduct(n);
-                  null != e && (0, C.Z)({
+                  null != e && (0, h.Z)({
                     product: e,
                     analyticsLocations: [],
                     overrideGraphic: {

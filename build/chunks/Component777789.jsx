@@ -17,20 +17,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk713081 = require("./713081.js"),
   Chunk905128 = require("./905128.js"),
   Chunk151494 = require("./151494.js"),
-  Chunk234865 = require("./234865.js");
+  Chunk377017 = require("./377017.js");
 class g extends Chunk473749.PureComponent {
   render() {
     let {
       tier: e
     } = this.props;
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk234865.tierPill,
+      className: Chunk377017.tierPill,
       children: [(0, Chunk54381.jsx)(Chunk297700.Z, {
-        className: Chunk234865.tierPillStar,
+        className: Chunk377017.tierPillStar,
         children: (0, Chunk54381.jsx)(Chunk471885.Z, {
           tier: module,
           color: "currentColor",
-          className: Chunk234865.tierPillGem
+          className: Chunk377017.tierPillGem
         })
       }), (0, Chunk267642.nW)(module)]
     })

@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk81136 = require("./81136.js"),
   Chunk440617 = require("./440617.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk891131 = require("./891131.js");
+  Chunk843084 = require("./843084.js");
 let k = {
   flattenProductVariants: true
 };
@@ -46,7 +46,7 @@ function I(e) {
     currentPage: R,
     totalCount: Z,
     isFetchingResults: w
-  } = (0, C.a)(), H = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(A)), D = l.useCallback(() => {
+  } = (0, h.a)(), H = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(A)), D = l.useCallback(() => {
     var e;
     null == i || null == (e = i.current) || e.scrollToTop({
       animate: true
@@ -58,9 +58,9 @@ function I(e) {
   let F = (0, f.a)(),
     W = l.useMemo(() => F(H), [F, H]);
   l.useEffect(() => {
-    n || (0, m.n)({
+    n || (0, C.n)({
       sessionId: L,
-      checkpoint: m.a.SHOP_RENDERED,
+      checkpoint: C.a.SHOP_RENDERED,
       tab: I,
       unpublishedCategoriesShown: P,
       cacheDisabled: B
@@ -71,7 +71,7 @@ function I(e) {
       setQueryPageSize: U,
       setQueryPageOffset: z,
       queryPageSize: G
-    } = (0, h.S)(),
+    } = (0, m.S)(),
     [K, Y] = l.useState(false),
     q = n || w || null == N;
   l.useEffect(() => {

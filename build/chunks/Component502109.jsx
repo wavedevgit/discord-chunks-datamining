@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk51144 = require("./51144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk360751 = require("./360751.js");
+  Chunk975963 = require("./975963.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -154,10 +154,10 @@ class S extends Chunk473749.Component {
       children: [(0, Chunk54381.jsx)(Chunk219929.ZP, {
         type: Chunk219929.ZP.Types.PAYMENT_REQUEST,
         size: Chunk219929.Uy.MEDIUM,
-        className: Chunk360751.paymentRequestIcon
+        className: Chunk975963.paymentRequestIcon
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        className: Chunk360751.connectionInstructions,
+        className: Chunk975963.connectionInstructions,
         children: Chunk388032.intl.string(Chunk388032.t.f19PPV)
       })]
     })
@@ -266,10 +266,10 @@ class A extends S {
       children: [(0, Chunk54381.jsx)(Chunk219929.ZP, {
         type: Chunk219929.ZP.Types.G_PAY,
         size: Chunk219929.Uy.MEDIUM,
-        className: Chunk360751.paymentRequestIcon
+        className: Chunk975963.paymentRequestIcon
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        className: Chunk360751.connectionInstructions,
+        className: Chunk975963.connectionInstructions,
         children: Chunk388032.intl.string(Chunk388032.t.ueoGef)
       })]
     })
@@ -316,10 +316,10 @@ class C extends S {
       children: [(0, Chunk54381.jsx)(Chunk219929.ZP, {
         type: Chunk219929.ZP.Types.APPLE,
         size: Chunk219929.Uy.MEDIUM,
-        className: o()(Chunk360751.paymentRequestIcon, Chunk360751.appleConnectorIcon)
+        className: o()(Chunk975963.paymentRequestIcon, Chunk975963.appleConnectorIcon)
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        className: Chunk360751.connectionInstructions,
+        className: Chunk975963.connectionInstructions,
         children: Chunk388032.intl.string(Chunk388032.t.iv8pQV)
       })]
     })

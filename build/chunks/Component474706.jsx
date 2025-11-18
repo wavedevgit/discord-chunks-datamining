@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk347896 = require("./347896.js"),
   Chunk717401 = require("./717401.js"),
   Chunk897942 = require("./897942.jsx"),
-  Chunk487276 = require("./487276.js");
+  Chunk49271 = require("./49271.js");
 
 function f() {
   var e;
@@ -27,15 +27,15 @@ function f() {
     }),
     h = null == _ || null == (e = _.getBannerImageUrl) ? true : module.call(_);
   return null == _ || null == require || 0 === require.length ? null : (0, Chunk54381.jsxs)("div", {
-    className: Chunk487276.container,
+    className: Chunk49271.container,
     style: p,
     children: [null != h && (0, Chunk54381.jsx)("div", {
-      className: Chunk487276.bannerImage,
+      className: Chunk49271.bannerImage,
       style: {
         backgroundImage: "url(".concat(h, ")")
       }
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk487276.textSection,
+      className: Chunk49271.textSection,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/bold",
         color: "always-white",
@@ -46,7 +46,7 @@ function f() {
         children: _.subheading(require.length)
       })]
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk487276.avatar,
+      className: Chunk49271.avatar,
       children: (0, Chunk54381.jsx)(Chunk897942.Z, {
         maxRewardImageSrc: _.getImageUrl(true, exports),
         claimableRewards: require,

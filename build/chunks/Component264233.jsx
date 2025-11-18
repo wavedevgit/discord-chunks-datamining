@@ -1,4 +1,4 @@
-/** Chunk was on 65354 **/
+/** Chunk was on 10023 **/
 /** chunk id: 264233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => _,
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk240126 = require("./240126.jsx"),
   Chunk326838 = require("./326838.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk201848 = require("./201848.js");
+  Chunk767117 = require("./767117.js");
 
 function g() {
   let e = (0, Chunk442837.Wu)([Chunk317632.Z], () => Chunk317632.Z.getInvites()),
@@ -27,7 +27,7 @@ function g() {
   return (Chunk473749.useEffect(() => {
     (0, Chunk174767.sJ)()
   }), 0 === module.length) ? (0, Chunk54381.jsx)("div", {
-    className: Chunk201848.__invalid_emptyStateContainer,
+    className: Chunk767117.__invalid_emptyStateContainer,
     children: (0, Chunk54381.jsx)(Chunk240126.Z, {
       Icon: Chunk481060.iWm,
       header: Chunk388032.intl.string(Chunk388032.t.PbSPWc),
@@ -35,7 +35,7 @@ function g() {
     })
   }) : (0, Chunk54381.jsx)(Chunk481060.h21, {
     children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk201848.invitesContainer,
+      className: Chunk767117.invitesContainer,
       children: [require.length > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(m, {
           title: Chunk388032.intl.string(Chunk388032.t.yflAJV)

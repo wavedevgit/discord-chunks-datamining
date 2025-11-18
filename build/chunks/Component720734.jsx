@@ -1,4 +1,4 @@
-/** Chunk was on 91394 **/
+/** Chunk was on 65347 **/
 /** chunk id: 720734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tf,
@@ -124,7 +124,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk46140 = require("./46140.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk25874 = require("./25874.js");
+  Chunk490579 = require("./490579.js");
 
 function ti(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -342,7 +342,7 @@ class th extends Chunk473749.PureComponent {
         activities: exports,
         applicationStream: require,
         voiceChannel: Chunk392711 ? o : true,
-        textClassName: Chunk25874.activityStatusText,
+        textClassName: Chunk490579.activityStatusText,
         hideTooltip: true
       })
     });
@@ -357,8 +357,8 @@ class th extends Chunk473749.PureComponent {
       forceHover: module,
       children: (0, Chunk54381.jsx)(Chunk427217.Z, {
         activity: Chunk374470,
-        emojiClassName: Chunk25874.emoji,
-        className: Chunk25874.customStatus
+        emojiClassName: Chunk490579.emoji,
+        className: Chunk490579.customStatus
       })
     }) : null != Chunk120356 && Chunk120356 !== Chunk981631.Skl.UNKNOWN && Chunk473749.hasUniqueUsername() ? (0, Chunk54381.jsx)(Chunk570928.Z, {
       hoverText: i,
@@ -613,7 +613,7 @@ class th extends Chunk473749.PureComponent {
         copiedStreak: n
       } = this.state;
       if (null == e) return;
-      (0, eY.JG)(e4.ZP.getUserTag(e, {
+      (0, eY.JG)(e3.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
       })), eK.default.track(te.rMx.TEXT_COPIED, {
@@ -681,7 +681,7 @@ class th extends Chunk473749.PureComponent {
           })
         }), (0, a.jsx)("div", {
           className: tr.panelSubtextContainer,
-          children: (0, a.jsx)(e6.Z, {
+          children: (0, a.jsx)(e2.Z, {
             children: this.renderStatus()
           })
         })]
@@ -761,12 +761,12 @@ function tx(e) {
 function tg(e) {
   let {
     shouldShowDeviceChangedNotifications: t
-  } = (0, e7.P)({
+  } = (0, e5.P)({
     location: "Account.useDeviceChangedTooltip",
     autoTrackExposure: false
   }), n = (0, d.e7)([eF.Z], () => null != eF.Z.getChannelId()), a = (0, et.Fh)(e), r = l.useRef(new m.V7), [i, s] = l.useState(false);
   l.useEffect(() => {
-    n && a && ((0, e7._)({
+    n && a && ((0, e5._)({
       location: "Account.useDeviceChangedTooltip (exposure tracking)",
       autoTrackExposure: true
     }), t && (s(true), r.current.start(tm, () => {
@@ -956,7 +956,7 @@ function tb(e) {
     x = l.useRef(null),
     {
       showRefreshedAudioContextMenu: f
-    } = (0, e2.e)({
+    } = (0, e6.e)({
       location: "SettingsCogButton"
     }),
     b = !f && (m || p),
@@ -983,7 +983,7 @@ function tb(e) {
   }) : tl.intl.string(tl.t.cduTBL);
   let _ = g.ewm,
     y = (0, h.i)();
-  return _ = null != i ? g.bgT : s ? g.Ncx : y.Component, (0, a.jsx)(e5.Z, to(ts({
+  return _ = null != i ? g.bgT : s ? g.Ncx : y.Component, (0, a.jsx)(e7.Z, to(ts({
     ref: x,
     tooltipText: t,
     tooltipColor: b ? g.r6K.GREEN : true,
@@ -1103,7 +1103,7 @@ function tv(e) {
     } = (0, et.p6)(ta.h7.AUDIO_INPUT),
     {
       showRefreshedAudioContextMenu: ed
-    } = (0, e2.e)({
+    } = (0, e6.e)({
       location: "MicrophoneButton"
     }),
     {
@@ -1156,7 +1156,7 @@ function tv(e) {
             [tr.hasColorGlow]: ei,
             [tr.popoutOpen]: r
           }),
-          children: [(0, a.jsx)(e5.Z, {
+          children: [(0, a.jsx)(e7.Z, {
             "aria-checked": S,
             "aria-label": tl.intl.string(tl.t.w4m945),
             className: i()({
@@ -1185,7 +1185,7 @@ function tv(e) {
             tooltipColor: _ ? g.r6K.GREEN : true,
             tooltipForceOpen: _,
             tooltipText: t
-          }), (0, a.jsx)(e5.Z, {
+          }), (0, a.jsx)(e7.Z, {
             "aria-label": y ? tl.intl.formatToPlainString(tl.t["18wnuD"], {
               inputDeviceName: ec
             }) : tl.intl.string(tl.t.fRzCbB),
@@ -1229,7 +1229,7 @@ function tv(e) {
       className: i()(tr.micButtonParent, {
         [tr.hasColorGlow]: ei
       }),
-      children: [(0, a.jsx)(e5.Z, {
+      children: [(0, a.jsx)(e7.Z, {
         tooltipText: t,
         tooltipColor: _ ? g.r6K.GREEN : true,
         tooltipForceOpen: _,
@@ -1318,7 +1318,7 @@ function tv(e) {
                   markAsDismissed: r,
                   onCTA: () => $(true)
                 }));
-                let c = () => (0, a.jsx)(e5.Z, ts({
+                let c = () => (0, a.jsx)(e7.Z, ts({
                   ref: O,
                   plated: null != v,
                   tooltipForceOpen: en,
@@ -1393,7 +1393,7 @@ function tj(e) {
     name: _
   } = (0, et.p6)(ta.h7.AUDIO_OUTPUT), {
     showRefreshedAudioContextMenu: y
-  } = (0, e2.e)({
+  } = (0, e6.e)({
     location: "HeadphonesButton"
   }), C = (0, Z.Z)(t, n, r), {
     analyticsLocations: S
@@ -1437,7 +1437,7 @@ function tj(e) {
             [tr.hasColorGlow]: h,
             [tr.popoutOpen]: o
           }),
-          children: [(0, a.jsx)(e5.Z, {
+          children: [(0, a.jsx)(e7.Z, {
             "aria-checked": h,
             "aria-label": tl.intl.string(tl.t.wjcRFX),
             className: tr.micButtonWithMenu,
@@ -1461,7 +1461,7 @@ function tj(e) {
             redGlow: h,
             role: "switch",
             tooltipText: C
-          }), (0, a.jsx)(e5.Z, {
+          }), (0, a.jsx)(e7.Z, {
             "aria-label": u ? tl.intl.formatToPlainString(tl.t["f+DDY/"], {
               outputDeviceName: _
             }) : tl.intl.string(tl.t.aA4Vce),
@@ -1497,7 +1497,7 @@ function tj(e) {
     })
   }) : (0, a.jsx)(N.Gt, {
     value: S,
-    children: (0, a.jsx)(e5.Z, {
+    children: (0, a.jsx)(e7.Z, {
       plated: null != d,
       tooltipText: C,
       onMouseEnter: b,

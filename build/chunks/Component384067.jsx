@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk310582 = require("./310582.js");
+  Chunk687983 = require("./687983.js");
 let x = e => {
   var t;
   let {
@@ -46,7 +46,7 @@ let x = e => {
     {
       bannerURL: B
     } = (0, f.UI)(n),
-    P = x === h.AW.ORBS,
+    P = x === m.AW.ORBS,
     N = true !== n.disableCta && (null != n.ctaText && "" !== n.ctaText || null != n.ctaRoute && "" !== n.ctaRoute),
     A = null != n.logoURL && "" !== n.logoURL,
     R = l.useCallback(() => {
@@ -54,7 +54,7 @@ let x = e => {
         var e;
         let t = null != (e = n.dismissibleContentVersion) ? e : 0;
         (0, u.wH)(s.z.COLLECTIBLES_SHOP_WIDE_BANNER, t, {
-          dismissAction: m.L.USER_DISMISS
+          dismissAction: C.L.USER_DISMISS
         })
       }
     }, [n.isDismissible, n.dismissibleContentVersion]),
@@ -124,7 +124,7 @@ let x = e => {
                 lineClamp: 2,
                 variant: P ? "text-md/medium" : "text-sm/medium",
                 children: P ? b.intl.format(b.t.SFFP7K, {
-                  helpdeskArticle: d.Z.getArticleURL(C.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
+                  helpdeskArticle: d.Z.getArticleURL(h.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
                 }) : n.body
               }), N && (0, r.jsxs)("div", {
                 className: v.wideBannerCtaContainer,

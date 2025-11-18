@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 169757, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 71264 **/
+/** chunk id: 169757, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  nowrap: "nowrap__5db79"
+  wrapper: "wrapper_d852db"
 }

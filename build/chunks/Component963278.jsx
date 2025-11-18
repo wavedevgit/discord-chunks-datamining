@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk786040 = require("./786040.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk310582 = require("./310582.js");
+  Chunk687983 = require("./687983.js");
 let v = e => {
   let {
     shelf: t,
@@ -63,10 +63,10 @@ let v = e => {
               pageSection: t.name,
               categoryPosition: 2
             },
-            children: E ? (0, r.jsx)(h.Z, {
+            children: E ? (0, r.jsx)(m.Z, {
               skuId: a,
-              prioritizedCurrency: i === m.AW.ORBS ? C.tA.ORBS : true,
-              onClickAnalytics: (0, C.wO)(e, i, O)
+              prioritizedCurrency: i === C.AW.ORBS ? h.tA.ORBS : true,
+              onClickAnalytics: (0, h.wO)(e, i, O)
             }, a) : (0, r.jsx)(f.Z, {
               product: e,
               category: l,

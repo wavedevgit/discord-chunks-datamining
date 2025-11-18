@@ -11,24 +11,27 @@ var Chunk24217 = require("./24217.js"),
   Chunk442837 = require("./442837.js"),
   Chunk1870 = require("./1870.js");
 let l = (e, t) => {
-    var n, r, o;
-    let s = null != e.getPurchase(t.skuId),
-      l = null != (n = t.items) ? n : [],
-      c = i()(l.map(t => e.getPurchase(t.skuId)));
+    var n, r, o, s;
+    let l = e.getPurchase(t.skuId),
+      c = null != l,
+      u = null != (n = null == l ? true : l.expiresAt) ? n : null,
+      d = null != u,
+      f = null != (r = t.items) ? r : [],
+      _ = i()(f.map(t => e.getPurchase(t.skuId)));
     switch (null == t ? true : t.type) {
       case a.Z.BUNDLE:
         return {
-          isPurchased: s || l.length > 0 && c.length === l.length, isPartiallyOwnedBundle: c.length > 0 && c.length < l.length, isPartiallyOwnedVariantsGroup: false
+          isPurchased: c || f.length > 0 && _.length === f.length, isPartiallyOwnedBundle: _.length > 0 && _.length < f.length, isPartiallyOwnedVariantsGroup: false, isRented: false, rentalExpiresAt: null
         };
       case a.Z.VARIANTS_GROUP:
-        let u = null == (r = t.variants) ? true : r.every(t => null != e.getPurchase(t.skuId)),
-          d = (null == (o = t.variants) ? true : o.some(t => null != e.getPurchase(t.skuId))) && !u;
+        let p = null == (o = t.variants) ? true : o.every(t => null != e.getPurchase(t.skuId)),
+          h = (null == (s = t.variants) ? true : s.some(t => null != e.getPurchase(t.skuId))) && !p;
         return {
-          isPurchased: null != u && u, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: null != d && d
+          isPurchased: null != p && p, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: null != h && h, isRented: d, rentalExpiresAt: u
         };
       default:
         return {
-          isPurchased: s, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: false
+          isPurchased: c, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: false, isRented: d, rentalExpiresAt: u
         }
     }
   },

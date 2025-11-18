@@ -1,4 +1,4 @@
-/** Chunk was on 83175 **/
+/** Chunk was on 70154 **/
 /** chunk id: 968435, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => i
@@ -12,21 +12,21 @@ let i = function(e) {
     quest: n,
     dimensions: t,
     className: i,
-    assetRef: l
-  } = e, s = (0, r.fh)(n, r.eC.HERO_IMAGE), d = null != t ? (0, r.nK)(t.width, t.height) : true, c = (0, r.f0)(s.url, d);
+    assetRef: s
+  } = e, l = (0, r.fh)(n, r.eC.HERO_IMAGE), d = null != t ? (0, r.nK)(t.width, t.height) : true, c = (0, r.f0)(l.url, d);
   return null != c ? (0, a.jsx)("img", {
-    ref: l,
+    ref: s,
     src: c,
     alt: n.config.messages.questName,
     className: i
-  }) : s.isAnimated ? (0, a.jsx)(o.Z, {
-    ref: l,
+  }) : l.isAnimated ? (0, a.jsx)(o.Z, {
+    ref: s,
     className: i,
     autoPlay: false,
     loop: false,
     muted: true,
     playsInline: true,
     controls: false,
-    src: s.url
+    src: l.url
   }) : null
 }

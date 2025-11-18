@@ -22,8 +22,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk127947 = require("./127947.js"),
-  Chunk893973 = require("./893973.js");
+  Chunk487111 = require("./487111.js"),
+  Chunk639543 = require("./639543.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,7 +75,7 @@ class C extends Chunk473749.Component {
       isReactionPickerActive: s
     } = this.state;
     if (module.state === Chunk981631.yb.SENDING || (0, Chunk630388.yE)(module.flags, Chunk981631.iLy.EPHEMERAL)) return null;
-    let l = Chunk473749 ? Chunk893973 : Chunk127947,
+    let l = Chunk473749 ? Chunk639543 : Chunk487111,
       c = {
         size: "sm",
         color: "currentColor",

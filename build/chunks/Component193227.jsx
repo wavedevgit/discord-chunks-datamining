@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk81136 = require("./81136.js"),
   Chunk619899 = require("./619899.js"),
   Chunk215023 = require("./215023.js"),
-  Chunk887353 = require("./887353.js");
+  Chunk654664 = require("./654664.js");
 
 function k(e) {
   let {
@@ -70,7 +70,7 @@ function k(e) {
 function I(e) {
   let {
     category: t
-  } = e, n = (0, h.l)(t.products), l = (0, f.a)()(n);
+  } = e, n = (0, m.l)(t.products), l = (0, f.a)()(n);
   return (0, r.jsx)(k, {
     products: l,
     category: t
@@ -86,7 +86,7 @@ function T(e) {
   return (0, r.jsxs)("div", {
     className: j.categoryWrapper,
     ref: a,
-    children: [(0, r.jsx)(m.Z, {
+    children: [(0, r.jsx)(C.Z, {
       category: t
     }), (0, r.jsx)(I, {
       category: t
@@ -102,8 +102,8 @@ function L(e) {
     currentPage: s,
     handlePageChange: o
   } = e, u = (0, d.sp)(), g = (0, E.R)(), f = null != (t = null == u ? true : u.sessionId) ? t : "", {
-    noCache: h,
-    includeUnpublished: m
+    noCache: m,
+    includeUnpublished: C
   } = (0, O.Z)(), b = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
@@ -114,22 +114,22 @@ function L(e) {
     return b.slice(e, e + y.kN)
   }, [b, s]);
   l.useEffect(() => {
-    (0, C.n)({
+    (0, h.n)({
       sessionId: f,
-      checkpoint: C.a.SHOP_MOUNTED,
+      checkpoint: h.a.SHOP_MOUNTED,
       tab: y.AW.CATALOG,
-      unpublishedCategoriesShown: m,
-      cacheDisabled: h
+      unpublishedCategoriesShown: C,
+      cacheDisabled: m
     })
   }, []), l.useEffect(() => {
-    g || 0 === v.length || (0, C.n)({
+    g || 0 === v.length || (0, h.n)({
       sessionId: f,
-      checkpoint: C.a.SHOP_RENDERED,
+      checkpoint: h.a.SHOP_RENDERED,
       tab: y.AW.CATALOG,
-      unpublishedCategoriesShown: m,
-      cacheDisabled: h
+      unpublishedCategoriesShown: C,
+      cacheDisabled: m
     })
-  }, [f, m, h, g, v.length]);
+  }, [f, C, m, g, v.length]);
   let x = (0, p.FF)("CollectiblesBrowse");
   return g ? (0, r.jsx)(_.Z, {}) : (0, r.jsxs)("div", {
     className: a()(j.categories, {

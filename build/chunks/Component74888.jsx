@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk200115 = require("./200115.jsx"),
   Chunk406205 = require("./406205.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk101105 = require("./101105.js");
+  Chunk23922 = require("./23922.js");
 
 function p(e) {
   return (0, i.jsx)("div", {

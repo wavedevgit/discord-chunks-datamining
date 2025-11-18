@@ -1,5 +1,5 @@
 /** Chunk was on 88938 **/
-/** chunk id: 114732, original params: e,t,n (module,exports,require) **/
+/** chunk id: 114732, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -9,15 +9,15 @@ var Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk597412 = require("./597412.js"),
+  Chunk791863 = require("./791863.js"),
   Chunk167969 = require("./167969.js"),
   Chunk557256 = require("./557256.js");
 let u = function(e) {
   let {
-    onClose: t
-  } = e, n = (0, i.ZP)(), u = (0, r.wj)(n);
+    onClose: n
+  } = e, t = (0, i.ZP)(), u = (0, o.wj)(t);
   return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsxs)(o.xBx, {
+    children: [(0, a.jsxs)(r.xBx, {
       "data-migration-pending": true,
       separator: false,
       className: d.header,
@@ -25,30 +25,30 @@ let u = function(e) {
         alt: "",
         className: d.headerImage,
         src: u ? l : c
-      }), (0, a.jsx)(o.Heading, {
+      }), (0, a.jsx)(r.Heading, {
         className: d.title,
         variant: "heading-xl/medium",
         children: s.intl.string(s.t["tWYWJ+"])
-      }), (0, a.jsx)(o.olH, {
+      }), (0, a.jsx)(r.olH, {
         "data-migration-pending": true,
-        onClick: t,
+        onClick: n,
         className: d.modalCloseButton
       })]
-    }), (0, a.jsx)(o.hzk, {
+    }), (0, a.jsx)(r.hzk, {
       "data-migration-pending": true,
       className: d.content,
       scrollbarType: "none",
-      children: (0, a.jsx)(o.Text, {
+      children: (0, a.jsx)(r.Text, {
         variant: "text-md/normal",
         children: s.intl.string(s.t.JNQRU4)
       })
-    }), (0, a.jsx)(o.mzw, {
+    }), (0, a.jsx)(r.mzw, {
       "data-migration-pending": true,
       className: d.modalFooter,
-      children: (0, a.jsx)(o.Button, {
+      children: (0, a.jsx)(r.Button, {
         variant: "primary",
         text: s.intl.string(s.t.cpT0Cq),
-        onClick: t
+        onClick: n
       })
     })]
   })

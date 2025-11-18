@@ -1,4 +1,4 @@
-/** Chunk was on 41259 **/
+/** Chunk was on 71264 **/
 /** chunk id: 140106, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ND: () => p,
@@ -15,11 +15,11 @@ var Chunk347715 = require("./347715.js"),
   Chunk346486 = require("./346486.jsx"),
   Chunk486324 = require("./486324.js"),
   Chunk388032 = require("./388032.jsx");
-let p = (e, t) => (0, r.ZDy)(async () => {
+let p = (e, t) => (0, l.ZDy)(async () => {
     let {
-      default: l
-    } = await Promise.all([n.e("91689"), n.e("89289"), n.e("53488")]).then(n.bind(n, 28130));
-    return n => (0, i.jsx)(l, function(e) {
+      default: r
+    } = await Promise.all([n.e("91689"), n.e("89289"), n.e("50893")]).then(n.bind(n, 28130));
+    return n => (0, i.jsx)(r, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -42,24 +42,24 @@ let p = (e, t) => (0, r.ZDy)(async () => {
       uploadType: u.pC.AVATAR,
       showUpsellHeader: false,
       modalTitle: d.intl.string(d.t["6yrpFR"]),
-      analyticsLocation: c.Z.GROUP_DM_ICON_EDITOR,
+      analyticsLocation: s.Z.GROUP_DM_ICON_EDITOR,
       analyticsLocations: t,
       allowRecentAvatarsSelection: false
     }, n))
   }),
   h = (e, t) => {
     p(n => {
-      a.Z.setIcon(e, n.imageUri, t).catch(f)
+      o.Z.setIcon(e, n.imageUri, t).catch(f)
     }, [t])
   },
   f = e => {
     var t;
     if ((null == e || null == (t = e.body) ? true : t.retry_after) != null) {
-      let t = (0, l.Z)(new Date, e.body.retry_after);
-      o.Z.show({
+      let t = (0, r.Z)(new Date, e.body.retry_after);
+      a.Z.show({
         title: d.intl.string(d.t.Whhv4w),
         body: d.intl.format(d.t.VIJkAy, {
-          duration: (0, i.jsx)(s.Z, {
+          duration: (0, i.jsx)(c.Z, {
             showUnits: true,
             deadline: t
           })

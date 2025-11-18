@@ -16,7 +16,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk436774 = require("./436774.jsx"),
   Chunk302221 = require("./302221.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk513825 = require("./513825.js");
+  Chunk536510 = require("./536510.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -152,7 +152,7 @@ class T extends(r = Chunk473749.PureComponent) {
     switch (module) {
       case "GUILD_BOOST_APPLIED":
         return (0, Chunk54381.jsx)("svg", {
-          className: Chunk513825.svgBorder,
+          className: Chunk536510.svgBorder,
           width: "304",
           height: "48",
           viewBox: "0 0 304 48",
@@ -169,7 +169,7 @@ class T extends(r = Chunk473749.PureComponent) {
         });
       case "PREMIUM_PAYMENT_STARTED":
         return (0, Chunk54381.jsx)("svg", {
-          className: Chunk513825.svgBorder,
+          className: Chunk536510.svgBorder,
           width: "156",
           height: "48",
           viewBox: "0 0 156 48",
@@ -187,7 +187,7 @@ class T extends(r = Chunk473749.PureComponent) {
       case "PREMIUM_ACTIVATED":
       case "PREMIUM_UPGRADED":
         return (0, Chunk54381.jsx)("svg", {
-          className: Chunk513825.svgBorder,
+          className: Chunk536510.svgBorder,
           width: "298",
           height: "48",
           viewBox: "0 0 298 48",
@@ -204,7 +204,7 @@ class T extends(r = Chunk473749.PureComponent) {
         });
       case "PREMIUM_UPDATED":
         return (0, Chunk54381.jsx)("svg", {
-          className: Chunk513825.svgBorder,
+          className: Chunk536510.svgBorder,
           width: "276",
           height: "48",
           viewBox: "0 0 276 48",
@@ -230,7 +230,7 @@ class T extends(r = Chunk473749.PureComponent) {
     switch (module) {
       case "GUILD_BOOST_APPLIED":
         return (0, Chunk54381.jsx)("svg", {
-          className: Chunk513825.svgCopy,
+          className: Chunk536510.svgCopy,
           width: "304",
           height: "48",
           viewBox: "0 0 304 48",
@@ -269,7 +269,7 @@ class T extends(r = Chunk473749.PureComponent) {
         });
       case "PREMIUM_PAYMENT_STARTED":
         return (0, Chunk54381.jsx)("svg", {
-          className: Chunk513825.svgCopy,
+          className: Chunk536510.svgCopy,
           width: "156",
           height: "48",
           viewBox: "0 0 156 48",
@@ -290,7 +290,7 @@ class T extends(r = Chunk473749.PureComponent) {
         });
       case "PREMIUM_ACTIVATED":
         return (0, Chunk54381.jsx)("svg", {
-          className: Chunk513825.svgCopy,
+          className: Chunk536510.svgCopy,
           width: "298",
           height: "48",
           viewBox: "0 0 298 48",
@@ -301,7 +301,7 @@ class T extends(r = Chunk473749.PureComponent) {
         });
       case "PREMIUM_UPGRADED":
         return (0, Chunk54381.jsx)("svg", {
-          className: Chunk513825.svgCopy,
+          className: Chunk536510.svgCopy,
           width: "298",
           height: "48",
           viewBox: "0 0 298 48",
@@ -312,7 +312,7 @@ class T extends(r = Chunk473749.PureComponent) {
         });
       case "PREMIUM_UPDATED":
         return (0, Chunk54381.jsx)("svg", {
-          className: Chunk513825.svgCopy,
+          className: Chunk536510.svgCopy,
           width: "276",
           height: "48",
           viewBox: "0 0 276 48",
@@ -330,12 +330,12 @@ class T extends(r = Chunk473749.PureComponent) {
       className: e
     } = this.props;
     return (0, Chunk54381.jsxs)("div", {
-      className: s()(Chunk513825.container, module),
+      className: s()(Chunk536510.container, module),
       children: [this.renderSvgBorder(), (0, Chunk54381.jsxs)(Chunk748780.Z.div, {
-        className: Chunk513825.animationContainer,
+        className: Chunk536510.animationContainer,
         style: this.getContainerStyle(),
         children: [(0, Chunk54381.jsx)(Chunk481060.ZX5, {
-          className: Chunk513825.shine,
+          className: Chunk536510.shine,
           style: this.getShineStyle()
         }), this.renderSvgCopy()]
       })]

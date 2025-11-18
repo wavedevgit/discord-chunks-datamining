@@ -1,4 +1,4 @@
-/** Chunk was on 47863 **/
+/** Chunk was on 33840 **/
 /** chunk id: 485299, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk855403 = require("./855403.js"),
   Chunk59468 = require("./59468.js"),
   Chunk615161 = require("./615161.jsx"),
-  Chunk157707 = require("./157707.js");
+  Chunk353889 = require("./353889.js");
 
 function u() {
   let [{
@@ -36,11 +36,11 @@ function u() {
       })
     }
   }, [module]), (0, Chunk54381.jsx)("div", {
-    className: Chunk157707.root,
+    className: Chunk353889.root,
     children: null == exports ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : (0, Chunk54381.jsx)("img", {
       src: exports,
       alt: "",
-      className: Chunk157707.largePreview
+      className: Chunk353889.largePreview
     })
   })
 }

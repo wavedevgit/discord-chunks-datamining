@@ -1,4 +1,4 @@
-/** Chunk was on 93582 **/
+/** Chunk was on 51275 **/
 /** chunk id: 170731, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk694781 = require("./694781.js");
+  Chunk967362 = require("./967362.js");
 let y = {
   FULL_WISHLIST: {
     title: Chunk388032.intl.string(Chunk388032.t["7lZ31J"]),
@@ -79,7 +79,7 @@ function L() {
     children: [(0, Chunk54381.jsx)(Chunk481060.nn4, {
       children: Chunk388032.intl.string(Chunk388032.t.pfChQr)
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk694781.wishlistBannerGrid,
+      className: Chunk967362.wishlistBannerGrid,
       children: Array.from({
         length: Chunk602733.zL
       }, (e, t) => (0, r.jsx)(_.Z, {

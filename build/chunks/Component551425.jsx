@@ -1,5 +1,5 @@
 /** Chunk was on 38029 **/
-/** chunk id: 551425, original params: t,e,n (module,exports,require) **/
+/** chunk id: 551425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
 });
@@ -17,14 +17,14 @@ var Chunk979554 = require("./979554.js"),
   Chunk594174 = require("./594174.js"),
   Chunk583434 = require("./583434.js"),
   Chunk216541 = require("./216541.jsx"),
-  Chunk948067 = require("./948067.js");
+  Chunk799940 = require("./799940.js");
 let b = Chunk481060.EFr.SIZE_152,
   y = (0, Chunk1585.y9)(b),
-  O = t => {
-    var e, n;
+  O = e => {
+    var t, n;
     let {
       item: r
-    } = t, a = (0, l.e7)([p.default], () => p.default.getCurrentUser()), {
+    } = e, a = (0, l.e7)([p.default], () => p.default.getCurrentUser()), {
       avatarDecorationSrc: c,
       avatarPlaceholderSrc: u,
       eventHandlers: d
@@ -35,60 +35,60 @@ let b = Chunk481060.EFr.SIZE_152,
     });
     return (0, i.jsx)("div", {
       className: g.avatarDecorationPreview,
-      children: (0, i.jsx)(s.qEK, (e = function(t) {
-        for (var e = 1; e < arguments.length; e++) {
-          var n = null != arguments[e] ? arguments[e] : {},
+      children: (0, i.jsx)(s.qEK, (t = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-            return Object.getOwnPropertyDescriptor(n, t).enumerable
-          }))), i.forEach(function(e) {
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), i.forEach(function(t) {
             var i;
-            i = n[e], e in t ? Object.defineProperty(t, e, {
+            i = n[t], t in e ? Object.defineProperty(e, t, {
               value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : t[e] = i
+            }) : e[t] = i
           })
         }
-        return t
+        return e
       }({}, d), n = n = {
         "aria-label": r.label,
         src: u,
         avatarDecoration: c,
         size: b
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(t, e) {
-        var n = Object.keys(t);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(t);
+          var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(n)).forEach(function(t) {
-        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-      }), e))
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      }), t))
     })
   },
-  j = t => {
+  j = e => {
     let {
-      item: e
-    } = t;
+      item: t
+    } = e;
     return (0, i.jsx)("div", {
       className: g.profileEffectPreview,
       children: (0, i.jsx)(f.Z, {
         isHighlighted: true,
-        skuId: null == e ? true : e.skuId
+        skuId: null == t ? true : t.skuId
       })
     })
   },
-  P = t => {
+  P = e => {
     let {
-      item: e
-    } = t;
+      item: t
+    } = e;
     return (0, i.jsx)("div", {
       className: g.nameplatePreview,
       children: (0, i.jsx)(c.Z, {
-        nameplate: e,
+        nameplate: t,
         className: g.nameplate,
         nameplatePreviewSize: "xlarge",
         isHighlighted: true,
@@ -96,26 +96,26 @@ let b = Chunk481060.EFr.SIZE_152,
       })
     })
   },
-  v = t => {
+  v = e => {
     let {
-      product: e
-    } = t;
+      product: t
+    } = e;
     return (0, i.jsx)("div", {
       className: g.bundlePreview,
-      children: (0, i.jsx)(m.d, {
-        product: e,
+      children: (0, i.jsx)(h.d, {
+        product: t,
         isPurchased: false,
         isHighlighted: false
       })
     })
   },
-  S = t => {
+  S = e => {
     let {
-      giftCode: e
-    } = t, {
+      giftCode: t
+    } = e, {
       product: n,
       isFetching: l
-    } = (0, h.T)(e.skuId, true);
+    } = (0, m.T)(t.skuId, true);
     if (l || null == n) return (0, i.jsx)("div", {
       className: g.spinnerContainer,
       children: (0, i.jsx)(s.$jN, {})
@@ -138,11 +138,11 @@ let b = Chunk481060.EFr.SIZE_152,
           item: a
         });
       default:
-        return null != e.giftStyle ? (0, i.jsx)(d.Z, {
+        return null != t.giftStyle ? (0, i.jsx)(d.Z, {
           defaultAnimationState: u.SR.ACTION,
           idleAnimationState: u.SR.LOOP,
           className: g.giftAnimation,
-          giftStyle: e.giftStyle
+          giftStyle: t.giftStyle
         }) : null
     }
   }

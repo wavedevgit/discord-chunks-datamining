@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk448986 = require("./448986.js"),
   Chunk939389 = require("./939389.js"),
   Chunk295907 = require("./295907.js"),
-  Chunk171214 = require("./171214.js");
+  Chunk790254 = require("./790254.js");
 
 function p(e, t, n) {
   return n * (Math.max(e - t.left, 0) / t.width)
@@ -31,16 +31,16 @@ function v(e) {
     preloadedBuffers: E,
     duration: g,
     rounded: O,
-    maxSeekableTime: b,
-    onClick: h,
+    maxSeekableTime: h,
+    onClick: b,
     onScrubBack: S,
     onScrubForward: C
   } = e, [y, _] = o.useState(null), [x, j] = o.useState(null), [D, P] = o.useState(null), [T, R] = o.useState(false), I = o.useRef(null), N = e => {
     I.current = e, _(e)
   };
   o.useEffect(() => {
-    null != y && (null == b ? P(null) : P(f(b, g, y)))
-  }, [y, b, g]);
+    null != y && (null == h ? P(null) : P(f(h, g, y)))
+  }, [y, h, g]);
   let A = (0, c.Z)(e => {
       N(e.contentRect)
     }),
@@ -76,7 +76,7 @@ function v(e) {
       }),
       ignoreKeyPress: true,
       onClick: e => {
-        l && null != h && h(p(e.clientX, e.currentTarget.getBoundingClientRect(), g))
+        l && null != b && b(p(e.clientX, e.currentTarget.getBoundingClientRect(), g))
       },
       onMouseEnter: e => {
         l && (null != w.current && N(w.current.getBoundingClientRect()), R(true), k(e))

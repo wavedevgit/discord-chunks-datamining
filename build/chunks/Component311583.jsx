@@ -2,7 +2,7 @@
 /** chunk id: 311583, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,20 +17,20 @@ var Chunk481060 = require("./481060.js"),
   Chunk694364 = require("./694364.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx");
-let h = e => {
+let m = e => {
     let {
       product: t,
       selectedVariantIndex: n,
       cardRef: o,
       onClick: d,
-      icon: h,
-      prioritizedCurrency: C,
-      onClickAnalytics: m
-    } = e, _ = (0, s.Nd)(), b = null == _ ? true : _.tab, v = (0, a.sp)(), x = (0, g.J)(t, C), E = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, m);
-    return null != d || null != h ? (0, r.jsx)(l.hU, {
+      icon: m,
+      prioritizedCurrency: h,
+      onClickAnalytics: C
+    } = e, _ = (0, s.Nd)(), b = null == _ ? true : _.tab, v = (0, a.sp)(), x = (0, g.J)(t, h), E = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, C);
+    return null != d || null != m ? (0, r.jsx)(l.hU, {
       variant: "primary",
       "aria-label": f.intl.string(f.t.SKNnqq),
-      icon: null != h ? h : l.tEF,
+      icon: null != m ? m : l.tEF,
       onClick: e => {
         e.stopPropagation(), null != d ? d(t.skuId) : E(e)
       }
@@ -47,7 +47,7 @@ let h = e => {
       })
     }) : null
   },
-  C = e => {
+  h = e => {
     let {
       skuId: t,
       cardRef: n,
@@ -58,7 +58,7 @@ let h = e => {
     } = e, c = (0, u.LJ)(t), g = (0, o.o)(c);
     if (null == c) return null;
     let p = (0, d.W)(c, g);
-    return (0, r.jsx)(h, {
+    return (0, r.jsx)(m, {
       product: p,
       cardRef: n,
       selectedVariantIndex: g,

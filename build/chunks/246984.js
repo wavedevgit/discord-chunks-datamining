@@ -1,0 +1,11 @@
+/** Chunk was on 65347 **/
+/** chunk id: 246984, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  container: "container_db0ccb",
+  resizeHandle: "resizeHandle_db0ccb",
+  sidebarContent: "sidebarContent_db0ccb",
+  mobileHeaderCollapsed: "mobileHeaderCollapsed_db0ccb",
+  mobileContainerExpanded: "mobileContainerExpanded_db0ccb",
+  layerContainer: "layerContainer_db0ccb",
+  popoutContainer: "popoutContainer_db0ccb"
+}

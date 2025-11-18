@@ -11,22 +11,22 @@ var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk128922 = require("./128922.js"),
   Chunk401975 = require("./401975.jsx"),
-  Chunk638758 = require("./638758.js"),
-  Chunk887353 = require("./887353.js"),
-  Chunk198501 = require("./198501.js"),
-  Chunk300179 = require("./300179.js");
+  Chunk55783 = require("./55783.js"),
+  Chunk654664 = require("./654664.js"),
+  Chunk970217 = require("./970217.js"),
+  Chunk670185 = require("./670185.js");
 let g = () => (0, Chunk54381.jsx)("div", {
-    className: i()(Chunk198501.skeleton, Chunk300179.shopCard),
+    className: i()(Chunk970217.skeleton, Chunk670185.shopCard),
     children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk198501.cardBody,
+      className: Chunk970217.cardBody,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk198501.cardAvatar
+        className: Chunk970217.cardAvatar
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk198501.cardTitle
+        className: Chunk970217.cardTitle
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk198501.cardDescription
+        className: Chunk970217.cardDescription
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk198501.cardSummary
+        className: Chunk970217.cardSummary
       })]
     })
   }),
@@ -35,7 +35,7 @@ let g = () => (0, Chunk54381.jsx)("div", {
       location: "ShopSkeleton"
     }).showCardsV2;
     return (0, Chunk54381.jsx)("div", {
-      className: Chunk198501.skeletonsContainer,
+      className: Chunk970217.skeletonsContainer,
       children: Array.from({
         length: 3
       }).map((t, n) => (0, r.jsxs)("div", {

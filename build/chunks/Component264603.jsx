@@ -1,4 +1,4 @@
-/** Chunk was on 91394 **/
+/** Chunk was on 65347 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -21,8 +21,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk881998 = require("./881998.js"),
   Chunk449224 = require("./449224.js"),
   Chunk246992 = require("./246992.js"),
-  Chunk451429 = require("./451429.js"),
-  Chunk441900 = require("./441900.js");
+  Chunk866403 = require("./866403.js"),
+  Chunk963801 = require("./963801.js");
 let C = [{
   label: "Unset",
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET
@@ -69,9 +69,9 @@ function S() {
     }(null == S ? true : S.id);
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: i()(Chunk451429.panel, Chunk441900.panel),
+    className: i()(Chunk866403.panel, Chunk963801.panel),
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk441900.container,
+      className: Chunk963801.container,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/normal",
         children: "Settings"
@@ -84,7 +84,7 @@ function S() {
         serialize: e => e.toString()
       })]
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk441900.container,
+      className: Chunk963801.container,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/normal",
         children: "Application"
@@ -107,7 +107,7 @@ function S() {
         }).join(", ") : "N/A"]
       })]
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk441900.container,
+      className: Chunk963801.container,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/normal",
         children: "Authorization"

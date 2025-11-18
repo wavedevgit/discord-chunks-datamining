@@ -8,7 +8,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk754921 = require("./754921.js");
+  Chunk609261 = require("./609261.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -90,8 +90,8 @@ class d extends(r = Chunk473749.PureComponent) {
       className: t
     } = this.props;
     return (0, Chunk54381.jsxs)("div", {
-      className: s()(Chunk754921.video, exports, {
-        [Chunk754921.mirror]: module
+      className: s()(Chunk609261.video, exports, {
+        [Chunk609261.mirror]: module
       }),
       onDoubleClick: this.handleDoubleClick,
       onContextMenu: this.handleContextMenu,

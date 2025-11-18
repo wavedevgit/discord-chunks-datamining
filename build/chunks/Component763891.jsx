@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk887353 = require("./887353.js"),
+  Chunk654664 = require("./654664.js"),
   Chunk558513 = require("./558513.js"),
   Chunk662128 = require("./662128.js"),
   Chunk676790 = require("./676790.js"),
@@ -57,22 +57,22 @@ function R(e) {
       case O.AW.BUNDLES:
         return [y.intl.string(y.t.FYFpps), G ? I.Z : k.Z, i.Z.BUNDLE]
     }
-  }, [Z, G]), J = (0, h.a)(), Q = l.useMemo(() => J(W.filter(e => {
+  }, [Z, G]), J = (0, m.a)(), Q = l.useMemo(() => J(W.filter(e => {
     var t;
     return e.type === q || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
-  })), [W, q, J]), X = (0, C.l)(Q);
+  })), [W, q, J]), X = (0, h.l)(Q);
   l.useEffect(() => {
-    (0, m.n)({
+    (0, C.n)({
       sessionId: H,
-      checkpoint: m.a.SHOP_MOUNTED,
+      checkpoint: C.a.SHOP_MOUNTED,
       tab: Z,
       unpublishedCategoriesShown: M,
       cacheDisabled: D
     })
   }, []), l.useEffect(() => {
-    n || (0, m.n)({
+    n || (0, C.n)({
       sessionId: H,
-      checkpoint: m.a.SHOP_RENDERED,
+      checkpoint: C.a.SHOP_RENDERED,
       tab: Z,
       unpublishedCategoriesShown: M,
       cacheDisabled: D

@@ -1,4 +1,4 @@
-/** Chunk was on 65354 **/
+/** Chunk was on 10023 **/
 /** chunk id: 670512, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -13,7 +13,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk418956 = require("./418956.js");
+  Chunk299600 = require("./299600.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -91,12 +91,12 @@ class b extends(r = Chunk473749.PureComponent) {
   }
   renderContent() {
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk418956.tutorialMessages,
+      className: Chunk299600.tutorialMessages,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk418956.searchMessage,
+        className: Chunk299600.searchMessage,
         children: Chunk388032.intl.string(Chunk388032.t.Mp0IGK)
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk418956.selectMessage,
+        className: Chunk299600.selectMessage,
         children: Chunk388032.intl.string(Chunk388032.t["3CbpwH"])
       })]
     })
@@ -109,11 +109,11 @@ class b extends(r = Chunk473749.PureComponent) {
     } = this.state;
     return (0, Chunk54381.jsxs)("div", {
       ref: this.rootRef,
-      className: a()(Chunk418956.tutorial, {
-        [Chunk418956.shown]: exports,
-        [Chunk418956.hasQuery]: module
+      className: a()(Chunk299600.tutorial, {
+        [Chunk299600.shown]: exports,
+        [Chunk299600.hasQuery]: module
       }),
-      children: [this.renderContent(), this.renderArrowGroup(Chunk418956.__invalid_left), this.renderArrowGroup(Chunk418956.right)]
+      children: [this.renderContent(), this.renderArrowGroup(Chunk299600.__invalid_left), this.renderArrowGroup(Chunk299600.right)]
     })
   }
   getStyle() {

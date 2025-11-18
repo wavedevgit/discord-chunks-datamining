@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk871118 = require("./871118.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk839021 = require("./839021.js");
+  Chunk720740 = require("./720740.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -136,13 +136,13 @@ class x extends Chunk473749.PureComponent {
       hideTip: s
     } = this.props;
     return null == require ? null : (0, Chunk54381.jsx)("div", {
-      className: o()(Chunk839021.streamPreviewWrapper, {
-        [Chunk839021.mounted]: Chunk473749
+      className: o()(Chunk720740.streamPreviewWrapper, {
+        [Chunk720740.mounted]: Chunk473749
       }),
       children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk839021.streamPreview,
+        className: Chunk720740.streamPreview,
         children: [this.renderPreview(require), (0, Chunk54381.jsxs)("div", {
-          className: Chunk839021.body,
+          className: Chunk720740.body,
           children: [null != module ? (0, Chunk54381.jsx)(Chunk717881.Z, {
             hideHeader: true,
             type: Chunk717881.P.STREAM_PREVIEW,
@@ -163,11 +163,11 @@ class x extends Chunk473749.PureComponent {
             user: exports,
             guildId: require.guildId,
             channelId: require.channelId,
-            className: Chunk839021.activityActions,
+            className: Chunk720740.activityActions,
             onAction: Chunk120356
           }), !Chunk442837 && (0, Chunk54381.jsx)(Chunk576855.Z, {
             type: Chunk576855.Z.Types.INLINE,
-            className: Chunk839021.protip,
+            className: Chunk720740.protip,
             children: __OVERLAY__ ? Chunk388032.intl.string(Chunk388032.t.YRdw70) : Chunk388032.intl.string(Chunk388032.t.CCTgbF)
           })]
         })]

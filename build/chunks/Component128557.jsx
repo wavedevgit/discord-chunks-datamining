@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 71264 **/
 /** chunk id: 128557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M,
@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231873 = require("./231873.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk183334 = require("./183334.js");
+  Chunk797553 = require("./797553.js");
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -131,7 +131,7 @@ function M(e) {
         }), null != e && (0, u.ZDy)(async () => {
           let {
             default: t
-          } = await Promise.all([n.e("49049"), n.e("7654"), n.e("68971")]).then(n.bind(n, 560114));
+          } = await Promise.all([n.e("49049"), n.e("7654"), n.e("89334")]).then(n.bind(n, 560114));
           return n => (0, i.jsx)(t, A(N({}, n), {
             guild: e,
             source: P.t4x.CHANNEL_WELCOME,

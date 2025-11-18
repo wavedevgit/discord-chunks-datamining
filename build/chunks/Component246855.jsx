@@ -1,7 +1,7 @@
 /** Chunk was on 74560 **/
 /** chunk id: 246855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => M
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk561549 = require("./561549.js"),
+  Chunk651353 = require("./651353.js"),
   Chunk582425 = require("./582425.js"),
   Chunk345554 = require("./345554.js"),
   Chunk88490 = require("./88490.js"),
@@ -56,7 +56,7 @@ function R(e) {
   let {
     onVideoLoaded: t,
     isLoading: n
-  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), b = (0, c.ZP)(), f = (0, l.apv)(b), h = f ? S.Z : P.Z, x = f ? A.Z : L.Z, C = r.useRef(null), _ = r.useRef(null), [j, g] = r.useState(false), [y, v] = r.useState(false), [N, O] = r.useState(false);
+  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), b = (0, c.ZP)(), f = (0, l.apv)(b), x = f ? S.Z : P.Z, h = f ? A.Z : L.Z, C = r.useRef(null), _ = r.useRef(null), [j, g] = r.useState(false), [y, v] = r.useState(false), [N, O] = r.useState(false);
   r.useEffect(() => {
     j && y && N && t()
   }, [j, y, N, t]), r.useEffect(() => {
@@ -85,7 +85,7 @@ function R(e) {
       controls: false,
       onCanPlayThrough: r.useCallback(() => v(true), []),
       children: (0, a.jsx)("source", {
-        src: x,
+        src: h,
         type: "video/webm"
       })
     }), (0, a.jsx)(p.Z, {
@@ -98,7 +98,7 @@ function R(e) {
       onCanPlayThrough: r.useCallback(() => g(true), []),
       onEnded: T,
       children: (0, a.jsx)("source", {
-        src: h,
+        src: x,
         type: "video/webm"
       })
     }), (0, a.jsxs)("div", {
@@ -137,7 +137,7 @@ function D(e) {
       className: w.copyContainer,
       children: [(0, a.jsxs)("div", {
         className: w.heading,
-        children: [(0, a.jsx)(h.M, {
+        children: [(0, a.jsx)(x.M, {
           shouldUseThemeColor: true,
           className: w.orbsIcon
         }), (0, a.jsx)(l.Heading, {
@@ -170,7 +170,7 @@ function D(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   var t, n;
   let {
     initialQuest: i,
@@ -181,14 +181,14 @@ function k(e) {
   } = e, d = null != (n = (0, _.B4)(i.id)) ? n : i, u = (null == (t = d.userStatus) ? true : t.claimedAt) != null, {
     balance: m,
     error: p
-  } = (0, f.A)(), b = (0, C.LM)(d.config), [h, N] = r.useState(u ? "success" : "loading"), [O, w] = r.useState(false), P = r.useCallback(() => {
+  } = (0, f.A)(), b = (0, C.LM)(d.config), [x, N] = r.useState(u ? "success" : "loading"), [O, w] = r.useState(false), P = r.useCallback(() => {
     w(true)
   }, []);
   r.useEffect(() => {
-    u || "loading" !== h || (0, x.QB)(d.id, j.y$.CROSS_PLATFORM, c).then(() => N("success")).catch(() => N("error"))
-  }, [d.id, u, h, c]);
-  let S = !O || "loading" === h || null == m && null == p,
-    L = "error" === h || null == b || null == m && null != p;
+    u || "loading" !== x || (0, h.QB)(d.id, j.y$.CROSS_PLATFORM, c).then(() => N("success")).catch(() => N("error"))
+  }, [d.id, u, x, c]);
+  let S = !O || "loading" === x || null == m && null == p,
+    L = "error" === x || null == b || null == m && null != p;
   return (0, a.jsx)(g.Z, {
     onClose: s,
     transitionState: o,

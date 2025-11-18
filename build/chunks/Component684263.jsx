@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk328456 = require("./328456.js"),
   Chunk619899 = require("./619899.js"),
   Chunk616066 = require("./616066.jsx"),
-  Chunk689157 = require("./689157.js"),
+  Chunk106221 = require("./106221.js"),
   Chunk63243 = require("./63243.js"),
   Chunk244488 = require("./244488.js");
 let _ = Chunk473749.memo(function(e) {
@@ -31,12 +31,12 @@ let _ = Chunk473749.memo(function(e) {
     firstNameplate: v
   } = (0, g.Rj)(t), x = (0, p.O1)(b), E = (0, c.ZP)(), O = (0, s.ap)(E), S = null != v && null != b && null != _, y = S ? o.EFr.SIZE_72 : o.EFr.SIZE_80;
   return (0, r.jsxs)("div", {
-    className: a()(h.container, {
-      [h.twoItemBundle]: !S,
-      [h.threeItemBundle]: S
+    className: a()(m.container, {
+      [m.twoItemBundle]: !S,
+      [m.threeItemBundle]: S
     }),
     children: [null != _ && (0, r.jsx)("div", {
-      className: h.profileEffectShopPreview,
+      className: m.profileEffectShopPreview,
       children: (0, r.jsx)(d.Z, {
         isHighlighted: l,
         skuId: _.skuId,
@@ -44,7 +44,7 @@ let _ = Chunk473749.memo(function(e) {
         removeSetHeight: true
       })
     }), S && (0, r.jsx)("div", {
-      className: h.nameplatePreview,
+      className: m.nameplatePreview,
       children: (0, r.jsx)(u.Z, {
         user: i,
         nameplate: v,
@@ -54,15 +54,15 @@ let _ = Chunk473749.memo(function(e) {
         pendingAvatarDecoration: x
       })
     }), null != x && (0, r.jsx)("div", {
-      className: h.avatarDecorationPreview,
+      className: m.avatarDecorationPreview,
       children: (0, r.jsx)(f.R, {
         item: x,
         user: i,
         avatarSize: y,
         isPurchased: n,
         isHighlighted: l,
-        avatarPlaceholderSrc: O ? m : C,
-        className: h.avatar
+        avatarPlaceholderSrc: O ? C : h,
+        className: m.avatar
       })
     })]
   })

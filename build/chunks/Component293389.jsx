@@ -29,10 +29,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk740508 = require("./740508.js"),
-  Chunk315091 = require("./315091.js"),
-  Chunk149715 = require("./149715.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk313911 = require("./313911.js"),
+  Chunk285236 = require("./285236.js"),
+  Chunk465106 = require("./465106.js"),
+  Chunk10198 = require("./10198.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -390,14 +390,14 @@ function Z(e) {
 
 function F() {
   return (0, Chunk54381.jsx)("div", {
-    className: o()(Chunk149715.flexCenter, Chunk740508.notDetected, Chunk740508.activeGame),
+    className: o()(Chunk465106.flexCenter, Chunk313911.notDetected, Chunk313911.activeGame),
     children: (0, Chunk54381.jsxs)("div", {
-      className: o()(Chunk740508.gameNameLastPlayed, Chunk149715.vertical),
+      className: o()(Chunk313911.gameNameLastPlayed, Chunk465106.vertical),
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk740508.gameName,
+        className: Chunk313911.gameName,
         children: Chunk388032.intl.string(Chunk388032.t.H68X9x)
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk740508.lastPlayed,
+        className: Chunk313911.lastPlayed,
         children: Chunk388032.intl.string(Chunk388032.t.T5Ilmw)
       })]
     })
