@@ -29,7 +29,7 @@ let _ = Chunk473749.memo(function(e) {
     firstProfileEffect: _,
     firstAvatarDecoration: b,
     firstNameplate: v
-  } = (0, p.Rj)(t), x = (0, g.O1)(b), E = (0, c.ZP)(), O = (0, s.ap)(E), S = null != v && null != b && null != _, y = S ? o.EFr.SIZE_72 : o.EFr.SIZE_80;
+  } = (0, g.Rj)(t), x = (0, p.O1)(b), E = (0, c.ZP)(), O = (0, s.ap)(E), S = null != v && null != b && null != _, y = S ? o.EFr.SIZE_72 : o.EFr.SIZE_80;
   return (0, r.jsxs)("div", {
     className: a()(h.container, {
       [h.twoItemBundle]: !S,
@@ -61,7 +61,7 @@ let _ = Chunk473749.memo(function(e) {
         avatarSize: y,
         isPurchased: n,
         isHighlighted: l,
-        avatarPlaceholderSrc: O ? C : m,
+        avatarPlaceholderSrc: O ? m : C,
         className: h.avatar
       })
     })]

@@ -31,19 +31,19 @@ let b = () => {
       sortDirection: n
     } = e;
     return t === o.E.RECENCY ? {
-      label: m.intl.string(m.t["51Bhiz"]),
+      label: C.intl.string(C.t["51Bhiz"]),
       value: "recent"
     } : t === o.E.PRICE ? n === s.F.ASC ? {
-      label: m.intl.string(m.t.m8RVU2),
+      label: C.intl.string(C.t.m8RVU2),
       value: "price-asc"
     } : {
-      label: m.intl.string(m.t.zBwQJO),
+      label: C.intl.string(C.t.zBwQJO),
       value: "price-desc"
     } : t === o.E.RELEVANCE ? {
-      label: m.intl.string(m.t["XoeT/z"]),
+      label: C.intl.string(C.t["XoeT/z"]),
       value: "relevance"
     } : {
-      label: m.intl.string(m.t.Y68e5p),
+      label: C.intl.string(C.t.Y68e5p),
       value: "popularity"
     }
   }, []), O = Chunk473749.useCallback(e => ({

@@ -2,7 +2,7 @@
 /** chunk id: 302933, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  J: () => g
+  J: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk168020 = require("./168020.jsx"),
   Chunk779485 = require("./779485.js");
-let g = Chunk473749.memo(function(e) {
+let p = Chunk473749.memo(function(e) {
   let {
     countdownTimerBlock: t,
     isVisible: n
@@ -27,7 +27,7 @@ let g = Chunk473749.memo(function(e) {
     }
   });
   return (0, r.jsxs)(s.animated.div, {
-    className: a()([p.countDownWrapper, o.tq && p.mobileWrapper]),
+    className: a()([g.countDownWrapper, o.tq && g.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -55,14 +55,14 @@ let g = Chunk473749.memo(function(e) {
       direction: c.k.Direction.VERTICAL,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-md/medium",
-        className: p.countdownLabel,
+        className: g.countdownLabel,
         style: null != t.textColor && "" !== t.textColor ? {
           color: t.textColor
         } : true,
         children: t.title
       }), null != t.body && "" !== t.body && (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
-        className: p.countdownBody,
+        className: g.countdownBody,
         style: null != t.textColor && "" !== t.textColor ? {
           color: t.textColor
         } : true,

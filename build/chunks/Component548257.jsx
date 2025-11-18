@@ -46,17 +46,17 @@ let y = {
       isLoading: n = false,
       handleTransition: l,
       heroBlock: o,
-      tab: m,
+      tab: C,
       onVisibilityChange: j
     } = e, k = (0, a.O)(e => {
       null == j || j(e)
-    }, .1, null != j), I = (0, c.e7)([g.default], () => g.default.getCurrentUser()), T = (0, h.sp)(), {
+    }, .1, null != j), I = (0, c.e7)([p.default], () => p.default.getCurrentUser()), T = (0, h.sp)(), {
       bannerStyleOverrides: L,
       logoStyleOverrides: B,
       heroLogo: P,
       heroBannerStatic: N,
       heroBannerAnimated: A
-    } = (0, _.hr)(o), R = null != (t = null == L ? true : L.responsive) && t, Z = null == L ? true : L.backgroundStyle, w = m === x.AW.ORBS ? O.intl.string(O.t["1CdL8d"]) : O.intl.string(O.t.xYKa1T), H = (0, C.FF)("CollectiblesContent");
+    } = (0, _.hr)(o), R = null != (t = null == L ? true : L.responsive) && t, Z = null == L ? true : L.backgroundStyle, w = C === x.AW.ORBS ? O.intl.string(O.t["1CdL8d"]) : O.intl.string(O.t.xYKa1T), H = (0, m.FF)("CollectiblesContent");
     return null != I && (n || o !== y) ? (0, r.jsxs)("div", {
       ref: k,
       className: S.heroBlock,
@@ -110,7 +110,7 @@ let y = {
             children: (0, r.jsx)(u.Button, {
               variant: "overlay-primary",
               onClick: () => {
-                m === x.AW.ORBS ? ((0, p.Y)({
+                C === x.AW.ORBS ? ((0, g.Y)({
                   pageType: E.ZY5.SHOP_ORBS_TAB,
                   sectionType: E.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: E.qAy.CTA_TO_QUEST_HOME
@@ -123,7 +123,7 @@ let y = {
                 }), f.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == T ? true : T.sessionId,
                   sku_id: o.categorySkuId,
-                  page_type: m,
+                  page_type: C,
                   page_section: null == T ? true : T.pageSection,
                   page_category: null == T ? true : T.pageCategory,
                   cta_name: "shop reward category hero button"
@@ -135,7 +135,7 @@ let y = {
         }), (0, r.jsx)(v.Z, {
           isBlockLoading: n,
           heroBlock: o,
-          tab: m
+          tab: C
         })]
       })]
     }) : null

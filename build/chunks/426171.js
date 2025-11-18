@@ -20,14 +20,14 @@ var Chunk473749 = require("./473749.js"),
   Chunk258939 = require("./258939.js"),
   Chunk956472 = require("./956472.js"),
   Chunk981631 = require("./981631.js");
-let C = "".concat("#").concat("itemSkuId", "="),
-  _ = new RegExp("^".concat(C, "(\\d+)$")),
+let m = "".concat("#").concat("itemSkuId", "="),
+  _ = new RegExp("^".concat(m, "(\\d+)$")),
   b = [Chunk981631.Z5c.COLLECTIBLES_SHOP],
   v = e => {
     let t = (0, l.TH)();
     r.useEffect(() => {
       if (null != e && b.includes(t.pathname)) return () => {
-        window.location.hash.startsWith(C) && window.location.replace("#")
+        window.location.hash.startsWith(m) && window.location.replace("#")
       }
     }, [e, t.pathname])
   },
@@ -37,7 +37,7 @@ let C = "".concat("#").concat("itemSkuId", "="),
       n = (0, Chunk828700.TH)(),
       a = require.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk100527.Z.COLLECTIBLES_SHOP,
       {
-        analyticsLocations: C
+        analyticsLocations: m
       } = (0, Chunk906732.ZP)(Chunk607070),
       b = (0, Chunk410127.Z)();
     Chunk473749.useEffect(() => {
@@ -71,7 +71,7 @@ let C = "".concat("#").concat("itemSkuId", "="),
                   let r = null == (s = n.variants) ? true : s.findIndex(e => e.skuId === t);
                   null != r && r > false && (0, d.$)(n, r)
                 }
-              }(0, g.T)({
+              }(0, p.T)({
                 product: e,
                 category: a,
                 analyticsSource: r,
@@ -82,14 +82,14 @@ let C = "".concat("#").concat("itemSkuId", "="),
             }
           })({
             productSkuId: require,
-            analyticsLocations: C,
+            analyticsLocations: m,
             analyticsSource: Chunk607070,
             tab: b
           })
         }, 250);
         return () => clearTimeout(module)
       }
-    }, [C, Chunk607070, module, v, b])
+    }, [m, Chunk607070, module, v, b])
   },
   E = e => {
     let t = r.useRef({}),

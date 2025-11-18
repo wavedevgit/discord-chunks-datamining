@@ -2,7 +2,7 @@
 /** chunk id: 370039, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  a: () => p
+  a: () => g
 });
 var Chunk473749 = require("./473749.js"),
   Chunk399606 = require("./399606.js"),
@@ -13,7 +13,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk27123 = require("./27123.js"),
   Chunk330349 = require("./330349.js"),
   Chunk724994 = require("./724994.js");
-let p = () => {
+let g = () => {
   let e = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     t = null != module && Chunk74538.ZP.canUseCollectibles(module);
   return (0, Chunk473749.useCallback)(e => null == e || 0 === e.length ? e : e.filter(e => {

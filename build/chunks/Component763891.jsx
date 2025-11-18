@@ -43,10 +43,10 @@ function R(e) {
     isFetchingCategories: n,
     scrollerRef: R,
     tab: Z
-  } = e, w = (0, p.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
+  } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: D,
     includeUnpublished: M
-  } = (0, E.Z)(), F = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, Y, q] = l.useMemo(() => {
+  } = (0, E.Z)(), F = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, Y, q] = l.useMemo(() => {
     switch (Z) {
       case O.AW.AVATAR_DECORATIONS:
         return [y.intl.string(y.t.dRZYNE), G ? L.Z : T.Z, i.Z.AVATAR_DECORATION];
@@ -60,19 +60,19 @@ function R(e) {
   }, [Z, G]), J = (0, h.a)(), Q = l.useMemo(() => J(W.filter(e => {
     var t;
     return e.type === q || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
-  })), [W, q, J]), X = (0, m.l)(Q);
+  })), [W, q, J]), X = (0, C.l)(Q);
   l.useEffect(() => {
-    (0, C.n)({
+    (0, m.n)({
       sessionId: H,
-      checkpoint: C.a.SHOP_MOUNTED,
+      checkpoint: m.a.SHOP_MOUNTED,
       tab: Z,
       unpublishedCategoriesShown: M,
       cacheDisabled: D
     })
   }, []), l.useEffect(() => {
-    n || (0, C.n)({
+    n || (0, m.n)({
       sessionId: H,
-      checkpoint: C.a.SHOP_RENDERED,
+      checkpoint: m.a.SHOP_RENDERED,
       tab: Z,
       unpublishedCategoriesShown: M,
       cacheDisabled: D
@@ -94,8 +94,8 @@ function R(e) {
     }), (0, r.jsx)("div", {
       className: j.products,
       children: X.slice(40 * (V - 1), 40 * V).map((e, t) => {
-        let n = g.Z.getCategory(e.categorySkuId);
-        return null == n ? null : (0, r.jsx)(p.k0, {
+        let n = p.Z.getCategory(e.categorySkuId);
+        return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
             tilePosition: t
           },

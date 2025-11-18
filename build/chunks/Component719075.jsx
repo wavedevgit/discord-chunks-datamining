@@ -30,11 +30,11 @@ let v = e => {
     } = (0, d.G)(t.skuId), {
       isPurchased: E,
       isPartiallyOwnedBundle: O
-    } = (0, p.L)(t), S = (0, u.G1)(t), y = (0, u.rN)(t), j = l.useMemo(() => (0, u.BH)(t, v), [t, v]), k = (0, m.Iw)(t), {
+    } = (0, g.L)(t), S = (0, u.G1)(t), y = (0, u.rN)(t), j = l.useMemo(() => (0, u.BH)(t, v), [t, v]), k = (0, C.Iw)(t), {
       checkoutEligiblePrices: I,
       hasSufficientOrbs: T,
       shouldCheckoutWithOrbs: L
-    } = (0, C.Ip)({
+    } = (0, m.Ip)({
       product: t,
       isPremiumUser: v,
       prioritizedCurrency: n,
@@ -64,7 +64,7 @@ let v = e => {
       variant: "text-md/bold",
       lineClamp: 1,
       children: _.intl.string(_.t.rt69oo)
-    }) : 0 === I.length ? null : (0, r.jsx)(g.F, {
+    }) : 0 === I.length ? null : (0, r.jsx)(p.F, {
       price: I[0],
       discount: j,
       nitroIconType: v ? "default" : true,

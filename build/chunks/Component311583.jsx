@@ -2,7 +2,7 @@
 /** chunk id: 311583, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -24,9 +24,9 @@ let h = e => {
       cardRef: o,
       onClick: d,
       icon: h,
-      prioritizedCurrency: m,
-      onClickAnalytics: C
-    } = e, _ = (0, s.Nd)(), b = null == _ ? true : _.tab, v = (0, a.sp)(), x = (0, p.J)(t, m), E = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, C);
+      prioritizedCurrency: C,
+      onClickAnalytics: m
+    } = e, _ = (0, s.Nd)(), b = null == _ ? true : _.tab, v = (0, a.sp)(), x = (0, g.J)(t, C), E = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, m);
     return null != d || null != h ? (0, r.jsx)(l.hU, {
       variant: "primary",
       "aria-label": f.intl.string(f.t.SKNnqq),
@@ -36,7 +36,7 @@ let h = e => {
       }
     }) : x ? (0, r.jsx)(a.k0, {
       newValue: {
-        pageCategory: b === g.AW.HOME || null == v ? true : v.pageCategory
+        pageCategory: b === p.AW.HOME || null == v ? true : v.pageCategory
       },
       children: (0, r.jsx)(c.Z, {
         primary: true,
@@ -47,7 +47,7 @@ let h = e => {
       })
     }) : null
   },
-  m = e => {
+  C = e => {
     let {
       skuId: t,
       cardRef: n,
@@ -55,13 +55,13 @@ let h = e => {
       icon: i,
       prioritizedCurrency: a,
       onClickAnalytics: s
-    } = e, c = (0, u.LJ)(t), p = (0, o.o)(c);
+    } = e, c = (0, u.LJ)(t), g = (0, o.o)(c);
     if (null == c) return null;
-    let g = (0, d.W)(c, p);
+    let p = (0, d.W)(c, g);
     return (0, r.jsx)(h, {
-      product: g,
+      product: p,
       cardRef: n,
-      selectedVariantIndex: p,
+      selectedVariantIndex: g,
       onClick: l,
       icon: i,
       prioritizedCurrency: a,

@@ -59,6 +59,10 @@ module.exports = {
   wideBannerBlockButton: "wideBannerBlockButton__08415",
   wideBannerTextContainer: "wideBannerTextContainer__08415",
   wideBannerContentContainer: "wideBannerContentContainer__08415",
+  wideBannerWithCTAContentContainer: "wideBannerWithCTAContentContainer__08415",
+  wideBannerCtaContainer: "wideBannerCtaContainer__08415",
+  wideBannerLogo: "wideBannerLogo__08415",
+  wideBannerCloseButton: "wideBannerCloseButton__08415",
   shelfBlockContainer: "shelfBlockContainer__08415",
   shopScroll: "shopScroll__08415"
 }

@@ -23,20 +23,20 @@ function h(e) {
     selectedTab: n
   } = e, {
     searchQuery: h,
-    onSetSearchQuery: m
-  } = (0, u.S)(), [C, _] = l.useState(""), b = (0, c.sp)(), v = (0, i.e7)([s.default], () => s.default.locale);
+    onSetSearchQuery: C
+  } = (0, u.S)(), [m, _] = l.useState(""), b = (0, c.sp)(), v = (0, i.e7)([s.default], () => s.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
-      m(C)
+      C(m)
     }, 250);
     return () => clearTimeout(e)
-  }, [C, m]), l.useEffect(() => {
+  }, [m, C]), l.useEffect(() => {
     _(h)
   }, [h]), (0, r.jsx)(a.P3F, {
     ignoreKeyPress: true,
     className: f.searchBar,
     onClick: () => {
-      n !== d.AW.CATALOG && t(d.AW.CATALOG), o.default.track(p.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      n !== d.AW.CATALOG && t(d.AW.CATALOG), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == b ? true : b.sessionId,
         page_section: null == b ? true : b.pageSection,
         page_category: null == b ? true : b.pageCategory,
@@ -49,12 +49,12 @@ function h(e) {
     children: (0, r.jsx)(a.E1j, {
       size: "sm",
       onKeyDown: e => {
-        "Enter" === e.key && m(C)
+        "Enter" === e.key && C(m)
       },
-      query: C,
+      query: m,
       onChange: _,
       onClear: () => {
-        _(""), o.default.track(p.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        _(""), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == b ? true : b.sessionId,
           page_section: null == b ? true : b.pageSection,
           page_category: null == b ? true : b.pageCategory,
@@ -64,7 +64,7 @@ function h(e) {
           page_type: n
         })
       },
-      placeholder: "en-US" === v ? g.intl.string(g.t.arz34K) : g.intl.string(g.t["hIt/Nm"])
+      placeholder: "en-US" === v ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])
     })
   })
 }

@@ -34,9 +34,9 @@ function k(e) {
     products: t,
     header: n,
     category: l
-  } = e, i = (0, o.e7)([u.default], () => u.default.getCurrentUser()), a = (0, S.St)(t), s = p.Z.useConfig({
+  } = e, i = (0, o.e7)([u.default], () => u.default.getCurrentUser()), a = (0, S.St)(t), s = g.Z.useConfig({
     location: "Products"
-  }).showCardsV2, g = (0, d.sp)();
+  }).showCardsV2, p = (0, d.sp)();
   return null == i || 0 === t.length ? null : (0, r.jsxs)("div", {
     children: [null != n ? (0, r.jsx)(c.Text, {
       className: j.itemTypeTitle,
@@ -54,7 +54,7 @@ function k(e) {
         children: s ? (0, r.jsx)(v.Z, {
           skuId: e.skuId,
           skipLimitedTimeCheck: true,
-          onClickAnalytics: (0, x.wO)(e, y.AW.CATALOG, g)
+          onClickAnalytics: (0, x.wO)(e, y.AW.CATALOG, p)
         }, e.skuId) : (0, r.jsx)(b.Z, {
           category: l,
           product: e,
@@ -86,7 +86,7 @@ function T(e) {
   return (0, r.jsxs)("div", {
     className: j.categoryWrapper,
     ref: a,
-    children: [(0, r.jsx)(C.Z, {
+    children: [(0, r.jsx)(m.Z, {
       category: t
     }), (0, r.jsx)(I, {
       category: t
@@ -101,9 +101,9 @@ function L(e) {
     setCategoryRef: i,
     currentPage: s,
     handlePageChange: o
-  } = e, u = (0, d.sp)(), p = (0, E.R)(), f = null != (t = null == u ? true : u.sessionId) ? t : "", {
+  } = e, u = (0, d.sp)(), g = (0, E.R)(), f = null != (t = null == u ? true : u.sessionId) ? t : "", {
     noCache: h,
-    includeUnpublished: C
+    includeUnpublished: m
   } = (0, O.Z)(), b = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
@@ -114,24 +114,24 @@ function L(e) {
     return b.slice(e, e + y.kN)
   }, [b, s]);
   l.useEffect(() => {
-    (0, m.n)({
+    (0, C.n)({
       sessionId: f,
-      checkpoint: m.a.SHOP_MOUNTED,
+      checkpoint: C.a.SHOP_MOUNTED,
       tab: y.AW.CATALOG,
-      unpublishedCategoriesShown: C,
+      unpublishedCategoriesShown: m,
       cacheDisabled: h
     })
   }, []), l.useEffect(() => {
-    p || 0 === v.length || (0, m.n)({
+    g || 0 === v.length || (0, C.n)({
       sessionId: f,
-      checkpoint: m.a.SHOP_RENDERED,
+      checkpoint: C.a.SHOP_RENDERED,
       tab: y.AW.CATALOG,
-      unpublishedCategoriesShown: C,
+      unpublishedCategoriesShown: m,
       cacheDisabled: h
     })
-  }, [f, C, h, p, v.length]);
-  let x = (0, g.FF)("CollectiblesBrowse");
-  return p ? (0, r.jsx)(_.Z, {}) : (0, r.jsxs)("div", {
+  }, [f, m, h, g, v.length]);
+  let x = (0, p.FF)("CollectiblesBrowse");
+  return g ? (0, r.jsx)(_.Z, {}) : (0, r.jsxs)("div", {
     className: a()(j.categories, {
       [j.categoriesNoFilter]: !x
     }),

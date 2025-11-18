@@ -35,17 +35,17 @@ function y(e) {
     showFilterInitially: c = true,
     onUnmount: u
   } = e;
-  (0, p.A)();
-  let g = (0, d.FF)("CollectiblesBrowse"),
+  (0, g.A)();
+  let p = (0, d.FF)("CollectiblesBrowse"),
     f = l.useRef(null),
     {
-      handleScroll: m
+      handleScroll: C
     } = (0, o.z)(f, t),
     {
       setCategoryRef: _,
       handleScrollToCategory: b
     } = (0, h.xV)(f.current),
-    [v, x] = l.useState(g && c),
+    [v, x] = l.useState(p && c),
     [E, O] = l.useState(false);
   return l.useEffect(() => {
     null != i && b(i)
@@ -57,19 +57,19 @@ function y(e) {
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
-    g || x(false)
-  }, [g, x]), (0, r.jsx)("div", {
+    p || x(false)
+  }, [p, x]), (0, r.jsx)("div", {
     className: a()(S.pageWrapper, {
-      [S.pageWrapperFilter]: g
+      [S.pageWrapperFilter]: p
     }),
     children: (0, r.jsxs)("main", {
       className: a()(S.page, {
-        [S.pageFilter]: g
+        [S.pageFilter]: p
       }),
       children: [(0, r.jsx)(s.yWw, {
         className: S.shopScroll,
         ref: f,
-        onScroll: m,
+        onScroll: C,
         children: (0, r.jsx)(j, {
           isSmallScreen: E,
           filterBarOpen: v,
@@ -83,7 +83,7 @@ function y(e) {
         className: S.divider
       }), v && !E && (0, r.jsx)(s.Ttm, {
         className: S.filterBar,
-        children: (0, r.jsx)(C.Z, {})
+        children: (0, r.jsx)(m.Z, {})
       })]
     })
   })
@@ -97,7 +97,7 @@ let j = e => {
     scrollerRef: h,
     sortedCategories: y,
     setCategoryRef: j
-  } = e, k = (0, d.FF)("CollectiblesBrowse"), I = l.useRef(null), T = (0, p.S)(e => e.hasDefaultFilters()), L = (0, u.sp)(), {
+  } = e, k = (0, d.FF)("CollectiblesBrowse"), I = l.useRef(null), T = (0, g.S)(e => e.hasDefaultFilters()), L = (0, u.sp)(), {
     handlePageChange: B,
     currentPage: P
   } = (0, _.h)(h), N = l.useCallback(e => {
@@ -136,7 +136,7 @@ let j = e => {
         className: S.controls,
         children: [(0, r.jsx)("div", {
           className: S.controlsLeftSide,
-          children: (0, r.jsx)(g.Z, {})
+          children: (0, r.jsx)(p.Z, {})
         }), (0, r.jsxs)("div", {
           className: a()(S.controlsRightSide, {
             [S.controlsRightSideResponsive]: t
@@ -146,7 +146,7 @@ let j = e => {
             children: [(0, r.jsx)(s.Text, {
               variant: "text-md/semibold",
               children: O.intl.string(O.t.uaX705)
-            }), (0, r.jsx)(m.Z, {})]
+            }), (0, r.jsx)(C.Z, {})]
           }), (0, r.jsx)("div", {
             ref: A,
             children: (0, r.jsx)(s.Button, {
@@ -173,7 +173,7 @@ let j = e => {
           ref: I,
           children: (0, r.jsx)(s.Den, {
             className: S.filterOverlayContent,
-            children: (0, r.jsx)(C.Z, {})
+            children: (0, r.jsx)(m.Z, {})
           })
         })]
       }), k && !T ? (0, r.jsx)(b.Z, {

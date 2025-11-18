@@ -46,7 +46,7 @@ function I(e) {
     currentPage: R,
     totalCount: Z,
     isFetchingResults: w
-  } = (0, m.a)(), H = (0, s.Wu)([p.Z], () => p.Z.getProductsBySkus(A)), D = l.useCallback(() => {
+  } = (0, C.a)(), H = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(A)), D = l.useCallback(() => {
     var e;
     null == i || null == (e = i.current) || e.scrollToTop({
       animate: true
@@ -58,9 +58,9 @@ function I(e) {
   let F = (0, f.a)(),
     W = l.useMemo(() => F(H), [F, H]);
   l.useEffect(() => {
-    n || (0, C.n)({
+    n || (0, m.n)({
       sessionId: L,
-      checkpoint: C.a.SHOP_RENDERED,
+      checkpoint: m.a.SHOP_RENDERED,
       tab: I,
       unpublishedCategoriesShown: P,
       cacheDisabled: B
@@ -96,7 +96,7 @@ function I(e) {
         page_type: "catalog"
       }), z((e - 1) * G)
     }, [T, G, z]),
-    X = g.Z.useConfig({
+    X = p.Z.useConfig({
       location: "CollectiblesFilterableShop"
     }).showCardsV2;
   return (0, r.jsxs)(x.zp.Provider, {
@@ -111,7 +111,7 @@ function I(e) {
         }),
         ref: V,
         children: [q && [...Array(G)].map((e, t) => X ? (0, r.jsx)(E.Z, {}, t) : (0, r.jsx)(_.K, {}, t)), !q && W.map((e, t) => {
-          let n = p.Z.getCategory(e.categorySkuId);
+          let n = g.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {
               tilePosition: t

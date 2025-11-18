@@ -43,11 +43,11 @@ let P = e => {
       selectedVariantIndex: o,
       hasDiscountOffer: u,
       discountOfferAmount: d,
-      text: p
-    } = e, g = (0, _.XM)(t, i, false), f = u ? L.intl.formatToPlainString(L.t["5U5RB5"], {
+      text: g
+    } = e, p = (0, _.XM)(t, i, false), f = u ? L.intl.formatToPlainString(L.t["5U5RB5"], {
       discountOfferAmount: d
     }) : L.intl.formatToPlainString(L.t["cNSL/j"], {
-      price: g
+      price: p
     });
     return (0, r.jsx)(a.Button, {
       variant: "primary",
@@ -62,7 +62,7 @@ let P = e => {
           variantsReturnStyle: l.v.VARIANTS_GROUP
         })
       },
-      text: null != p ? p : f,
+      text: null != g ? g : f,
       fullWidth: true
     })
   },
@@ -170,7 +170,7 @@ let P = e => {
         })
       }),
       onClick: e => {
-        e.stopPropagation(), null == i || i("rental claim with orbs button"), (0, p.qA)({
+        e.stopPropagation(), null == i || i("rental claim with orbs button"), (0, g.qA)({
           skuId: (0, O.S)({
             product: t
           }),
@@ -215,7 +215,7 @@ let P = e => {
         })
       }),
       onClick: e => {
-        e.stopPropagation(), null == c || c("claim with orbs button"), (0, p.qA)({
+        e.stopPropagation(), null == c || c("claim with orbs button"), (0, g.qA)({
           skuId: (0, O.S)({
             product: t,
             selectedVariantIndex: s
@@ -266,7 +266,7 @@ let P = e => {
       text: c,
       prioritizedCurrency: u,
       onClickAnalytics: d
-    } = e, p = (0, i.e7)([g.default], () => g.default.getCurrentUser()), h = f.ZP.canUseCollectibles(p), C = (0, E.$l)(), {
+    } = e, g = (0, i.e7)([p.default], () => p.default.getCurrentUser()), h = f.ZP.canUseCollectibles(g), m = (0, E.$l)(), {
       isPurchased: O,
       isPartiallyOwnedBundle: S
     } = (0, x.L)(t), k = (0, _.G1)(t), I = (0, _.rN)(t), {
@@ -284,10 +284,10 @@ let P = e => {
       isPremiumUser: h,
       prioritizedCurrency: u,
       hasDiscountOffer: F,
-      isRental: C
+      isRental: m
     }), {
       analyticsLocations: z
-    } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), G = (0, E.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [K, Y] = (0, i.Wu)([m.Z], () => [m.Z.isClaiming === t.skuId, null != m.Z.isClaiming && m.Z.isClaiming !== t.skuId]), {
+    } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), G = (0, E.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [K, Y] = (0, i.Wu)([C.Z], () => [C.Z.isClaiming === t.skuId, null != C.Z.isClaiming && C.Z.isClaiming !== t.skuId]), {
       handleUseNow: q,
       isApplying: J
     } = (0, b.W)({
@@ -319,7 +319,7 @@ let P = e => {
       text: c,
       onClickAnalytics: d
     });
-    if (W && V) return C ? (0, r.jsx)(H, {
+    if (W && V) return m ? (0, r.jsx)(H, {
       product: t,
       analyticsLocations: z,
       onClickAnalytics: d
@@ -359,7 +359,7 @@ let P = e => {
       text: i,
       prioritizedCurrency: a,
       onClickAnalytics: s
-    } = e, o = (0, E.LJ)(t), c = (0, C.o)(o);
+    } = e, o = (0, E.LJ)(t), c = (0, m.o)(o);
     if (null == o) return null;
     let u = (0, S.W)(o, c);
     return (0, r.jsx)(F, {

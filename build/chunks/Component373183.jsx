@@ -35,7 +35,7 @@ let S = Chunk473749.memo(function(e) {
     readyToClaim: y,
     collectibleProductSkuIds: j,
     collectedSkuIds: k
-  } = (0, C.q)(t, n), I = (0, o.e7)([h.Z], () => h.Z.isClaiming === n);
+  } = (0, m.q)(t, n), I = (0, o.e7)([h.Z], () => h.Z.isClaiming === n);
   return (0, r.jsx)("div", {
     ref: i,
     className: a()(b.productCardContainer, v.defaultCursor, {
@@ -89,8 +89,8 @@ let S = Chunk473749.memo(function(e) {
           }), (0, r.jsx)("div", {
             className: b.footerInfoShrinkOnHover,
             children: (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(p.Z, {
-                variant: p.y.BLUE,
+              children: [(0, r.jsx)(g.Z, {
+                variant: g.y.BLUE,
                 progress: k.length,
                 maximum: j.length
               }), (0, r.jsxs)("div", {
@@ -120,9 +120,9 @@ let S = Chunk473749.memo(function(e) {
             children: (0, r.jsx)(s.zxk, {
               variant: "primary",
               onClick: e => {
-                e.stopPropagation(), y && (0, g.wW)(t.skuId, n).then(() => {
+                e.stopPropagation(), y && (0, p.wW)(t.skuId, n).then(() => {
                   let e = f.Z.getProduct(n);
-                  null != e && (0, m.Z)({
+                  null != e && (0, C.Z)({
                     product: e,
                     analyticsLocations: [],
                     overrideGraphic: {
