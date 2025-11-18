@@ -41,12 +41,11 @@ function R(e) {
     isHoveringOrFocusing: D,
     onOpenProfile: w,
     channelId: L,
-    onClose: x,
-    onRoleClick: M
-  } = e, j = c.ZP.getName(null == P ? true : P.id, L, t), k = (0, i.e7)([u.Z], () => {
+    onClose: x
+  } = e, M = c.ZP.getName(null == P ? true : P.id, L, t), j = (0, i.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(t.id)) ? true : e.application
-  }), U = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), G = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), B = (0, d.b)({
+  }), k = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), U = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), G = (0, d.b)({
     location: "BotUserProfilePopoutBody"
   });
   return (0, r.jsxs)(a.Ttm, {
@@ -56,7 +55,7 @@ function R(e) {
       user: t,
       guildId: null == P ? true : P.id,
       onOpenProfile: w,
-      nickname: j,
+      nickname: M,
       pronouns: null == R ? true : R.pronouns,
       tags: (0, r.jsx)(_.Z, {
         displayProfile: R,
@@ -66,7 +65,7 @@ function R(e) {
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.Z, {
           userId: t.id
-        }), !G && (0, r.jsx)(O.Z, {
+        }), !U && (0, r.jsx)(O.Z, {
           userId: t.id,
           isVisible: D,
           onOpenProfile: w
@@ -91,9 +90,9 @@ function R(e) {
     }), (0, r.jsx)(v.Z, {
       user: t,
       bio: null == R ? true : R.bio,
-      hidePersonalInformation: G,
+      hidePersonalInformation: U,
       onClose: x
-    }), B ? (0, r.jsx)(g.Z, {
+    }), G ? (0, r.jsx)(g.Z, {
       user: t,
       currentUser: n,
       guildId: null == P ? true : P.id,
@@ -104,10 +103,10 @@ function R(e) {
       currentUser: n,
       guildId: null == P ? true : P.id,
       onClose: x
-    }), (null == k ? true : k.popularApplicationCommandIds) != null && null != U && (0, r.jsx)(f.Z, {
-      applicationId: k.id,
-      commandIds: k.popularApplicationCommandIds,
-      channel: U,
+    }), (null == j ? true : j.popularApplicationCommandIds) != null && null != k && (0, r.jsx)(f.Z, {
+      applicationId: j.id,
+      commandIds: j.popularApplicationCommandIds,
+      channel: k,
       guildId: null == P ? true : P.id,
       onClick: x
     }), null != P && (0, r.jsx)(m.Z, {
@@ -115,8 +114,7 @@ function R(e) {
       children: (0, r.jsx)(I.Z, {
         user: t,
         currentUser: n,
-        guild: P,
-        onRoleClick: M
+        guild: P
       })
     })]
   })

@@ -1,18 +1,18 @@
-/** Chunk was on 88146 **/
+/** Chunk was on 32923 **/
 /** chunk id: 130341, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  UT: () => C,
-  _4: () => p,
-  cm: () => S,
-  e: () => h,
-  eg: () => y,
-  lJ: () => I,
-  rY: () => v,
-  uo: () => O
+  UT: () => O,
+  _4: () => h,
+  cm: () => b,
+  e: () => j,
+  eg: () => v,
+  lJ: () => x,
+  rY: () => _,
+  uo: () => C
 }), require("./539854.js"), require("./388685.js"), require("./781311.js");
 var Chunk473749 = require("./473749.js"),
   Chunk658722 = require("./658722.js"),
-  o = require.n(Chunk658722),
+  l = require.n(Chunk658722),
   Chunk442837 = require("./442837.js"),
   Chunk271383 = require("./271383.js"),
   Chunk594174 = require("./594174.js"),
@@ -23,78 +23,78 @@ var Chunk473749 = require("./473749.js"),
   Chunk480608 = require("./480608.js"),
   Chunk203377 = require("./203377.js"),
   Chunk981631 = require("./981631.js");
-let p = 50,
-  S = 1e3;
+let h = 50,
+  b = 1e3;
 
-function I(e, t) {
-  let n = (0, s.Wu)([i.ZP], () => {
-      let n = i.ZP.getMembers(e);
+function x(e, t) {
+  let n = (0, a.Wu)([s.ZP], () => {
+      let n = s.ZP.getMembers(e);
       return null == t ? n : n.filter(t)
     }, [e, t]),
-    l = (0, s.cj)([u.default], () => n.reduce((e, t) => {
-      let n = u.default.getUser(t.userId);
+    i = (0, a.cj)([o.default], () => n.reduce((e, t) => {
+      let n = o.default.getUser(t.userId);
       return null == n || (e[t.userId] = n), e
     }, {}), [n]);
   return r.useMemo(() => {
     let t = [];
-    for (let o of n) {
+    for (let l of n) {
       var r;
-      let n = l[o.userId];
+      let n = i[l.userId];
       null != n && t.push({
-        name: null != (r = o.nick) ? r : m.ZP.getName(n),
-        userTag: m.ZP.getUserTag(n),
-        id: o.userId,
+        name: null != (r = l.nick) ? r : g.ZP.getName(n),
+        userTag: g.ZP.getUserTag(n),
+        id: l.userId,
         avatarSource: n.getAvatarSource(e),
         avatarURL: n.getAvatarURL(e, 80),
         bot: n.bot,
         verifiedBot: n.isVerifiedBot(),
-        roles: o.roles,
-        key: o.userId,
+        roles: l.roles,
+        key: l.userId,
         user: n
       })
     }
     return t
-  }, [n, l, e])
+  }, [n, i, e])
 }
 
-function h(e, t, n) {
-  let l = r.useRef(n);
+function j(e, t, n) {
+  let i = r.useRef(n);
   return r.useEffect(() => {
-    l.current = n
+    i.current = n
   }), r.useEffect(() => {
-    (0, f.H)(e, t).catch(l.current)
-  }, [e, t]), I(e, r.useCallback(e => e.roles.includes(t), [t]))
+    (0, m.H)(e, t).catch(i.current)
+  }, [e, t]), x(e, r.useCallback(e => e.roles.includes(t), [t]))
 }
 
-function v(e, t) {
+function _(e, t) {
   let n = r.useRef(false);
   r.useEffect(() => {
-    d.Z.requestMembers(e, t, 200), "" === t || n.current || (a.default.track(b.rMx.SEARCH_STARTED, {
+    u.Z.requestMembers(e, t, 200), "" === t || n.current || (c.default.track(f.rMx.SEARCH_STARTED, {
       search_type: "Role Members"
     }), n.current = true)
   }, [e, t])
 }
 
-function y(e, t) {
+function v(e, t) {
   let n = e.trim().toLowerCase();
-  return t.id === n || o()(n, t.name.toLowerCase()) || o()(n, t.userTag.toLowerCase())
+  return t.id === n || l()(n, t.name.toLowerCase()) || l()(n, t.userTag.toLowerCase())
 }
 
-function C(e) {
+function O(e) {
   switch (e) {
-    case g.ZI.MEMBERS:
+    case p.ZI.MEMBERS:
       return "Members";
-    case g.ZI.PERMISSIONS:
+    case p.ZI.PERMISSIONS:
       return "Permissions";
-    case g.ZI.DISPLAY:
+    case p.ZI.DISPLAY:
       return "Role Settings";
-    case g.ZI.VERIFICATIONS:
+    case p.ZI.VERIFICATIONS:
       return "Connections";
     default:
-      (0, c.vE)(e)
+      (0, d.vE)(e)
   }
 }
 
-function O(e, t) {
+function C(e, t) {
   return "" === t || e.name.toLowerCase().includes(t.toLowerCase())
 }
