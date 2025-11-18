@@ -114,7 +114,7 @@ function K(e) {
   }), ei = (0, S.Z)(i), ea = null != ei.text && "" !== ei.text, {
     largeImage: eo,
     smallImage: es
-  } = (0, p.FO)(i, V), el = (0, j.Z)({
+  } = (0, p.FO)(i, V), el = (0, k.Z)({
     location: "UserProfileActivityCard",
     user: t,
     currentUser: n,
@@ -329,7 +329,7 @@ function K(e) {
         textId: J,
         tags: ec()
       }, ei), {
-        contextMenu: (0, r.jsx)(k.Z, {
+        contextMenu: (0, r.jsx)(j.Z, {
           display: "live",
           user: t,
           activity: i,

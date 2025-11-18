@@ -189,7 +189,7 @@ module.exports = function(e) {
       relevance: 10,
       begin: /^\s*['"]use (strict|asm)['"]/
     },
-    k = {
+    j = {
       variants: [{
         match: [/function/, /\s+/, d, /(?=\s*\()/]
       }, {
@@ -203,7 +203,7 @@ module.exports = function(e) {
       contains: [w],
       illegal: /%/
     },
-    j = {
+    k = {
       relevance: 0,
       match: /\b[A-Z][A-Z_0-9]+\b/,
       className: "variable.constant"
@@ -316,7 +316,7 @@ module.exports = function(e) {
           contains: ["self"]
         }]
       }]
-    }, k, {
+    }, j, {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
@@ -338,7 +338,7 @@ module.exports = function(e) {
         1: "title.function"
       },
       contains: [w]
-    }, G, j, L, Z, {
+    }, G, k, L, Z, {
       match: /\$[(.]/
     }]
   }

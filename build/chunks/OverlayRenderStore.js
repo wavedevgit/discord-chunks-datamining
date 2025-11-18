@@ -87,8 +87,8 @@ let w = new Chunk710845.Z("OverlayRenderStore"),
   L = Chunk837268.R5.UNSET,
   x = false,
   M = false,
-  k = false,
-  j = (0, Chunk358085.isWindows)() && Chunk358085.isPlatformEmbedded && !__OVERLAY__,
+  j = false,
+  k = (0, Chunk358085.isWindows)() && Chunk358085.isPlatformEmbedded && !__OVERLAY__,
   U = null,
   G = {},
   B = null,
@@ -491,7 +491,7 @@ async function eg(e, t) {
 }
 
 function eE() {
-  ed(), k = false, Z = null, ex()
+  ed(), j = false, Z = null, ex()
 }
 
 function eb(e) {
@@ -603,17 +603,17 @@ function eL(e) {
 }
 
 function ex() {
-  Chunk353926.Z.hasLoadedExperiments && !k && (k = true, eg(Chunk454991.v.legacyEnabled, Chunk454991.v.oopEnabled))
+  Chunk353926.Z.hasLoadedExperiments && !j && (j = true, eg(Chunk454991.v.legacyEnabled, Chunk454991.v.oopEnabled))
 }
 
 function eM() {
-  k = false, Z = null
+  j = false, Z = null
 }
 
-function ek() {
-  k = false, Z = null, eT()
+function ej() {
+  j = false, Z = null, eT()
 }
-class ej extends(r = Chunk442837.ZP.Store) {
+class ek extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk353926.Z, Chunk77498.Z, Chunk624864.Z, Chunk594190.ZP), this.syncWith([Chunk353926.Z], ex)
   }
@@ -621,7 +621,7 @@ class ej extends(r = Chunk442837.ZP.Store) {
     return Y
   }
   getHasLoadedExperiments() {
-    return k
+    return j
   }
   getForcedRenderMode() {
     return L
@@ -688,11 +688,11 @@ class ej extends(r = Chunk442837.ZP.Store) {
     return Object.values(G).filter(e => e.overlayMethod !== b.gl.Disabled && e.state === b.mM.OVERLAY_RENDERING)
   }
 }
-A(ej, "displayName", "OverlayRenderStore");
-let eU = new ej(Chunk570140.Z, !j ? {} : {
+A(ek, "displayName", "OverlayRenderStore");
+let eU = new ek(Chunk570140.Z, !k ? {} : {
     CONNECTION_OPEN: eE,
     LOGIN: eM,
-    LOGOUT: ek,
+    LOGOUT: ej,
     EXPERIMENT_OVERRIDE_BUCKET: eE,
     OVERLAY_SET_ENABLED: eb,
     GAME_LAUNCH_SUCCESS: ey,

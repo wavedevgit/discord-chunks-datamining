@@ -68,13 +68,13 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e) {
+function k(e) {
   let {
     code: {
       code: t,
@@ -194,7 +194,7 @@ class U extends Chunk473749.PureComponent {
           text: Chunk388032.intl.string(Chunk388032.t.qZZUy6)
         })
       });
-      let i = e => e.map(e => (0, r.jsx)(j, {
+      let i = e => e.map(e => (0, r.jsx)(k, {
         code: e
       }, e.code));
       e = (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
@@ -311,7 +311,7 @@ class U extends Chunk473749.PureComponent {
       let e = O.Z.getVerificationKey();
       await u.Z.confirmViewBackupCodes(e, true)
     }), L(this, "sendMFABackupCodesVerificationKeyEmail", () => {
-      (0, c.h7j)(e => (0, r.jsx)(g.Z, k(x({}, e), {
+      (0, c.h7j)(e => (0, r.jsx)(g.Z, j(x({}, e), {
         handleSubmit: e => u.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
           this.viewBackupCodes(e)
         }),
@@ -319,7 +319,7 @@ class U extends Chunk473749.PureComponent {
         actionText: P.intl.string(P.t.ajkYcF)
       })))
     }), L(this, "viewBackupCodes", e => {
-      (0, c.h7j)(t => (0, r.jsx)(p.Z, k(x({}, t), {
+      (0, c.h7j)(t => (0, r.jsx)(p.Z, j(x({}, t), {
         handleSubmit: e => u.Z.confirmViewBackupCodes(e, false).then(() => t.onClose()),
         maxLength: 8,
         title: P.intl.string(P.t["mGppp/"]),
@@ -355,7 +355,7 @@ class U extends Chunk473749.PureComponent {
         onAddedPhone: u.Z.enableSMS
       }) : u.Z.enableSMS()
     }), L(this, "handleDisableSMS", () => {
-      (0, c.h7j)(e => (0, r.jsx)(g.Z, k(x({}, e), {
+      (0, c.h7j)(e => (0, r.jsx)(g.Z, j(x({}, e), {
         handleSubmit: u.Z.disableSMS,
         title: P.intl.string(P.t.KLWnit),
         children: P.intl.string(P.t["W0/Duf"])

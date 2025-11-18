@@ -2,7 +2,7 @@
 /** chunk id: 421399, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k,
+  Z: () => j,
   a: () => M
 });
 var Chunk54381 = require("./54381.js"),
@@ -92,7 +92,7 @@ var M = function(e) {
   return e[e.SYSTEM_TAG = 0] = "SYSTEM_TAG", e[e.BADGES = 1] = "BADGES", e
 }({});
 
-function k(e) {
+function j(e) {
   var t;
   let {
     author: n,
@@ -101,8 +101,8 @@ function k(e) {
     userOverride: D,
     compact: x = false,
     withMentionPrefix: M = false,
-    showPopout: k = false,
-    hideGuildTag: j = false,
+    showPopout: j = false,
+    hideGuildTag: k = false,
     hideSystemTag: U = false,
     className: G,
     onClick: B,
@@ -122,7 +122,7 @@ function k(e) {
     displayNameStyles: en
   } = n, er = (0, l.e7)([f.Z], () => f.Z.roleStyle), ei = "username" === er, ea = "dot" === er, eo = (0, g.j)({
     displayNameStyles: en
-  }), es = (0, l.e7)([I.Z], () => null == n.guildId || null == n.colorRoleId ? null : I.Z.getRole(n.guildId, n.colorRoleId)), el = (0, O.yH)(null != Y ? Y : q, es), ec = (0, S.Z)(a), eu = i.useContext(c.d), ed = (null == eu ? true : eu.animate) || k, ef = el && (0, y.S2)(n), e_ = ei && ef, ep = (null == R ? true : R.isPrivate()) && null != en;
+  }), es = (0, l.e7)([I.Z], () => null == n.guildId || null == n.colorRoleId ? null : I.Z.getRole(n.guildId, n.colorRoleId)), el = (0, O.yH)(null != Y ? Y : q, es), ec = (0, S.Z)(a), eu = i.useContext(c.d), ed = (null == eu ? true : eu.animate) || j, ef = el && (0, y.S2)(n), e_ = ei && ef, ep = (null == R ? true : R.isPrivate()) && null != en;
   (0, A.Z)({
     shouldSubscribe: ep || e_,
     subscribeToGroupId: W,
@@ -164,17 +164,17 @@ function k(e) {
       shouldUnderlineOnHover: null != B
     }) : eE,
     "data-text": Q + J
-  }, ey = i.useMemo(() => x && !j ? (0, r.jsx)(b.ZP, {
+  }, ey = i.useMemo(() => x && !k ? (0, r.jsx)(b.ZP, {
     primaryGuild: n.primaryGuild,
     userId: a.author.id,
     contextGuildId: q,
     className: N.clanTagChiplet,
     badgeSize: C.Gg.SIZE_12
-  }) : null, [x, n.primaryGuild, q, a.author.id, j]), eO = null != D ? D : a.author, ev = null != V && null != k ? (0, r.jsx)(v.Z, {
+  }) : null, [x, n.primaryGuild, q, a.author.id, k]), eO = null != D ? D : a.author, ev = null != V && null != j ? (0, r.jsx)(v.Z, {
     targetElementRef: K,
     user: eO,
     renderPopout: V,
-    shouldShow: k,
+    shouldShow: j,
     shouldPreload: ec,
     position: s.tq ? "window_center" : "right",
     avatarUrl: null != n.guildMemberAvatar && null != q ? (0, T.JM)({
@@ -184,7 +184,7 @@ function k(e) {
       size: 80
     }) : true,
     onRequestClose: F,
-    clickTrap: k,
+    clickTrap: j,
     children: e => {
       var {
         onClick: t
@@ -213,7 +213,7 @@ function k(e) {
       name: et,
       className: N.roleDot,
       hoverOverride: ed
-    }) : null, ev, !x && !j && (0, r.jsx)(b.ZP, {
+    }) : null, ev, !x && !k && (0, r.jsx)(b.ZP, {
       primaryGuild: n.primaryGuild,
       userId: a.author.id,
       contextGuildId: q,

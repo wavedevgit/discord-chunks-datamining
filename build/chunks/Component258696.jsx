@@ -52,21 +52,21 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   var t, n, i, a, E, b, y;
   let {
     type: N,
     disabled: R,
-    channel: k,
+    channel: j,
     handleSubmit: U,
     isEmpty: G,
     showAllButtons: B
-  } = e, Z = (0, c.e7)([d.Z], () => d.Z.isSubmitButtonEnabled), F = j(k.id, N, G), {
+  } = e, Z = (0, c.e7)([d.Z], () => d.Z.isSubmitButtonEnabled), F = k(j.id, N, G), {
     activeCommand: V,
     activeCommandOption: H
   } = (0, c.cj)([_.Z], () => ({
-    activeCommand: _.Z.getActiveCommand(k.id),
-    activeCommandOption: _.Z.getActiveOption(k.id)
+    activeCommand: _.Z.getActiveCommand(j.id),
+    activeCommandOption: _.Z.getActiveOption(j.id)
   })), {
     paymentsBlocked: Y
   } = p.Z.useExperiment({
@@ -79,15 +79,15 @@ function k(e) {
     reducedGap: z
   } = I.n.useConfig({
     location: "ChannelTextAreaButtons"
-  }), q = (0, m.Iu)(e => e.lastActiveView), X = [], Q = !k.isDM() || true === k.recipients || k.recipients.length > 1, J = (0, c.e7)([O.default], () => Q ? null : O.default.getUser(k.recipients[0])), $ = (0, f.R)({
-    channel: k,
+  }), q = (0, m.Iu)(e => e.lastActiveView), X = [], Q = !j.isDM() || true === j.recipients || j.recipients.length > 1, J = (0, c.e7)([O.default], () => Q ? null : O.default.getUser(j.recipients[0])), $ = (0, f.R)({
+    channel: j,
     chatInputType: N
   }), ee = (0, g.Nt)() && (null == (t = N.confetti) ? true : t.button) != null, et = (null == (n = N.submit) ? true : n.button) != null && ((null == (i = N.submit) ? true : i.ignorePreference) || Z);
   if (!l.tq && ((null == (E = N.gifts) ? true : E.button) != null && null == V && !Y && (null == J || v.ZP.isPremiumEligible(J)) && X.push({
       key: "gift",
       node: (0, r.jsx)(M, {
         disabled: R,
-        channel: k
+        channel: j
       }, "gift")
     }), (null == (b = N.gifs) ? true : b.button) != null && null == V && B && X.push({
       key: "gif",
@@ -99,7 +99,7 @@ function k(e) {
       key: "confetti",
       node: (0, r.jsx)(C.Z, {
         disabled: R,
-        channel: k
+        channel: j
       }, "confetti")
     }), !ee && (null == (y = N.stickers) ? true : y.button) != null && null == V && B && X.push({
       key: "sticker",
@@ -112,7 +112,7 @@ function k(e) {
       node: (0, r.jsx)(w.z, {
         disabled: R,
         inputType: N,
-        channel: k
+        channel: j
       }, "upload")
     }), N !== T.Ie.NORMAL || et || X.push({
       key: "spacer",
@@ -133,7 +133,7 @@ function k(e) {
   $ && X.push({
     key: "appLauncher",
     node: (0, r.jsx)(h.Z, {
-      channel: k,
+      channel: j,
       type: N
     }, "appLauncher")
   }), et && X.push({
@@ -152,11 +152,11 @@ function k(e) {
   })
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   return (0, c.e7)([b.Z, y.Z], () => {
     let r = b.Z.getStickerPreview(e, t.drafts.type),
       i = null != r && r.length > 0;
     return 0 === y.Z.getUploads(e, t.drafts.type).length && n && !i
   })
 }
-let U = Chunk473749.memo(k)
+let U = Chunk473749.memo(j)

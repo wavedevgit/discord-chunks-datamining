@@ -187,14 +187,14 @@ function M(e) {
   return I(t), true
 }
 
-function k(e) {
+function j(e) {
   let {
     lastAssociatedPID: t
   } = e;
   if (t !== l.UNSET_PID) return A(t), R(), true
 }
 
-function j(e) {
+function k(e) {
   var t, n;
   let {
     pid: r
@@ -220,8 +220,8 @@ let G = new U(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
   OVERLAY_V3_PRE_CREATE_POPOUT: w,
   OVERLAY_V3_POST_CREATE_POPOUT: L,
   OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: x,
-  OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: k,
-  OVERLAY_SUCCESSFULLY_SHOWN: j,
+  OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: j,
+  OVERLAY_SUCCESSFULLY_SHOWN: k,
   OVERLAY_CRASHED: D,
   OVERLAY_V3_NATIVE_TRACK_GAME: M
 })

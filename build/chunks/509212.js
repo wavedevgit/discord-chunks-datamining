@@ -20,7 +20,7 @@ require.d(exports, {
   FX: () => eL,
   Fs: () => tD,
   GN: () => eP,
-  Gd: () => tj,
+  Gd: () => tk,
   Gs: () => ee,
   HJ: () => tg,
   Jg: () => eH,
@@ -50,7 +50,7 @@ require.d(exports, {
   Vl: () => ts,
   WP: () => em,
   Xh: () => eT,
-  Xv: () => ej,
+  Xv: () => ek,
   ZS: () => tF,
   ZZ: () => ea,
   Zp: () => tG,
@@ -78,14 +78,14 @@ require.d(exports, {
   q8: () => tp,
   qe: () => tW,
   t2: () => eN,
-  u7: () => tk,
+  u7: () => tj,
   uN: () => tz,
   vB: () => t$,
   vQ: () => eU,
   vR: () => eF,
   vj: () => $,
   wj: () => eG,
-  xN: () => ek,
+  xN: () => ej,
   xn: () => ew,
   yH: () => tw,
   yI: () => eO,
@@ -289,7 +289,7 @@ function ed(e) {
 function ef(e) {
   return (0, a.EQ)(e).with({
     config_version: 2
-  }, e => (0, j.Q)(e)).exhaustive()
+  }, e => (0, k.Q)(e)).exhaustive()
 }
 
 function e_(e) {
@@ -387,7 +387,7 @@ function eb(e) {
       secondary: e.colors.secondary
     },
     rewards: e.rewards.map(eE),
-    cosponsorMetadata: (0, j.s)(e.cosponsor_metadata)
+    cosponsorMetadata: (0, k.s)(e.cosponsor_metadata)
   }
 }
 
@@ -554,11 +554,11 @@ function eM(e) {
   return e.rewardsConfig.rewards.some(e => e.type === c.w.FRACTIONAL_PREMIUM)
 }
 
-function ek(e) {
+function ej(e) {
   return e.rewardsConfig.rewards.some(e => e.type === c.w.VIRTUAL_CURRENCY)
 }
 
-function ej(e) {
+function ek(e) {
   return null != ew(e)
 }
 
@@ -649,7 +649,7 @@ function eJ(e) {
 }
 
 function e$(e, t) {
-  return k.r.build(e.config).features.has(t)
+  return j.r.build(e.config).features.has(t)
 }
 
 function e0(e) {
@@ -669,7 +669,7 @@ function e1(e) {
 }
 
 function e3(e, t) {
-  let n = k.r.build(e.config).ctaLink,
+  let n = j.r.build(e.config).ctaLink,
     r = e1(e);
   null != r && (n = r), (0, D._3)({
     questId: e.id,
@@ -802,7 +802,7 @@ let e5 = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
 
 function ta(e) {
   var t, n, r, i;
-  let a = k.r.build(e.config).defaultInGameTask;
+  let a = j.r.build(e.config).defaultInGameTask;
   if (null == a) return null;
   let o = null != (i = null == (r = e.userStatus) || null == (n = r.progress) || null == (t = n[a.type]) ? true : t.value) ? i : 0,
     s = e5(a.target, o);
@@ -865,7 +865,7 @@ function ty(e) {
 }
 
 function tO(e) {
-  return !!tp(e) && (0, n(952265).nf)(tk(e.id))
+  return !!tp(e) && (0, n(952265).nf)(tj(e.id))
 }
 
 function tv() {
@@ -1022,11 +1022,11 @@ function tM(e) {
   return n
 }
 
-function tk(e) {
+function tj(e) {
   return "VIDEO-QUEST-".concat(e)
 }
 
-function tj(e) {
+function tk(e) {
   let t = tp(e),
     n = eq(e);
   return t || n
@@ -1067,7 +1067,7 @@ function tH(e, t) {
 
 function tY(e) {
   var t, n, r, i;
-  let a = k.r.build(e).defaultWatchVideoTask;
+  let a = j.r.build(e).defaultWatchVideoTask;
   return null != (i = null != (r = null != (n = null == (t = e.ctaConfig) ? true : t.buttonLabel) ? n : null == a ? true : a.messages.videoEndCtaButtonLabel) ? r : null == a ? true : a.messages.videoEndCtaTitle) ? i : Z.intl.string(Z.t.iiTtpJ)
 }
 

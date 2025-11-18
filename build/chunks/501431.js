@@ -217,16 +217,16 @@ let f = {
       orbEligible: l,
       sort: i,
       searchQuery: a,
-      queryPageSize: o,
-      queryPageOffset: s
+      queryPageSize: s,
+      queryPageOffset: o
     } = e;
     return {
       item_types: Array.from(t),
       colors: Array.from(n),
       themes: Array.from(r),
       orbs_eligible: !!l || true,
-      offset: s,
-      limit: o,
+      offset: o,
+      limit: s,
       sort_type: i.sortType,
       sort_direction: i.sortDirection,
       search: "" !== a ? a : true
@@ -243,7 +243,7 @@ let f = {
         let i = async () => {
           n(true);
           try {
-            let t = await (0, s.y)(r);
+            let t = await (0, o.y)(r);
             e((e => {
               let t = e.skus,
                 n = e.pagination.total,

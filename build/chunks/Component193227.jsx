@@ -34,7 +34,7 @@ function k(e) {
     products: t,
     header: n,
     category: l
-  } = e, i = (0, s.e7)([u.default], () => u.default.getCurrentUser()), a = (0, S.St)(t), o = p.Z.useConfig({
+  } = e, i = (0, o.e7)([u.default], () => u.default.getCurrentUser()), a = (0, S.St)(t), s = p.Z.useConfig({
     location: "Products"
   }).showCardsV2, g = (0, d.sp)();
   return null == i || 0 === t.length ? null : (0, r.jsxs)("div", {
@@ -51,7 +51,7 @@ function k(e) {
         newValue: {
           tilePosition: t
         },
-        children: o ? (0, r.jsx)(v.Z, {
+        children: s ? (0, r.jsx)(v.Z, {
           skuId: e.skuId,
           skipLimitedTimeCheck: true,
           onClickAnalytics: (0, x.wO)(e, y.AW.CATALOG, g)
@@ -80,7 +80,7 @@ function I(e) {
 function T(e) {
   let {
     category: t
-  } = e, [n, i] = l.useState(false), a = (0, o.O)(e => {
+  } = e, [n, i] = l.useState(false), a = (0, s.O)(e => {
     i(e)
   }, .15);
   return (0, r.jsxs)("div", {
@@ -99,8 +99,8 @@ function L(e) {
   let {
     sortedCategories: n,
     setCategoryRef: i,
-    currentPage: o,
-    handlePageChange: s
+    currentPage: s,
+    handlePageChange: o
   } = e, u = (0, d.sp)(), p = (0, E.R)(), f = null != (t = null == u ? true : u.sessionId) ? t : "", {
     noCache: h,
     includeUnpublished: C
@@ -110,9 +110,9 @@ function L(e) {
     } = e;
     return t.length > 0
   }), [n]), v = l.useMemo(() => {
-    let e = (o - 1) * y.kN;
+    let e = (s - 1) * y.kN;
     return b.slice(e, e + y.kN)
-  }, [b, o]);
+  }, [b, s]);
   l.useEffect(() => {
     (0, m.n)({
       sessionId: f,
@@ -148,10 +148,10 @@ function L(e) {
     }, e.skuId)), (0, r.jsx)("div", {
       className: j.paginationContainer,
       children: (0, r.jsx)(c.DsT, {
-        currentPage: o,
+        currentPage: s,
         totalCount: b.length,
         pageSize: y.kN,
-        onPageChange: s,
+        onPageChange: o,
         disablePaginationGap: true
       })
     })]

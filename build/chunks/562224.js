@@ -99,8 +99,8 @@ async function N(e, t) {
     })) return [false, "no permission"];
   let {
     preset: M,
-    resolution: k,
-    fps: j,
+    resolution: j,
+    fps: k,
     soundshareEnabled: U
   } = l.Z.getState(), G = null != (E = null == t ? true : t.preset) ? E : M, {
     allowAutoQuality: B
@@ -110,8 +110,8 @@ async function N(e, t) {
   G !== y.ApplicationStreamPresets.PRESET_AUTO || B || (G = y.ApplicationStreamPresets.PRESET_VIDEO);
   let Z = G === y.ApplicationStreamPresets.PRESET_AUTO ? y.ApplicationStreamPresets.PRESET_VIDEO : G,
     [F, V] = null != (b = (0, g.Z)(Z, R, L)) ? b : [],
-    H = null != (v = null != F ? F : null == t ? true : t.resolution) ? v : k,
-    Y = null != (T = null != V ? V : null == t ? true : t.fps) ? T : j,
+    H = null != (v = null != F ? F : null == t ? true : t.resolution) ? v : j,
+    Y = null != (T = null != V ? V : null == t ? true : t.fps) ? T : k,
     W = null != (A = null == t ? true : t.previewDisabled) ? A : s.I0.getSetting(),
     K = null != (N = null == t ? true : t.soundshareEnabled) ? N : U;
   return (0, m.Z)(Z, H, Y, R, L, D) || (G = y.ApplicationStreamPresets.PRESET_VIDEO, H = y.ApplicationStreamResolutions.RESOLUTION_720, Y = y.ApplicationStreamFPS.FPS_30), (0, i.Rc)({

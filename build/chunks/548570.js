@@ -89,7 +89,7 @@ function Y(e) {
   } = e;
   if (!(0, P.n)()) return;
   let r = M.a(),
-    i = k.Pf(),
+    i = j.Pf(),
     a = m.Z.getState(),
     o = i.length > 0 ? "".concat(n, " + ").concat(i) : n,
     s = r ? "paused" : "request_state";
@@ -105,7 +105,7 @@ function Y(e) {
       client_app_state: m.Z.getState(),
       skip_context: s,
       original_connect_reason: o,
-      gateway_connect_reasons: k.Pf()
+      gateway_connect_reasons: j.Pf()
     })
   }, 200)
 }
@@ -135,7 +135,7 @@ function W(e) {
       }) : e)), V.log("[FAST CONNECT] successfully took over websocket, state:", F(B({}, e), {
         messages: null == (_ = e.messages) ? true : _.length
       })), c = l.state.open, u = l.state.identify, d = l.state.messages, f = l.state.clientState
-    } null == t && ((t = (0, j.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(a), t.onopen = () => i(u, f), t.onmessage = a, t.onclose = s, t.onerror = o
+    } null == t && ((t = (0, k.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(a), t.onopen = () => i(u, f), t.onmessage = a, t.onclose = s, t.onerror = o
 }
 
 function K() {}
@@ -202,7 +202,7 @@ class ei extends Chunk183139.Z {
   _connect(e) {
     if (!this.willReconnect()) return void V.verbose("Skipping _connect because willReconnect is false");
     let t = M.a();
-    if ((t || !k.RZ()) && (V.info("Skipping _connect because socket is paused"), Y({
+    if ((t || !j.RZ()) && (V.info("Skipping _connect because socket is paused"), Y({
         reason: e
       }), t)) return;
     this.connectionState = C.Z.CONNECTING, this.nextReconnectIsImmediate = false;
@@ -527,7 +527,7 @@ class ei extends Chunk183139.Z {
   }
   networkStateChange(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
-    k.RZ() || Y({
+    j.RZ() || Y({
       reason: t,
       actuallySkipped: false
     }), this.expeditedHeartbeat(e, t, n, false)

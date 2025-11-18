@@ -77,11 +77,11 @@ function M(e) {
   return null != t ? t : R.intl.string(R.t.eXan7B)
 }
 
-function k(e, t) {
+function j(e, t) {
   return (e.isDM() || e.isGroupDM() ? R.intl.string(R.t["9FaEzi"]) : e.isGuildStageVoice() ? R.intl.string(R.t.QygGCN) : R.intl.string(R.t.msxteM)) + (null != t ? " (".concat(t, ")") : "")
 }
 
-function j(e) {
+function k(e) {
   let {
     streamActivity: t,
     otherActivities: n,
@@ -100,7 +100,7 @@ function j(e) {
       tooltip: t
     } = (0, O.Z)(e, l);
     null != t && i.push(t)
-  }), null == t && null != r && i.push(k(r, s)), i.length > 0 ? i.join(", ") : ""
+  }), null == t && null != r && i.push(j(r, s)), i.length > 0 ? i.join(", ") : ""
 }
 
 function U(e) {
@@ -146,7 +146,7 @@ function B(e) {
   } = e;
   (0, f.Z)(null == t ? true : t.id);
   let M = (null == a ? true : a.discoverable) !== false ? a : null,
-    k = (0, h.Cf)(M),
+    j = (0, h.Cf)(M),
     B = (0, g.E)("ActivityStatus", l),
     Z = i.useMemo(() => {
       var e, t;
@@ -169,10 +169,10 @@ function B(e) {
           type: t,
           name: n
         } = e;
-        return t !== N.IIU.CUSTOM_STATUS && t !== N.IIU.HANG_STATUS && n !== (null == k ? true : k.name)
+        return t !== N.IIU.CUSTOM_STATUS && t !== N.IIU.HANG_STATUS && n !== (null == j ? true : j.name)
       })) ? e : [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name)
-    }, [n, null == k ? true : k.name]),
-    Y = null == n ? true : n.find(e => e.name === (null == k ? true : k.name)),
+    }, [n, null == j ? true : j.name]),
+    Y = null == n ? true : n.find(e => e.name === (null == j ? true : j.name)),
     W = (null == t ? true : t.bot) === true,
     K = (0, c.e7)([b.Z], () => b.Z.isBlockedOrIgnored(null == t ? true : t.id)),
     z = (null == Z ? true : Z.state) != null,
@@ -181,7 +181,7 @@ function B(e) {
     Q = H.length + (q || X ? 1 : 0),
     J = Q > 1,
     $ = ((null == Z ? true : Z.state) != null || null != V) && "xs" === y,
-    ee = j({
+    ee = k({
       streamActivity: Y,
       otherActivities: H,
       voiceActivityChannel: X ? l : null

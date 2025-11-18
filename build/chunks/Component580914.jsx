@@ -63,7 +63,7 @@ let F = (0, Chunk884697.IC)(90),
       heroBlock: U,
       tab: z,
       onVisibilityChange: G
-    } = e, K = (0, o.O)(e => {
+    } = e, K = (0, s.O)(e => {
       null == G || G(e)
     }, .1, null != G), Y = l.useRef(null), q = (0, R.B)("HeroBlock"), J = (0, u.e7)([m.default], () => m.default.getCurrentUser()), Q = (0, P.Z)(), X = (0, _.sp)(), $ = l.useMemo(() => {
       var e, t;
@@ -92,7 +92,7 @@ let F = (0, Chunk884697.IC)(90),
       heroBannerStatic: er,
       heroBannerAnimated: el,
       heroBannerRive: ei
-    } = (0, B.hr)($), ea = null != (t = null == ee ? true : ee.responsive) && t, eo = null == ee ? true : ee.backgroundStyle, es = null != ei, ec = (0, u.e7)([b.Z], () => b.Z.products), eu = l.useMemo(() => n ? [] : ec.size > 0 ? Q($.rankedSkuIds) : [], [n, Q, $.rankedSkuIds, ec]), ed = l.useMemo(() => !n && 0 !== $.rankedSkuIds.length && !(eu.length > 0) && $.rankedSkuIds.every(e => {
+    } = (0, B.hr)($), ea = null != (t = null == ee ? true : ee.responsive) && t, es = null == ee ? true : ee.backgroundStyle, eo = null != ei, ec = (0, u.e7)([b.Z], () => b.Z.products), eu = l.useMemo(() => n ? [] : ec.size > 0 ? Q($.rankedSkuIds) : [], [n, Q, $.rankedSkuIds, ec]), ed = l.useMemo(() => !n && 0 !== $.rankedSkuIds.length && !(eu.length > 0) && $.rankedSkuIds.every(e => {
       var t;
       return (null == (t = b.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
     }), [n, $.rankedSkuIds, eu.length]), ep = z === w.AW.ORBS, eg = null != V && V.isOrbsExclusive, {
@@ -120,7 +120,7 @@ let F = (0, Chunk884697.IC)(90),
         sectionType: H.jXE.ORBS_SHOP_HERO_BLOCK,
         ctaObject: H.qAy.CTA_TO_QUEST_HOME
       }), (0, f.navigateToQuestHome)({
-        fromContent: s.j.ORBS_SHOP_HERO_CTA
+        fromContent: o.j.ORBS_SHOP_HERO_CTA
       })) : (i({
         sourceButton: "shop latest category hero",
         categorySkuId: !ev || eg ? $.categorySkuId : true,
@@ -138,17 +138,17 @@ let F = (0, Chunk884697.IC)(90),
     return null != J && (n || $ !== W) ? (0, r.jsxs)("div", {
       ref: K,
       className: M.heroBlock,
-      children: [es ? (0, A.gT)({
+      children: [eo ? (0, A.gT)({
         isCustomCursorEnabled: q,
         className: M.riveEventOverlay,
         riveEventTargetRef: Y
       }) : null, (0, r.jsx)("div", {
         className: a()(M.banner, {
-          [M.rivBanner]: es,
+          [M.rivBanner]: eo,
           [M.responsive]: ea
         }),
-        style: null != eo ? {
-          background: eo
+        style: null != es ? {
+          background: es
         } : true,
         children: null != er && (0, r.jsx)(Z.Z, {
           bannerStatic: er,
@@ -159,7 +159,7 @@ let F = (0, Chunk884697.IC)(90),
         })
       }), (0, r.jsxs)("div", {
         className: M.heroBlockContent,
-        children: [es ? (0, r.jsx)("div", {
+        children: [eo ? (0, r.jsx)("div", {
           className: M.rivBannerButtonContainer,
           children: !n && (0, r.jsx)(d.Button, {
             variant: "overlay-primary",

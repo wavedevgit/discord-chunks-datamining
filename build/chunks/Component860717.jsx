@@ -192,11 +192,11 @@ function L(e) {
         body: G(n)
       }));
     case "GRID":
-      return (0, r.jsx)(U, {
+      return (0, r.jsx)(F, {
         children: G(t.children)
       });
     case "FIELD":
-      return (0, r.jsx)(F, {
+      return (0, r.jsx)(U, {
         value: M(t.value),
         name: M(t.name)
       });
@@ -265,7 +265,7 @@ function B(e) {
   })
 }
 
-function U(e) {
+function F(e) {
   let {
     children: t
   } = e;
@@ -275,7 +275,7 @@ function U(e) {
   })
 }
 
-function F(e) {
+function U(e) {
   let {
     name: t,
     value: n
@@ -499,7 +499,7 @@ let $ = Object.assign(function(e) {
       "aria-label": C.intl.string(C.t.ajHoOr),
       children: G
     })
-  }), U = (0, o.e7)([_.default], () => _.default.locale), F = i.useMemo(() => {
+  }), F = (0, o.e7)([_.default], () => _.default.locale), U = i.useMemo(() => {
     let e = function(e, t, n) {
       var r, i, a;
       let l = new Intl.NumberFormat(n, {
@@ -535,7 +535,7 @@ let $ = Object.assign(function(e) {
         config: t,
         numberFormat: l
       }
-    }(null != j ? j : null, null != h ? h : null, U);
+    }(null != j ? j : null, null != h ? h : null, F);
     return Z.map(function t(n) {
       switch (n.type) {
         case "HERO":
@@ -564,7 +564,7 @@ let $ = Object.assign(function(e) {
           return n
       }
     })
-  }, [h, j, U]);
+  }, [h, j, F]);
   return (0, r.jsxs)(E.Z, N(k({}, e), {
     userId: t.id,
     widget: n,
@@ -581,7 +581,7 @@ let $ = Object.assign(function(e) {
       children: (0, r.jsx)(Q, {
         widget: n,
         children: (0, r.jsx)(L, {
-          component: F
+          component: U
         })
       })
     }), f && (0, r.jsxs)("div", {

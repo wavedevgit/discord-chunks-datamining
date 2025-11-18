@@ -37,8 +37,8 @@ let w = 512,
   L = 7,
   x = 56,
   M = 16,
-  k = 32,
-  j = 20,
+  j = 32,
+  k = 20,
   U = 420,
   G = [8, 8, 0, 8],
   B = l().debounce(() => {
@@ -88,10 +88,10 @@ let w = 512,
           m.Xn.setActiveCategoryIndex(e)
         }
       },
-      scrollOffset: j,
+      scrollOffset: k,
       searchQuery: ""
     }), er = e => {
-      let t = q.length * (k + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? L : 0)) * x - w;
+      let t = q.length * (j + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? L : 0)) * x - w;
       Q && e + U > t && ee(), en(e), B(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
@@ -232,7 +232,7 @@ let w = 512,
         rowCount: q.length,
         rowCountBySection: eo,
         rowHeight: x,
-        sectionHeaderHeight: k,
+        sectionHeaderHeight: j,
         sectionMarginBottom: ea,
         ref: H,
         stickyHeaders: true

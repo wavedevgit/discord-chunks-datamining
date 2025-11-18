@@ -79,10 +79,10 @@ let S = e => {
       isCollapsed: d
     } = e, p = (0, h.o)(i), f = null != (n = null == (t = i.variants) ? true : t.length) ? n : 0, m = l.useCallback((e, t) => {
       e.stopPropagation(), (0, h.$)(i, t)
-    }, [i]), C = (0, g.Z)("shop-variants-group-".concat(i.storeListingId), s.hy.HORIZONTAL);
-    return 0 === f ? null : (0, r.jsx)(o.bG, {
+    }, [i]), C = (0, g.Z)("shop-variants-group-".concat(i.storeListingId), o.hy.HORIZONTAL);
+    return 0 === f ? null : (0, r.jsx)(s.bG, {
       navigator: C,
-      children: (0, r.jsx)(o.SJ, {
+      children: (0, r.jsx)(s.SJ, {
         children: e => {
           var t, {
               ref: n
@@ -114,9 +114,9 @@ let S = e => {
       isSelected: n,
       onClick: l,
       onVariantEnter: i,
-      onVariantExit: s,
+      onVariantExit: o,
       zIndex: c
-    } = e, u = (0, o.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(t.variantLabel)), {
+    } = e, u = (0, s.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(t.variantLabel)), {
       onFocus: g
     } = u, f = O(u, ["onFocus"]), {
       isPurchased: h
@@ -130,9 +130,9 @@ let S = e => {
           l(e), g()
         },
         onMouseEnter: i,
-        onMouseLeave: s,
+        onMouseLeave: o,
         onFocus: i,
-        onBlur: s,
+        onBlur: o,
         className: a()(v.productVariant, {
           [v.selected]: n
         }),
@@ -165,15 +165,15 @@ let S = e => {
       isCollapsed: n = false,
       showLabel: l = false,
       onVariantEnter: i,
-      onVariantExit: o,
-      className: s
+      onVariantExit: s,
+      className: o
     } = e, u = (0, C.LJ)(t), p = (0, h.o)(u);
     return null == u || u.type !== c.Z.VARIANTS_GROUP || null == u.variants || 0 === u.variants.length ? null : (0, r.jsxs)("div", {
-      className: a()(v.productVariantsOuterContainer, s),
+      className: a()(v.productVariantsOuterContainer, o),
       children: [(0, r.jsx)(S, {
         product: u,
         onVariantEnter: i,
-        onVariantExit: o,
+        onVariantExit: s,
         isCollapsed: n
       }), l && (0, r.jsx)(d.xvT, {
         variant: "text-xs/medium",

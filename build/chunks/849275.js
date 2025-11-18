@@ -26,13 +26,13 @@ function _(e) {
     isPremiumUser: n,
     prioritizeUserDiscounts: l,
     orbsSupportedOnly: _
-  } = e, b = (0, o.e7)([s.Z], () => s.Z.hasConsented(m.pjP.PERSONALIZATION)), v = r.useMemo(() => {
+  } = e, b = (0, s.e7)([o.Z], () => o.Z.hasConsented(m.pjP.PERSONALIZATION)), v = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[a.m.RECOMMENDED]) ? e : []
   }, [t]), x = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[a.m.POPULAR]) ? e : []
-  }, [t]), E = v.length > 0 && b, [O, S] = r.useState(E ? a.m.RECOMMENDED : a.m.POPULAR), y = (0, h.Z)(), j = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), k = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()), I = (0, p.a)(), [T, L] = r.useState([]), B = r.useCallback(() => {
+  }, [t]), E = v.length > 0 && b, [O, S] = r.useState(E ? a.m.RECOMMENDED : a.m.POPULAR), y = (0, h.Z)(), j = (0, s.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), k = (0, s.e7)([u.Z], () => u.Z.getUserDiscounts()), I = (0, p.a)(), [T, L] = r.useState([]), B = r.useCallback(() => {
     S(a.m.RANDOM), L(i().shuffle(j))
   }, [j]);
   r.useEffect(() => {

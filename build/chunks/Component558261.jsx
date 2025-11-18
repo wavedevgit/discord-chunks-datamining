@@ -39,8 +39,8 @@ let P = e => {
       product: t,
       cardRef: n,
       isPremiumUser: i,
-      analyticsLocations: o,
-      selectedVariantIndex: s,
+      analyticsLocations: s,
+      selectedVariantIndex: o,
       hasDiscountOffer: u,
       discountOfferAmount: d,
       text: p
@@ -55,10 +55,10 @@ let P = e => {
         e.stopPropagation(), (0, c.Z)({
           skuId: (0, O.S)({
             product: t,
-            selectedVariantIndex: s
+            selectedVariantIndex: o
           }),
           returnRef: n,
-          analyticsLocations: o,
+          analyticsLocations: s,
           variantsReturnStyle: l.v.VARIANTS_GROUP
         })
       },
@@ -133,10 +133,10 @@ let P = e => {
       isClaimPremiumProductDisabled: n,
       isClaiming: l,
       analyticsLocations: i,
-      text: o,
-      onClickAnalytics: s
+      text: s,
+      onClickAnalytics: o
     } = e, c = async () => {
-      null == s || s("claim premium product button"), await (0, h.fK)(t.skuId), (0, k.Z)({
+      null == o || o("claim premium product button"), await (0, h.fK)(t.skuId), (0, k.Z)({
         product: t,
         analyticsLocations: i,
         purchaseType: I.o8.PREMIUM_PURCHASE
@@ -151,7 +151,7 @@ let P = e => {
       loading: l,
       loadingStartedLabel: L.intl.string(L.t["TYw+9s"]),
       loadingFinishedLabel: L.intl.string(L.t.Pg1UP5),
-      text: null != o ? o : L.intl.string(L.t.zp6caO),
+      text: null != s ? s : L.intl.string(L.t.zp6caO),
       fullWidth: true
     })
   },
@@ -202,13 +202,13 @@ let P = e => {
       product: t,
       checkoutEligiblePrices: n,
       analyticsLocations: i,
-      selectedVariantIndex: o,
-      text: s,
+      selectedVariantIndex: s,
+      text: o,
       onClickAnalytics: c
     } = e;
     return (0, r.jsx)(a.Button, {
       variant: "primary",
-      text: null != s ? s : L.intl.format(L.t.kAgx5L, {
+      text: null != o ? o : L.intl.format(L.t.kAgx5L, {
         orbPrice: n[0].amount,
         orbIconHook: () => (0, r.jsx)(d.Z, {
           className: B.orbIconAligned
@@ -218,7 +218,7 @@ let P = e => {
         e.stopPropagation(), null == c || c("claim with orbs button"), (0, p.qA)({
           skuId: (0, O.S)({
             product: t,
-            selectedVariantIndex: o
+            selectedVariantIndex: s
           }),
           onCheckoutSuccess: e => {
             var n;
@@ -287,7 +287,7 @@ let P = e => {
       isRental: C
     }), {
       analyticsLocations: z
-    } = (0, s.ZP)(o.Z.COLLECTIBLES_SHOP_CARD), G = (0, E.J7)(t, o.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [K, Y] = (0, i.Wu)([m.Z], () => [m.Z.isClaiming === t.skuId, null != m.Z.isClaiming && m.Z.isClaiming !== t.skuId]), {
+    } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), G = (0, E.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [K, Y] = (0, i.Wu)([m.Z], () => [m.Z.isClaiming === t.skuId, null != m.Z.isClaiming && m.Z.isClaiming !== t.skuId]), {
       handleUseNow: q,
       isApplying: J
     } = (0, b.W)({
@@ -358,10 +358,10 @@ let P = e => {
       onClick: l,
       text: i,
       prioritizedCurrency: a,
-      onClickAnalytics: o
-    } = e, s = (0, E.LJ)(t), c = (0, C.o)(s);
-    if (null == s) return null;
-    let u = (0, S.W)(s, c);
+      onClickAnalytics: s
+    } = e, o = (0, E.LJ)(t), c = (0, C.o)(o);
+    if (null == o) return null;
+    let u = (0, S.W)(o, c);
     return (0, r.jsx)(F, {
       product: u,
       cardRef: n,
@@ -369,6 +369,6 @@ let P = e => {
       onClick: l,
       text: i,
       prioritizedCurrency: a,
-      onClickAnalytics: o
+      onClickAnalytics: s
     })
   }

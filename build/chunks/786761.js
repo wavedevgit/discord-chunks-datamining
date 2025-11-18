@@ -5,7 +5,7 @@ require.d(exports, {
   Pv: () => U,
   e5: () => R,
   gx: () => P,
-  lp: () => j,
+  lp: () => k,
   wi: () => D
 }), require("./997841.js"), require("./388685.js");
 var Chunk913527 = require("./913527.js"),
@@ -106,7 +106,7 @@ function R(e) {
     D = e.message_reference,
     w = A(e),
     x = null,
-    j = null == e ? true : e.gift_info,
+    k = null == e ? true : e.gift_info,
     U = e.gifting_prompt,
     G = null != e.interaction ? c.Z.createFromServer(e.interaction) : null,
     B = e.type === y.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
@@ -141,7 +141,7 @@ function R(e) {
     content: Z,
     referralTrialOfferId: p,
     call: L(e.call, O.timestamp),
-    messageSnapshots: k(e),
+    messageSnapshots: j(e),
     reactions: M(null != h ? h : e.reactions, e.poll),
     interaction: G,
     interactionData: null != b ? b : e.interaction_data,
@@ -151,7 +151,7 @@ function R(e) {
     poll: null == e.poll ? true : (0, s.Z)(e.poll),
     sharedClientTheme: e.shared_client_theme,
     potions: e.potions,
-    giftInfo: null == j ? true : j,
+    giftInfo: null == k ? true : k,
     giftingPrompt: U
   }))
 }
@@ -170,7 +170,7 @@ function D(e, t) {
   });
   let n = e,
     r = false;
-  if (null != t.call && (n = n.set("call", L(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", w(t))), null != t.application && (n = n.set("application", t.application)), null != t.activity && (n = n.set("activity", t.activity)), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", x(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", k(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, o.uZ)(t.components))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
+  if (null != t.call && (n = n.set("call", L(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", w(t))), null != t.application && (n = n.set("application", t.application)), null != t.activity && (n = n.set("activity", t.activity)), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", x(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", j(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, o.uZ)(t.components))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
     var i;
     n = n.set("reactions", M(null != (i = e.reactions) ? i : t.reactions))
   }
@@ -233,7 +233,7 @@ function M(e, t) {
   })
 }
 
-function k(e) {
+function j(e) {
   return null == e.message_snapshots ? [] : e.message_snapshots.map(e => {
     let {
       message: t,
@@ -245,7 +245,7 @@ function k(e) {
     })
   })
 }
-let j = e => 0 === (0, l.cv)(e).length || "" !== e.content;
+let k = e => 0 === (0, l.cv)(e).length || "" !== e.content;
 
 function U(e) {
   return e.hasFlag(y.iLy.EPHEMERAL) && e.type !== y.uaV.IN_GAME_MESSAGE_NUX

@@ -46,7 +46,7 @@ let A = e => {
     tab: w,
     buttonContainerClassName: H,
     orbsSupportedOnly: D
-  } = e, M = (0, o.e7)([p.default], () => p.default.getCurrentUser()), F = m.ZP.canUseCollectibles(M), W = (0, I.B)("FeedBlock"), {
+  } = e, M = (0, s.e7)([p.default], () => p.default.getCurrentUser()), F = m.ZP.canUseCollectibles(M), W = (0, I.B)("FeedBlock"), {
     sortType: V,
     setSortType: U,
     sortedItems: z,
@@ -58,7 +58,7 @@ let A = e => {
     isPremiumUser: F,
     prioritizeUserDiscounts: Z,
     orbsSupportedOnly: D
-  }), q = (0, k.St)(z), J = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, o.e7)([g.Z], () => g.Z.isFocused()), X = !J && Q, {
+  }), q = (0, k.St)(z), J = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, s.e7)([g.Z], () => g.Z.isFocused()), X = !J && Q, {
     animationPhase: $,
     startAnimation: ee
   } = (0, y.y)(), et = (0, C.sp)(), en = null != (t = null == et ? true : et.sessionId) ? t : "", er = l.useRef(null), el = l.useCallback(e => {
@@ -81,7 +81,7 @@ let A = e => {
         children: [(0, r.jsx)(c.Heading, {
           variant: "heading-lg/semibold",
           children: i
-        }), Y && (0, r.jsx)(s.u, {
+        }), Y && (0, r.jsx)(o.u, {
           text: B.intl.string(B.t["3taPdj"]),
           position: "top",
           "aria-label": B.intl.string(B.t["3taPdj"]),

@@ -1,22 +1,20 @@
 /** Chunk was on 52708 **/
 /** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  wl: () => O,
-  yX: () => y
+  wl: () => h,
+  yX: () => b
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk423802 = require("./423802.js"),
-  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk510231 = require("./510231.js"),
-  Chunk706454 = require("./706454.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk86419 = require("./86419.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk302627 = require("./302627.js");
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +33,7 @@ function p(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,7 +46,7 @@ function m(e, t) {
   }), e
 }
 
-function b(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -64,75 +62,75 @@ function b(e, t) {
   return i
 }
 
-function h(e) {
+function m(e) {
   var {
     widgetType: t,
     widget: n,
-    onAddGame: h,
-    children: y
-  } = e, O = b(e, ["widgetType", "widget", "onAddGame", "children"]);
-  let [v] = (0, o.ynZ)(), [j, x] = i.useState(""), _ = i.useRef(""), P = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
-    trackUserProfileEditAction: I
-  } = (0, u.KZ)(), w = (0, l.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)), S = i.useCallback(e => {
-    (0, d.ES)(t, {
+    onAddGame: m,
+    children: b
+  } = e, h = p(e, ["widgetType", "widget", "onAddGame", "children"]);
+  let [y] = (0, l.ynZ)(), [O, v] = i.useState(""), j = i.useRef(""), x = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
+    trackUserProfileEditAction: _
+  } = (0, c.KZ)(), P = i.useCallback(e => {
+    (0, s.ES)(t, {
       applicationId: e
-    }), o.uvj.announce(f.intl.string(f.t.q0U3DE)), I({
+    }), l.uvj.announce(u.intl.string(u.t.q0U3DE)), _({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
-    }), null == h || h()
-  }, [t, I, h]), {
-    options: E,
-    matchSorterOptions: T
-  } = (0, c.h)(), C = i.useCallback(e => "" === e.trim() ? E : (0, a.Lu)(E, e, m(p({}, T), {
+    }), null == m || m()
+  }, [t, _, m]), {
+    options: I,
+    matchSorterOptions: w
+  } = (0, o.h)(), S = i.useCallback(e => "" === e.trim() ? I : (0, a.Lu)(I, e, g(f({}, w), {
     threshold: a.Lu.rankings.CONTAINS
-  })), [E, T]), D = i.useCallback(e => {
-    "" === j.trim() && "" !== e.trim() && I({
+  })), [I, w]), E = i.useCallback(e => {
+    "" === O.trim() && "" !== e.trim() && _({
       action: "GAME_SEARCH_SESSION_STARTED",
       widgetEdited: t,
       numCharacters: e.trim().length,
-      numResults: C(e).length
-    }), x(e), _.current = e
-  }, [j, I, t, C]), k = i.useMemo(() => "" !== j.trim() && w ? f.intl.format(f.t.jhiTsN, {
-    searchTerm: j.trim()
-  }) : f.intl.string(f.t.QwSXv8), [j, w]);
-  return (0, r.jsx)(o.yRy, m(p({}, O), {
+      numResults: S(e).length
+    }), v(e), j.current = e
+  }, [O, _, t, S]), T = i.useMemo(() => "" !== O.trim() ? u.intl.format(u.t.jhiTsN, {
+    searchTerm: O.trim()
+  }) : u.intl.string(u.t.QwSXv8), [O]);
+  return (0, r.jsx)(l.yRy, g(f({}, h), {
     onRequestOpen: () => {
-      I({
+      _({
         action: "PRESS_ADD_GAME",
         widgetEdited: t
-      }), x(""), _.current = ""
+      }), v(""), j.current = ""
     },
     onRequestClose: () => {
-      I({
+      _({
         action: "GAME_SEARCH_SESSION_ENDED",
         widgetEdited: t,
-        numCharacters: _.current.trim().length,
-        numResults: C(_.current).length
+        numCharacters: j.current.trim().length,
+        numResults: S(j.current).length
       })
     },
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(o.DBG, {
-        className: g.gameSearchCombobox,
-        placeholder: f.intl.string(f.t["5h0QOP"]),
+      return (0, r.jsx)(l.DBG, {
+        className: d.gameSearchCombobox,
+        placeholder: u.intl.string(u.t["5h0QOP"]),
         autoFocus: true,
-        value: v,
+        value: y,
         onChange: e => {
-          S(e), t()
+          P(e), t()
         },
         multiSelect: false,
         maxVisibleItems: 7,
-        emptyStateText: k,
+        emptyStateText: T,
         emptyStateHeader: "",
-        onQueryChange: D,
-        children: e => C(e).map(e => (0, r.jsx)(o.lo1, {
-          disabled: P.has(e.value),
+        onQueryChange: E,
+        children: e => S(e).map(e => (0, r.jsx)(l.lo1, {
+          disabled: x.has(e.value),
           value: String(e.value),
-          children: (0, r.jsx)(o.lo1.Label, {
-            children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(l.lo1.Label, {
+            children: (0, r.jsx)(l.Text, {
               variant: "text-md/medium",
               color: "header-secondary",
               children: e.label
@@ -141,44 +139,44 @@ function h(e) {
         }, String(e.value)))
       })
     },
-    children: e => y(e)
+    children: e => b(e)
   }))
 }
 
-function y(e) {
+function b(e) {
   var {
     disabled: t
-  } = e, n = b(e, ["disabled"]);
+  } = e, n = p(e, ["disabled"]);
   let a = i.useRef(null);
-  return (0, r.jsx)(h, m(p({
+  return (0, r.jsx)(m, g(f({
     targetElementRef: a,
     position: "bottom",
     align: "center"
   }, n), {
-    children: e => (0, r.jsx)(o.Button, p({
+    children: e => (0, r.jsx)(l.Button, f({
       buttonRef: a,
       variant: "secondary",
       size: "sm",
-      icon: o.qJs,
-      text: f.intl.string(f.t.SgTOtX),
+      icon: l.qJs,
+      text: u.intl.string(u.t.SgTOtX),
       disabled: t
     }, e))
   }))
 }
 
-function O(e) {
+function h(e) {
   let t = i.useRef(null);
-  return (0, r.jsx)(h, m(p({
+  return (0, r.jsx)(m, g(f({
     targetElementRef: t,
     position: "right",
     align: "top"
   }, e), {
-    children: e => (0, r.jsx)(o.P3F, m(p({
+    children: e => (0, r.jsx)(l.P3F, g(f({
       innerRef: t,
-      className: g.coverButton,
-      "aria-label": f.intl.string(f.t.SgTOtX)
+      className: d.coverButton,
+      "aria-label": u.intl.string(u.t.SgTOtX)
     }, e), {
-      children: (0, r.jsx)(o.svS, {
+      children: (0, r.jsx)(l.svS, {
         color: "currentColor"
       })
     }))

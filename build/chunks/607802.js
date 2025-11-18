@@ -14,7 +14,7 @@ require.d(exports, {
   Pe: () => X,
   R6: () => Q,
   Tm: () => T,
-  UP: () => k,
+  UP: () => j,
   Vj: () => P,
   WU: () => K,
   X$: () => ee,
@@ -25,7 +25,7 @@ require.d(exports, {
   i3: () => Z,
   jW: () => x,
   kG: () => W,
-  nI: () => j,
+  nI: () => k,
   nl: () => $,
   qc: () => G,
   s5: () => A,
@@ -268,12 +268,12 @@ function M(e) {
   return t
 }
 
-function k(e) {
+function j(e) {
   var t;
   return (null == e ? true : e.contents) != null && e.contents.length > 0 ? null == e || null == (t = e.contents) ? true : t.map(e => e.split("|").slice(1).join("|")).join(" ") : null == e ? true : e.content
 }
 
-function j(e) {
+function k(e) {
   return e.map(e => e.type === a.ZP.NON_TOKEN_TYPE ? e.getFullMatch() : "").join(" ").trim()
 }
 

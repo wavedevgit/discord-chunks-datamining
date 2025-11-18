@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk517793 = require("./517793.js");
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -55,7 +55,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -98,7 +98,7 @@ function F(e) {
     className: a,
     badgeClassName: h,
     displayProfile: O,
-    onClose: j,
+    onClose: k,
     shouldOpenBadgeTooltip: G,
     shouldGlowTenureBadge: F
   } = e, V = i.useRef(null), {
@@ -108,7 +108,7 @@ function F(e) {
     trackUserProfileAction: W
   } = (0, A.KZ)(), K = v.default.getCurrentUser(), z = (0, T.yd)(null == K ? true : K.premiumType, L.PremiumTypes.TIER_2), q = (0, R.Of)(null != (t = null == K ? true : K.id) ? t : null), X = (0, N.Z)(q).some(e => e.id === y.l.ORB_PROFILE_BADGE), Q = (0, _.c)(K, "UserProfileBadgeList"), J = (0, f.B)("UserProfileBadgeList");
   return (0, r.jsx)("div", {
-    className: o()(k.container, a),
+    className: o()(j.container, a),
     "aria-label": M.intl.string(M.t.VWV0y5),
     role: "group",
     children: n.map((e, t) => {
@@ -137,7 +137,7 @@ function F(e) {
               f ? (0, b.uL)(D.Z5c.NITRO_HOME) : (0, m.k)({
                 analyticsLocations: H,
                 displayProfile: O
-              }), null == j || j();
+              }), null == k || k();
               return
             }
             if (f) {
@@ -145,17 +145,17 @@ function F(e) {
                 analyticsLocations: H
               }) : null;
               if (null == n) return;
-              return null == j || j(), n(t)
+              return null == k || k(), n(t)
             }
             return (0, m.k)({
               analyticsLocations: H,
               displayProfile: O
-            }), void(null == j || j())
+            }), void(null == k || k())
           }
           let n = null != e.link ? (0, l.default)(e.link, {
             analyticsLocations: H
           }) : null;
-          if (null != n) return null == j || j(), n(t)
+          if (null != n) return null == k || k(), n(t)
         },
         T = () => {
           e.id === N.i && I.default.track(D.rMx.QUEST_CONTENT_VIEWED, B(U({}, (0, g.mH)(E.jn.QUEST_BADGE)), {
@@ -174,7 +174,7 @@ function F(e) {
           alt: " ",
           "aria-hidden": true,
           src: null != (n = e.iconSrc) ? n : (0, P.Ej)(e.icon),
-          className: o()(k.badge, h)
+          className: o()(j.badge, h)
         }),
         q = {
           onClick: v,

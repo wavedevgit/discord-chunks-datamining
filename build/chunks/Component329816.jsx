@@ -85,15 +85,15 @@ let X = (0, Chunk663993.Un)({
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, Z.getPlatform)(), d = s.tq || s.Em, m = (0, u.e7)([g.Z], () => g.Z.useForcedColors ? "yes" : "no"), j = i.useRef(document.body), G = "".concat(m);
-    return (0, C.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(k.w, {
+    } = e, a = (0, Z.getPlatform)(), d = s.tq || s.Em, m = (0, u.e7)([g.Z], () => g.Z.useForcedColors ? "yes" : "no"), k = i.useRef(document.body), G = "".concat(m);
+    return (0, C.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(j.w, {
       children: (0, r.jsxs)(E.Z, {
         children: [(0, r.jsx)(V.Z, {
           skipsSettingDefaultPageTitle: n
         }), (0, r.jsx)(h.T, {
           children: (0, r.jsx)(R.Z, {
             children: (0, r.jsxs)(f.JcV, {
-              containerRef: j,
+              containerRef: k,
               children: [(0, r.jsx)(W.Co, {}), (0, r.jsx)(Y.ZP, {}), (0, r.jsx)(c.OUJ, {}), (0, r.jsx)(x.Wu, {
                 appContext: z.IlC.APP,
                 renderWindow: window,

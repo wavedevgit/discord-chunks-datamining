@@ -45,7 +45,7 @@ let y = {
     let {
       isLoading: n = false,
       handleTransition: l,
-      heroBlock: s,
+      heroBlock: o,
       tab: m,
       onVisibilityChange: j
     } = e, k = (0, a.O)(e => {
@@ -56,8 +56,8 @@ let y = {
       heroLogo: P,
       heroBannerStatic: N,
       heroBannerAnimated: A
-    } = (0, _.hr)(s), R = null != (t = null == L ? true : L.responsive) && t, Z = null == L ? true : L.backgroundStyle, w = m === x.AW.ORBS ? O.intl.string(O.t["1CdL8d"]) : O.intl.string(O.t.xYKa1T), H = (0, C.FF)("CollectiblesContent");
-    return null != I && (n || s !== y) ? (0, r.jsxs)("div", {
+    } = (0, _.hr)(o), R = null != (t = null == L ? true : L.responsive) && t, Z = null == L ? true : L.backgroundStyle, w = m === x.AW.ORBS ? O.intl.string(O.t["1CdL8d"]) : O.intl.string(O.t.xYKa1T), H = (0, C.FF)("CollectiblesContent");
+    return null != I && (n || o !== y) ? (0, r.jsxs)("div", {
       ref: k,
       className: S.heroBlock,
       children: [(0, r.jsx)("div", {
@@ -80,7 +80,7 @@ let y = {
             className: S.heroHeaderBadgeLogoSummaryContainer
           }) : (0, r.jsxs)("div", {
             className: S.heroHeaderBadgeLogoSummaryContainer,
-            children: [null != s.unpublishedAt && (0, r.jsx)(u.IGR, {
+            children: [null != o.unpublishedAt && (0, r.jsx)(u.IGR, {
               disableColor: true,
               text: O.intl.string(O.t["h/uBCR"]),
               className: S.limitedTimeBadge
@@ -89,20 +89,20 @@ let y = {
               children: [null != P && (0, r.jsx)("img", {
                 className: S.heroHeaderLogo,
                 src: P,
-                alt: s.name,
+                alt: o.name,
                 style: null == B ? true : B.toDesktopStyles()
-              }), null != s.title && (0, r.jsx)(u.Heading, {
+              }), null != o.title && (0, r.jsx)(u.Heading, {
                 variant: "heading-xxl/bold",
                 className: S.title,
                 color: "header-primary",
-                children: s.title
-              }), "" !== s.summary && (0, r.jsx)(u.Text, {
+                children: o.title
+              }), "" !== o.summary && (0, r.jsx)(u.Text, {
                 variant: "text-md/normal",
                 className: S.subHeaderText,
-                style: null != s.bannerTextColor ? {
-                  color: s.bannerTextColor
+                style: null != o.bannerTextColor ? {
+                  color: o.bannerTextColor
                 } : true,
-                children: s.summary
+                children: o.summary
               })]
             })]
           }), !n && (0, r.jsx)("div", {
@@ -115,14 +115,14 @@ let y = {
                   sectionType: E.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: E.qAy.CTA_TO_QUEST_HOME
                 }), (0, d.navigateToQuestHome)({
-                  fromContent: o.j.ORBS_SHOP_HERO_CTA
+                  fromContent: s.j.ORBS_SHOP_HERO_CTA
                 })) : (l({
                   sourceButton: "shop reward category hero",
-                  categorySkuId: H ? true : s.categorySkuId,
+                  categorySkuId: H ? true : o.categorySkuId,
                   isInternalShopDeeplink: true
                 }), f.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == T ? true : T.sessionId,
-                  sku_id: s.categorySkuId,
+                  sku_id: o.categorySkuId,
                   page_type: m,
                   page_section: null == T ? true : T.pageSection,
                   page_category: null == T ? true : T.pageCategory,
@@ -134,7 +134,7 @@ let y = {
           })]
         }), (0, r.jsx)(v.Z, {
           isBlockLoading: n,
-          heroBlock: s,
+          heroBlock: o,
           tab: m
         })]
       })]

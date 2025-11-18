@@ -18,7 +18,7 @@ function p(e) {
   let {
     handleTransition: t,
     onClose: n
-  } = e, i = (0, s.B)("CollectiblesIndexPageContextMenu"), p = l.useMemo(() => [{
+  } = e, i = (0, o.B)("CollectiblesIndexPageContextMenu"), p = l.useMemo(() => [{
     label: u.intl.string(u.t.dRZYNE),
     value: c.AW.AVATAR_DECORATIONS
   }, {
@@ -38,7 +38,7 @@ function p(e) {
     className: a()({
       [d.customCursors]: i
     }),
-    children: (0, r.jsx)(o.v2r, {
+    children: (0, r.jsx)(s.v2r, {
       navId: "collectibles-index-page-menu",
       className: a()({
         [d.customCursors]: i
@@ -46,7 +46,7 @@ function p(e) {
       onClose: n,
       "aria-label": u.intl.string(u.t.xFcotU),
       onSelect: () => {},
-      children: p.map(e => (0, r.jsx)(o.sNh, {
+      children: p.map(e => (0, r.jsx)(s.sNh, {
         id: e.value,
         label: e.label,
         action: () => {

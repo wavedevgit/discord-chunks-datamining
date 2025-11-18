@@ -2,7 +2,7 @@
 /** chunk id: 975335, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -170,7 +170,7 @@ function M(e) {
     text: i.text
   })
 }
-let k = e => {
+let j = e => {
   var t;
   let {
     quest: n,
@@ -186,7 +186,7 @@ let k = e => {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), k = N >= g.OH.ACCEPTED, j = N >= g.OH.COMPLETED, U = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
+  }), j = N >= g.OH.ACCEPTED, k = N >= g.OH.COMPLETED, U = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
     quest: n,
     taskDetails: V,
     location: C.dr.QUESTS_CARD,
@@ -203,7 +203,7 @@ let k = e => {
       questContentCTA: h.jZ.LEARN_MORE,
       sourceQuestContent: A
     })
-  }, K = (0, s.e7)([f.default], () => f.default.locale), z = _ && !j;
+  }, K = (0, s.e7)([f.default], () => f.default.locale), z = _ && !k;
   return (0, r.jsx)("div", {
     className: P.root,
     children: (0, r.jsxs)("div", {
@@ -243,7 +243,7 @@ let k = e => {
       }), (0, r.jsxs)("div", {
         className: P.taskDetails,
         children: [(0, r.jsx)(u.Text, {
-          variant: D(a, c, k),
+          variant: D(a, c, j),
           className: P.taskInstructions,
           children: _ ? R.intl.formatToPlainString(R.t["ge+AJp"], {
             questName: n.config.messages.questName

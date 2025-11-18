@@ -26,8 +26,8 @@ function v(e) {
   let {
     tab: t,
     sortedCategories: n,
-    transitionToTab: o,
-    transitionState: s,
+    transitionToTab: s,
+    transitionState: o,
     updateAnalyticsState: c,
     refreshCategories: u
   } = e, h = x();
@@ -45,9 +45,9 @@ function v(e) {
       } = e;
       c(t, n);
       let a = r && !v,
-        s = i ? _.AW.ORBS : _.AW.CATALOG;
-      S(n), j(!l), o(s, a)
-    }, [v, o, c]),
+        o = i ? _.AW.ORBS : _.AW.CATALOG;
+      S(n), j(!l), s(o, a)
+    }, [v, s, c]),
     I = (0, d.FF)("CollectiblesContent"),
     {
       searchError: T
@@ -59,7 +59,7 @@ function v(e) {
   }) : b.includes(t) ? (0, r.jsx)(m.Z, {
     handleTransition: k,
     tab: t,
-    transitionState: s
+    transitionState: o
   }) : (0, r.jsx)(g.Z, {
     tab: t,
     sortedCategories: n,
@@ -72,14 +72,14 @@ function v(e) {
 }
 let x = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
   E = e => {
-    let t = (0, i.e7)([o.default], () => o.default.getCurrentUser()),
+    let t = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r
       } = (0, h.Z)();
     l.useEffect(() => {
       var l, i;
-      null != e && s.Z.captureMessage(e, {
+      null != e && o.Z.captureMessage(e, {
         tags: {
           isStaff: null != (i = null == t || null == (l = t.isStaff()) ? true : l.toString()) ? i : "unknown",
           disableCache: n.toString(),

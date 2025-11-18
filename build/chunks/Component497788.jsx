@@ -32,11 +32,11 @@ let y = e => {
     isBlockLoading: t = false,
     heroBlock: n,
     tab: i
-  } = e, f = (0, d.sp)(), y = l.useMemo(() => p.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), j = (0, o.e7)([g.Z], () => g.Z.getPurchase(n.rewardSkuId)), {
+  } = e, f = (0, d.sp)(), y = l.useMemo(() => p.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), j = (0, s.e7)([g.Z], () => g.Z.getPurchase(n.rewardSkuId)), {
     cardContainerRef: k,
     totalCards: I
   } = (e => {
-    let [t, n] = l.useState(1), r = (0, s.dQu)(s.TVs.space.SPACE_XL), i = (0, u.Z)(() => {
+    let [t, n] = l.useState(1), r = (0, o.dQu)(o.TVs.space.SPACE_XL), i = (0, u.Z)(() => {
       (null == a ? true : a.current) != null && n(Math.max(1, Math.floor((a.current.offsetWidth + r) / (246 + r))))
     }), a = (0, c.y)(i, [r, e], {
       fireOnMount: true,
@@ -53,9 +53,9 @@ let y = e => {
     products: T
   } = ((e, t, n, r) => {
     let i = (0, x.Z)(),
-      a = (0, o.e7)([p.Z], () => p.Z.products),
-      s = l.useMemo(() => e ? [] : a.size > 0 ? i(t.rankedSkuIds).filter(e => e.skuId !== t.rewardSkuId || null != r) : [], [e, i, t.rankedSkuIds, a, r, t.rewardSkuId]),
-      c = (0, h.a)()(s),
+      a = (0, s.e7)([p.Z], () => p.Z.products),
+      o = l.useMemo(() => e ? [] : a.size > 0 ? i(t.rankedSkuIds).filter(e => e.skuId !== t.rewardSkuId || null != r) : [], [e, i, t.rankedSkuIds, a, r, t.rewardSkuId]),
+      c = (0, h.a)()(o),
       u = (0, m.l)(c).slice(0, n);
     return {
       products: (0, E.St)(u)

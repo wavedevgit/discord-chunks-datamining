@@ -71,8 +71,8 @@ let N = new Chunk710845.Z("OverlayV3Store"),
   L = null,
   x = null,
   M = null,
-  k = null,
   j = null,
+  k = null,
   U = null,
   G = {},
   B = {},
@@ -110,7 +110,7 @@ function H(e) {
     if (null == D) return;
     D.untrackGame(e), N.verbose("Removing tracked game ".concat(e));
     let t = R.values().next().value;
-    j === e && (j = null != t ? t : null)
+    k === e && (k = null != t ? t : null)
   } catch (t) {
     N.error("Error removing tracked game:", t), (0, _.PV)(e, t, {
       crashType: "native"
@@ -138,12 +138,12 @@ async function W() {
 
 function K(e) {
   let t = l.ZP.getGameOrTransformedSubgameForPID(e);
-  o.Z.setAssociatedGame(null != j ? j : d.UNSET_PID, e, t)
+  o.Z.setAssociatedGame(null != k ? k : d.UNSET_PID, e, t)
 }
 
 function z() {
   var e;
-  null != k && M === k && null != D && (k = null, (0, Chunk932404.PY)(M, "renderer_window_refreshing_finished"), null == (e = D.readyToShow) || module.call(D, M), Chunk13245.Z.updateOverlayState(M, Chunk837268.mM.OVERLAY_RENDERING, "checkPopoutRefresh"), N.verbose("Showing overlay v3 for pid ".concat(M)))
+  null != j && M === j && null != D && (j = null, (0, Chunk932404.PY)(M, "renderer_window_refreshing_finished"), null == (e = D.readyToShow) || module.call(D, M), Chunk13245.Z.updateOverlayState(M, Chunk837268.mM.OVERLAY_RENDERING, "checkPopoutRefresh"), N.verbose("Showing overlay v3 for pid ".concat(M)))
 }
 
 function q(e, t) {
@@ -213,7 +213,7 @@ function er(e) {
   } = e;
   Z = C(S({}, Z), {
     popoutOpened: true
-  }), K(t), j = t, x = t, (0, d.setPID)(t)
+  }), K(t), k = t, x = t, (0, d.setPID)(t)
 }
 
 function ei(e) {
@@ -239,14 +239,14 @@ function ea(e) {
 }
 
 function eo() {
-  X(), j = null, x = null, (0, Chunk145597.setPID)(Chunk145597.UNSET_PID), F()
+  X(), k = null, x = null, (0, Chunk145597.setPID)(Chunk145597.UNSET_PID), F()
 }
 
 function es(e) {
   let {
     refreshingPID: t
   } = e;
-  return N.verbose("Refreshing OOP host window for pid ".concat(t)), k = t, j = t, x = t, (0, d.setPID)(t), K(t), z(), true
+  return N.verbose("Refreshing OOP host window for pid ".concat(t)), j = t, k = t, x = t, (0, d.setPID)(t), K(t), z(), true
 }
 
 function el(e) {

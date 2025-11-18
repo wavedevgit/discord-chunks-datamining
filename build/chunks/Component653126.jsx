@@ -61,8 +61,8 @@ let k = Chunk473749.memo(function(e) {
       isHoveringOrFocusing: en
     } = (0, d.Z)(et), {
       handleCardVisibilityChange: er
-    } = (0, g.E)(t.skuId, $ === y.AW.CATALOG ? "full" : $), el = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, G, J, Q), ei = t.type === o.Z.VARIANTS_GROUP && !k, ea = !T || !L, eo = !(I && i) || ei, es = eo || ea, ec = ea || ei;
-    return (0, r.jsx)(s.$, {
+    } = (0, g.E)(t.skuId, $ === y.AW.CATALOG ? "full" : $), el = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, G, J, Q), ei = t.type === s.Z.VARIANTS_GROUP && !k, ea = !T || !L, es = !(I && i) || ei, eo = es || ea, ec = ea || ei;
+    return (0, r.jsx)(o.$, {
       innerRef: et,
       onChange: er,
       threshold: 0,
@@ -81,7 +81,7 @@ let k = Chunk473749.memo(function(e) {
           className: j.productCardContentContainer,
           children: [(0, r.jsx)("div", {
             className: a()(j.productPreviewContainer, {
-              [j.hasBottomContent]: !i || eo || ec
+              [j.hasBottomContent]: !i || es || ec
             }),
             children: (0, r.jsx)(v.Z, {
               skuId: t.skuId,
@@ -100,12 +100,12 @@ let k = Chunk473749.memo(function(e) {
               skuId: t.skuId,
               isCardHovered: en
             })]
-          }), es && (0, r.jsxs)(r.Fragment, {
+          }), eo && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
               className: j.footerGradient
             }), (0, r.jsxs)("div", {
               className: j.footerContainer,
-              children: [eo && (0, r.jsxs)("div", {
+              children: [es && (0, r.jsxs)("div", {
                 className: j.footerInfoContainer,
                 children: [!(i && I) && (0, r.jsxs)("div", {
                   className: j.footerInfoLeft,

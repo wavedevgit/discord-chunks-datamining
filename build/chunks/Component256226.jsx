@@ -91,13 +91,13 @@ let R = Chunk473749.forwardRef(function(e, t) {
       guildId: L,
       disableBorderColor: x,
       onMouseDown: M,
-      onRoleClick: k
+      onRoleClick: j
     } = e,
-    j = (0, s.JA)(D.id),
+    k = (0, s.JA)(D.id),
     {
       tabIndex: U
-    } = j,
-    G = C(j, ["tabIndex"]),
+    } = k,
+    G = C(k, ["tabIndex"]),
     B = (0, E.p9)({
       roleId: D.id,
       size: 16,
@@ -119,7 +119,7 @@ let R = Chunk473749.forwardRef(function(e, t) {
     }, [D.id]),
     Y = i.useCallback(() => {
       if (F) {
-        if (null != k) return void k(D.id);
+        if (null != j) return void j(D.id);
         (0, _.ZDy)(async () => {
           let {
             default: e
@@ -131,7 +131,7 @@ let R = Chunk473749.forwardRef(function(e, t) {
           }))
         })
       }
-    }, [F, L, D.id, k]),
+    }, [F, L, D.id, j]),
     W = (0, _.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
     K = null != (I = D.colorString) ? I : W,
     z = null != (S = (0, l.wK)(K, .6)) ? S : true,

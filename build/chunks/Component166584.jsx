@@ -2,7 +2,7 @@
 /** chunk id: 166584, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -108,7 +108,7 @@ function M(e) {
     onRoleClick: S
   } = e, C = i.useRef({}), P = (e, t) => {
     null != t ? C.current[e] = t : delete C.current[e]
-  }, [M, k] = i.useState(f), [j, U] = i.useState(w), [G, B] = i.useState(false), Z = i.useRef(null), F = i.useRef(null), V = i.useRef(0);
+  }, [M, j] = i.useState(f), [k, U] = i.useState(w), [G, B] = i.useState(false), Z = i.useRef(null), F = i.useRef(null), V = i.useRef(0);
   i.useLayoutEffect(() => {
     V.current = 0
   }, [f]), i.useLayoutEffect(() => {
@@ -131,7 +131,7 @@ function M(e) {
         e += o + D, n.push(i)
       }
     }
-    k(n.length === M.length ? M : n), U(r), V.current++
+    j(n.length === M.length ? M : n), U(r), V.current++
   }, [f, M, G]);
   let H = i.useMemo(() => "roles-".concat((0, a.Z)()), []),
     Y = (0, o.ZP)({
@@ -151,7 +151,7 @@ function M(e) {
         role: e,
         guildId: l.id,
         style: {
-          maxWidth: G || i !== M.length - 1 ? w : j
+          maxWidth: G || i !== M.length - 1 ? w : k
         },
         disableBorderColor: true,
         ref: t => P(e.id, t),
@@ -223,7 +223,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     user: t,
     currentUser: n,

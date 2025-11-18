@@ -54,8 +54,8 @@ function B(e) {
     tab: t,
     selected: n,
     displayText: i,
-    handleTransition: o
-  } = e, [s, u] = l.useState(false), f = l.useRef(null), [h, m] = l.useState(0), C = l.useRef(false), _ = e => {
+    handleTransition: s
+  } = e, [o, u] = l.useState(false), f = l.useRef(null), [h, m] = l.useState(0), C = l.useRef(false), _ = e => {
     clearTimeout(h), m(setTimeout(() => {
       u(e)
     }, 100)), e && (C.current = p.Z.keyboardModeEnabled)
@@ -68,7 +68,7 @@ function B(e) {
     onMouseLeave: () => _(false),
     children: (0, r.jsx)(c.yRy, {
       targetElementRef: f,
-      shouldShow: s,
+      shouldShow: o,
       position: "bottom",
       align: "left",
       onRequestOpen: () => _(true),
@@ -81,16 +81,16 @@ function B(e) {
           closePopout: t
         } = e;
         return (0, r.jsx)(O.Z, {
-          handleTransition: o,
+          handleTransition: s,
           onClose: t
         })
       },
       children: (e, l) => {
-        var s, u;
+        var o, u;
         let {
           isShown: d
         } = l;
-        return (0, r.jsx)(g.Z.Title, (s = function(e) {
+        return (0, r.jsx)(g.Z.Title, (o = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -109,7 +109,7 @@ function B(e) {
           return e
         }({}, e), u = u = {
           ref: f,
-          onClick: () => o(t),
+          onClick: () => s(t),
           onKeyDown: b,
           wrapperClassName: T.tabWrapper,
           className: a()(T.tab, {
@@ -125,7 +125,7 @@ function B(e) {
               color: "currentColor"
             })]
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
@@ -133,8 +133,8 @@ function B(e) {
           }
           return n
         })(Object(u)).forEach(function(e) {
-          Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(u, e))
-        }), s))
+          Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(u, e))
+        }), o))
       }
     })
   })
@@ -144,7 +144,7 @@ function P(e) {
   let {
     selectedTab: t,
     handleTransition: n
-  } = e, i = (0, u.ZP)(), d = (0, s.e7)([v.default], () => v.default.getCurrentUser()), {
+  } = e, i = (0, u.ZP)(), d = (0, o.e7)([v.default], () => v.default.getCurrentUser()), {
     enabled: p
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
@@ -168,7 +168,7 @@ function P(e) {
         sectionType: j.jXE.ORBS_BALANCE_MENU,
         ctaObject: j.qAy.CTA_TO_QUEST_HOME
       }), (0, f.navigateToQuestHome)({
-        fromContent: o.j.ORBS_BALANCE_MENU
+        fromContent: s.j.ORBS_BALANCE_MENU
       })
     }, [N]),
     R = (0, E.eN)("collectibles_shop_header_bar"),

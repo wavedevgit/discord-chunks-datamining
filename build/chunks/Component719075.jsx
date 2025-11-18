@@ -25,7 +25,7 @@ let v = e => {
     let {
       product: t,
       prioritizedCurrency: n
-    } = e, c = (0, i.e7)([o.default], () => o.default.getCurrentUser()), h = (0, f.$l)(), v = s.ZP.canUseCollectibles(c), {
+    } = e, c = (0, i.e7)([s.default], () => s.default.getCurrentUser()), h = (0, f.$l)(), v = o.ZP.canUseCollectibles(c), {
       isDisabled: x
     } = (0, d.G)(t.skuId), {
       isPurchased: E,

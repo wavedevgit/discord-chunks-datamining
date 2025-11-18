@@ -91,7 +91,7 @@ function q(e) {
     withTitleBar: t,
     isFullScreen: n
   } = e;
-  return t && j.isPlatformEmbedded && !n
+  return t && k.isPlatformEmbedded && !n
 }
 class X extends(r = Chunk473749.Component) {
   componentDidMount() {
@@ -210,7 +210,7 @@ class X extends(r = Chunk473749.Component) {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
-        Z.Z.unmountWindow(this.props.windowKey), j.isPlatformEmbedded && G.ZP.close(this.props.windowKey)
+        Z.Z.unmountWindow(this.props.windowKey), k.isPlatformEmbedded && G.ZP.close(this.props.windowKey)
       };
       null != t ? t({
         e,
@@ -234,7 +234,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
       lang: l,
       style: u,
       className: d
-    } = (0, k.vP)();
+    } = (0, j.vP)();
     return a.useEffect(() => {
       let e = n.document.documentElement;
       c()(null != e, "Window document element was null"), e.setAttribute("style", u)

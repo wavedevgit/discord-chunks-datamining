@@ -44,7 +44,7 @@ let C = e => {
     } = (0, p.UI)(C);
   if (null == k) return null;
   let I = b === g.AW.ORBS;
-  return (0, r.jsx)(o.$, {
+  return (0, r.jsx)(s.$, {
     innerRef: x,
     onChange: j,
     threshold: 0,
@@ -75,14 +75,14 @@ let C = e => {
         },
         children: (0, r.jsxs)("div", {
           className: m.wideBannerTextContainer,
-          children: [(0, r.jsx)(s.Heading, {
+          children: [(0, r.jsx)(o.Heading, {
             style: {
               color: null != (n = C.bannerTextColor) ? n : "var(--header-primary)"
             },
             className: I ? m.wideBannerOrbsHeading : true,
             variant: I ? "heading-xl/bold" : "heading-lg/semibold",
             children: C.title
-          }), (0, r.jsx)(s.Text, {
+          }), (0, r.jsx)(o.Text, {
             style: {
               color: null != (i = C.bannerTextColor) ? i : "var(--text-muted)"
             },
@@ -95,7 +95,7 @@ let C = e => {
         })
       }), true !== C.disableCta && (0, r.jsx)("div", {
         className: m.wideBannerBlockButton,
-        children: (0, r.jsx)(s.Button, {
+        children: (0, r.jsx)(o.Button, {
           variant: "overlay-primary",
           onClick: () => {
             _({

@@ -80,8 +80,8 @@ function M(e) {
     onStepChange: D,
     transitionState: L,
     loadId: M,
-    skuId: k,
-    isGift: j = false,
+    skuId: j,
+    isGift: k = false,
     giftRecipient: U,
     giftMessage: G,
     giftingOrigin: B,
@@ -91,22 +91,22 @@ function M(e) {
     analyticsLocations: V
   } = (0, d.ZP)([...Z, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [Y, W] = i.useState(null), [K, z] = i.useState(false), q = i.useMemo(() => (0, C.UY)({
     purchaseType: N.o8.FIAT,
-    skuId: k
-  }), [k]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != k ? [k] : X, J = null != (t = Q[0]) ? t : null, $ = null != k && p.Rm.has(k), ee = i.useCallback(() => {
+    skuId: j
+  }), [j]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != j ? [j] : X, J = null != (t = Q[0]) ? t : null, $ = null != j && p.Rm.has(j), ee = i.useCallback(() => {
     z(true), null == a || a()
   }, [a]), et = i.useCallback(e => {
     z(false), n(e), c.Z.dispatch({
       type: "SKU_PURCHASE_MODAL_CLOSE",
       error: null
     })
-  }, [n]), en = (e, t, n) => j ? (0, r.jsx)(O.Z, {
+  }, [n]), en = (e, t, n) => k ? (0, r.jsx)(O.Z, {
     step: n,
     onClose: () => t(false),
     giftingOrigin: B
   }) : (0, r.jsx)(S.Z, {
     step: n,
     onClose: () => t(false)
-  }), er = i.useMemo(() => [y.WA, ...j ? [T.Dd] : [], v.n, ...y.yp, y.wo, {
+  }), er = i.useMemo(() => [y.WA, ...k ? [T.Dd] : [], v.n, ...y.yp, y.wo, {
     key: g.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(I.x, x(w({}, e), {
       confettiCanvas: Y,
@@ -117,7 +117,7 @@ function M(e) {
       bodyClassName: P.modalOverrideBody,
       sliderBodyClassName: P.modalOverrideSliderBody
     }
-  }], [V, Y, q, j]);
+  }], [V, Y, q, k]);
   return (0, r.jsxs)(d.Gt, {
     value: V,
     children: [(0, r.jsx)(s.O_, {
@@ -134,13 +134,13 @@ function M(e) {
       stepConfigs: er,
       applicationId: A.XAJ,
       skuIDs: Q,
-      isGift: j,
+      isGift: k,
       activeSubscription: null,
       purchaseType: R.GZ.ONE_TIME,
       excludeSubscriptionPlansBySKU: true,
       children: (0, r.jsx)(E.c1, {
         children: (0, r.jsx)(h.KB, {
-          isGift: j,
+          isGift: k,
           giftRecipient: U,
           giftMessage: G,
           giftingOrigin: B,

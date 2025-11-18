@@ -58,8 +58,8 @@ let H = e => {
       tab: t = N.AW.HOME
     } = e;
     (0, h.z)(f.f), (0, S.f)();
-    let n = (0, p.Z)((0, o.Z)()),
-      i = (0, s.e7)([C.default], () => C.default.getCurrentUser());
+    let n = (0, p.Z)((0, s.Z)()),
+      i = (0, o.e7)([C.default], () => C.default.getCurrentUser());
     (0, m.p2)();
     let c = (0, P.B)("CollectiblesShop"),
       {
@@ -81,7 +81,7 @@ let H = e => {
       }),
       U = (0, O.O)(W),
       [z, G] = l.useState(),
-      K = (0, s.e7)([b.Z], () => {
+      K = (0, o.e7)([b.Z], () => {
         var e;
         return null == (e = b.Z.getCategory(z)) ? true : e.name
       }),
