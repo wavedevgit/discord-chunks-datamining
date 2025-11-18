@@ -39,15 +39,15 @@ function O(e) {
       frameCheckerEffect: w
     } = (0, d.d6)(true, b, true),
     [T, P, A] = (0, d.ZF)(O),
-    [D, k] = (0, d.Y5)(T, w, E),
+    [k, D] = (0, d.Y5)(T, w, E),
     R = performance.now() - _.current < d.MC,
     L = P(x, Z.current);
-  (0, u.ZP)(() => (D(), () => {
-    k()
+  (0, u.ZP)(() => (k(), () => {
+    D()
   }));
   let M = r.useCallback(() => {
-      C(), A(), D()
-    }, [C, A, D]),
+      C(), A(), k()
+    }, [C, A, k]),
     [z, V] = r.useState(true),
     [U, W] = r.useState(true),
     [G, F] = r.useState(true),

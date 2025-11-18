@@ -68,13 +68,13 @@ function M(e, t) {
   return n
 }
 
-function j(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i = U(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -98,7 +98,7 @@ function G(e) {
       default: t
     } = await n.e("84509").then(n.bind(n, 933696));
     return n => (0, r.jsx)(t, x({
-      source: j(x({}, e), {
+      source: k(x({}, e), {
         page: P.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
       })
     }, n))
@@ -114,13 +114,13 @@ function B(e) {
   } = (0, _.ZP)(d.Z.USER_SETTINGS_GUILD_PROFILE), M = (0, s.e7)([v.default], () => {
     let e = v.default.getCurrentUser();
     return o()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), U = (0, s.e7)([y.ZP], () => null != a ? y.ZP.getMember(a.id, M.id) : null), B = (0, s.e7)([b.Z], () => !b.Z.isFetchingProfile(M.id, null == a ? true : a.id)), Z = (0, s.e7)([O.Z], () => O.Z.hidePersonalInformation), F = (0, s.cj)([A.Z], () => j(x({}, A.Z.getAllPending()), {
+  }), U = (0, s.e7)([y.ZP], () => null != a ? y.ZP.getMember(a.id, M.id) : null), B = (0, s.e7)([b.Z], () => !b.Z.isFetchingProfile(M.id, null == a ? true : a.id)), Z = (0, s.e7)([O.Z], () => O.Z.hidePersonalInformation), F = (0, s.cj)([A.Z], () => k(x({}, A.Z.getAllPending()), {
     source: A.Z.getSource()
   })), {
     source: V,
     pendingAvatar: H,
     pendingNameplate: Y
-  } = F, W = k(F, ["source", "pendingAvatar", "pendingNameplate"]), K = (0, E.SD)({
+  } = F, W = j(F, ["source", "pendingAvatar", "pendingNameplate"]), K = (0, E.SD)({
     userId: M.id,
     image: H
   }), z = (0, h.Ys)({
@@ -158,7 +158,7 @@ function B(e) {
             guildName: null == a ? true : a.name
           })
         }),
-        profilePreview: (0, r.jsx)(g.Z, j(x({}, W), {
+        profilePreview: (0, r.jsx)(g.Z, k(x({}, W), {
           pendingAvatar: K,
           pendingDisplayNameStyles: q,
           user: M,
@@ -166,7 +166,7 @@ function B(e) {
           canUsePremiumCustomization: T.ZP.canUsePremiumProfileCustomization(M),
           onUpsellClick: G
         })),
-        nameplatePreview: (0, r.jsx)(p.Z, j(x({}, W), {
+        nameplatePreview: (0, r.jsx)(p.Z, k(x({}, W), {
           pendingDisplayNameStyles: q,
           user: M,
           guildId: null == a ? true : a.id,

@@ -138,11 +138,11 @@ function M(e) {
   return a && (m = {}, b = {}, O = {}, y = {}, E.clear()), r = t.id, i = n, a
 }
 
-function j() {
+function k() {
   m = {}, b = {}, O = {}, y = {}, E.clear()
 }
 
-function k(e) {
+function j(e) {
   let {
     voiceStates: t,
     user: n,
@@ -250,8 +250,8 @@ class Z extends(a = Chunk442837.ZP.Store) {
 _(Z, "displayName", "VoiceStateStore");
 let F = new Z(Chunk570140.Z, {
   CONNECTION_OPEN: M,
-  CONNECTION_OPEN_SUPPLEMENTAL: j,
-  OVERLAY_INITIALIZE: k,
+  CONNECTION_OPEN_SUPPLEMENTAL: k,
+  OVERLAY_INITIALIZE: j,
   VOICE_CHANNEL_SELECT: x,
   VOICE_STATE_UPDATES: P,
   GUILD_DELETE: U,

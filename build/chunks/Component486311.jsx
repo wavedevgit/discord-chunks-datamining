@@ -1,7 +1,7 @@
 /** Chunk was on 10023 **/
 /** chunk id: 486311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -50,50 +50,50 @@ let j = {
       END: 376
     }
   },
-  x = Chunk473749.memo(function(e) {
+  C = Chunk473749.memo(function(e) {
     let {
       guildId: t,
       selected: l
-    } = e, x = (0, m.ZP)(t), C = i.useCallback(() => {
+    } = e, C = (0, m.ZP)(t), x = i.useCallback(() => {
       var e;
-      (0, p.jd)(t), (0, h.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == x || null == (e = x.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
-    }, [t, x]), E = i.useRef(null), S = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), P = S || I, N = i.useCallback(() => {
+      (0, p.jd)(t), (0, f.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == C || null == (e = C.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
+    }, [t, C]), E = i.useRef(null), S = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), P = S || I, N = i.useCallback(() => {
       var e;
-      if ((null == x ? true : x.popout) == null || P) return null;
-      switch (null == x || null == (e = x.popout) ? true : e.type) {
-        case f.J.LEVEL_REACHED:
+      if ((null == C ? true : C.popout) == null || P) return null;
+      switch (null == C || null == (e = C.popout) ? true : e.type) {
+        case h.J.LEVEL_REACHED:
           return (0, r.jsx)(g.jG, v({
             guildId: t,
             channelRowRef: E
-          }, x.popout));
-        case f.J.PERKS_AVAILABLE:
+          }, C.popout));
+        case h.J.PERKS_AVAILABLE:
           return (0, r.jsx)(g.$h, v({
             guildId: t,
             channelRowRef: E
-          }, x.popout));
-        case f.J.PERKS_PURCHASABLE:
+          }, C.popout));
+        case h.J.PERKS_PURCHASABLE:
           return (0, r.jsx)(g.yI, v({
             guildId: t,
             channelRowRef: E
-          }, x.popout));
-        case f.J.NEW_PERK_AVAILABLE:
+          }, C.popout));
+        case h.J.NEW_PERK_AVAILABLE:
           return (0, r.jsx)(g.cO, v({
             guildId: t,
             channelRowRef: E
-          }, x.popout));
-        case f.J.GAME_SERVER_HOSTING_AVAILABLE:
-        case f.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
+          }, C.popout));
+        case h.J.GAME_SERVER_HOSTING_AVAILABLE:
+        case h.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
           return (0, r.jsx)(g.dJ, v({
             guildId: t,
             channelRowRef: E
-          }, x.popout));
+          }, C.popout));
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == x ? true : x.popout, E, P]), [Z, w] = i.useState(null);
+    }, [t, null == C ? true : C.popout, E, P]), [Z, w] = i.useState(null);
     i.useEffect(() => {
-      (null == x ? true : x.popout) == null && w(null)
-    }, [null == x ? true : x.popout]);
+      (null == C ? true : C.popout) == null && w(null)
+    }, [null == C ? true : C.popout]);
     let T = i.useCallback(e => {
       w(e)
     }, []);
@@ -107,7 +107,7 @@ let j = {
           className: e,
           color: "currentColor"
         }),
-        background: (null == x ? true : x.popout) != null && (0, r.jsx)("div", {
+        background: (null == C ? true : C.popout) != null && (0, r.jsx)("div", {
           className: O.lottieContainer,
           children: (0, r.jsx)(s.kci, {
             nextScene: null == Z ? "animation" : "LOOP",
@@ -122,14 +122,14 @@ let j = {
         }),
         text: (0, r.jsx)("span", {
           className: o()({
-            [O.textImportant]: (null == x ? true : x.showUnread) === true
+            [O.textImportant]: (null == C ? true : C.showUnread) === true
           }),
           children: y.intl.string(_.default.yv3DJJ)
         }),
         selected: l,
-        onClick: C,
-        showUnread: (null == x ? true : x.showUnread) === true,
-        trailing: null == x ? true : x.trailing
+        onClick: x,
+        showUnread: (null == C ? true : C.showUnread) === true,
+        trailing: null == C ? true : C.trailing
       }), N()]
     })
   })

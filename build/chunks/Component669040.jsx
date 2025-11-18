@@ -81,7 +81,7 @@ let z = 0,
       channelGuildId: D,
       channelId: x,
       messageId: M,
-      isBurstReaction: j,
+      isBurstReaction: k,
       listHeaderClassName: Y,
       activeSectionIndex: z,
       upsellGlowOpacity: er,
@@ -145,11 +145,11 @@ let z = 0,
         selectedItemClassName: K.__invalid_selectedItem,
         channelId: x,
         messageId: M,
-        isBurstReaction: j,
+        isBurstReaction: k,
         inNitroLockedSection: i.isNitroLocked,
         handleScrollUpOnSectionCollapse: o
       }, e)
-    }), [a, m, s, ec, ep, c, f, O, v, A, N, P, eh, D, x, M, j, eo]);
+    }), [a, m, s, ec, ep, c, f, O, v, A, N, P, eh, D, x, M, k, eo]);
     i.useEffect(() => () => {
       var e, t;
       return null == (t = em.cache) || null == (e = t.clear) ? true : e.call(t)
@@ -175,7 +175,7 @@ let z = 0,
             size: "custom"
           }) : null,
           u = null == i ? true : i.name;
-        null != a && (u = (0, k.Y1)(a, null == i ? true : i.name));
+        null != a && (u = (0, j.Y1)(a, null == i ? true : i.name));
         let d = z === e,
           f = n.isNitroLocked,
           p = f && !d,
@@ -258,8 +258,8 @@ let z = 0,
       isUsingKeyboardNavigation: C,
       channelGuildId: R,
       channelId: L,
-      messageId: j,
-      isBurstReaction: k,
+      messageId: k,
+      isBurstReaction: j,
       listHeaderClassName: U
     } = e, G = i.useRef(false), Z = E.kJ.useStore(e => e.activeCategoryIndex), F = (0, b.Iu)(e => e.searchQuery), H = P.Yk.useSetting(), q = (0, u.e7)([D.default], () => D.default.getCurrentUser()), X = (0, x.I5)(q), {
       location: Q
@@ -291,8 +291,8 @@ let z = 0,
       allowAnimatedEmoji: H,
       channelGuildId: R,
       channelId: L,
-      messageId: j,
-      isBurstReaction: k,
+      messageId: k,
+      isBurstReaction: j,
       listHeaderClassName: U,
       activeSectionIndex: $,
       upsellGlowOpacity: er,

@@ -311,7 +311,7 @@ let eI = new ex(Chunk570140.Z, {
     } = e;
     em(0);
     let i = null != (t = L.Z.getFocusedPID()) ? t : A.UNSET_PID;
-    if (k.default.hasChangedRenderMode(i)) return;
+    if (D.default.hasChangedRenderMode(i)) return;
     let r = (0, K.Z)((0, z.pL)(), n);
     null != r && eO(r, {
       priority: M.Tu.URGENT,
@@ -471,7 +471,7 @@ let eI = new ex(Chunk570140.Z, {
           var l;
           let {
             enabled: e
-          } = (0, D.lj)("OverlayV3StreamWatchNudge");
+          } = (0, k.lj)("OverlayV3StreamWatchNudge");
           if (!e) return;
           let n = eS(t, r);
           if (null != e_[n]) continue;

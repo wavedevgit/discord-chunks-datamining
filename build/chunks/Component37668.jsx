@@ -1,5 +1,5 @@
 /** Chunk was on 70887 **/
-/** chunk id: 37668, original params: t,e,i (module,exports,require) **/
+/** chunk id: 37668, original params: t,i,e (module,exports,require) **/
 require.d(exports, {
   default: () => b
 });
@@ -10,6 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
   Chunk63063 = require("./63063.js"),
+  Chunk931847 = require("./931847.js"),
   Chunk86419 = require("./86419.js"),
   Chunk778414 = require("./778414.jsx"),
   Chunk872269 = require("./872269.js"),
@@ -17,59 +18,60 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk817638 = require("./817638.js");
 
-function g(t) {
+function v(t) {
   let {
-    widget: e,
-    user: i
+    widget: i,
+    user: e
   } = t;
-  return (0, n.jsx)(u.Z, {
-    widget: e,
-    user: i,
+  return (0, n.jsx)(p.Z, {
+    widget: i,
+    user: e,
     disableInteraction: true
   })
 }
 
 function b(t) {
   let {
-    transitionState: e,
-    widget: i,
-    userId: u,
+    transitionState: i,
+    widget: e,
+    userId: p,
     onClose: b,
-    trackUserProfileEditAction: v
-  } = t, E = r.useCallback(() => {
-    (0, o.y8)(i.type), v({
+    trackUserProfileEditAction: f
+  } = t, E = a.useCallback(() => {
+    (0, u.y8)(e.type), f({
       action: "WIDGET_REMOVED",
-      widgetEdited: i.type
+      widgetEdited: e.type,
+      applicationId: e instanceof o.q ? e.applicationId : true
     }), b(), (0, x.L$)(h.qb.WIDGET_REMOVED)
-  }, [i.type, b, v]), f = (0, l.e7)([c.default], () => c.default.getUser(u));
-  return null == f ? null : (0, n.jsxs)(s.Modal, {
-    transitionState: e,
+  }, [e, b, f]), m = (0, l.e7)([c.default], () => c.default.getUser(p));
+  return null == m ? null : (0, n.jsxs)(r.Modal, {
+    transitionState: i,
     onClose: b,
-    title: p.intl.string(p.t.Mm07Yc),
-    subtitle: p.intl.format(p.t["x+djI4"], {
+    title: w.intl.string(w.t.Mm07Yc),
+    subtitle: w.intl.format(w.t["x+djI4"], {
       helpUrl: d.w
     }),
     actions: [{
       variant: "secondary",
-      text: p.intl.string(p.t["ETE/oC"]),
+      text: w.intl.string(w.t["ETE/oC"]),
       onClick: b
     }, {
       variant: "critical-primary",
-      text: p.intl.string(p.t.Mm07Yc),
+      text: w.intl.string(w.t.Mm07Yc),
       onClick: E
     }],
     children: [(0, n.jsx)("div", {
-      className: w.widgetPreview,
-      children: (0, n.jsx)(g, {
-        widget: i,
-        user: f
+      className: g.widgetPreview,
+      children: (0, n.jsx)(v, {
+        widget: e,
+        user: m
       })
     }), (0, n.jsx)("div", {
-      className: w.hintText,
-      children: (0, n.jsx)(a.Text, {
+      className: g.hintText,
+      children: (0, n.jsx)(s.Text, {
         color: "text-secondary",
         variant: "text-sm/normal",
-        children: p.intl.string(p.t.bQNGeT)
+        children: w.intl.string(w.t.bQNGeT)
       })
     })]
   })

@@ -25,7 +25,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk977505 = require("./977505.js");
 
-function C(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,7 +41,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -120,7 +120,7 @@ class I extends Chunk473749.PureComponent {
     return null != module ? module : Chunk388032.intl.string(Chunk388032.t.cw57ar)
   }
   constructor(...e) {
-    super(...e), C(this, "renderProgressBody", (e, t) => {
+    super(...e), x(this, "renderProgressBody", (e, t) => {
       let {
         state: n,
         application: r
@@ -137,11 +137,11 @@ class I extends Chunk473749.PureComponent {
         d = null != u ? Object.keys(u) : [],
         {
           unit: p,
-          time: f
+          time: h
         } = (0, g.CI)(null != c ? c / 60 : null, d);
       if (null != u && null != p) {
         let e = u[p];
-        return null != e ? e(r.name, f) : null
+        return null != e ? e(r.name, h) : null
       }
       return null
     })
@@ -208,9 +208,9 @@ class P extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), C(this, "state", {
+    super(...e), x(this, "state", {
       animationScale: new s.Z.Value(0)
-    }), C(this, "handleOnClick", e => {
+    }), x(this, "handleOnClick", e => {
       let {
         onClick: t
       } = this.props;
@@ -228,7 +228,7 @@ function N(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-C(P, "defaultProps", {
+x(P, "defaultProps", {
   strokeSize: Chunk481060._3P.StrokeSizes.MEDIUM
 });
 let Z = Chunk442837.ZP.connectStores([Chunk941128.Z, Chunk417363.Z, Chunk812206.Z], () => {

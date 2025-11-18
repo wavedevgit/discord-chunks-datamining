@@ -2,7 +2,7 @@
 /** chunk id: 327530, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $k: () => a,
-  MF: () => f,
+  MF: () => h,
   NY: () => c,
   Pw: () => l,
   Q0: () => d,
@@ -23,7 +23,7 @@ let r = 8,
   u = 8,
   d = 84,
   p = 5,
-  f = {
+  h = {
     origin: {
       x: false,
       y: 7

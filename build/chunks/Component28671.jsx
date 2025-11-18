@@ -30,7 +30,8 @@ function b(e) {
   }), [n.id]), O = i.useCallback(() => {
     null != y && ((0, u.qH)(y.type, y, true), h({
       action: "WIDGET_ADDED",
-      widgetEdited: y.type
+      widgetEdited: y.type,
+      applicationId: y.applicationId
     }), (0, d.L$)(g.qb.WIDGET_ADDED))
   }, [y, h]);
   return (0, r.jsx)(f.Z, {

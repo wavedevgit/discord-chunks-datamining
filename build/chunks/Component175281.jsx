@@ -62,8 +62,8 @@ function N(e) {
     showBackdrop: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(C.backdrop, {
-      [C.show]: t
+    className: o()(x.backdrop, {
+      [x.show]: t
     })
   })
 }
@@ -77,29 +77,29 @@ function Z() {
         i = (0, g.UD)(t),
         l = (0, g.U6)(t);
       return (0, r.jsxs)("div", {
-        className: C.keyboardShortcutSection,
+        className: x.keyboardShortcutSection,
         children: [(0, r.jsxs)("div", {
-          children: [(0, r.jsx)(h.Heading, {
+          children: [(0, r.jsx)(f.Heading, {
             variant: "heading-lg/semibold",
             children: i
-          }), null != l && (0, r.jsx)(h.Text, {
-            className: C.keybindGroupDescription,
+          }), null != l && (0, r.jsx)(f.Text, {
+            className: x.keybindGroupDescription,
             variant: "text-sm/normal",
             children: l
           })]
         }), (0, r.jsx)("div", {
-          className: C.keyboardShortcutListGroup,
+          className: x.keyboardShortcutListGroup,
           children: n.map((e, t) => {
             var n;
             return (null == (n = e.predicate) ? true : n.call(e)) === false ? null : (0, r.jsxs)("div", {
-              className: C.keybindGroup,
-              children: [(0, r.jsx)(h.Text, {
+              className: x.keybindGroup,
+              children: [(0, r.jsx)(f.Text, {
                 variant: "text-sm/normal",
                 children: e.description
               }), (0, r.jsx)("div", {
                 className: "keybind-shortcuts",
-                children: e.binds.map(e => (0, r.jsx)(h.M2$, {
-                  className: C.keybindKey,
+                children: e.binds.map(e => (0, r.jsx)(f.M2$, {
+                  className: x.keybindKey,
                   shortcut: e
                 }, e))
               })]
@@ -272,10 +272,10 @@ function T(e) {
       let e = setTimeout(() => c(false), 500);
       return () => clearTimeout(e)
     }
-  }, [s]), (0, r.jsx)(h.P3F, {
+  }, [s]), (0, r.jsx)(f.P3F, {
     onClick: u,
-    className: o()(C.arrow, l, {
-      [C.active]: t || s
+    className: o()(x.arrow, l, {
+      [x.active]: t || s
     }),
     children: a
   })
@@ -295,15 +295,15 @@ function A(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(N, {
       showBackdrop: s
-    }), (0, r.jsx)(h.Y0X, {
-      className: o()(C.noBackground, {
-        [C.noShadow]: l
+    }), (0, r.jsx)(f.Y0X, {
+      className: o()(x.noBackground, {
+        [x.noShadow]: l
       }),
-      size: h.CgR.DYNAMIC,
-      "aria-label": x.intl.string(x.t.T9DA2K),
+      size: f.CgR.DYNAMIC,
+      "aria-label": C.intl.string(C.t.T9DA2K),
       transitionState: t,
       parentComponent: "KeyboardShortcutsModal",
-      children: (0, r.jsx)(f.W, {
+      children: (0, r.jsx)(h.W, {
         component: "div",
         children: l ? (0, r.jsx)(v.Z, {
           handleDemonClose: function() {

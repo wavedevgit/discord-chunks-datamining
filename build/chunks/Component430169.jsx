@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 430169, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => D
+  Z: () => k
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
@@ -155,21 +155,21 @@ function A(e) {
   })
 }
 
-function D(e, t, n) {
+function k(e, t, n) {
   var r, l;
   if (x.Z.isNotificationDisabled(j.n0.StreamWatchNudge)) return null;
   let o = v.default.getUser(e);
   if (null == o) return null;
   let {
     designVariant: u
-  } = (0, _.lj)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, I = g.Z.getChannel(t), Z = null != f ? d.Z.getApplication(f) : null, w = null != f ? y.Z.getDetectableGame(f) : null, T = null != f ? p.ZP.getRunningGames().find(e => e.id === f) : null, D = null != (l = null != (r = null == T ? true : T.name) ? r : null == w ? true : w.name) ? l : null == Z ? true : Z.name, k = (0, E.oY)(null == I ? true : I.guild_id, null == I ? true : I.id, o), {
+  } = (0, _.lj)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, I = g.Z.getChannel(t), Z = null != f ? d.Z.getApplication(f) : null, w = null != f ? y.Z.getDetectableGame(f) : null, T = null != f ? p.ZP.getRunningGames().find(e => e.id === f) : null, k = null != (l = null != (r = null == T ? true : T.name) ? r : null == w ? true : w.name) ? l : null == Z ? true : Z.name, D = (0, E.oY)(null == I ? true : I.guild_id, null == I ? true : I.id, o), {
     trackView: R,
     trackClick: L
   } = (0, C.Rg)(j.n0.StreamWatchNudge, {
     notif_type: j.n0.StreamWatchNudge,
     notif_user_id: o.id,
     activity_type: null == n ? true : n.type,
-    activity_name: null != D ? D : null == n ? true : n.name
+    activity_name: null != k ? k : null == n ? true : n.name
   });
   return {
     body: (() => {
@@ -179,7 +179,7 @@ function D(e, t, n) {
             user: o,
             application: Z,
             runningGame: T,
-            username: k,
+            username: D,
             buttonColor: "green"
           });
         case _.RD.GRAY_BUTTON_WITH_TEXT:
@@ -187,7 +187,7 @@ function D(e, t, n) {
             user: o,
             application: Z,
             runningGame: T,
-            username: k,
+            username: D,
             buttonColor: "gray"
           });
         case _.RD.SINGLE_ICON_BUTTON:
@@ -195,7 +195,7 @@ function D(e, t, n) {
             user: o,
             application: Z,
             runningGame: T,
-            username: k,
+            username: D,
             iconColor: "white"
           })
       }

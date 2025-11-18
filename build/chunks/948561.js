@@ -50,7 +50,7 @@ function M(e) {
   return "".concat(e.channel_id, ":").concat(e.id)
 }
 
-function j() {
+function k() {
   Object.values(x).forEach(e => {
     let {
       timeout: t
@@ -59,7 +59,7 @@ function j() {
   }), x = {}
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null == e.id || null == e.channel_id) returnfalse;
   let n = M(e);
   if (null != x[n]) {
@@ -97,7 +97,7 @@ function U(e, t, n) {
 }
 
 function G(e) {
-  if (k(e, I.Pq.TIMEOUT)) {
+  if (j(e, I.Pq.TIMEOUT)) {
     let t = m.Z.getMessage(e.channel_id, e.id);
     if (null != t) {
       let {
@@ -323,7 +323,7 @@ function z(e) {
   if (null == s.channel_id || null == s.id || (null == (t = s.author) ? true : t.id) === _.default.getId() || null == s.embeds && null == s.attachments && !(0, I.M0)(s) || (null == (n = s.embeds) ? true : n.length) === 0 && (null == (r = s.attachments) ? true : r.length) === 0 && !(0, I.M0)(s)) returnfalse;
   if (!(0, A.MD)(s)) {
     let e = null != (o = null != (a = m.Z.getMessage(s.channel_id, s.id)) ? a : T.Z.getMessage(s.id, s.channel_id)) ? o : null == (i = f.Z.getMessage(s.channel_id, s.id)) ? true : i.message;
-    null == e || (0, A.MD)((0, u.wi)(e, s)) || k(e, I.Pq.UPDATE)
+    null == e || (0, A.MD)((0, u.wi)(e, s)) || j(e, I.Pq.UPDATE)
   }
   let l = g.Z.getChannelId(),
     c = p.ZP.getCurrentSidebarChannelId(l);
@@ -454,7 +454,7 @@ class eo extends Chunk147913.Z {
       SIDEBAR_VIEW_CHANNEL: et,
       MESSAGE_CREATE: q,
       MESSAGE_UPDATE: z,
-      LOGOUT: j,
+      LOGOUT: k,
       SEARCH_MESSAGES_SUCCESS: Q,
       MOD_VIEW_SEARCH_MESSAGES_SUCCESS: Q,
       CHANNEL_SELECT: en,

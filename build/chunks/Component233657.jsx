@@ -58,8 +58,8 @@ function _(e) {
     hasUnread: y,
     mentionCount: O
   } = (0, i.cj)([u.ZP], () => ({
-    hasUnread: u.ZP.hasUnread(t.id, f.W.GUILD_EVENT),
-    mentionCount: u.ZP.getMentionCount(t.id, f.W.GUILD_EVENT)
+    hasUnread: u.ZP.hasUnread(t.id, h.W.GUILD_EVENT),
+    mentionCount: u.ZP.getMentionCount(t.id, h.W.GUILD_EVENT)
   }), [t.id]), v = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
   async function j() {
     await (0, o.ZDy)(async () => {
@@ -71,10 +71,10 @@ function _(e) {
       }))
     }), (0, s.Q3)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
-  let x = (0, c.ZP)(t.id),
-    C = x.length > 0 ? h.intl.formatToPlainString(h.t.IBdqSu, {
-      number: x.length
-    }) : h.intl.string(h.t.tlopTM);
+  let C = (0, c.ZP)(t.id),
+    x = C.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSu, {
+      number: C.length
+    }) : f.intl.string(f.t.tlopTM);
   return (0, r.jsx)(p.m, {
     id: "upcoming-events-".concat(t.id),
     renderIcon: e => (0, r.jsx)(o.Que, {
@@ -82,7 +82,7 @@ function _(e) {
       color: "currentColor",
       className: e
     }),
-    text: C,
+    text: x,
     selected: _,
     onClick: j,
     onContextMenu: e => {

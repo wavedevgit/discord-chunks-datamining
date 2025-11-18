@@ -23,26 +23,27 @@ var Chunk54381 = require("./54381.js"),
 
 function v() {
   let {
-    trackUserProfileEditAction: e
-  } = (0, Chunk785717.KZ)(), t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), {
-    application: v,
-    config: j
+    trackUserProfileAction: e,
+    trackUserProfileEditAction: t
+  } = (0, Chunk785717.KZ)(), v = Chunk473749.useRef(false), j = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), {
+    application: x,
+    config: _
   } = (0, Chunk50130.G)(), {
-    token: x,
-    fetched: _
-  } = (0, Chunk491662.o)(null == j ? true : j.application_id), P = Chunk473749.useMemo(() => (null == j ? true : j.application_id) != null ? new Chunk931847.q({
+    token: P,
+    fetched: I
+  } = (0, Chunk491662.o)(null == _ ? true : _.application_id), w = Chunk473749.useMemo(() => (null == _ ? true : _.application_id) != null ? new Chunk931847.q({
     type: Chunk296009.l.APPLICATION,
-    applicationId: j.application_id
-  }) : null, [null == j ? true : j.application_id]), I = Chunk473749.useCallback(() => {
-    module({
+    applicationId: _.application_id
+  }) : null, [null == _ ? true : _.application_id]), S = Chunk473749.useCallback(() => {
+    exports({
       action: "PRESS_ADD_WIDGET"
     }), (0, Chunk481060.ZDy)(async () => {
       let {
-        default: t
+        default: e
       } = await require.e("38576").then(require.bind(require, 925170));
       return n => {
         var i, a;
-        return (0, r.jsx)(t, (i = function(e) {
+        return (0, r.jsx)(e, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -60,7 +61,7 @@ function v() {
           }
           return e
         }({}, n), a = a = {
-          trackUserProfileEditAction: e
+          trackUserProfileEditAction: t
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -75,13 +76,18 @@ function v() {
     }, {
       stackingBehavior: "stack"
     })
-  }, [module]);
-  if (null == exports || null == v || null == P || !_) return (0, Chunk54381.jsx)("div", {
+  }, [exports]), E = null == j || null == x || null == w || !I, T = null != P;
+  if (Chunk473749.useEffect(() => {
+      !E && T && (v.current || (module({
+        action: "VIEW_APPLICATION_WIDGETS_EMPTY_STATE",
+        applicationId: x.id
+      }), v.current = true))
+    }, [E, T, module, null == x ? true : x.id]), E) return (0, Chunk54381.jsx)("div", {
     className: Chunk267233.loading,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   });
-  if (null == x) return (0, Chunk54381.jsx)(Chunk795990.Z, {});
-  let w = (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+  if (!T) return (0, Chunk54381.jsx)(Chunk795990.Z, {});
+  let C = (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
     gap: 4,
     className: Chunk267233.header,
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
@@ -92,7 +98,7 @@ function v() {
       variant: "text-sm/normal",
       color: "text-secondary",
       children: Chunk388032.intl.format(Chunk388032.t.YnNFWa, {
-        applicationName: v.name
+        applicationName: x.name
       })
     })]
   });
@@ -101,20 +107,20 @@ function v() {
     bypassAutoDismiss: true,
     children: e => {
       let {
-        visibleContent: n,
-        markAsDismissed: i
+        visibleContent: t,
+        markAsDismissed: n
       } = e;
-      switch (n) {
+      switch (t) {
         case o.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET:
           return (0, r.jsxs)(c.Kqy, {
             gap: 16,
             align: "center",
             children: [(0, r.jsx)(c.LZC, {
               size: 32
-            }), w, (0, r.jsx)(m.Z, {
-              user: t,
-              application: v,
-              onDismiss: i
+            }), C, (0, r.jsx)(m.Z, {
+              user: j,
+              application: x,
+              onDismiss: n
             }), (0, r.jsx)(b.Z, {})]
           });
         case null:
@@ -123,12 +129,12 @@ function v() {
             align: "center",
             children: [(0, r.jsx)(c.LZC, {
               size: 128
-            }), w, (0, r.jsx)(c.Button, {
+            }), C, (0, r.jsx)(c.Button, {
               icon: c.qJs,
               text: y.intl.string(y.t["lBG2s/"]),
               size: "md",
               color: "secondary",
-              onClick: I
+              onClick: S
             })]
           })
       }

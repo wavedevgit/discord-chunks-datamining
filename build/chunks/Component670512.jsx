@@ -63,28 +63,28 @@ class b extends(r = Chunk473749.PureComponent) {
   }
   renderArrowGroup(e) {
     return (0, i.jsxs)("div", {
-      className: a()(h.arrowGroup, e),
+      className: a()(f.arrowGroup, e),
       children: [(0, i.jsx)(s.Z.div, {
-        className: a()(h.arrowContainer, h.horizontal),
+        className: a()(f.arrowContainer, f.horizontal),
         style: this.getStyle(),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(403756),
-          className: h.arrowIcon
+          className: f.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: a()(h.arrowContainer, h.diag1),
+        className: a()(f.arrowContainer, f.diag1),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(536404),
-          className: h.arrowIcon
+          className: f.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: a()(h.arrowContainer, h.diag2),
+        className: a()(f.arrowContainer, f.diag2),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(569347),
-          className: h.arrowIcon
+          className: f.arrowIcon
         })
       })]
     })

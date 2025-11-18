@@ -77,7 +77,7 @@ let b = {
       locked: S,
       widgetId: t,
       pinned: j
-    })), w = (0, c.Z)(n), T = (0, c.Z)(S), P = _ === g.C5.VERTICAL, A = S || T !== S || w !== n, D = r.useMemo(() => {
+    })), w = (0, c.Z)(n), T = (0, c.Z)(S), P = _ === g.C5.VERTICAL, A = S || T !== S || w !== n, k = r.useMemo(() => {
       let e = 0,
         t = 0;
       return P ? Z.map((t, n) => E(v({}, t), {
@@ -87,7 +87,7 @@ let b = {
         x: (t += e.width + (n > 0 ? N : 0)) - e.width,
         y: 0
       }))
-    }, [Z, N, P]), k = r.useMemo(() => 0 === D.length ? (0, m.MH)(f.bt) : D.reduce((e, t) => e + t.height, 0) + (P ? N * (D.length - 1) : 0), [D, P, N]), R = r.useMemo(() => 0 === D.length ? f.bt : D.reduce((e, t) => e + t.width, 0) + (P ? 0 : N * (D.length - 1)), [D, P, N]), L = (0, s.Yzy)(D, {
+    }, [Z, N, P]), D = r.useMemo(() => 0 === k.length ? (0, m.MH)(f.bt) : k.reduce((e, t) => e + t.height, 0) + (P ? N * (k.length - 1) : 0), [k, P, N]), R = r.useMemo(() => 0 === k.length ? f.bt : k.reduce((e, t) => e + t.width, 0) + (P ? 0 : N * (k.length - 1)), [k, P, N]), L = (0, s.Yzy)(k, {
       key: e => e.key,
       from: {
         height: 0,
@@ -143,7 +143,7 @@ let b = {
         [O.horizontal]: !P
       }),
       style: P ? {
-        height: k
+        height: D
       } : {
         width: R
       },

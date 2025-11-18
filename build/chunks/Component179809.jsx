@@ -56,7 +56,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       id: H,
       name: z,
       children: W
-    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, h.Ml)("FolderItem");
+    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, f.Ml)("FolderItem");
     i.useEffect(() => {
       R && Y(false)
     }, [R]);
@@ -69,7 +69,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         nodeId: t.id
       }),
       end() {
-        null == L || L(), (0, f.V1)(g.ZP.getCompatibleGuildFolders())
+        null == L || L(), (0, h.V1)(g.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -103,7 +103,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         selected: l,
         unread: w,
         className: I.pill
-      }), (0, r.jsx)(x.Z, {
+      }), (0, r.jsx)(C.Z, {
         text: er,
         disabled: R,
         selected: l,
@@ -143,7 +143,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         targetNode: t,
         onDragOverChanged: et
       }) : null]
-    }), eu = null != t.color ? t.color : C.Wyy, ed = eu === C.Wyy ? true : (0, u.Rf)(eu);
+    }), eu = null != t.color ? t.color : x.Wyy, ed = eu === x.Wyy ? true : (0, u.Rf)(eu);
     return (0, r.jsxs)("div", {
       ref: es,
       className: o()(S.folderGroup, {

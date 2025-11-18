@@ -118,7 +118,7 @@ let eP = (0, Chunk438139.Z)(function(e) {
   let {
     message: t
   } = e;
-  return (0, r.jsx)(eh.Z, {
+  return (0, r.jsx)(ef.Z, {
     children: t
   })
 });
@@ -158,7 +158,7 @@ class eN extends Chunk473749.PureComponent {
       analyticsContext: a,
       runningGame: c,
       parentAnalyticsLocation: u,
-      canStartAuthorization: h,
+      canStartAuthorization: f,
       accountLinkButtonRef: g,
       startAuthorization: b
     } = this.props, _ = (0, Chunk339144.y)(Chunk473749, Chunk120356, o), y = [];
@@ -171,9 +171,9 @@ class eN extends Chunk473749.PureComponent {
           visibleContent: t,
           markAsDismissed: n
         } = e;
-        return t === d.z.ACCOUNT_LINK_INVITE_FRIENDS ? (0, r.jsx)(f.J2, {
-          title: ex.intl.string(ex.t["0l2pEt"]),
-          body: ex.intl.string(ex.t["DSZUK/"]),
+        return t === d.z.ACCOUNT_LINK_INVITE_FRIENDS ? (0, r.jsx)(h.J2, {
+          title: eC.intl.string(eC.t["0l2pEt"]),
+          body: eC.intl.string(eC.t["DSZUK/"]),
           targetElementRef: this.inviteButtonRef,
           align: "right",
           shouldShow: true,
@@ -182,7 +182,7 @@ class eN extends Chunk473749.PureComponent {
             align: "end"
           },
           actions: [{
-            text: ex.intl.string(ex.t.YdkBCH),
+            text: eC.intl.string(eC.t.YdkBCH),
             onClick: () => {
               var e;
               n(eO.L.TAKE_ACTION), s()(null != l, "Received null activity"), eu.default.track(e_.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
@@ -196,9 +196,9 @@ class eN extends Chunk473749.PureComponent {
               }), (0, m.h7)(l, false)
             }
           }]
-        }) : t === d.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER ? (0, r.jsx)(f.J2, {
-          title: ex.intl.string(ex.t.MxAlrB),
-          body: ex.intl.string(ex.t["/UTTEg"]),
+        }) : t === d.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER ? (0, r.jsx)(h.J2, {
+          title: eC.intl.string(eC.t.MxAlrB),
+          body: eC.intl.string(eC.t["/UTTEg"]),
           targetElementRef: this.accountLinkUpsellTargetRef,
           position: "top",
           align: "left",
@@ -206,14 +206,14 @@ class eN extends Chunk473749.PureComponent {
             align: "start"
           },
           actions: [{
-            text: ex.intl.string(ex.t.aRIFWD),
+            text: eC.intl.string(eC.t.aRIFWD),
             onClick: () => {
               n(eO.L.TAKE_ACTION), window.open(ed.Z.getArticleURL(e_.BhN.IN_GAME_FEATURES), "_blank")
             }
           }],
           shouldShow: true,
           onRequestClose: () => n(eO.L.USER_DISMISS)
-        }) : t === d.z.ACCOUNT_LINK_PROMPT ? (0, r.jsx)(f.J2, {
+        }) : t === d.z.ACCOUNT_LINK_PROMPT ? (0, r.jsx)(h.J2, {
           graphic: {
             type: "dynamic",
             component: p.DynamicGraphicComponent.ACCOUNT_LINK_DISPLAY,
@@ -221,10 +221,10 @@ class eN extends Chunk473749.PureComponent {
               application: i
             }
           },
-          title: ex.intl.formatToPlainString(ex.t["lo6H6+"], {
+          title: eC.intl.formatToPlainString(eC.t["lo6H6+"], {
             gameName: i.name
           }),
-          body: ex.intl.string(ex.t.qYAzOp),
+          body: eC.intl.string(eC.t.qYAzOp),
           targetElementRef: g,
           align: "right",
           shouldShow: true,
@@ -234,7 +234,7 @@ class eN extends Chunk473749.PureComponent {
             align: "end"
           },
           actions: [{
-            text: ex.intl.string(ex.t.lw71Nf),
+            text: eC.intl.string(eC.t.lw71Nf),
             onClick: () => {
               n(eO.L.TAKE_ACTION), b()
             }
@@ -331,7 +331,7 @@ class eN extends Chunk473749.PureComponent {
           children: exports.name
         })
       }),
-      f = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      h = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk925329.Z, {
           className: Chunk754947.gameIcon,
           game: exports,
@@ -442,7 +442,7 @@ class eN extends Chunk473749.PureComponent {
       s()(null != n, "Activity cannot be null during navigation click"), s()(null != t, "Channel cannot be null during navigation click"), _.Z.channelListScrollTo(null != (e = t.guild_id) ? e : e_.ME, t.id), !r && ((0, Q.vd)(t.type) && b.Z.selectParticipant(t.id, (0, Z.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
-      })), (0, Q.Qm)(t.type) && (0, x.tg)(ey.Ez.PANEL))
+      })), (0, Q.Qm)(t.type) && (0, C.tg)(ey.Ez.PANEL))
     }), eE(this, "handleFrameLinkClick", () => {
       let {
         frame: e
@@ -476,21 +476,21 @@ let eZ = (0, Chunk730749.Z)(function(e) {
   let o = (0, u.e7)([$.default], () => $.default.getId()),
     a = (0, u.e7)([G.ZP, ec.Z], () => (0, z.Z)(G.ZP, ec.Z)),
     s = (0, u.e7)([ea.Z, ee.Z], () => ee.Z.getChannel(ea.Z.getVoiceChannelId())),
-    d = (0, u.e7)([C.ZP], () => C.ZP.getConnectedActivityChannelId()),
+    d = (0, u.e7)([x.ZP], () => x.ZP.getConnectedActivityChannelId()),
     p = (0, u.e7)([ee.Z], () => ee.Z.getChannel(d)),
-    f = (0, u.e7)([en.Z], () => en.Z.getGuild(null == p ? true : p.guild_id)),
-    [h, g] = (0, u.Wu)([J.Z], () => [J.Z.getCurrentUserActiveStream(), J.Z.getStreamerActiveStreamMetadata()]),
+    h = (0, u.e7)([en.Z], () => en.Z.getGuild(null == p ? true : p.guild_id)),
+    [f, g] = (0, u.Wu)([J.Z], () => [J.Z.getCurrentUserActiveStream(), J.Z.getStreamerActiveStreamMetadata()]),
     m = (0, u.e7)([v.Z], () => v.Z.useReducedMotion),
-    b = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
+    b = (0, u.e7)([x.ZP], () => x.ZP.getCurrentEmbeddedActivity()),
     _ = (0, u.e7)([k.Z], () => k.Z.getConnectedFrame()),
     y = (0, u.e7)([en.Z, ei.Z, et.ZP], () => null != s ? B.JL(s, en.Z, ei.Z, false) : null != n && B.h_(et.ZP.getChannels(n), en.Z, ei.Z).length > 0),
     [O] = (0, N.Z)([null != (t = null != g && null != g.id ? g.id : null != a && null != a.id ? a.id : null != b ? b.applicationId : null != _ ? _.applicationId : true) ? t : ""]),
-    x = (0, u.e7)([R.Z], () => R.Z.getFakeGameData()),
-    S = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
+    C = (0, u.e7)([R.Z], () => R.Z.getFakeGameData()),
+    S = (0, u.e7)([x.ZP], () => x.ZP.getCurrentEmbeddedActivity()),
     Z = (0, E.Z)() && null != S && (0, j.R)(),
     w = (0, u.e7)([er.Z], () => (0, F.Z)(er.Z) && (0, ep.isWindows)()),
     A = (0, u.e7)([el.Z], () => null != o ? el.Z.findActivity(o, e => e.type === e_.IIU.PLAYING) : null),
-    D = null != h && h.ownerId === o && h.state !== e_.jm8.ENDED,
+    D = null != f && f.ownerId === o && f.state !== e_.jm8.ENDED,
     L = (0, u.e7)([es.default, eo.Z], () => null != p ? (0, T.F6)(p, es.default, eo.Z) : true),
     M = (0, Y.Z)(),
     [U, V] = i.useState(false),
@@ -504,12 +504,12 @@ let eZ = (0, Chunk730749.Z)(function(e) {
       allowedFlows: [P.r.RPC, P.r.WEB]
     }),
     {
-      isQuestBarEmpty: eh,
+      isQuestBarEmpty: ef,
       hasLoadedQuestBar: eg
     } = (0, X.Ws)({
       location: ej.dr.CONFLICT_CHECKS
     }),
-    em = ef.Z.useConfig({
+    em = eh.Z.useConfig({
       location: "RunningGameCard"
     }).enabled,
     {
@@ -526,27 +526,27 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     });
   return (0, r.jsx)(eN, eI(eS({}, l), {
     guildId: n,
-    canGoLive: w || Z || true !== x,
+    canGoLive: w || Z || true !== C,
     activity: A,
     embeddedActivity: b,
     frame: _,
     userId: o,
-    runningGame: null != x ? x : a,
+    runningGame: null != C ? C : a,
     application: O,
     useReducedMotion: m,
     isStreaming: D,
     channel: p,
     canStream: y,
-    stream: h,
+    stream: f,
     streamMetadata: g,
     channelName: L,
-    guildForConnectedChannel: f,
+    guildForConnectedChannel: h,
     streamQualityIndicator: M,
     isForceShowSharingPopout: U,
     setIsForceShowSharingPopout: V,
     isActivityPopoutOpen: H,
     hasAlreadyLinked: W,
-    blockAccountLinkDismissibleContent: !eg || !eh,
+    blockAccountLinkDismissibleContent: !eg || !ef,
     accountLinkExperimentEnabled: em,
     parentAnalyticsLocation: eb,
     canStartAuthorization: q,

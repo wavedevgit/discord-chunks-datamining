@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => U,
-  v: () => k
+  v: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk797342 = require("./797342.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let k = {
+let j = {
     [Chunk758713.z.DESKTOP]: null,
     [Chunk758713.z.LINUX]: null,
     [Chunk758713.z.MACOS]: null,
@@ -80,7 +80,7 @@ let k = {
       participant1: et,
       participant2: en,
       numOtherParticipants: er
-    } = (0, I.Z)(y, 3), ei = y.extra.platform, ea = null != ei ? k[ei] : null, eo = ei === a.z.XBOX ? M.ABu.XBOX : ei === a.z.PLAYSTATION ? M.ABu.PLAYSTATION : true, es = (0, N.Z)(eo), {
+    } = (0, I.Z)(y, 3), ei = y.extra.platform, ea = null != ei ? j[ei] : null, eo = ei === a.z.XBOX ? M.ABu.XBOX : ei === a.z.PLAYSTATION ? M.ABu.PLAYSTATION : true, es = (0, N.Z)(eo), {
       data: el
     } = (0, m.IX)(y.extra.application_id), ec = (0, d.q)(el), eu = (0, g.L)(null != (n = null != (t = null == K ? true : K.application_id) ? t : null == z ? true : z.applicationId) ? n : null == el ? true : el.id), ed = i.useCallback(e => {
       if ((null == V ? true : V.src) == null || null == b || null == H) return;
@@ -112,9 +112,9 @@ let k = {
         headerIcons: null == ea ? null : (0, r.jsx)(L.Z, {
           onClick: es,
           Icon: ea,
-          "aria-label": j.intl.string(j.t.YR4cHH)
+          "aria-label": k.intl.string(k.t.YR4cHH)
         }),
-        userDescription: (0, S.kr)(y) ? j.t.vPg1JT : j.t.rPqqts,
+        userDescription: (0, S.kr)(y) ? k.t.vPg1JT : k.t.rPqqts,
         title: W,
         subtitle: Y,
         badges: ef,
@@ -127,7 +127,7 @@ let k = {
         title: y.extra.game_name,
         subtitle: Y,
         badges: ef,
-        userDescription: j.t["6oWFUN"],
+        userDescription: k.t["6oWFUN"],
         entry: y,
         stream: $,
         onUserPopoutClosed: Z,

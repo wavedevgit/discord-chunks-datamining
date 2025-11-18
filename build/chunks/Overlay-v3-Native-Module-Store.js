@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => P
-}), require("./388685.js");
+}), require("./415506.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk579092 = require("./579092.js"),
   Chunk570140 = require("./570140.js"),
@@ -28,7 +28,7 @@ let p = new Chunk579092.Yd("OverlayV3NativeModuleStore"),
   g = null,
   E = false,
   b = null,
-  y = new Set,
+  y = null,
   O = (() => {
     async function e() {
       I(), g = Chunk242297._.getInstance();
@@ -44,7 +44,7 @@ let p = new Chunk579092.Yd("OverlayV3NativeModuleStore"),
         R.emitChange()
       }
     }
-    return () => (null == b && (b = module()), b)
+    return () => (null == y && (y = module()), y)
   })();
 
 function v(e) {
@@ -52,26 +52,26 @@ function v(e) {
 }
 
 function I() {
-  !__OVERLAY__ && Chunk987650.iP && (p.verbose("Maybe Enable Overlay"), v(Chunk454991.v.oopEnabled), (0, Chunk145597.setOutOfProcessSupport)(true))
+  !__OVERLAY__ && Chunk987650.iP && (b = null, E = false, p.verbose("Maybe Enable Overlay"), v(Chunk454991.v.oopEnabled), (0, Chunk145597.setOutOfProcessSupport)(true))
 }
 
 function T(e) {
   let {
     oopEnabled: t
   } = e;
-  v(t)
+  b = null, v(t)
 }
 
 function S() {
-  return O(), false
+  return b = null, O(), false
 }
 
 function A(e) {
   let {
-    pid: t,
-    isCrashedDisabled: n
+    isCrashedDisabled: t,
+    error: n
   } = e;
-  returntrue === n && (E = true), !!y.has(t) || true === E
+  returntrue === t && (E = true), null != n && (b = n instanceof Error ? n.message : String(n)), true
 }
 
 function C() {
@@ -82,7 +82,7 @@ class N extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk353926.Z)
   }
   get isModuleLoading() {
-    return null != b
+    return null != y
   }
   get isOverlayEnabled() {
     return m
@@ -95,6 +95,9 @@ class N extends(r = Chunk442837.ZP.Store) {
   }
   get isCrashedDisabled() {
     return E
+  }
+  get errorMessage() {
+    return b
   }
   getNativeModule() {
     return g

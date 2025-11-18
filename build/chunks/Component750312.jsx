@@ -93,7 +93,7 @@ function j(e) {
   } = e, _ = (0, s.Dt)(), P = (0, c.e7)([u.default], () => u.default.getId() === t), {
     trackUserProfileAction: I
   } = (0, d.KZ)(), w = (0, g.Z)({
-    widgetType: n.type,
+    widget: n,
     onAction: I
   }), S = P && null != p && !a, E = () => (0, r.jsxs)("div", {
     className: l()(O.container, f),

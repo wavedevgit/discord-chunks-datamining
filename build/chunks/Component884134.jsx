@@ -65,7 +65,7 @@ function Y(e) {
     children: (0, r.jsx)(d.PZ7, {
       size: "sm",
       onClick: () => {
-        null == t || t(k.L.USER_DISMISS), (0, g.Ll)()
+        null == t || t(j.L.USER_DISMISS), (0, g.Ll)()
       }
     })
   })
@@ -345,8 +345,8 @@ function ee(e) {
       subscriptionTier: U.Si.TIER_2,
       buttonTextOverride: B.intl.string(B.t.JST6jl),
       premiumModalAnalyticsLocation: {
-        page: j.ZY5.PREMIUM_UPSELL_CUSTOM_THEMES,
-        section: j.jXE.CUSTOM_THEMES_COACHMARK_FOOTER
+        page: k.ZY5.PREMIUM_UPSELL_CUSTOM_THEMES,
+        section: k.jXE.CUSTOM_THEMES_COACHMARK_FOOTER
       },
       fullWidth: true
     })
@@ -363,7 +363,7 @@ function et(e) {
   (0, w.hf)(s, h.Z.CUSTOM_THEMES_EDITOR);
   let u = () => {
       (0, w.Vb)(), (0, E.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == a ? true : a.from) === g.tE.SETTING ? ((0, T.openUserSettings)(I.n.APPEARANCE_PANEL, {
-        section: j.oAB.APPEARANCE
+        section: k.oAB.APPEARANCE
       }), (0, g.Ll)()) : (null == a ? true : a.from) === g.tE.CLIENT_THEMES_EDITOR ? (0, g.XO)(g.wh.CLIENT_THEMES) : (0, g.Ll)()
     },
     f = o()(Z.footerContainer, {
@@ -379,7 +379,7 @@ function et(e) {
       }), (0, r.jsx)($, {
         disabled: !i,
         onApply: () => {
-          c && S.default.track(j.rMx.CUSTOM_THEME_SHARE_APPLIED, {}), n()
+          c && S.default.track(k.rMx.CUSTOM_THEME_SHARE_APPLIED, {}), n()
         }
       })]
     }) : (0, r.jsxs)(r.Fragment, {
@@ -387,8 +387,8 @@ function et(e) {
         subscriptionTier: U.Si.TIER_2,
         defaultTextOverride: B.intl.string(B.t.pj0XBN),
         premiumModalAnalyticsLocation: {
-          page: j.ZY5.PREMIUM_UPSELL_CUSTOM_THEMES,
-          section: j.jXE.CUSTOM_THEMES_FOOTER
+          page: k.ZY5.PREMIUM_UPSELL_CUSTOM_THEMES,
+          section: k.jXE.CUSTOM_THEMES_FOOTER
         },
         fullWidth: true
       }), (0, r.jsx)(d.zxk, {
@@ -416,7 +416,7 @@ function en(e) {
     colors: S,
     chassisMixAmount: C,
     gradientAngle: x,
-    setColors: j,
+    setColors: k,
     setChassisMixAmount: U,
     setGradientAngle: F
   } = (0, A.Ig)(), [V, H] = i.useState(null != (t = S[0]) ? t : A.Dp), Y = (0, s.e7)([v.Z], () => v.Z.theme), W = (0, E.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
@@ -430,7 +430,7 @@ function en(e) {
         gradientAngle: x,
         baseMix: C
       }
-    }), (0, w.u7)(S, C, x, Y, z), null == a || a(k.L.TAKE_ACTION), W || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
+    }), (0, w.u7)(S, C, x, Y, z), null == a || a(j.L.TAKE_ACTION), W || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
   }, en = () => {
     y(N._m.RESET_BUTTON), (0, w.uf)()
   }, er = S.length > 0;
@@ -445,7 +445,7 @@ function en(e) {
         colors: q.colors,
         gradientAngle: q.gradient_angle,
         chassisMixAmount: q.base_mix
-      }), (0, N.Bv)(q.base_theme)) : (0, N.lT)(S, V, j)
+      }), (0, N.Bv)(q.base_theme)) : (0, N.lT)(S, V, k)
     }
   }), u) ? (0, r.jsxs)("div", {
     className: c ? Z.mobileContainer : Z.container,
@@ -471,11 +471,11 @@ function en(e) {
             children: B.intl.string(G.default.uSL2Gy)
           }), (0, r.jsx)(L.U, {
             onChange: e => {
-              H(e), 0 === S.length && (0, N.lT)(S, e, j)
+              H(e), 0 === S.length && (0, N.lT)(S, e, k)
             },
             value: V,
             colors: S,
-            setColors: j
+            setColors: k
           })]
         }), (0, r.jsxs)("div", {
           className: Z.section,
@@ -489,7 +489,7 @@ function en(e) {
           }), (0, r.jsx)(Q, {
             chassisMixAmount: C,
             setChassisMixAmount: e => {
-              U(e), 0 === S.length && (0, N.lT)(S, V, j)
+              U(e), 0 === S.length && (0, N.lT)(S, V, k)
             }
           })]
         }), (0, r.jsxs)("div", {

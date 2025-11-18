@@ -56,7 +56,7 @@ function w(e) {
   }), M = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), G = t.id === n.id, B = (0, i.e7)([u.Z, s.Z], () => {
     let e = G ? u.Z.getStatus() : s.Z.getStatus(t.id);
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), F = N.length > 0 || null != Z, U = D && null == Z && null == L && null != R, W = !B && (F || U), H = A.length > 0;
+  }), U = N.length > 0 || null != Z, F = D && null == Z && null == L && null != R, W = !B && (U || F), H = A.length > 0;
   if (!W && !H && M) return (0, r.jsx)("div", {
     className: I.cards,
     children: Array.from({
@@ -90,7 +90,7 @@ function w(e) {
       heading: P.intl.string(P.t.J6STd9),
       children: (0, r.jsxs)("ul", {
         className: I.cards,
-        children: [!k && U && (0, r.jsx)("li", {
+        children: [!k && F && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -111,7 +111,7 @@ function w(e) {
             activity: e,
             onClose: C
           })
-        }, "live-".concat(i))), k && U && (0, r.jsx)("li", {
+        }, "live-".concat(i))), k && F && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,

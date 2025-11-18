@@ -78,7 +78,7 @@ function M(e) {
   null != n && null != r && false !== r ? (n[r] = t, b.set(t.guildId, [...n])) : null != n && (null == n || n.push(t), b.set(t.guildId, [...n]))
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t,
     soundboardSounds: n
@@ -86,7 +86,7 @@ function j(e) {
   b.set(t, n)
 }
 
-function k(e) {
+function j(e) {
   let {
     soundId: t,
     guildId: n
@@ -268,10 +268,10 @@ let J = new Q(Chunk570140.Z, {
   GUILD_SOUNDBOARD_FETCH: w,
   GUILD_SOUNDBOARD_SOUND_CREATE: M,
   GUILD_SOUNDBOARD_SOUND_UPDATE: M,
-  GUILD_SOUNDBOARD_SOUND_DELETE: k,
+  GUILD_SOUNDBOARD_SOUND_DELETE: j,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: V,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: H,
-  GUILD_SOUNDBOARD_SOUNDS_UPDATE: j,
+  GUILD_SOUNDBOARD_SOUNDS_UPDATE: k,
   USER_SOUNDBOARD_SET_VOLUME: W,
   VOICE_CHANNEL_SELECT: D,
   USER_SETTINGS_PROTO_UPDATE: z,

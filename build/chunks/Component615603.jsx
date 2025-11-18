@@ -2,7 +2,7 @@
 /** chunk id: 615603, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -155,7 +155,7 @@ function M(e) {
     guildBoostSlotId: e.id
   })))
 }
-let j = function(e) {
+let k = function(e) {
   let t, n, a, {
       guildBoostSlots: c
     } = e,
@@ -170,8 +170,8 @@ let j = function(e) {
     N = p && !T,
     {
       appliedGuildBoostSlots: P,
-      unappliedGuildBoostSlots: j,
-      numActiveGuildBoostSlots: k,
+      unappliedGuildBoostSlots: k,
+      numActiveGuildBoostSlots: j,
       hasCooldownBoosts: U,
       allGuildBoostsAreOnCooldown: G
     } = i.useMemo(() => {
@@ -192,7 +192,7 @@ let j = function(e) {
     }, [c]),
     B = null != _ ? y.ZP.getNumIncludedPremiumGuildSubscriptionSlots(_.planId) : 0,
     Z = Math.max(0, B - P.length),
-    F = k > B,
+    F = j > B,
     V = B === c.length,
     H = V ? Z : 1,
     Y = i.useMemo(() => {
@@ -203,9 +203,9 @@ let j = function(e) {
       }, t));
       return e
     }, [H, v]),
-    W = i.useMemo(() => j.find(e => e.isAvailable()), [j]);
-  if (0 === j.length) return null;
-  let K = j.length;
+    W = i.useMemo(() => k.find(e => e.isAvailable()), [k]);
+  if (0 === k.length) return null;
+  let K = k.length;
   if (t = V ? A.intl.formatToPlainString(G ? A.t["3DW6Dc"] : A.t["/u15Qc"], {
       numUnappliedGuildBoostSlots: K
     }) : A.intl.formatToPlainString(G ? A.t["3DW6Dc"] : A.t.BPadnO, {
@@ -269,7 +269,7 @@ let j = function(e) {
         })]
       }), (!V || U) && (0, r.jsx)("ul", {
         className: C.unappliedBoostSlots,
-        children: j.map(e => (0, r.jsx)(w, {
+        children: k.map(e => (0, r.jsx)(w, {
           guildBoostSlot: e,
           isCancellable: F,
           onCancel: x,

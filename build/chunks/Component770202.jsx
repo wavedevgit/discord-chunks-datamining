@@ -44,12 +44,12 @@ function j(e) {
   return e
 }
 
-function x(e, t) {
+function C(e, t) {
   let n = t.getGuildId();
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
   s.Z.preload(n, t.id)
 }
-class C extends Chunk98597.ZP {
+class x extends Chunk98597.ZP {
   render() {
     let {
       channel: e,
@@ -68,7 +68,7 @@ class C extends Chunk98597.ZP {
         channel: module,
         selected: exports,
         onClick: this.handleClick,
-        onMouseDown: x,
+        onMouseDown: C,
         onContextMenu: this.handleContextMenu,
         connectDragPreview: Chunk442837 ? Chunk120356 : null,
         "aria-label": (0, Chunk201895.ZP)({
@@ -84,7 +84,7 @@ class C extends Chunk98597.ZP {
     super(...e), v(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, i = h.Z.getGuild(t.getGuildId());
+      } = this.props, i = f.Z.getGuild(t.getGuildId());
       null != i && (0, c.jW)(e, async () => {
         let {
           default: e
@@ -122,14 +122,14 @@ class C extends Chunk98597.ZP {
     })
   }
 }
-let E = (0, Chunk146773.B)(C),
+let E = (0, Chunk146773.B)(x),
   S = Chunk473749.memo(function(e) {
     let {
       channel: t,
       guild: n,
       disableSorting: i
-    } = e, l = (0, a.cj)([f.Z, g.Z], () => {
-      let e = f.Z.getChannel(t.parent_id);
+    } = e, l = (0, a.cj)([h.Z, g.Z], () => {
+      let e = h.Z.getChannel(t.parent_id);
       return {
         canManageChannel: g.Z.can(_.Plq.MANAGE_CHANNELS, t),
         canReorderChannel: true !== i && null != e ? g.Z.can(_.Plq.MANAGE_CHANNELS, e) : g.Z.can(_.Plq.MANAGE_CHANNELS, n)

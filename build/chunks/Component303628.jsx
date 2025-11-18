@@ -113,7 +113,7 @@ function D(e) {
       var t;
       return e.type === f.jw.ATTACHMENT && (null == x || null == (t = x[e.name]) ? true : t.hasValue)
     })) ? e : []
-  }, [L, x]), [j, k] = i.useState([]);
+  }, [L, x]), [k, j] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
       d.Z.clearAll(t, n.drafts.type)
@@ -129,7 +129,7 @@ function D(e) {
   });
   let G = {
       isApplicationCommand: w,
-      previousUploadOptions: j,
+      previousUploadOptions: k,
       uploadOptions: M
     },
     B = i.useRef(G);
@@ -147,7 +147,7 @@ function D(e) {
         i.some(e => t.name === e.name) || e.push(t)
       }), e.forEach(e => {
         d.Z.remove(t, e.name, n.drafts.type)
-      }), k(i)
+      }), j(i)
     }
   }, [t, M.length, n]);
   let Z = D.filter(e => e.filename !== a);

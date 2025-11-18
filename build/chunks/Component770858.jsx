@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk490897 = require("./490897.js"),
   Chunk86517 = require("./86517.js");
 
-function C() {
+function x() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
   return (0, Chunk442837.e7)([Chunk306680.ZP], () => (null == module ? true : module.id) != null && Chunk306680.ZP.getMentionCount(module.id, Chunk490897.W.NOTIFICATION_CENTER) > 0)
 }
@@ -35,7 +35,7 @@ function E(e) {
   let {
     onClick: d,
     selectedOverride: p = false,
-    popoutProps: h,
+    popoutProps: f,
     ref: _
   } = e, j = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), I = (0, m.D)(), P = p || I, {
     notificationCenterVariant: N
@@ -52,7 +52,7 @@ function E(e) {
       location: "NotificationsInboxButtonInner"
     }), {
       unreadChannelIds: n
-    } = (0, m.O4)(), i = C(), {
+    } = (0, m.O4)(), i = x(), {
       badge: l,
       dimensions: o
     } = (0, b.h6)({
@@ -77,7 +77,7 @@ function E(e) {
       unreadChannelsCount: n.length,
       badgeDimensions: o
     }
-  }(P), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([f.Z], () => f.Z.getChannelId()), D = i.useMemo(() => {
+  }(P), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([h.Z], () => h.Z.getChannelId()), D = i.useMemo(() => {
     if (N === g.jP.SIDEBAR) return v.Z5c.CHANNEL(v.STv, R)
   }, [N, R]);
   return (0, r.jsxs)(u.H, {
@@ -86,7 +86,7 @@ function E(e) {
       selected: P && N === g.jP.SIDEBAR,
       hovered: E && N === g.jP.SIDEBAR,
       unread: T > 0,
-      className: x.pill,
+      className: C.pill,
       disabled: N === g.jP.LEGACY
     }), (0, r.jsx)(y.Z, {
       children: (0, r.jsx)(a.aRk, {
@@ -110,7 +110,7 @@ function E(e) {
             })
           }
           return e
-        }({}, j, h), n = n = {
+        }({}, j, f), n = n = {
           onClick: d,
           to: D,
           selected: P || E,
@@ -119,7 +119,7 @@ function E(e) {
           children: (0, r.jsx)(A, {
             size: "custom",
             color: "currentColor",
-            className: x.notificationsIcon,
+            className: C.notificationsIcon,
             width: 20,
             height: 20
           })
@@ -145,7 +145,7 @@ function S() {
     } = (0, Chunk821020.pN)({
       location: "NotificationsInboxButton"
     }),
-    n = C(),
+    n = x(),
     l = (0, Chunk128008.mv)();
   return exports === Chunk821020.jP.SIDEBAR ? (0, Chunk54381.jsx)(E, {
     onClick: Chunk91192

@@ -2,7 +2,7 @@
 /** chunk id: 32300, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F3: () => L,
+  F3: () => k,
   KK: () => w,
   NW: () => d,
   OV: () => l,
@@ -10,6 +10,7 @@ require.d(exports, {
   Rb: () => u,
   Se: () => m,
   Sy: () => P,
+  T_: () => M,
   XE: () => f,
   YB: () => b,
   Yo: () => _,
@@ -407,7 +408,37 @@ function w(e) {
     autoTrackExposure: t
   })
 }
+let L = (0, Chunk818083.B)({
+  id: "2025-11_overlay_bug_reporter",
+  label: "Overlay Bug Reporter",
+  kind: "user",
+  defaultConfig: {
+    enabled: false
+  },
+  treatments: [{
+    id: 1,
+    label: "Enable Bug Reporter",
+    config: {
+      enabled: true
+    }
+  }]
+});
 
-function L() {
-  v("OVERLAY_INITIALIZED"), S("OVERLAY_INITIALIZED"), P("OVERLAY_INITIALIZED"), w("OVERLAY_INITIALIZED")
+function x(e) {
+  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
+  return L.getCurrentConfig({
+    location: e
+  }, {
+    autoTrackExposure: t
+  })
+}
+
+function M(e) {
+  return L.useExperiment({
+    location: e
+  }).enabled
+}
+
+function k() {
+  v("OVERLAY_INITIALIZED"), S("OVERLAY_INITIALIZED"), P("OVERLAY_INITIALIZED"), w("OVERLAY_INITIALIZED"), x("OVERLAY_INITIALIZED")
 }

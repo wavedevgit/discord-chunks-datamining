@@ -1,8 +1,8 @@
 /** Chunk was on 10023 **/
 /** chunk id: 55185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => C,
-  NK: () => x
+  I: () => x,
+  NK: () => C
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -28,7 +28,7 @@ function b(e) {
     children: (0, i.jsx)(s.Button, {
       variant: "primary",
       size: "sm",
-      text: h.intl.string(f.default.Poezn1),
+      text: f.intl.string(h.default.Poezn1),
       onClick: () => {
         t(), (0, c.Z)({
           nextStatus: s.Skl.ONLINE
@@ -51,7 +51,7 @@ function _(e) {
       children: [(0, i.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "header-primary",
-        children: h.intl.string(f.default.WhdCGP)
+        children: f.intl.string(h.default.WhdCGP)
       }), n && (0, i.jsxs)("div", {
         className: g.toggleContainerOnlineRow,
         children: [(0, i.jsx)(s.qbd, {
@@ -60,7 +60,7 @@ function _(e) {
         }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-secondary",
-          children: r === s.Skl.INVISIBLE ? h.intl.string(f.default.a3AofS) : h.intl.string(h.t.WbGtnH)
+          children: r === s.Skl.INVISIBLE ? f.intl.string(h.default.a3AofS) : f.intl.string(f.t.WbGtnH)
         })]
       })]
     }), (0, i.jsx)(s.rsf, {
@@ -98,7 +98,7 @@ function O(e) {
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      children: h.intl.string(f.default["7cfFob"])
+      children: f.intl.string(h.default["7cfFob"])
     }), (0, i.jsx)(s.izJ, {
       className: g.divider
     }), (0, i.jsx)(p.yj, {
@@ -122,7 +122,7 @@ function v(e) {
         variant: "heading-sm/semibold",
         color: "header-primary",
         className: g.controlTitle,
-        children: h.intl.string(f.default["5YsmGI"])
+        children: f.intl.string(h.default["5YsmGI"])
       }), (0, i.jsxs)("div", {
         className: g.toggleContainerOnlineRow,
         children: [(0, i.jsx)(s.qbd, {
@@ -131,13 +131,13 @@ function v(e) {
         }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-secondary",
-          children: h.intl.string(f.default.U8MFdR)
+          children: f.intl.string(h.default.U8MFdR)
         })]
       })]
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      children: h.intl.string(f.default.Yl0mh4)
+      children: f.intl.string(h.default.Yl0mh4)
     }), (0, i.jsx)(b, {
       closePopout: t
     })]
@@ -155,7 +155,7 @@ function j(e) {
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      children: h.intl.string(f.default["7cfFob"])
+      children: f.intl.string(h.default["7cfFob"])
     }), (0, i.jsx)(s.izJ, {
       className: g.divider
     }), (0, i.jsx)(p.yj, {
@@ -163,9 +163,9 @@ function j(e) {
     })]
   })
 }
-var x = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
+var C = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
 
-function C(e) {
+function x(e) {
   let {
     showPopout: t,
     popoutState: n,
@@ -177,20 +177,20 @@ function C(e) {
     switch (e) {
       case 0:
         return {
-          type: "popover", title: h.intl.string(f.default.vxVbGP), body: [h.intl.string(f.default["7cfFob"])], action: {
-            text: h.intl.string(f.default.k4tCg2),
+          type: "popover", title: f.intl.string(h.default.vxVbGP), body: [f.intl.string(h.default["7cfFob"])], action: {
+            text: f.intl.string(h.default.k4tCg2),
             onClick: () => {
               u.G6.updateSetting(true)
             }
           }, textLink: {
-            text: h.intl.string(h.t["ZrN+DT"]),
+            text: f.intl.string(f.t["ZrN+DT"]),
             onClick: p.S$
           }
         };
       case 1:
         return {
-          type: "popover", title: h.intl.string(f.default.qKDqet), body: [h.intl.string(f.default.Yl0mh4)], action: {
-            text: h.intl.string(f.default.Poezn1),
+          type: "popover", title: f.intl.string(h.default.qKDqet), body: [f.intl.string(h.default.Yl0mh4)], action: {
+            text: f.intl.string(h.default.Poezn1),
             onClick: () => {
               (0, c.Z)({
                 nextStatus: s.Skl.ONLINE
@@ -200,15 +200,15 @@ function C(e) {
         };
       case 2:
         return {
-          type: "popover", title: h.intl.string(f.default["6cA8HZ"]), body: [h.intl.string(f.default["7cfFob"])], action: {
-            text: h.intl.string(f.default.k4tCg2),
+          type: "popover", title: f.intl.string(h.default["6cA8HZ"]), body: [f.intl.string(h.default["7cfFob"])], action: {
+            text: f.intl.string(h.default.k4tCg2),
             onClick: () => {
               u.G6.updateSetting(true), (0, c.Z)({
                 nextStatus: s.Skl.ONLINE
               })
             }
           }, textLink: {
-            text: h.intl.string(h.t["ZrN+DT"]),
+            text: f.intl.string(f.t["ZrN+DT"]),
             onClick: p.S$
           }
         };
@@ -227,12 +227,12 @@ function C(e) {
       default:
         return null
     }
-  }(g), x = (0, l.useRef)(t);
+  }(g), C = (0, l.useRef)(t);
   if ((0, l.useEffect)(() => {
-      t && !x.current && b(n), t !== x.current && (x.current = t)
+      t && !C.current && b(n), t !== C.current && (C.current = t)
     }, [n, t]), null == y || !t) return d;
   if ("popover" === y.type) {
-    var C, E;
+    var x, E;
     let {
       action: e,
       title: t,
@@ -254,7 +254,7 @@ function C(e) {
           type: "image",
           src: m.Z
         },
-        actions: [(C = function(e) {
+        actions: [(x = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -276,7 +276,7 @@ function C(e) {
             var n;
             null == (n = e.onClick) || n.call(e, t), r()
           }
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(C, Object.getOwnPropertyDescriptors(E)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(x, Object.getOwnPropertyDescriptors(E)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
@@ -284,8 +284,8 @@ function C(e) {
           }
           return n
         })(Object(E)).forEach(function(e) {
-          Object.defineProperty(C, e, Object.getOwnPropertyDescriptor(E, e))
-        }), C)]
+          Object.defineProperty(x, e, Object.getOwnPropertyDescriptor(E, e))
+        }), x)]
       }), d]
     })
   }

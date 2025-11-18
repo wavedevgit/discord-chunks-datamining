@@ -96,8 +96,8 @@ let P = e => {
     handleSubscribeModalClose: L,
     withHighlight: x = false,
     icon: M,
-    intent: j,
-    useExpressiveButton: k = false
+    intent: k,
+    useExpressiveButton: j = false
   } = e, U = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent", "useExpressiveButton"]), {
     analyticsLocations: G
   } = (0, _.ZP)(), B = (0, h.bp)() === y.IlC.POPOUT, [Z, F] = i.useState(false), {
@@ -123,7 +123,7 @@ let P = e => {
         inPopout: B,
         applicationId: w,
         handleSubscribeModalClose: L,
-        intent: j
+        intent: k
       }), F(false)
     }, q = g.Z.getPremiumTypeSubscription(), X = (0, r.jsxs)("div", {
       className: I.button,
@@ -135,7 +135,7 @@ let P = e => {
       size: "xs",
       className: I.buttonIcon
     }), " ", X]
-  }), U.disabled = true), null != K) ? k ? (0, r.jsx)(c.u, {
+  }), U.disabled = true), null != K) ? j ? (0, r.jsx)(c.u, {
     text: K,
     children: (0, r.jsx)(d.Button, {
       variant: "expressive",
@@ -156,7 +156,7 @@ let P = e => {
     }), U), {
       children: X
     }))
-  }) : k ? (0, r.jsx)(d.Button, {
+  }) : j ? (0, r.jsx)(d.Button, {
     variant: "expressive",
     disabled: Q,
     loading: Z,

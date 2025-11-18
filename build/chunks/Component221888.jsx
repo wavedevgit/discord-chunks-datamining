@@ -159,7 +159,7 @@ function x(e) {
     compact: m = false,
     disableInteraction: y = false,
     maxVisibleUsers: I = 3
-  } = e, S = i.useRef(null), C = (0, h.Z)(), [P, x] = i.useState(false), M = i.useRef(new u.sW(R, () => x(false))), j = (0, c.Wu)([g.Z, E.default], () => {
+  } = e, S = i.useRef(null), C = (0, h.Z)(), [P, x] = i.useState(false), M = i.useRef(new u.sW(R, () => x(false))), k = (0, c.Wu)([g.Z, E.default], () => {
     if (s.type === O.fO.STREAM) {
       let e = g.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(b.lm) : L
@@ -169,14 +169,14 @@ function x(e) {
   i.useEffect(() => {
     C && (M.current.cancel(), x(false))
   }, [C]);
-  let k = i.useCallback(() => {
+  let j = i.useCallback(() => {
       M.current.cancel(), x(true)
     }, []),
     U = i.useCallback(() => {
       M.current.delay()
     }, []),
     G = i.useCallback((e, t) => {
-      k(), (0, _.jW)(e, async () => {
+      j(), (0, _.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220"), n.e("73444")]).then(n.bind(n, 881351));
@@ -186,29 +186,29 @@ function x(e) {
       }, {
         onClose: U
       })
-    }, [U, k]);
-  if (0 === j.length) return null;
+    }, [U, j]);
+  if (0 === k.length) return null;
   if (m) return (0, r.jsx)(w, {
     maxVisibleUsers: I,
-    users: j,
+    users: k,
     guildId: a,
     channelId: t,
     className: d,
     participantType: s.type
   });
-  let B = l()(j).take(I).map(e => (0, r.jsx)(f.qEK, {
+  let B = l()(k).take(I).map(e => (0, r.jsx)(f.qEK, {
     src: e.getAvatarURL(a, 24),
     "aria-label": e.username,
     size: f.EFr.SIZE_24,
     className: T.viewer
   }, e.id)).value();
-  return j.length > I && (B[B.length - 1] = (0, r.jsxs)("div", {
+  return k.length > I && (B[B.length - 1] = (0, r.jsxs)("div", {
     className: T.overflow,
-    children: ["+", j.length - I + 1]
+    children: ["+", k.length - I + 1]
   }, "overflow")), (0, r.jsx)(p.Z, {
     section: v.jXE.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
-      onMouseEnter: k,
+      onMouseEnter: j,
       onMouseLeave: U,
       children: (0, r.jsx)(f.yRy, {
         targetElementRef: S,
@@ -217,7 +217,7 @@ function x(e) {
           handleUserContextMenu: G,
           guildId: a,
           channelId: t,
-          users: j,
+          users: k,
           disableInteraction: y
         }),
         shouldShow: P && !C,

@@ -29,8 +29,8 @@ function _(e) {
     jumpToVoiceChannels: l
   } = e, a = n.getCategoryFromSection(n.voiceChannelsSectionNumber), s = (0, u.Z)(n.id), p = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), l()
-  }, [l]), h = null != (t = null == a ? true : a.getChannelRecords()) ? t : [], b = (0, f.c4)({
-    channels: h,
+  }, [l]), f = null != (t = null == a ? true : a.getChannelRecords()) ? t : [], b = (0, h.c4)({
+    channels: f,
     selectedChannelId: null,
     selectedVoiceChannelId: null,
     voiceStates: s
@@ -69,20 +69,20 @@ function y(e) {
     jumpToVoiceChannels: u,
     jumpToChannel: d
   } = e, {
-    bottomBar: f,
+    bottomBar: h,
     topBar: y
-  } = (0, s.cj)([h.Z], () => h.Z.getUnreadStateForGuildId(n.id)), O = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
+  } = (0, s.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), O = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
     mode: v,
     mentionCount: j,
-    targetChannelId: x
-  } = "bottom" === t ? f : y, C = v === h.x.HIDDEN, E = (0, c.q_F)({
+    targetChannelId: C
+  } = "bottom" === t ? h : y, x = v === f.x.HIDDEN, E = (0, c.q_F)({
     to: {
-      transform: C ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+      transform: x ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
   }, O ? "respect-motion-settings" : "animate-never"), S = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null != x && d(x)
-  }, [d, x]);
+    e.preventDefault(), e.stopPropagation(), null != C && d(C)
+  }, [d, C]);
   return (0, r.jsx)("div", {
     className: o()(m.container, {
       [m.top]: "top" === t,
@@ -91,10 +91,10 @@ function y(e) {
     children: (0, r.jsx)(a.animated.div, {
       className: m.containerPadding,
       style: E,
-      "aria-hidden": C,
-      children: v === h.x.HIDDEN ? (0, r.jsx)("div", {
+      "aria-hidden": x,
+      children: v === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
-      }) : v === h.x.UNREAD ? (0, r.jsxs)(c.P3F, {
+      }) : v === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
         onClick: S,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
@@ -115,7 +115,7 @@ function y(e) {
           className: m.barText,
           children: g.intl.string(g.t.FCRiT3)
         })]
-      }) : v === h.x.MENTIONS ? (0, r.jsx)(c.P3F, {
+      }) : v === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
         onClick: S,
         children: (0, r.jsx)(c.Text, {
@@ -126,7 +126,7 @@ function y(e) {
             count: j
           })
         })
-      }) : v === h.x.VOICE_CHANNELS ? (0, r.jsx)(_, {
+      }) : v === f.x.VOICE_CHANNELS ? (0, r.jsx)(_, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

@@ -37,9 +37,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk613321 = require("./613321.js");
 let x = 5,
   M = "placeholder",
-  j = [, , , , , ].fill(M);
+  k = [, , , , , ].fill(M);
 
-function k(e) {
+function j(e) {
   var t, n;
   let {
     context: a,
@@ -208,7 +208,7 @@ function B(e) {
     }), (0, r.jsx)("ul", {
       className: L.commandContainer,
       "aria-label": a,
-      children: n.map((e, n) => e === M ? (0, r.jsx)(U, {}, e + n) : (0, r.jsx)(k, {
+      children: n.map((e, n) => e === M ? (0, r.jsx)(U, {}, e + n) : (0, r.jsx)(j, {
         context: t,
         command: e,
         section: i,
@@ -275,7 +275,7 @@ function Z(e) {
     }), (0, r.jsx)(B, {
       context: n,
       section: p,
-      commands: _ ? j : E,
+      commands: _ ? k : E,
       headerName: D.intl.string(D.t.DUU9L3),
       sectionName: o,
       children: b && (0, r.jsx)(N.Z, {

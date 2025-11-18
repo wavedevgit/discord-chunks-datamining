@@ -158,7 +158,7 @@ let D = () => (0, Chunk54381.jsx)("div", {
       })]
     })
   },
-  j = e => {
+  k = e => {
     let {
       title: t,
       rows: n
@@ -179,7 +179,7 @@ let D = () => (0, Chunk54381.jsx)("div", {
       }), e.id))]
     })
   },
-  k = e => {
+  j = e => {
     let t, {
         premiumType: n
       } = e,
@@ -206,13 +206,13 @@ let D = () => (0, Chunk54381.jsx)("div", {
       }), (0, Chunk54381.jsx)("th", {
         scope: "col",
         className: Chunk358882.headerCell,
-        children: (0, Chunk54381.jsx)(k, {
+        children: (0, Chunk54381.jsx)(j, {
           premiumType: Chunk474936.PremiumTypes.TIER_0
         })
       }), (0, Chunk54381.jsx)("th", {
         scope: "col",
         className: o()(Chunk358882.headerCell, Chunk358882.topBorderRadius),
-        children: (0, Chunk54381.jsx)(k, {
+        children: (0, Chunk54381.jsx)(j, {
           premiumType: Chunk474936.PremiumTypes.TIER_2
         })
       })]
@@ -267,7 +267,7 @@ let D = () => (0, Chunk54381.jsx)("div", {
       L = (0, E.Aq)(y.Xh.PREMIUM_MONTH_TIER_2),
       x = "".concat(L, "/").concat((0, h.eP)(y.rV.MONTH)),
       M = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_0),
-      k = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_2),
+      j = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_2),
       B = (0, b.e)();
     if (!I || !T) return null;
     n = l ? null : null != S ? (0, r.jsx)(w, {}) : (0, r.jsx)(D, {});
@@ -295,10 +295,10 @@ let D = () => (0, Chunk54381.jsx)("div", {
             children: [(0, r.jsx)(U, {}), (0, r.jsxs)("tbody", {
               children: [(0, r.jsx)(G, {
                 tier0MonthlyPrice: M,
-                tier2MonthlyPrice: k,
+                tier2MonthlyPrice: j,
                 shouldUseDiscountPrice: R,
                 tier2DiscountedPriceString: x
-              }), B.map(e => (0, i.createElement)(j, P(N({}, e), {
+              }), B.map(e => (0, i.createElement)(k, P(N({}, e), {
                 key: e.id
               })))]
             })]

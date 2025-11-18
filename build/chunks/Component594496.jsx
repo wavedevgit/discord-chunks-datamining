@@ -2,7 +2,7 @@
 /** chunk id: 594496, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -39,10 +39,10 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk486750 = require("./486750.js");
 
-function j(e) {
-  var t, n, i, j;
+function k(e) {
+  var t, n, i, k;
   let {
-    guild: k
+    guild: j
   } = e, U = (0, o.e7)([S.default], () => {
     let e = S.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
@@ -77,7 +77,7 @@ function j(e) {
   }), z = (0, v.SD)({
     userId: U.id,
     image: B
-  }), q = null != k ? k : K;
+  }), q = null != j ? j : K;
   a()(null != q, "guild should not be null");
   let X = (0, u.gS)(q.id),
     Q = (0, o.e7)([T.ZP], () => null == q.id ? null : T.ZP.getMember(q.id, U.id)),
@@ -201,7 +201,7 @@ function j(e) {
           })]
         }),
         onBioChange: e => (0, P.qN)(e, ei),
-        errors: null != (j = null == W ? true : W.bio) ? j : null == X ? true : X.bio,
+        errors: null != (k = null == W ? true : W.bio) ? k : null == X ? true : X.bio,
         pendingBio: V,
         currentBio: ei,
         disabled: !ee

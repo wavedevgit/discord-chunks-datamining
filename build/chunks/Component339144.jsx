@@ -42,14 +42,14 @@ function D(e, t, n) {
   if (null != n) return n.applicationId === e.id;
   if (null != t) {
     var r;
-    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === w.IIU.PLAYING && (0, f.Z)(t, w.xjy.JOIN)
+    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === w.IIU.PLAYING && (0, h.Z)(t, w.xjy.JOIN)
   }
   returnfalse
 }
 let L = Chunk473749.memo(function(e) {
     var t, l;
-    let a, s, f, y, {
-        stream: C,
+    let a, s, h, y, {
+        stream: x,
         canGoLive: E,
         guildId: T,
         isStreaming: L,
@@ -73,7 +73,7 @@ let L = Chunk473749.memo(function(e) {
       {
         parentAnalyticsLocation: X
       } = (0, g.ZP)(),
-      Q = (0, x.Z)(z),
+      Q = (0, C.Z)(z),
       J = D(z, H, F),
       $ = i.useCallback(() => {
         var e;
@@ -88,7 +88,7 @@ let L = Chunk473749.memo(function(e) {
         }), (0, d.h7)(H, false)
       }, [H, W, X, B]),
       ee = i.useCallback((e, t) => () => {
-        (0, b.v)(X, b.d.LEAVE_ACTIVITY), h.Z.leaveActivity({
+        (0, b.v)(X, b.d.LEAVE_ACTIVITY), f.Z.leaveActivity({
           location: t,
           applicationId: e,
           showFeedback: true
@@ -100,8 +100,8 @@ let L = Chunk473749.memo(function(e) {
         })
       }, [X]),
       en = i.useCallback(() => {
-        (0, j.Z)(C)
-      }, [C]),
+        (0, j.Z)(x)
+      }, [x]),
       er = i.useCallback(() => {
         let e = null != G && (0, S.vd)(G.type) ? G : null,
           t = null != e ? e.getGuildId() : T;
@@ -165,23 +165,23 @@ let L = Chunk473749.memo(function(e) {
     }, []), i.useEffect(() => {
       eo && (ep(false), null != eu.current && (clearTimeout(eu.current), eu.current = null))
     }, [eo]);
-    let ef = null == Q || null == z ? null : (0, r.jsx)(k, {
+    let eh = null == Q || null == z ? null : (0, r.jsx)(k, {
         guildId: Q,
         applicationId: z.id
       }),
-      eh = (null != B || null == F || (0, p.R)()) && (L || E) ? (L ? (a = false, s = () => {
+      ef = (null != B || null == F || (0, p.R)()) && (L || E) ? (L ? (a = false, s = () => {
         en(), (0, b.v)(X, b.d.STREAM, false)
-      }, f = u.g5r, y = A.intl.string(A.t.S5anIc)) : U ? (a = false, s = () => {
+      }, h = u.g5r, y = A.intl.string(A.t.S5anIc)) : U ? (a = false, s = () => {
         er(), (0, b.v)(X, b.d.STREAM, true)
-      }, f = u.hGI, y = null != B ? A.intl.formatToPlainString(A.t.AB5gTy, {
+      }, h = u.hGI, y = null != B ? A.intl.formatToPlainString(A.t.AB5gTy, {
         game: B.name
-      }) : A.intl.string(A.t.FeUKeA)) : (a = true, s = null, f = u.hGI, y = null != G && (0, S.vd)(G.type) ? A.intl.string(A.t.uQn9B8) : null != T ? A.intl.string(A.t.fBXEoJ) : A.intl.string(A.t.n3feNG)), (0, r.jsx)("div", {
+      }) : A.intl.string(A.t.FeUKeA)) : (a = true, s = null, h = u.hGI, y = null != G && (0, S.vd)(G.type) ? A.intl.string(A.t.uQn9B8) : null != T ? A.intl.string(A.t.fBXEoJ) : A.intl.string(A.t.n3feNG)), (0, r.jsx)("div", {
         className: R.panelButtonContainer,
         children: (0, r.jsx)(Z.Z, {
           tooltipText: y,
           disabled: a,
           onClick: s,
-          icon: f
+          icon: h
         })
       })) : null,
       eg = J && null == F ? (0, r.jsx)(Z.Z, {
@@ -200,7 +200,7 @@ let L = Chunk473749.memo(function(e) {
         onClick: et(V.applicationId),
         icon: u.PBZ
       }),
-      e_ = null == C ? null : (0, r.jsx)(_.Z, {}),
+      e_ = null == x ? null : (0, r.jsx)(_.Z, {}),
       ey = ec && ei && !eo ? (0, r.jsx)(M, {
         runningGame: B,
         startAuthorization: () => {
@@ -225,9 +225,9 @@ let L = Chunk473749.memo(function(e) {
           ep(false), null != eu.current && (clearTimeout(eu.current), eu.current = null)
         }
       }) : null;
-    return null == eh && null == eg && null == em && null == eb && null == ey && null == ef ? null : (0, r.jsxs)("div", {
+    return null == ef && null == eg && null == em && null == eb && null == ey && null == eh ? null : (0, r.jsxs)("div", {
       className: R.actions,
-      children: [null != (t = null != ef ? ef : ey) ? t : eg, eh, null != (l = null != em ? em : eb) ? l : e_, eO]
+      children: [null != (t = null != eh ? eh : ey) ? t : eg, ef, null != (l = null != em ? em : eb) ? l : e_, eO]
     })
   }),
   M = Chunk473749.forwardRef(function(e, t) {
@@ -262,7 +262,7 @@ function k(e) {
     })
   }, [t]);
   let [o, a] = (0, y.US)([s.z.GAME_SHOP_RTC_POPOVER], T.R.ACCOUNT_NAME_ZONE, true), c = i.useCallback(() => {
-    (0, C.Z)({
+    (0, x.Z)({
       guildId: n
     }), a(T.L.USER_DISMISS)
   }, [n, a]), d = i.useCallback(() => {

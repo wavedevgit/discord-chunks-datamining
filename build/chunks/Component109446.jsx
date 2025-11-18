@@ -1,7 +1,7 @@
 /** Chunk was on 10023 **/
 /** chunk id: 109446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => C
 }), require("./388685.js"), require("./642613.js"), require("./583741.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,12 +24,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk990912 = require("./990912.js");
 
-function x(e) {
+function C(e) {
   let {
     channel: t
-  } = e, l = (0, a.Wu)([d.Z, g.ZP, h.Z], () => {
+  } = e, l = (0, a.Wu)([d.Z, g.ZP, f.Z], () => {
     let e = d.Z.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && h.Z.can(y.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
+    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.Z.can(y.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
       let n = g.ZP.lastMessageId(e.id),
         r = g.ZP.lastMessageId(t.id);
       return _.default.compare(n, r)
@@ -44,7 +44,7 @@ function x(e) {
       variant: "text-xs/bold",
       color: "header-secondary",
       children: t.isForumLikeChannel() ? v.intl.string(v.t.ioVdO2) : v.intl.string(v.t.VNYs2v)
-    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(C, {
+    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(x, {
       thread: e
     }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(s.P3F, {
       className: j.more,
@@ -84,14 +84,14 @@ function x(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     thread: t
   } = e, n = (0, a.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, p.Ok)(t);
   return (0, r.jsxs)(s.P3F, {
     className: j.row,
     onClick: e => {
-      (0, f.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, O.on.POPOUT)
+      (0, h.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, O.on.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
       className: j.avatar,

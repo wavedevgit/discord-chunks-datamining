@@ -251,9 +251,9 @@ function D(e) {
         pending: e,
         input: e.hex
       })), n && a((0, c._i)(e.hex))
-    }, [n, a]), j = e => {
+    }, [n, a]), k = e => {
       a((0, c._i)(e))
-    }, k = (0, r.jsxs)(r.Fragment, {
+    }, j = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
         children: (0, r.jsx)(T, {
@@ -262,7 +262,7 @@ function D(e) {
             let {
               hex: t
             } = e;
-            return j(t)
+            return k(t)
           },
           color: D.pending.hsl
         })
@@ -291,7 +291,7 @@ function D(e) {
   return (0, r.jsx)(U, {
     "aria-label": m.intl.string(m.t.WTqQ5e),
     className: o()(g.customColorPicker, v),
-    children: k
+    children: j
   })
 }
 let w = Chunk473749.memo(D);

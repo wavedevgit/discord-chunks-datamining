@@ -1,7 +1,7 @@
 /** Chunk was on 10023 **/
 /** chunk id: 40153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  OG: () => x,
+  OG: () => C,
   ZP: () => v,
   Zu: () => j
 }), require("./388685.js");
@@ -43,7 +43,7 @@ function _(e, t) {
       let {
         nodeId: i
       } = e;
-      r && t.type !== p.eD.FOLDER && d.default.track(h.rMx.GUILD_FOLDER_CREATED), u.Z.moveById(i, t.id, n, r)
+      r && t.type !== p.eD.FOLDER && d.default.track(f.rMx.GUILD_FOLDER_CREATED), u.Z.moveById(i, t.id, n, r)
     },
     collect: e => ({
       canDrop: e.canDrop(),
@@ -61,13 +61,13 @@ function y(e) {
   } = e, a = i.useMemo(() => _([p.eD.GUILD, p.eD.FOLDER], n, o, l), [n, o, l]), [{
     canDrop: s,
     isOver: u
-  }, d] = (0, c.L)(a), f = b([
+  }, d] = (0, c.L)(a), h = b([
     [s, m.autoPointerEvents],
     [u, m.dragOver]
   ]);
   return (0, r.jsx)("div", {
     ref: e => {
-      f.current = e, d(e)
+      h.current = e, d(e)
     },
     "data-dnd-name": g.intl.formatToPlainString(g.t["A5aDw+"], {
       itemName: t
@@ -92,7 +92,7 @@ function O(e) {
     [a, m.autoPointerEvents],
     [s, m.dragOver]
   ]);
-  return (0, r.jsx)(f.Z, {
+  return (0, r.jsx)(h.Z, {
     text: t,
     shouldShow: s,
     forceOpen: s,
@@ -162,7 +162,7 @@ function j(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     children: t
   } = e, [, n] = (0, c.L)({

@@ -211,7 +211,7 @@ class z extends Chunk473749.Component {
       sku: r
     } = this.props;
     return this.isCustomGiftMessage() && !n ? B.intl.formatToPlainString(B.t.t1SOId, {
-      recipientDisplayName: j.ZP.getName(t)
+      recipientDisplayName: k.ZP.getName(t)
     }) : null == r ? null : e.isSubscription ? n ? B.intl.string(B.t["2PJ1NP"]) : B.intl.string(B.t.hrnGng) : n ? B.intl.string(B.t.QLEMld) : B.intl.string(B.t.W4DBcy)
   }
   renderBody(e) {
@@ -245,11 +245,11 @@ class z extends Chunk473749.Component {
     });
     if (e.isExistingPremiumSubscriptionDisallowed) return B.intl.string(B.t.UCIU9y);
     if (e.hasMultipleCopies) return null != i ? e.isSubscription ? B.intl.format(B.t.l3VxgG, {
-      username: j.ZP.getUserTag(i),
+      username: k.ZP.getUserTag(i),
       maxUses: e.maxUses,
       skuName: s
     }) : B.intl.format(B.t["9cYrw5"], {
-      username: j.ZP.getUserTag(i),
+      username: k.ZP.getUserTag(i),
       totalCopies: e.maxUses,
       skuName: s
     }) : e.isSubscription ? B.intl.formatToPlainString(B.t.svrO3W, {
@@ -264,7 +264,7 @@ class z extends Chunk473749.Component {
       if (null != i) {
         let e = a.interval === G.rV.MONTH ? B.t["/RDIEA"] : B.t["3CX6Ev"];
         return B.intl.format(e, {
-          username: j.ZP.getUserTag(i),
+          username: k.ZP.getUserTag(i),
           skuName: s,
           intervalCount: a.intervalCount
         })
@@ -276,7 +276,7 @@ class z extends Chunk473749.Component {
       })
     }
     return null != i ? B.intl.format(B.t["3HsdQ/"], {
-      username: j.ZP.getUserTag(i)
+      username: k.ZP.getUserTag(i)
     }) : B.intl.string(B.t.Jdnjjj)
   }
   renderPromotionActions() {
@@ -290,16 +290,19 @@ class z extends Chunk473749.Component {
   renderEmbed() {
     let {
       giftCode: e,
-      width: t
+      width: t,
+      sku: n
     } = this.props;
-    return null == module ? null : (0, Chunk54381.jsx)(Chunk626799.$, {
+    if (null == module) return null;
+    let i = null != module.giftStyle && !(0, Chunk164670.K$)(require);
+    return (0, Chunk54381.jsx)(Chunk626799.$, {
       skuId: module.skuId,
       onEmbedClick: this.handleEmbedClick,
       analyticsSection: Chunk981631.jXE.GIFT_CODE_EMBED,
       renderCustomActions: () => this.renderActions(module),
       renderCustomTitle: () => this.renderTitle(module),
       renderCustomTagline: () => this.renderBody(module),
-      renderCustomMedia: null == module.giftStyle ? true : () => this.renderCustomGiftBox(module),
+      renderCustomMedia: Chunk473749 ? () => this.renderCustomGiftBox(module) : true,
       width: exports
     })
   }

@@ -150,7 +150,7 @@ function M(e, t, n) {
   })
 }
 
-function j(e, t) {
+function k(e, t) {
   let {
     baseMessage: n,
     channel: i,
@@ -174,7 +174,7 @@ function j(e, t) {
   })
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   let {
     content: i,
     referencedMessage: a,
@@ -324,8 +324,8 @@ function G(e) {
     m = i.useMemo(() => null != d && u.state === g.Y.LOADED ? e => d(e, u.message) : true, [u, d]),
     E = i.useCallback(() => h(e => !e), []),
     b = M(e, m, s.type),
-    y = j(e, m),
-    v = k(e, p, E),
+    y = k(e, m),
+    v = j(e, p, E),
     T = i.useMemo(() => e.compact ? (0, A.Z)((0, O.vc)(l()(), "LT")) : null, [e.compact]);
   null != n && null != a && (t = R.intl.formatToPlainString(R.t.RhbQ2K, {
     author: null == a ? true : a.nick,

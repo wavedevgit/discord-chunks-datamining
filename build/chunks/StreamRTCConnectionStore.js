@@ -65,11 +65,11 @@ function M(e) {
   r = e.sessionId, x()
 }
 
-function j() {
+function k() {
   r = null, x()
 }
 
-function k(e) {
+function j(e) {
   let {
     streamType: t,
     guildId: n,
@@ -345,14 +345,14 @@ class J extends(i = Chunk442837.ZP.Store) {
 T(J, "displayName", "StreamRTCConnectionStore");
 let $ = new J(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : {
   CONNECTION_OPEN: M,
-  CONNECTION_CLOSED: j,
+  CONNECTION_CLOSED: k,
   RTC_CONNECTION_STATE: Y,
   RTC_CONNECTION_PING: Y,
   RTC_CONNECTION_LOSS_RATE: Y,
   RTC_CONNECTION_UPDATE_ID: K,
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: Y,
   RTC_CONNECTION_REMOTE_VIDEO_SINK_WANTS: W,
-  STREAM_START: k,
+  STREAM_START: j,
   STREAM_STOP: U,
   STREAM_CREATE: G,
   STREAM_SERVER_UPDATE: B,

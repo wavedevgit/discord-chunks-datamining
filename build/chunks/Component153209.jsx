@@ -36,7 +36,7 @@ function _() {
 }
 
 function y(e, t) {
-  return i.useMemo(() => [...[...e, ...t].sort((e, t) => false * h.default.compare(e.id, t.id))], [e, t])
+  return i.useMemo(() => [...[...e, ...t].sort((e, t) => false * f.default.compare(e.id, t.id))], [e, t])
 }
 
 function O() {

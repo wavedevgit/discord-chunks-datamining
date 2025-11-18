@@ -73,10 +73,10 @@ function M(e, t) {
   }), e
 }
 new Chunk710845.Z("ChannelEditor.tsx");
-let j = function() {
+let k = function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require]
   },
-  k = 1e3;
+  j = 1e3;
 class U extends Chunk473749.Component {
   _getEditorWindow() {
     var e, t, n, r, i;
@@ -88,7 +88,7 @@ class U extends Chunk473749.Component {
     return this._cachedEditorWindow
   }
   componentDidMount() {
-    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), k)
+    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), j)
   }
   componentDidUpdate(e) {
     if (this.fixFocus(e), this.props.useSlate !== e.useSlate) {
@@ -229,8 +229,8 @@ class U extends Chunk473749.Component {
       required: P,
       maxCharacterCount: w,
       allowNewLines: x,
-      isEditorIdle: j,
-      currentAutocompleteType: k,
+      isEditorIdle: k,
+      currentAutocompleteType: j,
       "aria-describedby": U,
       "aria-labelledby": G,
       accessibilityLabel: B,
@@ -272,8 +272,8 @@ class U extends Chunk473749.Component {
       }),
       spellcheckEnabled: Chunk403182,
       useNewSlashCommands: Chunk137058,
-      isEditorIdle: j,
-      currentAutocompleteType: k,
+      isEditorIdle: k,
+      currentAutocompleteType: j,
       disableAutoFocus: Chunk873546.tq || null != (n = Chunk710845.disableAutoFocus) && require,
       disableEnterToSubmit: null != (i = null == (e = Chunk710845.submit) ? true : module.disableEnterToSubmit) && Chunk473749,
       "aria-controls": null != (a = V.id) ? Chunk120356 : true,
@@ -420,7 +420,7 @@ class U extends Chunk473749.Component {
           files: I,
           errors: T
         } = G(e.clipboardData, u.uploadLongMessages ? v : null);
-      return (j("onPaste", [...e.clipboardData.items].map(e => {
+      return (k("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type

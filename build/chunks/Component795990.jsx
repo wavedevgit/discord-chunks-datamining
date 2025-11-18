@@ -15,12 +15,17 @@ var Chunk54381 = require("./54381.js"),
 
 function f() {
   let {
-    trackUserProfileEditAction: e
-  } = (0, Chunk785717.KZ)(), t = (0, Chunk810473.Z)(), n = Chunk473749.useMemo(() => {
-    let e = new Set(exports);
+    trackUserProfileAction: e,
+    trackUserProfileEditAction: t
+  } = (0, Chunk785717.KZ)(), n = Chunk473749.useRef(false), f = (0, Chunk810473.Z)(), g = Chunk473749.useMemo(() => {
+    let e = new Set(f);
     return Chunk247397.rR.filter(t => e.has(t))
-  }, [exports]);
-  return (0, Chunk54381.jsxs)("div", {
+  }, [f]);
+  return Chunk473749.useEffect(() => {
+    require.current || (module({
+      action: "VIEW_WIDGETS_EMPTY_STATE"
+    }), require.current = true)
+  }, [module]), (0, Chunk54381.jsxs)("div", {
     className: Chunk739854.empty,
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk739854.textContainer,
@@ -36,13 +41,13 @@ function f() {
     }), (0, Chunk54381.jsx)("ul", {
       className: Chunk739854.widgetGrid,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSA"]),
-      children: require.map(t => (0, r.jsx)("li", {
+      children: g.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(c.Z, {
-          widgetType: t,
+          widgetType: e,
           size: "small",
-          trackUserProfileEditAction: e
+          trackUserProfileEditAction: t
         })
-      }, t))
+      }, e))
     })]
   })
 }

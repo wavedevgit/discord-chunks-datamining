@@ -25,43 +25,44 @@ function b(e) {
     onClose: b,
     transitionState: _,
     onSubmitted: f,
-    detectedActivity: j
-  } = e, [O, w] = a.useState("issue_selection"), [y, P] = a.useState(null), [k, I] = a.useState(""), [G, N] = a.useState(null), [D, T] = a.useState(""), S = a.useMemo(() => (0, d.fP)(), []), C = (0, o.e7)([u.Z], () => u.Z.games), E = null != j, A = (0, o.e7)([s.Z], () => (null == j ? true : j.application_id) != null ? s.Z.getApplication(j.application_id) : null), Z = a.useMemo(() => k.trim().length < 1 ? [] : C.filter(e => e.name.toLowerCase().includes(k.toLowerCase())).slice(0, 20).map(e => ({
+    detectedActivity: j,
+    defaultStep: O = "issue_selection"
+  } = e, [w, y] = a.useState(O), [P, k] = a.useState(null), [I, G] = a.useState(""), [N, D] = a.useState(null), [T, S] = a.useState(""), C = a.useMemo(() => (0, d.fP)(), []), E = (0, o.e7)([u.Z], () => u.Z.games), A = null != j, Z = (0, o.e7)([s.Z], () => (null == j ? true : j.application_id) != null ? s.Z.getApplication(j.application_id) : null), M = a.useMemo(() => I.trim().length < 1 ? [] : E.filter(e => e.name.toLowerCase().includes(I.toLowerCase())).slice(0, 20).map(e => ({
     value: e.id,
     label: e.name,
     game: e
-  })), [C, k]), M = () => {
+  })), [E, I]), L = () => {
     var e, t;
     (0, d.MH)({
-      viewId: S,
+      viewId: C,
       applicationId: null != (e = null == j ? true : j.application_id) ? e : "",
-      suggestedGameName: "" !== k.trim() ? k.trim() : true,
-      suggestedGameApplicationId: null != (t = null == G ? true : G.id) ? t : null,
-      feedback: "" !== D.trim() ? D.trim() : true,
+      suggestedGameName: "" !== I.trim() ? I.trim() : true,
+      suggestedGameApplicationId: null != (t = null == N ? true : N.id) ? t : null,
+      feedback: "" !== T.trim() ? T.trim() : true,
       submitted: true
-    }), null == f || f(), b()
-  }, L = (() => {
-    switch (O) {
+    }), null == f || f(null != N ? N : null), b()
+  }, F = (() => {
+    switch (w) {
       case "issue_selection":
         return {
           title: v.intl.string(v.t["6tnjbD"]), actions: []
         };
       case "game_search":
         return {
-          title: E ? v.intl.string(v.t.TZgkxY) : v.intl.string(v.t["+ie+wX"]), actions: [{
+          title: A ? v.intl.string(v.t.TZgkxY) : v.intl.string(v.t["+ie+wX"]), actions: [{
             text: v.intl.string(v.t.geKm7t),
-            onClick: M,
+            onClick: L,
             variant: "primary",
-            disabled: "" === k.trim()
+            disabled: "" === I.trim()
           }]
         };
       case "other_feedback":
         return {
           title: v.intl.string(v.t.tdDpJj), actions: [{
             text: v.intl.string(v.t.geKm7t),
-            onClick: M,
+            onClick: L,
             variant: "primary",
-            disabled: "" === D.trim()
+            disabled: "" === T.trim()
           }]
         };
       default:
@@ -87,7 +88,7 @@ function b(e) {
       })
     }
     return e
-  }({}, L), n = n = {
+  }({}, F), n = n = {
     transitionState: _,
     onClose: b,
     trackingProps: {
@@ -96,7 +97,7 @@ function b(e) {
       }
     },
     children: (() => {
-      switch (O) {
+      switch (w) {
         case "issue_selection":
           return (0, l.jsxs)("div", {
             className: x.content,
@@ -107,17 +108,17 @@ function b(e) {
             }), (0, l.jsx)("div", {
               className: x.radioGroup,
               children: (0, l.jsx)(c.FXm, {
-                value: null != y ? y : true,
+                value: null != P ? P : true,
                 onChange: e => {
                   var t;
-                  P(e), m.default.track(h.rMx.GAME_DETECTION_FEEDBACK_MODAL, {
+                  k(e), m.default.track(h.rMx.GAME_DETECTION_FEEDBACK_MODAL, {
                     selected_option: e,
                     application_id: null != (t = null == j ? true : j.application_id) ? t : null
                   }), setTimeout(() => {
-                    "game_not_detected" === e || "wrong_game_shown" === e ? w("game_search") : w("other_feedback")
+                    "game_not_detected" === e || "wrong_game_shown" === e ? y("game_search") : y("other_feedback")
                   }, 100)
                 },
-                options: E ? [{
+                options: A ? [{
                   name: v.intl.string(v.t.TZgkxY),
                   value: "wrong_game_shown"
                 }, {
@@ -140,19 +141,19 @@ function b(e) {
             children: [(0, l.jsx)(c.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
-              children: E ? v.intl.string(v.t["79o/iq"]) : v.intl.string(v.t["r/2pZy"])
-            }), E && (0, l.jsxs)(l.Fragment, {
+              children: A ? v.intl.string(v.t["79o/iq"]) : v.intl.string(v.t["r/2pZy"])
+            }), A && (0, l.jsxs)(l.Fragment, {
               children: [(0, l.jsxs)("div", {
                 className: x.detectedGameFrame,
                 children: [(() => {
                   var e, t, n;
                   let a = p.ZP.getApplicationIconURL({
                     id: null != (e = j.application_id) ? e : "",
-                    icon: null != (t = null == A ? true : A.icon) ? t : null
+                    icon: null != (t = null == Z ? true : Z.icon) ? t : null
                   });
                   return null != a ? (0, l.jsx)("img", {
                     src: a,
-                    alt: null != j.name && "" !== j.name ? j.name : null != (n = null == A ? true : A.name) ? n : "",
+                    alt: null != j.name && "" !== j.name ? j.name : null != (n = null == Z ? true : Z.name) ? n : "",
                     className: x.detectedGameIcon
                   }) : (0, l.jsx)("div", {
                     className: "".concat(x.detectedGameIcon, " ").concat(x.detectedGameIconPlaceholder),
@@ -169,32 +170,32 @@ function b(e) {
                 })(), (0, l.jsx)(c.Text, {
                   variant: "text-md/semibold",
                   color: "header-primary",
-                  children: null != j.name && "" !== j.name ? j.name : null == A ? true : A.name
+                  children: null != j.name && "" !== j.name ? j.name : null == Z ? true : Z.name
                 })]
               }), (0, l.jsx)(g.Z, {})]
             }), (0, l.jsx)(c.VcW, {
               className: x.searchNoToggle,
-              options: Z,
-              value: null != (e = null == G ? true : G.id) ? e : null,
+              options: M,
+              value: null != (e = null == N ? true : N.id) ? e : null,
               onChange: e => {
                 var t;
-                let n = C.find(t => t.id === e);
-                N(null != n ? n : null), I(null != (t = null == n ? true : n.name) ? t : "")
+                let n = E.find(t => t.id === e);
+                D(null != n ? n : null), G(null != (t = null == n ? true : n.name) ? t : "")
               },
               onSearchChange: e => {
-                I(e), null != G && e !== G.name && N(null)
+                G(e), null != N && e !== N.name && D(null)
               },
-              placeholder: E ? v.intl.string(v.t["/SGi7v"]) : v.intl.string(v.t.ss9Zwa),
+              placeholder: A ? v.intl.string(v.t["/SGi7v"]) : v.intl.string(v.t.ss9Zwa),
               clearable: true,
               filter: false,
               maxVisibleItems: 5,
               clearQueryOnSelect: false,
               onKeyDown: e => {
-                0 === Z.length && ("ArrowDown" === e.key || "ArrowUp" === e.key) && e.preventDefault()
+                0 === M.length && ("ArrowDown" === e.key || "ArrowUp" === e.key) && e.preventDefault()
               },
               renderOptionPrefix: e => {
                 if (null == e) return null;
-                let t = C.find(t => t.id === e.value);
+                let t = E.find(t => t.id === e.value);
                 return null != t ? (0, l.jsx)("img", {
                   src: p.ZP.getApplicationIconURL({
                     id: t.id,
@@ -218,8 +219,8 @@ function b(e) {
               color: "text-muted",
               children: v.intl.string(v.t.IblYEw)
             }), (0, l.jsx)(c.Kx8, {
-              value: D,
-              onChange: T,
+              value: T,
+              onChange: S,
               placeholder: v.intl.string(v.t.aiPKV4),
               maxLength: 300,
               rows: 4

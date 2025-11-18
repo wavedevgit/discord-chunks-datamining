@@ -161,7 +161,8 @@ let v = e => {
       widgetType: o,
       analyticsLocations: s,
       action: l,
-      section: c
+      section: c,
+      applicationId: d
     } = e;
     u.default.track(m.rMx.USER_PROFILE_ACTION, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
       location_stack: s,
@@ -169,7 +170,8 @@ let v = e => {
       profile_section: c,
       source_message_id: i,
       source_role_id: a,
-      widget_type: o
+      widget_type: o,
+      application_id: d
     }))
   },
   N = e => {
@@ -290,7 +292,8 @@ let v = e => {
       widgetEdited: o,
       gameId: s,
       numResults: l,
-      numCharacters: c
+      numCharacters: c,
+      applicationId: d
     } = e;
     C(O(b({}, e), {
       action: a
@@ -300,7 +303,8 @@ let v = e => {
       widget_edited: o,
       game_id: s,
       num_results: l,
-      num_characters: c
+      num_characters: c,
+      application_id: d
     }))
   },
   x = e => {

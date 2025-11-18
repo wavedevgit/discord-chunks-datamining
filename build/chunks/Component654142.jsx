@@ -71,7 +71,7 @@ let _ = Chunk473749.memo(function(e) {
     name: O,
     color: v,
     children: j
-  } = t, x = j.map(e => e.id), C = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), S = function(e) {
+  } = t, C = j.map(e => e.id), x = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), S = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -81,14 +81,14 @@ let _ = Chunk473749.memo(function(e) {
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), I = (0, h.Z)(t), {
+  }(t), I = (0, f.Z)(t), {
     mentionCount: P,
     isMentionLowImportance: N,
     unread: Z
   } = (0, l.cj)([u.default], () => ({
-    mentionCount: x.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
-    isMentionLowImportance: x.every(e => u.default.getIsMentionLowImportance(e)),
-    unread: x.some(e => u.default.hasUnread(e))
+    mentionCount: C.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
+    isMentionLowImportance: C.every(e => u.default.getIsMentionLowImportance(e)),
+    unread: C.some(e => u.default.hasUnread(e))
   })), w = i.useCallback(() => {
     a.Z.toggleGuildFolderExpand(y)
   }, [y]), T = i.useCallback(e => {
@@ -104,10 +104,10 @@ let _ = Chunk473749.memo(function(e) {
       }))
     })
   }, [y, O, v, Z, P]);
-  return (0, r.jsx)(f.Z, b(m({}, _), {
+  return (0, r.jsx)(h.Z, b(m({}, _), {
     folderNode: t,
     expanded: E,
-    selected: null != C && x.includes(C),
+    selected: null != x && C.includes(x),
     mentionCount: P,
     isMentionLowImportance: N,
     unread: Z,

@@ -71,8 +71,8 @@ function T(e) {
   i.useEffect(() => {
     null == v || v(null == x ? true : x.current)
   }, [x, v]);
-  let j = D ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-    k = P ? "div" : o.VqE;
+  let k = D ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+    j = P ? "div" : o.VqE;
   return (0, r.jsx)(l.Gt, {
     value: w,
     children: (0, r.jsx)(d.Mt, {
@@ -81,7 +81,7 @@ function T(e) {
       fetchStartedAt: null == M ? true : M.fetchStartedAt,
       fetchEndedAt: null == M ? true : M.fetchEndedAt,
       isLoaded: null == M ? true : M.isLoaded,
-      children: (0, r.jsx)(k, {
+      children: (0, r.jsx)(j, {
         ref: x,
         "aria-label": t.username,
         children: (0, r.jsx)(h.Z, {
@@ -117,7 +117,7 @@ function T(e) {
                   isBlocked: D,
                   onClick: () => {
                     N(), (0, f.pQ)(I({
-                      action: j,
+                      action: k,
                       analyticsLocations: w
                     }, L))
                   }

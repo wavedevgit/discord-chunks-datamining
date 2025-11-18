@@ -183,7 +183,7 @@ class z extends Chunk836560.EventEmitter {
         channelId: t,
         newestUnreadMessageId: n
       } = e;
-      d.Z.wait(() => f.ack(t, {
+      d.Z.wait(() => h.ack(t, {
         section: M.jXE.INBOX,
         object: M.qAy.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
         objectType: M.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -194,12 +194,12 @@ class z extends Chunk836560.EventEmitter {
         channels: this.updateChannel(t, e => B(U({}, e), {
           deleted: true
         }))
-      }), h.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
+      }), f.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
     }, this.undoMarkChannelRead = () => {
       if (0 === this.undoStack.length) return;
       let e = this.undoStack.pop();
       if (null == e) return;
-      f.ack(e.channelId, {
+      h.ack(e.channelId, {
         section: M.jXE.INBOX,
         object: M.qAy.UNDO_MARK_AS_READ,
         objectType: M.AnalyticsObjectTypes.ACK_MANUAL
@@ -220,7 +220,7 @@ class z extends Chunk836560.EventEmitter {
         channels: this.state.channels.filter(t => t.channelId !== e)
       }), this.maybeLoadMore()
     }, this.markAllRead = () => {
-      f.y5(this.state.channels.map(e => ({
+      h.y5(this.state.channels.map(e => ({
         channelId: e.channelId,
         messageId: e.newestUnreadMessageId
       }))), this.setState({
@@ -235,9 +235,9 @@ class z extends Chunk836560.EventEmitter {
         collapsedChannels: i,
         loadState: l
       } = this.state, o = u().findIndex(r, e => e.channelId === t), a = r[o], s = !a.collapsed;
-      i[t] = s, (0, x.BU)(n, t, e => {
+      i[t] = s, (0, C.BU)(n, t, e => {
         e.collapsedInInbox = s
-      }, x.fy.FREQUENT_USER_ACTION), this.setState({
+      }, C.fy.FREQUENT_USER_ACTION), this.setState({
         scrollToChannelIndex: o,
         collapsedChannels: i,
         loadState: "done" !== l || s || a.isFullyLoaded ? l : "loaded",

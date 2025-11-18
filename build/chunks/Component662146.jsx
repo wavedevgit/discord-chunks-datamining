@@ -37,15 +37,15 @@ function u(e) {
     disableWrapper: u = false,
     disabled: d = false,
     hideOnClick: p = true,
-    shouldShow: f,
-    forceOpen: h,
+    shouldShow: h,
+    forceOpen: f,
     selected: g = false,
     tooltipClass: m,
     tooltipContentClass: b
   } = e;
   return (0, r.jsx)(a.aML, {
-    shouldShow: f,
-    forceOpen: h,
+    shouldShow: h,
+    forceOpen: f,
     spacing: 12,
     hideOnClick: p,
     text: d ? null : n,

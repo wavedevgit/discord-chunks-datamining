@@ -38,8 +38,8 @@ function C(e) {
     borderWidth: T,
     opacity: P,
     horizontal: A,
-    pinned: D,
-    anchorTop: k,
+    pinned: k,
+    anchorTop: D,
     anchorLeft: R,
     showEmpty: L = true
   } = e, M = A ? _.C5.HORIZONTAL : _.C5.VERTICAL, z = M === _.C5.VERTICAL, V = (0, l.e7)([m.Z], () => {
@@ -80,7 +80,7 @@ function C(e) {
       activeStreams: s,
       participantsVersion: d
     }
-  }(U, (0, l.e7)([p.default], () => p.default.getId()), V, k && z || R && A, !k && z || !R && A), H = G.length, Y = (0, l.e7)([d.Z], () => d.Z.getWindowState(S.$J), []), {
+  }(U, (0, l.e7)([p.default], () => p.default.getId()), V, D && z || R && A, !D && z || !R && A), H = G.length, Y = (0, l.e7)([d.Z], () => d.Z.getWindowState(S.$J), []), {
     tileWidth: Q,
     tileHeight: K,
     widgetWidth: X,
@@ -124,7 +124,7 @@ function C(e) {
     a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, !et)
   }, [et]), (0, s.ZP)(() => () => {
     a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
-  }), (et || !D) && Z) ? null : et && !Z ? L ? Z ? null : (0, i.jsx)(O.E, {
+  }), (et || !k) && Z) ? null : et && !Z ? L ? Z ? null : (0, i.jsx)(O.E, {
     emptyText: x.intl.string(x.t["T6+rXy"]),
     icon: o.hGI,
     absolute: true
@@ -143,7 +143,7 @@ function C(e) {
       activeStreams: F,
       streamParticipants: G,
       participantsVersion: B,
-      pinned: D,
+      pinned: k,
       padding: w
     })
   })

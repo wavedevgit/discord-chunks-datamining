@@ -18,21 +18,21 @@ let p = () => {
     loading: t,
     items: n,
     hasMore: p,
-    loadMore: f
+    loadMore: h
   } = (e => {
     let {
       isFocused: t,
       navigatedAway: n,
       isDesktop: p,
-      withMentions: f = false,
-      initialPageSize: h
+      withMentions: h = false,
+      initialPageSize: f
     } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, _] = r.useState(false), {
       initialized: y,
       loading: O,
       items: v,
       hasMore: j,
-      cursor: x,
-      errored: C
+      cursor: C,
+      errored: x
     } = (0, i.cj)([c.Z], () => ({
       initialized: c.Z.initialized,
       loading: c.Z.loading,
@@ -52,27 +52,27 @@ let p = () => {
     }, [t, y]);
     let I = (0, o.Z)();
     r.useEffect(() => () => {
-      p ? !I() && (C || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
-    }, [n, v, p, I, C]), r.useEffect(() => {
+      p ? !I() && (x || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
+    }, [n, v, p, I, x]), r.useEffect(() => {
       let e = g && t;
       (!y || e) && (0, s.jk)({
-        limit: null != h ? h : f ? 8 : 20,
-        with_mentions: f,
+        limit: null != f ? f : h ? 8 : 20,
+        with_mentions: h,
         roles_filter: E,
         everyone_filter: S
       })
-    }, [y, g, t, f, E, S, h]);
+    }, [y, g, t, h, E, S, f]);
     let P = r.useCallback(async e => {
-      !m.current && y && j && null != x && (e || !C) && (m.current = true, _(true), await (0, s.jk)({
-        after: x,
-        with_mentions: f,
+      !m.current && y && j && null != C && (e || !x) && (m.current = true, _(true), await (0, s.jk)({
+        after: C,
+        with_mentions: h,
         roles_filter: E,
         everyone_filter: S,
-        limit: f ? 8 : 20
+        limit: h ? 8 : 20
       }, () => {
         m.current = false
       }), _(false))
-    }, [y, j, x, C, f, E, S]);
+    }, [y, j, C, x, h, E, S]);
     return {
       initialized: y,
       loading: O,
@@ -83,7 +83,7 @@ let p = () => {
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = true)
       },
-      errored: C
+      errored: x
     }
   })({
     isFocused: true,
@@ -94,6 +94,6 @@ let p = () => {
     loading: exports,
     items: require.filter(e => "notification-center-item" === e.kind),
     hasMore: p,
-    loadMore: f
+    loadMore: h
   }
 }

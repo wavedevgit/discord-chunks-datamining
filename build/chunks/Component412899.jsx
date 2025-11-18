@@ -107,27 +107,27 @@ function K(e) {
     position: n
   } = e, i = F(e, ["userRoleIds", "position"]), a = (0, v.Dt)();
   return (0, r.jsxs)(h.VqE, {
-    className: o()(k.overflowRolesPopout, {
-      [k.popoutBottom]: "bottom" === n,
-      [k.popoutTop]: "top" === n
+    className: o()(j.overflowRolesPopout, {
+      [j.popoutBottom]: "bottom" === n,
+      [j.popoutTop]: "top" === n
     }),
     "aria-labelledby": a,
     children: [(0, r.jsx)("div", {
-      className: k.overflowRolesPopoutArrowWrapper,
+      className: j.overflowRolesPopoutArrowWrapper,
       children: (0, r.jsx)("div", {
-        className: k.overflowRolesPopoutArrow
+        className: j.overflowRolesPopoutArrow
       })
     }), (0, r.jsxs)(O.Z, {
-      className: k.overflowRolesPopoutHeader,
+      className: j.overflowRolesPopoutHeader,
       align: O.Z.Align.CENTER,
       children: [(0, r.jsx)(h.U65, {
         size: "xs",
         color: p.Z.unsafe_rawColors.PRIMARY_400.css,
-        className: k.overflowRolesPopoutHeaderIcon
+        className: j.overflowRolesPopoutHeaderIcon
       }), (0, r.jsx)("div", {
-        className: k.overflowRolesPopoutHeaderText,
+        className: j.overflowRolesPopoutHeaderText,
         id: a,
-        children: j.intl.format(j.t.PCs0oo, {
+        children: k.intl.format(k.t.PCs0oo, {
           numRoles: t.length
         })
       })]
@@ -168,7 +168,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
         } = await n.e("5396").then(n.bind(n, 731646));
         return t => (0, r.jsx)(e, Z(G({}, t), {
           id: E.id,
-          label: j.intl.string(j.t.sMsaLg)
+          label: k.intl.string(k.t.sMsaLg)
         }))
       })
     }, [E.id]),
@@ -178,12 +178,12 @@ let z = Chunk473749.forwardRef(function(e, t) {
     H = p.Z.unsafe_rawColors.WHITE_500.css,
     Y = (0, f._i)(B);
   null != Y && .3 > (0, f.Bd)(Y) && (H = p.Z.unsafe_rawColors.PRIMARY_630.css), c = x ? (0, r.jsx)(y.Z, {
-    className: k.roleFlowerStar,
-    iconClassName: d ? k.roleVerifiedIcon : true,
+    className: j.roleFlowerStar,
+    iconClassName: d ? j.roleVerifiedIcon : true,
     color: B,
     size: 14
   }) : "dot" === w ? (0, r.jsx)(h.FhE, {
-    className: k.roleDot,
+    className: j.roleDot,
     color: B,
     colors: L,
     background: false,
@@ -201,7 +201,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
   return (0, r.jsx)(h.tEY, {
     children: (0, r.jsxs)("div", Z(G({
       ref: t,
-      className: o()(k.role, g),
+      className: o()(j.role, g),
       style: W,
       onContextMenu: M,
       onMouseDown: C,
@@ -209,32 +209,32 @@ let z = Chunk473749.forwardRef(function(e, t) {
       tabIndex: R
     }, P), {
       children: [(0, r.jsxs)(h.P3F, {
-        className: o()(d && k.roleRemoveButtonCanRemove, k.roleRemoveButton),
+        className: o()(d && j.roleRemoveButtonCanRemove, j.roleRemoveButton),
         onClick: d ? O : true,
         tabIndex: d ? R : false,
         focusProps: {
-          focusClassName: k.roleRemoveIconFocused
+          focusClassName: j.roleRemoveIconFocused
         },
         "aria-hidden": !d,
-        "aria-label": j.intl.formatToPlainString(j.t.QrxwhY, {
+        "aria-label": k.intl.formatToPlainString(k.t.QrxwhY, {
           roleName: E.name
         }),
         children: [c, d ? (0, r.jsx)(h.Dio, {
           size: "md",
           color: H,
-          className: k.roleRemoveIcon,
+          className: j.roleRemoveIcon,
           "aria-hidden": true
         }) : null]
       }), null != D ? (0, r.jsx)(A.Z, Z(G({
-        className: k.roleIcon
+        className: j.roleIcon
       }, D), {
         enableTooltip: false
       })) : null, (0, r.jsx)("div", {
         "aria-hidden": true,
-        className: k.roleName,
+        className: j.roleName,
         children: (0, r.jsx)(h.Text, {
           variant: "text-xs/medium",
-          className: k.roleNameOverflow,
+          className: j.roleNameOverflow,
           children: E.name
         })
       })]
@@ -264,7 +264,7 @@ function q(e) {
       children: (0, r.jsx)("button", Z(G(Z(G({
         ref: l
       }, e), {
-        className: o()(k.overflowButton, a)
+        className: o()(j.overflowButton, a)
       }), s), {
         children: "+".concat(n)
       }))
@@ -307,14 +307,14 @@ function X(e) {
       children: (0, r.jsx)("button", Z(G(Z(G({
         ref: t
       }, e), {
-        className: o()(k.addButton, l, c),
-        "aria-label": j.intl.string(j.t.e3Wlyw),
+        className: o()(j.addButton, l, c),
+        "aria-label": k.intl.string(k.t.e3Wlyw),
         type: "button"
       }), f), {
         children: (0, r.jsx)(h.qJs, {
           size: "md",
           color: "currentColor",
-          className: o()(k.addButtonIcon, d),
+          className: o()(j.addButtonIcon, d),
           "aria-hidden": true
         })
       }))
@@ -404,8 +404,8 @@ function Q(e) {
           ref: n
         } = e, i = F(e, ["ref"]);
         return (0, r.jsxs)("div", Z(G({
-          className: o()(k.root, h),
-          "aria-label": j.intl.formatToPlainString(j.t.PCs0oo, {
+          className: o()(j.root, h),
+          "aria-label": k.intl.formatToPlainString(k.t.PCs0oo, {
             numRoles: s.length
           }),
           ref: n

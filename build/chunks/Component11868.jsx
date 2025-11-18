@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Qt: () => L,
-  ZP: () => k
+  ZP: () => j
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -114,7 +114,7 @@ let D = (e, t) => n => {
       })]
     })
   }),
-  j = Chunk473749.memo(function(e) {
+  k = Chunk473749.memo(function(e) {
     let {
       guildId: t,
       guildScheduledEventId: n,
@@ -157,7 +157,7 @@ let D = (e, t) => n => {
       variant: "active"
     })
   }),
-  k = Chunk473749.memo(function(e) {
+  j = Chunk473749.memo(function(e) {
     var t;
     let {
       guildScheduledEvent: n,
@@ -202,7 +202,7 @@ let D = (e, t) => n => {
             channel: s,
             guildScheduledEvent: n,
             isMember: c
-          }), (0, r.jsx)(j, {
+          }), (0, r.jsx)(k, {
             isActive: A,
             isEnded: C,
             isMember: c,

@@ -56,7 +56,7 @@ function Z(e) {
     messages: l,
     hasMore: s,
     loading: p,
-    guildFilter: h,
+    guildFilter: f,
     roleFilter: b,
     everyoneFilter: y
   } = (0, a.cj)([v.ZP], () => ({
@@ -68,12 +68,12 @@ function Z(e) {
     everyoneFilter: v.ZP.everyoneFilter
   })), j = (0, m.Us)({
     location: "RecentMentions"
-  }), x = (0, d.Z)(h), C = (0, d.Z)(b), P = (0, d.Z)(y);
+  }), C = (0, d.Z)(f), x = (0, d.Z)(b), P = (0, d.Z)(y);
   i.useEffect(() => {
     if (!v.ZP.hasLoadedEver) return void N(n, true);
-    (null != x && h !== x || null != C && b !== C || null != P && y !== P) && N(n, true)
-  }, [x, h, C, b, P, y, n, true]), (0, u.ZP)(() => {
-    (null == l ? true : l.some(f.k5)) && (c.Z.clearMentions(), N(n, true))
+    (null != C && f !== C || null != x && b !== x || null != P && y !== P) && N(n, true)
+  }, [C, f, x, b, P, y, n, true]), (0, u.ZP)(() => {
+    (null == l ? true : l.some(h.k5)) && (c.Z.clearMentions(), N(n, true))
   }), i.useEffect(() => () => {
     c.Z.truncateMentions(E.DJj)
   }, []);
@@ -126,7 +126,7 @@ function T(e) {
     a = !!(0, p.qF)(l) && !o;
   return (0, r.jsxs)("div", {
     className: I.container,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(C.Z, {
       channel: l,
       gotoChannel: n,
       children: null != i ? (0, r.jsx)(s.M0o, {
@@ -144,7 +144,7 @@ function T(e) {
       children: [(0, r.jsx)(j.Z, {
         className: I.jumpMessageButton,
         onJump: n
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(f.Z, {
         message: t,
         channel: l,
         className: I.message,

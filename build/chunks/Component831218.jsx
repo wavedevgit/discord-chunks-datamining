@@ -228,7 +228,7 @@ class F extends(r = Chunk473749.Component) {
     null != module && null != exports && exports.indexOf(module) >= 0 && this.scrollToChannel(module), this.reportAnalytics()
   }
   shouldComponentUpdate(e) {
-    return !(0, f.Z)(this.props, e, ["children"])
+    return !(0, h.Z)(this.props, e, ["children"])
   }
   componentDidUpdate(e) {
     let {
@@ -278,8 +278,8 @@ class F extends(r = Chunk473749.Component) {
           }
           return i
         }(r, ["ref", "role"]);
-        return (0, i.jsx)(h.Wdt, {
-          children: r => (0, i.jsx)(h.aVo, G({
+        return (0, i.jsx)(f.Wdt, {
+          children: r => (0, i.jsx)(f.aVo, G({
             fade: true,
             innerRole: o,
             innerAriaLabel: L.intl.string(L.t.YUU0RF),
@@ -397,11 +397,11 @@ class F extends(r = Chunk473749.Component) {
           popoutAlign: "left",
           className: M.privateChannelRecipientsInviteButtonIconContainer,
           iconClassName: M.privateChannelRecipientsInviteButtonIcon,
-          icon: h.BRu,
+          icon: f.BRu,
           subscribeToGlobalHotkey: true
         }), "side" === r && (0, i.jsx)(S.l, {
           popoutAlign: "left",
-          icon: h.kL_,
+          icon: f.kL_,
           text: L.intl.string(L.t["6Urw1t"]),
           size: "sm",
           subscribeToGlobalHotkey: true
@@ -431,20 +431,20 @@ k(F, "defaultProps", {
 let V = e => {
   let {
     density: t
-  } = (0, h.TCT)(), {
+  } = (0, f.TCT)(), {
     version: n,
     theme: r,
     children: o,
     showDMHeader: a,
     listScrollerRef: s,
     createDMCTAButtonVariant: c,
-    hideAllDMs: f
-  } = e, g = l.Children.count(o), _ = w.Z.getMutablePrivateChannels(), O = f ? {} : (0, P.k1)(_), v = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
+    hideAllDMs: h
+  } = e, g = l.Children.count(o), _ = w.Z.getMutablePrivateChannels(), O = h ? {} : (0, P.k1)(_), v = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
     let e = A.Z.getPrivateChannelIds(),
       t = (0, P.tU)(e, [I.Z, N.Z]);
-    return f ? [] : t
-  }, [f]);
-  (0, E.z)(C.R);
+    return h ? [] : t
+  }, [h]);
+  (0, E.z)(x.R);
   let {
     analyticsLocations: j
   } = (0, y.ZP)(b.Z.CONTACTS_LIST), S = (0, Z.Ll)(), {
@@ -481,7 +481,7 @@ let V = e => {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [L]), V = (0, x.Dt)(), H = (0, d.ZP)({
+  }), [L]), V = (0, C.Dt)(), H = (0, d.ZP)({
     id: "private-channels-".concat(V),
     isEnabled: T,
     scrollToStart: k,

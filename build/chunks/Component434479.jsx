@@ -1,7 +1,7 @@
 /** Chunk was on 10023 **/
 /** chunk id: 434479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => h
+  m: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -33,7 +33,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,11 +46,11 @@ function f(e, t) {
   }), e
 }
 
-function h(e) {
+function f(e) {
   var t, {
       id: n,
       className: i,
-      innerClassName: h,
+      innerClassName: f,
       renderIcon: g,
       text: m,
       selected: b,
@@ -74,17 +74,17 @@ function h(e) {
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]);
-  let x = (0, o.JA)(n),
-    C = null != (t = (0, a.q)(m)) ? t : "";
+  let C = (0, o.JA)(n),
+    x = null != (t = (0, a.q)(m)) ? t : "";
   return (0, r.jsx)("li", {
     ref: v,
-    children: (0, r.jsxs)(s.kL8, f(p({}, j), {
-      buttonProps: f(p({}, x), {
+    children: (0, r.jsxs)(s.kL8, h(p({}, j), {
+      buttonProps: h(p({}, C), {
         id: n,
         role: "button"
       }),
       tag: "div",
-      "aria-label": C,
+      "aria-label": x,
       focusProps: {
         offset: {
           top: 1,
@@ -101,7 +101,7 @@ function h(e) {
       children: [y, O ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
-        className: l()([d.link, d.basicChannelRowLink, h]),
+        className: l()([d.link, d.basicChannelRowLink, f]),
         children: (0, r.jsxs)("div", {
           className: c.content,
           children: [(0, r.jsx)("div", {

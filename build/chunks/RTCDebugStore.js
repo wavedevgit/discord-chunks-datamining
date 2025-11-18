@@ -176,7 +176,7 @@ function M(e) {
   return r
 }
 
-function j(e) {
+function k(e) {
   let {
     connectionStats: t
   } = e;
@@ -187,7 +187,7 @@ function j(e) {
       } = t;
       return n === e
     }).forEach((t, n) => {
-      k({
+      j({
         context: e,
         stats: t.stats,
         index: n
@@ -196,7 +196,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     context: t,
     stats: n,
@@ -313,5 +313,5 @@ let H = new V(Chunk570140.Z, {
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
   VOICE_CHANNEL_SELECT: w,
   RTC_CONNECTION_VIDEO: L,
-  MEDIA_ENGINE_CONNECTION_STATS: j
+  MEDIA_ENGINE_CONNECTION_STATS: k
 })

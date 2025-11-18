@@ -50,11 +50,11 @@ function N(e) {
     locked: F,
     video: (H || z) && null == V,
     selected: N
-  }), K = (0, i.e7)([f.Z], () => f.Z.getNewThreadCount(n.guild_id, n.id)), Y = (0, u.n2)(n.guild_id, n.id), q = (0, i.e7)([h.Z], () => {
+  }), K = (0, i.e7)([h.Z], () => h.Z.getNewThreadCount(n.guild_id, n.id)), Y = (0, u.n2)(n.guild_id, n.id), q = (0, i.e7)([f.Z], () => {
     var e, t;
-    return null != (t = null == (e = h.Z.getGuild(n.guild_id)) ? true : e.features.has(E.GuildFeatures.COMMUNITY)) && t
+    return null != (t = null == (e = f.Z.getGuild(n.guild_id)) ? true : e.features.has(E.GuildFeatures.COMMUNITY)) && t
   });
-  if ((0, O.Z)(G)) return (0, r.jsx)(C.Z, {
+  if ((0, O.Z)(G)) return (0, r.jsx)(x.Z, {
     mentionsCount: G,
     isMentionLowImportance: U
   });
@@ -79,7 +79,7 @@ function N(e) {
     children: (0, o.NGo)(Y)
   });
   let X = null != (t = null == w ? true : w.length) ? t : 0;
-  return null != T && T && W ? (0, r.jsx)(x.Z, {
+  return null != T && T && W ? (0, r.jsx)(C.Z, {
     userCount: X,
     video: H || z,
     channel: n

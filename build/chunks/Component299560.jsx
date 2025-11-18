@@ -62,7 +62,7 @@ let I = {
     },
     getAriaLabel: e => {
       var a, l;
-      return N.intl.formatToPlainString(N.t.KfGahB, {
+      return g.intl.formatToPlainString(g.t.KfGahB, {
         applicationName: null != (l = null == (a = d.Z.getApplication(e.applicationId)) ? true : a.name) ? l : ""
       })
     }
@@ -75,67 +75,68 @@ function E(e) {
       onAddWidget: n,
       size: d = "default",
       loading: u = false,
-      trackUserProfileEditAction: N
+      trackUserProfileEditAction: g
     } = e,
     {
       placeholder: E,
       getAriaLabel: L,
       icon: _
     } = I[l],
-    b = "small" === d,
+    O = "small" === d,
     {
-      config: O
+      config: T
     } = (0, x.G)(),
-    T = t.useMemo(() => {
+    b = t.useMemo(() => {
       switch (l) {
         case s.l.CURRENT_GAMES:
         case s.l.FAVORITE_GAMES:
         case s.l.PLAYED_GAMES:
         case s.l.WANT_TO_PLAY_GAMES:
-          return new p.zy({
+          return new m.zy({
             type: l,
             games: []
           });
         case s.l.APPLICATION:
-          let e = null == O ? true : O.application_id;
+          let e = null == T ? true : T.application_id;
           if (null == e) return null;
-          return new m.q({
+          return new p.q({
             type: l,
             applicationId: e
           })
       }
-    }, [l, null == O ? true : O.application_id]),
+    }, [l, null == T ? true : T.application_id]),
     S = t.useCallback(() => {
-      u || null == T || ((0, v.qH)(l, T), N({
+      u || null == b || ((0, v.qH)(l, b), g({
         action: "WIDGET_ADDED",
-        widgetEdited: l
-      }), (0, j.L$)(g.qb.WIDGET_ADDED), null == n || n())
-    }, [u, l, T, N, n]);
-  return (null != T && null != _ && (a = _(T)), null == T) ? null : (0, i.jsxs)("div", {
+        widgetEdited: l,
+        applicationId: b instanceof p.q ? b.applicationId : true
+      }), (0, j.L$)(N.qb.WIDGET_ADDED), null == n || n())
+    }, [u, l, b, g, n]);
+  return (null != b && null != _ && (a = _(b)), null == b) ? null : (0, i.jsxs)("div", {
     className: A.addButtonContainer,
     children: [(0, i.jsxs)(c.P3F, {
-      className: r()(A.addButtonContent, b && A.sizeSmall, u && A.loading),
+      className: r()(A.addButtonContent, O && A.sizeSmall, u && A.loading),
       onClick: S,
-      "aria-label": L(T),
+      "aria-label": L(b),
       "aria-busy": u,
       children: [(() => {
-        if (null == T) return null;
-        let e = E(T);
+        if (null == b) return null;
+        let e = E(b);
         switch (e.variant) {
           case "details":
-            return (0, i.jsx)(h.i, {
+            return (0, i.jsx)(f.i, {
               className: A.placeholderPadding,
               applicationId: e.applicationId,
               size: d
             });
           case "grid":
-            return (0, i.jsx)(h.c, {
+            return (0, i.jsx)(f.c, {
               className: A.placeholderPadding,
               applicationIds: e.applicationIds,
               size: d
             });
           case "application-widget":
-            return (0, i.jsx)(f.Z, {
+            return (0, i.jsx)(h.Z, {
               applicationId: e.applicationId,
               size: d
             });
@@ -153,7 +154,7 @@ function E(e) {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "header-primary",
-            children: (0, v.mR)(T)
+            children: (0, v.mR)(b)
           }), null != a ? (0, i.jsx)("img", {
             src: a,
             alt: "",
@@ -164,9 +165,9 @@ function E(e) {
         })]
       })]
     }), (() => {
-      if (null == T) return null;
-      let e = E(T);
-      return "application-widget" === e.variant ? (0, i.jsx)(f.T, {
+      if (null == b) return null;
+      let e = E(b);
+      return "application-widget" === e.variant ? (0, i.jsx)(h.T, {
         applicationId: e.applicationId,
         size: d
       }) : null

@@ -1,8 +1,8 @@
 /** Chunk was on 10023 **/
 /** chunk id: 688192, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => x,
-  Z: () => C
+  U: () => C,
+  Z: () => x
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,16 +23,16 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk988388 = require("./988388.js"),
-  x = ((r = {}).SMALL = "small", r.MEDIUM = "medium", r.LARGE = "large", r);
+  C = ((r = {}).SMALL = "small", r.MEDIUM = "medium", r.LARGE = "large", r);
 
-function C(e) {
+function x(e) {
   let {
     item: t,
     wishlistId: n,
     isOwner: r,
     cardSize: o = "medium",
-    showOverlayButton: x = true,
-    cardRef: C,
+    showOverlayButton: C = true,
+    cardRef: x,
     renderItemPreview: E,
     accessibleLabel: S,
     onCardClick: I,
@@ -42,9 +42,9 @@ function C(e) {
     renderSourceIcon: w,
     giftingOrigin: T,
     source: A
-  } = e, R = l.useRef(null), D = l.useRef(null), L = null != C ? C : D, {
+  } = e, R = l.useRef(null), D = l.useRef(null), L = null != x ? x : D, {
     analyticsLocations: M
-  } = (0, u.ZP)(), k = r && true === t.isOwned && null != t.gifterUserId, G = null != t.gifterUserId ? f.default.getUser(t.gifterUserId) : null, U = null != G ? g.ZP.getName(G) : null, B = k && null != G && null != U && "" !== U, F = B ? (0, i.jsx)(c.qEK, {
+  } = (0, u.ZP)(), k = r && true === t.isOwned && null != t.gifterUserId, G = null != t.gifterUserId ? h.default.getUser(t.gifterUserId) : null, U = null != G ? g.ZP.getName(G) : null, B = k && null != G && null != U && "" !== U, F = B ? (0, i.jsx)(c.qEK, {
     src: G.getAvatarURL(true, 48),
     size: c.EFr.SIZE_48,
     "aria-label": U
@@ -76,7 +76,7 @@ function C(e) {
   }), z = () => {
     if (T === O.Wt.DM_CHANNEL_WISHLIST) {
       let e = A === p.lr.WISHLIST ? "wishlist" : "shop";
-      h.default.track(y.rMx.GIFTING_ITEM_CLICKED, {
+      f.default.track(y.rMx.GIFTING_ITEM_CLICKED, {
         sku_id: t.skuId,
         item_source: e,
         wishlist_id: A === p.lr.WISHLIST ? n : null
@@ -112,7 +112,7 @@ function C(e) {
       }), (0, i.jsx)("div", {
         className: j.cardPreview,
         children: E()
-      }), Z && V, x ? H : (0, i.jsx)(c.P3F, {
+      }), Z && V, C ? H : (0, i.jsx)(c.P3F, {
         "aria-label": P,
         focusProps: {
           ringTarget: L

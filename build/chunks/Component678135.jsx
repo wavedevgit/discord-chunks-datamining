@@ -43,8 +43,8 @@ function T(e) {
     pendingNickname: L,
     pendingGlobalName: x,
     pendingThemeColors: M,
-    pendingProfileEffect: j,
-    pendingLegacyUsernameDisabled: k,
+    pendingProfileEffect: k,
+    pendingLegacyUsernameDisabled: j,
     pendingDisplayNameStyles: U,
     avatarClassName: G,
     containerClassName: B,
@@ -73,7 +73,7 @@ function T(e) {
     size: s.EFr.SIZE_80,
     showPending: true
   }), et = (0, h.Ys)({
-    pendingValue: j,
+    pendingValue: k,
     userValue: null == X || null == (t = X._userProfile) ? true : t.profileEffect,
     guildValue: null == X || null == (n = X._guildMemberProfile) ? true : n.profileEffect,
     guildId: null == T ? true : T.id
@@ -135,7 +135,7 @@ function T(e) {
       pendingGlobalName: x,
       pendingBio: R,
       pendingPronouns: P,
-      pendingLegacyUsernameDisabled: k,
+      pendingLegacyUsernameDisabled: j,
       pendingDisplayNameStyles: U,
       isTryItOut: Z,
       hideBioSection: H,

@@ -28,8 +28,8 @@ let _ = (0, Chunk146773.B)(function(e) {
     sortingType: O,
     sortingPosition: v,
     connectChannelDragSource: j,
-    connectChannelDropTarget: x,
-    tabIndex: C
+    connectChannelDropTarget: C,
+    tabIndex: x
   } = e, E = (0, a.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
@@ -73,15 +73,15 @@ let _ = (0, Chunk146773.B)(function(e) {
     })
   }, [E]);
   if (null == E) return null;
-  let Z = (0, f.jo)(c, v),
-    w = (0, f.CN)(E, y, O),
+  let Z = (0, h.jo)(c, v),
+    w = (0, h.CN)(E, y, O),
     T = (0, r.jsx)("div", {
       className: o()(Z, {
         [b.disabled]: w,
         [b.selected]: I
       }),
       "data-dnd-name": E.name,
-      children: (0, r.jsxs)(h.ZP, {
+      children: (0, r.jsxs)(f.ZP, {
         className: b.iconVisibility,
         channel: E,
         guild: t,
@@ -89,15 +89,15 @@ let _ = (0, Chunk146773.B)(function(e) {
         onContextMenu: N,
         forceInteractable: true,
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
-        children: [(0, r.jsx)(f.eP, {
+        children: [(0, r.jsx)(h.eP, {
           channel: E,
-          tabIndex: C
-        }), (0, r.jsx)(f.hR, {
+          tabIndex: x
+        }), (0, r.jsx)(h.hR, {
           channel: E,
           disableManageChannels: _,
-          tabIndex: C
+          tabIndex: x
         })]
       })
     });
-  return P && (T = x(j(T))), T
+  return P && (T = C(j(T))), T
 })

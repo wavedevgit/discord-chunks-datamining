@@ -1,7 +1,7 @@
 /** Chunk was on 39380 **/
 /** chunk id: 248554, original params: e,a,l (module,exports,require) **/
 require.d(exports, {
-  c: () => m,
+  c: () => p,
   i: () => u
 });
 var Chunk54381 = require("./54381.js");
@@ -56,7 +56,7 @@ function u(e) {
   })
 }
 
-function m(e) {
+function p(e) {
   let {
     applicationIds: a,
     size: l = "default",

@@ -15,7 +15,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function f(e) {
   let {
     username: t,
     applicationId: n,
@@ -23,16 +23,16 @@ function h(e) {
     withApplication: i,
     withDefault: l
   } = e;
-  return null != n ? f.intl.format(i, {
+  return null != n ? h.intl.format(i, {
     username: t,
     applicationName: () => r(n)
-  }) : f.intl.format(l, {
+  }) : h.intl.format(l, {
     username: t
   })
 }
 
 function g(e) {
-  var t, n, r, g, m, b, _, y, O, v, j, x, C, E, S;
+  var t, n, r, g, m, b, _, y, O, v, j, C, x, E, S;
   let {
     item: I,
     renderApplication: P
@@ -42,7 +42,7 @@ function g(e) {
       let T = u.ZP.getName(s.default.getUser(null == (m = I.other_users) || null == (g = m[0]) ? true : g.id)),
         A = u.ZP.getName(s.default.getUser(null == (_ = I.other_users) || null == (b = _[1]) ? true : b.id)),
         R = Math.max((null != (O = null == (y = I.other_users) ? true : y.length) ? O : 0) - 2, 0);
-      return f.intl.format(f.t.g5xyIC, {
+      return h.intl.format(h.t.g5xyIC, {
         user: T,
         user2: A,
         count: R
@@ -51,54 +51,54 @@ function g(e) {
       let D = null != (j = null == (v = I.local_id) ? true : v.split("_").pop()) ? j : "unknown";
       return "Update to build ".concat(D, " available!");
     case d.DY.FRIEND_SUGGESTION_CREATED:
-      return a.Z.getRelationshipType(N), p.OGo.PENDING_OUTGOING, null != (x = I.body) ? x : "";
+      return a.Z.getRelationshipType(N), p.OGo.PENDING_OUTGOING, null != (C = I.body) ? C : "";
     case d.DY.GUILD_SCHEDULED_EVENT_STARTED:
       let L = I.guild_scheduled_event_id,
         M = null != L ? l.ZP.getGuildScheduledEvent(L) : null,
         k = null == M ? true : M.name,
-        G = null == (C = o.Z.getGuild(null == M ? true : M.guild_id)) ? true : C.name,
+        G = null == (x = o.Z.getGuild(null == M ? true : M.guild_id)) ? true : x.name,
         U = (0, l.Z2)(null != M ? M : true);
-      return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (E = I.body) ? E : "" : f.intl.format(f.t.AyvfXR, {
+      return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (E = I.body) ? E : "" : h.intl.format(h.t.AyvfXR, {
         event_name: k,
         guild_name: G
       });
     case d.O7.INCOMING_FRIEND_REQUESTS:
-      return h({
+      return f({
         username: Z,
         applicationId: w,
         renderApplication: P,
-        withApplication: f.t["9Dgf1L"],
-        withDefault: f.t.uIomXw
+        withApplication: h.t["9Dgf1L"],
+        withDefault: h.t.uIomXw
       });
     case d.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED:
-      return h({
+      return f({
         username: Z,
         applicationId: w,
         renderApplication: P,
-        withApplication: f.t.nnC1q9,
-        withDefault: f.t["5Uzkdp"]
+        withApplication: h.t.nnC1q9,
+        withDefault: h.t["5Uzkdp"]
       });
     case d.DY.FRIEND_REQUEST_ACCEPTED:
-      return h({
+      return f({
         username: Z,
         applicationId: w,
         renderApplication: P,
-        withApplication: f.t.jXlYiF,
-        withDefault: f.t.McYRBk
+        withApplication: h.t.jXlYiF,
+        withDefault: h.t.McYRBk
       });
     case d.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
-      return i()(null != w, "Expected application id for ".concat(I.type)), f.intl.format(f.t["BB/0vn"], {
+      return i()(null != w, "Expected application id for ".concat(I.type)), h.intl.format(h.t["BB/0vn"], {
         username: Z,
         applicationName: () => P(w)
       });
     case d.O7.INCOMING_GAME_FRIEND_REQUESTS:
-      return i()(null != w, "Expected application id for ".concat(I.type)), f.intl.format(f.t["7cqOLI"], {
+      return i()(null != w, "Expected application id for ".concat(I.type)), h.intl.format(h.t["7cqOLI"], {
         username: Z,
         applicationName: () => P(w)
       });
     case d.DY.GAME_FRIEND_REQUEST_ACCEPTED:
       if (null == w) return I.body;
-      return f.intl.format(f.t.Wi64vN, {
+      return h.intl.format(h.t.Wi64vN, {
         username: Z,
         applicationName: () => P(w)
       })

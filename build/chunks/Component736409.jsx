@@ -33,19 +33,19 @@ let _ = e => {
     } = (0, c.Ws)({
       location: b.dr.CONFLICT_CHECKS
     }), i = u.G6.useSetting(), o = (0, l.e7)([d.Z], () => d.Z.getLayers().includes(g.S9g.USER_SETTINGS)), a = (0, l.e7)([p.Z], () => p.Z.getStatus()), {
-      isOpen: f
+      isOpen: h
     } = (0, s.Z)();
-    if ((n && r || t) && !o && !f && !__OVERLAY__) {
-      if (!i && a === g.Skl.INVISIBLE) return t ? h.NK.ActivityAndStatus : h.NK.ActivityAndStatusNux;
-      if (!i) return t ? h.NK.Activity : h.NK.ActivityNux;
-      if (a === g.Skl.INVISIBLE) return t ? h.NK.Status : h.NK.StatusNux
+    if ((n && r || t) && !o && !h && !__OVERLAY__) {
+      if (!i && a === g.Skl.INVISIBLE) return t ? f.NK.ActivityAndStatus : f.NK.ActivityAndStatusNux;
+      if (!i) return t ? f.NK.Activity : f.NK.ActivityNux;
+      if (a === g.Skl.INVISIBLE) return t ? f.NK.Status : f.NK.StatusNux
     }
     return null
   }({
     isForceShowSharingPopout: n
   });
   (0, i.useEffect)(() => {
-    n && f.default.track(g.rMx.OPEN_POPOUT, {
+    n && h.default.track(g.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
   }, [n]);
@@ -57,7 +57,7 @@ let _ = e => {
         visibleContent: i,
         markAsDismissed: l
       } = e, a = i === o.z.SHARE_ACTIVITY_COACHMARK_V2 || n;
-      return (0, r.jsx)(h.I, {
+      return (0, r.jsx)(f.I, {
         showPopout: a,
         popoutState: O,
         handleClose: () => {

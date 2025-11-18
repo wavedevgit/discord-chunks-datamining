@@ -161,7 +161,7 @@ let R = Chunk473749.memo(function(e) {
   } = e, a = new v.ZP({
     id: t.scheduledMessageId,
     content: t.scheduledMessage.content,
-    author: x.default.getUser(t.userId),
+    author: C.default.getUser(t.userId),
     timestamp: s()(t.sendAtTimestamp).toDate(),
     channel_id: t.scheduledMessage.channelId
   }), {
@@ -194,9 +194,9 @@ let R = Chunk473749.memo(function(e) {
           isError: true, stateMessage: P.intl.string(P.t.j8uIfG)
         };
       default:
-        (0, C.vE)(e)
+        (0, x.vE)(e)
     }
-  }(t.state), f = i.useCallback(() => {
+  }(t.state), h = i.useCallback(() => {
     (0, m.gD)(t.scheduledMessageId).then(() => {
       (0, y.C$)()
     }).catch(e => {
@@ -222,7 +222,7 @@ let R = Chunk473749.memo(function(e) {
         children: d
       }), (0, r.jsxs)("div", {
         className: N.channelMessageAndButtons,
-        children: [(0, r.jsx)(h.Z, {
+        children: [(0, r.jsx)(f.Z, {
           message: a,
           channel: n,
           className: N.message,
@@ -238,7 +238,7 @@ let R = Chunk473749.memo(function(e) {
             "aria-label": P.intl.string(P.t.SBcdAN)
           }), (0, r.jsx)(u.hU, {
             icon: p.k$p,
-            onClick: f,
+            onClick: h,
             "aria-label": P.intl.string(P.t.O3sL8F),
             variant: "icon-only"
           })]

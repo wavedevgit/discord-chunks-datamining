@@ -189,7 +189,7 @@ function q(e) {
     entry: n,
     currentUserActivity: l,
     variant: o
-  } = e, a = (0, u.e7)([L.default], () => L.default.getUser(n.author_id)), s = null != (t = null == l ? true : l.application_id) ? t : n.extra.application_id, c = (0, u.e7)([k.Z], () => null != a ? k.Z.getApplicationActivity(a.id, s) : null, [s, a]), [m, g] = r.useState("unsent");
+  } = e, a = (0, u.e7)([L.default], () => L.default.getUser(n.author_id)), s = null != (t = null == l ? true : l.application_id) ? t : n.extra.application_id, c = (0, u.e7)([D.Z], () => null != a ? D.Z.getApplicationActivity(a.id, s) : null, [s, a]), [m, g] = r.useState("unsent");
   if (!(null != c && (0, E.Z)(c, B.xjy.JOIN))) return null;
   let y = async e => {
     if (null != a && "unsent" === m) {
@@ -243,12 +243,12 @@ function $(e) {
   } = e, o = (0, u.e7)([L.default], () => L.default.getUser(t.author_id)), a = (0, u.e7)([P.Z], () => null != o ? P.Z.getAnyStreamForUser(o.id) : null, [o]), {
     isMobileOnline: s,
     status: c
-  } = (0, u.cj)([k.Z], () => null == o ? {
+  } = (0, u.cj)([D.Z], () => null == o ? {
     isMobileOnline: true,
     status: true
   } : {
-    isMobileOnline: k.Z.isMobileOnline(o.id),
-    status: k.Z.getStatus(o.id)
+    isMobileOnline: D.Z.isMobileOnline(o.id),
+    status: D.Z.getStatus(o.id)
   }, [o]);
   return null == o ? null : (0, i.jsxs)("div", {
     className: Q.row,
@@ -350,7 +350,7 @@ function en(e) {
   (0, v.ZP)(() => {
     (0, Z._)()
   });
-  let o = (0, u.e7)([D.Z], () => null == t ? null : D.Z.getApplicationActivity(t), [t]),
+  let o = (0, u.e7)([k.Z], () => null == t ? null : k.Z.getApplicationActivity(t), [t]),
     d = (0, u.Wu)([M.Z, R.Z, w.Z], () => {
       if (null == t) return [];
       let e = M.Z.nowPlayingCards,
@@ -458,7 +458,7 @@ function er(e) {
 function el(e) {
   let {
     locked: t
-  } = e, n = (0, F.II)(), r = null == n ? true : n.id, l = null == n ? true : n.altId, o = (0, I.Z)(r), a = (0, u.e7)([L.default], () => L.default.getCurrentUser()), s = null != l ? l : r, c = (0, u.e7)([D.Z], () => null == s ? null : D.Z.getApplicationActivity(s), [s]);
+  } = e, n = (0, F.II)(), r = null == n ? true : n.id, l = null == n ? true : n.altId, o = (0, I.Z)(r), a = (0, u.e7)([L.default], () => L.default.getCurrentUser()), s = null != l ? l : r, c = (0, u.e7)([k.Z], () => null == s ? null : k.Z.getApplicationActivity(s), [s]);
   (0, v.ZP)(() => (j.L(), () => j.v()));
   let d = en({
     gamingId: s,

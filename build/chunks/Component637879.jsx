@@ -9,7 +9,7 @@ require.d(exports, {
   V4: () => z,
   YQ: () => W,
   _B: () => R,
-  dI: () => j,
+  dI: () => k,
   do: () => L,
   f: () => w,
   mW: () => D,
@@ -217,7 +217,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     navId: t,
     item: n,
@@ -255,7 +255,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     size: t,
     user: n,
@@ -352,7 +352,7 @@ function Z(e) {
     className: T.answerPill
   }) : (0, r.jsxs)("div", {
     className: T.answerPill,
-    children: [(0, r.jsx)(k, {
+    children: [(0, r.jsx)(j, {
       size: l.EFr.SIZE_16,
       user: a
     }), (0, r.jsx)(l.Text, {
@@ -438,7 +438,7 @@ function H(e) {
   return null != n ? {
     label: (0, r.jsxs)("div", {
       className: T.labelWithElements,
-      children: [(0, r.jsx)(k, {
+      children: [(0, r.jsx)(j, {
         size: l.EFr.SIZE_16,
         user: n
       }), (0, r.jsx)(U, {
@@ -562,7 +562,7 @@ function K(e) {
     channel: i,
     className: T.itemIcon
   });
-  if (null != a) return (0, r.jsx)(k, {
+  if (null != a) return (0, r.jsx)(j, {
     size: l.EFr.SIZE_20,
     user: a,
     className: T.itemIcon

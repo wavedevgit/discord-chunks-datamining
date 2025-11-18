@@ -72,8 +72,8 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = "???",
-  k = e => {
+let k = "???",
+  j = e => {
     let {
       analyticsLocations: t,
       startingScreen: i
@@ -104,9 +104,9 @@ class U extends Chunk473749.Component {
   }
   getTitleText() {
     let e = Chunk594174.default.getUser(this.trialOffer.user_id),
-      t = null != module ? module.username : j,
+      t = null != module ? module.username : k,
       n = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-      r = null != require ? require.username : j;
+      r = null != require ? require.username : k;
     return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? Chunk388032.intl.formatToPlainString(Chunk388032.t["Mptau/"], {
       username: exports
     }) : this.offerExpired ? this.isSender ? Chunk388032.intl.string(Chunk388032.t["9SNdf4"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["H0+MxK"], {
@@ -170,9 +170,9 @@ class U extends Chunk473749.Component {
   render() {
     let e = () => {
         let e = Chunk594174.default.getUser(this.trialOffer.user_id),
-          t = null != module ? module.username : j,
+          t = null != module ? module.username : k,
           n = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-          r = null != require ? require.username : j;
+          r = null != require ? require.username : k;
         if (this.isSender)
           if (this.recipientHasNitro && true === this.trialOffer.redeemed_at) return {
             headerText: Chunk388032.intl.formatToPlainString(Chunk388032.t.qABVhL, {
@@ -216,7 +216,7 @@ class U extends Chunk473749.Component {
         variant: "primary",
         disabled: false,
         size: "md",
-        onClick: () => k({
+        onClick: () => j({
           analyticsLocations: [],
           startingScreen: this.referralsSent.size === Chunk796634.Q ? Chunk656139.SelectFriendsModalScreens.REMINDER : Chunk656139.SelectFriendsModalScreens.SELECT_FRIENDS
         }),

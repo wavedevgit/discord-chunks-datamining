@@ -115,7 +115,7 @@ class O extends Chunk317770.Z {
       })
     }), b(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = u.default.getCurrentUser();
-      null != e && e.verified && !(0, p.I5)(e) && h.Z.shouldFetchCheckoutRecovery() && await (0, f.o)()
+      null != e && e.verified && !(0, p.I5)(e) && f.Z.shouldFetchCheckoutRecovery() && await (0, h.o)()
     }), b(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e

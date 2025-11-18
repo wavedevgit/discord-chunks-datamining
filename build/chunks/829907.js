@@ -2,19 +2,19 @@
 /** chunk id: 829907, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DH: () => N,
+  DH: () => R,
   H8: () => A,
   HD: () => f,
   O0: () => p,
-  PD: () => R,
+  PD: () => P,
   P_: () => E,
   aW: () => _,
   hj: () => T,
   hs: () => h,
-  qT: () => P,
+  qT: () => D,
   qc: () => S,
   sS: () => g
-}), require("./388685.js");
+}), require("./388685.js"), require("./642613.js");
 var Chunk593472 = require("./593472.js"),
   Chunk710845 = require("./710845.js"),
   Chunk594190 = require("./594190.js"),
@@ -120,19 +120,24 @@ function A(e) {
 }
 let C = new Set([Chunk593472.Jx.UNKNOWN, Chunk593472.Jx.FULLSCREEN]);
 
-function N(e, t, n) {
+function N(e) {
+  let t = Object.keys(e).map(Number).sort((e, t) => t - e);
+  return 0 === t.length ? r.Jx.UNKNOWN : e[t.length > 1 ? t[1] : t[0]]
+}
+
+function R(e, t, n) {
   if (e.overlayMethod !== c.gl.OutOfProcess && e.overlayMethod !== c.gl.OutOfProcessLimitedInteraction) returnfalse;
   if (!n) returntrue;
   switch (t) {
     case r.Jx.UNKNOWN:
-      return C.has(e.previousFullscreenType);
+      return C.has(N(e.fullscreenHistory));
     case r.Jx.FULLSCREEN:
       returntrue
   }
   returnfalse
 }
 
-function R(e, t) {
+function P(e, t) {
   if (!t) returnfalse;
   switch (e) {
     case r.Jx.UNKNOWN:
@@ -143,7 +148,7 @@ function R(e, t) {
   returntrue
 }
 
-function P(e) {
+function D(e) {
   return null == e ? {
     source: c.d0.DEFAULT,
     enabledOOP: false,

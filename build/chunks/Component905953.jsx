@@ -76,7 +76,8 @@ function y(e) {
                 type: r.l.APPLICATION
               })), E({
                 action: "WIDGET_ADDED",
-                widgetEdited: r.l.APPLICATION
+                widgetEdited: r.l.APPLICATION,
+                applicationId: N.id
               }), (0, f.L$)(j.qb.WIDGET_ADDED)
             }).finally(() => S(false))
           },

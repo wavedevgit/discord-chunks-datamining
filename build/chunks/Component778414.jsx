@@ -99,7 +99,7 @@ function B() {
   })
 }
 
-function F(e) {
+function U(e) {
   let {
     user: t
   } = e, {
@@ -125,7 +125,7 @@ function F(e) {
   })
 }
 
-function U(e) {
+function F(e) {
   let {
     user: t,
     guildId: n,
@@ -149,7 +149,7 @@ function U(e) {
     null !== C.current && T()
   }, [T]);
   let k = () => (0, r.jsxs)(r.Fragment, {
-    children: [c && s && (0, r.jsx)(B, {}), c && (0, r.jsx)(F, {
+    children: [c && s && (0, r.jsx)(B, {}), c && (0, r.jsx)(U, {
       user: t
     }), l.map((e, i) => (0, r.jsx)(G, {
       widget: e,
@@ -185,7 +185,7 @@ function W(e) {
     fade: true,
     children: [(0, r.jsx)(T.Z, {
       scrollerRef: a
-    }), (0, r.jsx)(U, L({
+    }), (0, r.jsx)(F, L({
       user: t
     }, n))]
   })

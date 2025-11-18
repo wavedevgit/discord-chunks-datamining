@@ -175,16 +175,16 @@ class en extends Chunk98597.ZP {
       locked: s,
       sorting: d,
       isUserOver: p,
-      connectChannelDropTarget: f,
-      connectChannelDragSource: h,
+      connectChannelDropTarget: h,
+      connectChannelDragSource: f,
       connectUserDropTarget: g,
       connectDragPreview: m,
       canReorderChannel: b,
       canMoveMembers: _,
       showTutorial: v,
       hasActiveEvent: j,
-      embeddedApps: x,
-      isSubscriptionGated: C,
+      embeddedApps: C,
+      isSubscriptionGated: x,
       isFavoriteSuggestion: E,
       withGuildIcon: S,
       hasStartTime: I
@@ -417,15 +417,15 @@ function ei(e) {
       bypassLimit: k.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), f = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), h = (0, g.ZP)(n), m = (0, v.ZP)(n), y = (0, P.qY)(n.id), {
+  }), h = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), f = (0, g.ZP)(n), m = (0, v.ZP)(n), y = (0, P.qY)(n.id), {
     enabled: O
   } = b.W.useExperiment({
     guildId: t.id,
     location: "VoiceChannel"
   }), j = (0, a.e7)([_.Z], () => !!O && null != _.Z.getStartTime(n), [n, O]), {
-    isSubscriptionGated: x,
+    isSubscriptionGated: C,
     needSubscriptionToAccess: E
-  } = (0, I.Z)(n.id), S = (0, C.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == S ? true : S.channelId) === n.id, {
+  } = (0, I.Z)(n.id), S = (0, x.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == S ? true : S.channelId) === n.id, {
     enableHangStatus: A,
     showEmptyChannelTopic: R
   } = (0, Z.bN)({
@@ -443,18 +443,18 @@ function ei(e) {
     isChannelSelected: o,
     isChannelCollapsed: s,
     voiceStates: c,
-    isSubscriptionGated: x,
+    isSubscriptionGated: C,
     needSubscriptionToAccess: E,
     enableConnectedUserLimit: true,
     enableActivities: true
   }), V = T && null == F;
   return (0, r.jsx)(er, et(ee({
     channelName: m,
-    embeddedApps: h,
+    embeddedApps: f,
     embeddedActivityType: q.IIU.PLAYING,
-    video: f,
+    video: h,
     hasActiveEvent: null != y,
-    isSubscriptionGated: x,
+    isSubscriptionGated: C,
     needSubscriptionToAccess: E
   }, u, p, e), {
     connected: T,

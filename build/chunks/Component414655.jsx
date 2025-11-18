@@ -119,7 +119,7 @@ function D(e) {
   }, [k]), B = (0, v.Z)({
     wishlistId: n,
     onAction: G
-  }), F = i.useCallback(() => {
+  }), U = i.useCallback(() => {
     var e;
     if (null == n) return;
     let t = Z ? a.f.PRIVATE : a.f.PUBLIC;
@@ -131,7 +131,7 @@ function D(e) {
       analyticsLocations: k,
       hasThirdPartySku: r
     })
-  }, [n, Z, k, L]), U = i.useCallback(() => {
+  }, [n, Z, k, L]), F = i.useCallback(() => {
     (0, o.pT)(), (0, f.mK)({
       analyticsLocations: k,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
@@ -163,7 +163,7 @@ function D(e) {
           size: "sm",
           icon: s.EOn,
           text: S.intl.string(S.t.ZbS4QB),
-          onClick: U
+          onClick: F
         }), D && (0, r.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
@@ -219,12 +219,12 @@ function D(e) {
       }), N ? (0, r.jsx)(C, {
         isSocialLayerStorefrontEnabled: D,
         isWishlistPublic: Z,
-        handleOpenShop: U,
+        handleOpenShop: F,
         handleOpenGameShop: W,
-        handleToggleWishlistVisibility: F
+        handleToggleWishlistVisibility: U
       }) : (0, r.jsx)(T, {
         isSocialLayerStorefrontEnabled: D,
-        handleOpenShop: U,
+        handleOpenShop: F,
         handleOpenGameShop: W
       })]
     }), (0, r.jsx)(x.Z, {

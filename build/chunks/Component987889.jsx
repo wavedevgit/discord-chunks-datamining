@@ -42,7 +42,7 @@ function j(e) {
   return e
 }
 
-function x(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = {
+let x = {
   [Chunk982183.ln.MENTION]: [Chunk982183.r0.SETTINGS],
   [Chunk982183.ln.REPLY]: [Chunk982183.r0.SETTINGS],
   [Chunk982183.ln.REACTION]: [Chunk982183.r0.SETTINGS],
@@ -103,9 +103,9 @@ function S(e) {
     Menu: c,
     interactionType: u,
     actionType: d
-  } = e, p = (0, g.fJ)(), [f, h] = (0, i.useState)(false), [m, _] = (0, i.useState)(false), y = (0, i.useRef)(null), {
+  } = e, p = (0, g.fJ)(), [h, f] = (0, i.useState)(false), [m, _] = (0, i.useState)(false), y = (0, i.useRef)(null), {
     openMenu: O,
-    closeMenu: C
+    closeMenu: x
   } = (0, b.z)();
   return (0, r.jsx)(a.yRy, {
     shouldShow: m,
@@ -115,7 +115,7 @@ function S(e) {
     autoInvert: false,
     targetElementRef: y,
     onRequestClose: () => {
-      _(false), C(n.id, d)
+      _(false), x(n.id, d)
     },
     renderPopout: e => (0, r.jsx)(a.VqE, {
       onClick: e => e.stopPropagation(),
@@ -131,8 +131,8 @@ function S(e) {
       position: "top",
       spacing: 4,
       asContainer: true,
-      onTooltipShow: () => h(true),
-      onTooltipHide: () => h(false),
+      onTooltipShow: () => f(true),
+      onTooltipHide: () => f(false),
       children: (0, r.jsx)(a.P3F, {
         innerRef: y,
         className: v.action,
@@ -143,13 +143,13 @@ function S(e) {
             viewId: p
           }), e.stopPropagation();
           let t = !m;
-          _(t), t ? O(n.id, d) : C(n.id, d)
+          _(t), t ? O(n.id, d) : x(n.id, d)
         },
-        children: (0, r.jsx)(s, x(j({}, e), {
+        children: (0, r.jsx)(s, C(j({}, e), {
           message: n,
           "aria-label": l,
           className: v.actionIcon,
-          size: f ? "sm" : "xs"
+          size: h ? "sm" : "xs"
         }))
       })
     })
@@ -175,17 +175,17 @@ let I = {
   [Chunk982183.r0.BOOKMARK]: {
     type: "menu",
     label: Chunk388032.intl.string(Chunk388032.t["9p3D9p"]),
-    Icon: e => null != f.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.plf, j({}, e)) : (0, r.jsx)(a.gt9, j({}, e)),
+    Icon: e => null != h.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.plf, j({}, e)) : (0, r.jsx)(a.gt9, j({}, e)),
     interactionType: Chunk804932.s_.BOOKMARK,
     Menu: e => {
       let {
         message: t,
         renderPopoutProps: n
-      } = e, i = (0, l.e7)([f.Z], () => f.Z.getSavedMessage(t.channel_id, t.id)), o = (0, d.x)({
+      } = e, i = (0, l.e7)([h.Z], () => h.Z.getSavedMessage(t.channel_id, t.id)), o = (0, d.x)({
         message: t,
         savedMessage: i
       });
-      return (0, r.jsxs)(a.v2r, x(j({}, n), {
+      return (0, r.jsxs)(a.v2r, C(j({}, n), {
         navId: "message-reminder-create",
         "aria-label": O.intl.string(O.t.mJ3P0N),
         onClose: n.closePopout,
@@ -223,11 +223,11 @@ let I = {
         channel: t,
         renderPopoutProps: n
       } = e;
-      return t.isThread() ? (0, r.jsx)(h.Z, x(j({}, n), {
+      return t.isThread() ? (0, r.jsx)(f.Z, C(j({}, n), {
         channel: t,
         navId: "thread-context",
         label: O.intl.string(O.t["1NBjqb"])
-      })) : (0, r.jsx)(u.Z, x(j({}, n), {
+      })) : (0, r.jsx)(u.Z, C(j({}, n), {
         channel: t,
         navId: "channel-context",
         label: O.intl.string(O.t.Xm41aV)
@@ -246,7 +246,7 @@ function P(e) {
     return (0, i.useMemo)(() => {
       let e = _.ln.MENTION,
         r = new Set;
-      return t && r.add(_.r0.ACK), n && r.add(_.r0.BOOKMARK), C[e].forEach(e => r.add(e)), Array.from(r)
+      return t && r.add(_.r0.ACK), n && r.add(_.r0.BOOKMARK), x[e].forEach(e => r.add(e)), Array.from(r)
     }, [e, t, n])
   })(t, l);
   return (0, r.jsx)(a.Kqy, {
@@ -259,12 +259,12 @@ function P(e) {
       let i = I[e];
       switch (i.type) {
         case "standard":
-          return (0, r.jsx)(E, x(j({}, i), {
+          return (0, r.jsx)(E, C(j({}, i), {
             actionType: e,
             message: t
           }), e);
         case "menu":
-          return (0, r.jsx)(S, x(j({}, i), {
+          return (0, r.jsx)(S, C(j({}, i), {
             actionType: e,
             channel: n,
             message: t

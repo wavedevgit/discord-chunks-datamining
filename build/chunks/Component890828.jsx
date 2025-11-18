@@ -52,18 +52,18 @@ let P = e => [e.userId, ... function(e) {
     },
     throttleMs: 100
   },
-  D = {
+  k = {
     searchType: Chunk886118.S.FUZZY,
     sortType: Chunk886118.E.JARO_WINKLER,
     searchStringGenerator: P,
     throttleMs: 100
   },
-  k = Chunk473749.memo(function(e) {
+  D = Chunk473749.memo(function(e) {
     let {
       channel: t,
       query: n
     } = e, [l] = (0, a.e7)([C.Z], () => [C.Z.getVoiceStatesForChannel(t.id), C.Z.getVoiceStateVersion()], [t.id], N.Q), [o, u] = r.useState([]);
-    (0, O.BO)(n, Object.values(l), u, D);
+    (0, O.BO)(n, Object.values(l), u, k);
     let d = (0, a.Wu)([C.Z, I.default, v.Z, x.Z], () => Object.values(C.Z.getVoiceStatesForChannel(t.id)).map(e => I.default.getUser(e.userId)).filter(j.lm).sort((e, t) => {
         var i, r, l, a;
         if (o.length > 0 && "" !== n.trim()) {
@@ -162,7 +162,7 @@ let P = e => [e.userId, ... function(e) {
         })]
       }), (0, i.jsx)("div", {
         className: T.channelItemAvatars,
-        children: (0, i.jsx)(k, {
+        children: (0, i.jsx)(D, {
           channel: m,
           currentVoiceChannel: l,
           query: f

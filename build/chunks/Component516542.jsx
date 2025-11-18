@@ -51,7 +51,7 @@ function v(e) {
     A = r.useCallback(e => {
       "Escape" === e.key && o.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    D = r.useCallback(() => (C.length > b || (l.Z.sendMessage(v.id, p.ZP.parse(v, C), false, {
+    k = r.useCallback(() => (C.length > b || (l.Z.sendMessage(v.id, p.ZP.parse(v, C), false, {
       location: y.dy.OVERLAY
     }), o.Z.setInputLocked(true, m.Z.getTargetPID()), o.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == E || E(C)), Promise.resolve({
       shouldClear: false,
@@ -72,7 +72,7 @@ function v(e) {
       onBlur: T,
       onFocus: w,
       focused: N,
-      onSubmit: D,
+      onSubmit: k,
       onKeyDown: A,
       autoCompletePosition: "bottom",
       disableThemedBackground: true

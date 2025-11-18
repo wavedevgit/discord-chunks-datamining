@@ -78,9 +78,9 @@ let N = {
   L = new Map,
   x = new Map,
   M = new Map,
-  j = new Map;
+  k = new Map;
 
-function k(e, t) {
+function j(e, t) {
   return "".concat(t, ":").concat(e)
 }
 let U = new Map,
@@ -115,7 +115,7 @@ function J(e) {
   let y = (0, E.p)(u),
     O = null != y && null != (n = x.get(y)) ? n : R,
     v = null != O && 0 === O.length,
-    I = null != (r = j.get(u.id)) ? r : R,
+    I = null != (r = k.get(u.id)) ? r : R,
     T = I.find(e => e.applicationId === d),
     A = p.map(e => e.userId),
     N = c.default.getId(),
@@ -123,7 +123,7 @@ function J(e) {
     D = null == (t = p.find(e => e.userId === N)) ? true : t.sessionId,
     M = p.some(e => (0, g.J)(e)),
     G = w.get(d),
-    B = U.get(k(null != y ? y : null, d)),
+    B = U.get(j(null != y ? y : null, d)),
     Z = null == B ? true : B.launchParams,
     F = {
       applicationId: d,
@@ -158,7 +158,7 @@ function J(e) {
     applicationId: d
   }));
   let H = I.filter(e => e.applicationId !== d);
-  if (A.length > 0 && H.push(F), j.set(u.id, H), null != y) {
+  if (A.length > 0 && H.push(F), k.set(u.id, H), null != y) {
     let e = (null != (s = x.get(y)) ? s : []).filter(e => e.applicationId !== d),
       t = Q((0, E.j)(u)),
       n = (null != (l = L.get(t)) ? l : []).filter(e => e.applicationId !== d || e.location.id !== u.id);
@@ -198,7 +198,7 @@ function et(e) {
   let {
     guilds: t
   } = e;
-  x.clear(), L.clear(), j.clear(), M.clear(), t.forEach(e => $(e));
+  x.clear(), L.clear(), k.clear(), M.clear(), t.forEach(e => $(e));
   let n = c.default.getId();
   for (let e of Array.from(w.values())) eP.getEmbeddedActivitiesForLocation(e.location).some(t => t.applicationId === e.applicationId && t.launchId === e.launchId && t.userIds.has(n)) || ee(e)
 }
@@ -219,7 +219,7 @@ function er(e) {
   let a = Q(r.guild_id),
     o = (null != (n = L.get(a)) ? n : []).filter(e => (0, E.p)(e.location) !== r.id);
   L.set(a, o), i.forEach(e => {
-    j.delete(e.location.id)
+    k.delete(e.location.id)
   }), M.set(r.id, [])
 }
 
@@ -230,7 +230,7 @@ function ei(e) {
     compositeInstanceId: r,
     location: i,
     participants: a
-  } = e, o = (0, E.p)(i), s = U.get(k(null != o ? o : null, t));
+  } = e, o = (0, E.p)(i), s = U.get(j(null != o ? o : null, t));
   J({
     location: i,
     applicationId: t,
@@ -395,7 +395,7 @@ function ep(e) {
     channelId: a,
     inviterUserId: o
   } = e;
-  U.set(k(a, t), {
+  U.set(j(a, t), {
     isLaunching: true,
     componentId: n,
     inviterUserId: o,
@@ -408,7 +408,7 @@ function eh(e) {
     applicationId: t,
     channelId: n,
     proxyTicket: r
-  } = e, i = k(n, t), a = U.get(i);
+  } = e, i = j(n, t), a = U.get(i);
   null != a && U.set(i, C(S({}, a), {
     proxyTicket: r
   }))
@@ -467,7 +467,7 @@ function eO(e) {
     applicationId: t,
     channelId: n
   } = e;
-  U.delete(k(n, t))
+  U.delete(j(n, t))
 }
 
 function ev(e) {
@@ -554,7 +554,7 @@ class eR extends(i = Chunk442837.ZP.PersistedStore) {
   }
   getEmbeddedActivitiesForLocation(e) {
     var t;
-    return null != (t = j.get(e.id)) ? t : R
+    return null != (t = k.get(e.id)) ? t : R
   }
   getEmbeddedActivitiesForStartingChannel(e) {
     var t;
@@ -625,7 +625,7 @@ class eR extends(i = Chunk442837.ZP.PersistedStore) {
   getEmbeddedActivityForUserId(e, t) {
     let n;
     if (true !== t) {
-      l: for (let [r, i] of j)
+      l: for (let [r, i] of k)
         for (let r of i)
           if (r.applicationId === t && r.userIds.has(e)) {
             n = r;
@@ -637,7 +637,7 @@ class eR extends(i = Chunk442837.ZP.PersistedStore) {
     return N.everLaunchedActivities.has(e)
   }
   getLaunchState(e, t) {
-    if (null != e) return U.get(k(null != t ? t : null, e))
+    if (null != e) return U.get(j(null != t ? t : null, e))
   }
   getLaunchStates() {
     return U

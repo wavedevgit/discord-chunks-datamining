@@ -47,7 +47,7 @@ function T(e) {
     }
   }).filter(_.lm).flat())], [t, o]), T = (0, s.e7)([d.Z], () => d.Z.canFetchDetectableGames()), [A, C] = (0, i.useState)([]), {
     themeType: N
-  } = (0, E.z)(), R = N === b.l.SIDEBAR;
+  } = (0, E.z)(), R = N === b.l.SIDEBAR, P = (0, i.useRef)(false);
   return (0, i.useEffect)(() => {
     if (T) return void c.Z.getDetectableGames();
     C(u.map(e => d.Z.getDetectableGame(e)).filter(e => null != e).map(e => {
@@ -60,7 +60,11 @@ function T(e) {
         name: e.name
       }
     }).filter(e => "" !== e.image).slice(0, v))
-  }, [u, T]), (0, r.jsx)(l.P3F, {
+  }, [u, T]), (0, i.useEffect)(() => {
+    0 !== A.length && (P.current || (a({
+      action: "VIEW_GAME_WIDGET_BREADCRUMB"
+    }), P.current = true))
+  }, [a, A.length]), (0, r.jsx)(l.P3F, {
     "aria-label": y.intl.string(y.t.JjiwFx),
     onClick: () => {
       a({

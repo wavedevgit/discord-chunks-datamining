@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk438835 = require("./438835.js");
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,7 +22,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = () => (0, Chunk54381.jsxs)("div", {
+let f = () => (0, Chunk54381.jsxs)("div", {
   className: Chunk438835.symbol,
   children: [(0, Chunk54381.jsx)("div", {
     className: Chunk438835.symbolBackground
@@ -132,13 +132,13 @@ class g extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_renderSecondaryTimeout", null), f(this, "_doneTimeout", null), f(this, "state", {
+    super(...e), h(this, "_renderSecondaryTimeout", null), h(this, "_doneTimeout", null), h(this, "state", {
       animating: false,
       renderSecondary: false,
       scale: s().random(.6, 1, true),
       offsetX: s().random(0, 140, false) - 70,
       offsetY: s().random(0, 140, false) - 70
-    }), f(this, "done", () => {
+    }), h(this, "done", () => {
       this.props.onAnimationComplete(this.props.componentId)
     })
   }
@@ -165,13 +165,13 @@ class m extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_timeouts", []), f(this, "children", []), f(this, "state", {
+    super(...e), h(this, "_timeouts", []), h(this, "children", []), h(this, "state", {
       explosions: 0,
       visible: false
-    }), f(this, "setTimeout", (e, t) => {
+    }), h(this, "setTimeout", (e, t) => {
       let n = setTimeout(e, t);
       return this._timeouts.push(n), n
-    }), f(this, "removeExplosion", e => {
+    }), h(this, "removeExplosion", e => {
       let t = this.children,
         n = t.findIndex(t => {
           if (t.type !== g) returnfalse;
@@ -179,7 +179,7 @@ class m extends Chunk473749.PureComponent {
           return null != n.componentId && n.componentId === e
         });
       n >= 0 && t.splice(n, 1), this.forceUpdate()
-    }), f(this, "createExplosion", () => {
+    }), h(this, "createExplosion", () => {
       let e = this.children,
         t = window.innerWidth / 2 | 0,
         n = window.innerHeight / 2 | 0;
@@ -194,9 +194,9 @@ class m extends Chunk473749.PureComponent {
           explosions: this.state.explosions + 1
         })
       } else this.setTimeout(this.addSymbol, 750)
-    }), f(this, "addSymbol", () => {
-      this.children = [(0, r.jsx)(h, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
-    }), f(this, "delayedClose", () => {
+    }), h(this, "addSymbol", () => {
+      this.children = [(0, r.jsx)(f, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
+    }), h(this, "delayedClose", () => {
       this.props.handleDemonClose()
     })
   }

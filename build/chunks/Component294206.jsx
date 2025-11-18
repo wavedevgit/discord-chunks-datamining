@@ -47,7 +47,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,7 +72,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -165,7 +165,7 @@ function z(e) {
   } = (0, h.ZP)(), s = (0, l.e7)([S.Z], () => S.Z.isFavoriteSound(t.soundId), [t.soundId]), c = i.useCallback(e => {
     e.stopPropagation(), e.currentTarget.blur(), s ? (0, T.hs)(t.soundId) : ((0, C.lF)({
       sound: t,
-      location: U(j({}, a), {
+      location: U(k({}, a), {
         object: P.qAy.SOUNDBOARD_SOUND
       })
     }), (0, T.TB)(t.soundId))
@@ -208,7 +208,7 @@ let X = Chunk473749.forwardRef(function(e, t) {
       channel: S,
       containerClassName: P,
       className: M,
-      focused: k,
+      focused: j,
       forceSecondaryActions: B = false,
       interactive: W = true,
       enableSecondaryActions: X = false,
@@ -240,9 +240,9 @@ let X = Chunk473749.forwardRef(function(e, t) {
     eL(true)
   }, []), eM = i.useCallback(() => {
     eL(false)
-  }, []), ej = eN && en;
+  }, []), ek = eN && en;
 
-  function ek() {
+  function ej() {
     Q || eh(ee)
   }
 
@@ -250,7 +250,7 @@ let X = Chunk473749.forwardRef(function(e, t) {
     if (eT && !eO && (ev.current = Math.min(ev.current + H, V), Math.random() < ev.current && eE(ey.x, ey.y, true, true, {
         sprite: D.vv
       })), null != $) return void $(e);
-    ek()
+    ej()
   }
   let eG = (0, r.jsx)("div", {
       onMouseEnter: ex,
@@ -261,7 +261,7 @@ let X = Chunk473749.forwardRef(function(e, t) {
         disabled: eN && !B
       })
     }),
-    eB = e => Q || eN ? ej ? (0, r.jsx)(f.mBM, {
+    eB = e => Q || eN ? ek ? (0, r.jsx)(f.mBM, {
       size: "xs",
       color: "currentColor",
       className: o()(x.primaryIcon, x.lockIcon, e, {
@@ -280,7 +280,7 @@ let X = Chunk473749.forwardRef(function(e, t) {
         disabled: !W && !B
       })
     }),
-    eF = () => ej && !er ? (0, r.jsxs)(r.Fragment, {
+    eF = () => ek && !er ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: x.buttonOverlayBackground
       }), eB(x.primaryIconTopLevel), (0, r.jsx)("div", {
@@ -356,8 +356,8 @@ let X = Chunk473749.forwardRef(function(e, t) {
       position: eD,
       shouldShow: !ew,
       delay: 500,
-      children: (0, r.jsxs)(f.kL8, U(j({}, ec), {
-        buttonProps: U(j({}, eA), {
+      children: (0, r.jsxs)(f.kL8, U(k({}, ec), {
+        buttonProps: U(k({}, eA), {
           id: eS,
           role: "button"
         }),
@@ -373,7 +373,7 @@ let X = Chunk473749.forwardRef(function(e, t) {
           [x.buttonDisabled]: !W && !B,
           [x.premiumDisabled]: eN && !B,
           [x.buttonDisabledSecondaryActionsEnabled]: !W && B,
-          [x.focused]: W && k
+          [x.focused]: W && j
         }, M),
         onClick: e => {
           null == eU || eU(e)

@@ -49,10 +49,10 @@ function w(e) {
     asset: (0, r.jsx)(b.g, {
       className: l()(S.image, S.levelImage)
     }),
-    title: E.intl.formatToPlainString(C.default["Zg/m9K"], {
+    title: E.intl.formatToPlainString(x.default["Zg/m9K"], {
       perkName: n.title
     }),
-    body: E.intl.formatToPlainString(C.default["1EGXSK"], {
+    body: E.intl.formatToPlainString(x.default["1EGXSK"], {
       perkName: n.title
     }),
     actions: [{
@@ -74,8 +74,8 @@ function T(e) {
   return (0, r.jsx)(c.Mb, {
     targetElementRef: i,
     assetUrl: P.Z,
-    title: E.intl.string(C.default.QpQBPQ),
-    body: E.intl.string(C.default["6hn0xF"]),
+    title: E.intl.string(x.default.QpQBPQ),
+    body: E.intl.string(x.default["6hn0xF"]),
     action: {
       text: E.intl.string(E.t.RzWDqY),
       variant: "primary",
@@ -107,15 +107,15 @@ function A(e) {
     return null == (e = p.Z.getGuild(t)) ? true : e.name
   }), {
     onActivate: c
-  } = (0, _.ZP)(t, n[0]), d = (0, h.Z)(n[0], true);
+  } = (0, _.ZP)(t, n[0]), d = (0, f.Z)(n[0], true);
   if (0 === n.length) return;
-  let f = n.length >= 3 ? E.intl.formatToPlainString(C.default["6Sv+3M"], {
+  let h = n.length >= 3 ? E.intl.formatToPlainString(x.default["6Sv+3M"], {
       perk: n[0].title,
       perk2: n[1].title,
       perk3: n[2].title
-    }) : 2 === n.length ? E.intl.formatToPlainString(C.default.wcQOqC, {
+    }) : 2 === n.length ? E.intl.formatToPlainString(x.default.wcQOqC, {
       perks: "".concat(n[0].title, " & ").concat(n[1].title)
-    }) : E.intl.formatToPlainString(C.default.ZF8NT6, {
+    }) : E.intl.formatToPlainString(x.default.ZF8NT6, {
       perk: n[0].title
     }),
     g = 1 === n.length;
@@ -128,12 +128,12 @@ function A(e) {
       src: d,
       className: S.image
     }),
-    title: E.intl.formatToPlainString(C.default.LmpChE, {
+    title: E.intl.formatToPlainString(x.default.LmpChE, {
       guildName: s
     }),
-    body: f,
+    body: h,
     actions: [{
-      text: g ? E.intl.string(C.default.gSxlHf) : E.intl.string(E.t.RzWDqY),
+      text: g ? E.intl.string(x.default.gSxlHf) : E.intl.string(E.t.RzWDqY),
       variant: "primary",
       onClick: e => {
         g ? c(e) : (0, m.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS)
@@ -153,8 +153,8 @@ function R(e) {
   } = e, a = n.find(e => e.skuId === o.A$);
   if (null != a) return (0, r.jsx)(M, {
     targetElementRef: i,
-    title: E.intl.string(C.default.Ygpx4Q),
-    body: E.intl.string(C.default.mmNkUA),
+    title: E.intl.string(x.default.Ygpx4Q),
+    body: E.intl.string(x.default.mmNkUA),
     size: "video",
     asset: Z.Z,
     actions: [{
@@ -169,8 +169,8 @@ function R(e) {
   let s = n.find(e => y.NL.has(e.skuId));
   return null != s ? (0, r.jsx)(M, {
     targetElementRef: i,
-    title: E.intl.string(C.default["kA2c+n"]),
-    body: E.intl.string(C.default.TUilLj),
+    title: E.intl.string(x.default["kA2c+n"]),
+    body: E.intl.string(x.default.TUilLj),
     asset: (0, r.jsx)("img", {
       alt: "",
       src: N.Z,
@@ -201,8 +201,8 @@ function D(e) {
       src: I.Z,
       className: l()(S.image, S.gameServerHostingImage)
     }),
-    title: E.intl.string(n === f.J.GAME_SERVER_HOSTING_AVAILABLE ? x.default.wXLChx : x.default["8z8RpY"]),
-    body: n === f.J.GAME_SERVER_HOSTING_AVAILABLE ? E.intl.string(x.default.lZ6m7Q) : E.intl.format(x.default["IQ1E+d"], {
+    title: E.intl.string(n === h.J.GAME_SERVER_HOSTING_AVAILABLE ? C.default.wXLChx : C.default["8z8RpY"]),
+    body: n === h.J.GAME_SERVER_HOSTING_AVAILABLE ? E.intl.string(C.default.lZ6m7Q) : E.intl.format(C.default["IQ1E+d"], {
       boostCount: a
     }),
     actions: [{
@@ -228,8 +228,8 @@ function L(e) {
       src: I.Z,
       className: l()(S.image, S.gameServerHostingImage)
     }),
-    title: E.intl.string(x.default["eX64+z"]),
-    body: E.intl.string(x.default.NpgfEB),
+    title: E.intl.string(C.default["eX64+z"]),
+    body: E.intl.string(C.default.NpgfEB),
     actions: [{
       text: E.intl.string(E.t.RzWDqY),
       variant: "primary",

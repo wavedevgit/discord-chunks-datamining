@@ -151,12 +151,12 @@ function L(e) {
     recentlyUsedEmojis: y,
     analyticsOverride: S,
     ref: C
-  } = e, L = (0, f.Dt)(), [x, M] = i.useState(false), j = (0, p.wC)(t.guild_id), k = (0, s.uniqBy)([...j, ...P], "name").filter(e => !b.ZP.isEmojiFilteredOrLocked({
+  } = e, L = (0, f.Dt)(), [x, M] = i.useState(false), k = (0, p.wC)(t.guild_id), j = (0, s.uniqBy)([...k, ...P], "name").filter(e => !b.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: R
   })).slice(0, O.e5);
-  null != y && y.length > 0 && k.splice(k.length - 1, 1, y[0]);
+  null != y && y.length > 0 && j.splice(j.length - 1, 1, y[0]);
   let U = e => {
       M(e), null == h || h(e)
     },
@@ -211,7 +211,7 @@ function L(e) {
         className: T.slotsContainer,
         children: (0, r.jsx)("div", {
           className: o()(T.slots, T.slotsWide),
-          children: k.map(e => {
+          children: j.map(e => {
             let n = b.ZP.isEmojiDisabled({
               emoji: e,
               channel: t,
