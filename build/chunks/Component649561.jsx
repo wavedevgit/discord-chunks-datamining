@@ -99,11 +99,11 @@ class k extends Chunk473749.PureComponent {
             onConfirmClick: this.handleReload,
             onDismissClick: this.hideNotification,
             locked: false
-          }), n && null != e ? (0, i.jsxs)(x.ZP, {
+          }), n && null != e ? (0, i.jsxs)(j.ZP, {
             className: P.stackTrace,
-            children: [(0, i.jsx)(x.ZP.Bar, {
+            children: [(0, i.jsx)(j.ZP.Bar, {
               children: "Error Details"
-            }), (0, i.jsx)(x.ZP.Content, {
+            }), (0, i.jsx)(j.ZP.Content, {
               className: P.stackTraceCode,
               children: (0, i.jsx)("code", {
                 className: P.code,
@@ -131,7 +131,7 @@ class k extends Chunk473749.PureComponent {
       this.setState({
         busy: true
       }), D(), f.Z.track(C.rMx.NOTIFICATION_CLICKED, {
-        notif_type: j.n0.OverlayCrashed,
+        notif_type: x.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
     }), w(this, "handleNotificationClick", e => {
