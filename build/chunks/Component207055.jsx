@@ -152,8 +152,8 @@ let B = [],
     })), F = r.useCallback(e => {
       t && (N(true), V.current.cancel(), A.current = e, H.current.delay())
     }, [t]), G = r.useCallback(e => {
-      t && (H.current.cancel(), E === e && (N(false), V.current.delay()))
-    }, [t, E]), z = (0, o.Wu)([T.Z], () => {
+      t && (H.current.cancel(), A.current = null, N(false), V.current.delay())
+    }, [t]), z = (0, o.Wu)([T.Z], () => {
       if (u) return [];
       let e = new Set;
       return null == w || w.forEach(t => {

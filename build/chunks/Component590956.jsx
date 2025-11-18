@@ -2,14 +2,15 @@
 /** chunk id: 590956, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => T,
-  c: () => I
+  Y: () => A,
+  c: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk367907 = require("./367907.js"),
@@ -20,9 +21,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk372216 = require("./372216.js");
 
-function b(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,20 +33,20 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,157 +57,161 @@ function O(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = e => {
+let S = e => {
     var t;
     let {
       node: n,
-      tooltipPosition: a = p.b_.position,
+      tooltipPosition: a = h.b_.position,
       enableClick: s = true,
-      channelId: u,
-      messageId: d
-    } = e, f = i.useRef(null), h = null == (t = n.originalMatch) ? true : t[0], m = null != h ? h : n.name, [g, b] = i.useState(false), O = e => (0, r.jsx)(c.Z, v(y({}, e), {
+      channelId: d,
+      messageId: f
+    } = e, _ = i.useRef(null), m = null == (t = n.originalMatch) ? true : t[0], g = null != m ? m : n.name, [E, O] = i.useState(false), I = e => (0, r.jsx)(u.Z, {
       emojiName: n.name,
-      size: n.jumboable ? "jumbo" : "default",
+      size: null != e ? e : n.jumboable ? "jumbo" : "default",
       src: n.src,
-      alt: h,
+      alt: m,
       animated: false,
-      channelId: u,
-      messageId: d
-    })), I = e => (0, r.jsx)(l.aML, v(y({
-      text: (0, p.Y)(n.name, s),
-      "aria-label": m
-    }, p.b_), {
-      position: a,
-      shouldShow: !g,
-      onTooltipShow: () => {
-        s && S({
-          emojiNode: n,
-          isCustomEmoji: false
-        })
-      },
-      children: t => (0, r.jsx)(l.P3F, v(y({}, e), {
-        innerRef: f,
-        tag: "span",
-        onClick: t => {
-          var n;
-          b(true), null == e || null == (n = e.onClick) || n.call(e, t)
+      channelId: d,
+      messageId: f
+    }), S = e => {
+      var t;
+      return (0, r.jsx)(l.i_, T(v({
+        asset: I("jumbo"),
+        title: null != (t = n.name) ? t : "",
+        body: s ? b.intl.string(b.t["515vjG"]) : "",
+        "aria-label": g
+      }, h.b_), {
+        position: a,
+        shouldShow: !E,
+        onTooltipShow: () => {
+          s && C({
+            emojiNode: n,
+            isCustomEmoji: false
+          })
         },
-        className: o()(E.emojiContainer, {
-          [E.emojiContainerClickable]: s,
-          [E.emojiJumbo]: n.jumboable
-        }),
-        children: O(t)
+        children: (0, r.jsx)(c.P3F, T(v({}, e), {
+          innerRef: _,
+          tag: "span",
+          onClick: t => {
+            var n;
+            O(true), null == e || null == (n = e.onClick) || n.call(e, t)
+          },
+          className: o()(y.emojiContainer, {
+            [y.emojiContainerClickable]: s,
+            [y.emojiJumbo]: n.jumboable
+          }),
+          children: I()
+        }))
       }))
-    }));
-    if (!s) return I();
-    let T = e => (0, r.jsx)(_.Az, v(y({}, e), {
+    };
+    if (!s) return S();
+    let A = e => (0, r.jsx)(p.Az, T(v({}, e), {
       node: n
     }));
-    return (0, r.jsx)(l.yRy, {
-      animation: l.yRy.Animation.TRANSLATE,
+    return (0, r.jsx)(c.yRy, {
+      animation: c.yRy.Animation.TRANSLATE,
       align: "center",
       autoInvert: true,
       nudgeAlignIntoViewport: true,
       position: "right",
       onRequestClose: () => {
-        b(false)
+        O(false)
       },
-      renderPopout: T,
-      targetElementRef: f,
-      children: I
+      renderPopout: A,
+      targetElementRef: _,
+      children: S
     })
   },
-  T = e => {
+  A = e => {
     let {
       node: t,
       isInteracting: n,
-      tooltipPosition: a = p.b_.position,
-      enableClick: u = true,
-      channelId: g,
-      messageId: b
-    } = e, [O, I] = i.useState(String(Date.now())), [T, A] = i.useState(false), [C, N] = i.useState(false), R = i.useRef(null), P = function() {
-      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-      return (0, r.jsx)(c.Z, v(y({}, e), {
-        emojiName: t.name,
-        size: t.jumboable ? "jumbo" : "default",
-        emojiId: t.emojiId,
-        animated: t.animated,
-        isInteracting: n,
-        channelId: g,
-        messageId: b
-      }))
-    }, D = (0, s.Z)(), w = e => (0, r.jsx)(l.aML, v(y({
-      text: (0, p.Y)(t.name, u),
+      tooltipPosition: a = h.b_.position,
+      enableClick: d = true,
+      channelId: E,
+      messageId: O
+    } = e, [I, S] = i.useState(String(Date.now())), [A, N] = i.useState(false), [R, P] = i.useState(false), D = i.useRef(null), w = e => (0, r.jsx)(u.Z, {
+      emojiName: t.name,
+      size: null != e ? e : t.jumboable ? "jumbo" : "default",
+      emojiId: t.emojiId,
+      animated: t.animated,
+      isInteracting: n,
+      channelId: E,
+      messageId: O
+    }), L = (0, s.Z)(), x = e => (0, r.jsx)(l.i_, T(v({
+      asset: w("jumbo"),
+      title: t.name,
+      body: d ? b.intl.string(b.t["515vjG"]) : "",
       "aria-label": t.name
-    }, p.b_), {
+    }, h.b_), {
       position: a,
-      shouldShow: !C,
+      shouldShow: !R,
       onTooltipShow: () => {
-        A(true), u && (S({
+        N(true), d && (C({
           emojiNode: t,
           isCustomEmoji: true,
-          nonce: D
-        }), (0, d.x)(m.qR.CustomEmojiTooltipShown))
+          nonce: L
+        }), (0, f.x)(g.qR.CustomEmojiTooltipShown))
       },
-      children: n => (0, r.jsx)(l.P3F, v(y({}, e), {
-        innerRef: R,
+      children: (0, r.jsx)(c.P3F, T(v({}, e), {
+        innerRef: D,
         onMouseEnter: () => {
           var t;
           null == e || null == (t = e.onMouseEnter) || t.call(e)
         },
-        onClick: u ? t => {
+        onClick: d ? t => {
           var n;
-          A(false), N(true), null == e || null == (n = e.onClick) || n.call(e, t)
+          N(false), P(true), null == e || null == (n = e.onClick) || n.call(e, t)
         } : true,
         onMouseLeave: () => {
-          T && (f.default.track(h.rMx.CLOSE_POPOUT, {
-            nonce: D
-          }), A(false))
+          A && (_.default.track(m.rMx.CLOSE_POPOUT, {
+            nonce: L
+          }), N(false))
         },
         tag: "span",
-        className: o()(E.emojiContainer, {
-          [E.emojiContainerClickable]: u,
-          [E.emojiJumbo]: t.jumboable
+        className: o()(y.emojiContainer, {
+          [y.emojiContainerClickable]: d,
+          [y.emojiJumbo]: t.jumboable
         }),
-        children: P(n)
+        children: w()
       }))
     }));
-    if (!u) return w();
-    let L = e => (0, r.jsx)(_.vk, v(y({}, e), {
+    if (!d) return x();
+    let M = e => (0, r.jsx)(p.vk, T(v({}, e), {
       node: t,
-      refreshPositionKey: () => I(String(Date.now())),
-      nonce: D
+      refreshPositionKey: () => S(String(Date.now())),
+      nonce: L
     }));
-    return (0, r.jsx)(l.yRy, {
-      animation: l.yRy.Animation.FADE,
+    return (0, r.jsx)(c.yRy, {
+      animation: c.yRy.Animation.FADE,
       align: "center",
       onRequestClose: () => {
-        f.default.track(h.rMx.CLOSE_POPOUT, {
-          nonce: D
-        }), A(false), N(false)
+        _.default.track(m.rMx.CLOSE_POPOUT, {
+          nonce: L
+        }), N(false), P(false)
       },
       autoInvert: true,
       nudgeAlignIntoViewport: true,
       position: "right",
-      renderPopout: L,
-      positionKey: O,
-      targetElementRef: R,
-      children: w
+      renderPopout: M,
+      positionKey: I,
+      targetElementRef: D,
+      children: x
     })
   },
-  S = e => {
+  C = e => {
     let {
       emojiNode: t,
       isCustomEmoji: n,
       nonce: r
     } = e;
-    u.ZP.trackWithMetadata(h.rMx.EXPRESSION_TOOLTIP_VIEWED, {
-      type: g.cd.EMOJI_IN_MESSAGE_HOVER,
+    d.ZP.trackWithMetadata(m.rMx.EXPRESSION_TOOLTIP_VIEWED, {
+      type: E.cd.EMOJI_IN_MESSAGE_HOVER,
       expression_id: t.emojiId,
       expression_name: t.name,
       is_animated: t.animated,
