@@ -43,7 +43,7 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,7 +68,7 @@ function L(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -228,7 +228,7 @@ class U extends Chunk473749.Component {
       id: N,
       required: P,
       maxCharacterCount: w,
-      allowNewLines: L,
+      allowNewLines: x,
       isEditorIdle: k,
       currentAutocompleteType: j,
       "aria-describedby": U,
@@ -259,7 +259,7 @@ class U extends Chunk473749.Component {
       moveSelection: this.handleMoveSelection,
       maybeShowAutocomplete: this.maybeShowAutocomplete,
       hideAutocomplete: this.hideAutocomplete,
-      allowNewLines: L,
+      allowNewLines: x,
       onChange: Chunk166459,
       onResize: Chunk911969,
       onKeyDown: Chunk531643,
@@ -284,14 +284,14 @@ class U extends Chunk473749.Component {
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
-    }, Y = Chunk117530 ? (0, Chunk54381.jsx)(Chunk4484.Z, M(x({
+    }, Y = Chunk117530 ? (0, Chunk54381.jsx)(Chunk4484.Z, M(L({
       ref: this.ref
     }, H), {
       type: Chunk710845,
       value: Chunk430742 && !Z ? (0, Chunk752305.JM)("") : Chunk729594,
       canUseCommands: null == (t = Chunk710845.commands) ? true : exports.enabled,
       canOnlyUseTextCommands: Chunk30465
-    })) : (0, Chunk54381.jsx)(Chunk140963.Z, M(x({
+    })) : (0, Chunk54381.jsx)(Chunk140963.Z, M(L({
       ref: this.ref
     }, H), {
       value: Chunk430742 && !Z ? "" : l

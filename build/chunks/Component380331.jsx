@@ -65,12 +65,12 @@ function w(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
+let x = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
   M = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
   k = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
   j = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
@@ -79,7 +79,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_
   B = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
   Z = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
   F = k + M + 2 * U,
-  V = L + M,
+  V = x + M,
   H = V + (B + 2 * Z),
   Y = k + j + 2 * U,
   W = 7;
@@ -94,7 +94,7 @@ function K(e) {
     handleCategorySelect: u,
     isWindowFocused: d,
     useReducedMotion: _
-  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === S.En.GUILD ? null : l.id, m = t === n, E = l.type === S.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, x(D({}, p), {
+  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === S.En.GUILD ? null : l.id, m = t === n, E = l.type === S.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, L(D({}, p), {
     "aria-label": (0, O.Nf)(l, E),
     className: o()({
       [R.categoryItemGuildCategory]: null != E,
@@ -158,7 +158,7 @@ let z = e => {
       isWindowFocused: P,
       useReducedMotion: D
     }, t)
-  }), [b, v, A, y, P, D]), x = i.useMemo(() => [8, 8, 0, 8], []), L = i.useCallback((e, t) => {
+  }), [b, v, A, y, P, D]), L = i.useMemo(() => [8, 8, 0, 8], []), x = i.useCallback((e, t) => {
     let n = A[t];
     if (n.type === S.En.RECENT) return F;
     if (n.type === S.En.GUILD) {
@@ -222,12 +222,12 @@ let z = e => {
     className: t,
     store: h.kJ,
     categories: A,
-    listPadding: x,
+    listPadding: L,
     onScroll: $,
     renderCategoryListItem: w,
     renderSection: en,
     rowCount: A.length,
-    categoryHeight: L,
+    categoryHeight: x,
     getScrollOffsetForIndex: et,
     rowCountBySection: X,
     children: e => U >= W && (0, r.jsx)(f.P3F, {

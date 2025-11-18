@@ -95,7 +95,7 @@ function w() {
   r = false
 }
 
-function x(e) {
+function L(e) {
   let {
     games: t,
     etag: n
@@ -103,7 +103,7 @@ function x(e) {
   for (let e of (null != n && S !== n && (O.clear(), v = {}, I = {}, S = n), t)) R(C(e));
   r = true, A = Date.now()
 }
-class L extends(a = Chunk442837.ZP.PersistedStore) {
+class x extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
     null != e && (null != e.detectableGamesEtag && (S = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => R(e)))
@@ -186,7 +186,7 @@ class L extends(a = Chunk442837.ZP.PersistedStore) {
     T[e] = true, s.K.set(E, T)
   }
 }
-g(L, "displayName", "GameStore"), g(L, "persistKey", "GameStore"), g(L, "migrations", [e => {
+g(x, "displayName", "GameStore"), g(x, "persistKey", "GameStore"), g(x, "migrations", [e => {
   var t, n;
   return null == e ? {
     detectableGamesEtag: "",
@@ -202,9 +202,9 @@ g(L, "displayName", "GameStore"), g(L, "persistKey", "GameStore"), g(L, "migrati
   detectableGamesEtag: "",
   detectableGames: []
 })]);
-let M = new L(Chunk570140.Z, {
+let M = new x(Chunk570140.Z, {
   OVERLAY_INITIALIZE: P,
   GAMES_DATABASE_FETCH: D,
   GAMES_DATABASE_FETCH_FAIL: w,
-  GAMES_DATABASE_UPDATE: x
+  GAMES_DATABASE_UPDATE: L
 })

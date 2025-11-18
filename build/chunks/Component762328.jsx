@@ -95,8 +95,8 @@ function b(e) {
     }
   });
   let {
-    refs: x,
-    floatingStyles: L,
+    refs: L,
+    floatingStyles: x,
     placement: M,
     middlewareData: k,
     update: j,
@@ -120,17 +120,17 @@ function b(e) {
   } = (0, o.NI)([G, B]), V = (null == (t = k.hide) ? true : t.referenceHidden) ? "hidden" : "visible", H = A ? d.UU : i.Fragment;
   return (0, r.jsxs)(r.Fragment, {
     children: [N({
-      ref: x.setReference,
+      ref: L.setReference,
       props: Z()
     }), l && (0, r.jsxs)(H, {
       children: [C ? (0, r.jsx)(o.y0, {}) : null, (0, r.jsx)("div", m(p({
         id: h,
         className: c()(b, f.layer),
         [E]: true,
-        style: m(p({}, L), {
+        style: m(p({}, x), {
           visibility: V
         }),
-        ref: x.setFloating
+        ref: L.setFloating
       }, F()), {
         children: (0, r.jsx)(u.Jc, {
           containerRef: D,

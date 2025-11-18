@@ -1,7 +1,7 @@
 /** Chunk was on 45227 **/
 /** chunk id: 444448, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => C
+  d: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,6 +9,7 @@ var Chunk54381 = require("./54381.js"),
   r = require.n(Chunk512722),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk906732 = require("./906732.jsx"),
   Chunk987209 = require("./987209.jsx"),
   Chunk563132 = require("./563132.jsx"),
   Chunk614277 = require("./614277.jsx"),
@@ -20,47 +21,50 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk216215 = require("./216215.js");
 
-function C(e) {
+function j(e) {
   var t;
   let {
     handleClose: n
   } = e, {
-    skusById: a,
-    selectedSkuId: C,
-    application: j
-  } = (0, c.JL)(), {
-    isGift: b,
-    giftRecipient: _
-  } = (0, d.wD)();
-  r()(null != C, "Expected selectedSkuId"), r()(null != j, "Expected application");
-  let I = a[C];
-  return (r()(null != I, "Expected sku"), l.useEffect(() => {
-    b || ((0, p.U)(), n(), (0, m.I)({
-      sku: I,
-      application: j
+    analyticsLocations: a
+  } = (0, d.ZP)(), {
+    skusById: j,
+    selectedSkuId: b,
+    application: _
+  } = (0, u.JL)(), {
+    isGift: I,
+    giftRecipient: P
+  } = (0, c.wD)();
+  r()(null != b, "Expected selectedSkuId"), r()(null != _, "Expected application");
+  let w = j[b];
+  return (r()(null != w, "Expected sku"), l.useEffect(() => {
+    I || ((0, x.U)(), n(), (0, p.I)({
+      sku: w,
+      application: _,
+      analyticsLocations: a
     }))
-  }, [b, I, j, n]), b) ? (0, i.jsxs)(u.C3, {
-    children: [(0, i.jsx)(g.Z, {}), (0, i.jsx)(f.Z, {}), (0, i.jsxs)("div", {
-      className: v.confirmation,
-      children: [(0, i.jsx)(x.A, {
-        sku: I,
+  }, [I, w, _, n, a]), I) ? (0, i.jsxs)(f.C3, {
+    children: [(0, i.jsx)(m.Z, {}), (0, i.jsx)(g.Z, {}), (0, i.jsxs)("div", {
+      className: C.confirmation,
+      children: [(0, i.jsx)(h.A, {
+        sku: w,
         shape: "square",
-        containerClassName: v.skuImage
+        containerClassName: C.skuImage
       }), (0, i.jsx)(o.Heading, {
         variant: "heading-xxl/bold",
-        className: v.confirmationHeader,
-        children: h.intl.string(h.t["5glWta"])
+        className: C.confirmationHeader,
+        children: v.intl.string(v.t["5glWta"])
       }), (0, i.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: h.intl.formatToPlainString(h.t["2VjPTw"], {
-          itemName: I.name,
-          giftRecipient: null != (t = null == _ ? true : _.username) ? t : "your recipient"
+        children: v.intl.formatToPlainString(v.t["2VjPTw"], {
+          itemName: w.name,
+          giftRecipient: null != (t = null == P ? true : P.username) ? t : "your recipient"
         })
       }), (0, i.jsx)("div", {
-        className: v.divider
+        className: C.divider
       }), (0, i.jsx)(s.zxk, {
         onClick: n,
-        text: h.intl.string(h.t.cpT0Cq),
+        text: v.intl.string(v.t.cpT0Cq),
         fullWidth: true
       })]
     })]

@@ -78,12 +78,12 @@ function w(e, t, n, i) {
   }, i)
 }
 
-function x(e, t) {
+function L(e, t) {
   var n, r;
   return e > 0 ? "" : null != (r = null == (n = R[t]) ? true : n.id) ? r : ""
 }
 
-function L(e) {
+function x(e) {
   return e === u.EO.VIDEO
 }
 
@@ -160,10 +160,11 @@ class U extends Chunk473749.PureComponent {
       renderExtras: t,
       format: n,
       coords: i,
-      focused: a
+      focused: a,
+      selected: o
     } = this.props, {
-      color: o,
-      loaded: s
+      color: s,
+      loaded: l
     } = this.state;
     return (0, Chunk54381.jsxs)(Chunk481060.P3F, {
       tabIndex: false,
@@ -172,11 +173,12 @@ class U extends Chunk473749.PureComponent {
       },
       className: Chunk898404.result,
       "data-focused": Chunk120356,
+      "data-selected": o,
       onClick: this.handleClick,
       style: S({
-        backgroundColor: Chunk392711 ? true : o
+        backgroundColor: l ? true : Chunk392711
       }, Chunk473749),
-      children: [L(require) ? null : this.renderGIF(), null != exports ? exports(module) : null]
+      children: [x(require) ? null : this.renderGIF(), null != exports ? exports(module) : null]
     })
   }
   constructor(e) {
@@ -200,7 +202,7 @@ class U extends Chunk473749.PureComponent {
     this.state = {
       color: null == n ? l().sample(A) : n,
       loaded: false
-    }, L(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
+    }, x(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
       loaded: true
     }), this._image.src = e.src)
   }
@@ -334,20 +336,25 @@ class G extends Chunk473749.PureComponent {
       if (e > 0) return null;
       let {
         focusedId: a
-      } = this.state, o = this.props.data[t];
-      return null == o ? null : (0, r.jsx)(U, {
-        item: o,
+      } = this.state, {
+        selectedGIF: o
+      } = this.props, s = this.props.data[t];
+      if (null == s) return null;
+      let l = null != o && P(o) === P(s);
+      return (0, r.jsx)(U, {
+        item: s,
         index: t,
-        format: o.format,
-        src: o.src,
+        format: s.format,
+        src: s.src,
         coords: n,
         onClick: this.handleClickItem,
         renderExtras: () => (0, r.jsx)(E.Z, S({
           className: I.favButton
-        }, o)),
-        focused: P(o) === a,
+        }, s)),
+        focused: P(s) === a,
         imagePool: this.props.imagePool,
-        videoPool: this.props.videoPool
+        videoPool: this.props.videoPool,
+        selected: l
       }, i)
     }), T(this, "getItemHeight", (e, t, n) => {
       if (e > 0) return 0;
@@ -397,7 +404,7 @@ class G extends Chunk473749.PureComponent {
         sections: [R.length],
         columns: e,
         itemGutter: 12,
-        getItemKey: x,
+        getItemKey: L,
         getItemHeight: D,
         renderItem: w,
         chunkSize: 128

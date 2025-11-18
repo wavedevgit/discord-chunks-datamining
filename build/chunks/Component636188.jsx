@@ -65,12 +65,12 @@ function w(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = 25,
+let x = 25,
   M = 720;
 
 function k() {
@@ -192,7 +192,7 @@ function G(e) {
       let {
         default: e
       } = await n.e("99414").then(n.bind(n, 187658));
-      return n => (0, r.jsx)(e, x(D({}, n), {
+      return n => (0, r.jsx)(e, L(D({}, n), {
         backgroundOption: t,
         optionIsInUse: a
       }))
@@ -298,7 +298,7 @@ function V(e) {
     onAddBackgroundImage: t,
     disabled: i
   } = e, a = (0, c.vRw)(), o = i ? N.intl.formatToPlainString(N.t.ykGFeD, {
-    maxCustomBackgrounds: L
+    maxCustomBackgrounds: x
   }) : N.intl.string(N.t.Qx0tFc), s = k();
 
   function l() {
@@ -343,7 +343,7 @@ function H(e) {
     onUpsellClick: s,
     onAddBackgroundImage: u,
     smallerOptions: d
-  } = e, f = i.useMemo(() => n.sort((e, t) => null == e.last_used || null == t.last_used ? y.default.compare(t.id, e.id) : new Date(t.last_used).getTime() - new Date(e.last_used).getTime()), [n]), h = f.length >= L, {
+  } = e, f = i.useMemo(() => n.sort((e, t) => null == e.last_used || null == t.last_used ? y.default.compare(t.id, e.id) : new Date(t.last_used).getTime() - new Date(e.last_used).getTime()), [n]), h = f.length >= x, {
     analyticsLocations: m
   } = (0, p.ZP)(_.Z.VIDEO_BACKGROUND_OPTIONS), g = Object.values((0, v.Z)()).sort((e, t) => I.E1[e.id] - I.E1[t.id]);
   return (0, r.jsx)(p.Gt, {

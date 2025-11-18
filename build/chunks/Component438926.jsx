@@ -1,5 +1,5 @@
 /** Chunk was on 88742 **/
-/** chunk id: 438926, original params: t,n,e (module,exports,require) **/
+/** chunk id: 438926, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
   y: () => o
 });
@@ -11,11 +11,11 @@ var Chunk793030 = require("./793030.js"),
 function o(t) {
   let {
     sku: n,
-    title: e
+    title: i
   } = t;
-  return (0, a.jsx)(i.xBx, {
+  return (0, a.jsx)(e.xBx, {
     alignCenter: true,
-    title: e,
+    title: i,
     gradientColor: "purple",
     graphic: (0, s.c)(n)
   })

@@ -41,7 +41,7 @@ let A = e => {
     } = (0, O.q)({
       searchQuery: v,
       selectedUsers: _
-    }), [D, w] = i.useState(false), x = A.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), L = () => (0, r.jsx)(d.Z, {
+    }), [D, w] = i.useState(false), L = A.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), x = () => (0, r.jsx)(d.Z, {
       className: S.searchbar,
       size: d.Z.Sizes.MEDIUM,
       tags: [..._.values()].map(e => g.ZP.getName(e)),
@@ -123,13 +123,13 @@ let A = e => {
       title: T.intl.string(T.t["2dVCLl"]),
       subtitle: T.intl.string(T.t.DXgoi2),
       onClose: t,
-      input: L(),
+      input: x(),
       actions: [],
       actionBarInput: M({
-        eligibleRecipients: x
+        eligibleRecipients: L
       }),
       children: k({
-        eligibleRecipients: x
+        eligibleRecipients: L
       })
     })
   },

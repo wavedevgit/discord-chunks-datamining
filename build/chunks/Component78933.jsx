@@ -119,10 +119,10 @@ function ec(e) {
     eT = F.Sb.useSetting(),
     eN = (0, $.I)(ey),
     eP = (0, q.g)(n),
-    ew = (0, v.Z)({
+    eI = (0, v.Z)({
       analyticsLocations: eg
     }),
-    eI = (0, H.I5)(t),
+    ew = (0, H.I5)(t),
     ek = (0, h.p)({
       location: "UserProfileAccountPopout"
     }),
@@ -156,8 +156,8 @@ function ec(e) {
       eH(en.L.USER_DISMISS), n()
     }, [eH, n]),
     eq = l.useCallback(() => {
-      ep && null != em || (ew(), eK())
-    }, [ew, eK, ep, em]),
+      ep && null != em || (eI(), eK())
+    }, [eI, eK, ep, em]),
     eY = ep && null != em,
     eJ = (0, K.K)(em, eg, eW, n, eK),
     eX = (0, y.k)({
@@ -241,15 +241,15 @@ function ec(e) {
                   section: ea.oh.WIDGETS
                 })
               }
-            }), (0, a.jsx)(w.Z, {
-              isPremiumUser: eI,
+            }), (0, a.jsx)(I.Z, {
+              isPremiumUser: ew,
               onInteraction: n
             }), eR ? (0, a.jsx)(R.Z, {
               user: t,
               currentUser: t,
               onOpenUserProfileModal: eF,
               onClose: n
-            }) : (0, a.jsx)(I.Z, {
+            }) : (0, a.jsx)(w.Z, {
               user: t,
               currentUser: t,
               onClose: n

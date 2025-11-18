@@ -63,8 +63,8 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = "SelectedChannelStore",
-  L = 3e5,
+let L = "SelectedChannelStore",
+  x = 3e5,
   M = 6e4,
   k = {},
   j = {},
@@ -76,7 +76,7 @@ function B(e) {
 }
 
 function Z() {
-  __OVERLAY__ || Chunk433517.K.set(x, {
+  __OVERLAY__ || Chunk433517.K.set(L, {
     selectedChannelId: a,
     selectedVoiceChannelId: s,
     lastChannelFollowingDestination: o,
@@ -121,7 +121,7 @@ function Y() {
   }), exports.forEach(e => {
     let t = k[e.id];
     null == U[e.id] && V(e.id, t)
-  }), null != l && Date.now() - l >= L && (s = null, e = true), module
+  }), null != l && Date.now() - l >= x && (s = null, e = true), module
 }
 
 function W(e) {
@@ -247,7 +247,7 @@ function er(e) {
 }
 
 function ei() {
-  k = {}, a = null, i = true, U = {}, o = {}, s = null, Chunk433517.K.remove(x)
+  k = {}, a = null, i = true, U = {}, o = {}, s = null, Chunk433517.K.remove(L)
 }
 
 function ea(e) {
@@ -266,7 +266,7 @@ class eo extends(u = Chunk442837.ZP.Store) {
   initialize() {
     if (!__OVERLAY__) {
       var e, t;
-      let n = null != (e = Chunk433517.K.get(x)) ? module : {
+      let n = null != (e = Chunk433517.K.get(L)) ? module : {
         selectedChannelId: a,
         selectedVoiceChannelId: s,
         lastChannelFollowingDestination: o,

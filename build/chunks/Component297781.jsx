@@ -7,7 +7,7 @@ require.d(exports, {
   E6: () => W,
   EE: () => B,
   Gk: () => J,
-  Gt: () => x,
+  Gt: () => L,
   OV: () => G,
   PZ: () => ee,
   Rg: () => Q,
@@ -109,13 +109,13 @@ let w = {
   [Chunk876215.s.WATCHED_MEDIA]: [X, Q],
   [Chunk876215.s.LAUNCHED_ACTIVITY]: [G, B, U, q, z, V]
 };
-var x = function(e) {
+var L = function(e) {
   return e[e.CARD = 0] = "CARD", e[e.POPOUT = 1] = "POPOUT", e[e.STREAMING_POPOUT = 2] = "STREAMING_POPOUT", e[e.GAME_PROFILE = 3] = "GAME_PROFILE", e[e.USER_PROFILE = 4] = "USER_PROFILE", e[e.EMBED = 5] = "EMBED", e[e.LEADERBOARD_POPOUT = 6] = "LEADERBOARD_POPOUT", e[e.OVERLAY = 7] = "OVERLAY", e[e.FRIENDS_POPOUT = 8] = "FRIENDS_POPOUT", e[e.APP_LAUNCHER = 9] = "APP_LAUNCHER", e
 }({});
-let L = Chunk473749.createContext({});
+let x = Chunk473749.createContext({});
 
 function M() {
-  return Chunk473749.useContext(L)
+  return Chunk473749.useContext(x)
 }
 
 function k(e) {
@@ -435,7 +435,7 @@ function J(e) {
     defaultIconColor: _.TVs.colors.TEXT_SECONDARY
   } : {
     defaultTextColor: "text-secondary"
-  }, (0, r.jsx)(L.Provider, {
+  }, (0, r.jsx)(x.Provider, {
     value: C({
       location: n
     }, t),

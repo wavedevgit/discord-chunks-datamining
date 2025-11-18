@@ -236,7 +236,7 @@ function W(e, t, n) {
       var {
         onClick: t
       } = e, i = B(e, ["onClick"]);
-      if (a.type === x.uaV.CHAT_INPUT_COMMAND || a.type === x.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(f.P3F, G(j({}, i), {
+      if (a.type === L.uaV.CHAT_INPUT_COMMAND || a.type === L.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(f.P3F, G(j({}, i), {
         tag: "span",
         onClick: s,
         innerRef: n,
@@ -258,7 +258,7 @@ function W(e, t, n) {
       });
       {
         let e = () => {
-            C.S.dispatchToLastSubscribed(x.CkL.OPEN_APP_LAUNCHER, {
+            C.S.dispatchToLastSubscribed(L.CkL.OPEN_APP_LAUNCHER, {
               applicationId: a.applicationId
             })
           },
@@ -320,7 +320,7 @@ function q(e) {
       messageId: a.id,
       newAnalyticsLocations: n
     }))), [b, s, a.id]),
-    x = i.useMemo(() => e => (l()(null != s, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(D.Z, G(j({}, e), {
+    L = i.useMemo(() => e => (l()(null != s, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(D.Z, G(j({}, e), {
       channel: s,
       messageId: a.id,
       interactionData: a.interactionData
@@ -351,12 +351,12 @@ function q(e) {
     };
   if ((null == a ? true : a.activityInstance) === null || (0, v.g)(a)) {
     let t = () => {
-      let t = W(e, x, C);
+      let t = W(e, L, C);
       return (0, r.jsx)(i.Fragment, {
         children: t
       }, "command")
     };
-    n = L.intl.format(L.t["rg7U+C"], {
+    n = x.intl.format(x.t["rg7U+C"], {
       userHook: X,
       commandHook: t
     }), B && null != e.renderTargetMessage ? n = (0, r.jsxs)(r.Fragment, {
@@ -384,13 +384,13 @@ function q(e) {
         onClick: e,
         children: (0, r.jsx)("div", {
           className: o()(M.commandName, M.clickable),
-          children: L.intl.string(L.t.YTgRvn)
+          children: x.intl.string(x.t.YTgRvn)
         })
       });
-    n = z ? L.intl.format(L.t.kfV8WM, {
+    n = z ? x.intl.format(x.t.kfV8WM, {
       userHook: X,
       activityHook: t
-    }) : L.intl.format(L.t["6FeSyT"], {
+    }) : x.intl.format(x.t["6FeSyT"], {
       userHook: X
     })
   }

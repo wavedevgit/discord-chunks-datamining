@@ -68,8 +68,8 @@ let N = new Chunk710845.Z("OverlayV3Store"),
   P = new Set,
   D = null,
   w = null,
-  x = null,
   L = null,
+  x = null,
   M = null,
   k = null,
   j = null,
@@ -192,7 +192,7 @@ function $(e) {
   if (Z = C(S({}, Z), {
       windowHandleSentToNative: t
     }), t) {
-    let e = null != L ? L : d.UNSET_PID;
+    let e = null != x ? x : d.UNSET_PID;
     Z.reactInitializationStarted ? o.Z.updateOverlayState(e, f.mM.WAITING_FOR_SUCCESSFUL_SHOW, "handleOverlayV3WindowHandleInitialized") : o.Z.updateOverlayState(e, f.mM.WAITING_FOR_REACT_INITIALIZATION, "handleOverlayV3WindowHandleInitialized"), (0, _.bs)(e, "window_handle_initialized")
   }
 }
@@ -213,7 +213,7 @@ function er(e) {
   } = e;
   Z = C(S({}, Z), {
     popoutOpened: true
-  }), K(t), j = t, L = t, (0, d.setPID)(t)
+  }), K(t), j = t, x = t, (0, d.setPID)(t)
 }
 
 function ei(e) {
@@ -239,14 +239,14 @@ function ea(e) {
 }
 
 function eo() {
-  X(), j = null, L = null, (0, Chunk145597.setPID)(Chunk145597.UNSET_PID), F()
+  X(), j = null, x = null, (0, Chunk145597.setPID)(Chunk145597.UNSET_PID), F()
 }
 
 function es(e) {
   let {
     refreshingPID: t
   } = e;
-  return N.verbose("Refreshing OOP host window for pid ".concat(t)), k = t, j = t, L = t, (0, d.setPID)(t), K(t), z(), true
+  return N.verbose("Refreshing OOP host window for pid ".concat(t)), k = t, j = t, x = t, (0, d.setPID)(t), K(t), z(), true
 }
 
 function el(e) {
@@ -266,15 +266,15 @@ function eu(e) {
     pid: t,
     windowHandle: n
   } = e;
-  if (w !== t || x !== n) {
+  if (w !== t || L !== n) {
     var r;
     (0, _.bs)(null != (r = null != t ? t : w) ? r : d.UNSET_PID, "overlay_focused", {
       focusedPID: t,
-      focusedWindowHandle: x,
+      focusedWindowHandle: L,
       windowHandle: n
     })
   }
-  return w = t, x = n, true
+  return w = t, L = n, true
 }
 
 function ed() {
@@ -351,13 +351,13 @@ class eb extends(r = Chunk442837.ZP.Store) {
     return null != t && t.pinned
   }
   getTargetPID() {
-    return Chunk987650.y3 && (L === Chunk145597.UNSET_PID || null == L) ? Chunk145597.DEV_PID : null != L ? L : Chunk145597.UNSET_PID
+    return Chunk987650.y3 && (x === Chunk145597.UNSET_PID || null == x) ? Chunk145597.DEV_PID : null != x ? x : Chunk145597.UNSET_PID
   }
   getFocusedPID() {
     return w
   }
   getFocusedWindowHandle() {
-    return x
+    return L
   }
   isFocused(e) {
     return null != w && e !== d.UNSET_PID && (!!R.has(e) || e === d.DEV_PID) && w === e

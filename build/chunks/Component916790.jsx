@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
 function P(e) {
   return parseFloat(e.toFixed(3))
 }
-let w = [{
+let I = [{
   key: "store",
   cellClassName: Chunk687278.actionColumn,
   render(e) {
@@ -53,7 +53,7 @@ let w = [{
   }
 }];
 
-function I(e) {
+function w(e) {
   let {
     actionLog: t
   } = e, n = l.useMemo(() => t.traces.map(e => ({
@@ -62,7 +62,7 @@ function I(e) {
   })), [t]);
   return (0, a.jsx)(p.zJl, {
     children: (0, a.jsx)(S.Z, {
-      columns: w,
+      columns: I,
       data: n
     })
   })
@@ -106,7 +106,7 @@ let k = [{
     let {
       actionLog: t
     } = e;
-    return (0, a.jsx)(I, {
+    return (0, a.jsx)(w, {
       actionLog: t
     })
   }

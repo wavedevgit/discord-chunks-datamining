@@ -49,14 +49,14 @@ function m() {
         className: Chunk636503.panelRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
-          children: "Reset badge cooldown"
+          children: "Reset gift unread notification cooldown"
         }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Reset",
           onClick: () => {
             Chunk570140.Z.dispatch({
-              type: "DEV_TOOLS_FRIENDS_TAB_BADGE_COOLDOWN_RESET"
+              type: "DEV_TOOLS_GIFT_UNREAD_NOTIFICATION_COOLDOWN_RESET"
             })
           }
         })]

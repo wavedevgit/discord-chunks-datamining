@@ -104,8 +104,8 @@ function y(e) {
     "aria-label": P,
     "aria-expanded": D,
     "aria-haspopup": w,
-    "aria-controls": x,
-    noHover: L
+    "aria-controls": L,
+    noHover: x
   } = e, M = (0, l.Yzy)(null != g, m(p({}, b), {
     keys: e => e ? "children" : "icon"
   })), k = e => {
@@ -130,11 +130,11 @@ function y(e) {
     "aria-label": P,
     "aria-expanded": D,
     "aria-haspopup": w,
-    "aria-controls": x,
+    "aria-controls": L,
     "aria-disabled": i,
     className: o()(n, f.button, {
       [f.active]: v,
-      [f.noHover]: L,
+      [f.noHover]: x,
       [f.pulseButton]: C,
       [f.disabled]: i
     }),

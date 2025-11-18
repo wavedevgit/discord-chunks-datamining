@@ -68,8 +68,8 @@ function D(e, t) {
   }), e
 }
 let w = new Chunk710845.Z("ChannelRTCStore"),
-  x = Object.freeze([]),
-  L = [],
+  L = Object.freeze([]),
+  x = [],
   M = {},
   k = {},
   j = {},
@@ -88,7 +88,7 @@ function W(e) {
 }
 
 function K() {
-  for (let e of L) ei(module);
+  for (let e of x) ei(module);
   ea()
 }
 
@@ -100,18 +100,18 @@ function z() {
   null == require || module.includes(require) || module.push(require);
   let r = Chunk258609.default.getRemoteSessionId(),
     i = Chunk979651.Z.getVoiceStateForSession(Chunk314897.default.getId(), r);
-  (null == Chunk512722 ? true : Chunk512722.channelId) != null && module.push(null == Chunk512722 ? true : Chunk512722.channelId), s().difference(L, module).forEach(ei);
-  let a = s().difference(module, L);
-  return L = module, a
+  (null == Chunk512722 ? true : Chunk512722.channelId) != null && module.push(null == Chunk512722 ? true : Chunk512722.channelId), s().difference(x, module).forEach(ei);
+  let a = s().difference(module, x);
+  return x = module, a
 }
 
 function q(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : L;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : x;
   return t.reduce((t, n) => e(W(n)) ? (er(n), en(n), true) : t, false)
 }
 
 function X(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : L;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : x;
   return q(t => t.updateParticipant(e), t)
 }
 
@@ -228,7 +228,7 @@ function el(e) {
       location: "voice_status_update"
     }, {
       autoTrackExposure: false
-    }).enabled && W(i).updateGuildRingingUsers(r, false), n && null != i && !L.includes(i)) ? e : X(r) || e
+    }).enabled && W(i).updateGuildRingingUsers(r, false), n && null != i && !x.includes(i)) ? e : X(r) || e
   }, false)
 }
 
@@ -276,7 +276,7 @@ function em(e) {
   let {
     guild: t
   } = e, n = [];
-  if (s().forEach(L, e => {
+  if (s().forEach(x, e => {
       let r = E.Z.getChannel(e);
       (null == r || r.getGuildId() === t.id) && n.push(e)
     }), 0 === n.length) returnfalse;
@@ -450,7 +450,7 @@ function ew(e) {
   return X(n, [t])
 }
 
-function ex(e) {
+function eL(e) {
   let {
     channelId: t,
     userId: n
@@ -458,7 +458,7 @@ function ex(e) {
   return X(n, [t])
 }
 
-function eL(e) {
+function ex(e) {
   let {
     userId: t
   } = e;
@@ -521,11 +521,11 @@ class eG extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getParticipants(e) {
     var t;
-    return null != (t = W(e).toArray()) ? t : x
+    return null != (t = W(e).toArray()) ? t : L
   }
   getSpeakingParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.SPEAKING)) ? t : x
+    return null != (t = W(e).toArray(S.sI.SPEAKING)) ? t : L
   }
   getFilteredParticipants(e) {
     var t;
@@ -534,15 +534,15 @@ class eG extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getVideoParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.VIDEO)) ? t : x
+    return null != (t = W(e).toArray(S.sI.VIDEO)) ? t : L
   }
   getStreamParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.STREAM)) ? t : x
+    return null != (t = W(e).toArray(S.sI.STREAM)) ? t : L
   }
   getActivityParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.ACTIVITY)) ? t : x
+    return null != (t = W(e).toArray(S.sI.ACTIVITY)) ? t : L
   }
   getParticipant(e, t) {
     return W(e).getParticipant(t)
@@ -643,8 +643,8 @@ let eB = new eG(Chunk570140.Z, {
   CHANNEL_RTC_UPDATE_CHAT_OPEN: ev,
   CHANNEL_RTC_UPDATE_PARTCIPANTS_LIST_OPEN: eI,
   RTC_CONNECTION_VIDEO: ew,
-  RTC_CONNECTION_PLATFORM: ex,
-  AUDIO_SET_LOCAL_VIDEO_DISABLED: eL,
+  RTC_CONNECTION_PLATFORM: eL,
+  AUDIO_SET_LOCAL_VIDEO_DISABLED: ex,
   MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED: eM,
   STREAM_CLOSE: eP,
   STREAM_DELETE: eP,

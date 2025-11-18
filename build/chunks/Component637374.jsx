@@ -191,7 +191,7 @@ class z extends Chunk473749.Component {
     } = this.props, a = {
       onClick: this.handleAccept,
       color: u.zx.Colors.BRAND
-    }, o = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, L.I5)(n);
+    }, o = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, x.I5)(n);
     return (e.redeemed || o || e.isClaimed || !n.verified) && (a.color = u.zx.Colors.BRAND, a.disabled = true), (0, r.jsx)(u.zx, Y(V({}, a), {
       className: (0, m.mO)(e) ? Z.collectiblesAcceptButton : null,
       size: u.zx.Sizes.SMALL,
@@ -426,7 +426,7 @@ let q = (0, Chunk112724.Z)((0, Chunk730749.Z)(z)),
     } = (0, c.cj)([C.Z], () => ({
       giftCode: C.Z.get(t),
       resolved: C.Z.getIsResolved(t)
-    })), o = (0, c.e7)([R.default], () => null != i && null != i.userId ? R.default.getUser(i.userId) : null), s = (0, c.e7)([P.Z], () => null != i ? P.Z.get(i.skuId) : null), l = (0, c.e7)([N.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? x.z2(i.entitlementBranches, s, N.Z) : null), u = (0, h.q)(null == s ? true : s.applicationId), d = (0, M.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([A.default], () => null != i ? A.default.getId() === i.userId : A.default.getId() === n.id);
+    })), o = (0, c.e7)([R.default], () => null != i && null != i.userId ? R.default.getUser(i.userId) : null), s = (0, c.e7)([P.Z], () => null != i ? P.Z.get(i.skuId) : null), l = (0, c.e7)([N.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? L.z2(i.entitlementBranches, s, N.Z) : null), u = (0, h.q)(null == s ? true : s.applicationId), d = (0, M.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([A.default], () => null != i ? A.default.getId() === i.userId : A.default.getId() === n.id);
     return (0, r.jsx)(q, Y(V({}, e), {
       skuApplication: u,
       giftCode: i,

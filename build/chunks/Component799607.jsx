@@ -66,10 +66,10 @@ let d = function(e) {
     e && (O.current = true), D(), b("closing")
   }, [D]);
   i.useEffect(() => D, [D]);
-  let x = i.useCallback(() => {
+  let L = i.useCallback(() => {
       "closed" === E && (D(), b("opening-mouse"))
     }, [D, E]),
-    L = i.useCallback(() => {
+    x = i.useCallback(() => {
       v && w(false)
     }, [w, v]),
     M = i.useCallback(() => {
@@ -78,14 +78,19 @@ let d = function(e) {
         return
       }
       D(), b("opening-keyboard")
-    }, [D, E]);
+    }, [D, E]),
+    k = i.useCallback(() => {
+      "opening-keyboard" === E && w(false)
+    }, [w, E]);
   i.useEffect(() => {
     "opening-mouse" === E && (y.current = window.setTimeout(() => {
       b("open-mouse"), null == d || d()
     }, c))
   }, [E, c, d]), i.useEffect(() => {
-    "opening-keyboard" === E && (b("open-keyboard"), null == d || d())
-  }, [E, d]), i.useEffect(() => {
+    "opening-keyboard" === E && (y.current = window.setTimeout(() => {
+      b("open-keyboard"), null == d || d()
+    }, c))
+  }, [E, c, d]), i.useEffect(() => {
     if ("closing" === E) {
       let e = window.setTimeout(() => {
         b("closed")
@@ -99,19 +104,20 @@ let d = function(e) {
     };
     return document.addEventListener("keydown", e, true), () => document.removeEventListener("keydown", e, true)
   }, [T, w, n]);
-  let k = i.useMemo(() => null == m ? m : m.map(e => u(l({}, e), {
+  let j = i.useMemo(() => null == m ? m : m.map(e => u(l({}, e), {
       onClick: t => {
         var n;
         null == (n = e.onClick) || n.call(e, t), w(false)
       }
     })), [m, w]),
-    j = i.useCallback(e => {
+    U = i.useCallback(e => {
       R(e)
     }, []);
   return (0, r.jsxs)("div", {
-    onMouseEnter: x,
-    onMouseLeave: L,
+    onMouseEnter: L,
+    onMouseLeave: x,
     onFocus: M,
+    onBlur: k,
     children: [t, (0, r.jsx)(a.RB, {
       targetElementRef: n,
       shouldShow: T,
@@ -121,7 +127,7 @@ let d = function(e) {
       body: _,
       graphic: p,
       size: h,
-      actions: k,
+      actions: j,
       gradientColor: g,
       showCloseButton: A,
       modal: S,
@@ -132,7 +138,7 @@ let d = function(e) {
         align: "custom",
         customOffset: N
       },
-      onNudgeChange: j,
+      onNudgeChange: U,
       onRequestClose: e => {
         w(null != e && "object" == typeof e && "nativeEvent" in e && 0 === e.nativeEvent.clientX && 0 === e.nativeEvent.clientY)
       }

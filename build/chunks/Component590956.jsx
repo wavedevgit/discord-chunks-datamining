@@ -176,7 +176,7 @@ let I = e => {
       }))
     }));
     if (!u) return w();
-    let x = e => (0, r.jsx)(_.vk, v(y({}, e), {
+    let L = e => (0, r.jsx)(_.vk, v(y({}, e), {
       node: t,
       refreshPositionKey: () => I(String(Date.now())),
       nonce: D
@@ -192,7 +192,7 @@ let I = e => {
       autoInvert: true,
       nudgeAlignIntoViewport: true,
       position: "right",
-      renderPopout: x,
+      renderPopout: L,
       positionKey: O,
       targetElementRef: R,
       children: w

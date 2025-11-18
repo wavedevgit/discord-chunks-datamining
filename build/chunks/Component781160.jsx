@@ -335,21 +335,21 @@ var R = function(e, t, n, r) {
 let P = false,
   D, w = {};
 
-function x() {
+function L() {
   if (!P) return;
   let e = null == r ? true : r.getStyle();
-  null == module || R(module, w) ? null != D && cancelAnimationFrame(D) : (w = module, null == r || r.invalidate()), D = requestAnimationFrame(x)
+  null == module || R(module, w) ? null != D && cancelAnimationFrame(D) : (w = module, null == r || r.invalidate()), D = requestAnimationFrame(L)
 }
-let L = false,
+let x = false,
   M = {
     get ringsEnabled() {
-      return L
+      return x
     },
     setRingsEnabled(e) {
-      L = e, null == r || r.invalidate()
+      x = e, null == r || r.invalidate()
     },
     enableAnimationTracking() {
-      P = true, D = requestAnimationFrame(x)
+      P = true, D = requestAnimationFrame(L)
     },
     disableAnimationTracking() {
       P = false, null != D && cancelAnimationFrame(D)

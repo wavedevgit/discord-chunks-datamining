@@ -137,26 +137,26 @@ function D(e, t, n, r) {
 function w() {
   P()
 }
-let x = i().debounce(() => {
+let L = i().debounce(() => {
   U()
 }, T);
 
-function L(e, t, n) {
+function x(e, t, n) {
   (0, h.RF)(e, t, {
     volume: n
-  }), x()
+  }), L()
 }
 
 function M(e, t, n) {
   (0, h.RF)(e, t, {
     muted: n
-  }), x.cancel(), U()
+  }), L.cancel(), U()
 }
 
 function k(e, t, n) {
   (0, h.RF)(e, t, {
     soundboardMuted: n
-  }), x.cancel(), U()
+  }), L.cancel(), U()
 }
 let j = i().debounce(Chunk254238.On, 500, {
   maxWait: 500
@@ -185,7 +185,7 @@ function G(e) {
   null != i && j(i, n, t, {
     muted: _.Z.isLocalMute(n, t),
     volume: r
-  }), L(t, n, r)
+  }), x(t, n, r)
 }
 
 function B(e) {

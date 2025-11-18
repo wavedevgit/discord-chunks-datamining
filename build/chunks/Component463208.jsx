@@ -179,8 +179,8 @@ function T(e) {
     trailing: P,
     validateOn: D = "change",
     size: w = "md",
-    fullWidth: x = false,
-    clearable: L = false,
+    fullWidth: L = false,
+    clearable: x = false,
     showCharacterCount: M = false
   } = e, k = b(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "showCharacterCount"]), {
     fieldProps: j
@@ -212,7 +212,7 @@ function T(e) {
   }, W = i.useRef(null), K = k.readOnly;
   null == K && false === a && (K = true);
   let z = null;
-  ("boolean" == typeof L ? L && null != y && "" !== y && !K : L.show) ? z = (0, r.jsx)(I, {
+  ("boolean" == typeof x ? x && null != y && "" !== y && !K : x.show) ? z = (0, r.jsx)(I, {
     inputSize: w,
     onClick: Y
   }): null != P && (z = (0, r.jsx)(v, {
@@ -235,7 +235,7 @@ function T(e) {
       ref: W,
       disabled: n,
       validation: U,
-      fullWidth: x,
+      fullWidth: L,
       readOnly: K,
       className: o()(p.container, p[w], {
         [p.hasLeading]: null != q,

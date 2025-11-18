@@ -98,8 +98,8 @@ function A(e) {
       canSelect: P = true,
       autoplay: D,
       registerInnerRef: w,
-      registerAnimatedElementRef: x,
-      surrogate: L
+      registerAnimatedElementRef: L,
+      surrogate: x
     } = e,
     M = I(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerInnerRef", "registerAnimatedElementRef", "surrogate"]);
   let [k, j] = i.useState(false), [U, G] = i.useState(true), B = i.useRef(true), {
@@ -146,13 +146,13 @@ function A(e) {
     return null == (e = B.current) ? true : e.call(B)
   }, []);
   let $ = i.useCallback(e => {
-      K.current = e, null == w || w(e), null == x || x(e)
-    }, [w, x]),
+      K.current = e, null == w || w(e), null == L || L(e)
+    }, [w, L]),
     ee = (0, l.Z)(K);
   return null == z || "" === z ? (0, r.jsx)("span", v(y({}, J), {
     ref: $,
     className: o()("emoji", "emoji-text"),
-    children: null != L ? L : p
+    children: null != x ? x : p
   })) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.aO, {
       channelId: g,

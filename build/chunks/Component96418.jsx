@@ -1,57 +1,70 @@
 /** Chunk was on 38029 **/
-/** chunk id: 96418, original params: e,t,n (module,exports,require) **/
+/** chunk id: 96418, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  L: () => s
+  L: () => o
 });
 var Chunk54381 = require("./54381.js"),
-  Chunk481060 = require("./481060.js");
-let s = e => {
+  Chunk481060 = require("./481060.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk582113 = require("./582113.js"),
+  Chunk981631 = require("./981631.js");
+let o = t => {
   let {
-    sku: t,
-    giftCode: s,
-    channelContext: l,
-    customGiftMessage: a
-  } = e;
-  (0, i.ZDy)(async () => {
+    sku: e,
+    giftCode: o,
+    channelContext: c,
+    customGiftMessage: u,
+    analyticsLocations: d
+  } = t;
+  (0, r.ZDy)(async () => {
     let {
-      default: e
+      default: t
     } = await n.e("88742").then(n.bind(n, 535618));
     return n => {
-      var i, o;
-      return (0, r.jsx)(e, (i = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+      var r, l;
+      return (0, i.jsx)(t, (r = function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {},
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(n, t).enumerable
+          }))), i.forEach(function(e) {
+            var i;
+            i = n[e], e in t ? Object.defineProperty(t, e, {
+              value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : t[e] = i
           })
         }
-        return e
-      }({}, n), o = o = {
-        sku: t,
-        giftCode: s,
-        channelContext: l,
-        customGiftMessage: a
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-        var n = Object.keys(e);
+        return t
+      }({}, n), l = l = {
+        sku: e,
+        giftCode: o,
+        channelContext: c,
+        customGiftMessage: u,
+        analyticsLocations: d
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(t, e) {
+        var n = Object.keys(t);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var i = Object.getOwnPropertySymbols(t);
+          n.push.apply(n, i)
         }
         return n
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
-      }), i))
+      })(Object(l)).forEach(function(t) {
+        Object.defineProperty(r, t, Object.getOwnPropertyDescriptor(l, t))
+      }), r))
     }
   }, {
-    modalKey: "social-layer-storefront-gift-code-claim-modal"
+    modalKey: "social-layer-storefront-gift-code-claim-modal",
+    onCloseCallback: () => {
+      l.default.track(a.rMx.SLAYER_STOREFRONT_MODAL_CLOSED, {
+        type: s.tb,
+        sku_id: e.id,
+        application_id: e.applicationId,
+        location_stack: null != d ? d : []
+      })
+    }
   })
 }

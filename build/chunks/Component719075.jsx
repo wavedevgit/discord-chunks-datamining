@@ -25,51 +25,52 @@ let v = e => {
     let {
       product: t,
       prioritizedCurrency: n
-    } = e, c = (0, i.e7)([o.default], () => o.default.getCurrentUser()), f = s.ZP.canUseCollectibles(c), {
-      isDisabled: h
+    } = e, c = (0, i.e7)([o.default], () => o.default.getCurrentUser()), h = (0, f.$l)(), v = s.ZP.canUseCollectibles(c), {
+      isDisabled: x
     } = (0, d.G)(t.skuId), {
-      isPurchased: v,
-      isPartiallyOwnedBundle: x
-    } = (0, p.L)(t), E = (0, u.G1)(t), O = (0, u.rN)(t), S = l.useMemo(() => (0, u.BH)(t, f), [t, f]), y = (0, m.Iw)(t), {
-      checkoutEligiblePrices: j,
-      hasSufficientOrbs: k,
-      shouldCheckoutWithOrbs: I
+      isPurchased: E,
+      isPartiallyOwnedBundle: O
+    } = (0, p.L)(t), S = (0, u.G1)(t), y = (0, u.rN)(t), j = l.useMemo(() => (0, u.BH)(t, v), [t, v]), k = (0, m.Iw)(t), {
+      checkoutEligiblePrices: I,
+      hasSufficientOrbs: T,
+      shouldCheckoutWithOrbs: L
     } = (0, C.Ip)({
       product: t,
-      isPremiumUser: f,
+      isPremiumUser: v,
       prioritizedCurrency: n,
-      hasDiscountOffer: null != y
-    }), T = E && !f;
-    return h ? (0, r.jsx)(a.Text, {
+      hasDiscountOffer: null != k,
+      isRental: h
+    }), B = S && !v;
+    return x ? (0, r.jsx)(a.Text, {
       variant: "text-md/medium",
       color: "text-tertiary",
       lineClamp: 1,
       children: _.intl.string(_.t.wu4gyV)
-    }) : x ? (0, r.jsx)(a.Text, {
+    }) : O ? (0, r.jsx)(a.Text, {
       variant: "text-md/medium",
       color: "text-tertiary",
       lineClamp: 1,
       children: _.intl.string(_.t.BEjTij)
-    }) : v && !T ? (0, r.jsx)(a.Text, {
+    }) : E && !B ? (0, r.jsx)(a.Text, {
       variant: "text-md/medium",
       color: "text-tertiary",
       lineClamp: 1,
       children: _.intl.string(_.t["6cfuDj"])
-    }) : O ? (0, r.jsx)(a.Text, {
+    }) : y ? (0, r.jsx)(a.Text, {
       variant: "text-md/bold",
       lineClamp: 1,
       children: _.intl.string(_.t.nBtvYB)
-    }) : E ? (0, r.jsx)(a.Text, {
+    }) : S ? (0, r.jsx)(a.Text, {
       variant: "text-md/bold",
       lineClamp: 1,
       children: _.intl.string(_.t.rt69oo)
-    }) : 0 === j.length ? null : (0, r.jsx)(g.F, {
-      price: j[0],
-      discount: S,
-      nitroIconType: f ? "default" : true,
+    }) : 0 === I.length ? null : (0, r.jsx)(g.F, {
+      price: I[0],
+      discount: j,
+      nitroIconType: v ? "default" : true,
       nitroIconSize: "sm",
-      discountOfferAmount: y,
-      className: I && !k ? b.insufficientOrbs : true,
+      discountOfferAmount: k,
+      className: L && !T ? b.insufficientOrbs : true,
       variant: "text-md/bold"
     })
   },

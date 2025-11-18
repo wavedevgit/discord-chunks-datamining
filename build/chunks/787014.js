@@ -126,7 +126,7 @@ async function h(e, t) {
     defaultTagSetting: P,
     iconEmoji: D,
     themeColor: w
-  } = t, x = s.Z.getChannel(e);
+  } = t, L = s.Z.getChannel(e);
   return i.Z.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT"
   }), await o.Z.unarchiveThreadIfNecessary(e), r.tn.patch({
@@ -177,8 +177,8 @@ async function h(e, t) {
       type: "CHANNEL_SETTINGS_SUBMIT_SUCCESS",
       channelId: e
     });
-    let n = null == x ? true : x.getGuildId();
-    return null == n || (null == x ? true : x.isThread()) || a.Z.checkGuildTemplateDirty(n), t
+    let n = null == L ? true : L.getGuildId();
+    return null == n || (null == L ? true : L.isThread()) || a.Z.checkGuildTemplateDirty(n), t
   }, e => (i.Z.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT_FAILURE",
     errors: e.body

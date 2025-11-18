@@ -302,19 +302,19 @@ function S(e) {
   }, [D.isUsingKeyboardNavigation]);
   let w = i.useRef(null);
   (0, u.Tbt)(w);
-  let x = s ? u.u2D : u.zJl,
-    L = i.useMemo(() => ({
+  let L = s ? u.u2D : u.zJl,
+    x = i.useMemo(() => ({
       onSelect: O,
       onInteraction: S
     }), [O, S]);
   return (0, r.jsx)(p.p.Provider, {
-    value: L,
+    value: x,
     children: (0, r.jsx)("div", y(E({
       className: o()(m.menu, m[a], _)
     }, D.getContainerProps()), {
       ref: w,
       "aria-label": e["aria-label"],
-      children: (0, r.jsxs)(x, {
+      children: (0, r.jsxs)(L, {
         className: m.scroller,
         children: [0 === A.length && (0, r.jsx)(h.ck, {
           disabled: true,

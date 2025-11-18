@@ -4,13 +4,13 @@
 require.d(exports, {
   O1: () => eA,
   Sg: () => eT,
-  TE: () => ex,
+  TE: () => eL,
   ZP: () => eB,
   aT: () => ej,
   ae: () => eS,
   bL: () => eI,
   hJ: () => eN,
-  iV: () => eL,
+  iV: () => ex,
   jx: () => eP,
   oR: () => ew,
   qz: () => eD,
@@ -312,7 +312,7 @@ function ew(e) {
   }
 }
 
-function ex(e, t, n, r) {
+function eL(e, t, n, r) {
   let i = e.getGuildId(),
     a = (0, _.e7)([w.Z], () => null != i && w.Z.isLurking(i), [i]),
     o = (0, _.e7)([F.ZP, K.default], () => {
@@ -342,7 +342,7 @@ function ex(e, t, n, r) {
   }, s)
 }
 
-function eL(e, t) {
+function ex(e, t) {
   let [n, r] = (0, R.Iu)(e => [e.activeView, e.activeViewType], u.X), a = (0, _.e7)([O.Z], () => O.Z.shouldShowPopup() && O.Z.activeViewType() === e);
   i.useEffect(() => () => {
     (0, R._Q)(e)
@@ -391,7 +391,7 @@ let ej = e => {
     let {
       enabled: t,
       onlyExactMatch: n
-    } = (0, x.zM)("ChannelTextAreaContainer", {
+    } = (0, L.zM)("ChannelTextAreaContainer", {
       autoTrackExposure: false
     }), [r, a] = i.useState(true), o = i.useRef(null);
     return i.useLayoutEffect(() => {
@@ -424,7 +424,7 @@ function eG(e, t) {
     editorClassName: R,
     id: D,
     required: w,
-    disabled: x,
+    disabled: L,
     placeholder: k,
     accessibilityLabel: j,
     channel: U,
@@ -488,7 +488,7 @@ function eG(e, t) {
     canAttachFiles: te,
     canCreateThreads: tt,
     canEveryoneSendMessages: tn
-  } = ex(U, G, e5, x), tr = G.toolbarType === ee.OW.STATIC, ti = !Z.dN.useSetting() && !(0, Q.isAndroidWeb)() && null != window.ResizeObserver, ta = !ti || !(null == (n = G.commands) ? true : n.enabled) || !B || f !== ef.GI, to = (0, L.Z)(), {
+  } = eL(U, G, e5, L), tr = G.toolbarType === ee.OW.STATIC, ti = !Z.dN.useSetting() && !(0, Q.isAndroidWeb)() && null != window.ResizeObserver, ta = !ti || !(null == (n = G.commands) ? true : n.enabled) || !B || f !== ef.GI, to = (0, x.Z)(), {
     fontSize: ts
   } = (0, _.cj)([g.Z], () => ({
     fontSize: g.Z.fontSize
@@ -541,11 +541,11 @@ function eG(e, t) {
       expressionPickerView: tR,
       shouldHideExpressionPicker: tP,
       handleOuterClick: tD
-    } = eL(G, e$),
+    } = ex(G, e$),
     tw = ek(tc, e$),
-    tx = ej(f),
+    tL = ej(f),
     {
-      currentAutocompleteType: tL,
+      currentAutocompleteType: tx,
       handleAutocompleteVisibilityChange: tM
     } = eU(),
     {
@@ -686,8 +686,8 @@ function eG(e, t) {
                 fontSize: ts,
                 spellcheckEnabled: tl,
                 canOnlyUseTextCommands: tU,
-                isEditorIdle: tx,
-                currentAutocompleteType: tL,
+                isEditorIdle: tL,
+                currentAutocompleteType: tx,
                 className: o()({
                   [ep.textAreaThreadCreation]: G === ee.Ie.THREAD_CREATION,
                   [ep.profileBioInput]: G === ee.Ie.PROFILE_BIO_INPUT,
@@ -713,7 +713,7 @@ function eG(e, t) {
           canSendSoundmoji: null == (u = G.soundmoji) ? true : u.allowSending,
           textValue: f,
           focused: B,
-          isEditorIdle: tx,
+          isEditorIdle: tL,
           expressionPickerView: tR,
           type: G,
           targetRef: eX,

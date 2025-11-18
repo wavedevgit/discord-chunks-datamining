@@ -38,9 +38,9 @@ function E(e, t, n) {
     linkBehavior: R,
     keyboardNavigationBehavior: P,
     shouldSelectOnPressUp: D
-  } = r.Co.get(t), w = (0, i.mp)(), x = (0, f.useRef)(null), L = () => {
+  } = r.Co.get(t), w = (0, i.mp)(), L = (0, f.useRef)(null), x = () => {
     var e;
-    null === n.current || (null == x.current || S.key === x.current) && (null == (e = n.current) ? true : e.contains(document.activeElement)) || (0, u.e)(n.current)
+    null === n.current || (null == L.current || S.key === L.current) && (null == (e = n.current) ? true : e.contains(document.activeElement)) || (0, u.e)(n.current)
   }, M = {}, k = e.hasChildItems, j = t.selectionManager.isLink(S.key);
   if (null != S && "expandedKeys" in t) {
     let e = null == (O = (v = t.collection).getChildren) ? true : O.call(v, S.key);
@@ -68,7 +68,7 @@ function E(e, t, n) {
     isVirtualized: A,
     shouldSelectOnPressUp: e.shouldSelectOnPressUp || D,
     onAction: N || (null == (E = S.props) ? true : E.onAction) ? (0, a.t)(null == (y = S.props) ? true : y.onAction, N ? () => N(S.key) : true) : true,
-    focus: L,
+    focus: x,
     linkBehavior: R
   }), B = e => {
     if (!e.currentTarget.contains(e.target) || !n.current || !document.activeElement) return;
@@ -127,7 +127,7 @@ function E(e, t, n) {
         }
     }
   }, Z = e => {
-    if (x.current = S.key, e.target !== n.current) {
+    if (L.current = S.key, e.target !== n.current) {
       (0, _.E)() || t.selectionManager.setFocusedKey(S.key);
       return
     }

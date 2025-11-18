@@ -36,14 +36,14 @@ function f(e) {
     eventCapture: N,
     assetLoader: R,
     onLoad: P
-  } = e, D = i.useContext(l.S), w = (0, s.C)(), x = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : w, [L, M] = i.useState(true), k = i.useRef(null), {
+  } = e, D = i.useContext(l.S), w = (0, s.C)(), L = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : w, [x, M] = i.useState(true), k = i.useRef(null), {
     rive: j,
     RiveComponent: U
   } = (0, o.useRive)({
     eventTarget: null == E ? true : E.current,
     buffer: f,
     autoplay: _,
-    stateMachines: L,
+    stateMachines: x,
     artboard: b,
     useOffscreenRenderer: true,
     layout: new o.Layout({
@@ -96,13 +96,13 @@ function f(e) {
       j.resizeDrawingSurfaceToCanvas()
     }, 100))
   }, [j, h]), i.useEffect(() => {
-    null != j && null == L && (M(j.stateMachineNames), j.reset({
+    null != j && null == x && (M(j.stateMachineNames), j.reset({
       stateMachines: j.stateMachineNames,
       autoplay: _,
       artboard: b,
       autoBind: true
     }), j.setupRiveListeners())
-  }, [j, _, L, b]);
+  }, [j, _, x, b]);
   let G = i.useRef(0);
   i.useEffect(() => {
     if (null == j) return;
@@ -116,10 +116,10 @@ function f(e) {
   }, [j, D.reducedMotion.enabled, y]);
   let B = i.useRef(false);
   return i.useEffect(() => {
-    if (null != j) return !x && B.current && j.isPlaying && G.current > 0 ? j.pause() : x && !j.isPlaying && B.current && j.play(), () => {
-      null != j && x && (B.current = null != j.frameRequestId)
+    if (null != j) return !L && B.current && j.isPlaying && G.current > 0 ? j.pause() : L && !j.isPlaying && B.current && j.play(), () => {
+      null != j && L && (B.current = null != j.frameRequestId)
     }
-  }, [j, x]), (0, r.jsx)(U, {
+  }, [j, L]), (0, r.jsx)(U, {
     className: p,
     style: g
   })

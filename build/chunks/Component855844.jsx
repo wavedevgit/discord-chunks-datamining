@@ -39,8 +39,8 @@ function E(e) {
     renderDeafenCheckbox: S = false,
     renderInputProfiles: N = false,
     renderOutputDevices: Z = false,
-    renderOutputVolume: D = false,
-    renderInputDevices: k = false,
+    renderOutputVolume: k = false,
+    renderInputDevices: D = false,
     renderInputVolume: M = false,
     maybeRenderInputMeter: A = false,
     renderSettingsButton: R = false
@@ -89,35 +89,35 @@ function E(e) {
       onClose: I,
       navId: "audio-device-context",
       variant: "fixed",
-      "aria-label": w.intl.string(w.t.ZR1Ss6),
-      className: C.menu,
+      "aria-label": C.intl.string(C.t.ZR1Ss6),
+      className: w.menu,
       children: [(0, r.jsxs)(a.kSQ, {
-        children: [k && F, N && H, Z && U]
+        children: [D && F, N && H, Z && U]
       }), (0, r.jsxs)(a.kSQ, {
         children: [M && z, A && Q && (0, r.jsx)(a.II_, {
           id: "input-device-meter",
-          control: () => (0, r.jsx)(O.Z, {
-            notchBackground: O._.BLACK,
+          control: () => (0, r.jsx)(j.Z, {
+            notchBackground: j._.BLACK,
             location: {
               section: x.jXE.CONTEXT_MENU
             },
             meterOnly: true,
-            containerClassName: C.customMenuItem,
-            notchClassName: C.customNotches
+            containerClassName: w.customMenuItem,
+            notchClassName: w.customNotches
           })
-        }), D && B]
+        }), k && B]
       }), (0, r.jsxs)(a.kSQ, {
-        children: [T && j.isPlatformEmbedded && K ? (0, r.jsx)(a.S89, {
+        children: [T && O.isPlatformEmbedded && K ? (0, r.jsx)(a.S89, {
           checked: X === x.pM4.PUSH_TO_TALK,
           id: "input-mode",
-          label: w.intl.string(w.t.Q8gkVL),
+          label: C.intl.string(C.t.Q8gkVL),
           action: () => s.Z.setMode(G, true, true, {
             analyticsLocations: L
           }),
           disabled: Y === _._.STUDIO
         }) : null, S && (0, r.jsx)(a.S89, {
           id: "deafen",
-          label: w.intl.string(w.t.wjcRFX),
+          label: C.intl.string(C.t.wjcRFX),
           action: () => s.Z.toggleSelfDeaf({
             context: q,
             location: "AudioDeviceMenu"

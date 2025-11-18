@@ -68,8 +68,8 @@ function w(e) {
   var t, n, a, {
       title: P,
       type: w,
-      guildBoostProps: x,
-      analyticsSource: L,
+      guildBoostProps: L,
+      analyticsSource: x,
       analyticsLocation: M,
       body: k,
       context: j,
@@ -106,7 +106,7 @@ function w(e) {
       footerClassName: ep
     } = e,
     eh = R(e, ["title", "type", "guildBoostProps", "analyticsSource", "analyticsLocation", "body", "context", "glowUp", "modalClassName", "modalContentClassName", "artContainerClassName", "artClassName", "headerClassName", "bodyClassName", "transitionState", "onClose", "onSubscribeClick", "onSubscribeFinish", "onSecondaryClick", "secondaryCTA", "secondaryCTAClassName", "subscribeButtonText", "showNewBadge", "showBetaBadge", "enableArtBoxShadow", "subscriptionTier", "isLoading", "hideBackButton", "backButtonText", "showEnhancedUpsell", "useSubscribeButtonGradient", "subscribeButtonClassname", "hidePremiumOfferUpsell", "children", "LeadingComponent", "backgroundElements", "smallText", "footerClassName"]);
-  let em = null != x,
+  let em = null != L,
     eg = (0, b.N)(),
     eE = (0, E.N)(),
     eb = !ec && ((null == eg || null == (t = eg.subscription_trial) ? true : t.sku_id) === en || (0, O.Wp)(eE, en)) && !em,
@@ -116,8 +116,8 @@ function w(e) {
     eO = {
       analyticsLocation: M,
       analyticsLocations: ey,
-      analyticsSource: L,
-      guildBoostProps: x,
+      analyticsSource: x,
+      guildBoostProps: L,
       type: w
     },
     ev = i.useRef(eO);
@@ -155,7 +155,7 @@ function w(e) {
   let eA = () => {
       if (em) return (0, r.jsx)(p.Z, {
         analyticsLocation: M,
-        guild: x.guild,
+        guild: L.guild,
         onClose: W
       });
       let e = eo ? A.intl.string(A.t.pj0XBN) : true;

@@ -25,9 +25,11 @@ let c = () => {
       maximum: require,
       variant: f,
       override: {
-        background: p,
-        gradientStart: m,
-        gradientEnd: E
+        default: {
+          background: p,
+          gradientStart: m,
+          gradientEnd: E
+        }
       }
     }), (0, Chunk54381.jsx)(Chunk29594.dv, {}), (0, Chunk54381.jsx)(Chunk29594.BZ, {
       children: (0, Chunk54381.jsx)(Chunk481060.oil, {
@@ -68,8 +70,12 @@ let c = () => {
         label: "Variant"
       })
     }), (0, Chunk54381.jsx)(Chunk29594.dv, {}), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      variant: "text-md/semibold",
+      variant: "text-lg/semibold",
+      color: "status-danger",
       children: "To use overrides, the variant must be set to UNSET"
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      variant: "text-md/normal",
+      children: 'Note: this component allows setting overrides per theme. For simplicity in this story, we only set the "default" override which applies to all themes'
     }), (0, Chunk54381.jsx)(Chunk29594.BZ, {
       children: (0, Chunk54381.jsx)(Chunk481060.oil, {
         value: p,

@@ -44,7 +44,8 @@ async function d(e) {
     onRedeemStart: o,
     onRedeemSucceed: d,
     onRedeemFail: f,
-    shouldRefetchBalance: _ = true
+    shouldRefetchBalance: _ = true,
+    isRental: p = false
   } = e;
   i.Z.wait(() => {
     i.Z.dispatch({
@@ -54,7 +55,8 @@ async function d(e) {
   }), null == o || o();
   try {
     let e = {
-        checkout_session_id: n
+        checkout_session_id: n,
+        is_rental: p
       },
       a = (await r.tn.post({
         url: l.ANM.VIRTUAL_CURRENCY_SKU_REDEEM(t),

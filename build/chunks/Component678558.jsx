@@ -93,8 +93,8 @@ let P = e => {
     closeLayer: P = () => {},
     pauseAnimation: D = false,
     applicationId: w,
-    handleSubscribeModalClose: x,
-    withHighlight: L = false,
+    handleSubscribeModalClose: L,
+    withHighlight: x = false,
     icon: M,
     intent: k,
     useExpressiveButton: j = false
@@ -122,7 +122,7 @@ let P = e => {
         closeLayer: P,
         inPopout: B,
         applicationId: w,
-        handleSubscribeModalClose: x,
+        handleSubscribeModalClose: L,
         intent: k
       }), F(false)
     }, q = g.Z.getPremiumTypeSubscription(), X = (0, r.jsxs)("div", {
@@ -167,7 +167,7 @@ let P = e => {
     size: u.zx.Sizes.SMALL
   }, U), {
     className: o()(U.className, {
-      [I.buttonHighlighted]: L
+      [I.buttonHighlighted]: x
     }),
     submitting: Z,
     onClick: z,

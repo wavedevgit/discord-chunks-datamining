@@ -85,11 +85,11 @@ function D(e, t) {
   return i
 }
 let w = 44,
-  x = {
+  L = {
     keys: ["label"]
   };
 
-function L(e) {
+function x(e) {
   return e.label
 }
 
@@ -174,7 +174,7 @@ let j = Chunk473749.forwardRef(function(e, t) {
     popoutWidth: V,
     filter: H = true,
     debounceTime: K,
-    renderOptionLabel: z = L,
+    renderOptionLabel: z = x,
     onSearchChange: q,
     renderOptionPrefix: X = () => null,
     renderOptionSuffix: Q = () => null,
@@ -207,12 +207,12 @@ let j = Chunk473749.forwardRef(function(e, t) {
   } = (0, O.ZP)(), ey = i.useRef(null), [eO, ev] = i.useState(null), [eI, eT] = i.useState(false), [eS, eA] = i.useState(null), [eC, eN] = i.useState(false), eR = i.useRef(null), eP = i.useRef(null), {
     options: eD,
     loading: ew,
-    onQueryChange: ex
+    onQueryChange: eL
   } = M({
     active: eI,
     loadableOptions: n,
     debounceTime: K
-  }), eL = i.useMemo(() => k(eD, a), [eD, a]), eM = i.useMemo(() => eL.map(e => e.value), [eL]), ek = eL[eL.length - 1], ej = (0, f.Z)(ek), eU = i.useId(), eG = i.useId(), eB = i.useCallback(e => {
+  }), ex = i.useMemo(() => k(eD, a), [eD, a]), eM = i.useMemo(() => ex.map(e => e.value), [ex]), ek = ex[ex.length - 1], ej = (0, f.Z)(ek), eU = i.useId(), eG = i.useId(), eB = i.useCallback(e => {
     eI === e || D || (eT(e), e ? null == b || b() : null == v || v())
   }, [D, v, b, eI]), eZ = i.useCallback(e => {
     eI && !e && eB(false)
@@ -289,7 +289,7 @@ let j = Chunk473749.forwardRef(function(e, t) {
     eI || (h ? eA("") : null != ek && eA(ek.label))
   }, [h, ek, eI]), i.useLayoutEffect(() => {
     h && eA("")
-  }, [h, eL.length]);
+  }, [h, ex.length]);
   let eq = i.useCallback(function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     if (null == e) return void l(h ? [] : true);
@@ -324,7 +324,7 @@ let j = Chunk473749.forwardRef(function(e, t) {
       }
     }, [eB, eI]),
     eJ = eD;
-  eC && null != eS && false !== H && (eJ = "function" == typeof H ? H(eD, eS) : (0, s.Lu)(eD, eS, null != ea ? ea : x)), i.useEffect(() => {
+  eC && null != eS && false !== H && (eJ = "function" == typeof H ? H(eD, eS) : (0, s.Lu)(eD, eS, null != ea ? ea : L)), i.useEffect(() => {
     let e = eR.current;
     null == e || e.scrollToTop()
   }, [eS]), i.useEffect(() => {
@@ -335,7 +335,7 @@ let j = Chunk473749.forwardRef(function(e, t) {
     {
       focusPreviousItem: e1,
       focusNextItem: e3
-    } = Z(e0, ey, eL);
+    } = Z(e0, ey, ex);
   return (0, r.jsxs)(u.bG, {
     navigator: eW,
     children: [(0, r.jsx)(g.y, {
@@ -425,7 +425,7 @@ let j = Chunk473749.forwardRef(function(e, t) {
                     }),
                     children: (0, r.jsx)(e$, {
                       query: eS,
-                      selectedOptions: eL,
+                      selectedOptions: ex,
                       loading: ew,
                       renderOptionPrefix: X,
                       renderOptionSuffix: Q,
@@ -447,7 +447,7 @@ let j = Chunk473749.forwardRef(function(e, t) {
                         null == (t = ey.current) || t.setSelectionRange(0, null != (n = null == eS ? true : eS.length) ? n : 0), null == ei || ei(e)
                       },
                       onChange: e => {
-                        ex(e), null == q || q(e), eA(e), eB(true), eN(true)
+                        eL(e), null == q || q(e), eA(e), eB(true), eN(true)
                       },
                       onKeyDown: u,
                       activeDescendant: eO,
@@ -473,7 +473,7 @@ let j = Chunk473749.forwardRef(function(e, t) {
                   dotRadius: 3.5,
                   themed: true
                 }) : (0, r.jsxs)(r.Fragment, {
-                  children: [d && (null != eS && "" !== eS || eL.length > 0) ? (0, r.jsx)(p.P3F, {
+                  children: [d && (null != eS && "" !== eS || ex.length > 0) ? (0, r.jsx)(p.P3F, {
                     "aria-label": T.intl.string(T.t.VkKicb),
                     "aria-controls": i,
                     onClick: eX,
@@ -499,10 +499,10 @@ let j = Chunk473749.forwardRef(function(e, t) {
           }
         }))
       }
-    }), eL.length > 0 && null != el && (0, r.jsx)("div", {
+    }), ex.length > 0 && null != el && (0, r.jsx)("div", {
       children: (0, r.jsx)(F, {
         listRef: e0,
-        selectedOptions: eL,
+        selectedOptions: ex,
         selectValue: function(e) {
           let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
           eq(e, t)

@@ -363,7 +363,7 @@ function q(e) {
         variant: "primary"
       }]
     }, i), {
-      children: (0, L.Z)(n) && (0, r.jsx)(M.Z, {
+      children: (0, x.Z)(n) && (0, r.jsx)(M.Z, {
         children: F.intl.format(F.t.COW3Xn, {
           platformName: e.name
         })
@@ -416,7 +416,7 @@ function q(e) {
     } = J.current;
     null != e && (g(e), h.Z.setVisibility(n.type, n.id, e), R(null)), null != t && (T(t), h.Z.setMetadataVisibility(n.type, n.id, t), w(null))
   }, [n]);
-  let ed = (0, x.wy)("ConnectedAccount");
+  let ed = (0, L.wy)("ConnectedAccount");
   return (0, r.jsxs)("div", {
     className: o()(V.connection, {
       [V.connectionUserSettingsRedesign]: ed

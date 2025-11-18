@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $7: () => j,
-  $8: () => eL,
+  $8: () => ex,
   $X: () => eb,
   $e: () => f,
   $n: () => eQ,
@@ -37,7 +37,7 @@ require.d(exports, {
   Qh: () => e5,
   RU: () => eu,
   Rg: () => W,
-  Rr: () => L,
+  Rr: () => x,
   Rt: () => er,
   Se: () => e7,
   Si: () => p,
@@ -89,7 +89,7 @@ require.d(exports, {
   nH: () => eB,
   nS: () => h,
   o4: () => I,
-  pH: () => ex,
+  pH: () => eL,
   pj: () => P,
   rB: () => e_,
   rV: () => C,
@@ -326,8 +326,8 @@ let R = Object.freeze({
   P = new Set(["511651880837840896"]),
   D = 16,
   w = 8,
-  x = 5,
-  L = 30,
+  L = 5,
+  x = 30,
   M = 2,
   k = 3,
   j = 28,
@@ -430,17 +430,17 @@ let eA = Object.freeze({
   eP = 0x3200000,
   eD = 0x6400000,
   ew = 5,
-  ex = {
+  eL = {
     [Chunk981631.Eu4.NONE]: ew,
     [Chunk981631.Eu4.TIER_1]: 10,
     [Chunk981631.Eu4.TIER_2]: 15,
     [Chunk981631.Eu4.TIER_3]: 30
   },
-  eL = {
-    [Chunk981631.Eu4.NONE]: ex[Chunk981631.Eu4.NONE],
-    [Chunk981631.Eu4.TIER_1]: ex[Chunk981631.Eu4.NONE] + ex[Chunk981631.Eu4.TIER_1],
-    [Chunk981631.Eu4.TIER_2]: ex[Chunk981631.Eu4.NONE] + ex[Chunk981631.Eu4.TIER_1] + ex[Chunk981631.Eu4.TIER_2],
-    [Chunk981631.Eu4.TIER_3]: ex[Chunk981631.Eu4.NONE] + ex[Chunk981631.Eu4.TIER_1] + ex[Chunk981631.Eu4.TIER_2] + ex[Chunk981631.Eu4.TIER_3]
+  ex = {
+    [Chunk981631.Eu4.NONE]: eL[Chunk981631.Eu4.NONE],
+    [Chunk981631.Eu4.TIER_1]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1],
+    [Chunk981631.Eu4.TIER_2]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1] + eL[Chunk981631.Eu4.TIER_2],
+    [Chunk981631.Eu4.TIER_3]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1] + eL[Chunk981631.Eu4.TIER_2] + eL[Chunk981631.Eu4.TIER_3]
   },
   eM = {
     [Chunk981631.Eu4.NONE]: eO,
@@ -458,7 +458,7 @@ let eA = Object.freeze({
         screenShareQualityFramerate: 30,
         screenShareQualityResolution: "720p",
         soundboardSounds: eM[Chunk981631.Eu4.NONE],
-        stickers: eL[Chunk981631.Eu4.NONE],
+        stickers: ex[Chunk981631.Eu4.NONE],
         stageVideoUsers: Chunk981631.B9o
       }
     },
@@ -471,7 +471,7 @@ let eA = Object.freeze({
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "720p",
         soundboardSounds: eM[Chunk981631.Eu4.TIER_1],
-        stickers: eL[Chunk981631.Eu4.TIER_1],
+        stickers: ex[Chunk981631.Eu4.TIER_1],
         stageVideoUsers: Chunk981631.B9o
       }
     },
@@ -484,7 +484,7 @@ let eA = Object.freeze({
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
         soundboardSounds: eM[Chunk981631.Eu4.TIER_2],
-        stickers: eL[Chunk981631.Eu4.TIER_2],
+        stickers: ex[Chunk981631.Eu4.TIER_2],
         stageVideoUsers: Chunk981631.eez
       }
     },
@@ -497,7 +497,7 @@ let eA = Object.freeze({
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
         soundboardSounds: eM[Chunk981631.Eu4.TIER_3],
-        stickers: eL[Chunk981631.Eu4.TIER_3],
+        stickers: ex[Chunk981631.Eu4.TIER_3],
         stageVideoUsers: Chunk981631.RcX
       }
     }
@@ -514,7 +514,7 @@ let eB = {
   "511651876987469824": D,
   "511651885459963904": D,
   "944037208325619722": w,
-  "642251038925127690": x
+  "642251038925127690": L
 };
 var eZ = function(e) {
   return e.HIGH_STREAMING_QUALITY = "high_streaming_quality", e.MID_STREAMING_QUALITY = "mid_streaming_quality", e

@@ -1,7 +1,7 @@
 /** Chunk was on 91394 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => w,
+  default: () => I,
   openDevToolsPopout: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -50,7 +50,7 @@ function O() {
     windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
     withTitleBar: true,
-    children: (0, Chunk54381.jsx)(w, {
+    children: (0, Chunk54381.jsx)(I, {
       mobile: false,
       isPopout: true
     })
@@ -164,7 +164,7 @@ function P() {
   })
 }
 
-function w(e) {
+function I(e) {
   let {
     mobile: t,
     isPopout: n = false

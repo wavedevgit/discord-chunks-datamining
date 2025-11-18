@@ -162,7 +162,8 @@ class N extends Chunk473749.PureComponent {
       searchLimit: Chunk55160,
       searchTotalResults: Chunk442837,
       suggestions: Chunk481060,
-      onSelectSuggestion: this.handleSelectSuggestion
+      onSelectSuggestion: this.handleSelectSuggestion,
+      selectedGIF: this.props.selectedGIF
     })
   }
   render() {
@@ -261,6 +262,7 @@ let R = Chunk473749.forwardRef((e, t) => {
     searchOffset: 0,
     searchTotalResults: p.Z.getResultItems().length,
     searchLimit: null,
-    searchBarRef: g
+    searchBarRef: g,
+    selectedGIF: e.selectedGIF
   }))
 })

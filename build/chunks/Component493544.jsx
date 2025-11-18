@@ -279,7 +279,7 @@ let P = function(e) {
     })
   }
 
-  function x() {
+  function L() {
     return null == t ? null : (0, i.jsx)(f.f6W, {
       theme: h,
       children: e => (0, i.jsx)("div", {
@@ -307,7 +307,7 @@ let P = function(e) {
     children: A((e, t) => (0, i.jsxs)(l.animated.div, {
       style: e,
       className: m.standardSidebarView,
-      children: [!t && x(), w()]
+      children: [!t && L(), w()]
     }))
   })
 }

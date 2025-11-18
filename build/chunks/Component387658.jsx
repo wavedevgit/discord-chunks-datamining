@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk202874 = require("./202874.js"),
   Chunk698342 = require("./698342.js");
-let L = 5,
+let x = 5,
   M = "placeholder",
   k = [, , , , , ].fill(M);
 
@@ -64,7 +64,7 @@ function j(e) {
       channelId: a.channel.id
     }))
   }, [a, o, l, c]), f = (null != (n = null == (t = o.options) ? true : t.length) ? n : 0) > 0, p = i.useMemo(() => (0, C.ae)(o.displayDescription, true), [o.displayDescription]), h = i.useMemo(() => (0, r.jsxs)("div", {
-    className: x.commandTextContainer,
+    className: L.commandTextContainer,
     children: [(0, r.jsx)(u.Text, {
       variant: "text-sm/semibold",
       color: "header-primary",
@@ -77,10 +77,10 @@ function j(e) {
     })]
   }), [o.displayName, p]);
   return (0, r.jsxs)(u.P3F, {
-    className: x.command,
+    className: L.command,
     onClick: d,
     children: [(0, r.jsx)(u.Rny, {
-      className: x.commandFocusBlock,
+      className: L.commandFocusBlock,
       children: h
     }), f ? (0, r.jsx)(s.F, {}) : (0, r.jsx)(G, {
       context: a,
@@ -200,13 +200,13 @@ function B(e) {
   } = e;
   return 0 === n.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: x.commandListHeader,
+      className: L.commandListHeader,
       children: [(0, r.jsx)(u.Heading, {
         variant: "heading-sm/semibold",
         children: a
       }), s]
     }), (0, r.jsx)("ul", {
-      className: x.commandContainer,
+      className: L.commandContainer,
       "aria-label": a,
       children: n.map((e, n) => e === M ? (0, r.jsx)(U, {}, e + n) : (0, r.jsx)(j, {
         context: t,
@@ -260,12 +260,12 @@ function Z(e) {
   let y = (0, T.Z)({
     context: n,
     commands: E,
-    limit: L
+    limit: x
   });
   return (i.useEffect(() => {
     l(E.length > 0)
   }, [l, E]), _ || 0 !== E.length) ? (0, r.jsxs)("ul", {
-    className: x.contentContainer,
+    className: L.contentContainer,
     children: [(0, r.jsx)(B, {
       context: n,
       section: p,

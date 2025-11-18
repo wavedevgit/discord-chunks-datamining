@@ -228,7 +228,7 @@ function w(e) {
   delete y[t.id]
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t
   } = e, n = false;
@@ -236,7 +236,7 @@ function x(e) {
   return n
 }
 
-function L(e) {
+function x(e) {
   let {
     channels: t
   } = e, n = new Set(t.map(e => e.id)), r = false;
@@ -277,7 +277,7 @@ let k = new M(Chunk570140.Z, {
   THREAD_MEMBERS_UPDATE: I,
   THREAD_UPDATE: D,
   THREAD_DELETE: w,
-  CHANNEL_UPDATES: L,
+  CHANNEL_UPDATES: x,
   THREAD_MEMBER_LIST_UPDATE: T,
   USER_UPDATE: S,
   PRESENCE_UPDATES: A,
@@ -286,7 +286,7 @@ let k = new M(Chunk570140.Z, {
   GUILD_MEMBER_REMOVE: S,
   PRESENCES_REPLACE: R,
   GUILD_MEMBERS_CHUNK_BATCH: P,
-  GUILD_ROLE_UPDATE: x,
-  GUILD_ROLE_DELETE: x,
+  GUILD_ROLE_UPDATE: L,
+  GUILD_ROLE_DELETE: L,
   PASSIVE_UPDATE_V2: C
 })

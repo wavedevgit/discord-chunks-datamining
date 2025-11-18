@@ -84,7 +84,7 @@ function f(e) {
     e !== P.current && (P.current = e, I(e))
   }, []), C = i.useCallback(e => {
     e !== D.current && (D.current = e, S(e))
-  }, []), N = _ || v, R = p || T, P = i.useRef(null), D = i.useRef(null), w = i.useRef(E), x = null != m, L = d(m), M = d(f), k = d(g), j = i.useCallback(() => {
+  }, []), N = _ || v, R = p || T, P = i.useRef(null), D = i.useRef(null), w = i.useRef(E), L = null != m, x = d(m), M = d(f), k = d(g), j = i.useCallback(() => {
     if (!P.current || !D.current) return;
     let e = {
       placement: t,
@@ -112,10 +112,10 @@ function f(e) {
     U.current = false
   }), []), s(() => {
     if (N && (P.current = N), R && (D.current = R), N && R) {
-      if (L.current) return L.current(N, R, j);
+      if (x.current) return x.current(N, R, j);
       j()
     }
-  }, [N, R, j, L, x]);
+  }, [N, R, j, x, L]);
   let G = i.useMemo(() => ({
       reference: P,
       floating: D,

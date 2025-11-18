@@ -35,13 +35,13 @@ function y(e) {
     application: N
   } = (0, h.G)(), {
     fetched: P,
-    hasAlreadyLinked: w,
-    canStartAuthorization: I,
+    hasAlreadyLinked: I,
+    canStartAuthorization: w,
     startAuthorization: k
   } = (0, c.F)(N), R = (0, x.ZP)(O), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == N ? true : N.id));
   return null != T && null != T.edit_profile_upsell_image && null != N && P ? (0, a.jsx)(d.ZP, {
     bypassAutoDismiss: true,
-    contentTypes: w ? A ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : I ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+    contentTypes: I ? A ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : w ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,

@@ -2,7 +2,6 @@
 /** chunk id: 795448, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gk: () => s,
   Ni: () => o,
   PV: () => a,
   d$: () => i
@@ -26,11 +25,5 @@ function o(e) {
   r.Z.dispatch({
     type: "GIFT_INTENT_FLOW_PURCHASED_GIFT",
     recipientUserId: e
-  })
-}
-
-function s() {
-  Chunk570140.Z.dispatch({
-    type: "FRIENDS_TAB_BADGE_DISMISS"
   })
 }

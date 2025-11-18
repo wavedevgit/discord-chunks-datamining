@@ -1,7 +1,7 @@
 /** Chunk was on 43342 **/
 /** chunk id: 659580, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => w
+  default: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -27,20 +27,20 @@ var Chunk990547 = require("./990547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk895634 = require("./895634.js");
 
-function w(e) {
+function C(e) {
   let {
     onClose: t,
     renderOutputDevices: n = false,
-    renderInputDevices: w = false,
-    renderInputProfiles: C = false,
+    renderInputDevices: C = false,
+    renderInputProfiles: w = false,
     renderInputModes: E = false,
     renderInputVolume: I = false,
     renderOutputVolume: T = false,
     renderDeafen: S = false,
     minimal: N = false,
     onSelect: Z,
-    appContext: D,
-    onInteraction: k
+    appContext: k,
+    onInteraction: D
   } = e, {
     analyticsLocations: M
   } = (0, u.ZP)();
@@ -51,7 +51,7 @@ function w(e) {
       location_stack: M
     }
   });
-  let A = (0, j.Z)(D),
+  let A = (0, O.Z)(k),
     R = (0, p.M)({
       deviceType: x.h7.AUDIO_INPUT,
       analyticsLocations: M,
@@ -70,18 +70,18 @@ function w(e) {
     z = l.Yn.DEFAULT,
     B = v.Z.isSelfDeaf(z),
     q = (0, o.e7)([v.Z], () => v.Z.getMode()),
-    W = q === O.pM4.VOICE_ACTIVITY ? O.pM4.PUSH_TO_TALK : O.pM4.VOICE_ACTIVITY;
+    W = q === j.pM4.VOICE_ACTIVITY ? j.pM4.PUSH_TO_TALK : j.pM4.VOICE_ACTIVITY;
   return (0, r.jsx)(c.Z, {
-    object: O.qAy.CONTEXT_MENU,
+    object: j.qAy.CONTEXT_MENU,
     children: (0, r.jsxs)(a.v2r, {
       onSelect: Z,
-      onInteraction: k,
+      onInteraction: D,
       className: P.menu,
       onClose: t,
       navId: "audio-device-context",
       variant: "fixed",
       "aria-label": _.intl.string(_.t.ZR1Ss6),
-      children: [w && R, n && L, C && F, !N && E && V !== h._.STUDIO ? (0, r.jsx)(a.kSQ, {
+      children: [C && R, n && L, w && F, !N && E && V !== h._.STUDIO ? (0, r.jsx)(a.kSQ, {
         label: _.intl.string(_.t["pS+K2L"]),
         children: U
       }) : null, (0, r.jsxs)(a.kSQ, {
@@ -93,8 +93,8 @@ function w(e) {
             location: "AudioDeviceMenu"
           }),
           checked: B
-        }, "self-deafen") : null, N && w && y.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
-          checked: q === O.pM4.PUSH_TO_TALK,
+        }, "self-deafen") : null, N && C && y.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
+          checked: q === j.pM4.PUSH_TO_TALK,
           id: "input-mode",
           label: _.intl.string(_.t.Q8gkVL),
           action: () => s.Z.setMode(W, true, true, {

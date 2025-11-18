@@ -43,9 +43,7 @@ let P = e => {
     } = e, {
       noCache: j,
       includeUnpublished: T
-    } = (0, _.Z)(), P = g.Z.useConfig({
-      location: "CollectiblesFeedShop"
-    }).enabled && C === I.AW.ORBS, N = (n = function(e) {
+    } = (0, _.Z)(), P = (0, g.Pc)("CollectiblesFeedShop") && C === I.AW.ORBS, N = (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

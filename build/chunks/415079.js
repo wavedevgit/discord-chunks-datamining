@@ -106,7 +106,7 @@ let R = ["continue", "continuePrimaryKey", "advance"],
   P = {},
   D = new WeakMap,
   w = new WeakMap,
-  x = {
+  L = {
     get(e, t) {
       if (!R.includes(t)) return e[t];
       let n = P[t];
@@ -115,10 +115,10 @@ let R = ["continue", "continuePrimaryKey", "advance"],
       }), n
     }
   };
-async function* L(...e) {
+async function* x(...e) {
   let t = this;
   if (t instanceof IDBCursor || (t = await t.openCursor(...e)), !t) return;
-  let n = new Proxy(t, x);
+  let n = new Proxy(t, L);
   for (w.set(n, t), g.set(n, I(t)); t;) yield n, t = await (D.get(n) || t.continue()), D.delete(n)
 }
 
@@ -127,7 +127,7 @@ function M(e, t) {
 }
 b(e => ({
   ...e,
-  get: (t, n, r) => M(t, n) ? L : e.get(t, n, r),
+  get: (t, n, r) => M(t, n) ? x : e.get(t, n, r),
   has: (t, n) => M(t, n) || e.has(t, n)
 }));
 let k = "sprigReplayIframeLoaded",
@@ -557,23 +557,23 @@ let ev = new class {
   eT, eS, eA, eC, eN, eR, eP = [],
   eD = false,
   ew = 0,
-  ex = false,
   eL = false,
+  ex = false,
   eM = [],
   ek = false,
-  ej = () => ex && !eD && Date.now() <= eA,
+  ej = () => eL && !eD && Date.now() <= eA,
   eU = ({
     apiUrl: e,
     config: t,
     triggerSnapshot: n,
     forceInit: r = false
   }) => {
-    ex && !r || (l.a.isStorageAvailable ? (eP = [], eM.splice(0), eI.splice(0), ew = 0, eN = n, eS = e, eT = {
+    eL && !r || (l.a.isStorageAvailable ? (eP = [], eM.splice(0), eI.splice(0), ew = 0, eN = n, eS = e, eT = {
       responseGroupUuid: t.responseGroupUuid,
       surveyId: t.surveyId,
       userAgent: t.userAgent,
       sdkVersion: t.sdkVersion
-    }, eC = t.maxDurationSeconds, eH(), ex || (eR = window.setInterval(eF, 500)), ex = true) : eD = true)
+    }, eC = t.maxDurationSeconds, eH(), eL || (eR = window.setInterval(eF, 500)), eL = true) : eD = true)
   },
   eG = [_.Drag, _.Input, _.MediaInteraction, _.MouseInteraction, _.MouseMove, _.Scroll, _.Selection, _.TouchMove],
   eB = e => e.type === f.Custom || e.type === f.IncrementalSnapshot && eG.includes(e.data.source),
@@ -672,7 +672,7 @@ let ev = new class {
       }
     })
   }, eQ = (e, t) => {
-    ej() && !eL && (e || eI.length) && (e && eI.length && (async () => {
+    ej() && !ex && (e || eI.length) && (e && eI.length && (async () => {
       let e = eI.splice(0);
       if (!eZ(e)) return;
       l.b.info("Capturing always-on event array to upload"), eX(e);
@@ -681,7 +681,7 @@ let ev = new class {
     })(), eI.push(t))
   };
 window.addEventListener("beforeunload", async () => {
-  eL = true, ej() && (Chunk555256.b.info("Always On handle page unload"), (() => {
+  ex = true, ej() && (Chunk555256.b.info("Always On handle page unload"), (() => {
     let e;
     eI.length && (e = eI[0].timestamp);
     let t = {

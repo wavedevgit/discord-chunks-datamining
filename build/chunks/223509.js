@@ -29,8 +29,8 @@ var r, i, Chunk754793 = require("./754793.js"),
   P = 7,
   D = 8,
   w = 9,
-  x = 10,
-  L = 11,
+  L = 10,
+  x = 11,
   M = 12,
   k = 13,
   j = 14,
@@ -143,7 +143,7 @@ function ep(e, t) {
         e.msg = "invalid window size", n.mode = $;
         break
       }
-      n.dmax = 1 << eO, e.adler = n.check = 1, n.mode = 512 & eo ? x : M, eo = 0, es = 0;
+      n.dmax = 1 << eO, e.adler = n.check = 1, n.mode = 512 & eo ? L : M, eo = 0, es = 0;
       break;
     case S:
       for (; es < 16;) {
@@ -213,13 +213,13 @@ function ep(e, t) {
       }
       n.head && (n.head.hcrc = n.flags >> 9 & 1, n.head.done = true), e.adler = n.check = 0, n.mode = M;
       break;
-    case x:
+    case L:
       for (; es < 32;) {
         if (0 === er) break i;
         er--, eo += r[et++] << es, es += 8
       }
-      e.adler = n.check = ei(eo), eo = 0, es = 0, n.mode = L;
-    case L:
+      e.adler = n.check = ei(eo), eo = 0, es = 0, n.mode = x;
+    case x:
       if (0 === n.havedict) return e.next_out = en, e.avail_out = ea, e.next_in = et, e.avail_in = er, n.hold = eo, n.bits = es, E;
       e.adler = n.check = 1, n.mode = M;
     case M:
@@ -493,6 +493,6 @@ function em(e, t) {
 
 function eg(e, t) {
   var n, r, i = t.length;
-  return e && e.state && (0 === (n = e.state).wrap || n.mode === L) ? n.mode === L && (r = o(r = 1, t, i, 0)) !== n.check ? y : e_(e, t, i, i) ? (n.mode = ee, O) : (n.havedict = 1, m) : b
+  return e && e.state && (0 === (n = e.state).wrap || n.mode === x) ? n.mode === x && (r = o(r = 1, t, i, 0)) !== n.check ? y : e_(e, t, i, i) ? (n.mode = ee, O) : (n.havedict = 1, m) : b
 }
 exports.inflateReset = es, exports.inflateReset2 = el, exports.inflateResetKeep = eo, exports.inflateInit = eu, exports.inflateInit2 = ec, exports.inflate = ep, exports.inflateEnd = eh, exports.inflateGetHeader = em, exports.inflateSetDictionary = eg, exports.inflateInfo = "pako inflate (from Nodeca project)"

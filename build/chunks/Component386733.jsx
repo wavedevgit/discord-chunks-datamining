@@ -2,7 +2,7 @@
 /** chunk id: 386733, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -152,7 +152,7 @@ let R = e => {
       }))
     })
   },
-  x = e => {
+  L = e => {
     let {
       isInSettings: t = false
     } = e, n = (0, s.e7)([g.Z], () => g.Z.getRecipientStatus()), {
@@ -221,22 +221,22 @@ let R = e => {
           })]
         })]
       }),
-      x = p.redeemed === E.Q;
+      L = p.redeemed === E.Q;
     return (0, r.jsx)(d.Gt, {
       value: C,
       children: (0, r.jsx)("div", {
         className: o()({
-          [I.containerWithGlowWithoutBanner]: x,
-          [I.containerWithoutGlow]: !x,
+          [I.containerWithGlowWithoutBanner]: L,
+          [I.containerWithoutGlow]: !L,
           [I.containerWithMargins]: !t,
-          [I.containerWithGlowOnSettingsPage]: x && t
+          [I.containerWithGlowOnSettingsPage]: L && t
         }),
         children: (0, r.jsx)("div", {
           ref: N,
           className: o()({
             [I.expandedProgressBarContainer]: !t,
             [I.expandedProgressBarContainerSettingsPage]: t,
-            [I.allReferralsSentBorder]: x
+            [I.allReferralsSentBorder]: L
           }),
           children: P
         })

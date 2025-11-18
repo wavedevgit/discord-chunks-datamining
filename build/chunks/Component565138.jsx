@@ -2,7 +2,7 @@
 /** chunk id: 565138, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -160,9 +160,9 @@ class P extends Chunk473749.PureComponent {
       } = require,
       D = S(require, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
       w = R[Chunk442837],
-      x = null != Chunk372769 ? Chunk481060.P3F : "div",
-      L = (0, Chunk601964.gM)(r);
-    return (0, Chunk54381.jsxs)(x, T(v({
+      L = null != Chunk372769 ? Chunk481060.P3F : "div",
+      x = (0, Chunk601964.gM)(r);
+    return (0, Chunk54381.jsxs)(L, T(v({
       className: s()(Chunk965005.icon, Chunk473749, (0, Chunk153066.l)(Chunk965005, "iconSize", Chunk442837), {
         [null != (e = (0, Chunk153066.l)(Chunk965005, "iconActive", Chunk442837)) ? module : ""]: Chunk319498,
         [Chunk965005.iconInactive]: !Chunk319498,
@@ -170,7 +170,7 @@ class P extends Chunk473749.PureComponent {
       }),
       "aria-hidden": C,
       style: null == r.icon ? v({
-        fontSize: (null != (t = w[L.length]) ? exports : w[w.length - 1]) * Chunk681715
+        fontSize: (null != (t = w[x.length]) ? exports : w[w.length - 1]) * Chunk681715
       }, Chunk692547) : Chunk692547,
       onClick: null != Chunk451478 || null == Chunk372769 ? true : Chunk372769,
       tabIndex: I
@@ -244,4 +244,4 @@ O(w, "Sizes", C), O(w, "defaultProps", {
   badgeStrokeColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css,
   animate: false
 });
-let x = w
+let L = w

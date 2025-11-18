@@ -10,7 +10,7 @@ require.d(exports, {
   YQ: () => W,
   _B: () => R,
   dI: () => k,
-  do: () => x,
+  do: () => L,
   f: () => w,
   mW: () => D,
   pb: () => Y,
@@ -160,7 +160,7 @@ function w(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     searchContext: t
   } = e;
@@ -182,7 +182,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     title: t,
     showDivider: n,
@@ -228,7 +228,7 @@ function k(e) {
     title: l,
     trailingIcon: c
   } = n.data;
-  return (0, r.jsxs)(L, {
+  return (0, r.jsxs)(x, {
     title: l,
     showDivider: i > 0,
     children: [(0, r.jsx)(M, {

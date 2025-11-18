@@ -189,13 +189,13 @@ function Z(e) {
   return (0, r.jsx)(c.d.Provider, {
     value: true,
     children: (0, r.jsx)("div", U(k({
-      className: x.rolePopout,
+      className: L.rolePopout,
       ref: d
     }, t), {
       children: (0, r.jsxs)(u.Ttm, {
-        className: x.roleScroller,
+        className: L.roleScroller,
         children: [(0, r.jsx)(g.Z, {
-          className: x.roleHeader,
+          className: L.roleHeader,
           "aria-label": w.intl.formatToPlainString(w.t.Uaqbke, {
             title: m.name,
             count: y.length
@@ -205,7 +205,7 @@ function Z(e) {
             children: O
           })
         }), y, null == E || E <= y.length ? null : (0, r.jsx)(g.Z, {
-          className: x.roleHeader,
+          className: L.roleHeader,
           children: w.intl.formatToPlainString(w.t["9oMmZC"], {
             count: E - y.length
           })
@@ -227,14 +227,14 @@ function F(e) {
     analyticsLocations: f
   } = (0, m.ZP)(h.Z.ROLE_MENTION), _ = (0, l.e7)([p.Z], () => p.Z.roleStyle), g = (0, l.e7)([N.Z], () => null == o || null == t ? null : N.Z.getRole(o, t)), E = (0, I.yH)(o, g), b = !d && null != g && !(0, v.Gr)(g), T = b && "dot" === _, S = b && "username" === _, A = E && null != g ? g.colorStrings : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, U(k({
     ref: C,
-    className: x.roleMention,
+    className: L.roleMention,
     color: S ? g.color : null,
     roleColors: S ? A : null
   }, e), {
     children: [T && null != g.color && (0, r.jsx)(u.FhE, {
       color: (0, s.Rf)(g.color),
       colors: A,
-      className: L.roleDot,
+      className: x.roleDot,
       background: false,
       tooltip: false
     }), c]

@@ -102,8 +102,8 @@ let z = () => {
     eP = Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eN && null != eN.expires_at && eN.trial_id !== Chunk474936.a7,
     eD = Chunk431.Z.getAlmostExpiringDiscountOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eR && null != eR.expires_at,
     ew = eP ? eN.expires_at : eD ? eR.expires_at : null,
-    ex = eC === Chunk931118.tE.HERO_COUNTDOWN && (eP || eD) && null != ew,
-    eL = (0, Chunk54381.jsxs)("div", {
+    eL = eC === Chunk931118.tE.HERO_COUNTDOWN && (eP || eD) && null != ew,
+    ex = (0, Chunk54381.jsxs)("div", {
       className: o()(eA.container, eA.responsiveContainer, {
         [eA.containerBackground]: em || J,
         [Chunk379039.fadeInFromTop]: !X && em
@@ -112,7 +112,7 @@ let z = () => {
       children: [em && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk306066.Z, {
           className: o()(Chunk379039.topOfPageGradient, {
-            [Chunk379039.topOfPageGradientWithCountdown]: ex
+            [Chunk379039.topOfPageGradientWithCountdown]: eL
           })
         }), (0, Chunk54381.jsx)(Chunk457227.Z, {
           navBarSections: eb,
@@ -140,7 +140,7 @@ let z = () => {
               ref: Chunk120356,
               subscriptionTier: ef,
               isEligibleForBogoPromotion: e_,
-              offerExpiresAt: ex ? ew : null
+              offerExpiresAt: eL ? ew : null
             }) : (0, Chunk54381.jsx)(Chunk903250.Z, {
               ref: Chunk120356,
               subscriptionTier: ef,
@@ -235,7 +235,7 @@ let z = () => {
     children: t => (0, r.jsx)(u.yWw, {
       className: o()(eA.scroller, t),
       ref: e,
-      children: eL
+      children: ex
     })
   })
 }

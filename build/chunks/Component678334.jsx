@@ -41,8 +41,8 @@ function P(e) {
     legalTermsNodeRef: P,
     flashLegalTerms: D,
     invoiceError: w,
-    planError: x,
-    onPurchaseError: L,
+    planError: L,
+    onPurchaseError: x,
     baseAnalyticsData: M,
     flowStartTime: k,
     trialId: j,
@@ -99,13 +99,13 @@ function P(e) {
     eD = null,
     ew = null;
   if (Q === N.GZQ.ONE_TIME) {
-    var ex;
-    l()(null != ee, "SKU must be selected for one-time purchases"), eD = null != (ex = et[ee]) ? ex : null, l()(null != eD, "SKU must exist and be fetched.");
+    var eL;
+    l()(null != ee, "SKU must be selected for one-time purchases"), eD = null != (eL = et[ee]) ? eL : null, l()(null != eD, "SKU must exist and be fetched.");
     let e = en[ee],
       t = null != J ? J : E.c;
     ew = null != e ? e[t] : null
   }
-  let eL = async () => {
+  let ex = async () => {
     await (0, I.H)({
       setPurchaseState: n,
       setHasAcceptedTerms: q,
@@ -140,9 +140,9 @@ function P(e) {
   }, eM = {
     baseAnalyticsData: M,
     flowStartTime: k,
-    makePurchase: eL,
+    makePurchase: ex,
     onNext: s,
-    onPurchaseError: L,
+    onPurchaseError: x,
     paymentSource: eO,
     paymentSourceId: J,
     purchaseTokenAuthState: B,
@@ -165,7 +165,7 @@ function P(e) {
     children: [(0, r.jsx)(g.Z, {
       legalTermsNodeRef: P,
       invoiceError: w,
-      planError: x,
+      planError: L,
       disablePurchase: H,
       flashLegalTerms: D,
       isSubmitting: ev,
@@ -174,7 +174,7 @@ function P(e) {
       planGroup: U,
       isPrepaid: eC,
       isTrial: Y,
-      makePurchase: eL,
+      makePurchase: ex,
       needsPaymentSource: null == eO && !eN,
       onNext: s,
       inReverseTrial: eo,

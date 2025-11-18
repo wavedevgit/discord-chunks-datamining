@@ -35,14 +35,14 @@ let d = {
             flipVariations: O,
             allowedAutoPlacements: v
           }) : n)
-        }, []), N = t.rects.reference, R = t.rects.popper, P = new Map, D = true, w = C[0], x = 0; x < C.length; x++) {
-        var L = C[x],
-          M = (0, i.Z)(L),
-          k = (0, c.Z)(L) === l.BL,
+        }, []), N = t.rects.reference, R = t.rects.popper, P = new Map, D = true, w = C[0], L = 0; L < C.length; L++) {
+        var x = C[L],
+          M = (0, i.Z)(x),
+          k = (0, c.Z)(x) === l.BL,
           j = [l.we, l.I].indexOf(M) >= 0,
           U = j ? "width" : "height",
           G = (0, o.Z)(t, {
-            placement: L,
+            placement: x,
             boundary: g,
             rootBoundary: E,
             altBoundary: b,
@@ -55,10 +55,10 @@ let d = {
         if (f && F.push(G[M] <= 0), p && F.push(G[B] <= 0, G[Z] <= 0), F.every(function(e) {
             return e
           })) {
-          w = L, D = false;
+          w = x, D = false;
           break
         }
-        P.set(L, F)
+        P.set(x, F)
       }
       if (D)
         for (var V = O ? 3 : 1, H = function(e) {

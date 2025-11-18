@@ -52,7 +52,7 @@ function b() {
         location: d.Ix.USER_SETTINGS
       }), p.rR.updateSetting(t)
     }, []),
-    x = () => (0, Chunk54381.jsx)(Chunk481060.FXm, {
+    L = () => (0, Chunk54381.jsx)(Chunk481060.FXm, {
       label: Chunk388032.intl.string(Chunk388032.t.QgwmVz),
       description: Chunk388032.intl.string(Chunk388032.t.TYnRkS),
       options: [{
@@ -243,7 +243,7 @@ function b() {
         })]
       }), (0, Chunk54381.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.CHAT_SPOILERS,
-        children: [(0, Chunk54381.jsx)(Chunk481060.izJ, {}), x()]
+        children: [(0, Chunk54381.jsx)(Chunk481060.izJ, {}), L()]
       })]
     })
   })

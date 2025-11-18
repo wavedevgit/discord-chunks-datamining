@@ -1,7 +1,7 @@
 /** Chunk was on 13368 **/
 /** chunk id: 989373, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => O,
+  default: () => A,
   waitForCSSLoad: () => x
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
@@ -66,7 +66,7 @@ async function D(e, t) {
     try {
       await g.ZP.isAlwaysOnTop(t)
     } catch (e) {
-      W.error("Window does not exist while trying to show inactive", e), (0, m.D1)(e, v.gl.OutOfProcess)
+      W.error("Window does not exist while trying to show inactive", e), (0, C.D1)(e, v.gl.OutOfProcess)
     }
     for (let r = 0; r < a; r++) try {
       if (!await g.ZP.waitForIPCReady(n, e)) throw Error("IPC not ready");
@@ -77,11 +77,11 @@ async function D(e, t) {
       if ((null == (o = e.message) ? true : o.includes("IPC")) && r < a - 1) {
         let t = n / 2 * Math.pow(2, r + 1);
         W.error("Failed to show inactive, retrying in ".concat(t, "ms"), e), await new Promise(e => setTimeout(e, t))
-      } else throw (0, m.D1)(e, v.gl.OutOfProcess), e
+      } else throw (0, C.D1)(e, v.gl.OutOfProcess), e
     }
   }
 }
-let O = Chunk473749.memo(function(e) {
+let A = Chunk473749.memo(function(e) {
   let {
     withTitleBar: t,
     windowKey: n
@@ -91,7 +91,7 @@ let O = Chunk473749.memo(function(e) {
       l = (0, r.e7)([h.default], () => h.default.getFocusedPID()),
       d = o.useMemo(() => !p.isPlatformEmbedded || null != l && l !== I.UNSET_PID, [l]),
       [_, g] = o.useState(false),
-      m = o.useRef(false),
+      C = o.useRef(false),
       w = o.useCallback(() => {
         let e = S.Z.getTargetPID(),
           n = null != f.Z.getVoiceChannelId();
@@ -103,10 +103,10 @@ let O = Chunk473749.memo(function(e) {
         }), (0, Z.ry)()
       }, [t]),
       P = o.useRef(false),
-      O = o.useRef(null),
-      A = o.useCallback(async (e, t) => {
+      A = o.useRef(null),
+      O = o.useCallback(async (e, t) => {
         try {
-          if (await x(e, O), P.current) return;
+          if (await x(e, A), P.current) return;
           (0, T.Z)("cssLoaded", true)
         } catch (e) {
           W.error("Timed out waiting for CSS to load", e), i.Z.setOverlayCrashed(S.Z.getTargetPID(), e), (0, T.Z)("errorMessage", "CSS failed load");
@@ -125,28 +125,29 @@ let O = Chunk473749.memo(function(e) {
       }, [w]),
       k = o.useRef(false);
     o.useEffect(() => {
-      if (!m.current && ((0, T.Z)("hasUseEffectFired", true), (0, T.Z)("trackedPidFocused", d), n)) {
+      if (!C.current && ((0, T.Z)("hasUseEffectFired", true), (0, T.Z)("trackedPidFocused", d), n)) {
         if (null == a) return void(0, T.Z)("errorMessage", "No targetOverlayWindow");
         if (!d) {
           k.current || (i.Z.updateOverlayState(S.Z.getTargetPID(), v.mM.WAITING_FOR_PID_FOCUS, "AppOverlay - not focused"), k.current = true);
           return
         }
-        m.current = true, (0, T.Z)("reactInitializationStarted", true), A(a, e)
+        C.current = true, (0, T.Z)("reactInitializationStarted", true), O(a, e)
       }
-    }, [A, d, e, a, n]), (0, c.zq)(() => {
-      clearInterval(O.current), P.current = true
+    }, [O, d, e, a, n]), (0, c.zq)(() => {
+      clearInterval(A.current), P.current = true
     });
-    let E = (0, r.e7)([b.Z], () => b.Z.windowSize(null != a ? (0, C.ZY)(a) : true)),
+    let E = (0, r.e7)([b.Z], () => b.Z.windowSize(null != a ? (0, m.ZY)(a) : true)),
       L = (0, r.e7)([S.Z], () => S.Z.getFocusedWindowHandle());
     return o.useEffect(() => {
-      if (null == a || !_ || a.innerHeight !== E.height || a.innerWidth !== E.width) return;
-      let e = a.requestAnimationFrame(() => {
+      let e, t;
+      if (null != a && _ && a.innerHeight === E.height && a.innerWidth === E.width) return e = a.requestAnimationFrame(() => {
         e = a.requestAnimationFrame(() => {
-          i.Z.overlayUIFocusedPid(null != l ? l : I.UNSET_PID, L)
+          a.clearTimeout(t), i.Z.overlayUIFocusedPid(null != l ? l : I.UNSET_PID, L)
         })
-      });
-      return () => {
-        a.cancelAnimationFrame(e)
+      }), t = a.setTimeout(() => {
+        a.cancelAnimationFrame(e), i.Z.overlayUIFocusedPid(null != l ? l : I.UNSET_PID, L)
+      }, 500), () => {
+        a.cancelAnimationFrame(e), a.clearTimeout(t)
       }
     }, [_, a, l, L, E]), _
   }(n, P.$S), g = (0, r.e7)([h.default], () => h.default.isFocusedPidInputLocked());

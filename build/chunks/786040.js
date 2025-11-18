@@ -2,12 +2,14 @@
 /** chunk id: 786040, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J7: () => O,
-  LJ: () => I,
-  Zh: () => E,
-  rC: () => v,
-  tA: () => b,
-  wO: () => y,
+  $l: () => E,
+  J7: () => I,
+  LJ: () => S,
+  Zh: () => y,
+  jB: () => b,
+  rC: () => T,
+  tA: () => O,
+  wO: () => v,
   zp: () => m
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
@@ -30,13 +32,22 @@ let m = Chunk473749.createContext({
 function g() {
   return Chunk473749.useContext(m).flattenProductVariants
 }
-var E = function(e) {
-    return e.NONE = "none", e.NEW = "new", e.ORBS_EXCLUSIVE = "orbs_exclusive", e.LIMITED_TIME = "limited_time", e.NITRO_EXCLUSIVE = "nitro_exclusive", e
+
+function E() {
+  return Chunk473749.useContext(m).isRental
+}
+
+function b() {
+  var e;
+  return null != (e = Chunk473749.useContext(m).rentalDuration) ? module : 0
+}
+var y = function(e) {
+    return e.NONE = "none", e.NEW = "new", e.ORBS_EXCLUSIVE = "orbs_exclusive", e.LIMITED_TIME = "limited_time", e.NITRO_EXCLUSIVE = "nitro_exclusive", e.ONE_DAY_RENTAL = "one_day_rental", e.THREE_DAY_RENTAL = "three_day_rental", e
   }({}),
-  b = function(e) {
+  O = function(e) {
     return e.FIAT = "fiat", e.ORBS = "orbs", e
   }({});
-let y = (e, t, n) => r => {
+let v = (e, t, n) => r => {
     l.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == n ? true : n.sessionId,
       sku_id: e.skuId,
@@ -50,31 +61,33 @@ let y = (e, t, n) => r => {
       cta_name: r
     })
   },
-  O = (e, t, n) => {
-    let i = (0, u.Nd)(),
-      l = null == i ? true : i.tab,
+  I = (e, t, n, i, l) => {
+    let _ = (0, u.Nd)(),
+      p = null == _ ? true : _.tab,
       {
-        analyticsLocations: _
+        analyticsLocations: h
       } = (0, s.ZP)(o.Z.COLLECTIBLES_SHOP_CARD),
-      p = (0, a.e7)([c.Z], () => c.Z.getCategoryForProduct(e.skuId)),
-      h = r.useRef(null);
+      m = (0, a.e7)([c.Z], () => c.Z.getCategoryForProduct(e.skuId)),
+      g = r.useRef(null);
     return r.useCallback(t => r => {
-      if (null == p) return;
-      let i = (0, f.oQ)({
+      if (null == m) return;
+      let a = (0, f.oQ)({
         product: e
       });
-      h.current = r.currentTarget, null == n || n(), (0, d.T)({
+      g.current = r.currentTarget, null == n || n(), (0, d.T)({
         product: e,
-        category: p,
-        shouldCheckoutWithOrbs: i,
-        analyticsLocations: _,
+        category: m,
+        shouldCheckoutWithOrbs: a,
+        analyticsLocations: h,
         analyticsSource: t,
-        returnRef: h,
-        tab: l
+        returnRef: g,
+        tab: p,
+        isRental: i,
+        rentalDuration: l
       })
-    }, [e, l, p, _, n])(t)
+    }, [e, p, m, h, n, i, l])(t)
   },
-  v = e => {
+  T = e => {
     if (null == e) return null;
     if (e.type === i.Z.VARIANTS_GROUP) {
       if (null == e.variants || 0 === e.variants.length) return null;
@@ -85,7 +98,7 @@ let y = (e, t, n) => r => {
     }
     return e.type
   },
-  I = e => {
+  S = e => {
     let t = g(),
       n = (0, a.e7)([c.Z], () => {
         var n;

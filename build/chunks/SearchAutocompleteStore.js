@@ -86,7 +86,7 @@ function w(e) {
   }
 }
 
-function x(e) {
+function L(e) {
   let {
     searchContext: t,
     query: n,
@@ -105,7 +105,7 @@ function x(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     id: t
   } = e, n = A.get(t);
@@ -132,7 +132,7 @@ function j(e, t) {
     mode: s,
     tokens: l,
     cursorScope: c
-  } = a, u = K(e, s, l), d = x({
+  } = a, u = K(e, s, l), d = L({
     searchContext: e,
     query: o,
     mode: s,
@@ -202,7 +202,7 @@ function Z(e) {
     let e = A.get(s);
     null != e && (e.context.clearQuery(), e.results = []), t = K(n, o, r)
   }
-  let f = x({
+  let f = L({
     searchContext: n,
     query: a,
     mode: o,
@@ -378,7 +378,7 @@ function q(e) {
   s.forEach(e => {
     e.group !== O.rtL.HISTORY && l.push(e)
   });
-  let c = x({
+  let c = L({
     searchContext: n,
     query: r,
     mode: i,
@@ -409,7 +409,7 @@ function J(e) {
     mode: i,
     tokens: a,
     cursorScope: o
-  } = n, s = x({
+  } = n, s = L({
     searchContext: e,
     query: r,
     mode: i,
@@ -444,7 +444,7 @@ I(et, "displayName", "SearchAutocompleteStore");
 let en = new et(Chunk570140.Z, {
     SEARCH_AUTOCOMPLETE_INITIALIZE: B,
     SEARCH_AUTOCOMPLETE_QUERY_UPDATE: Z,
-    SEARCH_EDITOR_STATE_CLEAR: L,
+    SEARCH_EDITOR_STATE_CLEAR: x,
     CHANNEL_CREATE: z,
     CHANNEL_DELETE: z,
     STREAMER_MODE_UPDATE: $,

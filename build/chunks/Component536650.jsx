@@ -51,14 +51,14 @@ function O(e) {
       ratio: 5,
       saturationFactor: .6
     })) ? true : e.hex()) ? t : P
-  }, [P, T]), w = y(S), x = y(A), L = i.useCallback(() => {
+  }, [P, T]), w = y(S), L = y(A), x = i.useCallback(() => {
     var e, t, n;
     let r = v.current,
       i = S.current,
       a = C.current,
       o = null == N ? true : N.current,
       l = parseInt(null != (e = null == w ? true : w.height) ? e : ""),
-      c = parseInt(null != (t = null == x ? true : x.height) ? t : "");
+      c = parseInt(null != (t = null == L ? true : L.height) ? t : "");
     if (null != r && null != i && null != a && !isNaN(l) && !isNaN(c)) {
       let e = null != (n = r.scrollTop) ? n : 0,
         t = 0 !== r.scrollHeight ? r.scrollHeight : c + g,
@@ -68,18 +68,18 @@ function O(e) {
         _ = E(e, d, f);
       i.style.filter = "brightness(".concat(b(1, T ? 1.4 : .6, _), ")"), i.style.backgroundColor = "color-mix(in oklab,".concat(P, " ").concat((1 - _) * 100, "%, ").concat(D, ")"), a.style.opacity = "".concat(b(0, 1, _)), a.style.transform = "translateY(".concat(b(l / 4, 0, _), "px)"), null != o && (o.style.opacity = "".concat(b(1, 0, _)))
     }
-  }, [D, P, null == x ? true : x.height, T, v, null == w ? true : w.height]);
+  }, [D, P, null == L ? true : L.height, T, v, null == w ? true : w.height]);
   return i.useEffect(() => {
-    L()
-  }, [L, T]), i.useEffect(() => {
+    x()
+  }, [x, T]), i.useEffect(() => {
     let e = v.current,
       t = () => {
-        L()
+        x()
       };
     return null == e || e.addEventListener("scroll", t), () => {
       null == e || e.removeEventListener("scroll", t)
     }
-  }, [v, L]), (0, r.jsxs)(r.Fragment, {
+  }, [v, x]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: m.stickyContainer,
       children: [(0, r.jsx)("div", {

@@ -2,11 +2,11 @@
 /** chunk id: 222677, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $E: () => x,
+  $E: () => L,
   T6: () => D,
   TW: () => T,
   U0: () => R,
-  WO: () => L,
+  WO: () => x,
   rU: () => P,
   wX: () => w
 });
@@ -255,7 +255,7 @@ async function w(e, t, n) {
     })
   })
 }
-async function x(e, t, n, i) {
+async function L(e, t, n, i) {
   let a = null != i && !!i.isRetry;
   await c.Z.unarchiveThreadIfNecessary(e);
   let o = null === n.id ? n.name : "".concat(n.name, ":").concat(n.id);
@@ -264,14 +264,14 @@ async function x(e, t, n, i) {
     oldFormErrors: true,
     rejectWithError: false
   }).catch(r => {
-    S(r, () => x(e, t, n, {
+    S(r, () => L(e, t, n, {
       isRetry: true
     }), {
       isRetry: a
     })
   })
 }
-async function L(e) {
+async function x(e) {
   let {
     channelId: t,
     messageId: n,
@@ -305,7 +305,7 @@ async function L(e) {
       name: a.name
     }))
   }).catch(async e => {
-    if (S(e, () => L({
+    if (S(e, () => x({
         channelId: t,
         messageId: n,
         emoji: a,

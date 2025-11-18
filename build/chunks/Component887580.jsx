@@ -64,15 +64,15 @@ function b(e) {
     w = () => {
       null != R && (D ? (0, d.rX)(I.system, n, null) : (0, d.rX)(I.system, n, R.value))
     },
-    x = (0, r.jsx)(E, {
+    L = (0, r.jsx)(E, {
       url: t
     }),
-    L = null;
-  return (P === m.su.EXPERIMENT_TREATMENT && null != R ? L = (0, r.jsx)(o.Text, {
+    x = null;
+  return (P === m.su.EXPERIMENT_TREATMENT && null != R ? x = (0, r.jsx)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: R.label
-  }) : null != A && (L = (0, r.jsxs)(o.Text, {
+  }) : null != A && (x = (0, r.jsxs)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: ["Server Config: ", C]
@@ -95,9 +95,9 @@ function b(e) {
               children: [(0, r.jsx)(o.Text, {
                 variant: "text-md/semibold",
                 children: I.title
-              }), L]
+              }), x]
             })]
-          }), x]
+          }), L]
         })
       })
     }), null != R ? (0, r.jsx)(o.Button, {

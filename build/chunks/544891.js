@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   J9: () => Chunk357280.J,
-  Jt: () => L,
+  Jt: () => x,
   K0: () => P,
   Pd: () => g,
   f$: () => Chunk343817.f$,
@@ -103,7 +103,7 @@ function E(e, t, n, r, o) {
     null == (n = t.onRequestProgress) || n.call(t, e)
   });
   let y = () => {
-    t.backoff = null != t.backoff ? t.backoff : new a.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => x(t.url).then(() => E(e, t, n, r, o)))
+    t.backoff = null != t.backoff ? t.backoff : new a.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => L(t.url).then(() => E(e, t, n, r, o)))
   };
   null == D || null == (d = D.prepareRequest) || d.call(D, b), b.ok(e => null != e.status), b.then(i => {
     var a, c, u;
@@ -260,10 +260,10 @@ let D = null;
 function w(e) {
   D = e
 }
-let x = () => Promise.resolve();
+let L = () => Promise.resolve();
 
-function L(e) {
-  x = e
+function x(e) {
+  L = e
 }
 
 function M(e) {

@@ -67,14 +67,14 @@ var Chunk329554 = require("./329554.js"),
   Chunk467159 = require("./467159.js"),
   D = Chunk169774.isBrowser("IE"),
   w = !D,
-  x = {
+  L = {
     edit: Chunk529742,
     composite: Chunk590297,
     drag: Chunk493807,
     cut: null,
     render: null
   },
-  L = false,
+  x = false,
   M = function(e) {
     function t() {
       return e.apply(this, arguments) || this
@@ -116,8 +116,8 @@ var Chunk329554 = require("./329554.js"),
           r = t.onPaste,
           i = t.onCut,
           o = t.onCopy,
-          s = a({}, x.edit);
-        r && (s.onPaste = r), i && (s.onCut = i), o && (s.onCopy = o), n._handler = a({}, x, {
+          s = a({}, L.edit);
+        r && (s.onPaste = r), i && (s.onCut = i), o && (s.onCopy = o), n._handler = a({}, L, {
           edit: s
         })[e]
       }), s(o(n), "exitCurrentMode", function() {
@@ -264,7 +264,7 @@ var Chunk329554 = require("./329554.js"),
         key: "contents" + this.state.contentsKey
       })))))
     }, r.componentDidMount = function() {
-      this._blockSelectEvents = false, !L && C("draft_ods_enabled") && (L = true, g.initODS()), this.setMode("edit"), D && (this.editor ? this.editor.ownerDocument.execCommand("AutoUrlDetect", false, false) : n.g.execCommand("AutoUrlDetect", false, false))
+      this._blockSelectEvents = false, !x && C("draft_ods_enabled") && (x = true, g.initODS()), this.setMode("edit"), D && (this.editor ? this.editor.ownerDocument.execCommand("AutoUrlDetect", false, false) : n.g.execCommand("AutoUrlDetect", false, false))
     }, r.componentDidUpdate = function() {
       this._blockSelectEvents = false, this._latestEditorState = this.props.editorState, this._latestCommittedEditorState = this.props.editorState
     }, t

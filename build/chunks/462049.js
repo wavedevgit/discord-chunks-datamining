@@ -32,8 +32,8 @@ function g(e, t) {
   let m = e.getUint32(t + n);
   if (m === o) return D(e, h, p);
   if (m === s) return w(e, t, h, p);
-  if (m === f) return x(e, t, h, p);
-  if (m === _) return L(e, h, p);
+  if (m === f) return L(e, t, h, p);
+  if (m === _) return x(e, h, p);
   let g = e.getUint8(h);
   return m === l ? k(e, t, h + i, p) : m === c ? (0, a.I)(e, g, h + i, p) : m === u ? U(e, t, g, h + i, p) : m === d ? B(e, t, g, h + i, p) : {
     type: true,
@@ -160,7 +160,7 @@ function w(e, t, n, r) {
   }
 }
 
-function x(e, t, n, r) {
+function L(e, t, n, r) {
   return {
     type: "ipco",
     properties: j(e, n, r - (n - t)),
@@ -168,7 +168,7 @@ function x(e, t, n, r) {
   }
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   return {
     type: "colr",
     icc: M(e, t),

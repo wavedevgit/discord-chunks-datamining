@@ -76,7 +76,7 @@ function D(e) {
       avoidInitialScroll: l
     });
     else {
-      if ((null == d ? true : d.isThread()) && L(n)) return P.log("Jumping to start of thread ".concat(d.id)), c.Z.fetchMessages({
+      if ((null == d ? true : d.isThread()) && x(n)) return P.log("Jumping to start of thread ".concat(d.id)), c.Z.fetchMessages({
         channelId: n,
         limit: A.AQB,
         jump: {
@@ -113,19 +113,19 @@ function D(e) {
     }
 }
 let w = 90 * Chunk70956.Z.Millis.DAY,
-  x = "viewedThreadIds";
+  L = "viewedThreadIds";
 
-function L(e) {
+function x(e) {
   if (O.ZP.hasOpenedThread(e)) returnfalse;
   if (null == i) {
     var t;
-    i = null != (t = o.K.get(x, {})) ? t : {}
+    i = null != (t = o.K.get(L, {})) ? t : {}
   }
   if (e in i) returnfalse;
   i[e] = Date.now();
   let n = Date.now() - w;
   for (let e in i) i[e] < n && delete i[e];
-  return o.K.set(x, i), true
+  return o.K.set(L, i), true
 }
 
 function M(e) {

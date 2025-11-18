@@ -118,8 +118,8 @@ function g(e) {
     errorMessageId: P,
     describedById: D,
     helperTextId: w,
-    descriptionId: x
-  } = C, L = null == y ? true : y.horizontalControlColumnWidth, M = "group" === g || "radiogroup" === g, k = M ? "span" : "label", j = M ? "fieldset" : "div", U = M ? (0, r.jsx)("legend", {
+    descriptionId: L
+  } = C, x = null == y ? true : y.horizontalControlColumnWidth, M = "group" === g || "radiogroup" === g, k = M ? "span" : "label", j = M ? "fieldset" : "div", U = M ? (0, r.jsx)("legend", {
     id: N,
     children: (0, r.jsx)(s.n, {
       children: t
@@ -164,8 +164,8 @@ function g(e) {
       ref: A,
       className: f.container,
       "data-layout": b,
-      style: null != L ? {
-        "--custom-field-horizontal-control-width": L
+      style: null != x ? {
+        "--custom-field-horizontal-control-width": x
       } : true,
       "data-disabled": a,
       "aria-describedby": M ? D : true,
@@ -178,7 +178,7 @@ function g(e) {
           variant: "text-sm/normal",
           color: "text-secondary",
           className: f.description,
-          id: x,
+          id: L,
           children: l
         }), "under-label" === T ? F : null]
       }) : null, (0, r.jsxs)("div", {

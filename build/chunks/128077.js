@@ -12,21 +12,23 @@ function o() {
   let [e, t] = (0, Chunk473749.useState)(""), [n, o] = (0, Chunk473749.useState)([]), [s, l] = (0, Chunk473749.useState)(null), [c, u] = (0, Chunk473749.useState)(false);
 
   function d(e, t, n) {
-    let r = () => {
+    let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
+      a = () => {
         u(true), l(null)
       },
-      a = e => {
+      s = e => {
         o(e), u(false), null == n || n(e)
       },
-      s = e => {
+      c = e => {
         l(e), u(false)
       };
     return (0, i.df)({
       skuId: e,
       loadId: t,
-      onRedeemStart: r,
-      onRedeemSucceed: a,
-      onRedeemFail: s
+      onRedeemStart: a,
+      onRedeemSucceed: s,
+      onRedeemFail: c,
+      isRental: r
     })
   }
   return (0, Chunk473749.useEffect)(() => {

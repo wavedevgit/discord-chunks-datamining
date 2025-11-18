@@ -2,7 +2,7 @@
 /** chunk id: 22082, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -128,7 +128,7 @@ class w extends(r = Chunk442837.ZP.Store) {
   }
 }
 b(w, "displayName", "NewChannelsStore");
-let x = new w(Chunk570140.Z, {
+let L = new w(Chunk570140.Z, {
   BULK_CLEAR_RECENTS: S,
   CHANNEL_ACK: () => true,
   CHANNEL_SELECT: A,

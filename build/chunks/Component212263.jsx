@@ -78,8 +78,8 @@ let T = e => {
   t = T === g.Hz.REACTION ? E.cd.EMOJI_PICKER_REACTION_EMOJI_CLICKED : null == v ? E.cd.EMOJI_PICKER_FLOATING_UPSELL : v.subCategory === h.t0.TOP_GUILD_EMOJI ? E.cd.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED : v.subCategory === h.t0.NEWLY_ADDED_EMOJI ? E.cd.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED : E.cd.EMOJI_PICKER_EMOJI_CLICKED;
   let D = null != v ? v.emoji : true,
     w = null != D && D.animated,
-    x = null != D && !_.ZP.isInternalEmojiForGuildId(D, null == y ? true : y.getGuildId()),
-    L = null != D ? m.qAy.EMOJI : m.qAy.EMOJI_PICKER_FLOATING_UPSELL,
+    L = null != D && !_.ZP.isInternalEmojiForGuildId(D, null == y ? true : y.getGuildId()),
+    x = null != D ? m.qAy.EMOJI : m.qAy.EMOJI_PICKER_FLOATING_UPSELL,
     M = (0, a.e7)([u.Z], () => u.Z.hasFetched);
   return i.useEffect(() => {
     M || o.MH()
@@ -97,9 +97,9 @@ let T = e => {
     onClose: n,
     upsellViewedTrackingData: {
       type: t,
-      is_external: x,
+      is_external: L,
       location: I(O({}, S), {
-        object: L
+        object: x
       }),
       location_stack: P,
       sku_id: (0, p.Wz)(p.ZP.getSkuIdForPremiumType(E.PremiumTypes.TIER_2)),

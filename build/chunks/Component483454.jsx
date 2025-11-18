@@ -4,8 +4,8 @@
 require.d(exports, {
   MM: () => k,
   Q5: () => R,
-  hn: () => L,
-  p7: () => x,
+  hn: () => x,
+  p7: () => L,
   wk: () => D
 }), require("./467055.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -235,13 +235,13 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       })]
     })
   },
-  x = () => (0, Chunk54381.jsx)("div", {
+  L = () => (0, Chunk54381.jsx)("div", {
     className: Chunk26973.loadingContainer,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
       type: Chunk481060.$jN.Type.PULSING_ELLIPSIS
     })
   }),
-  L = e => {
+  x = e => {
     var {
       onSetupError: t
     } = e, n = A(e, ["onSetupError"]);
@@ -254,7 +254,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
     }), {
       stripe: l
     } = (0, d.JL)();
-    return o || null != s || null == l ? (0, r.jsx)(x, {}) : (0, r.jsx)(a.Elements, {
+    return o || null != s || null == l ? (0, r.jsx)(L, {}) : (0, r.jsx)(a.Elements, {
       stripe: l,
       options: I({}, i),
       children: (0, r.jsx)(w, I({}, n))

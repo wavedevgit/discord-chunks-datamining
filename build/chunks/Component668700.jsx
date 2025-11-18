@@ -63,7 +63,7 @@ function T(e) {
         })
       })
     },
-    x = () => {
+    L = () => {
       if (!D) return (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
@@ -90,7 +90,7 @@ function T(e) {
         })
       })
     },
-    L = C !== y.l.MODAL && C !== y.l.MODAL_V2 && C !== y.l.SIDEBAR;
+    x = C !== y.l.MODAL && C !== y.l.MODAL_V2 && C !== y.l.SIDEBAR;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.Z, {
       className: v.voiceChannelDivider
@@ -106,7 +106,7 @@ function T(e) {
           size: "xxs",
           color: l.TVs.colors.TEXT_SECONDARY,
           className: v.voiceIcon
-        }), x()]
+        }), L()]
       }), (0, r.jsx)(o.Z, {
         users: N,
         guildId: n.id,
@@ -121,7 +121,7 @@ function T(e) {
           })
         },
         onUserClick: e => e.stopPropagation(),
-        disableUserPopout: !!L || (e => e === t.id),
+        disableUserPopout: !!x || (e => e === t.id),
         "aria-label": O.intl.string(O.t["jNqDh/"])
       })]
     })]

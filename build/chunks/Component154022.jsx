@@ -165,7 +165,7 @@ function en(e) {
           variant: "text-md/normal",
           children: V.intl.format(V.t.DHpTjT, {
             onAppearanceClick() {
-              (0, j.openUserSettings)(x.n.APPEARANCE_PANEL, {
+              (0, j.openUserSettings)(L.n.APPEARANCE_PANEL, {
                 section: B.oAB.APPEARANCE
               })
             }

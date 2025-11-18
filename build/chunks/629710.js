@@ -12,7 +12,7 @@ require.d(exports, {
   X6: () => I,
   aQ: () => U,
   g4: () => N,
-  hi: () => x,
+  hi: () => L,
   kC: () => v,
   kh: () => O,
   px: () => G,
@@ -47,7 +47,7 @@ let g = false,
   y = (e, t) => {
     let n = d.default.getCurrentUser();
     if (null == n || t === n.id) return m.qn.NONE;
-    let r = x(e, t, [l.Z, u.Z]);
+    let r = L(e, t, [l.Z, u.Z]);
     return null == r ? m.qn.NONE : O(r)
   },
   O = e => {
@@ -155,7 +155,7 @@ function R(e, t) {
   if (0 === n.length) returnfalse;
   switch (e.type) {
     case p.l.Embed:
-      return L(e.media, n);
+      return x(e.media, n);
     case p.l.Attachment:
       return M(e.media, n);
     case p.l.GenericMedia:
@@ -204,7 +204,7 @@ function w(e) {
   return t
 }
 
-function x(e, t) {
+function L(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [l.Z, u.Z],
     [r, i] = n,
     a = r.getChannel(e),
@@ -212,7 +212,7 @@ function x(e, t) {
   return null == o || t === o.id || null == a ? null : a.isDM() || a.isGroupDM() ? null != t && i.getFriendIDs().includes(t) ? p.n.FRIEND_DM : p.n.NON_FRIEND_DM : p.n.GUILD
 }
 
-function L(e, t) {
+function x(e, t) {
   var n, r, i, a, o, s, l;
   return !(0 === t.length || null == e || 0 === t.filter(t => !P(t, {
     type: p.l.Embed,

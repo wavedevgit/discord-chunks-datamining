@@ -2,7 +2,7 @@
 /** chunk id: 241085, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -144,7 +144,7 @@ function w(e) {
   }, n.id)
 }
 
-function x(e) {
+function L(e) {
   var t;
   let {
     minValues: n,
@@ -157,8 +157,8 @@ function x(e) {
   l()(null != O, "FileUploadActionComponent requires modalCustomId from context");
   let {
     uploadIds: v,
-    setUploadIds: x,
-    currentUploads: L,
+    setUploadIds: L,
+    currentUploads: x,
     error: M
   } = (0, C.t)(e), k = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(E));
   l()(null != k, "FileUploadActionComponent requires a valid channel");
@@ -195,8 +195,8 @@ function x(e) {
           allowOptimization: false
         }), n
       });
-      x(v.concat(n))
-    }, [v, a, k, x, O, E]),
+      L(v.concat(n))
+    }, [v, a, k, L, O, E]),
     B = i.useCallback(e => {
       var t, n;
       e.preventDefault(), m(false), G(Array.from(null != (n = null == (t = e.dataTransfer) ? true : t.files) ? n : []), "drag_drop")
@@ -206,15 +206,15 @@ function x(e) {
       G(Array.from(null != (t = e.currentTarget.files) ? t : []), "file_picker"), e.currentTarget.value = ""
     },
     F = e => {
-      d.Z.remove(E, e, y.d.InteractionModal), x(v.filter(t => t !== e))
+      d.Z.remove(E, e, y.d.InteractionModal), L(v.filter(t => t !== e))
     };
   return (i.useEffect(() => {
     let e = u.current;
     return null == e || e.addEventListener("dragover", j), null == e || e.addEventListener("dragleave", U), null == e || e.addEventListener("drop", B), () => {
       null == e || e.removeEventListener("dragover", j), null == e || e.removeEventListener("dragleave", U), null == e || e.removeEventListener("drop", B)
     }
-  }, [j, U, B]), 1 === a && 1 === L.length) ? (0, r.jsx)(w, {
-    upload: L[0],
+  }, [j, U, B]), 1 === a && 1 === x.length) ? (0, r.jsx)(w, {
+    upload: x[0],
     handleRemoveFile: F,
     singleFileInput: true
   }) : (0, r.jsxs)("div", {
@@ -229,9 +229,9 @@ function x(e) {
       minValues: n,
       maxValues: a,
       guildId: k.guild_id
-    }), L.length > 0 && (0, r.jsx)("div", {
+    }), x.length > 0 && (0, r.jsx)("div", {
       className: R.files,
-      children: L.map(e => (0, r.jsx)(w, {
+      children: x.map(e => (0, r.jsx)(w, {
         upload: e,
         handleRemoveFile: F
       }, e.id))

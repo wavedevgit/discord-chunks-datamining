@@ -109,10 +109,10 @@ function b(e) {
   })
 }
 
-function y(e, t) {
-  null != e && l.default.track(c.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, _({
+function y(e) {
+  null != e && l.default.track(c.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
     notice_type: e
-  }, t))
+  })
 }
 
 function O(e) {
@@ -121,22 +121,21 @@ function O(e) {
   })
 }
 
-function v(e, t, n) {
-  null != e && l.default.track(c.rMx.APP_NOTICE_ANCHOR_CLICKED, _({
+function v(e, t) {
+  l.default.track(c.rMx.APP_NOTICE_ANCHOR_CLICKED, {
     notice_type: e,
     href: t
-  }, n))
+  })
 }
 
 function I(e) {
   var {
     children: t,
-    noticeType: n,
-    additionalTrackingProps: i
-  } = e, a = m(e, ["children", "noticeType", "additionalTrackingProps"]);
-  return (0, r.jsx)(b, h(_({}, a), {
+    noticeType: n
+  } = e, i = m(e, ["children", "noticeType"]);
+  return (0, r.jsx)(b, h(_({}, i), {
     onClick: e => {
-      null != a.onClick && a.onClick(e), y(n, i)
+      null != i.onClick && i.onClick(e), y(n)
     },
     children: t
   }))
@@ -146,15 +145,14 @@ function T(e) {
   var {
     children: t,
     href: n,
-    noticeType: i,
-    additionalTrackingProps: a
-  } = e, o = m(e, ["children", "href", "noticeType", "additionalTrackingProps"]);
-  return (0, r.jsx)(s.Anchor, h(_({}, o), {
+    noticeType: i
+  } = e, a = m(e, ["children", "href", "noticeType"]);
+  return (0, r.jsx)(s.Anchor, h(_({}, a), {
     className: d.button,
     href: n,
     onClick: e => {
       var t;
-      null == (t = o.onClick) || t.call(o, e), v(i, n, a)
+      null == (t = a.onClick) || t.call(a, e), v(i, n)
     },
     children: t
   }))

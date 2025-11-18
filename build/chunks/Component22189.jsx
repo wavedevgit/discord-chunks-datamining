@@ -105,9 +105,9 @@ let eb = () => {
       subsection: Chunk526761.GA,
       analyticsLocations: module
     })
-  }, ex = () => {
-    (0, Chunk703656.uL)(Chunk981631.Z5c.COLLECTIBLES_SHOP)
   }, eL = () => {
+    (0, Chunk703656.uL)(Chunk981631.Z5c.COLLECTIBLES_SHOP)
+  }, ex = () => {
     (0, Chunk547972.Z)(Chunk332325.Z.CLIPS, {
       analyticsLocations: module
     })
@@ -153,7 +153,7 @@ let eb = () => {
       description: Chunk388032.intl.string(Chunk388032.t.Z6v86b),
       descriptionCta: eT ? Chunk388032.intl.string(Chunk388032.t.jVcuVY) : Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
       pillText: Chunk388032.intl.string(Chunk388032.t.EYxi0o),
-      onCtaClick: eT ? eL : ek,
+      onCtaClick: eT ? ex : ek,
       perkImage: Chunk766491
     } : {
       name: "clips",
@@ -255,7 +255,7 @@ let eb = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.opgqDZ),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSd"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: ex,
+      onCtaClick: eL,
       perkImage: Chunk498730
     },
     specialMemberPricingSeeAllVariant: {
@@ -264,7 +264,7 @@ let eb = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.opgqDZ),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSd"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: ex,
+      onCtaClick: eL,
       perkImage: Chunk498730
     },
     specialShopPerks: {
@@ -273,7 +273,7 @@ let eb = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.chRZiX),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSd"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: ex,
+      onCtaClick: eL,
       perkImage: Chunk498730
     },
     superReactions: {

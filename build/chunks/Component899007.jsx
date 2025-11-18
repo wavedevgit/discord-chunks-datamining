@@ -79,9 +79,9 @@ function P(e) {
     className: D,
     previewStatus: w
   } = e, {
-    theme: x
+    theme: L
   } = (0, b.z)(), {
-    analyticsLocations: L
+    analyticsLocations: x
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: M
   } = (0, m.KZ)(), k = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.PremiumTypes.TIER_2), j = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
@@ -108,7 +108,7 @@ function P(e) {
     "aria-label": t.username,
     imageClassName: null != P ? T.overlay : true,
     status: j ? O.Skl.UNKNOWN : F,
-    statusBackdropColor: k && !j ? (0, l.QFD)(x) : true,
+    statusBackdropColor: k && !j ? (0, l.QFD)(L) : true,
     isMobile: Z,
     statusTooltip: true,
     statusTooltipDelay: y.vB
@@ -124,7 +124,7 @@ function P(e) {
     onClick: () => {
       M({
         action: "PRESS_VIEW_PROFILE",
-        analyticsLocations: L
+        analyticsLocations: x
       }), null == P || P()
     },
     children: z

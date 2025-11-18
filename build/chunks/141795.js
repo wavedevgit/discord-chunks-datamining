@@ -70,7 +70,7 @@ function D(e, t) {
   }), e
 }
 let w = new Chunk710845.Z("CloudUpload.tsx");
-class x extends Error {
+class L extends Error {
   static getErrorKind(e, t) {
     var n;
     let r = null != (n = null == t ? true : t.status) ? n : 0,
@@ -80,13 +80,13 @@ class x extends Error {
   }
   static rejectionHandler(e) {
     return t => {
-      if (t instanceof s.Pd) throw new x(e, {
+      if (t instanceof s.Pd) throw new L(e, {
         response: t
       });
-      if (t instanceof Error) throw new x(e, {
+      if (t instanceof Error) throw new L(e, {
         cause: t
       });
-      throw new x(e, {
+      throw new L(e, {
         cause: Error(String(t))
       })
     }
@@ -99,13 +99,13 @@ class x extends Error {
     let {
       cause: i,
       response: a
-    } = t, o = x.getErrorKind(null != i ? i : Error("".concat(null != (n = null == a ? true : a.text) ? n : "Unknown error")), a), s = "server_error" === o ? "".concat(e, ":").concat(o, ":status_").concat(null != (r = null == a ? true : a.status) ? r : 0) : "".concat(e, ":").concat(o);
+    } = t, o = L.getErrorKind(null != i ? i : Error("".concat(null != (n = null == a ? true : a.text) ? n : "Unknown error")), a), s = "server_error" === o ? "".concat(e, ":").concat(o, ":status_").concat(null != (r = null == a ? true : a.status) ? r : 0) : "".concat(e, ":").concat(o);
     super(s, {
       cause: i
     }), N(this, "kind", true), N(this, "phase", true), N(this, "messageShort", true), this.name = "ResumableUploadError", this.phase = e, this.kind = o, this.messageShort = s
   }
 }
-let L = "Content-MD5";
+let x = "Content-MD5";
 var M = function(e) {
   return e.NOT_STARTED = "NOT_STARTED", e.STARTED = "STARTED", e.UPLOADING = "UPLOADING", e.ERROR = "ERROR", e.COMPLETED = "COMPLETED", e.CANCELED = "CANCELED", e.REMOVED_FROM_MSG_DRAFT = "REMOVED_FROM_MSG_DRAFT", e
 }({});
@@ -171,7 +171,7 @@ class j extends Chunk476326.ZP {
     let r = {
       "Content-Type": exports
     };
-    true !== this.contentHash && (r[L] = this.contentHash);
+    true !== this.contentHash && (r[x] = this.contentHash);
     let i = R({
       url: this.responseUrl,
       body: module,
@@ -195,13 +195,13 @@ class j extends Chunk476326.ZP {
       },
       signal: this._abortController.signal
     };
-    return await this._uploadHttpClient.doUpload(t).then(e => 200 === e.status || 201 === e.status ? this.currentSize : x.rejectionHandler("status_check")(e)).catch(e => {
+    return await this._uploadHttpClient.doUpload(t).then(e => 200 === e.status || 201 === e.status ? this.currentSize : L.rejectionHandler("status_check")(e)).catch(e => {
       if (e instanceof s.Pd && 308 === e.status) {
         var t;
         let n = this.parseRangeHeader(null != (t = e.headers.range) ? t : "");
         return null != n ? n[1] + 1 : 0
       }
-      return x.rejectionHandler("status_check")(e)
+      return L.rejectionHandler("status_check")(e)
     })
   }
   async startOrResumeUpload(e) {
@@ -217,8 +217,8 @@ class j extends Chunk476326.ZP {
       fileByteRange: {
         start: t
       }
-    }).catch(x.rejectionHandler("upload"));
-    if (200 !== r.status && 201 !== r.status) throw new x("upload", {
+    }).catch(L.rejectionHandler("upload"));
+    if (200 !== r.status && 201 !== r.status) throw new L("upload", {
       response: r
     });
     return r
@@ -249,7 +249,7 @@ class j extends Chunk476326.ZP {
         }
         return await this.startOrResumeUpload(s, l)
       } catch (e) {
-        if (e instanceof x && e.canRetry()) {
+        if (e instanceof L && e.canRetry()) {
           w.warn("Error uploading ".concat(this.id, ": ").concat(e.message, ", attempting resumption")), this.uploadAnalytics.uploadResumptionReason = e.messageShort, await y.Z.awaitOnline();
           let t = i.fail();
           w.log("Waiting ".concat(t, "ms before attachment upload attempt ").concat(this.uploadAttempts + 1)), await new Promise(e => setTimeout(e, t))

@@ -206,7 +206,7 @@ function w() {
   B()
 }
 
-function x(e) {
+function L(e) {
   let {
     voiceStates: t
   } = e;
@@ -219,7 +219,7 @@ function x(e) {
   }, false)
 }
 
-function L(e) {
+function x(e) {
   var t, n;
   let r = false,
     i = new Set(null == (t = I[e.guildId]) ? true : t.getUserIds()),
@@ -305,9 +305,9 @@ let F = new Z(Chunk570140.Z, {
   CONNECTION_OPEN: D,
   OVERLAY_INITIALIZE: w,
   VOICE_CHANNEL_SELECT: M,
-  VOICE_STATE_UPDATES: x,
+  VOICE_STATE_UPDATES: L,
   GUILD_MEMBER_UPDATE: j,
   GUILD_CREATE: U,
   GUILD_DELETE: G,
-  PASSIVE_UPDATE_V2: L
+  PASSIVE_UPDATE_V2: x
 })

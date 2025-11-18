@@ -2,7 +2,7 @@
 /** chunk id: 12168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x,
+  Z: () => L,
   u: () => D
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -138,7 +138,7 @@ function w(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     channel: t,
     title: n,
@@ -151,7 +151,7 @@ function x(e) {
     recentlyUsedEmojis: y,
     analyticsOverride: S,
     ref: C
-  } = e, x = (0, f.Dt)(), [L, M] = i.useState(false), k = (0, p.wC)(t.guild_id), j = (0, s.uniqBy)([...k, ...P], "name").filter(e => !b.ZP.isEmojiFilteredOrLocked({
+  } = e, L = (0, f.Dt)(), [x, M] = i.useState(false), k = (0, p.wC)(t.guild_id), j = (0, s.uniqBy)([...k, ...P], "name").filter(e => !b.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: R
@@ -169,16 +169,16 @@ function x(e) {
       null != t && d(t), U(!n), n && E.kJ.setSearchPlaceholder(null)
     },
     B = e => {
-      null != e && e.key !== I.vn.TAB && (e.key !== I.vn.ENTER || e.shiftKey ? U(true) : U(!L))
+      null != e && e.key !== I.vn.TAB && (e.key !== I.vn.ENTER || e.shiftKey ? U(true) : U(!x))
     };
   return (0, r.jsxs)(u.VqE, {
-    "aria-labelledby": x,
+    "aria-labelledby": L,
     ref: C,
     children: [(0, r.jsx)(u.y5t, {
       forceLevel: 2,
       children: (0, r.jsx)(u.nn4, {
         children: (0, r.jsx)(u.H, {
-          id: x,
+          id: L,
           children: n
         })
       })
@@ -188,20 +188,20 @@ function x(e) {
         analyticsOverride: S,
         channel: t,
         className: o()(T.animatedPicker, {
-          [T.animatedPickerTall]: L
+          [T.animatedPickerTall]: x
         }),
         headerClassName: o()(T.emojiPickerHeader, {
-          [T.emojiPickerHeaderExpanded]: L
+          [T.emojiPickerHeaderExpanded]: x
         }),
         closePopout: a,
-        onSelectEmoji: L ? G : () => {},
-        shouldHidePickerActions: !L,
+        onSelectEmoji: x ? G : () => {},
+        shouldHidePickerActions: !x,
         wrapper: "div",
         pickerIntention: R,
         searchProps: N(A({}, g), {
           accessory: (0, r.jsx)(w, {
             otherAccessories: null == g ? true : g.accessory,
-            isEmojiPickerExpanded: L,
+            isEmojiPickerExpanded: x,
             onSetExpanded: U,
             onFocus: l
           }),

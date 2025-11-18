@@ -2,7 +2,7 @@
 /** chunk id: 877481, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./415506.js"), require("./388685.js");
 var Chunk274616 = require("./274616.js"),
   Chunk710845 = require("./710845.js"),
@@ -121,7 +121,7 @@ function w(e) {
     null == _.Z.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
   })
 }
-let x = {
+let L = {
   waitSubscribed: (e, t) => new Promise((n, r) => D(() => o.Z.isSubscribed(e, t), n, r)),
   waitConnected(e) {
     return new Promise(D.bind(this, () => l.Z.isConnected(e)))

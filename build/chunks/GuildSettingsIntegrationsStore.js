@@ -90,7 +90,7 @@ let w = s().debounce(() => {
   A && (null != y ? s().isEqual(y, K(y.id)) && (A = false) : null != O && s().isEqual(O, z(O.id)) && (A = false), A || X.emitChange())
 }, 500);
 
-function x(e) {
+function L(e) {
   let {
     settings: t
   } = e;
@@ -98,7 +98,7 @@ function x(e) {
   y = m({}, y), null != t.enableEmoticons && y.enable_emoticons !== t.enableEmoticons && (y.enable_emoticons = t.enableEmoticons, A = true), null != t.expireBehavior && y.expire_behavior !== t.expireBehavior && (y.expire_behavior = t.expireBehavior, A = true), null != t.expireGracePeriod && y.expire_grace_period !== t.expireGracePeriod && (y.expire_grace_period = t.expireGracePeriod, A = true), A && w()
 }
 
-function L(e) {
+function x(e) {
   let {
     settings: t
   } = e;
@@ -310,8 +310,8 @@ let X = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: B,
     INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: Z,
     INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: F,
-    INTEGRATION_SETTINGS_UPDATE_INTEGRATION: x,
-    INTEGRATION_SETTINGS_UPDATE_WEBHOOK: L,
+    INTEGRATION_SETTINGS_UPDATE_INTEGRATION: L,
+    INTEGRATION_SETTINGS_UPDATE_WEBHOOK: x,
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: V,
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: H,
     GUILD_SETTINGS_CLOSE: D,

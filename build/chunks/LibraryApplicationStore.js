@@ -104,7 +104,7 @@ function w(e) {
   R(t)
 }
 
-function x(e) {
+function L(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -113,7 +113,7 @@ function x(e) {
   null != a && !a.isHidden() && u.yE(r, _.eHb.HIDDEN) && (A = true), I.add(i)
 }
 
-function L(e) {
+function x(e) {
   let {
     libraryApplication: t
   } = e, n = c.Z.createFromServer(t), r = (0, d.Tu)(n.id, n.branchId);
@@ -232,9 +232,9 @@ let V = new F(Chunk570140.Z, {
   LOGOUT: P,
   LIBRARY_FETCH_SUCCESS: D,
   SKU_PURCHASE_SUCCESS: w,
-  LIBRARY_APPLICATION_FLAGS_UPDATE_START: x,
-  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: L,
-  LIBRARY_APPLICATION_UPDATE: L,
+  LIBRARY_APPLICATION_FLAGS_UPDATE_START: L,
+  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: x,
+  LIBRARY_APPLICATION_UPDATE: x,
   LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE: M,
   LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: k,
   LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: j,

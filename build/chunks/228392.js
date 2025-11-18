@@ -17,14 +17,14 @@ require.d(exports, {
   P_: () => v,
   Vn: () => T,
   ab: () => C,
-  e5: () => x,
+  e5: () => L,
   e7: () => O,
   lN: () => B,
   nE: () => G,
   nH: () => I,
   qs: () => E,
   qz: () => Z,
-  ws: () => L,
+  ws: () => x,
   xI: () => M,
   zI: () => y
 }), require("./781311.js");
@@ -322,7 +322,7 @@ function w(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     onboardingCTA: t
   } = e;
@@ -331,7 +331,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     forumDemoId: t
   } = e;

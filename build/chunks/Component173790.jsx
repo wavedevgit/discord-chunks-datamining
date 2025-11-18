@@ -35,11 +35,11 @@ function S(e) {
     sectionName: c
   } = e, I = "channel" === n.type ? n.channel : true, S = (0, a.e7)([f.Z], () => f.Z.entrypoint()), C = null != (t = (0, d.q)(l.id === b.bi.BUILT_IN ? null : l.id)) ? t : l, N = (0, p.ye)(C) ? A : E.Z, R = i.useRef(null), [P, D] = i.useState(false), {
     iconURL: w,
-    name: x
+    name: L
   } = i.useMemo(() => (0, p.sl)(C, {
     fakeAppIconURL: v,
     size: T
-  }), [C]), L = (0, u.PL)(true, true), M = (0, u.LD)(null == I ? true : I.guild_id, true), k = i.useMemo(() => (0, u.If)(n, C.id), [L, M, n, C.id]), j = !k.isGuildInstalled && !k.isUserInstalled;
+  }), [C]), x = (0, u.PL)(true, true), M = (0, u.LD)(null == I ? true : I.guild_id, true), k = i.useMemo(() => (0, u.If)(n, C.id), [x, M, n, C.id]), j = !k.isGuildInstalled && !k.isUserInstalled;
   return i.useEffect(() => {
     j && u.ZP.queryInstallOnDemandApp(C.id, null == I ? true : I.id)
   }, [C.id, null == I ? true : I.id, j]), (0, r.jsxs)(s.u2D, {
@@ -48,12 +48,12 @@ function S(e) {
     ref: R,
     role: "region",
     "aria-label": y.intl.formatToPlainString(y.t["4OP4Uk"], {
-      applicationName: x
+      applicationName: L
     }),
     children: [(0, r.jsx)(g.Z, {
       application: C,
       context: n,
-      name: x,
+      name: L,
       iconURL: w,
       scrollerRef: R,
       sectionName: c

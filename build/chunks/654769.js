@@ -43,7 +43,7 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,7 +68,7 @@ function L(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -165,7 +165,7 @@ if (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.feat
         let e = X[n];
         if (R.isPlatformEmbedded ? P.ZP.focus() : window.focus(), null != e) {
           var a, o, s;
-          (null == (a = e.options) ? true : a.omitClickTracking) || (S.default.track(D.rMx.NOTIFICATION_ACTION, x({
+          (null == (a = e.options) ? true : a.omitClickTracking) || (S.default.track(D.rMx.NOTIFICATION_ACTION, L({
             action: "CLICK"
           }, e.trackingProps)), S.default.track(D.rMx.NOTIFICATION_CLICKED, e.clickTrackingProps)), null == (s = e.options) || null == (o = s.onClick) || o.call(s, r);
           return
@@ -222,12 +222,12 @@ async function et(e, t, n, r, i) {
   var a, o, s, l, u, d, m;
   let g, E = await Z(),
     w = (null == E ? true : E.authorizationStatus) === "authorized" || (null == E ? true : E.authorizationStatus) === "provisional",
-    L = null != E ? w : await J(),
+    x = null != E ? w : await J(),
     j = w,
     F = I.Z.disableNotifications && null == i.overrideStreamerMode,
     V = !R.isPlatformEmbedded || (0, R.isMac)() && j || P.ZP.shouldDisplayNotifications(),
-    H = !F && L && V,
-    W = M(x({}, r), {
+    H = !F && x && V,
+    W = M(L({}, r), {
       action: true,
       ping: true,
       banner: true,
@@ -236,7 +236,7 @@ async function et(e, t, n, r, i) {
     K = W,
     z = W;
   if (r.banner = await (0, p.K)(), !H) {
-    null != i.sound && false !== i.playSoundIfDisabled && (ee(i.sound, null != (a = i.volume) ? a : 1, i.soundpack), r.ping = true, i.omitViewTracking || S.default.track(D.rMx.NOTIFICATION_ACTION, x({
+    null != i.sound && false !== i.playSoundIfDisabled && (ee(i.sound, null != (a = i.volume) ? a : 1, i.soundpack), r.ping = true, i.omitViewTracking || S.default.track(D.rMx.NOTIFICATION_ACTION, L({
       action: "VIEW"
     }, r)));
     return
@@ -246,7 +246,7 @@ async function et(e, t, n, r, i) {
     $ = j && (null == E ? true : E.sound) === true && (null == E ? true : E.authorizationStatus) === "authorized",
     et = (e, t) => {
       var n;
-      null == (n = i.onShown) || n.call(i), i.omitViewTracking || (S.default.track(D.rMx.NOTIFICATION_ACTION, x({
+      null == (n = i.onShown) || n.call(i), i.omitViewTracking || (S.default.track(D.rMx.NOTIFICATION_ACTION, L({
         action: "VIEW"
       }, t)), S.default.track(D.rMx.NOTIFICATION_VIEWED, z)), B && setTimeout(() => e.close(), 5e3)
     };
@@ -286,7 +286,7 @@ async function et(e, t, n, r, i) {
         });
       null != i.emoji && f.Z.getConfig({
         location: "showNotification"
-      }).enabled && (a.emoji = i.emoji.map(e => x({
+      }).enabled && (a.emoji = i.emoji.map(e => L({
         url: (0, A.gT)({
           id: e.id,
           animated: false,
@@ -332,7 +332,7 @@ async function et(e, t, n, r, i) {
   }
   return (et(g, r), g.onclick = e => {
     var t;
-    R.isPlatformEmbedded ? P.ZP.focus() : (window.focus(), g.close()), i.omitClickTracking || (S.default.track(D.rMx.NOTIFICATION_ACTION, x({
+    R.isPlatformEmbedded ? P.ZP.focus() : (window.focus(), g.close()), i.omitClickTracking || (S.default.track(D.rMx.NOTIFICATION_ACTION, L({
       action: "CLICK"
     }, r)), S.default.track(D.rMx.NOTIFICATION_CLICKED, K));
     let n = "";

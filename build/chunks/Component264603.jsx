@@ -56,7 +56,7 @@ function S() {
     N = (0, Chunk535139.F)(S),
     {
       canDeauthorize: P,
-      deauthorize: w
+      deauthorize: I
     } = function(e) {
       let t = (0, s.e7)([b.default], () => b.default.getNewestTokenForApplication(e)),
         n = l.useCallback(() => {
@@ -132,7 +132,7 @@ function S() {
         text: "Start Web Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         disabled: !P,
-        onClick: w,
+        onClick: I,
         variant: "critical-primary",
         text: "Deauthorize"
       })]

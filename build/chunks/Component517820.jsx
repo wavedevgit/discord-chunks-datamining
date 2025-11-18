@@ -131,13 +131,13 @@ function F(e) {
       }), (0, r.jsx)(p.Text, {
         variant: "text-md/semibold",
         color: "header-secondary",
-        children: L.intl.string(L.t.VdZCcC)
+        children: x.intl.string(x.t.VdZCcC)
       })]
     }),
     content: (0, r.jsx)(p.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: L.intl.string(L.t["NxHYX/"])
+      children: x.intl.string(x.t["NxHYX/"])
     })
   })
 }
@@ -155,13 +155,13 @@ function V(e) {
       }), (0, r.jsx)(p.Text, {
         variant: "text-md/semibold",
         color: "header-secondary",
-        children: L.intl.string(L.t["2qTBw/"])
+        children: x.intl.string(x.t["2qTBw/"])
       })]
     }),
     content: (0, r.jsx)(p.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: L.intl.string(L.t.Dc9wCp)
+      children: x.intl.string(x.t.Dc9wCp)
     })
   })
 }
@@ -189,7 +189,7 @@ function H(e) {
       }), (0, r.jsx)(p.Text, {
         variant: "text-md/semibold",
         color: "text-feedback-positive",
-        children: L.intl.string(L.t.lVLiFp)
+        children: x.intl.string(x.t.lVLiFp)
       })]
     }),
     subheader: (0, r.jsxs)("div", {
@@ -200,7 +200,7 @@ function H(e) {
           children: [(0, r.jsx)(p.Text, {
             variant: "text-xs/medium",
             color: "text-default",
-            children: L.intl.string(L.t.qlFrXW)
+            children: x.intl.string(x.t.qlFrXW)
           }), (0, r.jsx)(T.Z, {
             targetElementRef: h,
             user: o,
@@ -237,7 +237,7 @@ function H(e) {
     content: (0, r.jsx)(p.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: L.intl.string(L.t["QV/8u5"])
+      children: x.intl.string(x.t["QV/8u5"])
     })
   })
 }
@@ -270,7 +270,7 @@ function Y(e) {
       }), (0, r.jsx)(p.Text, {
         variant: "text-md/semibold",
         color: "text-danger",
-        children: N ? L.intl.string(L.t["8+lHUb"]) : L.intl.string(L.t.xMwcwV)
+        children: N ? x.intl.string(x.t["8+lHUb"]) : x.intl.string(x.t.xMwcwV)
       })]
     }),
     subheader: (0, r.jsxs)("div", {
@@ -278,13 +278,13 @@ function Y(e) {
       children: [null != o && (0, r.jsx)(p.Text, {
         variant: "text-xs/medium",
         color: "text-default",
-        children: L.intl.format(L.t["4ylIiu"], {
+        children: x.intl.format(x.t["4ylIiu"], {
           joinCount: o
         })
       }), null != u && (0, r.jsx)(p.Text, {
         variant: "text-xs/medium",
         color: "text-default",
-        children: L.intl.format(L.t["5C8Mh3"], {
+        children: x.intl.format(x.t["5C8Mh3"], {
           dmsSent: u
         })
       }), null != s && (0, r.jsxs)(i.Fragment, {
@@ -298,8 +298,8 @@ function Y(e) {
     content: null != s ? (0, r.jsx)(p.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: L.intl.format(L.t["4QIIZl"], {
-        dateTime: s.toLocaleString(L.intl.currentLocale, g.pQ)
+      children: x.intl.format(x.t["4QIIZl"], {
+        dateTime: s.toLocaleString(x.intl.currentLocale, g.pQ)
       })
     }) : null,
     footerButtons: I ? (0, r.jsxs)("div", {
@@ -314,7 +314,7 @@ function Y(e) {
           variant: "primary",
           size: "sm",
           textVariant: "text-xs/medium",
-          text: L.intl.string(L.t.DEoVWZ),
+          text: x.intl.string(x.t.DEoVWZ),
           onClick: A
         })]
       }), (0, r.jsx)(B, {}), (0, r.jsx)("div", {
@@ -360,7 +360,7 @@ function W(e) {
       }), (0, r.jsx)(p.Text, {
         variant: "text-md/semibold",
         color: "text-danger",
-        children: L.intl.string(L.t.C2uIXE)
+        children: x.intl.string(x.t.C2uIXE)
       })]
     }),
     subheader: (0, r.jsx)("div", {
@@ -374,7 +374,7 @@ function W(e) {
     content: (0, r.jsx)(p.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: L.intl.string(L.t.SWIWEV)
+      children: x.intl.string(x.t.SWIWEV)
     }),
     footerButtons: (0, r.jsxs)("div", {
       className: M.footerRow,
@@ -384,7 +384,7 @@ function W(e) {
           variant: "primary",
           textVariant: "text-xs/medium",
           size: "sm",
-          text: L.intl.string(L.t.oX14El),
+          text: x.intl.string(x.t.oX14El),
           onClick: d
         })
       }), (0, r.jsx)(B, {}), (0, r.jsx)("div", {
@@ -393,7 +393,7 @@ function W(e) {
           variant: "primary",
           textVariant: "text-xs/medium",
           size: "sm",
-          text: L.intl.string(L.t["1R7QIx"]),
+          text: x.intl.string(x.t["1R7QIx"]),
           onClick: f
         })
       })]
@@ -478,16 +478,16 @@ function z(e) {
               color: "text-brand",
               tag: "span",
               className: M.username,
-              children: L.intl.string(L.t.hG1StD)
+              children: x.intl.string(x.t.hG1StD)
             }), (0, r.jsx)(h.Z, {
-              type: x.Hb.SYSTEM_DM,
+              type: L.Hb.SYSTEM_DM,
               className: M.systemTag
             }), f && (0, r.jsx)(p.Text, {
               variant: "text-md/normal",
               color: "header-primary",
               tag: "span",
               className: M.spanCorrection,
-              children: L.intl.string(L.t.ufawcw)
+              children: x.intl.string(x.t.ufawcw)
             })]
           }),
           compact: n,

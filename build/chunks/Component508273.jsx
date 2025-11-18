@@ -42,10 +42,10 @@ function C(e) {
     R((null != (t = null == (e = f.current) ? true : e.clientHeight) ? t : 0) > T)
   }, [R]);
   let w = (0, _.PC)(t),
-    x = i.useCallback(() => {
+    L = i.useCallback(() => {
       C && p && m(false)
     }, [p, C]),
-    L = i.useCallback(() => {
+    x = i.useCallback(() => {
       C && (p || m(true))
     }, [p, C]),
     M = i.useMemo(() => {
@@ -59,7 +59,7 @@ function C(e) {
     className: o()(I.guildInviteContainer, {
       [I.clickable]: C && p
     }),
-    onClick: x,
+    onClick: L,
     style: M,
     "aria-label": v.intl.string(v.t.dcl9MQ),
     children: [(0, r.jsxs)("div", {
@@ -84,7 +84,7 @@ function C(e) {
         textVariant: "text-xs/medium",
         variant: "secondary",
         size: "sm",
-        onClick: L,
+        onClick: x,
         text: v.intl.string(v.t.xdCLeM)
       })
     }) : null, (0, r.jsxs)("div", {

@@ -70,8 +70,8 @@ let I = window.DiscordNative,
   D = {};
 null != I && (N = I.remoteApp.getVersion().split(".").map(e => parseInt(e)), P = null == (r = (i = I.remoteApp).getModuleVersions) ? true : r.call(i), R = null == (a = (o = I.remoteApp).getBuildNumber) ? true : a.call(o));
 let w = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
-  x = false,
-  L = "lastImageSaveDirectory",
+  L = false,
+  x = "lastImageSaveDirectory",
   M = /[<>:"/\\|?*@]/g,
   k = /(\.[a-zA-Z0-9]+):[^.]*$/,
   j = /(\.[a-zA-Z0-9]+)%3A.+$/,
@@ -240,12 +240,12 @@ let q = {
     getVoiceEngine() {
       if (__OVERLAY__) throw Error("cannot require discord_voice in overlay");
       let e = this.requireModule("discord_voice");
-      return x || (0, Chunk579092.Bl)((t, n, r) => {
+      return L || (0, Chunk579092.Bl)((t, n, r) => {
         e.consoleLog(n, "[".concat(t, "] ").concat(r))
-      }), x = true, module
+      }), L = true, module
     },
     getDiscordUtils() {
-      if (!x) try {
+      if (!L) try {
         this.getVoiceEngine()
       } catch (e) {}
       return this.requireModule("discord_utils")
@@ -356,7 +356,7 @@ let q = {
       }
       let _ = await V(e),
         p = E.from(_),
-        g = f.K.get(L);
+        g = f.K.get(x);
       if ("string" != typeof g && (g = true), "function" == typeof I.fileManager.saveWithDialog2) {
         if (null == (o = await I.fileManager.saveWithDialog2(p, u, null != g ? g : true))) return "errored";
         if (o.canceledByUser) return "canceled";
@@ -366,7 +366,7 @@ let q = {
       } catch (e) {
         return "errored"
       }
-      return null == s || "" === s ? "errored" : (f.K.set(L, s), "saved")
+      return null == s || "" === s ? "errored" : (f.K.set(x, s), "saved")
     },
     async saveFile(e, t) {
       var n;

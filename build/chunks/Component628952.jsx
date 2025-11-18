@@ -78,7 +78,7 @@ let C = e => {
   } = (0, m.T)(t, true), {
     giftRecipient: P,
     giftRecipientError: D
-  } = (0, f.wD)(), w = (0, u.e7)([h.default], () => h.default.getCurrentUser()), x = (0, y.kd)(R), L = i.useRef(null);
+  } = (0, f.wD)(), w = (0, u.e7)([h.default], () => h.default.getCurrentUser()), L = (0, y.kd)(R), x = i.useRef(null);
   if (null == R) return null;
   let [M] = R.items;
   l()(null != M, "Product item should not be empty");
@@ -106,7 +106,7 @@ let C = e => {
       children: (0, r.jsx)(d.gNt, {
         label: O.intl.string(O.t.PpoJzt),
         children: j && (0, r.jsx)(d.yRy, {
-          targetElementRef: L,
+          targetElementRef: x,
           preload: () => (0, p.Z)(P.id, P.getAvatarURL(null, 80)),
           renderPopout: e => (0, r.jsx)(_.Z, A(T({}, e), {
             user: P,
@@ -121,7 +121,7 @@ let C = e => {
           position: "right",
           children: e => (0, r.jsx)(d.P3F, A(T({}, e), {
             className: v.previewLink,
-            innerRef: L,
+            innerRef: x,
             children: (0, r.jsx)(d.Text, {
               variant: "text-xs/medium",
               color: "text-link",
@@ -146,7 +146,7 @@ let C = e => {
           className: v.previewTextContainer,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-md/semibold",
-            children: x
+            children: L
           }), (0, r.jsx)(d.Heading, {
             variant: "heading-sm/medium",
             color: "header-secondary",

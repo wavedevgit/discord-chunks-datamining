@@ -219,7 +219,7 @@ function w(e) {
   return O(t, e => P(n, e))
 }
 
-function x(e) {
+function L(e) {
   let {
     message: t
   } = e;
@@ -229,7 +229,7 @@ function x(e) {
   })
 }
 
-function L() {
+function x() {
   b.clear()
 }
 
@@ -284,10 +284,10 @@ let U = new j(Chunk570140.Z, {
   MESSAGE_UPDATE: C,
   MESSAGE_DELETE: D,
   MESSAGE_DELETE_BULK: w,
-  CREATE_PENDING_REPLY: x,
+  CREATE_PENDING_REPLY: L,
   CHANNEL_DELETE: N,
   THREAD_DELETE: N,
   GUILD_DELETE: R,
-  CONNECTION_OPEN: L,
-  LOGOUT: L
+  CONNECTION_OPEN: x,
+  LOGOUT: x
 })

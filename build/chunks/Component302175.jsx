@@ -91,7 +91,7 @@ function G(e) {
     onHover: v
   } = e, {
     analyticsLocations: T
-  } = (0, _.ZP)(), S = n !== C.A3.INACTIVE, R = (0, I.Z)(t), [L, M] = i.useState(false), [j, G] = i.useState(false), B = j, Z = i.useCallback(() => {
+  } = (0, _.ZP)(), S = n !== C.A3.INACTIVE, R = (0, I.Z)(t), [x, M] = i.useState(false), [j, G] = i.useState(false), B = j, Z = i.useCallback(() => {
     let e = m.Z.getGuild(t);
     null != e && (0, p.u)({
       analyticsLocation: {
@@ -123,8 +123,8 @@ function G(e) {
     e && M(true)
   }, []), z = (0, l.O)(K);
   return (0, r.jsxs)("div", {
-    className: o()(x.topPerksCard, x.animatedTopPerksCard, w.powerupCard, {
-      [x.animate]: L
+    className: o()(L.topPerksCard, L.animatedTopPerksCard, w.powerupCard, {
+      [L.animate]: x
     }),
     onMouseEnter: () => {
       G(true), null == v || v(true)
@@ -133,12 +133,12 @@ function G(e) {
       G(false), null == v || v(false)
     },
     children: [(0, r.jsx)("div", {
-      className: x.intObserver,
+      className: L.intObserver,
       ref: z
     }), (0, r.jsx)("div", {
-      className: x.topPerksCardImageWrapper,
+      className: L.topPerksCardImageWrapper,
       children: (0, r.jsx)(s.animated.img, {
-        className: o()(x.topPerksCardImage, w.image),
+        className: o()(L.topPerksCardImage, w.image),
         src: E,
         alt: "",
         style: H
@@ -147,7 +147,7 @@ function G(e) {
       style: U(k({}, Y), {
         transform: Y.y.to(e => "translateY(".concat(e, "px)"))
       }),
-      className: o()(x.contentContainer, w.contentContainer),
+      className: o()(L.contentContainer, w.contentContainer),
       children: [(0, r.jsx)(h.xm, {
         heading: a,
         description: c,
@@ -158,9 +158,9 @@ function G(e) {
         isEnabled: S
       }), (0, r.jsxs)(s.animated.div, {
         style: W,
-        className: x.buttonsContainer,
+        className: L.buttonsContainer,
         children: [(0, r.jsx)("div", {
-          className: x.button,
+          className: L.button,
           children: (0, r.jsx)(d.Button, {
             variant: "primary",
             text: D.intl.string(D.t.oPAx73),
@@ -168,7 +168,7 @@ function G(e) {
             fullWidth: true
           })
         }), R && (0, r.jsx)("div", {
-          className: x.button,
+          className: L.button,
           children: (0, r.jsx)(d.Button, {
             variant: "secondary",
             text: D.intl.string(D.t.GoCQxU),
@@ -178,10 +178,10 @@ function G(e) {
         })]
       })]
     }), y && (0, r.jsx)(d.IGR, {
-      className: x.topPerksCardNew,
+      className: L.topPerksCardNew,
       text: D.intl.string(D.t.y2b7CA)
-    }), L && (0, r.jsx)("div", {
-      className: x.shineLine
+    }), x && (0, r.jsx)("div", {
+      className: L.shineLine
     })]
   })
 }
@@ -241,7 +241,7 @@ let Z = 3,
           description: D.intl.string(R.default.EGkJAG),
           cost: s,
           costDecorator: "+",
-          imageUrl: L.Z,
+          imageUrl: x.Z,
           onClose: a,
           isNew: true
         })]

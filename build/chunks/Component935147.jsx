@@ -148,10 +148,10 @@ function z(e) {
     }) : F.intl.string(F.t.pj0XBN);
   return z ? (0, r.jsx)(c.Gt, {
     value: es,
-    children: (0, r.jsxs)(L.Z, {
+    children: (0, r.jsxs)(x.Z, {
       ref: ea,
       className: V.tryItOutSection,
-      type: L.Y.PREMIUM,
+      type: x.Y.PREMIUM,
       isShown: true,
       hasBackground: true,
       children: [(0, r.jsx)(P.Z, {
@@ -211,7 +211,7 @@ function z(e) {
             sectionTitle: F.intl.string(F.t["7v0T9P"]),
             user: H,
             isTryItOut: true
-          }), (0, r.jsx)(x.Z, {
+          }), (0, r.jsx)(L.Z, {
             user: H,
             className: V.customizationSection
           }), !eo && (0, r.jsx)(k.Z, {

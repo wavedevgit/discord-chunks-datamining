@@ -4,7 +4,7 @@
 require.d(exports, {
   Lc: () => D,
   Yr: () => P,
-  ZP: () => L,
+  ZP: () => x,
   gN: () => R,
   sI: () => w
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
@@ -100,10 +100,10 @@ var w = function(e) {
   return e.VIDEO = "VIDEO", e.STREAM = "STREAM", e.FILTERED = "FILTERED", e.SPEAKING = "SPEAKING", e.ACTIVITY = "ACTIVITY", e.NOT_POPPED_OUT = "NOT_POPPED_OUT", e
 }({});
 
-function x(e) {
+function L(e) {
   return u.default.getId() === e && p.Z.isCurrentUserPTTLatched()
 }
-class L {
+class x {
   get version() {
     return this.participantByIndex.version
   }
@@ -153,7 +153,7 @@ class L {
         });
         return t && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, C(S({}, n), {
           speaking: t,
-          latched: x(e),
+          latched: L(e),
           lastSpoke: this.lastSpoke[e],
           soundsharing: p.Z.isSoundSharing(e)
         })), true
@@ -218,7 +218,7 @@ class L {
         userId: e,
         checkIsMuted: true
       }),
-      latched: x(e),
+      latched: L(e),
       lastSpoke: null != (i = this.lastSpoke[e]) ? i : 0,
       soundsharing: p.Z.isSoundSharing(e),
       ringing: D,

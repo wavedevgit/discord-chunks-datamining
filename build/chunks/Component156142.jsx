@@ -74,7 +74,7 @@ let w = (0, Chunk972959.H)(() => ({
   selectedStory: null
 }));
 
-function x() {
+function L() {
   let e = (0, Chunk53432.Z)(),
     t = (0, Chunk606669.Z)(),
     n = (0, Chunk74869.Z)();
@@ -99,11 +99,11 @@ function x() {
   })
 }
 
-function L() {
+function x() {
   let e = Chunk473749.useRef(null);
   return (0, Chunk54381.jsx)(Chunk235874.y, {
     targetElementRef: module,
-    renderPopout: () => (0, Chunk54381.jsx)(x, {}),
+    renderPopout: () => (0, Chunk54381.jsx)(L, {}),
     position: "bottom",
     align: "center",
     animation: Chunk235874.y.Animation.SCALE,
@@ -207,7 +207,7 @@ function M(e) {
           onClick: R
         }) : null, (0, r.jsx)("div", {
           className: C.headerRight,
-          children: (0, r.jsx)(L, {})
+          children: (0, r.jsx)(x, {})
         })]
       }), (0, r.jsxs)("div", {
         className: C.page,

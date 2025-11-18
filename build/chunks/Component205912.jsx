@@ -99,8 +99,8 @@ function T(e) {
   } = N, w = {
     hasError: null != P && "" !== P
   }, {
-    refs: x,
-    floatingStyles: L,
+    refs: L,
+    floatingStyles: x,
     isOpen: M,
     setIsOpen: k,
     context: j,
@@ -133,7 +133,7 @@ function T(e) {
     children: e => (0, r.jsx)(h.U, O(b({
       className: g.inputField,
       validation: w,
-      ref: x.setReference
+      ref: L.setReference
     }, G()), {
       children: (0, r.jsxs)(o.Mt, {
         id: e.controlId,
@@ -170,8 +170,8 @@ function T(e) {
             })
           })]
         }), M && B && (0, r.jsx)("div", O(b({}, U()), {
-          ref: x.setFloating,
-          style: L,
+          ref: L.setFloating,
+          style: x,
           className: g.popover,
           children: (0, r.jsx)(u.Vq, {
             style: Z,

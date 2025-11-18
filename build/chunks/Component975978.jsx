@@ -209,8 +209,8 @@ let C = e => {
       N = (0, _.N)(),
       P = null != N && (0, h.Wp)(N, E.Si.TIER_2),
       w = (0, h.Aq)(E.Xh.PREMIUM_MONTH_TIER_2),
-      x = "".concat(w, "/").concat((0, d.eP)(E.rV.MONTH)),
-      L = (0, d.CY)(E.Xh.PREMIUM_MONTH_TIER_0),
+      L = "".concat(w, "/").concat((0, d.eP)(E.rV.MONTH)),
+      x = (0, d.CY)(E.Xh.PREMIUM_MONTH_TIER_0),
       M = (0, d.CY)(E.Xh.PREMIUM_MONTH_TIER_2),
       k = (0, g.e)();
     if (s) n = null;
@@ -255,10 +255,10 @@ let C = e => {
           }), (0, r.jsxs)("table", {
             className: y.table,
             children: [(0, r.jsx)(D, {
-              tier0Price: L,
+              tier0Price: x,
               tier2Price: M,
               shouldUseDiscountPrice: P,
-              tier2DiscountedPriceString: x
+              tier2DiscountedPriceString: L
             }), k.map(e => (0, i.createElement)(R, A(T({}, e), {
               key: e.id
             })))]

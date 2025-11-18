@@ -2,7 +2,7 @@
 /** chunk id: 558261, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => W
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -158,6 +158,48 @@ let P = e => {
   H = e => {
     let {
       product: t,
+      analyticsLocations: n,
+      onClickAnalytics: i
+    } = e;
+    return (0, r.jsx)(a.Button, {
+      variant: "primary",
+      text: L.intl.format(L.t["4NKuqc"], {
+        orbPrice: I.As,
+        orbIconHook: () => (0, r.jsx)(d.Z, {
+          className: B.orbIconAligned
+        })
+      }),
+      onClick: e => {
+        e.stopPropagation(), null == i || i("rental claim with orbs button"), (0, p.qA)({
+          skuId: (0, O.S)({
+            product: t
+          }),
+          onCheckoutSuccess: e => {
+            var r;
+            let {
+              entitlements: i
+            } = e;
+            (0, h.qg)({
+              variantsReturnStyle: l.v.VARIANTS_GROUP
+            }), (0, k.Z)({
+              product: t,
+              analyticsLocations: n,
+              itemConsumed: null == (r = i[0]) ? true : r.consumed,
+              purchaseType: I.o8.ORB
+            })
+          },
+          isRental: true
+        })
+      },
+      "aria-label": L.intl.formatToPlainString(L.t.DlNs2T, {
+        orbPrice: I.As
+      }),
+      fullWidth: true
+    })
+  },
+  D = e => {
+    let {
+      product: t,
       checkoutEligiblePrices: n,
       analyticsLocations: i,
       selectedVariantIndex: o,
@@ -201,7 +243,7 @@ let P = e => {
       fullWidth: true
     })
   },
-  D = e => {
+  M = e => {
     let {
       handlePreviewButtonClick: t,
       text: n
@@ -215,7 +257,7 @@ let P = e => {
       fullWidth: true
     })
   },
-  M = e => {
+  F = e => {
     let {
       product: t,
       cardRef: n,
@@ -224,29 +266,30 @@ let P = e => {
       text: c,
       prioritizedCurrency: u,
       onClickAnalytics: d
-    } = e, p = (0, i.e7)([g.default], () => g.default.getCurrentUser()), h = f.ZP.canUseCollectibles(p), {
-      isPurchased: C,
-      isPartiallyOwnedBundle: O
-    } = (0, x.L)(t), S = (0, _.G1)(t), k = (0, _.rN)(t), {
-      isDisabled: I
-    } = (0, v.G)(t.skuId), T = (0, _.ne)({
+    } = e, p = (0, i.e7)([g.default], () => g.default.getCurrentUser()), h = f.ZP.canUseCollectibles(p), C = (0, E.$l)(), {
+      isPurchased: O,
+      isPartiallyOwnedBundle: S
+    } = (0, x.L)(t), k = (0, _.G1)(t), I = (0, _.rN)(t), {
+      isDisabled: T
+    } = (0, v.G)(t.skuId), L = (0, _.ne)({
       product: t,
-      isPartiallyOwnedBundle: O,
-      isPurchased: C
-    }), L = (0, y.Iw)(t), B = null != L, {
-      shouldCheckoutWithOrbs: M,
-      hasSufficientOrbs: F,
-      checkoutEligiblePrices: W
+      isPartiallyOwnedBundle: S,
+      isPurchased: O
+    }), B = (0, y.Iw)(t), F = null != B, {
+      shouldCheckoutWithOrbs: W,
+      hasSufficientOrbs: V,
+      checkoutEligiblePrices: U
     } = (0, j.Ip)({
       product: t,
       isPremiumUser: h,
       prioritizedCurrency: u,
-      hasDiscountOffer: B
+      hasDiscountOffer: F,
+      isRental: C
     }), {
-      analyticsLocations: V
-    } = (0, s.ZP)(o.Z.COLLECTIBLES_SHOP_CARD), U = (0, E.J7)(t, o.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [z, G] = (0, i.Wu)([m.Z], () => [m.Z.isClaiming === t.skuId, null != m.Z.isClaiming && m.Z.isClaiming !== t.skuId]), {
-      handleUseNow: K,
-      isApplying: Y
+      analyticsLocations: z
+    } = (0, s.ZP)(o.Z.COLLECTIBLES_SHOP_CARD), G = (0, E.J7)(t, o.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [K, Y] = (0, i.Wu)([m.Z], () => [m.Z.isClaiming === t.skuId, null != m.Z.isClaiming && m.Z.isClaiming !== t.skuId]), {
+      handleUseNow: q,
+      isApplying: J
     } = (0, b.W)({
       product: t
     });
@@ -255,56 +298,60 @@ let P = e => {
       skuId: t.skuId,
       text: c
     });
-    if (S && !h && !k) return (0, r.jsx)(N, {
-      isClaimPremiumProductDisabled: G,
+    if (k && !h && !I) return (0, r.jsx)(N, {
+      isClaimPremiumProductDisabled: Y,
       text: c
     });
-    if (!T || I) return (0, r.jsx)(A, {
-      handlePreviewButtonClick: U,
+    if (!L || T) return (0, r.jsx)(A, {
+      handlePreviewButtonClick: G,
       text: c
     });
-    if (C) return (0, r.jsx)(R, {
-      handleUseNow: K,
-      isApplying: Y,
+    if (O) return (0, r.jsx)(R, {
+      handleUseNow: q,
+      isApplying: J,
       text: c
     });
-    if (S) return (0, r.jsx)(w, {
+    if (k) return (0, r.jsx)(w, {
       product: t,
-      isClaimPremiumProductDisabled: G,
-      isClaiming: z,
-      analyticsLocations: V,
+      isClaimPremiumProductDisabled: Y,
+      isClaiming: K,
+      analyticsLocations: z,
       text: c,
       onClickAnalytics: d
     });
-    if (M && F) return (0, r.jsx)(H, {
+    if (W && V) return C ? (0, r.jsx)(H, {
       product: t,
-      checkoutEligiblePrices: W,
-      analyticsLocations: V,
+      analyticsLocations: z,
+      onClickAnalytics: d
+    }) : (0, r.jsx)(D, {
+      product: t,
+      checkoutEligiblePrices: U,
+      analyticsLocations: z,
       selectedVariantIndex: l,
       text: c,
       onClickAnalytics: d
     });
-    if (M && !F)
-      if (W.length > 1) return (0, r.jsx)(D, {
-        handlePreviewButtonClick: U,
+    if (W && !V)
+      if (U.length > 1) return (0, r.jsx)(M, {
+        handlePreviewButtonClick: G,
         text: c
       });
       else return (0, r.jsx)(A, {
-        handlePreviewButtonClick: U,
+        handlePreviewButtonClick: G,
         text: c
       });
     return (0, r.jsx)(P, {
       product: t,
       cardRef: n,
       isPremiumUser: h,
-      analyticsLocations: V,
+      analyticsLocations: z,
       selectedVariantIndex: l,
-      hasDiscountOffer: B,
-      discountOfferAmount: L,
+      hasDiscountOffer: F,
+      discountOfferAmount: B,
       text: c
     })
   },
-  F = e => {
+  W = e => {
     let {
       skuId: t,
       cardRef: n,
@@ -315,7 +362,7 @@ let P = e => {
     } = e, s = (0, E.LJ)(t), c = (0, C.o)(s);
     if (null == s) return null;
     let u = (0, S.W)(s, c);
-    return (0, r.jsx)(M, {
+    return (0, r.jsx)(F, {
       product: u,
       cardRef: n,
       selectedVariantIndex: c,

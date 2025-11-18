@@ -137,12 +137,12 @@ function w(e) {
   if (null != t) return t
 }
 
-function x(e) {
+function L(e) {
   let t = C(e, s.G.QUARANTINE_EVENT);
   if (null != t) return t
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   switch (t) {
     case u.z.BLOCK_PROFILE_UPDATE:
       return r(e);
@@ -204,13 +204,13 @@ function j(e, t) {
     i = arguments.length > 4 ? arguments[4] : true,
     l = w(e),
     c = D(e),
-    u = x(e),
+    u = L(e),
     d = P(e),
     f = R(e),
     _ = C(e, s.G.INTERACTION_CALLBACK_TYPE),
     h = C(e, s.G.APPLICATION_NAME);
   if (null != d) {
-    let e = L(l, c, u);
+    let e = x(l, c, u);
     if (null != e) return e
   }
   let m = p.Z.can(g.Plq.VIEW_CHANNEL, t),

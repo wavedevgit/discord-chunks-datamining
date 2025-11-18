@@ -60,7 +60,7 @@ function w(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   var t, n, r, i, a;
   let {
     quest: o,
@@ -105,7 +105,7 @@ function x(e) {
   }) : u
 }
 
-function L(e) {
+function x(e) {
   var t;
   let {
     quest: n,
@@ -251,7 +251,7 @@ let k = e => {
         }), (0, r.jsx)(u.Text, {
           variant: "lg" === c ? "text-sm/medium" : "text-xs/medium",
           color: "text-muted",
-          children: x({
+          children: L({
             quest: n,
             locale: K,
             isQuestExpired: _,
@@ -282,7 +282,7 @@ let k = e => {
           containerSize: c,
           onClick: W,
           text: R.intl.string(R.t.LLLLPD)
-        }), !z && (0, r.jsx)(L, {
+        }), !z && (0, r.jsx)(x, {
           quest: n,
           progressState: N,
           isCollectibleQuest: U,

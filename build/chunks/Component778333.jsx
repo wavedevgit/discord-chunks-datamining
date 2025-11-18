@@ -62,8 +62,8 @@ function y(e) {
     D = "active";
   A ? (P = E.intl.string(E.t.xhxnPn), D = "secondary") : I && (P = E.intl.string(E.t.ib7Ng1), D = "secondary");
   let w = I ? E.intl.string(E.t.eQyu1F) : E.intl.string(E.t.PYJHW6),
-    x = null != n.inviter ? "".concat(n.inviter.username) : "",
-    L = null != n.inviter ? m.ZP.getUserTag(n.inviter) : "";
+    L = null != n.inviter ? "".concat(n.inviter.username) : "",
+    x = null != n.inviter ? m.ZP.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(d.Z, {
     children: [(0, r.jsx)(d.Z.Header, {
       text: w
@@ -74,9 +74,9 @@ function y(e) {
           user: new f.Z(n.inviter),
           onClick: A ? R : true
         }), (0, r.jsx)(d.Z.Info, {
-          title: x,
+          title: L,
           onClick: A ? R : true,
-          children: L
+          children: x
         })]
       }), (0, r.jsx)(a.zxk, {
         onClick: R,

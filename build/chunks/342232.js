@@ -52,11 +52,11 @@ function E(e, t, n) {
     w = t.formatValue(D, {
       month: "long"
     }),
-    x = w ? O.format("selectedDateDescription", {
+    L = w ? O.format("selectedDateDescription", {
       date: w
     }) : "",
-    L = (0, l.P)(x),
-    M = [L["aria-describedby"], A["aria-describedby"]].filter(Boolean).join(" ") || true,
+    x = (0, l.P)(L),
+    M = [x["aria-describedby"], A["aria-describedby"]].filter(Boolean).join(" ") || true,
     k = (0, c.z)(e),
     j = (0, m.useMemo)(() => (0, o.E7)(n), [n]),
     U = (0, m.useRef)(false),
@@ -80,7 +80,7 @@ function E(e, t, n) {
       }
     });
   return {
-    groupProps: (0, u.d)(k, R, A, L, G, {
+    groupProps: (0, u.d)(k, R, A, x, G, {
       role: "group",
       "aria-disabled": e.isDisabled || null,
       "aria-labelledby": P,
@@ -123,7 +123,7 @@ function E(e, t, n) {
     descriptionProps: C,
     errorMessageProps: N,
     buttonProps: {
-      ...L,
+      ...x,
       id: E,
       "aria-haspopup": "dialog",
       "aria-label": O.format("calendar"),

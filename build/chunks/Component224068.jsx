@@ -18,11 +18,12 @@ function d(e) {
   let {
     product: n,
     isDarkText: i = false,
-    isOrbExclusive: d = false
-  } = e, m = (t = n.type, d ? c.intl.string(c.t["0TmQRG"]) : (0, l.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOo)).otherwise(() => null));
-  return null === m ? null : (0, r.jsx)(s.Text, {
+    isOrbExclusive: d = false,
+    rentalDuration: m = 0
+  } = e, p = (t = n.type, 1 === m ? c.intl.string(c.t["9dHf8O"]) : 3 === m ? c.intl.string(c.t["52UXCo"]) : d ? c.intl.string(c.t["0TmQRG"]) : (0, l.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOo)).otherwise(() => null));
+  return null === p ? null : (0, r.jsx)(s.Text, {
     variant: "text-xxs/normal",
     className: a()([u.container, i ? u.darkText : u.lightText]),
-    children: m
+    children: p
   })
 }

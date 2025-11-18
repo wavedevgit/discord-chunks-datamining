@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => k,
-  xX: () => L
+  xX: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -67,13 +67,13 @@ function w(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function L(e) {
+function x(e) {
   return e.map((e, t) => (0, r.jsxs)(r.Fragment, {
     children: [M(e, t.toString()), (0, r.jsx)(o.nn4, {
       children: ","
@@ -84,8 +84,8 @@ function L(e) {
 function M(e, t) {
   switch (e.type) {
     case s.re.ACTION_ROW:
-      return (0, r.jsx)(S.Z, x(D({}, e), {
-        renderComponents: L
+      return (0, r.jsx)(S.Z, L(D({}, e), {
+        renderComponents: x
       }), t);
     case s.re.BUTTON:
       return (0, r.jsx)(d.Z, D({}, e), t);
@@ -100,8 +100,8 @@ function M(e, t) {
     case s.re.TEXT_INPUT:
       return (0, r.jsx)(m.Z, D({}, e), t);
     case s.re.SECTION:
-      return (0, r.jsx)(N.Z, x(D({}, e), {
-        renderComponents: L
+      return (0, r.jsx)(N.Z, L(D({}, e), {
+        renderComponents: x
       }), t);
     case s.re.TEXT_DISPLAY:
       return (0, r.jsx)(O.Z, D({}, e), t);
@@ -116,11 +116,11 @@ function M(e, t) {
     case s.re.CONTENT_INVENTORY_ENTRY:
       return (0, r.jsx)(T.Z, D({}, e), t);
     case s.re.CONTAINER:
-      return (0, r.jsx)(A.Z, x(D({}, e), {
-        renderComponents: L
+      return (0, r.jsx)(A.Z, L(D({}, e), {
+        renderComponents: x
       }), t);
     case s.re.LABEL:
-      return (0, r.jsx)(C.Z, x(D({}, e), {
+      return (0, r.jsx)(C.Z, L(D({}, e), {
         renderComponent: M
       }), t);
     case s.re.FILE_UPLOAD:
@@ -155,7 +155,7 @@ function k(e) {
             className: a()([R.container, {
               [R.isComponentsV2]: (0, l.hv)(t)
             }]),
-            children: L(i)
+            children: x(i)
           })
         })
       })

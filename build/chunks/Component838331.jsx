@@ -113,9 +113,9 @@ function S(e) {
     emptyStateText: N,
     emptyStateHeader: R,
     onQueryChange: P
-  } = e, [D, w] = i.useState(""), x = i.useCallback(e => {
+  } = e, [D, w] = i.useState(""), L = i.useCallback(e => {
     w(e), null == P || P(e)
-  }, [P]), [L] = i.useState(true), [M, k] = i.useState(null), j = i.useId(), U = i.useRef(null);
+  }, [P]), [x] = i.useState(true), [M, k] = i.useState(null), j = i.useId(), U = i.useRef(null);
   i.useLayoutEffect(() => {
     let e = document.querySelector("[".concat(b, '="').concat(M, '"]')),
       t = U.current;
@@ -170,8 +170,8 @@ function S(e) {
           ref: n,
           role: "combobox",
           "aria-label": O,
-          "aria-expanded": L,
-          "aria-controls": L ? j : true,
+          "aria-expanded": x,
+          "aria-controls": x ? j : true,
           "aria-owns": j,
           "aria-haspopup": "listbox",
           className: o()(f.combobox, h),
@@ -182,17 +182,17 @@ function S(e) {
               autoFocus: S,
               placeholder: t,
               query: D,
-              onChange: x,
+              onChange: L,
               onKeyDown: i,
               onBlur: () => k(null),
-              onClear: () => x(""),
+              onClear: () => L(""),
               inputProps: {
                 "aria-multiline": false,
                 "aria-activedescendant": null != M ? M : true
               }
             })
           }), (0, r.jsx)("div", {
-            children: L && (B ? (0, r.jsxs)("div", {
+            children: x && (B ? (0, r.jsxs)("div", {
               className: f.empty,
               children: [(0, r.jsx)(u.Heading, {
                 variant: "heading-md/semibold",

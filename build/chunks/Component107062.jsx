@@ -2,7 +2,7 @@
 /** chunk id: 107062, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => x
+  ZP: () => L
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -58,13 +58,13 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
       countOthers: i
     }).replaceAll("*", "")
   },
-  x = e => {
+  L = e => {
     let {
       channel: t,
       entry: n,
       onReaction: b,
-      onVoiceChannelPreview: x,
-      disableActivityProfileLinks: L
+      onVoiceChannelPreview: L,
+      disableActivityProfileLinks: x
     } = e, {
       largeImage: M
     } = (0, y.rv)({
@@ -129,9 +129,9 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
         badges: J,
         entry: n,
         showCoverImage: false,
-        onClickTitle: L ? true : K,
-        onClickSubtitle: L ? true : K,
-        onClickThumbnail: L ? true : K
+        onClickTitle: x ? true : K,
+        onClickSubtitle: x ? true : K,
+        onClickThumbnail: x ? true : K
       }),
       ee = (0, l.Z)(U, N.xjy.JOIN) || (0, c.Z)(U),
       et = ee ? (0, r.jsx)(d.Z, {
@@ -151,7 +151,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
         icon: o.v3n
       }),
       er = Q ? o.iWm : o.jje,
-      ei = null != en || L ? null : (0, r.jsx)(o.Button, {
+      ei = null != en || x ? null : (0, r.jsx)(o.Button, {
         variant: "primary",
         size: "md",
         fullWidth: true,
@@ -159,12 +159,12 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
         text: R.intl.string(R.t.GDWYR8),
         icon: er
       }),
-      ea = [en, ee && !L ? et : ei].filter(E.lm);
+      ea = [en, ee && !x ? et : ei].filter(E.lm);
     return (0, r.jsxs)(A.yR, {
       children: [$, (0, r.jsx)(A.St, {
         children: (0, r.jsx)(A.WT, {
           onReaction: b,
-          onVoiceChannelPreview: x,
+          onVoiceChannelPreview: L,
           user: k,
           channel: t,
           generateReactionImage: z,

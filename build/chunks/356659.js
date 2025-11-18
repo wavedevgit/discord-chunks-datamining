@@ -30,7 +30,7 @@ require.d(exports, {
   rI: () => m,
   wD: () => I,
   yl: () => S,
-  zh: () => x
+  zh: () => L
 });
 var Chunk710845 = require("./710845.js"),
   Chunk70956 = require("./70956.js"),
@@ -71,6 +71,6 @@ Chunk70956.Z.Millis.DAY;
 let P = 20,
   D = 1,
   w = 50;
-var x = function(e) {
+var L = function(e) {
   return e.ALL = ":all", e.APPLICATION = ":application", e.VOICE = ":voice", e.SOUNDBOARD = ":soundboard", e
 }({})

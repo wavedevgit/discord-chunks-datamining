@@ -2,8 +2,8 @@
 /** chunk id: 748714, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A3: () => L,
-  f4: () => x,
+  A3: () => x,
+  f4: () => L,
   f9: () => M,
   gY: () => w
 });
@@ -101,27 +101,28 @@ let N = e => {
       orbBalance: t,
       orbPriceAmount: n,
       loading: o,
-      onClick: s
-    } = e, l = A(e, ["orbBalance", "orbPriceAmount", "loading", "onClick"]);
-    let c = I({
+      onClick: s,
+      isRental: l
+    } = e, c = A(e, ["orbBalance", "orbPriceAmount", "loading", "onClick", "isRental"]);
+    let u = I({
       variant: "active",
       type: "submit",
       "data-testid": "submitButton",
-      text: y.intl.string(y.t.wmcDyu)
-    }, l);
+      text: l ? y.intl.string(y.t["2n5l8j"]) : y.intl.string(y.t.wmcDyu)
+    }, c);
     return null === n ? (0, r.jsx)(i.u, {
       text: y.intl.string(y.t["c/rcUu"]),
       asContainer: true,
-      children: (0, r.jsx)(a.zxk, S(I({}, c), {
+      children: (0, r.jsx)(a.zxk, S(I({}, u), {
         disabled: true
       }))
     }) : null === t || n > t ? (0, r.jsx)(i.u, {
       text: y.intl.string(y.t.keFvXM),
       asContainer: true,
-      children: (0, r.jsx)(a.zxk, S(I({}, c), {
+      children: (0, r.jsx)(a.zxk, S(I({}, u), {
         disabled: true
       }))
-    }) : (0, r.jsx)(a.zxk, S(I({}, c), {
+    }) : (0, r.jsx)(a.zxk, S(I({}, u), {
       loading: o,
       onClick: s
     }))
@@ -184,7 +185,7 @@ let N = e => {
       children: n
     })
   },
-  x = e => {
+  L = e => {
     let {
       skuId: t
     } = e;
@@ -195,7 +196,7 @@ let N = e => {
       message: y.intl.format(y.t.fsOXXO, {})
     }) : null
   },
-  L = e => {
+  x = e => {
     let {
       skuId: t,
       orbPriceAmount: n,
@@ -227,7 +228,8 @@ let N = e => {
       orbPriceAmount: t,
       orbBalance: n,
       isSubmitting: i,
-      onClickCheckout: a
+      onClickCheckout: a,
+      isRental: s
     } = e;
     return (0, r.jsxs)(o.mzw, {
       align: d.Z.Align.CENTER,
@@ -236,7 +238,8 @@ let N = e => {
         orbBalance: n,
         orbPriceAmount: t,
         loading: i,
-        onClick: a
+        onClick: a,
+        isRental: s
       }), (0, r.jsx)(f.Z, {})]
     })
   }

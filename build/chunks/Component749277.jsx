@@ -2,7 +2,7 @@
 /** chunk id: 749277, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => L
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -70,11 +70,11 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = e => {
+let L = e => {
   let {
     dismissibleContent: t,
     noticeType: R
-  } = e, D = (0, i.e7)([b.default], () => b.default.getCurrentUser()), x = (0, i.e7)([E.Z], () => E.Z.getGuildId());
+  } = e, D = (0, i.e7)([b.default], () => b.default.getCurrentUser()), L = (0, i.e7)([E.Z], () => E.Z.getGuildId());
   return (0, r.jsx)(v.ZP, {
     contentTypes: [t],
     groupName: I.R.NOTICE_BAR,
@@ -133,6 +133,7 @@ let x = e => {
           return (0, r.jsxs)(o.qXd, {
             color: o.DM8.PLAYSTATION,
             children: [(0, r.jsx)(o.RyX, {
+              noticeType: R,
               onClick: () => i(I.L.UNKNOWN)
             }), (0, r.jsx)("img", {
               alt: "",
@@ -301,7 +302,7 @@ let x = e => {
               noticeType: T.kVF.REPORT_TO_MOD_EXIT_SURVEY
             }), C.intl.string(C.t.sw22sn), (0, r.jsx)(o.NoS, {
               onClick: () => {
-                window.open("https://discord.sjc1.qualtrics.com/jfe/form/SV_9zz09xNJ3Qvyb78?user_id=".concat(null == D ? true : D.id, "&guild_id=").concat(x), "_blank"), i(I.L.TAKE_ACTION)
+                window.open("https://discord.sjc1.qualtrics.com/jfe/form/SV_9zz09xNJ3Qvyb78?user_id=".concat(null == D ? true : D.id, "&guild_id=").concat(L), "_blank"), i(I.L.TAKE_ACTION)
               },
               noticeType: T.kVF.REPORT_TO_MOD_EXIT_SURVEY,
               children: C.intl.string(C.t.rulMOX)

@@ -90,8 +90,8 @@ let p = function(e) {
   i.useEffect(() => (w(), () => {
     N()
   }), [w, N]);
-  let x = (0, c.dQu)(l.Z.colors.TEXT_SECONDARY).hex(),
-    L = (0, c.dQu)(l.Z.colors.TEXT_PRIMARY).hex();
+  let L = (0, c.dQu)(l.Z.colors.TEXT_SECONDARY).hex(),
+    x = (0, c.dQu)(l.Z.colors.TEXT_PRIMARY).hex();
 
   function M() {
     return s()(f.cardInput, {
@@ -147,14 +147,14 @@ let p = function(e) {
       base: {
         fontFamily: r,
         fontWeight: n.getPropertyValue("font-weight"),
-        color: L,
+        color: x,
         fontSize: n.getPropertyValue("font-size"),
         "::placeholder": {
-          color: x
+          color: L
         }
       }
     })
-  }, [t, x, L]), (0, r.jsxs)("div", {
+  }, [t, L, x]), (0, r.jsxs)("div", {
     className: f.cardNumberWrapper,
     "data-stripe-type": n,
     children: [(0, r.jsx)("div", {

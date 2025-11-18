@@ -146,7 +146,7 @@ function ep(e, t) {
     source: w.Z.INVITE_ACCEPT,
     navigationReplace: true
   };
-  return null != i && (s.welcomeModalChannelId = i), o && (s.state = ei.Df), null != a && (s.guildScheduledEventId = a.id), e => null != r ? r(e, s) : (0, x.uL)(e, s)
+  return null != i && (s.welcomeModalChannelId = i), o && (s.state = ei.Df), null != a && (s.guildScheduledEventId = a.id), e => null != r ? r(e, s) : (0, L.uL)(e, s)
 }
 
 function eh(e) {
@@ -172,14 +172,14 @@ function eh(e) {
         default: n
       } = e, o = () => {
         if (y) {
-          (0, L.Cq)(r instanceof M.Sf ? r : (0, M.createChannelRecord)(r)), (0, x.uL)(T);
+          (0, x.Cq)(r instanceof M.Sf ? r : (0, M.createChannelRecord)(r)), (0, L.uL)(T);
           return
         }(null == i ? true : i.muteOnJoinVoiceChannel) && X.Z.setSelfMute(d.Yn.DEFAULT, true), n.selectVoiceChannel(E), c === er.Iq.STREAM && null != l && J.iV({
           streamType: en.lo.GUILD,
           ownerId: l,
           guildId: t,
           channelId: E
-        }), c === er.Iq.EMBEDDED_APPLICATION && null != u && ((0, x.uL)($.Z5c.CHANNEL(null != t ? t : $.ME, E)), (0, m.Z)({
+        }), c === er.Iq.EMBEDDED_APPLICATION && null != u && ((0, L.uL)($.Z5c.CHANNEL(null != t ? t : $.ME, E)), (0, m.Z)({
           channelId: E,
           applicationId: u,
           intent: null == i ? true : i.intent,
@@ -190,7 +190,7 @@ function eh(e) {
       };
       !f && (0, I.n)(t, [B.Z, H.default, G.ZP]) ? (0, v.hk)(t, o) : o()
     })
-  }) : (0, h.l5)(g) && c === er.Iq.EMBEDDED_APPLICATION && null != u && ((0, x.uL)($.Z5c.CHANNEL(null != t ? t : $.ME, E)), (0, m.Z)({
+  }) : (0, h.l5)(g) && c === er.Iq.EMBEDDED_APPLICATION && null != u && ((0, L.uL)($.Z5c.CHANNEL(null != t ? t : $.ME, E)), (0, m.Z)({
     channelId: E,
     applicationId: u,
     intent: null == i ? true : i.intent,

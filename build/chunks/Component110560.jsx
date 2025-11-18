@@ -52,7 +52,7 @@ var Chunk772848 = require("./772848.js"),
   Chunk49898 = require("./49898.js"),
   Chunk388032 = require("./388032.jsx");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -68,7 +68,7 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -425,14 +425,14 @@ async function er(e, t) {
       break;
     case m.wF.CAPTCHA_FAILED:
       l.Z.show({
-        title: x.intl.string(x.t["/CidxO"]),
-        body: x.intl.string(x.t.HQdHg6)
+        title: L.intl.string(L.t["/CidxO"]),
+        body: L.intl.string(L.t.HQdHg6)
       });
       break;
     case m.wF.UNKNOWN_ERROR:
       l.Z.show({
-        title: x.intl.string(x.t.R0RpRX),
-        body: x.intl.string(x.t.OXD41D)
+        title: L.intl.string(L.t.R0RpRX),
+        body: L.intl.string(L.t.OXD41D)
       });
     case m.wF.PREVIOUS_IN_FLIGHT_REQUEST:
   }

@@ -183,7 +183,7 @@ function tp(e) {
     "data-jump-section": v
   } = e, j = l.useRef(null), y = null != t ? t : j, C = (0, eq.NZ)({
     avatarDecoration: f,
-    size: (0, I.y9)(g.EFr.SIZE_32)
+    size: (0, w.y9)(g.EFr.SIZE_32)
   }), S = (0, K.Z)(), {
     updateOpenPopoutRef: E,
     highlightBadge: O,
@@ -835,7 +835,7 @@ function tf() {
       return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
     }),
     O = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-    I = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSpeakingWhileMuted()),
+    w = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSpeakingWhileMuted()),
     Z = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     D = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
     L = (0, Chunk481060.s9z)(Chunk481060.JQI) || Chunk628581 || Chunk374023.s.isDisallowPopupsSet() || Chunk571250,
@@ -1026,15 +1026,15 @@ function tv(e) {
     O = l.useRef(null),
     P = (0, eR.b)(S),
     {
-      activeVoice: w,
-      mostRecentlyRequestedVoiceId: I,
+      activeVoice: I,
+      mostRecentlyRequestedVoiceId: w,
       lastInitAttemptMayHaveCrashed: k
     } = (0, eO.o)(),
     {
       showSilentLagWarning: R
     } = (0, eE.Y)(),
-    A = null != w,
-    Z = (0, eS.z)(w),
+    A = null != I,
+    Z = (0, eS.z)(I),
     U = (0, d.e7)([eF.Z], () => eF.Z.isConnected()),
     {
       Component: F,
@@ -1273,7 +1273,7 @@ function tv(e) {
           let {
             closePopout: t
           } = e;
-          return (0, a.jsx)(eI.l, {
+          return (0, a.jsx)(ew.l, {
             onSettingsButtonClick: t
           })
         },
@@ -1308,7 +1308,7 @@ function tv(e) {
                   visibleContent: t,
                   markAsDismissed: r
                 } = e, s = null;
-                t === u.z.VOICE_FILTER_EARLY_ACCESS_COACHMARK ? s = (0, a.jsx)(ew.U, {
+                t === u.z.VOICE_FILTER_EARLY_ACCESS_COACHMARK ? s = (0, a.jsx)(eI.U, {
                   markAsDismissed: r,
                   onCTA: () => $(true)
                 }) : t === u.z.VOICE_FILTER_LAUNCH_COACHMARK ? s = (0, a.jsx)(eP.n, {
@@ -1349,7 +1349,7 @@ function tv(e) {
                   "aria-label": tl.intl.string(tl.t.Hapb4J),
                   disabled: o,
                   onClick: e => {
-                    r(tt.L.INDIRECT_ACTION), n(e), null != I && !Q && k ? (0, ek.$)(() => $(true)) : $(!Q)
+                    r(tt.L.INDIRECT_ACTION), n(e), null != w && !Q && k ? (0, ek.$)(() => $(true)) : $(!Q)
                   }
                 }, l));
                 return null != s ? (0, a.jsx)(g.yRy, {

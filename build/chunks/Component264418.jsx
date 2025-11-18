@@ -92,7 +92,7 @@ function O(e) {
       scrollBehavior: R
     } = e,
     P = b(e, ["title", "body", "badge", "graphic", "size", "actions", "textLink", "gradientColor", "onRequestClose", "popoverRef", "position", "caretConfig", "scrollBehavior"]);
-  let [D, w] = i.useState(null != C ? C : "top"), [x, L] = i.useState({
+  let [D, w] = i.useState(null != C ? C : "top"), [L, x] = i.useState({
     position: (0, _.z)(D),
     align: null != (t = null == N ? true : N.align) ? t : "center",
     customOffset: null == N ? true : N.customOffset
@@ -101,7 +101,7 @@ function O(e) {
   }, [S]), k = i.useCallback(() => {
     null == S || S("user:explicit")
   }, [S]), j = i.useCallback(e => {
-    w(e), L(t => E(m({}, t), {
+    w(e), x(t => E(m({}, t), {
       position: (0, _.z)(e)
     }))
   }, []);
@@ -132,7 +132,7 @@ function O(e) {
       }), null != v && v.length > 0 ? (0, r.jsx)(c.k, {
         actions: v
       }) : null, (0, r.jsx)(u.$, {
-        caretConfig: x
+        caretConfig: L
       })]
     })
   }))

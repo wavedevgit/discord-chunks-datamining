@@ -94,9 +94,9 @@ function I(e) {
     D = b(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "inputRef"]);
   let {
     fieldProps: w,
-    props: x
+    props: L
   } = (0, s.XF_)(D), {
-    disabled: L
+    disabled: x
   } = w, M = (0, d.U)("UserSettingsDesignSystems"), k = (0, u.m)({
     validateOn: "change",
     error: y,
@@ -112,7 +112,7 @@ function I(e) {
   }, [M, g]), U = e => {
     let {
       onChange: t
-    } = x;
+    } = L;
     null == t || t(e.currentTarget.value), k.setShouldValidate(true)
   }, G = M && C ? (0, r.jsx)(c.H, {
     value: n,
@@ -123,7 +123,7 @@ function I(e) {
     errorMessage: k.hasError && null != (t = k.errorMessage) ? t : true,
     children: (0, r.jsxs)(s.UPk, {
       validation: k,
-      disabled: L,
+      disabled: x,
       children: [(0, r.jsx)(s.tEY, {
         children: (0, r.jsx)(T, E(m({
           autosize: f,
@@ -137,9 +137,9 @@ function I(e) {
           minLength: h,
           maxLength: g,
           rows: R,
-          disabled: L,
+          disabled: x,
           "data-mana-component": "text-area"
-        }, x), {
+        }, L), {
           onChange: U,
           ref: P
         }))

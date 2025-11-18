@@ -102,7 +102,7 @@ function p(e) {
         })]
       }), x]
     })]
-  }), w = e => {
+  }), I = e => {
     let t;
     return t = E ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(i.P3F, {
@@ -158,11 +158,11 @@ function p(e) {
       renderPopout: g,
       shouldShow: j,
       onRequestClose: N,
-      children: w
+      children: I
     })
   }) : (0, a.jsx)("li", {
     className: c.menuItem,
-    children: w()
+    children: I()
   })
 }
 

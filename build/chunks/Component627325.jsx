@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk990525 = require("./990525.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk335189 = require("./335189.js");
-let O = [51],
+let j = [51],
   h = [Chunk388032.t.OpqAok];
 
 function x(e) {
@@ -30,7 +30,7 @@ function x(e) {
     voiceListRef: i,
     showSectionHeaders: o = false,
     query: l
-  } = e, a = P(), x = (0, s.e7)([p.default], () => (0, m.I5)(p.default.getCurrentUser())), C = w(l, x), E = Math.ceil(C.length / t), {
+  } = e, a = P(), x = (0, s.e7)([p.default], () => (0, m.I5)(p.default.getCurrentUser())), w = C(l, x), E = Math.ceil(w.length / t), {
     isNativeModuleLoaded: I,
     isNativeModuleLoading: T,
     catalogLastFetchTime: S
@@ -39,8 +39,8 @@ function x(e) {
     isNativeModuleLoading: b.Z.isNativeModuleLoading(),
     catalogLastFetchTime: b.Z.getCatalogLastFetchTime()
   }));
-  return l && 0 === C.length ? (0, r.jsxs)("div", {
-    className: j.iconMessage,
+  return l && 0 === w.length ? (0, r.jsxs)("div", {
+    className: O.iconMessage,
     children: [(0, r.jsx)(u._Ve, {
       width: 40,
       height: 40,
@@ -52,7 +52,7 @@ function x(e) {
       children: y.intl.string(y.t.ZzukHk)
     })]
   }) : a ? (0, r.jsxs)("div", {
-    className: j.iconMessage,
+    className: O.iconMessage,
     children: [(0, r.jsx)(u.aNP, {
       width: 40,
       height: 40,
@@ -70,17 +70,17 @@ function x(e) {
       })
     })]
   }) : T || null == S ? (0, r.jsx)("div", {
-    className: j.loading,
+    className: O.loading,
     children: (0, r.jsx)(u.$jN, {
       type: u.$jN.Type.CHASING_DOTS,
       animated: true
     })
   }) : (0, r.jsx)(d.Z, {
     fade: true,
-    className: j.container,
+    className: O.container,
     renderRow: e => {
       let n = e * t,
-        i = C.slice(n, n + t);
+        i = w.slice(n, n + t);
       return (0, r.jsx)(_, {
         children: i.map((n, i) => (0, r.jsx)(v.J, {
           voiceFilter: n,
@@ -98,10 +98,10 @@ function x(e) {
     renderSectionHeader: false === o ? true : e => (0, r.jsx)(u.Text, {
       variant: "text-sm/medium",
       color: "header-muted",
-      className: j.header,
+      className: O.header,
       children: y.intl.string(h[e])
     }),
-    sectionHeaderHeight: false === o ? true : e => O[e],
+    sectionHeaderHeight: false === o ? true : e => j[e],
     rowCount: E,
     rowHeight: 130,
     onScroll: n,
@@ -116,7 +116,7 @@ function _(e) {
   } = e, n = i.useRef(null);
   return (0, r.jsx)("div", {
     ref: n,
-    className: j.row,
+    className: O.row,
     children: (0, r.jsx)(u.JcV, {
       containerRef: n,
       children: t
@@ -127,7 +127,7 @@ let P = () => (0, Chunk442837.e7)([Chunk709706.Z], () => {
     var e;
     return !Object.keys(null != (e = Chunk709706.Z.getVoiceFilterModels()) ? module : {}).length && (Chunk709706.Z.getCatalogFetchFailed() || Chunk709706.Z.hasNativeModuleFailed())
   }),
-  w = (e, t) => (0, s.Wu)([b.Z], () => {
+  C = (e, t) => (0, s.Wu)([b.Z], () => {
     let n = b.Z.getVoiceFilters(),
       r = b.Z.getSortedVoiceFilters();
     var i = t ? Object.values(n) : r;

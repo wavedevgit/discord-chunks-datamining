@@ -93,16 +93,16 @@ function y(e) {
     ariaHidden: P = false
   } = e, D = E(e, ["children", "text", "keyboardShortcut", "__unsupportedReactNodeAsText", "asContainer", "tag", "position", "align", "spacing", "layerContext", "targetElementRef", "anchorRef", "caretConfig", "positionKey", "ariaHidden"]);
   let w = (0, f.c)(A),
-    x = i.useId(),
+    L = i.useId(),
     {
-      isVisible: L,
+      isVisible: x,
       triggerProps: M
     } = (0, u.l)(h({
       targetElementRef: w.targetElementRef
     }, D)),
-    k = P ? true : x,
+    k = P ? true : L,
     j = (0, d.Q)({
-      shouldShow: L
+      shouldShow: x
     }),
     {
       defaultLayerContext: U
@@ -124,7 +124,7 @@ function y(e) {
         let t = e.target;
         if (null != t) {
           var n;
-          let e = (0, c.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, x);
+          let e = (0, c.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, L);
           t.setAttribute("aria-describedby", e)
         }
       }),
@@ -133,7 +133,7 @@ function y(e) {
         if (null != t) {
           let e = t.getAttribute("aria-describedby");
           if (null != e) {
-            let n = e.split(" ").filter(e => e !== x);
+            let n = e.split(" ").filter(e => e !== L);
             n.length > 0 ? t.setAttribute("aria-describedby", n.join(" ")) : t.removeAttribute("aria-describedby")
           }
         }
@@ -150,11 +150,11 @@ function y(e) {
     t = (0, c.C9)(n, M, k, w.triggerRef)
   }
   let Z = j((e, t) => t ? (0, r.jsx)(l.N, {
-    isVisible: L,
+    isVisible: x,
     isRendered: true,
     targetElementRef: w.targetElementRef,
     anchorRef: C,
-    id: x,
+    id: L,
     content: G,
     position: v,
     align: I,
@@ -166,7 +166,7 @@ function y(e) {
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
     children: [t, P || null == G || "" === G ? null : (0, r.jsx)(a.n, {
-      id: x,
+      id: L,
       children: G
     }), Z]
   })

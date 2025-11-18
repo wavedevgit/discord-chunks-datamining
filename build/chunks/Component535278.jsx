@@ -53,6 +53,7 @@ let g = function(e) {
   }) : (0, r.jsxs)(i.qXd, {
     color: i.DM8.PREMIUM_TIER_2,
     children: [(0, r.jsx)(i.RyX, {
+      noticeType: p.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING,
       onClick: n
     }), (0, r.jsx)(i.SrA, {
       size: "md",

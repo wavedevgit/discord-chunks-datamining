@@ -84,9 +84,9 @@ let A = new Chunk710845.Z("PopoutWindowStore"),
   P = {},
   D = {},
   w = new Set,
-  x = "app-mount",
-  L = () => $.emitChange(),
-  M = s().debounce(L, 150),
+  L = "app-mount",
+  x = () => $.emitChange(),
+  M = s().debounce(x, 150),
   k = false;
 
 function j(e, t) {
@@ -116,7 +116,7 @@ function U(e) {
 function G(e) {
   A.info("Unmounting popout window", e);
   let t = R[e];
-  a()(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", L), t.removeEventListener("blur", L), t.removeEventListener("resize", M);
+  a()(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", x), t.removeEventListener("blur", x), t.removeEventListener("resize", M);
   let n = P[e];
   a()(null != n, "Window root was null while unmounting"), n.unmount(), delete R[e], delete N[e], delete D[e], delete P[e]
 }
@@ -140,8 +140,8 @@ function F(e) {
     n = D[e];
   if (null == t) return void A.warn("Failed to open window", e);
   let r = t.document;
-  (0, g.uF)(r, L), t.addEventListener("focus", L), t.addEventListener("blur", L), t.addEventListener("resize", M), k ? j(e, t) : Z(e, t);
-  let i = (0, l.createRoot)(r.getElementById(x));
+  (0, g.uF)(r, x), t.addEventListener("focus", x), t.addEventListener("blur", x), t.addEventListener("resize", M), k ? j(e, t) : Z(e, t);
+  let i = (0, l.createRoot)(r.getElementById(L));
   a()(null != i, "No render target for popout!"), P[e] = i, i.render(n(e))
 }
 
@@ -303,7 +303,7 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
   isWindowFullScreen(e) {
     var t, n;
     let r = R[e];
-    return (null == r || null == (n = r.document) || null == (t = n.fullscreenElement) ? true : t.id) === x
+    return (null == r || null == (n = r.document) || null == (t = n.fullscreenElement) ? true : t.id) === L
   }
   unmountWindow(e) {
     return this.isWindowFullyInitialized(e) || A.warn("Attempted to unmount partially initialized window ".concat(e)), Y(e)

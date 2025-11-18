@@ -194,11 +194,11 @@ function w(e, t) {
     }
 }
 
-function x(e) {
-  e.P || (e.P = true, e.l && x(e.l))
+function L(e) {
+  e.P || (e.P = true, e.l && L(e.l))
 }
 
-function L(e) {
+function x(e) {
   e.o || (e.o = h(e.t))
 }
 
@@ -288,7 +288,7 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
         return i ? "value" in i ? i.value : null == (r = i.get) ? true : r.call(e.k) : true
       }(e, n, t);
       var r = n[t];
-      return e.I || !a(r) ? r : r === D(e.t, t) ? (L(e), e.o[t] = M(e.A.h, r, e)) : r
+      return e.I || !a(r) ? r : r === D(e.t, t) ? (x(e), e.o[t] = M(e.A.h, r, e)) : r
     },
     has: function(e, t) {
       return t in p(e)
@@ -304,12 +304,12 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
           a = null == i ? true : i[W];
         if (a && a.t === n) return e.o[t] = n, e.R[t] = false, true;
         if (d(n, i) && (true !== n || l(e.t, t))) returntrue;
-        L(e), x(e)
+        x(e), L(e)
       }
       return e.o[t] === n && (true !== n || t in e.o) || Number.isNaN(n) && Number.isNaN(e.o[t]) || (e.o[t] = n, e.R[t] = true), true
     },
     deleteProperty: function(e, t) {
-      return true !== D(e.t, t) || t in e.t ? (e.R[t] = false, L(e), x(e)) : delete e.R[t], e.o && delete e.o[t], true
+      return true !== D(e.t, t) || t in e.t ? (e.R[t] = false, x(e), L(e)) : delete e.R[t], e.o && delete e.o[t], true
     },
     getOwnPropertyDescriptor: function(e, t) {
       var n = p(e),

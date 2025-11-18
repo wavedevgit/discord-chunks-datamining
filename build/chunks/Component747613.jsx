@@ -85,8 +85,8 @@ function R(e, t) {
 let P = 20,
   D = 125,
   w = (0, Chunk313201.hQ)(),
-  x = Chunk336317.Z.convert.fromCodePoint("1f44f"),
-  L = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
+  L = Chunk336317.Z.convert.fromCodePoint("1f44f"),
+  x = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
   M = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
 
 function k(e) {
@@ -112,7 +112,7 @@ let j = e => {
       onClick: i,
       delay: a,
       index: o
-    } = e, s = (0, u.JA)("item-".concat(o)), l = b.ZP.getURL(x + n), d = (0, _.q_F)({
+    } = e, s = (0, u.JA)("item-".concat(o)), l = b.ZP.getURL(L + n), d = (0, _.q_F)({
       opacity: 1,
       from: {
         opacity: +!t
@@ -139,7 +139,7 @@ let j = e => {
       selectedSurrogate: n,
       onClick: a
     } = e, o = (0, m.Z)("diversity"), s = (0, _.q_F)({
-      height: (M + 2 * L) * (E.gw.length + 1),
+      height: (M + 2 * x) * (E.gw.length + 1),
       from: {
         height: M
       },
@@ -181,7 +181,7 @@ let j = e => {
       searchBarRef: t,
       selectedSurrogate: n,
       className: a
-    } = e, s = b.ZP.getURL(x + n), [l, c] = i.useState(false), u = (0, h.Z)(null, () => c(false)), d = i.useRef(null), f = () => {
+    } = e, s = b.ZP.getURL(L + n), [l, c] = i.useState(false), u = (0, h.Z)(null, () => c(false)), d = i.useRef(null), f = () => {
       c(true)
     }, m = e => {
       e.key === O.vn.ESCAPE && (e.stopPropagation(), c(false), null != d.current && d.current.focus())

@@ -34,8 +34,8 @@ var Chunk664751 = require("./664751.js"),
   Chunk981631 = require("./981631.js"),
   Chunk701488 = require("./701488.js"),
   Chunk388032 = require("./388032.jsx");
-let x = 3,
-  L = new Chunk710845.Z("GamesActionCreators");
+let L = 3,
+  x = new Chunk710845.Z("GamesActionCreators");
 
 function M(e) {
   let {
@@ -56,13 +56,13 @@ function M(e) {
       try {
         if (r.startsWith("http")) {
           let e = window.open(r, "_blank");
-          (null == e || e.closed || true === e.closed) && (L.warn("Deep link popup was blocked by browser, trying location.href", {
+          (null == e || e.closed || true === e.closed) && (x.warn("Deep link popup was blocked by browser, trying location.href", {
             applicationId: t
           }), window.location.href = r)
         } else window.location.href = r;
         return Promise.resolve()
       } catch (e) {
-        L.warn("Failed to open deep link, falling back to desktop launch", {
+        x.warn("Failed to open deep link, falling back to desktop launch", {
           applicationId: t,
           error: e.message
         })
@@ -235,7 +235,7 @@ let G = {
   },
   identifyGame: (e, t) => (0, d.Z)().then(t => new Promise((n, r) => {
     if (null == t) return void r(Error("Game utils module not loaded"));
-    t.identifyGame(e, (t, i) => (L.log("Identified game: ", {
+    t.identifyGame(e, (t, i) => (x.log("Identified game: ", {
       status: t,
       name: i.name,
       iconHash: i.iconHash,
@@ -318,7 +318,7 @@ let G = {
       sku: a,
       executableName: s
     } = e, c = (0, d.F)(s);
-    L.log("Reporting unverified game: ", {
+    x.log("Reporting unverified game: ", {
       name: t,
       executableName: s,
       iconHash: n,
@@ -335,7 +335,7 @@ let G = {
         distributor_application: k(i, a),
         executable: c,
         publisher: r,
-        report_version: x
+        report_version: L
       },
       retries: 1,
       oldFormErrors: true,

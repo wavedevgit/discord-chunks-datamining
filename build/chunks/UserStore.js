@@ -135,7 +135,7 @@ function w(e, t) {
   }
 }
 
-function x(e, t) {
+function L(e, t) {
   var n, r, i, a, o;
   null != e.author && "SENDING" !== e.state && N(e.author) && R(e.author, t), null == (n = e.mentions) || n.forEach(e => {
     N(e) && R(e, t)
@@ -152,7 +152,7 @@ function x(e, t) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     user: t,
     users: n,
@@ -236,7 +236,7 @@ function F(e) {
   let {
     messages: t
   } = e;
-  return t.forEach(e => x(e, true)), false
+  return t.forEach(e => L(e, true)), false
 }
 
 function V(e) {
@@ -247,7 +247,7 @@ function V(e) {
     let {
       message: t
     } = e;
-    return x(t, true)
+    return L(t, true)
   }), false
 }
 
@@ -255,7 +255,7 @@ function H(e) {
   let {
     mostRecentMessages: t
   } = e;
-  return null == t || t.forEach(e => x(e, false)), false
+  return null == t || t.forEach(e => L(e, false)), false
 }
 
 function Y(e) {
@@ -269,7 +269,7 @@ function Y(e) {
     } = e;
     t.forEach(e => {
       e.forEach(e => {
-        x(e, true)
+        L(e, true)
       })
     }), n.forEach(e => {
       if (e.type === E.d4z.DM || e.type === E.d4z.GROUP_DM) {
@@ -285,7 +285,7 @@ function W(e) {
     firstMessages: t,
     owners: n
   } = e;
-  null != t && t.forEach(e => x(e, true)), null != n && n.forEach(e => R(e.user, true))
+  null != t && t.forEach(e => L(e, true)), null != n && n.forEach(e => R(e.user, true))
 }
 
 function K(e) {
@@ -298,7 +298,7 @@ function K(e) {
       most_recent_message: n,
       owner: r
     } = e;
-    null != t && x(t, true), null != n && x(n, true), null != r && null != r.user && R(r.user, true)
+    null != t && L(t, true), null != n && L(n, true), null != r && null != r.user && R(r.user, true)
   })
 }
 
@@ -310,7 +310,7 @@ function z(e) {
     let {
       message_preview: t
     } = e;
-    null != t && x(t, true)
+    null != t && L(t, true)
   })
 }
 
@@ -351,7 +351,7 @@ function J(e) {
   let {
     message: t
   } = e;
-  if (x(t, true), null != t.flags && p.yE(t.flags, E.iLy.URGENT)) {
+  if (L(t, true), null != t.flags && p.yE(t.flags, E.iLy.URGENT)) {
     let e = O[m.default.getId()];
     return null != e && (O[m.default.getId()] = e.set("flags", p.mB(e.flags, E.xW$.HAS_UNREAD_URGENT_MESSAGES, true)), true)
   }
@@ -624,7 +624,7 @@ function eP(e) {
     messageItems: t
   } = e;
   t.forEach(e => {
-    null != e.message && x(e.message, true)
+    null != e.message && L(e.message, true)
   }, false)
 }
 
@@ -640,14 +640,14 @@ function ew(e) {
   return null != t && (O[m.default.getId()] = t.set("ageVerificationStatus", i.F$.CLIENT_ONLY_PENDING), true)
 }
 
-function ex(e) {
+function eL(e) {
   let {
     status: t
   } = e, n = O[m.default.getId()];
   return null != n && n.ageVerificationStatus === i.F$.CLIENT_ONLY_PENDING && (O[m.default.getId()] = n.set("ageVerificationStatus", t), true)
 }
 
-function eL(e) {
+function ex(e) {
   let {
     resolved: t
   } = e;
@@ -718,7 +718,7 @@ class ek extends Chunk750041.Z {
   }
   constructor() {
     super({
-      CONNECTION_OPEN: L,
+      CONNECTION_OPEN: x,
       CONNECTION_OPEN_SUPPLEMENTAL: M,
       UPDATE_CLIENT_PREMIUM_TYPE: Z,
       OVERLAY_INITIALIZE: j,
@@ -781,8 +781,8 @@ class ek extends Chunk750041.Z {
       LOAD_ICYMI_HYDRATED: eP,
       EMBEDDED_ACTIVITY_UPDATE_V2: eD,
       INITIATE_AGE_VERIFICATION: ew,
-      CLOSE_AGE_VERIFICATION_MODAL: ex,
-      INTERACTION_MODAL_CREATE: eL
+      CLOSE_AGE_VERIFICATION_MODAL: eL,
+      INTERACTION_MODAL_CREATE: ex
     })
   }
 }

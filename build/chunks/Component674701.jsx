@@ -2,8 +2,8 @@
 /** chunk id: 674701, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => x,
-  Z: () => L
+  U: () => L,
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -35,17 +35,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk553517 = require("./553517.js"),
-  x = function(e) {
+  L = function(e) {
     return e.SYSTEM_MESSAGE = "system_message", e.COACHMARK = "coachmark", e
   }({});
 
-function L(e) {
+function x(e) {
   let {
     giftIntentType: t,
     premiumGiftIntentCardType: n,
     recipientUser: a,
-    onMouseEnter: x,
-    onMouseLeave: L,
+    onMouseEnter: L,
+    onMouseLeave: x,
     popoutPosition: M,
     analyticsPage: k,
     analyticsSection: j,
@@ -65,10 +65,10 @@ function L(e) {
       }
     })
   }, [t, n]);
-  let V = () => t === C.hX.FRIEND_ANNIVERSARY ? D.intl.formatToPlainString(D.t.BWJvAK, {
+  let V = () => t === C.hX.FRIEND_ANNIVERSARY ? D.intl.formatToPlainString(D.t.rtRr04, {
       friendUserName: v.ZP.getName(a)
     }) : (0, I.Ou)(t),
-    H = () => t === C.hX.FRIEND_ANNIVERSARY ? D.intl.formatToPlainString(D.t.S3fdq7, {
+    H = () => t === C.hX.FRIEND_ANNIVERSARY ? D.intl.formatToPlainString(D.t.PpG27s, {
       numberOfYears: F
     }) : (0, I.Ou)(t),
     Y = () => {
@@ -81,9 +81,7 @@ function L(e) {
           return
       }
     },
-    W = () => t === C.hX.FRIEND_ANNIVERSARY ? D.intl.formatToPlainString(D.t["L2s/N3"], {
-      numberOfYears: F
-    }) : (0, I.Ou)(t),
+    W = () => t === C.hX.FRIEND_ANNIVERSARY ? D.intl.string(D.t.OrwKgi) : (0, I.Ou)(t),
     K = e => {
       e.stopPropagation();
       let r = (0, A.F)(t);
@@ -134,8 +132,8 @@ function L(e) {
       [w.outerGlow]: U,
       [w.contentCoachmark]: q
     }),
-    onMouseEnter: x,
-    onMouseLeave: L,
+    onMouseEnter: L,
+    onMouseLeave: x,
     children: (0, r.jsxs)("div", {
       className: o()(X, {
         [w.innerGlow]: U

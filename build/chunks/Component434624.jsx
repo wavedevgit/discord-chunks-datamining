@@ -97,8 +97,8 @@ let v = Chunk473749.memo(function(e) {
     P = (0, d.v)(N && null != O ? O : []),
     D = i ? h : p,
     w = N ? y : g,
-    x = (0, u.y)(w, _.aO),
-    L = {};
+    L = (0, u.y)(w, _.aO),
+    x = {};
   if (N && null != P) {
     var M;
     let {
@@ -106,10 +106,10 @@ let v = Chunk473749.memo(function(e) {
       backgroundColor: r,
       opacity: i
     } = P, a = null != (M = (0, l.wK)(null != r ? r : "", i)) ? M : "";
-    R && (L.borderColor = r), L.background = a, t = e, n = e
+    R && (x.borderColor = r), x.background = a, t = e, n = e
   }
   let k = {
-    minWidth: x,
+    minWidth: L,
     color: t,
     borderColor: n
   };
@@ -118,7 +118,7 @@ let v = Chunk473749.memo(function(e) {
       [D.reactionMe]: R,
       [D.reactionReadOnly]: v && !I && !S && !T
     }),
-    style: L,
+    style: x,
     children: [(0, r.jsx)(c.Z, {
       className: o()({
         [D.hideEmoji]: a

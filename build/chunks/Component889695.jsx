@@ -57,15 +57,15 @@ function A(e) {
   } = (0, o.cj)([b.Z], () => ({
     impersonateType: b.Z.getImpersonateType(t),
     viewingRoles: b.Z.getViewingRoles(t)
-  })), D = R === y.z.SERVER_SHOP, w = (0, o.e7)([f.ZP], () => null != n ? f.ZP.getTrueMember(t, n.id) : null), x = null != T ? A[(0, u.lV)(T)] : null, [L, M] = i.useState(() => {
+  })), D = R === y.z.SERVER_SHOP, w = (0, o.e7)([f.ZP], () => null != n ? f.ZP.getTrueMember(t, n.id) : null), L = null != T ? A[(0, u.lV)(T)] : null, [x, M] = i.useState(() => {
     let e = null == P ? [] : g.default.keys(P);
-    return null != x && e.push(x.id), e
+    return null != L && e.push(L.id), e
   }), k = i.useRef(T);
   i.useEffect(() => {
     let e = {},
       t = k.current;
     if (null != t && null != R) {
-      for (let t of L) {
+      for (let t of x) {
         let n = A[t];
         null != n && (e[t] = n)
       }(0, E.Zm)(t.id, {
@@ -73,7 +73,7 @@ function A(e) {
         roles: e
       })
     }
-  }, [L, R, A]);
+  }, [x, R, A]);
   let j = null != T && null != n && null != w ? N.find(e => w.roles.includes(e.id)) : true,
     U = i.useMemo(() => null != T && null != n ? N.filter(e => !(0, d.fI)(e)).filter(e => {
       var t;
@@ -87,14 +87,14 @@ function A(e) {
         id: e.id.toString(),
         disabled: false
       }));
-      return null != T && null != x && e.push({
-        leading: C(x),
-        value: x.id,
-        label: x.name,
-        id: x.id.toString(),
+      return null != T && null != L && e.push({
+        leading: C(L),
+        value: L.id,
+        label: L.name,
+        id: L.id.toString(),
         disabled: true
       }), e
-    }, [U, T, x]);
+    }, [U, T, L]);
   if (null == n || null == T || null == w) return null;
   let B = {};
   return (w.roles.forEach(e => {
@@ -108,7 +108,7 @@ function A(e) {
     children: (0, r.jsxs)(s.uz, {
       selectionMode: "multiple",
       options: G,
-      value: L,
+      value: x,
       onSelectionChange: e => {
         M(e)
       },

@@ -62,10 +62,10 @@ function O(e) {
   let D = b.intl.string(b.t.XpeFYr),
     w = "active";
   N && (D = b.intl.string(b.t.cEnaWx), w = "secondary");
-  let x = b.intl.string(b.t["3p3/BK"]);
-  return T && (x = b.intl.string(b.t.qmtuXE)), (0, r.jsxs)(f.Z, {
+  let L = b.intl.string(b.t["3p3/BK"]);
+  return T && (L = b.intl.string(b.t.qmtuXE)), (0, r.jsxs)(f.Z, {
     children: [(0, r.jsx)(f.Z.Header, {
-      text: x
+      text: L
     }), (0, r.jsxs)(f.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: y.headerLine,

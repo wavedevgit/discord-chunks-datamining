@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  FZ: () => ex,
+  FZ: () => eL,
   ZP: () => e6,
   b6: () => eN,
   ik: () => eP,
@@ -322,7 +322,7 @@ function eN(e) {
       reason: "Some library application thing?"
     }
   }
-  let o = (0, O.NW)("getRawOverlayGameStatus") && (0, x.supportsOutOfProcess)() && !t,
+  let o = (0, O.NW)("getRawOverlayGameStatus") && (0, L.supportsOutOfProcess)() && !t,
     s = eC(null != a ? a : i),
     l = b.v.legacyEnabled,
     c = o && !s,
@@ -385,7 +385,7 @@ function ew() {
   Chunk433517.K.set(V, ea)
 }
 
-function ex(e, t, n, r) {
+function eL(e, t, n, r) {
   let i = Z(G({}, e), {
     played: null != e.lastFocused && 0 !== e.lastFocused ? l()(new Date(e.lastFocused * N.Z.Millis.SECOND)).fromNow() : " ",
     overlay: eR(e),
@@ -395,7 +395,7 @@ function ex(e, t, n, r) {
   return null != e.id && null != es[e.id] && (i.overlayWarn = es[e.id].warn), i
 }
 
-function eL(e) {
+function ex(e) {
   return {
     name: e.name,
     exePath: e.exePath,
@@ -463,7 +463,7 @@ function eU(e) {
       if (e.hidden) return;
       ea.gamesSeen.unshift(eb(e))
     }
-  }), ea.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), ew(), R.Z.setRecentGames(eG().map(e => ex(e, e8, T.Z, S.Z))))
+  }), ea.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), ew(), R.Z.setRecentGames(eG().map(e => eL(e, e8, T.Z, S.Z))))
 }
 
 function eG() {
@@ -582,7 +582,7 @@ function e$(e) {
 function e0(e) {
   let t = eS(e.game),
     n = ea.gameOverrides[t];
-  null == n && ((n = eL(e.game)).add = true), n.name = e.newName;
+  null == n && ((n = ex(e.game)).add = true), n.name = e.newName;
   let r = eS(n);
   delete ea.gameOverrides[t], ea.gameOverrides[r] = n, eE(ea.enableOverlay, t, r), eE(ea.enableDetection, t, r), eE(ei, t, r), ea.gamesSeen.forEach(n => {
     eS(n) === t && (n.name = e.newName)
@@ -699,10 +699,10 @@ function e4(e) {
           orig_game_name_v1: o.origGameName,
           game_id_v1: null == s ? true : s.id,
           distributor_v1: o.distributor,
-          verified_v1: (0, L.vp)(o.exePath, null != (r = null == s ? true : s.executables) ? r : []),
+          verified_v1: (0, x.vp)(o.exePath, null != (r = null == s ? true : s.executables) ? r : []),
           is_launcher_v1: o.isLauncher,
           game_detection_enabled_v1: eP(o),
-          executable_path_v1: (0, L.N6)(o.exePath),
+          executable_path_v1: (0, x.N6)(o.exePath),
           distributor_game_id_v1: o.sku,
           hidden_by_distributor_v1: o.hidden,
           game_metadata_v1: (0, I.sD)(o),
@@ -710,10 +710,10 @@ function e4(e) {
           orig_game_name_v2: e.origGameName,
           game_id_v2: c,
           distributor_v2: e.distributor,
-          verified_v2: (0, L.vp)(e.exePath, null != (i = null == l ? true : l.executables) ? i : []),
+          verified_v2: (0, x.vp)(e.exePath, null != (i = null == l ? true : l.executables) ? i : []),
           is_launcher_v2: e.isLauncher,
           game_detection_enabled_v2: eP(e),
-          executable_path_v2: (0, L.N6)(e.exePath),
+          executable_path_v2: (0, x.N6)(e.exePath),
           distributor_game_id_v2: e.sku,
           hidden_by_distributor_v2: e.hidden,
           game_metadata_v2: (0, I.sD)(e)

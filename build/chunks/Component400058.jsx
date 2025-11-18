@@ -65,13 +65,13 @@ function w(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function L(e) {
+function x(e) {
   let {
     selectedGuildForGuildSub: t
   } = e, n = (0, E.GG)(null == t ? true : t.id)[0];
@@ -202,7 +202,7 @@ let M = {
                   "data-migration-pending": true,
                   text: "Need Promotion Code",
                   shouldShow: j.length < 1,
-                  children: e => (0, r.jsx)(c.Button, x(D({
+                  children: e => (0, r.jsx)(c.Button, L(D({
                     variant: "primary",
                     text: "Open Link",
                     disabled: j.length < 1
@@ -228,7 +228,7 @@ let M = {
                   value: Chunk474936.Xh.PREMIUM_MONTH_TIER_0,
                   label: "Nitro Basic"
                 }],
-                onChange: e => B(t => x(D({}, t), {
+                onChange: e => B(t => L(D({}, t), {
                   plan_id: e
                 }))
               }), (0, Chunk54381.jsx)(Chunk481060.q4e, {
@@ -241,7 +241,7 @@ let M = {
                   value: "false",
                   label: "Not Gift"
                 }],
-                onChange: e => B(t => x(D({}, t), {
+                onChange: e => B(t => L(D({}, t), {
                   gift: e
                 }))
               })]
@@ -249,7 +249,7 @@ let M = {
               "data-migration-pending": true,
               text: "Already subscribed",
               shouldShow: Z,
-              children: e => (0, r.jsx)(c.Button, x(D({
+              children: e => (0, r.jsx)(c.Button, L(D({
                 variant: "primary",
                 text: "Open Link"
               }, e), {
@@ -308,7 +308,7 @@ let M = {
                 children: "This is disabled because of a circular dependency"
               }), (0, Chunk54381.jsx)(Chunk730647.l, {
                 guildId: null == F ? true : F.id,
-                children: (0, Chunk54381.jsx)(L, {
+                children: (0, Chunk54381.jsx)(x, {
                   selectedGuildForGuildSub: F
                 })
               })]

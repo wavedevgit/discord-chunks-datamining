@@ -1,7 +1,7 @@
 /** Chunk was on 43342 **/
 /** chunk id: 990525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => C
+  J: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk478875 = require("./478875.js");
 
-function w(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,19 +44,19 @@ function w(e) {
   }
   return e
 }
-let C = e => {
+let w = e => {
   let {
     voiceFilter: t,
     hasNitro: n,
     analyticsContext: o
   } = e, {
-    activeVoice: C,
+    activeVoice: w,
     mostRecentlyRequestedVoiceId: E
-  } = (0, O.o)(), I = (0, j.z)(t.id), T = t.id === C, S = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !T, Z = !T && t.id === E, [D, k] = i.useState(false);
+  } = (0, j.o)(), I = (0, O.z)(t.id), T = t.id === w, S = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !T, Z = !T && t.id === E, [k, D] = i.useState(false);
   i.useEffect(() => {
-    let e = Z ? setTimeout(() => k(Z), 200) : true;
+    let e = Z ? setTimeout(() => D(Z), 200) : true;
     return () => {
-      clearTimeout(e), k(false)
+      clearTimeout(e), D(false)
     }
   }, [Z]);
   let M = (0, v.J_)({
@@ -77,12 +77,12 @@ let C = e => {
     }),
     z = P[t.styleKey],
     B = i.useCallback(() => {
-      n || !S ? ((0, b.v6)(C === t.id ? null : t.id, o), N && m.default.track(h.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, w({
+      n || !S ? ((0, b.v6)(w === t.id ? null : t.id, o), N && m.default.track(h.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, C({
         voice_filter_id: t.id
       }, (0, g.w)(o)))) : (0, d.i)()
-    }, [n, S, C, t.id, o, N]),
+    }, [n, S, w, t.id, o, N]),
     q = i.useCallback(() => {
-      m.default.track(h.rMx.VOICE_FILTER_PREVIEW_PLAYED, w({
+      m.default.track(h.rMx.VOICE_FILTER_PREVIEW_PLAYED, C({
         voice_filter_id: t.id
       }, (0, g.w)(o))), U({
         volume: .5,
@@ -160,7 +160,7 @@ let C = e => {
                 colorClass: P.clockIcon
               })
             })
-          }), D && (0, r.jsx)("div", {
+          }), k && (0, r.jsx)("div", {
             className: P.spinnerWrapper,
             children: (0, r.jsx)(u.$jN, {
               type: u.$jN.Type.CHASING_DOTS,
