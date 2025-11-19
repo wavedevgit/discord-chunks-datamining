@@ -26,13 +26,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk899007 = require("./899007.jsx"),
   Chunk867176 = require("./867176.jsx"),
   Chunk451834 = require("./451834.jsx"),
+  Chunk675893 = require("./675893.jsx"),
   Chunk502762 = require("./502762.jsx"),
   Chunk952124 = require("./952124.jsx"),
   Chunk544989 = require("./544989.jsx"),
   Chunk481932 = require("./481932.jsx"),
   Chunk664794 = require("./664794.jsx"),
   Chunk4517 = require("./4517.jsx"),
-  Chunk350207 = require("./350207.jsx"),
   Chunk277117 = require("./277117.jsx"),
   Chunk52639 = require("./52639.jsx"),
   Chunk874139 = require("./874139.jsx"),
@@ -106,7 +106,7 @@ function H(e) {
       isLoaded: null == B ? true : B.isLoaded,
       children: (0, r.jsx)(j.NJ, {
         value: X,
-        children: (0, r.jsxs)(S.Z, {
+        children: (0, r.jsxs)(E.Z, {
           ref: q,
           user: n,
           displayProfile: B,
@@ -116,13 +116,13 @@ function H(e) {
             style: J,
             className: U.backdrop
           }), (0, r.jsxs)(a.u2D, {
-            children: [(0, r.jsxs)(Z.Z, {
-              children: [(0, r.jsx)(P.Z, {
+            children: [(0, r.jsxs)(P.Z, {
+              children: [(0, r.jsx)(T.Z, {
                 user: n,
                 themeType: M.l.SIDEBAR
-              }), n.bot ? (0, r.jsx)(E.Z, {
+              }), n.bot ? (0, r.jsx)(Z.Z, {
                 user: n
-              }) : (0, r.jsx)(T.Cn, {
+              }) : (0, r.jsx)(N.Cn, {
                 user: n
               })]
             }), (0, r.jsxs)("div", {
@@ -142,7 +142,7 @@ function H(e) {
                 channelId: k.id,
                 themeType: M.l.SIDEBAR,
                 onOpenProfile: H ? true : $
-              }), (0, r.jsx)(N.Z, {
+              }), (0, r.jsx)(R.Z, {
                 user: n,
                 channelId: k.id,
                 themeType: M.l.SIDEBAR,
@@ -156,14 +156,11 @@ function H(e) {
               isHoveringOrFocusing: null == X.interactionType && K,
               onOpenProfile: H ? true : $
             }), ee && et && (0, r.jsx)("div", {
-              className: U.widgetBreadcrumb,
-              children: (0, r.jsx)(R.Z, {
+              className: U.widgetPreviews,
+              children: (0, r.jsx)(S.Z, {
+                user: n,
                 widgets: B.widgets,
-                onClick: () => {
-                  null == $ || $({
-                    section: L.oh.WIDGETS
-                  })
-                }
+                onOpenUserProfileModal: $
               })
             }), el && (0, r.jsx)("div", {
               className: U.wishlistBreadcrumb,
