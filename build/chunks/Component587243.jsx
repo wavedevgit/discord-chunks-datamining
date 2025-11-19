@@ -44,15 +44,15 @@ function b(e) {
     status: t,
     currentStatus: n,
     description: l
-  } = e, i = t !== p.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
+  } = e, r = t !== p.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
     children: g.map(e => {
       let {
         duration: l,
-        label: i
+        label: r
       } = e;
-      return (0, a.jsx)(r.sNh, {
+      return (0, a.jsx)(i.sNh, {
         id: "".concat(t, "-").concat(l),
-        label: i(),
+        label: r(),
         action: () => (0, m.Z)({
           nextStatus: t,
           prevStatus: n,
@@ -62,18 +62,18 @@ function b(e) {
       }, null != l ? l : f)
     })
   });
-  return (0, a.jsx)(r.sNh, {
+  return (0, a.jsx)(i.sNh, {
     id: t,
     className: x.expiringStatusMenuItem,
     keepItemStyles: true,
-    hasSubmenu: i,
+    hasSubmenu: r,
     label: e => {
       let {
         isFocused: n
       } = e;
       return (0, a.jsxs)("div", {
         className: x.statusItem,
-        children: [(0, a.jsx)(r.qbd, {
+        children: [(0, a.jsx)(i.qbd, {
           status: t,
           className: x.icon,
           size: 10,
@@ -94,7 +94,7 @@ function b(e) {
       })
     },
     dontCloseOnAction: true,
-    children: i ? s : true
+    children: r ? s : true
   })
 }
 
@@ -115,7 +115,7 @@ function v(e) {
 
 function j(e) {
   let t = o.Cr.useSetting(),
-    n = (0, i.p)(),
+    n = (0, r.p)(),
     c = s.e.useExperiment({
       location: "UserProfileAccountPopout"
     }).allowQuietMode || n,
@@ -139,11 +139,11 @@ function j(e) {
           duration: n,
           label: l
         } = t;
-        return (0, a.jsx)(r.sNh, {
+        return (0, a.jsx)(i.sNh, {
           id: "".concat(e, "-").concat(n),
           label: l(),
           action: () => {
-            (0, i.oW)(true, n)
+            (0, r.oW)(true, n)
           },
           dontCloseOnAction: true
         }, null != n ? n : f)
@@ -169,8 +169,8 @@ function j(e) {
       description: m(p.Skl.INVISIBLE)
     });
   return (0, a.jsxs)(a.Fragment, {
-    children: [_, (0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), y, C, S, c || n ? (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(r.sNh, {
+    children: [_, (0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), y, C, S, c || n ? (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(i.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
         className: x.expiringStatusMenuItem,
@@ -178,12 +178,12 @@ function j(e) {
         hasSubmenu: true,
         label: () => (0, a.jsxs)("div", {
           className: x.statusItem,
-          children: [(0, a.jsx)(r.owu, {
+          children: [(0, a.jsx)(i.owu, {
             size: "xxs",
             className: x.icon
           }), (0, a.jsxs)("div", {
             className: x.focusModeTitle,
-            children: [h.intl.string(h.t.gJRnwK), (0, a.jsx)(r.IGR, {
+            children: [h.intl.string(h.t.gJRnwK), (0, a.jsx)(i.IGR, {
               text: n ? h.intl.string(h.t.ApAu9f) : u ? h.intl.string(h.t.gH3Frd) : h.intl.string(h.t["64pl82"]),
               color: n ? l.Z.BRAND_500 : u ? l.Z.RED_400 : l.Z.PRIMARY_500
             })]
@@ -200,7 +200,7 @@ function j(e) {
           })]
         }),
         action: () => {
-          (0, i.oW)(!n)
+          (0, r.oW)(!n)
         },
         dontCloseOnAction: true,
         children: j

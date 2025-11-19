@@ -44,7 +44,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk989028 = require("./989028.js");
 
-function F(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -60,7 +60,7 @@ function G(e) {
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      F(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
@@ -176,7 +176,7 @@ class W extends Chunk473749.PureComponent {
             children: e => (0, i.jsx)(c.P3F, z(G({
               innerRef: this.upsellTargetRef
             }, e), {
-              className: V.clickableChannelTextArea,
+              className: F.clickableChannelTextArea,
               onClick: this.handleTextAreaClick,
               children: p
             }))
@@ -186,11 +186,11 @@ class W extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), F(this, "state", {
+    super(...e), V(this, "state", {
       submitting: false,
       shouldShowLurkerModeUpsellPopout: false,
       shouldShowLurkerModeSuccessPopout: false
-    }), F(this, "textAreaContainerRef", r.createRef()), F(this, "upsellTargetRef", r.createRef()), F(this, "renderSuccessPopout", e => {
+    }), V(this, "textAreaContainerRef", r.createRef()), V(this, "upsellTargetRef", r.createRef()), V(this, "renderSuccessPopout", e => {
       let {
         closePopout: t
       } = e, {
@@ -200,7 +200,7 @@ class W extends Chunk473749.PureComponent {
         onClose: t,
         guild: n
       })
-    }), F(this, "handleCancelApplication", () => {
+    }), V(this, "handleCancelApplication", () => {
       let {
         guild: e
       } = this.props;
@@ -216,7 +216,7 @@ class W extends Chunk473749.PureComponent {
           children: H.intl.string(H.t["13tjTU"])
         })
       })))
-    }), F(this, "handleViewApplicationRejection", () => {
+    }), V(this, "handleViewApplicationRejection", () => {
       let {
         guild: e
       } = this.props;
@@ -228,14 +228,14 @@ class W extends Chunk473749.PureComponent {
           guildId: e.id
         }, n))
       })
-    }), F(this, "handleShowMemberVerification", () => {
+    }), V(this, "handleShowMemberVerification", () => {
       let {
         guild: e
       } = this.props;
       null != e && (0, b.hk)(e.id)
-    }), F(this, "handleClaimAccount", () => {
+    }), V(this, "handleClaimAccount", () => {
       f.j()
-    }), F(this, "handleVerifyPhone", () => {
+    }), V(this, "handleVerifyPhone", () => {
       (0, c.ZDy)(async () => {
         let {
           default: e
@@ -246,7 +246,7 @@ class W extends Chunk473749.PureComponent {
       }, {
         modalKey: B.M
       })
-    }), F(this, "handleResendVerification", () => {
+    }), V(this, "handleResendVerification", () => {
       var e;
       u.Z.verifyResend();
       let t = null == (e = M.default.getCurrentUser()) ? true : e.email;
@@ -261,14 +261,14 @@ class W extends Chunk473749.PureComponent {
           })
         })
       })))
-    }), F(this, "handleTextAreaClick", () => {
+    }), V(this, "handleTextAreaClick", () => {
       let {
         showLurkerModeUpsellPopout: e
       } = this.props;
       this.setState({
         shouldShowLurkerModeUpsellPopout: e
       })
-    }), F(this, "handleJoinServer", async () => {
+    }), V(this, "handleJoinServer", async () => {
       this.setState({
         submitting: true
       });
@@ -282,11 +282,11 @@ class W extends Chunk473749.PureComponent {
           submitting: false
         })
       }
-    }), F(this, "handleGoBack", () => {
+    }), V(this, "handleGoBack", () => {
       this.setState({
         submitting: true
       }), (0, P.s1)().goBack()
-    }), F(this, "handleFollowAnnouncement", () => {
+    }), V(this, "handleFollowAnnouncement", () => {
       let {
         channel: e
       } = this.props;
@@ -298,11 +298,11 @@ class W extends Chunk473749.PureComponent {
           channel: e
         }, n))
       })
-    }), F(this, "closeLurkerModeUpsellPopout", () => {
+    }), V(this, "closeLurkerModeUpsellPopout", () => {
       this.setState({
         shouldShowLurkerModeUpsellPopout: false
       })
-    }), F(this, "renderLurkerModeUpsellPopout", () => {
+    }), V(this, "renderLurkerModeUpsellPopout", () => {
       let {
         guild: e
       } = this.props;
@@ -311,7 +311,7 @@ class W extends Chunk473749.PureComponent {
         guild: e,
         closePopout: this.closeLurkerModeUpsellPopout
       })
-    }), F(this, "renderMemberVerificationSuccessModal", () => {
+    }), V(this, "renderMemberVerificationSuccessModal", () => {
       let {
         guild: e,
         guildJoinRequest: t

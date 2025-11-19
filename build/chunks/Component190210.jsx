@@ -143,7 +143,7 @@ let ei = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
   s()(null != D, "chat input type must be set");
   let {
     analyticsLocations: eZ
-  } = (0, v.ZP)(C.Z.CHANNEL_TEXT_AREA), eT = (0, F.qz)(t), eN = r.useRef(null), eA = r.useRef(null), ew = r.useRef(null), eM = r.useRef(null);
+  } = (0, v.ZP)(C.Z.CHANNEL_TEXT_AREA), eT = (0, V.qz)(t), eN = r.useRef(null), eA = r.useRef(null), ew = r.useRef(null), eM = r.useRef(null);
   null == eC || eC(eA.current);
   let {
     activeCommand: eR
@@ -159,17 +159,17 @@ let ei = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     disabled: eD,
     canAttachFiles: eU,
     canEveryoneSendMessages: eB
-  } = (0, F.TE)(L, D, eR, I), eH = !A.dN.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eV = !eH || !(null == (n = D.commands) ? true : n.enabled) || !G || p !== q.GI, eF = (0, T.Z)(), {
+  } = (0, V.TE)(L, D, eR, I), eH = !A.dN.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eF = !eH || !(null == (n = D.commands) ? true : n.enabled) || !G || p !== q.GI, eV = (0, T.Z)(), {
     fontSize: eG
   } = (0, d.cj)([y.Z], () => ({
     fontSize: y.Z.fontSize,
     isSubmitButtonEnabled: y.Z.isSubmitButtonEnabled
   })), ez = (0, d.e7)([M.Z], () => M.Z.isEnabled()), eW = (0, N.NE)(L);
-  (0, F.hJ)(D, eD);
+  (0, V.hJ)(D, eD);
   let {
     eventEmitter: eq,
     handleEditorSelectionChanged: eK
-  } = (0, F.x2)(eA, p, h), eY = r.useCallback(e => {
+  } = (0, V.x2)(eA, p, h), eY = r.useCallback(e => {
     let t = e => {
         if (e.shouldClear) {
           var t;
@@ -225,17 +225,17 @@ let ei = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
   }, [ed, eE, eS, L.id, eI, eP, eW]), {
     submit: eX,
     handleSubmit: eJ
-  } = (0, F.bL)(eY, D, eA, eM, L.id), {
+  } = (0, V.bL)(eY, D, eA, eM, L.id), {
     autocompleteRef: eQ,
     handleMaybeShowAutocomplete: e$,
     handleHideAutocomplete: e0
-  } = (0, F.jx)(), e1 = r.useCallback(() => {
+  } = (0, V.jx)(), e1 = r.useCallback(() => {
     var e;
     return null == eM || null == (e = eM.current) ? true : e.hide()
   }, []), {
     editorHeight: e2,
     handleResize: e3
-  } = (0, F.oR)(ei), {
+  } = (0, V.oR)(ei), {
     handleTab: e4,
     handleEnter: e7,
     handleMoveSelection: e8
@@ -255,14 +255,14 @@ let ei = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
         return !!(!n && (null == (r = t.current) ? true : r.onMoveSelection(i))) || (null == (l = e.current) ? true : l.onMoveSelection(i)) || false
       }, [n])
     }
-  }(eQ, eN, eV), {
+  }(eQ, eN, eF), {
     expressionPickerView: e5,
     shouldHideExpressionPicker: e6,
     handleOuterClick: e9
-  } = (0, F.iV)(D, eA), te = (0, F.aT)(p), {
+  } = (0, V.iV)(D, eA), te = (0, V.aT)(p), {
     currentAutocompleteType: tt,
     handleAutocompleteVisibilityChange: tn
-  } = (0, F.vB)(), ti = (0, F.ae)(eA), tr = (0, F.Sg)(eX, D, eA), tl = (0, F.O1)({
+  } = (0, V.vB)(), ti = (0, V.ae)(eA), tr = (0, V.Sg)(eX, D, eA), tl = (0, V.O1)({
     editorRef: eA,
     disabled: eD,
     textValue: p,
@@ -367,7 +367,7 @@ let ei = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
                     type: B.Ie.CREATE_ANNOUNCEMENT_POST,
                     canPasteFiles: eU,
                     uploadPromptCharacterCount: W.en1,
-                    maxCharacterCount: null != em ? em : eF,
+                    maxCharacterCount: null != em ? em : eV,
                     allowNewLines: true,
                     "aria-describedby": eb,
                     onChange: Y,
@@ -411,7 +411,7 @@ let ei = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
             className: J.footerPart,
             children: [(0, i.jsx)(ea, {
               channel: L
-            }), (0, i.jsx)(V.Z, {
+            }), (0, i.jsx)(F.Z, {
               type: B.Ie.CREATE_ANNOUNCEMENT_POST,
               disabled: eD,
               channel: L,

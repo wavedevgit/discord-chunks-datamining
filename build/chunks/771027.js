@@ -20,7 +20,7 @@ var Chunk473749 = require("./473749.js"),
 function f(e) {
   let {
     channel: t
-  } = e, n = (0, r.e7)([o.Z], () => o.Z.getUserAffinitiesMap(), []), l = null == t ? true : t.guild_id, a = new Set((0, r.e7)([u.ZP], () => null == t ? [] : u.ZP.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), p = (0, r.e7)([s.ZP, c.default], () => s.ZP.getMembers(l).map(e => c.default.getUser(e.userId)).filter(d.lm).filter(e => !a.has(e.id)), [l, a]);
+  } = e, n = (0, r.e7)([o.Z], () => o.Z.getUserAffinitiesMap(), []), l = null == t ? true : t.guild_id, a = new Set((0, r.e7)([u.ZP], () => null == t ? [] : u.ZP.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), p = (0, r.Wu)([s.ZP, c.default], () => s.ZP.getMembers(l).map(e => c.default.getUser(e.userId)).filter(d.lm).filter(e => !a.has(e.id)), [l, a]);
   return i.useMemo(() => p.toSorted((e, t) => {
     var i, r, l, a;
     let {

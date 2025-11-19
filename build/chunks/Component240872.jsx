@@ -2,17 +2,14 @@
 /** chunk id: 240872, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => u
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk793030 = require("./793030.js"),
-  Chunk273352 = require("./273352.jsx"),
-  Chunk952265 = require("./952265.js"),
-  Chunk755721 = require("./755721.js"),
+var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
-function c(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,20 +18,20 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, t) {
+function l(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,76 +42,62 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = {
+let u = {
   show(e) {
     let {
       title: t,
-      body: n,
-      confirmColor: c,
-      confirmText: d,
-      confirmVariant: _ = "primary",
-      cancelText: p,
-      onConfirm: h,
-      onCancel: m,
-      onCloseCallback: g,
-      secondaryConfirmText: E,
-      onConfirmSecondary: b,
-      className: y,
-      titleClassName: O,
-      contextKey: v
+      body: o,
+      confirmText: l,
+      confirmVariant: u = "primary",
+      cancelText: d,
+      onConfirm: f,
+      onCancel: _,
+      onCloseCallback: p,
+      contextKey: h
     } = e;
-    (0, o.h7)(e => {
-      if (null == E) {
-        let a = [];
-        return null != p && "" !== p && a.push({
-          text: p,
-          onClick: () => {
-            null == m || m(), e.onClose()
+    (0, i.ZDy)(async () => {
+      let {
+        Modal: e
+      } = await Promise.resolve().then(n.bind(n, 775086));
+      return n => {
+        let i = [];
+        return null != d && "" !== d && i.push({
+          text: d,
+          onClick: async () => {
+            null == _ || _(), await n.onClose()
           },
           variant: "secondary"
-        }), a.push({
-          text: null != d ? d : l.intl.string(l.t.BddRzS),
-          onClick: () => {
-            null == h || h(), e.onClose()
+        }), i.push({
+          text: null != l ? l : a.intl.string(a.t.BddRzS),
+          onClick: async () => {
+            null == f || f(), await n.onClose()
           },
-          variant: _
-        }), (0, r.jsx)(i.Modal, f(u({}, e), {
+          variant: u
+        }), (0, r.jsx)(e, c(s({}, n), {
           size: "sm",
           title: t,
-          subtitle: n,
-          actions: a
+          subtitle: o,
+          actions: i
         }))
       }
-      return (0, r.jsx)(a.default, f(u({}, e), {
-        title: t,
-        body: n,
-        confirmColor: "critical-primary" === _ ? s.Tt.RED : s.Tt.BRAND,
-        confirmText: d,
-        cancelText: p,
-        onConfirm: h,
-        onCancel: m,
-        secondaryConfirmText: E,
-        onConfirmSecondary: b,
-        className: y,
-        titleClassName: O
-      }))
     }, {
-      onCloseCallback: g
-    }, v)
+      onCloseCallback: p,
+      contextKey: h
+    })
   },
   close() {},
   confirm(e) {
     return new Promise(t => {
-      this.show(u({
+      this.show(s({
         onConfirm() {
           t(true)
         },
-        cancelText: l.intl.string(l.t["ETE/oC"]),
+        cancelText: a.intl.string(a.t["ETE/oC"]),
         onCancel() {
           t(false)
         }

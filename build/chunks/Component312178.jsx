@@ -1,7 +1,8 @@
 /** Chunk was on 63141 **/
 /** chunk id: 312178, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => j
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,15 +37,15 @@ let E = {
       dragging: t,
       locked: n,
       pinned: r,
-      dragStart: o,
-      className: l
+      dragStart: s,
+      className: o
     } = e;
     return (0, i.jsx)(b.Z, {
-      dragStart: o,
+      dragStart: s,
       locked: n,
       pinned: r,
       dragging: t,
-      className: l
+      className: o
     })
   },
   [Chunk981631.Odu.GUILDS](e) {
@@ -64,15 +65,15 @@ let E = {
       id: t,
       anchor: n,
       isPreviewingInGame: r,
-      locked: o,
-      pinned: l
+      locked: s,
+      pinned: o
     } = e;
-    return (0, i.jsx)(_.Z, {
+    return (0, i.jsx)(v.Z, {
       anchor: n,
       id: t,
-      locked: o,
-      pinned: l,
-      widget: v.Odu.VOICE,
+      locked: s,
+      pinned: o,
+      widget: _.Odu.VOICE,
       isPreviewingInGame: r
     })
   },
@@ -81,20 +82,20 @@ let E = {
       dragging: t,
       locked: n,
       dragStart: r,
-      className: o
+      className: s
     } = e;
     return (0, i.jsx)(m.Z, {
       dragStart: r,
       dragging: t,
       locked: n,
       pinned: false,
-      className: o
+      className: s
     })
   }
 };
-class S extends Chunk473749.PureComponent {
+class x extends Chunk473749.PureComponent {
   componentDidUpdate(e) {
-    this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (s.Z.track(v.rMx.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
+    this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (l.Z.track(_.rMx.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
       lastLayoutUpdate: null
     }))
   }
@@ -105,18 +106,18 @@ class S extends Chunk473749.PureComponent {
         isPreviewingInGame: r
       },
       state: {
-        dragging: o
+        dragging: s
       }
-    } = this, l = E[e.type];
-    return null == l ? null : s => l({
+    } = this, o = E[e.type];
+    return null == o ? null : l => o({
       id: e.id,
       locked: i,
       pinned: e.pinned,
-      dragging: o,
+      dragging: s,
       isPreviewingInGame: r,
       anchor: t,
       size: n,
-      dragStart: s
+      dragStart: l
     })
   }
   render() {
@@ -125,12 +126,12 @@ class S extends Chunk473749.PureComponent {
       widgetConfig: t,
       layoutSize: n,
       locked: r,
-      isPreviewingInGame: o,
-      isActiveRegion: l
+      isPreviewingInGame: s,
+      isActiveRegion: o
     } = this.props;
     if (null == module || null == exports) return null;
     let {
-      id: s,
+      id: l,
       pinned: a,
       zIndex: d,
       size: u,
@@ -138,8 +139,8 @@ class S extends Chunk473749.PureComponent {
       minSize: f
     } = module, g = (0, Chunk434529.w_)(Chunk237997, require), m = (0, Chunk434529.KR)(Chunk451478, require), {
       resizeX: b,
-      resizeY: _,
-      dragAnywhere: v
+      resizeY: v,
+      dragAnywhere: _
     } = exports, O = (0, Chunk906037.eM)({
       locked: Chunk473749,
       isPreviewingInGame: Chunk442837,
@@ -149,8 +150,8 @@ class S extends Chunk473749.PureComponent {
       minY: 0,
       maxX: require.width,
       maxY: require.height
-    }, S = this.renderWidget(module, Chunk990673, Chunk382790);
-    return null == S ? null : (0, Chunk54381.jsx)(Chunk552062.Z, {
+    }, x = this.renderWidget(module, Chunk990673, Chunk382790);
+    return null == x ? null : (0, Chunk54381.jsx)(Chunk552062.Z, {
       id: Chunk13245,
       size: Chunk382790,
       anchor: Chunk990673,
@@ -168,7 +169,7 @@ class S extends Chunk473749.PureComponent {
       onClick: this.handleFocus,
       onDragStart: this.handleDragStart,
       onDragEnd: this.handleDragEnd,
-      children: S
+      children: x
     })
   }
   constructor(...e) {
@@ -178,29 +179,29 @@ class S extends Chunk473749.PureComponent {
     }), O(this, "handleUpdate", (e, t, n, i, r) => {
       let {
         props: {
-          layoutSize: o
+          layoutSize: s
         },
         state: {
-          lastLayoutUpdate: s
+          lastLayoutUpdate: l
         }
       } = this;
-      if (!(0, f.validResolution)(o)) return;
-      let a = (0, p.jL)(n, o),
-        u = (0, p.Ox)(i, o);
-      (0, l.Os)(t), (0, l.nv)({
+      if (!(0, f.validResolution)(s)) return;
+      let a = (0, p.jL)(n, s),
+        u = (0, p.Ox)(i, s);
+      (0, o.Os)(t), (0, o.nv)({
         widgetId: t,
         anchor: a,
         size: u
       });
       let h = e === c.B.MOVE,
-        g = (0, p.PY)(n, o.width, o.height, r.width, r.height);
+        g = (0, p.PY)(n, s.width, s.height, r.width, r.height);
       this.setState({
         lastLayoutUpdate: {
-          was_resized: null != s && s.was_resized || !h,
-          was_dragged: null != s && s.was_dragged || h,
+          was_resized: null != l && l.was_resized || !h,
+          was_dragged: null != l && l.was_dragged || h,
           widget_type: d.Z.getWidgetType(t),
-          window_width: o.width,
-          window_height: o.height,
+          window_width: s.width,
+          window_height: s.height,
           widget_width: r.width,
           widget_height: r.height,
           widget_left: g.left,
@@ -211,25 +212,25 @@ class S extends Chunk473749.PureComponent {
       let {
         layoutSize: t
       } = this.props;
-      (0, f.validResolution)(t) && (0, l.Os)(e)
+      (0, f.validResolution)(t) && (0, o.Os)(e)
     }), O(this, "handleDragStart", () => {
       let {
         widget: e
       } = this.props;
-      null != e && (e.pinned && s.Z.setPreviewInGameMode(true), this.setState({
+      null != e && (e.pinned && l.Z.setPreviewInGameMode(true), this.setState({
         dragging: true
       }))
     }), O(this, "handleDragEnd", () => {
       let {
         widget: e
       } = this.props;
-      null != e && (e.pinned && s.Z.setPreviewInGameMode(false), this.setState({
+      null != e && (e.pinned && l.Z.setPreviewInGameMode(false), this.setState({
         dragging: false
       }))
     })
   }
 }
-let Z = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk237997.default], e => {
+let S = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk237997.default], e => {
   let {
     widgetId: t
   } = e, n = d.Z.getWidget(t), i = u.default.getActiveRegions();
@@ -238,21 +239,21 @@ let Z = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk237997.default], e => 
     widgetConfig: null != n ? d.Z.getWidgetConfig(n.type) : null,
     locked: u.default.isInstanceLocked(),
     isPreviewingInGame: u.default.isPreviewingInGame(),
-    isActiveRegion: null != n && n.type === v.Odu.TEXT && i.has(v.O0n.TEXT_WIDGET)
+    isActiveRegion: null != n && n.type === _.Odu.TEXT && i.has(_.O0n.TEXT_WIDGET)
   }
-})(S);
+})(x);
 
-function j(e, t) {
-  return (0, i.jsx)(Z, {
+function Z(e, t) {
+  return (0, i.jsx)(S, {
     widgetId: e,
     layoutSize: t
   }, e)
 }
-let x = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk451478.Z], () => {
+let j = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk451478.Z], () => {
   var e;
   return {
     layout: null != (e = Chunk355863.Z.getLayout(Chunk145597.OVERLAY_LAYOUT_ID)) ? module : true,
     layoutSize: Chunk451478.Z.windowSize(),
-    renderWidget: j
+    renderWidget: Z
   }
 })(Chunk26229.Z)

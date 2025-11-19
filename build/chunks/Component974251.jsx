@@ -161,7 +161,7 @@ let W = Chunk473749.memo(function(e) {
   let eN = (0, i.jsx)(c.svS, {
       size: "refresh_sm",
       color: "currentColor",
-      colorClass: F.attachButtonPlus
+      colorClass: V.attachButtonPlus
     }),
     eA = (0, i.jsx)(c.yRy, {
       targetElementRef: et,
@@ -208,10 +208,10 @@ let W = Chunk473749.memo(function(e) {
       },
       children: e => (0, i.jsx)(L.Z, z(G({
         ref: et,
-        className: a()(F.attachButton, W),
-        childClassName: F.attachButtonInner,
+        className: a()(V.attachButton, W),
+        childClassName: V.attachButtonInner,
         isActive: false,
-        "aria-label": V.intl.string(V.t.d56gCa),
+        "aria-label": F.intl.string(F.t.d56gCa),
         onDoubleClick: eb ? () => {
           var e;
           return null == (e = ee.current) ? true : e.activateUploadDialogue()
@@ -223,7 +223,7 @@ let W = Chunk473749.memo(function(e) {
     });
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: F.uploadInput,
+      className: V.uploadInput,
       children: (0, i.jsx)(u.Z, {
         ref: ee,
         onChange: e => {
@@ -239,15 +239,15 @@ let W = Chunk473749.memo(function(e) {
         "aria-hidden": true
       })
     }), (0, i.jsx)("div", {
-      className: F.attachWrapper,
+      className: V.attachWrapper,
       children: (0, i.jsx)(R.Z, {
         channel: q,
         isOmniMenuOpen: "attachMenu" === eh,
         openOmniMenu: () => ef("attachMenu"),
         enabled: eS,
-        animationContainerClassName: F.buttonAnimation,
-        glowClassName: F.buttonAnimationGlow,
-        trinketsClassName: F.buttonAnimationTrinkets,
+        animationContainerClassName: V.buttonAnimation,
+        glowClassName: V.buttonAnimationGlow,
+        trinketsClassName: V.buttonAnimationTrinkets,
         children: eA
       })
     })]

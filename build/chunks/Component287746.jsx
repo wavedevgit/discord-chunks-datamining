@@ -845,7 +845,7 @@ class e3 extends Chunk473749.PureComponent {
       }) : null != l && (0, G.J)(l) && null != r && !eO.Z.can(ez.Plq.ADMINISTRATOR, r) ? (0, i.jsx)(W.T, {
         guild: r,
         disabledUntil: l
-      }) : a ? (0, i.jsx)(F.h, {
+      }) : a ? (0, i.jsx)(V.h, {
         guild: r
       }) : null
     })
@@ -862,7 +862,7 @@ let e4 = Chunk473749.memo(function(e) {
     accessibilityLabel: o
   } = (0, eD.Z)({
     channel: t
-  }), s = (0, eo.S)(eP.default.getCurrentUser(), t), [c] = (0, z.AB)(null == n ? true : n.id), u = (0, V.Ux)(null == n ? true : n.id), h = (0, d.e7)([eP.default], () => eP.default.getCurrentUser()), f = (0, d.e7)([ex.ZP], () => {
+  }), s = (0, eo.S)(eP.default.getCurrentUser(), t), [c] = (0, z.AB)(null == n ? true : n.id), u = (0, F.Ux)(null == n ? true : n.id), h = (0, d.e7)([eP.default], () => eP.default.getCurrentUser()), f = (0, d.e7)([ex.ZP], () => {
     var e, t, i;
     return null != h && null != (i = null == (e = ex.ZP.getMember(null != (t = null == n ? true : n.id) ? t : ez.lds, null == h ? true : h.id)) ? true : e.isPending) && i
   }), m = (0, d.e7)([ei.Z], () => ei.Z.isEnabled()), g = (0, ea.Z)(t.id), y = (0, q.Z)(t.id), C = (0, ep.k)(t.id), _ = (0, d.e7)([eE.Z], () => eE.Z.getVoiceChannelId()), x = (0, d.e7)([eC.Z], () => eC.Z.getChannel(_)), j = (0, d.e7)([eP.default], () => t.type !== ez.d4z.DM ? null : eP.default.getUser(t.getRecipientId())), O = (0, d.e7)([er.ZP, eb.default], () => er.ZP.getUserCombo(eb.default.getId(), t.id)), E = (0, b.iD)(t), S = (0, b.d7)(t), P = E.length > 0 || t.rateLimitPerUser > 0 || null != O || null != S, {

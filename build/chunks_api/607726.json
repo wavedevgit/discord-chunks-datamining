@@ -1,0 +1,1 @@
+{"id":"607726","type":"store","data":{"name":"PrivateBrowsingPerkSettingsStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]}],"events":["PRIVATE_BROWSING_PERK_SETTINGS_INSTALL_DISCORD"]},"fromModule":{"id":"web.js"}}

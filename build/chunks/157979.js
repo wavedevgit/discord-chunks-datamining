@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 157979, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   icon: "icon__99ff4",
   voiceIcon: "voiceIcon__99ff4",

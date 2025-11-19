@@ -23,7 +23,7 @@ function m() {
   let e = u.useField("userIds"),
     t = u.useField("isLoading"),
     n = u.useField("isSuccess"),
-    i = u.useField("errorMessage"),
+    r = u.useField("errorMessage"),
     m = u.useField("lastRunAt"),
     p = Chunk473749.useCallback(async () => {
       u.setState({
@@ -55,7 +55,7 @@ function m() {
         n = null != t ? c.ZP.getName(t) : "Unknown";
       return (0, a.jsx)("div", {
         className: d.detailsRow,
-        children: (0, a.jsx)(r.Text, {
+        children: (0, a.jsx)(i.Text, {
           variant: "text-md/normal",
           children: "".concat(n, " (").concat(e, ")")
         })

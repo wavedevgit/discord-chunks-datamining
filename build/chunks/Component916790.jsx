@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk299608 = require("./299608.js"),
   o = require.n(Chunk299608),
   Chunk913527 = require("./913527.js"),
@@ -112,11 +112,11 @@ let k = [{
   }
 }];
 
-function R(e) {
+function A(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, r = l.useMemo(() => t.error ? [...k, {
+  } = e, i = l.useMemo(() => t.error ? [...k, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(b.Z, {
@@ -130,11 +130,11 @@ function R(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: i()(T.errorToolbar, N.toolbar),
+          className: r()(T.errorToolbar, O.toolbar),
           children: (0, a.jsx)("div", {
-            className: N.toolbarGroup,
+            className: O.toolbarGroup,
             children: (0, a.jsx)(m.zx, {
-              className: N.toolbarButton,
+              className: O.toolbarButton,
               size: m.zx.Sizes.MIN,
               onClick: () => console.error(t.error),
               children: "Log to Console"
@@ -152,20 +152,20 @@ function R(e) {
     TabBar: s,
     renderSelectedTab: o
   } = (0, E.ZP)({
-    tabs: r
-  }, [r]);
+    tabs: i
+  }, [i]);
   return (0, a.jsxs)(C.Z, {
     className: T.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(s, {}), (0, a.jsxs)(x.ZP, {
-      className: i()(N.headerBar, T.subPanelHeaderBar),
+      className: r()(O.headerBar, T.subPanelHeaderBar),
       children: [(0, a.jsx)(x.ZP.Icon, {
         icon: p.xVZ,
         tooltip: t.name
       }), (0, a.jsx)(x.ZP.Title, {
-        wrapperClassName: i()(N.headerTitle, N.dispatcherHeader),
-        className: N.headerTitleText,
+        wrapperClassName: r()(O.headerTitle, O.dispatcherHeader),
+        className: O.headerTitleText,
         children: t.name
       }), (0, a.jsx)(x.ZP.Icon, {
         icon: p.TIy,
@@ -174,7 +174,7 @@ function R(e) {
           var e;
           let n = JSON.stringify(Object.keys(e = t.action).reduce((t, n) => {
             var a;
-            return t[n] = (a = e[n], O.Jn9.test(a) ? "REDACTED" : a), t
+            return t[n] = (a = e[n], N.Jn9.test(a) ? "REDACTED" : a), t
           }, {}), null, 2);
           (0, v.JG)(n, () => (0, p.showToast)({
             id: "copy-action-log-name",
@@ -188,7 +188,7 @@ function R(e) {
     })]
   })
 }
-let A = [{
+let R = [{
     key: "action",
     cellClassName: Chunk578970.actionColumn,
     render(e) {
@@ -234,7 +234,7 @@ let A = [{
 function D() {
   let e = Chunk473749.useRef(null),
     [t, n] = Chunk473749.useState(""),
-    r = function(e) {
+    i = function(e) {
       let [t, n] = l.useState(e.logs);
       return l.useEffect(() => {
         let t = o()(() => {
@@ -262,10 +262,10 @@ function D() {
     }, [Chunk299608]),
     C = exports.trim().length > 0,
     E = Chunk473749.useMemo(() => Chunk484036 ? Chunk755721 : Chunk886118 ? Chunk913527 : Chunk299608, [Chunk299608, Chunk755721, Chunk484036, Chunk886118, Chunk913527]),
-    O = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
+    N = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: i()(Chunk866403.panel, Chunk578970.panel),
+    className: r()(Chunk866403.panel, Chunk578970.panel),
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk578970.toolbar,
       children: [(0, Chunk54381.jsx)(Chunk28664.u, {
@@ -285,11 +285,11 @@ function D() {
         placeholder: "Search by action name"
       })]
     }), (0, Chunk54381.jsx)(Chunk681619.Z, {
-      columns: A,
+      columns: R,
       data: Chunk621060,
       selectedRowKey: null == Chunk572004 ? true : Chunk572004.id.toString(),
       onClickRow: e => j(e.actionLog)
-    }), null != Chunk572004 && (0, Chunk54381.jsx)(R, {
+    }), null != Chunk572004 && (0, Chunk54381.jsx)(A, {
       actionLog: Chunk572004,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

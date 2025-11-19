@@ -2,12 +2,12 @@
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => I,
-  openDevToolsPopout: () => O
+  openDevToolsPopout: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -32,7 +32,7 @@ function E(e) {
     resizableNode: t,
     onResize: n,
     onResizeEnd: l
-  } = e, r = (0, d.Z)({
+  } = e, i = (0, d.Z)({
     minDimension: f.h,
     resizableDomNodeRef: t,
     onElementResize: n,
@@ -40,12 +40,12 @@ function E(e) {
     orientation: d.y.HORIZONTAL_LEFT
   });
   return (0, a.jsx)("div", {
-    onMouseDown: r,
+    onMouseDown: i,
     className: C.resizeHandle
   })
 }
 
-function O() {
+function N() {
   (0, Chunk788983.bA)(Chunk981631.KJ3.DEVTOOLS_POPOUT, () => (0, Chunk54381.jsx)(Chunk238246.Z, {
     windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
@@ -65,8 +65,8 @@ function T(e) {
   let {
     isPopout: n = false
   } = e, l = (0, v.F)(), {
-    TabBar: r,
-    renderSelectedTab: i,
+    TabBar: i,
+    renderSelectedTab: r,
     selectedTabId: o
   } = (0, j.ZP)({
     tabs: l,
@@ -90,7 +90,7 @@ function T(e) {
         children: [(0, a.jsx)(m.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
-          onClick: O
+          onClick: N
         }), (0, a.jsx)(m.ZP.Icon, {
           icon: c.Dio,
           tooltip: y.intl.string(y.t.cpT0Cq),
@@ -103,17 +103,17 @@ function T(e) {
       }), (0, a.jsx)(m.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(r, {}), i(), (0, a.jsx)(b.Br, {
+    }), (0, a.jsx)(i, {}), r(), (0, a.jsx)(b.Br, {
       className: C.layerContainer
     })]
   })
 }
 
-function N() {
+function O() {
   let e = Chunk473749.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
-    [n, r] = Chunk473749.useState(null),
-    i = Chunk473749.useCallback(e => (0, g.Qh)({
+    [n, i] = Chunk473749.useState(null),
+    r = Chunk473749.useCallback(e => (0, g.Qh)({
       sidebarWidth: e
     }), []);
   return (Chunk473749.useEffect(() => {
@@ -129,7 +129,7 @@ function N() {
     children: [(0, Chunk54381.jsx)(E, {
       resizableNode: module,
       onResize: Chunk120356,
-      onResizeEnd: i
+      onResizeEnd: r
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk246984.sidebarContent,
       children: (0, Chunk54381.jsx)(T, {})
@@ -139,7 +139,7 @@ function N() {
 
 function P() {
   return (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.displayTools) ? (0, Chunk54381.jsx)("div", {
-    className: i()(Chunk246984.container, Chunk246984.mobileContainerExpanded),
+    className: r()(Chunk246984.container, Chunk246984.mobileContainerExpanded),
     children: (0, Chunk54381.jsx)("div", {
       className: Chunk246984.sidebarContent,
       children: (0, Chunk54381.jsx)(T, {})
@@ -149,7 +149,7 @@ function P() {
     children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
       onClick: Chunk31336.SO,
       children: (0, Chunk54381.jsxs)(Chunk665149.ZP, {
-        className: i()(Chunk866403.headerBar, Chunk246984.mobileHeaderCollapsed),
+        className: r()(Chunk866403.headerBar, Chunk246984.mobileHeaderCollapsed),
         toolbar: (0, Chunk54381.jsx)(Chunk259580.Z, {
           direction: Chunk259580.Z.Directions.UP
         }),
@@ -174,5 +174,5 @@ function I(e) {
     children: (0, a.jsx)(T, {
       isPopout: true
     })
-  }) : (0, a.jsx)(N, {})
+  }) : (0, a.jsx)(O, {})
 }

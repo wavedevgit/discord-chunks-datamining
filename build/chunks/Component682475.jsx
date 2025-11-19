@@ -1,7 +1,7 @@
 /** Chunk was on 65347 **/
 /** chunk id: 682475, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => eo
+  F: () => ec
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -57,6 +57,7 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk512313 = require("./512313.jsx"),
   Chunk820400 = require("./820400.jsx"),
   Chunk200178 = require("./200178.jsx"),
+  Chunk39989 = require("./39989.jsx"),
   Chunk260950 = require("./260950.jsx"),
   Chunk63954 = require("./63954.jsx"),
   Chunk569157 = require("./569157.jsx"),
@@ -64,7 +65,7 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk621060 = require("./621060.jsx"),
   Chunk46140 = require("./46140.js");
 
-function eo() {
+function ec() {
   return Chunk473749.useMemo(() => {
     let e = [{
       id: "analytics",
@@ -276,6 +277,11 @@ function eo() {
       name: "Fractional Nitro",
       group: Chunk621060.v0.PREMIUM,
       render: () => (0, Chunk54381.jsx)(Chunk604776.Z, {})
+    }), module.push({
+      id: "nitro_storybook",
+      name: "Nitro Storybook",
+      group: Chunk621060.v0.PREMIUM,
+      render: () => (0, Chunk54381.jsx)(Chunk39989.C, {})
     })), module.push({
       id: "gifting_intent",
       name: "Gifting Intent",

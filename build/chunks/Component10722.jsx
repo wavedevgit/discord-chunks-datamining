@@ -23,8 +23,8 @@ function h(e) {
     guild: L,
     onClose: N,
     transitionState: m
-  } = e, x = null != (t = (0, r.KS)(h, L)) ? t : true, y = (0, c.ZP)(h, false), v = (0, l.q)(null == (i = h.linkedLobby) ? true : i.application_id);
-  return (0, n.jsxs)(a.u, {
+  } = e, x = null != (t = (0, d.KS)(h, L)) ? t : true, y = (0, c.ZP)(h, false), v = (0, l.q)(null == (i = h.linkedLobby) ? true : i.application_id);
+  return (0, n.jsxs)(a.Modal, {
     title: b.intl.string(b.t.X8jMDh),
     subtitle: null != y ? {
       text: y,
@@ -36,22 +36,22 @@ function h(e) {
     children: [(0, n.jsx)(o.Text, {
       selectable: true,
       variant: "text-md/normal",
-      className: k.markup,
-      children: s.Z.parseTopic(h.topic, true, {
+      className: u.markup,
+      children: r.Z.parseTopic(h.topic, true, {
         channelId: h.id
       })
     }), null != v ? (0, n.jsxs)("div", {
-      className: u.linkedLobbyNotice,
+      className: k.linkedLobbyNotice,
       children: [(0, n.jsx)(o.DuK, {
-        className: u.linkedLobbyApplicationIcon
+        className: k.linkedLobbyApplicationIcon
       }), (0, n.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: b.intl.format(b.t.Ud5ryv, {
           applicationName: v.name,
-          helpdeskArticle: d.Z.getArticleURL(p.BhN.LINKED_LOBBIES),
+          helpdeskArticle: s.Z.getArticleURL(p.BhN.LINKED_LOBBIES),
           separatorHook: (e, i) => (0, n.jsx)("span", {
-            className: u.linkedLobbyNoticeSeparator,
+            className: k.linkedLobbyNoticeSeparator,
             children: e
           }, i)
         })

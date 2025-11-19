@@ -60,7 +60,7 @@ let g = e => {
       _ = f || !b && j.size > 0,
       [y, C] = Chunk473749.useState(""),
       [S, E] = Chunk473749.useState(null),
-      [O, T] = Chunk473749.useState(null);
+      [N, T] = Chunk473749.useState(null);
     return (Chunk473749.useEffect(() => {
       if ("" === y.trim() || !_) {
         E(null), T(null);
@@ -111,12 +111,12 @@ let g = e => {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Product Preview"
-        }), null != S && null != O ? (0, Chunk54381.jsxs)("div", {
+        }), null != S && null != N ? (0, Chunk54381.jsxs)("div", {
           className: Chunk958675.previewContainer,
           children: [(0, Chunk54381.jsx)(g, {
             product: S,
             user: module,
-            category: O,
+            category: N,
             tab: Chunk215023.AW.HOME
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",

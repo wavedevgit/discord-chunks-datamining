@@ -105,7 +105,7 @@ require.d(exports, {
   Mjp: () => Chunk657707.Mjp,
   Mko: () => Chunk657707.Mko,
   Mmi: () => Chunk657707.Mmi,
-  Modal: () => Chunk775086.u,
+  Modal: () => Chunk775086.Modal,
   MqZ: () => Chunk657707.MqZ,
   NIo: () => Chunk346005.N,
   NQW: () => Chunk657707.NQW,

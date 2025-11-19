@@ -4,7 +4,7 @@
 require.d(exports, {
   ZP: () => D,
   fD: () => R
-}), require("./388685.js"), require("./49124.js");
+}), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,7 +13,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk401430 = require("./401430.js"),
   Chunk100527 = require("./100527.js"),
   Chunk415439 = require("./415439.js"),
-  Chunk956097 = require("./956097.js"),
   Chunk947851 = require("./947851.js"),
   Chunk921801 = require("./921801.js"),
   Chunk695103 = require("./695103.js"),
@@ -23,6 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk494620 = require("./494620.jsx"),
   Chunk399970 = require("./399970.jsx"),
   Chunk273313 = require("./273313.jsx"),
+  Chunk868802 = require("./868802.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
@@ -76,14 +76,14 @@ function R() {
 }
 
 function P(e) {
-  (0, f.Y)("DesktopNativeUtils") ? (o.K.set(N, e), h.ZP.setEnableHardwareAcceleration(true)) : h.ZP.setEnableHardwareAcceleration(e)
+  (0, d.Y)("DesktopNativeUtils") ? (o.K.set(N, e), p.ZP.setEnableHardwareAcceleration(true)) : p.ZP.setEnableHardwareAcceleration(e)
 }
 
 function D() {
-  let [e] = Chunk473749.useState(() => R()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), f = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), h = Chunk473749.useCallback(e => {
-    g.bm.updateSetting(!e)
+  let [e] = Chunk473749.useState(() => R()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), d = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), p = Chunk473749.useCallback(e => {
+    m.bm.updateSetting(!e)
   }, []), T = Chunk473749.useCallback(e => {
-    e ? (0, s.h7j)(e => (0, r.jsx)(b.Z, S({}, e))) : l.mc()
+    e ? (0, s.h7j)(e => (0, r.jsx)(E.Z, S({}, e))) : l.mc()
   }, []), A = Chunk473749.useCallback(e => {
     (0, u.BV)(e, c.Z.USER_SETTINGS)
   }, []), N = Chunk473749.useCallback(e => {
@@ -101,16 +101,6 @@ function D() {
         })
       }))
     })
-  }, []), {
-    warpEnabled: D,
-    warpConnecting: w,
-    warpLog: L
-  } = (0, Chunk442837.cj)([Chunk956097.Z], () => ({
-    warpEnabled: Chunk956097.Z.enabled,
-    warpConnecting: Chunk956097.Z.connecting,
-    warpLog: Chunk956097.Z.log
-  })), x = Chunk473749.useCallback(e => {
-    e ? d.Z.connect() : d.Z.disconnect()
   }, []);
   return (0, Chunk54381.jsx)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["8/udY0"]),
@@ -166,19 +156,9 @@ function D() {
         }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
       }), (0, Chunk54381.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_CF_WARP,
-        children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Kqy, {
           gap: 16,
-          children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-            label: "Enable WARP",
-            description: "Enable WARP Proxy Connection",
-            checked: D,
-            onChange: x
-          }), w ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : null, (0, Chunk54381.jsx)(Chunk481060.Text, {
-            variant: "code",
-            children: L.map((e, t) => (0, r.jsx)("div", {
-              children: JSON.stringify(e)
-            }, t))
-          })]
+          children: (0, Chunk54381.jsx)(Chunk868802.M, {})
         })
       })]
     })

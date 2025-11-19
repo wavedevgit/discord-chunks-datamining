@@ -66,7 +66,7 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = 6,
+let P = 7,
   D = false,
   w = new Chunk710845.Z("OverlayUsageStatsManager");
 D || (w.verbose = () => {});
@@ -213,39 +213,40 @@ class j {
     }
   }
   getAnalytics() {
-    var e, t;
-    let n = e => this.counters[e].elapsed().asMilliseconds(),
-      r = {
-        [Chunk593472.Jx.UNKNOWN]: require(Chunk593472.Jx.UNKNOWN),
-        [Chunk593472.Jx.WINDOWED]: require(Chunk593472.Jx.WINDOWED),
-        [Chunk593472.Jx.MAXIMIZED]: require(Chunk593472.Jx.MAXIMIZED),
-        [Chunk593472.Jx.BORDERLESS_FULLSCREEN]: require(Chunk593472.Jx.BORDERLESS_FULLSCREEN),
-        [Chunk593472.Jx.FULLSCREEN]: require(Chunk593472.Jx.FULLSCREEN),
-        [Chunk593472.Jx.MINIMIZED]: require(Chunk593472.Jx.MINIMIZED)
+    var e, t, n;
+    let r = e => this.counters[e].elapsed().asMilliseconds(),
+      i = {
+        [Chunk593472.Jx.UNKNOWN]: Chunk772848(Chunk593472.Jx.UNKNOWN),
+        [Chunk593472.Jx.WINDOWED]: Chunk772848(Chunk593472.Jx.WINDOWED),
+        [Chunk593472.Jx.MAXIMIZED]: Chunk772848(Chunk593472.Jx.MAXIMIZED),
+        [Chunk593472.Jx.BORDERLESS_FULLSCREEN]: Chunk772848(Chunk593472.Jx.BORDERLESS_FULLSCREEN),
+        [Chunk593472.Jx.FULLSCREEN]: Chunk772848(Chunk593472.Jx.FULLSCREEN),
+        [Chunk593472.Jx.MINIMIZED]: Chunk772848(Chunk593472.Jx.MINIMIZED)
       },
-      i = Object.entries(Chunk772848).sort((e, t) => {
+      a = Object.entries(Chunk379649).sort((e, t) => {
         let [n, r] = e, [i, a] = t;
         return a - r
       })[0],
-      a = parseInt(Chunk379649[0], 10),
-      s = isNaN(Chunk570140) ? Chunk593472.Jx.UNKNOWN : Chunk570140;
-    isNaN(Chunk570140) && w.error("ScreenTypeAnalytics: Unknown most used screen type: ".concat(Chunk379649), Chunk772848);
-    let l = Chunk938038.c.getGameDisplayMode(null != (e = this.game.name) ? module : this.game.id);
-    Chunk938038.c.setGameDisplayMode(null != (t = this.game.name) ? exports : this.game.id, Chunk147913);
-    let c = {
-      screentype_unknown_duration: Chunk772848[Chunk593472.Jx.UNKNOWN],
-      screentype_windowed_duration: Chunk772848[Chunk593472.Jx.WINDOWED],
-      screentype_maximized_duration: Chunk772848[Chunk593472.Jx.MAXIMIZED],
-      screentype_borderless_fullscreen_duration: Chunk772848[Chunk593472.Jx.BORDERLESS_FULLSCREEN],
-      screentype_fullscreen_duration: Chunk772848[Chunk593472.Jx.FULLSCREEN],
-      screentype_minimized_duration: Chunk772848[Chunk593472.Jx.MINIMIZED]
+      s = parseInt(Chunk570140[0], 10),
+      l = isNaN(Chunk147913) ? Chunk593472.Jx.UNKNOWN : Chunk147913;
+    isNaN(Chunk147913) && w.error("ScreenTypeAnalytics: Unknown most used screen type: ".concat(Chunk570140), Chunk379649);
+    let c = Chunk938038.c.getGameDisplayMode(null != (e = this.game.name) ? module : this.game.id);
+    Chunk938038.c.setGameDisplayMode(null != (t = this.game.name) ? exports : this.game.id, Chunk579806);
+    let u = {
+      screentype_unknown_duration: Chunk379649[Chunk593472.Jx.UNKNOWN],
+      screentype_windowed_duration: Chunk379649[Chunk593472.Jx.WINDOWED],
+      screentype_maximized_duration: Chunk379649[Chunk593472.Jx.MAXIMIZED],
+      screentype_borderless_fullscreen_duration: Chunk379649[Chunk593472.Jx.BORDERLESS_FULLSCREEN],
+      screentype_fullscreen_duration: Chunk379649[Chunk593472.Jx.FULLSCREEN],
+      screentype_minimized_duration: Chunk379649[Chunk593472.Jx.MINIMIZED]
     };
-    return R(C({}, Chunk710845), {
-      screentype_global_supported_duration: Chunk710845.screentype_windowed_duration + Chunk710845.screentype_maximized_duration + Chunk710845.screentype_borderless_fullscreen_duration,
-      screentype_global_unsupported_duration: Chunk710845.screentype_fullscreen_duration,
+    return R(C({}, Chunk581567), {
+      screentype_global_supported_duration: Chunk581567.screentype_windowed_duration + Chunk581567.screentype_maximized_duration + Chunk581567.screentype_borderless_fullscreen_duration,
+      screentype_global_unsupported_duration: Chunk581567.screentype_fullscreen_duration,
       screentype_initial: Chunk593472.Jx[this.game.fullscreenType],
-      screentype_most_used: Chunk593472.Jx[Chunk147913],
-      screentype_most_used_previous: null == Chunk579806 ? null : Chunk593472.Jx[Chunk579806],
+      screentype_most_used: Chunk593472.Jx[Chunk579806],
+      screentype_most_used_previous: null == Chunk710845 ? null : Chunk593472.Jx[Chunk710845],
+      screentype_last: Chunk593472.Jx[null != (n = this.lastscreenType) ? require : Chunk593472.Jx.UNKNOWN],
       game_display_mode_is_adjustment_supported: Chunk998502.ZP.GameDisplayModeIsGameSupported(this.game.name)
     })
   }
@@ -363,11 +364,8 @@ class U {
       overlayMethodStats: this.overlayMethodStats
     })
   }
-  setOverlayState(e) {
-    this.overlayState = e, this.overlayStateRaw = e
-  }
-  setOverlayStateRawOnly(e) {
-    this.overlayStateRaw = e
+  setOverlayState(e, t, n) {
+    n || (this.overlayState = e, this.overlayStateReason = t), this.overlayStateRaw = e, this.overlayStateRawReason = t
   }
   getSettingMethod() {
     return null == this.overlayMethod ? Chunk837268.gl[Chunk837268.gl.Disabled] : Chunk837268.gl[this.overlayMethod]
@@ -427,7 +425,9 @@ class U {
         any_other_method: Chunk830917,
         current_method: Chunk554174,
         last_overlay_state: this.overlayState,
-        last_overlay_state_raw: this.overlayStateRaw
+        last_overlay_state_raw: this.overlayStateRaw,
+        last_overlay_state_reason: this.overlayStateReason,
+        last_overlay_state_raw_reason: this.overlayStateRawReason
       }),
       notifications: this.notificationAnalytics.getCounterAnalytics(this.uuid)
     }
@@ -470,7 +470,7 @@ class U {
   }
   constructor(e) {
     var t, n;
-    A(this, "game", true), A(this, "uuid", true), A(this, "overlayStatus", true), A(this, "overlayMethod", true), A(this, "overlayMethodStats", true), A(this, "overlayState", true), A(this, "overlayStateRaw", true), A(this, "notificationAnalytics", true), A(this, "widgetAnalytics", true), A(this, "screenAnalytics", true), A(this, "uiUnlockedCount", true), A(this, "uiLockedCount", true), A(this, "gameFocusChangedCount", true), A(this, "gameConcurrentGameCount", true), A(this, "overlayMessageAckCount", true), A(this, "overlayMessageCreateCount", true), A(this, "gameTimer", true), A(this, "gameFocusedTimer", true), A(this, "unlockedTimer", true), A(this, "rtcConnectionTimer", true), A(this, "desktopFocusedTimer", true), A(this, "desktopFocusChangedCount", true), A(this, "desktopMessageAckCount", true), A(this, "desktopMessageCreateCount", true), A(this, "soundboardShownTimer", true), A(this, "soundboardShownCount", true), A(this, "soundboardKeepOpenCount", true), A(this, "muteToggledCount", true), A(this, "_successfullyShown", true), this.game = e, this.uuid = k(), this.overlayMethod = null, this.overlayMethodStats = null, this.overlayState = null, this.overlayStateRaw = null, this.notificationAnalytics = new x, this.widgetAnalytics = new M, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = i.G9.startNew(), this.gameFocusedTimer = new i.G9, this.unlockedTimer = new i.G9, this.rtcConnectionTimer = new i.G9, this.desktopFocusedTimer = new i.G9, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new i.G9, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.muteToggledCount = 0, this._successfullyShown = false, this.screenAnalytics = new j(e), this.overlayStatus = (0, d.b6)(e), this.overlayMethod = null != (n = null == (t = this.overlayStatus) ? true : t.overlayMethod) ? n : null, this.overlayMethodStats = this.buildOverlayMethodStats(this.overlayMethod, e), U.desktopMainWindowHasFocus && this.desktopFocusedTimer.start(), ee.hasConnection() && this.rtcConnectionTimer.start()
+    A(this, "game", true), A(this, "uuid", true), A(this, "overlayStatus", true), A(this, "overlayMethod", true), A(this, "overlayMethodStats", true), A(this, "overlayState", true), A(this, "overlayStateRaw", true), A(this, "overlayStateReason", true), A(this, "overlayStateRawReason", true), A(this, "notificationAnalytics", true), A(this, "widgetAnalytics", true), A(this, "screenAnalytics", true), A(this, "uiUnlockedCount", true), A(this, "uiLockedCount", true), A(this, "gameFocusChangedCount", true), A(this, "gameConcurrentGameCount", true), A(this, "overlayMessageAckCount", true), A(this, "overlayMessageCreateCount", true), A(this, "gameTimer", true), A(this, "gameFocusedTimer", true), A(this, "unlockedTimer", true), A(this, "rtcConnectionTimer", true), A(this, "desktopFocusedTimer", true), A(this, "desktopFocusChangedCount", true), A(this, "desktopMessageAckCount", true), A(this, "desktopMessageCreateCount", true), A(this, "soundboardShownTimer", true), A(this, "soundboardShownCount", true), A(this, "soundboardKeepOpenCount", true), A(this, "muteToggledCount", true), A(this, "_successfullyShown", true), this.game = e, this.uuid = k(), this.overlayMethod = null, this.overlayMethodStats = null, this.overlayState = null, this.overlayStateRaw = null, this.overlayStateReason = null, this.overlayStateRawReason = null, this.notificationAnalytics = new x, this.widgetAnalytics = new M, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = i.G9.startNew(), this.gameFocusedTimer = new i.G9, this.unlockedTimer = new i.G9, this.rtcConnectionTimer = new i.G9, this.desktopFocusedTimer = new i.G9, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new i.G9, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.muteToggledCount = 0, this._successfullyShown = false, this.screenAnalytics = new j(e), this.overlayStatus = (0, d.b6)(e), this.overlayMethod = null != (n = null == (t = this.overlayStatus) ? true : t.overlayMethod) ? n : null, this.overlayMethodStats = this.buildOverlayMethodStats(this.overlayMethod, e), U.desktopMainWindowHasFocus && this.desktopFocusedTimer.start(), ee.hasConnection() && this.rtcConnectionTimer.start()
   }
 }
 
@@ -607,8 +607,8 @@ function $(e) {
   let t = U.getByPid(e.pid);
   if (null == t) return void w.error("OVERLAY_TRACK_STATE_CHANGED: Game not found", e, U.debug);
   if (e.newState !== f.mM.OVERLAY_TEARING_DOWN) {
-    if (e.reason.includes("Unknown fullscreen type")) return void t.setOverlayStateRawOnly(e.newState);
-    t.setOverlayState(e.newState)
+    if (e.reason.includes("Unknown fullscreen type")) return void t.setOverlayState(e.newState, e.reason, true);
+    t.setOverlayState(e.newState, e.reason, false)
   }
 }
 A(U, "gamesByPid", {}), A(U, "gamesByName", {}), A(U, "desktopMainWindowHasFocus", document.hasFocus());

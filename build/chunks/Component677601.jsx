@@ -117,7 +117,7 @@ function eH(e) {
   return e
 }
 
-function eV(e, t) {
+function eF(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -129,7 +129,7 @@ function eV(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let eF = {
+let eV = {
     [Chunk981631.AEg.NORMAL]: Chunk563712.normal,
     [Chunk981631.AEg.MINIMUM]: Chunk563712.minimum,
     [Chunk981631.AEg.NO_CHAT]: Chunk563712.noChat,
@@ -215,17 +215,17 @@ class ez extends Chunk473749.PureComponent {
       canChangeLayout: Chunk512722,
       canStayOnTop: Chunk442837
     };
-    if (!Chunk54381) return eV(eH({}, Chunk704215), {
+    if (!Chunk54381) return eF(eH({}, Chunk704215), {
       canFullscreen: Chunk120356,
       useTheme: true
     });
     switch (module) {
       case Chunk981631.AEg.FULL_SCREEN:
-        return eV(eH({}, Chunk704215), {
+        return eF(eH({}, Chunk704215), {
           canPopout: !this.inPopout && this.popoutOpen && Chunk704215.canPopout
         });
       case Chunk981631.AEg.MINIMUM:
-        return eV(eH({}, Chunk704215), {
+        return eF(eH({}, Chunk704215), {
           canPopout: false,
           useTheme: true
         });
@@ -254,7 +254,7 @@ class ez extends Chunk473749.PureComponent {
       currentChannelActivities: b,
       callContainerDimensions: y
     } = this.props, C = f === ek.AEg.MINIMUM, v = C || f === ek.AEg.NORMAL, _ = l && o === ek.WtW.VIDEO, x = (null != (t = null == b ? true : b.length) ? t : 0) > 0 && p.isPrivate();
-    return this._lastIdleProps = e, (0, i.jsx)(J.Z, eV(eH({
+    return this._lastIdleProps = e, (0, i.jsx)(J.Z, eF(eH({
       renderHeader: this.renderHeader,
       renderBottomLeft: this.renderBottomLeft,
       renderBottomCenter: this.renderBottomCenter,
@@ -303,7 +303,7 @@ class ez extends Chunk473749.PureComponent {
       resizedHeight: p
     } = this.state, f = Chunk473749 === Chunk981631.WtW.VIDEO, m = module !== Chunk981631.AEg.NO_CHAT && module !== Chunk981631.AEg.FULL_SCREEN && null != Chunk990547, g = Chunk981631.BRd.MIDNIGHT;
     return (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk563712.wrapper, eF[module], eG[Chunk512722], {
+      className: a()(Chunk563712.wrapper, eV[module], eG[Chunk512722], {
         [Chunk563712.poppedOut]: this.popoutOpen && !this.inPopout && module !== Chunk981631.AEg.NO_CHAT && exports.isPrivate(),
         [Chunk563712.video]: Chunk570140,
         [Chunk563712.sidebarOpen]: Chunk120356 || Chunk704215
@@ -412,7 +412,7 @@ class ez extends Chunk473749.PureComponent {
             let {
               default: t
             } = await n.e("22183").then(n.bind(n, 987281));
-            return n => (0, i.jsx)(t, eV(eH({}, n), {
+            return n => (0, i.jsx)(t, eF(eH({}, n), {
               stream: e.stream,
               exitFullscreen: this.maybeLeaveFullScreen,
               appContext: u,
@@ -425,7 +425,7 @@ class ez extends Chunk473749.PureComponent {
           this.trackCallTileContextMenuImpression(e, eL.TH.USER);
           let h = eh.default.getUser(e.id);
           if (null != h) {
-            if (r) return (0, F.D)(t, h, c, p, (e, t) => (0, eM.o)({
+            if (r) return (0, V.D)(t, h, c, p, (e, t) => (0, eM.o)({
               menuItemProps: t,
               menuName: e,
               entrypoint: eL.A5.THREE_DOT,
@@ -439,7 +439,7 @@ class ez extends Chunk473749.PureComponent {
                   let {
                     default: t
                   } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("10493")]).then(n.bind(n, 131404));
-                  return n => (0, i.jsx)(t, eV(eH({}, n), {
+                  return n => (0, i.jsx)(t, eF(eH({}, n), {
                     showChannelCallItems: true,
                     showMediaItems: true,
                     user: h,
@@ -453,7 +453,7 @@ class ez extends Chunk473749.PureComponent {
                   let {
                     default: t
                   } = await Promise.all([n.e("79695"), n.e("66165"), n.e("92775")]).then(n.bind(n, 354589));
-                  return n => (0, i.jsx)(t, eV(eH({}, n), {
+                  return n => (0, i.jsx)(t, eF(eH({}, n), {
                     showChannelCallItems: true,
                     showMediaItems: true,
                     showChatItems: d === ek.AEg.MINIMUM || d === ek.AEg.NORMAL,
@@ -471,7 +471,7 @@ class ez extends Chunk473749.PureComponent {
                   let {
                     default: t
                   } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("87157")]).then(n.bind(n, 757387));
-                  return n => (0, i.jsx)(t, eV(eH({}, n), {
+                  return n => (0, i.jsx)(t, eF(eH({}, n), {
                     showMediaItems: true,
                     showChannelCallItems: true,
                     showChatItems: false,
@@ -507,7 +507,7 @@ class ez extends Chunk473749.PureComponent {
       } = this.props, n = async () => {
         (null == t ? true : t.applicationId) != null && await (0, E.nJ)(t.applicationId, e.id);
         let n = e.getGuildId();
-        null != n && (0, V.uL)((0, eg.LY)(n)), B.hP(e)
+        null != n && (0, F.uL)((0, eg.LY)(n)), B.hP(e)
       };
       null == t || (0, j.R)() ? n() : (0, I.Z)({
         onConfirm: n
@@ -739,8 +739,8 @@ let eW = function(e) {
     layout: k,
     participantsOpen: D,
     participantsListOpen: B,
-    chatOpen: V,
-    selectedParticipant: F
+    chatOpen: F,
+    selectedParticipant: V
   } = (0, u.cj)([e_.Z], () => {
     let e = y === ek.IlC.POPOUT,
       t = e_.Z.getMode(n.id);
@@ -760,8 +760,8 @@ let eW = function(e) {
   }, [y, n.id]), z = (0, u.Wu)([el.Z], () => el.Z.getAllActiveStreams()), {
     selectedStream: W
   } = (0, u.cj)([el.Z], () => ({
-    selectedStream: null != F ? el.Z.getActiveStreamForStreamKey(F.id) : null
-  }), [F]), q = (0, u.e7)([ec.Z], () => ec.Z.getGuild(n.getGuildId())), K = (0, u.e7)([es.Z], () => es.Z.getCall(n.id), [n.id]), Y = (0, u.e7)([ed.ZP], () => ed.ZP.getMentionCount(n.id), [n.id]), X = (0, u.e7)([ea.default], () => ea.default.getId()), {
+    selectedStream: null != V ? el.Z.getActiveStreamForStreamKey(V.id) : null
+  }), [V]), q = (0, u.e7)([ec.Z], () => ec.Z.getGuild(n.getGuildId())), K = (0, u.e7)([es.Z], () => es.Z.getCall(n.id), [n.id]), Y = (0, u.e7)([ed.ZP], () => ed.ZP.getMentionCount(n.id), [n.id]), X = (0, u.e7)([ea.default], () => ea.default.getId()), {
     popoutWindow: J,
     popoutWindowAlwaysOnTop: Q
   } = (0, u.cj)([H.Z], () => ({
@@ -825,11 +825,11 @@ let eW = function(e) {
             filteredParticipants: T,
             participantsVersion: A,
             layout: k,
-            chatOpen: V,
+            chatOpen: F,
             maxSidebarWidth: eE,
             shouldUseVoiceEffectsActionBar: eb,
             currentUserId: X,
-            selectedParticipant: F,
+            selectedParticipant: V,
             allActiveStreams: z,
             useNewInviteButton: eh,
             connectedEmbeddedActivity: null != eg ? eg : true,

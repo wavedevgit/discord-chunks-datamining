@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk488922 = require("./488922.jsx"),
@@ -28,7 +28,7 @@ let p = [{
 function x() {
   let [e, t] = Chunk473749.useState("virtual-currency"), n = Chunk473749.useMemo(() => h[module], [module]);
   return (0, Chunk54381.jsxs)("div", {
-    className: i()(Chunk866403.panel, Chunk744769.container),
+    className: r()(Chunk866403.panel, Chunk744769.container),
     children: [(0, Chunk54381.jsx)(Chunk481060.njP, {
       className: Chunk744769.tabBar,
       selectedItem: module,

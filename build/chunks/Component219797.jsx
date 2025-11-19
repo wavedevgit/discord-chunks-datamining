@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk993365 = require("./993365.js"),
-  Chunk506802 = require("./506802.jsx"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk543651 = require("./543651.jsx"),
   Chunk177751 = require("./177751.js"),
@@ -102,17 +102,19 @@ function A(e) {
   let n = e.item.originalItem,
     a = i.useCallback(() => {
       var e;
-      return (0, p.yE)(null != (e = n.flags) ? e : 0, E.J0y.IS_CLIP) ? (0, r.jsxs)(s.jS, {
+      return (0, p.yE)(null != (e = n.flags) ? e : 0, E.J0y.IS_CLIP) ? (0, r.jsx)(s.u, {
         text: b.intl.string(b.t["/fgfWh"]),
-        className: y.clipPill,
-        children: [(0, r.jsx)(l.AlX, {
-          size: "xs",
-          color: "currentColor"
-        }), (0, r.jsx)(o.x, {
-          variant: "text-xs/semibold",
-          color: "always-white",
-          children: b.intl.string(b.t.oA4afG)
-        })]
+        children: (0, r.jsxs)("div", {
+          className: y.clipPill,
+          children: [(0, r.jsx)(l.AlX, {
+            size: "xs",
+            color: "currentColor"
+          }), (0, r.jsx)(o.x, {
+            variant: "text-xs/semibold",
+            color: "always-white",
+            children: b.intl.string(b.t.oA4afG)
+          })]
+        })
       }) : null
     }, [n]),
     c = h.Z.toURLSafe(n.proxy_url);

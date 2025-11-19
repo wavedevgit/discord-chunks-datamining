@@ -167,7 +167,7 @@ function et(e) {
           item: e,
           channel: U,
           isBeforeGroup: null == e.content && $(el[t + 1])
-        }) : (0, i.jsx)(V.Z, {
+        }) : (0, i.jsx)(F.Z, {
           isUnread: l,
           isBeforeGroup: null == e.content && $(el[t + 1]),
           id: l ? K.j1 : true,
@@ -288,7 +288,7 @@ function et(e) {
             color: "currentColor",
             children: n
           });
-          r = (0, i.jsx)(F.G5, {
+          r = (0, i.jsx)(V.G5, {
             scrollManager: eo,
             content: e,
             channel: U
@@ -327,13 +327,13 @@ function et(e) {
               children: n
             })
           });
-          r = (0, i.jsx)(F.LE, {
+          r = (0, i.jsx)(V.LE, {
             content: e,
             channelId: U.id
           })
         }
       }
-    } else ex.includes(q.E.NEW_MESSAGES) && (r = (0, i.jsx)(F.LE, {
+    } else ex.includes(q.E.NEW_MESSAGES) && (r = (0, i.jsx)(V.LE, {
       content: J.intl.format(e, {
         count: en,
         timestamp: l
@@ -341,10 +341,10 @@ function et(e) {
       channelId: U.id
     }))
   }
-  if (null == r && (0, s.Lp)(U) && ey && ex.includes(q.E.SUMMARIES) && (r = (0, i.jsx)(F.BO, {
+  if (null == r && (0, s.Lp)(U) && ey && ex.includes(q.E.SUMMARIES) && (r = (0, i.jsx)(V.BO, {
       channel: U,
       scrollManager: eo
-    })), et.error) h = (0, i.jsx)(F.Rp, {
+    })), et.error) h = (0, i.jsx)(V.Rp, {
     loading: et.loadingMore,
     onClick: () => {
       var e;
@@ -360,10 +360,10 @@ function et(e) {
     let {
       jumpReturnTargetId: e
     } = et;
-    h = et.loadingMore && et.jumpedToPresent ? (0, i.jsx)(F.DR, {
+    h = et.loadingMore && et.jumpedToPresent ? (0, i.jsx)(V.DR, {
       className: ep
-    }) : null != e ? (0, i.jsx)(F.DR, {
-      type: F.A7.REPLY,
+    }) : null != e ? (0, i.jsx)(V.DR, {
+      type: V.A7.REPLY,
       onClick: () => {
         o.Z.jumpToMessage({
           channelId: U.id,
@@ -372,7 +372,7 @@ function et(e) {
         })
       },
       className: ep
-    }) : (0, i.jsx)(F.DR, {
+    }) : (0, i.jsx)(V.DR, {
       onClick: () => (function(e) {
         o.Z.jumpToPresent(e.id, Y.AQB);
         let t = T.Z.getChannelId();

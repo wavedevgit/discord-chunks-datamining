@@ -78,8 +78,8 @@ function I(e) {
       layout: B,
       idle: H
     } = e,
-    V = h.Z.getVideoComponent(),
-    F = p.default.getId(),
+    F = h.Z.getVideoComponent(),
+    V = p.default.getId(),
     [G, z] = r.useState(null),
     W = (0, c.Z)(G),
     [q, K] = r.useState(true),
@@ -162,7 +162,7 @@ function I(e) {
     e_ = r.useCallback(e => {
       z(e), K(false)
     }, []),
-    ex = et ? [] : (0, y.n3)(T, R, F),
+    ex = et ? [] : (0, y.n3)(T, R, V),
     {
       visibleParticipants: ej,
       participantTileWidth: eO
@@ -201,7 +201,7 @@ function I(e) {
                   noBorder: eu >= D || ec >= U,
                   channel: M,
                   className: x.focusedVideo,
-                  videoComponent: V,
+                  videoComponent: F,
                   width: D,
                   participant: t,
                   onClick: l,

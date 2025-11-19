@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 883181, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.r(module.exports = {
   content: "content__777cc",
   staticSize: "staticSize__777cc",

@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 175553, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -19,10 +20,10 @@ function c(e, t) {
     {
       trackView: u,
       trackClick: h
-    } = (0, o.R)(s.n0.ActivityUserJoin, {
-      notif_type: s.n0.ActivityUserJoin,
+    } = (0, s.R)(l.n0.ActivityUserJoin, {
+      notif_type: l.n0.ActivityUserJoin,
       notif_user_id: e.id,
-      activity_type: l.mFx.JOIN,
+      activity_type: o.mFx.JOIN,
       activity_name: t.name
     });
   return {

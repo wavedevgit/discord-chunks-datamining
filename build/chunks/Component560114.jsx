@@ -386,7 +386,7 @@ class ed extends(i = Chunk473749.PureComponent) {
           controls: u,
           listProps: d
         } = this.getBodyContent();
-        return (0, Chunk54381.jsx)(Chunk775086.u, {
+        return (0, Chunk54381.jsx)(Chunk775086.Modal, {
           transitionState: require,
           onClose: i,
           title: Chunk120356,

@@ -21,9 +21,10 @@ require.d(exports, {
   g_: () => _,
   hs: () => E,
   j4: () => C,
-  ks: () => F,
+  ks: () => H,
   lX: () => b,
   m_: () => p,
+  rh: () => B,
   tj: () => g,
   uw: () => A,
   wN: () => U,
@@ -44,7 +45,7 @@ function d(e, t) {
   try {
     let n = c.uM[t.premiumType];
     if (null == n) return u.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), false;
-    let r = B[n];
+    let r = Z[n];
     if (null == r) return u.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), false;
     return r.skuFeatures.includes(e)
   } catch (e) {
@@ -86,13 +87,15 @@ let j = new f(Chunk848246.q.INCREASED_GUILD_LIMIT),
   k = new f(Chunk848246.q.INCREASED_MESSAGE_LENGTH),
   U = new f("increasedVideoUploadQuality"),
   G = new f("uploadLargeFiles"),
-  B = Object.freeze({
+  B = new f("warpPrivateBrowsing"),
+  Z = Object.freeze({
     [Chunk474936.Si.TIER_0]: new Chunk575691.Z(Chunk474936.Si.TIER_0, [_, p, h, v, M, U, G, S]),
     [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [_, p, b, y, v, C, R, w, U, G, S]),
-    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [_, p, h, m, g, b, y, O, v, I, A, C, N, R, P, w, L, x, M, j, k, U, G, S, T, D, E])
+    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [_, p, h, m, g, b, y, O, v, I, A, C, N, R, P, w, L, x, M, j, k, U, G, S, T, D, E, B])
   }),
-  Z = [C, N];
+  F = [C, N, B],
+  V = [B];
 
-function F(e, t) {
-  return !((0, s.U)("canUserUse", t) || null != t && t.isPremiumWithFractionalPremiumOnly() && Z.includes(e)) && e.getFeatureValue(t)
+function H(e, t, n) {
+  return !((0, s.U)("canUserUse", t) || null != t && t.isPremiumWithFractionalPremiumOnly() && F.includes(e) || n && V.includes(e)) && e.getFeatureValue(t)
 }

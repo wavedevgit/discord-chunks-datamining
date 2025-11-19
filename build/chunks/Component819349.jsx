@@ -1,12 +1,13 @@
 /** Chunk was on 71264 **/
 /** chunk id: 819349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => _
+  S: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk636606 = require("./636606.js"),
   Chunk442837 = require("./442837.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
@@ -21,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk214669 = require("./214669.js"),
   Chunk867721 = require("./867721.js");
 
-function v(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,131 +41,158 @@ function v(e) {
   return e
 }
 
-function _(e) {
+function x(e) {
   let {
     channel: t,
     onClose: n
-  } = e, l = r.useRef(null), [_, x] = r.useState(false), j = r.useRef(null), O = r.useRef(null), [E, S] = r.useState(0), P = (0, o.e7)([h.Z], () => h.Z.can(g.Plq.CREATE_INSTANT_INVITE, t), [t]), [I, Z] = r.useState(null), T = r.useRef(null), {
-    isHoveringOrFocusing: N
-  } = (0, m.Tu)(null == I ? T : l), [A, w] = r.useState(false), M = N || A, R = r.useCallback(() => {
-    x(false), null == n || n()
-  }, [n]), L = r.useCallback(() => (null != j.current && clearTimeout(j.current), j.current = setTimeout(R, 1e4), S(e => e + 1), () => {
-    null != j.current && clearTimeout(j.current)
-  }), [R]), k = r.useCallback(() => (null != O.current && clearTimeout(O.current), O.current = setTimeout(() => {
-    x(false)
-  }, 150), () => {
+  } = e, l = r.useRef(null), [x, j] = r.useState(false), O = r.useRef(null), E = r.useRef(null), [S, P] = r.useState(0), I = (0, s.e7)([f.Z], () => f.Z.can(b.Plq.CREATE_INSTANT_INVITE, t), [t]), [Z, T] = r.useState(null), [N, A] = r.useState(false), w = r.useRef(null), {
+    isHoveringOrFocusing: M
+  } = (0, g.Tu)(null == Z ? w : l), [R, L] = r.useState(false), k = M || R, D = r.useCallback(() => {
+    j(false), null == n || n()
+  }, [n]), U = r.useCallback(() => (null != O.current && clearTimeout(O.current), O.current = setTimeout(D, 1e4), P(e => e + 1), () => {
     null != O.current && clearTimeout(O.current)
+  }), [D]), B = r.useCallback(() => (null != E.current && clearTimeout(E.current), E.current = setTimeout(() => {
+    j(false)
+  }, 150), () => {
+    null != E.current && clearTimeout(E.current)
   }), []);
-  (0, d.ZP)(L), r.useEffect(() => {
-    if (!M) {
-      L(), k();
+  (0, p.ZP)(U), r.useEffect(() => {
+    if (!k) {
+      U(), B();
       return
     }
-    null != j.current && clearTimeout(j.current), null != O.current && clearTimeout(O.current), x(true)
-  }, [M, L, k]), r.useEffect(() => {
+    null != O.current && clearTimeout(O.current), null != E.current && clearTimeout(E.current), j(true)
+  }, [k, U, B]), r.useEffect(() => {
     !async function() {
       var e, n, i;
-      let r = null != (e = p.Z.getInvite(t.id, {})) ? e : null;
+      let r = null != (e = h.Z.getInvite(t.id, {})) ? e : null;
       if (null === r) {
-        if (!P) return;
+        if (!I) return;
         try {
-          await u.ZP.createInvite(t.id, {}, "VoiceInviteSuggestionsButton")
+          await d.ZP.createInvite(t.id, {}, "VoiceInviteSuggestionsButton")
         } catch (e) {
           return
         }
-        r = null != (n = p.Z.getInvite(t.id, {})) ? n : null
+        r = null != (n = h.Z.getInvite(t.id, {})) ? n : null
       }
-      Z(null != (i = null == r ? true : r.code) ? i : null)
+      T(null != (i = null == r ? true : r.code) ? i : null)
     }()
-  }, [P, t.id]);
-  let D = r.useCallback(() => {
-      x(true)
+  }, [I, t.id]);
+  let H = r.useCallback(() => {
+      j(true)
     }, []),
-    U = r.useCallback(() => {
-      x(false), w(false)
+    F = r.useCallback(() => {
+      j(false), L(false)
+    }, []),
+    V = (0, u.q_F)({
+      from: {
+        height: "".concat(0, "px")
+      },
+      to: {
+        height: "".concat(32, "px")
+      },
+      reverse: N,
+      config: {
+        mass: 1,
+        stiffness: 100,
+        damping: 15
+      },
+      onRest: () => {
+        N && D()
+      }
+    }),
+    G = r.useCallback(() => {
+      A(true)
     }, []);
-  return null == I ? null : (0, i.jsx)(c.yRy, {
+  return null == Z ? null : (0, i.jsx)(u.yRy, {
     targetElementRef: l,
-    shouldShow: _,
+    shouldShow: x,
     position: "right",
     align: "top",
     spacing: 8,
     popoutKey: "voice-invite-suggestions-button",
-    renderPopout: e => (0, i.jsx)(f.B, v({
+    renderPopout: e => (0, i.jsx)(m.B, _({
       channel: t,
-      inviteKey: I,
-      onHoverOrFocus: w
+      inviteKey: Z,
+      onHoverOrFocus: L
     }, e)),
-    onRequestOpen: D,
-    onRequestClose: U,
+    onRequestOpen: H,
+    onRequestClose: F,
     children: e => {
       var t, n;
-      return (0, i.jsx)(c.P3F, (t = v({
-        innerRef: l,
-        className: a()(y.clickable, C.voiceUser, C.userSmall, C.clickable),
-        "aria-label": b.intl.string(b.t.F3qiJr)
-      }, e), n = n = {
-        children: (0, i.jsxs)("div", {
-          className: a()(y.content, C.content),
-          children: [(0, i.jsxs)("div", {
-            className: y.leading,
-            style: {
-              "--custom-voice-invite-suggestions-timer-size": 24
-            },
-            children: [(0, i.jsxs)("svg", {
-              className: a()(y.timer, {
-                [y.paused]: M
-              }),
-              viewBox: "0 0 ".concat(24, " ").concat(24),
+      return (0, i.jsx)(o.animated.div, {
+        className: C.animation,
+        style: V,
+        children: (0, i.jsx)(u.P3F, (t = _({
+          innerRef: l,
+          className: a()({
+            [C.clickable]: !N
+          }, v.voiceUser, v.userSmall, v.clickable),
+          "aria-disabled": N,
+          "aria-label": y.intl.string(y.t.F3qiJr)
+        }, e), n = n = {
+          children: (0, i.jsxs)("div", {
+            className: a()(C.content, v.content),
+            children: [(0, i.jsxs)("div", {
+              className: C.leading,
               style: {
-                "--custom-voice-invite-suggestions-timer-duration": 1e4
+                "--custom-voice-invite-suggestions-timer-size": 24
               },
-              children: [(0, i.jsx)("circle", {
-                className: y.progress
-              }), (0, i.jsx)("circle", {
-                className: y.ring
+              children: [(0, i.jsxs)("svg", {
+                className: a()(C.timer, {
+                  [C.paused]: k
+                }),
+                viewBox: "0 0 ".concat(24, " ").concat(24),
+                style: {
+                  "--custom-voice-invite-suggestions-timer-duration": 1e4
+                },
+                children: [(0, i.jsx)("circle", {
+                  className: C.progress
+                }), (0, i.jsx)("circle", {
+                  className: C.ring
+                })]
+              }, "voice-invite-suggestions-timer-".concat(S)), (0, i.jsx)(u.oLu, {
+                size: "custom",
+                width: 14,
+                height: 14,
+                color: "currentColor",
+                className: a()(C.userIcon, C.icon)
               })]
-            }, "voice-invite-suggestions-timer-".concat(E)), (0, i.jsx)(c.oLu, {
-              size: "custom",
-              width: 14,
-              height: 14,
-              color: "currentColor",
-              className: a()(y.userIcon, y.icon)
-            })]
-          }), (0, i.jsx)(s.u, {
-            text: b.intl.string(b.t["EE+P0H"]),
-            overflowOnly: true,
-            children: (0, i.jsx)(c.Text, {
-              variant: "text-sm/medium",
-              className: y.label,
-              lineClamp: 1,
-              children: b.intl.string(b.t["EE+P0H"])
-            })
-          }), N ? (0, i.jsx)(c.P3F, {
-            className: y.close,
-            onClick: R,
-            "aria-label": b.intl.string(b.t.cpT0Cq),
-            children: (0, i.jsx)(c.Dio, {
+            }), (0, i.jsx)(c.u, {
+              text: y.intl.string(y.t["EE+P0H"]),
+              overflowOnly: true,
+              children: (0, i.jsx)(u.Text, {
+                variant: "text-sm/medium",
+                className: C.label,
+                lineClamp: 1,
+                children: y.intl.string(y.t["EE+P0H"])
+              })
+            }), M ? (0, i.jsx)(u.P3F, {
+              className: C.close,
+              onClick: G,
+              "aria-label": y.intl.string(y.t.cpT0Cq),
+              children: (0, i.jsx)(u.Dio, {
+                size: "xs",
+                color: "currentColor",
+                className: C.icon
+              })
+            }) : (0, i.jsx)(u.Fbu, {
               size: "xs",
               color: "currentColor",
-              className: y.icon
-            })
-          }) : (0, i.jsx)(c.Fbu, {
-            size: "xs",
-            color: "currentColor",
-            className: y.icon
-          })]
-        })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
-        }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), t))
+              className: C.icon
+            })]
+          })
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var i = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, i)
+          }
+          return n
+        })(Object(n)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+        }), t))
+      })
     }
   })
 }

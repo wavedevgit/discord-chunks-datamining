@@ -12,10 +12,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk29594 = require("./29594.jsx"),
   Chunk330569 = require("./330569.js");
 let u = () => {
-  let [e, t] = Chunk473749.useState(10), [n, u] = Chunk473749.useState(12), d = Chunk473749.useMemo(() => [...Array(module)].map((e, t) => (0, r.jsx)(o.P3F, {
+  let [e, t] = Chunk473749.useState(15), [n, u] = Chunk473749.useState(12), d = Chunk473749.useMemo(() => [...Array(module)].map((e, t) => (0, r.jsx)(o.P3F, {
     className: c.child,
-    onClick: () => console.log(t + 1),
-    children: t + 1
+    onClick: () => console.log(t),
+    children: t
   }, t)), [module]);
   return (0, Chunk54381.jsxs)("div", {
     children: [(0, Chunk54381.jsx)(Chunk624968.Z, {

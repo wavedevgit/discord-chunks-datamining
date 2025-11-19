@@ -26,16 +26,16 @@ function b() {
   let C = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     S = Chunk695346.L1.useSetting(),
     E = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
-    O = S.backgroundGradientPresetId,
+    N = S.backgroundGradientPresetId,
     T = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
-    N = (0, Chunk884697.Ad)(T),
+    O = (0, Chunk884697.Ad)(T),
     P = (0, Chunk884697.jT)(T),
     I = null == C || null == (e = C.avatarDecoration) ? true : module.skuId,
     w = null == C || null == (n = C.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-    k = null != I && null != (v = N.find(e => e.skuId === I)) ? v : null,
-    R = null != w && null != (j = P.find(e => e.skuId === w)) ? j : null,
-    A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == k ? true : k.skuId)),
-    Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
+    k = null != I && null != (v = O.find(e => e.skuId === I)) ? v : null,
+    A = null != w && null != (j = P.find(e => e.skuId === w)) ? j : null,
+    R = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == k ? true : k.skuId)),
+    Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == A ? true : A.skuId)),
     D = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
     L = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
     M = Chunk695346.YC.useSetting();
@@ -73,10 +73,10 @@ function b() {
         children: ["Theme: ", E]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Client Theme ID:", " ", null != O ? null == (b = Chunk469115.qt[O]) ? true : b.getName() : "None"]
+        children: ["Client Theme ID:", " ", null != N ? null == (b = Chunk469115.qt[N]) ? true : b.getName() : "None"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Avatar Decoration: ", null != (_ = null == A ? true : A.name) ? _ : "None"]
+        children: ["Avatar Decoration: ", null != (_ = null == R ? true : R.name) ? _ : "None"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Nameplate: ", null != (y = null == Z ? true : Z.name) ? y : "None"]
@@ -90,13 +90,13 @@ function b() {
         variant: "text-md/normal",
         children: ["UI Density: ", M, " (", function(e) {
           switch (e) {
-            case r.Pi.COMPACT:
+            case i.Pi.COMPACT:
               return "Compact";
-            case r.Pi.COZY:
+            case i.Pi.COZY:
               return "Cozy";
-            case r.Pi.DEFAULT:
+            case i.Pi.DEFAULT:
               return "Default";
-            case r.Pi.RESPONSIVE:
+            case i.Pi.RESPONSIVE:
               return "Responsive";
             default:
               return "Unknown"

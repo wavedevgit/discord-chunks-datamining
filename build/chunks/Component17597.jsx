@@ -1,7 +1,7 @@
 /** Chunk was on 65347 **/
 /** chunk id: 17597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => N
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,15 +47,15 @@ function E(e) {
     }
   }) : null
 }
-let O = function(e) {
+let N = function(e) {
   let {
     transitionState: t,
     entryPoint: n,
     onClose: u,
     onComplete: j,
-    dismissable: O,
+    dismissable: N,
     classificationId: T
-  } = e, [N, P] = l.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = l.useRef(N), [w, k] = (0, c.US)([N], true, true), R = l.useMemo(() => (0, r.Z)(), []), A = l.useRef(false), Z = (0, m.GE)();
+  } = e, [O, P] = l.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = l.useRef(O), [w, k] = (0, c.US)([O], true, true), A = l.useMemo(() => (0, i.Z)(), []), R = l.useRef(false), Z = (0, m.GE)();
   l.useEffect(() => {
     I.current = w
   }, [w]);
@@ -72,19 +72,19 @@ let O = function(e) {
     classificationId: T
   });
   return l.useLayoutEffect(() => () => {
-    if (A.current) return;
+    if (R.current) return;
     let e = I.current;
-    null != e && (A.current = true, p.Z.maybeOpenAgeVerificationUserFeedback({
+    null != e && (R.current = true, p.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
   }, []), l.useEffect(() => {
-    (0, g.lA)(R, g.d_.EXPRESSIVE_PRIMARY, n)
-  }, [R, n]), (0, a.jsx)(i.ExpressiveModal, {
+    (0, g.lA)(A, g.d_.EXPRESSIVE_PRIMARY, n)
+  }, [A, n]), (0, a.jsx)(r.ExpressiveModal, {
     transitionState: t,
     onClose: u,
     gradientColor: "blue",
-    dismissable: O,
+    dismissable: N,
     graphic: {
       type: "image",
       src: S.Z
@@ -92,11 +92,11 @@ let O = function(e) {
     title: y.intl.string(y.t.JHNunj),
     subtitle: Z ? y.intl.string(_.default["1/6wta"]) : y.intl.format(_.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
-        x.Z.openUrl(h.Z.getArticleURL(v.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, g.x3)(R, g.d_.EXPRESSIVE_PRIMARY, g.sU.LEARN_MORE)
+        x.Z.openUrl(h.Z.getArticleURL(v.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, g.x3)(A, g.d_.EXPRESSIVE_PRIMARY, g.sU.LEARN_MORE)
       }
     }),
     actionBarInput: (0, a.jsx)(E, {
-      modalSessionId: R,
+      modalSessionId: A,
       entryPoint: n
     }),
     children: (0, a.jsxs)(o.Kqy, {
@@ -152,7 +152,7 @@ let O = function(e) {
             title: t,
             description: n,
             buttonDisabled: D,
-            onButtonPress: () => l(R)
+            onButtonPress: () => l(A)
           }, t)
         })
       })]

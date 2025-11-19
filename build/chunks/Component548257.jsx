@@ -51,7 +51,9 @@ let h = {
       ref: C,
       className: m.heroBlock,
       children: [(0, r.jsx)("div", {
-        className: m.banner,
+        className: i()(m.banner, {
+          [m.responsive]: S
+        }),
         style: null != y ? {
           background: y
         } : true,

@@ -10,6 +10,7 @@ module.exports = {
   icon: "icon__1bad5",
   leading: "leading__1bad5",
   name: "name__1bad5",
+  dots: "dots__1bad5",
   status: "status__1bad5",
-  dots: "dots__1bad5"
+  userIconContainer: "userIconContainer__1bad5"
 }

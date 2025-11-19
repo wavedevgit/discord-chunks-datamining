@@ -30,25 +30,25 @@ function y(e) {
     onClose: y
   } = e, [C, S] = l.useState(false), {
     trackUserProfileEditAction: E
-  } = (0, u.KZ)(), O = (0, i.e7)([b.default], () => b.default.getId()), {
+  } = (0, u.KZ)(), N = (0, r.e7)([b.default], () => b.default.getId()), {
     config: T,
-    application: N
+    application: O
   } = (0, h.G)(), {
     fetched: P,
     hasAlreadyLinked: I,
     canStartAuthorization: w,
     startAuthorization: k
-  } = (0, c.F)(N), R = (0, x.ZP)(O), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == N ? true : N.id));
-  return null != T && null != T.edit_profile_upsell_image && null != N && P ? (0, a.jsx)(d.ZP, {
+  } = (0, c.F)(O), A = (0, x.ZP)(N), R = null == A || null == (t = A.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == O ? true : O.id));
+  return null != T && null != T.edit_profile_upsell_image && null != O && P ? (0, a.jsx)(d.ZP, {
     bypassAutoDismiss: true,
-    contentTypes: I ? A ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : w ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+    contentTypes: I ? R ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : w ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,
         markAsDismissed: l
       } = e;
       if (null == t) return null;
-      let i = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
+      let r = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
       return (0, a.jsx)(o.J2, {
         targetElementRef: n,
         position: "right",
@@ -58,26 +58,26 @@ function y(e) {
           src: T.edit_profile_upsell_image
         },
         title: _.intl.format(_.t.TXDztH, {
-          applicationName: N.name
+          applicationName: O.name
         }),
-        body: i ? _.intl.string(_.t["63Kso0"]) : _.intl.string(_.t.HwXoeC),
+        body: r ? _.intl.string(_.t["63Kso0"]) : _.intl.string(_.t.HwXoeC),
         onRequestClose: () => {
           l(v.L.USER_DISMISS)
         },
-        actions: [i ? {
+        actions: [r ? {
           text: _.intl.string(_.t.VSLDly),
           onClick: () => {
             S(true), (0, g.openUserProfileModal)({
-              userId: O,
+              userId: N,
               section: j.oh.WIDGETS
             }).then(() => {
-              l(v.L.TAKE_ACTION), y(), (0, p.qH)(r.l.APPLICATION, new m.q({
-                applicationId: N.id,
-                type: r.l.APPLICATION
+              l(v.L.TAKE_ACTION), y(), (0, p.qH)(i.l.APPLICATION, new m.q({
+                applicationId: O.id,
+                type: i.l.APPLICATION
               })), E({
                 action: "WIDGET_ADDED",
-                widgetEdited: r.l.APPLICATION,
-                applicationId: N.id
+                widgetEdited: i.l.APPLICATION,
+                applicationId: O.id
               }), (0, f.L$)(j.qb.WIDGET_ADDED)
             }).finally(() => S(false))
           },
@@ -86,7 +86,7 @@ function y(e) {
           text: _.intl.string(_.t["DSJi3+"]),
           onClick: () => {
             k(), S(true), (0, g.openUserProfileModal)({
-              userId: O,
+              userId: N,
               section: j.oh.WIDGETS
             }).then(() => {
               l(v.L.TAKE_ACTION), y()

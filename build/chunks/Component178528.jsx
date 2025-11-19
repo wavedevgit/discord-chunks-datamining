@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 178528, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => z
 }), require("./388685.js");
@@ -136,23 +137,23 @@ class M extends Chunk473749.PureComponent {
       {
         onDragStart: r
       } = require,
-      o = function(e, t) {
+      s = function(e, t) {
         if (null == e) return {};
         var n, i, r = function(e, t) {
           if (null == e) return {};
           var n, i, r = {},
-            o = Object.keys(e);
-          for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+            s = Object.keys(e);
+          for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
           return r
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var o = Object.getOwnPropertySymbols(e);
-          for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+          var s = Object.getOwnPropertySymbols(e);
+          for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
         }
         return r
       }(require, ["onDragStart"]),
       {
-        guild: l
+        guild: o
       } = Chunk636606,
       {
         controller: a,
@@ -178,7 +179,7 @@ class M extends Chunk473749.PureComponent {
           renderPopout: this.renderSettings,
           children: e => (0, i.jsx)(P.ZP.Icon, L({
             ref: this.settingsIconRef,
-            icon: s.ewm,
+            icon: l.ewm,
             label: k.intl.string(k.t["3D5yo/"])
           }, e))
         })
@@ -212,7 +213,7 @@ class M extends Chunk473749.PureComponent {
   }
   constructor(...e) {
     super(...e), A(this, "settingsIconRef", r.createRef()), A(this, "state", {
-      controller: new o.Controller({
+      controller: new s.Controller({
         value: 1,
         immediate: true
       }),
@@ -232,25 +233,25 @@ function z(e) {
   var t;
   let {
     guildId: n
-  } = e, r = (0, l.e7)([E.Z], () => E.Z.getGuild(n)), o = (0, l.e7)([v.ZP], () => v.ZP.getChannels(n)), s = (0, l.e7)([_.Z], () => _.Z.getCategories(n)), {
+  } = e, r = (0, o.e7)([E.Z], () => E.Z.getGuild(n)), s = (0, o.e7)([_.ZP], () => _.ZP.getChannels(n)), l = (0, o.e7)([v.Z], () => v.Z.getCategories(n)), {
     mutedChannels: d,
     collapseMuted: u
-  } = (0, l.cj)([C.ZP], () => ({
+  } = (0, o.cj)([C.ZP], () => ({
     mutedChannels: C.ZP.getMutedChannels(n),
     collapseMuted: C.ZP.isGuildCollapsed(n)
-  })), h = (0, l.e7)([I.ZP], () => I.ZP.getVoiceStates(n)), p = (0, l.e7)([y.Z], () => y.Z.getCollapsed()), {
+  })), h = (0, o.e7)([I.ZP], () => I.ZP.getVoiceStates(n)), p = (0, o.e7)([y.Z], () => y.Z.getCollapsed()), {
     scrollTo: f
-  } = (0, l.e7)([b.Z], () => b.Z.getGuildDimensions(n)), P = (0, g.Z)(e => {
+  } = (0, o.e7)([b.Z], () => b.Z.getGuildDimensions(n)), P = (0, g.Z)(e => {
     let {
       channelId: t
     } = e;
     return t
-  }), w = (0, l.e7)([x.Z], () => x.Z.getVoiceChannelId()), T = (0, l.e7)([S.Z], () => S.Z.getGuildVersion(n)), D = (0, l.e7)([m.Z], () => m.Z.version), k = (0, l.e7)([O.default], () => O.default.getGuildChangeSentinel(n)), R = (0, a.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), L = null != (t = null == r ? true : r.features.has(N.GuildFeatures.COMMUNITY)) && t, z = (0, l.e7)([j.Z], () => j.Z.getChannelId()), V = (0, l.e7)([Z.Z], () => Z.Z.desyncedVoiceStatesCount);
+  }), w = (0, o.e7)([j.Z], () => j.Z.getVoiceChannelId()), T = (0, o.e7)([x.Z], () => x.Z.getGuildVersion(n)), D = (0, o.e7)([m.Z], () => m.Z.version), k = (0, o.e7)([O.default], () => O.default.getGuildChangeSentinel(n)), R = (0, a.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), L = null != (t = null == r ? true : r.features.has(N.GuildFeatures.COMMUNITY)) && t, z = (0, o.e7)([Z.Z], () => Z.Z.getChannelId()), V = (0, o.e7)([S.Z], () => S.Z.desyncedVoiceStatesCount);
   return (0, i.jsx)(M, {
     guildId: n,
     guild: r,
-    channels: o,
-    categories: s,
+    channels: s,
+    categories: l,
     mutedChannels: d,
     scrollToChannel: f,
     selectedChannelId: P,
