@@ -77,10 +77,10 @@ let S = e => {
       onVariantEnter: c,
       onVariantExit: u,
       isCollapsed: d
-    } = e, f = (0, m.o)(i), g = null != (n = null == (t = i.variants) ? true : t.length) ? n : 0, h = l.useCallback((e, t) => {
+    } = e, f = (0, m.o)(i), p = null != (n = null == (t = i.variants) ? true : t.length) ? n : 0, h = l.useCallback((e, t) => {
       e.stopPropagation(), (0, m.$)(i, t)
-    }, [i]), C = (0, p.Z)("shop-variants-group-".concat(i.storeListingId), o.hy.HORIZONTAL);
-    return 0 === g ? null : (0, r.jsx)(s.bG, {
+    }, [i]), C = (0, g.Z)("shop-variants-group-".concat(i.storeListingId), o.hy.HORIZONTAL);
+    return 0 === p ? null : (0, r.jsx)(s.bG, {
       navigator: C,
       children: (0, r.jsx)(s.SJ, {
         children: e => {
@@ -100,7 +100,7 @@ let S = e => {
               isSelected: t === f,
               onVariantEnter: () => c(t),
               onVariantExit: u,
-              zIndex: g - Math.abs(f - t),
+              zIndex: p - Math.abs(f - t),
               onClick: e => h(e, t)
             }, e.variantValue))
           }))
@@ -117,8 +117,8 @@ let S = e => {
       onVariantExit: o,
       zIndex: c
     } = e, u = (0, s.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(t.variantLabel)), {
-      onFocus: p
-    } = u, g = O(u, ["onFocus"]), {
+      onFocus: g
+    } = u, p = O(u, ["onFocus"]), {
       isPurchased: m
     } = (0, h.L)(t);
     return (0, r.jsx)(f.u, {
@@ -127,7 +127,7 @@ let S = e => {
       children: (0, r.jsx)(d.P3F, E(x({
         "aria-label": t.variantLabel,
         onClick: e => {
-          l(e), p()
+          l(e), g()
         },
         onMouseEnter: i,
         onMouseLeave: o,
@@ -140,7 +140,7 @@ let S = e => {
           backgroundColor: t.variantValue,
           zIndex: c
         }
-      }, g), {
+      }, p), {
         children: m && (0, r.jsx)(j, {
           variant: t
         })
@@ -152,7 +152,7 @@ let S = e => {
       variant: t
     } = e, n = l.useMemo(() => {
       let e = (0, u.FX)(t.variantValue) && .3 > (0, u.Bd)((0, u._i)(t.variantValue));
-      return (0, g.Lq)(e ? _.Ilk.BLACK_500 : _.Ilk.WHITE_500)
+      return (0, p.Lq)(e ? _.Ilk.BLACK_500 : _.Ilk.WHITE_500)
     }, [t.variantValue]);
     return (0, r.jsx)(d.kSu, {
       className: v.productVariantCheckmark,

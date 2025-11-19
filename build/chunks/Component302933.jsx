@@ -2,7 +2,7 @@
 /** chunk id: 302933, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  J: () => p
+  J: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk168020 = require("./168020.jsx"),
   Chunk779485 = require("./779485.js");
-let p = Chunk473749.memo(function(e) {
+let g = Chunk473749.memo(function(e) {
   let {
     countdownTimerBlock: t,
     isVisible: n

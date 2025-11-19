@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   K: () => f,
-  Z: () => p
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -30,7 +30,7 @@ let f = () => (0, Chunk54381.jsx)("div", {
       })]
     })
   }),
-  p = () => {
+  g = () => {
     let e = Chunk128922.Z.useConfig({
       location: "ShopSkeleton"
     }).showCardsV2;

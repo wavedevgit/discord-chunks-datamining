@@ -55,7 +55,7 @@ function I(e) {
   l.useEffect(() => {
     H()
   }, [M, H]);
-  let F = (0, g.a)(),
+  let F = (0, p.a)(),
     W = l.useMemo(() => F(D), [F, D]);
   l.useEffect(() => {
     n || (0, C.n)({
@@ -96,7 +96,7 @@ function I(e) {
         page_type: "catalog"
       }), z((e - 1) * G)
     }, [T, G, z]),
-    X = p.Z.useConfig({
+    X = g.Z.useConfig({
       location: "CollectiblesFilterableShop"
     }).showCardsV2;
   return (0, r.jsxs)(x.zp.Provider, {

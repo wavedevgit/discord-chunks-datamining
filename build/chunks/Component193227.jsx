@@ -36,7 +36,7 @@ function k(e) {
     category: l
   } = e, i = (0, o.e7)([u.default], () => u.default.getCurrentUser()), a = (0, S.St)(t), s = f.Z.useConfig({
     location: "Products"
-  }).showCardsV2, p = (0, d.sp)();
+  }).showCardsV2, g = (0, d.sp)();
   return null == i || 0 === t.length ? null : (0, r.jsxs)("div", {
     children: [null != n ? (0, r.jsx)(c.Text, {
       className: j.itemTypeTitle,
@@ -54,7 +54,7 @@ function k(e) {
         children: s ? (0, r.jsx)(v.Z, {
           skuId: e.skuId,
           skipLimitedTimeCheck: true,
-          onClickAnalytics: (0, x.wO)(e, y.AW.CATALOG, p)
+          onClickAnalytics: (0, x.wO)(e, y.AW.CATALOG, g)
         }, e.skuId) : (0, r.jsx)(b.Z, {
           category: l,
           product: e,
@@ -70,7 +70,7 @@ function k(e) {
 function I(e) {
   let {
     category: t
-  } = e, n = (0, m.l)(t.products), l = (0, g.a)()(n);
+  } = e, n = (0, m.l)(t.products), l = (0, p.a)()(n);
   return (0, r.jsx)(k, {
     products: l,
     category: t
@@ -101,7 +101,7 @@ function L(e) {
     setCategoryRef: i,
     currentPage: s,
     handlePageChange: o
-  } = e, u = (0, d.sp)(), f = (0, E.R)(), g = null != (t = null == u ? true : u.sessionId) ? t : "", {
+  } = e, u = (0, d.sp)(), f = (0, E.R)(), p = null != (t = null == u ? true : u.sessionId) ? t : "", {
     noCache: m,
     includeUnpublished: C
   } = (0, O.Z)(), b = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
@@ -115,7 +115,7 @@ function L(e) {
   }, [b, s]);
   l.useEffect(() => {
     (0, h.n)({
-      sessionId: g,
+      sessionId: p,
       checkpoint: h.a.SHOP_MOUNTED,
       tab: y.AW.CATALOG,
       unpublishedCategoriesShown: C,
@@ -123,14 +123,14 @@ function L(e) {
     })
   }, []), l.useEffect(() => {
     f || 0 === v.length || (0, h.n)({
-      sessionId: g,
+      sessionId: p,
       checkpoint: h.a.SHOP_RENDERED,
       tab: y.AW.CATALOG,
       unpublishedCategoriesShown: C,
       cacheDisabled: m
     })
-  }, [g, C, m, f, v.length]);
-  let x = (0, p.FF)("CollectiblesBrowse");
+  }, [p, C, m, f, v.length]);
+  let x = (0, g.FF)("CollectiblesBrowse");
   return f ? (0, r.jsx)(_.Z, {}) : (0, r.jsxs)("div", {
     className: a()(j.categories, {
       [j.categoriesNoFilter]: !x

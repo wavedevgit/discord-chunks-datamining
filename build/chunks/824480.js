@@ -14,7 +14,7 @@ function d() {
     e = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()),
     i = (0, Chunk473749.useMemo)(() => null != exports.applications ? exports.applications.applications.map(t => t.game.id) : [], [exports.applications]);
   (0, Chunk473749.useEffect)(() => {
-    module === Chunk5888.p.INIT && (0, Chunk515970.p)()
+    module === Chunk5888.p.INIT && (0, Chunk515970.pg)()
   }, [module]), (0, Chunk473749.useEffect)(() => {
     Chunk224706.Z.getDetectableGamesSupplemental(require)
   }, [require])

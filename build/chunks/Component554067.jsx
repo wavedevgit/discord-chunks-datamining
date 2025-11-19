@@ -34,7 +34,7 @@ function m(e) {
     _(m)
   }, [m]), (0, r.jsx)(a.P3F, {
     ignoreKeyPress: true,
-    className: g.searchBar,
+    className: p.searchBar,
     onClick: () => {
       n !== d.AW.CATALOG && t(d.AW.CATALOG), o.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == b ? true : b.sessionId,
@@ -64,7 +64,7 @@ function m(e) {
           page_type: n
         })
       },
-      placeholder: "en-US" === v ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])
+      placeholder: "en-US" === v ? g.intl.string(g.t.arz34K) : g.intl.string(g.t["hIt/Nm"])
     })
   })
 }

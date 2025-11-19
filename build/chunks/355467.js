@@ -559,7 +559,9 @@ async function et() {
         elements: a
       });
     if (Q(require.error) && s !== Chunk231338.He.PAYMENT_REQUEST) {
-      let e = await (0, Chunk947673.V)();
+      let {
+        client_secret: e
+      } = await (0, Chunk947673.V)();
       await J(a), n = await Chunk512722.confirmSetup({
         redirect: "if_required",
         clientSecret: module,
@@ -588,7 +590,7 @@ async function en(e, t, n, r) {
   });
   let i = null;
   try {
-    i = await (0, f.R)()
+    i = (await (0, f.z)()).client_secret
   } catch (e) {
     throw Y(e)
   }

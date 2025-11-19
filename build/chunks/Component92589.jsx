@@ -39,8 +39,8 @@ let f = e => {
   } = e, f = (0, l.O)(e => {
     null == n || n(e)
   }, .33, null != n), {
-    bannerUrl: p,
-    bannerAnimatedUrl: g
+    bannerUrl: g,
+    bannerAnimatedUrl: p
   } = (0, s._M)(t), m = null != t.textColor ? {
     color: t.textColor
   } : true, h = null != t.body && "" !== t.body, C = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
@@ -49,9 +49,9 @@ let f = e => {
     className: u.immersiveBannerBlock,
     children: [(0, r.jsx)("div", {
       className: u.banner,
-      children: null != p && (0, r.jsx)(o.Z, {
-        bannerStatic: p,
-        bannerAnimated: g
+      children: null != g && (0, r.jsx)(o.Z, {
+        bannerStatic: g,
+        bannerAnimated: p
       })
     }), (0, r.jsx)("div", {
       className: u.immersiveBannerContent,

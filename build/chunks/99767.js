@@ -2,7 +2,7 @@
 /** chunk id: 99767, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  B: () => p
+  B: () => g
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk828700 = require("./828700.js"),
@@ -19,32 +19,32 @@ let f = {
     [Chunk215023.AW.NAMEPLATES]: Chunk335818.G.NAMEPLATE,
     [Chunk215023.AW.BUNDLES]: Chunk335818.G.BUNDLE
   },
-  p = e => {
+  g = e => {
     let {
       enabled: t
     } = (0, a.WX)({
       location: "useShopViewTransition"
     }), n = (0, s.FF)("CollectiblesBrowse"), {
       setItemTypeFilter: i,
-      reset: p,
-      setCurrentTab: g
+      reset: g,
+      setCurrentTab: p
     } = (0, o.S)(), m = r.useMemo(() => e !== u.AW.ORBS || t ? (0, u.RE)(e) && n ? u.AW.CATALOG : e : u.AW.HOME, [e, t, n]), [h, C] = r.useState(m), [_, b] = r.useState(u.f7.VISIBLE);
     r.useEffect(() => {
-      g(h)
-    }, [h, g]), r.useEffect(() => {
-      if (C(m), e === u.AW.CATALOG) p();
+      p(h)
+    }, [h, p]), r.useEffect(() => {
+      if (C(m), e === u.AW.CATALOG) g();
       else if ((0, u.RE)(e)) {
         let t = f[e];
-        null != t ? i(t) : p()
+        null != t ? i(t) : g()
       }
-    }, [m, e, i, p]);
+    }, [m, e, i, g]);
     let {
       clearError: v
     } = (0, c.a)(), x = (0, l.k6)(), E = r.useCallback(async (e, t) => {
-      if (v(), e === u.AW.CATALOG) p();
+      if (v(), e === u.AW.CATALOG) g();
       else if ((0, u.RE)(e) && e !== h) {
         let t = f[e];
-        null != t ? i(t) : p()
+        null != t ? i(t) : g()
       }
       if (h !== e) {
         if (t) {
@@ -55,7 +55,7 @@ let f = {
           shallow: true
         }), b(u.f7.VISIBLE)
       }
-    }, [x, i, n, p, h, v]);
+    }, [x, i, n, g, h, v]);
     return {
       selectedTab: h,
       transitionState: _,

@@ -52,15 +52,15 @@ function v(e) {
     {
       searchError: T
     } = (0, f.a)();
-  return I && null != T ? (0, r.jsx)(C.Z, {}) : null != m ? (0, r.jsx)(g.Z, {
+  return I && null != T ? (0, r.jsx)(C.Z, {}) : null != m ? (0, r.jsx)(p.Z, {
     onRetry: u,
     errorMessage: m,
-    errorOrigin: g.i.SHOP_PAGE
+    errorOrigin: p.i.SHOP_PAGE
   }) : b.includes(t) ? (0, r.jsx)(h.Z, {
     handleTransition: k,
     tab: t,
     transitionState: o
-  }) : (0, r.jsx)(p.Z, {
+  }) : (0, r.jsx)(g.Z, {
     tab: t,
     sortedCategories: n,
     initialCategoryId: O,

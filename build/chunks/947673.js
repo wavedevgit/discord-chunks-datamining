@@ -2,8 +2,8 @@
 /** chunk id: 947673, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => c,
-  V: () => u
+  V: () => u,
+  z: () => c
 });
 var Chunk544891 = require("./544891.js"),
   Chunk351402 = require("./351402.js"),
@@ -32,29 +32,29 @@ function l(e) {
   return e
 }
 async function c() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
-    t = arguments.length > 1 ? arguments[1] : true,
-    n = null != exports ? {
-      regional_payment_element_source_types: exports.regionalPaymentMethods
-    } : true;
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
   return (await Chunk544891.tn.post(l({
     url: Chunk981631.ANM.BILLING_STRIPE_SETUP_INTENT_SECRET,
     oldFormErrors: true,
-    rejectWithError: true,
-    body: require
-  }, module))).body.client_secret
+    rejectWithError: true
+  }, module))).body
 }
-let u = function() {
+let u = async function() {
   var e;
   let t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : true,
     n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
-    r = null != exports ? exports : (0, Chunk720452.Q)({
+    s = null != exports ? exports : (0, Chunk720452.Q)({
       ipCountryCode: null != (e = Chunk351402.Z.ipCountryCode) ? module : "ALL",
       location: "create_setup_intent_for_payment_elements"
-    }).countryPaymentMethods;
-  return c(l({
+    }).countryPaymentMethods,
+    c = s.length > 0 ? {
+      regional_payment_source_types: s
+    } : {};
+  return (await Chunk544891.tn.post(l({
+    url: Chunk981631.ANM.BILLING_STRIPE_SETUP_INTENT_SECRET_FOR_PAYMENT_ELEMENTS,
+    oldFormErrors: true,
+    rejectWithError: true,
+    body: c,
     failImmediatelyWhenRateLimited: true
-  }, require), Chunk544891.length > 0 ? {
-    regionalPaymentMethods: Chunk544891
-  } : true)
+  }, require))).body
 }

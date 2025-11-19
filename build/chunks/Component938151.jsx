@@ -64,7 +64,7 @@ let u = [{
     value: 40
   }],
   d = () => {
-    let [e, t] = Chunk473749.useState(15), [n, d] = Chunk473749.useState(12), [f, _] = Chunk473749.useState("xl"), p = Chunk473749.useMemo(() => [...Array(module)].map((e, t) => (0, r.jsx)(o.P3F, {
+    let [e, t] = Chunk473749.useState(15), [n, d] = Chunk473749.useState(8), [f, _] = Chunk473749.useState("xl"), p = Chunk473749.useMemo(() => [...Array(module)].map((e, t) => (0, r.jsx)(o.P3F, {
       className: c.child,
       onClick: () => console.log(t),
       children: t
@@ -85,13 +85,10 @@ let u = [{
           label: "Children Count"
         })
       }), (0, Chunk54381.jsx)(Chunk29594.BZ, {
-        children: (0, Chunk54381.jsx)(Chunk481060.oil, {
-          type: "number",
-          min: 0,
-          value: require.toString(),
-          onChange: e => {
-            d(+e)
-          },
+        children: (0, Chunk54381.jsx)(Chunk481060.q4e, {
+          value: require,
+          options: u,
+          onChange: e => d(e),
           label: "Children Gap"
         })
       }), (0, Chunk54381.jsx)(Chunk29594.BZ, {

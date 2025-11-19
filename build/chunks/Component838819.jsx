@@ -57,7 +57,7 @@ let D = e => {
     let {
       tab: t = N.AW.HOME
     } = e;
-    (0, m.z)(g.f), (0, S.f)();
+    (0, m.z)(p.f), (0, S.f)();
     let n = (0, f.Z)((0, s.Z)()),
       i = (0, o.e7)([C.default], () => C.default.getCurrentUser());
     (0, h.p2)();
@@ -113,7 +113,7 @@ let D = e => {
     let {
       analyticsLocations: er
     } = (0, x.MV)(Q);
-    return (0, r.jsx)(p.Gt, {
+    return (0, r.jsx)(g.Gt, {
       value: er,
       children: (0, r.jsx)(_.k0, {
         newValue: {

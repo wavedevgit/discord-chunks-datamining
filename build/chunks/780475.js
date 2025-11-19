@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   EB: () => m,
-  MV: () => p,
-  q3: () => g
+  MV: () => g,
+  q3: () => p
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -16,7 +16,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
-let p = e => {
+let g = e => {
     let {
       analyticsSource: t,
       analyticsLocations: n
@@ -48,13 +48,13 @@ let p = e => {
       currentTabLocation: r
     }
   },
-  g = (e, t, n, l, i) => {
+  p = (e, t, n, l, i) => {
     let {
       analyticsLocations: a,
       analyticsSource: o,
       currentTabLocation: c,
       newestAnalyticsLocation: f
-    } = p(t);
+    } = g(t);
     r.useEffect(() => {
       if (l !== u.f7.VISIBLE || f !== c) return;
       let r = t === u.AW.CATALOG ? i : o;
@@ -70,7 +70,7 @@ let p = e => {
   m = (e, t) => {
     let {
       analyticsLocations: n
-    } = p(e);
+    } = g(e);
     r.useEffect(() => {
       null == t || o.ZP.canUseCollectibles(t) || s.default.track(d.rMx.PREMIUM_UPSELL_VIEWED, {
         type: f.cd.COLLECTIBLES_SHOP,

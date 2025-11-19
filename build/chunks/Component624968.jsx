@@ -19,7 +19,7 @@ let f = 200,
   h = e => {
     let {
       children: t,
-      gap: n = 12,
+      gap: n = 8,
       edgeFade: a = "xl"
     } = e, h = i.useRef(0), m = i.useRef(0), g = i.useRef(0), E = i.useRef(false), b = i.useRef(null), y = i.useMemo(() => i.Children.map(t, e => !i.isValidElement(e) || p(e) ? e : i.cloneElement(e, {
       tabIndex: false
@@ -112,8 +112,9 @@ let f = 200,
       ref: P,
       style: j,
       className: o()(d.container, {
-        [d.endLeft]: !I,
-        [d.endRight]: !S
+        [d.scrollLeft]: I,
+        [d.scrollRight]: S,
+        [d.scrollBoth]: I && S
       }),
       children: [O && (0, r.jsxs)("div", {
         className: d.actions,
@@ -130,12 +131,11 @@ let f = 200,
           disabled: !S,
           "aria-label": u.intl.string(u.t.H4hwjn)
         })]
-      }), (0, r.jsx)("div", {
+      }), (0, r.jsx)(l.Kqy, {
+        direction: "horizontal",
+        gap: n,
         ref: D,
         className: d.children,
-        style: {
-          gap: n
-        },
         tabIndex: 0,
         onFocus: e => {
           let t = D.current;
