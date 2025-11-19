@@ -2,18 +2,18 @@
 /** chunk id: 87432, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => function t(e, n, r) {
-    var s, a, o, c, E, S;
-    let T = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
+    var s, a, o, c, E, T;
+    let S = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
     if (!n.has(e.key)) return null;
-    if (!(0, i.Lk)(e)) return r.register(e, null == (c = T.panel) ? true : c.key, null == (E = T.category) ? true : E.key, null == (S = T.accordion) ? true : S.key), e;
-    let d = T;
-    e.type === i.Jq.SIDEBAR_ITEM && (d = u(l({}, T), {
+    if (!(0, i.Lk)(e)) return r.register(e, null == (c = S.panel) ? true : c.key, null == (E = S.category) ? true : E.key, null == (T = S.accordion) ? true : T.key), e;
+    let d = S;
+    e.type === i.Jq.SIDEBAR_ITEM && (d = u(l({}, S), {
       panel: e.layout[0]
-    })), e.type === i.Jq.PANEL && (d = u(l({}, T), {
+    })), e.type === i.Jq.PANEL && (d = u(l({}, S), {
       panel: e
-    })), e.type === i.Jq.CATEGORY && (d = u(l({}, T), {
+    })), e.type === i.Jq.CATEGORY && (d = u(l({}, S), {
       category: e
-    })), e.type === i.Jq.ACCORDION && (d = u(l({}, T), {
+    })), e.type === i.Jq.ACCORDION && (d = u(l({}, S), {
       accordion: e
     }));
     let I = e.layout.map(e => t(e, n, r, d)).filter(t => null != t);

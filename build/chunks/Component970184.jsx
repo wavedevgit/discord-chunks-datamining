@@ -101,8 +101,9 @@ let P = e => {
       return null != (n = (null == t ? true : t.guild_id) != null && null != r ? null == (e = m.ZP.getMember(null == t ? true : t.guild_id, r.id)) ? true : e.isPending : null) && n
     }),
     [, o] = (0, c.AB)(null == t ? true : t.guild_id),
-    s = (0, p.tc)(t);
-  return !!(!n || r || i || (null == t ? true : t.isLockedThread()) || (null == t ? true : t.isArchivedThread()) && !s) || !!o
+    s = (0, p.Xb)(t),
+    l = (0, p.tc)(t);
+  return !!(!n || r || i || (null == t ? true : t.isLockedThread()) && !s || (null == t ? true : t.isArchivedThread()) && !l) || !!o
 };
 
 function D(e, t) {

@@ -95,11 +95,11 @@ let F = (0, Chunk884697.IC)(90),
     } = (0, B.hr)($), ea = null != (t = null == ee ? true : ee.responsive) && t, es = null == ee ? true : ee.backgroundStyle, eo = null != ei, ec = (0, u.e7)([b.Z], () => b.Z.products), eu = l.useMemo(() => n ? [] : ec.size > 0 ? Q($.rankedSkuIds) : [], [n, Q, $.rankedSkuIds, ec]), ed = l.useMemo(() => !n && 0 !== $.rankedSkuIds.length && !(eu.length > 0) && $.rankedSkuIds.every(e => {
       var t;
       return (null == (t = b.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-    }), [n, $.rankedSkuIds, eu.length]), ef = z === w.AW.ORBS, eg = null != V && V.isOrbsExclusive, {
-      cardContainerRef: ep,
+    }), [n, $.rankedSkuIds, eu.length]), ef = z === w.AW.ORBS, ep = null != V && V.isOrbsExclusive, {
+      cardContainerRef: eg,
       totalCards: em
     } = (e => {
-      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, g.Z)(() => {
+      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, p.Z)(() => {
         (null == a ? true : a.current) != null && n(Math.max(1, Math.floor((a.current.offsetWidth + r) / (246 + r))))
       }), a = (0, f.y)(i, [r, e], {
         fireOnMount: true,
@@ -119,13 +119,13 @@ let F = (0, Chunk884697.IC)(90),
         pageType: H.ZY5.SHOP_ORBS_TAB,
         sectionType: H.jXE.ORBS_SHOP_HERO_BLOCK,
         ctaObject: H.qAy.CTA_TO_QUEST_HOME
-      }), (0, p.navigateToQuestHome)({
+      }), (0, g.navigateToQuestHome)({
         fromContent: o.j.ORBS_SHOP_HERO_CTA
       })) : (i({
         sourceButton: "shop latest category hero",
-        categorySkuId: !ev || eg ? $.categorySkuId : true,
+        categorySkuId: !ev || ep ? $.categorySkuId : true,
         isInternalShopDeeplink: true,
-        isOrbsExclusive: eg
+        isOrbsExclusive: ep
       }), C.default.track(H.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == X ? true : X.sessionId,
         sku_id: $.categorySkuId,
@@ -212,7 +212,7 @@ let F = (0, Chunk884697.IC)(90),
             [M.row]: z === w.AW.HOME,
             [M.feed]: z === w.AW.ORBS
           }),
-          ref: ep,
+          ref: eg,
           children: n || ed ? (0, r.jsx)(r.Fragment, {
             children: [...Array(null != em ? em : 4)].map((e, t) => ex ? (0, r.jsx)(L.Z, {}, t) : (0, r.jsx)(j.K, {}, t))
           }) : (0, r.jsx)(T.zp.Provider, {

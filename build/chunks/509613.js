@@ -4,7 +4,7 @@ require.d(exports, {
   $l: () => I,
   CB: () => d,
   Em: () => f,
-  IC: () => S,
+  IC: () => T,
   J9: () => Z,
   ON: () => L,
   Ql: () => function t(e, n) {
@@ -38,7 +38,7 @@ require.d(exports, {
   Uc: () => O,
   ax: () => _,
   eD: () => C,
-  k4: () => T,
+  k4: () => S,
   m7: () => o,
   qs: () => N,
   so: () => s,
@@ -107,11 +107,11 @@ function E(t, e) {
   return r(t, i.Jq.PANE, e)
 }
 
-function S(t, e) {
+function T(t, e) {
   return r(t, i.Jq.SPLIT, e)
 }
 
-function T(t, e) {
+function S(t, e) {
   return r(t, i.Jq.CATEGORY, e)
 }
 

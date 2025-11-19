@@ -32,7 +32,7 @@ let y = e => {
     isBlockLoading: t = false,
     heroBlock: n,
     tab: i
-  } = e, p = (0, d.sp)(), y = l.useMemo(() => f.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), j = (0, s.e7)([g.Z], () => g.Z.getPurchase(n.rewardSkuId)), {
+  } = e, g = (0, d.sp)(), y = l.useMemo(() => f.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), j = (0, s.e7)([p.Z], () => p.Z.getPurchase(n.rewardSkuId)), {
     cardContainerRef: k,
     totalCards: I
   } = (e => {
@@ -94,7 +94,7 @@ let y = e => {
           children: (0, r.jsx)(C.Z, {
             skuId: null == e ? true : e.skuId,
             prioritizedCurrency: i === O.AW.ORBS ? _.tA.ORBS : true,
-            onClickAnalytics: (0, _.wO)(e, i, p)
+            onClickAnalytics: (0, _.wO)(e, i, g)
           }, e.skuId)
         }, null == e ? true : e.skuId)
       })]

@@ -57,7 +57,7 @@ let h = {
         style: null != y ? {
           background: y
         } : true,
-        children: null != E && (0, r.jsx)(g.Z, {
+        children: null != E && (0, r.jsx)(p.Z, {
           bannerStatic: E,
           bannerAnimated: O,
           isResponsive: S
@@ -94,7 +94,7 @@ let h = {
               })]
             })
           })
-        }), (0, r.jsx)(p.Z, {
+        }), (0, r.jsx)(g.Z, {
           isBlockLoading: n,
           heroBlock: l,
           tab: s

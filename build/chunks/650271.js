@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 650271, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  z: () => T
+  z: () => S
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -16,15 +16,15 @@ let E = (0, Chunk509613.x1)(Chunk313789.n.APPEARANCE_PANE, {
     buildLayout: () => [],
     render: Chunk501348.Z
   }),
-  S = (0, Chunk509613.wf)(Chunk313789.n.APPEARANCE_PANEL, {
+  T = (0, Chunk509613.wf)(Chunk313789.n.APPEARANCE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
     buildLayout: () => [E]
   }),
-  T = (0, Chunk509613.m7)(Chunk313789.n.APPEARANCE_SIDEBAR_ITEM, {
+  S = (0, Chunk509613.m7)(Chunk313789.n.APPEARANCE_SIDEBAR_ITEM, {
     icon: Chunk657707.V3v,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
     getLegacySearchKey: () => Chunk726985.s6.APPEARANCE,
-    buildLayout: () => [S],
+    buildLayout: () => [T],
     trailing: {
       type: Chunk28682.PU.BADGE_NEW,
       getDismissibleContentTypes: Chunk620163.$Z,

@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 413410, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  B: () => T,
+  B: () => S,
   Z: () => d
 });
 var Chunk442837 = require("./442837.js"),
@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T() {
+function S() {
   return (0, Chunk442837.e7)([Chunk594174.default, Chunk131951.Z], () => {
     var t;
     let e = Chunk594174.default.getCurrentUser(),
@@ -28,7 +28,7 @@ function T() {
 let d = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.U4FgFK),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.Lm72RU),
-  usePredicate: T,
+  usePredicate: S,
   useValue: function() {
     return (0, Chunk442837.e7)([Chunk226961.ZP], () => Chunk226961.ZP.shouldRecordNextConnection())
   },

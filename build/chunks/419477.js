@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 419477, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  z: () => T
+  z: () => S
 });
 var Chunk657707 = require("./657707.js"),
   Chunk725727 = require("./725727.js"),
@@ -15,15 +15,15 @@ let E = (0, Chunk509613.x1)(Chunk313789.n.GIFT_PANE, {
     buildLayout: () => [],
     render: Chunk387747.Z
   }),
-  S = (0, Chunk509613.wf)(Chunk313789.n.GIFT_PANEL, {
+  T = (0, Chunk509613.wf)(Chunk313789.n.GIFT_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["jcSP+g"]),
     buildLayout: () => [E]
   }),
-  T = (0, Chunk509613.m7)(Chunk313789.n.GIFT_SIDEBAR_ITEM, {
+  S = (0, Chunk509613.m7)(Chunk313789.n.GIFT_SIDEBAR_ITEM, {
     icon: Chunk657707.OgN,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["jcSP+g"]),
     getLegacySearchKey: () => Chunk726985.s6.GIFT_INVENTORY,
-    buildLayout: () => [S],
+    buildLayout: () => [T],
     trailing: {
       type: Chunk28682.PU.BADGE_COUNT,
       useCount: () => (0, Chunk725727.YO)().length

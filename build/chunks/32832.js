@@ -14,13 +14,13 @@ var Chunk292556 = require("./292556.js"),
   Chunk407458 = require("./407458.js"),
   Chunk388032 = require("./388032.jsx");
 require("./732213.js");
-let S = {
+let T = {
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
     useDisabledMessage: () => (0, Chunk734934.p)() ? Chunk388032.intl.string(Chunk388032.t.cIRG0s) : true
   },
-  T = {
+  S = {
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.XBrJT6),
     sound: "call_ringing"
   },
@@ -39,5 +39,5 @@ let S = {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.ONU22R),
     variant: "separators",
     ContextProvider: Chunk299426.u,
-    buildLayout: () => [(0, Chunk407458.j)(S), d, (0, Chunk407458.j)(T), I]
+    buildLayout: () => [(0, Chunk407458.j)(T), d, (0, Chunk407458.j)(S), I]
   })

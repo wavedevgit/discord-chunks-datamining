@@ -42,10 +42,10 @@ let x = e => {
   let T = null != (t = null == E ? true : E.skuId) ? t : "",
     {
       handleCardVisibilityChange: L
-    } = (0, g.E)(T, "home", "marketing wide banner"),
+    } = (0, p.E)(T, "home", "marketing wide banner"),
     {
       bannerURL: B
-    } = (0, p.UI)(n),
+    } = (0, g.UI)(n),
     P = x === m.AW.ORBS,
     N = true !== n.disableCta && (null != n.ctaText && "" !== n.ctaText || null != n.ctaRoute && "" !== n.ctaRoute),
     A = null != n.logoURL && "" !== n.logoURL,

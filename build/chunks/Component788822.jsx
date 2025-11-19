@@ -38,7 +38,7 @@ let m = e => {
     onChange: E,
     threshold: 0,
     children: (0, r.jsxs)(a.P3F, {
-      className: p.featuredBlock,
+      className: g.featuredBlock,
       innerRef: S,
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -80,12 +80,12 @@ let m = e => {
       children: [null != b && (0, r.jsx)(a.IGR, {
         disableColor: true,
         text: b,
-        className: p.featuredBlockBadge
+        className: g.featuredBlockBadge
       }), (0, r.jsx)("div", {
-        className: p.featuredBlockTextContainer,
+        className: g.featuredBlockTextContainer,
         children: null != y && (0, r.jsx)(a.Heading, {
           lineClamp: 4,
-          className: p.featuredBlockBodyText,
+          className: g.featuredBlockBodyText,
           style: {
             color: null != (m = null == _ ? true : _.bannerTextColor) ? m : "white"
           },
@@ -93,10 +93,10 @@ let m = e => {
           children: y
         })
       }), (0, r.jsx)("div", {
-        className: p.featuredBlockButtonContainer,
+        className: g.featuredBlockButtonContainer,
         children: (0, r.jsx)(a.Button, {
           variant: "overlay-primary",
-          text: g.intl.string(g.t.jVcuVY),
+          text: p.intl.string(p.t.jVcuVY),
           onClick: e => {
             v({
               sourceButton: "shop marketing take me there button",

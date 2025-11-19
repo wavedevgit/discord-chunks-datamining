@@ -120,8 +120,8 @@ let S = Chunk473749.memo(function(e) {
             children: (0, r.jsx)(s.zxk, {
               variant: "primary",
               onClick: e => {
-                e.stopPropagation(), y && (0, g.wW)(t.skuId, n).then(() => {
-                  let e = p.Z.getProduct(n);
+                e.stopPropagation(), y && (0, p.wW)(t.skuId, n).then(() => {
+                  let e = g.Z.getProduct(n);
                   null != e && (0, h.Z)({
                     product: e,
                     analyticsLocations: [],

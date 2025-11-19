@@ -29,14 +29,14 @@ let m = e => {
     } = e, _ = (0, s.Nd)(), b = null == _ ? true : _.tab, v = (0, a.sp)(), x = (0, f.J)(t, h), E = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, C);
     return null != d || null != m ? (0, r.jsx)(l.hU, {
       variant: "primary",
-      "aria-label": p.intl.string(p.t.SKNnqq),
+      "aria-label": g.intl.string(g.t.SKNnqq),
       icon: null != m ? m : l.tEF,
       onClick: e => {
         e.stopPropagation(), null != d ? d(t.skuId) : E(e)
       }
     }) : x ? (0, r.jsx)(a.k0, {
       newValue: {
-        pageCategory: b === g.AW.HOME || null == v ? true : v.pageCategory
+        pageCategory: b === p.AW.HOME || null == v ? true : v.pageCategory
       },
       children: (0, r.jsx)(c.Z, {
         primary: true,
@@ -57,9 +57,9 @@ let m = e => {
       onClickAnalytics: s
     } = e, c = (0, u.LJ)(t), f = (0, o.o)(c);
     if (null == c) return null;
-    let g = (0, d.W)(c, f);
+    let p = (0, d.W)(c, f);
     return (0, r.jsx)(m, {
-      product: g,
+      product: p,
       cardRef: n,
       selectedVariantIndex: f,
       onClick: l,

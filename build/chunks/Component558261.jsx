@@ -45,10 +45,10 @@ let N = e => {
       hasDiscountOffer: u,
       discountOfferAmount: d,
       text: f
-    } = e, g = (0, b.XM)(t, i, false), p = u ? B.intl.formatToPlainString(B.t["5U5RB5"], {
+    } = e, p = (0, b.XM)(t, i, false), g = u ? B.intl.formatToPlainString(B.t["5U5RB5"], {
       discountOfferAmount: d
     }) : B.intl.formatToPlainString(B.t["cNSL/j"], {
-      price: g
+      price: p
     });
     return (0, r.jsx)(a.Button, {
       variant: "primary",
@@ -63,7 +63,7 @@ let N = e => {
           variantsReturnStyle: l.v.VARIANTS_GROUP
         })
       },
-      text: null != f ? f : p,
+      text: null != f ? f : g,
       fullWidth: true
     })
   },
@@ -171,7 +171,7 @@ let N = e => {
         })
       }),
       onClick: e => {
-        e.stopPropagation(), null == s || s("rental claim with orbs button"), (0, g.qA)({
+        e.stopPropagation(), null == s || s("rental claim with orbs button"), (0, p.qA)({
           skuId: (0, S.S)({
             product: t
           }),
@@ -227,7 +227,7 @@ let N = e => {
         })
       }),
       onClick: e => {
-        e.stopPropagation(), null == c || c("claim with orbs button"), (0, g.qA)({
+        e.stopPropagation(), null == c || c("claim with orbs button"), (0, p.qA)({
           skuId: (0, S.S)({
             product: t,
             selectedVariantIndex: s
@@ -278,7 +278,7 @@ let N = e => {
       text: c,
       prioritizedCurrency: u,
       onClickAnalytics: d
-    } = e, f = (0, i.e7)([p.default], () => p.default.getCurrentUser()), g = m.ZP.canUseCollectibles(f), h = (0, O.$l)(), {
+    } = e, f = (0, i.e7)([g.default], () => g.default.getCurrentUser()), p = m.ZP.canUseCollectibles(f), h = (0, O.$l)(), {
       isPurchased: _,
       isPartiallyOwnedBundle: S
     } = (0, E.L)(t), y = (0, b.G1)(t), I = (0, b.rN)(t), {
@@ -293,7 +293,7 @@ let N = e => {
       checkoutEligiblePrices: U
     } = (0, k.Ip)({
       product: t,
-      isPremiumUser: g,
+      isPremiumUser: p,
       prioritizedCurrency: u,
       hasDiscountOffer: P,
       isRental: h
@@ -310,7 +310,7 @@ let N = e => {
       skuId: t.skuId,
       text: c
     });
-    if (y && !g && !I) return (0, r.jsx)(A, {
+    if (y && !p && !I) return (0, r.jsx)(A, {
       isClaimPremiumProductDisabled: Y,
       text: c
     });
@@ -355,7 +355,7 @@ let N = e => {
     return (0, r.jsx)(N, {
       product: t,
       cardRef: n,
-      isPremiumUser: g,
+      isPremiumUser: p,
       analyticsLocations: z,
       selectedVariantIndex: l,
       hasDiscountOffer: P,

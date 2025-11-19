@@ -39,7 +39,7 @@ function L(e) {
     selected: l,
     handleTransition: i
   } = e;
-  return (0, r.jsx)(g.Z.Title, {
+  return (0, r.jsx)(p.Z.Title, {
     onClick: () => i(t),
     wrapperClassName: T.tabWrapper,
     className: a()(T.tab, {
@@ -55,7 +55,7 @@ function B(e) {
     selected: n,
     displayText: i,
     handleTransition: s
-  } = e, [o, u] = l.useState(false), p = l.useRef(null), [m, h] = l.useState(0), C = l.useRef(false), _ = e => {
+  } = e, [o, u] = l.useState(false), g = l.useRef(null), [m, h] = l.useState(0), C = l.useRef(false), _ = e => {
     clearTimeout(m), h(setTimeout(() => {
       u(e)
     }, 100)), e && (C.current = f.Z.keyboardModeEnabled)
@@ -67,14 +67,14 @@ function B(e) {
     onMouseEnter: () => _(true),
     onMouseLeave: () => _(false),
     children: (0, r.jsx)(c.yRy, {
-      targetElementRef: p,
+      targetElementRef: g,
       shouldShow: o,
       position: "bottom",
       align: "left",
       onRequestOpen: () => _(true),
       onRequestClose: () => {
         var e;
-        C.current && !f.Z.keyboardModeEnabled && (0, d.Qj)(), _(false), null == (e = p.current) || e.focus()
+        C.current && !f.Z.keyboardModeEnabled && (0, d.Qj)(), _(false), null == (e = g.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -90,7 +90,7 @@ function B(e) {
         let {
           isShown: d
         } = l;
-        return (0, r.jsx)(g.Z.Title, (o = function(e) {
+        return (0, r.jsx)(p.Z.Title, (o = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -108,7 +108,7 @@ function B(e) {
           }
           return e
         }({}, e), u = u = {
-          ref: p,
+          ref: g,
           onClick: () => s(t),
           onKeyDown: b,
           wrapperClassName: T.tabWrapper,
@@ -167,7 +167,7 @@ function P(e) {
         pageType: N,
         sectionType: j.jXE.ORBS_BALANCE_MENU,
         ctaObject: j.qAy.CTA_TO_QUEST_HOME
-      }), (0, p.navigateToQuestHome)({
+      }), (0, g.navigateToQuestHome)({
         fromContent: s.j.ORBS_BALANCE_MENU
       })
     }, [N]),
@@ -181,7 +181,7 @@ function P(e) {
     }, [null == d ? true : d.id]);
   return (0, r.jsx)(c.f6W, {
     theme: i,
-    children: e => (0, r.jsxs)(g.Z, {
+    children: e => (0, r.jsxs)(p.Z, {
       disableDoubleClick: true,
       className: a()(e, T.headerBar),
       innerClassname: f ? T.headerBarInner : true,
@@ -191,7 +191,7 @@ function P(e) {
         "aria-label": I.intl.string(I.t.pWG4ze) + " home",
         children: [(0, r.jsx)(x.Z, {
           className: T.discordLogo
-        }), (0, r.jsx)(g.Z.Title, {
+        }), (0, r.jsx)(p.Z.Title, {
           children: I.intl.string(I.t.pWG4ze)
         })]
       }), (0, r.jsx)("div", {

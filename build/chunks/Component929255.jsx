@@ -36,16 +36,16 @@ function y(e) {
     onUnmount: u
   } = e;
   (0, f.A)();
-  let g = (0, d.FF)("CollectiblesBrowse"),
-    p = l.useRef(null),
+  let p = (0, d.FF)("CollectiblesBrowse"),
+    g = l.useRef(null),
     {
       handleScroll: h
-    } = (0, o.z)(p, t),
+    } = (0, o.z)(g, t),
     {
       setCategoryRef: _,
       handleScrollToCategory: b
-    } = (0, m.xV)(p.current),
-    [v, x] = l.useState(g && c),
+    } = (0, m.xV)(g.current),
+    [v, x] = l.useState(p && c),
     [E, O] = l.useState(false);
   return l.useEffect(() => {
     null != i && b(i)
@@ -57,25 +57,25 @@ function y(e) {
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
-    g || x(false)
-  }, [g, x]), (0, r.jsx)("div", {
+    p || x(false)
+  }, [p, x]), (0, r.jsx)("div", {
     className: a()(S.pageWrapper, {
-      [S.pageWrapperFilter]: g
+      [S.pageWrapperFilter]: p
     }),
     children: (0, r.jsxs)("main", {
       className: a()(S.page, {
-        [S.pageFilter]: g
+        [S.pageFilter]: p
       }),
       children: [(0, r.jsx)(s.yWw, {
         className: S.shopScroll,
-        ref: p,
+        ref: g,
         onScroll: h,
         children: (0, r.jsx)(j, {
           isSmallScreen: E,
           filterBarOpen: v,
           setFilterBarOpen: x,
           tab: t,
-          scrollerRef: p,
+          scrollerRef: g,
           sortedCategories: n,
           setCategoryRef: _
         })
@@ -136,7 +136,7 @@ let j = e => {
         className: S.controls,
         children: [(0, r.jsx)("div", {
           className: S.controlsLeftSide,
-          children: (0, r.jsx)(g.Z, {})
+          children: (0, r.jsx)(p.Z, {})
         }), (0, r.jsxs)("div", {
           className: a()(S.controlsRightSide, {
             [S.controlsRightSideResponsive]: t
@@ -186,7 +186,7 @@ let j = e => {
         newValue: {
           pageIndex: P
         },
-        children: (0, r.jsx)(p.Z, {
+        children: (0, r.jsx)(g.Z, {
           sortedCategories: y,
           setCategoryRef: j,
           currentPage: P,

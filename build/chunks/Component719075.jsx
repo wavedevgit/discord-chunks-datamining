@@ -33,7 +33,7 @@ let x = e => {
       isPartiallyOwnedBundle: S,
       isRented: y,
       rentalExpiresAt: j
-    } = (0, g.L)(t), k = (0, d.G1)(t), I = (0, d.rN)(t), T = l.useMemo(() => (0, d.BH)(t, x), [t, x]), L = (0, C.Iw)(t), {
+    } = (0, p.L)(t), k = (0, d.G1)(t), I = (0, d.rN)(t), T = l.useMemo(() => (0, d.BH)(t, x), [t, x]), L = (0, C.Iw)(t), {
       checkoutEligiblePrices: B,
       hasSufficientOrbs: P,
       shouldCheckoutWithOrbs: N
@@ -74,13 +74,15 @@ let x = e => {
       children: b.intl.string(b.t["6cfuDj"])
     }) : I ? (0, r.jsx)(a.Text, {
       variant: "text-md/bold",
+      color: "text-primary",
       lineClamp: 1,
       children: b.intl.string(b.t.nBtvYB)
     }) : k ? (0, r.jsx)(a.Text, {
       variant: "text-md/bold",
+      color: "text-primary",
       lineClamp: 1,
       children: b.intl.string(b.t.rt69oo)
-    }) : 0 === B.length ? null : (0, r.jsx)(p.F, {
+    }) : 0 === B.length ? null : (0, r.jsx)(g.F, {
       price: B[0],
       discount: T,
       nitroIconType: x ? "default" : true,

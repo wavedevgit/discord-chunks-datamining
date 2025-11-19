@@ -58,14 +58,14 @@ let A = e => {
     isPremiumUser: F,
     prioritizeUserDiscounts: Z,
     orbsSupportedOnly: D
-  }), q = (0, k.St)(z), J = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, s.e7)([g.Z], () => g.Z.isFocused()), X = !J && Q, {
+  }), q = (0, k.St)(z), J = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, s.e7)([p.Z], () => p.Z.isFocused()), X = !J && Q, {
     animationPhase: $,
     startAnimation: ee
   } = (0, y.y)(), et = (0, C.sp)(), en = null != (t = null == et ? true : et.sessionId) ? t : "", er = l.useRef(null), el = l.useCallback(e => {
     ee({
       isShuffling: false,
       onOutroComplete: () => U(e)
-    }), p.default.track(L.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+    }), g.default.track(L.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: en,
       sort_type: e
     })
@@ -123,7 +123,7 @@ let A = e => {
                 isShuffling: true,
                 onOutroComplete: K,
                 returnRef: er
-              }), p.default.track(L.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+              }), g.default.track(L.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
                 page_session_id: en
               })
             },

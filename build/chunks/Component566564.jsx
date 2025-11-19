@@ -74,7 +74,7 @@ let A = e => {
       return n
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-    }), n), [Z, w] = l.useState(false), H = (0, g.sp)(), D = null != (t = null == H ? true : H.sessionId) ? t : "";
+    }), n), [Z, w] = l.useState(false), H = (0, p.sp)(), D = null != (t = null == H ? true : H.sessionId) ? t : "";
     l.useEffect(() => {
       (0, C.n)({
         sessionId: D,
@@ -150,12 +150,12 @@ let A = e => {
             }, n);
             break;
           case s.z.FEED:
-            let g = e.sortedSkuIds;
+            let p = e.sortedSkuIds;
             l = (0, r.jsx)(O.Z, {
               title: b === L.AW.ORBS ? P.intl.string(P.t.dFgeuZ) : P.intl.string(P.t.NSv5KV),
               isLoading: M || f,
               numVisibleItems: u,
-              sortedSkuIds: g,
+              sortedSkuIds: p,
               buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? N.feedblockInteractiveBackground : true,
               prioritizeUserDiscounts: b === L.AW.HOME,
               tab: b,
@@ -207,7 +207,7 @@ let A = e => {
           default:
             return null
         }
-        return (0, r.jsx)(p.g6, {
+        return (0, r.jsx)(g.g6, {
           blockType: e.type,
           children: (0, r.jsx)("div", {
             className: a()(N.blockContainer, N.feedContent, {
@@ -226,20 +226,20 @@ let A = e => {
       transitionState: i
     } = e, a = l.useRef(null), {
       handleScroll: s
-    } = (0, u.z)(a, n), o = (0, b.R)(), d = (0, g.sp)(), [p, m] = l.useState(L.IV), [h, C] = l.useState(false);
+    } = (0, u.z)(a, n), o = (0, b.R)(), d = (0, p.sp)(), [g, m] = l.useState(L.IV), [h, C] = l.useState(false);
     return l.useEffect(() => {
       if (null != a.current) {
         let e = () => {
             if (null == a.current) return;
             let e = a.current.getDistanceFromBottom();
-            p >= 36 ? C(e < 20) : e <= 200 && m(e => e + L.IV)
+            g >= 36 ? C(e < 20) : e <= 200 && m(e => e + L.IV)
           },
           t = a.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [a, p, m, C]), (0, r.jsx)(c.Den, {
+    }, [a, g, m, C]), (0, r.jsx)(c.Den, {
       className: N.shopScroll,
       ref: a,
       onScroll: s,
@@ -249,10 +249,10 @@ let A = e => {
           className: N.mainContent,
           children: [(0, r.jsx)(A, {
             handleTransition: t,
-            numVisibleItems: p,
+            numVisibleItems: g,
             isFetchingCategories: o,
             tab: n
-          }), n !== L.AW.CATALOG && p >= 36 && (0, r.jsxs)("div", {
+          }), n !== L.AW.CATALOG && g >= 36 && (0, r.jsxs)("div", {
             className: N.endOfFeed,
             children: [(0, r.jsx)(c.Heading, {
               variant: "heading-md/semibold",

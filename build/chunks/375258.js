@@ -1,11 +1,12 @@
 /** Chunk was on 9452 **/
 /** chunk id: 375258, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  E: () => p,
-  h: () => y
+  E: () => y,
+  h: () => D
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk491731 = require("./491731.jsx"),
   Chunk509613 = require("./509613.js"),
   Chunk28682 = require("./28682.js"),
   Chunk463395 = require("./463395.js"),
@@ -24,16 +25,12 @@ var Chunk473749 = require("./473749.js"),
   Chunk345655 = require("./345655.js"),
   Chunk388032 = require("./388032.jsx");
 
-function Z(t) {
-  return t ? f.intl.string(f.t.KHsSWK) : f.intl.string(f.t.PPDo5V)
-}
-
-function C() {
-  return Chunk388032.intl.string(Chunk388032.t["4n3WTh"])
+function C(t) {
+  return t ? Z.intl.string(Z.t.KHsSWK) : Z.intl.string(Z.t.PPDo5V)
 }
 
 function L() {
-  return [Chunk782134.Z, Chunk383713.Z, Chunk754680.Z, Chunk292591.Z, Chunk894470.Z, Chunk956853.Z, Chunk422767.Z, Chunk51397.Z, Chunk919723.Z, Chunk792971.Z]
+  return [Chunk782134.Z, Chunk383713.Z, Chunk292591.Z, Chunk754680.Z, Chunk894470.Z, Chunk956853.Z, Chunk422767.Z, Chunk51397.Z, Chunk919723.Z, Chunk792971.Z]
 }
 
 function P() {
@@ -53,16 +50,23 @@ function P() {
 function b() {
   return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getActiveInputProfile() !== Chunk345655._.STUDIO)
 }
-let p = (0, Chunk509613.CB)(Chunk313789.n.INPUT_MODE_VOICE_ADVANCED_ACCORDION, {
-    useTitle: Z,
-    useSubtitle: C,
+
+function p(t) {
+  let e = (0, l.e7)([o.Z], () => o.Z.isInputProfileCustom());
+  return (0, u.F)(t, {
+    limit: e ? 3 : 2
+  })
+}
+let y = (0, Chunk509613.CB)(Chunk313789.n.INPUT_MODE_VOICE_ADVANCED_ACCORDION, {
+    useTitle: C,
+    useSubtitle: () => p(Chunk313789.n.INPUT_MODE_VOICE_ADVANCED_ACCORDION),
     useNotice: P,
     buildLayout: L,
     usePredicate: b
   }),
-  y = (0, Chunk509613.CB)(Chunk313789.n.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
-    useTitle: Z,
-    useSubtitle: C,
+  D = (0, Chunk509613.CB)(Chunk313789.n.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
+    useTitle: C,
+    useSubtitle: () => p(Chunk313789.n.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION),
     useNotice: P,
     buildLayout: L,
     usePredicate: () => !b()
