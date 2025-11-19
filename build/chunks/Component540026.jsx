@@ -9,7 +9,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
-  Chunk6247 = require("./6247.js");
+  Chunk49434 = require("./49434.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -106,16 +106,16 @@ class h extends(r = Chunk473749.Component) {
       animatedProgress: u
     } = this.state, d = Chunk473749 ? u : Chunk120356;
     return (0, Chunk54381.jsx)("div", {
-      className: s()(require, exports === _.VOLUME ? Chunk6247.vertical : Chunk6247.horizontal),
+      className: s()(require, exports === _.VOLUME ? Chunk49434.vertical : Chunk49434.horizontal),
       children: (0, Chunk54381.jsx)("div", {
-        className: s()(r, Chunk473749 ? Chunk6247.mediaBarInteractionDragging : Chunk6247.mediaBarInteraction, exports === _.VOLUME ? Chunk6247.mediaBarInteractionVolume : null),
+        className: s()(r, Chunk473749 ? Chunk49434.mediaBarInteractionDragging : Chunk49434.mediaBarInteraction, exports === _.VOLUME ? Chunk49434.mediaBarInteractionVolume : null),
         onMouseDown: this.handleDragStart,
         onMouseMove: this.handleMouseMove,
         ref: e => {
           this.wrapper = e
         },
         children: (0, Chunk54381.jsxs)("div", {
-          className: s()(Chunk6247.mediaBarWrapper, exports === _.VOLUME ? Chunk6247.mediaBarWrapperVolume : null),
+          className: s()(Chunk49434.mediaBarWrapper, exports === _.VOLUME ? Chunk49434.mediaBarWrapperVolume : null),
           children: [null != module ? module.map((e, t) => {
             let [n, r] = e;
             return (0, i.jsx)("div", {
@@ -126,7 +126,7 @@ class h extends(r = Chunk473749.Component) {
               }
             }, t)
           }) : null, exports === _.DURATION ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-            className: Chunk6247.mediaBarPreview,
+            className: Chunk49434.mediaBarPreview,
             style: {
               width: Chunk120356.interpolate({
                 inputRange: [0, 1],
@@ -134,7 +134,7 @@ class h extends(r = Chunk473749.Component) {
               })
             }
           }) : null, (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-            className: Chunk6247.mediaBarProgress,
+            className: Chunk49434.mediaBarProgress,
             style: {
               width: u.interpolate({
                 inputRange: [0, 1],
@@ -142,11 +142,11 @@ class h extends(r = Chunk473749.Component) {
               })
             },
             children: (0, Chunk54381.jsx)("span", {
-              className: Chunk6247.mediaBarGrabber
+              className: Chunk49434.mediaBarGrabber
             })
           }), exports === _.DURATION ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
             ref: this.setBubbleRef,
-            className: Chunk6247.bubble,
+            className: Chunk49434.bubble,
             style: {
               left: d.interpolate({
                 inputRange: [0, 1],

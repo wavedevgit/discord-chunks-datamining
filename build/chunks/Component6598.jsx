@@ -9,13 +9,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk607070 = require("./607070.js"),
   Chunk55373 = require("./55373.jsx"),
   Chunk761006 = require("./761006.jsx"),
-  Chunk513870 = require("./513870.js"),
+  Chunk460196 = require("./460196.js"),
   Chunk798500 = require("./798500.js");
 let u = () => {
   let e = (0, Chunk399606.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk513870.jumpingWumpusContainer,
+      className: Chunk460196.jumpingWumpusContainer,
       children: (0, Chunk54381.jsx)(Chunk55373.ZP, {
         scaleAnimationData: {
           startScale: .9,
@@ -32,21 +32,21 @@ let u = () => {
         children: (0, Chunk54381.jsx)("img", {
           src: Chunk798500.Z,
           alt: "",
-          className: Chunk513870.jumpingWumpus
+          className: Chunk460196.jumpingWumpus
         })
       })
     }), (0, Chunk54381.jsx)(Chunk761006.Z, {
       isMotionReduced: module,
-      boltContainerClassName: Chunk513870.boltContainer,
-      carContainerClassName: Chunk513870.carContainer,
-      hammerContainerClassName: Chunk513870.hammerContainer,
-      keyContainerClassName: Chunk513870.keyContainer,
-      starContainerClassName: Chunk513870.starContainer,
-      boltAssetClassName: Chunk513870.boltTrinket,
-      carAssetClassName: Chunk513870.carTrinket,
-      hammerAssetClassName: Chunk513870.hammerTrinket,
-      keyAssetClassName: Chunk513870.keyTrinket,
-      starAssetClassName: Chunk513870.starTrinket
+      boltContainerClassName: Chunk460196.boltContainer,
+      carContainerClassName: Chunk460196.carContainer,
+      hammerContainerClassName: Chunk460196.hammerContainer,
+      keyContainerClassName: Chunk460196.keyContainer,
+      starContainerClassName: Chunk460196.starContainer,
+      boltAssetClassName: Chunk460196.boltTrinket,
+      carAssetClassName: Chunk460196.carTrinket,
+      hammerAssetClassName: Chunk460196.hammerTrinket,
+      keyAssetClassName: Chunk460196.keyTrinket,
+      starAssetClassName: Chunk460196.starTrinket
     })]
   })
 }

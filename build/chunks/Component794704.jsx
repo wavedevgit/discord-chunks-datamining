@@ -72,7 +72,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk987650 = require("./987650.js"),
   Chunk501787 = require("./501787.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk289726 = require("./289726.js"),
+  Chunk607547 = require("./607547.js"),
   Chunk131970 = require("./131970.js"),
   Chunk730462 = require("./730462.js");
 
@@ -609,19 +609,19 @@ function eZ() {
     title: Chunk388032.intl.string(Chunk388032.t.BfFpW1),
     description: Chunk392711,
     "aria-label": Chunk388032.intl.string(Chunk388032.t.BfFpW1),
-    className: Chunk289726.standaloneContainer,
+    className: Chunk607547.standaloneContainer,
     action: (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
         checked: require,
         disabled: l,
         onChange: e => c(e)
       }), Chunk987650.iP && (0, Chunk54381.jsx)("div", {
-        className: Chunk289726.emptySpacer
+        className: Chunk607547.emptySpacer
       })]
     })
   }) : (0, Chunk54381.jsxs)(eM, {
     onExpand: exports,
-    className: module ? Chunk289726.expandedContainer : true,
+    className: module ? Chunk607547.expandedContainer : true,
     title: Chunk388032.intl.string(Chunk388032.t.BfFpW1),
     description: Chunk392711,
     "aria-label": Chunk388032.intl.string(Chunk388032.t.BfFpW1),
@@ -634,14 +634,14 @@ function eZ() {
       })
     }),
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk289726.subtitleContainer,
+      className: Chunk607547.subtitleContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
         children: Chunk388032.intl.string(Chunk388032.t.FzoWRo)
       })
     }), (0, Chunk54381.jsx)(Chunk481060.zJl, {
-      className: Chunk289726.scroller,
+      className: Chunk607547.scroller,
       children: o.map((e, t) => (0, r.jsx)(eB, {
         rawGame: e,
         clientSettingType: w.OverlayToggledClientSettingType.LEGACY_GAME,
@@ -682,19 +682,19 @@ function eF() {
     title: Chunk388032.intl.string(Chunk388032.t["7BlVIs"]),
     description: Chunk392711,
     "aria-label": Chunk388032.intl.string(Chunk388032.t["7BlVIs"]),
-    className: Chunk289726.standaloneContainer,
+    className: Chunk607547.standaloneContainer,
     action: (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
         checked: require,
         disabled: o,
         onChange: e => c(e)
       }), Chunk987650.iP && (0, Chunk54381.jsx)("div", {
-        className: Chunk289726.emptySpacer
+        className: Chunk607547.emptySpacer
       })]
     })
   }) : (0, Chunk54381.jsxs)(eM, {
     onExpand: exports,
-    className: module ? Chunk289726.expandedContainer : true,
+    className: module ? Chunk607547.expandedContainer : true,
     title: Chunk388032.intl.string(Chunk388032.t["7BlVIs"]),
     description: Chunk392711,
     "aria-label": Chunk388032.intl.string(Chunk388032.t["7BlVIs"]),
@@ -707,14 +707,14 @@ function eF() {
       })
     }),
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk289726.subtitleContainer,
+      className: Chunk607547.subtitleContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
         children: Chunk388032.intl.string(Chunk388032.t.FzoWRo)
       })
     }), (0, Chunk54381.jsx)(Chunk481060.zJl, {
-      className: Chunk289726.scroller,
+      className: Chunk607547.scroller,
       children: Chunk348327.map((e, t) => (0, r.jsx)(eB, {
         rawGame: e,
         clientSettingType: w.OverlayToggledClientSettingType.OOP_GAME,
@@ -766,11 +766,11 @@ function eH() {
     }))
   }
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk289726.keybindMainContainer,
+    className: Chunk607547.keybindMainContainer,
     children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk289726.keybindContainer,
+      className: Chunk607547.keybindContainer,
       children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk289726.keybindHeaderContainer,
+        className: Chunk607547.keybindHeaderContainer,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
@@ -778,16 +778,16 @@ function eH() {
         }), l && (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-xs/normal",
           color: "text-feedback-warning",
-          className: Chunk289726.keybindAdminWarning,
+          className: Chunk607547.keybindAdminWarning,
           children: Chunk388032.intl.string(Chunk388032.t.NsowVa)
         }), Chunk512722 && (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-xs/normal",
           color: "text-feedback-warning",
-          className: Chunk289726.keybindAdminWarning,
+          className: Chunk607547.keybindAdminWarning,
           children: Chunk388032.intl.string(Chunk388032.t["UNoTw/"])
         })]
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk289726.keybindRecorderContainer,
+        className: Chunk607547.keybindRecorderContainer,
         children: (0, Chunk54381.jsx)(Chunk825209.Z, {
           disabled: require && Chunk473749,
           defaultValue: null != exports ? exports.shortcut : [],
@@ -833,7 +833,7 @@ function eW() {
     b.Z.setNotificationDisabledSetting(e, !t)
   }, o = (0, Chunk442837.e7)([Chunk624864.Z], () => Chunk624864.Z.getDisabledNotifications());
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk289726.notificationSettingsContainer,
+    className: Chunk607547.notificationSettingsContainer,
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
       color: "header-primary",
@@ -942,7 +942,7 @@ function eX() {
   }
   let g = Chunk981631.BRd.MIDNIGHT;
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk289726.voiceSettingsContainer,
+    className: Chunk607547.voiceSettingsContainer,
     children: [(0, Chunk54381.jsx)(Chunk481060.q4e, {
       label: Chunk388032.intl.string(Chunk388032.t.dnvZSg),
       options: [{
@@ -952,7 +952,7 @@ function eX() {
         label: Chunk388032.intl.string(Chunk388032.t.BKIKqx),
         value: Chunk981631.ipw.SMALL
       }],
-      className: Chunk289726.select,
+      className: Chunk607547.select,
       onChange: e => b.Z.setAvatarSizeMode(e),
       value: require
     }), (0, Chunk54381.jsx)(Chunk481060.q4e, {
@@ -967,7 +967,7 @@ function eX() {
         label: Chunk388032.intl.string(Chunk388032.t.ekjlPL),
         value: Chunk981631.wC$.NEVER
       }],
-      className: Chunk289726.select,
+      className: Chunk607547.select,
       onChange: e => b.Z.setDisplayNameMode(e),
       value: Chunk120356
     }), (0, Chunk54381.jsx)(Chunk481060.f6W, {
@@ -1018,11 +1018,11 @@ function eX() {
         label: Chunk388032.intl.string(Chunk388032.t["2OvIZY"]),
         value: Chunk981631.OYC.ONLY_WHILE_SPEAKING
       }],
-      className: Chunk289726.select,
+      className: Chunk607547.select,
       onChange: e => b.Z.setDisplayUserMode(e),
       value: Chunk348327
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk289726.sliderContainer,
+      className: Chunk607547.sliderContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.iRW, {
         label: Chunk388032.intl.string(Chunk388032.t["X/Uyzc"]),
         initialValue: Chunk392711,
@@ -1050,16 +1050,16 @@ function eQ() {
   return ((0, Chunk493773.ZP)(() => () => {
     exports(Chunk921944.L.AUTO_DISMISS)
   }), module !== Chunk704215.z.OVERLAY_OOP_SETTINGS_NUX) ? null : (0, Chunk54381.jsxs)("div", {
-    className: Chunk289726.overlaySettingsNux,
+    className: Chunk607547.overlaySettingsNux,
     children: [(0, Chunk54381.jsx)("div", {
       children: (0, Chunk54381.jsx)("img", {
         src: Chunk131970.Z,
         alt: Chunk388032.intl.string(Chunk388032.t.mdXZh1),
-        className: Chunk289726.nuxFirstImage
+        className: Chunk607547.nuxFirstImage
       })
     }), (0, Chunk54381.jsx)("div", {
       children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk289726.mainTitleContainer,
+        className: Chunk607547.mainTitleContainer,
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-xl/medium",
           color: "header-primary",
@@ -1074,18 +1074,18 @@ function eQ() {
       children: (0, Chunk54381.jsx)("img", {
         src: Chunk730462.Z,
         alt: Chunk388032.intl.string(Chunk388032.t.mdXZh1),
-        className: Chunk289726.nuxUserSettingsImage
+        className: Chunk607547.nuxUserSettingsImage
       })
     }), (0, Chunk54381.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: Chunk289726.closeCircleButton,
+      className: Chunk607547.closeCircleButton,
       children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.Q26diF),
         onClick: () => require()
       })
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk289726.nuxDivider
+      className: Chunk607547.nuxDivider
     })]
   })
 }

@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk260539 = require("./260539.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk197571 = require("./197571.js");
 
 function E(e, t, n) {
   e.preventDefault(), g.default.track(p.rMx.GUILD_TEMPLATE_APP_OPENED, {

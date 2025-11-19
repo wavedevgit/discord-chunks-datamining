@@ -14,19 +14,19 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk927923 = require("./927923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk196365 = require("./196365.js"),
+  Chunk99372 = require("./99372.js"),
   Chunk629582 = require("./629582.js");
 
 function b() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk196365.getXboxApp,
+    className: Chunk99372.getXboxApp,
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk196365.getXboxAppBody,
+      className: Chunk99372.getXboxAppBody,
       children: [(0, Chunk54381.jsxs)(Chunk481060.Heading, {
-        className: Chunk196365.getXboxAppHeading,
+        className: Chunk99372.getXboxAppHeading,
         variant: "text-lg/semibold",
         children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk196365.xboxLogoBox,
+          className: Chunk99372.xboxLogoBox,
           children: (0, Chunk54381.jsx)("img", {
             src: Chunk726542.Z.get(Chunk981631.ABu.XBOX).icon.whiteSVG,
             alt: ""
@@ -46,7 +46,7 @@ function b() {
         })
       })]
     }), (0, Chunk54381.jsx)(Chunk198993.ZP, {
-      className: Chunk196365.getXboxAppQR,
+      className: Chunk99372.getXboxAppQR,
       text: Chunk927923.X3,
       size: 90
     })]

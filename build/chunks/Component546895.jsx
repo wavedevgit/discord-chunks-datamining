@@ -1,4 +1,4 @@
-/** Chunk was on 65347 **/
+/** Chunk was on 91394 **/
 /** chunk id: 546895, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -72,7 +72,7 @@ let o = {
   "discord_common/js/shared/animations/app/gifts/standard/coffee/coffee-action.lottiejson": () => require.e("71244").then(require.t.bind(require, 398161, 19)),
   "discord_common/js/shared/animations/app/gifts/standard/coffee/coffee-idle.lottiejson": () => require.e("23847").then(require.t.bind(require, 482293, 19)),
   "discord_common/js/shared/animations/app/gifts/standard/coffee/coffee-loop.lottiejson": () => require.e("93554").then(require.t.bind(require, 732573, 19)),
-  "discord_app/images/burst_reactions/BurstReaction_Anime_v01_Lottie.lottiejson": () => require.e("219").then(require.t.bind(require, 725432, 19)),
+  "discord_app/images/burst_reactions/BurstReaction_Anime_v01_Lottie.lottiejson": () => require.e("39690").then(require.t.bind(require, 725432, 19)),
   "discord_app/images/burst_reactions/BurstReaction_Arcade_v01.lottiejson": () => require.e("54931").then(require.t.bind(require, 488583, 19)),
   "discord_app/images/burst_reactions/BurstReaction_BlackHoles_v01.lottiejson": () => require.e("22523").then(require.t.bind(require, 420183, 19)),
   "discord_app/images/burst_reactions/BurstReaction_BlastOff_v04.lottiejson": () => require.e("59642").then(require.t.bind(require, 759983, 19)),

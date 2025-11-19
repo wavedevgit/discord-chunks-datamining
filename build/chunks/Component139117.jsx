@@ -14,18 +14,18 @@ var Chunk120356 = require("./120356.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
-  Chunk772530 = require("./772530.js");
+  Chunk120230 = require("./120230.js");
 
 function _() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk565138.Z.Sizes.SMALLER;
   switch (module) {
     case Chunk565138.Z.Sizes.SMOL:
-      return Chunk772530.size16;
+      return Chunk120230.size16;
     case Chunk565138.Z.Sizes.MINI:
-      return Chunk772530.size20;
+      return Chunk120230.size20;
     case Chunk565138.Z.Sizes.SMALLER:
     default:
-      return Chunk772530.size24
+      return Chunk120230.size24
   }
 }
 

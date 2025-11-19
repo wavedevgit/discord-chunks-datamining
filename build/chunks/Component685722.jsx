@@ -1,4 +1,4 @@
-/** Chunk was on 71264 **/
+/** Chunk was on 34740 **/
 /** chunk id: 685722, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -6,15 +6,15 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk646706 = require("./646706.js");
+  Chunk903781 = require("./903781.js");
 
 function o() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk646706.container,
+    className: Chunk903781.container,
     children: [(0, Chunk54381.jsx)("div", {
-      className: l()(Chunk646706.placeholderItem, Chunk646706.chatTextAreaPlaceholder)
+      className: l()(Chunk903781.placeholderItem, Chunk903781.chatTextAreaPlaceholder)
     }), (0, Chunk54381.jsx)("div", {
-      className: l()(Chunk646706.placeholderItem, Chunk646706.appLauncherPlaceholder)
+      className: l()(Chunk903781.placeholderItem, Chunk903781.appLauncherPlaceholder)
     })]
   })
 }

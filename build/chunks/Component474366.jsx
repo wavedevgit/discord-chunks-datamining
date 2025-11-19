@@ -1,4 +1,4 @@
-/** Chunk was on 76892 **/
+/** Chunk was on 9456 **/
 /** chunk id: 474366, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,9 +22,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk675654 = require("./675654.js"),
   Chunk710111 = require("./710111.js"),
-  Chunk826688 = require("./826688.js"),
+  Chunk797013 = require("./797013.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk911873 = require("./911873.js");
+  Chunk65766 = require("./65766.js");
 
 function T(e) {
   let {
@@ -114,7 +114,7 @@ function w(e) {
 function S() {
   let e = Chunk473749.useRef(null);
   return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
-    className: Chunk911873.container,
+    className: Chunk65766.container,
     direction: "vertical",
     align: "center",
     justify: "center",
@@ -132,14 +132,14 @@ function S() {
       align: "center",
       justify: "center",
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-        className: Chunk911873.header,
+        className: Chunk65766.header,
         variant: "heading-md/medium",
-        children: Chunk388032.intl.string(Chunk826688.default.h6QNky)
+        children: Chunk388032.intl.string(Chunk797013.default.h6QNky)
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk911873.text,
+        className: Chunk65766.text,
         variant: "text-md/medium",
         color: "text-secondary",
-        children: Chunk388032.intl.format(Chunk826688.default["8N4c58"], {
+        children: Chunk388032.intl.format(Chunk797013.default["8N4c58"], {
           airhornHook: t => (0, r.jsx)(w, {
             containerRef: e,
             text: t

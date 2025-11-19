@@ -1,4 +1,4 @@
-/** Chunk was on 71264 **/
+/** Chunk was on 34740 **/
 /** chunk id: 415397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => x
@@ -19,8 +19,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk771027 = require("./771027.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk839193 = require("./839193.js"),
-  Chunk929618 = require("./929618.js");
+  Chunk764194 = require("./764194.js"),
+  Chunk254477 = require("./254477.js");
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -61,7 +61,7 @@ function x(e) {
     s()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, u.ZDy)(async () => {
       let {
         default: r
-      } = await Promise.all([n.e("49049"), n.e("7654"), n.e("89334")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("49049"), n.e("7654"), n.e("68971")]).then(n.bind(n, 560114));
       return n => {
         var l, a;
         return (0, i.jsx)(r, (l = _({}, n), a = a = {

@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk527379 = require("./527379.js"),
   Chunk327999 = require("./327999.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk260523 = require("./260523.js");
+  Chunk303572 = require("./303572.js");
 
 function U(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -67,7 +67,7 @@ let M = Chunk473749.memo(function() {
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
-        className: Chunk260523.unknownInvite,
+        className: Chunk303572.unknownInvite,
         children: Chunk388032.intl.string(Chunk388032.t.yobFdm)
       })
     })
@@ -78,7 +78,7 @@ let M = Chunk473749.memo(function() {
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
-        className: Chunk260523.unknownInvite,
+        className: Chunk303572.unknownInvite,
         children: Chunk388032.intl.string(Chunk388032.t["4upToT"])
       })
     })
@@ -96,7 +96,7 @@ let M = Chunk473749.memo(function() {
       icon: (0, Chunk54381.jsx)(Chunk481060.wGt, {
         size: "custom",
         color: "currentColor",
-        className: Chunk260523.robot,
+        className: Chunk303572.robot,
         height: 12,
         width: 12
       }),

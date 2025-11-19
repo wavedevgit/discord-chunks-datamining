@@ -1,4 +1,4 @@
-/** Chunk was on 65347 **/
+/** Chunk was on 91394 **/
 /** chunk id: 636500, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -6,11 +6,11 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk649157 = require("./649157.jsx"),
-  Chunk866403 = require("./866403.js");
+  Chunk451429 = require("./451429.js");
 
 function s() {
   return (0, Chunk54381.jsx)(Chunk481060.zJl, {
-    className: Chunk866403.panel,
+    className: Chunk451429.panel,
     children: (0, Chunk54381.jsx)("div", {
       style: {
         padding: "var(--space-8)"

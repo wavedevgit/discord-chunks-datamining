@@ -9,9 +9,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk410030 = require("./410030.js"),
   Chunk343312 = require("./343312.jsx"),
   Chunk231338 = require("./231338.js"),
-  Chunk719662 = require("./719662.js"),
+  Chunk732031 = require("./732031.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk241497 = require("./241497.js"),
+  Chunk731926 = require("./731926.js"),
   Chunk737413 = require("./737413.js"),
   Chunk688913 = require("./688913.js");
 
@@ -19,10 +19,10 @@ function g() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk54381.jsx)(Chunk793030.xvT, {
     variant: "text-sm/medium",
-    className: Chunk241497.text,
-    children: Chunk388032.intl.format(Chunk719662.default.fcJiY8, {
+    className: Chunk731926.text,
+    children: Chunk388032.intl.format(Chunk732031.default.fcJiY8, {
       provider: (0, Chunk54381.jsx)("img", {
-        className: Chunk241497.image,
+        className: Chunk731926.image,
         src: module !== Chunk231338.BR.LIGHT ? Chunk688913 : Chunk737413,
         alt: "Shockbyte"
       })

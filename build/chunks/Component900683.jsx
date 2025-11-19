@@ -11,19 +11,19 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk810955 = require("./810955.js"),
+  Chunk252073 = require("./252073.js"),
   Chunk531599 = require("./531599.js");
 
 function u() {
   return (0, Chunk54381.jsxs)("div", {
-    className: a()(Chunk810955.upsellFooter, Chunk810955.reverseTrialUpsellContainer),
+    className: a()(Chunk252073.upsellFooter, Chunk252073.reverseTrialUpsellContainer),
     children: [(0, Chunk54381.jsx)("img", {
       src: Chunk531599.Z,
       alt: "reverse trial unlock",
-      className: Chunk810955.unlockIcon
+      className: Chunk252073.unlockIcon
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
-      className: Chunk810955.upsellText,
+      className: Chunk252073.upsellText,
       children: Chunk388032.intl.format(Chunk388032.t.f5VHKm, {})
     })]
   })

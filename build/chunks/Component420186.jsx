@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk978986 = require("./978986.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk626090 = require("./626090.js");
+  Chunk181174 = require("./181174.js");
 let x = () => {
   var e;
   let n = Chunk695346.G6.useSetting(),
@@ -36,7 +36,7 @@ let x = () => {
       })
     }, [v, E]);
   return (0, Chunk54381.jsxs)(Chunk590149.Z, {
-    className: Chunk626090.accordion,
+    className: Chunk181174.accordion,
     icon: (0, Chunk54381.jsx)(Chunk481060.ewm, {
       size: "md"
     }),
@@ -45,7 +45,7 @@ let x = () => {
     onOpen: j,
     maxHeight: I ? 220 : 130,
     children: [I && (0, Chunk54381.jsxs)("div", {
-      className: Chunk626090.serverNickname,
+      className: Chunk181174.serverNickname,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         color: "header-secondary",

@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk617015 = require("./617015.js"),
-  Chunk165342 = require("./165342.js");
+  Chunk67165 = require("./67165.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -135,7 +135,7 @@ class m extends Chunk473749.PureComponent {
       }), (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("71129")]).then(n.bind(n, 881351));
+        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("74820")]).then(n.bind(n, 881351));
         return n => (0, r.jsx)(e, g(h({}, n), {
           user: t
         }))

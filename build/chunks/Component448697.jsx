@@ -6,14 +6,14 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  Chunk636606 = require("./636606.js"),
+  Chunk790519 = require("./790519.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk709706 = require("./709706.js"),
   Chunk378441 = require("./378441.js"),
   Chunk358820 = require("./358820.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk551766 = require("./551766.js");
+  Chunk48528 = require("./48528.js");
 
 function f() {
   let {
@@ -42,7 +42,7 @@ function f() {
       });
     return {
       hasActiveDownloads: Chunk54381,
-      progress: 0 === Chunk481060 ? 0 : Math.floor(Chunk636606 / Chunk481060 * 100)
+      progress: 0 === Chunk481060 ? 0 : Math.floor(Chunk790519 / Chunk481060 * 100)
     }
   }(), {
     activeVoice: n

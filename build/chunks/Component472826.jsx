@@ -17,8 +17,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk213167 = require("./213167.jsx"),
   Chunk936714 = require("./936714.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk206569 = require("./206569.js"),
-  Chunk609778 = require("./609778.js");
+  Chunk786491 = require("./786491.js"),
+  Chunk605532 = require("./605532.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,7 +78,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
     return (0, Chunk54381.jsxs)("div", {
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
-        className: Chunk609778.headerWithSpacing,
+        className: Chunk605532.headerWithSpacing,
         children: "Default Options"
       }), (0, Chunk54381.jsx)("div", {
         children: Object.entries(module).map(e => {

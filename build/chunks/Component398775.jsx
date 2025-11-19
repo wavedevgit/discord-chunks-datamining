@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk594135 = require("./594135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk257818 = require("./257818.js");
+  Chunk353680 = require("./353680.js");
 async function S(t) {
   let {
     premiumSubscription: e,
@@ -170,10 +170,10 @@ function P() {
     },
     children: [Chunk493773 ? (0, Chunk54381.jsx)(Chunk481060.Wn, {
       messageType: Chunk481060.QYI.ERROR,
-      className: Chunk257818.errorBlock,
+      className: Chunk353680.errorBlock,
       children: Chunk388032.intl.string(Chunk388032.t["5mlOCW"])
     }) : null, (0, Chunk54381.jsx)("div", {
-      className: Chunk257818.body,
+      className: Chunk353680.body,
       children: P
     })]
   })

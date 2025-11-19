@@ -1,53 +1,53 @@
-/** Chunk was on 85668 **/
-/** chunk id: 988158, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 91394 **/
+/** chunk id: 988158, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  X: () => i,
-  h: () => l
+  X: () => r,
+  h: () => i
 }), require("./704826.js"), require("./35282.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk902676 = require("./902676.js");
 
-function l(t) {
+function i(e) {
   let {
-    protocol: e,
+    protocol: t,
     hostname: n
   } = a.useMemo(() => ({
-    protocol: (0, r.E)(t),
-    hostname: (0, r.F)(t)
-  }), [t]), l = "//" === t.substr(e.length, 2) ? "//" : "", i = "".concat(e).concat(l).concat(n);
+    protocol: (0, l.E)(e),
+    hostname: (0, l.F)(e)
+  }), [e]), i = "//" === e.substr(t.length, 2) ? "//" : "", r = "".concat(t).concat(i).concat(n);
   return {
-    protocol: e,
-    authorityPrefix: l,
+    protocol: t,
+    authorityPrefix: i,
     hostname: n,
-    theRestOfTheUrl: t.replace(i, "")
+    theRestOfTheUrl: e.replace(r, "")
   }
 }
 
-function i(t) {
+function r(e) {
   let {
-    url: e,
+    url: t,
     trustUrl: n,
-    onConfirm: r,
-    onCancel: i,
+    onConfirm: l,
+    onCancel: r,
     onClose: s
-  } = t, [c, o] = a.useState(false), {
+  } = e, [o, c] = a.useState(false), {
     protocol: d,
     authorityPrefix: u,
     hostname: m,
-    theRestOfTheUrl: x
-  } = l(e), _ = a.useCallback(() => {
-    c && n(e), null == s || s(), r()
-  }, [e, c, n, r, s]);
+    theRestOfTheUrl: p
+  } = i(t), h = a.useCallback(() => {
+    o && n(t), null == s || s(), l()
+  }, [t, o, n, l, s]);
   return {
     protocol: d,
     authorityPrefix: u,
     hostname: m,
-    theRestOfTheUrl: x,
-    shouldTrustUrl: c,
-    setShouldTrustUrl: o,
-    handleConfirm: _,
+    theRestOfTheUrl: p,
+    shouldTrustUrl: o,
+    setShouldTrustUrl: c,
+    handleConfirm: h,
     handleCancel: a.useCallback(() => {
-      null == s || s(), i()
-    }, [i, s])
+      null == s || s(), r()
+    }, [r, s])
   }
 }

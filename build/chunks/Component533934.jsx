@@ -91,7 +91,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk290511 = require("./290511.js"),
   Chunk186901 = require("./186901.js"),
-  Chunk987129 = require("./987129.js");
+  Chunk822338 = require("./822338.js");
 
 function ek(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -116,7 +116,7 @@ let eU = (0, Chunk608787.Un)({
     webpackId: 267161
   }),
   eG = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk987129.loader,
+    className: Chunk822338.loader,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   }),
   eB = (0, Chunk608787.Un)({
@@ -613,14 +613,14 @@ function ts() {
     O = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     y = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk987129.container,
+    className: Chunk822338.container,
     children: (0, Chunk54381.jsx)(Chunk372900.Z.Provider, {
       value: (null == Chunk904245 ? true : Chunk904245.params.guildId) === Chunk981631.ME || null == Chunk904245 ? true : Chunk904245.params.guildId,
       children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk987129.base,
+        className: Chunk822338.base,
         "data-fullscreen": Chunk773244,
         children: [!Chunk773244 && (0, Chunk54381.jsx)(eU, {}), Chunk873546.tq ? null : (0, Chunk54381.jsx)(Chunk369664.Z, {}), (0, Chunk54381.jsxs)("div", {
-          className: Chunk987129.content,
+          className: Chunk822338.content,
           children: [(0, Chunk54381.jsx)(Chunk626421.Z, {}), (0, Chunk54381.jsx)(ta, {
             isSidebarOpen: Chunk593473,
             hasNotice: exports,
@@ -628,7 +628,7 @@ function ts() {
             hideChannelList: Chunk120356 || a || Chunk409292,
             hideSidebar: !Chunk593473
           }), (0, Chunk54381.jsx)("div", {
-            className: Chunk987129.page,
+            className: Chunk822338.page,
             "data-collapsed": !!Chunk425369 && Chunk715702,
             children: (0, Chunk54381.jsxs)(Chunk290297.Z.Provider, {
               value: Chunk697309,

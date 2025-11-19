@@ -1,7 +1,7 @@
-/** Chunk was on 85668 **/
-/** chunk id: 528477, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 91394 **/
+/** chunk id: 528477, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  n: () => p
+  n: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,103 +16,103 @@ var Chunk54381 = require("./54381.js"),
   Chunk299886 = require("./299886.js"),
   Chunk37279 = require("./37279.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk80354 = require("./80354.js"),
+  Chunk845259 = require("./845259.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk645023 = require("./645023.js"),
+  Chunk742098 = require("./742098.js"),
   Chunk932889 = require("./932889.js");
-let p = t => {
+let j = e => {
   let {
-    onClose: e
-  } = t, n = (0, s.m)(), {
-    installationStatus: p,
-    perkAvailableToUser: N,
-    isSupportedPrivateBrowsingPerkPlatform: v,
-    isWeb: I,
-    connectionStatus: b
+    onClose: t
+  } = e, n = (0, s.m)(), {
+    installationStatus: j,
+    perkAvailableToUser: _,
+    isSupportedPrivateBrowsingPerkPlatform: y,
+    isWeb: C,
+    connectionStatus: S
   } = (0, m.xf)(), {
-    enabled: T
-  } = x.H.useConfig({
+    enabled: E
+  } = p.H.useConfig({
     location: "private_browsing_perk_settings_page"
-  }), A = (0, r.useCallback)(() => {
-    (0, i.Z)(f.Z5c.NITRO_HOME), e()
-  }, [e]), j = (0, r.useCallback)(() => {
-    (0, o.openUserSettings)(c.n.ADVANCED_PANEL, {
-      section: f.oAB.ADVANCED
+  }), N = (0, l.useCallback)(() => {
+    (0, r.Z)(x.Z5c.NITRO_HOME), t()
+  }, [t]), T = (0, l.useCallback)(() => {
+    (0, c.openUserSettings)(o.n.ADVANCED_PANEL, {
+      section: x.oAB.ADVANCED
     })
-  }, []), D = [u.Ij.CONNECTED].includes(b), E = v && T && ![u._n.ZERO_TRUST, u._n.ERROR].includes(p) && !I && (!n || N), L = (0, r.useMemo)(() => {
-    switch (b) {
+  }, []), O = [u.Ij.CONNECTED].includes(S), P = y && E && ![u._n.ZERO_TRUST, u._n.ERROR].includes(j) && !C && (!n || _), I = (0, l.useMemo)(() => {
+    switch (S) {
       case u.Ij.CONNECTED:
-        return C.intl.string(h.default.FBu3XJ);
+        return f.intl.string(g.default.FBu3XJ);
       case u.Ij.INITIALIZING:
-        return C.intl.string(h.default["00vkCU"]);
+        return f.intl.string(g.default["00vkCU"]);
       default:
-        return C.intl.string(h.default["A70/wR"])
+        return f.intl.string(g.default["A70/wR"])
     }
-  }, [b]), M = (0, r.useMemo)(() => {
-    if (!N) return C.intl.string(h.default.KN6HOb);
-    switch (p) {
+  }, [S]), w = (0, l.useMemo)(() => {
+    if (!_) return f.intl.string(g.default.KN6HOb);
+    switch (j) {
       case u._n.INSTALLED:
       case u._n.EXISTING_INSTALLATION:
-        return L;
+        return I;
       default:
-        return C.intl.string(h.default.KN6HOb)
+        return f.intl.string(g.default.KN6HOb)
     }
-  }, [p, N, L]), O = (0, r.useMemo)(() => {
-    if (!N) return (0, a.jsx)(l.xvT, {
+  }, [j, _, I]), k = (0, l.useMemo)(() => {
+    if (!_) return (0, a.jsx)(i.xvT, {
       variant: "text-xs/medium",
       color: "text-secondary",
-      children: C.intl.format(h.default["0UfKTY"], {
+      children: f.intl.format(g.default["0UfKTY"], {
         helpdeskArticle: d.w
       })
     });
-    switch (p) {
+    switch (j) {
       case u._n.INSTALLED:
       case u._n.EXISTING_INSTALLATION:
-        return (0, a.jsx)(l.xvT, {
+        return (0, a.jsx)(i.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: D ? C.intl.format(h.default.zwW10o, {
+          children: O ? f.intl.format(g.default.zwW10o, {
             onClick: () => {
-              A()
+              N()
             }
-          }) : C.intl.format(h.default.D4hu0v, {
+          }) : f.intl.format(g.default.D4hu0v, {
             onClick: () => {
-              j()
+              T()
             }
           })
         });
       default:
-        return (0, a.jsx)(l.xvT, {
+        return (0, a.jsx)(i.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: C.intl.format(h.default.D4hu0v, {
+          children: f.intl.format(g.default.D4hu0v, {
             onClick: () => {
-              j()
+              T()
             }
           })
         })
     }
-  }, [p, N, D, j, A]);
-  return E ? (0, a.jsxs)("div", {
-    className: g.container,
-    children: [(0, a.jsx)(_.v, {
-      className: g.betaBadge
-    }), (0, a.jsx)(l.$1m, {
+  }, [j, _, O, T, N]);
+  return P ? (0, a.jsxs)("div", {
+    className: b.container,
+    children: [(0, a.jsx)(h.v, {
+      className: b.betaBadge
+    }), (0, a.jsx)(i.$1m, {
       color: "nitro-pink",
       offsetBottom: false,
-      className: g.gradientBackground,
+      className: b.gradientBackground,
       children: (0, a.jsxs)("div", {
-        className: g.contentContainer,
+        className: b.contentContainer,
         children: [(0, a.jsx)("img", {
-          src: k,
-          className: g.graphicContainer,
+          src: v,
+          className: b.graphicContainer,
           alt: "Private Browsing Perk"
         }), (0, a.jsxs)("div", {
-          className: g.details,
-          children: [(0, a.jsx)(l.X6q, {
+          className: b.details,
+          children: [(0, a.jsx)(i.X6q, {
             variant: "heading-md/semibold",
-            children: M
-          }), O]
+            children: w
+          }), k]
         })]
       })
     })]

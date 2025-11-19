@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk511693 = require("./511693.js");
+  Chunk42101 = require("./42101.js");
 let v = 3,
   I = 3;
 
@@ -166,14 +166,14 @@ function C() {
       children: [(0, Chunk54381.jsx)(T, {
         applications: exports
       }), (0, Chunk54381.jsx)(S, {}), (0, Chunk54381.jsx)("div", {
-        className: Chunk511693.divider
+        className: Chunk42101.divider
       }), (0, Chunk54381.jsx)(A, {})]
     }) : (0, Chunk54381.jsxs)("div", {
-      className: Chunk511693.emptyContainer,
+      className: Chunk42101.emptyContainer,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        className: Chunk511693.noGamesConnectedText,
+        className: Chunk42101.noGamesConnectedText,
         children: Chunk388032.intl.string(Chunk388032.t["+0U77d"])
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",

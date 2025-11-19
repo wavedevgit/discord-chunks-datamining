@@ -1,5 +1,5 @@
-/** Chunk was on 96033 **/
-/** chunk id: 48217, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 72891 **/
+/** chunk id: 48217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => g
 });
@@ -13,63 +13,63 @@ var Chunk481060 = require("./481060.js"),
   Chunk30513 = require("./30513.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk124437 = require("./124437.js");
+  Chunk131115 = require("./131115.js");
 
-function h(t) {
+function _(e) {
   let {
-    guild: e,
-    banner: i
-  } = t;
-  return (0, n.jsx)("div", {
-    className: _.guildBanner,
+    guild: t,
+    banner: n
+  } = e;
+  return (0, i.jsx)("div", {
+    className: f.guildBanner,
     style: {
-      backgroundImage: "url(".concat(i)
+      backgroundImage: "url(".concat(n)
     },
-    children: (0, n.jsxs)("div", {
-      className: _.guildHeader,
-      children: [(0, n.jsx)(o.Z, {
-        guild: e,
+    children: (0, i.jsxs)("div", {
+      className: f.guildHeader,
+      children: [(0, i.jsx)(o.Z, {
+        guild: t,
         isBannerVisible: true
-      }), (0, n.jsx)(a.Heading, {
-        className: _.guildName,
+      }), (0, i.jsx)(a.Heading, {
+        className: f.guildName,
         variant: "heading-md/semibold",
-        children: e.name
-      }), (0, n.jsx)(r.Z, {
-        className: _.dropdown,
+        children: t.name
+      }), (0, i.jsx)(r.Z, {
+        className: f.dropdown,
         open: false
       })]
     })
   })
 }
 
-function g(t) {
+function g(e) {
   let {
-    analyticsLocations: e,
-    analyticsLocation: i,
+    analyticsLocations: t,
+    analyticsLocation: n,
     guild: a,
     isGIF: r,
     banner: o
-  } = t, _ = r ? (0, l._p)(c.GuildFeatures.ANIMATED_BANNER) : (0, l._p)(c.GuildFeatures.BANNER);
-  null != _ && (0, s.Z)({
-    analyticsLocations: e,
-    analyticsSourceLocation: i,
+  } = e, f = r ? (0, l._p)(d.GuildFeatures.ANIMATED_BANNER) : (0, l._p)(d.GuildFeatures.BANNER);
+  null != f && (0, c.Z)({
+    analyticsLocations: t,
+    analyticsSourceLocation: n,
     guild: a,
     headerProps: {
       title: u.intl.string(u.t["rv2H+1"]),
-      subtitle: function(t, e) {
-        let i = (0, l.nW)(t);
-        return e ? u.intl.formatToPlainString(u.t["TR/Uyt"], {
-          targetLevelOrPlan: i
+      subtitle: function(e, t) {
+        let n = (0, l.nW)(e);
+        return t ? u.intl.formatToPlainString(u.t["TR/Uyt"], {
+          targetLevelOrPlan: n
         }) : u.intl.formatToPlainString(u.t.B253V6, {
-          targetLevelOrPlan: i
+          targetLevelOrPlan: n
         })
-      }(_, r),
-      image: (0, n.jsx)(h, {
+      }(f, r),
+      image: (0, i.jsx)(_, {
         guild: a,
         banner: o
       })
     },
     perkIntro: u.intl.string(u.t.ZuItcI),
-    perks: r ? (0, d.zC)() : (0, d.XO)()
+    perks: r ? (0, s.zC)() : (0, s.XO)()
   })
 }

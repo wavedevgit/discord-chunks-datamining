@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk197571 = require("./197571.js");
 
 function p(e, t, n) {
   let r = [{
@@ -50,7 +50,7 @@ function h() {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
     children: (0, Chunk54381.jsx)(Chunk481060.q4e, {
       label: Chunk388032.intl.string(Chunk388032.t.wVBHr0),
-      className: Chunk10198.marginBottom20,
+      className: Chunk197571.marginBottom20,
       value: module,
       options: p(exports, require, h),
       onChange: e => {

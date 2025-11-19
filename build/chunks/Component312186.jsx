@@ -22,8 +22,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk627641 = require("./627641.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk183322 = require("./183322.js"),
+  Chunk197571 = require("./197571.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,14 +83,14 @@ class Z extends Chunk473749.PureComponent {
       direction: Chunk600164.Z.Direction.VERTICAL,
       grow: 0,
       shrink: 0,
-      className: Chunk627641.header,
+      className: Chunk183322.header,
       children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
-          className: Chunk627641.headerTitle,
+          className: Chunk183322.headerTitle,
           children: Chunk388032.intl.string(Chunk388032.t["35G2Mq"])
         }), (0, Chunk54381.jsx)("div", {
-          className: Chunk627641.headerClose,
+          className: Chunk183322.headerClose,
           children: (0, Chunk54381.jsx)(Chunk481060.hU, {
             variant: "icon-only",
             size: "md",
@@ -107,21 +107,21 @@ class Z extends Chunk473749.PureComponent {
       selectedSection: e
     } = this.state, t = Chunk906467.Z.isDeveloper ? (0, Chunk54381.jsx)(Chunk481060.njP.Item, {
       id: "DEVELOPER",
-      className: Chunk627641.tabBarItem,
+      className: Chunk183322.tabBarItem,
       children: "Developer"
     }) : null;
     return (0, Chunk54381.jsxs)(Chunk481060.njP, {
       selectedItem: module,
       type: "top",
-      className: Chunk627641.__invalid_tabBar,
+      className: Chunk183322.__invalid_tabBar,
       onItemSelect: this.handleSelectSection,
       children: [(0, Chunk54381.jsx)(Chunk481060.njP.Item, {
         id: "GENERAL",
-        className: Chunk627641.tabBarItem,
+        className: Chunk183322.tabBarItem,
         children: Chunk388032.intl.string(Chunk388032.t["0FYxxw"])
       }), (0, Chunk54381.jsx)(Chunk481060.njP.Item, {
         id: "VOICE",
-        className: Chunk627641.tabBarItem,
+        className: Chunk183322.tabBarItem,
         children: Chunk388032.intl.string(Chunk388032.t["3WeSiE"])
       }), exports]
     })
@@ -141,7 +141,7 @@ class Z extends Chunk473749.PureComponent {
         e = this.renderGeneralSettings()
     }
     return (0, Chunk54381.jsx)(Chunk481060.h21, {
-      className: Chunk627641.content,
+      className: Chunk183322.content,
       children: module
     }, exports)
   }
@@ -231,7 +231,7 @@ class Z extends Chunk473749.PureComponent {
   }
   renderDeveloperSettings() {
     return (0, Chunk54381.jsx)("div", {
-      className: Chunk10198.marginBottom20,
+      className: Chunk197571.marginBottom20,
       children: (0, Chunk54381.jsx)(Chunk481060.q4e, {
         label: "Crashes",
         value: true,
@@ -261,7 +261,7 @@ class Z extends Chunk473749.PureComponent {
   render() {
     return (0, Chunk54381.jsxs)(Chunk481060.VqE, {
       "aria-label": Chunk388032.intl.string(Chunk388032.t["35G2Mq"]),
-      className: Chunk627641.container,
+      className: Chunk183322.container,
       children: [this.renderHeader(), this.renderBody()]
     })
   }

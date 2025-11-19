@@ -1,4 +1,4 @@
-/** Chunk was on 84283 **/
+/** Chunk was on 69844 **/
 /** chunk id: 215453, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk49012 = require("./49012.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk272588 = require("./272588.js");
+  Chunk74380 = require("./74380.js");
 let p = Chunk63063.Z.getArticleURL(Chunk981631.BhN.BOT_DATA_ACCESS);
 
 function m(e) {

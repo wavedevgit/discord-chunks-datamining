@@ -1,1 +1,1 @@
-{"id":"207035","type":"experiment","data":{"kind":"user","id":"2023-08-30_open-in-popout","label":"Open Channel in Popout","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"97710"}}
+{"id":"207035","type":"experiment","data":{"kind":"user","id":"2023-08-30_open-in-popout","label":"Open Channel in Popout","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"51307"}}

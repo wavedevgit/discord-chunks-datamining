@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk687683 = require("./687683.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk483008 = require("./483008.js");
+  Chunk797303 = require("./797303.js");
 
 function N() {
   let e = Chunk473749.useRef(null),
@@ -73,12 +73,12 @@ function N() {
       }, u)
     }, [exports, Chunk120356, P]),
     L = Chunk473749.useCallback(() => (0, Chunk54381.jsxs)(Chunk82295.Z, {
-      className: Chunk483008.sectionTitle,
+      className: Chunk797303.sectionTitle,
       children: [Chunk388032.intl.format(Chunk388032.t.C79Edh, {
         count: require
       }), N && require > 0 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk483008.titleDivider,
+          className: Chunk797303.titleDivider,
           variant: "eyebrow",
           color: "header-secondary",
           tag: "span",

@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk687683 = require("./687683.js"),
-  Chunk24665 = require("./24665.js");
+  Chunk978070 = require("./978070.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -77,7 +77,7 @@ let g = function(e) {
           null != g && (S(true), (0, u.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("79695"), n.e("69220"), n.e("71129")]).then(n.bind(n, 881351));
+            } = await Promise.all([n.e("79695"), n.e("69220"), n.e("74820")]).then(n.bind(n, 881351));
             return t => (0, r.jsx)(e, h(f({}, t), {
               user: g
             }))

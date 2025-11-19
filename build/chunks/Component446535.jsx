@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk485386 = require("./485386.js"),
   Chunk496675 = require("./496675.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk184230 = require("./184230.js");
+  Chunk797966 = require("./797966.js");
 let p = e => {
   let {
     guild: t,

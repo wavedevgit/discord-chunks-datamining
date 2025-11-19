@@ -1,3 +1,0 @@
-/** Chunk was on 60867 **/
-/** chunk id: 47109, original params: e (module,exports,require) **/
-module.exports = JSON.parse('{"+utqaz":["Επιλογή φόντου δώρου: ",[1,"giftStyle"]],"B9XqQk":["Κουτί"],"AJ4iir":["Τούρτα"],"P5keo3":["Σεντούκι"],"w84vET":["Καφές"],"6dCq/u":["Φλιτζάνι"],"+HMF8k":["Nitroween"],"vd1fu/":["Εορταστικό κουτί"],"aubYGR":["Εορταστική τούρτα"],"vjxYqU":["Εορταστικό σεντούκι"],"bHuJLa":["Εορταστικός καφές"],"M6cPwB":["Χιονόμπαλα"],"GzPel1":["Κουτί"]}')

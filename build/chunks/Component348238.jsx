@@ -167,7 +167,7 @@ function B(e, t, a, s) {
     }), (0, o.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("93375"), n.e("38342"), n.e("37220"), n.e("951")]).then(n.bind(n, 225138));
+      } = await Promise.all([n.e("93375"), n.e("38342"), n.e("37220"), n.e("79531")]).then(n.bind(n, 225138));
       return n => (0, r.jsx)(e, R(C({}, n), {
         message: c,
         channel: i,

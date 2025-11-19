@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk74538 = require("./74538.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk973812 = require("./973812.js");
+  Chunk209857 = require("./209857.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,7 +76,7 @@ class b extends Chunk473749.Component {
       className: Chunk442837,
       children: [b && (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
-        className: Chunk973812.formTitle,
+        className: Chunk209857.formTitle,
         children: Chunk388032.intl.string(Chunk388032.t.Ogvn5o)
       }), null != module && (Chunk120356 || !Chunk473749) ? (0, Chunk54381.jsx)(Chunk481060.Checkbox, {
         checked: S,
@@ -98,7 +98,7 @@ class b extends Chunk473749.Component {
           }
         })
       }) : null, null == Chunk850840 ? null : (0, Chunk54381.jsx)("div", {
-        className: o()(Chunk973812.finePrint, T),
+        className: o()(Chunk209857.finePrint, T),
         children: Chunk850840
       }), b ? (0, Chunk54381.jsxs)("div", {
         className: Chunk442837,
@@ -110,11 +110,11 @@ class b extends Chunk473749.Component {
           disabled: Chunk512722,
           label: Chunk388032.intl.string(Chunk388032.t["DFCVN+"])
         }), (0, Chunk54381.jsx)("div", {
-          className: Chunk973812.finePrint,
+          className: Chunk209857.finePrint,
           children: Chunk388032.intl.string(Chunk388032.t.jhu6zm)
         })]
       }) : null, g && (0, Chunk54381.jsxs)("div", {
-        className: Chunk973812.finePrint,
+        className: Chunk209857.finePrint,
         children: ["*", Chunk388032.intl.format(Chunk388032.t["5zmY3F"], {
           documentationLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.LOCALIZED_PRICING)
         })]

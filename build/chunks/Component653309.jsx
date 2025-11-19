@@ -10,9 +10,9 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk887490 = require("./887490.js"),
-  Chunk990376 = require("./990376.js"),
-  Chunk53457 = require("./53457.js"),
-  Chunk939194 = require("./939194.js");
+  Chunk12888 = require("./12888.js"),
+  Chunk953782 = require("./953782.js"),
+  Chunk3954 = require("./3954.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,25 +53,25 @@ function _(e, t) {
   }), e
 }
 let p = {
-  strong: Chunk990376.bold,
-  em: Chunk990376.italics,
-  u: Chunk990376.underline,
-  s: Chunk990376.strikethrough,
-  inlineCode: Chunk990376.inlineCode,
-  link: Chunk990376.fakeLink,
-  url: Chunk990376.fakeLink,
-  autolink: Chunk990376.fakeLink,
-  silentPrefix: Chunk990376.fakeLink,
-  spoiler: a()(Chunk939194.spoilerContent, Chunk939194.spoilerMarkdownContent, Chunk939194.obscuredTextContent, Chunk990376.spoiler),
-  staticRouteLink: Chunk990376.fakeLink,
-  syntaxBefore: Chunk990376.syntaxBefore,
-  syntaxAfter: Chunk990376.syntaxAfter,
-  codeBlockText: Chunk990376.codeBlockText,
-  codeBlockSyntax: Chunk990376.codeBlockSyntax,
-  codeBlockLang: Chunk990376.codeBlockLang,
-  subtext: Chunk990376.subtext,
-  mentionSuggestion: Chunk53457.mentionSuggestion,
-  mentionSuggestionSimpleColorVariant: Chunk53457.mentionSuggestionSimpleColorVariant
+  strong: Chunk12888.bold,
+  em: Chunk12888.italics,
+  u: Chunk12888.underline,
+  s: Chunk12888.strikethrough,
+  inlineCode: Chunk12888.inlineCode,
+  link: Chunk12888.fakeLink,
+  url: Chunk12888.fakeLink,
+  autolink: Chunk12888.fakeLink,
+  silentPrefix: Chunk12888.fakeLink,
+  spoiler: a()(Chunk3954.spoilerContent, Chunk3954.spoilerMarkdownContent, Chunk3954.obscuredTextContent, Chunk12888.spoiler),
+  staticRouteLink: Chunk12888.fakeLink,
+  syntaxBefore: Chunk12888.syntaxBefore,
+  syntaxAfter: Chunk12888.syntaxAfter,
+  codeBlockText: Chunk12888.codeBlockText,
+  codeBlockSyntax: Chunk12888.codeBlockSyntax,
+  codeBlockLang: Chunk12888.codeBlockLang,
+  subtext: Chunk12888.subtext,
+  mentionSuggestion: Chunk953782.mentionSuggestion,
+  mentionSuggestionSimpleColorVariant: Chunk953782.mentionSuggestionSimpleColorVariant
 };
 
 function h(e, t) {

@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk291511 = require("./291511.jsx"),
   Chunk295822 = require("./295822.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk741518 = require("./741518.js");
+  Chunk852017 = require("./852017.js");
 
 function f() {
   let e = (0, Chunk925513.v6)(),
@@ -36,7 +36,7 @@ function f() {
     }), (0, Chunk54381.jsx)(Chunk526156.z, {
       tabs: exports,
       orientation: "vertical",
-      tabsClassName: Chunk741518.tabs
+      tabsClassName: Chunk852017.tabs
     })]
   })
 }

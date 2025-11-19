@@ -61,7 +61,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk847446 = require("./847446.js");
+  Chunk565870 = require("./565870.js");
 
 function en(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -172,7 +172,7 @@ function eo() {
     }), (0, Chunk54381.jsx)(Chunk787025.G, {
       removeChildWrapper: true,
       children: (0, Chunk54381.jsx)("div", {
-        className: Chunk847446.deepLinkContainer,
+        className: Chunk565870.deepLinkContainer,
         children: module
       })
     })
@@ -233,9 +233,9 @@ function es(e) {
 
 function el() {
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk847446.loadingContainer,
+    className: Chunk565870.loadingContainer,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
-      className: Chunk847446.spinner
+      className: Chunk565870.spinner
     })
   })
 }

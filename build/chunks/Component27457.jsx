@@ -58,7 +58,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk524484 = require("./524484.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk400872 = require("./400872.js");
+  Chunk7504 = require("./7504.js");
 let ei = [Chunk354459.fO.ACTIVITY],
   es = Chunk473749.memo(e => {
     var t, l, s, o, c, h, v;
@@ -226,8 +226,8 @@ let ei = [Chunk354459.fO.ACTIVITY],
           idle: ej
         })
     }
-    let e9 = i.useRef(null),
-      e5 = y.type === $.fO.STREAM ? u.pzj : u.Odl;
+    let e5 = i.useRef(null),
+      e9 = y.type === $.fO.STREAM ? u.pzj : u.Odl;
     return (0, n.jsx)(p.Z, {
       section: q.jXE.VOICE_CHANNEL_TILE,
       children: (0, n.jsx)("div", {
@@ -246,7 +246,7 @@ let ei = [Chunk354459.fO.ACTIVITY],
           isShaking: ek,
           className: en.tile,
           children: [(0, n.jsx)(W.Z, {
-            ref: e9,
+            ref: e5,
             className: a()(en.tile, {
               [en.noBorder]: ed,
               [en.noInteraction]: null == U,
@@ -277,8 +277,8 @@ let ei = [Chunk354459.fO.ACTIVITY],
                   channelId: es.id,
                   guildId: es.getGuildId(),
                   containerDimensions: {
-                    width: null != (o = null == e9 || null == (t = e9.current) ? true : t.clientWidth) ? o : 0,
-                    height: null != (c = null == e9 || null == (l = e9.current) ? true : l.clientHeight) ? c : 0
+                    width: null != (o = null == e5 || null == (t = e5.current) ? true : t.clientWidth) ? o : 0,
+                    height: null != (c = null == e5 || null == (l = e5.current) ? true : l.clientHeight) ? c : 0
                   }
                 })
               }) : null, e7, ed ? null : (0, n.jsx)("div", {
@@ -286,7 +286,7 @@ let ei = [Chunk354459.fO.ACTIVITY],
                 children: e1
               }), eu ? (0, n.jsx)("div", {
                 className: en.selectedScreen,
-                children: (0, n.jsx)(e5, {
+                children: (0, n.jsx)(e9, {
                   size: "md",
                   color: "currentColor",
                   className: en.selectedIcon
@@ -354,7 +354,7 @@ let ei = [Chunk354459.fO.ACTIVITY],
             participant: y
           }), (0, n.jsx)(T.Z, {
             isFiring: eO,
-            callTileRef: e9.current
+            callTileRef: e5.current
           })]
         })
       })

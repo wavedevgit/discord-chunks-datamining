@@ -19,10 +19,10 @@ var Chunk109117 = require("./109117.js"),
   Chunk710845 = require("./710845.js");
 require("./729345.js");
 var Chunk981631 = require("./981631.js");
-require.p = (null != (r = window.GLOBAL_ENV.STATIC_ENDPOINT) ? r : "") + window.GLOBAL_ENV.PUBLIC_PATH, true === window.__METICULOUS_ENABLED && require.e("19083").then(require.bind(require, 353182)).then(e => e.init()), (0, Chunk627420.yR)(Chunk781272.Z), (0, Chunk902866.Y)(Chunk213919, Chunk579806.Z), Chunk442837.ZP.Emitter.injectBatchEmitChanges(Chunk731965.j), Chunk442837.ZP.PersistedStore.disableWrites = __OVERLAY__, Chunk442837.ZP.initialize(), require.e("31762").then(require.t.bind(require, 475290, 19));
+require.p = (null != (r = window.GLOBAL_ENV.STATIC_ENDPOINT) ? r : "") + window.GLOBAL_ENV.PUBLIC_PATH, true === window.__METICULOUS_ENABLED && require.e("19083").then(require.bind(require, 353182)).then(e => e.init()), (0, Chunk627420.yR)(Chunk781272.Z), (0, Chunk902866.Y)(Chunk213919, Chunk579806.Z), Chunk442837.ZP.Emitter.injectBatchEmitChanges(Chunk731965.j), Chunk442837.ZP.PersistedStore.disableWrites = __OVERLAY__, Chunk442837.ZP.initialize(), require.e("40637").then(require.t.bind(require, 281307, 19));
 let E = window.GLOBAL_ENV.RELEASE_CHANNEL,
-  b = "470032",
-  y = "20dbadc1a2752130d7d5414e1ccd0e9ab2c057c5";
+  b = "470054",
+  y = "13c864388b38f31d42b6b91987d9ac0f75634485";
 new Chunk710845.Z().log("[BUILD INFO] Release Channel: ".concat(E, ", Build Number: ").concat(b, ", Version Hash: ").concat(y)), Chunk960048.Z.setTags({
   appContext: Chunk981631.e3s
 }), Chunk627845.Z.initBasic(), Chunk675896.Z.init(), Chunk481060.dxT.init(), Chunk109117.S1()

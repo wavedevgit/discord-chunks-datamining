@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk399521 = require("./399521.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk664688 = require("./664688.js");
+  Chunk944658 = require("./944658.js");
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -174,12 +174,12 @@ function x() {
   } = exports, x = Chunk120356.scrollWidth > Chunk120356.clientWidth, A = Chunk120356.scrollLeft > 0, Z = Chunk120356.scrollLeft < Chunk120356.scrollWidth - Chunk120356.clientWidth - 2;
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk664688.frequentFriendsRow,
+      className: Chunk944658.frequentFriendsRow,
       children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk664688.frequentFriendsHeader,
+        className: Chunk944658.frequentFriendsHeader,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
-          className: Chunk664688.frequentFriendsTitle,
+          className: Chunk944658.frequentFriendsTitle,
           children: Chunk388032.intl.string(Chunk388032.t.QEh90H)
         }), (0, Chunk54381.jsx)(Chunk481060.aML, {
           "data-migration-pending": true,
@@ -192,9 +192,9 @@ function x() {
         ref: e => {
           d.current = e, g.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
-        className: a()(Chunk664688.frequentFriendsAvatars, {
-          [Chunk664688.scrollMaskLeft]: x && A,
-          [Chunk664688.scrollMaskRight]: x && Z
+        className: a()(Chunk944658.frequentFriendsAvatars, {
+          [Chunk944658.scrollMaskLeft]: x && A,
+          [Chunk944658.scrollMaskRight]: x && Z
         }),
         orientation: "horizontal",
         onScroll: Chunk592125,

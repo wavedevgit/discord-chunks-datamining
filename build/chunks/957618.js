@@ -1,10 +1,9 @@
-/** Chunk was on 61670 **/
-/** chunk id: 957618, original params: e,n,t (module,exports,require) **/
-module.exports = {
-  stepBody: "stepBody_fa6a46",
-  bodyColumnLeft: "bodyColumnLeft_fa6a46",
-  bodyColumnRight: "bodyColumnRight_fa6a46",
-  skuImage: "skuImage_fa6a46",
-  customGiftMessageWrapper: "customGiftMessageWrapper_fa6a46",
-  customGiftMessage: "customGiftMessage_fa6a46"
-}
+/** Chunk was on web.js **/
+/** chunk id: 957618, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+var r = {
+  badge: "badge_c2b88c",
+  default: "default_c2b88c",
+  expressive: "expressive_c2b88c"
+};
+require.r(module.exports = r)

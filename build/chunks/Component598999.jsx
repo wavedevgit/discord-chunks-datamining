@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk294218 = require("./294218.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk509447 = require("./509447.js");
+  Chunk129633 = require("./129633.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -166,7 +166,7 @@ class Z extends Chunk473749.PureComponent {
   }
   render() {
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk509447.actionButtons,
+      className: Chunk129633.actionButtons,
       children: [this.renderJumpButton(), this.renderCloseButton()]
     })
   }

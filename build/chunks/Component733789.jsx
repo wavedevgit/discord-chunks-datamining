@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk51144 = require("./51144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk913183 = require("./913183.js");
+  Chunk157684 = require("./157684.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -126,9 +126,9 @@ class O extends Chunk473749.PureComponent {
       userInfo: i
     } = module;
     return 0 === Chunk473749.length ? null : (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk913183.recommendationActivity, exports),
+      className: a()(Chunk157684.recommendationActivity, exports),
       children: [(0, Chunk54381.jsx)(Chunk237583.Z, {
-        className: Chunk913183.players,
+        className: Chunk157684.players,
         users: Chunk473749.map(e => {
           let {
             user: t
@@ -139,7 +139,7 @@ class O extends Chunk473749.PureComponent {
         max: 4,
         renderMoreUsers: this.renderPlayerOverflow
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk913183.description,
+        className: Chunk157684.description,
         children: this.renderDescription(require, Chunk473749)
       })]
     })

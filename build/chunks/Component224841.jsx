@@ -11,15 +11,15 @@ var Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk747800 = require("./747800.js");
+  Chunk820796 = require("./820796.js");
 let u = () => (0, Chunk54381.jsx)(Chunk388905.ZP, {
   children: (0, Chunk54381.jsxs)("div", {
-    className: Chunk747800.contentContainer,
+    className: Chunk820796.contentContainer,
     children: [(0, Chunk54381.jsx)(Chunk388905.Dx, {
-      className: Chunk747800.title,
+      className: Chunk820796.title,
       children: Chunk388032.intl.string(Chunk388032.t.nCB6Ga)
     }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-      className: Chunk747800.subtitle,
+      className: Chunk820796.subtitle,
       children: Chunk388032.intl.format(Chunk388032.t.KQgoxG, {
         underageMessage: Chunk388032.intl.string(Chunk388032.t.WqEH4D)
       })

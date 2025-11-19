@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk281195 = require("./281195.js");
+  Chunk858187 = require("./858187.js");
 let o = function() {
   return (0, Chunk54381.jsx)(Chunk481060.Fbu, {
     size: "md",
     color: "currentColor",
-    className: Chunk281195.icon
+    className: Chunk858187.icon
   })
 }

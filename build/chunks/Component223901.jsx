@@ -1,7 +1,7 @@
-/** Chunk was on 91792 **/
-/** chunk id: 223901, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 36970 **/
+/** chunk id: 223901, original params: s,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,24 +9,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk91159 = require("./91159.js"),
   Chunk593130 = require("./593130.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk70934 = require("./70934.js");
+  Chunk225079 = require("./225079.js");
 
-function d(e) {
+function u(s) {
   let {
-    channel: t,
+    channel: e,
     onClose: n,
-    transitionState: d
-  } = e;
+    transitionState: u
+  } = s;
   return r.useEffect(() => {
-    (0, o.U4)()
-  }, []), (0, a.jsx)(c.IX, {
-    transitionState: d,
-    "aria-label": _.intl.string(_.t.B2panI),
+    (0, i.U4)()
+  }, []), (0, t.jsx)(a.IX, {
+    transitionState: u,
+    "aria-label": c.intl.string(c.t.B2panI),
     size: "lg",
     onClose: n,
-    children: (0, a.jsx)(s.Z, {
-      className: i.browser,
-      channel: t,
+    children: (0, t.jsx)(o.Z, {
+      className: l.browser,
+      channel: e,
       onClose: n
     })
   })

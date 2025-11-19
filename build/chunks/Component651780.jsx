@@ -1,4 +1,4 @@
-/** Chunk was on 32923 **/
+/** Chunk was on 384 **/
 /** chunk id: 651780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk999382 = require("./999382.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk901550 = require("./901550.js");
+  Chunk424359 = require("./424359.js");
 
 function S(e) {
   let {
@@ -106,7 +106,7 @@ function w() {
         appliedGuildBoosts: exports,
         guildId: module.id
       }) : null, (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk901550.titleBlurb,
+        className: Chunk424359.titleBlurb,
         variant: "text-sm/normal",
         children: Chunk388032.intl.format(Chunk388032.t.hLOkp9, {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.GUILD_SUBSCRIPTIONS)
@@ -121,7 +121,7 @@ function w() {
       tiers: (0, Chunk267642.cP)(null != module && module.features.has(Chunk981631.GuildFeatures.COMMUNITY) && module.maxStageVideoChannelUsers >= Chunk981631.B9o),
       renderTier: P
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk901550.divider
+      className: Chunk424359.divider
     }), require ? (0, Chunk54381.jsx)(Chunk404270.Z, {}) : null, require ? (0, Chunk54381.jsx)(Chunk774380.Z, {
       onOpenPremiumClick: () => void Chunk626135.default.track(Chunk981631.rMx.PREMIUM_PROMOTION_OPENED, {
         location: {

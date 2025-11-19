@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk848572 = require("./848572.js"),
   Chunk787528 = require("./787528.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk513686 = require("./513686.js");
+  Chunk726185 = require("./726185.js");
 let _ = (e, t) => (null == e ? true : e.status) === c.Vq.EARNED ? d.intl.format(d.t.Hu4jfi, {
     date: null != t ? t : new Date
   }) : (null == e ? true : e.status) === c.Vq.UPCOMING ? d.intl.format(d.t.E85fll, {
@@ -36,24 +36,24 @@ let _ = (e, t) => (null == e ? true : e.status) === c.Vq.EARNED ? d.intl.format(
       "--custom-badge-glow-color": (0, Chunk302221.rj)(exports.glowColor, .5)
     };
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk513686.container,
+      className: Chunk726185.container,
       style: y,
       children: [(0, Chunk54381.jsx)("div", {}), " ", (0, Chunk54381.jsx)("img", {
         src: Chunk120356,
         alt: E,
-        className: a()(Chunk513686.badgeImage, {
-          [Chunk513686.upcomingBadge]: exports.status === Chunk848572.Vq.UPCOMING,
-          [Chunk513686.wide]: g
+        className: a()(Chunk726185.badgeImage, {
+          [Chunk726185.upcomingBadge]: exports.status === Chunk848572.Vq.UPCOMING,
+          [Chunk726185.wide]: g
         })
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk513686.textColumn,
+        className: Chunk726185.textColumn,
         children: [(0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-lg/semibold",
-          className: Chunk513686.badgeText,
+          className: Chunk726185.badgeText,
           children: E
         }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-md/normal",
-          className: Chunk513686.badgeText,
+          className: Chunk726185.badgeText,
           children: b
         }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-xs/normal",

@@ -30,7 +30,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk302800 = require("./302800.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk882789 = require("./882789.js"),
+  Chunk252183 = require("./252183.js"),
   Chunk388032 = require("./388032.jsx");
 let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
     itemName: t

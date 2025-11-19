@@ -1,4 +1,4 @@
-/** Chunk was on 71264 **/
+/** Chunk was on 34740 **/
 /** chunk id: 974251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => W
@@ -43,7 +43,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk356659 = require("./356659.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk935730 = require("./935730.js");
+  Chunk90274 = require("./90274.js");
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -102,7 +102,7 @@ let W = Chunk473749.memo(function(e) {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("61342"), n.e("9260")]).then(n.bind(n, 542055));
+      } = await Promise.all([n.e("61342"), n.e("69311")]).then(n.bind(n, 542055));
       return t => (0, i.jsx)(e, z(G({}, t), {
         channelId: q.id,
         onClipClick: e => es({

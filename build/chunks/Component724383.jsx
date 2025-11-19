@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk836768 = require("./836768.js"),
   Chunk766219 = require("./766219.js"),
   Chunk49898 = require("./49898.js"),
-  Chunk791000 = require("./791000.js");
+  Chunk775491 = require("./775491.js");
 let b = function() {
   let e = (0, Chunk442837.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments),
     t = Chunk836768.Z.useField("selectedTab"),
@@ -47,11 +47,11 @@ let b = function() {
       selectedTab: exports
     })
   }, [exports, module]), (0, Chunk54381.jsxs)("section", {
-    className: Chunk791000.container,
+    className: Chunk775491.container,
     children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
       location: (0, Chunk766219.s)(exports)
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk791000.dragRegion
+      className: Chunk775491.dragRegion
     }), require]
   })
 }

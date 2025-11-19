@@ -1,0 +1,19 @@
+/** Chunk was on 91053 **/
+/** chunk id: 757212, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  container: "container_fb64c9",
+  chat: "chat_fb64c9",
+  messagesWrapper: "messagesWrapper_fb64c9",
+  scroller: "scroller_fb64c9",
+  scrollerInner: "scrollerInner_fb64c9",
+  form: "form_fb64c9",
+  channelTextArea: "channelTextArea_fb64c9",
+  channelTextAreaInner: "channelTextAreaInner_fb64c9",
+  channelTextAreaWithTypingIndicator: "channelTextAreaWithTypingIndicator_fb64c9",
+  typingIndicator: "typingIndicator_fb64c9",
+  channelTextAreaInnerError: "channelTextAreaInnerError_fb64c9",
+  starterMessageError: "starterMessageError_fb64c9",
+  submitContainer: "submitContainer_fb64c9",
+  messagePreview: "messagePreview_fb64c9",
+  iconWrapper: "iconWrapper_fb64c9"
+}

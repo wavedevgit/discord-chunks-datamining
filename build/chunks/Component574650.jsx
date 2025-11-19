@@ -22,8 +22,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk284865 = require("./284865.js"),
-  Chunk438944 = require("./438944.js");
+  Chunk342891 = require("./342891.js"),
+  Chunk226910 = require("./226910.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -102,13 +102,13 @@ let A = () => {
     w = null,
     L = null,
     x = null,
-    M = [Chunk284865.notice, Chunk438944.notice];
+    M = [Chunk342891.notice, Chunk226910.notice];
   switch (D) {
     case Chunk246364.wB.SUBMITTED:
       w = Chunk388032.intl.string(Chunk388032.t["5iLvSx"]), L = Chunk388032.intl.string(Chunk388032.t.mqtdmQ), x = R;
       break;
     case Chunk246364.wB.REJECTED:
-      w = Chunk388032.intl.string(Chunk388032.t.lk30cY), L = Chunk388032.intl.string(Chunk388032.t["8RrsHr"]), x = P, M.push(Chunk284865.error);
+      w = Chunk388032.intl.string(Chunk388032.t.lk30cY), L = Chunk388032.intl.string(Chunk388032.t["8RrsHr"]), x = P, M.push(Chunk342891.error);
       break;
     default:
       w = Chunk388032.intl.string(Chunk388032.t.G5YKXP), L = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), x = N
@@ -116,7 +116,7 @@ let A = () => {
   return (0, Chunk54381.jsxs)("div", {
     className: a()(...M),
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk284865.header,
+      className: Chunk342891.header,
       variant: "text-sm/normal",
       children: w
     }), (0, Chunk54381.jsx)(Chunk481060.Button, {

@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk713447 = require("./713447.js"),
-  Chunk636606 = require("./636606.js"),
+  Chunk790519 = require("./790519.js"),
   Chunk55160 = require("./55160.js"),
   Chunk754700 = require("./754700.js"),
   Chunk442837 = require("./442837.js"),
@@ -47,7 +47,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk290691 = require("./290691.js");
+  Chunk273339 = require("./273339.js");
 let W = new Set([Chunk981631.IyS.FIVE_G, Chunk981631.IyS.FOUR_G, Chunk981631.IyS.UNKNOWN]),
   z = {
     tension: 250,
@@ -58,7 +58,7 @@ let W = new Set([Chunk981631.IyS.FIVE_G, Chunk981631.IyS.FOUR_G, Chunk981631.IyS
 function K() {
   let e = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.getState().theme);
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk290691.pauseText,
+    className: Chunk273339.pauseText,
     style: {
       background: (0, Chunk780384.wj)(module) ? "rgba(0, 0, 0, 0.65)" : "rgba(255, 255, 255, 0.65)"
     },
@@ -164,13 +164,13 @@ function $(e) {
     targetRef: e_
   } = (0, F.Yy)(), [ex, ej] = o.useState(true === er ? L.rq.PLAYING : L.rq.PAUSED), [eD, eP] = o.useState(false), [eT, eR] = o.useState(false), eI = (0, y.il)(es), [eN, eA] = o.useState(eI.percentComplete), ew = o.useCallback(e => {
     e0(null), eA(e)
-  }, []), [ek, eM] = o.useState(false), [eL, eV] = o.useState(true), [eZ, eF] = o.useState(false), [eB, eH] = o.useState([]), [eU, eq] = o.useState(h.Z.getEffectiveConnectionSpeed()), [eY, eG] = o.useState(0), [eQ, eW] = o.useState(0), [ez, eK] = o.useState(false), [eX, eJ] = o.useState(false), [e$, e0] = o.useState(null), e1 = o.useRef(true), e2 = o.useRef(null), e4 = o.useRef(null), e9 = (0, x.km)(e => {
+  }, []), [ek, eM] = o.useState(false), [eL, eV] = o.useState(true), [eZ, eF] = o.useState(false), [eB, eH] = o.useState([]), [eU, eq] = o.useState(h.Z.getEffectiveConnectionSpeed()), [eY, eG] = o.useState(0), [eQ, eW] = o.useState(0), [ez, eK] = o.useState(false), [eX, eJ] = o.useState(false), [e$, e0] = o.useState(null), e1 = o.useRef(true), e2 = o.useRef(null), e4 = o.useRef(null), e3 = (0, x.km)(e => {
     var t;
     return null != (t = e.videoProgress[es.id]) ? t : {
       timestampSec: 0,
       duration: 10
     }
-  }, c.X), e7 = (0, x.km)(e => e.setVideoProgress), e8 = (0, x.km)(e => e.muted), e3 = (0, x.km)(e => e.volume), e6 = (0, d.e7)([v.Z], () => v.Z.useReducedMotion), e5 = (0, o.useRef)(null), te = (0, o.useRef)(null), tt = o.useRef(true), tn = (null == (t = es.userStatus) ? true : t.completedAt) != null, [tr, to] = o.useState(null), [tl, ti] = o.useState(false), [ta, ts] = o.useState(false), [tc, tu] = o.useState(null), td = tn ? null != (I = null == (n = e5.current) ? true : n.duration) ? I : 0 : Math.max(e9.maxTimestampSec, eI.progressSeconds), tm = o.useMemo(() => (0, P.T)({
+  }, c.X), e7 = (0, x.km)(e => e.setVideoProgress), e9 = (0, x.km)(e => e.muted), e8 = (0, x.km)(e => e.volume), e6 = (0, d.e7)([v.Z], () => v.Z.useReducedMotion), e5 = (0, o.useRef)(null), te = (0, o.useRef)(null), tt = o.useRef(true), tn = (null == (t = es.userStatus) ? true : t.completedAt) != null, [tr, to] = o.useState(null), [tl, ti] = o.useState(false), [ta, ts] = o.useState(false), [tc, tu] = o.useState(null), td = tn ? null != (I = null == (n = e5.current) ? true : n.duration) ? I : 0 : Math.max(e3.maxTimestampSec, eI.progressSeconds), tm = o.useMemo(() => (0, P.T)({
     quest: es,
     location: U.dr.VIDEO_MODAL
   }), [es]), {
@@ -183,12 +183,12 @@ function $(e) {
       title: (0, y.B2)(e.config),
       subtitle: null != (r = null != (n = null == (t = e.config.ctaConfig) ? true : t.subtitle) ? n : null == o ? true : o.messages.videoEndCtaSubtitle) ? r : G.intl.string(G.t.mxaHfx)
     }
-  }(es), tv = tn ? e9.timestampSec >= e9.duration ? 0 : e9.timestampSec : Math.max(e9.timestampSec, eI.progressSeconds), [tE, tg] = o.useState(L._H.MD), tO = {
+  }(es), tv = tn ? e3.timestampSec >= e3.duration ? 0 : e3.timestampSec : Math.max(e3.timestampSec, eI.progressSeconds), [tE, tg] = o.useState(L._H.MD), tO = {
     [L._H.MD]: 50,
     [L._H.LG]: 58
   };
   (0, f.Ng)(() => {
-    tt.current && (tt.current = false, eq(h.Z.getEffectiveConnectionSpeed()), tn && e9.timestampSec >= e9.duration && e7(es.id, 0, e9.duration))
+    tt.current && (tt.current = false, eq(h.Z.getEffectiveConnectionSpeed()), tn && e3.timestampSec >= e3.duration && e7(es.id, 0, e3.duration))
   });
   let {
     videoVariant: th,
@@ -355,7 +355,7 @@ function $(e) {
       var t;
       null != e5.current && (tm.info("[QV] | seekTimeline | timeSec: ".concat(e)), e0(e / (null != (t = e5.current.duration) ? t : 1) * 100), tq(), eM(true), ts(false), e5.current.currentTime = e, e7(es.id, e, e5.current.duration))
     }, [e5, e7, es.id, tq, tm]),
-    t9 = () => {
+    t3 = () => {
       if (null != e5.current) switch (tm.info("[QV] | handlePlaybackBtnClick | playerState: ".concat(ex)), ex) {
         case L.rq.ENDED:
           t4(0), tY(L.rq.PLAYING);
@@ -370,25 +370,25 @@ function $(e) {
     t7 = e => {
       tu(e)
     },
-    t8 = e => {
+    t9 = e => {
       tu(t => (null == t ? true : t.id) === e.id ? null : t)
     },
-    t3 = o.useCallback(() => {
+    t8 = o.useCallback(() => {
       if (null == e5.current || (tm.info("[QV] | handleTracksLoaded: textTracks.length: ".concat(e5.current.textTracks.length)), 0 === e5.current.textTracks.length)) return;
       let e = e5.current.textTracks[0];
       if (e.mode = "hidden", null != e.cues)
         for (let t = 0; t < e.cues.length; t++) {
           let n = e.cues[t];
-          (0, V.JC)(n) && (n.id = "cue-".concat(t), n.onenter = () => t7(n), n.onexit = () => t8(n))
+          (0, V.JC)(n) && (n.id = "cue-".concat(t), n.onenter = () => t7(n), n.onexit = () => t9(n))
         }
     }, [e5, tm]);
   o.useEffect(() => {
     if (null == te.current) return;
     let e = te.current;
-    return e.addEventListener("load", t3), () => {
-      null != e && e.removeEventListener("load", t3)
+    return e.addEventListener("load", t8), () => {
+      null != e && e.removeEventListener("load", t8)
     }
-  }, [te, t3]);
+  }, [te, t8]);
   let t6 = o.useCallback(e => {
       var t;
       tm.info("[QV] | logVideoError: errorType: ".concat(e, ", videoProgress: ").concat(null == (t = e5.current) ? true : t.currentTime, ", videoAssetId: ").concat(tC, ", connectionSpeed: ").concat(eU)), tk(e)
@@ -454,7 +454,7 @@ function $(e) {
     }, [ni, ev, tT, t0, eE, tw]),
     ns = o.useMemo(() => (0, R.z0)(es, u.X.WATCH_VIDEO, R.n1.VIDEO, R.O.THUMBNAIL), [es]),
     nc = o.useMemo(() => (0, R.z0)(es, u.X.WATCH_VIDEO, R.n1.VIDEO, R.O.CAPTION), [es]),
-    nu = tn || e9.maxTimestampSec >= (null != (Z = null == (m = e5.current) ? true : m.currentTime) ? Z : 0) + 1,
+    nu = tn || e3.maxTimestampSec >= (null != (Z = null == (m = e5.current) ? true : m.currentTime) ? Z : 0) + 1,
     nd = o.useMemo(() => null === (0, R.z0)(es, u.X.WATCH_VIDEO, R.n1.VIDEO, R.O.TRANSCRIPT), [es]),
     nm = eg ? {} : {
       paddingLeft: (0, s.to)([ne.to({
@@ -523,7 +523,7 @@ function $(e) {
           tm.info("[QV] | handleLoadedData: loadingFirstChunk: ".concat(eL)), eL && (t_(null != e2.current ? performance.now() - e2.current : null), eV(false), null != tS.current && (tS.current.config.minAutoBitrate = 8e5))
         },
         onLoadedMetadata: e => {
-          null != e5.current && (tm.info("[QV] | handleLoadedMetadata | videoAssetId: ".concat(tC)), ti(true), th !== R.n1.VIDEO_HLS && t4(tv), e8 ? e5.current.volume = 0 : e5.current.volume = e3)
+          null != e5.current && (tm.info("[QV] | handleLoadedMetadata | videoAssetId: ".concat(tC)), ti(true), th !== R.n1.VIDEO_HLS && t4(tv), e9 ? e5.current.volume = 0 : e5.current.volume = e8)
         },
         onLoadStart: () => {
           e2.current = performance.now(), ty(eU), tm.info("[QV] | handleLoadStart | loadingStartTime: ".concat(e2.current))
@@ -560,7 +560,7 @@ function $(e) {
         onEmptied: () => t6(L.CY.EMPTIED),
         onStalled: () => t6(L.CY.STALLED),
         onClick: () => {
-          tm.info("[QV] | handleVideoClick"), t9()
+          tm.info("[QV] | handleVideoClick"), t3()
         },
         crossOrigin: "anonymous",
         children: [null != nc && (0, r.jsx)("track", {
@@ -724,7 +724,7 @@ function $(e) {
             hideCaptionBtn: null == nc,
             hideTranscriptBtn: nd,
             size: tE,
-            handlePlaybackBtnClick: t9,
+            handlePlaybackBtnClick: t3,
             handleTranscriptBtnClick: () => {
               em(!ed), tT(_.jn.VIDEO_MODAL, ed ? C.jZ.TRANSCRIPT_DISABLE : C.jZ.TRANSCRIPT_ENABLE)
             },

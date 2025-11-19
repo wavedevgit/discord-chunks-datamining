@@ -1,4 +1,4 @@
-/** Chunk was on 71264 **/
+/** Chunk was on 34740 **/
 /** chunk id: 191062, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk903223 = require("./903223.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk513962 = require("./513962.js");
+  Chunk167207 = require("./167207.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -50,9 +50,9 @@ class b extends Chunk473749.PureComponent {
       }),
       children: [(0, Chunk54381.jsx)(g, {
         region: module,
-        className: Chunk513962.regionSelectName
+        className: Chunk167207.regionSelectName
       }), exports ? (0, Chunk54381.jsx)("i", {
-        className: Chunk513962.check
+        className: Chunk167207.check
       }) : null]
     })
   }
@@ -77,14 +77,14 @@ class y extends Chunk473749.PureComponent {
         key: e.id
       }));
     return (0, Chunk54381.jsx)(Chunk481060.nsm, {
-      className: Chunk513962.root,
+      className: Chunk167207.root,
       label: Chunk388032.intl.string(Chunk388032.t.w8gMqh),
       options: Chunk473749,
       value: require,
       onChange: this.handleChangeVoiceRegion,
       renderOption: this.renderOption,
       popoutProps: m,
-      popoutClassName: Chunk513962.regionSelectPopout
+      popoutClassName: Chunk167207.regionSelectPopout
     })
   }
   constructor(...e) {

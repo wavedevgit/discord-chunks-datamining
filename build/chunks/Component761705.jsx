@@ -1,4 +1,4 @@
-/** Chunk was on 84283 **/
+/** Chunk was on 69844 **/
 /** chunk id: 761705, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -17,7 +17,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk44488 = require("./44488.jsx"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk643953 = require("./643953.js");
+  Chunk463747 = require("./463747.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -99,7 +99,7 @@ class j extends Chunk473749.Component {
     return (0, Chunk54381.jsx)(Chunk748780.Z.img, {
       src: module.src,
       alt: "",
-      className: s()(Chunk643953.slide, exports),
+      className: s()(Chunk463747.slide, exports),
       style: this.getStyle()
     })
   }
@@ -158,16 +158,16 @@ class y extends(r = Chunk473749.Component) {
     } = this.props, l = this.props.items[require], o = this.props.items;
     return (0, Chunk54381.jsxs)(Chunk215569.W, {
       component: "div",
-      className: s()(Chunk643953.wrapper, exports),
+      className: s()(Chunk463747.wrapper, exports),
       children: [Chunk299608.length > 1 ? (0, Chunk54381.jsx)(Chunk44488.am, {
-        className: Chunk643953.navPrev,
+        className: Chunk463747.navPrev,
         onClick: this.gotoPrev
       }) : null, null != (e = Chunk120356.component) ? module : (0, Chunk54381.jsx)(j, {
         item: Chunk120356,
         directionHistory: r,
         className: Chunk473749
       }, Chunk120356.src), Chunk299608.length > 1 ? (0, Chunk54381.jsx)(Chunk44488.Pz, {
-        className: Chunk643953.navNext,
+        className: Chunk463747.navNext,
         onClick: this.gotoNext
       }) : null]
     })

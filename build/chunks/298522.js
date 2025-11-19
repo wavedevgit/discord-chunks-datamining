@@ -1,12 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 298522, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 56158 **/
+/** chunk id: 298522, original params: t,n,e (module,exports,require) **/
 module.exports = {
-  container: "container__61733",
-  premiumBrandRefreshContainer: "premiumBrandRefreshContainer__61733",
-  v2Container: "v2Container__61733",
-  iconContainer: "iconContainer__61733",
-  icon: "icon__61733",
-  mask: "mask__61733",
-  textContainer: "textContainer__61733"
+  gradientOuterBorder: "gradientOuterBorder__8f49b",
+  gradientInnerBorder: "gradientInnerBorder__8f49b",
+  svgCopy: "svgCopy__8f49b"
 }

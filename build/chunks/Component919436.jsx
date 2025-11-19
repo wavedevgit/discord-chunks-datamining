@@ -1,11 +1,11 @@
-/** Chunk was on 10023 **/
+/** Chunk was on 65354 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk636606 = require("./636606.js"),
+  Chunk790519 = require("./790519.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -26,7 +26,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk674552 = require("./674552.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk117000 = require("./117000.js");
+  Chunk514483 = require("./514483.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -184,14 +184,14 @@ class A extends(r = Chunk473749.PureComponent) {
         "aria-hidden": true
       }) : true
     }, Chunk43267));
-    return (0, Chunk54381.jsx)(Chunk636606.animated.div, {
+    return (0, Chunk54381.jsx)(Chunk790519.animated.div, {
       style: this.getAnimatedStyle(),
       children: (0, Chunk54381.jsxs)(Chunk682662.H, {
         children: [(0, Chunk54381.jsx)(Chunk276952.Z, {
           hovered: !Chunk199902 && Chunk933557,
           selected: !Chunk199902 && require,
           unread: !Chunk199902 && Chunk358221,
-          className: Chunk117000.pill
+          className: Chunk514483.pill
         }), (0, Chunk54381.jsx)(Chunk662146.Z, {
           text: null != exports ? exports : "",
           selected: require,
@@ -231,7 +231,7 @@ class A extends(r = Chunk473749.PureComponent) {
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("55599")]).then(n.bind(n, 131404));
+        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("31899")]).then(n.bind(n, 131404));
         return n => (0, i.jsx)(e, Z(N({}, n), {
           channel: t,
           user: r

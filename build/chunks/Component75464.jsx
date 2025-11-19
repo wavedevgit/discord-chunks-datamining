@@ -9,7 +9,7 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk153066 = require("./153066.js"),
-  Chunk600122 = require("./600122.js");
+  Chunk800967 = require("./800967.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -20,10 +20,10 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let u = {
-  XSMALL: Chunk600122.xsmall,
-  SMALL: Chunk600122.small,
-  MEDIUM: Chunk600122.medium,
-  LARGE: Chunk600122.large
+  XSMALL: Chunk800967.xsmall,
+  SMALL: Chunk800967.small,
+  MEDIUM: Chunk800967.medium,
+  LARGE: Chunk800967.large
 };
 class h extends(i = Chunk473749.PureComponent) {
   render() {
@@ -65,7 +65,7 @@ class h extends(i = Chunk473749.PureComponent) {
       }
       return e
     }({
-      className: a()((0, Chunk153066.l)(Chunk600122, "iconButton", h), Chunk473749, exports),
+      className: a()((0, Chunk153066.l)(Chunk800967, "iconButton", h), Chunk473749, exports),
       style: {
         backgroundImage: "url('".concat(u && null != i ? i : require, "')")
       },

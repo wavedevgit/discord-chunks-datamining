@@ -1,1 +1,1 @@
-{"id":"645792","type":"experiment","data":{"kind":"user","id":"2022-08_back_to_school","label":"Back to School Event","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Back to School experience enabled","config":{"enabled":true}}]},"fromModule":{"id":"72688"}}
+{"id":"645792","type":"experiment","data":{"kind":"user","id":"2022-08_back_to_school","label":"Back to School Event","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Back to School experience enabled","config":{"enabled":true}}]},"fromModule":{"id":"98639"}}

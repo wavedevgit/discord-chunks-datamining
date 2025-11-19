@@ -1,7 +1,7 @@
-/** Chunk was on 84722 **/
+/** Chunk was on 98878 **/
 /** chunk id: 131154, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -9,51 +9,51 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk987816 = require("./987816.js");
+  Chunk140764 = require("./140764.js");
 
-function o(e) {
+function s(e) {
   let {
     guild: n,
     speakers: t,
-    speakerCount: l,
-    className: o
-  } = e, u = t.slice(0, 5), d = u.map(e => {
-    var t, l;
+    speakerCount: r,
+    className: s
+  } = e, d = t.slice(0, 5), u = d.map(e => {
+    var t, r;
     return (0, i.jsxs)("div", {
       className: c.speakerContainer,
-      children: [(0, i.jsx)(r.qEK, {
+      children: [(0, i.jsx)(l.qEK, {
         src: null == e || null == (t = e.user) ? true : t.getAvatarURL(n.id, 20),
-        size: r.EFr.SIZE_20,
+        size: l.EFr.SIZE_20,
         className: c.avatar,
         "aria-label": "".concat(null == e ? true : e.userNick, "-avatar")
       }), (0, i.jsx)("div", {
         className: c.textInGridContainer,
-        children: (0, i.jsx)(r.Text, {
+        children: (0, i.jsx)(l.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
           className: c.textInGrid,
           children: null == e ? true : e.userNick
         })
       })]
-    }, null == e || null == (l = e.user) ? true : l.id)
-  }), h = l - u.length;
+    }, null == e || null == (r = e.user) ? true : r.id)
+  }), _ = r - d.length;
   return (0, i.jsxs)("div", {
-    className: a()(c.grid, o),
-    children: [d, h > 0 && (0, i.jsxs)("div", {
+    className: a()(c.grid, s),
+    children: [u, _ > 0 && (0, i.jsxs)("div", {
       className: c.speakerContainer,
       children: [(0, i.jsx)("div", {
         className: c.iconMicrophone,
-        children: (0, i.jsx)(r.S6n, {
+        children: (0, i.jsx)(l.S6n, {
           size: "custom",
           color: "currentColor",
           height: 12
         })
-      }), (0, i.jsx)(r.Text, {
+      }), (0, i.jsx)(l.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         className: c.textInGrid,
-        children: s.intl.format(s.t["185ggO"], {
-          count: h
+        children: o.intl.format(o.t["185ggO"], {
+          count: _
         })
       })]
     })]

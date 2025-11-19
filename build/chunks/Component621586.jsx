@@ -1,4 +1,4 @@
-/** Chunk was on 71264 **/
+/** Chunk was on 34740 **/
 /** chunk id: 621586, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk851397 = require("./851397.jsx"),
   Chunk582113 = require("./582113.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk255839 = require("./255839.js");
+  Chunk842350 = require("./842350.js");
 let m = "vc-gifting-".concat((0, Chunk772848.Z)());
 
 function g(e) {

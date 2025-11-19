@@ -1,7 +1,7 @@
-/** Chunk was on 57553 **/
-/** chunk id: 221300, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 65354 **/
+/** chunk id: 221300, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,64 +11,64 @@ var Chunk979554 = require("./979554.js"),
   Chunk566697 = require("./566697.jsx"),
   Chunk876917 = require("./876917.jsx"),
   Chunk688192 = require("./688192.jsx"),
-  Chunk988388 = require("./988388.js");
+  Chunk232644 = require("./232644.js");
 
-function u(e) {
+function d(e) {
   let {
     item: t,
-    profileOwner: r,
-    isHighlighted: u,
-    cardSize: f = l.U.MEDIUM
-  } = e, v = t.collectiblesItem;
-  switch (v.type) {
-    case a.Z.PROFILE_EFFECT:
-      return (0, i.jsx)("div", {
-        className: d.profileEffectPreview,
-        children: (0, i.jsx)(c.Z, {
-          skuId: v.skuId,
-          isHighlighted: u,
+    profileOwner: n,
+    isHighlighted: d,
+    cardSize: p = c.U.MEDIUM
+  } = e, h = t.collectiblesItem;
+  switch (h.type) {
+    case i.Z.PROFILE_EFFECT:
+      return (0, r.jsx)("div", {
+        className: u.profileEffectPreview,
+        children: (0, r.jsx)(s.Z, {
+          skuId: h.skuId,
+          isHighlighted: d,
           isPurchased: false,
           removeSetHeight: true
         })
       });
-    case a.Z.AVATAR_DECORATION:
-      return (0, i.jsx)("div", {
-        className: d.avatarDecorationPreview,
-        children: (0, i.jsx)(s.R, {
-          item: v,
-          user: r,
-          isHighlighted: u,
+    case i.Z.AVATAR_DECORATION:
+      return (0, r.jsx)("div", {
+        className: u.avatarDecorationPreview,
+        children: (0, r.jsx)(o.R, {
+          item: h,
+          user: n,
+          isHighlighted: d,
           isPurchased: false,
-          avatarSize: n.EFr.SIZE_80
+          avatarSize: l.EFr.SIZE_80
         })
       });
-    case a.Z.NAMEPLATE:
-      return (0, i.jsxs)("div", {
-        className: d.nameplatePreview,
-        children: [(0, i.jsx)("div", {
-          className: d.nameplateTopLeft,
-          children: (0, i.jsx)(o.Z, {
-            user: r,
-            nameplate: v,
-            isHighlighted: u,
+    case i.Z.NAMEPLATE:
+      return (0, r.jsxs)("div", {
+        className: u.nameplatePreview,
+        children: [(0, r.jsx)("div", {
+          className: u.nameplateTopLeft,
+          children: (0, r.jsx)(a.Z, {
+            user: n,
+            nameplate: h,
+            isHighlighted: d,
             showPlaceholderUser: true,
             showStatus: true,
             isPurchased: false,
             nameplatePreviewSize: "default",
-            width: f === l.U.SMALL ? 136 : 200
+            width: p === c.U.SMALL ? 136 : 200
           })
-        }), (0, i.jsx)("div", {
-          className: d.nameplateBottomRight,
+        }), (0, r.jsx)("div", {
+          className: u.nameplateBottomRight,
           "aria-hidden": true,
-          children: (0, i.jsx)(o.Z, {
-            user: r,
-            nameplate: v,
-            isHighlighted: u,
+          children: (0, r.jsx)(a.Z, {
+            user: n,
+            nameplate: h,
+            isHighlighted: d,
             showPlaceholderUser: true,
             showStatus: true,
             isPurchased: false,
             nameplatePreviewSize: "default",
-            width: f === l.U.SMALL ? 136 : 200
+            width: p === c.U.SMALL ? 136 : 200
           })
         })]
       });

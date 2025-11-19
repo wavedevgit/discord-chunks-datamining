@@ -1,0 +1,7 @@
+/** Chunk was on 34740 **/
+/** chunk id: 245995, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  chatHeaderBar: "chatHeaderBar_dc83f5",
+  chatHeaderBarText: "chatHeaderBarText_dc83f5",
+  narrow: "narrow_dc83f5"
+}

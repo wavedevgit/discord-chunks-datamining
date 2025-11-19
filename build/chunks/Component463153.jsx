@@ -8,14 +8,14 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk527083 = require("./527083.js"),
+  Chunk570133 = require("./570133.js"),
   Chunk258720 = require("./258720.js");
 
 function l() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk527083.container,
+    className: Chunk570133.container,
     children: [(0, Chunk54381.jsx)("img", {
-      className: Chunk527083.emptySearchIcon,
+      className: Chunk570133.emptySearchIcon,
       src: Chunk258720,
       alt: ""
     }), (0, Chunk54381.jsx)(Chunk793030.xvT, {

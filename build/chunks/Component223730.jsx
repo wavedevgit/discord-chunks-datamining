@@ -1,4 +1,4 @@
-/** Chunk was on 10023 **/
+/** Chunk was on 65354 **/
 /** chunk id: 223730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S$: () => m,
@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk88658 = require("./88658.js"),
   Chunk782896 = require("./782896.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk872793 = require("./872793.js"),
+  Chunk361742 = require("./361742.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk905618 = require("./905618.js");
+  Chunk95049 = require("./95049.js");
 let m = () => {
   (0, Chunk518596.openUserSettings)(Chunk313789.n.ACTIVITY_PRIVACY_PANEL, {
     section: Chunk981631.oAB.ACTIVITY_PRIVACY

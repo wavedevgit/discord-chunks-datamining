@@ -1,4 +1,4 @@
-/** Chunk was on 10023 **/
+/** Chunk was on 65354 **/
 /** chunk id: 315174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => D,
@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk636606 = require("./636606.js"),
+  Chunk790519 = require("./790519.js"),
   Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk228451 = require("./228451.js");
+  Chunk869786 = require("./869786.js");
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -144,7 +144,7 @@ function N() {
   return (0, Chunk54381.jsx)(Chunk481060.r7p, {
     size: "custom",
     color: "currentColor",
-    className: Chunk228451.favoritesIcon,
+    className: Chunk869786.favoritesIcon,
     height: 20,
     width: 20
   })
@@ -224,7 +224,7 @@ function R(e) {
     _ ? (0, d.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("28297")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
       return t => (0, r.jsx)(e, S(E({}, t), {
         guild: o,
         source: v.t4x.GUILD_HEADER_INVITE_BUTTON
