@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk298213 = require("./298213.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk231796 = require("./231796.js");
@@ -37,26 +37,23 @@ function c(e) {
       u(false)
     }
   }, [n, t]);
-  return (0, r.jsxs)("div", {
+  return (0, r.jsx)("div", {
     className: s.friendRequestContainer,
-    children: [(0, r.jsx)(l.zx, {
-      className: s.acceptButton,
-      look: l.zx.Looks.FILLED,
-      color: l.zx.Colors.GREEN,
-      size: l.zx.Sizes.NONE,
-      submitting: c,
-      disabled: d,
-      onClick: f,
-      children: a.intl.string(a.t.Zcibdf)
-    }), (0, r.jsx)(l.zx, {
-      className: s.ignoreButton,
-      look: l.zx.Looks.FILLED,
-      color: l.zx.Colors.PRIMARY,
-      size: l.zx.Sizes.NONE,
-      submitting: d,
-      disabled: c,
-      onClick: h,
-      children: a.intl.string(a.t.xuio0C)
-    })]
+    children: (0, r.jsxs)(l.hE2, {
+      size: "sm",
+      children: [(0, r.jsx)(l.zxk, {
+        variant: "active",
+        onClick: f,
+        text: a.intl.string(a.t.Zcibdf),
+        loading: c,
+        disabled: d
+      }), (0, r.jsx)(l.zxk, {
+        variant: "secondary",
+        onClick: h,
+        text: a.intl.string(a.t.xuio0C),
+        loading: d,
+        disabled: c
+      })]
+    })
   })
 }

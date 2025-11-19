@@ -2,8 +2,8 @@
 /** chunk id: 645917, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  RB: () => O,
-  ZP: () => v
+  R: () => O,
+  Z: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -109,50 +109,48 @@ function O(e) {
       caretConfig: T,
       scrollBehavior: S,
       showCloseButton: A = true,
-      isTooltip: C = false,
-      modal: N = false,
+      isCaretHoverable: C = false,
+      shouldTrapFocus: N = false,
       returnRef: R,
-      popoverRef: P,
-      onNudgeChange: D
+      onNudgeChange: P
     } = e,
-    w = E(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isTooltip", "modal", "returnRef", "popoverRef", "onNudgeChange"]);
-  let [L, x] = i.useState(null != I ? I : "top");
+    D = E(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isCaretHoverable", "shouldTrapFocus", "returnRef", "onNudgeChange"]);
+  let [w, L] = i.useState(null != I ? I : "top");
   i.useEffect(() => {
-    null != I && x(I)
+    null != I && L(I)
   }, [I]);
-  let M = i.useMemo(() => {
+  let x = i.useMemo(() => {
       var e;
       return {
-        position: (0, d.z)(L),
+        position: (0, d.z)(w),
         align: null != (e = null == T ? true : T.align) ? e : "center",
         customOffset: null == T ? true : T.customOffset
       }
-    }, [L, T]),
-    j = i.useCallback((e, t) => {
-      null == v || v(t)
+    }, [w, T]),
+    M = i.useCallback(() => {
+      null == v || v()
     }, [v]),
-    k = i.useCallback(e => {
+    j = i.useCallback(e => {
       null == v || v(e)
     }, [v]),
-    U = i.useCallback(e => {
-      x(e)
+    k = i.useCallback(e => {
+      L(e)
     }, []),
-    G = C ? _.caretHoverable : true;
-  return (0, r.jsx)(s.m, g(h({}, w), {
-    position: L,
-    onRequestClose: j,
+    U = C ? _.caretHoverable : true;
+  return (0, r.jsx)(s.m, g(h({}, D), {
+    position: w,
+    onRequestClose: M,
     gradientColor: O,
-    onPositionChange: U,
-    onNudgeChange: D,
+    onPositionChange: k,
+    onNudgeChange: P,
     scrollBehavior: S,
     modal: N,
     returnRef: R,
     gradientOffsetBottom: 0,
     children: (0, r.jsxs)("div", {
-      ref: P,
       "data-mana-component": "popover",
       children: [A && (0, r.jsx)(u.u, {
-        onClick: k,
+        onClick: j,
         variant: null != O ? "color-mix" : true
       }), null != p && (0, r.jsx)("div", {
         className: o()(_.graphic, {
@@ -167,12 +165,11 @@ function O(e) {
       }), null != b && b.length > 0 ? (0, r.jsx)(l.k, {
         actions: b,
         className: _.actionBar
-      }) : null, null != M && (0, r.jsx)(c.$, {
-        caretConfig: M,
-        className: G
+      }) : null, null != x && (0, r.jsx)(c.$, {
+        caretConfig: x,
+        className: U
       })]
     })
   }))
 }
-require("./799607.jsx");
 let v = O

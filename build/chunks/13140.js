@@ -2,6 +2,7 @@
 /** chunk id: 13140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Al: () => B,
   BB: () => U,
   C$: () => C,
   H9: () => A,
@@ -268,4 +269,8 @@ function G(e, t) {
     let [i, a, o] = e, [s, l, c] = t[r];
     return i === s && a === l && (!n || o === c)
   })
+}
+
+function B(e) {
+  return null != e && "object" == typeof e && "nativeEvent" in e && 0 === e.nativeEvent.clientX && 0 === e.nativeEvent.clientY
 }

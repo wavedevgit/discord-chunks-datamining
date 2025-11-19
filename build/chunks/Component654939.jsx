@@ -95,13 +95,13 @@ let g = e => {
     };
   return "tooltip" === h ? (0, r.jsx)(c.Z, m(p({
     targetElementRef: E,
-    tooltipHeight: 300,
+    estimatedTooltipHeight: 300,
     delay: g,
     onShow: T
   }, P), {
     children: _
   })) : (0, r.jsxs)(r.Fragment, {
-    children: [_, (0, r.jsx)(l.ZP, p({
+    children: [_, (0, r.jsx)(l.Z, p({
       targetElementRef: E,
       shouldShow: true,
       onRequestClose: R,

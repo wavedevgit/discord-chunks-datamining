@@ -118,15 +118,18 @@ class _ {
   }
   record() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Date.now();
-    if (0 === this.time_) this.time_ = module, this.numImports = Chunk586444.dp(), this.importTime = u(), Chunk135273.Z.mark(this.emoji, this.name);
+    if (0 === this.time_) this.recordState_(module);
     else if (!this.onlyOnce) {
       if (this.alwaysRecord) {
-        this.time_ = 0, this.record(module);
+        this.recordState_(module), c();
         return
       }
       Chunk135273.Z.mark(this.emoji, this.name)
     }
     c()
+  }
+  recordState_(e) {
+    this.time_ = e, this.numImports = i.dp(), this.importTime = u(), r.Z.mark(this.emoji, this.name)
   }
   hasData() {
     return this.time_ > 0
