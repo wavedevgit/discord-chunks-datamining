@@ -228,8 +228,7 @@ let V = (0, Chunk884697.IC)(90),
             children: [...Array(null != eb ? eb : 4)].map((e, t) => ey ? (0, r.jsx)(B.Z, {}, t) : (0, r.jsx)(k.K, {}, t))
           }) : (0, r.jsx)(L.zp.Provider, {
             value: {
-              isRental: en,
-              rentalDuration: er
+              rentalDuration: en ? er : true
             },
             children: eE.map((e, t) => {
               let n = v.Z.getCategoryForProduct(e.skuId);

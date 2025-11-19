@@ -195,7 +195,6 @@ let N = e => {
               analyticsLocations: n,
               itemConsumed: null == (i = a[0]) ? true : i.consumed,
               purchaseType: T.o8.ORB,
-              isRental: true,
               rentalDuration: o,
               rentalExpiresAt: s
             })
@@ -278,7 +277,7 @@ let N = e => {
       text: c,
       prioritizedCurrency: u,
       onClickAnalytics: d
-    } = e, f = (0, i.e7)([p.default], () => p.default.getCurrentUser()), g = m.ZP.canUseCollectibles(f), h = (0, O.$l)(), {
+    } = e, f = (0, i.e7)([p.default], () => p.default.getCurrentUser()), g = m.ZP.canUseCollectibles(f), h = (0, O.jB)(), {
       isPurchased: _,
       isPartiallyOwnedBundle: S
     } = (0, E.L)(t), y = (0, b.G1)(t), I = (0, b.rN)(t), {
@@ -296,7 +295,7 @@ let N = e => {
       isPremiumUser: g,
       prioritizedCurrency: u,
       hasDiscountOffer: P,
-      isRental: h
+      isRental: null != h
     }), {
       analyticsLocations: z
     } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), G = (0, O.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [K, Y] = (0, i.Wu)([C.Z], () => [C.Z.isClaiming === t.skuId, null != C.Z.isClaiming && C.Z.isClaiming !== t.skuId]), {
@@ -331,7 +330,7 @@ let N = e => {
       text: c,
       onClickAnalytics: d
     });
-    if (W && V) return h ? (0, r.jsx)(H, {
+    if (W && V) return null != h ? (0, r.jsx)(H, {
       product: t,
       analyticsLocations: z,
       onClickAnalytics: d

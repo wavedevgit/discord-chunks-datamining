@@ -41,9 +41,8 @@ let l = e => {
     itemConsumed: f,
     purchaseType: _ = a.o8.FIAT,
     overrideGraphic: p,
-    isRental: h = false,
-    rentalDuration: m,
-    rentalExpiresAt: g
+    rentalDuration: h,
+    rentalExpiresAt: m
   } = e;
   (0, i.ZDy)(async () => {
     if (t.skuId === a.Vt.FRACTIONAL_PREMIUM || t.skuId === a.Vt.ORB_PROFILE_BADGE) {
@@ -70,9 +69,8 @@ let l = e => {
       shouldShowPromotionalExperience: u,
       purchaseType: _,
       overrideGraphic: p,
-      isRental: h,
-      rentalDuration: m,
-      rentalExpiresAt: g
+      rentalDuration: h,
+      rentalExpiresAt: m
     }, n))
   }, {
     onCloseCallback: d

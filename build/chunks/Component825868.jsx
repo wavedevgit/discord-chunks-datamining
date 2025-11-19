@@ -20,30 +20,29 @@ let j = e => {
     analyticsLocations: l,
     transitionState: n,
     onClose: j
-  } = e, _ = (0, c.IT)("CollectiblesRentalsModal"), b = t.useMemo(() => h.Hl.map(e => a.Z.getProduct(e)).filter(e => null != e), []), k = (0, d.l)(b);
+  } = e, _ = (0, c.IT)("CollectiblesRentalsModal"), b = r.useMemo(() => h.Hl.map(e => a.Z.getProduct(e)).filter(e => null != e), []), k = (0, d.l)(b);
   return (0, s.jsx)(i.Gt, {
     value: l,
-    children: (0, s.jsxs)(r.Y0X, {
+    children: (0, s.jsxs)(t.Y0X, {
       parentComponent: "CollectiblesRentalsModal",
       transitionState: n,
-      size: r.CgR.LARGE,
-      children: [(0, s.jsxs)(r.xBx, {
+      size: t.CgR.LARGE,
+      children: [(0, s.jsxs)(t.xBx, {
         separator: false,
-        children: [(0, s.jsx)(r.Heading, {
+        children: [(0, s.jsx)(t.Heading, {
           variant: "heading-xl/bold",
           children: p.intl.string(p.t.bfXHLB)
-        }), (0, s.jsx)(r.olH, {
+        }), (0, s.jsx)(t.olH, {
           onClick: j
         })]
-      }), (0, s.jsx)(r.hzk, {
+      }), (0, s.jsx)(t.hzk, {
         className: x.content,
-        children: (0, s.jsx)(r.Den, {
+        children: (0, s.jsx)(t.Den, {
           className: x.scroller,
           children: (0, s.jsx)("div", {
             className: x.grid,
             children: (0, s.jsx)(u.zp.Provider, {
               value: {
-                isRental: true,
                 rentalDuration: _
               },
               children: k.map(e => (0, s.jsx)(o.Z, {

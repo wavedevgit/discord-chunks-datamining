@@ -57,21 +57,21 @@ let k = Chunk473749.memo(function(e) {
       previewingVariantIndex: K,
       handleEntering: Y,
       handleLeaving: q
-    } = (0, O.f)(t), J = (0, b.$l)(), Q = (0, b.jB)(), X = (0, f.Nd)(), $ = null == X ? true : X.tab, ee = (0, S.zQ)(t), et = l.useRef(null), {
-      isHoveringOrFocusing: en
-    } = (0, d.Z)(et), {
-      handleCardVisibilityChange: er
-    } = (0, g.E)(t.skuId, $ === y.AW.CATALOG ? "full" : $), el = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, G, J, Q), ei = t.type === s.Z.VARIANTS_GROUP && !k, ea = !T || !L, es = !(I && i) || ei, eo = es || ea, ec = ea || ei;
+    } = (0, O.f)(t), J = (0, b.jB)(), Q = (0, f.Nd)(), X = null == Q ? true : Q.tab, $ = (0, S.zQ)(t), ee = l.useRef(null), {
+      isHoveringOrFocusing: et
+    } = (0, d.Z)(ee), {
+      handleCardVisibilityChange: en
+    } = (0, g.E)(t.skuId, X === y.AW.CATALOG ? "full" : X), er = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, G, J), el = t.type === s.Z.VARIANTS_GROUP && !k, ei = !T || !L, ea = !(I && i) || el, es = ea || ei, eo = ei || el;
     return (0, r.jsx)(o.$, {
-      innerRef: et,
-      onChange: er,
+      innerRef: ee,
+      onChange: en,
       threshold: 0,
       children: (0, r.jsx)(c.kL8, {
-        ref: et,
-        onClick: null != N ? N : el,
-        "aria-label": ee,
+        ref: ee,
+        onClick: null != N ? N : er,
+        "aria-label": $,
         className: a()(U, j.productCardContainer, {
-          [j.hovered]: en
+          [j.hovered]: et
         }),
         onFocus: () => null == D ? true : D(t.skuId),
         onBlur: () => null == H ? true : H(t.skuId),
@@ -81,11 +81,11 @@ let k = Chunk473749.memo(function(e) {
           className: j.productCardContentContainer,
           children: [(0, r.jsx)("div", {
             className: a()(j.productPreviewContainer, {
-              [j.hasBottomContent]: !i || es || ec
+              [j.hasBottomContent]: !i || ea || eo
             }),
             children: (0, r.jsx)(v.Z, {
               skuId: t.skuId,
-              isCardHovered: en,
+              isCardHovered: et,
               overrideVariantIndex: K
             })
           }), (0, r.jsxs)("div", {
@@ -98,14 +98,14 @@ let k = Chunk473749.memo(function(e) {
               skipLimitedTimeCheck: P
             }), !n && (0, r.jsx)(E.Z, {
               skuId: t.skuId,
-              isCardHovered: en
+              isCardHovered: et
             })]
-          }), eo && (0, r.jsxs)(r.Fragment, {
+          }), es && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
               className: j.footerGradient
             }), (0, r.jsxs)("div", {
               className: j.footerContainer,
-              children: [es && (0, r.jsxs)("div", {
+              children: [ea && (0, r.jsxs)("div", {
                 className: j.footerInfoContainer,
                 children: [!(i && I) && (0, r.jsxs)("div", {
                   className: j.footerInfoLeft,
@@ -120,13 +120,13 @@ let k = Chunk473749.memo(function(e) {
                       prioritizedCurrency: z
                     })
                   })]
-                }), ei && (0, r.jsx)(x.Z, {
+                }), el && (0, r.jsx)(x.Z, {
                   skuId: t.skuId,
-                  isCollapsed: !en,
+                  isCollapsed: !et,
                   onVariantEnter: Y,
                   onVariantExit: q
                 })]
-              }), ea && (0, r.jsx)("div", {
+              }), ei && (0, r.jsx)("div", {
                 className: j.footerButtonContainer,
                 children: (0, r.jsxs)(c.ButtonGroup, {
                   wrap: false,
@@ -134,14 +134,14 @@ let k = Chunk473749.memo(function(e) {
                   fullWidth: true,
                   children: [!T && (0, r.jsx)(C.Z, {
                     skuId: t.skuId,
-                    cardRef: et,
+                    cardRef: ee,
                     onClick: A,
                     text: M,
                     prioritizedCurrency: z,
                     onClickAnalytics: G
                   }), !L && (0, r.jsx)(_.Z, {
                     skuId: t.skuId,
-                    cardRef: et,
+                    cardRef: ee,
                     onClick: R,
                     icon: F,
                     prioritizedCurrency: z,

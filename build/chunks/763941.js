@@ -10,12 +10,12 @@ let r = (0, require("./427164.js").le)({
     kind: "user",
     defaultConfig: {
       enabled: false,
-      rentalDuration: 0
+      rentalDuration: true
     },
     variations: {
       0: {
         enabled: false,
-        rentalDuration: 0
+        rentalDuration: true
       },
       1: {
         enabled: true,
@@ -24,6 +24,10 @@ let r = (0, require("./427164.js").le)({
       2: {
         enabled: true,
         rentalDuration: 1
+      },
+      3: {
+        enabled: true,
+        rentalDuration: false
       }
     }
   }),

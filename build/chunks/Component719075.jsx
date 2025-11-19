@@ -26,7 +26,7 @@ let x = e => {
     let {
       product: t,
       prioritizedCurrency: n
-    } = e, u = (0, i.e7)([s.default], () => s.default.getCurrentUser()), h = (0, m.$l)(), x = c.ZP.canUseCollectibles(u), {
+    } = e, u = (0, i.e7)([s.default], () => s.default.getCurrentUser()), h = (0, m.jB)(), x = c.ZP.canUseCollectibles(u), {
       isDisabled: E
     } = (0, f.G)(t.skuId), {
       isPurchased: O,
@@ -42,7 +42,7 @@ let x = e => {
       isPremiumUser: x,
       prioritizedCurrency: n,
       hasDiscountOffer: null != L,
-      isRental: h
+      isRental: null != h
     }), A = k && !x;
     if (E) return (0, r.jsx)(a.Text, {
       variant: "text-md/medium",

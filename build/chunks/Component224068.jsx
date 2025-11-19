@@ -14,16 +14,16 @@ var Chunk120356 = require("./120356.js"),
   Chunk351768 = require("./351768.js");
 
 function d(e) {
-  var t;
+  var t, n, i;
   let {
-    product: n,
-    isDarkText: i = false,
-    isOrbExclusive: d = false,
-    rentalDuration: m = 0
-  } = e, p = (t = n.type, 1 === m ? c.intl.string(c.t["9dHf8O"]) : 3 === m ? c.intl.string(c.t["52UXCo"]) : d ? c.intl.string(c.t["0TmQRG"]) : (0, l.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOo)).otherwise(() => null));
-  return null === p ? null : (0, r.jsx)(s.Text, {
+    product: d,
+    isDarkText: m = false,
+    isOrbExclusive: p = false,
+    rentalDuration: f
+  } = e, v = (t = d.type, n = p, null != (i = f) ? 1 === i ? c.intl.string(c.t["9dHf8O"]) : 3 === i ? c.intl.string(c.t["52UXCo"]) : c.intl.string(c.t.VgsFa1) : n ? c.intl.string(c.t["0TmQRG"]) : (0, l.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOo)).otherwise(() => null));
+  return null === v ? null : (0, r.jsx)(s.Text, {
     variant: "text-xxs/normal",
-    className: a()([u.container, i ? u.darkText : u.lightText]),
-    children: p
+    className: a()([u.container, m ? u.darkText : u.lightText]),
+    children: v
   })
 }

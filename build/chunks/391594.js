@@ -43,11 +43,10 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
       shouldShowPromotionalExperience: r,
       productName: l,
       itemConsumed: a,
-      isRental: s,
-      rentalDuration: u
+      rentalDuration: s
     } = t;
     if (null != n) return n;
-    if (s) return 1 === u ? _.intl.string(_.t.vAV62L) : _.intl.string(_.t["5Gltxj"]);
+    if (null != s) return 1 === s ? _.intl.string(_.t.vAV62L) : 3 === s ? _.intl.string(_.t["5Gltxj"]) : _.intl.string(_.t.sYO0Wl);
     if (R.Vt.ORB_PROFILE_BADGE === e.skuId) return _.intl.string(T.default.nvaTQq);
     if (R.Vt.FRACTIONAL_PREMIUM === e.skuId)
       if (a) return _.intl.string(_.t.t0xkSB);
@@ -67,13 +66,12 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
       itemConsumed: a,
       isFractionalPremiumActive: o,
       expiresAt: d,
-      isRental: c,
-      rentalExpiresAt: p
+      isRental: c = false
     } = t;
     if (null != n) return n;
-    if (c && null != p) return _.intl.format(_.t["HQjw+I"], {
+    if (c && null != d) return _.intl.format(_.t["HQjw+I"], {
       itemName: i,
-      date: p
+      date: d
     });
     if (R.Vt.ORB_PROFILE_BADGE === e.skuId) return _.intl.string(T.default.UnPGii);
     {
@@ -110,7 +108,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
       isApplying: s,
       openProfileSettings: A,
       itemConsumed: g,
-      isRental: I
+      isRental: I = false
     } = t, m = [];
     if (R.Vt.ORB_PROFILE_BADGE === e.skuId) m.push({
       text: _.intl.string(T.default.yfwZuy),
@@ -126,7 +124,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
           pageType: S.ZY5.SHOP_ORBS_TAB,
           sectionType: S.jXE.ORBS_BADGE_REDEMPTION_MODAL,
           ctaObject: S.qAy.CTA_TO_QUEST_HOME
-        }), (0, h.navigateToQuestHome)()
+        }), (0, f.navigateToQuestHome)()
       }
     });
     else if (R.Vt.FRACTIONAL_PREMIUM === e.skuId) g ? m.push({
@@ -147,7 +145,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
       text: _.intl.string(_.t["Jr6N+s"]),
       variant: "primary",
       onClick: () => {
-        (0, b.openUserSettings)(O.n.SUBSCRIPTIONS_PANEL, {
+        (0, b.openUserSettings)(h.n.SUBSCRIPTIONS_PANEL, {
           section: S.oAB.SUBSCRIPTIONS
         }), n()
       }
@@ -166,7 +164,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
             return
           }
           if (e.type === u.Z.PROFILE_EFFECT) {
-            a()(t.type === u.Z.PROFILE_EFFECT, "product type and item type are the same"), (0, f.H)({
+            a()(t.type === u.Z.PROFILE_EFFECT, "product type and item type are the same"), (0, O.H)({
               initialSelectedEffect: t,
               analyticsLocations: i
             });
