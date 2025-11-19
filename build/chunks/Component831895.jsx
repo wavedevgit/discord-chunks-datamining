@@ -20,7 +20,7 @@ function m(e) {
     defaultCategory: h,
     onCategoryChange: f,
     className: b
-  } = e, [g, v] = l.useState(h), [x, y] = l.useState(null), P = (0, s.Z)(), S = l.useMemo(() => [{
+  } = e, [g, v] = l.useState(h), [x, y] = l.useState(null), P = (0, s.Z)(), j = l.useMemo(() => [{
     name: u.intl.string(u.t["6Zuivx"]),
     value: d.KN.Trick,
     key: "Trick",
@@ -40,15 +40,15 @@ function m(e) {
     }),
     onMouseEnter: () => y(d.KN.Treat),
     onMouseLeave: () => y(null)
-  }], []), j = l.useCallback(e => {
+  }], []), S = l.useCallback(e => {
     v(e.value), f(e.value)
   }, [f]), _ = null == P || null == (n = P.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, w = null == P || null == (m = P.segmentedControlAnimations) || null == (a = m.treat) ? true : a.getAnimationData;
   return (0, r.jsxs)("div", {
     className: i()(p.container, b),
     children: [(0, r.jsx)(c.w, {
-      options: S,
+      options: j,
       value: g,
-      onChange: j
+      onChange: S
     }), x === d.KN.Trick && null != _ && (0, r.jsx)("div", {
       className: i()(p.animationOverlay, p.trickAnimation),
       children: (0, r.jsx)(o.Fmz, {

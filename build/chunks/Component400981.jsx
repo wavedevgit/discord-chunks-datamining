@@ -27,9 +27,9 @@ function P(e) {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
     selectedGiftingPromotionReward: P
-  } = e, S = (0, i.e7)([g.default], () => g.default.getCurrentUser()), j = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), {
+  } = e, j = (0, i.e7)([g.default], () => g.default.getCurrentUser()), S = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), {
     analyticsLocations: _
-  } = (0, c.ZP)(), w = s.EFr.SIZE_32, O = (0, u.Z)(null == P ? true : P.assetId, w, !j), C = (0, b.Z)(), k = null == C ? true : C.giftPurchaseConfirmation, E = (null == P ? true : P.type) === a.Z.NAMEPLATE, [I, T] = l.useState(false), N = l.useMemo(() => {
+  } = (0, c.ZP)(), w = s.EFr.SIZE_32, O = (0, u.Z)(null == P ? true : P.assetId, w, !S), C = (0, b.Z)(), k = null == C ? true : C.giftPurchaseConfirmation, E = (null == P ? true : P.type) === a.Z.NAMEPLATE, [I, T] = l.useState(false), N = l.useMemo(() => {
     var e, t;
     return E && (null == P ? true : P.assetId) != null ? {
       src: P.assetId,
@@ -48,7 +48,7 @@ function P(e) {
           onMouseEnter: () => T(true),
           onMouseLeave: () => T(false),
           children: (0, r.jsx)(f.R, {
-            user: S,
+            user: j,
             nameplate: null,
             nameplateData: N,
             showPlaceholderUser: true,
@@ -56,9 +56,9 @@ function P(e) {
             isHighlighted: I
           })
         }) : (0, r.jsx)(s.Xo$, {
-          "aria-label": null == S ? true : S.username,
+          "aria-label": null == j ? true : j.username,
           size: w,
-          src: null == S ? true : S.getAvatarURL(true, (0, s.pxk)(w), !j),
+          src: null == j ? true : j.getAvatarURL(true, (0, s.pxk)(w), !S),
           avatarDecoration: O
         }), (0, r.jsx)(o.zxk, {
           variant: "primary",

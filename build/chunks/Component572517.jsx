@@ -32,16 +32,16 @@ function h() {
       isDarkMode: f,
       isAndroid: false
     }),
-    S = (0, Chunk717401.Tl)(P, {
+    j = (0, Chunk717401.Tl)(P, {
       colorStops: [0, 12, 100]
     }),
-    j = (0, Chunk717401.$q)(y, S, {
+    S = (0, Chunk717401.$q)(y, j, {
       backgroundSize: "cover, auto",
       backgroundPosition: "right center, 0% 0%"
     });
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
-    style: j,
+    style: S,
     children: [(0, Chunk54381.jsx)("div", {
       className: Chunk432483.avatar,
       children: (0, Chunk54381.jsx)(Chunk897942.Z, {

@@ -71,8 +71,8 @@ function D(e) {
     onClose: h,
     trialId: x,
     trialFooterMessageOverride: P,
-    reviewWarningMessage: S,
-    openInvoiceId: j,
+    reviewWarningMessage: j,
+    openInvoiceId: S,
     onSubscriptionConfirmation: _,
     renderPurchaseConfirmation: O,
     postSuccessGuild: C,
@@ -97,7 +97,7 @@ function D(e) {
     isGift: H,
     giftMessage: G,
     giftRecipient: U
-  } = (0, b.wD)(), z = H && (0, f.pO)(U) && F === v.h8.PLAN_SELECT;
+  } = (0, b.wD)(), K = H && (0, f.pO)(U) && F === v.h8.PLAN_SELECT;
   return (0, r.jsx)(w.Z, {
     isConfirmationStep: F === v.h8.CONFIRM && null == B && null == O,
     children: (0, r.jsx)(y.PaymentModal, {
@@ -115,9 +115,9 @@ function D(e) {
       trialId: x,
       isGift: H,
       trialFooterMessageOverride: P,
-      reviewWarningMessage: S,
+      reviewWarningMessage: j,
       planGroup: M.Y1,
-      openInvoiceId: j,
+      openInvoiceId: S,
       onSubscriptionConfirmation: _,
       renderPurchaseConfirmation: O,
       postSuccessGuild: C,
@@ -128,7 +128,7 @@ function D(e) {
       referralTrialOfferId: N,
       skuId: A,
       shakeWhilePurchasing: true,
-      isDynamicModal: z,
+      isDynamicModal: K,
       returnRef: Z,
       skipConfirm: L,
       continueSessionToInitialStep: B
@@ -252,10 +252,10 @@ function U(e) {
       giftStyle: v,
       isGift: y,
       loadId: P,
-      referralCode: S,
-      subscriptionTier: j
+      referralCode: j,
+      subscriptionTier: S
     } = e;
-  if (null != j && !Object.values(M.Si).includes(j)) throw Error("subscriptionTier must be a premium subscription");
+  if (null != S && !Object.values(M.Si).includes(S)) throw Error("subscriptionTier must be a premium subscription");
   let _ = (0, p.ao)({
     location: "PremiumPaymentSelect",
     giftRecipient: f,
@@ -270,7 +270,7 @@ function U(e) {
       skuIDs: [...M.YQ],
       isGift: y,
       defaultPlanId: null != n ? n : o,
-      referralCode: S,
+      referralCode: j,
       wasTier2PremiumBeforePurchase: e.wasTier2PremiumBeforePurchase,
       children: (0, r.jsx)(x.c1, {
         confirmationFooter: i,

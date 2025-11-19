@@ -46,7 +46,7 @@ function _(e) {
     selectedGiftingPromotionReward: R,
     setSelectedGiftingPromotionReward: N,
     hasUserMadeSelection: H
-  }), z = l.useMemo(() => {
+  }), K = l.useMemo(() => {
     var e, t;
     if (null == A || 0 === A.length) return null != (e = null == Z ? true : Z.rewards) ? e : [];
     let n = null != (t = null == U ? true : U.selectedCategory) ? t : p.KN.Trick;
@@ -85,22 +85,22 @@ function _(e) {
   }, [A, null == Z ? true : Z.rewards, null == U ? true : U.selectedCategory]);
   l.useEffect(() => {
     let e = null == B ? true : B.defaultHighlightedReward;
-    !H && null == R && null != e && null != e && z.some(t => t.skuId === e.skuId) && (N(e), F(e.skuId))
-  }, [B, H, R, z, N]), i()(null != E, "Expected plan to selected"), i()(null != I, "Expected selectedSkuId"), i()(null != T, "Step should be set");
-  let K = l.useMemo(() => null != D && (null != M ? M : []).some(e => e.skuId === D), [D, M]),
-    W = l.useMemo(() => null != R && z.some(e => e.skuId === R.skuId), [z, R]),
-    Y = l.useMemo(() => 0 === z.length || null == D || !W || !K, [z, D, K, W]);
+    !H && null == R && null != e && null != e && K.some(t => t.skuId === e.skuId) && (N(e), F(e.skuId))
+  }, [B, H, R, K, N]), i()(null != E, "Expected plan to selected"), i()(null != I, "Expected selectedSkuId"), i()(null != T, "Step should be set");
+  let z = l.useMemo(() => null != D && (null != M ? M : []).some(e => e.skuId === D), [D, M]),
+    W = l.useMemo(() => null != R && K.some(e => e.skuId === R.skuId), [K, R]),
+    V = l.useMemo(() => 0 === K.length || null == D || !W || !z, [K, D, z, W]);
   l.useEffect(() => {
-    if (0 === z.length) {
+    if (0 === K.length) {
       F(true), N(true);
       return
     }
-    K && z.some(e => e.skuId === D) || null == D || (F(true), N(true))
-  }, [z, K, D, N]);
-  let V = e => {
-      N(z.find(t => t.skuId === e)), F(e), G(true)
+    z && K.some(e => e.skuId === D) || null == D || (F(true), N(true))
+  }, [K, z, D, N]);
+  let Y = e => {
+      N(K.find(t => t.skuId === e)), F(e), G(true)
     },
-    q = z.map(e => {
+    q = K.map(e => {
       var t, n;
       return (0, r.jsx)(d.c, {
         skuId: e.skuId,
@@ -109,7 +109,7 @@ function _(e) {
         a11yLabel: null == (n = e.a11yLabel) ? true : n.call(e),
         claimed: null != M && M.every(t => t.skuId !== e.skuId),
         user: L,
-        onSelect: V,
+        onSelect: Y,
         selectedSkuId: D,
         category: null == U ? true : U.selectedCategory,
         type: e.type,
@@ -119,10 +119,10 @@ function _(e) {
     J = (0, r.jsx)(P.O3, {
       children: (0, r.jsx)(s.mzw, {
         "data-migration-pending": true,
-        className: j.modalFooter,
+        className: S.modalFooter,
         children: (0, r.jsx)(f.y, {
           onStepChange: e => {
-            null != L && null != R && g.default.track(S.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != L && null != R && g.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: L.id,
               reward_sku_id: R.skuId
             }), C(e)
@@ -132,14 +132,14 @@ function _(e) {
           showBackButton: true,
           planOptions: [E.id],
           selectedPlanId: E.id,
-          isNextDisabled: Y
+          isNextDisabled: V
         })
       })
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(s.xBx, {
       "data-migration-pending": true,
-      className: j.modalHeader,
+      className: S.modalHeader,
       direction: c.Z.Direction.VERTICAL,
       align: c.Z.Align.START,
       separator: false,
@@ -150,7 +150,7 @@ function _(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
         color: "text-secondary",
-        className: j.headerSubtitle,
+        className: S.headerSubtitle,
         children: null == Z || null == (a = Z.rewardSelection) ? true : a.primarySubtitle()
       }), (null == Z || null == (w = Z.rewardSelection) || null == (_ = w.secondarySubtitle) ? true : _.call(w)) != null && (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
@@ -158,7 +158,7 @@ function _(e) {
         children: null == Z || null == (O = Z.rewardSelection) ? true : O.secondarySubtitle()
       }), (0, r.jsx)(s.olH, {
         "data-migration-pending": true,
-        className: j.closeButton,
+        className: S.closeButton,
         onClick: k
       })]
     }), (0, r.jsx)(s.hzk, {
@@ -171,7 +171,7 @@ function _(e) {
           defaultCategory: U.selectedCategory,
           onCategoryChange: U.setSelectedCategory
         }), (0, r.jsx)("div", {
-          className: j.giftRewardShopCardsGrid,
+          className: S.giftRewardShopCardsGrid,
           children: q
         })]
       })

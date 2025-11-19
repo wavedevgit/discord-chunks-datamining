@@ -2,9 +2,9 @@
 /** chunk id: 748770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Br: () => h,
-  L9: () => m,
-  ZP: () => g
+  Br: () => p,
+  L9: () => h,
+  ZP: () => m
 });
 var Chunk32662 = require("./32662.js"),
   Chunk544891 = require("./544891.js"),
@@ -14,40 +14,34 @@ var Chunk32662 = require("./32662.js"),
   Chunk706454 = require("./706454.js"),
   Chunk675478 = require("./675478.js"),
   Chunk605338 = require("./605338.js"),
-  Chunk777261 = require("./777261.js"),
   Chunk1844 = require("./1844.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js");
-async function h() {
+async function p() {
   if (!Chunk1844.Z.isFetchingActivePromotions) try {
-    let t;
     Chunk570140.Z.dispatch({
       type: "ACTIVE_PROMOTIONS_FETCH"
-    }), t = Chunk777261.e.getCurrentConfig({
-      location: "5731cc_1"
-    }, {
-      autoTrackExposure: false
-    }).enabled ? Chunk981631.ANM.PROMOTIONS : Chunk981631.ANM.OUTBOUND_PROMOTIONS;
-    let n = Chunk32662.H.DESKTOP,
-      a = await Chunk544891.tn.get({
-        url: exports,
+    });
+    let t = Chunk32662.H.DESKTOP,
+      n = await Chunk544891.tn.get({
+        url: Chunk981631.ANM.PROMOTIONS,
         query: {
           locale: Chunk706454.default.locale,
-          platform: require
+          platform: exports
         },
         oldFormErrors: true,
         rejectWithError: true
       }),
-      c = Chunk1844.Z.consumedInboundPromotionId;
+      a = Chunk1844.Z.consumedInboundPromotionId;
     if (!Chunk1844.Z.hasFetchedConsumedInboundPromotionId) {
       var e;
       let t = (await (0, Chunk496929.yD)(Chunk474936.CL, false)).find(e => null != e.promotion_id && true === e.consumed);
-      c = null != (e = null == exports ? true : exports.promotion_id) ? module : null
+      a = null != (e = null == exports ? true : exports.promotion_id) ? module : null
     }
     Chunk570140.Z.dispatch({
       type: "ACTIVE_PROMOTIONS_FETCH_SUCCESS",
-      promotions: Chunk381499.body,
-      consumedInboundPromotionId: Chunk675478
+      promotions: require.body,
+      consumedInboundPromotionId: Chunk381499
     })
   } catch (e) {
     Chunk570140.Z.dispatch({
@@ -55,7 +49,7 @@ async function h() {
     })
   }
 }
-async function m() {
+async function h() {
   if (!Chunk1844.Z.isFetchingActiveBogoPromotion) try {
     Chunk570140.Z.dispatch({
       type: "ACTIVE_BOGO_PROMOTION_FETCH"
@@ -77,8 +71,8 @@ async function m() {
     })
   }
 }
-let g = {
-  fetchActivePromotions: h,
+let m = {
+  fetchActivePromotions: p,
   dismissOutboundPromotionNotice: function() {
     Chunk570140.Z.dispatch({
       type: "OUTBOUND_PROMOTION_NOTICE_DISMISS"
@@ -95,5 +89,5 @@ let g = {
       type: "OUTBOUND_PROMOTIONS_SEEN"
     })
   },
-  fetchActiveBogoPromotion: m
+  fetchActiveBogoPromotion: h
 }

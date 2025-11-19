@@ -34,9 +34,9 @@ function y(e) {
     priceOptions: x,
     defaultPlanId: y
   } = (0, m.JL)(), {
-    isGift: S,
-    claimableRewards: j
-  } = (0, p.wD)(), _ = S && null != j && j.length > 0, w = (0, d.N)(l), O = (0, o.Nx)(), C = (0, s.Z)({
+    isGift: j,
+    claimableRewards: S
+  } = (0, p.wD)(), _ = j && null != S && S.length > 0, w = (0, d.N)(l), O = (0, o.Nx)(), C = (0, s.Z)({
     location: "PremiumPaymentSelect"
   });
   return (0, r.jsx)(P, {
@@ -77,14 +77,14 @@ function y(e) {
       newSkuId: e,
       setSelectedSkuId: a,
       handleStepChange: t,
-      isGift: S,
+      isGift: j,
       userTrialOffer: w,
       startedPaymentFlowWithPaymentSources: c.current,
       setSelectedPlanId: v,
       defaultPlanId: y
     }),
     onClose: n,
-    isGift: S,
+    isGift: j,
     inOfferExperience: O,
     priceOptions: x,
     showPromotionalGiftBanner: _,

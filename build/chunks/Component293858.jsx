@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 293858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => j
+  b: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,11 +24,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk698708 = require("./698708.jsx"),
   Chunk921944 = require("./921944.js");
 
-function j(e) {
+function S(e) {
   let t, {
       handleClose: n,
       planGroup: a,
-      onSubscriptionConfirmation: j,
+      onSubscriptionConfirmation: S,
       renderPurchaseConfirmation: _,
       postSuccessGuild: w,
       followupSKUInfo: O,
@@ -53,30 +53,30 @@ function j(e) {
       isSendingMessage: H,
       sendGiftMessage: G,
       claimableRewards: U,
-      selectedGiftingPromotionReward: z
+      selectedGiftingPromotionReward: K
     } = (0, f.wD)(),
     {
-      confirmationFooter: K
+      confirmationFooter: z
     } = (0, g.zb)(),
     W = (0, c.id)(T, L, U),
-    Y = (0, d.Z)(),
-    V = (0, c.a5)(T),
-    q = (0, c.tK)(null == z ? true : z.skuId),
+    V = (0, d.Z)(),
+    Y = (0, c.a5)(T),
+    q = (0, c.tK)(null == K ? true : K.skuId),
     J = (0, y.$)(E, I),
-    Q = L && null != z && V;
+    Q = L && null != K && Y;
   i()(null != T, "Expected plan to selected"), i()(null != N, "Expected selectedSkuId"), i()(null != R, "Step should be set");
   let X = l.useCallback(() => {
-    n(), null == j || j()
-  }, [n, j]);
+    n(), null == S || S()
+  }, [n, S]);
   l.useEffect(() => {
     !L || null == B || null == D || F || H || (0, m.pO)(B) || G({
-      onSubscriptionConfirmation: j
+      onSubscriptionConfirmation: S
     })
-  }, [G, L, B, D, F, H, j]), l.useEffect(() => {
-    null != Y && null != Y.reminderNotice && W && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, (0, u.m)(), {
-      dismissAction: S.L.INDIRECT_ACTION
+  }, [G, L, B, D, F, H, S]), l.useEffect(() => {
+    null != V && null != V.reminderNotice && W && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, (0, u.m)(), {
+      dismissAction: j.L.INDIRECT_ACTION
     })
-  }, [Y, W]);
+  }, [V, W]);
   let $ = null != C ? p.PI.DEEPLINK_TO_DESKTOP_APP : true;
   if (null != _) t = _(T, X, M);
   else if (L) t = (0, r.jsx)(p.TB, {
@@ -112,7 +112,7 @@ function j(e) {
       planId: T.id,
       onClose: X,
       paymentSourceType: J,
-      hideClose: null != K,
+      hideClose: null != z,
       startingFractionalPremiumEndsAt: Z.current,
       customCTAType: $
     }, e))
@@ -120,10 +120,10 @@ function j(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(v.C3, {
       children: [(0, r.jsx)(P.Z, {}), t]
-    }), null != K && K, Q && null != q && (0, r.jsx)(x.Z, {
+    }), null != z && z, Q && null != q && (0, r.jsx)(x.Z, {
       onClose: X,
       selectedPromotionalDecoPurchaseRecord: q,
-      selectedGiftingPromotionReward: z
+      selectedGiftingPromotionReward: K
     })]
   })
 }
