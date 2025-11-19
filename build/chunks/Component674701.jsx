@@ -47,8 +47,8 @@ function x(e) {
     onMouseEnter: L,
     onMouseLeave: x,
     popoutPosition: M,
-    analyticsPage: k,
-    analyticsSection: j,
+    analyticsPage: j,
+    analyticsSection: k,
     glow: U,
     giftIntentSecondaryAction: G
   } = e, B = (0, l.e7)([y.default], () => y.default.getCurrentUser()), {
@@ -92,8 +92,8 @@ function x(e) {
         analyticsLocation: "system_message" === n ? r.chat : r.actionButtonCoachmark,
         analyticsLocations: Z,
         analyticsObject: {
-          page: k,
-          section: j,
+          page: j,
+          section: k,
           object: N.qAy.BUTTON_CTA,
           objectType: N.AnalyticsObjectTypes.GIFT
         },

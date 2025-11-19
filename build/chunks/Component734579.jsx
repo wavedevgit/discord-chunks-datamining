@@ -1,7 +1,7 @@
 /** Chunk was on 10023 **/
 /** chunk id: 734579, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,25 +19,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk434479 = require("./434479.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
+  Chunk582113 = require("./582113.js"),
   Chunk388032 = require("./388032.jsx");
-let O = Chunk473749.memo(function(e) {
+let v = Chunk473749.memo(function(e) {
   let {
     guild: t,
-    selected: O
-  } = e, v = i.useRef(null), j = (0, a.f9)(), C = (0, l.e7)([g.Z], () => g.Z.hasLayers()), [x, E] = (0, d.ZT)([o.z.GAME_SHOP_NEW_BADGE], t.id);
+    selected: v
+  } = e, j = i.useRef(null), C = (0, a.f9)(), x = (0, l.e7)([g.Z], () => g.Z.hasLayers()), [E, S] = (0, d.ZT)([o.z.GAME_SHOP_NEW_BADGE], t.id);
   i.useEffect(() => {
-    O && x === o.z.GAME_SHOP_NEW_BADGE && E(_.L.INDIRECT_ACTION)
-  }, [E, O, x]);
-  let S = i.useCallback(() => {
+    v && E === o.z.GAME_SHOP_NEW_BADGE && S(_.L.INDIRECT_ACTION)
+  }, [S, v, E]);
+  let I = i.useCallback(() => {
       var e, n;
-      E(_.L.USER_DISMISS);
+      S(_.L.USER_DISMISS);
       let r = null != (n = null == (e = h.Z.getStorefrontState(t.id)) ? true : e.activePage) ? n : 0;
       (0, p.uL)(b.Z5c.CHANNELS_GAME_SHOP(t.id, r))
-    }, [t, E]),
-    I = i.useCallback(() => {
-      E(_.L.USER_DISMISS)
-    }, [E]),
-    P = i.useCallback(e => {
+    }, [t, S]),
+    P = i.useCallback(() => {
+      S(_.L.USER_DISMISS)
+    }, [S]),
+    N = i.useCallback(e => {
       null != t && (0, c.jW)(e, async () => {
         let {
           default: e
@@ -78,7 +79,7 @@ let O = Chunk473749.memo(function(e) {
     }, [t]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.m, {
-      ref: v,
+      ref: j,
       id: "game-shop-".concat(t.id),
       renderIcon: e => (0, r.jsx)(s.EOn, {
         size: "custom",
@@ -87,18 +88,18 @@ let O = Chunk473749.memo(function(e) {
         height: 20,
         className: e
       }),
-      text: y.intl.string(y.t.vyaWs7),
-      selected: O,
-      onClick: S,
-      onContextMenu: P,
+      text: (null == t ? true : t.id) === y.ON ? O.intl.string(O.t.xFQAPs) : O.intl.string(O.t.vyaWs7),
+      selected: v,
+      onClick: I,
+      onContextMenu: N,
       trailing: (0, r.jsx)(s.IGR, {
-        text: y.intl.string(y.t.y2b7CA),
+        text: O.intl.string(O.t.y2b7CA),
         color: u.Z.BG_BRAND
       })
-    }), j || C || x !== o.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(f.Z, {
-      onActionClick: S,
-      onRequestClose: I,
-      targetElementRef: v
+    }), C || x || (null == t ? true : t.id) !== y.ON || E !== o.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(f.Z, {
+      onActionClick: I,
+      onRequestClose: P,
+      targetElementRef: j
     })]
   })
 })

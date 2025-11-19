@@ -57,8 +57,8 @@ function I(e) {
       return null == ("" === i ? null : i) && null == r.emoji ? null : r
     }, [n]);
   if ((0, l.e7)([p.Z], () => p.Z.isBlockedOrIgnored(null == t ? true : t.id))) return null;
-  let k = (null == t ? true : t.bot) === true,
-    j = ((null == M ? true : M.state) != null || null != x) && "xs" === A,
+  let j = (null == t ? true : t.bot) === true,
+    k = ((null == M ? true : M.state) != null || null != x) && "xs" === A,
     U = () => {
       if (null != D) return (0, r.jsx)(m.Z, {
         stream: D,
@@ -66,8 +66,8 @@ function I(e) {
         textVariant: "text-".concat(A, "/medium"),
         textClassName: T,
         iconClassName: S,
-        hideText: j,
-        hideIcon: k,
+        hideText: k,
+        hideIcon: j,
         hideTooltip: P
       });
       let e = null == n ? true : n.find(e => {
@@ -81,15 +81,15 @@ function I(e) {
         textVariant: "text-".concat(A, "/medium"),
         textClassName: T,
         iconClassName: S,
-        hideText: j,
-        hideIcon: k,
+        hideText: k,
+        hideIcon: j,
         hideTooltip: P
       }) : null != I ? (0, r.jsx)(b.Z, {
         channel: I,
         textVariant: "text-".concat(A, "/medium"),
         textClassName: T,
         iconClassName: S,
-        hideText: j,
+        hideText: k,
         hideTooltip: P
       }) : null
     },

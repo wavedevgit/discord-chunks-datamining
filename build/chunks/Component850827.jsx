@@ -45,25 +45,25 @@ let w = (0, Chunk730749.Z)(e => {
     channelId: L,
     source: x,
     buttonVariant: M,
-    type: k,
-    onAction: j
+    type: j,
+    onAction: k
   } = e, U = (0, l.e7)([h.default], () => {
     let e = h.default.getCurrentUser();
     return s()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-  }), G = k === b.Y.STREAM_PREVIEW || null != o, B = (0, g.Z)(t), Z = B || G ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, F = (null == t ? true : t.type) === P.IIU.HANG_STATUS, V = (0, l.e7)([m.Z, p.Z], () => {
+  }), G = j === b.Y.STREAM_PREVIEW || null != o, B = (0, g.Z)(t), Z = B || G ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, F = (null == t ? true : t.type) === P.IIU.HANG_STATUS, V = (0, l.e7)([m.Z, p.Z], () => {
     var e;
     return F ? p.Z.getChannel(null == (e = m.Z.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
   }), H = () => {
     if ((0, E.Z)(t)) return (0, r.jsx)(y.Z, {
       platform: d.Z.get(P.ABu.XBOX),
       variant: M,
-      onAction: j,
+      onAction: k,
       icon: c.Mko
     });
     if ((null == t ? true : t.platform) === P.M7m.PS4 || (null == t ? true : t.platform) === P.M7m.PS5) return (0, r.jsx)(y.Z, {
       variant: M,
       platform: d.Z.get(P.ABu.PLAYSTATION),
-      onAction: j,
+      onAction: k,
       icon: c.Tsp
     });
     if (B) {
@@ -73,13 +73,13 @@ let w = (0, Chunk730749.Z)(e => {
           guildId: w,
           channelId: L,
           source: x,
-          onAction: j
+          onAction: k
         }),
         n = (0, r.jsx)(A.Z, {
           activity: t,
           user: i,
           source: x,
-          onAction: j
+          onAction: k
         });
       return (0, r.jsxs)(c.ButtonGroup, {
         size: "sm",
@@ -93,39 +93,39 @@ let w = (0, Chunk730749.Z)(e => {
         guildId: e.guildId,
         channelId: e.channelId,
         variant: M,
-        onAction: j
+        onAction: k
       })
     }
     return G ? (0, r.jsx)(R.Z, {
       isCurrentUser: U.id === i.id,
       applicationStream: o,
-      onAction: j
+      onAction: k
     }) : F && null != V ? (0, r.jsx)(I.Z, {
       userId: i.id,
       variant: M,
       hangStatusChannel: V,
-      onAction: j
+      onAction: k
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(N.Z, {
         activity: t,
         variant: M,
-        onAction: j
+        onAction: k
       }), (0, r.jsx)(v.Z, {
         activity: t,
         embeddedActivity: n,
         user: i,
         variant: M,
-        onAction: j
+        onAction: k
       }), (0, r.jsx)(S.Z, {
         activity: t,
         user: i,
         variant: M,
-        onAction: j
+        onAction: k
       }), (0, r.jsx)(O.Z, {
         user: i,
         activity: t,
         variant: M,
-        onAction: j
+        onAction: k
       })]
     })
   }, Y = Z === f.Z.Direction.VERTICAL;

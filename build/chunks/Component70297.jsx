@@ -1,7 +1,7 @@
 /** Chunk was on 58121 **/
 /** chunk id: 70297, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => b,
+  Z: () => C,
   q: () => x
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
@@ -25,12 +25,12 @@ function x(e) {
   return (0, p.te)(e) ? 250 : 152
 }
 
-function b(e) {
+function C(e) {
   let {
     guild: n
   } = e, t = (0, p.te)(n.id), l = (0, s.Nj)(a.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL), x = t && !l ? a.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL : a.z.CHANNEL_BROWSER_NUX;
   (0, c.kk)(x);
-  let b = t ? (0, r.jsxs)(r.Fragment, {
+  let C = t ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.Heading, {
         className: g.heading,
@@ -95,6 +95,6 @@ function b(e) {
         size: "md",
         color: "currentColor"
       })
-    }), b]
+    }), C]
   })
 }

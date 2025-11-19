@@ -65,7 +65,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -76,8 +76,8 @@ function k(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -213,7 +213,7 @@ function ei(e) {
       null != t ? e.bot = t : u.add(e.bot_id)
     } else null != e.bot && (l[e.bot.id] = e.id);
     let t = {
-      descriptor: j(M({}, (0, R.X0)(eD(e), false)), {
+      descriptor: k(M({}, (0, R.X0)(eD(e), false)), {
         permissions: null != e.permissions ? (0, _.tk)(eM(e.permissions, o)) : true,
         botId: e.bot_id
       }),
@@ -297,7 +297,7 @@ function es(e, t) {
     if (null == r) return;
     let s = i.sections[r];
     o()(null != s, "Bot has no matching index section"), o()(null != s.descriptor.application, "Bot's index section has no application info");
-    let l = (0, R.X0)(j(M({}, s.descriptor.application), {
+    let l = (0, R.X0)(k(M({}, s.descriptor.application), {
       bot: t
     }), false, n);
     s.descriptor = M({}, s.descriptor, l), a = true
@@ -630,11 +630,12 @@ function eS(e, t, n) {
     allowEmptySections: n.allowEmptySections,
     contextState: s,
     userState: l,
+    launcherContext: e,
     applicationStates: n.allowApplicationState ? c : new Map,
     sortOptions: n.sortOptions,
     singleApplicationId: n.applicationId,
     installOnDemand: n.installOnDemand
-  }), [a, t.text, t.builtIns, o, n.scoreMethod, n.allowEmptySections, n.sortOptions, n.allowApplicationState, n.applicationId, n.installOnDemand, s, l, c, u])
+  }), [a, t.text, t.builtIns, o, n.scoreMethod, n.allowEmptySections, n.sortOptions, n.allowApplicationState, n.applicationId, n.installOnDemand, s, l, e, c, u])
 }
 
 function eA(e) {
@@ -661,11 +662,11 @@ function eA(e) {
     allowEmptySections: y,
     scoreMethod: O,
     installOnDemand: T
-  }, k = null != (i = null == (t = u.result) ? true : t.sections) ? i : {}, U = null != (a = null == (n = f.result) ? true : n.sections) ? a : {}, G = new Set;
+  }, j = null != (i = null == (t = u.result) ? true : t.sections) ? i : {}, U = null != (a = null == (n = f.result) ? true : n.sections) ? a : {}, G = new Set;
   if (g) {
     if (c.hasBaseAccessPermissions)
-      for (let e in k) {
-        let t = k[e];
+      for (let e in j) {
+        let t = j[e];
         (null == E || t.descriptor.id === E) && G.add(e)
       }
     for (let e in U) {
@@ -680,7 +681,7 @@ function eA(e) {
       if (null != e)
         for (let t of Object.keys(e)) G.add(t), B.set(t, e[t])
     } for (let e of Array.from(G)) {
-    let t, n, r = k[e],
+    let t, n, r = j[e],
       i = U[e],
       a = B.get(e),
       s = null != r,
@@ -717,7 +718,7 @@ function eA(e) {
     let e = eC(I.Tm[w.bi.BUILT_IN], D, true, true, x);
     null != e && L.push(e)
   }
-  let Z = L.flatMap(e => e.data.map(t => j(M({}, t), {
+  let Z = L.flatMap(e => e.data.map(t => k(M({}, t), {
     section: e.section
   })));
   if (O === C.p.COMMAND_ONLY || O === C.p.COMMAND_OR_APPLICATION) {
@@ -776,7 +777,7 @@ function eC(e, t, n, r, i) {
     isGuildInstalled: n,
     isUserInstalled: r || d
   }) === D.mF.ALLOWED && E.push(i);
-  return 0 !== (a = c !== C.p.NONE && null != o && null != s ? ek(o, s, E, e, c) : E).length || l ? ((c === C.p.NONE || c === C.p.APPLICATION_ONLY) && a.sort((e, t) => eU(e.displayName, t.displayName)), {
+  return 0 !== (a = c !== C.p.NONE && null != o && null != s ? ej(o, s, E, e, c) : E).length || l ? ((c === C.p.NONE || c === C.p.APPLICATION_ONLY) && a.sort((e, t) => eU(e.displayName, t.displayName)), {
     section: e,
     data: a
   }) : null
@@ -809,7 +810,7 @@ function eD(e) {
 
 function ew(e, t) {
   var n, r, i, a, o;
-  let s = j(M({}, e), {
+  let s = k(M({}, e), {
     description: null != (i = null != (r = e.description_default) ? r : e.description) ? i : "",
     dm_permission: e.dm_permission,
     name: null != (a = e.name_default) ? a : e.name,
@@ -821,7 +822,7 @@ function ew(e, t) {
 
 function eL(e) {
   var t, n, r, i;
-  let a = j(M({}, e), {
+  let a = k(M({}, e), {
     choices: null == (t = e.choices) ? true : t.map(ex),
     description: null != (r = e.description_default) ? r : e.description,
     name: null != (i = e.name_default) ? i : e.name,
@@ -832,7 +833,7 @@ function eL(e) {
 
 function ex(e) {
   var t;
-  let n = j(M({}, e), {
+  let n = k(M({}, e), {
     name: null != (t = e.name_default) ? t : e.name
   });
   return e.name !== e.name_default && (n.name_localized = e.name), n
@@ -859,7 +860,7 @@ function eM(e, t) {
   return n
 }
 
-function ek(e, t, n, r, i) {
+function ej(e, t, n, r, i) {
   let a, o = [];
   if (i === C.p.APPLICATION_ONLY || i === C.p.COMMAND_OR_APPLICATION) {
     let t = r.name.toLocaleLowerCase();
@@ -875,14 +876,14 @@ function ek(e, t, n, r, i) {
     u = t.slice(1).join(" ");
   for (let t of n) {
     let n;
-    (i === C.p.COMMAND_ONLY || i === C.p.COMMAND_OR_APPLICATION) && (n = ej(t, e, c, u)), (true === n || true !== a && a < n) && (n = a), true !== n && o.push(j(M({}, t), {
+    (i === C.p.COMMAND_ONLY || i === C.p.COMMAND_OR_APPLICATION) && (n = ek(t, e, c, u)), (true === n || true !== a && a < n) && (n = a), true !== n && o.push(k(M({}, t), {
       score: n
     }))
   }
   return o
 }
 
-function ej(e, t, n, r) {
+function ek(e, t, n, r) {
   var i;
   let a = e.untranslatedName.toLocaleLowerCase(),
     o = e.displayName.toLocaleLowerCase();

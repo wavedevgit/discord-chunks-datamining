@@ -58,7 +58,7 @@ function M() {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     section: t,
     handleItemSelect: n
@@ -90,7 +90,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     theme: t,
     section: n,
@@ -156,7 +156,7 @@ function U() {
     "aria-label": Chunk388032.intl.string(Chunk313570.default.RZqaJn),
     children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
       location: Chunk388032.intl.string(Chunk313570.default.RZqaJn)
-    }), (0, Chunk54381.jsx)(k, {
+    }), (0, Chunk54381.jsx)(j, {
       section: require,
       handleItemSelect: o
     }), (0, Chunk54381.jsx)(Chunk481060.njP.Panel, {
@@ -201,7 +201,7 @@ function G() {
       "aria-label": Chunk388032.intl.string(Chunk313570.default.RZqaJn),
       children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
         location: Chunk388032.intl.string(Chunk313570.default.RZqaJn)
-      }), (0, Chunk54381.jsx)(j, {
+      }), (0, Chunk54381.jsx)(k, {
         theme: Chunk120356,
         section: Chunk731934,
         handleItemSelect: Chunk830746

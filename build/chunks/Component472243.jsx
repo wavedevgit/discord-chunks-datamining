@@ -31,7 +31,7 @@ function y(e) {
     maxCharacterCount: I,
     showRemainingCharsAfterCount: T,
     className: S
-  } = e, A = (0, o.e7)([_.default], () => p.ZP.canUseIncreasedMessageLength(_.default.getCurrentUser())), C = (0, d.Z)(), N = null != I ? I : C, R = null != (y = null != T ? T : I) ? y : C / 10, P = v.length, D = null != O.upsellLongMessages && (null != P ? P : 0) > m.J6R && A, w = null != O.upsellLongMessages && !A, L = (null == (n = (0, f.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2, x = N - P, M = x > R, k = x < 0 && L, j = 0 === x ? E.intl.string(E.t.tU6YQ7) : x > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
+  } = e, A = (0, o.e7)([_.default], () => p.ZP.canUseIncreasedMessageLength(_.default.getCurrentUser())), C = (0, d.Z)(), N = null != I ? I : C, R = null != (y = null != T ? T : I) ? y : C / 10, P = v.length, D = null != O.upsellLongMessages && (null != P ? P : 0) > m.J6R && A, w = null != O.upsellLongMessages && !A, L = (null == (n = (0, f.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2, x = N - P, M = x > R, j = x < 0 && L, k = 0 === x ? E.intl.string(E.t.tU6YQ7) : x > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
     count: x
   }) : E.intl.string(E.t.YSRIqa), {
     analyticsLocations: U
@@ -54,8 +54,8 @@ function y(e) {
             color: "currentColor",
             className: b.premiumFlair
           })
-        }) : null, M || k ? null : (0, r.jsx)(s.u, {
-          text: j,
+        }) : null, M || j ? null : (0, r.jsx)(s.u, {
+          text: k,
           position: "top",
           children: (0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",

@@ -189,11 +189,11 @@ function M(e) {
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(U, A(N({}, i), {
+      return (0, r.jsx)(F, A(N({}, i), {
         body: B(n)
       }));
     case "GRID":
-      return (0, r.jsx)(F, {
+      return (0, r.jsx)(U, {
         children: B(t.children)
       });
     case "FIELD":
@@ -222,7 +222,7 @@ function B(e) {
   return e.map((e, t) => G(e, t))
 }
 
-function U(e) {
+function F(e) {
   let {
     title: t,
     body: n,
@@ -266,7 +266,7 @@ function U(e) {
   })
 }
 
-function F(e) {
+function U(e) {
   let {
     children: t
   } = e;
@@ -429,7 +429,7 @@ function $(e) {
     className: k.cta,
     children: [(0, r.jsxs)(s.Kqy, {
       gap: 4,
-      children: [(0, r.jsx)(s.Text, {
+      children: [e.showSuggestedForYou && (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: D.intl.string(D.t.zMUr6Z)
@@ -480,7 +480,7 @@ let ee = Object.assign(function(e) {
       action: "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
       applicationId: a.applicationId
     }), G())
-  }, [L, G, t, a.applicationId]), U = null == u && C && !Z && L, F = (0, r.jsxs)(r.Fragment, {
+  }, [L, G, t, a.applicationId]), F = null == u && C && !Z && L, U = (0, r.jsxs)(r.Fragment, {
     children: [null != O ? (0, r.jsx)("img", {
       className: k.appIcon,
       src: O,
@@ -497,7 +497,7 @@ let ee = Object.assign(function(e) {
     })]
   }), W = null == h ? (0, r.jsx)("div", {
     className: k.header,
-    children: F
+    children: U
   }) : (0, r.jsx)(c.u, {
     asContainer: true,
     text: D.intl.string(D.t.ajHoOr),
@@ -505,7 +505,7 @@ let ee = Object.assign(function(e) {
       className: l()(k.header, k.headerClickable),
       onClick: E,
       "aria-label": D.intl.string(D.t.ajHoOr),
-      children: F
+      children: U
     })
   }), H = (0, o.e7)([_.default], () => _.default.locale), z = i.useMemo(() => {
     let e = function(e, t, n) {
@@ -594,7 +594,7 @@ let ee = Object.assign(function(e) {
       })
     }), m && (0, r.jsxs)("div", {
       className: k.footer,
-      children: [null == j || null != I || U ? null : (0, r.jsxs)("div", {
+      children: [null == j || null != I || F ? null : (0, r.jsxs)("div", {
         className: k.stillSyncing,
         children: [(0, r.jsx)(s.wGF, {
           size: "xxs"
@@ -603,7 +603,7 @@ let ee = Object.assign(function(e) {
           color: "text-secondary",
           children: D.intl.string(D.t.z5K4Uv)
         })]
-      }), U ? (0, r.jsx)($, {
+      }), F ? (0, r.jsx)($, {
         heading: D.intl.string(D.t.UDPRLO),
         content: D.intl.string(D.t["OW/2al"]),
         buttons: (0, r.jsx)(s.Button, {

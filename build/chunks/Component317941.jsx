@@ -45,7 +45,7 @@ function L(e, t, n) {
 }
 let x = 512,
   M = 1e3;
-class k extends Chunk473749.PureComponent {
+class j extends Chunk473749.PureComponent {
   componentWillUnmount() {
     this._copyModeTimeout.stop()
   }
@@ -116,7 +116,7 @@ class k extends Chunk473749.PureComponent {
     })
   }
 }
-class j extends Chunk473749.PureComponent {
+class k extends Chunk473749.PureComponent {
   componentDidMount() {
     this._loadedAt = Date.now()
   }
@@ -242,7 +242,7 @@ class j extends Chunk473749.PureComponent {
         children: Chunk913527 ? (0, Chunk54381.jsx)(Chunk481060.$jN, {
           className: Chunk786636.spinner
         }) : (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-          children: [require.length < module.length ? this.renderGenerateGiftCodeRow() : null, require.map(e => (0, r.jsx)(k, {
+          children: [require.length < module.length ? this.renderGenerateGiftCodeRow() : null, require.map(e => (0, r.jsx)(j, {
             giftCode: e,
             sku: o,
             hideCode: l
@@ -298,4 +298,4 @@ let U = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk246946.Z, Chunk82142.Z,
     subscriptionPlan: null != n ? (0, R.oE)(n) : null,
     giftCodes: a
   }
-})(j)
+})(k)

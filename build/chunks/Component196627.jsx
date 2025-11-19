@@ -14,9 +14,7 @@ let a = e => {
   return (null == t ? true : t.type) !== "success" ? null : (0, r.jsx)("div", {
     className: l.successImg,
     children: (0, r.jsx)(i.sm, {
-      alt: "",
-      width: 100,
-      height: 100
+      alt: ""
     })
   })
 }

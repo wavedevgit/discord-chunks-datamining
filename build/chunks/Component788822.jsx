@@ -38,7 +38,7 @@ let m = e => {
     onChange: E,
     threshold: 0,
     children: (0, r.jsxs)(a.P3F, {
-      className: f.featuredBlock,
+      className: p.featuredBlock,
       innerRef: S,
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -66,7 +66,7 @@ let m = e => {
           categorySkuId: x,
           isInternalShopDeeplink: true,
           isOrbsExclusive: null == C ? true : C.isOrbsExclusive
-        }), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        }), s.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == j ? true : j.sessionId,
           sku_id: x,
           page_type: "home",
@@ -80,12 +80,12 @@ let m = e => {
       children: [null != b && (0, r.jsx)(a.IGR, {
         disableColor: true,
         text: b,
-        className: f.featuredBlockBadge
+        className: p.featuredBlockBadge
       }), (0, r.jsx)("div", {
-        className: f.featuredBlockTextContainer,
+        className: p.featuredBlockTextContainer,
         children: null != y && (0, r.jsx)(a.Heading, {
           lineClamp: 4,
-          className: f.featuredBlockBodyText,
+          className: p.featuredBlockBodyText,
           style: {
             color: null != (m = null == _ ? true : _.bannerTextColor) ? m : "white"
           },
@@ -93,17 +93,17 @@ let m = e => {
           children: y
         })
       }), (0, r.jsx)("div", {
-        className: f.featuredBlockButtonContainer,
+        className: p.featuredBlockButtonContainer,
         children: (0, r.jsx)(a.Button, {
           variant: "overlay-primary",
-          text: p.intl.string(p.t.jVcuVY),
+          text: g.intl.string(g.t.jVcuVY),
           onClick: e => {
             v({
               sourceButton: "shop marketing take me there button",
               categorySkuId: x,
               isInternalShopDeeplink: true,
               isOrbsExclusive: null == C ? true : C.isOrbsExclusive
-            }), e.stopPropagation(), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            }), e.stopPropagation(), s.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == j ? true : j.sessionId,
               sku_id: x,
               page_type: "home",

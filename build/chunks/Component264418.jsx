@@ -98,9 +98,9 @@ function O(e) {
     customOffset: null == N ? true : N.customOffset
   }), M = i.useCallback((e, t) => {
     null == S || S(t)
-  }, [S]), k = i.useCallback(() => {
+  }, [S]), j = i.useCallback(() => {
     null == S || S("user:explicit")
-  }, [S]), j = i.useCallback(e => {
+  }, [S]), k = i.useCallback(e => {
     w(e), x(t => E(m({}, t), {
       position: (0, _.z)(e)
     }))
@@ -109,13 +109,13 @@ function O(e) {
     position: D,
     onRequestClose: M,
     gradientColor: T,
-    onPositionChange: j,
+    onPositionChange: k,
     scrollBehavior: R,
     children: (0, r.jsxs)("div", {
       ref: A,
       "data-mana-component": "popover",
       children: [(0, r.jsx)(d.u, {
-        onClick: k,
+        onClick: j,
         variant: null != T ? "color-mix" : true
       }), null != y && (0, r.jsx)("div", {
         className: o()(p.graphic, {

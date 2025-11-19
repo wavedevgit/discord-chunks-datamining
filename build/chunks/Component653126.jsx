@@ -57,11 +57,11 @@ let k = Chunk473749.memo(function(e) {
       previewingVariantIndex: K,
       handleEntering: Y,
       handleLeaving: q
-    } = (0, O.f)(t), J = (0, b.$l)(), Q = (0, b.jB)(), X = (0, g.Nd)(), $ = null == X ? true : X.tab, ee = (0, S.zQ)(t), et = l.useRef(null), {
+    } = (0, O.f)(t), J = (0, b.$l)(), Q = (0, b.jB)(), X = (0, f.Nd)(), $ = null == X ? true : X.tab, ee = (0, S.zQ)(t), et = l.useRef(null), {
       isHoveringOrFocusing: en
     } = (0, d.Z)(et), {
       handleCardVisibilityChange: er
-    } = (0, p.E)(t.skuId, $ === y.AW.CATALOG ? "full" : $), el = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, G, J, Q), ei = t.type === s.Z.VARIANTS_GROUP && !k, ea = !T || !L, es = !(I && i) || ei, eo = es || ea, ec = ea || ei;
+    } = (0, g.E)(t.skuId, $ === y.AW.CATALOG ? "full" : $), el = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, G, J, Q), ei = t.type === s.Z.VARIANTS_GROUP && !k, ea = !T || !L, es = !(I && i) || ei, eo = es || ea, ec = ea || ei;
     return (0, r.jsx)(o.$, {
       innerRef: et,
       onChange: er,
@@ -90,7 +90,7 @@ let k = Chunk473749.memo(function(e) {
             })
           }), (0, r.jsxs)("div", {
             className: j.headerContainer,
-            children: [(0, r.jsx)(f.Z, {
+            children: [(0, r.jsx)(p.Z, {
               skuId: t.skuId,
               badgeOverride: B,
               className: V,

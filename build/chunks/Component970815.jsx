@@ -65,17 +65,17 @@ let h = () => (0, Chunk54381.jsx)("img", {
     }, [L, R]);
     let x = L || C,
       M = C ? null : a,
-      [k, j] = (0, i.useState)(null),
+      [j, k] = (0, i.useState)(null),
       U = (0, i.useRef)(null),
       G = (0, i.useCallback)(() => {
-        U.current = null, j(null)
+        U.current = null, k(null)
       }, []),
       B = (0, i.useCallback)(e => {
-        let t = k === U.current;
-        e > 0 && ("earn" !== k || !t) && j("earn")
-      }, [j, k]),
+        let t = j === U.current;
+        e > 0 && ("earn" !== j || !t) && k("earn")
+      }, [k, j]),
       Z = {
-        currentAnimationType: k,
+        currentAnimationType: j,
         animationTypeRef: U,
         onSetAnimationDurationMS: w
       };

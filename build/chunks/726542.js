@@ -493,7 +493,7 @@ let l = [{
     },
     enabled: true
   }, {
-    type: Chunk981631.ABu.META_QUEST,
+    type: Chunk981631.ABu.META_QUEST_OR_HORIZON,
     name: "Meta Quest",
     icon: {
       lightPNG: require("./637291.js"),

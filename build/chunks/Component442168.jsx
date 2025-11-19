@@ -35,10 +35,10 @@ function g(e) {
   }
   return e
 }
-let v = {
+let b = {
     visibility: "hidden"
   },
-  b = {
+  v = {
     precision: 1e-4,
     duration: 300
   },
@@ -58,14 +58,14 @@ function y(e) {
     popoutType: n
   } = e, {
     reducedMotion: y
-  } = i.useContext(o.Sf), S = (0, i.useRef)(null), O = f.n.getState().clipsButtonRef, C = (0, p.V9)(t), I = (0, a.e7)([u.Z], () => u.Z.getActiveAnimation()), w = (0, a.Wu)([u.Z], () => u.Z.getStreamClipAnimations(C)), P = (0, i.useRef)(true);
+  } = i.useContext(o.Sf), S = (0, i.useRef)(null), O = f.n.getState().clipsButtonRef, C = (0, p.V9)(t), w = (0, a.e7)([u.Z], () => u.Z.getActiveAnimation()), I = (0, a.Wu)([u.Z], () => u.Z.getStreamClipAnimations(C)), P = (0, i.useRef)(true);
   i.useEffect(() => () => {
     (0, d.Gh)(C)
   }, [C]);
   let j = e => {
-      if (n !== s.P.NO_POPOUT) return v;
+      if (n !== s.P.NO_POPOUT) return b;
       let t = null == O ? true : O.getBoundingClientRect();
-      if (P.current = t, e.timestamp !== I || null == t) return v;
+      if (P.current = t, e.timestamp !== w || null == t) return b;
       let {
         top: r,
         left: i
@@ -78,7 +78,7 @@ function y(e) {
       }
     },
     x = (0, i.useRef)(null),
-    Z = (0, c.Yzy)(w, {
+    Z = (0, c.Yzy)(I, {
       keys: e => e.timestamp,
       ref: x,
       from: {
@@ -87,10 +87,10 @@ function y(e) {
       enter: {
         opacity: 0
       },
-      config: b
+      config: v
     }, "animate-always"),
     R = (0, i.useRef)(null),
-    T = (0, c.Yzy)(w, {
+    T = (0, c.Yzy)(I, {
       ref: R,
       keys: e => e.timestamp,
       from: e => g({
@@ -99,9 +99,9 @@ function y(e) {
         opacity: 1
       }, y.enabled ? j(e) : (() => {
         var e;
-        if (n !== s.P.NO_POPOUT) return v;
+        if (n !== s.P.NO_POPOUT) return b;
         let t = null == (e = S.current) ? true : e.getBoundingClientRect();
-        return null == t ? v : {
+        return null == t ? b : {
           width: t.width,
           height: t.height,
           top: t.top,
@@ -125,7 +125,7 @@ function y(e) {
       })())),
       config: y.enabled ? h : E,
       onRest: (e, t) => {
-        null != t.item && null != w.find(e => e.timestamp === t.item.timestamp) && (0, d.Gh)(C, t.item.timestamp)
+        null != t.item && null != I.find(e => e.timestamp === t.item.timestamp) && (0, d.Gh)(C, t.item.timestamp)
       }
     }, "animate-always");
   return (0, l.useChain)([x, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {

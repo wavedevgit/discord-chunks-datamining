@@ -116,7 +116,9 @@ function v(e, t) {
 }
 class I extends(r = Chunk473749.PureComponent) {
   static getDerivedStateFromProps(e, t) {
-    return e.initialValue !== t.initialValueProp ? b(g({}, v(e, t.value)), {
+    return null != e.value && e.value !== t.value ? b(g({}, v(e, e.value)), {
+      active: t.active
+    }) : e.initialValue !== t.initialValueProp ? b(g({}, v(e, t.value)), {
       active: t.active
     }) : null
   }
@@ -158,8 +160,8 @@ class I extends(r = Chunk473749.PureComponent) {
       barClassName: L,
       grabberClassName: x,
       grabberStyles: M = {},
-      markerPosition: k = 0,
-      "aria-hidden": j,
+      markerPosition: j = 0,
+      "aria-hidden": k,
       "aria-label": U,
       "aria-labelledby": G,
       "aria-describedby": B
@@ -175,8 +177,8 @@ class I extends(r = Chunk473749.PureComponent) {
         return (0, i.jsx)("div", {
           className: s()(h.mark, {
             [h.defaultValue]: r,
-            [h.markAbove]: 0 === k,
-            [h.markBelow]: 1 === k
+            [h.markAbove]: 0 === j,
+            [h.markBelow]: 1 === j
           }),
           style: {
             left: "".concat(e, "%")
@@ -215,7 +217,7 @@ class I extends(r = Chunk473749.PureComponent) {
               "aria-valuenow": t,
               "aria-disabled": E,
               "aria-orientation": R,
-              "aria-hidden": j,
+              "aria-hidden": k,
               "aria-label": U,
               "aria-labelledby": G,
               "aria-describedby": null != B ? B : e.describedById,

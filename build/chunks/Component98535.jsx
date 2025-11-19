@@ -51,16 +51,16 @@ function v(e) {
     I = (0, d.FF)("CollectiblesContent"),
     {
       searchError: T
-    } = (0, g.a)();
-  return I && null != T ? (0, r.jsx)(C.Z, {}) : null != m ? (0, r.jsx)(f.Z, {
+    } = (0, f.a)();
+  return I && null != T ? (0, r.jsx)(C.Z, {}) : null != m ? (0, r.jsx)(p.Z, {
     onRetry: u,
     errorMessage: m,
-    errorOrigin: f.i.SHOP_PAGE
+    errorOrigin: p.i.SHOP_PAGE
   }) : b.includes(t) ? (0, r.jsx)(h.Z, {
     handleTransition: k,
     tab: t,
     transitionState: o
-  }) : (0, r.jsx)(p.Z, {
+  }) : (0, r.jsx)(g.Z, {
     tab: t,
     sortedCategories: n,
     initialCategoryId: O,

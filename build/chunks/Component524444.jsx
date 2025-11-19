@@ -146,7 +146,7 @@ function J(e) {
   let E = X(t),
     b = Q(n);
   a = null == a ? M.FC : a, s = null == s ? M.rs : s;
-  let [y, O] = i.useState(true), [v, T] = i.useState(false), S = h === j.hV.MOSAIC || true === p, A = (y || v) && !f && N.H1.getSetting() && null != l && "" !== l && true !== _, C = e => {
+  let [y, O] = i.useState(true), [v, T] = i.useState(false), S = h === k.hV.MOSAIC || true === p, A = (y || v) && !f && N.H1.getSetting() && null != l && "" !== l && true !== _, C = e => {
     let {
       altText: t
     } = e;
@@ -268,7 +268,7 @@ function en(e) {
     mediaLayoutType: f,
     imageContainerStyle: _,
     mosaicStyleAlt: h
-  } = e, m = f === j.hV.MOSAIC || true === h, g = !c && N.H1.getSetting() && null != t && "" !== t && true !== n, E = e => {
+  } = e, m = f === k.hV.MOSAIC || true === h, g = !c && N.H1.getSetting() && null != t && "" !== t && true !== n, E = e => {
     let {
       altText: t
     } = e;
@@ -440,7 +440,7 @@ function ed(e) {
       context: "Mark As Read"
     }) : f.Z.jumpToMessage({
       channelId: n,
-      messageId: k.default.castChannelIdAsMessageId(n),
+      messageId: j.default.castChannelIdAsMessageId(n),
       offset: 1,
       context: "Mark As Read"
     })
@@ -498,9 +498,9 @@ function ef(e) {
   } = i.useContext(b.G), [y, v] = i.useState(null), I = i.useRef(null), [T, N] = i.useState(null), R = i.useRef(null), M = (0, u.Wu)([A.Z], () => {
     var e;
     return null != (e = A.Z.summaries(s.id)) ? e : []
-  }, [s]), j = (0, g.Z)(M);
+  }, [s]), k = (0, g.Z)(M);
   i.useEffect(() => {
-    l().isEqual(j, M) || L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
+    l().isEqual(k, M) || L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
       num_summaries: M.length,
       message_counts: M.map(e => e.count),
       start_message_ids: M.map(e => e.startId),
@@ -510,7 +510,7 @@ function ef(e) {
       channel_id: s.id,
       channel_type: s.type
     })
-  }, [M, j, s.guild_id, s.id, s.type]);
+  }, [M, k, s.guild_id, s.id, s.type]);
   let B = (0, u.e7)([D.default], () => {
       var e;
       return null != (e = null == M ? true : M.map(e => {
@@ -626,7 +626,7 @@ function ef(e) {
         context: "Mark As Read"
       }) : f.Z.jumpToMessage({
         channelId: s.id,
-        messageId: k.default.castChannelIdAsMessageId(s.id),
+        messageId: j.default.castChannelIdAsMessageId(s.id),
         offset: 1,
         context: "Mark As Read"
       })
@@ -765,9 +765,9 @@ function eh(e) {
       })) ? e : []
     }, [N], ep),
     M = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
-    k = null == N || null == (t = N[M]) ? true : t.topic;
-  null == k && null == h && (null == N ? true : N.length) >= 1 && (k = null == (a = N[0]) ? true : a.topic);
-  let j = i.useMemo(() => l().get(N, M - 1), [M, N]),
+    j = null == N || null == (t = N[M]) ? true : t.topic;
+  null == j && null == h && (null == N ? true : N.length) >= 1 && (j = null == (a = N[0]) ? true : a.topic);
+  let k = i.useMemo(() => l().get(N, M - 1), [M, N]),
     B = i.useMemo(() => l().get(N, M + 1), [M, N]),
     V = i.useMemo(() => l().debounce(e => {
       var t;
@@ -870,7 +870,7 @@ function eh(e) {
   }), [N, P, q, J, s]);
   if (!(0, u.e7)([A.Z], () => A.Z.shouldShowTopicsBar())) return null;
   let et = Z.intl.string(Z.t["38qwgO"]);
-  return N.length > 0 && (et = "" === k || null == k ? Z.intl.string(Z.t.DwnFuG) : k), p ? null : (0, r.jsxs)("div", {
+  return N.length > 0 && (et = "" === j || null == j ? Z.intl.string(Z.t.DwnFuG) : j), p ? null : (0, r.jsxs)("div", {
     ref: y,
     className: o()(F.topicsPillContainer, F.containerMarginTop),
     children: [(0, r.jsxs)("div", {
@@ -916,7 +916,7 @@ function eh(e) {
           "aria-label": Z.intl.string(Z.t["58KOoF"]),
           onClick: X,
           className: o()(F.topicsPillCaret, F.topicsCaretRight, {
-            [F.topicsPillCaretDisabled]: null == j
+            [F.topicsPillCaretDisabled]: null == k
           }),
           children: (0, r.jsx)(w.Z, {
             width: 16,

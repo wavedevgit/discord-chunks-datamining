@@ -184,7 +184,7 @@ let x = e => {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), x = A >= m.OH.ACCEPTED, M = A >= m.OH.COMPLETED, k = (0, h.Xv)(n.config), j = _ || b, U = (0, m.t5)(n, S.dr.QUESTS_CARD, i, T), G = (0, p.O5)(), B = (0, m.Rf)(n), Z = (0, y.DD)({
+  }), x = A >= m.OH.ACCEPTED, M = A >= m.OH.COMPLETED, j = (0, h.Xv)(n.config), k = _ || b, U = (0, m.t5)(n, S.dr.QUESTS_CARD, i, T), G = (0, p.O5)(), B = (0, m.Rf)(n), Z = (0, y.DD)({
     quest: n,
     taskDetails: B,
     location: S.dr.QUESTS_CARD,
@@ -210,9 +210,9 @@ let x = e => {
         [N.outerContainerXs]: "xs" === l
       }),
       style: {
-        visibility: j ? "inherit" : "hidden"
+        visibility: k ? "inherit" : "hidden"
       },
-      "aria-hidden": !j,
+      "aria-hidden": !k,
       children: [(0, r.jsx)(s.u, {
         text: Y ? C.intl.string(C.t["04MTGf"]) : null,
         shouldShow: Y,
@@ -282,7 +282,7 @@ let x = e => {
         }), !Y && (0, r.jsx)(w, {
           quest: n,
           progressState: A,
-          isCollectibleQuest: k,
+          isCollectibleQuest: j,
           questContent: i,
           sourceQuestContent: T
         })]

@@ -43,8 +43,8 @@ function j(e) {
       application: _,
       analyticsLocations: a
     }))
-  }, [I, w, _, n, a]), I) ? (0, i.jsxs)(f.C3, {
-    children: [(0, i.jsx)(m.Z, {}), (0, i.jsx)(g.Z, {}), (0, i.jsxs)("div", {
+  }, [I, w, _, n, a]), I) ? (0, i.jsxs)(g.C3, {
+    children: [(0, i.jsx)(m.Z, {}), (0, i.jsx)(f.Z, {}), (0, i.jsxs)("div", {
       className: C.confirmation,
       children: [(0, i.jsx)(h.A, {
         sku: w,

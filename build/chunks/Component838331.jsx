@@ -115,7 +115,7 @@ function S(e) {
     onQueryChange: P
   } = e, [D, w] = i.useState(""), L = i.useCallback(e => {
     w(e), null == P || P(e)
-  }, [P]), [x] = i.useState(true), [M, k] = i.useState(null), j = i.useId(), U = i.useRef(null);
+  }, [P]), [x] = i.useState(true), [M, j] = i.useState(null), k = i.useId(), U = i.useRef(null);
   i.useLayoutEffect(() => {
     let e = document.querySelector("[".concat(b, '="').concat(M, '"]')),
       t = U.current;
@@ -143,7 +143,7 @@ function S(e) {
       })
     }), []),
     Y = i.useCallback((e, t) => {
-      k(t);
+      j(t);
       let n = document.querySelector(e),
         r = U.current;
       null != r && null != n && r.scrollIntoViewNode({
@@ -171,8 +171,8 @@ function S(e) {
           role: "combobox",
           "aria-label": O,
           "aria-expanded": x,
-          "aria-controls": x ? j : true,
-          "aria-owns": j,
+          "aria-controls": x ? k : true,
+          "aria-owns": k,
           "aria-haspopup": "listbox",
           className: o()(f.combobox, h),
           children: [(0, r.jsx)("div", {
@@ -184,7 +184,7 @@ function S(e) {
               query: D,
               onChange: L,
               onKeyDown: i,
-              onBlur: () => k(null),
+              onBlur: () => j(null),
               onClear: () => L(""),
               inputProps: {
                 "aria-multiline": false,
@@ -214,7 +214,7 @@ function S(e) {
                   maxHeight: A * (y + 6)
                 },
                 "aria-multiselectable": v,
-                id: j,
+                id: k,
                 ref: U,
                 className: o()(f.list, f.scroller, E),
                 sections: [G.length],

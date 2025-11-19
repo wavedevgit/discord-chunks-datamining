@@ -1,11 +1,11 @@
 /** Chunk was on 7279 **/
-/** chunk id: 549379, original params: e,t,i (module,exports,require) **/
+/** chunk id: 549379, original params: e,i,l (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => s
+  default: () => n
 });
 var Chunk894694 = require("./894694.js"),
   Chunk663879 = require("./663879.js");
-class n {
+class a {
   start() {
     Chunk663879.Z.registerCallback(this.handleTrigger.bind(this))
   }
@@ -15,22 +15,22 @@ class n {
   getState() {
     return null
   }
-  handleTrigger(e, t) {
+  handleTrigger(e, i) {
     this.emitSignal({
-      type: r.Bs.DISTRIBUTED,
+      type: t.Bs.DISTRIBUTED,
       remoteTriggerUserId: e,
-      remoteTriggerClipId: t
+      remoteTriggerClipId: i
     })
   }
   constructor(e) {
-    ! function(e, t, i) {
-      t in e ? Object.defineProperty(e, t, {
-        value: i,
+    ! function(e, i, l) {
+      i in e ? Object.defineProperty(e, i, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[i] = l
     }(this, "emitSignal", true), this.emitSignal = e
   }
 }
-let s = e => new n(e)
+let n = e => new a(e)

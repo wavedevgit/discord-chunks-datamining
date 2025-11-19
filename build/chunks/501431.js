@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function g(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,11 +46,11 @@ function g(e, t) {
   }), e
 }
 
-function p(e, t) {
+function g(e, t) {
   let n = new Set(e);
   return n.has(t) ? n.delete(t) : n.add(t), n
 }
-let f = {
+let p = {
     sortType: Chunk792091.E.RECENCY,
     sortDirection: Chunk497598.F.DESC
   },
@@ -67,7 +67,7 @@ let f = {
     colorFilters: new Set,
     themeFilters: new Set,
     orbEligible: false,
-    sort: f,
+    sort: p,
     searchQuery: "",
     queryPageSize: 0,
     queryPageOffset: 0,
@@ -82,10 +82,10 @@ let f = {
       searchQuery: r,
       itemTypeFilters: l
     } = e;
-    return t.size > 0 || n.size > 0 || "" !== r.trim() ? h : l.size > 0 ? m : f
+    return t.size > 0 || n.size > 0 || "" !== r.trim() ? h : l.size > 0 ? m : p
   },
-  b = (0, Chunk663042.U)((0, Chunk690775.XR)((e, t) => g(d({}, C), {
-    hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === f.sortType && t().sort.sortDirection === f.sortDirection,
+  b = (0, Chunk663042.U)((0, Chunk690775.XR)((e, t) => f(d({}, C), {
+    hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === p.sortType && t().sort.sortDirection === p.sortDirection,
     hasFilters: () => {
       let {
         itemTypeFilters: e,
@@ -106,8 +106,8 @@ let f = {
     },
     onToggleItemType: t => {
       e(e => {
-        let n = p(e.itemTypeFilters, t),
-          r = g(d({}, e), {
+        let n = g(e.itemTypeFilters, t),
+          r = f(d({}, e), {
             itemTypeFilters: n,
             queryPageOffset: 0
           });
@@ -116,8 +116,8 @@ let f = {
     },
     onToggleColor: t => {
       e(e => {
-        let n = p(e.colorFilters, t),
-          r = g(d({}, e), {
+        let n = g(e.colorFilters, t),
+          r = f(d({}, e), {
             colorFilters: n,
             queryPageOffset: 0
           });
@@ -126,8 +126,8 @@ let f = {
     },
     onToggleTheme: t => {
       e(e => {
-        let n = p(e.themeFilters, t),
-          r = g(d({}, e), {
+        let n = g(e.themeFilters, t),
+          r = f(d({}, e), {
             themeFilters: n,
             queryPageOffset: 0
           });
@@ -136,7 +136,7 @@ let f = {
     },
     onToggleOrbEligible: () => {
       e(e => {
-        let t = g(d({}, e), {
+        let t = f(d({}, e), {
           orbEligible: !e.orbEligible,
           queryPageOffset: 0
         });
@@ -155,7 +155,7 @@ let f = {
     },
     onSetSearchQuery: t => {
       e(e => {
-        let n = g(d({}, e), {
+        let n = f(d({}, e), {
           searchQuery: t,
           queryPageOffset: 0
         });
@@ -175,7 +175,7 @@ let f = {
     setItemTypeFilter: t => {
       e(e => {
         let n = new Set([t]),
-          r = g(d({}, e), {
+          r = f(d({}, e), {
             colorFilters: new Set,
             themeFilters: new Set,
             orbEligible: false,
@@ -198,7 +198,7 @@ let f = {
         queryPageSize: n,
         queryPageOffset: r
       } = t();
-      e(g(d({}, C), {
+      e(f(d({}, C), {
         queryPageSize: n,
         queryPageOffset: r
       }))

@@ -88,7 +88,7 @@ let P = 490,
   L = 200,
   x = 120,
   M = Chunk473749.forwardRef(function(e, t) {
-    var n, a, T, A, R, M, k, j, U;
+    var n, a, T, A, R, M, j, k, U;
     let {
       channel: G,
       type: B,
@@ -137,8 +137,8 @@ let P = 490,
         [I.minimal]: (null == (T = z.query) ? true : T.type) === b.eq.MENTION_SUGGESTIONS
       },
       ei = P;
-    null != $ && (ei = (null == (M = B.autocomplete) ? true : M.small) ? L : (null == (k = z.query) ? true : k.type) === b.eq.EMOJIS_AND_STICKERS ? D : w);
-    let ea = Math.max(Z, null != (j = null == V || null == (A = V.current) ? true : A.clientHeight) ? j : 0),
+    null != $ && (ei = (null == (M = B.autocomplete) ? true : M.small) ? L : (null == (j = z.query) ? true : j.type) === b.eq.EMOJIS_AND_STICKERS ? D : w);
+    let ea = Math.max(Z, null != (k = null == V || null == (A = V.current) ? true : A.clientHeight) ? k : 0),
       eo = Math.min(.5 * window.innerHeight, ea);
     ei = Math.min(window.innerHeight - x - eo - (null != H ? H : 0), ei);
     let es = (0, r.jsx)(_.ZP, {

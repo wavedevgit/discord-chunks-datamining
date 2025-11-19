@@ -2,7 +2,7 @@
 /** chunk id: 304742, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,11 +14,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk664603 = require("./664603.js");
 
-function g(e) {
+function f(e) {
   let {
     handleTransition: t,
     onClose: n
-  } = e, i = (0, o.B)("CollectiblesIndexPageContextMenu"), g = l.useMemo(() => [{
+  } = e, i = (0, o.B)("CollectiblesIndexPageContextMenu"), f = l.useMemo(() => [{
     label: u.intl.string(u.t.dRZYNE),
     value: c.AW.AVATAR_DECORATIONS
   }, {
@@ -46,7 +46,7 @@ function g(e) {
       onClose: n,
       "aria-label": u.intl.string(u.t.xFcotU),
       onSelect: () => {},
-      children: g.map(e => (0, r.jsx)(s.sNh, {
+      children: f.map(e => (0, r.jsx)(s.sNh, {
         id: e.value,
         label: e.label,
         action: () => {

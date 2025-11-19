@@ -288,7 +288,7 @@ function Z(e) {
   } = (0, _.Z)(D), G = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, B = f.default.getCurrentUser(), U = (null == B ? true : B.id) === t.id, F = 1 === (0, m.Gv)(s), W = !u && U, H = W && (0, m.vI)(s), z = W && !F, {
+  }, B = f.default.getCurrentUser(), F = (null == B ? true : B.id) === t.id, U = 1 === (0, m.Gv)(s), W = !u && F, H = W && (0, m.vI)(s), z = W && !U, {
     registerDragHandleRef: K
   } = (0, h.C)(), V = i.useRef(null);
   if (M) return (0, r.jsx)(O.i, {});
@@ -336,7 +336,7 @@ function Z(e) {
           channelId: a
         }), (0, r.jsx)(v.Z, {
           tags: Z,
-          isCurrentUser: U,
+          isCurrentUser: F,
           widgetType: s,
           applicationId: D,
           disableInteraction: u,
@@ -347,7 +347,7 @@ function Z(e) {
           guildId: n,
           channelId: a
         })]
-      }), !u && U && (0, r.jsx)(j.Z, {
+      }), !u && F && (0, r.jsx)(j.Z, {
         game: o,
         widgetType: s,
         className: w.removeGameButton,

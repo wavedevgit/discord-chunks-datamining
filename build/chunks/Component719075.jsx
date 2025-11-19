@@ -28,12 +28,12 @@ let x = e => {
       prioritizedCurrency: n
     } = e, u = (0, i.e7)([s.default], () => s.default.getCurrentUser()), h = (0, m.$l)(), x = c.ZP.canUseCollectibles(u), {
       isDisabled: E
-    } = (0, g.G)(t.skuId), {
+    } = (0, f.G)(t.skuId), {
       isPurchased: O,
       isPartiallyOwnedBundle: S,
       isRented: y,
       rentalExpiresAt: j
-    } = (0, p.L)(t), k = (0, d.G1)(t), I = (0, d.rN)(t), T = l.useMemo(() => (0, d.BH)(t, x), [t, x]), L = (0, C.Iw)(t), {
+    } = (0, g.L)(t), k = (0, d.G1)(t), I = (0, d.rN)(t), T = l.useMemo(() => (0, d.BH)(t, x), [t, x]), L = (0, C.Iw)(t), {
       checkoutEligiblePrices: B,
       hasSufficientOrbs: P,
       shouldCheckoutWithOrbs: N
@@ -80,7 +80,7 @@ let x = e => {
       variant: "text-md/bold",
       lineClamp: 1,
       children: b.intl.string(b.t.rt69oo)
-    }) : 0 === B.length ? null : (0, r.jsx)(f.F, {
+    }) : 0 === B.length ? null : (0, r.jsx)(p.F, {
       price: B[0],
       discount: T,
       nitroIconType: x ? "default" : true,

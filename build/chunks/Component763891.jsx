@@ -43,10 +43,10 @@ function R(e) {
     isFetchingCategories: n,
     scrollerRef: R,
     tab: Z
-  } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
+  } = e, w = (0, f.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: D,
     includeUnpublished: M
-  } = (0, E.Z)(), F = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, Y, q] = l.useMemo(() => {
+  } = (0, E.Z)(), F = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, Y, q] = l.useMemo(() => {
     switch (Z) {
       case O.AW.AVATAR_DECORATIONS:
         return [y.intl.string(y.t.dRZYNE), G ? L.Z : T.Z, i.Z.AVATAR_DECORATION];
@@ -78,7 +78,7 @@ function R(e) {
       cacheDisabled: D
     })
   }, [H, M, D, n, Z]);
-  let $ = f.Z.useConfig({
+  let $ = p.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;
   return n || null == F ? (0, r.jsx)(_.Z, {}) : (0, r.jsxs)(r.Fragment, {
@@ -94,8 +94,8 @@ function R(e) {
     }), (0, r.jsx)("div", {
       className: j.products,
       children: X.slice(40 * (V - 1), 40 * V).map((e, t) => {
-        let n = p.Z.getCategory(e.categorySkuId);
-        return null == n ? null : (0, r.jsx)(g.k0, {
+        let n = g.Z.getCategory(e.categorySkuId);
+        return null == n ? null : (0, r.jsx)(f.k0, {
           newValue: {
             tilePosition: t
           },

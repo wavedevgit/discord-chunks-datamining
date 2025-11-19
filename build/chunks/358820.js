@@ -4,7 +4,7 @@
 require.d(exports, {
   fz: () => P,
   ge: () => M,
-  r5: () => k,
+  r5: () => j,
   rk: () => D,
   wV: () => x
 }), require("./388685.js"), require("./415506.js"), require("./457542.js");
@@ -151,7 +151,7 @@ function P(e) {
 }
 async function D(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
-  await k();
+  await j();
   let n = performance.now();
   try {
     let r = p.ZP.getVoiceFilters();
@@ -237,7 +237,7 @@ function M() {
     type: "VOICE_FILTER_DOWNLOAD_CANCELED"
   })
 }
-async function k() {
+async function j() {
   if (!(Chunk709706.Z.isNativeModuleLoaded() || Chunk709706.Z.isNativeModuleLoading()) && !__OVERLAY__) {
     if (!(0, Chunk358085.isWindows)() && !(0, Chunk358085.isMac)()) return void Chunk570140.Z.dispatch({
       type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",

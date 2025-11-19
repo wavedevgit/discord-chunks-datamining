@@ -6,12 +6,12 @@ require.d(exports, {
   AA: () => D,
   Db: () => G,
   Dx: () => R,
-  R: () => j,
+  R: () => k,
   TB: () => w,
   XE: () => M,
   hs: () => L,
   w: () => N,
-  xR: () => k,
+  xR: () => j,
   xU: () => x,
   xz: () => U
 }), require("./388685.js"), require("./539854.js");
@@ -54,7 +54,7 @@ let y = false,
       let t = (await Chunk544891.tn.get({
         url: Chunk981631.ANM.TOP_SOUNDS_FOR_GUILDS,
         rejectWithError: false,
-        timeout: 500
+        timeout: 1e3
       })).body;
       Object.entries(exports.top_sounds_by_guild).forEach(t => {
         let [n, r] = t;
@@ -208,7 +208,7 @@ function M(e, t, n) {
   })
 }
 
-function k(e, t) {
+function j(e, t) {
   o.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_START",
     soundId: e,
@@ -216,7 +216,7 @@ function k(e, t) {
   })
 }
 
-function j(e, t) {
+function k(e, t) {
   o.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_END",
     soundId: e,

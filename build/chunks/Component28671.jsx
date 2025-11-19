@@ -39,6 +39,7 @@ function b(e) {
     widget: y,
     subtle: true,
     cta: (0, r.jsx)(f.Z.Cta, {
+      showSuggestedForYou: true,
       heading: m.intl.format(m.t.OIzLCy, {
         applicationName: n.name
       }),

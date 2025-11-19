@@ -39,7 +39,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk537221 = require("./537221.js");
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,14 +48,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -121,7 +121,7 @@ class Y extends Chunk473749.PureComponent {
         selected: o
       }
     } = this, l = this.isSelectable();
-    return (0, i.jsx)(f.P3F, G(j({}, e), {
+    return (0, i.jsx)(f.P3F, G(k({}, e), {
       className: s()(M.clickable, r, n),
       id: null != (t = F(a)) ? t : true,
       onClick: l ? this.handleClick : true,
@@ -152,14 +152,14 @@ class Y extends Chunk473749.PureComponent {
     }) : this.renderClickable()
   }
   constructor(e) {
-    super(e), k(this, "selectable", true), k(this, "layoutClass", M.autocompleteRowVertical), k(this, "handleMouseEnter", () => {
+    super(e), j(this, "selectable", true), j(this, "layoutClass", M.autocompleteRowVertical), j(this, "handleMouseEnter", () => {
       let {
         onHover: e,
         index: t,
         selected: n
       } = this.props;
       null == e || n || "number" != typeof t || e(t)
-    }), k(this, "handleClick", e => {
+    }), j(this, "handleClick", e => {
       let {
         onClick: t,
         index: n
@@ -237,7 +237,7 @@ class q extends Y {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "layoutClass", M.dividerContainer), k(this, "selectable", false)
+    super(...e), j(this, "layoutClass", M.dividerContainer), j(this, "selectable", false)
   }
 }
 class X extends Y {
@@ -331,7 +331,7 @@ class Q extends Y {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "layoutClass", M.autoCompleteRowSuggestion)
+    super(...e), j(this, "layoutClass", M.autoCompleteRowSuggestion)
   }
 }
 class J extends Y {
@@ -351,7 +351,7 @@ class J extends Y {
       useReducedMotion: Chunk607070.Z.useReducedMotion,
       roleStyle: "username",
       includeConvenienceGlow: true
-    }), h = Chunk392711 ? j({}, Chunk91192 ? Chunk313666 : {
+    }), h = Chunk392711 ? k({}, Chunk91192 ? Chunk313666 : {
       color: null != r ? r : true
     }) : true;
     return (0, Chunk54381.jsxs)(Chunk965386.RX, {
@@ -496,7 +496,7 @@ class er extends Y {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "layoutClass", s()(M.autocompleteRowVertical, M.autocompleteRowVerticalSmall))
+    super(...e), j(this, "layoutClass", s()(M.autocompleteRowVertical, M.autocompleteRowVerticalSmall))
   }
 }
 class ei extends Y {
@@ -528,7 +528,7 @@ class ei extends Y {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "layoutClass", s()(M.autocompleteRowVertical, M.autocompleteRowVerticalSmall))
+    super(...e), j(this, "layoutClass", s()(M.autocompleteRowVertical, M.autocompleteRowVerticalSmall))
   }
 }
 class ea extends Y {
@@ -546,7 +546,7 @@ class ea extends Y {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "layoutClass", M.autocompleteRowHorizontal)
+    super(...e), j(this, "layoutClass", M.autocompleteRowHorizontal)
   }
 }
 class eo extends Y {
@@ -558,7 +558,7 @@ class eo extends Y {
 }
 class es extends Y {
   renderContent() {
-    return (0, Chunk54381.jsx)(Chunk887120.Z, j({}, this.props))
+    return (0, Chunk54381.jsx)(Chunk887120.Z, k({}, this.props))
   }
 }
 class el extends Y {
@@ -601,7 +601,7 @@ class ec extends(r = Chunk473749.PureComponent) {
       },
       children: (0, Chunk54381.jsx)("div", {
         className: s()(Chunk537221.autocomplete, require),
-        children: (0, Chunk54381.jsx)("div", G(j({
+        children: (0, Chunk54381.jsx)("div", G(k({
           className: s()(Chunk537221.autocompleteInner, r)
         }, Chunk392711), {
           children: exports
@@ -610,5 +610,5 @@ class ec extends(r = Chunk473749.PureComponent) {
     }) : null
   }
 }
-k(ec, "Generic", W), k(ec, "Loading", K), k(ec, "Title", z), k(ec, "Divider", q), k(ec, "User", X), k(ec, "UserSuggestion", Q), k(ec, "Role", J), k(ec, "Channel", ee), k(ec, "Command", et), k(ec, "NewCommand", en), k(ec, "Emoji", er), k(ec, "GIFIntegration", ea), k(ec, "Sticker", ei), k(ec, "EmojiUpsell", eo), k(ec, "Soundmoji", es), k(ec, "Game", el), k(ec, "Timestamp", $);
+j(ec, "Generic", W), j(ec, "Loading", K), j(ec, "Title", z), j(ec, "Divider", q), j(ec, "User", X), j(ec, "UserSuggestion", Q), j(ec, "Role", J), j(ec, "Channel", ee), j(ec, "Command", et), j(ec, "NewCommand", en), j(ec, "Emoji", er), j(ec, "GIFIntegration", ea), j(ec, "Sticker", ei), j(ec, "EmojiUpsell", eo), j(ec, "Soundmoji", es), j(ec, "Game", el), j(ec, "Timestamp", $);
 let eu = ec

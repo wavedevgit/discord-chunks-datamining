@@ -2,7 +2,7 @@
 /** chunk id: 51596, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $Z: () => j,
+  $Z: () => k,
   Cp: () => U,
   F_: () => L,
   Se: () => F,
@@ -152,13 +152,13 @@ function M(e, t) {
   O.default.track(e, h)
 }
 
-function k() {
+function j() {
   Chunk570140.Z.dispatch({
     type: "QUICKSWITCHER_HIDE"
   })
 }
 
-function j() {
+function k() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND",
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "";
   x(module), Chunk570140.Z.dispatch(N({
@@ -167,12 +167,12 @@ function j() {
 }
 
 function U() {
-  M(Chunk981631.rMx.QUICKSWITCHER_CLOSED), k()
+  M(Chunk981631.rMx.QUICKSWITCHER_CLOSED), j()
 }
 
 function G() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND";
-  Chunk823385.Z.isOpen() ? U() : j(module)
+  Chunk823385.Z.isOpen() ? U() : k(module)
 }
 
 function B(e) {
@@ -190,7 +190,7 @@ function Z(e) {
 
 function F(e) {
   let t, m = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  k(), (0, r.pTH)(), M(S.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
+  j(), (0, r.pTH)(), M(S.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
   let {
     type: b,
     record: y

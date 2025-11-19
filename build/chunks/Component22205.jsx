@@ -80,7 +80,7 @@ function L(e) {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
     M = (0, d.e7)([T.Z], () => T.Z.getFocusedRunningGame()),
-    k = g ? (0, r.jsxs)("div", {
+    j = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
@@ -103,12 +103,12 @@ function L(e) {
         })]
       })]
     }) : null,
-    j = g ? null : N.intl.string(N.t.oEJEFq),
+    k = g ? null : N.intl.string(N.t.oEJEFq),
     U = null != (t = null == I ? true : I.isStaff()) && t || null != (n = null == I ? true : I.isStaffPersonal()) && n;
   return (0, r.jsx)(S.Y, {
     title: N.intl.string(N.t.U38qZj),
-    body: k,
-    hint: U ? j : true,
+    body: j,
+    hint: U ? k : true,
     confirmText: N.intl.string(N.t.a3HlgJ),
     cancelText: null != M ? N.intl.string(N.t.qIYnPo) : true,
     icon: (0, r.jsx)(b.Z, {

@@ -88,7 +88,7 @@ function C(e) {
     setInteractionToast: D
   } = (0, g.Xo)(), {
     primaryColor: w
-  } = (0, b.z)(), [L, x] = i.useState(""), [M, k] = i.useState((0, u.JM)(L)), j = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
+  } = (0, b.z)(), [L, x] = i.useState(""), [M, j] = i.useState((0, u.JM)(L)), k = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
     e.key === O.vn.ESCAPE && (e.stopPropagation(), P())
   }, [P]);
   i.useEffect(() => {
@@ -147,11 +147,11 @@ function C(e) {
         textValue: L,
         richValue: M,
         onChange: (e, t, n) => {
-          t !== L && (x(t), k(n))
+          t !== L && (x(t), j(n))
         },
-        focused: j.current,
+        focused: k.current,
         onFocus: () => {
-          j.current = true
+          k.current = true
         },
         onSubmit: async e => {
           let {

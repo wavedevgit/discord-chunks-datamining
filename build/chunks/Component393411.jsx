@@ -40,7 +40,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk587277 = require("./587277.js");
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,14 +49,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -208,7 +208,7 @@ let K = function(e) {
     renewalInvoicePreview: o,
     paymentSource: p,
     busy: N,
-    analyticsLocation: k
+    analyticsLocation: j
   } = e, U = "subscription_header", {
     analyticsLocations: W
   } = (0, f.ZP)(d.Z.SUBSCRIPTION_HEADER), {
@@ -240,9 +240,9 @@ let K = function(e) {
         let {
           PremiumBrandRefreshSubscriptionCancellationModal: t
         } = await n.e("26526").then(n.bind(n, 48813));
-        return n => (0, r.jsx)(t, G(j({}, n), {
+        return n => (0, r.jsx)(t, G(k({}, n), {
           premiumSubscription: i,
-          analyticsLocation: k,
+          analyticsLocation: j,
           analyticsLocations: W,
           initialStep: e
         }))
@@ -258,7 +258,7 @@ let K = function(e) {
         1 === t.length && (null == p ? true : p.id) === i.paymentSourceId && (0, v.tD)(e.id, n, null == p ? true : p.id) && (r = true), r ? u.O5(i, W) : (0, h.Z)({
           initialPlanId: i.premiumPlanIdFromItems,
           analyticsLocations: W,
-          analyticsLocation: k,
+          analyticsLocation: j,
           analyticsObject: Z,
           subscription: i
         })
@@ -275,7 +275,7 @@ let K = function(e) {
       i.status === w.O0b.PAUSED && i.pauseReason !== L.Id.USER_TEMPORARY_BAN ? (0, h.Z)({
         initialPlanId: i.premiumPlanIdFromItems,
         analyticsLocations: W,
-        analyticsLocation: k,
+        analyticsLocation: j,
         analyticsObject: Z,
         subscription: i,
         skipConfirm: true
@@ -350,7 +350,7 @@ let K = function(e) {
               onClick: () => {
                 (0, h.Z)({
                   analyticsLocations: W,
-                  analyticsLocation: k,
+                  analyticsLocation: j,
                   analyticsObject: Z,
                   subscription: i
                 })

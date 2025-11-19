@@ -15,13 +15,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk788822 = require("./788822.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk687983 = require("./687983.js");
-let p = e => {
+let g = e => {
     let {
       handleTransition: t,
       featuredBlockRecord: n
     } = e, l = (0, c.QH)("collectibles_featured_block");
     return (0, r.jsx)("div", {
-      className: i()(g.col2, g.centeredSection),
+      className: i()(f.col2, f.centeredSection),
       children: null == n ? true : n.subblocks.map((e, n) => {
         if (e.type === a.O.CATEGORY) {
           let i = null != e.unpublishedAt ? d.intl.string(d.t["h/uBCR"]) : (e => {
@@ -56,13 +56,13 @@ let p = e => {
       })
     })
   },
-  f = e => {
+  p = e => {
     let {
       handleTransition: t,
       categories: n
     } = e, l = (0, c.QH)("collectibles_featured_block");
     if (null == n || n.length < 2) return s.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
-    let [a, p] = n, f = (null == a ? true : a.unpublishedAt) != null ? d.intl.string(d.t["h/uBCR"]) : (() => {
+    let [a, g] = n, p = (null == a ? true : a.unpublishedAt) != null ? d.intl.string(d.t["h/uBCR"]) : (() => {
       switch (l) {
         case c.pj.FIRST_BLOCK_ONLY:
         case c.pj.BOTH_BLOCKS:
@@ -70,7 +70,7 @@ let p = e => {
         default:
           returnfalse
       }
-    })() && (null == a ? true : a.storeListingId) != null && "" !== a.storeListingId ? d.intl.string(d.t.soka7y) : true, m = (null == p ? true : p.unpublishedAt) != null ? d.intl.string(d.t["h/uBCR"]) : (() => {
+    })() && (null == a ? true : a.storeListingId) != null && "" !== a.storeListingId ? d.intl.string(d.t.soka7y) : true, m = (null == g ? true : g.unpublishedAt) != null ? d.intl.string(d.t["h/uBCR"]) : (() => {
       switch (l) {
         case c.pj.RIGHT_BLOCK_ONLY:
         case c.pj.BOTH_BLOCKS:
@@ -78,22 +78,22 @@ let p = e => {
         default:
           returnfalse
       }
-    })() && (null == p ? true : p.storeListingId) != null && "" !== p.storeListingId ? d.intl.string(d.t.soka7y) : d.intl.string(d.t["o/oRJB"]);
+    })() && (null == g ? true : g.storeListingId) != null && "" !== g.storeListingId ? d.intl.string(d.t.soka7y) : d.intl.string(d.t["o/oRJB"]);
     return (0, r.jsx)("div", {
-      className: i()(g.col2, g.centeredSection),
+      className: i()(f.col2, f.centeredSection),
       children: (0, r.jsxs)(o.k0, {
         newValue: {
           categoryPosition: 1,
-          pageCategory: null != a ? a.name : null == p ? true : p.name,
+          pageCategory: null != a ? a.name : null == g ? true : g.name,
           pageSection: "featured_block",
           tilePosition: +(null == a)
         },
         children: [null != a && (0, r.jsx)(u.q, {
           category: a,
-          badgeText: f,
+          badgeText: p,
           handleTransition: t
-        }), null != p && (0, r.jsx)(u.q, {
-          category: p,
+        }), null != g && (0, r.jsx)(u.q, {
+          category: g,
           badgeText: m,
           handleTransition: t
         })]
@@ -108,23 +108,23 @@ let p = e => {
       featuredBlockRecord: a
     } = e;
     return t ? (0, r.jsxs)("div", {
-      className: i()(g.col2, g.centeredSection),
+      className: i()(f.col2, f.centeredSection),
       children: [(0, r.jsx)("div", {
-        className: i()(g.skeleton, g.featuredBlock),
+        className: i()(f.skeleton, f.featuredBlock),
         children: (0, r.jsx)("div", {
-          className: g.skeletonBody
+          className: f.skeletonBody
         })
       }), (0, r.jsx)("div", {
-        className: i()(g.skeleton, g.featuredBlock),
+        className: i()(f.skeleton, f.featuredBlock),
         children: (0, r.jsx)("div", {
-          className: g.skeletonBody
+          className: f.skeletonBody
         })
       })]
-    }) : null != a ? (0, r.jsx)(p, {
+    }) : null != a ? (0, r.jsx)(g, {
       featuredBlockRecord: a,
       handleTransition: n,
       isLoading: false
-    }) : (0, r.jsx)(f, {
+    }) : (0, r.jsx)(p, {
       categories: l,
       handleTransition: n,
       isLoading: false

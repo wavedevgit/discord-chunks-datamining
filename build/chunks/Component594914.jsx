@@ -96,7 +96,7 @@ function h() {
   (0, Chunk481060.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([require.e("92275"), require.e("21854")]).then(require.bind(require, 211912));
+    } = await require.e("21854").then(require.bind(require, 211912));
     return t => (0, r.jsx)(e, d({}, t))
   }, {
     modalKey: "slayer-storefront-announcement-modal"

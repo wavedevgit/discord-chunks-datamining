@@ -72,12 +72,12 @@ function k(e) {
     application: c,
     channel: m,
     width: g
-  } = e, v = g > 400 ? 2 : +(g > 300), [b] = g > 400 ? [s.EFr.SIZE_56, 56] : g > 300 ? [s.EFr.SIZE_32, 32] : [s.EFr.SIZE_24, 24], E = (0, o.Wu)([Z.default, j.default], () => Array.from(l).map(e => (0, p.J)(e, j.default) ? null : Z.default.getUser(e.userId)).filter(R.lm)), h = (0, o.e7)([d.ZP], () => {
+  } = e, b = g > 400 ? 2 : +(g > 300), [v] = g > 400 ? [s.EFr.SIZE_56, 56] : g > 300 ? [s.EFr.SIZE_32, 32] : [s.EFr.SIZE_24, 24], E = (0, o.Wu)([Z.default, j.default], () => Array.from(l).map(e => (0, p.J)(e, j.default) ? null : Z.default.getUser(e.userId)).filter(R.lm)), h = (0, o.e7)([d.ZP], () => {
     var e;
     return null != (e = d.ZP.getEmbeddedActivitiesForChannel(m.id).find(e => e.applicationId === c.id)) ? e : d.ZP.getEmbeddedActivitiesForStartingChannel(m.id).find(e => e.applicationId === c.id)
   }), {
     analyticsLocations: y
-  } = (0, C.ZP)(), S = (0, u.O)(), O = T.ZP.getName(m.getGuildId(), m.id, null == E ? true : E[0]), w = (0, _.s5)({
+  } = (0, C.ZP)(), S = (0, u.O)(), O = T.ZP.getName(m.getGuildId(), m.id, null == E ? true : E[0]), I = (0, _.s5)({
     userId: null == (t = Z.default.getCurrentUser()) ? true : t.id,
     channelId: m.id,
     application: c
@@ -86,7 +86,7 @@ function k(e) {
     type: "channel"
   }), [m]), {
     submitting: L
-  } = (0, I.Z)({
+  } = (0, w.Z)({
     applicationId: D,
     context: k,
     launchingComponentId: x
@@ -94,14 +94,14 @@ function k(e) {
   return (0, r.jsxs)("div", {
     className: N.splash,
     children: [(0, r.jsx)(M, {
-      avatarSize: b,
+      avatarSize: v,
       guildId: P,
       channelId: m.id,
       users: E
     }), (0, r.jsx)(s.Text, {
       className: a()(N.subheader, {
-        [N.small]: 0 === v,
-        [N.medium]: 1 === v
+        [N.small]: 0 === b,
+        [N.medium]: 1 === b
       }),
       variant: "text-sm/normal",
       children: E.length > 1 ? A.intl.formatToPlainString(A.t.cpe6CK, {
@@ -112,14 +112,14 @@ function k(e) {
       })
     }), (0, r.jsx)(s.Text, {
       className: a()(N.header, {
-        [N.small]: 0 === v,
-        [N.medium]: 1 === v
+        [N.small]: 0 === b,
+        [N.medium]: 1 === b
       }),
       variant: "text-sm/normal",
       children: c.name
     }), (0, r.jsx)("div", {
       className: N.buttons,
-      children: w ? (0, r.jsx)(s.Button, {
+      children: I ? (0, r.jsx)(s.Button, {
         text: A.intl.string(A.t["4i2vj+"]),
         onClick: function(e) {
           e.stopPropagation(), null != h && (0, f.Z)({
@@ -131,7 +131,7 @@ function k(e) {
           })
         },
         loading: L,
-        size: 2 === v ? "md" : "sm",
+        size: 2 === b ? "md" : "sm",
         variant: "overlay-primary"
       }) : null
     })]
@@ -149,13 +149,13 @@ function L(e) {
     analyticsLocations: s
   } = (0, C.ZP)(O.Z.ACTIVITY_TILE), {
     applicationId: u
-  } = t, d = (0, g.Z)(), f = null != d && (0, m.p)(d.location) === c.id && d.applicationId === u, [p] = (0, w.Z)([u]), {
+  } = t, d = (0, g.Z)(), f = null != d && (0, m.p)(d.location) === c.id && d.applicationId === u, [p] = (0, I.Z)([u]), {
     url: _
-  } = (0, v.Z)({
+  } = (0, b.Z)({
     applicationId: u,
     names: D,
     size: 1024
-  }), h = !l && f, I = !f, j = !f && !l, Z = (0, o.e7)([x.Z, P.Z], () => (0, S.Z)({
+  }), h = !l && f, w = !f, j = !f && !l, Z = (0, o.e7)([x.Z, P.Z], () => (0, S.Z)({
     LayerStore: x.Z,
     PopoutWindowStore: P.Z
   }));
@@ -168,10 +168,10 @@ function L(e) {
     value: s,
     children: (0, r.jsxs)("div", {
       className: N.container,
-      children: [h && null != d && (0, r.jsx)(b.Z, {
+      children: [h && null != d && (0, r.jsx)(v.Z, {
         className: N.iframe,
         embedId: (0, y.Z)(d.location.id, u)
-      }), I && null != p && null != _ && "" !== _ ? (0, r.jsx)("img", {
+      }), w && null != p && null != _ && "" !== _ ? (0, r.jsx)("img", {
         className: N.splashImage,
         alt: p.name,
         src: _
@@ -180,7 +180,7 @@ function L(e) {
         channel: c,
         participants: t.participants,
         application: p
-      }), a || I ? null : (0, r.jsx)("div", {
+      }), a || w ? null : (0, r.jsx)("div", {
         className: N.clickShield
       })]
     })

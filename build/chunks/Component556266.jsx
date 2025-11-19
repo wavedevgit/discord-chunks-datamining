@@ -61,7 +61,7 @@ function I(e) {
   } = e, {} = (0, d.JL)(), {
     analyticsLocations: u
   } = (0, r.ZP)();
-  return (0, i.jsx)(f.PaymentModal, {
+  return (0, i.jsx)(g.PaymentModal, {
     onClose: t,
     onComplete: n,
     applicationId: a,
@@ -78,29 +78,29 @@ function P(e) {
   let {
     loadId: t,
     applicationId: n,
-    skuId: f,
+    skuId: g,
     analyticsLocations: v,
     isGift: _ = false,
     giftRecipient: P,
     giftingOrigin: w
   } = e, {
-    analyticsLocations: T
+    analyticsLocations: y
   } = (0, r.ZP)(v, a.Z.SLAYER_STOREFRONT_PAYMENT_MODAL), N = (0, s.q)(n);
   return l.useEffect(() => {
-    null == N || null == N.guildId || null == f || p.Z.isFetchingForSKU(f) || null != m.Z.get(f) || (0, x.y)(N.guildId, f)
-  }, [N, f]), (0, i.jsx)(r.Gt, {
-    value: T,
+    null == N || null == N.guildId || null == g || p.Z.isFetchingForSKU(g) || null != m.Z.get(g) || (0, x.y)(N.guildId, g)
+  }, [N, g]), (0, i.jsx)(r.Gt, {
+    value: y,
     children: (0, i.jsx)(d.PaymentContextProvider, {
       loadId: t,
       stepConfigs: function() {
         let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-        return [g.WA, ...e ? [C.jM] : [], g.s2, ...g.yp, g.wo, {
+        return [f.WA, ...e ? [C.jM] : [], f.s2, ...f.yp, f.wo, {
           key: c.h8.CONFIRM,
           renderStep: e => (0, i.jsx)(h.d, b({}, e))
         }]
       }(_),
       applicationId: n,
-      skuIDs: [f],
+      skuIDs: [g],
       activeSubscription: null,
       purchaseType: j.GZ.ONE_TIME,
       isGift: _,

@@ -95,13 +95,13 @@ function S(e) {
     scrollBehavior: P = "sticky",
     modal: D = false,
     returnRef: w
-  } = e, [L, x] = i.useState(p), [M, k] = i.useState(E), j = i.useRef(E), U = i.useRef(0), G = (0, c.e7)([d.Z], () => d.Z.getLayers()), B = null != (t = G[G.length - 1]) ? t : "base", Z = i.useRef(N);
+  } = e, [L, x] = i.useState(p), [M, j] = i.useState(E), k = i.useRef(E), U = i.useRef(0), G = (0, c.e7)([d.Z], () => d.Z.getLayers()), B = null != (t = G[G.length - 1]) ? t : "base", Z = i.useRef(N);
   i.useEffect(() => {
     Z.current = N
   }, [N]);
   let F = i.useCallback(e => {
       var t;
-      null != e && e !== j.current && (j.current = e, k(e), null == (t = Z.current) || t.call(Z, e))
+      null != e && e !== k.current && (k.current = e, j(e), null == (t = Z.current) || t.call(Z, e))
     }, []),
     V = i.useMemo(() => {
       var e, t;

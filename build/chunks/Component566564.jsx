@@ -40,7 +40,7 @@ let A = e => {
     let {
       handleTransition: c,
       numVisibleItems: u,
-      isFetchingCategories: g,
+      isFetchingCategories: f,
       tab: b
     } = e, {
       noCache: I,
@@ -74,7 +74,7 @@ let A = e => {
       return n
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-    }), n), [Z, w] = l.useState(false), H = (0, p.sp)(), D = null != (t = null == H ? true : H.sessionId) ? t : "";
+    }), n), [Z, w] = l.useState(false), H = (0, g.sp)(), D = null != (t = null == H ? true : H.sessionId) ? t : "";
     l.useEffect(() => {
       (0, C.n)({
         sessionId: D,
@@ -150,12 +150,12 @@ let A = e => {
             }, n);
             break;
           case s.z.FEED:
-            let p = e.sortedSkuIds;
+            let g = e.sortedSkuIds;
             l = (0, r.jsx)(O.Z, {
               title: b === L.AW.ORBS ? P.intl.string(P.t.dFgeuZ) : P.intl.string(P.t.NSv5KV),
-              isLoading: M || g,
+              isLoading: M || f,
               numVisibleItems: u,
-              sortedSkuIds: p,
+              sortedSkuIds: g,
               buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? N.feedblockInteractiveBackground : true,
               prioritizeUserDiscounts: b === L.AW.HOME,
               tab: b,
@@ -207,7 +207,7 @@ let A = e => {
           default:
             return null
         }
-        return (0, r.jsx)(f.g6, {
+        return (0, r.jsx)(p.g6, {
           blockType: e.type,
           children: (0, r.jsx)("div", {
             className: a()(N.blockContainer, N.feedContent, {
@@ -226,20 +226,20 @@ let A = e => {
       transitionState: i
     } = e, a = l.useRef(null), {
       handleScroll: s
-    } = (0, u.z)(a, n), o = (0, b.R)(), d = (0, p.sp)(), [f, m] = l.useState(L.IV), [h, C] = l.useState(false);
+    } = (0, u.z)(a, n), o = (0, b.R)(), d = (0, g.sp)(), [p, m] = l.useState(L.IV), [h, C] = l.useState(false);
     return l.useEffect(() => {
       if (null != a.current) {
         let e = () => {
             if (null == a.current) return;
             let e = a.current.getDistanceFromBottom();
-            f >= 36 ? C(e < 20) : e <= 200 && m(e => e + L.IV)
+            p >= 36 ? C(e < 20) : e <= 200 && m(e => e + L.IV)
           },
           t = a.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [a, f, m, C]), (0, r.jsx)(c.Den, {
+    }, [a, p, m, C]), (0, r.jsx)(c.Den, {
       className: N.shopScroll,
       ref: a,
       onScroll: s,
@@ -249,10 +249,10 @@ let A = e => {
           className: N.mainContent,
           children: [(0, r.jsx)(A, {
             handleTransition: t,
-            numVisibleItems: f,
+            numVisibleItems: p,
             isFetchingCategories: o,
             tab: n
-          }), n !== L.AW.CATALOG && f >= 36 && (0, r.jsxs)("div", {
+          }), n !== L.AW.CATALOG && p >= 36 && (0, r.jsxs)("div", {
             className: N.endOfFeed,
             children: [(0, r.jsx)(c.Heading, {
               variant: "heading-md/semibold",
@@ -264,7 +264,7 @@ let A = e => {
                 t({
                   sourceButton: "shop all button",
                   shouldAnimate: true
-                }), g.default.track(B.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                }), f.default.track(B.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == d ? true : d.sessionId,
                   page_type: n,
                   page_category: n === L.AW.HOME || null == d ? true : d.pageCategory,

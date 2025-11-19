@@ -1,8 +1,8 @@
 /** Chunk was on 63962 **/
 /** chunk id: 636466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => E,
-  J: () => I
+  B: () => Z,
+  J: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,9 +23,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk470146 = require("./470146.js"),
-  Chunk207661 = require("./207661.js");
+  Chunk207661 = require("./207661.js"),
+  Chunk30399 = require("./30399.js");
 
-function v(e) {
+function C(e) {
   let {
     targetElementRef: t,
     onRequestClose: n,
@@ -42,18 +43,21 @@ function v(e) {
     align: "center",
     onRequestClose: n,
     actions: [{
-      text: O.intl.string(O.t.RzWDqY),
+      text: O.intl.string(O.t.uB4Gax),
       variant: "primary",
       onClick: i
     }],
     targetElementRef: t,
     title: O.intl.string(O.t.qh9t5c),
     body: O.intl.string(O.t.iM6fxV),
-    graphic: true
+    graphic: {
+      type: "image",
+      src: v.Z
+    }
   })
 }
 
-function C(e) {
+function I(e) {
   var t, n, {
       showPopover: o,
       onViewWishlist: c,
@@ -84,7 +88,7 @@ function C(e) {
     x = i.useCallback(() => {
       O(_.L.USER_DISMISS)
     }, [O]),
-    C = i.useCallback(() => {
+    v = i.useCallback(() => {
       O(_.L.USER_DISMISS), c()
     }, [c, O]);
   return (0, r.jsxs)(r.Fragment, {
@@ -117,15 +121,15 @@ function C(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), o && y === a.z.GAME_SHOP_WISHLIST_POPOVER && !m && !b && (0, r.jsx)(v, {
+    }), t)), o && y === a.z.GAME_SHOP_WISHLIST_POPOVER && !m && !b && (0, r.jsx)(C, {
       targetElementRef: g,
       onRequestClose: x,
-      onActionClick: C
+      onActionClick: v
     })]
   })
 }
 
-function I(e, t) {
+function S(e, t) {
   let {
     index: n,
     moreCount: i,
@@ -135,7 +139,7 @@ function I(e, t) {
     analyticsLocations: o,
     wishlistId: c
   } = t, u = null != i && i > 0, p = u ? O.intl.string(O.t.TxBQzD) : O.intl.string(O.t.ilhtIa);
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(I, {
     onCardClick: () => {
       if (u) return void l();
       (0, g.P)(e.sku, {
@@ -165,7 +169,7 @@ function I(e, t) {
   }, e.skuId)
 }
 
-function S(e) {
+function E(e) {
   let {
     item: t,
     card: n,
@@ -206,13 +210,13 @@ function S(e) {
   })
 }
 
-function E(e, t) {
+function Z(e, t) {
   let {
     profileOwner: n,
     analyticsLocations: i,
     wishlistId: l,
     onViewWishlist: a
-  } = t, s = I(e, {
+  } = t, s = S(e, {
     index: 0,
     profileOwner: n,
     analyticsLocations: i,
@@ -220,7 +224,7 @@ function E(e, t) {
     isSingleCard: true,
     wishlistId: l
   });
-  return (0, r.jsx)(S, {
+  return (0, r.jsx)(E, {
     item: e,
     card: s,
     profileOwner: n

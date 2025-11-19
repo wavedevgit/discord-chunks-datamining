@@ -75,8 +75,8 @@ function k(e) {
   } = e, z = C.Z.getVideoComponent(), W = (0, o.e7)([S.default], () => S.default.getId()), {
     user: H,
     streamId: B,
-    speaking: Y
-  } = t, q = H.id === W, G = (0, P.ZP)(t), K = (0, o.e7)([I.Z], () => I.Z.isFocused()), Q = (0, o.e7)([E.Z], () => E.Z.getWindowFocused(Z.KJ3.CHANNEL_CALL_POPOUT)), X = (0, o.e7)([C.Z], () => null != H.id && C.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), J = (0, o.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, H.id)), $ = w.ZP.getName(n.getGuildId(), n.id, H) + (J ? " ".concat(T.intl.string(T.t["pFO/Ph"])) : ""), ee = Y && (Q || K), et = c < 124 ? D : N, {
+    speaking: q
+  } = t, Y = H.id === W, K = (0, P.ZP)(t), G = (0, o.e7)([w.Z], () => w.Z.isFocused()), Q = (0, o.e7)([E.Z], () => E.Z.getWindowFocused(Z.KJ3.CHANNEL_CALL_POPOUT)), X = (0, o.e7)([C.Z], () => null != H.id && C.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), J = (0, o.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, H.id)), $ = I.ZP.getName(n.getGuildId(), n.id, H) + (J ? " ".concat(T.intl.string(T.t["pFO/Ph"])) : ""), ee = q && (Q || G), et = c < 124 ? D : N, {
     avatarSrc: en,
     avatarDecorationSrc: er
   } = (0, h.Z)({
@@ -97,17 +97,17 @@ function k(e) {
       selectedParticipant: t,
       user: n
     } = ec.current;
-    e.isGuildStageVoice() && !G && (null == t ? true : t.id) === n.id && u.Z.selectParticipant(e.id, null)
-  }, [G]), l && !X && !F && G && !s && null != z && C.Z.supports(R.AN.VIDEO)) ? null != el && null == ea ? (0, r.jsx)(j.Z, {
+    e.isGuildStageVoice() && !K && (null == t ? true : t.id) === n.id && u.Z.selectParticipant(e.id, null)
+  }, [K]), l && !X && !F && K && !s && null != z && C.Z.supports(R.AN.VIDEO)) ? null != el && null == ea ? (0, r.jsx)(j.Z, {
     avError: el,
     userId: t.id,
     width: c,
     selected: s
-  }) : (0, r.jsx)(b.Z, {
+  }) : (0, r.jsx)(v.Z, {
     onResize: M,
     wrapperClassName: y !== m.P.CALL_TILE ? A.videoWrapper : true,
     className: A.content,
-    mirror: q,
+    mirror: Y,
     streamId: B,
     videoComponent: z,
     fit: x,
@@ -118,14 +118,14 @@ function k(e) {
     className: a()(A.content, {
       [A.blockedAvatar]: k || L
     }),
-    children: (0, r.jsx)(v.Z, {
+    children: (0, r.jsx)(b.Z, {
       "aria-label": $,
       src: en,
       avatarDecoration: er,
       backgroundSrc: H.getAvatarURL(n.guild_id, 80),
       size: et,
       pulseSpeakingIndicator: V,
-      speaking: Y,
+      speaking: q,
       userId: H.id
     })
   })

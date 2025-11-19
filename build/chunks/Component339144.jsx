@@ -73,7 +73,7 @@ let L = Chunk473749.memo(function(e) {
       {
         parentAnalyticsLocation: X
       } = (0, g.ZP)(),
-      Q = (0, C.Z)(z),
+      Q = (0, C.Z)(z, "rtc-activity-panel"),
       J = D(z, H, F),
       $ = i.useCallback(() => {
         var e;

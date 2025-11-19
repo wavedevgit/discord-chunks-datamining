@@ -5,11 +5,11 @@ require.d(exports, {
   $I: () => e$,
   B4: () => eZ,
   B6: () => em,
-  Bd: () => ej,
+  Bd: () => ek,
   Fy: () => eC,
   GI: () => eD,
   Gd: () => eY,
-  I: () => ek,
+  I: () => ej,
   J2: () => Y,
   Jf: () => eI,
   KX: () => eL,
@@ -648,7 +648,7 @@ function eM(e) {
   return o ? 4 : a ? 3 : s && i ? 2 : 1 * !!i
 }
 
-function ek(e) {
+function ej(e) {
   let t = (0, c.e7)([m.default], () => m.default.locale),
     {
       percentComplete: n
@@ -666,11 +666,11 @@ function ek(e) {
   }
 }
 
-function ej(e, t, n) {
+function ek(e, t, n) {
   var r, i;
   let a = ev(e),
     o = (0, R.b7)(e),
-    s = (0, k.DD)({
+    s = (0, j.DD)({
       quest: e,
       taskDetails: a,
       location: U.dr.QUEST_HOME_DESKTOP,
@@ -823,7 +823,7 @@ function eH(e) {
     popoutTargetElementRef: s,
     onGameSheetOpened: l,
     onGameSheetClosed: c
-  } = e, u = em(r.config.rewardsConfig.rewardsExpireAt), d = ev(r), f = eI(r), _ = (null == (t = r.userStatus) ? true : t.completedAt) != null, p = (null == (n = r.userStatus) ? true : n.enrolledAt) != null, h = d.percentComplete > 0, m = ey(r), g = (0, k.DD)({
+  } = e, u = em(r.config.rewardsConfig.rewardsExpireAt), d = ev(r), f = eI(r), _ = (null == (t = r.userStatus) ? true : t.completedAt) != null, p = (null == (n = r.userStatus) ? true : n.enrolledAt) != null, h = d.percentComplete > 0, m = ey(r), g = (0, j.DD)({
     quest: r,
     location: U.dr.QUESTS_BAR,
     questContent: D.jn.QUEST_BAR_V2,
@@ -862,7 +862,7 @@ function eY(e, t) {
   return r.useMemo(() => {
     if (null == n) return null;
     let e = null != t ? t : (0, l.wj)(i) ? G.BRd.DARK : G.BRd.LIGHT;
-    return (0, j.fh)(n, j.eC.COSPONSOR_LOGO_TYPE, e)
+    return (0, k.fh)(n, k.eC.COSPONSOR_LOGO_TYPE, e)
   }, [i, t, n])
 }
 

@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
 function w(e) {
   let {
     guild: n
-  } = e, t = (0, b.Z)(n);
+  } = e, t = (0, C.Z)(n);
   l.useEffect(() => {
     (0, p.Q3)(s.z.CHANNEL_BROWSER_NEW_BADGE_NUX, {
       dismissAction: v.L.DISMISS
@@ -64,7 +64,7 @@ function Z(e) {
   let {
     guildId: n,
     selectedSection: t
-  } = e, i = (0, o.e7)([x.Z], () => x.Z.getGuild(n)), s = (0, b.Z)(i), [u, p] = l.useState(null != t ? t : j.l7.CUSTOMIZE);
+  } = e, i = (0, o.e7)([x.Z], () => x.Z.getGuild(n)), s = (0, C.Z)(i), [u, p] = l.useState(null != t ? t : j.l7.CUSTOMIZE);
   l.useEffect(() => {
     null != t && p(t)
   }, [t]);
@@ -106,7 +106,7 @@ function Z(e) {
         }), (() => {
           switch (u) {
             case j.l7.CUSTOMIZE:
-              return (0, r.jsx)(C.Z, {
+              return (0, r.jsx)(b.Z, {
                 guildId: n,
                 onBrowseChannels: () => p(j.l7.BROWSE)
               });

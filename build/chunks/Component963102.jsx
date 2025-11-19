@@ -39,7 +39,7 @@ function L(e) {
     selected: l,
     handleTransition: i
   } = e;
-  return (0, r.jsx)(p.Z.Title, {
+  return (0, r.jsx)(g.Z.Title, {
     onClick: () => i(t),
     wrapperClassName: T.tabWrapper,
     className: a()(T.tab, {
@@ -55,10 +55,10 @@ function B(e) {
     selected: n,
     displayText: i,
     handleTransition: s
-  } = e, [o, u] = l.useState(false), f = l.useRef(null), [m, h] = l.useState(0), C = l.useRef(false), _ = e => {
+  } = e, [o, u] = l.useState(false), p = l.useRef(null), [m, h] = l.useState(0), C = l.useRef(false), _ = e => {
     clearTimeout(m), h(setTimeout(() => {
       u(e)
-    }, 100)), e && (C.current = g.Z.keyboardModeEnabled)
+    }, 100)), e && (C.current = f.Z.keyboardModeEnabled)
   }, b = e => {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), _(true))
   };
@@ -67,14 +67,14 @@ function B(e) {
     onMouseEnter: () => _(true),
     onMouseLeave: () => _(false),
     children: (0, r.jsx)(c.yRy, {
-      targetElementRef: f,
+      targetElementRef: p,
       shouldShow: o,
       position: "bottom",
       align: "left",
       onRequestOpen: () => _(true),
       onRequestClose: () => {
         var e;
-        C.current && !g.Z.keyboardModeEnabled && (0, d.Qj)(), _(false), null == (e = f.current) || e.focus()
+        C.current && !f.Z.keyboardModeEnabled && (0, d.Qj)(), _(false), null == (e = p.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -90,7 +90,7 @@ function B(e) {
         let {
           isShown: d
         } = l;
-        return (0, r.jsx)(p.Z.Title, (o = function(e) {
+        return (0, r.jsx)(g.Z.Title, (o = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -108,7 +108,7 @@ function B(e) {
           }
           return e
         }({}, e), u = u = {
-          ref: f,
+          ref: p,
           onClick: () => s(t),
           onKeyDown: b,
           wrapperClassName: T.tabWrapper,
@@ -145,7 +145,7 @@ function P(e) {
     selectedTab: t,
     handleTransition: n
   } = e, i = (0, u.ZP)(), d = (0, o.e7)([v.default], () => v.default.getCurrentUser()), {
-    enabled: g
+    enabled: f
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
   }), O = (0, m.Y)({
@@ -157,7 +157,7 @@ function P(e) {
     tab: y.AW.CATALOG,
     displayText: I.intl.string(I.t.Ah5sJo)
   }];
-  g && P.push({
+  f && P.push({
     tab: y.AW.ORBS,
     displayText: I.intl.string(I.t.EBYkzk)
   });
@@ -167,7 +167,7 @@ function P(e) {
         pageType: N,
         sectionType: j.jXE.ORBS_BALANCE_MENU,
         ctaObject: j.qAy.CTA_TO_QUEST_HOME
-      }), (0, f.navigateToQuestHome)({
+      }), (0, p.navigateToQuestHome)({
         fromContent: s.j.ORBS_BALANCE_MENU
       })
     }, [N]),
@@ -181,17 +181,17 @@ function P(e) {
     }, [null == d ? true : d.id]);
   return (0, r.jsx)(c.f6W, {
     theme: i,
-    children: e => (0, r.jsxs)(p.Z, {
+    children: e => (0, r.jsxs)(g.Z, {
       disableDoubleClick: true,
       className: a()(e, T.headerBar),
-      innerClassname: g ? T.headerBarInner : true,
+      innerClassname: f ? T.headerBarInner : true,
       children: [(0, r.jsxs)(c.P3F, {
         className: T.shopHomeLink,
         onClick: () => n(y.AW.HOME),
         "aria-label": I.intl.string(I.t.pWG4ze) + " home",
         children: [(0, r.jsx)(x.Z, {
           className: T.discordLogo
-        }), (0, r.jsx)(p.Z.Title, {
+        }), (0, r.jsx)(g.Z.Title, {
           children: I.intl.string(I.t.pWG4ze)
         })]
       }), (0, r.jsx)("div", {
@@ -213,7 +213,7 @@ function P(e) {
             handleTransition: n
           }, l)
         })
-      }), (g || R || O) && (0, r.jsxs)("div", {
+      }), (f || R || O) && (0, r.jsxs)("div", {
         className: T.alignedRightContent,
         children: [R && (0, r.jsx)(S.Z, {
           handleTransition: n,
@@ -226,7 +226,7 @@ function P(e) {
             size: "xs",
             color: "currentColor"
           })
-        }), g && (0, r.jsx)(b.V9, {
+        }), f && (0, r.jsx)(b.V9, {
           analyticsPage: N,
           cardAlignment: b.V9.CardAlignment.END,
           ctaText: I.intl.string(I.t.VC4Mq0),

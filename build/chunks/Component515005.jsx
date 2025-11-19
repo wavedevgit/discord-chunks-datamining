@@ -96,8 +96,8 @@ let R = (0, Chunk468194.Mg)(Chunk950244.__invalid_stickerPickerPreviewDimensions
       isUsingKeyboardNavigation: L,
       onInspect: x,
       onSelect: M,
-      rowIndex: k,
-      stickerClassName: j,
+      rowIndex: j,
+      stickerClassName: k,
       stickerDescriptors: U,
       stickerPadding: G = P,
       stickerSize: B = R,
@@ -121,7 +121,7 @@ let R = (0, Chunk468194.Mg)(Chunk950244.__invalid_stickerPickerPreviewDimensions
     return (0, r.jsx)("div", A(T({
       className: v.row,
       style: z
-    }, null == I ? true : I(k)), {
+    }, null == I ? true : I(j)), {
       children: U.map(e => {
         var d;
         let f = e.visibleRowIndex === (null == N ? true : N.rowIndex) && e.columnIndex === (null == N ? true : N.columnIndex),
@@ -147,7 +147,7 @@ let R = (0, Chunk468194.Mg)(Chunk950244.__invalid_stickerPickerPreviewDimensions
               }, n))
             }))
           },
-          U = null != (d = null == l ? true : l(e.columnIndex, k)) ? d : {},
+          U = null != (d = null == l ? true : l(e.columnIndex, j)) ? d : {},
           {
             ref: G,
             tabIndex: K,
@@ -159,7 +159,7 @@ let R = (0, Chunk468194.Mg)(Chunk950244.__invalid_stickerPickerPreviewDimensions
             return (0, r.jsx)("div", A(T({}, J), {
               children: (0, r.jsxs)(c.P3F, {
                 "aria-label": e.name,
-                className: o()(v.createSticker, j, {
+                className: o()(v.createSticker, k, {
                   [v.createInspected]: f
                 }),
                 innerRef: G,
@@ -197,7 +197,7 @@ let R = (0, Chunk468194.Mg)(Chunk950244.__invalid_stickerPickerPreviewDimensions
             return (0, i.createElement)("div", A(T({}, J), {
               key: e.sticker.id
             }), (0, r.jsxs)(c.P3F, {
-              className: o()(v.sticker, j, {
+              className: o()(v.sticker, k, {
                 [v.stickerInspected]: f,
                 [v.showPulse]: X === e.sticker.id
               }),

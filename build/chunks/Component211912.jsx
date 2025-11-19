@@ -1,5 +1,5 @@
 /** Chunk was on 21854 **/
-/** chunk id: 211912, original params: e,t,r (module,exports,require) **/
+/** chunk id: 211912, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   default: () => g
 });
@@ -24,92 +24,92 @@ var Chunk54381 = require("./54381.js"),
 function g(e) {
   let {
     transitionState: t,
-    returnRef: r,
+    returnRef: a,
     onClose: n
   } = e;
   s.useEffect(() => {
     u.default.track(x.rMx.OPEN_MODAL, {
       type: "Social Layer Storefront Announcement Modal"
-    }), (0, o.Q3)(c.z.GAME_SHOP_ANNOUNCEMENT_MODAL)
+    }), (0, d.Q3)(c.z.GAME_SHOP_ANNOUNCEMENT_MODAL)
   }, []);
   let g = s.useCallback(() => {
     (0, m.Z)({
       guildId: f.ON
     }), n()
   }, [n]);
-  return (0, a.jsx)(l.f6W, {
+  return (0, r.jsx)(l.f6W, {
     theme: h.BR.DARK,
-    children: e => (0, a.jsx)(d.Y0X, {
+    children: e => (0, r.jsx)(o.Y0X, {
       transitionState: t,
       parentComponent: "SocialLayerStorefrontAnnouncementModal",
-      size: d.CgR.DYNAMIC,
+      size: o.CgR.DYNAMIC,
       className: i()(e, j.modal),
-      returnRef: r,
-      children: (0, a.jsxs)(d.hzk, {
+      returnRef: a,
+      children: (0, r.jsxs)(o.hzk, {
         className: j.content,
-        children: [(0, a.jsx)("div", {
+        children: [(0, r.jsx)("div", {
           className: j.closeButton,
-          children: (0, a.jsx)(d.olH, {
+          children: (0, r.jsx)(o.olH, {
             onClick: n
           })
-        }), (0, a.jsx)("div", {
+        }), (0, r.jsx)("div", {
           className: j.artwork
-        }), (0, a.jsx)(l.X6q, {
+        }), (0, r.jsx)(l.X6q, {
           variant: "display-md",
           color: "header-primary",
           children: p.intl.string(p.t.to0E8U)
-        }), (0, a.jsx)(l.X6q, {
+        }), (0, r.jsx)(l.X6q, {
           variant: "display-md",
           color: "header-primary",
           children: p.intl.string(p.t.BKEkBd)
-        }), (0, a.jsx)(l.X6q, {
+        }), (0, r.jsx)(l.X6q, {
           variant: "heading-md/medium",
           color: "header-muted",
           children: p.intl.string(p.t.SiXpR2)
-        }), (0, a.jsxs)("div", {
+        }), (0, r.jsxs)("div", {
           className: j.features,
-          children: [(0, a.jsxs)("div", {
+          children: [(0, r.jsxs)("div", {
             className: j.feature,
-            children: [(0, a.jsx)("div", {
+            children: [(0, r.jsx)("div", {
               className: j.featureIcon,
-              children: (0, a.jsx)("img", {
+              children: (0, r.jsx)("img", {
                 src: N,
                 alt: ""
               })
-            }), (0, a.jsxs)("div", {
+            }), (0, r.jsxs)("div", {
               className: j.featureCopy,
-              children: [(0, a.jsx)(l.X6q, {
+              children: [(0, r.jsx)(l.X6q, {
                 variant: "heading-md/semibold",
                 color: "header-primary",
                 children: p.intl.string(p.t["5hRbeH"])
-              }), (0, a.jsx)(l.xvT, {
+              }), (0, r.jsx)(l.xvT, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 children: p.intl.string(p.t["72sDuh"])
               })]
             })]
-          }), (0, a.jsxs)("div", {
+          }), (0, r.jsxs)("div", {
             className: j.feature,
-            children: [(0, a.jsx)("div", {
+            children: [(0, r.jsx)("div", {
               className: j.featureIcon,
-              children: (0, a.jsx)("img", {
+              children: (0, r.jsx)("img", {
                 src: v,
                 alt: ""
               })
-            }), (0, a.jsxs)("div", {
+            }), (0, r.jsxs)("div", {
               className: j.featureCopy,
-              children: [(0, a.jsx)(l.X6q, {
+              children: [(0, r.jsx)(l.X6q, {
                 variant: "heading-md/semibold",
                 color: "header-primary",
                 children: p.intl.string(p.t.MO4ASw)
-              }), (0, a.jsx)(l.xvT, {
+              }), (0, r.jsx)(l.xvT, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 children: p.intl.string(p.t.o4i2Wx)
               })]
             })]
           })]
-        }), (0, a.jsx)(l.zxk, {
+        }), (0, r.jsx)(l.zxk, {
           variant: "expressive",
           text: p.intl.string(p.t.CekBHq),
           onClick: g

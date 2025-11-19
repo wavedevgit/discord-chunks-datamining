@@ -83,9 +83,9 @@ function O(e) {
     })
   }, [n]);
   return null == j ? null : (0, r.jsxs)("div", {
-    className: C.pageBody,
+    className: b.pageBody,
     children: [(0, r.jsxs)("div", {
-      className: C.header,
+      className: b.header,
       children: [(0, r.jsx)(a.E1j, {
         query: o,
         onChange: e => {
@@ -94,14 +94,14 @@ function O(e) {
           }), s(e.toLowerCase())
         },
         onClear: w,
-        placeholder: b.intl.string(b.t.s5MnmC)
+        placeholder: C.intl.string(C.t.s5MnmC)
       }), N ? (0, r.jsx)(a.Button, {
         icon: a.qJs,
         onClick: Z,
-        text: b.intl.string(b.t.CumH4u)
+        text: C.intl.string(C.t.CumH4u)
       }) : null]
     }), (0, r.jsx)(g.Z, {
-      className: C.browser,
+      className: b.browser,
       channels: O,
       categories: y,
       guild: j,

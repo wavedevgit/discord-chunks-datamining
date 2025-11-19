@@ -146,13 +146,13 @@ function Y(e, t, n) {
   switch (t) {
     case "home":
     case "guide":
-      i(k.oC.GUILD_HOME);
+      i(j.oC.GUILD_HOME);
       break;
     case "browse":
-      i(k.oC.CHANNEL_BROWSER);
+      i(j.oC.CHANNEL_BROWSER);
       break;
     case "customize":
-      i(k.oC.CUSTOMIZE_COMMUNITY);
+      i(j.oC.CUSTOMIZE_COMMUNITY);
       break;
     case "linked-roles":
       if (null != n) {
@@ -195,9 +195,9 @@ require("./764390.js");
 let K = {
   blockQuote: {
     react: (e, t, n) => (0, r.jsxs)("div", {
-      className: j.blockquoteContainer,
+      className: k.blockquoteContainer,
       children: [(0, r.jsx)("div", {
-        className: j.blockquoteDivider
+        className: k.blockquoteDivider
       }), (0, r.jsx)("blockquote", {
         children: t(e.content, n)
       })]
@@ -233,9 +233,9 @@ let K = {
       });
       return (0, r.jsx)("pre", {
         children: (0, r.jsxs)("div", {
-          className: j.codeContainer,
+          className: k.codeContainer,
           children: [S.wS ? (0, r.jsx)("div", {
-            className: j.codeActions,
+            className: k.codeActions,
             children: (0, r.jsx)(W, {
               text: e.content
             })
@@ -311,7 +311,7 @@ let K = {
         a = null == e.start ? true : (e.start + (e.items.length - 1)).toString().length;
       return (0, s.reactElement)(i, "".concat(n.key), {
         start: e.start,
-        className: n.formatInline ? j.inlineFormat : null,
+        className: n.formatInline ? k.inlineFormat : null,
         style: {
           "--totalCharacters": a
         },
@@ -337,7 +337,7 @@ let K = {
         children: [i, (0, r.jsx)(l.nn4, {
           children: ","
         }, "screen-reader-pause")],
-        className: n.formatInline ? j.inlineFormat : null
+        className: n.formatInline ? k.inlineFormat : null
       })
     }
   },
@@ -366,7 +366,7 @@ let K = {
       });
       return (0, s.reactElement)("small", (null == n ? true : n.key) != null ? "".concat(n.key) : null, {
         children: r,
-        className: n.formatInline ? j.inlineFormat : null
+        className: n.formatInline ? k.inlineFormat : null
       })
     }
   },

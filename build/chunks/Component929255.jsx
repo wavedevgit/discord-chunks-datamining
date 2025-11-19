@@ -35,17 +35,17 @@ function y(e) {
     showFilterInitially: c = true,
     onUnmount: u
   } = e;
-  (0, g.A)();
-  let p = (0, d.FF)("CollectiblesBrowse"),
-    f = l.useRef(null),
+  (0, f.A)();
+  let g = (0, d.FF)("CollectiblesBrowse"),
+    p = l.useRef(null),
     {
       handleScroll: h
-    } = (0, o.z)(f, t),
+    } = (0, o.z)(p, t),
     {
       setCategoryRef: _,
       handleScrollToCategory: b
-    } = (0, m.xV)(f.current),
-    [v, x] = l.useState(p && c),
+    } = (0, m.xV)(p.current),
+    [v, x] = l.useState(g && c),
     [E, O] = l.useState(false);
   return l.useEffect(() => {
     null != i && b(i)
@@ -57,25 +57,25 @@ function y(e) {
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
-    p || x(false)
-  }, [p, x]), (0, r.jsx)("div", {
+    g || x(false)
+  }, [g, x]), (0, r.jsx)("div", {
     className: a()(S.pageWrapper, {
-      [S.pageWrapperFilter]: p
+      [S.pageWrapperFilter]: g
     }),
     children: (0, r.jsxs)("main", {
       className: a()(S.page, {
-        [S.pageFilter]: p
+        [S.pageFilter]: g
       }),
       children: [(0, r.jsx)(s.yWw, {
         className: S.shopScroll,
-        ref: f,
+        ref: p,
         onScroll: h,
         children: (0, r.jsx)(j, {
           isSmallScreen: E,
           filterBarOpen: v,
           setFilterBarOpen: x,
           tab: t,
-          scrollerRef: f,
+          scrollerRef: p,
           sortedCategories: n,
           setCategoryRef: _
         })
@@ -97,7 +97,7 @@ let j = e => {
     scrollerRef: m,
     sortedCategories: y,
     setCategoryRef: j
-  } = e, k = (0, d.FF)("CollectiblesBrowse"), I = l.useRef(null), T = (0, g.S)(e => e.hasDefaultFilters()), L = (0, u.sp)(), {
+  } = e, k = (0, d.FF)("CollectiblesBrowse"), I = l.useRef(null), T = (0, f.S)(e => e.hasDefaultFilters()), L = (0, u.sp)(), {
     handlePageChange: B,
     currentPage: P
   } = (0, _.h)(m), N = l.useCallback(e => {
@@ -136,7 +136,7 @@ let j = e => {
         className: S.controls,
         children: [(0, r.jsx)("div", {
           className: S.controlsLeftSide,
-          children: (0, r.jsx)(p.Z, {})
+          children: (0, r.jsx)(g.Z, {})
         }), (0, r.jsxs)("div", {
           className: a()(S.controlsRightSide, {
             [S.controlsRightSideResponsive]: t
@@ -186,7 +186,7 @@ let j = e => {
         newValue: {
           pageIndex: P
         },
-        children: (0, r.jsx)(f.Z, {
+        children: (0, r.jsx)(p.Z, {
           sortedCategories: y,
           setCategoryRef: j,
           currentPage: P,

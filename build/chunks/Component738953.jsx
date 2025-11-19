@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk593540 = require("./593540.js");
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -55,7 +55,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -82,7 +82,7 @@ function Z(e) {
   var t;
   let {
     user: n,
-    currentUser: j,
+    currentUser: k,
     guildId: G,
     channelId: Z,
     messageId: F,
@@ -124,7 +124,7 @@ function Z(e) {
     null == W || W(null == et ? true : et.current)
   }, [et, W]);
   let es = i.useRef(null),
-    el = n.id === j.id,
+    el = n.id === k.id,
     ec = (0, _.p)({
       location: "UserProfilePopout"
     }),
@@ -177,7 +177,7 @@ function Z(e) {
             themeType: x.l.POPOUT,
             children: [null != ea.interactionType && (0, r.jsx)(a.animated.div, {
               style: eo,
-              className: k.backdrop
+              className: j.backdrop
             }), (0, r.jsxs)(C.Z, {
               children: [(0, r.jsx)(R.Z, {
                 shouldShowTooltip: null === ea.interactionType,
@@ -196,7 +196,7 @@ function Z(e) {
                 appContext: q
               })]
             }), (0, r.jsxs)("div", {
-              className: k.header,
+              className: j.header,
               children: [(0, r.jsx)(T.Z, {
                 user: n,
                 displayProfile: en,
@@ -204,7 +204,7 @@ function Z(e) {
                 themeType: x.l.POPOUT
               }), (0, r.jsx)(S.Z, {
                 userId: n.id,
-                className: k.toast,
+                className: j.toast,
                 onClose: Y
               }), (0, r.jsx)(I.Z, {
                 user: n,
@@ -224,7 +224,7 @@ function Z(e) {
               })]
             }), (0, r.jsx)(w.Z, {
               user: n,
-              currentUser: j,
+              currentUser: k,
               displayProfile: en,
               guild: $,
               isHoveringOrFocusing: null == ea.interactionType && er,

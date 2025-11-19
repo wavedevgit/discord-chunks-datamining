@@ -87,8 +87,8 @@ let w = new Chunk710845.Z("OverlayRenderStore"),
   L = Chunk837268.R5.UNSET,
   x = false,
   M = false,
-  k = false,
-  j = (0, Chunk358085.isWindows)() && Chunk358085.isPlatformEmbedded && !__OVERLAY__,
+  j = false,
+  k = (0, Chunk358085.isWindows)() && Chunk358085.isPlatformEmbedded && !__OVERLAY__,
   U = null,
   G = {},
   B = {},
@@ -500,7 +500,7 @@ async function eE(e, t) {
 }
 
 function eb() {
-  ef(), k = false, F = null, eM()
+  ef(), j = false, F = null, eM()
 }
 
 function ey(e) {
@@ -612,15 +612,15 @@ function ex(e) {
 }
 
 function eM() {
-  Chunk353926.Z.hasLoadedExperiments && !k && (k = true, eE(Chunk454991.v.legacyEnabled, Chunk454991.v.oopEnabled))
-}
-
-function ek() {
-  k = false, F = null
+  Chunk353926.Z.hasLoadedExperiments && !j && (j = true, eE(Chunk454991.v.legacyEnabled, Chunk454991.v.oopEnabled))
 }
 
 function ej() {
-  k = false, F = null, eS()
+  j = false, F = null
+}
+
+function ek() {
+  j = false, F = null, eS()
 }
 class eU extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -630,7 +630,7 @@ class eU extends(r = Chunk442837.ZP.Store) {
     return W
   }
   getHasLoadedExperiments() {
-    return k
+    return j
   }
   getForcedRenderMode() {
     return L
@@ -701,10 +701,10 @@ class eU extends(r = Chunk442837.ZP.Store) {
   }
 }
 A(eU, "displayName", "OverlayRenderStore");
-let eG = new eU(Chunk570140.Z, !j ? {} : {
+let eG = new eU(Chunk570140.Z, !k ? {} : {
     CONNECTION_OPEN: eb,
-    LOGIN: ek,
-    LOGOUT: ej,
+    LOGIN: ej,
+    LOGOUT: ek,
     EXPERIMENT_OVERRIDE_BUCKET: eb,
     OVERLAY_SET_ENABLED: ey,
     GAME_LAUNCH_SUCCESS: eO,

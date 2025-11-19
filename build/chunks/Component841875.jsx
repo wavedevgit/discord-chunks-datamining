@@ -35,7 +35,7 @@ function E() {
   } = (0, Chunk825102.WX)({
     location: "Shop"
   }), c = (0, Chunk381585.sp)(), u = Chunk473749.useCallback(e => {
-    f.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    p.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == c ? true : c.sessionId,
       page_section: null == c ? true : c.pageSection,
       page_category: null == c ? true : c.pageCategory,
@@ -226,9 +226,9 @@ let O = e => {
     } = e, {
       themeFilters: n,
       onToggleTheme: i
-    } = (0, h.S)(), s = (0, g.ZP)() === b.BR.DARK, o = l.useCallback(e => {
+    } = (0, h.S)(), s = (0, f.ZP)() === b.BR.DARK, o = l.useCallback(e => {
       if (n.has(e) || s) return "always-white"
-    }, [n, s]), u = l.useCallback(e => n.has(e) || s ? d.TVs.colors.WHITE : d.TVs.colors.INTERACTIVE_NORMAL, [n, s]), p = l.useMemo(() => [{
+    }, [n, s]), u = l.useCallback(e => n.has(e) || s ? d.TVs.colors.WHITE : d.TVs.colors.INTERACTIVE_NORMAL, [n, s]), g = l.useMemo(() => [{
       name: v.intl.string(v.t.aVBOKh),
       icon: (0, r.jsx)(d.Hzt, {
         size: "xs",
@@ -307,7 +307,7 @@ let O = e => {
         children: v.intl.string(v.t.t1Ztrp)
       }), (0, r.jsx)("div", {
         className: x.themeRow,
-        children: p.map(e => {
+        children: g.map(e => {
           let {
             name: l,
             icon: s,

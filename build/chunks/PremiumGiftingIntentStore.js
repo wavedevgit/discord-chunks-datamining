@@ -77,7 +77,7 @@ function w(e) {
 
 function L() {
   if (null != P) return void X(P);
-  if (k(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
+  if (j(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
   } = Chunk522558.w.getConfig({
@@ -111,16 +111,16 @@ function M() {
   return Array.from(N).some(e => !A.lastShownFriendsListGiftIntents.includes(e))
 }
 
-function k() {
+function j() {
   C.length = 0, N.clear(), R = {}
 }
 
-function j() {
-  k()
+function k() {
+  j()
 }
 
 function U() {
-  A = S(), k()
+  A = S(), j()
 }
 
 function G() {
@@ -184,7 +184,7 @@ function q(e) {
 }
 
 function X(e) {
-  k();
+  j();
   let {
     enabled: t
   } = p.w.getConfig({
@@ -263,7 +263,7 @@ m(Q, "displayName", "PremiumGiftingIntentStore"), m(Q, "persistKey", "PremiumGif
   }
 }]);
 let J = new Q(Chunk570140.Z, {
-  CONNECTION_OPEN: j,
+  CONNECTION_OPEN: k,
   LOGOUT: U,
   MESSAGE_GIFT_INTENT_SHOWN: B,
   FRIENDS_LIST_GIFT_INTENTS_SHOWN: G,

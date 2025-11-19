@@ -31,10 +31,10 @@ function S(e) {
   let {
     premiumSubscription: t
   } = e, n = (0, a.e7)([h.Z], () => h.Z.boostSlots), S = i.useMemo(() => Object.values(n), [n]), A = (0, a.e7)([p.default], () => p.default.getCurrentUser()), C = m.ZP.isPremium(A, I.PremiumTypes.TIER_2), N = (0, a.e7)([f.Z], () => f.Z.affinities), R = (0, a.e7)([_.ZP], () => _.ZP.getFlattenedGuildIds()), P = N.length > 0 || R.length > 0, D = S.length > 0, w = i.useMemo(() => S.filter(e => null != e.premiumGuildSubscription), [S]), L = w.length > 0, x = S.length > w.length, M = (0, a.e7)([d.Z], () => d.Z.getCurrentUserAppliedBoosts()), {
-    fractionalState: k
+    fractionalState: j
   } = (0, o.Z)({
     forceFetch: true
-  }), j = (null == t ? true : t.isPausedOrPausePending) === true && k === I.a$.NONE, U = (null == t ? true : t.isPausedOrPausePending) !== true && k === I.a$.NONE, G = C && k === I.a$.FP_SUB_PAUSED;
+  }), k = (null == t ? true : t.isPausedOrPausePending) === true && j === I.a$.NONE, U = (null == t ? true : t.isPausedOrPausePending) !== true && j === I.a$.NONE, G = C && j === I.a$.FP_SUB_PAUSED;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.oQ, {
       className: T.blockedPaymentsWarning
@@ -43,12 +43,12 @@ function S(e) {
       hasAppliedGuildBoosts: L,
       hasBoostPerk: G,
       canAddBoosts: U
-    }), k === I.a$.NONE && (0, r.jsx)(O.Z, {
+    }), j === I.a$.NONE && (0, r.jsx)(O.Z, {
       hasAppliedGuildBoosts: L,
       hasBoostPerk: G,
       hasGuildAffinitiesOrInGuild: P,
-      subscriptionIsPausedOrPausePending: j
-    }), !P && (0, r.jsx)(b.Z, {}), (null == t ? true : t.isPaused) && k !== I.a$.FP_SUB_PAUSED ? (0, r.jsx)(g.r, {
+      subscriptionIsPausedOrPausePending: k
+    }), !P && (0, r.jsx)(b.Z, {}), (null == t ? true : t.isPaused) && j !== I.a$.FP_SUB_PAUSED ? (0, r.jsx)(g.r, {
       appliedGuildBoosts: M,
       premiumSubscription: t
     }) : (0, r.jsx)(g.Z, {
@@ -56,7 +56,7 @@ function S(e) {
       premiumSubscription: t
     }), (0, r.jsx)(v.Z, {
       guildBoostSlots: S,
-      fractionalPremiumState: k
+      fractionalPremiumState: j
     }), (0, r.jsx)(y.Z, {
       canAddBoosts: L && U,
       canApplyBoosts: x

@@ -79,18 +79,18 @@ let d = function(e) {
       }
       D(), b("opening-keyboard")
     }, [D, E]),
-    k = i.useCallback(() => {
+    j = i.useCallback(() => {
       "opening-keyboard" === E && w(false)
     }, [w, E]);
   i.useEffect(() => {
-    "opening-mouse" === E && (y.current = window.setTimeout(() => {
+    if ("opening-mouse" === E) return y.current = window.setTimeout(() => {
       b("open-mouse"), null == d || d()
-    }, c))
-  }, [E, c, d]), i.useEffect(() => {
-    "opening-keyboard" === E && (y.current = window.setTimeout(() => {
+    }, c), D
+  }, [E, c, d, D]), i.useEffect(() => {
+    if ("opening-keyboard" === E) return y.current = window.setTimeout(() => {
       b("open-keyboard"), null == d || d()
-    }, c))
-  }, [E, c, d]), i.useEffect(() => {
+    }, c), D
+  }, [E, c, d, D]), i.useEffect(() => {
     if ("closing" === E) {
       let e = window.setTimeout(() => {
         b("closed")
@@ -104,7 +104,7 @@ let d = function(e) {
     };
     return document.addEventListener("keydown", e, true), () => document.removeEventListener("keydown", e, true)
   }, [T, w, n]);
-  let j = i.useMemo(() => null == m ? m : m.map(e => u(l({}, e), {
+  let k = i.useMemo(() => null == m ? m : m.map(e => u(l({}, e), {
       onClick: t => {
         var n;
         null == (n = e.onClick) || n.call(e, t), w(false)
@@ -117,7 +117,7 @@ let d = function(e) {
     onMouseEnter: L,
     onMouseLeave: x,
     onFocus: M,
-    onBlur: k,
+    onBlur: j,
     children: [t, (0, r.jsx)(a.RB, {
       targetElementRef: n,
       shouldShow: T,
@@ -127,7 +127,7 @@ let d = function(e) {
       body: _,
       graphic: p,
       size: h,
-      actions: j,
+      actions: k,
       gradientColor: g,
       showCloseButton: A,
       modal: S,

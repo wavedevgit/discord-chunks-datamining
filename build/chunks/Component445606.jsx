@@ -1,20 +1,21 @@
 /** Chunk was on 10023 **/
 /** chunk id: 445606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk54381 = require("./54381.js"),
   Chunk907862 = require("./907862.js"),
-  Chunk388032 = require("./388032.jsx");
+  Chunk388032 = require("./388032.jsx"),
+  Chunk30399 = require("./30399.js");
 
-function o(e) {
+function a(e) {
   let {
     targetElementRef: t,
     onRequestClose: n,
-    onActionClick: o,
-    position: a = "right",
-    align: s = "top",
-    caretConfig: c = {
+    onActionClick: a,
+    position: s = "right",
+    align: c = "top",
+    caretConfig: u = {
       align: "start",
       position: "top"
     }
@@ -22,10 +23,10 @@ function o(e) {
   return (0, r.jsx)(i.J2, {
     size: "lg",
     shouldShow: true,
-    position: a,
-    caretConfig: c,
+    position: s,
+    caretConfig: u,
     gradientColor: "purple",
-    align: s,
+    align: c,
     badge: {
       type: "new",
       variant: "default"
@@ -34,11 +35,14 @@ function o(e) {
     actions: [{
       text: l.intl.string(l.t.RzWDqY),
       variant: "primary",
-      onClick: o
+      onClick: a
     }],
     targetElementRef: t,
     title: l.intl.string(l.t.Ylu2JM),
     body: l.intl.string(l.t.vgylLQ),
-    graphic: true
+    graphic: {
+      type: "image",
+      src: o.Z
+    }
   })
 }

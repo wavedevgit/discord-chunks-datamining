@@ -95,13 +95,13 @@ let F = (0, Chunk884697.IC)(90),
     } = (0, B.hr)($), ea = null != (t = null == ee ? true : ee.responsive) && t, es = null == ee ? true : ee.backgroundStyle, eo = null != ei, ec = (0, u.e7)([b.Z], () => b.Z.products), eu = l.useMemo(() => n ? [] : ec.size > 0 ? Q($.rankedSkuIds) : [], [n, Q, $.rankedSkuIds, ec]), ed = l.useMemo(() => !n && 0 !== $.rankedSkuIds.length && !(eu.length > 0) && $.rankedSkuIds.every(e => {
       var t;
       return (null == (t = b.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-    }), [n, $.rankedSkuIds, eu.length]), eg = z === w.AW.ORBS, ep = null != V && V.isOrbsExclusive, {
-      cardContainerRef: ef,
+    }), [n, $.rankedSkuIds, eu.length]), ef = z === w.AW.ORBS, eg = null != V && V.isOrbsExclusive, {
+      cardContainerRef: ep,
       totalCards: em
     } = (e => {
-      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, p.Z)(() => {
+      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, g.Z)(() => {
         (null == a ? true : a.current) != null && n(Math.max(1, Math.floor((a.current.offsetWidth + r) / (246 + r))))
-      }), a = (0, g.y)(i, [r, e], {
+      }), a = (0, f.y)(i, [r, e], {
         fireOnMount: true,
         fireOnDepsChange: true,
         enabled: e
@@ -112,20 +112,20 @@ let F = (0, Chunk884697.IC)(90),
         }, [i, a, e]),
         totalCards: e ? t : true
       }
-    })(z !== w.AW.ORBS), eh = (0, S.a)()(eu), eC = (0, y.l)(eh).slice(0, em), e_ = (0, N.St)(eC), eb = eg ? D.intl.string(D.t["1CdL8d"]) : D.intl.string(D.t.xYKa1T), ev = (0, E.FF)("CollectiblesContent"), ex = x.Z.useConfig({
+    })(z !== w.AW.ORBS), eh = (0, S.a)()(eu), eC = (0, y.l)(eh).slice(0, em), e_ = (0, N.St)(eC), eb = ef ? D.intl.string(D.t["1CdL8d"]) : D.intl.string(D.t.xYKa1T), ev = (0, E.FF)("CollectiblesContent"), ex = x.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, eE = (0, O.Pc)("HeroBlock") && $.categorySkuId === w.Hi, eO = (0, O.IT)("HeroBlock"), eS = () => {
-      eg ? ((0, m.Y)({
+      ef ? ((0, m.Y)({
         pageType: H.ZY5.SHOP_ORBS_TAB,
         sectionType: H.jXE.ORBS_SHOP_HERO_BLOCK,
         ctaObject: H.qAy.CTA_TO_QUEST_HOME
-      }), (0, f.navigateToQuestHome)({
+      }), (0, p.navigateToQuestHome)({
         fromContent: o.j.ORBS_SHOP_HERO_CTA
       })) : (i({
         sourceButton: "shop latest category hero",
-        categorySkuId: !ev || ep ? $.categorySkuId : true,
+        categorySkuId: !ev || eg ? $.categorySkuId : true,
         isInternalShopDeeplink: true,
-        isOrbsExclusive: ep
+        isOrbsExclusive: eg
       }), C.default.track(H.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == X ? true : X.sessionId,
         sku_id: $.categorySkuId,
@@ -192,7 +192,7 @@ let F = (0, Chunk884697.IC)(90),
                 children: $.title
               }), "" !== $.summary && (0, r.jsx)(d.Text, {
                 variant: "text-md/normal",
-                className: eg ? M.orbsSubHeaderText : M.subHeaderText,
+                className: ef ? M.orbsSubHeaderText : M.subHeaderText,
                 style: null != $.bannerTextColor ? {
                   color: $.bannerTextColor
                 } : true,
@@ -212,7 +212,7 @@ let F = (0, Chunk884697.IC)(90),
             [M.row]: z === w.AW.HOME,
             [M.feed]: z === w.AW.ORBS
           }),
-          ref: ef,
+          ref: ep,
           children: n || ed ? (0, r.jsx)(r.Fragment, {
             children: [...Array(null != em ? em : 4)].map((e, t) => ex ? (0, r.jsx)(L.Z, {}, t) : (0, r.jsx)(j.K, {}, t))
           }) : (0, r.jsx)(T.zp.Provider, {

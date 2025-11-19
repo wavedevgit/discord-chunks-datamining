@@ -81,15 +81,11 @@ function h() {
     }))
   }, [require]), y = Chunk473749.useCallback(e => {
     l.Rr(p(f({}, n), {
-      enableDistributedSignals: e
-    }))
-  }, [require]), O = Chunk473749.useCallback(e => {
-    l.Rr(p(f({}, n), {
       enablePhraseSignals: e
     }))
-  }, [require]), v = Chunk473749.useCallback(e => {
+  }, [require]), O = Chunk473749.useCallback(e => {
     l.W6(Math.floor(e))
-  }, []), I = Chunk473749.useMemo(() => {
+  }, []), v = Chunk473749.useMemo(() => {
     let e = [Chunk356659.qb];
     for (let t = 10; exports <= Chunk356659.b0; t += 10) module.push(exports);
     return module[module.length - 1] !== Chunk356659.b0 && module.push(Chunk356659.b0), module
@@ -103,8 +99,8 @@ function h() {
       onValueRender: e => "".concat(Math.floor(e)),
       minValue: Chunk356659.qb,
       maxValue: Chunk356659.b0,
-      onValueChange: v,
-      markers: I,
+      onValueChange: O,
+      markers: v,
       onMarkerRender: e => "".concat(Math.floor(e))
     }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.iV6KcI),
@@ -112,15 +108,10 @@ function h() {
       checked: require.enableGameSignals,
       onChange: b
     }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["01JPeO"]),
-      description: Chunk388032.intl.string(Chunk388032.t["Xnx+Co"]),
-      checked: require.enableDistributedSignals,
-      onChange: y
-    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.nHsilt),
       description: Chunk388032.intl.string(Chunk388032.t["s6wq+m"]),
       checked: require.enablePhraseSignals,
-      onChange: O
+      onChange: y
     }), require.enablePhraseSignals && (0, Chunk54381.jsx)(Chunk481060.oil, {
       value: d,
       onChange: m,

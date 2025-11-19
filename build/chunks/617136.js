@@ -2,11 +2,11 @@
 /** chunk id: 617136, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ic: () => k,
+  Ic: () => j,
   O5: () => U,
   Zk: () => G,
   _3: () => M,
-  _F: () => j,
+  _F: () => k,
   _b: () => N,
   dA: () => L,
   jZ: () => x,
@@ -166,7 +166,7 @@ async function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     questContent: t,
     sourceQuestContent: n,
@@ -187,7 +187,7 @@ function k(e) {
   })
 }
 
-function j() {
+function k() {
   let e = (0, Chunk915750.WD)();
   return Chunk473749.useCallback(t => {
     L(S(I({}, t), {
@@ -199,7 +199,7 @@ function j() {
 }
 
 function U() {
-  let e = j();
+  let e = k();
   return Chunk473749.useCallback(t => {
     let {
       questId: n,

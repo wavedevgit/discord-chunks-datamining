@@ -97,7 +97,7 @@ function et(e) {
 }
 
 function en(e, t, n, i) {
-  let a = null == e.id ? j.ZP.getURL(e.name) : k.ZP.getEmojiURL({
+  let a = null == e.id ? k.ZP.getURL(e.name) : j.ZP.getEmojiURL({
     id: e.id,
     animated: e.animated,
     size: t
@@ -132,7 +132,7 @@ let er = e => {
     return i.useEffect(() => {
       let e = false;
       return l(true), !async function() {
-        let n = await (0, j.B6)(t);
+        let n = await (0, k.B6)(t);
         Array.isArray(n) && n.length > 0 && !e && u(n)
       }(), () => {
         e = true

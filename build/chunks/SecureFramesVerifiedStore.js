@@ -1,7 +1,7 @@
 /** Chunk was on 82224 **/
 /** chunk id: 98369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => w
 }), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk46973 = require("./46973.js"),
@@ -15,16 +15,16 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk651941 = require("./651941.js"),
   Chunk981631 = require("./981631.js");
 let g = new Map,
-  v = new Map,
-  b = false,
+  b = new Map,
+  v = false,
   E = null;
 
 function h() {
   return Chunk959457.Z.getAllActiveStreamKeys().reduce((e, t) => {
     let {
       ownerId: n
-    } = (0, c.my)(t), r = true === g.get(n), i = v.get(t) !== r;
-    return v.set(t, r), !!i || e
+    } = (0, c.my)(t), r = true === g.get(n), i = b.get(t) !== r;
+    return b.set(t, r), !!i || e
   }, false)
 }
 
@@ -37,8 +37,8 @@ function y() {
     if (require !== module && true !== g.get(module)) {
       r = false;
       break
-    } let i = r !== b;
-  return b = r, i
+    } let i = r !== v;
+  return v = r, i
 }
 
 function S(e) {
@@ -62,17 +62,17 @@ function S(e) {
 }
 
 function O() {
-  g.clear(), v.clear(), b = false
+  g.clear(), b.clear(), v = false
 }
 class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk19780.Z, Chunk959457.Z, Chunk729303.Z, Chunk651941.Z)
   }
   isCallVerified() {
-    return b
+    return v
   }
   isStreamVerified(e) {
-    return v.get(e)
+    return b.get(e)
   }
   isUserVerified(e) {
     return g.get(e)
@@ -83,7 +83,7 @@ class C extends(r = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : C[i] = "SecureFramesVerifiedStore";
-let I = new C(Chunk570140.Z, {
+let w = new C(Chunk570140.Z, {
   CONNECTION_OPEN: O,
   VOICE_CHANNEL_SELECT: function(e) {
     let {
@@ -102,7 +102,7 @@ let I = new C(Chunk570140.Z, {
     switch (r) {
       case a.Yn.STREAM:
         if (null == t) returnfalse;
-        return v.delete(t), y();
+        return b.delete(t), y();
       case a.Yn.DEFAULT:
         O()
     }

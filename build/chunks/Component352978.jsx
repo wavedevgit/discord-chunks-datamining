@@ -24,14 +24,14 @@ let m = Chunk473749.memo(function(e) {
     fit: m = "contain",
     mirror: _ = false,
     paused: g = false,
-    streamPreviewURL: v,
-    videoSpinnerContext: b,
+    streamPreviewURL: b,
+    videoSpinnerContext: v,
     userId: E,
     streamKey: h
   } = e, [y, S] = l.useState(true);
   (0, u.Z)({
     location: "VideoStream",
-    videoSpinnerContext: b,
+    videoSpinnerContext: v,
     userId: E,
     streamId: t,
     loading: y,
@@ -43,7 +43,7 @@ let m = Chunk473749.memo(function(e) {
     streamId: t,
     userId: E,
     loading: y,
-    videoSpinnerContext: b,
+    videoSpinnerContext: v,
     streamKey: h,
     paused: g
   }), C = l.useCallback(() => {
@@ -64,8 +64,8 @@ let m = Chunk473749.memo(function(e) {
         [f.loading]: y
       }),
       children: y && (0, i.jsxs)(l.Fragment, {
-        children: [null != v ? (0, i.jsx)("img", {
-          src: v,
+        children: [null != b ? (0, i.jsx)("img", {
+          src: b,
           alt: "",
           className: f.previewImage
         }) : (0, i.jsx)("div", {

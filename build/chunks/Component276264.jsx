@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk325804 = require("./325804.js");
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,14 +48,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -221,7 +221,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       currentUser: h
     } = e, m = a === D.Skl.OFFLINE, g = n ? c.Xo$ : c.qEK, E = (0, u.Z)(i) ? D.Skl.STREAMING : a;
     return E = m ? true : E, (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(g, G(j({}, o), {
+      children: [(0, r.jsx)(g, G(k({}, o), {
         size: c.EFr.SIZE_32,
         src: s,
         isMobile: l,
@@ -298,7 +298,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       premiumSince: w,
       channel: L,
       guildId: x,
-      className: k,
+      className: j,
       nameplate: U,
       hideClanTag: Z = false,
       hideSubtext: F = false,
@@ -354,10 +354,10 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       eM = i.useCallback(() => {
         eh(false)
       }, []),
-      ek = i.useCallback(e => {
+      ej = i.useCallback(e => {
         eg(e)
       }, []),
-      ej = i.useCallback(e => null == eP ? null : (0, r.jsx)(C.Z, G(j({
+      ek = i.useCallback(e => null == eP ? null : (0, r.jsx)(C.Z, G(k({
         name: null != E ? E : ec,
         quest: eP,
         memberListItemRef: ed,
@@ -370,17 +370,17 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       className: M.placeholder
     }) : (0, r.jsx)(c.yRy, {
       targetElementRef: ed,
-      renderPopout: ej,
+      renderPopout: ek,
       position: "bottom",
       shouldShow: eD,
       nudgeAlignIntoViewport: false,
       useRawTargetDimensions: true,
       animation: c.yRy.Animation.NONE,
       spacing: -V,
-      children: () => (0, r.jsx)(g.Z, j({
+      children: () => (0, r.jsx)(g.Z, k({
         ref: ed,
         selected: t,
-        className: o()(M.member, k, {
+        className: o()(M.member, j, {
           [M.offline]: I === D.Skl.OFFLINE && !t,
           [M.flatBottom]: eD
         }),
@@ -431,7 +431,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           isMobile: R,
           isTyping: h,
           avatarDecorationSrc: eO,
-          handleSetTypingRef: ek,
+          handleSetTypingRef: ej,
           typingRef: em,
           currentUser: y
         }),

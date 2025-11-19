@@ -26,17 +26,17 @@ let m = e => {
       icon: m,
       prioritizedCurrency: h,
       onClickAnalytics: C
-    } = e, _ = (0, s.Nd)(), b = null == _ ? true : _.tab, v = (0, a.sp)(), x = (0, g.J)(t, h), E = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, C);
+    } = e, _ = (0, s.Nd)(), b = null == _ ? true : _.tab, v = (0, a.sp)(), x = (0, f.J)(t, h), E = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, C);
     return null != d || null != m ? (0, r.jsx)(l.hU, {
       variant: "primary",
-      "aria-label": f.intl.string(f.t.SKNnqq),
+      "aria-label": p.intl.string(p.t.SKNnqq),
       icon: null != m ? m : l.tEF,
       onClick: e => {
         e.stopPropagation(), null != d ? d(t.skuId) : E(e)
       }
     }) : x ? (0, r.jsx)(a.k0, {
       newValue: {
-        pageCategory: b === p.AW.HOME || null == v ? true : v.pageCategory
+        pageCategory: b === g.AW.HOME || null == v ? true : v.pageCategory
       },
       children: (0, r.jsx)(c.Z, {
         primary: true,
@@ -55,13 +55,13 @@ let m = e => {
       icon: i,
       prioritizedCurrency: a,
       onClickAnalytics: s
-    } = e, c = (0, u.LJ)(t), g = (0, o.o)(c);
+    } = e, c = (0, u.LJ)(t), f = (0, o.o)(c);
     if (null == c) return null;
-    let p = (0, d.W)(c, g);
+    let g = (0, d.W)(c, f);
     return (0, r.jsx)(m, {
-      product: p,
+      product: g,
       cardRef: n,
-      selectedVariantIndex: g,
+      selectedVariantIndex: f,
       onClick: l,
       icon: i,
       prioritizedCurrency: a,

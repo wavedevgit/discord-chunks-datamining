@@ -128,10 +128,10 @@ function O(e) {
         customOffset: null == T ? true : T.customOffset
       }
     }, [L, T]),
-    k = i.useCallback((e, t) => {
+    j = i.useCallback((e, t) => {
       null == v || v(t)
     }, [v]),
-    j = i.useCallback(e => {
+    k = i.useCallback(e => {
       null == v || v(e)
     }, [v]),
     U = i.useCallback(e => {
@@ -140,7 +140,7 @@ function O(e) {
     G = C ? _.caretHoverable : true;
   return (0, r.jsx)(s.m, g(h({}, w), {
     position: L,
-    onRequestClose: k,
+    onRequestClose: j,
     gradientColor: O,
     onPositionChange: U,
     onNudgeChange: D,
@@ -152,7 +152,7 @@ function O(e) {
       ref: P,
       "data-mana-component": "popover",
       children: [A && (0, r.jsx)(u.u, {
-        onClick: j,
+        onClick: k,
         variant: null != O ? "color-mix" : true
       }), null != p && (0, r.jsx)("div", {
         className: o()(_.graphic, {

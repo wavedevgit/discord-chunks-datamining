@@ -44,18 +44,18 @@ let x = e => {
       null != t && await (0, m.Z)(t)
     })
   }, [t]), i.useEffect(() => {
-    k(true)
+    j(true)
   }, []), (0, p.z)(_.X);
   let n = i.useRef(null),
     a = i.useRef(null),
     x = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()),
-    [M, k] = i.useState(false),
-    j = (0, y.$)(),
+    [M, j] = i.useState(false),
+    k = (0, y.$)(),
     U = i.useRef(null),
     [G, B] = i.useState(false),
     [Z, F] = i.useState(false),
-    V = null != j && null != x && x.status === P.O0b.CANCELED,
-    H = (0, O.W7)(R.Xh.PREMIUM_MONTH_TIER_2, j, x),
+    V = null != k && null != x && x.status === P.O0b.CANCELED,
+    H = (0, O.W7)(R.Xh.PREMIUM_MONTH_TIER_2, k, x),
     Y = !Z && V,
     {
       analyticsLocations: W
@@ -88,7 +88,7 @@ let x = e => {
               buttonVisibilityRef: U,
               className: w.heroHeading,
               enablePremiumBrandRefresh: X,
-              userDiscountOffer: j,
+              userDiscountOffer: k,
               discountedPrice: H
             })
           }), (0, r.jsx)(I.Z, {
@@ -136,7 +136,7 @@ let x = e => {
       }), V && null != H && (0, r.jsx)(v.Z, {
         isVisible: Y && M,
         premiumSubscription: x,
-        churnDiscountOffer: j,
+        churnDiscountOffer: k,
         discountedPrice: H
       })]
     }), (0, r.jsx)(C.Z, {

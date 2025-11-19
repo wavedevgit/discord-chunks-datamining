@@ -2,79 +2,81 @@
 /** chunk id: 701488, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $y: () => x,
-  Cr: () => y,
+  $y: () => M,
+  Cr: () => O,
   Ev: () => s,
-  Fu: () => h,
-  GM: () => L,
-  Gu: () => D,
-  JT: () => p,
-  K8: () => O,
-  OF: () => w,
-  P9: () => b,
-  Pc: () => S,
-  S4: () => I,
-  Si: () => g,
-  Ws: () => v,
-  Zc: () => _,
-  cE: () => C,
+  Fu: () => m,
+  GM: () => x,
+  Gu: () => w,
+  JT: () => h,
+  K8: () => v,
+  OF: () => L,
+  P9: () => y,
+  Pc: () => A,
+  S4: () => T,
+  Si: () => E,
+  Ws: () => I,
+  Zc: () => p,
+  cE: () => N,
   cc: () => a,
   d: () => o,
-  eB: () => E,
-  jT: () => f,
-  qm: () => l,
-  sI: () => m,
-  um: () => A,
-  wP: () => P,
-  wT: () => R,
-  xK: () => T
+  eB: () => b,
+  jT: () => _,
+  qm: () => c,
+  sI: () => g,
+  u2: () => l,
+  um: () => C,
+  wP: () => D,
+  wT: () => P,
+  xK: () => S
 }), require("./388685.js");
 var Chunk911969 = require("./911969.js"),
   Chunk981631 = require("./981631.js");
 let a = 160,
   o = /^https?:\/\/(?:www\.)?(twitch\.tv\/(.+)|youtube.com\/watch\?v=)/,
   s = "438122941302046720",
-  l = "773336526917861400",
-  c = "755600276941176913",
-  u = "880218832743055411",
-  d = "1050941315912835122",
-  f = "880218394199220334",
-  _ = "755827207812677713",
-  p = "1234546995360694434",
-  h = "1214629548377768066",
-  m = "https://discord.com/blog/server-activities-games-voice-watch-together",
-  g = {
+  l = "1417273808645259344",
+  c = "773336526917861400",
+  u = "755600276941176913",
+  d = "880218832743055411",
+  f = "1050941315912835122",
+  _ = "880218394199220334",
+  p = "755827207812677713",
+  h = "1234546995360694434",
+  m = "1214629548377768066",
+  g = "https://discord.com/blog/server-activities-games-voice-watch-together",
+  E = {
     SMALL: 64,
     LARGE: 160
   },
-  E = ["in_development", "activities_team", "employee_release"],
-  b = ["1037680572660727838", "235088799074484224", "1007373802981822582", "1067803140071620628", "1194351737264406548", "1245041113882955918", "1245040907732910201", "1245040436427489471", "1208090049871351890", "1235205910863806484", "1227719606223765687"],
-  y = ["1247266306231898122", "1257458870390099989", "1276239071764680926"];
-var O = function(e) {
+  b = ["in_development", "activities_team", "employee_release"],
+  y = ["1037680572660727838", "235088799074484224", "1007373802981822582", "1067803140071620628", "1194351737264406548", "1245041113882955918", "1245040907732910201", "1245040436427489471", "1208090049871351890", "1235205910863806484", "1227719606223765687"],
+  O = ["1247266306231898122", "1257458870390099989", "1276239071764680926"];
+var v = function(e) {
     return e.ADS = "ADS", e.FAILED_LOAD = "FAILED_LOAD", e.LAGGING = "LAGGING", e.CONFUSING = "CONFUSING", e.NOT_FUN = "NOT_FUN", e.OTHER = "OTHER", e
   }({}),
-  v = function(e) {
+  I = function(e) {
     return e[e.PLAY = 0] = "PLAY", e[e.SPECTATE = 1] = "SPECTATE", e
   }({}),
-  I = function(e) {
+  T = function(e) {
     return e.DESKTOP = "desktop", e.MOBILE = "mobile", e
   }({}),
-  T = function(e) {
+  S = function(e) {
     return e[e.UNLOCKED = 1] = "UNLOCKED", e[e.PORTRAIT = 2] = "PORTRAIT", e[e.LANDSCAPE = 3] = "LANDSCAPE", e
   }({});
-let S = new Set([c, u, d, f]),
-  A = new Set([u, d, f]);
-var C = function(e) {
+let A = new Set([u, d, f, _]),
+  C = new Set([d, f, _]);
+var N = function(e) {
   return e[e.FOCUSED = 0] = "FOCUSED", e[e.PIP = 1] = "PIP", e[e.GRID = 2] = "GRID", e
 }({});
-let N = {
+let R = {
     label_type: Chunk911969.ww.NONE,
     release_phase: "",
     label_from: null,
     label_until: null,
     omit_badge_from_surfaces: []
   },
-  R = {
+  P = {
     application_id: "",
     requires_age_gate: false,
     legacy_responsive_aspect_ratio: false,
@@ -82,19 +84,19 @@ let N = {
     tablet_default_orientation_lock_state: 1,
     supported_platforms: [Chunk911969.C3.WEB],
     client_platform_config: {
-      [Chunk911969.C3.WEB]: N,
-      [Chunk911969.C3.IOS]: N,
-      [Chunk911969.C3.ANDROID]: N
+      [Chunk911969.C3.WEB]: R,
+      [Chunk911969.C3.IOS]: R,
+      [Chunk911969.C3.ANDROID]: R
     },
     has_csp_exception: false,
     displays_advertisements: false,
     blocked_locales: [],
     supported_locales: []
   },
-  P = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
-  D = [...P, Chunk981631.d4z.GUILD_VOICE],
-  w = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
-var L = function(e) {
+  D = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
+  w = [...D, Chunk981631.d4z.GUILD_VOICE],
+  L = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
+var x = function(e) {
   return e.NORMAL = "normal", e.FULL_SCREEN = "full-screen", e
 }({});
-let x = 216e5
+let M = 216e5

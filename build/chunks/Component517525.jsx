@@ -91,7 +91,7 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         participant: o,
         isUpsellEnabled: c,
         shape: f,
-        size: v,
+        size: b,
         didTrackUpsellViewed: x,
         setDidTrackUpsellViewed: Z,
         className: R,
@@ -116,7 +116,7 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       {
         location: k
       } = (0, m.O)(),
-      L = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
+      L = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
       F = c && !h.ZP.isPremium(L, C.PremiumTypes.TIER_1) && !h.ZP.canStreamQuality(h.ZP.StreamQuality.MID, L),
       V = i.useCallback(() => {
         F && M && (0, p.ZDy)(async () => {
@@ -137,19 +137,19 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         }), Z(true))
       }, [t, l, M, x, Z, N]), null == A) return null;
     let U = (0, r.jsx)(d.u, {
-      text: D ? I.intl.string(I.t.q8TiVt) : M ? I.intl.string(I.t.IHgpEn) : I.intl.string(I.t.vLb0VW),
+      text: D ? w.intl.string(w.t.q8TiVt) : M ? w.intl.string(w.t.IHgpEn) : w.intl.string(w.t.vLb0VW),
       position: "bottom",
       children: (0, r.jsxs)(p.P3F, {
         onClick: V,
-        className: a()(w.qualityIndicator, v, g.eE[f], D ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
-          [w.clickable]: F && M
+        className: a()(I.qualityIndicator, b, g.eE[f], D ? I.qualityIndicatorLowQuality : I.qualityIndicatorFullQuality, {
+          [I.clickable]: F && M
         }),
         children: [M ? (0, r.jsx)(p.SrA, {
           size: "md",
           color: "currentColor",
-          className: w.premiumStreamIcon
+          className: I.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
-          className: w.qualityResolution,
+          className: I.qualityResolution,
           children: (0, y.ml)(A.maxResolution)
         }), (0, r.jsx)("span", {
           children: (0, y.bp)(A.maxFrameRate)
@@ -158,8 +158,8 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     });
     return (0, r.jsx)(p.IGR, {
       text: U,
-      className: a()(R, w.qualityIndicatorBadge, {
-        [w.qualityIndicatorBadgePremium]: M && T
+      className: a()(R, I.qualityIndicatorBadge, {
+        [I.qualityIndicatorBadgePremium]: M && T
       }),
       color: u.Z.unsafe_rawColors.PRIMARY_500.css,
       shape: g.eE[f]
@@ -175,13 +175,13 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       premiumIndicator: u
     } = e, [d, f] = i.useState(false), m = (0, y.W3)(t), {
       reducedMotion: _
-    } = i.useContext(p.Sfi), b = n && null != m;
+    } = i.useContext(p.Sfi), v = n && null != m;
     i.useEffect(() => {
-      (0, v.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
+      (0, b.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: true
       })
     }, [t]);
-    let E = (0, p.Yzy)(b, {
+    let E = (0, p.Yzy)(v, {
         enter: {
           from: _.enabled ? T : Z,
           to: _.enabled ? A : R
@@ -190,7 +190,7 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         config: M
       }, "animate-always"),
       h = (0, p.q_F)({
-        to: b ? D : N,
+        to: v ? D : N,
         config: M
       }, "animate-always");
     return (e => {
@@ -199,12 +199,12 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         popoutProps: i
       } = e;
       return (0, r.jsxs)("div", j(P({
-        className: a()(w.streamQualityIndicator, n)
+        className: a()(I.streamQualityIndicator, n)
       }, i), {
         children: [E((e, n) => n ? (0, r.jsx)(o.animated.div, {
           style: e,
           children: (0, r.jsx)(k, {
-            className: w.liveQualityIndicator,
+            className: I.liveQualityIndicator,
             participant: t,
             size: c,
             shape: p.Dv2.ROUND_LEFT,
@@ -216,11 +216,11 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           })
         }) : null), (0, r.jsx)(o.animated.div, {
           style: h,
-          className: w.liveIndicator,
+          className: I.liveIndicator,
           children: (0, r.jsx)(g.ZP, {
             look: g.jZ.RED,
             size: c,
-            shape: b ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
+            shape: v ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
           })
         })]
       }))

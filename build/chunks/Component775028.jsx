@@ -67,9 +67,9 @@ function k(e, n) {
   }), e
 }
 let D = new Set([Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA]),
-  R = new Set([Chunk981631.d4z.GUILD_VOICE, Chunk981631.d4z.GUILD_STAGE_VOICE]);
+  L = new Set([Chunk981631.d4z.GUILD_VOICE, Chunk981631.d4z.GUILD_STAGE_VOICE]);
 
-function L(e) {
+function R(e) {
   let {
     guild: n,
     channel: l,
@@ -137,12 +137,12 @@ let H = Chunk473749.memo(function() {
       category: l,
       guild: i,
       isFirstChannel: s,
-      isLastChannel: f,
-      onChannelClick: I,
-      tooltipDirection: Z = "right"
+      isLastChannel: p,
+      onChannelClick: f,
+      tooltipDirection: I = "right"
     } = e, {
-      isSubscriptionGated: L
-    } = (0, g.Z)(n.id), U = (0, w.Mf)(i.id, n.id, l.id), G = (0, w.t4)(i.id, n.id, l.id), W = (0, w.EH)(i.id, l.id), F = (0, o.e7)([y.Z], () => y.Z.getActiveThreadCount(i.id, n.id)), q = (0, o.e7)([C.Z], () => C.Z.shouldIndicateNewChannel(i.id, n.id)), z = function(e, n) {
+      isSubscriptionGated: Z
+    } = (0, g.Z)(n.id), R = (0, w.Mf)(i.id, n.id, l.id), U = (0, w.t4)(i.id, n.id, l.id), G = (0, w.EH)(i.id, l.id), F = (0, o.e7)([y.Z], () => y.Z.getActiveThreadCount(i.id, n.id)), W = (0, o.e7)([b.Z], () => b.Z.shouldIndicateNewChannel(i.id, n.id)), q = function(e, n) {
       let t = [];
       return P.TPd.GUILD_THREADS_ONLY.has(e.type) && n >= 1 && t.push((0, r.jsx)(h.Text, {
         variant: "text-xs/normal",
@@ -150,7 +150,7 @@ let H = Chunk473749.memo(function() {
         children: E.intl.format(E.t.z0qML2, {
           count: n
         })
-      }, "thread-count")), R.has(e.type) || t.push((0, r.jsx)(h.Text, {
+      }, "thread-count")), L.has(e.type) || t.push((0, r.jsx)(h.Text, {
         variant: "text-xs/normal",
         className: T.channelSubtitle,
         children: (0, N.qw)(e.id)
@@ -159,30 +159,30 @@ let H = Chunk473749.memo(function() {
         children: (0, r.jsx)(h.Text, {
           className: T.topic,
           variant: "text-xs/normal",
-          children: b.Z.parseTopic(e.topic, true, {
+          children: C.Z.parseTopic(e.topic, true, {
             channelId: e.id
           })
         })
       }, "topic")), [t.map((e, n) => [e, (0, r.jsx)(M, {
         index: n
       }, "subtitle-separator-".concat(n))])].flat(2).slice(0, false)
-    }(n, F), V = E.intl.string(E.t.vetGQs);
-    n.isGuildStageVoice() || n.isGuildVoice() ? V = E.intl.string(E.t.VJlc0S) : n.isForumLikeChannel() && (V = E.intl.string(E.t["3xjX0U"]));
-    let X = G ? "text-muted" : "text-default",
-      Q = (0, h.dQu)(G ? c.Z.colors.TEXT_MUTED : c.Z.colors.TEXT_DEFAULT).hex();
+    }(n, F), z = E.intl.string(E.t.vetGQs);
+    n.isGuildStageVoice() || n.isGuildVoice() ? z = E.intl.string(E.t.VJlc0S) : n.isForumLikeChannel() && (z = E.intl.string(E.t["3xjX0U"]));
+    let V = U ? "text-muted" : "text-default",
+      X = (0, h.dQu)(U ? c.Z.colors.TEXT_MUTED : c.Z.colors.TEXT_DEFAULT).hex();
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.u, {
-        text: W,
+        text: G,
         delay: 500,
-        position: Z,
+        position: I,
         children: (0, r.jsxs)(h.P3F, {
           className: a()(T.channelRow, {
             [T.firstChannel]: s,
-            [T.lastChannel]: f,
-            [T.disabled]: G
+            [T.lastChannel]: p,
+            [T.disabled]: U
           }),
           onClick: e => {
-            if (!G) return e.stopPropagation(), I(i.id, n.id, l.id), true
+            if (!U) return e.stopPropagation(), f(i.id, n.id, l.id), true
           },
           onContextMenu: e => {
             n.isGuildVocal() ? (0, m.jW)(e, async () => {
@@ -216,20 +216,20 @@ let H = Chunk473749.memo(function() {
                   className: T.channelText,
                   variant: "text-md/medium",
                   lineClamp: 1,
-                  color: X,
+                  color: V,
                   children: n.name
                 })
-              }), L ? (0, r.jsx)(_.Z, {
-                color: Q,
+              }), Z ? (0, r.jsx)(_.Z, {
+                color: X,
                 className: T.premiumIcon
-              }) : null, q ? (0, r.jsx)(h.IGR, {
+              }) : null, W ? (0, r.jsx)(h.IGR, {
                 text: E.intl.string(E.t.y2b7CA),
                 color: c.Z.unsafe_rawColors.BRAND_260.css,
                 className: T.titleBadge
               }) : null]
             }), (0, r.jsx)("div", {
               className: T.channelSubtitles,
-              children: z
+              children: q
             })]
           }), (0, r.jsxs)("div", {
             className: T.channelActions,
@@ -243,19 +243,15 @@ let H = Chunk473749.memo(function() {
                   channelId: n.id,
                   baseChannelId: S.oC.CHANNEL_BROWSER
                 }), true),
-                text: V
+                text: z
               })
-            }), (0, r.jsx)(p.$q, {
-              "aria-checked": U,
-              value: U,
-              type: p.M0.INVERTED,
-              disabled: G,
-              innerClassName: T.checkboxInner,
-              displayOnly: true
+            }), (0, r.jsx)(h.FZ5, {
+              checked: R,
+              disabled: U
             })]
           })]
         })
-      }), !f && (0, r.jsx)(H, {})]
+      }), !p && (0, r.jsx)(H, {})]
     })
   });
 
@@ -274,7 +270,7 @@ function G(e) {
     } = e;
     if (0 === l && false === u) return null;
     let i = n._categories[l + u];
-    return (0, r.jsx)(L, {
+    return (0, r.jsx)(R, {
       channel: i.channel,
       guild: t,
       onCategoryClick: d

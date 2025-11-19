@@ -44,8 +44,8 @@ function P(e) {
     planError: L,
     onPurchaseError: x,
     baseAnalyticsData: M,
-    flowStartTime: k,
-    trialId: j,
+    flowStartTime: j,
+    trialId: k,
     planGroup: U,
     analyticsLocation: G,
     purchaseTokenAuthState: B,
@@ -82,7 +82,7 @@ function P(e) {
   } = (0, O.wD)(), eh = (0, _.a5)(K), em = (0, b.MY)(e_), eg = {};
   eg.gift_style = ec, eg.reward_sku_ids = eh && (null == ep ? true : ep.skuId) != null ? [null == ep ? true : ep.skuId] : [], em === b.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (l()(null != e_, "Gift recipient must be set at purchase review step for these gift options."), eg.recipient_id = e_.id, eg.custom_message = eu, eg.emoji_id = null == ed ? true : ed.id, eg.emoji_name = (null == ed ? true : ed.id) == null ? null == ed ? true : ed.surrogates : true, eg.sound_id = null == ef ? true : ef.soundId);
   let eE = null == K ? true : K.id,
-    eb = (0, T.sE)(j, z.paymentSourceId, eE),
+    eb = (0, T.sE)(k, z.paymentSourceId, eE),
     {
       analyticsLocations: ey
     } = (0, d.ZP)(),
@@ -117,10 +117,10 @@ function P(e) {
       baseAnalyticsData: M,
       analyticsLocation: G,
       analyticsLocations: ey,
-      flowStartTime: k,
+      flowStartTime: j,
       subscriptionPlan: K,
       planGroup: U,
-      trialId: j,
+      trialId: k,
       priceOptions: z,
       paymentSource: eO,
       isPrepaidPaymentPastDue: eR,
@@ -139,7 +139,7 @@ function P(e) {
     })
   }, eM = {
     baseAnalyticsData: M,
-    flowStartTime: k,
+    flowStartTime: j,
     makePurchase: ex,
     onNext: s,
     onPurchaseError: x,
@@ -147,17 +147,17 @@ function P(e) {
     paymentSourceId: J,
     purchaseTokenAuthState: B,
     setPurchaseState: n
-  }, ek = i.useRef(eM);
+  }, ej = i.useRef(eM);
   i.useEffect(() => {
-    ek.current = eM
+    ej.current = eM
   }), i.useEffect(() => {
     let {
       makePurchase: e
-    } = ek.current;
+    } = ej.current;
     eb && !el && null == t && e()
   }, [eb, el, t]);
-  let ej = null != Z || Q === N.GZQ.ONE_TIME && !el,
-    eU = V && !ej;
+  let ek = null != Z || Q === N.GZQ.ONE_TIME && !el,
+    eU = V && !ek;
   return eb ? null : (0, r.jsxs)(u.mzw, {
     "data-migration-pending": true,
     align: f.Z.Align.CENTER,

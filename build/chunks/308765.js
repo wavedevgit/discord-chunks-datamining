@@ -385,11 +385,6 @@ let i = {
     actions: ["RUNNING_GAMES_CHANGE", "CLIPS_SETTINGS_UPDATE", "VOICE_CHANNEL_SELECT", "VOICE_STATE_UPDATES"],
     inlineRequire: () => require("./269278.js").Z
   },
-  DistributedClipsManager: {
-    actions: ["MESSAGE_CREATE", "CLIPS_REMOTE_TRIGGER"],
-    inlineRequire: () => require("./663879.js").Z,
-    neverLoadBeforeConnectionOpen: true
-  },
   CustomCallSoundsManager: {
     actions: ["RTC_CONNECTION_STATE", "SOUNDBOARD_MUTE_JOIN_SOUND", "VOICE_STATE_UPDATES"],
     inlineRequire: () => require("./783295.js").Z

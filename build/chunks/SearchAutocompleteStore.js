@@ -66,7 +66,7 @@ function D(e) {
   let n = (0, E.Tm)(e),
     r = null != (t = A.get(n)) ? t : {
       results: [],
-      context: l.Z.getUserSearchContext(j.bind(null, e))
+      context: l.Z.getUserSearchContext(k.bind(null, e))
     };
   return A.set(n, r), r
 }
@@ -116,16 +116,16 @@ function M(e) {
   return null != e && (e === O.dCx.FILTER_FROM || e === O.dCx.FILTER_MENTIONS)
 }
 
-function k(e) {
+function j(e) {
   let t = M(e.filter);
   return e.type === O.Sap.FILTER_ALL || e.type === O.Sap.FILTER && t
 }
 
-function j(e, t) {
+function k(e, t) {
   let {
     results: n
   } = t, r = (0, E.Tm)(e), i = A.get(r), a = S.get(r);
-  if (null == i || null == a || !k(a.mode)) return;
+  if (null == i || null == a || !j(a.mode)) return;
   i.results = U(n, a.mode.type === O.Sap.FILTER ? C : N);
   let {
     query: o,
@@ -183,7 +183,7 @@ function Z(e) {
     l = S.get(s),
     c = true;
   if (null != l && a === l.query && (null == l.mode || l.mode.filter === o.filter)) t = l.autocompletes, c = false;
-  else if (k(o)) {
+  else if (j(o)) {
     var u, d;
     let e = D(n),
       i = o.token,

@@ -32,7 +32,7 @@ let y = e => {
     isBlockLoading: t = false,
     heroBlock: n,
     tab: i
-  } = e, f = (0, d.sp)(), y = l.useMemo(() => g.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), j = (0, s.e7)([p.Z], () => p.Z.getPurchase(n.rewardSkuId)), {
+  } = e, p = (0, d.sp)(), y = l.useMemo(() => f.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), j = (0, s.e7)([g.Z], () => g.Z.getPurchase(n.rewardSkuId)), {
     cardContainerRef: k,
     totalCards: I
   } = (e => {
@@ -53,7 +53,7 @@ let y = e => {
     products: T
   } = ((e, t, n, r) => {
     let i = (0, x.Z)(),
-      a = (0, s.e7)([g.Z], () => g.Z.products),
+      a = (0, s.e7)([f.Z], () => f.Z.products),
       o = l.useMemo(() => e ? [] : a.size > 0 ? i(t.rankedSkuIds).filter(e => e.skuId !== t.rewardSkuId || null != r) : [], [e, i, t.rankedSkuIds, a, r, t.rewardSkuId]),
       c = (0, m.a)()(o),
       u = (0, h.l)(c).slice(0, n);
@@ -62,7 +62,7 @@ let y = e => {
     }
   })(t, n, I, j), L = l.useMemo(() => !t && 0 !== n.rankedSkuIds.length && !(T.length > 0) && n.rankedSkuIds.every(e => {
     var t;
-    return (null == (t = g.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
+    return (null == (t = f.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
   }), [t, n.rankedSkuIds, T.length]), B = t || L;
   return (0, r.jsx)("div", {
     className: a()({
@@ -84,7 +84,7 @@ let y = e => {
           rewardSkuId: n.rewardSkuId
         })
       }, n.rewardSkuId), T.map((e, t) => {
-        let n = g.Z.getCategoryForProduct(e.skuId);
+        let n = f.Z.getCategoryForProduct(e.skuId);
         return null == e || null == n ? null : (0, r.jsx)(d.k0, {
           newValue: {
             tilePosition: t,
@@ -94,7 +94,7 @@ let y = e => {
           children: (0, r.jsx)(C.Z, {
             skuId: null == e ? true : e.skuId,
             prioritizedCurrency: i === O.AW.ORBS ? _.tA.ORBS : true,
-            onClickAnalytics: (0, _.wO)(e, i, f)
+            onClickAnalytics: (0, _.wO)(e, i, p)
           }, e.skuId)
         }, null == e ? true : e.skuId)
       })]

@@ -22,6 +22,5 @@ module.exports = {
   topic: "topic_e4503a",
   separator: "separator_e4503a",
   viewChannelButtonWrapper: "viewChannelButtonWrapper_e4503a",
-  checkboxInner: "checkboxInner_e4503a",
   scrollerInner: "scrollerInner_e4503a"
 }

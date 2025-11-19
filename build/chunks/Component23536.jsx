@@ -81,7 +81,8 @@ function _(e) {
       getProTip: function() {
         return t.isPrivate() ? m.intl.string(m.t["3dLGAs"]) : m.intl.string(m.t.KTbRcg)
       },
-      listName: "pins"
+      listName: "pins",
+      closeAriaLabel: m.intl.string(m.t["Bse+F/"])
     })
   })
 }

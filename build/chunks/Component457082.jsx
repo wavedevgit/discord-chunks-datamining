@@ -1,5 +1,5 @@
 /** Chunk was on 84735 **/
-/** chunk id: 457082, original params: r,e,a (module,exports,require) **/
+/** chunk id: 457082, original params: r,a,e (module,exports,require) **/
 require.d(exports, {
   Z: () => o
 });
@@ -8,14 +8,14 @@ require("./473749.js");
 var Chunk1249 = require("./1249.js");
 let o = r => {
   let {
-    innerRingPercent: e,
-    outerRingColor: a = "currentColor",
+    innerRingPercent: a,
+    outerRingColor: e = "currentColor",
     innerRingColor: o = "currentColor",
-    strokeWidth: s = 4,
-    children: t,
+    strokeWidth: t = 4,
+    children: s,
     backgroundCircleColor: i,
     backgroundCircleBlurAmount: l = 0
-  } = r, d = Math.min(Math.max(e, 0), 100), g = (100 - s) / 2, u = g * Math.PI * 2, v = (100 - s) / 2, h = v * Math.PI * 2;
+  } = r, d = Math.min(Math.max(a, 0), 100), g = (100 - t) / 2, u = g * Math.PI * 2, v = (100 - t) / 2, h = v * Math.PI * 2;
   return (0, c.jsxs)("div", {
     className: n.container,
     children: [(0, c.jsx)("svg", {
@@ -37,8 +37,8 @@ let o = r => {
         cx: 50,
         cy: 50,
         r: g,
-        strokeWidth: s,
-        stroke: a,
+        strokeWidth: t,
+        stroke: e,
         fill: "none",
         strokeLinecap: "round",
         transform: "rotate(-90 ".concat(50, " ").concat(50, ")"),
@@ -49,7 +49,7 @@ let o = r => {
         cx: 50,
         cy: 50,
         r: v,
-        strokeWidth: s,
+        strokeWidth: t,
         stroke: o,
         fill: "none",
         strokeLinecap: "round",
@@ -59,9 +59,9 @@ let o = r => {
           strokeDashoffset: (1 - d / 100) * h
         }
       })]
-    }), null != t && (0, c.jsx)("div", {
+    }), null != s && (0, c.jsx)("div", {
       className: n.overlay,
-      children: t
+      children: s
     })]
   })
 }

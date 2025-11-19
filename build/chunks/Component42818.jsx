@@ -2,8 +2,8 @@
 /** chunk id: 42818, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  As: () => k,
-  By: () => j,
+  As: () => j,
+  By: () => k,
   Lu: () => U,
   e9: () => Y,
   hG: () => Z,
@@ -178,7 +178,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     label: t,
     tooltipText: n,
@@ -202,7 +202,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     invoice: t,
     isPrepaidPaymentSource: n
@@ -250,7 +250,7 @@ function U(e) {
       isPrepaidPaymentSource: i,
       referralTrialOfferId: a
     }), 0 === h || f ? null : (0, r.jsx)(v.B1, {
-      label: (0, r.jsx)(k, {
+      label: (0, r.jsx)(j, {
         label: A.intl.formatToPlainString(A.t.ZSVged, {
           planName: (0, g.PV)(n.id) ? (0, g.aq)(n.id) : n.name
         }),
@@ -258,7 +258,7 @@ function U(e) {
       }),
       value: (0, E.T4)(h, t.currency)
     }), 0 !== m ? (0, r.jsx)(v.B1, {
-      label: (0, r.jsx)(k, {
+      label: (0, r.jsx)(j, {
         label: A.intl.string(A.t["+as5ZZ"]),
         tooltipText: A.intl.format(A.t.UDop9c, {}),
         tooltipAriaLabel: A.intl.string(A.t.P68ePO)
