@@ -87,9 +87,9 @@ function I(e) {
     colorPickerMiddle: I,
     colorPickerFooter: T,
     showEyeDropper: S
-  } = e, A = i.useRef(null), C = (0, u.dQu)(c.Z.colors.BACKGROUND_BASE_LOW).hex(), N = c.Z.colors.BACKGROUND_ACCENT.css, R = (0, _.DP)(a), P = (0, l.Rf)(a), D = P === C ? N : P, w = (0, f.Lq)(R ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), L = (0, d.Z)(I), x = (0, d.Z)(T), [M, j] = i.useState((0, s.Z)());
+  } = e, A = i.useRef(null), C = (0, u.dQu)(c.Z.colors.BACKGROUND_BASE_LOW).hex(), N = c.Z.colors.BACKGROUND_ACCENT.css, R = (0, _.DP)(a), P = (0, l.Rf)(a), D = P === C ? N : P, w = (0, f.Lq)(R ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), L = (0, d.Z)(I), x = (0, d.Z)(T), [M, k] = i.useState((0, s.Z)());
   return i.useEffect(() => {
-    (L !== I || x !== T) && j((0, s.Z)())
+    (L !== I || x !== T) && k((0, s.Z)())
   }, [T, I, x, L]), (0, r.jsx)(u.yRy, {
     targetElementRef: A,
     positionKey: M,

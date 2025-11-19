@@ -80,13 +80,13 @@ function I(e) {
     return e.length > 1 && (n = "linear-gradient(".concat(t, "deg, ").concat(e.join(", "), ")")), {
       background: "var(--background-gradient), ".concat(n)
     }
-  }, [N, a, R]), L = (0, f.Sl)(E.Il.WHITE).hex, x = (0, f.Sl)(E.Il.RED_430).hex, M = D ? L : true, j = i.useCallback(() => {
+  }, [N, a, R]), L = (0, f.Sl)(E.Il.WHITE).hex, x = (0, f.Sl)(E.Il.RED_430).hex, M = D ? L : true, k = i.useCallback(() => {
     I && T(), null == n || n()
   }, [I, T, n]);
   return (0, r.jsxs)("div", {
     className: O.badgeContainer,
     children: [(0, r.jsxs)(m.S4, {
-      onSelect: t ? true : j,
+      onSelect: t ? true : k,
       isSelected: false,
       showSelectionCircle: P,
       name: y.intl.string(b.default.KSBBpC),

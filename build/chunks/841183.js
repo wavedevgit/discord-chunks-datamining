@@ -20,14 +20,14 @@ function u(e) {
     onMouseEnter: d,
     onMouseLeave: f,
     shouldAnimate: p
-  } = (0, i.Z)(), g = (0, l.e7)([s.default], () => s.default.getId());
+  } = (0, i.Z)(), g = (0, a.e7)([s.default], () => s.default.getId());
   return {
     avatarSrc: r.useMemo(() => (0, o.fD)({
       userId: g,
       avatarId: t,
       storageHash: n,
       canAnimate: p,
-      size: (0, a.pxk)(null != u ? u : c.m)
+      size: (0, l.pxk)(null != u ? u : c.m)
     }), [g, t, n, p, u]),
     isAvatarAnimating: p,
     eventHandlers: {

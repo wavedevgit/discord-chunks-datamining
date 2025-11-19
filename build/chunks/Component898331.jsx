@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk27367 = require("./27367.js"),
   Chunk328241 = require("./328241.js");
@@ -15,12 +15,12 @@ function c(e) {
   let {
     className: t,
     size: n = s.m
-  } = e, l = (0, i.pxk)(n);
+  } = e, a = (0, i.pxk)(n);
   return (0, r.jsx)("svg", {
-    width: l,
-    height: l,
-    viewBox: "0 0 ".concat(l, " ").concat(l),
-    className: a()(o.placeholderFill, t),
+    width: a,
+    height: a,
+    viewBox: "0 0 ".concat(a, " ").concat(a),
+    className: l()(o.placeholderFill, t),
     "aria-hidden": true,
     children: (0, r.jsx)("path", {
       fillRule: "evenodd",

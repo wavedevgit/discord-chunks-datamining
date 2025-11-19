@@ -91,14 +91,14 @@ function z(e) {
     user: H,
     isVisible: W,
     shouldShow: z
-  } = e, q = N.ZP.isPremium(H), {
-    pendingAvatar: X,
-    pendingThemeColors: Q,
-    tryItOutThemeColors: J,
-    tryItOutAvatar: $,
-    tryItOutBanner: ee,
-    tryItOutAvatarDecoration: et,
-    tryItOutProfileEffect: en
+  } = e, q = N.ZP.isPremium(H), X = N.ZP.canUseAnimatedAvatar(H), {
+    pendingAvatar: Q,
+    pendingThemeColors: J,
+    tryItOutThemeColors: $,
+    tryItOutAvatar: ee,
+    tryItOutBanner: et,
+    tryItOutAvatarDecoration: en,
+    tryItOutProfileEffect: er
   } = (0, a.cj)([A.Z], () => {
     let e = A.Z.getAllPending(),
       t = A.Z.getErrors();
@@ -106,28 +106,28 @@ function z(e) {
       errors: t
     })
   }), {
-    preset: er,
-    onShuffle: ei
-  } = (0, g.Z)(), ea = i.useRef(null);
-  (0, S.Z)(ea, Z.Y_.TRY_IT_OUT);
-  let eo = (0, p.p)("TryOutPremiumSection"),
+    preset: ei,
+    onShuffle: ea
+  } = (0, g.Z)(), eo = i.useRef(null);
+  (0, S.Z)(eo, Z.Y_.TRY_IT_OUT);
+  let es = (0, p.p)("TryOutPremiumSection"),
     {
-      analyticsLocations: es,
-      newestAnalyticsLocation: el,
-      sourceAnalyticsLocations: ec
+      analyticsLocations: el,
+      newestAnalyticsLocation: ec,
+      sourceAnalyticsLocations: eu
     } = (0, c.ZP)(l.Z.USER_SETTINGS_TRY_OUT_PREMIUM),
-    eu = e => {
+    ed = e => {
       if (e) {
-        if ((0, s.I5)($), (0, T.z5)(J), (0, T.ho)(ee), null != et) {
-          let e = d.Z.getProduct(et.skuId);
-          null != e && (0, _.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, R.PO)(et)) : null != f.Z.getPurchase(et.skuId) && (0, R.PO)(et)
-        }
-        if (null != en) {
+        if ((0, s.I5)(ee), (0, T.z5)($), (0, T.ho)(et), null != en) {
           let e = d.Z.getProduct(en.skuId);
-          null != e && (0, _.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, R.UK)(en)) : null != f.Z.getPurchase(en.skuId) && (0, R.UK)(en)
+          null != e && (0, _.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, R.PO)(en)) : null != f.Z.getPurchase(en.skuId) && (0, R.PO)(en)
+        }
+        if (null != er) {
+          let e = d.Z.getProduct(er.skuId);
+          null != e && (0, _.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, R.UK)(er)) : null != f.Z.getPurchase(er.skuId) && (0, R.UK)(er)
         }
         C.default.track(G.rMx.TRY_IT_OUT_PRESET_SELECTED, {
-          preset: er
+          preset: ei
         })
       }
     };
@@ -137,19 +137,19 @@ function z(e) {
       location: {
         page: G.ZY5.USER_SETTINGS
       },
-      location_stack: ec
+      location_stack: eu
     })
-  }, [ec, H, W]);
-  let ed = (null == (n = (0, m.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === B.Si.TIER_2,
-    ef = (0, h.N)(),
-    e_ = (0, b.Wp)(ef, B.Si.TIER_2),
-    ep = () => q ? F.intl.string(F.t.AfRWI8) : e_ ? F.intl.formatToPlainString(F.t.bkQ4bH, {
-      percent: null == ef ? true : ef.discount.amount
+  }, [eu, H, W]);
+  let ef = (null == (n = (0, m.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === B.Si.TIER_2,
+    e_ = (0, h.N)(),
+    ep = (0, b.Wp)(e_, B.Si.TIER_2),
+    eh = () => q ? F.intl.string(F.t.AfRWI8) : ep ? F.intl.formatToPlainString(F.t.bkQ4bH, {
+      percent: null == e_ ? true : e_.discount.amount
     }) : F.intl.string(F.t.pj0XBN);
   return z ? (0, r.jsx)(c.Gt, {
-    value: es,
+    value: el,
     children: (0, r.jsxs)(x.Z, {
-      ref: ea,
+      ref: eo,
       className: V.tryItOutSection,
       type: x.Y.PREMIUM,
       isShown: true,
@@ -165,8 +165,8 @@ function z(e) {
         }),
         profilePreview: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(E.Z, {
-            preset: er,
-            onShuffle: ei
+            preset: ei,
+            onShuffle: ea
           }), (0, r.jsx)(U.Z, {
             user: H
           })]
@@ -182,31 +182,31 @@ function z(e) {
               variant: "text-sm/normal",
               children: F.intl.string(F.t.xeEC20)
             })]
-          }), (0, r.jsx)(k.Z, {
+          }), (0, r.jsx)(j.Z, {
             className: V.customizationSection,
             user: H,
             pendingAvatarSrc: (0, I.SD)({
               userId: H.id,
-              image: null != $ ? $ : X
+              image: null != ee ? ee : Q
             }),
-            pendingColors: null != J ? J : Q,
+            pendingColors: null != $ ? $ : J,
             onThemeColorsChange: T.rf,
             showPremiumIcon: false,
             preventDisabled: true
           }), (0, r.jsx)(M.Z, {
             className: V.customizationSection,
             isTryItOut: true,
-            showRemoveBannerButton: null != ee,
+            showRemoveBannerButton: null != et,
             onBannerChange: T.f4,
             showPremiumIcon: false
-          }), (0, r.jsx)(w.Z, {
+          }), !X && (0, r.jsx)(w.Z, {
             className: V.customizationSection,
             isTryItOut: true,
             onAvatarChange: T.c_,
             showRemoveAvatarButton: false,
             changeAvatarButtonText: F.intl.string(F.t["7z0D1c"]),
             sectionTitle: F.intl.string(F.t.vtFfPX)
-          }), !eo && (0, r.jsx)(D.Z, {
+          }), !es && (0, r.jsx)(D.Z, {
             className: V.customizationSection,
             sectionTitle: F.intl.string(F.t["7v0T9P"]),
             user: H,
@@ -214,32 +214,32 @@ function z(e) {
           }), (0, r.jsx)(L.Z, {
             user: H,
             className: V.customizationSection
-          }), !eo && (0, r.jsx)(j.Z, {
+          }), !es && (0, r.jsx)(k.Z, {
             className: V.customizationSection,
             sectionTitle: F.intl.string(F.t.wR5wOo),
             user: H,
             isTryItOut: true
-          }), !ed && (0, r.jsx)(o.Text, {
+          }), !ef && (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
             children: F.intl.string(F.t["smo74/"])
           })]
         })
-      }), !ed && (0, r.jsx)(y.p, {
-        onSubscribeModalClose: eu,
+      }), !ef && (0, r.jsx)(y.p, {
+        onSubscribeModalClose: ed,
         className: V.floatingUpsell,
         showUpsell: true,
         text: F.intl.format(F.t.TmfgI2, {
           onClick: () => {
             (0, v.y)({
-              analyticsSource: el,
-              onSubscribeFinish: eu
+              analyticsSource: ec,
+              onSubscribeFinish: ed
             })
           }
         }),
-        button: ep(),
+        button: eh(),
         position: "inline",
         showShadow: false
-      }), ed && (0, r.jsxs)("div", {
+      }), ef && (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
           className: V.premiumTier2Divider
         }), (0, r.jsx)(O.ZP, {

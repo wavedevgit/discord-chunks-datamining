@@ -1,12 +1,15 @@
 /** Chunk was on 89289 **/
 /** chunk id: 530329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk74538 = require("./74538.js"),
   Chunk53691 = require("./53691.jsx"),
   Chunk378879 = require("./378879.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -14,47 +17,49 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk463339 = require("./463339.js");
 
-function p(e) {
+function h(e) {
   var {
     uploadType: t,
     analyticsSource: n,
-    className: a
-  } = e, p = function(e, t) {
+    className: l
+  } = e, h = function(e, t) {
     if (null == e) return {};
-    var n, r, l = function(e, t) {
+    var n, r, a = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
+      var n, r, a = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
     }
-    return l
+    return a
   }(e, ["uploadType", "analyticsSource", "className"]);
-  let g = l.useCallback(() => {
-      (0, o.s)({
+  let b = a.useCallback(() => {
+      (0, d.s)({
         uploadType: t,
         analyticsSource: n
       })
     }, [t, n]),
-    m = l.useMemo(() => {
+    A = (0, s.e7)([o.default], () => o.default.getCurrentUser()),
+    j = c.ZP.canUseAnimatedAvatar(A),
+    y = a.useMemo(() => {
       switch (t) {
-        case u.pC.AVATAR:
-          return d.intl.format(d.t["pvw/HH"], {
-            onClick: g
+        case p.pC.AVATAR:
+          return g.intl.format(g.t["pvw/HH"], {
+            onClick: b
           });
-        case u.pC.BANNER:
-          return d.intl.format(d.t.aCrz1e, {
-            onClick: g
+        case p.pC.BANNER:
+          return g.intl.format(g.t.aCrz1e, {
+            onClick: b
           });
         default:
           return ""
       }
-    }, [t, g]);
-  return t !== u.pC.AVATAR && t !== u.pC.BANNER ? null : (0, r.jsx)(s.p, function(e) {
+    }, [t, b]);
+  return t !== p.pC.AVATAR && t !== p.pC.BANNER || t === p.pC.AVATAR && j ? null : (0, r.jsx)(u.p, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -72,11 +77,11 @@ function p(e) {
     }
     return e
   }({
-    text: m,
-    button: d.intl.string(d.t.BmJkbd),
+    text: y,
+    button: g.intl.string(g.t.BmJkbd),
     buttonAnalyticsObject: {
-      section: c.jXE.USER_PROFILE
+      section: f.jXE.USER_PROFILE
     },
-    className: i()(f.container, a)
-  }, p))
+    className: i()(m.container, l)
+  }, h))
 }

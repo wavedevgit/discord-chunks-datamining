@@ -55,6 +55,7 @@ async function l(e, t) {
         application_id: n.body.store_listing.sku.application_id,
         title: "",
         logo_asset_id: true,
+        light_theme_logo_asset_id: true,
         pages: [],
         store_listings: [],
         assets: n.body.assets

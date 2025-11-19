@@ -74,14 +74,14 @@ let f = 200,
       M = i.useCallback(() => {
         T && L(false)
       }, [L, T]),
-      j = i.useCallback(() => {
+      k = i.useCallback(() => {
         if (I.current || "closed" !== y) {
           I.current = false;
           return
         }
         w(), O("opening-keyboard")
       }, [w, y]),
-      k = i.useCallback(() => {
+      j = i.useCallback(() => {
         "opening-keyboard" === y && L(false)
       }, [L, y]);
     i.useEffect(() => {
@@ -118,8 +118,8 @@ let f = 200,
     return (0, r.jsxs)("div", {
       onMouseEnter: x,
       onMouseLeave: M,
-      onFocus: j,
-      onBlur: k,
+      onFocus: k,
+      onBlur: j,
       children: [t, (0, r.jsx)(o.R, {
         targetElementRef: n,
         shouldShow: A,

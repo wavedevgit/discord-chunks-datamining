@@ -18,8 +18,8 @@ require.d(exports, {
   lh: () => J,
   mF: () => q,
   ub: () => w,
-  v1: () => k,
-  x6: () => j,
+  v1: () => j,
+  x6: () => k,
   zi: () => X
 }), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
@@ -137,7 +137,7 @@ function M(e, t) {
   }
 }
 
-function j(e, t) {
+function k(e, t) {
   var n;
   if (null == t) return e;
   let r = null != (n = t.scheduled_end_time) ? n : e.endDate;
@@ -147,7 +147,7 @@ function j(e, t) {
   }
 }
 
-function k(e) {
+function j(e) {
   return x(e.scheduledStartTime, e.scheduledEndTime)
 }
 

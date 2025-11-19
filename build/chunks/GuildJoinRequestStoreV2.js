@@ -82,7 +82,7 @@ function T(e) {
   let {
     joinRequest: t
   } = e;
-  k(t)
+  j(t)
 }
 let S = false;
 
@@ -98,7 +98,7 @@ function C(e) {
     guildId: i
   } = e;
   S = false, t === f.wB.SUBMITTED && v(i, r), n.forEach(e => {
-    k(e)
+    j(e)
   })
 }
 
@@ -120,11 +120,11 @@ function M(e) {
   return w.get(e)
 }
 
-function j(e) {
+function k(e) {
   delete K[e], w.delete(e), L.delete(e), x.delete(e)
 }
 
-function k(e) {
+function j(e) {
   K[e.joinRequestId] = e, w.set(e.joinRequestId, e), (0, d.Nd)(e.applicationStatus) && (x.delete(e.joinRequestId), L.set(e.joinRequestId, e)), (0, d.bk)(e.applicationStatus) && (L.delete(e.joinRequestId), x.set(e.joinRequestId, e))
 }
 
@@ -136,7 +136,7 @@ function U(e) {
   } = e, i = (0, _.j)(r), a = c.default.getCurrentUser();
   if (null == a || i.userId === a.id) returnfalse;
   let o = null == (t = M(i.joinRequestId)) ? true : t.applicationStatus;
-  return I(n, i.applicationStatus, o), k(i), true
+  return I(n, i.applicationStatus, o), j(i), true
 }
 
 function G(e) {
@@ -144,7 +144,7 @@ function G(e) {
     id: t,
     guildId: n
   } = e, r = M(t);
-  null != r && (I(n, E, r.applicationStatus), j(t))
+  null != r && (I(n, E, r.applicationStatus), k(t))
 }
 
 function B(e) {
@@ -153,7 +153,7 @@ function B(e) {
     action: n
   } = e;
   w.values(P(t, f.wB.SUBMITTED)).forEach(e => {
-    k(g(h({}, e), {
+    j(g(h({}, e), {
       applicationStatus: n
     }))
   }), v(t, 0)

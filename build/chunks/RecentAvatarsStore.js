@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => d
 });
-var r, l, Chunk442837 = require("./442837.js"),
+var r, a, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 let s = () => ({
     isFetching: false,
@@ -12,7 +12,7 @@ let s = () => ({
   }),
   o = [],
   c = s();
-class u extends(l = Chunk442837.ZP.Store) {
+class u extends(a = Chunk442837.ZP.Store) {
   get isFetching() {
     return c.isFetching
   }

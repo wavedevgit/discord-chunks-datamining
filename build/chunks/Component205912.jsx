@@ -102,8 +102,8 @@ function T(e) {
     refs: L,
     floatingStyles: x,
     isOpen: M,
-    setIsOpen: j,
-    context: k,
+    setIsOpen: k,
+    context: j,
     getFloatingProps: U,
     getReferenceProps: G
   } = (0, d.O)({
@@ -112,7 +112,7 @@ function T(e) {
   }), {
     isMounted: B,
     styles: Z
-  } = (0, d.Y)(k, {
+  } = (0, d.Y)(j, {
     common: e => {
       let {
         side: t
@@ -127,7 +127,7 @@ function T(e) {
     },
     duration: 100
   }), F = e => {
-    null == n || n(e), j(false)
+    null == n || n(e), k(false)
   };
   return (0, r.jsx)(_.g, O(b({}, N), {
     children: e => (0, r.jsx)(h.U, O(b({
@@ -162,7 +162,7 @@ function T(e) {
             })
           }), (0, r.jsx)(c.z, {
             className: g.calendarButton,
-            onClick: () => j(!M),
+            onClick: () => k(!M),
             "aria-label": C.DATE_INPUT_OPEN_CALENDAR_LABEL,
             children: (0, r.jsx)(p.Que, {
               size: "sm",

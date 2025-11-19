@@ -97,8 +97,8 @@ function I(e) {
   } = e, L = O(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]);
   let x = (0, h.c)(R),
     M = i.useId(),
-    j = w ? true : M,
-    k = null != a && ("string" != typeof a || "" !== a),
+    k = w ? true : M,
+    j = null != a && ("string" != typeof a || "" !== a),
     U = i.useMemo(() => (0, r.jsxs)("div", {
       className: o()(m.richTooltipContent, {
         [m.noAsset]: null == b
@@ -108,16 +108,16 @@ function I(e) {
         children: b
       }), (0, r.jsxs)("div", {
         className: m.textContent,
-        children: [k && (0, r.jsx)(l.Text, {
+        children: [j && (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           children: a
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
-          color: k ? "text-secondary" : "text-default",
+          color: j ? "text-secondary" : "text-default",
           children: g
         })]
       })]
-    }), [b, a, g, k]),
+    }), [b, a, g, j]),
     {
       isVisible: G,
       triggerProps: B
@@ -157,7 +157,7 @@ function I(e) {
     })
   } else {
     if (!i.isValidElement(n)) return null;
-    t = (0, f.C9)(n, B, j, x.triggerRef)
+    t = (0, f.C9)(n, B, k, x.triggerRef)
   }
   let V = F((e, t) => t ? (0, r.jsx)(d.pn, {
     isRichTooltip: true,

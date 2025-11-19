@@ -28,20 +28,20 @@ async function d() {
           var t, n, {
               storage_hash: r
             } = e,
-            l = function(e, t) {
+            a = function(e, t) {
               if (null == e) return {};
-              var n, r, l = function(e, t) {
+              var n, r, a = function(e, t) {
                 if (null == e) return {};
-                var n, r, l = {},
-                  a = Object.keys(e);
-                for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-                return l
+                var n, r, a = {},
+                  l = Object.keys(e);
+                for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+                return a
               }(e, t);
               if (Object.getOwnPropertySymbols) {
-                var a = Object.getOwnPropertySymbols(e);
-                for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+                var l = Object.getOwnPropertySymbols(e);
+                for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
               }
-              return l
+              return a
             }(e, ["storage_hash"]);
           return t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -60,7 +60,7 @@ async function d() {
               })
             }
             return e
-          }({}, l), n = {
+          }({}, a), n = {
             storageHash: r
           }, n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
@@ -87,10 +87,10 @@ async function f(e) {
     await r.tn.del({
       url: c.ANM.RECENT_AVATARS_DELETE(e),
       rejectWithError: true
-    }), await a.Z.dispatch({
+    }), await l.Z.dispatch({
       type: "RECENT_AVATAR_DELETE",
       avatarId: e
-    }), l.uvj.announce(u.intl.string(u.t.YJPieI))
+    }), a.uvj.announce(u.intl.string(u.t.YJPieI))
   } catch (e) {
     i.Z.show({
       title: u.intl.string(u.t.iufib1),

@@ -119,8 +119,8 @@ function ex(e, t) {
   }), e
 }
 let eM = new Chunk710845.Z("MediaEngineStore"),
-  ej = "MediaEngineStore",
-  ek = 4,
+  ek = "MediaEngineStore",
+  ej = 4,
   eU = 1,
   eG = 1,
   eB = 1,
@@ -279,8 +279,8 @@ let tN = false,
   tL = null,
   tx = true,
   tM = false,
-  tj = false,
-  tk = false;
+  tk = false,
+  tj = false;
 
 function tU() {
   var e, t;
@@ -411,7 +411,7 @@ function tW(e) {
 }
 
 function tK(e) {
-  let t = (0, j.U)({
+  let t = (0, k.U)({
     location: "getAutomaticGainControlConfig",
     disable: !e
   }).noiseCancellationConfig;
@@ -426,14 +426,14 @@ function tz(e, t) {
 async function tq(e, t) {
   if ((0, ed.isIOS)() || (0, ed.isMac)()) {
     let e = await eJ.getSystemMicrophoneMode();
-    "" !== e && "standard" !== e && k.Z.getConfig({
+    "" !== e && "standard" !== e && j.Z.getConfig({
       location: "setNoiseCancellation"
     }).disabledModes.includes(e) && (t = false)
   }
   e.setNoiseCancellation(t);
   let {
     noiseCancellationDuringProcessing: n
-  } = (0, j.U)({
+  } = (0, k.U)({
     location: "setNoiseCancellation",
     disable: !t
   });
@@ -788,10 +788,10 @@ let t2 = new class {
 function t4() {
   var e;
   let t = Chunk433517.K.get("audio");
-  null != exports && (Chunk433517.K.set(ej, {
+  null != exports && (Chunk433517.K.set(ek, {
     [Chunk65154.Yn.DEFAULT]: exports
-  }), Chunk433517.K.remove("audio")), e$ = null != (e = Chunk433517.K.get(ej)) ? module : {}, p().each(e$, e => {
-    if (p().defaultsDeep(e, eX()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, eh.Kd)(e.modeOptions.shortcut)), null != e.modeOptions && e.vadUseKrispSettingVersion !== ek && (e.vadUseKrispSettingVersion = ek, e.modeOptions.vadUseKrisp = true), e.qosMigrated || (e.qosMigrated = true, e.qos = false), !e.vadThrehsoldMigrated) {
+  }), Chunk433517.K.remove("audio")), e$ = null != (e = Chunk433517.K.get(ek)) ? module : {}, p().each(e$, e => {
+    if (p().defaultsDeep(e, eX()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, eh.Kd)(e.modeOptions.shortcut)), null != e.modeOptions && e.vadUseKrispSettingVersion !== ej && (e.vadUseKrispSettingVersion = ej, e.modeOptions.vadUseKrisp = true), e.qosMigrated || (e.qosMigrated = true, e.qos = false), !e.vadThrehsoldMigrated) {
       var t;
       e.vadThrehsoldMigrated = true, (null == (t = e.modeOptions) ? true : t.threshold) === false && (e.modeOptions.threshold = eY)
     }
@@ -803,11 +803,11 @@ function t5(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eR.Yn.DEFAULT,
     n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     r = tG(t);
-  return Object.assign(r, e), !__OVERLAY__ && n && y.K.set(ej, e$), r
+  return Object.assign(r, e), !__OVERLAY__ && n && y.K.set(ek, e$), r
 }
 
 function t8() {
-  Chunk433517.K.remove(ej), location.reload()
+  Chunk433517.K.remove(ek), location.reload()
 }
 
 function t6() {
@@ -1283,7 +1283,7 @@ function nM(e) {
   nn(t), na(n), no(r)
 }
 
-function nj(e) {
+function nk(e) {
   let {
     inputVolume: t,
     outputVolume: n
@@ -1294,7 +1294,7 @@ function nj(e) {
   })
 }
 
-function nk(e) {
+function nj(e) {
   var t;
   let n = tB(),
     r = eJ.getAudioSubsystem(),
@@ -1318,7 +1318,7 @@ function nU(e) {
   let t = t5({
     echoCancellation: e.enabled
   });
-  eJ.eachConnection(e => e.setEchoCancellation(t.echoCancellation)), nH(), nk(e.location)
+  eJ.eachConnection(e => e.setEchoCancellation(t.echoCancellation)), nH(), nj(e.location)
 }
 
 function nG(e) {
@@ -1377,28 +1377,28 @@ async function nY() {
   var e, t, n, r;
   if (!eJ.supports(Chunk65154.AN.VAAPI)) return;
   let i = 4098;
-  (null == (t = window.DiscordNative) || null == (e = exports.processUtils) ? true : module.getSystemInfo) != null && (null != (r = null == (n = (await window.DiscordNative.processUtils.getSystemInfo()).electronGPUInfo) ? true : require.gpuDevice) ? r : []).some(e => e.vendorId === i) && (tk = true, tj = eJ.supports(Chunk65154.AN.GAMESCOPE_CAPTURE))
+  (null == (t = window.DiscordNative) || null == (e = exports.processUtils) ? true : module.getSystemInfo) != null && (null != (r = null == (n = (await window.DiscordNative.processUtils.getSystemInfo()).electronGPUInfo) ? true : require.gpuDevice) ? r : []).some(e => e.vendorId === i) && (tj = true, tk = eJ.supports(Chunk65154.AN.GAMESCOPE_CAPTURE))
 }
 
 function nW(e) {
   let t = t5({
     noiseSuppression: e.enabled
   });
-  eJ.eachConnection(e => e.setNoiseSuppression(t.noiseSuppression)), nH(), nk(e.location)
+  eJ.eachConnection(e => e.setNoiseSuppression(t.noiseSuppression)), nH(), nj(e.location)
 }
 
 function nK(e) {
   let t = t5({
     automaticGainControl: e.enabled
   });
-  eJ.eachConnection(e => tz(e, t.automaticGainControl)), nH(), nk(e.location)
+  eJ.eachConnection(e => tz(e, t.automaticGainControl)), nH(), nj(e.location)
 }
 
 function nz(e) {
   let t = t5({
     noiseCancellation: e.enabled
   });
-  eJ.eachConnection(e => tq(e, t.noiseCancellation)), nH(), nk(e.location)
+  eJ.eachConnection(e => tq(e, t.noiseCancellation)), nH(), nj(e.location)
 }
 
 function nq(e) {
@@ -1582,7 +1582,7 @@ function rs(e) {
   let t = e.bypassEnabled;
   t5({
     bypassSystemInputProcessing: t
-  }), eJ.setAudioInputBypassSystemProcessing(t), nk(e.location)
+  }), eJ.setAudioInputBypassSystemProcessing(t), nj(e.location)
 }
 
 function rl(e) {
@@ -1801,7 +1801,7 @@ function rI(e) {
     let r = n,
       i = eX();
     return e[r] = p().merge(i, t[r]), e
-  }, {}), y.K.set(ej, e$), t6()
+  }, {}), y.K.set(ek, e$), t6()
 }
 
 function rT(e) {
@@ -2214,10 +2214,10 @@ class rL extends(u = Chunk442837.ZP.Store) {
     return eJ.supports(Chunk65154.AN.NATIVE_SCREENSHARE_PICKER)
   }
   getUseVaapiEncoder() {
-    return tk
+    return tj
   }
   getUseGamescopeCapture() {
-    return tj
+    return tk
   }
   getEverSpeakingWhileMuted() {
     return to
@@ -2362,7 +2362,7 @@ let rM = r = new rL(Chunk570140.Z, {
   AUDIO_SET_ATTENUATION: n2,
   AUDIO_SET_QOS: n4,
   MEDIA_ENGINE_DEVICES: nM,
-  AUDIO_VOLUME_CHANGE: nj,
+  AUDIO_VOLUME_CHANGE: nk,
   AUDIO_RESET: n5,
   AUDIO_INPUT_DETECTED: n8,
   AUDIO_SET_SUBSYSTEM: rl,

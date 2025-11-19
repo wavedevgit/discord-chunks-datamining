@@ -1,31 +1,34 @@
 /** Chunk was on 77033 **/
 /** chunk id: 720983, original params: n,e,l (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
+  Chunk410030 = require("./410030.js"),
   Chunk73346 = require("./73346.js"),
   Chunk705338 = require("./705338.js"),
   Chunk260999 = require("./260999.js");
 
-function c(n) {
+function u(n) {
   let {
     guildId: e,
     storefront: l,
     selectedPageIndex: i
-  } = n;
+  } = n, u = (0, d.wjy)((0, r.ZP)());
   if (null == l) return null;
-  let c = null != l.logoAssetId ? (0, r._W)(l.applicationId, l.logoAssetId, 75) : null;
-  return (0, t.jsxs)("div", {
-    className: s.headerContainer,
+  let p = null != l.logoAssetId ? (0, o._W)(l.applicationId, l.logoAssetId, 75) : null,
+    g = null != l.lightThemeLogoAssetId ? (0, o._W)(l.applicationId, l.lightThemeLogoAssetId, 75) : null,
+    I = null;
+  return I = u ? null != p ? p : g : null != g ? g : p, (0, t.jsxs)("div", {
+    className: c.headerContainer,
     children: [(0, t.jsxs)("div", {
-      className: s.titleContainer,
-      children: [null != c && (0, t.jsx)("img", {
-        className: s.logo,
-        src: c,
+      className: c.titleContainer,
+      children: [null != I && (0, t.jsx)("img", {
+        className: c.logo,
+        src: I,
         alt: l.title
       }), (0, t.jsx)(d.Text, {
         variant: "text-md/medium",
@@ -35,13 +38,13 @@ function c(n) {
       })]
     }), l.pages.map((n, l) => (0, t.jsx)(d.P3F, {
       onClick: () => {
-        (0, o.Z)({
+        (0, s.Z)({
           guildId: e,
           pageIndex: l
         })
       },
-      className: a()(s.pageTitleContainer, {
-        [s.selectedPageIndicator]: i === l
+      className: a()(c.pageTitleContainer, {
+        [c.selectedPageIndicator]: i === l
       }),
       children: (0, t.jsx)(d.Heading, {
         variant: "heading-md/semibold",

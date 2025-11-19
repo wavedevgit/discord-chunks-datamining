@@ -43,8 +43,8 @@ let N = new Chunk710845.Z("AuthenticationStore"),
   L = null,
   x = null,
   M = null,
-  j = null,
   k = null,
+  j = null,
   U = Chunk981631.u34.NONE,
   G = false,
   B = [],
@@ -116,7 +116,7 @@ function $(e) {
 }
 
 function ee() {
-  j = M, M = null, Chunk433517.K.remove(R)
+  k = M, M = null, Chunk433517.K.remove(R)
 }
 
 function et(e, t) {
@@ -124,7 +124,7 @@ function et(e, t) {
 }
 
 function en(e) {
-  k = e, o.setAnalyticsToken(e)
+  j = e, o.setAnalyticsToken(e)
 }
 
 function er() {
@@ -223,9 +223,9 @@ function eg(e) {
 function eE(e) {
   let t = e.fingerprint;
   null == M ? null != t ? (y.default.track(S.rMx.USER_FINGERPRINT_CHANGED, {
-    old_fingerprint: null != j ? (0, s.s)(j) : null,
+    old_fingerprint: null != k ? (0, s.s)(k) : null,
     new_fingerprint: (0, s.s)(t)
-  }), M = t, j = t, u.K.set(R, M)) : J() : null != t && M !== t && y.default.track(S.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
+  }), M = t, k = t, u.K.set(R, M)) : J() : null != t && M !== t && y.default.track(S.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
     fingerprint: (0, s.s)(M),
     dropped_fingerprint: (0, s.s)(t)
   })
@@ -259,7 +259,7 @@ function eO(e) {
     analyticsToken: i,
     token: a
   } = e;
-  v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, b.Z)(n)), w = r, k = i, et(a, n.id), null != i && en(i), ee(), D = n.id, u.K.set(P, n.id)
+  v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, b.Z)(n)), w = r, j = i, et(a, n.id), null != i && en(i), ee(), D = n.id, u.K.set(P, n.id)
 }
 
 function ev(e) {
@@ -361,7 +361,7 @@ class ew extends(a = Chunk442837.ZP.Store) {
     return M
   }
   getAnalyticsToken() {
-    return null != k ? k : Chunk213919.getAnalyticsToken()
+    return null != j ? j : Chunk213919.getAnalyticsToken()
   }
   getMFATicket() {
     return Z

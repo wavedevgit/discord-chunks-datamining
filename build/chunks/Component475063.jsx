@@ -97,14 +97,14 @@ function I(e) {
     props: L
   } = (0, s.XF_)(D), {
     disabled: x
-  } = w, M = (0, d.U)("UserSettingsDesignSystems"), j = (0, u.m)({
+  } = w, M = (0, d.U)("UserSettingsDesignSystems"), k = (0, u.m)({
     validateOn: "change",
     error: y,
     value: n,
     minLength: h,
     maxLength: g,
     defaultDirty: I
-  }), k = i.useMemo(() => {
+  }), j = i.useMemo(() => {
     if (M) return;
     if (null == g) return O;
     let e = "".concat(g).length;
@@ -113,23 +113,23 @@ function I(e) {
     let {
       onChange: t
     } = L;
-    null == t || t(e.currentTarget.value), j.setShouldValidate(true)
+    null == t || t(e.currentTarget.value), k.setShouldValidate(true)
   }, G = M && C ? (0, r.jsx)(c.H, {
     value: n,
     maxLength: N && null != g ? g : true
   }) : null;
   return (0, r.jsx)(s.gNt, E(m({}, w), {
     trailingAuxiliaryContent: G,
-    errorMessage: j.hasError && null != (t = j.errorMessage) ? t : true,
+    errorMessage: k.hasError && null != (t = k.errorMessage) ? t : true,
     children: (0, r.jsxs)(s.UPk, {
-      validation: j,
+      validation: k,
       disabled: x,
       children: [(0, r.jsx)(s.tEY, {
         children: (0, r.jsx)(T, E(m({
           autosize: f,
           className: o()(_.textArea, p.scrollbarDefault),
           style: {
-            paddingRight: k
+            paddingRight: j
           },
           placeholder: a,
           value: n,
@@ -147,7 +147,7 @@ function I(e) {
         children: [C ? (0, r.jsx)(S, {
           value: n,
           maxLength: g,
-          hasError: j.hasError
+          hasError: k.hasError
         }) : null, C || false === N ? null : (0, r.jsx)(A, {
           value: n,
           maxLength: g

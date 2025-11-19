@@ -36,8 +36,8 @@ function y(e) {
   }, [N]), P = r.useMemo(() => R.map(e => e.id), [R]), D = (0, E.KK)(null != (n = null == T ? true : T.flags) ? n : 0), w = (0, o.e7)([g.Z], () => null != i && false !== D && g.Z.getEntitlementsForGuild(i, true).some(e => e.skuId === O), [D, O, i]), L = null == T ? true : T.applicationId, x = (null == S ? true : S.published) === true && (null == T ? true : T.isAvailable()) === true, {
     app: M
   } = (0, d.Rt)(L), {
-    analyticsLocations: j
-  } = (0, c.ZP)(), k = (0, m.Ev)(C, null != i ? i : true), U = null == k ? true : k.subscription, G = null == k ? true : k.subscriptionPlan, B = (0, m.cr)(C, null != i ? i : true), Z = null == B ? true : B.subscriptionPlan, {
+    analyticsLocations: k
+  } = (0, c.ZP)(), j = (0, m.Ev)(C, null != i ? i : true), U = null == j ? true : j.subscription, G = null == j ? true : j.subscriptionPlan, B = (0, m.cr)(C, null != i ? i : true), Z = null == B ? true : B.subscriptionPlan, {
     entitlementsLoaded: F
   } = (0, m.LM)({
     guildId: i
@@ -66,12 +66,12 @@ function y(e) {
         subscriptionGroupPlanIds: P,
         initialSubscribeForGuild: i,
         disableGuildSelector: I,
-        analyticsLocations: j,
+        analyticsLocations: k,
         analyticsLocation: y
       }).then(() => {
         null == v || v()
       })
-    }, [M, O, x, A, T, P, i, I, j, y, v]),
+    }, [M, O, x, A, T, P, i, I, k, y, v]),
     subscriptionPurchaseButtonState: Y,
     isGuildSubscribed: w
   }

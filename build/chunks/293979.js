@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   X9: () => M,
-  b8: () => j,
+  b8: () => k,
   hz: () => L
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk473749 = require("./473749.js"),
@@ -102,7 +102,7 @@ function M(e, t) {
   }
 }
 
-function j(e) {
+function k(e) {
   let {
     application: t,
     customId: n
@@ -127,11 +127,11 @@ function j(e) {
     iframeUrl: c.toString()
   }
 }
-let k = (e, t, n) => t.map(t => {
+let j = (e, t, n) => t.map(t => {
   switch (t.type) {
     case u.re.ACTION_ROW:
       return {
-        type: t.type, components: k(e, t.components, n)
+        type: t.type, components: j(e, t.components, n)
       };
     case u.re.TEXT_INPUT: {
       let n = R.Z.getInteractionComponentState(e, t.id);
@@ -176,7 +176,7 @@ let k = (e, t, n) => t.map(t => {
       };
     case u.re.LABEL:
       return {
-        type: t.type, component: k(e, [t.component], n)[0]
+        type: t.type, component: j(e, [t.component], n)[0]
       };
     default:
       a()(false, "unreachable")
@@ -203,7 +203,7 @@ async function G(e, t, n) {
     preflight: l
   }), await l;
   let c = o.map((e, t) => (0, S.B)(e, t)),
-    d = k(e.customId, e.components, {
+    d = j(e.customId, e.components, {
       uploads: o
     }),
     f = () => {

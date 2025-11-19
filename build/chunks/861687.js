@@ -421,7 +421,7 @@ class eN extends Chunk47770.Z {
       connect_count: this._connectCount,
       code: n,
       reason: r
-    })), this._encountered_socket_failure = true), j.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null == (l = this._connection) || l.wasRemoteDisconnected());
+    })), this._encountered_socket_failure = true), k.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null == (l = this._connection) || l.wasRemoteDisconnected());
     let R = "Force Close" !== r;
     if (R) {
       let e = this._backoff.fail(this.reconnect);
@@ -1344,7 +1344,7 @@ class eN extends Chunk47770.Z {
         this.logger.info("Go Live Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null == (t = this._connection) || t.setLocalVideoSinkWants(e)
       }
     }));
-    this._remoteVideoSinkWants = J.Yy, eo.w.on(eo.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), eo.w.on(eo.e.WindowVisibilityChanged, this.windowVisibilityChanged), k.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = true, g.TC(false)) : this._recordingEnabled = false, this._soundshareStats = new $.Z, V.Z.addOnlineCallback(this._handleNetworkOnline), V.Z.addOfflineCallback(this._handleNetworkOffline), (0, H.isDesktop)() && (this.powerMonitorListener = K.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, M.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+    this._remoteVideoSinkWants = J.Yy, eo.w.on(eo.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), eo.w.on(eo.e.WindowVisibilityChanged, this.windowVisibilityChanged), j.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = true, g.TC(false)) : this._recordingEnabled = false, this._soundshareStats = new $.Z, V.Z.addOnlineCallback(this._handleNetworkOnline), V.Z.addOfflineCallback(this._handleNetworkOffline), (0, H.isDesktop)() && (this.powerMonitorListener = K.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, M.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
       this._supportedBandwidthEstimationExperiments = e
     })
   }

@@ -110,13 +110,13 @@ let J = (0, Chunk663993.Un)({
                           children: (0, r.jsx)(b.Z.Provider, {
                             value: y.Z,
                             children: (0, r.jsx)(T.p, {
-                              children: (0, r.jsxs)(j.ov, {
+                              children: (0, r.jsxs)(k.ov, {
                                 children: [(0, r.jsx)("div", {
                                   className: o()(d ? Q.mobileApp : Q.app),
                                   children: t
                                 }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(f.nKe, {}), (0, r.jsx)(B.Z, {}), (0, r.jsx)(w.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(D.Un, {}), (0, r.jsx)(L.ot, {}), (0, r.jsx)(f.Ixi, {
                                   appContext: X.IlC.APP
-                                }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(M.Z, {}), (0, r.jsx)(J, {}), (0, r.jsx)($, {}), (0, r.jsx)(k.Z, {})]
+                                }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(M.Z, {}), (0, r.jsx)(J, {}), (0, r.jsx)($, {}), (0, r.jsx)(j.Z, {})]
                               })
                             })
                           })

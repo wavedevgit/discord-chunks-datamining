@@ -205,7 +205,7 @@
             }
             return L[t] = n, n
           },
-          j = {
+          k = {
             __proto__: null,
             "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
             "%ArrayPrototype%": ["Array", "prototype"],
@@ -259,18 +259,18 @@
             "%WeakMapPrototype%": ["WeakMap", "prototype"],
             "%WeakSetPrototype%": ["WeakSet", "prototype"]
           },
-          k = n(5049),
+          j = n(5049),
           U = n(5215),
-          G = k.call(P, Array.prototype.concat),
-          B = k.call(R, Array.prototype.splice),
-          Z = k.call(P, String.prototype.replace),
-          F = k.call(P, String.prototype.slice),
-          V = k.call(P, RegExp.prototype.exec),
+          G = j.call(P, Array.prototype.concat),
+          B = j.call(R, Array.prototype.splice),
+          Z = j.call(P, String.prototype.replace),
+          F = j.call(P, String.prototype.slice),
+          V = j.call(P, RegExp.prototype.exec),
           H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           Y = /\\(\\)?/g,
           W = function(e, t) {
             var n, r = e;
-            if (U(j, r) && (r = "%" + (n = j[r])[0] + "%"), U(L, r)) {
+            if (U(k, r) && (r = "%" + (n = k[r])[0] + "%"), U(L, r)) {
               var i = L[r];
               if (i === D && (i = M(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
               return {
@@ -524,8 +524,8 @@
           L = RegExp([v + "?" + E + "+" + S + "(?=" + [p, v, "$"].join("|") + ")", T + "+" + A + "(?=" + [p, v + I, "$"].join("|") + ")", v + "?" + I + "+" + S, v + "+" + A, m, P].join("|"), "g"),
           x = /[a-z][A-Z]|[A-Z]{2,}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
           M = "object" == typeof n.g && n.g && n.g.Object === Object && n.g,
-          j = "object" == typeof self && self && self.Object === Object && self,
-          k = M || j || Function("return this")(),
+          k = "object" == typeof self && self && self.Object === Object && self,
+          j = M || k || Function("return this")(),
           U = (i = {
             À: "A",
             Á: "A",
@@ -721,7 +721,7 @@
             return null == i ? true : i[e]
           }),
           G = Object.prototype.toString,
-          B = k.Symbol,
+          B = j.Symbol,
           Z = B ? B.prototype : true,
           F = Z ? Z.toString : true;
 
@@ -842,8 +842,8 @@
           return b.call(t, n, "$&_")
         }
         var M = n(2634),
-          j = M.custom,
-          k = Y(j) ? j : null,
+          k = M.custom,
+          j = Y(k) ? k : null,
           U = {
             __proto__: null,
             double: '"',
@@ -909,7 +909,7 @@
           }
           var N = true === l.depth ? 5 : l.depth;
           if (true === i && (i = 0), i >= N && N > 0 && "object" == typeof t) return V(t) ? "[Array]" : "[Object]";
-          var j, G = function(e, t) {
+          var k, G = function(e, t) {
             var n;
             if ("	" === e.indent) n = "	";
             else {
@@ -946,7 +946,7 @@
             var ei = P ? b.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : R.call(t);
             return "object" != typeof t || P ? ei : J(ei)
           }
-          if ((j = t) && "object" == typeof j && ("undefined" != typeof HTMLElement && j instanceof HTMLElement || "string" == typeof j.nodeName && "function" == typeof j.getAttribute)) {
+          if ((k = t) && "object" == typeof k && ("undefined" != typeof HTMLElement && k instanceof HTMLElement || "string" == typeof k.nodeName && "function" == typeof k.getAttribute)) {
             for (var ea = "<" + O.call(String(t.nodeName)), eo = t.attributes || [], es = 0; es < eo.length; es++) ea += " " + eo[es].name + "=" + B(Z(eo[es].value), "double", l);
             return ea += ">", t.childNodes && t.childNodes.length && (ea += "..."), ea + "</" + O.call(String(t.nodeName)) + ">"
           }
@@ -966,7 +966,7 @@
             return "cause" in Error.prototype || !("cause" in t) || w.call(t, "cause") ? 0 === ec.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + T.call(ec, ", ") + " }" : "{ [" + String(t) + "] " + T.call(I.call("[cause]: " + W(t.cause), ec), ", ") + " }"
           }
           if ("object" == typeof t && h) {
-            if (k && "function" == typeof t[k] && M) return M(t, {
+            if (j && "function" == typeof t[j] && M) return M(t, {
               depth: N - i
             });
             if ("symbol" !== h && "function" == typeof t.inspect) return t.inspect()
@@ -1244,11 +1244,11 @@
             var x = f ? String(n).replace(/\./g, "%2E") : String(n),
               M = o && l(A) && 1 === A.length ? x + "[]" : x;
             if (s && l(A) && 0 === A.length) return M + "[]";
-            for (var j = 0; j < D.length; ++j) {
-              var k = D[j],
-                U = "object" == typeof k && k && true !== k.value ? k.value : A[k];
+            for (var k = 0; k < D.length; ++k) {
+              var j = D[k],
+                U = "object" == typeof j && j && true !== j.value ? j.value : A[j];
               if (!d || null !== U) {
-                var G = E && f ? String(k).replace(/\./g, "%2E") : String(k),
+                var G = E && f ? String(j).replace(/\./g, "%2E") : String(j),
                   B = l(A) ? "function" == typeof a ? a(M, G) : M : M + (E ? "." + G : "[" + G + "]");
                 T.set(t, N);
                 var Z = r();
@@ -1702,7 +1702,7 @@
             }
             return L[t] = n, n
           },
-          j = {
+          k = {
             __proto__: null,
             "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
             "%ArrayPrototype%": ["Array", "prototype"],
@@ -1756,18 +1756,18 @@
             "%WeakMapPrototype%": ["WeakMap", "prototype"],
             "%WeakSetPrototype%": ["WeakSet", "prototype"]
           },
-          k = n(5049),
+          j = n(5049),
           U = n(5215),
-          G = k.call(P, Array.prototype.concat),
-          B = k.call(R, Array.prototype.splice),
-          Z = k.call(P, String.prototype.replace),
-          F = k.call(P, String.prototype.slice),
-          V = k.call(P, RegExp.prototype.exec),
+          G = j.call(P, Array.prototype.concat),
+          B = j.call(R, Array.prototype.splice),
+          Z = j.call(P, String.prototype.replace),
+          F = j.call(P, String.prototype.slice),
+          V = j.call(P, RegExp.prototype.exec),
           H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           Y = /\\(\\)?/g,
           W = function(e, t) {
             var n, r = e;
-            if (U(j, r) && (r = "%" + (n = j[r])[0] + "%"), U(L, r)) {
+            if (U(k, r) && (r = "%" + (n = k[r])[0] + "%"), U(L, r)) {
               var i = L[r];
               if (i === D && (i = M(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
               return {
@@ -2059,7 +2059,7 @@
             }
             return L[t] = n, n
           },
-          j = {
+          k = {
             __proto__: null,
             "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
             "%ArrayPrototype%": ["Array", "prototype"],
@@ -2113,18 +2113,18 @@
             "%WeakMapPrototype%": ["WeakMap", "prototype"],
             "%WeakSetPrototype%": ["WeakSet", "prototype"]
           },
-          k = n(5049),
+          j = n(5049),
           U = n(5215),
-          G = k.call(P, Array.prototype.concat),
-          B = k.call(R, Array.prototype.splice),
-          Z = k.call(P, String.prototype.replace),
-          F = k.call(P, String.prototype.slice),
-          V = k.call(P, RegExp.prototype.exec),
+          G = j.call(P, Array.prototype.concat),
+          B = j.call(R, Array.prototype.splice),
+          Z = j.call(P, String.prototype.replace),
+          F = j.call(P, String.prototype.slice),
+          V = j.call(P, RegExp.prototype.exec),
           H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           Y = /\\(\\)?/g,
           W = function(e, t) {
             var n, r = e;
-            if (U(j, r) && (r = "%" + (n = j[r])[0] + "%"), U(L, r)) {
+            if (U(k, r) && (r = "%" + (n = k[r])[0] + "%"), U(L, r)) {
               var i = L[r];
               if (i === D && (i = M(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
               return {
@@ -2493,7 +2493,7 @@
         if (a) throw Error("Cannot pass both accountId and accountTypeId")
       }
       var M = l(h),
-        j = o()({
+        k = o()({
           "client-version": "5.3.1",
           "container-id": t,
           "flow-type": n,
@@ -2520,7 +2520,7 @@
           addQueryPrefix: true,
           skipNulls: true
         });
-      return e.style.maxHeight = E(_), e.style.maxWidth = E(p), e.setAttribute("data-testid", "persona-widget__iframe"), "embedded" === n && e.setAttribute("aria-modal", "true"), e.title = null != m ? m : "Verify your identity", e.className = "persona-widget__iframe", e.allow = "camera;microphone;clipboard-write", e.setAttribute("sandbox", b.concat(A).join(" ")), e.frameBorder = "0", e.src = M + "/widget" + j, e.onload = function() {}, e
+      return e.style.maxHeight = E(_), e.style.maxWidth = E(p), e.setAttribute("data-testid", "persona-widget__iframe"), "embedded" === n && e.setAttribute("aria-modal", "true"), e.title = null != m ? m : "Verify your identity", e.className = "persona-widget__iframe", e.allow = "camera;microphone;clipboard-write", e.setAttribute("sandbox", b.concat(A).join(" ")), e.frameBorder = "0", e.src = M + "/widget" + k, e.onload = function() {}, e
     }
     var v = function(e) {
       if ("localhost" === e || /^\d+\.\d+\.\d+\.\d+$/.test(e)) return e;

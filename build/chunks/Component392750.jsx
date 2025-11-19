@@ -49,6 +49,19 @@ let u = [{
     } = e;
     return t.toFixed(5)
   }
+}, {
+  key: "isFriend",
+  renderHeader: () => (0, Chunk54381.jsx)(Chunk481060.Text, {
+    variant: "text-sm/semibold",
+    children: "IS FRIEND"
+  }),
+  cellClassName: Chunk996279.affinityCell,
+  render(e) {
+    let {
+      isFriend: t
+    } = e;
+    return t.toString()
+  }
 }];
 
 function m() {
@@ -56,12 +69,14 @@ function m() {
     let {
       otherUserId: t,
       communicationProbability: n,
-      vcProbability: a
+      vcProbability: a,
+      isFriend: l
     } = e;
     return {
       user: s.default.getUser(t),
       affinity: n,
       vcProbability: a,
+      isFriend: l,
       key: t
     }
   }));
