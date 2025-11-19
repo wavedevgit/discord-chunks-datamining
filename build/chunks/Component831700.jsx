@@ -204,7 +204,6 @@ class en extends Chunk98597.ZP {
           targetElementRef: this.channelItemRef,
           position: "right",
           renderPopout: this.renderPopout,
-          spacing: 0,
           onRequestClose: this.closeGuildVerificationPopout,
           shouldShow: Chunk554747 && !Chunk475179 && !Chunk239091 && !Chunk378844 || Chunk378844,
           children: () => (0, Chunk54381.jsx)(Chunk28664.u, {

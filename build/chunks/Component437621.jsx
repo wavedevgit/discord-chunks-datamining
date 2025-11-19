@@ -119,7 +119,6 @@ class M extends Chunk98597.ZP {
         targetElementRef: this.channelItemRef,
         position: "right",
         renderPopout: this.renderPopout,
-        spacing: 0,
         onRequestClose: this.handleClosePopout,
         shouldShow: Chunk493683 && this.state.shouldShowThreadsPopout || Chunk594174 && this.state.shouldShowActivities,
         children: () => (0, Chunk54381.jsxs)(Chunk473403.ZP, {

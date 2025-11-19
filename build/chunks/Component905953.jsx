@@ -85,12 +85,16 @@ function y(e) {
         } : {
           text: _.intl.string(_.t["DSJi3+"]),
           onClick: () => {
-            k(), S(true), (0, g.openUserProfileModal)({
-              userId: N,
-              section: j.oh.WIDGETS
-            }).then(() => {
-              l(v.L.TAKE_ACTION), y()
-            }).finally(() => S(false))
+            k({
+              onConfirm: () => {
+                S(true), (0, g.openUserProfileModal)({
+                  userId: N,
+                  section: j.oh.WIDGETS
+                }).then(() => {
+                  l(v.L.TAKE_ACTION), y()
+                }).finally(() => S(false))
+              }
+            })
           },
           loading: C
         }]

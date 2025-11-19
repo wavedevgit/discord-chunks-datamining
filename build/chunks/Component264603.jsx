@@ -113,7 +113,7 @@ function S() {
         children: "Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         disabled: !O.canStartAuthorization,
-        onClick: O.startAuthorization,
+        onClick: () => O.startAuthorization(),
         variant: "primary",
         text: "Start Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -122,12 +122,12 @@ function S() {
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         disabled: !N.canStartAuthorization,
-        onClick: N.startAuthorization,
+        onClick: () => N.startAuthorization(),
         variant: "secondary",
         text: "Start In-App Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         disabled: !T.canStartAuthorization,
-        onClick: T.startAuthorization,
+        onClick: () => T.startAuthorization(),
         variant: "secondary",
         text: "Start Web Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
