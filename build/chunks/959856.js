@@ -177,6 +177,7 @@ class N extends Chunk47770.Z {
     return this.videoInputDeviceId
   }
   setAsyncVideoInputDeviceInit(e) {}
+  setAsyncClipsSourceDeinit(e) {}
   getSupportedVideoCodecs(e) {
     e([])
   }

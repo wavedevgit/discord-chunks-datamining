@@ -145,7 +145,6 @@ function L(e) {
           hovered: y,
           className: R.pill
         }), (0, r.jsx)(P.Z, {
-          color: s.aML.Colors.PRIMARY,
           hideOnClick: true,
           text: U,
           selected: o,

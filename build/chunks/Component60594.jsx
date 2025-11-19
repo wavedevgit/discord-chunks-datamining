@@ -142,7 +142,7 @@ function eo(e) {
     return null != ej ? null == (e = E.Z.getGuild(ej)) ? true : e.premiumTier : null
   }), [eb, ey] = null != (l = (0, U.Z)(eu, ev, eS)) ? l : [Y.ApplicationStreamResolutions.RESOLUTION_720, Y.ApplicationStreamFPS.FPS_30], {
     lastPickerAction: eC
-  } = (0, f.e7)([H.ZP], () => H.ZP.getPickerState()), eO = T.Z.getUseSystemScreensharePicker();
+  } = (0, f.e7)([H.ZP], () => H.ZP.getPickerState()), eO = T.Z.getUseSystemScreensharePicker() || T.Z.getUseGamescopeCapture();
   (0, H.UB)();
   let ew = eO && (0, D.isMac)() && u().satisfies(null === v.Z || true === v.Z ? true : v.Z.os.release, q.jR),
     eP = [];
@@ -367,7 +367,12 @@ function eo(e) {
         onSubmit: function(e) {
           if (e.preventDefault(), 1 === eT) return e4();
           if (2 === eT) return eN(3);
-          if (null != e1) return eN(1);
+          if ("gamescope" === e1) eL({
+            id: "screen:gamescope",
+            name: et.intl.string(et.t.R4wpLN),
+            url: ""
+          }), e5();
+          else if (null != e1) return eN(1);
           let t = (0, X.Z)(ex, eD, O.ZP.getRunningGames());
           if (L.ZP.supportsFeature(Q.eRX.ELEVATED_HOOK) && (null == t ? true : t.elevated)) {
             var i;

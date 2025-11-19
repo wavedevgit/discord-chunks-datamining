@@ -264,7 +264,7 @@ function V(e) {
     onSelect: a
   } = e, c = i.useCallback(() => {
     a({
-      id: "prepicked:" + t,
+      id: ("gamescope" === t ? "screen:" : "prepicked:") + t,
       name: n,
       url: ""
     })
@@ -331,21 +331,22 @@ function J(e) {
     }, [t, c]),
     _ = (0, C.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, M.jR),
     g = (0, C.isMac)(),
-    [x, v] = i.useState(false),
-    j = i.useCallback(() => {
-      v(!x)
-    }, [x]),
-    S = _ ? (0, r.jsx)(z, {
+    x = b.Z.getUseGamescopeCapture(),
+    [v, j] = i.useState(false),
+    S = i.useCallback(() => {
+      j(!v)
+    }, [v]),
+    y = _ ? (0, r.jsx)(z, {
       onSelect: t
     }) : (0, r.jsxs)("div", {
       className: G.nativePickerTypes,
       children: [(0, r.jsx)(V, {
         onSelect: t,
-        id: "screen",
+        id: x ? "gamescope" : "screen",
         name: B.intl.string(B.t.R4wpLN),
         text: B.intl.string(B.t.cVUFXY),
         icon: f.pzj
-      }), (0, r.jsx)(V, {
+      }), !x && (0, r.jsx)(V, {
         onSelect: t,
         id: "window",
         name: B.intl.string(B.t["+SLJCh"]),
@@ -366,10 +367,10 @@ function J(e) {
       variant: "text-md/semibold",
       color: "interactive-normal",
       children: B.intl.string(B.t.XyYoFc)
-    }), S, 0 === l.length ? null : (0, r.jsxs)("div", {
-      className: s()(G.nativePickerCaptureSection, x ? null : G.nativePickerCollapsed),
+    }), y, 0 === l.length ? null : (0, r.jsxs)("div", {
+      className: s()(G.nativePickerCaptureSection, v ? null : G.nativePickerCollapsed),
       children: [(0, r.jsxs)(f.P3F, {
-        onClick: j,
+        onClick: S,
         className: G.nativePickerLabel,
         children: [(0, r.jsx)(f.Text, {
           className: G.nativeCaptureDevicesText,
@@ -410,7 +411,7 @@ function X(e) {
     lastPickerError: o
   } = (0, T.Z)(t, n);
   return i.useEffect(() => {
-    (0, C.isLinux)() || (0, C.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, M.jR) ? (0, P.T)(l) : (0, P.t)()
+    b.Z.getUseGamescopeCapture() || ((0, C.isLinux)() || (0, C.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, M.jR) ? (0, P.T)(l) : (0, P.t)())
   }, [l]), s === Z.Uc.Error ? (0, r.jsx)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",

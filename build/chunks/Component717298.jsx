@@ -57,7 +57,7 @@ function X(e) {
     sourceApplication: o,
     analyticsLocations: X = [],
     selectSource: K = true
-  } = e, q = i.useRef(performance.now()), Y = (0, u.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, w.isLinux)() || (0, w.isMac)() && a().satisfies(null === _.Z || true === _.Z ? true : _.Z.os.release, W.jR))), {
+  } = e, q = i.useRef(performance.now()), Y = (0, u.e7)([b.Z], () => (b.Z.getUseSystemScreensharePicker() || b.Z.getUseGamescopeCapture()) && ((0, w.isLinux)() || (0, w.isMac)() && a().satisfies(null === _.Z || true === _.Z ? true : _.Z.os.release, W.jR))), {
     analyticsLocations: Q
   } = (0, v.ZP)(X, x.Z.GO_LIVE_MODAL_V2), $ = (0, u.e7)([C.default], () => C.default.getCurrentUser()), ee = (0, N.Z)(), {
     state: et,
@@ -115,7 +115,7 @@ function X(e) {
   let eh = i.useCallback(() => {
     var e;
     ef({
-      id: "prepicked:" + et.nativeSourceType,
+      id: ("gamescope" === et.nativeSourceType ? "screen:" : "prepicked:") + et.nativeSourceType,
       name: null != (e = I.ZP.getLastPickedContentTitle()) ? e : V.intl.string(V.t.KKcy95),
       url: ""
     })
@@ -190,10 +190,10 @@ function X(e) {
               }), ec && !ea && (0, r.jsx)(A.Z, {
                 mainCTADisabled: !el && "" === et.nativeSourceType,
                 mainCTAOnClick: () => {
-                  (0, Z.t)(), (0, Z.T)(et.nativeSourceType)
+                  "gamescope" === et.nativeSourceType ? eh() : ((0, Z.t)(), (0, Z.T)(et.nativeSourceType))
                 },
                 align: "right",
-                ctaText: V.intl.string(V.t.FiBjwU),
+                ctaText: V.intl.string("gamescope" === et.nativeSourceType ? z.default["5AyH/p"] : V.t.FiBjwU),
                 hideOptionsButton: !ei
               }), ea && !ec && (0, r.jsx)(A.Z, {
                 mainCTADisabled: null == et.selectedSource,

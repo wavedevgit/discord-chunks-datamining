@@ -1,5 +1,5 @@
 /** Chunk was on 77033 **/
-/** chunk id: 323540, original params: n,e,l (module,exports,require) **/
+/** chunk id: 323540, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
   $: () => u
 }), require("./388685.js");
@@ -12,16 +12,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk822458 = require("./822458.jsx"),
   Chunk329353 = require("./329353.js");
 
-function u(n) {
-  var e;
+function u(e) {
+  var n;
   let {
     applicationId: l,
     guildId: u,
     page: p
-  } = n, {
+  } = e, {
     ref: g,
     width: I
-  } = (0, d.ZP)(), [x, m] = i.useMemo(() => (null == p ? true : p.skuIds) == null || (null == p ? true : p.skuIds.length) === 0 ? [
+  } = (0, r.ZP)(), [x, m] = i.useMemo(() => (null == p ? true : p.skuIds) == null || (null == p ? true : p.skuIds.length) === 0 ? [
     [],
     []
   ] : (null == p ? true : p.leaderboard) == null || null == I || I <= 516 || I < 1104 ? [
@@ -37,19 +37,19 @@ function u(n) {
         applicationId: l,
         guildId: u,
         skuIds: x,
-        variant: r.Z.MEDIUM
+        variant: d.Z.MEDIUM
       }), (0, t.jsx)(s.Z, {
         applicationId: l,
         guildId: u,
         skuIds: m
-      }), null == (e = p.sections) ? true : e.map((n, e) => {
+      }), null == (n = p.sections) ? true : n.map((e, n) => {
         var i;
         return (0, t.jsx)(s.Z, {
           guildId: u,
           applicationId: l,
-          sectionTitle: null != (i = n.title) ? i : true,
-          skuIds: n.skuIds
-        }, "".concat(n.title, "-").concat(e))
+          sectionTitle: null != (i = e.title) ? i : true,
+          skuIds: e.skuIds
+        }, "".concat(e.title, "-").concat(n))
       })]
     })
   })

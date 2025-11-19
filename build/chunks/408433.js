@@ -2,14 +2,15 @@
 /** chunk id: 408433, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  En: () => P,
-  dY: () => S,
-  eC: () => R,
-  jz: () => C,
-  kC: () => v,
-  l3: () => A,
-  o3: () => T,
-  vP: () => N
+  En: () => L,
+  HK: () => P,
+  dY: () => C,
+  eC: () => w,
+  jz: () => R,
+  kC: () => T,
+  l3: () => N,
+  o3: () => A,
+  vP: () => D
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./953529.js"), require("./997841.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -26,9 +27,11 @@ let f = /sketchfab/i,
   h = 0x15b7e4a5bfb,
   m = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/,
   g = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
-  E = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/shop");
+  E = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/shop"),
+  b = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/game-shop\/([0-9]+)\/([0-9]+)/,
+  y = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/game-shop\/([0-9]+)\/([0-9]+)/;
 
-function b(e) {
+function O(e) {
   let {
     width: t,
     height: n
@@ -36,13 +39,13 @@ function b(e) {
   return t > 0 && n > 0
 }
 
-function y(e, t, n) {
+function v(e, t, n) {
   if (null != t && f.test(t.name) || _.test(n.url)) returnfalse;
   let r = null != n.proxy_url || /^https:/i.test(n.url);
   return null != e && c.default.extractTimestamp(e) < h && (r = r && null != t && p.test(t.name)), r
 }
 
-function O(e) {
+function I(e) {
   let {
     url: t,
     proxy_url: n,
@@ -68,7 +71,7 @@ function O(e) {
   }
 }
 
-function v(e, t, n) {
+function T(e, t, n) {
   let r = {
     id: i().uniqueId("embed_"),
     url: n.url,
@@ -91,21 +94,21 @@ function v(e, t, n) {
     }), null != n.provider && null != n.provider.name && (r.provider = {
       name: n.provider.name,
       url: n.provider.url
-    }), null != n.timestamp && (r.timestamp = o()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.ho)(n.color, true)), null != n.thumbnail && b(n.thumbnail)) switch (r.type) {
+    }), null != n.timestamp && (r.timestamp = o()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.ho)(n.color, true)), null != n.thumbnail && O(n.thumbnail)) switch (r.type) {
     case u.hBH.ARTICLE:
     case u.hBH.IMAGE:
-      r.image = O(n.thumbnail);
+      r.image = I(n.thumbnail);
       break;
     default:
-      r.thumbnail = O(n.thumbnail)
+      r.thumbnail = I(n.thumbnail)
   }
-  if (null != n.image && b(n.image) && (r.image = O(n.image)), null != n.video && (null == r.thumbnail && null != n.video.proxy_url && b(n.video) && (r.thumbnail = {
+  if (null != n.image && O(n.image) && (r.image = I(n.image)), null != n.video && (null == r.thumbnail && null != n.video.proxy_url && O(n.video) && (r.thumbnail = {
       width: n.video.width,
       height: n.video.height,
-      url: I(n.video.proxy_url, {
+      url: S(n.video.proxy_url, {
         format: "webp"
       })
-    }), null != r.thumbnail && b(n.video) && y(t, n.provider, n.video) && (r.video = O(n.video))), d.k.has(r.type)) {
+    }), null != r.thumbnail && O(n.video) && v(t, n.provider, n.video) && (r.video = I(n.video))), d.k.has(r.type)) {
     var a;
     r.fields = (null != (a = n.fields) ? a : []).map(e => {
       let {
@@ -123,14 +126,14 @@ function v(e, t, n) {
   return r
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = new URL(e);
   return Object.keys(t).forEach(e => {
     n.searchParams.set(e, t[e])
   }), n.toString()
 }
 
-function T(e) {
+function A(e) {
   let t = new Map,
     n = [];
   return e.forEach(e => {
@@ -144,7 +147,7 @@ function T(e) {
   }), n
 }
 
-function S(e) {
+function C(e) {
   let {
     image: t,
     video: n,
@@ -155,15 +158,19 @@ function S(e) {
   return (null != t || null != n) && (r === u.hBH.GIFV || r !== u.hBH.RICH && null == i && null == a)
 }
 
-function A(e) {
+function N(e) {
   return e.type === u.hBH.ARTICLE && null != e.url && (g.test(e.url) || m.test(e.url))
 }
 
-function C(e) {
+function R(e) {
   return e.type === u.hBH.ARTICLE && null != e.url && E.test(e.url)
 }
 
-function N(e, t, n) {
+function P(e) {
+  return e.type === u.hBH.ARTICLE && null != e.url && (y.test(e.url) || b.test(e.url))
+}
+
+function D(e, t, n) {
   var r;
   return null != t && null != n ? {
     maxMediaWidth: t,
@@ -177,10 +184,10 @@ function N(e, t, n) {
   }
 }
 
-function R(e, t) {
+function w(e, t) {
   return e.isPrivate() ? !e.isManaged() : t.can(u.Plq.EMBED_LINKS, e)
 }
 
-function P(e) {
+function L(e) {
   return "" !== e.content || e.messageSnapshots.some(e => "" !== e.message.content || e.message.attachments.length > 0)
 }

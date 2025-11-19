@@ -33,44 +33,40 @@ function u(e) {
   let {
     children: t,
     text: n,
-    color: l,
-    disableWrapper: u = false,
-    disabled: d = false,
-    hideOnClick: p = true,
-    shouldShow: h,
-    forceOpen: f,
-    selected: g = false,
-    tooltipClass: m,
-    tooltipContentClass: b
+    disableWrapper: l = false,
+    disabled: u = false,
+    hideOnClick: d = true,
+    shouldShow: p,
+    forceOpen: h,
+    selected: f = false
   } = e;
   return (0, r.jsx)(a.aML, {
-    shouldShow: h,
-    forceOpen: f,
+    "data-migration-pending": true,
+    shouldShow: p,
+    forceOpen: h,
     spacing: 12,
-    hideOnClick: p,
-    text: d ? null : n,
+    hideOnClick: d,
+    text: u ? null : n,
     position: "right",
-    color: l,
     "aria-label": false,
-    tooltipClassName: o()(s.listItemTooltip, m),
-    tooltipContentClassName: b,
+    tooltipClassName: s.listItemTooltip,
     children: e => {
-      var n, l;
-      return u ? i.cloneElement(i.Children.only(t), c({}, e)) : (0, r.jsx)("div", (n = c({
+      var n, a;
+      return l ? i.cloneElement(i.Children.only(t), c({}, e)) : (0, r.jsx)("div", (n = c({
         className: o()(s.listItemWrapper, {
-          [s.selected]: g
+          [s.selected]: f
         })
-      }, e), l = l = {
+      }, e), a = a = {
         children: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
       }), n))
     }
   })

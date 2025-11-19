@@ -32,7 +32,6 @@ function b() {
       hovered: O,
       className: Chunk815141.pill
     }), (0, Chunk54381.jsx)(Chunk662146.Z, {
-      color: Chunk481060.aML.Colors.PRIMARY,
       hideOnClick: true,
       text: Chunk388032.intl.string(Chunk388032.t.YUU0RF),
       selected: b,

@@ -473,7 +473,7 @@ class tn extends(r = Chunk473749.Component) {
       renderEmbeds: t
     } = this.props;
     return 0 !== e.embeds.length && t ? e.embeds.map((t, n) => {
-      if (ez.b.has(t.type) || (0, ey.l3)(t) || (0, B.b)(t) && !(0, Z.M)(e) || (0, ey.jz)(t)) return null;
+      if (ez.b.has(t.type) || (0, ey.l3)(t) || (0, B.b)(t) && !(0, Z.M)(e) || (0, ey.jz)(t) || (0, ey.HK)(t)) return null;
       let r = {
         renderImageComponent: eZ.Yi,
         renderVideoComponent: eZ.lV,

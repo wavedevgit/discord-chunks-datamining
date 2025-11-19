@@ -1,7 +1,7 @@
 /** Chunk was on 47863 **/
 /** chunk id: 289989, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -12,6 +12,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk579806 = require("./579806.js"),
+  Chunk131951 = require("./131951.js"),
   Chunk358085 = require("./358085.js"),
   Chunk960861 = require("./960861.js"),
   Chunk39540 = require("./39540.js"),
@@ -22,7 +23,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk341338 = require("./341338.js");
 
-function j(e) {
+function S(e) {
   let {
     id: t,
     text: n,
@@ -35,11 +36,11 @@ function j(e) {
     "aria-checked": s,
     onClick: () => o(t),
     tabIndex: 0,
-    className: l()(v.nativeSourceTypeButton, v.nativePickerRadioItem, {
-      [v.selected]: s
+    className: l()(j.nativeSourceTypeButton, j.nativePickerRadioItem, {
+      [j.selected]: s
     }),
     children: (0, r.jsxs)("div", {
-      className: v.nativeSourceTypeButtonInner,
+      className: j.nativeSourceTypeButtonInner,
       children: [(0, r.jsx)(i, {
         size: "lg"
       }), (0, r.jsx)(a.xvT, {
@@ -51,44 +52,44 @@ function j(e) {
   })
 }
 
-function S(e) {
+function b(e) {
   let {
     onSourceSelect: t
   } = e;
-  (0, f.UB)(), (0, p.Z)(t, g.Vq);
+  (0, p.UB)(), (0, h.Z)(t, x.Vq);
   let [{
     nativeSourceType: n
-  }, i] = (0, m.E_)(), l = (0, u.isMac)() && o().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, _.jR);
+  }, i] = (0, _.E_)(), l = (0, f.isMac)() && o().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, g.jR), s = u.Z.getUseGamescopeCapture(), b = s ? "gamescope" : "screen";
   return (0, r.jsxs)("div", {
-    className: v.root,
+    className: j.root,
     children: [(0, r.jsx)(a.X6q, {
-      className: v.header,
+      className: j.header,
       variant: "heading-lg/semibold",
       color: "text-default",
-      children: x.intl.string(x.t.XyYoFc)
+      children: v.intl.string(v.t.XyYoFc)
     }), l ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.xvT, {
-        className: v.body,
+        className: j.body,
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: x.intl.format(x.t.sbbPhW, {
-          buttonName: x.intl.string(x.t.FiBjwU)
+        children: v.intl.format(v.t.sbbPhW, {
+          buttonName: v.intl.string(v.t.FiBjwU)
         })
-      }), (0, r.jsx)(h.Z, {})]
+      }), (0, r.jsx)(m.Z, {})]
     }) : (0, r.jsxs)("div", {
-      className: v.sourceTypeButtons,
-      children: [(0, r.jsx)(j, {
-        selected: "screen" === n,
+      className: j.sourceTypeButtons,
+      children: [(0, r.jsx)(S, {
+        selected: n === b,
         onClick: () => {
           i({
             type: "set_native_source_type",
-            sourceType: "screen"
+            sourceType: b
           })
         },
         id: "screen",
-        text: x.intl.string(x.t.cVUFXY),
+        text: v.intl.string(v.t.cVUFXY),
         icon: c.pzj
-      }), (0, r.jsx)(j, {
+      }), !s && (0, r.jsx)(S, {
         selected: "window" === n,
         onClick: () => {
           i({
@@ -97,7 +98,7 @@ function S(e) {
           })
         },
         id: "window",
-        text: x.intl.string(x.t.dG2A1E),
+        text: v.intl.string(v.t.dG2A1E),
         icon: c.GON
       })]
     })]

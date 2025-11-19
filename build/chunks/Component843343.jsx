@@ -25,7 +25,6 @@ function f() {
       text: Chunk388032.intl.format(Chunk388032.t["TnH05/"], {
         count: require
       }),
-      color: Chunk481060.aML.Colors.RED,
       children: (0, Chunk54381.jsx)(Chunk481060.Anchor, (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
