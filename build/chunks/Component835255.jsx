@@ -49,7 +49,7 @@ let T = e => {
 
 function E(e) {
   let {
-    cardSize: t = P.U.MEDIUM
+    cardSize: t = C.U.MEDIUM
   } = e, i = n.useRef(null), a = n.useRef(null);
   return (0, r.jsx)("div", {
     ref: i,
@@ -57,8 +57,8 @@ function E(e) {
     children: (0, r.jsx)("div", {
       ref: a,
       className: l()(N.card, N.placeholderCard, {
-        [N.smallCard]: t === P.U.SMALL,
-        [N.largeCard]: t === P.U.LARGE
+        [N.smallCard]: t === C.U.SMALL,
+        [N.largeCard]: t === C.U.LARGE
       }),
       children: (0, r.jsx)("div", {
         className: N.cardPreview,
@@ -76,7 +76,7 @@ function E(e) {
 function M(e) {
   let {
     item: t,
-    cardSize: i = P.U.SMALL,
+    cardSize: i = C.U.SMALL,
     remainingCount: a,
     onClick: s,
     renderItemPreview: o
@@ -91,7 +91,7 @@ function M(e) {
       innerRef: d,
       onClick: s,
       className: l()(N.card, N.seeMoreCard, {
-        [N.smallCard]: i === P.U.SMALL
+        [N.smallCard]: i === C.U.SMALL
       }),
       children: (0, r.jsxs)("div", {
         className: l()(N.cardPreview, N.seeMoreCardPreview),
@@ -117,7 +117,7 @@ function R(e) {
       source: B = w.lr.WISHLIST,
       giftingOrigin: T = k.Wt.USER_PROFILE_WISHLIST,
       onWishlistItemClick: E,
-      cardSize: M = P.U.MEDIUM
+      cardSize: M = C.U.MEDIUM
     } = e,
     R = function(e, t) {
       if (null == e) return {};
@@ -217,13 +217,13 @@ function R(e) {
         colorClass: N.itemIconShop
       })
     })
-  }) : null : null, [l, B, a]), V = n.useCallback(() => (0, r.jsx)(C.Z, {
+  }) : null : null, [l, B, a]), V = n.useCallback(() => (0, r.jsx)(P.Z, {
     item: Z,
     profileOwner: a,
     isHighlighted: U,
     cardSize: M
   }), [Z, a, U, M]);
-  return (0, r.jsx)(P.Z, (t = function(e) {
+  return (0, r.jsx)(C.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var i = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(i);

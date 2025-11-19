@@ -1,14 +1,14 @@
-/** Chunk was on 95257 **/
+/** Chunk was on 97418 **/
 /** chunk id: 117984, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  CM: () => C,
+  CM: () => p,
   UT: () => v,
-  _Z: () => E,
-  kj: () => f,
-  oC: () => h,
-  s3: () => I,
-  uA: () => _,
-  xh: () => p
+  _Z: () => C,
+  kj: () => c,
+  oC: () => _,
+  s3: () => R,
+  uA: () => g,
+  xh: () => h
 }), require("./388685.js");
 var Chunk524437 = require("./524437.js"),
   Chunk675478 = require("./675478.js"),
@@ -25,81 +25,81 @@ function s() {
   return exports + 1
 }
 
-function u(e) {
+function f(e) {
   for (let n in e) {
     let t = e[n];
     if (null == t) {
       delete e[n];
       continue
     }
-    if (t.type === a.Dd.CATEGORY) continue;
-    let i = l.Z.getChannel(n);
-    if (null == i || !i.isPrivate() && !r.Z.can(c.Pl.VIEW_CHANNEL, i)) {
+    if (t.type === i.Dd.CATEGORY) continue;
+    let a = l.Z.getChannel(n);
+    if (null == a || !a.isPrivate() && !r.Z.can(d.Pl.VIEW_CHANNEL, a)) {
       delete e[n];
       continue
     }
   }
 }
 
-function f(e, n) {
-  d.Z.isFavorite(e) || i.hW.updateAsync("favorites", t => {
-    t.favoriteChannels[e] = a.aV.create({
+function c(e, n) {
+  o.Z.isFavorite(e) || a.hW.updateAsync("favorites", t => {
+    t.favoriteChannels[e] = i.aV.create({
       nickname: "",
-      type: a.Dd.REFERENCE_ORIGINAL,
+      type: i.Dd.REFERENCE_ORIGINAL,
       position: s(),
       parentId: null != n ? n : "0"
-    }), u(t.favoriteChannels)
-  }, i.fy.FREQUENT_USER_ACTION)
+    }), f(t.favoriteChannels)
+  }, a.fy.FREQUENT_USER_ACTION)
 }
 
-function h(e) {
-  let n = d.Z.getFavorite(e);
-  null != n && i.hW.updateAsync("favorites", t => {
-    if (delete t.favoriteChannels[e], n.type === a.Dd.CATEGORY)
+function _(e) {
+  let n = o.Z.getFavorite(e);
+  null != n && a.hW.updateAsync("favorites", t => {
+    if (delete t.favoriteChannels[e], n.type === i.Dd.CATEGORY)
       for (let n in t.favoriteChannels) t.favoriteChannels[n].parentId === e && (t.favoriteChannels[n].parentId = "0");
-    u(t.favoriteChannels)
-  }, i.fy.INFREQUENT_USER_ACTION)
+    f(t.favoriteChannels)
+  }, a.fy.INFREQUENT_USER_ACTION)
 }
 
 function v(e, n) {
-  d.Z.isFavorite(e) && i.hW.updateAsync("favorites", t => {
+  o.Z.isFavorite(e) && a.hW.updateAsync("favorites", t => {
     t.favoriteChannels[e].nickname = null != n ? n : ""
-  }, i.fy.INFREQUENT_USER_ACTION)
-}
-
-function C(e) {
-  let n = o.default.fromTimestamp(Date.now());
-  i.hW.updateAsync("favorites", t => {
-    t.favoriteChannels[n] = a.aV.create({
-      nickname: e,
-      type: a.Dd.CATEGORY,
-      position: s(),
-      parentId: "0"
-    })
-  }, i.fy.FREQUENT_USER_ACTION)
+  }, a.fy.INFREQUENT_USER_ACTION)
 }
 
 function p(e) {
-  h(e)
+  let n = u.default.fromTimestamp(Date.now());
+  a.hW.updateAsync("favorites", t => {
+    t.favoriteChannels[n] = i.aV.create({
+      nickname: e,
+      type: i.Dd.CATEGORY,
+      position: s(),
+      parentId: "0"
+    })
+  }, a.fy.FREQUENT_USER_ACTION)
 }
 
-function I(e) {
-  i.hW.updateAsync("favorites", n => {
-    for (let a of e)
-      if (null != a.position && (n.favoriteChannels[a.id].position = a.position), true !== a.parent_id) {
+function h(e) {
+  _(e)
+}
+
+function R(e) {
+  a.hW.updateAsync("favorites", n => {
+    for (let i of e)
+      if (null != i.position && (n.favoriteChannels[i.id].position = i.position), true !== i.parent_id) {
         var t;
-        n.favoriteChannels[a.id].parentId = null != (t = a.parent_id) ? t : "0"
+        n.favoriteChannels[i.id].parentId = null != (t = i.parent_id) ? t : "0"
       }
-  }, i.fy.FREQUENT_USER_ACTION)
+  }, a.fy.FREQUENT_USER_ACTION)
 }
 
-function _(e, n) {
-  i.hW.updateAsync("favorites", t => {
+function g(e, n) {
+  a.hW.updateAsync("favorites", t => {
     t.favoriteChannels[e].parentId = null != n ? n : "0"
-  }, i.fy.FREQUENT_USER_ACTION)
+  }, a.fy.FREQUENT_USER_ACTION)
 }
 
-function E() {
+function C() {
   Chunk675478.hW.updateAsync("favorites", e => {
     e.muted = !e.muted
   }, Chunk675478.fy.INFREQUENT_USER_ACTION)

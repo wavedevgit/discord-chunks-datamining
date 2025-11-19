@@ -1,0 +1,3 @@
+/** Chunk was on 54790 **/
+/** chunk id: 726689, original params: p (module,exports,require) **/
+module.exports = JSON.parse('{"RPb8Zk":["您的反馈能帮助我们改进 Discord Safety 功能。"],"cDP3b4":["用户反馈已提交"],"KZw6kn":["无法正常运作的对象是？"],"eSP1F9":["关于看到的这个内容，我改变主意了"],"bC0QVX":["说明令人困惑"],"8JFGXc":["我试着完成这些步骤，但没有成功"],"Dl4A+U":["我没有携带合适的证件"],"ZsnNgz":["我很担心分享个人信息"],"ep5SQp":["其他"],"kkKhVJ":["太浪费时间了"],"maxf2S":["我不确定这有什么必要"],"Q5cQ46":["描述您的问题"],"zApKaR":["您愿意详细跟我们说说吗？"],"4djgO/":["感谢您的反馈！"],"RqoA4v":["您的年龄验证体验如何？"]}')

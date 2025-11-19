@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk675654 = require("./675654.js"),
   Chunk710111 = require("./710111.js"),
-  Chunk797013 = require("./797013.js"),
+  Chunk342153 = require("./342153.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk65766 = require("./65766.js");
 
@@ -134,12 +134,12 @@ function S() {
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         className: Chunk65766.header,
         variant: "heading-md/medium",
-        children: Chunk388032.intl.string(Chunk797013.default.h6QNky)
+        children: Chunk388032.intl.string(Chunk342153.default.h6QNky)
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         className: Chunk65766.text,
         variant: "text-md/medium",
         color: "text-secondary",
-        children: Chunk388032.intl.format(Chunk797013.default["8N4c58"], {
+        children: Chunk388032.intl.format(Chunk342153.default["8N4c58"], {
           airhornHook: t => (0, r.jsx)(w, {
             containerRef: e,
             text: t

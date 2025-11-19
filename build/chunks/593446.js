@@ -1,0 +1,3 @@
+/** Chunk was on 99838 **/
+/** chunk id: 593446, original params: a (module,exports,require) **/
+module.exports = JSON.parse('{"/cp93l":["Seuraava kuukausi"],"raS6yf":["Edellinen kuukausi"],"JA5C7L":["Tyhjenn\xe4"],"I8kUqR":["Avaa kalenteri"],"db85vU":["Ei tuotteita n\xe4ytett\xe4v\xe4ksi"],"bPKiId":["Haulla ”",[1,"query"],"” ei l\xf6ytynyt tuloksia"],"WfH9in":["Sulje"],"m3Vfcs":["Etk\xf6 halua n\xe4hd\xe4 t\xe4t\xe4 en\xe4\xe4?"],"cgdAs2":["(Avautuu uuteen v\xe4lilehteen)"],"/Y7vRd":["Poista painamalla Delete-n\xe4pp\xe4int\xe4."],"VMNfsY":["Valittu"],"A+pfVR":["Valitse..."],"YpT3kk":["Suurenna ja toista video"]}')

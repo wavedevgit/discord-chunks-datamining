@@ -224,7 +224,7 @@ function R(e) {
     _ ? (0, d.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("77653")]).then(n.bind(n, 560114));
       return t => (0, r.jsx)(e, S(E({}, t), {
         guild: o,
         source: v.t4x.GUILD_HEADER_INVITE_BUTTON

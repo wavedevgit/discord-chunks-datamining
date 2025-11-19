@@ -614,6 +614,7 @@ let eA = function(e) {
             whichPopoutIsOpen: m,
             setWhichPopoutIsOpen: g
           }), G && (0, i.jsx)(eh.Z, {
+            channel: n,
             themeable: true,
             whichPopoutIsOpen: m,
             setWhichPopoutIsOpen: g

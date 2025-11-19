@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk343312 = require("./343312.jsx"),
   Chunk30910 = require("./30910.jsx"),
   Chunk619733 = require("./619733.js"),
-  Chunk732031 = require("./732031.js"),
+  Chunk613275 = require("./613275.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk755350 = require("./755350.js");
 
@@ -29,7 +29,7 @@ function h() {
     className: Chunk755350.maxInstancesWarning,
     children: (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
-      children: Chunk388032.intl.formatToPlainString(Chunk732031.default.xta2U9, {
+      children: Chunk388032.intl.formatToPlainString(Chunk613275.default.xta2U9, {
         maxInstances: Chunk619733.YX
       })
     })
@@ -66,7 +66,7 @@ function S() {
       className: Chunk755350.gameSection,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
-        children: Chunk388032.intl.string(Chunk732031.default.BOWmmT)
+        children: Chunk388032.intl.string(Chunk613275.default.BOWmmT)
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk755350.gameInstanceContainer,
         children: require.map((t, n) => (0, l.jsx)(v.Z, {
@@ -81,7 +81,7 @@ function S() {
       }),
       children: [C && (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
-        children: Chunk388032.intl.string(Chunk732031.default.NIwDqW)
+        children: Chunk388032.intl.string(Chunk613275.default.NIwDqW)
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk755350.gameContainer,
         children: Object.values(exports).map((t, n) => (0, l.jsx)(s.u, {
@@ -108,7 +108,7 @@ function S() {
           size: "sm"
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
-          children: Chunk388032.intl.string(Chunk732031.default["5DjxXm"])
+          children: Chunk388032.intl.string(Chunk613275.default["5DjxXm"])
         })]
       }), (0, Chunk54381.jsx)(Chunk296643.Z, {})]
     })]

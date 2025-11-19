@@ -17,16 +17,16 @@ var Chunk399606 = require("./399606.js"),
   Chunk302289 = require("./302289.jsx"),
   Chunk946690 = require("./946690.jsx"),
   Chunk369954 = require("./369954.jsx"),
-  Chunk597754 = require("./597754.js"),
+  Chunk744038 = require("./744038.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk862964 = require("./862964.js");
 let E = () => {
   let e = (0, Chunk631885.ZM)().length > 0,
     t = (0, Chunk277537.PO)("family_center_activity_page"),
     n = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    E = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk597754.default["5RZ8Tq"]), Chunk388032.intl.string(Chunk597754.default.bmhCnL)),
-    b = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk597754.default.XKnFFq), Chunk388032.intl.string(Chunk597754.default["68zfxD"])),
-    y = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk597754.default["Rm/6a0"]), Chunk388032.intl.string(Chunk597754.default["1xPTwE"]));
+    E = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk744038.default["5RZ8Tq"]), Chunk388032.intl.string(Chunk744038.default.bmhCnL)),
+    b = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk744038.default.XKnFFq), Chunk388032.intl.string(Chunk744038.default["68zfxD"])),
+    y = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk744038.default["Rm/6a0"]), Chunk388032.intl.string(Chunk744038.default["1xPTwE"]));
   return true === require ? null : (0, Chunk54381.jsxs)("div", {
     className: Chunk862964.container,
     children: [exports && module ? null : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -37,15 +37,15 @@ let E = () => {
         className: Chunk862964.featureCards,
         children: [(0, Chunk54381.jsx)(Chunk946690.Z, {
           icon: Chunk481060.eQA,
-          header: Chunk388032.intl.string(Chunk597754.default["001l3m"]),
+          header: Chunk388032.intl.string(Chunk744038.default["001l3m"]),
           description: E
         }), (0, Chunk54381.jsx)(Chunk946690.Z, {
           icon: Chunk481060.tEF,
-          header: Chunk388032.intl.string(Chunk597754.default.yipAeP),
+          header: Chunk388032.intl.string(Chunk744038.default.yipAeP),
           description: b
         }), (0, Chunk54381.jsx)(Chunk946690.Z, {
           icon: Chunk481060.IkH,
-          header: Chunk388032.intl.string(Chunk597754.default.hhOuMe),
+          header: Chunk388032.intl.string(Chunk744038.default.hhOuMe),
           description: y
         })]
       })]

@@ -33,6 +33,7 @@ function c(e) {
   })), [u]);
   return {
     loading: null == n || (null == n ? true : n.loading),
-    wishlistItems: d
+    wishlistItems: d,
+    wishlistItemSkuIds: c
   }
 }

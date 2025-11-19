@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk631885 = require("./631885.js"),
   Chunk87792 = require("./87792.jsx"),
   Chunk292352 = require("./292352.js"),
-  Chunk597754 = require("./597754.js"),
+  Chunk744038 = require("./744038.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk84989 = require("./84989.js");
 let g = () => {
@@ -88,7 +88,7 @@ let g = () => {
           children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/medium",
             color: "text-secondary",
-            children: Chunk388032.intl.string(Chunk597754.default.RZqaJn)
+            children: Chunk388032.intl.string(Chunk744038.default.RZqaJn)
           }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-xl/semibold",
             color: "header-primary",

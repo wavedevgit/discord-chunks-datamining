@@ -29,7 +29,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk845259 = require("./845259.js"),
+  Chunk163646 = require("./163646.js"),
   Chunk498374 = require("./498374.js"),
   Chunk95213 = require("./95213.js"),
   Chunk882709 = require("./882709.js"),
@@ -129,7 +129,7 @@ let w = () => {
           onClick: () => {
             require(Chunk5900._n.READY_FOR_LICENSE)
           },
-          text: Chunk388032.intl.string(Chunk845259.default.J09UWz)
+          text: Chunk388032.intl.string(Chunk163646.default.J09UWz)
         });
       case Chunk5900._n.INSTALLING:
       case Chunk5900._n.READY_FOR_LICENSE:

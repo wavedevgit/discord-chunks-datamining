@@ -17,63 +17,65 @@ var Chunk54381 = require("./54381.js"),
 
 function f(e) {
   let {
-    themeable: t,
-    whichPopoutIsOpen: n,
-    setWhichPopoutIsOpen: f
+    channel: t,
+    themeable: n,
+    whichPopoutIsOpen: f,
+    setWhichPopoutIsOpen: m
   } = e, {
-    parentAnalyticsLocation: m
-  } = (0, o.ZP)(), g = r.useRef(null), {
-    isHovered: b,
-    setIsHovered: y,
-    onMouseEnter: C,
-    onMouseLeave: v
+    parentAnalyticsLocation: g
+  } = (0, o.ZP)(), b = r.useRef(null), {
+    isHovered: y,
+    setIsHovered: C,
+    onMouseEnter: v,
+    onMouseLeave: _
   } = (0, c.Z)(200, 300), {
-    Component: _,
-    play: x,
+    Component: x,
+    play: j,
     events: {
-      onMouseEnter: j,
-      onMouseLeave: O
+      onMouseEnter: O,
+      onMouseLeave: E
     }
-  } = (0, l.$)(), E = r.useCallback(e => {
-    "focus" !== e.type && (C(), j())
-  }, [C, j]), S = r.useCallback(() => {
-    null == n && (v(), O())
-  }, [v, O, n]), P = r.useCallback(() => {
-    (0, s.v)(m, s.d.GIFTING), n === p.D.GIFTING ? (null == f || f(true), v()) : (null != n ? (x(), C()) : x(), null == f || f(p.D.GIFTING))
-  }, [C, v, m, x, f, n]);
+  } = (0, l.$)(), S = r.useCallback(e => {
+    "focus" !== e.type && (v(), O())
+  }, [v, O]), P = r.useCallback(() => {
+    null == f && (_(), E())
+  }, [_, E, f]), I = r.useCallback(() => {
+    (0, s.v)(g, s.d.GIFTING), f === p.D.GIFTING ? (null == m || m(true), _()) : (null != f ? (j(), v()) : j(), null == m || m(p.D.GIFTING))
+  }, [v, _, g, j, m, f]);
   return (0, i.jsx)(a.y, {
-    targetElementRef: g,
-    shouldShow: b && (n === p.D.GIFTING || null == n) || n === p.D.GIFTING,
+    targetElementRef: b,
+    shouldShow: y && (f === p.D.GIFTING || null == f) || f === p.D.GIFTING,
     animation: a.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      y(false), null == f || f(true)
+      C(false), null == m || m(true)
     },
     renderPopout: e => {
       let {
-        closePopout: t
+        closePopout: n
       } = e;
       return (0, i.jsx)(u.Z, {
-        closePopout: t,
-        isHovered: b,
-        onMouseEnter: C,
-        onMouseLeave: v
+        channel: t,
+        closePopout: n,
+        isHovered: y,
+        onMouseEnter: v,
+        onMouseLeave: _
       })
     },
     children: () => (0, i.jsx)(d.d, {
-      ref: g,
+      ref: b,
       isTrayButton: true,
-      themeable: t,
+      themeable: n,
       "aria-label": h.intl.string(h.t.PEjaCx),
-      iconComponent: _,
-      onClick: P,
-      onMouseEnter: E,
-      onMouseLeave: S,
-      isActive: b || n === p.D.GIFTING,
-      color: b || n === p.D.GIFTING ? "primaryDark" : true
+      iconComponent: x,
+      onClick: I,
+      onMouseEnter: S,
+      onMouseLeave: P,
+      isActive: y || f === p.D.GIFTING,
+      color: y || f === p.D.GIFTING ? "primaryDark" : true
     })
   })
 }
