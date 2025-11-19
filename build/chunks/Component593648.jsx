@@ -527,7 +527,6 @@ function eo() {
       children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.wtk08S),
         description: Chunk388032.intl.string(Chunk388032.t.rngMNx),
-        badge: "beta",
         checked: module,
         onChange: Chunk210176.I
       })
