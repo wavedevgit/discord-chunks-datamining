@@ -69,12 +69,12 @@ function D(e) {
     initialPlanId: u,
     subscriptionTier: p,
     onClose: h,
-    trialId: P,
-    trialFooterMessageOverride: y,
-    reviewWarningMessage: j,
-    openInvoiceId: S,
+    trialId: x,
+    trialFooterMessageOverride: P,
+    reviewWarningMessage: S,
+    openInvoiceId: j,
     onSubscriptionConfirmation: _,
-    renderPurchaseConfirmation: w,
+    renderPurchaseConfirmation: O,
     postSuccessGuild: C,
     followupSKUInfo: k,
     renderHeader: E,
@@ -98,9 +98,9 @@ function D(e) {
     giftMessage: G,
     giftRecipient: U
   } = (0, b.wD)(), z = H && (0, f.pO)(U) && F === v.h8.PLAN_SELECT;
-  return (0, r.jsx)(O.Z, {
-    isConfirmationStep: F === v.h8.CONFIRM && null == B && null == w,
-    children: (0, r.jsx)(x.PaymentModal, {
+  return (0, r.jsx)(w.Z, {
+    isConfirmationStep: F === v.h8.CONFIRM && null == B && null == O,
+    children: (0, r.jsx)(y.PaymentModal, {
       analyticsLocations: D,
       analyticsLocation: t,
       analyticsObject: n,
@@ -112,14 +112,14 @@ function D(e) {
       giftMessage: G,
       subscriptionTier: p,
       onClose: h,
-      trialId: P,
+      trialId: x,
       isGift: H,
-      trialFooterMessageOverride: y,
-      reviewWarningMessage: j,
+      trialFooterMessageOverride: P,
+      reviewWarningMessage: S,
       planGroup: M.Y1,
-      openInvoiceId: S,
+      openInvoiceId: j,
       onSubscriptionConfirmation: _,
-      renderPurchaseConfirmation: w,
+      renderPurchaseConfirmation: O,
       postSuccessGuild: C,
       followupSKUInfo: k,
       renderHeader: E,
@@ -154,7 +154,7 @@ function F(e) {
     skuId: s,
     referralTrialOfferId: i
   }), h = (0, k.Fv)(m), f = (0, u.id)(d, c, p);
-  return (0, r.jsx)(y.J, (t = L({}, e), n = n = {
+  return (0, r.jsx)(P.J, (t = L({}, e), n = n = {
     breadcrumbSteps: B,
     onReturn: () => {
       let e = Object.values(o),
@@ -178,7 +178,7 @@ let H = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     return [{
       key: null,
-      renderStep: e => (0, r.jsx)(x.I, L({}, e))
+      renderStep: e => (0, r.jsx)(y.I, L({}, e))
     }, {
       key: Chunk409813.h8.SKU_SELECT,
       renderStep: e => (0, r.jsx)(I.q, L({}, e)),
@@ -225,7 +225,7 @@ let H = function() {
       }
     }, {
       key: Chunk409813.h8.CONFIRM,
-      renderStep: e => (0, r.jsx)(w.b, L({}, e))
+      renderStep: e => (0, r.jsx)(O.b, L({}, e))
     }, {
       key: Chunk409813.h8.SELECT_FREE_SKU,
       renderStep: e => (0, r.jsx)(C.S, L({}, e)),
@@ -250,32 +250,32 @@ function U(e) {
       giftMessage: m,
       giftRecipient: f,
       giftStyle: v,
-      isGift: x,
-      loadId: y,
-      referralCode: j,
-      subscriptionTier: S
+      isGift: y,
+      loadId: P,
+      referralCode: S,
+      subscriptionTier: j
     } = e;
-  if (null != S && !Object.values(M.Si).includes(S)) throw Error("subscriptionTier must be a premium subscription");
+  if (null != j && !Object.values(M.Si).includes(j)) throw Error("subscriptionTier must be a premium subscription");
   let _ = (0, p.ao)({
     location: "PremiumPaymentSelect",
     giftRecipient: f,
-    isGift: null != x && x
+    isGift: null != y && y
   });
   return (0, r.jsx)(d.Gt, {
     value: l,
     children: (0, r.jsx)(g.PaymentContextProvider, {
-      loadId: y,
+      loadId: P,
       activeSubscription: null != e.subscription ? e.subscription : t,
       stepConfigs: H(_),
       skuIDs: [...M.YQ],
-      isGift: x,
+      isGift: y,
       defaultPlanId: null != n ? n : o,
-      referralCode: j,
+      referralCode: S,
       wasTier2PremiumBeforePurchase: e.wasTier2PremiumBeforePurchase,
-      children: (0, r.jsx)(P.c1, {
+      children: (0, r.jsx)(x.c1, {
         confirmationFooter: i,
         children: (0, r.jsx)(b.KB, {
-          isGift: x,
+          isGift: y,
           giftRecipient: null == f ? true : f,
           giftMessage: m,
           giftStyle: v,

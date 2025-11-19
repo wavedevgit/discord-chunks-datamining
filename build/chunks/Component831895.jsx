@@ -20,7 +20,7 @@ function m(e) {
     defaultCategory: h,
     onCategoryChange: f,
     className: b
-  } = e, [g, v] = l.useState(h), [P, x] = l.useState(null), y = (0, s.Z)(), j = l.useMemo(() => [{
+  } = e, [g, v] = l.useState(h), [x, y] = l.useState(null), P = (0, s.Z)(), S = l.useMemo(() => [{
     name: u.intl.string(u.t["6Zuivx"]),
     value: d.KN.Trick,
     key: "Trick",
@@ -28,8 +28,8 @@ function m(e) {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => x(d.KN.Trick),
-    onMouseLeave: () => x(null)
+    onMouseEnter: () => y(d.KN.Trick),
+    onMouseLeave: () => y(null)
   }, {
     name: u.intl.string(u.t["2UeOlY"]),
     value: d.KN.Treat,
@@ -38,18 +38,18 @@ function m(e) {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => x(d.KN.Treat),
-    onMouseLeave: () => x(null)
-  }], []), S = l.useCallback(e => {
+    onMouseEnter: () => y(d.KN.Treat),
+    onMouseLeave: () => y(null)
+  }], []), j = l.useCallback(e => {
     v(e.value), f(e.value)
-  }, [f]), _ = null == y || null == (n = y.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, O = null == y || null == (m = y.segmentedControlAnimations) || null == (a = m.treat) ? true : a.getAnimationData;
+  }, [f]), _ = null == P || null == (n = P.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, w = null == P || null == (m = P.segmentedControlAnimations) || null == (a = m.treat) ? true : a.getAnimationData;
   return (0, r.jsxs)("div", {
     className: i()(p.container, b),
     children: [(0, r.jsx)(c.w, {
-      options: j,
+      options: S,
       value: g,
-      onChange: S
-    }), P === d.KN.Trick && null != _ && (0, r.jsx)("div", {
+      onChange: j
+    }), x === d.KN.Trick && null != _ && (0, r.jsx)("div", {
       className: i()(p.animationOverlay, p.trickAnimation),
       children: (0, r.jsx)(o.Fmz, {
         shouldAnimate: true,
@@ -58,18 +58,18 @@ function m(e) {
         className: p.lottieAnimation,
         importData: _,
         renderer: o.Fmz.Renderers.SVG,
-        versionKey: +(P === d.KN.Trick)
+        versionKey: +(x === d.KN.Trick)
       })
-    }), P === d.KN.Treat && null != O && (0, r.jsx)("div", {
+    }), x === d.KN.Treat && null != w && (0, r.jsx)("div", {
       className: i()(p.animationOverlay, p.treatAnimation),
       children: (0, r.jsx)(o.Fmz, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
         className: p.lottieAnimation,
-        importData: O,
+        importData: w,
         renderer: o.Fmz.Renderers.SVG,
-        versionKey: +(P === d.KN.Treat)
+        versionKey: +(x === d.KN.Treat)
       })
     })]
   })

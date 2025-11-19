@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 846464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => x
+  q: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk360026 = require("./360026.js");
 
-function x(e) {
+function y(e) {
   let {
     handleStepChange: t,
     handleClose: n,
@@ -31,15 +31,15 @@ function x(e) {
     activeSubscription: i,
     startedPaymentFlowWithPaymentSourcesRef: c,
     setSelectedPlanId: v,
-    priceOptions: P,
-    defaultPlanId: x
+    priceOptions: x,
+    defaultPlanId: y
   } = (0, m.JL)(), {
-    isGift: j,
-    claimableRewards: S
-  } = (0, p.wD)(), _ = j && null != S && S.length > 0, O = (0, d.N)(l), w = (0, o.Nx)(), C = (0, s.Z)({
+    isGift: S,
+    claimableRewards: j
+  } = (0, p.wD)(), _ = S && null != j && j.length > 0, w = (0, d.N)(l), O = (0, o.Nx)(), C = (0, s.Z)({
     location: "PremiumPaymentSelect"
   });
-  return (0, r.jsx)(y, {
+  return (0, r.jsx)(P, {
     selectSku: e => (function(e) {
       let {
         activeSubscription: t,
@@ -77,22 +77,22 @@ function x(e) {
       newSkuId: e,
       setSelectedSkuId: a,
       handleStepChange: t,
-      isGift: j,
-      userTrialOffer: O,
+      isGift: S,
+      userTrialOffer: w,
       startedPaymentFlowWithPaymentSources: c.current,
       setSelectedPlanId: v,
-      defaultPlanId: x
+      defaultPlanId: y
     }),
     onClose: n,
-    isGift: j,
-    inOfferExperience: w,
-    priceOptions: P,
+    isGift: S,
+    inOfferExperience: O,
+    priceOptions: x,
     showPromotionalGiftBanner: _,
     enablePremiumBrandRefresh: C
   })
 }
 
-function y(e) {
+function P(e) {
   let {
     selectSku: t,
     onClose: n,
@@ -111,8 +111,8 @@ function y(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.xBx, {
       "data-migration-pending": true,
-      className: a()(P.skuSelectModalHeader, {
-        [P.premiumBrandRefreshHeader]: p
+      className: a()(x.skuSelectModalHeader, {
+        [x.premiumBrandRefreshHeader]: p
       }),
       separator: false,
       children: (0, r.jsxs)(i.Kqy, {
@@ -120,17 +120,17 @@ function y(e) {
         justify: "space-between",
         children: [m, (0, r.jsx)(i.olH, {
           "data-migration-pending": true,
-          className: P.close,
-          innerClassName: P.closeInner,
+          className: x.close,
+          innerClassName: x.closeInner,
           onClick: n
         })]
       })
     }), (0, r.jsx)(i.hzk, {
       "data-migration-pending": true,
-      className: a()(P.skuSelectModalContent, {
-        [P.modalSize]: !p,
-        [P.modalPadding]: o && !p,
-        [P.premiumBrandRefreshContent]: p
+      className: a()(x.skuSelectModalContent, {
+        [x.modalSize]: !p,
+        [x.modalPadding]: o && !p,
+        [x.premiumBrandRefreshContent]: p
       }),
       children: (0, r.jsx)(c.ZP, {
         onSelectSku: e => t((0, u.Wz)(e)),

@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 293858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => S
+  b: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,14 +24,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk698708 = require("./698708.jsx"),
   Chunk921944 = require("./921944.js");
 
-function S(e) {
+function j(e) {
   let t, {
       handleClose: n,
       planGroup: a,
-      onSubscriptionConfirmation: S,
+      onSubscriptionConfirmation: j,
       renderPurchaseConfirmation: _,
-      postSuccessGuild: O,
-      followupSKUInfo: w,
+      postSuccessGuild: w,
+      followupSKUInfo: O,
       continueSessionToInitialStep: C
     } = e,
     {
@@ -62,19 +62,19 @@ function S(e) {
     Y = (0, d.Z)(),
     V = (0, c.a5)(T),
     q = (0, c.tK)(null == z ? true : z.skuId),
-    J = (0, x.$)(E, I),
+    J = (0, y.$)(E, I),
     Q = L && null != z && V;
   i()(null != T, "Expected plan to selected"), i()(null != N, "Expected selectedSkuId"), i()(null != R, "Step should be set");
   let X = l.useCallback(() => {
-    n(), null == S || S()
-  }, [n, S]);
+    n(), null == j || j()
+  }, [n, j]);
   l.useEffect(() => {
     !L || null == B || null == D || F || H || (0, m.pO)(B) || G({
-      onSubscriptionConfirmation: S
+      onSubscriptionConfirmation: j
     })
-  }, [G, L, B, D, F, H, S]), l.useEffect(() => {
+  }, [G, L, B, D, F, H, j]), l.useEffect(() => {
     null != Y && null != Y.reminderNotice && W && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, (0, u.m)(), {
-      dismissAction: j.L.INDIRECT_ACTION
+      dismissAction: S.L.INDIRECT_ACTION
     })
   }, [Y, W]);
   let $ = null != C ? p.PI.DEEPLINK_TO_DESKTOP_APP : true;
@@ -85,9 +85,9 @@ function S(e) {
   });
   else {
     let e = A.current === T.id ? {
-      postSuccessGuild: O
+      postSuccessGuild: w
     } : {
-      followupSKUInfo: w,
+      followupSKUInfo: O,
       startingPremiumSubscriptionPlanId: A.current,
       isDowngrade: null != k && (0, h.GY)(k, T.id, a)
     };
@@ -119,8 +119,8 @@ function S(e) {
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(v.C3, {
-      children: [(0, r.jsx)(y.Z, {}), t]
-    }), null != K && K, Q && null != q && (0, r.jsx)(P.Z, {
+      children: [(0, r.jsx)(P.Z, {}), t]
+    }), null != K && K, Q && null != q && (0, r.jsx)(x.Z, {
       onClose: X,
       selectedPromotionalDecoPurchaseRecord: q,
       selectedGiftingPromotionReward: z

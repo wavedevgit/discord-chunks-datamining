@@ -26,22 +26,22 @@ function h() {
       claimableRewards: v
     } = (0, Chunk987209.wD)();
   if (null == g || null == v) return null;
-  let P = null == (e = g.getBackgroundImageUrl) ? true : module.call(g, f),
-    x = (0, Chunk717401.Yr)(P),
-    y = null == (t = g.gradientConfig) ? true : exports.call(g, {
+  let x = null == (e = g.getBackgroundImageUrl) ? true : module.call(g, f),
+    y = (0, Chunk717401.Yr)(x),
+    P = null == (t = g.gradientConfig) ? true : exports.call(g, {
       isDarkMode: f,
       isAndroid: false
     }),
-    j = (0, Chunk717401.Tl)(y, {
+    S = (0, Chunk717401.Tl)(P, {
       colorStops: [0, 12, 100]
     }),
-    S = (0, Chunk717401.$q)(x, j, {
+    j = (0, Chunk717401.$q)(y, S, {
       backgroundSize: "cover, auto",
       backgroundPosition: "right center, 0% 0%"
     });
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
-    style: S,
+    style: j,
     children: [(0, Chunk54381.jsx)("div", {
       className: Chunk432483.avatar,
       children: (0, Chunk54381.jsx)(Chunk897942.Z, {

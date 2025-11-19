@@ -293,7 +293,7 @@ var el = function(e) {
     return e.ALL = "all", e.CLAIMED = "claimed", e.PREVIEW_TOOL = "preview_tool", e
   }({}),
   ec = function(e) {
-    return e.TAB = "tab", e.QUEST_ID = "quest_id", e
+    return e.TAB = "tab", e.QUEST_ID = "quest_id", e.SORT = "sort", e.FILTER = "filter", e
   }({});
 
 function eu(e) {

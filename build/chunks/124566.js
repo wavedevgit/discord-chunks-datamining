@@ -117,5 +117,10 @@ let m = {
       monthGiftText: Chunk388032.t.qyhlUP,
       collectRewardButtonText: () => Chunk388032.intl.string(Chunk388032.t.kMYVwv),
       rewardCollectedText: () => Chunk388032.intl.string(Chunk388032.t.eZrmtq)
+    },
+    rewardSelection: {
+      heading: () => Chunk388032.intl.string(Chunk388032.t["3JCuX1"]),
+      primarySubtitle: () => Chunk388032.intl.string(Chunk388032.t.h2nMp0),
+      secondarySubtitle: () => Chunk388032.intl.string(Chunk388032.t.y5wftM)
     }
   }

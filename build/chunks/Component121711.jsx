@@ -244,11 +244,15 @@ let em = function(e) {
     }
     let r = performance.getEntriesByType("navigation")[0];
     if ("POP" === h.action && (null == r ? true : r.type) === "navigate" && n && t !== G.e5.PREVIEW_TOOL) {
-      let e = (0, k.Ew)(l.hash) ? null : l.hash.substring(1);
+      let t = (0, k.Ew)(l.hash) ? null : l.hash.substring(1),
+        n = e.get(G.tR.SORT),
+        r = e.get(G.tR.FILTER);
       _.Z.openNativeAppModal("quests", en.Etm.DEEP_LINK, {
         type: ei.jE.QUEST_HOME,
-        params: (0, k.Ew)(e) ? true : {
-          questId: e
+        params: {
+          questId: (0, k.Ew)(t) ? true : t,
+          sort: n,
+          filter: r
         }
       })
     }
