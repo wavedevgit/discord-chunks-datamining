@@ -2,7 +2,7 @@
 /** chunk id: 838819, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => D
+  default: () => H
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk295907 = require("./295907.js"),
   Chunk887353 = require("./887353.js"),
   Chunk219588 = require("./219588.js");
-let H = e => {
+let D = e => {
     let {
       children: t,
       shouldAddEventListener: n,
@@ -53,7 +53,7 @@ let H = e => {
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, i, r]), t
   },
-  D = function(e) {
+  H = function(e) {
     let {
       tab: t = N.AW.HOME
     } = e;
@@ -66,10 +66,10 @@ let H = e => {
         onClose: R
       } = (0, L.Db)(),
       {
-        currentTab: D,
+        currentTab: H,
         hasFilters: M
       } = (0, j.S)(),
-      F = l.useMemo(() => t === N.AW.HOME && D && M() ? D : t, [t, D, M]),
+      F = l.useMemo(() => t === N.AW.HOME && H && M() ? H : t, [t, H, M]),
       {
         categories: W,
         refreshCategories: V
@@ -123,7 +123,7 @@ let H = e => {
         },
         children: (0, r.jsx)(v.ni, {
           tab: Q,
-          children: (0, r.jsx)(H, {
+          children: (0, r.jsx)(D, {
             onClose: R,
             shouldAddEventListener: false,
             children: (0, r.jsxs)("div", {

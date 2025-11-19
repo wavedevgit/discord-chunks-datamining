@@ -43,8 +43,8 @@ function R(e) {
     isFetchingCategories: n,
     scrollerRef: R,
     tab: Z
-  } = e, w = (0, f.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
-    noCache: D,
+  } = e, w = (0, f.sp)(), D = null != (t = null == w ? true : w.sessionId) ? t : "", {
+    noCache: H,
     includeUnpublished: M
   } = (0, E.Z)(), F = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, Y, q] = l.useMemo(() => {
     switch (Z) {
@@ -63,21 +63,21 @@ function R(e) {
   })), [W, q, J]), X = (0, h.l)(Q);
   l.useEffect(() => {
     (0, C.n)({
-      sessionId: H,
+      sessionId: D,
       checkpoint: C.a.SHOP_MOUNTED,
       tab: Z,
       unpublishedCategoriesShown: M,
-      cacheDisabled: D
+      cacheDisabled: H
     })
   }, []), l.useEffect(() => {
     n || (0, C.n)({
-      sessionId: H,
+      sessionId: D,
       checkpoint: C.a.SHOP_RENDERED,
       tab: Z,
       unpublishedCategoriesShown: M,
-      cacheDisabled: D
+      cacheDisabled: H
     })
-  }, [H, M, D, n, Z]);
+  }, [D, M, H, n, Z]);
   let $ = g.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;

@@ -128,7 +128,7 @@ let N = e => {
       fullWidth: true
     })
   },
-  H = e => {
+  D = e => {
     let {
       product: t,
       isClaimPremiumProductDisabled: n,
@@ -156,7 +156,7 @@ let N = e => {
       fullWidth: true
     })
   },
-  D = e => {
+  H = e => {
     let {
       product: t,
       analyticsLocations: n,
@@ -323,7 +323,7 @@ let N = e => {
       isApplying: J,
       text: c
     });
-    if (y) return (0, r.jsx)(H, {
+    if (y) return (0, r.jsx)(D, {
       product: t,
       isClaimPremiumProductDisabled: Y,
       isClaiming: K,
@@ -331,7 +331,7 @@ let N = e => {
       text: c,
       onClickAnalytics: d
     });
-    if (W && V) return h ? (0, r.jsx)(D, {
+    if (W && V) return h ? (0, r.jsx)(H, {
       product: t,
       analyticsLocations: z,
       onClickAnalytics: d

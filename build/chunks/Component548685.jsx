@@ -44,8 +44,8 @@ let A = e => {
     numVisibleItems: R,
     prioritizeUserDiscounts: Z,
     tab: w,
-    buttonContainerClassName: H,
-    orbsSupportedOnly: D
+    buttonContainerClassName: D,
+    orbsSupportedOnly: H
   } = e, M = (0, s.e7)([f.default], () => f.default.getCurrentUser()), F = h.ZP.canUseCollectibles(M), W = (0, I.B)("FeedBlock"), {
     sortType: V,
     setSortType: U,
@@ -57,7 +57,7 @@ let A = e => {
     sortedSkuIds: A,
     isPremiumUser: F,
     prioritizeUserDiscounts: Z,
-    orbsSupportedOnly: D
+    orbsSupportedOnly: H
   }), q = (0, k.St)(z), J = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, s.e7)([p.Z], () => p.Z.isFocused()), X = !J && Q, {
     animationPhase: $,
     startAnimation: ee
@@ -101,7 +101,7 @@ let A = e => {
           variant: "text-md/medium",
           children: B.intl.string(B.t.uaX705)
         }), (0, r.jsx)("div", {
-          className: H,
+          className: D,
           children: (0, r.jsx)(c.PhF, {
             options: G,
             select: el,
@@ -113,7 +113,7 @@ let A = e => {
             serialize: e => e
           })
         }), (0, r.jsx)("div", {
-          className: H,
+          className: D,
           children: (0, r.jsx)(c.Button, {
             variant: "secondary",
             text: B.intl.string(B.t.X3tnc4),

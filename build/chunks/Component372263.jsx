@@ -1,5 +1,5 @@
 /** Chunk was on 93582 **/
-/** chunk id: 372263, original params: e,t,i (module,exports,require) **/
+/** chunk id: 372263, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => l
 });
@@ -12,7 +12,7 @@ function l(e) {
   let {
     cardSize: t = a.U.MEDIUM
   } = e;
-  return (0, r.jsx)(n.w_, {
+  return (0, i.jsx)(n.w_, {
     cardSize: t
   })
 }

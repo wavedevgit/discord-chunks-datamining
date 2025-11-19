@@ -46,17 +46,17 @@ function I(e) {
     currentPage: R,
     totalCount: Z,
     isFetchingResults: w
-  } = (0, h.a)(), H = (0, s.Wu)([f.Z], () => f.Z.getProductsBySkus(A)), D = l.useCallback(() => {
+  } = (0, h.a)(), D = (0, s.Wu)([f.Z], () => f.Z.getProductsBySkus(A)), H = l.useCallback(() => {
     var e;
     null == i || null == (e = i.current) || e.scrollToTop({
       animate: true
     })
   }, [i]), M = null == A ? true : A.join("");
   l.useEffect(() => {
-    D()
-  }, [M, D]);
+    H()
+  }, [M, H]);
   let F = (0, g.a)(),
-    W = l.useMemo(() => F(H), [F, H]);
+    W = l.useMemo(() => F(D), [F, D]);
   l.useEffect(() => {
     n || (0, C.n)({
       sessionId: L,

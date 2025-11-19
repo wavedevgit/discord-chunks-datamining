@@ -74,10 +74,10 @@ let A = e => {
       return n
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-    }), n), [Z, w] = l.useState(false), H = (0, p.sp)(), D = null != (t = null == H ? true : H.sessionId) ? t : "";
+    }), n), [Z, w] = l.useState(false), D = (0, p.sp)(), H = null != (t = null == D ? true : D.sessionId) ? t : "";
     l.useEffect(() => {
       (0, C.n)({
-        sessionId: D,
+        sessionId: H,
         checkpoint: C.a.SHOP_MOUNTED,
         tab: b,
         unpublishedCategoriesShown: B,
@@ -95,20 +95,20 @@ let A = e => {
       includeBundles: true,
       logPerf: true
     }, {
-      sessionId: D,
+      sessionId: H,
       tab: b
     }), U = l.useCallback(() => {
       V()
     }, [V]);
     return (l.useEffect(() => {
       null != F || M || 0 === W.length || (0, C.n)({
-        sessionId: D,
+        sessionId: H,
         checkpoint: C.a.SHOP_RENDERED,
         tab: b,
         unpublishedCategoriesShown: B,
         cacheDisabled: I
       })
-    }, [F, M, W.length, B, I, D, b]), null != F) ? (0, r.jsx)(_.Z, {
+    }, [F, M, W.length, B, I, H, b]), null != F) ? (0, r.jsx)(_.Z, {
       onRetry: U,
       errorOrigin: _.i.SHOP_PAGE,
       errorMessage: F.message

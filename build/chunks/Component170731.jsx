@@ -1,7 +1,7 @@
 /** Chunk was on 93582 **/
-/** chunk id: 170731, original params: e,t,i (module,exports,require) **/
+/** chunk id: 170731, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -55,20 +55,19 @@ let y = {
 function k(e) {
   let {
     title: t,
-    subtitle: i,
+    subtitle: r,
     themeClass: n
   } = e;
-  return (0, r.jsx)("div", {
+  return (0, i.jsx)("div", {
     className: l()(C.wishlistBannerHeader, n),
-    children: (0, r.jsxs)("div", {
+    children: (0, i.jsxs)("div", {
       className: C.wishlistBannerTitleContainer,
-      children: [(0, r.jsx)(o.Heading, {
-        variant: "display-md",
-        className: C.wishlistBannerTitle,
+      children: [(0, i.jsx)(o.Heading, {
+        variant: "heading-lg/bold",
         children: t
-      }), (0, r.jsx)(o.Text, {
+      }), (0, i.jsx)(o.Text, {
         variant: "text-sm/medium",
-        children: i
+        children: r
       })]
     })
   })
@@ -82,7 +81,7 @@ function L() {
       className: Chunk694781.wishlistBannerGrid,
       children: Array.from({
         length: Chunk602733.zL
-      }, (e, t) => (0, r.jsx)(_.Z, {
+      }, (e, t) => (0, i.jsx)(_.Z, {
         cardSize: b.U.SMALL
       }, "placeholder-".concat(t)))
     })]
@@ -92,18 +91,18 @@ function L() {
 function N(e) {
   let {
     lastItem: t,
-    remainingCount: i,
+    remainingCount: r,
     giftRecipient: n,
     onOpenWishlist: a
   } = e;
-  return null == t ? null : (0, r.jsx)("li", {
+  return null == t ? null : (0, i.jsx)("li", {
     className: C.wishlistBannerListItem,
-    children: (0, r.jsx)(h.BO, {
+    children: (0, i.jsx)(h.BO, {
       item: t.item,
-      remainingCount: i,
+      remainingCount: r,
       onClick: a,
       cardSize: b.U.SMALL,
-      renderItemPreview: e => (0, O.Q)(t.item) ? (0, r.jsx)(p.Z, {
+      renderItemPreview: e => (0, O.Q)(t.item) ? (0, i.jsx)(p.Z, {
         item: t.item,
         profileOwner: n,
         isHighlighted: e,
@@ -116,7 +115,7 @@ function N(e) {
 function B(e) {
   let {
     items: t,
-    hasOverflow: i,
+    hasOverflow: r,
     overflowItem: n,
     overflowCount: a,
     showIcons: l,
@@ -125,16 +124,16 @@ function B(e) {
     onOpenWishlist: c,
     onWishlistItemClick: d
   } = e;
-  return (0, r.jsxs)("ul", {
+  return (0, i.jsxs)("ul", {
     className: C.wishlistBannerGrid,
     children: [t.map(e => {
       let {
         item: t,
-        source: i
+        source: r
       } = e;
-      return (0, r.jsx)("li", {
+      return (0, i.jsx)("li", {
         className: C.wishlistBannerListItem,
-        children: (0, r.jsx)(g.Z, {
+        children: (0, i.jsx)(g.Z, {
           item: t,
           profileOwner: s,
           wishlistId: o,
@@ -142,12 +141,12 @@ function B(e) {
           cardSize: b.U.SMALL,
           showOverlayButton: false,
           giftingOrigin: v.Wt.DM_CHANNEL_WISHLIST,
-          source: i,
+          source: r,
           showIcons: l,
           onWishlistItemClick: d
         })
       }, t.skuId)
-    }), i && (0, r.jsx)(N, {
+    }), r && (0, i.jsx)(N, {
       lastItem: n,
       remainingCount: a,
       giftRecipient: s,
@@ -155,10 +154,10 @@ function B(e) {
     })]
   })
 }
-let T = function(e) {
+let E = function(e) {
   let {
     giftRecipient: t,
-    onWishlistItemClick: i
+    onWishlistItemClick: r
   } = e, {
     analyticsLocations: a
   } = (0, c.ZP)(), h = (0, d.ZP)(null == t ? true : t.id), {
@@ -171,8 +170,8 @@ let T = function(e) {
     wishlistError: P
   } = (0, I.ZL)(t), {
     displayItems: N,
-    hasMoreItems: T,
-    totalWishlistItemCount: E,
+    hasMoreItems: E,
+    totalWishlistItemCount: T,
     wishlistItemCountToBeDisplayed: M
   } = (0, I.UD)({
     wishlist: g,
@@ -201,7 +200,7 @@ let T = function(e) {
   }, [t.id]), U = y[n.useMemo(() => M >= I.zL ? "FULL_WISHLIST" : M > 0 ? "MIXED" : "SHOP_ONLY", [M])], D = w.ZP.getName(t), z = null == h ? true : h.getBannerURL({
     canAnimate: false,
     size: 713
-  }), F = _ || O || v, Y = T ? N.slice(0, I.zL - 1) : N, Q = T ? N[I.zL - 1] : null, q = E - I.zL + 1, [K, X] = n.useState(false), V = n.useCallback(e => {
+  }), F = _ || O || v, Y = E ? N.slice(0, I.zL - 1) : N, Q = E ? N[I.zL - 1] : null, q = T - I.zL + 1, [K, X] = n.useState(false), V = n.useCallback(e => {
     if (e && !F && N.length > 0) {
       let e = N.map(e => {
         let {
@@ -222,34 +221,34 @@ let T = function(e) {
       }), X(true)
     }
   }, [F, N, t.id, a]), J = (0, s.O)(V, true, !F && !K);
-  return null != P ? null : (0, r.jsxs)("div", {
+  return null != P ? null : (0, i.jsxs)("div", {
     ref: J,
     className: l()(C.wishlistBanner, W),
     style: H,
-    children: [null != z && (0, r.jsx)("div", {
+    children: [null != z && (0, i.jsx)("div", {
       className: C.backgroundImage,
       style: {
         backgroundImage: "url(".concat(z, ")")
       }
-    }), (0, r.jsx)(o.f6W, {
+    }), (0, i.jsx)(o.f6W, {
       disableAdaptiveTheme: true,
-      children: e => (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(k, {
+      children: e => (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(k, {
           title: U.title,
           subtitle: U.getSubtitle(D),
           themeClass: e
-        }), (0, r.jsx)("div", {
+        }), (0, i.jsx)("div", {
           className: e,
-          children: F || 0 === N.length ? (0, r.jsx)(L, {}) : (0, r.jsx)(B, {
+          children: F || 0 === N.length ? (0, i.jsx)(L, {}) : (0, i.jsx)(B, {
             items: Y,
-            hasOverflow: T,
+            hasOverflow: E,
             overflowItem: Q,
             overflowCount: q,
             showIcons: U.showIcons,
             giftRecipient: t,
             defaultWishlistId: p,
             onOpenWishlist: G,
-            onWishlistItemClick: i
+            onWishlistItemClick: r
           })
         })]
       })

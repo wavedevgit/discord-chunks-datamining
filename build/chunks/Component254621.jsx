@@ -54,11 +54,13 @@ let p = () => {
     }, [h, exports]), (0, Chunk473749.useEffect)(() => {
       module === Chunk5900._n.READY_FOR_LICENSE && Chunk54381().then(e => {
         e && t(u._n.INSTALLED)
-      }).catch(e => l.Z.captureException(e, {
-        tags: {
-          source: "PRIVATE_BROWSING_PERK_LICENSE_FINISH_SETUP"
-        }
-      }))
+      }).catch(e => {
+        l.Z.captureException(e, {
+          tags: {
+            source: "PRIVATE_BROWSING_PERK_LICENSE_FINISH_SETUP"
+          }
+        }), t(u._n.ERROR)
+      })
     }, [module, exports, Chunk54381]), (0, Chunk473749.useEffect)(() => {
       if (module !== Chunk5900._n.INSTALLING) return;
       let n = setInterval(async () => {

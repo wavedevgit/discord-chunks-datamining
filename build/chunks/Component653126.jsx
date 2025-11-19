@@ -44,8 +44,8 @@ let k = Chunk473749.memo(function(e) {
       onClickSecondaryCTA: R,
       onMouseEnter: Z,
       onMouseLeave: w,
-      onFocus: H,
-      onBlur: D,
+      onFocus: D,
+      onBlur: H,
       primaryCTAText: M,
       secondaryCTAIcon: F,
       productNameClassName: W,
@@ -73,8 +73,8 @@ let k = Chunk473749.memo(function(e) {
         className: a()(U, j.productCardContainer, {
           [j.hovered]: en
         }),
-        onFocus: () => null == H ? true : H(t.skuId),
-        onBlur: () => null == D ? true : D(t.skuId),
+        onFocus: () => null == D ? true : D(t.skuId),
+        onBlur: () => null == H ? true : H(t.skuId),
         onMouseEnter: () => null == Z ? true : Z(t.skuId),
         onMouseLeave: () => null == w ? true : w(t.skuId),
         children: (0, r.jsxs)("div", {
