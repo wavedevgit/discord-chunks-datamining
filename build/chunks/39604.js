@@ -24,7 +24,7 @@ require.d(exports, {
   jv: () => et,
   rO: () => er,
   sS: () => en,
-  yg: () => k,
+  yg: () => j,
   yi: () => F,
   yl: () => H,
   zq: () => ee
@@ -93,12 +93,12 @@ function M(e, t) {
   return n
 }
 
-function j(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function k(e) {
+async function j(e) {
   let {
     allowVoiceRecording: t
   } = e;
@@ -136,12 +136,12 @@ function G(e) {
   } = e;
   a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
-    settings: j(x({}, t && {
+    settings: k(x({}, t && {
       clipsEnabled: true
     }), {
       decoupledClipsEnabled: t
     })
-  }), n && y.default.track(w.rMx.CLIPS_SETTINGS_UPDATED, j(x({}, t && {
+  }), n && y.default.track(w.rMx.CLIPS_SETTINGS_UPDATED, k(x({}, t && {
     clips_enabled: true
   }), {
     decoupled_clips_enabled: t
@@ -234,7 +234,7 @@ function W(e, t) {
       a = null != (n = h.get(i)) ? n : 0;
     h.set(i, a + r)
   }
-  return j(x({}, e), {
+  return k(x({}, e), {
     frames_encoded_nvidia_cuda: null != (r = h.get(s.Su.NVIDIA_CUDA)) ? r : 0,
     frames_encoded_nvidia_direct3d: null != (i = h.get(s.Su.NVIDIA_DIRECT_3D)) ? i : 0,
     frames_encoded_openh264: null != (a = h.get(s.Su.OPENH264)) ? a : 0,
@@ -277,7 +277,7 @@ async function K(e) {
     p = Y(e);
   null != e && a.Z.dispatch({
     type: "CLIPS_SAVE_CLIP_PLACEHOLDER",
-    clip: j(x({}, s), {
+    clip: k(x({}, s), {
       pending: true,
       filepath: u
     })
@@ -294,7 +294,7 @@ async function K(e) {
     } catch (e) {
       D.jF.warn("Failed to generate clip thumbnail:", e)
     }
-    return s.thumbnail = r, s.length = e, D.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(r.length, " bytes thumbnail.")), await d.updateClipMetadata(u, JSON.stringify(s)), j(x({}, s), {
+    return s.thumbnail = r, s.length = e, D.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(r.length, " bytes thumbnail.")), await d.updateClipMetadata(u, JSON.stringify(s)), k(x({}, s), {
       filepath: u
     })
   } catch (r) {
@@ -413,7 +413,7 @@ async function q(e, t) {
   let v = (0, d.GN)("clip_save", .5),
     C = performance.now();
   try {
-    let e = j(x({}, _), {
+    let e = k(x({}, _), {
         filepath: y,
         length: 0,
         thumbnail: ""
@@ -472,7 +472,7 @@ async function et(e) {
   let n = await o.Z.clips.loadClipsDirectory(e),
     r = [];
   for (let e of n) {
-    let t = await (0, N.w)(j(x({}, e.metadata), {
+    let t = await (0, N.w)(k(x({}, e.metadata), {
       filepath: e.filepath
     }));
     null != t && r.push(t)

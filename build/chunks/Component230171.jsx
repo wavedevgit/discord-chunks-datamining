@@ -2,7 +2,7 @@
 /** chunk id: 230171, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => j,
+  O: () => k,
   U: () => Chunk967249.U
 }), require("./539854.js"), require("./784620.js"), require("./973216.js"), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk217648 = require("./217648.js");
 
-function j(e) {
+function k(e) {
   var t;
   let {
     app: n,
@@ -59,7 +59,7 @@ function j(e) {
     staticBannerSrc: N,
     videoBannerSrc: L,
     bannerAspectRatio: M
-  } = (0, D.E)(n), j = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
+  } = (0, D.E)(n), k = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
     analyticsLocations: G
   } = (0, f.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: B,
@@ -84,7 +84,7 @@ function j(e) {
           isStart: null == Z,
           embeddedActivitiesManager: H,
           customId: o,
-          referrerId: j,
+          referrerId: k,
           analyticsLocations: G
         })
       },
@@ -98,13 +98,13 @@ function j(e) {
           botId: v,
           analyticsLocations: G,
           customId: o,
-          referrerId: j
+          referrerId: k
         })
       }
     })) : null != q && e.push(q), e
-  }, [K, W, Z, F, B, n.id, H, o, j, G, I, q, v]), Q = I ? (0, r.jsx)(U, {
+  }, [K, W, Z, F, B, n.id, H, o, k, G, I, q, v]), Q = I ? (0, r.jsx)(U, {
     app: n
-  }) : (0, r.jsx)(k, {
+  }) : (0, r.jsx)(j, {
     app: n
   });
   return (0, r.jsx)(C.W, {
@@ -120,7 +120,7 @@ function j(e) {
     trackingConfig: {
       id: n.id,
       linkType: a,
-      referrerId: j,
+      referrerId: k,
       activityCustomId: o,
       onView: g,
       guildId: null == (t = y.Z.getChannel(m.channel_id)) ? true : t.guild_id,
@@ -130,7 +130,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   var t, n, o;
   let {
     app: c

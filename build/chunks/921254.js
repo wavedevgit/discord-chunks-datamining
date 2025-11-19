@@ -596,10 +596,10 @@ var D = Chunk473749.forwardRef(function(e, t) {
       M = r.useCallback(function(e) {
         A.current.delete(e)
       }, []),
-      j = r.useCallback(function() {
+      k = r.useCallback(function() {
         return A.current.clear()
       }, []),
-      k = r.useCallback(function() {
+      j = r.useCallback(function() {
         return y.current
       }, []);
     r.useImperativeHandle(t, function() {
@@ -607,13 +607,13 @@ var D = Chunk473749.forwardRef(function(e, t) {
         createConfetti: x,
         addConfetti: L,
         deleteConfetti: M,
-        clearConfetti: j,
-        getCanvas: k,
+        clearConfetti: k,
+        getCanvas: j,
         addReadyListener: I,
         removeReadyListener: T,
         isReady: v
       }
-    }, [x, L, M, j, k, I, T, v]);
+    }, [x, L, M, k, j, I, T, v]);
     var U = r.useCallback(function(e, t) {
         var n, r, i = t.clickHandler,
           o = t.mouseHandler;

@@ -13,5 +13,5 @@ let i = {
   1: "user"
 };
 var a = function(e) {
-  return e[e.IsOverride = 1] = "IsOverride", e
+  return e[e.IsOverride = 1] = "IsOverride", e[e.ExposureTrackingEnabled = 2] = "ExposureTrackingEnabled", e[e.DependentExperiment = 4] = "DependentExperiment", e
 }({})

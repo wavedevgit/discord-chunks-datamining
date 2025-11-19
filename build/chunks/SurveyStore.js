@@ -86,10 +86,10 @@ function x() {
 }
 
 function M(e) {
-  return k(e) && j(e)
+  return j(e) && k(e)
 }
 
-function j(e) {
+function k(e) {
   let {
     guild_requirements: t = [],
     guild_size: n = [null, null],
@@ -133,7 +133,7 @@ function j(e) {
   return !!i && !!a
 }
 
-function k(e) {
+function j(e) {
   returntrue
 }
 

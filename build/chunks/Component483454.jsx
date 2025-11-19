@@ -2,7 +2,7 @@
 /** chunk id: 483454, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  MM: () => j,
+  MM: () => k,
   Q5: () => R,
   hn: () => x,
   p7: () => L,
@@ -269,7 +269,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
     })
   },
   M = ["applePay", "googlePay", "link"],
-  j = e => {
+  k = e => {
     let {
       step: t,
       handleStepChange: n,

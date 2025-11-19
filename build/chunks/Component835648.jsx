@@ -2,7 +2,7 @@
 /** chunk id: 835648, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -182,7 +182,7 @@ function M(e) {
   }
 }
 
-function j(e) {
+function k(e) {
   let {
     category: t,
     categoryIndex: n,
@@ -198,7 +198,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     soundboardListRef: t,
     categories: n,
@@ -220,7 +220,7 @@ function k(e) {
           pack_id: null
         }), n()
       };
-    return (0, r.jsx)(j, {
+    return (0, r.jsx)(k, {
       category: e,
       categoryIndex: t,
       onClick: l,

@@ -253,14 +253,14 @@ let ef = e => {
     }, [E]), C = S.w.useExperiment({
       location: "oauth2_authorize"
     }), L = a.bot, M = (0, p.e7)([x.Z], () => x.Z.getDMFromUserId(null == L ? true : L.id)), {
-      appDMChannelMuteConfig: j,
+      appDMChannelMuteConfig: k,
       dmChannelMuted: B
-    } = (0, p.cj)([k.ZP], () => null == M ? {
+    } = (0, p.cj)([j.ZP], () => null == M ? {
       appDMChannelMuteConfig: null,
       dmChannelMuted: false
     } : {
-      appDMChannelMuteConfig: k.ZP.getChannelMuteConfig(null, M),
-      dmChannelMuted: k.ZP.isChannelMuted(null, M)
+      appDMChannelMuteConfig: j.ZP.getChannelMuteConfig(null, M),
+      dmChannelMuted: j.ZP.isChannelMuted(null, M)
     }), [V, H] = i.useState(false), [X, Q] = i.useState(false), eo = () => {
       let e = [];
       for (let n of t) e.push(...(0, D.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(en.intl.string(en.t.Ls2XRq));
@@ -439,8 +439,8 @@ let ef = e => {
         gap: 20,
         children: [null != L ? (0, r.jsx)(g.rsf, {
           label: en.intl.string(en.t.NkwaBs),
-          description: (null == j ? true : j.end_time) != null ? en.intl.format(en.t.j7h4AJ, {
-            endTime: new Date(j.end_time).toLocaleString(en.intl.currentLocale, {
+          description: (null == k ? true : k.end_time) != null ? en.intl.format(en.t.j7h4AJ, {
+            endTime: new Date(k.end_time).toLocaleString(en.intl.currentLocale, {
               month: "numeric",
               day: "numeric",
               hour: "numeric",

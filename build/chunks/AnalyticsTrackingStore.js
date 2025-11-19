@@ -72,8 +72,8 @@ let m = "x-science-test",
   L = Number.MAX_SAFE_INTEGER,
   x = 0,
   M = 0,
-  j = null,
-  k = false,
+  k = null,
+  j = false,
   U = null,
   G = null;
 
@@ -162,7 +162,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           })
         })),
         a = {};
-      return k || (G = (0, o.Z)(), a[m] = G, k = true), c.tn.post({
+      return j || (G = (0, o.Z)(), a[m] = G, j = true), c.tn.post({
         url: t,
         headers: a,
         body: {
@@ -205,32 +205,32 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     }
 
     function en() {
-      if (null == j) returnfalse;
-      switch (j.type) {
+      if (null == k) returnfalse;
+      switch (k.type) {
         case "timeout":
-          clearTimeout(j.id);
+          clearTimeout(k.id);
           break;
         case "interval":
-          clearInterval(j.id);
+          clearInterval(k.id);
           break;
         default:
-          j.type
+          k.type
       }
-      return j = null, true
+      return k = null, true
     }
 
     function er() {
-      if (null != j) return;
+      if (null != k) return;
       let e = () => {
         let t = .1 * v;
-        j = {
+        k = {
           type: "timeout",
           id: setTimeout(() => {
             et(), e()
           }, Math.max(v + (Math.floor(Math.random() * t * 2) - t), I))
         }
       };
-      j = {
+      k = {
         type: "timeout",
         id: setTimeout(() => {
           et(), e()

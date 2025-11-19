@@ -69,13 +69,13 @@ function M(e, t) {
   return n
 }
 
-function j(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i = U(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -101,7 +101,7 @@ let G = new Chunk710845.Z("ConnectionStore"),
     };
     let r = (0, b.q_)(t),
       i = v.Z.getChannel(t.id),
-      a = null == i ? true : i.merge(j(x({}, r), {
+      a = null == i ? true : i.merge(k(x({}, r), {
         recipients: i.recipients,
         bitrate: null != (n = r.bitrate) ? n : i.bitrate
       }));
@@ -594,7 +594,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
 }), W(["THREAD_CREATE", "THREAD_UPDATE", "THREAD_DELETE"], e => v.o.loadGuildIds([e.guild_id]), (e, t) => {
   let {
     newly_created: n
-  } = e, r = k(e, ["newly_created"]);
+  } = e, r = j(e, ["newly_created"]);
   q({
     type: t,
     isNewlyCreated: n,
@@ -1071,7 +1071,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     type: "MESSAGE_REACTION_ADD_MANY",
     channelId: e.channel_id,
     messageId: e.message_id,
-    reactions: e.votes.map(e => j(x({}, e), {
+    reactions: e.votes.map(e => k(x({}, e), {
       emoji: {
         id: e.answer_id,
         name: ""

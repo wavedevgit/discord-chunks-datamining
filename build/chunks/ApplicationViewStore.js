@@ -44,8 +44,8 @@ function L(e, t, n) {
 }
 let x = 5,
   M = c()().subtract(1, "week"),
-  j = [],
-  k = "",
+  k = [],
+  j = "",
   U = false;
 
 function G(e, t) {
@@ -89,7 +89,7 @@ function z(e) {
   let {
     query: t
   } = e;
-  k = t
+  j = t
 }
 
 function q(e, t, n, r, i) {
@@ -157,32 +157,32 @@ function Q() {
     }),
     i = Object.values(Chunk283595.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, true)).filter(Chunk823379.lm),
     a = [...r.map(r => X(r, n, t, e)).filter(Chunk823379.lm), ...Chunk658722].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
-  return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(a, j) && (j = a, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(V(j).map(e => e.application).slice(0, x)), true)
+  return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(a, k) && (k = a, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(V(k).map(e => e.application).slice(0, x)), true)
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.syncWith([Chunk812206.Z, Chunk77498.Z, Chunk592745.Z, Chunk594190.ZP, Chunk417363.Z, Chunk941128.Z, Chunk283595.Z, Chunk230307.Z, Chunk246946.Z, Chunk757266.Z], Q, 200), this.syncWith([Chunk799777.Z, Chunk706454.default], () => true)
   }
   get applicationFilterQuery() {
-    return k
-  }
-  get applicationViewItems() {
     return j
   }
+  get applicationViewItems() {
+    return k
+  }
   get launchableApplicationViewItems() {
-    return V(j)
+    return V(k)
   }
   get libraryApplicationViewItems() {
-    return F(j)
+    return F(k)
   }
   get filteredLibraryApplicationViewItems() {
-    return H(this.libraryApplicationViewItems, k)
+    return H(this.libraryApplicationViewItems, j)
   }
   get sortedFilteredLibraryApplicationViewItems() {
     return Y(this.filteredLibraryApplicationViewItems, Chunk799777.Z.sortKey, Chunk799777.Z.sortDirection, Chunk706454.default.locale)
   }
   get hiddenLibraryApplicationViewItems() {
-    return W(j)
+    return W(k)
   }
   get hasFetchedApplications() {
     return U

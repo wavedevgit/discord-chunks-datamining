@@ -98,8 +98,8 @@ let A = Chunk473749.forwardRef((e, t) => {
     limitResponsiveWidth: L = true,
     accessory: x,
     zoomable: M = true,
-    original: j,
-    children: k = e => {
+    original: k,
+    children: j = e => {
       let {
         src: t,
         size: n,
@@ -133,7 +133,7 @@ let A = Chunk473749.forwardRef((e, t) => {
       minHeight: D
     }),
     z = 0 !== K.width ? K.width / K.height : 1;
-  "" !== f && c !== p.zo9.ERROR ? n = k({
+  "" !== f && c !== p.zo9.ERROR ? n = j({
     src: f,
     size: K,
     alt: b,
@@ -164,12 +164,12 @@ let A = Chunk473749.forwardRef((e, t) => {
       }, a),
       style: N(K, L, F, w)
     }, H), {
-      children: [null != j && (0, r.jsx)("a", {
+      children: [null != k && (0, r.jsx)("a", {
         tabIndex: false,
         onClick: G,
         "aria-hidden": true,
         className: g.originalLink,
-        href: j,
+        href: k,
         ref: Y,
         "data-role": "img",
         "data-safe-src": null != Z ? Z : f

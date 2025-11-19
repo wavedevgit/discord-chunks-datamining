@@ -34,8 +34,8 @@ var Chunk98405 = require("./98405.js"),
   Chunk335024 = require("./335024.js"),
   Chunk199838 = require("./199838.js"),
   Chunk176682 = require("./176682.js"),
-  j = Chunk199838.get,
-  k = Chunk199838.set,
+  k = Chunk199838.get,
+  j = Chunk199838.set,
   U = Chunk199838.enforce,
   G = Chunk117895.f,
   B = Chunk840991.f,
@@ -54,7 +54,7 @@ var Chunk98405 = require("./98405.js"),
     P(e, t, {
       configurable: true,
       get: function() {
-        return j(this)[t]
+        return k(this)[t]
       }
     })
   },
@@ -88,11 +88,11 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
     b = E && E.prototype,
     y = {},
     v = function(e, t) {
-      var n = j(e);
+      var n = k(e);
       return n.view[c](t * o + n.byteOffset, true)
     },
     T = function(e, t, r) {
-      var i = j(e);
+      var i = k(e);
       i.view[d](t * o + i.byteOffset, n ? g(r) : r, true)
     },
     P = function(e, t) {
@@ -127,7 +127,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
       } else if (q(t)) return L(E, t);
     else return a(C, E, t);
     else i = new F(s = (l = h(t)) * o);
-    for (k(e, {
+    for (j(e, {
         buffer: i,
         byteOffset: d,
         byteLength: s,

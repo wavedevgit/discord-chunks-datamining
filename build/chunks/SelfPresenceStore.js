@@ -45,7 +45,7 @@ let T = false,
   x = [],
   M = [];
 
-function j(e) {
+function k(e) {
   if (0 === e.length) return e;
   let t = [],
     n = [];
@@ -53,13 +53,13 @@ function j(e) {
   return 0 === n.length || 1 === n.length ? e : [...t, [...n].sort(y.f)[0]].sort(y.f)
 }
 
-function k(e) {
+function j(e) {
   return (0, h.OT)(e, E.Z)
 }
 
 function U(e) {
   let t = m.Z.getGameByName(e);
-  return null != t ? k(t.id) : f.G6.getSetting()
+  return null != t ? j(t.id) : f.G6.getSetting()
 }
 
 function G(e) {
@@ -68,14 +68,14 @@ function G(e) {
   switch (e.type) {
     case v.IIU.LISTENING:
       if ((0, u.Z)(e)) return d.Z.shouldShowActivity();
-      if (null != e.application_id) return k(e.application_id);
+      if (null != e.application_id) return j(e.application_id);
       returnfalse;
     case v.IIU.PLAYING:
-      return null != e.application_id ? k(e.application_id) : U(e.name);
+      return null != e.application_id ? j(e.application_id) : U(e.name);
     case v.IIU.STREAMING:
     case v.IIU.WATCHING:
     default:
-      return null == e.application_id || k(e.application_id)
+      return null == e.application_id || j(e.application_id)
   }
 }
 
@@ -94,11 +94,11 @@ function Z() {
   S === Chunk981631.Skl.ONLINE && C > 0 && (S = Chunk981631.Skl.IDLE);
   let t = false,
     n = D || S === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
-  a()(N, require) || (N = require, R = j(require), t = true);
+  a()(N, require) || (N = require, R = k(require), t = true);
   let r = Chunk797258.Z.getRemoteActivities();
   w !== r && (w = r, t = true);
   let i = Chunk797258.Z.getHiddenActivities();
-  L !== Chunk348327 && (L = Chunk348327), exports && (M = j(x = s()([...N, ...w.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
+  L !== Chunk348327 && (L = Chunk348327), exports && (M = k(x = s()([...N, ...w.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
 }
 
 function F(e) {

@@ -2,7 +2,7 @@
 /** chunk id: 299021, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => k
 }), require("./388685.js"), require("./467055.js");
 var r, Chunk108131 = require("./108131.js"),
   a = require.n(Chunk108131),
@@ -105,28 +105,30 @@ let O = [Chunk341691.Cm.User],
   P = 2,
   D = 6048e5,
   w = {},
-  L = {};
+  L = 2,
+  x = {};
 
-function x(e) {
-  let t = L[e];
-  return null == t && (t = a().v3(e), L[e] = t), t
+function M(e) {
+  let t = x[e];
+  return null == t && (t = a().v3(e), x[e] = t), t
 }
-class M extends(r = Chunk442837.ZP.PersistedStore) {
+class k extends(r = Chunk442837.ZP.PersistedStore) {
   loadStoredState(e, t) {
-    for (let n in null != e && 1 === e.version && (T = e.clientOverrides, v = e.evaluatedExperiments), S = {}, t) {
-      let e = x(n),
+    for (let n in null != e && e.version === L && (T = e.clientOverrides, v = e.evaluatedExperiments), S = {}, t) {
+      let e = M(n),
         r = t[n];
       S[n] = {
         hashedName: e,
         variantId: r,
-        isOverride: true
+        isOverride: true,
+        exposureTrackingEnabled: false
       }
     }
     w = this.loadTrackedExposures()
   }
   getState() {
     return {
-      version: 1,
+      version: L,
       evaluatedExperiments: v,
       clientOverrides: T
     }
@@ -152,7 +154,8 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
           variantId: r,
           trackedVariantId: l,
           isOverride: (o & c.V8.IsOverride) != 0,
-          revision: s
+          revision: s,
+          exposureTrackingEnabled: (o & c.V8.ExposureTrackingEnabled) != 0
         }
       }
     }
@@ -161,9 +164,10 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
   createOverride(e, t) {
     T = p(f({}, T), {
       [e]: {
-        hashedName: x(e),
+        hashedName: M(e),
         variantId: t,
-        isOverride: true
+        isOverride: true,
+        exposureTrackingEnabled: false
       }
     }), this.trackExposureSuppression(e, "client_override")
   }
@@ -200,7 +204,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     return null != i ? i : this.getServerAssignment(e, t, n)
   }
   getServerAssignment(e, t, n) {
-    let r = x(n),
+    let r = M(n),
       i = v[e][t];
     if (null != i) return i.assignments[r]
   }
@@ -213,10 +217,10 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     let i = null != (r = T[n]) ? r : S[n];
     if (null != i) return [true, i];
     let a = v[e][t];
-    return null == a ? [true, true] : [a.evaluationId, a.assignments[x(n)]]
+    return null == a ? [true, true] : [a.evaluationId, a.assignments[M(n)]]
   }
   trackExperimentExposure(e, t, n, r, i, a) {
-    let o = x("".concat(t, "|").concat(i, "|").concat(a, "|").concat(n));
+    let o = M("".concat(t, "|").concat(i, "|").concat(a, "|").concat(n));
     this.shouldTrackExposure(o) && "user" === r && (this.track(u.j_.EXPERIMENT_USER_EVALUATION_EXPOSED, {
       evaluation_id: e,
       experiment: t,
@@ -229,7 +233,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
   }
   trackCommonTriggerPointExposures(e) {
     for (let t of this.evaluationIds("user")) {
-      let n = x("".concat(t, "|").concat(e));
+      let n = M("".concat(t, "|").concat(e));
       this.shouldTrackExposure(n) && (this.track(u.j_.EXPERIMENT_USER_EVALUATION_EXPOSED, {
         evaluation_id: t,
         exposure_location: e,
@@ -296,7 +300,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     w = {}
   }
   getHash(e) {
-    return x(e)
+    return M(e)
   }
   handleFetchStart(e) {
     C.add(e)
@@ -317,4 +321,4 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     super(...e), d(this, "track", () => Promise.resolve()), d(this, "surface", "unset")
   }
 }
-d(M, "displayName", "ApexExperimentStore"), d(M, "persistKey", "ApexExperimentStore")
+d(k, "displayName", "ApexExperimentStore"), d(k, "persistKey", "ApexExperimentStore")

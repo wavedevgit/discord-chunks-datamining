@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 });
 var i, Chunk569048 = require("./569048.js"),
   o = require.n(Chunk569048),
@@ -103,7 +103,7 @@ function x(e) {
 function M(e) {
   delete m[e.channelId]
 }
-class j extends(i = Chunk442837.ZP.Store) {
+class k extends(i = Chunk442837.ZP.Store) {
   getInvite(e) {
     var t, n;
     let {
@@ -123,8 +123,8 @@ class j extends(i = Chunk442837.ZP.Store) {
     return null != r && !O && !v
   }
 }
-h(j, "displayName", "InstantInviteStore");
-let k = new j(Chunk570140.Z, {
+h(k, "displayName", "InstantInviteStore");
+let j = new k(Chunk570140.Z, {
   CONNECTION_OPEN: I,
   CHANNEL_DELETE: T,
   FRIEND_INVITE_CREATE_SUCCESS: N,
