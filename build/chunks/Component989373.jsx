@@ -1,7 +1,7 @@
 /** Chunk was on 13368 **/
 /** chunk id: 989373, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => O,
+  default: () => L,
   waitForCSSLoad: () => x
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
@@ -83,21 +83,21 @@ async function E(e, t) {
   }
 }
 
-function A() {
+function k() {
   Chunk13245.Z.setFocusedPID(Chunk145597.DEV_PID, null)
 }
 
-function L() {
+function A() {
   Chunk13245.Z.setFocusedPID(null, null)
 }
-let O = Chunk473749.memo(function(e) {
+let L = Chunk473749.memo(function(e) {
   let {
     withTitleBar: t,
     windowKey: n
   } = e, d = (0, r.e7)([u.Z], () => u.Z.getWindow(n));
   (0, c.ZP)(() => {
-    if (null != d) return W && (d.document.hasFocus() && i.Z.setFocusedPID(g.DEV_PID, null), d.addEventListener("focus", A), d.addEventListener("blur", L)), () => {
-      W && (d.removeEventListener("focus", A), d.removeEventListener("blur", L))
+    if (null != d) return W && (d.document.hasFocus() && i.Z.setFocusedPID(g.DEV_PID, null), d.addEventListener("focus", k), d.addEventListener("blur", A)), () => {
+      W && (d.removeEventListener("focus", k), d.removeEventListener("blur", A))
     }
   });
   let p = function(e, t) {
@@ -138,12 +138,12 @@ let O = Chunk473749.memo(function(e) {
             e.setTimeout(() => t(), 100)
           }), S.current || (p(true), C())
         }, [C]),
-        A = o.useRef(false);
+        k = o.useRef(false);
       o.useEffect(() => {
         if (!m.current && ((0, P.Z)("hasUseEffectFired", true), (0, P.Z)("trackedPidFocused", d), n)) {
           if (null == a) return void(0, P.Z)("errorMessage", "No targetOverlayWindow");
           if (!d) {
-            A.current || (i.Z.updateOverlayState(w.Z.getTargetPID(), v.mM.WAITING_FOR_PID_FOCUS, "AppOverlay - not focused"), A.current = true);
+            k.current || (i.Z.updateOverlayState(w.Z.getTargetPID(), v.mM.WAITING_FOR_PID_FOCUS, "AppOverlay - not focused"), k.current = true);
             return
           }
           m.current = true, (0, P.Z)("reactInitializationStarted", true), W(a, e)
@@ -151,29 +151,29 @@ let O = Chunk473749.memo(function(e) {
       }, [W, d, e, a, n]), (0, c.zq)(() => {
         clearInterval(T.current), S.current = true
       });
-      let L = (0, r.e7)([h.Z], () => h.Z.windowSize(null != a ? (0, I.ZY)(a) : true)),
-        O = (0, r.e7)([w.Z], () => w.Z.getFocusedWindowHandle());
+      let A = (0, r.e7)([h.Z], () => h.Z.windowSize(null != a ? (0, I.ZY)(a) : true)),
+        L = (0, r.e7)([w.Z], () => w.Z.getFocusedWindowHandle());
       return o.useEffect(() => {
         let e, t;
-        if (null != a && _ && a.innerHeight === L.height && a.innerWidth === L.width) return e = a.requestAnimationFrame(() => {
+        if (null != a && _ && a.innerHeight === A.height && a.innerWidth === A.width) return e = a.requestAnimationFrame(() => {
           e = a.requestAnimationFrame(() => {
-            a.clearTimeout(t), i.Z.overlayUIFocusedPid(null != l ? l : g.UNSET_PID, O)
+            a.clearTimeout(t), i.Z.overlayUIFocusedPid(null != l ? l : g.UNSET_PID, L)
           })
         }), t = a.setTimeout(() => {
-          a.cancelAnimationFrame(e), i.Z.overlayUIFocusedPid(null != l ? l : g.UNSET_PID, O)
+          a.cancelAnimationFrame(e), i.Z.overlayUIFocusedPid(null != l ? l : g.UNSET_PID, L)
         }, 500), () => {
           a.cancelAnimationFrame(e), a.clearTimeout(t)
         }
-      }, [_, a, l, O, L]), _
+      }, [_, a, l, L, A]), _
     }(n, T.$S),
     m = (0, r.e7)([w.Z], () => w.Z.getFocusedPID()),
-    O = (0, r.e7)([S.Z], () => S.Z.isInputLocked(m), [m]);
+    L = (0, r.e7)([S.Z], () => S.Z.isInputLocked(m), [m]);
   return p ? (0, a.jsxs)(_.Z, {
     themeOverride: B.BRd.MIDNIGHT,
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",
-    hideModals: O,
+    hideModals: L,
     children: [(0, a.jsx)(C.Z, {}), (0, a.jsx)(l.Co, {})]
   }) : null
 })

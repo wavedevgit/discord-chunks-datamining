@@ -3,9 +3,9 @@
 require.d(exports, {
   FI: () => L,
   LL: () => k,
-  N_: () => U,
+  N_: () => M,
   Xi: () => F,
-  eF: () => M
+  eF: () => U
 }), require("./997841.js"), require("./953529.js"), require("./415506.js"), require("./388685.js");
 var Chunk317381 = require("./317381.js"),
   Chunk599149 = require("./599149.js"),
@@ -49,7 +49,7 @@ function k(e, t, n) {
   return !(null != i && s.Z.isLurking(i) || !l.ignoreSameUser && t.id === e.id || T.Z.isBlockedOrIgnored(t.id) || !l.ignoreStatus && S.Z.getStatus() === R.Skl.DND || E.QZ.getSetting() || !l.ignoreNoMessagesSetting && b.ZP.allowNoMessages(n))
 }
 
-function M(e, t) {
+function U(e, t) {
   var n, i;
   let r = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     a = arguments.length > 3 && true !== arguments[3] && arguments[3];
@@ -94,7 +94,7 @@ function M(e, t) {
   }
 }
 
-function U(e, t) {
+function M(e, t) {
   var n;
   if (m.Z.getChannelId(I.Z.getGuildId()) !== t) returnfalse;
   let l = y.Z.getChannel(t);

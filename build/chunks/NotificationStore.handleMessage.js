@@ -206,7 +206,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       channel_id: c.id,
       channel_type: c.type,
       guild_id: c.guild_id,
-      badge: (0, M.Ex)(Z, g)
+      badge: (0, U.Ex)(Z, g)
     }, {
       omitViewTracking: P,
       tag: a.id,
@@ -290,7 +290,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       u = j.Z.getChannel(i),
       c = x.Z.getStageInstanceByChannel(i);
     null != s && null != u && null != c && Y.Z.showNotification((0, A.EB)(s, 128), u.name, J.intl.formatToPlainString(J.t.sqnsSP, {
-      channelName: (0, p.F6)(u, F.default, U.Z),
+      channelName: (0, p.F6)(u, F.default, M.Z),
       channelTopic: null == c ? true : c.topic
     }), {
       notif_type: "Stage Speak Invite"

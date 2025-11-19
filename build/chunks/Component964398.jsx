@@ -114,9 +114,9 @@ let p = Chunk473749.memo(function(e) {
     v.current = t, y(g * e + t)
   }, [y]), k = i.useCallback(() => {
     v.current = null, y(null)
-  }, [y]), M = i.useCallback(e => {
+  }, [y]), U = i.useCallback(e => {
     k(), b.current = e
-  }, [k]), U = i.useCallback((e, t, n) => {
+  }, [k]), M = i.useCallback((e, t, n) => {
     if (b.current) return void A({
       x: 0,
       y: 0
@@ -153,7 +153,7 @@ let p = Chunk473749.memo(function(e) {
         x: e.clientX,
         y: e.clientY
       };
-    if (U(r, i, Math.max(t, n)), b.current) {
+    if (M(r, i, Math.max(t, n)), b.current) {
       null != O && k();
       return
     }
@@ -165,7 +165,7 @@ let p = Chunk473749.memo(function(e) {
       if ((0, s.Vr)(i, a, n)) return void w(x, e)
     }
     k()
-  }, 16), [O, U, k, w, x, n, t]), V = i.useCallback(e => {
+  }, 16), [O, M, k, w, x, n, t]), V = i.useCallback(e => {
     if (!_) return;
     let t = x + (e.deltaY > 0 ? 1 : false);
     t >= 0 && t < R.length && (null != v.current && (R[t].length > v.current ? w(t, v.current) : k()), P(t))
@@ -241,8 +241,8 @@ let p = Chunk473749.memo(function(e) {
             strokeWidth: "40.32"
           }), N && (0, l.jsx)("circle", {
             className: c.chatWheelDeadZone,
-            onMouseEnter: () => M(true),
-            onMouseLeave: () => M(false),
+            onMouseEnter: () => U(true),
+            onMouseLeave: () => U(false),
             cx: 144,
             cy: 144,
             r: 28.8
@@ -254,8 +254,8 @@ let p = Chunk473749.memo(function(e) {
           })]
         }), N && (0, l.jsx)("circle", {
           className: c.chatWheelDeadZone,
-          onMouseEnter: () => M(true),
-          onMouseLeave: () => M(false),
+          onMouseEnter: () => U(true),
+          onMouseLeave: () => U(false),
           cx: 144,
           cy: 144,
           r: 28.8,
