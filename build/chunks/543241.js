@@ -7,14 +7,14 @@ require.d(exports, {
   DV: () => B,
   Gn: () => M,
   IP: () => W,
-  J1: () => j,
+  J1: () => k,
   MZ: () => Y,
   NJ: () => V,
   Nf: () => U,
   PC: () => D,
   Y1: () => G,
   ZF: () => R,
-  fe: () => k,
+  fe: () => j,
   jA: () => w,
   kI: () => N,
   nV: () => K,
@@ -255,7 +255,7 @@ let N = function(e, t) {
       emoji_position: r
     })
   },
-  k = e => {
+  j = e => {
     var t;
     let n, {
       emoji: r,
@@ -293,7 +293,7 @@ let N = function(e, t) {
       is_burst: d
     })
   },
-  j = e => {
+  k = e => {
     var t;
     let {
       emoji: n,

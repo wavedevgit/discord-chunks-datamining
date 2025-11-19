@@ -361,8 +361,8 @@ function eA(e) {
     partyStatusElement: w,
     presenceActivity: L
   } = e, x = (0, I.A)(T), M = (0, m.ye)(T), {
-    iconSrc: k,
-    name: j
+    iconSrc: j,
+    name: k
   } = eE(P, T), U = null != (o = (0, el.v)({
     messageId: P.id,
     presenceActivity: L,
@@ -466,7 +466,7 @@ function eA(e) {
   }, {
     disableTrack: !eC
   });
-  let eN = (0, z.dQ)(j, null == (t = P.activity) ? true : t.type, Z),
+  let eN = (0, z.dQ)(k, null == (t = P.activity) ? true : t.type, Z),
     eR = (0, A.N)(T.id).some(e => (0, v.ig)(e) === l.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.YqE, {
         size: "xxs",
@@ -484,15 +484,15 @@ function eA(e) {
         className: eh.description,
         color: "none",
         lineClamp: 3,
-        children: (0, z.wR)(P, j, S, C, e)
+        children: (0, z.wR)(P, k, S, C, e)
       });
     return eA.length > 0 ? (0, r.jsx)(g.W, {
       header: eN,
-      title: j,
+      title: k,
       staticBannerSrc: eA.length > 0 ? U : true,
       onClickBanner: ey,
       bannerAspectRatio: B,
-      iconSrc: null != k ? k : true,
+      iconSrc: null != j ? j : true,
       info: t,
       actions: eA,
       onClickContent: ey,
@@ -535,7 +535,7 @@ function eA(e) {
       className: eh.tagline,
       color: "none",
       lineClamp: 2,
-      children: [F ? (0, z.$v)(P, j, S, C, Z) : ew, F ? null : eR]
+      children: [F ? (0, z.$v)(P, k, S, C, Z) : ew, F ? null : eR]
     }),
     ex = (0, r.jsxs)("div", {
       className: eh.info,
@@ -543,11 +543,11 @@ function eA(e) {
     });
   return (0, r.jsx)(g.W, {
     header: eN,
-    title: j,
+    title: k,
     staticBannerSrc: U,
     onClickBanner: ey,
     bannerAspectRatio: B,
-    iconSrc: null != k ? k : true,
+    iconSrc: null != j ? j : true,
     info: ex,
     actions: eA,
     onClickContent: ey,
@@ -573,7 +573,7 @@ function eC(e) {
     message: l,
     hideParty: c,
     onView: d
-  } = e, f = (0, b.O)(o), _ = (0, u.e7)([k.default], () => k.default.getId()), p = (0, u.e7)([B.Z], () => {
+  } = e, f = (0, b.O)(o), _ = (0, u.e7)([j.default], () => j.default.getId()), p = (0, u.e7)([B.Z], () => {
     if (null == l.application) return B.Z.findActivity(l.author.id, e => e.type === ed.IIU.LISTENING);
     {
       let e = l.author.id;
@@ -582,9 +582,9 @@ function eC(e) {
   }, [l, s, _]), h = (0, u.e7)([U.Z, Z.Z], () => {
     var e;
     return null != (e = U.Z.getApplicationActivity(f.id)) ? e : Z.Z.getApplicationActivity(f.id, true)
-  }, [f.id]), m = (0, u.Wu)([j.Z], () => {
+  }, [f.id]), m = (0, u.Wu)([k.Z], () => {
     var e;
-    return null == p || null == p.party ? [] : Array.from(null != (e = j.Z.getParty(p.party.id)) ? e : [])
+    return null == p || null == p.party ? [] : Array.from(null != (e = k.Z.getParty(p.party.id)) ? e : [])
   }, [p]), {
     partySize: g,
     maxPartySize: E

@@ -38,7 +38,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk517793 = require("./517793.js");
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -97,7 +97,7 @@ function Z(e) {
     className: a,
     badgeClassName: p,
     displayProfile: y,
-    onClose: k,
+    onClose: j,
     shouldOpenBadgeTooltip: U,
     shouldGlowTenureBadge: Z
   } = e, F = i.useRef(null), {
@@ -119,7 +119,7 @@ function Z(e) {
         I = t => {
           if (Y({
               action: "PRESS_BADGE"
-            }), (0, A.NE)(j({
+            }), (0, A.NE)(k({
               badge: e.id,
               analyticsLocations: V
             }, H)), i) return void(0, d.mK)({
@@ -136,7 +136,7 @@ function Z(e) {
               O ? (0, E.uL)(P.Z5c.NITRO_HOME) : (0, h.k)({
                 analyticsLocations: V,
                 displayProfile: y
-              }), null == k || k();
+              }), null == j || j();
               return
             }
             if (O) {
@@ -144,24 +144,24 @@ function Z(e) {
                 analyticsLocations: V
               }) : null;
               if (null == n) return;
-              return null == k || k(), n(t)
+              return null == j || j(), n(t)
             }
             return (0, h.k)({
               analyticsLocations: V,
               displayProfile: y
-            }), void(null == k || k())
+            }), void(null == j || j())
           }
           let n = null != e.link ? (0, l.default)(e.link, {
             analyticsLocations: V
           }) : null;
-          if (null != n) return null == k || k(), n(t)
+          if (null != n) return null == j || j(), n(t)
         },
         S = () => {
-          e.id === C.i && v.default.track(P.rMx.QUEST_CONTENT_VIEWED, G(j({}, (0, m.mH)(g.jn.QUEST_BADGE)), {
+          e.id === C.i && v.default.track(P.rMx.QUEST_CONTENT_VIEWED, G(k({}, (0, m.mH)(g.jn.QUEST_BADGE)), {
             is_targeted: false
           })), Y({
             action: "HOVER_BADGE"
-          }), (0, A.Qf)(j({
+          }), (0, A.Qf)(k({
             badge: e.id,
             analyticsLocations: V
           }, H))
@@ -183,7 +183,7 @@ function Z(e) {
           }
         };
       if (w) {
-        let n = (0, r.jsx)(s.Anchor, G(j({}, z), {
+        let n = (0, r.jsx)(s.Anchor, G(k({}, z), {
           ref: F,
           children: x
         }));
@@ -195,7 +195,7 @@ function Z(e) {
         }, "".concat(e.id, "-").concat(t))
       }
       if (N) {
-        let n = (0, r.jsx)(s.Anchor, G(j({}, z), {
+        let n = (0, r.jsx)(s.Anchor, G(k({}, z), {
           ref: F,
           children: x
         }));
@@ -213,7 +213,7 @@ function Z(e) {
           children: n
         }, "".concat(e.id, "-").concat(t))
       }
-      let Q = (0, r.jsx)(s.Anchor, G(j({}, z), {
+      let Q = (0, r.jsx)(s.Anchor, G(k({}, z), {
           children: x
         })),
         J = B({

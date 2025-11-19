@@ -348,7 +348,7 @@ let M = {
   "\uD83D\uDD25": "M3 14a9 9 0 1 0 18 0c0-2.63-.61-5.22-1.79-7.58L18.2 4.38a.7.7 0 0 0-1.3.18l-.78 3.9a.66.66 0 0 1-1.27.11L12.22 1.6a.9.9 0 0 0-1.48-.33l-4.2 4.2A12.07 12.07 0 0 0 3 14Zm9.26-.84a.57.57 0 0 0-1-.23L9.6 15a3.08 3.08 0 1 0 5.12.48c-.14-.26-.5-.28-.71-.06L13 16.5l-.74-3.34Z"
 };
 
-function k(e, t, n, i, a) {
+function j(e, t, n, i, a) {
   let o = M[i];
   if (null != o) {
     let i = n / 20;
@@ -376,7 +376,7 @@ function k(e, t, n, i, a) {
   })
 }
 
-function j(e, t, n, i) {
+function k(e, t, n, i) {
   let {
     status: a,
     isMobile: o,
@@ -399,7 +399,7 @@ function j(e, t, n, i) {
       rx: u.avatarCutoutRadius,
       ry: u.avatarCutoutRadius,
       fill: "black"
-    }), null != i && k(l, c, t.status, i, t)]
+    }), null != i && j(l, c, t.status, i, t)]
   })
 }
 
@@ -609,7 +609,7 @@ function V(e) {
     CutoutIcon: P,
     avatarTooltipAsset: L,
     avatarTooltipText: M,
-    avatarTooltipTitle: k
+    avatarTooltipTitle: j
   } = e, B = n !== h.Skl.UNKNOWN ? n : null, V = (0, g.UC)(a), H = null != B ? Math.ceil((V.status * g.D6 - V.status) / 2) : 0, Y = V.size + H, W = (0, u.vj)(B, s), K = i.useId();
   return (0, r.jsx)(Z, I(O({}, e), {
     ariaLabel: C,
@@ -624,7 +624,7 @@ function V(e) {
       viewBox: "0 0 ".concat(Y, " ").concat(Y),
       className: o()(b.mask, b.svg),
       "aria-hidden": true,
-      children: [null != L && j(K, V, {
+      children: [null != L && k(K, V, {
         status: B,
         isMobile: l,
         isTyping: f
@@ -660,8 +660,8 @@ function V(e) {
             y: V.size - V.status / 1.333 - V.offset
           }) : null]
         })
-      }) : null, null != P && U(V, P), null != k && G(V, l, f, {
-        avatarTooltipTitle: k,
+      }) : null, null != P && U(V, P), null != j && G(V, l, f, {
+        avatarTooltipTitle: j,
         avatarTooltipText: M
       }, L)]
     })
@@ -703,7 +703,7 @@ function W(e) {
     statusBackdropColor: w,
     "aria-hidden": L = false,
     "aria-label": M,
-    imageClassName: j,
+    imageClassName: k,
     pulseStatusIcon: V,
     CutoutIcon: W,
     avatarTooltipAsset: K,
@@ -779,7 +779,7 @@ function W(e) {
           height: ea,
           rx: eo,
           ry: eo
-        }), null != K && k(eu.size - eu.status - eu.offset, eu.offset, eu.status, K, eu)]
+        }), null != K && j(eu.size - eu.status - eu.offset, eu.offset, eu.status, K, eu)]
       }), (0, r.jsx)("foreignObject", {
         className: b.__invalid_foreignObject,
         x: 0,
@@ -791,7 +791,7 @@ function W(e) {
           src: v,
           isSpeaking: m,
           isLatched: E,
-          className: j
+          className: k
         })
       }), null != w && x(w, f, eu, S), (0, r.jsx)(d.aM, {
         "data-migration-pending": true,

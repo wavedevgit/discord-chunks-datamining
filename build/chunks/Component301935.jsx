@@ -69,12 +69,12 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = "https://support.discord.com/hc/en-us";
+let k = "https://support.discord.com/hc/en-us";
 var U = function(e) {
   return e[e.LOADING = 0] = "LOADING", e[e.DONE = 1] = "DONE", e[e.ERROR = 2] = "ERROR", e
 }({});
@@ -93,8 +93,8 @@ function G(e) {
     plan: L,
     storeListing: x,
     isGuildSubscription: M,
-    subscriptionForGuild: k,
-    sku: j,
+    subscriptionForGuild: j,
+    sku: k,
     isCancelled: U,
     renewalPlan: G
   } = (0, s.cj)([v.Z, I.Z, T.Z, O.Z], () => {
@@ -122,14 +122,14 @@ function G(e) {
     }
   }, [y, C, S, p]), {
     data: K
-  } = (0, m.IX)(R), z = i.useMemo(() => null != K ? (0, _.y)(K, 100) : null, [K]), q = null != (n = null == j ? true : j.deleted) && n, X = null != j && (0, A.OL)(j), Q = p.status === P.O0b.PAST_DUE, {
+  } = (0, m.IX)(R), z = i.useMemo(() => null != K ? (0, _.y)(K, 100) : null, [K]), q = null != (n = null == k ? true : k.deleted) && n, X = null != k && (0, A.OL)(k), Q = p.status === P.O0b.PAST_DUE, {
     analyticsLocations: J
   } = (0, f.ZP)(), [$, ee] = (0, E.ED)({
     subscriptionId: p.id,
     renewal: true,
     analyticsLocations: J,
     analyticsLocation: d.Z.APP_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE
-  }), et = (null == ee ? true : ee.code) === 100062 && null != y && null == k, en = (0, N.p)(p.currentPeriodEnd), er = 0 === b;
+  }), et = (null == ee ? true : ee.code) === 100062 && null != y && null == j, en = (0, N.p)(p.currentPeriodEnd), er = 0 === b;
   return (0, r.jsxs)(a.l, {
     headerClassName: w.headerWrapper,
     header: false === er ? (0, r.jsxs)(r.Fragment, {
@@ -152,11 +152,11 @@ function G(e) {
         })]
       }), (0, r.jsx)("div", {
         className: w.headerButtons,
-        children: null != K && null != x && null != j && false === et && (0, r.jsx)(H, {
+        children: null != K && null != x && null != k && false === et && (0, r.jsx)(H, {
           subscription: p,
           app: K,
-          guild: k,
-          sku: j,
+          guild: j,
+          sku: k,
           storeListing: x,
           isCancelled: U,
           navigateToSwitchPlan: h,
@@ -191,16 +191,16 @@ function G(e) {
             children: [(0, r.jsx)(c.QTo, {
               size: "xs"
             }), D.intl.string(D.t.QjL3vn)]
-          }), null != k && (0, r.jsxs)("span", {
+          }), null != j && (0, r.jsxs)("span", {
             className: w.guildSubscriptionContentRow,
             children: [(0, r.jsx)(c.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
               children: D.intl.format(D.t["7ZD8p1"], {
-                guildName: k.name
+                guildName: j.name
               })
             }), (0, r.jsx)(g.Z, {
-              guild: k,
+              guild: j,
               size: g.Z.Sizes.MINI
             })]
           })]
@@ -353,7 +353,7 @@ function H(e) {
       let {
         default: e
       } = await n.e("6284").then(n.bind(n, 257514));
-      return n => (0, r.jsx)(e, k(x({}, n), {
+      return n => (0, r.jsx)(e, j(x({}, n), {
         application: t,
         storeListing: a,
         subscription: l,
@@ -371,7 +371,7 @@ function H(e) {
         let {
           default: t
         } = await n.e("18879").then(n.bind(n, 389262));
-        return n => (0, r.jsx)(t, k(x({}, n), {
+        return n => (0, r.jsx)(t, j(x({}, n), {
           storeListing: a,
           subscription: y.Z.createFromServer(e)
         }))
@@ -471,7 +471,7 @@ function W(e) {
       children: [D.intl.format(D.t.IIHUUF, {
         subscriptionId: t.id
       }), (0, r.jsx)("br", {}), D.intl.format(D.t.fh65ES, {
-        helpLink: j
+        helpLink: k
       })]
     })
   }) : (0, r.jsx)("div", {

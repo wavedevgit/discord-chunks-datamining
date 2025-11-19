@@ -2,7 +2,7 @@
 /** chunk id: 474936, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $7: () => j,
+  $7: () => k,
   $8: () => ex,
   $X: () => eb,
   $e: () => f,
@@ -23,7 +23,7 @@ require.d(exports, {
   F$: () => T,
   F_: () => c,
   GP: () => R,
-  HO: () => ek,
+  HO: () => ej,
   IW: () => S,
   Lw: () => eC,
   M_: () => e3,
@@ -45,7 +45,7 @@ require.d(exports, {
   TD: () => eY,
   TL: () => Q,
   Tp: () => ez,
-  UA: () => k,
+  UA: () => j,
   UD: () => O,
   Ue: () => U,
   Uq: () => eR,
@@ -54,7 +54,7 @@ require.d(exports, {
   X2: () => e$,
   XB: () => eO,
   Xh: () => b,
-  Y1: () => ej,
+  Y1: () => ek,
   YQ: () => m,
   Z1: () => v,
   Zh: () => u,
@@ -329,8 +329,8 @@ let R = Object.freeze({
   L = 5,
   x = 30,
   M = 2,
-  k = 3,
-  j = 28,
+  j = 3,
+  k = 28,
   U = 30,
   G = 30,
   B = 7,
@@ -448,7 +448,7 @@ let eA = Object.freeze({
     [Chunk981631.Eu4.TIER_2]: 36,
     [Chunk981631.Eu4.TIER_3]: 48
   },
-  ek = Object.freeze({
+  ej = Object.freeze({
     [Chunk981631.Eu4.NONE]: {
       features: [],
       limits: {
@@ -502,7 +502,7 @@ let eA = Object.freeze({
       }
     }
   }),
-  ej = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
+  ek = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
 var eU = function(e) {
     return e.SOUNDBOARD_PLAY = "soundboard play", e.PROFILE_THEME_COLOR = "profile_theme_color", e.PROFILE_BANNER = "profile_banner", e.ANIMATED_AVATAR = "animated_avatar", e.AVATAR_DECORATION = "avatar_decoration", e.CLIENT_THEME = "client_theme", e.SHARED_CANVAS = "shared_canvas", e.PROFILE_EFFECT = "profile_effect", e.PRESET = "preset", e
   }({}),

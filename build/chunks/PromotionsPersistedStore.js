@@ -2,7 +2,7 @@
 /** chunk id: 1844, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -189,7 +189,7 @@ d(M, "displayName", "PromotionsStore"), d(M, "persistKey", "PromotionsPersistedS
   } catch (e) {}
   return e
 }]);
-let k = new M(Chunk570140.Z, {
+let j = new M(Chunk570140.Z, {
   ACTIVE_PROMOTIONS_FETCH_SUCCESS: A,
   ACTIVE_PROMOTIONS_FETCH: C,
   ACTIVE_PROMOTIONS_FETCH_FAIL: N,

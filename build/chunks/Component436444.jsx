@@ -93,7 +93,7 @@ let T = {
       totalAvailableBoostsCount: N
     } = e, {
       analyticsLocations: R
-    } = (0, l.ZP)(), P = (0, c.Z)(), D = p.oCV[A], w = D - N, L = A <= C || b, x = L && A <= i.premiumTier, M = L && A < i.premiumTier, k = L && A === i.premiumTier, j = i.premiumTier < A && N >= D, {
+    } = (0, l.ZP)(), P = (0, c.Z)(), D = p.oCV[A], w = D - N, L = A <= C || b, x = L && A <= i.premiumTier, M = L && A < i.premiumTier, j = L && A === i.premiumTier, k = i.premiumTier < A && N >= D, {
       scaleFactor: U
     } = (0, s.q_F)({
       from: {
@@ -112,7 +112,7 @@ let T = {
         style: {
           transform: U.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
         }
-      }), A !== p.Eu4.NONE ? j ? (0, r.jsx)(s.zkc, {
+      }), A !== p.Eu4.NONE ? k ? (0, r.jsx)(s.zkc, {
         className: a()(E.boostedTierIcon, E.disabledIndicator),
         size: "xxs",
         color: "currentColor"
@@ -124,7 +124,7 @@ let T = {
     });
 
     function B() {
-      L && (j || (0, f.u)({
+      L && (k || (0, f.u)({
         analyticsLocations: R,
         analyticsLocation: {
           page: p.ZY5.PREMIUM_GUILD_USER_MODAL,
@@ -147,7 +147,7 @@ let T = {
         tierName: (0, d.nW)(A, {
           useLevels: false
         })
-      }) : j ? m.intl.formatToPlainString(g.default["9CtPjt"], {
+      }) : k ? m.intl.formatToPlainString(g.default["9CtPjt"], {
         perk: (0, d.nW)(A, {
           useLevels: false
         })
@@ -163,7 +163,7 @@ let T = {
           [E.progressBarMarkerUnlocked]: x,
           [E.progressBarMarkerLocked]: Z,
           [E.progressBarMarkerLower]: M,
-          [E.progressBarMarkerCurrent]: k
+          [E.progressBarMarkerCurrent]: j
         }),
         style: {
           left: "".concat(100 * T[A], "%")

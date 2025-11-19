@@ -48,8 +48,8 @@ function x(e, t) {
   return b.call(t, n, "$&_")
 }
 var Chunk706827 = require("./706827.js"),
-  k = Chunk706827.custom,
-  j = X(k) ? k : null,
+  j = Chunk706827.custom,
+  k = X(j) ? j : null,
   U = {
     __proto__: null,
     double: '"',
@@ -166,8 +166,8 @@ module.exports = function e(t, r, i, s) {
     return "object" != typeof t || P ? N : ed(N)
   }
   if (el(t)) {
-    for (var k = "<" + O.call(String(t.nodeName)), G = t.attributes || [], F = 0; F < G.length; F++) k += " " + G[F].name + "=" + B(Z(G[F].value), "double", l);
-    return k += ">", t.childNodes && t.childNodes.length && (k += "..."), k += "</" + O.call(String(t.nodeName)) + ">"
+    for (var j = "<" + O.call(String(t.nodeName)), G = t.attributes || [], F = 0; F < G.length; F++) j += " " + G[F].name + "=" + B(Z(G[F].value), "double", l);
+    return j += ">", t.childNodes && t.childNodes.length && (j += "..."), j += "</" + O.call(String(t.nodeName)) + ">"
   }
   if (V(t)) {
     if (0 === t.length) return "[]";
@@ -179,7 +179,7 @@ module.exports = function e(t, r, i, s) {
     return "cause" in Error.prototype || !("cause" in t) || w.call(t, "cause") ? 0 === eu.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + T.call(eu, ", ") + " }" : "{ [" + String(t) + "] " + T.call(I.call("[cause]: " + y(t.cause), eu), ", ") + " }"
   }
   if ("object" == typeof t && d) {
-    if (j && "function" == typeof t[j] && M) return M(t, {
+    if (k && "function" == typeof t[k] && M) return M(t, {
       depth: m - i
     });
     else if ("symbol" !== d && "function" == typeof t.inspect) return t.inspect()

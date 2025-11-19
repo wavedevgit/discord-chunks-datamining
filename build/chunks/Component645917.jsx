@@ -130,10 +130,10 @@ function O(e) {
     M = i.useCallback(() => {
       null == v || v()
     }, [v]),
-    k = i.useCallback(e => {
+    j = i.useCallback(e => {
       null == v || v(e)
     }, [v]),
-    j = i.useCallback(e => {
+    k = i.useCallback(e => {
       L(e)
     }, []),
     U = C ? _.caretHoverable : true;
@@ -141,7 +141,7 @@ function O(e) {
     position: w,
     onRequestClose: M,
     gradientColor: O,
-    onPositionChange: j,
+    onPositionChange: k,
     onNudgeChange: P,
     scrollBehavior: S,
     modal: N,
@@ -150,7 +150,7 @@ function O(e) {
     children: (0, r.jsxs)("div", {
       "data-mana-component": "popover",
       children: [A && (0, r.jsx)(u.u, {
-        onClick: k,
+        onClick: j,
         variant: null != O ? "color-mix" : true
       }), null != p && (0, r.jsx)("div", {
         className: o()(_.graphic, {

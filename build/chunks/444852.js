@@ -59,7 +59,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,8 +70,8 @@ function k(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -190,7 +190,7 @@ class V extends Chunk861687.Z {
   initializeEvents() {
     let e = false;
     this.on(Chunk437263.z.State, (e, t, n) => {
-      if (l.Z.dispatch(j(M({
+      if (l.Z.dispatch(k(M({
           type: "RTC_CONNECTION_STATE",
           state: e
         }, t, n), {
@@ -421,7 +421,7 @@ class V extends Chunk861687.Z {
   }
   trackVideoStartStats() {
     let e = this.isOwner ? (0, Chunk297733.Z)() : null;
-    Chunk626135.default.track(Chunk981631.rMx.VIDEO_STREAM_STARTED, j(M({}, this.getStreamAnalyticsProperties(), module), {
+    Chunk626135.default.track(Chunk981631.rMx.VIDEO_STREAM_STARTED, k(M({}, this.getStreamAnalyticsProperties(), module), {
       connection_type: Chunk866960.Z.getType(),
       effective_connection_speed: Chunk866960.Z.getEffectiveConnectionSpeed(),
       service_provider: Chunk866960.Z.getServiceProvider(),
@@ -451,7 +451,7 @@ class V extends Chunk861687.Z {
       } : {};
     o.getOutboundStats().forEach(t => {
       var r;
-      (null != (r = t.num_frames) ? r : 0) > 0 && S.default.track(w.rMx.VIDEO_STREAM_ENDED, j(M({}, a, i, s, this.videoStreamStats.getStats(), t, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), c, u), {
+      (null != (r = t.num_frames) ? r : 0) > 0 && S.default.track(w.rMx.VIDEO_STREAM_ENDED, k(M({}, a, i, s, this.videoStreamStats.getStats(), t, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), c, u), {
         app_hardware_acceleration_enabled: A.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,
@@ -465,7 +465,7 @@ class V extends Chunk861687.Z {
     }), o.getInboundParticipants().forEach(t => {
       var r;
       let l = o.getInboundStats(t);
-      (null != (r = null == l ? true : l.num_frames) ? r : 0) > 0 && S.default.track(w.rMx.VIDEO_STREAM_ENDED, j(M({}, a, i, s, this.videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), c, u), {
+      (null != (r = null == l ? true : l.num_frames) ? r : 0) > 0 && S.default.track(w.rMx.VIDEO_STREAM_ENDED, k(M({}, a, i, s, this.videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), c, u), {
         app_hardware_acceleration_enabled: A.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,

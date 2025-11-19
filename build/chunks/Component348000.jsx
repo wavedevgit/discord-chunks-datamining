@@ -205,35 +205,38 @@ let h = {
         title: t,
         body: n,
         showAsset: s,
-        position: c,
-        align: d,
-        caretAlign: p,
-        customOffset: h,
-        delay: m,
-        spacing: g
-      } = e, E = _(e, ["title", "body", "showAsset", "position", "align", "caretAlign", "customOffset", "delay", "spacing"]);
-      let b = i.useMemo(() => {
-          if ("center" !== p && null != p) return "custom" === p ? {
-            align: p,
-            customOffset: h
+        assetSize: c,
+        position: d,
+        align: p,
+        caretAlign: h,
+        customOffset: m,
+        delay: g,
+        spacing: E
+      } = e, b = _(e, ["title", "body", "showAsset", "assetSize", "position", "align", "caretAlign", "customOffset", "delay", "spacing"]);
+      let y = i.useMemo(() => {
+          if ("center" !== h && null != h) return "custom" === h ? {
+            align: h,
+            customOffset: m
           } : {
-            align: p
+            align: h
           }
-        }, [p, h]),
-        y = i.useMemo(() => s ? (0, r.jsx)("img", {
+        }, [h, m]),
+        O = i.useMemo(() => s ? {
+          type: "image",
           src: l.Z,
-          alt: "Graphic"
-        }) : true, [s]);
+          aspectRatio: "1/1"
+        } : true, [s]);
       return (0, r.jsx)(o.i, f(u({
         title: t,
         body: n,
-        position: c,
-        align: d,
-        delay: m,
-        spacing: g,
-        caretConfig: b,
-        asset: y
-      }, E), {
+        position: d,
+        align: p,
+        delay: g,
+        spacing: E,
+        caretConfig: y,
+        asset: O,
+        assetSize: c
+      }, b), {
         children: (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Hover me (rich)"
@@ -255,6 +258,27 @@ let h = {
         label: "Show Asset",
         type: "boolean",
         defaultValue: true
+      },
+      assetSize: {
+        label: "Asset Size",
+        type: "select",
+        defaultValue: 48,
+        options: [{
+          label: "16px",
+          value: 16
+        }, {
+          label: "20px",
+          value: 20
+        }, {
+          label: "24px",
+          value: 24
+        }, {
+          label: "32px",
+          value: 32
+        }, {
+          label: "48px",
+          value: 48
+        }]
       },
       position: {
         label: "Position",

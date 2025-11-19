@@ -10,7 +10,7 @@ require.d(exports, {
   B3: () => ne,
   BI: () => nr,
   BM: () => tT,
-  Bg: () => ek,
+  Bg: () => ej,
   Bz: () => tI,
   C1: () => tL,
   DR: () => er,
@@ -59,11 +59,11 @@ require.d(exports, {
   _4: () => tU,
   _D: () => ea,
   _j: () => tD,
-  _p: () => tj,
+  _p: () => tk,
   _x: () => ec,
   b7: () => tl,
   bA: () => tK,
-  f$: () => tk,
+  f$: () => tj,
   f2: () => e5,
   fY: () => tA,
   gI: () => tC,
@@ -89,7 +89,7 @@ require.d(exports, {
   vj: () => ee,
   w8: () => t9,
   wj: () => eB,
-  xN: () => ej,
+  xN: () => ek,
   xn: () => eL,
   yH: () => tM,
   yI: () => ev,
@@ -558,11 +558,11 @@ function eM(e) {
   }
 }
 
-function ek(e) {
+function ej(e) {
   return e.rewardsConfig.rewards.some(e => e.type === c.w.FRACTIONAL_PREMIUM)
 }
 
-function ej(e) {
+function ek(e) {
   return e.rewardsConfig.rewards.some(e => e.type === c.w.VIRTUAL_CURRENCY)
 }
 
@@ -647,7 +647,7 @@ function eQ(e) {
 }
 
 function eJ(e) {
-  if (!(0, k.CD)("QuestUtils") || null == e) returnfalse;
+  if (!(0, j.CD)("QuestUtils") || null == e) returnfalse;
   let t = ee(e);
   return null != t && t.length > 1
 }
@@ -1018,15 +1018,15 @@ function tM(e) {
   return t && r.push(G.cd.DESKTOP), n && r.push(G.cd.CONSOLE), r
 }
 
-function tk(e) {
+function tj(e) {
   var t;
   let n = null == (t = eL(e)) ? true : t.expirationMode;
   return null != n && z.has(n)
 }
 
-function tj(e) {
+function tk(e) {
   var t;
-  return tk(e) && (null == (t = eL(e)) ? true : t.expirationMode) === l.n.PREMIUM_PERMANENT
+  return tj(e) && (null == (t = eL(e)) ? true : t.expirationMode) === l.n.PREMIUM_PERMANENT
 }
 
 function tU(e) {
@@ -1223,7 +1223,7 @@ function t6(e) {
 }
 
 function t7(e, t) {
-  if (ek(e)) return (0, j.o8)(e);
+  if (ej(e)) return (0, k.o8)(e);
   let n = nt(e);
   return t ? n.messages.nameWithArticle : n.messages.name
 }

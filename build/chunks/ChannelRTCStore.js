@@ -71,8 +71,8 @@ let w = new Chunk710845.Z("ChannelRTCStore"),
   L = Object.freeze([]),
   x = [],
   M = {},
-  k = {},
   j = {},
+  k = {},
   U = {},
   G = {},
   B = {},
@@ -119,23 +119,23 @@ function Q(e) {
   var t;
   let n = E.Z.getChannel(e),
     r = (null == n ? true : n.isDM()) && 1 ? A.dF.AUTO : A.dF.NONE;
-  return null != (t = k[e]) ? t : [r, A.dF.NONE]
+  return null != (t = j[e]) ? t : [r, A.dF.NONE]
 }
 
 function J(e) {
-  if (null == k[e]) returnfalse;
-  let [t] = k[e];
+  if (null == j[e]) returnfalse;
+  let [t] = j[e];
   return t !== A.dF.NONE
 }
 
 function $(e) {
-  null == j[e] && (j[e] = {
+  null == k[e] && (k[e] = {
     gridDurationMs: 0,
     focusDurationMs: 0,
     toggleCount: 0,
     lastUpdate: 0
   });
-  let t = j[e],
+  let t = k[e],
     n = performance.now(),
     r = J(e);
   if (t.lastUpdate > 0) {
@@ -148,7 +148,7 @@ function $(e) {
 function ee(e, t) {
   $(e);
   let n = J(e);
-  null == t ? delete k[e] : k[e] = t, n !== J(e) && j[e].toggleCount++
+  null == t ? delete j[e] : j[e] = t, n !== J(e) && k[e].toggleCount++
 }
 
 function et(e) {
@@ -187,7 +187,7 @@ function er(e) {
 }
 
 function ei(e) {
-  delete M[e], delete k[e], delete U[e], delete G[e]
+  delete M[e], delete j[e], delete U[e], delete G[e]
 }
 
 function ea() {
@@ -199,7 +199,7 @@ function eo(e) {
     channelId: t,
     currentVoiceChannelId: n
   } = e;
-  return null != t ? delete j[t] : null != n && (delete F[n], delete H[n], $(n)), ea()
+  return null != t ? delete k[t] : null != n && (delete F[n], delete H[n], $(n)), ea()
 }
 
 function es(e) {
@@ -475,7 +475,7 @@ function eM(e) {
   return q(e => e.updateParticipantQuality(n, r, i), [t])
 }
 
-function ek(e) {
+function ej(e) {
   let {
     channelId: t,
     guildId: n,
@@ -489,7 +489,7 @@ function ek(e) {
   return r.forEach(e => i.updateGuildRingingUsers(e, true)), q(e => e.rebuild(), [t])
 }
 
-function ej(e) {
+function ek(e) {
   let {
     channelId: t,
     guildId: n,
@@ -568,7 +568,7 @@ class eG extends(r = Chunk442837.ZP.PersistedStore) {
     return null == t ? null : W(e).getParticipant(t)
   }
   getSelectedParticipantStats(e) {
-    let t = j[e];
+    let t = k[e];
     return null == t ? {} : {
       view_mode_grid_duration_ms: Math.floor(t.gridDurationMs),
       view_mode_focus_duration_ms: Math.floor(t.focusDurationMs),
@@ -653,8 +653,8 @@ let eB = new eG(Chunk570140.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_START: ed,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: ed,
   PUSH_TO_TALK_STATE_CHANGE: ef,
-  GUILD_RING_START: ek,
-  GUILD_RING_STOP: ej,
+  GUILD_RING_START: ej,
+  GUILD_RING_STOP: ek,
   USER_UPDATE: e_,
   GUILD_MEMBER_UPDATE: e_,
   GUILD_DELETE: em

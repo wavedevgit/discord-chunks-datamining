@@ -147,7 +147,7 @@ function es(e) {
   } = e;
   u = Date.now(), r = false, s = new Map;
   let a = new Map;
-  for (let e of t) s.set(e.id, e), a.set(e.id, (0, M.zi)(e)), e.targetedContent.includes(k.jn.QUEST_BAR) && (0, G.T)({
+  for (let e of t) s.set(e.id, e), a.set(e.id, (0, M.zi)(e)), e.targetedContent.includes(j.jn.QUEST_BAR) && (0, G.T)({
     location: B.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (l = new Map, n)) l.set(e.id, e);
@@ -366,7 +366,7 @@ function eM(e) {
   } = e;
   $(t.questId, {
     userStatus: t
-  }), null == t.claimedAt && (E = new Map(E)).delete(t.questId), null == t.enrolledAt && ((v = new Map(v)).delete(t.questId), j.ZP.getState().resetQuest(t.questId));
+  }), null == t.claimedAt && (E = new Map(E)).delete(t.questId), null == t.enrolledAt && ((v = new Map(v)).delete(t.questId), k.ZP.getState().resetQuest(t.questId));
   let n = s.get(t.questId);
   if (null != n) {
     let e = (0, M.zi)(n);
@@ -374,14 +374,14 @@ function eM(e) {
   }
 }
 
-function ek(e) {
+function ej(e) {
   let {
     questId: t
   } = e;
   O = O === t ? null : t
 }
 
-function ej(e) {
+function ek(e) {
   let {
     questId: t,
     platform: n
@@ -403,7 +403,7 @@ function eG(e) {
   let {
     questId: t
   } = e;
-  W.has(t) && W.delete(t), j.ZP.getState().resetQuest(t)
+  W.has(t) && W.delete(t), k.ZP.getState().resetQuest(t)
 }
 
 function eB(e) {
@@ -612,8 +612,8 @@ let eq = new ez(Chunk570140.Z, {
     STREAM_CLOSE: eE,
     QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: eL,
     QUESTS_PREVIEW_UPDATE_SUCCESS: eM,
-    QUESTS_DELIVERY_OVERRIDE: ek,
-    QUESTS_SELECT_TASK_PLATFORM: ej,
+    QUESTS_DELIVERY_OVERRIDE: ej,
+    QUESTS_SELECT_TASK_PLATFORM: ek,
     QUESTS_UPDATE_OPTIMISTIC_PROGRESS: eU,
     QUESTS_RESET_OPTIMISTIC_PROGRESS: eG,
     QUESTS_USER_COMPLETION_UPDATE: eK

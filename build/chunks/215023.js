@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   AW: () => b,
-  As: () => j,
+  As: () => k,
   Cm: () => T,
   HU: () => P,
   Hi: () => G,
@@ -13,7 +13,7 @@ require.d(exports, {
   RE: () => O,
   Vt: () => w,
   aK: () => v,
-  aP: () => k,
+  aP: () => j,
   f7: () => E,
   fH: () => B,
   gj: () => h,
@@ -68,7 +68,7 @@ let w = {
   L = new Set(Object.values(w)),
   x = e => L.has(e),
   M = [Chunk335818.G.AVATAR_DECORATION, Chunk335818.G.PROFILE_EFFECT, Chunk335818.G.NAMEPLATE, Chunk335818.G.BUNDLE],
-  k = [{
+  j = [{
     sortType: Chunk792091.E.RELEVANCE,
     sortDirection: Chunk497598.F.DESC
   }, {
@@ -84,7 +84,7 @@ let w = {
     sortType: Chunk792091.E.POPULARITY,
     sortDirection: Chunk497598.F.DESC
   }],
-  j = 300,
+  k = 300,
   U = {
     amount: 300,
     currency: Chunk981631.pKx.DISCORD_ORB,

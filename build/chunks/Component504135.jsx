@@ -81,7 +81,7 @@ function E(e) {
   } = e, {
     onSelect: x,
     onInteraction: M
-  } = i.useContext(c.p), k = i.useRef(null), j = i.useCallback(e => {
+  } = i.useContext(c.p), j = i.useRef(null), k = i.useCallback(e => {
     var t;
     if (null == M || M({
         type: c.U.DEFAULT
@@ -89,15 +89,15 @@ function E(e) {
     e.shiftKey && D || w || A(), e.persist(), null == x || x(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => S(e))
   }, [S, A, x, D, w, M]);
   return i.useEffect(() => {
-    I && ((0, u.F)(k), null == C || C())
+    I && ((0, u.F)(j), null == C || C())
   }, [I, C]), (0, r.jsxs)(s.P3F, g(h({
-    innerRef: k,
+    innerRef: j,
     className: o()(_.item, _.labelContainer, f._e[t], N, {
       [_.disabled]: v,
       [_.focused]: I,
       [null != R ? R : ""]: I
     }),
-    onClick: v ? true : j,
+    onClick: v ? true : k,
     "aria-disabled": v
   }, T), {
     "data-menu-item": "true",

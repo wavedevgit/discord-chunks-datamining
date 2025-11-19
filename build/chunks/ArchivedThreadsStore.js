@@ -94,12 +94,12 @@ function M() {
   }).sort((e, t) => g.default.compare(D(e, A), D(t, A))).map(e => e.id).reverse().value()
 }
 
-function k(e) {
+function j(e) {
   if (e.channelId !== S || e.sortOrder !== A || !(0, c.O)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
   O = false, T = true, v = false
 }
 
-function j(e) {
+function k(e) {
   if (e.channel.id !== S) returnfalse;
   P()
 }
@@ -148,9 +148,9 @@ let V = new F(Chunk570140.Z, {
   CONNECTION_OPEN: P,
   THREAD_DELETE: G,
   THREAD_UPDATE: B,
-  CHANNEL_DELETE: j,
+  CHANNEL_DELETE: k,
   LOAD_ARCHIVED_THREADS: w,
   LOAD_ARCHIVED_THREADS_SUCCESS: L,
-  LOAD_ARCHIVED_THREADS_FAIL: k,
+  LOAD_ARCHIVED_THREADS_FAIL: j,
   RESORT_THREADS: x
 })

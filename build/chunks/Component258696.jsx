@@ -38,7 +38,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk957825 = require("./957825.js"),
   Chunk564355 = require("./564355.js");
 
-function k(e) {
+function j(e) {
   let {
     disabled: t,
     channel: n
@@ -53,13 +53,13 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   var t, n, i, a, E, b, y;
   let {
     type: O,
     disabled: R,
     channel: P,
-    handleSubmit: j,
+    handleSubmit: k,
     isEmpty: G,
     showAllButtons: B
   } = e, Z = (0, c.e7)([d.Z], () => d.Z.isSubmitButtonEnabled), F = U(P.id, O, G), {
@@ -86,7 +86,7 @@ function j(e) {
   }), ee = (0, g.Nt)() && (null == (t = O.confetti) ? true : t.button) != null, et = (null == (n = O.submit) ? true : n.button) != null && ((null == (i = O.submit) ? true : i.ignorePreference) || Z);
   if (!l.tq && ((null == (E = O.gifts) ? true : E.button) != null && null == V && !Y && (null == J || I.ZP.isPremiumEligible(J)) && X.push({
       key: "gift",
-      node: (0, r.jsx)(k, {
+      node: (0, r.jsx)(j, {
         disabled: R,
         channel: P
       }, "gift")
@@ -140,7 +140,7 @@ function j(e) {
   }), et && X.push({
     key: "submit",
     node: (0, r.jsx)(D.Z, {
-      onClick: j,
+      onClick: k,
       disabled: R || F
     }, "submit")
   });
@@ -160,4 +160,4 @@ function U(e, t, n) {
     return 0 === O.Z.getUploads(e, t.drafts.type).length && n && !i
   })
 }
-let G = Chunk473749.memo(j)
+let G = Chunk473749.memo(k)

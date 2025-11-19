@@ -78,7 +78,7 @@ function ea(e) {
     setSearchQuery: o,
     setScroller: s,
     isScrollCloseToBottom: l
-  } = e, c = (0, _.e7)([m.Z], () => m.Z.getIsEnabled(), []), u = n === L._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, j.Yn)(n), f = !(0, j.Yn)(n), h = n === L._b.TEXT, [E, b] = ep(true), [y, O] = ep(u), [v, I] = ep(d), [T, S] = ep(f), A = E && y && v && T, C = (d || u) && !A, N = f && c;
+  } = e, c = (0, _.e7)([m.Z], () => m.Z.getIsEnabled(), []), u = n === L._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, k.Yn)(n), f = !(0, k.Yn)(n), h = n === L._b.TEXT, [E, b] = ep(true), [y, O] = ep(u), [v, I] = ep(d), [T, S] = ep(f), A = E && y && v && T, C = (d || u) && !A, N = f && c;
   i.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null == (e = t.channel) ? true : e.guild_id : true;
@@ -301,7 +301,7 @@ function eu(e) {
       numItems: o.length,
       numVisibleItems: o.length
     }),
-    c = (0, k.s)(),
+    c = (0, j.s)(),
     u = 0 === o.length;
   return (i.useEffect(() => {
     a(u)
@@ -595,7 +595,7 @@ function em(e) {
   })), c = n === L._b.VOICE;
   return {
     fetchState: s,
-    recommendationsSections: i.useMemo(() => c ? (0, j.pF)(l) : l, [l, c]),
+    recommendationsSections: i.useMemo(() => c ? (0, k.pF)(l) : l, [l, c]),
     isInstallOnDemand: o
   }
 }

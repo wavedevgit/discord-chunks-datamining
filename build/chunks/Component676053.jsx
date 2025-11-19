@@ -98,8 +98,8 @@ function S(e) {
     } = e,
     M = I(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
   let {
-    reducedMotion: k
-  } = i.useContext(o.Sfi), j = (0, a.C)(), U = null != (b = null == (t = (n = (0, o.ZFG)()).isWindowFocused) ? true : t.call(n)) ? b : j, G = i.useRef(null), B = (0, o.j1L)(A), Z = i.useCallback(() => ({
+    reducedMotion: j
+  } = i.useContext(o.Sfi), k = (0, a.C)(), U = null != (b = null == (t = (n = (0, o.ZFG)()).isWindowFocused) ? true : t.call(n)) ? b : k, G = i.useRef(null), B = (0, o.j1L)(A), Z = i.useCallback(() => ({
     type: "VIDEO",
     url: S,
     proxyUrl: S,
@@ -110,8 +110,8 @@ function S(e) {
   }), [S, O]);
   i.useEffect(() => {
     var e, t;
-    null != G.current && (!k.enabled && U ? null == (e = G.current) || e.play().catch(h.dG) : null == (t = G.current) || t.pause())
-  }, [U, k.enabled]);
+    null != G.current && (!j.enabled && U ? null == (e = G.current) || e.play().catch(h.dG) : null == (t = G.current) || t.pause())
+  }, [U, j.enabled]);
   let F = i.useCallback(() => {
       null !== G.current && G.current.pause(), null == L || L()
     }, [L]),
@@ -137,7 +137,7 @@ function S(e) {
         src: A,
         width: 232,
         height: 131,
-        autoPlay: !k.enabled && U,
+        autoPlay: !j.enabled && U,
         muted: true,
         loop: true,
         playsInline: true,

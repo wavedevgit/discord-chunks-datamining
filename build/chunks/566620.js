@@ -153,7 +153,7 @@ async function el(e) {
       channelId: null != r ? r : null,
       proxyTicket: t
     });
-    let n = j.default.getCurrentUser();
+    let n = k.default.getCurrentUser();
     if (null != n && (0, Q.Z)({
         type: o ? ee.q5t.LAUNCH : ee.q5t.JOIN,
         userId: null == n ? true : n.id,
@@ -280,7 +280,7 @@ async function eu(e) {
     let e, n = E.Z.getApplication(t),
       r = H.ZP.getCurrentEmbeddedActivity();
     (null == r ? true : r.applicationId) != null && (e = E.Z.getApplication(null == r ? true : r.applicationId));
-    let i = j.default.getCurrentUser();
+    let i = k.default.getCurrentUser();
     if (null != i && !await (0, Y.p)({
         applicationId: t,
         application: n,
@@ -345,7 +345,7 @@ async function ed(e) {
       guildId: s
     } = e,
     c = L.default.getSessionId(),
-    u = j.default.getCurrentUser(),
+    u = k.default.getCurrentUser(),
     d = n;
   if (null == d) return {
     result: "failure",
@@ -369,7 +369,7 @@ async function ed(e) {
     channelId: i,
     ChannelStore: x.Z,
     GuildStore: M.Z,
-    PermissionStore: k.Z,
+    PermissionStore: j.Z,
     VoiceStateStore: U.Z
   });
   if (p !== z.jy.CAN_LAUNCH) {
@@ -456,7 +456,7 @@ function ef(e) {
   if (null != a) {
     var o;
     let e = O.Z.getSelectedParticipantId(a),
-      t = null == (o = j.default.getCurrentUser()) ? true : o.id,
+      t = null == (o = k.default.getCurrentUser()) ? true : o.id,
       r = H.ZP.getEmbeddedActivitiesForChannel(a).find(e => e.applicationId === n);
     if (null == r || null == t || "" === t) return;
     e === (0, y.gN)({

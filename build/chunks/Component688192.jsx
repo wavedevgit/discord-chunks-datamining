@@ -48,7 +48,7 @@ function x(e) {
     src: G.getAvatarURL(true, 48),
     size: c.EFr.SIZE_48,
     "aria-label": U
-  }) : null, V = (0, i.jsx)("div", {
+  }) : true, V = (0, i.jsx)("div", {
     className: j.cardStateIconWrapper,
     children: (0, i.jsx)(c.sV5, {
       size: "custom",
