@@ -143,6 +143,7 @@ function S(e, t) {
     h = null != l && l > 0,
     f = h ? O.intl.string(O.t.TxBQzD) : O.intl.string(O.t.ilhtIa);
   return p && !h && (n = O.intl.string(O.t["4yiU7x"])), (0, r.jsx)(I, {
+    productLine: e.skuProductLine,
     onCardClick: () => {
       if (h) return void a();
       (0, g.P)(e.sku, {

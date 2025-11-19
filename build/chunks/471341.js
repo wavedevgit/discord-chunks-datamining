@@ -9,13 +9,14 @@ var Chunk473749 = require("./473749.js"),
 function l(e) {
   let {
     wishlistId: t,
-    onAction: n
-  } = e, [l, o] = (0, r.useState)(false), a = (0, r.useCallback)(e => {
+    onAction: n,
+    productLines: l
+  } = e, [o, a] = (0, r.useState)(false), s = (0, r.useCallback)(e => {
     e && null != t && (n({
       action: "VIEW_WISHLIST",
       wishlistId: t,
-      skuId: null
-    }), o(true))
-  }, [n, t]);
-  return (0, i.O)(a, true, null != t && !l)
+      productLines: null != l ? l : true
+    }), a(true))
+  }, [t, n, l]);
+  return (0, i.O)(s, true, null != t && !o)
 }

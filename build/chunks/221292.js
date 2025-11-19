@@ -337,7 +337,7 @@ let v = e => {
       action: a,
       wishlistId: o,
       skuId: s,
-      hasThirdPartySku: l
+      productLines: l
     } = e;
     C(O(b({}, e), {
       action: a
@@ -346,6 +346,6 @@ let v = e => {
       action_type: a,
       wishlist_id: o,
       sku_id: s,
-      has_3p_sku: l
+      product_lines: null != l ? Array.from(l) : []
     }))
   }

@@ -81,68 +81,67 @@ function C(e) {
 }
 
 function D(e) {
+  var t;
   let {
-    profileOwner: t
+    profileOwner: n
   } = e, {
-    wishlistId: n,
-    currentUser: _,
-    wishlistSettings: P
+    wishlistId: _,
+    currentUser: P,
+    wishlistSettings: D
   } = (0, l.cj)([O.Z, h.default], () => {
-    let e = O.Z.getFirstWishlistId(t.id);
+    let e = O.Z.getFirstWishlistId(n.id);
     return {
       wishlistId: e,
       currentUser: h.default.getCurrentUser(),
-      wishlistSettings: null != e ? O.Z.getWishlistSettings(t.id, e) : null
+      wishlistSettings: null != e ? O.Z.getWishlistSettings(n.id, e) : null
     }
-  }), D = (0, g.c)({
+  }), k = (0, g.c)({
     location: "user-profile-modal-v2-wishlist"
   }), {
-    analyticsLocations: k
-  } = (0, d.ZP)(), N = (null == _ ? true : _.id) === t.id, A = false === t.nsfwAllowed, Z = w.t9, [R, L] = i.useState(true);
+    analyticsLocations: N
+  } = (0, d.ZP)(), A = (null == P ? true : P.id) === n.id, Z = false === n.nsfwAllowed, R = w.t9, [L, M] = i.useState(true);
   i.useEffect(() => {
-    (null == P ? true : P.visibility) != null && L(P.visibility === a.f.PUBLIC)
-  }, [null == P ? true : P.visibility]);
+    (null == D ? true : D.visibility) != null && M(D.visibility === a.f.PUBLIC)
+  }, [null == D ? true : D.visibility]);
   let {
-    wishlist: M,
-    error: G
-  } = (0, b.kZ)(n, t.id), B = i.useCallback(e => {
+    wishlist: G,
+    error: B
+  } = (0, b.kZ)(_, n.id), F = i.useCallback(e => {
     let {
       wishlistId: t,
       action: n,
-      skuId: r
+      productLines: r
     } = e;
     null != t && (0, y.Er)({
       wishlistId: t,
       action: n,
-      skuId: r,
-      analyticsLocations: k
+      analyticsLocations: N,
+      productLines: r
     })
-  }, [k]), F = (0, v.Z)({
-    wishlistId: n,
-    onAction: B
-  }), U = i.useCallback(() => {
-    var e;
-    if (null == n) return;
-    let t = R ? a.f.PRIVATE : a.f.PUBLIC;
-    L(!R), m.Z.updateWishlistVisibility(n, t);
-    let r = null != (e = null == M ? true : M.hasThirdPartySku()) && e;
-    (0, y.Er)({
-      wishlistId: n,
-      action: R ? I.NW.WISHLIST_TOGGLE_PRIVATE : I.NW.WISHLIST_TOGGLE_PUBLIC,
-      analyticsLocations: k,
-      hasThirdPartySku: r
+  }, [N]), U = (0, v.Z)({
+    wishlistId: _,
+    onAction: F,
+    productLines: null != (t = null == G ? true : G.getProductLines()) ? t : null
+  }), W = i.useCallback(() => {
+    if (null == _) return;
+    let e = L ? a.f.PRIVATE : a.f.PUBLIC;
+    M(!L), m.Z.updateWishlistVisibility(_, e), (0, y.Er)({
+      wishlistId: _,
+      action: L ? I.NW.WISHLIST_TOGGLE_PRIVATE : I.NW.WISHLIST_TOGGLE_PUBLIC,
+      analyticsLocations: N,
+      productLines: null == G ? true : G.getProductLines()
     })
-  }, [n, R, k, M]), W = i.useCallback(() => {
+  }, [_, L, N, G]), H = i.useCallback(() => {
     (0, o.pT)(), (0, f.mK)({
-      analyticsLocations: k,
+      analyticsLocations: N,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
     })
-  }, [k]), H = i.useCallback(() => {
+  }, [N]), z = i.useCallback(() => {
     (0, o.pT)(), (0, p.Z)({
       guildId: w.ON
     })
   }, []);
-  return null != G ? null : null == M || 0 === M.items.length ? (0, r.jsx)(j.F, {
+  return null != B ? null : null == G || 0 === G.items.length ? (0, r.jsx)(j.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
       className: E.emptyStateContainer,
@@ -159,18 +158,18 @@ function D(e) {
         })]
       }), (0, r.jsxs)(s.ButtonGroup, {
         size: "sm",
-        children: [N && (0, r.jsx)(s.Button, {
+        children: [A && (0, r.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
           icon: s.EOn,
           text: S.intl.string(S.t.ZbS4QB),
-          onClick: W
-        }), D && (0, r.jsx)(s.Button, {
+          onClick: H
+        }), k && (0, r.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
           icon: s.EOn,
-          text: Z === w.t9 ? S.intl.string(S.t["kq/75v"]) : S.intl.string(S.t.apFNLU),
-          onClick: H
+          text: R === w.t9 ? S.intl.string(S.t["kq/75v"]) : S.intl.string(S.t.apFNLU),
+          onClick: z
         })]
       })]
     })
@@ -178,7 +177,7 @@ function D(e) {
     className: E.scroller,
     fade: true,
     children: [(0, r.jsxs)("div", {
-      ref: F,
+      ref: U,
       className: E.headerRow,
       children: [(0, r.jsxs)("div", {
         className: E.teenDisclaimer,
@@ -186,9 +185,9 @@ function D(e) {
           variant: "text-xs/semibold",
           color: "text-secondary",
           children: S.intl.format(S.t.r6Y1Lg, {
-            count: M.items.length
+            count: G.items.length
           })
-        }), !R && (0, r.jsx)(c.u, {
+        }), !L && (0, r.jsx)(c.u, {
           text: S.intl.string(S.t.RX7D9h),
           asContainer: true,
           children: (0, r.jsx)(s.tEY, {
@@ -202,7 +201,7 @@ function D(e) {
               })
             })
           })
-        }), R && A && (0, r.jsx)(c.u, {
+        }), L && Z && (0, r.jsx)(c.u, {
           text: S.intl.string(S.t.d78ChW),
           asContainer: true,
           children: (0, r.jsx)(s.tEY, {
@@ -217,22 +216,22 @@ function D(e) {
             })
           })
         })]
-      }), N ? (0, r.jsx)(C, {
-        isSocialLayerStorefrontEnabled: D,
-        isWishlistPublic: R,
-        handleOpenShop: W,
-        handleOpenGameShop: H,
-        handleToggleWishlistVisibility: U,
-        socialLayerStorefrontApplicationId: Z
+      }), A ? (0, r.jsx)(C, {
+        isSocialLayerStorefrontEnabled: k,
+        isWishlistPublic: L,
+        handleOpenShop: H,
+        handleOpenGameShop: z,
+        handleToggleWishlistVisibility: W,
+        socialLayerStorefrontApplicationId: R
       }) : (0, r.jsx)(T, {
-        isSocialLayerStorefrontEnabled: D,
-        handleOpenShop: W,
-        handleOpenGameShop: H
+        isSocialLayerStorefrontEnabled: k,
+        handleOpenShop: H,
+        handleOpenGameShop: z
       })]
     }), (0, r.jsx)(x.Z, {
-      items: M.items,
-      profileOwner: t,
-      isOwner: N
+      items: G.items,
+      profileOwner: n,
+      isOwner: A
     })]
   })
 }

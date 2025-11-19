@@ -57,7 +57,8 @@ function f(e, t) {
     isSingleCard: p,
     skuId: e.skuId,
     analyticsLocations: s,
-    wishlistId: f
+    wishlistId: f,
+    productLine: e.skuProductLine
   }, e.skuId)
 }
 

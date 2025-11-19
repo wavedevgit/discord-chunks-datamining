@@ -2,7 +2,7 @@
 /** chunk id: 874139, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
-}), require("./539854.js");
+}), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
@@ -30,71 +30,75 @@ function b(e) {
     let {
       wishlistId: t,
       action: n,
-      skuId: r
+      productLines: r
     } = e;
     null != t && (0, u.Er)({
       wishlistId: t,
       action: n,
-      skuId: r,
-      analyticsLocations: y
+      analyticsLocations: y,
+      productLines: r
     })
-  }, [y]), j = (0, p.Z)({
-    wishlistId: null != _ ? _ : null,
-    onAction: O
-  }), {
-    cards: x,
-    singleItem: v
+  }, [y]), {
+    cards: j,
+    singleItem: x,
+    productLines: v
   } = (0, i.useMemo)(() => {
     let e = [],
       r = null,
-      i = [],
-      l = false,
-      a = false;
-    for (let e = 0; e < t.length && i.length < 4; e++) {
+      i = new Set,
+      l = [],
+      a = false,
+      u = false;
+    for (let e = 0; e < t.length && l.length < 4; e++) {
       let n = t[e];
-      !n.isOwned && (i.push(n), (0, d.F)(n) && (0, s.K$)(n.sku) ? l = true : (0, c.Q)(n) && (a = true))
+      !n.isOwned && (l.push(n), (0, d.F)(n) && (0, s.K$)(n.sku) ? a = true : (0, c.Q)(n) && (u = true))
     }
-    let u = l && a;
-    for (let r = 0; r < i.length; r++) {
-      let l = i[r],
-        a = 3 === r && t.length > 4;
-      (0, c.Q)(l) ? e.push((0, f.c)(l, {
+    let p = a && u;
+    for (let r = 0; r < l.length; r++) {
+      let a = l[r],
+        s = 3 === r && t.length > 4;
+      (0, c.Q)(a) ? (i.add(a.skuProductLine), e.push((0, f.c)(a, {
         index: r,
-        moreCount: a ? t.length - 4 + 1 : true,
+        moreCount: s ? t.length - 4 + 1 : true,
         profileOwner: n,
         analyticsLocations: y,
         onViewWishlist: b,
         wishlistId: _,
-        showTypeTooltip: u
-      })): (0, d.F)(l) && e.push((0, o.J)(l, {
+        showTypeTooltip: p
+      }))) : (0, d.F)(a) && (i.add(a.skuProductLine), e.push((0, o.J)(a, {
         index: r,
-        moreCount: a ? t.length - 4 + 1 : true,
+        moreCount: s ? t.length - 4 + 1 : true,
         profileOwner: n,
         analyticsLocations: y,
         onViewWishlist: b,
         wishlistId: _,
-        showTypeTooltip: u
-      }))
+        showTypeTooltip: p
+      })))
     }
-    return 1 === i.length && (r = i[0]), {
+    return 1 === l.length && (r = l[0]), {
       cards: e,
-      singleItem: r
+      singleItem: r,
+      productLines: i
     }
-  }, [t, n, y, b, _]);
-  if (0 === x.length) return null;
-  let C = x;
-  return null != v && ((0, c.Q)(v) ? C = (0, f.g)(v, {
+  }, [t, n, y, b, _]), C = (0, p.Z)({
+    wishlistId: null != _ ? _ : null,
+    onAction: O,
+    productLines: v
+  });
+  if (0 === j.length) return null;
+  let I = j;
+  return null != x && ((0, c.Q)(x) ? I = (0, f.g)(x, {
     profileOwner: n,
     analyticsLocations: y,
     wishlistId: _,
     onViewWishlist: b
-  }) : (0, d.F)(v) && (C = (0, o.B)(v, {
+  }) : (0, d.F)(x) && (I = (0, o.B)(x, {
     profileOwner: n,
     analyticsLocations: y,
     wishlistId: _,
     onViewWishlist: b
   }))), (0, r.jsxs)(h.Z.Overlay, {
-    ref: j,
+    ref: C,
     className: m.container,
     children: [(0, r.jsx)("div", {
       className: m.header,
@@ -104,7 +108,7 @@ function b(e) {
       })
     }), (0, r.jsx)("div", {
       className: m.cardsContainer,
-      children: C
+      children: I
     })]
   })
 }

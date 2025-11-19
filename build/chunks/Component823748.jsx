@@ -560,7 +560,7 @@ class tl extends Chunk473749.PureComponent {
         selectedParticipant: e,
         premiumIndicatorEnabled: t
       } = this.props;
-      return (null == e ? true : e.type) !== e7.fO.STREAM ? null : (0, r.jsx)(V.Z, {
+      return (null == e ? true : e.type) !== e8.fO.STREAM ? null : (0, r.jsx)(V.Z, {
         size: e0.ZP.Sizes.LARGE,
         participant: e,
         showQuality: true,
@@ -879,7 +879,7 @@ let ta = (0, Chunk112724.Z)(tl),
       let e = eO && !ey,
         t = eO && ey && (null == c ? true : c.id) !== ej;
       (e || t) && (0, U.Q3)(h.z.ACTIVITY_GDM_CALL_TOOLTIP, {
-        dismissAction: e8.L.AUTO
+        dismissAction: e7.L.AUTO
       })
     }, [null == c ? true : c.id, ej, ey, eO]);
     let ev = (0, f.f9)();
