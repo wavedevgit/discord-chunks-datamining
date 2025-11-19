@@ -211,8 +211,7 @@ function D(e) {
   }, [a, t]), h = n === N.BpS.ELEVATED, x = (0, s.throttle)(async e => {
     d && (u || await _.Z.updateMFALevel({
       guildId: t.id,
-      level: e ? N.BpS.ELEVATED : N.BpS.NONE,
-      isEnabled: !e
+      level: e ? N.BpS.ELEVATED : N.BpS.NONE
     }))
   }, 1e3);
   return l ? (0, r.jsxs)(r.Fragment, {

@@ -34,8 +34,7 @@ function x(e) {
     N = (0, i.throttle)(async e => {
       y && await m.Z.updateMFALevel({
         guildId: n.id,
-        level: e ? f.BpS.ELEVATED : f.BpS.NONE,
-        isEnabled: !e
+        level: e ? f.BpS.ELEVATED : f.BpS.NONE
       })
     }, 1e3);
   if (!j) return null;

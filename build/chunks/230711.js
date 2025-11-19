@@ -2,19 +2,17 @@
 /** chunk id: 230711, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
   Chunk330055 = require("./330055.js"),
-  Chunk546796 = require("./546796.js"),
   Chunk37234 = require("./37234.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk792101 = require("./792101.js"),
-  Chunk388032 = require("./388032.jsx");
+  Chunk792101 = require("./792101.js");
 
-function f(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,43 +21,26 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
-
-function p(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let m = {
+let f = {
   open() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
       t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
       n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
         openWithoutBackstack: false
       };
-    Chunk570140.Z.dispatch(_({
+    Chunk570140.Z.dispatch(d({
       type: "USER_SETTINGS_MODAL_OPEN",
       section: module,
       subsection: exports
@@ -73,7 +54,7 @@ let m = {
   setSection(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
       n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-    a.Z.dispatch(_({
+    a.Z.dispatch(d({
       type: "USER_SETTINGS_MODAL_SET_SECTION",
       section: e,
       subsection: t
@@ -113,47 +94,30 @@ let m = {
     });
     let {
       username: n,
-      email: l,
-      emailToken: f,
-      password: p,
-      avatar: m,
-      newPassword: g,
-      discriminator: E
+      email: s,
+      emailToken: u,
+      password: d,
+      avatar: f,
+      newPassword: _,
+      discriminator: p
     } = e, {
-      close: b
-    } = t;
-    return (0, s.Z)(e => {
-      let t = h(_({
-          username: n,
-          email: l,
-          email_token: f,
-          password: p,
-          avatar: m,
-          new_password: g
-        }, e), {
-          discriminator: null != E && "" !== E ? E : true
-        }),
-        a = i.K.get(c.JkL),
-        o = (0, u.xJ)();
-      null != o && null != a && (t.push_provider = o, t.push_token = a);
-      let s = i.K.get(c.scU);
-      return null != u.mv && null != s && (t.push_voip_provider = u.mv, t.push_voip_token = s), r.tn.patch({
-        url: c.ANM.ME,
-        oldFormErrors: true,
-        body: t,
-        rejectWithError: false
-      })
-    }, {
-      checkEnabled: false,
-      modalProps: {
-        title: d.intl.string(d.t.clQc1f)
-      },
-      hooks: {
-        onEarlyClose: () => a.Z.dispatch({
-          type: "USER_SETTINGS_MODAL_SUBMIT_FAILURE",
-          errors: {}
-        })
-      }
+      close: h
+    } = t, m = {
+      username: n,
+      email: s,
+      email_token: u,
+      password: d,
+      avatar: f,
+      new_password: _,
+      discriminator: null != p && "" !== p ? p : true
+    }, g = i.K.get(l.JkL), E = (0, c.xJ)();
+    null != E && null != g && (m.push_provider = E, m.push_token = g);
+    let b = i.K.get(l.scU);
+    return null != c.mv && null != b && (m.push_voip_provider = c.mv, m.push_voip_token = b), r.tn.patch({
+      url: l.ANM.ME,
+      oldFormErrors: true,
+      body: m,
+      rejectWithError: false
     }).then(e => {
       let t = e.body,
         n = t.token;
@@ -164,16 +128,16 @@ let m = {
       }), a.Z.dispatch({
         type: "CURRENT_USER_UPDATE",
         user: t
-      }), true !== m && (0, o.Z)({
+      }), true !== f && (0, o.Z)({
         avatarHash: t.avatar
-      }), null != g && a.Z.dispatch({
+      }), null != _ && a.Z.dispatch({
         type: "USER_PASSWORD_UPDATE",
         user: t,
-        newPassword: g
-      }), null != p && null != g && a.Z.dispatch({
+        newPassword: _
+      }), null != d && null != _ && a.Z.dispatch({
         type: "PASSWORD_UPDATED",
         userId: t.id
-      }), b ? this.close() : this.submitComplete(), e
+      }), h ? this.close() : this.submitComplete(), e
     }, e => (a.Z.dispatch({
       type: "USER_SETTINGS_MODAL_SUBMIT_FAILURE",
       errors: e.body

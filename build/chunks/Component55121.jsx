@@ -24,14 +24,14 @@ function _(t) {
     hasAlreadyLinked: _,
     canStartAuthorization: x,
     bodyText: m,
-    title: p
+    title: g
   } = t;
   return (0, i.jsxs)(o.IX, {
     transitionState: s,
     onClose: l,
     children: [(0, i.jsx)(r.y, {
       sku: e,
-      title: p
+      title: g
     }), (0, i.jsxs)(o.fef, {
       children: [(0, i.jsxs)("div", {
         className: d.modalBody,

@@ -2,7 +2,7 @@
 /** chunk id: 434404, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => R
 }), require("./953529.js"), require("./539854.js"), require("./388685.js");
 var Chunk990547 = require("./990547.js"),
   Chunk544891 = require("./544891.js"),
@@ -19,13 +19,11 @@ var Chunk990547 = require("./990547.js"),
   Chunk314897 = require("./314897.js"),
   Chunk271383 = require("./271383.js"),
   Chunk430824 = require("./430824.js"),
-  Chunk546796 = require("./546796.js"),
   Chunk573261 = require("./573261.js"),
   Chunk999382 = require("./999382.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx");
+  Chunk981631 = require("./981631.js");
 
-function I(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +32,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,15 +56,15 @@ function S(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = N(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,15 +72,15 @@ function C(e, t) {
   return i
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = new Chunk710845.Z("GuildSettingsActionCreators"),
-  P = {
+let C = new Chunk710845.Z("GuildSettingsActionCreators"),
+  N = {
     init(e, t, n, r) {
       a.Z.dispatch({
         type: "GUILD_SETTINGS_INIT",
@@ -94,7 +92,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
     },
     async open(e, t, r, i) {
       var a;
-      await Promise.all([n.e("61924"), n.e("57804"), n.e("70363"), n.e("49049"), n.e("36599"), n.e("7654"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("38697"), n.e("86736"), n.e("6850"), n.e("58227"), n.e("63575"), n.e("62856"), n.e("44686"), n.e("384"), n.e("66201"), n.e("93375"), n.e("39206"), n.e("22516"), n.e("18295"), n.e("59231")]).then(n.bind(n, 994763)), (null == (a = g.Z.getGuild(e)) ? true : a.features.has(O.GuildFeatures.COMMUNITY)) && (t === O.pNK.GUILD_AUTOMOD && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_AUTOMOD), t === O.pNK.MEMBER_VERIFICATION && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), P.init(e, t, r, i), p.Z.closeGuildSidebar(e), (0, o.jN)(O.S9g.GUILD_SETTINGS)
+      await Promise.all([n.e("61924"), n.e("57804"), n.e("70363"), n.e("49049"), n.e("36599"), n.e("7654"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("38697"), n.e("86736"), n.e("6850"), n.e("58227"), n.e("63575"), n.e("62856"), n.e("44686"), n.e("384"), n.e("66201"), n.e("93375"), n.e("39206"), n.e("22516"), n.e("18295"), n.e("59231")]).then(n.bind(n, 994763)), (null == (a = g.Z.getGuild(e)) ? true : a.features.has(y.GuildFeatures.COMMUNITY)) && (t === y.pNK.GUILD_AUTOMOD && (t = y.pNK.SAFETY, i = y.KsC.SAFETY_AUTOMOD), t === y.pNK.MEMBER_VERIFICATION && (t = y.pNK.SAFETY, i = y.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), N.init(e, t, r, i), p.Z.closeGuildSidebar(e), (0, o.jN)(y.S9g.GUILD_SETTINGS)
     },
     close() {
       Chunk570140.Z.dispatch({
@@ -109,8 +107,8 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
     },
     setSection(e, t) {
       var n;
-      let r = y.Z.getGuildId();
-      null != r && ((null == (n = g.Z.getGuild(r)) ? true : n.features.has(O.GuildFeatures.COMMUNITY)) && (e === O.pNK.GUILD_AUTOMOD && (e = O.pNK.SAFETY, t = O.KsC.SAFETY_AUTOMOD), e === O.pNK.MEMBER_VERIFICATION && (e = O.pNK.SAFETY, t = O.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), a.Z.dispatch({
+      let r = b.Z.getGuildId();
+      null != r && ((null == (n = g.Z.getGuild(r)) ? true : n.features.has(y.GuildFeatures.COMMUNITY)) && (e === y.pNK.GUILD_AUTOMOD && (e = y.pNK.SAFETY, t = y.KsC.SAFETY_AUTOMOD), e === y.pNK.MEMBER_VERIFICATION && (e = y.pNK.SAFETY, t = y.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), a.Z.dispatch({
         type: "GUILD_SETTINGS_SET_SECTION",
         section: e,
         subsection: t
@@ -128,7 +126,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
       searchQuery: t
     }),
     updateEmbed: (e, t, n) => i.tn.patch({
-      url: O.ANM.GUILD_WIDGET(e),
+      url: y.ANM.GUILD_WIDGET(e),
       body: {
         enabled: t,
         channel_id: n
@@ -146,22 +144,15 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
     updateMFALevel(e) {
       let {
         guildId: t,
-        level: n,
-        isEnabled: r
+        level: n
       } = e;
-      return (0, E.Z)(e => i.tn.post({
-        url: O.ANM.GUILD_MFA(t),
-        body: T({
+      return i.tn.post({
+        url: y.ANM.GUILD_MFA(t),
+        body: {
           level: n
-        }, e),
+        },
         oldFormErrors: true,
         rejectWithError: false
-      }), {
-        modalProps: {
-          title: v.intl.string(v.t.Wi9LEV),
-          actionText: r ? v.intl.string(v.t["MP0Ho+"]) : v.intl.string(v.t.yZcYGa)
-        },
-        checkEnabled: false
       }).then(e => a.Z.dispatch({
         type: "GUILD_SETTINGS_SET_MFA_SUCCESS",
         level: e.body.level
@@ -169,7 +160,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
     },
     updateIcon(e, t) {
       i.tn.patch({
-        url: O.ANM.GUILD(e),
+        url: y.ANM.GUILD(e),
         body: {
           icon: t
         },
@@ -196,13 +187,13 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
         safetyAlertsChannelId: n,
         profile: r
       } = e;
-      let i = T({}, C(e, ["safetyAlertsChannelId", "profile"]));
-      null != r && (i.profile = T({}, null != (t = i.profile) ? t : {}, r)), null != y.Z.getGuildId() && null != n && (i.safetyAlertsChannelId = n), a.Z.dispatch(T({
+      let i = v({}, S(e, ["safetyAlertsChannelId", "profile"]));
+      null != r && (i.profile = v({}, null != (t = i.profile) ? t : {}, r)), null != b.Z.getGuildId() && null != n && (i.safetyAlertsChannelId = n), a.Z.dispatch(v({
         type: "GUILD_SETTINGS_UPDATE"
       }, i))
     },
     updateGuildProfile(e, t) {
-      a.Z.dispatch(T({
+      a.Z.dispatch(v({
         type: "GUILD_SETTINGS_PROFILE_UPDATE",
         guildId: e
       }, t))
@@ -223,16 +214,16 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
         explicitContentFilter: g,
         features: E,
         systemChannelFlags: b,
-        preferredLocale: y,
-        rulesChannelId: v,
-        safetyAlertsChannelId: I,
-        ownerConfiguredContentLevel: S,
-        discoverySplash: C,
-        publicUpdatesChannelId: N,
+        preferredLocale: O,
+        rulesChannelId: I,
+        safetyAlertsChannelId: S,
+        ownerConfiguredContentLevel: A,
+        discoverySplash: N,
+        publicUpdatesChannelId: R,
         premiumProgressBarEnabled: P,
         profile: D,
         moderatorReportingEnabled: w
-      } = t, L = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, x = A(T({
+      } = t, L = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, x = T(v({
         name: n,
         description: r,
         icon: o,
@@ -240,7 +231,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
         banner: u,
         home_header: d,
         features: E,
-        preferred_locale: y,
+        preferred_locale: O,
         afk_channel_id: f,
         afk_timeout: _,
         system_channel_id: p,
@@ -248,11 +239,11 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
         default_message_notifications: m,
         explicit_content_filter: g,
         system_channel_flags: b,
-        rules_channel_id: v,
-        owner_configured_content_level: S,
-        discovery_splash: C,
-        public_updates_channel_id: N,
-        safety_alerts_channel_id: I
+        rules_channel_id: I,
+        owner_configured_content_level: A,
+        discovery_splash: N,
+        public_updates_channel_id: R,
+        safety_alerts_channel_id: S
       }, null != P ? {
         premium_progress_bar_enabled: P
       } : null), {
@@ -262,7 +253,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
       return a.Z.dispatch({
         type: "GUILD_SETTINGS_SUBMIT"
       }), i.tn.patch({
-        url: O.ANM.GUILD(e),
+        url: y.ANM.GUILD(e),
         query: {
           for_discovery: L.isForDiscovery
         },
@@ -278,13 +269,13 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
         if (a.Z.dispatch({
             type: "GUILD_SETTINGS_SUBMIT_FAILURE",
             errors: e.body
-          }), R.error("Failed to save guild settings", {
+          }), C.error("Failed to save guild settings", {
             errors: e.body
           }), L.throwErr) throw e.body
       })
     },
     updateGuildModeration: (e, t) => i.tn.patch({
-      url: O.ANM.GUILD(e),
+      url: y.ANM.GUILD(e),
       body: {
         verification_level: t.verificationLevel,
         explicit_content_filter: t.explicitContentFilter
@@ -295,12 +286,12 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
     transferOwnership(e, t) {
       let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
         i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null;
-      return (0, E.Z)(a => b.Z.patch({
-        url: O.ANM.GUILD(e),
-        body: T({
+      return E.Z.patch({
+        url: y.ANM.GUILD(e),
+        body: {
           owner_id: t,
           code: i
-        }, a),
+        },
         oldFormErrors: true,
         trackedActionData: {
           event: r.NetworkActionNames.GUILD_TRANSFER_OWNERSHIP,
@@ -310,18 +301,12 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
           }
         },
         rejectWithError: false
-      }), {
-        modalProps: {
-          title: v.intl.string(v.t.Z5s7PM),
-          actionText: v.intl.string(v.t.Z5s7PM)
-        },
-        checkEnabled: false
       })
     },
     sendTransferOwnershipPincode(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-      return b.Z.put({
-        url: O.ANM.GUILD_PINCODE(e),
+      return E.Z.put({
+        url: y.ANM.GUILD_PINCODE(e),
         oldFormErrors: true,
         trackedActionData: {
           event: r.NetworkActionNames.GUILD_TRANSFER_OWNERSHIP_SEND_CODE,
@@ -333,39 +318,29 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
         rejectWithError: false
       })
     },
-    deleteGuild: (e, t) => (0, E.Z)(t => i.tn.post({
-      url: O.ANM.GUILD_DELETE(e),
-      body: t,
+    deleteGuild: e => i.tn.post({
+      url: y.ANM.GUILD_DELETE(e),
       oldFormErrors: true,
       rejectWithError: false
-    }), {
-      modalProps: {
-        title: v.intl.formatToPlainString(v.t.us7mC1, {
-          name: t
-        }),
-        actionText: v.intl.string(v.t.l3hWP6),
-        disallowBackupCodes: true
-      },
-      checkEnabled: false
     }).then(() => {
-      P.close()
+      N.close()
     }),
     async leaveGuild(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
         n = f.Z.isLurking(e);
       await i.tn.del({
-        url: O.ANM.GUILD_LEAVE(e),
+        url: y.ANM.GUILD_LEAVE(e),
         body: {
           lurking: n || m.ZP.isCurrentUserGuest(e)
         },
         oldFormErrors: true,
         rejectWithError: false
-      }), P.close(), t && n && (0, _.uL)(O.Z5c.GUILD_DISCOVERY)
+      }), N.close(), t && n && (0, _.uL)(y.Z5c.GUILD_DISCOVERY)
     },
     async updateMemberRoles(e, t, n, r, o) {
       if (d.Z.isFullServerPreview(e) && t === h.default.getId()) return void(0, u.og)(e, n);
       await i.tn.patch({
-        url: O.ANM.GUILD_MEMBER(e, t),
+        url: y.ANM.GUILD_MEMBER(e, t),
         body: {
           roles: n
         },
@@ -384,7 +359,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
       }))
     },
     bulkAddMemberRoles: (e, t, n) => i.tn.patch({
-      url: O.ANM.GUILD_ROLE_MEMBERS(e, t),
+      url: y.ANM.GUILD_ROLE_MEMBERS(e, t),
       body: {
         member_ids: n
       },
@@ -398,7 +373,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
       })
     }),
     enableIntegration: (e, t, n) => i.tn.post({
-      url: O.ANM.GUILD_INTEGRATIONS(e),
+      url: y.ANM.GUILD_INTEGRATIONS(e),
       body: {
         type: t,
         id: n
@@ -407,7 +382,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
       rejectWithError: false
     }),
     disableIntegration: (e, t) => i.tn.del({
-      url: O.ANM.GUILD_INTEGRATION(e, t),
+      url: y.ANM.GUILD_INTEGRATION(e, t),
       oldFormErrors: true,
       rejectWithError: false
     }),
@@ -418,7 +393,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
         enable_emoticons: a
       };
       return i.tn.patch({
-        url: O.ANM.GUILD_INTEGRATION(e, t),
+        url: y.ANM.GUILD_INTEGRATION(e, t),
         body: o,
         oldFormErrors: true,
         rejectWithError: false
@@ -426,14 +401,14 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
     },
     syncIntegration(e, t) {
       i.tn.post({
-        url: O.ANM.GUILD_INTEGRATION_SYNC(e, t),
+        url: y.ANM.GUILD_INTEGRATION_SYNC(e, t),
         oldFormErrors: true,
         rejectWithError: false
       })
     },
     async migratePinPermission(e) {
       await i.tn.post({
-        url: O.ANM.GUILD_MIGRATE_PIN_PERMISSION(e),
+        url: y.ANM.GUILD_MIGRATE_PIN_PERMISSION(e),
         rejectWithError: true
       }).then(() => a.Z.dispatch({
         type: "GUILD_SETTINGS_PIN_PERMISSION_MIGRATED",
@@ -442,7 +417,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
     },
     async migrateSlowmodePermission(e) {
       await i.tn.post({
-        url: O.ANM.GUILD_MIGRATE_SLOWMODE_PERMISSION(e),
+        url: y.ANM.GUILD_MIGRATE_SLOWMODE_PERMISSION(e),
         rejectWithError: true
       }).then(() => a.Z.dispatch({
         type: "GUILD_SETTINGS_SLOWMODE_PERMISSION_MIGRATED",
@@ -454,7 +429,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
         migratePin: n,
         migrateSlowmode: r
       } = t, i = [];
-      n && i.push(P.migratePinPermission(e)), r && i.push(P.migrateSlowmodePermission(e)), await Promise.all(i)
+      n && i.push(N.migratePinPermission(e)), r && i.push(N.migrateSlowmodePermission(e)), await Promise.all(i)
     }
   },
-  D = P
+  R = N

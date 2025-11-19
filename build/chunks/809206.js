@@ -2,93 +2,63 @@
 /** chunk id: 809206, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FD: () => h,
-  I5: () => O,
-  Mn: () => b,
-  NI: () => A,
-  OU: () => w,
-  P6: () => P,
-  S2: () => E,
-  V3: () => y,
-  W0: () => v,
-  W3: () => R,
-  ZB: () => T,
-  Zy: () => m,
-  b9: () => C,
-  e1: () => I,
-  iR: () => D,
-  s4: () => S,
-  si: () => N,
-  ss: () => g
+  FD: () => f,
+  I5: () => E,
+  Mn: () => m,
+  NI: () => I,
+  OU: () => R,
+  P6: () => C,
+  S2: () => h,
+  V3: () => g,
+  W0: () => b,
+  W3: () => A,
+  ZB: () => O,
+  Zy: () => _,
+  b9: () => T,
+  e1: () => y,
+  iR: () => N,
+  s4: () => v,
+  si: () => S,
+  ss: () => p
 });
 var Chunk544891 = require("./544891.js"),
   Chunk433517 = require("./433517.js"),
   Chunk780384 = require("./780384.js"),
   Chunk570140 = require("./570140.js"),
   Chunk703656 = require("./703656.js"),
-  Chunk546796 = require("./546796.js"),
   Chunk893776 = require("./893776.js"),
   Chunk981631 = require("./981631.js"),
   Chunk792101 = require("./792101.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function p(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      _(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function h() {
+function f() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_INIT"
   })
 }
 
-function m() {
+function _() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_CLOSE"
   })
 }
 
-function g(e, t) {
-  let n = t ? f.intl.string(f.t["8lQ2rR"]) : f.intl.string(f.t.jf5GGb),
-    i = t ? u.ANM.DELETE_ACCOUNT : u.ANM.DISABLE_ACCOUNT,
-    a = t => r.tn.post({
-      url: i,
-      body: p({
-        password: e
-      }, t),
-      oldFormErrors: true,
-      rejectWithError: false
-    });
-  return (0, l.Z)(a, {
-    modalProps: {
-      title: n
+function p(e, t) {
+  let n = t ? c.ANM.DELETE_ACCOUNT : c.ANM.DISABLE_ACCOUNT;
+  return r.tn.post({
+    url: n,
+    body: {
+      password: e
     },
-    checkEnabled: false
+    oldFormErrors: true,
+    rejectWithError: false
   }).then(() => {
-    c.Z.logoutInternal(), (0, s.uL)(u.Z5c.DEFAULT_LOGGED_OUT)
+    l.Z.logoutInternal(), (0, s.uL)(c.Z5c.DEFAULT_LOGGED_OUT)
   })
 }
-async function E(e) {
+async function h(e) {
   let t = await r.tn.patch({
-      url: u.ANM.ME,
+      url: c.ANM.ME,
       oldFormErrors: true,
       body: e,
       rejectWithError: false
@@ -111,61 +81,49 @@ async function E(e) {
   }), t
 }
 
-function b(e) {
+function m(e) {
+  var t, n;
   let {
-    username: t,
-    discriminator: n,
-    email: r,
-    emailToken: a,
-    password: s,
-    avatar: c,
+    username: r,
+    discriminator: a,
+    email: s,
+    emailToken: l,
+    password: d,
+    avatar: f,
     avatarDescription: _,
-    avatarId: h,
+    avatarId: p,
     avatarDecoration: m,
     newPassword: g,
-    globalName: b,
-    legacyUsername: y,
-    nameplate: O,
-    primaryGuildId: v,
-    displayNameStyles: I
+    globalName: E,
+    legacyUsername: b,
+    nameplate: y,
+    primaryGuildId: O,
+    displayNameStyles: v
   } = e;
-  return o.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT"
-  }), (0, l.Z)(e => {
-    var o, l;
-    let f = p({
-      username: t,
-      email: r,
-      email_token: a,
-      password: s,
-      avatar: c,
-      avatar_description: _,
-      avatar_id: h,
-      discriminator: n,
-      global_name: b,
-      legacy_username: y,
-      new_password: g
-    }, e);
-    true !== m && (f.avatar_decoration_sku_id = null != (o = null == m ? true : m.skuId) ? o : null), true !== O && (f.nameplate_sku_id = null != (l = null == O ? true : O.skuId) ? l : null), true !== v && (f.primary_guild_id = v), null != I ? (f.display_name_font_id = I.fontId, f.display_name_effect_id = I.effectId, f.display_name_colors = I.colors) : null === I && (f.display_name_font_id = null, f.display_name_effect_id = null, f.display_name_colors = null);
-    let T = i.K.get(u.JkL),
-      S = (0, d.xJ)();
-    null != S && null != T && (f.push_provider = S, f.push_token = T);
-    let A = i.K.get(u.scU);
-    return null != d.mv && null != A && (f.push_voip_provider = d.mv, f.push_voip_token = A), E(f)
-  }, {
-    checkEnabled: false,
-    modalProps: {
-      title: f.intl.string(f.t.clQc1f)
-    },
-    hooks: {
-      onEarlyClose: () => o.Z.dispatch({
-        type: "USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE",
-        errors: {}
-      })
-    }
-  }).then(e => (o.Z.dispatch({
+  });
+  let I = {
+    username: r,
+    email: s,
+    email_token: l,
+    password: d,
+    avatar: f,
+    avatar_description: _,
+    avatar_id: p,
+    discriminator: a,
+    global_name: E,
+    legacy_username: b,
+    new_password: g
+  };
+  true !== m && (I.avatar_decoration_sku_id = null != (t = null == m ? true : m.skuId) ? t : null), true !== y && (I.nameplate_sku_id = null != (n = null == y ? true : y.skuId) ? n : null), true !== O && (I.primary_guild_id = O), null != v ? (I.display_name_font_id = v.fontId, I.display_name_effect_id = v.effectId, I.display_name_colors = v.colors) : null === v && (I.display_name_font_id = null, I.display_name_effect_id = null, I.display_name_colors = null);
+  let T = i.K.get(c.JkL),
+    S = (0, u.xJ)();
+  null != S && null != T && (I.push_provider = S, I.push_token = T);
+  let A = i.K.get(c.scU);
+  return null != u.mv && null != A && (I.push_voip_provider = u.mv, I.push_voip_token = A), h(I).then(e => (o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS"
-  }), (null != c || null != h) && o.Z.dispatch({
+  }), (null != f || null != p) && o.Z.dispatch({
     type: "RECENT_AVATARS_UPDATE"
   }), e), e => (o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE",
@@ -173,9 +131,9 @@ function b(e) {
   }), e))
 }
 
-function y(e) {
+function g(e) {
   return r.tn.post({
-    url: u.ANM.USER_HARVEST,
+    url: c.ANM.USER_HARVEST,
     body: {
       backends: e
     },
@@ -184,79 +142,79 @@ function y(e) {
   })
 }
 
-function O(e) {
+function E(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR",
     avatar: e
-  }), null == e ? a.uv.announce(f.intl.string(f.t["f1+oNk"])) : a.uv.announce(f.intl.string(f.t.NstziV))
+  }), null == e ? a.uv.announce(d.intl.string(d.t["f1+oNk"])) : a.uv.announce(d.intl.string(d.t.NstziV))
 }
 
-function v(e) {
+function b(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME",
     globalName: e
   })
 }
 
-function I(e) {
+function y(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED",
     legacyUsernameDisabled: e
   })
 }
 
-function T(e) {
+function O(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_COLLECTIBLES_ITEM",
     item: e
   })
 }
 
-function S(e) {
+function v(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID",
     primaryGuildId: e
   })
 }
 
-function A(e) {
+function I(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES",
     displayNameStyles: e
   })
 }
 
-function C() {
+function T() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_CLEAR_ERRORS"
   })
 }
 
-function N() {
+function S() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
   })
 }
 
-function R() {
+function A() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
-function P() {
+function C() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
   })
 }
 
-function D() {
+function N() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED"
   })
 }
 
-function w() {
+function R() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES"
   })

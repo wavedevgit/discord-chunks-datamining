@@ -327,7 +327,7 @@ let eO = {
               name: i
             } = t.guild, l = () => {
               E.S.subscribeOnce(eh.CkL.LAYER_POP_COMPLETE, () => {
-                S.Z.deleteGuild(t.guild.id, i)
+                S.Z.deleteGuild(t.guild.id)
               }), (0, s.xf)()
             };
             e.mfaEnabled ? (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, ev(e_({}, e), {
