@@ -111,11 +111,7 @@ let f = 200,
     return (0, r.jsxs)("div", {
       ref: P,
       style: k,
-      className: o()(d.container, {
-        [d.scrollLeft]: I,
-        [d.scrollRight]: S,
-        [d.scrollBoth]: I && S
-      }),
+      className: d.container,
       children: [O && (0, r.jsxs)("div", {
         className: d.actions,
         children: [(0, r.jsx)(l.hU, {
@@ -135,7 +131,11 @@ let f = 200,
         direction: "horizontal",
         gap: n,
         ref: D,
-        className: d.children,
+        className: o()(d.children, {
+          [d.scrollLeft]: I,
+          [d.scrollRight]: S,
+          [d.scrollBoth]: I && S
+        }),
         tabIndex: 0,
         onFocus: e => {
           let t = D.current;
