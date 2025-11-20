@@ -206,6 +206,5 @@ function P() {
   })
 }
 let N = () => (0, Chunk54381.jsx)(Chunk143316.Z, {
-  onClick: () => Chunk585483.S.dispatch(Chunk981631.CkL.INBOX_MARK_ALL_UNREADS_READ),
-  type: "top-header"
+  onClick: () => Chunk585483.S.dispatch(Chunk981631.CkL.INBOX_MARK_ALL_UNREADS_READ)
 })

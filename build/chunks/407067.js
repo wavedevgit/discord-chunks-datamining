@@ -9,6 +9,5 @@ module.exports = {
   inboxIcon: "inboxIcon_ab6641",
   inboxTitle: "inboxTitle_ab6641",
   controls: "controls_ab6641",
-  controlButton: "controlButton_ab6641",
   iconBadge: "iconBadge_ab6641"
 }
