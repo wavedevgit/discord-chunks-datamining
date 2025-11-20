@@ -72,8 +72,8 @@ function h(e) {
     }), (0, r.jsx)(l.Mb, {
       title: p.intl.string(p.t.fW7UqM),
       body: p.intl.string(p.t["yQ0X+T"]),
+      position: "bottom",
       caretConfig: {
-        position: "top",
         align: "center"
       },
       assetUrl: "https://cdn.discordapp.com/assets/media_channel/media_channel_upsell_demo.mp4",

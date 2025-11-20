@@ -138,19 +138,20 @@ class N extends(r = Chunk473749.Component) {
       nudgeAlignIntoViewport: n,
       useRawTargetDimensions: r,
       spacing: a,
-      autoInvert: o,
-      fixed: s,
-      positionKey: l,
-      disablePointerEvents: c,
-      layerContext: u,
-      clickTrap: d = false
+      offset: o,
+      autoInvert: s,
+      fixed: l,
+      positionKey: c,
+      disablePointerEvents: u,
+      layerContext: d,
+      clickTrap: _ = false
     } = this.props, {
-      resizeKey: _,
-      isLoading: p,
-      shouldShowLoadingState: g
+      resizeKey: p,
+      isLoading: g,
+      shouldShowLoadingState: E
     } = this.state;
-    return Chunk952265 && !Chunk728285 ? null : (0, Chunk54381.jsx)(Chunk793030.mh4, {
-      layerContext: null != Chunk24156 ? Chunk24156 : Chunk314910.nz,
+    return Chunk728285 && !Chunk574254 ? null : (0, Chunk54381.jsx)(Chunk793030.mh4, {
+      layerContext: null != Chunk374470 ? Chunk374470 : Chunk314910.nz,
       children: (0, Chunk54381.jsx)(Chunk481060.jRF, {
         ref: this.layerRef,
         onMount: this.handlePopoutShow,
@@ -162,12 +163,13 @@ class N extends(r = Chunk473749.Component) {
         nudgeAlignIntoViewport: require,
         useRawTargetDimensions: r,
         spacing: Chunk473749,
-        autoInvert: Chunk299608,
-        fixed: s,
-        positionKey: null != Chunk97613 ? Chunk97613 : String(Chunk846519),
-        disablePointerEvents: c,
+        offset: Chunk299608,
+        autoInvert: s,
+        fixed: Chunk97613,
+        positionKey: null != c ? c : String(Chunk952265),
+        disablePointerEvents: Chunk24156,
         onPositionChange: this.handlePopoutPositionChange,
-        clickTrap: Chunk374470,
+        clickTrap: Chunk846519,
         children: this.renderPopout
       })
     })

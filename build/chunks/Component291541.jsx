@@ -80,36 +80,48 @@ let m = {
         showActions: n,
         showTextLink: c,
         caretAlign: u,
-        size: f
-      } = e, h = p(e, ["showAsset", "showActions", "showTextLink", "caretAlign", "size"]);
-      let [m, g] = i.useState(false), E = i.useRef(null);
+        alignmentStrategy: f,
+        align: h,
+        size: m,
+        position: g
+      } = e, E = p(e, ["showAsset", "showActions", "showTextLink", "caretAlign", "alignmentStrategy", "align", "size", "position"]);
+      let [b, y] = i.useState(false), O = i.useRef(null);
       return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.J2, _(d({}, h), {
-          size: f,
-          targetElementRef: E,
-          shouldShow: m,
-          onRequestClose: () => g(false),
+        style: {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "400px"
+        },
+        children: [(0, r.jsx)(o.J2, _(d({}, E), {
+          position: g,
+          size: m,
+          align: h,
+          alignmentStrategy: f,
+          targetElementRef: O,
+          shouldShow: b,
+          onRequestClose: () => y(false),
           graphic: t ? {
             type: "image",
-            src: "sm" === f ? l.Z : s.Z
+            src: "sm" === m ? l.Z : s.Z
           } : true,
           caretConfig: {
             align: u
           },
           actions: n ? [{
             text: "Close",
-            onClick: () => g(false)
+            onClick: () => y(false)
           }] : true,
           textLink: c ? {
             text: "Learn More",
             link: "https://discord.com",
             external: true
           } : true
-        })), (0, r.jsx)(a.Button, {
+        }), g), (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Toggle Popover",
-          buttonRef: E,
-          onClick: () => g(!m)
+          buttonRef: O,
+          onClick: () => y(!b)
         })]
       })
     },
@@ -123,6 +135,24 @@ let m = {
         label: "Body Text",
         type: "text",
         defaultValue: "This is a sample popover with customizable properties."
+      },
+      position: {
+        label: "Position",
+        type: "select",
+        defaultValue: "top",
+        options: [{
+          label: "Top",
+          value: "top"
+        }, {
+          label: "Bottom",
+          value: "bottom"
+        }, {
+          label: "Left",
+          value: "left"
+        }, {
+          label: "Right",
+          value: "right"
+        }]
       },
       size: {
         label: "Size",
@@ -187,6 +217,42 @@ let m = {
           value: "end"
         }]
       },
+      alignmentStrategy: {
+        label: "Alignment Strategy",
+        type: "select",
+        defaultValue: "trigger-center",
+        options: [{
+          label: "Trigger Center (caret points at trigger)",
+          value: "trigger-center"
+        }, {
+          label: "Edge (popover edge aligns with trigger)",
+          value: "edge"
+        }]
+      },
+      align: {
+        label: 'Align (only applies with "edge" strategy)',
+        type: "select",
+        defaultValue: true,
+        options: [{
+          label: "None",
+          value: true
+        }, {
+          label: "Top",
+          value: "top"
+        }, {
+          label: "Center",
+          value: "center"
+        }, {
+          label: "Bottom",
+          value: "bottom"
+        }, {
+          label: "Left",
+          value: "left"
+        }, {
+          label: "Right",
+          value: "right"
+        }]
+      },
       showAsset: {
         label: "Show Asset",
         type: "boolean",
@@ -225,7 +291,7 @@ let m = {
             text: "Learn More",
             onClick: () => l(false)
           } : true
-        })), (0, r.jsx)(a.Button, {
+        }), n.position), (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Show Video Popover",
           buttonRef: c,
@@ -245,9 +311,10 @@ let m = {
     id: "multi-step-popover",
     docs: "https://design.discord.tools/components/web/popover",
     component: function(e) {
-      let {
+      var {
         showExpressive: t
-      } = e, [n, l] = i.useState(false), u = i.useRef(null), d = [{
+      } = e, n = p(e, ["showExpressive"]);
+      let [l, u] = i.useState(false), f = i.useRef(null), h = [{
         title: "Welcome to the Feature!",
         body: "This is the first step of our multi-step introduction.",
         asset: (0, r.jsx)("img", {
@@ -289,21 +356,20 @@ let m = {
         }
       }];
       return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.e4, {
-          targetElementRef: u,
-          shouldShow: n,
-          onRequestClose: () => l(false),
-          steps: d,
+        children: [(0, r.jsx)(o.e4, _(d({}, n), {
+          targetElementRef: f,
+          shouldShow: l,
+          onRequestClose: () => u(false),
+          steps: h,
           caretConfig: {
-            position: "top",
             align: "center"
           },
           onStepChange: () => {}
-        }), (0, r.jsx)(a.Button, {
+        }), n.position), (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Show Multi-Step",
-          buttonRef: u,
-          onClick: () => l(!n)
+          buttonRef: f,
+          onClick: () => u(!l)
         })]
       })
     },

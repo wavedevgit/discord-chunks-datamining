@@ -83,15 +83,14 @@ function T(e) {
         (0, m.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERKS)
       }
     },
+    position: l ? "right" : "bottom",
+    alignmentStrategy: "edge",
+    align: l ? "top" : "center",
     caretConfig: l ? {
-      position: "left",
       align: "start"
     } : {
-      position: "top",
       align: "center"
     },
-    position: l ? "right" : "bottom",
-    align: l ? "top" : "center",
     onRequestClose: () => null == n ? true : n(j.L.USER_DISMISS)
   })
 }
@@ -246,11 +245,12 @@ function M(e) {
       },
       position: l = "right",
       align: o = "top",
-      markAsDismissed: a,
-      size: u = "lg",
-      asset: d
+      alignmentStrategy: a = "edge",
+      markAsDismissed: u,
+      size: d = "lg",
+      asset: p
     } = e,
-    p = function(e, t) {
+    h = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -264,7 +264,7 @@ function M(e) {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(e, ["caretConfig", "position", "align", "markAsDismissed", "size", "asset"]);
+    }(e, ["caretConfig", "position", "align", "alignmentStrategy", "markAsDismissed", "size", "asset"]);
   return (0, r.jsx)(c.J2, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -282,20 +282,21 @@ function M(e) {
       })
     }
     return e
-  }({}, p), n = n = {
+  }({}, h), n = n = {
     graphic: {
       type: "dynamic",
       component: s.DynamicGraphicComponent.GUILD_POWERUPS_COACHMARK_ASSET,
       props: {
-        asset: d
+        asset: p
       }
     },
-    size: u,
+    size: d,
     shouldShow: true,
     position: l,
     caretConfig: i,
+    alignmentStrategy: a,
     align: o,
-    onRequestClose: () => null == a ? true : a(j.L.USER_DISMISS)
+    onRequestClose: () => null == u ? true : u(j.L.USER_DISMISS)
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

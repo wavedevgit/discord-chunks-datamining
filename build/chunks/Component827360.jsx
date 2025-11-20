@@ -26,8 +26,9 @@ let p = e => {
   }, []), (0, r.jsx)(l.J2, {
     targetElementRef: t,
     position: "right",
-    align: "top",
     size: "md",
+    alignmentStrategy: "edge",
+    align: "top",
     caretConfig: {
       align: "start"
     },

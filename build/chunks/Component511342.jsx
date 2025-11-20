@@ -33,10 +33,10 @@ function f(e) {
       children: f()
     }), (0, r.jsx)(l.Mb, {
       targetElementRef: h,
+      position: "bottom",
       title: d.intl.string(u.default.UuwXRZ),
       body: d.intl.string(u.default.MIwlcR),
       caretConfig: {
-        position: "top",
         align: "center"
       },
       assetUrl: p.Z,

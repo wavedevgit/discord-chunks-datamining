@@ -285,8 +285,7 @@ function k(e) {
       position: "top",
       align: "center",
       caretConfig: {
-        align: "center",
-        position: "top"
+        align: "center"
       }
     }) : null]
   })

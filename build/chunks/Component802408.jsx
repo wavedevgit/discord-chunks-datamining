@@ -58,7 +58,6 @@ function d(e) {
       assetUrl: f.getImageUrl((0, s.wj)(h), p),
       action: y,
       caretConfig: {
-        position: "bottom",
         align: "custom",
         customOffset: E
       },

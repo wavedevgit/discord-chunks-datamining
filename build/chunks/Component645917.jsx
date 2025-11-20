@@ -2,8 +2,8 @@
 /** chunk id: 645917, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => O,
-  Z: () => v
+  R: () => y,
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,11 +13,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk744399 = require("./744399.jsx"),
   Chunk966902 = require("./966902.jsx"),
   Chunk237872 = require("./237872.jsx"),
-  Chunk945909 = require("./945909.js"),
   Chunk481060 = require("./481060.js"),
   Chunk420153 = require("./420153.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,20 +25,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,15 +49,15 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function E(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var n, r, i = b(e, t);
+  var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,7 +65,7 @@ function E(e, t) {
   return i
 }
 
-function b(e, t) {
+function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -74,20 +73,20 @@ function b(e, t) {
   return i
 }
 
-function y(e) {
+function b(e) {
   let {
     title: t,
     body: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: _.header,
-    children: [(0, r.jsx)(f.Heading, {
+    className: f.header,
+    children: [(0, r.jsx)(d.Heading, {
       variant: "heading-md/semibold",
-      className: _.title,
+      className: f.title,
       children: t
     }), (0, r.jsx)("div", {
-      className: _.headerBody,
-      children: (0, r.jsx)(f.Text, {
+      className: f.headerBody,
+      children: (0, r.jsx)(d.Text, {
         variant: "text-sm/normal",
         color: "none",
         children: n
@@ -96,81 +95,90 @@ function y(e) {
   })
 }
 
-function O(e) {
+function y(e) {
   var t, {
       title: n,
       body: a,
-      graphic: p,
-      size: m = "md",
-      actions: b,
-      gradientColor: O,
-      onRequestClose: v,
-      position: I,
-      caretConfig: T,
-      scrollBehavior: S,
-      showCloseButton: A = true,
-      isCaretHoverable: C = false,
-      shouldTrapFocus: N = false,
-      returnRef: R,
-      onNudgeChange: P
+      graphic: _,
+      size: h = "md",
+      actions: E,
+      gradientColor: y,
+      onRequestClose: O,
+      position: v,
+      caretConfig: I,
+      scrollBehavior: T,
+      showCloseButton: S = true,
+      isCaretHoverable: A = false,
+      shouldTrapFocus: C = false,
+      returnRef: N,
+      onNudgeChange: R
     } = e,
-    D = E(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isCaretHoverable", "shouldTrapFocus", "returnRef", "onNudgeChange"]);
-  let [w, L] = i.useState(null != I ? I : "top");
+    P = g(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isCaretHoverable", "shouldTrapFocus", "returnRef", "onNudgeChange"]);
+  let [D, w] = i.useState(null != v ? v : "top");
   i.useEffect(() => {
-    null != I && L(I)
-  }, [I]);
-  let x = i.useMemo(() => {
+    null != v && w(v)
+  }, [v]);
+  let L = i.useMemo(() => {
       var e;
       return {
-        position: (0, d.z)(w),
-        align: null != (e = null == T ? true : T.align) ? e : "center",
-        customOffset: null == T ? true : T.customOffset
+        align: null != (e = null == I ? true : I.align) ? e : "center",
+        customOffset: null == I ? true : I.customOffset
       }
-    }, [w, T]),
-    M = i.useCallback(() => {
-      null == v || v()
-    }, [v]),
+    }, [I]),
+    x = i.useCallback(() => {
+      null == O || O()
+    }, [O]),
+    M = i.useCallback(e => {
+      null == O || O(e)
+    }, [O]),
     k = i.useCallback(e => {
-      null == v || v(e)
-    }, [v]),
-    j = i.useCallback(e => {
-      L(e)
+      w(e)
     }, []),
-    U = C ? _.caretHoverable : true;
-  return (0, r.jsx)(s.m, g(h({}, D), {
-    position: w,
-    onRequestClose: M,
-    gradientColor: O,
-    onPositionChange: j,
-    onNudgeChange: P,
-    scrollBehavior: S,
-    modal: N,
-    returnRef: R,
-    gradientOffsetBottom: 0,
-    experimental_ignoreModalClicks: false,
+    j = A ? f.caretHoverable : true,
+    U = p({
+      targetElementRef: P.targetElementRef,
+      shouldShow: P.shouldShow,
+      hasVideo: P.hasVideo,
+      position: D,
+      caretConfig: L,
+      onRequestClose: x,
+      gradientColor: y,
+      onPositionChange: k,
+      onNudgeChange: R,
+      scrollBehavior: T,
+      modal: C,
+      returnRef: N,
+      gradientOffsetBottom: 0,
+      experimental_ignoreModalClicks: false
+    }, "edge" === P.alignmentStrategy ? {
+      alignmentStrategy: "edge",
+      align: P.align
+    } : {
+      alignmentStrategy: "trigger-center"
+    });
+  return (0, r.jsx)(s.m, m(p({}, U), {
     children: (0, r.jsxs)("div", {
       "data-mana-component": "popover",
-      children: [A && (0, r.jsx)(u.u, {
-        onClick: k,
-        variant: null != O ? "color-mix" : true
-      }), null != p && (0, r.jsx)("div", {
-        className: o()(_.graphic, {
-          [_["graphic--".concat(m)]]: null != m
+      children: [S && (0, r.jsx)(u.u, {
+        onClick: M,
+        variant: null != y ? "color-mix" : true
+      }), null != _ && (0, r.jsx)("div", {
+        className: o()(f.graphic, {
+          [f["graphic--".concat(h)]]: null != h
         }),
-        children: (0, r.jsx)(f.zsu, g(h({}, p), {
-          aspectRatio: null != (t = p.aspectRatio) ? t : "sm" === m ? "2/1" : "16/9"
+        children: (0, r.jsx)(d.zsu, m(p({}, _), {
+          aspectRatio: null != (t = _.aspectRatio) ? t : "sm" === h ? "2/1" : "16/9"
         }))
-      }), (0, r.jsx)(y, {
+      }), (0, r.jsx)(b, {
         title: n,
         body: a
-      }), null != b && b.length > 0 ? (0, r.jsx)(l.k, {
-        actions: b,
-        className: _.actionBar
-      }) : null, null != x && (0, r.jsx)(c.$, {
-        caretConfig: x,
-        className: U
+      }), null != E && E.length > 0 ? (0, r.jsx)(l.k, {
+        actions: E,
+        className: f.actionBar
+      }) : null, null != L && (0, r.jsx)(c.$, {
+        className: j
       })]
     })
   }))
 }
-let v = O
+let O = y

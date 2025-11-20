@@ -37,7 +37,6 @@ function p(e) {
     assetUrl: h,
     disableMediaViewer: true,
     caretConfig: {
-      position: "top",
       align: "center"
     },
     action: {

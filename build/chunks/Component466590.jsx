@@ -78,61 +78,73 @@ function O(e) {
   var t, n, a, h, g, {
       steps: y,
       caretConfig: O = {
-        position: "bottom",
         align: "center"
       },
       size: v = "md",
       onStepChange: I,
       onRequestClose: T,
       popoverRef: S,
-      shouldShow: A
+      shouldShow: A,
+      position: C
     } = e,
-    C = b(e, ["steps", "caretConfig", "size", "onStepChange", "onRequestClose", "popoverRef", "shouldShow"]);
-  let [N, R] = i.useState(0);
+    N = b(e, ["steps", "caretConfig", "size", "onStepChange", "onRequestClose", "popoverRef", "shouldShow", "position"]);
+  let [R, P] = i.useState(0);
   i.useEffect(() => {
-    A && R(0)
+    A && P(0)
   }, [A]), i.useEffect(() => {
-    null == I || I(N)
-  }, [N, I]);
-  let P = y[N],
-    D = N + 1 === y.length,
-    w = i.useCallback(() => {
-      var e;
-      null == P || null == (e = P.onCta) || e.call(P), D ? null == T || T() : R(e => e + 1)
-    }, [P, D, T]),
+    null == I || I(R)
+  }, [R, I]);
+  let D = y[R],
+    w = R + 1 === y.length,
     L = i.useCallback(() => {
-      null == T || T()
-    }, [T]),
+      var e;
+      null == D || null == (e = D.onCta) || e.call(D), w ? null == T || T() : P(e => e + 1)
+    }, [D, w, T]),
     x = i.useCallback(() => {
       null == T || T()
+    }, [T]),
+    M = i.useCallback(() => {
+      null == T || T()
     }, [T]);
-  if (!A || null == P) return null;
-  let M = m({
-    text: null != (a = null == (t = P.action) ? true : t.text) ? a : D ? _.intl.string(_.t.i4jeWR) : _.intl.string(_.t.PDTjLN),
-    variant: null != (h = null == (n = P.action) ? true : n.variant) ? h : "primary",
-    onClick: w
-  }, P.action);
-  return (0, r.jsx)(c.m, E(m({}, C), {
-    shouldShow: A,
-    onRequestClose: L,
-    gradientColor: P.gradientColor,
+  if (!A || null == D) return null;
+  let k = m({
+      text: null != (a = null == (t = D.action) ? true : t.text) ? a : w ? _.intl.string(_.t.i4jeWR) : _.intl.string(_.t.PDTjLN),
+      variant: null != (h = null == (n = D.action) ? true : n.variant) ? h : "primary",
+      onClick: L
+    }, D.action),
+    j = m({
+      targetElementRef: N.targetElementRef,
+      hasVideo: N.hasVideo,
+      scrollBehavior: N.scrollBehavior,
+      position: C,
+      shouldShow: A,
+      onRequestClose: x,
+      gradientColor: D.gradientColor,
+      caretConfig: O
+    }, "edge" === N.alignmentStrategy ? {
+      alignmentStrategy: "edge",
+      align: N.align
+    } : {
+      alignmentStrategy: "trigger-center"
+    });
+  return (0, r.jsx)(c.m, E(m({}, j), {
     children: (0, r.jsxs)("div", {
       ref: S,
       children: [(0, r.jsx)(d.u, {
-        onClick: x,
-        variant: null != P.gradientColor ? "color-mix" : true
-      }), null != P.graphic && (0, r.jsx)("div", {
+        onClick: M,
+        variant: null != D.gradientColor ? "color-mix" : true
+      }), null != D.graphic && (0, r.jsx)("div", {
         className: o()(p.graphic, {
           [p["graphic--".concat(v)]]: null != v
         }),
-        children: (0, r.jsx)(s.zsu, E(m({}, P.graphic), {
-          aspectRatio: null != (g = P.graphic.aspectRatio) ? g : "sm" === v ? "2/1" : "16/9"
+        children: (0, r.jsx)(s.zsu, E(m({}, D.graphic), {
+          aspectRatio: null != (g = D.graphic.aspectRatio) ? g : "sm" === v ? "2/1" : "16/9"
         }))
       }), (0, r.jsx)(f.Y, {
-        title: P.title,
-        body: P.body,
-        badge: P.badge,
-        textLink: P.textLink
+        title: D.title,
+        body: D.body,
+        badge: D.badge,
+        textLink: D.textLink
       }), (0, r.jsx)("div", {
         className: p.actionBar,
         children: (0, r.jsxs)("div", {
@@ -141,16 +153,14 @@ function O(e) {
             variant: "text-xs/normal",
             className: p.multistepIndicator,
             children: _.intl.formatToPlainString(_.t.rO31eY, {
-              count: N + 1,
+              count: R + 1,
               totalSteps: y.length
             })
           }), (0, r.jsx)(l.zxk, m({
             size: "sm"
-          }, M))]
+          }, k))]
         })
-      }), (0, r.jsx)(u.$, {
-        caretConfig: O
-      })]
+      }), (0, r.jsx)(u.$, {})]
     })
   }))
 }
