@@ -1,12 +1,13 @@
 /** Chunk was on 1272 **/
 /** chunk id: 377368, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
+  Chunk710845 = require("./710845.js"),
   Chunk536442 = require("./536442.js"),
   Chunk810788 = require("./810788.js"),
   Chunk592125 = require("./592125.js"),
@@ -23,7 +24,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,7 +32,8 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class v extends Chunk131468.Z {
+let I = new Chunk710845.Z("SoundboardManager");
+class C extends Chunk131468.Z {
   _initialize() {
     super._initialize(), __OVERLAY__ || Chunk570140.Z.subscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest)
   }
@@ -40,35 +42,37 @@ class v extends Chunk131468.Z {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, y(this, "playingSoundsWeb", new Map), y(this, "_stopAndClearSounds", () => {
-      c.Z.supports(O.AN.SAMPLE_PLAYBACK) && c.Z.getMediaEngine().eachConnection(e => {
+    super(...e), t = this, v(this, "playingSoundsWeb", new Map), v(this, "_stopAndClearSounds", () => {
+      u.Z.supports(y.AN.SAMPLE_PLAYBACK) && u.Z.getMediaEngine().eachConnection(e => {
         e.stopAllSamplesLocalPlayback()
       }), this.playingSoundsWeb.forEach(e => {
         e.pause(), e.src = ""
       }), this.playingSoundsWeb = new Map
-    }), y(this, "_playSound", async function(e) {
+    }), v(this, "_playSound", async function(e) {
       let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
         r = arguments.length > 2 ? arguments[2] : true,
         i = arguments.length > 3 ? arguments[3] : true,
-        l = null != i && u.Z.getVoiceChannelId() === i;
-      if ((null == i || l) && !c.Z.isDeaf() && !h.Z.isLocalSoundboardMuted(r)) try {
+        l = null != i && d.Z.getVoiceChannelId() === i;
+      if ((null == i || l) && !u.Z.isDeaf() && !g.Z.isLocalSoundboardMuted(r)) try {
         let i = {
           soundKey: "".concat(r, "-").concat(e),
-          soundURL: (0, m.Z)(e),
-          soundVolume: (0, _.Z)(n),
-          reportSoundStartedPlaying: () => (0, f.xR)(e, r)
+          soundURL: (0, _.Z)(e),
+          soundVolume: (0, b.Z)(n),
+          reportSoundStartedPlaying: () => (0, h.xR)(e, r)
         };
-        c.Z.supports(O.AN.SAMPLE_PLAYBACK) ? await (0, b.$)(i) : await (0, b.h)(i, t.playingSoundsWeb)
+        u.Z.supports(y.AN.SAMPLE_PLAYBACK) ? await (0, E.$)(i) : await (0, E.h)(i, t.playingSoundsWeb)
+      } catch (e) {
+        I.warn("Error playing soundboard sound: ".concat(e.message))
       } finally {
-        (0, f.R)(e, r)
+        (0, h.R)(e, r)
       }
-    }), y(this, "_handleOverlaySoundboardSoundsFetchRequest", () => {
-      (0, f.w)()
-    }), y(this, "_handleOpenEducationModal", (e, t) => {
+    }), v(this, "_handleOverlaySoundboardSoundsFetchRequest", () => {
+      (0, h.w)()
+    }), v(this, "_handleOpenEducationModal", (e, t) => {
       if (null == e) return;
-      let l = o.Z.getChannel(t),
-        c = d.ZP.getKeybindForAction(E.kg4.SOUNDBOARD_HOLD);
-      null != l && (0, g.Z)(l) && null != c && s.Z.hasHotspot(a.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
+      let l = c.Z.getChannel(t),
+        a = p.ZP.getKeybindForAction(O.kg4.SOUNDBOARD_HOLD);
+      null != l && (0, m.Z)(l) && null != a && o.Z.hasHotspot(s.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
         let {
           default: t
         } = await n.e("69208").then(n.bind(n, 490166));
@@ -90,17 +94,17 @@ class v extends Chunk131468.Z {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              y(e, t, n[t])
+              v(e, t, n[t])
             })
           }
           return e
         }({}, n), {
           guildId: e,
-          keybind: c,
+          keybind: a,
           channel: l
         }))
       })
     })
   }
 }
-let I = new v
+let S = new C

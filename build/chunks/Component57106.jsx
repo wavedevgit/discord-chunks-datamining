@@ -68,38 +68,57 @@ function f(e, t) {
 }
 let _ = {
   Preview: {
-    "Icon Color": "color"
+    reducedMotion: "boolean",
+    iconColor: "color"
   },
   Friends: {
-    "Icon Color": "color"
+    reducedMotion: "boolean",
+    iconColor: "color"
   },
   Globe: {
-    "Icon Color": "color"
+    reducedMotion: "boolean",
+    iconColor: "color"
   },
   "Globe Single Line": {},
   Emojis: {
-    "Icon Color": "color"
+    reducedMotion: "boolean",
+    iconColor: "color"
   },
   "Wave Line": {
-    "Icon Color": "color"
+    reducedMotion: "boolean",
+    iconColor: "color"
   },
   Games: {
-    "Icon Color": "color"
+    reducedMotion: "boolean",
+    iconColor: "color"
   },
   Voice: {
-    "Icon Color": "color"
+    reducedMotion: "boolean",
+    iconColor: "color"
+  },
+  "Looping Checkboard": {
+    reducedMotion: "boolean",
+    iconColor: "color"
+  },
+  CheckRow: {
+    reducedMotion: "boolean",
+    iconColor: "color"
   },
   Quests: {
-    "Icon Color": "color"
+    reducedMotion: "boolean",
+    iconColor: "color"
   },
   Entry: {
-    "Icon Color": "color"
-  },
-  Servers: {
-    "Icon Color": "color"
+    reducedMotion: "boolean",
+    iconColor: "color"
   },
   Messages: {
-    "Icon Color": "color"
+    reducedMotion: "boolean",
+    iconColor: "color"
+  },
+  Servers: {
+    reducedMotion: "boolean",
+    iconColor: "color"
   }
 };
 

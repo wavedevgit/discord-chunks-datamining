@@ -3,6 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   AVSurveyFacesRive: () => Chunk47985.m,
+  CheckpointFriendsRive: () => Chunk957242.j,
   CheckpointKnickKnacksRive: () => Chunk57106.x,
   DiceRive: () => Chunk58231.q,
   FistBumpRive: () => Chunk582559.p,
@@ -14,6 +15,7 @@ require.r(exports), require.d(exports, {
   WandAndSparklesRive: () => Chunk963969.x
 });
 var Chunk47985 = require("./47985.jsx"),
+  Chunk957242 = require("./957242.jsx"),
   Chunk57106 = require("./57106.jsx"),
   Chunk58231 = require("./58231.jsx"),
   Chunk582559 = require("./582559.jsx"),

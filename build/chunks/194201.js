@@ -14,7 +14,7 @@ var Chunk442837 = require("./442837.js"),
 function c(e) {
   var n, t, c;
   let d = (0, l.e7)([s.Z], () => s.Z.can(u.Plq.ADMINISTRATOR, e)),
-    p = (0, l.e7)([o.Z], () => null != e && o.Z.getNumRoles(e.id) > 0),
+    p = (0, l.e7)([o.Z], () => null != e && o.Z.getNumRoles(e.id) > 1),
     {
       enabled: g
     } = a.Z.useExperiment({
