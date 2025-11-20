@@ -64,6 +64,9 @@ class _ {
   stop() {
     this._statInterval.stop(), this._streamEnd = (0, Chunk379649.zO)(), this._incrementLayout(this._lastLayout, (this._streamEnd - this._lastLayoutChanged) / 1e3)
   }
+  autoQualityChange() {
+    this._automaticQualityChanges += 1
+  }
   layoutChange(e) {
     if (e === this._lastLayout || null != this._streamEnd) return;
     let t = (0, r.zO)();
@@ -86,11 +89,12 @@ class _ {
     return this._isSender ? u(l({}, module), {
       target_fps: this._targetFPS,
       target_resolution_height: this._targetResolution,
-      stream_settings_changed: this._streamSettingsChanged
+      stream_settings_changed: this._streamSettingsChanged,
+      num_auto_quality_changes: this._automaticQualityChanges
     }) : module
   }
   constructor(e, t) {
-    s(this, "_statInterval", true), s(this, "_isSender", true), s(this, "_streamEnd", true), s(this, "_targetResolution", 0), s(this, "_targetFPS", 0), s(this, "_streamSettingsChanged", false), s(this, "_lastLayout", true), s(this, "_lastLayoutChanged", 0), s(this, "_layoutChanges", 0), s(this, "_layoutBuckets", true), s(this, "_incrementLayout", (e, t) => {
+    s(this, "_statInterval", true), s(this, "_isSender", true), s(this, "_streamEnd", true), s(this, "_targetResolution", 0), s(this, "_targetFPS", 0), s(this, "_streamSettingsChanged", false), s(this, "_lastLayout", true), s(this, "_lastLayoutChanged", 0), s(this, "_layoutChanges", 0), s(this, "_layoutBuckets", true), s(this, "_automaticQualityChanges", 0), s(this, "_incrementLayout", (e, t) => {
       null == this._layoutBuckets[e] && (this._layoutBuckets[e] = 0), this._layoutBuckets[e] += t
     }), s(this, "_sampleStats", () => {
       let {

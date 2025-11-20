@@ -76,12 +76,22 @@ let f = {
       }
     }
   },
-  triggerEmbeddedSurvey: function(e) {
-    o.E.getConfig({
-      location: "action creator"
-    }).enableNitroUnsubSurvey && i.Z.dispatch({
-      type: "EMBEDDED_SURVEY_TRIGGER",
-      trigger: e
-    })
+  fireSurveyAction: async function(e) {
+    if (o.E.getConfig({
+        location: "action creator"
+      }).enableNitroUnsubSurvey) try {
+      var t;
+      let n = await r.tn.post({
+        url: u.ANM.EMBEDDED_SURVEY_ACTION,
+        body: {
+          action_type: e
+        },
+        rejectWithError: true
+      });
+      i.Z.dispatch({
+        type: "SURVEY_FETCHED",
+        survey: null == n || null == (t = n.body) ? true : t.survey
+      })
+    } catch (e) {}
   }
 }

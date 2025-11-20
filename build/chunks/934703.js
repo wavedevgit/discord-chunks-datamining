@@ -55,7 +55,7 @@ function v(e) {
     videoAssetId: O,
     sourceQuestContent: h,
     logger: b
-  } = e, S = (0, c._F)(), C = (0, c.O5)(), y = (0, i.e7)([s.Z], () => s.Z.getEffectiveConnectionSpeed()), _ = (0, r.useRef)(false), x = (null == (t = n.userStatus) ? true : t.completedAt) != null, j = n.id, D = r.useCallback(e => {
+  } = e, S = (0, c._F)(), y = (0, c.O5)(), C = (0, i.e7)([s.Z], () => s.Z.getEffectiveConnectionSpeed()), _ = (0, r.useRef)(false), x = (null == (t = n.userStatus) ? true : t.completedAt) != null, j = n.id, D = r.useCallback(e => {
     null != v.current && S({
       questId: j,
       event: m.rMx.QUEST_VIDEO_LOADING_STARTED,
@@ -73,13 +73,13 @@ function v(e) {
       event: m.rMx.QUEST_VIDEO_LOADING_ENDED,
       properties: p({
         video_asset_id: O,
-        network_connection_speed: y,
+        network_connection_speed: C,
         duration: e,
         video_session_id: g
       }, f(E)),
       sourceQuestContent: h
     })
-  }, [j, v, O, g, E, S, h, y]), T = r.useCallback(e => {
+  }, [j, v, O, g, E, S, h, C]), T = r.useCallback(e => {
     null != v.current && S({
       questId: j,
       event: m.rMx.QUEST_VIDEO_TIME_TO_FIRST_FRAME,
@@ -144,33 +144,33 @@ function v(e) {
       event: m.rMx.QUEST_VIDEO_BUFFERING_STARTED,
       properties: p({
         video_asset_id: O,
-        network_connection_speed: y,
+        network_connection_speed: C,
         buffer_index: _.current,
         video_session_id: g
       }, f(E)),
       sourceQuestContent: h
     }))
-  }, [j, v, O, g, E, S, h, y]), k = r.useCallback(e => {
+  }, [j, v, O, g, E, S, h, C]), k = r.useCallback(e => {
     null != v.current && (_.current += 1, S({
       questId: j,
       event: m.rMx.QUEST_VIDEO_BUFFERING_ENDED,
       properties: p({
         video_asset_id: O,
-        network_connection_speed: y,
+        network_connection_speed: C,
         duration: e,
         buffer_index: _.current,
         video_session_id: g
       }, f(E)),
       sourceQuestContent: h
     }))
-  }, [j, v, O, g, E, S, h, y]), M = r.useCallback((e, t) => {
-    C({
+  }, [j, v, O, g, E, S, h, C]), L = r.useCallback((e, t) => {
+    y({
       questId: j,
       questContent: e,
       questContentCTA: t,
       sourceQuestContent: h
     })
-  }, [j, h, C]), L = r.useCallback(e => {
+  }, [j, h, y]), M = r.useCallback(e => {
     if (null != v.current) {
       var t, n;
       S({
@@ -212,7 +212,7 @@ function v(e) {
         video_progress: s,
         video_error_type: e,
         video_asset_id: O,
-        network_connection_speed: y,
+        network_connection_speed: C,
         video_session_id: g,
         video_error_code: null == o ? true : o.code,
         video_error_message: null == o ? true : o.message,
@@ -223,7 +223,7 @@ function v(e) {
       name: l.V.QUEST_VIDEO_ERROR,
       tags: ["quest_id:".concat(j), "error_type:".concat(e)]
     })
-  }, [j, v, O, g, E, S, h, y]), Z = r.useCallback((e, t) => {
+  }, [j, v, O, g, E, S, h, C]), Z = r.useCallback((e, t) => {
     let n;
     switch (b.info("[QV] | HLS Error: type=".concat(t.type, ", details=").concat(t.details, ", fatal=").concat(t.fatal)), t.type) {
       case o.ZP.ErrorTypes.NETWORK_ERROR:
@@ -284,10 +284,10 @@ function v(e) {
     trackQuestVideoResumed: I,
     trackQuestVideoPaused: N,
     trackQuestVideoFocusChange: A,
-    trackQuestContentClick: M,
+    trackQuestContentClick: L,
     trackQuestVideoBufferingStarted: w,
     trackQuestVideoBufferingEnded: k,
-    trackWatchTimeAnalytics: L,
+    trackWatchTimeAnalytics: M,
     trackQuestVideoFullscreenChanged: F,
     trackQuestVideoError: V,
     trackQuestVideoVolumeChanged: B

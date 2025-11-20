@@ -1,7 +1,7 @@
 /** Chunk was on 76418 **/
 /** chunk id: 34251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,12 +24,12 @@ function p(e) {
     sourceQuestContent: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: x.contentContainer,
+    className: f.contentContainer,
     children: [(0, r.jsx)("div", {
-      className: x.rewardTileContainer,
+      className: f.rewardTileContainer,
       children: (0, r.jsx)(c.Z, {
         autoplay: true,
-        className: x.rewardTile,
+        className: f.rewardTile,
         learnMoreStyle: null,
         quest: t,
         questContent: i,
@@ -37,60 +37,60 @@ function p(e) {
         sourceQuestContent: o
       })
     }), (0, r.jsxs)("div", {
-      className: x.copyContainer,
+      className: f.copyContainer,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        className: x.heading,
-        children: f.intl.string(f.t["0/Yz+Y"])
+        className: f.heading,
+        children: x.intl.string(x.t["0/Yz+Y"])
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: f.intl.format(f.t["v1u/zq"], {
+        children: x.intl.format(x.t["v1u/zq"], {
           rewardName: n
         })
       })]
     }), (0, r.jsx)(a.Button, {
       variant: "secondary",
       size: "sm",
-      text: f.intl.string(f.t.OD6Tvf),
+      text: x.intl.string(x.t.OD6Tvf),
       disabled: true,
       fullWidth: true
     })]
   })
 }
 
-function C(e) {
+function h(e) {
   var t, n;
   let {
     initialQuest: a,
     onClose: c,
-    transitionState: f,
-    location: x,
-    sourceQuestContent: C
-  } = e, g = null != (n = (0, l.B4)(a.id)) ? n : a, h = i.useMemo(() => (0, s.K)(g.config), [g]), j = (null == (t = g.userStatus) ? true : t.claimedAt) != null, _ = !g.preview && !j, [v, N] = i.useState(_ ? "loading" : "claimed");
+    transitionState: x,
+    location: f,
+    sourceQuestContent: h
+  } = e, C = null != (n = (0, l.B4)(a.id)) ? n : a, g = i.useMemo(() => (0, s.K)(C.config), [C]), j = (null == (t = C.userStatus) ? true : t.claimedAt) != null, _ = !C.preview && !j, [v, N] = i.useState(_ ? "loading" : "claimed");
   i.useEffect(() => {
     if (_) {
-      let e = (0, s.zG)(g.config);
-      (0, o.QB)(g.id, e, x).then(() => N("claimed")).catch(() => N("error"))
+      let e = (0, s.zG)(C.config);
+      (0, o.QB)(C.id, e, f).then(() => N("claimed")).catch(() => N("error"))
     }
-  }, [g, x, _]);
-  let y = "error" === v || null == h;
+  }, [C, f, _]);
+  let y = "error" === v || null == g;
   return (0, r.jsx)(d.Z, {
     onClose: c,
-    transitionState: f,
-    quest: g,
-    sourceQuestContent: C,
+    transitionState: x,
+    quest: C,
+    sourceQuestContent: h,
     location: m.dr.INGAME_REWARD_MODAL,
     isRewardContentLoading: "loading" === v,
     rewardContentHasError: y,
     rewardContent: y ? null : (0, r.jsx)(u.Z, {
-      rewardName: h.messages.name,
+      rewardName: g.messages.name,
       children: (0, r.jsx)(p, {
-        quest: g,
-        rewardName: h.messages.name,
-        location: x,
-        sourceQuestContent: C
+        quest: C,
+        rewardName: g.messages.name,
+        location: f,
+        sourceQuestContent: h
       })
     })
   })

@@ -212,7 +212,7 @@ function W(e) {
     if (null == t.gameConfig) return null;
     let e = [t.gameConfig.type, t.gameConfig.version].filter(_.lm).join(" ");
     return "" === e ? null : e
-  }, [t.gameConfig]), Q = a.useMemo(() => {
+  }, [t.gameConfig]), $ = a.useMemo(() => {
     switch (t.status) {
       case s.V.STARTING:
         if (null == t.gameServerPanelUrl) return Z.intl.string(w.default["1A3US2"]);
@@ -335,9 +335,9 @@ function W(e) {
                       return "—"
                   }
                 }(t.status)
-              }), null != Q && (0, r.jsx)(d.u, {
+              }), null != $ && (0, r.jsx)(d.u, {
                 position: "top",
-                text: Q,
+                text: $,
                 children: (0, r.jsx)(u.idN, {
                   className: R.statusTooltipIcon,
                   size: "xs"

@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk939389 = require("./939389.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk273339 = require("./273339.js");
-let y = "-:--",
+let C = "-:--",
   _ = {
     [Chunk325916.rq.PLAYING]: {
       icon: Chunk481060.fpf,
@@ -51,20 +51,20 @@ function D(e) {
   let {
     current: t,
     duration: n
-  } = e, o = null != t ? (0, b.yv)(t) : y, l = null != n ? (0, b.yv)(n) : y;
+  } = e, o = null != t ? (0, b.yv)(t) : C, l = null != n ? (0, b.yv)(n) : C;
   return o = o.padStart(l.length, "0"), (0, r.jsxs)("div", {
-    className: i()(C.durationTimeWrapper, C.controlsBarItem),
+    className: i()(y.durationTimeWrapper, y.controlsBarItem),
     children: [(0, r.jsx)(m.Text, {
       variant: "text-xs/normal",
-      className: C.durationTimeDisplay,
+      className: y.durationTimeDisplay,
       children: o
     }), (0, r.jsx)(m.Text, {
       variant: "text-xs/normal",
-      className: C.durationTimeSeparator,
+      className: y.durationTimeSeparator,
       children: "/"
     }), (0, r.jsx)(m.Text, {
       variant: "text-xs/normal",
-      className: C.durationTimeDisplay,
+      className: y.durationTimeDisplay,
       children: l
     })]
   })
@@ -103,14 +103,14 @@ let P = Chunk473749.forwardRef(function(e, t) {
       return e
     }({}, e), f = f = {
       onClick: true === p ? true : g,
-      className: i()(C.videoControlsBtnCont, {
-        [C.videoControlsBtnContDisabled]: p
+      className: i()(y.videoControlsBtnCont, {
+        [y.videoControlsBtnContDisabled]: p
       }),
       "aria-label": s,
       "aria-disabled": p,
       innerRef: t,
       children: (0, r.jsx)(a.animated.div, {
-        className: C.videoControlsBtnCont,
+        className: y.videoControlsBtnCont,
         style: {
           opacity: (0, a.to)([o.to({
             range: [0, 1],
@@ -124,9 +124,9 @@ let P = Chunk473749.forwardRef(function(e, t) {
         children: (0, r.jsx)(n, {
           size: j[O],
           color: true !== p ? c.Z.colors.WHITE : c.Z.colors.TEXT_MUTED,
-          className: i()(C.controlsBarItem, {
-            [C.controlsBarItemActive]: u,
-            [C.videoControlsBtn]: !p
+          className: i()(y.controlsBarItem, {
+            [y.controlsBarItemActive]: u,
+            [y.videoControlsBtn]: !p
           })
         })
       })
@@ -155,7 +155,7 @@ function T(e) {
     videoRef: l,
     playerState: d,
     animSpring: b,
-    visible: y,
+    visible: C,
     seekForwardEnabled: j,
     hideCaptionBtn: T,
     hideTranscriptBtn: R,
@@ -164,8 +164,8 @@ function T(e) {
     handlePlaybackBtnClick: A,
     handleTranscriptBtnClick: w,
     handleCaptionBtnClick: k,
-    handleFullScreenBtnClick: M,
-    handleSeekBackBtnClick: L,
+    handleFullScreenBtnClick: L,
+    handleSeekBackBtnClick: M,
     handleSeekForwardBtnClick: V,
     handleControlBarPendingInteraction: Z,
     onVolumeChange: F
@@ -197,7 +197,7 @@ function T(e) {
         z || (e.preventDefault(), A());
         break;
       case h.Y1.SEEK_BACK:
-        L();
+        M();
         break;
       case h.Y1.SEEK_FORWARD:
         V();
@@ -206,12 +206,12 @@ function T(e) {
         k();
         break;
       case h.Y1.FULLSCREEN:
-        M();
+        L();
         break;
       case h.Y1.MUTE:
         ea()
     }
-  }, [k, M, A, L, V, ea, z]);
+  }, [k, L, A, M, V, ea, z]);
   o.useEffect(() => {
     null != eo.current && eo.current.focus()
   }, []), o.useEffect(() => (er({
@@ -229,11 +229,11 @@ function T(e) {
     } = _[d];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: C.videoControlsGroup,
+      className: y.videoControlsGroup,
       children: [(0, r.jsx)(P, {
         iconComponent: em,
         animationTime: b,
-        visible: y,
+        visible: C,
         ariaLabel: ep,
         tooltipLabel: ep,
         shortcut: h.Y1.PLAYBACK,
@@ -244,8 +244,8 @@ function T(e) {
         children: [(0, r.jsx)(P, {
           iconComponent: g.F,
           animationTime: b,
-          visible: y,
-          onClick: L,
+          visible: C,
+          onClick: M,
           ariaLabel: S.intl.string(S.t.r9s3Uv),
           tooltipLabel: S.intl.string(S.t.r9s3Uv),
           shortcut: h.Y1.SEEK_BACK,
@@ -253,7 +253,7 @@ function T(e) {
         }), (0, r.jsx)(P, {
           iconComponent: O.j,
           animationTime: b,
-          visible: y,
+          visible: C,
           onClick: V,
           disabled: !j,
           ariaLabel: j ? S.intl.string(S.t.zWDcNP) : S.intl.string(S.t.xXh3yw),
@@ -264,35 +264,35 @@ function T(e) {
         })]
       })]
     }), (0, r.jsxs)(a.animated.div, {
-      className: i()(C.videoControlsGroup, C.videoControlsGroupMid),
+      className: i()(y.videoControlsGroup, y.videoControlsGroupMid),
       style: {
         opacity: (0, a.to)([b.to({
           range: [0, 1],
           output: [0, 1]
-        })], e => "".concat(y ? e : Math.pow(e, 8)))
+        })], e => "".concat(C ? e : Math.pow(e, 8)))
       },
       children: [(0, r.jsxs)("div", {
         onMouseEnter: es,
         onMouseLeave: ec,
         onFocus: es,
         onBlur: ec,
-        className: C.volumeControlGroup,
+        className: y.volumeControlGroup,
         children: [(0, r.jsx)(P, {
           iconComponent: ed,
           animationTime: b,
-          visible: y,
+          visible: C,
           onClick: ea,
           ariaLabel: S.intl.string(S.t["eIl+AK"]),
           tooltipLabel: S.intl.string(S.t["eIl+AK"]),
           shortcut: h.Y1.MUTE,
           buttonSize: x[N]
         }), (0, r.jsx)(a.animated.div, {
-          className: C.volumeSlider,
+          className: y.volumeSlider,
           style: {
             opacity: (0, a.to)([en.to({
               range: [0, 1],
               output: [0, 1]
-            })], e => "".concat(y ? e : Math.pow(e, 8))),
+            })], e => "".concat(C ? e : Math.pow(e, 8))),
             width: (0, a.to)([en.to({
               range: [0, 1],
               output: [0, 100]
@@ -322,11 +322,11 @@ function T(e) {
         duration: null == l || null == (n = l.current) ? true : n.duration
       })]
     }), (0, r.jsxs)("div", {
-      className: i()(C.videoControlsGroup, C.videoControlsGroupEnd),
+      className: i()(y.videoControlsGroup, y.videoControlsGroupEnd),
       children: [!R && (0, r.jsx)(P, {
         iconComponent: m.hH0,
         animationTime: b,
-        visible: y,
+        visible: C,
         onClick: w,
         active: Y && d !== h.rq.ENDED,
         disabled: d === h.rq.ENDED,
@@ -336,7 +336,7 @@ function T(e) {
       }), !T && (0, r.jsx)(P, {
         iconComponent: E.c,
         animationTime: b,
-        visible: y,
+        visible: C,
         active: G,
         onClick: k,
         ariaLabel: S.intl.string(S.t.bDSZO1),
@@ -346,8 +346,8 @@ function T(e) {
       }), (0, r.jsx)(P, {
         iconComponent: Q ? m.wvt : m.NpZ,
         animationTime: b,
-        visible: y,
-        onClick: M,
+        visible: C,
+        onClick: L,
         ariaLabel: S.intl.string(S.t.vKZT5t),
         tooltipLabel: S.intl.string(S.t.vKZT5t),
         shortcut: h.Y1.FULLSCREEN,

@@ -29,16 +29,16 @@ function E(e) {
     variant: b
   } = d.EO.useConfig({
     location: f.dr.VIDEO_MODAL
-  }), S = b === d.m_.OVERLAY_SHARE_ON_VIDEO, [C, y] = (0, p.G6)(v.intl.string(v.t.RDE0Sc), v.intl.string(v.t["+5kSoW"]), 1700), [_, x] = o.useState(false), j = o.useRef(null), D = (0, c.vB)(n.config), P = o.useCallback(() => {
+  }), S = b === d.m_.OVERLAY_SHARE_ON_VIDEO, [y, C] = (0, p.G6)(v.intl.string(v.t.RDE0Sc), v.intl.string(v.t["+5kSoW"]), 1700), [_, x] = o.useState(false), j = o.useRef(null), D = (0, c.vB)(n.config), P = o.useCallback(() => {
     D && ((0, c.f2)(n.id, {
       content: u.jn.VIDEO_MODAL,
       ctaContent: a.jZ.COPY_QUEST_URL,
       impressionId: O,
       sourceQuestContent: E
-    }), (h || g) && (0, i.showToast)((0, i.createToast)(v.intl.string(v.t["+5kSoW"]), i.ToastType.SUCCESS)), y(), x(true), null != j.current && clearTimeout(j.current), j.current = setTimeout(() => {
+    }), (h || g) && (0, i.showToast)((0, i.createToast)(v.intl.string(v.t["+5kSoW"]), i.ToastType.SUCCESS)), C(), x(true), null != j.current && clearTimeout(j.current), j.current = setTimeout(() => {
       x(false)
     }, 1700))
-  }, [O, D, n.id, E, y, h, g]);
+  }, [O, D, n.id, E, C, h, g]);
   return (o.useEffect(() => () => {
     null != j.current && clearTimeout(j.current)
   }, []), D) ? h || g ? (0, r.jsx)("div", {
@@ -61,7 +61,7 @@ function E(e) {
     })
   }) : (0, r.jsx)(i.Button, {
     variant: "secondary",
-    text: C,
+    text: y,
     onClick: P
   }) : null
 }

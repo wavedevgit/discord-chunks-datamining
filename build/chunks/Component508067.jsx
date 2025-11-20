@@ -34,13 +34,13 @@ function v(e) {
     maxSeekableTime: h,
     onClick: b,
     onScrubBack: S,
-    onScrubForward: C
-  } = e, [y, _] = o.useState(null), [x, j] = o.useState(null), [D, P] = o.useState(null), [T, R] = o.useState(false), I = o.useRef(null), N = e => {
+    onScrubForward: y
+  } = e, [C, _] = o.useState(null), [x, j] = o.useState(null), [D, P] = o.useState(null), [T, R] = o.useState(false), I = o.useRef(null), N = e => {
     I.current = e, _(e)
   };
   o.useEffect(() => {
-    null != y && (null == h ? P(null) : P(f(h, g, y)))
-  }, [y, h, g]);
+    null != C && (null == h ? P(null) : P(f(h, g, C)))
+  }, [C, h, g]);
   let A = (0, c.Z)(e => {
       N(e.contentRect)
     }),
@@ -56,17 +56,17 @@ function v(e) {
   let k = e => {
       j(e.clientX)
     },
-    M = o.useCallback(e => {
+    L = o.useCallback(e => {
       let {
         key: t
       } = e;
-      t === d.mR.ArrowLeft && null != S ? (e.preventDefault(), e.stopPropagation(), S()) : t === d.mR.ArrowRight && null != C && (e.preventDefault(), e.stopPropagation(), C())
-    }, [S, C]),
-    L = null != x && null != y ? p(x, y, g) : 0,
-    V = (0, u.yv)(L),
-    Z = null != y ? y.right - f(t / 100 * g, g, y) : null,
-    F = null != x && null != y ? y.right - x : null,
-    B = null != D && null != y ? y.right - D : null;
+      t === d.mR.ArrowLeft && null != S ? (e.preventDefault(), e.stopPropagation(), S()) : t === d.mR.ArrowRight && null != y && (e.preventDefault(), e.stopPropagation(), y())
+    }, [S, y]),
+    M = null != x && null != C ? p(x, C, g) : 0,
+    V = (0, u.yv)(M),
+    Z = null != C ? C.right - f(t / 100 * g, g, C) : null,
+    F = null != x && null != C ? C.right - x : null,
+    B = null != D && null != C ? C.right - D : null;
   return (0, r.jsxs)("div", {
     className: m.cont,
     ref: w,
@@ -87,7 +87,7 @@ function v(e) {
       onMouseMove: e => {
         l && T && k(e)
       },
-      onKeyDown: M,
+      onKeyDown: L,
       tabIndex: l ? true : false,
       focusProps: {
         offset: {

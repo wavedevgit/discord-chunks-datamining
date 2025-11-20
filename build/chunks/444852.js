@@ -133,6 +133,9 @@ class V extends Chunk861687.Z {
   layoutChange(e) {
     this.videoStreamStats.layoutChange(e)
   }
+  autoQualityChange() {
+    this.videoStreamStats.autoQualityChange()
+  }
   getVideoStats() {
     let {
       ownerId: e

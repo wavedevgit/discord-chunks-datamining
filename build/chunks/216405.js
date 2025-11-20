@@ -80,7 +80,7 @@ class S extends Chunk147913.Z {
           audioDeviceGuid: b.cameraSource.audioDeviceGuid
         }
       }
-      Chunk846027.Z.setGoLiveSource(x)
+      Chunk580991.autoQualityChange(), Chunk846027.Z.setGoLiveSource(x)
     }
   }
   handlePostConnectionOpen() {

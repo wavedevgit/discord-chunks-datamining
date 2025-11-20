@@ -3,7 +3,7 @@
 "use strict";
 
 function r(e) {
-  if (null != e) return {
+  return {
     android: null != e.android ? {
       androidAppId: e.android.android_app_id
     } : true,

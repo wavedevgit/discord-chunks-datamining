@@ -34,7 +34,7 @@ function f(e) {
     }),
     children: (0, r.jsxs)("div", {
       className: g.content,
-      children: [(0, r.jsx)(l.Q6, {
+      children: [(0, r.jsx)(l.c0, {
         alt: "",
         width: 117,
         height: 78

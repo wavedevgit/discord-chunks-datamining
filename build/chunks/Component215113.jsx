@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk273339 = require("./273339.js");
 
-function L(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -84,7 +84,7 @@ function F(e) {
     transitionState: l,
     onClose: a,
     quest: h,
-    autoplay: y,
+    autoplay: C,
     videoSessionId: I,
     impressionRef: F,
     parentModalOpenStartClockTime: B,
@@ -124,18 +124,18 @@ function F(e) {
       "data-migration-pending": true,
       transitionState: l,
       size: d.CgR.DYNAMIC,
-      className: i()(M.modalRoot, {
-        [M.modalRootLandscape]: "landscape" === $,
-        [M.modalRootPortrait]: "portrait" === $,
-        [M.modalRootV2]: X,
-        [M.modalRootPortraitV2]: X && "portrait" === $
+      className: i()(L.modalRoot, {
+        [L.modalRootLandscape]: "landscape" === $,
+        [L.modalRootPortrait]: "portrait" === $,
+        [L.modalRootV2]: X,
+        [L.modalRootPortraitV2]: X && "portrait" === $
       }),
       parentComponent: "Modal",
       children: [X && (0, r.jsx)("div", {
-        className: M.closeModalBtnWrapper,
+        className: L.closeModalBtnWrapper,
         children: (0, r.jsx)(d.hU, {
           variant: "icon-only",
-          icon: e => (0, r.jsx)(d.Dio, V(L({}, e), {
+          icon: e => (0, r.jsx)(d.Dio, V(M({}, e), {
             color: d.TVs.colors.CONTROL_TEXT_OVERLAY_SECONDARY_DEFAULT
           })),
           "aria-label": k.intl.string(k.t.cpT0Cq),
@@ -145,33 +145,33 @@ function F(e) {
         ref: e => {
           F.current = e
         },
-        className: i()(M.modalBg, {
-          [M.modalBgV2]: X,
-          [M.modalBgV2Portrait]: X && ee
+        className: i()(L.modalBg, {
+          [L.modalBgV2]: X,
+          [L.modalBgV2Portrait]: X && ee
         }),
         style: ee && X ? {
           "--custom-portrait-footer-height": "".concat(W, "px")
         } : true,
         children: (0, r.jsx)("div", {
-          className: i()(M.modalBody, {
-            [M.modalBodyWithBorder]: X
+          className: i()(L.modalBody, {
+            [L.modalBodyWithBorder]: X
           }),
           children: (0, r.jsxs)("div", {
-            className: M.modalContent,
+            className: L.modalContent,
             style: {
               backgroundColor: X ? d.TVs.colors.BACKGROUND_BASE_LOWER.css : true
             },
             children: [X ? null : (0, r.jsxs)("div", {
-              className: M.contentHeader,
+              className: L.contentHeader,
               children: [(0, r.jsxs)(d.P3F, {
-                className: M.contentHeaderGameInfo,
+                className: L.contentHeaderGameInfo,
                 onClick: () => eo(b.jn.VIDEO_MODAL, v.jZ.OPEN_GAME_LINK),
                 children: [(0, r.jsx)("img", {
                   alt: h.config.messages.gameTitle,
-                  className: i()(M.contentHeaderLogotype, M.accentOnHover),
-                  src: (0, C.fh)(h, C.eC.LOGO_TYPE, ei).url
+                  className: i()(L.contentHeaderLogotype, L.accentOnHover),
+                  src: (0, y.fh)(h, y.eC.LOGO_TYPE, ei).url
                 }), (0, r.jsx)(T.Z, {}), (0, r.jsxs)("div", {
-                  className: M.questHeading,
+                  className: L.questHeading,
                   children: [(0, r.jsx)(d.Heading, {
                     variant: "heading-md/semibold",
                     color: "header-primary",
@@ -191,27 +191,27 @@ function F(e) {
               videoTask: J,
               parentTransitionState: l,
               onOptimisticProgressUpdate: Q,
-              autoplay: y,
+              autoplay: C,
               performanceClockStartTime: B,
               orientation: $
             }), ee ? (0, r.jsxs)("div", {
               ref: en,
-              className: X ? M.contentFooterPortraitV2 : M.contentFooterPortraitV1,
+              className: X ? L.contentFooterPortraitV2 : L.contentFooterPortraitV1,
               children: [X ? (0, r.jsxs)("div", {
-                className: M.portraitContentRow,
+                className: L.portraitContentRow,
                 children: [q ? null : (0, r.jsx)(D.Z, {
                   tooltipPosition: "top"
                 }), (0, r.jsx)(j.Z, {}), !er && (0, r.jsx)(P.Z, {
                   floatRight: true
                 })]
               }) : null, (0, r.jsxs)("div", {
-                className: M.portraitButtonsContainer,
+                className: L.portraitButtonsContainer,
                 children: [(0, r.jsxs)("div", {
-                  className: M.portraitButtonRow,
+                  className: L.portraitButtonRow,
                   children: [X ? null : (0, r.jsx)(_.Z, {
                     handlePrimaryCtaClick: eo
                   }), (0, r.jsx)("div", {
-                    className: M.portraitCtaBtnWrapper,
+                    className: L.portraitCtaBtnWrapper,
                     children: (0, r.jsx)(x.Z, {})
                   })]
                 }), X ? (0, r.jsx)(_.Z, {
@@ -219,9 +219,9 @@ function F(e) {
                 }) : (0, r.jsx)(P.Z, {})]
               })]
             }) : (0, r.jsxs)("div", {
-              className: i()(M.contentFooter, X ? M.contentFooterV2 : M.contentFooterV1),
+              className: i()(L.contentFooter, X ? L.contentFooterV2 : L.contentFooterV1),
               children: [X ? (0, r.jsxs)("div", {
-                className: M.contentFooterAdInfo,
+                className: L.contentFooterAdInfo,
                 children: [q ? null : (0, r.jsx)(D.Z, {
                   tooltipPosition: "top"
                 }), (0, r.jsx)(j.Z, {})]
@@ -230,8 +230,8 @@ function F(e) {
                 text: k.intl.string(k.t.cpT0Cq),
                 onClick: a
               }), (0, r.jsxs)("div", {
-                className: i()(M.contentFooterButtonCont, {
-                  [M.contentFooterButtonContV2]: X
+                className: i()(L.contentFooterButtonCont, {
+                  [L.contentFooterButtonContV2]: X
                 }),
                 children: [!er && (0, r.jsx)(P.Z, {}), (0, r.jsx)(x.Z, {}), X ? (0, r.jsx)(_.Z, {
                   handlePrimaryCtaClick: eo
@@ -268,13 +268,13 @@ function B(e) {
   }(e, ["questId", "overrideQuest", "autoplay", "openStartClockTime"]);
   let a = (0, u.e7)([h.Z], () => h.Z.getQuest(t)),
     s = null != n ? n : a;
-  return null != s ? (0, r.jsx)(y.A, {
+  return null != s ? (0, r.jsx)(C.A, {
     questOrQuests: s,
     questContent: b.jn.VIDEO_MODAL,
     minViewTimeSeconds: I.zw,
     trackGuildAndChannelMetadata: true,
     sourceQuestContent: i.sourceQuestContent,
-    children: e => (0, r.jsx)(F, V(L({}, i), {
+    children: e => (0, r.jsx)(F, V(M({}, i), {
       parentModalOpenStartClockTime: l,
       impressionRef: e,
       quest: s,
