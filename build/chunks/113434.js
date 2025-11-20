@@ -114,15 +114,13 @@ function Y() {
     });
   return Chunk473749.useEffect(() => {
     if ("cache-only" !== module.fetchPolicy && ("cache-and-network" === module.fetchPolicy || "cache-or-network" === module.fetchPolicy && 0 === Chunk959078) && Chunk780384 && !exports && !Chunk754700) {
-      if (require(true), (0, Chunk22095.xw)(), !Chunk410030.enabled || "focused" === Chunk15624.Z.getState()) {
-        let {
-          enableNewRequestBehavior: t
-        } = Chunk704161.Z.getConfig({
-          location: "QuestHookUseQuests"
-        });
-        if (exports) return;
-        (0, Chunk22095.w)(Chunk497505.Ok.DESKTOP_ACCOUNT_PANEL_AREA, "use_quests_".concat(module.callerSource))
-      }
+      if (require(true), (0, Chunk22095.xw)(), Chunk410030.enabled && "focused" !== Chunk15624.Z.getState()) return;
+      let {
+        enableNewRequestBehavior: t
+      } = Chunk704161.Z.getConfig({
+        location: "QuestHookUseQuests"
+      });
+      if (!exports)(0, Chunk22095.w)(Chunk497505.Ok.DESKTOP_ACCOUNT_PANEL_AREA, "use_quests_".concat(module.callerSource))
     }
   }, [module.fetchPolicy, Chunk780384, exports, Chunk754700, Chunk959078, module.callerSource, Chunk410030.enabled]), {
     quests: Chunk392711,

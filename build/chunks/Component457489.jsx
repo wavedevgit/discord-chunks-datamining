@@ -1,12 +1,12 @@
 /** Chunk was on 77033 **/
 /** chunk id: 457489, original params: e,n,l (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => j
+  default: () => C
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk703656 = require("./703656.js"),
@@ -25,43 +25,43 @@ function _(e) {
   var n, l;
   let {
     storefront: a,
-    guildId: r,
-    selectedPageIndex: d,
-    selectedSku: o
+    guildId: o,
+    selectedPageIndex: r,
+    selectedSku: d
   } = e;
   return i.useEffect(() => {
-    null != o ? (0, x.g)({
-      skuId: o.id,
+    null != d ? (0, x.g)({
+      skuId: d.id,
       applicationId: a.applicationId,
-      guildId: r,
+      guildId: o,
       isStorefront: true,
       onClose: () => {
         "POP" !== (0, s.s1)().action && (0, I.Z)({
-          guildId: r,
-          pageIndex: d
+          guildId: o,
+          pageIndex: r
         })
       }
-    }) : null == o && (0, x.U)()
-  }, [r, d, o, a.applicationId]), (0, t.jsxs)(t.Fragment, {
+    }) : null == d && (0, x.U)()
+  }, [o, r, d, a.applicationId]), (0, t.jsxs)(t.Fragment, {
     children: [(0, t.jsxs)("div", {
-      className: h.container,
-      children: [(0, t.jsx)(m.Z, {
-        guildId: r,
+      className: v.container,
+      children: [(0, t.jsx)(h.Z, {
+        guildId: o,
         storefront: a,
-        selectedPageIndex: d
-      }), (0, t.jsx)(v.$, {
+        selectedPageIndex: r
+      }), (0, t.jsx)(m.$, {
         applicationId: a.applicationId,
-        guildId: r,
-        page: a.pages[d]
+        guildId: o,
+        page: a.pages[r]
       })]
     }), (0, t.jsx)(f.n, {
       applicationId: a.applicationId,
-      backgroundImageAssetId: null == (l = a.pages[d]) || null == (n = l.leaderboard) ? true : n.backgroundImageAssetId
+      backgroundImageAssetId: null == (l = a.pages[r]) || null == (n = l.leaderboard) ? true : n.backgroundImageAssetId
     })]
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     match: n
   } = e, {
@@ -70,22 +70,22 @@ function j(e) {
     gameShopSkuId: s
   } = n.params, I = (0, g.Z)({
     guildId: l
-  }), x = (0, d.e7)([u.Z], () => u.Z.get(s), [s]);
+  }), x = (0, r.e7)([u.Z], () => u.Z.get(s), [s]);
   (0, c.p2)();
-  let m = i.useMemo(() => {
+  let h = i.useMemo(() => {
     if (null == a) return 0;
     let e = parseInt(a, 10);
     return isNaN(e) || null != I && null != I.storefront && e >= I.storefront.pages.length ? 0 : e
   }, [a, I]);
   return (i.useEffect(() => {
-    null != l && (0, p.m0)(l, m, null != s ? s : null)
-  }, [l, m, s]), ((null == I ? true : I.storefront) != null || (null == I ? true : I.error)) && !(null == I ? true : I.loading) && null != l && (null == I ? true : I.storefront) != null) ? (0, t.jsx)(_, {
+    null != l && (0, p.m0)(l, h, null != s ? s : null)
+  }, [l, h, s]), ((null == I ? true : I.storefront) != null || (null == I ? true : I.error)) && !(null == I ? true : I.loading) && null != l && (null == I ? true : I.storefront) != null) ? (0, t.jsx)(_, {
     storefront: I.storefront,
     guildId: l,
-    selectedPageIndex: m,
+    selectedPageIndex: h,
     selectedSku: x
   }) : (0, t.jsx)("div", {
-    className: r()(h.spinner, h.container),
-    children: (0, t.jsx)(o.$jN, {})
+    className: o()(v.spinner, v.container),
+    children: (0, t.jsx)(d.$jN, {})
   })
 }

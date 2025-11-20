@@ -31,21 +31,17 @@ let h = Chunk70956.Z.Millis.DAY,
   b = 12 * Chunk70956.Z.Millis.HOUR;
 class y extends Chunk147913.Z {
   _fetch(e) {
-    if ((0, f.c)({
+    if (!(0, f.c)({
         location: _.dr.QUESTS_MANAGER
-      }) && !s.Z.isFetchingCurrentQuests) {
-      if ((0, o.xw)(), !c.DL.getConfig({
-          location: _.dr.QUESTS_MANAGER
-        }).enabled || "focused" === i.Z.getState()) {
-        let {
-          enableNewRequestBehavior: t
-        } = d.Z.getConfig({
-          location: "QuestFetchManager"
-        });
-        if (t) return;
-        (0, o.w)(l.Ok.DESKTOP_ACCOUNT_PANEL_AREA, e)
-      }
-    }
+      }) || s.Z.isFetchingCurrentQuests || ((0, o.xw)(), c.DL.getConfig({
+        location: _.dr.QUESTS_MANAGER
+      }).enabled && "focused" !== i.Z.getState())) return;
+    let {
+      enableNewRequestBehavior: t
+    } = d.Z.getConfig({
+      location: "QuestFetchManager"
+    });
+    t || (0, o.w)(l.Ok.DESKTOP_ACCOUNT_PANEL_AREA, e)
   }
   constructor(...e) {
     super(...e), p(this, "instantiatedAt", Date.now()), p(this, "initialFetchTimerId", null), p(this, "recurringFetchTimerId", null), p(this, "lastFetchAttemptedAt", 0), p(this, "lastFetchedQuestForLocaleChangeAt", 0), p(this, "handleQuestsFetchCurrentQuestsBegin", () => {
