@@ -51,30 +51,30 @@ function y(e) {
   let {
     root: y,
     directory: j,
-    target: m,
-    defaultTarget: v,
+    target: v,
+    defaultTarget: m,
     onClose: g,
     sidebarHeader: x,
     sidebarFooter: h,
     onPanelChange: O,
-    emptyState: P
-  } = e, S = null != m && (null == (t = j.entry(m)) ? true : t.targetPanelKey) != null ? m : v;
+    emptyState: S
+  } = e, P = null != v && (null == (t = j.entry(v)) ? true : t.targetPanelKey) != null ? v : m;
   (0, i.ZP)(() => {
-    let e = j.entry(S).targetPanelKey;
+    let e = j.entry(P).targetPanelKey;
     return d.Z.setState({
-      targetKey: S,
+      targetKey: P,
       currentPanelKey: e,
-      showNavigationMobile: null == m
+      showNavigationMobile: null == v
     }), () => d.Z.resetState()
   });
   let C = d.Z.useField("currentPanelKey"),
     _ = d.Z.useField("targetKey"),
     [N, E] = l.useState(j),
-    w = l.useMemo(() => N.get(null != C ? C : S), [N, C, S]),
+    w = l.useMemo(() => N.get(null != C ? C : P), [N, C, P]),
     T = l.useCallback(() => Z(true), []),
     [k, Z] = l.useState({
-      target: S,
-      targetAccordionKey: null == (n = j.entry(S)) ? true : n.parentAccordionKey,
+      target: P,
+      targetAccordionKey: null == (n = j.entry(P)) ? true : n.parentAccordionKey,
       animateScroll: false,
       complete: T
     }),
@@ -127,7 +127,7 @@ function y(e) {
         header: x,
         footer: h,
         onClose: R,
-        emptyState: P
+        emptyState: S
       }), (0, r.jsx)(a.Z, {
         onClose: R,
         setting: null != A ? A : w

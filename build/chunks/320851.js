@@ -1,14 +1,15 @@
 /** Chunk was on 9452 **/
 /** chunk id: 320851, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => c
 });
-var Chunk509613 = require("./509613.js"),
+var Chunk323472 = require("./323472.jsx"),
+  Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
   Chunk299426 = require("./299426.jsx"),
   Chunk407458 = require("./407458.js"),
   Chunk388032 = require("./388032.jsx");
-let a = [{
+let o = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.hK51Yg),
     sound: "deafen"
   }, {
@@ -75,14 +76,16 @@ let a = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.CP3DC3),
     sound: "reconnect"
   }],
-  o = (0, Chunk509613.$l)(Chunk313789.n.VOICE_AND_VIDEO_SOUNDS_LIST, {
+  c = (0, Chunk509613.$l)(Chunk313789.n.VOICE_AND_VIDEO_SOUNDS_LIST, {
     collapseAfter: 4,
-    useCollapsibleTitle: (t, e) => t ? s.intl.formatToPlainString(s.t["0JYT98"], {
+    useCollapsibleTitle: (t, e) => t ? a.intl.formatToPlainString(a.t["0JYT98"], {
       count: e
-    }) : s.intl.formatToPlainString(s.t.ji1uNt, {
+    }) : a.intl.formatToPlainString(a.t.ji1uNt, {
       count: e
     }),
-    useCollapsibleSubtitle: () => Chunk388032.intl.string(Chunk388032.t.LYO7bT),
+    useCollapsedSubtitle: () => (0, Chunk323472.u)(Chunk313789.n.VOICE_AND_VIDEO_SOUNDS_LIST, {
+      limit: 3
+    }),
     ContextProvider: Chunk299426.u,
-    buildLayout: () => a.map(t => (0, r.j)(t))
+    buildLayout: () => o.map(t => (0, s.j)(t))
   })

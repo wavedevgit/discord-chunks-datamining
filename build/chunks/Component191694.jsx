@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 191694, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  q: () => S
+  q: () => T
 });
 var Chunk54381 = require("./54381.js"),
   Chunk657707 = require("./657707.js"),
@@ -15,14 +15,14 @@ let E = (0, Chunk509613.x1)(Chunk313789.n.REGISTERED_GAMES_PANE, {
     buildLayout: () => [],
     render: () => (0, Chunk54381.jsx)(Chunk293389.Z, {})
   }),
-  T = (0, Chunk509613.wf)(Chunk313789.n.REGISTERED_GAMES_PANEL, {
+  S = (0, Chunk509613.wf)(Chunk313789.n.REGISTERED_GAMES_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AVDyEj),
     buildLayout: () => [E]
   }),
-  S = (0, Chunk509613.m7)(Chunk313789.n.REGISTERED_GAMES_SIDEBAR_ITEM, {
+  T = (0, Chunk509613.m7)(Chunk313789.n.REGISTERED_GAMES_SIDEBAR_ITEM, {
     icon: Chunk657707.iWm,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AVDyEj),
     getLegacySearchKey: () => Chunk726985.s6.REGISTERED_GAMES,
     usePredicate: Chunk168308.Jw,
-    buildLayout: () => [T]
+    buildLayout: () => [S]
   })

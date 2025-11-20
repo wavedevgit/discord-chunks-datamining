@@ -1,33 +1,40 @@
 /** Chunk was on 16985 **/
 /** chunk id: 530171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => s
-});
+  I: () => u
+}), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
   Chunk206403 = require("./206403.jsx"),
   Chunk481446 = require("./481446.js");
 
-function s(e) {
+function u(e) {
   let {
     title: t,
-    subtitle: n,
-    isOpen: l,
-    setIsOpen: s,
-    children: u
-  } = e;
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.x, {
+    collapsedSubtitle: n,
+    isOpen: i,
+    setIsOpen: u,
+    children: d
+  } = e, f = l.useRef(null), [b, p] = l.useState(null), y = i && null != b;
+  return l.useLayoutEffect(() => {
+    null != f.current && null == b && p(f.current.clientHeight)
+  }, [b]), (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(c.x, {
+      ref: f,
+      style: null != b ? {
+        minHeight: b
+      } : true,
       title: t,
-      description: l ? true : n,
-      secondaryTrailingElement: (0, r.jsx)(o.sXD, {
-        className: i()(c.icon, {
-          [c.iconClosed]: !l
+      description: y ? true : n,
+      secondaryTrailingElement: (0, r.jsx)(a.sXD, {
+        className: o()(s.icon, {
+          [s.iconClosed]: !i
         })
       }),
-      onClick: () => s(!l)
-    }), l && u]
+      onClick: () => u(!i)
+    }), i && d]
   })
 }

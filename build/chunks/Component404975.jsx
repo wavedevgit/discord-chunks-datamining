@@ -1,7 +1,7 @@
 /** Chunk was on 16985 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => v
+  P: () => m
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,13 +19,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk845435 = require("./845435.js");
 
-function v(e) {
+function m(e) {
   let {
     root: t,
     header: n,
     footer: i,
     onClose: y,
-    emptyState: v
+    emptyState: m
   } = e, x = p.Z.useField("showNavigationMobile"), h = l.useRef(null), O = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
@@ -43,7 +43,7 @@ function v(e) {
         }
       })
     }), e
-  }, [t.layout]), [P, S] = l.useMemo(() => {
+  }, [t.layout]), [S, P] = l.useMemo(() => {
     let e = [],
       n = [];
     return t.layout.forEach(t => {
@@ -59,14 +59,14 @@ function v(e) {
           visibleContent: l
         } = t;
         return (0, r.jsxs)("div", {
-          className: o()(m.sidebar, e, {
-            [m.mobile]: c.tq,
-            [m.mobileNavigationOpen]: x
+          className: o()(v.sidebar, e, {
+            [v.mobile]: c.tq,
+            [v.mobileNavigationOpen]: x
           }),
           children: [(0, r.jsxs)("div", {
-            className: m.fixedContent,
+            className: v.fixedContent,
             children: [c.tq && (0, r.jsx)("div", {
-              className: m.mobileCloseButton,
+              className: v.mobileCloseButton,
               children: (0, r.jsx)(s.hU, {
                 icon: s.Uz9,
                 onClick: y,
@@ -75,12 +75,12 @@ function v(e) {
                 "aria-label": j.intl.string(j.t.cpT0Cq)
               })
             }), (0, r.jsx)("div", {
-              children: P.map(e => (0, r.jsx)(g, {
+              children: S.map(e => (0, r.jsx)(g, {
                 section: e,
                 visibleContent: l,
                 hoisted: true
               }, e.key))
-            }), null != n && (0, r.jsx)(n, {}), null != v && 0 === S.length && (0, r.jsx)(v, {})]
+            }), null != n && (0, r.jsx)(n, {}), null != m && 0 === P.length && (0, r.jsx)(m, {})]
           }), (0, r.jsx)(a.bG, {
             navigator: _,
             children: (0, r.jsx)(a.SJ, {
@@ -125,12 +125,12 @@ function v(e) {
                     var t;
                     h.current = e, o.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
                   },
-                  className: m.navScroller,
+                  className: v.navScroller,
                   fade: true
                 }, a), n = n = {
                   children: [(0, r.jsx)("nav", {
-                    className: m.nav,
-                    children: S.map(e => (0, r.jsx)(g, {
+                    className: v.nav,
+                    children: P.map(e => (0, r.jsx)(g, {
                       section: e,
                       visibleContent: l
                     }, e.key))
@@ -162,12 +162,12 @@ function g(e) {
     hoisted: i = false
   } = e, o = null == (t = n.useLabel) ? true : t.call(n);
   return (0, r.jsxs)("ul", {
-    className: m.section,
+    className: v.section,
     "aria-label": o,
     children: [null != o && (0, r.jsx)("div", {
-      className: m.sectionLabel,
+      className: v.sectionLabel,
       children: (0, r.jsx)(s.Heading, {
-        className: m.label,
+        className: v.label,
         variant: "heading-sm/medium",
         color: "text-tertiary",
         children: o

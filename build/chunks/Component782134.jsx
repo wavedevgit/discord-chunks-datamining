@@ -12,11 +12,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk269876 = require("./269876.jsx"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
-let T = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_SLIDER, {
+let S = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_SLIDER, {
     useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["sqUm+k"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)],
     render: () => (0, Chunk54381.jsx)(Chunk269876.B, {})
   }),
-  S = (0, Chunk509613.qs)(Chunk313789.n.VOICE_INPUT_AUTO_SENSITIVITY_SETTING, {
+  T = (0, Chunk509613.qs)(Chunk313789.n.VOICE_INPUT_AUTO_SENSITIVITY_SETTING, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.I1Zuq0),
     useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.I1Zuq0), Chunk388032.intl.string(Chunk388032.t.nuFtHH)],
     useValue: () => (0, Chunk442837.e7)([Chunk131951.Z], () => {
@@ -44,5 +44,5 @@ let T = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_SLIDER, {
         e = Chunk131951.Z.isInputProfileCustom();
       return module === Chunk65154.pM.VOICE_ACTIVITY && exports
     }),
-    buildLayout: () => [S, T]
+    buildLayout: () => [T, S]
   })

@@ -37,11 +37,11 @@ function h(e) {
         node: t
       });
     case l.Jq.PANE:
-      return (0, r.jsx)(v.Z, {
+      return (0, r.jsx)(m.Z, {
         node: t
       });
     case l.Jq.LIST:
-      return (0, r.jsx)(m.Z, {
+      return (0, r.jsx)(v.Z, {
         node: t
       });
     case l.Jq.FIELD_SET:

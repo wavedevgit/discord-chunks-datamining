@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk989281 = require("./989281.js");
 
-function v(e) {
+function m(e) {
   let {
     onClose: t
   } = e;
@@ -94,7 +94,7 @@ function g() {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(v, {
+          return (0, r.jsx)(m, {
             onClose: t
           })
         },
@@ -120,8 +120,8 @@ function g() {
           }({}, t), i = i = {
             ref: e,
             useDefaultUnderlineStyles: false,
-            className: o()(m.moreButton, {
-              [m.active]: n.isShown
+            className: o()(v.moreButton, {
+              [v.active]: n.isShown
             }),
             children: (0, r.jsx)(a.Text, {
               tag: "span",

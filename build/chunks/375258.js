@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk491731 = require("./491731.jsx"),
+  Chunk323472 = require("./323472.jsx"),
   Chunk509613 = require("./509613.js"),
   Chunk28682 = require("./28682.js"),
   Chunk463395 = require("./463395.js"),
@@ -53,20 +53,20 @@ function b() {
 
 function p(t) {
   let e = (0, l.e7)([o.Z], () => o.Z.isInputProfileCustom());
-  return (0, u.F)(t, {
+  return (0, u.u)(t, {
     limit: e ? 3 : 2
   })
 }
 let y = (0, Chunk509613.CB)(Chunk313789.n.INPUT_MODE_VOICE_ADVANCED_ACCORDION, {
     useTitle: C,
-    useSubtitle: () => p(Chunk313789.n.INPUT_MODE_VOICE_ADVANCED_ACCORDION),
+    useCollapsedSubtitle: () => p(Chunk313789.n.INPUT_MODE_VOICE_ADVANCED_ACCORDION),
     useNotice: P,
     buildLayout: L,
     usePredicate: b
   }),
   D = (0, Chunk509613.CB)(Chunk313789.n.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
     useTitle: C,
-    useSubtitle: () => p(Chunk313789.n.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION),
+    useCollapsedSubtitle: () => p(Chunk313789.n.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION),
     useNotice: P,
     buildLayout: L,
     usePredicate: () => !b()

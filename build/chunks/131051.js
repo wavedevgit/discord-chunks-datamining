@@ -17,20 +17,20 @@ function c(t, e) {
     {
       searchResults: E
     } = (0, u.F)(),
-    T = new Set;
+    S = new Set;
   for (let t of E) {
     let e = t;
     for (; null != e;) {
-      var S;
-      let t = null == (S = c[e]) ? true : S.parent;
+      var T;
+      let t = null == (T = c[e]) ? true : T.parent;
       if (null == t) {
-        T.add(e);
+        S.add(e);
         break
       }
       e = t
     }
   }
-  let d = (0, o.Z)(n, null != e ? e : "", T),
+  let d = (0, o.Z)(n, null != e ? e : "", S),
     [I, O] = i.useState(d),
     g = function(t, e) {
       if (t.size !== e.size) returntrue;

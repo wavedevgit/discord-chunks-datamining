@@ -1,8 +1,8 @@
 /** Chunk was on 9452 **/
 /** chunk id: 253595, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  W: () => T,
-  Z: () => S
+  W: () => S,
+  Z: () => T
 });
 var Chunk818710 = require("./818710.js"),
   Chunk442837 = require("./442837.js"),
@@ -14,14 +14,14 @@ var Chunk818710 = require("./818710.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T() {
+function S() {
   let t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.supports(Chunk65154.AN.DEBUG_LOGGING));
   return Chunk818710.FB && module && null != Chunk579806.Z.fileManager.readLogFiles
 }
-let S = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AND_VIDEO_DEBUG_LOGGING, {
+let T = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AND_VIDEO_DEBUG_LOGGING, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["726JHL"]),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["/7ak9Q"]),
-  usePredicate: T,
+  usePredicate: S,
   useValue: function() {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getDebugLogging())
   },

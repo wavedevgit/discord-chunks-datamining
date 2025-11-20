@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk755721 = require("./755721.js"),
-  Chunk550964 = require("./550964.jsx");
+  Chunk481060 = require("./481060.js");
 
 function o(e) {
   let {
@@ -17,7 +17,11 @@ function o(e) {
     useSubtitle: c,
     useOptions: s
   } = t, u = a(), d = null == c ? true : c(), f = n(), b = s();
-  return (0, r.jsx)(i.X, {
+  return (0, r.jsx)(i.Kqy, {
+    padding: {
+      left: 12,
+      right: 12
+    },
     children: (0, r.jsx)(l.Gu, {
       label: u,
       description: d,

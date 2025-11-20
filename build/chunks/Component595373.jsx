@@ -28,7 +28,7 @@ function N() {
 function A() {
   let t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode() === Chunk65154.pM.PUSH_TO_TALK),
     e = Chunk473749.useCallback(t => {
-      (0, T.XH)(t ? g.pM.PUSH_TO_TALK : g.pM.VOICE_ACTIVITY, [a.Z.USER_SETTINGS_VOICE_AND_VIDEO])
+      (0, S.XH)(t ? g.pM.PUSH_TO_TALK : g.pM.VOICE_ACTIVITY, [a.Z.USER_SETTINGS_VOICE_AND_VIDEO])
     }, []),
     n = Chunk818710.FB ? Chunk388032.intl.string(Chunk388032.t.tG4Np5) : Chunk388032.intl.string(Chunk388032.t.JMyQin),
     o = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode()),

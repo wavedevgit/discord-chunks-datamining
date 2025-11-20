@@ -15,10 +15,10 @@ function s(t, e, n) {
       let o = arguments.length > 1 && true !== arguments[1] && arguments[1],
         c = arguments.length > 2 && true !== arguments[2] && arguments[2],
         E = (null == (a = t.usePredicate) ? true : a.call(t)) === false || o,
-        T = function(t, e, n, i) {
-          var s, a, o, c, E, T;
-          let S = null == (s = t.getLegacySearchKey) ? true : s.call(t);
-          if (null != S) return e.length < 2 || i.has(S);
+        S = function(t, e, n, i) {
+          var s, a, o, c, E, S;
+          let T = null == (s = t.getLegacySearchKey) ? true : s.call(t);
+          if (null != T) return e.length < 2 || i.has(T);
           if (t.type === r.Jq.SECTION && t.hoisted) returntrue;
           let d = "useTitle" in t ? null == (a = t.useTitle) ? true : a.call(t, false) : true,
             I = "useNavigationTitle" in t ? null == (o = t.useNavigationTitle) ? true : o.call(t) : true,
@@ -34,15 +34,15 @@ function s(t, e, n) {
             null != t && (_ = l()(g, t))
           }
           if (null != I && !_) {
-            let t = null == (T = (0, u.qgQ)(I)) ? true : T.toLowerCase();
+            let t = null == (S = (0, u.qgQ)(I)) ? true : S.toLowerCase();
             null != t && (_ = l()(g, t))
           }
           return _
         }(t, e, E, n) || c,
-        S = false;
+        T = false;
       if ((0, r.Lk)(t))
-        for (let e of t.layout) S = s(e, E, T) || S;
-      return !E && (T || S) && i.add(t.key), T || S
+        for (let e of t.layout) T = s(e, E, S) || T;
+      return !E && (S || T) && i.add(t.key), S || T
     };
   return s(t), i
 }

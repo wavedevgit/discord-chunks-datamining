@@ -27,7 +27,7 @@ function b(e) {
     stronglyDiscouragedCustomComponent: p,
     trailing: y,
     useTitle: j
-  } = a, m = null == j ? true : j();
+  } = a, v = null == j ? true : j();
   return (0, r.jsxs)(c.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -60,7 +60,7 @@ function b(e) {
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "currentColor",
-        children: m
+        children: v
       })]
     }), null != y && (0, r.jsx)("div", {
       className: f.itemContent,
