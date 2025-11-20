@@ -593,6 +593,18 @@ class L extends Chunk473749.Component {
           color: "currentColor"
         });
         break;
+      case Chunk815372.Ky.SHOP_ORBS_TAB:
+        n = Chunk388032.intl.string(Chunk388032.t.EBYkzk), r = (0, Chunk54381.jsx)(Chunk481060.EOn, {
+          size: "xs",
+          color: "currentColor"
+        });
+        break;
+      case Chunk815372.Ky.QUEST_ORBS:
+        n = "".concat(Chunk388032.intl.string(Chunk388032.t.ElYQFS), " ").concat(Chunk388032.intl.string(Chunk388032.t.JALI2K)), r = (0, Chunk54381.jsx)(Chunk481060.qDn, {
+          size: "xs",
+          color: "currentColor"
+        });
+        break;
       case Chunk815372.Ky.NITRO_HOME:
         n = Chunk388032.intl.string(Chunk388032.t.Ipxkog), r = (0, Chunk54381.jsx)(Chunk481060.SrA, {
           size: "xs",
