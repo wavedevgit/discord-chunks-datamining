@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk989941 = require("./989941.js"),
   Chunk562224 = require("./562224.js"),
   Chunk544753 = require("./544753.js"),
-  Chunk853030 = require("./853030.jsx"),
+  Chunk573429 = require("./573429.jsx"),
   Chunk560749 = require("./560749.jsx"),
   Chunk485299 = require("./485299.jsx"),
   Chunk615161 = require("./615161.jsx"),
@@ -64,7 +64,7 @@ function X(e) {
     dispatch: en
   } = (0, k.Ti)(o, $, ee), er = (0, m.Z)((0, w.isWindows)() && null != o && K ? "confirm" : "source_select");
   (0, H.Z)(Y, en, "confirm" === er);
-  let ei = !P.ZP.canStreamQuality(P.ZP.StreamQuality.HIGH, $),
+  let ei = !Z.ZP.canStreamQuality(Z.ZP.StreamQuality.HIGH, $),
     el = !(0, w.isLinux)(),
     es = "confirm" === er,
     eo = !K && null != o && !es,
@@ -72,16 +72,16 @@ function X(e) {
     ec = Y && et.sourceType !== d.vA.CAMERA,
     ed = i.useMemo(() => {
       let e = [{
-        name: V.intl.string(V.t.tHoi7u),
+        name: z.intl.string(z.t.tHoi7u),
         value: d.vA.WINDOW,
         icon: p.GON
       }, {
-        name: V.intl.string(V.t.MhJ43A),
+        name: z.intl.string(z.t.MhJ43A),
         value: d.vA.CAMERA,
         icon: p.Odl
       }];
       return Y || e.splice(1, 0, {
-        name: V.intl.string(V.t.slM8rG),
+        name: z.intl.string(z.t.slM8rG),
         value: d.vA.SCREEN,
         icon: p.pzj
       }), e
@@ -103,8 +103,8 @@ function X(e) {
       });
       if (t) return n();
       "no permission" === r && h.Z.show({
-        title: V.intl.string(V.t["X+mXeq"]),
-        body: V.intl.string(V.t.MIJCzr)
+        title: z.intl.string(z.t["X+mXeq"]),
+        body: z.intl.string(z.t.MIJCzr)
       }), n()
     }, [n, et, Q]);
   async function ep(e) {
@@ -116,7 +116,7 @@ function X(e) {
     var e;
     ef({
       id: ("gamescope" === et.nativeSourceType ? "screen:" : "prepicked:") + et.nativeSourceType,
-      name: null != (e = I.ZP.getLastPickedContentTitle()) ? e : V.intl.string(V.t.KKcy95),
+      name: null != (e = I.ZP.getLastPickedContentTitle()) ? e : z.intl.string(z.t.KKcy95),
       url: ""
     })
   }, [ef, et.nativeSourceType]);
@@ -190,10 +190,10 @@ function X(e) {
               }), ec && !ea && (0, r.jsx)(A.Z, {
                 mainCTADisabled: !el && "" === et.nativeSourceType,
                 mainCTAOnClick: () => {
-                  "gamescope" === et.nativeSourceType ? eh() : ((0, Z.t)(), (0, Z.T)(et.nativeSourceType))
+                  "gamescope" === et.nativeSourceType ? eh() : ((0, P.t)(), (0, P.T)(et.nativeSourceType))
                 },
                 align: "right",
-                ctaText: V.intl.string("gamescope" === et.nativeSourceType ? z.default["5AyH/p"] : V.t.FiBjwU),
+                ctaText: z.intl.string("gamescope" === et.nativeSourceType ? V.default["5AyH/p"] : z.t.FiBjwU),
                 hideOptionsButton: !ei
               }), ea && !ec && (0, r.jsx)(A.Z, {
                 mainCTADisabled: null == et.selectedSource,
@@ -202,7 +202,7 @@ function X(e) {
                 },
                 align: "right",
                 hideOptionsButton: !ei,
-                ctaText: V.intl.string(z.default["5AyH/p"])
+                ctaText: z.intl.string(V.default["5AyH/p"])
               }), (!ei || !(ea || ec)) && (0, r.jsx)(B.Z, {
                 align: "right"
               })]

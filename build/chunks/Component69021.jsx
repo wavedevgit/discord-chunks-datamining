@@ -63,9 +63,9 @@ function f() {
     isForcedCanary: j,
     isSourceMapsEnabled: A,
     isIdleStatusIndicatorEnabled: N,
-    isAxeEnabled: w,
-    preventPopoutClose: _,
-    onlyShowPreviewAppCollections: D,
+    isAxeEnabled: I,
+    preventPopoutClose: w,
+    onlyShowPreviewAppCollections: _,
     disableAppCollectionsCache: x
   } = (0, Chunk442837.cj)([Chunk857192.default, Chunk594174.default, Chunk906467.Z], () => {
     var e;
@@ -87,7 +87,7 @@ function f() {
       disableAppCollectionsCache: Chunk857192.default.disableAppCollectionsCache
     }
   }), {
-    horizontalSpacing: I,
+    horizontalSpacing: D,
     verticalSpacing: T,
     maxHorizontalSpacing: C,
     maxVerticalSpacing: m
@@ -168,28 +168,28 @@ function f() {
     }, "idle-status"), (0, Chunk54381.jsx)(Chunk481060.S89, {
       id: "accessibility-auditing",
       label: "Accessibility Auditing",
-      checked: w,
+      checked: I,
       action: () => {
         (0, Chunk179658.y)({
-          axeEnabled: !w
+          axeEnabled: !I
         })
       }
     }, "accessibility-auditing"), (0, Chunk54381.jsx)(Chunk481060.S89, {
       id: "prevent-popout-close",
       label: "Prevent Popouts From Closing",
-      checked: _,
+      checked: w,
       action: () => {
         (0, Chunk179658.y)({
-          preventPopoutClose: !_
+          preventPopoutClose: !w
         })
       }
     }, "prevent-popout-close"), (0, Chunk54381.jsx)(Chunk481060.S89, {
       id: "preview-collections",
       label: "Preview Unpublished Collections",
-      checked: D,
+      checked: _,
       action: () => {
         (0, Chunk179658.y)({
-          onlyShowPreviewAppCollections: !D
+          onlyShowPreviewAppCollections: !_
         })
       }
     }, "preview-collections"), (0, Chunk54381.jsx)(Chunk481060.S89, {
@@ -270,9 +270,9 @@ function f() {
   }, "design-tools")), module && (k.push((0, Chunk54381.jsx)(Chunk481060.II_, {
     id: "horizontal-spacing",
     label: "Horizontal Spacing",
-    control: (e, t) => (0, l.jsx)(i._wy, y(E({}, e), {
+    control: (e, t) => (0, l.jsx)(a._wy, y(E({}, e), {
       ref: t,
-      value: I,
+      value: D,
       minValue: 0,
       maxValue: C,
       onChange: e => L(e),
@@ -282,7 +282,7 @@ function f() {
   }, "horizontal-spacing")), k.push((0, Chunk54381.jsx)(Chunk481060.II_, {
     id: "vertical-spacing",
     label: "Vertical Spacing",
-    control: (e, t) => (0, l.jsx)(i._wy, y(E({}, e), {
+    control: (e, t) => (0, l.jsx)(a._wy, y(E({}, e), {
       ref: t,
       value: T,
       minValue: 0,

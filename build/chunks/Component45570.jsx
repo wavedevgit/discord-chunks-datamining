@@ -10,9 +10,9 @@ var Chunk481060 = require("./481060.js"),
   Chunk326528 = require("./326528.js");
 
 function o() {
-  return (0, Chunk326528.b)().map(e => (0, l.jsx)(a.sNh, {
+  return (0, Chunk326528.b)().map(e => (0, l.jsx)(i.sNh, {
     id: e.id,
     label: e.title,
-    action: () => (0, i.Z)(e.id)
+    action: () => (0, a.Z)(e.id)
   }, e.id))
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 47863 **/
 /** chunk id: 615161, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E_: () => P,
+  E_: () => Z,
   Ti: () => w,
   Yw: () => O
 }), require("./415506.js"), require("./388685.js");
@@ -184,16 +184,16 @@ function w(e, t, n) {
   } = (0, c.cj)([p.Z], () => p.Z.getState());
   s && (a = g.ApplicationStreamPresets.PRESET_AUTO);
   let w = (0, c.e7)([h.Z], () => h.Z.getInputDeviceId()),
-    P = null != (r = f.I0.useSetting()) && r,
-    Z = null != (l = f.eo.useSetting()) && l;
+    Z = null != (r = f.I0.useSetting()) && r,
+    P = null != (l = f.eo.useSetting()) && l;
   a in g.ApplicationStreamPresets && (a !== g.ApplicationStreamPresets.PRESET_AUTO || o) || (a = g.ApplicationStreamPresets.PRESET_VIDEO), (0, _.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, b, y, t, n) || (b = g.ApplicationStreamResolutions.RESOLUTION_720, y = g.ApplicationStreamFPS.FPS_30);
   let [I, E] = i.useReducer(C, j(v({}, S), {
     muteStreamAudio: !O,
     preset: a,
     resolution: b,
     fps: y,
-    hidePreview: P,
-    notifyFriends: Z,
+    hidePreview: Z,
+    notifyFriends: P,
     selectedSource: e,
     nativeSourceType: h.Z.getUseGamescopeCapture() ? "gamescope" : "",
     audioSourceId: w
@@ -217,6 +217,6 @@ function w(e, t, n) {
   }
 }
 
-function P() {
+function Z() {
   return [Chunk473749.useContext(b), Chunk473749.useContext(y)]
 }

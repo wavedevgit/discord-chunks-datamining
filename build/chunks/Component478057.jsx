@@ -28,7 +28,7 @@ function d() {
       }), (0, Chunk37234.jN)(Chunk981631.S9g.COMPONENT_PLAYGROUND)
     },
     children: (0, Chunk54381.jsx)(Chunk481060.kSQ, {
-      children: module.map(e => (0, l.jsx)(i.sNh, {
+      children: module.map(e => (0, l.jsx)(a.sNh, {
         id: "".concat(e.id, "-playground"),
         label: e.name,
         action: () => {

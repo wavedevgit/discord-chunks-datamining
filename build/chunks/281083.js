@@ -1,10 +1,10 @@
-/** Chunk was on 39173 **/
-/** chunk id: 281083, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 59416 **/
+/** chunk id: 281083, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 }), require("./388685.js");
 var Chunk209739 = require("./209739.js"),
-  i = require.n(Chunk209739),
+  l = require.n(Chunk209739),
   Chunk358085 = require("./358085.js");
 let u = {
   [Chunk358085.PlatformTypes.WINDOWS]: {
@@ -13,17 +13,17 @@ let u = {
 };
 
 function a(e) {
-  let t = u[(0, l.getPlatform)()];
+  let t = u[(0, i.getPlatform)()];
   if (null == t) returnfalse;
-  for (let n of Object.keys(e)) {
-    let r = e[n],
-      l = t[n];
-    if (null == r || null == l || null != r.error) continue;
+  for (let r of Object.keys(e)) {
+    let n = e[r],
+      i = t[r];
+    if (null == n || null == i || null != n.error) continue;
     let u = function(e) {
-      var t, n;
-      return "".concat(null != (t = e.major) ? t : 0, ".").concat(null != (n = e.minor) ? n : 0, ".0")
-    }(r);
-    if (!i().satisfies(u, l)) returntrue
+      var t, r;
+      return "".concat(null != (t = e.major) ? t : 0, ".").concat(null != (r = e.minor) ? r : 0, ".0")
+    }(n);
+    if (!l().satisfies(u, i)) returntrue
   }
   returnfalse
 }

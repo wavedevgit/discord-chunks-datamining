@@ -1,7 +1,7 @@
 /** Chunk was on 47863 **/
 /** chunk id: 812652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => P
+  ZP: () => Z
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -67,14 +67,14 @@ function w(e) {
   })
 }
 
-function P(e) {
+function Z(e) {
   var t, n;
   let {
     onClose: c,
     onSelect: b
   } = e, [{
-    audioSourceId: P,
-    notifyFriends: Z,
+    audioSourceId: Z,
+    notifyFriends: P,
     hidePreview: I,
     muteStreamAudio: E,
     preset: T,
@@ -84,7 +84,7 @@ function P(e) {
     selectedChannel: M
   }, k] = (0, m.E_)(), D = !(0, d.$s)(M, "StreamOptionsMenu"), L = (0, h.Z)(), [B, G] = null != (t = (0, g.Z)(x.ApplicationStreamPresets.PRESET_VIDEO)) ? t : [x.ApplicationStreamResolutions.RESOLUTION_720, x.ApplicationStreamFPS.FPS_30], [U, F] = null != (n = (0, g.Z)(x.ApplicationStreamPresets.PRESET_DOCUMENTS)) ? n : [x.ApplicationStreamResolutions.RESOLUTION_SOURCE, x.ApplicationStreamFPS.FPS_15], H = (0, o.M)({
     deviceType: v.h7.AUDIO_INPUT,
-    selectedDeviceId: P,
+    selectedDeviceId: Z,
     analyticsLocations: [s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION],
     asSubmenu: true,
     onDeviceSelect: e => (k({
@@ -221,11 +221,11 @@ function P(e) {
         })
       }), D && (0, r.jsx)(l.S89, {
         id: "stream-option-notify",
-        checked: Z,
+        checked: P,
         label: S.intl.string(j.default.SiHtXy),
         action: () => k({
           type: "set_notify_friends",
-          value: !Z
+          value: !P
         })
       })]
     })]

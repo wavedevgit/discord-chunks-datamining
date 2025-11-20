@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk602804 = require("./602804.js");
 
-function Z(e) {
+function P(e) {
   let {
     source: t
   } = e;
@@ -37,7 +37,7 @@ function Z(e) {
     size: "xs"
   }) : t.id.startsWith(c.vA.WINDOW) ? null != t.icon && "" !== t.icon ? (0, r.jsx)("img", {
     src: t.icon,
-    className: P.sourceIcon,
+    className: Z.sourceIcon,
     alt: ""
   }) : (0, r.jsx)(u.GON, {
     size: "xs"
@@ -57,21 +57,21 @@ function I(e) {
   } = t;
   return (0, r.jsxs)(u.P3F, {
     onClick: () => i(t),
-    className: s()(P.source, {
-      [P.selectedSource]: n
+    className: s()(Z.source, {
+      [Z.selectedSource]: n
     }),
     children: [(0, r.jsx)("div", {
-      className: P.sourcePreviewContainer,
+      className: Z.sourcePreviewContainer,
       children: (0, r.jsxs)("div", {
-        className: P.sourcePreview,
+        className: Z.sourcePreview,
         children: [(0, r.jsx)("img", {
           src: l,
-          className: P.sourcePreviewImage,
+          className: Z.sourcePreviewImage,
           alt: ""
         }), (0, r.jsx)("div", {
-          className: P.sourceOverlay,
+          className: Z.sourceOverlay,
           children: (0, r.jsx)("div", {
-            className: P.sourceOverlayCTA,
+            className: Z.sourceOverlayCTA,
             children: (0, r.jsx)(u.Text, {
               variant: "text-sm/medium",
               color: "button-filled-white-text",
@@ -81,12 +81,12 @@ function I(e) {
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: P.sourceNameContainer,
-      children: [(0, r.jsx)(Z, {
+      className: Z.sourceNameContainer,
+      children: [(0, r.jsx)(P, {
         source: t
       }), (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
-        className: P.sourceName,
+        className: Z.sourceName,
         children: o
       })]
     })]
@@ -103,7 +103,7 @@ function E(e) {
     sourceType: o,
     fetchingSources: g,
     selectedSource: O,
-    discordSourceId: Z,
+    discordSourceId: P,
     hasPermission: E
   }] = (0, y.E_)(), {
     smarterSourceOrdering: N
@@ -116,7 +116,7 @@ function E(e) {
     return t
   }), M = (0, d.e7)([_.Z], () => _.Z.quests), k = (0, b.jx)(M, A, n);
   i.useEffect(() => ((0, h.Ky)(), h.P7), []);
-  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, b.ov)(t, null == k ? true : k.source.id, Z, R) - (0, b.ov)(e, null == k ? true : k.source.id, Z, R)) : n, [k, N, n, Z, R]);
+  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, b.ov)(t, null == k ? true : k.source.id, P, R) - (0, b.ov)(e, null == k ? true : k.source.id, P, R)) : n, [k, N, n, P, R]);
   if (g) {
     if (false === E) {
       let e = false;
@@ -126,9 +126,9 @@ function E(e) {
         e = !v.o || "0.0.0" === t || a().satisfies(t, "0.0.363")
       }
       return (0, r.jsxs)("div", {
-        className: P.errorBox,
+        className: Z.errorBox,
         children: [(0, r.jsxs)(u.Text, {
-          className: P.errorText,
+          className: Z.errorText,
           variant: "text-md/normal",
           color: "text-danger",
           children: [w.intl.string(w.t["kW5h/W"]), (0, r.jsx)("br", {}), w.intl.string(w.t["5Jvu1R"])]
@@ -141,13 +141,13 @@ function E(e) {
       })
     }
     return (0, r.jsx)("div", {
-      className: P.loading,
+      className: Z.loading,
       children: (0, r.jsx)(u.$jN, {})
     })
   }
   let G = [];
   return (G = o === c.vA.WINDOW ? D : o === c.vA.SCREEN ? s : l, o === c.vA.CAMERA && 0 === G.length) ? (0, r.jsx)(T, {}) : (0, r.jsx)("div", {
-    className: P.root,
+    className: Z.root,
     children: G.map(e => (0, r.jsx)(I, {
       onClick: t,
       source: e,
