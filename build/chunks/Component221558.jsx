@@ -34,28 +34,28 @@ function p() {
         joinedCount: exports,
         guildCount: require.length
       })
-    }), require.map((e, i) => (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(s.Z, {
+    }), require.map((e, i) => (0, n.jsxs)("div", {
+      children: [(0, n.jsx)(s.Z, {
         guild: e,
         size: s.Z.Sizes.XLARGE
-      }), (0, r.jsx)(l.xvT, {
+      }), (0, n.jsx)(l.xvT, {
         variant: "display-md",
         color: "text-primary",
         children: e.name
-      }), 0 === i && (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(l.xvT, {
+      }), 0 === i && (0, n.jsxs)("div", {
+        children: [(0, n.jsx)(l.xvT, {
           variant: "display-md",
           color: "text-primary",
           children: t[0].numMessagesSent
-        }), (0, r.jsx)(l.xvT, {
+        }), (0, n.jsx)(l.xvT, {
           variant: "display-sm",
           color: "text-primary",
           children: x.intl.string(u.default.wWKySP)
-        }), (0, r.jsx)(l.xvT, {
+        }), (0, n.jsx)(l.xvT, {
           variant: "display-md",
           color: "text-primary",
           children: t[0].numVoiceMinutes
-        }), (0, r.jsx)(l.xvT, {
+        }), (0, n.jsx)(l.xvT, {
           variant: "display-sm",
           color: "text-primary",
           children: x.intl.string(u.default.lXT6ns)

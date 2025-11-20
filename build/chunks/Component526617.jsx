@@ -4,7 +4,7 @@
 require.d(exports, {
   O: () => el,
   Z: () => ed
-}), require("./388685.js"), require("./856094.js"), require("./472816.js"), require("./794429.js");
+}), require("./388685.js"), require("./856094.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
@@ -254,7 +254,7 @@ function ed(e) {
     location: "SoundboardSoundGrid"
   }).upsellPinningMode, {
     categories: ew,
-    allSounds: eL,
+    availableSounds: eL,
     soundCounts: ex
   } = (0, B.ZP)(a, {}, e_), [eM, ek] = i.useState([]), ej = (0, B.FS)(ew, eM, eN), eU = (0, b.Iu)(e => e.isNitroLockedSectionVisible), [eG, eB] = i.useState(false), eZ = i.useMemo(() => ej.filter(e => e.items.length > 0), [ej]), eF = i.useMemo(() => eZ.findLastIndex(e => !!(0, w._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), [eZ]), eV = !eS && J && false !== eF, eH = i.useMemo(() => eV ? [0, 0, 8, 0] : [0, 0, 0, 0], [eV]), eY = A.T4.useSetting(), eW = i.useMemo(() => new Set(eY), [eY]), eK = null == a, ez = w.ZP.canUseCustomCallSounds(eT), eq = i.useCallback(e => {
     eW.has(e) ? eW.delete(e) : eW.add(e), A.T4.updateSetting(Array.from(eW))
@@ -373,7 +373,7 @@ function ed(e) {
         [q.brandRefresh]: em
       })
     }) : null
-  }, [eF, eV, eZ.length, em]), e6 = i.useCallback(e => ek((0, G.cK)(e, Array.from(eL.values()).flat(), eT, a, eE)), [a, eT, eL, eE]), e7 = i.useCallback(e => {
+  }, [eF, eV, eZ.length, em]), e6 = i.useCallback(e => ek((0, G.cK)(e, eL, eT, a, eE)), [a, eT, eL, eE]), e7 = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e

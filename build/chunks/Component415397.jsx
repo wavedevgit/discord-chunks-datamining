@@ -99,8 +99,8 @@ function x(e) {
           className: a()(C.row, C.clickable),
           children: [(0, i.jsx)("div", {
             className: C.leading,
-            children: (0, i.jsx)(u.oLu, {
-              size: "refresh_sm",
+            children: (0, i.jsx)(u.BFJ, {
+              size: "xs",
               className: C.icon
             })
           }), (0, i.jsx)(u.Text, {
@@ -177,8 +177,7 @@ function j(e) {
       className: C.status,
       lineClamp: 1,
       children: y.intl.string(y.t["8BEiNn"])
-    }), (0, i.jsx)(u.Text, {
-      variant: "text-sm/normal",
+    }), null == b && (0, i.jsx)("div", {
       className: C.userIconContainer,
       children: (0, i.jsx)(u.oLu, {
         color: "currentColor",

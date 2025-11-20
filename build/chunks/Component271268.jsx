@@ -31,17 +31,17 @@ function o() {
       children: Chunk388032.intl.format(Chunk140939.default.UZbUtl, {
         numMinutes: Math.floor(module)
       })
-    }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+    }), null != exports ? (0, Chunk54381.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
       children: Chunk388032.intl.format(Chunk140939.default["36PZwu"], {
         percent: 100 - exports,
-        percentHook: (t, e) => (0, r.jsx)(n.xvT, {
+        percentHook: (t, e) => (0, n.jsx)(r.xvT, {
           variant: "display-sm",
           color: "text-primary",
           children: t
         }, e)
       })
-    })]
+    }) : null]
   })
 }

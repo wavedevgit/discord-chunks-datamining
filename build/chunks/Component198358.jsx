@@ -10,8 +10,8 @@ function l(t) {
   let {
     children: e
   } = t;
-  return (0, r.jsx)("div", {
-    className: n.container,
+  return (0, n.jsx)("div", {
+    className: r.container,
     children: e
   })
 }
