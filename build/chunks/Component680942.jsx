@@ -39,7 +39,7 @@ let h = e => {
       icon: s.OgN,
       size: "md",
       onClick: e => {
-        e.stopPropagation(), d.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        e.stopPropagation(), d.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == C ? true : C.sessionId,
           sku_id: n.skuId,
           page_section: null == C ? true : C.pageSection,
@@ -54,7 +54,7 @@ let h = e => {
             selectedVariantIndex: h
           }),
           isGift: true,
-          giftingOrigin: g.Wt.SHOP_PAGE,
+          giftingOrigin: b.Wt.SHOP_PAGE,
           analyticsLocations: O,
           returnRef: x,
           variantsReturnStyle: a.v.VARIANTS_GROUP,

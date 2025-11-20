@@ -17,8 +17,8 @@ let d = e => {
     onSuccess: d,
     onError: v
   } = e, [p, f] = r.useState(false), {
-    firstAvatarDecoration: b,
-    firstProfileEffect: g,
+    firstAvatarDecoration: g,
+    firstProfileEffect: b,
     firstNameplate: m
   } = (0, c.Rj)(n), h = (0, s.x6)(n) ? u.intl.string(u.t.tf1ZZ4) : n.type === l.Z.AVATAR_DECORATION ? u.intl.string(u.t.zOA4ax) : n.type === l.Z.NAMEPLATE ? u.intl.string(u.t.gOzMvx) : u.intl.string(u.t.SWm2ai);
   return {
@@ -26,9 +26,9 @@ let d = e => {
       f(true);
       let e = {};
       try {
-        if (null != b && (e.avatarDecoration = b), null != g) {
+        if (null != g && (e.avatarDecoration = g), null != b) {
           let e = (0, a.g9)({
-            pendingProfileEffect: g
+            pendingProfileEffect: b
           });
           await (0, o.Z)(e)
         }
@@ -52,7 +52,7 @@ let d = e => {
       } finally {
         f(false)
       }
-    }, [b, g, m, d, h, v]),
+    }, [g, b, m, d, h, v]),
     isApplying: p
   }
 }

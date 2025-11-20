@@ -87,10 +87,10 @@ let O = s()(e => {
       minimal: P
     } = e, {
       isPurchased: C
-    } = (0, g.L)(t), S = (0, c.JA)("shop-variants-group-".concat(n.storeListingId, "-").concat(i)), {
+    } = (0, b.L)(t), S = (0, c.JA)("shop-variants-group-".concat(n.storeListingId, "-").concat(i)), {
       onFocus: N
     } = S, I = y(S, ["onFocus"]), _ = l.useCallback(e => {
-      e.preventDefault(), e.stopPropagation(), (0, b.$)(n, i), N()
+      e.preventDefault(), e.stopPropagation(), (0, g.$)(n, i), N()
     }, [N, n, i]);
     return (0, r.jsx)(v.u, {
       text: m.intl.string(m.t["6cfuDj"]),
@@ -142,8 +142,8 @@ let O = s()(e => {
       setIsHoveringOnSwitch: s,
       minimal: d,
       selectedVariantIndex: v,
-      alternativeBackgroundColor: b
-    } = e, g = o.previewingVariantIndex, O = null == (n = l.variants) ? true : n[v], C = null !== g ? null == (t = l.variants) ? true : t[g] : true, S = (0, f.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
+      alternativeBackgroundColor: g
+    } = e, b = o.previewingVariantIndex, O = null == (n = l.variants) ? true : n[v], C = null !== b ? null == (t = l.variants) ? true : t[b] : true, S = (0, f.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
     if (null == O) return null;
     let N = null != C ? C.variantLabel : null == O ? true : O.variantLabel;
     return (0, r.jsx)(c.bG, {
@@ -159,7 +159,7 @@ let O = s()(e => {
           }, c), {
             className: a()(h.variantsPanel, i, {
               [h.minimalState]: d,
-              [h.alternativeColor]: b
+              [h.alternativeColor]: g
             }),
             onMouseEnter: () => null == s ? true : s(true),
             onMouseLeave: () => null == s ? true : s(false),
