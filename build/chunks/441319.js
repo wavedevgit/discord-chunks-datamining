@@ -2,9 +2,9 @@
 /** chunk id: 441319, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M9: () => P,
-  aW: () => x,
-  wu: () => L
+  M9: () => N,
+  aW: () => w,
+  wu: () => D
 }), require("./388685.js");
 var Chunk997945 = require("./997945.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -30,12 +30,10 @@ var Chunk997945 = require("./997945.js"),
   Chunk405571 = require("./405571.js"),
   Chunk730886 = require("./730886.js"),
   Chunk473974 = require("./473974.js"),
-  Chunk936684 = require("./936684.js"),
-  Chunk487483 = require("./487483.js"),
   Chunk563856 = require("./563856.js");
-let P = 60;
+let N = 60;
 
-function D() {
+function R() {
   return {
     id: Chunk997945.aH.DEFAULT,
     iconSource: Chunk63725,
@@ -44,19 +42,8 @@ function D() {
   }
 }
 
-function w() {
-  let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  return [...module ? [{
-    id: Chunk997945.Ru.TRICK,
-    iconSource: Chunk487483,
-    isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t["6Zuivx"])
-  }, {
-    id: Chunk997945.Ru.TREAT,
-    iconSource: Chunk936684,
-    isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t["2UeOlY"])
-  }] : [], {
+function P() {
+  return [{
     id: Chunk997945.Ru.BRAND_DARK,
     iconSource: Chunk760260,
     name: Chunk388032.intl.string(Chunk388032.t.gZEUBl),
@@ -169,12 +156,11 @@ function w() {
   }]
 }
 
-function L() {
-  let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  return [D(), ...w(module)]
+function D() {
+  return [R(), ...P()]
 }
 
-function x(e) {
-  let t = L(true).find(t => t.id === e);
-  return null != t ? t : D()
+function w(e) {
+  let t = D().find(t => t.id === e);
+  return null != t ? t : R()
 }

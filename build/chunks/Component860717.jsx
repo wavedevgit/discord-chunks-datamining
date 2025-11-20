@@ -97,7 +97,7 @@ let Z = /{{(.*?)}}/g,
       },
       name: {
         type: "TEXT",
-        content: "-# Season High"
+        content: "-# Highest Rank"
       }
     }, {
       type: "FIELD",

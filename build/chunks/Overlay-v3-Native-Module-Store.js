@@ -48,11 +48,11 @@ let p = new Chunk579092.Yd("OverlayV3NativeModuleStore"),
   })();
 
 function v(e) {
-  !__OVERLAY__ && f.iP && (m = e)
+  !__OVERLAY__ && f.iP && m !== e && (m = e, e && (0, l.setOutOfProcessSupport)(true))
 }
 
 function I() {
-  !__OVERLAY__ && Chunk987650.iP && (b = null, E = false, p.verbose("Maybe Enable Overlay"), v(Chunk454991.v.oopEnabled), (0, Chunk145597.setOutOfProcessSupport)(true))
+  !__OVERLAY__ && Chunk987650.iP && (b = null, E = false, p.verbose("Maybe Enable Overlay"), v(Chunk454991.v.oopEnabled))
 }
 
 function T(e) {
