@@ -21,7 +21,7 @@ let o = {
 };
 
 function c(e) {
-  null == o.users && (o.users = new Map), o.users.set(e.id, new r.Z(e))
+  null == o.users && (o.users = new Map), o.users.set(e.id, new i.Z(e))
 }
 class d extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {

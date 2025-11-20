@@ -30,7 +30,7 @@ function y(e) {
     onClose: y
   } = e, [C, S] = l.useState(false), {
     trackUserProfileEditAction: E
-  } = (0, u.KZ)(), N = (0, r.e7)([b.default], () => b.default.getId()), {
+  } = (0, u.KZ)(), N = (0, i.e7)([b.default], () => b.default.getId()), {
     config: T,
     application: O
   } = (0, h.G)(), {
@@ -48,7 +48,7 @@ function y(e) {
         markAsDismissed: l
       } = e;
       if (null == t) return null;
-      let r = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
+      let i = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
       return (0, a.jsx)(o.J2, {
         targetElementRef: n,
         position: "right",
@@ -60,23 +60,23 @@ function y(e) {
         title: _.intl.format(_.t.TXDztH, {
           applicationName: O.name
         }),
-        body: r ? _.intl.string(_.t["63Kso0"]) : _.intl.string(_.t.HwXoeC),
+        body: i ? _.intl.string(_.t["63Kso0"]) : _.intl.string(_.t.HwXoeC),
         onRequestClose: () => {
           l(v.L.USER_DISMISS)
         },
-        actions: [r ? {
+        actions: [i ? {
           text: _.intl.string(_.t.VSLDly),
           onClick: () => {
             S(true), (0, g.openUserProfileModal)({
               userId: N,
               section: j.oh.WIDGETS
             }).then(() => {
-              l(v.L.TAKE_ACTION), y(), (0, p.qH)(i.l.APPLICATION, new m.q({
+              l(v.L.TAKE_ACTION), y(), (0, p.qH)(r.l.APPLICATION, new m.q({
                 applicationId: O.id,
-                type: i.l.APPLICATION
+                type: r.l.APPLICATION
               })), E({
                 action: "WIDGET_ADDED",
-                widgetEdited: i.l.APPLICATION,
+                widgetEdited: r.l.APPLICATION,
                 applicationId: O.id
               }), (0, f.L$)(j.qb.WIDGET_ADDED)
             }).finally(() => S(false))

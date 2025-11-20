@@ -160,7 +160,7 @@ function c(e) {
   } = e;
   return fetch(t).then(e => e.arrayBuffer()).then(e => new Promise((t, n) => {
     let a = new Uint8Array(e);
-    i.Ri(a, (e, a) => {
+    r.Ri(a, (e, a) => {
       null != e && n(e);
       let l = Object.keys(a).reduce((e, t) => {
           var n, l;
@@ -182,7 +182,7 @@ function c(e) {
             }
             return e
           }({}, e), l = l = {
-            [t]: JSON.parse(i.T8(a[t]))
+            [t]: JSON.parse(r.T8(a[t]))
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -194,14 +194,14 @@ function c(e) {
             Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
           }), n
         }, {}),
-        r = l["manifest.json"];
-      t(l["animations/".concat(r.animations[0].id, ".json")])
+        i = l["manifest.json"];
+      t(l["animations/".concat(i.animations[0].id, ".json")])
     })
   }))
 }
 
 function d() {
-  let [e, t] = Chunk473749.useState(true), [n, i] = Chunk473749.useState(400), [d, u] = Chunk473749.useState(400);
+  let [e, t] = Chunk473749.useState(true), [n, r] = Chunk473749.useState(400), [d, u] = Chunk473749.useState(400);
   return (0, Chunk54381.jsx)("div", {
     style: {
       margin: 24
@@ -220,7 +220,7 @@ function d() {
         direction: "horizontal",
         children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
           value: require.toString(),
-          onChange: e => i(Number(e)),
+          onChange: e => r(Number(e)),
           label: "Width"
         }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           value: d.toString(),

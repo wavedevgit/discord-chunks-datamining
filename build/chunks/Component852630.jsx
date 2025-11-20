@@ -13,7 +13,7 @@ function o(e) {
   let {
     selected: t,
     nameplate: n
-  } = e, o = (0, i.x)(), c = new r.mn({
+  } = e, o = (0, r.x)(), c = new i.mn({
     id: "0",
     type: s.d4z.DM,
     name: "self",

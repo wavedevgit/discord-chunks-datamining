@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk876215 = require("./876215.js"),
@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk451429 = require("./451429.js");
 let k = [{
   key: "type",
-  cellClassName: r()(Chunk680027.cell, Chunk680027.cellType),
+  cellClassName: i()(Chunk680027.cell, Chunk680027.cellType),
   render(e) {
     let {
       type: t
@@ -46,7 +46,7 @@ let k = [{
   }
 }, {
   key: "count",
-  cellClassName: r()(Chunk680027.cell, Chunk680027.cellCount),
+  cellClassName: i()(Chunk680027.cell, Chunk680027.cellCount),
   render(e) {
     let {
       entries: t
@@ -75,11 +75,11 @@ function A(e) {
   var t, n;
   let {
     type: l
-  } = e, i = (0, u.e7)([E.Z], () => E.Z.getFilters()), r = null != (n = null == i || null == (t = i.types) ? true : t.has(l)) && n;
+  } = e, r = (0, u.e7)([E.Z], () => E.Z.getFilters()), i = null != (n = null == r || null == (t = r.types) ? true : t.has(l)) && n;
   return (0, a.jsx)(p.rsf, {
-    checked: r,
+    checked: i,
     onChange: function() {
-      r ? h.Z.dispatch({
+      i ? h.Z.dispatch({
         type: "CONTENT_INVENTORY_SET_FILTERS",
         filters: true
       }) : h.Z.dispatch({
@@ -95,8 +95,8 @@ function A(e) {
 function R() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)),
-    i = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getDebugImpressionCappingDisabled()),
-    r = (0, Chunk442837.e7)([Chunk71585.Z], () => Chunk71585.Z.getDebugFastImpressionCappingEnabled()),
+    r = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getDebugImpressionCappingDisabled()),
+    i = (0, Chunk442837.e7)([Chunk71585.Z], () => Chunk71585.Z.getDebugFastImpressionCappingEnabled()),
     s = function(e) {
       let t = o().groupBy(e, e => e.content_type);
       return Object.keys(t).map(e => {
@@ -130,7 +130,7 @@ function R() {
       return t
     }),
     U = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
-    B = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
+    F = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
   return (0, Chunk54381.jsx)("div", {
     className: Chunk451429.panel,
     children: (0, Chunk54381.jsxs)(Chunk481060.zJl, {
@@ -190,7 +190,7 @@ function R() {
           }
         }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
-          text: r ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
+          text: i ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
           fullWidth: true,
           onClick: function() {
             Chunk570140.Z.dispatch({
@@ -231,7 +231,7 @@ function R() {
             label: e,
             value: e
           })),
-          isSelected: e => e === B,
+          isSelected: e => e === F,
           select: function(e) {
             h.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",

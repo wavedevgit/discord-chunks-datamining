@@ -1,14 +1,15 @@
 /** Chunk was on 91394 **/
 /** chunk id: 759027, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
-}), require("./388685.js"), require("./539854.js");
+  Z: () => O
+}), require("./388685.js"), require("./35282.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   o = require.n(Chunk913527),
+  Chunk793030 = require("./793030.js"),
   Chunk544891 = require("./544891.js"),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
@@ -16,12 +17,32 @@ var Chunk54381 = require("./54381.js"),
   Chunk709054 = require("./709054.js"),
   Chunk246992 = require("./246992.js"),
   Chunk923576 = require("./923576.jsx"),
+  Chunk257665 = require("./257665.js"),
   Chunk981631 = require("./981631.js"),
   Chunk362786 = require("./362786.js"),
   Chunk474936 = require("./474936.js"),
   Chunk711322 = require("./711322.js"),
   Chunk855091 = require("./855091.js");
-let _ = {
+
+function C(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), a.forEach(function(t) {
+      var a;
+      a = n[t], t in e ? Object.defineProperty(e, t, {
+        value: a,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = a
+    })
+  }
+  return e
+}
+let S = {
     [Chunk981631.O0b.UNPAID]: "Unpaid",
     [Chunk981631.O0b.ACTIVE]: "Active",
     [Chunk981631.O0b.PAST_DUE]: "Past Due",
@@ -32,7 +53,7 @@ let _ = {
     [Chunk981631.O0b.PAUSED]: "Paused",
     [Chunk981631.O0b.PAUSE_PENDING]: "Pause Pending"
   },
-  y = {
+  E = {
     [Chunk362786.Id.UNKNOWN]: "Unknown",
     [Chunk362786.Id.ADMIN]: "Admin",
     [Chunk362786.Id.USER]: "User",
@@ -40,7 +61,7 @@ let _ = {
     [Chunk362786.Id.DEFERRED_START]: "Deferred Start",
     [Chunk362786.Id.USER_TEMPORARY_BAN]: "User Temp Ban"
   },
-  C = [{
+  N = [{
     label: "Unpaid",
     value: Chunk981631.O0b.UNPAID
   }, {
@@ -69,188 +90,251 @@ let _ = {
     value: Chunk981631.O0b.PAUSE_PENDING
   }];
 
-function S(e) {
-  var t, n, i, s, f, S, E;
+function T(e) {
   let {
-    subscription: N,
-    onUpdated: T
-  } = e, [O, P] = l.useState(false), [I, w] = l.useState(false), [k, A] = l.useState(false), [R, Z] = l.useState(false), [D, L] = l.useState(null), M = e => (null == e && (e = N.status), e in _) ? _[e] : "Unknown status ".concat(e), U = e => {
+    subscription: t,
+    onClose: n,
+    onUpdated: r,
+    transitionState: i
+  } = e, [s, d] = l.useState(o()()), [m, p] = l.useState(o()().format("HH:mm")), [h, x] = l.useState(false), [g, b] = l.useState(true), v = async () => {
+    if (null == s) return void b("Please select a target date");
+    let [e, a] = m.split(":").map(Number), l = s.clone().hours(e).minutes(a).seconds(0).milliseconds(0);
+    x(true), b(true);
+    try {
+      await f.vc(t.id, f.cN.TIME_TRAVEL, {
+        targetDate: l,
+        paymentType: f.F0.DEFAULT,
+        sendReminderEmail: false
+      }), r(), n()
+    } catch (e) {
+      var i;
+      b((null == (i = e.body) ? true : i.message) || e.message || "Failed to time travel")
+    } finally {
+      x(false)
+    }
+  };
+  return (0, a.jsx)(c.Modal, {
+    transitionState: i,
+    onClose: () => (n(), Promise.resolve()),
+    title: "Time Travel Subscription",
+    size: "sm",
+    actions: [{
+      text: "Cancel",
+      variant: "secondary",
+      onClick: n
+    }, {
+      text: "Time Travel",
+      variant: "primary",
+      onClick: v,
+      disabled: h || null == s
+    }],
+    children: (0, a.jsxs)(u.Kqy, {
+      gap: 16,
+      children: [(0, a.jsx)(u.Text, {
+        variant: "text-sm/normal",
+        color: "text-muted",
+        children: "Select the target date and time to travel the subscription to. This will adjust the subscription period and trigger any necessary invoice operations."
+      }), (0, a.jsx)(u.Wrb, {
+        label: "Target Date",
+        value: s,
+        onSelect: d
+      }), (0, a.jsx)(u.C3N, {
+        label: "Target Time (HH:mm)",
+        children: (0, a.jsx)("input", {
+          type: "time",
+          value: m,
+          onChange: e => {
+            p(e.target.value)
+          },
+          className: y.timeInput
+        })
+      }), (0, a.jsxs)(u.Kqy, {
+        gap: 8,
+        children: [(0, a.jsx)(u.Text, {
+          variant: "text-xs/semibold",
+          color: "text-muted",
+          children: "Current Period"
+        }), (0, a.jsxs)(u.Kqy, {
+          gap: 4,
+          children: [(0, a.jsxs)(u.Text, {
+            variant: "text-xs/normal",
+            className: y.periodText,
+            children: ["Start: ", o()(t.currentPeriodStart).format("YYYY-MM-DD HH:mm")]
+          }), (0, a.jsxs)(u.Text, {
+            variant: "text-xs/normal",
+            className: y.periodText,
+            children: ["End: ", o()(t.currentPeriodEnd).format("YYYY-MM-DD HH:mm")]
+          })]
+        })]
+      }), null != g && (0, a.jsx)(u.M14, {
+        type: "critical",
+        children: g
+      })]
+    })
+  })
+}
+
+function O(e) {
+  var t, n, r, s, c, v, O;
+  let {
+    subscription: P,
+    onUpdated: I
+  } = e, [w, k] = l.useState(false), [A, R] = l.useState(false), [Z, D] = l.useState(false), [L, M] = l.useState(false), [U, F] = l.useState(null), B = e => (null == e && (e = P.status), e in S) ? S[e] : "Unknown status ".concat(e), G = e => {
     let t = new Date(e);
-    return p.default.fromTimestamp(t.getTime())
-  }, B = async e => {
+    return h.default.fromTimestamp(t.getTime())
+  }, z = async e => {
     let {
-      status: t = N.status,
+      status: t = P.status,
       premiumStreakStart: n,
       endedAt: a
-    } = e, l = function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          a = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), a.forEach(function(t) {
-          var a;
-          a = n[t], t in e ? Object.defineProperty(e, t, {
-            value: a,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[t] = a
-        })
-      }
-      return e
-    }({
+    } = e, l = C({
       subscription_status: t
     }, null != n ? {
-      premium_streak_started_at: U(n)
+      premium_streak_started_at: G(n)
     } : null, null != a ? {
-      ended_at: U(a)
+      ended_at: G(a)
     } : null);
-    await c.tn.patch({
-      url: "/debug/subscriptions/".concat(N.id),
+    await d.tn.patch({
+      url: "/debug/subscriptions/".concat(P.id),
       body: l,
       rejectWithError: false
-    }), T()
-  }, F = async () => {
+    }), I()
+  }, H = async () => {
     try {
-      await c.tn.post({
-        url: "/debug/subscriptions/".concat(N.id, "/transition"),
-        body: {
-          target_datetime: new Date().toISOString(),
-          payment_type: 0,
-          transition: 2,
-          send_reminder_email: false
-        },
-        rejectWithError: false
+      await f.vc(P.id, f.cN.RENEW, {
+        targetDate: o()(new Date),
+        paymentType: f.F0.DEFAULT,
+        sendReminderEmail: false
       })
-    } catch (e) {
-      L(e.body.message)
+    } catch (t) {
+      var e;
+      F((null == (e = t.body) ? true : e.message) || t.message || "Failed to renew subscription")
     }
-    T()
-  }, G = (null == (t = b.GP[N.planIdFromItems]) ? true : t.premiumType) === b.PremiumTypes.TIER_0, z = null == (n = N.metadata) ? true : n.ended_at, H = null != z ? new Date(z).toISOString().substring(0, 10) : "", V = [{
+    I()
+  }, V = (null == (t = j.GP[P.planIdFromItems]) ? true : t.premiumType) === j.PremiumTypes.TIER_0, W = null == (n = P.metadata) ? true : n.ended_at, K = null != W ? new Date(W).toISOString().substring(0, 10) : "", q = [{
     id: "id",
-    label: "ID: ".concat(N.id)
+    label: "ID: ".concat(P.id)
   }, {
     id: "status",
-    label: "Status: ".concat(M())
-  }], W = N.hasActiveTrial, K = (null == (i = N.metadata) ? true : i.active_discount_id) != null;
-  return W && V.push({
+    label: "Status: ".concat(B())
+  }], Y = P.hasActiveTrial, J = (null == (r = P.metadata) ? true : r.active_discount_id) != null;
+  return Y && q.push({
     id: "trial",
     label: "Has Trial"
-  }), K && V.push({
+  }), J && q.push({
     id: "active-discount",
     label: "Has Active Discount"
-  }), N.status !== g.O0b.ACTIVE && V.push({
+  }), P.status !== b.O0b.ACTIVE && q.push({
     id: "dates",
-    label: "Dates: ".concat((0, m.vc)(N.createdAt, "LL"), " - ").concat((0, m.vc)(N.currentPeriodEnd, "LL"))
-  }), N.status === g.O0b.PAUSED && V.push({
+    label: "Dates: ".concat((0, p.vc)(P.createdAt, "LL"), " - ").concat((0, p.vc)(P.currentPeriodEnd, "LL"))
+  }), P.status === b.O0b.PAUSED && q.push({
     id: "pause-reason",
-    label: "Pause Reason: ".concat(N.pauseReason in y ? y[N.pauseReason] : "Unknown pause reason ".concat(N.pauseReason))
+    label: "Pause Reason: ".concat(P.pauseReason in E ? E[P.pauseReason] : "Unknown pause reason ".concat(P.pauseReason))
   }), (0, a.jsx)("div", {
-    className: r()(v.card, G ? v.gradientWrapperTier0 : v.gradientWrapperTier2),
-    children: (0, a.jsxs)(d.C3N, {
+    className: i()(_.card, V ? _.gradientWrapperTier0 : _.gradientWrapperTier2),
+    children: (0, a.jsxs)(u.C3N, {
       label: "Type: ".concat((() => {
-        let e = N.planIdFromItems;
-        return null == e ? "No plan id" : e in b.GP ? b.GP[e].name : "Unknown plan id ".concat(e)
+        let e = P.planIdFromItems;
+        return null == e ? "No plan id" : e in j.GP ? j.GP[e].name : "Unknown plan id ".concat(e)
       })()),
-      className: j.fieldset,
-      children: [(0, a.jsx)(d.QSK, {
-        items: V,
+      className: y.fieldset,
+      children: [(0, a.jsx)(u.QSK, {
+        items: q,
         label: "Tags"
-      }), W && (0, a.jsxs)("div", {
-        className: j.collapsablePane,
-        children: [(0, a.jsxs)(d.P3F, {
+      }), Y && (0, a.jsxs)("div", {
+        className: y.collapsablePane,
+        children: [(0, a.jsxs)(u.P3F, {
           onClick: () => {
-            A(!k)
+            D(!Z)
           },
-          className: j.collapsablePaneHeader,
+          className: y.collapsablePaneHeader,
           children: [(0, a.jsx)("div", {
-            children: (0, a.jsx)(d.Text, {
+            children: (0, a.jsx)(u.Text, {
               variant: "text-md/bold",
               children: "Trial Info"
             })
-          }), (0, a.jsx)(u.Z, {
-            direction: k ? u.Z.Directions.UP : u.Z.Directions.DOWN
+          }), (0, a.jsx)(m.Z, {
+            direction: Z ? m.Z.Directions.UP : m.Z.Directions.DOWN
           })]
-        }), k && (0, a.jsxs)("ul", {
-          className: j.collapsiblePaneList,
+        }), Z && (0, a.jsxs)("ul", {
+          className: y.collapsiblePaneList,
           children: [(0, a.jsxs)("li", {
-            children: [(0, a.jsx)(d.Text, {
+            children: [(0, a.jsx)(u.Text, {
               variant: "text-md/bold",
               children: "trial_id"
-            }), (0, a.jsx)(d.Text, {
+            }), (0, a.jsx)(u.Text, {
               variant: "text-sm/normal",
-              children: N.trialId
+              children: P.trialId
             })]
           }), (0, a.jsxs)("li", {
-            children: [(0, a.jsx)(d.Text, {
+            children: [(0, a.jsx)(u.Text, {
               variant: "text-md/bold",
               children: "trial_ends_at"
-            }), (0, a.jsx)(d.Text, {
+            }), (0, a.jsx)(u.Text, {
               variant: "text-sm/normal",
-              children: null != N.trialEndsAt ? (0, m.vc)(N.trialEndsAt, "LL") : "N/A"
+              children: null != P.trialEndsAt ? (0, p.vc)(P.trialEndsAt, "LL") : "N/A"
             })]
           })]
         })]
-      }), K && (0, a.jsxs)("div", {
-        className: j.collapsablePane,
-        children: [(0, a.jsxs)(d.P3F, {
+      }), J && (0, a.jsxs)("div", {
+        className: y.collapsablePane,
+        children: [(0, a.jsxs)(u.P3F, {
           onClick: () => {
-            Z(!R)
+            M(!L)
           },
-          className: j.collapsablePaneHeader,
+          className: y.collapsablePaneHeader,
           children: [(0, a.jsx)("div", {
-            children: (0, a.jsx)(d.Text, {
+            children: (0, a.jsx)(u.Text, {
               variant: "text-md/bold",
               children: "Active Discount Info"
             })
-          }), (0, a.jsx)(u.Z, {
-            direction: R ? u.Z.Directions.UP : u.Z.Directions.DOWN
+          }), (0, a.jsx)(m.Z, {
+            direction: L ? m.Z.Directions.UP : m.Z.Directions.DOWN
           })]
-        }), R && (0, a.jsxs)("ul", {
-          className: j.collapsiblePaneList,
+        }), L && (0, a.jsxs)("ul", {
+          className: y.collapsiblePaneList,
           children: [(0, a.jsxs)("li", {
-            children: [(0, a.jsx)(d.Text, {
+            children: [(0, a.jsx)(u.Text, {
               variant: "text-md/bold",
               children: "active_discount_id"
-            }), (0, a.jsx)(d.Text, {
+            }), (0, a.jsx)(u.Text, {
               variant: "text-sm/normal",
-              children: null == (s = N.metadata) ? true : s.active_discount_id
+              children: null == (s = P.metadata) ? true : s.active_discount_id
             })]
           }), (0, a.jsxs)("li", {
-            children: [(0, a.jsx)(d.Text, {
+            children: [(0, a.jsx)(u.Text, {
               variant: "text-md/bold",
               children: "active_discount_expires_at"
-            }), (0, a.jsx)(d.Text, {
+            }), (0, a.jsx)(u.Text, {
               variant: "text-sm/normal",
-              children: (null == (f = N.metadata) ? true : f.active_discount_expires_at) != null ? (0, m.vc)(new Date(null == (S = N.metadata) ? true : S.active_discount_expires_at), "LL") : "N/A"
+              children: (null == (c = P.metadata) ? true : c.active_discount_expires_at) != null ? (0, p.vc)(new Date(null == (v = P.metadata) ? true : v.active_discount_expires_at), "LL") : "N/A"
             })]
           })]
         })]
-      }), null != N.metadata && (0, a.jsxs)("div", {
-        className: j.collapsablePane,
-        children: [(0, a.jsxs)(d.P3F, {
+      }), null != P.metadata && (0, a.jsxs)("div", {
+        className: y.collapsablePane,
+        children: [(0, a.jsxs)(u.P3F, {
           onClick: () => {
-            P(!O)
+            k(!w)
           },
-          className: j.collapsablePaneHeader,
+          className: y.collapsablePaneHeader,
           children: [(0, a.jsx)("div", {
-            children: (0, a.jsx)(d.Text, {
+            children: (0, a.jsx)(u.Text, {
               variant: "text-md/bold",
               children: "Metadata"
             })
-          }), (0, a.jsx)(u.Z, {
-            direction: O ? u.Z.Directions.UP : u.Z.Directions.DOWN
+          }), (0, a.jsx)(m.Z, {
+            direction: w ? m.Z.Directions.UP : m.Z.Directions.DOWN
           })]
-        }), O && (0, a.jsx)("ul", {
-          className: j.collapsiblePaneList,
-          children: Object.entries(N.metadata).map(e => {
+        }), w && (0, a.jsx)("ul", {
+          className: y.collapsiblePaneList,
+          children: Object.entries(P.metadata).map(e => {
             let [t, n] = e;
             return (0, a.jsxs)("li", {
-              children: [(0, a.jsx)(d.Text, {
+              children: [(0, a.jsx)(u.Text, {
                 variant: "text-md/bold",
                 children: t
-              }), (0, a.jsx)(d.Text, {
+              }), (0, a.jsx)(u.Text, {
                 variant: "text-sm/normal",
                 children: n
               })]
@@ -258,57 +342,70 @@ function S(e) {
           })
         })]
       }), (0, a.jsxs)("div", {
-        className: j.collapsablePane,
-        children: [(0, a.jsxs)(d.P3F, {
+        className: y.collapsablePane,
+        children: [(0, a.jsxs)(u.P3F, {
           onClick: () => {
-            w(!I)
+            R(!A)
           },
-          className: j.collapsablePaneHeader,
+          className: y.collapsablePaneHeader,
           children: [(0, a.jsx)("div", {
-            children: (0, a.jsx)(d.Text, {
+            children: (0, a.jsx)(u.Text, {
               variant: "text-md/bold",
               children: "Modifications"
             })
-          }), (0, a.jsx)(u.Z, {
-            direction: I ? u.Z.Directions.UP : u.Z.Directions.DOWN
+          }), (0, a.jsx)(m.Z, {
+            direction: A ? m.Z.Directions.UP : m.Z.Directions.DOWN
           })]
-        }), I && (0, a.jsxs)(d.Kqy, {
+        }), A && (0, a.jsxs)(u.Kqy, {
           gap: 24,
-          children: [(0, a.jsx)(d.PhF, {
+          children: [(0, a.jsx)(u.PhF, {
             label: "Status",
-            serialize: e => M(e),
-            isSelected: e => e === N.status,
-            options: C,
-            select: e => B({
+            serialize: e => B(e),
+            isSelected: e => e === P.status,
+            options: N,
+            select: e => z({
               status: e
             }),
-            popoutLayerContext: h.O$
+            popoutLayerContext: x.O$
           }), (0, a.jsxs)("div", {
-            children: [(0, a.jsx)(d.Button, {
-              variant: "primary",
-              size: "sm",
-              text: "Renew Subscription",
-              onClick: e => F()
-            }), null !== D && (0, a.jsx)("div", {
-              className: j.error,
-              children: (0, a.jsx)(d.M14, {
+            children: [(0, a.jsxs)(u.Kqy, {
+              gap: 12,
+              children: [(0, a.jsx)(u.Button, {
+                variant: "primary",
+                size: "sm",
+                text: "Renew Subscription",
+                onClick: e => H()
+              }), (0, a.jsx)(u.Button, {
+                variant: "secondary",
+                size: "sm",
+                text: "Time Travel",
+                onClick: () => {
+                  (0, u.ZDy)(() => Promise.resolve(e => (0, a.jsx)(T, C({
+                    subscription: P,
+                    onUpdated: I
+                  }, e))))
+                }
+              })]
+            }), null !== U && (0, a.jsx)("div", {
+              className: y.error,
+              children: (0, a.jsx)(u.M14, {
                 type: "critical",
-                children: D
+                children: U
               })
             })]
-          }), (0, a.jsxs)(d.Kqy, {
+          }), (0, a.jsxs)(u.Kqy, {
             gap: 16,
-            children: [(0, a.jsx)(d.Wrb, {
+            children: [(0, a.jsx)(u.Wrb, {
               label: "Premium Streak Start Date",
-              value: o()(null == (E = N.premiumSince) ? true : E.toISOString().substring(0, 10)),
-              onSelect: e => B({
+              value: o()(null == (O = P.premiumSince) ? true : O.toISOString().substring(0, 10)),
+              onSelect: e => z({
                 premiumStreakStart: e.toISOString()
               })
-            }), (0, a.jsx)(x.Z, {})]
-          }), (0, a.jsx)(d.Wrb, {
+            }), (0, a.jsx)(g.Z, {})]
+          }), (0, a.jsx)(u.Wrb, {
             label: "Metadata Ended At Date",
-            value: o()(H),
-            onSelect: e => B({
+            value: o()(K),
+            onSelect: e => z({
               endedAt: e.toISOString()
             })
           })]

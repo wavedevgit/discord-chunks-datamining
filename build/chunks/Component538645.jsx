@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -22,31 +22,31 @@ let b = "Make sure you're only uploading text files!",
   v = e => {
     var t, n, l;
     let {
-      effect: i,
-      onClick: r
+      effect: r,
+      onClick: i
     } = e, {
       deleteConfig: s
     } = (0, x.n6)();
     return (0, a.jsxs)(c.P3F, {
       className: f.previewCard,
       onClick: () => {
-        r(i)
+        i(r)
       },
       children: [(0, a.jsx)("div", {
         className: f.previewCardImage,
         style: {
-          backgroundImage: "url(".concat(null == (l = i.config) || null == (n = l.effects) || null == (t = n[0]) ? true : t.base64, ")")
+          backgroundImage: "url(".concat(null == (l = r.config) || null == (n = l.effects) || null == (t = n[0]) ? true : t.base64, ")")
         }
       }), (0, a.jsxs)("div", {
         className: f.previewCardFooter,
         children: [(0, a.jsx)(c.Text, {
           variant: "text-md/bold",
-          children: i.name
+          children: r.name
         }), (0, a.jsx)(c.Button, {
           variant: "critical-secondary",
           text: "Delete",
           onClick: e => {
-            e.preventDefault(), e.stopPropagation(), s(i.skuId)
+            e.preventDefault(), e.stopPropagation(), s(r.skuId)
           }
         })]
       })]
@@ -58,23 +58,23 @@ function j() {
     profileEffects: e,
     upsertConfig: t,
     clearAll: n
-  } = (0, Chunk373071.n6)(), [i, j] = Chunk473749.useState(), _ = Chunk473749.useRef(null), y = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [C, S] = Chunk473749.useState("");
+  } = (0, Chunk373071.n6)(), [r, j] = Chunk473749.useState(), _ = Chunk473749.useRef(null), y = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [C, S] = Chunk473749.useState("");
   Chunk473749.useEffect(() => {
     (0, Chunk365943.t)(true)
   }, []);
   let E = Chunk473749.useMemo(() => "" === C ? y : y.filter(e => {
       var t, n, a, l;
-      let i = C.toLowerCase(),
-        r = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
+      let r = C.toLowerCase(),
+        i = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
         s = null != (l = null == (n = e.config.description) ? true : n.toLowerCase()) ? l : "";
-      return r.includes(i) || s.includes(i)
+      return i.includes(r) || s.includes(r)
     }), [C, y]),
     N = Chunk473749.useCallback((e, n) => {
       if (null == n || !e.type.startsWith("text/")) return (0, m.Eo)(b);
       let [a, l] = n.split(",");
       if (!a.includes("text/plain")) return (0, m.Eo)(b);
-      let i = JSON.parse(atob(l));
-      i.skuId = (0, s.Z)(), t(i), (0, m.XA)("Profile Effect (maybe??) imported!")
+      let r = JSON.parse(atob(l));
+      r.skuId = (0, s.Z)(), t(r), (0, m.XA)("Profile Effect (maybe??) imported!")
     }, [exports]),
     T = Chunk473749.useCallback(e => {
       var t;
@@ -87,7 +87,7 @@ function j() {
       children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk558270.col,
         children: [(0, Chunk54381.jsxs)("div", {
-          className: r()(Chunk558270.section, Chunk558270.row),
+          className: i()(Chunk558270.section, Chunk558270.row),
           children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-xl/bold",
             children: "Custom Profile Effects"
@@ -113,7 +113,7 @@ function j() {
           }, e.skuId))
         })]
       }), (0, Chunk54381.jsxs)("div", {
-        className: r()(Chunk558270.row, Chunk558270.end, Chunk558270.section),
+        className: i()(Chunk558270.row, Chunk558270.end, Chunk558270.section),
         children: [(0, Chunk54381.jsxs)("div", {
           className: Chunk558270.uploadButton,
           children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
