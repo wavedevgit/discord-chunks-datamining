@@ -34,8 +34,8 @@ let x = e => {
       isRented: y,
       rentalExpiresAt: j
     } = (0, g.L)(t), k = (0, d.G1)(t), I = (0, d.rN)(t), T = l.useMemo(() => (0, d.BH)(t, x), [t, x]), L = (0, C.Iw)(t), {
-      checkoutEligiblePrices: B,
-      hasSufficientOrbs: P,
+      checkoutEligiblePrices: P,
+      hasSufficientOrbs: B,
       shouldCheckoutWithOrbs: N
     } = (0, _.Ip)({
       product: t,
@@ -82,13 +82,13 @@ let x = e => {
       color: "text-primary",
       lineClamp: 1,
       children: b.intl.string(b.t.rt69oo)
-    }) : 0 === B.length ? null : (0, r.jsx)(p.F, {
-      price: B[0],
+    }) : 0 === P.length ? null : (0, r.jsx)(p.F, {
+      price: P[0],
       discount: T,
       nitroIconType: x ? "default" : true,
       nitroIconSize: "sm",
       discountOfferAmount: L,
-      className: N && !P ? v.insufficientOrbs : true,
+      className: N && !B ? v.insufficientOrbs : true,
       variant: "text-md/bold"
     })
   },

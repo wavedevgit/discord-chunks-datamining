@@ -32,13 +32,13 @@ function _(e) {
   }, [t]), x = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[a.m.POPULAR]) ? e : []
-  }, [t]), E = v.length > 0 && b, [O, S] = r.useState(E ? a.m.RECOMMENDED : a.m.POPULAR), y = (0, m.Z)(), j = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), k = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()), I = (0, f.a)(), [T, L] = r.useState([]), B = r.useCallback(() => {
+  }, [t]), E = v.length > 0 && b, [O, S] = r.useState(E ? a.m.RECOMMENDED : a.m.POPULAR), y = (0, m.Z)(), j = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), k = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()), I = (0, f.a)(), [T, L] = r.useState([]), P = r.useCallback(() => {
     S(a.m.RANDOM), L(i().shuffle(j))
   }, [j]);
   r.useEffect(() => {
     L(i().shuffle(j))
   }, [j]);
-  let P = r.useMemo(() => {
+  let B = r.useMemo(() => {
     let e = [];
     if (O === a.m.RECENT) e = j;
     else if (O === a.m.PRICE_LOW_TO_HIGH) e = (0, d.hC)([...j], n, _);
@@ -54,7 +54,7 @@ function _(e) {
   return {
     sortType: O,
     setSortType: S,
-    sortedItems: (0, g.l)(P),
+    sortedItems: (0, g.l)(B),
     sortOptions: r.useMemo(() => {
       let e = [{
         value: a.m.POPULAR,
@@ -72,6 +72,6 @@ function _(e) {
       }), e
     }, [E]),
     showRecommendationOption: E,
-    shuffleProducts: B
+    shuffleProducts: P
   }
 }

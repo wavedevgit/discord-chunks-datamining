@@ -2,7 +2,7 @@
 /** chunk id: 358221, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eB
+  Z: () => eZ
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
@@ -507,7 +507,12 @@ function eU(e) {
   var t;
   return !!(null == (t = E.Z.getChannel(e)) ? true : t.isGuildVocalOrThread())
 }
-class eG extends(r = Chunk442837.ZP.PersistedStore) {
+
+function eG(e) {
+  var t;
+  return !!(null == (t = E.Z.getChannel(e)) ? true : t.isGuildVocal())
+}
+class eB extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, f.default, b.Z, y.Z, O.Z, v.default, I.Z, T.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(Z, null == e ? true : e.voiceParticipantsHidden)
   }
@@ -586,7 +591,7 @@ class eG extends(r = Chunk442837.ZP.PersistedStore) {
     var t, n;
     let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : C.IlC.APP;
     if (__OVERLAY__) return C.AEg.NORMAL;
-    let i = eU(e);
+    let i = eG(e);
     return null != (n = null == (t = G[e]) ? true : t[r]) ? n : i ? C.AEg.NO_CHAT : C.AEg.NORMAL
   }
   getChatOpen(e) {
@@ -615,8 +620,8 @@ class eG extends(r = Chunk442837.ZP.PersistedStore) {
     return null != n && "isPoppedOut" in n && n.isPoppedOut
   }
 }
-N(eG, "displayName", "ChannelRTCStore"), N(eG, "persistKey", "ChannelRTCStore");
-let eB = new eG(Chunk570140.Z, {
+N(eB, "displayName", "ChannelRTCStore"), N(eB, "persistKey", "ChannelRTCStore");
+let eZ = new eB(Chunk570140.Z, {
   CONNECTION_OPEN: K,
   CONNECTION_OPEN_SUPPLEMENTAL: ea,
   THREAD_LIST_SYNC: ea,

@@ -61,7 +61,7 @@ let D = e => {
     let n = (0, f.Z)((0, o.Z)()),
       i = (0, s.e7)([C.default], () => C.default.getCurrentUser());
     (0, h.p2)();
-    let c = (0, P.B)("CollectiblesShop"),
+    let c = (0, B.B)("CollectiblesShop"),
       {
         onClose: R
       } = (0, L.Db)(),
@@ -98,7 +98,7 @@ let D = e => {
     (0, x.q3)(n, Q, K, X, Y), (0, x.EB)(Q, i);
     let {
       dismissShopButtonDC: ee
-    } = (0, B.Z)();
+    } = (0, P.Z)();
     l.useEffect(() => {
       ee()
     }, [ee]), l.useEffect(() => {

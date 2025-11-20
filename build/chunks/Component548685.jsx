@@ -82,9 +82,9 @@ let A = e => {
           variant: "heading-lg/semibold",
           children: i
         }), Y && (0, r.jsx)(s.u, {
-          text: B.intl.string(B.t["3taPdj"]),
+          text: P.intl.string(P.t["3taPdj"]),
           position: "top",
-          "aria-label": B.intl.string(B.t["3taPdj"]),
+          "aria-label": P.intl.string(P.t["3taPdj"]),
           children: (0, r.jsx)(c.P3F, {
             onClick: () => (0, u.Z)(m.Z.getArticleURL(L.BhN.DATA_USED_FOR_RECOMMENDED)),
             className: N.informationIcon,
@@ -95,11 +95,11 @@ let A = e => {
         })]
       }), (0, r.jsxs)("div", {
         className: a()(N.headerRight, {
-          [P.customCursors]: W
+          [B.customCursors]: W
         }),
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
-          children: B.intl.string(B.t.uaX705)
+          children: P.intl.string(P.t.uaX705)
         }), (0, r.jsx)("div", {
           className: D,
           children: (0, r.jsx)(c.PhF, {
@@ -107,7 +107,7 @@ let A = e => {
             select: el,
             className: N.sortSelect,
             popoutClassName: a()({
-              [P.customCursors]: W
+              [B.customCursors]: W
             }),
             isSelected: e => e === V,
             serialize: e => e
@@ -116,7 +116,7 @@ let A = e => {
           className: D,
           children: (0, r.jsx)(c.Button, {
             variant: "secondary",
-            text: B.intl.string(B.t.X3tnc4),
+            text: P.intl.string(P.t.X3tnc4),
             buttonRef: er,
             onClick: () => {
               ee({

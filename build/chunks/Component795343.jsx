@@ -39,8 +39,8 @@ function I(e) {
     scrollerRef: i,
     tab: I
   } = e, T = (0, d.sp)(), L = null != (t = null == T ? true : T.sessionId) ? t : "", {
-    noCache: B,
-    includeUnpublished: P
+    noCache: P,
+    includeUnpublished: B
   } = (0, O.Z)(), N = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: A,
     currentPage: R,
@@ -62,10 +62,10 @@ function I(e) {
       sessionId: L,
       checkpoint: C.a.SHOP_RENDERED,
       tab: I,
-      unpublishedCategoriesShown: P,
-      cacheDisabled: B
+      unpublishedCategoriesShown: B,
+      cacheDisabled: P
     })
-  }, [L, P, B, n, I]);
+  }, [L, B, P, n, I]);
   let V = l.useRef(null),
     {
       setQueryPageSize: U,

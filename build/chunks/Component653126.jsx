@@ -37,8 +37,8 @@ let k = Chunk473749.memo(function(e) {
       hidePrice: I,
       hidePrimaryCTA: T,
       hideSecondaryCTA: L,
-      badgeOverride: B,
-      skipLimitedTimeCheck: P,
+      badgeOverride: P,
+      skipLimitedTimeCheck: B,
       onClickCard: N,
       onClickPrimaryCTA: A,
       onClickSecondaryCTA: R,
@@ -92,10 +92,10 @@ let k = Chunk473749.memo(function(e) {
             className: j.headerContainer,
             children: [(0, r.jsx)(p.Z, {
               skuId: t.skuId,
-              badgeOverride: B,
+              badgeOverride: P,
               className: V,
               prioritizedCurrency: z,
-              skipLimitedTimeCheck: P
+              skipLimitedTimeCheck: B
             }), !n && (0, r.jsx)(E.Z, {
               skuId: t.skuId,
               isCardHovered: et

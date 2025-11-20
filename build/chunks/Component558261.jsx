@@ -45,9 +45,9 @@ let N = e => {
       hasDiscountOffer: u,
       discountOfferAmount: d,
       text: f
-    } = e, g = (0, b.XM)(t, i, false), p = u ? B.intl.formatToPlainString(B.t["5U5RB5"], {
+    } = e, g = (0, b.XM)(t, i, false), p = u ? P.intl.formatToPlainString(P.t["5U5RB5"], {
       discountOfferAmount: d
-    }) : B.intl.formatToPlainString(B.t["cNSL/j"], {
+    }) : P.intl.formatToPlainString(P.t["cNSL/j"], {
       price: g
     });
     return (0, r.jsx)(a.Button, {
@@ -77,7 +77,7 @@ let N = e => {
       disabled: t,
       onClick: e => e.stopPropagation(),
       textOptions: {
-        textOverride: null != n ? n : B.intl.string(B.t.sEAnVH)
+        textOverride: null != n ? n : P.intl.string(P.t.sEAnVH)
       },
       subscriptionTier: L.Si.TIER_2,
       showGradient: true
@@ -93,7 +93,7 @@ let N = e => {
       onClick: e => {
         e.stopPropagation(), t(e)
       },
-      text: null != n ? n : B.intl.string(B.t.FdGl5A),
+      text: null != n ? n : P.intl.string(P.t.FdGl5A),
       fullWidth: true
     })
   },
@@ -109,7 +109,7 @@ let N = e => {
         e.stopPropagation(), t()
       },
       loading: n,
-      text: null != l ? l : B.intl.string(B.t.MAS7uK),
+      text: null != l ? l : P.intl.string(P.t.MAS7uK),
       fullWidth: true
     })
   },
@@ -124,7 +124,7 @@ let N = e => {
       onClick: e => {
         e.stopPropagation(), n(t)
       },
-      text: null != l ? l : B.intl.string(B.t.FdGl5A),
+      text: null != l ? l : P.intl.string(P.t.FdGl5A),
       fullWidth: true
     })
   },
@@ -150,9 +150,9 @@ let N = e => {
       },
       disabled: n,
       loading: l,
-      loadingStartedLabel: B.intl.string(B.t["TYw+9s"]),
-      loadingFinishedLabel: B.intl.string(B.t.Pg1UP5),
-      text: null != o ? o : B.intl.string(B.t.zp6caO),
+      loadingStartedLabel: P.intl.string(P.t["TYw+9s"]),
+      loadingFinishedLabel: P.intl.string(P.t.Pg1UP5),
+      text: null != o ? o : P.intl.string(P.t.zp6caO),
       fullWidth: true
     })
   },
@@ -164,10 +164,10 @@ let N = e => {
     } = e, s = (0, O.jB)(), c = (0, i.e7)([d.default], () => d.default.locale);
     return (0, r.jsx)(a.Button, {
       variant: "primary",
-      text: B.intl.format(B.t["4NKuqc"], {
+      text: P.intl.format(P.t["4NKuqc"], {
         orbPrice: T.As,
         orbIconHook: () => (0, r.jsx)(f.Z, {
-          className: P.orbIconAligned
+          className: B.orbIconAligned
         })
       }),
       onClick: e => {
@@ -202,7 +202,7 @@ let N = e => {
           isRental: true
         })
       },
-      "aria-label": B.intl.formatToPlainString(B.t.DlNs2T, {
+      "aria-label": P.intl.formatToPlainString(P.t.DlNs2T, {
         orbPrice: T.As
       }),
       fullWidth: true
@@ -219,10 +219,10 @@ let N = e => {
     } = e;
     return (0, r.jsx)(a.Button, {
       variant: "primary",
-      text: null != s ? s : B.intl.format(B.t.kAgx5L, {
+      text: null != s ? s : P.intl.format(P.t.kAgx5L, {
         orbPrice: n[0].amount,
         orbIconHook: () => (0, r.jsx)(f.Z, {
-          className: P.orbIconAligned
+          className: B.orbIconAligned
         })
       }),
       onClick: e => {
@@ -248,7 +248,7 @@ let N = e => {
           analyticsLocations: i
         })
       },
-      "aria-label": B.intl.formatToPlainString(B.t["fNG/05"], {
+      "aria-label": P.intl.formatToPlainString(P.t["fNG/05"], {
         orbPrice: n[0].amount
       }),
       fullWidth: true
@@ -264,7 +264,7 @@ let N = e => {
       onClick: e => {
         e.stopPropagation(), t(e)
       },
-      text: null != n ? n : B.intl.string(B.t.GpnHfH),
+      text: null != n ? n : P.intl.string(P.t.GpnHfH),
       fullWidth: true
     })
   },
@@ -286,7 +286,7 @@ let N = e => {
       product: t,
       isPartiallyOwnedBundle: S,
       isPurchased: _
-    }), B = (0, j.Iw)(t), P = null != B, {
+    }), P = (0, j.Iw)(t), B = null != P, {
       shouldCheckoutWithOrbs: W,
       hasSufficientOrbs: V,
       checkoutEligiblePrices: U
@@ -294,7 +294,7 @@ let N = e => {
       product: t,
       isPremiumUser: g,
       prioritizedCurrency: u,
-      hasDiscountOffer: P,
+      hasDiscountOffer: B,
       isRental: null != h
     }), {
       analyticsLocations: z
@@ -357,8 +357,8 @@ let N = e => {
       isPremiumUser: g,
       analyticsLocations: z,
       selectedVariantIndex: l,
-      hasDiscountOffer: P,
-      discountOfferAmount: B,
+      hasDiscountOffer: B,
+      discountOfferAmount: P,
       text: c
     })
   },

@@ -98,8 +98,8 @@ let j = e => {
     sortedCategories: y,
     setCategoryRef: j
   } = e, k = (0, d.FF)("CollectiblesBrowse"), I = l.useRef(null), T = (0, f.S)(e => e.hasDefaultFilters()), L = (0, u.sp)(), {
-    handlePageChange: B,
-    currentPage: P
+    handlePageChange: P,
+    currentPage: B
   } = (0, _.h)(m), N = l.useCallback(e => {
     c.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == L ? true : L.sessionId,
@@ -109,8 +109,8 @@ let j = e => {
       page_size: null == L ? true : L.pageSize,
       cta_name: "catalog page ".concat(e),
       page_type: "catalog"
-    }), B(e)
-  }, [L, B]), A = l.useRef(null);
+    }), P(e)
+  }, [L, P]), A = l.useRef(null);
   return l.useEffect(() => {
     if (!t || !n) return;
     let e = e => {
@@ -184,12 +184,12 @@ let j = e => {
         tab: s
       }, s) : (0, r.jsx)(u.k0, {
         newValue: {
-          pageIndex: P
+          pageIndex: B
         },
         children: (0, r.jsx)(p.Z, {
           sortedCategories: y,
           setCategoryRef: j,
-          currentPage: P,
+          currentPage: B,
           handlePageChange: N
         })
       })]

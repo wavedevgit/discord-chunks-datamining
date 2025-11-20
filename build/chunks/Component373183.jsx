@@ -40,7 +40,7 @@ let y = Chunk473749.memo(function(e) {
     readyToClaim: k,
     collectibleProductSkuIds: I,
     collectedSkuIds: T
-  } = (0, _.q)(t, n), L = !(i || k), B = (0, s.e7)([m.Z], () => m.Z.isClaiming === n);
+  } = (0, _.q)(t, n), L = !(i || k), P = (0, s.e7)([m.Z], () => m.Z.isClaiming === n);
   return L ? null : (0, r.jsx)("div", {
     ref: y,
     className: a()(v.productCardContainer, x.defaultCursor, {
@@ -160,7 +160,7 @@ let y = Chunk473749.memo(function(e) {
               text: b.intl.string(b.t.VnVTNc),
               fullWidth: true,
               disabled: !k,
-              loading: B
+              loading: P
             })
           })
         })]

@@ -41,33 +41,33 @@ let v = e => {
       hasDiscountOffer: null != I
     }), L = n;
     if (null == L && (null == y || l ? !E && !x && (0, f.Yq)(t.skuId) ? L = p.Zh.NEW : null != v && 1 === v ? L = p.Zh.ONE_DAY_RENTAL : null != v && 3 === v ? L = p.Zh.THREE_DAY_RENTAL : null != v ? L = p.Zh.RENTAL : T ? L = p.Zh.ORBS_EXCLUSIVE : O && (L = p.Zh.NITRO_EXCLUSIVE) : L = p.Zh.LIMITED_TIME), null == L || L === p.Zh.NONE) return null;
-    let B = null;
+    let P = null;
     switch (L) {
       case p.Zh.LIMITED_TIME:
-        B = null != y ? y > 1 ? _.intl.formatToPlainString(_.t.Io7ozn, {
+        P = null != y ? y > 1 ? _.intl.formatToPlainString(_.t.Io7ozn, {
           days: y
         }) : _.intl.string(_.t.Bc13HF) : _.intl.string(_.t["h/uBCR"]);
         break;
       case p.Zh.NEW:
-        B = _.intl.string(_.t.y2b7CA);
+        P = _.intl.string(_.t.y2b7CA);
         break;
       case p.Zh.NITRO_EXCLUSIVE:
-        B = _.intl.string(_.t.X3Ekj8);
+        P = _.intl.string(_.t.X3Ekj8);
         break;
       case p.Zh.ORBS_EXCLUSIVE:
-        B = _.intl.string(_.t["0TmQRG"]);
+        P = _.intl.string(_.t["0TmQRG"]);
         break;
       case p.Zh.ONE_DAY_RENTAL:
-        B = _.intl.string(_.t["9dHf8O"]);
+        P = _.intl.string(_.t["9dHf8O"]);
         break;
       case p.Zh.THREE_DAY_RENTAL:
-        B = _.intl.string(_.t["52UXCo"]);
+        P = _.intl.string(_.t["52UXCo"]);
         break;
       case p.Zh.RENTAL:
-        B = _.intl.string(_.t.VgsFa1)
+        P = _.intl.string(_.t.VgsFa1)
     }
     return (0, r.jsx)(o.IGR, {
-      text: B,
+      text: P,
       disableColor: true,
       className: i()(d, b.productCardBadge)
     })

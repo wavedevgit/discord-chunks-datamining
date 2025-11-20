@@ -2,7 +2,7 @@
 /** chunk id: 963102, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  I: () => P
+  I: () => B
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -49,7 +49,7 @@ function L(e) {
   })
 }
 
-function B(e) {
+function P(e) {
   let {
     tab: t,
     selected: n,
@@ -140,7 +140,7 @@ function B(e) {
   })
 }
 
-function P(e) {
+function B(e) {
   let {
     selectedTab: t,
     handleTransition: n
@@ -150,14 +150,14 @@ function P(e) {
     location: "collectibles_shop_header_bar"
   }), O = (0, m.Y)({
     location: "CollectiblesShopHeaderBar"
-  }), P = [{
+  }), B = [{
     tab: y.AW.HOME,
     displayText: I.intl.string(I.t.ijDDwz)
   }, {
     tab: y.AW.CATALOG,
     displayText: I.intl.string(I.t.Ah5sJo)
   }];
-  f && P.push({
+  f && B.push({
     tab: y.AW.ORBS,
     displayText: I.intl.string(I.t.EBYkzk)
   });
@@ -196,12 +196,12 @@ function P(e) {
         })]
       }), (0, r.jsx)("div", {
         className: T.tabs,
-        children: P.map(e => {
+        children: B.map(e => {
           let {
             tab: l,
             displayText: i
           } = e;
-          return l === y.AW.CATALOG ? (0, r.jsx)(B, {
+          return l === y.AW.CATALOG ? (0, r.jsx)(P, {
             tab: l,
             selected: (0, y.RE)(t) || t === l,
             displayText: i,
