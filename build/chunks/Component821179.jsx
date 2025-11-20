@@ -1,5 +1,5 @@
-/** Chunk was on 65354 **/
-/** chunk id: 821179, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 90347 **/
+/** chunk id: 821179, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => b
 });
@@ -17,20 +17,20 @@ var Chunk194983 = require("./194983.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk323759 = require("./323759.js");
-let m = (0, Chunk481060.pxk)(Chunk481060.EFr.SIZE_16);
+let h = (0, Chunk481060.pxk)(Chunk481060.EFr.SIZE_16);
 
 function b(e) {
   let {
     user: t,
     guild: b,
-    nick: _,
-    onSelect: y
+    nick: j,
+    onSelect: g
   } = e, {
     theme: O,
-    themeType: v
-  } = (0, d.z)(), j = t.hasAvatarForGuild(b.id);
-  return (0, r.jsxs)(o.P3F, {
-    focusProps: v === f.l.MODAL_V2 ? {
+    themeType: y
+  } = (0, d.z)(), x = t.hasAvatarForGuild(b.id);
+  return (0, i.jsxs)(s.P3F, {
+    focusProps: y === p.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -41,81 +41,81 @@ function b(e) {
         right: 8
       }
     },
-    className: g.row,
-    onClick: y,
+    className: m.row,
+    onClick: g,
     onContextMenu: e => {
-      (0, a.jW)(e, async () => {
+      (0, o.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("61924"), n.e("57804"), n.e("70363"), n.e("49049"), n.e("36599"), n.e("7654"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("38697"), n.e("86736"), n.e("6850"), n.e("58227"), n.e("63575"), n.e("62856"), n.e("44686"), n.e("384"), n.e("66201"), n.e("93375"), n.e("39206"), n.e("22516"), n.e("18295"), n.e("87154"), n.e("33213"), n.e("7756")]).then(n.bind(n, 545135));
+        } = await Promise.all([r.e("61924"), r.e("57804"), r.e("70363"), r.e("49049"), r.e("36599"), r.e("7654"), r.e("76692"), r.e("8271"), r.e("15851"), r.e("51453"), r.e("845"), r.e("38697"), r.e("86736"), r.e("6850"), r.e("58227"), r.e("63575"), r.e("62856"), r.e("44686"), r.e("384"), r.e("66201"), r.e("93375"), r.e("39206"), r.e("22516"), r.e("20598"), r.e("87154"), r.e("33213"), r.e("7756")]).then(r.bind(r, 545135));
         return t => {
-          var n, i;
-          return (0, r.jsx)(e, (n = function(e) {
+          var r, n;
+          return (0, i.jsx)(e, (r = function(e) {
             for (var t = 1; t < arguments.length; t++) {
-              var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: r,
+              var r = null != arguments[t] ? arguments[t] : {},
+                i = Object.keys(r);
+              "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(r, e).enumerable
+              }))), i.forEach(function(t) {
+                var i;
+                i = r[t], t in e ? Object.defineProperty(e, t, {
+                  value: i,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = r
+                }) : e[t] = i
               })
             }
             return e
-          }({}, t), i = i = {
+          }({}, t), n = n = {
             guild: b
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-            var n = Object.keys(e);
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+            var r = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var r = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, r)
+              var i = Object.getOwnPropertySymbols(e);
+              r.push.apply(r, i)
             }
-            return n
-          })(Object(i)).forEach(function(e) {
-            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-          }), n))
+            return r
+          })(Object(n)).forEach(function(e) {
+            Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(n, e))
+          }), r))
         }
       })
     },
-    children: [(0, r.jsx)(c.Z, {
+    children: [(0, i.jsx)(c.Z, {
       tabIndex: false,
       guild: b,
       showBadge: true,
-      className: null != b.icon ? g.icon : g.noIcon,
-      badgeStrokeColor: (0, s.Lq)((0, l.wj)(O) ? h.Ilk.PRIMARY_600 : h.Ilk.WHITE_500),
-      badgeTooltipColor: o.r6K.PRIMARY,
-      badgeTooltipDelay: p.vB,
+      className: null != b.icon ? m.icon : m.noIcon,
+      badgeStrokeColor: (0, l.Lq)((0, a.wj)(O) ? v.Ilk.PRIMARY_600 : v.Ilk.WHITE_500),
+      badgeTooltipColor: s.r6K.PRIMARY,
+      badgeTooltipDelay: f.vB,
       size: c.Z.Sizes.MEDIUM,
       active: true
-    }), (0, r.jsxs)("div", {
-      className: g.details,
-      children: [(0, r.jsx)("div", {
-        className: g.name,
+    }), (0, i.jsxs)("div", {
+      className: m.details,
+      children: [(0, i.jsx)("div", {
+        className: m.name,
         children: b.name
-      }), j && (0, r.jsxs)("div", {
-        className: g.nick,
-        children: [(0, r.jsx)(o.qEK, {
-          src: t.getAvatarURL(b.id, m),
-          size: o.EFr.SIZE_16,
-          className: g.avatar,
+      }), x && (0, i.jsxs)("div", {
+        className: m.nick,
+        children: [(0, i.jsx)(s.qEK, {
+          src: t.getAvatarURL(b.id, h),
+          size: s.EFr.SIZE_16,
+          className: m.avatar,
           "aria-hidden": true
-        }), (0, r.jsx)(o.Text, {
+        }), (0, i.jsx)(s.Text, {
           variant: "text-xs/medium",
-          children: (0, r.jsx)(i.Z, {
-            delay: p.vB,
-            children: null != _ ? _ : u.ZP.getName(b.id, true, t)
+          children: (0, i.jsx)(n.Z, {
+            delay: f.vB,
+            children: null != j ? j : u.ZP.getName(b.id, true, t)
           })
         })]
-      }), !j && null != _ && (0, r.jsx)(o.Text, {
+      }), !x && null != j && (0, i.jsx)(s.Text, {
         variant: "text-xs/medium",
-        children: (0, r.jsx)(i.Z, {
-          delay: p.vB,
-          children: _
+        children: (0, i.jsx)(n.Z, {
+          delay: f.vB,
+          children: j
         })
       })]
     })]

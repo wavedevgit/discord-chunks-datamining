@@ -26,13 +26,13 @@ let m = Chunk473749.memo(function(e) {
     paused: g = false,
     streamPreviewURL: b,
     videoSpinnerContext: v,
-    userId: E,
-    streamKey: h
+    userId: h,
+    streamKey: E
   } = e, [y, S] = l.useState(true);
   (0, u.Z)({
     location: "VideoStream",
     videoSpinnerContext: v,
-    userId: E,
+    userId: h,
     streamId: t,
     loading: y,
     paused: g
@@ -41,10 +41,10 @@ let m = Chunk473749.memo(function(e) {
     onReady: O
   } = (0, s.Z)({
     streamId: t,
-    userId: E,
+    userId: h,
     loading: y,
     videoSpinnerContext: v,
-    streamKey: h,
+    streamKey: E,
     paused: g
   }), C = l.useCallback(() => {
     S(false), O()

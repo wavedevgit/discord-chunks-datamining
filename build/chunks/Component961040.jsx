@@ -23,12 +23,12 @@ function b(e) {
     children: t,
     popoutPosition: n,
     popoutAlign: l,
-    targetElementRef: h,
+    targetElementRef: p,
     spacing: b = 0
   } = e, {
     isOpen: y,
     setIsOpen: O
-  } = (0, p.Z)(), v = i.useCallback(() => {
+  } = (0, f.Z)(), v = i.useCallback(() => {
     O(false)
   }, [O]), j = i.useCallback(() => {
     O(!y)
@@ -38,26 +38,26 @@ function b(e) {
       O(false)
     };
     return s.Z.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => s.Z.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-  }), i.useEffect(() => (u.S.subscribe(f.CkL.TOGGLE_INBOX, j), () => void u.S.unsubscribe(f.CkL.TOGGLE_INBOX, j)), [j]);
+  }), i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_INBOX, j), () => void u.S.unsubscribe(h.CkL.TOGGLE_INBOX, j)), [j]);
   let {
-    entrypoint: C
+    entrypoint: x
   } = (0, d.pN)({
     location: "NotificationsInboxPopout"
   });
   return (0, r.jsx)(a.yRy, {
-    targetElementRef: h,
+    targetElementRef: p,
     shouldShow: y,
     align: l,
-    animation: C === d.u3.TITLE_BAR_LEFT ? a.yRy.Animation.TRANSLATE : a.yRy.Animation.FADE,
-    animationPosition: C === d.u3.TITLE_BAR_LEFT ? "bottom" : "left",
+    animation: x === d.u3.TITLE_BAR_LEFT ? a.yRy.Animation.TRANSLATE : a.yRy.Animation.FADE,
+    animationPosition: x === d.u3.TITLE_BAR_LEFT ? "bottom" : "left",
     position: n,
     onRequestClose: v,
     spacing: b,
     renderPopout: () => (0, r.jsx)(a.VqE, {
       "aria-label": g.intl.string(g.t.GSmTKJ),
       className: o()({
-        [m.repositionLayerTitlebarPopout]: C === d.u3.TITLE_BAR_LEFT,
-        [m.repositionLayerSidebarPopout]: C === d.u3.SERVER_RAIL_TOP
+        [m.repositionLayerTitlebarPopout]: x === d.u3.TITLE_BAR_LEFT,
+        [m.repositionLayerSidebarPopout]: x === d.u3.SERVER_RAIL_TOP
       }),
       children: (0, r.jsx)(_, {})
     }),

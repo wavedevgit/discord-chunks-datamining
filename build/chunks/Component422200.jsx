@@ -1,7 +1,7 @@
-/** Chunk was on 43233 **/
+/** Chunk was on 40157 **/
 /** chunk id: 422200, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => A
+  default: () => N
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -27,29 +27,29 @@ var Chunk481060 = require("./481060.js"),
   Chunk612856 = require("./612856.jsx"),
   Chunk137591 = require("./137591.jsx"),
   Chunk388032 = require("./388032.jsx");
-let A = (0, Chunk108843.Z)(function(e) {
+let N = (0, Chunk108843.Z)(function(e) {
   let {
     channel: n,
     onSelect: t
-  } = e, o = (0, d.Z)(n), a = (0, h.Z)(n), A = (0, y.Z)(n), N = (0, s.Z)(n), x = (0, Z.Z)(n), C = (0, f.Z)(n), S = (0, c.Z)({
+  } = e, a = (0, d.Z)(n), o = (0, h.Z)(n), N = (0, m.Z)(n), w = (0, u.Z)(n), C = (0, j.Z)(n), E = (0, f.Z)(n), S = (0, c.Z)({
     id: n.id,
-    label: E.intl.string(E.t.DQ797g)
-  }), T = (0, b.Z)(n, "Context Menu"), w = (0, j.Z)(n), M = (0, v.Z)(n), k = (0, _.Z)(n), R = (0, g.Z)(n), D = (0, m.Z)(n.id), U = (0, p.Z)(n), I = (0, P.Z)(n), G = (0, u.l)(n), L = (0, u.P)(n), Q = (0, O.Z)(n);
+    label: x.intl.string(x.t.DQ797g)
+  }), k = (0, b.Z)(n, "Context Menu"), A = (0, Z.Z)(n), T = (0, y.Z)(n), D = (0, P.Z)(n), M = (0, g.Z)(n), U = (0, v.Z)(n.id), G = (0, p.Z)(n), I = (0, _.Z)(n), L = (0, s.l)(n), Q = (0, s.P)(n), R = (0, O.Z)(n);
   return (0, r.jsxs)(i.v2r, {
     navId: "thread-context",
     onClose: l.Zy,
-    "aria-label": E.intl.string(E.t["1NBjqb"]),
+    "aria-label": x.intl.string(x.t["1NBjqb"]),
     onSelect: t,
     children: [(0, r.jsxs)(i.kSQ, {
-      children: [a, G]
+      children: [o, L]
     }, "mark-as-read-or-favorite"), (0, r.jsxs)(i.kSQ, {
-      children: [T, U, N, x, R, D, o]
+      children: [k, G, w, C, M, U, a]
     }, "thread-actions"), (0, r.jsxs)(i.kSQ, {
-      children: [A, k]
+      children: [N, D]
     }, "notifications"), (0, r.jsx)(i.kSQ, {
-      children: L
+      children: Q
     }), (0, r.jsxs)(i.kSQ, {
-      children: [I, w, C, Q, M]
+      children: [I, A, E, R, T]
     }, "admin-actions"), (0, r.jsx)(i.kSQ, {
       children: S
     }, "developer-actions")]

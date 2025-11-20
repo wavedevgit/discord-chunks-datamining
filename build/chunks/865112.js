@@ -89,7 +89,7 @@ let _ = {
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS:
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
         return {
-          icon: p, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: f, color: r.Z.colors.BACKGROUND_ACCENT
         };
       default:
         return null

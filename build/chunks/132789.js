@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 132789, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 65354 **/
+/** chunk id: 132789, original params: e,t,n (module,exports,require) **/
 module.exports = {
   row: "row_b1f768",
   rowGuildName: "rowGuildName_b1f768",

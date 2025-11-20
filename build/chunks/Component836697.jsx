@@ -24,18 +24,18 @@ function y(e) {
   let {
     onActivate: t,
     children: n
-  } = e, s = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), p = i.useCallback(() => {
+  } = e, s = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), f = i.useCallback(() => {
     c.ZP.clearCoachmark()
-  }, []), h = (0, a.Z)(d), f = i.useRef(null);
+  }, []), p = (0, a.Z)(d), h = i.useRef(null);
   return i.useEffect(() => {
-    if (d && d !== h) {
+    if (d && d !== p) {
       var e, n, r, i, l;
-      t(), null == (l = f.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
+      t(), null == (l = h.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
     }
-  }, [f, d, h, t]), (0, r.jsxs)("div", {
+  }, [h, d, p, t]), (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)(o.yRy, {
-      ref: f,
+      ref: h,
       targetElementRef: s,
       shouldShow: d,
       renderPopout: () => (0, r.jsxs)("div", {
@@ -57,7 +57,7 @@ function y(e) {
             size: "sm",
             text: b.intl.string(b.t["4r+amb"]),
             fullWidth: true,
-            onClick: p
+            onClick: f
           })]
         }), (0, r.jsx)("div", {
           className: _.popoutCaretLeft
@@ -107,23 +107,23 @@ function y(e) {
 function O(e) {
   let {
     onActivate: t
-  } = e, [n, O] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), C = (0, f.Z)(), x = (0, a.Z)(v), E = i.useMemo(() => {
-    let e = (0, h.qQ)({
-      folderId: p.S.PENDING_JOIN_REQUESTS_FOLDER,
+  } = e, [n, O] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, h.Z)(), C = (0, a.Z)(v), E = i.useMemo(() => {
+    let e = (0, p.qQ)({
+      folderId: f.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: b.intl.string(b.t["scsU+l"]),
       expanded: n,
       guildIds: []
     });
-    for (let t of C) e.children.push((0, h.Mg)(t, e.id));
+    for (let t of x) e.children.push((0, p.Mg)(t, e.id));
     return e
-  }, [C, n]);
+  }, [x, n]);
   i.useEffect(() => {
     n && !j && s.Z.fetchRequestToJoinGuilds()
   }, [n, j]);
-  let S = null != v && C.includes(v);
+  let S = null != v && x.includes(v);
   return (i.useEffect(() => {
-    !n && S && x !== v && O(true)
-  }, [n, S, x, v]), 0 === C.length) ? null : (0, r.jsx)(y, {
+    !n && S && C !== v && O(true)
+  }, [n, S, C, v]), 0 === x.length) ? null : (0, r.jsx)(y, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
       folderNode: E,
@@ -143,7 +143,7 @@ function O(e) {
         })
       }),
       renderChildNode: function(e, t, n) {
-        return e.type !== h.eD.GUILD ? null : (0, r.jsx)(m.Z, {
+        return e.type !== p.eD.GUILD ? null : (0, r.jsx)(m.Z, {
           guildNode: e,
           "aria-setsize": n,
           "aria-posinset": t

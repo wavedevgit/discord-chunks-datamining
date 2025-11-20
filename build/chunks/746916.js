@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 746916, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 65354 **/
+/** chunk id: 746916, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => c
 });
@@ -12,11 +11,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function c(e) {
-  let t = null == e ? true : e.features.has(l.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL),
-    n = (0, r.e7)([s.Z, a.default, i.ZP], () => {
+  let t = null == e ? true : e.features.has(s.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL),
+    n = (0, r.e7)([a.Z, l.default, i.ZP], () => {
       if (null == e) return;
-      let t = s.Z.getRequest(e.id),
-        n = a.default.getCurrentUser();
+      let t = a.Z.getRequest(e.id),
+        n = l.default.getCurrentUser();
       if (null == n || null == t || t.userId !== n.id) return;
       let r = i.ZP.getMember(e.id, t.userId);
       if (!(null != r && !r.isPending) || (0, o.oP)(t)) return t.applicationStatus

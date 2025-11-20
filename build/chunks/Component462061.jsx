@@ -76,10 +76,10 @@ function k(e) {
     user: H,
     streamId: B,
     speaking: q
-  } = t, Y = H.id === W, K = (0, P.ZP)(t), G = (0, o.e7)([w.Z], () => w.Z.isFocused()), Q = (0, o.e7)([E.Z], () => E.Z.getWindowFocused(Z.KJ3.CHANNEL_CALL_POPOUT)), X = (0, o.e7)([C.Z], () => null != H.id && C.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), J = (0, o.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, H.id)), $ = I.ZP.getName(n.getGuildId(), n.id, H) + (J ? " ".concat(T.intl.string(T.t["pFO/Ph"])) : ""), ee = q && (Q || G), et = c < 124 ? D : N, {
+  } = t, Y = H.id === W, K = (0, P.ZP)(t), G = (0, o.e7)([w.Z], () => w.Z.isFocused()), Q = (0, o.e7)([h.Z], () => h.Z.getWindowFocused(Z.KJ3.CHANNEL_CALL_POPOUT)), X = (0, o.e7)([C.Z], () => null != H.id && C.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), J = (0, o.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, H.id)), $ = I.ZP.getName(n.getGuildId(), n.id, H) + (J ? " ".concat(T.intl.string(T.t["pFO/Ph"])) : ""), ee = q && (Q || G), et = c < 124 ? D : N, {
     avatarSrc: en,
     avatarDecorationSrc: er
-  } = (0, h.Z)({
+  } = (0, E.Z)({
     userId: H.id,
     guildId: n.guild_id,
     size: et,

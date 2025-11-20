@@ -78,7 +78,7 @@ function B(e, t) {
 var F = ((r = {})[r.Favorite = 0] = "Favorite", r[r.PrivateChannel = 1] = "PrivateChannel", r[r.HighImportanceMentioned = 2] = "HighImportanceMentioned", r[r.LowImportanceMentioned = 3] = "LowImportanceMentioned", r[r.AllMessagesNotifications = 4] = "AllMessagesNotifications", r[r.GuildChannel = 5] = "GuildChannel", r[r.OldChannel = 6] = "OldChannel", r[r.NoNotifications = 7] = "NoNotifications", r[r.ReallyOldChannel = 8] = "ReallyOldChannel", r),
   V = ((i = {}).Loading = "loading", i.Loaded = "loaded", i.Done = "done", i);
 let H = 25;
-class z extends Chunk836560.EventEmitter {
+class W extends Chunk836560.EventEmitter {
   loadMore() {
     let {
       loadState: e,
@@ -101,7 +101,7 @@ class z extends Chunk836560.EventEmitter {
     })
   }
   populateInitialStateFromStore(e) {
-    if ("messages" === e.type) return W(e, false);
+    if ("messages" === e.type) return z(e, false);
     if ("nsfw" === e.type) return B(U({}, e), {
       isFullyLoaded: true,
       hasLoadedAnything: true
@@ -120,8 +120,8 @@ class z extends Chunk836560.EventEmitter {
     })
   }
   loadChannelMessages(e) {
-    p.Z.clearChannel(e.channelId);
-    let t = p.Z.fetchMessages({
+    f.Z.clearChannel(e.channelId);
+    let t = f.Z.fetchMessages({
       channelId: e.channelId,
       limit: M.AQB,
       jump: {
@@ -136,7 +136,7 @@ class z extends Chunk836560.EventEmitter {
         loadState: "loaded",
         channels: this.updateChannel(e.channelId, e => {
           s()("messages" === e.type, "channel cannot change type");
-          let n = W(e, true);
+          let n = z(e, true);
           return (0 === n.messages.length || n.messages.length === e.messages.length) && (n = B(U({}, n), {
             hasLoadedAnything: true,
             isFullyLoaded: true,
@@ -149,7 +149,7 @@ class z extends Chunk836560.EventEmitter {
         loadState: "loaded",
         channels: this.updateChannel(e.channelId, e => {
           var t;
-          return s()("messages" === e.type, "channel cannot change type"), B(U({}, W(e, true)), {
+          return s()("messages" === e.type, "channel cannot change type"), B(U({}, z(e, true)), {
             isFullyLoaded: true,
             hasError: true,
             hasLoadedAnything: true,
@@ -176,14 +176,14 @@ class z extends Chunk836560.EventEmitter {
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 2e3 && this.loadMore()
     }, this.reloadMessages = () => {
       this.setState({
-        channels: this.state.channels.map(e => "messages" === e.type && e.hasLoadedAnything ? W(e, false, true) : e)
+        channels: this.state.channels.map(e => "messages" === e.type && e.hasLoadedAnything ? z(e, false, true) : e)
       })
     }, this.getNumUnreadChannels = () => this.state.channels.length, this.markChannelRead = e => {
       let {
         channelId: t,
         newestUnreadMessageId: n
       } = e;
-      d.Z.wait(() => h.ack(t, {
+      d.Z.wait(() => p.ack(t, {
         section: M.jXE.INBOX,
         object: M.qAy.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
         objectType: M.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -194,12 +194,12 @@ class z extends Chunk836560.EventEmitter {
         channels: this.updateChannel(t, e => B(U({}, e), {
           deleted: true
         }))
-      }), f.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
+      }), h.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
     }, this.undoMarkChannelRead = () => {
       if (0 === this.undoStack.length) return;
       let e = this.undoStack.pop();
       if (null == e) return;
-      h.ack(e.channelId, {
+      p.ack(e.channelId, {
         section: M.jXE.INBOX,
         object: M.qAy.UNDO_MARK_AS_READ,
         objectType: M.AnalyticsObjectTypes.ACK_MANUAL
@@ -220,7 +220,7 @@ class z extends Chunk836560.EventEmitter {
         channels: this.state.channels.filter(t => t.channelId !== e)
       }), this.maybeLoadMore()
     }, this.markAllRead = () => {
-      h.y5(this.state.channels.map(e => ({
+      p.y5(this.state.channels.map(e => ({
         channelId: e.channelId,
         messageId: e.newestUnreadMessageId
       }))), this.setState({
@@ -235,9 +235,9 @@ class z extends Chunk836560.EventEmitter {
         collapsedChannels: i,
         loadState: l
       } = this.state, o = u().findIndex(r, e => e.channelId === t), a = r[o], s = !a.collapsed;
-      i[t] = s, (0, C.BU)(n, t, e => {
+      i[t] = s, (0, x.BU)(n, t, e => {
         e.collapsedInInbox = s
-      }, C.fy.FREQUENT_USER_ACTION), this.setState({
+      }, x.fy.FREQUENT_USER_ACTION), this.setState({
         scrollToChannelIndex: o,
         collapsedChannels: i,
         loadState: "done" !== l || s || a.isFullyLoaded ? l : "loaded",
@@ -275,7 +275,7 @@ class z extends Chunk836560.EventEmitter {
   }
 }
 
-function W(e, t) {
+function z(e, t) {
   var n;
   let r = arguments.length > 2 && true !== arguments[2] && arguments[2],
     i = N.Z.getMessages(e.channelId),
@@ -396,7 +396,7 @@ let q = 2 * Chunk70956.Z.Millis.DAY,
   X = 10 * Chunk70956.Z.Millis.DAY;
 
 function Q(e) {
-  let [t, n] = l.useState(() => new z(K(), e)), [r, i] = l.useState(false), o = l.useRef(Date.now()), [a, s] = l.useState(() => K());
+  let [t, n] = l.useState(() => new W(K(), e)), [r, i] = l.useState(false), o = l.useRef(Date.now()), [a, s] = l.useState(() => K());
   l.useEffect(() => {
     let e = e => s(e);
     return t.on("change", e), s(t.state), () => {
@@ -406,7 +406,7 @@ function Q(e) {
     if (null == a || a.channels.length > 0 || r) return;
     let t = Date.now(),
       l = K();
-    0 === l.channels.length || t - o.current < 10 * R.Z.Millis.SECOND ? i(true) : (o.current = Date.now(), n(new z(l, e)))
+    0 === l.channels.length || t - o.current < 10 * R.Z.Millis.SECOND ? i(true) : (o.current = Date.now(), n(new W(l, e)))
   }, [a, r, e]);
   let c = l.useRef(t);
   return l.useLayoutEffect(() => {

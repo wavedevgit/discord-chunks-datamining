@@ -14,7 +14,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk247060 = require("./247060.js");
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,7 +30,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -116,7 +116,7 @@ class b extends Chunk473749.Component {
     }
   }
   constructor(e) {
-    super(e), f(this, "_timeout", true), this.state = {
+    super(e), h(this, "_timeout", true), this.state = {
       translateY: new u.Z.Value,
       reduceMotion: false
     }
@@ -160,10 +160,10 @@ class _ extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "state", {
+    super(...e), h(this, "state", {
       unread: null,
       mention: null
-    }), f(this, "calculateState", c()(() => {
+    }), h(this, "calculateState", c()(() => {
       let {
         items: e,
         expandedFolders: t,
@@ -180,14 +180,14 @@ class _ extends(r = Chunk473749.PureComponent) {
           null == a && i(e, l, c) && (a = e), null == s && r(e, l, c) && (s = e)
         },
         d = l ? c.length - 1 : 0,
-        p = c[d];
-      for (; null != p;) {
-        if ("string" == typeof p) {
-          if (n(p, l, c)) break;
-          u(p)
+        f = c[d];
+      for (; null != f;) {
+        if ("string" == typeof f) {
+          if (n(f, l, c)) break;
+          u(f)
         } else {
           let e = false;
-          for (let t of p) {
+          for (let t of f) {
             if (n(t, l, c)) {
               e = true;
               break
@@ -196,13 +196,13 @@ class _ extends(r = Chunk473749.PureComponent) {
           }
           if (e) break
         }
-        d += l ? false : 1, p = c[d]
+        d += l ? false : 1, f = c[d]
       }
       null != o && o(a, s, l), this.setState({
         mention: a,
         unread: s
       })
-    }, 200)), f(this, "handleClick", e => {
+    }, 200)), h(this, "handleClick", e => {
       e.preventDefault(), e.stopPropagation();
       let {
         unread: t,
@@ -214,7 +214,7 @@ class _ extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-f(_, "contextType", Chunk481060.Sfi), f(_, "defaultProps", {
+h(_, "contextType", Chunk481060.Sfi), h(_, "defaultProps", {
   className: Chunk247060.container,
   reverse: false,
   hide: false,

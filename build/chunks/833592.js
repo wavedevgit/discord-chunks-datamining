@@ -1,10 +1,10 @@
 /** Chunk was on 65354 **/
 /** chunk id: 833592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Vk: () => p,
+  Vk: () => f,
   g3: () => b,
-  jF: () => h,
-  jk: () => f,
+  jF: () => p,
+  jk: () => h,
   wt: () => g
 });
 var Chunk990547 = require("./990547.js"),
@@ -17,19 +17,19 @@ var Chunk990547 = require("./990547.js"),
   Chunk178480 = require("./178480.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e) {
+function f(e) {
   o.Z.dispatch({
     type: "NOTIFICATION_CENTER_SET_ACTIVE",
     active: e
   })
 }
 
-function h() {
+function p() {
   Chunk570140.Z.dispatch({
     type: "RESET_NOTIFICATION_CENTER"
   })
 }
-async function f(e, t) {
+async function h(e, t) {
   if (c.Z.loading) return;
   await o.Z.dispatch({
     type: "LOAD_NOTIFICATION_CENTER_ITEMS"

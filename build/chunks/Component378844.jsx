@@ -47,14 +47,14 @@ let O = e => {
   } = e, O = (0, u.Dt)(), {
     notClaimed: v,
     notEmailVerified: j,
-    notPhoneVerified: C,
-    newAccount: x,
+    notPhoneVerified: x,
+    newAccount: C,
     newMember: E
-  } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, I = null, P = null;
-  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlG), P = m.intl.string(m.t.fiNVin)) : C ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOv"])) : j ? (I = m.intl.string(m.t.vdSOpz), P = m.intl.string(m.t.lm1UKt)) : E ? (I = m.intl.formatToPlainString(m.t.v1ktYb, {
-    min: f.YeM.MEMBER_AGE
-  }), P = m.intl.string(m.t.BddRzS)) : x && (I = m.intl.formatToPlainString(m.t.sncw41, {
-    min: f.YeM.ACCOUNT_AGE
+  } = (0, l.e7)([f.Z], () => f.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, I = null, P = null;
+  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlG), P = m.intl.string(m.t.fiNVin)) : x ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOv"])) : j ? (I = m.intl.string(m.t.vdSOpz), P = m.intl.string(m.t.lm1UKt)) : E ? (I = m.intl.formatToPlainString(m.t.v1ktYb, {
+    min: h.YeM.MEMBER_AGE
+  }), P = m.intl.string(m.t.BddRzS)) : C && (I = m.intl.formatToPlainString(m.t.sncw41, {
+    min: h.YeM.ACCOUNT_AGE
   }), P = m.intl.string(m.t.BddRzS))), null == S || null == I) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,
     "aria-labelledby": O,
@@ -81,7 +81,7 @@ let O = e => {
             variant: "primary",
             text: P,
             onClick: () => {
-              v ? c.j() : C ? (0, a.ZDy)(async () => {
+              v ? c.j() : x ? (0, a.ZDy)(async () => {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 607018));
@@ -100,7 +100,7 @@ let O = e => {
                   children: (0, i.jsx)(a.Text, {
                     variant: "text-md/normal",
                     children: m.intl.format(m.t.azKEPy, {
-                      email: null == (t = h.default.getCurrentUser()) ? true : t.email
+                      email: null == (t = p.default.getCurrentUser()) ? true : t.email
                     })
                   })
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -116,7 +116,7 @@ let O = e => {
               })), y()
             }
           })
-        }) : null, v || C || j ? (0, i.jsx)(a.Avr, {
+        }) : null, v || x || j ? (0, i.jsx)(a.Avr, {
           onClick: y,
           text: m.intl.string(m.t.oEAioF),
           variant: "secondary"

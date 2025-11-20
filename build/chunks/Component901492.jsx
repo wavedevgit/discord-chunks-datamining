@@ -31,8 +31,8 @@ function c(e) {
       }
       return i
     }(e, ["channel", "category"]);
-  let p = (0, o.ZP)(c, true),
-    h = (0, o.ZP)(u);
+  let f = (0, o.ZP)(c, true),
+    p = (0, o.ZP)(u);
   return (0, r.jsx)(l.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -61,8 +61,8 @@ function c(e) {
       className: s.message,
       selectable: false,
       children: a.intl.format(a.t["iKW+jY"], {
-        channelName: p,
-        categoryName: h
+        channelName: f,
+        categoryName: p
       })
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

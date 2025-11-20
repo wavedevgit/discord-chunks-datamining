@@ -29,9 +29,9 @@ function y(e) {
     return null != (n = null == (e = g.default.getUser(t.inviter_id)) ? true : e.username) ? n : ""
   }), s = (0, m.vc)(o()(t.created_at), "LT"), c = i.useRef(null), {
     isHoveringOrFocusing: d
-  } = (0, p.Z)(c);
+  } = (0, f.Z)(c);
   return i.useEffect(() => {
-    n || (0, f.Br)(t)
+    n || (0, h.Br)(t)
   }, [t, n]), (0, r.jsxs)("div", {
     className: _.container,
     ref: c,
@@ -62,7 +62,7 @@ function y(e) {
             size: "xs"
           }),
           onClick: () => {
-            (0, f.UF)(t)
+            (0, h.UF)(t)
           }
         })]
       })]
@@ -93,16 +93,16 @@ function O(e) {
     expired: t,
     invite: n,
     isHoveringInvite: l
-  } = e, o = (0, a.e7)([h.Z], () => h.Z.isInviteGameInstalled(n)), p = (0, a.e7)([h.Z], () => h.Z.isInviteJoinable(n)), [g, m] = i.useState(false), y = i.useCallback(async () => {
+  } = e, o = (0, a.e7)([p.Z], () => p.Z.isInviteGameInstalled(n)), f = (0, a.e7)([p.Z], () => p.Z.isInviteJoinable(n)), [g, m] = i.useState(false), y = i.useCallback(async () => {
     m(true);
     try {
-      await (0, f.MH)(n)
+      await (0, h.MH)(n)
     } catch (e) {}
     m(false)
   }, [n]), O = i.useCallback(async () => {
     m(true);
     try {
-      await (0, f.Ol)(n)
+      await (0, h.Ol)(n)
     } catch (e) {}
     m(false)
   }, [n]);
@@ -116,7 +116,7 @@ function O(e) {
       children: b.intl.string(b.t["s+J8Dl"])
     });
     else return null;
-  return o && p ? (0, r.jsx)(c.zx, {
+  return o && f ? (0, r.jsx)(c.zx, {
     className: _.primaryButton,
     color: c.Tt.GREEN,
     disabled: g,

@@ -52,17 +52,17 @@ function v(e, t) {
 
 function Z(e) {
   let t = (0, r.e7)([o.Z], () => o.Z.getChannelId() === e.id),
-    Z = (0, d.Z)(),
+    Z = (0, s.Z)(),
     h = (null == Z ? true : Z.channelId) === e.id,
-    b = (0, a.V)(e) && !e.isPrivate(),
-    _ = (0, a.Z)(e),
-    y = !(0, r.e7)([c.Z], () => c.Z.isInChannel(e.id)) && _ || b,
+    _ = (0, a.V)(e) && !e.isPrivate(),
+    b = (0, a.Z)(e),
+    y = !(0, r.e7)([c.Z], () => c.Z.isInChannel(e.id)) && b || _,
     N = (0, f.Z)();
   return h || 0 !== N.length ? h ? (0, i.jsx)(l.sNh, {
     label: O.intl.string(O.t.PlwgdU),
     id: "handoff",
     action: () => {
-      (0, s.F)(Z)
+      (0, d.F)(Z)
     },
     icon: (0, E.Z)(true),
     disabled: y

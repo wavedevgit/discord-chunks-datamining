@@ -22,7 +22,7 @@ let g = Chunk473749.memo(function(e) {
     guildChannels: t,
     guildChannelsVersion: n
   } = e, l = i.useMemo(() => t.getCategoryFromSection(t.voiceChannelsSectionNumber), [t, n]);
-  return null == l ? null : (0, r.jsx)(p.Qo, {
+  return null == l ? null : (0, r.jsx)(f.Qo, {
     category: l
   })
 });
@@ -41,16 +41,16 @@ function m(e) {
   if (t === n.voiceChannelsSectionNumber) return 44;
   let {
     hasDivider: c,
-    canHaveVoiceSummary: p
-  } = (0, d.ie)(n, o, t), f = c ? a ? 9 : h.QP : 0;
-  if (!p || t === u.wZ) return f;
+    canHaveVoiceSummary: f
+  } = (0, d.ie)(n, o, t), h = c ? a ? 9 : p.QP : 0;
+  if (!f || t === u.wZ) return h;
   let g = n.getNamedCategoryFromSection(t);
-  return null == g ? f : (0, d.V5)({
+  return null == g ? h : (0, d.V5)({
     category: g,
     selectedChannelId: i,
     selectedVoiceChannelId: l,
     voiceStates: r
-  }) ? (a ? "cozy" === s ? 42 : 34 : h.Vf) + f : f
+  }) ? (a ? "cozy" === s ? 42 : 34 : p.Vf) + h : h
 }
 
 function b(e, t, n) {
@@ -65,8 +65,8 @@ let _ = Chunk473749.memo(function(e) {
   let {
     sectionIndex: t,
     guildChannels: n,
-    guildChannelsVersion: p,
-    voiceStates: h,
+    guildChannelsVersion: f,
+    voiceStates: p,
     guildId: m,
     selectedChannelId: b,
     selectedVoiceChannelId: _,
@@ -74,32 +74,32 @@ let _ = Chunk473749.memo(function(e) {
   } = e, {
     hasDivider: O,
     canHaveVoiceSummary: v
-  } = i.useMemo(() => (0, d.ie)(n, y, t), [n, y, t, p]), j = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, p]), C = (0, a.DM)(m), x = (0, l.Wu)([s.ZP], () => {
+  } = i.useMemo(() => (0, d.ie)(n, y, t), [n, y, t, f]), j = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, f]), x = (0, a.DM)(m), C = (0, l.Wu)([s.ZP], () => {
     if (null == j || !j.isCollapsed || !v) return [];
     let e = j.getChannelRecords(),
       t = [];
     for (let n of e) {
       if (!n.isGuildVocal()) continue;
       let e = s.ZP.isChannelOrParentOptedIn(m, n.id);
-      (!C || e) && t.push(n)
+      (!x || e) && t.push(n)
     }
     return t
-  }, [j, v, m, C]), E = i.useMemo(() => (0, c.c4)({
-    channels: x,
+  }, [j, v, m, x]), E = i.useMemo(() => (0, c.c4)({
+    channels: C,
     selectedChannelId: b,
     selectedVoiceChannelId: _,
-    voiceStates: h
-  }), [x, b, _, h]);
+    voiceStates: p
+  }), [C, b, _, p]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(g, {
     guildChannels: n,
-    guildChannelsVersion: p
+    guildChannelsVersion: f
   });
   let S = O ? (0, r.jsx)("div", {
-    className: f.sectionDivider
+    className: h.sectionDivider
   }) : null;
   return v && 0 !== E.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: f.voiceUserSummary,
+      className: h.voiceUserSummary,
       children: (0, r.jsx)(o.ZP, {
         renderIcon: true,
         users: E,

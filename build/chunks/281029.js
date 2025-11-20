@@ -1,7 +1,7 @@
 /** Chunk was on 65354 **/
 /** chunk id: 281029, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Dn: () => p,
+  Dn: () => f,
   if: () => d,
   ig: () => a
 }), require("./388685.js"), require("./290780.js"), require("./539854.js");
@@ -58,7 +58,7 @@ function u(e) {
 }
 
 function d(e, t, n, r, l) {
-  var d, p, h, f, g;
+  var d, f, p, h, g;
   if (null == e || null == n) return null;
   let {
     GUILD_CATEGORY: m
@@ -68,7 +68,7 @@ function d(e, t, n, r, l) {
     if (r > t) {
       let {
         GUILD_CATEGORY: t
-      } = o.d4z, r = l[(null != (p = c(n, l, true)) ? p : 0) + 1], i = s(false, n.id, e.type, l);
+      } = o.d4z, r = l[(null != (f = c(n, l, true)) ? f : 0) + 1], i = s(false, n.id, e.type, l);
       return null == i || i.channel.id === e.id ? null : null == r || r.channel.type === t ? {
         referenceId: i.channel.id,
         parentId: null
@@ -79,7 +79,7 @@ function d(e, t, n, r, l) {
   if (a(e.type, n.type)) return u(n);
   if (r < t) {
     if (n.type === m) {
-      let t = l[(null != (f = c(n, l, true)) ? f : 0) - 1],
+      let t = l[(null != (h = c(n, l, true)) ? h : 0) - 1],
         r = s(1, n.id, e.type, l);
       if (null == t) return {
         referenceId: null,
@@ -97,7 +97,7 @@ function d(e, t, n, r, l) {
       }
       return null
     }
-    let t = l[(null != (h = c(n, l, true)) ? h : 0) - 1],
+    let t = l[(null != (p = c(n, l, true)) ? p : 0) - 1],
       r = s(1, n.id, e.type, l);
     return null != t || e.isGuildVocal() ? (0, i.r8)(e.type) && null != r && ((0, i.r8)(t.channel.type) || t.channel.isCategory()) ? {
       referenceId: r.channel.id,
@@ -145,11 +145,11 @@ function d(e, t, n, r, l) {
   } : null
 }
 
-function p(e, t, n, o) {
+function f(e, t, n, o) {
   let a, s, u = [],
     d = [],
-    p = o._categories,
-    h = t => {
+    f = o._categories,
+    p = t => {
       var n, r;
       let i;
       return i = null == a || null == s || (n = a, r = s, +(null == n || null == r || null == t[n] || t[n].channel !== e || null == t[r])) ? [...t] : l.ZP.moveItemFromTo(t, a, s), u = u.concat(l.ZP.calculatePositionDeltas({
@@ -170,11 +170,11 @@ function p(e, t, n, o) {
       })), i
     };
   if (e.isCategory()) {
-    let n = [...p].slice(1);
-    a = c(e, n), s = c(t, n), (d = h(n)).unshift(p[0])
+    let n = [...f].slice(1);
+    a = c(e, n), s = c(t, n), (d = p(n)).unshift(f[0])
   }
   if ((0, i.r8)(e.type) || e.isCategory()) {
-    let n = (0, r.Z)(d.length > 0 ? d : p, o, e => {
+    let n = (0, r.Z)(d.length > 0 ? d : f, o, e => {
       let {
         channel: {
           type: t
@@ -182,16 +182,16 @@ function p(e, t, n, o) {
       } = e;
       return (0, i.r8)(t)
     });
-    a = c(e, n), s = c(t, n), h(n)
+    a = c(e, n), s = c(t, n), p(n)
   }
   if (e.isGuildVocal() || e.isCategory()) {
-    let n = (0, r.Z)(d.length > 0 ? d : p, o, e => {
+    let n = (0, r.Z)(d.length > 0 ? d : f, o, e => {
       let {
         channel: t
       } = e;
       return t.isGuildVocal()
     });
-    a = c(e, n), s = c(t, n), h(n)
+    a = c(e, n), s = c(t, n), p(n)
   }
   if (e.parent_id !== n) {
     let t = false;

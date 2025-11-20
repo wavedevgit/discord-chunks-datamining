@@ -26,8 +26,8 @@ var Chunk54381 = require("./54381.js"),
 function j(e) {
   var t, n, {
       profileOwner: j,
-      hideButtonIcon: C = false,
-      showPrice: x = false,
+      hideButtonIcon: x = false,
+      showPrice: C = false,
       showIcons: E = false
     } = e,
     S = function(e, t) {
@@ -49,14 +49,14 @@ function j(e) {
     item: I,
     isOwner: P,
     giftingOrigin: N = _.Wt.USER_PROFILE_WISHLIST
-  } = S, Z = I.sku, w = Z.applicationId, T = (0, c.q)(w), A = i.useRef(null), R = (0, l.e7)([p.Z], () => null != j && p.Z.hasSentGift(I.skuId, j.id), [I.skuId, j]), D = R || true === I.isOwned, L = I.skuName, {
+  } = S, Z = I.sku, w = Z.applicationId, T = (0, c.q)(w), A = i.useRef(null), R = (0, l.e7)([f.Z], () => null != j && f.Z.hasSentGift(I.skuId, j.id), [I.skuId, j]), D = R || true === I.isOwned, L = I.skuName, {
     buttonCTALabel: M,
     buttonIcon: k,
     handleCardClick: G
   } = i.useMemo(() => {
     var e, t, n, r, i, l, o, c;
     return P || D ? {
-      buttonCTALabel: x ? (0, h.T4)(null != (i = null == (n = Z.price) ? true : n.amount) ? i : 0, null != (l = null == (r = Z.price) ? true : r.currency) ? l : y.pK.USD) : O.intl.string(O.t.FdGl5A),
+      buttonCTALabel: C ? (0, p.T4)(null != (i = null == (n = Z.price) ? true : n.amount) ? i : 0, null != (l = null == (r = Z.price) ? true : r.currency) ? l : y.pK.USD) : O.intl.string(O.t.FdGl5A),
       buttonIcon: true,
       handleCardClick: () => {
         (null == T ? true : T.guildId) != null && ((0, u.closeUserProfileModal)(), (0, g.g)({
@@ -67,8 +67,8 @@ function j(e) {
         }))
       }
     } : {
-      buttonCTALabel: x ? (0, h.T4)(null != (o = null == (e = Z.price) ? true : e.amount) ? o : 0, null != (c = null == (t = Z.price) ? true : t.currency) ? c : y.pK.USD) : O.intl.string(O.t.ilhtIa),
-      buttonIcon: C ? true : a.OgN,
+      buttonCTALabel: C ? (0, p.T4)(null != (o = null == (e = Z.price) ? true : e.amount) ? o : 0, null != (c = null == (t = Z.price) ? true : t.currency) ? c : y.pK.USD) : O.intl.string(O.t.ilhtIa),
+      buttonIcon: x ? true : a.OgN,
       handleCardClick: () => {
         R || ((0, u.closeUserProfileModal)(), (0, m.P)(Z, {
           isGift: true,
@@ -79,11 +79,11 @@ function j(e) {
         }))
       }
     }
-  }, [P, D, x, Z, C, T, R, j, N]), U = i.useCallback(() => E ? (0, r.jsx)("div", {
+  }, [P, D, C, Z, x, T, R, j, N]), U = i.useCallback(() => E ? (0, r.jsx)("div", {
     className: v.itemIcon,
     children: (0, r.jsx)(o.u, {
       text: O.intl.formatToPlainString(O.t.p3RmJF, {
-        username: f.ZP.getName(j)
+        username: h.ZP.getName(j)
       }),
       position: "top",
       children: (0, r.jsx)(a.h_8, {

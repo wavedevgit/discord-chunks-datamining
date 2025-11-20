@@ -168,15 +168,15 @@ let k = Chunk473749.memo(function(e) {
     unread: y.ZP.hasUnread(t.id),
     mentionCount: y.ZP.getMentionCount(t.id),
     isMentionLowImportance: y.ZP.getIsMentionLowImportance(t.id)
-  })), V = (0, s.e7)([m.Z], () => m.Z.isMuted(t.id)), H = (0, C.p)({
+  })), V = (0, s.e7)([m.Z], () => m.Z.isMuted(t.id)), H = (0, x.p)({
     location: "GuildSidebarThreadListEntry"
-  }), z = (0, s.e7)([O.default], () => O.default.getUser(t.ownerId)), W = i.useCallback(e => {
+  }), W = (0, s.e7)([O.default], () => O.default.getUser(t.ownerId)), z = i.useCallback(e => {
     (0, b.ok)(t, !e.shiftKey, N.on.CHANNEL_LIST)
   }, [t]), K = i.useCallback(() => {
-    p.Z.preload(t.guild_id, t.id)
+    f.Z.preload(t.guild_id, t.id)
   }, [t.guild_id, t.id]), Y = i.useCallback(e => {
     let i = _.Z.getChannel(t.id);
-    null != i && (0, h.jW)(e, async () => {
+    null != i && (0, p.jW)(e, async () => {
       let {
         default: e
       } = await n.e("40157").then(n.bind(n, 422200));
@@ -246,7 +246,7 @@ let k = Chunk473749.memo(function(e) {
         }), (0, r.jsx)(d.P3F, D(R({}, J), {
           innerRef: $,
           className: T.link,
-          onClick: W,
+          onClick: z,
           "aria-label": ee,
           focusProps: {
             enabled: false
@@ -257,8 +257,8 @@ let k = Chunk473749.memo(function(e) {
               className: T.threadIconWithAvatar,
               children: [(0, r.jsx)(M, {
                 thread: t
-              }), null == z ? null : (0, r.jsx)(f.Z, {
-                user: z,
+              }), null == W ? null : (0, r.jsx)(h.Z, {
+                user: W,
                 size: d.EFr.SIZE_16
               })]
             }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(M, {
@@ -273,7 +273,7 @@ let k = Chunk473749.memo(function(e) {
                 userCount: q,
                 video: G,
                 channel: t
-              }) : null, (0, x.Z)(B) ? (0, r.jsx)(S.Z, {
+              }) : null, (0, C.Z)(B) ? (0, r.jsx)(S.Z, {
                 mentionsCount: B,
                 isMentionLowImportance: F
               }) : null]

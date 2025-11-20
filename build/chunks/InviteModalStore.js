@@ -42,8 +42,8 @@ function O(e) {
 }
 let v = Chunk981631.IlC.APP,
   j = false,
-  C = false,
-  x = [];
+  x = false,
+  C = [];
 
 function E() {
   j = true
@@ -54,13 +54,13 @@ class S extends(i = Chunk442837.ZP.Store) {
   }
   isOpen() {
     let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return !!(j && x.length > 0 && v === module)
+    return !!(j && C.length > 0 && v === module)
   }
   getProps() {
     return {
-      invite: x.length > 0 ? x[0][0] : null,
+      invite: C.length > 0 ? C[0][0] : null,
       error: null != r && "" !== r ? r : null,
-      submitting: C
+      submitting: x
     }
   }
 }
@@ -92,7 +92,7 @@ let I = new S(Chunk570140.Z, {
             } = e;
             if (null != t) {
               let e = u.Z.getChannel(t.id);
-              if (h.Z.can(b.Plq.VIEW_CHANNEL, e)) return t.id
+              if (p.Z.can(b.Plq.VIEW_CHANNEL, e)) return t.id
             }
             return null
           }(t);
@@ -100,11 +100,11 @@ let I = new S(Chunk570140.Z, {
         }
       }
     }
-    if (x.some(e => {
+    if (C.some(e => {
         let [n] = e;
         return n.code === t.code
       })) returnfalse;
-    v = e.context, C = false;
+    v = e.context, x = false;
     let n = function(e) {
       let {
         approximate_member_count: t,
@@ -118,7 +118,7 @@ let I = new S(Chunk570140.Z, {
         channel: c,
         guild: u,
         is_nickname_changeable: d
-      } = e, p = {
+      } = e, f = {
         code: r,
         state: i,
         approximate_member_count: t,
@@ -129,23 +129,23 @@ let I = new S(Chunk570140.Z, {
         type: s,
         is_nickname_changeable: d
       };
-      return null != c && (p.channel = O({}, c)), null != u && (p.guild = (0, g.Qs)(u)), null != e.inviter && (p.inviter = O({}, e.inviter)), p
+      return null != c && (f.channel = O({}, c)), null != u && (f.guild = (0, g.Qs)(u)), null != e.inviter && (f.inviter = O({}, e.inviter)), f
     }(t);
-    x.push([n, e.resolve])
+    C.push([n, e.resolve])
   },
   INVITE_MODAL_CLOSE: function() {
-    if (r = null, C = false, x.length > 0) {
-      let [, e] = x.shift();
+    if (r = null, x = false, C.length > 0) {
+      let [, e] = C.shift();
       null != module && module()
     }
   },
   INVITE_ACCEPT: function() {
-    C = true
+    x = true
   },
   INVITE_MODAL_ERROR: function(e) {
     let {
       message: t
     } = e;
-    r = t, C = false
+    r = t, x = false
   }
 })

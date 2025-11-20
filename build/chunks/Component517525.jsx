@@ -117,7 +117,7 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         location: k
       } = (0, m.O)(),
       L = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
-      F = c && !h.ZP.isPremium(L, C.PremiumTypes.TIER_1) && !h.ZP.canStreamQuality(h.ZP.StreamQuality.MID, L),
+      F = c && !E.ZP.isPremium(L, C.PremiumTypes.TIER_1) && !E.ZP.canStreamQuality(E.ZP.StreamQuality.MID, L),
       V = i.useCallback(() => {
         F && M && (0, p.ZDy)(async () => {
           let {
@@ -129,7 +129,7 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         })
       }, [F, M, k]);
     if (i.useEffect(() => {
-        !x && M && (E.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+        !x && M && (h.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
           type: C.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,
@@ -181,7 +181,7 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         dispatchWait: true
       })
     }, [t]);
-    let E = (0, p.Yzy)(v, {
+    let h = (0, p.Yzy)(v, {
         enter: {
           from: _.enabled ? T : Z,
           to: _.enabled ? A : R
@@ -189,7 +189,7 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         leave: _.enabled ? T : Z,
         config: M
       }, "animate-always"),
-      h = (0, p.q_F)({
+      E = (0, p.q_F)({
         to: v ? D : N,
         config: M
       }, "animate-always");
@@ -201,7 +201,7 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       return (0, r.jsxs)("div", j(P({
         className: a()(I.streamQualityIndicator, n)
       }, i), {
-        children: [E((e, n) => n ? (0, r.jsx)(o.animated.div, {
+        children: [h((e, n) => n ? (0, r.jsx)(o.animated.div, {
           style: e,
           children: (0, r.jsx)(k, {
             className: I.liveQualityIndicator,
@@ -215,7 +215,7 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
             quality: m
           })
         }) : null), (0, r.jsx)(o.animated.div, {
-          style: h,
+          style: E,
           className: I.liveIndicator,
           children: (0, r.jsx)(g.ZP, {
             look: g.jZ.RED,

@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk607070 = require("./607070.js"),
   Chunk806966 = require("./806966.js"),
   Chunk254494 = require("./254494.jsx"),
-  Chunk593618 = require("./593618.jsx"),
+  Chunk648307 = require("./648307.jsx"),
   Chunk451478 = require("./451478.js"),
   Chunk626135 = require("./626135.js"),
   Chunk624138 = require("./624138.js"),
@@ -123,9 +123,8 @@ function K(e) {
     }) : null]
   })), T = s[n + 1], N = null != T && l.type === S.En.GUILD && T.type !== S.En.GUILD;
   return null != E ? (0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsx)(g.Z, {
+    children: [(0, r.jsx)(g.V, {
       guild: E,
-      includeActivity: false,
       children: (0, r.jsx)("div", {
         children: y
       })

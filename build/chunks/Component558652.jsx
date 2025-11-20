@@ -19,108 +19,111 @@ var Chunk54381 = require("./54381.js"),
   Chunk872058 = require("./872058.js");
 let _ = [],
   b = Chunk113434.tR.SORT,
-  E = Chunk113434.tR.FILTER;
-
-function O() {
-  let [e, t] = (0, Chunk395995.P)(), n = Chunk473749.useMemo(() => {
-    var t, n;
-    return null !== (n = module.get(b), t = (0, Chunk624138.Ew)(require) ? null : Object.values(Chunk46140.yq).find(e => e === n) || null) && true !== exports ? exports : Chunk46140.yq.SUGGESTED
-  }, [module]), O = Chunk473749.useMemo(() => {
-    var t;
-    return null != (t = function(e) {
-      if ((0, o.Ew)(e)) return null;
-      let t = e.split(",").map(e => (0, h.fI)(e)).filter(s.lm);
-      return t.length > 0 ? t : null
-    }(module.get(E))) ? exports : _
-  }, [module]), y = Chunk473749.useCallback(e => {
-    t({
-      [b]: e
-    })
-  }, [exports]), v = Chunk473749.useCallback(e => {
-    t({
-      [E]: 0 === e.length ? null : e.map(e => {
-        let {
-          filter: t
-        } = e;
-        return t
-      }).join(",")
-    })
-  }, [exports]), {
-    quests: I,
-    excludedQuests: C,
-    isFetchingCurrentQuests: S,
-    hasFetched: T
-  } = (0, Chunk113434.bA)(Chunk113434.e5.ALL, Chunk473749.useMemo(() => ({
-    sortMethod: require,
-    filters: O
-  }), [require, O])), N = Chunk473749.useCallback(() => {
-    v(_)
-  }, [v]), j = Chunk473749.useRef(null), P = Chunk473749.useRef(null), x = (0, Chunk828700.TH)(), A = (0, Chunk828700.k6)();
-  return Chunk473749.useEffect(() => {
-    if ("" !== x.hash && null != j.current && null != P.current) {
+  E = Chunk113434.tR.FILTER,
+  O = Chunk473749.forwardRef(function(e, t) {
+    let [n, O] = (0, f.P)(), y = i.useMemo(() => {
       var e, t;
-      (require !== j.current || O !== P.current) && A.replace((e = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({}, x), t = t = {
-        hash: true
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(exports)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-      }), module))
-    }
-  }, [require, O, x, A]), Chunk473749.useEffect(() => {
-    j.current = require
-  }, [require]), Chunk473749.useEffect(() => {
-    P.current = O
-  }, [O]), (0, Chunk113434.SU)({
-    selectedSortMethod: require,
-    selectedFilters: O,
-    numQuestsVisible: I.length
-  }), (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk872058.headingWrapper,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-        variant: "heading-lg/medium",
-        children: Chunk388032.intl.string(Chunk388032.t.giYD00)
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk872058.headingControls,
-        children: [(0, Chunk54381.jsx)(Chunk78606.Z, {
-          onChange: y,
-          optionClassName: Chunk872058.filterSortOption,
-          selectedSortMethod: require
-        }), (0, Chunk54381.jsx)(Chunk264282.Z, {
-          onChange: v,
-          selectedFilters: O
+      return null !== (t = n.get(b), e = (0, o.Ew)(t) ? null : Object.values(h.yq).find(e => e === t) || null) && true !== e ? e : h.yq.SUGGESTED
+    }, [n]), v = i.useMemo(() => {
+      var e;
+      return null != (e = function(e) {
+        if ((0, o.Ew)(e)) return null;
+        let t = e.split(",").map(e => (0, h.fI)(e)).filter(s.lm);
+        return t.length > 0 ? t : null
+      }(n.get(E))) ? e : _
+    }, [n]), I = i.useCallback(e => {
+      O({
+        [b]: e
+      })
+    }, [O]), C = i.useCallback(e => {
+      O({
+        [E]: 0 === e.length ? null : e.map(e => {
+          let {
+            filter: t
+          } = e;
+          return t
+        }).join(",")
+      })
+    }, [O]), {
+      quests: S,
+      excludedQuests: T,
+      isFetchingCurrentQuests: N,
+      hasFetched: j
+    } = (0, c.bA)(c.e5.ALL, i.useMemo(() => ({
+      sortMethod: y,
+      filters: v
+    }), [y, v])), P = i.useCallback(() => {
+      C(_)
+    }, [C]), x = i.useRef(null), A = i.useRef(null), Z = (0, l.TH)(), w = (0, l.k6)();
+    return i.useEffect(() => {
+      if ("" !== Z.hash && null != x.current && null != A.current) {
+        var e, t;
+        (y !== x.current || v !== A.current) && w.replace((e = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, Z), t = t = {
+          hash: true
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(t)).forEach(function(n) {
+          Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+        }), e))
+      }
+    }, [y, v, Z, w]), i.useEffect(() => {
+      x.current = y
+    }, [y]), i.useEffect(() => {
+      A.current = v
+    }, [v]), (0, c.SU)({
+      selectedSortMethod: y,
+      selectedFilters: v,
+      numQuestsVisible: S.length
+    }), i.useImperativeHandle(t, () => ({
+      resetSortingFiltering: () => {
+        P(), I(h.yq.SUGGESTED)
+      }
+    }), [P, I]), (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsxs)("div", {
+        className: m.headingWrapper,
+        children: [(0, r.jsx)(a.Heading, {
+          variant: "heading-lg/medium",
+          children: g.intl.string(g.t.giYD00)
+        }), (0, r.jsxs)("div", {
+          className: m.headingControls,
+          children: [(0, r.jsx)(d.Z, {
+            onChange: I,
+            optionClassName: m.filterSortOption,
+            selectedSortMethod: y
+          }), (0, r.jsx)(u.Z, {
+            onChange: C,
+            selectedFilters: v
+          })]
         })]
+      }), (0, r.jsx)(p.Z, {
+        quests: S,
+        excludedQuests: T,
+        isFetching: N,
+        hasFetched: j,
+        hasFiltersApplied: v.length > 0,
+        onClearFilters: P
       })]
-    }), (0, Chunk54381.jsx)(Chunk710914.Z, {
-      quests: I,
-      excludedQuests: C,
-      isFetching: S,
-      hasFetched: T,
-      hasFiltersApplied: O.length > 0,
-      onClearFilters: N
-    })]
+    })
   })
-}

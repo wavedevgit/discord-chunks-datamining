@@ -39,13 +39,13 @@ function Z(e) {
       trailing: _,
       showUnread: N
     } = function(e, t, n) {
-      let l = (0, x.Z)(e).available,
+      let l = (0, C.Z)(e).available,
         {
           shouldShow: d
         } = (0, S._)(e, "useGuildPowerupsChannelListIndicators"),
-        p = (0, u.OA)(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, e),
-        h = d && !p,
-        f = (0, o.e7)([b.Z], () => b.Z.getStateForGuild(e));
+        f = (0, u.OA)(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, e),
+        p = d && !f,
+        h = (0, o.e7)([b.Z], () => b.Z.getStateForGuild(e));
       return i.useMemo(() => {
         var e, i, o, a;
         if (null == t) return {
@@ -54,8 +54,8 @@ function Z(e) {
         };
         let {
           unlockedPowerups: u
-        } = t, d = (0, E.h)([...Object.values(u), ...Object.values(null != (i = null == f ? true : f.entitlements) ? i : {})]), p = null != (o = null == n ? true : n.lastSeenWarningNotification) ? o : Date.now(), g = new Date(null == (e = d[d.length - 1]) ? true : e.ends_at).getTime(), m = null != (a = null == n ? true : n.lastBoostCount) ? a : 0;
-        return d.length > 0 && p < g || h ? {
+        } = t, d = (0, E.h)([...Object.values(u), ...Object.values(null != (i = null == h ? true : h.entitlements) ? i : {})]), f = null != (o = null == n ? true : n.lastSeenWarningNotification) ? o : Date.now(), g = new Date(null == (e = d[d.length - 1]) ? true : e.ends_at).getTime(), m = null != (a = null == n ? true : n.lastBoostCount) ? a : 0;
+        return d.length > 0 && f < g || p ? {
           trailing: (0, r.jsx)(s.Mgn, {
             color: s.TVs.colors.STATUS_WARNING,
             size: "sm"
@@ -71,20 +71,20 @@ function Z(e) {
           trailing: true,
           showUnread: false
         }
-      }, [l, null == n ? true : n.lastBoostCount, null == n ? true : n.lastSeenWarningNotification, t, h, null == f ? true : f.entitlements])
+      }, [l, null == n ? true : n.lastBoostCount, null == n ? true : n.lastSeenWarningNotification, t, p, null == h ? true : h.entitlements])
     }(e, n, t),
     Z = function(e, t) {
       let [n, r] = (0, d.US)(null != t ? [a.z.GUILD_POWERUP_PERKS_COACHMARK] : []), s = n === a.z.GUILD_POWERUP_PERKS_COACHMARK, {
         available: c
-      } = (0, x.Z)(e), u = (0, o.e7)([h.Z], () => {
+      } = (0, C.Z)(e), u = (0, o.e7)([p.Z], () => {
         var t, n;
-        return null != (n = null == (t = h.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)) && n
+        return null != (n = null == (t = p.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)) && n
       }), _ = (0, o.e7)([b.Z], () => b.Z.getLowestGameCostForGuild(e)), y = function(e, t) {
         let n = (0, j.qI)(e, "GuildPowerupsChannelRow"),
           r = (0, m.BU)(e, "GuildPowerupsChannelRow"),
-          a = (0, o.e7)([h.Z], () => {
+          a = (0, o.e7)([p.Z], () => {
             var t;
-            return null == (t = h.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)
+            return null == (t = p.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)
           });
         return i.useMemo(() => {
           if (r && !a) return I.Du.GAME_SERVER_HOSTING;
@@ -113,52 +113,52 @@ function Z(e) {
           });
           if (null == n) return;
           let r = I.Q1[n];
-          if (null == r || (0, p.OY)(r, e)) return;
+          if (null == r || (0, f.OY)(r, e)) return;
           let i = I.Cp[n],
             l = null != i ? t.allPowerups[i] : true;
           if (null != l) return {
             type: v.J.LEVEL_REACHED,
             powerup: l,
             markAsDismissed: t => {
-              (0, p.Qd)(r, e, true, t)
+              (0, f.Qd)(r, e, true, t)
             }
           }
         }(e, t);
         if (null != n) return n;
         let r = function(e, t, n) {
           var r, i;
-          let l = null != (i = null == (r = h.Z.getGuild(e)) ? true : r.premiumTier) ? i : P.Eu4.NONE,
+          let l = null != (i = null == (r = p.Z.getGuild(e)) ? true : r.premiumTier) ? i : P.Eu4.NONE,
             o = Array.from(I.Tg.values()).flatMap(r => r.length <= 0 || r.some(e => {
               if (null != t.unlockedPowerups[e]) returntrue;
               let n = I.Rx[e];
               return null != n && !!(l >= n)
             }) ? [] : r.map(r => {
               let i = t.allPowerups[r];
-              return null == i || n < i.cost || (0, C.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
-            })).filter(f.lm);
+              return null == i || n < i.cost || (0, x.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
+            })).filter(h.lm);
           if (0 !== o.length) {
-            if (1 === o.length && !(0, p.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
+            if (1 === o.length && !(0, f.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
               type: v.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
-                (0, p.Qd)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e, true, t)
+                (0, f.Qd)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e, true, t)
               }
             };
-            if (o.length > 1 && !(0, p.OY)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e)) return {
+            if (o.length > 1 && !(0, f.OY)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e)) return {
               type: v.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
-                (0, p.Qd)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e, true, t)
+                (0, f.Qd)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e, true, t)
               }
             }
           }
         }(e, t, c);
         if (null != r) return r;
         let i = function(e, t, n, r) {
-          if ((0, m.v$)(e, "maybeGetGameServerHostingGuildEligiblePopoutDCF") && !t && null != r && n >= r && !(0, p.OY)(a.C.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e)) return {
+          if ((0, m.v$)(e, "maybeGetGameServerHostingGuildEligiblePopoutDCF") && !t && null != r && n >= r && !(0, f.OY)(a.C.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e)) return {
             type: v.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE,
             markAsDismissed: t => {
-              (0, p.Qd)(a.C.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e, true, t)
+              (0, f.Qd)(a.C.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e, true, t)
             }
           }
         }(e, u, c, _);
@@ -243,7 +243,7 @@ function w(e) {
       let r = I.Cp[n];
       if (null == r || null == t.unlockedPowerups[r]) return;
       let i = I.Q1[n];
-      null != i && (0, p.Qd)(i, e, false, N.L.AUTO_DISMISS)
+      null != i && (0, f.Qd)(i, e, false, N.L.AUTO_DISMISS)
     })
   }, [e, t])
 }

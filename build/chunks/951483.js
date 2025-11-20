@@ -1,8 +1,8 @@
 /** Chunk was on 65354 **/
 /** chunk id: 951483, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Sr: () => C,
-  Xq: () => x,
+  Sr: () => x,
+  Xq: () => C,
   Zg: () => E
 }), require("./415506.js");
 var Chunk186070 = require("./186070.js"),
@@ -28,12 +28,12 @@ var Chunk186070 = require("./186070.js"),
 function j() {
   for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
   return exports.map(e => {
-    let t = C[e];
+    let t = x[e];
     if (null == t) throw Error("getBindsFor(...): No bind for ".concat(t));
     return t.binds[0]
   })
 }
-let C = {
+let x = {
     [Chunk981631.EkH.SERVER_NEXT]: Chunk510761.nq,
     [Chunk981631.EkH.SERVER_PREV]: Chunk510761.X3,
     [Chunk981631.EkH.CHANNEL_NEXT]: Chunk185514.tQ,
@@ -63,7 +63,7 @@ let C = {
     [Chunk981631.EkH.CALL_START]: Chunk186070.FI,
     [Chunk981631.EkH.QUICKSWITCHER_SHOW]: Chunk167042.$
   },
-  x = {
+  C = {
     [Chunk981631.EkH.QUICKSWITCHER_SHOW]: Chunk167042.$
   };
 

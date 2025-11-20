@@ -90,9 +90,9 @@ function Y(e) {
     streamId: ee
   } = t, et = (0, o.e7)([x.Z], () => x.Z.getChannel(J.channelId)), en = (0, o.e7)([P.Z], () => P.Z.getActiveStreamForUser($.id, J.guildId), [$.id, J.guildId]), {
     defaultWatchMultipleStreams: er
-  } = (0, E.P)({
+  } = (0, h.P)({
     location: "StreamTile"
-  }), ei = (0, o.e7)([P.Z], () => P.Z.getAllActiveStreams().length > 0), el = (0, o.e7)([R.Z], () => R.Z.isFocused()), ea = (null == en ? true : en.ownerId) === Q, eo = ea && !el && g === m.P.NO_POPOUT, ec = null != en ? (0, h.Z)(en, $, $.id === Q, eo) : null, es = S < 195;
+  }), ei = (0, o.e7)([P.Z], () => P.Z.getAllActiveStreams().length > 0), el = (0, o.e7)([R.Z], () => R.Z.isFocused()), ea = (null == en ? true : en.ownerId) === Q, eo = ea && !el && g === m.P.NO_POPOUT, ec = null != en ? (0, E.Z)(en, $, $.id === Q, eo) : null, es = S < 195;
   (0, f.ZP)(() => {
     !ei && (null == et ? true : et.isGuildStageVoice()) && !ea && ((0, d.rn)(J), u.Z.updateStageStreamSize(J.channelId, false))
   });

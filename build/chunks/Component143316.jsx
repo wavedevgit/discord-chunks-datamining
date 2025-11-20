@@ -22,7 +22,7 @@ function d(e) {
     })
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [n ? (0, r.jsx)(p, {
+    children: [n ? (0, r.jsx)(f, {
       confirm: d,
       cancel: () => o(false)
     }) : null, (0, r.jsx)(l.u, {
@@ -40,7 +40,7 @@ function d(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     cancel: t,
     confirm: n

@@ -5,11 +5,11 @@ require.d(exports, {
   U1: () => O,
   XW: () => d,
   _J: () => m,
-  aP: () => f,
+  aP: () => h,
   e7: () => g,
   h6: () => _,
-  oE: () => h,
-  pB: () => p,
+  oE: () => p,
+  pB: () => f,
   y: () => y,
   yr: () => v
 }), require("./781311.js");
@@ -103,13 +103,13 @@ let d = (0, Chunk663042.U)(e => ({
       touched: false
     }))
   })),
-  p = (e, t, n) => {
+  f = (e, t, n) => {
     d.getState().initialize(e, t, n)
   },
-  h = () => {
+  p = () => {
     d.getState().reset()
   },
-  f = () => {
+  h = () => {
     let e = d.getState();
     return module.nickname !== c.nickname || module.dmsAllowed !== c.dmsAllowed || module.showActivity !== u(module.guildSize)
   },

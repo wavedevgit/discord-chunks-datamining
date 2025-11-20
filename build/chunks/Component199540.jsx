@@ -22,7 +22,7 @@ function g(e) {
     animate: n
   } = e, i = (0, a.e7)([d.Z], () => d.Z.getGuild(t), [t]), l = (0, s.dQu)(s.TVs.modules.guildbar.AVATAR_SIZE);
   return null == i ? (0, r.jsx)("div", {
-    className: o()(f.folderPreviewGuildIcon, f.folderPreviewGuildIconError),
+    className: o()(h.folderPreviewGuildIcon, h.folderPreviewGuildIconError),
     children: (0, r.jsx)(s.Mgn, {
       color: "currentColor"
     })
@@ -32,7 +32,7 @@ function g(e) {
     size: u.Z.Sizes.MINI,
     iconSize: l,
     lossless: true,
-    className: f.folderPreviewGuildIcon,
+    className: h.folderPreviewGuildIcon,
     tabIndex: false
   })
 }
@@ -45,18 +45,18 @@ function m(e) {
   } = e, {
     children: l
   } = t, a = n && i, c = (0, r.jsx)("div", {
-    className: f.folderIconWrapper,
+    className: h.folderIconWrapper,
     children: (0, r.jsx)("div", {
-      className: f.folderIcon,
+      className: h.folderIcon,
       children: (0, r.jsx)(s.ROc, {
         size: "sm",
         color: "currentColor"
       })
     })
   }), u = (0, r.jsx)("div", {
-    className: f.folderPreviewWrapper,
+    className: h.folderPreviewWrapper,
     children: (0, r.jsx)("div", {
-      className: f.folderPreview,
+      className: h.folderPreview,
       children: l.slice(0, 4).map(e => (0, r.jsx)(g, {
         guildId: e.id,
         animate: n
@@ -66,8 +66,8 @@ function m(e) {
   return (0, r.jsxs)("div", {
     "aria-hidden": true,
     className: o()({
-      [f.folderDragPreview]: a,
-      [f.folderButtonContent]: !a
+      [h.folderDragPreview]: a,
+      [h.folderButtonContent]: !a
     }),
     children: [!a && c, u]
   })
@@ -88,9 +88,9 @@ function b(e) {
     onClick: O,
     onContextMenu: v,
     onHoverChange: j,
-    onKeyDown: C,
+    onKeyDown: x,
     treeItemProps: {
-      onFocus: x
+      onFocus: C
     },
     "aria-setsize": E,
     "aria-posinset": S
@@ -112,7 +112,7 @@ function b(e) {
     a || N(true), null == j || j(true)
   }, [a, j]), w = i.useCallback(() => {
     a || N(false), null == j || j(false)
-  }, [a, j]), T = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
+  }, [a, j]), T = o || null == u ? null : (0, f.Or)(u), A = !o && d > 0 ? (0, f.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
   return (0, r.jsx)(s.tEY, {
     children: (0, r.jsxs)(s.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -132,13 +132,13 @@ function b(e) {
       }
       return e
     }({
-      className: f.folderButton,
+      className: h.folderButton,
       onClick: O,
       onContextMenu: v,
       onMouseEnter: Z,
       onMouseLeave: w,
-      onKeyDown: C,
-      onFocus: x,
+      onKeyDown: x,
+      onFocus: C,
       focusProps: {
         enabled: false
       }
@@ -149,7 +149,7 @@ function b(e) {
       "aria-expanded": o,
       "aria-owns": _,
       children: [(0, r.jsx)(s.nn4, {
-        children: h.intl.formatToPlainString(h.t["90/DwM"], {
+        children: p.intl.formatToPlainString(p.t["90/DwM"], {
           folderName: b,
           mentions: d
         })
@@ -162,9 +162,9 @@ function b(e) {
           width: (0, s.OVM)(d)
         },
         children: (0, r.jsx)("div", {
-          className: f.folderButtonInner,
+          className: h.folderButtonInner,
           children: null != y ? (0, r.jsx)("div", {
-            className: f.folderIconWrapper,
+            className: h.folderIconWrapper,
             children: y
           }) : (0, r.jsx)(m, {
             folderNode: l,

@@ -22,9 +22,9 @@ function g(e) {
     errorMessage: t,
     className: n,
     avError: l
-  } = e, g = "", {
-    text: b,
-    node: v
+  } = e, g = i.useRef(null), b = "", {
+    text: v,
+    node: h
   } = function(e) {
     var t;
     if (null == e) return {
@@ -47,81 +47,85 @@ function g(e) {
       }) : l
     }
   }(l);
-  null != t && null != b ? g = "".concat(t, " ").concat(b) : null != t && (g = t);
-  let [E] = i.useState(new o.V7), [h, y] = i.useState(false);
-
-  function S() {
+  b = null != v ? "".concat(t, " ").concat(v) : t;
+  let [E] = i.useState(new o.V7), [y, S] = i.useState(false), [O, C] = i.useState(false), w = i.useCallback(() => {
     E.start(250, () => {
-      y(false)
-    })
-  }
-
-  function O() {
-    E.stop(), y(true)
-  }
-  return (0, r.jsx)(c.aML, {
-    forceOpen: h,
-    disableTooltipPointerEvents: false,
-    text: (0, r.jsx)(f.Z, {
+      S(false)
+    }, false)
+  }, [E, S]), I = i.useCallback(() => {
+    E.stop(), S(true)
+  }, [E, S]), P = i.useCallback(() => {
+    C(true)
+  }, []), j = i.useCallback(() => {
+    C(false)
+  }, []);
+  return (0, r.jsx)(c.yRy, {
+    renderPopout: () => (0, r.jsx)(f.Z, {
       children: (0, r.jsxs)("div", {
-        onMouseEnter: O,
-        onMouseLeave: S,
-        children: [t, null != v && (0, r.jsx)(c.Text, {
+        className: _.popout,
+        onMouseEnter: I,
+        onMouseLeave: w,
+        children: [t, null != h && (0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-muted",
           className: _.errorCodeMessage,
-          children: v
+          children: h
         })]
       })
     }),
+    targetElementRef: g,
+    shouldShow: O || y,
     position: "bottom",
-    color: c.r6K.GREY,
-    "aria-label": g,
     children: e => {
       var t, i;
-      return (0, r.jsx)("div", (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({}, e), i = i = {
-        onMouseEnter: O,
-        onMouseLeave: S,
-        className: a()(n, _.root),
-        children: (0, r.jsx)(f.Z, {
-          children: (0, r.jsx)(c.Mgn, {
-            onMouseEnter: O,
-            onMouseLeave: S,
-            size: "custom",
-            width: 20,
-            height: 20,
-            color: "currentColor",
-            "aria-label": g,
-            className: _.warningIcon
-          })
+      return (0, r.jsx)(f.Z, {
+        children: (0, r.jsx)(c.tEY, {
+          children: (0, r.jsx)("div", (t = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({
+            ref: g,
+            tabIndex: 0,
+            onMouseEnter: I,
+            onMouseLeave: w,
+            onFocus: P,
+            onBlur: j,
+            className: a()(n, _.root),
+            "aria-label": b
+          }, e), i = i = {
+            children: (0, r.jsx)(c.Mgn, {
+              size: "custom",
+              width: 20,
+              height: 20,
+              color: "currentColor",
+              className: _.warningIcon
+            })
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(i)).forEach(function(e) {
+            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+          }), t))
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
-      }), t))
+      })
     }
   })
 }

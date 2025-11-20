@@ -4,8 +4,8 @@ require.d(exports, {
   Br: () => s,
   MH: () => c,
   Ol: () => u,
-  TG: () => h,
-  UF: () => p,
+  TG: () => p,
+  UF: () => f,
   sJ: () => d
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
@@ -18,7 +18,7 @@ async function s(e) {
     let t = e.parsed_launch_parameters.titleId,
       n = e.parsed_launch_parameters.inviteToken;
     if (!(0, o.isWindows)() || null == t || null == n) return;
-    let r = await f(t, false),
+    let r = await h(t, false),
       l = await m(n);
     i.Z.dispatch({
       type: "GAME_INVITE_UPDATE_STATUS",
@@ -48,19 +48,19 @@ function d() {
     type: "GAME_INVITE_CLEAR_UNSEEN"
   })
 }
-async function p(e) {
+async function f(e) {
   await r.tn.del({
     url: a.ANM.GAME_INVITE(e.invite_id),
     rejectWithError: false
   })
 }
-async function h() {
+async function p() {
   await Chunk544891.tn.del({
     url: Chunk981631.ANM.GAME_INVITES,
     rejectWithError: false
   })
 }
-async function f(e, t) {
+async function h(e, t) {
   if (!(0, o.isWindows)()) returnfalse;
   let n = await (0, l.Z)();
   return new Promise((r, i) => {

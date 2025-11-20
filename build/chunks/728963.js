@@ -14,5 +14,7 @@ module.exports = {
   orbsContainer: "orbsContainer__955a3",
   redirectNoticeBannerAsset: "redirectNoticeBannerAsset__955a3",
   redirectNoticeBannerContainer: "redirectNoticeBannerContainer__955a3",
-  redirectNoticeContainer: "redirectNoticeContainer__955a3"
+  redirectNoticeContainer: "redirectNoticeContainer__955a3",
+  content: "content__955a3",
+  contentWithExtraPadding: "contentWithExtraPadding__955a3"
 }

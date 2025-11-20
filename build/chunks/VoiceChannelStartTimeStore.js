@@ -10,13 +10,13 @@ var r, i, Chunk106351 = require("./106351.js"),
   Chunk70956 = require("./70956.js"),
   Chunk973285 = require("./973285.js");
 let d = new Set,
-  p = {};
+  f = {};
 
-function h(e) {
+function p(e) {
   return new Date(e * c.Z.Millis.SECOND).getTime()
 }
 
-function f() {
+function h() {
   d.clear()
 }
 
@@ -29,7 +29,7 @@ class m extends(r = Chunk442837.ZP.Store) {
   }
   getStartTime(e) {
     var t;
-    if (null != e && null != e.guild_id && e.type === l.d.GUILD_VOICE) return null == (t = p[e.guild_id]) ? true : t[e.id]
+    if (null != e && null != e.guild_id && e.type === l.d.GUILD_VOICE) return null == (t = f[e.guild_id]) ? true : t[e.id]
   }
   hasRequestedStartTimes(e) {
     return d.has(e)
@@ -43,8 +43,8 @@ class m extends(r = Chunk442837.ZP.Store) {
 let b = new m(Chunk570140.Z, {
   GUILD_CREATE: g,
   GUILD_DELETE: g,
-  CONNECTION_RESUMED: f,
-  CONNECTION_OPEN: f,
+  CONNECTION_RESUMED: h,
+  CONNECTION_OPEN: h,
   VOICE_CHANNEL_START_TIME_UPDATE: function(e) {
     let {
       guildId: t,
@@ -55,7 +55,7 @@ let b = new m(Chunk570140.Z, {
         guildId: t,
         location: "VoiceChannelStartTimeStore"
       }).enabled) returnfalse;
-    null == p[t] && (p[t] = {}), p[t][n] = null != r ? h(r) : true
+    null == f[t] && (f[t] = {}), f[t][n] = null != r ? p(r) : true
   },
   CHANNEL_INFO: function(e) {
     let {
@@ -66,7 +66,7 @@ let b = new m(Chunk570140.Z, {
         id: e,
         voiceStartTime: r
       }
-      of(p[t] = {}, n)) p[t][e] = null != r ? h(r) : true
+      of(f[t] = {}, n)) f[t][e] = null != r ? p(r) : true
   },
   FETCH_CHANNEL_INFO: function(e) {
     let {

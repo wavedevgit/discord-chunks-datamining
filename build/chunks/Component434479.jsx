@@ -1,7 +1,7 @@
 /** Chunk was on 65354 **/
 /** chunk id: 434479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => f
+  m: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk55940 = require("./55940.js"),
   Chunk509612 = require("./509612.js");
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,11 +46,11 @@ function h(e, t) {
   }), e
 }
 
-function f(e) {
+function h(e) {
   var t, {
       id: n,
       className: i,
-      innerClassName: f,
+      innerClassName: h,
       renderIcon: g,
       text: m,
       selected: b,
@@ -74,17 +74,17 @@ function f(e) {
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]);
-  let C = (0, o.JA)(n),
-    x = null != (t = (0, a.q)(m)) ? t : "";
+  let x = (0, o.JA)(n),
+    C = null != (t = (0, a.q)(m)) ? t : "";
   return (0, r.jsx)("li", {
     ref: v,
-    children: (0, r.jsxs)(s.kL8, h(p({}, j), {
-      buttonProps: h(p({}, C), {
+    children: (0, r.jsxs)(s.kL8, p(f({}, j), {
+      buttonProps: p(f({}, x), {
         id: n,
         role: "button"
       }),
       tag: "div",
-      "aria-label": x,
+      "aria-label": C,
       focusProps: {
         offset: {
           top: 1,
@@ -101,7 +101,7 @@ function f(e) {
       children: [y, O ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
-        className: l()([d.link, d.basicChannelRowLink, f]),
+        className: l()([d.link, d.basicChannelRowLink, h]),
         children: (0, r.jsxs)("div", {
           className: c.content,
           children: [(0, r.jsx)("div", {

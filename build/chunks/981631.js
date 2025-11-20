@@ -1329,7 +1329,8 @@ let em = "@me",
     CONFERENCE_MODE_VOICE_CHANNEL_USERS: e => "/conference-mode/channels/".concat(e, "/users"),
     GUILD_MIGRATE_PIN_PERMISSION: e => "/guilds/".concat(e, "/migrate-pin-permission"),
     GET_APPLICATION_TOKENS: e => "/oauth2/applications/".concat(e, "/tokens"),
-    GUILD_MIGRATE_SLOWMODE_PERMISSION: e => "/guilds/".concat(e, "/migrate-bypass-slowmode-permission")
+    GUILD_MIGRATE_SLOWMODE_PERMISSION: e => "/guilds/".concat(e, "/migrate-bypass-slowmode-permission"),
+    QUEST_PLACEMENT: "/quests/placement-alpha"
   }),
   eA = Object.freeze({
     INDEX: "/",

@@ -54,9 +54,9 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       "aria-posinset": V
     } = e, {
       id: H,
-      name: z,
-      children: W
-    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, f.Ml)("FolderItem");
+      name: W,
+      children: z
+    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, h.Ml)("FolderItem");
     i.useEffect(() => {
       R && Y(false)
     }, [R]);
@@ -69,7 +69,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         nodeId: t.id
       }),
       end() {
-        null == L || L(), (0, h.V1)(g.ZP.getCompatibleGuildFolders())
+        null == L || L(), (0, p.V1)(g.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -78,12 +78,12 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       X(e)
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
-    }, [M, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
-      let t = (0, p.dQu)(p.TVs.modules.guildbar.FOLDER_SIZE),
-        n = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE),
-        r = (0, p.dQu)(p.TVs.space.SPACE_XS);
-      return e * (n + r) - r + (r - (t - n) / 2) + (0, p.dQu)(p.TVs.space.SPACE_4)
-    }(W.length), ea = (0, p.Yzy)(!$ && s, {
+    }, [M, s]), er = null != W && "" !== W ? W : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
+      let t = (0, f.dQu)(f.TVs.modules.guildbar.FOLDER_SIZE),
+        n = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE),
+        r = (0, f.dQu)(f.TVs.space.SPACE_XS);
+      return e * (n + r) - r + (r - (t - n) / 2) + (0, f.dQu)(f.TVs.space.SPACE_4)
+    }(z.length), ea = (0, f.Yzy)(!$ && s, {
       from: {
         height: 0
       },
@@ -103,7 +103,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         selected: l,
         unread: w,
         className: I.pill
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(x.Z, {
         text: er,
         disabled: R,
         selected: l,
@@ -143,7 +143,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         targetNode: t,
         onDragOverChanged: et
       }) : null]
-    }), eu = null != t.color ? t.color : x.Wyy, ed = eu === x.Wyy ? true : (0, u.Rf)(eu);
+    }), eu = null != t.color ? t.color : C.Wyy, ed = eu === C.Wyy ? true : (0, u.Rf)(eu);
     return (0, r.jsxs)("div", {
       ref: es,
       className: o()(S.folderGroup, {
@@ -170,7 +170,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             height: e.height.to(e => e * eo)
           },
           "aria-label": t.name,
-          children: W.map((t, n) => G(t, n, W.length, e.height))
+          children: z.map((t, n) => G(t, n, z.length, e.height))
         }, l)
       }), A && s ? (0, r.jsx)(O.Zu, {
         name: er,

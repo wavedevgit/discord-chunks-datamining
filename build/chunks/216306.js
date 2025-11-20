@@ -1,16 +1,16 @@
-/** Chunk was on 18295 **/
+/** Chunk was on 20598 **/
 /** chunk id: 216306, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Fo: () => S,
   KY: () => L,
   Uo: () => _,
-  fU: () => P,
-  qw: () => Z,
-  tn: () => C
+  fU: () => C,
+  qw: () => P,
+  tn: () => Z
 }), require("./290780.js");
 var Chunk473749 = require("./473749.js"),
   Chunk658722 = require("./658722.js"),
-  l = require.n(Chunk658722),
+  i = require.n(Chunk658722),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -36,10 +36,10 @@ function N(e, t) {
   e.index = t
 }
 
-function S(e, t, n, i) {
-  i = i.toLowerCase();
+function S(e, t, n, l) {
+  l = l.toLowerCase();
   let a = (0, g.g)(e),
-    s = r.useCallback((e, t) => !(a && e.channel.hasFlag(y.zZ.IS_GUILD_RESOURCE_CHANNEL)) && e.channel.type !== j.d4z.GUILD_DIRECTORY && (0 === t.length || l()(t, e.channel.name.toLowerCase()) || e.channel.topic.toLowerCase().includes(t)), [a]);
+    s = r.useCallback((e, t) => !(a && e.channel.hasFlag(y.zZ.IS_GUILD_RESOURCE_CHANNEL)) && e.channel.type !== j.d4z.GUILD_DIRECTORY && (0 === t.length || i()(t, e.channel.name.toLowerCase()) || e.channel.topic.toLowerCase().includes(t)), [a]);
   return r.useMemo(() => {
     let e = {
       null: [],
@@ -49,9 +49,9 @@ function S(e, t, n, i) {
       let {
         channel: r
       } = n;
-      "null" === r.id && (e.null = t.null.filter(e => s(e, i))), e[r.id] = t[r.id].filter(e => s(e, i))
-    }), e._categories = t._categories.filter(t => "null" === t.channel.id || 0 === i.length || e[t.channel.id].length > 0), (0, d.Z)(e._categories, e).forEach(N), e
-  }, [t, n, s, i])
+      "null" === r.id && (e.null = t.null.filter(e => s(e, l))), e[r.id] = t[r.id].filter(e => s(e, l))
+    }), e._categories = t._categories.filter(t => "null" === t.channel.id || 0 === l.length || e[t.channel.id].length > 0), (0, d.Z)(e._categories, e).forEach(N), e
+  }, [t, n, s, l])
 }
 
 function L(e) {
@@ -81,18 +81,18 @@ function _(e, t) {
   }))), null != n && (0, v.uL)(j.Z5c.CHANNEL(e, n))
 }
 
-function C(e, t, n, r) {
-  let i = (0, h.Nj)(c.z.CHANNEL_BROWSER_NUX),
-    l = (0, o.cj)([m.Z], () => {
+function Z(e, t, n, r) {
+  let l = (0, h.Nj)(c.z.CHANNEL_BROWSER_NUX),
+    i = (0, o.cj)([m.Z], () => {
       let t = {},
         n = m.Z.getMutableGuildChannelsForGuild(e);
       for (let e in n) {
         let {
-          parent_id: i
+          parent_id: l
         } = n[e];
-        if (null != i) {
+        if (null != l) {
           var r;
-          t[i] = (null != (r = t[i]) ? r : 0) + 1
+          t[l] = (null != (r = t[l]) ? r : 0) + 1
         }
       }
       return t
@@ -100,27 +100,27 @@ function C(e, t, n, r) {
     a = t._categories.map(e => {
       let r = t[e.channel.id];
       return {
-        rowCount: "null" !== e.channel.id && 0 === l[e.channel.id] ? 1 : r.length,
+        rowCount: "null" !== e.channel.id && 0 === i[e.channel.id] ? 1 : r.length,
         rowHeight: 0 === r.length ? 0 : n
       }
     });
-  return i || null == r || a.unshift({
+  return l || null == r || a.unshift({
     rowCount: 1,
     rowHeight: r
   }), a
 }
 
-function P(e) {
+function C(e) {
   var t, n;
   let r = (0, o.e7)([D.Z], () => D.Z.getCategories(e)),
-    i = r._categories.length,
-    l = r._categories[r._categories.length - 1];
-  if (null == l) return 0;
-  let a = r[null != (n = null == (t = l.channel) ? true : t.id) ? n : "null"];
-  return null == a ? 0 : 0 === a.length ? l.index + 2 - i : a[a.length - 1].index + 2 - i
+    l = r._categories.length,
+    i = r._categories[r._categories.length - 1];
+  if (null == i) return 0;
+  let a = r[null != (n = null == (t = i.channel) ? true : t.id) ? n : "null"];
+  return null == a ? 0 : 0 === a.length ? i.index + 2 - l : a[a.length - 1].index + 2 - l
 }
 
-function Z(e) {
+function P(e) {
   var t;
   return E.intl.formatToPlainString(E.t["8N0BHR"], {
     timeAgo: s()(b.default.extractTimestamp(null != (t = O.ZP.lastMessageId(e)) ? t : e)).fromNow()

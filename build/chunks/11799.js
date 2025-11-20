@@ -1,7 +1,7 @@
 /** Chunk was on 65354 **/
 /** chunk id: 11799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y6: () => p
+  y6: () => f
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -12,27 +12,27 @@ var Chunk473749 = require("./473749.js"),
   Chunk140155 = require("./140155.js"),
   Chunk774807 = require("./774807.js"),
   Chunk490897 = require("./490897.js");
-let p = () => {
+let f = () => {
   let {
     initialized: e,
     loading: t,
     items: n,
-    hasMore: p,
-    loadMore: h
+    hasMore: f,
+    loadMore: p
   } = (e => {
     let {
       isFocused: t,
       navigatedAway: n,
-      isDesktop: p,
-      withMentions: h = false,
-      initialPageSize: f
+      isDesktop: f,
+      withMentions: p = false,
+      initialPageSize: h
     } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, _] = r.useState(false), {
       initialized: y,
       loading: O,
       items: v,
       hasMore: j,
-      cursor: C,
-      errored: x
+      cursor: x,
+      errored: C
     } = (0, i.cj)([c.Z], () => ({
       initialized: c.Z.initialized,
       loading: c.Z.loading,
@@ -52,27 +52,27 @@ let p = () => {
     }, [t, y]);
     let I = (0, o.Z)();
     r.useEffect(() => () => {
-      p ? !I() && (x || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
-    }, [n, v, p, I, x]), r.useEffect(() => {
+      f ? !I() && (C || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
+    }, [n, v, f, I, C]), r.useEffect(() => {
       let e = g && t;
       (!y || e) && (0, s.jk)({
-        limit: null != f ? f : h ? 8 : 20,
-        with_mentions: h,
+        limit: null != h ? h : p ? 8 : 20,
+        with_mentions: p,
         roles_filter: E,
         everyone_filter: S
       })
-    }, [y, g, t, h, E, S, f]);
+    }, [y, g, t, p, E, S, h]);
     let P = r.useCallback(async e => {
-      !m.current && y && j && null != C && (e || !x) && (m.current = true, _(true), await (0, s.jk)({
-        after: C,
-        with_mentions: h,
+      !m.current && y && j && null != x && (e || !C) && (m.current = true, _(true), await (0, s.jk)({
+        after: x,
+        with_mentions: p,
         roles_filter: E,
         everyone_filter: S,
-        limit: h ? 8 : 20
+        limit: p ? 8 : 20
       }, () => {
         m.current = false
       }), _(false))
-    }, [y, j, C, x, h, E, S]);
+    }, [y, j, x, C, p, E, S]);
     return {
       initialized: y,
       loading: O,
@@ -83,7 +83,7 @@ let p = () => {
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = true)
       },
-      errored: x
+      errored: C
     }
   })({
     isFocused: true,
@@ -93,7 +93,7 @@ let p = () => {
     initialized: module,
     loading: exports,
     items: require.filter(e => "notification-center-item" === e.kind),
-    hasMore: p,
-    loadMore: h
+    hasMore: f,
+    loadMore: p
   }
 }

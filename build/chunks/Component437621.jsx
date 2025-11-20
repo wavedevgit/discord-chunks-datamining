@@ -96,17 +96,17 @@ class M extends Chunk98597.ZP {
       hasMoreActiveThreads: c,
       mentionCount: u,
       connectChannelDropTarget: d,
-      connectChannelDragSource: p,
-      connectDragPreview: h,
-      canReorderChannel: f,
+      connectChannelDragSource: f,
+      connectDragPreview: p,
+      canReorderChannel: h,
       isSubscriptionGated: b,
       isFavoriteSuggestion: _,
       subtitle: y,
       forceTopLevelThread: O,
       embeddedApps: v,
       resolvedUnreadSetting: j,
-      withGuildIcon: C,
-      enableActivities: x
+      withGuildIcon: x,
+      enableActivities: C
     } = this.props, E = Chunk9156 && null != Chunk430824 && Chunk430824.length > 0, S = (0, Chunk873696.D)(Chunk665906), I = (0, Chunk54381.jsx)("li", {
       className: o()(this.getClassName(), {
         [Chunk55940.disabled]: this.isDisabled(),
@@ -268,11 +268,11 @@ function G(e) {
   } = e, {
     hasActiveThreads: c,
     hasMoreActiveThreads: u
-  } = (0, y.JQ)(t), d = (0, a.cj)([C.ZP], () => ({
-    unread: C.ZP.hasUnread(t.id),
-    ackMessageId: C.ZP.ackMessageId(t.id),
-    isLowImportanceMention: C.ZP.getIsMentionLowImportance(t.id)
-  })), g = (0, a.e7)([x.ZP], () => x.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([O.Z, j.Z], () => {
+  } = (0, y.JQ)(t), d = (0, a.cj)([x.ZP], () => ({
+    unread: x.ZP.hasUnread(t.id),
+    ackMessageId: x.ZP.ackMessageId(t.id),
+    isLowImportanceMention: x.ZP.getIsMentionLowImportance(t.id)
+  })), g = (0, a.e7)([C.ZP], () => C.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([O.Z, j.Z], () => {
     let e = O.Z.getChannel(t.parent_id);
     return {
       canManageChannel: j.Z.can(w.Plq.MANAGE_CHANNELS, t),
@@ -281,7 +281,7 @@ function G(e) {
   }), v = (0, a.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: E,
     isSubscriptionGated: S
-  } = (0, b.Z)(t.id), I = (0, a.e7)([x.ZP], () => x.ZP.isFavorite(n.id, t.id)), N = (0, f.$5)(t), Z = (0, p.NX)(t.id), A = (0, P.Z)({
+  } = (0, b.Z)(t.id), I = (0, a.e7)([C.ZP], () => C.ZP.isFavorite(n.id, t.id)), N = (0, h.$5)(t), Z = (0, f.NX)(t.id), A = (0, P.Z)({
     channel: t,
     isChannelCollapsed: false,
     isChannelSelected: s,
@@ -291,7 +291,7 @@ function G(e) {
     muted: o,
     enableActivities: Z,
     resolvedUnreadSetting: g
-  }), R = (0, h.ZP)(t);
+  }), R = (0, p.ZP)(t);
   return (0, r.jsx)(k, L(D({}, d, m, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,

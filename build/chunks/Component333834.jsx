@@ -105,12 +105,12 @@ function R(e) {
     unreadMessages: n,
     loadMore: l,
     renderLoadingState: a,
-    renderMessageGroup: h,
-    scrollerClassName: f,
+    renderMessageGroup: p,
+    scrollerClassName: h,
     className: I,
     listName: P,
     ignoreGrouping: R = false
-  } = e, D = (0, y.fJ)(), L = i.useRef(null), M = (0, p.Z)(P, L), {
+  } = e, D = (0, y.fJ)(), L = i.useRef(null), M = (0, f.Z)(P, L), {
     entrypoint: k,
     notificationCenterVariant: G
   } = (0, _.pN)({
@@ -125,8 +125,8 @@ function R(e) {
     hasLoadedEver: v.Z.hasLoadedEver
   })), V = !F && U, {
     messageCategoryOpenStates: H,
-    toggleOpenState: z
-  } = (0, O.Z)(), W = function() {
+    toggleOpenState: W
+  } = (0, O.Z)(), z = function() {
     let e = (0, u.Wu)([v.Z], () => {
       var e;
       return null != (e = v.Z.getNotifyingChannelIds()) ? e : []
@@ -200,24 +200,24 @@ function R(e) {
     X = 0 === t.length && 0 === n.length && !F && U,
     Q = i.useMemo(() => {
       let e = [];
-      return X ? e.push(a()) : q ? e.push((0, r.jsx)(A, {}, "empty-state")) : R ? (e.push(...n.map(e => h([e], true))), e.push(...t.map(e => h([e], false)))) : s().each(T, t => {
+      return X ? e.push(a()) : q ? e.push((0, r.jsx)(A, {}, "empty-state")) : R ? (e.push(...n.map(e => p([e], true))), e.push(...t.map(e => p([e], false)))) : s().each(T, t => {
         0 !== Y[t].length && (e.push((0, r.jsx)(w, {
           group: t,
           isOpen: H[t],
           toggleOpenedState: () => {
             let e = H[t];
-            z(t), (0, y.RZ)({
+            W(t), (0, y.RZ)({
               section: t,
               enabled: !e,
               viewId: D
             })
           }
-        }, t)), H[t] && e.push(...Y[t].map(e => h(e, t === E.KZ.UNREAD))))
+        }, t)), H[t] && e.push(...Y[t].map(e => p(e, t === E.KZ.UNREAD))))
       }), e
-    }, [t, n, a, H, z, Y, R, h, q, X, D]),
+    }, [t, n, a, H, W, Y, R, p, q, X, D]),
     J = Q[Q.length - 1],
     $ = i.isValidElement(J) && J.type === w,
-    ee = (0, C.d)(e => e.setInboxReadState);
+    ee = (0, x.d)(e => e.setInboxReadState);
   i.useEffect(() => {
     X || ee(0 === Y.UNREAD.length)
   }, [Y, X, ee]);
@@ -243,11 +243,11 @@ function R(e) {
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
   }, [H, Y]);
   i.useEffect(() => {
-    X || U || 0 >= en() || (!$ || W) && (null == l || l(E.X.FILL_SCROLLER))
-  }, [en, l, X, U, $, W]);
+    X || U || 0 >= en() || (!$ || z) && (null == l || l(E.X.FILL_SCROLLER))
+  }, [en, l, X, U, $, z]);
   let er = i.useMemo(() => {
     let e = Math.min(Math.max(2, en()), 20);
-    return (0, r.jsx)(x.Z, {
+    return (0, r.jsx)(C.Z, {
       withHeader: false,
       size: e
     })
@@ -308,7 +308,7 @@ function R(e) {
               var t;
               L.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(N.messagesPopout, f),
+            className: o()(N.messagesPopout, h),
             onScroll: K,
             fade: true
           }, l), n = n = {

@@ -41,7 +41,7 @@ function S(e) {
     channels: M
   } = R, {
     maybeLoadMore: k
-  } = D, G = (0, u.e7)([f.Z], () => f.Z.messageGroupSpacing);
+  } = D, G = (0, u.e7)([h.Z], () => h.Z.messageGroupSpacing);
   t = A, n = R, l = D, i.useLayoutEffect(() => {
     var e;
     let {
@@ -68,8 +68,8 @@ function S(e) {
       let e = a.channels.find(e => !e.collapsed);
       null != e && y.markChannelRead(e)
     };
-    return b.S.subscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-      b.S.unsubscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
+    return b.S.subscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+      b.S.unsubscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
   }, [y, a.channels]), S = D, i.useEffect(() => {
     let e = e => {
@@ -79,20 +79,20 @@ function S(e) {
       document.removeEventListener("keydown", e)
     }
   }, [S]), i.useEffect(() => {
-    m.default.track(C.rMx.OPEN_POPOUT, {
+    m.default.track(x.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
-  }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", T), () => {
-    p.Z.unsubscribe("CONNECTION_OPEN", T)
-  }), [T]), (0, h.ZP)(() => (b.S.subscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
-    b.S.unsubscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
+  }, []), i.useEffect(() => (f.Z.subscribe("CONNECTION_OPEN", T), () => {
+    f.Z.unsubscribe("CONNECTION_OPEN", T)
+  }), [T]), (0, p.ZP)(() => (b.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+    b.S.unsubscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let U = (0, g.Z)("unreads", A);
   if (0 === M.length) {
     return (0, r.jsx)(O.Z, {
       Icon: d.xx7,
-      header: x.intl.string(x.t["6XMM+D"]),
-      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? x.intl.string(x.t.w9uDOW) : x.intl.string(x.t.BiUJC6)
+      header: C.intl.string(C.t["6XMM+D"]),
+      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? C.intl.string(C.t.w9uDOW) : C.intl.string(C.t.BiUJC6)
     })
   }
   return (0, r.jsx)(c.bG, {
@@ -178,18 +178,18 @@ function I(e) {
       children: [(0, r.jsx)(d.Heading, {
         className: E.__invalid_tutorialHeader,
         variant: "heading-md/semibold",
-        children: x.intl.string(x.t.vZPktJ)
+        children: C.intl.string(C.t.vZPktJ)
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: x.intl.string(x.t.vWkIII)
+        children: C.intl.string(C.t.vWkIII)
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: E.tutorialButton,
         children: (0, r.jsx)(d.Button, {
           variant: "primary",
           size: "sm",
-          text: x.intl.string(x.t["+IrDzN"]),
+          text: C.intl.string(C.t["+IrDzN"]),
           onClick: t
         })
       })]

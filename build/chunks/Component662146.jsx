@@ -36,14 +36,14 @@ function u(e) {
     disableWrapper: l = false,
     disabled: u = false,
     hideOnClick: d = true,
-    shouldShow: p,
-    forceOpen: h,
-    selected: f = false
+    shouldShow: f,
+    forceOpen: p,
+    selected: h = false
   } = e;
   return (0, r.jsx)(a.aML, {
     "data-migration-pending": true,
-    shouldShow: p,
-    forceOpen: h,
+    shouldShow: f,
+    forceOpen: p,
     spacing: 12,
     hideOnClick: d,
     text: u ? null : n,
@@ -54,7 +54,7 @@ function u(e) {
       var n, a;
       return l ? i.cloneElement(i.Children.only(t), c({}, e)) : (0, r.jsx)("div", (n = c({
         className: o()(s.listItemWrapper, {
-          [s.selected]: f
+          [s.selected]: h
         })
       }, e), a = a = {
         children: t

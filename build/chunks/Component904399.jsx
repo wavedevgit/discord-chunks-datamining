@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => l
-}), require("./388685.js");
+});
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk907331 = require("./907331.js"),
@@ -14,7 +14,7 @@ var Chunk907331 = require("./907331.js"),
 function l(e) {
   let {
     users: t,
-    selectedUsers: n,
+    isUserSelected: n,
     onSelectionChange: l,
     isFetching: c,
     onFetchMore: u,
@@ -25,7 +25,7 @@ function l(e) {
   } = e, h = (0, i.O)(e => {
     e && !c && (null == u || u())
   });
-  return f.length > 0 && 0 === t.size && null != _ ? (0, r.jsxs)("div", {
+  return f.length > 0 && 0 === t.length && null != _ ? (0, r.jsxs)("div", {
     className: s.emptySearchResultsContainer,
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-md/semibold",
@@ -38,9 +38,9 @@ function l(e) {
     })]
   }) : (0, r.jsxs)(a.u2D, {
     className: p,
-    children: [Array.from(t.values()).map(e => (0, r.jsx)(o.Z, {
+    children: [t.map(e => (0, r.jsx)(o.Z, {
       user: e,
-      checked: n.has(e.id),
+      checked: n(e),
       disabled: !!(null == d ? true : d(e)),
       onChange: (e, t) => {
         l(e, t)

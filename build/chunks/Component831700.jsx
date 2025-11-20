@@ -174,17 +174,17 @@ class en extends Chunk98597.ZP {
       mentionCount: a,
       locked: s,
       sorting: d,
-      isUserOver: p,
-      connectChannelDropTarget: h,
-      connectChannelDragSource: f,
+      isUserOver: f,
+      connectChannelDropTarget: p,
+      connectChannelDragSource: h,
       connectUserDropTarget: g,
       connectDragPreview: m,
       canReorderChannel: b,
       canMoveMembers: _,
       showTutorial: v,
       hasActiveEvent: j,
-      embeddedApps: C,
-      isSubscriptionGated: x,
+      embeddedApps: x,
+      isSubscriptionGated: C,
       isFavoriteSuggestion: E,
       withGuildIcon: S,
       hasStartTime: I
@@ -296,7 +296,7 @@ class en extends Chunk98597.ZP {
       let {
         channel: t
       } = this.props, i = L.Z.getGuild(t.getGuildId());
-      null != i && (0, p.jW)(e, async () => {
+      null != i && (0, f.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("18320"), n.e("83331"), n.e("81070")]).then(n.bind(n, 213202));
@@ -346,7 +346,7 @@ class en extends Chunk98597.ZP {
       } = this.state;
       if (a && !n && !i && !s) {
         let n = R.SE.getSetting().includes(o.id);
-        return (0, r.jsx)(W.Z, {
+        return (0, r.jsx)(z.Z, {
           onAction: this.closePopout,
           guild: o,
           channel: e,
@@ -405,7 +405,7 @@ function ei(e) {
   } = e, u = (0, a.cj)([G.ZP], () => ({
     unread: G.ZP.hasUnread(n.id),
     mentionCount: G.ZP.getMentionCount(n.id)
-  })), d = (0, a.e7)([U.ZP], () => U.ZP.resolveUnreadSetting(n)), p = (0, a.cj)([D.Z, M.Z, k.Z], () => {
+  })), d = (0, a.e7)([U.ZP], () => U.ZP.resolveUnreadSetting(n)), f = (0, a.cj)([D.Z, M.Z, k.Z], () => {
     let e = D.Z.getChannel(n.parent_id),
       r = M.Z.getCheck(n.guild_id);
     return {
@@ -416,15 +416,15 @@ function ei(e) {
       bypassLimit: k.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), f = (0, g.ZP)(n), m = (0, v.ZP)(n), y = (0, P.qY)(n.id), {
+  }), p = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), h = (0, g.ZP)(n), m = (0, v.ZP)(n), y = (0, P.qY)(n.id), {
     enabled: O
   } = b.W.useExperiment({
     guildId: t.id,
     location: "VoiceChannel"
   }), j = (0, a.e7)([_.Z], () => !!O && null != _.Z.getStartTime(n), [n, O]), {
-    isSubscriptionGated: C,
+    isSubscriptionGated: x,
     needSubscriptionToAccess: E
-  } = (0, I.Z)(n.id), S = (0, x.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == S ? true : S.channelId) === n.id, {
+  } = (0, I.Z)(n.id), S = (0, C.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == S ? true : S.channelId) === n.id, {
     enableHangStatus: A,
     showEmptyChannelTopic: R
   } = (0, Z.bN)({
@@ -442,20 +442,20 @@ function ei(e) {
     isChannelSelected: o,
     isChannelCollapsed: s,
     voiceStates: c,
-    isSubscriptionGated: C,
+    isSubscriptionGated: x,
     needSubscriptionToAccess: E,
     enableConnectedUserLimit: true,
     enableActivities: true
   }), V = T && null == F;
   return (0, r.jsx)(er, et(ee({
     channelName: m,
-    embeddedApps: f,
+    embeddedApps: h,
     embeddedActivityType: q.IIU.PLAYING,
-    video: h,
+    video: p,
     hasActiveEvent: null != y,
-    isSubscriptionGated: C,
+    isSubscriptionGated: x,
     needSubscriptionToAccess: E
-  }, u, p, e), {
+  }, u, f, e), {
     connected: T,
     isFavoriteSuggestion: l && !N,
     forceShowButtons: V,

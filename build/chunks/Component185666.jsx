@@ -1,7 +1,7 @@
 /** Chunk was on 65354 **/
 /** chunk id: 185666, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,19 +13,19 @@ var Chunk481060 = require("./481060.js"),
   Chunk379164 = require("./379164.js"),
   Chunk590965 = require("./590965.js"),
   Chunk981631 = require("./981631.js");
-let p = "INVITE_MODAL_KEY";
-class h extends Chunk317770.Z {
+let f = "INVITE_MODAL_KEY";
+class p extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("INVITE_MODAL_OPEN", this.handleOpenModal), Chunk570140.Z.subscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
   }
   _terminate() {
-    (0, Chunk481060.Mr3)(p), Chunk570140.Z.unsubscribe("INVITE_MODAL_OPEN", this.handleOpenModal), Chunk570140.Z.unsubscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
+    (0, Chunk481060.Mr3)(f), Chunk570140.Z.unsubscribe("INVITE_MODAL_OPEN", this.handleOpenModal), Chunk570140.Z.unsubscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
   }
   handleOpenModal(e) {
     let {
       context: t
     } = e;
-    u.Z.isOpen() && !(0, i.nfh)(p) && (0, i.ZDy)(async () => {
+    u.Z.isOpen() && !(0, i.nfh)(f) && (0, i.ZDy)(async () => {
       let {
         default: e
       } = await n.e("86872").then(n.bind(n, 472365));
@@ -48,7 +48,7 @@ class h extends Chunk317770.Z {
         return e
       }({}, t))
     }, {
-      modalKey: p,
+      modalKey: f,
       contextKey: (0, i.VnL)(t),
       onCloseRequest: () => {
         let e = (0, a.e7)(),
@@ -61,7 +61,7 @@ class h extends Chunk317770.Z {
     })
   }
   handleCloseModal() {
-    (0, Chunk481060.Mr3)(p)
+    (0, Chunk481060.Mr3)(f)
   }
 }
-let f = new h
+let h = new p

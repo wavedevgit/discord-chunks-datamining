@@ -32,7 +32,7 @@ function d(e) {
   return e
 }
 
-function p(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,8 +44,8 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = 90 * Chunk70956.Z.Millis.DAY,
-  f = {
+let p = 90 * Chunk70956.Z.Millis.DAY,
+  h = {
     tab: null,
     localItemAcks: {},
     hasNewMentions: false,
@@ -56,39 +56,39 @@ class g extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (this.waitFor(o.ZP), null != e) {
       var t;
-      (f = e).localItemAcks = function(e) {
+      (h = e).localItemAcks = function(e) {
         let t = {};
-        for (let [n, r] of Object.entries(e)) Date.now() - r < h && (t[n] = r);
+        for (let [n, r] of Object.entries(e)) Date.now() - r < p && (t[n] = r);
         return t
-      }(null != (t = f.localItemAcks) ? t : {}), f.isDataStale = true
+      }(null != (t = h.localItemAcks) ? t : {}), h.isDataStale = true
     }
   }
   getState() {
-    return f
+    return h
   }
   getTab() {
     var e;
-    return null != (e = f.tab) ? module : Chunk497089.b1.ForYou
+    return null != (e = h.tab) ? module : Chunk497089.b1.ForYou
   }
   isLocalItemAcked(e) {
-    return null != e.local_id && (null != f.localItemAcks[e.local_id] || s.default.age(e.id) > h)
+    return null != e.local_id && (null != h.localItemAcks[e.local_id] || s.default.age(e.id) > p)
   }
   hasNewMentions() {
-    return f.hasNewMentions
+    return h.hasNewMentions
   }
   isDataStale() {
-    return f.isDataStale
+    return h.isDataStale
   }
   isRefreshing() {
-    return f.isRefreshing
+    return h.isRefreshing
   }
   shouldReload() {
-    return f.hasNewMentions || f.isDataStale || f.isRefreshing
+    return h.hasNewMentions || h.isDataStale || h.isRefreshing
   }
 }
 
 function m() {
-  f.hasNewMentions = false, f.isDataStale = false, f.isRefreshing = false
+  h.hasNewMentions = false, h.isDataStale = false, h.isRefreshing = false
 }
 u(g, "displayName", "NotificationCenterStore"), u(g, "persistKey", "NotificationCenterStore");
 let b = new g(Chunk570140.Z, {
@@ -98,7 +98,7 @@ let b = new g(Chunk570140.Z, {
     } = e
   },
   NOTIFICATION_CENTER_SET_TAB: function(e) {
-    f = p(d({}, f), {
+    h = f(d({}, h), {
       tab: e.tab
     })
   },
@@ -107,15 +107,15 @@ let b = new g(Chunk570140.Z, {
       localIds: t
     } = e;
     t.forEach(e => {
-      f = p(d({}, f), {
-        localItemAcks: p(d({}, f.localItemAcks), {
+      h = f(d({}, h), {
+        localItemAcks: f(d({}, h.localItemAcks), {
           [e]: Date.now()
         })
       })
     })
   },
   NOTIFICATION_CENTER_REFRESH: function() {
-    f.isRefreshing = true
+    h.isRefreshing = true
   },
   LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: m,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: m

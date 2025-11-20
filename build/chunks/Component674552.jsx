@@ -1,7 +1,7 @@
 /** Chunk was on 65354 **/
 /** chunk id: 674552, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ne: () => f,
+  Ne: () => h,
   Ny: () => g,
   Or: () => b,
   jt: () => _
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk816827 = require("./816827.js");
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function f(e, t, n) {
+function h(e, t, n) {
   return (0, r.jsx)(o.mAB, {
     count: e,
     color: t,
@@ -61,7 +61,7 @@ function m(e) {
   }, {
     autoTrackExposure: true
   }), n = t ? o.iWm : o.nG3;
-  return (0, r.jsx)(n, h({}, e))
+  return (0, r.jsx)(n, p({}, e))
 }
 
 function b(e) {
@@ -120,10 +120,10 @@ function y(e) {
   } : {
     color: (0, s.Lq)(n)
   };
-  return (0, r.jsx)(o.G2e, h({
+  return (0, r.jsx)(o.G2e, p({
     icon: t,
-    className: l()(p.iconBadge, {
-      [p.isCurrentUserConnected]: i
+    className: l()(f.iconBadge, {
+      [f.isCurrentUserConnected]: i
     })
   }, a))
 }

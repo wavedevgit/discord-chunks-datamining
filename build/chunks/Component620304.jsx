@@ -1,7 +1,7 @@
 /** Chunk was on 65354 **/
 /** chunk id: 620304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,14 +27,14 @@ function j(e) {
   let {
     guild: t,
     withMargin: l
-  } = e, j = (0, b.Z)(t), C = (0, m.Z)(t.id), x = i.useCallback(() => {
-    (0, _.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-  }, [t.id]), E = (0, c.e7)([f.Z], () => {
+  } = e, j = (0, b.Z)(t), x = (0, m.Z)(t.id), C = i.useCallback(() => {
+    (0, _.Z)(t.id, f.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
+  }, [t.id]), E = (0, c.e7)([h.Z], () => {
     var e;
-    return null != (e = f.Z.getCountForGuild(t.id)) ? e : 0
+    return null != (e = h.Z.getCountForGuild(t.id)) ? e : 0
   });
   i.useEffect(() => {
-    E !== t.premiumSubscriberCount && (0, h.v)(t.id, t.premiumSubscriberCount)
+    E !== t.premiumSubscriberCount && (0, p.v)(t.id, t.premiumSubscriberCount)
   }, [t.id, E, t.premiumSubscriberCount]);
   let S = Math.min(E / j * 100, 100),
     [I, P] = (0, u.q_F)(() => ({
@@ -61,13 +61,13 @@ function j(e) {
       }
     },
     onClick: () => {
-      x()
+      C()
     },
     className: o()(v.container, {
       [v.containerWithMargin]: l
     }),
     onContextMenu: e => {
-      C && (0, d.jW)(e, async () => {
+      x && (0, d.jW)(e, async () => {
         let {
           default: e
         } = await n.e("8570").then(n.bind(n, 651138));
@@ -150,7 +150,7 @@ function j(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     guild: t,
     withMargin: n

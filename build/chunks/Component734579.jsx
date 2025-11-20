@@ -25,15 +25,15 @@ let v = Chunk473749.memo(function(e) {
   let {
     guild: t,
     selected: v
-  } = e, j = i.useRef(null), C = (0, a.f9)(), x = (0, l.e7)([g.Z], () => g.Z.hasLayers()), [E, S] = (0, d.ZT)([o.z.GAME_SHOP_NEW_BADGE], t.id);
+  } = e, j = i.useRef(null), x = (0, a.f9)(), C = (0, l.e7)([g.Z], () => g.Z.hasLayers()), [E, S] = (0, d.ZT)([o.z.GAME_SHOP_NEW_BADGE], t.id);
   i.useEffect(() => {
     v && E === o.z.GAME_SHOP_NEW_BADGE && S(_.L.INDIRECT_ACTION)
   }, [S, v, E]);
   let I = i.useCallback(() => {
       var e, n;
       S(_.L.USER_DISMISS);
-      let r = null != (n = null == (e = h.Z.getStorefrontState(t.id)) ? true : e.activePage) ? n : 0;
-      (0, p.uL)(b.Z5c.CHANNELS_GAME_SHOP(t.id, r))
+      let r = null != (n = null == (e = p.Z.getStorefrontState(t.id)) ? true : e.activePage) ? n : 0;
+      (0, f.uL)(b.Z5c.CHANNELS_GAME_SHOP(t.id, r))
     }, [t, S]),
     P = i.useCallback(() => {
       S(_.L.USER_DISMISS)
@@ -96,7 +96,7 @@ let v = Chunk473749.memo(function(e) {
         text: O.intl.string(O.t.y2b7CA),
         color: u.Z.BG_BRAND
       })
-    }), C || x || (null == t ? true : t.id) !== y.ON || E !== o.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(f.Z, {
+    }), x || C || (null == t ? true : t.id) !== y.ON || E !== o.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(h.Z, {
       onActionClick: I,
       onRequestClose: P,
       targetElementRef: j

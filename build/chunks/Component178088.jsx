@@ -44,7 +44,7 @@ function Z(e) {
     dialogClassName: D
   } = e, {
     analyticsLocations: L
-  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [G, U] = [(0, s.e7)([y.Z], () => {
+  } = (0, f.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [G, U] = [(0, s.e7)([y.Z], () => {
     var e, t;
     return null != (t = null == (e = y.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
   }), i.useCallback(e => {
@@ -76,17 +76,17 @@ function Z(e) {
   }, [n, t, M]);
   i.useEffect(() => (O.S.subscribe(I.CkL.TOGGLE_INBOX, H), () => void O.S.unsubscribe(I.CkL.TOGGLE_INBOX, H)), [H]);
   let {
-    enabled: z,
-    inInbox: W
-  } = f.Z.useExperiment({
-    location: "RecentsPopout"
-  }), K = (0, s.e7)([g.Z], () => g.Z.hasOverdueReminder(), []) && z && W, {
-    enabled: Y
+    enabled: W,
+    inInbox: z
   } = h.Z.useExperiment({
+    location: "RecentsPopout"
+  }), K = (0, s.e7)([g.Z], () => g.Z.hasOverdueReminder(), []) && W && z, {
+    enabled: Y
+  } = p.Z.useExperiment({
     location: "RecentsPopout"
   });
   i.useEffect(() => {
-    G !== c.X.BOOKMARKS || z || W || U(c.X.MENTIONS)
+    G !== c.X.BOOKMARKS || W || z || U(c.X.MENTIONS)
   });
   let q = i.useCallback(e => {
       e.shiftKey || V()
@@ -94,7 +94,7 @@ function Z(e) {
     X = (0, b.Us)({
       location: "ForYou"
     });
-  return (0, r.jsx)(p.Gt, {
+  return (0, r.jsx)(f.Gt, {
     value: L,
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,
@@ -113,7 +113,7 @@ function Z(e) {
               [N.widerInbox]: X
             }),
             children: (0, r.jsx)(u.y5t, {
-              component: (0, r.jsx)(C.Z, {
+              component: (0, r.jsx)(x.Z, {
                 tab: G,
                 setTab: U,
                 badgeState: Z,
@@ -121,9 +121,9 @@ function Z(e) {
               }),
               children: G === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : G === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
                 onJump: q
-              }) : Y && G === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && G === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
+              }) : Y && G === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : W && z && G === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
                 closePopout: V
-              }) : G === c.X.SCHEDULED ? (0, r.jsx)(x._, {}) : (0, r.jsx)(a.SV, {
+              }) : G === c.X.SCHEDULED ? (0, r.jsx)(C._, {}) : (0, r.jsx)(a.SV, {
                 fallback: (0, r.jsx)(E.h6, {}),
                 children: (0, r.jsx)(E.ZP, {
                   onJump: q,

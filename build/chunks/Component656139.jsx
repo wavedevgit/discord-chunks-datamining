@@ -82,8 +82,8 @@ let A = e => {
         eligibleRecipients: t
       } = e;
       return (0, r.jsx)(y.Z, {
-        users: t,
-        selectedUsers: _,
+        users: Array.from(t.values()),
+        isUserSelected: e => _.has(e.id),
         onSelectionChange: (e, t) => {
           p(n => {
             let r = new Map(n);
@@ -175,8 +175,8 @@ let A = e => {
       actions: [],
       actionBarInput: g(),
       children: (0, r.jsx)(y.Z, {
-        users: d,
-        selectedUsers: _,
+        users: Array.from(d.values()),
+        isUserSelected: e => _.has(e.id),
         isUserDisabled: e => e.referralStatus === E.Fe.REDEEMED,
         onSelectionChange: (e, t) => {
           p(n => {

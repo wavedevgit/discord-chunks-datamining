@@ -1,15 +1,15 @@
-/** Chunk was on 65354 **/
-/** chunk id: 857302, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 90347 **/
+/** chunk id: 857302, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => a
 });
 var Chunk232567 = require("./232567.js"),
   Chunk621853 = require("./621853.js");
 
-function l(e, t) {
-  if (i.Z.isFetchingFriends(e)) return;
-  let n = i.Z.getMutualFriendsCount(e);
-  if (0 === n) return;
-  let l = i.Z.getMutualFriends(e);
-  if (null == n || null == l || l.length !== n) return (0, r.Sr)(e, t)
+function a(e, t) {
+  if (n.Z.isFetchingFriends(e)) return;
+  let r = n.Z.getMutualFriendsCount(e);
+  if (0 === r) return;
+  let a = n.Z.getMutualFriends(e);
+  if (null == r || null == a || a.length !== r) return (0, i.Sr)(e, t)
 }

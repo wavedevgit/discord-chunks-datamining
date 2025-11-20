@@ -1,7 +1,7 @@
 /** Chunk was on 65354 **/
 /** chunk id: 109446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => x
 }), require("./388685.js"), require("./642613.js"), require("./583741.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,19 +24,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk531198 = require("./531198.js");
 
-function C(e) {
+function x(e) {
   let {
     channel: t
-  } = e, l = (0, a.Wu)([d.Z, g.ZP, f.Z], () => {
+  } = e, l = (0, a.Wu)([d.Z, g.ZP, h.Z], () => {
     let e = d.Z.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.Z.can(y.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
+    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && h.Z.can(y.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
       let n = g.ZP.lastMessageId(e.id),
         r = g.ZP.lastMessageId(t.id);
       return _.default.compare(n, r)
     }).reverse().value()
   }), c = t.isForumLikeChannel() ? 5 : 3;
   return i.useEffect(() => {
-    (0, p.q)()
+    (0, f.q)()
   }, []), (0, r.jsxs)("div", {
     className: j.popout,
     children: [(0, r.jsx)(s.Text, {
@@ -44,7 +44,7 @@ function C(e) {
       variant: "text-xs/bold",
       color: "header-secondary",
       children: t.isForumLikeChannel() ? v.intl.string(v.t.ioVdO2) : v.intl.string(v.t.VNYs2v)
-    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(x, {
+    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(C, {
       thread: e
     }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(s.P3F, {
       className: j.more,
@@ -84,14 +84,14 @@ function C(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     thread: t
-  } = e, n = (0, a.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, p.Ok)(t);
+  } = e, n = (0, a.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, f.Ok)(t);
   return (0, r.jsxs)(s.P3F, {
     className: j.row,
     onClick: e => {
-      (0, h.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, O.on.POPOUT)
+      (0, p.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, O.on.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
       className: j.avatar,
@@ -113,7 +113,7 @@ function x(e) {
       children: [(0, r.jsx)("span", {
         className: j.bullet,
         children: "•"
-      }), (0, p.Ye)(i)]
+      }), (0, f.Ye)(i)]
     })]
   })
 }

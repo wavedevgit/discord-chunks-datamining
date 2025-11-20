@@ -43,8 +43,8 @@ function b(e) {
     emojiHose: a,
     context: b,
     canvasWidth: v,
-    canvasHeight: E,
-    fallbackColor: h,
+    canvasHeight: h,
+    fallbackColor: E,
     outlineColorDark: y,
     outlineColorLight: S,
     streamerId: O,
@@ -53,10 +53,10 @@ function b(e) {
   b.save();
   let w = s.Z.getEmojiImage(null != (n = null != (t = a.emojiId) ? t : a.emojiName) ? n : ""),
     I = (0, d.np)(a.x, v),
-    P = (0, d.np)(a.y, E),
+    P = (0, d.np)(a.y, h),
     {
       outlineColor: j
-    } = (0, d.bg)(a.userId, y, S, h);
+    } = (0, d.bg)(a.userId, y, S, E);
   g(a, e => {
       e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, o.j)(() => {
         _.setState(t => (delete t.particles[a.id][e.id], 0 === Object.keys(t.particles[a.id]).length && delete t.particles[a.id], t))

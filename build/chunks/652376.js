@@ -16,18 +16,18 @@ function c(e) {
     c = e.children.map(e => e.id),
     u = null != n && c.includes(n),
     d = false,
+    f = false,
     p = false,
-    h = false,
-    f = (0, i.e7)([a.Z], () => a.Z.getChannelId()),
+    h = (0, i.e7)([a.Z], () => a.Z.getChannelId()),
     g = null == (t = (0, l.Z)()) ? true : t.guild_id,
     m = null != g && c.includes(g),
-    b = (0, i.e7)([s.Z], () => null != f && s.Z.hasVideo(f), [f]),
+    b = (0, i.e7)([s.Z], () => null != h && s.Z.hasVideo(h), [h]),
     _ = (0, i.e7)([o.Z], () => o.Z.getCurrentUserActiveStream());
-  return u && (d = !b, p = b, h = null != _ && null != _.guildId && c.includes(_.guildId)), r.useMemo(() => ({
+  return u && (d = !b, f = b, p = null != _ && null != _.guildId && c.includes(_.guildId)), r.useMemo(() => ({
     audio: d,
-    video: p,
-    screenshare: h,
+    video: f,
+    screenshare: p,
     liveStage: m,
     isCurrentUserConnected: u
-  }), [d, p, h, m, u])
+  }), [d, f, p, m, u])
 }

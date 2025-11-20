@@ -81,7 +81,7 @@ function R() {
       badge: V,
       unread: H
     } = (0, Chunk919755.Z)(G),
-    z = function(e) {
+    W = function(e) {
       let t = (0, s.e7)([v.Z], () => v.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
         r = (0, s.e7)([y.Z], () => {
@@ -91,28 +91,28 @@ function R() {
         }),
         i = (0, s.e7)([y.Z], () => y.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
         l = (0, s.e7)([j.Z], () => n && null != t && j.Z.hasVideo(t), [n, t]),
-        o = (0, s.Wu)([p.ZP], () => C.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
-        a = (0, s.e7)([p.ZP], () => Array.from(p.ZP.getSelfEmbeddedActivities().values()).some(t => {
+        o = (0, s.Wu)([f.ZP], () => x.default.keys(e).reduce((e, t) => (e.push(...f.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
+        a = (0, s.e7)([f.ZP], () => Array.from(f.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
-          } = t, r = (0, h.p)(n);
+          } = t, r = (0, p.p)(n);
           return null != r && null != e[r]
         })),
         c = o.length > 0,
         u = false,
         d = false,
-        f = false,
+        h = false,
         g = false;
-      return n ? (u = !l, d = l, f = r, g = a) : (f = i, g = c), (0, m.Or)({
+      return n ? (u = !l, d = l, h = r, g = a) : (h = i, g = c), (0, m.Or)({
         audio: u,
         video: d,
-        screenshare: f,
+        screenshare: h,
         liveStage: false,
         isCurrentUserConnected: n,
         activity: g
       })
     }(G),
-    W = V > 0 ? (0, Chunk593364.N)(V) : null,
+    z = V > 0 ? (0, Chunk593364.N)(V) : null,
     K = Chunk473749.useCallback(() => {
       D()
     }, [D]);
@@ -127,8 +127,8 @@ function R() {
       children: (0, Chunk54381.jsx)(Chunk110977.S, {
         children: (0, Chunk54381.jsx)(Chunk481060.aRk, {
           selected: true,
-          upperBadge: z,
-          lowerBadge: W,
+          upperBadge: W,
+          lowerBadge: z,
           children: (0, Chunk54381.jsx)(Chunk481060.LYs, (e = T({}, Chunk120356), t = t = {
             ariaLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["/uzRss"], {
               guildName: Chunk388032.intl.string(Chunk388032.t.wMWyci),

@@ -35,7 +35,7 @@ let _ = Chunk473749.memo(function(e) {
     return y.forEach(t => {
       null != O[t.channelId] && e++
     }), e
-  }, [O, y]), j = null == y ? 0 : y.length, C = (0, l.JA)("progress-bar-".concat(_.id));
+  }, [O, y]), j = null == y ? 0 : y.length, x = (0, l.JA)("progress-bar-".concat(_.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(a.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -54,7 +54,7 @@ let _ = Chunk473749.memo(function(e) {
         })
       }
       return e
-    }({}, C), n = n = {
+    }({}, x), n = n = {
       role: "button",
       focusProps: {
         offset: {
@@ -63,7 +63,7 @@ let _ = Chunk473749.memo(function(e) {
       },
       className: m.progressBarContainer,
       onClick: function() {
-        (0, d.uL)(h.Z5c.CHANNEL(_.id, f.oC.GUILD_HOME))
+        (0, d.uL)(p.Z5c.CHANNEL(_.id, h.oC.GUILD_HOME))
       },
       children: [(0, r.jsxs)("div", {
         className: m.progressBarText,
@@ -81,16 +81,16 @@ let _ = Chunk473749.memo(function(e) {
               total: j.toString(),
               completed: v.toString()
             })
-          }), (0, r.jsx)(p.Z, {
+          }), (0, r.jsx)(f.Z, {
             className: m.arrow,
             width: 16,
             height: 16,
-            direction: p.Z.Directions.RIGHT
+            direction: f.Z.Directions.RIGHT
           })]
         })]
       }), (0, r.jsx)(a.Exd, {
         className: m.progressBar,
-        foregroundGradientColor: [(0, s.Lq)(h.Ilk.GREEN_300), (0, s.Lq)(h.Ilk.GREEN_230)],
+        foregroundGradientColor: [(0, s.Lq)(p.Ilk.GREEN_300), (0, s.Lq)(p.Ilk.GREEN_230)],
         percent: v / j * 100 + 3,
         animate: true
       })]

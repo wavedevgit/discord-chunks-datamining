@@ -28,12 +28,12 @@ let _ = (0, Chunk146773.B)(function(e) {
     sortingType: O,
     sortingPosition: v,
     connectChannelDragSource: j,
-    connectChannelDropTarget: C,
-    tabIndex: x
+    connectChannelDropTarget: x,
+    tabIndex: C
   } = e, E = (0, a.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
-  }), S = (0, a.e7)([u.Z], () => u.Z.getChannel(null == E ? true : E.parent_id)), I = l === (null == E ? true : E.id), P = (0, a.e7)([p.Z], () => null != S ? p.Z.can(g.Plq.MANAGE_CHANNELS, S) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), N = i.useCallback(e => {
+  }), S = (0, a.e7)([u.Z], () => u.Z.getChannel(null == E ? true : E.parent_id)), I = l === (null == E ? true : E.id), P = (0, a.e7)([f.Z], () => null != S ? f.Z.can(g.Plq.MANAGE_CHANNELS, S) : null != t && f.Z.can(g.Plq.MANAGE_CHANNELS, t)), N = i.useCallback(e => {
     null != E && (0, s.jW)(e, async () => {
       let {
         default: e
@@ -73,15 +73,15 @@ let _ = (0, Chunk146773.B)(function(e) {
     })
   }, [E]);
   if (null == E) return null;
-  let Z = (0, h.jo)(c, v),
-    w = (0, h.CN)(E, y, O),
+  let Z = (0, p.jo)(c, v),
+    w = (0, p.CN)(E, y, O),
     T = (0, r.jsx)("div", {
       className: o()(Z, {
         [b.disabled]: w,
         [b.selected]: I
       }),
       "data-dnd-name": E.name,
-      children: (0, r.jsxs)(f.ZP, {
+      children: (0, r.jsxs)(h.ZP, {
         className: b.iconVisibility,
         channel: E,
         guild: t,
@@ -89,15 +89,15 @@ let _ = (0, Chunk146773.B)(function(e) {
         onContextMenu: N,
         forceInteractable: true,
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
-        children: [(0, r.jsx)(h.eP, {
+        children: [(0, r.jsx)(p.eP, {
           channel: E,
-          tabIndex: x
-        }), (0, r.jsx)(h.hR, {
+          tabIndex: C
+        }), (0, r.jsx)(p.hR, {
           channel: E,
           disableManageChannels: _,
-          tabIndex: x
+          tabIndex: C
         })]
       })
     });
-  return P && (T = C(j(T))), T
+  return P && (T = x(j(T))), T
 })

@@ -120,7 +120,7 @@ let Z = Chunk473749.memo(function(e) {
     config: I(w({}, c.config.stiff), {
       clamp: true
     })
-  }, "animate-always"), eE = $ > n, eh = i.useCallback(e => {
+  }, "animate-always"), eh = $ > n, eE = i.useCallback(e => {
     e.width > 0 && e.height > 0 && ea(e.width / e.height), null == y || y(e)
   }, [y]), ey = i.useCallback(e => {
     if (null == e_.current) return P;
@@ -152,12 +152,12 @@ let Z = Chunk473749.memo(function(e) {
       eu(false)
     })
   }, [eS, l, n, v, $]), eC = i.useCallback(e => {
-    if (!eE) return;
+    if (!eh) return;
     e.preventDefault(), e.stopPropagation();
     let t = ey(e);
     L(true), z(t), V(t), H(Date.now()), Q(t), K(B)
-  }, [ey, eE, B]), ew = i.useCallback(e => {
-    if ((t || eE) && N(), !k || !eE || null == G || null == Y) return;
+  }, [ey, eh, B]), ew = i.useCallback(e => {
+    if ((t || eh) && N(), !k || !eh || null == G || null == Y) return;
     e.preventDefault(), e.stopPropagation();
     let n = ey(e),
       r = n.x - G.x,
@@ -166,10 +166,10 @@ let Z = Chunk473749.memo(function(e) {
       x: Y.x + r,
       y: Y.y + i
     })), V(n)
-  }, [eS, G, Y, t, ey, k, eE, N]), eI = i.useCallback(e => {
+  }, [eS, G, Y, t, ey, k, eh, N]), eI = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), L(false), Q(null), K(null)
   }, []), eP = i.useCallback(e => {
-    if (eE && null != U && null != F) {
+    if (eh && null != U && null != F) {
       let {
         x: t,
         y: n
@@ -179,7 +179,7 @@ let Z = Chunk473749.memo(function(e) {
       } = F;
       (Math.sqrt((r - t) ** 2 + (i - n) ** 2) > .01 || Date.now() - W >= 500) && (e.preventDefault(), e.stopPropagation())
     }
-  }, [eE, U, W, F]), ej = i.useCallback(() => {
+  }, [eh, U, W, F]), ej = i.useCallback(() => {
     L(false), Q(null), K(null)
   }, []), ex = i.useCallback(e => {
     t && (en(true), eO($ - e.deltaY / 100, ey(e), "wheel"), N(), ed.current.start(100, () => {
@@ -231,7 +231,7 @@ let Z = Chunk473749.memo(function(e) {
       width: t,
       height: n
     } = e;
-    if (!eE || null == t || null == n) return;
+    if (!eh || null == t || null == n) return;
     let r = eb.current;
     if (null == r) {
       eb.current = {
@@ -260,11 +260,11 @@ let Z = Chunk473749.memo(function(e) {
     }, ep.current.start(100, () => {
       ec(false)
     }))
-  }, [eS, eE, $]), [eE, $]), (0, p.zq)(() => {
+  }, [eS, eh, $]), [eh, $]), (0, p.zq)(() => {
     ed.current.stop(), ef.current.stop(), ep.current.stop(), em.current.stop()
   }), i.useEffect(() => {
-    null != b && (0, E.N)(b, t && eE ? $ : 1)
-  }, [t, eE, b, $]);
+    null != b && (0, h.N)(b, t && eh ? $ : 1)
+  }, [t, eh, b, $]);
   let eU = i.useMemo(() => {
       let e = eS(B);
       return {
@@ -299,7 +299,7 @@ let Z = Chunk473749.memo(function(e) {
   return (0, r.jsxs)("div", {
     ref: e_,
     className: a()(C.wrapper, Z, {
-      [C.zoomEnabled]: t && eE,
+      [C.zoomEnabled]: t && eh,
       [C.zoomDragging]: k
     }),
     onMouseDown: eC,
@@ -312,8 +312,8 @@ let Z = Chunk473749.memo(function(e) {
       children: null != b && (0, r.jsx)("div", {
         className: a()(C.videoContainer, C.zoomed),
         style: eU,
-        children: (0, r.jsx)(h.Z, I(w({}, _), {
-          onResize: eh,
+        children: (0, r.jsx)(E.Z, I(w({}, _), {
+          onResize: eE,
           wrapperClassName: true
         }))
       })
@@ -329,7 +329,7 @@ let Z = Chunk473749.memo(function(e) {
         onMouseEnter: eA,
         onMouseLeave: eN,
         onClick: eD,
-        children: [(es || eE) && (0, r.jsx)(d.P3F, {
+        children: [(es || eh) && (0, r.jsx)(d.P3F, {
           onClick: eV,
           onMouseEnter: eA,
           onMouseLeave: eN,
@@ -354,7 +354,7 @@ let Z = Chunk473749.memo(function(e) {
           })
         }), (0, r.jsxs)("div", {
           className: C.zoomControlsRow,
-          children: [(es || eE) && (0, r.jsxs)(r.Fragment, {
+          children: [(es || eh) && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(u.u, {
               text: S.intl.string(S.t.M6Cmwy),
               position: "top",

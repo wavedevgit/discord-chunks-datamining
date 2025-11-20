@@ -14,8 +14,8 @@ function c(e) {
   let {
     userId: t,
     applicationId: n
-  } = e, [c, u] = i.useState(false), [d, p] = i.useState(false), h = i.useCallback(async e => {
-    e.stopPropagation(), p(true);
+  } = e, [c, u] = i.useState(false), [d, f] = i.useState(false), p = i.useCallback(async e => {
+    e.stopPropagation(), f(true);
     try {
       await o.Z.cancelFriendRequest({
         userId: t,
@@ -23,9 +23,9 @@ function c(e) {
         location: "ActionButtonFriendRequest"
       })
     } finally {
-      p(false)
+      f(false)
     }
-  }, [n, t]), f = i.useCallback(async e => {
+  }, [n, t]), h = i.useCallback(async e => {
     e.stopPropagation(), u(true);
     try {
       await o.Z.maybeConfirmFriendRequestAccept({
@@ -43,13 +43,13 @@ function c(e) {
       size: "sm",
       children: [(0, r.jsx)(l.zxk, {
         variant: "active",
-        onClick: f,
+        onClick: h,
         text: a.intl.string(a.t.Zcibdf),
         loading: c,
         disabled: d
       }), (0, r.jsx)(l.zxk, {
         variant: "secondary",
-        onClick: h,
+        onClick: p,
         text: a.intl.string(a.t.xuio0C),
         loading: d,
         disabled: c

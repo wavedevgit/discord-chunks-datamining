@@ -55,8 +55,8 @@ function Z(e) {
   } = e, n = (0, a.e7)([_.Z, O.Z], () => _.Z.getChannel(O.Z.getChannelId())), {
     messages: l,
     hasMore: s,
-    loading: p,
-    guildFilter: f,
+    loading: f,
+    guildFilter: h,
     roleFilter: b,
     everyoneFilter: y
   } = (0, a.cj)([v.ZP], () => ({
@@ -68,12 +68,12 @@ function Z(e) {
     everyoneFilter: v.ZP.everyoneFilter
   })), j = (0, m.Us)({
     location: "RecentMentions"
-  }), C = (0, d.Z)(f), x = (0, d.Z)(b), P = (0, d.Z)(y);
+  }), x = (0, d.Z)(h), C = (0, d.Z)(b), P = (0, d.Z)(y);
   i.useEffect(() => {
     if (!v.ZP.hasLoadedEver) return void N(n, true);
-    (null != C && f !== C || null != x && b !== x || null != P && y !== P) && N(n, true)
-  }, [C, f, x, b, P, y, n, true]), (0, u.ZP)(() => {
-    (null == l ? true : l.some(h.k5)) && (c.Z.clearMentions(), N(n, true))
+    (null != x && h !== x || null != C && b !== C || null != P && y !== P) && N(n, true)
+  }, [x, h, C, b, P, y, n, true]), (0, u.ZP)(() => {
+    (null == l ? true : l.some(p.k5)) && (c.Z.clearMentions(), N(n, true))
   }), i.useEffect(() => () => {
     c.Z.truncateMentions(E.DJj)
   }, []);
@@ -90,7 +90,7 @@ function Z(e) {
     },
     channel: n,
     messages: l,
-    loading: p,
+    loading: f,
     hasMore: s,
     analyticsName: "Recent Mentions",
     loadMore: function() {
@@ -121,12 +121,12 @@ function T(e) {
   } = e;
   if (null == t) return null;
   let l = _.Z.getChannel(t.channel_id);
-  if (null == l || (0, p._t)(l) || (0, p.ft)(l)) return null;
+  if (null == l || (0, f._t)(l) || (0, f.ft)(l)) return null;
   let o = y.Z.didAgree(l.getGuildId()),
-    a = !!(0, p.qF)(l) && !o;
+    a = !!(0, f.qF)(l) && !o;
   return (0, r.jsxs)("div", {
     className: I.container,
-    children: [(0, r.jsx)(C.Z, {
+    children: [(0, r.jsx)(x.Z, {
       channel: l,
       gotoChannel: n,
       children: null != i ? (0, r.jsx)(s.PZ7, {
@@ -138,7 +138,7 @@ function T(e) {
       children: [(0, r.jsx)(j.Z, {
         className: I.jumpMessageButton,
         onJump: n
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(h.Z, {
         message: t,
         channel: l,
         className: I.message,

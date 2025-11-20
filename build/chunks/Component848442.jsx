@@ -67,7 +67,7 @@ function Z(e) {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([O.Z], () => O.Z.getGuild(t)), x = (null == g ? true : g.features.has(C.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, Z = "false" === s.K.get(E.tM, "false"), w = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
+  } = e, u = (0, h.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([O.Z], () => O.Z.getGuild(t)), C = (null == g ? true : g.features.has(x.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, Z = "false" === s.K.get(E.tM, "false"), w = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsx)(j.m, {
     id: "shop-".concat(t),
     className: l()(I.previewChannelRow, {
@@ -90,17 +90,17 @@ function Z(e) {
         text: S.intl.string(S.t.y2b7CA),
         className: I.newBadge
       }) : (0, r.jsx)("img", {
-        src: (0, h.b)("server_products/storefront/money.gif"),
+        src: (0, p.b)("server_products/storefront/money.gif"),
         className: I.money,
         alt: ""
       }), n && (0, r.jsx)(c.P3F, {
         className: I.closeButton,
         onClick: e => {
-          if (e.stopPropagation(), (0, b.Q3)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), v.default.track(C.rMx.GUILD_SHOP_PREVIEW_CLICK, N(P({}, (0, p.hH)(t)), {
+          if (e.stopPropagation(), (0, b.Q3)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), v.default.track(x.rMx.GUILD_SHOP_PREVIEW_CLICK, N(P({}, (0, f.hH)(t)), {
               action_taken: E.mz.DISMISS_CHANNEL_ROW
-            })), !u || !x) {
+            })), !u || !C) {
             var n;
-            (0, _.dL)(C.Z5c.CHANNEL(t, null == (n = y.ZP.getDefaultChannel(t)) ? true : n.id))
+            (0, _.dL)(x.Z5c.CHANNEL(t, null == (n = y.ZP.getDefaultChannel(t)) ? true : n.id))
           }
         },
         "aria-label": S.intl.string(S.t.cpT0Cq),
@@ -118,7 +118,7 @@ function w(e) {
     guild: t,
     selected: i
   } = e, l = (0, g.g)(t, "guild_shop_channel_row"), o = () => {
-    s.K.set(E.tM, "true"), (0, _.uL)(C.Z5c.CHANNEL(t.id, x.oC.GUILD_SHOP))
+    s.K.set(E.tM, "true"), (0, _.uL)(x.Z5c.CHANNEL(t.id, C.oC.GUILD_SHOP))
   };
   return l ? (0, r.jsx)(Z, {
     guildId: t.id,

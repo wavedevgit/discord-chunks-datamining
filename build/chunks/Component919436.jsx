@@ -157,9 +157,9 @@ class A extends(r = Chunk473749.PureComponent) {
       stream: s,
       isCurrentUserInThisDMCall: u,
       unread: d,
-      treeItemProps: p
+      treeItemProps: f
     } = this.props, {
-      hovered: h,
+      hovered: p,
       animating: g
     } = this.state, m = module.isMultiUserDM() && null == module.icon, b = () => (0, Chunk54381.jsx)(Chunk481060.LYs, N({
       to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
@@ -256,29 +256,29 @@ P(A, "defaultProps", {
 });
 let R = Chunk473749.forwardRef(function(e, t) {
   let n = e.channel.id,
-    r = (0, h.ZP)(e.channel),
+    r = (0, p.ZP)(e.channel),
     l = (0, a.Ie)(n, 2),
     o = (0, s.e7)([m.Z], () => m.Z.getChannelId(), []),
     u = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : E.WtW.VOICE, [o]),
-    p = (0, s.e7)([g.Z], () => g.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    f = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
+    f = (0, s.e7)([g.Z], () => g.Z.getAllApplicationStreamsForChannel(n).length > 0),
+    h = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
     y = (0, s.e7)([b.ZP], () => b.ZP.getMentionCount(n), [n]),
     O = o === n,
     v = false,
     j = false;
   O && (v = u === E.WtW.VOICE, j = u === E.WtW.VIDEO);
-  let C = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
+  let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, i.jsx)(A, Z(N({}, e), {
     ref: t,
     channelName: r,
     unread: y > 0,
-    selected: f === n,
+    selected: h === n,
     badge: y,
     audio: v,
     video: j,
-    stream: p,
+    stream: f,
     isCurrentUserInThisDMCall: O,
-    size: C,
+    size: x,
     treeItemProps: l
   }))
 })

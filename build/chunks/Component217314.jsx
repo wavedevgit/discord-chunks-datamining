@@ -25,7 +25,7 @@ function m(e) {
     b = (0, i.e7)([c.Z], () => c.Z.getStatus(t)),
     _ = (0, i.e7)([c.Z], () => c.Z.isMobileOnline(t)),
     y = (0, i.e7)([u.Z], () => u.Z.getNickname(t)),
-    O = p.ZP.useUserTag(m),
+    O = f.ZP.useUserTag(m),
     v = (0, a.j)({
       displayNameStyles: null == m ? true : m.displayNameStyles
     }),
@@ -34,17 +34,17 @@ function m(e) {
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.nn4, {
-      children: f.intl.string(f.t.EJRzg7)
+      children: h.intl.string(h.t.EJRzg7)
     }), null != m && !n && (0, r.jsx)("div", {
       children: (0, r.jsx)(o.qEK, {
         status: b,
         isMobile: _,
         className: g.avatar,
         size: o.EFr.SIZE_20,
-        "aria-label": p.ZP.getName(m),
+        "aria-label": f.ZP.getName(m),
         src: m.getAvatarURL(true, 20)
       })
-    }), (0, r.jsx)(h.Z.Title, {
+    }), (0, r.jsx)(p.Z.Title, {
       level: e.level,
       onClick: e.handleClick,
       onContextMenu: e.handleContextMenu,
@@ -55,13 +55,13 @@ function m(e) {
           position: "bottom",
           children: (0, r.jsx)("span", {
             className: v,
-            children: null != y ? y : p.ZP.getName(m)
+            children: null != y ? y : f.ZP.getName(m)
           })
         }), j && (0, r.jsx)(l.u, {
-          text: f.intl.string(f.t.QyZ4Td),
+          text: h.intl.string(h.t.QyZ4Td),
           children: (0, r.jsx)(o.tQf, {
             size: "xs",
-            "aria-label": f.intl.string(f.t.VHXh8a),
+            "aria-label": h.intl.string(h.t.VHXh8a),
             color: o.TVs.colors.INTERACTIVE_NORMAL,
             className: g.secureFramesIcon
           })

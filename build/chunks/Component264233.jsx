@@ -39,14 +39,14 @@ function g() {
       children: [require.length > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(m, {
           title: Chunk388032.intl.string(Chunk388032.t.yflAJV)
-        }), require.map(e => (0, r.jsx)(p.Z, {
+        }), require.map(e => (0, r.jsx)(f.Z, {
           invite: e,
           expired: false
         }, e.invite_id))]
       }), Chunk392711.length > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(m, {
           title: Chunk388032.intl.string(Chunk388032.t.f0Ia4V)
-        }), Chunk392711.map(e => (0, r.jsx)(p.Z, {
+        }), Chunk392711.map(e => (0, r.jsx)(f.Z, {
           invite: e,
           expired: true
         }, e.invite_id))]
@@ -60,14 +60,14 @@ function m(e) {
     title: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: f.headerContainer,
+    className: h.headerContainer,
     children: [(0, r.jsx)(s.Text, {
-      className: f.headerTitle,
+      className: h.headerTitle,
       variant: "text-xs/semibold",
       color: "interactive-normal",
       children: t
     }), (0, r.jsx)("div", {
-      className: f.headerDivider
+      className: h.headerDivider
     })]
   })
 }

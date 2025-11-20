@@ -2,7 +2,7 @@
 /** chunk id: 968847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G,
-  x: () => C
+  x: () => x
 }), require("./388685.js");
 var r, i, l, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -21,26 +21,26 @@ var r, i, l, Chunk392711 = require("./392711.js"),
   Chunk823379 = require("./823379.js"),
   Chunk734307 = require("./734307.js"),
   Chunk981631 = require("./981631.js"),
-  C = ((i = {}).HIDDEN = "hidden", i.UNREAD = "unread", i.MENTIONS = "mentions", i.VOICE_CHANNELS = "voice-channels", i);
-let x = {
+  x = ((i = {}).HIDDEN = "hidden", i.UNREAD = "unread", i.MENTIONS = "mentions", i.VOICE_CHANNELS = "voice-channels", i);
+let C = {
     mode: "hidden",
     mentionCount: 0,
     targetChannelId: null
   },
   E = {
-    topBar: x,
-    bottomBar: x
+    topBar: C,
+    bottomBar: C
   },
   S = {},
   I = {};
 
 function P(e) {
-  let t = f.Z.getChannel(e);
-  return !(null == t || null == t.getGuildId() || t.isGuildVocal()) && !(t.isThread() ? h.Z.isMuted(t.id) : _.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, u.d)(t)
+  let t = h.Z.getChannel(e);
+  return !(null == t || null == t.getGuildId() || t.isGuildVocal()) && !(t.isThread() ? p.Z.isMuted(t.id) : _.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, u.d)(t)
 }
 
 function N(e) {
-  let t = f.Z.getChannel(e);
+  let t = h.Z.getChannel(e);
   if (null == t) returnfalse;
   let n = t.getGuildId();
   if (null == n) returnfalse;
@@ -50,7 +50,7 @@ function N(e) {
 }
 
 function Z(e) {
-  return !_.ZP.isChannelMuted(e.guild_id, e.id) && (e.isGuildStageVoice() ? d.Z.getMutableParticipants(e.id, p.pV.SPEAKER).length > 0 : y.ZP.getVoiceStatesForChannel(e).length > 0)
+  return !_.ZP.isChannelMuted(e.guild_id, e.id) && (e.isGuildStageVoice() ? d.Z.getMutableParticipants(e.id, f.pV.SPEAKER).length > 0 : y.ZP.getVoiceStatesForChannel(e).length > 0)
 }
 
 function w(e) {
@@ -64,42 +64,42 @@ function w(e) {
     c = null,
     u = null,
     d = true,
-    p = true,
-    h = false,
-    f = i.getCategoryFromSection(i.voiceChannelsSectionNumber),
-    g = null != (n = null == f ? true : f.getShownChannelIds()) ? n : [],
+    f = true,
+    p = false,
+    h = i.getCategoryFromSection(i.voiceChannelsSectionNumber),
+    g = null != (n = null == h ? true : h.getShownChannelIds()) ? n : [],
     [b, _, y] = i.getSlicedChannels(l);
   for (let e = 0; e < _.length; e++) {
     let t = _[e];
-    if ((P(t.id) || a().some(t.threadIds, P)) && (p = false), (N(t.id) || a().some(t.threadIds, N)) && (d = false), g.includes(t.id) && (h = true), !p && !d && h) break
+    if ((P(t.id) || a().some(t.threadIds, P)) && (f = false), (N(t.id) || a().some(t.threadIds, N)) && (d = false), g.includes(t.id) && (p = true), !f && !d && p) break
   }
   let O = 0,
     j = false,
-    C = 0,
+    x = 0,
     E = false;
-  if (p || d)
+  if (f || d)
     for (let e = b.length - 1; e >= 0; e--) {
       let t = b[e];
       (P(t.id) || a().some(t.threadIds, P)) && (null == s && (s = t.id), j = true), (N(t.id) || a().some(t.threadIds, N)) && (null == o && (o = t.id), O += m.ZP.getMentionCount(t.id), O += a().sumBy(t.threadIds, m.ZP.getMentionCount))
     }
-  if (p || d)
+  if (f || d)
     for (let e = 0; e < y.length; e++) {
       let t = y[e];
-      if (!p && !d) break;
-      (P(t.id) || a().some(t.threadIds, P)) && (null == u && (u = t.id), E = true), (N(t.id) || a().some(t.threadIds, N)) && (null == c && (c = t.id), C += m.ZP.getMentionCount(t.id), C += a().sumBy(t.threadIds, m.ZP.getMentionCount))
+      if (!f && !d) break;
+      (P(t.id) || a().some(t.threadIds, P)) && (null == u && (u = t.id), E = true), (N(t.id) || a().some(t.threadIds, N)) && (null == c && (c = t.id), x += m.ZP.getMentionCount(t.id), x += a().sumBy(t.threadIds, m.ZP.getMentionCount))
     }
   let w = null,
     T = null,
-    A = null != (r = null == f ? true : f.getChannelRecords()) ? r : [];
-  d && C > 0 ? w = {
+    A = null != (r = null == h ? true : h.getChannelRecords()) ? r : [];
+  d && x > 0 ? w = {
     mode: "mentions",
-    mentionCount: C,
+    mentionCount: x,
     targetChannelId: c
-  } : !h && a().some(A, Z) ? w = {
+  } : !p && a().some(A, Z) ? w = {
     mode: "voice-channels",
     mentionCount: 0,
     targetChannelId: null
-  } : p && E && (w = {
+  } : f && E && (w = {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: u
@@ -107,7 +107,7 @@ function w(e) {
     mode: "mentions",
     mentionCount: O,
     targetChannelId: o
-  } : p && j && (T = {
+  } : f && j && (T = {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: s
@@ -115,8 +115,8 @@ function w(e) {
   let R = null != T && (null == w || "mentions" !== w.mode && "mentions" === T.mode),
     D = null != w && ("mentions" === w.mode || !R);
   return S[e] = {
-    topBar: R && null != T ? T : x,
-    bottomBar: D && null != w ? w : x
+    topBar: R && null != T ? T : C,
+    bottomBar: D && null != w ? w : C
   }, true
 }
 let T = a().throttle(w, 200);
@@ -131,7 +131,7 @@ function A(e) {
 function R(e) {
   let {
     id: t
-  } = e, n = f.Z.getChannel(t);
+  } = e, n = h.Z.getChannel(t);
   if (null == n) returnfalse;
   let r = g.Z.getGuild(n.guild_id);
   return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && T(n.guild_id)
@@ -140,7 +140,7 @@ function R(e) {
 function D(e) {
   let {
     channel: t
-  } = e, n = f.Z.getChannel(t.id);
+  } = e, n = h.Z.getChannel(t.id);
   if (null == n) returnfalse;
   let r = g.Z.getGuild(t.guild_id);
   return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && T(n.guild_id)
@@ -149,7 +149,7 @@ function D(e) {
 function L(e) {
   let {
     channelId: t
-  } = e, n = f.Z.getChannel(t);
+  } = e, n = h.Z.getChannel(t);
   if (null == n) returnfalse;
   let r = g.Z.getGuild(n.guild_id);
   return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && b.Z.getGuildId() === n.guild_id && T(n.guild_id)
@@ -192,7 +192,7 @@ let G = new k(Chunk570140.Z, {
       let {
         channelId: n
       } = e;
-      return null == (t = f.Z.getChannel(n)) ? true : t.guild_id
+      return null == (t = h.Z.getChannel(n)) ? true : t.guild_id
     }).filter(O.lm).uniq().forEach(e => {
       let t = g.Z.getGuild(e);
       null != t && t.features.has(j.GuildFeatures.COMMUNITY) && T(e) && (n = true)

@@ -17,9 +17,9 @@ function d(e, t, n) {
   let {
     markChannelRead: i,
     markGuildRead: d,
-    deleteChannel: p,
-    toggle: h,
-    getNumUnreadChannels: f
+    deleteChannel: f,
+    toggle: p,
+    getNumUnreadChannels: h
   } = t, g = null;
   return l().flatMap(e, e => {
     let t = e.sortOrder !== g;
@@ -37,10 +37,10 @@ function d(e, t, n) {
       channel: e,
       markChannelRead: i,
       markGuildRead: d,
-      toggle: h,
-      deleteChannel: p,
+      toggle: p,
+      deleteChannel: f,
       onJump: n,
-      getNumUnreadChannels: f
+      getNumUnreadChannels: h
     }, e.channelId)), l
   })
 }

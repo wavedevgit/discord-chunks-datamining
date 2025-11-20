@@ -2,7 +2,7 @@
 /** chunk id: 795338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => d,
-  m: () => p
+  m: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
@@ -24,7 +24,7 @@ function d(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     className: t,
     powerup: n,

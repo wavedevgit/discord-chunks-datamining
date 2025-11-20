@@ -30,11 +30,11 @@ var Chunk120356 = require("./120356.js"),
 
 function S(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: x.row,
+    className: C.row,
     children: [(0, r.jsx)(e, {
-      className: x.activityIcon,
+      className: C.activityIcon,
       color: "currentColor"
-    }), (0, r.jsx)(p.ZP, {
+    }), (0, r.jsx)(f.ZP, {
       guildId: true,
       users: t,
       max: 6
@@ -53,13 +53,13 @@ function I() {
       } = e;
       return t
     })), [require]),
-    o = (0, Chunk442837.Wu)([Chunk565799.Z], () => a().flatMap(Chunk120356, e => h.Z.getMutableParticipants(e, f.pV.SPEAKER).filter(e => e.type === f.Ui.VOICE).map(e => {
+    o = (0, Chunk442837.Wu)([Chunk565799.Z], () => a().flatMap(Chunk120356, e => p.Z.getMutableParticipants(e, h.pV.SPEAKER).filter(e => e.type === h.Ui.VOICE).map(e => {
       let {
         user: t
       } = e;
       return t
     }))),
-    C = (0, Chunk442837.e7)([Chunk565799.Z], () => {
+    x = (0, Chunk442837.e7)([Chunk565799.Z], () => {
       let e = 0;
       for (let t of Chunk120356) e += Chunk565799.Z.getParticipantCount(exports, Chunk501655.pV.AUDIENCE);
       return module

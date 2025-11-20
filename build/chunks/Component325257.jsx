@@ -75,7 +75,7 @@ let L = {
 };
 
 function M(e, t) {
-  (0, f.jW)(e, async () => {
+  (0, h.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([n.e("70363"), n.e("36599"), n.e("7654"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("86736"), n.e("6850"), n.e("58227"), n.e("44686"), n.e("384"), n.e("22516"), n.e("87154"), n.e("33213"), n.e("73709")]).then(n.bind(n, 545135));
@@ -85,7 +85,7 @@ function M(e, t) {
   })
 }
 let k = Chunk473749.memo(function(e) {
-  var t, n, l, f, k;
+  var t, n, l, h, k;
   let {
     guildNode: G,
     setRef: U,
@@ -93,8 +93,8 @@ let k = Chunk473749.memo(function(e) {
     onDragEnd: F,
     route: V,
     guild: H,
-    animatable: z,
-    selected: W = false,
+    animatable: W,
+    selected: z = false,
     unread: K = false,
     mediaState: Y,
     unavailable: q = false,
@@ -112,16 +112,16 @@ let k = Chunk473749.memo(function(e) {
     id: eo,
     parentId: ea
   } = G, es = null != (t = e.upperBadge) ? t : q ? (0, Z.Ny)() : null != Y ? (0, Z.Or)(Y) : true, ec = null != (n = e.lowerBadge) ? n : true;
-  null == ec && X > 0 ? ec = null != (l = (0, Z.Ne)(X, Q ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : true : null == ec && null != en && (ec = null != (f = (0, Z.jt)({
+  null == ec && X > 0 ? ec = null != (l = (0, Z.Ne)(X, Q ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : true : null == ec && null != en && (ec = null != (h = (0, Z.jt)({
     guildJoinRequestStatus: en
-  })) ? f : true);
+  })) ? h : true);
   let eu = null != (k = e.lowerBadgeSize) ? k : {
-      width: (0, p.OVM)(X)
+      width: (0, f.OVM)(X)
     },
     [{
       dragging: ed
-    }, ep] = (0, a.c)({
-      type: C.eD.GUILD,
+    }, ef] = (0, a.c)({
+      type: x.eD.GUILD,
       item: () => (requestAnimationFrame(() => {
         null == B || B()
       }), {
@@ -135,9 +135,9 @@ let k = Chunk473749.memo(function(e) {
         dragging: e.isDragging()
       })
     }),
-    eh = (0, c.Ie)(null != eo ? eo : w.lds, null != ea ? 2 : 1),
-    [ef, eg] = i.useState(false),
-    em = !ee && ef,
+    ep = (0, c.Ie)(null != eo ? eo : w.lds, null != ea ? 2 : 1),
+    [eh, eg] = i.useState(false),
+    em = !ee && eh,
     [eb, e_] = i.useState(false),
     [ey, eO] = i.useState(false),
     [ev] = i.useState(() => new d.sW(70, () => eO(true)));
@@ -150,15 +150,15 @@ let k = Chunk473749.memo(function(e) {
         state: L
       })
     }, [eo, V]),
-    eC = i.useCallback(() => {
+    ex = i.useCallback(() => {
       if (null != V || null == H || q || !et) return;
       let e = (0, b.V)(H.id);
-      null != e && h.Z.preload(H.id, e)
+      null != e && p.Z.preload(H.id, e)
     }, [V, H, q, et]),
-    ex = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
+    eC = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
     eE = i.useCallback(e => {
-      null == H || ex || J(e, H)
-    }, [H, J, ex]),
+      null == H || eC || J(e, H)
+    }, [H, J, eC]),
     eS = i.useCallback(e => {
       if ("ArrowLeft" === e.key && null != ea) {
         var t;
@@ -172,19 +172,19 @@ let k = Chunk473749.memo(function(e) {
     eP = i.useCallback(e => {
       null == U || U(eo, e)
     }, [eo, U]),
-    eN = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
+    eN = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == H) return null;
   let eZ = ey || eb ? (0, r.jsx)(E.Z, {
       guild: H,
       show: ey,
-      active: W,
+      active: z,
       onAnimationStart: function() {
         e_(ey)
       },
       onAnimationRest: function() {
         ey || e_(false)
       }
-    }) : (0, r.jsx)(p.LYs, D(R({
+    }) : (0, r.jsx)(f.LYs, D(R({
       ariaLabel: T.intl.formatToPlainString(T.t["/uzRss"], {
         guildName: H.name,
         mentions: X
@@ -197,21 +197,21 @@ let k = Chunk473749.memo(function(e) {
       onMouseLeave: function() {
         ee || eg(false)
       },
-      onMouseDown: eC,
+      onMouseDown: ex,
       onContextMenu: eE,
       onKeyDown: eS,
-      icon: (0, O.EB)(H, 2 * eN, em && z, true),
-      selected: W || em
-    }, eh), {
+      icon: (0, O.EB)(H, 2 * eN, em && W, true),
+      selected: z || em
+    }, ep), {
       "aria-setsize": ei,
       "aria-posinset": el,
-      "aria-selected": W
+      "aria-selected": z
     })),
     ew = ed ? (0, r.jsx)(S.OG, {
       children: (0, r.jsx)(P.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? e => {
-        ep(e)
+        ef(e)
       } : true,
       "data-dnd-name": H.name,
       style: {
@@ -221,9 +221,9 @@ let k = Chunk473749.memo(function(e) {
       className: o()(A.blobContainer, {
         [A.sorting]: ee,
         [A.wobble]: ey,
-        [A.selected]: ey || W
+        [A.selected]: ey || z
       }),
-      children: (0, r.jsx)(p.aRk, {
+      children: (0, r.jsx)(f.aRk, {
         selected: true,
         upperBadge: es,
         lowerBadge: ec,
@@ -233,9 +233,9 @@ let k = Chunk473749.memo(function(e) {
     });
   return (0, r.jsxs)(N.H, {
     ref: eP,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(C.Z, {
       hovered: !ed && em,
-      selected: !ed && W,
+      selected: !ed && z,
       unread: !ed && K,
       className: A.pill
     }), (0, r.jsx)(I.Z, {

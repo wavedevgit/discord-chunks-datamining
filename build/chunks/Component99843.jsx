@@ -21,7 +21,7 @@ let b = e => {
     let {
       channel: t
     } = e;
-    return (0, p.m$)({
+    return (0, f.m$)({
       channelId: t.id
     }) ? (0, r.jsx)(l.u, {
       text: g.intl.string(g.t.QyZ4Td),
@@ -35,7 +35,7 @@ let b = e => {
   _ = Chunk473749.memo(function(e) {
     let {
       channel: t
-    } = e, i = t.id, p = (0, c.ZP)(t);
+    } = e, i = t.id, f = (0, c.ZP)(t);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.u, {
         asContainer: true,
@@ -88,7 +88,7 @@ let b = e => {
           }),
           onDoubleClick: e => e.stopPropagation(),
           onMouseEnter: () => {
-            h.default.track(f.rMx.GDM_EDIT_INTERACTED, {
+            p.default.track(h.rMx.GDM_EDIT_INTERACTED, {
               channel_id: t.id,
               action: "entry_point_hovered",
               location: s.Z.HEADER_BAR
@@ -104,7 +104,7 @@ let b = e => {
           }), (0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "header-primary",
-            children: null != p ? p : ""
+            children: null != f ? f : ""
           }), (0, r.jsx)(o.vdY, {
             className: m.editIcon,
             size: "xs",

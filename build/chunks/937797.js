@@ -6,7 +6,8 @@ require.d(exports, {
   DL: () => i,
   EO: () => l,
   eC: () => u,
-  m_: () => s
+  m_: () => s,
+  n0: () => d
 });
 var Chunk427164 = require("./427164.js");
 let i = (0, Chunk427164.le)({
@@ -119,4 +120,16 @@ let l = (0, Chunk427164.le)({
       enabled: t,
       minutes: 0
     }
-  }
+  },
+  d = (0, Chunk427164.le)({
+    name: "2025-11-quest-home-takeover-client-rollout",
+    kind: "user",
+    defaultConfig: {
+      enabled: false
+    },
+    variations: {
+      1: {
+        enabled: true
+      }
+    }
+  })
