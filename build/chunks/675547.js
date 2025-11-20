@@ -16,7 +16,7 @@ function d(e) {
   let {
     location: t,
     channel: n
-  } = e, d = (0, s.c)({
+  } = e, d = (0, s.cZ)({
     location: t
   }), [p] = (0, i.e7)([l.Z], () => [l.Z.getParticipants(n.id), l.Z.getParticipantsVersion(n.id)], [n.id], r.Lc), h = (0, i.e7)([o.Z], () => {
     for (let e of p)

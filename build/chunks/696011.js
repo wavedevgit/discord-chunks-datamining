@@ -39,7 +39,7 @@ class g extends Chunk147913.Z {
     }), h(this, "_handleApexExperimentUpdate", () => {
       this._handleShowAnnouncementModal()
     }), h(this, "_handleShowAnnouncementModal", () => {
-      if (!this._didAttemptToOpenModal && this._didConnectionOpen && this._didUserSettingsProtoLoad && this._didGamesSeenLoad && (0, d.n)({
+      if (!this._didAttemptToOpenModal && this._didConnectionOpen && this._didUserSettingsProtoLoad && this._didGamesSeenLoad && (0, d.ne)({
           location: "social-layer-storefront-announcement-modal"
         }) && (this._didAttemptToOpenModal = true, !(0, a.zu)(r.z.GAME_SHOP_ANNOUNCEMENT_MODAL))) {
         if (null != c.Z.getGuild((0, u.ac)())) return void(0, f.b)();

@@ -96,7 +96,7 @@ function k(e) {
       currentUser: y.default.getCurrentUser(),
       wishlistSettings: null != e ? O.Z.getWishlistSettings(n.id, e) : null
     }
-  }), N = (0, p.c)({
+  }), N = (0, p.cZ)({
     location: "user-profile-modal-v2-wishlist"
   }), {
     analyticsLocations: A

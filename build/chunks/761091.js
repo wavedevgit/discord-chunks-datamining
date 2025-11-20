@@ -28,7 +28,7 @@ function v(e) {
     v = (0, d.j0)(e.id),
     j = (0, i.u)(e),
     x = (0, m.wK)(e),
-    C = (0, b.c)({
+    C = (0, b.cZ)({
       location: "guild-action-rows"
     }),
     E = (0, c.g)(e.id),

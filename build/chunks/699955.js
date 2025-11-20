@@ -2,21 +2,29 @@
 /** chunk id: 699955, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  c: () => i,
-  n: () => a
+  NN: () => o,
+  cZ: () => i,
+  ne: () => a
 });
 let r = (0, require("./427164.js").le)({
   name: "2025-12-social-layer-storefront-user-experiment",
   kind: "user",
   defaultConfig: {
-    enabled: false
+    enabled: false,
+    wishlistRetargetingEnabled: false
   },
   variations: {
     0: {
-      enabled: false
+      enabled: false,
+      wishlistRetargetingEnabled: false
     },
     1: {
-      enabled: true
+      enabled: true,
+      wishlistRetargetingEnabled: false
+    },
+    2: {
+      enabled: true,
+      wishlistRetargetingEnabled: true
     }
   }
 });
@@ -37,4 +45,13 @@ function a(e) {
   return r.getConfig({
     location: t
   }).enabled
+}
+
+function o(e) {
+  let {
+    location: t
+  } = e;
+  return r.useConfig({
+    location: t
+  }).wishlistRetargetingEnabled
 }
