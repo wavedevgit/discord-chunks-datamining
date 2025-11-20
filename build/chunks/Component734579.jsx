@@ -13,30 +13,30 @@ var Chunk54381 = require("./54381.js"),
   Chunk377171 = require("./377171.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk703656 = require("./703656.js"),
+  Chunk164670 = require("./164670.js"),
   Chunk210218 = require("./210218.js"),
   Chunk445606 = require("./445606.jsx"),
   Chunk819640 = require("./819640.js"),
   Chunk434479 = require("./434479.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk582113 = require("./582113.js"),
   Chunk388032 = require("./388032.jsx");
 let v = Chunk473749.memo(function(e) {
   let {
     guild: t,
     selected: v
-  } = e, j = i.useRef(null), x = (0, a.f9)(), C = (0, l.e7)([g.Z], () => g.Z.hasLayers()), [E, S] = (0, d.ZT)([o.z.GAME_SHOP_NEW_BADGE], t.id);
+  } = e, j = i.useRef(null), x = (0, a.f9)(), C = (0, l.e7)([m.Z], () => m.Z.hasLayers()), [E, S] = (0, d.ZT)([o.z.GAME_SHOP_NEW_BADGE], t.id);
   i.useEffect(() => {
-    v && E === o.z.GAME_SHOP_NEW_BADGE && S(_.L.INDIRECT_ACTION)
+    v && E === o.z.GAME_SHOP_NEW_BADGE && S(y.L.INDIRECT_ACTION)
   }, [S, v, E]);
   let I = i.useCallback(() => {
       var e, n;
-      S(_.L.USER_DISMISS);
-      let r = null != (n = null == (e = p.Z.getStorefrontState(t.id)) ? true : e.activePage) ? n : 0;
-      (0, f.uL)(b.Z5c.CHANNELS_GAME_SHOP(t.id, r))
+      S(y.L.USER_DISMISS);
+      let r = null != (n = null == (e = h.Z.getStorefrontState(t.id)) ? true : e.activePage) ? n : 0;
+      (0, f.uL)(_.Z5c.CHANNELS_GAME_SHOP(t.id, r))
     }, [t, S]),
     P = i.useCallback(() => {
-      S(_.L.USER_DISMISS)
+      S(y.L.USER_DISMISS)
     }, [S]),
     N = i.useCallback(e => {
       null != t && (0, c.jW)(e, async () => {
@@ -78,7 +78,7 @@ let v = Chunk473749.memo(function(e) {
       })
     }, [t]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(m.m, {
+    children: [(0, r.jsx)(b.m, {
       ref: j,
       id: "game-shop-".concat(t.id),
       renderIcon: e => (0, r.jsx)(s.EOn, {
@@ -88,7 +88,7 @@ let v = Chunk473749.memo(function(e) {
         height: 20,
         className: e
       }),
-      text: (null == t ? true : t.id) === y.ON ? O.intl.string(O.t.xFQAPs) : O.intl.string(O.t.vyaWs7),
+      text: (null == t ? true : t.id) === (0, p.ac)() ? O.intl.string(O.t.xFQAPs) : O.intl.string(O.t.vyaWs7),
       selected: v,
       onClick: I,
       onContextMenu: N,
@@ -96,7 +96,7 @@ let v = Chunk473749.memo(function(e) {
         text: O.intl.string(O.t.y2b7CA),
         color: u.Z.BG_BRAND
       })
-    }), x || C || (null == t ? true : t.id) !== y.ON || E !== o.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(h.Z, {
+    }), x || C || (null == t ? true : t.id) !== (0, p.ac)() || E !== o.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(g.Z, {
       onActionClick: I,
       onRequestClose: P,
       targetElementRef: j

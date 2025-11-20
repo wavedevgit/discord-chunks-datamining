@@ -1,7 +1,7 @@
 /** Chunk was on 21854 **/
 /** chunk id: 211912, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => N
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,8 +12,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk266454 = require("./266454.js"),
   Chunk626135 = require("./626135.js"),
+  Chunk164670 = require("./164670.js"),
   Chunk705338 = require("./705338.js"),
-  Chunk582113 = require("./582113.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk867709 = require("./867709.js"),
   Chunk157443 = require("./157443.js");
 
-function g(e) {
+function N(e) {
   let {
     transitionState: t,
     returnRef: a,
@@ -32,9 +32,9 @@ function g(e) {
       type: "Social Layer Storefront Announcement Modal"
     }), (0, d.Q3)(c.z.GAME_SHOP_ANNOUNCEMENT_MODAL)
   }, []);
-  let g = s.useCallback(() => {
-    (0, u.Z)({
-      guildId: f.ON
+  let N = s.useCallback(() => {
+    (0, f.Z)({
+      guildId: (0, u.ac)()
     }), n()
   }, [n]);
   return (0, r.jsx)(l.f6W, {
@@ -73,7 +73,7 @@ function g(e) {
             children: [(0, r.jsx)("div", {
               className: j.featureIcon,
               children: (0, r.jsx)("img", {
-                src: N,
+                src: g,
                 alt: ""
               })
             }), (0, r.jsxs)("div", {
@@ -112,7 +112,7 @@ function g(e) {
         }), (0, r.jsx)(l.zxk, {
           variant: "primary",
           text: p.intl.string(p.t.CekBHq),
-          onClick: g
+          onClick: N
         })]
       })
     })

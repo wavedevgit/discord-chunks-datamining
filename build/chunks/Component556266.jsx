@@ -85,10 +85,10 @@ function P(e) {
     giftingOrigin: w
   } = e, {
     analyticsLocations: y
-  } = (0, r.ZP)(v, a.Z.SLAYER_STOREFRONT_PAYMENT_MODAL), N = (0, s.q)(n);
+  } = (0, r.ZP)(v, a.Z.SLAYER_STOREFRONT_PAYMENT_MODAL), T = (0, s.q)(n);
   return l.useEffect(() => {
-    null == N || null == N.guildId || null == g || p.Z.isFetchingForSKU(g) || null != m.Z.get(g) || (0, x.y)(N.guildId, g)
-  }, [N, g]), (0, i.jsx)(r.Gt, {
+    null == T || null == T.guildId || null == g || p.Z.isFetchingForSKU(g) || null != m.Z.get(g) || (0, x.y)(T.guildId, g)
+  }, [T, g]), (0, i.jsx)(r.Gt, {
     value: y,
     children: (0, i.jsx)(d.PaymentContextProvider, {
       loadId: t,
