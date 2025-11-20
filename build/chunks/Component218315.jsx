@@ -6,14 +6,14 @@ require.d(exports, {
 }), require("./388685.js"), require("./997841.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk95015 = require("./95015.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk147913 = require("./147913.js"),
   Chunk160404 = require("./160404.js"),
   Chunk314897 = require("./314897.js"),
   Chunk592125 = require("./592125.js"),
   Chunk271383 = require("./271383.js"),
   Chunk914010 = require("./914010.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk526120 = require("./526120.js"),
   Chunk563534 = require("./563534.js"),
   Chunk734893 = require("./734893.js"),
@@ -70,20 +70,20 @@ class I extends Chunk147913.Z {
       MESSAGE_CREATE: e => this.handleMessageSend(e),
       THREAD_CREATE: e => this.handleThreadCreate(e)
     }), b(this, "handlePostConnectionOpen", () => {
-      let e = u.Z.getGuildId();
+      let e = d.Z.getGuildId();
       null != e && this._getOrLoadOnboardingMemberActions(e)
     }), b(this, "handleGuildMemberUpdate", e => {
       let {
         flags: t,
-        user: a,
-        guildId: o
+        user: o,
+        guildId: s
       } = e;
-      if (a.id === s.default.getId() && !this.onboardingCompleteGuilds.has(o) && (0, d.yE)(null != t ? t : 0, E.q.COMPLETED_HOME_ACTIONS)) {
-        var l, c;
-        this.onboardingCompleteGuilds.add(o);
-        let e = null != (c = null == (l = _.Z.getNewMemberActions(o)) ? true : l.length) ? c : 0;
+      if (o.id === l.default.getId() && !this.onboardingCompleteGuilds.has(s) && (0, i.yE)(null != t ? t : 0, E.q.COMPLETED_HOME_ACTIONS)) {
+        var c, u;
+        this.onboardingCompleteGuilds.add(s);
+        let e = null != (u = null == (c = _.Z.getNewMemberActions(s)) ? true : c.length) ? u : 0;
         if (0 === e) return;
-        (0, i.ZDy)(async () => {
+        (0, a.ZDy)(async () => {
           let {
             default: t
           } = await n.e("92339").then(n.bind(n, 184100));
@@ -116,8 +116,8 @@ class I extends Chunk147913.Z {
         channelId: r,
         message: i
       } = e;
-      if (null == n || null == r || (null == (t = i.author) ? true : t.id) !== s.default.getId()) return;
-      let a = l.Z.getChannel(r);
+      if (null == n || null == r || (null == (t = i.author) ? true : t.id) !== l.default.getId()) return;
+      let a = c.Z.getChannel(r);
       (null == a ? true : a.isForumPost()) && (null == a ? true : a.parent_id) != null && this._completeChatAction(n, a.parent_id), this._completeChatAction(n, r)
     }), b(this, "handleThreadCreate", e => {
       var t;
@@ -125,7 +125,7 @@ class I extends Chunk147913.Z {
         channel: n,
         isNewlyCreated: r
       } = e;
-      r && null != n.parent_id && (null == (t = l.Z.getChannel(n.parent_id)) ? true : t.isForumLikeChannel()) && n.ownerId === s.default.getId() && this._completeChatAction(n.guild_id, n.parent_id)
+      r && null != n.parent_id && (null == (t = c.Z.getChannel(n.parent_id)) ? true : t.isForumLikeChannel()) && n.ownerId === l.default.getId() && this._completeChatAction(n.guild_id, n.parent_id)
     }), b(this, "_completeChatAction", async (e, t) => {
       let {
         memberActions: n,
@@ -134,9 +134,9 @@ class I extends Chunk147913.Z {
       (null == r ? true : r[t]) !== true && null != i && i.actionType === p.NewMemberActionTypes.CHAT && (0, f.Oh)(e, t)
     }), b(this, "_getOrLoadOnboardingMemberActions", async e => {
       let t = (0, m.s)(e),
-        n = o.Z.isFullServerPreview(e);
+        n = s.Z.isFullServerPreview(e);
       if (!t && !n) return {};
-      let r = c.ZP.getSelfMember(e);
+      let r = u.ZP.getSelfMember(e);
       if (null == r || !(0, g.m)(e)) return {};
       let [i, a] = await Promise.all([this._getOrLoadOnboardingHomeSettings(e), this._getOrLoadMemberActions(e, r)]);
       return {
@@ -155,9 +155,9 @@ class I extends Chunk147913.Z {
       var n;
       let {
         completedActions: r,
-        loading: i
+        loading: a
       } = h.Z.getState(e);
-      return null == r && !i && (0, d.yE)(null != (n = t.flags) ? n : 0, E.q.STARTED_HOME_ACTIONS) ? await (0, f.Fg)(e) : r
+      return null == r && !a && (0, i.yE)(null != (n = t.flags) ? n : 0, E.q.STARTED_HOME_ACTIONS) ? await (0, f.Fg)(e) : r
     })
   }
 }

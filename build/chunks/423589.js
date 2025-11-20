@@ -5,10 +5,10 @@ require.d(exports, {
   OD: () => S,
   W9: () => g
 }), require("./388685.js"), require("./997841.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk95015 = require("./95015.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk798140 = require("./798140.js"),
   Chunk9156 = require("./9156.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js"),
   Chunk969943 = require("./969943.js"),
@@ -45,13 +45,13 @@ let _ = {
 function S(t) {
   let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : _;
   return r.default.keys(t).filter(e => {
-    var n, s;
+    var l, a;
     let r = t[e].message_notifications !== d.bL.NULL,
-      o = a.yE(null != (n = t[e].flags) ? n : 0, c.ic.UNREADS_ALL_MESSAGES) || a.yE(null != (s = t[e].flags) ? s : 0, c.ic.UNREADS_ONLY_MENTIONS);
-    return !i.ignoreUnreadSetting && o || !i.ignoreNotificationSetting && r || !i.ignoreMute && (0, l.m$)(t[e])
+      o = n.yE(null != (l = t[e].flags) ? l : 0, c.ic.UNREADS_ALL_MESSAGES) || n.yE(null != (a = t[e].flags) ? a : 0, c.ic.UNREADS_ONLY_MENTIONS);
+    return !i.ignoreUnreadSetting && o || !i.ignoreNotificationSetting && r || !i.ignoreMute && (0, s.m$)(t[e])
   })
 }
 
 function L(t) {
-  return (0, n.e7)([s.ZP], () => s.ZP.useNewNotifications)
+  return (0, l.e7)([a.ZP], () => a.ZP.useNewNotifications)
 }

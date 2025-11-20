@@ -82,7 +82,7 @@ function ee(e) {
     avatarSrc: d,
     eventHandlers: u,
     isAvatarAnimating: h
-  } = (0, O.Z)({
+  } = (0, v.Z)({
     user: s,
     guildId: i.id,
     size: 120
@@ -94,7 +94,7 @@ function ee(e) {
     onlyAnimateOnHoverOrFocus: !h
   }), _ = (0, o.e7)([y.ZP], () => y.ZP.getSelfMember(i.id)), b = (0, o.Wu)([y.ZP], () => y.ZP.getMemberRoleWithPendingUpdates(i.id, s.id)), I = (0, o.e7)([N.Z], () => N.Z.getSortedRoles(i.id)), w = (0, C.ZP)(i.id, s.id), Z = I.filter(e => b.includes(e.id)), P = (0, j.ZP)(s.id, i.id);
   (0, p.ZP)(() => {
-    (0, v.Z)(s.id, s.getAvatarURL(i.id, (0, c.pxk)(J)), {
+    (0, O.Z)(s.id, s.getAvatarURL(i.id, (0, c.pxk)(J)), {
       guildId: i.id
     })
   });
@@ -191,7 +191,7 @@ function en(e) {
     handleSelectOption: b
   } = (0, D.Z)(i.id), j = t.options.map(e => K({
     value: e.id
-  }, e)), O = t.options.filter(e => _.includes(e.id)).map(e => e.id);
+  }, e)), v = t.options.filter(e => _.includes(e.id)).map(e => e.id);
   return (0, r.jsxs)("div", {
     className: X.prompt,
     "data-new": t.isNew,
@@ -211,7 +211,7 @@ function en(e) {
       }) : null]
     }), (0, r.jsx)(G.Z, {
       options: j,
-      value: O,
+      value: v,
       onChange: e => {
         let n = e.find(e => !_.includes(e.id)),
           r = e.map(e => e.id);
@@ -333,8 +333,8 @@ function el(e) {
     (0, b.uL)(W.Z5c.CHANNEL(n, q.oC.CHANNEL_BROWSER)), null == t || t()
   }, [n, t]), C = (0, o.e7)([w.ZP], () => w.ZP.hasUnread(n, z.W.GUILD_ONBOARDING_QUESTION)), {
     onboardingPromptsRaw: j,
-    newOnboardingPrompts: O,
-    onboardingPromptsWithNewAnswers: v,
+    newOnboardingPrompts: v,
+    onboardingPromptsWithNewAnswers: O,
     newAnswersCount: y,
     onboardingPrompts: N
   } = (0, R.Z)(n);
@@ -392,16 +392,16 @@ function el(e) {
     fade: true,
     children: [(0, r.jsxs)("div", {
       className: X.pageBody,
-      children: [(O.length > 0 || v.length > 0) && (0, r.jsxs)(r.Fragment, {
+      children: [(v.length > 0 || O.length > 0) && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           children: (0, r.jsx)(c.Heading, {
             variant: "heading-md/semibold",
             color: "header-primary",
             children: V.intl.format(V.t.iB5Gqe, {
-              count: O.length + y
+              count: v.length + y
             })
           })
-        }), O.map(S), v.map(S), (0, r.jsx)("div", {
+        }), v.map(S), O.map(S), (0, r.jsx)("div", {
           className: X.sectionSeparator
         })]
       }), N.length > 0 && (0, r.jsxs)(r.Fragment, {

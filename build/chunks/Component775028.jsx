@@ -238,7 +238,7 @@ let H = Chunk473749.memo(function() {
               children: (0, r.jsx)(h.Button, {
                 size: "sm",
                 variant: "overlay-primary",
-                onClick: e => ((e.stopPropagation(), D.has(n.type) || e.shiftKey) ? (0, j.XU)(i.id, n.id) : n.isGuildStageVoice() || n.isGuildVoice() ? (0, v.Cq)(n) : O.Z.openChannelAsSidebar({
+                onClick: e => ((e.stopPropagation(), D.has(n.type) || e.shiftKey) ? (0, j.XU)(i.id, n.id) : n.isGuildStageVoice() || n.isGuildVoice() ? (0, O.Cq)(n) : v.Z.openChannelAsSidebar({
                   guildId: n.guild_id,
                   channelId: n.id,
                   baseChannelId: S.oC.CHANNEL_BROWSER

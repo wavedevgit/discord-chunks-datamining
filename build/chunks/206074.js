@@ -6,6 +6,7 @@ require.d(exports, {
   q: () => b
 }), require("./388685.js"), require("./997841.js");
 var Chunk473749 = require("./473749.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk704215 = require("./704215.js"),
   Chunk915346 = require("./915346.js"),
   Chunk783097 = require("./783097.js"),
@@ -13,14 +14,13 @@ var Chunk473749 = require("./473749.js"),
   Chunk266454 = require("./266454.js"),
   Chunk165062 = require("./165062.js"),
   Chunk626135 = require("./626135.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk131734 = require("./131734.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js");
 let h = new Set;
 
 function m(e) {
-  return (0, d.yE)(e.flags, _.udG.CLOUD_GAMING_DEMO) && (0, d.yE)(e.flags, _.udG.EMBEDDED)
+  return (0, i.yE)(e.flags, _.udG.CLOUD_GAMING_DEMO) && (0, i.yE)(e.flags, _.udG.EMBEDDED)
 }
 
 function g(e) {
@@ -37,7 +37,7 @@ function E(e) {
     {
       data: i,
       refetch: a
-    } = (0, s.IX)(n);
+    } = (0, l.IX)(n);
   return r.useEffect(() => {
     null == n || null == i || null != i.bot || h.has(n) || (a(), h.add(n))
   }, [n, i, a]), i
@@ -46,7 +46,7 @@ function E(e) {
 function b(e) {
   let {
     data: t
-  } = (0, c.f)(), n = E(e), {
+  } = (0, u.f)(), n = E(e), {
     bot: r
   } = null != n ? n : {
     bot: null
@@ -54,7 +54,7 @@ function b(e) {
   return null != e && ((null == e ? true : e.embeddedActivityConfig) == null || !!g({
     countryCode: null == t ? true : t.alpha2,
     activity: e.embeddedActivityConfig
-  })) && (!!m(e) || null != r && null != n && !!(0, o.ye)(n) && ((null == n ? true : n.embeddedActivityConfig) == null || !!g({
+  })) && (!!m(e) || null != r && null != n && !!(0, s.ye)(n) && ((null == n ? true : n.embeddedActivityConfig) == null || !!g({
     countryCode: null == t ? true : t.alpha2,
     activity: n.embeddedActivityConfig
   })))
@@ -64,44 +64,44 @@ function y(e) {
   let {
     application: t,
     analyticsLocations: n
-  } = e, o = b(t), {
+  } = e, i = b(t), {
     bot: s
   } = null != t ? t : {
     bot: null
-  }, c = E(t), {
-    bot: d
-  } = null != c ? c : {
+  }, l = E(t), {
+    bot: u
+  } = null != l ? l : {
     bot: null
   };
   return r.useMemo(() => {
-    if (!o || null == t) return null;
+    if (!i || null == t) return null;
     let e = () => {
-      (0, l.Q3)(i.z.CLOUD_PLAY_NEW_BADGE, {
+      (0, c.Q3)(a.z.CLOUD_PLAY_NEW_BADGE, {
         dismissAction: p.L.TAKE_ACTION
-      }), (0, l.Q3)(i.z.CLOUD_PLAY_POPOVER, {
+      }), (0, c.Q3)(a.z.CLOUD_PLAY_POPOVER, {
         dismissAction: p.L.TAKE_ACTION
       })
     };
     return m(t) && null != s ? () => {
-      e(), u.default.track(_.rMx.CLOUD_PLAY_CTA_CLICKED, {
+      e(), d.default.track(_.rMx.CLOUD_PLAY_CTA_CLICKED, {
         source_application_id: t.id,
         launching_application_id: t.id,
         location_stack: n
-      }), (0, a.W)({
+      }), (0, o.W)({
         appId: t.id,
         botId: s.id,
         analyticsLocations: null != n ? n : []
       })
-    } : (null == c ? true : c.id) != null && (null == d ? true : d.id) != null ? () => {
-      e(), u.default.track(_.rMx.CLOUD_PLAY_CTA_CLICKED, {
+    } : (null == l ? true : l.id) != null && (null == u ? true : u.id) != null ? () => {
+      e(), d.default.track(_.rMx.CLOUD_PLAY_CTA_CLICKED, {
         source_application_id: t.id,
-        launching_application_id: c.id,
+        launching_application_id: l.id,
         location_stack: n
-      }), (0, a.W)({
-        appId: c.id,
-        botId: d.id,
+      }), (0, o.W)({
+        appId: l.id,
+        botId: u.id,
         analyticsLocations: null != n ? n : []
       })
     } : true
-  }, [o, t, s, null == c ? true : c.id, null == d ? true : d.id, n])
+  }, [i, t, s, null == l ? true : l.id, null == u ? true : u.id, n])
 }

@@ -4,14 +4,14 @@
 require.d(exports, {
   Z: () => T
 }), require("./388685.js"), require("./997841.js");
-var r, Chunk442837 = require("./442837.js"),
+var r, Chunk95015 = require("./95015.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
   Chunk314897 = require("./314897.js"),
   Chunk592125 = require("./592125.js"),
   Chunk496675 = require("./496675.js"),
   Chunk594174 = require("./594174.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk110630 = require("./110630.js"),
   Chunk981631 = require("./981631.js");
 
@@ -32,12 +32,12 @@ function E(e) {
   let {
     channelId: n,
     message: r,
-    optimistic: i
+    optimistic: a
   } = e;
-  if (i || m.has(n)) returnfalse;
-  let a = l.Z.getChannel(n),
-    o = u.default.getCurrentUser();
-  if (!(null != a && a.type === _.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != o && (null == (t = r.author) ? true : t.id) === o.id ? c.Z.can(_.Plq.SEND_MESSAGES, a) : c.Z.can(_.Plq.MANAGE_MESSAGES, a)) && !d.yE(Number(r.flags), _.iLy.CROSSPOSTED))) returnfalse;
+  if (a || m.has(n)) returnfalse;
+  let o = c.Z.getChannel(n),
+    s = d.default.getCurrentUser();
+  if (!(null != o && o.type === _.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != s && (null == (t = r.author) ? true : t.id) === s.id ? u.Z.can(_.Plq.SEND_MESSAGES, o) : u.Z.can(_.Plq.MANAGE_MESSAGES, o)) && !i.yE(Number(r.flags), _.iLy.CROSSPOSTED))) returnfalse;
   g.add(r.id)
 }
 
@@ -45,7 +45,7 @@ function b(e) {
   let {
     message: t
   } = e;
-  g.has(t.id) && d.yE(Number(t.flags), _.iLy.CROSSPOSTED) && g.delete(t.id)
+  g.has(t.id) && i.yE(Number(t.flags), _.iLy.CROSSPOSTED) && g.delete(t.id)
 }
 
 function y(e) {
@@ -59,7 +59,7 @@ function O(e) {
   let {
     channelId: t
   } = e;
-  m.add(t), a.K.set(h, m), g.clear()
+  m.add(t), o.K.set(h, m), g.clear()
 }
 
 function v(e) {

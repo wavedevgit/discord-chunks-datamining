@@ -6,8 +6,8 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk915009 = require("./915009.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk88658 = require("./88658.js"),
   Chunk695346 = require("./695346.js"),
   Chunk838436 = require("./838436.jsx"),
@@ -36,7 +36,7 @@ function h() {
       children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
         title: Chunk388032.intl.string(Chunk388032.t.NfeuZ3),
         value: exports.all || exports.mutualFriends,
-        onChange: t => l.xq.updateSetting(t ? o.pj(e, f.SOq.MUTUAL_FRIENDS) : o.M1(e, f.SOq.MUTUAL_FRIENDS, f.SOq.NO_RELATION)),
+        onChange: t => l.xq.updateSetting(t ? a.pj(e, f.SOq.MUTUAL_FRIENDS) : a.M1(e, f.SOq.MUTUAL_FRIENDS, f.SOq.NO_RELATION)),
         disabled: require,
         tooltipText: require ? Chunk388032.intl.string(Chunk744038.default["6Af/cw"]) : true
       })
@@ -45,7 +45,7 @@ function h() {
       children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
         title: Chunk388032.intl.string(Chunk388032.t.qsMfsH),
         value: exports.all || exports.mutualGuilds,
-        onChange: t => l.xq.updateSetting(t ? o.pj(e, f.SOq.MUTUAL_GUILDS) : o.M1(e, f.SOq.MUTUAL_GUILDS, f.SOq.NO_RELATION)),
+        onChange: t => l.xq.updateSetting(t ? a.pj(e, f.SOq.MUTUAL_GUILDS) : a.M1(e, f.SOq.MUTUAL_GUILDS, f.SOq.NO_RELATION)),
         disabled: require,
         tooltipText: require ? Chunk388032.intl.string(Chunk744038.default["6Af/cw"]) : true
       })

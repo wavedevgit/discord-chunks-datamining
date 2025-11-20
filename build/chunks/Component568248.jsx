@@ -8,13 +8,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk95015 = require("./95015.js"),
   Chunk936141 = require("./936141.js"),
   Chunk768494 = require("./768494.js"),
   Chunk499376 = require("./499376.js"),
   Chunk128854 = require("./128854.jsx"),
   Chunk524444 = require("./524444.jsx"),
   Chunk411405 = require("./411405.jsx"),
-  Chunk630388 = require("./630388.js"),
   Chunk295435 = require("./295435.jsx"),
   Chunk217702 = require("./217702.js"),
   Chunk156259 = require("./156259.js");
@@ -25,9 +25,9 @@ function E(e) {
     media: t,
     spoiler: n,
     description: a
-  } = e, E = (0, c.pU)(t), b = (0, _.yE)(t.flags, l.hR.IS_ANIMATED), {
+  } = e, E = (0, u.pU)(t), b = (0, s.yE)(t.flags, c.hR.IS_ANIMATED), {
     gifAutoPlay: y
-  } = (0, u.c)(), [O, v] = i.useState(n), I = e => {
+  } = (0, d.c)(), [O, v] = i.useState(n), I = e => {
     var n, i;
     return "IMAGE" !== E ? (0, r.jsx)(p.S, {
       className: m.imgContainer,
@@ -37,7 +37,7 @@ function E(e) {
       maxWidth: g,
       maxHeight: g,
       hiddenSpoilers: e
-    }) : (0, r.jsx)(d.Yi, {
+    }) : (0, r.jsx)(f.Yi, {
       containerClassName: o()(m.imgContainer, {
         [m.hiddenSpoiler]: e
       }),
@@ -60,9 +60,9 @@ function E(e) {
       srcIsAnimated: b
     })
   };
-  return n ? (0, r.jsx)(f.ZP, {
-    type: f.ZP.Types.ATTACHMENT,
-    reason: s.wk.SPOILER,
+  return n ? (0, r.jsx)(_.ZP, {
+    type: _.ZP.Types.ATTACHMENT,
+    reason: l.wk.SPOILER,
     obscured: O,
     onToggleObscurity: () => v(e => !e),
     children: e => I(e)

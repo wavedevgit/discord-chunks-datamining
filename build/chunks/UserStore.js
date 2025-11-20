@@ -9,6 +9,7 @@ require.r(exports), require.d(exports, {
   users: () => O
 }), require("./388685.js"), require("./997841.js"), require("./825670.js"), require("./539854.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk911969 = require("./911969.js"),
   Chunk2572 = require("./2572.js"),
   Chunk864106 = require("./864106.js"),
@@ -19,7 +20,6 @@ var Chunk392711 = require("./392711.js"),
   Chunk921383 = require("./921383.js"),
   Chunk168232 = require("./168232.js"),
   Chunk598077 = require("./598077.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk823379 = require("./823379.js"),
   Chunk314897 = require("./314897.js"),
   Chunk750041 = require("./750041.js"),
@@ -49,7 +49,7 @@ function T(e, t, n) {
 
 function S(e, t) {
   let n = O[e];
-  return !(null == n || (0, c.d)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, c.l)(t.primary_guild), O[n.id] = n, v++, true)
+  return !(null == n || (0, u.d)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, u.l)(t.primary_guild), O[n.id] = n, v++, true)
 }
 
 function A(e, t) {
@@ -57,11 +57,11 @@ function A(e, t) {
     case null == e.primaryGuild && null == t.primary_guild:
       break;
     case null != e.primaryGuild && null == t.primary_guild:
-    case (0, c.d)(e.primaryGuild, t.primary_guild):
+    case (0, u.d)(e.primaryGuild, t.primary_guild):
       t.primary_guild = e.primaryGuild;
       break;
     default:
-      t.primary_guild = (0, c.l)(t.primary_guild)
+      t.primary_guild = (0, u.l)(t.primary_guild)
   }
   return t
 }
@@ -69,7 +69,7 @@ function A(e, t) {
 function C(e) {
   let t = e.mfa_enabled;
   null != t && (e.mfaEnabled = t, delete e.mfa_enabled);
-  let n = (0, f.G)(e.premium_type);
+  let n = (0, _.G)(e.premium_type);
   true !== n && (e.premiumType = n, delete e.premium_type);
   let r = e.nsfw_allowed;
   null != r && (e.nsfwAllowed = r, delete e.nsfw_allowed);
@@ -77,22 +77,22 @@ function C(e) {
   null != i && (e.ageVerificationStatus = i, delete e.age_verification_status);
   let a = e.public_flags;
   null != a && (e.publicFlags = a, delete e.public_flags);
-  let u = e.purchased_flags;
-  true !== u && (e.purchasedFlags = u, delete e.purchased_flags);
-  let _ = e.premium_usage_flags;
-  true !== _ && (e.premiumUsageFlags = _, delete e.premium_usage_flags), null === e.banner_color && delete e.banner_color;
+  let o = e.purchased_flags;
+  true !== o && (e.purchasedFlags = o, delete e.purchased_flags);
+  let d = e.premium_usage_flags;
+  true !== d && (e.premiumUsageFlags = d, delete e.premium_usage_flags), null === e.banner_color && delete e.banner_color;
   let p = e.avatar_decoration_data;
-  true !== p && (e.avatarDecorationData = (0, o.FG)(p), delete e.avatar_decoration_data);
+  true !== p && (e.avatarDecorationData = (0, s.FG)(p), delete e.avatar_decoration_data);
   let h = e.collectibles;
-  true !== h && (delete e.collectibles, e.collectibles = (0, s.Xm)(h));
+  true !== h && (delete e.collectibles, e.collectibles = (0, l.Xm)(h));
   let m = e.global_name;
   true !== m && (e.globalName = m, delete e.global_name);
   let g = e.primary_guild;
-  true !== g && (e.primary_guild = (0, c.l)(g));
+  true !== g && (e.primary_guild = (0, u.l)(g));
   let E = e.display_name_styles;
-  true !== E && (e.displayNameStyles = (0, l.bN)(E), delete e.display_name_styles);
+  true !== E && (e.displayNameStyles = (0, c.bN)(E), delete e.display_name_styles);
   let b = e.premium_state;
-  return true !== b && (e.premiumState = (0, d.C)(b), delete e.premium_state), e
+  return true !== b && (e.premiumState = (0, f.C)(b), delete e.premium_state), e
 }
 
 function N(e) {
@@ -103,12 +103,12 @@ function R(e) {
   let t, n = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     r = O[e.id],
     i = true !== e.id && e.id === m.default.getId();
-  if (null == r) true !== (t = (r = new _.Z(e)).premiumType) && i && (r.premiumType = D((0, f.QI)(r), r.premiumType));
+  if (null == r) true !== (t = (r = new p.Z(e)).premiumType) && i && (r.premiumType = D((0, _.QI)(r), r.premiumType));
   else if (n) {
     var a;
     let n = C(e);
-    true !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, f.VR)(n) && (n = P(n)), n = A(r, n), r = r.merge(n)
-  }(0, f.jX)((0, f.QI)(r), t, r.premiumType);
+    true !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, _.VR)(n) && (n = P(n)), n = A(r, n), r = r.merge(n)
+  }(0, _.jX)((0, _.QI)(r), t, r.premiumType);
   let o = O[e.id] !== r;
   return O[e.id] = r, o && v++, o
 }
@@ -116,14 +116,14 @@ function R(e) {
 function P(e) {
   var t;
   let n = null != (t = e.premium_type) ? t : e.premiumType,
-    r = D((0, f.VR)(e), n);
+    r = D((0, _.VR)(e), n);
   return true !== e.premiumType ? e.premiumType = r : true !== e.premium_type && (e.premium_type = r), e
 }
 
 function D(e, t) {
   if (!e) return t;
-  let n = u.Z.getPremiumTypeOverride(),
-    r = u.Z.getPremiumTypeActual();
+  let n = d.Z.getPremiumTypeOverride(),
+    r = d.Z.getPremiumTypeActual();
   return n === b.F_ ? r : n
 }
 
@@ -164,7 +164,7 @@ function x(e) {
     e.members.forEach(t => {
       T(t.user.id, e.id, t.avatar), S(t.user.id, t.user)
     })
-  }), null != O[m.default.getId()] && (O[I] = new _.Z({
+  }), null != O[m.default.getId()] && (O[I] = new p.Z({
     id: I,
     username: "Wumpus",
     discriminator: "0",
@@ -196,7 +196,7 @@ function k(e) {
 
 function j(e) {
   if (null != e.users)
-    for (let t of e.users) t.id in O && k(t) || (O[t.id] = new _.Z(t))
+    for (let t of e.users) t.id in O && k(t) || (O[t.id] = new p.Z(t))
 }
 
 function U(e) {
@@ -351,9 +351,9 @@ function J(e) {
   let {
     message: t
   } = e;
-  if (L(t, true), null != t.flags && p.yE(t.flags, E.iLy.URGENT)) {
+  if (L(t, true), null != t.flags && i.yE(t.flags, E.iLy.URGENT)) {
     let e = O[m.default.getId()];
-    return null != e && (O[m.default.getId()] = e.set("flags", p.mB(e.flags, E.xW$.HAS_UNREAD_URGENT_MESSAGES, true)), true)
+    return null != e && (O[m.default.getId()] = e.set("flags", i.mB(e.flags, E.xW$.HAS_UNREAD_URGENT_MESSAGES, true)), true)
   }
   returnfalse
 }
@@ -535,7 +535,7 @@ function ey(e) {
     users: t
   } = e;
   t.forEach(e => {
-    null == O[e.id] && (O[e.id] = new _.Z(e))
+    null == O[e.id] && (O[e.id] = new p.Z(e))
   })
 }
 
@@ -632,19 +632,19 @@ function eD(e) {
   let {
     participants: t
   } = e;
-  return t.reduce((e, t) => (0, a.Z)(t) && R(t.member.user) || e, false)
+  return t.reduce((e, t) => (0, o.Z)(t) && R(t.member.user) || e, false)
 }
 
 function ew(e) {
   let {} = e, t = O[m.default.getId()];
-  return null != t && (O[m.default.getId()] = t.set("ageVerificationStatus", i.F$.CLIENT_ONLY_PENDING), true)
+  return null != t && (O[m.default.getId()] = t.set("ageVerificationStatus", a.F$.CLIENT_ONLY_PENDING), true)
 }
 
 function eL(e) {
   let {
     status: t
   } = e, n = O[m.default.getId()];
-  return null != n && n.ageVerificationStatus === i.F$.CLIENT_ONLY_PENDING && (O[m.default.getId()] = n.set("ageVerificationStatus", t), true)
+  return null != n && n.ageVerificationStatus === a.F$.CLIENT_ONLY_PENDING && (O[m.default.getId()] = n.set("ageVerificationStatus", t), true)
 }
 
 function ex(e) {
@@ -676,9 +676,9 @@ class ek extends Chunk750041.Z {
   handleLoadCache(e) {
     let t = this.readSnapshot(ek.LATEST_SNAPSHOT_VERSION);
     if (null != t)
-      for (let e of t.users) O[e.id] = new _.Z(e);
+      for (let e of t.users) O[e.id] = new p.Z(e);
     if (null != e.users)
-      for (let t of e.users) t.id in O && k(t) || (O[t.id] = new _.Z(t));
+      for (let t of e.users) t.id in O && k(t) || (O[t.id] = new p.Z(t));
     for (let t of [e.privateChannels, e.initialGuildChannels])
       for (let e of t) {
         var n;

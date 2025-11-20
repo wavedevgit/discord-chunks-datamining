@@ -34,7 +34,7 @@ function w(e) {
   } = e, t = (0, C.Z)(n);
   l.useEffect(() => {
     (0, p.Q3)(s.z.CHANNEL_BROWSER_NEW_BADGE_NUX, {
-      dismissAction: v.L.DISMISS
+      dismissAction: O.L.DISMISS
     })
   });
   let i = t ? y.intl.formatToPlainString(y.t.uqZgYe, {
@@ -49,7 +49,7 @@ function w(e) {
     className: N.header,
     innerClassname: N.innerHeader,
     hideSearch: true,
-    channelId: O.oC.CUSTOMIZE_COMMUNITY,
+    channelId: v.oC.CUSTOMIZE_COMMUNITY,
     guildId: n.id,
     children: [(0, r.jsx)(h.Z.Icon, {
       icon: d.H$4,
@@ -68,14 +68,14 @@ function Z(e) {
   l.useEffect(() => {
     null != t && p(t)
   }, [t]);
-  let h = (0, o.e7)([_.ZP], () => _.ZP.getCurrentSidebarChannelId(O.oC.CHANNEL_BROWSER)),
-    v = null != h && u === j.l7.BROWSE,
+  let h = (0, o.e7)([_.ZP], () => _.ZP.getCurrentSidebarChannelId(v.oC.CHANNEL_BROWSER)),
+    O = null != h && u === j.l7.BROWSE,
     Z = (0, o.e7)([g.Z], () => g.Z.getNewChannelIds(n).size > 0),
     P = (0, m.fU)(n);
   return null == i ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: a()(I.chat, {
-        [I.threadSidebarOpen]: v
+        [I.threadSidebarOpen]: O
       }),
       children: [(0, r.jsx)(w, {
         guild: i
@@ -118,7 +118,7 @@ function Z(e) {
           }
         })()]
       })]
-    }), v && (0, r.jsx)(f.I, {
+    }), O && (0, r.jsx)(f.I, {
       channelId: h
     })]
   })

@@ -8,13 +8,13 @@ require.d(exports, {
   fD: () => A,
   w1: () => N
 }), require("./997841.js"), require("./704826.js"), require("./35282.js");
-var Chunk493683 = require("./493683.js"),
+var Chunk95015 = require("./95015.js"),
+  Chunk493683 = require("./493683.js"),
   Chunk911969 = require("./911969.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk835473 = require("./835473.js"),
   Chunk48131 = require("./48131.js"),
   Chunk813370 = require("./813370.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk358085 = require("./358085.js"),
   Chunk317381 = require("./317381.js"),
   Chunk638880 = require("./638880.js"),
@@ -38,7 +38,7 @@ function S(e) {
     activityItem: t,
     context: n,
     locationObject: r,
-    onActivityItemSelected: a,
+    onActivityItemSelected: i,
     embeddedActivitiesManager: o,
     assetNames: s = ["embedded_cover"],
     backgroundResolution: l = T,
@@ -65,7 +65,7 @@ function S(e) {
     context: n,
     locationObject: r,
     embeddedActivitiesManager: o,
-    onActivityItemSelectedProp: a,
+    onActivityItemSelectedProp: i,
     launchingComponentId: c,
     commandOrigin: d,
     source: f
@@ -76,17 +76,17 @@ function S(e) {
     joinableEmbeddedApp: S,
     activityAction: R,
     onActivityItemSelected: P,
-    labelType: O ? E.label_type : i.ww.NONE,
+    labelType: O ? E.label_type : a.ww.NONE,
     staffReleasePhase: D
   }
 }
 
 function A(e, t) {
   var n;
-  let r = null != (n = e.flags) ? n : 0;
-  if (!((0, c.yE)(r, v.udG.EMBEDDED_RELEASED) || (0, c.yE)(r, v.udG.EMBEDDED_FIRST_PARTY))) return;
-  let i = t.client_platform_config[(0, m.Z)((0, u.getOS)())].release_phase;
-  return O.eB.includes(i) ? i.replace("_", " ").replace(/(^\w|\s\w)/g, e => e.toUpperCase()) : true
+  let i = null != (n = e.flags) ? n : 0;
+  if (!((0, r.yE)(i, v.udG.EMBEDDED_RELEASED) || (0, r.yE)(i, v.udG.EMBEDDED_FIRST_PARTY))) return;
+  let a = t.client_platform_config[(0, m.Z)((0, u.getOS)())].release_phase;
+  return O.eB.includes(a) ? a.replace("_", " ").replace(/(^\w|\s\w)/g, e => e.toUpperCase()) : true
 }
 
 function C(e) {
@@ -94,16 +94,16 @@ function C(e) {
     context: t,
     applicationId: n,
     fetchesApplication: r = true
-  } = e, i = 0, a = "channel" === t.type ? t.channel : true, s = (0, E.Z)(), l = (0, b.Z)({
+  } = e, i = 0, a = "channel" === t.type ? t.channel : true, o = (0, E.Z)(), l = (0, b.Z)({
     fetchesApplication: r
-  }), c = (0, o.q)(n, r), u = (0, p.ZP)(a).find(e => {
+  }), c = (0, s.q)(n, r), u = (0, p.ZP)(a).find(e => {
     let {
       embeddedActivity: t
     } = e;
     return null != c && c.id === t.applicationId
   });
   if (null == c) return i;
-  let d = (0, h.p)(null == s ? true : s.location);
+  let d = (0, h.p)(null == o ? true : o.location);
   return null != a && d === a.id && (null == l ? true : l.id) === c.id ? i = 2 : null != u && (i = 1), i
 }
 
@@ -111,9 +111,9 @@ function N(e) {
   var t;
   let {
     application: n,
-    botUserIdForAppDM: i,
-    context: o,
-    locationObject: c,
+    botUserIdForAppDM: r,
+    context: a,
+    locationObject: s,
     embeddedActivitiesManager: u,
     onActivityItemSelectedProp: p,
     launchingComponentId: h,
@@ -125,12 +125,12 @@ function N(e) {
     referrerId: v,
     onConfirmActivityLaunchChecksAlertOpen: I
   } = e, T = null != (t = null == n ? true : n.id) ? t : "", S = C({
-    context: o,
+    context: a,
     applicationId: T,
     fetchesApplication: y
   }), {
     analyticsLocations: A
-  } = (0, a.ZP)(), N = (0, E.Z)(), R = (0, l.A)(n);
+  } = (0, o.ZP)(), N = (0, E.Z)(), R = (0, c.A)(n);
   if (null == n) return () => {
     null == p || p({
       applicationId: ""
@@ -141,7 +141,7 @@ function N(e) {
       return async () => {
         if (R) {
           try {
-            await s.Z.launchFrame({
+            await l.Z.launchFrame({
               applicationId: T
             }), null == p || p({
               applicationId: T
@@ -149,10 +149,10 @@ function N(e) {
           } catch (e) {}
           return
         }
-        let e = "channel" === o.type ? o.channel.id : true;
-        if (null != i) try {
-          e = await r.Z.openPrivateChannel({
-            recipientIds: i,
+        let e = "channel" === a.type ? a.channel.id : true;
+        if (null != r) try {
+          e = await i.Z.openPrivateChannel({
+            recipientIds: r,
             navigateToChannel: true
           })
         } catch (e) {
@@ -160,7 +160,7 @@ function N(e) {
         }
         await (0, _.Z)({
           targetApplicationId: T,
-          locationObject: c,
+          locationObject: s,
           channelId: e,
           analyticsLocations: A,
           componentId: h,
@@ -178,8 +178,8 @@ function N(e) {
       return async () => {
         d.ZP.isLaunchingActivity() || await (0, f.Z)({
           applicationId: T,
-          activityChannelId: "channel" === o.type ? o.channel.id : true,
-          locationObject: c,
+          activityChannelId: "channel" === a.type ? a.channel.id : true,
+          locationObject: s,
           analyticsLocations: A,
           componentId: h,
           sectionName: g,

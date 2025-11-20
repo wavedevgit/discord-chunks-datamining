@@ -5,8 +5,8 @@ require.d(exports, {
   Z: () => _
 }), require("./953529.js"), require("./997841.js");
 var Chunk314877 = require("./314877.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk81825 = require("./81825.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk959546 = require("./959546.js"),
   Chunk46141 = require("./46141.js"),
   Chunk659181 = require("./659181.js"),
@@ -77,13 +77,13 @@ class _ extends Chunk81825.Z {
     })
   }
   get isGift() {
-    return Chunk630388.yE(this.flags, 1)
+    return Chunk95015.yE(this.flags, 1)
   }
   get isPremiumGift() {
     return this.isGift && Object.values(Chunk474936.Si).includes(this.skuId)
   }
   get isGuildProductPurchase() {
-    return null != this.sku && (this.sku.productLine === Chunk981631.POd.GUILD_PRODUCT || Chunk630388.yE(this.sku.flags, Chunk314877.l.GUILD_PRODUCT))
+    return null != this.sku && (this.sku.productLine === Chunk981631.POd.GUILD_PRODUCT || Chunk95015.yE(this.sku.flags, Chunk314877.l.GUILD_PRODUCT))
   }
   get isSoftDeletedProduct() {
     var e;

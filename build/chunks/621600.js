@@ -13,14 +13,14 @@ require.d(exports, {
   sK: () => v,
   wK: () => C
 }), require("./997841.js"), require("./388685.js");
-var Chunk367907 = require("./367907.js"),
+var Chunk95015 = require("./95015.js"),
+  Chunk367907 = require("./367907.js"),
   Chunk601992 = require("./601992.js"),
   Chunk592125 = require("./592125.js"),
   Chunk375954 = require("./375954.js"),
   Chunk9156 = require("./9156.js");
 require("./626135.js");
-var Chunk630388 = require("./630388.js"),
-  Chunk981631 = require("./981631.js"),
+var Chunk981631 = require("./981631.js"),
   Chunk468788 = require("./468788.js"),
   Chunk490897 = require("./490897.js"),
   Chunk526761 = require("./526761.js");
@@ -86,8 +86,8 @@ let E = {
     [Chunk981631.bL.NULL]: null
   });
 
-function y(e, t, n, a, o) {
-  var s, d;
+function y(e, t, n, o, s) {
+  var l, d;
   let _ = function(e) {
       var t, n, r, i, a, o, s;
       let l = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
@@ -108,14 +108,14 @@ function y(e, t, n, a, o) {
     h = _(n),
     g = _(T(e), t),
     E = O(h, g, "RETURN_PREVIOUS_WHEN_CHANGED"),
-    y = null != (s = E("guild_flags")) ? s : 0,
+    y = null != (l = E("guild_flags")) ? l : 0,
     v = (null != (d = g.guild_flags) ? d : 0) ^ y,
-    I = 0 === (0, l.M1)(v, f.vc.OPT_IN_CHANNELS_OFF, f.vc.OPT_IN_CHANNELS_ON);
-  r.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(p({}, g, i.Z.getStats(e)), {
-    location: o,
+    I = 0 === (0, r.M1)(v, f.vc.OPT_IN_CHANNELS_OFF, f.vc.OPT_IN_CHANNELS_ON);
+  i.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(p({}, g, a.Z.getStats(e)), {
+    location: s,
     guild_id: e,
     update_type: u.I.GUILD,
-    label: a,
+    label: o,
     guild_flags_old: E("guild_flags"),
     guild_is_muted_old: E("guild_is_muted"),
     guild_suppress_roles_old: E("guild_suppress_roles"),
@@ -139,7 +139,7 @@ function v(e) {
 }
 
 function I(e) {
-  var t, n, s, d;
+  var t, n, l, d;
   let {
     updateType: _ = u.I.CHANNEL,
     guildId: h,
@@ -162,8 +162,8 @@ function I(e) {
       channel_message_notification_settings: a,
       channel_muted_until: v(r.mute_config)
     }
-  }, N = C(I), R = C(A(h, g), y), P = O(N, R, "RETURN_PREVIOUS_WHEN_CHANGED"), D = a.Z.getChannel(g), w = null != (n = P("channel_flags")) ? n : 0, L = (null != (s = R.channel_flags) ? s : 0) ^ w, x = 0 === (0, l.M1)(L, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), M = null != (d = null == (t = o.Z.getLastMessage(g)) ? true : t.type) ? d : null;
-  r.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(p({}, R, i.Z.getStats(h)), {
+  }, N = C(I), R = C(A(h, g), y), P = O(N, R, "RETURN_PREVIOUS_WHEN_CHANGED"), D = o.Z.getChannel(g), w = null != (n = P("channel_flags")) ? n : 0, L = (null != (l = R.channel_flags) ? l : 0) ^ w, x = 0 === (0, r.M1)(L, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), M = null != (d = null == (t = s.Z.getLastMessage(g)) ? true : t.type) ? d : null;
+  i.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(p({}, R, a.Z.getStats(h)), {
     location: S,
     guild_id: h,
     channel_id: g,
@@ -182,18 +182,18 @@ function I(e) {
 }
 
 function T(e) {
-  let t = s.ZP.isMuted(e),
-    n = s.ZP.getMuteConfig(e);
+  let t = l.ZP.isMuted(e),
+    n = l.ZP.getMuteConfig(e);
   return {
-    guild_suppress_everyone: s.ZP.isSuppressEveryoneEnabled(e),
-    guild_suppress_roles: s.ZP.isSuppressRolesEnabled(e),
-    guild_scheduled_events_muted: s.ZP.isMuteScheduledEventsEnabled(e),
+    guild_suppress_everyone: l.ZP.isSuppressEveryoneEnabled(e),
+    guild_suppress_roles: l.ZP.isSuppressRolesEnabled(e),
+    guild_scheduled_events_muted: l.ZP.isMuteScheduledEventsEnabled(e),
     guild_is_muted: t,
     guild_muted_until: null != n && null != n.end_time ? new Date(n.end_time).getTime() : null,
-    guild_receive_mobile_push: s.ZP.isMobilePushEnabled(e),
-    guild_message_notification_settings: b[s.ZP.getMessageNotifications(e)],
-    guild_notify_highlights: s.ZP.getNotifyHighlights(e),
-    guild_flags: s.ZP.getGuildFlags(e)
+    guild_receive_mobile_push: l.ZP.isMobilePushEnabled(e),
+    guild_message_notification_settings: b[l.ZP.getMessageNotifications(e)],
+    guild_notify_highlights: l.ZP.getNotifyHighlights(e),
+    guild_flags: l.ZP.getGuildFlags(e)
   }
 }
 
@@ -203,13 +203,13 @@ function S(e) {
 }
 
 function A(e, t) {
-  let n = s.ZP.isChannelMuted(e, t),
-    r = s.ZP.getChannelMuteConfig(e, t);
+  let n = l.ZP.isChannelMuted(e, t),
+    r = l.ZP.getChannelMuteConfig(e, t);
   return {
     channel_is_muted: n,
     channel_muted_until: null != r && null != r.end_time ? new Date(r.end_time).getTime() : null,
-    channel_message_notification_settings: b[s.ZP.getChannelMessageNotifications(e, t)],
-    channel_flags: s.ZP.getChannelIdFlags(e, t)
+    channel_message_notification_settings: b[l.ZP.getChannelMessageNotifications(e, t)],
+    channel_flags: l.ZP.getChannelIdFlags(e, t)
   }
 }
 

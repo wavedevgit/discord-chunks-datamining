@@ -12,6 +12,7 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk392711 = require("./392711.js"),
   c = require.n(Chunk392711),
   Chunk533800 = require("./533800.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk775086 = require("./775086.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
@@ -41,7 +42,6 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk938475 = require("./938475.js"),
   Chunk626135 = require("./626135.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk971130 = require("./971130.js"),
   Chunk301873 = require("./301873.js"),
   Chunk559310 = require("./559310.js"),
@@ -119,22 +119,22 @@ class ed extends(i = Chunk473749.PureComponent) {
       maxAge: p,
       maxUses: I,
       temporary: m,
-      flags: S
-    } = Chunk775086;
+      flags: x
+    } = Chunk95015;
     if (Chunk54381) {
       let n = null == module ? true : module.id;
       if (null == require) return;
-      Chunk442837({
+      Chunk775086({
         networkError: true
       }), Chunk447543.ZP.createInvite(require, {
         validate: null != exports ? exports : null,
-        max_age: Chunk692547,
-        max_uses: Chunk681715,
+        max_age: Chunk442837,
+        max_uses: Chunk692547,
         target_user_id: Chunk512722,
         target_type: a,
         target_application_id: null == u ? true : u.id,
-        temporary: Chunk481060,
-        flags: Chunk247272
+        temporary: Chunk681715,
+        flags: Chunk481060
       }, i).catch(e => v({
         networkError: e
       }))
@@ -170,7 +170,7 @@ class ed extends(i = Chunk473749.PureComponent) {
       inviteChannel: e,
       modalState: t
     } = this.props;
-    (0, Chunk630388.yE)(exports.flags, Chunk533800.$.IS_GUEST_INVITE) && null != module && Chunk447543.ZP.clearInviteFromStore(module.id)
+    (0, Chunk95015.yE)(exports.flags, Chunk533800.$.IS_GUEST_INVITE) && null != module && Chunk447543.ZP.clearInviteFromStore(module.id)
   }
   getInviteKey() {
     let {
@@ -476,7 +476,7 @@ class ed extends(i = Chunk473749.PureComponent) {
       };
       "" === e && "" !== n.query ? (l.sectionVisibility = es({}, n.defaultSectionVisibility), l.defaultSectionVisibility = {}) : "" !== e && "" === n.query && (l.defaultSectionVisibility = es({}, n.sectionVisibility), l.sectionVisibility = {}), null == (t = this._scroller) || t.scrollTo({
         to: 0
-      }), (0, S.C)(e), i(l)
+      }), (0, f.C)(e), i(l)
     }), el(this, "handleClearSearch", () => {
       this.handleQueryChange("")
     }), el(this, "handleToggleMaxAge", () => {
@@ -576,7 +576,7 @@ function ec(e) {
     isOpen: i,
     onToggleVisibility: s
   } = e;
-  return (0, l.jsxs)(m.P3F, {
+  return (0, l.jsxs)(x.P3F, {
     style: {
       "--custom-invite-section-header-height": 24,
       "--custom-invite-section-header-gap": 12 * (0 !== t),
@@ -584,11 +584,11 @@ function ec(e) {
     },
     className: en.inviteSectionHeader,
     onClick: () => s(t),
-    children: [(0, l.jsx)(m.Text, {
+    children: [(0, l.jsx)(x.Text, {
       variant: "text-sm/medium",
       color: "header-muted",
       children: n
-    }), (0, l.jsx)(m.CJ0, {
+    }), (0, l.jsx)(x.CJ0, {
       size: "md",
       color: "currentColor",
       className: en.inviteSectionToggleIcon
@@ -608,52 +608,52 @@ let eg = Chunk473749.forwardRef(function(e, t) {
     guildScheduledEvent: u,
     streamUserId: d,
     applicationId: c,
-    transitionState: h,
-    onClose: p,
-    page: I,
-    analyticsLocation: m
+    transitionState: v,
+    onClose: I,
+    page: m,
+    analyticsLocation: x
   } = e, {
-    analyticsLocations: b
-  } = (0, E.ZP)(y.Z.INSTANT_INVITE_MODAL), T = (0, v.e7)([G.Z, w.Z, j.ZP], () => {
+    analyticsLocations: T
+  } = (0, C.ZP)(E.Z.INSTANT_INVITE_MODAL), N = (0, p.e7)([k.Z, j.Z, V.ZP], () => {
     if (null != r) return r;
-    let e = G.Z.getChannelId(),
-      t = null == e || (0, ee.AB)(e) ? true : w.Z.getChannel(e);
-    return (null == t ? true : t.isThread()) && (t = w.Z.getChannel(t.parent_id)), null != t ? t : j.ZP.getDefaultChannel(a.id, true, X.Plq.CREATE_INSTANT_INVITE)
-  }, [r, a.id]), P = null;
-  null != d ? P = $.Iq.STREAM : null != c && (P = $.Iq.EMBEDDED_APPLICATION);
-  let M = null != r ? r.getGuildId() : null != a ? a.id : null,
-    U = (0, H.xU)({
-      guildId: M,
+    let e = k.Z.getChannelId(),
+      t = null == e || (0, ee.AB)(e) ? true : j.Z.getChannel(e);
+    return (null == t ? true : t.isThread()) && (t = j.Z.getChannel(t.parent_id)), null != t ? t : V.ZP.getDefaultChannel(a.id, true, X.Plq.CREATE_INSTANT_INVITE)
+  }, [r, a.id]), M = null;
+  null != d ? M = $.Iq.STREAM : null != c && (M = $.Iq.EMBEDDED_APPLICATION);
+  let Z = null != r ? r.getGuildId() : null != a ? a.id : null,
+    G = (0, H.xU)({
+      guildId: Z,
       location: "InstantInviteModalConnected"
     }),
-    k = (0, H.WV)({
-      guildId: M,
+    D = (0, H.WV)({
+      guildId: Z,
       location: "InstantInviteModalConnected"
     }),
-    F = (0, v.e7)([V.Z], () => {
-      let e = null != T ? T.id : null;
-      return null == e ? null : V.Z.getInvite(e, {
-        targetType: P,
+    L = (0, p.e7)([O.Z], () => {
+      let e = null != N ? N.id : null;
+      return null == e ? null : O.Z.getInvite(e, {
+        targetType: M,
         targetUserId: d,
         targetApplicationId: c
       })
-    }, [T, P, d, c]),
+    }, [N, M, d, c]),
     {
       isFriendsInVCInvitesEnabled: W
     } = (0, q.am)({
-      guildId: null != M ? M : true,
+      guildId: null != Z ? Z : true,
       location: "instant_invite_modal",
       autoTrackExposure: true
     }),
-    [z, Y, Q, J] = (0, v.Wu)([O.Z, D.ZP], () => [O.Z.getInviteSuggestionRows(), O.Z.getTotalSuggestionsCount() >= 1, O.Z.getInitialCounts(), null != r && null != T ? D.ZP.getVoiceStatesForChannel(T) : null], [T, r]),
+    [z, Y, Q, J] = (0, p.Wu)([R.Z, F.ZP], () => [R.Z.getInviteSuggestionRows(), R.Z.getTotalSuggestionsCount() >= 1, R.Z.getInitialCounts(), null != r && null != N ? F.ZP.getVoiceStatesForChannel(N) : null], [N, r]),
     et = s.useMemo(() => {
-      let e = null != T ? T.id : null;
-      return null != M ? Z.ZP.getProps(M, e) : true
-    }, [T, M]),
-    en = (0, v.e7)([R.Z], () => null != T && R.Z.can(X.Plq.CREATE_INSTANT_INVITE, T), [T]),
-    ei = null === F || !en,
-    el = (null == T ? true : T.type) === X.d4z.GUILD_VOICE,
-    er = (0, _.Z)(T),
+      let e = null != N ? N.id : null;
+      return null != Z ? w.ZP.getProps(Z, e) : true
+    }, [N, Z]),
+    en = (0, p.e7)([U.Z], () => null != N && U.Z.can(X.Plq.CREATE_INSTANT_INVITE, N), [N]),
+    ei = null === L || !en,
+    el = (null == N ? true : N.type) === X.d4z.GUILD_VOICE,
+    er = (0, b.Z)(N),
     ec = s.useMemo(() => {
       let e = new Set;
       return el || null != d ? null == J || J.forEach(t => {
@@ -661,34 +661,34 @@ let eg = Chunk473749.forwardRef(function(e, t) {
           user: n
         } = t;
         e.add(n.id)
-      }) : null != M && null != et && P !== $.Iq.EMBEDDED_APPLICATION && et.rows.forEach(t => {
-        t.type === Z.so.MEMBER && e.add(t.userId)
+      }) : null != Z && null != et && M !== $.Iq.EMBEDDED_APPLICATION && et.rows.forEach(t => {
+        t.type === w.so.MEMBER && e.add(t.userId)
       }), e
-    }, [el, et, d, J, M, P]),
+    }, [el, et, d, J, Z, M]),
     eg = null == r ? true : r.id,
-    eh = (0, v.e7)([A.Z], () => A.Z.getStageInstanceByChannel(eg), [eg]);
+    eh = (0, p.e7)([P.Z], () => P.Z.getStageInstanceByChannel(eg), [eg]);
   s.useEffect(() => {
-    (0, S.x)({
+    (0, f.x)({
       omitUserIds: ec,
       guild: a,
       channel: r,
       applicationId: c,
-      inviteTargetType: P
+      inviteTargetType: M
     }).catch(X.VqG)
-  }, [ec, r, a, c, P]);
-  let [ev] = (0, C.Z)(null != c ? [c] : []), ep = null != F ? F.code : true, eI = null == F ? true : F.maxAge, em = null == F ? true : F.maxUses, ex = null == F ? true : F.temporary, eS = a.vanityURLCode, ef = null != eS && eS.length > 0, ey = !en && !(null == T ? true : T.isGuildVocal()) && ef, eE = null != (n = null == F ? true : F.flags) ? n : 0;
+  }, [ec, r, a, c, M]);
+  let [ev] = (0, _.Z)(null != c ? [c] : []), ep = null != L ? L.code : true, eI = null == L ? true : L.maxAge, em = null == L ? true : L.maxUses, ex = null == L ? true : L.temporary, eS = a.vanityURLCode, ef = null != eS && eS.length > 0, ey = !en && !(null == N ? true : N.isGuildVocal()) && ef, eE = null != (n = null == L ? true : L.flags) ? n : 0;
   en || (null == eh ? true : eh.invite_code) == null || (ep = eh.invite_code);
-  let eC = s.useMemo(() => W && el ? (0, B.Qq)(z, M) : null, [W, el, z, M]),
+  let eC = s.useMemo(() => W && el ? (0, B.Qq)(z, Z) : null, [W, el, z, Z]),
     [e_, eb] = s.useState({
       query: "",
-      maxAgeOptions: k,
-      maxAge: null != (i = null != eI ? eI : U) ? i : H.zv,
-      savedMaxAge: eI === ea.value ? null != U ? U : eo.value : ea.value,
+      maxAgeOptions: D,
+      maxAge: null != (i = null != eI ? eI : G) ? i : H.zv,
+      savedMaxAge: eI === ea.value ? null != G ? G : eo.value : ea.value,
       maxUses: null != em && 0 !== em ? em : eu.value,
       temporary: null != ex && ex,
       networkError: true,
       showVanityURL: ey,
-      currentPage: null != I ? I : $.RV.MAIN,
+      currentPage: null != m ? m : $.RV.MAIN,
       lastPage: true,
       flags: eE,
       sectionVisibility: {},
@@ -706,7 +706,7 @@ let eg = Chunk473749.forwardRef(function(e, t) {
     eA = el && !ey && !ei && !er,
     {
       enabled: eP
-    } = N.o.useExperiment({
+    } = A.o.useExperiment({
       guildId: null == a ? true : a.id,
       location: "acc417_3"
     }, {
@@ -724,20 +724,20 @@ let eg = Chunk473749.forwardRef(function(e, t) {
         currentPage: e,
         lastPage: t
       } = e_;
-      e === $.RV.SETTINGS && null != t ? eN(t) : p()
-    }, [eN, e_, p]),
+      e === $.RV.SETTINGS && null != t ? eN(t) : I()
+    }, [eN, e_, I]),
     eR = s.useCallback(() => {
-      let e = null == T ? true : T.id;
+      let e = null == N ? true : N.id;
       0 === eZ && 0 === eM && !ew && ey ? eT({
         networkError: true,
         showVanityURL: true
       }) : en && null != e && (eT({
         networkError: true,
         showVanityURL: false
-      }), x.ZP.createInvite(e, {
+      }), S.ZP.createInvite(e, {
         max_age: eM,
         max_uses: eZ,
-        target_type: P,
+        target_type: M,
         target_user_id: d,
         target_application_id: null == ev ? true : ev.id,
         temporary: ew,
@@ -748,11 +748,11 @@ let eg = Chunk473749.forwardRef(function(e, t) {
       }))), eM !== ea.value && ej !== ea.value && eT({
         savedMaxAge: ea.value
       })
-    }, [ey, en, T, o, null == ev ? true : ev.id, P, d, eM, eZ, ew, eT, ej, eV]),
-    eU = (0, f.Z)(T),
-    eG = (0, f.Z)((0, L.yE)(eV, g.$.IS_APPLICATION_BYPASS)),
-    ek = null != eU && eU !== T,
-    eD = null != eG && eG !== (0, L.yE)(eV, g.$.IS_APPLICATION_BYPASS);
+    }, [ey, en, N, o, null == ev ? true : ev.id, M, d, eM, eZ, ew, eT, ej, eV]),
+    eU = (0, y.Z)(N),
+    eG = (0, y.Z)((0, h.yE)(eV, g.$.IS_APPLICATION_BYPASS)),
+    ek = null != eU && eU !== N,
+    eD = null != eG && eG !== (0, h.yE)(eV, g.$.IS_APPLICATION_BYPASS);
   s.useEffect(() => {
     !ey && (ek || eD) && eR()
   }, [eR, ek, eD, ey]);
@@ -760,18 +760,18 @@ let eg = Chunk473749.forwardRef(function(e, t) {
     canCreateApplicationBypassInvites: eF,
     isManualApprovalGuild: eL
   } = (0, K.R)(a);
-  return (0, l.jsx)(E.Gt, {
-    value: b,
+  return (0, l.jsx)(C.Gt, {
+    value: T,
     children: (0, l.jsx)(ed, {
       ref: t,
       canCreateInvites: en,
       noInvitesAvailable: ei,
-      inviteChannel: T,
+      inviteChannel: N,
       guild: a,
       guildScheduledEvent: u,
       streamUserId: d,
       vanityURLCode: eS,
-      targetType: P,
+      targetType: M,
       targetUserId: d,
       application: ev,
       rows: z,
@@ -781,10 +781,10 @@ let eg = Chunk473749.forwardRef(function(e, t) {
       initialCounts: Q,
       code: ep,
       source: o,
-      analyticsLocations: b,
-      analyticsLocation: m,
-      transitionState: h,
-      onClose: p,
+      analyticsLocations: T,
+      analyticsLocation: x,
+      transitionState: v,
+      onClose: I,
       canShowVanityURL: ey,
       isGuestInviteCreationToggleEnabled: eP && eA,
       shouldHideTemporaryInviteToggle: eP && eA || eL,

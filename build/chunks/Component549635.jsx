@@ -8,13 +8,13 @@ require.d(exports, {
 }), require("./997841.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk768494 = require("./768494.js"),
   Chunk124347 = require("./124347.jsx"),
   Chunk80966 = require("./80966.jsx"),
   Chunk296182 = require("./296182.js"),
   Chunk524444 = require("./524444.jsx"),
   Chunk52824 = require("./52824.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk589530 = require("./589530.js"),
   Chunk591759 = require("./591759.js"),
   Chunk212459 = require("./212459.js"),
@@ -80,9 +80,9 @@ function v(e, t) {
 
 function I(e, t) {
   return y(E({}, e), {
-    type: (0, a.hg)(e),
+    type: (0, o.hg)(e),
     original: e.url,
-    srcIsAnimated: (0, d.yE)(e.flags, a.hR.IS_ANIMATED),
+    srcIsAnimated: (0, a.yE)(e.flags, o.hR.IS_ANIMATED),
     sourceMetadata: {
       message: t
     }
@@ -99,8 +99,8 @@ function S(e) {
       media: n,
       obscured: i = false,
       maxWidth: a,
-      maxHeight: l,
-      onContextMenu: u
+      maxHeight: o,
+      onContextMenu: c
     } = e,
     {
       width: d,
@@ -122,13 +122,13 @@ function S(e) {
     var w;
     let e = T(b);
     if (null == e) return null;
-    let t = null != (w = n.renderLinkComponent) ? w : c.iT;
-    return (0, r.jsx)(s.Z, y(E({}, N), {
+    let t = null != (w = n.renderLinkComponent) ? w : u.iT;
+    return (0, r.jsx)(l.Z, y(E({}, N), {
       src: P,
       width: d,
       height: _,
       maxWidth: a,
-      maxHeight: l,
+      maxHeight: o,
       poster: e,
       naturalWidth: d,
       naturalHeight: _,
@@ -139,31 +139,31 @@ function S(e) {
       renderLinkComponent: t,
       autoPlay: !i,
       alt: v,
-      onContextMenu: u,
+      onContextMenu: c,
       disableArrowKeySeek: true
     }))
   }
-  return "IMAGE" === I && (t = D ? (0, r.jsx)(o.ZP, y(E({}, N), {
+  return "IMAGE" === I && (t = D ? (0, r.jsx)(s.ZP, y(E({}, N), {
     src: P,
     width: d,
     height: _,
     maxWidth: a,
-    maxHeight: l,
+    maxHeight: o,
     useFullWidth: true,
     shouldLink: false,
     className: m.media,
     animated: !i && n.animated,
     autoPlay: !i,
     alt: v,
-    onContextMenu: u
+    onContextMenu: c
   })) : (0, r.jsx)("img", {
     src: P,
     alt: v,
-    onContextMenu: u,
+    onContextMenu: c,
     className: m.dimensionlessImage,
     style: {
       maxWidth: a,
-      maxHeight: l
+      maxHeight: o
     }
   })), null != t ? (0, r.jsx)(h.Z, {
     children: t
@@ -172,7 +172,7 @@ function S(e) {
 let A = Chunk473749.memo(S);
 
 function C(e, t, n, r, i) {
-  return e && _.Z.isDiscordAssetUrl(t, r, i) ? (0, l.s$)(t, r, i) : (0, u.q)({
+  return e && _.Z.isDiscordAssetUrl(t, r, i) ? (0, c.s$)(t, r, i) : (0, d.q)({
     proxyURL: n,
     url: t
   })

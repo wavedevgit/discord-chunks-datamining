@@ -6,6 +6,7 @@ require.d(exports, {
 }), require("./997841.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
@@ -13,7 +14,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk10464 = require("./10464.jsx"),
   Chunk680056 = require("./680056.js"),
   Chunk375954 = require("./375954.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk591759 = require("./591759.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -41,12 +41,12 @@ function b(e) {
   let {
     message: t,
     compact: n
-  } = e, b = t.channel_id, y = (0, a.e7)([d.Z], () => null != t.messageReference ? d.Z.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
+  } = e, b = t.channel_id, y = (0, o.e7)([f.Z], () => null != t.messageReference ? f.Z.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
     clipId: O,
     remoteTriggerClipId: v
-  } = i.useMemo(() => null != y ? E(y.content) : {}, [y]), I = (0, a.e7)([l.Z], () => l.Z.getMatchingGroupClip(O, v)), T = (0, a.e7)([l.Z], () => null != I && null != b && l.Z.wasClipSharedInChannel(I.id, b)), {
+  } = i.useMemo(() => null != y ? E(y.content) : {}, [y]), I = (0, o.e7)([c.Z], () => c.Z.getMatchingGroupClip(O, v)), T = (0, o.e7)([c.Z], () => null != I && null != b && c.Z.wasClipSharedInChannel(I.id, b)), {
     onShareClick: S
-  } = (0, u.Z)(b), A = i.useCallback(() => {
+  } = (0, d.Z)(b), A = i.useCallback(() => {
     var e;
     null != I && null != b && (null == (e = t.messageReference) ? true : e.message_id) != null && S({
       clips: [I],
@@ -59,7 +59,7 @@ function b(e) {
   if (null == y || null == O && null == v || null == I || T) return null;
   let C = y.attachments.find(e => {
       var t;
-      return (0, f.yE)(null != (t = e.flags) ? t : 0, h.J0y.IS_CLIP)
+      return (0, a.yE)(null != (t = e.flags) ? t : 0, h.J0y.IS_CLIP)
     }),
     N = null;
   if ((null == C ? true : C.proxy_url) != null) {
@@ -68,7 +68,7 @@ function b(e) {
   }
   let R = null != N ? [N, I.thumbnail] : [I.thumbnail];
   return (0, r.jsx)(p.Z, {
-    iconNode: (0, r.jsx)(s.AlX, {
+    iconNode: (0, r.jsx)(l.AlX, {
       size: "md",
       color: "currentColor"
     }),
@@ -76,14 +76,14 @@ function b(e) {
     compact: n,
     additionalContent: (0, r.jsxs)("div", {
       className: g.previewContainer,
-      children: [(0, r.jsx)(c.Z, {
+      children: [(0, r.jsx)(u.Z, {
         thumbnails: R,
         variant: "stacked"
-      }), (0, r.jsx)(o.zxk, {
+      }), (0, r.jsx)(s.zxk, {
         size: "sm",
         onClick: A,
         text: m.intl.string(m.t["5qb8EX"]),
-        icon: s.n$P
+        icon: l.n$P
       })]
     }),
     children: m.intl.string(m.t.ThhsNG)

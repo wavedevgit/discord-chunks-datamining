@@ -9,11 +9,11 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk243814 = require("./243814.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk993365 = require("./993365.js"),
   Chunk481060 = require("./481060.js"),
   Chunk162685 = require("./162685.js"),
   Chunk979200 = require("./979200.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk709054 = require("./709054.js"),
   Chunk941532 = require("./941532.js"),
   Chunk713938 = require("./713938.js"),
@@ -22,10 +22,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk852303 = require("./852303.js");
 let E = e => {
   switch (e) {
-    case u.ZC.IP_LOCATION:
-      return l.enf;
-    case u.ZC.DISPLAYS_ADVERTISEMENTS:
-      return l.FLu;
+    case d.ZC.IP_LOCATION:
+      return c.enf;
+    case d.ZC.DISPLAYS_ADVERTISEMENTS:
+      return c.FLu;
     default:
       return null
   }
@@ -35,22 +35,22 @@ function b(e) {
   var t;
   let n, {
       application: i,
-      scopes: s,
+      scopes: l,
       redirectUri: b,
       approximateGuildCount: O,
       isEmbeddedFlow: v,
       disclosures: I
     } = e,
     T = new Date(f.default.extractTimestamp(i.id)),
-    S = (0, p.W3)(s),
-    A = (0, d.yE)(null != (t = i.flags) ? t : 0, h.udG.EMBEDDED);
+    S = (0, p.W3)(l),
+    A = (0, s.yE)(null != (t = i.flags) ? t : 0, h.udG.EMBEDDED);
   if (null != b && !A && !v) try {
     let e = new URL(b);
     n = null != e.host && e.host.length > 0 ? e.origin : e.href
   } catch (e) {
     n = null
   }
-  let C = c.w.useExperiment({
+  let C = u.w.useExperiment({
     location: "oauth2_authorize"
   });
   return (0, r.jsxs)("div", {
@@ -58,28 +58,28 @@ function b(e) {
       [g.noPadding]: C.enabled
     }),
     children: [null != n ? (0, r.jsx)(y, {
-      icon: l.xPt,
+      icon: c.xPt,
       text: m.intl.format(m.t["5k5OKD"], {
         origin: n
       })
     }) : null, (0, r.jsx)(y, {
-      icon: l.mBM,
+      icon: c.mBM,
       text: (0, _.i)(i)
     }), (0, r.jsx)(y, {
-      icon: l.T39,
+      icon: c.T39,
       text: m.intl.formatToPlainString(m.t["+1bjc8"], {
         date: T
       })
-    }), s.includes(o.x.BOT) && null != O ? (0, r.jsx)(y, {
-      icon: l.wGt,
+    }), l.includes(o.x.BOT) && null != O ? (0, r.jsx)(y, {
+      icon: c.wGt,
       text: m.intl.formatToPlainString(m.t.UHGHSP, {
         guildCount: O
       })
     }) : null, (0, r.jsx)(y, {
-      icon: l.b7C,
+      icon: c.b7C,
       text: S
     }), null != I ? I.map(e => {
-      let t = (0, u.PM)(e),
+      let t = (0, d.PM)(e),
         n = E(e);
       return null != n && null != t ? (0, r.jsx)(y, {
         icon: n,
@@ -99,7 +99,7 @@ function y(e) {
     children: [(0, r.jsx)(t, {
       className: g.entryIcon,
       color: "currentColor"
-    }), (0, r.jsx)(s.x, {
+    }), (0, r.jsx)(l.x, {
       variant: "text-xs/normal",
       className: g.entryInner,
       children: n

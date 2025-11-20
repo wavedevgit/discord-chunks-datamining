@@ -3,13 +3,13 @@
 require.d(exports, {
   Z: () => m
 }), require("./388685.js"), require("./997841.js");
-var Chunk544891 = require("./544891.js"),
+var Chunk95015 = require("./95015.js"),
+  Chunk544891 = require("./544891.js"),
   Chunk115130 = require("./115130.js"),
   Chunk287545 = require("./287545.js"),
   Chunk812206 = require("./812206.js"),
   Chunk695103 = require("./695103.js"),
   Chunk626135 = require("./626135.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk996106 = require("./996106.js"),
   Chunk914946 = require("./914946.js"),
   Chunk452426 = require("./452426.js"),
@@ -27,26 +27,26 @@ let m = {
       let {
         socket: n,
         args: {
-          event_name: r,
-          event_properties: i
+          event_name: i,
+          event_properties: l
         }
       } = e;
       (0, d.bu)(n.transport), (0, d._f)(n.application);
-      let s = n.application.id,
+      let o = n.application.id,
         p = (0, f.Z)(),
         h = null == p ? true : p.getGuildId(),
-        m = a.Z.getApplication(s);
-      if (!(0, c.yE)(null != (t = null == m ? true : m.flags) ? t : 0, g.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
+        m = s.Z.getApplication(o);
+      if (!(0, r.yE)(null != (t = null == m ? true : m.flags) ? t : 0, g.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
         errorCode: g.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
-      let _ = (0, l.U)(s),
+      let _ = (0, a.U)(o),
         b = {
-          activity_application_id: s,
+          activity_application_id: o,
           activity_channel_type: null == p ? true : p.type,
           activity_guild_id: h,
           activity_user_session_id: null == _ ? true : _.activityUserSessionId
         };
-      o.default.track(r, function(e) {
+      c.default.track(i, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -63,7 +63,7 @@ let m = {
           })
         }
         return e
-      }({}, b, i))
+      }({}, b, l))
     }
   },
   [Chunk981631.Etm.GET_APPLICATION_TICKET]: {
@@ -75,10 +75,10 @@ let m = {
       if (null == n) throw new u.Z({
         errorCode: g.lTL.INVALID_COMMAND
       }, "No application.");
-      return r.tn.post({
+      return i.tn.post({
         url: g.ANM.APPLICATION_TICKET(n),
         body: {
-          test_mode: s.Z.inTestModeForApplication(n) || i.Z.inDevModeForApplication(n)
+          test_mode: o.Z.inTestModeForApplication(n) || l.Z.inDevModeForApplication(n)
         },
         retries: 3,
         oldFormErrors: true,

@@ -7,6 +7,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk772848 = require("./772848.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk147913 = require("./147913.js"),
   Chunk131704 = require("./131704.js"),
   Chunk598077 = require("./598077.js"),
@@ -14,7 +15,6 @@ var Chunk392711 = require("./392711.js"),
   Chunk271383 = require("./271383.js"),
   Chunk699516 = require("./699516.js"),
   Chunk594174 = require("./594174.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk823379 = require("./823379.js"),
   Chunk960048 = require("./960048.js"),
   Chunk709054 = require("./709054.js"),
@@ -33,13 +33,13 @@ let y = 10;
 
 function O(e) {
   var t, n;
-  if (null == e || d.Z.isBlockedOrIgnored(e.id)) return null;
+  if (null == e || f.Z.isBlockedOrIgnored(e.id)) return null;
   let r = {
     id: e.id,
     username: "0" !== e.discriminator ? "".concat(e.username, "#").concat(e.discriminator) : e.username,
     nicknames: {}
   };
-  return null != g.ZP.getGlobalName(e) && (r.globalName = e.globalName), e.bot && (r.isBot = true), e instanceof l.Z ? r.isProvisional = e.isProvisional : "flags" in e ? r.isProvisional = _.yE(null != (t = e.flags) ? t : 0, E.xW$.PROVISIONAL_ACCOUNT) : r.isProvisional = false, d.Z.isFriend(e.id) && (r.isFriend = true, r.friendNickname = d.Z.getNickname(e.id)), e instanceof l.Z ? r.isStaff = e.isStaff() : "flags" in e ? r.isStaff = _.yE(null != (n = e.flags) ? n : 0, E.xW$.STAFF) : r.isStaff = false, r
+  return null != g.ZP.getGlobalName(e) && (r.globalName = e.globalName), e.bot && (r.isBot = true), e instanceof c.Z ? r.isProvisional = e.isProvisional : "flags" in e ? r.isProvisional = o.yE(null != (t = e.flags) ? t : 0, E.xW$.PROVISIONAL_ACCOUNT) : r.isProvisional = false, f.Z.isFriend(e.id) && (r.isFriend = true, r.friendNickname = f.Z.getNickname(e.id)), e instanceof c.Z ? r.isStaff = e.isStaff() : "flags" in e ? r.isStaff = o.yE(null != (n = e.flags) ? n : 0, E.xW$.STAFF) : r.isStaff = false, r
 }
 
 function v(e, t, n) {
@@ -48,12 +48,12 @@ function v(e, t, n) {
 
 function I(e) {
   let t = [];
-  if (null == e || !(0, s.hv)(e.type)) return t;
+  if (null == e || !(0, l.hv)(e.type)) return t;
   let {
     recipients: n = []
   } = e;
   return n.forEach(n => {
-    let r = O(f.default.getUser(n));
+    let r = O(_.default.getUser(n));
     null != e && v(r, e.id), t.push(r)
   }), t
 }
@@ -71,7 +71,7 @@ function S(e) {
   let {
     message: n,
     nicknameContextId: r
-  } = e, i = c.Z.getChannel(n.channel_id), a = null != r ? r : (null == i ? true : i.isPrivate()) === true ? null == i ? true : i.id : null == i ? true : i.getGuildId(), o = [];
+  } = e, i = u.Z.getChannel(n.channel_id), a = null != r ? r : (null == i ? true : i.isPrivate()) === true ? null == i ? true : i.id : null == i ? true : i.getGuildId(), o = [];
   if (null != n.author) {
     let e = O(n.author);
     null != e && (o.push(e), null != a && v(e, a))
@@ -231,16 +231,16 @@ class C extends Chunk147913.Z {
       this.rebootWebworker()
     }), b(this, "_handleConnectionOpen", () => {
       setTimeout(() => {
-        let e = f.default.getCurrentUser();
+        let e = _.default.getCurrentUser();
         if (null == e) return;
         let t = O(e),
           n = {
             [t.id]: t
           };
-        Object.values(f.default.getUsers()).forEach(e => {
+        Object.values(_.default.getUsers()).forEach(e => {
           n[e.id] = O(e)
         });
-        let r = u.ZP.getMutableAllGuildsAndMembers();
+        let r = d.ZP.getMutableAllGuildsAndMembers();
         for (let e in r)
           for (let t in r[e]) {
             var i, a;
@@ -318,28 +318,28 @@ class C extends Chunk147913.Z {
       let t = O(e.relationship.user);
       this.updateUsers([t], "relationship_add")
     }), b(this, "_handleRelationshipUpdate", e => {
-      let t = O(f.default.getUser(e.relationship.id));
+      let t = O(_.default.getUser(e.relationship.id));
       this.updateUsers([t], "relationship_update")
     }), b(this, "_handleRelationshipRemove", e => {
-      let t = O(f.default.getUser(e.relationship.id));
+      let t = O(_.default.getUser(e.relationship.id));
       this.updateUsers([t], "relationship_remove")
     }), b(this, "_handleDMCreate", e => {
       let {
         channel: {
           id: t
         }
-      } = e, n = I(c.Z.getChannel(t));
+      } = e, n = I(u.Z.getChannel(t));
       if (0 === n.length) return;
-      let r = O(f.default.getCurrentUser());
+      let r = O(_.default.getCurrentUser());
       v(r, t), n.push(r), this.updateUsers(n, "dm_create")
     }), b(this, "_handleDMUpdates", e => {
       let {
         channels: t
       } = e;
       for (let e of t) {
-        let t = I(c.Z.getChannel(e.id));
+        let t = I(u.Z.getChannel(e.id));
         if (0 === t.length) continue;
-        let n = O(f.default.getCurrentUser());
+        let n = O(_.default.getCurrentUser());
         v(n, e.id), t.push(n), this.updateUsers(t, "dm_updates")
       }
     }), b(this, "_handleRecipientChanges", e => {

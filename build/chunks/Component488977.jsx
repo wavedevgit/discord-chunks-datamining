@@ -8,6 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk367907 = require("./367907.js"),
@@ -22,7 +23,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk626135 = require("./626135.js"),
   Chunk572004 = require("./572004.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk135431 = require("./135431.js"),
   Chunk541099 = require("./541099.js"),
   Chunk783097 = require("./783097.js"),
@@ -78,59 +78,59 @@ function x(e) {
     context: P,
     className: w,
     sectionName: x
-  } = e, M = i.useRef(null), k = (0, s.e7)([I.Z], () => I.Z.entrypoint()), j = (0, T.L1)(a), U = (0, _.Eb)(j), G = (0, d.R)(a.id), B = (0, s.e7)([g.Z], () => {
+  } = e, M = i.useRef(null), k = (0, l.e7)([I.Z], () => I.Z.entrypoint()), j = (0, T.L1)(a), U = (0, p.Eb)(j), G = (0, f.R)(a.id), B = (0, l.e7)([E.Z], () => {
     var e;
-    return null != (e = g.Z.getGuildId()) ? e : true
+    return null != (e = E.Z.getGuildId()) ? e : true
   }, []), Z = {
-    location: u.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
+    location: d.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
     application_id: a.id,
     section_name: x,
     source: I.Z.lastShownEntrypoint()
-  }, F = E.default.getCurrentUser(), V = (0, p.Z)({
+  }, F = b.default.getCurrentUser(), V = (0, h.Z)({
     id: a.id,
     label: N.intl.string(N.t["+NP/b2"])
   }), H = (0, S.P)({
     application: a
-  }), Y = (0, O.yE)(null != (t = a.flags) ? t : 0, C.udG.EMBEDDED), W = "channel" === P.type ? P.channel : true;
+  }), Y = (0, s.yE)(null != (t = a.flags) ? t : 0, C.udG.EMBEDDED), W = "channel" === P.type ? P.channel : true;
   return (0, r.jsxs)("div", {
     className: R.container,
-    children: [(0, r.jsx)(l.P3F, {
+    children: [(0, r.jsx)(c.P3F, {
       onClick: () => {
-        let e = Y ? (0, f.H)({
+        let e = Y ? (0, _.H)({
           applicationId: a.id,
           referrerId: null == F ? true : F.id
-        }) : (0, f.J)(D({
+        }) : (0, _.J)(D({
           id: a.id
         }, j));
-        (0, y.JG)(e, () => (0, l.showToast)((0, l.createToast)(N.intl.string(N.t["L/PwZf"]), l.ToastType.SUCCESS))), b.default.track(C.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
+        (0, O.JG)(e, () => (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["L/PwZf"]), c.ToastType.SUCCESS))), y.default.track(C.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: a.id,
           source: k
         })
       },
       className: o()(R.clickable, w),
       "aria-label": N.intl.string(N.t.WqhZss),
-      children: (0, r.jsx)(l.xPt, {
+      children: (0, r.jsx)(c.xPt, {
         size: "sm",
-        color: l.TVs.colors.INTERACTIVE_ACTIVE
+        color: c.TVs.colors.INTERACTIVE_ACTIVE
       })
-    }), (0, r.jsx)(l.yRy, {
+    }), (0, r.jsx)(c.yRy, {
       targetElementRef: M,
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsxs)(l.v2r, {
+        return (0, r.jsxs)(c.v2r, {
           className: A.NN,
           navId: "app-details-more-menu",
           onClose: t,
           "aria-label": N.intl.string(N.t.AXIHpV),
           onSelect: true,
-          children: [(0, r.jsxs)(l.kSQ, {
-            children: [G && (0, r.jsx)(l.sNh, {
+          children: [(0, r.jsxs)(c.kSQ, {
+            children: [G && (0, r.jsx)(c.sNh, {
               id: "open-storefront",
               label: N.intl.string(N.t.kRvlKJ),
               action: () => {
-                (0, l.ZDy)(async () => {
+                (0, c.ZDy)(async () => {
                   let {
                     default: e
                   } = await Promise.all([n.e("77803"), n.e("42124")]).then(n.bind(n, 7225));
@@ -142,27 +142,27 @@ function x(e) {
                   })
                 })
               }
-            }), U ? (0, r.jsx)(l.sNh, {
+            }), U ? (0, r.jsx)(c.sNh, {
               id: "add-app",
               label: N.intl.string(N.t.NgXl3C),
               action: () => {
-                null == j.customInstallUrl && (0, c.yw)(C.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, Z), (0, v.L)(L(D({}, j), {
+                null == j.customInstallUrl && (0, u.yw)(C.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, Z), (0, v.L)(L(D({}, j), {
                   oauth2Callback: e => {
                     let {
                       location: t
                     } = e;
-                    null != t && (0, c.yw)(C.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, Z)
+                    null != t && (0, u.yw)(C.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, Z)
                   },
                   source: "app_launcher_app_details"
                 }))
               }
-            }) : null, a instanceof m.ZP ? (0, r.jsx)(l.sNh, {
+            }) : null, a instanceof g.ZP ? (0, r.jsx)(c.sNh, {
               id: "report-app",
               color: "danger",
               label: N.intl.string(N.t.jhJzez),
               action: () => {
                 var e;
-                (0, h.uu)({
+                (0, m.uu)({
                   application: a,
                   entrypoint: "app_launcher",
                   contextualGuildId: null != (e = null == W ? true : W.getGuildId()) ? e : true,
@@ -170,22 +170,22 @@ function x(e) {
                 })
               }
             }) : null, H]
-          }), (0, r.jsx)(l.kSQ, {
+          }), (0, r.jsx)(c.kSQ, {
             children: V
           })]
         })
       },
       align: "right",
       position: "bottom",
-      children: e => (0, r.jsx)(l.P3F, L(D({
+      children: e => (0, r.jsx)(c.P3F, L(D({
         innerRef: M
       }, e), {
         onClick: e.onClick,
         className: o()(R.clickable, w),
         "aria-label": N.intl.string(N.t["UKOtz+"]),
-        children: (0, r.jsx)(l.xhG, {
+        children: (0, r.jsx)(c.xhG, {
           size: "sm",
-          color: l.TVs.colors.INTERACTIVE_ACTIVE
+          color: c.TVs.colors.INTERACTIVE_ACTIVE
         })
       }))
     })]

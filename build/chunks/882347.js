@@ -5,10 +5,10 @@ require.d(exports, {
   p: () => y
 }), require("./997841.js");
 var Chunk252258 = require("./252258.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk570140 = require("./570140.js"),
   Chunk881052 = require("./881052.js"),
   Chunk592125 = require("./592125.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk317381 = require("./317381.js"),
   Chunk424291 = require("./424291.jsx"),
   Chunk966434 = require("./966434.js"),
@@ -21,19 +21,19 @@ async function m(e) {
   let {
     applicationId: t,
     channelId: n,
-    guildId: o
+    guildId: i
   } = e;
   try {
     return await (0, _.Z)(t, n)
   } catch (s) {
-    let e = null != o ? r.E.GUILD_CHANNEL : r.E.PRIVATE_CHANNEL;
-    i.Z.dispatch({
+    let e = null != i ? r.E.GUILD_CHANNEL : r.E.PRIVATE_CHANNEL;
+    a.Z.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL",
       nonce: "",
       applicationId: t,
       channelId: null != n ? n : null,
-      guildId: null != o ? o : null,
-      error: new a.Hx(s),
+      guildId: null != i ? i : null,
+      error: new o.Hx(s),
       locationKind: e
     })
   }
@@ -47,9 +47,9 @@ async function g(e) {
   return (null == t || !!await new Promise(e => {
     let i = l.ZP.getSelfEmbeddedActivities().get(t.id),
       a = (0, f.p)(null == i ? true : i.location),
-      s = o.Z.getChannel(a);
-    if (null == i || null == s) return void e(true);
-    null == r || r(), (0, u.Z)(t, s, () => {
+      o = s.Z.getChannel(a);
+    if (null == i || null == o) return void e(true);
+    null == r || r(), (0, u.Z)(t, o, () => {
       (0, p.Z)().leaveActivity({
         location: i.location,
         applicationId: t.id,
@@ -89,16 +89,16 @@ async function b(e) {
   let {
     application: n,
     applicationId: r,
-    channel: i,
-    onConfirmActivityLaunchChecksAlertOpen: a
-  } = e, o = null != n ? n : await m({
+    channel: a,
+    onConfirmActivityLaunchChecksAlertOpen: o
+  } = e, s = null != n ? n : await m({
     applicationId: r,
-    channelId: null == i ? true : i.id,
-    guildId: null != (t = null == i ? true : i.getGuildId()) ? t : true
+    channelId: null == a ? true : a.id,
+    guildId: null != (t = null == a ? true : a.getGuildId()) ? t : true
   });
-  return null != o && (!!((0, s.yE)(o.flags, h.udG.EMBEDDED_RELEASED) || o.isVerified || l.ZP.hasActivityEverBeenLaunched(r)) || new Promise(e => {
-    null == a || a(), (0, d.j)({
-      application: o,
+  return null != s && (!!((0, i.yE)(s.flags, h.udG.EMBEDDED_RELEASED) || s.isVerified || l.ZP.hasActivityEverBeenLaunched(r)) || new Promise(e => {
+    null == o || o(), (0, d.j)({
+      application: s,
       onConfirm: () => e(true),
       onCancel: () => e(false)
     })

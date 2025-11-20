@@ -6,12 +6,12 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk793030 = require("./793030.js"),
   Chunk974674 = require("./974674.jsx"),
   Chunk993365 = require("./993365.js"),
   Chunk385499 = require("./385499.jsx"),
   Chunk768581 = require("./768581.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk489863 = require("./489863.js"),
   Chunk713938 = require("./713938.js"),
   Chunk314583 = require("./314583.js"),
@@ -29,32 +29,32 @@ function E(e) {
     showLogout: y,
     location: O,
     scopes: v
-  } = e, I = (0, _.X)(), T = c.ZP.getApplicationIconURL({
+  } = e, I = (0, _.X)(), T = u.ZP.getApplicationIconURL({
     id: n.id,
     icon: n.icon
-  }), S = c.ZP.getUserAvatarURL(t), A = i.useMemo(() => v.some(e => (0, f.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.x, {
+  }), S = u.ZP.getUserAvatarURL(t), A = i.useMemo(() => v.some(e => (0, f.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(l.x, {
       variant: "text-lg/normal",
       color: "header-secondary",
       children: m.intl.string(m.t.uT1CPa)
-    }), (0, r.jsx)(a.X6q, {
+    }), (0, r.jsx)(o.X6q, {
       variant: "heading-xxl/bold",
       color: "header-primary",
       children: n.name
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(s.x, {
+    children: [(0, r.jsxs)(l.x, {
       variant: "text-lg/bold",
       color: "header-primary",
-      children: [n.name, null != E ? (0, r.jsx)(l.Z, {
+      children: [n.name, null != E ? (0, r.jsx)(c.Z, {
         className: g.botTag,
-        verified: null != E.public_flags && (0, u.yE)(E.public_flags, p.xW$.VERIFIED_BOT)
+        verified: null != E.public_flags && (0, a.yE)(E.public_flags, p.xW$.VERIFIED_BOT)
       }) : null]
-    }), b.length > 0 ? (0, r.jsx)(s.x, {
+    }), b.length > 0 ? (0, r.jsx)(l.x, {
       variant: "text-md/normal",
       color: "header-secondary",
       children: m.intl.string(m.t.jFbDnJ)
-    }) : (0, r.jsx)(s.x, {
+    }) : (0, r.jsx)(l.x, {
       variant: "text-md/normal",
       color: "header-secondary",
       children: m.intl.string(m.t["X+Fdpo"])
@@ -65,7 +65,7 @@ function E(e) {
     className: g.header,
     children: [(0, r.jsxs)("div", {
       className: g.headerIcons,
-      children: [(0, r.jsx)(o.qE, {
+      children: [(0, r.jsx)(s.qE, {
         className: g.avatar,
         src: T,
         size: h.EF.SIZE_80,
@@ -79,7 +79,7 @@ function E(e) {
         }), (0, r.jsx)("div", {
           className: g.ellipse
         })]
-      }), (0, r.jsx)(o.qE, {
+      }), (0, r.jsx)(s.qE, {
         className: g.avatar,
         src: S,
         size: h.EF.SIZE_80,
@@ -87,20 +87,20 @@ function E(e) {
       })]
     }), A, y ? (0, r.jsx)("div", {
       className: g.currentUser,
-      children: (0, r.jsxs)(s.x, {
+      children: (0, r.jsxs)(l.x, {
         variant: "text-sm/normal",
         color: "text-muted",
         children: [m.intl.format(m.t.qRvpYU, {
-          userHook: () => (0, r.jsxs)(s.x, {
+          userHook: () => (0, r.jsxs)(l.x, {
             className: g.currentUserTag,
             variant: "text-sm/normal",
-            children: [t.username, !t.hasUniqueUsername() && (0, r.jsx)(s.x, {
+            children: [t.username, !t.hasUniqueUsername() && (0, r.jsx)(l.x, {
               className: g.currentUserDiscriminator,
               variant: "text-sm/normal",
               children: "#".concat(t.discriminator)
             })]
           }, t.id)
-        }), (0, r.jsx)(a.P3F, {
+        }), (0, r.jsx)(o.P3F, {
           tag: "a",
           className: g.logoutLink,
           onClick: () => (0, d.c$)(O, "oauth2_logout"),

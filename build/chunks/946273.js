@@ -9,12 +9,12 @@ require.d(exports, {
   nX: () => E,
   vV: () => m
 }), require("./997841.js"), require("./388685.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk95015 = require("./95015.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk271383 = require("./271383.js"),
   Chunk430824 = require("./430824.js"),
   Chunk496675 = require("./496675.js"),
   Chunk594174 = require("./594174.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk709054 = require("./709054.js"),
   Chunk372897 = require("./372897.js"),
   Chunk981631 = require("./981631.js");
@@ -23,21 +23,21 @@ let f = 864e5;
 function _(e, t, n) {
   let {
     maxDaysOld: r,
-    minDaysOld: o = 0
-  } = t, s = a.Z.getGuild(e), l = null == s ? true : s.joinedAt;
+    minDaysOld: i = 0
+  } = t, s = o.Z.getGuild(e), l = null == s ? true : s.joinedAt;
   if (null != n) {
-    let t = i.ZP.getMember(e, n);
+    let t = a.ZP.getMember(e, n);
     l = (null == t ? true : t.joinedAt) == null ? null : new Date(t.joinedAt)
   }
   if (null == l) returnfalse;
   let c = Date.now() - l.getTime(),
     u = null == r || c <= f * r,
-    d = c >= f * o;
+    d = c >= f * i;
   return u && d
 }
 
 function p(e, t, n) {
-  return (0, r.e7)([], () => _(e, t, n), [t, e, n])
+  return (0, i.e7)([], () => _(e, t, n), [t, e, n])
 }
 
 function h(e) {
@@ -46,44 +46,44 @@ function h(e) {
   return Date.now() - n < 864e5 * t
 }
 let m = (e, t) => {
-  let n = (0, r.e7)([i.ZP], () => {
-      var n, r;
-      return (0, l.yE)(null != (r = null == (n = i.ZP.getMember(e, t)) ? true : n.flags) ? r : 0, u.q.DID_REJOIN)
+  let n = (0, i.e7)([a.ZP], () => {
+      var n, i;
+      return (0, r.yE)(null != (i = null == (n = a.ZP.getMember(e, t)) ? true : n.flags) ? i : 0, u.q.DID_REJOIN)
     }),
-    o = (0, r.e7)([a.Z], () => {
-      let t = a.Z.getGuild(e);
+    s = (0, i.e7)([o.Z], () => {
+      let t = o.Z.getGuild(e);
       return null != t && h(t)
     }),
-    c = (0, r.e7)([s.default], () => {
+    c = (0, i.e7)([l.default], () => {
       var e;
-      return null == (e = s.default.getUser(t)) ? true : e.bot
+      return null == (e = l.default.getUser(t)) ? true : e.bot
     });
   return p(e, {
     maxDaysOld: 7
-  }, t) && !o && !c && !n
+  }, t) && !s && !c && !n
 };
 
 function g(e, t) {
-  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.Z];
+  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [s.Z];
   return null != t && E(e, t, [n]) && !e.isProvisional
 }
 
 function E(e, t) {
-  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.Z];
+  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [s.Z];
   return null != t && n.canManageUser(d.Plq.KICK_MEMBERS, e, t) && !e.isNonUserBot()
 }
 
 function b(e, t) {
-  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.Z];
+  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [s.Z];
   return null != t && y(e, t, [n]) && !e.isProvisional
 }
 
 function y(e, t) {
-  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.Z];
+  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [s.Z];
   return null != t && n.canManageUser(d.Plq.BAN_MEMBERS, e, t) && !e.isNonUserBot() && !e.bot
 }
 
 function O(e, t) {
-  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.Z];
+  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [s.Z];
   return null != e && null != t && n.canManageUser(d.Plq.MANAGE_MESSAGES, e, t) && !e.isNonUserBot()
 }

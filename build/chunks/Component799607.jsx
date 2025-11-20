@@ -104,8 +104,10 @@ let f = 200,
       let e = e => {
         ("Escape" === e.key || "Esc" === e.key) && (e.preventDefault(), e.stopPropagation(), L(true))
       };
-      return document.addEventListener("keydown", e, true), () => document.removeEventListener("keydown", e, true)
-    }, [A, L, n]);
+      return document.addEventListener("keydown", e, true), () => {
+        document.removeEventListener("keydown", e, true)
+      }
+    }, [A, L]);
     let U = i.useMemo(() => null == E ? E : E.map(e => d(c({}, e), {
         onClick: t => {
           var n;

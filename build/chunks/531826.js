@@ -6,10 +6,10 @@ require.d(exports, {
   jA: () => h,
   sU: () => m
 }), require("./997841.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk95015 = require("./95015.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk812206 = require("./812206.js"),
   Chunk522474 = require("./522474.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk636449 = require("./636449.js"),
   Chunk317381 = require("./317381.js"),
   Chunk16609 = require("./16609.js"),
@@ -21,11 +21,11 @@ function _(e) {
   var t;
   let {
     application: n,
-    channelId: r
+    channelId: i
   } = e;
-  if (null != n && (0, o.yE)(null != (t = n.flags) ? t : 0, f.udG.EMBEDDED)) {
-    if (a.Z.getWindowOpen(f.KJ3.ACTIVITY_POPOUT) && l.ZP.getActivityPanelMode() === d.Ez.ACTIVITY_POPOUT_WINDOW) return f.KJ3.ACTIVITY_POPOUT;
-    if (a.Z.getWindowOpen(f.KJ3.CHANNEL_CALL_POPOUT) && (0, u.Z)(r) && !(0, s.R)()) return f.KJ3.CHANNEL_CALL_POPOUT
+  if (null != n && (0, r.yE)(null != (t = n.flags) ? t : 0, f.udG.EMBEDDED)) {
+    if (o.Z.getWindowOpen(f.KJ3.ACTIVITY_POPOUT) && l.ZP.getActivityPanelMode() === d.Ez.ACTIVITY_POPOUT_WINDOW) return f.KJ3.ACTIVITY_POPOUT;
+    if (o.Z.getWindowOpen(f.KJ3.CHANNEL_CALL_POPOUT) && (0, u.Z)(i) && !(0, s.R)()) return f.KJ3.CHANNEL_CALL_POPOUT
   }
 }
 
@@ -46,7 +46,7 @@ function h(e) {
     applicationId: t
   } = e, n = l.ZP.getCurrentEmbeddedActivity();
   if (null == n || n.applicationId !== t) return;
-  let r = i.Z.getApplication(t);
+  let r = a.Z.getApplication(t);
   if (null != r) return _({
     application: r,
     channelId: (0, c.p)(n.location)
@@ -57,12 +57,12 @@ function m(e) {
   let {
     channelId: t
   } = e;
-  return (0, r.e7)([a.Z, l.ZP, i.Z], () => {
+  return (0, i.e7)([o.Z, l.ZP, a.Z], () => {
     let e = p({
       channelId: null != t ? t : l.ZP.getConnectedActivityChannelId(),
       EmbeddedActivitiesStore: l.ZP,
-      ApplicationStore: i.Z
+      ApplicationStore: a.Z
     });
-    return null != e ? a.Z.getWindow(e) : true
+    return null != e ? o.Z.getWindow(e) : true
   })
 }

@@ -18,13 +18,13 @@ function c(e) {
     guild: t,
     onSelect: n
   } = e, c = (0, u.Z)(t.id), f = (0, a.wC)(t.id);
-  return (0, i.jsx)(l.v2r, {
+  return (0, i.jsx)(r.v2r, {
     onSelect: n,
     navId: "guild-browse-channels-context-menu",
     "aria-label": o.intl.string(o.t.ogxXGq),
-    onClose: r.Zy,
-    children: (0, i.jsxs)(l.kSQ, {
-      children: [f && (0, i.jsx)(l.sNh, {
+    onClose: l.Zy,
+    children: (0, i.jsxs)(r.kSQ, {
+      children: [f && (0, i.jsx)(r.sNh, {
         id: "go-to-settings",
         label: o.intl.string(o.t.X70lV6),
         action: () => {

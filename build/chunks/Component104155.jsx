@@ -2,7 +2,7 @@
 /** chunk id: 104155, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   I: () => j,
-  Z: () => O
+  Z: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -37,10 +37,10 @@ function j(e) {
   })
 }
 
-function O(e) {
+function v(e) {
   let {
     guildId: n
-  } = e, [o, s] = l.useState(""), j = (0, i.e7)([p.Z], () => p.Z.getGuild(n)), O = (0, i.e7)([u.ZP], () => u.ZP.getChannels(n)), v = (0, i.e7)([d.Z], () => d.Z.getCategories(n)), y = (0, f.Fo)(n, v, O, o), N = (0, i.e7)([h.Z], () => h.Z.canWithPartialContext(_.Plq.MANAGE_CHANNELS, {
+  } = e, [o, s] = l.useState(""), j = (0, i.e7)([p.Z], () => p.Z.getGuild(n)), v = (0, i.e7)([u.ZP], () => u.ZP.getChannels(n)), O = (0, i.e7)([d.Z], () => d.Z.getCategories(n)), y = (0, f.Fo)(n, O, v, o), N = (0, i.e7)([h.Z], () => h.Z.canWithPartialContext(_.Plq.MANAGE_CHANNELS, {
     guildId: n
   })), I = (0, i.e7)([c.ZP], () => null != c.ZP.getCurrentSidebarChannelId(x.oC.CHANNEL_BROWSER)), w = l.useCallback(() => s(""), [s]), Z = l.useCallback(() => {
     (0, a.ZDy)(async () => {
@@ -102,7 +102,7 @@ function O(e) {
       }) : null]
     }), (0, r.jsx)(g.Z, {
       className: b.browser,
-      channels: O,
+      channels: v,
       categories: y,
       guild: j,
       hasSidebar: I

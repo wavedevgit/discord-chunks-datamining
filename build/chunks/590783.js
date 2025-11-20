@@ -6,8 +6,8 @@ require.d(exports, {
 }), require("./997841.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
+  Chunk95015 = require("./95015.js"),
   Chunk81825 = require("./81825.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk605338 = require("./605338.js"),
   Chunk301766 = require("./301766.js"),
   Chunk474936 = require("./474936.js");
@@ -72,10 +72,10 @@ class f extends Chunk81825.Z {
     return this.isSubscription && Chunk474936.y7[this.skuId] || null
   }
   get isSelfRedeemable() {
-    return !(0, Chunk630388.yE)(this.flags, d.NOT_SELF_REDEEMABLE)
+    return !(0, Chunk95015.yE)(this.flags, d.NOT_SELF_REDEEMABLE)
   }
   get isExistingPremiumSubscriptionDisallowed() {
-    return (0, Chunk630388.yE)(this.flags, d.EXISTING_PREMIUM_SUBSCRIPTION_DISALLOWED)
+    return (0, Chunk95015.yE)(this.flags, d.EXISTING_PREMIUM_SUBSCRIPTION_DISALLOWED)
   }
   get analyticsData() {
     return {

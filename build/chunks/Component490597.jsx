@@ -10,6 +10,7 @@ var Chunk54381 = require("./54381.js"),
   o = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
   l = require.n(Chunk954955),
+  Chunk95015 = require("./95015.js"),
   Chunk507274 = require("./507274.jsx"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
@@ -18,7 +19,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk222677 = require("./222677.js"),
   Chunk995774 = require("./995774.js"),
   Chunk931651 = require("./931651.jsx"),
-  Chunk630388 = require("./630388.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -74,9 +74,9 @@ class C extends Chunk473749.Component {
     } = this.props, {
       isReactionPickerActive: s
     } = this.state;
-    if (module.state === Chunk981631.yb.SENDING || (0, Chunk630388.yE)(module.flags, Chunk981631.iLy.EPHEMERAL)) return null;
+    if (module.state === Chunk981631.yb.SENDING || (0, Chunk95015.yE)(module.flags, Chunk981631.iLy.EPHEMERAL)) return null;
     let l = Chunk473749 ? Chunk893973 : Chunk127947,
-      c = {
+      u = {
         size: "sm",
         color: "currentColor",
         className: l.icon
@@ -94,21 +94,21 @@ class C extends Chunk473749.Component {
         let {
           isShown: s
         } = i;
-        return (0, r.jsx)(u.u, {
+        return (0, r.jsx)(d.u, {
           asContainer: true,
           text: y.intl.string(y.t.lfIHs4),
-          children: (0, r.jsxs)(d.P3F, A(T({}, e), {
+          children: (0, r.jsxs)(f.P3F, A(T({}, e), {
             innerRef: this.ref,
             tabIndex: a,
             onClick: e => {
               this.handleAddReactionClick(e)
             },
-            onMouseEnter: () => (0, f.x)(b.qR.AddReactionPopoutMouseEntered),
-            onFocus: () => (0, f.x)(b.qR.AddReactionPopoutFocused),
+            onMouseEnter: () => (0, _.x)(b.qR.AddReactionPopoutMouseEntered),
+            onFocus: () => (0, _.x)(b.qR.AddReactionPopoutFocused),
             className: o()(l.reactionBtn, {
               [l.active]: s
             }, t),
-            children: [(0, r.jsx)(d.EO4, T({}, c)), n]
+            children: [(0, r.jsx)(f.EO4, T({}, u)), n]
           }))
         })
       }
@@ -124,7 +124,7 @@ class C extends Chunk473749.Component {
         message: r,
         isForumToolbar: i
       } = this.props;
-      (0, p.rU)(n.id, r.id, (0, h.g1)(e), i ? p.TW.FORUM_TOOLBAR : p.TW.MESSAGE_INLINE_BUTTON, {
+      (0, h.rU)(n.id, r.id, (0, m.g1)(e), i ? h.TW.FORUM_TOOLBAR : h.TW.MESSAGE_INLINE_BUTTON, {
         burst: t
       })
     }), I(this, "handleReactionPickerToggle", () => {
@@ -141,7 +141,7 @@ class C extends Chunk473749.Component {
         message: i
       } = this.props, a = {
         openPopoutType: "message_reaction_emoji_picker"
-      }, o = (0, r.jsx)(m.$, {
+      }, o = (0, r.jsx)(g.$, {
         closePopout: t,
         channel: n,
         onSelectEmoji: e => {
@@ -155,12 +155,12 @@ class C extends Chunk473749.Component {
         analyticsOverride: a,
         messageId: i.id
       });
-      return (0, r.jsx)(c.M.Consumer, {
+      return (0, r.jsx)(u.M.Consumer, {
         children: e => {
           let {
             inDialog: t
           } = e;
-          return t ? (0, r.jsx)(d.VqE, {
+          return t ? (0, r.jsx)(f.VqE, {
             "aria-label": y.intl.string(y.t["7Xqzdj"]),
             children: o
           }) : o

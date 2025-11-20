@@ -71,7 +71,7 @@ function A(e) {
     baseChannelId: A,
     channelViewSource: k = "Split View",
     isResourceChannelView: D
-  } = e, L = (0, i.e7)([v.Z], () => v.Z.getChannel(n)), R = (0, i.e7)([N.Z], () => N.Z.getGuild(null == L ? true : L.getGuildId())), H = (0, w.ZP)(L), M = (0, i.e7)([C.Z], () => (null == R ? true : R.id) != null && C.Z.isLurking(R.id), [R]), U = (0, f.Z)(n), G = (0, i.e7)([m.Z], () => {
+  } = e, L = (0, i.e7)([O.Z], () => O.Z.getChannel(n)), R = (0, i.e7)([N.Z], () => N.Z.getGuild(null == L ? true : L.getGuildId())), H = (0, w.ZP)(L), M = (0, i.e7)([C.Z], () => (null == R ? true : R.id) != null && C.Z.isLurking(R.id), [R]), U = (0, f.Z)(n), G = (0, i.e7)([m.Z], () => {
     var e;
     return null == (e = m.Z.getResourceForChannel(null == R ? true : R.id, n)) ? true : e.title
   }), F = (0, c.$5)(L), W = l.useRef(false);
@@ -89,7 +89,7 @@ function A(e) {
     icon: a.Dio,
     tooltip: S.intl.string(S.t.cpT0Cq),
     onClick: () => j.Z.closeChannelSidebar(A)
-  }, "close")), F) ? (0, r.jsx)(O.Z, {
+  }, "close")), F) ? (0, r.jsx)(v.Z, {
     guild: R,
     channelId: L.id
   }) : (0, r.jsxs)(r.Fragment, {

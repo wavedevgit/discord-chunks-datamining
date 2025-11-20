@@ -5,14 +5,14 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk95015 = require("./95015.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk58642 = require("./58642.js"),
   Chunk283595 = require("./283595.js"),
   Chunk417363 = require("./417363.js"),
   Chunk626135 = require("./626135.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
@@ -36,30 +36,30 @@ function p(t) {
 }
 
 function O(t, e) {
-  let n = (0, i.e7)([u.Z], () => u.Z.isInstalled(t.id, t.branchId), [t.branchId, t.id]),
-    O = (0, i.e7)([o.Z], () => !o.Z.hasRemovedLibraryApplicationThisSession);
+  let n = (0, l.e7)([s.Z], () => s.Z.isInstalled(t.id, t.branchId), [t.branchId, t.id]),
+    O = (0, l.e7)([u.Z], () => !u.Z.hasRemovedLibraryApplicationThisSession);
   if (n && !t.isHidden()) return null;
 
   function y() {
-    let e = (0, b.x9)(t.getFlags(), d.eHb.HIDDEN);
-    c.h(t.id, t.branchId, e), s.default.track(d.rMx.APPLICATION_SETTINGS_UPDATED, p({
-      hidden_enabled: (0, b.yE)(e, d.eHb.HIDDEN)
+    let e = (0, i.x9)(t.getFlags(), d.eHb.HIDDEN);
+    o.h(t.id, t.branchId, e), b.default.track(d.rMx.APPLICATION_SETTINGS_UPDATED, p({
+      hidden_enabled: (0, i.yE)(e, d.eHb.HIDDEN)
     }, t.getAnalyticsData()))
   }
-  return (0, r.jsx)(a.sNh, {
+  return (0, r.jsx)(c.sNh, {
     id: "in-library",
     label: t.isHidden() ? f.intl.string(f.t["0dnEUJ"]) : f.intl.string(f.t.TuJXLx),
     action: function() {
-      null != t && null != e && (t.isHidden() || !O ? y() : (0, a.h7j)(t => {
+      null != t && null != e && (t.isHidden() || !O ? y() : (0, c.h7j)(t => {
         var n, i;
-        return (0, r.jsx)(a.ConfirmModal, (n = p({
+        return (0, r.jsx)(c.ConfirmModal, (n = p({
           header: f.intl.string(f.t.oB7isi),
           confirmText: f.intl.string(f.t.OWjIiV),
           cancelText: f.intl.string(f.t["ETE/oC"]),
           onConfirm: () => y(),
-          confirmButtonColor: l.zx.Colors.BRAND
+          confirmButtonColor: a.zx.Colors.BRAND
         }, t), i = i = {
-          children: (0, r.jsx)(a.Text, {
+          children: (0, r.jsx)(c.Text, {
             variant: "text-md/normal",
             children: f.intl.format(f.t.HXfjKt, {
               name: e.name

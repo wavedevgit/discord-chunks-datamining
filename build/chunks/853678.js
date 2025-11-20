@@ -3,7 +3,8 @@
 require.d(exports, {
   Z: () => N
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./997841.js");
-var Chunk45792 = require("./45792.js"),
+var Chunk95015 = require("./95015.js"),
+  Chunk45792 = require("./45792.js"),
   Chunk782568 = require("./782568.js"),
   Chunk636449 = require("./636449.js"),
   Chunk317381 = require("./317381.js"),
@@ -14,7 +15,6 @@ var Chunk45792 = require("./45792.js"),
   Chunk313789 = require("./313789.js"),
   Chunk626135 = require("./626135.js"),
   Chunk12647 = require("./12647.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk49012 = require("./49012.js"),
   Chunk358085 = require("./358085.js"),
   Chunk996106 = require("./996106.js"),
@@ -56,33 +56,33 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
           }
         } = e;
         (0, b.bu)(t.transport);
-        let r = a.ZP.getCurrentEmbeddedActivity();
+        let r = s.ZP.getCurrentEmbeddedActivity();
         try {
-          var o, d;
+          var i, c;
           let e = new URL(n),
-            a = e.toString();
+            s = e.toString();
           if (m.isPlatformEmbedded) {
-            let e = (0, l.R)() ? y.KJ3.ACTIVITY_POPOUT : null;
-            f.Z.focus(e, true)
+            let e = (0, a.R)() ? y.KJ3.ACTIVITY_POPOUT : null;
+            h.Z.focus(e, true)
           }
-          let h = u.Z.getApplication(null == (o = t.application) ? true : o.id),
-            _ = (0, c.p)(null == r ? true : r.location),
-            b = (null == h ? true : h.id) !== true ? T.get(h.id) : true;
-          if (true !== b && b.trustedUntilEpochMs >= Date.now() && b.trustedHosts.has(e.host)) return (0, i.Z)(a), p.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
-            application_id: null == (d = t.application) ? true : d.id,
-            url: a,
+          let p = d.Z.getApplication(null == (i = t.application) ? true : i.id),
+            _ = (0, u.p)(null == r ? true : r.location),
+            b = (null == p ? true : p.id) !== true ? T.get(p.id) : true;
+          if (true !== b && b.trustedUntilEpochMs >= Date.now() && b.trustedHosts.has(e.host)) return (0, l.Z)(s), f.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+            application_id: null == (c = t.application) ? true : c.id,
+            url: s,
             opened: true
           }), Promise.resolve({
             opened: true
           });
           return new Promise(e => (0, g.q)({
-            href: a,
+            href: s,
             shouldConfirm: true,
             onConfirm: () => {
               var n;
-              (0, i.Z)(a), p.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+              (0, l.Z)(s), f.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (n = t.application) ? true : n.id,
-                url: a,
+                url: s,
                 opened: true
               }), e({
                 opened: true
@@ -90,16 +90,16 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             },
             onCancel: () => {
               var n;
-              p.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+              f.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (n = t.application) ? true : n.id,
-                url: a,
+                url: s,
                 opened: false
               }), e({
                 opened: false
               })
             }
-          }, true, true, (0, s.z)({
-            application: h,
+          }, true, true, (0, o.z)({
+            application: p,
             channelId: _
           })))
         } catch (e) {
@@ -127,7 +127,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
           let {
             openUserSettings: e
           } = n(518596);
-          e(d.n.CONNECTIONS_PANEL, {
+          e(p.n.CONNECTIONS_PANEL, {
             section: y.oAB.CONNECTIONS
           })
         }
@@ -142,25 +142,25 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
         let {
           socket: n,
           args: {
-            custom_id: r,
-            message: i,
-            link_id: l
+            custom_id: i,
+            message: l,
+            link_id: a
           }
         } = e;
         (0, b.bu)(n.transport);
-        let a = (0, b._f)(n.application);
-        if (null == a) throw new _.Z({
+        let s = (0, b._f)(n.application);
+        if (null == s) throw new _.Z({
           errorCode: y.lTL.INVALID_COMMAND
         }, "No application.");
-        if (!(0, h.yE)(null != (t = n.application.flags) ? t : 0, y.udG.EMBEDDED)) throw new _.Z({
+        if (!(0, r.yE)(null != (t = n.application.flags) ? t : 0, y.udG.EMBEDDED)) throw new _.Z({
           errorCode: y.lTL.INVALID_COMMAND
         }, "This application cannot access this API");
         return new Promise(e => {
-          (0, o._)({
-            applicationId: a,
-            customId: r,
-            linkId: l,
-            message: i,
+          (0, c._)({
+            applicationId: s,
+            customId: i,
+            linkId: a,
+            message: l,
             onShare: (t, n) => {
               e({
                 success: n || t,

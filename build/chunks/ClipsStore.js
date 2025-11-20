@@ -4,13 +4,13 @@
 require.d(exports, {
   Z: () => eu
 }), require("./388685.js"), require("./997841.js");
-var r, Chunk442837 = require("./442837.js"),
+var r, Chunk95015 = require("./95015.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk579806 = require("./579806.js"),
   Chunk594190 = require("./594190.js"),
   Chunk569545 = require("./569545.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk630388 = require("./630388.js");
+  Chunk314897 = require("./314897.js");
 require("./137058.js");
 var Chunk924557 = require("./924557.js"),
   Chunk894694 = require("./894694.js"),
@@ -253,7 +253,7 @@ function q(e) {
   let r = t;
   if (null != n) {
     var i;
-    let e = s.ZP.getGameForPID(n);
+    let e = l.ZP.getGameForPID(n);
     r = null != (i = null == e ? true : e.name) ? i : r
   }
   if (null == r || "" === r) returnfalse;
@@ -268,7 +268,7 @@ function X(e) {
   let {
     streamKey: t
   } = e;
-  if (P = null, D[t] = [], null == A || (0, l.my)(t).ownerId !== c.default.getId()) returnfalse;
+  if (P = null, D[t] = [], null == A || (0, c.my)(t).ownerId !== u.default.getId()) returnfalse;
   A = 0 === A.newClipIds.length ? null : b(g({}, A), {
     ended: true
   })
@@ -298,9 +298,9 @@ function ee() {
 
 function et(e) {
   C[e.userId] = {
-    clipsEnabled: (0, u.yE)(e.flags, p.BVn.CLIPS_ENABLED),
-    allowVoiceRecording: (0, u.yE)(e.flags, p.BVn.ALLOW_VOICE_RECORDING),
-    allowAnyViewerClips: (0, u.yE)(e.flags, p.BVn.ALLOW_ANY_VIEWER_CLIPS)
+    clipsEnabled: (0, i.yE)(e.flags, p.BVn.CLIPS_ENABLED),
+    allowVoiceRecording: (0, i.yE)(e.flags, p.BVn.ALLOW_VOICE_RECORDING),
+    allowAnyViewerClips: (0, i.yE)(e.flags, p.BVn.ALLOW_ANY_VIEWER_CLIPS)
   }
 }
 
@@ -333,7 +333,7 @@ function ei(e) {
 }
 
 function ea(e, t, n) {
-  if (!(0, d.NS)() || n !== c.default.getId() || null == t) returnfalse;
+  if (!(0, d.NS)() || n !== u.default.getId() || null == t) returnfalse;
   let r = "__CLIP_METADATA__",
     i = t.indexOf(r);
   if (false === i) returnfalse;
@@ -364,7 +364,7 @@ function es(e) {
 }
 class el extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
-    null != e && (x = e), M(), this.waitFor(s.ZP)
+    null != e && (x = e), M(), this.waitFor(l.ZP)
   }
   getClips() {
     return v

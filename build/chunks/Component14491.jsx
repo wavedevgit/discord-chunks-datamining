@@ -5,11 +5,11 @@ require.d(exports, {
   Z: () => _
 }), require("./997841.js");
 var Chunk54381 = require("./54381.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk481060 = require("./481060.js"),
   Chunk783097 = require("./783097.js"),
   Chunk594174 = require("./594174.js"),
   Chunk572004 = require("./572004.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk311819 = require("./311819.js"),
   Chunk981631 = require("./981631.js");
 
@@ -43,28 +43,28 @@ function _(e) {
     showIconFirst: _,
     focusedClassName: p
   } = e;
-  if (__OVERLAY__ || !s.wS || null == t) return null;
-  let h = o.default.getCurrentUser(),
-    m = (0, a.Ow)(t);
+  if (__OVERLAY__ || !l.wS || null == t) return null;
+  let h = s.default.getCurrentUser(),
+    m = (0, o.Ow)(t);
 
   function g() {
     var e;
     if (null == t) return;
-    let n = (0, l.yE)(null != (e = t.flags) ? e : 0, u.udG.EMBEDDED) ? (0, c.H)({
+    let n = (0, i.yE)(null != (e = t.flags) ? e : 0, u.udG.EMBEDDED) ? (0, c.H)({
       applicationId: t.id,
       referrerId: null == h ? true : h.id
     }) : (0, c.J)(f({
       id: t.id
     }, m));
-    null != n && (0, s.JG)(n, d)
+    null != n && (0, l.JG)(n, d)
   }
   let E = "copy-app-link-".concat(t.id);
-  return (0, r.jsx)(i.sNh, {
+  return (0, r.jsx)(a.sNh, {
     id: E,
     label: n,
     action: g,
-    icon: _ ? true : i.xPt,
-    iconLeft: _ ? i.xPt : true,
+    icon: _ ? true : a.xPt,
+    iconLeft: _ ? a.xPt : true,
     focusedClassName: p
   }, E)
 }

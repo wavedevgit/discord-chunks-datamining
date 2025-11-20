@@ -9,11 +9,11 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
+  Chunk95015 = require("./95015.js"),
   Chunk481060 = require("./481060.js"),
   Chunk115130 = require("./115130.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk563132 = require("./563132.jsx"),
-  Chunk630388 = require("./630388.js"),
   Chunk74538 = require("./74538.js"),
   Chunk296848 = require("./296848.js"),
   Chunk244923 = require("./244923.jsx"),
@@ -116,7 +116,7 @@ function I(e) {
     activeSubscription: k,
     devShelfFetchState: j,
     hasPaymentSources: U
-  } = (0, c.JL)(), G = O({
+  } = (0, u.JL)(), G = O({
     purchaseType: x,
     plan: w,
     premiumSubscription: g,
@@ -128,16 +128,16 @@ function I(e) {
     hasPaymentSources: U
   }), {
     analyticsLocations: B
-  } = (0, l.ZP)();
-  if (null != i || null != a || d) return (0, r.jsx)(o.Button, {
+  } = (0, c.ZP)();
+  if (null != i || null != a || d) return (0, r.jsx)(s.Button, {
     variant: "active",
     text: G,
     disabled: true
   });
-  if (C && U) return (0, r.jsx)(o.aML, {
+  if (C && U) return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: m.intl.string(m.t.L7jbQV),
-    children: e => (0, r.jsx)(o.Button, y(E({
+    children: e => (0, r.jsx)(s.Button, y(E({
       variant: "primary",
       text: G
     }, e), {
@@ -146,10 +146,10 @@ function I(e) {
       onClick: P
     }))
   });
-  if (C && !U) return (0, r.jsx)(o.aML, {
+  if (C && !U) return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: m.intl.string(m.t.L7jbQV),
-    children: e => (0, r.jsx)(o.Button, y(E({
+    children: e => (0, r.jsx)(s.Button, y(E({
       variant: "active",
       text: G
     }, e), {
@@ -158,10 +158,10 @@ function I(e) {
       disabled: true
     }))
   });
-  if ((0, u.yE)(null != (t = null == D ? true : D.flags) ? t : 0, p.udG.EMBEDDED) && j === s.O.LOADING) return (0, r.jsx)(o.aML, {
+  if ((0, o.yE)(null != (t = null == D ? true : D.flags) ? t : 0, p.udG.EMBEDDED) && j === l.O.LOADING) return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: m.intl.string(m.t.cjA5tj),
-    children: e => (0, r.jsx)(o.Button, y(E({
+    children: e => (0, r.jsx)(s.Button, y(E({
       variant: "active",
       text: G
     }, e), {
@@ -170,21 +170,21 @@ function I(e) {
       disabled: true
     }))
   });
-  if (S) return (0, r.jsx)(o.Button, {
+  if (S) return (0, r.jsx)(s.Button, {
     variant: "expressive",
     "data-testid": L ? "purchase" : "submitButton",
     text: G,
     onClick: L ? A : () => v(n, f),
     loading: h,
     iconPosition: "start",
-    icon: () => (0, r.jsx)(o.SrA, {
+    icon: () => (0, r.jsx)(s.SrA, {
       color: "currentColor"
     })
   });
-  else if (!L) return (0, r.jsx)(o.aML, {
+  else if (!L) return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: m.intl.string(m.t.XdvBLS),
-    children: e => (0, r.jsx)(o.Button, y(E({
+    children: e => (0, r.jsx)(s.Button, y(E({
       variant: "active",
       text: G
     }, e), {
@@ -201,7 +201,7 @@ function I(e) {
     buttonLabel: G,
     analyticsLocations: B
   });
-  else return (0, r.jsx)(o.Button, {
+  else return (0, r.jsx)(s.Button, {
     variant: "active",
     text: G,
     "data-testid": "purchase",

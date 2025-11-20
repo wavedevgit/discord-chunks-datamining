@@ -8,6 +8,7 @@ var r, Chunk348327 = require("./348327.js"),
   a = require.n(Chunk348327),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
+  Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk317381 = require("./317381.js"),
@@ -23,7 +24,6 @@ var r, Chunk348327 = require("./348327.js"),
   Chunk768419 = require("./768419.js"),
   Chunk695346 = require("./695346.js"),
   Chunk581883 = require("./581883.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk199902 = require("./199902.js"),
   Chunk592125 = require("./592125.js"),
   Chunk272053 = require("./272053.js"),
@@ -90,25 +90,25 @@ function j() {
     null != t.application_id && (l.add(t.name), n.push(t))
   });
   let c = Chunk594190.ZP.getVisibleGame(),
-    u = null != Chunk570140 && null != Chunk570140.name && (Chunk442837.has(Chunk570140.name) || (0, Chunk674691.G)(Chunk570140, [...require, ...Chunk797258.Z.getRemoteActivities()])),
-    d = null != Chunk570140 && Chunk570140.isLauncher,
+    u = null != Chunk442837 && null != Chunk442837.name && (Chunk95015.has(Chunk442837.name) || (0, Chunk674691.G)(Chunk442837, [...require, ...Chunk797258.Z.getRemoteActivities()])),
+    d = null != Chunk442837 && Chunk442837.isLauncher,
     f = null != Chunk199902.Z.getCurrentUserActiveStream(),
-    v = Chunk317381 || Chunk212517 && !Chunk812206;
-  if (null != Chunk570140 && null != Chunk570140.name && !Chunk581883) {
-    let t = Chunk77498.Z.getGameByName(Chunk570140.name);
+    _ = Chunk570140 || Chunk317381 && !Chunk212517;
+  if (null != Chunk442837 && null != Chunk442837.name && !Chunk812206) {
+    let t = Chunk77498.Z.getGameByName(Chunk442837.name);
     require.push(w({
       type: Chunk981631.IIU.PLAYING,
-      name: Chunk570140.name,
-      application_id: null != (e = Chunk570140.id) ? module : null == exports ? true : exports.id,
+      name: Chunk442837.name,
+      application_id: null != (e = Chunk442837.id) ? module : null == exports ? true : exports.id,
       timestamps: {
-        start: Chunk570140.start
+        start: Chunk442837.start
       }
-    }, (0, Chunk509003.LK)(Chunk570140)))
+    }, (0, Chunk509003.LK)(Chunk442837)))
   }
   let I = Chunk768419.Z.getActivity();
-  null != Chunk630388 && require.push(w({
+  null != Chunk581883 && require.push(w({
     type: Chunk981631.IIU.LISTENING
-  }, Chunk630388));
+  }, Chunk581883));
   let D = Chunk106301.Z.getCurrentHangStatus();
   if (null != D) {
     let e = Chunk106301.Z.getCustomHangStatus(),
@@ -163,8 +163,8 @@ function F() {
     t = false;
   for (let [i, [a, o, s]] of Object.entries(k)) {
     var n, r;
-    let l = null != (n = Chunk392711.flags) ? require : 0,
-      c = (0, Chunk212517.S)(Chunk392711, (0, Chunk630388.yE)(null != (r = null == Chunk392711 ? true : Chunk392711.flags) ? r : 0, Chunk981631.xjy.INSTANCE), Chunk392711.platform === Chunk981631.M7m.EMBEDDED, (0, Chunk212517.D)(Chunk392711), s);
+    let c = null != (n = Chunk392711.flags) ? require : 0,
+      u = (0, Chunk212517.S)(Chunk392711, (0, Chunk95015.yE)(null != (r = null == Chunk392711 ? true : Chunk392711.flags) ? r : 0, Chunk981631.xjy.INSTANCE), Chunk392711.platform === Chunk981631.M7m.EMBEDDED, (0, Chunk212517.D)(Chunk392711), s);
     Chunk570140 !== Chunk442837 ? (module[Chunk348327] = [a, x(w({}, Chunk392711), {
       flags: Chunk570140
     }), s], t = true) : module[Chunk348327] = [a, Chunk392711, s]

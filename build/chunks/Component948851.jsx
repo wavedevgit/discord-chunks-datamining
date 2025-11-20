@@ -6,8 +6,8 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk533800 = require("./533800.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk971130 = require("./971130.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk337709 = require("./337709.js");
@@ -34,24 +34,24 @@ function c(e) {
     children: (0, i.jsxs)("form", {
       onSubmit: p,
       className: u.settingsForm,
-      children: [(0, i.jsx)(s.VcW, {
+      children: [(0, i.jsx)(r.VcW, {
         label: o.intl.string(o.t["60qw2x"]),
         options: c,
         value: null != (t = null == E ? true : E.value) ? t : c[0].value,
         onChange: m
-      }), (0, i.jsx)(s.VcW, {
+      }), (0, i.jsx)(r.VcW, {
         label: o.intl.string(o.t.jDqWHW),
         options: d,
         value: null == C ? true : C.value,
         onChange: x
-      }), !n && (0, i.jsx)(s.rsf, {
+      }), !n && (0, i.jsx)(r.rsf, {
         checked: v,
         onChange: e => I(e),
         description: o.intl.string(o.t.UN5IRX),
         label: o.intl.string(o.t["wE+9dr"])
-      }), S && (0, i.jsx)(s.rsf, {
-        checked: (0, r.yE)(f, l.$.IS_GUEST_INVITE),
-        onChange: e => y((0, r.mB)(f, l.$.IS_GUEST_INVITE, e)),
+      }), S && (0, i.jsx)(r.rsf, {
+        checked: (0, s.yE)(f, l.$.IS_GUEST_INVITE),
+        onChange: e => y((0, s.mB)(f, l.$.IS_GUEST_INVITE, e)),
         description: o.intl.string(o.t["/FeTK6"]),
         label: o.intl.string(o.t.siexRS)
       })]

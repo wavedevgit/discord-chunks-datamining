@@ -7,6 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
+  Chunk95015 = require("./95015.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk332148 = require("./332148.js"),
@@ -18,7 +19,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk501517 = require("./501517.js"),
   Chunk699516 = require("./699516.js"),
   Chunk594174 = require("./594174.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk970257 = require("./970257.js"),
   Chunk294218 = require("./294218.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -69,11 +69,11 @@ class w extends Chunk473749.PureComponent {
       l = this.props,
       {
         channel: s,
-        message: c,
-        showContextMenuHint: d,
-        moderatorReportData: u
+        message: d,
+        showContextMenuHint: u,
+        moderatorReportData: p
       } = Chunk120356,
-      g = function(e, t) {
+      f = function(e, t) {
         if (null == e) return {};
         var n, i, r = function(e, t) {
           if (null == e) return {};
@@ -88,7 +88,7 @@ class w extends Chunk473749.PureComponent {
         }
         return r
       }(Chunk120356, ["channel", "message", "showContextMenuHint", "moderatorReportData"]),
-      f = s.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && (0, Chunk630388.yE)(Chunk332148.flags, Chunk981631.iLy.CROSSPOSTED);
+      m = s.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && (0, Chunk95015.yE)(Chunk332148.flags, Chunk981631.iLy.CROSSPOSTED);
     Chunk904245 && (e = (0, Chunk54381.jsx)(Chunk576855.Z, {
       className: Chunk625221.spacingTop,
       children: Chunk388032.intl.format(Chunk388032.t.IxY7E6, {})
@@ -100,8 +100,8 @@ class w extends Chunk473749.PureComponent {
         onChange: this.handleToggleReport
       })
     }));
-    let m = Chunk501517 ? Chunk388032.intl.string(Chunk388032.t["2kHABX"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS4),
-      b = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    let b = Chunk501517 ? Chunk388032.intl.string(Chunk388032.t["2kHABX"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS4),
+      j = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)("div", {
           className: Chunk625221.message,
           children: (0, Chunk54381.jsx)(Chunk294218.Z, {
@@ -171,15 +171,15 @@ class w extends Chunk473749.PureComponent {
         moderatorReportChannelId: l,
         isFlagResolved: s
       } = null != r ? r : {};
-      e ? (0, g.ak)(i, "message_delete_alert", () => d.Z.deleteMessage(n.id, i.id).then(() => {
+      e ? (0, f.ak)(i, "message_delete_alert", () => u.Z.deleteMessage(n.id, i.id).then(() => {
         if (null != l) {
           var e, n;
-          t && !s && f.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !s && m.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
         }
-      })) : d.Z.deleteMessage(n.id, i.id).then(() => {
+      })) : u.Z.deleteMessage(n.id, i.id).then(() => {
         if (null != l) {
           var e, n;
-          t && !s && f.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !s && m.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
         }
       })
     }), I(this, "handleDeleteMana", () => {
@@ -198,13 +198,13 @@ class w extends Chunk473749.PureComponent {
 }
 let M = {
   confirmPin: function(e, t) {
-    (0, o.h7j)(n => {
-      let r, l = (0, u.F6)(e, b.default, m.Z);
+    (0, c.h7j)(n => {
+      let r, l = (0, p.F6)(e, j.default, b.Z);
       return r = e.isPrivate() ? O.intl.string(O.t.hMRngA) : O.intl.formatToPlainString(O.t["3IRluI"], {
         channelName: l
-      }), (0, i.jsx)(h.Z.Provider, {
+      }), (0, i.jsx)(g.Z.Provider, {
         value: e.guild_id,
-        children: (0, i.jsx)(a.Modal, _(P({
+        children: (0, i.jsx)(o.Modal, _(P({
           title: O.intl.string(O.t.bKMaZX),
           subtitle: r,
           actions: [{
@@ -215,7 +215,7 @@ let M = {
             variant: "primary",
             text: O.intl.string(O.t.rOQ5BX),
             onClick: () => {
-              c.Z.pinMessage(e, t.id), n.onClose()
+              d.Z.pinMessage(e, t.id), n.onClose()
             }
           }]
         }, n), {
@@ -233,9 +233,9 @@ let M = {
     })
   },
   confirmUnpin: function(e, t) {
-    (0, o.h7j)(n => (0, i.jsx)(h.Z.Provider, {
+    (0, c.h7j)(n => (0, i.jsx)(g.Z.Provider, {
       value: e.guild_id,
-      children: (0, i.jsxs)(a.Modal, _(P({
+      children: (0, i.jsxs)(o.Modal, _(P({
         title: O.intl.string(O.t.CFF2vL),
         subtitle: O.intl.string(O.t.NjEPp7),
         actions: [{
@@ -246,7 +246,7 @@ let M = {
           variant: "critical-primary",
           text: O.intl.string(O.t.lAU5jB),
           onClick: () => {
-            c.Z.unpinMessage(e, t.id), n.onClose()
+            d.Z.unpinMessage(e, t.id), n.onClose()
           }
         }]
       }, n), {
@@ -257,7 +257,7 @@ let M = {
             message: t,
             disableInteraction: true
           })
-        }), (0, i.jsx)(p.Z, {
+        }), (0, i.jsx)(h.Z, {
           children: O.intl.format(O.t.oCVB3Y, {})
         })]
       }))
@@ -266,7 +266,7 @@ let M = {
   confirmDelete: function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
       r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : true;
-    (0, o.h7j)(l => (0, i.jsx)(w, P({
+    (0, c.h7j)(l => (0, i.jsx)(w, P({
       channel: e,
       message: t,
       showContextMenuHint: n,
@@ -274,7 +274,7 @@ let M = {
     }, l)))
   },
   confirmEdit: function(e, t, n) {
-    (0, o.h7j)(r => (0, i.jsx)(a.Modal, _(P({
+    (0, c.h7j)(r => (0, i.jsx)(o.Modal, _(P({
       title: O.intl.string(O.t.aIz1oV),
       actions: [{
         variant: "secondary",
@@ -284,11 +284,11 @@ let M = {
         variant: "primary",
         text: O.intl.string(O.t["cY+Oob"]),
         onClick: () => {
-          d.Z.editMessage(e, t, n), r.onClose()
+          u.Z.editMessage(e, t, n), r.onClose()
         }
       }]
     }, r), {
-      children: (0, i.jsx)(o.Text, {
+      children: (0, i.jsx)(c.Text, {
         variant: "text-md/normal",
         className: E.spacing,
         children: O.intl.string(O.t.grBcM8)

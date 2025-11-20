@@ -4,10 +4,10 @@
 require.d(exports, {
   Z: () => R
 }), require("./388685.js"), require("./997841.js"), require("./539854.js");
-var r, Chunk442837 = require("./442837.js"),
+var r, Chunk95015 = require("./95015.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk601964 = require("./601964.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk709054 = require("./709054.js"),
   Chunk271383 = require("./271383.js"),
   Chunk485386 = require("./485386.js"),
@@ -40,18 +40,18 @@ function b(e) {
   y(e), g.add(e);
   let n = d.Z.getGuild(e),
     r = f.default.getCurrentUser();
-  if (null == n || n.verificationLevel === _.sFg.NONE || null == r || (0, o.eM)(n, r) || r.isPhoneVerified()) return;
-  let i = c.ZP.getMember(n.id, r.id);
-  if (null != i) {
+  if (null == n || n.verificationLevel === _.sFg.NONE || null == r || (0, s.eM)(n, r) || r.isPhoneVerified()) return;
+  let a = c.ZP.getMember(n.id, r.id);
+  if (null != a) {
     var l;
-    if ((0, s.yE)(null != (l = i.flags) ? l : 0, p.q.BYPASSES_VERIFICATION)) return;
+    if ((0, i.yE)(null != (l = a.flags) ? l : 0, p.q.BYPASSES_VERIFICATION)) return;
     let e = new Set;
-    for (let t of i.roles) {
+    for (let t of a.roles) {
       let r = u.Z.getRole(n.id, t);
       null == r || r.managed || e.add(t)
     }
     let t = new Date("2022-12-02 00:00:00"),
-      r = null == i.joinedAt || new Date(i.joinedAt) < t;
+      r = null == a.joinedAt || new Date(a.joinedAt) < t;
     if (!(n.features.has(_.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED) && !r) && e.size > 0) return
   }
   let h = +r.createdAt + 6e4 * _.YeM.ACCOUNT_AGE - Date.now(),
@@ -63,7 +63,7 @@ function b(e) {
     T = false;
   r.isPhoneVerified() || r.isStaff() || (O = n.verificationLevel >= _.sFg.LOW && !r.verified, v = n.verificationLevel >= _.sFg.VERY_HIGH, I = n.verificationLevel >= _.sFg.MEDIUM && h > 0, T = n.verificationLevel >= _.sFg.HIGH && m > 0);
   let S = [];
-  T && S.push(m), I && S.push(h), S.length > 0 && (t = setTimeout(() => a.Z.dispatch({
+  T && S.push(m), I && S.push(h), S.length > 0 && (t = setTimeout(() => o.Z.dispatch({
     type: "GUILD_VERIFICATION_CHECK",
     guildId: e
   }), Math.max(...S))), E[e] = {

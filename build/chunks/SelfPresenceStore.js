@@ -8,13 +8,13 @@ var r, Chunk348327 = require("./348327.js"),
   a = require.n(Chunk348327),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
+  Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk503438 = require("./503438.js"),
   Chunk768419 = require("./768419.js"),
   Chunk695346 = require("./695346.js"),
   Chunk581883 = require("./581883.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk780570 = require("./780570.js"),
   Chunk77498 = require("./77498.js"),
   Chunk517100 = require("./517100.js"),
@@ -59,15 +59,15 @@ function j(e) {
 
 function U(e) {
   let t = m.Z.getGameByName(e);
-  return null != t ? j(t.id) : f.G6.getSetting()
+  return null != t ? j(t.id) : _.G6.getSetting()
 }
 
 function G(e) {
   var t;
-  if ((0, p.yE)(null != (t = e.flags) ? t : 0, v.xjy.CONTEXTLESS)) returntrue;
+  if ((0, l.yE)(null != (t = e.flags) ? t : 0, v.xjy.CONTEXTLESS)) returntrue;
   switch (e.type) {
     case v.IIU.LISTENING:
-      if ((0, u.Z)(e)) return d.Z.shouldShowActivity();
+      if ((0, d.Z)(e)) return f.Z.shouldShowActivity();
       if (null != e.application_id) return j(e.application_id);
       returnfalse;
     case v.IIU.PLAYING:

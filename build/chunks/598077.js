@@ -5,6 +5,7 @@ require.d(exports, {
   Z: () => O
 }), require("./415506.js"), require("./997841.js");
 var Chunk149765 = require("./149765.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk813820 = require("./813820.js"),
   Chunk81825 = require("./81825.js"),
   Chunk864106 = require("./864106.js"),
@@ -13,7 +14,6 @@ var Chunk149765 = require("./149765.js"),
   Chunk4242 = require("./4242.js"),
   Chunk921383 = require("./921383.js"),
   Chunk768581 = require("./768581.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk111361 = require("./111361.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js"),
@@ -66,15 +66,15 @@ class O extends Chunk81825.Z {
   }
   getAvatarURL(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-      r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : d.$k,
+      r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : f.$k,
       i = null != e ? this.guildMemberAvatars[e] : true;
-    return null != i && null != e ? d.ZP.getGuildMemberAvatarURLSimple({
+    return null != i && null != e ? f.ZP.getGuildMemberAvatarURLSimple({
       guildId: e,
       avatar: i,
       userId: this.id,
       canAnimate: n,
       canWebP: r
-    }) : d.ZP.getUserAvatarURL(this, n, t, null, r)
+    }) : f.ZP.getUserAvatarURL(this, n, t, null, r)
   }
   addGuildAvatarHash(e, t) {
     if (this.guildMemberAvatars[e] === t) return this;
@@ -99,7 +99,7 @@ class O extends Chunk81825.Z {
       n = arguments.length > 2 ? arguments[2] : true;
     if (null != e) {
       let r = this.guildMemberAvatars[e];
-      if (null != r) return d.ZP.getAnimatableSourceWithFallback(t, t => d.ZP.makeSource(d.ZP.getGuildMemberAvatarURLSimple({
+      if (null != r) return f.ZP.getAnimatableSourceWithFallback(t, t => f.ZP.makeSource(f.ZP.getGuildMemberAvatarURLSimple({
         guildId: e,
         avatar: r,
         userId: this.id,
@@ -107,7 +107,7 @@ class O extends Chunk81825.Z {
         size: n
       })))
     }
-    return d.ZP.getAnimatableSourceWithFallback(t, e => d.ZP.getUserAvatarSource(this, e, n))
+    return f.ZP.getAnimatableSourceWithFallback(t, e => f.ZP.getUserAvatarSource(this, e, n))
   }
   isClaimed() {
     return null != this.email || null != this.phone
@@ -122,10 +122,10 @@ class O extends Chunk81825.Z {
     return "".concat(this.username, "#").concat("".concat(this.discriminator).padStart(4, "0"))
   }
   hasPurchasedFlag(e) {
-    return (0, f.yE)(this.purchasedFlags, e)
+    return (0, i.yE)(this.purchasedFlags, e)
   }
   hasPremiumUsageFlag(e) {
-    return (0, f.yE)(this.premiumUsageFlags, e)
+    return (0, i.yE)(this.premiumUsageFlags, e)
   }
   hasHadSKU(e) {
     let t = m.vL[e];
@@ -194,7 +194,7 @@ class O extends Chunk81825.Z {
     return this.avatarDecorationData
   }
   set avatarDecoration(e) {
-    this.avatarDecorationData = (0, o.FG)(e)
+    this.avatarDecorationData = (0, s.FG)(e)
   }
   get nameplate() {
     var e;
@@ -205,10 +205,10 @@ class O extends Chunk81825.Z {
     return null != (t = null == (e = this.premiumState) ? true : module.premiumSubscriptionGroupRole) ? exports : Chunk813820.bF.UNSPECIFIED
   }
   constructor(e) {
-    var t, n, i, a, o, c, d, f, _, p, m, E, b, y, O, v, I, T, S, A, C, N, R, P, D, w, L, x, M, k, j, U, G, B;
+    var t, n, i, a, o, s, u, f, _, p, m, E, b, y, O, v, I, T, S, A, C, N, R, P, D, w, L, x, M, k, j, U, G, B;
     super(), g(this, "id", true), g(this, "username", true), g(this, "discriminator", true), g(this, "avatar", true), g(this, "avatarDecorationData", true), g(this, "banner", true), g(this, "email", true), g(this, "verified", true), g(this, "bot", true), g(this, "system", true), g(this, "mfaEnabled", true), g(this, "mobile", true), g(this, "desktop", true), g(this, "premiumType", true), g(this, "flags", true), g(this, "publicFlags", true), g(this, "purchasedFlags", true), g(this, "premiumUsageFlags", true), g(this, "phone", true), g(this, "nsfwAllowed", true), g(this, "ageVerificationStatus", true), g(this, "guildMemberAvatars", true), g(this, "hasBouncedEmail", true), g(this, "personalConnectionId", true), g(this, "globalName", true), g(this, "primaryGuild", true), g(this, "collectibles", true), g(this, "displayNameStyles", true), g(this, "premiumState", true), g(this, "hasFlag", e => false), g(this, "isStaff", () => false), g(this, "isStaffPersonal", () => false), g(this, "hasAnyStaffLevel", () => false);
     let Z = null != (n = e.premium_type) ? n : e.premiumType;
-    this.id = e.id, this.username = null != (i = e.username) ? i : "", this.discriminator = null != (a = e.discriminator) ? a : h.fo$, this.avatar = null != (o = e.avatar) ? o : null, this.avatarDecoration = null != (c = e.avatar_decoration_data) ? c : e.avatarDecorationData, this.email = null != (d = e.email) ? d : null, this.verified = null != (f = e.verified) && f, this.bot = null != (_ = e.bot) && _, this.system = null != (p = e.system) && p, this.mfaEnabled = null != (E = null != (m = e.mfa_enabled) ? m : e.mfaEnabled) && E, this.mobile = null != (b = e.mobile) && b, this.desktop = null != (y = e.desktop) && y, this.premiumType = Z === h.WND ? null : Z, this.flags = null != (O = e.flags) ? O : 0, this.publicFlags = null != (I = null != (v = e.public_flags) ? v : e.publicFlags) ? I : 0, this.purchasedFlags = null != (S = null != (T = e.purchased_flags) ? T : e.purchasedFlags) ? S : 0, this.premiumUsageFlags = null != (C = null != (A = e.premium_usage_flags) ? A : e.premiumUsageFlags) ? C : 0, this.phone = null != (N = e.phone) ? N : null, this.nsfwAllowed = null != (R = e.nsfw_allowed) ? R : e.nsfwAllowed, this.ageVerificationStatus = null != (P = e.age_verification_status) ? P : e.ageVerificationStatus, this.guildMemberAvatars = null != (D = e.guildMemberAvatars) ? D : {}, this.hasBouncedEmail = null != (L = null != (w = e.has_bounced_email) ? w : e.hasBouncedEmail) && L, this.personalConnectionId = null != (M = null != (x = e.personal_connection_id) ? x : e.personalConnectionId) ? M : null, this.globalName = null != (k = e.global_name) ? k : e.globalName, this.banner = e.banner, this.primaryGuild = (0, l.l)(null != (U = null != (j = e.primary_guild) ? j : e.primaryGuild) ? U : null), this.collectibles = e.collectibles, this.displayNameStyles = null != (G = e.displayNameStyles) ? G : (0, s.bN)(e.display_name_styles), this.premiumState = null != (B = e.premiumState) ? B : (0, u.C)(e.premium_state), Object.defineProperties(this, {
+    this.id = e.id, this.username = null != (i = e.username) ? i : "", this.discriminator = null != (a = e.discriminator) ? a : h.fo$, this.avatar = null != (o = e.avatar) ? o : null, this.avatarDecoration = null != (s = e.avatar_decoration_data) ? s : e.avatarDecorationData, this.email = null != (u = e.email) ? u : null, this.verified = null != (f = e.verified) && f, this.bot = null != (_ = e.bot) && _, this.system = null != (p = e.system) && p, this.mfaEnabled = null != (E = null != (m = e.mfa_enabled) ? m : e.mfaEnabled) && E, this.mobile = null != (b = e.mobile) && b, this.desktop = null != (y = e.desktop) && y, this.premiumType = Z === h.WND ? null : Z, this.flags = null != (O = e.flags) ? O : 0, this.publicFlags = null != (I = null != (v = e.public_flags) ? v : e.publicFlags) ? I : 0, this.purchasedFlags = null != (S = null != (T = e.purchased_flags) ? T : e.purchasedFlags) ? S : 0, this.premiumUsageFlags = null != (C = null != (A = e.premium_usage_flags) ? A : e.premiumUsageFlags) ? C : 0, this.phone = null != (N = e.phone) ? N : null, this.nsfwAllowed = null != (R = e.nsfw_allowed) ? R : e.nsfwAllowed, this.ageVerificationStatus = null != (P = e.age_verification_status) ? P : e.ageVerificationStatus, this.guildMemberAvatars = null != (D = e.guildMemberAvatars) ? D : {}, this.hasBouncedEmail = null != (L = null != (w = e.has_bounced_email) ? w : e.hasBouncedEmail) && L, this.personalConnectionId = null != (M = null != (x = e.personal_connection_id) ? x : e.personalConnectionId) ? M : null, this.globalName = null != (k = e.global_name) ? k : e.globalName, this.banner = e.banner, this.primaryGuild = (0, c.l)(null != (U = null != (j = e.primary_guild) ? j : e.primaryGuild) ? U : null), this.collectibles = e.collectibles, this.displayNameStyles = null != (G = e.displayNameStyles) ? G : (0, l.bN)(e.display_name_styles), this.premiumState = null != (B = e.premiumState) ? B : (0, d.C)(e.premium_state), Object.defineProperties(this, {
       hasFlag: {
         writable: false,
         configurable: false,

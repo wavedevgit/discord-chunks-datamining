@@ -5,6 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk58642 = require("./58642.js"),
@@ -12,7 +13,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk695346 = require("./695346.js"),
   Chunk490983 = require("./490983.js"),
   Chunk626135 = require("./626135.js"),
-  Chunk630388 = require("./630388.js"),
   Chunk804739 = require("./804739.js"),
   Chunk957657 = require("./957657.jsx"),
   Chunk34305 = require("./34305.jsx"),
@@ -52,8 +52,8 @@ function y(e) {
     let t = e.libraryApplication.getDistributor();
     return (0, r.jsxs)("div", {
       className: b.hiddenLibraryApplication,
-      children: [(0, r.jsxs)(o.Z, {
-        direction: o.Z.Direction.VERTICAL,
+      children: [(0, r.jsxs)(c.Z, {
+        direction: c.Z.Direction.VERTICAL,
         className: b.hiddenLibraryApplicationContent,
         children: [(0, r.jsx)("div", {
           className: b.applicationName,
@@ -62,10 +62,10 @@ function y(e) {
           className: b.applicationSubText,
           children: m.EOG[t]
         }) : null]
-      }), (0, r.jsx)(a.P3F, {
+      }), (0, r.jsx)(s.P3F, {
         className: b.restoreButton,
         onClick: () => n(e.libraryApplication),
-        children: (0, r.jsx)(a.Dio, {
+        children: (0, r.jsx)(s.Dio, {
           size: "md",
           color: "currentColor",
           className: b.restoreIcon
@@ -75,7 +75,7 @@ function y(e) {
   });
   return (0, r.jsxs)("div", {
     className: b.hiddenLibraryApplications,
-    children: [(0, r.jsx)(a.Heading, {
+    children: [(0, r.jsx)(s.Heading, {
       variant: "heading-md/semibold",
       className: b.hiddenLibraryApplicationsTitle,
       children: _.intl.string(_.t["5PJtrH"])
@@ -84,13 +84,13 @@ function y(e) {
 }
 class v extends Chunk473749.PureComponent {
   handleToggleShortcutDesktop(e) {
-    c.Xc.updateSetting(e)
+    u.Xc.updateSetting(e)
   }
   handleToggleShortcutStartMenu(e) {
-    c.Pe.updateSetting(e)
+    u.Pe.updateSetting(e)
   }
   trackRestoreApplication(e, t) {
-    d.default.track(m.rMx.APPLICATION_SETTINGS_UPDATED, O({
+    p.default.track(m.rMx.APPLICATION_SETTINGS_UPDATED, O({
       hidden_enabled: t
     }, e.getAnalyticsData()))
   }
@@ -133,8 +133,8 @@ class v extends Chunk473749.PureComponent {
   }
   constructor(...e) {
     super(...e), E(this, "handleRestoreHiddenLibraryApplication", e => {
-      let t = p.x9(e.getFlags(), m.eHb.HIDDEN);
-      s.h(e.id, e.branchId, t), this.trackRestoreApplication(e, p.yE(t, m.eHb.HIDDEN))
+      let t = l.x9(e.getFlags(), m.eHb.HIDDEN);
+      o.h(e.id, e.branchId, t), this.trackRestoreApplication(e, l.yE(t, m.eHb.HIDDEN))
     })
   }
 }
