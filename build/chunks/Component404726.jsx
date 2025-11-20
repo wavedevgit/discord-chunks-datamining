@@ -122,14 +122,13 @@ function f(e) {
   let G = i.useRef(0);
   i.useEffect(() => {
     if (null == j) return;
-    j.play();
     let e = t => {
       null != t.data && "number" == typeof t.data && (G.current = t.data, t.data > 0 && ("halt" === y && D.reducedMotion.enabled && j.isPlaying && j.pause(), j.off(o.EventType.Advance, e)))
     };
-    return j.on(o.EventType.Advance, e), () => {
+    return j.on(o.EventType.Advance, e), _ && j.play(), () => {
       j.off(o.EventType.Advance, e)
     }
-  }, [j, D.reducedMotion.enabled, y]);
+  }, [j, D.reducedMotion.enabled, y, _]);
   let B = i.useRef(false);
   return i.useEffect(() => {
     if (null != j) return !L && B.current && j.isPlaying && G.current > 0 ? j.pause() : L && !j.isPlaying && B.current && j.play(), () => {
