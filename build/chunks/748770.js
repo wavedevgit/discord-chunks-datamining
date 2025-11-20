@@ -2,9 +2,9 @@
 /** chunk id: 748770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Br: () => p,
-  L9: () => h,
-  ZP: () => m
+  L9: () => y,
+  Pu: () => E,
+  ZP: () => O
 });
 var Chunk32662 = require("./32662.js"),
   Chunk544891 = require("./544891.js"),
@@ -14,11 +14,31 @@ var Chunk32662 = require("./32662.js"),
   Chunk706454 = require("./706454.js"),
   Chunk675478 = require("./675478.js"),
   Chunk605338 = require("./605338.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk163684 = require("./163684.js"),
+  Chunk312973 = require("./312973.js"),
   Chunk1844 = require("./1844.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js");
-async function p() {
-  if (!Chunk1844.Z.isFetchingActivePromotions) try {
+
+function E() {
+  let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
+    t = Chunk594174.default.getCurrentUser(),
+    n = Chunk74538.ZP.isPremiumExactly(exports, Chunk474936.PremiumTypes.TIER_2),
+    r = (0, Chunk312973.$)({
+      location: "maybeFetchActivePromotions"
+    }),
+    i = Chunk163684.g.getCurrentConfig({
+      location: "maybeFetchActivePromotions"
+    }, {
+      autoTrackExposure: false,
+      disable: require
+    }).enabled;
+  (Chunk32662 || require || Chunk544891) && !Chunk1844.Z.isFetchingActivePromotions && (module && null != Chunk1844.Z.lastFetchedActivePromotions || b())
+}
+async function b() {
+  try {
     Chunk570140.Z.dispatch({
       type: "ACTIVE_PROMOTIONS_FETCH"
     });
@@ -49,7 +69,7 @@ async function p() {
     })
   }
 }
-async function h() {
+async function y() {
   if (!Chunk1844.Z.isFetchingActiveBogoPromotion) try {
     Chunk570140.Z.dispatch({
       type: "ACTIVE_BOGO_PROMOTION_FETCH"
@@ -71,8 +91,8 @@ async function h() {
     })
   }
 }
-let m = {
-  fetchActivePromotions: p,
+let O = {
+  fetchActivePromotions: b,
   dismissOutboundPromotionNotice: function() {
     Chunk570140.Z.dispatch({
       type: "OUTBOUND_PROMOTION_NOTICE_DISMISS"
@@ -89,5 +109,5 @@ let m = {
       type: "OUTBOUND_PROMOTIONS_SEEN"
     })
   },
-  fetchActiveBogoPromotion: h
+  fetchActiveBogoPromotion: y
 }

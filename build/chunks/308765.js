@@ -253,7 +253,7 @@ let i = {
     neverLoadBeforeConnectionOpen: true
   },
   PromotionsManager: {
-    actions: ["POST_CONNECTION_OPEN", "EXPERIMENTS_FETCH_SUCCESS"],
+    actions: ["POST_CONNECTION_OPEN", "EXPERIMENTS_FETCH_SUCCESS", "BILLING_SUBSCRIPTION_UPDATE_SUCCESS", "BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS", "BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS", "VIRTUAL_CURRENCY_REDEEM_SUCCESS"],
     inlineRequire: () => require("./349540.js").Z
   },
   RelationshipManager: {

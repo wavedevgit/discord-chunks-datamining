@@ -94,6 +94,7 @@ let y = Chunk473749.memo(function(e) {
           }), (0, r.jsx)("div", {
             className: v.footerInfoShrinkOnHover,
             children: (0, r.jsxs)("div", {
+              className: x.progressContainer,
               children: [(0, r.jsx)(f.Z, {
                 variant: f.y.BLUE,
                 progress: T.length,

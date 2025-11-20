@@ -8,10 +8,10 @@ var Chunk147913 = require("./147913.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js");
 require("./367074.js");
-var Chunk163684 = require("./163684.js"),
-  Chunk312973 = require("./312973.js"),
-  Chunk748770 = require("./748770.js"),
-  Chunk474936 = require("./474936.js");
+var Chunk748770 = require("./748770.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk231338 = require("./231338.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -23,29 +23,34 @@ function u(e, t, n) {
 }
 class d extends Chunk147913.Z {
   async onPostConnectionOpen() {
-    this.maybeFetchActivePromotions(), await this.maybeFetchBogoPromotion()
+    (0, Chunk748770.Pu)(), await this.maybeFetchBogoPromotion()
   }
-  maybeFetchActivePromotions() {
-    let e = Chunk594174.default.getCurrentUser(),
-      t = Chunk74538.ZP.isPremiumExactly(module, Chunk474936.PremiumTypes.TIER_2),
-      n = (0, Chunk312973.$)({
-        location: "maybeFetchActivePromotions"
-      }),
-      r = Chunk163684.g.getCurrentConfig({
-        location: "maybeFetchActivePromotions"
-      }, {
-        autoTrackExposure: false,
-        disable: exports
-      }).enabled;
-    (require || exports || Chunk147913) && (0, Chunk748770.Br)()
+  onSubscriptionUpdated(e) {
+    let {
+      subscription: t
+    } = e;
+    t.type === c.NY.PREMIUM && (0, o.Pu)(false)
+  }
+  onOfferUpdated() {
+    (0, Chunk748770.Pu)(false)
+  }
+  onVCRedeemed(e) {
+    let {
+      entitlements: t
+    } = e;
+    t.some(e => e.type === l.qc2.FRACTIONAL_REDEMPTION) && (0, o.Pu)(false)
   }
   constructor(...e) {
     super(...e), u(this, "actions", {
       POST_CONNECTION_OPEN: this.onPostConnectionOpen.bind(this),
-      EXPERIMENTS_FETCH_SUCCESS: this.onPostConnectionOpen.bind(this)
+      EXPERIMENTS_FETCH_SUCCESS: this.onPostConnectionOpen.bind(this),
+      BILLING_SUBSCRIPTION_UPDATE_SUCCESS: this.onSubscriptionUpdated.bind(this),
+      BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS: this.onOfferUpdated.bind(this),
+      BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: this.onOfferUpdated.bind(this),
+      VIRTUAL_CURRENCY_REDEEM_SUCCESS: this.onVCRedeemed.bind(this)
     }), u(this, "maybeFetchBogoPromotion", async () => {
       let e = i.default.getCurrentUser();
-      a.ZP.isPremiumExactly(e, c.PremiumTypes.TIER_2)
+      a.ZP.isPremiumExactly(e, s.PremiumTypes.TIER_2)
     })
   }
 }

@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk331972 = require("./331972.js"),
   Chunk622909 = require("./622909.js"),
   Chunk639119 = require("./639119.js"),
-  Chunk1844 = require("./1844.js"),
+  Chunk715130 = require("./715130.js"),
   Chunk655525 = require("./655525.jsx"),
   Chunk244989 = require("./244989.jsx"),
   Chunk675957 = require("./675957.js"),
@@ -131,7 +131,7 @@ let J = e => {
     (0, g.Kl)() && ((eT || eC && !eL) && eM.push(o.z.NITRO_TAB_BADGE_OFFER_REMINDER), ey && eM.push(o.z.RECURRING_3P_PROMOTION_POPOVER), e_ && eM.push(o.z.BOGO_2025_NITRO_TAB_BADGE), ew && eM.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), em && eM.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eR && eM.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE), eD && eM.push(o.z.GAME_WIDGETS_PREMIUM_TAB_BADGE));
     let [eU, eG] = (0, _.US)(eM, true, true);
     eN && ek.push(o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK);
-    let [eB, eH] = (0, _.US)(ek, true, true), eV = (0, s.e7)([w.Z], () => w.Z.getMarketingComponentByType(a.I.PREMIUM_TAB)), [eF, ez] = (0, _.TE)(null != eV && "premiumTab" === eV.properties.properties.oneofKind ? o.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, null != (ee = null == eV ? true : eV.id) ? ee : "", true, true);
+    let [eB, eH] = (0, _.US)(ek, true, true), eV = (0, w.H)(a.I.PREMIUM_TAB), [eF, ez] = (0, _.TE)(null != eV && "premiumTab" === eV.properties.properties.oneofKind ? o.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, null != (ee = null == eV ? true : eV.id) ? ee : "", true, true);
     if (i.useEffect(() => {
         true === et && null != eU && eG(K.L.AUTO_DISMISS), true === et && null != eB && eH(K.L.AUTO_DISMISS), true === et && null != eF && ez(K.L.AUTO_DISMISS)
       }, [eG, et, eU, eH, eB, eF, ez]), !J({
