@@ -28,20 +28,20 @@ let E = e => {
       product: t,
       isCardHovered: n
     } = e, l = (0, p.rC)(t), {
-      isPurchased: s,
-      isPartiallyOwnedBundle: o
+      isPurchased: o,
+      isPartiallyOwnedBundle: s
     } = (0, g.L)(t), c = l === a.Z.PROFILE_EFFECT;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: i()(x.productPreview, {
-          [x.faded]: (s || o) && !n,
+          [x.faded]: (o || s) && !n,
           [x.fullPreview]: c
         }),
         children: (0, r.jsx)(O, {
           product: t,
           isCardHovered: n
         })
-      }), s && (0, r.jsx)(S, {
+      }), o && (0, r.jsx)(S, {
         hidden: n
       })]
     })
@@ -50,18 +50,18 @@ let E = e => {
     let {
       product: t,
       isCardHovered: n
-    } = e, l = (0, o.e7)([d.default], () => d.default.getCurrentUser()), i = (0, p.rC)(t), s = (0, v.o)(t);
+    } = e, l = (0, s.e7)([d.default], () => d.default.getCurrentUser()), i = (0, p.rC)(t), o = (0, v.o)(t);
     switch (i) {
       case a.Z.PROFILE_EFFECT:
         return (0, r.jsx)(u.Z, {
-          skuId: s.skuId,
+          skuId: o.skuId,
           isHighlighted: n,
           isPurchased: false,
           removeSetHeight: true
         });
       case a.Z.AVATAR_DECORATION:
         return (0, r.jsx)(h.R, {
-          item: s,
+          item: o,
           user: l,
           isHighlighted: n,
           isPurchased: false,
@@ -69,7 +69,7 @@ let E = e => {
         });
       case a.Z.NAMEPLATE:
         return (0, r.jsx)(_.Z, {
-          nameplate: s,
+          nameplate: o,
           user: l,
           isHighlighted: n,
           isPurchased: false
@@ -94,7 +94,7 @@ let E = e => {
     let {
       hidden: t
     } = e;
-    return (0, r.jsx)(s.sV5, {
+    return (0, r.jsx)(o.sV5, {
       size: "custom",
       color: c.TVs.colors.INTERACTIVE_ACTIVE,
       width: 40,
@@ -111,9 +111,9 @@ let E = e => {
       overrideVariantIndex: l
     } = e, i = (0, p.LJ)(t), a = (0, f.o)(i);
     if (null == i) return null;
-    let s = (0, b.W)(i, null != l ? l : a);
+    let o = (0, b.W)(i, null != l ? l : a);
     return (0, r.jsx)(E, {
-      product: s,
+      product: o,
       isCardHovered: n
     })
   }

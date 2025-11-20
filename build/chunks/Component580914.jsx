@@ -65,7 +65,7 @@ let V = (0, Chunk884697.IC)(90),
       heroBlock: G,
       tab: K,
       onVisibilityChange: Y
-    } = e, q = (0, s.O)(e => {
+    } = e, q = (0, o.O)(e => {
       null == Y || Y(e)
     }, .1, null != Y), J = l.useRef(null), Q = (0, w.B)("HeroBlock"), X = (0, u.e7)([C.default], () => C.default.getCurrentUser()), $ = (0, N.Z)(), ee = (0, b.sp)(), et = l.useMemo(() => {
       var e, t;
@@ -91,8 +91,8 @@ let V = (0, Chunk884697.IC)(90),
       bannerStyleOverrides: el,
       logoStyleOverrides: ei,
       heroLogo: ea,
-      heroBannerStatic: es,
-      heroBannerAnimated: eo,
+      heroBannerStatic: eo,
+      heroBannerAnimated: es,
       heroBannerRive: ec
     } = (0, P.hr)(et), eu = null != (t = null == el ? true : el.responsive) && t, ed = null == el ? true : el.backgroundStyle, ef = null != ec, eg = (0, u.e7)([v.Z], () => v.Z.products), ep = l.useMemo(() => n ? [] : eg.size > 0 ? $(et.rankedSkuIds) : [], [n, $, et.rankedSkuIds, eg]), em = l.useMemo(() => !n && 0 !== et.rankedSkuIds.length && !(ep.length > 0) && et.rankedSkuIds.every(e => {
       var t;
@@ -131,7 +131,7 @@ let V = (0, Chunk884697.IC)(90),
         }), en ? (0, A.Z)({
           analyticsLocations: ej
         }) : (0, m.navigateToQuestHome)({
-          fromContent: o.j.ORBS_SHOP_HERO_CTA
+          fromContent: s.j.ORBS_SHOP_HERO_CTA
         })) : (i({
           sourceButton: "shop latest category hero",
           categorySkuId: !eS || eC ? et.categorySkuId : true,
@@ -161,9 +161,9 @@ let V = (0, Chunk884697.IC)(90),
         style: null != ed ? {
           background: ed
         } : true,
-        children: null != es && (0, r.jsx)(D.Z, {
-          bannerStatic: es,
-          bannerAnimated: eo,
+        children: null != eo && (0, r.jsx)(D.Z, {
+          bannerStatic: eo,
+          bannerAnimated: es,
           bannerRive: ec,
           isResponsive: eu,
           eventTargetRef: J

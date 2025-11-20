@@ -26,7 +26,7 @@ let x = e => {
     let {
       product: t,
       prioritizedCurrency: n
-    } = e, u = (0, i.e7)([s.default], () => s.default.getCurrentUser()), h = (0, m.jB)(), x = c.ZP.canUseCollectibles(u), {
+    } = e, u = (0, i.e7)([o.default], () => o.default.getCurrentUser()), h = (0, m.jB)(), x = c.ZP.canUseCollectibles(u), {
       isDisabled: E
     } = (0, f.G)(t.skuId), {
       isPurchased: O,
@@ -57,7 +57,7 @@ let x = e => {
       children: b.intl.string(b.t.BEjTij)
     });
     if (y && null != j) {
-      let e = (0, o.TD)(Date.now(), j);
+      let e = (0, s.TD)(Date.now(), j);
       return (0, r.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "text-tertiary",

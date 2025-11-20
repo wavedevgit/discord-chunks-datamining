@@ -134,7 +134,7 @@ let A = e => {
         let l = null,
           i = false;
         switch (e.type) {
-          case s.z.HERO:
+          case o.z.HERO:
             l = (0, r.jsx)(S.Z, {
               isLoading: M,
               handleTransition: c,
@@ -142,33 +142,33 @@ let A = e => {
               tab: b
             }, n);
             break;
-          case s.z.FEATURED:
+          case o.z.FEATURED:
             l = (0, r.jsx)(E.Z, {
               isLoading: M,
               handleTransition: c,
               featuredBlockRecord: e
             }, n);
             break;
-          case s.z.FEED:
+          case o.z.FEED:
             let g = e.sortedSkuIds;
             l = (0, r.jsx)(O.Z, {
               title: b === L.AW.ORBS ? P.intl.string(P.t.dFgeuZ) : P.intl.string(P.t.NSv5KV),
               isLoading: M || f,
               numVisibleItems: u,
               sortedSkuIds: g,
-              buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? N.feedblockInteractiveBackground : true,
+              buttonContainerClassName: (null == t ? true : t.type) === o.z.IMMERSIVE_BANNER ? N.feedblockInteractiveBackground : true,
               prioritizeUserDiscounts: b === L.AW.HOME,
               tab: b,
               orbsSupportedOnly: b === L.AW.ORBS
             }, n);
             break;
-          case s.z.WIDE_BANNER:
+          case o.z.WIDE_BANNER:
             if (e.isDismissible) {
               var m;
               let t = null != (m = e.dismissibleContentVersion) ? m : 0,
                 {
                   isDismissed: n
-                } = (0, d.H4)(o.z.COLLECTIBLES_SHOP_WIDE_BANNER, t);
+                } = (0, d.H4)(s.z.COLLECTIBLES_SHOP_WIDE_BANNER, t);
               if (n) return null
             }
             l = (0, r.jsx)(T.Z, {
@@ -177,26 +177,26 @@ let A = e => {
               tab: b
             }, n);
             break;
-          case s.z.SHELF:
+          case o.z.SHELF:
             l = (0, r.jsx)(k.Z, {
               handleTransition: c,
               shelf: e,
               tab: b
             }, n);
             break;
-          case s.z.COUNTDOWN_TIMER:
+          case o.z.COUNTDOWN_TIMER:
             l = (0, r.jsx)(x.J, {
               countdownTimerBlock: e,
               isVisible: Z
             }, n), i = true;
             break;
-          case s.z.IMMERSIVE_BANNER:
+          case o.z.IMMERSIVE_BANNER:
             l = (0, r.jsx)(y.Z, {
               immersiveBannerBlock: e,
               onVisibilityChange: e => w(!e)
             }, n);
             break;
-          case s.z.REWARD_HERO:
+          case o.z.REWARD_HERO:
             l = (0, r.jsx)(j.Z, {
               isLoading: M,
               handleTransition: c,
@@ -225,8 +225,8 @@ let A = e => {
       tab: n,
       transitionState: i
     } = e, a = l.useRef(null), {
-      handleScroll: s
-    } = (0, u.z)(a, n), o = (0, b.R)(), d = (0, g.sp)(), [p, m] = l.useState(L.IV), [h, C] = l.useState(false);
+      handleScroll: o
+    } = (0, u.z)(a, n), s = (0, b.R)(), d = (0, g.sp)(), [p, m] = l.useState(L.IV), [h, C] = l.useState(false);
     return l.useEffect(() => {
       if (null != a.current) {
         let e = () => {
@@ -242,7 +242,7 @@ let A = e => {
     }, [a, p, m, C]), (0, r.jsx)(c.Den, {
       className: N.shopScroll,
       ref: a,
-      onScroll: s,
+      onScroll: o,
       children: (0, r.jsxs)("div", {
         className: N.shop,
         children: [(0, r.jsxs)("div", {
@@ -250,7 +250,7 @@ let A = e => {
           children: [(0, r.jsx)(A, {
             handleTransition: t,
             numVisibleItems: p,
-            isFetchingCategories: o,
+            isFetchingCategories: s,
             tab: n
           }), n !== L.AW.CATALOG && p >= 36 && (0, r.jsxs)("div", {
             className: N.endOfFeed,

@@ -41,12 +41,12 @@ function I(e) {
   } = e, T = (0, d.sp)(), L = null != (t = null == T ? true : T.sessionId) ? t : "", {
     noCache: B,
     includeUnpublished: P
-  } = (0, O.Z)(), N = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, O.Z)(), N = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: A,
     currentPage: R,
     totalCount: Z,
     isFetchingResults: w
-  } = (0, h.a)(), D = (0, s.Wu)([f.Z], () => f.Z.getProductsBySkus(A)), H = l.useCallback(() => {
+  } = (0, h.a)(), D = (0, o.Wu)([f.Z], () => f.Z.getProductsBySkus(A)), H = l.useCallback(() => {
     var e;
     null == i || null == (e = i.current) || e.scrollToTop({
       animate: true
@@ -131,7 +131,7 @@ function I(e) {
     }), Z > G && (0, r.jsx)("div", {
       className: j.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(o.DsT, {
+        children: (0, r.jsx)(s.DsT, {
           currentPage: R,
           totalCount: Z,
           pageSize: G,

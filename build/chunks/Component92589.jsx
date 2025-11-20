@@ -41,7 +41,7 @@ let f = e => {
   }, .33, null != n), {
     bannerUrl: g,
     bannerAnimatedUrl: p
-  } = (0, s._M)(t), m = null != t.textColor ? {
+  } = (0, o._M)(t), m = null != t.textColor ? {
     color: t.textColor
   } : true, h = null != t.body && "" !== t.body, C = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
   return (0, r.jsxs)("div", {
@@ -49,7 +49,7 @@ let f = e => {
     className: u.immersiveBannerBlock,
     children: [(0, r.jsx)("div", {
       className: u.banner,
-      children: null != g && (0, r.jsx)(o.Z, {
+      children: null != g && (0, r.jsx)(s.Z, {
         bannerStatic: g,
         bannerAnimated: p
       })

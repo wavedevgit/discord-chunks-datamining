@@ -32,7 +32,7 @@ let m = e => {
     O = (0, d.YG)(C, _),
     S = l.useRef(null),
     y = null == _ ? true : _.bodyText,
-    j = (0, o.sp)();
+    j = (0, s.sp)();
   return (0, r.jsx)(i.$, {
     innerRef: S,
     onChange: E,
@@ -66,7 +66,7 @@ let m = e => {
           categorySkuId: x,
           isInternalShopDeeplink: true,
           isOrbsExclusive: null == C ? true : C.isOrbsExclusive
-        }), s.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        }), o.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == j ? true : j.sessionId,
           sku_id: x,
           page_type: "home",
@@ -103,7 +103,7 @@ let m = e => {
               categorySkuId: x,
               isInternalShopDeeplink: true,
               isOrbsExclusive: null == C ? true : C.isOrbsExclusive
-            }), e.stopPropagation(), s.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            }), e.stopPropagation(), o.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == j ? true : j.sessionId,
               sku_id: x,
               page_type: "home",

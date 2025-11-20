@@ -35,7 +35,7 @@ let S = Chunk473749.memo(function(e) {
     readyToClaim: y,
     collectibleProductSkuIds: j,
     collectedSkuIds: k
-  } = (0, C.q)(t, n), I = (0, o.e7)([m.Z], () => m.Z.isClaiming === n);
+  } = (0, C.q)(t, n), I = (0, s.e7)([m.Z], () => m.Z.isClaiming === n);
   return (0, r.jsx)("div", {
     ref: i,
     className: a()(b.productCardContainer, v.defaultCursor, {
@@ -81,7 +81,7 @@ let S = Chunk473749.memo(function(e) {
               position: "top",
               children: (0, r.jsx)("span", {
                 className: v.questionIconContainer,
-                children: (0, r.jsx)(s.idN, {
+                children: (0, r.jsx)(o.idN, {
                   size: "xs"
                 })
               })
@@ -97,10 +97,10 @@ let S = Chunk473749.memo(function(e) {
                 className: a()(v.progressTextContainer, {
                   [v.readyToClaimText]: y
                 }),
-                children: [y ? (0, r.jsx)(s.kmB, {
+                children: [y ? (0, r.jsx)(o.kmB, {
                   size: "xs",
                   color: "currentColor"
-                }) : null, (0, r.jsx)(s.xvT, {
+                }) : null, (0, r.jsx)(o.xvT, {
                   variant: "text-xs/medium",
                   color: "currentColor",
                   children: _.intl.formatToPlainString(_.t["5TwASM"], {
@@ -113,11 +113,11 @@ let S = Chunk473749.memo(function(e) {
           })]
         }), (0, r.jsx)("div", {
           className: b.footerButtonContainer,
-          children: (0, r.jsx)(s.hE2, {
+          children: (0, r.jsx)(o.hE2, {
             wrap: false,
             className: b.footerButtonGroup,
             fullWidth: true,
-            children: (0, r.jsx)(s.zxk, {
+            children: (0, r.jsx)(o.zxk, {
               variant: "primary",
               onClick: e => {
                 e.stopPropagation(), y && (0, g.wW)(t.skuId, n).then(() => {
@@ -129,12 +129,13 @@ let S = Chunk473749.memo(function(e) {
                       type: "video",
                       src: E.Z,
                       fallbackImageSrc: x.Z,
-                      loop: false,
+                      loop: true,
+                      loopAt: 6,
                       aspectRatio: "16/9"
                     }
                   })
                 }).catch(() => {
-                  (0, u.ZDy)(() => Promise.resolve(e => (0, r.jsx)(s.Modal, {
+                  (0, u.ZDy)(() => Promise.resolve(e => (0, r.jsx)(o.Modal, {
                     transitionState: e.transitionState,
                     onClose: e.onClose,
                     size: "sm",

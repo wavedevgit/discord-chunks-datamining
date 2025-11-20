@@ -26,8 +26,8 @@ let g = Chunk473749.memo(function(e) {
       friction: 12
     }
   });
-  return (0, r.jsxs)(s.animated.div, {
-    className: a()([f.countDownWrapper, o.tq && f.mobileWrapper]),
+  return (0, r.jsxs)(o.animated.div, {
+    className: a()([f.countDownWrapper, s.tq && f.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {

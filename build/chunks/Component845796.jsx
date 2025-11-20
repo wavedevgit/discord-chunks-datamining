@@ -25,21 +25,21 @@ let b = () => {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: n
-  } = (0, Chunk501431.S)(), i = (0, Chunk381585.sp)(), b = (0, Chunk811847.B)("CollectiblesSortSelect"), v = require(), x = Chunk473749.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== o.E.RELEVANCE || v), [v]), E = Chunk473749.useCallback(e => {
+  } = (0, Chunk501431.S)(), i = (0, Chunk381585.sp)(), b = (0, Chunk811847.B)("CollectiblesSortSelect"), v = require(), x = Chunk473749.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== s.E.RELEVANCE || v), [v]), E = Chunk473749.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
     } = e;
-    return t === o.E.RECENCY ? {
+    return t === s.E.RECENCY ? {
       label: h.intl.string(h.t["51Bhiz"]),
       value: "recent"
-    } : t === o.E.PRICE ? n === s.F.ASC ? {
+    } : t === s.E.PRICE ? n === o.F.ASC ? {
       label: h.intl.string(h.t.m8RVU2),
       value: "price-asc"
     } : {
       label: h.intl.string(h.t.zBwQJO),
       value: "price-desc"
-    } : t === o.E.RELEVANCE ? {
+    } : t === s.E.RELEVANCE ? {
       label: h.intl.string(h.t["XoeT/z"]),
       value: "relevance"
     } : {
@@ -48,24 +48,24 @@ let b = () => {
     }
   }, []), O = Chunk473749.useCallback(e => ({
     recent: {
-      sortType: o.E.RECENCY,
-      sortDirection: s.F.DESC
+      sortType: s.E.RECENCY,
+      sortDirection: o.F.DESC
     },
     "price-asc": {
-      sortType: o.E.PRICE,
-      sortDirection: s.F.ASC
+      sortType: s.E.PRICE,
+      sortDirection: o.F.ASC
     },
     "price-desc": {
-      sortType: o.E.PRICE,
-      sortDirection: s.F.DESC
+      sortType: s.E.PRICE,
+      sortDirection: o.F.DESC
     },
     popularity: {
-      sortType: o.E.POPULARITY,
-      sortDirection: s.F.DESC
+      sortType: s.E.POPULARITY,
+      sortDirection: o.F.DESC
     },
     relevance: {
-      sortType: o.E.RELEVANCE,
-      sortDirection: s.F.DESC
+      sortType: s.E.RELEVANCE,
+      sortDirection: o.F.DESC
     }
   })[e], []), S = Chunk473749.useCallback(e => {
     let n = E(O(e));
