@@ -13,7 +13,7 @@ var Chunk846027 = require("./846027.js"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.UO)(Chunk313789.n.VOICE_PUSH_TO_TALK_RELEASE_DELAY_SETTING, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.GCNMM8),
-  usePredicate: Chunk595373.p,
+  usePredicate: Chunk595373.J,
   getInitialValue: function() {
     let {
       delay: t

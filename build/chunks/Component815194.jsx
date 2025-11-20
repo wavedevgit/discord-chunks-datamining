@@ -38,7 +38,7 @@ function I() {
   })
 }
 let O = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
-  usePredicate: Chunk595373.p,
+  usePredicate: Chunk595373.J,
   render: () => (0, Chunk54381.jsx)(I, {}),
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)]
 })

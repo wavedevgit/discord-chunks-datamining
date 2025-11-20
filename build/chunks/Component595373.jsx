@@ -1,8 +1,8 @@
 /** Chunk was on 9452 **/
 /** chunk id: 595373, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f,
-  p: () => N
+  J: () => N,
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function N() {
-  return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getActiveInputProfile() !== Chunk345655._.STUDIO)
+  return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode() === Chunk65154.pM.PUSH_TO_TALK)
 }
 
 function A() {
@@ -53,7 +53,9 @@ function A() {
   })
 }
 let f = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_SETTING, {
-  usePredicate: N,
+  usePredicate: function() {
+    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getActiveInputProfile() !== Chunk345655._.STUDIO)
+  },
   render: () => (0, Chunk54381.jsx)(A, {}),
   useSearchTerms: () => [Chunk818710.FB ? Chunk388032.intl.string(Chunk388032.t.tG4Np5) : Chunk388032.intl.string(Chunk388032.t.JMyQin), Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)]
 })

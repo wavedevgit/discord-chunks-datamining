@@ -16,7 +16,7 @@ let T = (0, Chunk509613.qs)(Chunk313789.n.VOICE_PUSH_TO_TALK_LATCHING_SETTING, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.EGn1eN),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.iT257i),
   usePredicate: function() {
-    let t = (0, Chunk595373.p)(),
+    let t = (0, Chunk595373.J)(),
       {
         enableLatching: e
       } = (0, Chunk383451.H)({
