@@ -152,7 +152,7 @@ function G(e) {
             className: L.titleContainer,
             children: (0, r.jsx)(_.Text, {
               color: "always-white",
-              variant: "text-md/bold",
+              variant: "text-md/medium",
               lineClamp: 1,
               children: ee.name
             })
@@ -163,7 +163,7 @@ function G(e) {
               alt: ea,
               className: L.iconAsset
             }), (0, r.jsx)(_.Text, {
-              variant: "text-md/semibold",
+              variant: "text-md/bold",
               color: "always-white",
               lineClamp: 1,
               children: (0, O.T4)(null != (V = null == (C = ee.price) ? true : C.amount) ? V : 0, null != (H = null == (j = ee.price) ? true : j.currency) ? H : D.pK.USD)

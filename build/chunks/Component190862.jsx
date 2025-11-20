@@ -1,4 +1,4 @@
-/** Chunk was on 52708 **/
+/** Chunk was on 44097 **/
 /** chunk id: 190862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -38,7 +38,7 @@ function y(e) {
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -53,10 +53,10 @@ function O(e, t) {
   }
   return i
 }
-let v = e => {
+let O = e => {
     var {
       widget: t
-    } = e, n = O(e, ["widget"]);
+    } = e, n = v(e, ["widget"]);
     switch (t.type) {
       case a.l.FAVORITE_GAMES:
         return (0, r.jsx)(g.Z, y({
@@ -83,7 +83,7 @@ let v = e => {
       widget: t,
       user: n,
       disableInteraction: a
-    } = e, f = O(e, ["widget", "user", "disableInteraction"]);
+    } = e, f = v(e, ["widget", "user", "disableInteraction"]);
     let {
       shouldShowSuggestions: g,
       handleDismissSuggestions: p
@@ -95,7 +95,7 @@ let v = e => {
         expanded: w,
         setExpanded: S
       },
-      children: (0, r.jsx)(v, y({
+      children: (0, r.jsx)(O, y({
         widget: t,
         user: n,
         disableInteraction: a,

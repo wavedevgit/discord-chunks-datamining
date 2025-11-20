@@ -1,4 +1,4 @@
-/** Chunk was on 52708 **/
+/** Chunk was on 44097 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ee
@@ -165,7 +165,7 @@ function L(e) {
   return null != e && e.loadingState === u.f.LOADED_SUCCESS && null != e.width && null != e.height
 }
 
-function M(e) {
+function G(e) {
   let {
     component: t
   } = e;
@@ -198,8 +198,8 @@ function M(e) {
       });
     case "FIELD":
       return (0, r.jsx)(W, {
-        value: G(t.value),
-        name: G(t.name)
+        value: M(t.value),
+        name: M(t.name)
       });
     case "TEXT":
       return (0, r.jsx)(H, N({}, t));
@@ -208,18 +208,18 @@ function M(e) {
     case "SEPARATOR":
       return (0, r.jsx)(K, N({}, t));
     case "SOCIAL_PROOF":
-      return (0, r.jsx)(V, {})
+      return (0, r.jsx)(q, {})
   }
 }
 
-function G(e, t) {
-  return (0, r.jsx)(M, {
+function M(e, t) {
+  return (0, r.jsx)(G, {
     component: e
   }, t)
 }
 
 function B(e) {
-  return e.map((e, t) => G(e, t))
+  return e.map((e, t) => M(e, t))
 }
 
 function F(e) {
@@ -290,7 +290,7 @@ function H(e) {
   let {
     content: t
   } = e, n = i.useId(), a = (0, h._)();
-  return null != t ? (0, r.jsx)(O.Z, {
+  return null != t ? (0, r.jsx)(v.Z, {
     type: u.re.TEXT_DISPLAY,
     id: n,
     content: t,
@@ -343,7 +343,7 @@ function K(e) {
   })
 }
 
-function V() {
+function q() {
   let e = function() {
       let e = Chunk473749.useContext(X);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
@@ -360,7 +360,7 @@ function V() {
   })
 }
 
-function q(e, t) {
+function V(e, t) {
   if (null == e) return null;
   let n = e.split(Z);
   if (1 === n.length) return n[0];
@@ -464,7 +464,7 @@ let ee = Object.assign(function(e) {
     application: b,
     game: h,
     config: y
-  } = Q(a), O = null == b ? true : b.getIconURL(16), j = (0, x.O)(n.id).data, I = null == j ? true : j.find(e => e.application_id === a.applicationId), E = (0, p.Z)({
+  } = Q(a), v = null == b ? true : b.getIconURL(16), j = (0, x.O)(n.id).data, I = null == j ? true : j.find(e => e.application_id === a.applicationId), E = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == h ? true : h.id,
     source: g.m1.UserProfile,
@@ -474,16 +474,16 @@ let ee = Object.assign(function(e) {
     fetched: C,
     hasAlreadyLinked: Z,
     canStartAuthorization: L,
-    startAuthorization: G
+    startAuthorization: M
   } = (0, d.F)(b), B = i.useCallback(() => {
     L && (t({
       action: "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
       applicationId: a.applicationId
-    }), G())
-  }, [L, G, t, a.applicationId]), F = null == u && C && !Z && L, U = (0, r.jsxs)(r.Fragment, {
-    children: [null != O ? (0, r.jsx)("img", {
+    }), M())
+  }, [L, M, t, a.applicationId]), F = null == u && C && !Z && L, U = (0, r.jsxs)(r.Fragment, {
+    children: [null != v ? (0, r.jsx)("img", {
       className: k.appIcon,
-      src: O,
+      src: v,
       width: 16,
       height: 16,
       alt: ""
@@ -528,7 +528,7 @@ let ee = Object.assign(function(e) {
           if ("object" == typeof n) {
             if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
               type: "unfurled_media",
-              media: (0, v.ym)(n)
+              media: (0, O.ym)(n)
             }]
           } else if ("string" == typeof n) return [t, {
             type: "string",
@@ -549,7 +549,7 @@ let ee = Object.assign(function(e) {
         case "HERO":
           var r;
           return {
-            type: "HERO", body: n.body.map(t), title: q(n.title, e), image: Y(n.image, e), imagePlaceholder: null == (r = e.config) ? true : r.hero_placeholder_image
+            type: "HERO", body: n.body.map(t), title: V(n.title, e), image: Y(n.image, e), imagePlaceholder: null == (r = e.config) ? true : r.hero_placeholder_image
           };
         case "GRID":
           return {
@@ -561,11 +561,11 @@ let ee = Object.assign(function(e) {
           };
         case "TEXT":
           return {
-            type: "TEXT", content: q(n.content, e)
+            type: "TEXT", content: V(n.content, e)
           };
         case "TEXT_WITH_IMAGE":
           return {
-            type: "TEXT_WITH_IMAGE", content: q(n.content, e), image: Y(n.image, e), imagePosition: n.imagePosition
+            type: "TEXT_WITH_IMAGE", content: V(n.content, e), image: Y(n.image, e), imagePosition: n.imagePosition
           };
         case "SEPARATOR":
         case "SOCIAL_PROOF":
@@ -588,7 +588,7 @@ let ee = Object.assign(function(e) {
       value: e,
       children: (0, r.jsx)(J, {
         widget: a,
-        children: (0, r.jsx)(M, {
+        children: (0, r.jsx)(G, {
           component: z
         })
       })

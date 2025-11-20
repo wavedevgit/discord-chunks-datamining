@@ -28,12 +28,12 @@ function g(e) {
     onClose: n
   } = e;
   s.useEffect(() => {
-    u.default.track(x.rMx.OPEN_MODAL, {
+    m.default.track(x.rMx.OPEN_MODAL, {
       type: "Social Layer Storefront Announcement Modal"
     }), (0, d.Q3)(c.z.GAME_SHOP_ANNOUNCEMENT_MODAL)
   }, []);
   let g = s.useCallback(() => {
-    (0, m.Z)({
+    (0, u.Z)({
       guildId: f.ON
     }), n()
   }, [n]);
@@ -110,7 +110,7 @@ function g(e) {
             })]
           })]
         }), (0, r.jsx)(l.zxk, {
-          variant: "expressive",
+          variant: "primary",
           text: p.intl.string(p.t.CekBHq),
           onClick: g
         })]

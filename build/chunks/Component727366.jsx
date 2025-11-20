@@ -14,14 +14,14 @@ function d(e) {
   let {
     applicationId: n,
     skuIds: l,
-    variant: i = o.Z.SMALL,
+    variant: i = r.Z.SMALL,
     guildId: d
   } = e;
   return null == l || 0 === l.length ? null : (0, t.jsx)("div", {
-    className: a()(r.container, r.cardGrid, {
-      [r.mediumCardGrid]: i === o.Z.MEDIUM
+    className: a()(o.container, o.cardGrid, {
+      [o.mediumCardGrid]: i === r.Z.MEDIUM
     }),
-    children: l.map((e, l) => (0, t.jsx)(o.C, {
+    children: l.map((e, l) => (0, t.jsx)(r.C, {
       applicationId: n,
       skuId: e,
       variant: i,

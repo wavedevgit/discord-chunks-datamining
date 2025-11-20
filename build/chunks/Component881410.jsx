@@ -1,4 +1,4 @@
-/** Chunk was on 52708 **/
+/** Chunk was on 44097 **/
 /** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   wl: () => h,
@@ -69,7 +69,7 @@ function m(e) {
     onAddGame: m,
     children: b
   } = e, h = p(e, ["widgetType", "widget", "onAddGame", "children"]);
-  let [y] = (0, l.ynZ)(), [O, v] = i.useState(""), j = i.useRef(""), x = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
+  let [y] = (0, l.ynZ)(), [v, O] = i.useState(""), j = i.useRef(""), x = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
     trackUserProfileEditAction: _
   } = (0, c.KZ)(), P = i.useCallback(e => {
     (0, s.ES)(t, {
@@ -85,21 +85,21 @@ function m(e) {
   } = (0, o.h)(), S = i.useCallback(e => "" === e.trim() ? I : (0, a.Lu)(I, e, g(f({}, w), {
     threshold: a.Lu.rankings.CONTAINS
   })), [I, w]), E = i.useCallback(e => {
-    "" === O.trim() && "" !== e.trim() && _({
+    "" === v.trim() && "" !== e.trim() && _({
       action: "GAME_SEARCH_SESSION_STARTED",
       widgetEdited: t,
       numCharacters: e.trim().length,
       numResults: S(e).length
-    }), v(e), j.current = e
-  }, [O, _, t, S]), T = i.useMemo(() => "" !== O.trim() ? u.intl.format(u.t.jhiTsN, {
-    searchTerm: O.trim()
-  }) : u.intl.string(u.t.QwSXv8), [O]);
+    }), O(e), j.current = e
+  }, [v, _, t, S]), T = i.useMemo(() => "" !== v.trim() ? u.intl.format(u.t.jhiTsN, {
+    searchTerm: v.trim()
+  }) : u.intl.string(u.t.QwSXv8), [v]);
   return (0, r.jsx)(l.yRy, g(f({}, h), {
     onRequestOpen: () => {
       _({
         action: "PRESS_ADD_GAME",
         widgetEdited: t
-      }), v(""), j.current = ""
+      }), O(""), j.current = ""
     },
     onRequestClose: () => {
       _({

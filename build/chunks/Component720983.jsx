@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk410030 = require("./410030.js"),
@@ -27,8 +27,8 @@ function v(e) {
     ariaLabel: i,
     className: a
   } = e;
-  return (0, t.jsx)(r.P3F, {
-    className: o()(f.iconButton, a),
+  return (0, t.jsx)(o.P3F, {
+    className: r()(f.iconButton, a),
     onClick: l,
     "aria-label": i,
     children: n
@@ -40,12 +40,12 @@ function _(e) {
     guildId: n,
     storefront: l,
     selectedPageIndex: a
-  } = e, _ = (0, r.wjy)((0, s.ZP)()), C = (0, u.Y)({
+  } = e, _ = (0, o.wjy)((0, s.ZP)()), C = (0, u.Y)({
     location: "SocialLayerStorefrontHeader"
   }), j = (0, d.e7)([g.default], () => g.default.getCurrentUser()), k = i.useCallback(() => {
     (null == j ? true : j.id) != null && (0, p.openUserProfileModal)({
       userId: j.id,
-      section: h.oh.WISHLIST,
+      section: m.oh.WISHLIST,
       showGuildProfile: false
     })
   }, [j]);
@@ -56,7 +56,7 @@ function _(e) {
   return N = _ ? null != b ? b : Z : null != Z ? Z : b, (0, t.jsxs)(c.Z, {
     disableDoubleClick: true,
     className: f.headerContainer,
-    children: [(0, t.jsxs)(r.P3F, {
+    children: [(0, t.jsxs)(o.P3F, {
       onClick: () => {
         (0, x.Z)({
           guildId: n,
@@ -81,20 +81,23 @@ function _(e) {
           })
         },
         wrapperClassName: f.titleWrapper,
-        className: o()(f.pageTitleContainer, {
+        className: r()(f.pageTitleContainer, {
           [f.selectedPageIndicator]: a === l
         }),
-        children: e.title
+        children: (0, t.jsx)(o.xvT, {
+          variant: "text-sm/medium",
+          children: e.title
+        })
       }, "".concat(e.title, "-").concat(l)))
     }), C && (0, t.jsx)("div", {
       className: f.alignedRightContent,
       children: (0, t.jsx)(v, {
-        icon: (0, t.jsx)(r.h_8, {
+        icon: (0, t.jsx)(o.h_8, {
           size: "xs",
           color: "currentColor"
         }),
         onClick: k,
-        ariaLabel: m.intl.string(m.t["7lZ31J"]),
+        ariaLabel: h.intl.string(h.t["7lZ31J"]),
         className: f.wishlistButton
       })
     })]

@@ -1,8 +1,8 @@
-/** Chunk was on 52708 **/
+/** Chunk was on 44097 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => W,
-  Z: () => G
+  Z: () => M
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -58,7 +58,7 @@ function L(e) {
   return e
 }
 
-function M(e, t) {
+function G(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -74,10 +74,10 @@ function M(e, t) {
   return i
 }
 
-function G(e) {
+function M(e) {
   var {
     widget: t
-  } = e, n = M(e, ["widget"]);
+  } = e, n = G(e, ["widget"]);
   return t instanceof h.q ? (0, r.jsx)(I.Z, L({
     widget: t
   }, n)) : t instanceof y.zy ? (0, r.jsx)(C.Z, L({
@@ -106,7 +106,7 @@ function F(e) {
     application: n
   } = (0, j.G)(), {
     token: i
-  } = (0, d.o)(null == n ? true : n.id), a = (0, P.Z)(t.id), l = (0, O.k)({
+  } = (0, d.o)(null == n ? true : n.id), a = (0, P.Z)(t.id), l = (0, v.k)({
     location: "ApplicationWidgetUpsell"
   }), o = a.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !l || null == i || o ? null : (0, r.jsx)(f.ZP, {
@@ -135,10 +135,10 @@ function U(e) {
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
     }, [e, t, n]), "GB" === e && n
-  })(), d = (0, O.k)({
+  })(), d = (0, v.k)({
     location: "UserProfileModalV2Widgets"
   }), f = 0 === l.length && c, j = i.useMemo(() => l.filter(y.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
-  (0, v.J)(c, j);
+  (0, O.J)(c, j);
   var I = t.id;
   (0, _.s)(x);
   let {
@@ -151,7 +151,7 @@ function U(e) {
   let k = () => (0, r.jsxs)(r.Fragment, {
     children: [c && s && (0, r.jsx)(B, {}), c && (0, r.jsx)(F, {
       user: t
-    }), l.map((e, i) => (0, r.jsx)(G, {
+    }), l.map((e, i) => (0, r.jsx)(M, {
       widget: e,
       user: t,
       guildId: n,
@@ -170,7 +170,7 @@ function U(e) {
 function W(e) {
   var {
     user: t
-  } = e, n = M(e, ["user"]);
+  } = e, n = G(e, ["user"]);
   let a = i.useRef(null);
   (0, x.r)({
     container: a.current

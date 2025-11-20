@@ -1,4 +1,4 @@
-/** Chunk was on 52708 **/
+/** Chunk was on 44097 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -88,23 +88,23 @@ function D(e) {
     wishlistId: _,
     currentUser: P,
     wishlistSettings: D
-  } = (0, l.cj)([O.Z, h.default], () => {
-    let e = O.Z.getFirstWishlistId(n.id);
+  } = (0, l.cj)([v.Z, h.default], () => {
+    let e = v.Z.getFirstWishlistId(n.id);
     return {
       wishlistId: e,
       currentUser: h.default.getCurrentUser(),
-      wishlistSettings: null != e ? O.Z.getWishlistSettings(n.id, e) : null
+      wishlistSettings: null != e ? v.Z.getWishlistSettings(n.id, e) : null
     }
   }), k = (0, g.c)({
     location: "user-profile-modal-v2-wishlist"
   }), {
     analyticsLocations: N
-  } = (0, d.ZP)(), A = (null == P ? true : P.id) === n.id, Z = false === n.nsfwAllowed, R = w.t9, [L, M] = i.useState(true);
+  } = (0, d.ZP)(), A = (null == P ? true : P.id) === n.id, Z = false === n.nsfwAllowed, R = w.t9, [L, G] = i.useState(true);
   i.useEffect(() => {
-    (null == D ? true : D.visibility) != null && M(D.visibility === a.f.PUBLIC)
+    (null == D ? true : D.visibility) != null && G(D.visibility === a.f.PUBLIC)
   }, [null == D ? true : D.visibility]);
   let {
-    wishlist: G,
+    wishlist: M,
     error: B
   } = (0, b.kZ)(_, n.id), F = i.useCallback(e => {
     let {
@@ -118,20 +118,20 @@ function D(e) {
       analyticsLocations: N,
       productLines: r
     })
-  }, [N]), U = (0, v.Z)({
+  }, [N]), U = (0, O.Z)({
     wishlistId: _,
     onAction: F,
-    productLines: null != (t = null == G ? true : G.getProductLines()) ? t : null
+    productLines: null != (t = null == M ? true : M.getProductLines()) ? t : null
   }), W = i.useCallback(() => {
     if (null == _) return;
     let e = L ? a.f.PRIVATE : a.f.PUBLIC;
-    M(!L), m.Z.updateWishlistVisibility(_, e), (0, y.Er)({
+    G(!L), m.Z.updateWishlistVisibility(_, e), (0, y.Er)({
       wishlistId: _,
       action: L ? I.NW.WISHLIST_TOGGLE_PRIVATE : I.NW.WISHLIST_TOGGLE_PUBLIC,
       analyticsLocations: N,
-      productLines: null == G ? true : G.getProductLines()
+      productLines: null == M ? true : M.getProductLines()
     })
-  }, [_, L, N, G]), H = i.useCallback(() => {
+  }, [_, L, N, M]), H = i.useCallback(() => {
     (0, o.pT)(), (0, f.mK)({
       analyticsLocations: N,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
@@ -141,7 +141,7 @@ function D(e) {
       guildId: w.ON
     })
   }, []);
-  return null != B ? null : null == G || 0 === G.items.length ? (0, r.jsx)(j.F, {
+  return null != B ? null : null == M || 0 === M.items.length ? (0, r.jsx)(j.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
       className: E.emptyStateContainer,
@@ -185,7 +185,7 @@ function D(e) {
           variant: "text-xs/semibold",
           color: "text-secondary",
           children: S.intl.format(S.t.r6Y1Lg, {
-            count: G.items.length
+            count: M.items.length
           })
         }), !L && (0, r.jsx)(c.u, {
           text: S.intl.string(S.t.RX7D9h),
@@ -229,7 +229,7 @@ function D(e) {
         handleOpenGameShop: z
       })]
     }), (0, r.jsx)(x.Z, {
-      items: G.items,
+      items: M.items,
       profileOwner: n,
       isOwner: A
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 52708 **/
+/** Chunk was on 44097 **/
 /** chunk id: 780899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y9: () => p,
@@ -71,7 +71,7 @@ function p(e) {
     itemPreviewProps: d
   }), [l, r, u, d]), [{
     isDragging: y
-  }, O, v] = (0, o.c)({
+  }, v, O] = (0, o.c)({
     type: m,
     item: h,
     collect: e => ({
@@ -80,10 +80,10 @@ function p(e) {
     end: g
   });
   i.useEffect(() => {
-    p && v((0, s.r)(), {
+    p && O((0, s.r)(), {
       captureDraggingState: true
     })
-  }, [v, p]);
+  }, [O, p]);
   let [{
     dragSourcePosition: j
   }, x] = (0, c.L)({
@@ -102,9 +102,9 @@ function p(e) {
       }
     }
   });
-  return i.useLayoutEffect(() => (O(t), x(n), () => {
-    x(null), O(null)
-  }), [O, t, x, n]), {
+  return i.useLayoutEffect(() => (v(t), x(n), () => {
+    x(null), v(null)
+  }), [v, t, x, n]), {
     isDragging: y,
     dragSourcePosition: j
   }
@@ -129,11 +129,11 @@ let m = Chunk473749.memo(function(e) {
       index: t
     }, d)),
     y = null != h,
-    O = y && t < h,
-    v = y && t > h;
+    v = y && t < h,
+    O = y && t > h;
   return (0, r.jsx)("div", {
     ref: m,
-    className: l()(n, b && a, O && o, v && c),
+    className: l()(n, b && a, v && o, O && c),
     "aria-label": s,
     children: u
   })

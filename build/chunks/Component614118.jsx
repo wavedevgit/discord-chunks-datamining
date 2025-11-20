@@ -82,7 +82,7 @@ function I(e) {
       children: [(0, r.jsxs)("div", {
         className: v.detailsTitleDescription,
         children: [(0, r.jsx)(s.Text, {
-          variant: "text-md/bold",
+          variant: "text-md/medium",
           lineClamp: 1,
           children: L.name
         }), (0, r.jsxs)("div", {
@@ -92,7 +92,7 @@ function I(e) {
             alt: j,
             className: v.iconAsset
           }), (0, r.jsx)(s.Text, {
-            variant: "text-md/semibold",
+            variant: "text-md/bold",
             lineClamp: 1,
             children: (0, _.T4)(null != (S = null == (t = L.price) ? true : t.amount) ? S : 0, null != (A = null == (n = L.price) ? true : n.currency) ? A : y.pK.USD)
           })]

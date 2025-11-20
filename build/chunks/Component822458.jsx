@@ -19,14 +19,14 @@ function d(e) {
     variant: c = a.Z.SMALL
   } = e;
   return null == s || 0 === s.length ? null : (0, t.jsxs)("div", {
-    className: r.sectionContainer,
+    className: o.sectionContainer,
     children: [null != d && (0, t.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       lineClamp: 1,
-      className: r.sectionTitle,
+      className: o.sectionTitle,
       children: d
-    }), (0, t.jsx)(o.t, {
+    }), (0, t.jsx)(r.t, {
       applicationId: n,
       skuIds: s,
       variant: c,
