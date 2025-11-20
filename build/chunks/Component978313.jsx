@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
   Chunk793030 = require("./793030.js"),
   Chunk692547 = require("./692547.js"),
@@ -22,44 +22,44 @@ function h(e) {
   let {
     detectedGame: t,
     trackAction: n
-  } = e, [r, h] = l.useState((null == t ? true : t.summaryLocalized) != null), [v, j] = l.useState(true), [O, y] = l.useState(false), I = l.useRef(null), {
-    width: b,
-    height: E
+  } = e, [r, h] = i.useState((null == t ? true : t.summaryLocalized) != null), [v, j] = i.useState(true), [_, I] = i.useState(false), b = i.useRef(null), {
+    width: y,
+    height: O
   } = (0, u.Z)();
-  return (l.useEffect(() => {
-    let e = I.current;
-    null != e && y(e.scrollHeight - e.clientHeight > 1 || !v)
-  }, [I, b, E, v]), null == t.summary) ? null : (0, i.jsxs)("div", {
-    className: a()(p.column, p.gapMd),
-    children: [null != t.summaryLocalized && (0, i.jsxs)("div", {
-      className: a()(p.row, p.gapSm),
-      children: [(0, i.jsx)(s.SxY, {
+  return (i.useEffect(() => {
+    let e = b.current;
+    null != e && I(e.scrollHeight - e.clientHeight > 1 || !v)
+  }, [b, y, O, v]), null == t.summary) ? null : (0, a.jsxs)("div", {
+    className: l()(p.column, p.gapMd),
+    children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
+      className: l()(p.row, p.gapSm),
+      children: [(0, a.jsx)(s.SxY, {
         color: c.Z.colors.HEADER_SECONDARY,
         size: "xs"
-      }), (0, i.jsx)(o.xvT, {
+      }), (0, a.jsx)(o.xvT, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: r ? g.intl.format(g.t.aZ2iIp, {
+        children: r ? f.intl.format(f.t.aZ2iIp, {
           onShowOriginal: () => h(false)
-        }) : g.intl.format(g.t["/2ylF4"], {
+        }) : f.intl.format(f.t["/2ylF4"], {
           onShowTranslated: () => h(true)
         })
       })]
-    }), (0, i.jsx)(o.xvT, {
-      ref: I,
+    }), (0, a.jsx)(o.xvT, {
+      ref: b,
       lineClamp: v ? 8 : true,
       variant: "text-sm/normal",
       children: r ? t.summaryLocalized : t.summary
-    }), O && (0, i.jsx)(d.P3F, {
+    }), _ && (0, a.jsx)(d.P3F, {
       className: p.clickable,
       onClick: () => {
         n(v ? m.as.ShowMore : m.as.ShowLess), j(!v)
       },
-      children: (0, i.jsx)(o.xvT, {
+      children: (0, a.jsx)(o.xvT, {
         variant: "text-sm/semibold",
-        children: v ? g.intl.string(g.t.lBeKY2) : g.intl.string(g.t["6MwJo/"])
+        children: v ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo/"])
       })
-    }), (0, i.jsx)(f.Z, {
+    }), (0, a.jsx)(g.Z, {
       className: x.platforms,
       detectedGame: t
     })]

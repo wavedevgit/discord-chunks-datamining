@@ -1,12 +1,12 @@
 /** Chunk was on 89311 **/
 /** chunk id: 484527, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => _
 }), require("./388685.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk643872 = require("./643872.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -21,16 +21,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk226788 = require("./226788.js"),
   Chunk943987 = require("./943987.js");
 
-function O(e) {
+function _(e) {
   let {
     detectedGame: t,
     trackClick: n,
     onInviteResolved: r,
-    closeModal: O
-  } = e, [y, I] = l.useState(), b = (0, o.e7)([f.Z], () => {
+    closeModal: _
+  } = e, [I, b] = i.useState(), y = (0, o.e7)([g.Z], () => {
     var e, t;
-    return (null == y || null == (e = y.guild) ? true : e.id) != null && f.Z.isMember(null == y || null == (t = y.guild) ? true : t.id)
-  }), E = l.useMemo(() => {
+    return (null == I || null == (e = I.guild) ? true : e.id) != null && g.Z.isMember(null == I || null == (t = I.guild) ? true : t.id)
+  }), O = i.useMemo(() => {
     var e;
     return null == (e = t.websites) ? true : e.find(e => {
       let {
@@ -39,64 +39,64 @@ function O(e) {
       return t === s.p.DISCORD
     })
   }, [t.websites]);
-  if (l.useEffect(() => {
+  if (i.useEffect(() => {
       let e = async e => {
         let t = e.split("/").pop();
         if (null != t) {
-          if (null != y && y.code.toLowerCase() === t.toLowerCase()) return;
+          if (null != I && I.code.toLowerCase() === t.toLowerCase()) return;
           let e = await (0, m.Z)(t);
-          true !== e.banned && (I(e.invite), null != e.invite && (null == r || r(e.invite)))
+          true !== e.banned && (b(e.invite), null != e.invite && (null == r || r(e.invite)))
         }
       };
-      null != E && e(E.url)
-    }, [E, r, y]), null == y || null == y.guild || !y.guild.features.includes(x.GuildFeatures.VERIFIED)) return null;
-  let N = g.ZP.getGuildIconURL({
-    id: y.guild.id,
-    icon: y.guild.icon,
+      null != O && e(O.url)
+    }, [O, r, I]), null == I || null == I.guild || !I.guild.features.includes(x.GuildFeatures.VERIFIED)) return null;
+  let E = f.ZP.getGuildIconURL({
+    id: I.guild.id,
+    icon: I.guild.icon,
     size: 32
   });
-  return (0, i.jsxs)("div", {
+  return (0, a.jsxs)("div", {
     className: v.column,
-    children: [(0, i.jsx)(c.Heading, {
+    children: [(0, a.jsx)(c.Heading, {
       className: v.sectionHeader,
       variant: "text-xs/semibold",
       color: "header-secondary",
       children: h.intl.string(h.t.kBDZSL)
-    }), (0, i.jsxs)("div", {
-      className: a()(v.row, v.gapMd),
-      children: [(0, i.jsx)("img", {
+    }), (0, a.jsxs)("div", {
+      className: l()(v.row, v.gapMd),
+      children: [(0, a.jsx)("img", {
         className: j.guildIcon,
-        src: N,
+        src: E,
         alt: h.intl.formatToPlainString(h.t.xm6W9D, {
-          guildName: y.guild.name
+          guildName: I.guild.name
         })
-      }), (0, i.jsxs)("div", {
+      }), (0, a.jsxs)("div", {
         className: j.inviteInfo,
-        children: [(0, i.jsxs)("div", {
+        children: [(0, a.jsxs)("div", {
           className: j.guildNameContainer,
-          children: [(0, i.jsx)(c.Text, {
+          children: [(0, a.jsx)(c.Text, {
             variant: "text-sm/semibold",
-            children: y.guild.name
-          }), (0, i.jsx)(u.Z, {
-            guild: y.guild,
+            children: I.guild.name
+          }), (0, a.jsx)(u.Z, {
+            guild: I.guild,
             size: 16
           })]
-        }), null != y.approximate_member_count && (0, i.jsx)(c.Text, {
+        }), null != I.approximate_member_count && (0, a.jsx)(c.Text, {
           variant: "text-xxs/normal",
           color: "text-tertiary",
           children: h.intl.format(h.t.zRl6XR, {
-            count: y.approximate_member_count
+            count: I.approximate_member_count
           })
         })]
       })]
-    }), (0, i.jsx)(c.Button, {
+    }), (0, a.jsx)(c.Button, {
       variant: "secondary",
-      text: b ? h.intl.string(h.t.cEnaWx) : h.intl.string(h.t.XpeFYr),
+      text: y ? h.intl.string(h.t.cEnaWx) : h.intl.string(h.t.XpeFYr),
       onClick: () => {
-        O(), n(p.as.JoinOfficialServer), d.Z.dispatch({
+        _(), n(p.as.JoinOfficialServer), d.Z.dispatch({
           type: "INVITE_MODAL_OPEN",
-          invite: y,
-          code: y.code,
+          invite: I,
+          code: I.code,
           context: x.IlC.APP
         })
       },

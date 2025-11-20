@@ -17,17 +17,17 @@ function u(e) {
   let {
     invite: u,
     trackClick: m,
-    closeModal: f
-  } = e, g = l.useCallback(() => {
-    (null == u ? true : u.guild) != null && ((0, a.Z)({
+    closeModal: g
+  } = e, f = i.useCallback(() => {
+    (null == u ? true : u.guild) != null && ((0, l.Z)({
       invite: u
-    }), f(), m(s.as.GameShop))
-  }, [f, u, m]);
-  return new Set(null == u || null == (t = u.guild) ? true : t.features).has(o.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, i.jsx)(r.zxk, {
+    }), g(), m(s.as.GameShop))
+  }, [g, u, m]);
+  return new Set(null == u || null == (t = u.guild) ? true : t.features).has(o.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, a.jsx)(r.zxk, {
     variant: "primary",
     text: (null == u || null == (n = u.guild) ? true : n.id) === c.ON ? d.intl.string(d.t.WTXyEQ) : d.intl.string(d.t.v8UpgE),
     icon: r.EOn,
-    onClick: g,
+    onClick: f,
     fullWidth: true
   }) : null
 }
