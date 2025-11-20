@@ -1,65 +1,75 @@
 /** Chunk was on 34740 **/
 /** chunk id: 688641, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => d
 }), require("./953529.js");
-var Chunk54381 = require("./54381.js");
-require("./473749.js");
-var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk367390 = require("./367390.js");
 
-function c(e) {
+function d(e) {
   let {
     className: t,
     iconContainerClassName: n,
-    icon: r,
-    title: c,
-    description: u,
-    userCount: d,
-    onClick: p,
-    highlight: h
-  } = e;
-  return (0, i.jsxs)(a.P3F, {
-    className: l()(s.container, t, null != h && {
-      [s.pulse]: h
+    icon: l,
+    title: d,
+    description: p,
+    userCount: h,
+    onClick: f,
+    highlight: m,
+    onDismiss: g
+  } = e, b = r.useCallback(e => {
+    e.stopPropagation(), null == g || g()
+  }, [g]);
+  return (0, i.jsxs)(s.P3F, {
+    className: a()(u.container, t, null != m && {
+      [u.pulse]: m
     }),
-    onClick: p,
+    onClick: f,
     children: [(0, i.jsx)("div", {
-      className: l()(s.icon, n),
-      children: r
+      className: a()(u.icon, n),
+      children: l
     }), (0, i.jsxs)("div", {
-      className: s.textContainer,
-      children: [(0, i.jsx)(a.Heading, {
+      className: u.textContainer,
+      children: [(0, i.jsx)(s.Heading, {
         variant: "heading-md/semibold",
         color: "text-primary",
-        children: c
-      }), (0, i.jsx)(a.Text, {
+        children: d
+      }), (0, i.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-primary",
-        className: s.inline,
-        children: u
-      }), null != d && d > 0 ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(a.Text, {
+        className: u.inline,
+        children: p
+      }), null != h && h > 0 ? (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-primary",
-          className: s.dot,
+          className: u.dot,
           children: "•"
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-primary",
-          className: s.inline,
-          children: o.intl.format(o.t.NywdIj, {
-            count: d
+          className: u.inline,
+          children: c.intl.format(c.t.NywdIj, {
+            count: h
           })
         })]
       }) : null]
-    }), (0, i.jsx)(a.Fbu, {
+    }), null != g ? (0, i.jsx)("div", {
+      className: u.dismissButton,
+      children: (0, i.jsx)(o.PZ7, {
+        size: "xs",
+        onClick: b
+      })
+    }) : (0, i.jsx)(s.Fbu, {
       size: "xs",
       color: "currentColor",
-      className: s.caret
+      className: u.caret
     })]
   })
 }

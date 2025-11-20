@@ -112,7 +112,8 @@ function I(e) {
           children: j.intl.string(j.t.djfK36)
         })]
       }), u ? null : (0, r.jsx)(h.Z, {
-        channelId: t.id
+        channelId: t.id,
+        showDismiss: false
       }), l ? (0, r.jsx)(f.Z, {
         className: x.eventPrompt,
         channel: t

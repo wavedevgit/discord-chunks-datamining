@@ -130,83 +130,84 @@ function R(e) {
     disabled: E,
     isCardHovered: b,
     tooltipOverrideText: y,
-    nuxGraphic: T
-  } = e, [A, N] = (0, _.US)([l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), R = A === l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
-    analyticsLocations: P
-  } = (0, d.ZP)(), D = g.default.getCurrentUser(), w = null != D ? p.Z.getFirstWishlistId(D.id) : null, L = (0, m.ny)(w, t), x = i.useRef(null), [M, k] = i.useState(null);
+    nuxGraphic: T,
+    onClick: A
+  } = e, [N, R] = (0, _.US)([l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), P = N === l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
+    analyticsLocations: D
+  } = (0, d.ZP)(), w = g.default.getCurrentUser(), L = null != w ? p.Z.getFirstWishlistId(w.id) : null, x = (0, m.ny)(L, t), M = i.useRef(null), [k, j] = i.useState(null);
   i.useEffect(() => {
-    k(null)
+    j(null)
   }, [t]);
-  let j = null !== M ? M : L,
-    U = (0, f.X)(x),
-    G = j ? u.h_8 : u.Pzh,
-    B = j || U ? I.wishlistedOrHoveredIconColor : I.normalIconColor,
-    Z = i.useCallback(async e => {
-      if (e.stopPropagation(), j && null != w) {
-        k(false);
+  let U = null !== k ? k : x,
+    G = (0, f.X)(M),
+    B = U ? u.h_8 : u.Pzh,
+    Z = U || G ? I.wishlistedOrHoveredIconColor : I.normalIconColor,
+    F = i.useCallback(async e => {
+      if (e.stopPropagation(), null == A || A(), U && null != L) {
+        j(false);
         try {
-          await h.Z.removeSkuFromWishlist(w, t, P), k(null)
+          await h.Z.removeSkuFromWishlist(L, t, D), j(null)
         } catch (e) {
-          k(null), (0, u.showToast)((0, u.createToast)(v.intl.string(v.t.F8FvUy), u.ToastType.FAILURE)), u.uvj.announce(v.intl.string(v.t.F8FvUy))
+          j(null), (0, u.showToast)((0, u.createToast)(v.intl.string(v.t.F8FvUy), u.ToastType.FAILURE)), u.uvj.announce(v.intl.string(v.t.F8FvUy))
         }
       } else {
-        k(true);
+        j(true);
         try {
-          await h.Z.addSkuToWishlist(t, P), k(null), R && null != T && ((0, u.ZDy)(async () => {
+          await h.Z.addSkuToWishlist(t, D), j(null), P && null != T && ((0, u.ZDy)(async () => {
             let {
               default: e
             } = await n.e("36340").then(n.bind(n, 874533));
             return t => (0, r.jsx)(e, C(S({}, t), {
               graphic: T
             }))
-          }), N(O.L.USER_DISMISS))
+          }), R(O.L.USER_DISMISS))
         } catch (e) {
-          k(null), (0, u.showToast)((0, u.createToast)(v.intl.string(v.t.F8FvUy), u.ToastType.FAILURE)), u.uvj.announce(v.intl.string(v.t.F8FvUy))
+          j(null), (0, u.showToast)((0, u.createToast)(v.intl.string(v.t.F8FvUy), u.ToastType.FAILURE)), u.uvj.announce(v.intl.string(v.t.F8FvUy))
         }
       }
-    }, [j, w, t, P, R, T, N]),
-    F = j ? v.intl.string(v.t.yr9TTf) : v.intl.string(v.t["8DkMEQ"]);
-  return (b || j) && null != D ? E ? (0, r.jsx)(c.u, {
-    text: null != y ? y : F,
-    "aria-label": null != y ? y : F,
+    }, [U, L, t, D, P, T, R, A]),
+    V = U ? v.intl.string(v.t.yr9TTf) : v.intl.string(v.t["8DkMEQ"]);
+  return (b || U) && null != w ? E ? (0, r.jsx)(c.u, {
+    text: null != y ? y : V,
+    "aria-label": null != y ? y : V,
     children: (0, r.jsx)(u.P3F, {
       className: o()(I.wishlistButton, I.disabledButton, a),
-      innerRef: x,
+      innerRef: M,
       onClick: e => e.stopPropagation(),
       "aria-disabled": true,
-      children: (0, r.jsx)(G, {
+      children: (0, r.jsx)(B, {
         colorClass: I.disabledIconColor,
         size: "custom",
         height: s,
         width: s
       })
     })
-  }) : R ? (0, r.jsx)(c.i_, {
+  }) : P ? (0, r.jsx)(c.i_, {
     title: v.intl.string(v.t["47Rhc3"]),
     body: v.intl.string(v.t.PXjA0b),
-    "aria-label": F,
+    "aria-label": V,
     children: (0, r.jsx)(u.P3F, {
       className: o()(I.wishlistButton, a),
-      innerRef: x,
-      onClick: Z,
-      "aria-label": F,
-      children: (0, r.jsx)(G, {
-        colorClass: B,
+      innerRef: M,
+      onClick: F,
+      "aria-label": V,
+      children: (0, r.jsx)(B, {
+        colorClass: Z,
         size: "custom",
         height: s,
         width: s
       })
     })
   }) : (0, r.jsx)(c.u, {
-    text: null != y ? y : F,
-    "aria-label": null != y ? y : F,
+    text: null != y ? y : V,
+    "aria-label": null != y ? y : V,
     children: (0, r.jsx)(u.P3F, {
       className: o()(I.wishlistButton, a),
-      innerRef: x,
-      onClick: Z,
-      "aria-label": F,
-      children: (0, r.jsx)(G, {
-        colorClass: B,
+      innerRef: M,
+      onClick: F,
+      "aria-label": V,
+      children: (0, r.jsx)(B, {
+        colorClass: Z,
         size: "custom",
         height: s,
         width: s

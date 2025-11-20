@@ -1,11 +1,11 @@
 /** Chunk was on 34740 **/
 /** chunk id: 459502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
-});
-var Chunk54381 = require("./54381.js");
-require("./473749.js");
-var Chunk442837 = require("./442837.js"),
+  Z: () => b
+}), require("./388685.js");
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk357156 = require("./357156.js"),
@@ -18,29 +18,30 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk837815 = require("./837815.js");
 
-function g(e) {
+function b(e) {
   let {
-    channelId: t
-  } = e, g = (0, r.e7)([s.Z], () => s.Z.getChannel(t), [t]), b = (0, d.sz)(t), y = null != (0, d.qY)(t), {
-    canManageGuildEvent: C
-  } = (0, o.XJ)(g), v = (0, r.cj)([u.ZP], () => b.reduce((e, t) => (e[t.id] = u.ZP.getUserCount(t.id, (0, p.DK)(t)), e), {}));
-  return b.length < 1 || y ? null : (0, i.jsx)(i.Fragment, {
-    children: b.map(e => (0, i.jsx)(h.Z, {
-      icon: (0, i.jsx)(a.Que, {
+    channelId: t,
+    showDismiss: b = true
+  } = e, y = (0, l.e7)([c.Z], () => c.Z.getChannel(t), [t]), C = (0, p.sz)(t), v = null != (0, p.qY)(t), {
+    canManageGuildEvent: _
+  } = (0, s.XJ)(y), [x, j] = r.useState(() => new Set), O = r.useMemo(() => C.filter(e => !x.has(e.id)), [C, x]), E = (0, l.cj)([d.ZP], () => O.reduce((e, t) => (e[t.id] = d.ZP.getUserCount(t.id, (0, h.DK)(t)), e), {}), [O]);
+  return O.length < 1 || v ? null : (0, i.jsx)(i.Fragment, {
+    children: O.map(e => (0, i.jsx)(f.Z, {
+      icon: (0, i.jsx)(o.Que, {
         size: "custom",
         color: "currentColor",
         height: 20,
         width: 20
       }),
-      color: l.Z.unsafe_rawColors.GREEN_360.css,
-      title: f.intl.formatToPlainString(C(e) ? f.t["1vGXqM"] : f.t.xMJyla, {
+      color: a.Z.unsafe_rawColors.GREEN_360.css,
+      title: m.intl.formatToPlainString(_(e) ? m.t["1vGXqM"] : m.t.xMJyla, {
         eventName: e.name
       }),
-      description: f.intl.formatToPlainString(f.t.PTebCR, {
-        startTime: (0, p.ub)(e.scheduled_start_time).startDateTimeString
+      description: m.intl.formatToPlainString(m.t.PTebCR, {
+        startTime: (0, h.ub)(e.scheduled_start_time).startDateTimeString
       }),
       onClick: () => {
-        C(e) ? (0, a.ZDy)(async () => {
+        _(e) ? (0, o.ZDy)(async () => {
           let {
             default: t
           } = await Promise.all([n.e("84722"), n.e("51885")]).then(n.bind(n, 296864));
@@ -76,12 +77,16 @@ function g(e) {
               Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
             }), r))
           }
-        }) : (0, c.bO)({
+        }) : (0, u.bO)({
           eventId: e.id
         })
       },
-      userCount: v[e.id],
-      className: m.eventPrompt
+      onDismiss: b ? () => {
+        var t;
+        return t = e.id, void j(e => new Set(e).add(t))
+      } : true,
+      userCount: E[e.id],
+      className: g.eventPrompt
     }, e.id))
   })
 }
