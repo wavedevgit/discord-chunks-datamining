@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => I
-}), require("./35282.js"), require("./388685.js"), require("./415506.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
+}), require("./35282.js"), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk593473 = require("./593473.js"),
@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk703656 = require("./703656.js"),
   Chunk314897 = require("./314897.js"),
   Chunk626135 = require("./626135.js"),
-  Chunk361207 = require("./361207.js"),
   Chunk358085 = require("./358085.js"),
   Chunk954824 = require("./954824.js"),
+  Chunk259706 = require("./259706.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx");
@@ -68,11 +68,11 @@ function b(e) {
         error_message: e
       }), b("error")
     }
-  }, []), S = i.useCallback(e => {
+  }, []), N = i.useCallback(e => {
     var t;
     let n = null != (t = g.default.getFingerprint()) ? t : g.default.getId(),
       r = "discord://login/one-time?token=".concat(encodeURIComponent(e));
-    _.Z.launch(r, e => {
+    f.Z.launch(r, e => {
       e ? (m.default.track(x.rMx.DEEP_LINK_CLICKED, {
         source: "web_page",
         destination: "discord://login/one-time",
@@ -80,7 +80,7 @@ function b(e) {
         fingerprint: n
       }), b("app_launched")) : b("app_launch_not_supported")
     })
-  }, []), N = i.useCallback(e => {
+  }, []), S = i.useCallback(e => {
     var t;
     let r = null != (t = g.default.getFingerprint()) ? t : g.default.getId();
     Promise.resolve().then(n.bind(n, 536285)).then(t => {
@@ -99,40 +99,40 @@ function b(e) {
           destination: "one_time_login_modal",
           deep_link_provider: "rpc",
           fingerprint: r
-        }), b("app_launched")) : S(e)
+        }), b("app_launched")) : N(e)
       }).catch(() => {
-        S(e)
+        N(e)
       }).then(() => n.disconnect())
     })
-  }, [S]);
+  }, [N]);
   if (i.useEffect(() => {
       let e = null != o && "string" == typeof o,
-        t = a.tq ? "mobile" : a.Em ? "tablet" : (0, f.isDesktop)() ? "desktop_app" : "web";
+        t = a.tq ? "mobile" : a.Em ? "tablet" : (0, p.isDesktop)() ? "desktop_app" : "web";
       if (m.default.track(x.rMx.ONE_TIME_LOGIN_PAGE_VIEWED, {
           has_token: e,
           device_type: t
         }), !e) return void b("error");
       if (a.tq || a.Em) {
-        var n, r;
-        let e = null == (n = m.default.getSuperProperties()) ? true : n.os,
-          i = new URL(l.pathname + l.search, window.location.origin),
-          s = (0, p.Gn)("one_time_login", e, i),
-          a = null != (r = g.default.getFingerprint()) ? r : g.default.getId();
+        var n;
+        let e = null == (n = m.default.getSuperProperties()) ? true : n.os;
         m.default.track(x.rMx.ONE_TIME_LOGIN_APP_DETECTION_ATTEMPTED, {
-          detection_type: "mobile_redirect",
+          detection_type: "mobile_ui_shown",
           device_type: t,
           platform: e
-        }), m.default.track(x.rMx.DEEP_LINK_CLICKED, {
-          source: "web_page",
-          destination: "mobile_app",
-          deep_link_provider: "mobile_redirect",
-          fingerprint: a
-        }), window.location.href = s;
+        });
         return
       }
-      if ((0, f.isDesktop)()) return void y(o);
-      I.current || (I.current = true, b("rpc_attempting"), N(o))
-    }, [o, l, y, N]), a.tq || a.Em || (0, h.DB)()) return null;
+      if ((0, p.isDesktop)()) return void y(o);
+      I.current || (I.current = true, b("rpc_attempting"), S(o))
+    }, [o, l, y, S]), a.tq || a.Em) {
+    let e = null == o || "string" != typeof o ? "missing_token" : "invalid_token";
+    return (0, r.jsx)(_.e, {
+      token: o,
+      hasError: "error" === d,
+      errorReason: e
+    })
+  }
+  if ((0, h.DB)()) return null;
   if ("app_launched" === d) return (0, r.jsx)(j, {
     title: v.intl.string(v.t.RvUUOy),
     subtitle: v.intl.string(v.t["5/lR0g"]),

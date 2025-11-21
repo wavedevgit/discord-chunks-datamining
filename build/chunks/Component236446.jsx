@@ -203,7 +203,7 @@ function M(e) {
       })
     })]
   });
-  return (0, r.jsx)(S.Z, {
+  return (0, r.jsx)(N.Z, {
     className: R.authBox,
     children: () => [(0, r.jsx)(f.Z, {
       guildTemplate: t

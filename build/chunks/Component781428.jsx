@@ -756,7 +756,7 @@ J(ee, "defaultProps", {
 });
 let et = function(e) {
   (0, P.M)();
-  let t = (0, h.cj)([D.Z, k.Z, w.default, N.Z, T.Z], () => ({
+  let t = (0, h.cj)([D.Z, k.Z, w.default, S.Z, T.Z], () => ({
     authenticated: w.default.isAuthenticated(),
     handoffAvailable: D.Z.isHandoffAvailable(),
     user: D.Z.user,
@@ -765,7 +765,7 @@ let et = function(e) {
     mfaMethods: w.default.getMFAMethods(),
     defaultRoute: k.Z.defaultRoute,
     country: T.Z.getCountryCode(),
-    hasLoggedInAccounts: N.Z.getHasLoggedInAccounts()
+    hasLoggedInAccounts: S.Z.getHasLoggedInAccounts()
   }));
   return (0, i.jsx)(ee, Q({}, e, t))
 }

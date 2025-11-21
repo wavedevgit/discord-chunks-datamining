@@ -438,14 +438,14 @@ class eu extends(r = Chunk473749.PureComponent) {
         username: j,
         global_name: b,
         password: I,
-        date_of_birth: S
+        date_of_birth: N
       } = {}
     } = this.state, {
-      consentRequired: N,
+      consentRequired: S,
       authBoxClassName: C,
       hasLoggedInAccounts: T
     } = this.props, A = this.renderErrorMessage(), Z = (0, i.jsx)(g.u, {
-      text: !c && N ? er.intl.string(er.t.AY4IVA) : null,
+      text: !c && S ? er.intl.string(er.t.AY4IVA) : null,
       children: (0, i.jsx)("div", {
         className: es.marginTop20,
         children: (0, i.jsx)(m.Button, {
@@ -568,7 +568,7 @@ class eu extends(r = Chunk473749.PureComponent) {
         name: "date_of_birth",
         onChange: this.handleBirthdayChange,
         ref: this.dateOfBirthRef,
-        error: null != _ ? _ : ec(S),
+        error: null != _ ? _ : ec(N),
         value: u,
         required: true,
         onFocus: this.trackInputFocus,

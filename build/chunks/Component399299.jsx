@@ -48,10 +48,10 @@ function G(e) {
     selectSource: t,
     sourceChanged: r,
     onChangeSource: i
-  } = e, s = (0, a.e7)([m.ZP, S.Z], () => (0, T.isWindows)() ? (0, O.Z)(m.ZP, S.Z) : null), u = (0, a.e7)([o.Z], () => (null == s ? true : s.id) != null ? o.Z.getApplication(s.id) : null), d = (0, a.e7)([m.ZP], () => m.ZP.getRunningGames()), x = (0, a.Wu)([o.Z], () => d.map(e => null != e.id ? o.Z.getApplication(e.id) : null).filter(C.lm), [d]), h = null;
+  } = e, s = (0, a.e7)([m.ZP, N.Z], () => (0, T.isWindows)() ? (0, O.Z)(m.ZP, N.Z) : null), u = (0, a.e7)([o.Z], () => (null == s ? true : s.id) != null ? o.Z.getApplication(s.id) : null), d = (0, a.e7)([m.ZP], () => m.ZP.getRunningGames()), g = (0, a.Wu)([o.Z], () => d.map(e => null != e.id ? o.Z.getApplication(e.id) : null).filter(C.lm), [d]), h = null;
   if (null != n ? h = n.name : null != s && (h = s.name), null == h) return null;
   let j = (0, U.Z)(s, n, d),
-    v = r ? x.find(e => {
+    v = r ? g.find(e => {
       let {
         id: n
       } = e;
@@ -63,9 +63,9 @@ function G(e) {
     children: (0, l.jsx)(c.gNt, {
       label: M.intl.string(M.t.TC7Evz),
       children: (0, l.jsxs)(R.Z, {
-        children: [null != v ? (0, l.jsx)(g.Z, {
+        children: [null != v ? (0, l.jsx)(x.Z, {
           game: v,
-          size: g.A.XSMALL,
+          size: x.A.XSMALL,
           className: L.selectedIcon
         }) : (0, l.jsx)(p, {
           className: L.selectedIcon
@@ -96,9 +96,9 @@ function z(e) {
     children: (0, l.jsx)(c.gNt, {
       label: M.intl.string(M.t.WC3u3n),
       children: (0, l.jsxs)(R.Z, {
-        children: [(0, l.jsx)(x.Z, {
+        children: [(0, l.jsx)(g.Z, {
           guild: r,
-          size: x.Z.Sizes.SMALLER,
+          size: g.Z.Sizes.SMALLER,
           className: L.selectedIcon
         }), (0, l.jsx)("span", {
           className: L.ellipsisText,
@@ -204,12 +204,12 @@ function X(e) {
     sourceChanged: o,
     selectedGuildId: d,
     targetGuildPremiumTier: m,
-    selectSource: g,
-    selectGuild: x,
+    selectSource: x,
+    selectGuild: g,
     sound: h,
     previewDisabled: v,
     onClose: p,
-    onChangeSelectedFPS: S,
+    onChangeSelectedFPS: N,
     onChangeSelectedResolution: b,
     onChangeSelectedPreset: C,
     onChangeSelectedChannelId: T,
@@ -218,7 +218,7 @@ function X(e) {
     onChangeGuild: U,
     onChangeSound: _,
     onChangePreviewDisabled: L
-  } = e, X = (0, a.e7)([Z.Z, j.Z], () => j.Z.getChannel(Z.Z.getVoiceChannelId())), Y = (0, a.e7)([y.Z], () => y.Z.GPUDriversOutdated), q = (0, a.e7)([y.Z], () => y.Z.problematicGPUDriver), K = (0, a.e7)([N.default], () => N.default.getCurrentUser()), J = (0, E.Z)();
+  } = e, X = (0, a.e7)([Z.Z, j.Z], () => j.Z.getChannel(Z.Z.getVoiceChannelId())), Y = (0, a.e7)([y.Z], () => y.Z.GPUDriversOutdated), q = (0, a.e7)([y.Z], () => y.Z.problematicGPUDriver), K = (0, a.e7)([S.default], () => S.default.getCurrentUser()), J = (0, E.Z)();
   null != n && n.id.startsWith("screen") && !f.Z.supportsScreenSoundshare() && (J = M.intl.string(M.t["1b0Gm7"]));
   let Q = !!(null == n ? true : n.id.startsWith("camera")),
     $ = null != K && K.verified && !K.bot,
@@ -231,7 +231,7 @@ function X(e) {
         onChangeAudioDevice: R
       }) : (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(G, {
-          selectSource: g,
+          selectSource: x,
           sourceChanged: o,
           onChangeSource: O,
           selectedSource: n
@@ -243,7 +243,7 @@ function X(e) {
           screen: n.id.startsWith("screen")
         }) : null]
       })
-    }), x && null != d ? (0, l.jsx)("div", {
+    }), g && null != d ? (0, l.jsx)("div", {
       children: (0, l.jsx)(z, {
         guildId: d,
         onChange: U
@@ -273,7 +273,7 @@ function X(e) {
       selectedResolution: c,
       targetGuildPremiumTier: m,
       onClose: p,
-      onFPSChange: S,
+      onFPSChange: N,
       onResolutionChange: b,
       onPresetChange: C,
       captureDeviceSelected: Q
