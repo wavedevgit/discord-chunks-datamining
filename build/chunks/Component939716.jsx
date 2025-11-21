@@ -174,7 +174,7 @@ let E = (0, Chunk112724.Z)(e => {
     onItemChange: i,
     isMuted: u = true,
     onTrackClick: d
-  } = e, [m, p] = (0, a.useState)(0), C = (0, a.useRef)(0), f = (0, a.useRef)(t.length), [P, S] = (0, a.useState)(true), [y, N] = (0, a.useState)(false), [E, w] = (0, a.useState)(false), [L, R] = (0, a.useState)(false), [A, B] = (0, a.useState)(false), Z = (0, a.useCallback)((e, n) => {
+  } = e, [m, p] = (0, a.useState)(0), C = (0, a.useRef)(0), f = (0, a.useRef)(t.length), [P, S] = (0, a.useState)(true), [y, N] = (0, a.useState)(false), [E, w] = (0, a.useState)(false), [R, L] = (0, a.useState)(false), [A, B] = (0, a.useState)(false), Z = (0, a.useCallback)((e, n) => {
     var l;
     let a = null == (l = t[e]) ? true : l.backgroundSrc,
       r = n.interpolate({
@@ -209,13 +209,13 @@ let E = (0, Chunk112724.Z)(e => {
     null == d || d(I.o.CAROUSEL_PREV), W(C.current - 1)
   }, [W, d]), H = (0, a.useCallback)(e => {
     N(true), w(!e)
-  }, []), z = (0, a.useCallback)(() => {
+  }, []), F = (0, a.useCallback)(() => {
     E || U()
-  }, [E, U]), F = (0, a.useCallback)(e => {
+  }, [E, U]), z = (0, a.useCallback)(e => {
     let t = C.current;
-    e < t ? R(true) : e > t && B(true)
+    e < t ? L(true) : e > t && B(true)
   }, []), Q = (0, a.useCallback)(() => {
-    R(false), B(false)
+    L(false), B(false)
   }, []), Y = (0, a.useCallback)((e, t, n) => (0, l.jsx)(O, {
     item: e,
     itemIndex: t,
@@ -231,12 +231,12 @@ let E = (0, Chunk112724.Z)(e => {
         [v.currentItem]: r
       }),
       style: null != a ? Z(n, a) : null,
-      onMouseEnter: r ? null : () => F(n),
+      onMouseEnter: r ? null : () => z(n),
       onMouseLeave: r ? null : Q,
       children: "video" === e.type ? (0, l.jsx)(T, {
         item: e,
         onPlay: H,
-        onEnded: z,
+        onEnded: F,
         playable: r,
         isMuted: u,
         onClick: () => {
@@ -244,7 +244,7 @@ let E = (0, Chunk112724.Z)(e => {
         }
       }) : Y(e, n, r)
     })
-  }, [m, t.length, Z, F, Q, H, z, W, Y, u, d]), V = (0, a.useCallback)(() => {
+  }, [m, t.length, Z, z, Q, H, F, W, Y, u, d]), V = (0, a.useCallback)(() => {
     let e = (0, l.jsx)(h.ZP, {
       className: v.carousel,
       items: t,
@@ -262,7 +262,7 @@ let E = (0, Chunk112724.Z)(e => {
       children: [e, (0, l.jsx)(_.am, {
         onClick: M,
         className: s()(v.arrow, {
-          [v.arrowHovered]: L
+          [v.arrowHovered]: R
         })
       }), (0, l.jsx)(_.Pz, {
         onClick: D,
@@ -271,7 +271,7 @@ let E = (0, Chunk112724.Z)(e => {
         })
       })]
     })
-  }, [t, G, m, P, M, D, L, A]), K = (0, a.useCallback)((e, t) => {
+  }, [t, G, m, P, M, D, R, A]), K = (0, a.useCallback)((e, t) => {
     let n = m === t;
     return (0, l.jsx)("div", {
       className: s()(v.paginationItem, n ? v.selectedStorePaginationItem : v.unselectedStorePaginationItem),

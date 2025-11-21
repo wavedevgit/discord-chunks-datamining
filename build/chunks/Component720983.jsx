@@ -43,7 +43,7 @@ function C(e) {
     selectedPageIndex: a
   } = e, C = (0, r.wjy)((0, d.ZP)()), b = (0, g.Y)({
     location: "SocialLayerStorefrontHeader"
-  }), j = (0, s.e7)([f.default], () => f.default.getCurrentUser()), k = i.useCallback(() => {
+  }), j = (0, s.e7)([_.default], () => _.default.getCurrentUser()), k = i.useCallback(() => {
     (null == j ? true : j.id) != null && (0, p.openUserProfileModal)({
       userId: j.id,
       section: h.oh.WISHLIST,
@@ -52,10 +52,10 @@ function C(e) {
     })
   }, [j]);
   if (null == l) return null;
-  let Z = null != l.logoAssetId ? (0, _._W)(l.applicationId, l.logoAssetId, 75) : null,
-    S = null != l.lightThemeLogoAssetId ? (0, _._W)(l.applicationId, l.lightThemeLogoAssetId, 75) : null,
+  let S = null != l.logoAssetId ? (0, f._W)(l.applicationId, l.logoAssetId, 75) : null,
+    Z = null != l.lightThemeLogoAssetId ? (0, f._W)(l.applicationId, l.lightThemeLogoAssetId, 75) : null,
     N = null;
-  return N = C ? null != Z ? Z : S : null != S ? S : Z, (0, t.jsxs)(u.Z, {
+  return N = C ? null != S ? S : Z : null != Z ? Z : S, (0, t.jsxs)(u.Z, {
     disableDoubleClick: true,
     className: m.headerContainer,
     children: [(0, t.jsxs)(r.P3F, {

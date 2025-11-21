@@ -48,7 +48,7 @@ function Z(e) {
     trackPDPClick: d
   } = e;
   if (null == o) return null;
-  let m = (0, v.T4)(null != (a = null == (t = o.price) ? true : t.amount) ? a : 0, null != (r = null == (n = o.price) ? true : n.currency) ? r : R.pK.USD);
+  let m = (0, v.T4)(null != (a = null == (t = o.price) ? true : t.amount) ? a : 0, null != (r = null == (n = o.price) ? true : n.currency) ? r : L.pK.USD);
   return (0, l.jsxs)("div", {
     className: B.detailsContainer,
     children: [(0, l.jsxs)("div", {
@@ -204,10 +204,10 @@ function M(e) {
     isStorefront: y,
     analyticsLocations: T,
     analyticsContext: O,
-    onClose: R
+    onClose: L
   } = e, {
     analyticsLocations: M
-  } = (0, g.ZP)(null != T ? T : []), H = (0, c.e7)([S.Z], () => S.Z.getStorefrontData(v), [v]), z = (0, c.e7)([b.Z], () => b.Z.isFetchingForSKU(i)), F = (0, u.wjy)((0, m.ZP)()), [Q, Y] = a.useState(true), G = (0, c.e7)([f.Z], () => f.Z.get(i)), [V, K] = a.useState(null), X = function(e, t) {
+  } = (0, g.ZP)(null != T ? T : []), H = (0, c.e7)([S.Z], () => S.Z.getStorefrontData(v), [v]), F = (0, c.e7)([b.Z], () => b.Z.isFetchingForSKU(i)), z = (0, u.wjy)((0, m.ZP)()), [Q, Y] = a.useState(true), G = (0, c.e7)([f.Z], () => f.Z.get(i)), [V, K] = a.useState(null), X = function(e, t) {
     let n = (null == t ? true : t.labelIconAssetId) != null ? (0, P._W)(e, null == t ? true : t.labelIconAssetId) : null,
       [l, r] = (0, _.Cf)(n, "#000000"),
       i = a.useMemo(() => {
@@ -217,7 +217,7 @@ function M(e) {
     return null != n && "#000000" !== l ? i : true
   }(p, V);
   (0, C.p2)(), (0, d.ZP)(() => {
-    I.default.track(L.rMx.OPEN_MODAL, {
+    I.default.track(R.rMx.OPEN_MODAL, {
       location_stack: M,
       type: w.n8,
       sku_id: i,
@@ -225,8 +225,8 @@ function M(e) {
     })
   });
   let q = a.useCallback(e => {
-    I.default.track(L.rMx.SLAYER_SHOP_PDP_ELEMENT_CLICKED, {
-      slayer_shop_session_id: null == O ? true : O.sessionId,
+    I.default.track(R.rMx.SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, {
+      slayer_storefront_session_id: null == O ? true : O.sessionId,
       sku_id: i,
       guild_id: null == O ? true : O.guildId,
       cta_type: e,
@@ -245,11 +245,11 @@ function M(e) {
     ee = a.useCallback(() => {
       Y(!Q), q(E.o.MUTE_BUTTON)
     }, [Q, q]);
-  if (null == (null == G || null == (t = G.tenantMetadata) ? true : t.socialLayer) || (null == H ? true : H.storefront) == null) return z ? (0, l.jsx)(u.$jN, {}) : null;
+  if (null == (null == G || null == (t = G.tenantMetadata) ? true : t.socialLayer) || (null == H ? true : H.storefront) == null) return F ? (0, l.jsx)(u.$jN, {}) : null;
   let et = null != H.storefront.logoAssetId ? (0, P._W)(H.storefront.applicationId, H.storefront.logoAssetId, 75) : null,
     en = null != H.storefront.lightThemeLogoAssetId ? (0, P._W)(H.storefront.applicationId, H.storefront.lightThemeLogoAssetId, 75) : null,
     el = null;
-  return el = F ? null != et ? et : en : null != en ? en : et, (0, l.jsx)(u.Y0X, {
+  return el = z ? null != et ? et : en : null != en ? en : et, (0, l.jsx)(u.Y0X, {
     transitionState: n,
     "hide-shadow": true,
     parentComponent: "SocialLayerStorefrontProductDetailsModal",
@@ -277,7 +277,7 @@ function M(e) {
           sku: G,
           guildId: v,
           shouldShowShopLink: !y,
-          onClose: R,
+          onClose: L,
           trackPDPClick: q
         })]
       }), (0, l.jsxs)("div", {
@@ -315,7 +315,7 @@ function M(e) {
               color: "currentColor"
             })
           }), (0, l.jsx)(D, {
-            onClick: R,
+            onClick: L,
             ariaLabel: A.intl.string(A.t.cpT0Cq),
             children: (0, l.jsx)(u.Uz9, {
               size: "refresh_sm",
