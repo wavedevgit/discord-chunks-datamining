@@ -89,34 +89,36 @@ function j(e) {
     headerTitle: h,
     headerSubtitle: y,
     headerActionButtons: j,
-    additionalManageWidgetMenuItems: x
-  } = e, _ = (0, s.Dt)(), P = (0, c.e7)([u.default], () => u.default.getId() === t), {
-    trackUserProfileAction: I
-  } = (0, d.KZ)(), w = (0, g.Z)({
+    headerClassName: x,
+    additionalManageWidgetMenuItems: _
+  } = e, P = (0, s.Dt)(), I = (0, c.e7)([u.default], () => u.default.getId() === t), {
+    trackUserProfileAction: w
+  } = (0, d.KZ)(), S = (0, g.Z)({
     widget: n,
-    onAction: I
-  }), S = P && null != p && !a, E = () => (0, r.jsxs)("div", {
+    onAction: w
+  }), E = I && null != p && !a, T = () => (0, r.jsxs)("div", {
     className: l()(v.container, f),
     children: [(0, r.jsx)(b.Z, {
       userId: t,
-      headingId: _,
+      headingId: P,
       title: h,
       subtitle: y,
       actionButtons: j,
       widget: n,
-      disableInteraction: a
+      disableInteraction: a,
+      className: x
     }), (0, r.jsxs)(o.y5t, {
       children: [i, m]
     })]
   });
   return (0, r.jsx)("section", {
-    ref: w,
-    "aria-labelledby": _,
-    children: S ? (0, r.jsx)(O, {
+    ref: S,
+    "aria-labelledby": P,
+    children: E ? (0, r.jsx)(O, {
       index: null != p ? p : 0,
       widget: n,
-      additionalManageWidgetMenuItems: x,
-      children: E()
-    }) : E()
+      additionalManageWidgetMenuItems: _,
+      children: T()
+    }) : T()
   })
 }

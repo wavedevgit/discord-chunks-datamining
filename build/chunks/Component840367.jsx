@@ -1,41 +1,44 @@
 /** Chunk was on 44097 **/
 /** chunk id: 840367, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => d
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk314897 = require("./314897.js"),
   Chunk825354 = require("./825354.jsx"),
   Chunk635318 = require("./635318.js");
 
-function s(e) {
+function d(e) {
   let {
     userId: t,
     headingId: n,
     widget: i,
     disableInteraction: l = false,
-    title: o,
+    title: c,
     subtitle: s,
-    actionButtons: d = []
+    actionButtons: d = [],
+    className: g
   } = e;
   return (0, r.jsxs)("div", {
-    className: c.headerRow,
+    className: a()(u.headerRow, g),
     children: [(0, r.jsxs)("div", {
-      className: c.title,
-      children: [(0, r.jsx)(a.Heading, {
+      className: u.title,
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-sm/medium",
         color: "text-default",
         id: n,
-        children: o
-      }), null != s && (0, r.jsx)(a.Text, {
+        children: c
+      }), null != s && (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
         children: s
       })]
-    }), (0, r.jsx)(u, {
+    }), (0, r.jsx)(f, {
       widget: i,
       actionButtons: d,
       disabledInteraction: l,
@@ -44,22 +47,22 @@ function s(e) {
   })
 }
 
-function u(e) {
+function f(e) {
   let {
     widget: t,
     actionButtons: n,
-    disabledInteraction: a,
-    userId: s
-  } = e, u = (0, i.e7)([l.default], () => l.default.getId());
-  return a ? null : null != n && n.length > 0 ? (0, r.jsx)("div", {
-    className: c.actions,
+    disabledInteraction: i,
+    userId: a
+  } = e, o = (0, l.e7)([c.default], () => c.default.getId());
+  return i ? null : null != n && n.length > 0 ? (0, r.jsx)("div", {
+    className: u.actions,
     children: n
-  }) : u !== s ? (0, r.jsx)("div", {
-    className: c.actions,
-    children: (0, r.jsx)(o.Z, {
+  }) : o !== a ? (0, r.jsx)("div", {
+    className: u.actions,
+    children: (0, r.jsx)(s.Z, {
       widget: t,
-      userId: s,
-      className: c.menuButton
+      userId: a,
+      className: u.menuButton
     })
   }) : null
 }
