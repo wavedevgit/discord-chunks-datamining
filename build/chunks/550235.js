@@ -46,7 +46,7 @@ function i(e) {
     onAnalytics: s,
     emitIntervalMs: c,
     minSegmentDurationMs: u
-  } = e, [d, m] = r.useState(null), p = (0, r.useRef)(null), f = (0, r.useRef)(Date.now()), v = (0, r.useRef)(false), E = (0, r.useCallback)(e => {
+  } = e, [d, m] = r.useState(null), f = (0, r.useRef)(null), p = (0, r.useRef)(Date.now()), v = (0, r.useRef)(false), E = (0, r.useCallback)(e => {
     e.segmentEndSec < e.segmentStartSec || s({
       start_time: e.startTime,
       end_time: e.endTime,
@@ -70,7 +70,7 @@ function i(e) {
     let e = t();
     if (null == e || null == d) return;
     let n = Date.now();
-    !(n - f.current < c) && (e - d.segmentStartSec < u / 1e3 || (E(l(o({}, d), {
+    !(n - p.current < c) && (e - d.segmentStartSec < u / 1e3 || (E(l(o({}, d), {
       endTime: n,
       segmentEndSec: e
     })), m({
@@ -78,12 +78,12 @@ function i(e) {
       endTime: n,
       segmentStartSec: e,
       segmentEndSec: e
-    }), f.current = n))
+    }), p.current = n))
   }, [d, E, c, u, t]);
   return (0, r.useEffect)(() => {
     i && a || (m(null), v.current = false)
   }, [i, a]), (0, r.useEffect)(() => {
-    if (n && i && a) v.current || g(), p.current = window.setInterval(() => {
+    if (n && i && a) v.current || g(), f.current = window.setInterval(() => {
       O()
     }, 200);
     else {
@@ -95,10 +95,10 @@ function i(e) {
           segmentEndSec: e
         }))
       }
-      m(null), v.current = false, null != p.current && (clearInterval(p.current), p.current = null)
+      m(null), v.current = false, null != f.current && (clearInterval(f.current), f.current = null)
     }
     return () => {
-      null != p.current && (clearInterval(p.current), p.current = null)
+      null != f.current && (clearInterval(f.current), f.current = null)
     }
   }, [n, i, a, d, O, E, g, t]), {
     forceSendCurrentSegment: (0, r.useCallback)(() => {

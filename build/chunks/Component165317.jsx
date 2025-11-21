@@ -1,7 +1,7 @@
 /** Chunk was on 75909 **/
 /** chunk id: 165317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,10 +22,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk559072 = require("./559072.js");
 let b = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
 
-function S(e) {
-  var t, n, S, y;
+function C(e) {
+  var t, n, C, S;
   let {
-    tooltipPosition: C
+    tooltipPosition: y
   } = e, {
     quest: _,
     sourceQuestContent: x,
@@ -36,14 +36,14 @@ function S(e) {
     location: g.dr.VIDEO_MODAL
   }), [P, T] = o.useState(false), R = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), I = o.useRef(null == (t = _.userStatus) ? true : t.completedAt), [N, A] = o.useState(false), w = (0, c.w8)(_.config), {
     completedRatio: k,
-    completedRatioDisplay: L
-  } = (0, u.I)(_), M = (null == (n = _.userStatus) ? true : n.completedAt) != null, V = (null == (S = _.userStatus) ? true : S.claimedAt) != null, Z = O.intl.formatToPlainString(M && !V && D ? O.t.NRp4K4 : O.t["12IWP2"], {
+    completedRatioDisplay: M
+  } = (0, u.I)(_), L = (null == (n = _.userStatus) ? true : n.completedAt) != null, V = (null == (C = _.userStatus) ? true : C.claimedAt) != null, Z = O.intl.formatToPlainString(L && !V && D ? O.t.NRp4K4 : O.t["12IWP2"], {
     rewardName: w
   });
   o.useEffect(() => {
     var e, t;
     null == I.current && (null == (e = _.userStatus) ? true : e.completedAt) != null && D && A(true), I.current = null == (t = _.userStatus) ? true : t.completedAt
-  }, [null == (y = _.userStatus) ? true : y.completedAt, D]);
+  }, [null == (S = _.userStatus) ? true : S.completedAt, D]);
   let F = (0, v.D)({
       quest: _,
       questContent: d.jn.QUEST_HOME_DESKTOP,
@@ -51,17 +51,17 @@ function S(e) {
       onClick: j,
       shouldShowShopIfAlreadyClaimed: false
     }),
-    B = M && D;
+    B = L && D;
   return (0, r.jsxs)("div", {
     className: h.progressWrapper,
-    children: [M && (0, r.jsx)(a.Fmz, {
+    children: [L && (0, r.jsx)(a.Fmz, {
       importData: b,
       className: h.confetti,
       loop: false,
       autoplay: false,
       shouldAnimate: N && !R
     }), (0, r.jsx)(i.u, {
-      position: C,
+      position: y,
       text: Z,
       onTooltipShow: () => {
         T(true)
@@ -77,13 +77,13 @@ function S(e) {
         onClick: e => {
           B && F(e)
         },
-        children: (0, r.jsx)(p.Z, {
+        children: (0, r.jsx)(f.Z, {
           quest: _,
           size: 48,
           percentComplete: k,
-          percentCompleteText: P ? L : true,
+          percentCompleteText: P ? M : true,
           percentCompleteTextVariant: "text-sm/medium",
-          children: (0, r.jsx)(f.Z, {
+          children: (0, r.jsx)(p.Z, {
             className: h.questProgressRewardTile,
             quest: _,
             questContent: d.jn.VIDEO_MODAL,

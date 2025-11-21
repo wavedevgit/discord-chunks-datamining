@@ -1,9 +1,10 @@
 /** Chunk was on 75909 **/
 /** chunk id: 939389, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
+  $R: () => v,
   G6: () => m,
   JC: () => u,
-  PW: () => f,
+  PW: () => p,
   yv: () => d
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
@@ -33,7 +34,7 @@ function m(e, t) {
     }, n)
   }]
 }
-async function p(e) {
+async function f(e) {
   try {
     var t;
     let n = (0, i.zO)(e);
@@ -53,11 +54,15 @@ async function p(e) {
     returnfalse
   }
 }
-async function f(e) {
+async function p(e) {
   try {
     if (c.Z.isDiscordUrl(e)) returntrue;
-    return await p(e)
+    return await f(e)
   } catch (e) {
     returnfalse
   }
+}
+
+function v(e, t, n) {
+  return e ? t.timestampSec >= t.duration ? 0 : t.timestampSec : Math.max(t.timestampSec, n.progressSeconds)
 }

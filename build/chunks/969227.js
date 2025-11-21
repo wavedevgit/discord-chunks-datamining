@@ -18,7 +18,7 @@ function c(e) {
     sourceQuestContent: u,
     onClick: d,
     shouldShowShopIfAlreadyClaimed: m
-  } = e, p = (0, a.hf)({
+  } = e, f = (0, a.hf)({
     quest: n,
     questContent: c,
     sourceQuestContent: u
@@ -29,6 +29,6 @@ function c(e) {
       tab: s.AW.ORBS,
       analyticsLocations: [],
       analyticsSource: o.Z.QUEST_HOME_PAGE
-    }) : p()
-  }, [d, n.config, null == (t = n.userStatus) ? true : t.claimedAt, p, m])
+    }) : f()
+  }, [d, n.config, null == (t = n.userStatus) ? true : t.claimedAt, f, m])
 }

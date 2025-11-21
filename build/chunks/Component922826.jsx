@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk939389 = require("./939389.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk273339 = require("./273339.js");
-let C = "-:--",
+let y = "-:--",
   _ = {
     [Chunk325916.rq.PLAYING]: {
       icon: Chunk481060.fpf,
@@ -51,20 +51,20 @@ function D(e) {
   let {
     current: t,
     duration: n
-  } = e, o = null != t ? (0, b.yv)(t) : C, l = null != n ? (0, b.yv)(n) : C;
+  } = e, o = null != t ? (0, b.yv)(t) : y, l = null != n ? (0, b.yv)(n) : y;
   return o = o.padStart(l.length, "0"), (0, r.jsxs)("div", {
-    className: i()(y.durationTimeWrapper, y.controlsBarItem),
+    className: i()(S.durationTimeWrapper, S.controlsBarItem),
     children: [(0, r.jsx)(m.Text, {
       variant: "text-xs/normal",
-      className: y.durationTimeDisplay,
+      className: S.durationTimeDisplay,
       children: o
     }), (0, r.jsx)(m.Text, {
       variant: "text-xs/normal",
-      className: y.durationTimeSeparator,
+      className: S.durationTimeSeparator,
       children: "/"
     }), (0, r.jsx)(m.Text, {
       variant: "text-xs/normal",
-      className: y.durationTimeDisplay,
+      className: S.durationTimeDisplay,
       children: l
     })]
   })
@@ -76,14 +76,14 @@ let P = Chunk473749.forwardRef(function(e, t) {
     visible: l,
     ariaLabel: s,
     active: u,
-    disabled: p,
-    tooltipLabel: f,
+    disabled: f,
+    tooltipLabel: p,
     tooltipDelayMs: v = 1500,
     shortcut: E,
     onClick: g,
     buttonSize: O = h.Cq.MD
   } = e, b = e => {
-    var d, f;
+    var d, p;
     return (0, r.jsx)(m.P3F, (d = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -101,16 +101,16 @@ let P = Chunk473749.forwardRef(function(e, t) {
         })
       }
       return e
-    }({}, e), f = f = {
-      onClick: true === p ? true : g,
-      className: i()(y.videoControlsBtnCont, {
-        [y.videoControlsBtnContDisabled]: p
+    }({}, e), p = p = {
+      onClick: true === f ? true : g,
+      className: i()(S.videoControlsBtnCont, {
+        [S.videoControlsBtnContDisabled]: f
       }),
       "aria-label": s,
-      "aria-disabled": p,
+      "aria-disabled": f,
       innerRef: t,
       children: (0, r.jsx)(a.animated.div, {
-        className: y.videoControlsBtnCont,
+        className: S.videoControlsBtnCont,
         style: {
           opacity: (0, a.to)([o.to({
             range: [0, 1],
@@ -123,26 +123,26 @@ let P = Chunk473749.forwardRef(function(e, t) {
         },
         children: (0, r.jsx)(n, {
           size: j[O],
-          color: true !== p ? c.Z.colors.WHITE : c.Z.colors.TEXT_MUTED,
-          className: i()(y.controlsBarItem, {
-            [y.controlsBarItemActive]: u,
-            [y.videoControlsBtn]: !p
+          color: true !== f ? c.Z.colors.WHITE : c.Z.colors.TEXT_MUTED,
+          className: i()(S.controlsBarItem, {
+            [S.controlsBarItemActive]: u,
+            [S.videoControlsBtn]: !f
           })
         })
       })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(f)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(f)).forEach(function(e) {
-      Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(f, e))
+    })(Object(p)).forEach(function(e) {
+      Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(p, e))
     }), d))
   };
-  return null != f && l ? (0, r.jsx)(d.u, {
-    text: f,
+  return null != p && l ? (0, r.jsx)(d.u, {
+    text: p,
     keyboardShortcut: "" !== (null != E ? E : "").trim() ? E : true,
     delay: v,
     children: b()
@@ -155,7 +155,7 @@ function T(e) {
     videoRef: l,
     playerState: d,
     animSpring: b,
-    visible: C,
+    visible: y,
     seekForwardEnabled: j,
     hideCaptionBtn: T,
     hideTranscriptBtn: R,
@@ -164,12 +164,12 @@ function T(e) {
     handlePlaybackBtnClick: A,
     handleTranscriptBtnClick: w,
     handleCaptionBtnClick: k,
-    handleFullScreenBtnClick: L,
-    handleSeekBackBtnClick: M,
+    handleFullScreenBtnClick: M,
+    handleSeekBackBtnClick: L,
     handleSeekForwardBtnClick: V,
     handleControlBarPendingInteraction: Z,
     onVolumeChange: F
-  } = e, B = (0, v.km)(e => e.volume), H = (0, v.km)(e => e.setVolume), U = (0, v.km)(e => e.muted), q = (0, v.km)(e => e.setMuted), Y = (0, v.km)(e => e.transcriptEnabled), G = (0, v.km)(e => e.captionEnabled), Q = (0, v.km)(e => e.fullScreenEnabled), W = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), z = (0, s.e7)([p.Z], () => p.Z.keyboardModeEnabled), [K, X] = o.useState(U ? 0 : B), [J, $] = o.useState(false), [ee, et] = o.useState(false), [{
+  } = e, B = (0, v.km)(e => e.volume), H = (0, v.km)(e => e.setVolume), U = (0, v.km)(e => e.muted), q = (0, v.km)(e => e.setMuted), Q = (0, v.km)(e => e.transcriptEnabled), Y = (0, v.km)(e => e.captionEnabled), G = (0, v.km)(e => e.fullScreenEnabled), W = (0, s.e7)([f.Z], () => f.Z.useReducedMotion), z = (0, s.e7)([f.Z], () => f.Z.keyboardModeEnabled), [K, X] = o.useState(U ? 0 : B), [J, $] = o.useState(false), [ee, et] = o.useState(false), [{
     volumeAnimSpring: en
   }, er] = (0, m.q_F)(() => ({
     from: {
@@ -180,7 +180,7 @@ function T(e) {
       friction: 3,
       clamp: true
     }
-  })), eo = o.useRef(null), el = (0, f.ZS)(I), ei = o.useCallback(e => {
+  })), eo = o.useRef(null), el = (0, p.ZS)(I), ei = o.useCallback(e => {
     null != l.current && (e !== l.current.volume && (l.current.volume = e), e !== K && X(e))
   }, [l, K]), ea = o.useCallback(() => {
     null != l.current && (0 === K ? (ei(B), q(false), F(B)) : (H(K), ei(0), q(true), F(0)))
@@ -197,7 +197,7 @@ function T(e) {
         z || (e.preventDefault(), A());
         break;
       case h.Y1.SEEK_BACK:
-        M();
+        L();
         break;
       case h.Y1.SEEK_FORWARD:
         V();
@@ -206,12 +206,12 @@ function T(e) {
         k();
         break;
       case h.Y1.FULLSCREEN:
-        L();
+        M();
         break;
       case h.Y1.MUTE:
         ea()
     }
-  }, [k, L, A, M, V, ea, z]);
+  }, [k, M, A, L, V, ea, z]);
   o.useEffect(() => {
     null != eo.current && eo.current.focus()
   }, []), o.useEffect(() => (er({
@@ -225,17 +225,17 @@ function T(e) {
   let ed = 0 === K ? m.OyP : K < .5 ? m.X2j : m.gj8,
     {
       icon: em,
-      label: ep
+      label: ef
     } = _[d];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: y.videoControlsGroup,
+      className: S.videoControlsGroup,
       children: [(0, r.jsx)(P, {
         iconComponent: em,
         animationTime: b,
-        visible: C,
-        ariaLabel: ep,
-        tooltipLabel: ep,
+        visible: y,
+        ariaLabel: ef,
+        tooltipLabel: ef,
         shortcut: h.Y1.PLAYBACK,
         onClick: A,
         ref: eo,
@@ -244,55 +244,55 @@ function T(e) {
         children: [(0, r.jsx)(P, {
           iconComponent: g.F,
           animationTime: b,
-          visible: C,
-          onClick: M,
-          ariaLabel: S.intl.string(S.t.r9s3Uv),
-          tooltipLabel: S.intl.string(S.t.r9s3Uv),
+          visible: y,
+          onClick: L,
+          ariaLabel: C.intl.string(C.t.r9s3Uv),
+          tooltipLabel: C.intl.string(C.t.r9s3Uv),
           shortcut: h.Y1.SEEK_BACK,
           buttonSize: x[N]
         }), (0, r.jsx)(P, {
           iconComponent: O.j,
           animationTime: b,
-          visible: C,
+          visible: y,
           onClick: V,
           disabled: !j,
-          ariaLabel: j ? S.intl.string(S.t.zWDcNP) : S.intl.string(S.t.xXh3yw),
-          tooltipLabel: j ? S.intl.string(S.t.zWDcNP) : S.intl.string(S.t.xXh3yw),
+          ariaLabel: j ? C.intl.string(C.t.zWDcNP) : C.intl.string(C.t.xXh3yw),
+          tooltipLabel: j ? C.intl.string(C.t.zWDcNP) : C.intl.string(C.t.xXh3yw),
           tooltipDelayMs: 1500 * !!j,
           shortcut: h.Y1.SEEK_FORWARD,
           buttonSize: x[N]
         })]
       })]
     }), (0, r.jsxs)(a.animated.div, {
-      className: i()(y.videoControlsGroup, y.videoControlsGroupMid),
+      className: i()(S.videoControlsGroup, S.videoControlsGroupMid),
       style: {
         opacity: (0, a.to)([b.to({
           range: [0, 1],
           output: [0, 1]
-        })], e => "".concat(C ? e : Math.pow(e, 8)))
+        })], e => "".concat(y ? e : Math.pow(e, 8)))
       },
       children: [(0, r.jsxs)("div", {
         onMouseEnter: es,
         onMouseLeave: ec,
         onFocus: es,
         onBlur: ec,
-        className: y.volumeControlGroup,
+        className: S.volumeControlGroup,
         children: [(0, r.jsx)(P, {
           iconComponent: ed,
           animationTime: b,
-          visible: C,
+          visible: y,
           onClick: ea,
-          ariaLabel: S.intl.string(S.t["eIl+AK"]),
-          tooltipLabel: S.intl.string(S.t["eIl+AK"]),
+          ariaLabel: C.intl.string(C.t["eIl+AK"]),
+          tooltipLabel: C.intl.string(C.t["eIl+AK"]),
           shortcut: h.Y1.MUTE,
           buttonSize: x[N]
         }), (0, r.jsx)(a.animated.div, {
-          className: y.volumeSlider,
+          className: S.volumeSlider,
           style: {
             opacity: (0, a.to)([en.to({
               range: [0, 1],
               output: [0, 1]
-            })], e => "".concat(C ? e : Math.pow(e, 8))),
+            })], e => "".concat(y ? e : Math.pow(e, 8))),
             width: (0, a.to)([en.to({
               range: [0, 1],
               output: [0, 100]
@@ -314,7 +314,7 @@ function T(e) {
               backgroundColor: c.Z.colors.WHITE.css
             },
             orientation: "horizontal",
-            "aria-label": S.intl.string(S.t["eIl+AK"])
+            "aria-label": C.intl.string(C.t["eIl+AK"])
           })
         })]
       }), (0, r.jsx)(D, {
@@ -322,34 +322,34 @@ function T(e) {
         duration: null == l || null == (n = l.current) ? true : n.duration
       })]
     }), (0, r.jsxs)("div", {
-      className: i()(y.videoControlsGroup, y.videoControlsGroupEnd),
+      className: i()(S.videoControlsGroup, S.videoControlsGroupEnd),
       children: [!R && (0, r.jsx)(P, {
         iconComponent: m.hH0,
         animationTime: b,
-        visible: C,
+        visible: y,
         onClick: w,
-        active: Y && d !== h.rq.ENDED,
+        active: Q && d !== h.rq.ENDED,
         disabled: d === h.rq.ENDED,
-        ariaLabel: S.intl.string(S.t.KCzjTi),
-        tooltipLabel: S.intl.string(S.t.KCzjTi),
+        ariaLabel: C.intl.string(C.t.KCzjTi),
+        tooltipLabel: C.intl.string(C.t.KCzjTi),
         buttonSize: x[N]
       }), !T && (0, r.jsx)(P, {
         iconComponent: E.c,
         animationTime: b,
-        visible: C,
-        active: G,
+        visible: y,
+        active: Y,
         onClick: k,
-        ariaLabel: S.intl.string(S.t.bDSZO1),
-        tooltipLabel: S.intl.string(S.t.bDSZO1),
+        ariaLabel: C.intl.string(C.t.bDSZO1),
+        tooltipLabel: C.intl.string(C.t.bDSZO1),
         shortcut: h.Y1.CAPTION,
         buttonSize: x[N]
       }), (0, r.jsx)(P, {
-        iconComponent: Q ? m.wvt : m.NpZ,
+        iconComponent: G ? m.wvt : m.NpZ,
         animationTime: b,
-        visible: C,
-        onClick: L,
-        ariaLabel: S.intl.string(S.t.vKZT5t),
-        tooltipLabel: S.intl.string(S.t.vKZT5t),
+        visible: y,
+        onClick: M,
+        ariaLabel: C.intl.string(C.t.vKZT5t),
+        tooltipLabel: C.intl.string(C.t.vKZT5t),
         shortcut: h.Y1.FULLSCREEN,
         buttonSize: x[N]
       })]

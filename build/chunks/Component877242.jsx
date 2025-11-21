@@ -26,9 +26,9 @@ function h() {
     sourceQuestContent: t,
     isPortrait: n,
     onClose: l
-  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), h = (0, Chunk915750.aM)(), b = (0, Chunk113434.tP)(module), S = Chunk473749.useRef(null), {
-    isHoveringOrFocusing: y
-  } = (0, Chunk104505.Z)(S), C = (0, Chunk684245.e)({
+  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), h = (0, Chunk915750.aM)(), b = (0, Chunk113434.tP)(module), C = Chunk473749.useRef(null), {
+    isHoveringOrFocusing: S
+  } = (0, Chunk104505.Z)(C), y = (0, Chunk684245.e)({
     quest: module,
     onClose: Chunk120356,
     sourceQuestContent: exports,
@@ -37,13 +37,13 @@ function h() {
   return (0, Chunk54381.jsx)(Chunk681715.u, {
     text: Chunk388032.intl.string(Chunk388032.t.EuHF34),
     children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
-      onClick: () => C(Chunk497505.jn.VIDEO_MODAL, Chunk617136.jZ.OPEN_GAME_LINK),
+      onClick: () => y(Chunk497505.jn.VIDEO_MODAL, Chunk617136.jZ.OPEN_GAME_LINK),
       className: Chunk273339.adInfoClickable,
       children: (0, Chunk54381.jsxs)("div", {
         className: i()(Chunk273339.contentHeaderGameInfo, Chunk273339.contentHeaderGameInfoHoverable, {
           [Chunk273339.contentHeaderGameInfoHoverableExpired]: b
         }),
-        ref: S,
+        ref: C,
         children: [(0, Chunk54381.jsx)("div", {
           className: Chunk273339.contentFooterAdDetailedInfo,
           children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
@@ -68,7 +68,7 @@ function h() {
             }),
             children: (0, Chunk54381.jsx)(Chunk481060.owK, {
               size: "xs",
-              color: y ? Chunk481060.TVs.colors.ICON_PRIMARY.css : Chunk481060.TVs.colors.ICON_TERTIARY.css
+              color: S ? Chunk481060.TVs.colors.ICON_PRIMARY.css : Chunk481060.TVs.colors.ICON_TERTIARY.css
             })
           }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-sm/medium",
@@ -76,7 +76,7 @@ function h() {
               [Chunk273339.adDetailsTextPrimaryPortrait]: require,
               [Chunk273339.addFourPxMarginRight]: require
             }),
-            color: y ? "text-primary" : "text-secondary",
+            color: S ? "text-primary" : "text-secondary",
             lineClamp: 1,
             children: module.config.messages.gamePublisher
           }), x ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -91,7 +91,7 @@ function h() {
               }),
               variant: "heading-sm/medium",
               lineClamp: require ? true : 1,
-              color: y ? "text-primary" : "text-secondary",
+              color: S ? "text-primary" : "text-secondary",
               children: _
             })]
           }) : null]

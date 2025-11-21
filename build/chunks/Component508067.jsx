@@ -14,11 +14,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk295907 = require("./295907.js"),
   Chunk171214 = require("./171214.js");
 
-function p(e, t, n) {
+function f(e, t, n) {
   return n * (Math.max(e - t.left, 0) / t.width)
 }
 
-function f(e, t, n) {
+function p(e, t, n) {
   return n.left + e / t * n.width
 }
 
@@ -33,14 +33,14 @@ function v(e) {
     rounded: O,
     maxSeekableTime: h,
     onClick: b,
-    onScrubBack: S,
-    onScrubForward: y
-  } = e, [C, _] = o.useState(null), [x, j] = o.useState(null), [D, P] = o.useState(null), [T, R] = o.useState(false), I = o.useRef(null), N = e => {
+    onScrubBack: C,
+    onScrubForward: S
+  } = e, [y, _] = o.useState(null), [x, j] = o.useState(null), [D, P] = o.useState(null), [T, R] = o.useState(false), I = o.useRef(null), N = e => {
     I.current = e, _(e)
   };
   o.useEffect(() => {
-    null != C && (null == h ? P(null) : P(f(h, g, C)))
-  }, [C, h, g]);
+    null != y && (null == h ? P(null) : P(p(h, g, y)))
+  }, [y, h, g]);
   let A = (0, c.Z)(e => {
       N(e.contentRect)
     }),
@@ -56,17 +56,17 @@ function v(e) {
   let k = e => {
       j(e.clientX)
     },
-    L = o.useCallback(e => {
+    M = o.useCallback(e => {
       let {
         key: t
       } = e;
-      t === d.mR.ArrowLeft && null != S ? (e.preventDefault(), e.stopPropagation(), S()) : t === d.mR.ArrowRight && null != y && (e.preventDefault(), e.stopPropagation(), y())
-    }, [S, y]),
-    M = null != x && null != C ? p(x, C, g) : 0,
-    V = (0, u.yv)(M),
-    Z = null != C ? C.right - f(t / 100 * g, g, C) : null,
-    F = null != x && null != C ? C.right - x : null,
-    B = null != D && null != C ? C.right - D : null;
+      t === d.mR.ArrowLeft && null != C ? (e.preventDefault(), e.stopPropagation(), C()) : t === d.mR.ArrowRight && null != S && (e.preventDefault(), e.stopPropagation(), S())
+    }, [C, S]),
+    L = null != x && null != y ? f(x, y, g) : 0,
+    V = (0, u.yv)(L),
+    Z = null != y ? y.right - p(t / 100 * g, g, y) : null,
+    F = null != x && null != y ? y.right - x : null,
+    B = null != D && null != y ? y.right - D : null;
   return (0, r.jsxs)("div", {
     className: m.cont,
     ref: w,
@@ -76,7 +76,7 @@ function v(e) {
       }),
       ignoreKeyPress: true,
       onClick: e => {
-        l && null != b && b(p(e.clientX, e.currentTarget.getBoundingClientRect(), g))
+        l && null != b && b(f(e.clientX, e.currentTarget.getBoundingClientRect(), g))
       },
       onMouseEnter: e => {
         l && (null != w.current && N(w.current.getBoundingClientRect()), R(true), k(e))
@@ -87,7 +87,7 @@ function v(e) {
       onMouseMove: e => {
         l && T && k(e)
       },
-      onKeyDown: L,
+      onKeyDown: M,
       tabIndex: l ? true : false,
       focusProps: {
         offset: {
