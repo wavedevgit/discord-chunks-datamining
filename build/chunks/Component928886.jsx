@@ -47,11 +47,11 @@ function I(e) {
     isGift: w,
     selectedGiftStyle: L,
     giftRecipient: x
-  } = (0, h.wD)(), M = (null == R ? true : R.productLine) === E.POd.COLLECTIBLES, k = (null == R ? true : R.productLine) === E.POd.SOCIAL_LAYER_GAME_ITEM, j = w && (0, p.pO)(x) && S === g.h8.CONFIRM && null != L && !M && !k, U = null != n && null != S, G = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], B = null != S && !G.includes(S) && null != T, Z = (0, u.N)(a), F = !w && null != Z && null != T && b.nG[Z.trial_id].skus.includes(T), V = (0, c.N)(), H = null == V || null == (t = V.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === T), Y = !w && null != V && null != T && H;
+  } = (0, h.wD)(), M = (null == R ? true : R.productLine) === E.POd.COLLECTIBLES, j = (null == R ? true : R.productLine) === E.POd.SOCIAL_LAYER_GAME_ITEM, k = w && (0, p.pO)(x) && S === g.h8.CONFIRM && null != L && !M && !j, U = null != n && null != S, G = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], B = null != S && !G.includes(S) && null != T, Z = (0, u.N)(a), F = !w && null != Z && null != T && b.nG[Z.trial_id].skus.includes(T), V = (0, c.N)(), H = null == V || null == (t = V.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === T), Y = !w && null != V && null != T && H;
   return i.useMemo(() => {
     if (null == S) return;
     let e = null;
-    return j ? e = (0, r.jsxs)("div", {
+    return k ? e = (0, r.jsxs)("div", {
       className: O.container,
       children: [(0, r.jsx)(d.Z, {
         defaultAnimationState: l.SR.LOOP,
@@ -78,5 +78,5 @@ function I(e) {
       enablePremiumBrandRefresh: P,
       isDisplayingWowMomentConfirmation: D
     })), e
-  }, [L, I, C, n, A, T, S, F, Y, j, B, U, N, w, x, P, D])
+  }, [L, I, C, n, A, T, S, F, Y, k, B, U, N, w, x, P, D])
 }

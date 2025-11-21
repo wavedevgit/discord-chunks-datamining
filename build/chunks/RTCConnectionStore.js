@@ -86,7 +86,7 @@ function N(e, t) {
       lossRate: e
     }))
   }), a.on(l.z.Speaking, (e, t) => {
-    null == O || O.setSpeaking(e, t)
+    null == v || v.setSpeaking(e, t)
   }), a.on(l.z.Flags, (e, t) => {
     s.Z.wait(() => {
       s.Z.dispatch({
@@ -146,23 +146,32 @@ function N(e, t) {
         userIds: e
       })
     })
-  }), O = new c.Z(f.default.getId(), t), v = null, I = false, T = false, a
+  }), v = new c.Z(f.default.getId(), t), y = null, I = false, T = false, a
 }
 
 function R() {
+  var e;
   if (null == r) returnfalse;
-  v = r.getDuration(), Chunk570140.Z.dispatch({
+  y = {
+    duration: r.getDuration(),
+    mediaSessionId: null != (e = r.getMediaSessionId()) ? module : null,
+    rtcConnectionId: r.getRTCConnectionId(),
+    wasEverMultiParticipant: I,
+    wasEverRtcConnected: T,
+    voiceStateAnalytics: v,
+    channelId: r.channelId
+  }, Chunk570140.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
     mediaEngineConnectionId: r.getMediaEngineConnectionId()
-  }), r.destroy(), r = null, O = null, A = false
+  }), r.destroy(), r = null, v = null, A = false
 }
 
 function P(e) {
-  return i = e.sessionId, b = null, y = null, R(), false
+  return i = e.sessionId, b = null, O = null, R(), false
 }
 
 function D() {
-  i = null, b = null, y = null, R()
+  i = null, b = null, O = null, R()
 }
 
 function w(e) {
@@ -171,11 +180,11 @@ function w(e) {
   } = e;
   return t.reduce((e, t) => {
     var n, a, o;
-    if (null == O || O.updateVoiceStates(t.userId, t.channelId), I = I || (null != (n = null == O ? true : O.getStats().max_voice_state_count) ? n : 0) > 1, f.default.getId() !== t.userId) return e;
-    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? R() : (r.setNextChannelId(t.channelId), A = true, C = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || R(), null != t.channelId && (b = null, y = null, r = N(t.guildId, t.channelId), I = (null != (a = null == O ? true : O.getStats().max_voice_state_count) ? a : 0) > 1)) : t.guildId === r.guildId && ((null == u.default.getAwaitingRemoteSessionInfo() || null == u.default.getRemoteSessionId()) && (b = r.channelId), R());
+    if (null == v || v.updateVoiceStates(t.userId, t.channelId), I = I || (null != (n = null == v ? true : v.getStats().max_voice_state_count) ? n : 0) > 1, f.default.getId() !== t.userId) return e;
+    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? R() : (r.setNextChannelId(t.channelId), A = true, C = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || R(), null != t.channelId && (b = null, O = null, r = N(t.guildId, t.channelId), I = (null != (a = null == v ? true : v.getStats().max_voice_state_count) ? a : 0) > 1)) : t.guildId === r.guildId && ((null == u.default.getAwaitingRemoteSessionInfo() || null == u.default.getRemoteSessionId()) && (b = r.channelId), R());
     else {
       if (t.sessionId !== i || null == t.channelId) return e;
-      b = null, y = null, r = N(t.guildId, t.channelId), I = (null != (o = null == O ? true : O.getStats().max_voice_state_count) ? o : 0) > 1
+      b = null, O = null, r = N(t.guildId, t.channelId), I = (null != (o = null == v ? true : v.getStats().max_voice_state_count) ? o : 0) > 1
     }
     returntrue
   }, false)
@@ -191,10 +200,10 @@ function x() {
 }
 
 function M() {
-  y = null
+  O = null
 }
 
-function k(e) {
+function j(e) {
   let {
     guild: t
   } = e;
@@ -202,7 +211,7 @@ function k(e) {
   R()
 }
 
-function j(e) {
+function k(e) {
   let {
     channelId: t
   } = e;
@@ -295,10 +304,10 @@ class z extends(a = Chunk442837.ZP.Store) {
     return b
   }
   getLastSessionVoiceChannelId() {
-    return y
+    return O
   }
   setLastSessionVoiceChannelId(e) {
-    y = e
+    O = e
   }
   getGuildId() {
     return null == r ? true : r.guildId
@@ -332,7 +341,10 @@ class z extends(a = Chunk442837.ZP.Store) {
   }
   getDuration() {
     var e;
-    return null != (e = null == r ? true : r.getDuration()) ? module : v
+    return null != (e = null == r ? true : r.getDuration()) ? module : null == y ? true : y.duration
+  }
+  getLastRTCConnectionState() {
+    return y
   }
   getVoiceFilterSpeakingDurationMs() {
     return null == r ? true : r.getVoiceFilterSpeakingDurationMs()
@@ -341,7 +353,7 @@ class z extends(a = Chunk442837.ZP.Store) {
     return null == r ? true : r.getPacketStats()
   }
   getVoiceStateStats() {
-    return null == O ? true : O.getStats()
+    return null == v ? true : v.getStats()
   }
   getWasEverMultiParticipant() {
     return I
@@ -392,10 +404,10 @@ let q = new z(Chunk570140.Z, __OVERLAY__ ? {} : {
   CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: x,
   REMOTE_SESSION_CONNECT: x,
   CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: M,
-  GUILD_DELETE: k,
+  GUILD_DELETE: j,
   CHANNEL_DELETE: U,
   THREAD_DELETE: U,
-  CALL_DELETE: j,
+  CALL_DELETE: k,
   APP_STATE_UPDATE: B,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: W
 });

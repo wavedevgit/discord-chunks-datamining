@@ -9,7 +9,7 @@ require.d(exports, {
   Fy: () => eN,
   GI: () => ew,
   Gd: () => eW,
-  I: () => ej,
+  I: () => ek,
   J2: () => W,
   Jf: () => eT,
   KX: () => ex,
@@ -21,7 +21,7 @@ require.d(exports, {
   SU: () => e1,
   Ut: () => e4,
   Wi: () => eh,
-  _Q: () => ek,
+  _Q: () => ej,
   _s: () => eL,
   aV: () => eX,
   bA: () => ed,
@@ -639,7 +639,7 @@ var eM = function(e) {
   return e[e.UNACCEPTED = 0] = "UNACCEPTED", e[e.ACCEPTED = 1] = "ACCEPTED", e[e.IN_PROGRESS = 2] = "IN_PROGRESS", e[e.COMPLETED = 3] = "COMPLETED", e[e.CLAIMED = 4] = "CLAIMED", e
 }({});
 
-function ek(e) {
+function ej(e) {
   var t, n, r;
   let i = (null == (t = e.userStatus) ? true : t.enrolledAt) != null,
     a = (null == (n = e.userStatus) ? true : n.completedAt) != null,
@@ -648,7 +648,7 @@ function ek(e) {
   return o ? 4 : a ? 3 : s && i ? 2 : 1 * !!i
 }
 
-function ej(e) {
+function ek(e) {
   let t = (0, c.e7)([m.default], () => m.default.locale),
     {
       percentComplete: n
@@ -670,7 +670,7 @@ function eU(e, t, n) {
   var r, i;
   let a = eI(e),
     o = (0, P.b7)(e),
-    s = (0, j.DD)({
+    s = (0, k.DD)({
       quest: e,
       taskDetails: a,
       location: G.dr.QUEST_HOME_DESKTOP,
@@ -823,7 +823,7 @@ function eY(e) {
     popoutTargetElementRef: s,
     onGameSheetOpened: l,
     onGameSheetClosed: c
-  } = e, u = eg(r.config.rewardsConfig.rewardsExpireAt), d = eI(r), f = eT(r), _ = (null == (t = r.userStatus) ? true : t.completedAt) != null, p = (null == (n = r.userStatus) ? true : n.enrolledAt) != null, h = d.percentComplete > 0, m = eO(r), g = (0, j.DD)({
+  } = e, u = eg(r.config.rewardsConfig.rewardsExpireAt), d = eI(r), f = eT(r), _ = (null == (t = r.userStatus) ? true : t.completedAt) != null, p = (null == (n = r.userStatus) ? true : n.enrolledAt) != null, h = d.percentComplete > 0, m = eO(r), g = (0, k.DD)({
     quest: r,
     location: G.dr.QUESTS_BAR,
     questContent: w.jn.QUEST_BAR_V2,

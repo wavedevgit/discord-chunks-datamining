@@ -2,14 +2,16 @@
 /** chunk id: 98763, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  b: () => u
+  b: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk405283 = require("./405283.jsx"),
   Chunk409738 = require("./409738.js");
 
-function s(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,20 +20,20 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      c(e, t, n[t])
     })
   }
   return e
 }
 
-function c(e) {
+function d(e) {
   let t = e.controls,
     n = {};
   return null != t && Object.entries(t).forEach(e => {
@@ -40,31 +42,39 @@ function c(e) {
   }), n
 }
 
-function u(e) {
+function f(e) {
   let {
-    story: t
-  } = e, n = i.useMemo(() => c(t), [t]), [s, u] = i.useState(n);
+    story: t,
+    controlsLayout: n
+  } = e, a = i.useMemo(() => d(t), [t]), [c, f] = i.useState(a);
   i.useEffect(() => {
-    u(c(t))
+    f(d(t))
   }, [t]);
-  let d = () => {
-    let e = t.component;
-    return (0, r.jsx)(e, l({}, s))
-  };
+  let _ = () => {
+      let e = t.component;
+      return (0, r.jsx)(e, u({}, c))
+    },
+    p = "hidden" !== n && null != t.controls;
   return (0, r.jsxs)("div", {
-    className: o.main,
+    className: o()(l.main, {
+      [l.mainBottomLayout]: "bottom" === n,
+      [l.mainRightLayout]: "right" === n
+    }),
     children: [(0, r.jsx)("div", {
-      className: o.canvas,
+      className: l.canvas,
       children: (0, r.jsx)("div", {
-        className: o.storyContent,
-        children: d()
+        className: l.storyContent,
+        children: _()
       })
-    }), null != t.controls && (0, r.jsx)("div", {
-      className: o.controls,
-      children: (0, r.jsx)(a.a, {
+    }), p && null != t.controls && (0, r.jsx)("div", {
+      className: o()(l.controls, {
+        [l.controlsBottom]: "bottom" === n,
+        [l.controlsRight]: "right" === n
+      }),
+      children: (0, r.jsx)(s.a, {
         controls: t.controls,
-        props: s,
-        onPropsChange: u
+        props: c,
+        onPropsChange: f
       })
     })]
   })

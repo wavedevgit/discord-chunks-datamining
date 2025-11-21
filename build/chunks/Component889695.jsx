@@ -60,10 +60,10 @@ function A(e) {
   })), D = R === y.z.SERVER_SHOP, w = (0, o.e7)([f.ZP], () => null != n ? f.ZP.getTrueMember(t, n.id) : null), L = null != T ? A[(0, u.lV)(T)] : null, [x, M] = i.useState(() => {
     let e = null == P ? [] : g.default.keys(P);
     return null != L && e.push(L.id), e
-  }), k = i.useRef(T);
+  }), j = i.useRef(T);
   i.useEffect(() => {
     let e = {},
-      t = k.current;
+      t = j.current;
     if (null != t && null != R) {
       for (let t of x) {
         let n = A[t];
@@ -74,11 +74,11 @@ function A(e) {
       })
     }
   }, [x, R, A]);
-  let j = null != T && null != n && null != w ? N.find(e => w.roles.includes(e.id)) : true,
+  let k = null != T && null != n && null != w ? N.find(e => w.roles.includes(e.id)) : true,
     U = i.useMemo(() => null != T && null != n ? N.filter(e => !(0, d.fI)(e)).filter(e => {
       var t;
       return !D || (null == (t = e.tags) ? true : t.subscription_listing_id) != null
-    }).filter(e => (null == j ? true : j.id) === e.id || m.r6(T, n.id, j, e)) : [], [T, n, D, j, N]),
+    }).filter(e => (null == k ? true : k.id) === e.id || m.r6(T, n.id, k, e)) : [], [T, n, D, k, N]),
     G = i.useMemo(() => {
       let e = Array.from(U).map(e => ({
         leading: C(e),

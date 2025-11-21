@@ -4,7 +4,7 @@
 require.r(exports), require.d(exports, {
   Playground: () => M,
   PlaygroundStore: () => w
-}), require("./361932.js"), require("./187205.js");
+}), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk657707 = require("./657707.js"),
@@ -71,13 +71,43 @@ function D(e, t) {
 }
 let w = (0, Chunk972959.H)(() => ({
   selectedCollection: null,
-  selectedStory: null
+  selectedStory: null,
+  controlsLayout: "right"
 }));
 
 function L() {
   let e = (0, Chunk53432.Z)(),
     t = (0, Chunk606669.Z)(),
-    n = (0, Chunk74869.Z)();
+    n = (0, Chunk74869.Z)(),
+    a = w.useField("controlsLayout"),
+    o = Chunk473749.useMemo(() => (0, Chunk54381.jsxs)(Chunk828214.kS, {
+      label: "Controls",
+      children: [(0, Chunk54381.jsx)(Chunk828214.k5, {
+        id: "controls-right",
+        group: "controls-layout",
+        label: "Right Side",
+        action: () => w.setState({
+          controlsLayout: "right"
+        }),
+        checked: "right" === Chunk657707
+      }), (0, Chunk54381.jsx)(Chunk828214.k5, {
+        id: "controls-bottom",
+        group: "controls-layout",
+        label: "Bottom",
+        action: () => w.setState({
+          controlsLayout: "bottom"
+        }),
+        checked: "bottom" === Chunk657707
+      }), (0, Chunk54381.jsx)(Chunk828214.k5, {
+        id: "controls-hidden",
+        group: "controls-layout",
+        label: "Hidden",
+        action: () => w.setState({
+          controlsLayout: "hidden"
+        }),
+        checked: "hidden" === Chunk657707
+      })]
+    }, "controls-layout"), [Chunk657707]);
   return (0, Chunk54381.jsxs)(Chunk830447.v, {
     onSelect: Chunk231338.dG,
     navId: "playground-settings-menu",
@@ -86,7 +116,7 @@ function L() {
     children: [(0, Chunk54381.jsx)(Chunk828214.sN, {
       id: "appearance",
       label: Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
-      children: module.filter(e => null != e)
+      children: [...module.filter(e => null != e), Chunk793030]
     }), (0, Chunk54381.jsx)(Chunk828214.sN, {
       id: "accessibility",
       label: Chunk388032.intl.string(Chunk388032.t.G0neg7),
@@ -123,13 +153,13 @@ function M(e) {
   var t;
   let {
     configs: n
-  } = e, c = w.useField("selectedCollection"), u = w.useField("selectedStory"), f = i.useMemo(() => n.flatMap(e => e.collections), [n]), {
-    collection: m,
-    group: E,
-    story: b
+  } = e, c = w.useField("selectedCollection"), u = w.useField("selectedStory"), f = w.useField("controlsLayout"), m = i.useMemo(() => n.flatMap(e => e.collections), [n]), {
+    collection: E,
+    group: b,
+    story: y
   } = i.useMemo(() => {
     var e;
-    let t = null != c ? f.find(e => e.id === c) : f[0];
+    let t = null != c ? m.find(e => e.id === c) : m[0];
     if (null == t) return {
       collection: null,
       group: null,
@@ -142,18 +172,18 @@ function M(e) {
       group: n,
       story: r
     }
-  }, [c, u, f]), y = e => {
+  }, [c, u, m]), S = e => {
     w.setState({
       selectedCollection: e,
       selectedStory: null
     })
-  }, S = e => {
+  }, A = e => {
     w.setState({
       selectedStory: e
     })
-  }, A = null != (t = null == m ? true : m.name) ? t : "Design System", N = null == b ? true : b.name, R = () => {
-    if (null == m) return;
-    let e = null != b ? "dev://playground/".concat(m.id, "/").concat(b.id) : "dev://playground/".concat(m.id);
+  }, N = null != (t = null == E ? true : E.name) ? t : "Design System", R = null == y ? true : y.name, P = () => {
+    if (null == E) return;
+    let e = null != y ? "dev://playground/".concat(E.id, "/").concat(y.id) : "dev://playground/".concat(E.id);
     (0, O.JG)(e, () => (0, _.CF)({
       id: "playground-link-copied",
       message: "Copied playground link",
@@ -164,7 +194,7 @@ function M(e) {
     className: C.root,
     children: [(0, r.jsx)("div", {
       className: C.group,
-      children: f.map(e => {
+      children: m.map(e => {
         var t;
         return (0, r.jsx)(l.a, {
           children: (0, r.jsx)(p.u, {
@@ -172,8 +202,8 @@ function M(e) {
             text: "".concat(e.name, " Design System"),
             children: (0, r.jsx)(d.L, {
               name: e.name,
-              selected: (null != c ? c : null == (t = f[0]) ? true : t.id) === e.id,
-              onClick: () => y(e.id)
+              selected: (null != c ? c : null == (t = m[0]) ? true : t.id) === e.id,
+              onClick: () => S(e.id)
             })
           })
         }, e.id)
@@ -182,29 +212,29 @@ function M(e) {
       className: C.content,
       children: [(0, r.jsxs)(g.ZP, {
         className: C.header,
-        children: [null != A ? (0, r.jsx)(g.ZP.Title, {
-          children: A
-        }) : null, null != N ? (0, r.jsxs)(r.Fragment, {
-          children: [null != A ? (0, r.jsx)(g.ZP.Caret, {
+        children: [null != N ? (0, r.jsx)(g.ZP.Title, {
+          children: N
+        }) : null, null != R ? (0, r.jsxs)(r.Fragment, {
+          children: [null != N ? (0, r.jsx)(g.ZP.Caret, {
             className: C.headerDivider
           }) : null, (0, r.jsx)(g.ZP.Title, {
-            children: N
+            children: R
           })]
-        }) : null, (null == b ? true : b.docs) != null ? (0, r.jsxs)(r.Fragment, {
+        }) : null, (null == y ? true : y.docs) != null ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(g.ZP.Divider, {
             className: C.headerDivider
           }), (0, r.jsx)(g.ZP.Title, {
             children: (0, r.jsx)(s.Anchor, {
-              href: b.docs,
+              href: y.docs,
               children: "Docs"
             })
           })]
-        }) : null, null != m ? (0, r.jsx)(h.hU, {
+        }) : null, null != E ? (0, r.jsx)(h.hU, {
           size: "sm",
           "aria-label": "Copy Link",
           variant: "icon-only",
           icon: a.TIy,
-          onClick: R
+          onClick: P
         }) : null, (0, r.jsx)("div", {
           className: C.headerRight,
           children: (0, r.jsx)(x, {})
@@ -214,16 +244,17 @@ function M(e) {
         children: [(0, r.jsx)(o.zJl, {
           fade: true,
           className: C.sidebar,
-          children: null != m ? (0, r.jsx)(v.N, {
-            groups: m.groups,
+          children: null != E ? (0, r.jsx)(v.N, {
+            groups: E.groups,
             selectedStory: u,
-            onStorySelect: S
+            onStorySelect: A
           }) : null
         }), (0, r.jsx)("div", {
           className: C.content,
-          children: null != b && null != E ? (0, r.jsx)(I.b, {
-            story: b,
-            groupTitle: E.title
+          children: null != y && null != b ? (0, r.jsx)(I.b, {
+            story: y,
+            groupTitle: b.title,
+            controlsLayout: f
           }) : null
         })]
       })]

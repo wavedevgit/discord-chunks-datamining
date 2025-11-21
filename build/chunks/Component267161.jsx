@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 267161, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => k,
-  useAppSidebarState: () => D
+  default: () => V,
+  useAppSidebarState: () => B
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,6 +11,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk663042 = require("./663042.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk833484 = require("./833484.jsx"),
+  Chunk812206 = require("./812206.js"),
+  Chunk870822 = require("./870822.js"),
   Chunk174556 = require("./174556.js"),
   Chunk99977 = require("./99977.js"),
   Chunk919842 = require("./919842.jsx"),
@@ -30,31 +33,33 @@ var Chunk54381 = require("./54381.js"),
   Chunk522474 = require("./522474.js"),
   Chunk141321 = require("./141321.jsx"),
   Chunk984802 = require("./984802.js"),
+  Chunk695346 = require("./695346.js"),
   Chunk906467 = require("./906467.js"),
+  Chunk695103 = require("./695103.js"),
   Chunk451478 = require("./451478.js"),
   Chunk998502 = require("./998502.js"),
   Chunk228488 = require("./228488.js"),
   Chunk950796 = require("./950796.jsx"),
   Chunk741764 = require("./741764.js"),
   Chunk82504 = require("./82504.js");
-let D = (0, Chunk663042.U)(() => ({
+let B = (0, Chunk663042.U)(() => ({
   isOpen: true
 }));
 
-function M(e) {
+function H(e) {
   let {
     withFastTravel: t,
     quickSwitcherInsteadOfTitle: n,
     focusSectionProps: i
   } = e;
-  return n ? (0, r.jsx)(_.R, {
+  return n ? (0, r.jsx)(O.R, {
     focusSectionProps: i
-  }) : (0, r.jsx)(I.d, {
+  }) : (0, r.jsx)(T.d, {
     withFastTravel: t,
     focusSectionProps: i
   })
 }
-let k = Chunk473749.memo(function() {
+let V = Chunk473749.memo(function() {
   Chunk473749.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
@@ -70,26 +75,26 @@ let k = Chunk473749.memo(function() {
     location: "AppTitleBar"
   }), {
     backForwardButtons: s,
-    titlebarIconSize: _
+    titlebarIconSize: O
   } = (0, Chunk719961.T)({
     location: "AppTitleBar"
   }), {
-    hasBugReporterAccess: I
+    hasBugReporterAccess: T
   } = Chunk174556.Z.useExperiment({
     location: "HeaderBar"
   }, {
     autoTrackExposure: false
   }), {
-    enabled: D
+    enabled: B
   } = Chunk99977.c.useConfig({
     location: "AppTitleBar"
-  }), k = (0, Chunk442837.e7)([Chunk906467.Z], () => Chunk906467.Z.isDeveloper), U = null !== module && exports === Chunk821020.u3.TITLE_BAR_LEFT, G = null === module;
+  }), V = (0, Chunk442837.e7)([Chunk906467.Z], () => Chunk906467.Z.isDeveloper), F = (0, Chunk442837.e7)([Chunk695103.Z, Chunk812206.Z], () => Chunk695346.Sb.getSetting() && null != Chunk695103.Z.testModeApplicationId && null != Chunk812206.Z.getApplication(Chunk695103.Z.testModeApplicationId) && (0, Chunk870822.Z)(Chunk812206.Z.getApplication(Chunk695103.Z.testModeApplicationId))), z = null !== module && exports === Chunk821020.u3.TITLE_BAR_LEFT, Y = null === module;
   Chunk473749.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
-  let B = (0, Chunk984802.Ll)(),
-    H = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
-    V = function(e) {
+  let W = (0, Chunk984802.Ll)(),
+    q = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
+    K = function(e) {
       let {
         showBackForwardButtons: t,
         showNotificationsInbox: n,
@@ -99,42 +104,42 @@ let k = Chunk473749.memo(function() {
       return i.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "NOTIFICATIONS_INBOX" : r ? "TITLEBAR_FAST_TRAVEL" : l ? "RECENTS" : "HELP", [t, n, r, l])
     }({
       showBackForwardButtons: Chunk663042,
-      showNotificationsInbox: U,
+      showNotificationsInbox: z,
       titlebarFastTravel: require,
-      showRecentsButton: G
+      showRecentsButton: Y
     });
-  if (H) return null;
-  let F = a()(Chunk82504.button, {
+  if (q) return null;
+  let Q = a()(Chunk82504.button, {
     [Chunk82504.smallButton]: "sm" === Chunk257966
   });
   return (0, Chunk54381.jsx)(Chunk481060.Wdt, {
     children: e => (0, r.jsx)(c.f6W, {
-      theme: B,
+      theme: W,
       children: t => {
         var i, a;
-        return (0, r.jsx)(w.TF, {
+        return (0, r.jsx)(k.TF, {
           className: t,
           leading: (0, r.jsxs)(r.Fragment, {
-            children: [s && (0, r.jsx)(m.Z, {
-              firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === V ? e : true
-            }), U && (0, r.jsx)(S.Z, {
-              focusSectionProps: "NOTIFICATIONS_INBOX" === V ? e : true
+            children: [s && (0, r.jsx)(E.Z, {
+              firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === K ? e : true
+            }), z && (0, r.jsx)(j.Z, {
+              focusSectionProps: "NOTIFICATIONS_INBOX" === K ? e : true
             })]
           }),
-          title: (0, r.jsx)(M, {
+          title: (0, r.jsx)(H, {
             withFastTravel: n,
             quickSwitcherInsteadOfTitle: l,
-            focusSectionProps: "TITLEBAR_FAST_TRAVEL" === V ? e : true
+            focusSectionProps: "TITLEBAR_FAST_TRAVEL" === K ? e : true
           }),
           trailing: (0, r.jsxs)(r.Fragment, {
-            children: [D && (0, r.jsx)(p.Z, {
-              className: F
-            }), (0, r.jsx)(b.Z, {
-              className: F
-            }), (0, r.jsx)(f.Z, {
+            children: [B && (0, r.jsx)(g.Z, {
+              className: Q
+            }), (0, r.jsx)(y.Z, {
+              className: Q
+            }), (0, r.jsx)(m.Z, {
               canShowReminder: true,
-              className: F
-            }), G && (0, r.jsx)(N.Z, (i = function(e) {
+              className: Q
+            }), Y && (0, r.jsx)(x.Z, (i = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -151,8 +156,8 @@ let k = Chunk473749.memo(function() {
                 })
               }
               return e
-            }({}, "RECENTS" === V ? e : {}), a = a = {
-              className: F
+            }({}, "RECENTS" === K ? e : {}), a = a = {
+              className: Q
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -162,18 +167,20 @@ let k = Chunk473749.memo(function() {
               return n
             })(Object(a)).forEach(function(e) {
               Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
-            }), i)), I ? (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(y.H, {
-                focusSectionProps: "HELP" === V ? e : true,
-                className: F
-              }), k ? (0, r.jsx)(E.M, {
-                className: F
+            }), i)), T ? (0, r.jsxs)(r.Fragment, {
+              children: [(0, r.jsx)(C.H, {
+                focusSectionProps: "HELP" === K ? e : true,
+                className: Q
+              }), V ? (0, r.jsx)(v.M, {
+                className: Q
               }) : null]
-            }) : (0, r.jsx)(O.Z, {
-              focusSectionProps: "HELP" === V ? e : true,
-              className: F
-            }), (0, r.jsx)(v.Z, {
-              className: F
+            }) : (0, r.jsx)(I.Z, {
+              focusSectionProps: "HELP" === K ? e : true,
+              className: Q
+            }), F && (0, r.jsx)(u.Z, {
+              className: Q
+            }), (0, r.jsx)(S.Z, {
+              className: Q
             })]
           })
         })

@@ -18,25 +18,35 @@ var Chunk473749 = require("./473749.js"),
 
 function d(e) {
   var t;
-  let {
-    allowedFlows: n = ["rpc", "web"]
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, u = (0, c.t)(e), d = (0, a.t)(null == u ? true : u.id, "AUTHORIZE_REQUEST"), f = n.includes("rpc") && d, _ = n.includes("web") && (null == u ? true : u.connectionEntrypointUrl) != null, p = f ? "rpc" : _ ? "web" : null, h = f || _, {
-    token: m,
-    fetched: g
-  } = (0, l.o)(null != (t = null == u ? true : u.parentId) ? t : null == u ? true : u.id), E = g && null != m;
+  let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
+    {
+      allowedFlows: u = ["rpc", "web"],
+      debug: d = false
+    } = n,
+    f = (0, c.t)(e),
+    _ = (0, a.t)(null == f ? true : f.id, "AUTHORIZE_REQUEST"),
+    p = u.includes("rpc") && _,
+    h = u.includes("web") && (null == f ? true : f.connectionEntrypointUrl) != null,
+    m = p ? "rpc" : h ? "web" : null,
+    g = p || h,
+    {
+      token: E,
+      fetched: b
+    } = (0, l.o)(null != (t = null == f ? true : f.parentId) ? t : null == f ? true : f.id),
+    y = b && null != E;
   return {
-    fetched: g,
-    hasAlreadyLinked: E,
-    canStartAuthorization: h,
+    fetched: b,
+    hasAlreadyLinked: y,
+    canStartAuthorization: g,
     startAuthorization: r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-      if (null == u) return null;
-      if (f) {
+      if (null == f) return null;
+      if (p) {
         var t;
-        return o.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", e => e.socket.application.id === u.id, {}), null == (t = e.onConfirm) || t.call(e), "rpc"
+        return o.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", e => e.socket.application.id === f.id, {}), null == (t = e.onConfirm) || t.call(e), "rpc"
       }
-      if (_) {
-        let t = u.connectionEntrypointUrl;
+      if (h) {
+        let t = f.connectionEntrypointUrl;
         return (0, s.q)({
           href: t,
           onConfirm: () => {
@@ -46,8 +56,14 @@ function d(e) {
         }), "web"
       }
       return null
-    }, [f, _, u]),
-    connectionApp: u,
-    preferredFlow: p
+    }, [p, h, f]),
+    connectionApp: f,
+    preferredFlow: m,
+    debug: d ? {
+      isSubscribedToAuthorizeRequest: _,
+      oauth2Token: E,
+      hasConnectionEntrypointUrl: (null == f ? true : f.connectionEntrypointUrl) != null,
+      validFlows: [p ? "rpc" : null, h ? "web" : null].filter(e => null != e)
+    } : true
   }
 }

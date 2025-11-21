@@ -89,7 +89,7 @@ function M(e, t, n, r) {
   0 !== s && (n ? false === s && (v.push(a), L()) : (s > 0 && v.splice(s, 1), v.unshift(a), L())), !n && T && p.Z.resume(), D()
 }
 
-function k(e, t) {
+function j(e, t) {
   let n = (0, _.Tu)(e, t),
     r = I.indexOf(n);
   false !== r && I.splice(r, 1);
@@ -97,7 +97,7 @@ function k(e, t) {
   false !== i && (v.splice(i, 1), D()), L()
 }
 
-function j(e) {
+function k(e) {
   let {
     applicationId: t,
     branchId: n
@@ -131,7 +131,7 @@ function Z(e) {
     applicationId: t,
     branchId: n
   } = e;
-  k(t, n)
+  j(t, n)
 }
 
 function F(e) {
@@ -206,7 +206,7 @@ function W(e) {
           application_id: t,
           branch_id: n
         } = e;
-        k(t, n)
+        j(t, n)
       }
     }
   }
@@ -265,7 +265,7 @@ class Q extends(r = Chunk442837.ZP.Store) {
 }
 b(Q, "displayName", "DispatchManagerStore");
 let J = new Q(Chunk570140.Z, {
-  DISPATCH_APPLICATION_INSTALL: j,
+  DISPATCH_APPLICATION_INSTALL: k,
   DISPATCH_APPLICATION_UPDATE: B,
   DISPATCH_APPLICATION_UNINSTALL: U,
   DISPATCH_APPLICATION_CANCEL: Z,

@@ -2,13 +2,13 @@
 /** chunk id: 744048, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 }), require("./539854.js"), require("./388685.js");
-var Chunk54381 = require("./54381.js");
-require("./473749.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk907459 = require("./907459.jsx"),
+  Chunk90110 = require("./90110.jsx"),
   Chunk514361 = require("./514361.js"),
   Chunk662975 = require("./662975.js"),
   Chunk724145 = require("./724145.jsx"),
@@ -23,41 +23,42 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk223399 = require("./223399.js");
-let O = function(e) {
+let v = function(e) {
   let {
     mobile: t
-  } = e, n = (0, i.e7)([p.Z], () => p.Z.getLayers().includes(E.S9g.USER_SETTINGS)), O = (0, i.e7)([h.default], () => m.ZP.canUseClientThemes(h.default.getCurrentUser())), v = (0, i.e7)([s.Z], () => s.Z.isCoachmark), I = (0, l.g)(), {
-    activePanel: T,
-    metadata: S
-  } = (0, g.oq)(), A = [];
-  !n && null == T && (v && !O && A.push(a.z.CLIENT_THEMES_COACHMARK), I && A.push(a.z.CUSTOM_THEME_COACHMARK));
-  let [C, N] = (0, _.US)(A, b.R.SIDEBAR, true), R = C === a.z.CLIENT_THEMES_COACHMARK, P = C === a.z.CUSTOM_THEME_COACHMARK;
-  if ((0, u.HA)(I, C), n) return null;
-  let D = T === g.wh.CLIENT_THEMES || R,
-    w = T === g.wh.APP_ICON,
-    L = T === g.wh.CUSTOM_THEME || P;
-  if (!(D || w || L)) return null;
-  let x = () => (0, r.jsxs)(r.Fragment, {
-    children: [D && (0, r.jsx)(c.Z, {
-      markAsDismissed: R ? N : () => {
-        (0, f.Q3)(a.z.CLIENT_THEMES_COACHMARK, {
-          dismissAction: b.L.INDIRECT_ACTION,
+  } = e, n = (0, i.e7)([h.Z], () => h.Z.getLayers().includes(b.S9g.USER_SETTINGS)), v = (0, i.e7)([m.default], () => g.ZP.canUseClientThemes(m.default.getCurrentUser())), I = (0, i.e7)([l.Z], () => l.Z.isCoachmark), T = (0, c.g)(), {
+    activePanel: S,
+    metadata: A
+  } = (0, E.oq)(), C = [];
+  !n && null == S && (I && !v && C.push(a.z.CLIENT_THEMES_COACHMARK), T && C.push(a.z.CUSTOM_THEME_COACHMARK));
+  let [N, R] = (0, p.US)(C, y.R.SIDEBAR, true), P = N === a.z.CLIENT_THEMES_COACHMARK, D = N === a.z.CUSTOM_THEME_COACHMARK;
+  if ((0, d.HA)(T, N), n) return null;
+  let w = S === E.wh.CLIENT_THEMES || P,
+    L = S === E.wh.APP_ICON,
+    x = S === E.wh.CUSTOM_THEME || D,
+    M = S === E.wh.APPLICATION_TEST_MODE_DEBUG;
+  if (!(w || L || x || M)) return null;
+  let j = () => (0, r.jsxs)(r.Fragment, {
+    children: [w && (0, r.jsx)(u.Z, {
+      markAsDismissed: P ? R : () => {
+        (0, _.Q3)(a.z.CLIENT_THEMES_COACHMARK, {
+          dismissAction: y.L.INDIRECT_ACTION,
           forceTrack: true
         })
       },
-      showClientThemesCoachmark: R
-    }), w && (0, r.jsx)(o.Z, {
+      showClientThemesCoachmark: P
+    }), L && (0, r.jsx)(o.Z, {
       isCoachmark: false,
-      markAsDismissed: N
-    }), L && (0, r.jsx)(d.Z, {
-      metadata: null != S ? S : {},
-      markAsDismissed: N,
-      isCoachmark: P,
+      markAsDismissed: R
+    }), x && (0, r.jsx)(f.Z, {
+      metadata: null != A ? A : {},
+      markAsDismissed: R,
+      isCoachmark: D,
       isMobile: t
-    })]
+    }), M && (0, r.jsx)(s.Z, {})]
   });
   return t ? (0, r.jsx)("div", {
-    className: y.mobileContainer,
-    children: x()
-  }) : x()
+    className: O.mobileContainer,
+    children: j()
+  }) : j()
 }

@@ -225,7 +225,7 @@ function eg(e, t) {
 }
 async function eE(e) {
   try {
-    if (j.ZP.supportsFeature(B.eRX.CREATE_HOST_ON_ATTACH))
+    if (k.ZP.supportsFeature(B.eRX.CREATE_HOST_ON_ATTACH))
       if (q.size > 0) {
         e_ = "reconcile.getOverlayURL";
         let t = await eT();
@@ -472,17 +472,17 @@ function eM(e) {
   eo.add(t), ew(false, $)
 }
 
-function ek() {
+function ej() {
   eo.clear(), ew(true, $)
 }
 
-function ej(e) {
+function ek(e) {
   let {
     port: t
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "4d06f1019ce3b865ac94c35ded3801f5a7772a8d"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "5fe28e7ae194bed45b88b8b7a66aa2e999378dc1"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {
@@ -563,8 +563,8 @@ function eW(e) {
   setTimeout(() => {
     let e = Math.ceil(t * window.innerWidth),
       r = Math.ceil(n * window.innerHeight),
-      i = (0, k.B)("click", e, r);
-    (0, k.J)(i, e, r)
+      i = (0, j.B)("click", e, r);
+    (0, j.J)(i, e, r)
   }, 50)
 }
 
@@ -670,8 +670,8 @@ let e0 = new e$(Chunk570140.Z, __OVERLAY__ ? {
     OVERLAY_FOCUSED: eG,
     OVERLAY_SET_INPUT_LOCKED: ex,
     OVERLAY_ACTIVATE_REGION: eM,
-    OVERLAY_DEACTIVATE_ALL_REGIONS: ek,
-    RPC_SERVER_READY: ej,
+    OVERLAY_DEACTIVATE_ALL_REGIONS: ej,
+    RPC_SERVER_READY: ek,
     OVERLAY_CALL_PRIVATE_CHANNEL: eU,
     OVERLAY_JOIN_GAME: eY,
     OVERLAY_CRASHED: eB,

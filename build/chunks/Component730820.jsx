@@ -73,7 +73,7 @@ function M(e, t) {
   }), e
 }
 
-function k(e) {
+function j(e) {
   let {
     code: {
       code: t,
@@ -100,7 +100,7 @@ function k(e) {
     })
   })
 }
-class j extends Chunk473749.PureComponent {
+class k extends Chunk473749.PureComponent {
   maskPhoneNumber(e) {
     return null == e ? "" : "".concat("*".repeat(e.length - 4)).concat(e.slice(false))
   }
@@ -189,7 +189,7 @@ class j extends Chunk473749.PureComponent {
           text: Chunk388032.intl.string(Chunk388032.t.qZZUy6)
         })
       });
-      let i = e => e.map(e => (0, r.jsx)(k, {
+      let i = e => e.map(e => (0, r.jsx)(j, {
         code: e
       }, e.code));
       e = (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
@@ -366,7 +366,7 @@ function U(e) {
     togglingSMS: y.Z.togglingSMS,
     hasTOTPEnabled: b.default.hasTOTPEnabled()
   }));
-  return (0, r.jsx)(j, L({
+  return (0, r.jsx)(k, L({
     currentUser: t
   }, n, e))
 }

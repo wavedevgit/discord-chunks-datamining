@@ -109,13 +109,13 @@ let L = function(e) {
     focusProps: N,
     ref: L,
     allowKeybindHint: x
-  } = e, [M, k] = i.useState(false), [j, U] = i.useState(50), G = M || I, B = (0, E.l)(v, "emojiButton", G ? "Hovered" : "Normal"), Z = w(j), F = i.useCallback(() => {
+  } = e, [M, j] = i.useState(false), [k, U] = i.useState(50), G = M || I, B = (0, E.l)(v, "emojiButton", G ? "Hovered" : "Normal"), Z = w(k), F = i.useCallback(() => {
     if (G) return;
     let e = Math.floor(Math.random() * R);
-    k(true), U(e), (0, m.x)(y.qR.EmojiButtonMouseEntered)
-  }, [G, k, U]), V = i.useCallback(() => {
-    k(false)
-  }, [k]), H = i.useCallback(() => (0, m.x)(y.qR.EmojiButtonFocused), []), Y = (0, g.B4)(), [W, K] = (0, h.US)(Y ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), z = W === c.z.TRIAL_NUX_EMOJI_BUTTON, q = !I && z, X = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), Q = i.useRef(null), J = null != L ? L : Q, $ = (0, p.v)(f.S), {
+    j(true), U(e), (0, m.x)(y.qR.EmojiButtonMouseEntered)
+  }, [G, j, U]), V = i.useCallback(() => {
+    j(false)
+  }, [j]), H = i.useCallback(() => (0, m.x)(y.qR.EmojiButtonFocused), []), Y = (0, g.B4)(), [W, K] = (0, h.US)(Y ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), z = W === c.z.TRIAL_NUX_EMOJI_BUTTON, q = !I && z, X = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), Q = i.useRef(null), J = null != L ? L : Q, $ = (0, p.v)(f.S), {
     tooltipsWithKeybinds: ee,
     expressionsCombinedIntoEmojiButton: et
   } = p.n.useConfig({

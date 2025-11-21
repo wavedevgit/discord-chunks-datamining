@@ -62,8 +62,8 @@ function E(e, t, n) {
   "anchorDate" in t && A && !t.isReadOnly && N && (L = t.anchorDate ? I.format("finishRangeSelectionPrompt") : I.format("startRangeSelectionPrompt"));
   let x = (0, s.P)(L),
     M = (0, m.useRef)(false),
-    k = (0, m.useRef)(false),
-    j = (0, m.useRef)(true),
+    j = (0, m.useRef)(false),
+    k = (0, m.useRef)(true),
     {
       pressProps: U,
       isPressed: G
@@ -76,28 +76,28 @@ function E(e, t, n) {
         if ("highlightedRange" in t && !t.anchorDate && ("mouse" === e.pointerType || "touch" === e.pointerType)) {
           if (t.highlightedRange && !R) {
             if ((0, a.KC)(b, t.highlightedRange.start)) {
-              t.setAnchorDate(t.highlightedRange.end), t.setFocusedDate(b), t.setDragging(true), k.current = true;
+              t.setAnchorDate(t.highlightedRange.end), t.setFocusedDate(b), t.setDragging(true), j.current = true;
               return
             } else if ((0, a.KC)(b, t.highlightedRange.end)) {
-              t.setAnchorDate(t.highlightedRange.start), t.setFocusedDate(b), t.setDragging(true), k.current = true;
+              t.setAnchorDate(t.highlightedRange.start), t.setFocusedDate(b), t.setDragging(true), j.current = true;
               return
             }
           }
           let n = () => {
-            t.setDragging(true), j.current = true, t.selectDate(b), t.setFocusedDate(b), M.current = true
+            t.setDragging(true), k.current = true, t.selectDate(b), t.setFocusedDate(b), M.current = true
           };
-          "touch" === e.pointerType ? j.current = setTimeout(n, 200) : n()
+          "touch" === e.pointerType ? k.current = setTimeout(n, 200) : n()
         }
       },
       onPressEnd() {
-        k.current = false, M.current = false, clearTimeout(j.current), j.current = true
+        j.current = false, M.current = false, clearTimeout(k.current), k.current = true
       },
       onPress() {
         "anchorDate" in t || t.isReadOnly || (t.selectDate(b), t.setFocusedDate(b))
       },
       onPressUp(e) {
-        if (!t.isReadOnly && ("anchorDate" in t && j.current && (t.selectDate(b), t.setFocusedDate(b)), "anchorDate" in t))
-          if (k.current) t.setAnchorDate(b);
+        if (!t.isReadOnly && ("anchorDate" in t && k.current && (t.selectDate(b), t.setFocusedDate(b)), "anchorDate" in t))
+          if (j.current) t.setAnchorDate(b);
           else if (t.anchorDate && !M.current) t.selectDate(b), t.setFocusedDate(b);
         else if ("keyboard" !== e.pointerType || t.anchorDate) "virtual" === e.pointerType && (t.selectDate(b), t.setFocusedDate(b));
         else {

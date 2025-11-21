@@ -68,11 +68,11 @@ let I = e => {
       ticking: M
     } = (0, p.Z)(e => {
       w(t => t + e)
-    }), k = i.useRef(v);
+    }), j = i.useRef(v);
     i.useEffect(() => {
-      k.current = v
+      j.current = v
     }), i.useEffect(() => {
-      w(-k.current), S((0, m.H)(E.effects))
+      w(-j.current), S((0, m.H)(E.effects))
     }, [E]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
@@ -81,10 +81,10 @@ let I = e => {
         r > e && (e = r), n.loop && n.start < t && (t = n.start)
       }), C(t), R(e)
     }, [R, T]);
-    let [j, U] = i.useState(false);
+    let [k, U] = i.useState(false);
     return i.useEffect(() => {
-      true === u || l || (L(), w(0)), !l && j && M.current && (L(), w(0)), a && l && !M.current && (x(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? w(d === _.Q.FromStart ? 0 : A) : w(0))
-    }, [l, j, A, a, L, x, M, E.animationType, u, d]), (0, r.jsx)("div", {
+      true === u || l || (L(), w(0)), !l && k && M.current && (L(), w(0)), a && l && !M.current && (x(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? w(d === _.Q.FromStart ? 0 : A) : w(0))
+    }, [l, k, A, a, L, x, M, E.animationType, u, d]), (0, r.jsx)("div", {
       ref: I,
       className: o()(y.profileEffects, {
         [y.hovered]: l && c
@@ -115,7 +115,7 @@ let I = e => {
             animationType: E.animationType,
             ticking: M.current,
             time: D,
-            hasPlayedThrough: j,
+            hasPlayedThrough: k,
             setHasPlayedThrough: U,
             urlQueryString: h,
             maxLoops: n,

@@ -44,8 +44,8 @@ let D = "seenQSTutorial",
   L = 7,
   x = 3,
   M = 100,
-  k = [Chunk212819.h8.USER, Chunk212819.h8.GROUP_DM, Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GUILD, Chunk212819.h8.APPLICATION, Chunk212819.h8.LINK, Chunk212819.h8.IN_APP_NAVIGATION],
-  j = 0,
+  j = [Chunk212819.h8.USER, Chunk212819.h8.GROUP_DM, Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GUILD, Chunk212819.h8.APPLICATION, Chunk212819.h8.LINK, Chunk212819.h8.IN_APP_NAVIGATION],
+  k = 0,
   U = false,
   G = false,
   B = null,
@@ -181,10 +181,10 @@ function Q(e, t) {
     default:
       Z = e
   }
-  if (t !== F) F = t, V = Math.max(t.length, V), j = (0, u.gJ)(u.a8.DOWN, false, Z);
+  if (t !== F) F = t, V = Math.max(t.length, V), k = (0, u.gJ)(u.a8.DOWN, false, Z);
   else {
-    let e = Z[j];
-    null != e && e.type === u.h8.HEADER && (j = (0, u.gJ)(u.a8.DOWN, j, Z))
+    let e = Z[k];
+    null != e && e.type === u.h8.HEADER && (k = (0, u.gJ)(u.a8.DOWN, k, Z))
   }
   es.emitChange()
 }
@@ -195,7 +195,7 @@ function J(e) {
     query: n,
     queryMode: i
   } = e, a = n.trim(), o = null != (t = T.Z.getGuildId()) ? t : true, s = new Set(["user:".concat(h.default.getId())]);
-  null != o && s.add("guild:".concat(o)), W = Date.now(), r = null != r ? r : new u.ZP(et, k, null != i ? M : w, {
+  null != o && s.add("guild:".concat(o)), W = Date.now(), r = null != r ? r : new u.ZP(et, j, null != i ? M : w, {
     frecencyBoosters: true,
     blacklist: s,
     allowSnowflake: true
@@ -236,7 +236,7 @@ function er(e) {
   } = e, o = i.trim();
   if (null == r) returnfalse;
   if (B !== a) {
-    r.setResultTypes(null != a ? [a] : k), r.setLimit(null != a ? M : w);
+    r.setResultTypes(null != a ? [a] : j), r.setLimit(null != a ? M : w);
     let e = null != (t = T.Z.getGuildId()) ? t : true;
     a === u.h8.USER && null != e ? r.setOptions({
       userFilters: {
@@ -257,7 +257,7 @@ function er(e) {
 }
 
 function ei(e) {
-  j = e.selectedIndex
+  k = e.selectedIndex
 }
 
 function ea() {
@@ -302,7 +302,7 @@ class eo extends(i = Chunk442837.ZP.PersistedStore) {
       query: null != r ? r.query : "",
       queryMode: B,
       results: Z,
-      selectedIndex: j,
+      selectedIndex: k,
       seenTutorial: U,
       maxQueryLength: V
     }

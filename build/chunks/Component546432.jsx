@@ -2,9 +2,9 @@
 /** chunk id: 546432, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  OB: () => k,
+  OB: () => j,
   ZP: () => B,
-  mz: () => j
+  mz: () => k
 }), require("./997841.js"), require("./388685.js"), require("./539854.js"), require("./35282.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -94,7 +94,7 @@ function M(e) {
   return "IMAGE" === e || "VIDEO" === e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n;
   return {
     uniqueId: e.id,
@@ -108,7 +108,7 @@ function k(e, t) {
     srcIsAnimated: (0, s.yE)(null != (n = e.flags) ? n : 0, I.J0y.IS_ANIMATED)
   }
 }
-let j = e => {
+let k = e => {
   let {
     mimeType: t,
     downloadURL: n,
@@ -191,7 +191,7 @@ function U(e) {
     hiddenSpoilers: L,
     mediaLayoutType: x,
     maxWidth: M,
-    maxHeight: k,
+    maxHeight: j,
     hasFooter: U,
     useFullWidth: G,
     isVisualMediaType: B,
@@ -211,7 +211,7 @@ function U(e) {
       width: null != H ? H : 0,
       height: null != Y ? Y : 0,
       maxWidth: null != M ? M : v.mT,
-      maxHeight: null != k ? k : v.Jj
+      maxHeight: null != j ? j : v.Jj
     });
     !G && (e * (null != H ? H : 0) < v.OF || e * (null != Y ? Y : 0) < v.OF) && (et = true)
   }
@@ -228,7 +228,7 @@ function U(e) {
     ei = i.useCallback(() => {
       if (x === v.hV.MOSAIC) {
         let e = !$ && ["VIDEO", "CLIP", "AUDIO"].includes(K) || "OTHER" === K;
-        return et ? null : !q && (0, r.jsx)(j, {
+        return et ? null : !q && (0, r.jsx)(k, {
           mimeType: ee,
           downloadURL: n.downloadUrl,
           showDownload: e,
@@ -258,7 +258,7 @@ function U(e) {
     width: null != H ? H : 350,
     height: null != Y ? Y : 350,
     maxWidth: M,
-    maxHeight: k,
+    maxHeight: j,
     mediaLayoutType: x,
     useFullWidth: G,
     zoomable: false
@@ -285,7 +285,7 @@ function U(e) {
           responsive: true,
           mediaLayoutType: x,
           maxWidth: M,
-          maxHeight: k,
+          maxHeight: j,
           useFullWidth: G,
           handlePreloadImage: d,
           onMouseEnter: er
@@ -310,7 +310,7 @@ function U(e) {
         responsive: true,
         mediaLayoutType: x,
         maxWidth: M,
-        maxHeight: k,
+        maxHeight: j,
         useFullWidth: G,
         mimeType: ee,
         onControlsShow: Z,
@@ -326,7 +326,7 @@ function U(e) {
         className: P,
         imageClassName: D,
         maxWidth: M,
-        maxHeight: k,
+        maxHeight: j,
         mediaLayoutType: x,
         useFullWidth: G
       });
@@ -403,7 +403,7 @@ let B = function(e) {
     width: E,
     height: b,
     type: y
-  } = n, I = s(n, (0, p.v)(a)), [T, A] = i.useState(null != I), C = (0, f.JO)(I), R = c === v.hV.MOSAIC, w = !R && (null != E && E < L || null != b && b < x), k = M(y), j = (0, O.R_)(y), B = u && null != I && (0, f.yf)(E, b), [Z, F] = i.useState(false), V = () => {
+  } = n, I = s(n, (0, p.v)(a)), [T, A] = i.useState(null != I), C = (0, f.JO)(I), R = c === v.hV.MOSAIC, w = !R && (null != E && E < L || null != b && b < x), j = M(y), k = (0, O.R_)(y), B = u && null != I && (0, f.yf)(E, b), [Z, F] = i.useState(false), V = () => {
     F(true)
   }, H = () => {
     F(false)
@@ -425,7 +425,7 @@ let B = function(e) {
       mediaLayoutType: c,
       hasFooter: null != d,
       useFullWidth: !!B && !!e || l,
-      isVisualMediaType: j,
+      isVisualMediaType: k,
       onVideoControlsShow: V,
       onVideoControlsHide: H,
       forcePlaceholder: C && T
@@ -437,10 +437,10 @@ let B = function(e) {
       width: "".concat(m.maxWidth, "px")
     } : true,
     className: o()(S.mosaicItem, {
-      [S.mosaicItemNoJustify]: k,
+      [S.mosaicItemNoJustify]: j,
       [S.mosaicItemFullWidth]: l,
       [S.mosaicItemMediaMosaic]: R,
-      [S.hideOverflow]: R && j,
+      [S.hideOverflow]: R && k,
       [S.mosaicItemWithFooter]: null != d
     }),
     children: [null != I ? (0, r.jsx)(g.ZP, {
@@ -449,7 +449,7 @@ let B = function(e) {
       reason: I,
       isSingleMosaicItem: u,
       obscured: T,
-      containerStyles: G(n, k, c),
+      containerStyles: G(n, j, c),
       obscurityControlClassName: o()({
         [S.obscureVideoSpacing]: "VIDEO" === y && u && !T && Z
       }),

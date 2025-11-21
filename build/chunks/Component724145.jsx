@@ -38,7 +38,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk204089 = require("./204089.js");
-let j = () => (0, Chunk54381.jsx)("div", {
+let k = () => (0, Chunk54381.jsx)("div", {
     className: Chunk204089.editorHeader,
     children: (0, Chunk54381.jsxs)("div", {
       className: Chunk204089.bannerUpsell,
@@ -58,14 +58,14 @@ let j = () => (0, Chunk54381.jsx)("div", {
       null != t && t(L.L.DISMISS), n(w.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)()
     };
     return (0, r.jsxs)("div", {
-      className: k.editorHeader,
+      className: j.editorHeader,
       children: [(0, r.jsx)(d.P3F, {
-        className: k.closeCircleButton,
+        className: j.closeCircleButton,
         onClick: i,
         children: (0, r.jsx)(d.k$p, {
           size: "md",
           color: "currentColor",
-          className: k.closeCircle
+          className: j.closeCircle
         })
       }), (0, r.jsx)(d.Heading, {
         variant: "heading-lg/extrabold",
@@ -133,7 +133,7 @@ let j = () => (0, Chunk54381.jsx)("div", {
       isPreview: true
     }, () => _).otherwise(() => M.intl.string(M.t.Olc2K3));
     return (0, r.jsxs)("div", {
-      className: k.editorFooter,
+      className: j.editorFooter,
       children: [a && (0, r.jsx)(G, {
         onSubscribeSuccess: () => {
           c(true)
@@ -176,18 +176,18 @@ function Z(e) {
     children: (0, r.jsx)("div", {
       ref: b,
       "data-app-right-panel": true,
-      className: o()(k.themeEditor, c ? k.editorAnimate : null),
+      className: o()(j.themeEditor, c ? j.editorAnimate : null),
       children: (0, r.jsxs)(d.y5t, {
-        children: [n ? (0, r.jsx)(j, {}) : (0, r.jsx)(U, {
+        children: [n ? (0, r.jsx)(k, {}) : (0, r.jsx)(U, {
           markAsDismissed: t
         }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(d.Ttm, {
-          className: k.editorBody,
+          className: j.editorBody,
           children: (0, r.jsxs)(D.ZP, {
             type: D.yH.EDITOR,
             children: [!s && (0, r.jsx)(D.ZP.Basic, {
-              className: k.selectionGroup
+              className: j.selectionGroup
             }), (0, r.jsx)(D.ZP.Gradient, {
-              className: k.selectionGroup,
+              className: j.selectionGroup,
               isCoachmark: n
             })]
           })

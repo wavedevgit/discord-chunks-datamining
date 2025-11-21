@@ -139,14 +139,14 @@ function ee(e) {
   } = (0, B.Z)({
     stepConfigs: q,
     breadcrumbs: J
-  }), [ex, eM] = (0, j.Z)(eR), {
-    paymentError: ek,
-    paymentAuthenticationState: ej
+  }), [ex, eM] = (0, k.Z)(eR), {
+    paymentError: ej,
+    paymentAuthenticationState: ek
   } = (0, M.Z)(), {
     purchaseError: eU,
     purchaseErrorBlockRef: eG,
     setPurchaseError: eB
-  } = (0, k.Z)(), eZ = (0, d.Z)(() => {
+  } = (0, j.Z)(), eZ = (0, d.Z)(() => {
     let e = null != A ? A : (0, l.Z)();
     return N.Z.addBreadcrumb({
       message: "Checkout session ID: ".concat(e)
@@ -259,8 +259,8 @@ function ee(e) {
       previousStepRef: eL,
       purchaseState: ex,
       setPurchaseState: eM,
-      paymentAuthenticationState: ej,
-      paymentError: ek,
+      paymentAuthenticationState: ek,
+      paymentError: ej,
       purchaseError: eU,
       setPurchaseError: eB,
       purchasePreviewError: tm,

@@ -608,7 +608,7 @@ class ed extends ei {
   }
   constructor(e, t, n, r) {
     if (super(e), V(this, "categoriesById", true), V(this, "hiddenChannelIds", true), this.categoriesById = n, this.hiddenChannelIds = null, !e.optInEnabled) return;
-    this.isCollapsed = j.Z.isVoiceCategoryCollapsed(e.id), this.isMuted = false, this.categoriesById = n, this.channels = o()(t).map(e => new eb(this, e, r)).keyBy(e => e.id).value()
+    this.isCollapsed = k.Z.isVoiceCategoryCollapsed(e.id), this.isMuted = false, this.categoriesById = n, this.channels = o()(t).map(e => new eb(this, e, r)).keyBy(e => e.id).value()
   }
 }
 class ef {
@@ -805,7 +805,7 @@ function ey(e, t, n) {
         name: r.name
       };
       let i = L.ZP.getVoiceStatesForChannel(e);
-      if (n && t && (0, k.a)(i)) return {
+      if (n && t && (0, j.a)(i)) return {
         type: "go-live"
       };
       let a = c.Z.getChannelStatus(e);
@@ -877,7 +877,7 @@ function eS(e, t, n) {
   if (t.type === B.d4z.GUILD_DIRECTORY || !e.optInEnabled || e.optedInChannels.has(t.id) || t.isThread() || null != t.parent_id && e.optedInChannels.has(t.parent_id) || e.hideResourceChannels && t.hasFlag(Z.zZ.IS_GUILD_RESOURCE_CHANNEL)) returnfalse;
   if (t.isGuildVocal()) {
     if (!(0, U.K)("should_show_in_recents")) returnfalse;
-    let n = j.Z.isVoiceCategoryCollapsed(e.id);
+    let n = k.Z.isVoiceCategoryCollapsed(e.id);
     if (!n) returnfalse;
     let r = o().some(w.Z.getVoiceStatesForChannel(t.id));
     if (n && r) returnfalse
