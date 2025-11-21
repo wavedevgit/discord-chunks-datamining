@@ -1,5 +1,5 @@
 /** Chunk was on 77033 **/
-/** chunk id: 323540, original params: e,n,t (module,exports,require) **/
+/** chunk id: 323540, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
   $: () => _
 }), require("./388685.js");
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk329353 = require("./329353.js");
 
 function _(e) {
-  var n, t;
+  var n, l;
   let {
     applicationId: _,
     guildId: f,
@@ -28,7 +28,7 @@ function _(e) {
     width: v
   } = (0, o.ZP)(), C = (0, d.oR)(), {
     analyticsLocations: j
-  } = (0, s.ZP)(), [k, b] = i.useMemo(() => {
+  } = (0, r.ZP)(), [b, k] = i.useMemo(() => {
     if ((null == h ? true : h.skuIds) == null || (null == h ? true : h.skuIds.length) === 0) return [
       [],
       []
@@ -42,45 +42,47 @@ function _(e) {
     let {
       sessionId: e,
       guildId: n,
-      pageIndex: t,
-      pageTitle: l,
-      isUserGuildMember: i
+      pageIndex: l,
+      pageTitle: t,
+      isUserGuildMember: i,
+      pageHasLeaderboard: a
     } = C;
-    r.default.track(I.rMx.SLAYER_SHOP_VIEWED, {
+    s.default.track(I.rMx.SLAYER_SHOP_VIEWED, {
       slayer_shop_session_id: e,
       guild_id: n,
-      page_index: t,
-      page_title: l,
+      page_index: l,
+      page_title: t,
       is_user_guild_member: i,
+      page_has_leaderboard: a,
       location_stack: j
     })
-  }, [C, j]), null == h) ? null : (0, l.jsx)(a.zJl, {
-    children: (0, l.jsxs)("section", {
+  }, [C, j]), null == h) ? null : (0, t.jsx)(a.zJl, {
+    children: (0, t.jsxs)("section", {
       ref: m,
       className: x.container,
-      children: [(0, l.jsx)(p.n, {
+      children: [(0, t.jsx)(p.n, {
         applicationId: _,
         backgroundImageAssetId: null == (n = h.leaderboard) ? true : n.backgroundImageAssetId
-      }), (0, l.jsx)(u.t, {
+      }), (0, t.jsx)(u.t, {
         leaderboard: h.leaderboard
-      }), (0, l.jsx)(g.Z, {
+      }), (0, t.jsx)(g.Z, {
         analyticsSectionId: "featured-top-section",
         applicationId: _,
         guildId: f,
-        skuIds: k,
+        skuIds: b,
         variant: c.Z.MEDIUM
-      }), (0, l.jsx)(g.Z, {
+      }), (0, t.jsx)(g.Z, {
         analyticsSectionId: "non-featured-top-section",
         applicationId: _,
         guildId: f,
-        skuIds: b
-      }), null == (t = h.sections) ? true : t.map((e, n) => {
-        var t;
-        return (0, l.jsx)(g.Z, {
+        skuIds: k
+      }), null == (l = h.sections) ? true : l.map((e, n) => {
+        var l;
+        return (0, t.jsx)(g.Z, {
           analyticsSectionId: "index:".concat(n),
           guildId: f,
           applicationId: _,
-          sectionTitle: null != (t = e.title) ? t : true,
+          sectionTitle: null != (l = e.title) ? l : true,
           skuIds: e.skuIds
         }, "".concat(e.title, "-").concat(n))
       })]

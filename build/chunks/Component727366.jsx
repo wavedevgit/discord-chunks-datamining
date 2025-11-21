@@ -1,7 +1,7 @@
 /** Chunk was on 77033 **/
-/** chunk id: 727366, original params: e,n,t (module,exports,require) **/
+/** chunk id: 727366, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
-  t: () => r
+  t: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -10,25 +10,25 @@ var Chunk120356 = require("./120356.js"),
   Chunk840724 = require("./840724.jsx"),
   Chunk180165 = require("./180165.js");
 
-function r(e) {
+function s(e) {
   let {
     applicationId: n,
-    skuIds: t,
+    skuIds: l,
     variant: i = o.Z.SMALL,
-    guildId: r,
+    guildId: s,
     analyticsLocations: d
   } = e;
-  return null == t || 0 === t.length ? null : (0, l.jsx)("div", {
-    className: a()(s.container, s.cardGrid, {
-      [s.mediumCardGrid]: i === o.Z.MEDIUM
+  return null == l || 0 === l.length ? null : (0, t.jsx)("div", {
+    className: a()(r.container, r.cardGrid, {
+      [r.mediumCardGrid]: i === o.Z.MEDIUM
     }),
-    children: t.map((e, t) => (0, l.jsx)(o.C, {
-      positionInSection: t,
+    children: l.map((e, l) => (0, t.jsx)(o.C, {
+      positionInSection: l,
       applicationId: n,
       skuId: e,
       variant: i,
-      guildId: r,
+      guildId: s,
       analyticsLocations: d
-    }, "".concat(e, "-").concat(t)))
+    }, "".concat(e, "-").concat(l)))
   })
 }

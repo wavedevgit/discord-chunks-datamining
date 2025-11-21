@@ -1,5 +1,5 @@
 /** Chunk was on 77033 **/
-/** chunk id: 720983, original params: e,n,t (module,exports,require) **/
+/** chunk id: 720983, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
   Z: () => C
 });
@@ -24,13 +24,13 @@ var Chunk54381 = require("./54381.js"),
 function v(e) {
   let {
     icon: n,
-    onClick: t,
+    onClick: l,
     ariaLabel: i,
     className: a
   } = e;
-  return (0, l.jsx)(s.P3F, {
+  return (0, t.jsx)(r.P3F, {
     className: o()(m.iconButton, a),
-    onClick: t,
+    onClick: l,
     "aria-label": i,
     children: n
   })
@@ -39,26 +39,26 @@ function v(e) {
 function C(e) {
   let {
     guildId: n,
-    storefront: t,
+    storefront: l,
     selectedPageIndex: a
-  } = e, C = (0, s.wjy)((0, d.ZP)()), j = (0, p.Y)({
+  } = e, C = (0, r.wjy)((0, d.ZP)()), j = (0, p.Y)({
     location: "SocialLayerStorefrontHeader"
-  }), k = (0, r.e7)([I.default], () => I.default.getCurrentUser()), b = i.useCallback(() => {
-    (null == k ? true : k.id) != null && (0, g.openUserProfileModal)({
-      userId: k.id,
+  }), b = (0, s.e7)([I.default], () => I.default.getCurrentUser()), k = i.useCallback(() => {
+    (null == b ? true : b.id) != null && (0, g.openUserProfileModal)({
+      userId: b.id,
       section: f.oh.WISHLIST,
       showGuildProfile: false,
       sourceAnalyticsLocations: [c.Z.SOCIAL_LAYER_STOREFRONT]
     })
-  }, [k]);
-  if (null == t) return null;
-  let Z = null != t.logoAssetId ? (0, x._W)(t.applicationId, t.logoAssetId, 75) : null,
-    N = null != t.lightThemeLogoAssetId ? (0, x._W)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
+  }, [b]);
+  if (null == l) return null;
+  let Z = null != l.logoAssetId ? (0, x._W)(l.applicationId, l.logoAssetId, 75) : null,
+    N = null != l.lightThemeLogoAssetId ? (0, x._W)(l.applicationId, l.lightThemeLogoAssetId, 75) : null,
     S = null;
-  return S = C ? null != Z ? Z : N : null != N ? N : Z, (0, l.jsxs)(u.Z, {
+  return S = C ? null != Z ? Z : N : null != N ? N : Z, (0, t.jsxs)(u.Z, {
     disableDoubleClick: true,
     className: m.headerContainer,
-    children: [(0, l.jsxs)(s.P3F, {
+    children: [(0, t.jsxs)(r.P3F, {
       onClick: () => {
         (0, _.Z)({
           guildId: n,
@@ -66,39 +66,39 @@ function C(e) {
         })
       },
       className: m.titleContainer,
-      children: [null != S && (0, l.jsx)("img", {
+      children: [null != S && (0, t.jsx)("img", {
         className: m.logo,
         src: S,
-        alt: t.title
-      }), (0, l.jsx)(u.Z.Title, {
-        children: t.title
+        alt: l.title
+      }), (0, t.jsx)(u.Z.Title, {
+        children: l.title
       })]
-    }), (0, l.jsx)("div", {
+    }), (0, t.jsx)("div", {
       className: m.titles,
-      children: t.pages.map((e, t) => (0, l.jsx)(u.Z.Title, {
+      children: l.pages.map((e, l) => (0, t.jsx)(u.Z.Title, {
         onClick: () => {
           (0, _.Z)({
             guildId: n,
-            pageIndex: t
+            pageIndex: l
           })
         },
         wrapperClassName: m.titleWrapper,
         className: o()(m.pageTitleContainer, {
-          [m.selectedPageIndicator]: a === t
+          [m.selectedPageIndicator]: a === l
         }),
-        children: (0, l.jsx)(s.xvT, {
+        children: (0, t.jsx)(r.xvT, {
           variant: "text-sm/medium",
           children: e.title
         })
-      }, "".concat(e.title, "-").concat(t)))
-    }), j && (0, l.jsx)("div", {
+      }, "".concat(e.title, "-").concat(l)))
+    }), j && (0, t.jsx)("div", {
       className: m.alignedRightContent,
-      children: (0, l.jsx)(v, {
-        icon: (0, l.jsx)(s.h_8, {
+      children: (0, t.jsx)(v, {
+        icon: (0, t.jsx)(r.h_8, {
           size: "xs",
           color: "currentColor"
         }),
-        onClick: b,
+        onClick: k,
         ariaLabel: h.intl.string(h.t["7lZ31J"]),
         className: m.wishlistButton
       })
