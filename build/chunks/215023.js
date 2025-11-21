@@ -24,6 +24,7 @@ require.d(exports, {
   o8: () => D,
   sT: () => U,
   xg: () => M,
+  y8: () => F,
   yf: () => g,
   yo: () => S
 }), require("./388685.js");
@@ -101,4 +102,8 @@ let w = {
     type: Chunk685816.z.HERO,
     name: "Try Before You Buy!",
     summary: "Use Orbs to Try Before You Buy!"
-  }
+  },
+  F = [{
+    categorySkuId: "1440063059895779408",
+    rewardSkuId: "1440063059862487193"
+  }]

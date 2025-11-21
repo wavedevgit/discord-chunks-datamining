@@ -35,7 +35,13 @@ function v(e) {
   let v = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
     [O, S] = l.useState(true),
     [y, j] = l.useState(true),
-    k = l.useCallback(e => {
+    k = l.useMemo(() => n.filter(e => !_.y8.some(t => {
+      let {
+        categorySkuId: n
+      } = t;
+      return n === e.skuId
+    })), [n]),
+    I = l.useCallback(e => {
       let {
         sourceButton: t,
         categorySkuId: n,
@@ -48,21 +54,21 @@ function v(e) {
         s = i ? _.AW.ORBS : _.AW.CATALOG;
       S(n), j(!l), o(s, a)
     }, [v, o, c]),
-    I = (0, d.FF)("CollectiblesContent"),
+    T = (0, d.FF)("CollectiblesContent"),
     {
-      searchError: T
+      searchError: L
     } = (0, f.a)();
-  return I && null != T ? (0, r.jsx)(C.Z, {}) : null != m ? (0, r.jsx)(p.Z, {
+  return T && null != L ? (0, r.jsx)(C.Z, {}) : null != m ? (0, r.jsx)(p.Z, {
     onRetry: u,
     errorMessage: m,
     errorOrigin: p.i.SHOP_PAGE
   }) : b.includes(t) ? (0, r.jsx)(h.Z, {
-    handleTransition: k,
+    handleTransition: I,
     tab: t,
     transitionState: s
   }) : (0, r.jsx)(g.Z, {
     tab: t,
-    sortedCategories: n,
+    sortedCategories: k,
     initialCategoryId: O,
     showFilterInitially: y,
     onUnmount: () => {

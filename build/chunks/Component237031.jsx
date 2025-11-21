@@ -2,14 +2,17 @@
 /** chunk id: 237031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => u,
-  v: () => d
+  T: () => _,
+  v: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk481060 = require("./481060.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk1870 = require("./1870.js"),
+  Chunk724994 = require("./724994.js"),
+  Chunk215023 = require("./215023.js");
 
-function a(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,20 +21,20 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      l(e, t, n[t])
     })
   }
   return e
 }
 
-function s(e, t) {
+function u(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -42,41 +45,51 @@ function s(e, t) {
   return n
 }
 
-function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+function d(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = "collectibles shop product details modal",
-  u = e => {
+let f = "collectibles shop product details modal",
+  _ = e => {
     let {
       product: t,
-      category: a,
-      shouldCheckoutWithOrbs: s,
-      analyticsSource: u,
-      analyticsLocations: d,
-      returnRef: f,
-      tab: _,
-      rentalDuration: p
+      category: l,
+      shouldCheckoutWithOrbs: u,
+      analyticsSource: _,
+      analyticsLocations: p,
+      returnRef: h,
+      tab: m,
+      rentalDuration: g
     } = e;
-    (0, i.ZDy)(async () => {
+    if (s.y8.some(e => {
+        let {
+          rewardSkuId: n
+        } = e;
+        return n === t.skuId
+      })) {
+      let {
+        isPurchased: e
+      } = (0, o.U)(a.Z, t);
+      if (!e) return
+    }(0, i.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("78825"), n.e("6377")]).then(n.bind(n, 702370));
-      return n => (0, r.jsx)(e, l(o({}, n), {
+      return n => (0, r.jsx)(e, d(c({}, n), {
         product: t,
-        category: a,
-        shouldCheckoutWithOrbs: s,
-        analyticsSource: u,
-        analyticsLocations: d,
-        returnRef: f,
-        tab: _,
-        rentalDuration: p
+        category: l,
+        shouldCheckoutWithOrbs: u,
+        analyticsSource: _,
+        analyticsLocations: p,
+        returnRef: h,
+        tab: m,
+        rentalDuration: g
       }))
     }, {
-      modalKey: c
+      modalKey: f
     })
   },
-  d = () => {
-    (0, Chunk481060.Mr3)(c)
+  p = () => {
+    (0, Chunk481060.Mr3)(f)
   }

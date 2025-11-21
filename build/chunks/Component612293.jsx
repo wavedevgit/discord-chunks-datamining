@@ -36,26 +36,26 @@ function O(e) {
     analyticsLocations: O,
     onClose: w,
     guildId: N,
-    initialSelectedNameplate: Z
-  } = e, I = (0, i.e7)([x.ZP], () => null != N && null != v ? x.ZP.getMember(N, v.id) : null), A = null != I ? null == (t = I.collectibles) ? true : t.nameplate : null == (n = v.collectibles) ? true : n.nameplate, {
-    pendingNameplate: k
+    initialSelectedNameplate: I
+  } = e, Z = (0, i.e7)([x.ZP], () => null != N && null != v ? x.ZP.getMember(N, v.id) : null), k = null != Z ? null == (t = Z.collectibles) ? true : t.nameplate : null == (n = v.collectibles) ? true : n.nameplate, {
+    pendingNameplate: A
   } = (0, g.Zx)(v, N), [S, T] = (0, r.useState)(() => {
     var e;
-    return null != Z ? Z : true !== k ? k : null == A ? null : null != (e = (0, u.Y)(b, _).find(e => {
+    return null != I ? I : true !== A ? A : null == k ? null : null != (e = (0, u.Y)(b, _).find(e => {
       let {
         skuId: t
       } = e;
-      return t === A.skuId
+      return t === k.skuId
     })) ? e : null
   }), U = (0, g.Ys)({
     pendingValue: S,
     userValue: null == v || null == (o = v.collectibles) ? true : o.nameplate,
-    guildValue: null == I || null == (p = I.collectibles) ? true : p.nameplate,
+    guildValue: null == Z || null == (p = Z.collectibles) ? true : p.nameplate,
     guildId: N
   }), {
     product: B,
     purchase: L
-  } = (0, d.Z)(null == S ? true : S.skuId), R = j.ZP.canUseCollectibles(v), M = true === k ? (null == S ? true : S.skuId) === (null == A ? true : A.skuId) : (null == S ? true : S.skuId) === (null == k ? true : k.skuId), D = (0, r.useCallback)(e => {
+  } = (0, d.Z)(null == S ? true : S.skuId), R = j.ZP.canUseCollectibles(v), M = true === A ? (null == S ? true : S.skuId) === (null == k ? true : k.skuId) : (null == S ? true : S.skuId) === (null == A ? true : A.skuId), D = (0, r.useCallback)(e => {
     w(), (0, c.mK)({
       analyticsLocations: O,
       analyticsSource: a.Z.EDIT_NAMEPLATE_MODAL,

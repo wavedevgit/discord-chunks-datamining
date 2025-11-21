@@ -59,7 +59,12 @@ function R(e) {
     }
   }, [Z, G]), J = (0, m.a)(), Q = l.useMemo(() => J(W.filter(e => {
     var t;
-    return e.type === q || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
+    return (e.type === q || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true) && !O.y8.some(t => {
+      let {
+        categorySkuId: n
+      } = t;
+      return n === e.categorySkuId
+    })
   })), [W, q, J]), X = (0, h.l)(Q);
   l.useEffect(() => {
     (0, C.n)({
