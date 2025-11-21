@@ -38,5 +38,13 @@ let a = {
     bannerWidth: 340,
     bannerHeight: 120,
     themePadding: 0
+  },
+  [Chunk671955.l.VIDEO_TILE_BACKGROUND]: {
+    avatarSize: Chunk268685.EF.SIZE_80,
+    avatarOffsetX: 10,
+    avatarOffsetY: 4,
+    bannerWidth: 300,
+    bannerHeight: 105,
+    themePadding: 0
   }
 }

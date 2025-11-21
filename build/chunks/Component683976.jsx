@@ -2,8 +2,7 @@
 /** chunk id: 683976, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => b,
-  n: () => v
+  F: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -132,108 +131,4 @@ class y extends Chunk473749.PureComponent {
     })
   }
 }
-
-function O(e) {
-  let {
-    options: t,
-    value: n,
-    scroller: i,
-    renderOption: a,
-    onChange: u,
-    className: _
-  } = e, h = o()(f.quickSelectPopout, _, {
-    [f.quickSelectPopoutScroll]: i
-  }), E = t.map(e => {
-    let t = null != n && e.value === n.value,
-      i = t ? true : u;
-    return (0, r.jsx)(y, {
-      className: f.quickSelectPopoutOption,
-      renderOption: a,
-      option: e,
-      onChange: i,
-      selected: t
-    }, e.key || e.value)
-  }), b = (0, d.Dt)(), O = (0, l.ZP)({
-    id: b,
-    isEnabled: true,
-    wrap: true,
-    async scrollToStart() {},
-    async scrollToEnd() {}
-  }), v = O.containerProps, {
-    ref: I
-  } = v, T = g(v, ["ref"]);
-  return (0, c.Tbt)(I), (0, r.jsx)(s.bG, {
-    navigator: O,
-    children: (0, r.jsx)("div", m(p({
-      ref: I,
-      className: h
-    }, T), {
-      role: "listbox",
-      children: i ? (0, r.jsx)(c.Ttm, {
-        className: f.quickSelectScroller,
-        children: E
-      }) : E
-    }))
-  })
-}
-class v extends Chunk473749.PureComponent {
-  render() {
-    let {
-      label: e,
-      value: t,
-      renderValue: n,
-      className: i,
-      popoutProps: a
-    } = this.props;
-    return (0, Chunk54381.jsx)(Chunk481060.yRy, m(p({
-      targetElementRef: this.ref
-    }, Chunk120356), {
-      renderPopout: this.renderPopout,
-      children: (a, o) => {
-        let {
-          isShown: s
-        } = o;
-        return (0, r.jsx)(c.P3F, m(p({
-          innerRef: this.ref
-        }, a), {
-          className: i,
-          "aria-haspopup": "listbox",
-          "aria-expanded": s,
-          children: (0, r.jsx)(b, {
-            label: e,
-            value: t,
-            renderValue: n
-          })
-        }))
-      }
-    }))
-  }
-  constructor(...e) {
-    super(...e), _(this, "ref", i.createRef()), _(this, "renderPopout", e => {
-      let {
-        closePopout: t
-      } = e, {
-        options: n,
-        value: i,
-        renderOption: a,
-        popoutClassName: o,
-        scroller: s
-      } = this.props;
-      return (0, r.jsx)(O, {
-        scroller: !!s,
-        className: o,
-        options: n,
-        value: i,
-        renderOption: a,
-        onChange: e => {
-          this.handleChange(e), t()
-        }
-      })
-    }), _(this, "handleChange", e => {
-      let {
-        onChange: t
-      } = this.props;
-      null == t || t(e)
-    })
-  }
-}
+Chunk473749.PureComponent

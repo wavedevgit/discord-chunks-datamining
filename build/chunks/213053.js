@@ -42,7 +42,8 @@ let g = {
     [Chunk671955.l.POPOUT]: "user-profile-popout",
     [Chunk671955.l.MODAL]: "user-profile-modal",
     [Chunk671955.l.MODAL_V2]: "user-profile-modal-v2",
-    [Chunk671955.l.SIDEBAR]: "user-profile-sidebar"
+    [Chunk671955.l.SIDEBAR]: "user-profile-sidebar",
+    [Chunk671955.l.VIDEO_TILE_BACKGROUND]: "user-profile-video-tile-background"
   },
   E = "custom-user-profile-theme",
   b = Object.freeze({

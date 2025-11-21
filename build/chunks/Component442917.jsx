@@ -237,7 +237,9 @@ class ef extends Chunk473749.PureComponent {
       children: (0, Chunk54381.jsx)(Chunk266910.Z, {
         size: Chunk481060.EFr.SIZE_80,
         src: null == require ? true : require.user.getAvatarURL(module.guild_id, 80),
-        "aria-label": null == require ? true : require.user.username
+        "aria-label": null == require ? true : require.user.username,
+        guildId: module.guild_id,
+        userId: null == require ? true : require.user.id
       })
     }))), (0, Chunk54381.jsx)(Chunk937995.ZP, {
       timeout: 1800,

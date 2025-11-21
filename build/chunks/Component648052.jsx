@@ -15,7 +15,8 @@ let u = {
   [Chunk671955.l.POPOUT]: 12,
   [Chunk671955.l.MODAL]: 26,
   [Chunk671955.l.MODAL_V2]: 16,
-  [Chunk671955.l.SIDEBAR]: 13
+  [Chunk671955.l.SIDEBAR]: 13,
+  [Chunk671955.l.VIDEO_TILE_BACKGROUND]: 12
 };
 
 function d(e) {

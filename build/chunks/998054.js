@@ -2,16 +2,18 @@
 /** chunk id: 998054, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => s,
-  f: () => c
+  Y: () => l,
+  f: () => u
 }), require("./415506.js");
-var Chunk960048 = require("./960048.js"),
+var Chunk818710 = require("./818710.js"),
+  Chunk960048 = require("./960048.js"),
   Chunk998502 = require("./998502.js"),
   Chunk5900 = require("./5900.js"),
   Chunk60995 = require("./60995.js");
-let s = async () => {
+let l = async () => {
+  if (!(0, Chunk818710.nI)()) return Chunk5900._n.UNKNOWN;
   try {
-    switch ((await l()).account.type.toLowerCase()) {
+    switch ((await c()).account.type.toLowerCase()) {
       case "unlimited":
       case "discord":
         return Chunk5900._n.INSTALLED;
@@ -32,15 +34,15 @@ let s = async () => {
     if (module instanceof Object && "code" in module && "MissingRegistration" === module.code) return Chunk5900._n.INSTALLING;
     return Chunk5900._n.ERROR
   }
-}, l = () => new Promise(async (e, t) => {
+}, c = () => new Promise(async (e, t) => {
   try {
-    var n, r, a;
-    let o = await (null === i.ZP || true === i.ZP || null == (a = i.ZP.getDiscordUtils) || null == (r = a.call(i.ZP)) || null == (n = r.runWarpCommand) ? true : n.call(r, "registration", "show"));
+    var n, r, i;
+    let o = await (null === a.ZP || true === a.ZP || null == (i = a.ZP.getDiscordUtils) || null == (r = i.call(a.ZP)) || null == (n = r.runWarpCommand) ? true : n.call(r, "registration", "show"));
     if (null != o.error) return void t(o);
     e(o)
   } catch (e) {
     t(e)
   }
-}), c = async () => {
+}), u = async () => {
   await (0, Chunk60995._)(true), await Chunk998502.ZP.getDiscordUtils().installWarp()
 }

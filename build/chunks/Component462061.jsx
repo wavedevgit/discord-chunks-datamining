@@ -120,12 +120,13 @@ function k(e) {
     }),
     children: (0, r.jsx)(b.Z, {
       "aria-label": $,
-      src: en,
       avatarDecoration: er,
       backgroundSrc: H.getAvatarURL(n.guild_id, 80),
-      size: et,
+      guildId: n.guild_id,
       pulseSpeakingIndicator: V,
+      size: et,
       speaking: q,
+      src: en,
       userId: H.id
     })
   })

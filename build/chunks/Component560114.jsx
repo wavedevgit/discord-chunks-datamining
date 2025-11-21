@@ -247,7 +247,7 @@ class ed extends(i = Chunk473749.PureComponent) {
       bodyContent: true,
       controls: (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [exports && (0, Chunk54381.jsx)(Chunk481060.E1j, {
-          size: "sm",
+          size: "md",
           query: i,
           onChange: this.handleQueryChange,
           placeholder: Chunk388032.intl.string(Chunk388032.t.CmSHYx),
