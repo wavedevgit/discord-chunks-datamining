@@ -21,26 +21,26 @@ function u(e) {
     } = u,
     [f, b] = l.useState(false),
     {
-      layout: p,
-      collapseAfter: y,
-      ContextProvider: j,
-      useCollapsibleTitle: v,
-      useCollapsedSubtitle: m
+      layout: y,
+      collapseAfter: p,
+      ContextProvider: v,
+      useCollapsibleTitle: m,
+      useCollapsedSubtitle: j
     } = u,
-    g = p.filter(e => {
+    g = y.filter(e => {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    x = null != y ? g.slice(0, y) : g,
-    h = null != y ? g.slice(y) : [],
-    O = null != j ? j : l.Fragment,
+    h = null != p ? g.slice(0, p) : g,
+    x = null != p ? g.slice(p) : [],
+    O = null != v ? v : l.Fragment,
     S = null == d ? true : d(),
-    P = null != (t = null == v ? true : v(f, h.length)) ? t : (n = h.length, f ? c.intl.formatToPlainString(c.t["3SHL+d"], {
+    P = null != (t = null == m ? true : m(f, x.length)) ? t : (n = x.length, f ? c.intl.formatToPlainString(c.t["3SHL+d"], {
       count: n
     }) : c.intl.formatToPlainString(c.t["8JRFyZ"], {
       count: n
     })),
-    C = null == m ? true : m();
+    C = null == j ? true : j();
   return (0, r.jsx)(O, {
     children: (0, r.jsxs)(i.Kqy, {
       gap: 8,
@@ -49,11 +49,11 @@ function u(e) {
         color: "header-secondary",
         className: s.listTitle,
         children: S
-      }), x.map((e, t) => (0, r.jsxs)(l.Fragment, {
+      }), h.map((e, t) => (0, r.jsxs)(l.Fragment, {
         children: [(0, r.jsx)(o.Z, {
           node: e
-        }), h.length > 0 && t !== x.length - 1 && (0, r.jsx)(i.izJ, {})]
-      }, e.key)), h.length > 0 && (0, r.jsxs)("div", {
+        }), x.length > 0 && t !== h.length - 1 && (0, r.jsx)(i.izJ, {})]
+      }, e.key)), x.length > 0 && (0, r.jsxs)("div", {
         className: s.collapsibleContainer,
         children: [(0, r.jsx)(i.izJ, {
           className: s.hoverDivider
@@ -67,10 +67,10 @@ function u(e) {
             padding: {
               top: 8
             },
-            children: h.map((e, t) => (0, r.jsxs)(l.Fragment, {
+            children: x.map((e, t) => (0, r.jsxs)(l.Fragment, {
               children: [(0, r.jsx)(o.Z, {
                 node: e
-              }), t !== h.length - 1 && (0, r.jsx)(i.izJ, {})]
+              }), t !== x.length - 1 && (0, r.jsx)(i.izJ, {})]
             }, e.key))
           })
         })]

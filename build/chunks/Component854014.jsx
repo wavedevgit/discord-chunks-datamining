@@ -1,7 +1,7 @@
 /** Chunk was on 16985 **/
 /** chunk id: 854014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => p
+  y: () => y
 }), require("./361932.js"), require("./187205.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,10 +24,10 @@ function b(e) {
     itemProps: d
   } = e, {
     icon: b,
-    stronglyDiscouragedCustomComponent: p,
-    trailing: y,
-    useTitle: j
-  } = a, v = null == j ? true : j();
+    stronglyDiscouragedCustomComponent: y,
+    trailing: p,
+    useTitle: v
+  } = a, m = null == v ? true : v();
   return (0, r.jsxs)(c.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -51,7 +51,7 @@ function b(e) {
     }),
     onClick: l
   }, d), n = n = {
-    children: [null != p ? (0, r.jsx)(p, {}) : (0, r.jsxs)("div", {
+    children: [null != y ? (0, r.jsx)(y, {}) : (0, r.jsxs)("div", {
       className: f.itemContent,
       children: [(0, r.jsx)(b, {
         color: "currentColor",
@@ -60,12 +60,12 @@ function b(e) {
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "currentColor",
-        children: v
+        children: m
       })]
-    }), null != y && (0, r.jsx)("div", {
+    }), null != p && (0, r.jsx)("div", {
       className: f.itemContent,
       children: (0, r.jsx)(u.W, {
-        trailing: y,
+        trailing: p,
         visibleContent: s,
         isSelected: i
       })
@@ -82,7 +82,7 @@ function b(e) {
   }), t))
 }
 
-function p(e) {
+function y(e) {
   let {
     node: t,
     visibleContent: n,
@@ -90,7 +90,7 @@ function p(e) {
   } = e, o = l.useMemo(() => t.layout[0], [t]), c = s.Z.useField("currentPanelKey"), u = null != c && c === (null == o ? true : o.key), f = null != o ? () => s.Z.setState({
     targetKey: o.key,
     showNavigationMobile: false
-  }) : t.onClick, p = l.useMemo(() => {
+  }) : t.onClick, y = l.useMemo(() => {
     var e;
     return (null != (e = null == o ? true : o.layout.flatMap(e => e.layout)) ? e : []).filter(e => null != e.useTitle || null != e.useNavigationTitle)
   }, [o]);
@@ -111,8 +111,8 @@ function p(e) {
         visibleContent: n,
         itemProps: e
       })
-    }), u && p.length > 1 && (0, r.jsx)(d.Z, {
-      categories: p
+    }), u && y.length > 1 && (0, r.jsx)(d.Z, {
+      categories: y
     })]
   })
 }

@@ -19,10 +19,10 @@ let c = Chunk473749.memo(function(e) {
   } = t, d = t.layout.filter(e => {
     var t, n;
     return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
-  }), f = n(), b = null == c ? true : c(), p = l.useId(), y = null != b && "" !== b, j = null != u ? u : l.Fragment;
-  return (0, r.jsx)(j, {
+  }), f = n(), b = null == c ? true : c(), y = l.useId(), p = null != b && "" !== b, v = null != u ? u : l.Fragment;
+  return (0, r.jsx)(v, {
     children: (0, r.jsxs)("fieldset", {
-      "aria-describedby": y ? p : true,
+      "aria-describedby": p ? y : true,
       children: [(0, r.jsxs)("div", {
         className: a.header,
         children: [(0, r.jsx)(i.Text, {
@@ -31,10 +31,10 @@ let c = Chunk473749.memo(function(e) {
           color: "header-primary",
           className: a.title,
           children: f
-        }), y ? (0, r.jsx)(i.Text, {
+        }), p ? (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          id: p,
+          id: y,
           className: a.subtitle,
           children: b
         }) : null]

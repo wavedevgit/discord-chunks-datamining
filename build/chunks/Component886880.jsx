@@ -20,7 +20,7 @@ function c(e) {
   (0, o.ZP)(() => (b.current = setTimeout(() => f(true), 250), () => {
     clearTimeout(b.current), s(a.L.AUTO_DISMISS)
   }));
-  let p = l.useCallback(e => {
+  let y = l.useCallback(e => {
     s("user:explicit" === e ? a.L.USER_DISMISS : a.L.AUTO_DISMISS)
   }, [s]);
   return (0, r.jsx)(i.Z, function(e) {
@@ -43,6 +43,6 @@ function c(e) {
   }({
     targetElementRef: n,
     shouldShow: d && c === t,
-    onRequestClose: p
+    onRequestClose: y
   }, u))
 }

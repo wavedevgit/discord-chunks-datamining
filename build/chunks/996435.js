@@ -7,5 +7,7 @@ require.d(exports, {
 let r = (0, require("./972959.js").H)(() => ({
   currentPanelKey: true,
   targetKey: true,
-  showNavigationMobile: true
+  showNavigationMobile: true,
+  activeCategoryKey: true,
+  isProgrammaticScroll: false
 }))

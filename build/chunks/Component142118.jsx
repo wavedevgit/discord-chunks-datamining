@@ -15,24 +15,31 @@ let u = Chunk473749.memo(function(e) {
     node: t
   } = e, {
     useTitle: n,
-    layout: u,
-    init: d,
-    useBadge: f,
-    useNotice: b
-  } = t, p = null == n ? true : n(), y = null == f ? true : f(), j = null == b ? true : b();
+    useNavigationTitle: u,
+    layout: d,
+    init: f,
+    useBadge: b,
+    useNotice: y
+  } = t, p = null == n ? true : n(), v = null == b ? true : b(), m = null == y ? true : y();
   return l.useEffect(() => {
-    null == d || d()
-  }, [d]), (0, r.jsxs)(i.Kqy, {
+    null == f || f()
+  }, [f]), (0, r.jsxs)(i.Kqy, {
     gap: 16,
     children: [(0, r.jsx)(a.Y, {
       title: p,
-      badge: y
-    }), null != j && (0, r.jsx)("div", {
+      badge: v
+    }), (0, r.jsx)("div", {
+      "data-settings-category-key": null != n || null != u ? t.key : true,
+      "aria-hidden": true,
+      style: {
+        height: 1
+      }
+    }), null != m && (0, r.jsx)("div", {
       className: s.notice,
       children: (0, r.jsx)(c.Z, {
-        notice: j
+        notice: m
       })
-    }), u.map(e => (0, r.jsx)(o.Z, {
+    }), d.map(e => (0, r.jsx)(o.Z, {
       node: e
     }, e.key))]
   })

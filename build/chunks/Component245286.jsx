@@ -29,7 +29,7 @@ function S(e) {
     destinationPanel: t,
     originPanel: n
   } = e;
-  (0, y.QB)({
+  (0, p.QB)({
     destinationPane: t,
     originPane: n,
     subsection: b.Z.getSubsection(),
@@ -56,20 +56,20 @@ function P(e) {
     }
     return l
   }(e, ["target"]);
-  let o = j.Z.useField("query"),
+  let o = v.Z.useField("query"),
     {
       node: a,
       directory: s
     } = (0, f.Z)(g.Z, o),
     u = null != t && null != s.entry(t) ? t : true,
-    y = l.useRef(null);
+    p = l.useRef(null);
   return ((0, c.ZP)(() => {
     let e = b.Z.getSection();
     null != e && (S({
       destinationPanel: e,
       originPanel: null
-    }), y.current = e)
-  }), (0, i.e7)([p.default], () => null != p.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
+    }), p.current = e)
+  }), (0, i.e7)([y.default], () => null != y.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -91,16 +91,16 @@ function P(e) {
     directory: s,
     sidebarHeader: C,
     emptyState: _,
-    sidebarFooter: m.Z,
+    sidebarFooter: j.Z,
     onPanelChange: e => {
-      let t = (0, x.getUserSettingsSectionsByWebUserSettings)().get(e);
+      let t = (0, h.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (S({
         destinationPanel: t,
-        originPanel: y.current
-      }), y.current = t)
+        originPanel: p.current
+      }), p.current = t)
     },
     target: u,
-    defaultTarget: v.n.ACCOUNT_PANEL
+    defaultTarget: m.n.ACCOUNT_PANEL
   }, n)) : null
 }
 
@@ -117,7 +117,7 @@ function C() {
       scrollBehavior: "sticky"
     }), []),
     d = Chunk473749.useCallback(e => {
-      j.Z.setState({
+      v.Z.setState({
         query: e
       })
     }, []),

@@ -18,26 +18,26 @@ let u = Chunk473749.memo(function(e) {
     layout: u,
     useCollapsedSubtitle: d,
     useNotice: f
-  } = t, [b, p] = l.useState(false), {
-    navTransition: y
+  } = t, [b, y] = l.useState(false), {
+    navTransition: p
   } = (0, i.t)();
   l.useEffect(() => {
-    (null == y ? true : y.targetAccordionKey) === t.key && p(true)
-  }, [null == y ? true : y.targetAccordionKey, t.key]);
-  let j = null == n ? true : n(b),
-    v = null == d ? true : d(),
-    m = null == f ? true : f();
+    (null == p ? true : p.targetAccordionKey) === t.key && y(true)
+  }, [null == p ? true : p.targetAccordionKey, t.key]);
+  let v = null == n ? true : n(b),
+    m = null == d ? true : d(),
+    j = null == f ? true : f();
   return (0, r.jsx)("div", {
     className: s.accordion,
     children: (0, r.jsxs)(a.I, {
-      title: j,
-      collapsedSubtitle: v,
+      title: v,
+      collapsedSubtitle: m,
       isOpen: b,
-      setIsOpen: p,
-      children: [null != m && (0, r.jsx)("div", {
+      setIsOpen: y,
+      children: [null != j && (0, r.jsx)("div", {
         className: s.notice,
         children: (0, r.jsx)(c.Z, {
-          notice: m
+          notice: j
         })
       }), u.map(e => (0, r.jsx)(o.Z, {
         node: e

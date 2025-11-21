@@ -17,15 +17,15 @@ var Chunk54381 = require("./54381.js"),
 function b(e) {
   var t, n, {
       root: b,
-      directory: p,
-      target: y,
-      defaultTarget: j,
-      onPanelChange: v,
-      sidebarHeader: m,
+      directory: y,
+      target: p,
+      defaultTarget: v,
+      onPanelChange: m,
+      sidebarHeader: j,
       sidebarFooter: g,
-      emptyState: x
+      emptyState: h
     } = e,
-    h = function(e, t) {
+    x = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
         if (null == e) return {};
@@ -40,19 +40,19 @@ function b(e) {
       }
       return l
     }(e, ["root", "directory", "target", "defaultTarget", "onPanelChange", "sidebarHeader", "sidebarFooter", "emptyState"]);
-  let [O, S] = l.useState(false), [P, C] = l.useState(1.4), _ = l.useRef(null), N = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), E = (0, i.e7)([s.Z], () => s.Z.isFocused());
+  let [O, S] = l.useState(false), [P, C] = l.useState(1.4), _ = l.useRef(null), E = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), N = (0, i.e7)([s.Z], () => s.Z.isFocused());
   return l.useEffect(() => {
     let e = e => {
       let {
         intensity: t,
         duration: n
       } = e;
-      !N && E && (S(true), C(null != t ? t : 1.4), clearTimeout(_.current), _.current = setTimeout(() => S(false), null != n ? n : 1e3))
+      !E && N && (S(true), C(null != t ? t : 1.4), clearTimeout(_.current), _.current = setTimeout(() => S(false), null != n ? n : 1e3))
     };
     return u.S.subscribe(f.CkL.SHAKE_SETTINGS_MODAL, e), () => {
       u.S.unsubscribe(f.CkL.SHAKE_SETTINGS_MODAL, e), clearTimeout(_.current)
     }
-  }, [N, E]), (0, r.jsx)(a.UkV, {
+  }, [E, N]), (0, r.jsx)(a.UkV, {
     isShaking: O,
     intensity: P,
     children: (0, r.jsx)(o.A, (t = function(e) {
@@ -72,16 +72,16 @@ function b(e) {
         })
       }
       return e
-    }({}, h), n = n = {
+    }({}, x), n = n = {
       children: (0, r.jsx)(d.Z, {
-        onClose: h.onClose,
+        onClose: x.onClose,
         root: b,
-        directory: p,
-        target: y,
-        defaultTarget: j,
-        onPanelChange: v,
-        sidebarHeader: m,
-        emptyState: x,
+        directory: y,
+        target: p,
+        defaultTarget: v,
+        onPanelChange: m,
+        sidebarHeader: j,
+        emptyState: h,
         sidebarFooter: g
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

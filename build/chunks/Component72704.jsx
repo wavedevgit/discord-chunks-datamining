@@ -17,14 +17,14 @@ function o(e) {
     useSubtitle: c,
     useOptions: s,
     renderOptionLabel: u
-  } = t, d = a(), f = null == c ? true : c(), b = n(), p = s();
+  } = t, d = a(), f = null == c ? true : c(), b = n(), y = s();
   return (0, r.jsx)(i.X, {
     children: (0, r.jsx)(l.q4e, {
       label: d,
       description: f,
       value: b,
       onChange: e => o(e),
-      options: p,
+      options: y,
       renderOptionLabel: null != u ? u : true,
       renderOptionValue: null != u ? e => {
         let [t] = e;

@@ -18,9 +18,9 @@ function u(e) {
     isOpen: i,
     setIsOpen: u,
     children: d
-  } = e, f = l.useRef(null), [b, p] = l.useState(null), y = i && null != b;
+  } = e, f = l.useRef(null), [b, y] = l.useState(null), p = i && null != b;
   return l.useLayoutEffect(() => {
-    null != f.current && null == b && p(f.current.clientHeight)
+    null != f.current && null == b && y(f.current.clientHeight)
   }, [b]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.x, {
       ref: f,
@@ -28,7 +28,7 @@ function u(e) {
         minHeight: b
       } : true,
       title: t,
-      description: y ? true : n,
+      description: p ? true : n,
       secondaryTrailingElement: (0, r.jsx)(a.sXD, {
         className: o()(s.icon, {
           [s.iconClosed]: !i

@@ -20,18 +20,18 @@ function a(e) {
     useSubtitle: d,
     useDisabled: f,
     onValueRender: b,
-    asValueChanges: p
-  } = t, [y] = l.useState(() => a()), j = u(), v = null == d ? true : d(), m = null == f ? true : f();
+    asValueChanges: y
+  } = t, [p] = l.useState(() => a()), v = u(), m = null == d ? true : d(), j = null == f ? true : f();
   return (0, r.jsx)(o.X, {
     children: (0, r.jsx)(i.iRW, {
-      label: j,
-      description: v,
-      disabled: m,
-      initialValue: y,
+      label: v,
+      description: m,
+      disabled: j,
+      initialValue: p,
       minValue: c,
       maxValue: s,
       onValueRender: b,
-      asValueChanges: p,
+      asValueChanges: y,
       onValueChange: n,
       orientation: "horizontal"
     })

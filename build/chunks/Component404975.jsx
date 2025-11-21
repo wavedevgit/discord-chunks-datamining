@@ -1,7 +1,7 @@
 /** Chunk was on 16985 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => m
+  P: () => j
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,14 +19,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk845435 = require("./845435.js");
 
-function m(e) {
+function j(e) {
   let {
     root: t,
     header: n,
     footer: i,
-    onClose: y,
-    emptyState: m
-  } = e, x = p.Z.useField("showNavigationMobile"), h = l.useRef(null), O = l.useMemo(() => {
+    onClose: p,
+    emptyState: j
+  } = e, h = y.Z.useField("showNavigationMobile"), x = l.useRef(null), O = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -49,7 +49,7 @@ function m(e) {
     return t.layout.forEach(t => {
       t.hoisted ? e.push(t) : n.push(t)
     }), [e, n]
-  }, [t.layout]), C = (0, f.Ll)(), _ = (0, u.Z)("settings-sidebar", h);
+  }, [t.layout]), C = (0, f.Ll)(), _ = (0, u.Z)("settings-sidebar", x);
   return (0, r.jsx)(s.f6W, {
     theme: C,
     children: e => (0, r.jsx)(d.ZP, {
@@ -59,20 +59,20 @@ function m(e) {
           visibleContent: l
         } = t;
         return (0, r.jsxs)("div", {
-          className: o()(v.sidebar, e, {
-            [v.mobile]: c.tq,
-            [v.mobileNavigationOpen]: x
+          className: o()(m.sidebar, e, {
+            [m.mobile]: c.tq,
+            [m.mobileNavigationOpen]: h
           }),
           children: [(0, r.jsxs)("div", {
-            className: v.fixedContent,
+            className: m.fixedContent,
             children: [c.tq && (0, r.jsx)("div", {
-              className: v.mobileCloseButton,
+              className: m.mobileCloseButton,
               children: (0, r.jsx)(s.hU, {
                 icon: s.Uz9,
-                onClick: y,
+                onClick: p,
                 variant: "icon-only",
                 size: "sm",
-                "aria-label": j.intl.string(j.t.cpT0Cq)
+                "aria-label": v.intl.string(v.t.cpT0Cq)
               })
             }), (0, r.jsx)("div", {
               children: S.map(e => (0, r.jsx)(g, {
@@ -80,7 +80,7 @@ function m(e) {
                 visibleContent: l,
                 hoisted: true
               }, e.key))
-            }), null != n && (0, r.jsx)(n, {}), null != m && 0 === P.length && (0, r.jsx)(m, {})]
+            }), null != n && (0, r.jsx)(n, {}), null != j && 0 === P.length && (0, r.jsx)(j, {})]
           }), (0, r.jsx)(a.bG, {
             navigator: _,
             children: (0, r.jsx)(a.SJ, {
@@ -123,13 +123,13 @@ function m(e) {
                 }({
                   ref: e => {
                     var t;
-                    h.current = e, o.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+                    x.current = e, o.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
                   },
-                  className: v.navScroller,
+                  className: m.navScroller,
                   fade: true
                 }, a), n = n = {
                   children: [(0, r.jsx)("nav", {
-                    className: v.nav,
+                    className: m.nav,
                     children: P.map(e => (0, r.jsx)(g, {
                       section: e,
                       visibleContent: l
@@ -162,17 +162,17 @@ function g(e) {
     hoisted: i = false
   } = e, o = null == (t = n.useLabel) ? true : t.call(n);
   return (0, r.jsxs)("ul", {
-    className: v.section,
+    className: m.section,
     "aria-label": o,
     children: [null != o && (0, r.jsx)("div", {
-      className: v.sectionLabel,
+      className: m.sectionLabel,
       children: (0, r.jsx)(s.Heading, {
-        className: v.label,
+        className: m.label,
         variant: "heading-sm/medium",
         color: "text-tertiary",
         children: o
       })
-    }), n.layout.map(e => (0, r.jsx)(y.y, {
+    }), n.layout.map(e => (0, r.jsx)(p.y, {
       node: e,
       visibleContent: l,
       hoisted: i
