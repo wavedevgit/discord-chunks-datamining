@@ -34,7 +34,7 @@ let j = e => {
   } = p.H.useConfig({
     location: "private_browsing_perk_settings_page"
   }), N = (0, l.useCallback)(() => {
-    (0, r.Z)(x.Z5c.NITRO_HOME), t()
+    (0, i.Z)(x.Z5c.NITRO_HOME), t()
   }, [t]), T = (0, l.useCallback)(() => {
     (0, c.openUserSettings)(o.n.ADVANCED_PANEL, {
       section: x.oAB.ADVANCED
@@ -58,7 +58,7 @@ let j = e => {
         return f.intl.string(g.default.KN6HOb)
     }
   }, [j, _, I]), k = (0, l.useMemo)(() => {
-    if (!_) return (0, a.jsx)(i.xvT, {
+    if (!_) return (0, a.jsx)(r.xvT, {
       variant: "text-xs/medium",
       color: "text-secondary",
       children: f.intl.format(g.default["0UfKTY"], {
@@ -68,7 +68,7 @@ let j = e => {
     switch (j) {
       case u._n.INSTALLED:
       case u._n.EXISTING_INSTALLATION:
-        return (0, a.jsx)(i.xvT, {
+        return (0, a.jsx)(r.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: O ? f.intl.format(g.default.zwW10o, {
@@ -82,7 +82,7 @@ let j = e => {
           })
         });
       default:
-        return (0, a.jsx)(i.xvT, {
+        return (0, a.jsx)(r.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: f.intl.format(g.default.D4hu0v, {
@@ -97,7 +97,7 @@ let j = e => {
     className: b.container,
     children: [(0, a.jsx)(h.v, {
       className: b.betaBadge
-    }), (0, a.jsx)(i.$1m, {
+    }), (0, a.jsx)(r.$1m, {
       color: "nitro-pink",
       offsetBottom: false,
       className: b.gradientBackground,
@@ -109,7 +109,7 @@ let j = e => {
           alt: "Private Browsing Perk"
         }), (0, a.jsxs)("div", {
           className: b.details,
-          children: [(0, a.jsx)(i.X6q, {
+          children: [(0, a.jsx)(r.X6q, {
             variant: "heading-md/semibold",
             children: w
           }), k]

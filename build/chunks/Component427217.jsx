@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk584973 = require("./584973.jsx"),
   Chunk608007 = require("./608007.js");
 
@@ -28,10 +28,10 @@ function o(e) {
     emoji: x
   } = t, g = null != t.state && "" !== t.state ? t.state : c;
   return (0, a.jsxs)("div", {
-    className: i()(s.__invalid_container, n),
-    children: [p || null == x ? null : (0, a.jsx)(r.Z, {
+    className: r()(s.__invalid_container, n),
+    children: [p || null == x ? null : (0, a.jsx)(i.Z, {
       emoji: x,
-      className: i()(s.emoji, l, null != d ? {
+      className: r()(s.emoji, l, null != d ? {
         [d]: null == g || "" === g
       } : null),
       animate: u,

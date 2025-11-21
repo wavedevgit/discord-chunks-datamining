@@ -20,30 +20,31 @@ let u = e => {
     let t = (0, o.zL)(s.jE.HERO_LOGO),
       n = (0, o.zL)(s.jE.HERO_BANNER_STATIC),
       i = (0, o.zL)(s.jE.HERO_BANNER_ANIMATED),
-      a = (0, l.Y)("HeroBlock");
+      a = (0, o.zL)(s.jE.HERO_BANNER_RIVE),
+      c = (0, l.Y)("HeroBlock");
     return r.useMemo(() => {
       var r, l;
-      let o = null != n || null != i,
+      let o = null != n || null != i || null != a,
         s = null != n && null == i;
-      if (a) return {
+      if (c) return {
         bannerStyleOverrides: o ? true : e.bannerDisplayConfig,
         logoStyleOverrides: o ? true : e.logoDisplayConfig,
         heroLogo: null != t ? t : e.heroLogoUrl,
         heroBannerStatic: null != n ? n : e.heroBannerUrl,
         heroBannerAnimated: s ? true : null != i ? i : e.heroBannerAnimatedUrl,
-        heroBannerRive: null != i ? i : e.heroRiveUrl
+        heroBannerRive: null != a ? a : e.heroRiveUrl
       };
-      let c = null == (r = e.bannerAsset) ? true : r.animated,
-        u = (null == c ? true : c.endsWith(".riv")) ? c : e.heroRiveUrl;
+      let u = null == (r = e.bannerAsset) ? true : r.animated,
+        d = (null == u ? true : u.endsWith(".riv")) ? u : e.heroRiveUrl;
       return {
         bannerStyleOverrides: o ? true : e.bannerDisplayConfig,
         logoStyleOverrides: o ? true : e.logoDisplayConfig,
         heroLogo: null != t ? t : e.logoUrl,
         heroBannerStatic: null != n ? n : null == (l = e.bannerAsset) ? true : l.static,
-        heroBannerAnimated: s ? true : null != i ? i : c,
-        heroBannerRive: s ? true : null != i ? i : u
+        heroBannerAnimated: s ? true : null != i ? i : u,
+        heroBannerRive: s ? true : null != a ? a : d
       }
-    }, [t, n, i, e, a])
+    }, [t, n, i, a, e, c])
   },
   d = (e, t) => {
     var n, r;

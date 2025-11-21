@@ -3,11 +3,12 @@
 "use strict";
 require.d(exports, {
   CO: () => c,
-  NU: () => T,
-  X2: () => S,
-  cb: () => v,
+  NU: () => S,
+  X2: () => C,
+  cb: () => I,
   d$: () => f,
-  tw: () => u
+  tw: () => u,
+  yn: () => A
 }), require("./388685.js"), require("./35282.js");
 var Chunk358085 = require("./358085.js"),
   Chunk259493 = require("./259493.js"),
@@ -34,13 +35,15 @@ let o = (e, t) => {
   g = /\.(mp4|mov)$/i,
   E = /\.(mp4|webm|mov)$/i,
   b = /\.(mp4|webm|mov)$/i,
-  y = (0, Chunk358085.isIOS)() ? g : (0, Chunk358085.isAndroid)() ? E : b,
-  O = e => (0, a.W)() && i.Z.getConfig({
+  y = /\.(riv)$/i,
+  O = (0, Chunk358085.isIOS)() ? g : (0, Chunk358085.isAndroid)() ? E : b,
+  v = e => (0, a.W)() && i.Z.getConfig({
     location: "isWebPlayerVideoUrl"
   }).enabled && o(e, m),
-  v = e => o(e, y) || O(e),
-  I = e => null != e && (0, a.W)() && i.Z.getConfig({
+  I = e => o(e, O) || v(e),
+  T = e => null != e && (0, a.W)() && i.Z.getConfig({
     location: "isWebPlayerVideoFile"
   }).enabled && m.test(e),
-  T = e => null != e && (y.test(e) || I(e)),
-  S = e => s(e, "video")
+  S = e => null != e && (O.test(e) || T(e)),
+  A = e => null != e && y.test(e),
+  C = e => s(e, "video")

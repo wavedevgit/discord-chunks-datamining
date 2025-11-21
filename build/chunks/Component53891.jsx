@@ -34,7 +34,7 @@ function b(e) {
   let {
     isAdopting: n,
     onAdoptTag: l,
-    onEditProfile: i
+    onEditProfile: r
   } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), c = [{
     text: g.intl.string(g.t.jwEaiX),
     loading: n,
@@ -42,7 +42,7 @@ function b(e) {
     variant: "primary"
   }, {
     text: g.intl.string(g.t.s5vZlQ),
-    onClick: i,
+    onClick: r,
     variant: "secondary"
   }];
   return (0, a.jsxs)(a.Fragment, {
@@ -52,7 +52,7 @@ function b(e) {
       position: "top",
       graphic: {
         type: "dynamic",
-        component: r.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+        component: i.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile
@@ -78,7 +78,7 @@ function v(e) {
       lastSeenInfo: {
         tag: e.guild.profile.tag
       }
-    }), (0, d.Qd)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, x.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
+    }), (0, d.Qd)(r.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, x.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
   }
   let {
     isAdopting: n,
@@ -101,7 +101,7 @@ function v(e) {
       position: "top",
       graphic: {
         type: "dynamic",
-        component: r.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+        component: i.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile

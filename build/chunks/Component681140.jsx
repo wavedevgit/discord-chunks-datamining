@@ -31,7 +31,7 @@ function f(e) {
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)("div", {
       className: x.detailsRow,
-      children: (0, a.jsx)(i.Text, {
+      children: (0, a.jsx)(r.Text, {
         variant: "text-sm/normal",
         children: t
       })
@@ -39,7 +39,7 @@ function f(e) {
       className: x.nestedDetailsList,
       children: [0 === n.length && (0, a.jsx)("div", {
         className: x.detailsRow,
-        children: (0, a.jsx)(i.Text, {
+        children: (0, a.jsx)(r.Text, {
           variant: "text-sm/normal",
           children: "None"
         })
@@ -50,7 +50,7 @@ function f(e) {
           children: [(0, a.jsx)(c.ZP, {
             guild: t,
             iconSize: 16
-          }), (0, a.jsx)(i.Text, {
+          }), (0, a.jsx)(r.Text, {
             variant: "text-sm/normal",
             children: t.name
           })]
@@ -65,7 +65,7 @@ function b(e) {
   let {
     userState: n
   } = e, {
-    user: r,
+    user: i,
     searchWorkerUser: s,
     guildMembers: d,
     guildMemberRequests: g
@@ -73,12 +73,12 @@ function b(e) {
     let {
       ok: t
     } = e;
-    return t ? (0, a.jsx)(i.owK, {
+    return t ? (0, a.jsx)(r.owK, {
       size: "sm",
-      color: i.TVs.colors.STATUS_POSITIVE
-    }) : (0, a.jsx)(i.Mgn, {
+      color: r.TVs.colors.STATUS_POSITIVE
+    }) : (0, a.jsx)(r.Mgn, {
       size: "sm",
-      color: i.TVs.colors.STATUS_DANGER
+      color: r.TVs.colors.STATUS_DANGER
     })
   }, []);
   return (0, a.jsxs)("div", {
@@ -86,25 +86,25 @@ function b(e) {
     children: [(0, a.jsxs)("div", {
       className: x.detailsRow,
       children: [b({
-        ok: null != r
-      }), (0, a.jsx)(i.Text, {
+        ok: null != i
+      }), (0, a.jsx)(r.Text, {
         variant: "text-sm/normal",
-        children: null != r ? "User exists in UserStore" : "User does not exist in UserStore"
+        children: null != i ? "User exists in UserStore" : "User does not exist in UserStore"
       })]
-    }), null != r && (0, a.jsx)("div", {
+    }), null != i && (0, a.jsx)("div", {
       className: x.nestedDetailsList,
       children: (0, a.jsx)("div", {
         className: x.detailsRow,
-        children: (0, a.jsx)(i.Text, {
+        children: (0, a.jsx)(r.Text, {
           variant: "text-sm/normal",
-          children: "username: ".concat(r.username)
+          children: "username: ".concat(i.username)
         })
       })
     }), (0, a.jsxs)("div", {
       className: x.detailsRow,
       children: [b({
         ok: null != s
-      }), (0, a.jsx)(i.Text, {
+      }), (0, a.jsx)(r.Text, {
         variant: "text-sm/normal",
         children: null != s ? "User exists in User Search Worker" : "User does not exist in User Search Worker"
       })]
@@ -112,19 +112,19 @@ function b(e) {
       className: x.nestedDetailsList,
       children: [(0, a.jsx)("div", {
         className: x.detailsRow,
-        children: (0, a.jsx)(i.Text, {
+        children: (0, a.jsx)(r.Text, {
           variant: "text-sm/normal",
           children: "username: ".concat(s.username)
         })
       }), (0, a.jsx)("div", {
         className: x.detailsRow,
-        children: (0, a.jsx)(i.Text, {
+        children: (0, a.jsx)(r.Text, {
           variant: "text-sm/normal",
           children: "global name: ".concat(null != (t = s.globalName) ? t : "—")
         })
       }), (0, a.jsx)("div", {
         className: x.detailsRow,
-        children: (0, a.jsx)(i.Text, {
+        children: (0, a.jsx)(r.Text, {
           variant: "text-sm/normal",
           children: "nicknames:"
         })
@@ -132,27 +132,27 @@ function b(e) {
         className: x.nestedDetailsList,
         children: [0 === Object.keys(s.nicknames).length && (0, a.jsx)("div", {
           className: x.detailsRow,
-          children: (0, a.jsx)(i.Text, {
+          children: (0, a.jsx)(r.Text, {
             variant: "text-sm/normal",
             children: "None"
           })
         }), Object.entries(s.nicknames).map(e => {
-          let [t, n] = e, l = m.Z.getGuild(t), r = u.Z.getChannel(t);
+          let [t, n] = e, l = m.Z.getGuild(t), i = u.Z.getChannel(t);
           return (0, a.jsxs)("div", {
             className: x.detailsRow,
             children: [null != l && (0, a.jsx)(c.ZP, {
               guild: l,
               iconSize: 16
-            }), null != l && (0, a.jsx)(i.Text, {
+            }), null != l && (0, a.jsx)(r.Text, {
               variant: "text-sm/normal",
               children: l.name
-            }), null == l && null != r && (0, a.jsx)(i.Text, {
+            }), null == l && null != i && (0, a.jsx)(r.Text, {
               variant: "text-sm/normal",
-              children: (0, o.F6)(r, h.default, p.Z)
-            }), (0, a.jsx)(i.Text, {
+              children: (0, o.F6)(i, h.default, p.Z)
+            }), (0, a.jsx)(r.Text, {
               variant: "text-sm/normal",
               children: " (".concat(t, ")")
-            }), null != n && "" !== n && (0, a.jsx)(i.Text, {
+            }), null != n && "" !== n && (0, a.jsx)(r.Text, {
               variant: "text-sm/normal",
               children: " - ".concat(n)
             })]
@@ -163,7 +163,7 @@ function b(e) {
       className: x.detailsRow,
       children: [b({
         ok: d.length > 0
-      }), (0, a.jsx)(i.Text, {
+      }), (0, a.jsx)(r.Text, {
         variant: "text-sm/normal",
         children: d.length > 0 ? "Guild members exist:" : "No guild members exist"
       })]
@@ -179,7 +179,7 @@ function b(e) {
           children: [(0, a.jsx)(c.ZP, {
             guild: n,
             iconSize: 16
-          }), (0, a.jsxs)(i.Text, {
+          }), (0, a.jsxs)(r.Text, {
             variant: "text-sm/normal",
             children: [n.name, "" !== l ? " - ".concat(l) : ""]
           })]
@@ -187,9 +187,9 @@ function b(e) {
       })
     }), (0, a.jsxs)("div", {
       className: x.detailsRow,
-      children: [(0, a.jsx)(i.d3s, {
+      children: [(0, a.jsx)(r.d3s, {
         size: "sm"
-      }), (0, a.jsx)(i.Text, {
+      }), (0, a.jsx)(r.Text, {
         variant: "text-sm/normal",
         children: "GuildMemberRequesterStore State"
       })]

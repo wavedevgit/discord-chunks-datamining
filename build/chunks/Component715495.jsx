@@ -54,7 +54,7 @@ function j(e, t) {
 
 function _() {
   var e, t;
-  let [n, i] = (0, Chunk473749.useState)(false), [s, d] = (0, Chunk473749.useState)(false), [h, g] = (0, Chunk473749.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
+  let [n, r] = (0, Chunk473749.useState)(false), [s, d] = (0, Chunk473749.useState)(false), [h, g] = (0, Chunk473749.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
     setToolsCache: N,
     removeToolsCache: T
   } = (0, Chunk396821.L3)(), {
@@ -160,10 +160,10 @@ function _() {
 function y(e) {
   let {
     nameplate: t
-  } = e, [n, i] = (0, l.useState)(320), s = (0, l.useRef)(null), o = (0, l.useRef)(null), c = (0, l.useRef)(null), d = (0, l.useRef)(document), u = (0, l.useCallback)(e => {
+  } = e, [n, r] = (0, l.useState)(320), s = (0, l.useRef)(null), o = (0, l.useRef)(null), c = (0, l.useRef)(null), d = (0, l.useRef)(document), u = (0, l.useCallback)(e => {
     if (null != s.current) {
       let t = s.current.getBoundingClientRect();
-      i(Math.max(264, Math.min(432, e.clientX - t.left)))
+      r(Math.max(264, Math.min(432, e.clientX - t.left)))
     }
   }, []), m = (0, l.useCallback)(e => {
     e.preventDefault(), e.stopPropagation();
@@ -179,7 +179,7 @@ function y(e) {
   }, [u]);
   return (0, l.useEffect)(() => () => {
     null != o.current && (d.current.removeEventListener("mousemove", o.current), o.current = null), null != c.current && (d.current.removeEventListener("mouseup", c.current), c.current = null)
-  }, []), (0, a.jsx)(r.zJl, {
+  }, []), (0, a.jsx)(i.zJl, {
     className: b.previewsContainer,
     orientation: "horizontal",
     children: (0, a.jsxs)("div", {
@@ -188,17 +188,17 @@ function y(e) {
       style: {
         width: "".concat(n, "px")
       },
-      children: [(0, a.jsx)(r.Text, {
+      children: [(0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
         children: "Memberlist"
       }), (0, a.jsx)(N, {
         nameplate: t
-      }), (0, a.jsx)(r.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
         children: "DMs"
       }), (0, a.jsx)(T, {
         nameplate: t
-      }), (0, a.jsx)(r.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
         children: "RTC"
       }), (0, a.jsx)(O, {
@@ -219,10 +219,10 @@ function C(e) {
   } = e;
   return (0, a.jsxs)("div", {
     className: b.uploaded,
-    children: [(0, a.jsx)(r.P3F, {
+    children: [(0, a.jsx)(i.P3F, {
       onClick: () => l(t),
       className: b.xicon,
-      children: (0, a.jsx)(r.Dio, {
+      children: (0, a.jsx)(i.Dio, {
         size: "custom",
         width: 16,
         height: 16,
@@ -234,7 +234,7 @@ function C(e) {
       alt: ""
     }), (0, a.jsx)("div", {
       className: b.uploadedControls,
-      children: (0, a.jsx)(r.Button, {
+      children: (0, a.jsx)(i.Button, {
         onClick: () => n(t),
         size: "sm",
         variant: "secondary",
@@ -251,10 +251,10 @@ function S(e) {
   } = e;
   return (0, a.jsxs)("div", {
     className: b.flex,
-    children: [(0, a.jsx)(r.Text, {
+    children: [(0, a.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: "coming soon"
-    }), (0, a.jsx)(r.Button, {
+    }), (0, a.jsx)(i.Button, {
       variant: "secondary",
       size: "sm",
       text: t,
@@ -271,7 +271,7 @@ function E(e) {
   } = e;
   return (0, a.jsxs)("div", {
     className: b.hexInput,
-    children: [(0, a.jsx)(r.Text, {
+    children: [(0, a.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: t
     }), (0, a.jsx)("input", {
@@ -287,12 +287,12 @@ function E(e) {
 function N(e) {
   let {
     nameplate: t
-  } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  } = e, n = (0, r.e7)([d.default], () => d.default.getCurrentUser());
   return (0, a.jsx)("div", {
     className: b.preview,
     children: (0, a.jsxs)("div", {
       className: b.simArea,
-      children: [(0, a.jsx)(r.Text, {
+      children: [(0, a.jsx)(i.Text, {
         className: b.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
@@ -300,7 +300,7 @@ function N(e) {
         nameplate: t,
         user: n,
         currentUser: n
-      }), (0, a.jsx)(r.Text, {
+      }), (0, a.jsx)(i.Text, {
         className: b.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
@@ -328,13 +328,13 @@ function T(e) {
     className: b.preview,
     children: (0, a.jsxs)("div", {
       className: b.simArea,
-      children: [(0, a.jsx)(r.Text, {
+      children: [(0, a.jsx)(i.Text, {
         className: b.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
       }), (0, a.jsx)(g.Z, {
         nameplate: t
-      }), (0, a.jsx)(r.Text, {
+      }), (0, a.jsx)(i.Text, {
         className: b.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk422665 = require("./422665.js");
@@ -15,7 +15,7 @@ function d(e) {
   let {
     icon: t,
     title: n,
-    subtitle: i,
+    subtitle: r,
     children: d,
     className: u,
     isExpanded: m,
@@ -42,7 +42,7 @@ function d(e) {
       }
     }, [g, C, j]);
   return (0, a.jsxs)("div", {
-    className: r()(c.accordionContainer, u, {
+    className: i()(c.accordionContainer, u, {
       [c.opened]: C
     }),
     children: [(0, a.jsxs)(s.P3F, {
@@ -57,13 +57,13 @@ function d(e) {
           variant: "eyebrow",
           color: "header-secondary",
           children: n
-        }), null != i && "" !== i && (0, a.jsx)(s.Text, {
+        }), null != r && "" !== r && (0, a.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "interactive-normal",
-          children: i
+          children: r
         })]
       }), (0, a.jsx)("div", {
-        className: r()(c.caret, {
+        className: i()(c.caret, {
           [c.opened]: C
         }),
         children: (0, a.jsx)(o.Z, {
@@ -74,7 +74,7 @@ function d(e) {
       })]
     }), (0, a.jsx)("div", {
       ref: v,
-      className: r()(c.content, {
+      className: i()(c.content, {
         [c.opened]: C
       }),
       style: E,
