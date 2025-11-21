@@ -10,7 +10,7 @@ require.d(exports, {
   B3: () => nt,
   BI: () => ni,
   BM: () => tS,
-  Bg: () => ek,
+  Bg: () => ej,
   Bz: () => tT,
   C1: () => tx,
   DR: () => ei,
@@ -26,7 +26,7 @@ require.d(exports, {
   Jg: () => eW,
   K: () => eF,
   KM: () => e0,
-  Kr: () => ej,
+  Kr: () => ek,
   LM: () => eV,
   M1: () => nn,
   MC: () => $,
@@ -63,7 +63,7 @@ require.d(exports, {
   _x: () => eu,
   b7: () => tc,
   bA: () => tz,
-  f$: () => tk,
+  f$: () => tj,
   f2: () => e8,
   fY: () => tC,
   gI: () => tN,
@@ -93,7 +93,7 @@ require.d(exports, {
   wj: () => eZ,
   xN: () => eU,
   xn: () => ex,
-  yH: () => tj,
+  yH: () => tk,
   yI: () => eI,
   ys: () => eY,
   z1: () => tq,
@@ -536,7 +536,7 @@ function eM(e) {
   return null != t && "expiresAtPremium" in t && null != t.expiresAtPremium ? tD(t.expiresAtPremium) : null
 }
 
-function ej(e) {
+function ek(e) {
   let t = ex(e);
   if (null == t || !("expiresAt" in t) || null == t.expiresAt) return null;
   let n = new Date(e.expiresAt),
@@ -565,7 +565,7 @@ function ej(e) {
   }
 }
 
-function ek(e) {
+function ej(e) {
   return e.rewardsConfig.rewards.some(e => e.type === c.w.FRACTIONAL_PREMIUM)
 }
 
@@ -654,7 +654,7 @@ function eJ(e) {
 }
 
 function e$(e) {
-  if (!(0, j.CD)("QuestUtils") || null == e) returnfalse;
+  if (!(0, k.CD)("QuestUtils") || null == e) returnfalse;
   let t = ee(e);
   return null != t && t.length > 1
 }
@@ -1013,7 +1013,7 @@ function tM(e) {
   })
 }
 
-function tj(e) {
+function tk(e) {
   let t = eq({
       quest: e
     }) || eX({
@@ -1024,7 +1024,7 @@ function tj(e) {
   return t && r.push(G.cd.DESKTOP), n && r.push(G.cd.CONSOLE), r
 }
 
-function tk(e) {
+function tj(e) {
   var t;
   let n = null == (t = ex(e)) ? true : t.expirationMode;
   return null != n && z.has(n)
@@ -1032,7 +1032,7 @@ function tk(e) {
 
 function tU(e) {
   var t;
-  return tk(e) && (null == (t = ex(e)) ? true : t.expirationMode) === l.n.PREMIUM_PERMANENT
+  return tj(e) && (null == (t = ex(e)) ? true : t.expirationMode) === l.n.PREMIUM_PERMANENT
 }
 
 function tG(e) {
@@ -1228,7 +1228,7 @@ function t7(e) {
 }
 
 function t9(e, t) {
-  if (ek(e)) return (0, k.o8)(e);
+  if (ej(e)) return (0, j.o8)(e);
   let n = nn(e);
   return t ? n.messages.nameWithArticle : n.messages.name
 }

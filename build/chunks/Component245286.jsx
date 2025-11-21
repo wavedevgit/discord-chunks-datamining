@@ -1,4 +1,4 @@
-/** Chunk was on 16985 **/
+/** Chunk was on 62191 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => C
@@ -60,7 +60,7 @@ function C(e) {
     {
       node: a,
       directory: s
-    } = (0, f.Z)(g.Z, o),
+    } = (0, f.Z)(m.Z, o),
     u = null != t && null != s.entry(t) ? t : true,
     p = l.useRef(null);
   return ((0, c.ZP)(() => {
@@ -91,7 +91,7 @@ function C(e) {
     directory: s,
     sidebarHeader: P,
     emptyState: _,
-    sidebarFooter: m.Z,
+    sidebarFooter: g.Z,
     onPanelChange: e => {
       let t = (0, h.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (S({

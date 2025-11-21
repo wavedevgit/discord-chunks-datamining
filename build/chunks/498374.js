@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 498374, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 62191 **/
+/** chunk id: 498374, original params: e,t,n (module,exports,require) **/
 module.exports = {
   settingsContainer: "settingsContainer_ff76ae",
   headerContainer: "headerContainer_ff76ae",

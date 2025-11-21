@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 868802, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 9452 **/
+/** chunk id: 868802, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  M: () => w
+  M: () => v
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,7 +14,6 @@ var Chunk793030 = require("./793030.js"),
   Chunk612659 = require("./612659.js"),
   Chunk5900 = require("./5900.js"),
   Chunk953865 = require("./953865.jsx"),
-  Chunk299886 = require("./299886.js"),
   Chunk37279 = require("./37279.jsx"),
   Chunk969521 = require("./969521.jsx"),
   Chunk584197 = require("./584197.jsx"),
@@ -31,26 +29,11 @@ var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk163646 = require("./163646.js"),
   Chunk498374 = require("./498374.js"),
-  Chunk95213 = require("./95213.js"),
-  Chunk882709 = require("./882709.js"),
+  Chunk93109 = require("./93109.js"),
+  Chunk446818 = require("./446818.js"),
   Chunk932889 = require("./932889.js");
-let w = () => {
-    let e = (0, Chunk612659.m)(),
-      {
-        isSupportedPrivateBrowsingPerkPlatform: t,
-        isWeb: n,
-        installationStatus: a,
-        perkAvailableToUser: o
-      } = (0, Chunk953865.xf)(),
-      {
-        enabled: c
-      } = Chunk299886.H.useConfig({
-        location: "private_browsing_perk_settings_page"
-      }),
-      h = (0, Chunk511857.a)((0, Chunk410030.ZP)()),
-      m = !module || Chunk159691;
-    if (!exports && !require || !Chunk740594 || !Chunk584197) return null;
-    let g = [Chunk5900._n.EXISTING_INSTALLATION, Chunk5900._n.ZERO_TRUST].includes(Chunk952265) || !module;
+let v = () => {
+    let t = (0, Chunk511857.a)((0, Chunk410030.ZP)());
     return (0, Chunk54381.jsxs)("div", {
       className: Chunk498374.settingsContainer,
       children: [(0, Chunk54381.jsxs)(Chunk793030.$1m, {
@@ -62,11 +45,11 @@ let w = () => {
             children: [(0, Chunk54381.jsxs)("div", {
               className: Chunk498374.headerLogos,
               children: [(0, Chunk54381.jsx)(Chunk589072.Z, {
-                color: Chunk969521 ? "black" : "white"
+                color: module ? "black" : "white"
               }), (0, Chunk54381.jsx)("div", {
                 className: Chunk498374.headerDivider
               }), (0, Chunk54381.jsx)("img", {
-                src: Chunk969521 ? Chunk882709 : Chunk95213,
+                src: module ? Chunk446818 : Chunk93109,
                 alt: "Cloudflare",
                 width: 103,
                 height: 15
@@ -75,7 +58,7 @@ let w = () => {
           })
         }), (0, Chunk54381.jsxs)("div", {
           className: Chunk498374.contentContainer,
-          children: [Chunk703656 && (0, Chunk54381.jsx)("img", {
+          children: [(0, Chunk54381.jsx)("img", {
             src: Chunk932889,
             width: "100",
             alt: "Private browsing perk logo"
@@ -86,16 +69,16 @@ let w = () => {
             className: Chunk498374.contentSpacer
           }), (0, Chunk54381.jsx)("div", {
             className: Chunk498374.ctaContainer,
-            children: (0, Chunk54381.jsx)(L, {})
+            children: (0, Chunk54381.jsx)(m, {})
           })]
         })]
       }), (0, Chunk54381.jsx)(Chunk868087.p, {})]
     })
   },
-  L = () => {
+  m = () => {
     let {
-      installationStatus: e,
-      isWeb: t,
+      installationStatus: t,
+      isWeb: e,
       setInstallationStatus: n
     } = (0, Chunk953865.xf)(), s = (0, Chunk612659.m)();
     if (exports) return (0, Chunk54381.jsx)(Chunk969521.U, {});

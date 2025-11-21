@@ -167,7 +167,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
       })]
     })
   }),
-  j = Chunk473749.forwardRef(function(e, t) {
+  k = Chunk473749.forwardRef(function(e, t) {
     var n, a;
     let {
       emoji: _,
@@ -182,7 +182,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
       trackUserProfileAction: R
     } = (0, b.KZ)(), P = (0, h.p)({
       location: "CustomStatusBubble"
-    }), D = null != _ ? S.Hp : 0, w = S.hT + D, L = S.YF + D, M = i.useRef(null), j = i.useRef(null), k = i.useRef(null), U = i.useRef(w), G = i.useRef(L), B = null != _ && null == p, [Z, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!B && I), K = I && Z, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
+    }), D = null != _ ? S.Hp : 0, w = S.hT + D, L = S.YF + D, M = i.useRef(null), k = i.useRef(null), j = i.useRef(null), U = i.useRef(w), G = i.useRef(L), B = null != _ && null == p, [Z, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!B && I), K = I && Z, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
     i.useEffect(() => () => q.stop(), [q]), i.useEffect(() => {
       null == N || N.onInteractionPopoutTargetRefChange(M)
     }, [N]);
@@ -194,9 +194,9 @@ let M = Chunk473749.forwardRef(function(e, t) {
       }
     }));
     i.useLayoutEffect(() => {
-      if (F(true), null == j.current || null == k.current || !K) return;
-      let e = j.current.getBoundingClientRect().height,
-        t = k.current.getBoundingClientRect().height;
+      if (F(true), null == k.current || null == j.current || !K) return;
+      let e = k.current.getBoundingClientRect().height,
+        t = j.current.getBoundingClientRect().height;
       W(t > e), U.current = e, G.current = t, Q({
         maxHeight: "".concat(Math.min(V ? U.current : G.current, V ? w : L), "px")
       })
@@ -235,12 +235,12 @@ let M = Chunk473749.forwardRef(function(e, t) {
       }),
       en = null == ee || "" === p ? et : ee,
       er = (0, r.jsxs)("div", {
-        ref: j,
+        ref: k,
         className: C.content,
         children: [$, en]
       }),
       ei = (0, r.jsxs)("div", {
-        ref: k,
+        ref: j,
         className: o()(C.content, C.unclamped),
         children: [$, en]
       }),
@@ -320,14 +320,14 @@ let M = Chunk473749.forwardRef(function(e, t) {
       })]
     })
   }),
-  k = Chunk473749.forwardRef(function(e, t) {
+  j = Chunk473749.forwardRef(function(e, t) {
     var {
       emoji: n,
       text: a,
       onCloseProfile: o
     } = e, s = w(e, ["emoji", "text", "onCloseProfile"]);
     let [l, c] = i.useState(false);
-    return (0, r.jsx)(j, D(R({}, s), {
+    return (0, r.jsx)(k, D(R({}, s), {
       ref: t,
       emoji: n,
       text: a,
@@ -375,7 +375,7 @@ function U(e) {
     sourceType: T.n_.STATUS,
     onAction: u,
     onClose: () => N(false),
-    children: () => (0, r.jsx)(j, D(R({}, c), {
+    children: () => (0, r.jsx)(k, D(R({}, c), {
       ref: E,
       emoji: t,
       text: n,
@@ -411,7 +411,7 @@ let G = Chunk473749.forwardRef(function(e, t) {
       n = null != s && "" !== s ? s : null;
     return (0, r.jsx)(p.Gt, {
       value: b,
-      children: (0, r.jsx)(j, R({
+      children: (0, r.jsx)(k, R({
         emoji: e,
         text: n,
         placeholderText: u,
@@ -438,7 +438,7 @@ let G = Chunk473749.forwardRef(function(e, t) {
     }, h))
   }) : O ? (0, r.jsx)(p.Gt, {
     value: b,
-    children: (0, r.jsx)(k, R({
+    children: (0, r.jsx)(j, R({
       emoji: I,
       text: S,
       onCloseProfile: o,
@@ -446,7 +446,7 @@ let G = Chunk473749.forwardRef(function(e, t) {
     }, h))
   }) : (0, r.jsx)(p.Gt, {
     value: b,
-    children: (0, r.jsx)(j, R({
+    children: (0, r.jsx)(k, R({
       emoji: I,
       text: S,
       ref: t

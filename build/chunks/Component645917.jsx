@@ -131,10 +131,10 @@ function y(e) {
     M = i.useCallback(e => {
       null == O || O(e)
     }, [O]),
-    j = i.useCallback(e => {
+    k = i.useCallback(e => {
       w(e)
     }, []),
-    k = A ? f.caretHoverable : true,
+    j = A ? f.caretHoverable : true,
     U = p({
       targetElementRef: P.targetElementRef,
       shouldShow: P.shouldShow,
@@ -143,7 +143,7 @@ function y(e) {
       caretConfig: L,
       onRequestClose: x,
       gradientColor: y,
-      onPositionChange: j,
+      onPositionChange: k,
       onNudgeChange: R,
       scrollBehavior: T,
       modal: C,
@@ -176,7 +176,7 @@ function y(e) {
         actions: E,
         className: f.actionBar
       }) : null, null != L && (0, r.jsx)(c.$, {
-        className: k
+        className: j
       })]
     })
   }))

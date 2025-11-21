@@ -20,7 +20,7 @@ require.d(exports, {
   it: () => x,
   lL: () => ee,
   lx: () => Q,
-  m0: () => j,
+  m0: () => k,
   nE: () => V,
   pf: () => Z,
   qm: () => X,
@@ -178,7 +178,7 @@ async function M() {
     }
   }
 }
-async function j(e) {
+async function k(e) {
   let {
     questId: t,
     streamKey: n,
@@ -222,7 +222,7 @@ async function j(e) {
   }
 }
 
-function k(e) {
+function j(e) {
   var t, n;
   return e instanceof c.CaptchaCancelError || null != e && "object" == typeof e && (400 === e.status && (null == (t = e.body) ? true : t.captcha_key) != null || null != e.captchaFields && !!(Object.keys(e.captchaFields).length > 0) || (null == (n = e.fields) ? true : n.captcha_key) != null || false)
 }
@@ -265,7 +265,7 @@ async function G(e, t) {
     return a.Z.dispatch({
       type: "QUESTS_ENROLL_FAILURE",
       questId: e
-    }), k(t) ? {
+    }), j(t) ? {
       type: "captcha_failed"
     } : {
       type: "unknown_error"

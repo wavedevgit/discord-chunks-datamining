@@ -1,3 +1,3 @@
 /** Chunk was on 52399 **/
-/** chunk id: 164088, original params: p (module,exports,require) **/
-module.exports = JSON.parse('{"M6WhAQ":["M6WhAQ"],"00vkCU":["00vkCU"],"Y4q0Nu":["Y4q0Nu"]}')
+/** chunk id: 164088, original params: a (module,exports,require) **/
+module.exports = JSON.parse('{"M6WhAQ":["Baixar"],"00vkCU":["Conectando…"],"Y4q0Nu":["Ativar"]}')

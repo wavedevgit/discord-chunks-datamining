@@ -85,7 +85,7 @@ function I(e) {
       trackingArea: s.j_.CLOUD_PLAY,
       onClick: x
     }
-  }, [x]), j = (0, l.G)(u), k = i.useMemo(() => null != w ? w : null != j && N ? j : true, [N, w, j]), U = !(0, h.Z)(C, T, u.id), G = (0, p.dQ)(P, null == (t = T.activity) ? true : t.type, U);
+  }, [x]), k = (0, l.G)(u), j = i.useMemo(() => null != w ? w : null != k && N ? k : true, [N, w, k]), U = !(0, h.Z)(C, T, u.id), G = (0, p.dQ)(P, null == (t = T.activity) ? true : t.type, U);
   return U ? (0, r.jsx)(E.Z, {
     message: T,
     application: u,
@@ -97,7 +97,7 @@ function I(e) {
     isEmbeddedApplication: N,
     tryWithGdnAction: M,
     staticBannerSrc: D,
-    onClickContent: k,
+    onClickContent: j,
     iconSrc: R,
     onView: S,
     presenceActivity: C,
@@ -113,7 +113,7 @@ function I(e) {
     isEmbeddedApplication: N,
     tryWithGdnAction: M,
     staticBannerSrc: D,
-    onClickContent: k,
+    onClickContent: j,
     iconSrc: R,
     onView: S,
     presenceActivity: C,

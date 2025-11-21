@@ -12,7 +12,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk911969 = require("./911969.js"),
   Chunk160404 = require("./160404.js"),
-  Chunk695346 = require("./695346.js"),
+  Chunk519207 = require("./519207.js"),
   Chunk131704 = require("./131704.js"),
   Chunk314897 = require("./314897.js"),
   Chunk592125 = require("./592125.js"),
@@ -24,7 +24,7 @@ var Chunk473749 = require("./473749.js"),
 function m(e, t) {
   var n, r, i, a, o;
   let _, h = null != (_ = e instanceof c.Sf && e.isThread() && null != (i = d.Z.getChannel(e.parent_id)) ? i : e) ? O(_) : true,
-    m = l.xM.getSetting(),
+    m = (0, l.GG)(),
     g = u.default.getId(),
     y = null != (a = null == (n = p.default.getCurrentUser()) ? true : n.nsfwAllowed) && a,
     v = null != h && null != (o = null == (r = f.ZP.getMember(h, g)) ? true : r.roles) ? o : [],
@@ -56,7 +56,7 @@ function g(e, t) {
       return e
     }, [e]),
     i = null != n ? O(n) : true,
-    o = l.xM.useSetting(),
+    o = (0, l.Xg)(),
     _ = (0, a.e7)([u.default], () => u.default.getId()),
     h = (0, a.e7)([p.default], () => {
       var e, t;

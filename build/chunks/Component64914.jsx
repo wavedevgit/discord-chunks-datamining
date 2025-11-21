@@ -2,8 +2,8 @@
 /** chunk id: 64914, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => D,
-  fD: () => R
+  ZP: () => P,
+  fD: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,12 +22,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk494620 = require("./494620.jsx"),
   Chunk399970 = require("./399970.jsx"),
   Chunk273313 = require("./273313.jsx"),
-  Chunk868802 = require("./868802.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,20 +35,20 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,40 +59,40 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = "AppHardwareAcceleration";
+let C = "AppHardwareAcceleration";
 
-function R() {
+function N() {
   if ((0, Chunk947851.Y)("DesktopNativeUtils")) {
-    let e = Chunk433517.K.get(N);
+    let e = Chunk433517.K.get(C);
     if ("boolean" == typeof module) return module
   }
   return Chunk998502.ZP.getEnableHardwareAcceleration()
 }
 
-function P(e) {
-  (0, d.Y)("DesktopNativeUtils") ? (o.K.set(N, e), p.ZP.setEnableHardwareAcceleration(true)) : p.ZP.setEnableHardwareAcceleration(e)
+function R(e) {
+  (0, d.Y)("DesktopNativeUtils") ? (o.K.set(C, e), p.ZP.setEnableHardwareAcceleration(true)) : p.ZP.setEnableHardwareAcceleration(e)
 }
 
-function D() {
-  let [e] = Chunk473749.useState(() => R()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), d = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), p = Chunk473749.useCallback(e => {
+function P() {
+  let [e] = Chunk473749.useState(() => N()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), d = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), p = Chunk473749.useCallback(e => {
     m.bm.updateSetting(!e)
-  }, []), T = Chunk473749.useCallback(e => {
-    e ? (0, s.h7j)(e => (0, r.jsx)(E.Z, S({}, e))) : l.mc()
-  }, []), A = Chunk473749.useCallback(e => {
+  }, []), I = Chunk473749.useCallback(e => {
+    e ? (0, s.h7j)(e => (0, r.jsx)(E.Z, T({}, e))) : l.mc()
+  }, []), S = Chunk473749.useCallback(e => {
     (0, u.BV)(e, c.Z.USER_SETTINGS)
-  }, []), N = Chunk473749.useCallback(e => {
+  }, []), C = Chunk473749.useCallback(e => {
     (0, s.h7j)(t => {
-      let n = e ? I.intl.format(I.t.LYXRxL, {}) : I.intl.format(I.t.uDP3Kz, {});
-      return (0, r.jsx)(s.ConfirmModal, C(S({
-        header: I.intl.string(I.t.aqpAvn),
-        confirmText: I.intl.string(I.t.vT7ckk),
-        cancelText: I.intl.string(I.t["ETE/oC"]),
-        onConfirm: () => P(e)
+      let n = e ? v.intl.format(v.t.LYXRxL, {}) : v.intl.format(v.t.uDP3Kz, {});
+      return (0, r.jsx)(s.ConfirmModal, A(T({
+        header: v.intl.string(v.t.aqpAvn),
+        confirmText: v.intl.string(v.t.vT7ckk),
+        cancelText: v.intl.string(v.t["ETE/oC"]),
+        onConfirm: () => R(e)
       }, t), {
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
@@ -124,7 +123,7 @@ function D() {
             label: Chunk388032.intl.string(Chunk388032.t["eOC/F2"]),
             description: Chunk388032.intl.string(Chunk388032.t.Afc7l6),
             checked: module,
-            onChange: N
+            onChange: C
           }), !module && (0, Chunk54381.jsx)(Chunk494620.Z, {
             look: Chunk494620.z.WARNING,
             children: Chunk388032.intl.string(Chunk388032.t.j7S6IX)
@@ -144,7 +143,7 @@ function D() {
           label: Chunk388032.intl.string(Chunk388032.t.erOqlh),
           description: Chunk388032.intl.string(Chunk388032.t["52hMnD"]),
           checked: null != Chunk433517,
-          onChange: T
+          onChange: I
         }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
       }), (0, Chunk54381.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN,
@@ -152,14 +151,8 @@ function D() {
           label: Chunk388032.intl.string(Chunk388032.t.qDZryG),
           description: Chunk388032.intl.string(Chunk388032.t["B/qU4K"]),
           checked: Chunk947851,
-          onChange: A
+          onChange: S
         }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
-      }), (0, Chunk54381.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.SETTINGS_ADVANCED_CF_WARP,
-        children: (0, Chunk54381.jsx)(Chunk481060.Kqy, {
-          gap: 16,
-          children: (0, Chunk54381.jsx)(Chunk868802.M, {})
-        })
       })]
     })
   })

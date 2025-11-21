@@ -1,4 +1,4 @@
-/** Chunk was on 91394 **/
+/** Chunk was on 43605 **/
 /** chunk id: 905953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -38,10 +38,10 @@ function y(e) {
     hasAlreadyLinked: I,
     canStartAuthorization: w,
     startAuthorization: k
-  } = (0, c.F)(O), A = (0, x.ZP)(N), R = null == A || null == (t = A.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == O ? true : O.id));
+  } = (0, c.F)(O), R = (0, x.ZP)(N), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == O ? true : O.id));
   return null != T && null != T.edit_profile_upsell_image && null != O && P ? (0, a.jsx)(d.ZP, {
     bypassAutoDismiss: true,
-    contentTypes: I ? R ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : w ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+    contentTypes: I ? A ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : w ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,

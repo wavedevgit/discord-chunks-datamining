@@ -14,7 +14,7 @@ let o = (0, Chunk509613.qs)(Chunk313789.n.CLIPS_ENABLE, {
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["4Qw3NO"]),
   useValue: () => (0, Chunk341569.z8)(),
   usePredicate: Chunk924557.w9,
-  setValue: t => u.em({
+  setValue: t => r.em({
     clipsEnabled: t,
     trackAnalytics: true
   })

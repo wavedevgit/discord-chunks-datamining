@@ -180,8 +180,8 @@ let L = {
       }), (0, d.og)(e, Array.from(i));
       let t = m.default.getCurrentUser();
       if (null != t) {
-        var j, k;
-        let n = null != (k = null == (j = h.ZP.getMember(e, t.id)) ? true : j.flags) ? k : 0;
+        var k, j;
+        let n = null != (j = null == (k = h.ZP.getMember(e, t.id)) ? true : k.flags) ? j : 0;
         (0, d.aq)(e, {
           memberOptions: {
             flags: (0, a.mB)(n, S.q.COMPLETED_ONBOARDING, true)

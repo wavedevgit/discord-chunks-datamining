@@ -1,7 +1,7 @@
-/** Chunk was on 16985 **/
+/** Chunk was on 62191 **/
 /** chunk id: 914578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk989281 = require("./989281.js");
 
-function m(e) {
+function g(e) {
   let {
     onClose: t
   } = e;
@@ -46,7 +46,7 @@ function m(e) {
   })
 }
 
-function g() {
+function m() {
   let e = Chunk473749.useRef(null),
     t = Chunk906467.Z.isDeveloper;
   return (0, Chunk54381.jsxs)("div", {
@@ -94,7 +94,7 @@ function g() {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(m, {
+          return (0, r.jsx)(g, {
             onClose: t
           })
         },

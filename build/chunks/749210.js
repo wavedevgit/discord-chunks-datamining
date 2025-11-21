@@ -75,7 +75,7 @@ function x(e, t) {
 
 function M(e, t) {
   if (null == e) return {};
-  var n, r, i = j(e, t);
+  var n, r, i = k(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -83,14 +83,14 @@ function M(e, t) {
   return i
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let k = e => {
+let j = e => {
     C.Z.show({
       title: P.intl.string(P.t.cTaRxF),
       body: P.intl.formatToPlainString(P.t["VSd+Aj"], {
@@ -187,7 +187,7 @@ let F = {
     } catch (t) {
       if ((null == (i = t.body) ? true : i.code) === N.evJ.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED && (0, l.mN)(R.L0.JOIN_LARGE_GUILD_UNDERAGE), (null == (s = t.body) ? true : s.code) === N.evJ.TOO_MANY_USER_GUILDS) {
         let e = v.default.getCurrentUser();
-        S.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? k(N.tHP) : k(N.DZw)
+        S.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? j(N.tHP) : j(N.DZw)
       }
       throw (null == (u = t.body) ? true : u.code) === N.evJ.GUILD_AT_CAPACITY && G(), I && (null == (d = t.body) ? true : d.code) === N.evJ.UNKNOWN_GUILD && U(e), t
     }

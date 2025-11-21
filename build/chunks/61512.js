@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 61512, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => E
 });
 var Chunk323472 = require("./323472.jsx"),
   Chunk509613 = require("./509613.js"),
@@ -11,7 +11,7 @@ var Chunk323472 = require("./323472.jsx"),
   Chunk271524 = require("./271524.js"),
   Chunk388032 = require("./388032.jsx");
 let c = Chunk313789.n.NOTIFICATIONS_ADVANCED_ACCORDION,
-  E = (0, Chunk509613.CB)(c, {
+  d = (0, Chunk509613.CB)(c, {
     useTitle: t => t ? o.intl.string(o.t.RyimDk) : o.intl.string(o.t.CUICbO),
     useCollapsedSubtitle: function() {
       return (0, Chunk323472.u)(c, {
@@ -26,7 +26,7 @@ let c = Chunk313789.n.NOTIFICATIONS_ADVANCED_ACCORDION,
     },
     buildLayout: () => [Chunk291011.Z, Chunk392231.Z, Chunk271524.Z]
   }),
-  S = (0, Chunk509613.k4)(Chunk313789.n.NOTIFICATIONS_ADVANCED_CATEGORY, {
+  E = (0, Chunk509613.k4)(Chunk313789.n.NOTIFICATIONS_ADVANCED_CATEGORY, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["31DySj"]),
-    buildLayout: () => [E]
+    buildLayout: () => [d]
   })

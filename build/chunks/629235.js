@@ -1,5 +1,5 @@
-/** Chunk was on 91394 **/
-/** chunk id: 629235, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 50614 **/
+/** chunk id: 629235, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 }), require("./953529.js");
@@ -11,44 +11,44 @@ var Chunk473749 = require("./473749.js"),
   Chunk81643 = require("./81643.js"),
   Chunk469775 = require("./469775.js"),
   Chunk388032 = require("./388032.jsx");
-let u = function(e) {
+let u = function(t) {
   let {
-    onClose: t,
+    onClose: e,
     onMethodClick: n,
     classificationId: u
-  } = e, {
-    methods: m,
-    loading: p
-  } = (0, l.cj)([i.Z], () => ({
-    methods: i.Z.methods,
-    loading: i.Z.loading
+  } = t, {
+    methods: E,
+    loading: _
+  } = (0, l.cj)([a.Z], () => ({
+    methods: a.Z.methods,
+    loading: a.Z.loading
   })), {
-    initiateAgeVerification: h
-  } = (0, o.WD)({
-    onComplete: t,
+    initiateAgeVerification: f
+  } = (0, s.WD)({
+    onComplete: e,
     entryPoint: r.cU.EXPRESSIVE_GET_STARTED,
     shouldShowExpressiveModal: true,
     classificationId: u
   });
-  return a.useEffect(() => {
-    null == m && (0, s.Jh)()
-  }, [m]), {
-    ageVerificationMethods: null == m ? true : m.map(e => {
-      let t = c.ed[e];
-      if (null == t) return null;
+  return i.useEffect(() => {
+    null == E && (0, o.Jh)()
+  }, [E]), {
+    ageVerificationMethods: null == E ? true : E.map(t => {
+      let e = c.ed[t];
+      if (null == e) return null;
       let {
-        title: a,
+        title: i,
         description: l
-      } = t;
+      } = e;
       return {
-        id: e,
-        title: d.intl.string(a),
+        id: t,
+        title: d.intl.string(i),
         description: d.intl.string(l),
-        onClick: async t => {
-          (0, r.x3)(t, r.d_.EXPRESSIVE_PRIMARY, r.sU.METHOD_SELECT, e), null == n || n(), await h(e)
+        onClick: async e => {
+          (0, r.x3)(e, r.d_.EXPRESSIVE_PRIMARY, r.sU.METHOD_SELECT, t), null == n || n(), await f(t)
         }
       }
-    }).filter(e => null != e),
-    loading: p
+    }).filter(t => null != t),
+    loading: _
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 16985 **/
+/** Chunk was on 62191 **/
 /** chunk id: 867694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => o
@@ -19,12 +19,12 @@ function o(e) {
     useDisabled: u,
     useDisabledMessage: d,
     useBadge: f
-  } = n, b = c(), y = null == s ? true : s(), p = o(), v = null != (t = null == u ? true : u()) && t, j = null == d ? true : d(), m = null == f ? true : f();
+  } = n, b = c(), y = null == s ? true : s(), p = o(), v = null != (t = null == u ? true : u()) && t, j = null == d ? true : d(), g = null == f ? true : f();
   return (0, r.jsxs)(i.X, {
     children: [(0, r.jsx)(l.rsf, {
       label: b,
       description: y,
-      badge: m,
+      badge: g,
       checked: p,
       onChange: e => a(e),
       disabled: v

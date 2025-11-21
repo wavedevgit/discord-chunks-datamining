@@ -5,7 +5,7 @@ require.d(exports, {
   BU: () => tz,
   CX: () => tR,
   F3: () => ey,
-  UE: () => tj,
+  UE: () => tk,
   _7: () => eL,
   mH: () => tF,
   vt: () => eY
@@ -71,8 +71,8 @@ var y = new WeakMap,
   L = new WeakMap,
   x = new WeakMap,
   M = new WeakMap,
-  j = new WeakMap,
   k = new WeakMap,
+  j = new WeakMap,
   U = new WeakMap,
   G = new WeakMap,
   B = new WeakMap,
@@ -456,7 +456,7 @@ var y = new WeakMap,
       var t;
       null == (t = x.get(e)) || t()
     },
-    androidPendingDiffs: e => k.get(e)
+    androidPendingDiffs: e => j.get(e)
   },
   eO = ["anchor", "focus"],
   ev = ["anchor", "focus"],
@@ -546,7 +546,7 @@ var y = new WeakMap,
       text: r,
       parent: i,
       renderPlaceholder: a,
-      renderLeaf: o = e => c.createElement(ej, Object.assign({}, e))
+      renderLeaf: o = e => c.createElement(ek, Object.assign({}, e))
     } = e, s = (0, c.useRef)(null), l = (0, c.useRef)(null), u = eL(), d = (0, c.useRef)(null);
     (0, c.useEffect)(() => () => {
       d.current && d.current.disconnect()
@@ -600,14 +600,14 @@ var y = new WeakMap,
     })
   },
   eM = Chunk473749.memo(ex, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && d.xv.equals(t.leaf, e.leaf) && t.leaf[Z] === e.leaf[Z]),
-  ej = e => {
+  ek = e => {
     var {
       attributes: t,
       children: n
     } = e;
     return c.createElement("span", Object.assign({}, t), n)
   },
-  ek = e => {
+  ej = e => {
     for (var {
         decorations: t,
         isLast: n,
@@ -636,7 +636,7 @@ var y = new WeakMap,
       ref: m
     }, _)
   },
-  eU = Chunk473749.memo(ek, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && eA(t.decorations, e.decorations)),
+  eU = Chunk473749.memo(ej, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && eA(t.decorations, e.decorations)),
   eG = e => {
     var {
       decorations: t,
@@ -1024,7 +1024,7 @@ function ta(e, t) {
 }
 
 function to(e, t, n) {
-  var r = k.get(e),
+  var r = j.get(e),
     i = null == r ? true : r.find(e => {
       var {
         path: n
@@ -1225,23 +1225,23 @@ function th(e) {
     var e = t.selection && d.ML.rangeRef(t, t.selection, {
       affinity: "forward"
     });
-    j.set(t, t.marks), t_("flush", U.get(t), k.get(t));
-    for (var a = y(); l = null == (_ = k.get(t)) ? true : _[0];) {
+    k.set(t, t.marks), t_("flush", U.get(t), j.get(t));
+    for (var a = y(); l = null == (_ = j.get(t)) ? true : _[0];) {
       var l, _, p, h = M.get(t);
       true !== h && (M.delete(t), t.marks = h), h && false === c && (c = null);
       var m = tr(l);
-      t.selection && d.e6.equals(t.selection, m) || d.YR.select(t, m), l.diff.text ? d.ML.insertText(t, l.diff.text) : d.ML.deleteFragment(t), k.set(t, null == (p = k.get(t)) ? true : p.filter(e => {
+      t.selection && d.e6.equals(t.selection, m) || d.YR.select(t, m), l.diff.text ? d.ML.insertText(t, l.diff.text) : d.ML.deleteFragment(t), j.set(t, null == (p = j.get(t)) ? true : p.filter(e => {
         var {
           id: t
         } = e;
         return t !== l.id
-      })), e6(t, l) || (a = false, U.delete(t), j.delete(t), i = "action", G.delete(t), n.cancel(), r.cancel(), null == e || e.unref())
+      })), e6(t, l) || (a = false, U.delete(t), k.delete(t), i = "action", G.delete(t), n.cancel(), r.cancel(), null == e || e.unref())
     }
     var g = null == e ? true : e.unref();
     if (!g || G.get(t) || t.selection && d.e6.equals(g, t.selection) || d.YR.select(t, g), b()) return void f();
     a && n(), n.flush(), r.flush(), u();
-    var E = j.get(t);
-    j.delete(t), true !== E && (t.marks = E, t.onChange())
+    var E = k.get(t);
+    k.delete(t), true !== E && (t.marks = E, t.onChange())
   }, p = e => {
     a && clearTimeout(a), a = setTimeout(() => {
       D.set(t, false), _()
@@ -1257,8 +1257,8 @@ function th(e) {
       n.style.removeProperty("display")
     }
   }, m = (e, n) => {
-    var r, i = null != (r = k.get(t)) ? r : [];
-    k.set(t, i);
+    var r, i = null != (r = j.get(t)) ? r : [];
+    j.set(t, i);
     var a = d.NB.leaf(t, e),
       o = i.findIndex(t => d.y$.equals(t.path, e));
     if (o < 0) {
@@ -1324,7 +1324,7 @@ function th(e) {
             start: h.offset,
             end: E.offset
           },
-          I = k.get(t),
+          I = j.get(t),
           T = null == I ? true : I.find(e => d.y$.equals(e.path, y)),
           S = T ? [T.diff, O] : [O];
         if (0 === e7(b.text, ...S).length && (l = false), d.e6.isExpanded(r)) {
@@ -1457,18 +1457,18 @@ function th(e) {
             at: r
           });
           if (d.y$.equals(r.anchor.path, r.focus.path)) {
-            var [j, U] = d.e6.edges(r), G = {
-              start: j.offset,
+            var [k, U] = d.e6.edges(r), G = {
+              start: k.offset,
               end: U.offset,
               text: x
             };
             if (x && c && "insertCompositionText" === n) {
               var B = c.start + c.text.search(/\S|$/);
               G.start + G.text.search(/\S|$/) === B + 1 && G.end === c.start + c.text.length ? (G.start -= 1, c = null, A()) : c = false
-            } else c = "insertText" === n && (null === c ? G : !!(c && d.e6.isCollapsed(r)) && c.end + c.text.length === j.offset && tu(tu({}, c), {}, {
+            } else c = "insertText" === n && (null === c ? G : !!(c && d.e6.isCollapsed(r)) && c.end + c.text.length === k.offset && tu(tu({}, c), {}, {
               text: c.text + x
             }));
-            if (l) return void m(j.path, G)
+            if (l) return void m(k.path, G)
           }
           return g(() => d.ML.insertText(t, x), {
             at: r
@@ -1477,7 +1477,7 @@ function th(e) {
     }
   }, b = () => !!U.get(t), y = () => {
     var e;
-    return !!(null != (e = k.get(t)) && e.length)
+    return !!(null != (e = j.get(t)) && e.length)
   }, O = () => b() || y(), v = e => {
     G.set(t, e), o && (clearTimeout(o), o = null);
     var {
@@ -1641,7 +1641,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
       C = g(e, tT),
       N = eX(),
       [L, x] = (0, c.useState)(false),
-      k = (0, c.useRef)(null),
+      j = (0, c.useRef)(null),
       U = (0, c.useRef)([]),
       {
         onUserInput: G,
@@ -1658,7 +1658,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
     (0, c.useLayoutEffect)(() => () => {
       null != z && null != z.latestElement && (z.latestElement.remove(), z.latestElement = null)
     }, []), (0, c.useEffect)(() => {
-      k.current && a && k.current.focus()
+      j.current && a && j.current.focus()
     }, [a]);
     var q = (0, c.useCallback)(l()(() => {
         if ((el || !ey.isComposing(N)) && (!z.isUpdatingSelection || null != J && J.isFlushing()) && !z.isDraggingInternally) {
@@ -1684,12 +1684,12 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
       }, 100), [_]),
       Q = (0, c.useMemo)(() => o()(q, 0), [q]),
       J = tv({
-        node: k,
+        node: j,
         onDOMSelectionChange: q,
         scheduleOnDOMSelectionChange: Q
       });
     eC(() => {
-      k.current && (e = H(k.current)) ? (v.set(N, e), I.set(N, k.current), A.set(N, k.current), S.set(k.current, N)) : A.delete(N);
+      j.current && (e = H(j.current)) ? (v.set(N, e), I.set(N, j.current), A.set(N, j.current), S.set(j.current, N)) : A.delete(N);
       var e, {
           selection: t
         } = N,
@@ -1869,8 +1869,8 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
         }
       }, [_, u]),
       ee = (0, c.useCallback)(e => {
-        null == e ? (q.cancel(), Q.cancel(), I.delete(N), A.delete(N), k.current && eb && k.current.removeEventListener("beforeinput", $)) : eb && e.addEventListener("beforeinput", $), k.current = e
-      }, [k, $, q, Q]);
+        null == e ? (q.cancel(), Q.cancel(), I.delete(N), A.delete(N), j.current && eb && j.current.removeEventListener("beforeinput", $)) : eb && e.addEventListener("beforeinput", $), j.current = e
+      }, [j, $, q, Q]);
     eC(() => {
       var e = ey.getWindow(N);
       return e.document.addEventListener("selectionchange", Q), () => {
@@ -1928,7 +1928,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
     }, c.createElement(eF.Provider, {
       value: s
     }, c.createElement(e8, {
-      node: k,
+      node: j,
       receivedUserInput: V
     }, c.createElement(y, Object.assign({
       role: _ ? true : "textbox",
@@ -2022,9 +2022,9 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
       onCompositionEnd: (0, c.useCallback)(e => {
         if (ey.hasSelectableTarget(N, e.target) && (ey.isComposing(N) && (x(false), D.set(N, false)), null == J || J.handleCompositionEnd(e), !tL(e, C.onCompositionEnd) && !el && !eu && !eh && !eo && !eg && !em) && e.data) {
           var t = M.get(N);
-          M.delete(N), true !== t && (j.set(N, N.marks), N.marks = t), d.ML.insertText(N, e.data);
-          var n = j.get(N);
-          j.delete(N), true !== n && (N.marks = n)
+          M.delete(N), true !== t && (k.set(N, N.marks), N.marks = t), d.ML.insertText(N, e.data);
+          var n = k.get(N);
+          k.delete(N), true !== n && (N.marks = n)
         }
       }, [C.onCompositionEnd]),
       onCompositionUpdate: (0, c.useCallback)(e => {
@@ -2308,9 +2308,9 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
     return null != n ? n : e.defaultPrevented
   },
   tM = (0, Chunk473749.createContext)(false),
-  tj = () => (0, Chunk473749.useContext)(tM);
+  tk = () => (0, Chunk473749.useContext)(tM);
 
-function tk(e) {
+function tj(e) {
   return e instanceof Error
 }
 var tU = (0, Chunk473749.createContext)({}),
@@ -2437,10 +2437,10 @@ var tz = function(e) {
       } = n;
     return N.set(n, new WeakMap), n.addMark = (e, t) => {
       var r, i;
-      null == (r = x.get(n)) || r(), !M.get(n) && null != (i = k.get(n)) && i.length && M.set(n, null), j.delete(n), o(e, t)
+      null == (r = x.get(n)) || r(), !M.get(n) && null != (i = j.get(n)) && i.length && M.set(n, null), k.delete(n), o(e, t)
     }, n.removeMark = e => {
       var t;
-      !M.get(n) && null != (t = k.get(n)) && t.length && M.set(n, null), j.delete(n), s(e)
+      !M.get(n) && null != (t = j.get(n)) && t.length && M.set(n, null), k.delete(n), s(e)
     }, n.deleteBackward = e => {
       if ("line" !== e) return a(e);
       if (n.selection && d.e6.isCollapsed(n.selection)) {
@@ -2457,10 +2457,10 @@ var tz = function(e) {
       }
     }, n.apply = e => {
       var t, i = [],
-        a = k.get(n);
+        a = j.get(n);
       if (null != a && a.length) {
         var o = a.map(t => tl(t, e)).filter(Boolean);
-        k.set(n, o)
+        j.set(n, o)
       }
       var s = G.get(n);
       s && G.set(n, ts(n, s, e));

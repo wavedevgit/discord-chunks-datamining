@@ -69,14 +69,14 @@ function b(e, t, n) {
     }) : "",
     x = (0, o.P)(L),
     M = "presentation" === e[g] ? S["aria-describedby"] : [x["aria-describedby"], S["aria-describedby"]].filter(Boolean).join(" ") || true,
-    j = e[E],
-    k = (0, u.useMemo)(() => j || (0, a.E7)(n), [j, n]),
+    k = e[E],
+    j = (0, u.useMemo)(() => k || (0, a.E7)(n), [k, n]),
     U = (0, i.H)(t, n, "presentation" === e[g]);
   m.set(t, {
     ariaLabel: e["aria-label"],
     ariaLabelledBy: [T.id, e["aria-labelledby"]].filter(Boolean).join(" ") || true,
     ariaDescribedBy: M,
-    focusManager: k
+    focusManager: j
   });
   let G = (0, u.useRef)(e.autoFocus);
   y = "presentation" === e[g] ? {
@@ -86,11 +86,11 @@ function b(e, t, n) {
     "aria-disabled": e.isDisabled || true,
     "aria-describedby": M
   }), (0, u.useEffect)(() => {
-    G.current && k.focusFirst(), G.current = false
-  }, [k]), (0, l.y)(e.inputRef, t.defaultValue, t.setValue), (0, _.Q)({
+    G.current && j.focusFirst(), G.current = false
+  }, [j]), (0, l.y)(e.inputRef, t.defaultValue, t.setValue), (0, _.Q)({
     ...e,
     focus() {
-      k.focusFirst()
+      j.focusFirst()
     }
   }, t, e.inputRef);
   let B = {
@@ -106,7 +106,7 @@ function b(e, t, n) {
     labelProps: {
       ...T,
       onClick: () => {
-        k.focusFirst()
+        j.focusFirst()
       }
     },
     fieldProps: (0, s.d)(Z, y, U, R, {

@@ -1,4 +1,4 @@
-/** Chunk was on 91394 **/
+/** Chunk was on 43605 **/
 /** chunk id: 782691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -63,7 +63,7 @@ let y = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), r = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = l.useState(true), N = l.useRef({}), [T, O] = l.useState(false), [P, I] = l.useState(false), [w, k] = l.useState([]), [A, R] = l.useState(y), Z = l.useRef([]), [D, L] = l.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = l.useMemo(() => ({
+    } = (0, h.n6)(), r = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = l.useState(true), N = l.useRef({}), [T, O] = l.useState(false), [P, I] = l.useState(false), [w, k] = l.useState([]), [R, A] = l.useState(y), Z = l.useRef([]), [D, L] = l.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = l.useMemo(() => ({
       id: C,
       skuId: C,
       title: C,
@@ -79,7 +79,7 @@ let y = {
     }, B = (e, t) => {
       let n = F(t);
       null != n && (0, x.i0)(n, t => {
-        R(a => _(j({}, a), {
+        A(a => _(j({}, a), {
           [e]: (0, x.z)(t, n)
         }))
       })
@@ -99,7 +99,7 @@ let y = {
         let [t, n] = e;
         if (null != n) {
           let e = (0, x.$j)(n.base64);
-          n.src = e, Z.current.push(e), R(e => _(j({}, e), {
+          n.src = e, Z.current.push(e), A(e => _(j({}, e), {
             [t]: n
           }))
         }
@@ -122,10 +122,10 @@ let y = {
         name: D,
         config: {
           effects: w,
-          stillFrames: A
+          stillFrames: R
         }
       })
-    }, [w, A, D]), l.useEffect(() => () => {
+    }, [w, R, D]), l.useEffect(() => () => {
       Z.current.forEach(e => {
         URL.revokeObjectURL(e)
       }), Z.current = []
@@ -295,7 +295,7 @@ let y = {
                   name: D,
                   config: _(j({}, t.config), {
                     effects: w,
-                    stillFrames: A
+                    stillFrames: R
                   })
                 })),
                 contentType: "text/plain",
@@ -314,7 +314,7 @@ let y = {
               children: "Still Frames"
             }), (0, a.jsx)("div", {
               className: f.stillFramesContainer,
-              children: Object.entries(A).map(e => {
+              children: Object.entries(R).map(e => {
                 let [t, n] = e;
                 return (0, a.jsxs)("div", {
                   className: f.stillFramePreviewContainer,
@@ -330,7 +330,7 @@ let y = {
                     size: "sm",
                     text: "Clear",
                     onClick: () => {
-                      R(e => _(j({}, e), {
+                      A(e => _(j({}, e), {
                         [t]: null
                       }))
                     }
@@ -379,7 +379,7 @@ let y = {
               variant: "critical-secondary",
               text: "Clear Assets",
               onClick: () => {
-                k([]), R(y)
+                k([]), A(y)
               }
             })
           }), w.map((e, t) => (0, a.jsxs)("div", {

@@ -44,7 +44,7 @@ function v(e) {
     if (null == L) return;
     let e = E.ZP.getEmbeddedActivitiesForChannel(L).filter(e => e.applicationId === I.id);
     return e.length > 0 ? e[0].compositeInstanceId : true
-  }), j = (0, i.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()), k = (0, b.Z)(), U = x === y.jy.CAN_LAUNCH, G = null != M && (null == j ? true : j.compositeInstanceId) === M, B = null != T ? T : S.customId, Z = [];
+  }), k = (0, i.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()), j = (0, b.Z)(), U = x === y.jy.CAN_LAUNCH, G = null != M && (null == k ? true : k.compositeInstanceId) === M, B = null != T ? T : S.customId, Z = [];
   U && Z.push({
     label: null == M ? O.intl.string(O.t.RscU7I) : G ? O.intl.string(O.t.DPfdsq) : O.intl.string(O.t.sqe0hj),
     trackingArea: f.j_.PLAY,
@@ -53,7 +53,7 @@ function v(e) {
         channelId: null != L ? L : true,
         applicationId: I.id,
         isStart: null == M,
-        embeddedActivitiesManager: k,
+        embeddedActivitiesManager: j,
         customId: B,
         referrerId: A,
         analyticsLocations: w

@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 462718, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk657707 = require("./657707.js"),
@@ -11,13 +11,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk313789 = require("./313789.js"),
   Chunk342386 = require("./342386.js"),
   Chunk388032 = require("./388032.jsx");
-let E = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
+let d = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["2jxGer"]),
   icon: Chunk657707.PBZ,
   onClick: () => {
     (0, Chunk481060.h7j)(t => {
       var e, n;
-      return (0, i.jsx)(u.ConfirmModal, (e = function(t) {
+      return (0, i.jsx)(r.ConfirmModal, (e = function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {},
             i = Object.keys(n);
@@ -40,10 +40,10 @@ let E = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
         cancelText: c.intl.string(c.t["ETE/oC"]),
         onCancel: t.onClose,
         onConfirm: () => {
-          (0, o.default)(), r.Z.logout("settings")
+          (0, o.default)(), u.Z.logout("settings")
         }
       }, t), n = n = {
-        children: (0, i.jsx)(u.Text, {
+        children: (0, i.jsx)(r.Text, {
           variant: "text-md/normal",
           children: c.intl.string(c.t.SUnWBB)
         })

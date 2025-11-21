@@ -1,4 +1,4 @@
-/** Chunk was on 91394 **/
+/** Chunk was on 43605 **/
 /** chunk id: 916790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -112,7 +112,7 @@ let k = [{
   }
 }];
 
-function A(e) {
+function R(e) {
   let {
     actionLog: t,
     initialHeight: n
@@ -188,7 +188,7 @@ function A(e) {
     })]
   })
 }
-let R = [{
+let A = [{
     key: "action",
     cellClassName: Chunk687278.actionColumn,
     render(e) {
@@ -285,11 +285,11 @@ function D() {
         placeholder: "Search by action name"
       })]
     }), (0, Chunk54381.jsx)(Chunk681619.Z, {
-      columns: R,
+      columns: A,
       data: Chunk621060,
       selectedRowKey: null == Chunk572004 ? true : Chunk572004.id.toString(),
       onClickRow: e => j(e.actionLog)
-    }), null != Chunk572004 && (0, Chunk54381.jsx)(A, {
+    }), null != Chunk572004 && (0, Chunk54381.jsx)(R, {
       actionLog: Chunk572004,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

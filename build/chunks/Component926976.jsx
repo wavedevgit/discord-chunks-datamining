@@ -1,4 +1,4 @@
-/** Chunk was on 91394 **/
+/** Chunk was on 43605 **/
 /** chunk id: 926976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -228,10 +228,10 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
       })
     }
   }],
-  A = {
+  R = {
     events: {
       label: "Events",
-      filter: e => Object.entries(A).filter(e => {
+      filter: e => Object.entries(R).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -254,7 +254,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
       filter: e => e.event.startsWith("network_action")
     }
   },
-  R = {
+  A = {
     searchType: Chunk886118.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -270,15 +270,15 @@ function Z() {
   let e = Chunk473749.useRef(null),
     [t, n] = Chunk473749.useState(""),
     r = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
-    [s, o] = Chunk473749.useState(() => Object.keys(A)),
+    [s, o] = Chunk473749.useState(() => Object.keys(R)),
     [m, p] = Chunk473749.useState(Chunk120816.Z.loggedEvents),
     h = Chunk473749.useCallback(e => {
       p(e)
     }, []);
-  (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, R, [Chunk120356]);
+  (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, A, [Chunk120356]);
   let g = Chunk129861.filter(e => {
       for (let t of s)
-        if (A[t].filter(e)) returntrue;
+        if (R[t].filter(e)) returntrue;
       returnfalse
     }),
     [f, b] = Chunk473749.useState(true),
@@ -311,7 +311,7 @@ function Z() {
         className: Chunk599832.toolbarDivider
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk599832.filters,
-        children: Object.entries(A).map(e => {
+        children: Object.entries(R).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(u.P3F, {
             className: i()(N.filter, s.includes(t) && N.activeFilter),

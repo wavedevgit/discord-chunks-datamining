@@ -93,7 +93,7 @@ async function y(e) {
   }) : await (0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("9452"), n.e("16985")]).then(n.bind(n, 245286));
+    } = await Promise.all([n.e("9452"), n.e("62191")]).then(n.bind(n, 245286));
     return n => (0, r.jsx)(t, m(p({}, n), {
       target: e
     }))
@@ -142,6 +142,7 @@ function I() {
     [Chunk981631.oAB.AUTHORIZED_APPS, Chunk313789.n.AUTHORIZED_APPS_PANEL],
     [Chunk981631.oAB.CONNECTIONS, Chunk313789.n.CONNECTIONS_PANEL],
     [Chunk981631.oAB.CLIPS, Chunk313789.n.CLIPS_PANEL],
+    [Chunk981631.oAB.CF_WARP, Chunk313789.n.PRIVATE_BROWSING_PANEL],
     [Chunk981631.oAB.PREMIUM, Chunk313789.n.NITRO_PANEL],
     [Chunk981631.oAB.GUILD_BOOSTING, Chunk313789.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL],
     [Chunk981631.oAB.SUBSCRIPTIONS, Chunk313789.n.SUBSCRIPTIONS_PANEL],

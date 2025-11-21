@@ -1,7 +1,7 @@
-/** Chunk was on 16985 **/
+/** Chunk was on 62191 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => m
+  P: () => g
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,13 +19,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk845435 = require("./845435.js");
 
-function m(e) {
+function g(e) {
   let {
     root: t,
     header: n,
     footer: i,
     onClose: p,
-    emptyState: m
+    emptyState: g
   } = e, h = y.Z.useField("showNavigationMobile"), x = l.useRef(null), O = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
@@ -75,12 +75,12 @@ function m(e) {
                 "aria-label": v.intl.string(v.t.cpT0Cq)
               })
             }), (0, r.jsx)("div", {
-              children: S.map(e => (0, r.jsx)(g, {
+              children: S.map(e => (0, r.jsx)(m, {
                 section: e,
                 visibleContent: l,
                 hoisted: true
               }, e.key))
-            }), null != n && (0, r.jsx)(n, {}), null != m && 0 === C.length && (0, r.jsx)(m, {})]
+            }), null != n && (0, r.jsx)(n, {}), null != g && 0 === C.length && (0, r.jsx)(g, {})]
           }), (0, r.jsx)(a.bG, {
             navigator: _,
             children: (0, r.jsx)(a.SJ, {
@@ -130,7 +130,7 @@ function m(e) {
                 }, a), n = n = {
                   children: [(0, r.jsx)("nav", {
                     className: j.nav,
-                    children: C.map(e => (0, r.jsx)(g, {
+                    children: C.map(e => (0, r.jsx)(m, {
                       section: e,
                       visibleContent: l
                     }, e.key))
@@ -154,7 +154,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   var t;
   let {
     section: n,

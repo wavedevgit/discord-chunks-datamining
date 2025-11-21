@@ -7,13 +7,13 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk460181 = require("./460181.js");
-let r = Chunk473749.createContext(true);
+let u = Chunk473749.createContext(true);
 
 function s(t) {
   let {
     children: e
   } = t, n = l.useRef(null), s = l.useCallback(t => {
-    null != n.current && n.current.stop(), n.current = (0, u.GN)(t)
+    null != n.current && n.current.stop(), n.current = (0, r.GN)(t)
   }, []);
   l.useEffect(() => () => {
     var t;
@@ -22,14 +22,14 @@ function s(t) {
   let a = l.useMemo(() => ({
     handlePreviewSound: s
   }), [s]);
-  return (0, i.jsx)(r.Provider, {
+  return (0, i.jsx)(u.Provider, {
     value: a,
     children: e
   })
 }
 
 function a() {
-  let t = Chunk473749.useContext(r);
+  let t = Chunk473749.useContext(u);
   if (null == module) throw Error("useSoundPlayback must be used within a SoundPlaybackProvider");
   return module
 }

@@ -225,7 +225,7 @@ let eu = (e, t) => {
         closePopout: p,
         emojiSize: A = X.Su.MEDIUM,
         hasTabWrapper: R = false,
-        containerContext: k = 0,
+        containerContext: j = 0,
         includeCreateEmojiButton: et,
         onSelectEmoji: er,
         onSelectSoundmoji: ec,
@@ -252,18 +252,18 @@ let eu = (e, t) => {
         autoFocus: ex = true,
         accessory: eM
       } = ev,
-      ej = (0, u.e7)([L.ZP], () => null != f ? L.ZP.getDefaultChannel(f) : null, [f]),
-      [ek, eU] = i.useState(null),
+      ek = (0, u.e7)([L.ZP], () => null != f ? L.ZP.getDefaultChannel(f) : null, [f]),
+      [ej, eU] = i.useState(null),
       eG = i.useRef(""),
       eB = (0, S.Iu)(e => e.searchQuery),
       eZ = i.useRef(null),
       eF = i.useRef(null),
       eV = i.useRef(null);
-    null == c && null != ej && (c = ej);
+    null == c && null != ek && (c = ek);
     let eH = null != (a = null != (n = null == c ? true : c.getGuildId()) ? n : f) ? a : null,
       [eY, eW] = i.useState(false),
       eK = x.default.getCurrentUser(),
-      ez = (0, j.I5)(eK);
+      ez = (0, k.I5)(eK);
     i.useImperativeHandle(t, () => ({
       onPickerOpen: ta
     }));
@@ -402,21 +402,21 @@ let eu = (e, t) => {
     }, [eB, e1, e5, e4, l]);
     let t_ = null != eI ? eI : R ? "div" : _.VqE,
       tp = null != e9;
-    if ((null == ek ? true : ek.type) === Y.Bg.PREMIUM) {
+    if ((null == ej ? true : ej.type) === Y.Bg.PREMIUM) {
       let e = D.p.NONE;
-      2 === k ? e = D.p.PARENT_CONTAINER : 1 === k && (e = D.p.TAB_PARENT_CONTAINER), s = (0, r.jsx)(q.Z, {
+      2 === j ? e = D.p.PARENT_CONTAINER : 1 === j && (e = D.p.TAB_PARENT_CONTAINER), s = (0, r.jsx)(q.Z, {
         onLearnMore: ts,
-        emojiDescriptor: ek.emojiDescriptor,
+        emojiDescriptor: ej.emojiDescriptor,
         pickerIntention: l,
         analyticsLocation: e1,
         onClose: () => eU(null),
         channel: c,
         containerContext: e
       })
-    } else(null == ek ? true : ek.type) === Y.Bg.ROLE_SUBSCRIPTION ? s = (0, r.jsx)(N.Z, {
+    } else(null == ej ? true : ej.type) === Y.Bg.ROLE_SUBSCRIPTION ? s = (0, r.jsx)(N.Z, {
       onClose: () => eU(null),
-      guildId: ek.guildId,
-      emojiId: ek.emojiId
+      guildId: ej.guildId,
+      emojiId: ej.emojiId
     }) : eY && !ez && (s = (0, r.jsx)(Z.Z, {
       onDismiss: () => eW(false)
     }));

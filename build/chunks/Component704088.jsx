@@ -1,4 +1,4 @@
-/** Chunk was on 91394 **/
+/** Chunk was on 43605 **/
 /** chunk id: 704088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => C
@@ -138,8 +138,8 @@ let y = e => {
       finishSetup: async () => true,
       perkAvailableToUser: w
     })), {
-      installationStatus: A,
-      setInstallationStatus: R,
+      installationStatus: R,
+      setInstallationStatus: A,
       connectionStatus: Z,
       setConnectionStatus: D,
       setConnect: L,
@@ -166,22 +166,22 @@ let y = e => {
     }, [H, q]);
     let Y = Chunk473749.useCallback(async () => (clearTimeout(module), D(Chunk5900.Ij.DISCONNECTED), true), [module, D]),
       J = Chunk473749.useCallback(() => new Promise((e, t) => {
-        R(m._n.INSTALLING), s(setTimeout(() => {
+        A(m._n.INSTALLING), s(setTimeout(() => {
           if (C) return void t(Error("Installation failed"));
           e()
         }, E))
-      }), [C, E, R, Chunk544891]);
+      }), [C, E, A, Chunk544891]);
     Chunk473749.useEffect(() => {
-      G && A !== Chunk5900._n.UNKNOWN && R(Chunk5900._n.UNKNOWN)
-    }, [G, R, A]), Chunk473749.useEffect(() => {
+      G && R !== Chunk5900._n.UNKNOWN && A(Chunk5900._n.UNKNOWN)
+    }, [G, A, R]), Chunk473749.useEffect(() => {
       M(Y)
     }, [Y, M]), Chunk473749.useEffect(() => {
       U(J)
     }, [J, U]), Chunk473749.useEffect(() => {
-      A !== Chunk5900._n.INSTALLING && clearTimeout(require)
-    }, [require, A]), Chunk473749.useEffect(() => {
-      if (A !== Chunk5900._n.INSTALLED && Z !== Chunk5900.Ij.INITIALIZING) return void D(Chunk5900.Ij.INITIALIZING)
-    }, [A, Z, D]);
+      R !== Chunk5900._n.INSTALLING && clearTimeout(require)
+    }, [require, R]), Chunk473749.useEffect(() => {
+      if (R !== Chunk5900._n.INSTALLED && Z !== Chunk5900.Ij.INITIALIZING) return void D(Chunk5900.Ij.INITIALIZING)
+    }, [R, Z, D]);
     let {
       enabled: X
     } = Chunk299886.H.useConfig({
@@ -245,8 +245,8 @@ let y = e => {
               variant: "text-md/semibold",
               children: "Installation Status"
             }), (0, Chunk54381.jsx)(Chunk481060.PhF, {
-              select: e => R(e),
-              isSelected: e => e === A,
+              select: e => A(e),
+              isSelected: e => e === R,
               serialize: e => "".concat(e),
               disabled: G,
               options: [{
@@ -273,7 +273,7 @@ let y = e => {
               }],
               popoutLayerContext: Chunk246992.O$
             })]
-          }), A === Chunk5900._n.INSTALLED && (0, Chunk54381.jsxs)(Chunk29594.BZ, {
+          }), R === Chunk5900._n.INSTALLED && (0, Chunk54381.jsxs)(Chunk29594.BZ, {
             children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
               variant: "text-md/semibold",
               children: "Connection Status"
@@ -297,7 +297,7 @@ let y = e => {
               popoutLayerContext: Chunk246992.O$
             })]
           })]
-        }), A === Chunk5900._n.NOT_INSTALLED && (0, Chunk54381.jsxs)(Chunk29594.pg, {
+        }), R === Chunk5900._n.NOT_INSTALLED && (0, Chunk54381.jsxs)(Chunk29594.pg, {
           children: [(0, Chunk54381.jsxs)(Chunk29594.BZ, {
             children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
               variant: "text-md/semibold",

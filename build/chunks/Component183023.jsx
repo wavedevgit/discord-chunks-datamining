@@ -279,7 +279,7 @@ let J = 32,
       guildEmoji: L,
       demoMode: x = false,
       nonce: U
-    } = e, G = (0, l.e7)([j.default], () => j.default.getCurrentUser()), z = (0, l.e7)([M.Z], () => M.Z.getGuildId()), q = B.ZP.isPremium(G), X = null != z && (z === (null == v ? true : v.id) || z === (null == S ? true : S.id)), Q = null != S, J = null != (t = null == v ? true : v.isDiscoverable()) && t;
+    } = e, G = (0, l.e7)([k.default], () => k.default.getCurrentUser()), z = (0, l.e7)([M.Z], () => M.Z.getGuildId()), q = B.ZP.isPremium(G), X = null != z && (z === (null == v ? true : v.id) || z === (null == S ? true : S.id)), Q = null != S, J = null != (t = null == v ? true : v.isDiscoverable()) && t;
     x && (q = true, J = true, Q = false, X = false);
     let $ = ee(),
       {
@@ -323,7 +323,7 @@ let J = 32,
         isDiscoverable: J,
         shouldHideRoleSubscriptionCTA: eo,
         onOpenPremiumSettings: () => {
-          A(), k.default.track(V.rMx.PREMIUM_PROMOTION_OPENED, {
+          A(), j.default.track(V.rMx.PREMIUM_PROMOTION_OPENED, {
             location_page: $.page,
             location_section: $.section
           }), (0, D.z)()
@@ -411,7 +411,7 @@ let J = 32,
         var e, t;
         let n = null != v && !Q && J && (null != (t = null == v || null == (e = v.emojis) ? true : e.length) ? t : 0) > 1,
           i = () => {
-            n && (null == P || P(), em || x || k.default.track(V.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!em))
+            n && (null == P || P(), em || x || j.default.track(V.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!em))
           },
           a = () => {
             let e = W.intl.string(W.t.pnsAS2);

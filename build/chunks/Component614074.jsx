@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 614074, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 9452 **/
+/** chunk id: 614074, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   C: () => d
 });
@@ -14,8 +13,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk291771 = require("./291771.js");
 let d = () => {
     let {
-      isWeb: e,
-      installationStatus: t
+      isWeb: t,
+      installationStatus: e
     } = (0, Chunk953865.xf)(), n = (0, Chunk473749.useMemo)(() => {
       if (module) return Chunk388032.intl.string(Chunk163646.default.KN6HOb);
       switch (exports) {
@@ -32,7 +31,7 @@ let d = () => {
         case Chunk5900._n.ZERO_TRUST:
           return Chunk388032.intl.string(Chunk163646.default["7zgDRR"]);
         case Chunk5900._n.INSTALLED:
-          return (0, Chunk54381.jsx)(f, {})
+          return (0, Chunk54381.jsx)(E, {})
       }
     }, [module, exports]);
     return (0, Chunk54381.jsx)(Chunk793030.X6q, {
@@ -40,8 +39,8 @@ let d = () => {
       children: require
     })
   },
-  f = () => {
-    switch ((0, Chunk953865.xf)(e => e.connectionStatus)) {
+  E = () => {
+    switch ((0, Chunk953865.xf)(t => t.connectionStatus)) {
       case Chunk5900.Ij.INITIALIZING:
         return (0, Chunk54381.jsxs)("span", {
           className: Chunk291771.connectedStatus,

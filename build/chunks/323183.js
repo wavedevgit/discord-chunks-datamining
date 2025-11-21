@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 323183, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 85668 **/
+/** chunk id: 323183, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  w: () => r
+  w: () => a
 });
-let r = "https://support.discord.com/hc/en-us/articles/35974746352023"
+let a = "https://support.discord.com/hc/en-us/articles/35974746352023"

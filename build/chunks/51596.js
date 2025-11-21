@@ -4,7 +4,7 @@
 require.d(exports, {
   $Z: () => B,
   Cp: () => Z,
-  F_: () => j,
+  F_: () => k,
   Se: () => Y,
   ZN: () => F,
   tF: () => H,
@@ -76,7 +76,7 @@ function M(e) {
   return [e.replace(x, ""), n]
 }
 
-function j(e) {
+function k(e) {
   let [t, n] = M(e);
   return {
     query: t,
@@ -84,7 +84,7 @@ function j(e) {
   }
 }
 
-function k(e) {
+function j(e) {
   let t;
   if (A.Z.isOpen()) return;
   let n = v.Z.getGuildId(),
@@ -164,9 +164,9 @@ function G() {
 function B() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND",
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "";
-  k(module), Chunk570140.Z.dispatch(D({
+  j(module), Chunk570140.Z.dispatch(D({
     type: "QUICKSWITCHER_SHOW"
-  }, j(exports)))
+  }, k(exports)))
 }
 
 function Z() {
@@ -181,7 +181,7 @@ function F() {
 function V(e) {
   i.Z.dispatch(D({
     type: "QUICKSWITCHER_SEARCH"
-  }, j(e)))
+  }, k(e)))
 }
 
 function H(e) {

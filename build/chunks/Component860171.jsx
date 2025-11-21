@@ -11,13 +11,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk889029 = require("./889029.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let E = (0, Chunk509613.x1)(Chunk313789.n.STREAMER_MODE_PANE, {
+let d = (0, Chunk509613.x1)(Chunk313789.n.STREAMER_MODE_PANE, {
     buildLayout: () => [],
     render: () => (0, Chunk54381.jsx)(Chunk889029.Z, {})
   }),
-  S = (0, Chunk509613.wf)(Chunk313789.n.STREAMER_MODE_PANEL, {
+  E = (0, Chunk509613.wf)(Chunk313789.n.STREAMER_MODE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.S5GfOW),
-    buildLayout: () => [E]
+    buildLayout: () => [d]
   }),
   T = (0, Chunk509613.m7)(Chunk313789.n.STREAMER_MODE_SIDEBAR_ITEM, {
     icon: Chunk657707.m3e,
@@ -26,5 +26,5 @@ let E = (0, Chunk509613.x1)(Chunk313789.n.STREAMER_MODE_PANE, {
     usePredicate: function() {
       return !(0, Chunk526665.BK)("StreamerModeSidebarItem")
     },
-    buildLayout: () => [S]
+    buildLayout: () => [E]
   })

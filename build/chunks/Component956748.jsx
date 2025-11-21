@@ -1,38 +1,38 @@
-/** Chunk was on 91394 **/
+/** Chunk was on 54400 **/
 /** chunk id: 956748, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => c
+  G: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk492938 = require("./492938.js");
-let c = e => {
+let d = e => {
   let {
     showStatus: t,
     width: n,
     opacity: l,
-    size: c = "default"
-  } = e, d = "small" === c ? i.EFr.SIZE_24 : i.EFr.SIZE_32;
-  return (0, a.jsxs)("div", {
-    className: r()(o.nameplatePlaceholderUserRow, {
-      [o.smallRow]: "small" === c
+    size: d = "default"
+  } = e, c = "small" === d ? i.EFr.SIZE_24 : i.EFr.SIZE_32;
+  return (0, r.jsxs)("div", {
+    className: a()(s.nameplatePlaceholderUserRow, {
+      [s.smallRow]: "small" === d
     }),
     style: {
       opacity: l
     },
-    children: [(0, a.jsx)(i.qEK, {
+    children: [(0, r.jsx)(i.qEK, {
       src: null,
-      size: d,
-      status: t ? s.Skl.ONLINE : true,
+      size: c,
+      status: t ? o.Skl.ONLINE : true,
       statusColor: "var(--border-subtle)",
       "aria-hidden": true,
-      imageClassName: o.nameplatePlaceholderAvatar
-    }), (0, a.jsx)("div", {
-      className: r()(o.nameplatePlaceholderBar, {
-        [o.smallBar]: "small" === c
+      imageClassName: s.nameplatePlaceholderAvatar
+    }), (0, r.jsx)("div", {
+      className: a()(s.nameplatePlaceholderBar, {
+        [s.smallBar]: "small" === d
       }),
       style: {
         maxWidth: null != n ? n : "100px"

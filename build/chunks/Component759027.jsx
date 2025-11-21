@@ -1,4 +1,4 @@
-/** Chunk was on 91394 **/
+/** Chunk was on 43605 **/
 /** chunk id: 759027, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -179,7 +179,7 @@ function O(e) {
   let {
     subscription: P,
     onUpdated: I
-  } = e, [w, k] = l.useState(false), [A, R] = l.useState(false), [Z, D] = l.useState(false), [L, M] = l.useState(false), [U, F] = l.useState(null), B = e => (null == e && (e = P.status), e in S) ? S[e] : "Unknown status ".concat(e), G = e => {
+  } = e, [w, k] = l.useState(false), [R, A] = l.useState(false), [Z, D] = l.useState(false), [L, M] = l.useState(false), [U, F] = l.useState(null), B = e => (null == e && (e = P.status), e in S) ? S[e] : "Unknown status ".concat(e), G = e => {
     let t = new Date(e);
     return h.default.fromTimestamp(t.getTime())
   }, z = async e => {
@@ -345,7 +345,7 @@ function O(e) {
         className: y.collapsablePane,
         children: [(0, a.jsxs)(u.P3F, {
           onClick: () => {
-            R(!A)
+            A(!R)
           },
           className: y.collapsablePaneHeader,
           children: [(0, a.jsx)("div", {
@@ -354,9 +354,9 @@ function O(e) {
               children: "Modifications"
             })
           }), (0, a.jsx)(m.Z, {
-            direction: A ? m.Z.Directions.UP : m.Z.Directions.DOWN
+            direction: R ? m.Z.Directions.UP : m.Z.Directions.DOWN
           })]
-        }), A && (0, a.jsxs)(u.Kqy, {
+        }), R && (0, a.jsxs)(u.Kqy, {
           gap: 24,
           children: [(0, a.jsx)(u.PhF, {
             label: "Status",

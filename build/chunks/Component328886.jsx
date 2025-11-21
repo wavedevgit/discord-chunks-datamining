@@ -2,7 +2,7 @@
 /** chunk id: 328886, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -95,15 +95,15 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   var t, n, o;
   let {
     message: b,
     application: S,
     applicationName: N,
     channel: R,
-    header: j,
-    currentUserId: k,
+    header: k,
+    currentUserId: j,
     launchableAppId: U,
     isEmbeddedApplication: G,
     tryWithGdnAction: B,
@@ -143,8 +143,8 @@ function j(e) {
     className: x.tagline,
     color: "none",
     lineClamp: 2,
-    children: [J ? (0, y.$v)(b, N, R, k, false) : Q, J ? null : ee]
-  }), [J, b, N, R, k, Q, ee]), en = i.useMemo(() => (0, r.jsxs)("div", {
+    children: [J ? (0, y.$v)(b, N, R, j, false) : Q, J ? null : ee]
+  }), [J, b, N, R, j, Q, ee]), en = i.useMemo(() => (0, r.jsxs)("div", {
     className: x.info,
     children: [et, K || J ? null : z]
   }), [et, K, J, z]), er = !!U, ei = (0, m.A)(S), {
@@ -153,13 +153,13 @@ function j(e) {
   } = (0, O.h)({
     presenceActivity: Y,
     currentUserPresenceActivity: W,
-    currentUserId: k,
+    currentUserId: j,
     message: b,
     application: S,
     isEmbeddedApplication: G,
     isFrameApplication: ei,
     isGameLaunchable: er
-  }), es = (0, O.p)(Y, W, b, S), el = (0, v.L)(Y, b, S, k), ec = (0, T.g)(W, Y), eu = (0, s.e7)([E.Z], () => null != Y && null != Y.application_id && E.Z.getState(Y.application_id, D.mFx.JOIN) === D.OcF.LOADING), ed = i.useMemo(() => ea ? [{
+  }), es = (0, O.p)(Y, W, b, S), el = (0, v.L)(Y, b, S, j), ec = (0, T.g)(W, Y), eu = (0, s.e7)([E.Z], () => null != Y && null != Y.application_id && E.Z.getState(Y.application_id, D.mFx.JOIN) === D.OcF.LOADING), ed = i.useMemo(() => ea ? [{
     label: L.intl.string(L.t.VJlc0S),
     trackingArea: _.j_.JOIN,
     submitting: eu,
@@ -205,21 +205,21 @@ function j(e) {
         location: D.Sbl.MESSAGE_EMBED
       })
     },
-    disabled: b.author.id === k,
-    disabledReason: b.author.id === k ? L.intl.string(L.t.IBl8ID) : true
+    disabled: b.author.id === j,
+    disabledReason: b.author.id === j ? L.intl.string(L.t.IBl8ID) : true
   }] : ec ? [{
     label: L.intl.string(L.t.KC26NR),
     trackingArea: _.j_.PLAY,
     onClick: () => {},
     disabled: true
-  }] : null != B ? [B] : [], [ea, es, el, ec, B, b.author.id, b.id, Y, R.id, R.guild_id, q, eo, k, eu]), ef = ed.some(e => e.trackingArea === _.j_.CLOUD_PLAY);
+  }] : null != B ? [B] : [], [ea, es, el, ec, B, b.author.id, b.id, Y, R.id, R.guild_id, q, eo, j, eu]), ef = ed.some(e => e.trackingArea === _.j_.CLOUD_PLAY);
   (0, P.Z)(ef, q);
   let e_ = i.useMemo(() => ec ? null : (0, r.jsx)(M, {
     presenceActivity: Y,
     remoteJoinPlatform: eo
   }), [ec, Y, eo]);
   return (0, r.jsx)(f.W, {
-    header: j,
+    header: k,
     title: N,
     staticBannerSrc: Z,
     onClickBanner: F,

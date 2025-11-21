@@ -24,7 +24,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_AUTO_STREAMER_MODE, {
     })
   },
   setValue: function(t) {
-    u.Z.update({
+    r.Z.update({
       autoToggle: t
     })
   }

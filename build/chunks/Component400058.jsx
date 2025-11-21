@@ -92,7 +92,7 @@ let M = {
       let [e, t] = Chunk473749.useState(Chunk474936.Si.TIER_2), [n, E] = Chunk473749.useState(null), b = (0, Chunk442837.Wu)([Chunk430824.Z], () => Chunk430824.Z.getGuildsArray()), [P] = (0, Chunk442837.Wu)([Chunk78839.Z], () => [Chunk78839.Z.getPremiumSubscription()]), w = Chunk305342.map(e => ({
         value: e,
         label: e.name
-      })), [M, j] = Chunk473749.useState(w.length > 0 ? w[0].value : null), [k, U] = Chunk473749.useState(""), [G, B] = Chunk473749.useState({
+      })), [M, k] = Chunk473749.useState(w.length > 0 ? w[0].value : null), [j, U] = Chunk473749.useState(""), [G, B] = Chunk473749.useState({
         plan_id: Chunk474936.Xh.PREMIUM_MONTH_TIER_2,
         gift: "true"
       }), Z = "true" !== G.gift && null != P, [F, V] = Chunk473749.useState(w.length > 0 ? w[0].value : null), {
@@ -176,7 +176,7 @@ let M = {
                 label: "Boost",
                 value: M,
                 options: w,
-                onChange: e => j(e)
+                onChange: e => k(e)
               }), null != M ? (0, Chunk54381.jsx)(Chunk678558.Z, {
                 guild: M,
                 analyticsLocation: {}
@@ -196,19 +196,19 @@ let M = {
                 children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
                   label: "Standalone: Trial Promotion Redemption",
                   placeholder: "Promotion Code",
-                  value: k,
+                  value: j,
                   onChange: e => U(e)
                 }), (0, Chunk54381.jsx)(Chunk481060.aML, {
                   "data-migration-pending": true,
                   text: "Need Promotion Code",
-                  shouldShow: k.length < 1,
+                  shouldShow: j.length < 1,
                   children: e => (0, r.jsx)(c.Button, L(D({
                     variant: "primary",
                     text: "Open Link",
-                    disabled: k.length < 1
+                    disabled: j.length < 1
                   }, e), {
                     onClick: () => {
-                      window.open(C.Z5c.BILLING_PROMOTION_REDEMPTION(k))
+                      window.open(C.Z5c.BILLING_PROMOTION_REDEMPTION(j))
                     }
                   }))
                 })]

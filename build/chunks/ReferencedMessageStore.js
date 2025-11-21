@@ -240,7 +240,7 @@ function M(e) {
   return null != t && O(t, e => y(e))
 }
 
-function j(e) {
+function k(e) {
   let {
     threads: t
   } = e;
@@ -251,7 +251,7 @@ function j(e) {
     return null != t && y(t)
   })
 }
-class k extends(r = Chunk442837.ZP.Store) {
+class j extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk375954.Z, Chunk592125.Z)
   }
@@ -268,8 +268,8 @@ class k extends(r = Chunk442837.ZP.Store) {
     return null != e && (t = b.getCachedMessageIdsForChannel(e)), null != t ? t : m
   }
 }
-_(k, "displayName", "ReferencedMessageStore");
-let U = new k(Chunk570140.Z, {
+_(j, "displayName", "ReferencedMessageStore");
+let U = new j(Chunk570140.Z, {
   CACHE_LOADED: I,
   LOCAL_MESSAGES_LOADED: v,
   LOAD_MESSAGES_SUCCESS: v,
@@ -279,7 +279,7 @@ let U = new k(Chunk570140.Z, {
   LOAD_THREADS_SUCCESS: M,
   LOAD_ARCHIVED_THREADS_SUCCESS: M,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: A,
-  LOAD_FORUM_POSTS: j,
+  LOAD_FORUM_POSTS: k,
   MESSAGE_CREATE: S,
   MESSAGE_UPDATE: C,
   MESSAGE_DELETE: D,

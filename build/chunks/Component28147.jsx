@@ -72,8 +72,8 @@ function x(e, t) {
   }), e
 }
 let M = Array(6).fill(0).map((e, t) => t),
-  j = [, , , ].fill(0).map((e, t) => t),
-  k = [, , , , ].fill(0).map((e, t) => t),
+  k = [, , , ].fill(0).map((e, t) => t),
+  j = [, , , , ].fill(0).map((e, t) => t),
   U = 4,
   G = 5;
 
@@ -177,18 +177,18 @@ function F(e) {
     })
   }, [o.length, v, b]);
   let M = D || L,
-    j = D ? T.Z.buttonTypes.VIEW_LESS : T.Z.buttonTypes.VIEW_MORE,
-    k = M ? o : E;
+    k = D ? T.Z.buttonTypes.VIEW_LESS : T.Z.buttonTypes.VIEW_MORE,
+    j = M ? o : E;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(T.Z, {
       title: R.intl.string(R.t["0hKkS+"]),
-      buttonType: j,
+      buttonType: k,
       onClickViewButton: _ ? I : true
     }), (0, r.jsx)("div", {
       className: P.sectionContentContainer,
       ref: w,
       onTransitionEnd: x,
-      children: k.map((e, t) => {
+      children: j.map((e, t) => {
         let {
           command: n,
           application: i,
@@ -273,7 +273,7 @@ function H(e) {
           installOnDemand: o,
           query: a
         }, i.id)
-      }), i && j.map(e => (0, r.jsx)(A.Z, {}, e))]
+      }), i && k.map(e => (0, r.jsx)(A.Z, {}, e))]
     })]
   }) : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(T.Z, {
@@ -295,7 +295,7 @@ function H(e) {
           installOnDemand: o,
           query: a
         }, i.id)
-      }), i && k.map(e => (0, r.jsx)(y.Z, {
+      }), i && j.map(e => (0, r.jsx)(y.Z, {
         look: b.U4.LARGE_BANNER
       }, e))]
     })]
@@ -325,7 +325,7 @@ function W() {
       title: Chunk388032.intl.string(Chunk388032.t.PHjkRE)
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk399235.sectionContentContainer,
-      children: j.map(e => (0, r.jsx)(A.Z, {}, e))
+      children: k.map(e => (0, r.jsx)(A.Z, {}, e))
     })]
   })
 }

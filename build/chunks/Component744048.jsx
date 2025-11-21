@@ -38,7 +38,7 @@ let v = function(e) {
     x = S === E.wh.CUSTOM_THEME || D,
     M = S === E.wh.APPLICATION_TEST_MODE_DEBUG;
   if (!(w || L || x || M)) return null;
-  let j = () => (0, r.jsxs)(r.Fragment, {
+  let k = () => (0, r.jsxs)(r.Fragment, {
     children: [w && (0, r.jsx)(u.Z, {
       markAsDismissed: P ? R : () => {
         (0, _.Q3)(a.z.CLIENT_THEMES_COACHMARK, {
@@ -59,6 +59,6 @@ let v = function(e) {
   });
   return t ? (0, r.jsx)("div", {
     className: O.mobileContainer,
-    children: j()
-  }) : j()
+    children: k()
+  }) : k()
 }

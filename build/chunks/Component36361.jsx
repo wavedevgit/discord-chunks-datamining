@@ -1,4 +1,4 @@
-/** Chunk was on 16985 **/
+/** Chunk was on 62191 **/
 /** chunk id: 36361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -33,11 +33,11 @@ function x(e) {
     case l.Jq.SIDEBAR_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
     case l.Jq.PANEL:
-      return (0, r.jsx)(g.T, {
+      return (0, r.jsx)(m.T, {
         node: t
       });
     case l.Jq.PANE:
-      return (0, r.jsx)(m.Z, {
+      return (0, r.jsx)(g.Z, {
         node: t
       });
     case l.Jq.LIST:

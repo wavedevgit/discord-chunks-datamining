@@ -82,18 +82,18 @@ function O(e, t, n) {
     }
   }), M = (0, m.useMemo)(() => new(0, h.d)(I, {
     maximumFractionDigits: 0
-  }), [I]), j = () => {
+  }), [I]), k = () => {
     if (e.text === e.placeholder && R.focusPrevious(), !M.isValidPartialNumber(e.text) || t.isReadOnly || e.isPlaceholder) "dayPeriod" === e.type && t.clearSegment(e.type);
     else {
       let n = e.text.slice(0, false),
         r = M.parse(n);
       0 === (n = 0 === r ? "" : n).length || 0 === r ? t.clearSegment(e.type) : t.setSegment(e.type, r), O.current = n
     }
-  }, k = e => {
+  }, j = e => {
     if ("a" === e.key && ((0, s.V5)() ? e.metaKey : e.ctrlKey) && e.preventDefault(), !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey) switch (e.key) {
       case "Backspace":
       case "Delete":
-        e.preventDefault(), e.stopPropagation(), j()
+        e.preventDefault(), e.stopPropagation(), k()
     }
   }, {
     startsWith: U
@@ -188,7 +188,7 @@ function O(e, t, n) {
     if (n.current) switch (r.preventDefault(), r.inputType) {
       case "deleteContentBackward":
       case "deleteContentForward":
-        M.isValidPartialNumber(e.text) && !t.isReadOnly && j();
+        M.isValidPartialNumber(e.text) && !t.isReadOnly && k();
         break;
       case "insertCompositionText":
         K.current = n.current.textContent, n.current.textContent = n.current.textContent;
@@ -251,7 +251,7 @@ function O(e, t, n) {
       [parseInt(m.version, 10) >= 17 ? "enterKeyHint" : "enterkeyhint"]: X ? "next" : true,
       inputMode: t.isDisabled || "dayPeriod" === e.type || "era" === e.type || !X ? true : "numeric",
       tabIndex: t.isDisabled ? true : 0,
-      onKeyDown: k,
+      onKeyDown: j,
       onFocus: Y,
       style: $,
       onPointerDown(e) {

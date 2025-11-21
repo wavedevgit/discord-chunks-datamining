@@ -22,7 +22,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       hidePersonalInformation: t
     })
   }),
-  E = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_INVITE_LINKS, {
+  d = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_INVITE_LINKS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.uWBOri),
     useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
       let {
@@ -34,7 +34,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       hideInstantInvites: t
     })
   }),
-  S = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_DISABLE_SOUNDS, {
+  E = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_DISABLE_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.OrqYDP),
     useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
       let {
@@ -58,7 +58,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       disableNotifications: t
     })
   }),
-  d = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
+  S = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["iA81+a"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.P4vj0h),
     usePredicate: () => {
@@ -78,5 +78,5 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
   I = (0, Chunk509613.Uc)(Chunk313789.n.STREAMER_MODE_OPTIONS_LIST, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.UtW8R6),
     variant: "separators",
-    buildLayout: () => [c, E, S, T, d]
+    buildLayout: () => [c, d, E, T, S]
   })

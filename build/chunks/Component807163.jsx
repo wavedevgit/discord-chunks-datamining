@@ -198,7 +198,7 @@ function eO(e) {
     c = () => {
       a(), (0, w.openUserSettings)(D.n.PROFILE_PANEL, {
         section: q.oAB.PROFILE_CUSTOMIZATION
-      }), j.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+      }), k.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
         action: "user_profile_customization"
       })
     };
@@ -282,7 +282,7 @@ function ev(e) {
     o(), (0, Y.k)({
       analyticsLocations: c,
       displayProfile: null
-    }), j.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+    }), k.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
       action: "badges"
     })
   };
@@ -307,7 +307,7 @@ function eI(e) {
   let {
     premiumType: t
   } = e, n = 3, i = (0, d.e7)([g.Z], () => g.Z.useReducedMotion), a = (0, y.wC)(null).filter(e => e.type === O.B.GUILD && (e.animated || null != e.guildId)).slice(0, n), o = (0, d.Wu)([I.Z], () => I.Z.stickerFrecencyWithoutFetchingLatest.frequently.slice(0, n - a.length)), s = eE().emojiStickersVisual, l = t === z.PremiumTypes.TIER_1, c = () => {
-    window.open(U.Z.getArticleURL(q.BhN.PREMIUM_DETAILS)), j.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+    window.open(U.Z.getArticleURL(q.BhN.PREMIUM_DETAILS)), k.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
       action: "emojis_stickers"
     })
   };
@@ -316,7 +316,7 @@ function eI(e) {
     onLearnMore: c,
     renderVisual: () => null != a && a.length > 0 || !l && null != o && o.length > 0 ? (0, r.jsxs)("div", {
       className: Q.emojiStickersPersonalizedContainer,
-      children: [a.map(e => null == e.id ? e.url : k.ZP.getEmojiURL({
+      children: [a.map(e => null == e.id ? e.url : j.ZP.getEmojiURL({
         id: e.id,
         animated: !i && e.animated,
         size: 58
@@ -364,7 +364,7 @@ function eT(e) {
     m = () => {
       n(), (0, w.openUserSettings)(D.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
         section: q.oAB.GUILD_BOOSTING
-      }), j.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+      }), k.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
         action: "boosts"
       })
     };
@@ -428,7 +428,7 @@ function eA(e) {
   let {
     premiumType: t
   } = e, n = eE().uploadsMessagesItemVisual, i = () => {
-    window.open(U.Z.getArticleURL(q.BhN.PREMIUM_DETAILS)), j.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+    window.open(U.Z.getArticleURL(q.BhN.PREMIUM_DETAILS)), k.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
       action: "msgs_uploads"
     })
   };
@@ -547,7 +547,7 @@ let eP = function(e) {
   }, [b]);
   let y = null != h && !p;
   return (i.useEffect(() => {
-    y && j.default.track(q.rMx.CANCELLATION_FLOW_DISCOUNT_OFFER_PROMPT_VIEWED, {
+    y && k.default.track(q.rMx.CANCELLATION_FLOW_DISCOUNT_OFFER_PROMPT_VIEWED, {
       location_stack: f,
       discount_id: null == h ? true : h.discount_id
     })

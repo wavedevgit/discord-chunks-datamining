@@ -1,16 +1,19 @@
 /** Chunk was on 1272 **/
 /** chunk id: 702456, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk742280 = require("./742280.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk355467 = require("./355467.js"),
   Chunk493683 = require("./493683.js"),
   Chunk393903 = require("./393903.js"),
+  Chunk81643 = require("./81643.js"),
   Chunk100527 = require("./100527.js"),
   Chunk367907 = require("./367907.js"),
   Chunk791250 = require("./791250.jsx"),
@@ -22,13 +25,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk699516 = require("./699516.js"),
   Chunk111583 = require("./111583.js"),
   Chunk594174 = require("./594174.js"),
+  Chunk351402 = require("./351402.js"),
   Chunk823379 = require("./823379.js"),
   Chunk399521 = require("./399521.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk944658 = require("./944658.js");
 
-function N(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +51,7 @@ function N(e) {
   return e
 }
 
-function j(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,56 +64,56 @@ function j(e, t) {
   }), e
 }
 
-function P(e) {
+function w(e) {
   var t, n;
   let {
     user: i,
     index: l,
     isCompetitive: a
   } = e, {
-    status: u,
-    isMobile: f
-  } = (0, s.cj)([b.Z], () => ({
-    status: b.Z.getStatus(i.id),
-    isMobile: b.Z.isMobileOnline(i.id)
-  })), h = (0, s.e7)([O.Z, m.Z], () => {
-    let e = m.Z.getDMFromUserId(i.id);
-    return null != e && O.Z.isTyping(e, i.id)
+    status: s,
+    isMobile: u
+  } = (0, o.cj)([y.Z], () => ({
+    status: y.Z.getStatus(i.id),
+    isMobile: y.Z.isMobileOnline(i.id)
+  })), p = (0, o.e7)([I.Z, E.Z], () => {
+    let e = E.Z.getDMFromUserId(i.id);
+    return null != e && I.Z.isTyping(e, i.id)
   }, [i]), {
-    avatarSrc: _,
-    eventHandlers: E
-  } = (0, g.Z)({
+    avatarSrc: f,
+    eventHandlers: m
+  } = (0, b.Z)({
     userId: i.id,
-    size: o.EFr.SIZE_32,
+    size: c.EFr.SIZE_32,
     animateOnHover: true
-  }), y = async () => {
-    await c.Z.openPrivateChannel({
+  }), _ = async () => {
+    await d.Z.openPrivateChannel({
       recipientIds: [i.id],
-      location: d.Z.FREQUENT_FRIENDS_ROW
+      location: h.Z.FREQUENT_FRIENDS_ROW
     });
-    let e = m.Z.getDMFromUserId(i.id);
-    null != e && (0, p.yw)(C.rMx.CHANNEL_OPENED, j(N({}, (0, p.$H)(e)), {
-      location: "".concat(d.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
+    let e = E.Z.getDMFromUserId(i.id);
+    null != e && (0, g.yw)(j.rMx.CHANNEL_OPENED, Z(A({}, (0, g.$H)(e)), {
+      location: "".concat(h.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
     }))
-  }, v = 0 === l, I = v ? o.YqE : a ? o.XcD : true, P = v ? S.intl.string(S.t.aI4VOL) : a ? S.intl.string(S.t.kABl2x) : true;
-  return (0, r.jsx)(o.P3F, {
-    className: T.frequentFriendAvatarButton,
-    onClick: y,
-    onMouseEnter: E.onMouseEnter,
-    onMouseLeave: E.onMouseLeave,
-    "aria-label": S.intl.formatToPlainString(S.t.M5FjCr, {
+  }, O = 0 === l, v = O ? c.YqE : a ? c.XcD : true, C = O ? P.intl.string(P.t.aI4VOL) : a ? P.intl.string(P.t.kABl2x) : true;
+  return (0, r.jsx)(c.P3F, {
+    className: x.frequentFriendAvatarButton,
+    onClick: _,
+    onMouseEnter: m.onMouseEnter,
+    onMouseLeave: m.onMouseLeave,
+    "aria-label": P.intl.formatToPlainString(P.t.M5FjCr, {
       username: i.username
     }),
-    children: (0, r.jsx)(o.qEK, {
-      src: _,
+    children: (0, r.jsx)(c.qEK, {
+      src: f,
       "aria-label": null != (t = i.globalName) ? t : i.username,
-      status: u,
-      isTyping: h,
-      isMobile: f && !h,
-      size: o.EFr.SIZE_32,
-      CutoutIcon: I,
-      avatarTooltipAsset: v ? "\uD83D\uDD25" : a ? "❄️" : true,
-      avatarTooltipText: P,
+      status: s,
+      isTyping: p,
+      isMobile: u && !p,
+      size: c.EFr.SIZE_32,
+      CutoutIcon: v,
+      avatarTooltipAsset: O ? "\uD83D\uDD25" : a ? "❄️" : true,
+      avatarTooltipText: C,
       statusTooltip: true,
       statusTooltipDelay: 50,
       avatarTooltipTitle: null != (n = i.globalName) ? n : i.username
@@ -117,11 +121,11 @@ function P(e) {
   })
 }
 
-function x() {
+function L() {
   let {
     enabled: e
   } = (0, Chunk399521.Q)("frequent_friends_row"), t = function() {
-    let e = (0, Chunk442837.Wu)([Chunk752048.Z], () => [...Chunk752048.Z.getUserAffinities()].sort((e, t) => h.Z.compare(e.otherUserId, t.otherUserId))),
+    let e = (0, Chunk442837.Wu)([Chunk752048.Z], () => [...Chunk752048.Z.getUserAffinities()].sort((e, t) => _.Z.compare(e.otherUserId, t.otherUserId))),
       t = (0, Chunk442837.Wu)([Chunk594174.default, Chunk699516.Z], () => {
         let t = module.map(e => e.otherUserId),
           n = [];
@@ -142,36 +146,41 @@ function x() {
       frequentFriends: exports,
       showCompetitiveSpot: require
     }
-  }(), n = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)), [l, c] = Chunk473749.useState({
+  }(), n = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)), l = (0, Chunk442837.e7)([Chunk594174.default], () => {
+    var e, t;
+    return null != (t = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed) && exports
+  }), [d, h] = Chunk473749.useState({
     scrollLeft: 0,
     scrollWidth: 0,
     clientWidth: 0
-  }), d = Chunk473749.useRef(null), p = Chunk473749.useCallback(() => {
+  }), g = Chunk473749.useRef(null), b = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk351402.Z.ipCountryCode), E = (0, Chunk81643.gD)(), y = Chunk473749.useCallback(() => {
     var e;
-    let t = null == (e = Chunk100527.current) ? true : module.getScrollerNode();
-    null != exports && Chunk493683({
+    let t = null == (e = Chunk367907.current) ? true : module.getScrollerNode();
+    null != exports && Chunk100527({
       scrollLeft: exports.scrollLeft,
       scrollWidth: exports.scrollWidth,
       clientWidth: exports.clientWidth
     })
   }, []);
   Chunk473749.useEffect(() => {
-    (null == exports ? true : exports.frequentFriends.length) != null && Chunk367907()
-  }, [null == exports ? true : exports.frequentFriends.length, null == exports ? true : exports.showCompetitiveSpot, Chunk367907]);
-  let g = (0, Chunk393903.y)(Chunk367907, []),
-    m = Chunk473749.useCallback(e => {
+    (null == exports ? true : exports.frequentFriends.length) != null && Chunk158776()
+  }, [null == exports ? true : exports.frequentFriends.length, null == exports ? true : exports.showCompetitiveSpot, Chunk158776]);
+  let I = (0, Chunk393903.y)(Chunk158776, []),
+    L = Chunk473749.useCallback(e => {
       let t = e.currentTarget;
-      c({
+      h({
         scrollLeft: t.scrollLeft,
         scrollWidth: t.scrollWidth,
         clientWidth: t.clientWidth
       })
-    }, [Chunk493683]);
-  if (!module || null == exports || !require) return null;
+    }, [Chunk100527]);
+  if (Chunk473749.useEffect(() => {
+      (0, Chunk355467.GE)()
+    }, []), !module || null == exports || !require) return null;
   let {
-    frequentFriends: b,
-    showCompetitiveSpot: O
-  } = exports, x = Chunk120356.scrollWidth > Chunk120356.clientWidth, A = Chunk120356.scrollLeft > 0, Z = Chunk120356.scrollLeft < Chunk120356.scrollWidth - Chunk120356.clientWidth - 2;
+    frequentFriends: R,
+    showCompetitiveSpot: D
+  } = exports, M = (Chunk518950 === Chunk742280.S.AU || Chunk518950 === Chunk742280.S.GB) && !Chunk592125, k = null != Chunk518950 && Chunk742280.M.EU_COUNTRIES.has(Chunk518950) && !Chunk120356, U = !M && !k && null != Chunk518950 && D, G = Chunk493683.scrollWidth > Chunk493683.clientWidth, B = Chunk493683.scrollLeft > 0, H = Chunk493683.scrollLeft < Chunk493683.scrollWidth - Chunk493683.clientWidth - 2;
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk944658.frequentFriendsRow,
@@ -184,24 +193,24 @@ function x() {
         }), (0, Chunk54381.jsx)(Chunk481060.aML, {
           "data-migration-pending": true,
           text: Chunk388032.intl.string(Chunk388032.t.tqCMcU),
-          children: e => (0, r.jsx)(o.d3s, j(N({}, e), {
-            className: T.frequentFriendsInfoIcon
+          children: e => (0, r.jsx)(c.d3s, Z(A({}, e), {
+            className: x.frequentFriendsInfoIcon
           }))
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.xVE, {
         ref: e => {
-          d.current = e, g.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
+          g.current = e, I.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
         className: a()(Chunk944658.frequentFriendsAvatars, {
-          [Chunk944658.scrollMaskLeft]: x && A,
-          [Chunk944658.scrollMaskRight]: x && Z
+          [Chunk944658.scrollMaskLeft]: G && B,
+          [Chunk944658.scrollMaskRight]: G && H
         }),
         orientation: "horizontal",
-        onScroll: Chunk592125,
-        children: Chunk158776.map((e, t) => (0, r.jsx)(P, {
+        onScroll: L,
+        children: R.map((e, t) => (0, r.jsx)(w, {
           user: e,
           index: t,
-          isCompetitive: t === b.length - 1 && O
+          isCompetitive: U && t === R.length - 1
         }, e.id))
       })]
     }), (0, Chunk54381.jsx)(Chunk791250.d, {})]

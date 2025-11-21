@@ -1,24 +1,23 @@
-/** Chunk was on web.js **/
-/** chunk id: 37279, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 85668 **/
+/** chunk id: 37279, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  v: () => u
+  v: () => d
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk801729 = require("./801729.jsx"),
   Chunk377171 = require("./377171.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk959576 = require("./959576.js");
-let u = e => {
+let d = t => {
   let {
-    className: t = ""
-  } = e;
-  return (0, r.jsx)(o.IG, {
-    text: l.intl.string(l.t.oW0eUd),
-    className: a()(c.betaBadge, t),
+    className: e = ""
+  } = t;
+  return (0, a.jsx)(l.IG, {
+    text: c.intl.string(c.t.oW0eUd),
+    className: i()(o.betaBadge, e),
     color: s.Z.BADGE_BACKGROUND_EXPRESSIVE
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 16985 **/
+/** Chunk was on 62191 **/
 /** chunk id: 4794, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -26,7 +26,7 @@ let u = Chunk473749.memo(function(e) {
   }, [null == p ? true : p.targetAccordionKey, t.key]);
   let v = null == n ? true : n(b),
     j = null == d ? true : d(),
-    m = null == f ? true : f();
+    g = null == f ? true : f();
   return (0, r.jsx)("div", {
     className: s.accordion,
     children: (0, r.jsxs)(a.I, {
@@ -34,10 +34,10 @@ let u = Chunk473749.memo(function(e) {
       collapsedSubtitle: j,
       isOpen: b,
       setIsOpen: y,
-      children: [null != m && (0, r.jsx)("div", {
+      children: [null != g && (0, r.jsx)("div", {
         className: s.notice,
         children: (0, r.jsx)(c.Z, {
-          notice: m
+          notice: g
         })
       }), u.map(e => (0, r.jsx)(o.Z, {
         node: e

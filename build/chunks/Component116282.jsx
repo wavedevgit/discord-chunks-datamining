@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 116282, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 9452 **/
+/** chunk id: 116282, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   R: () => d
 });
@@ -14,8 +13,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk163646 = require("./163646.js");
 let d = () => {
   let {
-    isWeb: e,
-    installationStatus: t,
+    isWeb: t,
+    installationStatus: e,
     connectionStatus: n
   } = (0, Chunk953865.xf)(), d = (0, Chunk473749.useMemo)(() => {
     switch (require) {
@@ -36,7 +35,7 @@ let d = () => {
           helpdeskArticle: Chunk323183.w
         })
     }
-  }, [require]), f = (0, Chunk473749.useMemo)(() => {
+  }, [require]), E = (0, Chunk473749.useMemo)(() => {
     if (module) return Chunk388032.intl.format(Chunk163646.default.z6v0w5, {
       helpdeskArticle: Chunk323183.w
     });
@@ -69,6 +68,6 @@ let d = () => {
   return (0, Chunk54381.jsx)(Chunk159691.xvT, {
     variant: "text-sm/normal",
     color: "text-secondary",
-    children: f
+    children: E
   })
 }

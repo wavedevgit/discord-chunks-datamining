@@ -1,4 +1,4 @@
-/** Chunk was on 16985 **/
+/** Chunk was on 62191 **/
 /** chunk id: 465315, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -19,11 +19,11 @@ function u(e) {
     destinationKey: b
   } = f, y = null == (t = f.useSubtitle) ? true : t.call(f), {
     directory: p
-  } = (0, i.t)(), v = null == p ? true : p.entry(b), j = (null == v ? true : v.targetPanelKey) != null ? null == p ? true : p.get(v.targetPanelKey) : true, m = null == (n = f.useTitle) ? true : n.call(f), g = null == j || null == (u = j.useTitle) ? true : u.call(j);
+  } = (0, i.t)(), v = null == p ? true : p.entry(b), j = (null == v ? true : v.targetPanelKey) != null ? null == p ? true : p.get(v.targetPanelKey) : true, g = null == (n = f.useTitle) ? true : n.call(f), m = null == j || null == (u = j.useTitle) ? true : u.call(j);
   if (null == j) return null;
   let h = (null == (d = j.parent) ? true : d.type) === o.Jq.SIDEBAR_ITEM ? j.parent.icon : true;
   return (0, r.jsx)(c.x, {
-    title: null != m ? m : g,
+    title: null != g ? g : m,
     description: y,
     leadingElement: null != h && (0, r.jsx)("div", {
       className: s.navigatorIcon,

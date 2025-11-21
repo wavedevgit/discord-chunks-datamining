@@ -1,4 +1,4 @@
-/** Chunk was on 16985 **/
+/** Chunk was on 62191 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -52,13 +52,13 @@ function p(e) {
     root: p,
     directory: v,
     target: j,
-    defaultTarget: m,
-    onClose: g,
+    defaultTarget: g,
+    onClose: m,
     sidebarHeader: h,
     sidebarFooter: x,
     onPanelChange: O,
     emptyState: S
-  } = e, C = null != j && (null == (t = v.entry(j)) ? true : t.targetPanelKey) != null ? j : m;
+  } = e, C = null != j && (null == (t = v.entry(j)) ? true : t.targetPanelKey) != null ? j : g;
   (0, i.ZP)(() => {
     let e = v.entry(C).targetPanelKey;
     return d.Z.setState({
@@ -116,7 +116,7 @@ function p(e) {
       navTransition: Z,
       directory: v
     }), [Z, v]),
-    A = () => I(g),
+    A = () => I(m),
     R = null != P ? v.get(P) : true;
   return (0, r.jsx)(u.j.Provider, {
     value: D,

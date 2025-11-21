@@ -31,7 +31,7 @@ let T = (0, Chunk509613.Em)(Chunk313789.n.VOICE_AUDIO_SUBSYSTEM_SETTING, {
     return Chunk473749.useMemo(() => (0, Chunk208113.z)(module, exports, require), [require, exports, module])
   },
   setValue: function(t) {
-    (0, c.Z)(S.intl.string(S.t.uY7AcQ), S.intl.string(S.t.gBqik6), () => u.Z.setAudioSubsystem(t))
+    (0, c.Z)(E.intl.string(E.t.uY7AcQ), E.intl.string(E.t.gBqik6), () => r.Z.setAudioSubsystem(t))
   },
   usePredicate: function() {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.shouldOfferManualSubsystemSelection())

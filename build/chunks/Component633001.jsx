@@ -1,7 +1,7 @@
-/** Chunk was on 91394 **/
+/** Chunk was on 43605 **/
 /** chunk id: 633001, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eR
+  Z: () => eA
 }), require("./388685.js"), require("./583741.js"), require("./539854.js"), require("./49124.js"), require("./35282.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -144,7 +144,7 @@ function en(e) {
 let ea = Chunk473749.memo(function(e) {
     let {
       trackedGame: t
-    } = e, n = (0, d.e7)([v.ZP], () => v.ZP.getGameOrTransformedSubgameForPID(t.pid)), l = (0, d.e7)([A.Z], () => A.Z.getGameForPID(t.pid)), r = (0, d.e7)([v.ZP], () => null == n ? null : v.ZP.getGameOverlayStatus(n));
+    } = e, n = (0, d.e7)([v.ZP], () => v.ZP.getGameOrTransformedSubgameForPID(t.pid)), l = (0, d.e7)([R.Z], () => R.Z.getGameForPID(t.pid)), r = (0, d.e7)([v.ZP], () => null == n ? null : v.ZP.getGameOverlayStatus(n));
     return (0, a.jsxs)("div", {
       className: J.panelGroup,
       children: [(0, a.jsx)(m.Text, {
@@ -990,7 +990,7 @@ function eN() {
       if (n(e)) returntrue
     }
     returnfalse
-  }), [Chunk837268, Chunk765250, Chunk755721, o, Chunk991186]), [O, P] = Chunk473749.useState(Chunk610394), [w, k] = Chunk473749.useState(null), A = Chunk473749.useMemo(() => Chunk837268.find(e => e.key === w), [Chunk837268, Chunk352527]), R = Chunk473749.useCallback(e => {
+  }), [Chunk837268, Chunk765250, Chunk755721, o, Chunk991186]), [O, P] = Chunk473749.useState(Chunk610394), [w, k] = Chunk473749.useState(null), R = Chunk473749.useMemo(() => Chunk837268.find(e => e.key === w), [Chunk837268, Chunk352527]), A = Chunk473749.useCallback(e => {
     P(e)
   }, []), {
     renderSelectedTab: Z
@@ -1255,7 +1255,7 @@ let eI = e => {
     })
   });
 
-function eA() {
+function eR() {
   return (0, Chunk54381.jsx)(Chunk481060.w0Z, {
     children: (0, Chunk54381.jsx)("div", {
       className: i()(Chunk451429.panel, Chunk454741.subPanel),
@@ -1264,7 +1264,7 @@ function eA() {
   })
 }
 
-function eR() {
+function eA() {
   let [e, t] = Chunk473749.useState("state");
   return Chunk473749.useEffect(() => (Chunk570140.Z.dispatch({
     type: "OVERLAY_SET_DETAILED_LOGGING",
@@ -1303,6 +1303,6 @@ function eR() {
           children: "Experiments"
         })
       })]
-    }), "state" === module && (0, Chunk54381.jsx)(eP, {}), "logging" === module && (0, Chunk54381.jsx)(eN, {}), "experiments" === module && (0, Chunk54381.jsx)(eA, {})]
+    }), "state" === module && (0, Chunk54381.jsx)(eP, {}), "logging" === module && (0, Chunk54381.jsx)(eN, {}), "experiments" === module && (0, Chunk54381.jsx)(eR, {})]
   })
 }

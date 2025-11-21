@@ -1,4 +1,4 @@
-/** Chunk was on 91394 **/
+/** Chunk was on 43605 **/
 /** chunk id: 78933, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eo
@@ -128,8 +128,8 @@ function eo(e) {
     ek = (0, C.b)({
       location: "UserProfileAccountPopout"
     }),
-    eA = l.useRef(null),
     eR = l.useRef(null),
+    eA = l.useRef(null),
     eZ = l.useRef((0, W.Z)(e => e.shouldRenderTenureLevelUp)),
     eD = l.useMemo(() => (0, x.Z)(), []),
     [eL, eM] = l.useState(true);
@@ -196,7 +196,7 @@ function eo(e) {
               themeType: ea.l.POPOUT,
               onOpenProfile: ep ? true : eU
             }), (0, a.jsx)(M.Z, {
-              ref: eA,
+              ref: eR,
               user: t,
               themeType: ea.l.POPOUT,
               onCloseProfile: n,
@@ -233,14 +233,14 @@ function eo(e) {
               bio: null == eh ? true : eh.bio,
               hidePersonalInformation: eS,
               onClose: n
-            }), eF && eB && (0, a.jsx)(R.Z, {
+            }), eF && eB && (0, a.jsx)(A.Z, {
               user: t,
               widgets: null == eh ? true : eh.widgets,
               onOpenUserProfileModal: eU
             }), (0, a.jsx)(I.Z, {
               isPremiumUser: eI,
               onInteraction: n
-            }), ek ? (0, a.jsx)(A.Z, {
+            }), ek ? (0, a.jsx)(R.Z, {
               user: t,
               currentUser: t,
               onOpenUserProfileModal: eU,
@@ -273,7 +273,7 @@ function eo(e) {
                     trailing: eV ? (0, a.jsx)(c.IGR, {
                       text: el.intl.string(el.t.y2b7CA)
                     }) : true,
-                    ref: eR
+                    ref: eA
                   }), (0, a.jsx)(J.V4, {
                     action: "PRESS_SET_STATUS",
                     label: (0, a.jsx)(X.Z, {}),
@@ -383,7 +383,7 @@ function eo(e) {
             isHovering: ej
           })]
         }), !eq && eJ ? (0, a.jsx)(Y.Z, {
-          targetElementRef: eR,
+          targetElementRef: eA,
           onClose: n
         }) : null, (0, a.jsx)(b.Z, {})]
       })

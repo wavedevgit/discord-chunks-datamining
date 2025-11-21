@@ -1,4 +1,4 @@
-/** Chunk was on 16985 **/
+/** Chunk was on 62191 **/
 /** chunk id: 409322, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -25,14 +25,14 @@ function u(e) {
       collapseAfter: p,
       ContextProvider: v,
       useCollapsibleTitle: j,
-      useCollapsedSubtitle: m
+      useCollapsedSubtitle: g
     } = u,
-    g = y.filter(e => {
+    m = y.filter(e => {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    h = null != p ? g.slice(0, p) : g,
-    x = null != p ? g.slice(p) : [],
+    h = null != p ? m.slice(0, p) : m,
+    x = null != p ? m.slice(p) : [],
     O = null != v ? v : l.Fragment,
     S = null == d ? true : d(),
     C = null != (t = null == j ? true : j(f, x.length)) ? t : (n = x.length, f ? c.intl.formatToPlainString(c.t["3SHL+d"], {
@@ -40,7 +40,7 @@ function u(e) {
     }) : c.intl.formatToPlainString(c.t["8JRFyZ"], {
       count: n
     })),
-    P = null == m ? true : m();
+    P = null == g ? true : g();
   return (0, r.jsx)(O, {
     children: (0, r.jsxs)(i.Kqy, {
       gap: 8,

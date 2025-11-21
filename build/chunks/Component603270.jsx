@@ -175,8 +175,8 @@ function x(e) {
     initialSubscribeForGuild: O
   });
   if (!D || null == b || null == m) return null;
-  let j = m.type === A.epS.SUBSCRIPTION,
-    k = !!j && (0, _.KW)(m.flags),
+  let k = m.type === A.epS.SUBSCRIPTION,
+    j = !!k && (0, _.KW)(m.flags),
     U = () => {
       (0, l.ZDy)(async () => {
         let {
@@ -192,8 +192,8 @@ function x(e) {
     },
     G = () => {
       (0, l.ZDy)(async () => {
-        let e = j ? (await Promise.resolve().then(n.bind(n, 519896))).SubscriptionDetailsModal : null,
-          t = j ? null : (await Promise.resolve().then(n.bind(n, 147496))).ItemDetailsModal;
+        let e = k ? (await Promise.resolve().then(n.bind(n, 519896))).SubscriptionDetailsModal : null,
+          t = k ? null : (await Promise.resolve().then(n.bind(n, 147496))).ItemDetailsModal;
         return n => {
           let i = () => {
             n.onClose(), U()
@@ -203,7 +203,7 @@ function x(e) {
             appId: b.id,
             skuId: m.id,
             guildId: O,
-            subscriptionType: k ? "user" : "guild",
+            subscriptionType: j ? "user" : "guild",
             onClose: n.onClose,
             onHeaderTitleClick: i
           }) : null != t ? (0, r.jsx)(t, {
@@ -217,7 +217,7 @@ function x(e) {
       })
     },
     B = 12,
-    Z = j ? k ? (0, r.jsxs)(r.Fragment, {
+    Z = k ? j ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.tBG, {
         size: "custom",
         width: B,
@@ -269,10 +269,10 @@ function x(e) {
         variant: "secondary",
         onClick: V,
         text: N.intl.string(N.t.DXYfjO)
-      }), j ? null != g ? (0, r.jsx)(S.pV, {
+      }), k ? null != g ? (0, r.jsx)(S.pV, {
         onClick: L,
         appId: b.id,
-        subscriptionType: k ? "user" : "guild",
+        subscriptionType: j ? "user" : "guild",
         skuId: m.id,
         icon: l.EOn,
         onHasClicked: H,

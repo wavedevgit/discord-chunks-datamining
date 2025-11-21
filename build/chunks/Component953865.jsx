@@ -4,9 +4,9 @@
 require.d(exports, {
   o8: () => g,
   ov: () => b,
-  xf: () => y,
+  xf: () => O,
   xz: () => E
-}), require("./415506.js");
+}), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk343203 = require("./343203.js"),
@@ -111,22 +111,29 @@ let m = {
   b = e => {
     let {
       children: t
-    } = e, n = (0, d.u)(), a = (0, i.useRef)(g({
-      install: c.f,
-      connect: async () => await l.Z.connect(),
-      disconnect: async () => await l.Z.disconnect(),
-      perkAvailableToUser: n
-    })).current, s = (0, o.o)(a, e => e.setPerkAvailableToUser);
-    return (0, i.useEffect)(() => {
-      s(n)
-    }, [n, s]), (0, r.jsx)(E.Provider, {
-      value: a,
+    } = e, n = y();
+    return (0, r.jsx)(E.Provider, {
+      value: n,
       children: t
     })
+  },
+  y = () => {
+    let e = (0, Chunk848984.u)(),
+      [t] = (0, Chunk473749.useState)(() => g({
+        install: Chunk998054.f,
+        connect: async () => await Chunk956097.Z.connect(),
+        disconnect: async () => await Chunk956097.Z.disconnect(),
+        perkAvailableToUser: module
+      })),
+      n = (0, Chunk663042.o)(exports, e => e.setPerkAvailableToUser);
+    return (0, Chunk473749.useEffect)(() => {
+      require(module)
+    }, [module, require]), exports
   };
 
-function y(e) {
-  let t = (0, i.useContext)(E);
-  if (null == t) throw Error("Missing PrivateBrowsingPerkProvider in React tree");
-  return null != e ? (0, o.o)(t, e) : (0, o.o)(t)
+function O(e) {
+  let t = (0, i.useContext)(E),
+    n = y(),
+    r = null != t ? t : n;
+  return null != e ? (0, o.o)(r, e) : (0, o.o)(r)
 }

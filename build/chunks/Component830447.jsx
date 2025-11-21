@@ -305,13 +305,13 @@ function C(e) {
   }, [x.isUsingKeyboardNavigation]);
   let M = i.useRef(null);
   (0, u.Tbt)(M);
-  let j = s ? u.u2D : u.zJl,
-    k = i.useMemo(() => ({
+  let k = s ? u.u2D : u.zJl,
+    j = i.useMemo(() => ({
       onSelect: I,
       onInteraction: C
     }), [I, C]);
   return (0, r.jsx)(h.p.Provider, {
-    value: k,
+    value: j,
     children: (0, r.jsx)("div", v(y({
       className: o()(E.menu, E[a], p),
       style: {
@@ -320,7 +320,7 @@ function C(e) {
     }, x.getContainerProps()), {
       ref: M,
       "aria-label": e["aria-label"],
-      children: (0, r.jsxs)(j, {
+      children: (0, r.jsxs)(k, {
         className: E.scroller,
         children: [0 === N.length && (0, r.jsx)(m.ck, {
           disabled: true,

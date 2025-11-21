@@ -1,4 +1,4 @@
-/** Chunk was on 91394 **/
+/** Chunk was on 43605 **/
 /** chunk id: 925124, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -107,15 +107,15 @@ function I(e) {
   let {
     id: w,
     expires_at: k,
-    redeemed_at: A,
-    trial_id: R,
+    redeemed_at: R,
+    trial_id: A,
     subscription_trial: Z,
     referrer: D
   } = p, L = null != (n = null == (t = f.find(e => {
     let {
       value: t
     } = e;
-    return t === R
+    return t === A
   })) ? true : t.label) ? n : "Unknown";
   null != D && (L = "".concat(L, " from @").concat(D.username));
   let M = null != k,
@@ -207,12 +207,12 @@ function I(e) {
     }), (0, a.jsxs)(c.P3F, {
       className: i()(y.row, y.idRow),
       onClick: () => {
-        (0, h.JG)(R, () => E(true))
+        (0, h.JG)(A, () => E(true))
       },
       children: [(0, a.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
-        children: ["Trial: ", R]
+        children: ["Trial: ", A]
       }), S ? (0, a.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
@@ -274,7 +274,7 @@ function I(e) {
           color: "Acked" === z ? true : "always-white",
           children: z
         })
-      }), null != A && (0, a.jsx)("div", {
+      }), null != R && (0, a.jsx)("div", {
         className: i()(y.badge, y.redeemed),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
@@ -327,7 +327,7 @@ function w(e) {
       value: t
     } = e;
     return t === P
-  })) ? true : t.label) ? n : "Unknown", k = null != T, A = null != T && new Date(T).getTime() < Date.now(), R = async () => {
+  })) ? true : t.label) ? n : "Unknown", k = null != T, R = null != T && new Date(T).getTime() < Date.now(), A = async () => {
     _(true), k ? await Z({
       expiresAt: null
     }) : await (0, u.ab)(true, r), m(), _(false)
@@ -367,7 +367,7 @@ function w(e) {
     }
   }, [p, f]);
   let D = "Active";
-  return A && (D = "Expired"), k && (D = "Acked"), (0, a.jsxs)("div", {
+  return R && (D = "Expired"), k && (D = "Acked"), (0, a.jsxs)("div", {
     className: i()(y.card, y.discount),
     children: [(0, a.jsxs)("div", {
       className: i()(y.row, y.nameRow),
@@ -443,10 +443,10 @@ function w(e) {
     }), (0, a.jsxs)("div", {
       className: y.badgeContainer,
       children: [(0, a.jsx)(c.P3F, {
-        onClick: R,
+        onClick: A,
         className: i()(y.badge, y.clickable, {
           [y.acked]: k,
-          [y.expired]: A
+          [y.expired]: R
         }),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
@@ -471,7 +471,7 @@ function w(e) {
 }
 
 function k() {
-  let [e, t] = Chunk473749.useState([]), [n, r] = Chunk473749.useState([]), [i, s] = Chunk473749.useState(), [d, h] = Chunk473749.useState(), [x, g] = Chunk473749.useState([]), [_, N] = Chunk473749.useState([]), [k, A] = Chunk473749.useState(true), [R, Z] = Chunk473749.useState(10080), [D, L] = Chunk473749.useState([]), {
+  let [e, t] = Chunk473749.useState([]), [n, r] = Chunk473749.useState([]), [i, s] = Chunk473749.useState(), [d, h] = Chunk473749.useState(), [x, g] = Chunk473749.useState([]), [_, N] = Chunk473749.useState([]), [k, R] = Chunk473749.useState(true), [A, Z] = Chunk473749.useState(10080), [D, L] = Chunk473749.useState([]), {
     entitlements: M,
     deleteFractionalPremium: U,
     refreshEntitlementList: F
@@ -493,18 +493,18 @@ function k() {
       t(n), r(a), null == i && s(n[0].value), null == d && h(a[0].value)
     })
   }, [module, require, i, Chunk105713, k]), Chunk473749.useEffect(() => {
-    k && (A(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), T().then(e => {
+    k && (R(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), T().then(e => {
       g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), N(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [k]);
   let B = async () => {
-    null != i && (await E(i, "trial"), A(true))
+    null != i && (await E(i, "trial"), R(true))
   }, G = async () => {
-    null != Chunk105713 && (await E(Chunk105713, "discount"), A(true))
+    null != Chunk105713 && (await E(Chunk105713, "discount"), R(true))
   }, z = async () => {
-    await O(), A(true)
+    await O(), R(true)
   }, H = async () => {
-    let e = new Date(Date.now() + 60 * R * 1e3).toISOString();
+    let e = new Date(Date.now() + 60 * A * 1e3).toISOString();
     await P(module), F()
   };
   return (0, Chunk54381.jsx)(Chunk481060.zJl, {
@@ -537,7 +537,7 @@ function k() {
             variant: "primary",
             size: "sm",
             text: "Refresh DevTools",
-            onClick: () => A(true)
+            onClick: () => R(true)
           })]
         })]
       }), (0, Chunk54381.jsxs)("section", {
@@ -590,7 +590,7 @@ function k() {
         }), Chunk55935.map(t => (0, a.jsx)(I, {
           offer: t,
           offerOptions: e,
-          forceRefetch: () => A(true)
+          forceRefetch: () => R(true)
         }, t.id))]
       }), Chunk474936.length > 0 && (0, Chunk54381.jsxs)("section", {
         className: Chunk711322.section,
@@ -600,7 +600,7 @@ function k() {
         }), Chunk474936.map(e => (0, a.jsx)(w, {
           offer: e,
           offerOptions: n,
-          forceRefetch: () => A(true)
+          forceRefetch: () => R(true)
         }, e.id))]
       }), (0, Chunk54381.jsxs)("section", {
         className: Chunk711322.section,
@@ -624,7 +624,7 @@ function k() {
               label: "1 week",
               value: 10080
             }],
-            isSelected: e => R === e,
+            isSelected: e => A === e,
             placeholder: "Reverse Trial Length",
             serialize: e => String(e),
             select: e => Z(e),

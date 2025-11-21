@@ -32,12 +32,12 @@ function N() {
 
 function A() {
   let t = Chunk473749.useCallback(t => {
-      a.Z.setNoiseCancellation(t === d.Q4.KRISP, d.MP), a.Z.setNoiseSuppression(t === d.Q4.STANDARD, d.MP)
+      a.Z.setNoiseCancellation(t === S.Q4.KRISP, S.MP), a.Z.setNoiseSuppression(t === S.Q4.STANDARD, S.MP)
     }, []),
     {
       noiseCancellation: e,
       noiseSuppression: n,
-      isNoiseSuppressionSupported: u,
+      isNoiseSuppressionSupported: r,
       isNoiseCancellationSupported: o
     } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
       noiseCancellation: Chunk131951.Z.getNoiseCancellation(),
@@ -45,7 +45,7 @@ function A() {
       isNoiseSuppressionSupported: Chunk131951.Z.isNoiseSuppressionSupported(),
       isNoiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported()
     })),
-    S = require ? Chunk803567.Q4.STANDARD : Chunk803567.Q4.NONE,
+    E = require ? Chunk803567.Q4.STANDARD : Chunk803567.Q4.NONE,
     T = exports ? Chunk803567.Q4.KRISP : Chunk210887,
     g = Chunk473749.useMemo(() => {
       let t = [];

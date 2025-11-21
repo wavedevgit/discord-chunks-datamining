@@ -14,7 +14,7 @@ var Chunk292556 = require("./292556.js"),
   Chunk407458 = require("./407458.js"),
   Chunk388032 = require("./388032.jsx");
 require("./732213.js");
-let S = {
+let E = {
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
@@ -24,7 +24,7 @@ let S = {
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.XBrJT6),
     sound: "call_ringing"
   },
-  d = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
+  S = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV9),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel()),
     setValue: t => l.default.setNotifyMessagesInSelectedChannel(t)
@@ -39,5 +39,5 @@ let S = {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.ONU22R),
     variant: "separators",
     ContextProvider: Chunk299426.u,
-    buildLayout: () => [(0, Chunk407458.j)(S), d, (0, Chunk407458.j)(T), I]
+    buildLayout: () => [(0, Chunk407458.j)(E), S, (0, Chunk407458.j)(T), I]
   })

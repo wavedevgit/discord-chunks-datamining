@@ -86,20 +86,20 @@ function N(e) {
     return null == w || null == w.party ? [] : Array.from(null != (e = d.Z.getParty(w.party.id)) ? e : [])
   }, [w]), {
     partySize: M,
-    maxPartySize: j
-  } = (0, E._)(w), k = i.useMemo(() => x.map(e => {
+    maxPartySize: k
+  } = (0, E._)(w), j = i.useMemo(() => x.map(e => {
     let t = h.default.getUser(e);
     return null != t ? t : b.ag
   }), [x]), U = i.useMemo(() => {
     var e;
     return (0, r.jsx)(A, {
-      partyMembers: k,
+      partyMembers: j,
       partySize: M,
-      maxPartySize: j,
+      maxPartySize: k,
       guildId: T.guild_id,
       activityActionType: null == (e = S.activity) ? true : e.type
     })
-  }, [k, M, j, T.guild_id, null == (t = S.activity) ? true : t.type]);
+  }, [j, M, k, T.guild_id, null == (t = S.activity) ? true : t.type]);
   return (0, I.Ps)(null == w || null == (n = w.party) ? true : n.id) || P.id === c.r9.id ? (0, r.jsx)(O.Z, {
     application: P,
     currentUserPresenceActivity: L,

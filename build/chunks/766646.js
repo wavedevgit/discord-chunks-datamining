@@ -40,7 +40,7 @@ function L() {
   C.stop(), null != r && (Chunk649754.Z.removeSink(r, A), r = null)
 }
 let x = s().debounce((e, t, n, r) => {
-  j(e, (0, y.V9)({
+  k(e, (0, y.V9)({
     streamType: null != t ? O.lo.GUILD : O.lo.CALL,
     guildId: t,
     channelId: n,
@@ -61,11 +61,11 @@ function M(e) {
     null == w || w.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r), t()
   })
 }
-async function j(e, t) {
+async function k(e, t) {
   if (r !== e || (0, E.isWeb)() && h.I0.getSetting() || m.Z.getIsActiveStreamPreviewDisabled(t)) return;
-  let n = () => j(e, t);
+  let n = () => k(e, t);
   if (!N) try {
-    let n = await k(e, 60);
+    let n = await j(e, 60);
     await M(n);
     let r = R.toDataURL("image/jpeg");
     if (_.Z.dispatch({
@@ -95,7 +95,7 @@ async function j(e, t) {
   r === e && (N ? C.start(S, n) : C.start(T, n))
 }
 
-function k(e, t) {
+function j(e, t) {
   let n = 0;
   return (E.isPlatformEmbedded ? G : U)(e, e => {
     if (new Uint32Array(e.data.buffer).some(e => 0 !== e)) returntrue;
