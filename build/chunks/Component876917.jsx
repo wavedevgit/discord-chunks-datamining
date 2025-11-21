@@ -53,6 +53,7 @@ let d = .1,
           isHovering: n,
           introDelay: h,
           useOpacityOnHover: false,
+          urlQueryString: "ProfileEffectShopPreview",
           shopPreview: true
         })
       })]
