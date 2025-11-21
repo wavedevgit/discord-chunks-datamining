@@ -1,7 +1,7 @@
 /** Chunk was on 77033 **/
-/** chunk id: 720983, original params: e,n,l (module,exports,require) **/
+/** chunk id: 720983, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,6 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk410030 = require("./410030.js"),
+  Chunk100527 = require("./100527.js"),
   Chunk984370 = require("./984370.jsx"),
   Chunk567400 = require("./567400.js"),
   Chunk892001 = require("./892001.js"),
@@ -20,85 +21,86 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk260999 = require("./260999.js");
 
-function f(e) {
+function v(e) {
   let {
     icon: n,
-    onClick: l,
+    onClick: t,
     ariaLabel: i,
     className: a
   } = e;
-  return (0, t.jsx)(d.P3F, {
-    className: o()(_.iconButton, a),
-    onClick: l,
+  return (0, l.jsx)(s.P3F, {
+    className: o()(f.iconButton, a),
+    onClick: t,
     "aria-label": i,
     children: n
   })
 }
 
-function v(e) {
+function C(e) {
   let {
     guildId: n,
-    storefront: l,
+    storefront: t,
     selectedPageIndex: a
-  } = e, v = (0, d.wjy)((0, s.ZP)()), j = (0, u.Y)({
+  } = e, C = (0, s.wjy)((0, d.ZP)()), j = (0, p.Y)({
     location: "SocialLayerStorefrontHeader"
-  }), C = (0, r.e7)([g.default], () => g.default.getCurrentUser()), k = i.useCallback(() => {
-    (null == C ? true : C.id) != null && (0, p.openUserProfileModal)({
-      userId: C.id,
+  }), k = (0, r.e7)([I.default], () => I.default.getCurrentUser()), b = i.useCallback(() => {
+    (null == k ? true : k.id) != null && (0, g.openUserProfileModal)({
+      userId: k.id,
       section: h.oh.WISHLIST,
-      showGuildProfile: false
+      showGuildProfile: false,
+      sourceAnalyticsLocations: [c.Z.SOCIAL_LAYER_STOREFRONT]
     })
-  }, [C]);
-  if (null == l) return null;
-  let b = null != l.logoAssetId ? (0, I._W)(l.applicationId, l.logoAssetId, 75) : null,
-    Z = null != l.lightThemeLogoAssetId ? (0, I._W)(l.applicationId, l.lightThemeLogoAssetId, 75) : null,
-    N = null;
-  return N = v ? null != b ? b : Z : null != Z ? Z : b, (0, t.jsxs)(c.Z, {
+  }, [k]);
+  if (null == t) return null;
+  let Z = null != t.logoAssetId ? (0, x._W)(t.applicationId, t.logoAssetId, 75) : null,
+    N = null != t.lightThemeLogoAssetId ? (0, x._W)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
+    S = null;
+  return S = C ? null != Z ? Z : N : null != N ? N : Z, (0, l.jsxs)(u.Z, {
     disableDoubleClick: true,
-    className: _.headerContainer,
-    children: [(0, t.jsxs)(d.P3F, {
+    className: f.headerContainer,
+    children: [(0, l.jsxs)(s.P3F, {
       onClick: () => {
-        (0, x.Z)({
+        (0, _.Z)({
           guildId: n,
           pageIndex: 0
         })
       },
-      className: _.titleContainer,
-      children: [null != N && (0, t.jsx)("img", {
-        className: _.logo,
-        src: N,
-        alt: l.title
-      }), (0, t.jsx)(c.Z.Title, {
-        children: l.title
+      className: f.titleContainer,
+      children: [null != S && (0, l.jsx)("img", {
+        className: f.logo,
+        src: S,
+        alt: t.title
+      }), (0, l.jsx)(u.Z.Title, {
+        children: t.title
       })]
-    }), (0, t.jsx)("div", {
-      className: _.titles,
-      children: l.pages.map((e, l) => (0, t.jsx)(c.Z.Title, {
+    }), (0, l.jsx)("div", {
+      className: f.titles,
+      children: t.pages.map((e, t) => (0, l.jsx)(u.Z.Title, {
         onClick: () => {
-          (0, x.Z)({
+          (0, _.Z)({
             guildId: n,
-            pageIndex: l
+            pageIndex: t
           })
         },
-        wrapperClassName: _.titleWrapper,
-        className: o()(_.pageTitleContainer, {
-          [_.selectedPageIndicator]: a === l
+        wrapperClassName: f.titleWrapper,
+        className: o()(f.pageTitleContainer, {
+          [f.selectedPageIndicator]: a === t
         }),
-        children: (0, t.jsx)(d.xvT, {
+        children: (0, l.jsx)(s.xvT, {
           variant: "text-sm/medium",
           children: e.title
         })
-      }, "".concat(e.title, "-").concat(l)))
-    }), j && (0, t.jsx)("div", {
-      className: _.alignedRightContent,
-      children: (0, t.jsx)(f, {
-        icon: (0, t.jsx)(d.h_8, {
+      }, "".concat(e.title, "-").concat(t)))
+    }), j && (0, l.jsx)("div", {
+      className: f.alignedRightContent,
+      children: (0, l.jsx)(v, {
+        icon: (0, l.jsx)(s.h_8, {
           size: "xs",
           color: "currentColor"
         }),
-        onClick: k,
+        onClick: b,
         ariaLabel: m.intl.string(m.t["7lZ31J"]),
-        className: _.wishlistButton
+        className: f.wishlistButton
       })
     })]
   })
