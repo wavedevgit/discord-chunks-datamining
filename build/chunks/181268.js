@@ -2,8 +2,12 @@
 /** chunk id: 181268, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  rZ: () => r
+  o: () => i,
+  r: () => r
 });
 var r = function(e) {
-  return e.CARD = "card", e.BUY_BUTTON = "buy_button", e.GIFT_BUTTON = "gift_button", e.WISHLIST_BUTTON = "wishlist_button", e
-}({})
+    return e.CARD = "card", e.BUY_BUTTON = "buy_button", e.GIFT_BUTTON = "gift_button", e.WISHLIST_BUTTON = "wishlist_button", e
+  }({}),
+  i = function(e) {
+    return e.BUY_BUTTON = "buy_button", e.GIFT_BUTTON = "gift_button", e.WISHLIST_BUTTON = "wishlist_button", e.COPY_LINK_BUTTON = "copy_link_button", e.VISIT_SHOP = "visit_shop", e.CAROUSEL_ITEM = "carousel_item", e.CAROUSEL_NEXT = "carousel_next", e.CAROUSEL_PREV = "carousel_prev", e.MUTE_BUTTON = "mute_button", e
+  }({})

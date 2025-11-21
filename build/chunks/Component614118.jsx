@@ -49,9 +49,10 @@ function T(e) {
         skuId: D,
         applicationId: x.applicationId,
         guildId: P,
-        isStorefront: false
+        isStorefront: false,
+        analyticsLocations: k
       })
-    }, [D, null == x ? true : x.applicationId, P]),
+    }, [D, null == x ? true : x.applicationId, P, k]),
     Z = i.useCallback(() => {
       null != x && (0, E.P)(x, {
         isGift: false

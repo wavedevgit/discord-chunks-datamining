@@ -53,7 +53,9 @@ let c = "social-layer-storefront-product-details-modal",
       applicationId: a,
       guildId: s,
       isStorefront: u,
-      onClose: d
+      analyticsLocations: d,
+      analyticsContext: f,
+      onClose: _
     } = e;
     (0, i.ZDy)(async () => {
       let {
@@ -63,12 +65,14 @@ let c = "social-layer-storefront-product-details-modal",
         skuId: t,
         applicationId: a,
         guildId: s,
-        isStorefront: u
+        isStorefront: u,
+        analyticsLocations: d,
+        analyticsContext: f
       }))
     }, {
       modalKey: c,
       onCloseCallback: () => {
-        null == d || d()
+        null == _ || _()
       }
     })
   };

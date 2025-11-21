@@ -29,7 +29,7 @@ function v(e) {
     className: a
   } = e;
   return (0, l.jsx)(s.P3F, {
-    className: o()(f.iconButton, a),
+    className: o()(m.iconButton, a),
     onClick: t,
     "aria-label": i,
     children: n
@@ -46,7 +46,7 @@ function C(e) {
   }), k = (0, r.e7)([I.default], () => I.default.getCurrentUser()), b = i.useCallback(() => {
     (null == k ? true : k.id) != null && (0, g.openUserProfileModal)({
       userId: k.id,
-      section: h.oh.WISHLIST,
+      section: f.oh.WISHLIST,
       showGuildProfile: false,
       sourceAnalyticsLocations: [c.Z.SOCIAL_LAYER_STOREFRONT]
     })
@@ -57,7 +57,7 @@ function C(e) {
     S = null;
   return S = C ? null != Z ? Z : N : null != N ? N : Z, (0, l.jsxs)(u.Z, {
     disableDoubleClick: true,
-    className: f.headerContainer,
+    className: m.headerContainer,
     children: [(0, l.jsxs)(s.P3F, {
       onClick: () => {
         (0, _.Z)({
@@ -65,16 +65,16 @@ function C(e) {
           pageIndex: 0
         })
       },
-      className: f.titleContainer,
+      className: m.titleContainer,
       children: [null != S && (0, l.jsx)("img", {
-        className: f.logo,
+        className: m.logo,
         src: S,
         alt: t.title
       }), (0, l.jsx)(u.Z.Title, {
         children: t.title
       })]
     }), (0, l.jsx)("div", {
-      className: f.titles,
+      className: m.titles,
       children: t.pages.map((e, t) => (0, l.jsx)(u.Z.Title, {
         onClick: () => {
           (0, _.Z)({
@@ -82,9 +82,9 @@ function C(e) {
             pageIndex: t
           })
         },
-        wrapperClassName: f.titleWrapper,
-        className: o()(f.pageTitleContainer, {
-          [f.selectedPageIndicator]: a === t
+        wrapperClassName: m.titleWrapper,
+        className: o()(m.pageTitleContainer, {
+          [m.selectedPageIndicator]: a === t
         }),
         children: (0, l.jsx)(s.xvT, {
           variant: "text-sm/medium",
@@ -92,15 +92,15 @@ function C(e) {
         })
       }, "".concat(e.title, "-").concat(t)))
     }), j && (0, l.jsx)("div", {
-      className: f.alignedRightContent,
+      className: m.alignedRightContent,
       children: (0, l.jsx)(v, {
         icon: (0, l.jsx)(s.h_8, {
           size: "xs",
           color: "currentColor"
         }),
         onClick: b,
-        ariaLabel: m.intl.string(m.t["7lZ31J"]),
-        className: f.wishlistButton
+        ariaLabel: h.intl.string(h.t["7lZ31J"]),
+        className: m.wishlistButton
       })
     })]
   })

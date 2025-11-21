@@ -1,11 +1,11 @@
 /** Chunk was on 84802 **/
 /** chunk id: 44488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Pz: () => h,
-  ZP: () => C,
+  Pz: () => _,
+  ZP: () => h,
   am: () => g
 }), require("./388685.js");
-var r, Chunk54381 = require("./54381.js"),
+var l, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
@@ -25,7 +25,7 @@ let m = {
   CENTER: Chunk584917.alignCenter,
   LEFT: Chunk584917.alignLeft
 };
-class p extends(r = Chunk473749.PureComponent) {
+class p extends(l = Chunk473749.PureComponent) {
   componentDidUpdate(e) {
     let {
       selectedIndex: t
@@ -37,14 +37,14 @@ class p extends(r = Chunk473749.PureComponent) {
       renderItem: e,
       items: t,
       vertical: n,
-      paginationContainerClass: r,
+      paginationContainerClass: l,
       align: o
     } = this.props, c = require ? Chunk584917.verticalPaginationItemContainer : Chunk584917.horizontalPaginationItemContainer;
     return (0, Chunk54381.jsx)(Chunk481060.yWw, {
       orientation: require ? "vertical" : "horizontal",
-      className: i()(Chunk768762, r, Chunk120356),
+      className: i()(Chunk768762, l, Chunk120356),
       ref: this.handleSetScrollerRef,
-      children: exports.map((t, n) => l.cloneElement(e(t, n), {
+      children: exports.map((t, n) => r.cloneElement(e(t, n), {
         onClick: () => this.handlePageClick(n),
         key: n,
         ref: e => {
@@ -106,7 +106,7 @@ class g extends Chunk473749.PureComponent {
     })
   }
 }
-class h extends Chunk473749.PureComponent {
+class _ extends Chunk473749.PureComponent {
   render() {
     let {
       className: e
@@ -130,4 +130,4 @@ class h extends Chunk473749.PureComponent {
     })
   }
 }
-let C = p
+let h = p

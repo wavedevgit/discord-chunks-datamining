@@ -88,7 +88,7 @@ function p(e, t) {
         sku_product_line: e.productLine
       }), (0, o.fw)(), (0, s.p)()
     },
-    modalKey: "slayers-payment-modal"
+    modalKey: "slayer-payment-modal"
   })
 }
 

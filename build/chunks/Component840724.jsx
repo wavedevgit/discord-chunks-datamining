@@ -132,9 +132,9 @@ function H(e) {
       [n, r] = B[et];
     return 0 === n && 0 === r ? "none" : "linear-gradient(to top, ".concat(e, " ").concat(Z + n, "%, ").concat(t, " ").concat(Z + r, "%)")
   }, [ey, et]), eI = i.useCallback(() => {
-    ep(x.rZ.WISHLIST_BUTTON)
+    ep(x.r.WISHLIST_BUTTON)
   }, [ep]), eT = i.useCallback(e => {
-    if (ep(x.rZ.CARD), null != er) return void er(e);
+    if (ep(x.r.CARD), null != er) return void er(e);
     null != en && (0, R.Z)({
       guildId: en,
       pageIndex: eg,
@@ -219,7 +219,7 @@ function H(e) {
             children: [(0, r.jsx)(d.zxk, {
               variant: "primary",
               onClick: e => {
-                e.stopPropagation(), ep(x.rZ.BUY_BUTTON), (0, D.P)(es, {
+                e.stopPropagation(), ep(x.r.BUY_BUTTON), (0, D.P)(es, {
                   isGift: false
                 }, {
                   analyticsLocations: [h.Z.SLAYER_STOREFRONT_CARD_PURCHASE_BUTTON]
@@ -231,7 +231,7 @@ function H(e) {
               fullWidth: true
             }), (0, r.jsx)(L.Z, {
               onGift: e => {
-                e.stopPropagation(), ep(x.rZ.GIFT_BUTTON), (0, D.P)(es, {
+                e.stopPropagation(), ep(x.r.GIFT_BUTTON), (0, D.P)(es, {
                   isGift: true
                 }, {
                   analyticsLocations: [h.Z.SLAYER_STOREFRONT_CARD_GIFT_BUTTON]

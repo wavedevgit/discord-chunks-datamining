@@ -21,23 +21,23 @@ function _(e) {
   var n, t;
   let {
     applicationId: _,
-    guildId: h,
-    page: m
+    guildId: f,
+    page: h
   } = e, {
-    ref: f,
+    ref: m,
     width: v
   } = (0, o.ZP)(), C = (0, d.oR)(), {
     analyticsLocations: j
   } = (0, s.ZP)(), [k, b] = i.useMemo(() => {
-    if ((null == m ? true : m.skuIds) == null || (null == m ? true : m.skuIds.length) === 0) return [
+    if ((null == h ? true : h.skuIds) == null || (null == h ? true : h.skuIds.length) === 0) return [
       [],
       []
     ];
     let e = Math.round(null != v ? v : 0);
-    return (null == m ? true : m.leaderboard) == null || null == e || e <= 516 || e < 1104 ? [
-      [], null == m ? true : m.skuIds
-    ] : [null == m ? true : m.skuIds.slice(0, 2), null == m ? true : m.skuIds.slice(2)]
-  }, [m, v]);
+    return (null == h ? true : h.leaderboard) == null || null == e || e <= 516 || e < 1104 ? [
+      [], null == h ? true : h.skuIds
+    ] : [null == h ? true : h.skuIds.slice(0, 2), null == h ? true : h.skuIds.slice(2)]
+  }, [h, v]);
   return (i.useEffect(() => {
     let {
       sessionId: e,
@@ -54,31 +54,31 @@ function _(e) {
       is_user_guild_member: i,
       location_stack: j
     })
-  }, [C, j]), null == m) ? null : (0, l.jsx)(a.zJl, {
+  }, [C, j]), null == h) ? null : (0, l.jsx)(a.zJl, {
     children: (0, l.jsxs)("section", {
-      ref: f,
+      ref: m,
       className: x.container,
       children: [(0, l.jsx)(p.n, {
         applicationId: _,
-        backgroundImageAssetId: null == (n = m.leaderboard) ? true : n.backgroundImageAssetId
+        backgroundImageAssetId: null == (n = h.leaderboard) ? true : n.backgroundImageAssetId
       }), (0, l.jsx)(u.t, {
-        leaderboard: m.leaderboard
+        leaderboard: h.leaderboard
       }), (0, l.jsx)(g.Z, {
         analyticsSectionId: "featured-top-section",
         applicationId: _,
-        guildId: h,
+        guildId: f,
         skuIds: k,
         variant: c.Z.MEDIUM
       }), (0, l.jsx)(g.Z, {
         analyticsSectionId: "non-featured-top-section",
         applicationId: _,
-        guildId: h,
+        guildId: f,
         skuIds: b
-      }), null == (t = m.sections) ? true : t.map((e, n) => {
+      }), null == (t = h.sections) ? true : t.map((e, n) => {
         var t;
         return (0, l.jsx)(g.Z, {
           analyticsSectionId: "index:".concat(n),
-          guildId: h,
+          guildId: f,
           applicationId: _,
           sectionTitle: null != (t = e.title) ? t : true,
           skuIds: e.skuIds
