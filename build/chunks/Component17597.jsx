@@ -55,7 +55,7 @@ let N = function(e) {
     onComplete: j,
     dismissable: N,
     classificationId: T
-  } = e, [O, P] = l.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = l.useRef(O), [w, k] = (0, c.US)([O], true, true), A = l.useMemo(() => (0, r.Z)(), []), R = l.useRef(false), Z = (0, m.GE)();
+  } = e, [O, P] = l.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = l.useRef(O), [w, k] = (0, c.US)([O], true, true), A = l.useMemo(() => (0, i.Z)(), []), R = l.useRef(false), Z = (0, m.GE)();
   l.useEffect(() => {
     I.current = w
   }, [w]);
@@ -80,7 +80,7 @@ let N = function(e) {
     }))
   }, []), l.useEffect(() => {
     (0, g.lA)(A, g.d_.EXPRESSIVE_PRIMARY, n)
-  }, [A, n]), (0, a.jsx)(i.ExpressiveModal, {
+  }, [A, n]), (0, a.jsx)(r.ExpressiveModal, {
     transitionState: t,
     onClose: u,
     gradientColor: "blue",

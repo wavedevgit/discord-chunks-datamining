@@ -1,7 +1,7 @@
 /** Chunk was on 16985 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -38,7 +38,7 @@ function S(e) {
   })
 }
 
-function P(e) {
+function C(e) {
   var {
     target: t
   } = e, n = function(e, t) {
@@ -89,9 +89,9 @@ function P(e) {
   }({
     root: a,
     directory: s,
-    sidebarHeader: C,
+    sidebarHeader: P,
     emptyState: _,
-    sidebarFooter: j.Z,
+    sidebarFooter: m.Z,
     onPanelChange: e => {
       let t = (0, h.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (S({
@@ -100,11 +100,11 @@ function P(e) {
       }), p.current = t)
     },
     target: u,
-    defaultTarget: m.n.ACCOUNT_PANEL
+    defaultTarget: j.n.ACCOUNT_PANEL
   }, n)) : null
 }
 
-function C() {
+function P() {
   let e = Chunk996733.Z.useField("query"),
     t = Chunk473749.useRef(null),
     [n, i] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),

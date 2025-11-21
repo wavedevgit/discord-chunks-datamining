@@ -1,7 +1,7 @@
 /** Chunk was on 77033 **/
 /** chunk id: 323540, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
-  $: () => _
+  $: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,30 +14,33 @@ var Chunk54381 = require("./54381.js"),
   Chunk533785 = require("./533785.jsx"),
   Chunk171524 = require("./171524.jsx"),
   Chunk822458 = require("./822458.jsx"),
+  Chunk640173 = require("./640173.js"),
   Chunk981631 = require("./981631.js"),
   Chunk329353 = require("./329353.js");
 
-function _(e) {
+function h(e) {
   var n, l;
   let {
-    applicationId: _,
-    guildId: f,
-    page: h
+    applicationId: h,
+    guildId: x,
+    page: m
   } = e, {
-    ref: m,
-    width: v
-  } = (0, o.ZP)(), C = (0, d.oR)(), {
-    analyticsLocations: j
-  } = (0, r.ZP)(), [b, k] = i.useMemo(() => {
-    if ((null == h ? true : h.skuIds) == null || (null == h ? true : h.skuIds.length) === 0) return [
+    ref: v,
+    width: C
+  } = (0, o.ZP)(), j = (0, d.oR)(), {
+    analyticsLocations: b
+  } = (0, r.ZP)(), k = i.useRef(null), {
+    handleScroll: Z
+  } = (0, _.I)(k, j, b), [S, N] = i.useMemo(() => {
+    if ((null == m ? true : m.skuIds) == null || (null == m ? true : m.skuIds.length) === 0) return [
       [],
       []
     ];
-    let e = Math.round(null != v ? v : 0);
-    return (null == h ? true : h.leaderboard) == null || null == e || e <= 516 || e < 1104 ? [
-      [], null == h ? true : h.skuIds
-    ] : [null == h ? true : h.skuIds.slice(0, 2), null == h ? true : h.skuIds.slice(2)]
-  }, [h, v]);
+    let e = Math.round(null != C ? C : 0);
+    return (null == m ? true : m.leaderboard) == null || null == e || e <= 516 || e < 1104 ? [
+      [], null == m ? true : m.skuIds
+    ] : [null == m ? true : m.skuIds.slice(0, 2), null == m ? true : m.skuIds.slice(2)]
+  }, [m, C]);
   return (i.useEffect(() => {
     let {
       sessionId: e,
@@ -46,7 +49,7 @@ function _(e) {
       pageTitle: t,
       isUserGuildMember: i,
       pageHasLeaderboard: a
-    } = C;
+    } = j;
     s.default.track(I.rMx.SLAYER_SHOP_VIEWED, {
       slayer_shop_session_id: e,
       guild_id: n,
@@ -54,34 +57,36 @@ function _(e) {
       page_title: t,
       is_user_guild_member: i,
       page_has_leaderboard: a,
-      location_stack: j
+      location_stack: b
     })
-  }, [C, j]), null == h) ? null : (0, t.jsx)(a.zJl, {
+  }, [j, b]), null == m) ? null : (0, t.jsx)(a.h21, {
+    ref: k,
+    onScroll: Z,
     children: (0, t.jsxs)("section", {
-      ref: m,
-      className: x.container,
-      children: [(0, t.jsx)(p.n, {
-        applicationId: _,
-        backgroundImageAssetId: null == (n = h.leaderboard) ? true : n.backgroundImageAssetId
+      ref: v,
+      className: f.container,
+      children: [(0, t.jsx)(g.n, {
+        applicationId: h,
+        backgroundImageAssetId: null == (n = m.leaderboard) ? true : n.backgroundImageAssetId
       }), (0, t.jsx)(u.t, {
-        leaderboard: h.leaderboard
-      }), (0, t.jsx)(g.Z, {
+        leaderboard: m.leaderboard
+      }), (0, t.jsx)(p.Z, {
         analyticsSectionId: "featured-top-section",
-        applicationId: _,
-        guildId: f,
-        skuIds: b,
+        applicationId: h,
+        guildId: x,
+        skuIds: S,
         variant: c.Z.MEDIUM
-      }), (0, t.jsx)(g.Z, {
+      }), (0, t.jsx)(p.Z, {
         analyticsSectionId: "non-featured-top-section",
-        applicationId: _,
-        guildId: f,
-        skuIds: k
-      }), null == (l = h.sections) ? true : l.map((e, n) => {
+        applicationId: h,
+        guildId: x,
+        skuIds: N
+      }), null == (l = m.sections) ? true : l.map((e, n) => {
         var l;
-        return (0, t.jsx)(g.Z, {
+        return (0, t.jsx)(p.Z, {
           analyticsSectionId: "index:".concat(n),
-          guildId: f,
-          applicationId: _,
+          guildId: x,
+          applicationId: h,
           sectionTitle: null != (l = e.title) ? l : true,
           skuIds: e.skuIds
         }, "".concat(e.title, "-").concat(n))

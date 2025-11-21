@@ -1,0 +1,11 @@
+/** Chunk was on web.js **/
+/** chunk id: 887819, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+module.exports = {
+  systemMessageContainer: "systemMessageContainer_c0ec5e",
+  embedContainer: "embedContainer_c0ec5e",
+  image: "image_c0ec5e",
+  content: "content_c0ec5e",
+  title: "title_c0ec5e",
+  buttonContainer: "buttonContainer_c0ec5e"
+}

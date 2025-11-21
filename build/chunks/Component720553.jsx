@@ -43,9 +43,9 @@ function x(e) {
     onClose: b
   });
   return (0, o.Z)({
-    type: r.ImpressionTypes.MODAL,
-    name: r.ImpressionNames.MASKED_LINK_MODAL
-  }), (0, a.jsxs)(i.Modal, {
+    type: i.ImpressionTypes.MODAL,
+    name: i.ImpressionNames.MASKED_LINK_MODAL
+  }), (0, a.jsxs)(r.Modal, {
     size: "md",
     transitionState: v,
     onClose: b,

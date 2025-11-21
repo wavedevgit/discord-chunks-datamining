@@ -17,14 +17,14 @@ function c(e) {
     applicationId: l,
     guildId: c,
     sectionTitle: u,
-    skuIds: p,
-    variant: g = r.Z.SMALL
-  } = e, I = i.useMemo(() => ({
+    skuIds: g,
+    variant: p = r.Z.SMALL
+  } = e, _ = i.useMemo(() => ({
     section: n,
     sectionTitle: u
   }), [n, u]);
-  return null == p || 0 === p.length ? null : (0, t.jsx)(o.hL, {
-    newValue: I,
+  return null == g || 0 === g.length ? null : (0, t.jsx)(o.hL, {
+    newValue: _,
     children: (0, t.jsxs)("div", {
       className: d.sectionContainer,
       children: [null != u && (0, t.jsx)(a.Heading, {
@@ -35,8 +35,8 @@ function c(e) {
         children: u
       }), (0, t.jsx)(s.t, {
         applicationId: l,
-        skuIds: p,
-        variant: g,
+        skuIds: g,
+        variant: p,
         guildId: c
       })]
     })

@@ -2,7 +2,7 @@
 /** chunk id: 700425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   i: () => a,
-  y: () => c
+  l: () => c
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
@@ -28,7 +28,7 @@ function a(e, t) {
             target: n
           } = e, r = i.get(n);
           null != r && (t ? l.current.add(r) : l.current.delete(r))
-        }), o.Z.getField("isProgrammaticScroll")) return;
+        }), o.Z.getField("disableSidebarCategoryAutoSelect")) return;
       let t = [];
       if (a.forEach(e => {
           l.current.has(e) && t.push(e)
@@ -54,25 +54,23 @@ function a(e, t) {
   }, [t, e.key, e.layout])
 }
 
-function c(e) {
-  return r.useEffect(() => {
+function c() {
+  Chunk473749.useEffect(() => {
     let e = document.querySelectorAll("[data-settings-panel-scroller]");
-    if (0 === e.length) return;
-    let t = e[0];
-    if (null == t) return;
+    if (0 === module.length) return;
+    let t = module[0];
+    if (null == exports) return;
     let n = i().debounce(() => {
-      o.Z.setState({
-        isProgrammaticScroll: false
+      Chunk996435.Z.setState({
+        disableSidebarCategoryAutoSelect: false
       })
     }, 50);
-    return t.addEventListener("scroll", n), () => {
-      t.removeEventListener("scroll", n), null == n || n.cancel()
+    return exports.addEventListener("scroll", require), () => {
+      exports.removeEventListener("scroll", require), null == require || require.cancel()
     }
-  }, [e.key]), {
-    onProgrammaticScrollStart: r.useCallback(() => {
-      o.Z.setState({
-        isProgrammaticScroll: true
-      })
-    }, [])
-  }
+  }, []), Chunk473749.useEffect(() => () => {
+    Chunk996435.Z.setState({
+      disableSidebarCategoryAutoSelect: false
+    })
+  }, [])
 }

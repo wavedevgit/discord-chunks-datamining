@@ -2,7 +2,7 @@
 /** chunk id: 722589, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => u
+  default: () => d
 }), require("./704826.js"), require("./35282.js"), require("./388685.js");
 var Chunk593473 = require("./593473.js"),
   Chunk981631 = require("./981631.js");
@@ -15,9 +15,13 @@ function c(e) {
   return null == e ? "" : e.toUpperCase().replace(o, a).replace(l, s)
 }
 
-function u(e, t) {
-  let [, , n, a] = e.split("/"), o = c(n), s = c(a), l = i.oAB.hasOwnProperty(o), u = null == s || "" === s || i.oAB.hasOwnProperty(s);
-  return l && u ? {
+function u(e) {
+  return i.oAB.hasOwnProperty(e)
+}
+
+function d(e, t) {
+  let [, , n, a] = e.split("/"), o = c(n), s = c(a), l = u(o), d = "" === s || u(s);
+  return l && d ? {
     params: (0, r.parse)(null != t ? t : location.search),
     section: i.oAB[o],
     subsection: s

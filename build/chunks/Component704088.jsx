@@ -22,14 +22,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk246992 = require("./246992.js"),
   Chunk474936 = require("./474936.js");
 let _ = Chunk473749.forwardRef((e, t) => {
-  let [n, r] = l.useState(null), [i, c] = l.useState(null), [d, u] = l.useState(false), m = l.useCallback(async () => {
-    u(true), c(null), r(null);
+  let [n, i] = l.useState(null), [r, c] = l.useState(null), [d, u] = l.useState(false), m = l.useCallback(async () => {
+    u(true), c(null), i(null);
     try {
       let e = await s.tn.get({
         url: "/users/@me/debug/warp/license",
         rejectWithError: true
       });
-      r(e.body)
+      i(e.body)
     } catch (l) {
       var e, t;
       let n = (null == l || null == (e = l.body) ? true : e.message) || (null == l ? true : l.message) || "Unknown error occurred",
@@ -51,7 +51,7 @@ let _ = Chunk473749.forwardRef((e, t) => {
       text: d ? "Loading..." : "Fetch WARP License Info",
       onClick: m,
       disabled: d
-    }), null != i && (0, a.jsx)("div", {
+    }), null != r && (0, a.jsx)("div", {
       style: {
         padding: "12px",
         backgroundColor: "#ed4245",
@@ -60,7 +60,7 @@ let _ = Chunk473749.forwardRef((e, t) => {
         fontFamily: "monospace",
         fontSize: "12px"
       },
-      children: i
+      children: r
     }), null != n && (0, a.jsx)("pre", {
       style: {
         width: "100%",
@@ -85,17 +85,17 @@ _.displayName = "DebugWarpLicenseInfo";
 let y = e => {
     let {
       onSuccess: t
-    } = e, [n, r] = l.useState(false), [i, c] = l.useState(0), [d, u] = l.useState(null);
+    } = e, [n, i] = l.useState(false), [r, c] = l.useState(0), [d, u] = l.useState(null);
     l.useEffect(() => {
-      if (i > 0) {
+      if (r > 0) {
         let e = setTimeout(() => {
-          c(i - 1), 1 === i && t()
+          c(r - 1), 1 === r && t()
         }, 1e3);
         return () => clearTimeout(e)
       }
-    }, [i, t]);
+    }, [r, t]);
     let m = async () => {
-      r(true), u(null);
+      i(true), u(null);
       try {
         await s.tn.post({
           url: "/users/@me/debug/warp/license/extension-task",
@@ -107,7 +107,7 @@ let y = e => {
           a = (null == l ? true : l.status) || (null == l || null == (t = l.body) ? true : t.code);
         u("Error ".concat(a ? "(".concat(a, ")") : "", ": ").concat(n))
       } finally {
-        r(false)
+        i(false)
       }
     };
     return (0, a.jsxs)("div", {
@@ -117,9 +117,9 @@ let y = e => {
         gap: "12px"
       },
       children: [(0, a.jsx)(o.zxk, {
-        text: n ? "Triggering Task..." : i > 0 ? "Refreshing in ".concat(i, "s...") : "Trigger License Extension Task",
+        text: n ? "Triggering Task..." : r > 0 ? "Refreshing in ".concat(r, "s...") : "Trigger License Extension Task",
         onClick: m,
-        disabled: n || i > 0
+        disabled: n || r > 0
       }), null != d && (0, a.jsx)("div", {
         style: {
           padding: "12px",

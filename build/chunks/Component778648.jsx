@@ -95,7 +95,7 @@ let D = function() {
     isSubmitting: et,
     responseMessage: en,
     redeemVirtualCurrency: ea
-  } = (0, Chunk43747.f)(), [el, er] = Chunk473749.useState(Chunk981631.lds), [ei, es] = Chunk473749.useState(""), [eo, ec] = Chunk473749.useState(Chunk981631.lds), [ed, eu] = Chunk473749.useState(Chunk981631.lds);
+  } = (0, Chunk43747.f)(), [el, ei] = Chunk473749.useState(Chunk981631.lds), [er, es] = Chunk473749.useState(""), [eo, ec] = Chunk473749.useState(Chunk981631.lds), [ed, eu] = Chunk473749.useState(Chunk981631.lds);
   return (0, Chunk54381.jsx)(Chunk906732.Gt, {
     value: K,
     children: (0, Chunk54381.jsx)(Chunk481060.zJl, {
@@ -250,7 +250,7 @@ let D = function() {
           }, e), {
             disabled: H,
             onClick: () => {
-              window.open(I.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + r.stringify(A({}, G)))
+              window.open(I.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(A({}, G)))
             }
           }))
         }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
@@ -281,7 +281,7 @@ let D = function() {
             label: "SKU ID",
             placeholder: "SKU ID",
             value: el,
-            onChange: e => er(e)
+            onChange: e => ei(e)
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Redeem Virtual Currency for SKU",
@@ -348,7 +348,7 @@ let D = function() {
                 label: "Application Id",
                 hideLabel: true,
                 placeholder: "Application Id",
-                value: ei,
+                value: er,
                 onChange: es
               }), (0, Chunk54381.jsx)(Chunk481060.oil, {
                 label: "SKU ID",
@@ -360,7 +360,7 @@ let D = function() {
                 variant: "primary",
                 text: "Open Standard Payment Modal for SKU",
                 onClick: () => (0, Chunk87484.Z)({
-                  applicationId: ei,
+                  applicationId: er,
                   skuId: eo,
                   analyticsLocations: K
                 })

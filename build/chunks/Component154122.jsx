@@ -1,12 +1,12 @@
 /** Chunk was on 86948 **/
-/** chunk id: 154122, original params: e,t,n (module,exports,require) **/
+/** chunk id: 154122, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  J: () => f
+  J: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
   Chunk518950 = require("./518950.js"),
@@ -15,71 +15,71 @@ var Chunk120356 = require("./120356.js"),
   Chunk606097 = require("./606097.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk456577 = require("./456577.js");
-let f = e => {
+let m = e => {
   let {
     recipient: t,
-    isSuccess: n,
+    isSuccess: r,
     onClose: i
   } = e, {
-    avatarSrc: f,
-    eventHandlers: p
-  } = (0, l.Z)({
+    avatarSrc: m,
+    eventHandlers: b
+  } = (0, c.Z)({
     userId: null == t ? true : t.id,
-    size: s.EFr.SIZE_56
-  }), m = u.ZP.getName(t), y = !n;
-  return (0, r.jsxs)("div", {
-    className: h.row,
-    children: [(0, r.jsx)(s.qEK, function(e) {
+    size: a.EFr.SIZE_56
+  }), y = u.ZP.getName(t), h = !r;
+  return (0, n.jsxs)("div", {
+    className: f.row,
+    children: [(0, n.jsx)(a.qEK, function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        var r = null != arguments[t] ? arguments[t] : {},
+          n = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(r, e).enumerable
+        }))), n.forEach(function(t) {
+          var n;
+          n = r[t], t in e ? Object.defineProperty(e, t, {
+            value: n,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = n
         })
       }
       return e
     }({
-      imageClassName: a()({
-        [h.erroredAvatar]: y
+      imageClassName: s()({
+        [f.erroredAvatar]: h
       }),
-      src: f,
-      "aria-label": m,
-      size: s.EFr.SIZE_32
-    }, p)), y ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(s.Text, {
-        className: h.error,
+      src: m,
+      "aria-label": y,
+      size: a.EFr.SIZE_32
+    }, b)), h ? (0, n.jsxs)(n.Fragment, {
+      children: [(0, n.jsx)(a.Text, {
+        className: f.error,
         variant: "text-md/medium",
         color: "text-primary",
-        children: m
-      }), (0, r.jsx)(s.Text, {
+        children: y
+      }), (0, n.jsx)(a.Text, {
         variant: "text-md/medium",
-        className: h.error,
+        className: f.error,
         color: "text-primary",
-        children: b.intl.format(d.default["Y/oMwY"], {
-          userName: m
+        children: p.intl.format(d.default["Y/oMwY"], {
+          userName: y
         })
       })]
-    }) : (0, r.jsx)(s.Text, {
+    }) : (0, n.jsx)(a.Text, {
       variant: "text-md/medium",
-      className: h.displayName,
+      className: f.displayName,
       color: "text-primary",
-      children: m
-    }), (0, r.jsx)(s.Button, {
+      children: y
+    }), (0, n.jsx)(a.Button, {
       variant: "secondary",
       size: "sm",
-      text: b.intl.string(b.t["g33r/P"]),
-      icon: s.kBi,
+      text: p.intl.string(p.t["g33r/P"]),
+      icon: a.kBi,
       onClick: () => {
         var e;
-        return e = t.id, void((0, c.default)(), o.Z.openPrivateChannel({
+        return e = t.id, void((0, l.default)(), o.Z.openPrivateChannel({
           recipientIds: e
         }), i())
       }

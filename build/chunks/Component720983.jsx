@@ -41,34 +41,34 @@ function C(e) {
     guildId: n,
     storefront: l,
     selectedPageIndex: a
-  } = e, C = (0, r.wjy)((0, d.ZP)()), j = (0, p.Y)({
+  } = e, C = (0, r.wjy)((0, d.ZP)()), j = (0, g.Y)({
     location: "SocialLayerStorefrontHeader"
-  }), b = (0, s.e7)([I.default], () => I.default.getCurrentUser()), k = i.useCallback(() => {
-    (null == b ? true : b.id) != null && (0, g.openUserProfileModal)({
+  }), b = (0, s.e7)([_.default], () => _.default.getCurrentUser()), k = i.useCallback(() => {
+    (null == b ? true : b.id) != null && (0, p.openUserProfileModal)({
       userId: b.id,
-      section: f.oh.WISHLIST,
+      section: h.oh.WISHLIST,
       showGuildProfile: false,
       sourceAnalyticsLocations: [c.Z.SOCIAL_LAYER_STOREFRONT]
     })
   }, [b]);
   if (null == l) return null;
-  let Z = null != l.logoAssetId ? (0, x._W)(l.applicationId, l.logoAssetId, 75) : null,
-    N = null != l.lightThemeLogoAssetId ? (0, x._W)(l.applicationId, l.lightThemeLogoAssetId, 75) : null,
-    S = null;
-  return S = C ? null != Z ? Z : N : null != N ? N : Z, (0, t.jsxs)(u.Z, {
+  let Z = null != l.logoAssetId ? (0, I._W)(l.applicationId, l.logoAssetId, 75) : null,
+    S = null != l.lightThemeLogoAssetId ? (0, I._W)(l.applicationId, l.lightThemeLogoAssetId, 75) : null,
+    N = null;
+  return N = C ? null != Z ? Z : S : null != S ? S : Z, (0, t.jsxs)(u.Z, {
     disableDoubleClick: true,
     className: m.headerContainer,
     children: [(0, t.jsxs)(r.P3F, {
       onClick: () => {
-        (0, _.Z)({
+        (0, f.Z)({
           guildId: n,
           pageIndex: 0
         })
       },
       className: m.titleContainer,
-      children: [null != S && (0, t.jsx)("img", {
+      children: [null != N && (0, t.jsx)("img", {
         className: m.logo,
-        src: S,
+        src: N,
         alt: l.title
       }), (0, t.jsx)(u.Z.Title, {
         children: l.title
@@ -77,7 +77,7 @@ function C(e) {
       className: m.titles,
       children: l.pages.map((e, l) => (0, t.jsx)(u.Z.Title, {
         onClick: () => {
-          (0, _.Z)({
+          (0, f.Z)({
             guildId: n,
             pageIndex: l
           })
@@ -99,7 +99,7 @@ function C(e) {
           color: "currentColor"
         }),
         onClick: k,
-        ariaLabel: h.intl.string(h.t["7lZ31J"]),
+        ariaLabel: x.intl.string(x.t["7lZ31J"]),
         className: m.wishlistButton
       })
     })]

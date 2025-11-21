@@ -24,8 +24,8 @@ function u(e) {
       layout: y,
       collapseAfter: p,
       ContextProvider: v,
-      useCollapsibleTitle: m,
-      useCollapsedSubtitle: j
+      useCollapsibleTitle: j,
+      useCollapsedSubtitle: m
     } = u,
     g = y.filter(e => {
       var t, n;
@@ -35,12 +35,12 @@ function u(e) {
     x = null != p ? g.slice(p) : [],
     O = null != v ? v : l.Fragment,
     S = null == d ? true : d(),
-    P = null != (t = null == m ? true : m(f, x.length)) ? t : (n = x.length, f ? c.intl.formatToPlainString(c.t["3SHL+d"], {
+    C = null != (t = null == j ? true : j(f, x.length)) ? t : (n = x.length, f ? c.intl.formatToPlainString(c.t["3SHL+d"], {
       count: n
     }) : c.intl.formatToPlainString(c.t["8JRFyZ"], {
       count: n
     })),
-    C = null == j ? true : j();
+    P = null == m ? true : m();
   return (0, r.jsx)(O, {
     children: (0, r.jsxs)(i.Kqy, {
       gap: 8,
@@ -58,8 +58,8 @@ function u(e) {
         children: [(0, r.jsx)(i.izJ, {
           className: s.hoverDivider
         }), (0, r.jsx)(a.I, {
-          title: P,
-          collapsedSubtitle: C,
+          title: C,
+          collapsedSubtitle: P,
           isOpen: f,
           setIsOpen: b,
           children: (0, r.jsx)(i.Kqy, {

@@ -9,5 +9,5 @@ let r = (0, require("./972959.js").H)(() => ({
   targetKey: true,
   showNavigationMobile: true,
   activeCategoryKey: true,
-  isProgrammaticScroll: false
+  disableSidebarCategoryAutoSelect: false
 }))

@@ -54,7 +54,6 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk596768 = require("./596768.jsx"),
   Chunk581302 = require("./581302.jsx"),
   Chunk56706 = require("./56706.jsx"),
-  Chunk512313 = require("./512313.jsx"),
   Chunk820400 = require("./820400.jsx"),
   Chunk200178 = require("./200178.jsx"),
   Chunk39989 = require("./39989.jsx"),
@@ -63,6 +62,7 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk569157 = require("./569157.jsx"),
   Chunk490007 = require("./490007.jsx"),
   Chunk621060 = require("./621060.jsx"),
+  Chunk167488 = require("./167488.jsx"),
   Chunk46140 = require("./46140.js");
 
 function ec() {
@@ -318,10 +318,10 @@ function ec() {
       group: Chunk621060.v0.DEVELOPMENT,
       render: () => (0, Chunk54381.jsx)(Chunk200178.Z, {})
     }), module.push({
-      id: "web_setting_tree",
-      name: "Web Setting Tree",
+      id: "user_settings",
+      name: "User Settings",
       group: Chunk621060.v0.DEVELOPMENT,
-      render: () => (0, Chunk54381.jsx)(Chunk512313.Z, {})
+      render: () => (0, Chunk54381.jsx)(Chunk167488.Z, {})
     }), module.push({
       id: "quest_minor_reward_capping_config",
       name: "Minor Reward Capping",

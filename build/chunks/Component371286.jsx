@@ -19,7 +19,7 @@ function u(e) {
     subheading: u,
     children: m,
     height: p
-  } = e, h = (0, s.Dt)(), x = l.useRef(null), g = (0, i.q_F)({
+  } = e, h = (0, s.Dt)(), x = l.useRef(null), g = (0, r.q_F)({
     from: {
       transform: "translate3d(-110%, 0, 0)",
       height: p
@@ -37,7 +37,7 @@ function u(e) {
       null != x.current && x.current.focus()
     }
   });
-  return (0, a.jsx)(r.animated.div, {
+  return (0, a.jsx)(i.animated.div, {
     className: d.container,
     style: g,
     children: (0, a.jsxs)("aside", {
@@ -45,26 +45,26 @@ function u(e) {
       className: d.content,
       children: [(0, a.jsxs)("div", {
         className: d.headerRow,
-        children: [(0, a.jsx)(i.P3F, {
+        children: [(0, a.jsx)(r.P3F, {
           innerRef: x,
           "aria-label": c.intl.string(c.t.WAI6xu),
           className: d.closeButton,
           onClick: () => {
             t(o.L.USER_DISMISS)
           },
-          children: (0, a.jsx)(i.Dio, {
+          children: (0, a.jsx)(r.Dio, {
             color: "currentColor"
           })
-        }), (0, a.jsx)(i.Heading, {
+        }), (0, a.jsx)(r.Heading, {
           id: h,
           variant: "heading-lg/semibold",
           children: n
         })]
-      }), null != u && (0, a.jsx)(i.Text, {
+      }), null != u && (0, a.jsx)(r.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
         children: u
-      }), (0, a.jsx)(i.Ttm, {
+      }), (0, a.jsx)(r.Ttm, {
         className: d.scroller,
         fade: true,
         children: (0, a.jsx)("div", {

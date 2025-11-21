@@ -19,11 +19,11 @@ function u(e) {
     destinationKey: b
   } = f, y = null == (t = f.useSubtitle) ? true : t.call(f), {
     directory: p
-  } = (0, i.t)(), v = null == p ? true : p.entry(b), m = (null == v ? true : v.targetPanelKey) != null ? null == p ? true : p.get(v.targetPanelKey) : true, j = null == (n = f.useTitle) ? true : n.call(f), g = null == m || null == (u = m.useTitle) ? true : u.call(m);
-  if (null == m) return null;
-  let h = (null == (d = m.parent) ? true : d.type) === o.Jq.SIDEBAR_ITEM ? m.parent.icon : true;
+  } = (0, i.t)(), v = null == p ? true : p.entry(b), j = (null == v ? true : v.targetPanelKey) != null ? null == p ? true : p.get(v.targetPanelKey) : true, m = null == (n = f.useTitle) ? true : n.call(f), g = null == j || null == (u = j.useTitle) ? true : u.call(j);
+  if (null == j) return null;
+  let h = (null == (d = j.parent) ? true : d.type) === o.Jq.SIDEBAR_ITEM ? j.parent.icon : true;
   return (0, r.jsx)(c.x, {
-    title: null != j ? j : g,
+    title: null != m ? m : g,
     description: y,
     leadingElement: null != h && (0, r.jsx)("div", {
       className: s.navigatorIcon,

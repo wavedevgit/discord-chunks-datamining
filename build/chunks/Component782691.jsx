@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk480210 = require("./480210.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -63,7 +63,7 @@ let y = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), r = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = l.useState(true), N = l.useRef({}), [T, O] = l.useState(false), [P, I] = l.useState(false), [w, k] = l.useState([]), [A, R] = l.useState(y), Z = l.useRef([]), [D, L] = l.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = l.useMemo(() => ({
+    } = (0, h.n6)(), i = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = l.useState(true), N = l.useRef({}), [T, O] = l.useState(false), [P, I] = l.useState(false), [w, k] = l.useState([]), [A, R] = l.useState(y), Z = l.useRef([]), [D, L] = l.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = l.useMemo(() => ({
       id: C,
       skuId: C,
       title: C,
@@ -129,7 +129,7 @@ let y = {
       Z.current.forEach(e => {
         URL.revokeObjectURL(e)
       }), Z.current = []
-    }, []), null == r) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
+    }, []), null == i) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
       className: f.root,
       children: [(0, a.jsxs)("div", {
         style: {
@@ -169,7 +169,7 @@ let y = {
       }), (0, a.jsxs)("div", {
         className: f.grid,
         children: [(0, a.jsxs)("div", {
-          className: i()(f.col, f.preview),
+          className: r()(f.col, f.preview),
           children: [(0, a.jsx)("img", {
             src: T ? b : v,
             alt: "",
@@ -180,7 +180,7 @@ let y = {
         }), (0, a.jsxs)("div", {
           className: f.col,
           children: [(0, a.jsxs)("div", {
-            className: i()(f.col, f.section),
+            className: r()(f.col, f.section),
             children: [(0, a.jsx)(c.Text, {
               variant: "text-md/normal",
               children: "Profile Effect Name"
@@ -271,7 +271,7 @@ let y = {
               })
             })
           }), (0, a.jsxs)("div", {
-            className: i()(f.bottomControls, f.shareSection),
+            className: r()(f.bottomControls, f.shareSection),
             children: [(0, a.jsx)(c.Text, {
               variant: "text-sm/semibold",
               children: "Please download both configs for the drop package!"
@@ -342,7 +342,7 @@ let y = {
             var t;
             return (null != (t = e.randomizedSources) ? t : []).length > 0
           }) && (0, a.jsxs)("div", {
-            className: i()(f.section, f.randomizedRules),
+            className: r()(f.section, f.randomizedRules),
             children: [(0, a.jsx)(c.Text, {
               variant: "text-md/bold",
               children: "Rules of Randomized Effects"
@@ -359,9 +359,9 @@ let y = {
             })]
           }), (0, a.jsx)("div", {
             children: P && (0, a.jsxs)("div", {
-              className: i()(f.userProfilePreview, f.preview),
+              className: r()(f.userProfilePreview, f.preview),
               children: [(0, a.jsx)(m.Z, {
-                user: r,
+                user: i,
                 pendingAvatar: true,
                 pendingProfileEffect: null,
                 canUsePremiumCustomization: true,
@@ -372,7 +372,7 @@ let y = {
             })
           })]
         }), (0, a.jsxs)("div", {
-          className: i()(f.grid, f.layers),
+          className: r()(f.grid, f.layers),
           children: [(0, a.jsx)("div", {
             className: f.dangerControls,
             children: (0, a.jsx)(c.Button, {
@@ -412,7 +412,7 @@ let y = {
                 })]
               })]
             }), (0, a.jsxs)("div", {
-              className: i()(f.grid, f.section),
+              className: r()(f.grid, f.section),
               children: [(0, a.jsxs)("div", {
                 className: f.col,
                 children: [(0, a.jsx)(c.Text, {
@@ -451,7 +451,7 @@ let y = {
                 })]
               })]
             }), (0, a.jsxs)("div", {
-              className: i()(f.grid, f.section),
+              className: r()(f.grid, f.section),
               children: [(0, a.jsxs)("div", {
                 className: f.col,
                 children: [(0, a.jsx)(c.Text, {
@@ -503,20 +503,20 @@ let y = {
                   null != n && (0, x.i0)(n, e => {
                     k(a => {
                       let l = [...a],
-                        r = a[t];
-                      if (null == r) return a;
-                      let i = j({}, r);
-                      return null == i.randomizedSources && (i.randomizedSources = []), i.randomizedSources.push({
+                        i = a[t];
+                      if (null == i) return a;
+                      let r = j({}, i);
+                      return null == r.randomizedSources && (r.randomizedSources = []), r.randomizedSources.push({
                         src: e,
                         filename: n.name
-                      }), l[t] = i, l
+                      }), l[t] = r, l
                     })
                   })
                 })(e, t),
                 multiple: false
               })
             }), (0, a.jsxs)("div", {
-              className: i()(f.row, f.end),
+              className: r()(f.row, f.end),
               children: [(0, a.jsx)(c.Button, {
                 variant: "secondary",
                 text: "Add Alternative",

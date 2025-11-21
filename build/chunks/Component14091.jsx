@@ -387,16 +387,11 @@ function z(e) {
       location: "SearchResults"
     }), l = (0, O.Gc)({
       location: "SearchResults"
-    }), {
-      enabled: a,
-      force: s
-    } = (0, x.f)({
+    }), a = (0, x.f)({
       location: "SearchResults"
-    }), o = e.type === D.aib.DMS || e.type === D.aib.CHANNEL, c = a && (r || o && l);
-    return i.useEffect(() => {
-      c && s && n(true)
-    }, [s, c, a]), (0, u.ZP)(() => {
-      c && (s || h.Z.possiblyShowFeedbackModal(L.nw.SEARCH_RESULTS, () => n(true), () => n(false)))
+    }), s = e.type === D.aib.DMS || e.type === D.aib.CHANNEL, o = a && (r || s && l);
+    return (0, u.ZP)(() => {
+      o && h.Z.possiblyShowFeedbackModal(L.nw.SEARCH_RESULTS, () => n(true), () => n(false))
     }), {
       dismissFeedbackEntrypoint: i.useCallback(() => {
         n(false)

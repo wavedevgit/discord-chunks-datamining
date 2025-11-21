@@ -1,13 +1,15 @@
-/** Chunk was on 86948 **/
-/** chunk id: 282793, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 282793, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  sO: () => l,
-  v$: () => o
+  j3: () => l,
+  sO: () => c,
+  v$: () => s
 });
 var Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
   Chunk606097 = require("./606097.js"),
   Chunk388032 = require("./388032.jsx");
-let o = 5;
-Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_GROUP_ABOUT);
-let l = () => Chunk388032.intl.string(Chunk606097.default.aFBQ3d)
+let s = 5,
+  l = Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_GROUP_ABOUT),
+  c = () => Chunk388032.intl.string(Chunk606097.default.aFBQ3d)

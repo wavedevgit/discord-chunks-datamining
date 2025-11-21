@@ -1,5 +1,5 @@
 /** Chunk was on 91394 **/
-/** chunk id: 512313, original params: e,t,n (module,exports,require) **/
+/** chunk id: 713388, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
 }), require("./642613.js"), require("./388685.js");
@@ -9,25 +9,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk131051 = require("./131051.js"),
   Chunk28682 = require("./28682.js"),
   Chunk920952 = require("./920952.js"),
-  Chunk544651 = require("./544651.jsx"),
-  Chunk546697 = require("./546697.js"),
-  Chunk547481 = require("./547481.js");
+  Chunk206412 = require("./206412.jsx"),
+  Chunk617810 = require("./617810.js"),
+  Chunk211339 = require("./211339.js");
 
 function m(e) {
   var t;
   let {
     setting: n,
-    depth: r,
-    highlight: i
+    depth: i,
+    highlight: r
   } = e, s = null == (t = l.useContext(h)) ? true : t.get(n), o = null;
   return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(m, {
     setting: e,
-    depth: r + 1,
-    highlight: i
+    depth: i + 1,
+    highlight: r
   }, e))), (0, a.jsx)(c.r, {
     title: n,
-    initExpanded: r <= 2,
-    highlight: i,
+    initExpanded: i <= 2,
+    highlight: r,
     children: o
   })
 }
@@ -36,15 +36,15 @@ function p(e) {
   let {
     setting: t,
     depth: n
-  } = e, l = (0, s.Lk)(t) && (t.type === s.Jq.SIDEBAR_ITEM && t.layout.some(e => null == e ? true : e.layout.some(e => null != e.render)) || t.type === s.Jq.PANEL && t.layout.some(e => null != e.render) || t.type === s.Jq.PANE && null != t.render), r = null;
+  } = e, l = (0, s.Lk)(t) && (t.type === s.Jq.SIDEBAR_ITEM && t.layout.some(e => null == e ? true : e.layout.some(e => null != e.render)) || t.type === s.Jq.PANEL && t.layout.some(e => null != e.render) || t.type === s.Jq.PANE && null != t.render), i = null;
   if ((0, s.Lk)(t)) {
-    var i, o, d;
-    let e = null == (d = t.parent) || null == (o = d.parent) || null == (i = o.getLegacySearchKey) ? true : i.call(o);
-    0 === t.layout.length && null != e ? r = (0, a.jsx)(m, {
+    var r, o, d;
+    let e = null == (d = t.parent) || null == (o = d.parent) || null == (r = o.getLegacySearchKey) ? true : r.call(o);
+    0 === t.layout.length && null != e ? i = (0, a.jsx)(m, {
       setting: e,
       depth: n + 1,
       highlight: true
-    }) : t.layout.length > 0 && (r = t.layout.map(e => (0, a.jsx)(p, {
+    }) : t.layout.length > 0 && (i = t.layout.map(e => (0, a.jsx)(p, {
       setting: e,
       depth: n + 1
     }, e.key)))
@@ -53,7 +53,7 @@ function p(e) {
     title: t.key,
     initExpanded: n <= 2,
     highlight: l,
-    children: r
+    children: i
   })
 }
 let h = Chunk473749.createContext(null);
@@ -61,22 +61,19 @@ let h = Chunk473749.createContext(null);
 function x() {
   let [e, t] = Chunk473749.useState(false), {
     legacySettingDirectory: n
-  } = (0, Chunk546697.q)(), {
+  } = (0, Chunk617810.q)(), {
     node: s
   } = (0, Chunk131051.Z)(Chunk920952.Z, "");
-  return (0, Chunk54381.jsxs)(Chunk481060.zJl, {
-    className: Chunk547481.root,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-      variant: "heading-lg/bold",
-      children: "Settings Tree"
-    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+  return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
+    label: "Settings Tree",
+    children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
       checked: module,
       onChange: e => t(e),
       label: "Show Legacy Settings Tree"
     }), (0, Chunk54381.jsx)(h.Provider, {
       value: require,
       children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk547481.tree,
+        className: Chunk211339.tree,
         children: [module && (0, Chunk54381.jsx)(m, {
           setting: "root",
           depth: 1

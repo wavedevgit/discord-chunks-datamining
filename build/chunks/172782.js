@@ -1,31 +1,31 @@
 /** Chunk was on 86948 **/
-/** chunk id: 172782, original params: e,t,n (module,exports,require) **/
+/** chunk id: 172782, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk80721 = require("./80721.js");
-let a = e => {
+let s = e => {
   let {
     subscriptionId: t,
-    searchQuery: n
-  } = e, [a, s] = r.useState([]), [o, l] = r.useState(false), [c, u] = r.useState(false);
-  return (0, r.useEffect)(() => {
+    searchQuery: r
+  } = e, [s, a] = n.useState([]), [o, c] = n.useState(false), [l, u] = n.useState(false);
+  return (0, n.useEffect)(() => {
     (async () => {
       try {
-        l(true);
+        c(true);
         let e = await (0, i.MT)(t);
-        s(e)
+        a(e)
       } catch (e) {
         u(true)
       } finally {
-        l(false)
+        c(false)
       }
     })()
-  }, [t, n]), {
-    eligibleUsers: a,
+  }, [t, r]), {
+    eligibleUsers: s,
     isFetching: o,
-    hasError: c,
+    hasError: l,
     fetchUsers: () => {}
   }
 }

@@ -20,17 +20,17 @@ let o = Chunk473749.memo(function(e) {
     className: s.nameplatePreviewContainer,
     children: (0, a.jsxs)("div", {
       className: s.nameplatePreviewList,
-      children: [(0, a.jsx)(r.G, {
+      children: [(0, a.jsx)(i.G, {
         showStatus: true,
         width: d,
         opacity: .7,
         size: c
-      }), (0, a.jsx)(r.G, {
+      }), (0, a.jsx)(i.G, {
         showStatus: true,
         width: u,
         opacity: .85,
         size: c
-      }), (0, a.jsx)(i.Z, {
+      }), (0, a.jsx)(r.Z, {
         user: t,
         nameplate: n,
         className: s.nameplatePreviewSampleItem,
@@ -39,12 +39,12 @@ let o = Chunk473749.memo(function(e) {
         showStatus: true,
         isPurchased: o,
         nameplatePreviewSize: "small" === c ? "small" : "default"
-      }), (0, a.jsx)(r.G, {
+      }), (0, a.jsx)(i.G, {
         showStatus: true,
         width: u,
         opacity: .85,
         size: c
-      }), (0, a.jsx)(r.G, {
+      }), (0, a.jsx)(i.G, {
         showStatus: true,
         width: d,
         opacity: .7,

@@ -23,8 +23,8 @@ let f = ["Experiments", "Dismissible Content", "Events", "Premium", "Quests", "B
     let {
       id: n,
       selected: a,
-      onClick: r,
-      children: i
+      onClick: i,
+      children: r
     } = e;
     return (0, l.jsx)(c.P3F, {
       className: s()(x.tabItem, {
@@ -32,8 +32,8 @@ let f = ["Experiments", "Dismissible Content", "Events", "Premium", "Quests", "B
       }),
       "data-tab-id": n,
       innerRef: t,
-      onClick: r,
-      children: i
+      onClick: i,
+      children: r
     })
   });
 
@@ -42,19 +42,19 @@ function v(e) {
     tabs: t,
     selectedTabId: n,
     onSelectTab: a
-  } = e, i = r.useRef(new Map), [s, g] = r.useState(() => new Set), {
+  } = e, r = i.useRef(new Map), [s, g] = i.useState(() => new Set), {
     ref: f,
     width: v
-  } = (0, d.ZP)(), j = r.useRef(null), _ = (0, h.F)(t, a);
-  r.useEffect(() => {
-    var e, a, l, r;
+  } = (0, d.ZP)(), j = i.useRef(null), _ = (0, h.F)(t, a);
+  i.useEffect(() => {
+    var e, a, l, i;
     if (null == v) return;
     let s = new Set,
       o = null != v ? v : 0;
-    for (let c of (o -= null != (a = null == (e = i.current.get(n)) ? true : e.getBoundingClientRect().width) ? a : 0, t)) c.id !== n && (o -= null != (r = null == (l = i.current.get(c.id)) ? true : l.getBoundingClientRect().width) ? r : 0) < 0 && s.add(c.id);
+    for (let c of (o -= null != (a = null == (e = r.current.get(n)) ? true : e.getBoundingClientRect().width) ? a : 0, t)) c.id !== n && (o -= null != (i = null == (l = r.current.get(c.id)) ? true : l.getBoundingClientRect().width) ? i : 0) < 0 && s.add(c.id);
     g(s)
   }, [t, v, f, n]);
-  let y = r.useCallback(e => {
+  let y = i.useCallback(e => {
     let {
       closePopout: t
     } = e;
@@ -75,29 +75,29 @@ function v(e) {
       children: [t.map(e => {
         let {
           id: t,
-          name: r
+          name: i
         } = e;
         if (!s.has(t)) return (0, l.jsx)(b, {
           id: t,
           selected: n === t,
           onClick: n !== t ? () => a(t) : true,
-          children: r
+          children: i
         }, t)
       }).filter(m.lm), (0, l.jsx)("div", {
         className: x.tabMeasurer,
         children: t.map(e => {
           let {
             id: t,
-            name: r
+            name: i
           } = e;
           return (0, l.jsx)(b, {
             id: t,
             selected: n === t,
             ref: e => {
-              i.current.set(t, e)
+              r.current.set(t, e)
             },
             onClick: n !== t ? () => a(t) : true,
-            children: r
+            children: i
           }, t)
         })
       })]
@@ -157,21 +157,21 @@ function v(e) {
 }
 
 function j(e, t) {
-  var n, a, i;
+  var n, a, r;
   let {
     tabs: s,
     initialSelectedTabId: o,
     onChangeTab: c
-  } = e, [d, u] = r.useState(null != o ? o : null == (n = s[0]) ? true : n.id);
+  } = e, [d, u] = i.useState(null != o ? o : null == (n = s[0]) ? true : n.id);
   return {
-    TabBar: r.useCallback(() => (0, l.jsx)(v, {
+    TabBar: i.useCallback(() => (0, l.jsx)(v, {
       tabs: s,
       selectedTabId: d,
       onSelectTab: e => {
         u(e), null == c || c(e)
       }
     }), [d, u, c, ...t]),
-    renderSelectedTab: null != (i = null == (a = s.find(e => e.id === d)) ? true : a.render) ? i : () => null,
+    renderSelectedTab: null != (r = null == (a = s.find(e => e.id === d)) ? true : a.render) ? r : () => null,
     selectedTabId: d
   }
 }

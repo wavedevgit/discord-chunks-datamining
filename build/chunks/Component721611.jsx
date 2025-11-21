@@ -1,7 +1,7 @@
 /** Chunk was on 16985 **/
 /** chunk id: 721611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,9 +14,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk996435 = require("./996435.js"),
+  Chunk700425 = require("./700425.js"),
   Chunk910557 = require("./910557.js");
 
-function p(e) {
+function v(e) {
   var t;
   let {
     category: n,
@@ -26,8 +27,8 @@ function p(e) {
     useTitle: a,
     useNavigationTitle: s,
     key: f
-  } = n, b = null == a ? true : a(), p = null != (t = null == s ? true : s()) ? t : b;
-  return c()(null != p, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.mh, {
+  } = n, b = null == a ? true : a(), y = null != (t = null == s ? true : s()) ? t : b;
+  return c()(null != y, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.mh, {
     id: f,
     children: e => {
       var t, n;
@@ -52,10 +53,10 @@ function p(e) {
         onClick: l,
         tag: "li",
         className: o()({
-          [y.active]: i
+          [p.active]: i
         })
       }, e), n = n = {
-        children: p
+        children: y
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -70,15 +71,17 @@ function p(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     categories: t
   } = e, n = b.Z.useField("activeCategoryKey");
-  (0, f.ZP)(() => {
+  (0, f.ZP)(() => (b.Z.setState({
+    activeCategoryKey: t[0].key
+  }), () => {
     b.Z.setState({
-      activeCategoryKey: t[0].key
+      activeCategoryKey: true
     })
-  });
+  }));
   let i = l.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
     o = (0, d.q_F)({
       y: 36 * i,
@@ -88,22 +91,23 @@ function v(e) {
         tension: 300
       }
     });
-  return (0, r.jsxs)("div", {
-    className: y.subnav,
+  return (0, y.l)(), (0, r.jsxs)("div", {
+    className: p.subnav,
     children: [(0, r.jsx)("div", {
-      className: y.track,
+      className: p.track,
       children: (0, r.jsx)(s.animated.div, {
-        className: y.thumb,
+        className: p.thumb,
         style: o
       })
     }), (0, r.jsx)("ul", {
-      children: t.map(e => (0, r.jsx)(p, {
+      children: t.map(e => (0, r.jsx)(v, {
         onClick: () => {
           var t;
           return t = e.key, void b.Z.setState({
             activeCategoryKey: t,
             targetKey: t,
-            showNavigationMobile: false
+            showNavigationMobile: false,
+            disableSidebarCategoryAutoSelect: true
           })
         },
         active: e.key === n,

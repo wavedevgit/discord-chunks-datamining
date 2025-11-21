@@ -21,12 +21,12 @@ function a(e) {
     useDisabled: f,
     onValueRender: b,
     asValueChanges: y
-  } = t, [p] = l.useState(() => a()), v = u(), m = null == d ? true : d(), j = null == f ? true : f();
+  } = t, [p] = l.useState(() => a()), v = u(), j = null == d ? true : d(), m = null == f ? true : f();
   return (0, r.jsx)(o.X, {
     children: (0, r.jsx)(i.iRW, {
       label: v,
-      description: m,
-      disabled: j,
+      description: j,
+      disabled: m,
       initialValue: p,
       minValue: c,
       maxValue: s,

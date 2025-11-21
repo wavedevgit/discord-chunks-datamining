@@ -51,30 +51,30 @@ function p(e) {
   let {
     root: p,
     directory: v,
-    target: m,
-    defaultTarget: j,
+    target: j,
+    defaultTarget: m,
     onClose: g,
     sidebarHeader: h,
     sidebarFooter: x,
     onPanelChange: O,
     emptyState: S
-  } = e, P = null != m && (null == (t = v.entry(m)) ? true : t.targetPanelKey) != null ? m : j;
+  } = e, C = null != j && (null == (t = v.entry(j)) ? true : t.targetPanelKey) != null ? j : m;
   (0, i.ZP)(() => {
-    let e = v.entry(P).targetPanelKey;
+    let e = v.entry(C).targetPanelKey;
     return d.Z.setState({
-      targetKey: P,
+      targetKey: C,
       currentPanelKey: e,
-      showNavigationMobile: null == m
+      showNavigationMobile: null == j
     }), () => d.Z.resetState()
   });
-  let C = d.Z.useField("currentPanelKey"),
+  let P = d.Z.useField("currentPanelKey"),
     _ = d.Z.useField("targetKey"),
     [E, N] = l.useState(v),
-    w = l.useMemo(() => E.get(null != C ? C : P), [E, C, P]),
+    w = l.useMemo(() => E.get(null != P ? P : C), [E, P, C]),
     k = l.useCallback(() => T(true), []),
     [Z, T] = l.useState({
-      target: P,
-      targetAccordionKey: null == (n = v.entry(P)) ? true : n.parentAccordionKey,
+      target: C,
+      targetAccordionKey: null == (n = v.entry(C)) ? true : n.parentAccordionKey,
       animateScroll: false,
       complete: k
     }),
@@ -95,7 +95,7 @@ function p(e) {
       targetAccordion: e.parentAccordionKey,
       complete: k
     };
-    if (e.targetPanelKey !== C) {
+    if (e.targetPanelKey !== P) {
       let n = e.targetPanelKey;
       I(() => {
         d.Z.setState({
@@ -111,13 +111,13 @@ function p(e) {
     })), d.Z.setState({
       targetKey: true
     })
-  }, [C, _, k, v, I, O]);
+  }, [P, _, k, v, I, O]);
   let D = l.useMemo(() => ({
       navTransition: Z,
       directory: v
     }), [Z, v]),
-    R = () => I(g),
-    A = null != C ? v.get(C) : true;
+    A = () => I(g),
+    R = null != P ? v.get(P) : true;
   return (0, r.jsx)(u.j.Provider, {
     value: D,
     children: (0, r.jsxs)("div", {
@@ -126,11 +126,11 @@ function p(e) {
         root: p,
         header: h,
         footer: x,
-        onClose: R,
+        onClose: A,
         emptyState: S
       }), (0, r.jsx)(a.Z, {
-        onClose: R,
-        setting: null != A ? A : w
+        onClose: A,
+        setting: null != R ? R : w
       })]
     })
   })

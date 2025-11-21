@@ -18,11 +18,11 @@ let p = e => {
     targetElementRef: t,
     markAsDismissed: n
   } = e, p = (0, l.useCallback)(() => {
-    (0, s.openUserSettings)(i.n.ADVANCED_PANEL, {
+    (0, s.openUserSettings)(r.n.ADVANCED_PANEL, {
       section: o.oAB.ADVANCED
     })
   }, []);
-  return (0, a.jsx)(r.J2, {
+  return (0, a.jsx)(i.J2, {
     badge: {
       type: "beta",
       variant: "expressive"

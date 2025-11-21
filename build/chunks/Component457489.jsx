@@ -1,7 +1,7 @@
 /** Chunk was on 77033 **/
 /** chunk id: 457489, original params: e,n,l (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => S
+  default: () => N
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk323540 = require("./323540.jsx"),
   Chunk140594 = require("./140594.js");
 
-function N(e) {
+function S(e) {
   let {
     storefront: n,
     guildId: l,
@@ -45,7 +45,7 @@ function N(e) {
       analyticsLocations: [u.Z.SOCIAL_LAYER_STOREFRONT],
       analyticsContext: s.current,
       onClose: () => {
-        "POP" !== (0, g.s1)().action && (0, C.Z)({
+        "POP" !== (0, p.s1)().action && (0, C.Z)({
           guildId: l,
           pageIndex: a
         })
@@ -65,47 +65,47 @@ function N(e) {
   })
 }
 
-function S(e) {
-  var n, l, a, g, C;
+function N(e) {
+  var n, l, a, p, C;
   let {
     match: j
   } = e, {
     guildId: b,
     gameShopPageIndex: k,
-    gameShopSkuId: S
+    gameShopSkuId: N
   } = j.params, {
     analyticsLocations: L
-  } = (0, p.ZP)(u.Z.SOCIAL_LAYER_STOREFRONT), T = (0, v.Z)({
+  } = (0, g.ZP)(u.Z.SOCIAL_LAYER_STOREFRONT), T = (0, v.Z)({
     guildId: b
-  }), P = (0, s.e7)([f.Z], () => f.Z.get(S), [S]);
-  (0, I.p2)();
-  let A = (0, c.Z)((0, r.Z)()),
-    R = (0, s.e7)([_.ZP, x.default], () => _.ZP.isMember(b, x.default.getId())),
-    y = i.useMemo(() => {
+  }), P = (0, s.e7)([h.Z], () => h.Z.get(N), [N]);
+  (0, _.p2)();
+  let R = (0, c.Z)((0, r.Z)()),
+    E = (0, s.e7)([f.ZP, I.default], () => f.ZP.isMember(b, I.default.getId())),
+    A = i.useMemo(() => {
       if (null == k) return 0;
       let e = parseInt(k, 10);
       return isNaN(e) || null != T && null != T.storefront && e >= T.storefront.pages.length ? 0 : e
     }, [k, T]),
-    E = null != (C = null == T || null == (l = T.storefront) || null == (n = l.pages[y]) ? true : n.title) ? C : null,
-    M = (null == T || null == (g = T.storefront) || null == (a = g.pages[y]) ? true : a.leaderboard) != null,
+    M = null != (C = null == T || null == (l = T.storefront) || null == (n = l.pages[A]) ? true : n.title) ? C : null,
+    y = (null == T || null == (p = T.storefront) || null == (a = p.pages[A]) ? true : a.leaderboard) != null,
     O = i.useMemo(() => ({
-      sessionId: A,
+      sessionId: R,
       guildId: b,
-      pageIndex: y,
-      pageTitle: E,
-      isUserGuildMember: R,
-      pageHasLeaderboard: M
-    }), [A, b, y, E, R, M]);
+      pageIndex: A,
+      pageTitle: M,
+      isUserGuildMember: E,
+      pageHasLeaderboard: y
+    }), [R, b, A, M, E, y]);
   return (i.useEffect(() => {
-    null != b && (0, h.m0)(b, y, null != S ? S : null)
-  }, [b, y, S]), ((null == T ? true : T.storefront) != null || (null == T ? true : T.error)) && !(null == T ? true : T.loading) && null != b && (null == T ? true : T.storefront) != null) ? (0, t.jsx)(p.Gt, {
+    null != b && (0, x.m0)(b, A, null != N ? N : null)
+  }, [b, A, N]), ((null == T ? true : T.storefront) != null || (null == T ? true : T.error)) && !(null == T ? true : T.loading) && null != b && (null == T ? true : T.storefront) != null) ? (0, t.jsx)(g.Gt, {
     value: L,
     children: (0, t.jsx)(m.hL, {
       newValue: O,
-      children: (0, t.jsx)(N, {
+      children: (0, t.jsx)(S, {
         storefront: T.storefront,
         guildId: b,
-        selectedPageIndex: y,
+        selectedPageIndex: A,
         selectedSku: P
       })
     })

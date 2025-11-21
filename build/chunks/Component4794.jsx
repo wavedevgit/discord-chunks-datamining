@@ -25,19 +25,19 @@ let u = Chunk473749.memo(function(e) {
     (null == p ? true : p.targetAccordionKey) === t.key && y(true)
   }, [null == p ? true : p.targetAccordionKey, t.key]);
   let v = null == n ? true : n(b),
-    m = null == d ? true : d(),
-    j = null == f ? true : f();
+    j = null == d ? true : d(),
+    m = null == f ? true : f();
   return (0, r.jsx)("div", {
     className: s.accordion,
     children: (0, r.jsxs)(a.I, {
       title: v,
-      collapsedSubtitle: m,
+      collapsedSubtitle: j,
       isOpen: b,
       setIsOpen: y,
-      children: [null != j && (0, r.jsx)("div", {
+      children: [null != m && (0, r.jsx)("div", {
         className: s.notice,
         children: (0, r.jsx)(c.Z, {
-          notice: j
+          notice: m
         })
       }), u.map(e => (0, r.jsx)(o.Z, {
         node: e
