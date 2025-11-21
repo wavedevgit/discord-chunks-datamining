@@ -140,16 +140,15 @@ function E(e, t) {
       onViewWishlist: a,
       isSingleCard: s = false,
       profileOwner: o,
-      analyticsLocations: c,
-      wishlistId: u,
-      showTypeTooltip: p = false
+      wishlistId: c,
+      showTypeTooltip: u = false
     } = t,
-    h = null != l && l > 0,
-    f = h ? j.intl.string(j.t.TxBQzD) : j.intl.string(j.t.ilhtIa);
-  return p && !h && (n = j.intl.string(j.t["4yiU7x"])), (0, r.jsx)(S, {
+    p = null != l && l > 0,
+    h = p ? j.intl.string(j.t.TxBQzD) : j.intl.string(j.t.ilhtIa);
+  return u && !p && (n = j.intl.string(j.t["4yiU7x"])), (0, r.jsx)(S, {
     productLine: e.skuProductLine,
     onCardClick: () => {
-      if (h) return void a();
+      if (p) return void a();
       (0, m.P)(e.sku, {
         isGift: true,
         giftRecipient: o,
@@ -159,7 +158,7 @@ function E(e, t) {
       })
     },
     tooltipTitle: n,
-    tooltipBody: f,
+    tooltipBody: h,
     shouldScalePreview: false,
     renderPreview: () => (0, r.jsx)(b.A, {
       containerClassName: x.card,
@@ -171,8 +170,7 @@ function E(e, t) {
     moreCount: l,
     isSingleCard: s,
     skuId: e.skuId,
-    analyticsLocations: c,
-    wishlistId: u,
+    wishlistId: c,
     showPopover: 0 === i && e.sku.applicationId === _.t9,
     onViewWishlist: a
   }, e.skuId)

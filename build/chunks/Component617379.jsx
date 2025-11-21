@@ -1,17 +1,18 @@
 /** Chunk was on 65354 **/
 /** chunk id: 617379, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110255 = require("./110255.jsx"),
   Chunk64247 = require("./64247.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +31,7 @@ function u(e) {
   return e
 }
 
-function d(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -43,25 +44,25 @@ function d(e, t) {
   }), e
 }
 
-function f(e) {
+function p(e) {
   let {
     channel: t
   } = e, n = i.useRef(null);
-  return (0, r.jsx)(l.yRy, {
+  return (0, r.jsx)(o.yRy, {
     targetElementRef: n,
     align: "right",
-    animation: l.yRy.Animation.NONE,
+    animation: o.yRy.Animation.NONE,
     position: "bottom",
-    renderPopout: e => t.isThread() ? (0, r.jsx)(a.Z, d(u({}, e), {
+    renderPopout: e => t.isThread() ? (0, r.jsx)(s.Z, f(d({}, e), {
       channel: t,
       navId: "recents-thread-notifications",
-      label: c.intl.string(c.t.ljs3Oe)
-    })) : (0, r.jsx)(o.Z, d(u({}, e), {
+      label: u.intl.string(u.t.ljs3Oe)
+    })) : (0, r.jsx)(a.Z, f(d({}, e), {
       channel: t,
       navId: "recents-notifications",
-      label: c.intl.string(c.t.ljs3Oe),
+      label: u.intl.string(u.t.ljs3Oe),
       location: {
-        section: s.jXE.INBOX
+        section: c.jXE.INBOX
       },
       includeGuildMute: true
     })),
@@ -69,15 +70,16 @@ function f(e) {
       let {
         onClick: t
       } = e;
-      return (0, r.jsx)(l.M0o, {
-        ref: n,
-        tooltip: c.intl.string(c.t.h850Ss),
-        color: l.YX$.TERTIARY,
-        icon: (0, r.jsx)(l.Dkj, {
-          size: "xs",
-          color: "currentColor"
-        }),
-        onClick: t
+      return (0, r.jsx)(l.u, {
+        text: u.intl.string(u.t.h850Ss),
+        targetElementRef: n,
+        children: (0, r.jsx)(o.hU, {
+          "aria-label": u.intl.string(u.t.h850Ss),
+          icon: o.Dkj,
+          variant: "secondary",
+          size: "sm",
+          onClick: t
+        })
       })
     }
   })

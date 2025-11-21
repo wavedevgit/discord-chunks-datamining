@@ -28,10 +28,11 @@ class l extends Chunk81825.Z {
       properties: a.t.fromBinary((0, r.c)(e.properties), {
         readUnknownField: true,
         readerFactory: e => new i.o(e, t)
-      })
+      }),
+      promotionId: e.promotion_id
     })
   }
   constructor(e) {
-    super(), s(this, "id", true), s(this, "componentType", true), s(this, "properties", true), this.id = e.id, this.componentType = e.componentType, this.properties = e.properties
+    super(), s(this, "id", true), s(this, "componentType", true), s(this, "properties", true), s(this, "promotionId", true), this.id = e.id, this.componentType = e.componentType, this.properties = e.properties, this.promotionId = e.promotionId
   }
 }

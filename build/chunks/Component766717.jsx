@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk221292 = require("./221292.js"),
+  Chunk785717 = require("./785717.jsx"),
   Chunk239990 = require("./239990.js");
 let c = Chunk473749.forwardRef(function(e, t) {
   let {
@@ -19,17 +19,17 @@ let c = Chunk473749.forwardRef(function(e, t) {
     moreCount: p,
     isSingleCard: h = false,
     skuId: f,
-    analyticsLocations: g,
-    wishlistId: m,
-    productLine: b
-  } = e, _ = d ? o.cardPreview : o.cardPreviewNoScale, y = h ? o.cardSingle : o.card, O = null != p && p > 0, j = (0, r.jsxs)(a.P3F, {
+    wishlistId: g,
+    productLine: m
+  } = e, {
+    trackUserProfileWishlistAction: b
+  } = (0, s.KZ)(), _ = d ? o.cardPreview : o.cardPreviewNoScale, y = h ? o.cardSingle : o.card, O = null != p && p > 0, j = (0, r.jsxs)(a.P3F, {
     onClick: () => {
-      n(), (0, s.Er)({
+      n(), b({
         action: O ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-        analyticsLocations: g,
         skuId: O ? null : f,
-        wishlistId: m,
-        productLines: new Set([b])
+        wishlistId: g,
+        productLines: new Set([m])
       })
     },
     className: y,

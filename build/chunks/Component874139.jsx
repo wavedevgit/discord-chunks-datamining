@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk636466 = require("./636466.jsx"),
   Chunk541699 = require("./541699.js"),
   Chunk321947 = require("./321947.js"),
-  Chunk221292 = require("./221292.js"),
+  Chunk785717 = require("./785717.jsx"),
   Chunk471341 = require("./471341.js"),
   Chunk502762 = require("./502762.jsx"),
   Chunk5337 = require("./5337.jsx"),
@@ -26,22 +26,23 @@ function b(e) {
     wishlistId: _
   } = e, {
     analyticsLocations: y
-  } = (0, a.ZP)(), O = (0, i.useCallback)(e => {
+  } = (0, a.ZP)(), {
+    trackUserProfileWishlistAction: O
+  } = (0, u.KZ)(), j = (0, i.useCallback)(e => {
     let {
       wishlistId: t,
       action: n,
       productLines: r
     } = e;
-    null != t && (0, u.Er)({
+    null != t && O({
       wishlistId: t,
       action: n,
-      analyticsLocations: y,
       productLines: r
     })
-  }, [y]), {
-    cards: j,
-    singleItem: x,
-    productLines: v
+  }, [O]), {
+    cards: x,
+    singleItem: v,
+    productLines: C
   } = (0, i.useMemo)(() => {
     let e = [],
       r = null,
@@ -80,25 +81,25 @@ function b(e) {
       singleItem: r,
       productLines: i
     }
-  }, [t, n, y, b, _]), C = (0, p.Z)({
+  }, [t, n, y, b, _]), I = (0, p.Z)({
     wishlistId: null != _ ? _ : null,
-    onAction: O,
-    productLines: v
+    onAction: j,
+    productLines: C
   });
-  if (0 === j.length) return null;
-  let I = j;
-  return null != x && ((0, c.Q)(x) ? I = (0, f.g)(x, {
+  if (0 === x.length) return null;
+  let S = x;
+  return null != v && ((0, c.Q)(v) ? S = (0, f.g)(v, {
     profileOwner: n,
     analyticsLocations: y,
     wishlistId: _,
     onViewWishlist: b
-  }) : (0, d.F)(x) && (I = (0, o.B)(x, {
+  }) : (0, d.F)(v) && (S = (0, o.B)(v, {
     profileOwner: n,
     analyticsLocations: y,
     wishlistId: _,
     onViewWishlist: b
   }))), (0, r.jsxs)(h.Z.Overlay, {
-    ref: C,
+    ref: I,
     className: m.container,
     children: [(0, r.jsx)("div", {
       className: m.header,
@@ -108,7 +109,7 @@ function b(e) {
       })
     }), (0, r.jsx)("div", {
       className: m.cardsContainer,
-      children: I
+      children: S
     })]
   })
 }

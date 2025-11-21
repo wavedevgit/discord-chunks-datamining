@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk790519 = require("./790519.js"),
   Chunk893999 = require("./893999.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk28664 = require("./28664.jsx"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk45114 = require("./45114.js"),
@@ -112,15 +112,18 @@ let S = Chunk473749.memo(function(e) {
     return (0, r.jsx)("div", {
       className: C.channel,
       children: (0, r.jsx)(d.y5t, {
-        component: (0, r.jsxs)(y.Z, {
+        component: (0, r.jsx)(y.Z, {
           channel: a,
           gotoChannel: s,
           mentionCount: t.mentionCount,
           toggleCollapsed: o,
           channelState: t,
-          children: [(0, r.jsx)(_.Z, {
-            channel: a
-          }), (0, r.jsx)(P, E({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(N, E({}, e))]
+          children: (0, r.jsxs)(d.ButtonGroup, {
+            size: "sm",
+            children: [(0, r.jsx)(_.Z, {
+              channel: a
+            }), (0, r.jsx)(P, E({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(N, E({}, e))]
+          })
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(v.Z, {
           channel: t,
@@ -142,25 +145,22 @@ function P(e) {
     markGuildRead: i,
     getNumUnreadChannels: l
   } = e, o = (0, s.Z)() && null != t.guildId;
-  return (0, r.jsx)(d.M0o, {
-    className: C.markReadButton,
-    tooltip: o ? x.intl.string(x.t["5lLMhM"]) : x.intl.string(x.t.e6RscS),
-    color: d.YX$.TERTIARY,
-    icon: o ? (0, r.jsx)(d.W6s, {
-      size: "xs",
-      color: "currentColor"
-    }) : (0, r.jsx)(d.dz2, {
-      size: "xs",
-      color: "currentColor"
-    }),
-    onClick: function() {
-      o && null != t.guildId ? i(t.guildId) : n(t), (0, h.yw)(j.rMx.INBOX_CHANNEL_ACKED, {
-        channel_id: t.channelId,
-        guild_id: t.guildId,
-        marked_all_channels_as_read: false,
-        num_unread_channels_remaining: l() - 1
-      })
-    }
+  return (0, r.jsx)(u.u, {
+    text: o ? x.intl.string(x.t["5lLMhM"]) : x.intl.string(x.t.e6RscS),
+    children: (0, r.jsx)(d.hU, {
+      variant: "secondary",
+      "aria-label": o ? x.intl.string(x.t["5lLMhM"]) : x.intl.string(x.t.e6RscS),
+      size: "sm",
+      icon: o ? d.W6s : d.dz2,
+      onClick: function() {
+        o && null != t.guildId ? i(t.guildId) : n(t), (0, h.yw)(j.rMx.INBOX_CHANNEL_ACKED, {
+          channel_id: t.channelId,
+          guild_id: t.guildId,
+          marked_all_channels_as_read: false,
+          num_unread_channels_remaining: l() - 1
+        })
+      }
+    })
   })
 }
 
