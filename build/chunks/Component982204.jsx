@@ -134,11 +134,11 @@ function D(e) {
   let a = (0, c.e7)([d.Z], () => d.Z.getProduct(t.id)),
     o = v(t, a),
     l = n.invoice_items[0],
-    u = l.unit_price.amount,
-    f = !n.tax_inclusive && n.tax > 0,
-    h = I(l),
-    m = u !== n.amount,
-    g = t.productLine === b.POd.SOCIAL_LAYER_GAME_ITEM;
+    f = l.unit_price.amount,
+    h = !n.tax_inclusive && n.tax > 0,
+    m = I(l),
+    g = f !== n.amount,
+    P = t.productLine === b.POd.SOCIAL_LAYER_GAME_ITEM;
   return (0, r.jsxs)(_.aO, {
     className: O.invoiceTable,
     children: [(0, r.jsxs)(T, {
@@ -148,26 +148,29 @@ function D(e) {
         })
       }), (0, r.jsxs)(A, {
         className: O.invoiceRegularText,
-        children: [g && (0, r.jsx)(p.e, {
+        children: [P && (0, r.jsx)(p.e, {
           application: i
-        }), t.name]
+        }), (0, r.jsx)(u.Text, {
+          variant: "text-sm/semibold",
+          children: t.name
+        })]
       }), (0, r.jsx)(C, {
         className: O.invoiceRegularText,
-        children: (0, E.T4)(u, n.currency)
+        children: (0, E.T4)(f, n.currency)
       })]
-    }), null != h && (0, r.jsxs)(T, {
+    }), null != m && (0, r.jsxs)(T, {
       children: ["THREE_COLUMN" === o && (0, r.jsx)(S, {
         children: (0, r.jsx)(R, {
-          discount: h
+          discount: m
         })
       }), (0, r.jsx)(A, {
         className: O.invoiceDiscountText,
-        children: h.description
+        children: m.description
       }), (0, r.jsx)(C, {
         className: O.invoiceDiscountText,
-        children: (0, E.T4)(false * h.amount, n.currency)
+        children: (0, E.T4)(false * m.amount, n.currency)
       })]
-    }), f && (0, r.jsxs)(T, {
+    }), h && (0, r.jsxs)(T, {
       children: ["THREE_COLUMN" === o && (0, r.jsx)(S, {}), (0, r.jsx)(A, {
         className: O.invoiceRegularText,
         children: y.intl.string(y.t["/I8zmP"])
@@ -175,7 +178,7 @@ function D(e) {
         className: O.invoiceRegularText,
         children: (0, E.T4)(n.tax, n.currency)
       })]
-    }), m && (0, r.jsxs)(r.Fragment, {
+    }), g && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(_.UN, {}), (0, r.jsxs)(T, {
         className: O.totalRow,
         children: [(0, r.jsx)(S, {

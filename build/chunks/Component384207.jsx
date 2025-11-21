@@ -12,19 +12,21 @@ var Chunk481060 = require("./481060.js"),
   Chunk11075 = require("./11075.jsx"),
   Chunk511010 = require("./511010.jsx"),
   Chunk809863 = require("./809863.js");
-let u = () => (0, Chunk54381.jsxs)("div", {
-  className: Chunk809863.previewPanel,
-  children: [(0, Chunk54381.jsx)(Chunk11075.a, {
-    className: Chunk809863.previewSection
-  }), (0, Chunk54381.jsxs)("div", {
-    className: Chunk809863.previewSection,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-      variant: "heading-md/semibold",
-      children: "Shop Overrides"
-    }), (0, Chunk54381.jsx)(Chunk812381.a, {}), (0, Chunk54381.jsx)(Chunk511010.Z, {
-      className: Chunk809863.divider
-    }), (0, Chunk54381.jsx)(Chunk484486.Z, {}), (0, Chunk54381.jsx)(Chunk511010.Z, {
-      className: Chunk809863.divider
-    }), (0, Chunk54381.jsx)(Chunk646466.O, {})]
-  })]
+let u = () => (0, Chunk54381.jsx)(Chunk646466.L, {
+  children: (0, Chunk54381.jsxs)("div", {
+    className: Chunk809863.previewPanel,
+    children: [(0, Chunk54381.jsx)(Chunk11075.a, {
+      className: Chunk809863.previewSection
+    }), (0, Chunk54381.jsxs)("div", {
+      className: Chunk809863.previewSection,
+      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+        variant: "heading-md/semibold",
+        children: "Shop Overrides"
+      }), (0, Chunk54381.jsx)(Chunk812381.a, {}), (0, Chunk54381.jsx)(Chunk511010.Z, {
+        className: Chunk809863.divider
+      }), (0, Chunk54381.jsx)(Chunk484486.Z, {}), (0, Chunk54381.jsx)(Chunk511010.Z, {
+        className: Chunk809863.divider
+      }), (0, Chunk54381.jsx)(Chunk646466.O, {})]
+    })]
+  })
 })

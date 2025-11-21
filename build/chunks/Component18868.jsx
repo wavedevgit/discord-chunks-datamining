@@ -48,13 +48,17 @@ let m = () => {
   h = e => {
     let {
       className: t,
-      onDrop: n
-    } = e, [r, h] = l.useState(false), x = l.useRef(null), g = l.useCallback(e => {
-      p(e), h(true), (0, s.Mr3)(c.A)
-    }, []), f = l.useCallback(e => {
-      p(e), h(false)
-    }, []), b = l.useCallback(async e => {
-      p(e), h(false);
+      onDrop: n,
+      children: r
+    } = e, [h, x] = l.useState(false), g = l.useRef(null), f = l.useCallback(e => {
+      p(e), x(true), (0, s.Mr3)(c.A)
+    }, []), b = l.useCallback(e => {
+      p(e);
+      let t = g.current,
+        n = e.relatedTarget;
+      null != n && (null == t || t.contains(n)) || x(false)
+    }, []), v = l.useCallback(async e => {
+      p(e), x(false);
       let t = e.dataTransfer;
       if (null == t) return void m();
       let a = await Promise.all(Array.from(t.items).map(e => {
@@ -63,17 +67,15 @@ let m = () => {
       })).then(e => e.filter(e => null != e));
       a.length > 0 ? n(a) : m()
     }, [n]);
-    return (0, a.jsx)("div", {
-      ref: x,
-      className: i()(t, u.uploadArea),
-      onDragEnter: g,
+    return (0, a.jsxs)("div", {
+      ref: g,
+      className: i()(t, u.wrapper),
+      onDragEnter: f,
       onDragOver: p,
-      onDragLeave: f,
-      onDrop: b,
-      children: (0, a.jsx)("div", {
-        className: i()(u.uploadModal, {
-          [u.droppable]: r
-        }),
+      onDragLeave: b,
+      onDrop: v,
+      children: [r, h && (0, a.jsx)("div", {
+        className: u.uploadModal,
         children: (0, a.jsxs)("div", {
           className: u.inner,
           children: [(0, a.jsx)(o.Z, {
@@ -96,6 +98,6 @@ let m = () => {
             })]
           })]
         })
-      })
+      })]
     })
   }

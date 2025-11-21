@@ -18,7 +18,6 @@ let c = () => {
       variant: "text-md/normal",
       children: "Hide first # of categories"
     }), (0, Chunk54381.jsx)(Chunk481060.FiK, {
-      className: Chunk851339.numberInputStepper,
       value: module,
       onChange: e => {
         (0, i.p8)(e)
