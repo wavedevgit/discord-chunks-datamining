@@ -9,7 +9,10 @@ var Chunk473749 = require("./473749.js"),
   Chunk1870 = require("./1870.js");
 
 function a(e, t) {
-  let n = r.useMemo(() => e.products.filter(e => e.skuId !== t).map(e => e.skuId), [e.products, t]),
+  let n = r.useMemo(() => {
+      var n;
+      return null != (n = null == e ? true : e.products.filter(e => e.skuId !== t).map(e => e.skuId)) ? n : []
+    }, [null == e ? true : e.products, t]),
     a = (0, l.e7)([i.Z], () => i.Z.getPurchases(n));
   return {
     readyToClaim: r.useMemo(() => a.length === n.length, [a, n]),
