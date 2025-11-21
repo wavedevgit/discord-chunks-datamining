@@ -23,6 +23,7 @@ function d(e) {
   }), [t]), [_] = f;
   return 0 === f.length ? null : (0, r.jsxs)("section", {
     "aria-labelledby": null != n ? d : true,
+    className: u.container,
     children: [null != n && (0, r.jsx)(s.nn4, {
       children: (0, r.jsx)(s.H, {
         id: d,

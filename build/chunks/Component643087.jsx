@@ -48,7 +48,6 @@ class f extends Chunk473749.PureComponent {
         onClose: exports,
         children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
           gap: 16,
-          className: Chunk542560.container,
           children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
             label: Chunk388032.intl.string(Chunk388032.t.tGRbjA),
             maxLength: Chunk981631.dYL,
@@ -59,6 +58,7 @@ class f extends Chunk473749.PureComponent {
           }), (0, Chunk54381.jsx)(Chunk481060.gNt, {
             label: Chunk388032.intl.string(Chunk388032.t.xpurRF),
             children: (0, Chunk54381.jsx)(b, {
+              className: Chunk542560.colorPicker,
               defaultColor: Chunk981631.Wyy,
               colors: Chunk981631.pmI,
               value: null != Chunk473749 ? Chunk473749 : Chunk981631.Wyy,

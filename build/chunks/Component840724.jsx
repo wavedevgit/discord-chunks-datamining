@@ -2,8 +2,8 @@
 /** chunk id: 840724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => H,
-  Z: () => F
+  C: () => K,
+  Z: () => Y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,6 +15,7 @@ var Chunk54381 = require("./54381.js"),
   u = require.n(Chunk913527),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk100527 = require("./100527.js"),
@@ -36,73 +37,80 @@ var Chunk54381 = require("./54381.js"),
   Chunk594914 = require("./594914.jsx"),
   Chunk848118 = require("./848118.jsx"),
   Chunk433386 = require("./433386.jsx"),
+  Chunk655409 = require("./655409.js"),
+  Chunk785873 = require("./785873.js"),
   Chunk181268 = require("./181268.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk450433 = require("./450433.js");
-let G = 80,
-  B = [
+let F = 80,
+  V = [
     [0, 30],
     [0, 30],
     [0, 20],
     [0, 0]
   ],
-  Z = 30;
-var F = function(e) {
+  H = 30;
+var Y = function(e) {
   return e[e.SMALL = 0] = "SMALL", e[e.MEDIUM = 1] = "MEDIUM", e[e.EMBEDDED = 2] = "EMBEDDED", e
 }({});
 
-function V(e) {
+function W(e) {
   let {
     sku: t,
     isCardHovered: n,
     onClick: i
   } = e;
   return (0, r.jsx)("div", {
-    className: U.wishlistButtonContainer,
-    children: (0, r.jsx)(E.s, {
+    className: Z.wishlistButtonContainer,
+    children: (0, r.jsx)(b.s, {
       skuId: t.id,
       isCardHovered: n,
-      nuxGraphic: (0, P.c)(t),
+      nuxGraphic: (0, D.c)(t),
       onClick: i
     })
   })
 }
 
-function H(e) {
-  var t, n, a, s, c, E, P, F, H, Y, W, K, z, q, X, Q;
+function K(e) {
+  var t, n, a, s, c, b, D, Y, K, z, q, X, Q, J, $, ee;
   let {
-    positionInSection: J,
-    applicationId: $,
-    skuId: ee,
-    variant: et = 0,
-    guildId: en,
-    onClick: er,
-    className: ei,
-    analyticsLocations: ea
-  } = e, eo = i.useRef(null), es = (0, f.e7)([O.Z], () => O.Z.get(ee)), el = (0, f.e7)([y.Z], () => (0, d.wjy)(y.Z.theme)), ec = (0, f.e7)([p.Z], () => p.Z.useReducedMotion), {
-    isHoveringOrFocusing: eu
-  } = (0, b.Z)(eo), ed = (0, C.oR)(), {
-    analyticsLocations: ef
-  } = (0, m.ZP)(null != ea ? ea : []), e_ = i.useRef({
-    positionInSection: J,
-    analyticsLocations: ef
-  }), ep = i.useCallback(e => {
+    positionInSection: et,
+    applicationId: en,
+    skuId: er,
+    variant: ei = 0,
+    guildId: ea,
+    onClick: eo,
+    className: es,
+    analyticsLocations: el
+  } = e, ec = i.useRef(null), eu = (0, f.e7)([v.Z], () => v.Z.get(er)), ed = (0, f.e7)([O.Z], () => (0, d.wjy)(O.Z.theme)), ef = (0, f.e7)([h.Z], () => h.Z.useReducedMotion), {
+    isHoveringOrFocusing: e_
+  } = (0, y.Z)(ec), ep = (0, N.oR)(), {
+    analyticsLocations: eh
+  } = (0, g.ZP)(null != el ? el : []), em = i.useRef({
+    positionInSection: et,
+    analyticsLocations: eh
+  }), {
+    handleCardHover: eg,
+    handleCardUnhover: eE
+  } = (0, M.A)(er, ep, et, eh), {
+    handleCardVisibilityChange: eb
+  } = (0, k.X)(er, ep, et, eh), ey = i.useCallback(e => {
     let {
       analyticsLocations: t,
       positionInSection: n
-    } = e_.current, {
+    } = em.current, {
       sessionId: r,
       guildId: i,
       pageIndex: a,
       pageTitle: o,
       section: s,
       sectionTitle: l
-    } = ed;
-    v.default.track(M.rMx.SLAYER_SHOP_CARD_ELEMENT_CLICKED, {
+    } = ep;
+    I.default.track(U.rMx.SLAYER_SHOP_CARD_ELEMENT_CLICKED, {
       slayer_shop_session_id: r,
-      sku_id: ee,
+      sku_id: er,
       guild_id: i,
       page_index: a,
       page_title: o,
@@ -112,135 +120,142 @@ function H(e) {
       cta_type: e,
       location_stack: t
     })
-  }, [ee, ed]), {
-    primaryIconAsset: eh,
-    primaryIconLabel: em
-  } = i.useMemo(() => (0, A.FE)(es, $), [es, $]), eg = (0, f.e7)([N.Z], () => {
+  }, [er, ep]), {
+    primaryIconAsset: eO,
+    primaryIconLabel: ev
+  } = i.useMemo(() => (0, C.FE)(eu, en), [eu, en]), eI = (0, f.e7)([R.Z], () => {
     var e, t;
-    return null != en && null != (t = null == (e = N.Z.getStorefrontState(en)) ? true : e.activePage) ? t : 0
-  }), eE = i.useMemo(() => {
+    return null != ea && null != (t = null == (e = R.Z.getStorefrontState(ea)) ? true : e.activePage) ? t : 0
+  }), eT = i.useMemo(() => {
     var e, t;
-    if ((null == es || null == (t = es.tenantMetadata) || null == (e = t.socialLayer) ? true : e.expiresAt) == null) return null;
+    if ((null == eu || null == (t = eu.tenantMetadata) || null == (e = t.socialLayer) ? true : e.expiresAt) == null) return null;
     let n = u()(),
-      r = u()(es.tenantMetadata.socialLayer.expiresAt).diff(n, "days");
-    return r <= 1 ? j.intl.string(j.t.Bc13HF) : j.intl.format(j.t.Io7ozn, {
+      r = u()(eu.tenantMetadata.socialLayer.expiresAt).diff(n, "days");
+    return r <= 1 ? B.intl.string(B.t.Bc13HF) : B.intl.format(B.t.Io7ozn, {
       days: r
     })
-  }, [null == es || null == (n = es.tenantMetadata) || null == (t = n.socialLayer) ? true : t.expiresAt]), eb = (null == es || null == (s = es.tenantMetadata) || null == (a = s.socialLayer) ? true : a.cardBackgroundImageAssetId) != null && null != (W = S.Z.toURLSafe((0, T._W)($, null == es ? true : es.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png"))) ? W : true, [ey, eO] = (0, g.Cf)(null == eb ? true : eb.toString(), "#000000"), ev = i.useMemo(() => {
-    let e = o()(ey).darken(1.5).alpha(.9).hex(),
-      t = o()(ey).alpha(0).hex(),
-      [n, r] = B[et];
-    return 0 === n && 0 === r ? "none" : "linear-gradient(to top, ".concat(e, " ").concat(Z + n, "%, ").concat(t, " ").concat(Z + r, "%)")
-  }, [ey, et]), eI = i.useCallback(() => {
-    ep(x.r.WISHLIST_BUTTON)
-  }, [ep]), eT = i.useCallback(e => {
-    if (ep(x.r.CARD), null != er) return void er(e);
-    null != en && (0, R.Z)({
-      guildId: en,
-      pageIndex: eg,
-      skuId: ee,
-      slug: null == es ? true : es.slug
+  }, [null == eu || null == (n = eu.tenantMetadata) || null == (t = n.socialLayer) ? true : t.expiresAt]), eS = (null == eu || null == (s = eu.tenantMetadata) || null == (a = s.socialLayer) ? true : a.cardBackgroundImageAssetId) != null && null != (q = A.Z.toURLSafe((0, S._W)(en, null == eu ? true : eu.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png"))) ? q : true, [eA, eC] = (0, E.Cf)(null == eS ? true : eS.toString(), "#000000"), eN = i.useMemo(() => {
+    let e = o()(eA).darken(1.5).alpha(.9).hex(),
+      t = o()(eA).alpha(0).hex(),
+      [n, r] = V[ei];
+    return 0 === n && 0 === r ? "none" : "linear-gradient(to top, ".concat(e, " ").concat(H + n, "%, ").concat(t, " ").concat(H + r, "%)")
+  }, [eA, ei]), eR = i.useCallback(() => {
+    ey(j.r.WISHLIST_BUTTON)
+  }, [ey]), eP = i.useCallback(e => {
+    if (ey(j.r.CARD), null != eo) return void eo(e);
+    null != ea && (0, P.Z)({
+      guildId: ea,
+      pageIndex: eI,
+      skuId: er,
+      slug: null == eu ? true : eu.slug
     })
-  }, [ep, en, eg, ee, null == es ? true : es.slug, er]);
-  if (null == es) return null;
-  let eS = (null == (E = es.tenantMetadata) || null == (c = E.socialLayer) ? true : c.cardImageAssetId) != null && null != (K = S.Z.toURLSafe((0, T._W)($, es.tenantMetadata.socialLayer.cardImageAssetId, 512, "png"))) ? K : true;
-  return (0, r.jsx)(d.tEY, {
-    children: (0, r.jsxs)(_.kL8, {
-      onClick: eT,
-      className: l()(U.card, {
-        [U.cardAnimation]: !ec && 2 !== et,
-        [U.cardDark]: el,
-        [el ? U.cardDarkHighlighted : U.cardHighlighted]: eu,
-        [U.cardSmall]: 0 === et,
-        [U.cardMedium]: 1 === et,
-        [U.cardEmbedded]: 2 === et
-      }, ei),
-      ref: eo,
-      "aria-label": es.name,
-      children: [null != eE && (0, r.jsx)(_.IGR, {
-        text: eE,
-        disableColor: true,
-        className: U.badge
-      }), (0, r.jsx)(V, {
-        sku: es,
-        isCardHovered: eu,
-        onClick: eI
-      }), null != eS ? (0, r.jsx)(w.p, {
-        containerClassName: U.cardImageContainer,
-        foregroundImageClassName: U.cardImage,
-        cardImage: eS,
-        altText: es.name,
-        shape: "custom",
-        backgroundImageClassName: U.cardBackgroundImage,
-        cardBackgroundImage: eb
-      }) : (0, r.jsx)("div", {
-        className: U.ticketIconContainer,
-        children: (0, r.jsx)(d.Prq, {
-          color: "white",
-          size: "custom",
-          height: G,
-          width: G,
-          className: U.ticketIcon
-        })
-      }), 2 !== et ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)("div", {
-          className: U.bottomGradient,
-          style: {
-            background: ev
-          }
-        }), (0, r.jsxs)("div", {
-          className: U.details,
-          children: [(0, r.jsx)("div", {
-            className: U.titleContainer,
-            children: (0, r.jsx)(_.Text, {
-              color: "always-white",
-              variant: "text-md/medium",
-              lineClamp: 1,
-              children: es.name
-            })
-          }), (0, r.jsxs)("div", {
-            className: U.descriptionContainer,
-            children: [null != eh && (0, r.jsx)("img", {
-              src: eh.toString(),
-              alt: em,
-              className: U.iconAsset
-            }), (0, r.jsx)(_.Text, {
-              variant: "text-md/bold",
-              color: "always-white",
-              lineClamp: 1,
-              children: (0, I.T4)(null != (z = null == (P = es.price) ? true : P.amount) ? z : 0, null != (q = null == (F = es.price) ? true : F.currency) ? q : k.pK.USD)
-            })]
-          })]
-        }), (0, r.jsx)("div", {
-          className: U.buttonHover,
-          children: (0, r.jsxs)(d.hE2, {
-            wrap: false,
-            fullWidth: true,
-            children: [(0, r.jsx)(d.zxk, {
-              variant: "primary",
-              onClick: e => {
-                e.stopPropagation(), ep(x.r.BUY_BUTTON), (0, D.P)(es, {
-                  isGift: false
-                }, {
-                  analyticsLocations: [h.Z.SLAYER_STOREFRONT_CARD_PURCHASE_BUTTON]
-                })
-              },
-              text: j.intl.format(j.t.Xp5WTn, {
-                price: (0, I.T4)(null != (X = null == (H = es.price) ? true : H.amount) ? X : 0, null != (Q = null == (Y = es.price) ? true : Y.currency) ? Q : k.pK.USD)
-              }),
-              fullWidth: true
-            }), (0, r.jsx)(L.Z, {
-              onGift: e => {
-                e.stopPropagation(), ep(x.r.GIFT_BUTTON), (0, D.P)(es, {
-                  isGift: true
-                }, {
-                  analyticsLocations: [h.Z.SLAYER_STOREFRONT_CARD_GIFT_BUTTON]
-                })
-              }
-            })]
+  }, [ey, ea, eI, er, null == eu ? true : eu.slug, eo]);
+  if (null == eu) return null;
+  let eD = (null == (b = eu.tenantMetadata) || null == (c = b.socialLayer) ? true : c.cardImageAssetId) != null && null != (X = A.Z.toURLSafe((0, S._W)(en, eu.tenantMetadata.socialLayer.cardImageAssetId, 512, "png"))) ? X : true;
+  return (0, r.jsx)(_.$, {
+    innerRef: ec,
+    onChange: eb,
+    threshold: 0,
+    children: (0, r.jsx)(d.tEY, {
+      children: (0, r.jsxs)(p.kL8, {
+        onClick: eP,
+        onMouseEnter: eg,
+        onMouseLeave: eE,
+        className: l()(Z.card, {
+          [Z.cardAnimation]: !ef && 2 !== ei,
+          [Z.cardDark]: ed,
+          [ed ? Z.cardDarkHighlighted : Z.cardHighlighted]: e_,
+          [Z.cardSmall]: 0 === ei,
+          [Z.cardMedium]: 1 === ei,
+          [Z.cardEmbedded]: 2 === ei
+        }, es),
+        ref: ec,
+        "aria-label": eu.name,
+        children: [null != eT && (0, r.jsx)(p.IGR, {
+          text: eT,
+          disableColor: true,
+          className: Z.badge
+        }), (0, r.jsx)(W, {
+          sku: eu,
+          isCardHovered: e_,
+          onClick: eR
+        }), null != eD ? (0, r.jsx)(L.p, {
+          containerClassName: Z.cardImageContainer,
+          foregroundImageClassName: Z.cardImage,
+          cardImage: eD,
+          altText: eu.name,
+          shape: "custom",
+          backgroundImageClassName: Z.cardBackgroundImage,
+          cardBackgroundImage: eS
+        }) : (0, r.jsx)("div", {
+          className: Z.ticketIconContainer,
+          children: (0, r.jsx)(d.Prq, {
+            color: "white",
+            size: "custom",
+            height: F,
+            width: F,
+            className: Z.ticketIcon
           })
-        })]
-      }) : null]
+        }), 2 !== ei ? (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)("div", {
+            className: Z.bottomGradient,
+            style: {
+              background: eN
+            }
+          }), (0, r.jsxs)("div", {
+            className: Z.details,
+            children: [(0, r.jsx)("div", {
+              className: Z.titleContainer,
+              children: (0, r.jsx)(p.Text, {
+                color: "always-white",
+                variant: "text-md/medium",
+                lineClamp: 1,
+                children: eu.name
+              })
+            }), (0, r.jsxs)("div", {
+              className: Z.descriptionContainer,
+              children: [null != eO && (0, r.jsx)("img", {
+                src: eO.toString(),
+                alt: ev,
+                className: Z.iconAsset
+              }), (0, r.jsx)(p.Text, {
+                variant: "text-md/bold",
+                color: "always-white",
+                lineClamp: 1,
+                children: (0, T.T4)(null != (Q = null == (D = eu.price) ? true : D.amount) ? Q : 0, null != (J = null == (Y = eu.price) ? true : Y.currency) ? J : G.pK.USD)
+              })]
+            })]
+          }), (0, r.jsx)("div", {
+            className: Z.buttonHover,
+            children: (0, r.jsxs)(d.hE2, {
+              wrap: false,
+              fullWidth: true,
+              children: [(0, r.jsx)(d.zxk, {
+                variant: "primary",
+                onClick: e => {
+                  e.stopPropagation(), ey(j.r.BUY_BUTTON), (0, w.P)(eu, {
+                    isGift: false
+                  }, {
+                    analyticsLocations: [m.Z.SLAYER_STOREFRONT_CARD_PURCHASE_BUTTON]
+                  })
+                },
+                text: B.intl.format(B.t.Xp5WTn, {
+                  price: (0, T.T4)(null != ($ = null == (K = eu.price) ? true : K.amount) ? $ : 0, null != (ee = null == (z = eu.price) ? true : z.currency) ? ee : G.pK.USD)
+                }),
+                fullWidth: true
+              }), (0, r.jsx)(x.Z, {
+                onGift: e => {
+                  e.stopPropagation(), ey(j.r.GIFT_BUTTON), (0, w.P)(eu, {
+                    isGift: true
+                  }, {
+                    analyticsLocations: [m.Z.SLAYER_STOREFRONT_CARD_GIFT_BUTTON]
+                  })
+                }
+              })]
+            })
+          })]
+        }) : null]
+      })
     })
   })
 }
