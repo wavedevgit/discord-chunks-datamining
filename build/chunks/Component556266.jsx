@@ -57,16 +57,16 @@ function I(e) {
     applicationId: a,
     analyticsLocationObject: s,
     skuId: o,
-    isGift: c
-  } = e, {} = (0, d.JL)(), {
+    isGift: d
+  } = e, {} = (0, c.JL)(), {
     analyticsLocations: u
   } = (0, r.ZP)();
-  return (0, i.jsx)(g.PaymentModal, {
+  return (0, i.jsx)(f.PaymentModal, {
     onClose: t,
     onComplete: n,
     applicationId: a,
     skuId: o,
-    renderHeader: _(c),
+    renderHeader: _(d),
     initialPlanId: null,
     analyticsObject: s,
     analyticsLocations: u,
@@ -78,7 +78,7 @@ function P(e) {
   let {
     loadId: t,
     applicationId: n,
-    skuId: g,
+    skuId: f,
     analyticsLocations: v,
     isGift: _ = false,
     giftRecipient: P,
@@ -87,20 +87,20 @@ function P(e) {
     analyticsLocations: y
   } = (0, r.ZP)(v, a.Z.SLAYER_STOREFRONT_PAYMENT_MODAL), T = (0, s.q)(n);
   return l.useEffect(() => {
-    null == T || null == T.guildId || null == g || p.Z.isFetchingForSKU(g) || null != m.Z.get(g) || (0, x.y)(T.guildId, g)
-  }, [T, g]), (0, i.jsx)(r.Gt, {
+    null == T || null == T.guildId || null == f || p.Z.isFetchingForSKU(f) || null != m.Z.get(f) || (0, x.y)(T.guildId, f)
+  }, [T, f]), (0, i.jsx)(r.Gt, {
     value: y,
-    children: (0, i.jsx)(d.PaymentContextProvider, {
+    children: (0, i.jsx)(c.PaymentContextProvider, {
       loadId: t,
       stepConfigs: function() {
         let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-        return [f.WA, ...e ? [C.jM] : [], f.s2, ...f.yp, f.wo, {
-          key: c.h8.CONFIRM,
+        return [g.WA, ...e ? [C.jM] : [], g.s2, ...g.yp, g.wo, {
+          key: d.h8.CONFIRM,
           renderStep: e => (0, i.jsx)(h.d, b({}, e))
         }]
       }(_),
       applicationId: n,
-      skuIDs: [g],
+      skuIDs: [f],
       activeSubscription: null,
       purchaseType: j.GZ.ONE_TIME,
       isGift: _,

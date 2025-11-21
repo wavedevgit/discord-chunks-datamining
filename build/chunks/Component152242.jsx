@@ -67,7 +67,7 @@ function O(e) {
     loading: s = false
   } = e, {
     hasPaymentSources: o
-  } = (0, d.JL)(), u = o ? c.h8.REVIEW : c.h8.ADD_PAYMENT_STEPS;
+  } = (0, c.JL)(), u = o ? d.h8.REVIEW : d.h8.ADD_PAYMENT_STEPS;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(a.Button, {
       onClick: () => t(u),
@@ -84,7 +84,7 @@ function Z(e) {
   var t;
   let {
     handleStepChange: n,
-    handleClose: c
+    handleClose: d
   } = e, {
     customGiftMessage: m = "",
     setCustomGiftMessage: b,
@@ -97,7 +97,7 @@ function Z(e) {
   } = (0, o.wD)(), {
     selectedSkuId: L,
     application: W
-  } = (0, d.JL)(), B = (0, l.e7)([h.default], () => h.default.getCurrentUser()), R = (0, l.e7)([v.Z], () => null != L ? v.Z.get(L) : null, [L]), H = (0, j.Do)(R), D = (0, j.a7)(R), F = (0, P.K)(R, {
+  } = (0, c.JL)(), B = (0, l.e7)([h.default], () => h.default.getCurrentUser()), R = (0, l.e7)([v.Z], () => null != L ? v.Z.get(L) : null, [L]), D = (0, j.Do)(R), H = (0, j.a7)(R), F = (0, P.K)(R, {
     shouldFetchIfMissing: true
   }), U = async (e, t) => {};
   return (0, i.jsxs)(i.Fragment, {
@@ -106,10 +106,10 @@ function Z(e) {
         className: S.stepBody,
         children: [(0, i.jsxs)("div", {
           className: S.bodyColumnLeft,
-          children: [null != H && (0, i.jsx)(w.p, {
+          children: [null != D && (0, i.jsx)(w.p, {
             containerClassName: S.skuCardImage,
-            cardImage: H,
-            cardBackgroundImage: D,
+            cardImage: D,
+            cardBackgroundImage: H,
             altText: null != (t = null == R ? true : R.name) ? t : "",
             shape: "square"
           }), (0, i.jsxs)("div", {
@@ -119,7 +119,7 @@ function Z(e) {
               onSelect: e => {
                 null != M && M(null == e ? true : e)
               }
-            }), (0, i.jsx)(f.Z, {
+            }), (0, i.jsx)(g.Z, {
               setEmojiConfetti: Z,
               emojiConfetti: null == y ? true : y
             })]
@@ -132,7 +132,7 @@ function Z(e) {
             selectedSkuId: L,
             validateSelectedGift: U,
             searchableSelectWrapperClassName: S.recipientPickerSelectWrapper
-          }), (0, i.jsx)(g.Z, {
+          }), (0, i.jsx)(f.Z, {
             sectionTitle: E.intl.string(E.t.B3miE8),
             onTextChange: e => null == b ? true : b(e),
             pendingText: m,
@@ -153,10 +153,10 @@ function Z(e) {
                 className: S.giftPreviewContent,
                 children: [(0, i.jsx)("div", {
                   className: S.giftPreviewImageContainer,
-                  children: null != R && null != H && (0, i.jsx)(w.p, {
+                  children: null != R && null != D && (0, i.jsx)(w.p, {
                     containerClassName: S.giftPreviewCardContainer,
-                    cardImage: H,
-                    cardBackgroundImage: D,
+                    cardImage: D,
+                    cardBackgroundImage: H,
                     altText: R.name,
                     shape: "square"
                   })
@@ -165,7 +165,7 @@ function Z(e) {
                   children: [null != W && (0, i.jsx)(I.e, {
                     application: W
                   }), (0, i.jsx)(a.Text, {
-                    variant: "text-md/semibold",
+                    variant: "text-sm/semibold",
                     children: R.name
                   })]
                 }), (0, i.jsx)(a.Text, {
@@ -175,7 +175,7 @@ function Z(e) {
               })]
             })
           })(), null != F && null != R && (0, i.jsx)(G, {
-            handleClose: c,
+            handleClose: d,
             sku: R,
             guild: F
           })]
@@ -189,7 +189,7 @@ function Z(e) {
         className: S.footer,
         children: (0, i.jsx)(O, {
           onStepChange: n,
-          onBackClick: c,
+          onBackClick: d,
           disabled: null == _ || _.id === (null == B ? true : B.id) || m.length > T.$n
         })
       })
