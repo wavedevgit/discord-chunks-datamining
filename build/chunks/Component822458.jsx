@@ -19,12 +19,12 @@ function c(e) {
     sectionTitle: u,
     skuIds: g,
     variant: p = r.Z.SMALL
-  } = e, _ = i.useMemo(() => ({
+  } = e, f = i.useMemo(() => ({
     section: n,
     sectionTitle: u
   }), [n, u]);
   return null == g || 0 === g.length ? null : (0, t.jsx)(o.hL, {
-    newValue: _,
+    newValue: f,
     children: (0, t.jsxs)("div", {
       className: d.sectionContainer,
       children: [null != u && (0, t.jsx)(a.Heading, {

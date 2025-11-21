@@ -16,58 +16,68 @@ var Chunk481060 = require("./481060.js"),
   Chunk4517 = require("./4517.jsx"),
   Chunk5192 = require("./5192.js"),
   Chunk671955 = require("./671955.js"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk580792 = require("./580792.js");
 
 function b(e) {
+  var t;
   let {
-    user: t,
-    previewText: n,
-    previewEmoji: b,
-    previewStatus: g,
-    placeHolderText: h,
+    user: n,
+    previewText: b,
+    previewEmoji: h,
+    previewStatus: T,
+    placeHolderText: v,
     transitionState: S
-  } = e, T = (0, a.ZP)(t.id);
-  return (0, r.jsxs)(c.Z, {
-    user: t,
-    displayProfile: T,
-    themeType: p.l.POPOUT,
-    className: O.profilePreviewContainer,
-    children: [(0, r.jsxs)("header", {
-      children: [(0, r.jsx)(u.Z, {
-        user: t,
-        displayProfile: T,
-        themeType: p.l.POPOUT
-      }), (0, r.jsx)("div", {
-        inert: true,
-        children: (0, r.jsx)(o.Z, {
-          user: t,
-          displayProfile: T,
-          themeType: p.l.POPOUT,
-          previewStatus: g,
-          className: O.avatar
-        })
-      }), (0, r.jsx)(m.Z, {
-        user: t,
-        themeType: p.l.POPOUT,
-        previewText: n,
-        previewEmoji: b,
-        placeholderText: h,
-        hasEntered: S === i.Dvm.ENTERED
-      })]
-    }), (null == T ? true : T.profileEffect) != null && (0, r.jsx)(l.Z, {
-      skuId: T.profileEffect.skuId
-    }), (0, r.jsx)("div", {
-      className: O.usernameContainer,
-      inert: true,
-      children: (0, r.jsx)(d.Z, {
-        user: t,
-        nickname: f.ZP.getName(null, null, t),
-        pronouns: null == T ? true : T.pronouns,
-        tags: (0, r.jsx)(s.Z, {
-          displayProfile: T,
+  } = e, j = (0, a.ZP)(n.id), P = null != b && "" !== b || null != h ? O.intl.formatToPlainString(O.t.UpF5Qa, {
+    emoji: null != (t = null == h ? true : h.name) ? t : "",
+    status: b
+  }) : "".concat(O.intl.string(O.t.EVV6uZ), ": ").concat(v);
+  return (0, r.jsx)("div", {
+    role: "img",
+    "aria-label": P,
+    children: (0, r.jsxs)(c.Z, {
+      user: n,
+      displayProfile: j,
+      themeType: p.l.POPOUT,
+      className: g.profilePreviewContainer,
+      "aria-hidden": "true",
+      children: [(0, r.jsxs)("header", {
+        children: [(0, r.jsx)(s.Z, {
+          user: n,
+          displayProfile: j,
           themeType: p.l.POPOUT
+        }), (0, r.jsx)("div", {
+          inert: true,
+          children: (0, r.jsx)(o.Z, {
+            user: n,
+            displayProfile: j,
+            themeType: p.l.POPOUT,
+            previewStatus: T,
+            className: g.avatar
+          })
+        }), (0, r.jsx)(m.Z, {
+          user: n,
+          themeType: p.l.POPOUT,
+          previewText: b,
+          previewEmoji: h,
+          placeholderText: v,
+          hasEntered: S === l.Dvm.ENTERED
+        })]
+      }), (null == j ? true : j.profileEffect) != null && (0, r.jsx)(i.Z, {
+        skuId: j.profileEffect.skuId
+      }), (0, r.jsx)("div", {
+        className: g.usernameContainer,
+        inert: true,
+        children: (0, r.jsx)(d.Z, {
+          user: n,
+          nickname: f.ZP.getName(null, null, n),
+          pronouns: null == j ? true : j.pronouns,
+          tags: (0, r.jsx)(u.Z, {
+            displayProfile: j,
+            themeType: p.l.POPOUT
+          })
         })
-      })
-    })]
+      })]
+    })
   })
 }

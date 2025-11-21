@@ -30,7 +30,8 @@ function d() {
 }
 
 function f(e) {
-  return null != e && e.features.has(c.GuildFeatures.SOCIAL_LAYER_STOREFRONT)
+  var t, n;
+  return e.id === d() || null != (n = null == (t = e.features) ? true : t.has(c.GuildFeatures.SOCIAL_LAYER_STOREFRONT)) && n
 }
 
 function _(e) {

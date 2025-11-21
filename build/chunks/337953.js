@@ -4,11 +4,11 @@ require.d(exports, {
   Z: () => a
 });
 var Chunk512722 = require("./512722.js"),
-  i = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk875425 = require("./875425.js");
 
 function a(e) {
-  if (e !== l.FO.TODAY) return i()("number" == typeof e, "Invalid custom status clear timeout"), e;
+  if (e !== i.FO.TODAY) return l()("number" == typeof e, "Invalid custom status clear timeout"), e;
   {
     let e = new Date;
     return new Date(e.getFullYear(), e.getMonth(), e.getDate() + 1).getTime() - e.getTime()

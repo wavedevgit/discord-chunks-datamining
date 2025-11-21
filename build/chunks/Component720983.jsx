@@ -41,26 +41,26 @@ function C(e) {
     guildId: n,
     storefront: l,
     selectedPageIndex: a
-  } = e, C = (0, r.wjy)((0, d.ZP)()), j = (0, g.Y)({
+  } = e, C = (0, r.wjy)((0, d.ZP)()), b = (0, g.Y)({
     location: "SocialLayerStorefrontHeader"
-  }), b = (0, s.e7)([_.default], () => _.default.getCurrentUser()), k = i.useCallback(() => {
-    (null == b ? true : b.id) != null && (0, p.openUserProfileModal)({
-      userId: b.id,
+  }), j = (0, s.e7)([f.default], () => f.default.getCurrentUser()), k = i.useCallback(() => {
+    (null == j ? true : j.id) != null && (0, p.openUserProfileModal)({
+      userId: j.id,
       section: h.oh.WISHLIST,
       showGuildProfile: false,
       sourceAnalyticsLocations: [c.Z.SOCIAL_LAYER_STOREFRONT]
     })
-  }, [b]);
+  }, [j]);
   if (null == l) return null;
-  let Z = null != l.logoAssetId ? (0, I._W)(l.applicationId, l.logoAssetId, 75) : null,
-    S = null != l.lightThemeLogoAssetId ? (0, I._W)(l.applicationId, l.lightThemeLogoAssetId, 75) : null,
+  let Z = null != l.logoAssetId ? (0, _._W)(l.applicationId, l.logoAssetId, 75) : null,
+    S = null != l.lightThemeLogoAssetId ? (0, _._W)(l.applicationId, l.lightThemeLogoAssetId, 75) : null,
     N = null;
   return N = C ? null != Z ? Z : S : null != S ? S : Z, (0, t.jsxs)(u.Z, {
     disableDoubleClick: true,
     className: m.headerContainer,
     children: [(0, t.jsxs)(r.P3F, {
       onClick: () => {
-        (0, f.Z)({
+        (0, I.Z)({
           guildId: n,
           pageIndex: 0
         })
@@ -77,7 +77,7 @@ function C(e) {
       className: m.titles,
       children: l.pages.map((e, l) => (0, t.jsx)(u.Z.Title, {
         onClick: () => {
-          (0, f.Z)({
+          (0, I.Z)({
             guildId: n,
             pageIndex: l
           })
@@ -91,7 +91,7 @@ function C(e) {
           children: e.title
         })
       }, "".concat(e.title, "-").concat(l)))
-    }), j && (0, t.jsx)("div", {
+    }), b && (0, t.jsx)("div", {
       className: m.alignedRightContent,
       children: (0, t.jsx)(v, {
         icon: (0, t.jsx)(r.h_8, {

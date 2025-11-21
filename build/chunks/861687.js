@@ -512,6 +512,7 @@ class eN extends Chunk47770.Z {
           noise_canceller_error: this._noiseCancellationError,
           automatic_gain_control_enabled: i.automaticGainControl,
           voice_output_volume: i.outputVolume,
+          voice_input_volume: i.inputVolume,
           encryption_mode: this._encryptionMode,
           channel_count: this.channelIds.size,
           device_performance_class: (0, v.Z)(),

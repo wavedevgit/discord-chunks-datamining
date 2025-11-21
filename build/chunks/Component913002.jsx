@@ -95,7 +95,7 @@ function I(e) {
       targetElementRef: b,
       text: h.intl.string(h.t.bt75uw),
       delay: S,
-      "aria-label": false,
+      ariaHidden: true,
       children: (0, r.jsx)(f.zx, {
         ref: b,
         className: o()(m.button, m.left),
@@ -111,7 +111,7 @@ function I(e) {
       asContainer: true,
       text: h.intl.string(h.t.VkKicb),
       delay: S,
-      "aria-label": false,
+      ariaHidden: true,
       children: (0, r.jsx)(f.zx, {
         ref: y,
         className: o()(m.button, m.right),

@@ -27,11 +27,11 @@ function h(e) {
   } = e, {
     ref: v,
     width: C
-  } = (0, o.ZP)(), j = (0, d.oR)(), {
-    analyticsLocations: b
+  } = (0, o.ZP)(), b = (0, d.oR)(), {
+    analyticsLocations: j
   } = (0, r.ZP)(), k = i.useRef(null), {
     handleScroll: Z
-  } = (0, _.I)(k, j, b), [S, N] = i.useMemo(() => {
+  } = (0, f.I)(k, b, j), [S, N] = i.useMemo(() => {
     if ((null == m ? true : m.skuIds) == null || (null == m ? true : m.skuIds.length) === 0) return [
       [],
       []
@@ -49,22 +49,22 @@ function h(e) {
       pageTitle: t,
       isUserGuildMember: i,
       pageHasLeaderboard: a
-    } = j;
-    s.default.track(I.rMx.SLAYER_SHOP_VIEWED, {
+    } = b;
+    s.default.track(_.rMx.SLAYER_SHOP_VIEWED, {
       slayer_shop_session_id: e,
       guild_id: n,
       page_index: l,
       page_title: t,
       is_user_guild_member: i,
       page_has_leaderboard: a,
-      location_stack: b
+      location_stack: j
     })
-  }, [j, b]), null == m) ? null : (0, t.jsx)(a.h21, {
+  }, [b, j]), null == m) ? null : (0, t.jsx)(a.h21, {
     ref: k,
     onScroll: Z,
     children: (0, t.jsxs)("section", {
       ref: v,
-      className: f.container,
+      className: I.container,
       children: [(0, t.jsx)(g.n, {
         applicationId: h,
         backgroundImageAssetId: null == (n = m.leaderboard) ? true : n.backgroundImageAssetId

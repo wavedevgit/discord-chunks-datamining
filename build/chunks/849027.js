@@ -28,7 +28,7 @@ async function v(e) {
     guildId: t,
     channelId: n
   } = e, v = g.Z.getGuild(t), I = m.Z.getUnsafeMutableRoles(t);
-  if (null == v && t !== y.ME) returnfalse;
+  if (null == v && t !== y.ME && n !== O.oC.GAME_SHOP) returnfalse;
   if (null == n) returntrue;
   if ((0, O.AB)(n)) switch (n) {
     case O.oC.ROLE_SUBSCRIPTIONS:
@@ -36,7 +36,9 @@ async function v(e) {
     case O.oC.SERVER_MONETIZATION_ONBOARDING:
       return null != v && (0, u.U)(v);
     case O.oC.GAME_SHOP:
-      return (0, _.wK)(v);
+      return (0, _.wK)(null != v ? v : {
+        id: t
+      });
     case O.oC.GUILD_SHOP:
       return (0, i.r)(v, I);
     case O.oC.MEMBER_APPLICATIONS:
