@@ -2,7 +2,7 @@
 /** chunk id: 80721, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   MT: () => s,
-  r1: () => a
+  cD: () => a
 });
 var Chunk544891 = require("./544891.js");
 require("./504518.js");
@@ -16,7 +16,10 @@ async function s(e) {
 async function a(e, t) {
   try {
     return await n.tn.post({
-      url: i.ANM.BILLING_SUBSCRIPTION_INVITE(e, t),
+      url: i.ANM.BILLING_SUBSCRIPTION_INVITES(e),
+      body: {
+        user_ids: t
+      },
       rejectWithError: true
     })
   } catch (e) {}

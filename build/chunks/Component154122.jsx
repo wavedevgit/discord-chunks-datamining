@@ -1,7 +1,7 @@
 /** Chunk was on 86948 **/
 /** chunk id: 154122, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  J: () => m
+  J: () => b
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,14 +15,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk606097 = require("./606097.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk456577 = require("./456577.js");
-let m = e => {
+let b = e => {
   let {
     recipient: t,
     isSuccess: r,
     onClose: i
   } = e, {
-    avatarSrc: m,
-    eventHandlers: b
+    avatarSrc: b,
+    eventHandlers: m
   } = (0, c.Z)({
     userId: null == t ? true : t.id,
     size: a.EFr.SIZE_56
@@ -50,10 +50,10 @@ let m = e => {
       imageClassName: s()({
         [f.erroredAvatar]: h
       }),
-      src: m,
+      src: b,
       "aria-label": y,
       size: a.EFr.SIZE_32
-    }, b)), h ? (0, n.jsxs)(n.Fragment, {
+    }, m)), h ? (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(a.Text, {
         className: f.error,
         variant: "text-md/medium",
