@@ -59,7 +59,7 @@ function _(e) {
     title: p.intl.string(p.t["dAfGb+"]),
     buttonText: p.intl.string(p.t["uJWIj/"]),
     onButtonClick: v,
-    image: (0, r.jsx)(l.Om, {
+    image: (0, r.jsx)(l.dQ, {
       alt: p.intl.string(p.t["dAfGb+"])
     })
   }) : (0, r.jsx)(u.Z, {

@@ -203,7 +203,7 @@ let eO = e => {
           title: eh.intl.string(eh.t.Thb5MO),
           body: eh.intl.string(eh.t.kGvgwS),
           position: "left",
-          asset: (0, r.jsx)(h.$K, {
+          asset: (0, r.jsx)(h._N, {
             size: 32,
             alt: eh.intl.string(eh.t["4LohBA"])
           }),

@@ -69,7 +69,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk91394 = require("./91394.js"),
   Chunk209672 = require("./209672.js"),
   Chunk926262 = require("./926262.js"),
-  Chunk276389 = require("./276389.js"),
+  Chunk57794 = require("./57794.js"),
   Chunk448360 = require("./448360.js"),
   Chunk253636 = require("./253636.js"),
   Chunk371435 = require("./371435.js"),
@@ -424,7 +424,7 @@ let ey = () => {
       onCtaClick: eB,
       canReveal: eR,
       dismissibleContentType: Chunk704215.z.DISPLAY_NAME_STYLES_NITRO_HOME_TILE,
-      perkImage: Chunk276389.Z,
+      perkImage: Chunk57794.Z,
       pillText: Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase()
     },
     recurring3PPromotions: {

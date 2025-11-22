@@ -36,7 +36,7 @@ function _(e) {
       })
     }), (0, r.jsxs)("div", {
       className: p.content,
-      children: [(0, r.jsx)(a.fX, {
+      children: [(0, r.jsx)(a.SM, {
         alt: ""
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
@@ -67,7 +67,7 @@ function _(e) {
       })
     }), (0, r.jsxs)("div", {
       className: p.content,
-      children: [(0, r.jsx)(a.fX, {
+      children: [(0, r.jsx)(a.SM, {
         alt: ""
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
