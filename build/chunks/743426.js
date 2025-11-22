@@ -671,19 +671,18 @@ class I extends Chunk47770.Z {
 }
 
 function T(e) {
-  let t = 9e5,
-    n = false;
-  e.on(s.aB.Destroy, () => n = true);
-  let r = async () => {
-    if (n) return;
-    let i = (0, d.zS)(),
-      a = await new Promise(e => {
+  let t = false;
+  e.on(s.aB.Destroy, () => t = true);
+  let n = async () => {
+    if (t) return;
+    let r = (0, d.zS)(),
+      i = await new Promise(e => {
         var t;
-        null == (t = i.pollQueueMetrics) || t.call(i, t => {
+        null == (t = r.pollQueueMetrics) || t.call(r, t => {
           e(t)
         })
       });
-    a.periodMs = t, e.emit(s.aB.VoiceQueueMetrics, a), setTimeout(r, t)
+    i.periodMs = p.rp, e.emit(s.aB.VoiceQueueMetrics, i), setTimeout(n, p.rp)
   };
-  setTimeout(r, t)
+  setTimeout(n, p.rp)
 }

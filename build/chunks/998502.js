@@ -708,6 +708,12 @@ let q = {
       } = this.getDiscordUtils();
       null != module && module()
     },
+    pollQueueMetrics(e) {
+      let {
+        pollQueueMetrics: t
+      } = this.getDiscordUtils();
+      null != t && t(e)
+    },
     asyncify: e => new Promise((t, n) => {
       e(t)
     }),
