@@ -499,16 +499,16 @@ function ec(e) {
     f = (0, c.e7)([A.Z], () => null != r && A.Z.didAgree(r)),
     g = null != o && o.isPrivate() ? o.getRecipientId() : null,
     m = (0, c.e7)([N.Z], () => null != s ? N.Z.getPendingReply(s) : true),
-    v = (0, c.e7)([W.default], () => null != g ? W.default.getUser(g) : null),
+    _ = (0, c.e7)([W.default], () => null != g ? W.default.getUser(g) : null),
     {
-      placeholder: _
+      placeholder: v
     } = (0, y.Z)({
       channel: o
     });
   return null != o && null != p && Q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(b.Z, {}) : (0, i.jsx)(ea, ei({
     guild: p,
     channel: o,
-    user: v,
+    user: _,
     opacity: d,
     nsfwAgree: f,
     chatKeybind: a,
@@ -516,7 +516,7 @@ function ec(e) {
     isPreviewingInGame: h,
     pendingReply: m,
     contained: t,
-    placeholder: _,
+    placeholder: v,
     widget: Q.Odu.TEXT
   }, n))
 }

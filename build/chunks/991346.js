@@ -22,7 +22,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk631885 = require("./631885.js"),
   Chunk160913 = require("./160913.js"),
   Chunk725727 = require("./725727.js"),
-  Chunk977156 = require("./977156.js"),
+  Chunk787695 = require("./787695.js"),
   Chunk921157 = require("./921157.js"),
   Chunk945577 = require("./945577.js"),
   Chunk667172 = require("./667172.js"),
@@ -43,7 +43,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk168308 = require("./168308.js"),
   Chunk839469 = require("./839469.js"),
   Chunk726985 = require("./726985.js"),
-  Chunk46140 = require("./46140.js"),
+  Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx");
 
 function B(e, t, n) {
@@ -170,8 +170,8 @@ function W() {
       location: "settings"
     }),
     K = (0, Chunk211242.Q)(),
-    z = (0, Chunk977156.Z)({
-      location: Chunk46140.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
+    z = (0, Chunk787695.Z)({
+      location: Chunk324805.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
     }),
     q = (0, Chunk442837.e7)([Chunk283595.Z], () => Chunk283595.Z.hasLibraryApplication()),
     X = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.hasTOTPEnabled()),

@@ -1,4 +1,4 @@
-/** Chunk was on 50433 **/
+/** Chunk was on 83615 **/
 /** chunk id: 623249, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => O,
@@ -17,12 +17,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk210887 = require("./210887.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
+  Chunk313481 = require("./313481.js"),
+  Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk113434 = require("./113434.js"),
-  Chunk497505 = require("./497505.js"),
   Chunk475595 = require("./475595.js"),
   Chunk602667 = require("./602667.jsx"),
-  Chunk667105 = require("./667105.jsx"),
+  Chunk659302 = require("./659302.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk301889 = require("./301889.js");
@@ -35,18 +35,18 @@ function O(e) {
     transitionState: j,
     onClose: O,
     sourceQuestContent: T
-  } = e, [w, P] = (0, s.useState)(o), N = (0, x.KX)(), A = (0, g.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, v.g2)({
+  } = e, [w, P] = (0, s.useState)(o), N = (0, h.KX)(), A = (0, g.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, v.g2)({
     useReducedMotion: B,
     className: E.colorTransition
-  }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, h.Bz)(n), q = (0, l.e7)([m.Z], () => m.Z.getState().theme), L = (0, d.wj)(q) ? C.BRd.DARK : C.BRd.LIGHT, {
+  }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, _.Bz)(n), q = (0, l.e7)([m.Z], () => m.Z.getState().theme), L = (0, d.wj)(q) ? C.BRd.DARK : C.BRd.LIGHT, {
     startConsoleQuest: Q,
     startingConsoleQuest: V
-  } = (0, x.GI)({
+  } = (0, h.GI)({
     questId: n.id,
     beforeRequest: () => {
       k.startAnimation(), A({
         questId: n.id,
-        questContent: b.jn.CONNECTIONS_MODAL,
+        questContent: x.jn.CONNECTIONS_MODAL,
         questContentCTA: g.jZ.DEFIBRILLATOR,
         sourceQuestContent: T
       })
@@ -62,10 +62,10 @@ function O(e) {
     subtitle: N.message,
     actions: [{
       variant: "secondary",
-      onClick: () => void(O(), (0, h.V$)({
+      onClick: () => void(O(), (0, _.V$)({
         quest: n
       }, {
-        content: b.jn.CONNECTIONS_MODAL,
+        content: x.jn.CONNECTIONS_MODAL,
         ctaContent: g.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
         impressionId: R,
         sourceQuestContent: T
@@ -124,7 +124,7 @@ function O(e) {
             children: (0, r.jsx)("img", {
               className: E.gameTile,
               alt: n.config.messages.gameTitle,
-              src: (0, _.fh)(n, _.eC.GAME_TILE, L).url
+              src: (0, b.fh)(n, b.eC.GAME_TILE, L).url
             })
           }) : null
         })]
@@ -191,7 +191,7 @@ function T(e) {
       return (0, r.jsx)(j.A, {
         overrideVisibility: true,
         questOrQuests: e.quest,
-        questContent: b.jn.CONNECTIONS_MODAL,
+        questContent: x.jn.CONNECTIONS_MODAL,
         sourceQuestContent: e.sourceQuestContent,
         children: () => (0, r.jsx)(t, function(e) {
           for (var t = 1; t < arguments.length; t++) {

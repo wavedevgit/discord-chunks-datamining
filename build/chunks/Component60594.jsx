@@ -239,10 +239,10 @@ function eo(e) {
     e4 = i.useCallback(e => {
       (0, F.t)(), (0, F.T)(null != e ? e : e1)
     }, [e1]),
-    e8 = i.useCallback(e => {
+    e7 = i.useCallback(e => {
       eL(e), null != e && (eO && (null == e ? true : e.id.startsWith("camera:")) !== true ? e0(e.id.split(":")[1]) : e0(true), eN(3), eR(true))
     }, [eO]),
-    e7 = i.useCallback(e => {
+    e8 = i.useCallback(e => {
       eQ(e);
       eN(K ? 2 : 3)
     }, [K]),
@@ -400,7 +400,7 @@ function eo(e) {
             children: (0, r.jsx)("div", {
               className: en.modalSize,
               children: (0, r.jsx)(z.Z, {
-                onSelectGuild: e7
+                onSelectGuild: e8
               })
             })
           }), (0, r.jsx)(m.Mi4, {
@@ -408,11 +408,11 @@ function eo(e) {
             children: (0, r.jsx)("div", {
               className: en.modalSize,
               children: eO ? (0, r.jsx)(J.se, {
-                onSourceSelect: e8,
+                onSourceSelect: e7,
                 selectedSource: eD
               }) : (0, r.jsx)(J.oA, {
                 selectedSource: eD,
-                onChangeSelectedSource: e8
+                onChangeSelectedSource: e7
               })
             })
           }), (0, r.jsx)(m.Mi4, {
@@ -433,7 +433,7 @@ function eo(e) {
                 onChangeSelectedResolution: e => e3(eU, e, eV),
                 onChangeSelectedPreset: e => e3(e, eH, eV),
                 onChangeSelectedChannelId: ek,
-                onChangeSelectedSource: e8,
+                onChangeSelectedSource: e7,
                 onChangeSource: () => tt(),
                 onChangeAudioDevice: e => eG(e),
                 onChangeGuild: () => eN(0),

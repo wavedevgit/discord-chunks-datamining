@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk342386 = require("./342386.js"),
   Chunk626135 = require("./626135.js"),
   Chunk617136 = require("./617136.js"),
-  Chunk497505 = require("./497505.js"),
+  Chunk49436 = require("./49436.js"),
   Chunk110560 = require("./110560.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -50,12 +50,12 @@ function O() {
     }), []),
     n = Chunk473749.useCallback(() => {
       (0, Chunk342386.default)(), (0, Chunk110560.navigateToQuestHome)({
-        fromContent: Chunk497505.jn.QUEST_HOME_MOVE_CALLOUT
+        fromContent: Chunk49436.jn.QUEST_HOME_MOVE_CALLOUT
       }), Chunk626135.default.track(Chunk981631.rMx.QUEST_CONTENT_CLICKED, b({
         cta_name: Chunk617136.jZ.VIEW_QUESTS,
         click_id: (0, Chunk772848.Z)(),
         is_targeted: false
-      }, (0, Chunk617136.mH)(Chunk497505.jn.QUEST_HOME_MOVE_CALLOUT)))
+      }, (0, Chunk617136.mH)(Chunk49436.jn.QUEST_HOME_MOVE_CALLOUT)))
     }, []);
   return (0, Chunk54381.jsx)("div", {
     className: Chunk154115.container,

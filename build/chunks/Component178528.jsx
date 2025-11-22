@@ -233,7 +233,7 @@ function z(e) {
   var t;
   let {
     guildId: n
-  } = e, r = (0, o.e7)([E.Z], () => E.Z.getGuild(n)), s = (0, o.e7)([_.ZP], () => _.ZP.getChannels(n)), l = (0, o.e7)([v.Z], () => v.Z.getCategories(n)), {
+  } = e, r = (0, o.e7)([E.Z], () => E.Z.getGuild(n)), s = (0, o.e7)([v.ZP], () => v.ZP.getChannels(n)), l = (0, o.e7)([_.Z], () => _.Z.getCategories(n)), {
     mutedChannels: d,
     collapseMuted: u
   } = (0, o.cj)([C.ZP], () => ({

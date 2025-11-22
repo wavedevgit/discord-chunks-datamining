@@ -1,5 +1,5 @@
-/** Chunk was on 76334 **/
-/** chunk id: 63602, original params: e,i,t (module,exports,require) **/
+/** Chunk was on 81500 **/
+/** chunk id: 63602, original params: e,t,n (module,exports,require) **/
 module.exports = {
   card: "card__20585",
   cardBackgroundImage: "cardBackgroundImage__20585",

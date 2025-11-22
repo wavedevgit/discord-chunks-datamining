@@ -1,5 +1,5 @@
-/** Chunk was on 83175 **/
-/** chunk id: 968435, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 10349 **/
+/** chunk id: 968435, original params: e,n,a (module,exports,require) **/
 require.d(exports, {
   Z: () => i
 });
@@ -10,16 +10,16 @@ var Chunk70097 = require("./70097.jsx"),
 let i = function(e) {
   let {
     quest: n,
-    dimensions: t,
+    dimensions: a,
     className: i,
     assetRef: s
-  } = e, l = (0, r.fh)(n, r.eC.HERO_IMAGE), d = null != t ? (0, r.nK)(t.width, t.height) : true, c = (0, r.f0)(l.url, d);
-  return null != c ? (0, a.jsx)("img", {
+  } = e, l = (0, r.fh)(n, r.eC.HERO_IMAGE), d = null != a ? (0, r.nK)(a.width, a.height) : true, c = (0, r.f0)(l.url, d);
+  return null != c ? (0, t.jsx)("img", {
     ref: s,
     src: c,
     alt: n.config.messages.questName,
     className: i
-  }) : l.isAnimated ? (0, a.jsx)(o.Z, {
+  }) : l.isAnimated ? (0, t.jsx)(o.Z, {
     ref: s,
     className: i,
     autoPlay: false,

@@ -53,7 +53,7 @@ class E extends Chunk473749.Component {
     } = this.props;
     if (null != t && (t !== e.selectedGuild || i && !e.isMemberPending)) {
       var u, h;
-      (0, c.Q)(_.rMx.GUILD_VIEWED, (u = O({}, i ? {
+      (0, c.Q)(v.rMx.GUILD_VIEWED, (u = O({}, i ? {
         is_pending: i,
         preview_enabled: r
       } : {}), h = h = {
@@ -67,13 +67,13 @@ class E extends Chunk473749.Component {
         return n
       })(Object(h)).forEach(function(e) {
         Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(h, e))
-      }), u)), (0, a.a)(_.rMx.GUILD_VIEWED_CLICKSTREAM, {
+      }), u)), (0, a.a)(v.rMx.GUILD_VIEWED_CLICKSTREAM, {
         guildId: t
       })
     }
     if (null != n && n !== e.selectedChannel) {
       let e = (0, l.K)(d.Z.getChannel(n), true);
-      (0, c.Q)(_.rMx.CHANNEL_OPENED, O({}, e, (0, o.$H)(n))), (0, a.a)(_.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      (0, c.Q)(v.rMx.CHANNEL_OPENED, O({}, e, (0, o.$H)(n))), (0, a.a)(v.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: n
       })
     }
@@ -93,7 +93,7 @@ let x = Chunk442837.ZP.connectStores([Chunk914010.Z, Chunk944486.Z, Chunk430824.
       let {
         channel: t
       } = e;
-      return f.Z.can(r.$e(_.Plq.SEND_MESSAGES, _.Plq.VIEW_CHANNEL), t)
+      return f.Z.can(r.$e(v.Plq.SEND_MESSAGES, v.Plq.VIEW_CHANNEL), t)
     }).length : 0,
     d = null != Chunk731429 && null != Chunk473749 && null != (n = null == (e = Chunk271383.ZP.getMember(Chunk473749, Chunk731429.id)) ? true : module.isPending) && require;
   return {

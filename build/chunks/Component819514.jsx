@@ -1,12 +1,12 @@
-/** Chunk was on 79531 **/
+/** Chunk was on 81500 **/
 /** chunk id: 819514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => w
 }), require("./997841.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk95015 = require("./95015.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk342153 = require("./342153.js"),
   Chunk625221 = require("./625221.js");
 
-function I(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,60 +35,60 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      I(e, t, n[t])
+    }))), r.forEach(function(t) {
+      C(e, t, n[t])
     })
   }
   return e
 }
 
-function _(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class w extends Chunk473749.PureComponent {
+class Z extends Chunk473749.PureComponent {
   render() {
     let e, t, {
         report: n,
-        resolveFlag: r
+        resolveFlag: i
       } = this.state,
-      l = this.props,
+      a = this.props,
       {
-        channel: s,
+        channel: o,
         message: d,
         showContextMenuHint: u,
         moderatorReportData: p
       } = Chunk120356,
       f = function(e, t) {
         if (null == e) return {};
-        var n, i, r = function(e, t) {
+        var n, r, i = function(e, t) {
           if (null == e) return {};
-          var n, i, r = {},
-            l = Object.keys(e);
-          for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-          return r
+          var n, r, i = {},
+            a = Object.keys(e);
+          for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e);
-          for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+          var a = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
-        return r
+        return i
       }(Chunk120356, ["channel", "message", "showContextMenuHint", "moderatorReportData"]),
-      m = s.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && (0, Chunk95015.yE)(Chunk332148.flags, Chunk981631.iLy.CROSSPOSTED);
+      m = o.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && (0, Chunk95015.yE)(Chunk332148.flags, Chunk981631.iLy.CROSSPOSTED);
     Chunk904245 && (e = (0, Chunk54381.jsx)(Chunk576855.Z, {
       className: Chunk625221.spacingTop,
       children: Chunk388032.intl.format(Chunk388032.t.IxY7E6, {})
@@ -100,12 +100,12 @@ class w extends Chunk473749.PureComponent {
         onChange: this.handleToggleReport
       })
     }));
-    let b = Chunk501517 ? Chunk388032.intl.string(Chunk388032.t["2kHABX"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS4),
+    let g = Chunk501517 ? Chunk388032.intl.string(Chunk388032.t["2kHABX"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS4),
       j = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)("div", {
           className: Chunk625221.message,
           children: (0, Chunk54381.jsx)(Chunk294218.Z, {
-            channel: s,
+            channel: o,
             message: Chunk332148,
             disableInteraction: true
           })
@@ -116,8 +116,8 @@ class w extends Chunk473749.PureComponent {
         isFlagResolved: e
       } = Chunk933557;
       return (0, Chunk54381.jsx)(Chunk372900.Z.Provider, {
-        value: s.guild_id,
-        children: (0, Chunk54381.jsx)(Chunk793030.Modal, _(P({
+        value: o.guild_id,
+        children: (0, Chunk54381.jsx)(Chunk793030.Modal, S(k({
           title: Chunk388032.intl.string(Chunk388032.t.MWMcg7),
           subtitle: Chunk699516,
           actions: [{
@@ -136,7 +136,7 @@ class w extends Chunk473749.PureComponent {
       })
     }
     return (0, Chunk54381.jsx)(Chunk372900.Z.Provider, {
-      value: s.guild_id,
+      value: o.guild_id,
       children: (0, Chunk54381.jsx)(Chunk793030.Modal, {
         title: Chunk501517 ? Chunk388032.intl.string(Chunk388032.t.aIz1oV) : Chunk388032.intl.string(Chunk388032.t.MWMcg7),
         subtitle: Chunk699516,
@@ -156,72 +156,72 @@ class w extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), I(this, "state", {
+    super(...e), C(this, "state", {
       report: false,
       resolveFlag: false
-    }), I(this, "handleDelete", () => {
+    }), C(this, "handleDelete", () => {
       let {
         report: e,
         resolveFlag: t
       } = this.state, {
         channel: n,
-        message: i,
-        moderatorReportData: r
+        message: r,
+        moderatorReportData: i
       } = this.props, {
-        moderatorReportChannelId: l,
-        isFlagResolved: s
-      } = null != r ? r : {};
-      e ? (0, f.ak)(i, "message_delete_alert", () => u.Z.deleteMessage(n.id, i.id).then(() => {
-        if (null != l) {
+        moderatorReportChannelId: a,
+        isFlagResolved: o
+      } = null != i ? i : {};
+      e ? (0, f.ak)(r, "message_delete_alert", () => u.Z.deleteMessage(n.id, r.id).then(() => {
+        if (null != a) {
           var e, n;
-          t && !s && m.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !o && m.Z.resolveFlag(a), null == (e = (n = this.props).onClose) || e.call(n)
         }
-      })) : u.Z.deleteMessage(n.id, i.id).then(() => {
-        if (null != l) {
+      })) : u.Z.deleteMessage(n.id, r.id).then(() => {
+        if (null != a) {
           var e, n;
-          t && !s && m.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !o && m.Z.resolveFlag(a), null == (e = (n = this.props).onClose) || e.call(n)
         }
       })
-    }), I(this, "handleDeleteMana", () => {
+    }), C(this, "handleDeleteMana", () => {
       var e, t;
       this.handleDelete(), null == (e = (t = this.props).onClose) || e.call(t)
-    }), I(this, "handleToggleReport", e => {
+    }), C(this, "handleToggleReport", e => {
       this.setState({
         report: e
       })
-    }), I(this, "handleToggleResolveFlag", e => {
+    }), C(this, "handleToggleResolveFlag", e => {
       this.setState({
         resolveFlag: e
       })
     })
   }
 }
-let M = {
+let w = {
   confirmPin: function(e, t) {
     (0, c.h7j)(n => {
-      let r, l = (0, p.F6)(e, j.default, b.Z);
-      return r = e.isPrivate() ? O.intl.string(O.t.hMRngA) : O.intl.formatToPlainString(O.t["3IRluI"], {
-        channelName: l
-      }), (0, i.jsx)(g.Z.Provider, {
+      let i, a = (0, p.F6)(e, j.default, g.Z);
+      return i = e.isPrivate() ? x.intl.string(x.t.hMRngA) : x.intl.formatToPlainString(x.t["3IRluI"], {
+        channelName: a
+      }), (0, r.jsx)(b.Z.Provider, {
         value: e.guild_id,
-        children: (0, i.jsx)(o.Modal, _(P({
-          title: O.intl.string(O.t.bKMaZX),
-          subtitle: r,
+        children: (0, r.jsx)(s.Modal, S(k({
+          title: x.intl.string(x.t.bKMaZX),
+          subtitle: i,
           actions: [{
             variant: "secondary",
-            text: O.intl.string(O.t["ETE/oC"]),
+            text: x.intl.string(x.t["ETE/oC"]),
             onClick: n.onClose
           }, {
             variant: "primary",
-            text: O.intl.string(O.t.rOQ5BX),
+            text: x.intl.string(x.t.rOQ5BX),
             onClick: () => {
               d.Z.pinMessage(e, t.id), n.onClose()
             }
           }]
         }, n), {
-          children: (0, i.jsx)("div", {
-            className: E.message,
-            children: (0, i.jsx)(v.Z, {
+          children: (0, r.jsx)("div", {
+            className: P.message,
+            children: (0, r.jsx)(_.Z, {
               channel: e,
               message: t,
               animateAvatar: false,
@@ -233,65 +233,65 @@ let M = {
     })
   },
   confirmUnpin: function(e, t) {
-    (0, c.h7j)(n => (0, i.jsx)(g.Z.Provider, {
+    (0, c.h7j)(n => (0, r.jsx)(b.Z.Provider, {
       value: e.guild_id,
-      children: (0, i.jsxs)(o.Modal, _(P({
-        title: O.intl.string(O.t.CFF2vL),
-        subtitle: O.intl.string(O.t.NjEPp7),
+      children: (0, r.jsxs)(s.Modal, S(k({
+        title: x.intl.string(x.t.CFF2vL),
+        subtitle: x.intl.string(x.t.NjEPp7),
         actions: [{
           variant: "secondary",
-          text: O.intl.string(O.t["ETE/oC"]),
+          text: x.intl.string(x.t["ETE/oC"]),
           onClick: n.onClose
         }, {
           variant: "critical-primary",
-          text: O.intl.string(O.t.lAU5jB),
+          text: x.intl.string(x.t.lAU5jB),
           onClick: () => {
             d.Z.unpinMessage(e, t.id), n.onClose()
           }
         }]
       }, n), {
-        children: [(0, i.jsx)("div", {
-          className: s()(E.message, E.spacing),
-          children: (0, i.jsx)(v.Z, {
+        children: [(0, r.jsx)("div", {
+          className: o()(P.message, P.spacing),
+          children: (0, r.jsx)(_.Z, {
             channel: e,
             message: t,
             disableInteraction: true
           })
-        }), (0, i.jsx)(h.Z, {
-          children: O.intl.format(O.t.oCVB3Y, {})
+        }), (0, r.jsx)(h.Z, {
+          children: x.intl.format(x.t.oCVB3Y, {})
         })]
       }))
     }))
   },
   confirmDelete: function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-      r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : true;
-    (0, c.h7j)(l => (0, i.jsx)(w, P({
+      i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : true;
+    (0, c.h7j)(a => (0, r.jsx)(Z, k({
       channel: e,
       message: t,
       showContextMenuHint: n,
-      moderatorReportData: r
-    }, l)))
+      moderatorReportData: i
+    }, a)))
   },
   confirmEdit: function(e, t, n) {
-    (0, c.h7j)(r => (0, i.jsx)(o.Modal, _(P({
-      title: O.intl.string(O.t.aIz1oV),
+    (0, c.h7j)(i => (0, r.jsx)(s.Modal, S(k({
+      title: x.intl.string(x.t.aIz1oV),
       actions: [{
         variant: "secondary",
-        text: O.intl.string(O.t["ETE/oC"]),
-        onClick: r.onClose
+        text: x.intl.string(x.t["ETE/oC"]),
+        onClick: i.onClose
       }, {
         variant: "primary",
-        text: O.intl.string(O.t["cY+Oob"]),
+        text: x.intl.string(x.t["cY+Oob"]),
         onClick: () => {
-          u.Z.editMessage(e, t, n), r.onClose()
+          u.Z.editMessage(e, t, n), i.onClose()
         }
       }]
-    }, r), {
-      children: (0, i.jsx)(c.Text, {
+    }, i), {
+      children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: E.spacing,
-        children: O.intl.string(O.t.grBcM8)
+        className: P.spacing,
+        children: x.intl.string(x.t.grBcM8)
       })
     })))
   }

@@ -12,8 +12,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk228488 = require("./228488.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
+  Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk497505 = require("./497505.js"),
   Chunk184299 = require("./184299.js"),
   Chunk720293 = require("./720293.js"),
   Chunk602667 = require("./602667.jsx"),
@@ -30,7 +30,7 @@ function S(e) {
   } = e, l = o.useMemo(() => (0, v.z0)(t, a.X.WATCH_VIDEO, v.n1.VIDEO, v.O.THUMBNAIL), [t]);
   return null == l ? null : (0, r.jsx)(E.A, {
     questOrQuests: t,
-    questContent: f.jn.VIDEO_MODAL_END_CARD,
+    questContent: m.jn.VIDEO_MODAL_END_CARD,
     sourceQuestContent: n,
     children: e => (0, r.jsx)("img", {
       ref: t => {
@@ -115,7 +115,7 @@ function _(e) {
     title: R,
     subtitle: I
   } = {
-    title: (0, m.B2)(_),
+    title: (0, f.B2)(_),
     subtitle: null != (t = _.ctaConfig.subtitle) ? t : b.intl.string(b.t.mxaHfx)
   };
   return (0, r.jsxs)(r.Fragment, {
@@ -129,7 +129,7 @@ function _(e) {
       subtitle: I,
       icon: s.d4D,
       className: C.endScreenPanelRight,
-      onClick: () => T(f.jn.VIDEO_MODAL)
+      onClick: () => T(m.jn.VIDEO_MODAL)
     })]
   })
 }

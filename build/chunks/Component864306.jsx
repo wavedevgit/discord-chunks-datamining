@@ -6,16 +6,16 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk497505 = require("./497505.js"),
-  Chunk543433 = require("./543433.jsx"),
-  Chunk46140 = require("./46140.js"),
+var Chunk49436 = require("./49436.js"),
+  Chunk381963 = require("./381963.jsx"),
+  Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx");
 
 function l(e) {
   let {
     questId: t
   } = e;
-  return (0, r.jsx)(a.w, {
+  return (0, r.jsx)(a.S, {
     questId: t,
     fallbackReason: o.V_.NOT_SHAREABLE_QUEST,
     bodyText: s.intl.string(s.t.Rw9rwW),

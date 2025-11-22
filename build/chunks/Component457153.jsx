@@ -1,4 +1,4 @@
-/** Chunk was on 50433 **/
+/** Chunk was on 83615 **/
 /** chunk id: 457153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -8,8 +8,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk790519 = require("./790519.js"),
-  Chunk113434 = require("./113434.js"),
-  Chunk497505 = require("./497505.js"),
+  Chunk313481 = require("./313481.js"),
+  Chunk49436 = require("./49436.js"),
   Chunk164495 = require("./164495.jsx"),
   Chunk759853 = require("./759853.jsx"),
   Chunk95985 = require("./95985.jsx"),
@@ -21,8 +21,8 @@ let h = Chunk473749.forwardRef(function(e, t) {
   let {
     className: h,
     expansionSpring: x,
-    isExpanded: b,
-    isExpansionAnimationComplete: _,
+    isExpanded: _,
+    isExpansionAnimationComplete: b,
     quest: j,
     taskDetails: v,
     useReducedMotion: C,
@@ -37,13 +37,13 @@ let h = Chunk473749.forwardRef(function(e, t) {
       overlayRef: S,
       progressBarRef: P,
       quest: j,
-      isExpanded: b,
+      isExpanded: _,
       isHovered: R
     }), (0, r.jsx)(i.animated.div, {
       ref: t,
-      "aria-hidden": b && _,
+      "aria-hidden": _ && b,
       className: a()(h, f.contentCollapsed, {
-        [f.contentCollapsedExpanded]: b,
+        [f.contentCollapsedExpanded]: _,
         [f.contentCollapsedAccepted]: N
       }),
       style: {

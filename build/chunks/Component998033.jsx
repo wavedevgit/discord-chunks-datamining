@@ -22,9 +22,9 @@ var Chunk13245 = require("./13245.js"),
   Chunk388032 = require("./388032.jsx");
 
 function b(e, t, n, b) {
-  var v;
+  var _;
   let {
-    icon: _,
+    icon: v,
     title: O,
     body: E
   } = (0, s.Xi)(e, t, n), {
@@ -32,7 +32,7 @@ function b(e, t, n, b) {
     trackClick: S
   } = (0, f.R)(m.n0.TextChat, {
     notif_type: m.n0.TextChat,
-    notif_user_id: null == (v = t.author) ? true : v.id,
+    notif_user_id: null == (_ = t.author) ? true : _.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -40,7 +40,7 @@ function b(e, t, n, b) {
     channel_type: e.type
   });
   return {
-    icon: _,
+    icon: v,
     title: O,
     body: E,
     renderFooter: e => e ? (0, i.jsx)("div", {

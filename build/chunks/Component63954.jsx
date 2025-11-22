@@ -1,4 +1,4 @@
-/** Chunk was on 50433 **/
+/** Chunk was on 83615 **/
 /** chunk id: 63954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H,
@@ -14,10 +14,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk820827 = require("./820827.js"),
   Chunk458708 = require("./458708.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk497505 = require("./497505.js"),
+  Chunk455357 = require("./455357.jsx"),
   Chunk210724 = require("./210724.jsx"),
   Chunk130653 = require("./130653.jsx"),
+  Chunk801604 = require("./801604.jsx"),
   Chunk415104 = require("./415104.jsx"),
   Chunk478977 = require("./478977.jsx"),
   Chunk456799 = require("./456799.jsx"),
@@ -28,9 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk815183 = require("./815183.jsx"),
   Chunk899457 = require("./899457.jsx"),
   Chunk110560 = require("./110560.jsx"),
-  Chunk78826 = require("./78826.jsx"),
-  Chunk134483 = require("./134483.jsx"),
-  Chunk683650 = require("./683650.jsx"),
+  Chunk429999 = require("./429999.jsx"),
   Chunk752367 = require("./752367.jsx"),
   Chunk70956 = require("./70956.js"),
   Chunk188764 = require("./188764.js");
@@ -78,7 +78,7 @@ function Q(e) {
   return {
     code: "PREVIEW-MODE-CODE",
     tier: 0,
-    platform: g.y$.CROSS_PLATFORM,
+    platform: m.y$.CROSS_PLATFORM,
     userId: "123",
     questId: e.id,
     claimedAt: null != (n = null == (t = e.userStatus) ? true : t.claimedAt) ? n : ""
@@ -298,12 +298,12 @@ function W() {
   }
 
   function ei() {
-    (0, Chunk509212.Xv)(W.config) ? (0, Chunk110560.openQuestCollectibleRewardModal)(W, Chunk497505.jn.GIFT_INVENTORY_FOR_YOU, Chunk497505.jn.INTERNAL_PREVIEW_TOOL, true) : (0, Chunk110560.openQuestsRewardCodeModal)({
+    (0, Chunk509212.Xv)(W.config) ? (0, Chunk110560.openQuestCollectibleRewardModal)(W, Chunk49436.jn.GIFT_INVENTORY_FOR_YOU, Chunk49436.jn.INTERNAL_PREVIEW_TOOL, true) : (0, Chunk110560.openQuestsRewardCodeModal)({
       quest: W,
-      questContent: Chunk497505.jn.GIFT_INVENTORY_FOR_YOU,
+      questContent: Chunk49436.jn.GIFT_INVENTORY_FOR_YOU,
       preview: true,
       previewQuest: W,
-      sourceQuestContent: Chunk497505.jn.INTERNAL_PREVIEW_TOOL
+      sourceQuestContent: Chunk49436.jn.INTERNAL_PREVIEW_TOOL
     })
   }
   let el = Chunk473749.useMemo(() => {
@@ -325,13 +325,13 @@ function W() {
       children: (0, Chunk54381.jsx)(Chunk916028.Z, {
         onSelect: function(e) {
           $(e), null != e && (z(function(e) {
-            if (null == e.userStatus) return O.a.UNENROLLED;
-            if (null != e.userStatus.claimedAt) return O.a.CLAIMED;
-            if (null != e.userStatus.completedAt) return O.a.COMPLETED_100;
-            let t = (0, m.il)(e),
+            if (null == e.userStatus) return T.a.UNENROLLED;
+            if (null != e.userStatus.claimedAt) return T.a.CLAIMED;
+            if (null != e.userStatus.completedAt) return T.a.COMPLETED_100;
+            let t = (0, g.il)(e),
               n = t.progressSeconds,
               r = t.targetSeconds;
-            return n / r >= 1 ? O.a.COMPLETED_100 : n / r >= .75 ? O.a.COMPLETED_75 : n / r >= .5 ? O.a.COMPLETED_50 : n / r >= .25 ? O.a.COMPLETED_25 : O.a.ENROLLED
+            return n / r >= 1 ? T.a.COMPLETED_100 : n / r >= .75 ? T.a.COMPLETED_75 : n / r >= .5 ? T.a.COMPLETED_50 : n / r >= .25 ? T.a.COMPLETED_25 : T.a.ENROLLED
           }(e)), H(e))
         },
         quest: J
@@ -480,17 +480,17 @@ function W() {
         children: ["Reward #", t + 1]
       }), (0, r.jsxs)("div", {
         className: R.fields,
-        children: [(0, r.jsx)(v.Z, {
+        children: [(0, r.jsx)(y.Z, {
           title: "Name",
           assetKey: "name",
           onMessageChange: (e, n) => eo(e, n, t),
           initialValue: e.messages.name
-        }), (0, r.jsx)(v.Z, {
+        }), (0, r.jsx)(y.Z, {
           title: "Name With Article",
           assetKey: "nameWithArticle",
           onMessageChange: (e, n) => eo(e, n, t),
           initialValue: e.messages.nameWithArticle
-        }), e.type !== c.w.VIRTUAL_CURRENCY && (0, r.jsx)(j.Z, {
+        }), e.type !== c.w.VIRTUAL_CURRENCY && (0, r.jsx)(C.Z, {
           title: "Asset",
           assetKey: "asset",
           onFileChange: (e, n) => (function(e, t, n) {
@@ -553,19 +553,19 @@ function W() {
       }), (0, Chunk54381.jsx)(Chunk899457.Z, {
         onChange: function(e) {
           switch (z(e), e) {
-            case O.a.UNENROLLED:
+            case T.a.UNENROLLED:
               H(I(k({}, W), {
                 userStatus: null
               }));
               break;
-            case O.a.ENROLLED:
+            case T.a.ENROLLED:
               H(I(k({}, W), {
                 userStatus: V({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
-            case O.a.COMPLETED_25:
+            case T.a.COMPLETED_25:
               H(I(k({}, W), {
                 userStatus: V({
                   enrolledAt: new Date().toISOString(),
@@ -573,7 +573,7 @@ function W() {
                 })
               }));
               break;
-            case O.a.COMPLETED_50:
+            case T.a.COMPLETED_50:
               H(I(k({}, W), {
                 userStatus: V({
                   enrolledAt: new Date().toISOString(),
@@ -581,7 +581,7 @@ function W() {
                 })
               }));
               break;
-            case O.a.COMPLETED_75:
+            case T.a.COMPLETED_75:
               H(I(k({}, W), {
                 userStatus: V({
                   enrolledAt: new Date().toISOString(),
@@ -589,7 +589,7 @@ function W() {
                 })
               }));
               break;
-            case O.a.COMPLETED_100:
+            case T.a.COMPLETED_100:
               H(I(k({}, W), {
                 userStatus: V({
                   completedAt: new Date().toISOString(),
@@ -598,7 +598,7 @@ function W() {
                 })
               }));
               break;
-            case O.a.CLAIMED:
+            case T.a.CLAIMED:
               H(I(k({}, W), {
                 userStatus: V({
                   claimedAt: new Date().toISOString(),
@@ -630,7 +630,7 @@ function W() {
             children: "The Quest Bar is hidden when the user has claimed the reward."
           }), (0, Chunk54381.jsx)("div", {
             className: Chunk188764.questBarPreview,
-            children: (0, Chunk54381.jsx)(Chunk78826.p, {
+            children: (0, Chunk54381.jsx)(Chunk455357.x8, {
               isPreview: true,
               source: "preview",
               questId: "0",
@@ -647,17 +647,17 @@ function W() {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-sm/semibold",
           children: "Quest Home Card"
-        }), (0, Chunk54381.jsx)(Chunk78826.p, {
+        }), (0, Chunk54381.jsx)(Chunk455357.x8, {
           isPreview: true,
           source: "preview",
           questId: "0",
           children: (0, Chunk54381.jsx)(Chunk415104.Z, {
             quest: W,
             className: Chunk188764.questTile,
-            questContent: Chunk497505.jn.QUEST_HOME_DESKTOP,
+            questContent: Chunk49436.jn.QUEST_HOME_DESKTOP,
             contentPosition: 0,
             rowIndex: 0,
-            sourceQuestContent: Chunk497505.jn.INTERNAL_PREVIEW_TOOL
+            sourceQuestContent: Chunk49436.jn.INTERNAL_PREVIEW_TOOL
           })
         })]
       }), (0, Chunk54381.jsxs)(Chunk456799.Z, {
@@ -671,13 +671,13 @@ function W() {
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
         }), (0, Chunk54381.jsx)("div", {
           className: Chunk188764.questBarPreviewWrapper,
-          children: (0, Chunk54381.jsx)(Chunk78826.p, {
+          children: (0, Chunk54381.jsx)(Chunk455357.x8, {
             isPreview: true,
             source: "preview",
             questId: "0",
             children: (0, Chunk54381.jsx)("div", {
               className: Chunk188764.questChannelCallHeaderPreview,
-              children: (0, Chunk54381.jsx)(Chunk134483.Z, {
+              children: (0, Chunk54381.jsx)(Chunk801604.Z, {
                 channelId: "123",
                 previewQuest: W,
                 isParticipatingOverride: G
@@ -699,12 +699,12 @@ function W() {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-sm/semibold",
           children: "Quest Card Embed"
-        }), X ? (0, Chunk54381.jsx)(Chunk683650.o, {
+        }), X ? (0, Chunk54381.jsx)(Chunk429999.W, {
           questId: W.id
         }) : (0, Chunk54381.jsx)(Chunk752367.X, {
           quest: W,
-          location: Chunk497505.jn.QUESTS_EMBED,
-          sourceQuestContent: Chunk497505.jn.INTERNAL_PREVIEW_TOOL
+          location: Chunk49436.jn.QUESTS_EMBED,
+          sourceQuestContent: Chunk49436.jn.INTERNAL_PREVIEW_TOOL
         }, W.id)]
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk188764.toggleSwitch,
@@ -735,7 +735,7 @@ function W() {
                   questId: null != (n = W.id) ? n : "fake-quest-id",
                   overrideQuest: W,
                   autoplay: true,
-                  sourceQuestContent: g.jn.INTERNAL_PREVIEW_TOOL
+                  sourceQuestContent: m.jn.INTERNAL_PREVIEW_TOOL
                 }))
               }
             })

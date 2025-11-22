@@ -122,7 +122,7 @@ function eb(e) {
   })
 }
 Chunk358085.isPlatformEmbedded;
-let ev = e => {
+let e_ = e => {
     let {
       keybind: t,
       onClick: n,
@@ -154,7 +154,7 @@ let ev = e => {
       })
     })
   },
-  e_ = e => {
+  ev = e => {
     let {
       keyCode: t,
       shiftKey: n,
@@ -196,8 +196,8 @@ class eO extends Chunk473749.Component {
             unlocked_duration: e
           }), em = null
         }
-        _.Z.disable(), this.activeKeyEventShapes = [], G.default.isPinned(ed.Odu.TEXT) && (_.Z.setLayout(v.Xq), _.Z.enable())
-      } else e.locked && !this.props.locked && (window.removeEventListener("contextmenu", ey, false), null == em && (em = Date.now(), y.Z.track(ed.rMx.OVERLAY_UNLOCKED)), _.Z.disable(), this.activeKeyEventShapes = [], _.Z.setLayout(v.Sr), _.Z.enable());
+        v.Z.disable(), this.activeKeyEventShapes = [], G.default.isPinned(ed.Odu.TEXT) && (v.Z.setLayout(_.Xq), v.Z.enable())
+      } else e.locked && !this.props.locked && (window.removeEventListener("contextmenu", ey, false), null == em && (em = Date.now(), y.Z.track(ed.rMx.OVERLAY_UNLOCKED)), v.Z.disable(), this.activeKeyEventShapes = [], v.Z.setLayout(_.Sr), v.Z.enable());
       e.keybindKeyCodes !== this.props.keybindKeyCodes && (this.lockEventShape = (0, X.d2)(this.props.keybindKeyCodes))
     }
   }
@@ -302,7 +302,7 @@ class eO extends Chunk473749.Component {
       children: [(0, Chunk54381.jsx)(Chunk708383.Z, {}), Chunk120356 && (0, Chunk54381.jsx)("header", {
         className: Chunk722363.previewingInGameHeader,
         children: Chunk388032.intl.string(Chunk388032.t.iOq96m)
-      }), i, (!module || Chunk921738.has(Chunk981631.O0n.TEXT_WIDGET)) && (0, Chunk54381.jsx)(ev, {
+      }), i, (!module || Chunk921738.has(Chunk981631.O0n.TEXT_WIDGET)) && (0, Chunk54381.jsx)(e_, {
         locked: module,
         keybind: exports,
         onClick: module ? this.handleDeactivate : this.handleLock,
@@ -330,7 +330,7 @@ class eO extends Chunk473749.Component {
     }, 500)), ep(this, "handleWindowResize", () => {
       W.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : this.debouncedForceUpdate()
     }), ep(this, "activeKeyEventShapes", []), ep(this, "lockEventShape", (0, X.d2)(this.props.keybindKeyCodes)), ep(this, "getActiveKeyEventIndex", e => this.activeKeyEventShapes.findIndex(t => p()(t, e))), ep(this, "onKeyDownGlobal", e => {
-      let t = e_(e),
+      let t = ev(e),
         n = this.getActiveKeyEventIndex(t) > false,
         i = [16, 17, 18, 91].includes(e.keyCode);
       n || i || this.activeKeyEventShapes.push(t), this.activeKeyEventShapes.length === this.lockEventShape.length && this.lockEventShape.every(e => this.activeKeyEventShapes.some(t => p()(e, t))) && (e.preventDefault(), e.stopPropagation());
@@ -340,12 +340,12 @@ class eO extends Chunk473749.Component {
       } = this.props;
       t.keyCode === c().codes.esc && r && s.has(ed.O0n.TEXT_WIDGET) && y.Z.deactivateAllRegions()
     }), ep(this, "onKeyUpGlobal", e => {
-      let t = e_(e),
+      let t = ev(e),
         n = this.getActiveKeyEventIndex(t);
       n > false && this.activeKeyEventShapes.splice(n, 1)
     });
     let t = e.locked && G.default.isPinned(ed.Odu.TEXT);
-    _.Z.setLayout(t ? v.Xq : v.Sr), t && _.Z.enable()
+    v.Z.setLayout(t ? _.Xq : _.Sr), t && v.Z.enable()
   }
 }
 

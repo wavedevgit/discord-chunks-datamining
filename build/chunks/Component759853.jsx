@@ -1,7 +1,7 @@
-/** Chunk was on 50433 **/
+/** Chunk was on 83615 **/
 /** chunk id: 759853, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,20 +18,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk675654 = require("./675654.js"),
   Chunk674386 = require("./674386.js"),
   Chunk197857 = require("./197857.js");
-let b = ["#51BC9D"],
-  _ = e => {
+let _ = ["#51BC9D"],
+  b = e => {
     var t;
     let {
       expansionSpring: n,
       overlayRef: o,
-      quest: _,
+      quest: b,
       progressBarRef: j,
       isExpanded: v,
       isHovered: C
     } = e, {
       completionSpring: y,
       startCompletionAnimation: E
-    } = (0, g.G)(), O = (null == (t = _.userStatus) ? true : t.completedAt) != null, S = s.useRef(false), T = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(P), [A, R] = s.useState(null), [B, k] = s.useState(null), I = s.useRef(new i.qA({
+    } = (0, g.G)(), O = (null == (t = b.userStatus) ? true : t.completedAt) != null, S = s.useRef(false), T = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(P), [A, R] = s.useState(null), [B, k] = s.useState(null), I = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
     })), D = (0, i.uR)(A, B), q = s.useCallback(() => {
@@ -152,7 +152,7 @@ let b = ["#51BC9D"],
         }), (0, r.jsx)(i.Ji, {
           ref: k,
           sprites: [x],
-          colors: b,
+          colors: _,
           spriteWidth: f.Ko,
           spriteHeight: f.Ko
         }), null != o.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {

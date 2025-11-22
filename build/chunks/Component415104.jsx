@@ -1,4 +1,4 @@
-/** Chunk was on 50433 **/
+/** Chunk was on 83615 **/
 /** chunk id: 415104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -8,9 +8,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk617136 = require("./617136.js"),
+  Chunk313481 = require("./313481.js"),
+  Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk113434 = require("./113434.js"),
-  Chunk497505 = require("./497505.js"),
   Chunk602667 = require("./602667.jsx"),
   Chunk110560 = require("./110560.jsx"),
   Chunk672188 = require("./672188.js"),
@@ -20,39 +20,39 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk88036 = require("./88036.js");
 
-function _(e) {
+function b(e) {
   var t, n;
   let {
     quest: o,
-    className: d,
+    className: c,
     questContent: u,
-    contentPosition: _,
+    contentPosition: b,
     rowIndex: j,
     impressionRef: v,
     sourceQuestContent: C
-  } = e, [y, E] = s.useState(false), [O, S] = s.useState([]), T = (0, c.qb)(o), w = s.useMemo(() => (0, l.q8)(o), [o]), P = (0, i._F)(), N = s.useCallback(() => {
+  } = e, [y, E] = s.useState(false), [O, S] = s.useState([]), T = (0, l.qb)(o), w = s.useMemo(() => (0, d.q8)(o), [o]), P = (0, i._F)(), N = s.useCallback(() => {
     E(true), P({
       questId: o.id,
       event: x.rMx.QUEST_HOVER,
       properties: {
         content_id: u,
         content_name: (0, i._b)(u),
-        content_position: _
+        content_position: b
       },
       sourceQuestContent: C
     }), w && (0, p.loadVideoQuestModal)()
-  }, [P, o.id, u, w, C, _]), A = s.useCallback(() => {
+  }, [P, o.id, u, w, C, b]), A = s.useCallback(() => {
     E(false), P({
       questId: o.id,
       event: x.rMx.QUEST_HOVER_OFF,
       properties: {
         content_id: u,
         content_name: (0, i._b)(u),
-        content_position: _
+        content_position: b
       },
       sourceQuestContent: C
     })
-  }, [P, o.id, u, C, _]), R = s.useContext(g.t), {
+  }, [P, o.id, u, C, b]), R = s.useContext(g.t), {
     visibilityElementRef: B,
     almostVisibleInViewport: k
   } = function(e) {
@@ -73,7 +73,7 @@ function _(e) {
     ref: e => {
       v.current = e, B.current = e
     },
-    className: a()(b.container, d),
+    className: a()(_.container, c),
     onMouseEnter: N,
     onMouseLeave: A,
     onFocus: N,
@@ -89,7 +89,7 @@ function _(e) {
       quest: o,
       questContent: u,
       isHovering: y,
-      contentPosition: _,
+      contentPosition: b,
       rowIndex: j,
       onReceiveErrorHints: S,
       isVisibleInViewport: k,
@@ -104,11 +104,11 @@ function j(e) {
     questContent: e.questContent,
     questContentPosition: e.contentPosition,
     questContentRowIndex: e.rowIndex,
-    trackGuildAndChannelMetadata: e.questContent === d.jn.QUESTS_EMBED,
+    trackGuildAndChannelMetadata: e.questContent === c.jn.QUESTS_EMBED,
     sourceQuestContent: e.sourceQuestContent,
     children: t => {
       var n, s;
-      return (0, r.jsx)(_, (n = function(e) {
+      return (0, r.jsx)(b, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

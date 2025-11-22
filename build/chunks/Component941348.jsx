@@ -1,11 +1,11 @@
-/** Chunk was on 50433 **/
+/** Chunk was on 83615 **/
 /** chunk id: 941348, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk113434 = require("./113434.js"),
+  Chunk313481 = require("./313481.js"),
   Chunk308069 = require("./308069.jsx"),
   Chunk613087 = require("./613087.jsx"),
   Chunk457153 = require("./457153.jsx"),
@@ -21,13 +21,13 @@ let p = function(e) {
     isExpansionAnimationComplete: f,
     onCtxMenuOpened: h,
     onCtxMenuClosed: x,
-    onCtxMenuSelection: b,
-    quest: _,
+    onCtxMenuSelection: _,
+    quest: b,
     useReducedMotion: j,
     collapsedHeight: v,
     onGameSheetOpened: C,
     onGameSheetClosed: y
-  } = e, E = (null == (t = _.userStatus) ? true : t.completedAt) != null, O = s.useRef(null), S = s.useRef(null), T = (null == (n = _.userStatus) ? true : n.enrolledAt) != null, w = (0, o.Rf)(_);
+  } = e, E = (null == (t = b.userStatus) ? true : t.completedAt) != null, O = s.useRef(null), S = s.useRef(null), T = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, w = (0, o.Rf)(b);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: p,
     collapsedContentRef: O,
@@ -38,12 +38,12 @@ let p = function(e) {
       expansionSpring: m,
       isExpanded: g,
       isExpansionAnimationComplete: f,
-      quest: _,
+      quest: b,
       useReducedMotion: j,
       taskDetails: w,
       onCtxMenuOpen: h,
       onCtxMenuClose: x,
-      onCtxMenuSelect: b,
+      onCtxMenuSelect: _,
       overlayRef: S
     }, E ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
       expansionSpring: m,
@@ -51,13 +51,13 @@ let p = function(e) {
       collapsedHeight: v,
       onCtxMenuOpen: h,
       onCtxMenuClose: x,
-      onCtxMenuSelect: b,
+      onCtxMenuSelect: _,
       onGameSheetOpened: C,
       onGameSheetClosed: y,
       overlayRef: S,
       isExpanded: g,
       isExpansionAnimationComplete: f,
-      quest: _,
+      quest: b,
       useReducedMotion: j,
       ref: p,
       taskDetails: w,
@@ -66,14 +66,14 @@ let p = function(e) {
           expansionSpring: m,
           isExpanded: g
         }), !T && (0, r.jsx)(a.Z, {
-          quest: _,
+          quest: b,
           expansionSpring: m,
           useReducedMotion: j,
           isExpanded: g,
           isExpansionAnimationComplete: f,
           onCtxMenuOpen: h,
           onCtxMenuClose: x,
-          onCtxMenuSelect: b
+          onCtxMenuSelect: _
         })]
       })
     }), (0, r.jsx)("div", {

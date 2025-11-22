@@ -178,8 +178,8 @@ function j(e) {
     }
     return r
   }(e, ["channel"]);
-  let r = (0, l.e7)([v.Z, m.Z], () => {
-      let e = v.Z.getVoiceChannelId();
+  let r = (0, l.e7)([_.Z, m.Z], () => {
+      let e = _.Z.getVoiceChannelId();
       return m.Z.getChannel(e)
     }),
     s = (0, l.e7)([y.Z], () => y.Z.getGuild(t.guild_id)),

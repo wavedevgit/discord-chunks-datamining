@@ -5,9 +5,9 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk455357 = require("./455357.jsx"),
   Chunk210724 = require("./210724.jsx"),
   Chunk130653 = require("./130653.jsx"),
-  Chunk78826 = require("./78826.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk818923 = require("./818923.js"),
   Chunk805832 = require("./805832.js"),
@@ -30,11 +30,11 @@ let p = function(e) {
           className: u.fixedBarWrapper,
           children: (0, r.jsx)("div", {
             className: d.panels,
-            children: (0, r.jsx)(a.Z, {
-              children: (0, r.jsx)(s.p, {
+            children: (0, r.jsx)(s.Z, {
+              children: (0, r.jsx)(l.x8, {
                 source: "preview",
                 questId: t.id,
-                children: (0, r.jsx)(l.P, {
+                children: (0, r.jsx)(a.P, {
                   quest: t
                 })
               })

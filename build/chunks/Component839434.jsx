@@ -108,12 +108,12 @@ function es(e) {
     voiceState: m
   } = e, b = (0, J.Z)({
     location: "overlay_voice_widget"
-  }), v = (0, a.e7)([G.default], () => G.default.showKeybindIndicators), _ = (0, a.e7)([R.default], () => R.default.getId()), O = (0, a.e7)([M.Z], () => M.Z.isLocalMute(i.id)), E = (0, a.e7)([k.Z], () => k.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([k.Z], () => null != E ? k.Z.getViewerIds(E) : []), S = (0, y.Z)({
+  }), _ = (0, a.e7)([G.default], () => G.default.showKeybindIndicators), v = (0, a.e7)([R.default], () => R.default.getId()), O = (0, a.e7)([M.Z], () => M.Z.isLocalMute(i.id)), E = (0, a.e7)([k.Z], () => k.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([k.Z], () => null != E ? k.Z.getViewerIds(E) : []), S = (0, y.Z)({
     userId: i.id,
     context: f
   }), Z = (0, a.e7)([V.Z], () => V.Z.isPrioritySpeaker(i.id, f)), j = (0, a.e7)([k.Z], () => null != k.Z.getStreamForUser(i.id, g)), C = s.useMemo(() => null != E && E.ownerId !== i.id && x.includes(i.id), [E, i.id, x]);
   if (d === Q.OYC.ONLY_WHILE_SPEAKING && n && !S) return null;
-  let I = i.id === _,
+  let I = i.id === v,
     {
       mute: P,
       selfMute: w,
@@ -121,7 +121,7 @@ function es(e) {
       deaf: N,
       selfDeaf: A
     } = m,
-    L = b && v,
+    L = b && _,
     z = w && (!I || !L);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(D.ZP, {
@@ -438,7 +438,7 @@ class eo extends(i = Chunk473749.PureComponent) {
 function el(e) {
   var t;
   let n = (0, a.e7)([z.Z, A.Z], () => A.Z.getChannel(z.Z.getVoiceChannelId())),
-    i = (0, v.ZP)(n),
+    i = (0, _.ZP)(n),
     o = function() {
       let [e] = (0, a.e7)([U.ZP, P.Z, z.Z, A.Z], () => {
         let e = A.Z.getChannel(z.Z.getVoiceChannelId());

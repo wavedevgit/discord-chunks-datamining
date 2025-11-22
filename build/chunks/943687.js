@@ -4,8 +4,8 @@ require.d(exports, {
   f: () => c
 }), require("./388685.js");
 var Chunk243814 = require("./243814.js"),
+  Chunk616022 = require("./616022.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk569984 = require("./569984.js"),
   Chunk996106 = require("./996106.js"),
   Chunk452426 = require("./452426.js"),
   Chunk981631 = require("./981631.js");
@@ -21,7 +21,7 @@ let c = {
           quest_id: t
         },
         socket: n
-      } = e, r = l.Z.getQuest(t), s = (0, i.nY)(r);
+      } = e, r = i.Z.getQuest(t), s = (0, l.nY)(r);
       if (null == r || null == s || s !== n.application.id) throw new a.Z({
         errorCode: o.lTL.INVALID_COMMAND
       }, "Quest not found: ".concat(t))

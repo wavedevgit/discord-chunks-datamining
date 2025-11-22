@@ -19,11 +19,11 @@ var Chunk754700 = require("./754700.js"),
   Chunk823379 = require("./823379.js"),
   Chunk22095 = require("./22095.js"),
   Chunk617136 = require("./617136.js"),
+  Chunk616022 = require("./616022.js"),
+  Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk569984 = require("./569984.js"),
-  Chunk497505 = require("./497505.js"),
-  Chunk5881 = require("./5881.js"),
-  Chunk46140 = require("./46140.js");
+  Chunk535584 = require("./535584.js"),
+  Chunk324805 = require("./324805.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,22 +36,22 @@ function I(e, t, n) {
 let T = +Chunk70956.Z.Millis.MINUTE,
   S = 2,
   A = +Chunk70956.Z.Millis.SECOND,
-  C = (0, Chunk5881.T)({
-    location: Chunk46140.dr.QUESTS_MANAGER
+  C = (0, Chunk535584.T)({
+    location: Chunk324805.dr.QUESTS_MANAGER
   });
 
 function N(e) {
-  return !(0, E.zi)(e) && null != e.userStatus && null != e.userStatus.enrolledAt && null == e.userStatus.completedAt
+  return !(0, y.zi)(e) && null != e.userStatus && null != e.userStatus.enrolledAt && null == e.userStatus.completedAt
 }
 
 function R(e) {
-  for (let r of b.Z.quests.values()) {
+  for (let r of E.Z.quests.values()) {
     var t, n;
-    let a = (0, E.Mo)(r);
-    if (null != r && (0, E.Rt)(r) && r.config.features.includes(i.S.ACTIVITY_QUEST_AUTO_ENROLLMENT) && !(0, E.zi)(r) && a === e && a !== v.Ts && (null == (t = r.userStatus) ? true : t.completedAt) == null && (null == (n = r.userStatus) ? true : n.enrolledAt) == null) return void(0, m.AH)(r.id, {
-      questContent: y.jn.RUNNING_ACTIVITY,
+    let a = (0, y.Mo)(r);
+    if (null != r && (0, y.Rt)(r) && r.config.features.includes(i.S.ACTIVITY_QUEST_AUTO_ENROLLMENT) && !(0, y.zi)(r) && a === e && a !== v.Ts && (null == (t = r.userStatus) ? true : t.completedAt) == null && (null == (n = r.userStatus) ? true : n.enrolledAt) == null) return void(0, m.AH)(r.id, {
+      questContent: b.jn.RUNNING_ACTIVITY,
       questContentCTA: g.jZ.ACCEPT_QUEST,
-      sourceQuestContent: y.jn.RUNNING_ACTIVITY
+      sourceQuestContent: b.jn.RUNNING_ACTIVITY
     })
   }
 }
@@ -69,7 +69,7 @@ class w extends Chunk147913.Z {
       let e = this.heartbeats[r],
         t = this.getActivelyProgressingQuests(r);
       for (let n of new Set(e.keys())) t.has(n) || this.terminateHeartbeat(n, r);
-      for (let [i, a] of t.entries()) !e.has(i) && (null == n || n(b.Z.quests.get(i))) && this.initiateHeartbeat(i, r, a.applicationId)
+      for (let [i, a] of t.entries()) !e.has(i) && (null == n || n(E.Z.quests.get(i))) && this.initiateHeartbeat(i, r, a.applicationId)
     }
   }
   getActivelyProgressingQuests(e) {
@@ -87,7 +87,7 @@ class w extends Chunk147913.Z {
   getActivelyProgressingPlayOnDesktopQuests() {
     let e = new Map,
       t = Chunk594190.ZP.getRunningGames(),
-      n = Chunk569984.Z.quests;
+      n = Chunk616022.Z.quests;
     C.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Running games: ", exports);
     let r = {};
     for (let e of exports) {
@@ -128,7 +128,7 @@ class w extends Chunk147913.Z {
     C.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Active stream metadata: ", require);
     let r = require.id;
     if (null == Chunk754700) return module;
-    for (let t of Chunk569984.Z.quests.values()) {
+    for (let t of Chunk616022.Z.quests.values()) {
       let n = (0, Chunk509212.DR)(exports);
       N(exports) && null != require && require === Chunk754700 && module.set(exports.id, {
         applicationId: Chunk754700
@@ -141,7 +141,7 @@ class w extends Chunk147913.Z {
       t = Chunk317381.ZP.getSelfEmbeddedActivities(),
       n = exports.size > 0;
     if (C.log("~ getActivelyProgressingActivityQuestIds -> Embedded activities: ", exports), !require) return module;
-    let r = Chunk569984.Z.quests;
+    let r = Chunk616022.Z.quests;
     for (let n of exports.keys())
       for (let t of Chunk754700.values()) {
         let r = (0, Chunk509212.Mo)(exports);
@@ -150,7 +150,7 @@ class w extends Chunk147913.Z {
         })
       }
     for (let t of Chunk754700.values()) N(exports) && (0, Chunk509212.KM)(exports) && require && module.set(exports.id, {
-      applicationId: Chunk46140.Ts
+      applicationId: Chunk324805.Ts
     });
     return C.log("~ getActivelyProgressingActivityQuestIds -> Actively progressing questIds: ", Array.from(module.keys())), module
   }
@@ -160,12 +160,12 @@ class w extends Chunk147913.Z {
       [r.X.STREAM_ON_DESKTOP]: new Map,
       [r.X.PLAY_ACTIVITY]: new Map
     }), I(this, "calculateHeartbeatDurationMs", e => {
-      let t = b.Z.quests.get(e);
+      let t = E.Z.quests.get(e);
       if (null == t || null == t.config || null == t.userStatus) return T;
       let {
         progressSeconds: n,
         targetSeconds: i
-      } = (0, E.il)(t, r.T.DESKTOP), a = Math.max(0, (i - n) * p.Z.Millis.SECOND);
+      } = (0, y.il)(t, r.T.DESKTOP), a = Math.max(0, (i - n) * p.Z.Millis.SECOND);
       return a <= T ? a + A : T
     }), I(this, "initiateHeartbeat", (e, t, n) => {
       let i = this.heartbeats[t];
@@ -200,7 +200,7 @@ class w extends Chunk147913.Z {
       C.log("~ initiateHeartbeat -> Initiating heartbeat for Quest ".concat(e)), a()
     }), I(this, "terminateHeartbeat", (e, t) => {
       let n = this.heartbeats[t],
-        r = b.Z.quests,
+        r = E.Z.quests,
         i = n.get(e);
       if (null != i) {
         C.log("~ terminateHeartbeat -> Terminating heartbeat for questId: ".concat(e)), window.clearTimeout(i), n.delete(e);

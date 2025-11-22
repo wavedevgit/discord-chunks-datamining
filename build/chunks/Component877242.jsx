@@ -13,8 +13,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk624138 = require("./624138.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
-  Chunk113434 = require("./113434.js"),
-  Chunk497505 = require("./497505.js"),
+  Chunk313481 = require("./313481.js"),
+  Chunk49436 = require("./49436.js"),
   Chunk215113 = require("./215113.jsx"),
   Chunk684245 = require("./684245.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -26,7 +26,7 @@ function h() {
     sourceQuestContent: t,
     isPortrait: n,
     onClose: l
-  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), h = (0, Chunk915750.aM)(), b = (0, Chunk113434.tP)(module), C = Chunk473749.useRef(null), {
+  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), h = (0, Chunk915750.aM)(), b = (0, Chunk313481.tP)(module), C = Chunk473749.useRef(null), {
     isHoveringOrFocusing: S
   } = (0, Chunk104505.Z)(C), y = (0, Chunk684245.e)({
     quest: module,
@@ -37,7 +37,7 @@ function h() {
   return (0, Chunk54381.jsx)(Chunk681715.u, {
     text: Chunk388032.intl.string(Chunk388032.t.EuHF34),
     children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
-      onClick: () => y(Chunk497505.jn.VIDEO_MODAL, Chunk617136.jZ.OPEN_GAME_LINK),
+      onClick: () => y(Chunk49436.jn.VIDEO_MODAL, Chunk617136.jZ.OPEN_GAME_LINK),
       className: Chunk273339.adInfoClickable,
       children: (0, Chunk54381.jsxs)("div", {
         className: i()(Chunk273339.contentHeaderGameInfo, Chunk273339.contentHeaderGameInfoHoverable, {

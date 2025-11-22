@@ -6,8 +6,8 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk313481 = require("./313481.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk113434 = require("./113434.js"),
   Chunk670362 = require("./670362.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk477813 = require("./477813.js");
@@ -15,19 +15,19 @@ let d = function(e) {
   let {
     onChange: t,
     selectedFilters: n
-  } = e, d = (0, s.N8)(), p = i.useCallback(e => r => {
+  } = e, d = (0, a.N8)(), p = i.useCallback(e => r => {
     let i = e.filter(e => r.includes(e.filter));
     t([...n.filter(t => !e.some(e => e.filter === t.filter)), ...i])
   }, [n, t]);
   return (0, r.jsx)(o.Z, {
     renderPopout: (e, i) => {
       let {
-        closePopout: s
+        closePopout: a
       } = e;
       return (0, r.jsxs)("div", {
         children: [d.map((e, t) => {
-          let s = e.options.map(e => ({
-              label: (0, a.Nt)(e.filter),
+          let a = e.options.map(e => ({
+              label: (0, s.Nt)(e.filter),
               value: e.filter
             })),
             c = n.filter(t => e.options.some(e => e.filter === t.filter)).map(e => e.filter);
@@ -38,7 +38,7 @@ let d = function(e) {
               children: e.heading
             }), (0, r.jsx)(l.cOn, {
               "aria-labelledby": i,
-              options: s,
+              options: a,
               selectedValues: c,
               onChange: p(e.options)
             })]
@@ -48,7 +48,7 @@ let d = function(e) {
           children: (0, r.jsx)(l.Button, {
             fullWidth: true,
             onClick: () => {
-              t([]), s()
+              t([]), a()
             },
             size: "sm",
             text: c.intl.string(c.t.VkKicb),

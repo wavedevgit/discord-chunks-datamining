@@ -22,10 +22,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk152708 = require("./152708.jsx"),
   Chunk594190 = require("./594190.js"),
   Chunk751571 = require("./751571.js"),
+  Chunk616022 = require("./616022.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk569984 = require("./569984.js"),
-  Chunk977156 = require("./977156.js"),
-  Chunk28798 = require("./28798.jsx"),
+  Chunk787695 = require("./787695.js"),
+  Chunk263463 = require("./263463.jsx"),
   Chunk131951 = require("./131951.js"),
   Chunk449224 = require("./449224.js"),
   Chunk358085 = require("./358085.js"),
@@ -41,7 +41,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk133179 = require("./133179.jsx"),
   Chunk70722 = require("./70722.js"),
   Chunk761274 = require("./761274.js"),
-  Chunk46140 = require("./46140.js"),
+  Chunk324805 = require("./324805.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk336606 = require("./336606.js");
@@ -88,7 +88,7 @@ function H(e, t, n) {
       var i, l;
       let n = t.find(e => (0, w.Z)(r.id, e.windowHandle));
       if ((null == n ? true : n.id) == null) continue;
-      let s = (0, x.lQ)(e, n.id);
+      let s = (0, v.lQ)(e, n.id);
       if (null != s && (null == (i = s.userStatus) ? true : i.enrolledAt) != null && (null == (l = s.userStatus) ? true : l.completedAt) == null) return {
         source: r,
         quest: s
@@ -106,7 +106,7 @@ function W(e) {
     enableGoLiveCaptureCard: l
   } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = b.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, p] = i.useState(null), [x, j] = i.useState(null), [y, C] = i.useState(null), w = null != y && y.length > 0, [Z, P] = i.useState(c.vA.WINDOW), [E, T] = i.useState(false), A = i.useRef(null), M = i.useRef(new u.Xp), D = (0, d.e7)([_.ZP], () => _.ZP.getRunningGames()), U = H((0, d.e7)([v.Z], () => v.Z.quests), D, x), W = i.useMemo(() => null == x ? null : [...x].sort((e, t) => F(t, null == U ? true : U.source.id) - F(e, null == U ? true : U.source.id)), [U, x]);
+  }), o = b.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, p] = i.useState(null), [v, j] = i.useState(null), [y, C] = i.useState(null), w = null != y && y.length > 0, [Z, P] = i.useState(c.vA.WINDOW), [E, T] = i.useState(false), A = i.useRef(null), M = i.useRef(new u.Xp), D = (0, d.e7)([_.ZP], () => _.ZP.getRunningGames()), U = H((0, d.e7)([x.Z], () => x.Z.quests), D, v), W = i.useMemo(() => null == v ? null : [...v].sort((e, t) => F(t, null == U ? true : U.source.id) - F(e, null == U ? true : U.source.id)), [U, v]);
   i.useEffect(() => {
     let e = M.current;
     return (0, I.t)({

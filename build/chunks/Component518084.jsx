@@ -31,7 +31,7 @@ let g = Chunk981631.t_t.DEFAULT,
     opacity: m
   }),
   b = Chunk473749.createContext(true),
-  v = e => {
+  _ = e => {
     var {
       children: t,
       className: n
@@ -89,7 +89,7 @@ let g = Chunk981631.t_t.DEFAULT,
       }
     })
   };
-class _ extends(i = Chunk473749.PureComponent) {
+class v extends(i = Chunk473749.PureComponent) {
   render() {
     let {
       disableScroll: e,
@@ -114,7 +114,7 @@ class _ extends(i = Chunk473749.PureComponent) {
     })
   }
 }
-f(_, "defaultProps", {
+f(v, "defaultProps", {
   disableScroll: false
 });
 let O = e => {
@@ -165,7 +165,7 @@ O.Background = e => {
     opacityOverride: n
   } = e;
   if (null == t) return null;
-  let i = [v, _, E];
+  let i = [_, v, E];
   return (0, r.jsx)(y.Consumer, {
     children: e => {
       let {
@@ -186,7 +186,7 @@ O.Background = e => {
       }
     }
   })
-}, O.Body = _, O.Content = E, O.Icon = e => {
+}, O.Body = v, O.Content = E, O.Icon = e => {
   let {
     ref: t,
     icon: n,
@@ -221,5 +221,5 @@ O.Background = e => {
       })
     })
   })
-}, O.Bar = v;
+}, O.Bar = _;
 let x = O

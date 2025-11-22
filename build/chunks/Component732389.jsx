@@ -1,5 +1,5 @@
-/** Chunk was on 83175 **/
-/** chunk id: 732389, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 10349 **/
+/** chunk id: 732389, original params: e,n,a (module,exports,require) **/
 require.d(exports, {
   p: () => x
 });
@@ -20,26 +20,26 @@ var Chunk54381 = require("./54381.js"),
 let x = e => {
   let {
     buttonAnalyticsObject: n,
-    className: t,
+    className: a,
     upsellText: o
   } = e, x = c.default.getCurrentUser(), h = (0, u.yd)(null == x ? true : x.premiumType, p.PremiumTypes.TIER_2), C = (0, m._)({
     defaultResponse: g.intl.string(g.t["8x0jKT"]),
     onNonTier2Subscriber: g.intl.string(g.t.IJI7yk)
   });
-  return h ? null : (0, a.jsxs)("div", {
-    className: r()(f.upsellContainer, t),
-    children: [(0, a.jsxs)("div", {
+  return h ? null : (0, t.jsxs)("div", {
+    className: r()(f.upsellContainer, a),
+    children: [(0, t.jsxs)("div", {
       className: f.row,
-      children: [(0, a.jsx)(i.SrA, {
+      children: [(0, t.jsx)(i.SrA, {
         size: "md",
         color: d.JX.PREMIUM_TIER_2
-      }), (0, a.jsx)(s.xvT, {
+      }), (0, t.jsx)(s.xvT, {
         variant: "text-sm/medium",
         color: "header-primary",
         className: f.upsellText,
         children: o
       })]
-    }), (0, a.jsx)(_.Z, {
+    }), (0, t.jsx)(_.Z, {
       className: f.button,
       size: l.zx.Sizes.SMALL,
       look: l.zx.Looks.BLANK,

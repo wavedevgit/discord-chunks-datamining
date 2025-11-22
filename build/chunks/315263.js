@@ -24,8 +24,8 @@ var Chunk873546 = require("./873546.js"),
   Chunk543842 = require("./543842.js"),
   Chunk754688 = require("./754688.js"),
   Chunk336197 = require("./336197.js"),
+  Chunk787695 = require("./787695.js"),
   Chunk36243 = require("./36243.js"),
-  Chunk977156 = require("./977156.js"),
   Chunk110560 = require("./110560.jsx"),
   Chunk703656 = require("./703656.js"),
   Chunk540709 = require("./540709.jsx"),
@@ -40,7 +40,7 @@ var Chunk701190 = require("./701190.js"),
   Chunk782568 = require("./782568.js"),
   Chunk981631 = require("./981631.js");
 require("./215023.js");
-var Chunk46140 = require("./46140.js");
+var Chunk324805 = require("./324805.js");
 async function U(e, t) {
   await a.Z.dispatch({
     type: "INVITE_MODAL_OPEN",
@@ -166,7 +166,7 @@ function Z(e) {
       n(t, r)
     }), true
   };
-  if (null != R && R.type === m.g.QUESTS_EMBED && (0, T.c)({
+  if (null != R && R.type === m.g.QUESTS_EMBED && (0, I.c)({
       location: j.dr.EMBED_MOBILE
     })) return e => {
     var t, r, a;
@@ -265,7 +265,7 @@ function Z(e) {
   return H && (null == Z ? true : Z.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, S.navigateToQuestHome)({
     fromContent: i.j.QUEST_BADGE
   }), true) : H && (null == Z ? true : Z.startsWith("/quest-home")) ? e => (null == e || e.preventDefault(), (0, A.uL)(k.Z5c.QUEST_HOME_V2 + (null != F ? F : "")), true) : H && (null == Z ? true : Z.startsWith("/quest-preview")) ? e => {
-    if (null == e || e.preventDefault(), (0, I.T)({
+    if (null == e || e.preventDefault(), (0, T.T)({
         location: j.dr.NAVIGATE_TO_QUEST_HOME_UTIL
       })) return (0, A.uL)(k.Z5c.QUEST_HOME_V2 + "?tab=preview_tool&quest_id=".concat(Z.split("/").at(false))), true
   } : H && (null == Z ? true : Z.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 749681)).then(e => {

@@ -1,4 +1,4 @@
-/** Chunk was on 50433 **/
+/** Chunk was on 83615 **/
 /** chunk id: 303385, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -9,10 +9,10 @@ var Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk790519 = require("./790519.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk497505 = require("./497505.js"),
+  Chunk49436 = require("./49436.js"),
   Chunk685138 = require("./685138.js"),
   Chunk644646 = require("./644646.jsx"),
-  Chunk46140 = require("./46140.js"),
+  Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk895758 = require("./895758.js");
 let g = e => {
@@ -27,7 +27,7 @@ let g = e => {
   } = (0, c.n)({
     location: u.dr.QUESTS_BAR,
     questConfig: t.config
-  }), x = null == h ? true : h.progressBlur, b = (null == h ? true : h.label1) || (null == h ? true : h.label2), _ = null == h ? true : h.shineWipe, j = x ? 70 : 48, v = x ? 12 : 8, C = x ? false : false, y = x ? 0 : b ? false : 6;
+  }), x = null == h ? true : h.progressBlur, _ = (null == h ? true : h.label1) || (null == h ? true : h.label2), b = null == h ? true : h.shineWipe, j = x ? 70 : 48, v = x ? 12 : 8, C = x ? false : false, y = x ? 0 : _ ? false : 6;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.animated.div, {
       className: m.rewardTileContainer,
@@ -51,7 +51,7 @@ let g = e => {
         location: u.dr.QUESTS_BAR,
         autoplay: s && !f,
         sourceQuestContent: l.jn.QUEST_BAR_V2,
-        showShine: !_,
+        showShine: !b,
         style: {
           width: j,
           height: j,
@@ -62,7 +62,7 @@ let g = e => {
     }), (0, r.jsxs)(a.animated.div, {
       className: o()(m.rewardHighlightLogoCTA, {
         [m.rewardHighlightLogoCTAHeightBoost]: x,
-        [m.rewardHighlightLogoCTALabel]: b
+        [m.rewardHighlightLogoCTALabel]: _
       }),
       style: {
         height: x ? j : true,
@@ -76,7 +76,7 @@ let g = e => {
       },
       children: [(0, r.jsx)("div", {
         className: o()({
-          [m.partnerBranding]: !x && !b
+          [m.partnerBranding]: !x && !_
         }),
         children: g
       }), x && (0, r.jsx)(a.animated.div, {
@@ -89,12 +89,12 @@ let g = e => {
         }
       }), (0, r.jsx)(a.animated.div, {
         className: o()(m.rewardHighlightCTA, {
-          [m.rewardHighlightCTALabel]: b
+          [m.rewardHighlightCTALabel]: _
         }),
         style: {
           opacity: n.to({
             range: [0, 1],
-            output: [b ? 1 : .7, 0]
+            output: [_ ? 1 : .7, 0]
           })
         },
         children: (0, r.jsx)(i.Text, {

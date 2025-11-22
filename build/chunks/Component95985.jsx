@@ -1,4 +1,4 @@
-/** Chunk was on 50433 **/
+/** Chunk was on 83615 **/
 /** chunk id: 95985, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -6,12 +6,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk113434 = require("./113434.js"),
-  Chunk497505 = require("./497505.js"),
+  Chunk313481 = require("./313481.js"),
+  Chunk49436 = require("./49436.js"),
   Chunk644646 = require("./644646.jsx"),
   Chunk613087 = require("./613087.jsx"),
   Chunk472144 = require("./472144.jsx"),
-  Chunk46140 = require("./46140.js"),
+  Chunk324805 = require("./324805.js"),
   Chunk245565 = require("./245565.js");
 let p = e => {
   let {
@@ -23,15 +23,15 @@ let p = e => {
     activeScreen: f,
     popoutTargetElementRef: h,
     onGameSheetOpened: x,
-    onGameSheetClosed: b
-  } = e, _ = (0, o.eQ)(n), j = (0, o.vf)({
+    onGameSheetClosed: _
+  } = e, b = (0, o.eQ)(n), j = (0, o.vf)({
     quest: n,
     isExpanded: m,
     activeScreen: f,
     sourceQuestContent: a.jn.QUEST_BAR_V2,
     popoutTargetElementRef: h,
     onGameSheetOpened: x,
-    onGameSheetClosed: b
+    onGameSheetClosed: _
   });
   return (0, r.jsxs)("div", {
     className: u.questProgressWrapper,
@@ -64,7 +64,7 @@ let p = e => {
           className: u.questProgressHint,
           color: "header-primary",
           variant: "text-sm/semibold",
-          children: _
+          children: b
         })
       }), (0, r.jsx)(l.l7, {
         inState: t,

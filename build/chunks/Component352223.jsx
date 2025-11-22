@@ -16,15 +16,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk393903 = require("./393903.js"),
   Chunk448986 = require("./448986.js"),
   Chunk617136 = require("./617136.js"),
-  Chunk113434 = require("./113434.js"),
-  Chunk497505 = require("./497505.js"),
+  Chunk313481 = require("./313481.js"),
+  Chunk49436 = require("./49436.js"),
   Chunk477005 = require("./477005.jsx"),
+  Chunk698716 = require("./698716.jsx"),
   Chunk685613 = require("./685613.jsx"),
   Chunk611855 = require("./611855.jsx"),
   Chunk644646 = require("./644646.jsx"),
-  Chunk670638 = require("./670638.jsx"),
   Chunk724684 = require("./724684.js"),
-  Chunk46140 = require("./46140.js"),
+  Chunk324805 = require("./324805.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk849138 = require("./849138.js");
@@ -96,12 +96,12 @@ let D = (0, Chunk790519.animated)(Chunk481060.CJ0),
         questContentPosition: k,
         sourceQuestContent: U
       })
-    }, en = () => null != Z && null != V && Z < V, er = (0, r.jsx)(E.ZP, {
+    }, en = () => null != Z && null != V && Z < V, er = (0, r.jsx)(b.ZP, {
       className: A.partnerBranding,
       logotypeClassName: ee ? A.partnerBrandingLogotypes : true,
-      gameTileSize: E.fF.MEDIUM,
+      gameTileSize: b.fF.MEDIUM,
       quest: a,
-      separatorSpacing: E.US.MEDIUM,
+      separatorSpacing: b.US.MEDIUM,
       theme: T.BR.DARK,
       withGameTile: !z || null == a.config.cosponsorMetadata
     });
@@ -153,7 +153,7 @@ let D = (0, Chunk790519.animated)(Chunk481060.CJ0),
               className: A.headerCollapsedClickableContainer,
               children: [(0, r.jsx)("div", {
                 className: A.headerCollapsedContentRewardWrapper,
-                children: (0, r.jsx)(y.Z, {
+                children: (0, r.jsx)(O.Z, {
                   quest: a,
                   questContent: C,
                   className: A.headerCollapsedRewardTile,
@@ -164,7 +164,7 @@ let D = (0, Chunk790519.animated)(Chunk481060.CJ0),
                 className: A.headerCollapsedContentCopyWrapper,
                 children: [(0, r.jsxs)("div", {
                   className: A.headerCollapsedContentCopyLogos,
-                  children: [er, (0, r.jsx)(b.Z, {
+                  children: [er, (0, r.jsx)(y.Z, {
                     color: "always-white"
                   })]
                 }), (0, r.jsx)(u.Text, {
@@ -193,7 +193,7 @@ let D = (0, Chunk790519.animated)(Chunk481060.CJ0),
               className: A.headerExpandedWrapper,
               children: [(0, r.jsxs)("div", {
                 className: A.iconLogotypeContainer,
-                children: [er, z ? null : (0, r.jsx)(b.Z, {
+                children: [er, z ? null : (0, r.jsx)(y.Z, {
                   color: "always-white"
                 })]
               }), (0, r.jsxs)("div", {
@@ -232,7 +232,7 @@ let D = (0, Chunk790519.animated)(Chunk481060.CJ0),
               output: [v.DJ / 2 - v.Z$ / 2, v.jc]
             }) : v.jc
           },
-          children: [(0, r.jsx)(O.r, {
+          children: [(0, r.jsx)(E.i, {
             questContent: C,
             quest: a,
             questContentPosition: k,

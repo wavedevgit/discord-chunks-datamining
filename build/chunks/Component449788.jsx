@@ -9,12 +9,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
+  Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk497505 = require("./497505.js"),
   Chunk937797 = require("./937797.js"),
   Chunk215113 = require("./215113.jsx"),
   Chunk939389 = require("./939389.js"),
-  Chunk46140 = require("./46140.js"),
+  Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx");
 
 function E(e) {
@@ -29,9 +29,9 @@ function E(e) {
     variant: b
   } = d.EO.useConfig({
     location: p.dr.VIDEO_MODAL
-  }), C = b === d.m_.OVERLAY_SHARE_ON_VIDEO, [S, y] = (0, f.G6)(v.intl.string(v.t.RDE0Sc), v.intl.string(v.t["+5kSoW"]), 1700), [_, x] = o.useState(false), j = o.useRef(null), D = (0, c.vB)(n.config), P = o.useCallback(() => {
-    D && ((0, c.f2)(n.id, {
-      content: u.jn.VIDEO_MODAL,
+  }), C = b === d.m_.OVERLAY_SHARE_ON_VIDEO, [S, y] = (0, f.G6)(v.intl.string(v.t.RDE0Sc), v.intl.string(v.t["+5kSoW"]), 1700), [_, x] = o.useState(false), j = o.useRef(null), D = (0, u.vB)(n.config), P = o.useCallback(() => {
+    D && ((0, u.f2)(n.id, {
+      content: c.jn.VIDEO_MODAL,
       ctaContent: a.jZ.COPY_QUEST_URL,
       impressionId: O,
       sourceQuestContent: E

@@ -12,10 +12,10 @@ var Chunk287734 = require("./287734.js"),
   Chunk503438 = require("./503438.js"),
   Chunk802856 = require("./802856.js"),
   Chunk420660 = require("./420660.js"),
+  Chunk313481 = require("./313481.js"),
+  Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk113434 = require("./113434.js"),
-  Chunk497505 = require("./497505.js"),
-  Chunk23404 = require("./23404.jsx"),
+  Chunk364833 = require("./364833.jsx"),
   Chunk81063 = require("./81063.js"),
   Chunk761282 = require("./761282.jsx"),
   Chunk358924 = require("./358924.jsx"),
@@ -34,7 +34,7 @@ function y(e) {
     partiedMembers: S,
     applicationStreams: T,
     guildContext: N
-  } = t, j = (0, p.z1)(y), P = [], x = e => {
+  } = t, j = (0, d.z1)(y), P = [], x = e => {
     let {
       length: t
     } = P;
@@ -87,7 +87,7 @@ function y(e) {
       }
     }, "application-stream-".concat(t.ownerId)))
   }), C.forEach((e, t) => {
-    var n, i, l, p, m, b, v, T, P;
+    var n, i, l, d, m, b, v, T, P;
     let {
       activity: A,
       game: Z,
@@ -118,7 +118,7 @@ function y(e) {
       }, "embedded-activity-".concat(A.application_id)))
     } else(0, c.Z)(A) ? x((0, r.jsx)(_.Z.XboxSection, {
       title: Z.name
-    }, "xbox-".concat(null != (p = A.session_id) ? p : t))) : x((0, r.jsx)(_.Z.RichPresenceSection, {
+    }, "xbox-".concat(null != (d = A.session_id) ? d : t))) : x((0, r.jsx)(_.Z.RichPresenceSection, {
       activity: A,
       getAssetImage: g.xF,
       user: L
@@ -147,7 +147,7 @@ function y(e) {
       getAssetImage: g.xF,
       user: L
     }, "rich-presence-".concat(null != (T = A.session_id) ? T : t, "-").concat(L.id))));
-    j && null != y && null != Z && (0, d._D)(A, y) && (null == y.userStatus || !(0, d.zE)(y.userStatus, f.jn.ACTIVITY_PANEL)) && x((0, r.jsx)(h.Z, {
+    j && null != y && null != Z && (0, f._D)(A, y) && (null == y.userStatus || !(0, f.zE)(y.userStatus, p.jn.ACTIVITY_PANEL)) && x((0, r.jsx)(h.Z, {
       quest: y
     }, "quest-".concat(y.id, "-").concat(null != (P = A.session_id) ? P : t)))
   }), P.length > 0 ? (0, r.jsx)(_.Z.Body, {

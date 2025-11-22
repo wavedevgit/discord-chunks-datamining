@@ -1,4 +1,4 @@
-/** Chunk was on 50433 **/
+/** Chunk was on 83615 **/
 /** chunk id: 472144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -22,7 +22,7 @@ let p = Chunk473749.forwardRef((e, t) => {
     percentCompleteText: g,
     percentCompleteTextVariant: f = "text-lg/medium",
     children: h
-  } = e, x = (0, c.E)(n, s > 0), b = o / 2, _ = o / 2 - p / 2, j = 2 * Math.PI * _, v = j - s * j, C = {
+  } = e, x = (0, c.E)(n, s > 0), _ = o / 2, b = o / 2 - p / 2, j = 2 * Math.PI * b, v = j - s * j, C = {
     strokeDasharray: "".concat(j, " ").concat(j),
     strokeDashoffset: v
   }, y = {
@@ -95,18 +95,18 @@ let p = Chunk473749.forwardRef((e, t) => {
         className: u.progress,
         strokeWidth: p,
         fill: "transparent",
-        r: _,
-        cx: b,
-        cy: b,
+        r: b,
+        cx: _,
+        cy: _,
         stroke: "url(#linear)",
         style: y
       }), (0, r.jsx)("circle", {
         className: u.progress,
         strokeWidth: p,
         fill: "transparent",
-        r: _,
-        cx: b,
-        cy: b,
+        r: b,
+        cx: _,
+        cy: _,
         stroke: x.foreground,
         style: C
       })]

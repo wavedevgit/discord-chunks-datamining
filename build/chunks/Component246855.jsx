@@ -1,7 +1,7 @@
 /** Chunk was on 74560 **/
 /** chunk id: 246855, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => M
+  default: () => k
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,12 +18,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk43747 = require("./43747.js"),
   Chunk960919 = require("./960919.jsx"),
   Chunk22095 = require("./22095.js"),
+  Chunk313481 = require("./313481.js"),
+  Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk113434 = require("./113434.js"),
-  Chunk497505 = require("./497505.js"),
   Chunk515108 = require("./515108.jsx"),
   Chunk291967 = require("./291967.jsx"),
-  Chunk46140 = require("./46140.js"),
+  Chunk324805 = require("./324805.js"),
   Chunk981631 = require("./981631.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -170,7 +170,7 @@ function D(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   var n, t;
   let {
     initialQuest: i,
@@ -178,14 +178,14 @@ function M(e) {
     transitionState: o,
     sourceQuestContent: l,
     location: c
-  } = e, d = null != (t = (0, _.B4)(i.id)) ? t : i, u = (null == (n = d.userStatus) ? true : n.claimedAt) != null, {
+  } = e, d = null != (t = (0, C.B4)(i.id)) ? t : i, u = (null == (n = d.userStatus) ? true : n.claimedAt) != null, {
     balance: m,
     error: p
-  } = (0, f.A)(), b = (0, C.LM)(d.config), [x, N] = r.useState(u ? "success" : "loading"), [O, P] = r.useState(false), w = r.useCallback(() => {
+  } = (0, f.A)(), b = (0, j.LM)(d.config), [x, N] = r.useState(u ? "success" : "loading"), [O, P] = r.useState(false), w = r.useCallback(() => {
     P(true)
   }, []);
   r.useEffect(() => {
-    u || "loading" !== x || (0, h.QB)(d.id, j.y$.CROSS_PLATFORM, c).then(() => N("success")).catch(() => N("error"))
+    u || "loading" !== x || (0, h.QB)(d.id, _.y$.CROSS_PLATFORM, c).then(() => N("success")).catch(() => N("error"))
   }, [d.id, u, x, c]);
   let L = !O || "loading" === x || null == m && null == p,
     S = "error" === x || null == b || null == m && null != p;

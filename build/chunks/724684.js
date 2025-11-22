@@ -12,7 +12,7 @@ require.d(exports, {
   jc: () => l,
   uq: () => i
 });
-var Chunk497505 = require("./497505.js");
+var Chunk49436 = require("./49436.js");
 
 function i(e) {
   return [r.jn.GIFT_INVENTORY_FOR_YOU, r.jn.GIFT_INVENTORY_OTHER].includes(e)

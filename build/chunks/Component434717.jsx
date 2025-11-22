@@ -11,14 +11,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk410030 = require("./410030.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
+  Chunk313481 = require("./313481.js"),
+  Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk113434 = require("./113434.js"),
-  Chunk497505 = require("./497505.js"),
   Chunk475595 = require("./475595.js"),
+  Chunk455357 = require("./455357.jsx"),
   Chunk477005 = require("./477005.jsx"),
-  Chunk78826 = require("./78826.jsx"),
-  Chunk667105 = require("./667105.jsx"),
-  Chunk46140 = require("./46140.js"),
+  Chunk659302 = require("./659302.jsx"),
+  Chunk324805 = require("./324805.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk985952 = require("./985952.js");
@@ -28,13 +28,13 @@ function b(e) {
     quest: t,
     sourceQuestContent: n,
     onLoadComplete: b
-  } = e, _ = (0, l.ZP)(), w = (0, o.wjy)(_) ? y.BR.DARK : y.BR.LIGHT, O = (0, m.ly)(t), N = (0, u.aM)(), P = (0, d.vB)(t.config), E = a.useMemo(() => {
+  } = e, _ = (0, l.ZP)(), w = (0, o.wjy)(_) ? y.BR.DARK : y.BR.LIGHT, O = (0, d.ly)(t), N = (0, u.aM)(), P = (0, p.vB)(t.config), E = a.useMemo(() => {
     var e;
     let n = null == (e = t.config.ctaConfig) ? true : e.subtitle;
-    return null != n ? n : (0, d.BI)(t.config) !== i.W.GAMEPLAY || t.config.features.includes(x.S7.NON_GAMING_PLAY_QUEST) || (0, d.Pb)(t) ? g.intl.string(g.t.y8Xf3k) : g.intl.string(g.t["wirwN+"])
+    return null != n ? n : (0, p.BI)(t.config) !== i.W.GAMEPLAY || t.config.features.includes(x.S7.NON_GAMING_PLAY_QUEST) || (0, p.Pb)(t) ? g.intl.string(g.t.y8Xf3k) : g.intl.string(g.t["wirwN+"])
   }, [t]), {
     isLoading: T
-  } = (0, h.d7)();
+  } = (0, f.kC)();
   a.useEffect(() => {
     T || b()
   }, [T, b]);
@@ -42,7 +42,7 @@ function b(e) {
     isShareable: P,
     questId: t.id,
     trackingCtx: a.useMemo(() => ({
-      content: p.jn.REWARD_MODAL,
+      content: m.jn.REWARD_MODAL,
       ctaContent: c.jZ.REWARD_MODAL_COPY_LINK,
       impressionId: N,
       sourceQuestContent: n
@@ -50,9 +50,9 @@ function b(e) {
   });
   return (0, r.jsxs)("div", {
     className: v.container,
-    children: [(0, r.jsx)(h.Fl, {
+    children: [(0, r.jsx)(f.Fl, {
       id: "hero-display",
-      children: e => (0, r.jsx)(f.Z, {
+      children: e => (0, r.jsx)(h.Z, {
         quest: t,
         imageSize: {
           width: 908,
@@ -64,7 +64,7 @@ function b(e) {
       })
     }), (0, r.jsx)("div", {
       className: v.partnerLogotypeContainer,
-      children: (0, r.jsx)(h.Fl, {
+      children: (0, r.jsx)(f.Fl, {
         id: "partner-logotype",
         children: e => (0, r.jsx)("img", {
           ref: e,
@@ -91,7 +91,7 @@ function b(e) {
           color: "text-secondary",
           children: E
         })]
-      }), (0, r.jsx)(h.Fl, {
+      }), (0, r.jsx)(f.Fl, {
         id: "partner-game-tile",
         children: e => (0, r.jsx)("img", {
           ref: e,
@@ -121,8 +121,8 @@ function b(e) {
           variant: "primary",
           text: O,
           onClick: () => {
-            (0, d.nc)(t, {
-              content: p.jn.REWARD_MODAL,
+            (0, p.nc)(t, {
+              content: m.jn.REWARD_MODAL,
               ctaContent: c.jZ.OPEN_GAME_LINK,
               impressionId: N,
               sourceQuestContent: n
@@ -142,7 +142,7 @@ function _(e) {
     quest: t,
     location: n
   } = e;
-  return (0, r.jsx)(h.p, {
+  return (0, r.jsx)(f.x8, {
     source: n,
     questId: t.id,
     isPreview: t.preview,

@@ -1,4 +1,4 @@
-/** Chunk was on 50433 **/
+/** Chunk was on 83615 **/
 /** chunk id: 308069, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -11,14 +11,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
+  Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk497505 = require("./497505.js"),
   Chunk685138 = require("./685138.js"),
+  Chunk698716 = require("./698716.jsx"),
   Chunk685613 = require("./685613.jsx"),
   Chunk110560 = require("./110560.jsx"),
-  Chunk670638 = require("./670638.jsx"),
   Chunk303385 = require("./303385.jsx"),
-  Chunk46140 = require("./46140.js"),
+  Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk579605 = require("./579605.js");
 let v = (0, Chunk790519.animated)(Chunk685613.ZP),
@@ -27,7 +27,7 @@ let v = (0, Chunk790519.animated)(Chunk685613.ZP),
       quest: t,
       expansionSpring: n,
       onCtxMenuSelect: o,
-      onCtxMenuOpen: g,
+      onCtxMenuOpen: f,
       onCtxMenuClose: C,
       useReducedMotion: y,
       isExpanded: E,
@@ -35,20 +35,20 @@ let v = (0, Chunk790519.animated)(Chunk685613.ZP),
     } = e, S = (0, d.aM)(), {
       status: T
     } = (0, m.n)({
-      location: b.dr.QUESTS_BAR,
+      location: _.dr.QUESTS_BAR,
       questConfig: t.config
     }), w = null == T ? true : T.progressBlur, P = s.useCallback(() => {
-      (0, f.openDisclosureModal)(t, {
-        content: p.jn.QUEST_BAR_V2,
+      (0, h.openDisclosureModal)(t, {
+        content: u.jn.QUEST_BAR_V2,
         ctaContent: c.jZ.OPEN_DISCLOSURE,
-        sourceQuestContent: p.jn.QUEST_BAR_V2
+        sourceQuestContent: u.jn.QUEST_BAR_V2
       })
     }, [t]), N = s.useCallback(() => {
-      (0, u.nc)(t, {
-        content: p.jn.QUEST_BAR_V2,
+      (0, p.nc)(t, {
+        content: u.jn.QUEST_BAR_V2,
         ctaContent: c.jZ.OPEN_GAME_LINK,
         impressionId: S,
-        sourceQuestContent: p.jn.QUEST_BAR_V2
+        sourceQuestContent: u.jn.QUEST_BAR_V2
       })
     }, [S, t]), A = E && O, R = (0, r.jsx)(l.P3F, {
       onClick: N,
@@ -107,20 +107,20 @@ let v = (0, Chunk790519.animated)(Chunk685613.ZP),
           children: [(0, r.jsx)(l.Text, {
             color: "always-white",
             variant: "text-xs/normal",
-            children: _.intl.string(_.t.o6FLcF)
+            children: b.intl.string(b.t.o6FLcF)
           }), (0, r.jsx)(l.idN, {
             color: l.TVs.colors.WHITE,
             className: j.promotedBadgeIcon
           })]
-        }), (0, r.jsx)(h.r, {
-          onOpen: g,
+        }), (0, r.jsx)(g.i, {
+          onOpen: f,
           onClose: C,
           onSelect: o,
-          questContent: p.jn.QUEST_BAR_V2,
+          questContent: u.jn.QUEST_BAR_V2,
           quest: t,
           shouldShowDisclosure: true,
           showShareLink: true,
-          sourceQuestContent: p.jn.QUEST_BAR_V2,
+          sourceQuestContent: u.jn.QUEST_BAR_V2,
           children: e => {
             var t, n;
             return (0, r.jsx)(l.P3F, (t = function(e) {
@@ -142,7 +142,7 @@ let v = (0, Chunk790519.animated)(Chunk685613.ZP),
               return e
             }({}, e), n = n = {
               className: j.submenuWrapper,
-              "aria-label": _.intl.string(_.t.DEoVWZ),
+              "aria-label": b.intl.string(b.t.DEoVWZ),
               children: (0, r.jsx)(l.xhG, {
                 size: "md",
                 color: "currentColor",

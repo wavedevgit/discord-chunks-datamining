@@ -18,10 +18,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk509212 = require("./509212.js"),
   Chunk132581 = require("./132581.js"),
   Chunk475595 = require("./475595.js"),
+  Chunk455357 = require("./455357.jsx"),
   Chunk18578 = require("./18578.jsx"),
   Chunk352084 = require("./352084.jsx"),
   Chunk110560 = require("./110560.jsx"),
-  Chunk78826 = require("./78826.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk858191 = require("./858191.js");
 
@@ -67,7 +67,7 @@ let T = function(e) {
         questContentPosition: e.questContentPosition,
         questContentCTA: _.jZ.REWARD_LEARN_MORE,
         sourceQuestContent: A
-      }), (0, b.navigateToQuestHome)({
+      }), (0, y.navigateToQuestHome)({
         fromContent: e.questContent,
         questId: a.id
       }), null == (n = e.onClick) || n.call(e, t)
@@ -83,13 +83,13 @@ let T = function(e) {
       }
       h && !U.current ? j.current.play() : !h && U.current && (j.current.currentTime = 0, j.current.pause()), U.current = h
     }
-  }, [h, x, L]), t = G ? (0, r.jsx)(y.Fl, {
+  }, [h, x, L]), t = G ? (0, r.jsx)(g.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
-    children: e => (0, r.jsx)(E.Z, {
+    children: e => (0, r.jsx)(b.Z, {
       ref: e,
       className: v.questRewardTileAsset
     })
-  }) : C ? (0, r.jsx)(g.K, {
+  }) : C ? (0, r.jsx)(E.K, {
     showVideo: h,
     imageAsset: null != M ? {
       asset: M,
@@ -103,7 +103,7 @@ let T = function(e) {
       className: o()(v.questRewardTileAsset, v.questRewardTileAssetLazyVideo)
     },
     onLoadComplete: e.onLoadComplete
-  }) : x.isAnimated ? (0, r.jsx)(y.Fl, {
+  }) : x.isAnimated ? (0, r.jsx)(g.Fl, {
     id: "QuestRewardTile_rewardTileAnimated",
     children: t => {
       var n;
@@ -124,7 +124,7 @@ let T = function(e) {
         })
       })
     }
-  }) : (0, r.jsx)(y.Fl, {
+  }) : (0, r.jsx)(g.Fl, {
     id: "QuestRewardTile_rewardTileStatic",
     children: t => (0, r.jsx)("img", {
       ref: t,

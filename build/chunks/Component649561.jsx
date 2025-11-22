@@ -89,7 +89,7 @@ class k extends Chunk473749.PureComponent {
           onClick: e => e.stopPropagation(),
           children: [(0, i.jsx)(y.ZP, {
             expand: true,
-            icon: (0, i.jsx)(v.Z, {
+            icon: (0, i.jsx)(_.Z, {
               width: 40,
               height: 40,
               className: P.notificationIcon
