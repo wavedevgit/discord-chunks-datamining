@@ -26,47 +26,49 @@ function L(t) {
     onClose: L,
     onChannelPromptCompleted: x,
     isSlideReady: T
-  } = t, [E, h] = l.useState(""), [G, I] = l.useState(null), [D, y] = l.useState(false), U = (0, C.Dt)(), z = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), f = l.useRef(null);
-  l.useEffect(() => {
+  } = t, [E, h] = a.useState(""), [G, I] = a.useState(null), [D, y] = a.useState(false), U = (0, m.Dt)(), z = (0, l.e7)([C.Z], () => C.Z.getGuild(n), [n]), f = a.useRef(null);
+  a.useEffect(() => {
     var t;
     T && (null == (t = f.current) || t.focus())
   }, [T]);
-  let N = l.useCallback(async t => {
+  let N = a.useCallback(async t => {
       if (t.preventDefault(), null == z) return;
       y(true), I(null);
-      let n = p.ZP.getDefaultChannel(z.id);
+      let n = g.ZP.getDefaultChannel(z.id);
       try {
-        let t = g.intl.formatToPlainString(g.t.V4lepJ, {
+        let t = u.intl.formatToPlainString(u.t.V4lepJ, {
           topic: E
         });
         await d.Z.createTextChannel(z.id, E, null == n ? true : n.parent_id, t), x()
       } catch (t) {
-        I(new c.yZ(t))
+        I(new o.yZ(t))
       }
       y(false)
     }, [z, E, x]),
     v = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(r.Button, {
         variant: "primary",
-        text: g.intl.string(g.t.i4jeWR),
+        text: u.intl.string(u.t.i4jeWR),
         onClick: N,
         disabled: 0 === E.length,
         loading: D
       }), (0, i.jsx)(s.zx, {
+        "data-migration-pending": true,
         className: _.skipButton,
         look: s.zx.Looks.BLANK,
         size: s.zx.Sizes.MIN,
         onClick: x,
-        children: g.intl.string(g.t["5Wxrcd"])
+        children: u.intl.string(u.t["5Wxrcd"])
       })]
     });
   return {
     content: (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)(r.xBx, {
+        "data-migration-pending": true,
         className: _.header,
-        direction: o.Z.Direction.VERTICAL,
+        direction: c.Z.Direction.VERTICAL,
         separator: false,
-        children: [null != z && (0, i.jsx)(m.Z, {
+        children: [null != z && (0, i.jsx)(p.Z, {
           guild: z
         }), (0, i.jsx)(r.Text, {
           className: _.guildName,
@@ -76,28 +78,30 @@ function L(t) {
         }), (0, i.jsx)(r.Heading, {
           className: _.title,
           variant: "heading-sm/semibold",
-          children: g.intl.string(g.t["8VRa7d"])
+          children: u.intl.string(u.t["8VRa7d"])
         }), (0, i.jsx)(r.Text, {
           className: _.subtitle,
           color: "header-secondary",
           variant: "text-md/normal",
-          children: g.intl.string(g.t["+855Pm"])
+          children: u.intl.string(u.t["+855Pm"])
         }), null != L && (0, i.jsx)(r.olH, {
+          "data-migration-pending": true,
           className: _.closeButton,
           onClick: L
         })]
       }), (0, i.jsxs)(r.hzk, {
+        "data-migration-pending": true,
         className: _.channelPrompt,
         children: [(0, i.jsx)("form", {
           onSubmit: N,
           children: (0, i.jsx)(r.oil, {
-            label: g.intl.string(g.t.bY20tU),
+            label: u.intl.string(u.t.bY20tU),
             error: null == G ? true : G.getFieldMessage("name"),
             type: "text",
             value: E,
             id: U,
             onChange: h,
-            placeholder: g.intl.string(g.t.xGOYA8),
+            placeholder: u.intl.string(u.t.xGOYA8),
             inputRef: f
           })
         }), null != G && 0 === Object.keys(G.fields).length && (0, i.jsx)(r.Text, {
@@ -106,6 +110,7 @@ function L(t) {
           children: G.message
         })]
       }), e && (0, i.jsx)(r.mzw, {
+        "data-migration-pending": true,
         children: v
       })]
     }),

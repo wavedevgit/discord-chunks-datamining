@@ -2,7 +2,7 @@
 /** chunk id: 867581, original params: e,t,n (module,exports,require) **/
 let r, o;
 require.d(exports, {
-  Z: () => C
+  Z: () => g
 }), require("./388685.js"), require("./781311.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,28 +25,28 @@ let O = "hTKzmak",
     let {
       onClick: t
     } = e;
-    return (0, l.jsxs)(s.P3F, {
+    return (0, i.jsxs)(s.P3F, {
       className: I.rowContainer,
       onClick: () => {
         t(), (0, d.uL)(m.Z5c.GUILD_DISCOVERY)
       },
-      children: [(0, l.jsx)("img", {
+      children: [(0, i.jsx)("img", {
         width: 40,
         height: 40,
         className: I.rowIcon,
         alt: "",
         src: T
-      }), (0, l.jsxs)("div", {
-        children: [(0, l.jsx)(s.Heading, {
+      }), (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(s.Heading, {
           className: I.rowText,
           variant: "heading-md/semibold",
           children: f.intl.string(f.t.DwDxDU)
-        }), (0, l.jsx)(s.Text, {
+        }), (0, i.jsx)(s.Text, {
           className: I.rowText,
           variant: "text-xs/normal",
           children: f.intl.string(f.t["5RL4CD"])
         })]
-      }), (0, l.jsx)("img", {
+      }), (0, i.jsx)("img", {
         className: I.rowArrow,
         alt: "",
         src: N
@@ -54,30 +54,30 @@ let O = "hTKzmak",
     })
   };
 
-function C(e) {
+function g(e) {
   let {
     onBack: t,
     onClose: n,
     isSlideReady: r
-  } = e, [o, d] = i.useState(""), [m, N] = i.useState(false), [T, C] = i.useState(null), h = i.useRef(null);
-  i.useEffect(() => {
+  } = e, [o, d] = l.useState(""), [m, N] = l.useState(false), [T, g] = l.useState(null), C = l.useRef(null);
+  l.useEffect(() => {
     var e;
-    r && (null == (e = h.current) || e.focus())
+    r && (null == (e = C.current) || e.focus())
   }, [r]);
-  let g = e => {
+  let h = e => {
     e.preventDefault();
     let t = o.trim();
-    if ("" === t) return void C(f.intl.string(f.t.IRq5ah));
-    C(null), N(true);
+    if ("" === t) return void g(f.intl.string(f.t.IRq5ah));
+    g(null), N(true);
     let r = t.split("/"),
-      l = r[r.length - 1];
-    c.ZP.resolveInvite(l, "Join Guild", {
+      i = r[r.length - 1];
+    c.ZP.resolveInvite(i, "Join Guild", {
       inputValue: t
     }).then(e => {
       let {
         invite: t
       } = e;
-      if (N(false), null == t) return void C(f.intl.string(f.t["GEYI+Z"]));
+      if (N(false), null == t) return void g(f.intl.string(f.t["GEYI+Z"]));
       if (null != t.channel) {
         let e = c.ZP.getInviteContext("Join Guild", t);
         c.ZP.acceptInvite({
@@ -87,68 +87,73 @@ function C(e) {
             n(), c.ZP.transitionToInvite(e)
           }
         }).then(() => {}, e => {
-          e instanceof u.yZ || e instanceof u.Hx ? C((0, p.O)(e.code)) : C(f.intl.string(f.t.dDZRdy))
+          e instanceof u.yZ || e instanceof u.Hx ? g((0, p.O)(e.code)) : g(f.intl.string(f.t.dDZRdy))
         })
       }
     }, e => {
       N(false);
       let t = new u.yZ(e);
-      C((0, p.O)(t.code))
+      g((0, p.O)(t.code))
     })
   };
-  return (0, l.jsxs)("div", {
-    children: [(0, l.jsxs)(s.xBx, {
+  return (0, i.jsxs)("div", {
+    children: [(0, i.jsxs)(s.xBx, {
+      "data-migration-pending": true,
       className: I.header,
       direction: _.Z.Direction.VERTICAL,
       separator: false,
-      children: [(0, l.jsx)(s.Heading, {
+      children: [(0, i.jsx)(s.Heading, {
         className: I.title,
         variant: "heading-xl/semibold",
         children: f.intl.string(f.t.riOUtB)
-      }), (0, l.jsx)(s.Text, {
+      }), (0, i.jsx)(s.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         children: f.intl.string(f.t["7jub2t"])
-      }), (0, l.jsx)(s.olH, {
+      }), (0, i.jsx)(s.olH, {
+        "data-migration-pending": true,
         className: I.closeButton,
         onClick: n
       })]
-    }), (0, l.jsxs)(s.hzk, {
+    }), (0, i.jsxs)(s.hzk, {
+      "data-migration-pending": true,
       className: I.__invalid_content,
-      children: [(0, l.jsx)("form", {
-        onSubmit: g,
+      children: [(0, i.jsx)("form", {
+        onSubmit: h,
         className: I.inputForm,
-        children: (0, l.jsx)(s.oil, {
+        children: (0, i.jsx)(s.oil, {
           label: f.intl.string(f.t.qreV25),
           required: true,
           error: T,
           value: o,
           onChange: d,
           placeholder: "".concat(S).concat(O),
-          inputRef: h
+          inputRef: C
         })
-      }), (0, l.jsx)(s.Text, {
+      }), (0, i.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         children: f.intl.string(f.t.Bnq46H)
-      }), (0, l.jsx)("div", {
+      }), (0, i.jsx)("div", {
         className: I.sampleLinks,
-        children: E.map(e => (0, l.jsx)(s.P3F, {
+        children: E.map(e => (0, i.jsx)(s.P3F, {
           className: I.sampleLink,
           onClick: () => d(e),
           children: e
         }, e))
-      }), (0, l.jsx)(b, {
+      }), (0, i.jsx)(b, {
         onClick: n
       })]
-    }), (0, l.jsxs)(s.mzw, {
+    }), (0, i.jsxs)(s.mzw, {
+      "data-migration-pending": true,
       className: I.footer,
-      children: [(0, l.jsx)(s.Button, {
+      children: [(0, i.jsx)(s.Button, {
         variant: "primary",
         text: f.intl.string(f.t["Ts/9Ac"]),
         loading: m,
-        onClick: g
-      }), (0, l.jsx)(a.zx, {
+        onClick: h
+      }), (0, i.jsx)(a.zx, {
+        "data-migration-pending": true,
         color: a.zx.Colors.PRIMARY,
         look: a.zx.Looks.LINK,
         size: a.zx.Sizes.MIN,

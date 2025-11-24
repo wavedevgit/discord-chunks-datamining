@@ -1,8 +1,8 @@
 /** Chunk was on 42483 **/
 /** chunk id: 382086, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => g,
-  v: () => u
+  Z: () => u,
+  v: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,78 +15,83 @@ var Chunk755721 = require("./755721.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk470816 = require("./470816.js");
-let p = .5 > Math.random();
+let g = .5 > Math.random();
 
-function u(t) {
+function C(t) {
   let {
     onClose: n,
     onBack: e,
-    onCreationIntentChosen: u,
-    hasFooter: g = true
-  } = t, _ = (0, i.jsx)(l.zx, {
-    className: m.backButton,
-    look: l.zx.Looks.BLANK,
-    size: l.zx.Sizes.MIN,
+    onCreationIntentChosen: C,
+    hasFooter: u = true
+  } = t, _ = (0, i.jsx)(a.zx, {
+    "data-migration-pending": true,
+    className: p.backButton,
+    look: a.zx.Looks.BLANK,
+    size: a.zx.Sizes.MIN,
     onClick: e,
-    children: C.intl.string(C.t["13/7kX"])
+    children: m.intl.string(m.t["13/7kX"])
   });
 
   function L(t) {
-    r.default.track(o.rMx.GUILD_CREATION_INTENT_SELECTED, {
+    r.default.track(c.rMx.GUILD_CREATION_INTENT_SELECTED, {
       skipped: null == t,
-      is_community: t === c.lr.COMMUNITY
-    }), u(t)
+      is_community: t === o.lr.COMMUNITY
+    }), C(t)
   }
   return {
     content: (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsxs)(a.xBx, {
+      children: [(0, i.jsxs)(l.xBx, {
+        "data-migration-pending": true,
         direction: s.Z.Direction.VERTICAL,
-        className: m.header,
+        className: p.header,
         separator: false,
-        children: [(0, i.jsx)(a.Heading, {
-          className: m.title,
+        children: [(0, i.jsx)(l.Heading, {
+          className: p.title,
           variant: "heading-xl/semibold",
-          children: C.intl.string(C.t.f3MvGS)
-        }), (0, i.jsx)(a.Text, {
-          className: m.subtitle,
+          children: m.intl.string(m.t.f3MvGS)
+        }), (0, i.jsx)(l.Text, {
+          className: p.subtitle,
           color: "header-secondary",
           variant: "text-md/normal",
-          children: C.intl.string(C.t.nOzc7w)
-        }), null != n && (0, i.jsx)(a.olH, {
-          className: m.closeButton,
+          children: m.intl.string(m.t.nOzc7w)
+        }), null != n && (0, i.jsx)(l.olH, {
+          "data-migration-pending": true,
+          className: p.closeButton,
           onClick: n
         })]
-      }), (0, i.jsxs)(a.hzk, {
-        className: m.optionsList,
-        children: [p ? (0, i.jsxs)(i.Fragment, {
+      }), (0, i.jsxs)(l.hzk, {
+        "data-migration-pending": true,
+        className: p.optionsList,
+        children: [g ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(d.Z, {
-            icon: a.Nye,
-            message: C.intl.string(C.t.uE7zcu),
-            onClick: () => L(c.lr.FRIENDS)
+            icon: l.Nye,
+            message: m.intl.string(m.t.uE7zcu),
+            onClick: () => L(o.lr.FRIENDS)
           }), (0, i.jsx)(d.Z, {
-            icon: a.q3d,
-            message: C.intl.string(C.t.h9Q1lG),
-            onClick: () => L(c.lr.COMMUNITY)
+            icon: l.q3d,
+            message: m.intl.string(m.t.h9Q1lG),
+            onClick: () => L(o.lr.COMMUNITY)
           })]
         }) : (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(d.Z, {
-            icon: a.q3d,
-            message: C.intl.string(C.t.h9Q1lG),
-            onClick: () => L(c.lr.COMMUNITY)
+            icon: l.q3d,
+            message: m.intl.string(m.t.h9Q1lG),
+            onClick: () => L(o.lr.COMMUNITY)
           }), (0, i.jsx)(d.Z, {
-            icon: a.Nye,
-            message: C.intl.string(C.t.uE7zcu),
-            onClick: () => L(c.lr.FRIENDS)
+            icon: l.Nye,
+            message: m.intl.string(m.t.uE7zcu),
+            onClick: () => L(o.lr.FRIENDS)
           })]
-        }), (0, i.jsx)(a.Text, {
-          className: m.skip,
+        }), (0, i.jsx)(l.Text, {
+          className: p.skip,
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: C.intl.format(C.t["SMc+Gz"], {
+          children: m.intl.format(m.t["SMc+Gz"], {
             onSkip: () => L(null)
           })
         })]
-      }), g && (0, i.jsx)(a.mzw, {
+      }), u && (0, i.jsx)(l.mzw, {
+        "data-migration-pending": true,
         justify: s.Z.Justify.BETWEEN,
         children: _
       })]
@@ -95,9 +100,9 @@ function u(t) {
   }
 }
 
-function g(t) {
+function u(t) {
   let {
     content: n
-  } = u(t);
+  } = C(t);
   return n
 }

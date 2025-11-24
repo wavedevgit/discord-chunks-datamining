@@ -43,6 +43,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
     }, [t.id, m]);
     let j = null;
     "function" == typeof C ? j = C() : null != C && (j = (0, r.jsx)(o.zx, {
+      "data-migration-pending": true,
       className: h.button,
       size: o.zx.Sizes.SMALL,
       onClick: () => {

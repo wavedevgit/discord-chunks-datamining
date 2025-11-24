@@ -17,15 +17,15 @@ function m(e) {
   let {
     guildTemplate: t,
     onClick: n,
-    autoFocus: s
-  } = e, r = l.useCallback(() => {
+    autoFocus: r
+  } = e, s = l.useCallback(() => {
     n(t)
   }, [t, n]);
   return (0, i.jsx)(a.Z, {
     icon: o.M[t.id],
     message: t.label,
-    onClick: r,
-    autoFocus: s
+    onClick: s,
+    autoFocus: r
   })
 }
 
@@ -37,13 +37,13 @@ function x(e) {
     directoryGuildName: o
   } = e, x = (0, c.Pp)();
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(s.xBx, {
+    children: [(0, i.jsx)(r.xBx, {
       title: d.intl.formatToPlainString(d.t.T7aLYT, {
         guildName: o
       }),
       subtitle: d.intl.string(d.t["RA+St6"])
-    }), (0, i.jsx)(s.fef, {
-      children: (0, i.jsx)(r.w0Z, {
+    }), (0, i.jsx)(r.fef, {
+      children: (0, i.jsx)(s.w0Z, {
         className: u.scroller,
         children: (0, i.jsxs)("div", {
           className: u.templatesList,
@@ -78,7 +78,7 @@ function x(e) {
               Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
             }), t),
             onClick: a
-          }), (0, i.jsx)(r.Text, {
+          }), (0, i.jsx)(s.Text, {
             className: u.optionHeader,
             color: "header-secondary",
             variant: "text-xs/bold",
@@ -104,8 +104,8 @@ function x(e) {
           })]
         })
       })
-    }), (0, i.jsx)(s.Go$, {
-      leading: (0, i.jsx)(r.Avr, {
+    }), (0, i.jsx)(r.Go$, {
+      leading: (0, i.jsx)(s.Avr, {
         textVariant: "text-sm/medium",
         variant: "secondary",
         text: d.intl.string(d.t["13/7kX"]),

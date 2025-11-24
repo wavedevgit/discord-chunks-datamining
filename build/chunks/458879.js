@@ -10,8 +10,8 @@ var Chunk990547 = require("./990547.js"),
 let a = {
   createGuildFromTemplate: async function(e, t, n, a, o) {
     try {
-      return (await s.Z.post({
-        url: r.ANM.GUILDS,
+      return (await r.Z.post({
+        url: s.ANM.GUILDS,
         body: {
           name: e,
           icon: t,

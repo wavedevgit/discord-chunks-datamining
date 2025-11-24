@@ -34,30 +34,30 @@ function _(e, t, n, o) {
     return e
   }({
     onSuccess: t => {
-      l.Z.flowStep(u.MK.CREATE_GUILD, u.X2.SUCCESS), e.onClose(), null == o || o(t)
+      i.Z.flowStep(u.MK.CREATE_GUILD, u.X2.SUCCESS), e.onClose(), null == o || o(t)
     },
     onSlideChange: e => (function(e, t) {
       switch (e) {
         case s._m.GUILD_TEMPLATES:
-          l.Z.flowStepOrStart(u.MK.CREATE_GUILD, u.X2.GUILD_TEMPLATES), i.default.track(c.rMx.OPEN_MODAL, {
+          i.Z.flowStepOrStart(u.MK.CREATE_GUILD, u.X2.GUILD_TEMPLATES), l.default.track(c.rMx.OPEN_MODAL, {
             type: "Create Guild Templates",
             location: t
           });
           break;
         case s._m.CUSTOMIZE_GUILD:
-          l.Z.flowStep(u.MK.CREATE_GUILD, u.X2.GUILD_CREATE), i.default.track(c.rMx.OPEN_MODAL, {
+          i.Z.flowStep(u.MK.CREATE_GUILD, u.X2.GUILD_CREATE), l.default.track(c.rMx.OPEN_MODAL, {
             type: "Create Guild Step 2",
             location: t
           });
           break;
         case s._m.CREATION_INTENT:
-          i.default.track(c.rMx.OPEN_MODAL, {
+          l.default.track(c.rMx.OPEN_MODAL, {
             type: "Server Intent Discovery",
             location: t
           });
           break;
         case s._m.JOIN_GUILD:
-          l.Z.flowStep(u.MK.CREATE_GUILD, u.X2.JOIN_GUILD), i.default.track(c.rMx.OPEN_MODAL, {
+          i.Z.flowStep(u.MK.CREATE_GUILD, u.X2.JOIN_GUILD), l.default.track(c.rMx.OPEN_MODAL, {
             type: "Join Guild",
             location: t
           })

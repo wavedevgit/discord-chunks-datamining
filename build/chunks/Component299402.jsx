@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  i = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk990547 = require("./990547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
@@ -24,42 +24,43 @@ function O(e) {
   let {
     transitionState: t,
     initialSlide: n = I._m.GUILD_TEMPLATES,
-    onSuccess: l,
+    onSuccess: i,
     onClose: O,
     onSlideChange: S,
     hasJoinButton: E
-  } = e, [b, C] = o.useState(n), h = (0, c.Z)(b), [g, x] = o.useState(null), [w, L] = o.useState(null), [y, v] = o.useState(null), [D, j] = o.useState(false);
+  } = e, [b, g] = o.useState(n), C = (0, c.Z)(b), [h, x] = o.useState(null), [w, L] = o.useState(null), [y, v] = o.useState(null), [D, j] = o.useState(false);
   o.useEffect(() => {
-    C(n)
-  }, [C, n]), o.useEffect(() => {
-    b !== h && S(b)
-  }, [S, b, h]);
+    g(n)
+  }, [g, n]), o.useEffect(() => {
+    b !== C && S(b)
+  }, [S, b, C]);
   let A = o.useCallback(e => {
-      C(I._m.CREATION_INTENT), L(e), u.default.track(N.rMx.GUILD_TEMPLATE_SELECTED, {
+      g(I._m.CREATION_INTENT), L(e), u.default.track(N.rMx.GUILD_TEMPLATE_SELECTED, {
         template_name: e.id,
         template_code: e.code
       })
     }, []),
     U = o.useCallback(e => {
-      j(e === I.lr.COMMUNITY), C(I._m.CUSTOMIZE_GUILD)
+      j(e === I.lr.COMMUNITY), g(I._m.CUSTOMIZE_GUILD)
     }, []),
-    G = o.useCallback(() => C(I._m.JOIN_GUILD), [C]),
+    G = o.useCallback(() => g(I._m.JOIN_GUILD), [g]),
     P = o.useCallback(() => {
-      if (b === I._m.CUSTOMIZE_GUILD) return void C(I._m.CREATION_INTENT);
-      C(I._m.GUILD_TEMPLATES), L(null)
+      if (b === I._m.CUSTOMIZE_GUILD) return void g(I._m.CREATION_INTENT);
+      g(I._m.GUILD_TEMPLATES), L(null)
     }, [b]),
     M = o.useCallback(e => {
-      v(e), l(e)
-    }, [l, v]),
+      v(e), i(e)
+    }, [i, v]),
     k = o.useCallback(() => {
-      i()(null != y, "handleSuccess called before onGuildCreated"), l(y)
-    }, [l, y]),
+      l()(null != y, "handleSuccess called before onGuildCreated"), i(y)
+    }, [i, y]),
     R = {
       impression_group: a.ImpressionGroups.GUILD_ADD_FLOW
     },
     Z = (0, s.dQu)(s.TVs.modules.modal.WIDTH_SMALL);
   return (0, r.jsx)("div", {
     children: (0, r.jsx)(s.Y0X, {
+      "data-migration-pending": true,
       transitionState: t,
       disableTrack: true,
       parentComponent: "CreateGuildModal",
@@ -97,7 +98,7 @@ function O(e) {
               onGuildCreated: M,
               onClose: O,
               onBack: P,
-              isSlideReady: g === I._m.CUSTOMIZE_GUILD,
+              isSlideReady: h === I._m.CUSTOMIZE_GUILD,
               isCommunity: D
             })
           }), (0, r.jsx)(s.Mi4, {
@@ -108,7 +109,7 @@ function O(e) {
               createdGuildId: y,
               onClose: O,
               onChannelPromptCompleted: k,
-              isSlideReady: g === I._m.CHANNEL_PROMPT
+              isSlideReady: h === I._m.CHANNEL_PROMPT
             })
           }), (0, r.jsx)(s.Mi4, {
             id: I._m.JOIN_GUILD,
@@ -117,7 +118,7 @@ function O(e) {
             children: (0, r.jsx)(f.Z, {
               onBack: P,
               onClose: O,
-              isSlideReady: g === I._m.JOIN_GUILD
+              isSlideReady: h === I._m.JOIN_GUILD
             })
           })]
         })

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -24,14 +24,14 @@ function f(e) {
     onClick: n
   } = e;
   return (0, i.jsxs)(c.P3F, {
-    className: C.clickableGuildRow,
+    className: g.clickableGuildRow,
     onClick: n,
     children: [(0, i.jsx)(d.Z, {
       guild: t,
       size: d.Z.Sizes.MEDIUM,
       active: true
     }), (0, i.jsx)(c.Text, {
-      className: C.guildName,
+      className: g.guildName,
       variant: "text-md/semibold",
       children: t.name
     }), (0, i.jsx)("img", {
@@ -45,20 +45,20 @@ function j(e) {
   let {
     directoryChannelId: t,
     guild: n
-  } = e, s = (0, o.e7)([u.Z], () => u.Z.getDirectoryEntry(t, n.id)), r = l.useRef(null);
+  } = e, r = (0, o.e7)([u.Z], () => u.Z.getDirectoryEntry(t, n.id)), s = l.useRef(null);
   return (0, i.jsxs)("div", {
-    className: C.guildRow,
+    className: g.guildRow,
     children: [(0, i.jsx)(d.Z, {
       guild: n,
       size: d.Z.Sizes.MEDIUM,
       active: true
     }), (0, i.jsx)(c.Text, {
-      className: C.guildName,
+      className: g.guildName,
       variant: "text-md/normal",
       children: n.name
     }), (0, i.jsx)(m.Z, {
-      entry: s,
-      targetElementRef: r,
+      entry: r,
+      targetElementRef: s,
       children: e => {
         var t, n;
         return (0, i.jsx)(c.xhG, (t = function(e) {
@@ -79,11 +79,11 @@ function j(e) {
           }
           return e
         }({
-          ref: r,
+          ref: s,
           size: "md",
           color: "currentColor"
         }, e), n = n = {
-          className: C.overflowIcon
+          className: g.overflowIcon
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -102,7 +102,7 @@ function j(e) {
 function h(e) {
   let t, {
       directoryChannelId: n,
-      onGuildChosen: s,
+      onGuildChosen: r,
       handleChooseCreate: o,
       directoryGuildName: d,
       availableGuilds: u,
@@ -111,31 +111,31 @@ function h(e) {
     } = e,
     [h, _] = l.useState(0);
   return t = p ? (0, i.jsx)("div", {
-    className: C.emptyContainer,
+    className: g.emptyContainer,
     children: (0, i.jsx)(c.$jN, {})
   }) : 0 === h ? 0 === u.length ? (0, i.jsxs)("div", {
-    className: C.emptyContainer,
+    className: g.emptyContainer,
     children: [(0, i.jsx)("img", {
-      src: g,
+      src: C,
       alt: "",
-      className: C.emptyImage
+      className: g.emptyImage
     }), (0, i.jsx)(c.Text, {
-      className: C.emptyText,
+      className: g.emptyText,
       color: "header-secondary",
       variant: "text-md/normal",
       children: x.intl.string(x.t.liuEhd)
     })]
   }) : u.map(e => (0, i.jsx)(f, {
     guild: e,
-    onClick: () => s(e)
+    onClick: () => r(e)
   }, e.id)) : 0 === m.length ? (0, i.jsxs)("div", {
-    className: C.emptyContainer,
+    className: g.emptyContainer,
     children: [(0, i.jsx)("img", {
-      src: g,
+      src: C,
       alt: "",
-      className: C.emptyImage
+      className: g.emptyImage
     }), (0, i.jsx)(c.Text, {
-      className: C.emptyText,
+      className: g.emptyText,
       color: "header-secondary",
       variant: "text-md/normal",
       children: x.intl.string(x.t.WJLuKK)
@@ -151,36 +151,36 @@ function h(e) {
       subtitle: x.intl.string(x.t.pYFZ9p)
     }), (0, i.jsx)(a.fef, {
       controls: (0, i.jsxs)(c.njP, {
-        className: C.tabBar,
+        className: g.tabBar,
         selectedItem: h,
         onItemSelect: _,
         type: "top",
         look: "brand",
         children: [(0, i.jsx)(c.njP.Item, {
-          className: r()(C.tabBarItem, {
-            [C.selectedTab]: 0 === h
+          className: s()(g.tabBarItem, {
+            [g.selectedTab]: 0 === h
           }),
           id: 0,
           children: x.intl.string(x.t.FTe8HS)
         }), (0, i.jsx)(c.njP.Item, {
-          className: r()(C.tabBarItem, {
-            [C.selectedTab]: 1 === h
+          className: s()(g.tabBarItem, {
+            [g.selectedTab]: 1 === h
           }),
           id: 1,
           children: x.intl.string(x.t.epOumr)
         })]
       }),
       children: (0, i.jsx)(c.Ttm, {
-        className: C.scroller,
+        className: g.scroller,
         children: (0, i.jsx)("div", {
-          className: C.guildList,
+          className: g.guildList,
           children: t
         })
       })
     }), (0, i.jsxs)(a.mzw, {
       children: [(0, i.jsx)(c.Heading, {
         variant: "heading-lg/semibold",
-        className: C.footerTitle,
+        className: g.footerTitle,
         children: x.intl.string(x.t.pgCZRP)
       }), (0, i.jsx)(a.Go$, {
         actionsFullWidth: true,

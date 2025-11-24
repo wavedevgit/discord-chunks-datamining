@@ -1,7 +1,7 @@
 /** Chunk was on 42483 **/
 /** chunk id: 834891, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  E: () => c,
+  E: () => o,
   l: () => d
 });
 var i, Chunk149765 = require("./149765.js"),
@@ -10,7 +10,7 @@ var i, Chunk149765 = require("./149765.js"),
   Chunk388032 = require("./388032.jsx"),
   d = ((i = {}).CREATE = "CREATE", i.GAMING = "GAMING", i.FRIENDS = "FRIENDS", i.STUDY = "STUDY", i.CLUBS = "CLUBS", i.CREATORS = "CREATORS", i.LOCAL_COMMUNITY = "LOCAL_COMMUNITY", i.SCHOOL_CLUB = "SCHOOL_CLUB", i);
 
-function c() {
+function o() {
   return {
     CREATE: {
       id: "CREATE",

@@ -45,10 +45,10 @@ function j(e) {
     }
     null != e && (await u.bF(t, e.id, U, w), I(f.VX.CONFIRMATION))
   }, X = {
-    impression_group: s.ImpressionGroups.DIRECTORY_GUILD_ADD_FLOW
+    impression_group: r.ImpressionGroups.DIRECTORY_GUILD_ADD_FLOW
   };
   return (0, i.jsx)("div", {
-    children: (0, i.jsx)(r.IX, {
+    children: (0, i.jsx)(s.IX, {
       transitionState: n,
       onClose: h,
       children: (0, i.jsxs)(a.MyZ, {
@@ -56,7 +56,7 @@ function j(e) {
         onSlideReady: e => O(e),
         children: [(0, i.jsx)(a.Mi4, {
           id: f.VX.CHOOSE_GUILD,
-          impressionName: s.ImpressionNames.HUB_EXISTING_GUILD_CHOOSE,
+          impressionName: r.ImpressionNames.HUB_EXISTING_GUILD_CHOOSE,
           impressionProperties: X,
           children: (0, i.jsx)(x.Z, {
             directoryChannelId: t,
@@ -73,7 +73,7 @@ function j(e) {
           })
         }), (0, i.jsx)(a.Mi4, {
           id: f.VX.GUILD_TEMPLATES,
-          impressionName: s.ImpressionNames.HUB_CREATE_GUILD_TEMPLATE,
+          impressionName: r.ImpressionNames.HUB_CREATE_GUILD_TEMPLATE,
           impressionProperties: X,
           children: (0, i.jsx)(p.Z, {
             directoryGuildName: _,
@@ -84,7 +84,7 @@ function j(e) {
           })
         }), (0, i.jsx)(a.Mi4, {
           id: f.VX.CUSTOMIZE_NEW_GUILD,
-          impressionName: s.ImpressionNames.HUB_CREATE_GUILD_CUSTOMIZE,
+          impressionName: r.ImpressionNames.HUB_CREATE_GUILD_CUSTOMIZE,
           impressionProperties: X,
           children: (0, i.jsx)(c.Z, {
             guildTemplate: Z,
@@ -96,9 +96,9 @@ function j(e) {
           })
         }), (0, i.jsx)(a.Mi4, {
           id: f.VX.CUSTOMIZE_EXISTING_GUILD,
-          impressionName: s.ImpressionNames.HUB_EXISTING_GUILD_CUSTOMIZE,
+          impressionName: r.ImpressionNames.HUB_EXISTING_GUILD_CUSTOMIZE,
           impressionProperties: X,
-          children: (0, i.jsx)(C.Z, {
+          children: (0, i.jsx)(g.Z, {
             directoryChannelId: t,
             description: U,
             onDescriptionChange: D,
@@ -109,9 +109,9 @@ function j(e) {
           })
         }), (0, i.jsx)(a.Mi4, {
           id: f.VX.CONFIRMATION,
-          impressionName: s.ImpressionNames.DIRECTORY_ADD_GUILD_CONFIRMATION,
+          impressionName: r.ImpressionNames.DIRECTORY_ADD_GUILD_CONFIRMATION,
           impressionProperties: X,
-          children: (0, i.jsx)(g.Z, {
+          children: (0, i.jsx)(C.Z, {
             directoryGuildName: _,
             guildToAdd: H,
             isExistingGuildFlow: k,

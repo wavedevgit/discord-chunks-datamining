@@ -41,7 +41,7 @@ function p(e) {
           if (null != j) j(v, y);
           else {
             let e = await m.Z.createGuildFromTemplate(v, y, n, L, M);
-            r.Z.transitionToGuildSync(e.id), null == h || h(e.id)
+            s.Z.transitionToGuildSync(e.id), null == h || h(e.id)
           }
         } catch (e) {
           T(e)
@@ -50,52 +50,55 @@ function p(e) {
       }
     }, [n, j, v, y, L, M, h]),
     w = (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(s.Button, {
+      children: [(0, i.jsx)(r.Button, {
         variant: "primary",
-        text: null != j ? C.intl.string(C.t.PDTjLN) : C.intl.string(C.t.CumH4u),
+        text: null != j ? g.intl.string(g.t.PDTjLN) : g.intl.string(g.t.CumH4u),
         onClick: D,
         disabled: 0 === v.length,
         loading: Z
-      }), (0, i.jsx)(s.Avr, {
+      }), (0, i.jsx)(r.Avr, {
         size: "sm",
         variant: "secondary",
-        text: C.intl.string(C.t["13/7kX"]),
+        text: g.intl.string(g.t["13/7kX"]),
         onClick: f
       })]
     });
   return {
     content: (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsxs)(s.xBx, {
+      children: [(0, i.jsxs)(r.xBx, {
+        "data-migration-pending": true,
         direction: o.Z.Direction.VERTICAL,
-        className: g.header,
+        className: C.header,
         separator: false,
-        children: [(0, i.jsx)(s.Heading, {
-          className: g.title,
+        children: [(0, i.jsx)(r.Heading, {
+          className: C.title,
           variant: "heading-xl/semibold",
-          children: C.intl.string(C.t["2H6Nij"])
-        }), (0, i.jsx)(s.Text, {
-          className: g.subtitle,
+          children: g.intl.string(g.t["2H6Nij"])
+        }), (0, i.jsx)(r.Text, {
+          className: C.subtitle,
           color: "header-secondary",
           variant: "text-md/normal",
-          children: C.intl.string(C.t.AAfVqR)
-        }), null != p && (0, i.jsx)(s.olH, {
-          className: g.closeButton,
+          children: g.intl.string(g.t.AAfVqR)
+        }), null != p && (0, i.jsx)(r.olH, {
+          "data-migration-pending": true,
+          className: C.closeButton,
           onClick: p
         })]
-      }), (0, i.jsxs)(s.hzk, {
-        className: g.createGuild,
+      }), (0, i.jsxs)(r.hzk, {
+        "data-migration-pending": true,
+        className: C.createGuild,
         children: [(0, i.jsx)("div", {
-          className: g.uploadIcon,
+          className: C.uploadIcon,
           children: (0, i.jsx)(a.Z, {
             icon: y,
             onChange: O
           })
         }), (0, i.jsx)("form", {
           onSubmit: D,
-          children: (0, i.jsxs)(s.Kqy, {
+          children: (0, i.jsxs)(r.Kqy, {
             gap: 16,
-            children: [(0, i.jsx)(s.oil, {
-              label: C.intl.string(C.t.dBih7e),
+            children: [(0, i.jsx)(r.oil, {
+              label: g.intl.string(g.t.dBih7e),
               required: true,
               error: null == N ? true : N.getFirstFieldErrorMessage("name"),
               value: v,
@@ -103,26 +106,27 @@ function p(e) {
               onChange: I,
               inputRef: U,
               id: G
-            }), E && (0, i.jsx)(s.rsf, {
+            }), E && (0, i.jsx)(r.rsf, {
               label: "Staff Only",
-              description: C.intl.string(C.t.edQ5va),
+              description: g.intl.string(g.t.edQ5va),
               checked: M,
               onChange: e => H(e)
-            }), (0, i.jsx)(s.Text, {
+            }), (0, i.jsx)(r.Text, {
               variant: "text-xs/normal",
               color: "text-muted",
-              children: C.intl.format(C.t["2bprXx"], {
+              children: g.intl.format(g.t["2bprXx"], {
                 guidelinesURL: x.EYA.GUIDELINES
               })
             })]
           })
-        }), null == N || N.hasFieldErrors() ? null : (0, i.jsx)(s.Text, {
+        }), null == N || N.hasFieldErrors() ? null : (0, i.jsx)(r.Text, {
           variant: "text-xs/normal",
           color: "text-danger",
           children: N.message
         })]
-      }), b && (0, i.jsx)(s.mzw, {
-        className: g.footer,
+      }), b && (0, i.jsx)(r.mzw, {
+        "data-migration-pending": true,
+        className: C.footer,
         children: w
       })]
     }),

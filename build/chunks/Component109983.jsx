@@ -18,21 +18,21 @@ function a(e) {
   } = e;
   return (0, i.jsx)(l.tEY, {
     children: (0, i.jsxs)("button", {
-      className: s.container,
+      className: r.container,
       onClick: a,
       autoFocus: o,
       children: [(0, i.jsx)("img", {
-        className: s.icon,
+        className: r.icon,
         alt: "",
         src: t
       }), (0, i.jsx)(l.Text, {
-        className: s.text,
+        className: r.text,
         variant: "text-md/bold",
         children: n
       }), (0, i.jsx)("img", {
-        className: s.arrow,
+        className: r.arrow,
         alt: "",
-        src: r
+        src: s
       })]
     })
   })
