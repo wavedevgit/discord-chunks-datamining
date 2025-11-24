@@ -188,7 +188,7 @@ function M(e) {
   m = true
 }
 
-function k(e) {
+function j(e) {
   let {
     channels: t
   } = e;
@@ -198,7 +198,7 @@ function k(e) {
   return n
 }
 
-function j(e) {
+function k(e) {
   let {
     channel: t
   } = e;
@@ -284,8 +284,8 @@ let Z = new B(Chunk570140.Z, {
   GUILD_UPDATE: x,
   GUILD_DELETE: x,
   CHANNEL_CREATE: M,
-  CHANNEL_UPDATES: k,
-  CHANNEL_DELETE: j,
+  CHANNEL_UPDATES: j,
+  CHANNEL_DELETE: k,
   GUILD_MEMBER_UPDATE: U,
   GUILD_ROLE_CREATE: x,
   GUILD_ROLE_UPDATE: x,

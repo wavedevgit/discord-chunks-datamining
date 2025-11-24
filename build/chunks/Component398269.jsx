@@ -75,7 +75,7 @@ function m(e, t) {
   (0, a.ZDy)(async () => {
     let {
       default: i
-    } = await n.e("63940").then(n.bind(n, 17060));
+    } = await Promise.all([n.e("82077"), n.e("74815")]).then(n.bind(n, 17060));
     return n => (0, r.jsx)(i, p(f({}, n), {
       location: e,
       appContext: t

@@ -46,7 +46,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function k(e) {
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,7 +71,7 @@ function j(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -181,7 +181,7 @@ let V = Chunk428595.Z.RULES,
         if (Q.test(r)) return null;
         let i = G("@", e, t.users, "mention");
         if (i || (i = G("@", e, t.mentionableRoles, "roleMention"))) return i;
-        if (!(i = G("@", e, t.users.map(e => U(k({}, e), {
+        if (!(i = G("@", e, t.users.map(e => U(j({}, e), {
             text: e.text.split("#")[0]
           })), "mention"))) return null;
         let a = X.exec(e);
@@ -259,7 +259,7 @@ let V = Chunk428595.Z.RULES,
         }
       }
     },
-    text: U(k({}, H), {
+    text: U(j({}, H), {
       match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, _.T9)(t.textExclusions).exec(e) : null != H.match ? H.match(e, t, "") : null
     })
   },
@@ -384,7 +384,7 @@ let V = Chunk428595.Z.RULES,
         content: "<id:".concat(e[1], ">")
       })
     },
-    timestamp: U(k({}, V.timestamp), {
+    timestamp: U(j({}, V.timestamp), {
       parse() {
         for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
         let r = V.timestamp.parse(...exports);
@@ -395,7 +395,7 @@ let V = Chunk428595.Z.RULES,
         }
       }
     }),
-    text: k({}, H)
+    text: j({}, H)
   };
 [J, $].forEach(e => {
   Object.keys(e).forEach((t, n) => {

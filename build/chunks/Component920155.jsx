@@ -119,8 +119,8 @@ function D(e) {
     hasVideo: L = false,
     gradientColor: x,
     gradientOffsetBottom: M = .4,
-    onPositionChange: k,
-    onNudgeChange: j,
+    onPositionChange: j,
+    onNudgeChange: k,
     scrollBehavior: U = "sticky",
     modal: G = false,
     returnRef: B,
@@ -129,10 +129,10 @@ function D(e) {
     ref: z,
     width: q,
     height: X
-  } = (0, d.ZP)(), Q = (0, c.e7)([f.Z], () => f.Z.getLayers()), J = null != (t = Q[Q.length - 1]) ? t : "base", $ = i.useRef(k);
+  } = (0, d.ZP)(), Q = (0, c.e7)([f.Z], () => f.Z.getLayers()), J = null != (t = Q[Q.length - 1]) ? t : "base", $ = i.useRef(j);
   i.useEffect(() => {
-    $.current = k
-  }, [k]);
+    $.current = j
+  }, [j]);
   let ee = i.useCallback(e => {
       var t;
       null != e && e !== W.current && (W.current = e, Y(e), null == (t = $.current) || t.call($, e))
@@ -180,7 +180,7 @@ function D(e) {
         position: i,
         nudge: a
       } = e, c = O(e, ["setPopoutRef", "position", "nudge"]);
-      return ee(i), a !== K.current && (K.current = a, null == j || j(a)), er((e, i) => {
+      return ee(i), a !== K.current && (K.current = a, null == k || k(a)), er((e, i) => {
         if (!i) return null;
         let a = (0, r.jsx)(l.VqE, y(E({}, c), {
           setDialogRef: t,

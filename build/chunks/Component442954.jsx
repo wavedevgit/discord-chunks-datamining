@@ -343,7 +343,7 @@ let j = {
   GameDetectionReportModal: async () => {
     let {
       default: e
-    } = await require.e("82077").then(require.bind(require, 953848));
+    } = await Promise.all([require.e("82077"), require.e("48547")]).then(require.bind(require, 953848));
     return t => (0, a.jsx)(e, v(b({}, t), {
       detectedActivity: {
         application_id: "123456789",

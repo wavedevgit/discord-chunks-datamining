@@ -52,26 +52,26 @@ let g = (e, t, n, r) => {
       } = e,
       M = (0, i.e7)([o.Z], () => o.Z.inReverseTrial());
     if (A) return null;
-    let k = null == e.planGroup ? [] : e.planGroup;
+    let j = null == e.planGroup ? [] : e.planGroup;
     if (null != T) {
       let e = c.ZP.getIntervalForInvoice(T);
       t = e.intervalType, n = e.intervalCount, s = (0, u.og)((0, u.T4)(T.total, T.currency), t, n), E = (0, u.og)((0, u.T4)(T.subtotal, T.currency), t, n)
     } else null != b && (t = b.interval, n = b.intervalCount);
-    let j = (0, a.K)({
+    let k = (0, a.K)({
         purchaseType: C || f.GZQ.SUBSCRIPTION,
         plan: b,
         premiumSubscription: null == D ? null : D,
         productLine: N,
         isGift: !!y,
-        planGroup: k,
+        planGroup: j,
         isPrepaidPaymentSource: false
       }),
       U = h.intl.format(h.t.Y2Rkqc, {
-        primaryText: j,
+        primaryText: k,
         paidURL: f.EYA.PAID_TERMS
       }),
       G = h.intl.format(h.t.H2uH5b, {
-        primaryText: j,
+        primaryText: k,
         paidURL: f.EYA.PAID_TERMS
       }),
       B = "",
@@ -144,7 +144,7 @@ let g = (e, t, n, r) => {
           plan: b,
           premiumSubscription: null == D ? null : D,
           isGift: false,
-          planGroup: k,
+          planGroup: j,
           isPrepaidPaymentSource: false
         });
         O || (e = g(P, t, n, b.id)), B = (null == D ? true : D.isPausedAllowsResumeButNotUpdates) ? h.intl.format(h.t.B6oNwB, {
@@ -153,7 +153,7 @@ let g = (e, t, n, r) => {
           paidURL: f.EYA.PAID_TERMS,
           contactLink: f.EYA.CONTACT,
           helpdeskArticle: l.Z.getArticleURL(f.BhN.BILLING)
-        }) : null != D && (0, d.GY)(D, b.id, k) ? h.intl.format(h.t.LyBQUW, {
+        }) : null != D && (0, d.GY)(D, b.id, j) ? h.intl.format(h.t.LyBQUW, {
           primaryText: r,
           rate: e,
           paidURL: f.EYA.PAID_TERMS,

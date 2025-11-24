@@ -42,8 +42,8 @@ function x(e) {
     currentUser: n,
     displayProfile: x,
     guild: M,
-    isHoveringOrFocusing: k,
-    onOpenProfile: j,
+    isHoveringOrFocusing: j,
+    onOpenProfile: k,
     channelId: U,
     onClose: G
   } = e, B = u.ZP.useName(null == M ? true : M.id, U, t), {
@@ -63,7 +63,7 @@ function x(e) {
     children: [(0, r.jsx)(T.Z, {
       user: t,
       guildId: null == M ? true : M.id,
-      onOpenProfile: j,
+      onOpenProfile: k,
       onClose: G,
       usernameIcon: t.hasAvatarForGuild(null == M ? true : M.id) && (0, r.jsx)(C.Z, {
         user: t,
@@ -81,8 +81,8 @@ function x(e) {
           userId: t.id
         }), !H && (0, r.jsx)(S.Z, {
           userId: t.id,
-          isVisible: k,
-          onOpenProfile: j
+          isVisible: j,
+          onOpenProfile: k
         })]
       })
     }), Z === P.OGo.PENDING_INCOMING && (0, r.jsx)(I.Z.Overlay, {
@@ -103,7 +103,7 @@ function x(e) {
       user: t
     }), !W && (0, r.jsx)(R.Z, {
       user: t,
-      onOpenProfile: e => null == j ? true : j({
+      onOpenProfile: e => null == k ? true : k({
         section: e
       })
     }), t.isProvisional ? (0, r.jsx)(I.Z.Overlay, {
@@ -127,7 +127,7 @@ function x(e) {
     }), q && (0, r.jsx)(v.Z, {
       user: t,
       widgets: null == x ? true : x.widgets,
-      onOpenUserProfileModal: j
+      onOpenUserProfileModal: k
     }), W && (0, r.jsx)(h.Z, {
       isPremiumUser: X,
       onInteraction: G
@@ -135,7 +135,7 @@ function x(e) {
       user: t,
       currentUser: n,
       guildId: null == M ? true : M.id,
-      onOpenUserProfileModal: j,
+      onOpenUserProfileModal: k,
       onClose: G
     }) : (0, r.jsx)(m.Z, {
       user: t,

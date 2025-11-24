@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   ZP: () => U,
-  eJ: () => k,
-  nm: () => j
+  eJ: () => j,
+  nm: () => k
 }), require("./539854.js"), require("./997841.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -117,7 +117,7 @@ let x = 16,
       })
     })
   },
-  k = e => {
+  j = e => {
     let {
       children: t,
       collapsed: n = false,
@@ -130,7 +130,7 @@ let x = 16,
     })
   };
 
-function j(e) {
+function k(e) {
   let {
     className: t,
     mute: n,
@@ -151,8 +151,8 @@ function j(e) {
     application: w,
     guildId: L,
     channelId: x,
-    user: k,
-    disconnected: j,
+    user: j,
+    disconnected: k,
     hangStatusActivity: U,
     showHangStatus: Z,
     isSelf: F,
@@ -191,7 +191,7 @@ function j(e) {
       color: "currentColor",
       className: o()(C.icon, N)
     })
-  }, "video"))), j && K.push((0, r.jsx)(c.u, {
+  }, "video"))), k && K.push((0, r.jsx)(c.u, {
     text: A.intl.string(A.t.HFwRpk),
     children: (0, r.jsx)(u.Mgn, {
       className: o()(C.icon, N),
@@ -238,9 +238,9 @@ function j(e) {
         iconClassName: N,
         guildId: L,
         channelId: x,
-        userId: k.id
-      }, "".concat(k.id, "-game")) : (0, r.jsx)(M, {
-        userId: k.id,
+        userId: j.id
+      }, "".concat(j.id, "-game")) : (0, r.jsx)(M, {
+        userId: j.id,
         hangStatusActivity: U,
         iconClassName: N,
         isSelf: F,
@@ -273,7 +273,7 @@ let U = function(e) {
     collapsed: L,
     mute: x,
     serverMute: M,
-    guildId: k,
+    guildId: j,
     nick: U,
     isGuest: G,
     flipped: B,
@@ -284,7 +284,7 @@ let U = function(e) {
     user: Y
   } = _, W = (0, h.Z)({
     userId: Y.id,
-    guildId: k
+    guildId: j
   }), K = (0, m.j)({
     displayNameStyles: W
   }), z = e => {
@@ -319,7 +319,7 @@ let U = function(e) {
         [C.avatarLatched]: P && !N
       }),
       style: {
-        backgroundImage: "url(".concat(Y.getAvatarURL(k, a === I.ipw.LARGE ? 38 : 24), ")")
+        backgroundImage: "url(".concat(Y.getAvatarURL(j, a === I.ipw.LARGE ? 38 : 24), ")")
       }
     })
   }
@@ -337,7 +337,7 @@ let U = function(e) {
       t = {
         primaryGuild: Y.primaryGuild,
         userId: Y.id,
-        contextGuildId: k,
+        contextGuildId: j,
         isOverlay: d,
         disableTooltip: true,
         className: o()(C.clanTag, d && C.isOverlay),
@@ -351,7 +351,7 @@ let U = function(e) {
   }
 
   function en() {
-    return (0, r.jsx)(j, R({
+    return (0, r.jsx)(k, R({
       disabled: l
     }, _))
   }

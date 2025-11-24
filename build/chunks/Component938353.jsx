@@ -275,7 +275,7 @@ class tn extends(r = Chunk473749.Component) {
         code: r,
         url: a
       } = t;
-      if (n === A.g.INVITE) return this.shouldRenderInvite(r) ? (0, i.jsx)(ek.Z, {
+      if (n === A.g.INVITE) return this.shouldRenderInvite(r) ? (0, i.jsx)(ej.Z, {
         code: r,
         message: e,
         getAcceptInviteContext: this.getAcceptInviteContext
@@ -449,12 +449,12 @@ class tn extends(r = Chunk473749.Component) {
           onContextMenu: null != o ? e => {
             e.stopPropagation(), e.preventDefault(), o(e, l)
           } : true,
-          renderAudioComponent: g ? ej.jY : ej.q7,
-          renderImageComponent: ej.dS,
-          renderVideoComponent: ej.vZ,
-          renderPlaintextFilePreview: ej.d4,
-          renderGenericFileComponent: ej.ZK,
-          renderMosaicItemFooter: ej.L9,
+          renderAudioComponent: g ? ek.jY : ek.q7,
+          renderImageComponent: ek.dS,
+          renderVideoComponent: ek.vZ,
+          renderPlaintextFilePreview: ek.d4,
+          renderGenericFileComponent: ek.ZK,
+          renderMosaicItemFooter: ek.L9,
           onPlay: s,
           gifFavoriteButton: te(l)
         },
@@ -802,7 +802,7 @@ function tr(e) {
   } = (0, u.cj)([em.Z], () => ({
     canAddNewReactions: h && em.Z.can(eq.Plq.ADD_REACTIONS, n),
     canManageMessages: em.Z.can(eq.Plq.MANAGE_MESSAGES, n)
-  }), [h, n]), O = (0, k.ux)(n.guild_id), [, v] = (0, j.AB)(n.guild_id), I = (0, ec.$R)(n), T = (s === r.author.id || y) && r.author.id !== eq.LAt && false !== a && !(0, c.yE)(r.flags, eq.iLy.EPHEMERAL) && I && 1 === (0, eR.Z)(r), S = s === r.author.id && I && !o, A = r.author.id === s, C = r.isFirstMessageInForumPost(n), R = (0, eD.Z)({
+  }), [h, n]), O = (0, j.ux)(n.guild_id), [, v] = (0, k.AB)(n.guild_id), I = (0, ec.$R)(n), T = (s === r.author.id || y) && r.author.id !== eq.LAt && false !== a && !(0, c.yE)(r.flags, eq.iLy.EPHEMERAL) && I && 1 === (0, eR.Z)(r), S = s === r.author.id && I && !o, A = r.author.id === s, C = r.isFirstMessageInForumPost(n), R = (0, eD.Z)({
     channel: n,
     canChat: h,
     renderReactions: _,

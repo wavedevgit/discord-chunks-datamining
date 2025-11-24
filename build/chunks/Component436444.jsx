@@ -94,7 +94,7 @@ let S = {
       totalAvailableBoostsCount: R
     } = e, {
       analyticsLocations: P
-    } = (0, c.ZP)(), D = (0, u.Z)(), w = h.oCV[C], L = w - R, x = C <= N || y, M = x && C <= i.premiumTier, k = x && C < i.premiumTier, j = x && C === i.premiumTier, U = i.premiumTier < C && R >= w, {
+    } = (0, c.ZP)(), D = (0, u.Z)(), w = h.oCV[C], L = w - R, x = C <= N || y, M = x && C <= i.premiumTier, j = x && C < i.premiumTier, k = x && C === i.premiumTier, U = i.premiumTier < C && R >= w, {
       scaleFactor: G
     } = (0, l.q_F)({
       from: {
@@ -160,8 +160,8 @@ let S = {
         className: a()(b.progressBarMarker, {
           [b.progressBarMarkerUnlocked]: M,
           [b.progressBarMarkerLocked]: F,
-          [b.progressBarMarkerLower]: k,
-          [b.progressBarMarkerCurrent]: j
+          [b.progressBarMarkerLower]: j,
+          [b.progressBarMarkerCurrent]: k
         }),
         style: {
           left: "".concat(100 * S[C], "%")

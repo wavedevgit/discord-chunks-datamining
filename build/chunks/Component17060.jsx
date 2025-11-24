@@ -1,12 +1,12 @@
-/** Chunk was on 63940 **/
+/** Chunk was on 74815 **/
 /** chunk id: 17060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => F
-}), require("./388685.js"), require("./642613.js"), require("./49124.js");
+  default: () => K
+}), require("./415506.js"), require("./388685.js"), require("./539854.js"), require("./642613.js"), require("./49124.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk348327 = require("./348327.js"),
-  r = require.n(Chunk348327),
+  i = require.n(Chunk348327),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk379649 = require("./379649.js"),
@@ -15,14 +15,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk593472 = require("./593472.js"),
   Chunk493773 = require("./493773.js"),
   Chunk579806 = require("./579806.js"),
-  Chunk835473 = require("./835473.js"),
   Chunk353926 = require("./353926.js"),
   Chunk594190 = require("./594190.js"),
-  Chunk925329 = require("./925329.jsx"),
+  Chunk953848 = require("./953848.jsx"),
+  Chunk77498 = require("./77498.js"),
   Chunk19780 = require("./19780.js"),
   Chunk808506 = require("./808506.js"),
   Chunk626135 = require("./626135.js"),
   Chunk499533 = require("./499533.js"),
+  Chunk709054 = require("./709054.js"),
   Chunk145597 = require("./145597.js"),
   Chunk427860 = require("./427860.js"),
   Chunk837268 = require("./837268.js"),
@@ -31,255 +32,247 @@ var Chunk54381 = require("./54381.js"),
   Chunk610394 = require("./610394.js"),
   Chunk338949 = require("./338949.js"),
   Chunk509140 = require("./509140.js"),
+  Chunk388627 = require("./388627.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk603841 = require("./603841.js");
 
-function k(e, t) {
-  return r()(e, t)
+function M(e, t) {
+  return i()(e, t)
 }
-let M = new Set([Chunk593472.Jx.BORDERLESS_FULLSCREEN, Chunk593472.Jx.FULLSCREEN, Chunk593472.Jx.WINDOWED, Chunk593472.Jx.MAXIMIZED, Chunk593472.Jx.MINIMIZED, Chunk593472.Jx.UNKNOWN]);
-
-function J(e) {
-  var t, n;
-  let {
-    game: a
-  } = e, i = (null == a ? true : a.gameId) != null ? [a.gameId] : [], [r] = (0, f.Z)(i);
-  return null == a ? (0, l.jsxs)("div", {
-    className: D.gameSelectionOption,
-    children: [(0, l.jsx)(d.Text, {
-      variant: "text-md/medium",
-      color: "text-primary",
-      className: D.gameSelectionOptionText,
-      children: w.intl.string(w.t.b1IW2e)
-    }), (0, l.jsx)(d.Fbu, {
-      color: d.TVs.colors.INTERACTIVE_NORMAL,
-      size: "sm",
-      className: D.gameSelectionOptionChevron
-    })]
-  }) : (0, l.jsxs)("div", {
-    className: D.gameSelectionOption,
-    children: [(0, l.jsx)(y.Z, {
-      game: r,
-      size: y.A.XSMALL
-    }), (0, l.jsx)(d.Text, {
-      variant: "text-md/medium",
-      color: "text-primary",
-      className: D.gameSelectionOptionText,
-      children: null != (t = null == r ? true : r.name) ? t : null != (n = a.gameName) ? n : w.intl.string(w.t.kYpwDv)
-    }), (0, l.jsx)(d.Fbu, {
-      color: d.TVs.colors.INTERACTIVE_NORMAL,
-      size: "sm",
-      className: D.gameSelectionOptionChevron
-    })]
-  })
-}
+let R = new Chunk709054.SnowflakeSequence,
+  J = {},
+  F = new Set([Chunk593472.Jx.BORDERLESS_FULLSCREEN, Chunk593472.Jx.FULLSCREEN, Chunk593472.Jx.WINDOWED, Chunk593472.Jx.MAXIMIZED, Chunk593472.Jx.MINIMIZED, Chunk593472.Jx.UNKNOWN]);
 
 function L(e) {
-  for (let t of Object.values(I.default.getClosedTrackedGamesHistory()))
+  for (let t of Object.values(Z.default.getClosedTrackedGamesHistory()))
     if (t.applicationId === e.id || t.gameName === e.name) return t;
   return null
 }
 
-function R(e) {
+function U(e) {
+  var t, n, l;
+  let r = L(e);
+  return {
+    gameId: e.id,
+    gameName: e.name,
+    gamePid: null != (t = null == r ? true : r.pid) ? t : true,
+    fullscreenType: null != (n = null == r ? true : r.fullscreenType) ? n : true,
+    trackedGame: null != r ? r : true,
+    persistentGame: e,
+    runningGame: null != e.name && null != (l = p.ZP.getGameForName(e.name)) ? l : true
+  }
+}
+
+function W(e) {
+  var t, n;
+  let [l] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [_.Z];
+  if (null == e) return null;
+  if (null != e.gameId) {
+    let t = l.getDetectableGame(e.gameId);
+    if (null != t) return t
+  }
+  let r = null != (t = e.runningGame) ? t : e.persistentGame;
+  if (null != r) {
+    let e = l.getGameByGameData(r);
+    if (null != e) return e
+  }
+  if (null != e.gameName) {
+    let t = l.getGameByName(e.gameName);
+    if (null != t) return t
+  }
+  if (null == e || null == e.gameName) return null;
+  let a = null != (n = e.gameId) ? n : function(e) {
+    if (null != J[e]) return J[e];
+    let t = Date.now(),
+      n = null;
+    try {
+      R.willOverflowNext() && R.reset(), n = S.default.fromTimestampWithSequence(t, R)
+    } catch (e) {
+      R.reset(), n = S.default.fromTimestampWithSequence(t, R)
+    }
+    if (null == n) throw Error("Failed to generate snowflake id");
+    return J[e] = n, n
+  }(e.gameName);
+  return {
+    id: S.default.cast(a),
+    name: e.gameName,
+    description: true,
+    icon: true,
+    icon_hash: true,
+    cover_image_hash: true,
+    aliases: [],
+    executables: [],
+    overlay: false,
+    overlayWarn: false,
+    overlayCompatibilityHook: false,
+    hook: true,
+    supportsOutOfProcessOverlay: false,
+    thirdPartySkus: [],
+    themes: [],
+    linkedApplications: true
+  }
+}
+
+function A(e) {
   let {
     selectedGame: t,
-    setSelectedGame: a
-  } = e, i = e => {
-    null != e ? a(function(e) {
-      var t, n;
-      let l = L(e);
-      return {
-        gameId: e.id,
-        gameName: e.name,
-        gamePid: null != (t = null == l ? true : l.pid) ? t : true,
-        fullscreenType: null != (n = null == l ? true : l.fullscreenType) ? n : true,
-        trackedGame: null != l ? l : true
+    setSelectedGame: n
+  } = e, r = (0, o.Wu)([_.Z, p.ZP], () => {
+    let e = _.Z.games,
+      t = e.reduce((e, t) => (e[t.id] = t, e), {});
+    return [...e, ...p.ZP.getGamesSeen(false).reduce((e, n) => {
+      let l = n.id;
+      if (null != l && null != t[l]) return e;
+      let r = W(U(n), true);
+      if (null != r) {
+        if (null != t[r.id]) return e;
+        e.push(r)
       }
-    }(e)) : a(null)
-  };
-  return (0, l.jsx)(d.kL8, {
-    "aria-label": w.intl.string(w.t.b1IW2e),
-    onClick: () => {
-      (0, d.ZDy)(async () => {
-        let {
-          default: e
-        } = await n.e("82077").then(n.bind(n, 953848));
-        return n => {
-          var a, r, o, s;
-          return (0, l.jsx)(e, (o = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-              var n = null != arguments[t] ? arguments[t] : {},
-                l = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), l.forEach(function(t) {
-                var l;
-                l = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: l,
-                  enumerable: true,
-                  configurable: true,
-                  writable: true
-                }) : e[t] = l
-              })
-            }
-            return e
-          }({}, n), s = s = {
-            defaultStep: "game_search",
-            detectedActivity: null != t ? {
-              application_id: null != (a = t.gameId) ? a : true,
-              name: null != (r = t.gameName) ? r : ""
-            } : true,
-            onSubmitted: i
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-              var l = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, l)
-            }
-            return n
-          })(Object(s)).forEach(function(e) {
-            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
-          }), o))
+      return e
+    }, [])]
+  }, []), a = (0, o.e7)([_.Z], () => W(t, [_.Z]), [t]);
+  return (0, l.jsx)(y.g, {
+    games: r,
+    selectedGame: null != a ? a : null,
+    onGameSelected: e => {
+      null != e ? n(function(e) {
+        var t, n, l;
+        let r = L(e);
+        return {
+          gameId: e.id,
+          gameName: e.name,
+          gamePid: null != (t = null == r ? true : r.pid) ? t : true,
+          fullscreenType: null != (n = null == r ? true : r.fullscreenType) ? n : true,
+          trackedGame: null != r ? r : true,
+          runningGame: null != e.name && null != (l = p.ZP.getGameForName(e.name)) ? l : true
         }
-      })
+      }(e)) : n(null)
     },
-    children: (0, l.jsx)(J, {
-      game: t
-    })
+    placeholder: D.intl.string(D.t.b1IW2e)
   })
 }
-let A = {
+let B = {
   HandleFocusChanged: (e, t) => {
     var n;
-    if (!(0, N._R)(e, "HandleFocusChanged")) returntrue;
-    let l = null != t && null != (n = P.Z.getKnownWindowHandlesForPID(t)) ? n : new Set,
+    if (!(0, E._R)(e, "HandleFocusChanged")) returntrue;
+    let l = null != t && null != (n = G.Z.getKnownWindowHandlesForPID(t)) ? n : new Set,
       {
-        focusedPid: a,
-        focusedWindowHandle: i
+        focusedPid: r,
+        focusedWindowHandle: a
       } = e.data;
-    return null == i && null == a && !!l.has(i) && a === t
+    return null != a && null != r && r !== P.UNSET_PID && !!l.has(a) && r === t
   },
   EventHook: (e, t) => {
     var n;
-    if (!(0, N._R)(e, "EventHook")) returntrue;
-    let l = null != t && null != (n = P.Z.getKnownWindowHandlesForPID(t)) ? n : new Set;
+    if (!(0, E._R)(e, "EventHook")) returntrue;
+    let l = null != t && null != (n = G.Z.getKnownWindowHandlesForPID(t)) ? n : new Set;
     try {
       let {
         receivedWindow: n,
-        targetPid: a
+        targetPid: r
       } = e.data;
-      if (null != n && l.has(n)) return null != a && a === t
+      if (null != n && l.has(n)) return null != r && r === t
     } finally {
       returnfalse
     }
   }
 };
 
-function F(e) {
-  var t, n;
+function K(e) {
+  var t, a;
   let {
     onClose: i,
-    transitionState: r,
-    location: f,
-    appContext: y
-  } = e, J = (0, s.e7)([b.default], () => {
-    var e;
-    return null != (e = b.default.getFocusedPID()) ? e : (0, S.getPID)()
-  }), F = (0, s.e7)([I.default], () => I.default.getTrackedGameByPid(J)), [G, U] = a.useState(null), [W, z] = a.useState(""), B = function() {
-    var e, t;
-    let n = (0, s.e7)([b.default], () => {
-        var e;
-        return null != (e = b.default.getFocusedPID()) ? e : (0, S.getPID)()
-      }),
-      l = (0, s.e7)([I.default], () => I.default.getTrackedGameByPid(n)),
-      a = (0, s.e7)([x.ZP], () => x.ZP.getVisibleGame()),
-      i = (0, s.e7)([x.ZP], () => x.ZP.getGamesSeen(false)[0]);
-    return null != l ? {
-      gameId: null != (e = l.applicationId) ? e : true,
-      gameName: null != (t = l.gameName) ? t : true,
-      gamePid: l.pid,
-      fullscreenType: l.fullscreenType,
-      trackedGame: l
-    } : null != a ? {
-      gameId: a.id,
-      gameName: a.name,
-      gamePid: a.pid,
-      fullscreenType: a.fullscreenType,
-      runningGame: a
-    } : null != i ? function(e) {
-      var t, n;
-      let l = L(e);
-      return {
-        gameId: e.id,
-        gameName: e.name,
-        gamePid: null != (t = null == l ? true : l.pid) ? t : true,
-        fullscreenType: null != (n = null == l ? true : l.fullscreenType) ? n : true,
-        trackedGame: null != l ? l : true,
-        persistentGame: e
-      }
-    }(i) : null
-  }(), [H, K] = a.useState(null != (n = null != (t = null == B ? true : B.fullscreenType) ? t : null == F ? true : F.fullscreenType) ? n : null), [V, q] = a.useState(B), [X, Y] = a.useState(false), [Q, $] = a.useState(false), [ee, et] = a.useState(false), {
-    nativeState: en,
-    breadcrumbs: [el]
+    transitionState: y,
+    location: _,
+    appContext: S
+  } = e, R = (0, o.e7)([x.default], () => x.default.getFocusedPID()), J = null != R ? R : (0, P.getPID)(), W = (0, o.e7)([Z.default], () => Z.default.getTrackedGameByPid(J), [J]), [K, z] = r.useState(null), [H, q] = r.useState(""), X = function() {
+    let e = (0, j.II)(),
+      t = (0, o.e7)([x.default], () => x.default.getFocusedPID()),
+      n = null != t ? t : (0, P.getPID)(),
+      l = (0, o.e7)([Z.default], () => Z.default.getTrackedGameByPid(n), [n]),
+      r = (0, o.e7)([p.ZP], () => p.ZP.getVisibleGame()),
+      a = (0, o.e7)([p.ZP], () => p.ZP.getGamesSeen(false)[0]);
+    switch (true) {
+      case null != l:
+        return {
+          gameId: null != (u = l.applicationId) ? u : true, gameName: null != (s = l.gameName) ? s : true, gamePid: l.pid, fullscreenType: l.fullscreenType, trackedGame: l, runningGame: null != l.gameName && null != (d = p.ZP.getGameForName(l.gameName)) ? d : true
+        };
+      case null != e:
+        var i, u, s, d, c, m;
+        let g = p.ZP.getGameForName(e.name),
+          f = null == g ? true : g.pid;
+        return {
+          gameId: e.id, gameName: e.name, gamePid: null == g ? true : g.pid, fullscreenType: null != (c = null == g ? true : g.fullscreenType) ? c : true, runningGame: null != g ? g : true, trackedGame: null != f && null != (m = Z.default.getTrackedGameByPid(f)) ? m : true
+        };
+      case null != r:
+        return {
+          gameId: r.id, gameName: r.name, gamePid: r.pid, fullscreenType: r.fullscreenType, trackedGame: null != (i = L(r)) ? i : true, runningGame: r
+        };
+      default:
+        return null != a ? U(a) : null
+    }
+  }(), [V, Y] = r.useState(null != (a = null != (t = null == X ? true : X.fullscreenType) ? t : null == W ? true : W.fullscreenType) ? a : null), [Q, $] = r.useState(X), [ee, et] = r.useState(false), [en, el] = r.useState(false), [er, ea] = r.useState(false), {
+    nativeState: ei,
+    breadcrumbs: [eu]
   } = ((0, g.ZP)(() => (c.Z.setModuleLogging(true), c.Z.setStateDebugging(true), () => {
     c.Z.setModuleLogging(false), c.Z.setStateDebugging(false)
-  })), (0, s.e7)([C.Z], () => ({
-    nativeState: C.Z.getDebuggingState(),
-    breadcrumbs: C.Z.getOverlayLoggingBreadcrumbs()
-  }), [], k)), ea = a.useMemo(() => {
+  })), (0, o.e7)([w.Z], () => ({
+    nativeState: w.Z.getDebuggingState(),
+    breadcrumbs: w.Z.getOverlayLoggingBreadcrumbs()
+  }), [], M)), eo = r.useMemo(() => {
     let e = {
-      game_crashes_occurred: w.t["1UWmCV"],
-      poor_performance: w.t["4owu+4"],
-      overlay_unresponsive: w.t.Q8Z0xo,
-      keybindings_not_working: w.t.UnzaZs,
-      alt_tabbing_issues: w.t["/sG9Sf"],
-      game_not_interactable: w.t["+18gq6"],
-      game_forced_minimized: w.t.dabM8C,
-      other: w.t["UhbPA+"]
+      game_crashes_occurred: D.t["1UWmCV"],
+      poor_performance: D.t["4owu+4"],
+      overlay_unresponsive: D.t.Q8Z0xo,
+      keybindings_not_working: D.t.UnzaZs,
+      alt_tabbing_issues: D.t["/sG9Sf"],
+      game_not_interactable: D.t["+18gq6"],
+      game_forced_minimized: D.t.dabM8C,
+      other: D.t["UhbPA+"]
     };
     return Object.keys(e).map(t => ({
-      label: w.intl.string(e[t]),
+      label: D.intl.string(e[t]),
       value: t
     }))
-  }, []), ei = a.useMemo(() => {
+  }, []), es = r.useMemo(() => {
     let e = {
-      [m.Jx.FULLSCREEN]: w.t.AjBsPe,
-      [m.Jx.WINDOWED]: w.t["0oYq2i"],
-      [m.Jx.BORDERLESS_FULLSCREEN]: w.t.NwNvjf,
-      [m.Jx.MINIMIZED]: w.t.Wypflu,
-      [m.Jx.MAXIMIZED]: w.t["MUX2+G"],
-      [m.Jx.UNKNOWN]: w.t.QPOep8
+      [m.Jx.FULLSCREEN]: D.t.AjBsPe,
+      [m.Jx.WINDOWED]: D.t["0oYq2i"],
+      [m.Jx.BORDERLESS_FULLSCREEN]: D.t.NwNvjf,
+      [m.Jx.MINIMIZED]: D.t.Wypflu,
+      [m.Jx.MAXIMIZED]: D.t["MUX2+G"],
+      [m.Jx.UNKNOWN]: D.t.QPOep8
     };
-    return [...M].map(t => ({
-      label: w.intl.string(e[t]),
+    return [...F].map(t => ({
+      label: D.intl.string(e[t]),
       value: t
     }))
-  }, []), er = async () => {
-    $(true), await (0, u._v)(500), $(false)
-  }, eo = async () => {
-    var e, t, n, l, a;
-    if (null === G && 0 === W.length) {
-      et(true), er();
+  }, []), ed = async () => {
+    el(true), await (0, s._v)(500), el(false)
+  }, ec = async () => {
+    var e, t, r, a, u;
+    if (null === K && 0 === H.length) {
+      ea(true), ed();
       return
     }
-    Y(true);
-    let r = null != (n = b.default.getFocusedPID()) ? n : (0, S.getPID)(),
-      o = I.default.getTrackedGameByPid(r),
-      s = P.Z.getPopoutInitializationStages(),
-      c = (null == o ? true : o.overlayMethod) != null ? j.gl[o.overlayMethod] : null,
-      g = null != (l = null == o ? true : o.fullscreenType) ? l : m.Jx.UNKNOWN,
-      x = (0, N.y2)(el, e => {
-        for (let t of Object.values(A)) try {
-          if (!t(e, r)) returnfalse
+    et(true);
+    let o = null != (r = x.default.getFocusedPID()) ? r : (0, P.getPID)(),
+      c = Z.default.getTrackedGameByPid(o),
+      g = G.Z.getPopoutInitializationStages(),
+      p = (null == c ? true : c.overlayMethod) != null ? I.gl[c.overlayMethod] : null,
+      y = null != (a = null == c ? true : c.fullscreenType) ? a : m.Jx.UNKNOWN,
+      w = (0, E.y2)(eu, e => {
+        for (let t of Object.values(B)) try {
+          if (!t(e, o)) returnfalse
         } catch (e) {
           returnfalse
         }
         returntrue
       }),
-      C = T.Z.getRecentActions(10),
-      D = O.Z.getRecentExperimentBuckets(v.Z.getAllExperimentAssignments(), new Date(Date.now() - 7776e6)),
-      k = (null == o ? true : o.fullscreenHistory) == null ? null : Object.entries(o.fullscreenHistory).sort((e, t) => {
+      j = O.Z.getRecentActions(10),
+      D = b.Z.getRecentExperimentBuckets(v.Z.getAllExperimentAssignments(), new Date(Date.now() - 7776e6)),
+      C = (null == c ? true : c.fullscreenHistory) == null ? null : Object.entries(c.fullscreenHistory).sort((e, t) => {
         let [n] = e, [l] = t;
         return Number(l) - Number(n)
       }).map(e => {
@@ -287,107 +280,130 @@ function F(e) {
         return "".concat(t, ":").concat(m.Jx[n])
       }),
       M = {
-        issue_category: G,
-        details: W,
-        overlay_render_method: c,
-        hardware_display_count: null != (a = await (null === p.Z || true === p.Z || null == (t = p.Z.hardware) || null == (e = t.getDisplayCount) ? true : e.call(t))) ? a : null,
-        detected_fullscreen_type: m.Jx[g],
-        application_id: null == o ? true : o.applicationId,
-        application_name: null == o ? true : o.gameName,
-        game_pid: null == o ? true : o.pid,
-        recent_overlay_flux_actions: C,
-        overlay_module_state: null == o ? true : o.state,
-        overlay_native_state: JSON.stringify(en),
-        overlay_module_oop_initialization_state: JSON.stringify(s),
-        overlay_module_error_message: E.Z.errorMessage,
-        overlay_module_breadcrumbs: JSON.stringify(x),
-        fullscreen_history_for_pid: k,
-        media_session_id: _.Z.getMediaSessionId(),
+        issue_category: K,
+        details: H,
+        overlay_render_method: p,
+        hardware_display_count: null != (u = await (null === f.Z || true === f.Z || null == (t = f.Z.hardware) || null == (e = t.getDisplayCount) ? true : e.call(t))) ? u : null,
+        detected_fullscreen_type: m.Jx[y],
+        application_id: null == c ? true : c.applicationId,
+        application_name: null == c ? true : c.gameName,
+        game_pid: null == c ? true : c.pid,
+        recent_overlay_flux_actions: j,
+        overlay_module_state: null == c ? true : c.state,
+        overlay_native_state: JSON.stringify(ei),
+        overlay_module_oop_initialization_state: JSON.stringify(g),
+        overlay_module_error_message: k.Z.errorMessage,
+        overlay_module_breadcrumbs: JSON.stringify(w),
+        fullscreen_history_for_pid: C,
+        media_session_id: h.Z.getMediaSessionId(),
         recent_experiment_buckets: JSON.stringify(D),
-        location: f
+        location: _
       };
-    await h.default.track(Z.rMx.OVERLAY_BUG_REPORT, M), await (0, u._v)(1e3), Y(false), (0, d.showToast)((0, d.createToast)(w.intl.string(w.t.eQRpgV), d.ToastType.SUCCESS, {
-      appContext: y
-    })), i()
+    await N.default.track(T.rMx.OVERLAY_BUG_REPORT, M), await (0, s._v)(1e3), et(false), null == i || i(), (0, d.ZDy)(async () => {
+      let {
+        default: e
+      } = await n.e("86974").then(n.bind(n, 251889));
+      return t => (0, l.jsx)(e, function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            l = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), l.forEach(function(t) {
+            var l;
+            l = n[t], t in e ? Object.defineProperty(e, t, {
+              value: l,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = l
+          })
+        }
+        return e
+      }({}, t))
+    }, {
+      contextKey: (0, d.VnL)(S)
+    })
   };
   return (0, g.ZP)(() => {
-    h.default.track(Z.rMx.OPEN_MODAL, {
-      type: "overlay_disabled_questionnaire_modal"
+    N.default.track(T.rMx.OPEN_MODAL, {
+      type: "overlay_bug_reporter_modal",
+      location: _
     })
-  }), (0, l.jsx)(o.Modal, {
-    transitionState: r,
-    title: w.intl.string(w.t.OKmenM),
+  }), (0, l.jsx)(u.Modal, {
+    transitionState: y,
+    title: D.intl.string(D.t.OKmenM),
     actions: [{
-      text: w.intl.string(w.t["ETE/oC"]),
+      text: D.intl.string(D.t["ETE/oC"]),
       onClick: i,
       variant: "secondary",
-      disabled: X
+      disabled: ee
     }, {
-      text: w.intl.string(w.t.geKm7t),
-      onClick: eo,
+      text: D.intl.string(D.t.geKm7t),
+      onClick: ec,
       variant: "primary",
-      loading: X
+      loading: ee
     }],
     onClose: i,
     children: (0, l.jsxs)("div", {
-      className: D.modalContent,
+      className: C.modalContent,
       children: [(0, l.jsxs)("div", {
-        className: D.itemContainer,
+        className: C.itemContainer,
         children: [(0, l.jsx)(d.UkV, {
-          isShaking: Q,
+          isShaking: en,
           intensity: 1.5,
           children: (0, l.jsx)(d.Text, {
             variant: "text-md/medium",
-            color: ee ? "text-danger" : "text-primary",
-            children: w.intl.string(w.t.Trx7eJ)
+            color: er ? "text-danger" : "text-primary",
+            children: D.intl.string(D.t.Trx7eJ)
           })
         }), (0, l.jsx)(d.PhF, {
-          placeholder: w.intl.string(w.t.mKTzjI),
-          options: ea,
-          isSelected: e => e === G,
+          placeholder: D.intl.string(D.t.mKTzjI),
+          options: eo,
+          isSelected: e => e === K,
           select: e => {
-            U(e), et(false), $(false)
+            z(e), ea(false), el(false)
           },
           serialize: e => e
-        }), ee && (0, l.jsx)(d.Text, {
+        }), er && (0, l.jsx)(d.Text, {
           variant: "text-xs/semibold",
           color: "text-danger",
-          children: w.intl.string(w.t["5cqa9J"])
+          children: D.intl.string(D.t["5cqa9J"])
         })]
       }), (0, l.jsxs)("div", {
-        className: D.itemContainer,
+        className: C.itemContainer,
         children: [(0, l.jsx)(d.Text, {
           variant: "text-md/medium",
           color: "text-primary",
-          children: w.intl.string(w.t.iZufAY)
+          children: D.intl.string(D.t.iZufAY)
         }), (0, l.jsx)(d.Kx8, {
           autosize: true,
-          value: W,
+          value: H,
           maxLength: 1e3,
           showCharacterCount: false,
-          placeholder: w.intl.string(w.t["68mJXW"]),
-          onChange: z
+          placeholder: D.intl.string(D.t["68mJXW"]),
+          onChange: q
         }), (0, l.jsx)(d.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: w.intl.string(w.t.TzkM2a)
+          children: D.intl.string(D.t.TzkM2a)
         })]
       }), (0, l.jsx)("div", {
-        className: D.hr
+        className: C.hr
       }), (0, l.jsxs)("div", {
-        className: D.itemContainer,
+        className: C.itemContainer,
         children: [(0, l.jsx)(d.Text, {
           variant: "text-md/medium",
           color: "text-primary",
-          children: w.intl.string(w.t["8+SU+a"])
-        }), (0, l.jsx)(R, {
-          selectedGame: V,
-          setSelectedGame: q
+          children: D.intl.string(D.t["8+SU+a"])
+        }), (0, l.jsx)(A, {
+          selectedGame: Q,
+          setSelectedGame: $
         }), (0, l.jsx)(d.PhF, {
-          placeholder: w.intl.string(w.t.IjlqrF),
-          options: ei,
-          isSelected: e => e === H,
-          select: K,
+          placeholder: D.intl.string(D.t.IjlqrF),
+          options: es,
+          isSelected: e => e === V,
+          select: Y,
           serialize: e => "".concat(e)
         })]
       })]

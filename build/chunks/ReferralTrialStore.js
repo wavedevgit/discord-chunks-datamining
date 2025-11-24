@@ -87,14 +87,14 @@ function M(e) {
   null != t && (m.delete(t.id), g.add(t.id), E.set(t.id, t))
 }
 
-function k(e) {
+function j(e) {
   let {
     userTrialOfferId: t
   } = e;
   m.delete(t), g.add(t)
 }
 
-function j(e) {
+function k(e) {
   let {
     message: t
   } = e;
@@ -192,12 +192,12 @@ let Y = new H(Chunk570140.Z, {
   BILLING_CREATE_REFERRAL_SUCCESS: w,
   CREATE_REFERRALS_SUCCESS: L,
   BILLING_REFERRAL_RESOLVE_SUCCESS: M,
-  BILLING_REFERRAL_RESOLVE_FAIL: k,
+  BILLING_REFERRAL_RESOLVE_FAIL: j,
   REFERRALS_FETCH_ELIGIBLE_USER_START: Z,
   REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: F,
   REFERRALS_FETCH_ELIGIBLE_USER_FAIL: V,
   LOAD_MESSAGES_SUCCESS: U,
-  MESSAGE_CREATE: j,
+  MESSAGE_CREATE: k,
   LOAD_MESSAGES_AROUND_SUCCESS: U,
   LOGOUT: C
 })

@@ -19,5 +19,5 @@ function d(e) {
     if ((null == i ? true : i.id) == null) return;
     let e = o.Z.getStorefrontData(null == i ? true : i.id);
     (null == e ? true : e.state) === "loading" || (null == e ? true : e.state) === "fetched" && (null == e ? true : e.fetchedAt) != null && Date.now() - (null == e ? true : e.fetchedAt) < c || (0, s.YL)(null == i ? true : i.id)
-  }, [null == i ? true : i.id]), a
+  }, [null == i ? true : i.id, a]), a
 }

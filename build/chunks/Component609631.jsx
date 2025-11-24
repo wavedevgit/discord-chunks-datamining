@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 539907, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 609631, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   j: () => w,
@@ -12,11 +12,11 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk512722 = require("./512722.js"),
   c = require.n(Chunk512722),
   Chunk374470 = require("./374470.js"),
+  Chunk155127 = require("./155127.js"),
+  Chunk70007 = require("./70007.jsx"),
+  Chunk709048 = require("./709048.jsx"),
   Chunk762328 = require("./762328.jsx"),
-  Chunk793030 = require("./793030.js"),
-  Chunk585483 = require("./585483.js"),
-  Chunk872801 = require("./872801.js"),
-  Chunk981631 = require("./981631.js"),
+  Chunk168718 = require("./168718.jsx"),
   Chunk793906 = require("./793906.js");
 
 function g(e, t, n) {
@@ -60,8 +60,8 @@ function y(e, t) {
 let O = new WeakMap;
 
 function v(e) {
-  let t = (0, p.Z)(e, m.layer);
-  return null == t && (t = (0, u.MD)(e, d.TA)), null != t ? t : null
+  let t = (0, u.sK)(e, m.layer);
+  return null == t && (t = (0, u.MD)(e, p.TA)), null != t ? t : null
 }
 
 function I(e, t) {
@@ -328,7 +328,7 @@ class w extends(r = Chunk473749.Component) {
       autoInvert: t
     } = this.props, n = this.elementRef.current;
     c()(null != require, "Unexpected null element");
-    let r = (0, Chunk793030.wLj)(require),
+    let r = (0, Chunk168718.wL)(require),
       {
         style: i,
         nudge: a
@@ -350,7 +350,7 @@ class w extends(r = Chunk473749.Component) {
       if (Chunk473749 > s && (o = {
           position: exports,
           style: Chunk374470,
-          nudge: Chunk762328
+          nudge: Chunk155127
         }, l = Chunk473749), s < 0 && Chunk473749 < 0) {
         let i, a = Chunk120356.position;
         if ((i = "top" === Chunk473749 || "bottom" === Chunk473749 ? "overlap_vertical" : "left" === Chunk473749 || "right" === Chunk473749 ? "overlap_horizontal" : Chunk473749) !== module && Chunk54381 !== exports) {
@@ -374,7 +374,7 @@ class w extends(r = Chunk473749.Component) {
       isPositioned: true
     }, this.calculateState()));
     let i = this.elementRef.current;
-    c()(null != Chunk54381, "Missing elementRef"), null != require.current && O.set(Chunk54381, require.current), Chunk585483.S.subscribe(Chunk981631.CkL.LAYER_POP_START, this.handleLayerPopStart), Chunk585483.S.subscribe(Chunk981631.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == Chunk54381 || null == (t = Chunk54381.ownerDocument) || null == (e = exports.defaultView) || module.addEventListener("resize", this.handleLayerPopComplete), null == r || r()
+    c()(null != Chunk54381, "Missing elementRef"), null != require.current && O.set(Chunk54381, require.current), null == Chunk54381 || null == (t = Chunk54381.ownerDocument) || null == (e = exports.defaultView) || module.addEventListener("resize", this.updatePosition), null == r || r()
   }
   componentDidUpdate(e, t) {
     if (S(e) === S(this.props) && D(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
@@ -385,7 +385,7 @@ class w extends(r = Chunk473749.Component) {
   componentWillUnmount() {
     var e, t, n, r;
     let i = this.elementRef.current;
-    c()(null != Chunk54381, "Missing elementRef"), O.delete(Chunk54381), Chunk585483.S.unsubscribe(Chunk981631.CkL.LAYER_POP_START, this.handleLayerPopStart), Chunk585483.S.unsubscribe(Chunk981631.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == Chunk54381 || null == (t = Chunk54381.ownerDocument) || null == (e = exports.defaultView) || module.removeEventListener("resize", this.handleLayerPopComplete), null == (n = (r = this.props).onUnmount) || require.call(r)
+    c()(null != Chunk54381, "Missing elementRef"), O.delete(Chunk54381), null == Chunk54381 || null == (t = Chunk54381.ownerDocument) || null == (e = exports.defaultView) || module.removeEventListener("resize", this.updatePosition), null == (n = (r = this.props).onUnmount) || require.call(r)
   }
   render() {
     let {
@@ -398,37 +398,35 @@ class w extends(r = Chunk473749.Component) {
     } = this.props, {
       position: l,
       isPositioned: c,
-      isSettingsLayerTransitioning: u,
-      nudge: d
+      nudge: u
     } = this.state;
     return (0, Chunk54381.jsx)("div", {
       className: s()({
         [Chunk793906.clickTrapContainer]: true,
         [Chunk793906.trapClicks]: Chunk120356
       }),
-      children: (0, Chunk54381.jsx)(Chunk793030.C1Q, {
+      children: (0, Chunk54381.jsx)(Chunk70007.C1, {
         children: o => {
           let {
-            disableAdaptiveTheme: _
+            disableAdaptiveTheme: f
           } = o;
-          return (0, i.jsx)(f.f6W, {
-            disableAdaptiveTheme: _,
+          return (0, i.jsx)(_.f, {
+            disableAdaptiveTheme: f,
             children: o => (0, i.jsx)("div", {
               id: e,
               className: s()(t, o, m.layer, {
                 [m.emptyError]: false,
-                [m.layerHidden]: u,
                 [m.disabledPointerEvents]: a
               }),
               style: E({
                 position: r ? "fixed" : "absolute"
               }, this.state.style),
               ref: this.elementRef,
-              children: (0, i.jsx)(f.JcV, {
+              children: (0, i.jsx)(d.Jc, {
                 containerRef: this.elementRef,
                 children: n({
                   position: l,
-                  nudge: d,
+                  nudge: u,
                   isPositioned: c
                 }, this.updatePosition)
               })
@@ -443,17 +441,7 @@ class w extends(r = Chunk473749.Component) {
       style: Object.freeze({}),
       position: this.props.autoInvert ? null : this.props.position,
       nudge: 0,
-      isPositioned: false,
-      isSettingsLayerTransitioning: false
-    }), g(this, "handleLayerPopStart", () => {
-      this.setState({
-        isSettingsLayerTransitioning: true
-      })
-    }), g(this, "handleLayerPopComplete", () => {
-      let e = this.calculateState();
-      this.setState(y(E({}, e), {
-        isSettingsLayerTransitioning: false
-      }))
+      isPositioned: false
     }), g(this, "updatePosition", () => {
       this.setState(this.calculateState())
     })

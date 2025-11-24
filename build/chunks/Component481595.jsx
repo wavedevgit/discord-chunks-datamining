@@ -47,12 +47,12 @@ function U(e) {
     isEmbeddedIAP: i
   } = e;
   returntrue !== i ? null : (0, r.jsxs)("div", {
-    className: j.skuHeading,
+    className: k.skuHeading,
     children: [(0, r.jsx)(E.Z, {
       game: t
     }), (0, r.jsx)(u.Heading, {
       variant: "heading-lg/bold",
-      className: j.skuHeadingText,
+      className: k.skuHeadingText,
       children: n.name
     })]
   })
@@ -118,21 +118,21 @@ function G(e) {
     eE = eo.productLine === M.POd.SOCIAL_LAYER_GAME_ITEM,
     eb = et && !eE;
   return (0, r.jsxs)("div", {
-    className: j.stepBody,
+    className: k.stepBody,
     children: [(0, r.jsx)(y.Y, {
       paymentRestrictionBannerType: eg
     }), ed ? (0, r.jsx)(_.Z, {
       icon: (0, u.GSL)(C.Z),
       iconSize: _.Z.Sizes.SMALL,
       color: _.Z.Colors.WARNING,
-      className: j.errorBlock,
-      children: k.intl.string(k.t.OvMyMd)
+      className: k.errorBlock,
+      children: j.intl.string(j.t.OvMyMd)
     }, "TEST_MODE") : null, (0, l.yE)(G.flags, M.udG.EMBEDDED) && X === m.O.ERROR ? (0, r.jsx)(_.Z, {
       icon: (0, u.GSL)(C.Z),
       iconSize: _.Z.Sizes.SMALL,
       color: _.Z.Colors.ERROR,
-      className: j.errorBlock,
-      children: k.intl.string(k.t.tAmECt)
+      className: k.errorBlock,
+      children: j.intl.string(j.t.tAmECt)
     }, "DEV_SHELF_ERROR") : null, (0, r.jsx)(U, {
       application: G,
       sku: eo,
@@ -142,20 +142,20 @@ function G(e) {
     }), null != ee ? (0, r.jsx)(O.s, {
       giftRecipient: ee
     }) : null, (0, r.jsx)(u.gNt, {
-      label: $ ? k.intl.string(k.t.PEjaCx) : k.intl.string(k.t.sail9P),
+      label: $ ? j.intl.string(j.t.PEjaCx) : j.intl.string(j.t.sail9P),
       children: null != eu ? (0, r.jsx)(x.B, {
         sku: eo,
         skuPricePreview: eu,
         application: G
       }) : null == q ? (0, r.jsx)(u.$jN, {
         type: u.$jN.Type.WANDERING_CUBES,
-        className: j.invoiceSpinner
+        className: k.invoiceSpinner
       }) : (0, r.jsx)(x.E, {
         sku: eo,
         value: ""
       })
     }), (0, r.jsx)(p.ZP, {
-      label: k.intl.string(k.t["mmDvV+"]),
+      label: j.intl.string(j.t["mmDvV+"]),
       paymentSources: Object.values(Z),
       selectedPaymentSourceId: F,
       onChange: a,
@@ -171,7 +171,7 @@ function G(e) {
         showWithdrawalWaiver: e_,
         disabled: ep,
         subscriptionPlan: null,
-        finePrintClassname: j.fineprint,
+        finePrintClassname: k.fineprint,
         purchaseType: z,
         isGift: $,
         finePrint: (0, r.jsx)(f.Z, {
@@ -184,10 +184,10 @@ function G(e) {
           hasAlreadyLinked: !en || er
         })
       }), eE && en && !er && !$ && (0, r.jsx)("div", {
-        className: j.socialLayerGameItemDisclaimer,
+        className: k.socialLayerGameItemDisclaimer,
         children: (0, r.jsx)(u.M14, {
           type: "warning",
-          children: k.intl.string(k.t["6fBC//"])
+          children: j.intl.string(j.t["6fBC//"])
         })
       })]
     })]

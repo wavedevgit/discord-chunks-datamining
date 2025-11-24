@@ -100,8 +100,8 @@ function b(e) {
   let {
     refs: x,
     floatingStyles: M,
-    placement: k,
-    middlewareData: j,
+    placement: j,
+    middlewareData: k,
     update: U,
     context: G
   } = (0, o.YF)({
@@ -120,7 +120,7 @@ function b(e) {
   }), {
     getReferenceProps: F,
     getFloatingProps: V
-  } = (0, o.NI)([B, Z]), H = (null == (t = j.hide) ? true : t.referenceHidden) ? "hidden" : "visible", Y = A ? d.UU : i.Fragment;
+  } = (0, o.NI)([B, Z]), H = (null == (t = k.hide) ? true : t.referenceHidden) ? "hidden" : "visible", Y = A ? d.UU : i.Fragment;
   return (0, r.jsxs)(r.Fragment, {
     children: [N({
       ref: x.setReference,
@@ -138,7 +138,7 @@ function b(e) {
         children: (0, r.jsx)(u.Jc, {
           containerRef: w,
           children: R({
-            placement: k,
+            placement: j,
             update: U,
             hidden: "hidden" === H
           })

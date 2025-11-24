@@ -92,11 +92,11 @@ function M(e) {
   return "flags" in e
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   return !((0, u.bw)(e.type) && 0 === t || !m.Z.canBasicChannel((0, u.Gz)(e.type), e) || L(e, t, n) || M(e) && e.hasFlag(v.zZ.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || b.ZP.resolveUnreadSetting(e) === I.i.ALL_MESSAGES)
 }
 
-function j(e) {
+function k(e) {
   switch (e) {
     case A:
     case null:
@@ -134,7 +134,7 @@ function F(e, t, n) {
 }
 
 function V(e, t) {
-  let n = j(e),
+  let n = k(e),
     r = D(n),
     i = G(n, r),
     a = false;
@@ -163,7 +163,7 @@ function H(e, t) {
 }
 
 function Y(e, t) {
-  let n = j(e),
+  let n = k(e),
     r = P(n);
   if (null == n) {
     let e = _.Z.getMutablePrivateChannels();
@@ -194,7 +194,7 @@ function Y(e, t) {
         _ = l > 0;
       if (!_ && a) continue;
       let p = !s && (!a || _) && d;
-      (p || _) && k(n, l, c) && (p && (r.unreadByType[I.W.CHANNEL] = true, r.unreadChannelId = t), _ && (f ? r.lowImportanceMentionCount += l : r.highImportanceMentionCount += l, r.mentionCounts[n.id] = {
+      (p || _) && j(n, l, c) && (p && (r.unreadByType[I.W.CHANNEL] = true, r.unreadChannelId = t), _ && (f ? r.lowImportanceMentionCount += l : r.highImportanceMentionCount += l, r.mentionCounts[n.id] = {
         count: l,
         isMentionLowImportance: f
       }))

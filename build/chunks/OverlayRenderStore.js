@@ -87,8 +87,8 @@ let w = new Chunk710845.Z("OverlayRenderStore"),
   L = Chunk837268.R5.UNSET,
   x = false,
   M = false,
-  k = (0, Chunk358085.isWindows)() && Chunk358085.isPlatformEmbedded && !__OVERLAY__,
-  j = null,
+  j = (0, Chunk358085.isWindows)() && Chunk358085.isPlatformEmbedded && !__OVERLAY__,
+  k = null,
   U = {},
   G = {},
   B = null,
@@ -409,7 +409,7 @@ async function ef(e) {
     newFullscreenType: r
   });
   let i = ea(n, r);
-  if (n.overlayMethod === i.overlayMethod && n.oopEnabled === i.enabledOOP && n.legacyEnabled === i.enabledLegacy || (j === m.UNSET_PID || null === j) && n.state === b.mM.OVERLAY_RENDERING) return t;
+  if (n.overlayMethod === i.overlayMethod && n.oopEnabled === i.enabledOOP && n.legacyEnabled === i.enabledLegacy || (k === m.UNSET_PID || null === k) && n.state === b.mM.OVERLAY_RENDERING) return t;
   let a = L === b.R5.OUT_OF_PROCESS_V3 || L === b.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
     o = L === b.R5.IN_PROCESS_V2,
     s = (0, O.PD)(r, z()),
@@ -583,7 +583,7 @@ function eD() {
 }
 
 function ew(e) {
-  if (j = e.pid, H) {
+  if (k = e.pid, H) {
     var t;
     let n = [performance.timeOrigin + performance.now(), null != (t = e.pid) ? t : null, e.trackMode];
     Y.push(n)
@@ -607,10 +607,10 @@ function eM() {
   M = false, Z = null
 }
 
-function ek() {
+function ej() {
   M = false, Z = null, eT()
 }
-class ej extends(r = Chunk442837.ZP.Store) {
+class ek extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk353926.Z, Chunk77498.Z, Chunk624864.Z, Chunk594190.ZP, Chunk509140.Z), this.syncWith([Chunk353926.Z], ex)
   }
@@ -688,11 +688,11 @@ class ej extends(r = Chunk442837.ZP.Store) {
     return Object.values(U).filter(e => e.overlayMethod !== b.gl.Disabled && e.state === b.mM.OVERLAY_RENDERING)
   }
 }
-A(ej, "displayName", "OverlayRenderStore");
-let eU = new ej(Chunk570140.Z, !k ? {} : {
+A(ek, "displayName", "OverlayRenderStore");
+let eU = new ek(Chunk570140.Z, !j ? {} : {
     CONNECTION_OPEN: eE,
     LOGIN: eM,
-    LOGOUT: ek,
+    LOGOUT: ej,
     EXPERIMENT_OVERRIDE_BUCKET: eE,
     OVERLAY_SET_ENABLED: eb,
     GAME_LAUNCH_SUCCESS: ey,

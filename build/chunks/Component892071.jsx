@@ -53,7 +53,7 @@ function b(e) {
     highContrastMode: D,
     isPopoutWindow: w,
     children: L
-  } = e, x = window.CSS.supports("selector(::-webkit-scrollbar)"), M = (0, l.e7)([d.Z], () => d.Z.zoom), k = w ? "" : "--custom-zoom: ".concat(M, ";"), j = "font-size: ".concat(y, "%; --saturation-factor: ").concat(T, "; ").concat(k), U = (0, h.Z)("highlight_mana_buttons"), G = (0, h.Z)("highlight_mana_components"), B = (0, h.Z)("highlight_void_toggleables"), Z = (0, h.Z)("highlight_void_buttons"), F = o()((0, f.Z)(), (0, c.QeD)(a), "density-".concat(E), O, {
+  } = e, x = window.CSS.supports("selector(::-webkit-scrollbar)"), M = (0, l.e7)([d.Z], () => d.Z.zoom), j = w ? "" : "--custom-zoom: ".concat(M, ";"), k = "font-size: ".concat(y, "%; --saturation-factor: ").concat(T, "; ").concat(j), U = (0, h.Z)("highlight_mana_buttons"), G = (0, h.Z)("highlight_mana_components"), B = (0, h.Z)("highlight_void_toggleables"), Z = (0, h.Z)("highlight_void_buttons"), F = o()((0, f.Z)(), (0, c.QeD)(a), "density-".concat(E), O, {
     "low-saturation": T <= c.AEw,
     "keyboard-mode": I,
     "decorate-links": R,
@@ -79,10 +79,10 @@ function b(e) {
     "high-contrast-mode": D
   }, t), V = i.useMemo(() => ({
     lang: n,
-    style: j,
+    style: k,
     className: F,
     focused: b
-  }), [n, j, F, b]);
+  }), [n, k, F, b]);
   return (0, u.ZP)(() => {
     m.ZP.setTrafficLightPosition({
       x: 9,

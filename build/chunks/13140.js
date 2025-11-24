@@ -6,9 +6,9 @@ require.d(exports, {
   BB: () => U,
   C$: () => C,
   H9: () => A,
-  Kd: () => j,
+  Kd: () => k,
   UR: () => v,
-  d2: () => k,
+  d2: () => j,
   dU: () => T,
   m3: () => G
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./539854.js"), require("./781311.js");
@@ -217,7 +217,7 @@ function M(e) {
   return e + "Key"
 }
 
-function k(e) {
+function j(e) {
   let t = {
     keyCode: 0,
     key: "",
@@ -241,7 +241,7 @@ function k(e) {
   }, [])
 }
 
-function j(e) {
+function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(),
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.Mo.KEYBOARD_KEY;
   return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, s.Z.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {

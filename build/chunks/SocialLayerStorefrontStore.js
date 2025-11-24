@@ -1,13 +1,15 @@
 /** Chunk was on web.js **/
 /** chunk id: 210218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
+let r;
 require.d(exports, {
-  Z: () => E
+  Z: () => O
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var i, Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk706454 = require("./706454.js");
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,20 +18,20 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      l(e, t, n[t])
     })
   }
   return e
 }
 
-function l(e, t) {
+function u(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -40,88 +42,96 @@ function l(e, t) {
   return n
 }
 
-function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+function d(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = {},
-  d = {};
-
-function f(e) {
-  let {
-    guildId: t
-  } = e;
-  d[t] = {
-    storefront: null,
-    state: "loading",
-    fetchedAt: null
-  }, d = s({}, d)
-}
-
-function _(e) {
-  let {
-    guildId: t,
-    storefront: n
-  } = e;
-  d[t] = {
-    storefront: n,
-    state: "fetched",
-    fetchedAt: Date.now()
-  }, d = s({}, d)
-}
+let f = {},
+  _ = {};
 
 function p(e) {
   let {
-    guildId: t,
-    storefront: n
-  } = e, r = d[t];
-  (null == r ? true : r.storefront) != null ? d[t] = c(s({}, r), {
-    storefront: c(s({}, r.storefront), {
-      assets: s({}, r.storefront.assets, n.assets)
-    })
-  }) : d[t] = {
-    storefront: n,
-    state: "partially-fetched",
+    guildId: t
+  } = e;
+  _[t] = {
+    storefront: null,
+    state: "loading",
     fetchedAt: null
-  }, d = s({}, d)
+  }, _ = c({}, _)
 }
 
 function h(e) {
   let {
-    guildId: t
+    guildId: t,
+    storefront: n
   } = e;
-  d[t] = {
-    storefront: null,
-    state: "error",
-    fetchedAt: null
-  }, d = s({}, d)
+  _[t] = {
+    storefront: n,
+    state: "fetched",
+    fetchedAt: Date.now()
+  }, _ = c({}, _)
 }
 
 function m(e) {
   let {
     guildId: t,
+    storefront: n
+  } = e, r = _[t];
+  (null == r ? true : r.storefront) != null ? _[t] = d(c({}, r), {
+    storefront: d(c({}, r.storefront), {
+      assets: c({}, r.storefront.assets, n.assets)
+    })
+  }) : _[t] = {
+    storefront: n,
+    state: "partially-fetched",
+    fetchedAt: null
+  }, _ = c({}, _)
+}
+
+function g(e) {
+  let {
+    guildId: t
+  } = e;
+  _[t] = {
+    storefront: null,
+    state: "error",
+    fetchedAt: null
+  }, _ = c({}, _)
+}
+
+function E(e) {
+  let {
+    guildId: t,
     pageIndex: n,
     skuId: r
   } = e;
-  u[t] = {
+  f[t] = {
     activePage: n,
     activeSkuId: r
-  }, u = s({}, u)
+  }, f = c({}, f)
 }
-class g extends(r = Chunk442837.ZP.Store) {
+
+function b() {
+  if (r === Chunk706454.default.locale) returnfalse;
+  r = Chunk706454.default.locale, f = {}, _ = {}
+}
+class y extends(i = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk706454.default), this.syncWith([Chunk706454.default], b), r = Chunk706454.default.locale
+  }
   getStorefrontData(e) {
-    return d[e]
+    return _[e]
   }
   getStorefrontState(e) {
-    return u[e]
+    return f[e]
   }
 }
-o(g, "displayName", "SocialLayerStorefrontStore");
-let E = new g(Chunk570140.Z, {
-  SOCIAL_LAYER_STOREFRONT_LOAD: f,
-  SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: _,
-  SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS: p,
-  SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE: h,
-  SET_SOCIAL_LAYER_STOREFRONT_STATE: m
+l(y, "displayName", "SocialLayerStorefrontStore");
+let O = new y(Chunk570140.Z, {
+  SOCIAL_LAYER_STOREFRONT_LOAD: p,
+  SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: h,
+  SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS: m,
+  SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE: g,
+  SET_SOCIAL_LAYER_STOREFRONT_STATE: E
 })

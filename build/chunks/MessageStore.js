@@ -44,9 +44,9 @@ function L(e, t, n) {
 }
 let x = new Set,
   M = new Chunk710845.Z("MessageStore"),
-  k = false;
+  j = false;
 
-function j() {
+function k() {
   Chunk89892.Z.forEach(e => {
     u.Z.commit(e.mutate({
       ready: false,
@@ -372,7 +372,7 @@ function ep(e) {
   let {
     message: t
   } = e, n = D.default.getCurrentUser();
-  null != t && null != t.author && null != n && t.author.id === n.id && (k = true)
+  null != t && null != t.author && null != n && t.author.id === n.id && (j = true)
 }
 class eh extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -435,14 +435,14 @@ class eh extends(r = Chunk442837.ZP.Store) {
     return null != this.getMessages(e).findNewest(e => e.author.id === (null == t ? true : t.id))
   }
   hasCurrentUserSentMessageSinceAppStart() {
-    return k
+    return j
   }
 }
 L(eh, "displayName", "MessageStore");
 let em = new eh(Chunk570140.Z, {
   BACKGROUND_SYNC_CHANNEL_MESSAGES: U,
-  CONNECTION_OPEN: j,
-  OVERLAY_INITIALIZE: j,
+  CONNECTION_OPEN: k,
+  OVERLAY_INITIALIZE: k,
   CACHE_LOADED: ef,
   LOAD_MESSAGES: G,
   LOAD_MESSAGES_SUCCESS: V,

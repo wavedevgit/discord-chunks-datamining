@@ -156,7 +156,7 @@ class k extends(r = Chunk473749.PureComponent) {
       opacity: t,
       scale: n
     } = this.state;
-    E.S.dispatch(O.CkL.LAYER_POP_START), o.Z.parallel([o.Z.spring(t, S({
+    o.Z.parallel([o.Z.spring(t, S({
       toValue: 0
     }, D)), o.Z.spring(n, S({
       toValue: 1.1

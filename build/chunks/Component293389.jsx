@@ -72,10 +72,10 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
+let j = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
     theme: Chunk210887.Z.theme
   }))(Chunk481060.ubH),
-  j = (0, Chunk358085.isWindows)(),
+  k = (0, Chunk358085.isWindows)(),
   U = 18,
   G = "https://www.igdb.com/about";
 
@@ -142,9 +142,9 @@ function Z(e) {
   } = (0, s.cj)([_.ZP], () => ({
     canToggleDetection: null == v || _.ZP.isDetectionEnabled(v),
     isCurrentGameDetectionEnabled: _.ZP.isDetectionEnabled(I)
-  })), D = (0, s.e7)([_.ZP], () => _.ZP.getVisibleGame()), [w, x] = i.useState(false), k = i.useMemo(() => (0, g.le)(I) ? O ? I.gameName : C.intl.formatToPlainString(C.t.G6BGdx, {
+  })), D = (0, s.e7)([_.ZP], () => _.ZP.getVisibleGame()), [w, x] = i.useState(false), j = i.useMemo(() => (0, g.le)(I) ? O ? I.gameName : C.intl.formatToPlainString(C.t.G6BGdx, {
     subgameName: I.gameName
-  }) : I.name, [I, O]), [G, B] = i.useState(null != k ? k : "???"), F = o()(P.flexCenter, {
+  }) : I.name, [I, O]), [G, B] = i.useState(null != j ? j : "???"), F = o()(P.flexCenter, {
     [N.game]: !a,
     [N.activeGame]: a,
     [N.nowPlaying]: null != I && a,
@@ -177,10 +177,10 @@ function Z(e) {
       } = await Promise.resolve().then(n.bind(n, 793030));
       return t => (0, r.jsx)(e, M(L({}, t), {
         title: C.intl.formatToPlainString(C.t.PZ4fKc, {
-          platform: k
+          platform: j
         }),
         subtitle: C.intl.formatToPlainString(C.t.ZIQbfb, {
-          platform: k
+          platform: j
         }),
         actions: [{
           text: C.intl.string(C.t["ETE/oC"]),
@@ -206,7 +206,7 @@ function Z(e) {
     }), x(true), (0, c.ZDy)(async () => {
       let {
         default: t
-      } = await n.e("82077").then(n.bind(n, 953848));
+      } = await Promise.all([n.e("82077"), n.e("87087")]).then(n.bind(n, 953848));
       return n => {
         var i, a, o;
         return (0, r.jsx)(t, M(L({}, n), {
@@ -226,7 +226,7 @@ function Z(e) {
       className: N.detectedApplication,
       children: [(0, r.jsx)("div", {
         className: N.gameName,
-        children: k
+        children: j
       }), (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         text: C.intl.string(C.t["4PJP5p"]),
@@ -271,7 +271,7 @@ function Z(e) {
   }
 
   function Q() {
-    if (!j || null != v) return null;
+    if (!k || null != v) return null;
     let {
       overlay: e,
       overlayWarn: t
@@ -408,7 +408,7 @@ function V(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsxs)(k, {
+  return (0, r.jsxs)(j, {
     className: D.marginTop40,
     children: [(0, r.jsx)(c.oxh, {
       darkSrc: n(879601),

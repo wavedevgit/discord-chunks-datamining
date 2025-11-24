@@ -41,7 +41,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk227674 = require("./227674.js");
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -57,7 +57,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -136,14 +136,14 @@ let H = Object.freeze({
       isCoachmark: true
     }, () => M.intl.string(M.t["8+vbqd"])).otherwise(() => M.intl.string(M.t.hjV0fZ));
     return (0, r.jsxs)("div", {
-      className: k.title,
+      className: j.title,
       children: [(0, r.jsx)(c.Heading, {
         "aria-label": o,
-        className: k.titleText,
+        className: j.titleText,
         variant: "text-md/medium",
         children: o
       }), (0, r.jsx)(b.Z, {
-        className: k.premiumIcon
+        className: j.premiumIcon
       })]
     })
   },
@@ -177,7 +177,7 @@ let H = Object.freeze({
     })).otherwise(() => M.intl.string(M.t["np0X/u"]));
     return (0, r.jsx)(c.Heading, {
       variant: "text-sm/normal",
-      className: k.subtext,
+      className: j.subtext,
       children: l
     })
   },
@@ -196,9 +196,9 @@ let H = Object.freeze({
         onPremiumClick: () => m.z
       })
     }) : (0, r.jsxs)("div", {
-      className: k.header,
+      className: j.header,
       children: [(0, r.jsxs)("div", {
-        className: k.headings,
+        className: j.headings,
         children: [(0, r.jsx)(K, {
           type: l,
           isPreview: c,
@@ -257,7 +257,7 @@ let H = Object.freeze({
           return e
         }
         return (0, r.jsxs)("div", {
-          className: k.easterEggSelection,
+          className: j.easterEggSelection,
           children: [(0, r.jsx)(N.DR, {
             preset: e,
             isSelected: g === s.Us.EASTER_EGG,
@@ -265,7 +265,7 @@ let H = Object.freeze({
           }), (0, r.jsx)(c.Fmz, {
             importData: t,
             shouldAnimate: !v,
-            className: k.sparkles
+            className: j.sparkles
           })]
         })
       };
@@ -376,7 +376,7 @@ let H = Object.freeze({
         renderCTAButtons: i,
         isCoachmark: a
       }), t && a && (0, r.jsx)(c.Heading, {
-        className: k.upsellText,
+        className: j.upsellText,
         variant: "heading-sm/semibold",
         children: M.intl.string(M.t.POSLGY)
       }), (0, r.jsxs)(c.Kqy, {
@@ -413,7 +413,7 @@ let H = Object.freeze({
       children: (0, r.jsx)("div", B(U({
         ref: s
       }, c), {
-        className: k.__invalid_container,
+        className: j.__invalid_container,
         children: n
       }))
     })

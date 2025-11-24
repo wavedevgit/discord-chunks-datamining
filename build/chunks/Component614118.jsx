@@ -33,10 +33,10 @@ function T(e) {
     skuId: D,
     channel: w
   } = e, L = (0, o.e7)([_.Z], () => _.Z.isFetchingForSKU(D)), x = (0, o.e7)([f.Z], () => f.Z.get(D)), M = null == x ? true : x.applicationId, {
-    analyticsLocations: k
+    analyticsLocations: j
   } = (0, c.ZP)(l.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
   (0, u.p2)();
-  let j = (0, o.e7)([d.default], () => w.isDM() && null != w.recipients && 0 !== w.recipients.length ? d.default.getUser(w.recipients[0]) : null),
+  let k = (0, o.e7)([d.default], () => w.isDM() && null != w.recipients && 0 !== w.recipients.length ? d.default.getUser(w.recipients[0]) : null),
     {
       primaryIconAsset: U,
       primaryIconLabel: G
@@ -50,9 +50,9 @@ function T(e) {
         applicationId: x.applicationId,
         guildId: P,
         isStorefront: false,
-        analyticsLocations: k
+        analyticsLocations: j
       })
-    }, [D, null == x ? true : x.applicationId, P, k]),
+    }, [D, null == x ? true : x.applicationId, P, j]),
     Z = i.useCallback(() => {
       null != x && (0, E.P)(x, {
         isGift: false
@@ -63,11 +63,11 @@ function T(e) {
     F = i.useCallback(() => {
       null != x && (0, E.P)(x, {
         isGift: true,
-        giftRecipient: null != j ? j : true
+        giftRecipient: null != k ? k : true
       }, {
         analyticsLocations: [l.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_GIFT_BUTTON]
       })
-    }, [x, j]);
+    }, [x, k]);
   return L && null == x ? (0, r.jsx)("div", {
     className: I.container,
     children: (0, r.jsx)(s.$jN, {
@@ -81,7 +81,7 @@ function T(e) {
       skuId: D,
       variant: y.Z.EMBEDDED,
       onClick: B,
-      analyticsLocations: k
+      analyticsLocations: j
     }), (0, r.jsxs)("div", {
       className: I.details,
       children: [(0, r.jsxs)("div", {

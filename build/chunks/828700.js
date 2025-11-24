@@ -2,13 +2,13 @@
 /** chunk id: 828700, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $B: () => j,
+  $B: () => k,
   AW: () => R,
   EN: () => w,
   F0: () => m,
   LX: () => N,
   TH: () => M,
-  UO: () => k,
+  UO: () => j,
   k6: () => x,
   l_: () => I,
   rs: () => D,
@@ -263,12 +263,12 @@ function M() {
   return L(h).location
 }
 
-function k() {
+function j() {
   var e = L(h).match;
   return module ? module.params : {}
 }
 
-function j(e) {
+function k(e) {
   var t = M(),
     n = L(h).match;
   return e ? N(t.pathname, e) : n

@@ -129,8 +129,8 @@ function ew(e, t) {
 let eL = null,
   ex = new Chunk710845.Z("MessageActionCreators"),
   eM = new Chunk710845.Z("MessageQueue"),
-  ek = false;
-class ej {
+  ej = false;
+class ek {
   markComplete() {
     this.completed = true
   }
@@ -565,7 +565,7 @@ let eV = {
         type: "LOAD_MESSAGES"
       });
       let v = null == y ? true : y.messageId,
-        I = new ej;
+        I = new ek;
       return d || this.fetchLocalMessages(t, n, r, i, I), o.tn.get({
         url: eT.ANM.MESSAGES(t),
         query: {
@@ -727,7 +727,7 @@ let eV = {
         nonce: o
       });
       let s = () => eH._sendMessage(e, t, i),
-        l = j.ZP.backgroundify(s, true);
+        l = k.ZP.backgroundify(s, true);
       return (G.Z.recordMessageSendAttempt(e, o, i), ed.Z.isReady(e)) ? l() : r && e !== b.V ? (eM.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
         ed.Z.whenReady(e, () => {
           eM.info("Channel ".concat(e, " is ready for sending now.")), l().then(t, n)
@@ -893,7 +893,7 @@ let eV = {
           messageReference: L,
           allowedMentions: x,
           poll: M,
-          sharedCustomTheme: j,
+          sharedCustomTheme: k,
           contentInventoryEntry: U,
           attachments: z,
           attachmentsToUpload: ee,
@@ -906,7 +906,7 @@ let eV = {
       es && (E = ec, eo = (0, a.pj)(eo, eT.iLy.SUPPRESS_NOTIFICATIONS));
       let eu = false,
         ed = (null == (r = n.messageReference) ? true : r.type) === eT.Uvt.FORWARD;
-      if ("" === E && null == T && null == N && null == M && null == j && null == U && !ed && (null == z || 0 === z.length) && !ea && (null == t.components || 0 === t.components.length))
+      if ("" === E && null == T && null == N && null == M && null == k && null == U && !ed && (null == z || 0 === z.length) && !ea && (null == t.components || 0 === t.components.length))
         if (null == ee || !(ee.length > 0)) return Promise.resolve();
         else eu = true;
       let ef = null != L ? eT.uaV.REPLY : eT.uaV.DEFAULT,
@@ -922,10 +922,10 @@ let eV = {
           flags: 0 !== eo ? eo : true,
           nonce: e_,
           poll: (0, W.x9)(M),
-          sharedCustomTheme: j
+          sharedCustomTheme: k
         });
-      if (false !== n.eagerDispatch && ((0, H.EL)(e, eE.id), null != N && (eE.sticker_items = N.map(e => er.Z.getStickerById(e)).filter(e => null != e)), eH.receiveMessage(e, eE, true, n)), !ek && null != b && b.length > 0) {
-        ek = true;
+      if (false !== n.eagerDispatch && ((0, H.EL)(e, eE.id), null != N && (eE.sticker_items = N.map(e => er.Z.getStickerById(e)).filter(e => null != e)), eH.receiveMessage(e, eE, true, n)), !ej && null != b && b.length > 0) {
+        ej = true;
         let t = em.default.getCurrentUser(),
           {
             errorMessage: n,
@@ -960,8 +960,8 @@ let eV = {
           null != n.party && null != n.party.id && (t.party_id = n.party.id), eb.message.application_id = n.application_id, eb.message.activity = t
         }
       }
-      if (null != M && (eb.message.poll = M), null != j && (eb.message.shared_client_theme = j), null != N && (eb.message.sticker_ids = N), Y.Z.isEnabled() && (eb.message.has_poggermode_enabled = true), ea && (eb.message.with_checkpoint = true), null != U && (eb.message.content_inventory_entry = U), null != w && (eb.message.confetti_potion = (0, X.vY)(w), w.callback()), null != z && z.length > 0 && (eb.message.attachments = z), null != ee && ee.length > 0) try {
-        let t = await (0, k.c)({
+      if (null != M && (eb.message.poll = M), null != k && (eb.message.shared_client_theme = k), null != N && (eb.message.sticker_ids = N), Y.Z.isEnabled() && (eb.message.has_poggermode_enabled = true), ea && (eb.message.with_checkpoint = true), null != U && (eb.message.content_inventory_entry = U), null != w && (eb.message.confetti_potion = (0, X.vY)(w), w.callback()), null != z && z.length > 0 && (eb.message.attachments = z), null != ee && ee.length > 0) try {
+        let t = await (0, j.c)({
           channelId: e,
           nonce: e_,
           items: ee,

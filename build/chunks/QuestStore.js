@@ -150,11 +150,11 @@ function ed(e) {
   } = e;
   d = Date.now(), r = false, l = new Map, s = new Map;
   let a = new Map;
-  for (let e of t) l.set(e.id, e), s.set(e.id, e.config), a.set(e.id, (0, j.zi)(e)), e.targetedContent.includes(k.jn.QUEST_BAR) && (0, B.T)({
+  for (let e of t) l.set(e.id, e), s.set(e.id, e.config), a.set(e.id, (0, k.zi)(e)), e.targetedContent.includes(j.jn.QUEST_BAR) && (0, B.T)({
     location: Z.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (c = new Map, n)) c.set(e.id, e);
-  for (let e of null == N ? true : N.values()) l.has(e.id) || (l.set(e.id, e), s.set(e.id, e.config), a.set(e.id, (0, j.zi)(e)));
+  for (let e of null == N ? true : N.values()) l.has(e.id) || (l.set(e.id, e), s.set(e.id, e.config), a.set(e.id, (0, k.zi)(e)));
   S = a, eq(), A = null != i ? new Date(i) : null
 }
 
@@ -330,14 +330,14 @@ function eM(e) {
   }), eL(t.questId)
 }
 
-function ek(e) {
+function ej(e) {
   let {
     questId: t
   } = e;
   eL(t)
 }
 
-function ej(e) {
+function ek(e) {
   let {
     streamKey: t
   } = e;
@@ -351,13 +351,13 @@ function eU(e) {
     location: Z.dr.QUESTS_STORE
   });
   n.log("Received user status update for ".concat(t.quest_id), t);
-  let r = (0, j.U3)(t);
+  let r = (0, k.U3)(t);
   er(t.quest_id, {
     userStatus: r
   });
   let i = l.get(t.quest_id);
   if (null != i) {
-    let e = (0, j.zi)(i);
+    let e = (0, k.zi)(i);
     S.get(t.quest_id) !== e && (S = new Map(S).set(t.quest_id, e))
   }
   0 === Object.keys(r.progress).length && K.has(r.questId) && (n.log("Removing optimistic progress for ".concat(r.questId)), K.delete(r.questId))
@@ -372,7 +372,7 @@ function eG(e) {
   }), null == t.claimedAt && (b = new Map(b)).delete(t.questId), null == t.enrolledAt && ((I = new Map(I)).delete(t.questId), U.ZP.getState().resetQuest(t.questId));
   let n = l.get(t.questId);
   if (null != n) {
-    let e = (0, j.zi)(n);
+    let e = (0, k.zi)(n);
     S.get(t.questId) !== e && (S = new Map(S).set(t.questId, e))
   }
 }
@@ -460,7 +460,7 @@ function eK() {
   let e = false,
     t = new Map(S);
   l.forEach((n, r) => {
-    true !== t.get(r) && ((0, j.zi)(n) ? (t.set(r, true), e = true) : t.has(r) || t.set(r, false))
+    true !== t.get(r) && ((0, k.zi)(n) ? (t.set(r, true), e = true) : t.has(r) || t.set(r, false))
   }), module && (S = exports, e3.emitChange())
 }
 
@@ -637,10 +637,10 @@ let e3 = new e1(Chunk570140.Z, {
     QUESTS_CLAIM_REWARD_FAILURE: ew,
     QUESTS_DISMISS_CONTENT_BEGIN: ex,
     QUESTS_DISMISS_CONTENT_SUCCESS: eM,
-    QUESTS_DISMISS_CONTENT_FAILURE: ek,
+    QUESTS_DISMISS_CONTENT_FAILURE: ej,
     QUESTS_USER_STATUS_UPDATE: eU,
     STREAM_CLOSE: ev,
-    QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: ej,
+    QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: ek,
     QUESTS_PREVIEW_UPDATE_SUCCESS: eG,
     QUESTS_DELIVERY_OVERRIDE: eB,
     QUESTS_SELECT_TASK_PLATFORM: eZ,

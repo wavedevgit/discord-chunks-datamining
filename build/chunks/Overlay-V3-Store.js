@@ -71,8 +71,8 @@ let R = new Chunk710845.Z("OverlayV3Store"),
   L = null,
   x = null,
   M = null,
-  k = null,
   j = null,
+  k = null,
   U = null,
   G = null,
   B = {},
@@ -153,7 +153,7 @@ function Q(e) {
 
 function J() {
   var e;
-  null != j && k === j && null != w && (j = null, (0, Chunk932404.PY)(k, "renderer_window_refreshing_finished"), null == (e = w.readyToShow) || module.call(w, k), Chunk13245.Z.updateOverlayState(k, Chunk837268.mM.OVERLAY_RENDERING, "checkPopoutRefresh"), R.verbose("Showing overlay v3 for pid ".concat(k)))
+  null != k && j === k && null != w && (k = null, (0, Chunk932404.PY)(j, "renderer_window_refreshing_finished"), null == (e = w.readyToShow) || module.call(w, j), Chunk13245.Z.updateOverlayState(j, Chunk837268.mM.OVERLAY_RENDERING, "checkPopoutRefresh"), R.verbose("Showing overlay v3 for pid ".concat(j)))
 }
 
 function $(e, t) {
@@ -256,7 +256,7 @@ function ed(e) {
   let {
     refreshingPID: t
   } = e;
-  return R.verbose("Refreshing OOP host window for pid ".concat(t)), j = t, U = t, M = t, (0, d.setPID)(t), Q(t), J(), true
+  return R.verbose("Refreshing OOP host window for pid ".concat(t)), k = t, U = t, M = t, (0, d.setPID)(t), Q(t), J(), true
 }
 
 function ef(e) {
@@ -316,7 +316,7 @@ function eE(e) {
     pid: t,
     windowHandle: n
   } = e;
-  if (k = t, J(), null != n && null != t && V(t, (0, O.rd)(n)), null != n && null != w) {
+  if (j = t, J(), null != n && null != t && V(t, (0, O.rd)(n)), null != n && null != w) {
     var r;
     null == (r = w.setRenderingWindowHandle) || r.call(w, (0, O.rd)(n), t)
   }

@@ -603,9 +603,9 @@
           }
           var x = [],
             M = [],
-            k = [];
+            j = [];
 
-          function j() {
+          function k() {
             var e = a.preRun.shift();
             x.unshift(e)
           }
@@ -1164,7 +1164,7 @@
           }
 
           function ex(e, t) {
-            var n = 16384 == (61440 & e.mode) ? (n = ej(e, "x")) ? n : 2 * !e.j.ja : 54;
+            var n = 16384 == (61440 & e.mode) ? (n = ek(e, "x")) ? n : 2 * !e.j.ja : 54;
             if (n) throw new eC(n);
             for (n = eS[eL(e.id, t)]; n; n = n.ec) {
               var r = n.name;
@@ -1177,12 +1177,12 @@
             return t = eL((e = new eP(e, t, n, r)).parent.id, e.name), e.ec = eS[t], eS[t] = e
           }
 
-          function ek(e) {
+          function ej(e) {
             var t = ["r", "w", "rw"][3 & e];
             return 512 & e && (t += "w"), t
           }
 
-          function ej(e, t) {
+          function ek(e, t) {
             return eA ? 0 : t.includes("r") && !(292 & e.mode) || t.includes("w") && !(146 & e.mode) || t.includes("x") && !(73 & e.mode) ? 2 : 0
           }
 
@@ -1190,7 +1190,7 @@
             try {
               return ex(e, t), 20
             } catch (e) {}
-            return ej(e, "wx")
+            return ek(e, "wx")
           }
 
           function eG(e) {
@@ -1309,14 +1309,14 @@
               } else i = eY(e, n, 0), r = true;
             if (!i) throw new eC(44);
             if (8192 == (61440 & i.mode) && (t &= false), 65536 & t && 16384 != (61440 & i.mode)) throw new eC(54);
-            if (!r && (n = i ? 40960 == (61440 & i.mode) ? 32 : 16384 == (61440 & i.mode) && ("r" !== ek(t) || 512 & t) ? 31 : ej(i, ek(t)) : 44)) throw new eC(n);
+            if (!r && (n = i ? 40960 == (61440 & i.mode) ? 32 : 16384 == (61440 & i.mode) && ("r" !== ej(t) || 512 & t) ? 31 : ek(i, ej(t)) : 44)) throw new eC(n);
             if (512 & t && !r) {
               if (!(n = "string" == typeof(n = i) ? eD(n, {
                   fb: true
                 }).node : n).j.P) throw new eC(63);
               if (16384 == (61440 & n.mode)) throw new eC(31);
               if (32768 != (61440 & n.mode)) throw new eC(28);
-              if (r = ej(n, "w")) throw new eC(r);
+              if (r = ek(n, "w")) throw new eC(r);
               n.j.P(n, {
                 size: 0,
                 timestamp: Date.now()
@@ -1556,7 +1556,7 @@
             return tx(t.g.o, t.g.u.i, this.i)
           }
 
-          function tk(e, t) {
+          function tj(e, t) {
             if (null === t) {
               if (this.La) throw new e3(`null is not a valid ${this.name}`);
               if (this.sa) {
@@ -1592,7 +1592,7 @@
             return n
           }
 
-          function tj(e, t) {
+          function tk(e, t) {
             if (null === t) {
               if (this.La) throw new e3(`null is not a valid ${this.name}`);
               return 0
@@ -1604,7 +1604,7 @@
           }
 
           function tU(e, t, n, r, i, a, o, s, l, c, u) {
-            this.name = e, this.i = t, this.La = n, this.ra = r, this.sa = i, this.hc = a, this.mc = o, this.qb = s, this.Na = l, this.ic = c, this.O = u, i || true !== t.C ? this.toWireType = tk : (this.toWireType = r ? tM : tj, this.L = null)
+            this.name = e, this.i = t, this.La = n, this.ra = r, this.sa = i, this.hc = a, this.mc = o, this.qb = s, this.Na = l, this.ic = c, this.O = u, i || true !== t.C ? this.toWireType = tj : (this.toWireType = r ? tM : tk, this.L = null)
           }
           var tG, tB, tZ = (e, t, n) => {
               if (!a.hasOwnProperty(e)) throw new e8("Replacing nonexistent public symbol");
@@ -2821,14 +2821,14 @@
                 if (a.noFSInit || e$ || (e$ = true, a.stdin = a.stdin, a.stdout = a.stdout, a.stderr = a.stderr, a.stdin ? eJ("stdin", a.stdin) : ez("/dev/tty", "/dev/stdin"), a.stdout ? eJ("stdout", null, a.stdout) : ez("/dev/tty", "/dev/stdout"), a.stderr ? eJ("stderr", null, a.stderr) : ez("/dev/tty1", "/dev/stderr"), eX("/dev/stdin", 0), eX("/dev/stdout", 1), eX("/dev/stderr", 1)), eA = false, J(M), r(a), a.onRuntimeInitialized && a.onRuntimeInitialized(), a.postRun)
                   for ("function" == typeof a.postRun && (a.postRun = [a.postRun]); a.postRun.length;) {
                     var e = a.postRun.shift();
-                    k.unshift(e)
+                    j.unshift(e)
                   }
-                J(k)
+                J(j)
               }
             }
             if (!(0 < U)) {
               if (a.preRun)
-                for ("function" == typeof a.preRun && (a.preRun = [a.preRun]); a.preRun.length;) j();
+                for ("function" == typeof a.preRun && (a.preRun = [a.preRun]); a.preRun.length;) k();
               J(x), 0 < U || (a.setStatus ? (a.setStatus("Running..."), setTimeout(function() {
                 setTimeout(function() {
                   a.setStatus("")
@@ -3341,14 +3341,14 @@
       Fit: () => module,
       Layout: () => O,
       LoopType: () => s,
-      Rive: () => k,
+      Rive: () => j,
       RiveEventType: () => a,
       RiveFile: () => M,
       RuntimeLoader: () => v,
       StateMachineInput: () => I,
       StateMachineInputType: () => i,
       Testing: () => J,
-      ViewModel: () => j,
+      ViewModel: () => k,
       ViewModelInstance: () => G,
       ViewModelInstanceArtboard: () => q,
       ViewModelInstanceAssetImage: () => z,
@@ -4180,7 +4180,7 @@
           return this.createBindableArtboard(t)
         }, module.missingErrorMessage = "Rive source file or data buffer required", module.fileLoadErrorMessage = "The file failed to load", module
       }(),
-      k = function() {
+      j = function() {
         function t(e) {
           var t, n = this;
           this.loaded = false, this.destroyed = false, this._observed = null, this.readyForPlaying = false, this.artboard = null, this.eventCleanup = null, this.shouldDisableRiveListeners = false, this.automaticallyHandleEvents = false, this.dispatchPointerExit = true, this.enableMultiTouch = false, this.enableRiveAssetCDN = true, this._volume = 1, this._artboardWidth = true, this._artboardHeight = true, this._devicePixelRatioUsed = 1, this._hasZeroSize = false, this._audioEventListener = null, this._boundDraw = null, this.eventTarget = e.eventTarget, this.eventCapture = null == e.eventCapture || e.eventCapture, this.listenOnDocumentBody = null != e.listenOnDocumentBody && e.listenOnDocumentBody, null != e.eventTarget && (this.listenOnDocumentBody = false), this._viewModelInstance = null, this._dataEnums = null, this.durations = [], this.frameTimes = [], this.frameCount = 0, this.isTouchScrollEnabled = false, this.onCanvasResize = function(e) {
@@ -4736,10 +4736,10 @@
           configurable: true
         }), t.prototype.viewModelByIndex = function(e) {
           var t = this.file.viewModelByIndex(e);
-          return null !== t ? new j(t) : null
+          return null !== t ? new k(t) : null
         }, t.prototype.viewModelByName = function(e) {
           var t = this.file.viewModelByName(e);
-          return null !== t ? new j(t) : null
+          return null !== t ? new k(t) : null
         }, t.prototype.enums = function() {
           if (null === this._dataEnums) {
             var e = this.file.enums();
@@ -4751,7 +4751,7 @@
         }, t.prototype.defaultViewModel = function() {
           if (this.artboard) {
             var e = this.file.defaultArtboardViewModel(this.artboard);
-            if (module) return new j(module)
+            if (module) return new k(module)
           }
           return null
         }, t.prototype.getArtboard = function(e) {
@@ -4765,7 +4765,7 @@
           return null != (t = null == (e = this.riveFile) ? true : module.getDefaultBindableArtboard()) ? t : null
         }, t.missingErrorMessage = "Rive source file or data buffer required", t.cleanupErrorMessage = "Attempt to use file after calling cleanup.", t
       }(),
-      j = function() {
+      k = function() {
         function e(e) {
           this._viewModel = e
         }
