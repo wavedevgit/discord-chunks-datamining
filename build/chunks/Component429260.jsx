@@ -27,9 +27,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk342153 = require("./342153.js");
 
 function S(e) {
-  let t = (0, i.e7)([y.Z], () => y.Z.getGuildId()),
+  let t = (0, i.e7)([m.Z], () => m.Z.getGuildId()),
     n = (0, p.Q_)(t);
-  return (0, h.a4)(e) ? (0, r.jsx)(a.sNh, {
+  return (0, O.a4)(e) ? (0, r.jsx)(a.sNh, {
     id: "report",
     label: n ? v.intl.string(v.t.n5EBAJ) : v.intl.string(v.t.GwbdGe),
     action: () => (0, f.ak)(e, "web_message_context_menu"),
@@ -61,14 +61,14 @@ function P(e) {
     n = (0, b.sP)(e);
   return ((0, o.zq)(() => {
     n && (0, u.Q3)(l.z.REPORT_TO_MOD_NEW_TAG, {
-      dismissAction: m.L.AUTO_DISMISS
+      dismissAction: h.L.AUTO_DISMISS
     })
   }), n) ? (0, r.jsx)(a.sNh, {
     id: "report-to-mod",
     label: t ? v.intl.string(j.default["8wsdng"]) : v.intl.string(j.default["1D+vqy"]),
     action: () => {
       (0, u.Q3)(l.z.REPORT_TO_MOD_NEW_TAG, {
-        dismissAction: m.L.USER_DISMISS
+        dismissAction: h.L.USER_DISMISS
       }), (0, f.tV)(e)
     },
     icon: (0, r.jsx)(E, {}),
@@ -78,8 +78,8 @@ function P(e) {
 
 function Z(e) {
   let t = (0, i.e7)([c.ZP], () => c.ZP.get("iar_testing")),
-    n = (0, i.e7)([O.default], () => O.default.getCurrentUser());
-  return (0, h.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {
+    n = (0, i.e7)([y.default], () => y.default.getCurrentUser());
+  return (0, O.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {
     id: "staff-test-message-report",
     label: "[STAFF] Test Message Report",
     action: () => (0, f.Jw)(e, "web_message_context_menu"),

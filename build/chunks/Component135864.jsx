@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 135864, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,7 +9,6 @@ var Chunk54381 = require("./54381.js"),
   a = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk456100 = require("./456100.js"),
   Chunk930446 = require("./930446.js"),
   Chunk31569 = require("./31569.js"),
   Chunk258971 = require("./258971.js"),
@@ -26,84 +25,76 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk933767 = require("./933767.js");
 
-function S(e) {
+function C(e) {
   let {
     tab: t
-  } = e, {
-    enabled: n
-  } = c.c.useExperiment({
-    location: "GlobalDiscoverySidebar"
-  }, {
-    autoTrackExposure: true
-  }), l = _.Z.useField("selectedTab"), I = i.useMemo(() => (function(e, t) {
+  } = e, n = m.Z.useField("selectedTab"), l = i.useMemo(() => (function(e) {
     switch (e) {
-      case O.GlobalDiscoveryTab.SERVERS:
+      case E.GlobalDiscoveryTab.SERVERS:
         return (0, r.jsx)(o.QTo, {
           color: "currentColor"
         });
-      case O.GlobalDiscoveryTab.APPS:
-        return t ? (0, r.jsx)(o.iWm, {
-          color: "currentColor"
-        }) : (0, r.jsx)(o.jje, {
+      case E.GlobalDiscoveryTab.APPS:
+        return (0, r.jsx)(o.jje, {
           color: "currentColor"
         });
-      case O.GlobalDiscoveryTab.QUESTS:
+      case E.GlobalDiscoveryTab.QUESTS:
         return (0, r.jsx)(o.qDn, {
           color: "currentColor"
         })
     }
-  })(t, n), [t, n]), S = i.useMemo(() => (0, b.s)(t), [t]), T = l === t, N = i.useCallback(() => {
+  })(t), [t]), v = i.useMemo(() => (0, _.s)(t), [t]), C = n === t, S = i.useCallback(() => {
     switch (t) {
-      case O.GlobalDiscoveryTab.QUESTS:
-        return T && g.Z.resetState(), m.default.track(y.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
-          client_ad_session_id: (0, u.Gy)().uuid
-        }), (0, E.transitionToGlobalDiscovery)({
-          tab: O.GlobalDiscoveryTab.QUESTS,
-          location: v.dr.DISCOVERY_SIDEBAR,
+      case E.GlobalDiscoveryTab.QUESTS:
+        return C && h.Z.resetState(), g.default.track(O.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
+          client_ad_session_id: (0, c.Gy)().uuid
+        }), (0, b.transitionToGlobalDiscovery)({
+          tab: E.GlobalDiscoveryTab.QUESTS,
+          location: y.dr.DISCOVERY_SIDEBAR,
           questContent: s.j.DISCOVERY_SIDEBAR
         });
-      case O.GlobalDiscoveryTab.APPS:
-        if (!T) return (0, E.transitionToGlobalDiscovery)({
+      case E.GlobalDiscoveryTab.APPS:
+        if (!C) return (0, b.transitionToGlobalDiscovery)({
           tab: t,
           newSessionState: {
             entrypoint: {
-              name: p.xF.GLOBAL_DISCOVERY_SIDEBAR
+              name: d.xF.GLOBAL_DISCOVERY_SIDEBAR
             },
             restorePreviousView: true
           }
         });
-        d.Z.resetState(), (0, E.transitionToGlobalDiscovery)({
+        u.Z.resetState(), (0, b.transitionToGlobalDiscovery)({
           tab: t
         });
         return;
-      case O.GlobalDiscoveryTab.SERVERS:
-        if (!T) return (0, E.transitionToGlobalDiscovery)({
+      case E.GlobalDiscoveryTab.SERVERS:
+        if (!C) return (0, b.transitionToGlobalDiscovery)({
           tab: t
         });
-        f.Z.resetState(), h.Z.resetState();
+        p.Z.resetState(), f.Z.resetState();
         return;
       default:
-        return (0, E.transitionToGlobalDiscovery)({
+        return (0, b.transitionToGlobalDiscovery)({
           tab: t
         })
     }
-  }, [t, T]);
+  }, [t, C]);
   return (0, r.jsxs)(o.P3F, {
-    onClick: N,
-    className: a()(C.navItem, {
-      [C.selected]: T
+    onClick: S,
+    className: a()(I.navItem, {
+      [I.selected]: C
     }),
     children: [(0, r.jsx)("div", {
-      className: C.navItemIcon,
-      children: I
+      className: I.navItemIcon,
+      children: l
     }), (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "none",
-      children: S
+      children: v
     })]
   })
 }
-let T = function() {
+let S = function() {
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk933767.container,
     children: [(0, Chunk54381.jsx)("div", {
@@ -114,7 +105,7 @@ let T = function() {
       })
     }), (0, Chunk54381.jsx)("nav", {
       className: Chunk933767.nav,
-      children: Chunk49898.GLOBAL_DISCOVERY_TABS.map(e => (0, r.jsx)(S, {
+      children: Chunk49898.GLOBAL_DISCOVERY_TABS.map(e => (0, r.jsx)(C, {
         tab: e
       }, e))
     })]

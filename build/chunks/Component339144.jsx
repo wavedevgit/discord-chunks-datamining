@@ -42,13 +42,13 @@ function D(e, t, n) {
   if (null != n) return n.applicationId === e.id;
   if (null != t) {
     var r;
-    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === w.IIU.PLAYING && (0, p.Z)(t, w.xjy.JOIN)
+    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === w.IIU.PLAYING && (0, h.Z)(t, w.xjy.JOIN)
   }
   returnfalse
 }
 let L = Chunk473749.memo(function(e) {
     var t, l;
-    let a, s, p, y, {
+    let a, s, h, y, {
         stream: C,
         canGoLive: E,
         guildId: T,
@@ -88,7 +88,7 @@ let L = Chunk473749.memo(function(e) {
         }), (0, d.h7)(H, false)
       }, [H, z, X, B]),
       ee = i.useCallback((e, t) => () => {
-        (0, b.v)(X, b.d.LEAVE_ACTIVITY), h.Z.leaveActivity({
+        (0, b.v)(X, b.d.LEAVE_ACTIVITY), p.Z.leaveActivity({
           location: t,
           applicationId: e,
           showFeedback: true
@@ -165,23 +165,23 @@ let L = Chunk473749.memo(function(e) {
     }, []), i.useEffect(() => {
       eo && (ef(false), null != eu.current && (clearTimeout(eu.current), eu.current = null))
     }, [eo]);
-    let ep = null == Q || null == W ? null : (0, r.jsx)(k, {
+    let eh = null == Q || null == W ? null : (0, r.jsx)(k, {
         guildId: Q,
         applicationId: W.id
       }),
-      eh = (null != B || null == F || (0, f.R)()) && (L || E) ? (L ? (a = false, s = () => {
+      ep = (null != B || null == F || (0, f.R)()) && (L || E) ? (L ? (a = false, s = () => {
         en(), (0, b.v)(X, b.d.STREAM, false)
-      }, p = u.g5r, y = A.intl.string(A.t.S5anIc)) : U ? (a = false, s = () => {
+      }, h = u.g5r, y = A.intl.string(A.t.S5anIc)) : U ? (a = false, s = () => {
         er(), (0, b.v)(X, b.d.STREAM, true)
-      }, p = u.hGI, y = null != B ? A.intl.formatToPlainString(A.t.AB5gTy, {
+      }, h = u.hGI, y = null != B ? A.intl.formatToPlainString(A.t.AB5gTy, {
         game: B.name
-      }) : A.intl.string(A.t.FeUKeA)) : (a = true, s = null, p = u.hGI, y = null != G && (0, S.vd)(G.type) ? A.intl.string(A.t.uQn9B8) : null != T ? A.intl.string(A.t.fBXEoJ) : A.intl.string(A.t.n3feNG)), (0, r.jsx)("div", {
+      }) : A.intl.string(A.t.FeUKeA)) : (a = true, s = null, h = u.hGI, y = null != G && (0, S.vd)(G.type) ? A.intl.string(A.t.uQn9B8) : null != T ? A.intl.string(A.t.fBXEoJ) : A.intl.string(A.t.n3feNG)), (0, r.jsx)("div", {
         className: R.panelButtonContainer,
         children: (0, r.jsx)(Z.Z, {
           tooltipText: y,
           disabled: a,
           onClick: s,
-          icon: p
+          icon: h
         })
       })) : null,
       eg = J && null == F ? (0, r.jsx)(Z.Z, {
@@ -225,9 +225,9 @@ let L = Chunk473749.memo(function(e) {
           ef(false), null != eu.current && (clearTimeout(eu.current), eu.current = null)
         }
       }) : null;
-    return null == eh && null == eg && null == em && null == eb && null == ey && null == ep ? null : (0, r.jsxs)("div", {
+    return null == ep && null == eg && null == em && null == eb && null == ey && null == eh ? null : (0, r.jsxs)("div", {
       className: R.actions,
-      children: [null != (t = null != ep ? ep : ey) ? t : eg, eh, null != (l = null != em ? em : eb) ? l : e_, eO]
+      children: [null != (t = null != eh ? eh : ey) ? t : eg, ep, null != (l = null != em ? em : eb) ? l : e_, eO]
     })
   }),
   M = Chunk473749.forwardRef(function(e, t) {

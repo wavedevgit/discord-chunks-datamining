@@ -1,7 +1,7 @@
 /** Chunk was on 46984 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => P
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,21 +24,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk942408 = require("./942408.js");
 
-function S(e) {
+function C(e) {
   let {
     destinationPanel: t,
     originPanel: n
   } = e;
-  (0, p.QB)({
+  (0, y.QB)({
     destinationPane: t,
     originPane: n,
-    subsection: b.Z.getSubsection(),
-    source: b.Z.getAnalyticsLocation(),
-    locationStack: b.Z.getAnalyticsLocations()
+    subsection: p.Z.getSubsection(),
+    source: p.Z.getAnalyticsLocation(),
+    locationStack: p.Z.getAnalyticsLocations()
   })
 }
 
-function C(e) {
+function P(e) {
   var {
     target: t
   } = e, n = function(e, t) {
@@ -62,14 +62,14 @@ function C(e) {
       directory: c
     } = (0, f.Z)(m.Z, o),
     u = null != t && null != c.entry(t) ? t : true,
-    p = l.useRef(null);
+    y = l.useRef(null);
   return ((0, s.ZP)(() => {
-    let e = b.Z.getSection();
-    null != e && (S({
+    let e = p.Z.getSection();
+    null != e && (C({
       destinationPanel: e,
       originPanel: null
-    }), p.current = e)
-  }), (0, i.e7)([y.default], () => null != y.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
+    }), y.current = e)
+  }), (0, i.e7)([b.default], () => null != b.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -89,22 +89,22 @@ function C(e) {
   }({
     root: a,
     directory: c,
-    sidebarHeader: P,
+    sidebarHeader: S,
     emptyState: _,
-    sidebarFooter: g.Z,
+    sidebarFooter: h.Z,
     onPanelChange: e => {
-      let t = (0, h.getUserSettingsSectionsByWebUserSettings)().get(e);
-      null != t && (S({
+      let t = (0, x.getUserSettingsSectionsByWebUserSettings)().get(e);
+      null != t && (C({
         destinationPanel: t,
-        originPanel: p.current
-      }), p.current = t)
+        originPanel: y.current
+      }), y.current = t)
     },
     target: u,
-    defaultTarget: j.n.ACCOUNT_PANEL
+    defaultTarget: g.n.ACCOUNT_PANEL
   }, n)) : null
 }
 
-function P() {
+function S() {
   let e = Chunk996733.Z.useField("query"),
     t = Chunk473749.useRef(null),
     [n, i] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),

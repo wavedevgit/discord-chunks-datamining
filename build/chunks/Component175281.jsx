@@ -79,10 +79,10 @@ function Z() {
       return (0, r.jsxs)("div", {
         className: C.keyboardShortcutSection,
         children: [(0, r.jsxs)("div", {
-          children: [(0, r.jsx)(h.Heading, {
+          children: [(0, r.jsx)(p.Heading, {
             variant: "heading-lg/semibold",
             children: i
-          }), null != l && (0, r.jsx)(h.Text, {
+          }), null != l && (0, r.jsx)(p.Text, {
             className: C.keybindGroupDescription,
             variant: "text-sm/normal",
             children: l
@@ -93,12 +93,12 @@ function Z() {
             var n;
             return (null == (n = e.predicate) ? true : n.call(e)) === false ? null : (0, r.jsxs)("div", {
               className: C.keybindGroup,
-              children: [(0, r.jsx)(h.Text, {
+              children: [(0, r.jsx)(p.Text, {
                 variant: "text-sm/normal",
                 children: e.description
               }), (0, r.jsx)("div", {
                 className: "keybind-shortcuts",
-                children: e.binds.map(e => (0, r.jsx)(h.M2$, {
+                children: e.binds.map(e => (0, r.jsx)(p.M2$, {
                   className: C.keybindKey,
                   shortcut: e
                 }, e))
@@ -272,7 +272,7 @@ function T(e) {
       let e = setTimeout(() => c(false), 500);
       return () => clearTimeout(e)
     }
-  }, [s]), (0, r.jsx)(h.P3F, {
+  }, [s]), (0, r.jsx)(p.P3F, {
     onClick: u,
     className: o()(C.arrow, l, {
       [C.active]: t || s
@@ -295,15 +295,15 @@ function A(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(N, {
       showBackdrop: s
-    }), (0, r.jsx)(h.Y0X, {
+    }), (0, r.jsx)(p.Y0X, {
       className: o()(C.noBackground, {
         [C.noShadow]: l
       }),
-      size: h.CgR.DYNAMIC,
+      size: p.CgR.DYNAMIC,
       "aria-label": x.intl.string(x.t.T9DA2K),
       transitionState: t,
       parentComponent: "KeyboardShortcutsModal",
-      children: (0, r.jsx)(p.W, {
+      children: (0, r.jsx)(h.W, {
         component: "div",
         children: l ? (0, r.jsx)(v.Z, {
           handleDemonClose: function() {

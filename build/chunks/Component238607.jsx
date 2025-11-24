@@ -2,14 +2,13 @@
 /** chunk id: 238607, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk224706 = require("./224706.js"),
-  Chunk456100 = require("./456100.js"),
   Chunk841784 = require("./841784.js"),
   Chunk171516 = require("./171516.js"),
   Chunk103450 = require("./103450.js"),
@@ -19,63 +18,57 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function h(e) {
   let {
     user: t,
     activity: n,
-    onAction: m,
-    onClose: g
+    onAction: h,
+    onClose: m
   } = e, {
-    themeType: E
-  } = (0, d.z)(), b = (0, _.Z)({
+    themeType: g
+  } = (0, u.z)(), E = (0, f.Z)({
     applicationId: null == n ? true : n.application_id,
-    onClose: g
-  }), y = (0, u.e)({
+    onClose: m
+  }), b = (0, c.e)({
     activity: null != n ? n : true,
     embeddedActivity: true,
     user: t,
-    onClose: g
-  }), {
-    enabled: O
-  } = s.c.useExperiment({
-    location: "ActivityButton"
-  }, {
-    autoTrackExposure: true
-  }), v = (0, c.h)(null == n ? true : n.application_id), I = O ? a.iWm : a.jje;
-  if (null == y && null != n && (0, l.Z)(n)) return (0, r.jsx)(f.O1, {
-    icon: I,
-    text: h.intl.string(h.t.RscU7I),
-    fullWidth: E !== p.l.MODAL_V2,
+    onClose: m
+  }), y = (0, l.h)(null == n ? true : n.application_id);
+  if (null == b && null != n && (0, s.Z)(n)) return (0, r.jsx)(d.O1, {
+    icon: a.jje,
+    text: p.intl.string(p.t.RscU7I),
+    fullWidth: g !== _.l.MODAL_V2,
     onClick: e => {
-      e.stopPropagation(), null != v ? o.Z.launch({
-        applicationId: v
-      }) : (null == m || m({
+      e.stopPropagation(), null != y ? o.Z.launch({
+        applicationId: y
+      }) : (null == h || h({
         action: "PRESS_PLAY_BUTTON"
-      }), b())
+      }), E())
     }
   });
-  if (null == y) return null;
+  if (null == b) return null;
   let {
-    isJoining: T,
-    handleJoinRequest: S,
-    buttonCTA: A,
-    tooltip: C,
-    isEnabled: N,
-    isEmbedded: R
-  } = y;
+    isJoining: O,
+    handleJoinRequest: v,
+    buttonCTA: I,
+    tooltip: T,
+    isEnabled: S,
+    isEmbedded: A
+  } = b;
   return (0, r.jsx)(i.u, {
-    text: C,
-    asContainer: !N,
-    children: (0, r.jsx)(f.O1, {
-      icon: R ? a.YVR : a.iWm,
-      text: A,
-      disabled: !N,
-      loading: T,
-      fullWidth: E !== p.l.MODAL_V2,
+    text: T,
+    asContainer: !S,
+    children: (0, r.jsx)(d.O1, {
+      icon: A ? a.YVR : a.iWm,
+      text: I,
+      disabled: !S,
+      loading: O,
+      fullWidth: g !== _.l.MODAL_V2,
       onClick: e => {
-        e.stopPropagation(), null == m || m({
-          action: R ? "PRESS_JOIN_BUTTON" : "PRESS_ASK_TO_JOIN_BUTTON"
-        }), S()
+        e.stopPropagation(), null == h || h({
+          action: A ? "PRESS_JOIN_BUTTON" : "PRESS_ASK_TO_JOIN_BUTTON"
+        }), v()
       }
     })
   })

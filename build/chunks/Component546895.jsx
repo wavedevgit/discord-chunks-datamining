@@ -16,7 +16,6 @@ let o = {
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_You_Opt.lottie": () => require.e("56911").then(require.t.bind(require, 109496, 17)),
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Requests_Messages.lottie": () => require.e("40763").then(require.t.bind(require, 499154, 17)),
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/web/Activities.lottie": () => require.e("18330").then(require.t.bind(require, 642384, 17)),
-  "discord_common/js/packages/tokens/tools/platforms/lottie/originals/web/AppsControllerIcon.lottie": () => require.e("71648").then(require.t.bind(require, 284121, 17)),
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/web/AppsIcon.lottie": () => require.e("69921").then(require.t.bind(require, 427683, 17)),
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/web/Camera.lottie": () => require.e("10325").then(require.t.bind(require, 171118, 17)),
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/web/Deafen.lottie": () => require.e("48560").then(require.t.bind(require, 515206, 17)),

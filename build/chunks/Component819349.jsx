@@ -48,7 +48,7 @@ function O(e) {
     onClose: n
   } = e, l = r.useRef(null), [O, j] = r.useState(false), E = r.useRef(null), S = r.useRef(null), [P, I] = r.useState(0), Z = (0, s.e7)([f.Z], () => f.Z.can(b.Plq.CREATE_INSTANT_INVITE, t), [t]), [T, N] = r.useState(null), [A, w] = r.useState(false), M = r.useRef(null), {
     isHoveringOrFocusing: R
-  } = (0, g.Tu)(null == T ? M : l), [L, k] = r.useState(false), D = R || L, U = r.useCallback(() => {
+  } = (0, g.Tu)(null == T ? M : l), [L, D] = r.useState(false), k = R || L, U = r.useCallback(() => {
     j(false), null == n || n()
   }, [n]), B = (0, u.q_F)({
     from: {
@@ -76,12 +76,12 @@ function O(e) {
     null != S.current && clearTimeout(S.current)
   }), []);
   (0, p.ZP)(H), r.useEffect(() => {
-    if (!D) {
+    if (!k) {
       H(), V();
       return
     }
     null != E.current && clearTimeout(E.current), null != S.current && clearTimeout(S.current), j(true)
-  }, [D, H, V]), r.useEffect(() => {
+  }, [k, H, V]), r.useEffect(() => {
     !async function() {
       var e, n, i;
       let r = null != (e = h.Z.getInvite(t.id, {})) ? e : null;
@@ -101,7 +101,7 @@ function O(e) {
       j(true)
     }, []),
     z = r.useCallback(() => {
-      j(false), k(false)
+      j(false), D(false)
     }, []);
   return null == T ? null : (0, i.jsx)(u.yRy, {
     targetElementRef: l,
@@ -113,7 +113,7 @@ function O(e) {
     renderPopout: e => (0, i.jsx)(m.B, _({
       channel: t,
       inviteKey: T,
-      onHoverOrFocus: k
+      onHoverOrFocus: D
     }, e)),
     onRequestOpen: G,
     onRequestClose: z,
@@ -139,7 +139,7 @@ function O(e) {
               },
               children: [(0, i.jsxs)("svg", {
                 className: a()(C.timer, {
-                  [C.paused]: D
+                  [C.paused]: k
                 }),
                 viewBox: "0 0 ".concat(24, " ").concat(24),
                 style: {

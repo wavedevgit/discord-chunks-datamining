@@ -2,19 +2,18 @@
 /** chunk id: 415795, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $W: () => C,
-  Mx: () => P,
-  PZ: () => N,
-  h4: () => D,
-  ic: () => A,
-  n5: () => R,
-  rU: () => w,
-  s8: () => L
+  $W: () => A,
+  Mx: () => R,
+  PZ: () => C,
+  h4: () => P,
+  ic: () => S,
+  n5: () => N,
+  rU: () => D,
+  s8: () => w
 }), require("./388685.js"), require("./35282.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk456100 = require("./456100.js"),
   Chunk815372 = require("./815372.js"),
   Chunk43267 = require("./43267.js"),
   Chunk933557 = require("./933557.js"),
@@ -32,7 +31,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk297762 = require("./297762.js");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,7 +39,7 @@ function T(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class S extends Chunk473749.PureComponent {
+class T extends Chunk473749.PureComponent {
   componentDidMount() {
     let {
       focused: e,
@@ -71,7 +70,7 @@ class S extends Chunk473749.PureComponent {
     return (0, Chunk54381.jsxs)(Chunk481060.P3F, {
       role: "option",
       id: Chunk473749,
-      "aria-label": Chunk456100,
+      "aria-label": Chunk815372,
       "aria-selected": module,
       focusProps: {
         enabled: false
@@ -89,7 +88,7 @@ class S extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), T(this, "node", true), T(this, "handleClick", e => {
+    super(...e), I(this, "node", true), I(this, "handleClick", e => {
       e.preventDefault();
       let {
         onClick: t
@@ -97,19 +96,19 @@ class S extends Chunk473749.PureComponent {
         node: n
       } = this;
       null != n && t(e, n)
-    }), T(this, "handleMouseEnter", e => {
+    }), I(this, "handleMouseEnter", e => {
       let {
         onMouseEnter: t
       } = this.props, {
         node: n
       } = this;
       null != n && t(e, n)
-    }), T(this, "setRef", e => {
+    }), I(this, "setRef", e => {
       this.node = e
     })
   }
 }
-class A extends Chunk473749.Component {
+class S extends Chunk473749.Component {
   renderIcon() {
     let {
       guild: e
@@ -167,8 +166,8 @@ class A extends Chunk473749.Component {
       score: o,
       id: s
     } = this.props;
-    return (0, Chunk54381.jsx)(S, {
-      id: Chunk456100,
+    return (0, Chunk54381.jsx)(T, {
+      id: Chunk815372,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: module,
       onClick: exports,
@@ -180,7 +179,7 @@ class A extends Chunk473749.Component {
     })
   }
 }
-class C extends(r = Chunk473749.Component) {
+class A extends(r = Chunk473749.Component) {
   renderIcon() {
     var e;
     let {
@@ -276,8 +275,8 @@ class C extends(r = Chunk473749.Component) {
       score: o,
       id: s
     } = this.props;
-    return (0, Chunk54381.jsx)(S, {
-      id: Chunk456100,
+    return (0, Chunk54381.jsx)(T, {
+      id: Chunk815372,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: module,
       onClick: exports,
@@ -289,10 +288,10 @@ class C extends(r = Chunk473749.Component) {
     })
   }
 }
-T(C, "defaultProps", {
+I(A, "defaultProps", {
   unread: false
 });
-class N extends Chunk473749.Component {
+class C extends Chunk473749.Component {
   renderIcon() {
     let {
       channel: e,
@@ -359,8 +358,8 @@ class N extends Chunk473749.Component {
       score: o,
       id: s
     } = this.props;
-    return (0, Chunk54381.jsx)(S, {
-      id: Chunk456100,
+    return (0, Chunk54381.jsx)(T, {
+      id: Chunk815372,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: module,
       onClick: exports,
@@ -372,7 +371,7 @@ class N extends Chunk473749.Component {
     })
   }
 }
-class R extends Chunk473749.Component {
+class N extends Chunk473749.Component {
   renderIcon() {
     let {
       user: e,
@@ -455,8 +454,8 @@ class R extends Chunk473749.Component {
       score: o,
       id: s
     } = this.props;
-    return (0, Chunk54381.jsx)(S, {
-      id: Chunk456100,
+    return (0, Chunk54381.jsx)(T, {
+      id: Chunk815372,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: module,
       onClick: exports,
@@ -468,7 +467,7 @@ class R extends Chunk473749.Component {
     })
   }
 }
-class P extends Chunk473749.Component {
+class R extends Chunk473749.Component {
   renderContent() {
     let {
       children: e,
@@ -498,7 +497,7 @@ class P extends Chunk473749.Component {
       focused: r,
       id: a
     } = this.props;
-    return (0, Chunk54381.jsx)(S, {
+    return (0, Chunk54381.jsx)(T, {
       id: Chunk473749,
       onMouseEnter: module,
       onClick: exports,
@@ -508,7 +507,7 @@ class P extends Chunk473749.Component {
     })
   }
 }
-class D extends Chunk473749.Component {
+class P extends Chunk473749.Component {
   render() {
     return (0, Chunk54381.jsx)("div", {
       className: Chunk297762.__invalid_resultDefault,
@@ -522,7 +521,7 @@ class D extends Chunk473749.Component {
     })
   }
 }
-class w extends Chunk473749.Component {
+class D extends Chunk473749.Component {
   renderContent() {
     let e, t, {
         link: n,
@@ -559,8 +558,8 @@ class w extends Chunk473749.Component {
       score: o,
       id: s
     } = this.props;
-    return (0, Chunk54381.jsx)(S, {
-      id: Chunk456100,
+    return (0, Chunk54381.jsx)(T, {
+      id: Chunk815372,
       onMouseEnter: module,
       onClick: exports,
       onFocus: require,
@@ -571,21 +570,13 @@ class w extends Chunk473749.Component {
     })
   }
 }
-class L extends Chunk473749.Component {
+class w extends Chunk473749.Component {
   renderContent() {
     var e, t;
     let n, r, {
-        navigationRecord: a,
-        children: c
-      } = this.props,
-      {
-        enabled: u
-      } = Chunk456100.c.getCurrentConfig({
-        location: "QuickSwitcherResults"
-      }, {
-        autoTrackExposure: true
-      }),
-      d = Chunk933557 ? Chunk481060.iWm : Chunk481060.jje;
+      navigationRecord: a,
+      children: l
+    } = this.props;
     switch (Chunk473749.type) {
       case Chunk815372.Ky.SHOP:
         n = Chunk388032.intl.string(Chunk388032.t.pWG4ze), r = (0, Chunk54381.jsx)(Chunk481060.EOn, {
@@ -618,7 +609,7 @@ class L extends Chunk473749.Component {
         });
         break;
       case Chunk815372.Ky.APPS_HOME:
-        n = Chunk388032.intl.string(Chunk388032.t.PHjkRE), r = (0, Chunk54381.jsx)(Chunk471445, {
+        n = Chunk388032.intl.string(Chunk388032.t.PHjkRE), r = (0, Chunk54381.jsx)(Chunk481060.jje, {
           size: "xs",
           color: "currentColor"
         });
@@ -671,8 +662,8 @@ class L extends Chunk473749.Component {
       score: o,
       id: s
     } = this.props;
-    return (0, Chunk54381.jsx)(S, {
-      id: Chunk456100,
+    return (0, Chunk54381.jsx)(T, {
+      id: Chunk815372,
       onMouseEnter: module,
       onClick: exports,
       onFocus: require,

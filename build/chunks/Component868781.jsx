@@ -2,12 +2,11 @@
 /** chunk id: 868781, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk657707 = require("./657707.js"),
-  Chunk456100 = require("./456100.js"),
   Chunk841784 = require("./841784.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk482798 = require("./482798.js"),
@@ -21,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk532657 = require("./532657.jsx"),
   Chunk981631 = require("./981631.js");
 
-function b(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,122 +29,110 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
 }
-let O = function(e) {
+let y = function(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return (0, u.dS)(e) ? a.ewx : (0, s.Z)(e) ? t ? a.iWm : a.jje : e.type === E.IIU.PLAYING ? a.iWm : e.type === E.IIU.LISTENING ? a.RZG : e.type === E.IIU.WATCHING || e.type === E.IIU.STREAMING ? a.ARS : e.type === E.IIU.COMPETING ? a.iWm : null
+  return (0, c.dS)(e) ? a.ewx : (0, o.Z)(e) ? t ? a.iWm : a.jje : e.type === g.IIU.PLAYING ? a.iWm : e.type === g.IIU.LISTENING ? a.RZG : e.type === g.IIU.WATCHING || e.type === g.IIU.STREAMING ? a.ARS : e.type === g.IIU.COMPETING ? a.iWm : null
 };
+
+function O(e) {
+  let {
+    activity: t,
+    textVariant: n,
+    textClassName: a,
+    iconClassName: o,
+    hideIcon: c = false,
+    hideText: u = false,
+    hideTooltip: m = false,
+    canTruncate: g = true
+  } = e, {
+    descriptiveTextEnabled: E
+  } = (0, d.f)({
+    location: "PresenceActivityStatus"
+  }), {
+    enableTopNavButton: b
+  } = (0, l.Cq)({
+    location: "PresenceActivityStatus"
+  }), {
+    analyticsLocations: O
+  } = (0, s.ZP)(), v = i.useCallback(() => {
+    (0, _.A)({
+      analyticsLocations: O,
+      activityType: t.type,
+      applicationId: t.application_id
+    })
+  }, [O, t.application_id, t.type]);
+  if (c && u) return null;
+  let {
+    text: I,
+    tooltip: T
+  } = (0, f.Z)(t, E || b), S = y(t), A = u && !m && null != T;
+  return (0, r.jsxs)(r.Fragment, {
+    children: [!c && null != S && (0, r.jsx)(p.Z, {
+      icon: S,
+      tooltipText: A ? T : true,
+      className: o,
+      onTooltipShow: A ? v : true
+    }), !u && (0, r.jsx)(h.Z, {
+      variant: n,
+      className: a,
+      canTruncate: g,
+      hideTooltip: m,
+      children: I
+    })]
+  })
+}
 
 function v(e) {
   let {
     activity: t,
     textVariant: n,
-    textClassName: a,
-    iconClassName: s,
-    hideIcon: u = false,
-    hideText: d = false,
-    hideTooltip: g = false,
-    canTruncate: E = true
+    textClassName: i,
+    iconClassName: a,
+    hideIcon: o = false,
+    hideText: s = false,
+    hideTooltip: c = false,
+    canTruncate: u = true
   } = e, {
-    enabled: b
-  } = o.c.useExperiment({
-    location: "PresenceActivityStatus"
-  }, {
-    autoTrackExposure: true
+    descriptiveTextEnabled: _
+  } = (0, d.f)({
+    location: "PresenceActivityStatusWithCombinedTooltip"
   }), {
-    descriptiveTextEnabled: y
-  } = (0, f.f)({
-    location: "PresenceActivityStatus"
+    enableTopNavButton: h
+  } = (0, l.Cq)({
+    location: "PresenceActivityStatusWithCombinedTooltip"
   }), {
-    enableTopNavButton: v
-  } = (0, c.Cq)({
-    location: "PresenceActivityStatus"
-  }), {
-    analyticsLocations: I
-  } = (0, l.ZP)(), T = i.useCallback(() => {
-    (0, p.A)({
-      analyticsLocations: I,
-      activityType: t.type,
-      applicationId: t.application_id
-    })
-  }, [I, t.application_id, t.type]);
-  if (u && d) return null;
-  let {
-    text: S,
-    tooltip: A
-  } = (0, _.Z)(t, y || v), C = O(t, b), N = d && !g && null != A;
-  return (0, r.jsxs)(r.Fragment, {
-    children: [!u && null != C && (0, r.jsx)(h.Z, {
-      icon: C,
-      tooltipText: N ? A : true,
-      className: s,
-      onTooltipShow: N ? T : true
-    }), !d && (0, r.jsx)(m.Z, {
-      variant: n,
-      className: a,
-      canTruncate: E,
-      hideTooltip: g,
-      children: S
-    })]
+    text: g,
+    tooltip: E
+  } = (0, f.Z)(t, _ || h), b = y(t), O = null != b && !o;
+  return (0, r.jsx)(m.Z, {
+    icon: O ? (0, r.jsx)(p.Z, {
+      icon: b,
+      className: a
+    }) : true,
+    text: g,
+    textVariant: n,
+    textClassName: i,
+    hideTooltip: c,
+    canTruncate: u,
+    "aria-label": null != E ? E : "",
+    hideText: s
   })
 }
 
 function I(e) {
-  let {
-    activity: t,
-    textVariant: n,
-    textClassName: i,
-    iconClassName: a,
-    hideIcon: s = false,
-    hideText: l = false,
-    hideTooltip: u = false,
-    canTruncate: d = true
-  } = e, {
-    enabled: p
-  } = o.c.useExperiment({
-    location: "PresenceActivityStatusWithCombinedTooltip"
-  }, {
-    autoTrackExposure: true
-  }), {
-    descriptiveTextEnabled: m
-  } = (0, f.f)({
-    location: "PresenceActivityStatusWithCombinedTooltip"
-  }), {
-    enableTopNavButton: E
-  } = (0, c.Cq)({
-    location: "PresenceActivityStatusWithCombinedTooltip"
-  }), {
-    text: b,
-    tooltip: y
-  } = (0, _.Z)(t, m || E), v = O(t, p), I = null != v && !s;
-  return (0, r.jsx)(g.Z, {
-    icon: I ? (0, r.jsx)(h.Z, {
-      icon: v,
-      className: a
-    }) : true,
-    text: b,
-    textVariant: n,
-    textClassName: i,
-    hideTooltip: u,
-    canTruncate: d,
-    "aria-label": null != y ? y : "",
-    hideText: l
-  })
-}
-
-function T(e) {
-  return (0, d.b)({
+  return (0, u.b)({
     location: "VoiceActivityStatusExperimentWrapper"
-  }) ? (0, r.jsx)(I, y({}, e)) : (0, r.jsx)(v, y({}, e))
+  }) ? (0, r.jsx)(v, b({}, e)) : (0, r.jsx)(O, b({}, e))
 }

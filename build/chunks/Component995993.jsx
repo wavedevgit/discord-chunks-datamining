@@ -29,14 +29,14 @@ function C(e) {
   let {
     guild: t,
     selected: C
-  } = e, E = (0, f.Z)(t), S = (0, u.Nj)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, l.Wu)([p.Z], () => Array.from(p.Z.getNewChannelIds(t.id)).filter(e => p.Z.shouldIndicateNewChannel(t.id, e))), P = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), N = I.length > b.Cb, Z = (0, l.e7)([d.Z, g.ZP], () => {
+  } = e, E = (0, f.Z)(t), S = (0, u.Nj)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), P = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), N = I.length > b.Cb, Z = (0, l.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
       n = g.ZP.lastMessageId(t.id, v.W.GUILD_ONBOARDING_QUESTION);
     if (null == n) returnfalse;
     let r = m.default.extractTimestamp(n);
     return null != e && e > r
   }), w = i.useCallback(() => {
-    (0, h.uL)(y.Z5c.CHANNEL(t.id, E ? O.oC.CUSTOMIZE_COMMUNITY : O.oC.CHANNEL_BROWSER))
+    (0, p.uL)(y.Z5c.CHANNEL(t.id, E ? O.oC.CUSTOMIZE_COMMUNITY : O.oC.CHANNEL_BROWSER))
   }, [t.id, E]), T = i.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {

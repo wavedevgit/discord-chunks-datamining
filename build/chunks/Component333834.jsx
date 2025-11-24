@@ -105,8 +105,8 @@ function R(e) {
     unreadMessages: n,
     loadMore: l,
     renderLoadingState: a,
-    renderMessageGroup: p,
-    scrollerClassName: h,
+    renderMessageGroup: h,
+    scrollerClassName: p,
     className: I,
     listName: P,
     ignoreGrouping: R = false
@@ -200,7 +200,7 @@ function R(e) {
     X = 0 === t.length && 0 === n.length && !F && U,
     Q = i.useMemo(() => {
       let e = [];
-      return X ? e.push(a()) : q ? e.push((0, r.jsx)(A, {}, "empty-state")) : R ? (e.push(...n.map(e => p([e], true))), e.push(...t.map(e => p([e], false)))) : s().each(T, t => {
+      return X ? e.push(a()) : q ? e.push((0, r.jsx)(A, {}, "empty-state")) : R ? (e.push(...n.map(e => h([e], true))), e.push(...t.map(e => h([e], false)))) : s().each(T, t => {
         0 !== Y[t].length && (e.push((0, r.jsx)(w, {
           group: t,
           isOpen: H[t],
@@ -212,9 +212,9 @@ function R(e) {
               viewId: D
             })
           }
-        }, t)), H[t] && e.push(...Y[t].map(e => p(e, t === E.KZ.UNREAD))))
+        }, t)), H[t] && e.push(...Y[t].map(e => h(e, t === E.KZ.UNREAD))))
       }), e
-    }, [t, n, a, H, W, Y, R, p, q, X, D]),
+    }, [t, n, a, H, W, Y, R, h, q, X, D]),
     J = Q[Q.length - 1],
     $ = i.isValidElement(J) && J.type === w,
     ee = (0, x.d)(e => e.setInboxReadState);
@@ -308,7 +308,7 @@ function R(e) {
               var t;
               L.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(N.messagesPopout, h),
+            className: o()(N.messagesPopout, p),
             onScroll: K,
             fade: true
           }, l), n = n = {

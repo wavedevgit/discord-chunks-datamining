@@ -1,7 +1,7 @@
 /** Chunk was on 46984 **/
 /** chunk id: 636298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk214779 = require("./214779.js");
 
-function p(e) {
+function y(e) {
   let {
     icon: t,
     label: n,
@@ -40,45 +40,45 @@ function v(e) {
   return (0, r.jsx)(c.f6W, {
     theme: i,
     children: e => (0, r.jsxs)("div", {
-      className: o()(y.contentHeader, e),
+      className: o()(b.contentHeader, e),
       children: [(0, r.jsxs)("div", {
-        className: y.contentHeaderLeft,
-        children: [a.tq && (0, r.jsx)(p, {
+        className: b.contentHeaderLeft,
+        children: [a.tq && (0, r.jsx)(y, {
           icon: c.yFM,
           onClick: () => d.Z.setState({
             showNavigationMobile: true
           }),
-          label: b.intl.string(b.t["13/7kX"])
+          label: p.intl.string(p.t["13/7kX"])
         }), (0, r.jsx)(c.Heading, {
           variant: "heading-md/medium",
           color: "header-secondary",
           children: t
         }), null != n && n]
-      }), (0, r.jsx)(p, {
+      }), (0, r.jsx)(y, {
         icon: c.Uz9,
         onClick: l,
-        label: b.intl.string(b.t.cpT0Cq)
+        label: p.intl.string(p.t.cpT0Cq)
       })]
     })
   })
 }
-let j = Chunk473749.memo(function(e) {
+let g = Chunk473749.memo(function(e) {
   var t, n;
   let {
     onClose: l,
     setting: i
   } = e, s = null != (n = null == i ? true : i.useTitle()) ? n : "", c = null == i || null == (t = i.useBadge) ? true : t.call(i), u = d.Z.useField("showNavigationMobile");
   return (0, r.jsxs)("div", {
-    className: o()(y.content, {
-      [y.mobile]: a.tq,
-      [y.mobileNavigationOpen]: u
+    className: o()(b.content, {
+      [b.mobile]: a.tq,
+      [b.mobileNavigationOpen]: u
     }),
     children: [(0, r.jsx)(v, {
       title: s,
       badge: c,
       onClose: l
     }), (0, r.jsx)("div", {
-      className: y.contentBody,
+      className: b.contentBody,
       children: null != i && (0, r.jsx)(f.Z, {
         node: i
       })

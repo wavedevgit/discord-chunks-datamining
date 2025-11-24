@@ -21,26 +21,26 @@ function d(e) {
     embedId: f,
     transitionState: g,
     onClose: b
-  } = e, p = (0, s.v)(t, n, d), y = (0, s.Z)(t, n, f), {
-    reportFalsePositive: O,
-    isReportFalsePositiveLoading: h
+  } = e, p = (0, s.v)(t, n, d), m = (0, s.Z)(t, n, f), {
+    reportFalsePositive: y,
+    isReportFalsePositiveLoading: O
   } = (0, o.$)({
     onSuccess: () => (0, c.s)(b),
     onError: () => {
       (0, i.showToast)((0, i.createToast)(u.intl.string(u.t.R0RpRX), i.ToastType.FAILURE))
     },
     report: () => {
-      (0, l.Uj)(t, n, p.map(e => e.id), y.map(e => e.id))
+      (0, l.Uj)(t, n, p.map(e => e.id), m.map(e => e.id))
     }
   });
-  return p.length > 0 || y.length > 0 || b(), (0, r.jsx)(c.$, {
+  return p.length > 0 || m.length > 0 || b(), (0, r.jsx)(c.$, {
     messageId: n,
     channelId: t,
-    isReportFalsePositiveLoading: h,
+    isReportFalsePositiveLoading: O,
     analyticsContext: a.UU.EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW,
-    onConfirmPress: O,
-    attachmentPreview: 1 === p.length && 0 === y.length ? p[0] : true,
-    embedPreview: 1 === y.length && 0 === p.length ? y[0] : true,
+    onConfirmPress: y,
+    attachmentPreview: 1 === p.length && 0 === m.length ? p[0] : true,
+    embedPreview: 1 === m.length && 0 === p.length ? m[0] : true,
     transitionState: g,
     onClose: b
   })

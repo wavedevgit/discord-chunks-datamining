@@ -19,24 +19,24 @@ function a(e) {
     useTitle: u,
     useSubtitle: d,
     useDisabled: f,
-    onValueRender: b,
-    asValueChanges: y,
-    markers: p,
+    onValueRender: p,
+    asValueChanges: b,
+    markers: y,
     onMarkerRender: v
-  } = t, [j] = l.useState(() => a()), g = u(), m = null == d ? true : d(), h = null == f ? true : f();
+  } = t, [g] = l.useState(() => a()), h = u(), m = null == d ? true : d(), x = null == f ? true : f();
   return (0, r.jsx)(o.X, {
     children: (0, r.jsx)(i.iRW, {
-      label: g,
+      label: h,
       description: m,
-      disabled: h,
-      initialValue: j,
+      disabled: x,
+      initialValue: g,
       minValue: s,
       maxValue: c,
-      onValueRender: b,
-      asValueChanges: y,
+      onValueRender: p,
+      asValueChanges: b,
       onValueChange: n,
       orientation: "horizontal",
-      markers: p,
+      markers: y,
       onMarkerRender: v
     })
   })

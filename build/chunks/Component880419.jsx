@@ -34,25 +34,25 @@ function b(e) {
     isLoading: E,
     error: S,
     onShowDeactivate: I
-  } = (0, f.ZP)(l, b), P = (0, d.ZP)(l, b), N = P.type !== p.A3.INACTIVE, {
+  } = (0, f.ZP)(l, b), P = (0, d.ZP)(l, b), N = P.type !== h.A3.INACTIVE, {
     disabled: Z,
     reason: w
   } = (0, u.Z)(l, b, N), T = null != w ? {
     title: null,
     body: w
   } : function(e, t) {
-    if (e.type === p.A3.LEVEL_ACTIVATED) {
+    if (e.type === h.A3.LEVEL_ACTIVATED) {
       var n, r;
       return {
-        title: g.intl.string(h.default["9oYuvb"]),
-        body: g.intl.formatToPlainString(h.default.WRRYUT, {
+        title: g.intl.string(p.default["9oYuvb"]),
+        body: g.intl.formatToPlainString(p.default.WRRYUT, {
           perkName: null != (r = null == (n = e.sourcePowerup) ? true : n.title) ? r : g.intl.string(g.t.BfF6ED)
         })
       }
     }
-    return e.type === p.A3.POWERUP_ACTIVATED ? {
-      title: g.intl.string(h.default.TZsu1U),
-      body: g.intl.formatToPlainString(h.default["5HQUzD"], {
+    return e.type === h.A3.POWERUP_ACTIVATED ? {
+      title: g.intl.string(p.default.TZsu1U),
+      body: g.intl.formatToPlainString(p.default["5HQUzD"], {
         boostCount: t.cost
       })
     } : null
@@ -64,7 +64,7 @@ function b(e) {
     title: null != (n = null == T ? true : T.title) ? n : true,
     shouldShow: null != T,
     delay: 100,
-    "aria-label": null != w ? w : N ? g.intl.string(h.default.TZsu1U) : true,
+    "aria-label": null != w ? w : N ? g.intl.string(p.default.TZsu1U) : true,
     children: (0, r.jsx)("div", {
       className: o()(m.secondaryButton, {
         [m.buttonWrapper]: v,
@@ -85,7 +85,7 @@ function b(e) {
             text: t.toString(),
             icon: a
           } : {
-            text: g.intl.format(n ? h.default.uzQpQd : h.default.ad2Mfj, {
+            text: g.intl.format(n ? p.default.uzQpQd : p.default.ad2Mfj, {
               boostCount: t,
               dotHook: () => (0, r.jsx)("span", {
                 className: m.dot,
@@ -123,7 +123,7 @@ function b(e) {
           return e
         }({
           variant: N ? "secondary" : "primary",
-          "aria-label": g.intl.string(N ? h.default.TZsu1U : h.default.gSxlHf),
+          "aria-label": g.intl.string(N ? p.default.TZsu1U : p.default.gSxlHf),
           disabled: Z,
           onClick: N ? I : C,
           loading: E,

@@ -205,9 +205,9 @@ function ep(e) {
       isFocused: s
     } = e, {
       author: d
-    } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), m = (0, u.e7)([D.default], () => D.default.getId()), g = (0, L.$R)(t), b = (0, L.Gu)(t), {
+    } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), m = (0, u.e7)([k.default], () => k.default.getId()), g = (0, L.$R)(t), b = (0, L.Gu)(t), {
       firstMessage: v
-    } = (0, u.e7)([y.Z], () => y.Z.getMessage(t.id), [t.id]), _ = k.nc.useSetting(), x = k.Sb.useSetting(), j = (0, u.e7)([H.Z], () => null == t.guild_id || H.Z.canChatInGuild(t.guild_id), [t]), {
+    } = (0, u.e7)([y.Z], () => y.Z.getMessage(t.id), [t.id]), _ = D.nc.useSetting(), x = D.Sb.useSetting(), j = (0, u.e7)([H.Z], () => null == t.guild_id || H.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: E,
       canAddNewReactions: S
     } = (0, u.cj)([V.Z], () => ({

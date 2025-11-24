@@ -15,13 +15,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function p(e) {
   let {
     closePopout: t,
     onSelect: n
   } = e, i = (0, l.e7)([c.Z, u.Z], () => c.Z.getChannel(u.Z.getChannelId())), {
     everyoneFilter: o,
-    roleFilter: h,
+    roleFilter: p,
     guildFilter: g
   } = (0, l.cj)([d.ZP], () => {
     let {
@@ -37,12 +37,12 @@ function h(e) {
   });
   return (0, r.jsxs)(a.v2r, {
     navId: "mentions-filter",
-    "aria-label": p.intl.string(p.t.pEasFX),
+    "aria-label": h.intl.string(h.t.pEasFX),
     onClose: t,
     onSelect: n,
     children: [(0, r.jsx)(a.S89, {
       id: "Everyone",
-      label: p.intl.string(p.t.cdyUsV),
+      label: h.intl.string(h.t.cdyUsV),
       action: function() {
         s.Z.setGuildFilter({
           everyoneFilter: !o
@@ -51,16 +51,16 @@ function h(e) {
       checked: o
     }), (0, r.jsx)(a.S89, {
       id: "Roles",
-      label: p.intl.string(p.t.lZejCq),
+      label: h.intl.string(h.t.lZejCq),
       action: function() {
         s.Z.setGuildFilter({
-          roleFilter: !h
+          roleFilter: !p
         })
       },
-      checked: h
+      checked: p
     }), null == i || i.isPrivate() ? null : (0, r.jsx)(a.S89, {
       id: "All Servers",
-      label: p.intl.string(p.t.GWMA6s),
+      label: h.intl.string(h.t.GWMA6s),
       action: function() {
         s.Z.setGuildFilter({
           guildFilter: g === f.NgX.THIS_SERVER ? f.NgX.ALL_SERVERS : f.NgX.THIS_SERVER
@@ -82,7 +82,7 @@ function g() {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(h, {
+      return (0, r.jsx)(p, {
         closePopout: t
       })
     },
@@ -91,12 +91,12 @@ function g() {
         onClick: n
       } = t;
       return (0, r.jsx)(o.u, {
-        text: p.intl.string(p.t.pEasFX),
+        text: h.intl.string(h.t.pEasFX),
         children: (0, r.jsx)(a.hU, {
           buttonRef: e,
           size: "sm",
           variant: "secondary",
-          "aria-label": p.intl.string(p.t.pEasFX),
+          "aria-label": h.intl.string(h.t.pEasFX),
           color: a.YX$.TERTIARY,
           icon: a.gXV,
           onClick: n

@@ -96,9 +96,9 @@ function T(e) {
     tabIndex: d,
     forceShowButtons: g,
     hasChannelInfo: _ = false
-  } = e, j = (0, p._k)({
+  } = e, j = (0, h._k)({
     location: "channel_base"
-  }), x = (0, s.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), I = (0, s.e7)([m.Z], () => m.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([f.ZP], () => f.ZP.getActiveEventByChannel(t.id), [t.id]), Z = (0, s.e7)([v.Z], () => (0, h.b)(v.Z, x, t, I)), w = (0, s.e7)([v.Z], () => (null == t ? true : t.type) === C.d4z.GUILD_VOICE && j.isVoiceChannelEntrypointEnabled ? E.intl.string(E.t["EE+P0H"]) : j.isTextChannelEntrypointEnabled ? E.intl.string(E.t["0jeAXt"]) : v.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTG) : E.intl.string(E.t.Sd8Ixw)), T = l.useRef(null);
+  }), x = (0, s.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), I = (0, s.e7)([m.Z], () => m.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([f.ZP], () => f.ZP.getActiveEventByChannel(t.id), [t.id]), Z = (0, s.e7)([v.Z], () => (0, p.b)(v.Z, x, t, I)), w = (0, s.e7)([v.Z], () => (null == t ? true : t.type) === C.d4z.GUILD_VOICE && j.isVoiceChannelEntrypointEnabled ? E.intl.string(E.t["EE+P0H"]) : j.isTextChannelEntrypointEnabled ? E.intl.string(E.t["0jeAXt"]) : v.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTG) : E.intl.string(E.t.Sd8Ixw)), T = l.useRef(null);
   if (o || !Z || t.isModeratorReportChannel()) return null;
   let A = [j.isVoiceChannelEntrypointEnabled, j.isTextChannelEntrypointEnabled].some(Boolean) ? u.oLu : u.ejJ,
     R = (0, i.jsx)(A, {

@@ -12,11 +12,11 @@ var r, i, Chunk106351 = require("./106351.js"),
 let d = new Set,
   f = {};
 
-function p(e) {
+function h(e) {
   return new Date(e * c.Z.Millis.SECOND).getTime()
 }
 
-function h() {
+function p() {
   d.clear()
 }
 
@@ -43,8 +43,8 @@ class m extends(r = Chunk442837.ZP.Store) {
 let b = new m(Chunk570140.Z, {
   GUILD_CREATE: g,
   GUILD_DELETE: g,
-  CONNECTION_RESUMED: h,
-  CONNECTION_OPEN: h,
+  CONNECTION_RESUMED: p,
+  CONNECTION_OPEN: p,
   VOICE_CHANNEL_START_TIME_UPDATE: function(e) {
     let {
       guildId: t,
@@ -55,7 +55,7 @@ let b = new m(Chunk570140.Z, {
         guildId: t,
         location: "VoiceChannelStartTimeStore"
       }).enabled) returnfalse;
-    null == f[t] && (f[t] = {}), f[t][n] = null != r ? p(r) : true
+    null == f[t] && (f[t] = {}), f[t][n] = null != r ? h(r) : true
   },
   CHANNEL_INFO: function(e) {
     let {
@@ -66,7 +66,7 @@ let b = new m(Chunk570140.Z, {
         id: e,
         voiceStartTime: r
       }
-      of(f[t] = {}, n)) f[t][e] = null != r ? p(r) : true
+      of(f[t] = {}, n)) f[t][e] = null != r ? h(r) : true
   },
   FETCH_CHANNEL_INFO: function(e) {
     let {

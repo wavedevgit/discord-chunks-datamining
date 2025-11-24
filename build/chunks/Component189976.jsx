@@ -19,9 +19,9 @@ let b = new Map;
 function p(e, t) {
   let {
     handleTranslate: p,
-    handleRevertTranslation: y,
-    isTranslating: O,
-    isTranslated: h
+    handleRevertTranslation: m,
+    isTranslating: y,
+    isTranslated: O
   } = function(e) {
     let [t, n] = i.useState(false), r = (0, l.e7)([u.default], () => u.default.locale);
     return {
@@ -71,7 +71,7 @@ function p(e, t) {
       isTranslating: t,
       isTranslated: b.has(e.id)
     }
-  }(e), m = function(e, t) {
+  }(e), h = function(e, t) {
     let l = (0, f.getAvailableLocales)();
     return i.useMemo(() => l.map(i => {
       let l;
@@ -92,18 +92,18 @@ function p(e, t) {
         disabled: t
       }, i.value)
     }), [e, t, l])
-  }(p, O), v = (0, c.o)();
-  return null != e.content && "" !== e.content.trim() && v ? h ? (0, r.jsx)(o.sNh, {
+  }(p, y), v = (0, c.o)();
+  return null != e.content && "" !== e.content.trim() && v ? O ? (0, r.jsx)(o.sNh, {
     id: "revert-translation",
     label: f.intl.string(f.t.JC9BXn),
     icon: o.os0,
-    action: y,
-    disabled: O
+    action: m,
+    disabled: y
   }) : (0, r.jsx)(o.sNh, {
     id: "translate",
-    label: O ? f.intl.string(f.t.SVKIdU) : f.intl.string(f.t["6epDlR"]),
+    label: y ? f.intl.string(f.t.SVKIdU) : f.intl.string(f.t["6epDlR"]),
     action: () => p(),
-    disabled: O,
-    children: m
+    disabled: y,
+    children: h
   }) : null
 }

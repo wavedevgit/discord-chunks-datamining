@@ -20,49 +20,49 @@ function d(e) {
     {
       useTitle: f
     } = d,
-    [b, y] = l.useState(false),
+    [p, b] = l.useState(false),
     {
-      layout: p,
+      layout: y,
       collapseAfter: v,
-      ContextProvider: j,
-      useCollapsibleTitle: g,
+      ContextProvider: g,
+      useCollapsibleTitle: h,
       useCollapsedSubtitle: m
     } = d,
-    h = p.filter(e => {
+    x = y.filter(e => {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    x = null != v ? h.slice(0, v) : h,
-    O = null != v ? h.slice(v) : [],
-    S = null != j ? j : l.Fragment,
-    C = null == f ? true : f(),
-    P = null != (t = null == g ? true : g(b, O.length)) ? t : (n = O.length, b ? c.intl.formatToPlainString(c.t["3SHL+d"], {
+    j = null != v ? x.slice(0, v) : x,
+    O = null != v ? x.slice(v) : [],
+    C = null != g ? g : l.Fragment,
+    P = null == f ? true : f(),
+    S = null != (t = null == h ? true : h(p, O.length)) ? t : (n = O.length, p ? c.intl.formatToPlainString(c.t["3SHL+d"], {
       count: n
     }) : c.intl.formatToPlainString(c.t["8JRFyZ"], {
       count: n
     })),
     _ = null == m ? true : m();
-  return (0, r.jsx)(S, {
+  return (0, r.jsx)(C, {
     children: (0, r.jsxs)(i.Kqy, {
       gap: 8,
-      children: [null != C && (0, r.jsx)(i.Heading, {
+      children: [null != P && (0, r.jsx)(i.Heading, {
         variant: "heading-md/semibold",
         color: "header-secondary",
         className: u.listTitle,
-        children: C
-      }), x.map((e, t) => (0, r.jsxs)(l.Fragment, {
+        children: P
+      }), j.map((e, t) => (0, r.jsxs)(l.Fragment, {
         children: [(0, r.jsx)(o.Z, {
           node: e
-        }), O.length > 0 && t !== x.length - 1 && (0, r.jsx)(a.Z, {})]
+        }), O.length > 0 && t !== j.length - 1 && (0, r.jsx)(a.Z, {})]
       }, e.key)), O.length > 0 && (0, r.jsxs)("div", {
         className: u.collapsibleContainer,
         children: [(0, r.jsx)(a.Z, {
           className: u.hoverDivider
         }), (0, r.jsx)(s.I, {
-          title: P,
+          title: S,
           collapsedSubtitle: _,
-          isOpen: b,
-          setIsOpen: y,
+          isOpen: p,
+          setIsOpen: b,
           children: (0, r.jsx)(i.Kqy, {
             gap: 8,
             padding: {

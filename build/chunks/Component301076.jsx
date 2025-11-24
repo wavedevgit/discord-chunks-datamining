@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk562129 = require("./562129.js"),
+var Chunk749280 = require("./749280.jsx"),
   Chunk871499 = require("./871499.jsx");
 
 function a(e) {
@@ -33,7 +33,7 @@ function a(e) {
     Component: c,
     events: u,
     play: d
-  } = (0, r.Z)("ActivityButton");
+  } = (0, r.w)();
   return (0, i.jsx)(l.d, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

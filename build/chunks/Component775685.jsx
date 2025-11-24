@@ -10,12 +10,12 @@ var Chunk54381 = require("./54381.js"),
   o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk749280 = require("./749280.jsx"),
   Chunk681715 = require("./681715.js"),
   Chunk566620 = require("./566620.js"),
   Chunk499254 = require("./499254.js"),
   Chunk541099 = require("./541099.js"),
   Chunk827498 = require("./827498.js"),
-  Chunk562129 = require("./562129.js"),
   Chunk713913 = require("./713913.js"),
   Chunk570220 = require("./570220.js"),
   Chunk314734 = require("./314734.js"),
@@ -67,11 +67,11 @@ let T = Chunk473749.forwardRef(function(e, t) {
     tooltipsWithKeybinds: a
   } = h.n.useConfig({
     location: "ChannelAppLauncherButton"
-  }), y = (0, l.e7)([f.Z], () => f.Z.shouldShowPopup() && f.Z.activeViewType() === n), {
+  }), y = (0, l.e7)([_.Z], () => _.Z.shouldShowPopup() && _.Z.activeViewType() === n), {
     Component: v,
     events: T,
     play: S
-  } = (0, p.Z)("ChannelAppLauncherButton"), A = i.useContext(m.ZP);
+  } = (0, c.w)(), A = i.useContext(m.ZP);
   i.useEffect(() => {
     let e = () => {
       T.onMouseEnter()
@@ -81,7 +81,7 @@ let T = Chunk473749.forwardRef(function(e, t) {
     }
   }, [A, T]);
   let C = i.useCallback(() => {
-      y ? d.y(_.ti.DISMISSED) : (d._(_._b.TEXT, n), u.ux()), S()
+      y ? f.y(p.ti.DISMISSED) : (f._(p._b.TEXT, n), d.ux()), S()
     }, [y, n, S]),
     N = (0, r.jsx)(v, {
       size: "refresh_sm",
@@ -90,7 +90,7 @@ let T = Chunk473749.forwardRef(function(e, t) {
   return (0, r.jsx)("div", {
     className: o()(b.buttonContainer, g.t4),
     ref: t,
-    children: (0, r.jsx)(c.u, {
+    children: (0, r.jsx)(u.u, {
       text: E.intl.string(E.t.dHDxOF),
       shouldShow: a,
       children: (0, r.jsx)(s.P3F, I(O({

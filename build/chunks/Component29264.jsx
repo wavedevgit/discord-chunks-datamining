@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 29264, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => m
 }), require("./415506.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -39,10 +39,10 @@ function p(e, t) {
   (0, i.showToast)((0, i.createToast)(e, i.ToastType.FAILURE)), c.Z.captureException(t)
 }
 
-function y(e, t, n) {
+function m(e, t, n) {
   if ((0, a.Z)(null == t ? true : t.getChannelId()) || (null == n ? true : n.shouldHideMediaOptions) === true || !s.isPlatformEmbedded || null == e || !(0, l.gS)(e, null == n ? true : n.contentType, null == n ? true : n.originalContentType)) return null;
   let c = (0, l.s$)(e, null == n ? true : n.contentType, null == n ? true : n.originalContentType, l.wV),
-    y = async () => {
+    m = async () => {
       try {
         let e = await u.ZP.saveImage(c, null == n ? true : n.contentType, l.wV);
         if (e === u.mQ.ERRORED) throw Error("NativeUtils.saveImage errored for ".concat(c));
@@ -50,7 +50,7 @@ function y(e, t, n) {
       } catch (e) {
         o.default.track(f.rMx.CONTEXT_MENU_IMAGE_SAVE_FAILED, b({}, (0, d.v)())), p(g.intl.string(g.t["8Ve/S0"]), e)
       }
-    }, O = async () => {
+    }, y = async () => {
       try {
         await u.ZP.copyImage(c, null == n ? true : n.contentType), o.default.track(f.rMx.CONTEXT_MENU_IMAGE_COPIED, b({}, (0, d.v)())), (0, i.showToast)((0, i.createToast)(g.intl.string(g.t.bhUpvC), i.ToastType.SUCCESS))
       } catch (e) {
@@ -60,10 +60,10 @@ function y(e, t, n) {
   return [(0, l.Lz)(e, null == n ? true : n.contentType, null == n ? true : n.originalContentType) ? (0, r.jsx)(i.sNh, {
     id: "copy-image",
     label: g.intl.string(g.t.tvUqWn),
-    action: O
+    action: y
   }, "copy-image") : null, (0, r.jsx)(i.sNh, {
     id: "save-image",
     label: g.intl.string(g.t.PeXhgO),
-    action: y
+    action: m
   }, "save-image")]
 }

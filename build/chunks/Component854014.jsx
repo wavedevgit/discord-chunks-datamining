@@ -1,7 +1,7 @@
 /** Chunk was on 46984 **/
 /** chunk id: 854014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => y
+  y: () => b
 }), require("./361932.js"), require("./187205.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,75 +14,81 @@ var Chunk54381 = require("./54381.js"),
   Chunk721611 = require("./721611.jsx"),
   Chunk873395 = require("./873395.js");
 
-function b(e) {
+function p(e) {
   var t, n;
   let {
-    onClick: l,
-    active: i,
-    node: a,
-    visibleContent: c,
-    itemProps: d
+    tag: l,
+    onClick: i,
+    active: a,
+    node: c,
+    visibleContent: d,
+    panelKey: p,
+    listItemProps: b,
+    children: y
   } = e, {
-    icon: b,
-    stronglyDiscouragedCustomComponent: y,
-    trailing: p,
-    useTitle: v
-  } = a, j = null == v ? true : v();
-  return (0, r.jsxs)(s.P3F, (t = function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
-          enumerable: true,
-          configurable: true,
-          writable: true
-        }) : e[t] = r
-      })
-    }
-    return e
-  }({
-    className: o()(f.item, {
-      [f.active]: i
-    }),
-    onClick: l
-  }, d), n = n = {
-    children: [null != y ? (0, r.jsx)(y, {}) : (0, r.jsxs)("div", {
-      className: f.itemContent,
-      children: [(0, r.jsx)(b, {
-        color: "currentColor",
-        size: "refresh_sm",
-        className: f.icon
-      }), (0, r.jsx)(s.Text, {
-        variant: "text-md/medium",
-        color: "currentColor",
-        children: j
+    icon: v,
+    stronglyDiscouragedCustomComponent: g,
+    trailing: h,
+    useTitle: m
+  } = c, x = null == m ? true : m();
+  return (0, r.jsxs)(l, {
+    "data-settings-sidebar-item": p,
+    className: f.itemContainer,
+    children: [(0, r.jsxs)(s.P3F, (t = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({}, b), n = n = {
+      className: o()(f.item, {
+        [f.active]: a
+      }),
+      onClick: i,
+      children: [null != g ? (0, r.jsx)(g, {}) : (0, r.jsxs)("div", {
+        className: f.itemContent,
+        children: [(0, r.jsx)(v, {
+          color: "currentColor",
+          size: "refresh_sm",
+          className: f.icon
+        }), (0, r.jsx)(s.Text, {
+          variant: "text-md/medium",
+          color: "currentColor",
+          children: x
+        })]
+      }), null != h && (0, r.jsx)("div", {
+        className: f.itemContent,
+        children: (0, r.jsx)(u.W, {
+          trailing: h,
+          visibleContent: d,
+          isSelected: a
+        })
       })]
-    }), null != p && (0, r.jsx)("div", {
-      className: f.itemContent,
-      children: (0, r.jsx)(u.W, {
-        trailing: p,
-        visibleContent: c,
-        isSelected: i
-      })
-    })]
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(n)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-  }), t))
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+    }), t)), y]
+  })
 }
 
-function y(e) {
+function b(e) {
   let {
     node: t,
     visibleContent: n,
@@ -90,29 +96,33 @@ function y(e) {
   } = e, o = l.useMemo(() => t.layout[0], [t]), s = c.Z.useField("currentPanelKey"), u = null != s && s === (null == o ? true : o.key), f = null != o ? () => c.Z.setState({
     targetKey: o.key,
     showNavigationMobile: false
-  }) : t.onClick, y = l.useMemo(() => {
+  }) : t.onClick, b = l.useMemo(() => {
     var e;
-    return (null != (e = null == o ? true : o.layout.flatMap(e => e.layout)) ? e : []).filter(e => null != e.useTitle || null != e.useNavigationTitle)
-  }, [o]);
-  return (0, r.jsxs)(r.Fragment, {
-    children: [i ? (0, r.jsx)("li", {
-      children: (0, r.jsx)(b, {
-        onClick: f,
-        active: u,
-        node: t,
-        visibleContent: n
-      })
-    }) : (0, r.jsx)(a.mh, {
-      id: t.key,
-      children: e => (0, r.jsx)(b, {
-        onClick: f,
-        active: u,
-        node: t,
-        visibleContent: n,
-        itemProps: e
-      })
-    }), u && y.length > 1 && (0, r.jsx)(d.Z, {
-      categories: y
-    })]
+    if (!u) return null;
+    let t = (null != (e = null == o ? true : o.layout.flatMap(e => e.layout)) ? e : []).filter(e => null != e.useTitle || null != e.useNavigationTitle);
+    return t.length > 1 ? (0, r.jsx)(d.Z, {
+      categories: t
+    }) : null
+  }, [u, null == o ? true : o.layout]), y = i ? "li" : "div";
+  return i ? (0, r.jsx)(p, {
+    tag: y,
+    panelKey: null == o ? true : o.key,
+    onClick: f,
+    active: u,
+    node: t,
+    visibleContent: n,
+    children: b
+  }) : (0, r.jsx)(a.mh, {
+    id: t.key,
+    children: e => (0, r.jsx)(p, {
+      tag: y,
+      panelKey: null == o ? true : o.key,
+      onClick: f,
+      active: u,
+      node: t,
+      visibleContent: n,
+      listItemProps: e,
+      children: b
+    })
   })
 }

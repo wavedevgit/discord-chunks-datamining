@@ -18,14 +18,14 @@ let c = Chunk473749.memo(function(e) {
     layout: u,
     init: d,
     useBadge: f,
-    useNotice: b
-  } = t, y = null == n ? true : n(), p = null == f ? true : f(), v = null == b ? true : b();
+    useNotice: p
+  } = t, b = null == n ? true : n(), y = null == f ? true : f(), v = null == p ? true : p();
   return l.useEffect(() => {
     null == d || d()
   }, [d]), (0, r.jsxs)(r.Fragment, {
-    children: [null != y && (0, r.jsx)(a.Y, {
-      title: y,
-      badge: p
+    children: [null != b && (0, r.jsx)(a.Y, {
+      title: b,
+      badge: y
     }), (0, r.jsx)("div", {
       "data-settings-category-key": null != n || null != c ? t.key : true,
       "aria-hidden": true,

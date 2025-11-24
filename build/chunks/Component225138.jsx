@@ -1,8 +1,8 @@
 /** Chunk was on 37220 **/
 /** chunk id: 225138, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => K,
-  default: () => B
+  S: () => X,
+  default: () => K
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -12,6 +12,7 @@ var Chunk374470 = require("./374470.js"),
   Chunk911969 = require("./911969.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
+  Chunk285230 = require("./285230.js"),
   Chunk299206 = require("./299206.jsx"),
   Chunk26737 = require("./26737.jsx"),
   Chunk29264 = require("./29264.jsx"),
@@ -47,19 +48,19 @@ var Chunk374470 = require("./374470.js"),
   Chunk975368 = require("./975368.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function B(e) {
+function K(e) {
   var t, n;
   let l, o, u, d, {
       channel: f,
       message: g,
       target: b,
       mediaItem: p,
-      shouldHideMediaOptions: y,
-      onSelect: O,
-      onHeightUpdate: h
+      shouldHideMediaOptions: m,
+      onSelect: y,
+      onHeightUpdate: O
     } = e,
     {
-      analyticsLocations: m
+      analyticsLocations: h
     } = (0, c.ZP)([s.Z.MESSAGE_CONTEXT_MENU]),
     v = b,
     j = b.getAttribute("data-type"),
@@ -71,8 +72,8 @@ function B(e) {
       (0, i.kK)(v);)(0, i.kK)(v, HTMLImageElement) && null != v.src && (o = v.src), (0, i.kK)(v, HTMLAnchorElement) && null != v.href && (l = v.href, d = v.textContent, null == o && "img" === v.getAttribute("data-role") && (o = l, v.hasAttribute("data-safe-src") && "" !== v.getAttribute("data-safe-src") && (u = v.getAttribute("data-safe-src")))), v = v.parentNode;
   let P = null != (n = null == (t = document.getSelection()) ? true : t.toString()) ? n : "";
   return (0, r.jsx)(c.Gt, {
-    value: m,
-    children: K({
+    value: h,
+    children: X({
       message: g,
       channel: f,
       mediaItem: p,
@@ -85,17 +86,17 @@ function B(e) {
       itemSafeSrc: u,
       itemTextContent: d,
       canReport: true,
-      onHeightUpdate: h,
-      onSelect: O,
+      onHeightUpdate: O,
+      onSelect: y,
       onClose: a.Zy,
       navId: "message",
-      ariaLabel: H.intl.string(H.t.ChPNkN),
-      shouldHideMediaOptions: y
+      ariaLabel: B.intl.string(B.t.ChPNkN),
+      shouldHideMediaOptions: m
     })
   })
 }
 
-function K(e) {
+function X(e) {
   let {
     message: t,
     channel: n,
@@ -103,62 +104,66 @@ function K(e) {
     textSelection: a,
     favoriteableType: s,
     favoriteableId: c,
-    favoriteableName: B,
-    itemHref: K,
-    itemSrc: X,
-    itemSafeSrc: V,
-    itemTextContent: q,
-    canReport: Q,
-    onHeightUpdate: W,
-    onSelect: J,
-    onClose: Y,
-    navId: $,
-    ariaLabel: ee,
-    shouldHideMediaOptions: et = false
-  } = e, en = (0, d.Z)(a), er = (0, b.Z)(a), ei = (0, w.Z)(t, n), el = (0, v.Z)(t, n), ea = (0, Z.Z)(t, n), eo = (0, N.Z)(t, n), es = (0, _.Z)({
+    favoriteableName: K,
+    itemHref: X,
+    itemSrc: V,
+    itemSafeSrc: q,
+    itemTextContent: Q,
+    canReport: W,
+    onHeightUpdate: J,
+    onSelect: Y,
+    onClose: $,
+    navId: ee,
+    ariaLabel: et,
+    shouldHideMediaOptions: en = false
+  } = e, er = (0, f.Z)(a), ei = (0, p.Z)(a), el = (0, M.Z)(t, n), ea = (0, j.Z)(t, n), eo = (0, _.Z)(t, n), es = (0, w.Z)(t, n), ec = (0, I.Z)({
     type: s,
     id: c,
-    name: B
-  }), ec = (0, R.Z)(t, n), eu = (0, I.Z)(t, n), ed = (0, A.Z)(t), ef = (0, j.Z)(t, n), eg = (0, S.Z)(t, n), eb = (0, x.Z)(t, n), ep = (0, M.Z)(t, n), ey = (0, P.Z)(t, n), eO = (0, C.ZP)(t), eh = (0, C.wY)(t), em = (0, C.eH)(t), ev = (0, L.Z)(t, n), ej = (0, g.Z)(null != K ? K : X, q, t, {
-    shouldHideMediaOptions: et
-  }), eS = (0, f.Z)(V, t, {
-    shouldHideMediaOptions: et,
+    name: K
+  }), eu = (0, R.Z)(t, n), ed = (0, N.Z)(t, n), ef = (0, x.Z)(t), eg = (0, S.Z)(t, n), eb = (0, E.Z)(t, n), ep = (0, A.Z)(t, n), em = (0, D.Z)(t, n), ey = (0, Z.Z)(t, n), eO = (0, L.ZP)(t), eh = (0, L.wY)(t), ev = (0, L.eH)(t), ej = (0, k.Z)(t, n), eS = (0, b.Z)(null != X ? X : V, Q, t, {
+    shouldHideMediaOptions: en
+  }), eE = (0, g.Z)(q, t, {
+    shouldHideMediaOptions: en,
     contentType: null == i ? true : i.contentType,
     originalContentType: null == i ? true : i.originalContentType
-  }), eE = (0, F.Z)(t, i), eP = (0, u.Z)({
+  }), eP = (0, z.Z)(t, i), eZ = (0, d.Z)({
     id: t.id,
-    label: H.intl.string(H.t.zBoHlf),
+    label: B.intl.string(B.t.zBoHlf),
     shiftId: "".concat(t.channel_id, "-").concat(t.id)
-  }), eZ = (0, D.Z)(t, n), e_ = (0, T.Z)(t, n), eT = (0, G.Z)(t, n), eI = (0, O.Z)(a, n.getGuildId()), eN = (0, h.Z)(t), ew = (0, E.Z)(t), eA = (0, k.Z)(t, n), ex = (0, z.Z)(t), eM = (0, m.Z)(t, n), eD = (0, y.Z)({
+  }), e_ = (0, C.Z)(t, n), eI = (0, T.Z)(t, n), eT = (0, G.Z)(t, n), eN = (0, O.Z)(a, n.getGuildId()), ew = (0, h.Z)(t), eM = (0, P.Z)(t), ex = (0, U.Z)(t, n), eA = (0, H.Z)(t), eD = (0, v.Z)(t, n), eC = (0, y.Z)({
     commandType: o.yU.MESSAGE,
     commandTargetId: t.id,
     channel: n,
     guildId: true,
-    onHeightUpdate: W
-  }), eC = (0, U.Z)(t), eR = (0, p.Z)(t);
+    onHeightUpdate: J
+  }), eL = (0, F.Z)(t), eR = (0, m.Z)(t), {
+    forceIconsLeft: ek,
+    reorderMessageMenuItems: eG
+  } = (0, u.d)("MessageContextMenu");
   return (0, r.jsxs)(l.v2r, {
-    navId: $,
-    onClose: Y,
-    "aria-label": ee,
-    onSelect: J,
+    navId: ee,
+    onClose: $,
+    "aria-label": et,
+    onSelect: Y,
+    forceIconsLeft: ek,
     children: [(0, r.jsx)(l.kSQ, {
-      children: en
-    }), (0, r.jsx)(l.kSQ, {
       children: er
-    }), (0, r.jsxs)(l.kSQ, {
-      children: ["" === a ? ei : null, el, ed, eM]
-    }), (0, r.jsxs)(l.kSQ, {
-      children: [ea, eZ, e_, eT]
-    }), (0, r.jsxs)(l.kSQ, {
-      children: [ew, eA, eo, eN, eD, ec, eu, ef, eg, ev, eR, eC]
-    }), (0, r.jsxs)(l.kSQ, {
-      children: [ep, eb, ey, Q && eO, Q && em, eh]
-    }), (0, r.jsxs)(l.kSQ, {
-      children: [es, eI, eS, eE, ex]
     }), (0, r.jsx)(l.kSQ, {
-      children: ej
+      children: ei
+    }), (0, r.jsxs)(l.kSQ, {
+      children: ["" === a ? el : null, ea, ef, eD]
+    }), (0, r.jsxs)(l.kSQ, {
+      children: [eo, e_, eI, eT]
+    }), (0, r.jsxs)(l.kSQ, {
+      children: [eM, ex, es, ew, eC, eu, ed, eg, eb, ej, eR, eL]
+    }), (0, r.jsxs)(l.kSQ, {
+      children: [em, ep, ey, W && eO, W && ev, eh]
+    }), (0, r.jsxs)(l.kSQ, {
+      children: [ec, eN, eE, eP, eA]
     }), (0, r.jsx)(l.kSQ, {
-      children: eP
+      children: eS
+    }), (0, r.jsx)(l.kSQ, {
+      children: eZ
     })]
   })
 }

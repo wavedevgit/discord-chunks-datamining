@@ -16,22 +16,22 @@ function u(e) {
   let {
     node: f
   } = e, {
-    destinationKey: b
-  } = f, y = null == (t = f.useSubtitle) ? true : t.call(f), {
-    directory: p
-  } = (0, i.t)(), v = null == p ? true : p.entry(b), j = (null == v ? true : v.targetPanelKey) != null ? null == p ? true : p.get(v.targetPanelKey) : true, g = null == (n = f.useTitle) ? true : n.call(f), m = null == j || null == (u = j.useTitle) ? true : u.call(j);
-  if (null == j) return null;
-  let h = (null == (d = j.parent) ? true : d.type) === o.Jq.SIDEBAR_ITEM ? j.parent.icon : true;
+    destinationKey: p
+  } = f, b = null == (t = f.useSubtitle) ? true : t.call(f), {
+    directory: y
+  } = (0, i.t)(), v = null == y ? true : y.entry(p), g = (null == v ? true : v.targetPanelKey) != null ? null == y ? true : y.get(v.targetPanelKey) : true, h = null == (n = f.useTitle) ? true : n.call(f), m = null == g || null == (u = g.useTitle) ? true : u.call(g);
+  if (null == g) return null;
+  let x = (null == (d = g.parent) ? true : d.type) === o.Jq.SIDEBAR_ITEM ? g.parent.icon : true;
   return (0, r.jsx)(s.x, {
-    title: null != g ? g : m,
-    description: y,
-    leadingElement: null != h && (0, r.jsx)("div", {
+    title: null != h ? h : m,
+    description: b,
+    leadingElement: null != x && (0, r.jsx)("div", {
       className: c.navigatorIcon,
-      children: (0, r.jsx)(h, {})
+      children: (0, r.jsx)(x, {})
     }),
     primaryTrailingElement: (0, r.jsx)(l.LJT, {}),
     onClick: () => a.Z.setState({
-      targetKey: b
+      targetKey: p
     })
   })
 }

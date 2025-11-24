@@ -18,20 +18,20 @@ function a(e) {
     useVariant: c,
     useDisabled: u,
     onClick: d
-  } = t, [f, b] = l.useState(false), y = l.useCallback(() => {
+  } = t, [f, p] = l.useState(false), b = l.useCallback(() => {
     let e = d();
-    e instanceof Promise && (b(true), e.finally(() => b(false)))
-  }, [d]), p = a(), v = null == s ? true : s(), j = n(), g = null == c ? true : c(), m = null == u ? true : u();
+    e instanceof Promise && (p(true), e.finally(() => p(false)))
+  }, [d]), y = a(), v = null == s ? true : s(), g = n(), h = null == c ? true : c(), m = null == u ? true : u();
   return (0, r.jsx)(o.X, {
     children: (0, r.jsx)(i.gNt, {
-      label: p,
+      label: y,
       description: v,
       disabled: m,
       layout: "horizontal",
       children: (0, r.jsx)(i.Button, {
-        onClick: y,
-        text: j,
-        variant: g,
+        onClick: b,
+        text: g,
+        variant: h,
         disabled: m,
         loading: f
       })

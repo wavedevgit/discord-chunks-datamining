@@ -23,7 +23,7 @@ var Chunk28682 = require("./28682.js"),
   Chunk357660 = require("./357660.jsx"),
   Chunk166292 = require("./166292.jsx");
 
-function x(e) {
+function j(e) {
   let {
     node: t
   } = e;
@@ -37,11 +37,11 @@ function x(e) {
         node: t
       });
     case l.Jq.PANE:
-      return (0, r.jsx)(g.Z, {
+      return (0, r.jsx)(h.Z, {
         node: t
       });
     case l.Jq.LIST:
-      return (0, r.jsx)(j.Z, {
+      return (0, r.jsx)(g.Z, {
         node: t
       });
     case l.Jq.FIELD_SET:
@@ -49,19 +49,19 @@ function x(e) {
         node: t
       });
     case l.Jq.CATEGORY:
-      return (0, r.jsx)(p.Z, {
-        node: t
-      });
-    case l.Jq.ACCORDION:
       return (0, r.jsx)(y.Z, {
         node: t
       });
+    case l.Jq.ACCORDION:
+      return (0, r.jsx)(b.Z, {
+        node: t
+      });
     case l.Jq.SPLIT:
-      return (0, r.jsx)(h.Z, {
+      return (0, r.jsx)(x.Z, {
         node: t
       });
     case l.Jq.TOGGLE:
-      return (0, r.jsx)(b.I, {
+      return (0, r.jsx)(p.I, {
         node: t
       });
     case l.Jq.BUTTON:
@@ -99,11 +99,11 @@ function O(e) {
   let {
     node: t
   } = e;
-  return t.type === l.Jq.PANEL || t.type === l.Jq.PANE ? (0, r.jsx)(x, {
+  return t.type === l.Jq.PANEL || t.type === l.Jq.PANE ? (0, r.jsx)(j, {
     node: t
   }) : (0, r.jsx)(i.Z, {
     node: t,
-    children: (0, r.jsx)(x, {
+    children: (0, r.jsx)(j, {
       node: t
     })
   })

@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
 function f(e) {
   let {
     guildId: t
-  } = e, n = i.useMemo(() => (0, c.Mg)(t), [t]), f = (0, l.e7)([a.Z], () => a.Z.getGuild(t)), p = (0, l.e7)([s.Z], () => s.Z.isFocused()), h = t === (0, o.Z)(e => {
+  } = e, n = i.useMemo(() => (0, c.Mg)(t), [t]), f = (0, l.e7)([a.Z], () => a.Z.getGuild(t)), h = (0, l.e7)([s.Z], () => s.Z.isFocused()), p = t === (0, o.Z)(e => {
     let {
       guildId: t
     } = e;
@@ -25,8 +25,8 @@ function f(e) {
   return null == f ? null : (0, r.jsx)(d.Z, {
     guildNode: n,
     guild: f,
-    animatable: p,
-    selected: h,
+    animatable: h,
+    selected: p,
     draggable: false,
     mediaState: g
   })

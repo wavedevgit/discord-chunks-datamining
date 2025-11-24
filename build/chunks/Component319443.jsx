@@ -1,7 +1,7 @@
 /** Chunk was on 69844 **/
 /** chunk id: 319443, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => F
+  default: () => U
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,11 +10,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk456100 = require("./456100.js"),
   Chunk979233 = require("./979233.js"),
   Chunk88693 = require("./88693.js"),
   Chunk611928 = require("./611928.jsx"),
-  h = (require("./763433.jsx"), require("./175118.jsx")),
+  m = (require("./763433.jsx"), require("./175118.jsx")),
   Chunk680180 = require("./680180.jsx"),
   Chunk726115 = require("./726115.js"),
   Chunk703656 = require("./703656.js"),
@@ -41,36 +40,36 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk813525 = require("./813525.js");
 
-function B(e) {
+function G(e) {
   let {
     applicationId: t,
     hideDetailHeaderButtons: n,
     onClickBack: i
-  } = e, s = (0, o.e7)([y.Z], () => y.Z.getApplication(t)), [d, u] = a.useState(n), p = a.useCallback(() => {
+  } = e, s = (0, o.e7)([j.Z], () => j.Z.getApplication(t)), [d, u] = a.useState(n), m = a.useCallback(() => {
     u(n)
   }, [n]);
   return (0, r.jsxs)("div", {
-    className: G.detailHeaderContainer,
+    className: M.detailHeaderContainer,
     children: [(0, r.jsx)("div", {
-      className: G.detailHeaderSection,
-      children: (0, r.jsx)(m.Cm, {
+      className: M.detailHeaderSection,
+      children: (0, r.jsx)(p.Cm, {
         icon: c.j9r,
         onClick: i
       })
     }), (0, r.jsx)(c.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      className: G.detailHeader,
+      className: M.detailHeader,
       lineClamp: 1,
       children: null == s ? true : s.name
     }), (0, r.jsx)("div", {
-      className: l()(G.detailHeaderSection, G.detailHeaderButtonsContainer, {
-        [G.visible]: !n,
-        [G.hide]: n && !d,
-        [G.hidden]: n && d
+      className: l()(M.detailHeaderSection, M.detailHeaderButtonsContainer, {
+        [M.visible]: !n,
+        [M.hide]: n && !d,
+        [M.hidden]: n && d
       }),
-      onTransitionEnd: p,
-      children: null != s ? (0, r.jsx)(R.Z, {
+      onTransitionEnd: m,
+      children: null != s ? (0, r.jsx)(L.Z, {
         application: s,
         size: "sm"
       }) : null
@@ -78,7 +77,7 @@ function B(e) {
   })
 }
 
-function U() {
+function B() {
   let e = Chunk473749.useCallback(() => {
       (0, Chunk881294.qF)()
     }, []),
@@ -112,44 +111,44 @@ function U() {
     })]
   })
 }
-let F = function() {
+let U = function() {
   var e;
   let t = (0, Chunk442837.e7)([Chunk314897.default], () => !Chunk314897.default.isAuthenticated()),
     {
       onScroll: n,
       scrollPosition: i,
-      resetScrollPosition: y
+      resetScrollPosition: j
     } = (0, Chunk979233.M)(),
-    R = (0, Chunk258971.Xh)(),
-    F = (0, Chunk881294.nu)(),
-    z = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.CATEGORY ? Chunk548514.categoryId : true,
+    L = (0, Chunk258971.Xh)(),
+    U = (0, Chunk881294.nu)(),
+    F = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.CATEGORY ? Chunk548514.categoryId : true,
     {
-      applicationId: H,
-      section: V
+      applicationId: z,
+      section: H
     } = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.APPLICATION ? Chunk548514 : {},
     {
-      query: Y,
-      categoryId: W
+      query: V,
+      categoryId: Y
     } = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.SEARCH ? Chunk548514 : {},
-    X = (0, Chunk442837.e7)([Chunk678694.Z], () => Chunk678694.Z.getCategories()),
-    K = Chunk473749.useMemo(() => [(0, Chunk216780.KQ)(), ...X], [X]),
-    q = Chunk473749.useMemo(() => K.find(e => e.id === Number(W)), [K, W]),
+    W = (0, Chunk442837.e7)([Chunk678694.Z], () => Chunk678694.Z.getCategories()),
+    X = Chunk473749.useMemo(() => [(0, Chunk216780.KQ)(), ...W], [W]),
+    K = Chunk473749.useMemo(() => X.find(e => e.id === Number(Y)), [X, Y]),
     {
-      tabs: Q,
-      selectedTab: J,
-      onSelectTab: $
-    } = (0, Chunk119014.i)(null == z ? true : z.toString()),
-    [ee, et] = Chunk473749.useState(true),
-    en = Chunk258971.z8.useField("trackedOpenedFromExternalEntrypoint"),
-    er = Chunk258971.z8.useField("sessionId"),
-    ea = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
+      tabs: q,
+      selectedTab: Q,
+      onSelectTab: J
+    } = (0, Chunk119014.i)(null == F ? true : F.toString()),
+    [$, ee] = Chunk473749.useState(true),
+    et = Chunk258971.z8.useField("trackedOpenedFromExternalEntrypoint"),
+    en = Chunk258971.z8.useField("sessionId"),
+    er = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
   Chunk473749.useEffect(() => {
-    if (!en && null == er) {
+    if (!et && null == en) {
       let e = (0, Chunk726115.PM)();
       Chunk626135.default.track(Chunk981631.rMx.APP_DIRECTORY_OPENED, {
         source: Chunk258971.xF.EXTERNAL,
         session_id: module,
-        user_id: null == ea ? true : ea.id
+        user_id: null == er ? true : er.id
       }), Chunk258971.z8.setState({
         trackedOpenedFromExternalEntrypoint: true,
         sessionId: module,
@@ -159,123 +158,127 @@ let F = function() {
         guildId: null
       })
     }
-  }, [er, en, null == ea ? true : ea.id]), Chunk473749.useEffect(() => {
+  }, [en, et, null == er ? true : er.id]), Chunk473749.useEffect(() => {
     Chunk471518.CP()
   }, []), Chunk473749.useEffect(() => {
-    F && Chunk471518.g5()
-  }, [F]), Chunk473749.useEffect(() => Chunk258971.aQ.setState({
+    U && Chunk471518.g5()
+  }, [U]), Chunk473749.useEffect(() => Chunk258971.aQ.setState({
     lastItem: Chunk548514
   }), [Chunk548514]);
-  let {
-    enabled: ei
-  } = Chunk456100.c.useExperiment({
-    location: "GlobalDiscoveryAppsRoot"
-  }, {
-    autoTrackExposure: true
-  }), el = null != H, es = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.SEARCH, {
-    searchQuery: eo,
-    onSearchTextChange: ec,
-    onClearSearch: ed,
-    onSearchSubmit: eu
-  } = (0, Chunk975907.M)({
-    initialQuery: null != Y ? Y : ""
-  }), ep = Chunk31569.Z.useField("searchBarState"), {
-    onTabsAvailableWidthChange: em,
-    onCollapsedSearchBarClick: eh,
-    onSearchBarBlur: eg
-  } = (0, Chunk88693.U)({
-    isSearchBarVisible: true,
-    isSearchBarEmpty: "" === eo.trim(),
-    searchBarState: ep,
-    setSearchBarState: e => j.Z.setState({
-      searchBarState: e
-    })
-  }), e_ = Chunk473749.useCallback(e => {
-    $(e), es && ed(), y()
-  }, [es, ed, $, Chunk370210]), ef = Chunk473749.useCallback(e => (0, T.ph)({
-    applicationId: e
-  }), []), eb = el || es, ex = Chunk473749.useCallback(() => {
-    null != (0, Chunk258971.Uc)() ? (0, Chunk703656.op)() : (0, Chunk133743.Yp)()
-  }, []), ev = Chunk473749.useMemo(() => (0, Chunk392711.debounce)(e => {
-    let {
-      scrollTop: t,
-      offsetHeight: n,
-      scrollHeight: r,
-      location: a
-    } = e;
-    t > 0 && (0, P.zZ)(k.rMx.APP_DIRECTORY_PAGE_SCROLLED, {
-      scroll_visible_percentile: (t + n) / r,
-      current_page: a
-    })
-  }, 200), []), eC = Chunk473749.useCallback((e, t) => {
-    n(e), ev({
-      scrollTop: e.currentTarget.scrollTop,
-      offsetHeight: e.currentTarget.offsetHeight,
-      scrollHeight: e.currentTarget.scrollHeight,
-      location: t
-    })
-  }, [ev, require]), ej = ei ? Chunk481060.iWm : Chunk481060.jje;
+  let ea = null != z,
+    ei = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.SEARCH,
+    {
+      searchQuery: el,
+      onSearchTextChange: es,
+      onClearSearch: eo,
+      onSearchSubmit: ec
+    } = (0, Chunk975907.M)({
+      initialQuery: null != V ? V : ""
+    }),
+    ed = Chunk31569.Z.useField("searchBarState"),
+    {
+      onTabsAvailableWidthChange: eu,
+      onCollapsedSearchBarClick: ep,
+      onSearchBarBlur: em
+    } = (0, Chunk88693.U)({
+      isSearchBarVisible: true,
+      isSearchBarEmpty: "" === el.trim(),
+      searchBarState: ed,
+      setSearchBarState: e => C.Z.setState({
+        searchBarState: e
+      })
+    }),
+    eh = Chunk473749.useCallback(e => {
+      J(e), ei && eo(), j()
+    }, [ei, eo, J, Chunk370210]),
+    eg = Chunk473749.useCallback(e => (0, N.ph)({
+      applicationId: e
+    }), []),
+    e_ = ea || ei,
+    ef = Chunk473749.useCallback(() => {
+      null != (0, Chunk258971.Uc)() ? (0, Chunk703656.op)() : (0, Chunk133743.Yp)()
+    }, []),
+    eb = Chunk473749.useMemo(() => (0, Chunk392711.debounce)(e => {
+      let {
+        scrollTop: t,
+        offsetHeight: n,
+        scrollHeight: r,
+        location: a
+      } = e;
+      t > 0 && (0, S.zZ)(D.rMx.APP_DIRECTORY_PAGE_SCROLLED, {
+        scroll_visible_percentile: (t + n) / r,
+        current_page: a
+      })
+    }, 200), []),
+    ex = Chunk473749.useCallback((e, t) => {
+      n(e), eb({
+        scrollTop: e.currentTarget.scrollTop,
+        offsetHeight: e.currentTarget.offsetHeight,
+        scrollHeight: e.currentTarget.scrollHeight,
+        location: t
+      })
+    }, [eb, require]);
   return (0, Chunk54381.jsxs)("div", {
     className: l()(Chunk813525.outerContainer, {
       [Chunk813525.loggedOutContainer]: exports
     }),
-    children: [exports ? (0, Chunk54381.jsx)(U, {}) : null, (0, Chunk54381.jsxs)("div", {
+    children: [exports ? (0, Chunk54381.jsx)(B, {}) : null, (0, Chunk54381.jsxs)("div", {
       className: Chunk813525.innerContainer,
       children: [(0, Chunk54381.jsxs)(Chunk611928.ZP, {
-        variant: eb ? Chunk611928._6.RELATIVE : Chunk611928._6.OVERLAY,
-        children: [!eb && (0, Chunk54381.jsx)(Chunk611928.z6, {
+        variant: e_ ? Chunk611928._6.RELATIVE : Chunk611928._6.OVERLAY,
+        children: [!e_ && (0, Chunk54381.jsx)(Chunk611928.z6, {
           scrollPosition: Chunk120356
-        }), el ? (0, Chunk54381.jsx)(B, {
-          applicationId: H,
-          hideDetailHeaderButtons: ee,
-          onClickBack: ex
+        }), ea ? (0, Chunk54381.jsx)(G, {
+          applicationId: z,
+          hideDetailHeaderButtons: $,
+          onClickBack: ef
         }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-          children: [es ? (0, Chunk54381.jsx)(Chunk611928.Cm, {
+          children: [ei ? (0, Chunk54381.jsx)(Chunk611928.Cm, {
             icon: Chunk481060.j9r,
-            onClick: ex
+            onClick: ef
           }) : (0, Chunk54381.jsx)(Chunk611928.aV, {
-            icon: ej
-          }), es ? (0, Chunk54381.jsx)(Chunk481060.Heading, {
+            icon: Chunk481060.jje
+          }), ei ? (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
             color: "header-primary",
             className: Chunk813525.searchHeader,
-            children: null != Y && "" !== Y ? Chunk388032.intl.formatToPlainString(Chunk388032.t.zHdzqW, {
-              query: Y
+            children: null != V && "" !== V ? Chunk388032.intl.formatToPlainString(Chunk388032.t.zHdzqW, {
+              query: V
             }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.Qhj5Br, {
-              categoryName: null != (e = null == q ? true : q.name) ? module : Chunk388032.intl.string(Chunk388032.t.E407b7)
+              categoryName: null != (e = null == K ? true : K.name) ? module : Chunk388032.intl.string(Chunk388032.t.E407b7)
             })
-          }) : (0, Chunk54381.jsx)(h.Z, {
-            tabs: Q,
-            selectedTab: J,
-            onTabSelect: e_,
-            onAvailableWidthChange: em
+          }) : (0, Chunk54381.jsx)(m.Z, {
+            tabs: q,
+            selectedTab: Q,
+            onTabSelect: eh,
+            onAvailableWidthChange: eu
           }), (0, Chunk54381.jsx)(Chunk680180.Z, {
-            query: eo,
+            query: el,
             placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
-            onTextChange: ec,
-            onClear: ed,
-            onSubmit: eu,
-            onCollapsedClick: eh,
-            state: ep,
-            onBlur: eg
+            onTextChange: es,
+            onClear: eo,
+            onSubmit: ec,
+            onCollapsedClick: ep,
+            state: ed,
+            onBlur: em
           })]
         })]
-      }), el ? (0, Chunk54381.jsx)(Chunk666697.Z, {
-        onScroll: e => eC(e, N.m_.APPLICATION),
-        onSelectApplication: ef,
-        applicationId: H,
-        initialTab: V,
-        onButtonsVisibilityChange: et
-      }) : es ? (0, Chunk54381.jsx)(Chunk569527.Z, {
-        onSelectApplication: ef,
-        onScroll: e => eC(e, N.m_.SEARCH)
-      }) : J === Chunk979007.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, Chunk54381.jsx)(Chunk370648.Z, {
-        onScroll: e => eC(e, N.m_.HOME),
-        onSelectApplication: ef
+      }), ea ? (0, Chunk54381.jsx)(Chunk666697.Z, {
+        onScroll: e => ex(e, E.m_.APPLICATION),
+        onSelectApplication: eg,
+        applicationId: z,
+        initialTab: H,
+        onButtonsVisibilityChange: ee
+      }) : ei ? (0, Chunk54381.jsx)(Chunk569527.Z, {
+        onSelectApplication: eg,
+        onScroll: e => ex(e, E.m_.SEARCH)
+      }) : Q === Chunk979007.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, Chunk54381.jsx)(Chunk370648.Z, {
+        onScroll: e => ex(e, E.m_.HOME),
+        onSelectApplication: eg
       }) : (0, Chunk54381.jsx)(Chunk726941.Z, {
-        tabId: Number(J),
-        onScroll: e => eC(e, N.m_.CATEGORY),
-        onSelectApplication: ef
+        tabId: Number(Q),
+        onScroll: e => ex(e, E.m_.CATEGORY),
+        onSelectApplication: eg
       })]
     })]
   })

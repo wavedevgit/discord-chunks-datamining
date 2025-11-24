@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk989281 = require("./989281.js");
 
-function g(e) {
+function h(e) {
   let {
     onClose: t
   } = e;
@@ -36,7 +36,7 @@ function g(e) {
       }), (0, r.jsx)(a.sNh, {
         id: "acknowledgements",
         label: v.intl.string(v.t["0nUKy3"]),
-        action: () => (0, s.Z)(p.EYA.ACKNOWLEDGEMENTS)
+        action: () => (0, s.Z)(y.EYA.ACKNOWLEDGEMENTS)
       }), (0, r.jsx)(a.sNh, {
         id: "support",
         label: v.intl.string(v.t["Yl/Riu"]),
@@ -94,7 +94,7 @@ function m() {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(g, {
+          return (0, r.jsx)(h, {
             onClose: t
           })
         },
@@ -120,8 +120,8 @@ function m() {
           }({}, t), i = i = {
             ref: e,
             useDefaultUnderlineStyles: false,
-            className: o()(j.moreButton, {
-              [j.active]: n.isShown
+            className: o()(g.moreButton, {
+              [g.active]: n.isShown
             }),
             children: (0, r.jsx)(a.Text, {
               tag: "span",

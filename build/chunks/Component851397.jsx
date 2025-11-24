@@ -29,7 +29,7 @@ function j(e) {
       hideButtonIcon: x = false,
       showPrice: C = false,
       showIcons: E = false,
-      source: S = p.lr.WISHLIST
+      source: S = h.lr.WISHLIST
     } = e,
     I = function(e, t) {
       if (null == e) return {};
@@ -59,7 +59,7 @@ function j(e) {
   } = i.useMemo(() => {
     var e, t, n, r, i, l, s, c;
     return N || M ? {
-      buttonCTALabel: C ? (0, h.T4)(null != (i = null == (n = w.price) ? true : n.amount) ? i : 0, null != (l = null == (r = w.price) ? true : r.currency) ? l : y.pK.USD) : O.intl.string(O.t.FdGl5A),
+      buttonCTALabel: C ? (0, p.T4)(null != (i = null == (n = w.price) ? true : n.amount) ? i : 0, null != (l = null == (r = w.price) ? true : r.currency) ? l : y.pK.USD) : O.intl.string(O.t.FdGl5A),
       buttonIcon: true,
       handleCardClick: () => {
         (null == A ? true : A.guildId) != null && ((0, u.closeUserProfileModal)(), (0, g.g)({
@@ -71,7 +71,7 @@ function j(e) {
         }))
       }
     } : {
-      buttonCTALabel: C ? (0, h.T4)(null != (s = null == (e = w.price) ? true : e.amount) ? s : 0, null != (c = null == (t = w.price) ? true : t.currency) ? c : y.pK.USD) : O.intl.string(O.t.ilhtIa),
+      buttonCTALabel: C ? (0, p.T4)(null != (s = null == (e = w.price) ? true : e.amount) ? s : 0, null != (c = null == (t = w.price) ? true : t.currency) ? c : y.pK.USD) : O.intl.string(O.t.ilhtIa),
       buttonIcon: x ? true : o.OgN,
       handleCardClick: () => {
         L || ((0, u.closeUserProfileModal)(), (0, m.P)(w, {
@@ -83,7 +83,7 @@ function j(e) {
         }))
       }
     }
-  }, [N, M, C, w, x, A, L, j, Z, D]), F = i.useCallback(() => E ? S === p.lr.WISHLIST ? (0, r.jsx)("div", {
+  }, [N, M, C, w, x, A, L, j, Z, D]), F = i.useCallback(() => E ? S === h.lr.WISHLIST ? (0, r.jsx)("div", {
     className: v.itemIcon,
     children: (0, r.jsx)(o.h_8, {
       size: "custom",
@@ -92,7 +92,7 @@ function j(e) {
       color: "currentColor",
       colorClass: v.itemIconHeart
     })
-  }) : S === p.lr.POPULAR ? (0, r.jsx)("div", {
+  }) : S === h.lr.POPULAR ? (0, r.jsx)("div", {
     className: v.itemIcon,
     children: (0, r.jsx)(o.YqE, {
       size: "custom",

@@ -89,8 +89,8 @@ function j(e) {
   } = (0, g.Q)(a, d, d.accessPermissions, j), L = m.Z.useSections({
     roles: w,
     members: M
-  }), k = h && 0 === Object.keys(S).length;
-  async function D() {
+  }), D = h && 0 === Object.keys(S).length;
+  async function k() {
     if (null == d || 0 === Object.keys(S).length) return void p();
     Z(true);
     try {
@@ -158,7 +158,7 @@ function j(e) {
         renderRow: m.Z.renderRow,
         sections: L
       },
-      actions: k ? [{
+      actions: D ? [{
         variant: "secondary",
         text: C.intl.string(C.t.u46sxe),
         onClick: p
@@ -169,7 +169,7 @@ function j(e) {
       }, {
         variant: "primary",
         text: C.intl.string(C.t.i4jeWR),
-        onClick: D,
+        onClick: k,
         loading: I
       }]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

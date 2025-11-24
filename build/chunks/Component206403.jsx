@@ -13,43 +13,44 @@ var Chunk120356 = require("./120356.js"),
 
 function c(e) {
   let {
-    leadingElement: t,
-    primaryTrailingElement: n,
-    secondaryTrailingElement: l,
-    title: c,
-    description: u,
-    onClick: d,
-    ref: f,
+    headingColor: t = "text-primary",
+    leadingElement: n,
+    primaryTrailingElement: l,
+    secondaryTrailingElement: c,
+    title: u,
+    description: d,
+    onClick: f,
+    ref: p,
     style: b
   } = e;
   return (0, r.jsxs)(a.P3F, {
     className: i()(s.baseControlItem, {
-      [s.clickable]: null != d
+      [s.clickable]: null != f
     }),
-    onClick: d,
-    innerRef: f,
+    onClick: f,
+    innerRef: p,
     style: b,
-    children: [null != t && (0, r.jsx)("div", {
+    children: [null != n && (0, r.jsx)("div", {
       className: s.baseControlItemLeadingElement,
-      children: t
+      children: n
     }), (0, r.jsxs)("div", {
       className: s.baseControlItemContent,
       children: [(0, r.jsx)("div", {
         className: s.baseControlItemTitle,
         children: (0, r.jsx)(o.X6q, {
           variant: "heading-md/medium",
-          color: "text-primary",
-          children: c
+          color: t,
+          children: u
         })
-      }), null != u && (0, r.jsx)(o.xvT, {
+      }), null != d && (0, r.jsx)(o.xvT, {
         variant: "text-sm/normal",
         color: "text-secondary",
         className: s.baseControlItemDescription,
-        children: u
+        children: d
       })]
-    }), (null != n || null != l) && (0, r.jsxs)("div", {
+    }), (null != l || null != c) && (0, r.jsxs)("div", {
       className: s.baseControlItemTrailingElements,
-      children: [n, l]
+      children: [l, c]
     })]
   })
 }

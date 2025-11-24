@@ -1,7 +1,7 @@
 /** Chunk was on 46984 **/
 /** chunk id: 357660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => b
+  T: () => p
 }), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,7 +31,7 @@ function f(e) {
       }
     }
   }, [f, u]);
-  let b = l.useMemo(() => {
+  let p = l.useMemo(() => {
     if (null == t || !c) return null;
     let {
       element: e
@@ -44,12 +44,12 @@ function f(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [n, (0, r.jsx)(o.W, {
       component: "div",
-      children: b
+      children: p
     })]
   })
 }
 
-function b(e) {
+function p(e) {
   let {
     node: t
   } = e, n = l.useRef(null), i = l.useRef(null);

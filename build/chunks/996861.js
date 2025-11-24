@@ -2,19 +2,19 @@
 /** chunk id: 996861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $Z: () => _,
-  B8: () => I,
+  B8: () => T,
   F4: () => P,
   HH: () => x,
-  Hd: () => T,
+  Hd: () => I,
   Xl: () => w,
   dF: () => C,
-  eM: () => R,
+  eM: () => L,
   fB: () => Z,
-  gK: () => M,
-  mG: () => A,
+  gK: () => A,
+  mG: () => M,
   qe: () => D,
   rY: () => N,
-  ts: () => L,
+  ts: () => R,
   zW: () => E
 }), require("./54381.js"), require("./473749.js"), require("./481060.js");
 var Chunk332148 = require("./332148.js"),
@@ -59,12 +59,12 @@ function _(e, t, n) {
   t.state === S.yb.SEND_FAILED || n.shiftKey ? i.Z.deleteMessage(e.id, t.id, t.state === S.yb.SEND_FAILED) : j.Z.confirmDelete(e, t)
 }
 
-function T(e, t) {
+function I(e, t) {
   i.Z.startEditMessageRecord(e.id, t)
 }
 
-function I(e, t) {
-  (0, m.Z)(e.id, t.id)
+function T(e, t) {
+  (0, h.Z)(e.id, t.id)
 }
 
 function N(e, t, n) {
@@ -76,8 +76,8 @@ function w(e, t) {
   (0, l.Z)(e.id, t.id)
 }
 
-function A(e, t) {
-  (0, v.Z)(e, t, true, h.Z.getOptions(t.id))
+function M(e, t) {
+  (0, v.Z)(e, t, true, O.Z.getOptions(t.id))
 }
 
 function x(e, t, n) {
@@ -88,17 +88,17 @@ function x(e, t, n) {
     message: t,
     shouldMention: !n.shiftKey && !i,
     showMentionToggle: !r && !i
-  }), y.S.dispatch(S.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+  }), m.S.dispatch(S.CkL.FOCUS_CHANNEL_TEXT_AREA, {
     channelId: e.id
   })
 }
 
-function M(e, t) {
+function A(e, t) {
   (0, u.R6)(e, t, "Message")
 }
 
 function D(e, t) {
-  let n = f.Z.getChannel(O.default.castMessageIdAsChannelId(t.id));
+  let n = f.Z.getChannel(y.default.castMessageIdAsChannelId(t.id));
   null != n && (0, u.ok)(n)
 }
 
@@ -109,14 +109,14 @@ function C(e, t) {
   })
 }
 
-function R(e, t) {
+function L(e, t) {
   (0, c.x)({
     channelId: e.id,
     messageId: t.id
   })
 }
 
-function L(e, t) {
+function R(e, t) {
   (0, a.l8)({
     message: t,
     source: "message-actions"

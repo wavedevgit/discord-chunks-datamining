@@ -26,12 +26,12 @@ var Chunk54381 = require("./54381.js"),
 function S(e, t) {
   let {
     reducedMotion: n
-  } = i.useContext(s.Sfi), l = (0, f.$R)(t), a = (0, o.e7)([b.Z], () => (t.isPrivate() || b.Z.can(h.Plq.ADD_REACTIONS, t)) && l, [t, l]), p = (0, c.MZ)(t.getGuildId());
+  } = i.useContext(s.Sfi), l = (0, f.$R)(t), a = (0, o.e7)([b.Z], () => (t.isPrivate() || b.Z.can(O.Plq.ADD_REACTIONS, t)) && l, [t, l]), p = (0, c.MZ)(t.getGuildId());
   if (!g.nc.getSetting() || !a) return null;
-  let j = p.filter(e => !O.ZP.isEmojiFilteredOrLocked({
+  let j = p.filter(e => !y.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
-    intention: m.Hz.REACTION
+    intention: h.Hz.REACTION
   })).slice(0, 12).map((i, l) => {
     var a, o;
     return (0, r.jsx)(s.sNh, {
@@ -81,7 +81,7 @@ function S(e, t) {
     id: "add-reaction",
     label: v.intl.string(v.t.lfIHs4),
     action: () => {
-      y.S.dispatchKeyed(h.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+      m.S.dispatchKeyed(O.LPv.TOGGLE_REACTION_POPOUT, e.id, {
         emojiPicker: true
       })
     },
@@ -93,7 +93,7 @@ function S(e, t) {
         label: v.intl.string(v.t["OBCR+p"]),
         icon: s.EO4,
         action: () => {
-          y.S.dispatchKeyed(h.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+          m.S.dispatchKeyed(O.LPv.TOGGLE_REACTION_POPOUT, e.id, {
             emojiPicker: true
           })
         }
@@ -116,7 +116,7 @@ function E(e) {
       id: n.id,
       animated: n.animated && (!i || o),
       size: 18
-    }) : O.ZP.getURL(null != (t = n.optionallyDiverseSequence) ? t : ""),
+    }) : y.ZP.getURL(null != (t = n.optionallyDiverseSequence) ? t : ""),
     alt: ""
   })
 }

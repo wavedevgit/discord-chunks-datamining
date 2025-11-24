@@ -51,7 +51,7 @@ function _(e) {
     },
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
-      children: h.intl.string(n ? p.default["3GrhnF"] : p.default["54ycKJ"])
+      children: p.intl.string(n ? h.default["3GrhnF"] : h.default["54ycKJ"])
     }), (0, r.jsx)(d.c, {
       guildIds: f
     })]

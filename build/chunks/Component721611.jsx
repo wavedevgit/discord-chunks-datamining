@@ -1,7 +1,7 @@
 /** Chunk was on 46984 **/
 /** chunk id: 721611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,8 +27,8 @@ function v(e) {
     useTitle: a,
     useNavigationTitle: c,
     key: f
-  } = n, b = null == a ? true : a(), y = null != (t = null == c ? true : c()) ? t : b;
-  return s()(null != y, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.mh, {
+  } = n, p = null == a ? true : a(), b = null != (t = null == c ? true : c()) ? t : p;
+  return s()(null != b, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.mh, {
     id: f,
     children: e => {
       var t, n;
@@ -53,10 +53,10 @@ function v(e) {
         onClick: l,
         tag: "li",
         className: o()({
-          [p.active]: i
+          [y.active]: i
         })
       }, e), n = n = {
-        children: y
+        children: b
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -71,14 +71,14 @@ function v(e) {
   })
 }
 
-function j(e) {
+function g(e) {
   let {
     categories: t
-  } = e, n = b.Z.useField("activeCategoryKey");
-  (0, f.ZP)(() => (b.Z.setState({
+  } = e, n = p.Z.useField("activeCategoryKey");
+  (0, f.ZP)(() => (p.Z.setState({
     activeCategoryKey: t[0].key
   }), () => {
-    b.Z.setState({
+    p.Z.setState({
       activeCategoryKey: true
     })
   }));
@@ -91,19 +91,19 @@ function j(e) {
         tension: 300
       }
     });
-  return (0, y.l)(), (0, r.jsxs)("div", {
-    className: p.subnav,
+  return (0, b.l)(), (0, r.jsxs)("div", {
+    className: y.subnav,
     children: [(0, r.jsx)("div", {
-      className: p.track,
+      className: y.track,
       children: (0, r.jsx)(c.animated.div, {
-        className: p.thumb,
+        className: y.thumb,
         style: o
       })
     }), (0, r.jsx)("ul", {
       children: t.map(e => (0, r.jsx)(v, {
         onClick: () => {
           var t;
-          return t = e.key, void b.Z.setState({
+          return t = e.key, void p.Z.setState({
             activeCategoryKey: t,
             targetKey: t,
             showNavigationMobile: false,

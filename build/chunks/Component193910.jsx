@@ -66,8 +66,8 @@ function L(e) {
     options: b,
     onFileUpload: x,
     onClose: L,
-    onSelect: k,
-    draftType: D,
+    onSelect: D,
+    draftType: k,
     editorTextContent: U,
     setValue: B,
     openClips: F
@@ -160,7 +160,7 @@ function L(e) {
       r = U.match(M);
     null != r && (i = r[1], n = r[2], e = r[3], i += r[4]), (0, S.d)([(0, E.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, D), j.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== i && j.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, k), j.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== i && j.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
       plainText: i
     })
   }
@@ -171,7 +171,7 @@ function L(e) {
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id]), (0, i.jsx)(s.v2r, {
-    onSelect: k,
+    onSelect: D,
     navId: "channel-attach",
     onClose: L,
     "aria-label": A.intl.string(A.t.Xm41aV),
