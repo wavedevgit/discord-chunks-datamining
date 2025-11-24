@@ -13,8 +13,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk963249 = require("./963249.jsx"),
   Chunk109213 = require("./109213.js"),
-  Chunk998030 = require("./998030.js"),
   Chunk909917 = require("./909917.jsx"),
+  Chunk602733 = require("./602733.js"),
   Chunk51144 = require("./51144.js"),
   Chunk443603 = require("./443603.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -76,12 +76,14 @@ function I(e) {
     location: "gift-button"
   }, {
     autoTrackExposure: false
-  }), C = (0, f.yc)({
-    location: "gift-button"
-  }), N = i.type === m.d4z.DM;
+  }), C = i.type === m.d4z.DM, N = (0, _.ao)({
+    location: "gift-button",
+    isGift: true,
+    giftRecipient: O
+  });
   if (t) return null;
   let R = () => {
-    C && N && null != O ? (0, _.Z)({
+    N && C && null != O ? (0, f.Z)({
       giftRecipient: O,
       analyticsLocations: b,
       analyticsObject: {
@@ -90,7 +92,7 @@ function I(e) {
         object: m.qAy.BUTTON_ICON,
         objectType: m.AnalyticsObjectTypes.GIFT
       }
-    }) : A && N && null != O ? (0, s.ZDy)(async () => {
+    }) : A && C && null != O ? (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59207").then(n.bind(n, 435626));

@@ -18,9 +18,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk644916 = require("./644916.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk963249 = require("./963249.jsx"),
-  Chunk998030 = require("./998030.js"),
   Chunk802408 = require("./802408.jsx"),
   Chunk909917 = require("./909917.jsx"),
+  Chunk602733 = require("./602733.js"),
   Chunk819640 = require("./819640.js"),
   Chunk594174 = require("./594174.js"),
   Chunk70956 = require("./70956.js"),
@@ -154,12 +154,14 @@ function B(e) {
   } = (0, _.ZP)(f.Z.GIFT_BUTTON), [d, v] = i.useState(false), S = (0, s.e7)([y.Z], () => !(null === y.Z || true === y.Z ? true : y.Z.hasLayers())), C = (0, s.e7)([O.default], () => O.default.getCurrentUser()), P = null != C ? I.default.age(C.id) : 0, {
     giftBoxAnimation: w,
     trinketsAnimation: L
-  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, x = null != n.firstTimeNotice && !a && S && P >= G, [M, k] = (0, h.XR)(x ? l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, p.t)(l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), B = null != M, Z = d || B, F = (0, T.Ft)(c), V = (0, g.yc)({
-    location: "gift-button"
-  }), H = c.type === N.d4z.DM;
+  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, x = null != n.firstTimeNotice && !a && S && P >= G, [M, k] = (0, h.XR)(x ? l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, p.t)(l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), B = null != M, Z = d || B, F = (0, T.Ft)(c), V = c.type === N.d4z.DM, H = (0, b.ao)({
+    location: "gift-promotion-button",
+    isGift: true,
+    giftRecipient: F
+  });
   if (a) return null;
   let Y = () => {
-      V && H && null != F ? (0, b.Z)({
+      H && V && null != F ? (0, E.Z)({
         giftRecipient: F,
         analyticsLocations: u,
         analyticsObject: {
@@ -206,7 +208,7 @@ function B(e) {
     onMouseLeave: () => {
       v(false)
     },
-    children: true !== n.firstTimeNotice && B ? (0, r.jsx)(E.Z, {
+    children: true !== n.firstTimeNotice && B ? (0, r.jsx)(g.Z, {
       onComplete: () => v(false),
       onCheckItOutClick: Y,
       markAsDismissed: k,
