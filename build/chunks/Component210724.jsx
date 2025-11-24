@@ -72,7 +72,7 @@ function L(e) {
   } = (0, T.qN)({
     quest: o,
     location: R.dr.QUESTS_BAR
-  }), M = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), Z = (0, c.e7)([f.Z], () => f.Z.hasLayers()), W = s.useRef(null), U = s.useMemo(() => (0, v.q8)(o), [o]), H = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, F = (0, u.Z)(H), z = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
+  }), M = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), Z = (0, c.e7)([f.Z], () => f.Z.hasLayers()), W = s.useRef(null), H = s.useMemo(() => (0, v.q8)(o), [o]), U = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, F = (0, u.Z)(U), z = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
     hasError: G,
     isLoading: K
   } = (0, O.kC)(), X = s.useContext(N.T) || _ && Q && !K && !L, Y = s.useRef(X), J = s.useRef(false), $ = s.useRef(false), [ee, et] = s.useState(false), [en, er] = s.useState(false), [es, eo] = s.useState(false), [ea, ei] = s.useState(true), [el, ec] = s.useState(true), ed = s.useRef(null), eu = s.useCallback(e => {
@@ -131,13 +131,13 @@ function L(e) {
   s.useEffect(() => {
     en && eC()
   }, [en, eC]), s.useLayoutEffect(() => {
-    H && !F && $.current && ep()
-  }, [ep, H, F]), s.useLayoutEffect(() => {
-    z || !H || F || $.current || eu(false)
-  }, [H, z, F, eu]), s.useLayoutEffect(() => {
+    U && !F && $.current && ep()
+  }, [ep, U, F]), s.useLayoutEffect(() => {
+    z || !U || F || $.current || eu(false)
+  }, [U, z, F, eu]), s.useLayoutEffect(() => {
     X !== Y.current && ec(false), Y.current = X
   }, [X]);
-  let ey = H ? R.XZ : R.R4,
+  let ey = U ? R.XZ : R.R4,
     [{
       expansionSpring: eE
     }, eO] = (0, d.q_F)(() => ({
@@ -180,8 +180,8 @@ function L(e) {
     }
   });
   s.useEffect(() => {
-    U && (0, w.loadVideoQuestModal)()
-  }, [U]), s.useEffect(() => {
+    H && (0, w.loadVideoQuestModal)()
+  }, [H]), s.useEffect(() => {
     if (G) {
       var e;
       (0, h.dA)({
@@ -238,7 +238,7 @@ function L(e) {
   } = (0, C.n)({
     location: R.dr.QUESTS_BAR,
     questConfig: o.config
-  }), eP = (null == ew ? true : ew.progressBlur) && !H ? 88 : 70;
+  }), eP = (null == ew ? true : ew.progressBlur) && !U ? 88 : 70;
   if (!_ || !X && el && !K || G) return G ? m.log("Not rendered due to asset error") : _ || m.log("Not rendered due to ineligibility"), null;
   let eN = eP + 78 * !!z;
   return (0, r.jsx)(S.A, {
@@ -273,12 +273,12 @@ function L(e) {
         children: (0, r.jsx)(i.animated.div, {
           className: a()(I.contentWrapper, {
             [I.contentWrapperExpanded]: es,
-            [I.contentWrapperAccepted]: H,
+            [I.contentWrapperAccepted]: U,
             [I.contentWrapperBrandColorRemoval]: eT
           }),
           style: {
             backgroundColor: eT ? true : "var(--home-background)",
-            backgroundImage: H && !eT ? "linear-gradient(90deg, ".concat(B.aY, ", ").concat(B.v6, ")") : true
+            backgroundImage: U && !eT ? "linear-gradient(90deg, ".concat(B.aY, ", ").concat(B.v6, ")") : true
           },
           children: (0, r.jsx)(P.t, {
             springConfig: ey,

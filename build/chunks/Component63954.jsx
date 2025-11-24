@@ -1,7 +1,7 @@
 /** Chunk was on 83615 **/
 /** chunk id: 63954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => H,
+  Z: () => U,
   b: () => Q
 }), require("./388685.js"), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
@@ -179,8 +179,8 @@ let M = "1193992107035983872",
 
 function W() {
   var e, t, o, d, u, B, Q, M;
-  let [W, U] = Chunk473749.useState(Z), H = Chunk473749.useCallback(e => {
-    U(I(k({}, e), {
+  let [W, H] = Chunk473749.useState(Z), U = Chunk473749.useCallback(e => {
+    H(I(k({}, e), {
       preview: true
     }))
   }, []), [F, z] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [G, K] = Chunk473749.useState(false), [X, Y] = Chunk473749.useState(false), [J, $] = Chunk473749.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
@@ -190,7 +190,7 @@ function W() {
   function et(e, t) {
     if ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) {
       var n, r;
-      H(I(k({}, W), {
+      U(I(k({}, W), {
         config: (n = W.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
@@ -226,7 +226,7 @@ function W() {
       default:
         return
     }
-    H(I(k({}, W), {
+    U(I(k({}, W), {
       config: I(k({}, W.config), {
         taskConfigV2: I(k({}, W.config.taskConfigV2), {
           tasks: I(k({}, n), {
@@ -241,7 +241,7 @@ function W() {
 
   function er(e, t) {
     var n, r, s;
-    H(I(k({}, W), {
+    U(I(k({}, W), {
       config: I(k({}, W.config), {
         videoMetadata: I(k({}, W.config.videoMetadata), {
           messages: null != (s = null == (n = W.config.videoMetadata) ? true : n.messages) ? s : {},
@@ -256,7 +256,7 @@ function W() {
   function es(e, t) {
     if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
       var n, r;
-      H(I(k({}, W), {
+      U(I(k({}, W), {
         config: (n = W.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
@@ -271,7 +271,7 @@ function W() {
   function eo(e, t, n) {
     if ("name" === e || "nameWithArticle" === e) {
       var r, s;
-      H(I(k({}, W), {
+      U(I(k({}, W), {
         config: (r = W.config, s = {
           [e]: t
         }, (0, i.EQ)(r).with({
@@ -288,7 +288,7 @@ function W() {
   }
 
   function ea(e, t) {
-    H(I(k({}, W), {
+    U(I(k({}, W), {
       config: I(k({}, W.config), {
         colors: I(k({}, W.config.colors), {
           [e]: t
@@ -332,7 +332,7 @@ function W() {
               n = t.progressSeconds,
               r = t.targetSeconds;
             return n / r >= 1 ? T.a.COMPLETED_100 : n / r >= .75 ? T.a.COMPLETED_75 : n / r >= .5 ? T.a.COMPLETED_50 : n / r >= .25 ? T.a.COMPLETED_25 : T.a.ENROLLED
-          }(e)), H(e))
+          }(e)), U(e))
         },
         quest: J
       })
@@ -346,7 +346,7 @@ function W() {
         taskDuration: el,
         taskConfigV2: W.config.taskConfigV2,
         onSelect: function(e) {
-          H(I(k({}, W), {
+          U(I(k({}, W), {
             config: I(k({}, W.config), {
               taskConfigV2: e
             })
@@ -384,7 +384,7 @@ function W() {
           let s = I(k({}, r.messages), {
             [e]: t
           });
-          H(I(k({}, W), {
+          U(I(k({}, W), {
             config: I(k({}, W.config), {
               taskConfigV2: I(k({}, W.config.taskConfigV2), {
                 tasks: I(k({}, n), {
@@ -496,7 +496,7 @@ function W() {
           onFileChange: (e, n) => (function(e, t, n) {
             if ("asset" === e) {
               var r;
-              H(I(k({}, W), {
+              U(I(k({}, W), {
                 config: (r = W.config, (0, i.EQ)(r).with({
                   configVersion: 2
                 }, e => I(k({}, e), {
@@ -554,19 +554,19 @@ function W() {
         onChange: function(e) {
           switch (z(e), e) {
             case T.a.UNENROLLED:
-              H(I(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: null
               }));
               break;
             case T.a.ENROLLED:
-              H(I(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: V({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
             case T.a.COMPLETED_25:
-              H(I(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: V({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .25 * el
@@ -574,7 +574,7 @@ function W() {
               }));
               break;
             case T.a.COMPLETED_50:
-              H(I(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: V({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .5 * el
@@ -582,7 +582,7 @@ function W() {
               }));
               break;
             case T.a.COMPLETED_75:
-              H(I(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: V({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .75 * el
@@ -590,7 +590,7 @@ function W() {
               }));
               break;
             case T.a.COMPLETED_100:
-              H(I(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: V({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
@@ -599,7 +599,7 @@ function W() {
               }));
               break;
             case T.a.CLAIMED:
-              H(I(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: V({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
@@ -745,7 +745,7 @@ function W() {
     })]
   })
 }
-class U extends Chunk473749.Component {
+class H extends Chunk473749.Component {
   componentDidCatch(e) {
     this.setState({
       error: e
@@ -788,4 +788,4 @@ class U extends Chunk473749.Component {
     })
   }
 }
-let H = U
+let U = H

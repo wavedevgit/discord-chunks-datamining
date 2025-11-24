@@ -105,13 +105,13 @@ function B(e) {
     onCtxMenuOpen: D,
     onCtxMenuSelect: q,
     sourceQuestContent: L
-  } = e, Q = (0, _.PB)(m), V = (0, p.ZP)(), M = ((0, c.wj)(V) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, Z = (0, h.tP)(m), W = (null == (t = m.userStatus) ? true : t.claimedAt) != null, U = (0, h.B6)(m.config.expiresAt, {
+  } = e, Q = (0, _.PB)(m), V = (0, p.ZP)(), M = ((0, c.wj)(V) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, Z = (0, h.tP)(m), W = (null == (t = m.userStatus) ? true : t.claimedAt) != null, H = (0, h.B6)(m.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), H = (null == (n = m.userStatus) ? true : n.enrolledAt) != null, F = (null == (o = m.userStatus) ? true : o.completedAt) != null, {
+  }), U = (null == (n = m.userStatus) ? true : n.enrolledAt) != null, F = (null == (o = m.userStatus) ? true : o.completedAt) != null, {
     onAssetLoadComplete: z
   } = s.useContext(O.k), G = s.useCallback(async () => {
-    Q && ((0, _.zi)(m) || H ? (0, E.openVideoQuestModal)({
+    Q && ((0, _.zi)(m) || U ? (0, E.openVideoQuestModal)({
       quest: m,
       questContent: x.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: L,
@@ -131,7 +131,7 @@ function B(e) {
       sourceQuestContent: L,
       sourceQuestContentCTA: f.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     })))
-  }, [Q, m, H, L]);
+  }, [Q, m, U, L]);
   return (0, r.jsxs)("div", {
     className: A.container,
     children: [(0, r.jsx)("div", {
@@ -148,8 +148,10 @@ function B(e) {
       })
     }), (0, r.jsx)("div", {
       className: a()(A.overlay, {
-        [A.darkThemeGradient]: M,
-        [A.lightThemeGradient]: !M
+        [A.lightThemeGradient]: V === P.BRd.LIGHT,
+        [A.darkThemeGradient]: V === P.BRd.DARK,
+        [A.darkerThemeGradient]: V === P.BRd.DARKER,
+        [A.midnightThemeGradient]: V === P.BRd.MIDNIGHT
       })
     }), (0, r.jsxs)("div", {
       className: A.positionContentOverBackground,
@@ -166,7 +168,7 @@ function B(e) {
               children: N.intl.string(N.t.SKNnqq)
             })
           }), Q && (0, r.jsx)(l.u, {
-            text: F ? N.intl.string(N.t.YsCuyF) : H ? N.intl.string(N.t["74KqrR"]) : (0, _.zi)(m) ? N.intl.string(N.t.I6JG46) : N.intl.string(N.t.umdNin),
+            text: F ? N.intl.string(N.t.YsCuyF) : U ? N.intl.string(N.t["74KqrR"]) : (0, _.zi)(m) ? N.intl.string(N.t.I6JG46) : N.intl.string(N.t.umdNin),
             asContainer: true,
             tag: "span",
             children: (0, r.jsx)(d.P3F, {
@@ -252,7 +254,7 @@ function B(e) {
             variant: "text-sm/medium",
             color: M ? "text-muted" : "always-white",
             children: N.intl.format(N.t["7D8r4F"], {
-              expiryDate: U
+              expiryDate: H
             })
           })]
         })]

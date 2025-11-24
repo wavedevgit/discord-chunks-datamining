@@ -96,7 +96,7 @@ function O(e) {
     isClaiming: m.Z.isClaimingReward(T.id) || m.Z.isFetchingRewardCode(T.id),
     isEnrolling: m.Z.isEnrolling(T.id),
     isQuestEnrollmentBlocked: null != m.Z.questEnrollmentBlockedUntil
-  })), Z = (null == (t = T.userStatus) ? true : t.enrolledAt) != null, W = (null == (n = T.userStatus) ? true : n.completedAt) != null, U = W && (null == (O = T.userStatus) ? true : O.claimedAt) == null, H = (0, f.iQ)(T), F = !(0, f.zi)(T), z = (0, p._Q)(T), G = (0, f.Xv)(T.config), K = (0, f.PB)(T), X = (0, f.HJ)(T), Y = (0, f.Vl)(T), J = (0, p.Rf)(T), [$, ee, et] = (0, p.me)(T, J), en = F && z === p.OH.ACCEPTED, er = en && $ === g.LI.SELECT, es = en && !er && ee.length > 1, eo = s.useCallback(e => {
+  })), Z = (null == (t = T.userStatus) ? true : t.enrolledAt) != null, W = (null == (n = T.userStatus) ? true : n.completedAt) != null, H = W && (null == (O = T.userStatus) ? true : O.claimedAt) == null, U = (0, f.iQ)(T), F = !(0, f.zi)(T), z = (0, p._Q)(T), G = (0, f.Xv)(T.config), K = (0, f.PB)(T), X = (0, f.HJ)(T), Y = (0, f.Vl)(T), J = (0, p.Rf)(T), [$, ee, et] = (0, p.me)(T, J), en = F && z === p.OH.ACCEPTED, er = en && $ === g.LI.SELECT, es = en && !er && ee.length > 1, eo = s.useCallback(e => {
     et(e), e === b.cd.DESKTOP && P([])
   }, [et, P]), {
     text: ea,
@@ -136,7 +136,7 @@ function O(e) {
     quest: T,
     shortText: true
   }), eg = null;
-  return (H && U ? eg = (0, r.jsx)("div", {
+  return (U && H ? eg = (0, r.jsx)("div", {
     className: v.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "primary",
@@ -189,7 +189,7 @@ function O(e) {
       text: ea,
       fullWidth: true
     })
-  }) : F ? F && U ? eg = (0, r.jsx)("div", {
+  }) : F ? F && H ? eg = (0, r.jsx)("div", {
     className: v.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "primary",

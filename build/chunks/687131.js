@@ -2,28 +2,27 @@
 /** chunk id: 687131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  z: () => d
+  z: () => u
 }), require("./997841.js");
 var Chunk95015 = require("./95015.js"),
   Chunk757266 = require("./757266.js"),
   Chunk797258 = require("./797258.js"),
   Chunk358085 = require("./358085.js"),
-  Chunk535246 = require("./535246.js"),
   Chunk212517 = require("./212517.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e) {
+function c(e) {
   let {
     platform: t
   } = e;
-  return !!(0, l.D)(e) || ((0, o.isAndroid)() ? t === c.M7m.ANDROID : (0, o.isIOS)() ? t === c.M7m.IOS : (0, o.isWeb)() ? t === c.M7m.DESKTOP : !!(0, o.isDesktop)() && null != e.application_id && i.Z.isConnected(e.application_id) && t === c.M7m.DESKTOP)
+  return !!(0, s.D)(e) || ((0, o.isAndroid)() ? t === l.M7m.ANDROID : (0, o.isIOS)() ? t === l.M7m.IOS : (0, o.isWeb)() ? t === l.M7m.DESKTOP : !!(0, o.isDesktop)() && null != e.application_id && i.Z.isConnected(e.application_id) && t === l.M7m.DESKTOP)
 }
 
-function d(e) {
+function u(e) {
   var t, n, i;
-  if (!(0, s.v)() || null == e) return null;
+  if (null == e) return null;
   let o = e.application_id;
-  if (null == o || !(0, r.yE)(null != (t = e.flags) ? t : 0, c.xjy.SUPPORTS_GATEWAY_ACTIVITY_ACTION_JOIN)) return null;
-  let l = a.Z.getRemoteApplicationActivity(o);
-  return null == l || u(l) ? null : (0, r.yE)(null != (n = l.flags) ? n : 0, c.xjy.SUPPORTS_GATEWAY_ACTIVITY_ACTION_JOIN) && null != (i = l.platform) ? i : null
+  if (null == o || !(0, r.yE)(null != (t = e.flags) ? t : 0, l.xjy.SUPPORTS_GATEWAY_ACTIVITY_ACTION_JOIN)) return null;
+  let s = a.Z.getRemoteApplicationActivity(o);
+  return null == s || c(s) ? null : (0, r.yE)(null != (n = s.flags) ? n : 0, l.xjy.SUPPORTS_GATEWAY_ACTIVITY_ACTION_JOIN) && null != (i = s.platform) ? i : null
 }

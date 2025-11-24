@@ -43,7 +43,7 @@ function O(e) {
   } = (0, d.kE)(), Z = 104 !== M, {
     onAssetLoadComplete: W
   } = s.useContext(x.k), {
-    expansionSpring: U
+    expansionSpring: H
   } = (0, c.q_F)({
     expansionSpring: +!!N,
     config: (O = function(e) {
@@ -75,7 +75,7 @@ function O(e) {
     })(Object(T)).forEach(function(e) {
       Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(T, e))
     }), O)
-  }), H = (null == (n = w.userStatus) ? true : n.completedAt) != null, F = (null == (o = w.userStatus) ? true : o.claimedAt) != null, z = (0, g.xN)(w.config), G = (0, g.LM)(w.config), {
+  }), U = (null == (n = w.userStatus) ? true : n.completedAt) != null, F = (null == (o = w.userStatus) ? true : o.claimedAt) != null, z = (0, g.xN)(w.config), G = (0, g.LM)(w.config), {
     completedRatio: K,
     completedRatioDisplay: X
   } = (0, m.I)(w), Y = (0, m.Bd)(w, I, D), J = s.useMemo(() => F && z ? C.intl.format(C.t["8Op4c4"], {
@@ -117,7 +117,7 @@ function O(e) {
     ref: D,
     children: [(0, r.jsxs)(i.animated.div, {
       style: {
-        maxHeight: U.to([0, 1], [104, (null != M ? M : 0) + 12])
+        maxHeight: H.to([0, 1], [104, (null != M ? M : 0) + 12])
       },
       className: y.rewardDescriptionContainer,
       children: [(0, r.jsx)(_.E, {
@@ -126,11 +126,11 @@ function O(e) {
         height: 80,
         children: (0, r.jsxs)("div", {
           className: y.assetWrapper,
-          children: [!F && H && (0, r.jsx)("div", {
+          children: [!F && U && (0, r.jsx)("div", {
             className: y.completionAnimation
           }), Q && !F ? (0, r.jsxs)("div", {
             className: y.progressWrapper,
-            children: [H && (0, r.jsx)(c.Fmz, {
+            children: [U && (0, r.jsx)(c.Fmz, {
               importData: E,
               className: y.confetti,
               loop: false,
@@ -186,7 +186,7 @@ function O(e) {
         }), $]
       }), Z && (0, r.jsx)(i.animated.div, {
         style: {
-          opacity: U.to([0, 1], [1, 0])
+          opacity: H.to([0, 1], [1, 0])
         },
         className: y.textOverflowBlur
       })]

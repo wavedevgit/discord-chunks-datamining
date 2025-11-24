@@ -530,31 +530,32 @@ function U(e) {
       closeOnSelect: d = true,
       filter: f,
       matchSorterOptions: _,
-      "aria-required": h,
-      onChange: m,
-      onSearchChange: g,
-      onKeyDown: E,
-      onFocus: y,
-      onBlur: O,
-      debounceTime: v,
-      hidePills: T,
-      renderOptionLabel: S,
-      renderOptionPrefix: A,
-      renderOptionSuffix: N
+      placeholder: h,
+      "aria-required": m,
+      onChange: g,
+      onSearchChange: E,
+      onKeyDown: y,
+      onFocus: O,
+      onBlur: v,
+      debounceTime: T,
+      hidePills: S,
+      renderOptionLabel: A,
+      renderOptionPrefix: N,
+      renderOptionSuffix: P
     } = e,
     {
-      fieldProps: P
+      fieldProps: D
     } = (0, p.XF_)(e),
-    D = null != v || "function" == typeof i || null != S;
-  if (t && !D) {
+    w = null != T || "function" == typeof i || null != A;
+  if (t && !w) {
     let e = null != f && "function" == typeof f ? f : true;
     return (0, r.jsx)(b.V, R(C({
       id: n,
       selectionMode: c ? "multiple" : "single",
-      required: a || h,
+      required: a || m,
       disabled: o || s,
-      hideTags: T
-    }, P), {
+      hideTags: S
+    }, D), {
       value: l,
       options: i,
       formatOption: e => {
@@ -569,23 +570,24 @@ function U(e) {
           value: n,
           label: r,
           disabled: i,
-          leading: null == A ? true : A(e, {
+          leading: null == N ? true : N(e, {
             inPill: false,
             inDropdown: true
           }),
-          trailing: null == N ? true : N(e, {
+          trailing: null == P ? true : P(e, {
             inPill: false,
             inDropdown: true
           })
         }
       },
-      onSelectionChange: m,
+      onSelectionChange: g,
       customMatchSorter: e,
       matchSorterOptions: _,
-      onQueryChange: e => null == g ? true : g(e.target.value),
-      onKeyDown: E,
-      onFocus: y,
-      onBlur: O,
+      placeholder: h,
+      onQueryChange: e => null == E ? true : E(e.target.value),
+      onKeyDown: y,
+      onFocus: O,
+      onBlur: v,
       clearable: u,
       closeOnSelect: d
     }))

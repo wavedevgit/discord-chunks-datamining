@@ -484,15 +484,16 @@ function M(e) {
       closeOnSelect: O = true,
       maxVisibleItems: T,
       "aria-label": A,
-      variant: C,
-      renderOptionLabel: N
+      placeholder: C,
+      variant: N,
+      renderOptionLabel: R
     } = o,
     {
-      fieldProps: R
+      fieldProps: P
     } = (0, u.XF_)(o),
-    P = "text-only" === C || null != N;
-  if (s && !P) {
-    let e = null == R.label && null != A;
+    D = "text-only" === N || null != R;
+  if (s && !D) {
+    let e = null == P.label && null != A;
     return (0, r.jsx)(f.P, v(y({
       id: c,
       selectionMode: "single",
@@ -524,21 +525,22 @@ function M(e) {
       loading: g,
       clearable: b,
       closeOnSelect: O,
-      maxOptionsVisible: T
-    }, R), {
-      label: e ? A : R.label,
-      hideLabel: true === R.hideLabel || e
+      maxOptionsVisible: T,
+      placeholder: C
+    }, P), {
+      label: e ? A : P.label,
+      hideLabel: true === P.hideLabel || e
     }))
   }
 
-  function D() {
+  function L() {
     if (null != t || null != n) return e => (0, r.jsxs)("div", {
       className: E.newOptionLabel,
       children: [null == t ? true : t(e), e.label, null == n ? true : n(e)]
     })
   }
   return (0, r.jsx)(w, v(y({}, o, l), {
-    renderOptionLabel: null != N ? N : D()
+    renderOptionLabel: null != R ? R : L()
   }))
 }
 
@@ -561,24 +563,25 @@ function k(e) {
       clearable: O,
       closeOnSelect: T,
       maxVisibleItems: S,
-      "aria-label": A,
-      variant: C,
-      isSelected: N,
-      renderOptionLabel: R
+      placeholder: A,
+      "aria-label": C,
+      variant: N,
+      isSelected: R,
+      renderOptionLabel: P
     } = o,
     {
-      fieldProps: P
+      fieldProps: D
     } = (0, u.XF_)(o),
-    D = "text-only" === C || null != R;
-  if (s && !D) {
-    let e = null == P.label && null != A;
+    L = "text-only" === N || null != P;
+  if (s && !L) {
+    let e = null == D.label && null != C;
     return (0, r.jsx)(f.P, v(y({
       id: l,
       selectionMode: "single",
       onSelectionChange: e => {
         _(e)
       },
-      value: null != (n = null == d || null == (t = d.find(e => null == N ? true : N(e.value))) ? true : t.value) ? n : true,
+      value: null != (n = null == d || null == (t = d.find(e => null == R ? true : R(e.value))) ? true : t.value) ? n : true,
       options: d,
       formatOption: e => {
         let {
@@ -603,20 +606,21 @@ function k(e) {
       loading: b,
       clearable: O,
       closeOnSelect: T,
-      maxOptionsVisible: S
-    }, P), {
-      label: e ? A : P.label,
-      hideLabel: true === P.hideLabel || e
+      maxOptionsVisible: S,
+      placeholder: A
+    }, D), {
+      label: e ? C : D.label,
+      hideLabel: true === D.hideLabel || e
     }))
   }
 
-  function L() {
+  function x() {
     if (null != i || null != a) return e => (0, r.jsxs)("div", {
       className: E.newOptionLabel,
       children: [null == i ? true : i(e), e.label, null == a ? true : a(e)]
     })
   }
   return (0, r.jsx)(w, v(y({}, o), {
-    renderOptionLabel: null != R ? R : L()
+    renderOptionLabel: null != P ? P : x()
   }))
 }
