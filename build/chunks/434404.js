@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => R
-}), require("./953529.js"), require("./539854.js"), require("./388685.js");
+}), require("./953529.js");
 var Chunk990547 = require("./990547.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -428,8 +428,8 @@ let C = new Chunk710845.Z("GuildSettingsActionCreators"),
       let {
         migratePin: n,
         migrateSlowmode: r
-      } = t, i = [];
-      n && i.push(N.migratePinPermission(e)), r && i.push(N.migrateSlowmodePermission(e)), await Promise.all(i)
+      } = t;
+      n && await N.migratePinPermission(e), r && await N.migrateSlowmodePermission(e)
     }
   },
   R = N

@@ -182,11 +182,12 @@ function I(e, t, n, r) {
   })
 }
 
-function T(e, t) {
+function T(e, t, n) {
   return r.Z.dispatch({
     type: "OVERLAY_V3_NATIVE_FOCUS_GAINED",
     pid: e,
-    windowHandle: t
+    windowHandle: t,
+    windowClass: n
   })
 }
 

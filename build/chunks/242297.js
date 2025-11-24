@@ -29,11 +29,11 @@ function g(e, t, n) {
 }
 let E = new Chunk710845.Z("OverlayV3NativeModule");
 
-function b(e, t) {
+function b(e, t, n) {
   (0, d.bs)(e, "renderer_window_focus_changed", {
     windowHandle: t,
     popoutInitializationStages: u.Z.getPopoutInitializationStages()
-  }), (0, d.P9)(e, null != t ? (0, f.rd)(t) : null)
+  }), (0, d.P9)(e, null != t ? (0, f.rd)(t) : null, n)
 }
 
 function y(e) {
