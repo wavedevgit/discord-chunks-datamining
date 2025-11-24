@@ -1,4 +1,4 @@
-/** Chunk was on 62191 **/
+/** Chunk was on 46984 **/
 /** chunk id: 555361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -20,20 +20,24 @@ function a(e) {
     useSubtitle: d,
     useDisabled: f,
     onValueRender: b,
-    asValueChanges: y
-  } = t, [p] = l.useState(() => a()), v = u(), j = null == d ? true : d(), g = null == f ? true : f();
+    asValueChanges: y,
+    markers: p,
+    onMarkerRender: v
+  } = t, [j] = l.useState(() => a()), g = u(), m = null == d ? true : d(), h = null == f ? true : f();
   return (0, r.jsx)(o.X, {
     children: (0, r.jsx)(i.iRW, {
-      label: v,
-      description: j,
-      disabled: g,
-      initialValue: p,
+      label: g,
+      description: m,
+      disabled: h,
+      initialValue: j,
       minValue: c,
       maxValue: s,
       onValueRender: b,
       asValueChanges: y,
       onValueChange: n,
-      orientation: "horizontal"
+      orientation: "horizontal",
+      markers: p,
+      onMarkerRender: v
     })
   })
 }

@@ -153,7 +153,7 @@ function ee(e) {
             return (0, r.jsxs)("div", {
               className: X.role,
               children: [(0, r.jsx)(c.xko, {
-                color: null != (n = e.colorString) ? n : W.Pbq,
+                color: null != (n = e.colorString) ? n : F.Pbq,
                 colors: w ? e.colorStrings : null,
                 className: X.roleDot
               }), (0, r.jsx)(c.Text, {
@@ -174,10 +174,10 @@ function en(e) {
   let {
     prompt: t,
     guild: i
-  } = e, [s, d] = l.useState(null), [u, p] = l.useState(new Set), h = null == t || null == (n = t.options) ? true : n.filter(e => u.has(e.id)), m = (0, k.L6)(h), f = (0, k.dX)(h), _ = (0, o.Wu)([A.Z], () => A.Z.getOnboardingResponsesForPrompt(i.id, t.id)), {
+  } = e, [s, d] = l.useState(null), [u, p] = l.useState(new Set), h = null == t || null == (n = t.options) ? true : n.filter(e => u.has(e.id)), m = (0, k.L6)(h), f = (0, k.dX)(h), _ = (0, o.Wu)([D.Z], () => D.Z.getOnboardingResponsesForPrompt(i.id, t.id)), {
     helpText: x,
     helpTextAdditional: C
-  } = (0, L.p)({
+  } = (0, R.p)({
     guild: i,
     prompt: t,
     selectedRoleIds: m,
@@ -189,14 +189,14 @@ function en(e) {
     }, n)
   }), {
     handleSelectOption: b
-  } = (0, D.Z)(i.id), j = t.options.map(e => K({
+  } = (0, A.Z)(i.id), j = t.options.map(e => K({
     value: e.id
   }, e)), v = t.options.filter(e => _.includes(e.id)).map(e => e.id);
   return (0, r.jsxs)("div", {
     className: X.prompt,
     "data-new": t.isNew,
     children: [t.isNew && (0, r.jsx)(c.IGR, {
-      color: (0, g.Lq)(W.Ilk.BRAND_260),
+      color: (0, g.Lq)(F.Ilk.BRAND_260),
       text: V.intl.string(V.t.y2b7CA),
       className: X.newBadge
     }), (0, r.jsxs)(c.Heading, {
@@ -241,7 +241,7 @@ function en(e) {
 function et(e) {
   let {
     guild: n
-  } = e, t = (0, o.e7)([A.Z], () => A.Z.getConnections(n.id));
+  } = e, t = (0, o.e7)([D.Z], () => D.Z.getConnections(n.id));
   return 0 === t.length ? null : (0, r.jsxs)("div", {
     className: X.prompt,
     children: [(0, r.jsx)(c.Heading, {
@@ -268,10 +268,10 @@ function er(e) {
   let {
     prompt: t,
     guild: i
-  } = e, [s, d] = l.useState(null), [u, p] = l.useState(new Set), h = null == t || null == (n = t.options) ? true : n.filter(e => u.has(e.id)), m = (0, k.L6)(h), f = (0, k.dX)(h), _ = (0, o.Wu)([A.Z], () => A.Z.getOnboardingResponsesForPrompt(i.id, t.id)), {
+  } = e, [s, d] = l.useState(null), [u, p] = l.useState(new Set), h = null == t || null == (n = t.options) ? true : n.filter(e => u.has(e.id)), m = (0, k.L6)(h), f = (0, k.dX)(h), _ = (0, o.Wu)([D.Z], () => D.Z.getOnboardingResponsesForPrompt(i.id, t.id)), {
     helpText: x,
     helpTextAdditional: C
-  } = (0, L.p)({
+  } = (0, R.p)({
     guild: i,
     prompt: t,
     selectedRoleIds: m,
@@ -283,12 +283,12 @@ function er(e) {
     }, n)
   }), {
     handleSelectOption: b
-  } = (0, D.Z)(i.id);
+  } = (0, A.Z)(i.id);
   return (0, r.jsxs)("div", {
     className: X.prompt,
     "data-new": t.isNew,
     children: [t.isNew && (0, r.jsx)(c.IGR, {
-      color: (0, g.Lq)(W.Ilk.BRAND_260),
+      color: (0, g.Lq)(F.Ilk.BRAND_260),
       text: V.intl.string(V.t.y2b7CA),
       className: X.newBadge
     }), (0, r.jsxs)(c.Heading, {
@@ -330,30 +330,30 @@ function el(e) {
     guildId: n,
     onBrowseChannels: t
   } = e, i = (0, s.wj)((0, h.ZP)()), p = (0, o.e7)([I.Z], () => I.Z.getGuild(n)), m = (0, o.e7)([Z.default], () => Z.default.getCurrentUser()), f = (0, u.Z)("(min-width: 1344px)") && null != m, x = l.useCallback(() => {
-    (0, b.uL)(W.Z5c.CHANNEL(n, q.oC.CHANNEL_BROWSER)), null == t || t()
+    (0, b.uL)(F.Z5c.CHANNEL(n, q.oC.CHANNEL_BROWSER)), null == t || t()
   }, [n, t]), C = (0, o.e7)([w.ZP], () => w.ZP.hasUnread(n, z.W.GUILD_ONBOARDING_QUESTION)), {
     onboardingPromptsRaw: j,
     newOnboardingPrompts: v,
     onboardingPromptsWithNewAnswers: O,
     newAnswersCount: y,
     onboardingPrompts: N
-  } = (0, R.Z)(n);
+  } = (0, L.Z)(n);
   l.useEffect(() => {
-    (null == p ? true : p.id) != null && !_.Z.isFullServerPreview(p.id) && (A.Z.shouldFetchPrompts(p.id) || C) && (0, B.eM)(p.id)
+    (null == p ? true : p.id) != null && !_.Z.isFullServerPreview(p.id) && (D.Z.shouldFetchPrompts(p.id) || C) && (0, B.eM)(p.id)
   }, [null == p ? true : p.id, C]), l.useEffect(() => {
     if ((null == p ? true : p.id) != null && !_.Z.isFullServerPreview(p.id)) return () => {
-      (0, d.Ju)(p.id, z.W.GUILD_ONBOARDING_QUESTION, A.Z.ackIdForGuild(p.id)), T.Z.updateOnboardingResponses(p.id)
+      (0, d.Ju)(p.id, z.W.GUILD_ONBOARDING_QUESTION, D.Z.ackIdForGuild(p.id)), T.Z.updateOnboardingResponses(p.id)
     }
   }, [null == p ? true : p.id]);
   let S = l.useCallback(e => {
     if (null == p) return null;
     switch (e.type) {
-      case F.FN.MULTIPLE_CHOICE:
+      case W.FN.MULTIPLE_CHOICE:
         return (0, r.jsx)(er, {
           prompt: e,
           guild: p
         }, e.id);
-      case F.FN.DROPDOWN:
+      case W.FN.DROPDOWN:
         return (0, r.jsx)(en, {
           prompt: e,
           guild: p
@@ -364,8 +364,8 @@ function el(e) {
   }, [p]);
   if (null == p) return null;
   if (0 === j.length) {
-    let e = (0, g.Lq)(i ? W.Ilk.PRIMARY_300 : W.Ilk.PRIMARY_500),
-      n = (0, g.Lq)(i ? W.Ilk.PRIMARY_700 : W.Ilk.PRIMARY_230);
+    let e = (0, g.Lq)(i ? F.Ilk.PRIMARY_300 : F.Ilk.PRIMARY_500),
+      n = (0, g.Lq)(i ? F.Ilk.PRIMARY_700 : F.Ilk.PRIMARY_230);
     return (0, r.jsx)("div", {
       className: a()(Q.content, X.emptyPage),
       children: (0, r.jsxs)("div", {

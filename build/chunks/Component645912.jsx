@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 645912, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  G: () => E
+  G: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk657707 = require("./657707.js"),
@@ -14,13 +14,13 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.KEYBINDS_PANE, {
     buildLayout: () => [],
     render: () => (0, Chunk54381.jsx)(Chunk389650.Z, {})
   }),
-  d = (0, Chunk509613.wf)(Chunk313789.n.KEYBINDS_PANEL, {
+  E = (0, Chunk509613.wf)(Chunk313789.n.KEYBINDS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.T9DA2K),
     buildLayout: () => [c]
   }),
-  E = (0, Chunk509613.m7)(Chunk313789.n.KEYBINDS_SIDEBAR_ITEM, {
+  d = (0, Chunk509613.m7)(Chunk313789.n.KEYBINDS_SIDEBAR_ITEM, {
     icon: Chunk657707.YiA,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.T9DA2K),
     getLegacySearchKey: () => Chunk726985.s6.KEYBINDS,
-    buildLayout: () => [d]
+    buildLayout: () => [E]
   })

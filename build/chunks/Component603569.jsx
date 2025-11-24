@@ -35,7 +35,7 @@ let I = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
       useDecoration: function(t) {
         let e = (0, s.gU)();
         return t === r.z.FAMILY_CENTER_NEW_BADGE ? (0, i.jsx)(u.IGR, {
-          text: T.intl.string(T.t.y2b7CA)
+          text: S.intl.string(S.t.y2b7CA)
         }) : e > 0 ? (0, i.jsx)(u.mAB, {
           count: e
         }) : null

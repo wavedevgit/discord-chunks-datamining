@@ -15,32 +15,32 @@ function c(t, e) {
   let n = i.useMemo(() => (0, u.Ql)(t), [t]),
     c = (0, l.Pt)(),
     {
-      searchResults: d
+      searchResults: E
     } = (0, r.F)(),
-    E = new Set;
-  for (let t of d) {
+    d = new Set;
+  for (let t of E) {
     let e = t;
     for (; null != e;) {
-      var T;
-      let t = null == (T = c[e]) ? true : T.parent;
+      var S;
+      let t = null == (S = c[e]) ? true : S.parent;
       if (null == t) {
-        E.add(e);
+        d.add(e);
         break
       }
       e = t
     }
   }
-  let S = (0, o.Z)(n, null != e ? e : "", E),
-    [I, O] = i.useState(S),
+  let T = (0, o.Z)(n, null != e ? e : "", d),
+    [I, O] = i.useState(T),
     g = function(t, e) {
       if (t.size !== e.size) returntrue;
       for (let n of t)
         if (!e.has(n)) returntrue;
       returnfalse
-    }(I, S);
+    }(I, T);
   return i.useEffect(() => {
-    g && O(S)
-  }, [g, S]), i.useMemo(() => {
+    g && O(T)
+  }, [g, T]), i.useMemo(() => {
     var t, e, i;
     let l = new s.Z;
     return {

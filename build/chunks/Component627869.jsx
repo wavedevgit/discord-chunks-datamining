@@ -2,7 +2,8 @@
 /** chunk id: 627869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m,
+  j: () => h
 }), require("./388685.js"), require("./781311.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -53,39 +54,58 @@ function p(e, t) {
 }
 
 function h() {
+  let e = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().autoClipPhrases),
+    [t, n] = Chunk473749.useState(""),
+    c = Chunk473749.useMemo(() => module.map(e => ({
+      id: e,
+      label: e
+    })), [module]),
+    d = Chunk473749.useCallback(e => {
+      n(e)
+    }, []),
+    f = Chunk473749.useCallback(r => {
+      if ("Enter" === r.key || "," === r.key) {
+        r.preventDefault();
+        let i = t.trim().toLowerCase();
+        i.length > 0 && !e.includes(i) && (l.a2([...e, i]), n(""))
+      } else if ("Backspace" === r.key && "" === t && e.length > 0) {
+        let t = e.slice(0, false);
+        l.a2(t)
+      }
+    }, [exports, module]),
+    _ = Chunk473749.useCallback(t => {
+      let n = Array.from(t)[0],
+        r = e.filter(e => e !== n);
+      l.a2(r)
+    }, [module]);
+  return (0, Chunk54381.jsx)(Chunk481060.oil, {
+    value: exports,
+    onChange: d,
+    onKeyDown: f,
+    placeholder: Chunk388032.intl.string(Chunk388032.t.zYUZpt),
+    leading: Chunk356659.length > 0 ? {
+      type: "tags",
+      items: Chunk356659,
+      onRemove: _
+    } : true
+  })
+}
+
+function m() {
   let {
-    autoClipPhrases: e,
-    maxAutoClips: t,
-    clipSignals: n
-  } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()), [d, _] = Chunk473749.useState(""), h = Chunk473749.useMemo(() => module.map(e => ({
-    id: e,
-    label: e
-  })), [module]), m = Chunk473749.useCallback(e => {
-    _(e)
-  }, []), g = Chunk473749.useCallback(t => {
-    if ("Enter" === t.key || "," === t.key) {
-      t.preventDefault();
-      let n = d.trim().toLowerCase();
-      n.length > 0 && !e.includes(n) && (l.a2([...e, n]), _(""))
-    } else if ("Backspace" === t.key && "" === d && e.length > 0) {
-      let t = e.slice(0, false);
-      l.a2(t)
-    }
-  }, [d, module]), E = Chunk473749.useCallback(t => {
-    let n = Array.from(t)[0],
-      r = e.filter(e => e !== n);
-    l.a2(r)
-  }, [module]), b = Chunk473749.useCallback(e => {
-    l.Rr(p(f({}, n), {
+    maxAutoClips: e,
+    clipSignals: t
+  } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()), n = Chunk473749.useCallback(e => {
+    l.Rr(p(f({}, t), {
       enableGameSignals: e
     }))
-  }, [require]), y = Chunk473749.useCallback(e => {
-    l.Rr(p(f({}, n), {
+  }, [exports]), d = Chunk473749.useCallback(e => {
+    l.Rr(p(f({}, t), {
       enablePhraseSignals: e
     }))
-  }, [require]), O = Chunk473749.useCallback(e => {
+  }, [exports]), _ = Chunk473749.useCallback(e => {
     l.W6(Math.floor(e))
-  }, []), v = Chunk473749.useMemo(() => {
+  }, []), m = Chunk473749.useMemo(() => {
     let e = [Chunk356659.qb];
     for (let t = 10; exports <= Chunk356659.b0; t += 10) module.push(exports);
     return module[module.length - 1] !== Chunk356659.b0 && module.push(Chunk356659.b0), module
@@ -94,34 +114,24 @@ function h() {
     children: [(0, Chunk54381.jsx)(Chunk481060.iRW, {
       label: Chunk388032.intl.string(Chunk388032.t.yfsrDI),
       description: Chunk388032.intl.string(Chunk388032.t.vlDHdC),
-      initialValue: exports,
+      initialValue: module,
       layout: "vertical",
       onValueRender: e => "".concat(Math.floor(e)),
       minValue: Chunk356659.qb,
       maxValue: Chunk356659.b0,
-      onValueChange: O,
-      markers: v,
+      onValueChange: _,
+      markers: m,
       onMarkerRender: e => "".concat(Math.floor(e))
     }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.iV6KcI),
       description: Chunk388032.intl.string(Chunk388032.t["dJ2tX+"]),
-      checked: require.enableGameSignals,
-      onChange: b
+      checked: exports.enableGameSignals,
+      onChange: require
     }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.nHsilt),
       description: Chunk388032.intl.string(Chunk388032.t["s6wq+m"]),
-      checked: require.enablePhraseSignals,
-      onChange: y
-    }), require.enablePhraseSignals && (0, Chunk54381.jsx)(Chunk481060.oil, {
-      value: d,
-      onChange: m,
-      onKeyDown: g,
-      placeholder: Chunk388032.intl.string(Chunk388032.t.zYUZpt),
-      leading: h.length > 0 ? {
-        type: "tags",
-        items: h,
-        onRemove: E
-      } : true
-    })]
+      checked: exports.enablePhraseSignals,
+      onChange: d
+    }), exports.enablePhraseSignals && (0, Chunk54381.jsx)(h, {})]
   })
 }

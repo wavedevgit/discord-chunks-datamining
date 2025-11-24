@@ -2,7 +2,7 @@
 /** chunk id: 595373, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   J: () => N,
-  Z: () => f
+  Z: () => A
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,10 +25,10 @@ function N() {
   return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode() === Chunk65154.pM.PUSH_TO_TALK)
 }
 
-function A() {
+function f() {
   let t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode() === Chunk65154.pM.PUSH_TO_TALK),
     e = Chunk473749.useCallback(t => {
-      (0, E.XH)(t ? g.pM.PUSH_TO_TALK : g.pM.VOICE_ACTIVITY, [a.Z.USER_SETTINGS_VOICE_AND_VIDEO])
+      (0, d.XH)(t ? g.pM.PUSH_TO_TALK : g.pM.VOICE_ACTIVITY, [a.Z.USER_SETTINGS_VOICE_AND_VIDEO])
     }, []),
     n = Chunk818710.FB ? Chunk388032.intl.string(Chunk388032.t.tG4Np5) : Chunk388032.intl.string(Chunk388032.t.JMyQin),
     o = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode()),
@@ -52,10 +52,10 @@ function A() {
     })]
   })
 }
-let f = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_SETTING, {
+let A = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_SETTING, {
   usePredicate: function() {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getActiveInputProfile() !== Chunk345655._.STUDIO)
   },
-  render: () => (0, Chunk54381.jsx)(A, {}),
+  render: () => (0, Chunk54381.jsx)(f, {}),
   useSearchTerms: () => [Chunk818710.FB ? Chunk388032.intl.string(Chunk388032.t.tG4Np5) : Chunk388032.intl.string(Chunk388032.t.JMyQin), Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)]
 })

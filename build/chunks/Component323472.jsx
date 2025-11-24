@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 323472, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  u: () => S
+  u: () => T
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ function c(t) {
   return e
 }
 
-function d(t) {
+function E(t) {
   let {
     useTitle: e,
     settingKey: n,
@@ -32,13 +32,13 @@ function d(t) {
   }) : r
 }
 
-function E(t) {
+function d(t) {
   let {
     setting: e,
     formatter: n,
     index: l
   } = t;
-  return () => (0, i.jsx)(d, {
+  return () => (0, i.jsx)(E, {
     useTitle: e.useTitle,
     settingKey: e.key,
     formatter: n,
@@ -46,11 +46,11 @@ function E(t) {
   }, e.key)
 }
 
-function T(t) {
+function S(t) {
   return t.type === a.Jq.LIST
 }
 
-function S(t, e) {
+function T(t, e) {
   var n;
   let {
     limit: i = 2,
@@ -58,11 +58,11 @@ function S(t, e) {
   } = null != e ? e : {};
   u()(i > 0, "[useSettingCollapsibleSubtitle] Limit must be greater than 0");
   let {
-    directory: d
-  } = (0, s.t)(), S = d.get(t);
-  u()(null != S && (S.type === a.Jq.ACCORDION || T(S)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
-  let I = T(S) && null != (n = S.collapseAfter) ? n : 0,
-    O = S.layout;
+    directory: E
+  } = (0, s.t)(), T = E.get(t);
+  u()(null != T && (T.type === a.Jq.ACCORDION || S(T)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
+  let I = S(T) && null != (n = T.collapseAfter) ? n : 0,
+    O = T.layout;
   return l.useMemo(() => {
     let t = I,
       e = [];
@@ -80,70 +80,70 @@ function S(t, e) {
     let n = Math.min(i, 3);
     if (e.length <= n)
       if (1 === e.length) return o.intl.format(o.t["3H9tCW"], {
-        settingOneHook: E({
+        settingOneHook: d({
           setting: e[0],
           formatter: r,
           index: 0
         })
       });
       else if (2 === e.length) return o.intl.format(o.t.MWryo6, {
-      settingOneHook: E({
+      settingOneHook: d({
         setting: e[0],
         formatter: r,
         index: 0
       }),
-      settingTwoHook: E({
+      settingTwoHook: d({
         setting: e[1],
         formatter: r,
         index: 1
       })
     });
     else return o.intl.format(o.t.a00b5G, {
-      settingOneHook: E({
+      settingOneHook: d({
         setting: e[0],
         formatter: r,
         index: 0
       }),
-      settingTwoHook: E({
+      settingTwoHook: d({
         setting: e[1],
         formatter: r,
         index: 1
       }),
-      settingThreeHook: E({
+      settingThreeHook: d({
         setting: e[2],
         formatter: r,
         index: 2
       })
     });
     return 1 === n ? o.intl.format(o.t.O8vNbS, {
-      settingOneHook: E({
+      settingOneHook: d({
         setting: e[0],
         formatter: r,
         index: 0
       })
     }) : 2 === n ? o.intl.format(o.t["acXG/W"], {
-      settingOneHook: E({
+      settingOneHook: d({
         setting: e[0],
         formatter: r,
         index: 0
       }),
-      settingTwoHook: E({
+      settingTwoHook: d({
         setting: e[1],
         formatter: r,
         index: 1
       })
     }) : o.intl.format(o.t["5+ldWc"], {
-      settingOneHook: E({
+      settingOneHook: d({
         setting: e[0],
         formatter: r,
         index: 0
       }),
-      settingTwoHook: E({
+      settingTwoHook: d({
         setting: e[1],
         formatter: r,
         index: 1
       }),
-      settingThreeHook: E({
+      settingThreeHook: d({
         setting: e[2],
         formatter: r,
         index: 2

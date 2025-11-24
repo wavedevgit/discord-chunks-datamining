@@ -7,8 +7,6 @@ module.exports = {
   channelText: "channelText_e4503a",
   titleBadge: "titleBadge_e4503a",
   premiumIcon: "premiumIcon_e4503a",
-  selectAll: "selectAll_e4503a",
-  selectAllCheckbox: "selectAllCheckbox_e4503a",
   channelRow: "channelRow_e4503a",
   disabled: "disabled_e4503a",
   firstChannel: "firstChannel_e4503a",

@@ -1,4 +1,4 @@
-/** Chunk was on 43605 **/
+/** Chunk was on 45476 **/
 /** chunk id: 530146, original params: e,t,n (module,exports,require) **/
 module.exports = {
   detailsList: "detailsList__85e60",
