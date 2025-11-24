@@ -105,10 +105,10 @@ function T(e) {
   });
   return i.useEffect(() => {
     h.default.track(E.rMx.QUEST_CONTENT_VIEWED, C(I({}, (0, g.mH)(m.jn.QUEST_HOME_TAKEOVER)), {
-      quest_id: t.id,
+      quest_id: t.campaignId,
       is_targeted: false
     }))
-  }, [t.id]), (0, r.jsx)("div", {
+  }, [t.campaignId]), (0, r.jsx)("div", {
     className: a()(v.wrapper, {
       "theme-dark": j === O.BR.LIGHT,
       [v.wrapperWithOldDiscoveryHeader]: !N
@@ -154,7 +154,7 @@ function T(e) {
             children: [(0, r.jsx)(c.Button, {
               onClick: () => {
                 (0, p.Z)(t.ctaSponsorUrl.url), h.default.track(E.rMx.QUEST_CONTENT_CLICKED, I({
-                  quest_id: t.id,
+                  quest_id: t.campaignId,
                   cta_name: g.jZ.OPEN_GAME_LINK,
                   click_id: (0, o.Z)(),
                   is_targeted: false
@@ -172,7 +172,7 @@ function T(e) {
                     questId: e.questId
                   })
                 }), h.default.track(E.rMx.QUEST_CONTENT_CLICKED, I({
-                  quest_id: t.id,
+                  quest_id: t.campaignId,
                   cta_name: g.jZ.LEARN_MORE,
                   click_id: (0, o.Z)(),
                   is_targeted: false

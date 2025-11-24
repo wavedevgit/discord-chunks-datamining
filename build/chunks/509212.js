@@ -1286,7 +1286,7 @@ function nl(e) {
   let t = e.placements[x.rO.QUEST_HOME_BANNER];
   return null == t ? null : {
     placementType: x.rO.QUEST_HOME_BANNER,
-    id: t.id,
+    campaignId: t.campaign_id,
     labelTitle: t.label_title,
     labelSubtitle: t.label_subtitle,
     assetHeroImage: na(t.asset_hero_image),
