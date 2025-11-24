@@ -54,7 +54,7 @@ function m(e) {
     x = r.useCallback(() => {
       null == g || g(), t()
     }, [g, t]),
-    j = r.useRef(null);
+    O = r.useRef(null);
   return r.useEffect(() => {
     let e, t = c.Z.theme,
       i = false;
@@ -62,8 +62,8 @@ function m(e) {
       let [{
         default: r
       }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, a.wj)(t) ? v.dark() : v.light()]);
-      i || null == j.current || (e = r.loadAnimation({
-        container: j.current,
+      i || null == O.current || (e = r.loadAnimation({
+        container: O.current,
         renderer: "svg",
         loop: true,
         autoplay: true,
@@ -81,7 +81,7 @@ function m(e) {
         className: h.body,
         children: [null != v && (0, i.jsx)("div", {
           className: h.animation,
-          ref: j
+          ref: O
         }), (0, i.jsxs)("div", {
           className: h.content,
           children: [(0, i.jsx)("div", {

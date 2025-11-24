@@ -28,26 +28,26 @@ function x(e) {
   let {
     channel: n,
     children: x,
-    user: j
-  } = e, O = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), E = null != (t = (0, d.ZP)(n)) ? t : "", {
+    user: O
+  } = e, j = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), E = null != (t = (0, d.ZP)(n)) ? t : "", {
     avatarDecorationSrc: S,
     eventHandlers: P,
     isAnimating: I
   } = (0, y.Z)({
-    userId: null == j ? true : j.id,
+    userId: null == O ? true : O.id,
     size: o.EFr.SIZE_80,
     animateOnHover: true
   }), [Z, T] = r.useState(false), N = r.useCallback(() => {
     P.onMouseEnter(), T(true)
   }, [P]), A = r.useCallback(() => {
     P.onMouseLeave(), T(false)
-  }, [P]), w = !n.isMultiUserDM() && (null == j ? true : j.displayNameStyles) != null;
+  }, [P]), w = !n.isMultiUserDM() && (null == O ? true : O.displayNameStyles) != null;
   return (0, i.jsxs)(C.ZP, {
     channelId: n.id,
     onMouseEnter: N,
     onMouseLeave: A,
     children: [(() => {
-      let e = !O && I;
+      let e = !j && I;
       return n.isMultiUserDM() ? (0, i.jsx)(m.v, {
         channel: n,
         editable: true,
@@ -67,7 +67,7 @@ function x(e) {
     })(), (0, i.jsx)(C.Ot, {
       children: w ? (0, i.jsx)(h.Z, {
         userName: E,
-        displayNameStyles: null == j ? true : j.displayNameStyles,
+        displayNameStyles: null == O ? true : O.displayNameStyles,
         effectDisplayType: Z ? p.F.ANIMATED : p.F.STATIC,
         loop: true
       }) : E

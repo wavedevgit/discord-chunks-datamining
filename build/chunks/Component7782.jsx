@@ -37,7 +37,7 @@ let T = e => {
     } = e, l = (0, s.e7)([C.Z], () => C.Z.getMutualGuilds(t), [t]), a = r.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
       let {
         guild: n
-      } = e, r = null != n ? O.ZP.getGuildIconURL({
+      } = e, r = null != n ? j.ZP.getGuildIconURL({
         id: n.id,
         icon: n.icon,
         size: 24
@@ -90,7 +90,7 @@ let T = e => {
       relationshipType: n,
       userId: r,
       showingBanner: l
-    } = e, a = null == (t = j.default.getUser(r)) ? true : t.bot, o = () => {
+    } = e, a = null == (t = O.default.getUser(r)) ? true : t.bot, o = () => {
       u.Z.addRelationship({
         userId: r,
         context: {
@@ -192,7 +192,7 @@ let T = e => {
       isOptimisticAccepted: h,
       isOptimisticRejected: f
     } = (0, m.m)({
-      user: j.default.getUser(n),
+      user: O.default.getUser(n),
       onError: l,
       onAcceptSuccess: o,
       onRejectSuccess: a

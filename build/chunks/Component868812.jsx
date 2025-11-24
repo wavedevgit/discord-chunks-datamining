@@ -30,18 +30,18 @@ function f(e) {
     onMouseLeave: _
   } = (0, c.Z)(200, 300), {
     Component: x,
-    play: j,
+    play: O,
     events: {
-      onMouseEnter: O,
+      onMouseEnter: j,
       onMouseLeave: E
     }
   } = (0, l.$)(), S = r.useCallback(e => {
-    "focus" !== e.type && (v(), O())
-  }, [v, O]), P = r.useCallback(() => {
+    "focus" !== e.type && (v(), j())
+  }, [v, j]), P = r.useCallback(() => {
     null == f && (_(), E())
   }, [_, E, f]), I = r.useCallback(() => {
-    (0, s.v)(g, s.d.GIFTING), f === p.D.GIFTING ? (null == m || m(true), _()) : (null != f ? (j(), v()) : j(), null == m || m(p.D.GIFTING))
-  }, [v, _, g, j, m, f]);
+    (0, s.v)(g, s.d.GIFTING), f === p.D.GIFTING ? (null == m || m(true), _()) : (null != f ? (O(), v()) : O(), null == m || m(p.D.GIFTING))
+  }, [v, _, g, O, m, f]);
   return (0, i.jsx)(a.y, {
     targetElementRef: b,
     shouldShow: y && (f === p.D.GIFTING || null == f) || f === p.D.GIFTING,

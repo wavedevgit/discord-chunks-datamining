@@ -118,8 +118,8 @@ function M(e) {
     guildMessaged: U,
     guildPersonalized: B
   } = (0, f.h_)(l), {
-    handleInvite: H,
-    handleMessage: F,
+    handleInvite: F,
+    handleMessage: H,
     handlePersonalize: V,
     handleDownload: G,
     handleAddApplication: z
@@ -253,7 +253,7 @@ function M(e) {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0Ta),
       completed: D,
-      onClick: H
+      onClick: F
     })
   }, "invite")), R && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -275,9 +275,9 @@ function M(e) {
       iconUrl: u.qMX,
       header: Z.intl.string(Z.t["SoP7+l"]),
       completed: U,
-      onClick: F
+      onClick: H
     })
-  }, "message")), (0, O.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
+  }, "message")), (0, j.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
       opacity: K[Q.length]
@@ -302,7 +302,7 @@ function M(e) {
   }, "addapp")));
   let $ = _ ? Z.intl.string(Z.t["1ach9C"]) : Z.intl.string(Z.t["ezm+/j"]);
   p && ($ = Z.intl.string(Z.t["gwyU/J"]));
-  let ee = "".concat(j.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
+  let ee = "".concat(O.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, i.jsx)(S.ZP, {
     channelId: t.id,
     children: (0, i.jsx)("div", {

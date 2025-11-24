@@ -127,13 +127,13 @@ function eB(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let eH = {
+let eF = {
     [Chunk981631.AEg.NORMAL]: Chunk598411.normal,
     [Chunk981631.AEg.MINIMUM]: Chunk598411.minimum,
     [Chunk981631.AEg.NO_CHAT]: Chunk598411.noChat,
     [Chunk981631.AEg.FULL_SCREEN]: Chunk598411.fullScreen
   },
-  eF = {
+  eH = {
     [Chunk981631.IlC.POPOUT]: Chunk598411.popout,
     [Chunk981631.IlC.APP]: null,
     [Chunk981631.IlC.OVERLAY]: null,
@@ -300,7 +300,7 @@ class eV extends Chunk473749.PureComponent {
       resizedHeight: p
     } = this.state, f = Chunk473749 === Chunk981631.WtW.VIDEO, m = module !== Chunk981631.AEg.NO_CHAT && module !== Chunk981631.AEg.FULL_SCREEN && null != Chunk990547, g = Chunk981631.BRd.MIDNIGHT;
     return (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk598411.wrapper, eH[module], eF[Chunk512722], {
+      className: a()(Chunk598411.wrapper, eF[module], eH[Chunk512722], {
         [Chunk598411.poppedOut]: this.popoutOpen && !this.inPopout && module !== Chunk981631.AEg.NO_CHAT && exports.isPrivate(),
         [Chunk598411.video]: Chunk570140,
         [Chunk598411.sidebarOpen]: Chunk120356 || Chunk704215
@@ -504,9 +504,9 @@ class eV extends Chunk473749.PureComponent {
       } = this.props, n = async () => {
         (null == t ? true : t.applicationId) != null && await (0, E.nJ)(t.applicationId, e.id);
         let n = e.getGuildId();
-        null != n && (0, F.uL)((0, em.LY)(n)), B.hP(e)
+        null != n && (0, H.uL)((0, em.LY)(n)), B.hP(e)
       };
-      null == t || (0, j.R)() ? n() : (0, I.Z)({
+      null == t || (0, O.R)() ? n() : (0, I.Z)({
         onConfirm: n
       })
     }), eD(this, "handleStayOnTop", e => {
@@ -650,7 +650,7 @@ class eV extends Chunk473749.PureComponent {
         channel: n,
         inCall: r
       } = this.props;
-      return !e || t || this.popoutOpen && !this.inPopout && r ? null : (0, i.jsx)(ej.ZP, {
+      return !e || t || this.popoutOpen && !this.inPopout && r ? null : (0, i.jsx)(eO.ZP, {
         children: (0, i.jsx)(X.Z, {
           className: ek.chatToasts,
           channelId: n.id
@@ -712,9 +712,9 @@ let eG = function(e) {
     ref: g
   } = (0, _.ZP)(), {
     ref: b
-  } = (0, _.ZP)(), y = (0, U.bp)(), j = (0, L.Z)(), E = (0, u.e7)([ed.Z], () => {
+  } = (0, _.ZP)(), y = (0, U.bp)(), O = (0, L.Z)(), E = (0, u.e7)([ed.Z], () => {
     var e;
-    return (null != (e = null == j ? true : j.channelId) ? e : ed.Z.getVoiceChannelId()) === n.id
+    return (null != (e = null == O ? true : O.channelId) ? e : ed.Z.getVoiceChannelId()) === n.id
   }), {
     participants: I,
     filteredParticipants: T,
@@ -723,7 +723,7 @@ let eG = function(e) {
     layout: k,
     participantsOpen: D,
     participantsListOpen: B,
-    chatOpen: F,
+    chatOpen: H,
     selectedParticipant: V
   } = (0, u.cj)([ev.Z], () => {
     let e = y === eR.IlC.POPOUT,
@@ -748,16 +748,16 @@ let eG = function(e) {
   }), [V]), q = (0, u.e7)([es.Z], () => es.Z.getGuild(n.getGuildId())), K = (0, u.e7)([eu.ZP], () => eu.ZP.getMentionCount(n.id), [n.id]), Y = (0, u.e7)([ea.default], () => ea.default.getId()), {
     popoutWindow: X,
     popoutWindowAlwaysOnTop: J
-  } = (0, u.cj)([H.Z], () => ({
-    popoutWindow: H.Z.getWindow(eR.KJ3.CHANNEL_CALL_POPOUT),
-    popoutWindowAlwaysOnTop: H.Z.getIsAlwaysOnTop(eR.KJ3.CHANNEL_CALL_POPOUT)
+  } = (0, u.cj)([F.Z], () => ({
+    popoutWindow: F.Z.getWindow(eR.KJ3.CHANNEL_CALL_POPOUT),
+    popoutWindowAlwaysOnTop: F.Z.getIsAlwaysOnTop(eR.KJ3.CHANNEL_CALL_POPOUT)
   })), Q = (0, u.e7)([ec.Z], () => ec.Z.can(eR.Plq.CONNECT, n)), $ = (0, u.e7)([eo.Z], () => eo.Z.getToastsEnabled(n.id)), ee = (0, u.e7)([R.default], () => R.default.getAwaitingRemoteSessionInfo()), et = (0, u.e7)([G.ZP], () => G.ZP.callHeaderHeight), en = r.useCallback(e => {
     C.ZP.updatedUnsyncedSettings({
       callHeaderHeight: e
     })
-  }, []), ei = null != (t = null == q ? true : q.id) ? t : null, er = (0, P.Z)(ei, n.id), ep = (0, u.e7)([O.Z], () => O.Z.getFetchState(), []), eh = (0, x.Z)(ep);
+  }, []), ei = null != (t = null == q ? true : q.id) ? t : null, er = (0, P.Z)(ei, n.id), ep = (0, u.e7)([j.Z], () => j.Z.getFetchState(), []), eh = (0, x.Z)(ep);
   r.useEffect(() => {
-    ep === O.O.ERROR && eh !== O.O.ERROR && (0, h.showToast)((0, h.createToast)(eL.intl.string(eL.t["AlJyI+"]), h.ToastType.FAILURE))
+    ep === j.O.ERROR && eh !== j.O.ERROR && (0, h.showToast)((0, h.createToast)(eL.intl.string(eL.t["AlJyI+"]), h.ToastType.FAILURE))
   }, [ep, eh]);
   let ef = (0, u.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivityForChannel(n.id), [n]);
   r.useEffect(() => {
@@ -780,7 +780,7 @@ let eG = function(e) {
       analyticsLocations: eC
     } = (0, N.ZP)(Z.Z.CHANNEL_CALL),
     e_ = c - eM.oo,
-    eO = S.ZP.getEmbeddedActivitiesForChannel(n.id),
+    ej = S.ZP.getEmbeddedActivitiesForChannel(n.id),
     {
       theme: eE
     } = (0, h.TCT)();
@@ -788,7 +788,7 @@ let eG = function(e) {
     value: eC,
     children: (0, i.jsx)(v.Z, {
       page: eR.ZY5.CHANNEL_CALL,
-      children: (0, i.jsx)(ej.B2, {
+      children: (0, i.jsx)(eO.B2, {
         children: (0, i.jsxs)(eT._A, {
           children: [(0, i.jsx)(eV, {
             channel: n,
@@ -808,7 +808,7 @@ let eG = function(e) {
             filteredParticipants: T,
             participantsVersion: A,
             layout: k,
-            chatOpen: F,
+            chatOpen: H,
             maxSidebarWidth: e_,
             shouldUseVoiceEffectsActionBar: em,
             currentUserId: Y,
@@ -830,11 +830,11 @@ let eG = function(e) {
             maxHeight: a,
             forceShowControls: eb,
             awaitingRemoteSessionInfo: ee,
-            currentChannelActivities: eO,
+            currentChannelActivities: ej,
             theme: eE,
             canPopout: o,
             popoutType: s
-          }), !n.isPrivate() && (0, i.jsx)(eT.YR, {}), (0, i.jsx)(ej.H_, {})]
+          }), !n.isPrivate() && (0, i.jsx)(eT.YR, {}), (0, i.jsx)(eO.H_, {})]
         })
       })
     })

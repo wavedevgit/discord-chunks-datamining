@@ -70,9 +70,9 @@ function L(e) {
     draftType: D,
     editorTextContent: U,
     setValue: B,
-    openClips: H
+    openClips: F
   } = e, {
-    analyticsLocations: F,
+    analyticsLocations: H,
     newestAnalyticsLocation: V
   } = (0, d.ZP)(), G = (0, y.Dt)({
     channel: t
@@ -83,11 +83,11 @@ function L(e) {
   }
 
   function q() {
-    j.default.track(Z.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), B("/", (0, P.JM)("/"))
+    O.default.track(Z.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), B("/", (0, P.JM)("/"))
   }
 
   function K() {
-    H()
+    F()
   }
 
   function Y() {
@@ -135,7 +135,7 @@ function L(e) {
   }
 
   function X() {
-    j.default.track(Z.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
+    O.default.track(Z.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
       guild_id: t.guild_id
@@ -160,12 +160,12 @@ function L(e) {
       r = U.match(M);
     null != r && (i = r[1], n = r[2], e = r[3], i += r[4]), (0, S.d)([(0, E.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, D), O.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== i && O.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, D), j.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== i && j.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
       plainText: i
     })
   }
   return r.useEffect(() => {
-    j.default.track(Z.rMx.OPEN_POPOUT, {
+    O.default.track(Z.rMx.OPEN_POPOUT, {
       type: "Send Attachment",
       channel_id: t.id,
       guild_id: t.guild_id
@@ -228,7 +228,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.JOIN,
                 activity: n,
-                location: F[F.length - 1]
+                location: H[H.length - 1]
               })
             }
           }, "play");
@@ -242,7 +242,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.LISTEN,
                 activity: n,
-                location: F[F.length - 1]
+                location: H[H.length - 1]
               })
             }
           }, "listen");
@@ -256,7 +256,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.WATCH,
                 activity: n,
-                location: F[F.length - 1]
+                location: H[H.length - 1]
               })
             }
           }, "watch");

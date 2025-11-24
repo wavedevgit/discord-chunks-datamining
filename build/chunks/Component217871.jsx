@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk989830 = require("./989830.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk23586 = require("./23586.js");
-let j = Chunk473749.memo(function(e) {
+let O = Chunk473749.memo(function(e) {
     let {
       channelId: t,
       width: n
@@ -56,7 +56,7 @@ let j = Chunk473749.memo(function(e) {
       })
     })
   }),
-  O = Chunk473749.memo(function(e) {
+  j = Chunk473749.memo(function(e) {
     let {
       value: t,
       multiplier: n
@@ -152,14 +152,14 @@ let j = Chunk473749.memo(function(e) {
       multiplier: E ? P.multiplier : I.current.multiplier
     }), [E, P, I]);
     return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(j, {
+      children: [(0, i.jsx)(O, {
         channelId: t,
         width: m
       }), (0, i.jsx)(o.animated.div, {
         ref: p,
         className: x.combo,
         style: S,
-        children: (0, i.jsx)(O, {
+        children: (0, i.jsx)(j, {
           value: T,
           multiplier: Z
         })

@@ -129,14 +129,14 @@ let W = Chunk473749.memo(function(e) {
   });
   let e_ = (0, E.NE)(q),
     ex = (0, E.Xu)(q),
-    ej = !S.dN.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver,
-    eO = (0, f.R)({
+    eO = !S.dN.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver,
+    ej = (0, f.R)({
       channel: q,
       chatInputType: Q
     }),
-    eE = (0, j.UI)(null != q ? q : true),
+    eE = (0, O.UI)(null != q ? q : true),
     eS = (0, p.qB)(),
-    eP = (0, O.Us)({
+    eP = (0, j.Us)({
       location: "ChannelAttachButton"
     }),
     eI = (0, h.o)(),
@@ -144,7 +144,7 @@ let W = Chunk473749.memo(function(e) {
     eT = (0, D.Z)({
       canAttachFiles: eb,
       canStartThreads: e_ || ex,
-      useSlate: ej,
+      useSlate: eO,
       hasClips: em,
       canUseApplicationCommands: !J,
       channel: q,
@@ -155,7 +155,7 @@ let W = Chunk473749.memo(function(e) {
       appContext: $,
       canSendScheduledMessages: eP,
       canSummarizeThreads: eI,
-      showAppLauncher: eO
+      showAppLauncher: ej
     });
   if (0 === eT.length) return null;
   let eN = (0, i.jsx)(c.svS, {
@@ -172,12 +172,12 @@ let W = Chunk473749.memo(function(e) {
       positionKey: null != eh ? eh : "null",
       onRequestOpen: () => {
         eC && (0, v.Q3)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
-          dismissAction: H.L.TAKE_ACTION
+          dismissAction: F.L.TAKE_ACTION
         }), ef("attachMenu")
       },
       onRequestClose: () => {
         (0, c.$sL)() || (eC && (0, v.Q3)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-          dismissAction: H.L.TAKE_ACTION
+          dismissAction: F.L.TAKE_ACTION
         }), ef(null))
       },
       renderPopout: e => {
@@ -211,7 +211,7 @@ let W = Chunk473749.memo(function(e) {
         className: a()(V.attachButton, W),
         childClassName: V.attachButtonInner,
         isActive: false,
-        "aria-label": F.intl.string(F.t.d56gCa),
+        "aria-label": H.intl.string(H.t.d56gCa),
         onDoubleClick: eb ? () => {
           var e;
           return null == (e = ee.current) ? true : e.activateUploadDialogue()

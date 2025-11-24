@@ -107,7 +107,7 @@ function R(e) {
   }, "video-warning")), u && !R && U.push((0, i.jsx)(d.yRy, {
     targetElementRef: l,
     position: "bottom",
-    renderPopout: () => (0, i.jsx)(j.Z, {
+    renderPopout: () => (0, i.jsx)(O.Z, {
       children: (0, i.jsx)(Z.Z, {
         channel: t
       })
@@ -158,7 +158,7 @@ function R(e) {
       [w.lastButton]: n
     }),
     onClick: () => p.Z.toggleParticipantsList(t.id, !P)
-  }, "participants-list-button")), A && U.push((0, i.jsx)(O.T, {
+  }, "participants-list-button")), A && U.push((0, i.jsx)(j.T, {
     channelId: t.id,
     className: a()(w.button, {
       [w.lastButton]: P

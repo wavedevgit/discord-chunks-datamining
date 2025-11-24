@@ -42,7 +42,7 @@ function T(e) {
   } = (0, c.cj)([x.Z], () => ({
     isBlocked: x.Z.isBlockedForMessage(n),
     isIgnored: x.Z.isIgnoredForMessage(n)
-  }), [n]), s = (0, b.Uj)(n), d = r.useContext(f.Z), [_, O] = r.useState(false), E = (0, m.p)(), S = r.useCallback(e => {
+  }), [n]), s = (0, b.Uj)(n), d = r.useContext(f.Z), [_, j] = r.useState(false), E = (0, m.p)(), S = r.useCallback(e => {
     "A" !== e.target.nodeName && (p.Z.updateChatOpen(n.channel_id, true), h.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.id,
@@ -69,10 +69,10 @@ function T(e) {
   return (0, i.jsxs)(u.P3F, {
     className: I.toast,
     onMouseEnter: () => {
-      O(true)
+      j(true)
     },
     onMouseLeave: () => {
-      O(false)
+      j(false)
     },
     onClick: S,
     children: [(0, i.jsxs)("div", {
@@ -84,7 +84,7 @@ function T(e) {
       }), null != R ? null : A]
     }), (0, i.jsx)("img", {
       alt: "",
-      src: (null == s ? true : s.guildMemberAvatar) != null && null != d ? (0, j.JM)({
+      src: (null == s ? true : s.guildMemberAvatar) != null && null != d ? (0, O.JM)({
         guildId: d,
         userId: n.author.id,
         avatar: s.guildMemberAvatar

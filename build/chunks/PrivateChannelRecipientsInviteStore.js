@@ -21,13 +21,13 @@ var r, l, Chunk442837 = require("./442837.js"),
 let v = false,
   _ = "",
   x = 0,
-  j = [],
-  O = false,
+  O = [],
+  j = false,
   E = new Set,
   S = null;
 
 function P() {
-  _ = "", x = 0, j = [], E = new Set, v = false, S = null
+  _ = "", x = 0, O = [], E = new Set, v = false, S = null
 }
 
 function I(e) {
@@ -37,7 +37,7 @@ function I(e) {
 function Z() {
   if (!v) returnfalse;
   let e = Chunk592125.Z.getChannel(S);
-  if (0 === _.trim().length) return null != i && i.clearQuery(), j = function(e) {
+  if (0 === _.trim().length) return null != i && i.clearQuery(), O = function(e) {
     let t = b.Z.getFriendIDs(),
       n = y.default.getCurrentUser();
     return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...y.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
@@ -85,8 +85,8 @@ function Z() {
 
 function T() {
   if (!v) returnfalse;
-  let e = O;
-  return (O = Chunk699516.Z.getFriendCount() > 0) !== module
+  let e = j;
+  return (j = Chunk699516.Z.getFriendCount() > 0) !== module
 }
 
 function N(e, t) {
@@ -116,7 +116,7 @@ function A(e) {
       comparator: i
     })
   }
-  j = n, D.emitChange()
+  O = n, D.emitChange()
 }
 
 function w() {
@@ -141,10 +141,10 @@ class k extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk592125.Z, Chunk480294.Z, Chunk353926.Z, Chunk580005.Z, Chunk699516.Z, Chunk752048.Z, Chunk594174.default), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
   }
   getResults() {
-    return j
+    return O
   }
   hasFriends() {
-    return O
+    return j
   }
   getSelectedUsers() {
     return E
@@ -157,8 +157,8 @@ class k extends(r = Chunk442837.ZP.Store) {
       query: _,
       selectedRow: x,
       selectedUsers: E,
-      results: j,
-      hasFriends: O
+      results: O,
+      hasFriends: j
     }
   }
 }(l = "displayName") in k ? Object.defineProperty(k, l, {

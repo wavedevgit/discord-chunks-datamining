@@ -42,7 +42,7 @@ function x(e) {
   return e
 }
 
-function j(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,13 +55,13 @@ function j(e, t) {
   }), e
 }
 
-function O(e) {
+function j(e) {
   var t, l, p;
   let {
     userId: y,
     channel: C
   } = e, v = r.useRef(null), {
-    analyticsLocations: O
+    analyticsLocations: j
   } = (0, d.ZP)(u.Z.USERNAME), E = (0, o.e7)([g.default], () => g.default.getUser(y)), S = (0, o.e7)([m.ZP], () => null != y ? m.ZP.getMember(C.guild_id, y) : null), P = (0, h.X7)(C.guild_id, null != y ? y : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
 
   function I(e) {
@@ -70,7 +70,7 @@ function O(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("70675"), n.e("85994")]).then(n.bind(n, 654663));
-      return t => (0, i.jsx)(e, j(x({}, t), {
+      return t => (0, i.jsx)(e, O(x({}, t), {
         user: E,
         guildId: C.guild_id,
         channel: C
@@ -83,7 +83,7 @@ function O(e) {
     className: a()(_.threadCreatorName, _.unknownCreatorName),
     children: Z
   }) : (0, i.jsx)(d.Gt, {
-    value: O,
+    value: j,
     children: (0, i.jsx)(f.Z, {
       targetElementRef: v,
       user: E,
@@ -91,7 +91,7 @@ function O(e) {
       channelId: C.id,
       roleId: null == S ? true : S.colorRoleId,
       clickTrap: true,
-      children: e => (0, i.jsx)(s.P3F, j(x({}, e), {
+      children: e => (0, i.jsx)(s.P3F, O(x({}, e), {
         innerRef: v,
         tag: "span",
         className: _.threadCreatorName,
@@ -123,7 +123,7 @@ function E(e) {
       children: (0, i.jsx)("div", {
         className: _.subtitle,
         children: v.intl.format(v.t.imPXd5, {
-          usernameHook: (e, n) => (0, i.jsx)(O, {
+          usernameHook: (e, n) => (0, i.jsx)(j, {
             userId: t.ownerId,
             channel: t
           }, n)

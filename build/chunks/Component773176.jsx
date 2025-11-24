@@ -205,15 +205,15 @@ function ep(e) {
       isFocused: s
     } = e, {
       author: d
-    } = n, p = (0, u.e7)([H.Z], () => H.Z.getGuild(t.guild_id), [t.guild_id]), m = (0, u.e7)([D.default], () => D.default.getId()), g = (0, L.$R)(t), b = (0, L.Gu)(t), {
+    } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), m = (0, u.e7)([D.default], () => D.default.getId()), g = (0, L.$R)(t), b = (0, L.Gu)(t), {
       firstMessage: v
-    } = (0, u.e7)([y.Z], () => y.Z.getMessage(t.id), [t.id]), _ = k.nc.useSetting(), x = k.Sb.useSetting(), O = (0, u.e7)([F.Z], () => null == t.guild_id || F.Z.canChatInGuild(t.guild_id), [t]), {
+    } = (0, u.e7)([y.Z], () => y.Z.getMessage(t.id), [t.id]), _ = k.nc.useSetting(), x = k.Sb.useSetting(), j = (0, u.e7)([H.Z], () => null == t.guild_id || H.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: E,
       canAddNewReactions: S
     } = (0, u.cj)([V.Z], () => ({
-      canAddNewReactions: O && V.Z.can(ei.Plq.ADD_REACTIONS, t),
+      canAddNewReactions: j && V.Z.can(ei.Plq.ADD_REACTIONS, t),
       canManageMessages: V.Z.can(ei.Plq.MANAGE_MESSAGES, t)
-    }), [t, O]), P = (0, w.U)(t, n), I = (0, L.NE)(t, n), Z = (0, L.Ek)(n), T = (0, u.e7)([j.Z], () => null != t.guild_id && j.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([B.ZP], () => null != t.guild_id && B.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === m, U = (E || n.canDeleteOwnMessage(m)) && g && !ei.V$x.UNDELETABLE.has(n.type);
+    }), [t, j]), P = (0, w.U)(t, n), I = (0, L.NE)(t, n), Z = (0, L.Ek)(n), T = (0, u.e7)([O.Z], () => null != t.guild_id && O.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([B.ZP], () => null != t.guild_id && B.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === m, U = (E || n.canDeleteOwnMessage(m)) && g && !ei.V$x.UNDELETABLE.has(n.type);
     n.type === ei.uaV.AUTO_MODERATION_ACTION && (U = U && E), t.isModeratorReportChannel() && (U = U && n.id !== (null == v ? true : v.id) && !(0, J.Z)(n));
     let G = (0, K.a4)(n),
       W = (0, X.Z)(n, t),
@@ -222,7 +222,7 @@ function ep(e) {
         disableReactionCreates: $
       } = (0, Q.Z)({
         channel: t,
-        canChat: O,
+        canChat: j,
         renderReactions: _,
         canAddNewReactions: S,
         isLurking: T,
@@ -281,7 +281,7 @@ function ep(e) {
     })
   }, [W, er]), ef = (0, L.$R)(t), eg = n.hasFlag(ei.iLy.CROSSPOSTED), eb = (0, Z.Z)(t), ey = (0, I.Nt)(), eC = eb && ey && !n.hasPotions(), ev = r.useCallback(e => {
     try {
-      (0, O.qc)(t.id, n.id, e)
+      (0, j.qc)(t.id, n.id, e)
     } catch (e) {
       (0, d.showToast)((0, d.createToast)(el.intl.string(el.t.xsfC2S), d.ToastType.FAILURE))
     }

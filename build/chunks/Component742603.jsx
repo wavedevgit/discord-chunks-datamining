@@ -58,7 +58,7 @@ function B(e) {
   })
 }
 
-function H(e) {
+function F(e) {
   let {
     user: t,
     channel: n,
@@ -80,7 +80,7 @@ function H(e) {
   })
 }
 
-function F(e) {
+function H(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: r,
@@ -112,7 +112,7 @@ function F(e) {
     t = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(C.ZP.Divider, {
         className: D.divider
-      }), (0, i.jsx)(H, {
+      }), (0, i.jsx)(F, {
         user: e,
         channel: l,
         stream: n,
@@ -194,7 +194,7 @@ function V(e) {
           className: l()(D.channelStatus, U.markup, {
             [D.hoverable]: R
           }),
-          children: j.Z.parseVoiceChannelStatus(T, true, {
+          children: O.Z.parseVoiceChannelStatus(T, true, {
             channelId: t.id
           })
         }), R && (0, i.jsx)(s.vdY, {
@@ -206,7 +206,7 @@ function V(e) {
         })]
       })
     }) : null,
-    H = (0, E.m$)({
+    F = (0, E.m$)({
       channelId: t.id
     });
   return (0, i.jsxs)("div", {
@@ -233,7 +233,7 @@ function V(e) {
             children: [null != x ? (0, i.jsx)(C.ZP.ChannelIcon, {
               icon: x,
               "aria-label": P
-            }) : null, y, H && (0, i.jsx)(o.u, {
+            }) : null, y, F && (0, i.jsx)(o.u, {
               text: k.intl.string(k.t.QyZ4Td),
               children: (0, i.jsx)(s.tQf, {
                 size: "xs",
@@ -246,13 +246,13 @@ function V(e) {
         }), (0, i.jsx)(_.TS, {
           channel: t,
           guild: r
-        }), (0, i.jsx)(F, {
+        }), (0, i.jsx)(H, {
           focusedApplication: S,
           focusedParticipant: b,
           channel: t
         })]
       })
-    }), (0, i.jsx)(O.Z, {
+    }), (0, i.jsx)(j.Z, {
       channelId: t.id
     })]
   })

@@ -27,18 +27,18 @@ function v(e) {
   } = e, {
     parentAnalyticsLocation: n
   } = (0, o.ZP)(), v = (0, l.e7)([m.Z], () => m.Z.getSelectedParticipant(t.id)), _ = (null == v ? true : v.type) === b.fO.STREAM, x = (0, l.e7)([h.Z], () => _ ? h.Z.getActiveStreamForStreamKey(v.id) : null), {
-    ignoreSenderPreference: j
+    ignoreSenderPreference: O
   } = d.Z.useExperiment({
     location: "ActionBarClipsButton"
   }, {
     autoTrackExposure: false
   }), {
-    viewerClippingAllowed: O,
+    viewerClippingAllowed: j,
     isAtMaxSavingClipOperations: E
   } = (0, l.cj)([s.Z], () => ({
-    viewerClippingAllowed: null != x && (s.Z.isViewerClippingAllowedForUser(x.ownerId) || j),
+    viewerClippingAllowed: null != x && (s.Z.isViewerClippingAllowedForUser(x.ownerId) || O),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), S = (0, c.z8)(), P = (null == x ? true : x.ownerId) === f.default.getId(), I = !S || !(P || O) || E || null == v, Z = r.useCallback(e => {
+  })), S = (0, c.z8)(), P = (null == x ? true : x.ownerId) === f.default.getId(), I = !S || !(P || j) || E || null == v, Z = r.useCallback(e => {
     var t, n;
     return (0, i.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -77,7 +77,7 @@ function v(e) {
     },
     disabled: I,
     iconComponent: Z,
-    label: null == x ? y.intl.string(y.t.eg5qtV) : P || O ? S ? E ? true : y.intl.string(y.t.U4URzP) : y.intl.string(y.t.wSS1yN) : y.intl.string(y.t.aRifJX),
+    label: null == x ? y.intl.string(y.t.eg5qtV) : P || j ? S ? E ? true : y.intl.string(y.t.U4URzP) : y.intl.string(y.t.wSS1yN) : y.intl.string(y.t.aRifJX),
     grow: false
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 819349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => j
+  S: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -42,14 +42,14 @@ function _(e) {
 }
 let x = e => 1 - Math.pow(1 - e, 4);
 
-function j(e) {
+function O(e) {
   let {
     channel: t,
     onClose: n
-  } = e, l = r.useRef(null), [j, O] = r.useState(false), E = r.useRef(null), S = r.useRef(null), [P, I] = r.useState(0), Z = (0, s.e7)([f.Z], () => f.Z.can(b.Plq.CREATE_INSTANT_INVITE, t), [t]), [T, N] = r.useState(null), [A, w] = r.useState(false), M = r.useRef(null), {
+  } = e, l = r.useRef(null), [O, j] = r.useState(false), E = r.useRef(null), S = r.useRef(null), [P, I] = r.useState(0), Z = (0, s.e7)([f.Z], () => f.Z.can(b.Plq.CREATE_INSTANT_INVITE, t), [t]), [T, N] = r.useState(null), [A, w] = r.useState(false), M = r.useRef(null), {
     isHoveringOrFocusing: R
   } = (0, g.Tu)(null == T ? M : l), [L, k] = r.useState(false), D = R || L, U = r.useCallback(() => {
-    O(false), null == n || n()
+    j(false), null == n || n()
   }, [n]), B = (0, u.q_F)({
     from: {
       height: "0px"
@@ -66,22 +66,22 @@ function j(e) {
     onRest: () => {
       A && U()
     }
-  }), H = r.useCallback(() => {
+  }), F = r.useCallback(() => {
     w(true)
-  }, []), F = r.useCallback(() => (null != E.current && clearTimeout(E.current), E.current = setTimeout(H, 1e4), I(e => e + 1), () => {
+  }, []), H = r.useCallback(() => (null != E.current && clearTimeout(E.current), E.current = setTimeout(F, 1e4), I(e => e + 1), () => {
     null != E.current && clearTimeout(E.current)
-  }), [H]), V = r.useCallback(() => (null != S.current && clearTimeout(S.current), S.current = setTimeout(() => {
-    O(false)
+  }), [F]), V = r.useCallback(() => (null != S.current && clearTimeout(S.current), S.current = setTimeout(() => {
+    j(false)
   }, 150), () => {
     null != S.current && clearTimeout(S.current)
   }), []);
-  (0, p.ZP)(F), r.useEffect(() => {
+  (0, p.ZP)(H), r.useEffect(() => {
     if (!D) {
-      F(), V();
+      H(), V();
       return
     }
-    null != E.current && clearTimeout(E.current), null != S.current && clearTimeout(S.current), O(true)
-  }, [D, F, V]), r.useEffect(() => {
+    null != E.current && clearTimeout(E.current), null != S.current && clearTimeout(S.current), j(true)
+  }, [D, H, V]), r.useEffect(() => {
     !async function() {
       var e, n, i;
       let r = null != (e = h.Z.getInvite(t.id, {})) ? e : null;
@@ -98,14 +98,14 @@ function j(e) {
     }()
   }, [Z, t.id]);
   let G = r.useCallback(() => {
-      O(true)
+      j(true)
     }, []),
     z = r.useCallback(() => {
-      O(false), k(false)
+      j(false), k(false)
     }, []);
   return null == T ? null : (0, i.jsx)(u.yRy, {
     targetElementRef: l,
-    shouldShow: j,
+    shouldShow: O,
     position: "right",
     align: "top",
     spacing: 8,
@@ -168,7 +168,7 @@ function j(e) {
               })
             }), R ? (0, i.jsx)(u.P3F, {
               className: C.close,
-              onClick: H,
+              onClick: F,
               "aria-label": y.intl.string(y.t.cpT0Cq),
               children: (0, i.jsx)(u.Dio, {
                 size: "xs",

@@ -43,7 +43,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk963392 = require("./963392.js"),
   Chunk197571 = require("./197571.js");
 
-function F(e) {
+function H(e) {
   let {
     canManageRoles: t,
     channel: n
@@ -73,7 +73,7 @@ function V(e) {
     showingBanner: h
   } = e, C = (0, d.ZP)(p), {
     type: _
-  } = p, P = (0, l.e7)([j.default], () => p.isPrivate() ? j.default.getUser(p.getRecipientId()) : null), A = O.ZP.useUserTag(P), {
+  } = p, P = (0, l.e7)([O.default], () => p.isPrivate() ? O.default.getUser(p.getRecipientId()) : null), A = j.ZP.useUserTag(P), {
     canManageRoles: M,
     canReadMessageHistory: R
   } = (0, l.cj)([x.Z], () => ({
@@ -130,7 +130,7 @@ function V(e) {
       user: P,
       children: [null != P && !P.isProvisional && (0, i.jsx)(a.Heading, {
         variant: "heading-xl/medium",
-        className: H.marginBottom20,
+        className: F.marginBottom20,
         children: A
       }), U.intl.format(U.t["Qvg+6+"], {
         username: C
@@ -159,7 +159,7 @@ function V(e) {
       name: C
     })
   });
-  return R ? (0, i.jsx)(F, {
+  return R ? (0, i.jsx)(H, {
     channel: p,
     canManageRoles: M
   }) : (0, i.jsx)(S.ZP, {

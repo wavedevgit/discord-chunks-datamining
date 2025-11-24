@@ -153,7 +153,7 @@ function en(e) {
       [X.systemMessage]: true,
       [X.groupStart]: true
     }),
-    childrenHeader: (0, F.Z)({
+    childrenHeader: (0, H.Z)({
       messageProps: e,
       setPopout: m,
       messagePopouts: f,
@@ -184,13 +184,13 @@ function ei(e) {
     compact: b = false,
     className: y,
     groupId: C,
-    viewingChannelId: j
+    viewingChannelId: O
   } = e, E = o.type === K.uaV.REPLY ? o.messageReference : true, S = (0, c.JA)(null != (t = e.id) ? t : ""), {
     onFocus: I
   } = S, N = ee(S, ["onFocus"]), {
     isFocused: D,
     handleFocus: B,
-    handleBlur: H
+    handleBlur: F
   } = (0, M.bb)(I), {
     popouts: G,
     selected: J,
@@ -204,7 +204,7 @@ function ei(e) {
     message: o,
     defaultValue: J,
     popouts: G
-  }), ec = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), eu = J || ec && D, ed = eu || es, ep = (0, u.e7)([O.Z], () => O.Z.isDeveloper), {
+  }), ec = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), eu = J || ec && D, ed = eu || es, ep = (0, u.e7)([j.Z], () => j.Z.isDeveloper), {
     content: eh,
     hasSpoilerEmbeds: ef
   } = (0, k.Z)(o, {
@@ -216,7 +216,7 @@ function ei(e) {
     allowLinks: true,
     allowDevLinks: ep,
     previewLinkTarget: true,
-    viewingChannelId: j
+    viewingChannelId: O
   }), em = (0, R.Z)(s, h, ec), eg = (0, T.ZP)(o), eb = (0, w.iG)(o, C), ey = (0, w.Gx)(o), eC = (0, V.Z)(e, eh, false), ev = r.useCallback(() => (0, _.XU)(g, h, s), [g, h, s]), e_ = (0, f.p9)({
     guildId: g,
     roleId: eg.iconRoleId
@@ -243,7 +243,7 @@ function ei(e) {
       zalgo: true,
       onKeyDown: em,
       onFocus: B,
-      onBlur: H,
+      onBlur: F,
       childrenRepliedMessage: o.type === K.uaV.REPLY && (0, z.Z)($(Q({}, e), {
         setPopout: et,
         referencedUsernameProfile: G.referencedUsernameProfile,
@@ -252,7 +252,7 @@ function ei(e) {
         replyMessage: er,
         isReplySpineClickable: true
       })),
-      childrenHeader: (0, F.Z)({
+      childrenHeader: (0, H.Z)({
         messageProps: e,
         setPopout: et,
         messagePopouts: G,
@@ -321,7 +321,7 @@ let er = Chunk473749.memo(function(e) {
       handleMouseEnter: ev,
       handleMouseLeave: e_,
       hasHovered: ex,
-      isHovered: ej
+      isHovered: eO
     } = (0, M.tn)({
       groupId: el,
       message: _,
@@ -329,7 +329,7 @@ let er = Chunk473749.memo(function(e) {
       popouts: em
     }),
     {
-      isFocused: eO,
+      isFocused: ej,
       hasFocused: eE,
       handleFocus: eS,
       handleBlur: eP
@@ -342,12 +342,12 @@ let er = Chunk473749.memo(function(e) {
     }, [eP, e_]),
     eT = (0, u.e7)([E.Z], () => E.Z.isEditing(et, I), [et, I]),
     eN = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled),
-    eA = eg || eT || eN && eO,
-    ew = eA || ej,
-    eM = (0, u.e7)([j.Z], () => _.hasFlag(K.iLy.HAS_THREAD) && j.Z.getChannel(S.default.castMessageIdAsChannelId(_.id))),
+    eA = eg || eT || eN && ej,
+    ew = eA || eO,
+    eM = (0, u.e7)([O.Z], () => _.hasFlag(K.iLy.HAS_THREAD) && O.Z.getChannel(S.default.castMessageIdAsChannelId(_.id))),
     eR = _.isFirstMessageInForumPost(J),
     eL = (0, m.A)((null != (n = _.editedTimestamp) ? n : _.timestamp).valueOf()),
-    ek = (0, u.e7)([O.Z], () => O.Z.isDeveloper),
+    ek = (0, u.e7)([j.Z], () => j.Z.isDeveloper),
     {
       content: eD,
       hasSpoilerEmbeds: eU
@@ -362,8 +362,8 @@ let er = Chunk473749.memo(function(e) {
       previewLinkTarget: true
     }),
     eB = (0, R.Z)(I, et, eN),
-    eH = (0, T.ZP)(_),
-    eF = (0, u.e7)([C.Z], () => C.Z.getPendingReply(et)),
+    eF = (0, T.ZP)(_),
+    eH = (0, u.e7)([C.Z], () => C.Z.getPendingReply(et)),
     eV = function(e) {
       let t = r.useRef(e);
       return r.useEffect(() => {
@@ -372,7 +372,7 @@ let er = Chunk473749.memo(function(e) {
     }(er),
     eG = (0, f.p9)({
       guildId: J.guild_id,
-      roleId: eH.iconRoleId
+      roleId: eF.iconRoleId
     }),
     ez = (0, w.iG)(_, el),
     eW = (0, w.Gx)(_),
@@ -398,7 +398,7 @@ let er = Chunk473749.memo(function(e) {
         children: [(0, y.Uw)(_) && (0, i.jsx)(g.Z, {
           compact: en,
           message: _,
-          hovering: ej && !eT && !eJ
+          hovering: eO && !eT && !eJ
         }), (0, i.jsx)(A.Z, $(Q({}, eu), {
           "aria-setsize": false,
           "aria-roledescription": Y.intl.string(Y.t.BAB0yK),
@@ -420,7 +420,7 @@ let er = Chunk473749.memo(function(e) {
             [X.systemMessage]: (0, Z.Z)(_),
             [X.groupStart]: !ea && (eQ || _.type === K.uaV.REPLY),
             [X.selected]: eA,
-            [X.replying]: (null == eF ? true : eF.message.id) === _.id,
+            [X.replying]: (null == eH ? true : eH.message.id) === _.id,
             [X.interactionSending]: _.isCommandType() && _.state === K.yb.SENDING,
             [X.automodMessage]: eX,
             [X.editing]: eT,
@@ -437,12 +437,12 @@ let er = Chunk473749.memo(function(e) {
             isReplySpineClickable: true
           })),
           childrenExecutedCommand: (0, G.Z)(e, eb, em),
-          childrenHeader: ea ? true : (0, F.Z)({
+          childrenHeader: ea ? true : (0, H.Z)({
             messageProps: e,
             setPopout: eb,
             messagePopouts: em,
             replyReference: eo,
-            author: eH,
+            author: eF,
             repliedMessage: ef,
             roleIcon: eG
           }),
@@ -454,11 +454,11 @@ let er = Chunk473749.memo(function(e) {
             isAutomodBlockedMessage: eX,
             forceAddReactions: _.type === K.uaV.EMOJI_ADDED
           }),
-          childrenButtons: ex || eE ? (0, H.Z)({
+          childrenButtons: ex || eE ? (0, F.Z)({
             buttonProps: e,
             setPopout: eb,
             messagePopouts: em,
-            isFocused: ej || eO,
+            isFocused: eO || ej,
             messageWindow: eY.current
           }) : true,
           childrenSystemMessage: (0, W.Z)(e),
@@ -472,7 +472,7 @@ let er = Chunk473749.memo(function(e) {
             var t, n;
             eK.current = e, eY.current = null != (n = null == e || null == (t = e.ownerDocument) ? true : t.defaultView) ? n : window
           },
-          author: eH
+          author: eF
         }))]
       })
     });

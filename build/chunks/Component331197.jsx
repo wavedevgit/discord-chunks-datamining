@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 331197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,10 +25,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk127379 = require("./127379.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(e) {
+function j(e) {
   let {
     channel: t,
-    themeable: O,
+    themeable: j,
     whichPopoutIsOpen: E,
     setWhichPopoutIsOpen: S
   } = e, {
@@ -48,8 +48,8 @@ function O(e) {
   }), [D, U] = (0, h.cv)(k), {
     analyticsLocations: B
   } = (0, u.ZP)(), {
-    isHovered: H,
-    setIsHovered: F,
+    isHovered: F,
+    setIsHovered: H,
     onMouseEnter: V,
     onMouseLeave: G
   } = (0, f.Z)(200, 300);
@@ -103,14 +103,14 @@ function O(e) {
   let q = r.useRef(null);
   return (0, i.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: H && (E === x.D.SOUNDBOARD || null == E) || E === x.D.SOUNDBOARD,
+    shouldShow: F && (E === x.D.SOUNDBOARD || null == E) || E === x.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      F(false), null == S || S(true)
+      H(false), null == S || S(true)
     },
     renderPopout: e => {
       let {
@@ -136,8 +136,8 @@ function O(e) {
     children: () => (0, i.jsx)(_.d, {
       ref: q,
       isTrayButton: true,
-      themeable: O,
-      label: w ? j.intl.string(j.t["Ox4/zU"]) : M ? j.intl.string(j.t["+YBKYI"]) : R ? j.intl.string(j.t.X1lQli) : true,
+      themeable: j,
+      label: w ? O.intl.string(O.t["Ox4/zU"]) : M ? O.intl.string(O.t["+YBKYI"]) : R ? O.intl.string(O.t.X1lQli) : true,
       iconComponent: I,
       disabled: L,
       onContextMenu: z,
@@ -148,8 +148,8 @@ function O(e) {
       onMouseLeave: () => {
         null == E && (G(), N())
       },
-      isActive: H || E === x.D.SOUNDBOARD,
-      color: H || E === x.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: F || E === x.D.SOUNDBOARD,
+      color: F || E === x.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

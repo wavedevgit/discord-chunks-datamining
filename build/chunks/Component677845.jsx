@@ -38,7 +38,7 @@ function S(e) {
     inCall: T,
     totalNumberOfParticipants: N,
     popoutType: A
-  } = e, w = (0, m.bp)() === O.IlC.POPOUT, M = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
+  } = e, w = (0, m.bp)() === j.IlC.POPOUT, M = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
   } = (0, x.d)(), L = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), k = (0, b.bt)(I.id, t), D = r.useCallback(() => {
     (0, a.j)(() => {
@@ -56,8 +56,8 @@ function S(e) {
   }, [I.id, R]);
   let U = (0, o.e7)([C.Z], () => I.isPrivate() || (0, f.b)(C.Z, M, I), [M, I]),
     B = (null == M ? true : M.afkChannelId) === I.id,
-    H = I.userLimit <= 0 || I.userLimit > 1,
-    F = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
+    F = I.userLimit <= 0 || I.userLimit > 1,
+    H = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
     V = (0, h.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     G = (0, u.KF)(I.id) !== u.jy.CAN_LAUNCH,
     z = null != R && R === I.id,
@@ -83,14 +83,14 @@ function S(e) {
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != M && !B && (!(L >= 2) || !F || G || V || z ? H && 1 === L && U && (F && !G ? W.push(e => (0, i.jsx)(v.h, {
+  }, []), null != M && !B && (!(L >= 2) || !H || G || V || z ? F && 1 === L && U && (H && !G ? W.push(e => (0, i.jsx)(v.h, {
     channel: I,
     guild: M,
     width: e,
     inPopout: w,
     handleClose: D,
     userParticipantCount: L
-  })) : W.push(e => (0, i.jsx)(j.Z, {
+  })) : W.push(e => (0, i.jsx)(O.Z, {
     width: e,
     channel: I,
     guild: M,

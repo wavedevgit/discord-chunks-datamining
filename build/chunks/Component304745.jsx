@@ -43,21 +43,21 @@ function P(e) {
     surface: c.eR.VOICE_LAUNCHER
   }), D = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), U = !A, B = r.useCallback(e => {
     "focus" !== e.type && R()
-  }, [R]), H = (0, v.bp)() === O.IlC.POPOUT, {
-    parentAnalyticsLocation: F,
+  }, [R]), F = (0, v.bp)() === j.IlC.POPOUT, {
+    parentAnalyticsLocation: H,
     newestAnalyticsLocation: V
   } = (0, g.ZP)(), G = r.useCallback(() => {
-    (0, y.v)(F, y.d.ACTIVITY), (0, b.Z)({
+    (0, y.v)(H, y.d.ACTIVITY), (0, b.Z)({
       context: null != t ? {
         type: "channel",
         channel: t
       } : {
         type: "contextless"
       },
-      openInPopout: H,
+      openInPopout: F,
       analyticsLocation: V
     })
-  }, [t, H, V, F]), z = [];
+  }, [t, F, V, H]), z = [];
   A || z.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !A && z.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), A || z.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let W = r.useRef(false),
     q = r.useRef(null);
@@ -71,7 +71,7 @@ function P(e) {
       return W.current && !c && l(E.L.AUTO_DISMISS), W.current !== c && (W.current = c), (0, i.jsx)(s.yRy, {
         targetElementRef: q,
         fixed: true,
-        shouldShow: w && (P === j.D.ACTIVITY || null == P),
+        shouldShow: w && (P === O.D.ACTIVITY || null == P),
         animation: s.yRy.Animation.FADE,
         animationPosition: "top",
         position: "top",

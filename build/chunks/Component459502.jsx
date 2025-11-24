@@ -24,9 +24,9 @@ function b(e) {
     showDismiss: b = true
   } = e, y = (0, l.e7)([c.Z], () => c.Z.getChannel(t), [t]), C = (0, p.sz)(t), v = null != (0, p.qY)(t), {
     canManageGuildEvent: _
-  } = (0, s.XJ)(y), [x, j] = r.useState(() => new Set), O = r.useMemo(() => C.filter(e => !x.has(e.id)), [C, x]), E = (0, l.cj)([d.ZP], () => O.reduce((e, t) => (e[t.id] = d.ZP.getUserCount(t.id, (0, h.DK)(t)), e), {}), [O]);
-  return O.length < 1 || v ? null : (0, i.jsx)(i.Fragment, {
-    children: O.map(e => (0, i.jsx)(f.Z, {
+  } = (0, s.XJ)(y), [x, O] = r.useState(() => new Set), j = r.useMemo(() => C.filter(e => !x.has(e.id)), [C, x]), E = (0, l.cj)([d.ZP], () => j.reduce((e, t) => (e[t.id] = d.ZP.getUserCount(t.id, (0, h.DK)(t)), e), {}), [j]);
+  return j.length < 1 || v ? null : (0, i.jsx)(i.Fragment, {
+    children: j.map(e => (0, i.jsx)(f.Z, {
       icon: (0, i.jsx)(o.Que, {
         size: "custom",
         color: "currentColor",
@@ -83,7 +83,7 @@ function b(e) {
       },
       onDismiss: b ? () => {
         var t;
-        return t = e.id, void j(e => new Set(e).add(t))
+        return t = e.id, void O(e => new Set(e).add(t))
       } : true,
       userCount: E[e.id],
       className: g.eventPrompt

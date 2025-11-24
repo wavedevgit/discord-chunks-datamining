@@ -72,7 +72,7 @@ function k(e) {
       return null == e ? null : e.type === u.C.APPLICATION_BANNER ? e : null
     }, [null == h ? true : h.application_directory_collection_items]),
     {
-      trackItemImpressionRef: j
+      trackItemImpressionRef: O
     } = (0, b.Z)({
       applicationId: null != (t = null == C ? true : C.application.id) ? t : "",
       applicationFlags: null == C ? true : C.application.flags,
@@ -87,7 +87,7 @@ function k(e) {
     containerWidth: 584
   })), (0, i.jsxs)(p.P3F, {
     className: M.clickableBanner,
-    innerRef: j,
+    innerRef: O,
     onClick: () => {
       o(), (0, y.Z)({
         context: {
@@ -132,7 +132,7 @@ let D = Chunk473749.forwardRef(function(e, t) {
   }, [_, x]), r.useEffect(() => {
     o || s()
   }, [s, o]);
-  let E = (0, j.bp)(),
+  let E = (0, O.bp)(),
     {
       analyticsLocations: R,
       newestAnalyticsLocation: D
@@ -146,12 +146,12 @@ let D = Chunk473749.forwardRef(function(e, t) {
     return () => clearTimeout(e)
   }, []);
   let {
-    enabled: H
+    enabled: F
   } = P.c.useExperiment({
     location: "ActivitiesMiniShelf"
   }, {
     autoTrackExposure: true
-  }), F = r.useCallback(() => {
+  }), H = r.useCallback(() => {
     (0, y.Z)({
       context: null != l ? {
         type: "channel",
@@ -167,10 +167,10 @@ let D = Chunk473749.forwardRef(function(e, t) {
       channel_id: l.id,
       guild_id: l.getGuildId()
     })
-  }, [c, l]), G = H ? p.iWm : p.nG3;
+  }, [c, l]), G = F ? p.iWm : p.nG3;
   return (0, i.jsx)(m.Gt, {
     value: R,
-    children: (0, i.jsx)(O.Z, {
+    children: (0, i.jsx)(j.Z, {
       children: (0, i.jsxs)(p.VqE, {
         ref: t,
         "aria-labelledby": L,
@@ -201,7 +201,7 @@ let D = Chunk473749.forwardRef(function(e, t) {
               })]
             }), (0, i.jsxs)(p.P3F, {
               className: M.titleRight,
-              onClick: F,
+              onClick: H,
               children: [(0, i.jsx)(p.Text, {
                 variant: "eyebrow",
                 children: w.intl.string(w.t["K8+z4S"])

@@ -80,8 +80,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk32312 = require("./32312.js");
 
-function ej() {
-  return (ej = Object.assign || function(e) {
+function eO() {
+  return (eO = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (e[i] = n[i])
@@ -90,7 +90,7 @@ function ej() {
   }).apply(this, arguments)
 }
 
-function eO(e) {
+function ej(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -142,7 +142,7 @@ function eP(e) {
   } = (0, _.ZP)(), f = (0, D.bp)(), m = (0, u.Wu)([en.Z], () => en.Z.getAllActiveStreams()), g = m.find(e => e.ownerId === n.id), b = r.useRef(null), y = r.useRef(null), C = t.getGuildId(), v = r.useCallback(() => {
     if (null == l || l(), !a) return (0, eg.Z)();
     (0, eb.Z)(C, t.id, h)
-  }, [C, t.id, a, l, h]), x = (0, B.B4)(), [j, O] = r.useState(false), E = () => {
+  }, [C, t.id, a, l, h]), x = (0, B.B4)(), [O, j] = r.useState(false), E = () => {
     if ((0, P.v)(c, P.d.STREAM, true), a) return void v();
     (0, eg.Z)()
   }, S = () => {
@@ -158,11 +158,11 @@ function eP(e) {
             visibleContent: t,
             markAsDismissed: n
           } = e;
-          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return O(true), (0, i.jsx)(H.h, {
+          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return j(true), (0, i.jsx)(F.h, {
             buttonRef: b,
             dismissed: false,
             onDismiss: () => {
-              n(e_.L.USER_DISMISS), O(false)
+              n(e_.L.USER_DISMISS), j(false)
             }
           })
         }
@@ -191,7 +191,7 @@ function eP(e) {
         spacing: 16,
         animation: p.yRy.Animation.FADE,
         children: (e, t) => {
-          var n = ej({}, function(e) {
+          var n = eO({}, function(e) {
               if (null == e) throw TypeError("Cannot destructure " + e);
               return e
             }(e)),
@@ -223,7 +223,7 @@ function eP(e) {
                   return r
                 }(n, ["onClick"]),
                 a = null != g;
-              return (0, i.jsx)(Q.O, eE(eO({}, l), {
+              return (0, i.jsx)(Q.O, eE(ej({}, l), {
                 centerButton: true,
                 disabled: s || !o,
                 className: ex.controlButton,
@@ -235,7 +235,7 @@ function eP(e) {
                 } : null,
                 popoutOpen: t,
                 shouldShowTooltip: !t,
-                renderNUXHighlight: j,
+                renderNUXHighlight: O,
                 buttonRef: b,
                 onClick: null != g ? S : E
               }))
@@ -279,7 +279,7 @@ let eZ = Chunk473749.memo(function(e) {
       ownerId: n
     } = e;
     return n !== (null == t ? true : t.id)
-  })), j = (0, R.qY)(l.id), O = r.useRef(null), E = r.useCallback(() => (null == s ? true : s.type) === ev.fO.ACTIVITY && s.applicationId === (null == a ? true : a.applicationId) ? "ACTIVITY" : C ? "STREAM" : null != j ? "EVENT" : "CALL", [s, null == a ? true : a.applicationId, C, j]), [S, I] = r.useState(E()), Z = (0, p.q_F)({
+  })), O = (0, R.qY)(l.id), j = r.useRef(null), E = r.useCallback(() => (null == s ? true : s.type) === ev.fO.ACTIVITY && s.applicationId === (null == a ? true : a.applicationId) ? "ACTIVITY" : C ? "STREAM" : null != O ? "EVENT" : "CALL", [s, null == a ? true : a.applicationId, C, O]), [S, I] = r.useState(E()), Z = (0, p.q_F)({
     opacity: h ? .2 : 1,
     transform: h && !d.enabled ? "scale(0.7)" : "scale(1)",
     config: {
@@ -302,7 +302,7 @@ let eZ = Chunk473749.memo(function(e) {
       for (let e of v)(0, g.g)((0, A.V9)(e))
   }, [v, y]);
   return (0, i.jsx)(p.yRy, {
-    targetElementRef: O,
+    targetElementRef: j,
     renderPopout: e => {
       let {
         closePopout: n
@@ -328,7 +328,7 @@ let eZ = Chunk473749.memo(function(e) {
       } = r;
       return (0, i.jsx)(c.animated.div, {
         style: Z,
-        ref: O,
+        ref: j,
         children: ((e, r) => {
           let c = {
             isTrayButton: false,
@@ -338,14 +338,14 @@ let eZ = Chunk473749.memo(function(e) {
           switch (S) {
             case "ACTIVITY":
               if (null == s || null == t || s.type !== ev.fO.ACTIVITY || null == a) return;
-              return (0, i.jsx)(K.Z, eE(eO({}, c), {
+              return (0, i.jsx)(K.Z, eE(ej({}, c), {
                 applicationId: s.applicationId,
                 color: "disconnect",
                 location: a.location,
                 onPopoutClick: v.length > 0 ? r : null
               }));
             case "STREAM":
-              return (0, i.jsx)(Q.O, eE(eO({}, c), {
+              return (0, i.jsx)(Q.O, eE(ej({}, c), {
                 hasPermission: true,
                 streamActive: true,
                 color: "disconnect",
@@ -356,7 +356,7 @@ let eZ = Chunk473749.memo(function(e) {
                 isSelfStream: false
               }));
             case "CALL":
-              return (0, i.jsx)(Y.Z, eE(eO({}, c), {
+              return (0, i.jsx)(Y.Z, eE(ej({}, c), {
                 color: "disconnect",
                 onClick: () => {
                   (0, P.v)(o, P.d.DISCONNECT), null == n || n()
@@ -452,10 +452,10 @@ let eA = function(e) {
     canGoLive: R
   } = (0, u.cj)([er.Z], () => ({
     canGoLive: (0, w.Z)(er.Z)
-  })), L = (0, N.Z)(), D = (0, u.e7)([T.default], () => null != T.default.getAwaitingRemoteSessionInfo()), B = null != L, H = (0, u.e7)([el.Z], () => {
+  })), L = (0, N.Z)(), D = (0, u.e7)([T.default], () => null != T.default.getAwaitingRemoteSessionInfo()), B = null != L, F = (0, u.e7)([el.Z], () => {
     var e;
     return (null != (e = null == L ? true : L.channelId) ? e : el.Z.getVoiceChannelId()) === n.id
-  }), G = (0, F.Z)({
+  }), G = (0, H.Z)({
     channel: n,
     location: "center-control-tray"
   }), W = (0, u.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()), {
@@ -471,7 +471,7 @@ let eA = function(e) {
   } = (0, U.e)({
     location: v.Z.VOICE_CONTROL_TRAY
   }), ei = (0, V.Z)(n), ed = r.useRef(null), ef = r.useRef(null), eg = Q ? e => {
-    (0, f.jW)(e, () => Promise.resolve(() => (0, i.jsx)(j.default, {
+    (0, f.jW)(e, () => Promise.resolve(() => (0, i.jsx)(O.default, {
       onClose: f.Zy,
       renderInputDevices: true,
       renderOutputDevices: true,
@@ -483,7 +483,7 @@ let eA = function(e) {
       onInteraction: eN("AudioDeviceMenu")
     })))
   } : true;
-  return H ? (0, i.jsx)(_.Gt, {
+  return F ? (0, i.jsx)(_.Gt, {
     value: Y,
     children: (0, i.jsxs)(b.Z, {
       section: eC.jXE.VOICE_CONTROL_TRAY,
@@ -507,7 +507,7 @@ let eA = function(e) {
                 wide: true,
                 showOutputDevices: true,
                 onSettingsButtonClick: n
-              }) : en ? (0, i.jsx)(O.Z, {
+              }) : en ? (0, i.jsx)(j.Z, {
                 onInteraction: eN("AudioDeviceMenu"),
                 onClose: n,
                 maybeRenderPTTCheckbox: true,
@@ -519,7 +519,7 @@ let eA = function(e) {
                 renderOutputDevices: true,
                 renderOutputVolume: true,
                 renderSettingsButton: true
-              }) : (0, i.jsx)(j.default, {
+              }) : (0, i.jsx)(O.default, {
                 onClose: n,
                 renderInputDevices: true,
                 renderOutputDevices: true,

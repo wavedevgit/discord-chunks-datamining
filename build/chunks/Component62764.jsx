@@ -43,11 +43,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk127947 = require("./127947.js"),
   Chunk577650 = require("./577650.js");
 
-function F(e) {
+function H(e) {
   let {
     channel: t
-  } = e, l = t.isArchivedThread(), a = (0, O.P0)(t), [o, c] = r.useState(false), d = () => {
-    c(true), j.Z.resolveFlag(t.id).then(() => {
+  } = e, l = t.isArchivedThread(), a = (0, j.P0)(t), [o, c] = r.useState(false), d = () => {
+    c(true), O.Z.resolveFlag(t.id).then(() => {
       c(false)
     })
   };
@@ -86,8 +86,8 @@ function V(e) {
     isLastItem: l = false,
     parentChannelId: s
   } = e, {
-    ref: j,
-    width: O
+    ref: O,
+    width: j
   } = (0, h.ZP)(), [S, D] = r.useState(3), [V, G] = r.useState(!n), [z, W] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: K
   } = (0, M.cl)(q), Y = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
@@ -105,7 +105,7 @@ function V(e) {
     }
   }, [n]);
   r.useLayoutEffect(() => {
-    let e = j.current;
+    let e = O.current;
     if (null == e || !n) return;
     let t = new IntersectionObserver(el, {
       threshold: 1
@@ -116,8 +116,8 @@ function V(e) {
   });
   let [ea, eo] = r.useState(true);
   if (r.useEffect(() => {
-      null != O && (D(Math.floor((O - 280) / 58)), eo(false))
-    }, [O]), null == q || null == K) return null;
+      null != j && (D(Math.floor((j - 280) / 58)), eo(false))
+    }, [j]), null == q || null == K) return null;
   let es = K.reactions.length > 0,
     ec = () => {
       (0, R.B)({
@@ -133,7 +133,7 @@ function V(e) {
       className: a()(U.container, {
         [U.header]: V
       }),
-      ref: j,
+      ref: O,
       children: [et ? (0, i.jsx)("div", {
         className: U.reportedMessageActions,
         children: (0, i.jsx)(P.Z, {
@@ -179,7 +179,7 @@ function V(e) {
           message: K,
           channel: q,
           useChatFontScaling: false,
-          className: a()(H.secondary, U.addReactButton, {
+          className: a()(F.secondary, U.addReactButton, {
             [U.hasNoReactions]: !es
           }),
           isForumToolbar: true,
@@ -187,7 +187,7 @@ function V(e) {
         })]
       }), (0, i.jsxs)("div", {
         className: U.buttons,
-        children: [et ? (0, i.jsx)(F, {
+        children: [et ? (0, i.jsx)(H, {
           channel: q
         }) : (0, i.jsx)(c.u, {
           text: k.intl.string(k.t.F7oeDv),

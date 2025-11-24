@@ -28,8 +28,8 @@ let v = (0, Chunk112724.Z)(e => {
     participantsVersion: v,
     layout: _,
     onSelectParticipant: x,
-    onContextMenuParticipant: j,
-    onFullscreenParticipant: O,
+    onContextMenuParticipant: O,
+    onFullscreenParticipant: j,
     channel: E,
     hasConnectPermission: S,
     className: P,
@@ -61,7 +61,7 @@ let v = (0, Chunk112724.Z)(e => {
     width: T,
     className: C.voiceCallWrapper,
     participants: t,
-    onContextMenu: j
+    onContextMenu: O
   });
   if (n = I ? n : t, null == a) {
     if (0 === n.length) {
@@ -81,16 +81,16 @@ let v = (0, Chunk112724.Z)(e => {
         participants: k,
         totalNumberOfParticipants: t.length,
         onClick: x,
-        onDoubleClick: O,
-        onContextMenu: j,
+        onDoubleClick: j,
+        onContextMenu: O,
         inCall: I,
         popoutType: M
       })
     })
   }
   return (0, i.jsx)(m.Z, {
-    onFullscreenParticipant: O,
-    onContextMenuParticipant: j,
+    onFullscreenParticipant: j,
+    onContextMenuParticipant: O,
     onSelectParticipant: x,
     selectedParticipant: a,
     filteredParticipants: k,

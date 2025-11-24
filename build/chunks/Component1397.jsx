@@ -120,8 +120,8 @@ class W extends Chunk473749.PureComponent {
       showLinkedLobbyApplicationLoadingIndicator: _,
       requiredLinkedLobbyApplication: x
     } = this.props, {
-      shouldShowLurkerModeUpsellPopout: j,
-      shouldShowLurkerModeSuccessPopout: O
+      shouldShowLurkerModeUpsellPopout: O,
+      shouldShowLurkerModeSuccessPopout: j
     } = this.state, E = {
       theme: Chunk528963,
       useReducedMotion: Chunk305325
@@ -171,12 +171,12 @@ class W extends Chunk473749.PureComponent {
           children: [this.renderMemberVerificationSuccessModal(), m ? (0, i.jsx)(c.yRy, {
             targetElementRef: this.upsellTargetRef,
             renderPopout: this.renderLurkerModeUpsellPopout,
-            shouldShow: j,
+            shouldShow: O,
             position: "top",
             children: e => (0, i.jsx)(c.P3F, z(G({
               innerRef: this.upsellTargetRef
             }, e), {
-              className: F.clickableChannelTextArea,
+              className: H.clickableChannelTextArea,
               onClick: this.handleTextAreaClick,
               children: p
             }))
@@ -196,7 +196,7 @@ class W extends Chunk473749.PureComponent {
       } = e, {
         guild: n
       } = this.props;
-      return a()(null != n, "This guildID cannot be null"), (0, i.jsx)(O.Z, {
+      return a()(null != n, "This guildID cannot be null"), (0, i.jsx)(j.Z, {
         onClose: t,
         guild: n
       })
@@ -205,15 +205,15 @@ class W extends Chunk473749.PureComponent {
         guild: e
       } = this.props;
       null != e && (0, c.h7j)(t => (0, i.jsx)(c.ConfirmModal, z(G({
-        header: H.intl.string(H.t.aIz1oV),
-        confirmText: H.intl.string(H.t["cY+Oob"]),
-        cancelText: H.intl.string(H.t["ETE/oC"]),
+        header: F.intl.string(F.t.aIz1oV),
+        confirmText: F.intl.string(F.t["cY+Oob"]),
+        cancelText: F.intl.string(F.t["ETE/oC"]),
         onConfirm: () => m.Z.removeGuildJoinRequest(e.id),
         confirmButtonColor: s.Tt.BRAND
       }, t), {
         children: (0, i.jsx)(c.Text, {
           variant: "text-md/normal",
-          children: H.intl.string(H.t["13tjTU"])
+          children: F.intl.string(F.t["13tjTU"])
         })
       })))
     }), V(this, "handleViewApplicationRejection", () => {
@@ -251,12 +251,12 @@ class W extends Chunk473749.PureComponent {
       u.Z.verifyResend();
       let t = null == (e = M.default.getCurrentUser()) ? true : e.email;
       null != t && (0, c.h7j)(e => (0, i.jsx)(c.ConfirmModal, z(G({}, e), {
-        header: H.intl.string(H.t.LykQYk),
-        confirmText: H.intl.string(H.t.BddRzS),
+        header: F.intl.string(F.t.LykQYk),
+        confirmText: F.intl.string(F.t.BddRzS),
         confirmButtonColor: s.Tt.BRAND,
         children: (0, i.jsx)(c.Text, {
           variant: "text-md/normal",
-          children: H.intl.format(H.t.azKEPy, {
+          children: F.intl.format(F.t.azKEPy, {
             email: t
           })
         })
@@ -336,10 +336,10 @@ function q(e) {
   let {
     channel: r,
     children: l
-  } = e, a = r.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([A.Z], () => A.Z.getCheck(a)), u = r.type === D.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(D.GuildFeatures.NEWS), d = (0, o.e7)([Z.Z], () => u ? Z.Z.getFollowerStatsForChannel(r.id) : null), p = (0, o.e7)([j.Z], () => j.Z.isLurking(a)), f = (0, o.e7)([M.default], () => M.default.getCurrentUser()), m = null != (t = null == f ? true : f.isStaff()) && t, g = (0, o.e7)([T.ZP], () => {
+  } = e, a = r.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([A.Z], () => A.Z.getCheck(a)), u = r.type === D.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(D.GuildFeatures.NEWS), d = (0, o.e7)([Z.Z], () => u ? Z.Z.getFollowerStatsForChannel(r.id) : null), p = (0, o.e7)([O.Z], () => O.Z.isLurking(a)), f = (0, o.e7)([M.default], () => M.default.getCurrentUser()), m = null != (t = null == f ? true : f.isStaff()) && t, g = (0, o.e7)([T.ZP], () => {
     var e, t;
     return null != f && null != (t = null == (e = T.ZP.getMember(a, f.id)) ? true : e.isPending) && t
-  }), b = !!(0, C.Dc)(s), _ = (0, o.e7)([x.Z], () => x.Z.shouldShowPopout(a)), O = (0, o.e7)([w.Z], () => w.Z.can(D.Plq.SEND_MESSAGES, r)), E = (0, o.e7)([v.Z], () => v.Z.getRequest(a)), {
+  }), b = !!(0, C.Dc)(s), _ = (0, o.e7)([x.Z], () => x.Z.shouldShowPopout(a)), j = (0, o.e7)([w.Z], () => w.Z.can(D.Plq.SEND_MESSAGES, r)), E = (0, o.e7)([v.Z], () => v.Z.getRequest(a)), {
     showLinkedLobbyApplicationLoadingIndicator: S,
     requiredLinkedLobbyApplication: P
   } = (0, L.Z)(r.linkedLobby), k = z(G({}, c), {
@@ -349,7 +349,7 @@ function q(e) {
     shouldShowLurkerModeSuccessPopout: _,
     showLurkerModeUpsellPopout: p && null != s && R.Uu(D.Plq.SEND_MESSAGES, r),
     theme: I.Z.theme,
-    canSendMessages: O,
+    canSendMessages: j,
     channelFollowingUsersSeen: null != d ? d.usersSeenEver : null,
     hasVerificationGate: b,
     showMemberVerificationModal: g && b,

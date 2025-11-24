@@ -127,13 +127,13 @@ function et(e) {
     eg = et.length > 0 && (null == (t = et.first()) ? true : t.isFirstMessageInForumPost(U)),
     eb = (0, s.ts)(U),
     ey = (0, l.e7)([E.Z], () => E.Z.shouldShowTopicsBar() && !ed),
-    eC = (0, j.P)(U.id),
+    eC = (0, O.P)(U.id),
     ev = (0, _.z)(U.id, X.zr),
     e_ = (0, d.k)(U.id),
     ex = (0, k.Z)(),
-    ej = function(e, t) {
+    eO = function(e, t) {
       if (e.isDM() && null != t)
-        if (t.type === v.pj.STRANGER_DANGER) return (0, i.jsx)(O.M, {
+        if (t.type === v.pj.STRANGER_DANGER) return (0, i.jsx)(j.M, {
           channelId: e.id,
           warningId: t.id,
           senderId: e.getRecipientId()
@@ -150,7 +150,7 @@ function et(e) {
       });
       return null
     }(U, null != (n = null != eC ? eC : ev) ? n : e_),
-    eO = U.isForumPost() && !eg ? (0, i.jsx)(m.Z, {
+    ej = U.isForumPost() && !eg ? (0, i.jsx)(m.Z, {
       postId: U.id
     }) : null,
     eE = (0, b.Z)(U.id),
@@ -167,7 +167,7 @@ function et(e) {
           item: e,
           channel: U,
           isBeforeGroup: null == e.content && $(el[t + 1])
-        }) : (0, i.jsx)(F.Z, {
+        }) : (0, i.jsx)(H.Z, {
           isUnread: l,
           isBeforeGroup: null == e.content && $(el[t + 1]),
           id: l ? K.j1 : true,
@@ -182,7 +182,7 @@ function et(e) {
       }, "forum-post-action-bar-".concat(U.id));
       if (e.type === Y.ys_.MESSAGE_GROUP_BLOCKED || e.type === Y.ys_.MESSAGE_GROUP_IGNORED || e.type === Y.ys_.MESSAGE_GROUP_SPAMMER) {
         let t;
-        return t = e.type === Y.ys_.MESSAGE_GROUP_BLOCKED ? J.t["+FcYM/"] : e.type === Y.ys_.MESSAGE_GROUP_IGNORED ? J.t["VFWjc+"] : J.t.xfkfTK, (0, i.jsx)(H.Z, {
+        return t = e.type === Y.ys_.MESSAGE_GROUP_BLOCKED ? J.t["+FcYM/"] : e.type === Y.ys_.MESSAGE_GROUP_IGNORED ? J.t["VFWjc+"] : J.t.xfkfTK, (0, i.jsx)(F.Z, {
           unreadId: K.j1,
           messages: e,
           channel: U,
@@ -385,7 +385,7 @@ function et(e) {
     channelStreamMarkup: eI,
     newMessagesBar: r,
     jumpToPresentBar: h,
-    forumPostActionBar: eO,
-    safetyWarningBanner: ej
+    forumPostActionBar: ej,
+    safetyWarningBanner: eO
   }
 }

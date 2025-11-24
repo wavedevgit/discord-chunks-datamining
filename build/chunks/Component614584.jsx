@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -73,7 +73,7 @@ let S = Chunk473749.memo(function(e) {
   }).enabled, D = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = r.useMemo(() => {
     if (null == M) return null;
     let e = (0, o.Z)(M);
-    if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(j.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
+    if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
       username: null != R ? R.nick : e.author.username,
       usernameHook: e => e
     }));
@@ -94,19 +94,19 @@ let S = Chunk473749.memo(function(e) {
       application: null == e ? true : e.application,
       username: null == R ? true : R.nick
     }));
-    else if (e.type === x.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : j.intl.string(j.t.wnn1Dc);
+    else if (e.type === x.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : O.intl.string(O.t.wnn1Dc);
     if (null != e.content && "" !== e.content) {
       let t = {
           formatInline: true,
           allowLinks: true,
           shouldFilterKeywords: L
         },
-        n = e.isFirstMessageInForumPost(P) ? E(O({}, t), {
+        n = e.isFirstMessageInForumPost(P) ? E(j({}, t), {
           noStyleAndInteraction: true,
           allowHeading: true,
           allowList: true,
           allowGameMentions: k
-        }) : E(O({}, t), {
+        }) : E(j({}, t), {
           formatInline: true,
           allowHeading: D,
           allowList: D,
@@ -117,11 +117,11 @@ let S = Chunk473749.memo(function(e) {
     return null
   }, [M, R, P, D, L, k]), {
     isReplyAuthorBlocked: B,
-    isReplyAuthorIgnored: H
+    isReplyAuthorIgnored: F
   } = (0, l.cj)([m.Z], () => ({
     isReplyAuthorBlocked: null != M && m.Z.isBlockedForMessage(M),
     isReplyAuthorIgnored: null != M && m.Z.isIgnoredForMessage(M)
-  }), [M]), F = (0, _.wq)(null == M ? true : M.author.id, P.id), V = (0, _.$3)(n, M), G = (0, _.Wl)(M, P, Z, N), z = (0, _.rY)(T, N), W = r.useCallback(() => {
+  }), [M]), H = (0, _.wq)(null == M ? true : M.author.id, P.id), V = (0, _.$3)(n, M), G = (0, _.Wl)(M, P, Z, N), z = (0, _.rY)(T, N), W = r.useCallback(() => {
     N({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
@@ -136,14 +136,14 @@ let S = Chunk473749.memo(function(e) {
     content: U,
     compact: I,
     isReplyAuthorBlocked: B,
-    isReplyAuthorIgnored: H,
+    isReplyAuthorIgnored: F,
     showAvatarPopout: T,
     showUsernamePopout: Z,
     renderPopout: v.Z,
     onClickAvatar: z,
     onClickUsername: G,
     onClickReply: V,
-    onContextMenu: F,
+    onContextMenu: H,
     onPopoutRequestClose: W,
     isReplySpineClickable: A,
     showReplySpine: w

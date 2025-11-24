@@ -77,7 +77,7 @@ function Z(e) {
   }), h = d ? u.iWm : u.gQj;
   return (0, i.jsx)(g.Gt, {
     value: l,
-    children: (0, i.jsxs)(j.Z, {
+    children: (0, i.jsxs)(O.Z, {
       className: S.root,
       children: [(0, i.jsx)(c.u, {
         asContainer: true,
@@ -107,7 +107,7 @@ function Z(e) {
           })
         })
       }), (0, i.jsx)(u.f6W, {
-        theme: O.BRd.DARK,
+        theme: j.BRd.DARK,
         children: e => (0, i.jsx)(u.P3F, {
           onClick: r,
           className: a()(e, S.shelfButtonCloseButton),
@@ -130,7 +130,7 @@ function T(e) {
     inPopout: o
   } = e;
   r.useEffect(() => {
-    x.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity invite",
       n_participants: 1
     })
@@ -175,7 +175,7 @@ function T(e) {
         }({}, n), a = a = {
           guild: l,
           channel: t,
-          source: O.t4x.ACTIVITY_ENTRY_POINT_TILE
+          source: j.t4x.ACTIVITY_ENTRY_POINT_TILE
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -210,8 +210,8 @@ function T(e) {
     value: s,
     children: (0, i.jsx)(u.f6W, {
       disableAdaptiveTheme: true,
-      theme: O.BRd.MIDNIGHT,
-      children: e => (0, i.jsxs)(j.Z, {
+      theme: j.BRd.MIDNIGHT,
+      children: e => (0, i.jsxs)(O.Z, {
         className: a()(S.root, S.singleUserRoot, e),
         children: [(0, i.jsx)("img", {
           src: P,
@@ -246,7 +246,7 @@ function N(e) {
     userParticipantCount: c
   } = e;
   (0, d.ZP)(() => {
-    x.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity suggestion",
       n_participants: c
     })
@@ -263,7 +263,7 @@ function N(e) {
     }), [t]);
   return (0, i.jsx)(g.Gt, {
     value: b,
-    children: (0, i.jsxs)(j.Z, {
+    children: (0, i.jsxs)(O.Z, {
       className: S.root,
       children: [s > 300 ? (0, i.jsx)(u.Text, {
         className: S.heading,
@@ -283,7 +283,7 @@ function N(e) {
       }), (0, i.jsxs)(u.P3F, {
         className: S.checkboxContainer,
         onClick: function() {
-          x.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: c
@@ -296,7 +296,7 @@ function N(e) {
       }), (0, i.jsx)(u.P3F, {
         className: S.closeButtonContainer,
         onClick: function() {
-          x.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "temporary",
             n_participants: c

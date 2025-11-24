@@ -34,8 +34,8 @@ function C(e) {
   }, [l, n]);
   let x = (0, o.q)(f.t9),
     {
-      loading: j,
-      wishlistItems: O,
+      loading: O,
+      wishlistItems: j,
       wishlistItemSkuIds: E
     } = (0, p.Z)({
       guildId: (0, d.ac)()
@@ -68,9 +68,9 @@ function C(e) {
           })
         }), (0, i.jsx)("div", {
           className: b.wishlistItemsContainer,
-          children: j || 0 === O.length ? (0, i.jsx)(a.$jN, {
+          children: O || 0 === j.length ? (0, i.jsx)(a.$jN, {
             className: b.loading
-          }) : O.map(e => (0, i.jsx)(h.Z, {
+          }) : j.map(e => (0, i.jsx)(h.Z, {
             item: e,
             wishlistId: null,
             isOwner: false,

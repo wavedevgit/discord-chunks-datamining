@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 910611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  TS: () => H,
+  TS: () => F,
   ud: () => k,
   v0: () => U
 }), require("./388685.js");
@@ -46,7 +46,7 @@ function L(e) {
     children: r
   } = e, l = (0, d.q)(null == (t = n.linkedLobby) ? true : t.application_id), [a, o] = (0, m.US)([s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], true, true);
   if (null == l) return null;
-  let p = O.ZP.getApplicationIconURL({
+  let p = j.ZP.getApplicationIconURL({
       id: l.id,
       icon: l.icon,
       size: 14
@@ -216,20 +216,20 @@ function k(e) {
             onContextMenu: m,
             onClick: p,
             className: a()(R.parentChannelName, R.cursorPointer),
-            children: (0, h.F6)(l, j.default, _.Z)
+            children: (0, h.F6)(l, O.default, _.Z)
           }), (0, i.jsx)(T.Z.Caret, {})]
         })
       }
-      let O = (null == l ? true : l.type) != null && A.TPd.GUILD_THREADS_ONLY.has(l.type);
+      let j = (null == l ? true : l.type) != null && A.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, i.jsxs)(r.Fragment, {
-        children: [x, B(O ? null : b, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(T.Z.Title, {
+        children: [x, B(j ? null : b, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(T.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: c,
           className: a()({
             [R.cursorPointer]: s,
-            [R.forumPostTitle]: O,
-            [R.forumPostSidebarTitle]: s && O
+            [R.forumPostTitle]: j,
+            [R.forumPostSidebarTitle]: s && j
           }),
           children: v
         })]
@@ -259,7 +259,7 @@ let D = e => {
   var t, n, l;
   let {
     channel: a
-  } = e, s = (0, o.e7)([j.default], () => j.default.getCurrentUser()), c = (0, o.e7)([j.default], () => j.default.getUser(a.getRecipientId())), u = (0, S.G)(), d = (0, o.e7)([C.Z], () => null != c ? C.Z.getUserProfile(c.id) : null), h = null != d && (null != (t = null == d ? true : d.fetchEndedAt) ? t : 0) > 0;
+  } = e, s = (0, o.e7)([O.default], () => O.default.getCurrentUser()), c = (0, o.e7)([O.default], () => O.default.getUser(a.getRecipientId())), u = (0, S.G)(), d = (0, o.e7)([C.Z], () => null != c ? C.Z.getUserProfile(c.id) : null), h = null != d && (null != (t = null == d ? true : d.fetchEndedAt) ? t : 0) > 0;
   return (r.useEffect(() => {
     (null == s ? true : s.isStaff()) && null != c && !c.isStaff() && (0, v.Z)(c.id, c.getAvatarURL(true, 80), {
       dispatchWait: true,
@@ -308,7 +308,7 @@ function B(e, t) {
   })
 }
 
-function H(e) {
+function F(e) {
   let {
     guild: t,
     channel: n,

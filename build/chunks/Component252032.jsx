@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk224837 = require("./224837.js"),
   Chunk360514 = require("./360514.js");
 
-function j(e) {
+function O(e) {
   let {
     value: t,
     channel: n
@@ -38,7 +38,7 @@ function j(e) {
   })
 }
 
-function O(e) {
+function j(e) {
   let {
     channel: t,
     message: n
@@ -46,7 +46,7 @@ function O(e) {
     id: c
   } = t, {
     id: u
-  } = n, m = t.getGuildId(), g = (0, a.e7)([h.Z], () => h.Z.getGuild(m), [m]), y = t.type === v.d4z.GUILD_ANNOUNCEMENT, O = null != g && g.features.has(v.GuildFeatures.NEWS), S = y && O, {
+  } = n, m = t.getGuildId(), g = (0, a.e7)([h.Z], () => h.Z.getGuild(m), [m]), y = t.type === v.d4z.GUILD_ANNOUNCEMENT, j = null != g && g.features.has(v.GuildFeatures.NEWS), S = y && j, {
     editingMessage: P,
     editingTextValue: I,
     editingRichValue: Z
@@ -115,7 +115,7 @@ function O(e) {
     onChange: o.Z.updateEditMessage,
     onConfirmDelete: b.Z.confirmDelete,
     saveMessage: N,
-    validateEdit: j,
+    validateEdit: O,
     children: A
   }) : null
 }
@@ -160,7 +160,7 @@ function S(e, t, n) {
     channel: l,
     compact: a
   } = e;
-  return n ? (0, i.jsx)(O, {
+  return n ? (0, i.jsx)(j, {
     channel: l,
     message: r
   }) : (0, i.jsx)(y.ZP, {

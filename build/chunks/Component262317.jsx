@@ -2,7 +2,7 @@
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   XX: () => U,
-  ZP: () => H,
+  ZP: () => F,
   ul: () => B
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -111,15 +111,15 @@ function B(e) {
     })]
   })
 }
-let H = (0, Chunk888651.$)(function(e) {
+let F = (0, Chunk888651.$)(function(e) {
   var t;
   let {
     collapsed: l,
     user: h,
     channel: U,
     mute: B,
-    localMute: H,
-    localVideoDisabled: F,
+    localMute: F,
+    localVideoDisabled: H,
     deaf: V,
     video: G,
     embeddedApplication: z,
@@ -150,7 +150,7 @@ let H = (0, Chunk888651.$)(function(e) {
     hangStatusActivity: eg,
     requestToStreamActivity: eb,
     showHangStatus: ey
-  } = e, eC = r.useRef(null), [ev, e_] = r.useState(false), ex = r.useRef(null), [ej, eO] = r.useState(false), [eE, eS] = r.useState(false), [eP, eI] = r.useState(false), [eZ, eT] = r.useState(false), eN = eE || eZ || eP, eA = ej || eN, ew = (null == eb ? true : eb.session_id) != null, eM = () => {
+  } = e, eC = r.useRef(null), [ev, e_] = r.useState(false), ex = r.useRef(null), [eO, ej] = r.useState(false), [eE, eS] = r.useState(false), [eP, eI] = r.useState(false), [eZ, eT] = r.useState(false), eN = eE || eZ || eP, eA = eO || eN, ew = (null == eb ? true : eb.session_id) != null, eM = () => {
     e_(!ev)
   }, eR = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
@@ -159,12 +159,12 @@ let H = (0, Chunk888651.$)(function(e) {
     (et || ey || ew) && (null == ea || ea(h.id))
   }, ek = e => {
     e ? ex.current = setTimeout(() => {
-      eO(true)
+      ej(true)
     }, 150 * !!es) : clearTimeout(ex.current)
   };
   r.useEffect(() => () => clearTimeout(ex.current), []);
   let eD = e => {
-      e && eO(false)
+      e && ej(false)
     },
     eU = () => {
       if (!(et && (0, v.p9)(U, A.Z, Z.Z, T.Z, b.default)[0])) return;
@@ -193,16 +193,16 @@ let H = (0, Chunk888651.$)(function(e) {
         }))
       })
     },
-    eH = e => ef ? (0, i.jsx)(j.$, D(k({}, e), {
+    eF = e => ef ? (0, i.jsx)(O.$, D(k({}, e), {
       channel: U,
       setIsHangStatusInputFocused: eS,
       setIsEmojiPickerOpen: eT
-    })) : null != eg ? (0, i.jsx)(O.I, D(k({}, e), {
+    })) : null != eg ? (0, i.jsx)(j.I, D(k({}, e), {
       hangStatusActivity: eg,
       channel: U,
       userId: h.id
     })) : null,
-    eF = () => (0, i.jsx)(E.Z, {
+    eH = () => (0, i.jsx)(E.Z, {
       userId: h.id,
       channel: U
     }),
@@ -237,8 +237,8 @@ let H = (0, Chunk888651.$)(function(e) {
               latched: J,
               disconnected: Q,
               mute: B,
-              localMute: H,
-              localVideoDisabled: F,
+              localMute: F,
+              localVideoDisabled: H,
               isStreaming: et,
               isGuest: ei,
               video: G,
@@ -279,7 +279,7 @@ let H = (0, Chunk888651.$)(function(e) {
             })
           }
           let c = () => null;
-          return ey && eA ? c = eH : et ? c = eV : ew && h.id !== I.default.getId() ? c = eF : ey && (c = eH), (0, i.jsx)(s.yRy, {
+          return ey && eA ? c = eF : et ? c = eV : ew && h.id !== I.default.getId() ? c = eH : ey && (c = eF), (0, i.jsx)(s.yRy, {
             targetElementRef: eC,
             position: "right",
             renderPopout: c,

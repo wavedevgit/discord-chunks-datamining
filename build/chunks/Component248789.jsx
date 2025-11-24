@@ -69,12 +69,12 @@ function y(e) {
       name: l.V.SAFETY_WARNING_VIEW
     })
   }, [x]);
-  let j = r.useCallback(e => {
+  let O = r.useCallback(e => {
       (0, p.qc)(b(g({}, x), {
         cta: e
       }))
     }, [x]),
-    O = r.useCallback(() => {
+    j = r.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
           default: e
@@ -95,14 +95,14 @@ function y(e) {
         }
       }, {
         modalKey: f.X_
-      }), j(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
-    }, [t, C, y, j]),
+      }), O(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
+    }, [t, C, y, O]),
     E = r.useCallback(() => {
-      v(), j(p.NM.USER_BANNER_BLOCK_CONFIRM)
-    }, [v, j]),
+      v(), O(p.NM.USER_BANNER_BLOCK_CONFIRM)
+    }, [v, O]),
     S = r.useCallback(() => {
-      v(), j(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-    }, [v, j]),
+      v(), O(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+    }, [v, O]),
     P = r.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
@@ -118,7 +118,7 @@ function y(e) {
             onBlock: E,
             onBlockAndReport: S,
             onCancel: () => {
-              null == l || l(), j(p.NM.USER_BANNER_BLOCK_CANCEL)
+              null == l || l(), O(p.NM.USER_BANNER_BLOCK_CANCEL)
             },
             onClose: l,
             userId: C,
@@ -126,7 +126,7 @@ function y(e) {
           })
         }
       })
-    }, [E, S, C, t, j]);
+    }, [E, S, C, t, O]);
   return (0, i.jsx)(h.Q, {
     channelId: t,
     warningId: y,
@@ -138,7 +138,7 @@ function y(e) {
     buttons: [{
       text: m.intl.string(m.t.Qyu4UK),
       variant: "primary",
-      onClick: O
+      onClick: j
     }, ..._ ? [] : [{
       text: m.intl.string(m.t["7q0bNY"]),
       variant: "secondary",

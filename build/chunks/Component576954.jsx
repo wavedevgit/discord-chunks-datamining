@@ -61,16 +61,16 @@ function _(e) {
     warningId: _,
     senderId: x
   } = e, {
-    isBlocked: j
+    isBlocked: O
   } = (0, a.cj)([p.Z], () => ({
     isBlocked: p.Z.isBlocked(x)
-  }), [x]), O = r.useCallback(() => {
+  }), [x]), j = r.useCallback(() => {
     (0, h.T)(t, [_])
   }, [t, _]), E = (0, b.C2)(), S = r.useCallback(e => () => {
     s.Z.blockUser(x, {
       location: b.zr
     }).then(() => {
-      O()
+      j()
     }), (0, m.qc)({
       channelId: t,
       warningId: _,
@@ -78,7 +78,7 @@ function _(e) {
       warningType: f.pj.STRANGER_DANGER,
       cta: e
     })
-  }, [O, t, _, x]);
+  }, [j, t, _, x]);
   r.useEffect(() => {
     (0, m.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
@@ -186,7 +186,7 @@ function _(e) {
     warningType: f.pj.STRANGER_DANGER,
     header: C.intl.string(C.t.iOkDpM),
     description: C.intl.string(C.t.ISUbcM),
-    onDismiss: O,
+    onDismiss: j,
     buttons: [{
       text: C.intl.string(C.t["Qk/c48"]),
       variant: "primary",
@@ -199,7 +199,7 @@ function _(e) {
           cta: m.NM.OPEN_MORE_TIPS
         })
       }
-    }, ...j ? [] : [{
+    }, ...O ? [] : [{
       text: C.intl.string(C.t.ie0QdN),
       variant: "critical-primary",
       onClick: () => I(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)

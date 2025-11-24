@@ -89,7 +89,7 @@ function x(e) {
       className: C.inner,
       children: (0, i.jsxs)("ul", {
         className: C.list,
-        children: [m.map(e => (0, i.jsx)(j, {
+        children: [m.map(e => (0, i.jsx)(O, {
           channel: t,
           user: e,
           inviteKey: l
@@ -115,14 +115,14 @@ function x(e) {
   })
 }
 
-function j(e) {
+function O(e) {
   let {
     channel: t,
     user: n,
     inviteKey: l
   } = e, o = r.useRef(null), s = (0, c.e7)([h.ZP], () => h.ZP.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
     isHoveringOrFocusing: f
-  } = (0, g.Tu)(o), [b, v] = r.useState(null), x = "success" === b || "sending" === b || null == l, j = r.useCallback(() => {
+  } = (0, g.Tu)(o), [b, v] = r.useState(null), x = "success" === b || "sending" === b || null == l, O = r.useCallback(() => {
     x || null != l && (v("sending"), d.Z.enqueue({
       type: d.m.USER,
       user: n,
@@ -133,7 +133,7 @@ function j(e) {
       v(e ? "success" : null)
     }))
   }, [x, l, n]), {
-    avatarDecorationSrc: O,
+    avatarDecorationSrc: j,
     avatarSrc: E,
     eventHandlers: S
   } = (0, p.Z)({
@@ -152,14 +152,14 @@ function j(e) {
       [C.clickable]: !x
     }),
     "aria-disabled": x,
-    onClick: j,
+    onClick: O,
     "aria-label": I,
     children: [(0, i.jsx)(u.qEK, _({
       className: C.avatar,
       "aria-label": P,
       size: u.EFr.SIZE_24,
       src: E,
-      avatarDecoration: O
+      avatarDecoration: j
     }, S)), (0, i.jsx)(u.Text, {
       variant: "text-md/medium",
       className: C.name,

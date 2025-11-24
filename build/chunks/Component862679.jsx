@@ -27,17 +27,17 @@ let d = function(e) {
     children: v,
     useReducedMotion: _ = false,
     buttonVariant: x
-  } = e, j = (0, a.e7)([c.ZP], () => c.ZP.getState().isMembersOpen);
-  if (l.tq && j) return null;
+  } = e, O = (0, a.e7)([c.ZP], () => c.ZP.getState().isMembersOpen);
+  if (l.tq && O) return null;
   if (null == t) return (0, i.jsx)(i.Fragment, {
     children: r.Children.only(v)
   });
-  let O = null;
-  return null != g ? O = (0, i.jsx)("img", {
+  let j = null;
+  return null != g ? j = (0, i.jsx)("img", {
     alt: "",
     src: g,
     className: u.image
-  }) : null != b && (O = (0, i.jsx)(o.Fmz, {
+  }) : null != b && (j = (0, i.jsx)(o.Fmz, {
     importData: b,
     shouldAnimate: !_,
     className: u.animation
@@ -45,7 +45,7 @@ let d = function(e) {
     className: u.wrapper,
     children: [(0, i.jsxs)("div", {
       className: u.content,
-      children: [O, (0, i.jsxs)("div", {
+      children: [j, (0, i.jsxs)("div", {
         className: u.text,
         children: [(0, i.jsx)(o.Heading, {
           variant: "heading-md/semibold",

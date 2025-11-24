@@ -106,7 +106,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
       messageDisplayCompact: v,
       channelStream: _,
       uploads: x,
-      hasUnreads: O,
+      hasUnreads: j,
       editingMessageId: S,
       fontSize: P,
       keyboardModeEnabled: I,
@@ -133,7 +133,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
       messages: g,
       channel: m,
       compact: v,
-      hasUnreads: O,
+      hasUnreads: j,
       focusId: S,
       placeholderHeight: Y.totalHeight,
       canLoadMore: null == T,
@@ -145,7 +145,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
       isEditing: null != S,
       keyboardModeEnabled: I,
       hasMoreAfter: g.hasMoreAfter
-    }), Q = (0, c.e7)([C.Z], () => Z.Z.can(H.Plq.READ_MESSAGE_HISTORY, m) ? null : C.Z.getViewingRolesTimestamp(m.getGuildId())), {
+    }), Q = (0, c.e7)([C.Z], () => Z.Z.can(F.Plq.READ_MESSAGE_HISTORY, m) ? null : C.Z.getViewingRolesTimestamp(m.getGuildId())), {
       channelStreamMarkup: $,
       newMessagesBar: ee,
       jumpToPresentBar: et,
@@ -171,7 +171,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
           null == (e = X.ref.current) || e.scrollToBottom({
             animate: !f.Z.useReducedMotion
           })
-        } else d.Z.jumpToPresent(m.id, H.AQB)
+        } else d.Z.jumpToPresent(m.id, F.AQB)
       },
       jumpBarClassName: M
     });
@@ -193,13 +193,13 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
           })
         }, [e]);
       (0, w.yp)({
-        event: H.CkL.SCROLLTO_PRESENT,
+        event: F.CkL.SCROLLTO_PRESENT,
         handler: t
       }), (0, w.yp)({
-        event: H.CkL.SCROLL_PAGE_UP,
+        event: F.CkL.SCROLL_PAGE_UP,
         handler: n
       }), (0, w.yp)({
-        event: H.CkL.SCROLL_PAGE_DOWN,
+        event: F.CkL.SCROLL_PAGE_DOWN,
         handler: i
       })
     }(X.ref);
@@ -213,9 +213,9 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
         var t;
         X.ref.current = e, ea.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
       }),
-      ec = (0, c.e7)([j.Z], () => {
+      ec = (0, c.e7)([O.Z], () => {
         var e;
-        let t = null == (e = j.Z.settings.appearance) ? true : e.clientThemeSettings;
+        let t = null == (e = O.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
       eu = r.useMemo(() => R ? k ? V.chatTypingGradientAtBottom : V.chatTypingGradientNotAtBottom : V.chatGradient, [R, k]),
@@ -240,7 +240,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
             className: a()(V.scrollerInner, {
               [V.scrollerAllowSticky]: m.isModeratorReportChannel()
             }),
-            "aria-label": F.intl.formatToPlainString(F.t.XarRiL, {
+            "aria-label": H.intl.formatToPlainString(H.t.XarRiL, {
               channelName: m.name
             })
           }, eo), {
@@ -248,7 +248,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
               className: V.navigationDescription,
               id: "messagesNavigationDescription",
               "aria-hidden": true,
-              children: F.intl.string(F.t["Spb3s/"])
+              children: H.intl.string(H.t["Spb3s/"])
             }), $, (0, i.jsx)("div", {
               className: a()({
                 [V.scrollerSpacer]: !N,
@@ -283,7 +283,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
           canManageMessages: i,
           permissionVersion: r
         } = (0, c.cj)([Z.Z], () => ({
-          canManageMessages: Z.Z.can(H.Plq.MANAGE_MESSAGES, e),
+          canManageMessages: Z.Z.can(F.Plq.MANAGE_MESSAGES, e),
           permissionVersion: null != t ? Z.Z.getGuildVersion(t) : null
         }), [e, t]);
       return {
@@ -292,7 +292,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
         canManageMessages: i
       }
     }(t), {
-      messageGroupSpacing: j,
+      messageGroupSpacing: O,
       fontSize: E,
       messageDisplayCompact: w,
       renderSpoilers: L,
@@ -326,7 +326,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
     }(), {
       messages: U,
       channelStream: B,
-      oldestUnreadMessageId: F,
+      oldestUnreadMessageId: H,
       editingMessageId: V
     } = function(e) {
       var t, n;
@@ -342,7 +342,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
         }, {
           autoTrackExposure: false
         }),
-        o = null != (n = null == (t = A.default.getUser(O.default.getId())) ? true : t.hasFlag(H.xW$.SPAMMER)) && n,
+        o = null != (n = null == (t = A.default.getUser(j.default.getId())) ? true : t.hasFlag(F.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, b.Z)("use_topic_dividers_in_chat"),
         d = (0, c.Wu)([_.Z], () => {
@@ -382,7 +382,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
       value: (0, M.Z)(L, d),
       children: (0, i.jsx)(k.v, {
         children: (0, i.jsx)(K, z(G({}, u), {
-          messageGroupSpacing: j,
+          messageGroupSpacing: O,
           showNewMessagesBar: true,
           channel: t,
           messageDisplayCompact: !o && (a || w),
@@ -391,7 +391,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
           permissionVersion: h,
           uploads: (0, c.e7)([N.Z], () => N.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([T.ZP], () => T.ZP.getUnreadCount(t.id), [t]),
-          hasUnreads: null != F,
+          hasUnreads: null != H,
           canChat: C,
           editingMessageId: V,
           fontSize: E,

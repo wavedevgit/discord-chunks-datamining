@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk177119 = require("./177119.js"),
   Chunk724913 = require("./724913.js"),
   Chunk430864 = require("./430864.js");
-let O = Chunk473749.memo(function(e) {
+let j = Chunk473749.memo(function(e) {
     let {
       message: t,
       notice: n,
@@ -87,7 +87,7 @@ let O = Chunk473749.memo(function(e) {
       S.current ? null != C && C() : S.current = true
     }, [C, u.content, m, E, f]), (0, i.jsxs)("div", {
       id: (0, g.ut)(u),
-      className: a()(l, j.markup, {
+      className: a()(l, O.markup, {
         [x.messageContent]: true,
         [x.markupRtl]: "rtl" === s()(u.content),
         [_.blockedEdit]: null == P ? true : P.isBlockedEdit,
@@ -103,7 +103,7 @@ let O = Chunk473749.memo(function(e) {
             children: ["(", v.intl.string(v.t.Z7eEx9), ")"]
           })
         })]
-      }), (0, i.jsx)(O, {
+      }), (0, i.jsx)(j, {
         notice: null != (n = null == P ? true : P.errorMessage) ? n : v.intl.string(v.t.zQ69pv),
         message: u,
         compact: o,

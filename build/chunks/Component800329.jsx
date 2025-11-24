@@ -41,8 +41,8 @@ function p(e) {
     height: y
   } = m, C = null != (t = null == l ? true : l.length) ? t : 0, v = b - 16, _ = y - (h + f), {
     tileStyle: x,
-    tileWidth: j,
-    rows: O,
+    tileWidth: O,
+    rows: j,
     columns: E
   } = r.useMemo(() => (function(e, t, n) {
     let {
@@ -80,7 +80,7 @@ function p(e) {
       rows: i,
       columns: r
     }
-  })(C, v, _), [C, v, _]), S = E + 1, P = S * j + (S - 1) * 8 <= b, I = Math.floor(j / c) + 8, Z = Math.max(0, _ - I * O) / 2;
+  })(C, v, _), [C, v, _]), S = E + 1, P = S * O + (S - 1) * 8 <= b, I = Math.floor(O / c) + 8, Z = Math.max(0, _ - I * j) / 2;
   return (0, i.jsx)(o.Z, {
     fade: true,
     className: n,
@@ -97,19 +97,19 @@ function p(e) {
             style: x,
             className: a()(s.tile, {
               [s.padColumn]: P,
-              [s.noVerticalMargin]: l >= (O - 1) * E,
+              [s.noVerticalMargin]: l >= (j - 1) * E,
               [s.noHorizontalMargin]: (l + 1) % E == 0 || l === C - 1
             }),
             children: (0, i.jsx)("div", {
               className: s.tileSizer,
-              children: e(j)
+              children: e(O)
             })
           }, null != (r = null == p ? true : p(l)) ? r : l)
         })
       }, e)
     },
-    rowCount: O,
-    rowCountBySection: [O],
+    rowCount: j,
+    rowCountBySection: [j],
     rowHeight: I,
     onResize: g
   })
