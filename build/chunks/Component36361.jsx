@@ -81,7 +81,7 @@ function x(e) {
         node: t
       });
     case l.Jq.NAVIGATOR:
-      return (0, r.jsx)(c.Z, {
+      return (0, r.jsx)(s.Z, {
         node: t
       });
     case l.Jq.CUSTOM:
@@ -89,7 +89,7 @@ function x(e) {
         children: (0, r.jsx)(t.render, {})
       });
     default:
-      return (0, r.jsx)(s.W, {
+      return (0, r.jsx)(c.W, {
         node: t
       })
   }

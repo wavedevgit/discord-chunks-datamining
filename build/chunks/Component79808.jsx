@@ -71,16 +71,16 @@ function p(e) {
     _ = d.Z.useField("targetKey"),
     [E, N] = l.useState(v),
     w = l.useMemo(() => E.get(null != P ? P : C), [E, P, C]),
-    k = l.useCallback(() => T(true), []),
-    [Z, T] = l.useState({
+    Z = l.useCallback(() => T(true), []),
+    [k, T] = l.useState({
       target: C,
       targetAccordionKey: null == (n = v.entry(C)) ? true : n.parentAccordionKey,
       animateScroll: false,
-      complete: k
+      complete: Z
     }),
     {
       navigateWithValidation: I
-    } = (0, s.Cu)();
+    } = (0, c.Cu)();
   l.useEffect(() => {
     if (null == _) return;
     let e = v.entry(_);
@@ -93,7 +93,7 @@ function p(e) {
     let t = {
       target: _,
       targetAccordion: e.parentAccordionKey,
-      complete: k
+      complete: Z
     };
     if (e.targetPanelKey !== P) {
       let n = e.targetPanelKey;
@@ -111,18 +111,18 @@ function p(e) {
     })), d.Z.setState({
       targetKey: true
     })
-  }, [P, _, k, v, I, O]);
+  }, [P, _, Z, v, I, O]);
   let D = l.useMemo(() => ({
-      navTransition: Z,
+      navTransition: k,
       directory: v
-    }), [Z, v]),
+    }), [k, v]),
     A = () => I(m),
     R = null != P ? v.get(P) : true;
   return (0, r.jsx)(u.j.Provider, {
     value: D,
     children: (0, r.jsxs)("div", {
       className: f.container,
-      children: [(0, r.jsx)(c.P, {
+      children: [(0, r.jsx)(s.P, {
         root: p,
         header: h,
         footer: x,
@@ -137,7 +137,7 @@ function p(e) {
 }
 
 function v(e) {
-  return (0, r.jsx)(s.Ri, {
+  return (0, r.jsx)(c.Ri, {
     children: (0, r.jsx)(p, b({}, e))
   })
 }

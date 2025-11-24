@@ -26,8 +26,9 @@ let d = {
   },
   T = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV9),
-    useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel()),
-    setValue: t => l.default.setNotifyMessagesInSelectedChannel(t)
+    useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel() && !Chunk292959.Z.getDisableAllSounds()),
+    setValue: t => l.default.setNotifyMessagesInSelectedChannel(t),
+    useDisabled: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds())
   }),
   I = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOd"]),

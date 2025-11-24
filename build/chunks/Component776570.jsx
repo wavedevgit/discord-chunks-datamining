@@ -16,12 +16,13 @@ var Chunk54381 = require("./54381.js"),
 let S = (0, Chunk509613.k4)(Chunk313789.n.VOICE_CATEGORY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.K3lovD),
   useNotice: function() {
-    return Chunk473749.useMemo(() => ({
+    let t = (0, Chunk825655.o)("voice");
+    return Chunk473749.useMemo(() => module.canPrompt ? {
       type: Chunk28682.y1.STRONGLY_DISCOURAGED_CUSTOM,
       render: () => (0, Chunk54381.jsx)(Chunk825655.Z, {
         sourcePage: "voice"
       })
-    }), [])
+    } : null, [module.canPrompt])
   },
   buildLayout: () => [Chunk665388.Z, Chunk589741.Z, Chunk97951.Z]
 })

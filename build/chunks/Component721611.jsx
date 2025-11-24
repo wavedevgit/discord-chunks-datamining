@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  c = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk790519 = require("./790519.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -25,10 +25,10 @@ function v(e) {
     active: i
   } = e, {
     useTitle: a,
-    useNavigationTitle: s,
+    useNavigationTitle: c,
     key: f
-  } = n, b = null == a ? true : a(), y = null != (t = null == s ? true : s()) ? t : b;
-  return c()(null != y, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.mh, {
+  } = n, b = null == a ? true : a(), y = null != (t = null == c ? true : c()) ? t : b;
+  return s()(null != y, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.mh, {
     id: f,
     children: e => {
       var t, n;
@@ -95,7 +95,7 @@ function j(e) {
     className: p.subnav,
     children: [(0, r.jsx)("div", {
       className: p.track,
-      children: (0, r.jsx)(s.animated.div, {
+      children: (0, r.jsx)(c.animated.div, {
         className: p.thumb,
         style: o
       })

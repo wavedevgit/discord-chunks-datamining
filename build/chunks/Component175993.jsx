@@ -1,13 +1,14 @@
 /** Chunk was on 46984 **/
 /** chunk id: 175993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk28682 = require("./28682.js");
+  Chunk28682 = require("./28682.js"),
+  Chunk465061 = require("./465061.js");
 
-function o(e) {
+function a(e) {
   let {
     notice: t
   } = e, {
@@ -20,7 +21,7 @@ function o(e) {
   })
 }
 
-function a(e) {
+function s(e) {
   let {
     notice: t
   } = e, {
@@ -35,12 +36,24 @@ function c(e) {
   } = e;
   switch (t.type) {
     case i.y1.INLINE_NOTICE:
-      return (0, r.jsx)(o, {
+      return (0, r.jsx)(a, {
         notice: t
       });
     case i.y1.STRONGLY_DISCOURAGED_CUSTOM:
-      return (0, r.jsx)(a, {
+      return (0, r.jsx)(s, {
         notice: t
       })
   }
+}
+
+function u(e) {
+  let {
+    notice: t
+  } = e;
+  return (0, r.jsx)("div", {
+    className: o.notice,
+    children: (0, r.jsx)(c, {
+      notice: t
+    })
+  })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 700425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   i: () => a,
-  l: () => c
+  l: () => s
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
@@ -54,7 +54,7 @@ function a(e, t) {
   }, [t, e.key, e.layout])
 }
 
-function c() {
+function s() {
   Chunk473749.useEffect(() => {
     let e = document.querySelectorAll("[data-settings-panel-scroller]");
     if (0 === module.length) return;

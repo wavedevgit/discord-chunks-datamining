@@ -20,7 +20,7 @@ function b(e) {
     onClick: l,
     active: i,
     node: a,
-    visibleContent: s,
+    visibleContent: c,
     itemProps: d
   } = e, {
     icon: b,
@@ -28,7 +28,7 @@ function b(e) {
     trailing: p,
     useTitle: v
   } = a, j = null == v ? true : v();
-  return (0, r.jsxs)(c.P3F, (t = function(e) {
+  return (0, r.jsxs)(s.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -57,7 +57,7 @@ function b(e) {
         color: "currentColor",
         size: "refresh_sm",
         className: f.icon
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
         color: "currentColor",
         children: j
@@ -66,7 +66,7 @@ function b(e) {
       className: f.itemContent,
       children: (0, r.jsx)(u.W, {
         trailing: p,
-        visibleContent: s,
+        visibleContent: c,
         isSelected: i
       })
     })]
@@ -87,7 +87,7 @@ function y(e) {
     node: t,
     visibleContent: n,
     hoisted: i = false
-  } = e, o = l.useMemo(() => t.layout[0], [t]), c = s.Z.useField("currentPanelKey"), u = null != c && c === (null == o ? true : o.key), f = null != o ? () => s.Z.setState({
+  } = e, o = l.useMemo(() => t.layout[0], [t]), s = c.Z.useField("currentPanelKey"), u = null != s && s === (null == o ? true : o.key), f = null != o ? () => c.Z.setState({
     targetKey: o.key,
     showNavigationMobile: false
   }) : t.onClick, y = l.useMemo(() => {

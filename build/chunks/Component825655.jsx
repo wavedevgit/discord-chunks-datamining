@@ -2,7 +2,8 @@
 /** chunk id: 825655, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => b,
+  o: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
@@ -50,29 +51,46 @@ function g(e, t) {
 }
 
 function E(e) {
+  let t = (0, o.e7)([u.Z], () => u.Z.getMode()),
+    {
+      runningGame: n,
+      runningGameApplication: r
+    } = (0, l.Z)();
+  null == n || n.elevated || (n = true, r = true);
+  let i = (0, f.hi)(),
+    a = i && null != n && t === _.pM4.PUSH_TO_TALK;
+  return {
+    canPrompt: "voice" === e ? a : i,
+    runningGame: n,
+    runningGameApplication: r
+  }
+}
+
+function b(e) {
   let {
     className: t,
     sourcePage: n
-  } = e, i = (0, o.e7)([u.Z], () => u.Z.getMode()), {
-    runningGame: c,
-    runningGameApplication: E
-  } = (0, l.Z)();
-  if (null == c || c.elevated || (c = true, E = true), !(0, f.hi)() || "voice" === n && (null == c || i !== _.pM4.PUSH_TO_TALK)) return null;
+  } = e, {
+    canPrompt: i,
+    runningGame: o,
+    runningGameApplication: l
+  } = E(n);
+  if (!i) return null;
 
-  function b() {
-    (0, f.sU)(n + (null != c ? "-with-game" : "-no-game"))
+  function c() {
+    (0, f.sU)(n + (null != o ? "-with-game" : "-no-game"))
   }
   return (0, r.jsxs)("div", {
     className: a()(h.container, t),
     children: [(0, r.jsx)(m, {
-      game: c,
-      application: E
+      game: o,
+      application: l
     }), (0, r.jsxs)("div", {
       className: h.textContainer,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-primary",
-        children: g(n, c)
+        children: g(n, o)
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
@@ -84,7 +102,7 @@ function E(e) {
       variant: "secondary",
       size: "sm",
       text: p.intl.string(p.t["1iI46O"]),
-      onClick: b
+      onClick: c
     })]
   })
 }

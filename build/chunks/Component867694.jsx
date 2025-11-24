@@ -14,12 +14,12 @@ function o(e) {
   } = e, {
     useValue: o,
     setValue: a,
-    useTitle: c,
-    useSubtitle: s,
+    useTitle: s,
+    useSubtitle: c,
     useDisabled: u,
     useDisabledMessage: d,
     useBadge: f
-  } = n, b = c(), y = null == s ? true : s(), p = o(), v = null != (t = null == u ? true : u()) && t, j = null == d ? true : d(), g = null == f ? true : f();
+  } = n, b = s(), y = null == c ? true : c(), p = o(), v = null != (t = null == u ? true : u()) && t, j = null == d ? true : d(), g = null == f ? true : f();
   return (0, r.jsxs)(i.X, {
     children: [(0, r.jsx)(l.rsf, {
       label: b,

@@ -40,7 +40,7 @@ function b(e) {
       }
       return l
     }(e, ["root", "directory", "target", "defaultTarget", "onPanelChange", "sidebarHeader", "sidebarFooter", "emptyState"]);
-  let [O, S] = l.useState(false), [C, P] = l.useState(1.4), _ = l.useRef(null), E = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), N = (0, i.e7)([s.Z], () => s.Z.isFocused());
+  let [O, S] = l.useState(false), [C, P] = l.useState(1.4), _ = l.useRef(null), E = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), N = (0, i.e7)([c.Z], () => c.Z.isFocused());
   return l.useEffect(() => {
     let e = e => {
       let {

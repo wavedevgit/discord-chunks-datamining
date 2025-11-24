@@ -50,7 +50,7 @@ function g(e) {
       t.hoisted ? e.push(t) : n.push(t)
     }), [e, n]
   }, [t.layout]), P = (0, f.Ll)(), _ = (0, u.Z)("settings-sidebar", x);
-  return (0, r.jsx)(s.f6W, {
+  return (0, r.jsx)(c.f6W, {
     theme: P,
     children: e => (0, r.jsx)(d.ZP, {
       contentTypes: O,
@@ -60,15 +60,15 @@ function g(e) {
         } = t;
         return (0, r.jsxs)("div", {
           className: o()(j.sidebar, e, {
-            [j.mobile]: c.tq,
+            [j.mobile]: s.tq,
             [j.mobileNavigationOpen]: h
           }),
           children: [(0, r.jsxs)("div", {
             className: j.fixedContent,
-            children: [c.tq && (0, r.jsx)("div", {
+            children: [s.tq && (0, r.jsx)("div", {
               className: j.mobileCloseButton,
-              children: (0, r.jsx)(s.hU, {
-                icon: s.Uz9,
+              children: (0, r.jsx)(c.hU, {
+                icon: c.Uz9,
                 onClick: p,
                 variant: "icon-only",
                 size: "sm",
@@ -103,7 +103,7 @@ function g(e) {
                     }
                     return l
                   }(e, ["ref"]);
-                return (0, r.jsxs)(s.h21, (t = function(e) {
+                return (0, r.jsxs)(c.h21, (t = function(e) {
                   for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
                       r = Object.keys(n);
@@ -166,7 +166,7 @@ function m(e) {
     "aria-label": o,
     children: [null != o && (0, r.jsx)("div", {
       className: j.sectionLabel,
-      children: (0, r.jsx)(s.Heading, {
+      children: (0, r.jsx)(c.Heading, {
         className: j.label,
         variant: "heading-sm/medium",
         color: "text-tertiary",

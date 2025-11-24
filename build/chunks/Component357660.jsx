@@ -18,9 +18,9 @@ function f(e) {
     notice: t,
     children: n
   } = e, {
-    showNotice: s,
+    showNotice: c,
     handleStoreUpdate: u
-  } = (0, c.Cu)(), f = null == t ? true : t.stores;
+  } = (0, s.Cu)(), f = null == t ? true : t.stores;
   l.useEffect(() => {
     if (null != f) {
       let e = new i.Fh(f, () => {
@@ -32,7 +32,7 @@ function f(e) {
     }
   }, [f, u]);
   let b = l.useMemo(() => {
-    if (null == t || !s) return null;
+    if (null == t || !c) return null;
     let {
       element: e
     } = t;
@@ -40,7 +40,7 @@ function f(e) {
       className: d.notice,
       children: (0, r.jsx)(e, {})
     })
-  }, [t, s]);
+  }, [t, c]);
   return (0, r.jsxs)(r.Fragment, {
     children: [n, (0, r.jsx)(o.W, {
       component: "div",
@@ -54,7 +54,7 @@ function b(e) {
     node: t
   } = e, n = l.useRef(null), i = l.useRef(null);
   if (1 !== t.layout.length) throw Error("Panels do not currently support multiple panes");
-  return (0, s.i)(t, i), (0, r.jsx)(f, {
+  return (0, c.i)(t, i), (0, r.jsx)(f, {
     notice: t.notice,
     children: (0, r.jsx)(a.w0Z, {
       "data-settings-panel-scroller": true,

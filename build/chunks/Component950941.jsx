@@ -27,7 +27,7 @@ function a(e) {
   return e
 }
 
-function c(e, t) {
+function s(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -40,7 +40,7 @@ function c(e, t) {
   }), e
 }
 
-function s(e) {
+function c(e) {
   let {
     useCount: t
   } = e, n = t();
@@ -55,10 +55,10 @@ function u(e) {
     badgeComponent: n,
     visibleContent: i,
     isSelected: a
-  } = e, c = null == t ? true : t(), s = null != i && c.includes(i) && !a, u = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(l.IGR, {
+  } = e, s = null == t ? true : t(), c = null != i && s.includes(i) && !a, u = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(l.IGR, {
     text: o.intl.string(o.t.y2b7CA)
   });
-  return s ? u : null
+  return c ? u : null
 }
 
 function d(e) {
@@ -79,14 +79,14 @@ function f(e) {
   if (null == t) return null;
   switch (t.type) {
     case i.PU.BADGE_COUNT:
-      return (0, r.jsx)(s, a({}, t));
+      return (0, r.jsx)(c, a({}, t));
     case i.PU.BADGE_NEW:
-      return (0, r.jsx)(u, c(a({}, t), {
+      return (0, r.jsx)(u, s(a({}, t), {
         visibleContent: n,
         isSelected: l
       }));
     case i.PU.STRONGLY_DISCOURAGED_CUSTOM:
-      return (0, r.jsx)(d, c(a({}, t), {
+      return (0, r.jsx)(d, s(a({}, t), {
         visibleContent: n,
         isSelected: l
       }))

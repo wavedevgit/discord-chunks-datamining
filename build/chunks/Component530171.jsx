@@ -22,7 +22,7 @@ function u(e) {
   return l.useLayoutEffect(() => {
     null != f.current && null == b && y(f.current.clientHeight)
   }, [b]), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.x, {
+    children: [(0, r.jsx)(s.x, {
       ref: f,
       style: null != b ? {
         minHeight: b
@@ -30,8 +30,8 @@ function u(e) {
       title: t,
       description: p ? true : n,
       secondaryTrailingElement: (0, r.jsx)(a.sXD, {
-        className: o()(s.icon, {
-          [s.iconClosed]: !i
+        className: o()(c.icon, {
+          [c.iconClosed]: !i
         })
       }),
       onClick: () => u(!i)

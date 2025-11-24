@@ -59,11 +59,11 @@ function C(e) {
   let o = v.Z.useField("query"),
     {
       node: a,
-      directory: s
+      directory: c
     } = (0, f.Z)(m.Z, o),
-    u = null != t && null != s.entry(t) ? t : true,
+    u = null != t && null != c.entry(t) ? t : true,
     p = l.useRef(null);
-  return ((0, c.ZP)(() => {
+  return ((0, s.ZP)(() => {
     let e = b.Z.getSection();
     null != e && (S({
       destinationPanel: e,
@@ -88,7 +88,7 @@ function C(e) {
     return e
   }({
     root: a,
-    directory: s,
+    directory: c,
     sidebarHeader: P,
     emptyState: _,
     sidebarFooter: g.Z,
@@ -108,7 +108,7 @@ function P() {
   let e = Chunk996733.Z.useField("query"),
     t = Chunk473749.useRef(null),
     [n, i] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),
-    c = Chunk473749.useMemo(() => ({
+    s = Chunk473749.useMemo(() => ({
       title: Chunk388032.intl.string(Chunk388032.t.Kv519a),
       body: Chunk388032.intl.string(Chunk388032.t.cTGJBZ),
       badge: "new",

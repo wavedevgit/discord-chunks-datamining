@@ -22,7 +22,7 @@ function p(e) {
     label: n,
     onClick: l
   } = e;
-  return (0, r.jsx)(c.hU, {
+  return (0, r.jsx)(s.hU, {
     onClick: l,
     icon: t,
     size: "sm",
@@ -37,25 +37,25 @@ function v(e) {
     badge: n,
     onClose: l
   } = e, i = (0, u.Ll)();
-  return (0, r.jsx)(s.f6W, {
+  return (0, r.jsx)(c.f6W, {
     theme: i,
     children: e => (0, r.jsxs)("div", {
       className: o()(y.contentHeader, e),
       children: [(0, r.jsxs)("div", {
         className: y.contentHeaderLeft,
         children: [a.tq && (0, r.jsx)(p, {
-          icon: s.yFM,
+          icon: c.yFM,
           onClick: () => d.Z.setState({
             showNavigationMobile: true
           }),
           label: b.intl.string(b.t["13/7kX"])
-        }), (0, r.jsx)(s.Heading, {
+        }), (0, r.jsx)(c.Heading, {
           variant: "heading-md/medium",
           color: "header-secondary",
           children: t
         }), null != n && n]
       }), (0, r.jsx)(p, {
-        icon: s.Uz9,
+        icon: c.Uz9,
         onClick: l,
         label: b.intl.string(b.t.cpT0Cq)
       })]
@@ -67,15 +67,15 @@ let j = Chunk473749.memo(function(e) {
   let {
     onClose: l,
     setting: i
-  } = e, c = null != (n = null == i ? true : i.useTitle()) ? n : "", s = null == i || null == (t = i.useBadge) ? true : t.call(i), u = d.Z.useField("showNavigationMobile");
+  } = e, s = null != (n = null == i ? true : i.useTitle()) ? n : "", c = null == i || null == (t = i.useBadge) ? true : t.call(i), u = d.Z.useField("showNavigationMobile");
   return (0, r.jsxs)("div", {
     className: o()(y.content, {
       [y.mobile]: a.tq,
       [y.mobileNavigationOpen]: u
     }),
     children: [(0, r.jsx)(v, {
-      title: c,
-      badge: s,
+      title: s,
+      badge: c,
       onClose: l
     }), (0, r.jsx)("div", {
       className: y.contentBody,

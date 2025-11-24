@@ -5,11 +5,11 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk59662 = require("./59662.js"),
   Chunk36361 = require("./36361.jsx"),
   Chunk530171 = require("./530171.jsx"),
-  Chunk175993 = require("./175993.jsx"),
-  Chunk445642 = require("./445642.js");
+  Chunk175993 = require("./175993.jsx");
 let u = Chunk473749.memo(function(e) {
   let {
     node: t
@@ -20,26 +20,24 @@ let u = Chunk473749.memo(function(e) {
     useNotice: f
   } = t, [b, y] = l.useState(false), {
     navTransition: p
-  } = (0, i.t)();
+  } = (0, o.t)();
   l.useEffect(() => {
     (null == p ? true : p.targetAccordionKey) === t.key && y(true)
   }, [null == p ? true : p.targetAccordionKey, t.key]);
   let v = null == n ? true : n(b),
     j = null == d ? true : d(),
     g = null == f ? true : f();
-  return (0, r.jsx)("div", {
-    className: s.accordion,
-    children: (0, r.jsxs)(a.I, {
+  return (0, r.jsx)(i.Kqy, {
+    direction: "vertical",
+    gap: 8,
+    children: (0, r.jsxs)(s.I, {
       title: v,
       collapsedSubtitle: j,
       isOpen: b,
       setIsOpen: y,
-      children: [null != g && (0, r.jsx)("div", {
-        className: s.notice,
-        children: (0, r.jsx)(c.Z, {
-          notice: g
-        })
-      }), u.map(e => (0, r.jsx)(o.Z, {
+      children: [null != g && (0, r.jsx)(c.Z, {
+        notice: g
+      }), u.map(e => (0, r.jsx)(a.Z, {
         node: e
       }, e.key))]
     })

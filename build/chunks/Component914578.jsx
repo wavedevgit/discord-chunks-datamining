@@ -32,15 +32,15 @@ function g(e) {
       children: [(0, r.jsx)(a.sNh, {
         id: "changelog",
         label: v.intl.string(v.t.LRmNAl),
-        action: () => (0, s.Z)(true)
+        action: () => (0, c.Z)(true)
       }), (0, r.jsx)(a.sNh, {
         id: "acknowledgements",
         label: v.intl.string(v.t["0nUKy3"]),
-        action: () => (0, c.Z)(p.EYA.ACKNOWLEDGEMENTS)
+        action: () => (0, s.Z)(p.EYA.ACKNOWLEDGEMENTS)
       }), (0, r.jsx)(a.sNh, {
         id: "support",
         label: v.intl.string(v.t["Yl/Riu"]),
-        action: () => (0, c.Z)(f.w)
+        action: () => (0, s.Z)(f.w)
       })]
     })
   })

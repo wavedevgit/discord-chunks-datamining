@@ -14,10 +14,10 @@ function o(e) {
     useValue: n,
     setValue: o,
     useTitle: a,
-    useSubtitle: c,
-    useOptions: s,
+    useSubtitle: s,
+    useOptions: c,
     renderOptionLabel: u
-  } = t, d = a(), f = null == c ? true : c(), b = n(), y = s();
+  } = t, d = a(), f = null == s ? true : s(), b = n(), y = c();
   return (0, r.jsx)(i.X, {
     children: (0, r.jsx)(l.q4e, {
       label: d,

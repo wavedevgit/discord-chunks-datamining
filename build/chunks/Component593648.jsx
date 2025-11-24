@@ -208,8 +208,9 @@ function q(e) {
         children: [_ ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsx)(u.rsf, {
           label: F.intl.string(F.t.lF5GGe),
           description: F.intl.string(F.t["7oXUim"]),
-          checked: a,
-          onChange: d.default.setNotifyMessagesInSelectedChannel
+          checked: a && !n,
+          onChange: d.default.setNotifyMessagesInSelectedChannel,
+          disabled: n
         }), (0, r.jsx)(u.rsf, {
           label: F.intl.string(F.t["2ZhCOd"]),
           description: F.intl.string(F.t["+B0XLE"]),

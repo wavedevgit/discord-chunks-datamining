@@ -22,11 +22,11 @@ function u(e) {
   } = (0, i.t)(), v = null == p ? true : p.entry(b), j = (null == v ? true : v.targetPanelKey) != null ? null == p ? true : p.get(v.targetPanelKey) : true, g = null == (n = f.useTitle) ? true : n.call(f), m = null == j || null == (u = j.useTitle) ? true : u.call(j);
   if (null == j) return null;
   let h = (null == (d = j.parent) ? true : d.type) === o.Jq.SIDEBAR_ITEM ? j.parent.icon : true;
-  return (0, r.jsx)(c.x, {
+  return (0, r.jsx)(s.x, {
     title: null != g ? g : m,
     description: y,
     leadingElement: null != h && (0, r.jsx)("div", {
-      className: s.navigatorIcon,
+      className: c.navigatorIcon,
       children: (0, r.jsx)(h, {})
     }),
     primaryTrailingElement: (0, r.jsx)(l.LJT, {}),

@@ -14,17 +14,17 @@ function a(e) {
     children: n
   } = e, {
     navTransition: a
-  } = (0, o.t)(), c = l.useRef(null), s = l.useContext(i.Sf).reducedMotion.enabled;
+  } = (0, o.t)(), s = l.useRef(null), c = l.useContext(i.Sf).reducedMotion.enabled;
   return l.useEffect(() => {
     if ((null == a ? true : a.target) === t.key) {
       var e;
-      null == (e = c.current) || e.scrollIntoView({
-        behavior: a.animateScroll && !s ? "smooth" : "auto",
+      null == (e = s.current) || e.scrollIntoView({
+        behavior: a.animateScroll && !c ? "smooth" : "auto",
         block: "start"
       }), a.complete()
     }
-  }, [a, t.key, s]), (0, r.jsx)("div", {
-    ref: c,
+  }, [a, t.key, c]), (0, r.jsx)("div", {
+    ref: s,
     "data-debug-key": t.key,
     children: n
   })

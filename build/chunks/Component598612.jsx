@@ -29,12 +29,13 @@ function o(e) {
     gap: 8,
     padding: {
       left: 12,
-      right: 12
+      right: 12,
+      bottom: 24
     },
     children: [(0, r.jsxs)("div", {
       className: i.headerTitle,
       children: [(0, r.jsx)(l.X6q, {
-        variant: "heading-lg/semibold",
+        variant: "heading-xl/normal",
         color: "header-primary",
         children: t
       }), null != o && o]
