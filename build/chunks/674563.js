@@ -11,7 +11,7 @@ require.d(exports, {
   yP: () => a
 }), require("./388685.js");
 var r = function(e) {
-    return e[e.DEPRECATED_GAME = 1] = "DEPRECATED_GAME", e[e.TICKETED_EVENTS = 3] = "TICKETED_EVENTS", e[e.GUILD_ROLE_SUBSCRIPTIONS = 4] = "GUILD_ROLE_SUBSCRIPTIONS", e[e.GAME = 5] = "GAME", e
+    return e[e.DEPRECATED_GAME = 1] = "DEPRECATED_GAME", e[e.TICKETED_EVENTS = 3] = "TICKETED_EVENTS", e[e.GUILD_ROLE_SUBSCRIPTIONS = 4] = "GUILD_ROLE_SUBSCRIPTIONS", e[e.GAME = 5] = "GAME", e[e.NON_GAME_DETECTABLE = 6] = "NON_GAME_DETECTABLE", e
   }({}),
   i = function(e) {
     return e[e.BOT = 0] = "BOT", e[e.SERVER = 1] = "SERVER", e[e.SYSTEM_DM = 2] = "SYSTEM_DM", e[e.OFFICIAL = 3] = "OFFICIAL", e[e.STAFF_ONLY_DM = 4] = "STAFF_ONLY_DM", e[e.NOT_STAFF_WARNING = 5] = "NOT_STAFF_WARNING", e[e.ORIGINAL_POSTER = 6] = "ORIGINAL_POSTER", e[e.AI = 7] = "AI", e

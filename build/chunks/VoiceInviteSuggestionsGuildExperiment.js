@@ -1,17 +1,21 @@
-/** Chunk was on 34740 **/
-/** chunk id: 71133, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 71133, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  o: () => a
+  W: () => o,
+  o: () => s
 });
 var Chunk818083 = require("./818083.js"),
-  Chunk973285 = require("./973285.js");
-let l = (0, Chunk818083.B)({
+  Chunk973285 = require("./973285.js"),
+  Chunk987338 = require("./987338.js");
+let o = (0, Chunk818083.B)({
   kind: "guild",
   id: "2025-10_voice_invite_suggestions",
   label: "Voice Invite Suggestions",
   defaultConfig: {
     enabled: false
   },
+  commonTriggerPoint: Chunk987338.$P.VOICE_CALL,
   treatments: [{
     id: 1,
     label: "Voice Invite Suggestions - Enabled",
@@ -21,19 +25,19 @@ let l = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
+function s(e) {
   let {
     autoTrackExposure: t,
     location: n,
-    guildId: i
+    guildId: r
   } = e, {
     enabled: a
-  } = r.W.useExperiment({
-    guildId: i,
+  } = i.W.useExperiment({
+    guildId: r,
     location: n
   });
-  return l.useExperiment({
-    guildId: i,
+  return o.useExperiment({
+    guildId: r,
     location: n
   }, {
     autoTrackExposure: t,
