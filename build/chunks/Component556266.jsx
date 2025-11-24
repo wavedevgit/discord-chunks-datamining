@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk152242 = require("./152242.jsx"),
   Chunk231338 = require("./231338.js");
 
-function b(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,7 +40,7 @@ function b(e) {
   }
   return e
 }
-let _ = function() {
+let b = function() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   return (t, n, l) => (0, i.jsx)(v.Z, {
     step: l,
@@ -66,7 +66,7 @@ function I(e) {
     onComplete: n,
     applicationId: a,
     skuId: o,
-    renderHeader: _(d),
+    renderHeader: b(d),
     initialPlanId: null,
     analyticsObject: s,
     analyticsLocations: u,
@@ -80,15 +80,15 @@ function P(e) {
     applicationId: n,
     skuId: f,
     analyticsLocations: v,
-    isGift: _ = false,
+    isGift: b = false,
     giftRecipient: P,
     giftingOrigin: w
   } = e, {
     analyticsLocations: y
-  } = (0, r.ZP)(v, a.Z.SLAYER_STOREFRONT_PAYMENT_MODAL), T = (0, s.q)(n);
+  } = (0, r.ZP)(v, a.Z.SLAYER_STOREFRONT_PAYMENT_MODAL), S = (0, s.q)(n);
   return l.useEffect(() => {
-    null == T || null == T.guildId || null == f || p.Z.isFetchingForSKU(f) || null != m.Z.get(f) || (0, x.y)(T.guildId, f)
-  }, [T, f]), (0, i.jsx)(r.Gt, {
+    null == S || null == S.guildId || null == f || p.Z.isFetchingForSKU(f) || null != m.Z.get(f) || (0, h.y)(S.guildId, f)
+  }, [S, f]), (0, i.jsx)(r.Gt, {
     value: y,
     children: (0, i.jsx)(c.PaymentContextProvider, {
       loadId: t,
@@ -96,20 +96,20 @@ function P(e) {
         let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
         return [g.WA, ...e ? [C.jM] : [], g.s2, ...g.yp, g.wo, {
           key: d.h8.CONFIRM,
-          renderStep: e => (0, i.jsx)(h.d, b({}, e))
+          renderStep: e => (0, i.jsx)(x.d, j({}, e))
         }]
-      }(_),
+      }(b),
       applicationId: n,
       skuIDs: [f],
       activeSubscription: null,
-      purchaseType: j.GZ.ONE_TIME,
-      isGift: _,
+      purchaseType: _.GZ.ONE_TIME,
+      isGift: b,
       children: (0, i.jsx)(u.c1, {
         children: (0, i.jsx)(o.KB, {
-          isGift: _,
+          isGift: b,
           giftRecipient: P,
           giftingOrigin: w,
-          children: (0, i.jsx)(I, b({}, e))
+          children: (0, i.jsx)(I, j({}, e))
         })
       })
     })
