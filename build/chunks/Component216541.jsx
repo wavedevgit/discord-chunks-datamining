@@ -41,8 +41,9 @@ let b = Chunk473749.memo(function(e) {
         isHighlighted: a,
         skuId: v.skuId,
         isPurchased: n,
-        forCollectedModal: y,
-        removeSetHeight: true
+        removeSetHeight: true,
+        withScaleAnimation: y,
+        delayProfileEffectIntro: y
       })
     }), (0, r.jsx)("div", {
       className: o()(m.avatarDecorationPreview, y ? m.avatarDecorationPreviewCollectedModal : null, N ? m.avatarDecorationDropShadow : null),

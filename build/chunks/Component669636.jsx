@@ -45,7 +45,7 @@ function _(e) {
   }
   return e
 }
-let C = e => {
+let S = e => {
     let {
       product: t,
       itemConsumed: r,
@@ -53,14 +53,15 @@ let C = e => {
     } = e, [a] = t.items, l = (0, d.e7)([m.default], () => {
       let e = m.default.getCurrentUser();
       return s()(null != e, "User cannot be undefined"), e
-    }), w = Object.values(u.a).includes(t.skuId), _ = (0, g.Z)({
+    }), y = Object.values(u.a).includes(t.skuId), _ = (0, g.Z)({
       location: "CollectiblesProductPreview"
     });
     return (0, o.EQ)(t.type).with(c.Z.PROFILE_EFFECT, () => (0, n.jsx)("div", {
       className: P.profileEffectShopPreview,
       children: (0, n.jsx)(h.Z, {
-        forCollectedModal: true,
-        skuId: a.skuId
+        skuId: a.skuId,
+        delayProfileEffectIntro: i,
+        withScaleAnimation: i
       })
     })).with(c.Z.AVATAR_DECORATION, () => (0, n.jsx)(j.R, {
       item: a,
@@ -78,7 +79,7 @@ let C = e => {
       })
     })).with(c.Z.BUNDLE, () => (0, n.jsx)("div", {
       className: P.bundlePreview,
-      children: (0, n.jsx)(v.d, {
+      children: (0, n.jsx)(w.d, {
         containerClassName: P.bundlePreviewContainer,
         product: t,
         user: l,
@@ -87,24 +88,24 @@ let C = e => {
         forCollectedModal: i
       })
     })).with(c.Z.EXTERNAL_SKU, () => {
-      if (w)
+      if (y)
         if (r) return (0, n.jsx)("img", {
-          src: _ ? E : x,
-          alt: y.intl.string(y.t.t0xkSB),
+          src: _ ? x : E,
+          alt: v.intl.string(v.t.t0xkSB),
           style: {
             width: "100%"
           }
         });
         else return (0, n.jsx)("img", {
           src: O,
-          alt: y.intl.string(y.t.g5W1g8)
+          alt: v.intl.string(v.t.g5W1g8)
         });
       return (0, n.jsx)(b.b, {
         product: t
       })
     }).otherwise(() => null)
   },
-  S = e => {
+  C = e => {
     let {
       reducedMotion: t,
       displayOptions: r
@@ -154,7 +155,7 @@ let C = e => {
       children: [(0, n.jsx)(l.animated.div, {
         className: P.easterEggContainer,
         style: o,
-        children: (0, n.jsx)(C, _({}, e))
+        children: (0, n.jsx)(S, _({}, e))
       }), (0, n.jsx)(l.animated.div, {
         className: P.easterEggContainer,
         style: t ? u : c,
@@ -170,8 +171,8 @@ let C = e => {
 
 function k(e) {
   var t, r;
-  let i = (0, w.v)(e.product.categorySkuId);
-  return null != i ? (0, n.jsx)(S, (t = _({}, e), r = r = {
+  let i = (0, y.v)(e.product.categorySkuId);
+  return null != i ? (0, n.jsx)(C, (t = _({}, e), r = r = {
     displayOptions: i
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
@@ -182,5 +183,5 @@ function k(e) {
     return r
   })(Object(r)).forEach(function(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-  }), t)) : (0, n.jsx)(C, _({}, e))
+  }), t)) : (0, n.jsx)(S, _({}, e))
 }

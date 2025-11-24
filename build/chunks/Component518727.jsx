@@ -2,8 +2,8 @@
 /** chunk id: 518727, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => I,
-  Z: () => T
+  P: () => b,
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,134 +14,120 @@ var Chunk54381 = require("./54381.js"),
   Chunk570140 = require("./570140.js"),
   Chunk607070 = require("./607070.js"),
   Chunk70097 = require("./70097.jsx"),
-  Chunk164275 = require("./164275.js"),
   Chunk626135 = require("./626135.js"),
   Chunk585483 = require("./585483.js"),
-  Chunk987209 = require("./987209.jsx"),
-  Chunk563132 = require("./563132.jsx"),
-  Chunk45572 = require("./45572.js"),
   Chunk402426 = require("./402426.js"),
   Chunk981631 = require("./981631.js"),
   Chunk839249 = require("./839249.js"),
   Chunk293914 = require("./293914.js"),
   Chunk503019 = require("./503019.js");
-let I = 1e3,
-  T = e => {
+let b = 1e3,
+  y = e => {
     let {
       children: t,
-      isConfirmationStep: n
-    } = e, a = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [I, T] = (0, i.useState)("entry"), S = (0, i.useRef)(null), A = (0, i.useRef)(null), C = (0, i.useCallback)(() => {
-      if ("entry" === I && (T("idle"), null != S.current)) {
+      isConfirmationStep: n,
+      isEligibleForWowMoment: a,
+      shouldPrefetchWowMoment: b
+    } = e, y = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [O, v] = (0, i.useState)("entry"), I = (0, i.useRef)(null), T = (0, i.useRef)(null), S = (0, i.useCallback)(() => {
+      if ("entry" === O && (v("idle"), null != I.current)) {
         var e;
-        null == (e = S.current) || e.play()
+        null == (e = I.current) || e.play()
       }
-    }, [I]), N = (0, i.useCallback)(() => {
-      if ("exit" !== I && (T("exit"), null != A.current)) {
+    }, [O]), A = (0, i.useCallback)(() => {
+      if ("exit" !== O && (v("exit"), null != T.current)) {
         var e;
-        null == (e = A.current) || e.play()
+        null == (e = T.current) || e.play()
       }
-    }, [I]), {
-      isGift: R
-    } = (0, h.wD)(), {
-      wasTier2PremiumBeforePurchase: P,
-      selectedSkuId: D,
-      purchaseState: w
-    } = (0, m.JL)(), [L, x] = (0, i.useState)(false);
+    }, [O]), [C, N] = (0, i.useState)(false);
     (0, i.useEffect)(() => {
-      w === g.A.PURCHASING && x(true)
-    }, [w]);
-    let M = (0, f.P)(R, !!P, D),
-      {
-        mediaUrls: j,
-        isSuccess: k
-      } = (0, E.Z)(!a && M && L),
-      U = (0, i.useRef)(null),
-      [G, B] = (0, i.useState)(false),
-      [Z, F] = (0, i.useState)(false),
-      [V, H] = (0, i.useState)("none"),
-      [Y, W] = (0, i.useState)(false);
+      b && N(true)
+    }, [b]);
+    let {
+      mediaUrls: R,
+      isSuccess: P
+    } = (0, p.Z)(!y && a && C), D = (0, i.useRef)(null), [w, L] = (0, i.useState)(false), [x, M] = (0, i.useState)(false), [j, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
-        M && n && !Y && "none" === V && (a || !k ? (H("static"), a || (W(true), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (H("animated"), F(true), e = true), c.Z.dispatch({
+        a && n && !U && "none" === j && (y || !P ? (k("static"), y || (G(true), f.default.track(h.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (k("animated"), M(true), e = true), c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: true,
           isAnimated: e
-        }), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
+        }), f.default.track(h.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
           wow_moment_type: e ? "animated" : "static"
         }))
-      }, [a, M, n, k, Y, V]), (0, i.useEffect)(() => {
+      }, [y, a, n, P, U, j]), (0, i.useEffect)(() => {
         function e() {
-          B(true), N()
+          L(true), A()
         }
-        return p.S.subscribe(b.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e), () => {
-          p.S.unsubscribe(b.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e)
+        return _.S.subscribe(h.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e), () => {
+          _.S.unsubscribe(h.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e)
         }
-      }, [N]), (0, i.useEffect)(() => () => {
+      }, [A]), (0, i.useEffect)(() => () => {
         c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: false,
           isAnimated: false
         })
-      }, []), "animated" === V) return (0, r.jsxs)("div", {
+      }, []), "animated" === j) return (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
-        className: y.videoContainer,
+        className: m.videoContainer,
         children: [(0, r.jsx)("div", {
-          className: y.entryAnimationContainer,
+          className: m.entryAnimationContainer,
           children: (0, r.jsx)(d.Z, {
             playsInline: true,
             muted: true,
             autoPlay: true,
-            onEnded: C,
-            className: o()(y.video, "entry" === I ? y.visible : y.hidden),
+            onEnded: S,
+            className: o()(m.video, "entry" === O ? m.visible : m.hidden),
             children: (0, r.jsx)("source", {
-              src: j.modalGlowEntry
+              src: R.modalGlowEntry
             })
           })
         }), (0, r.jsx)(d.Z, {
-          ref: S,
+          ref: I,
           playsInline: true,
           muted: true,
           loop: true,
-          className: o()(y.video, "idle" === I ? y.visible : y.hidden),
+          className: o()(m.video, "idle" === O ? m.visible : m.hidden),
           children: (0, r.jsx)("source", {
-            src: j.modalGlowIdle
+            src: R.modalGlowIdle
           })
         }), (0, r.jsx)(d.Z, {
-          ref: A,
+          ref: T,
           playsInline: true,
           muted: true,
-          className: o()(y.video, "exit" === I ? y.visible : y.hidden),
+          className: o()(m.video, "exit" === O ? m.visible : m.hidden),
           children: (0, r.jsx)("source", {
-            src: j.modalGlowExit
+            src: R.modalGlowExit
           })
         })]
       }), (0, r.jsx)("div", {
-        className: y.wowAnimation,
+        className: m.wowAnimation,
         children: (0, r.jsx)(l.zec, {
           fit: "layout",
-          ref: U,
+          ref: D,
           dataBinding: {
-            ExitTrigger: G,
-            EntryTrigger: Z
+            ExitTrigger: w,
+            EntryTrigger: x
           },
           listenOnDocumentBody: true
         })
       }), (0, r.jsx)("div", {
-        className: "exit" === I ? y.exitAnimationContainer : y.entryAnimationContainer,
+        className: "exit" === O ? m.exitAnimationContainer : m.entryAnimationContainer,
         children: t
       })]
     });
-    let K = !G;
-    return "static" === V ? (0, r.jsxs)(r.Fragment, {
-      children: [K && (0, r.jsxs)(r.Fragment, {
+    let B = !w;
+    return "static" === j ? (0, r.jsxs)(r.Fragment, {
+      children: [B && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("img", {
-          src: O.Z,
+          src: g.Z,
           alt: "",
-          className: y.staticGlow
+          className: m.staticGlow
         }), (0, r.jsx)("img", {
-          src: v.Z,
+          src: E.Z,
           alt: "",
-          className: y.staticWumpusWithTrinkets
+          className: m.staticWumpusWithTrinkets
         })]
       }), t]
     }) : t

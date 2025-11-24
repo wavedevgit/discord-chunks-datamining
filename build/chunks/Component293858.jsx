@@ -31,12 +31,12 @@ function S(e) {
       onSubscriptionConfirmation: S,
       renderPurchaseConfirmation: _,
       postSuccessGuild: w,
-      followupSKUInfo: O,
-      continueSessionToInitialStep: C
+      followupSKUInfo: C,
+      continueSessionToInitialStep: O
     } = e,
     {
-      activeSubscription: k,
-      paymentSources: E,
+      activeSubscription: E,
+      paymentSources: k,
       paymentSourceId: I,
       selectedPlan: T,
       selectedSkuId: N,
@@ -62,7 +62,7 @@ function S(e) {
     V = (0, d.Z)(),
     Y = (0, c.a5)(T),
     q = (0, c.tK)(null == K ? true : K.skuId),
-    J = (0, y.$)(E, I),
+    J = (0, P.$)(k, I),
     Q = L && null != K && Y;
   i()(null != T, "Expected plan to selected"), i()(null != N, "Expected selectedSkuId"), i()(null != R, "Step should be set");
   let X = l.useCallback(() => {
@@ -77,7 +77,7 @@ function S(e) {
       dismissAction: j.L.INDIRECT_ACTION
     })
   }, [V, W]);
-  let $ = null != C ? p.PI.DEEPLINK_TO_DESKTOP_APP : true;
+  let $ = null != O ? p.PI.DEEPLINK_TO_DESKTOP_APP : true;
   if (null != _) t = _(T, X, M);
   else if (L) t = (0, r.jsx)(p.TB, {
     planId: T.id,
@@ -87,9 +87,9 @@ function S(e) {
     let e = A.current === T.id ? {
       postSuccessGuild: w
     } : {
-      followupSKUInfo: O,
+      followupSKUInfo: C,
       startingPremiumSubscriptionPlanId: A.current,
-      isDowngrade: null != k && (0, h.GY)(k, T.id, a)
+      isDowngrade: null != E && (0, h.GY)(E, T.id, a)
     };
     t = (0, r.jsx)(p.ZP, function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -119,7 +119,7 @@ function S(e) {
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(v.C3, {
-      children: [(0, r.jsx)(P.Z, {}), t]
+      children: [(0, r.jsx)(y.Z, {}), t]
     }), null != z && z, Q && null != q && (0, r.jsx)(x.Z, {
       onClose: X,
       selectedPromotionalDecoPurchaseRecord: q,

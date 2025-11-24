@@ -2,7 +2,7 @@
 /** chunk id: 119837, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  lG: () => r,
+  JH: () => r,
   td: () => i
 });
 let r = 500,

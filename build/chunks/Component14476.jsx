@@ -23,19 +23,19 @@ let g = e => {
       assetId: g,
       user: v,
       claimed: x,
-      onSelect: y,
-      productName: P,
+      onSelect: P,
+      productName: y,
       a11yLabel: j,
       selectedSkuId: S,
       category: _,
       type: w,
-      palette: O
+      palette: C
     } = e,
-    C = l.useRef(null),
+    O = l.useRef(null),
     {
-      isHoveringOrFocusing: k
-    } = (0, u.Z)(C),
-    E = !x && k,
+      isHoveringOrFocusing: E
+    } = (0, u.Z)(O),
+    k = !x && E,
     I = (0, c.ZP)(),
     T = (0, s.wj)(I);
   return w === o.Z.AVATAR_DECORATION ? (t = {
@@ -46,7 +46,7 @@ let g = e => {
     children: [(0, r.jsx)(m.R, {
       item: t,
       user: v,
-      isHighlighted: E,
+      isHighlighted: k,
       avatarSize: d.EFr.SIZE_96,
       isPurchased: x
     }), x && (0, r.jsx)(d.sV5, {
@@ -60,12 +60,12 @@ let g = e => {
     type: o.Z.NAMEPLATE,
     label: j,
     asset: g,
-    palette: null != O ? O : "none"
+    palette: null != C ? C : "none"
   }, n = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h.Z, {
       nameplate: t,
       user: v,
-      isHighlighted: E,
+      isHighlighted: k,
       isPurchased: x,
       size: "small"
     }), x && (0, r.jsx)(d.sV5, {
@@ -77,14 +77,14 @@ let g = e => {
     })]
   })), (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)(d.kL8, {
-      ref: C,
-      "aria-label": null != P ? P : "",
+      ref: O,
+      "aria-label": null != y ? y : "",
       onClick: () => {
-        null == a || null == y || x || y(a)
+        null == a || null == P || x || P(a)
       },
       className: i()(T ? b.shopCardDark : b.shopCard, {
         [b.shopCardAnimation]: !x,
-        [T ? b.shopCardDarkHighlighted : b.shopCardHighlighted]: E,
+        [T ? b.shopCardDarkHighlighted : b.shopCardHighlighted]: k,
         [b.shopCardSelected]: S === a
       }),
       children: [(0, r.jsx)("div", {
@@ -100,7 +100,7 @@ let g = e => {
         className: b.productName,
         children: [(0, r.jsx)(d.Heading, {
           variant: "heading-md/extrabold",
-          children: P
+          children: y
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           children: x ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)

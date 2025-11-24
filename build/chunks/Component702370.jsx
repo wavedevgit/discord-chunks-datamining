@@ -140,7 +140,8 @@ let eL = e => {
       children: (0, r.jsx)(E.Z, {
         skuId: t.skuId,
         removeSetHeight: true,
-        isHighlighted: true
+        isHighlighted: true,
+        delayProfileEffectIntro: true
       })
     }) : t.type === c.Z.NAMEPLATE ? (0, r.jsx)("div", {
       ref: l,

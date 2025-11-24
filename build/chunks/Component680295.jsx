@@ -57,22 +57,22 @@ let I = e => {
       urlQueryString: h,
       profileEffectConfig: E,
       noBorderRadius: O = false,
-      introDelay: v = f.lG
+      delayIntro: v = true
     } = e, I = i.useRef(null), [T, S] = i.useState([]);
     (0, b.Z)(E);
     let [A, C] = i.useState(0), [N, R] = i.useState(0), {
       accessibilityLabel: P
-    } = E, [D, w] = i.useState(-v), {
-      stop: L,
-      reset: x,
-      ticking: M
+    } = E, D = v ? f.JH : .1, [w, L] = i.useState(-D), {
+      stop: x,
+      reset: M,
+      ticking: j
     } = (0, p.Z)(e => {
-      w(t => t + e)
-    }), j = i.useRef(v);
+      L(t => t + e)
+    }), k = i.useRef(D);
     i.useEffect(() => {
-      j.current = v
+      k.current = D
     }), i.useEffect(() => {
-      w(-j.current), S((0, m.H)(E.effects))
+      L(-k.current), S((0, m.H)(E.effects))
     }, [E]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
@@ -81,10 +81,10 @@ let I = e => {
         r > e && (e = r), n.loop && n.start < t && (t = n.start)
       }), C(t), R(e)
     }, [R, T]);
-    let [k, U] = i.useState(false);
+    let [U, G] = i.useState(false);
     return i.useEffect(() => {
-      true === u || l || (L(), w(0)), !l && k && M.current && (L(), w(0)), a && l && !M.current && (x(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? w(d === _.Q.FromStart ? 0 : A) : w(0))
-    }, [l, k, A, a, L, x, M, E.animationType, u, d]), (0, r.jsx)("div", {
+      true === u || l || (x(), L(0)), !l && U && j.current && (x(), L(0)), a && l && !j.current && (M(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? L(d === _.Q.FromStart ? 0 : A) : L(0))
+    }, [l, U, A, a, x, M, j, E.animationType, u, d]), (0, r.jsx)("div", {
       ref: I,
       className: o()(y.profileEffects, {
         [y.hovered]: l && c
@@ -94,7 +94,7 @@ let I = e => {
       children: (0, r.jsx)("div", {
         className: O ? y.innerNoRadius : y.inner,
         children: T.map((e, i) => {
-          if (!M.current && E.animationType === s.y.ANIMATION_TYPE_PERSISTENT && null != E.staticFrameSrc && 0 === i && true === u) {
+          if (!j.current && E.animationType === s.y.ANIMATION_TYPE_PERSISTENT && null != E.staticFrameSrc && 0 === i && true === u) {
             var a, o, l, c;
             let {
               staticFrameSrc: n
@@ -113,10 +113,10 @@ let I = e => {
           return (0, r.jsx)(g.Z, {
             layerConfig: e,
             animationType: E.animationType,
-            ticking: M.current,
-            time: D,
-            hasPlayedThrough: k,
-            setHasPlayedThrough: U,
+            ticking: j.current,
+            time: w,
+            hasPlayedThrough: U,
+            setHasPlayedThrough: G,
             urlQueryString: h,
             maxLoops: n,
             loopEnd: N,

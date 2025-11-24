@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 846464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => y
+  q: () => P
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk360026 = require("./360026.js");
 
-function y(e) {
+function P(e) {
   let {
     handleStepChange: t,
     handleClose: n,
@@ -32,14 +32,14 @@ function y(e) {
     startedPaymentFlowWithPaymentSourcesRef: c,
     setSelectedPlanId: v,
     priceOptions: x,
-    defaultPlanId: y
+    defaultPlanId: P
   } = (0, m.JL)(), {
     isGift: j,
     claimableRewards: S
-  } = (0, p.wD)(), _ = j && null != S && S.length > 0, w = (0, d.N)(l), O = (0, o.Nx)(), C = (0, s.Z)({
+  } = (0, p.wD)(), _ = j && null != S && S.length > 0, w = (0, d.N)(l), C = (0, o.Nx)(), O = (0, s.Z)({
     location: "PremiumPaymentSelect"
   });
-  return (0, r.jsx)(P, {
+  return (0, r.jsx)(y, {
     selectSku: e => (function(e) {
       let {
         activeSubscription: t,
@@ -81,18 +81,18 @@ function y(e) {
       userTrialOffer: w,
       startedPaymentFlowWithPaymentSources: c.current,
       setSelectedPlanId: v,
-      defaultPlanId: y
+      defaultPlanId: P
     }),
     onClose: n,
     isGift: j,
-    inOfferExperience: O,
+    inOfferExperience: C,
     priceOptions: x,
     showPromotionalGiftBanner: _,
-    enablePremiumBrandRefresh: C
+    enablePremiumBrandRefresh: O
   })
 }
 
-function P(e) {
+function y(e) {
   let {
     selectSku: t,
     onClose: n,

@@ -26,12 +26,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk950174 = require("./950174.js");
 
 function _(e) {
-  var t, n, a, _, w, O;
+  var t, n, a, _, w, C;
   let {
-    handleStepChange: C,
-    handleClose: k
+    handleStepChange: O,
+    handleClose: E
   } = e, {
-    selectedPlan: E,
+    selectedPlan: k,
     selectedSkuId: I,
     step: T
   } = (0, x.JL)(), {
@@ -86,7 +86,7 @@ function _(e) {
   l.useEffect(() => {
     let e = null == B ? true : B.defaultHighlightedReward;
     !H && null == R && null != e && null != e && K.some(t => t.skuId === e.skuId) && (N(e), F(e.skuId))
-  }, [B, H, R, K, N]), i()(null != E, "Expected plan to selected"), i()(null != I, "Expected selectedSkuId"), i()(null != T, "Step should be set");
+  }, [B, H, R, K, N]), i()(null != k, "Expected plan to selected"), i()(null != I, "Expected selectedSkuId"), i()(null != T, "Step should be set");
   let z = l.useMemo(() => null != D && (null != M ? M : []).some(e => e.skuId === D), [D, M]),
     W = l.useMemo(() => null != R && K.some(e => e.skuId === R.skuId), [K, R]),
     V = l.useMemo(() => 0 === K.length || null == D || !W || !z, [K, D, z, W]);
@@ -116,7 +116,7 @@ function _(e) {
         palette: e.palette
       }, e.skuId)
     }),
-    J = (0, r.jsx)(P.O3, {
+    J = (0, r.jsx)(y.O3, {
       children: (0, r.jsx)(s.mzw, {
         "data-migration-pending": true,
         className: S.modalFooter,
@@ -125,13 +125,13 @@ function _(e) {
             null != L && null != R && g.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: L.id,
               reward_sku_id: R.skuId
-            }), C(e)
+            }), O(e)
           },
-          onBackClick: () => C(y.h8.PLAN_SELECT),
+          onBackClick: () => O(P.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
-          planOptions: [E.id],
-          selectedPlanId: E.id,
+          planOptions: [k.id],
+          selectedPlanId: k.id,
           isNextDisabled: V
         })
       })
@@ -155,11 +155,11 @@ function _(e) {
       }), (null == Z || null == (w = Z.rewardSelection) || null == (_ = w.secondarySubtitle) ? true : _.call(w)) != null && (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
         color: "text-secondary",
-        children: null == Z || null == (O = Z.rewardSelection) ? true : O.secondarySubtitle()
+        children: null == Z || null == (C = Z.rewardSelection) ? true : C.secondarySubtitle()
       }), (0, r.jsx)(s.olH, {
         "data-migration-pending": true,
         className: S.closeButton,
-        onClick: k
+        onClick: E
       })]
     }), (0, r.jsx)(s.hzk, {
       "data-migration-pending": true,

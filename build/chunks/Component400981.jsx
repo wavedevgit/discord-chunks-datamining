@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 400981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,29 +22,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk473936 = require("./473936.js");
 
-function P(e) {
+function y(e) {
   let {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
-    selectedGiftingPromotionReward: P
+    selectedGiftingPromotionReward: y
   } = e, j = (0, i.e7)([g.default], () => g.default.getCurrentUser()), S = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), {
     analyticsLocations: _
-  } = (0, c.ZP)(), w = s.EFr.SIZE_32, O = (0, u.Z)(null == P ? true : P.assetId, w, !S), C = (0, b.Z)(), k = null == C ? true : C.giftPurchaseConfirmation, E = (null == P ? true : P.type) === a.Z.NAMEPLATE, [I, T] = l.useState(false), N = l.useMemo(() => {
+  } = (0, c.ZP)(), w = s.EFr.SIZE_32, C = (0, u.Z)(null == y ? true : y.assetId, w, !S), O = (0, b.Z)(), E = null == O ? true : O.giftPurchaseConfirmation, k = (null == y ? true : y.type) === a.Z.NAMEPLATE, [I, T] = l.useState(false), N = l.useMemo(() => {
     var e, t;
-    return E && (null == P ? true : P.assetId) != null ? {
-      src: P.assetId,
-      palette: (0, h.t1)(null != (t = P.palette) ? t : "sky"),
-      imgAlt: null == (e = P.a11yLabel) ? true : e.call(P)
+    return k && (null == y ? true : y.assetId) != null ? {
+      src: y.assetId,
+      palette: (0, h.t1)(null != (t = y.palette) ? t : "sky"),
+      imgAlt: null == (e = y.a11yLabel) ? true : e.call(y)
     } : null
-  }, [E, P]);
-  return null == n || null == k ? null : (0, r.jsx)(v.O3, {
+  }, [k, y]);
+  return null == n || null == E ? null : (0, r.jsx)(v.O3, {
     children: (0, r.jsx)(s.mzw, {
       align: m.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
-        className: y.promotionalFooter,
-        children: [E && null != N ? (0, r.jsx)("div", {
-          className: y.nameplatePreviewContainer,
+        className: P.promotionalFooter,
+        children: [k && null != N ? (0, r.jsx)("div", {
+          className: P.nameplatePreviewContainer,
           onMouseEnter: () => T(true),
           onMouseLeave: () => T(false),
           children: (0, r.jsx)(f.R, {
@@ -59,10 +59,10 @@ function P(e) {
           "aria-label": null == j ? true : j.username,
           size: w,
           src: null == j ? true : j.getAvatarURL(true, (0, s.pxk)(w), !S),
-          avatarDecoration: O
+          avatarDecoration: C
         }), (0, r.jsx)(o.zxk, {
           variant: "primary",
-          text: k.collectRewardButtonText(),
+          text: E.collectRewardButtonText(),
           onClick: () => {
             t(), (0, p.Z)({
               product: n,

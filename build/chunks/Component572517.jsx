@@ -27,15 +27,15 @@ function h() {
     } = (0, Chunk987209.wD)();
   if (null == g || null == v) return null;
   let x = null == (e = g.getBackgroundImageUrl) ? true : module.call(g, f),
-    y = (0, Chunk717401.Yr)(x),
-    P = null == (t = g.gradientConfig) ? true : exports.call(g, {
+    P = (0, Chunk717401.Yr)(x),
+    y = null == (t = g.gradientConfig) ? true : exports.call(g, {
       isDarkMode: f,
       isAndroid: false
     }),
-    j = (0, Chunk717401.Tl)(P, {
+    j = (0, Chunk717401.Tl)(y, {
       colorStops: [0, 12, 100]
     }),
-    S = (0, Chunk717401.$q)(y, j, {
+    S = (0, Chunk717401.$q)(P, j, {
       backgroundSize: "cover, auto",
       backgroundPosition: "right center, 0% 0%"
     });
