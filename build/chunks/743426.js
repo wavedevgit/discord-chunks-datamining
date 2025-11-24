@@ -266,10 +266,7 @@ class I extends Chunk47770.Z {
     null == (t = (n = (0, d.zS)()).setAsyncVideoInputDeviceInitSetting) || t.call(n, e), null == (r = (i = (0, d.zS)()).setAsyncVideoInputDeviceInit) || r.call(i, e)
   }
   setAsyncClipsSourceDeinit(e) {
-    var t, n, r, i;
-    try {
-      null == (r = (i = (0, d.zS)()).setAsyncClipsSourceDeinitSetting) || r.call(i, e)
-    } catch (e) {}
+    var t, n;
     null == (t = (n = (0, d.zS)()).setAsyncClipsSourceDeinit) || t.call(n, e)
   }
   getSupportedVideoCodecs(e) {
