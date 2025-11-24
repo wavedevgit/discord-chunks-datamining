@@ -118,11 +118,12 @@ let m = {
       emerald: u.VU.PREMIUM_TENURE_36_MONTH,
       ruby: u.VU.PREMIUM_TENURE_60_MONTH,
       opal: u.VU.PREMIUM_TENURE_72_MONTH
-    })[p], [p]), N = (0, c.J)(C), R = i.useMemo(() => {
+    })[p], [p]), N = null != C ? (0, c.J)(C) : null, R = i.useMemo(() => {
+      if (null == C) return "";
       let e = u.vK[C];
       return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
     }, [C]), P = i.useMemo(() => {
-      if (!a) return;
+      if (!a || null == N) return;
       let e = g ? {
         progressCircleText: E,
         progressCirclePercent: b,
