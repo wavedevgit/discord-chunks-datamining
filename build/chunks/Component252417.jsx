@@ -1,7 +1,7 @@
-/** Chunk was on 90347 **/
+/** Chunk was on 82082 **/
 /** chunk id: 252417, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,15 +22,15 @@ var Chunk54381 = require("./54381.js"),
 let g = Chunk481060.EFr.SIZE_40,
   O = (0, Chunk481060.pxk)(g);
 
-function y(e) {
+function x(e) {
   let {
     user: t,
-    status: y,
-    guildId: x,
+    status: x,
+    guildId: y,
     channelId: P,
-    onSelect: _
+    onSelect: w
   } = e, {
-    theme: w,
+    theme: _,
     themeType: S
   } = (0, m.z)(), Z = n.useMemo(() => t.isNonUserBot() || (0, f.W)(t, P), [t, P]), {
     activities: E,
@@ -38,18 +38,18 @@ function y(e) {
   } = (0, a.cj)([p.Z], () => ({
     activities: p.Z.getActivities(t.id),
     isMobileOnline: p.Z.isMobileOnline(t.id)
-  })), k = (0, v.Z)(t.id), {
-    voiceActivityStatusEnabled: I
+  })), I = (0, v.Z)(t.id), {
+    voiceActivityStatusEnabled: k
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
     voiceChannel: N
   } = (0, u.Z)({
-    userId: I ? t.id : true,
-    guildId: x
+    userId: k ? t.id : true,
+    guildId: y
   });
-  return (0, i.jsxs)(s.P3F, {
-    focusProps: S === b.l.MODAL_V2 ? {
+  return (0, i.jsxs)(o.P3F, {
+    focusProps: S === j.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -60,10 +60,10 @@ function y(e) {
         right: 8
       }
     },
-    className: j.row,
-    onClick: _,
+    className: b.row,
+    onClick: w,
     onContextMenu: e => {
-      (0, o.jW)(e, async () => {
+      (0, s.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([r.e("79695"), r.e("69220"), r.e("77635")]).then(r.bind(r, 881351));
@@ -101,24 +101,24 @@ function y(e) {
         }
       })
     },
-    children: [(0, i.jsx)(s.qEK, {
-      src: t.getAvatarURL(x, O),
+    children: [(0, i.jsx)(o.qEK, {
+      src: t.getAvatarURL(y, O),
       "aria-label": t.username,
       size: g,
-      status: Z ? h.Skl.UNKNOWN : y,
-      statusBackdropColor: Z ? true : (0, s.QFD)(w),
+      status: Z ? h.Skl.UNKNOWN : x,
+      statusBackdropColor: Z ? true : (0, o.QFD)(_),
       isMobile: A,
-      className: j.avatar
+      className: b.avatar
     }), (0, i.jsxs)("div", {
-      className: j.details,
+      className: b.details,
       children: [(0, i.jsx)(l.Z, {
         user: t,
-        className: j.tag,
-        discriminatorClass: j.discriminator
+        className: b.tag,
+        discriminatorClass: b.discriminator
       }), (0, i.jsx)(d.Z, {
         user: t,
         activities: E,
-        applicationStream: k,
+        applicationStream: I,
         voiceChannel: N
       })]
     })]

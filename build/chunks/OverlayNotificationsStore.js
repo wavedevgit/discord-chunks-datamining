@@ -193,7 +193,7 @@ function ev(e) {
 }
 
 function eE() {
-  if (!(0, Chunk32300.Yo)("OverlayNotificationStore") || Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.NowPlayingNotification)) returnfalse;
+  if (Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.NowPlayingNotification)) returnfalse;
   let e = Chunk649974.Z.usersPlaying,
     t = new Set,
     n = function() {

@@ -2,7 +2,7 @@
 /** chunk id: 956699, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => ey
+  Z: () => em
 }), require("./388685.js"), require("./35282.js"), require("./781311.js"), require("./49124.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,14 +32,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk38618 = require("./38618.js"),
   Chunk375657 = require("./375657.js"),
   Chunk171393 = require("./171393.js"),
-  Chunk837268 = require("./837268.js"),
-  Chunk32300 = require("./32300.js"),
-  Chunk371651 = require("./371651.js"),
   Chunk398269 = require("./398269.jsx"),
   Chunk921801 = require("./921801.js"),
   Chunk857192 = require("./857192.js"),
   Chunk558724 = require("./558724.js"),
-  Chunk808506 = require("./808506.js"),
   Chunk626135 = require("./626135.js"),
   Chunk709054 = require("./709054.js"),
   Chunk998502 = require("./998502.js"),
@@ -56,7 +52,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk620842 = require("./620842.js"),
   Chunk197571 = require("./197571.js");
 
-function ee(e, t, n) {
+function X(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -65,20 +61,20 @@ function ee(e, t, n) {
   }) : e[t] = n, e
 }
 
-function et(e) {
+function Q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      ee(e, t, n[t])
+      X(e, t, n[t])
     })
   }
   return e
 }
 
-function en(e, t) {
+function J(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -89,13 +85,13 @@ function en(e, t) {
   return n
 }
 
-function er(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : en(Object(t)).forEach(function(n) {
+function $(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : J(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let ei = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
-  ea = [{
+let ee = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
+  et = [{
     value: "branch",
     label: "Branch Name"
   }, {
@@ -103,10 +99,10 @@ let ei = ["discord_web", "discord_marketing", "discord_developers", "discord_ios
     label: "Commit SHA"
   }];
 
-function eo(e) {
+function en(e) {
   return "discord_ios" in e || "discord_android" in e
 }
-class es extends Chunk473749.Component {
+class er extends Chunk473749.Component {
   render() {
     let {
       project: e,
@@ -130,7 +126,7 @@ class es extends Chunk473749.Component {
           children: (0, Chunk54381.jsx)(Chunk481060.q4e, {
             label: "Override Type",
             className: Chunk674336.item,
-            options: ea,
+            options: et,
             onChange: this.handleOverrideTypeChanged,
             value: exports,
             isDisabled: Chunk473749
@@ -162,13 +158,13 @@ class es extends Chunk473749.Component {
     })
   }
   constructor(...e) {
-    super(...e), ee(this, "handleRemoveBuildOverride", () => {
+    super(...e), X(this, "handleRemoveBuildOverride", () => {
       this.props.onBuildOverrideRemoved(this.props.project)
-    }), ee(this, "handleOverrideIdChanged", e => {
+    }), X(this, "handleOverrideIdChanged", e => {
       this.props.onBuildOverrideUpdated(this.props.project, {
         id: e
       })
-    }), ee(this, "handleOverrideTypeChanged", e => {
+    }), X(this, "handleOverrideTypeChanged", e => {
       this.props.onBuildOverrideUpdated(this.props.project, {
         type: e,
         id: ""
@@ -176,7 +172,7 @@ class es extends Chunk473749.Component {
     })
   }
 }
-class el extends Chunk473749.Component {
+class ei extends Chunk473749.Component {
   async refreshBuildOverrides() {
     this.setState({
       loading: true
@@ -205,7 +201,7 @@ class el extends Chunk473749.Component {
     } = this.state;
     if (null == module) return [];
     let t = Object.keys(module);
-    return l().without(ei, ...exports)
+    return l().without(ee, ...exports)
   }
   renderEmpty() {
     return (0, Chunk54381.jsx)(Chunk481060.ubH, {
@@ -222,7 +218,7 @@ class el extends Chunk473749.Component {
       saving: t,
       errors: n
     } = this.state;
-    return null == module ? null : l().map(module, (e, i) => (0, r.jsx)(es, {
+    return null == module ? null : l().map(module, (e, i) => (0, r.jsx)(er, {
       project: i,
       overrideType: e.type,
       overrideId: e.id,
@@ -268,7 +264,7 @@ class el extends Chunk473749.Component {
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: "Save Build Overrides",
-        disabled: eo(null != exports ? exports : {}),
+        disabled: en(null != exports ? exports : {}),
         onClick: this.handleSaveChanges,
         loading: module
       })]
@@ -284,7 +280,7 @@ class el extends Chunk473749.Component {
       className: Chunk197571.marginTop20
     }) : null != Chunk473749 && 0 === Object.keys(Chunk473749).length ? this.renderEmpty() : this.renderItems();
     let a = !require && !exports && this.getAvailableProjects().length > 0,
-      o = eo(null != Chunk473749 ? Chunk473749 : {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, Chunk54381.jsx)(Chunk481060.Text, {
+      o = en(null != Chunk473749 ? Chunk473749 : {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, Chunk54381.jsx)(Chunk481060.Text, {
         color: "text-danger",
         variant: "text-md/normal",
         children: "Mobile build overrides must be generated using the desktop/web stable client for now!"
@@ -315,16 +311,16 @@ class el extends Chunk473749.Component {
     })
   }
   constructor(...e) {
-    super(...e), ee(this, "state", {
+    super(...e), X(this, "state", {
       loading: true,
       buildOverrides: {},
       loadedBuildOverrides: {},
       errors: {},
       saving: false,
       didSave: false
-    }), ee(this, "handleAddBuildOverride", e => {
+    }), X(this, "handleAddBuildOverride", e => {
       if (null == e) return;
-      let t = er(et({}, this.state.buildOverrides), {
+      let t = $(Q({}, this.state.buildOverrides), {
         [e]: {
           type: "branch",
           id: ""
@@ -333,27 +329,27 @@ class el extends Chunk473749.Component {
       this.setState({
         buildOverrides: t
       })
-    }), ee(this, "handleBuildOverrideUpdated", (e, t) => {
+    }), X(this, "handleBuildOverrideUpdated", (e, t) => {
       let {
         buildOverrides: n
-      } = this.state, r = et({}, null != n ? n[e] : {}, t), i = er(et({}, this.state.buildOverrides), {
+      } = this.state, r = Q({}, null != n ? n[e] : {}, t), i = $(Q({}, this.state.buildOverrides), {
         [e]: r
       });
       this.setState({
         buildOverrides: i
       })
-    }), ee(this, "handleBuildOverrideRemoved", e => {
-      let t = et({}, this.state.buildOverrides);
+    }), X(this, "handleBuildOverrideRemoved", e => {
+      let t = Q({}, this.state.buildOverrides);
       delete t[e], this.setState({
         buildOverrides: t
       })
-    }), ee(this, "handleDiscardChanges", () => {
+    }), X(this, "handleDiscardChanges", () => {
       this.setState({
         buildOverrides: l().cloneDeep(this.state.loadedBuildOverrides),
         errors: {},
         didSave: false
       })
-    }), ee(this, "handleSaveChanges", async () => {
+    }), X(this, "handleSaveChanges", async () => {
       let {
         buildOverrides: e
       } = this.state;
@@ -382,20 +378,20 @@ class el extends Chunk473749.Component {
         saving: false,
         didSave: false
       })
-    }), ee(this, "handleLinkGeneration", () => {
+    }), X(this, "handleLinkGeneration", () => {
       let {
         buildOverrides: e
       } = this.state;
-      (0, p.h7j)(t => (0, r.jsx)(ec, er(et({}, t), {
+      (0, p.h7j)(t => (0, r.jsx)(ea, $(Q({}, t), {
         buildOverrides: e
       })))
     })
   }
 }
-class ec extends Chunk473749.Component {
+class ea extends Chunk473749.Component {
   isMobile() {
     var e;
-    return eo(null != (e = this.props.buildOverrides) ? module : {})
+    return en(null != (e = this.props.buildOverrides) ? module : {})
   }
   renderSettingsForm() {
     let {
@@ -513,7 +509,7 @@ class ec extends Chunk473749.Component {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, ee(this, "state", {
+    super(...e), t = this, X(this, "state", {
       ttlSeconds: 3600,
       releaseChannel: "all",
       userIds: new Set,
@@ -526,34 +522,34 @@ class ec extends Chunk473749.Component {
       statusText: null,
       status: 0,
       allowLoggedOut: false
-    }), ee(this, "setUserEntryError", e => {
+    }), X(this, "setUserEntryError", e => {
       this.setState({
         userIdEntryError: e
       })
-    }), ee(this, "setStatusMessage", function(e) {
+    }), X(this, "setStatusMessage", function(e) {
       let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
       t.setState({
         statusText: e,
         status: n
       })
-    }), ee(this, "handleUserIDEntry", e => {
+    }), X(this, "handleUserIDEntry", e => {
       if (!/^[\d\s,]*$/.test(e)) return this.setUserEntryError("User IDs are numbers!");
       let t = new Set(e.split(/[,\s]+/).filter(Boolean));
       this.setState({
         userIdEntry: e,
         userIds: t
       })
-    }), ee(this, "setAllowedVersionError", e => {
+    }), X(this, "setAllowedVersionError", e => {
       this.setState({
         allowedVersionEntryError: e
       })
-    }), ee(this, "handleAllowedVersionEntry", e => {
+    }), X(this, "handleAllowedVersionEntry", e => {
       this.setState({
         allowedVersionEntry: e
       })
-    }), ee(this, "handleAllowedVersionEnter", e => {
-      e.charCode === q.yXg.ENTER && this.handleAddAllowedVersion()
-    }), ee(this, "handleAddAllowedVersion", () => {
+    }), X(this, "handleAllowedVersionEnter", e => {
+      e.charCode === Y.yXg.ENTER && this.handleAddAllowedVersion()
+    }), X(this, "handleAddAllowedVersion", () => {
       let {
         allowedVersions: e,
         allowedVersionEntry: t
@@ -563,26 +559,26 @@ class ec extends Chunk473749.Component {
         allowedVersionEntry: "",
         allowedVersionEntryError: ""
       })
-    }), ee(this, "handleRemoveAllowedVersion", e => {
+    }), X(this, "handleRemoveAllowedVersion", e => {
       let {
         allowedVersions: t
       } = this.state;
       t = t.filter(t => t !== e), this.setState({
         allowedVersions: t
       })
-    }), ee(this, "handleAllowLoggedOut", e => {
+    }), X(this, "handleAllowLoggedOut", e => {
       this.setState({
         allowLoggedOut: e
       })
-    }), ee(this, "handleExpirationChange", e => {
+    }), X(this, "handleExpirationChange", e => {
       this.setState({
         ttlSeconds: e
       })
-    }), ee(this, "handleReleaseChannelChange", e => {
+    }), X(this, "handleReleaseChannelChange", e => {
       this.setState({
         releaseChannel: e
       })
-    }), ee(this, "handleExperiments", e => {
+    }), X(this, "handleExperiments", e => {
       if (0 === e.trim().length) return void this.setState({
         experimentsError: true
       });
@@ -606,7 +602,7 @@ class ec extends Chunk473749.Component {
         experiments: e,
         experimentsError: true
       })
-    }), ee(this, "generatePayload", () => ({
+    }), X(this, "generatePayload", () => ({
       overrides: this.props.buildOverrides,
       meta: {
         release_channel: "all" === this.state.releaseChannel ? null : this.state.releaseChannel,
@@ -616,7 +612,7 @@ class ec extends Chunk473749.Component {
         allow_logged_out: this.state.allowLoggedOut,
         experiments: null == this.state.experiments ? null : JSON.parse(this.state.experiments)
       }
-    })), ee(this, "handleGenerateLink", async () => {
+    })), X(this, "handleGenerateLink", async () => {
       if (this.isMobile() && 0 === this.state.allowedVersions.length) return void this.setAllowedVersionError("You must add at least one allowed version for iOS");
       this.setStatusMessage(null);
       let e = this.generatePayload(),
@@ -628,7 +624,7 @@ class ec extends Chunk473749.Component {
   }
 }
 
-function eu() {
+function eo() {
   let {
     horizontalSpacing: e,
     verticalSpacing: t,
@@ -716,7 +712,7 @@ function eu() {
   })
 }
 
-function ed() {
+function es() {
   let {
     isTracingRequests: e,
     isForcedCanary: t,
@@ -766,7 +762,7 @@ function ed() {
         label: "Ads auto-targeting",
         description: "Make user targetable for all active ads",
         checked: Chunk433517,
-        onChange: e => V.zY.updateSetting(e)
+        onChange: e => G.zY.updateSetting(e)
       })
     }), (0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.DEVELOPER_OPTIONS_SOURCE_MAPS,
@@ -845,7 +841,7 @@ function ed() {
         description: "Disable aligning chat input to the bottom of the screen",
         checked: Chunk268146,
         onChange: e => {
-          G.default.track(q.rMx.GUILD_JOIN_FEEDBACK, {
+          M.default.track(Y.rMx.GUILD_JOIN_FEEDBACK, {
             reason: "disable-align-chat-input",
             rating: e ? "yes" : "no"
           }), (0, R.s)("go_back_to_regular_input", {
@@ -857,7 +853,7 @@ function ed() {
   })
 }
 
-function ef() {
+function el() {
   let {
     isLoggingGatewayEvents: e,
     isLoggingOverlayEvents: t,
@@ -918,38 +914,25 @@ function ef() {
   })
 }
 
-function e_() {
+function ec() {
   throw Error("Send help")
 }
 
-function ep(e) {
-  Z.ZP.triggerJSException(e)
+function eu(e) {
+  j.ZP.triggerJSException(e)
 }
 
-function eh() {
-  let e = (0, Chunk32300.XE)("developer_settings"),
-    t = (0, Chunk442837.e7)([Chunk371651.default], () => Chunk371651.default.getForcedRenderMode()),
-    [n, a] = Chunk473749.useState(false),
-    [o, s] = Chunk473749.useState(""),
-    l = module || exports === Chunk837268.R5.OUT_OF_PROCESS_V3 || exports === Chunk837268.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
-  return (Chunk473749.useEffect(() => {
-    (async () => {
-      Chunk392711(await (0, Chunk808506.getOverlayURL)())
-    })()
-  }, []), require) ? {} : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+function ed() {
+  let [e, t] = Chunk473749.useState(false);
+  return module ? {} : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsxs)("div", {
       className: [Chunk674336.buttonsContainer, Chunk197571.marginBottom20].join(" "),
       children: [(0, Chunk54381.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.DEVELOPER_OPTIONS_OVERRIDE_OPEN_OVERLAY,
-        children: l ? (0, Chunk54381.jsx)(Chunk481060.Button, {
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Open Overlay",
           onClick: () => (0, Chunk398269.f)()
-        }) : (0, Chunk54381.jsx)(Chunk481060.Button, {
-          variant: "primary",
-          text: "Open Overlay",
-          onClick: () => window.open(o, "_blank"),
-          disabled: "" === o
         })
       }), (0, Chunk54381.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.DEVELOPER_OPTIONS_RESET_SOCKET,
@@ -1009,7 +992,7 @@ function eh() {
               value: 4,
               label: "Out of Memory"
             }],
-            onChange: e => null != e && Z.ZP.crash(e)
+            onChange: e => null != e && j.ZP.crash(e)
           }), (0, Chunk54381.jsx)(Chunk481060.q4e, {
             value: true,
             options: [{
@@ -1025,15 +1008,15 @@ function eh() {
               value: Chunk268146.Xo.MainProcess,
               label: "Exception in main process"
             }],
-            onChange: e => null != e ? ep(e) : true
+            onChange: e => null != e ? eu(e) : true
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "React Crash",
-            onClick: () => Chunk120356(true)
+            onClick: () => exports(true)
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "onClick Throw",
-            onClick: e_
+            onClick: ec
           })]
         })
       })
@@ -1041,7 +1024,7 @@ function eh() {
   })
 }
 
-function em() {
+function ef() {
   let e = (0, Chunk442837.e7)([Chunk558724.Z], () => Chunk558724.Z.getSurveyOverride()),
     [t, n] = Chunk473749.useState(null != module ? module : ""),
     a = e => {
@@ -1073,7 +1056,7 @@ function em() {
   })
 }
 
-function eg() {
+function e_() {
   var e;
   let t = (0, Chunk442837.e7)([Chunk802098.Z], () => Chunk802098.Z.overrideId()),
     [n, a] = Chunk473749.useState(null != (e = Chunk802098.Z.overrideId()) ? module : ""),
@@ -1117,7 +1100,7 @@ function eg() {
   })
 }
 
-function eE() {
+function ep() {
   return (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE,
     children: (0, Chunk54381.jsx)(Chunk481060.C3N, {
@@ -1127,13 +1110,13 @@ function eE() {
   })
 }
 
-function eb() {
+function eh() {
   return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
     gap: 24,
-    children: [(0, Chunk54381.jsx)(el, {}), (0, Chunk54381.jsx)(Chunk793030.izJ, {}), (0, Chunk54381.jsx)(em, {}), (0, Chunk54381.jsx)(Chunk793030.izJ, {}), (0, Chunk54381.jsx)(eg, {}), (0, Chunk54381.jsx)(Chunk793030.izJ, {}), (0, Chunk54381.jsx)(eE, {})]
+    children: [(0, Chunk54381.jsx)(ei, {}), (0, Chunk54381.jsx)(Chunk793030.izJ, {}), (0, Chunk54381.jsx)(ef, {}), (0, Chunk54381.jsx)(Chunk793030.izJ, {}), (0, Chunk54381.jsx)(e_, {}), (0, Chunk54381.jsx)(Chunk793030.izJ, {}), (0, Chunk54381.jsx)(ep, {})]
   })
 }
-let ey = function() {
+let em = function() {
   return (0, Chunk54381.jsx)(Chunk10298.N, {
     header: "Developer Options",
     children: (0, Chunk54381.jsx)(Chunk526156.Z, {
@@ -1141,23 +1124,23 @@ let ey = function() {
       settingsSection: Chunk981631.oAB.DEVELOPER_OPTIONS,
       tabs: [{
         title: "Overrides",
-        component: eb,
+        component: eh,
         setting: Chunk726985.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB
       }, {
         title: "Manual Triggers",
-        component: eh,
+        component: ed,
         setting: Chunk726985.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB
       }, {
         title: "Developer Flags",
-        component: ed,
+        component: es,
         setting: Chunk726985.s6.DEVELOPER_OPTIONS_FLAGS_TAB
       }, {
         title: "Logging",
-        component: ef,
+        component: el,
         setting: Chunk726985.s6.DEVELOPER_OPTIONS_LOGGING_TAB
       }, {
         title: "Design Tools",
-        component: eu,
+        component: eo,
         setting: Chunk726985.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB
       }]
     })

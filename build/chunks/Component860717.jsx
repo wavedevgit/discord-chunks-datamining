@@ -164,7 +164,7 @@ function R(e) {
   return null != e && e.loadingState === s.f.LOADED_SUCCESS && null != e.width && null != e.height
 }
 
-function L(e) {
+function G(e) {
   let {
     component: t
   } = e;
@@ -197,8 +197,8 @@ function L(e) {
       });
     case "FIELD":
       return (0, r.jsx)(U, {
-        value: G(t.value),
-        name: G(t.name)
+        value: L(t.value),
+        name: L(t.name)
       });
     case "TEXT":
       return (0, r.jsx)(W, k({}, t));
@@ -211,14 +211,14 @@ function L(e) {
   }
 }
 
-function G(e, t) {
-  return (0, r.jsx)(L, {
+function L(e, t) {
+  return (0, r.jsx)(G, {
     component: e
   }, t)
 }
 
 function M(e) {
-  return e.map((e, t) => G(e, t))
+  return e.map((e, t) => L(e, t))
 }
 
 function B(e) {
@@ -473,13 +473,13 @@ let $ = Object.assign(function(e) {
     fetched: T,
     hasAlreadyLinked: A,
     canStartAuthorization: R,
-    startAuthorization: G
+    startAuthorization: L
   } = (0, u.F)(m), M = i.useCallback(() => {
     R && (t({
       action: "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
       applicationId: a.applicationId
-    }), G())
-  }, [R, G, t, a.applicationId]), B = null == s && T && !A && R, F = (0, r.jsxs)(r.Fragment, {
+    }), L())
+  }, [R, L, t, a.applicationId]), B = null == s && T && !A && R, F = (0, r.jsxs)(r.Fragment, {
     children: [null != y ? (0, r.jsx)("img", {
       className: D.appIcon,
       src: y,
@@ -583,7 +583,7 @@ let $ = Object.assign(function(e) {
       value: e,
       children: (0, r.jsx)(Q, {
         widget: a,
-        children: (0, r.jsx)(L, {
+        children: (0, r.jsx)(G, {
           component: H
         })
       })

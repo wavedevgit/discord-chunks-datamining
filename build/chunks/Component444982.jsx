@@ -1,12 +1,11 @@
 /** Chunk was on 50751 **/
 /** chunk id: 444982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk239091 = require("./239091.js"),
   Chunk482798 = require("./482798.js"),
-  Chunk32300 = require("./32300.js"),
   Chunk603618 = require("./603618.jsx"),
   Chunk926086 = require("./926086.jsx"),
   Chunk878939 = require("./878939.jsx"),
@@ -23,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -42,7 +41,7 @@ function _(e) {
   return e
 }
 
-function S(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +53,7 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = {
+let S = {
   [Chunk981631.Odu.VIDEO]: {
     renderWidget(e) {
       let {
@@ -65,7 +64,7 @@ let x = {
         borderWidth: o,
         showEmpty: a
       } = e;
-      return (0, h.js)(t) ? (0, i.jsx)(m.Z, {
+      return (0, d.js)(t) ? (0, i.jsx)(f.Z, {
         id: t.id,
         locked: n,
         widget: t,
@@ -80,18 +79,18 @@ let x = {
       children: Chunk388032.intl.string(Chunk388032.t.UPvOia)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(y.ls, {
+      children: [(0, i.jsx)(g.ls, {
         onClick: t => {
-          (0, h.js)(e) && (0, r.jW)(t, async () => {
+          (0, d.js)(e) && (0, r.jW)(t, async () => {
             let {
               default: t
             } = await n.e("26775").then(n.bind(n, 740579));
-            return n => (0, i.jsx)(t, S(_({}, n), {
+            return n => (0, i.jsx)(t, _(b({}, n), {
               widget: e
             }))
           })
         }
-      }), (0, i.jsx)(y.RT, {
+      }), (0, i.jsx)(g.RT, {
         id: e.id,
         pinned: e.pinned
       })]
@@ -107,13 +106,13 @@ let x = {
         locked: l,
         showEmpty: o
       } = e;
-      return (0, h.Aw)(n) ? (0, i.jsx)(g.ZP, {
+      return (0, d.Aw)(n) ? (0, i.jsx)(m.ZP, {
         anchorLeft: r,
         id: n.id,
         locked: l,
         pinned: n.pinned,
-        widget: E.Odu.VOICE_V3,
-        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : v.At,
+        widget: v.Odu.VOICE_V3,
+        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : O.At,
         isPreviewingInGame: false,
         showEmpty: o
       }) : null
@@ -122,16 +121,16 @@ let x = {
       children: Chunk388032.intl.string(Chunk388032.t.nFv3Gb)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(y.ls, {
+      children: [(0, i.jsx)(g.ls, {
         onClick: e => {
           (0, r.jW)(e, async () => {
             let {
               default: e
             } = await n.e("32382").then(n.bind(n, 955280));
-            return t => (0, i.jsx)(e, _({}, t))
+            return t => (0, i.jsx)(e, b({}, t))
           })
         }
-      }), (0, i.jsx)(y.RT, {
+      }), (0, i.jsx)(g.RT, {
         id: e.id,
         pinned: e.pinned
       })]
@@ -143,7 +142,7 @@ let x = {
         widget: t,
         locked: n
       } = e;
-      return (0, i.jsx)(s.Z, {
+      return (0, i.jsx)(a.Z, {
         id: t.id,
         locked: n,
         pinned: t.pinned
@@ -153,16 +152,16 @@ let x = {
       children: "Click Zone Tester"
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(y.ls, {
+      children: [(0, i.jsx)(g.ls, {
         onClick: e => {
           (0, r.jW)(e, async () => {
             let {
               default: e
             } = await n.e("38813").then(n.bind(n, 541501));
-            return t => (0, i.jsx)(e, _({}, t))
+            return t => (0, i.jsx)(e, b({}, t))
           })
         }
-      }), (0, i.jsx)(y.RT, {
+      }), (0, i.jsx)(g.RT, {
         id: e.id,
         pinned: e.pinned
       })]
@@ -175,7 +174,7 @@ let x = {
         locked: n,
         anchorLeft: r
       } = e;
-      return (0, i.jsx)(p.Z, {
+      return (0, i.jsx)(h.Z, {
         id: t.id,
         anchorLeft: r,
         locked: n,
@@ -185,7 +184,7 @@ let x = {
     renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
       children: "Overlay Performance"
     }),
-    renderButtons: e => (0, i.jsx)(y.RT, {
+    renderButtons: e => (0, i.jsx)(g.RT, {
       id: e.id,
       pinned: e.pinned
     })
@@ -200,11 +199,11 @@ let x = {
         dragStart: o,
         anchorTop: a,
         anchorLeft: s,
-        showEmpty: c,
-        padding: d,
+        showEmpty: u,
+        padding: h,
         borderWidth: p
       } = e;
-      return (0, h.ZL)(n) ? (0, i.jsx)(u.Z, {
+      return (0, d.ZL)(n) ? (0, i.jsx)(c.Z, {
         id: n.id,
         locked: r,
         pinned: n.pinned,
@@ -216,33 +215,33 @@ let x = {
         isPreviewingInGame: false,
         dragStart: o,
         horizontal: null != (t = n.meta.horizontal) && t,
-        padding: d,
+        padding: h,
         borderWidth: p,
-        showEmpty: c
+        showEmpty: u
       }) : null
     },
-    renderTitle: e => (0, i.jsx)(y.XM, {
+    renderTitle: e => (0, i.jsx)(g.XM, {
       widgetId: e.id,
-      children: b.intl.string(b.t["386XRo"])
+      children: E.intl.string(E.t["386XRo"])
     }),
     renderButtons(e) {
       var t;
-      return (0, h.ZL)(e) ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(y.ls, {
+      return (0, d.ZL)(e) ? (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(g.ls, {
           onClick: t => {
-            (0, h.ZL)(e) && (0, r.jW)(t, async () => {
+            (0, d.ZL)(e) && (0, r.jW)(t, async () => {
               let {
                 default: t
               } = await n.e("34684").then(n.bind(n, 68738));
-              return n => (0, i.jsx)(t, S(_({}, n), {
+              return n => (0, i.jsx)(t, _(b({}, n), {
                 widget: e
               }))
             })
           }
-        }), (0, i.jsx)(y.GY, {
+        }), (0, i.jsx)(g.GY, {
           widgetId: e.id,
           showAllStreams: null == (t = e.meta.showAllStreams) || t
-        }), (0, i.jsx)(y.RT, {
+        }), (0, i.jsx)(g.RT, {
           id: e.id,
           pinned: e.pinned
         })]
@@ -255,7 +254,7 @@ let x = {
       let {
         locked: t
       } = e;
-      return (0, i.jsx)(f.Z, {
+      return (0, i.jsx)(p.Z, {
         locked: t
       })
     }
@@ -267,7 +266,7 @@ let x = {
         showEmpty: n,
         widget: r
       } = e;
-      return (0, i.jsx)(O.Z, {
+      return (0, i.jsx)(y.Z, {
         pinned: r.pinned,
         locked: t,
         showEmpty: n
@@ -277,16 +276,16 @@ let x = {
       children: Chunk388032.intl.string(Chunk388032.t.gnKWdS)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(y.ls, {
+      children: [(0, i.jsx)(g.ls, {
         onClick: e => {
           (0, r.jW)(e, async () => {
             let {
               default: e
             } = await n.e("94706").then(n.bind(n, 168133));
-            return t => (0, i.jsx)(e, _({}, t))
+            return t => (0, i.jsx)(e, b({}, t))
           })
         }
-      }), (0, i.jsx)(y.RT, {
+      }), (0, i.jsx)(g.RT, {
         id: e.id,
         pinned: e.pinned
       })]
@@ -297,7 +296,7 @@ let x = {
       let {
         locked: t
       } = e;
-      return (0, i.jsx)(a.ZP, {
+      return (0, i.jsx)(o.ZP, {
         locked: t
       })
     },
@@ -305,14 +304,14 @@ let x = {
       children: Chunk388032.intl.string(Chunk388032.t["6gwSFY"])
     }),
     renderButtons: () => null,
-    predicate: () => (0, Chunk32300.Rb)("ActivityPopout").allowActivityWidget && !(0, Chunk482798.XU)("FriendsPopout").enableOverlayWidget
+    predicate: () => !(0, Chunk482798.XU)("FriendsPopout").enableOverlayWidget
   },
   [Chunk981631.Odu.FRIENDS]: {
     renderWidget(e) {
       let {
         locked: t
       } = e;
-      return (0, i.jsx)(c.Z, {
+      return (0, i.jsx)(s.Z, {
         locked: t
       })
     },

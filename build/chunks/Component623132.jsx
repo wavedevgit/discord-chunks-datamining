@@ -283,20 +283,20 @@ function Z(e) {
     tags: Z
   } = o, {
     coverImageUrl: R,
-    gameName: L,
-    isLoading: G
+    gameName: G,
+    isLoading: L
   } = (0, _.Z)(D), M = {
     variant: "heading-sm/medium",
     color: "text-default"
   }, B = f.default.getCurrentUser(), F = (null == B ? true : B.id) === t.id, U = 1 === (0, m.Gv)(s), W = !u && F, H = W && (0, m.vI)(s), z = W && !U, {
     registerDragHandleRef: K
   } = (0, h.C)(), q = i.useRef(null);
-  if (G) return (0, r.jsx)(v.i, {});
+  if (L) return (0, r.jsx)(v.i, {});
   let V = () => (0, r.jsx)(y.Z, {
       coverRef: p,
       className: null == R || u ? true : I.hoverActiveEffect,
       imageSrc: R,
-      gameName: L,
+      gameName: G,
       applicationId: D,
       userId: t.id,
       disableInteraction: u,
@@ -317,11 +317,11 @@ function Z(e) {
       }) : V(), (0, r.jsxs)("div", {
         className: w.details,
         children: [u ? (0, r.jsx)(c.Heading, E(S({}, M), {
-          children: L
+          children: G
         })) : (0, r.jsx)(C, S({
           applicationId: D,
           userId: t.id,
-          gameName: L
+          gameName: G
         }, M)), H ? (0, r.jsx)(A, {
           text: k,
           user: t,

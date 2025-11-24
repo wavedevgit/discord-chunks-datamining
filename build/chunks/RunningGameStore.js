@@ -322,7 +322,7 @@ function eN(e) {
       reason: "Some library application thing?"
     }
   }
-  let o = (0, O.NW)("getRawOverlayGameStatus") && (0, L.supportsOutOfProcess)() && !t,
+  let o = (0, L.supportsOutOfProcess)() && !t,
     s = eC(null != a ? a : i),
     l = b.v.legacyEnabled,
     c = o && !s,
@@ -624,7 +624,7 @@ function e4(e) {
     t = new Set;
   r = {};
   let n = Chunk77498.Z.games,
-    i = (0, Chunk32300.NW)("handleGamesDatabaseUpdate") && (0, Chunk145597.supportsOutOfProcess)();
+    i = (0, Chunk145597.supportsOutOfProcess)();
   for (let e of require) {
     var a, o, s, l;
     let t = eC(module),

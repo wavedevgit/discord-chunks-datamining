@@ -2,29 +2,23 @@
 /** chunk id: 32300, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F3: () => k,
-  KK: () => w,
-  NW: () => d,
-  OV: () => l,
-  RD: () => y,
-  Rb: () => u,
-  Se: () => m,
-  Sy: () => P,
-  T_: () => M,
-  XE: () => f,
-  YB: () => b,
-  Yo: () => _,
-  ZU: () => A,
-  aq: () => I,
-  dj: () => p,
-  eV: () => C,
-  hS: () => g,
-  hb: () => R,
-  lj: () => v,
-  mB: () => E,
-  o4: () => c,
-  tU: () => S,
-  td: () => h
+  F3: () => P,
+  KK: () => A,
+  RD: () => p,
+  Se: () => u,
+  Sy: () => T,
+  T_: () => R,
+  YB: () => _,
+  ZU: () => y,
+  aq: () => g,
+  dj: () => l,
+  eV: () => O,
+  hS: () => d,
+  hb: () => I,
+  lj: () => m,
+  mB: () => f,
+  tU: () => b,
+  td: () => c
 });
 var Chunk348327 = require("./348327.js"),
   i = require.n(Chunk348327),
@@ -32,83 +26,6 @@ var Chunk348327 = require("./348327.js"),
   Chunk427164 = require("./427164.js"),
   Chunk987338 = require("./987338.js");
 let l = (0, Chunk818083.B)({
-  kind: "user",
-  id: "2024-10_overlay_v3",
-  label: "Overlay V3 Shared Context OOP",
-  commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN,
-  defaultConfig: {
-    overlayV3tech: false,
-    overlayV3UI: false,
-    allowActivityWidget: false,
-    allowNowPlaying: false
-  },
-  treatments: [{
-    id: 1,
-    label: "Use Overlay V3, All features included.",
-    config: {
-      overlayV3tech: true,
-      overlayV3UI: true,
-      allowActivityWidget: true,
-      allowNowPlaying: true
-    }
-  }, {
-    id: 2,
-    label: 'Use Overlay V3, Minus "Now Playing" Notif.',
-    config: {
-      overlayV3tech: true,
-      overlayV3UI: true,
-      allowActivityWidget: true,
-      allowNowPlaying: false
-    }
-  }, {
-    id: 3,
-    label: "Use Overlay V3 minus any activity",
-    config: {
-      overlayV3tech: true,
-      overlayV3UI: true,
-      allowActivityWidget: false,
-      allowNowPlaying: false
-    }
-  }, {
-    id: 4,
-    label: "Use Overlay V3 tech with Overlay 2 UI",
-    config: {
-      overlayV3tech: true,
-      overlayV3UI: false,
-      allowActivityWidget: false,
-      allowNowPlaying: false
-    }
-  }]
-});
-
-function c(e) {
-  return l.useExperiment({
-    location: e
-  })
-}
-
-function u(e) {
-  let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return l.getCurrentConfig({
-    location: e
-  }, {
-    autoTrackExposure: t
-  })
-}
-
-function d(e) {
-  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return u(e, t).overlayV3tech
-}
-
-function f(e) {
-  return c(e).overlayV3tech
-}
-
-function _(e) {
-  return u(e).allowNowPlaying
-}
-let p = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-06_overlay_raf_manager",
   label: "Overlay RAF Manager",
@@ -125,15 +42,15 @@ let p = (0, Chunk818083.B)({
   }]
 });
 
-function h(e) {
+function c(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return p.getCurrentConfig({
+  return l.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
-let m = (0, Chunk818083.B)({
+let u = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-06_overlay_render_timeout",
   label: "Overlay Render Timeout",
@@ -166,15 +83,15 @@ let m = (0, Chunk818083.B)({
   }]
 });
 
-function g(e) {
+function d(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return m.getCurrentConfig({
+  return u.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
-let E = (0, Chunk818083.B)({
+let f = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-07_overlay_default_disable",
   label: "Overlay Default Disable",
@@ -191,18 +108,18 @@ let E = (0, Chunk818083.B)({
   }]
 });
 
-function b(e) {
+function _(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return E.getCurrentConfig({
+  return f.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   }).enabled
 }
-var y = function(e) {
+var p = function(e) {
   return e[e.GREEN_BUTTON_WITH_TEXT = 0] = "GREEN_BUTTON_WITH_TEXT", e[e.GRAY_BUTTON_WITH_TEXT = 1] = "GRAY_BUTTON_WITH_TEXT", e[e.SINGLE_ICON_BUTTON = 2] = "SINGLE_ICON_BUTTON", e
 }({});
-let O = (0, Chunk427164.le)({
+let h = (0, Chunk427164.le)({
   name: "2025-08-overlay-stream-watch-nudge",
   kind: "user",
   defaultConfig: {
@@ -225,18 +142,18 @@ let O = (0, Chunk427164.le)({
   }
 });
 
-function v(e) {
-  return O.getConfig({
+function m(e) {
+  return h.getConfig({
     location: e
   })
 }
 
-function I(e) {
-  return O.useConfig({
+function g(e) {
+  return h.useConfig({
     location: e
   })
 }
-let T = (0, Chunk818083.B)({
+let E = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-10_overlay_v3_one_click_go_live",
   label: "Overlay V3 One Click Go Live",
@@ -261,15 +178,15 @@ let T = (0, Chunk818083.B)({
   }]
 });
 
-function S(e) {
+function b(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return T.getCurrentConfig({
+  return E.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
-let A = (0, Chunk818083.B)({
+let y = (0, Chunk818083.B)({
   id: "2025-10_overlay_default_keybind",
   label: "Overlay Default Keybind",
   kind: "user",
@@ -297,15 +214,15 @@ let A = (0, Chunk818083.B)({
   }]
 });
 
-function C(e) {
+function O(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return A.getCurrentConfig({
+  return y.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
-let N = (0, Chunk818083.B)({
+let v = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-10_overlay_negative_widget_testing",
   label: "Overlay Negative Widget Testing",
@@ -369,22 +286,22 @@ let N = (0, Chunk818083.B)({
   }]
 });
 
-function R(e) {
-  let t = P(e, false);
-  if (i()(N.definition.defaultConfig, t)) return "control";
-  let n = N.definition.treatments.find(e => i()(e.config, t));
+function I(e) {
+  let t = T(e, false);
+  if (i()(v.definition.defaultConfig, t)) return "control";
+  let n = v.definition.treatments.find(e => i()(e.config, t));
   return null == n ? "control" : "treatment-".concat(n.id)
 }
 
-function P(e) {
+function T(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return N.getCurrentConfig({
+  return v.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
-let D = (0, Chunk818083.B)({
+let S = (0, Chunk818083.B)({
   id: "2025-11_overlay_welcome_notification",
   label: "Overlay Welcome Notification",
   kind: "user",
@@ -400,15 +317,15 @@ let D = (0, Chunk818083.B)({
   }]
 });
 
-function w(e) {
+function A(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return D.getCurrentConfig({
+  return S.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
-let L = (0, Chunk818083.B)({
+let C = (0, Chunk818083.B)({
   id: "2025-11_overlay_bug_reporter",
   label: "Overlay Bug Reporter",
   kind: "user",
@@ -424,21 +341,21 @@ let L = (0, Chunk818083.B)({
   }]
 });
 
-function x(e) {
+function N(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return L.getCurrentConfig({
+  return C.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
 
-function M(e) {
-  return L.useExperiment({
+function R(e) {
+  return C.useExperiment({
     location: e
   }).enabled
 }
 
-function k() {
-  v("OVERLAY_INITIALIZED"), S("OVERLAY_INITIALIZED"), P("OVERLAY_INITIALIZED"), w("OVERLAY_INITIALIZED"), x("OVERLAY_INITIALIZED")
+function P() {
+  m("OVERLAY_INITIALIZED"), b("OVERLAY_INITIALIZED"), T("OVERLAY_INITIALIZED"), A("OVERLAY_INITIALIZED"), N("OVERLAY_INITIALIZED")
 }

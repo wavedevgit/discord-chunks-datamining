@@ -59,7 +59,7 @@ function N(e) {
   } = e, o = (0, O.Z)(t), l = (0, j.Z)(t), c = (0, p.l)(t), u = (0, p.P)(t), g = (0, h.Z)(t), v = (0, b.Z)(t), _ = (0, f.Z)(t), x = (0, P.ZP)(t), Z = (0, C.Z)(t), w = (0, y.Z)(t), E = (0, d.Z)({
     id: t.id,
     label: I.intl.string(I.t.gFHI3k)
-  }), N = (0, s.Z)(t), T = (0, k.ZP)(t), M = (0, m.Mn)("ChannelContextFavoritesMenu"), A = (0, S.Z)(t, "list_favorites_text_channel_context_menu");
+  }), N = (0, s.Z)(t), T = (0, S.ZP)(t), M = (0, m.Mn)("ChannelContextFavoritesMenu"), A = (0, k.Z)(t, "list_favorites_text_channel_context_menu");
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: a.Zy,
@@ -93,7 +93,7 @@ function T(e) {
   } = e, l = (0, O.Z)(t), c = (0, j.Z)(t), u = (0, p.l)(t), h = (0, p.P)(t), b = (0, Z.Z)(t), f = (0, P.ZP)(t), w = (0, y.Z)(t), E = (0, x.Z)(t, n), N = (0, g.Z)(t, n), T = (0, v.Z)(t, n), M = (0, _.Z)(t), A = (0, d.Z)({
     id: t.id,
     label: I.intl.string(I.t.gFHI3k)
-  }), D = (0, s.Z)(t), L = (0, S.Z)(t, "list_text_channel_context_menu"), F = (0, C.Z)(t), U = (0, k.ZP)(t), B = (0, m.Mn)("ChannelContextMenuNormal");
+  }), D = (0, s.Z)(t), L = (0, k.Z)(t, "list_text_channel_context_menu"), F = (0, C.Z)(t), U = (0, S.ZP)(t), B = (0, m.Mn)("ChannelContextMenuNormal");
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: a.Zy,

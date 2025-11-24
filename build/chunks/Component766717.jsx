@@ -1,60 +1,65 @@
 /** Chunk was on 91053 **/
 /** chunk id: 766717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => d
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk602733 = require("./602733.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk239990 = require("./239990.js");
-let c = Chunk473749.forwardRef(function(e, t) {
+let d = Chunk473749.forwardRef(function(e, t) {
+  var n, i, d;
   let {
-    onCardClick: n,
-    tooltipTitle: i,
-    tooltipBody: c,
-    shouldScalePreview: d = true,
-    renderPreview: u,
-    moreCount: p,
-    isSingleCard: h = false,
-    skuId: f,
-    wishlistId: g,
-    productLine: m
+    onCardClick: u,
+    tooltipConfig: p,
+    shouldScalePreview: h = true,
+    renderPreview: f,
+    moreCount: g,
+    isSingleCard: m = false,
+    wishlistId: b,
+    wishlistItem: _
   } = e, {
-    trackUserProfileWishlistAction: b
-  } = (0, s.KZ)(), _ = d ? o.cardPreview : o.cardPreviewNoScale, y = h ? o.cardSingle : o.card, O = null != p && p > 0, j = (0, r.jsxs)(a.P3F, {
+    skuId: y,
+    skuProductLine: O
+  } = _, {
+    trackUserProfileWishlistAction: j
+  } = (0, o.KZ)(), x = h ? c.cardPreview : c.cardPreviewNoScale, v = m ? c.cardSingle : c.card, C = null != g && g > 0, I = (0, r.jsxs)(a.P3F, {
     onClick: () => {
-      n(), b({
-        action: O ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-        skuId: O ? null : f,
-        wishlistId: g,
-        productLines: new Set([m])
+      u(), j({
+        action: C ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
+        skuId: C ? null : y,
+        wishlistId: b,
+        productLines: new Set([O])
       })
     },
-    className: y,
-    "aria-label": c,
+    className: v,
+    "aria-label": null != (i = p.title) ? i : "",
     innerRef: t,
     children: [(0, r.jsx)("div", {
-      className: _,
-      children: u()
-    }), O && (0, r.jsx)("div", {
-      className: o.moreOverlay,
+      className: x,
+      children: f()
+    }), C && (0, r.jsx)("div", {
+      className: c.moreOverlay,
       children: (0, r.jsxs)(a.Text, {
         variant: "text-xs/medium",
         color: "always-white",
-        children: ["+", p]
+        children: ["+", g]
       })
     })]
   });
-  return null != i ? (0, r.jsx)(l.i_, {
-    asContainer: true,
-    title: i,
-    body: c,
-    children: j
-  }) : (0, r.jsx)(l.u, {
-    text: c,
+  return null != p.title && null == p.body && null == p.renderIcon ? (0, r.jsx)(l.u, {
+    text: p.title,
     position: "top",
-    children: j
+    children: I
+  }) : (0, r.jsx)(l.i_, {
+    asContainer: true,
+    asset: null == (n = p.renderIcon) ? true : n.call(p, _),
+    assetSize: s.EU,
+    title: p.title,
+    body: null != (d = p.body) ? d : "",
+    children: I
   })
 })

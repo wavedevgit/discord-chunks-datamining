@@ -54,8 +54,7 @@ function f(e) {
   } = e;
   d[t] = {
     storefront: null,
-    loading: true,
-    error: false,
+    state: "loading",
     fetchedAt: null
   }, d = s({}, d)
 }
@@ -67,8 +66,7 @@ function _(e) {
   } = e;
   d[t] = {
     storefront: n,
-    loading: false,
-    error: false,
+    state: "fetched",
     fetchedAt: Date.now()
   }, d = s({}, d)
 }
@@ -84,8 +82,7 @@ function p(e) {
     })
   }) : d[t] = {
     storefront: n,
-    loading: false,
-    error: false,
+    state: "partially-fetched",
     fetchedAt: null
   }, d = s({}, d)
 }
@@ -96,8 +93,7 @@ function h(e) {
   } = e;
   d[t] = {
     storefront: null,
-    loading: false,
-    error: true,
+    state: "error",
     fetchedAt: null
   }, d = s({}, d)
 }

@@ -72,7 +72,7 @@ function Z(e) {
       children: [(0, l.jsx)(u.Button, {
         variant: "primary",
         onClick: () => {
-          d(E.o.BUY_BUTTON), (0, T.P)(o, {
+          d(E.o4.BUY_BUTTON), (0, T.P)(o, {
             isGift: false
           }, {
             analyticsLocations: [p.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_PURCHASE_BUTTON]
@@ -87,7 +87,7 @@ function Z(e) {
           icon: u.EOn,
           variant: "secondary",
           onClick: () => {
-            d(E.o.VISIT_SHOP), (0, y.Z)({
+            d(E.o4.VISIT_SHOP), (0, y.Z)({
               guildId: i
             }), c()
           },
@@ -97,7 +97,7 @@ function Z(e) {
           icon: u.OgN,
           variant: "secondary",
           onClick: () => {
-            d(E.o.GIFT_BUTTON), (0, T.P)(o, {
+            d(E.o4.GIFT_BUTTON), (0, T.P)(o, {
               isGift: true
             }, {
               analyticsLocations: [p.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_GIFT_BUTTON]
@@ -237,13 +237,13 @@ function M(e) {
     null == v || null == i || b.Z.isFetchingForSKU(i) || (0, j.y)(v, i)
   }, [v, i]);
   let J = a.useCallback(() => {
-      null != G && (q(E.o.COPY_LINK_BUTTON), (0, x.JG)((0, k.wQ)(v, G), () => (0, u.showToast)((0, u.createToast)(A.intl.string(A.t["L/PwZf"]), u.ToastType.SUCCESS))))
+      null != G && (q(E.o4.COPY_LINK_BUTTON), (0, x.JG)((0, k.wQ)(v, G), () => (0, u.showToast)((0, u.createToast)(A.intl.string(A.t["L/PwZf"]), u.ToastType.SUCCESS))))
     }, [v, G, q]),
     $ = a.useCallback(() => {
-      q(E.o.WISHLIST_BUTTON)
+      q(E.o4.WISHLIST_BUTTON)
     }, [q]),
     ee = a.useCallback(() => {
-      Y(!Q), q(E.o.MUTE_BUTTON)
+      Y(!Q), q(E.o4.MUTE_BUTTON)
     }, [Q, q]);
   if (null == (null == G || null == (t = G.tenantMetadata) ? true : t.socialLayer) || (null == H ? true : H.storefront) == null) return F ? (0, l.jsx)(u.$jN, {}) : null;
   let et = null != H.storefront.logoAssetId ? (0, P._W)(H.storefront.applicationId, H.storefront.logoAssetId, 75) : null,

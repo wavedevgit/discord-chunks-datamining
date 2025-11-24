@@ -2,15 +2,16 @@
 /** chunk id: 602733, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  UD: () => N,
-  ZL: () => C,
-  ao: () => R,
-  kZ: () => O,
-  lr: () => y,
-  ny: () => v,
-  p2: () => P,
-  rq: () => b,
-  zL: () => E
+  EU: () => O,
+  UD: () => P,
+  ZL: () => R,
+  ao: () => D,
+  kZ: () => I,
+  lr: () => v,
+  ny: () => T,
+  p2: () => w,
+  rq: () => y,
+  zL: () => b
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -25,15 +26,17 @@ var Chunk473749 = require("./473749.js"),
   Chunk277511 = require("./277511.js"),
   Chunk607550 = require("./607550.js"),
   Chunk541699 = require("./541699.js"),
+  Chunk321947 = require("./321947.js"),
   Chunk981631 = require("./981631.js"),
   Chunk215023 = require("./215023.js");
-let E = 6,
-  b = 350;
-var y = function(e) {
+let b = 6,
+  y = 350,
+  O = 16;
+var v = function(e) {
   return e.WISHLIST = "wishlist", e.POPULAR = "popular", e
 }({});
 
-function O(e, t) {
+function I(e, t) {
   let n = (0, c.S)({
       location: "UserProfileModalV2"
     }),
@@ -51,27 +54,27 @@ function O(e, t) {
   }
 }
 
-function v(e, t) {
+function T(e, t) {
   return (0, i.e7)([p.Z], () => null != e && p.Z.hasSkuId(e, t))
 }
 
-function I(e) {
+function S(e) {
   if (null == e.items || 0 === e.items.length) return null;
   let t = {
     sku_id: e.skuId,
     sku_name: e.name,
-    sku_product_line: m.POd.COLLECTIBLES,
+    sku_product_line: g.POd.COLLECTIBLES,
     collectibles_item: e.items[0]
   };
   return h.Z.fromServer(t)
 }
 
-function T(e) {
+function A(e) {
   let [t, n] = r.useState([]), [i, o] = r.useState(false);
   return r.useEffect(() => {
     let t = false;
     o(true);
-    let r = g.gj.map(e => e);
+    let r = E.gj.map(e => e);
     return (0, a._o)(e, r).then(e => {
       t || (n(r.filter(t => {
         var n;
@@ -86,8 +89,8 @@ function T(e) {
   }
 }
 
-function S(e) {
-  let t = e.slice(0, E),
+function C(e) {
+  let t = e.slice(0, b),
     n = (0, i.e7)([o.Z], () => t.some(e => o.Z.isFetchingProduct(e)));
   return r.useEffect(() => {
     if (0 !== t.length)
@@ -101,7 +104,7 @@ function S(e) {
   }
 }
 
-function A() {
+function N() {
   let e = [];
   for (let t of Chunk215023.gj) {
     let n = Chunk597688.Z.getProduct(exports);
@@ -110,7 +113,7 @@ function A() {
   return module
 }
 
-function C(e) {
+function R(e) {
   let {
     defaultWishlistId: t
   } = (0, i.cj)([l.Z], () => ({
@@ -119,16 +122,16 @@ function C(e) {
     wishlist: n,
     isFetching: a,
     error: o
-  } = O(t), s = r.useMemo(() => null != n && n.items.filter(e => true !== e.isOwned).length >= E, [n]), {
+  } = I(t), s = r.useMemo(() => null != n && n.items.filter(e => true !== e.isOwned).length >= b, [n]), {
     validatedSkuIds: c,
     isValidating: u
-  } = T(e.id), {
+  } = A(e.id), {
     isFetching: d
-  } = S(c);
+  } = C(c);
   return {
     defaultWishlistId: t,
     wishlist: n,
-    popularCollectiblesProducts: s ? [] : A(),
+    popularCollectiblesProducts: s ? [] : N(),
     isFetchingWishlist: a,
     isValidatingPopularProducts: !s && u,
     isFetchingPopularProducts: !s && d,
@@ -136,47 +139,56 @@ function C(e) {
   }
 }
 
-function N(e) {
+function P(e) {
   let {
     wishlist: t,
     popularCollectiblesProducts: n,
-    wishlistError: i
+    popularSocialLayerStorefrontItems: i,
+    wishlistError: a
   } = e;
   return r.useMemo(() => {
     var e, r;
-    if (null != i) return {
+    if (null != a) return {
       displayItems: [],
       wishlistItemCountToBeDisplayed: 0,
       hasMoreItems: false,
       totalWishlistItemCount: 0
     };
-    let a = (null != (e = null == t ? true : t.items) ? e : []).filter(e => true !== e.isOwned),
-      o = a.slice(0, E),
-      s = [];
-    if (s.push(...o.map(e => ({
+    let o = (null != (e = null == t ? true : t.items) ? e : []).filter(e => true !== e.isOwned),
+      s = o.slice(0, b),
+      l = s.some(e => (0, m.F)(e)),
+      c = [];
+    if (c.push(...s.map(e => ({
         item: e,
         source: "wishlist"
-      }))), s.length < E) {
-      let e = new Set(o.map(e => e.skuId)),
-        t = n.filter(t => !e.has(t.skuId));
-      for (let e = 0; e < t.length && s.length < E; e++) {
-        let n = I(t[e]);
-        null !== n && s.push({
+      }))), c.length < b) {
+      let e = new Set(s.map(e => e.skuId));
+      if (l) {
+        let t = i.filter(t => !e.has(t.skuId));
+        for (let e = 0; e < t.length && c.length < b; e++) c.push({
+          item: t[e],
+          source: "popular"
+        })
+      }
+      let t = n.filter(t => !e.has(t.skuId));
+      for (let e = 0; e < t.length && c.length < b; e++) {
+        let n = S(t[e]);
+        null !== n && c.push({
           item: n,
           source: "popular"
         })
       }
     }
     return {
-      displayItems: s,
-      wishlistItemCountToBeDisplayed: o.length,
-      hasMoreItems: a.length > E,
+      displayItems: c,
+      wishlistItemCountToBeDisplayed: s.length,
+      hasMoreItems: o.length > b,
       totalWishlistItemCount: null != (r = null == t ? true : t.items.length) ? r : 0
     }
-  }, [t, i, n])
+  }, [a, null == t ? true : t.items, n, i])
 }
 
-function R(e) {
+function D(e) {
   let {
     location: t,
     isGift: n,
@@ -187,18 +199,18 @@ function R(e) {
     location: t
   }), u = (0, i.e7)([l.Z], () => (null == a ? true : a.id) == null ? null : l.Z.getFirstWishlistId(a.id)), {
     wishlist: d
-  } = O(o && null != u && n && null != a ? u : null, null == a ? true : a.id);
+  } = I(o && null != u && n && null != a ? u : null, null == a ? true : a.id);
   return r.useMemo(() => {
     var e;
     returntrue === n && null != a && !!o && ((null != (e = null == d ? true : d.items.filter(e => true !== e.isOwned)) ? e : []).length > 0 || c)
   }, [n, a, o, d, c])
 }
 
-function P() {
-  return D((0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId()))
+function w() {
+  return L((0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId()))
 }
 
-function D(e) {
+function L(e) {
   let t = (0, i.e7)([f.default], () => f.default.getUser(e)),
     {
       userProfile: n,
@@ -209,5 +221,5 @@ function D(e) {
     }), [e]);
   return r.useEffect(() => {
     null != e && null == n && null != t && null == n && (0, u.Z)(t.id, t.getAvatarURL(null, 80))
-  }, [t, e, n]), O(a, e)
+  }, [t, e, n]), I(a, e)
 }

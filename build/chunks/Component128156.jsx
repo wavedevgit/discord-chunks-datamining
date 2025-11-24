@@ -49,15 +49,15 @@ function w(e) {
     stream: Z
   } = (0, g.Z)(t.id), {
     voiceChannel: R,
-    voiceActivity: L
+    voiceActivity: G
   } = (0, p.Z)({
     userId: t.id,
     guildId: S
-  }), G = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), M = t.id === n.id, B = (0, i.e7)([u.Z, s.Z], () => {
+  }), L = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), M = t.id === n.id, B = (0, i.e7)([u.Z, s.Z], () => {
     let e = M ? u.Z.getStatus() : s.Z.getStatus(t.id);
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), F = N.length > 0 || null != Z, U = D && null == Z && null == L && null != R, W = !B && (F || U), H = A.length > 0;
-  if (!W && !H && G) return (0, r.jsx)("div", {
+  }), F = N.length > 0 || null != Z, U = D && null == Z && null == G && null != R, W = !B && (F || U), H = A.length > 0;
+  if (!W && !H && L) return (0, r.jsx)("div", {
     className: I.cards,
     children: Array.from({
       length: 8
@@ -72,7 +72,7 @@ function w(e) {
       })]
     }, t))
   });
-  if (!W && !H && !G) {
+  if (!W && !H && !L) {
     var z;
     return M ? (0, r.jsx)(v.Uf, {
       onClose: C

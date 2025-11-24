@@ -1,7 +1,7 @@
 /** Chunk was on 76334 **/
-/** chunk id: 841081, original params: e,i,t (module,exports,require) **/
+/** chunk id: 841081, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,79 +17,79 @@ var Chunk54381 = require("./54381.js"),
 
 function _(e) {
   let {
-    giftRecipient: i,
-    onClose: t,
-    transitionState: s,
+    giftRecipient: t,
+    onClose: i,
+    transitionState: a,
     analyticsLocations: _,
-    analyticsObject: p
+    analyticsObject: f
   } = e, {
-    priceOptions: f
-  } = (0, l.JL)(), g = r.useCallback(e => {
+    priceOptions: p
+  } = (0, s.JL)(), g = r.useCallback(e => {
     (0, o.Z)({
       isGift: true,
-      giftRecipient: i,
+      giftRecipient: t,
       subscriptionTier: e,
       giftingOrigin: d.Wt.DM_CHANNEL,
       analyticsLocations: null != _ ? _ : [],
-      analyticsObject: null != p ? p : {
+      analyticsObject: null != f ? f : {
         page: u.ZY5.DM_CHANNEL,
         section: u.jXE.CHANNEL_TEXT_AREA,
         object: u.qAy.BUTTON_ICON,
         objectType: u.AnalyticsObjectTypes.GIFT
       }
-    }), t()
-  }, [i, _, p, t]);
-  return (0, n.jsxs)(a.Y0X, {
-    transitionState: s,
-    size: a.CgR.DYNAMIC,
+    }), i()
+  }, [t, _, f, i]);
+  return (0, n.jsxs)(l.Y0X, {
+    transitionState: a,
+    size: l.CgR.DYNAMIC,
     className: h.modalContainer,
     parentComponent: "GiftOptionSelectModal",
-    children: [(0, n.jsx)(a.xBx, {
+    children: [(0, n.jsx)(l.xBx, {
       className: h.modalHeader,
-      children: (0, n.jsxs)(a.Kqy, {
+      children: (0, n.jsxs)(l.Kqy, {
         direction: "horizontal",
         justify: "space-between",
-        children: [(0, n.jsx)(a.Heading, {
+        children: [(0, n.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           children: m.intl.string(m.t["wg/30i"])
-        }), (0, n.jsx)(a.olH, {
-          onClick: t
+        }), (0, n.jsx)(l.olH, {
+          onClick: i
         })]
       })
-    }), (0, n.jsx)(a.hzk, {
+    }), (0, n.jsx)(l.hzk, {
       className: h.modalBody,
       children: (0, n.jsx)(c.Z, {
         onSelectSku: g,
-        giftRecipient: i,
-        priceOptions: f,
-        onWishlistItemClick: t
+        giftRecipient: t,
+        priceOptions: p,
+        onWishlistItemClick: i
       })
     })]
   })
 }
 
-function p(e) {
+function f(e) {
   let {
-    giftRecipient: i,
-    onClose: t,
+    giftRecipient: t,
+    onClose: i,
     transitionState: r,
-    analyticsLocations: a,
+    analyticsLocations: l,
     analyticsObject: o
   } = e;
-  return (0, n.jsx)(l.PaymentContextProvider, {
+  return (0, n.jsx)(s.PaymentContextProvider, {
     activeSubscription: null,
     stepConfigs: [],
     skuIDs: d.nS,
     isGift: true,
-    children: (0, n.jsx)(s.KB, {
+    children: (0, n.jsx)(a.KB, {
       isGift: true,
-      giftRecipient: i,
+      giftRecipient: t,
       giftingOrigin: d.Wt.DM_CHANNEL,
       children: (0, n.jsx)(_, {
-        giftRecipient: i,
-        onClose: t,
+        giftRecipient: t,
+        onClose: i,
         transitionState: r,
-        analyticsLocations: a,
+        analyticsLocations: l,
         analyticsObject: o
       })
     })

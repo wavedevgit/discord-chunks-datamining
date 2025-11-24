@@ -1,13 +1,14 @@
 /** Chunk was on 91053 **/
 /** chunk id: 5337, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => f,
-  g: () => g
+  c: () => g,
+  g: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk979554 = require("./979554.js"),
   Chunk311570 = require("./311570.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk525302 = require("./525302.jsx"),
   Chunk333867 = require("./333867.jsx"),
   Chunk221300 = require("./221300.jsx"),
   Chunk766717 = require("./766717.jsx"),
@@ -15,59 +16,58 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk976218 = require("./976218.js");
 
-function h(e, t, n) {
-  (0, s.Z)({
+function f(e, t, n) {
+  (0, o.Z)({
     skuId: e.skuId,
     isGift: true,
-    giftingOrigin: d.Wt.USER_PROFILE_WISHLIST,
+    giftingOrigin: u.Wt.USER_PROFILE_WISHLIST,
     analyticsLocations: n,
     giftRecipient: t,
     variantsReturnStyle: l.v.VARIANTS_GROUP
   })
 }
 
-function f(e, t) {
-  let n, {
-      moreCount: l,
-      profileOwner: a,
-      analyticsLocations: s,
-      onViewWishlist: d,
-      isSingleCard: p = false,
-      wishlistId: f,
-      showTypeTooltip: g = false
-    } = t,
-    m = null != l && l > 0,
-    b = m ? u.intl.string(u.t.TxBQzD) : u.intl.string(u.t.ilhtIa);
-  g && !m && (n = u.intl.string(u.t.HFhcqh));
-  let _ = e.collectiblesItem.type === i.Z.PROFILE_EFFECT;
-  return (0, r.jsx)(c.Z, {
+function g(e, t) {
+  let {
+    moreCount: n,
+    profileOwner: l,
+    analyticsLocations: a,
+    onViewWishlist: o,
+    isSingleCard: u = false,
+    wishlistId: h,
+    showTypeTooltip: g = false
+  } = t, m = null != n && n > 0, b = g && !m, _ = m ? p.intl.string(p.t.TxBQzD) : p.intl.string(p.t.pLPjsb), y = {
+    title: b ? p.intl.string(p.t.HFhcqh) : _,
+    body: b ? p.intl.string(p.t.ilhtIa) : true,
+    renderIcon: b ? s.Q : true,
+    shouldShow: true
+  }, O = e.collectiblesItem.type === i.Z.PROFILE_EFFECT;
+  return (0, r.jsx)(d.Z, {
     onCardClick: () => {
-      if (m) return void d();
-      h(e, a, s)
+      if (m) return void o();
+      f(e, l, a)
     },
-    tooltipTitle: n,
-    tooltipBody: b,
-    shouldScalePreview: !_,
-    renderPreview: () => (0, r.jsx)(o.Z, {
+    tooltipConfig: y,
+    shouldScalePreview: !O,
+    renderPreview: () => (0, r.jsx)(c.Z, {
       item: e,
-      profileOwner: a,
+      profileOwner: l,
       isHighlighted: false
     }),
-    moreCount: l,
-    isSingleCard: p,
-    skuId: e.skuId,
-    wishlistId: f,
-    productLine: e.skuProductLine
+    moreCount: n,
+    isSingleCard: u,
+    wishlistItem: e,
+    wishlistId: h
   }, e.skuId)
 }
 
-function g(e, t) {
+function m(e, t) {
   let {
     profileOwner: n,
     analyticsLocations: l,
     wishlistId: s,
     onViewWishlist: o
-  } = t, c = f(e, {
+  } = t, c = g(e, {
     profileOwner: n,
     analyticsLocations: l,
     onViewWishlist: o,
@@ -76,15 +76,15 @@ function g(e, t) {
     index: 0
   });
   return (0, r.jsxs)("div", {
-    className: p.singleItemContainer,
+    className: h.singleItemContainer,
     children: [c, (0, r.jsxs)("div", {
-      className: p.singleItemInfo,
+      className: h.singleItemInfo,
       children: [(0, r.jsx)(a.P3F, {
         onClick: () => {
-          h(e, n, l)
+          f(e, n, l)
         },
-        className: p.singleItemName,
-        "aria-label": u.intl.string(u.t.ilhtIa),
+        className: h.singleItemName,
+        "aria-label": p.intl.string(p.t.pLPjsb),
         children: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
@@ -97,11 +97,11 @@ function g(e, t) {
         children: function(e) {
           switch (e.collectiblesItem.type) {
             case i.Z.AVATAR_DECORATION:
-              return u.intl.string(u.t["7v0T9P"]);
+              return p.intl.string(p.t["7v0T9P"]);
             case i.Z.PROFILE_EFFECT:
-              return u.intl.string(u.t.wR5wOo);
+              return p.intl.string(p.t.wR5wOo);
             case i.Z.NAMEPLATE:
-              return u.intl.string(u.t.x5CoXR);
+              return p.intl.string(p.t.x5CoXR);
             default:
               return ""
           }

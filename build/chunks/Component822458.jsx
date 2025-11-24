@@ -1,5 +1,5 @@
 /** Chunk was on 77033 **/
-/** chunk id: 822458, original params: e,n,l (module,exports,require) **/
+/** chunk id: 822458, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
 function c(e) {
   let {
     analyticsSectionId: n,
-    applicationId: l,
+    applicationId: t,
     guildId: c,
     sectionTitle: u,
     skuIds: g,
@@ -23,18 +23,18 @@ function c(e) {
     pageSection: n,
     pageSectionTitle: u
   }), [n, u]);
-  return null == g || 0 === g.length ? null : (0, t.jsx)(o.hL, {
+  return null == g || 0 === g.length ? null : (0, l.jsx)(o.hL, {
     newValue: _,
-    children: (0, t.jsxs)("div", {
+    children: (0, l.jsxs)("div", {
       className: d.sectionContainer,
-      children: [null != u && (0, t.jsx)(a.Heading, {
+      children: [null != u && (0, l.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         lineClamp: 1,
         className: d.sectionTitle,
         children: u
-      }), (0, t.jsx)(s.t, {
-        applicationId: l,
+      }), (0, l.jsx)(s.t, {
+        applicationId: t,
         skuIds: g,
         variant: p,
         guildId: c

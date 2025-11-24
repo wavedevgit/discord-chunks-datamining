@@ -17,8 +17,8 @@ var Chunk442837 = require("./442837.js"),
 function Z(e, t, Z) {
   let {
     canManageGuildEvent: f
-  } = (0, a.XJ)(null != Z ? Z : t), g = (0, r.e7)([c.ZP], () => c.ZP.isActive(e)), h = (0, r.e7)([c.ZP], () => c.ZP.getGuildScheduledEvent(e), [e]), b = f(h);
-  if (null == e || !b || !g || (null == h ? true : h.entity_type) === u.WX.EXTERNAL) return null;
+  } = (0, a.XJ)(null != Z ? Z : t), b = (0, r.e7)([c.ZP], () => c.ZP.isActive(e)), g = (0, r.e7)([c.ZP], () => c.ZP.getGuildScheduledEvent(e), [e]), h = f(g);
+  if (null == e || !h || !b || (null == g ? true : g.entity_type) === u.WX.EXTERNAL) return null;
   let j = () => {
     (null == Z ? true : Z.isGuildStageVoice()) ? (0, o.NZ)(Z) : null != e && s.Z.endEvent(e, t.id), (0, l.pTH)()
   };

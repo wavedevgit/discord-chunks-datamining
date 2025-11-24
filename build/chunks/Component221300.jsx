@@ -1,4 +1,4 @@
-/** Chunk was on 90347 **/
+/** Chunk was on 82082 **/
 /** chunk id: 221300, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -34,7 +34,7 @@ function d(e) {
     case n.Z.AVATAR_DECORATION:
       return (0, i.jsx)("div", {
         className: u.avatarDecorationPreview,
-        children: (0, i.jsx)(s.R, {
+        children: (0, i.jsx)(o.R, {
           item: v,
           user: r,
           isHighlighted: d,
@@ -47,7 +47,7 @@ function d(e) {
         className: u.nameplatePreview,
         children: [(0, i.jsx)("div", {
           className: u.nameplateTopLeft,
-          children: (0, i.jsx)(o.Z, {
+          children: (0, i.jsx)(s.Z, {
             user: r,
             nameplate: v,
             isHighlighted: d,
@@ -60,7 +60,7 @@ function d(e) {
         }), (0, i.jsx)("div", {
           className: u.nameplateBottomRight,
           "aria-hidden": true,
-          children: (0, i.jsx)(o.Z, {
+          children: (0, i.jsx)(s.Z, {
             user: r,
             nameplate: v,
             isHighlighted: d,

@@ -204,9 +204,9 @@ let E = (0, Chunk112724.Z)(e => {
   }, []), U = (0, a.useCallback)(() => {
     W(C.current + 1, false)
   }, [W]), D = (0, a.useCallback)(() => {
-    null == d || d(I.o.CAROUSEL_NEXT), W(C.current + 1)
+    null == d || d(I.o4.CAROUSEL_NEXT), W(C.current + 1)
   }, [W, d]), M = (0, a.useCallback)(() => {
-    null == d || d(I.o.CAROUSEL_PREV), W(C.current - 1)
+    null == d || d(I.o4.CAROUSEL_PREV), W(C.current - 1)
   }, [W, d]), H = (0, a.useCallback)(e => {
     N(true), w(!e)
   }, []), F = (0, a.useCallback)(() => {
@@ -221,7 +221,7 @@ let E = (0, Chunk112724.Z)(e => {
     itemIndex: t,
     isCurrentItem: n,
     onSetItem: e => {
-      null == d || d(I.o.CAROUSEL_ITEM), W(e)
+      null == d || d(I.o4.CAROUSEL_ITEM), W(e)
     },
     setHasInteracted: w
   }), [W, d]), G = (0, a.useCallback)((e, n, a) => {
@@ -240,7 +240,7 @@ let E = (0, Chunk112724.Z)(e => {
         playable: r,
         isMuted: u,
         onClick: () => {
-          null == d || d(I.o.CAROUSEL_ITEM), W(n)
+          null == d || d(I.o4.CAROUSEL_ITEM), W(n)
         }
       }) : Y(e, n, r)
     })
@@ -291,7 +291,7 @@ let E = (0, Chunk112724.Z)(e => {
     null == i || i(t[m], m)
   }, [m, t, i]);
   let X = (0, a.useCallback)(e => {
-    null == d || d(I.o.CAROUSEL_ITEM), W(e)
+    null == d || d(I.o4.CAROUSEL_ITEM), W(e)
   }, [W, d]);
   return (0, l.jsxs)(g.Z, {
     pauseOnHover: true,

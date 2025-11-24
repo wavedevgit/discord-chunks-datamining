@@ -1,5 +1,5 @@
 /** Chunk was on 77033 **/
-/** chunk id: 323540, original params: e,n,l (module,exports,require) **/
+/** chunk id: 323540, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   $: () => h
 }), require("./388685.js");
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk329353 = require("./329353.js");
 
 function h(e) {
-  var n, l;
+  var n, t;
   let {
     applicationId: h,
     guildId: x,
@@ -28,10 +28,10 @@ function h(e) {
     ref: v,
     width: C
   } = (0, o.ZP)(), b = (0, d.oR)(), {
-    analyticsLocations: j
-  } = (0, r.ZP)(), k = i.useRef(null), {
+    analyticsLocations: k
+  } = (0, r.ZP)(), j = i.useRef(null), {
     handleScroll: S
-  } = (0, _.I)(k, b, j), [Z, N] = i.useMemo(() => {
+  } = (0, _.I)(j, b, k), [Z, E] = i.useMemo(() => {
     if ((null == m ? true : m.skuIds) == null || (null == m ? true : m.skuIds.length) === 0) return [
       [],
       []
@@ -45,49 +45,49 @@ function h(e) {
     let {
       sessionId: e,
       guildId: n,
-      pageIndex: l,
-      pageTitle: t,
+      pageIndex: t,
+      pageTitle: l,
       isUserGuildMember: i,
       pageHasLeaderboard: a
     } = b;
     s.default.track(f.rMx.SLAYER_STOREFRONT_PAGE_VIEWED, {
       slayer_storefront_session_id: e,
       guild_id: n,
-      page_index: l,
-      page_title: t,
+      page_index: t,
+      page_title: l,
       is_user_guild_member: i,
       page_has_leaderboard: a,
-      location_stack: j
+      location_stack: k
     })
-  }, [b, j]), null == m) ? null : (0, t.jsx)(a.h21, {
-    ref: k,
+  }, [b, k]), null == m) ? null : (0, l.jsx)(a.h21, {
+    ref: j,
     onScroll: S,
-    children: (0, t.jsxs)("section", {
+    children: (0, l.jsxs)("section", {
       ref: v,
       className: I.container,
-      children: [(0, t.jsx)(g.n, {
+      children: [(0, l.jsx)(g.n, {
         applicationId: h,
         backgroundImageAssetId: null == (n = m.leaderboard) ? true : n.backgroundImageAssetId
-      }), (0, t.jsx)(u.t, {
+      }), (0, l.jsx)(u.t, {
         leaderboard: m.leaderboard
-      }), (0, t.jsx)(p.Z, {
+      }), (0, l.jsx)(p.Z, {
         analyticsSectionId: "featured-top-section",
         applicationId: h,
         guildId: x,
         skuIds: Z,
         variant: c.Z.MEDIUM
-      }), (0, t.jsx)(p.Z, {
+      }), (0, l.jsx)(p.Z, {
         analyticsSectionId: "non-featured-top-section",
         applicationId: h,
         guildId: x,
-        skuIds: N
-      }), null == (l = m.sections) ? true : l.map((e, n) => {
-        var l;
-        return (0, t.jsx)(p.Z, {
+        skuIds: E
+      }), null == (t = m.sections) ? true : t.map((e, n) => {
+        var t;
+        return (0, l.jsx)(p.Z, {
           analyticsSectionId: "index:".concat(n),
           guildId: x,
           applicationId: h,
-          sectionTitle: null != (l = e.title) ? l : true,
+          sectionTitle: null != (t = e.title) ? t : true,
           skuIds: e.skuIds
         }, "".concat(e.title, "-").concat(n))
       })]

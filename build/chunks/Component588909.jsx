@@ -144,25 +144,24 @@ function A(e, t) {
       });
       break
     }
-    case S.nc.CONTENT_INVENTORY:
-      if ((0, g.Rb)("welcomeNotification").allowActivityWidget) {
-        C.onNotificationShow = () => {
-          u.Z.track(x.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
-            user_ids: a.entries.map(e => e.author_id),
-            entry_ids: a.entries.map(e => e.id)
-          })
-        };
-        let t = () => (0, i.jsx)(y.lX, {
-          gamingId: null == e ? true : e.id,
-          maxUserShowCount: 5,
-          variant: r ? "subtle" : "default",
-          className: l()({
-            [Z.container]: true,
-            [Z.containerFaint]: r
-          })
-        });
-        r ? A.push(t) : C.renderFooter = t
-      }
+    case S.nc.CONTENT_INVENTORY: {
+      C.onNotificationShow = () => {
+        u.Z.track(x.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
+          user_ids: a.entries.map(e => e.author_id),
+          entry_ids: a.entries.map(e => e.id)
+        })
+      };
+      let t = () => (0, i.jsx)(y.lX, {
+        gamingId: null == e ? true : e.id,
+        maxUserShowCount: 5,
+        variant: r ? "subtle" : "default",
+        className: l()({
+          [Z.container]: true,
+          [Z.containerFaint]: r
+        })
+      });
+      r ? A.push(t) : C.renderFooter = t
+    }
   }
   k.length > 0 && A.unshift(() => (0, i.jsx)("div", {
     className: l()(Z.container, Z.containerFaint, Z.keybindStreamContainer),

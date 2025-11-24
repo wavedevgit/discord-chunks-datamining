@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk335131 = require("./335131.js"),
   Chunk164670 = require("./164670.js"),
-  Chunk699955 = require("./699955.js"),
+  Chunk917967 = require("./917967.js"),
   Chunk705338 = require("./705338.js"),
   Chunk277511 = require("./277511.js"),
   Chunk602733 = require("./602733.js"),
@@ -96,53 +96,54 @@ function k(e) {
       currentUser: y.default.getCurrentUser(),
       wishlistSettings: null != e ? O.Z.getWishlistSettings(n.id, e) : null
     }
-  }), N = (0, p.cZ)({
-    location: "user-profile-modal-v2-wishlist"
   }), {
-    analyticsLocations: A
+    analyticsLocations: N
   } = (0, d.ZP)(), {
-    trackUserProfileWishlistAction: Z
-  } = (0, v.KZ)(), R = (null == I ? true : I.id) === n.id, L = false === n.nsfwAllowed, G = S.t9, [M, B] = i.useState(true);
+    trackUserProfileWishlistAction: A
+  } = (0, v.KZ)(), Z = (null == I ? true : I.id) === n.id, R = false === n.nsfwAllowed, G = S.t9, [L, M] = i.useState(true);
   i.useEffect(() => {
-    (null == k ? true : k.visibility) != null && B(k.visibility === a.f.PUBLIC)
+    (null == k ? true : k.visibility) != null && M(k.visibility === a.f.PUBLIC)
   }, [null == k ? true : k.visibility]);
   let {
-    wishlist: F,
-    error: U
-  } = (0, h.kZ)(P, n.id), W = i.useCallback(e => {
+    wishlist: B,
+    error: F
+  } = (0, h.kZ)(P, n.id), U = (0, p.Z)({
+    location: "user-profile-modal-v2-wishlist",
+    wishlist: B
+  }), W = i.useCallback(e => {
     let {
       wishlistId: t,
       action: n,
       productLines: r
     } = e;
-    null != t && Z({
+    null != t && A({
       wishlistId: t,
       action: n,
       productLines: r
     })
-  }, [Z]), H = (0, j.Z)({
+  }, [A]), H = (0, j.Z)({
     wishlistId: P,
     onAction: W,
-    productLines: null != (t = null == F ? true : F.getProductLines()) ? t : null
+    productLines: null != (t = null == B ? true : B.getProductLines()) ? t : null
   }), z = i.useCallback(() => {
     if (null == P) return;
-    let e = M ? a.f.PRIVATE : a.f.PUBLIC;
-    B(!M), b.Z.updateWishlistVisibility(P, e), Z({
+    let e = L ? a.f.PRIVATE : a.f.PUBLIC;
+    M(!L), b.Z.updateWishlistVisibility(P, e), A({
       wishlistId: P,
-      action: M ? w.NW.WISHLIST_TOGGLE_PRIVATE : w.NW.WISHLIST_TOGGLE_PUBLIC,
-      productLines: null == F ? true : F.getProductLines()
+      action: L ? w.NW.WISHLIST_TOGGLE_PRIVATE : w.NW.WISHLIST_TOGGLE_PUBLIC,
+      productLines: null == B ? true : B.getProductLines()
     })
-  }, [P, M, Z, F]), K = i.useCallback(() => {
+  }, [P, L, A, B]), K = i.useCallback(() => {
     (0, o.pT)(), (0, f.mK)({
-      analyticsLocations: A,
+      analyticsLocations: N,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
     })
-  }, [A]), q = i.useCallback(() => {
+  }, [N]), q = i.useCallback(() => {
     (0, o.pT)(), (0, m.Z)({
       guildId: (0, g.ac)()
     })
   }, []);
-  return null != U ? null : null == F || 0 === F.items.length ? (0, r.jsx)(x.F, {
+  return null != F ? null : null == B || 0 === B.items.length ? (0, r.jsx)(x.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
       className: T.emptyStateContainer,
@@ -159,13 +160,13 @@ function k(e) {
         })]
       }), (0, r.jsxs)(s.ButtonGroup, {
         size: "sm",
-        children: [R && (0, r.jsx)(s.Button, {
+        children: [Z && (0, r.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
           icon: s.EOn,
           text: E.intl.string(E.t.ZbS4QB),
           onClick: K
-        }), N && (0, r.jsx)(s.Button, {
+        }), U && (0, r.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
           icon: s.EOn,
@@ -186,9 +187,9 @@ function k(e) {
           variant: "text-xs/semibold",
           color: "text-secondary",
           children: E.intl.format(E.t.r6Y1Lg, {
-            count: F.items.length
+            count: B.items.length
           })
-        }), !M && (0, r.jsx)(c.u, {
+        }), !L && (0, r.jsx)(c.u, {
           text: E.intl.string(E.t.RX7D9h),
           asContainer: true,
           children: (0, r.jsx)(s.tEY, {
@@ -202,7 +203,7 @@ function k(e) {
               })
             })
           })
-        }), M && L && (0, r.jsx)(c.u, {
+        }), L && R && (0, r.jsx)(c.u, {
           text: E.intl.string(E.t.d78ChW),
           asContainer: true,
           children: (0, r.jsx)(s.tEY, {
@@ -217,22 +218,22 @@ function k(e) {
             })
           })
         })]
-      }), R ? (0, r.jsx)(D, {
-        isSocialLayerStorefrontEnabled: N,
-        isWishlistPublic: M,
+      }), Z ? (0, r.jsx)(D, {
+        isSocialLayerStorefrontEnabled: U,
+        isWishlistPublic: L,
         handleOpenShop: K,
         handleOpenGameShop: q,
         handleToggleWishlistVisibility: z,
         socialLayerStorefrontApplicationId: G
       }) : (0, r.jsx)(C, {
-        isSocialLayerStorefrontEnabled: N,
+        isSocialLayerStorefrontEnabled: U,
         handleOpenShop: K,
         handleOpenGameShop: q
       })]
     }), (0, r.jsx)(_.Z, {
-      items: F.items,
+      items: B.items,
       profileOwner: n,
-      isOwner: R
+      isOwner: Z
     })]
   })
 }

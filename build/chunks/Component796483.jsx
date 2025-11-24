@@ -33,7 +33,7 @@ function a(e) {
 function u(e) {
   var {
     item: t,
-    cardSize: r = c.U.MEDIUM,
+    cardSize: r = s.U.MEDIUM,
     showOverlayButton: u = true
   } = e, d = function(e, t) {
     if (null == e) return {};
@@ -50,7 +50,7 @@ function u(e) {
     }
     return i
   }(e, ["item", "cardSize", "showOverlayButton"]);
-  return (0, l.Q)(t) ? (0, n.jsx)(s.ZP, a({
+  return (0, l.Q)(t) ? (0, n.jsx)(c.ZP, a({
     item: t,
     cardSize: r,
     showOverlayButton: u

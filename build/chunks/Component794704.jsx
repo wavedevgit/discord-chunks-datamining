@@ -797,7 +797,7 @@ function eH() {
     })
   })
 }
-let eY = (e, t, n) => [{
+let eY = e => [{
   title: em.t.eVE4LX,
   description: em.t["72WNqk"],
   disabledSetting: L.i.TEXT_CHAT
@@ -809,15 +809,15 @@ let eY = (e, t, n) => [{
   title: em.t.hqsZJW,
   description: em.t.kHjdqc,
   disabledSetting: L.i.GO_LIVE_NUDGE
-}, e && {
+}, {
   title: em.t.sop3rn,
   description: em.t.pjgffc,
   disabledSetting: L.i.GAME_ACTIVITY
-}, t && {
+}, {
   title: em.t["2QVhbb"],
   description: em.t.wQ4ilB,
   disabledSetting: L.i.NOW_PLAYING
-}, n && {
+}, e && {
   title: em.t["5/21FT"],
   description: em.t.EIzwfA,
   disabledSetting: L.i.FRIEND_STREAM_WATCH_NUDGE
@@ -825,20 +825,17 @@ let eY = (e, t, n) => [{
 
 function eW() {
   let {
-    allowActivityWidget: e,
-    allowNowPlaying: t
-  } = (0, Chunk32300.o4)("user_settings"), {
-    enabled: n
-  } = (0, Chunk32300.aq)("OverlayV3StreamWatchNudge"), i = eY(module, exports, require), a = e => t => {
+    enabled: e
+  } = (0, Chunk32300.aq)("OverlayV3StreamWatchNudge"), t = eY(module), n = e => t => {
     b.Z.setNotificationDisabledSetting(e, !t)
-  }, o = (0, Chunk442837.e7)([Chunk624864.Z], () => Chunk624864.Z.getDisabledNotifications());
+  }, i = (0, Chunk442837.e7)([Chunk624864.Z], () => Chunk624864.Z.getDisabledNotifications());
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk607547.notificationSettingsContainer,
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
       color: "header-primary",
       children: Chunk388032.intl.string(Chunk388032.t.xOE5bA)
-    }), Chunk473749.map(e => (0, r.jsxs)("div", {
+    }), exports.map(e => (0, r.jsxs)("div", {
       className: eg.notificationItem,
       children: [(0, r.jsxs)("div", {
         className: eg.notificationDescriptionContainer,
@@ -852,8 +849,8 @@ function eW() {
           children: em.intl.string(e.description)
         })]
       }), (0, r.jsx)(h.rsf, {
-        checked: !o.has(e.disabledSetting),
-        onChange: a(e.disabledSetting)
+        checked: !i.has(e.disabledSetting),
+        onChange: n(e.disabledSetting)
       })]
     }, e.disabledSetting))]
   })
@@ -1161,7 +1158,7 @@ function e$(e) {
   } = e, {
     runningGame: i,
     runningGameApplication: a
-  } = (0, N.Z)(), o = (0, M.o4)("user_settings").overlayV3UI, s = (0, _.e7)([en.default], () => en.default.getCurrentUser());
+  } = (0, N.Z)(), o = true, s = (0, _.e7)([en.default], () => en.default.getCurrentUser());
   return ((0, v.ZP)(() => {
     if (el.isPlatformEmbedded) return (0, R.Ky)(), R.P7
   }), ew(), null == s) ? null : (0, r.jsxs)(r.Fragment, {

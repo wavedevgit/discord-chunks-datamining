@@ -1,7 +1,7 @@
 /** Chunk was on 81500 **/
 /** chunk id: 946734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => k
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,7 +34,7 @@ function C(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class k {
+class S {
   updateData(e) {
     let {
       userId: t,
@@ -110,7 +110,7 @@ class k {
   }
 }
 
-function S(e) {
+function k(e) {
   let {
     channel: t
   } = e, n = t.getRecipientId(), a = (0, b.gc)(n), o = Array(a.length).fill(null), {
@@ -120,7 +120,7 @@ function S(e) {
       userId: t,
       channelId: n,
       analyticsLocations: r
-    } = e, a = (0, l.e7)([j.default], () => j.default.getUser(t), [t]), [o] = i.useState(() => new k({
+    } = e, a = (0, l.e7)([j.default], () => j.default.getUser(t), [t]), [o] = i.useState(() => new S({
       user: a,
       userId: t,
       channelId: n,
