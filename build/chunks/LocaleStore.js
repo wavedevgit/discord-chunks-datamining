@@ -2,15 +2,16 @@
 /** chunk id: 706454, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => p
+  default: () => g
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk241601 = require("./241601.js"),
+  Chunk579806 = require("./579806.js"),
   Chunk581883 = require("./581883.js"),
   Chunk388032 = require("./388032.jsx");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,33 +19,45 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = Chunk388032.intl.currentLocale;
+async function d() {
+  var e;
+  if ((null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.app) ? true : module.getPreferredSystemLanguages) != null) {
+    let e = await Chunk579806.Z.app.getPreferredSystemLanguages().then(e => e[0]);
+    if (null != module && "" !== module) return module
+  }
+  return Chunk388032.systemLocale
+}
+let f = Chunk388032.intl.currentLocale,
+  _ = Chunk388032.systemLocale;
 
-function d() {
+function p() {
   var e, t;
   let n = null == (t = Chunk581883.Z.settings.localization) || null == (e = exports.locale) ? true : module.value;
-  return null != require && "" !== require && require !== u && (u = require, (0, Chunk241601._2)(u), true)
+  return null != require && "" !== require && require !== f && (f = require, (0, Chunk241601._2)(f), true)
 }
 
-function f(e) {
-  u = e.locale, (0, o._2)(u)
+function h(e) {
+  f = e.locale, (0, o._2)(f)
 }
-class _ extends(r = Chunk442837.ZP.Store) {
+d().then(e => {
+  _ = e
+});
+class m extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk581883.Z), d(), (0, Chunk241601._2)(u)
+    this.waitFor(Chunk581883.Z), p(), (0, Chunk241601._2)(f)
   }
   get locale() {
-    return u
+    return f
   }
   get systemLocale() {
-    return Chunk388032.systemLocale
+    return _
   }
 }
-c(_, "displayName", "LocaleStore");
-let p = new _(Chunk570140.Z, {
-  OVERLAY_INITIALIZE: d,
-  CACHE_LOADED: d,
-  CONNECTION_OPEN: d,
-  USER_SETTINGS_PROTO_UPDATE: d,
-  USER_SETTINGS_LOCALE_OVERRIDE: f
+u(m, "displayName", "LocaleStore");
+let g = new m(Chunk570140.Z, {
+  OVERLAY_INITIALIZE: p,
+  CACHE_LOADED: p,
+  CONNECTION_OPEN: p,
+  USER_SETTINGS_PROTO_UPDATE: p,
+  USER_SETTINGS_LOCALE_OVERRIDE: h
 })

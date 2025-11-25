@@ -540,6 +540,10 @@ let q = {
       var e, t;
       null == (e = (t = I.app).unpauseFrameEvictor) || module.call(exports)
     },
+    getPreferredSystemLanguages() {
+      var e, t;
+      return null == (e = (t = I.app).getPreferredSystemLanguages) ? true : module.call(exports)
+    },
     getPidFromDesktopSource(e) {
       if (!(0, h.isDesktop)() || null == this.getDiscordUtils().getPidFromWindowHandle) return null;
       let t = null == e ? true : e.split(":"),
