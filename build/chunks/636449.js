@@ -25,5 +25,5 @@ async function l(e, t) {
   } catch (e) {
     n = false
   }
-  return !n && e && a.xv(o.KJ3.ACTIVITY_POPOUT), n
+  return !n && e && a.close(o.KJ3.ACTIVITY_POPOUT), n
 }

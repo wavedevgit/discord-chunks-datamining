@@ -77,7 +77,7 @@ function k(e) {
   }, K = () => {
     (0, f.v)(H, f.d.POPOUT, true), null != a && (0, R.Z)({
       onConfirm: async () => {
-        await (0, C.nJ)(s, a.id), h.hP(a)
+        await (0, C.nJ)(s, a.id), h.openChannelCallPopout(a)
       }
     })
   };

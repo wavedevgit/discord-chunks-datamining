@@ -117,7 +117,7 @@ function O(e) {
   }, [S, C]), i.useEffect(() => {
     null != N && I.current === y.WtW.VIDEO && E === y.WtW.VOICE && (0, _.Pr)(N, T)
   }, [T, E, I, N]), i.useEffect(() => {
-    !Z && C && a.Z.wait(() => p.xv(y.KJ3.CHANNEL_CALL_POPOUT))
+    !Z && C && a.Z.wait(() => p.close(y.KJ3.CHANNEL_CALL_POPOUT))
   }, [Z, C]), w) ? (0, r.jsx)(h.Z, {
     themeable: false,
     node: N,

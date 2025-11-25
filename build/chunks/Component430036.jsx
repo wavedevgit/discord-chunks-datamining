@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk400023 = require("./400023.jsx"),
   Chunk623292 = require("./623292.js"),
   Chunk807092 = require("./807092.js"),
-  Chunk340501 = require("./340501.jsx"),
+  Chunk271172 = require("./271172.jsx"),
   Chunk592125 = require("./592125.js"),
   Chunk703558 = require("./703558.js"),
   Chunk731290 = require("./731290.js"),
@@ -311,7 +311,7 @@ class ea extends Chunk473749.PureComponent {
     let g = a || Chunk430742,
       y = !Chunk120356 && null != exports && exports.isNSFW(),
       b = !Chunk144144 || Chunk442837;
-    return e = Chunk655687 && null != Chunk512722 ? (0, Chunk54381.jsx)(Chunk340501.Z, {
+    return e = Chunk655687 && null != Chunk512722 ? (0, Chunk54381.jsx)(Chunk271172.Z, {
       guild: Chunk512722,
       channelId: exports.id
     }) : (0, Chunk54381.jsx)(Chunk400023.Z, {

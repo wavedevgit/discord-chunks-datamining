@@ -64,7 +64,7 @@ async function h() {
     webpackId: 989373,
     name: "AppOverlay"
   });
-  await Chunk788983.bA(Chunk501787.$J, e => (0, r.jsx)(t, {
+  await Chunk788983.open(Chunk501787.$J, e => (0, r.jsx)(t, {
     withTitleBar: false,
     windowKey: e
   }), module)

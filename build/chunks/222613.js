@@ -35,6 +35,6 @@ letChunk502922 = require("./502922.js"), i = r({
   uk: () => require.e("45213").then(require.t.bind(require, 955769, 19)),
   vi: () => require.e("43066").then(require.t.bind(require, 483104, 19)),
   "zh-CN": () => require.e("22804").then(require.t.bind(require, 684105, 19)),
-  "zh-TW": () => require.e("42194").then(require.t.bind(require, 559068, 19)),
+  "zh-TW": () => require.e("87955").then(require.t.bind(require, 559068, 19)),
   "en-US": () => require.e("34905").then(require.bind(require, 842040))
 }, "en-US"), Chunk502922 = require("./502922.js"), o = a(i)

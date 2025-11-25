@@ -87,7 +87,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk108427 = require("./108427.js"),
   Chunk892001 = require("./892001.js"),
   Chunk402130 = require("./402130.jsx"),
-  Chunk340501 = require("./340501.jsx"),
+  Chunk271172 = require("./271172.jsx"),
   Chunk524329 = require("./524329.js"),
   Chunk995532 = require("./995532.js"),
   Chunk738643 = require("./738643.js"),
@@ -271,7 +271,7 @@ class tl extends Chunk473749.PureComponent {
         guildId: exports.id
       })
     });
-    if (Chunk473749) return (0, Chunk54381.jsx)(Chunk340501.Z, {
+    if (Chunk473749) return (0, Chunk54381.jsx)(Chunk271172.Z, {
       guild: exports,
       channelId: module.id
     });
@@ -560,7 +560,7 @@ class tl extends Chunk473749.PureComponent {
         selectedParticipant: e,
         premiumIndicatorEnabled: t
       } = this.props;
-      return (null == e ? true : e.type) !== e8.fO.STREAM ? null : (0, r.jsx)(V.Z, {
+      return (null == e ? true : e.type) !== e7.fO.STREAM ? null : (0, r.jsx)(V.Z, {
         size: e0.ZP.Sizes.LARGE,
         participant: e,
         showQuality: true,
@@ -716,7 +716,7 @@ class tl extends Chunk473749.PureComponent {
           onClick: () => (0, g.ZDy)(async () => {
             let {
               default: e
-            } = await n.e("30571").then(n.bind(n, 28180));
+            } = await n.e("96964").then(n.bind(n, 807007));
             return n => (0, r.jsx)(e, tn({
               channel: t
             }, n))
@@ -879,7 +879,7 @@ let ta = (0, Chunk112724.Z)(tl),
       let e = eO && !ey,
         t = eO && ey && (null == c ? true : c.id) !== ej;
       (e || t) && (0, U.Q3)(h.z.ACTIVITY_GDM_CALL_TOOLTIP, {
-        dismissAction: e7.L.AUTO
+        dismissAction: e8.L.AUTO
       })
     }, [null == c ? true : c.id, ej, ey, eO]);
     let ev = (0, f.f9)();

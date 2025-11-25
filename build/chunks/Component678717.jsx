@@ -46,7 +46,7 @@ function E(e) {
 }
 
 function N() {
-  (0, Chunk788983.bA)(Chunk981631.KJ3.DEVTOOLS_POPOUT, () => (0, Chunk54381.jsx)(Chunk238246.Z, {
+  (0, Chunk788983.open)(Chunk981631.KJ3.DEVTOOLS_POPOUT, () => (0, Chunk54381.jsx)(Chunk238246.Z, {
     windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
     withTitleBar: true,

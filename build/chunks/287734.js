@@ -52,6 +52,6 @@ let p = {
   },
   disconnect() {
     let e = Chunk258609.default.getRemoteSessionId();
-    null != module && Chunk254238._(module), (0, Chunk700615.ur)() ? this.selectVoiceChannel(null) : (this.selectVoiceChannel(null), Chunk788983.xv(Chunk981631.KJ3.CHANNEL_CALL_POPOUT))
+    null != module && Chunk254238._(module), (0, Chunk700615.ur)() ? this.selectVoiceChannel(null) : (this.selectVoiceChannel(null), Chunk788983.close(Chunk981631.KJ3.CHANNEL_CALL_POPOUT))
   }
 }

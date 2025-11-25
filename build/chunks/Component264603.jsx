@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk384275 = require("./384275.js"),
   Chunk407089 = require("./407089.js"),
-  Chunk535139 = require("./535139.js"),
+  Chunk524995 = require("./524995.js"),
   Chunk812206 = require("./812206.js"),
   Chunk835473 = require("./835473.js"),
   Chunk594190 = require("./594190.js"),
@@ -47,13 +47,13 @@ function S() {
       var e, t;
       return null != (t = null == S || null == (e = S.linkedGames) ? true : module.map(e => p.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
     }),
-    N = (0, Chunk535139.F)(S, {
-      allowedFlows: [Chunk535139.r.RPC]
+    N = (0, Chunk524995.F)(S, {
+      allowedFlows: [Chunk524995.r.RPC]
     }),
-    T = (0, Chunk535139.F)(S, {
-      allowedFlows: [Chunk535139.r.WEB]
+    T = (0, Chunk524995.F)(S, {
+      allowedFlows: [Chunk524995.r.WEB]
     }),
-    O = (0, Chunk535139.F)(S),
+    O = (0, Chunk524995.F)(S),
     {
       canDeauthorize: P,
       deauthorize: I

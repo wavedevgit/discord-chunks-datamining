@@ -37,7 +37,7 @@ function h(e) {
 function b(e, t) {
   let n = (0, c.P)(t),
     o = i.useCallback(() => {
-      s.bA("".concat(u.KJ3.CHANNEL_POPOUT, "-").concat(e.id), t => (0, r.jsx)(h, {
+      s.open("".concat(u.KJ3.CHANNEL_POPOUT, "-").concat(e.id), t => (0, r.jsx)(h, {
         windowKey: t,
         channel: e
       }), {

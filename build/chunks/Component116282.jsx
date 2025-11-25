@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk159691 = require("./159691.js"),
   Chunk323183 = require("./323183.js"),
   Chunk5900 = require("./5900.js"),
-  Chunk953865 = require("./953865.jsx"),
+  Chunk773275 = require("./773275.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk163646 = require("./163646.js");
 let E = () => {
@@ -16,7 +16,7 @@ let E = () => {
     isWeb: t,
     installationStatus: e,
     connectionStatus: n
-  } = (0, Chunk953865.xf)(), E = (0, Chunk473749.useMemo)(() => {
+  } = (0, Chunk773275.xf)(), E = (0, Chunk473749.useMemo)(() => {
     switch (require) {
       case Chunk5900.Ij.CONNECTED:
         return Chunk388032.intl.format(Chunk163646.default.EVQZqy, {

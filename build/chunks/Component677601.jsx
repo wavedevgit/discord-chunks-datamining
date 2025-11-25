@@ -504,15 +504,15 @@ class eV extends Chunk473749.PureComponent {
       } = this.props, n = async () => {
         (null == t ? true : t.applicationId) != null && await (0, E.nJ)(t.applicationId, e.id);
         let n = e.getGuildId();
-        null != n && (0, H.uL)((0, em.LY)(n)), B.hP(e)
+        null != n && (0, H.uL)((0, em.LY)(n)), B.openChannelCallPopout(e)
       };
       null == t || (0, O.R)() ? n() : (0, I.Z)({
         onConfirm: n
       })
     }), ek(this, "handleStayOnTop", e => {
-      (0, eN.v)(Z.Z.VOICE_CONTROL_TRAY, eN.d.STAY_ON_TOP, e), B.hY(eR.KJ3.CHANNEL_CALL_POPOUT, e)
+      (0, eN.v)(Z.Z.VOICE_CONTROL_TRAY, eN.d.STAY_ON_TOP, e), B.setAlwaysOnTop(eR.KJ3.CHANNEL_CALL_POPOUT, e)
     }), ek(this, "handleClosePopout", () => {
-      B.xv(eR.KJ3.CHANNEL_CALL_POPOUT)
+      B.close(eR.KJ3.CHANNEL_CALL_POPOUT)
     }), ek(this, "handleFullscreenParticipant", (e, t) => {
       let {
         layout: n,

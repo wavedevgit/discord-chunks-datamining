@@ -12,9 +12,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk323183 = require("./323183.js"),
   Chunk5900 = require("./5900.js"),
-  Chunk953865 = require("./953865.jsx"),
   Chunk299886 = require("./299886.js"),
   Chunk37279 = require("./37279.jsx"),
+  Chunk773275 = require("./773275.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk163646 = require("./163646.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -29,9 +29,9 @@ let k = t => {
     isSupportedPrivateBrowsingPerkPlatform: v,
     isWeb: I,
     connectionStatus: b
-  } = (0, m.xf)(), {
+  } = (0, _.xf)(), {
     enabled: T
-  } = x.H.useConfig({
+  } = m.H.useConfig({
     location: "private_browsing_perk_settings_page"
   }), j = (0, r.useCallback)(() => {
     (0, l.Z)(f.Z5c.NITRO_HOME), e()
@@ -95,7 +95,7 @@ let k = t => {
   }, [k, N, E, A, j]);
   return L ? (0, a.jsxs)("div", {
     className: g.container,
-    children: [(0, a.jsx)(_.v, {
+    children: [(0, a.jsx)(x.v, {
       className: g.betaBadge
     }), (0, a.jsx)(i.$1m, {
       color: "nitro-pink",

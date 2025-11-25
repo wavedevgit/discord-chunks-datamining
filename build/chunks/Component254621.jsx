@@ -9,13 +9,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk734610 = require("./734610.js"),
   Chunk818710 = require("./818710.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk956097 = require("./956097.js"),
+  Chunk646834 = require("./646834.js"),
   Chunk960048 = require("./960048.js"),
   Chunk998054 = require("./998054.js"),
   Chunk5900 = require("./5900.js"),
-  Chunk953865 = require("./953865.jsx"),
   Chunk60995 = require("./60995.js"),
-  Chunk607726 = require("./607726.js");
+  Chunk607726 = require("./607726.js"),
+  Chunk773275 = require("./773275.jsx");
 let h = () => {
     let {
       installationStatus: e,
@@ -23,9 +23,9 @@ let h = () => {
       setConnectionStatus: n,
       finishSetup: r,
       getWarpInstallationStatus: a
-    } = (0, Chunk953865.xf)(), {
+    } = (0, Chunk773275.xf)(), {
       status: o
-    } = (0, Chunk442837.e7)([Chunk956097.Z], () => Chunk956097.Z.state, []), [h, m] = (0, Chunk473749.useState)(0), {
+    } = (0, Chunk442837.e7)([Chunk646834.Z], () => Chunk646834.Z.state, []), [h, m] = (0, Chunk473749.useState)(0), {
       installedDiscordPrivateBrowsingPerk: g
     } = (0, Chunk442837.e7)([Chunk607726.Z], () => Chunk607726.Z.getState(), []), [E, b] = (0, Chunk473749.useState)(false);
     return (0, Chunk473749.useEffect)(() => {

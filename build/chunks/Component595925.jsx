@@ -7,11 +7,11 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk901446 = require("./901446.js"),
-  Chunk29594 = require("./29594.jsx");
+  Chunk79869 = require("./79869.js"),
+  Chunk261538 = require("./261538.jsx");
 
 function o() {
-  return (0, Chunk54381.jsxs)(Chunk29594.E_, {
+  return (0, Chunk54381.jsxs)(Chunk261538.E_, {
     label: "Open New Revenue Storybook",
     direction: "vertical",
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -22,7 +22,7 @@ function o() {
       },
       children: "This section is deprecated. Use button to open the new Revenue Storybook instead."
     }), (0, Chunk54381.jsx)(Chunk159691.zxk, {
-      onClick: () => (0, Chunk901446.i)(Chunk901446.O.VIRTUAL_CURRENCY),
+      onClick: () => (0, Chunk79869.i)(Chunk79869.O.VIRTUAL_CURRENCY),
       text: "Open New Revenue Storybook"
     })]
   })

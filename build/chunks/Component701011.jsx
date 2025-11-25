@@ -36,7 +36,7 @@ function v() {
   }), v = Chunk473749.useRef(null), g = (0, Chunk110924.Z)(module);
   Chunk473749.useEffect(() => {
     null != module ? clearTimeout(v.current) : null != g && null == module && (v.current = window.setTimeout(() => {
-      (0, Chunk788983.xv)(Chunk981631.KJ3.ACTIVITY_POPOUT)
+      (0, Chunk788983.close)(Chunk981631.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
   }, [module, g]);
   let C = (0, Chunk442837.e7)([Chunk812206.Z], () => {

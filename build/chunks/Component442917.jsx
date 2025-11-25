@@ -297,7 +297,7 @@ class ef extends Chunk473749.PureComponent {
       let {
         channel: e
       } = this.props;
-      (0, v.v)(g.Z.VIDEO_PIP, v.d.POPOUT, true), D.hP(e)
+      (0, v.v)(g.Z.VIDEO_PIP, v.d.POPOUT, true), D.openChannelCallPopout(e)
     }), el(this, "renderBottomLeftControls", () => {
       let {
         canSeeParticipantName: e

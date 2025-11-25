@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk550385 = require("./550385.js"),
   Chunk757266 = require("./757266.js"),
   Chunk695103 = require("./695103.js"),
-  Chunk535139 = require("./535139.js"),
+  Chunk524995 = require("./524995.js"),
   Chunk222613 = require("./222613.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk428498 = require("./428498.js");
@@ -79,7 +79,7 @@ function N() {
         hasConnectionEntrypointUrl: S,
         validFlows: A
       }
-    } = (0, Chunk535139.F)(module, {
+    } = (0, Chunk524995.F)(module, {
       debug: true
     }),
     C = (0, Chunk442837.e7)([Chunk757266.Z], () => null != module && Chunk757266.Z.isConnected(module.id)),
@@ -160,7 +160,7 @@ function N() {
             description: Chunk782568 || !C ? null : Chunk388032.intl.string(Chunk222613.default.aTULMB),
             learnMoreLink: Chunk782568 || !C ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }],
-          isChosen: Chunk512722 === Chunk535139.r.RPC
+          isChosen: Chunk512722 === Chunk524995.r.RPC
         }), (0, Chunk54381.jsx)(R, {
           overallStatus: +!S,
           name: Chunk388032.intl.string(Chunk222613.default.K3ObrU),
@@ -171,7 +171,7 @@ function N() {
               url: null == Chunk692547 ? true : Chunk692547.connectionEntrypointUrl
             }) : null
           }],
-          isChosen: Chunk512722 === Chunk535139.r.WEB
+          isChosen: Chunk512722 === Chunk524995.r.WEB
         })]
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk428498.footer,

@@ -13,10 +13,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk720553 = require("./720553.jsx"),
   Chunk535664 = require("./535664.js"),
   Chunk5900 = require("./5900.js"),
-  Chunk953865 = require("./953865.jsx"),
   Chunk299886 = require("./299886.js"),
   Chunk848984 = require("./848984.js"),
-  Chunk29594 = require("./29594.jsx"),
+  Chunk773275 = require("./773275.jsx"),
+  Chunk261538 = require("./261538.jsx"),
   Chunk868802 = require("./868802.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk246992 = require("./246992.js"),
@@ -134,7 +134,7 @@ let y = e => {
     })
   },
   C = () => {
-    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [C, S] = Chunk473749.useState(false), [E, N] = Chunk473749.useState(5e3), [T, O] = Chunk473749.useState(false), P = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), w = (0, Chunk848984.u)(), [k] = Chunk473749.useState(() => (0, Chunk953865.o8)({
+    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [C, S] = Chunk473749.useState(false), [E, N] = Chunk473749.useState(5e3), [T, O] = Chunk473749.useState(false), P = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), w = (0, Chunk848984.u)(), [k] = Chunk473749.useState(() => (0, Chunk773275.o8)({
       finishSetup: async () => true,
       perkAvailableToUser: w
     })), {
@@ -194,12 +194,12 @@ let y = e => {
           marginTop: "16px"
         },
         children: "Private Browsing Perk Components"
-      }), (0, Chunk54381.jsxs)(Chunk29594.$0, {
+      }), (0, Chunk54381.jsxs)(Chunk261538.$0, {
         children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
           variant: "heading-lg/semibold",
           children: "Configure Private Browsing Perk State"
-        }), (0, Chunk54381.jsxs)(Chunk29594.pg, {
-          children: [(0, Chunk54381.jsxs)(Chunk29594.BZ, {
+        }), (0, Chunk54381.jsxs)(Chunk261538.pg, {
+          children: [(0, Chunk54381.jsxs)(Chunk261538.BZ, {
             children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
               variant: "text-md/semibold",
               children: "Is Nitro"
@@ -214,7 +214,7 @@ let y = e => {
                 checked: V
               })
             })]
-          }), (0, Chunk54381.jsxs)(Chunk29594.BZ, {
+          }), (0, Chunk54381.jsxs)(Chunk261538.BZ, {
             children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
               variant: "text-md/semibold",
               children: "Is Web"
@@ -227,7 +227,7 @@ let y = e => {
                 checked: G
               })
             })]
-          }), (0, Chunk54381.jsxs)(Chunk29594.BZ, {
+          }), (0, Chunk54381.jsxs)(Chunk261538.BZ, {
             children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
               variant: "text-md/semibold",
               children: "Is Supported Platform"
@@ -240,7 +240,7 @@ let y = e => {
                 checked: z
               })
             })]
-          }), (0, Chunk54381.jsxs)(Chunk29594.BZ, {
+          }), (0, Chunk54381.jsxs)(Chunk261538.BZ, {
             children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
               variant: "text-md/semibold",
               children: "Installation Status"
@@ -273,7 +273,7 @@ let y = e => {
               }],
               popoutLayerContext: Chunk246992.O$
             })]
-          }), R === Chunk5900._n.INSTALLED && (0, Chunk54381.jsxs)(Chunk29594.BZ, {
+          }), R === Chunk5900._n.INSTALLED && (0, Chunk54381.jsxs)(Chunk261538.BZ, {
             children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
               variant: "text-md/semibold",
               children: "Connection Status"
@@ -297,8 +297,8 @@ let y = e => {
               popoutLayerContext: Chunk246992.O$
             })]
           })]
-        }), R === Chunk5900._n.NOT_INSTALLED && (0, Chunk54381.jsxs)(Chunk29594.pg, {
-          children: [(0, Chunk54381.jsxs)(Chunk29594.BZ, {
+        }), R === Chunk5900._n.NOT_INSTALLED && (0, Chunk54381.jsxs)(Chunk261538.pg, {
+          children: [(0, Chunk54381.jsxs)(Chunk261538.BZ, {
             children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
               variant: "text-md/semibold",
               children: "Install with error"
@@ -311,7 +311,7 @@ let y = e => {
                 checked: C
               })
             })]
-          }), (0, Chunk54381.jsxs)(Chunk29594.BZ, {
+          }), (0, Chunk54381.jsxs)(Chunk261538.BZ, {
             children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
               variant: "text-md/semibold",
               children: "Install time"
@@ -342,14 +342,14 @@ let y = e => {
             })]
           })]
         })]
-      }), (0, Chunk54381.jsxs)(Chunk953865.xz.Provider, {
+      }), (0, Chunk54381.jsxs)(Chunk773275.xz.Provider, {
         value: k,
-        children: [(0, Chunk54381.jsxs)(Chunk29594.$0, {
+        children: [(0, Chunk54381.jsxs)(Chunk261538.$0, {
           children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk Settings Component"
           }), (0, Chunk54381.jsx)(Chunk868802.M, {})]
-        }), (0, Chunk54381.jsxs)(Chunk29594.$0, {
+        }), (0, Chunk54381.jsxs)(Chunk261538.$0, {
           children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk Exit Modal Upsell"
@@ -369,7 +369,7 @@ let y = e => {
             },
             transitionState: Chunk481060.Dvm.ENTERED
           })]
-        }), (0, Chunk54381.jsxs)(Chunk29594.$0, {
+        }), (0, Chunk54381.jsxs)(Chunk261538.$0, {
           children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk License Extension Task"
@@ -379,7 +379,7 @@ let y = e => {
               null == (e = P.current) || module.refresh()
             }
           })]
-        }), (0, Chunk54381.jsxs)(Chunk29594.$0, {
+        }), (0, Chunk54381.jsxs)(Chunk261538.$0, {
           children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk WARP License Info"

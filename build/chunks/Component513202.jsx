@@ -97,7 +97,7 @@ class T extends Chunk287545.Z {
         applicationId: n,
         showFeedback: r
       })
-    }), (0, u.R)() && i && (0, l.xv)(E.KJ3.ACTIVITY_POPOUT)
+    }), (0, u.R)() && i && (0, l.close)(E.KJ3.ACTIVITY_POPOUT)
   }
   hidePIPEmbed(e) {
     let {
@@ -123,7 +123,7 @@ class T extends Chunk287545.Z {
       } = e;
       t === E.KJ3.ACTIVITY_POPOUT && (I = false)
     }), y(this, "popInActivity", () => {
-      I = true, l.xv(E.KJ3.ACTIVITY_POPOUT);
+      I = true, l.close(E.KJ3.ACTIVITY_POPOUT);
       let e = _.ZP.getCurrentEmbeddedActivity();
       if (null != e) {
         let t = (0, p.p)(e.location);

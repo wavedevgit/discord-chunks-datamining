@@ -29,7 +29,7 @@ function g(n) {
       id: "popout-call",
       label: E.intl.string(E.t.JzWezz),
       icon: r.rgF,
-      action: () => s.hP(n)
+      action: () => s.openChannelCallPopout(n)
     })
   }(null != t ? t : true), O = function(n) {
     let t = (0, i.e7)([b.Z], () => b.Z.getGuild(null == n ? true : n.guild_id)),

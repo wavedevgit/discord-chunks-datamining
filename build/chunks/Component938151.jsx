@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk392711 = require("./392711.js"),
   Chunk481060 = require("./481060.js"),
   Chunk624968 = require("./624968.jsx"),
-  Chunk29594 = require("./29594.jsx"),
+  Chunk261538 = require("./261538.jsx"),
   Chunk152928 = require("./152928.js");
 let u = [{
     label: "xxs",
@@ -74,7 +74,7 @@ let u = [{
         gap: require,
         edgeFade: f,
         children: p
-      }), (0, Chunk54381.jsx)(Chunk29594.dv, {}), (0, Chunk54381.jsx)(Chunk29594.BZ, {
+      }), (0, Chunk54381.jsx)(Chunk261538.dv, {}), (0, Chunk54381.jsx)(Chunk261538.BZ, {
         children: (0, Chunk54381.jsx)(Chunk481060.oil, {
           type: "number",
           min: 0,
@@ -84,14 +84,14 @@ let u = [{
           },
           label: "Children Count"
         })
-      }), (0, Chunk54381.jsx)(Chunk29594.BZ, {
+      }), (0, Chunk54381.jsx)(Chunk261538.BZ, {
         children: (0, Chunk54381.jsx)(Chunk481060.q4e, {
           value: require,
           options: u,
           onChange: e => d(e),
           label: "Children Gap"
         })
-      }), (0, Chunk54381.jsx)(Chunk29594.BZ, {
+      }), (0, Chunk54381.jsx)(Chunk261538.BZ, {
         children: (0, Chunk54381.jsx)(Chunk481060.q4e, {
           value: f,
           options: u,

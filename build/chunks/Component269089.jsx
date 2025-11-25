@@ -59,7 +59,7 @@ class E extends Chunk317770.Z {
     let {
       channel: t
     } = e;
-    u.bA(d.KJ3.CHANNEL_CALL_POPOUT, e => t.isGuildStageVoice() ? (0, r.jsx)(m, {
+    u.open(d.KJ3.CHANNEL_CALL_POPOUT, e => t.isGuildStageVoice() ? (0, r.jsx)(m, {
       windowKey: e,
       channelId: t.id
     }) : (0, r.jsx)(h, {
@@ -78,7 +78,7 @@ class E extends Chunk317770.Z {
             if (e.nodeType === Node.ELEMENT_NODE && "LINK" === e.tagName && "stylesheet" === e.rel) {
               let t = e.href,
                 n = e.integrity;
-              u.YS(t, n)
+              u.addStylesheet(t, n)
             }
         }
     }), this._observer.observe(document.head, {
@@ -89,7 +89,7 @@ class E extends Chunk317770.Z {
     null != this._observer && (this._observer.disconnect(), this._observer = null)
   }
   handleOpenRTCDebugPopout() {
-    Chunk788983.bA(Chunk981631.KJ3.RTC_DEBUG_POPOUT, e => (0, r.jsx)(_, {
+    Chunk788983.open(Chunk981631.KJ3.RTC_DEBUG_POPOUT, e => (0, r.jsx)(_, {
       windowKey: e
     }), {
       defaultWidth: 854,
@@ -97,7 +97,7 @@ class E extends Chunk317770.Z {
     })
   }
   handleOpenActivityPopout() {
-    (0, Chunk765250.te)(Chunk757744.$S, Chunk355863.Z.getDefaultLayout(Chunk757744.$S, Chunk757744.HN), Chunk757744.HN), Chunk788983.bA(Chunk981631.KJ3.ACTIVITY_POPOUT, e => (0, r.jsx)(b, {
+    (0, Chunk765250.te)(Chunk757744.$S, Chunk355863.Z.getDefaultLayout(Chunk757744.$S, Chunk757744.HN), Chunk757744.HN), Chunk788983.open(Chunk981631.KJ3.ACTIVITY_POPOUT, e => (0, r.jsx)(b, {
       windowKey: e
     }), {
       defaultWidth: 854,
@@ -110,7 +110,7 @@ class E extends Chunk317770.Z {
         channelId: t,
         participantId: n
       } = e, i = (0, s.Z)(t, n);
-      u.bA(i, e => (0, r.jsx)(g, {
+      u.open(i, e => (0, r.jsx)(g, {
         windowKey: e,
         channelId: t,
         participantId: n

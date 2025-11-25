@@ -85,7 +85,7 @@ function Y(e) {
   } = function() {
     let e = (0, c.e7)([b.Z], () => b.Z.getIsAlwaysOnTop(F.KJ3.ACTIVITY_POPOUT)),
       n = r.useCallback(e => {
-        v.hY(F.KJ3.ACTIVITY_POPOUT, e)
+        v.setAlwaysOnTop(F.KJ3.ACTIVITY_POPOUT, e)
       }, []);
     return {
       canStayOnTop: Z.isPlatformEmbedded && T.ZP.supportsFeature(F.eRX.POPOUT_WINDOWS),

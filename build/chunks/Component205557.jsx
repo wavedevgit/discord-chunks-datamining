@@ -33,7 +33,7 @@ function E(e) {
     participantId: s
   } = e, E = (0, l.e7)([w.Z], () => w.Z.getChannel(n)), L = (0, l.e7)([I.Z], () => I.Z.getParticipant(n, s), [n, s]), _ = null != E && null != L, U = (0, l.e7)([O.Z], () => O.Z.getVoiceChannelId() === n);
   i.useEffect(() => {
-    _ && U || d.xv(t)
+    _ && U || d.close(t)
   }, [_, U, t]);
   let j = i.useCallback(e => {
       let {

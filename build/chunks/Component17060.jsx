@@ -25,8 +25,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk499533 = require("./499533.js"),
   Chunk709054 = require("./709054.js"),
   Chunk145597 = require("./145597.js"),
-  Chunk427860 = require("./427860.js"),
   Chunk837268 = require("./837268.js"),
+  Chunk307149 = require("./307149.js"),
   Chunk475866 = require("./475866.js"),
   Chunk371651 = require("./371651.js"),
   Chunk610394 = require("./610394.js"),
@@ -155,7 +155,7 @@ function A(e) {
 let B = {
   HandleFocusChanged: (e, t) => {
     var n;
-    if (!(0, E._R)(e, "HandleFocusChanged")) returntrue;
+    if (!(0, I._R)(e, "HandleFocusChanged")) returntrue;
     let l = null != t && null != (n = G.Z.getKnownWindowHandlesForPID(t)) ? n : new Set,
       {
         focusedPid: r,
@@ -165,7 +165,7 @@ let B = {
   },
   EventHook: (e, t) => {
     var n;
-    if (!(0, E._R)(e, "EventHook")) returntrue;
+    if (!(0, I._R)(e, "EventHook")) returntrue;
     let l = null != t && null != (n = G.Z.getKnownWindowHandlesForPID(t)) ? n : new Set;
     try {
       let {
@@ -260,9 +260,9 @@ function K(e) {
     let o = null != (r = x.default.getFocusedPID()) ? r : (0, P.getPID)(),
       c = Z.default.getTrackedGameByPid(o),
       g = G.Z.getPopoutInitializationStages(),
-      p = (null == c ? true : c.overlayMethod) != null ? I.gl[c.overlayMethod] : null,
+      p = (null == c ? true : c.overlayMethod) != null ? E.gl[c.overlayMethod] : null,
       y = null != (a = null == c ? true : c.fullscreenType) ? a : m.Jx.UNKNOWN,
-      w = (0, E.y2)(eu, e => {
+      w = (0, I.y2)(eu, e => {
         for (let t of Object.values(B)) try {
           if (!t(e, o)) returnfalse
         } catch (e) {

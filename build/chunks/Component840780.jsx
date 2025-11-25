@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk889441 = require("./889441.js"),
   Chunk736409 = require("./736409.jsx"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk535139 = require("./535139.js"),
+  Chunk524995 = require("./524995.js"),
   Chunk835473 = require("./835473.js"),
   Chunk413523 = require("./413523.js"),
   Chunk522651 = require("./522651.js"),
@@ -67,7 +67,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk63063 = require("./63063.js"),
   Chunk358085 = require("./358085.js"),
-  Chunk381096 = require("./381096.js"),
+  Chunk689678 = require("./689678.js"),
   Chunk345243 = require("./345243.jsx"),
   Chunk115530 = require("./115530.jsx"),
   Chunk339144 = require("./339144.jsx"),
@@ -149,8 +149,8 @@ class eN extends Chunk473749.PureComponent {
   }
   renderAccountLinkPopover() {
     let {
-      accountLinkExperimentEnabled: e,
-      hasAlreadyLinked: t,
+      hasAlreadyLinked: e,
+      accountLinkCopyConfig: t,
       blockAccountLinkDismissibleContent: n,
       application: i,
       activity: l,
@@ -162,22 +162,22 @@ class eN extends Chunk473749.PureComponent {
       accountLinkButtonRef: g,
       startAuthorization: b
     } = this.props, _ = (0, Chunk339144.y)(Chunk473749, Chunk120356, o), y = [];
-    return require || !module ? null : (exports ? Chunk925549 && null == o ? Chunk438139.push(Chunk704215.z.ACCOUNT_LINK_INVITE_FRIENDS) : Chunk438139.push(Chunk704215.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER) : Chunk481060 && null != Chunk473749 && Chunk438139.push(Chunk704215.z.ACCOUNT_LINK_PROMPT), (0, Chunk54381.jsx)(Chunk243778.ZP, {
+    return require ? null : (module ? Chunk925549 && null == o ? Chunk438139.push(Chunk704215.z.ACCOUNT_LINK_INVITE_FRIENDS) : Chunk438139.push(Chunk704215.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER) : Chunk481060 && null != Chunk473749 && Chunk438139.push(Chunk704215.z.ACCOUNT_LINK_PROMPT), (0, Chunk54381.jsx)(Chunk243778.ZP, {
       contentTypes: Chunk438139,
       groupName: Chunk921944.R.ACCOUNT_NAME_ZONE,
       bypassAutoDismiss: true,
       children: e => {
         let {
-          visibleContent: t,
-          markAsDismissed: n
+          visibleContent: n,
+          markAsDismissed: o
         } = e;
-        return t === d.z.ACCOUNT_LINK_INVITE_FRIENDS ? (0, r.jsx)(p.J2, {
+        return n === d.z.ACCOUNT_LINK_INVITE_FRIENDS ? (0, r.jsx)(p.J2, {
           title: ex.intl.string(ex.t["0l2pEt"]),
           body: ex.intl.string(ex.t["DSZUK/"]),
           targetElementRef: this.inviteButtonRef,
           align: "right",
           shouldShow: true,
-          onRequestClose: () => n(eO.L.USER_DISMISS),
+          onRequestClose: () => o(eO.L.USER_DISMISS),
           caretConfig: {
             align: "end"
           },
@@ -185,7 +185,7 @@ class eN extends Chunk473749.PureComponent {
             text: ex.intl.string(ex.t.YdkBCH),
             onClick: () => {
               var e;
-              n(eO.L.TAKE_ACTION), s()(null != l, "Received null activity"), eu.default.track(e_.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
+              o(eO.L.TAKE_ACTION), s()(null != l, "Received null activity"), eu.default.track(e_.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
                 action_type: "invite_to_game",
                 game_id: null != (e = null == c ? true : c.id) ? e : null,
                 application_id: l.application_id
@@ -196,7 +196,7 @@ class eN extends Chunk473749.PureComponent {
               }), (0, m.h7)(l, false)
             }
           }]
-        }) : t === d.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER ? (0, r.jsx)(p.J2, {
+        }) : n === d.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER ? (0, r.jsx)(p.J2, {
           title: ex.intl.string(ex.t.MxAlrB),
           body: ex.intl.string(ex.t["/UTTEg"]),
           targetElementRef: this.accountLinkUpsellTargetRef,
@@ -208,12 +208,12 @@ class eN extends Chunk473749.PureComponent {
           actions: [{
             text: ex.intl.string(ex.t.aRIFWD),
             onClick: () => {
-              n(eO.L.TAKE_ACTION), window.open(ed.Z.getArticleURL(e_.BhN.IN_GAME_FEATURES), "_blank")
+              o(eO.L.TAKE_ACTION), window.open(ed.Z.getArticleURL(e_.BhN.IN_GAME_FEATURES), "_blank")
             }
           }],
           shouldShow: true,
-          onRequestClose: () => n(eO.L.USER_DISMISS)
-        }) : t === d.z.ACCOUNT_LINK_PROMPT ? (0, r.jsx)(p.J2, {
+          onRequestClose: () => o(eO.L.USER_DISMISS)
+        }) : n === d.z.ACCOUNT_LINK_PROMPT ? (0, r.jsx)(p.J2, {
           graphic: {
             type: "dynamic",
             component: f.DynamicGraphicComponent.ACCOUNT_LINK_DISPLAY,
@@ -221,22 +221,22 @@ class eN extends Chunk473749.PureComponent {
               application: i
             }
           },
-          title: ex.intl.formatToPlainString(ex.t["lo6H6+"], {
+          title: ex.intl.formatToPlainString(t.altTitle ? ex.t.hUbQT2 : ex.t["lo6H6+"], {
             gameName: i.name
           }),
-          body: ex.intl.string(ex.t.qYAzOp),
+          body: ex.intl.string(t.altBody ? ex.t["JKqu+4"] : ex.t.qYAzOp),
           targetElementRef: g,
           align: "right",
           shouldShow: true,
           gradientColor: "purple",
-          onRequestClose: () => n(eO.L.USER_DISMISS),
+          onRequestClose: () => o(eO.L.USER_DISMISS),
           caretConfig: {
             align: "end"
           },
           actions: [{
-            text: ex.intl.string(ex.t.lw71Nf),
+            text: ex.intl.string(t.altCta ? ex.t.jynBQ5 : ex.t.lw71Nf),
             onClick: () => {
-              n(eO.L.TAKE_ACTION), b()
+              o(eO.L.TAKE_ACTION), b()
             }
           }]
         }) : true
@@ -509,12 +509,12 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     } = (0, X.Ws)({
       location: ej.dr.CONFLICT_CHECKS
     }),
-    em = ep.Z.useConfig({
-      location: "RunningGameCard"
-    }).enabled,
     {
-      parentAnalyticsLocation: eb
+      parentAnalyticsLocation: em
     } = (0, I.ZP)(),
+    eb = ep.Z.useConfig({
+      location: "ActivityPanelGameCard"
+    }),
     ey = (0, c.O)(e => {
       if (e && null != Q) {
         var t;
@@ -547,8 +547,8 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     isActivityPopoutOpen: H,
     hasAlreadyLinked: z,
     blockAccountLinkDismissibleContent: !eg || !eh,
-    accountLinkExperimentEnabled: em,
-    parentAnalyticsLocation: eb,
+    accountLinkCopyConfig: eb,
+    parentAnalyticsLocation: em,
     canStartAuthorization: q,
     accountLinkButtonRef: ey,
     startAuthorization: ed

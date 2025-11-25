@@ -14,13 +14,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e, t) {
-  let n = (0, l.e7)([o.Z], () => e === o.Z.getSelectedParticipantId(t), [t, e]);
-  return (0, l.e7)([o.Z, s.Z], () => {
-    let n = s.Z.isInChannel(t, e) && s.Z.hasVideo(t),
-      i = o.Z.getLayout(t),
-      l = i === u.AEg.MINIMUM || i === u.AEg.NORMAL;
-    return !n || l
-  }, [t, e]) ? null : (0, i.jsx)(r.sNh, {
+  let n = (0, i.e7)([o.Z], () => e === o.Z.getSelectedParticipantId(t), [t, e]);
+  return (0, i.e7)([o.Z, u.Z], () => {
+    let n = u.Z.isInChannel(t, e) && u.Z.hasVideo(t),
+      l = o.Z.getLayout(t),
+      i = l === s.AEg.MINIMUM || l === s.AEg.NORMAL;
+    return !n || i
+  }, [t, e]) ? null : (0, l.jsx)(r.sNh, {
     id: "focus-video",
     label: n ? d.intl.string(d.t.KJPKUT) : d.intl.string(d.t["77cRN4"]),
     action: () => a.Z.selectParticipant(t, n ? null : e)

@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk106682 = require("./106682.js"),
   Chunk243194 = require("./243194.js"),
   Chunk494409 = require("./494409.js"),
-  Chunk266631 = require("./266631.js");
+  Chunk490225 = require("./490225.js");
 
 function A(e) {
   let t, n, {
@@ -255,14 +255,14 @@ let Z = Chunk473749.memo(function(e) {
       t = "".concat(Math.floor(50 * Math.random()) + 100, "px"),
       n = "".concat(Math.floor(25 * Math.random()) + 50, "px");
     return (0, Chunk54381.jsxs)("tr", {
-      className: a()(Chunk266631.roundedRow, Chunk266631.memberRowContainer),
+      className: a()(Chunk490225.roundedRow, Chunk490225.memberRowContainer),
       children: [(0, Chunk54381.jsx)("td", {
         children: (0, Chunk54381.jsxs)("div", {
-          className: Chunk266631.memberNameContainer,
+          className: Chunk490225.memberNameContainer,
           children: [(0, Chunk54381.jsx)("div", {
-            className: a()(Chunk106682.placeholderAvatar, Chunk266631.memberAvatar)
+            className: a()(Chunk106682.placeholderAvatar, Chunk490225.memberAvatar)
           }), (0, Chunk54381.jsx)("div", {
-            className: Chunk266631.memberName,
+            className: Chunk490225.memberName,
             children: (0, Chunk54381.jsx)("div", {
               className: Chunk106682.placeholderText,
               style: {
@@ -270,7 +270,7 @@ let Z = Chunk473749.memo(function(e) {
               }
             })
           }), (0, Chunk54381.jsx)("div", {
-            className: Chunk266631.memberGlobalName,
+            className: Chunk490225.memberGlobalName,
             children: (0, Chunk54381.jsx)("div", {
               className: Chunk106682.placeholderTextSmall,
               style: {
@@ -280,7 +280,7 @@ let Z = Chunk473749.memo(function(e) {
           })]
         })
       }), (0, Chunk54381.jsx)("td", {
-        className: Chunk266631.mediumCol,
+        className: Chunk490225.mediumCol,
         children: (0, Chunk54381.jsx)("div", {
           className: Chunk106682.placeholderText,
           style: {

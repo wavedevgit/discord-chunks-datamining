@@ -8,8 +8,8 @@ require("./473749.js");
 var Chunk657707 = require("./657707.js"),
   Chunk688465 = require("./688465.jsx"),
   Chunk612659 = require("./612659.js"),
-  Chunk953865 = require("./953865.jsx"),
   Chunk299886 = require("./299886.js"),
+  Chunk773275 = require("./773275.jsx"),
   Chunk509613 = require("./509613.js"),
   Chunk28682 = require("./28682.js"),
   Chunk313789 = require("./313789.js"),
@@ -38,7 +38,7 @@ let g = (0, Chunk509613.x1)(Chunk313789.n.PRIVATE_BROWSING_PANE, {
           isSupportedPrivateBrowsingPerkPlatform: e,
           isWeb: n,
           perkAvailableToUser: i
-        } = (0, Chunk953865.xf)(),
+        } = (0, Chunk773275.xf)(),
         {
           enabled: l
         } = Chunk299886.H.useConfig({

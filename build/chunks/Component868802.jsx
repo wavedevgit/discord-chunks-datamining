@@ -13,9 +13,9 @@ var Chunk793030 = require("./793030.js"),
   Chunk740594 = require("./740594.jsx"),
   Chunk612659 = require("./612659.js"),
   Chunk5900 = require("./5900.js"),
-  Chunk953865 = require("./953865.jsx"),
   Chunk37279 = require("./37279.jsx"),
   Chunk969521 = require("./969521.jsx"),
+  Chunk773275 = require("./773275.jsx"),
   Chunk584197 = require("./584197.jsx"),
   Chunk703656 = require("./703656.js"),
   Chunk589072 = require("./589072.jsx"),
@@ -80,7 +80,7 @@ let v = () => {
       installationStatus: t,
       isWeb: e,
       setInstallationStatus: n
-    } = (0, Chunk953865.xf)(), s = (0, Chunk612659.m)();
+    } = (0, Chunk773275.xf)(), s = (0, Chunk612659.m)();
     if (exports) return (0, Chunk54381.jsx)(Chunk969521.U, {});
     if (!Chunk511857) return (0, Chunk54381.jsxs)("div", {
       className: Chunk498374.subscribeBtnContainer,

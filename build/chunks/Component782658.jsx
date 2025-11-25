@@ -13,8 +13,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk997431 = require("./997431.js"),
   Chunk924301 = require("./924301.js"),
   Chunk11868 = require("./11868.jsx"),
-  Chunk542256 = require("./542256.js"),
   Chunk413605 = require("./413605.js"),
+  Chunk697037 = require("./697037.js"),
   Chunk314897 = require("./314897.js"),
   Chunk430824 = require("./430824.js"),
   Chunk701190 = require("./701190.js"),
@@ -63,11 +63,11 @@ function N(e) {
     },
     U = () => {
       let e = null == x && (null == R ? true : R.guild) != null ? g.Qs(R.guild) : x;
-      (0, f.o)({
+      (0, _.o)({
         guild: e,
         isMember: null != x,
         analyticsLocations: L
-      }) === f.e.PROCEED && o.ZP.acceptInviteAndTransitionToInviteChannel({
+      }) === _.e.PROCEED && o.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: t,
         context: N("Invite Button Embed")
       })
@@ -99,8 +99,8 @@ function N(e) {
       });
       break;
     default:
-      switch ((0, _.VR)(w)) {
-        case _.wx.GROUP_DM:
+      switch ((0, f.VR)(w)) {
+        case f.wx.GROUP_DM:
           G = (0, r.jsx)(O.Z, {
             onTransitionToInviteChannel: j,
             onAcceptInstantInvite: U,
@@ -109,7 +109,7 @@ function N(e) {
             message: n
           });
           break;
-        case _.wx.FRIEND:
+        case f.wx.FRIEND:
           G = (0, r.jsx)(y.Z, {
             invite: w,
             message: n,
@@ -117,7 +117,7 @@ function N(e) {
           });
           break;
         default:
-          if ((0, _.TY)(w)) {
+          if ((0, f.TY)(w)) {
             G = (0, r.jsx)(A.Z, {
               onTransitionToInviteChannel: j,
               onAcceptInstantInvite: U,
@@ -128,7 +128,7 @@ function N(e) {
             });
             break
           }
-          if ((0, _.Tx)(w)) {
+          if ((0, f.Tx)(w)) {
             G = (0, r.jsx)(d.ZP, {
               guildScheduledEvent: k,
               guild: w.guild,
@@ -139,7 +139,7 @@ function N(e) {
             });
             break
           }
-          if ((0, _.P1)(w)) {
+          if ((0, f.P1)(w)) {
             G = (0, r.jsx)(E.Z, {
               invite: w,
               getAcceptInviteContext: N,
