@@ -903,7 +903,7 @@ function eK(e) {
 
 function ez(e) {
   let t = (0, c.e7)([d.ZP], () => d.ZP.getCurrentEmbeddedActivity()),
-    n = (0, w.Mo)(e);
+    n = (0, w.nY)(e);
   return {
     launchInGameActivity: r.useCallback(() => {
       null != n && (null != t && t.applicationId === n ? (0, f.Z)("guild_id" in t.location ? t.location.guild_id : null, t.location) : (0, h.uL)(B.Z5c.ACTIVITY_DETAILS(n)))
