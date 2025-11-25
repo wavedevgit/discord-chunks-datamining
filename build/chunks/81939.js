@@ -17,7 +17,8 @@ function d(e) {
     guildId: t,
     numWishlistItems: i = c
   } = e, d = (0, s.Z)({
-    guildId: t
+    guildId: t,
+    location: "Wishlist Items for Social Layer Storefront"
   }), u = n.useMemo(() => {
     if (null == d || null == d.storefront || "loading" === d.state || "partially-fetched" === d.state) return [];
     let e = d.storefront.pages.flatMap(e => {

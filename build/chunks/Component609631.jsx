@@ -387,6 +387,13 @@ class w extends(r = Chunk473749.Component) {
     let i = this.elementRef.current;
     c()(null != Chunk54381, "Missing elementRef"), O.delete(Chunk54381), null == Chunk54381 || null == (t = Chunk54381.ownerDocument) || null == (e = exports.defaultView) || module.removeEventListener("resize", this.updatePosition), null == (n = (r = this.props).onUnmount) || require.call(r)
   }
+  calculateMaxHeight() {
+    let e = this.elementRef.current;
+    if (null == module) return;
+    let t = (0, Chunk168718.wL)(module),
+      n = this.state.style;
+    return null != require.top ? Math.max(0, exports.offsetHeight - require.top - T) : null != require.bottom ? Math.max(0, exports.offsetHeight - require.bottom - T) : Math.max(0, exports.offsetHeight - 2 * T)
+  }
   render() {
     let {
       id: e,
@@ -399,7 +406,7 @@ class w extends(r = Chunk473749.Component) {
       position: l,
       isPositioned: c,
       nudge: u
-    } = this.state;
+    } = this.state, p = this.calculateMaxHeight();
     return (0, Chunk54381.jsx)("div", {
       className: s()({
         [Chunk793906.clickTrapContainer]: true,
@@ -418,9 +425,11 @@ class w extends(r = Chunk473749.Component) {
                 [m.emptyError]: false,
                 [m.disabledPointerEvents]: a
               }),
-              style: E({
+              style: y(E({
                 position: r ? "fixed" : "absolute"
-              }, this.state.style),
+              }, this.state.style), {
+                "--reference-position-layer-max-height": null != p ? "".concat(p, "px") : true
+              }),
               ref: this.elementRef,
               children: (0, i.jsx)(d.Jc, {
                 containerRef: this.elementRef,

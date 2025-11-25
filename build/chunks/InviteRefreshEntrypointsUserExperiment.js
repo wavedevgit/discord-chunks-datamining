@@ -87,11 +87,11 @@ function s(e) {
     isTextChannelEntrypointEnabled: o
   } = a.useExperiment({
     location: t
-  });
+  }), s = n || r || i || o;
   return {
-    isVoiceChannelEntrypointEnabled: n,
-    isInCallEntrypointEnabled: r,
-    isGuildEntrypointEnabled: i,
-    isTextChannelEntrypointEnabled: o
+    isVoiceChannelEntrypointEnabled: s,
+    isInCallEntrypointEnabled: s,
+    isGuildEntrypointEnabled: s,
+    isTextChannelEntrypointEnabled: s
   }
 }

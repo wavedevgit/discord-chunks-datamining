@@ -49,8 +49,8 @@ function E(e) {
     selectedPageIndex: a
   } = e, E = (0, r.wjy)((0, d.ZP)()), N = (0, p.Y)({
     location: "SocialLayerStorefrontHeader"
-  }), R = (0, s.e7)([f.default], () => f.default.getCurrentUser()), T = (0, m.oR)(), {
-    analyticsLocations: L
+  }), R = (0, s.e7)([f.default], () => f.default.getCurrentUser()), L = (0, m.oR)(), {
+    analyticsLocations: T
   } = (0, u.ZP)(), A = i.useCallback(() => {
     (null == R ? true : R.id) != null && (0, _.openUserProfileModal)({
       userId: R.id,
@@ -60,11 +60,11 @@ function E(e) {
     })
   }, [R]), M = i.useCallback(() => {
     I.default.track(b.rMx.SLAYER_STOREFRONT_PAGE_ELEMENT_CLICKED, {
-      slayer_storefront_session_id: null == T ? true : T.sessionId,
+      slayer_storefront_session_id: null == L ? true : L.sessionId,
       cta_type: C.US.LEARN_MORE,
-      location_stack: L
+      location_stack: T
     }), window.open(h.Z.getArticleURL(b.BhN.SOCIAL_LAYER_STOREFRONT))
-  }, [T, L]);
+  }, [L, T]);
   if (null == t) return null;
   let O = null != t.logoAssetId ? (0, x._W)(t.applicationId, t.logoAssetId, 75) : null,
     P = null != t.lightThemeLogoAssetId ? (0, x._W)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,

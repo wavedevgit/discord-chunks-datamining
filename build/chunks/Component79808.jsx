@@ -114,8 +114,9 @@ function y(e) {
   }, [S, _, k, v, I, O]);
   let D = l.useMemo(() => ({
       navTransition: Z,
-      directory: v
-    }), [Z, v]),
+      directory: v,
+      fallbackDirectory: E
+    }), [Z, v, E]),
     A = () => I(m),
     R = null != S ? v.get(S) : true;
   return (0, r.jsx)(u.j.Provider, {
