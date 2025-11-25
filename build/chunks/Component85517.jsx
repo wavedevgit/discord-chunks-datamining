@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 85517, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T,
-  o: () => N
+  Z: () => j,
+  o: () => P
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,6 +10,7 @@ var Chunk54381 = require("./54381.js"),
   a = require.n(Chunk120356),
   Chunk828700 = require("./828700.js"),
   Chunk772848 = require("./772848.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393903 = require("./393903.js"),
   Chunk410030 = require("./410030.js"),
@@ -17,6 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk825102 = require("./825102.js"),
   Chunk626135 = require("./626135.js"),
   Chunk617136 = require("./617136.js"),
+  Chunk616022 = require("./616022.js"),
   Chunk49436 = require("./49436.js"),
   Chunk110560 = require("./110560.jsx"),
   Chunk324805 = require("./324805.js"),
@@ -25,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk810516 = require("./810516.js");
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +46,7 @@ function I(e) {
   return e
 }
 
-function C(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,32 +59,32 @@ function C(e, t) {
   }), e
 }
 
-function S(e) {
+function N(e) {
   let {
     asset: t
   } = e;
   if ("image" === t.assetType) return (0, r.jsxs)("div", {
-    className: v.heroImageBackground,
+    className: C.heroImageBackground,
     children: [(0, r.jsx)("div", {
-      className: v.backgroundOverlay
+      className: C.backgroundOverlay
     }), (0, r.jsx)("div", {
-      className: v.heroImage,
+      className: C.heroImage,
       children: (0, r.jsx)("img", {
-        className: v.image,
+        className: C.image,
         src: t.url,
         alt: t.altText
       })
     }), (0, r.jsx)("div", {
-      className: a()(v.heroImage, v.heroImageBlurred, v.heroImageBlurredB),
+      className: a()(C.heroImage, C.heroImageBlurred, C.heroImageBlurredB),
       children: (0, r.jsx)("img", {
-        className: v.image,
+        className: C.image,
         src: t.url,
         alt: ""
       })
     }), (0, r.jsx)("div", {
-      className: a()(v.heroImage, v.heroImageBlurred, v.heroImageBlurredA),
+      className: a()(C.heroImage, C.heroImageBlurred, C.heroImageBlurredA),
       children: (0, r.jsx)("img", {
-        className: v.image,
+        className: C.image,
         src: t.url,
         alt: ""
       })
@@ -90,108 +92,108 @@ function S(e) {
   })
 }
 
-function T(e) {
+function j(e) {
   let {
     config: t,
     onQuestCtaClick: n
-  } = e, l = (0, s.TH)(), T = (0, s.k6)(), {
-    enabled: N
-  } = (0, f.WX)({
-    location: b.dr.QUEST_HOME_DESKTOP
-  }), j = (0, d.ZP)(), [P, x] = i.useState("display-lg"), A = i.useCallback(e => {
-    e.contentRect.width < 500 ? x("display-md") : x("display-lg")
-  }, []), Z = (0, u.y)(A, [], {
+  } = e, l = (0, s.TH)(), j = (0, s.k6)(), {
+    enabled: P
+  } = (0, h.WX)({
+    location: O.dr.QUEST_HOME_DESKTOP
+  }), x = (0, p.ZP)(), [A, Z] = i.useState("display-lg"), w = i.useCallback(e => {
+    e.contentRect.width < 500 ? Z("display-md") : Z("display-lg")
+  }, []), L = (0, d.y)(w, [], {
     fireOnMount: true
-  });
+  }), R = (0, c.e7)([_.Z], () => _.Z.quests);
   return i.useEffect(() => {
-    h.default.track(E.rMx.QUEST_CONTENT_VIEWED, C(I({}, (0, g.mH)(m.jn.QUEST_HOME_TAKEOVER)), {
+    g.default.track(y.rMx.QUEST_CONTENT_VIEWED, T(S({}, (0, m.mH)(b.jn.QUEST_HOME_TAKEOVER)), {
       quest_id: t.campaignId,
       is_targeted: false
     }))
   }, [t.campaignId]), (0, r.jsx)("div", {
-    className: a()(v.wrapper, {
-      "theme-dark": j === O.BR.LIGHT,
-      [v.wrapperWithOldDiscoveryHeader]: !N
+    className: a()(C.wrapper, {
+      "theme-dark": x === v.BR.LIGHT,
+      [C.wrapperWithOldDiscoveryHeader]: !P
     }),
-    ref: Z,
+    ref: L,
     children: (0, r.jsxs)("div", {
-      className: v.contentWrapper,
-      children: [(0, r.jsxs)(c.Kqy, {
-        className: v.content,
+      className: C.contentWrapper,
+      children: [(0, r.jsxs)(u.Kqy, {
+        className: C.content,
         direction: "vertical",
         justify: "space-between",
-        children: [(0, r.jsxs)(c.Kqy, {
+        children: [(0, r.jsxs)(u.Kqy, {
           direction: "horizontal",
           justify: "space-between",
           align: "start",
           children: [(0, r.jsx)("img", {
             src: t.assetSponsorImage.url,
             alt: t.assetSponsorImage.altText,
-            className: v.logo
-          }), (0, r.jsx)(c.Text, {
+            className: C.logo
+          }), (0, r.jsx)(u.Text, {
             color: "text-secondary",
             variant: "text-sm/semibold",
-            className: v.sponsoredTag,
-            children: y.intl.string(y.t.OJjFi5)
+            className: C.sponsoredTag,
+            children: I.intl.string(I.t.OJjFi5)
           })]
-        }), (0, r.jsxs)(c.Kqy, {
-          className: v.contentBody,
+        }), (0, r.jsxs)(u.Kqy, {
+          className: C.contentBody,
           gap: 16,
-          children: [(0, r.jsxs)(c.Kqy, {
+          children: [(0, r.jsxs)(u.Kqy, {
             gap: 8,
-            children: [(0, r.jsx)(c.Heading, {
+            children: [(0, r.jsx)(u.Heading, {
               color: "header-primary",
-              variant: P,
-              className: v.title,
+              variant: A,
+              className: C.title,
               children: t.labelTitle
-            }), (0, r.jsx)(c.Text, {
+            }), (0, r.jsx)(u.Text, {
               color: "text-primary",
               variant: "text-md/normal",
-              className: v.subtitle,
+              className: C.subtitle,
               children: t.labelSubtitle
             })]
-          }), (0, r.jsxs)(c.ButtonGroup, {
-            children: [(0, r.jsx)(c.Button, {
+          }), (0, r.jsxs)(u.ButtonGroup, {
+            children: [(0, r.jsx)(u.Button, {
               onClick: () => {
-                (0, p.Z)(t.ctaSponsorUrl.url), h.default.track(E.rMx.QUEST_CONTENT_CLICKED, I({
+                (0, f.Z)(t.ctaSponsorUrl.url), g.default.track(y.rMx.QUEST_CONTENT_CLICKED, S({
                   quest_id: t.campaignId,
-                  cta_name: g.jZ.OPEN_GAME_LINK,
+                  cta_name: m.jZ.OPEN_GAME_LINK,
                   click_id: (0, o.Z)(),
                   is_targeted: false
-                }, (0, g.mH)(m.jn.QUEST_HOME_TAKEOVER)))
+                }, (0, m.mH)(b.jn.QUEST_HOME_TAKEOVER)))
               },
               size: "md",
               text: t.ctaSponsorUrl.title,
               variant: "overlay-primary"
-            }), t.ctaQuests.map((e, i) => (0, r.jsx)(c.Button, {
+            }), t.ctaQuests.map((e, i) => R.has(e.questId) ? (0, r.jsx)(u.Button, {
               onClick: () => {
-                T.replace(C(I({}, l), {
+                j.replace(T(S({}, l), {
                   hash: true
                 })), null == n || n(), window.requestIdleCallback(() => {
-                  (0, _.navigateToQuestHome)({
+                  (0, E.navigateToQuestHome)({
                     questId: e.questId
                   })
-                }), h.default.track(E.rMx.QUEST_CONTENT_CLICKED, I({
+                }), g.default.track(y.rMx.QUEST_CONTENT_CLICKED, S({
                   quest_id: t.campaignId,
-                  cta_name: g.jZ.LEARN_MORE,
+                  cta_name: m.jZ.LEARN_MORE,
                   click_id: (0, o.Z)(),
                   is_targeted: false
-                }, (0, g.mH)(m.jn.QUEST_HOME_TAKEOVER)))
+                }, (0, m.mH)(b.jn.QUEST_HOME_TAKEOVER)))
               },
               size: "md",
               text: e.title,
               variant: "color-mix"
-            }, i))]
+            }, i) : null)]
           })]
         })]
-      }), (0, r.jsx)(S, {
+      }), (0, r.jsx)(N, {
         asset: t.assetHeroImage
       })]
     })
   })
 }
 
-function N() {
+function P() {
   return (0, Chunk54381.jsx)("div", {
     className: a()(Chunk810516.wrapper, Chunk810516.contentWrapper, Chunk810516.contentWrapperLoading),
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
