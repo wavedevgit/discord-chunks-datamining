@@ -10,8 +10,8 @@ var Chunk473749 = require("./473749.js"),
   Chunk906555 = require("./906555.js"),
   Chunk812967 = require("./812967.js"),
   Chunk49012 = require("./49012.js"),
+  Chunk407089 = require("./407089.js"),
   Chunk491662 = require("./491662.js"),
-  Chunk758677 = require("./758677.js"),
   u = function(e) {
     return e.RPC = "rpc", e.WEB = "web", e
   }({});
@@ -23,7 +23,7 @@ function d(e) {
       allowedFlows: u = ["rpc", "web"],
       debug: d = false
     } = n,
-    f = (0, c.t)(e),
+    f = (0, l.R)(e),
     _ = (0, a.t)(null == f ? true : f.id, "AUTHORIZE_REQUEST"),
     p = u.includes("rpc") && _,
     h = u.includes("web") && (null == f ? true : f.connectionEntrypointUrl) != null,
@@ -32,7 +32,7 @@ function d(e) {
     {
       token: E,
       fetched: b
-    } = (0, l.o)(null != (t = null == f ? true : f.parentId) ? t : null == f ? true : f.id),
+    } = (0, c.o)(null != (t = null == f ? true : f.parentId) ? t : null == f ? true : f.id),
     y = b && null != E;
   return {
     fetched: b,

@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk524437 = require("./524437.js"),
   Chunk481060 = require("./481060.js"),
   Chunk384275 = require("./384275.js"),
-  Chunk758677 = require("./758677.js"),
+  Chunk407089 = require("./407089.js"),
   Chunk535139 = require("./535139.js"),
   Chunk812206 = require("./812206.js"),
   Chunk835473 = require("./835473.js"),
@@ -103,7 +103,7 @@ function S() {
         variant: "text-md/normal",
         children: ["Linked Games:", " ", E.length > 0 ? E.map(e => {
           var t;
-          return (null == (t = (0, u.j)(S)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
+          return (null == (t = (0, u.r)(S)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
         }).join(", ") : "N/A"]
       })]
     }), (0, Chunk54381.jsxs)("div", {
