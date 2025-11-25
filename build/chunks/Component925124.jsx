@@ -120,8 +120,8 @@ function I(e) {
   null != D && (L = "".concat(L, " from @").concat(D.username));
   let M = null != k,
     U = null != k && new Date(k).getTime() < Date.now(),
-    F = (null == Z ? true : Z.sku_id) === _.Si.TIER_0,
-    B = async () => {
+    B = (null == Z ? true : Z.sku_id) === _.Si.TIER_0,
+    F = async () => {
       O(true), M ? await G({
         expiresAt: null
       }) : await (0, u.ab)(p), b(), O(false)
@@ -178,7 +178,7 @@ function I(e) {
   }, [v, S]);
   let z = "Active";
   return M && (z = "Acked"), U && (z = "Expired"), (0, a.jsxs)("div", {
-    className: i()(y.card, F ? y.gradientWrapperTier0 : y.gradientWrapperTier2),
+    className: i()(y.card, B ? y.gradientWrapperTier0 : y.gradientWrapperTier2),
     children: [(0, a.jsx)("div", {
       className: i()(y.row, y.nameRow),
       children: (0, a.jsx)(c.Heading, {
@@ -264,7 +264,7 @@ function I(e) {
     }), (0, a.jsxs)("div", {
       className: y.badgeContainer,
       children: [(0, a.jsx)(c.P3F, {
-        onClick: B,
+        onClick: F,
         className: i()(y.badge, y.clickable, {
           [y.acked]: M,
           [y.expired]: U
@@ -474,11 +474,11 @@ function k() {
   let [e, t] = Chunk473749.useState([]), [n, r] = Chunk473749.useState([]), [i, s] = Chunk473749.useState(), [d, h] = Chunk473749.useState(), [x, g] = Chunk473749.useState([]), [_, N] = Chunk473749.useState([]), [k, R] = Chunk473749.useState(true), [A, Z] = Chunk473749.useState(10080), [D, L] = Chunk473749.useState([]), {
     entitlements: M,
     deleteFractionalPremium: U,
-    refreshEntitlementList: F
+    refreshEntitlementList: B
   } = (0, Chunk232867.m)();
   Chunk473749.useEffect(() => {
-    F()
-  }, [F]), Chunk473749.useEffect(() => {
+    B()
+  }, [B]), Chunk473749.useEffect(() => {
     L(M.filter(e => e.sourceType === j.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
   }, [M]), Chunk473749.useEffect(() => {
     (0 === module.length || 0 === require.length || k) && S().then(e => {
@@ -497,7 +497,7 @@ function k() {
       g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), N(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [k]);
-  let B = async () => {
+  let F = async () => {
     null != i && (await E(i, "trial"), R(true))
   }, G = async () => {
     null != Chunk105713 && (await E(Chunk105713, "discount"), R(true))
@@ -505,7 +505,7 @@ function k() {
     await O(), R(true)
   }, H = async () => {
     let e = new Date(Date.now() + 60 * A * 1e3).toISOString();
-    await P(module), F()
+    await P(module), B()
   };
   return (0, Chunk54381.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
@@ -558,7 +558,7 @@ function k() {
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Create",
-            onClick: B
+            onClick: F
           })]
         })]
       }), (0, Chunk54381.jsxs)("section", {

@@ -179,7 +179,7 @@ function O(e) {
   let {
     subscription: P,
     onUpdated: I
-  } = e, [w, k] = l.useState(false), [R, A] = l.useState(false), [Z, D] = l.useState(false), [L, M] = l.useState(false), [U, F] = l.useState(null), B = e => (null == e && (e = P.status), e in S) ? S[e] : "Unknown status ".concat(e), G = e => {
+  } = e, [w, k] = l.useState(false), [R, A] = l.useState(false), [Z, D] = l.useState(false), [L, M] = l.useState(false), [U, B] = l.useState(null), F = e => (null == e && (e = P.status), e in S) ? S[e] : "Unknown status ".concat(e), G = e => {
     let t = new Date(e);
     return h.default.fromTimestamp(t.getTime())
   }, z = async e => {
@@ -208,28 +208,34 @@ function O(e) {
       })
     } catch (t) {
       var e;
-      F((null == (e = t.body) ? true : e.message) || t.message || "Failed to renew subscription")
+      B((null == (e = t.body) ? true : e.message) || t.message || "Failed to renew subscription")
     }
     I()
   }, V = (null == (t = j.GP[P.planIdFromItems]) ? true : t.premiumType) === j.PremiumTypes.TIER_0, W = null == (n = P.metadata) ? true : n.ended_at, K = null != W ? new Date(W).toISOString().substring(0, 10) : "", q = [{
     id: "id",
-    label: "ID: ".concat(P.id)
+    label: "ID: ".concat(P.id),
+    isDisabled: false
   }, {
     id: "status",
-    label: "Status: ".concat(B())
+    label: "Status: ".concat(F()),
+    isDisabled: false
   }], Y = P.hasActiveTrial, J = (null == (r = P.metadata) ? true : r.active_discount_id) != null;
   return Y && q.push({
     id: "trial",
-    label: "Has Trial"
+    label: "Has Trial",
+    isDisabled: false
   }), J && q.push({
     id: "active-discount",
-    label: "Has Active Discount"
+    label: "Has Active Discount",
+    isDisabled: false
   }), P.status !== b.O0b.ACTIVE && q.push({
     id: "dates",
-    label: "Dates: ".concat((0, p.vc)(P.createdAt, "LL"), " - ").concat((0, p.vc)(P.currentPeriodEnd, "LL"))
+    label: "Dates: ".concat((0, p.vc)(P.createdAt, "LL"), " - ").concat((0, p.vc)(P.currentPeriodEnd, "LL")),
+    isDisabled: false
   }), P.status === b.O0b.PAUSED && q.push({
     id: "pause-reason",
-    label: "Pause Reason: ".concat(P.pauseReason in E ? E[P.pauseReason] : "Unknown pause reason ".concat(P.pauseReason))
+    label: "Pause Reason: ".concat(P.pauseReason in E ? E[P.pauseReason] : "Unknown pause reason ".concat(P.pauseReason)),
+    isDisabled: false
   }), (0, a.jsx)("div", {
     className: i()(_.card, V ? _.gradientWrapperTier0 : _.gradientWrapperTier2),
     children: (0, a.jsxs)(u.C3N, {
@@ -240,7 +246,10 @@ function O(e) {
       className: y.fieldset,
       children: [(0, a.jsx)(u.QSK, {
         items: q,
-        label: "Tags"
+        label: "Tags",
+        selectionMode: "none",
+        selectionBehavior: "replace",
+        disabledKeys: new Set
       }), Y && (0, a.jsxs)("div", {
         className: y.collapsablePane,
         children: [(0, a.jsxs)(u.P3F, {
@@ -360,7 +369,7 @@ function O(e) {
           gap: 24,
           children: [(0, a.jsx)(u.PhF, {
             label: "Status",
-            serialize: e => B(e),
+            serialize: e => F(e),
             isSelected: e => e === P.status,
             options: N,
             select: e => z({

@@ -115,7 +115,7 @@ function y() {
     noiseSuppressionSupported: L,
     noiseCancellationSupported: M,
     noiseCancellationEnableStats: U,
-    vadDuringPreProcess: F
+    vadDuringPreProcess: B
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
     krispModels: Chunk131951.Z.getKrispModels(),
     krispModelOverride: Chunk131951.Z.getKrispModelOverride(),
@@ -130,7 +130,7 @@ function y() {
     noiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported(),
     noiseCancellationEnableStats: Chunk131951.Z.getKrispEnableStats(),
     vadDuringPreProcess: Chunk131951.Z.getModeOptions().vadDuringPreProcess
-  })), B = Z ? "KRISP" : D ? "STANDARD" : "NONE", G = (0, Chunk839514.N)(), z = Chunk473749.useCallback(() => {
+  })), F = Z ? "KRISP" : D ? "STANDARD" : "NONE", G = (0, Chunk839514.N)(), z = Chunk473749.useCallback(() => {
     var e;
     null == (e = S.current) || module.stop(), S.current = null, C(null)
   }, []);
@@ -175,13 +175,13 @@ function y() {
         location: "DevToolsKrispTester"
       }), (0, Chunk54381.jsx)(Chunk481060.q4e, {
         label: "Noise Cancellation",
-        value: B,
+        value: F,
         onChange: e => {
           d.Z.setNoiseCancellation("KRISP" === e), d.Z.setNoiseSuppression("STANDARD" === e)
         },
         options: W,
         popoutLayerContext: Chunk246992.O$
-      }), "KRISP" === B && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      }), "KRISP" === F && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk481060.iRW, {
           label: "Krisp Suppression Level",
           initialValue: j,
@@ -234,7 +234,7 @@ function y() {
           })]
         }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Run Before Processing",
-          checked: null != F && F,
+          checked: null != B && B,
           onChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
             vadDuringPreProcess: e
           })
@@ -267,7 +267,7 @@ function y() {
                 inputName: e,
                 audioBuffer: r,
                 createdAt: Date.now(),
-                suppression: B,
+                suppression: F,
                 echoCancellation: w,
                 krispSuppressionLevel: j
               }])

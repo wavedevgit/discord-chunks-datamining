@@ -130,7 +130,7 @@ function A() {
       return t
     }),
     U = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
-    F = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
+    B = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
   return (0, Chunk54381.jsx)("div", {
     className: Chunk451429.panel,
     children: (0, Chunk54381.jsxs)(Chunk481060.zJl, {
@@ -231,7 +231,7 @@ function A() {
             label: e,
             value: e
           })),
-          isSelected: e => e === F,
+          isSelected: e => e === B,
           select: function(e) {
             h.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",

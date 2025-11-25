@@ -145,8 +145,8 @@ let y = e => {
       setConnect: L,
       setDisconnect: M,
       setInstall: U,
-      setIsWeb: F,
-      setIsSupportedPrivateBrowsingPerkPlatform: B,
+      setIsWeb: B,
+      setIsSupportedPrivateBrowsingPerkPlatform: F,
       isWeb: G,
       isSupportedPrivateBrowsingPerkPlatform: z,
       setGetWarpInstallationStatus: H,
@@ -223,7 +223,7 @@ let y = e => {
                 width: "45px"
               },
               children: (0, Chunk54381.jsx)(Chunk159691.rsf, {
-                onChange: () => F(!G),
+                onChange: () => B(!G),
                 checked: G
               })
             })]
@@ -236,7 +236,7 @@ let y = e => {
                 width: "45px"
               },
               children: (0, Chunk54381.jsx)(Chunk159691.rsf, {
-                onChange: () => B(!z),
+                onChange: () => F(!z),
                 checked: z
               })
             })]

@@ -213,8 +213,8 @@ function ep(e) {
     product: l,
     isPartiallyOwnedBundle: f,
     isPurchased: g
-  }), L = (0, X.J)(t, n === ea.AW.ORBS ? B.tA.ORBS : true), {
-    handleUseNow: F,
+  }), L = (0, X.J)(t, n === ea.AW.ORBS ? F.tA.ORBS : true), {
+    handleUseNow: B,
     isApplying: G
   } = (0, k.W)({
     product: l
@@ -227,7 +227,7 @@ function ep(e) {
     product: t,
     isPremiumUser: m,
     hasDiscountOffer: V,
-    prioritizedCurrency: n === ea.AW.ORBS ? B.tA.ORBS : true
+    prioritizedCurrency: n === ea.AW.ORBS ? F.tA.ORBS : true
   });
   if (0 === W.length) return null;
   let $ = () => (0, a.jsx)(p.Button, {
@@ -289,7 +289,7 @@ function ep(e) {
           if (g) return (0, a.jsx)(p.Button, {
             variant: "primary",
             onClick: e => {
-              e.stopPropagation(), F()
+              e.stopPropagation(), B()
             },
             loading: G,
             text: ei.intl.string(ei.t.MAS7uK),
@@ -483,7 +483,7 @@ let eh = Chunk473749.memo(function(e) {
     } = (0, et.oo)({
       product: t,
       isPremiumUser: K,
-      prioritizedCurrency: c === ea.AW.ORBS ? B.tA.ORBS : true
+      prioritizedCurrency: c === ea.AW.ORBS ? F.tA.ORBS : true
     }), ef = l.useCallback(e => n => {
       let a = (0, et.oQ)({
         product: t
@@ -499,7 +499,7 @@ let eh = Chunk473749.memo(function(e) {
         tile_type: o.Z[t.type],
         tile_position: String(null == Z ? true : Z.tilePosition),
         cta_name: null
-      }), (0, F.T)({
+      }), (0, B.T)({
         product: t,
         category: r,
         shouldCheckoutWithOrbs: a,
