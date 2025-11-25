@@ -2,19 +2,18 @@
 /** chunk id: 793148, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk540026 = require("./540026.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk717255 = require("./717255.js");
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,8 +21,8 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = 150;
-class h extends(r = Chunk473749.PureComponent) {
+let _ = 150;
+class p extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.updateMediaBar()
   }
@@ -46,30 +45,30 @@ class h extends(r = Chunk473749.PureComponent) {
       sliderWrapperClassName: r,
       sliderClassName: a,
       currentWindow: o,
-      muted: _,
-      minValue: h,
-      maxValue: m,
-      value: g,
-      onVolumeShow: E,
-      onVolumeHide: b
+      muted: f,
+      minValue: p,
+      maxValue: h,
+      value: m,
+      onVolumeShow: g,
+      onVolumeHide: E
     } = this.props, {
-      hovered: y,
-      focused: O,
-      dragging: v
-    } = this.state, I = Chunk481060.gj8;
-    return _ || g === h ? I = Chunk481060.OyP : g < m / 2 && (I = Chunk481060.X2j), (0, Chunk54381.jsxs)("div", {
+      hovered: b,
+      focused: y,
+      dragging: O
+    } = this.state, v = Chunk481060.gj8;
+    return f || m === p ? v = Chunk481060.OyP : m < h / 2 && (v = Chunk481060.X2j), (0, Chunk54381.jsxs)("div", {
       className: s()(require, Chunk717255.container),
       onMouseEnter: () => {
         clearTimeout(this._hoverTimeout), this.setState({
           hovered: true
-        }), null == E || E()
+        }), null == g || g()
       },
       onMouseLeave: () => {
         clearTimeout(this._hoverTimeout), this._hoverTimeout = setTimeout(() => {
           this.setState({
             hovered: false
-          }), null == b || b()
-        }, p)
+          }), null == E || E()
+        }, _)
       },
       onBlur: () => this.setState({
         focused: false
@@ -77,7 +76,7 @@ class h extends(r = Chunk473749.PureComponent) {
       onKeyDown: this.handleKeyDown,
       children: [(0, Chunk54381.jsx)("div", {
         className: s()(Chunk717255.volumeButtonSlider, r, {
-          [Chunk717255.sliderVisible]: y || O || v
+          [Chunk717255.sliderVisible]: b || y || O
         }),
         onMouseEnter: () => {
           clearTimeout(this._hoverTimeout), this.setState({
@@ -87,25 +86,23 @@ class h extends(r = Chunk473749.PureComponent) {
         onMouseLeave: () => {
           clearTimeout(this._hoverTimeout), this._hoverTimeout = setTimeout(() => this.setState({
             hovered: false
-          }), p)
+          }), _)
         },
         children: (0, Chunk54381.jsx)(Chunk540026.Z, {
           sliderClassName: Chunk473749,
           type: Chunk540026.Z.Types.VOLUME,
-          value: g / m,
+          value: m / h,
           onDrag: this.handleValueChange,
           onDragStart: this.handleDragStart,
           onDragEnd: this.handleDragEnd,
           currentWindow: Chunk120356,
           ref: this._mediaBar
         })
-      }), (0, Chunk54381.jsx)(Chunk755721.zx, {
+      }), (0, Chunk54381.jsx)(Chunk481060.P3F, {
         className: Chunk717255.volumeButton,
         "aria-label": Chunk388032.intl.string(Chunk388032.t["19lt24"]),
-        size: Chunk755721.zx.Sizes.NONE,
-        look: Chunk755721.zx.Looks.BLANK,
         onClick: this.handleToggleMute,
-        children: (0, Chunk54381.jsx)(I, {
+        children: (0, Chunk54381.jsx)(v, {
           color: exports,
           className: module
         })
@@ -113,22 +110,22 @@ class h extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "_mediaBar", a.createRef()), _(this, "_hoverTimeout", true), _(this, "state", {
+    super(...e), f(this, "_mediaBar", a.createRef()), f(this, "_hoverTimeout", true), f(this, "state", {
       hovered: false,
       focused: false,
       dragging: false
-    }), _(this, "handleValueChange", e => {
+    }), f(this, "handleValueChange", e => {
       let {
         maxValue: t,
         onValueChange: n
       } = this.props, r = e * t;
       null == n || n(r)
-    }), _(this, "handleToggleMute", () => {
+    }), f(this, "handleToggleMute", () => {
       let {
         onToggleMute: e
       } = this.props;
       null == e || e()
-    }), _(this, "handleKeyDown", e => {
+    }), f(this, "handleKeyDown", e => {
       let {
         minValue: t,
         value: n,
@@ -159,24 +156,24 @@ class h extends(r = Chunk473749.PureComponent) {
             focused: false
           }), e.stopPropagation(), e.preventDefault()
       }
-    }), _(this, "handleDragStart", () => {
+    }), f(this, "handleDragStart", () => {
       this.setState({
         dragging: true
       })
-    }), _(this, "handleDragEnd", () => {
+    }), f(this, "handleDragEnd", () => {
       this.setState({
         dragging: false
       })
-    }), _(this, "blur", () => {
+    }), f(this, "blur", () => {
       this.setState({
         focused: false
       })
     })
   }
 }
-_(h, "defaultProps", {
+f(p, "defaultProps", {
   minValue: 0,
   maxValue: 100,
   handleSize: 16
 });
-let m = h
+let h = p
