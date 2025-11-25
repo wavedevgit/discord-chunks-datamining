@@ -132,7 +132,7 @@ function L(e) {
         end: n
       })
     },
-    Y = () => t.id === n.id ? null : (0, r.jsx)("div", {
+    W = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: N.actions,
       children: (0, r.jsx)(S.Z, {
         user: t,
@@ -188,10 +188,10 @@ function L(e) {
               user: t,
               activity: a,
               className: N.badges
-            }), H(), M === C.l.MODAL_V2 && Y()]
-          }), M === C.l.MODAL && Y()]
+            }), H(), M === C.l.MODAL_V2 && W()]
+          }), M === C.l.MODAL && W()]
         })
-      }), M !== C.l.MODAL && M !== C.l.MODAL_V2 && Y()]
+      }), M !== C.l.MODAL && M !== C.l.MODAL_V2 && W()]
     })
   })
 }

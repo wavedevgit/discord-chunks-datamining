@@ -548,7 +548,7 @@ class ea extends Chunk473749.Component {
         allowedVersionEntry: e
       })
     }), X(this, "handleAllowedVersionEnter", e => {
-      e.charCode === Y.yXg.ENTER && this.handleAddAllowedVersion()
+      e.charCode === W.yXg.ENTER && this.handleAddAllowedVersion()
     }), X(this, "handleAddAllowedVersion", () => {
       let {
         allowedVersions: e,
@@ -841,7 +841,7 @@ function es() {
         description: "Disable aligning chat input to the bottom of the screen",
         checked: Chunk268146,
         onChange: e => {
-          M.default.track(Y.rMx.GUILD_JOIN_FEEDBACK, {
+          M.default.track(W.rMx.GUILD_JOIN_FEEDBACK, {
             reason: "disable-align-chat-input",
             rating: e ? "yes" : "no"
           }), (0, R.s)("go_back_to_regular_input", {

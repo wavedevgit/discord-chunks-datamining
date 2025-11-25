@@ -78,45 +78,45 @@ function h(e) {
     F = (0, d.useMemo)(() => (0, r.oE)({}, Z), [Z]),
     V = (0, d.useMemo)(() => new(0, a.C)(h, F), [h, F]),
     H = (0, d.useMemo)(() => V.resolvedOptions(), [V]),
-    Y = (0, d.useMemo)(() => V.formatToParts(new Date).filter(e => f[e.type]).reduce((e, t) => (e[p[t.type] || t.type] = true, e), {}), [V]),
-    [W, K] = (0, d.useState)(() => e.value || e.defaultValue ? {
-      ...Y
+    W = (0, d.useMemo)(() => V.formatToParts(new Date).filter(e => f[e.type]).reduce((e, t) => (e[p[t.type] || t.type] = true, e), {}), [V]),
+    [Y, K] = (0, d.useState)(() => e.value || e.defaultValue ? {
+      ...W
     } : {}),
     z = (0, d.useRef)(null),
     q = (0, d.useRef)(w);
   (0, d.useEffect)(() => {
-    (0, o.jv)(w, q.current) || (q.current = w, U(t => Object.keys(W).length > 0 ? (0, s.Mw)(t, w) : (0, r.OJ)(e.placeholderValue, N, w, R)))
-  }, [w, N, W, R, e.placeholderValue]), L && Object.keys(W).length < Object.keys(Y).length && K(W = {
-    ...Y
-  }), null == L && Object.keys(W).length === Object.keys(Y).length && (K(W = {}), U((0, r.OJ)(e.placeholderValue, N, w, R)));
-  let X = k && Object.keys(W).length >= Object.keys(Y).length ? k : j,
+    (0, o.jv)(w, q.current) || (q.current = w, U(t => Object.keys(Y).length > 0 ? (0, s.Mw)(t, w) : (0, r.OJ)(e.placeholderValue, N, w, R)))
+  }, [w, N, Y, R, e.placeholderValue]), L && Object.keys(Y).length < Object.keys(W).length && K(Y = {
+    ...W
+  }), null == L && Object.keys(Y).length === Object.keys(W).length && (K(Y = {}), U((0, r.OJ)(e.placeholderValue, N, w, R)));
+  let X = k && Object.keys(Y).length >= Object.keys(W).length ? k : j,
     Q = t => {
       if (e.isDisabled || e.isReadOnly) return;
-      let n = Object.keys(W),
-        i = Object.keys(Y);
-      null == t ? (x(null), U((0, r.OJ)(e.placeholderValue, N, w, R)), K({})) : 0 === n.length && null == z.current || n.length >= i.length || n.length === i.length - 1 && Y.dayPeriod && !W.dayPeriod && "dayPeriod" !== z.current ? (0 === n.length && K(W = {
-        ...Y
+      let n = Object.keys(Y),
+        i = Object.keys(W);
+      null == t ? (x(null), U((0, r.OJ)(e.placeholderValue, N, w, R)), K({})) : 0 === n.length && null == z.current || n.length >= i.length || n.length === i.length - 1 && W.dayPeriod && !Y.dayPeriod && "dayPeriod" !== z.current ? (0 === n.length && K(Y = {
+        ...W
       }), x(t = (0, s.Mw)(t, (null == C ? true : C.calendar) || new(0, l.IQ)))) : U(t), z.current = null
     },
     J = (0, d.useMemo)(() => X.toDate(P), [X, P]),
-    $ = (0, d.useMemo)(() => m(J, W, V, H, X, w, h, N), [J, W, V, H, X, w, h, N]);
-  Y.era && W.year && !W.era ? (W.era = true, K({
-    ...W
-  })) : !Y.era && W.era && (delete W.era, K({
-    ...W
+    $ = (0, d.useMemo)(() => m(J, Y, V, H, X, w, h, N), [J, Y, V, H, X, w, h, N]);
+  W.era && Y.year && !Y.era ? (Y.era = true, K({
+    ...Y
+  })) : !W.era && Y.era && (delete Y.era, K({
+    ...Y
   }));
   let ee = e => {
-      W[e] = true, "year" === e && Y.era && (W.era = true), K({
-        ...W
+      Y[e] = true, "year" === e && W.era && (Y.era = true), K({
+        ...Y
       })
     },
     et = (e, t) => {
-      if (W[e]) Q(E(X, e, t, H));
+      if (Y[e]) Q(E(X, e, t, H));
       else {
         ee(e);
-        let t = Object.keys(W),
-          n = Object.keys(Y);
-        (t.length >= n.length || t.length === n.length - 1 && Y.dayPeriod && !W.dayPeriod) && Q(X)
+        let t = Object.keys(Y),
+          n = Object.keys(W);
+        (t.length >= n.length || t.length === n.length - 1 && W.dayPeriod && !Y.dayPeriod) && Q(X)
       }
     },
     en = (0, d.useMemo)(() => (0, r.p2)(L, T, S, A, Z), [L, T, S, A, Z]),
@@ -160,15 +160,15 @@ function h(e) {
     },
     confirmPlaceholder() {
       if (e.isDisabled || e.isReadOnly) return;
-      let t = Object.keys(W),
-        n = Object.keys(Y);
-      t.length === n.length - 1 && Y.dayPeriod && !W.dayPeriod && (K(W = {
-        ...Y
+      let t = Object.keys(Y),
+        n = Object.keys(W);
+      t.length === n.length - 1 && W.dayPeriod && !Y.dayPeriod && (K(Y = {
+        ...W
       }), Q(X.copy()))
     },
     clearSegment(t) {
-      delete W[t], z.current = t, K({
-        ...W
+      delete Y[t], z.current = t, K({
+        ...Y
       });
       let n = (0, r.OJ)(e.placeholderValue, N, w, R),
         i = X;
@@ -180,7 +180,7 @@ function h(e) {
         }) : !e && t && (i = X.set({
           hour: X.hour + 12
         }))
-      } else "hour" === t && "hour" in X && X.hour >= 12 && W.dayPeriod ? i = X.set({
+      } else "hour" === t && "hour" in X && X.hour >= 12 && Y.dayPeriod ? i = X.set({
         hour: n.hour + 12
       }) : t in X && (i = X.set({
         [t]: n[t]

@@ -10,7 +10,7 @@ require.d(exports, {
   Gz: () => ef,
   Km: () => R,
   Lr: () => w,
-  Q5: () => Y,
+  Q5: () => W,
   Qm: () => U,
   Sf: () => em,
   TK: () => Q,
@@ -149,13 +149,13 @@ function F(e) {
 let V = new Set([Chunk981631.d4z.ANNOUNCEMENT_THREAD, Chunk981631.d4z.PUBLIC_THREAD, Chunk981631.d4z.PRIVATE_THREAD]),
   H = new Set([Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.GUILD_ANNOUNCEMENT, Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA]);
 
-function Y(e) {
+function W(e) {
   return V.has(e)
 }
-let W = new Set([Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM, Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.GUILD_ANNOUNCEMENT, Chunk981631.d4z.ANNOUNCEMENT_THREAD, Chunk981631.d4z.PUBLIC_THREAD, Chunk981631.d4z.PRIVATE_THREAD, Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA, Chunk981631.d4z.GUILD_DIRECTORY, Chunk981631.d4z.GUILD_VOICE, Chunk981631.d4z.GUILD_STAGE_VOICE]);
+let Y = new Set([Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM, Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.GUILD_ANNOUNCEMENT, Chunk981631.d4z.ANNOUNCEMENT_THREAD, Chunk981631.d4z.PUBLIC_THREAD, Chunk981631.d4z.PRIVATE_THREAD, Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA, Chunk981631.d4z.GUILD_DIRECTORY, Chunk981631.d4z.GUILD_VOICE, Chunk981631.d4z.GUILD_STAGE_VOICE]);
 
 function K(e) {
-  return W.has(e)
+  return Y.has(e)
 }
 let z = new Set([Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.GUILD_ANNOUNCEMENT, Chunk981631.d4z.GUILD_STORE, Chunk981631.d4z.GUILD_VOICE, Chunk981631.d4z.GUILD_STAGE_VOICE, Chunk981631.d4z.ANNOUNCEMENT_THREAD, Chunk981631.d4z.PUBLIC_THREAD, Chunk981631.d4z.PRIVATE_THREAD, Chunk981631.d4z.GUILD_DIRECTORY, Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA]),
   q = new Set([Chunk981631.d4z.GUILD_ANNOUNCEMENT, Chunk981631.d4z.GUILD_CATEGORY, Chunk981631.d4z.GUILD_STORE, Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.GUILD_VOICE, Chunk981631.d4z.GUILD_STAGE_VOICE, Chunk981631.d4z.GUILD_DIRECTORY, Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA]),
@@ -341,7 +341,7 @@ class em extends e_ {
     return this.isGuildStageVoice()
   }
   isThread() {
-    return Y(this.type)
+    return W(this.type)
   }
   isAnnouncementThread() {
     return this.type === Chunk981631.d4z.ANNOUNCEMENT_THREAD

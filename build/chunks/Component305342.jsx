@@ -180,7 +180,7 @@ let L = 24,
     } = (0, E.Z)(a), M = (null == x ? true : x.id) === t, k = (null == L ? true : L.status) === P.O0b.CANCELED, [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useCallback(e => {
       let t = false;
       null != e && (t = e.scrollHeight - e.clientHeight > 1), F(t)
-    }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == L && z, X = () => B(e => !e), Q = (0, u.Z)(R.iP), [J, $] = i.useState(false), ee = J || !Q, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == p ? true : p.published) === true, ei = (null == p ? true : p.soft_deleted) === true, ea = D.intl.string(D.t.KzmEA9);
+    }, []), [H] = g._T(t), [W] = g.PK(t), [Y] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != Y && null == L && z, X = () => B(e => !e), Q = (0, u.Z)(R.iP), [J, $] = i.useState(false), ee = J || !Q, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == p ? true : p.published) === true, ei = (null == p ? true : p.soft_deleted) === true, ea = D.intl.string(D.t.KzmEA9);
     return (er || en) && !ei ? (0, r.jsxs)("article", {
       className: w.container,
       "aria-label": H,
@@ -188,8 +188,8 @@ let L = 24,
         className: o()(w.tierTrialIndicator, w.tierTopIndicator),
         children: [D.intl.format(D.t.L2ouip, {
           trialPeriodDuration: (0, h.iG)({
-            interval: W.interval,
-            interval_count: W.interval_count
+            interval: Y.interval,
+            interval_count: Y.interval_count
           })
         }), (0, r.jsx)(l.u, {
           text: D.intl.formatToPlainString(D.t.FYyR4o, {
@@ -245,7 +245,7 @@ let L = 24,
                 className: o()((!Z || !G) && w.tierDescriptionTruncate),
                 children: (0, r.jsx)("div", {
                   ref: V,
-                  children: Y
+                  children: W
                 })
               }), Z && (0, r.jsx)(U, {
                 isViewAll: G,

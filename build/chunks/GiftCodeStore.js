@@ -218,7 +218,7 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     data: t
   } = e;
@@ -232,7 +232,7 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   let {
     firstMessages: t
   } = e;
@@ -309,10 +309,10 @@ let q = new z(Chunk570140.Z, {
     LOAD_MESSAGES_AROUND_SUCCESS: F,
     LOAD_RECENT_MENTIONS_SUCCESS: V,
     LOAD_PINNED_MESSAGES_SUCCESS: H,
-    SEARCH_MESSAGES_SUCCESS: Y,
+    SEARCH_MESSAGES_SUCCESS: W,
     GIFT_CODE_UPDATE: M,
-    LOAD_THREADS_SUCCESS: W,
-    LOAD_ARCHIVED_THREADS_SUCCESS: W,
+    LOAD_THREADS_SUCCESS: Y,
+    LOAD_ARCHIVED_THREADS_SUCCESS: Y,
     LOAD_FORUM_POSTS: K
   }),
   X = q

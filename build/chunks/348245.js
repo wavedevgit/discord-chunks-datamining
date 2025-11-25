@@ -258,7 +258,7 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     response: t
   } = e;
@@ -273,7 +273,7 @@ function Y(e) {
     })
   }
 }
-let W = {};
+let Y = {};
 
 function K(e) {
   var t;
@@ -284,9 +284,9 @@ function K(e) {
     isPreview: a = false
   } = e;
   if (a) return;
-  let o = null != (t = W[n]) ? t : 0;
+  let o = null != (t = Y[n]) ? t : 0;
   if (Date.now() - o < 10 * T.Z.Millis.SECOND) return;
-  W[n] = Date.now();
+  Y[n] = Date.now();
   let s = v.Z.getChannelId(),
     l = E.ZP.getCurrentSidebarChannelId(s),
     u = n === s || n === l;
@@ -341,7 +341,7 @@ class X extends Chunk147913.Z {
       CHANNEL_CREATE: H,
       CHANNEL_PRELOAD: V,
       GUILD_CREATE: () => j(),
-      MESSAGE_END_EDIT: Y,
+      MESSAGE_END_EDIT: W,
       LOAD_MESSAGES_SUCCESS: K,
       UPLOAD_FAIL: z,
       CHANNEL_DELETE: () => j(),

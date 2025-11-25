@@ -87,13 +87,13 @@ function y(e) {
       checked: R,
       action: F
     }) : null,
-    Y = !P || T || k ? null : (0, r.jsx)(o.sNh, {
+    W = !P || T || k ? null : (0, r.jsx)(o.sNh, {
       id: "change-windows",
       label: Z,
       icon: o.hGI,
       action: j
     }),
-    W = (0, r.jsx)(o.sNh, {
+    Y = (0, r.jsx)(o.sNh, {
       id: "stop-streaming",
       color: "danger",
       label: b.intl.string(b.t.S5anIc),
@@ -101,8 +101,8 @@ function y(e) {
       action: () => (0, u.Z)(O)
     });
   return S ? (0, r.jsxs)(r.Fragment, {
-    children: [W, Y, V, H]
+    children: [Y, W, V, H]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [V, I ? x : null, H, Y, W]
+    children: [V, I ? x : null, H, W, Y]
   })
 }

@@ -116,16 +116,16 @@ function A(e) {
       preserveFocusPosition: true
     }),
     {
-      activeIndex: Y,
-      handleKeyDown: W
+      activeIndex: W,
+      handleKeyDown: Y
     } = N(k, G);
   i.useEffect(() => {
-    if (null != Y && k) {
-      let e = (0, l.jb)(U, (0, g.cA)(U, Y)),
+    if (null != W && k) {
+      let e = (0, l.jb)(U, (0, g.cA)(U, W)),
         t = document.querySelector((0, l.P1)(e));
       null == t || t.focus()
     }
-  }, [Y, G, k, U]);
+  }, [W, G, k, U]);
   let K = i.useCallback(e => {
       if (true === a && 1 === V.length && V.includes(e)) return;
       let t = (0, g.cq)(d, V, e);
@@ -194,7 +194,7 @@ function A(e) {
           "aria-busy": L,
           ref: n,
           onKeyDown: e => {
-            null == i || i(e), W(e)
+            null == i || i(e), Y(e)
           }
         }, a), {
           role: "listbox",

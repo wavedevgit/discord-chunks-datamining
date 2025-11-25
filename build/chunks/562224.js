@@ -111,18 +111,18 @@ async function N(e, t) {
   let Z = G === y.ApplicationStreamPresets.PRESET_AUTO ? y.ApplicationStreamPresets.PRESET_VIDEO : G,
     [F, V] = null != (b = (0, g.Z)(Z, R, L)) ? b : [],
     H = null != (v = null != F ? F : null == t ? true : t.resolution) ? v : k,
-    Y = null != (T = null != V ? V : null == t ? true : t.fps) ? T : j,
-    W = null != (A = null == t ? true : t.previewDisabled) ? A : s.I0.getSetting(),
+    W = null != (T = null != V ? V : null == t ? true : t.fps) ? T : j,
+    Y = null != (A = null == t ? true : t.previewDisabled) ? A : s.I0.getSetting(),
     K = null != (N = null == t ? true : t.soundshareEnabled) ? N : U;
-  return (0, m.Z)(Z, H, Y, R, L, D) || (G = y.ApplicationStreamPresets.PRESET_VIDEO, H = y.ApplicationStreamResolutions.RESOLUTION_720, Y = y.ApplicationStreamFPS.FPS_30), (0, i.Rc)({
+  return (0, m.Z)(Z, H, W, R, L, D) || (G = y.ApplicationStreamPresets.PRESET_VIDEO, H = y.ApplicationStreamResolutions.RESOLUTION_720, W = y.ApplicationStreamFPS.FPS_30), (0, i.Rc)({
     preset: G,
     resolution: H,
-    frameRate: Y,
+    frameRate: W,
     soundshareEnabled: K
   }), (0, i.WH)(w, P, S(I({}, C(x)), {
     audioSourceId: (null == (p = x.id) ? true : p.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
     sound: K,
-    previewDisabled: W,
+    previewDisabled: Y,
     goLiveModalDurationMs: null == t ? true : t.goLiveModalDurationMs,
     analyticsLocations: null == t ? true : t.analyticsLocations
   })), [true, true]

@@ -65,8 +65,8 @@ let j = {
       entry: y
     }), {
       user: H,
-      details: Y,
-      appName: W,
+      details: W,
+      appName: Y,
       activity: K,
       embeddedActivity: z
     } = (0, x.n)(y), {
@@ -115,8 +115,8 @@ let j = {
           "aria-label": k.intl.string(k.t.YR4cHH)
         }),
         userDescription: (0, S.kr)(y) ? k.t.vPg1JT : k.t.rPqqts,
-        title: W,
-        subtitle: Y,
+        title: Y,
+        subtitle: W,
         badges: ef,
         entry: y,
         disableGameProfileLinks: U,
@@ -125,7 +125,7 @@ let j = {
       }) : (0, r.jsx)(w.jL, {
         channel: b,
         title: y.extra.game_name,
-        subtitle: Y,
+        subtitle: W,
         badges: ef,
         userDescription: k.t["6oWFUN"],
         entry: y,

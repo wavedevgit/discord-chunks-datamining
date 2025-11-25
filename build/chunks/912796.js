@@ -339,11 +339,11 @@ function H(e, t) {
   true !== e.className && (e.scope = e.className, delete e.className)
 }
 
-function Y(e, t) {
+function W(e, t) {
   t && e.beginKeywords && (e.begin = "\\b(" + e.beginKeywords.split(" ").join("|") + ")(?!\\.)(?=\\b|\\s)", e.__beforeBegin = V, e.keywords = e.keywords || e.beginKeywords, delete e.beginKeywords, true === e.relevance && (e.relevance = 0))
 }
 
-function W(e, t) {
+function Y(e, t) {
   Array.isArray(e.illegal) && (e.illegal = E(...e.illegal))
 }
 
@@ -526,7 +526,7 @@ function ed(e) {
   function o(n, r) {
     let i = n;
     if (n.isCompiled) return i;
-    [H, K, eu, q].forEach(e => e(n, r)), e.compilerExtensions.forEach(e => e(n, r)), n.__beforeBegin = null, [Y, W, z].forEach(e => e(n, r)), n.isCompiled = true;
+    [H, K, eu, q].forEach(e => e(n, r)), e.compilerExtensions.forEach(e => e(n, r)), n.__beforeBegin = null, [W, Y, z].forEach(e => e(n, r)), n.isCompiled = true;
     let s = null;
     return "object" == typeof n.keywords && n.keywords.$pattern && (n.keywords = Object.assign({}, n.keywords), s = n.keywords.$pattern, delete n.keywords.$pattern), s = s || /\w+/, n.keywords && (n.keywords = J(n.keywords, e.case_insensitive)), i.keywordPatternRe = t(s, true), r && (n.begin || (n.begin = /\B|\b/), i.beginRe = t(i.begin), n.end || n.endsWithParent || (n.end = /\B|\b/), n.end && (i.endRe = t(i.end)), i.terminatorEnd = f(i.end) || "", n.endsWithParent && r.terminatorEnd && (i.terminatorEnd += (n.end ? "|" : "") + r.terminatorEnd)), n.illegal && (i.illegalRe = t(n.illegal)), n.contains || (n.contains = []), n.contains = [].concat(...n.contains.map(function(e) {
       return e_("self" === e ? n : e)

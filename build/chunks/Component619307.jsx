@@ -188,8 +188,8 @@ function w(e) {
     "aria-label": F,
     "aria-labelledby": V,
     label: H,
-    description: Y,
-    helperText: W,
+    description: W,
+    helperText: Y,
     errorMessage: K,
     successMessage: z,
     layout: q = "vertical"
@@ -269,8 +269,8 @@ function w(e) {
       let f = d ? _.u04 : _.CJ0;
       return (0, r.jsx)(u.gNt, {
         label: H,
-        description: Y,
-        helperText: W,
+        description: W,
+        helperText: Y,
         errorMessage: K,
         successMessage: z,
         layout: q,

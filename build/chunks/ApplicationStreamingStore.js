@@ -173,7 +173,7 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   for (let t of e.applications) {
     let e = _.ZP.getGameForPID(t.id);
     if (null != e) return e
@@ -185,7 +185,7 @@ function Y(e) {
     }
 }
 
-function W(e) {
+function Y(e) {
   let {
     settings: t,
     endReason: n,
@@ -209,7 +209,7 @@ function K(e) {
     existing: t,
     content: n
   } = e;
-  if (null == n || (s = null == (l = Y(n)) ? true : l.pid, !t)) returnfalse;
+  if (null == n || (s = null == (l = W(n)) ? true : l.pid, !t)) returnfalse;
   let r = (0, g.Z)(n),
     i = {
       pid: s,
@@ -463,7 +463,7 @@ class ea extends(c = Chunk442837.ZP.PersistedStore) {
 }
 R(ea, "displayName", "ApplicationStreamingStore"), R(ea, "persistKey", "ApplicationStreamingStore");
 let eo = new ea(Chunk570140.Z, {
-  MEDIA_ENGINE_SET_GO_LIVE_SOURCE: W,
+  MEDIA_ENGINE_SET_GO_LIVE_SOURCE: Y,
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: K,
   OVERLAY_INITIALIZE: Z,
   VOICE_STATE_UPDATES: F,

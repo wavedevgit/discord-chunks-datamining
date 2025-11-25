@@ -120,12 +120,12 @@ function b(e) {
   }), {
     getReferenceProps: F,
     getFloatingProps: V
-  } = (0, o.NI)([B, Z]), H = (null == (t = j.hide) ? true : t.referenceHidden) ? "hidden" : "visible", Y = A ? d.UU : i.Fragment;
+  } = (0, o.NI)([B, Z]), H = (null == (t = j.hide) ? true : t.referenceHidden) ? "hidden" : "visible", W = A ? d.UU : i.Fragment;
   return (0, r.jsxs)(r.Fragment, {
     children: [N({
       ref: x.setReference,
       props: F()
-    }), l && (0, r.jsxs)(Y, {
+    }), l && (0, r.jsxs)(W, {
       children: [C ? (0, r.jsx)(o.y0, {}) : null, (0, r.jsx)("div", m(p({
         id: h,
         className: c()(b, f.layer),

@@ -56,7 +56,7 @@ function H(e) {
   }
 }
 
-function Y(e) {
+function W(e) {
   let {
     markAsDismissed: t
   } = e;
@@ -71,7 +71,7 @@ function Y(e) {
   })
 }
 
-function W() {
+function Y() {
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk882741.headerContainer,
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -85,7 +85,7 @@ function W() {
         width: 20,
         colorClass: Chunk882741.nitroIcon
       })
-    }), (0, Chunk54381.jsx)(Y, {})]
+    }), (0, Chunk54381.jsx)(W, {})]
   })
 }
 
@@ -96,7 +96,7 @@ function K(e) {
   } = e;
   return (0, E.Nj)(l.z.CUSTOM_THEME_COACHMARK) ? n ? (0, r.jsx)(z, {
     markAsDismissed: t
-  }) : (0, r.jsx)(W, {}) : (0, r.jsx)(z, {
+  }) : (0, r.jsx)(Y, {}) : (0, r.jsx)(z, {
     markAsDismissed: () => (0, E.Q3)(l.z.CUSTOM_THEME_COACHMARK)
   })
 }
@@ -111,7 +111,7 @@ function z(e) {
       className: Z.badgeAndCloseRow,
       children: [(0, r.jsx)(f.lBU, {
         text: B.intl.string(B.t.oW0eUd)
-      }), (0, r.jsx)(Y, {
+      }), (0, r.jsx)(W, {
         markAsDismissed: t
       })]
     }), (0, r.jsxs)("div", {
@@ -419,18 +419,18 @@ function en(e) {
     setColors: k,
     setChassisMixAmount: U,
     setGradientAngle: F
-  } = (0, A.Ig)(), [V, H] = i.useState(null != (t = S[0]) ? t : A.Dp), Y = (0, s.e7)([v.Z], () => v.Z.theme), W = (0, E.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+  } = (0, A.Ig)(), [V, H] = i.useState(null != (t = S[0]) ? t : A.Dp), W = (0, s.e7)([v.Z], () => v.Z.theme), Y = (0, E.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
     analyticsLocations: z
   } = (0, m.ZP)(h.Z.CUSTOM_THEMES_EDITOR), q = (0, s.e7)([R.Z], () => R.Z.getSavedCustomTheme()), $ = async () => {
     T.current = true, await (0, _.ZI)({
-      theme: Y,
+      theme: W,
       customUserThemeSettings: {
         colors: S,
         gradientColorStops: [],
         gradientAngle: x,
         baseMix: C
       }
-    }), (0, w.u7)(S, C, x, Y, z), null == a || a(j.L.TAKE_ACTION), W || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
+    }), (0, w.u7)(S, C, x, W, z), null == a || a(j.L.TAKE_ACTION), Y || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
   }, en = () => {
     y(N._m.RESET_BUTTON), (0, w.uf)()
   }, er = S.length > 0;

@@ -5,7 +5,7 @@ require.d(exports, {
   $H: () => F,
   AB: () => G,
   JS: () => j,
-  ZP: () => Y,
+  ZP: () => W,
   hH: () => M,
   kO: () => V,
   oG: () => H,
@@ -227,7 +227,7 @@ function H(e, t) {
     e.channelId === t && null != E.Z.findActivity(e.userId, e => e.type === P.IIU.CUSTOM_STATUS) && n.custom_status_count++
   }), n
 }
-let Y = {
+let W = {
   trackWithMetadata: Z,
   getVoiceStateMetadata: V
 }

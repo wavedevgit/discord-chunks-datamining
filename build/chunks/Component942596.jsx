@@ -67,7 +67,7 @@ function H(e) {
   return e
 }
 
-function Y(e, t) {
+function W(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,8 +78,8 @@ function Y(e, t) {
   return n
 }
 
-function W(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
+function Y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -584,7 +584,7 @@ let ee = e => {
     sourceUserId: e.user.id,
     trackEntryPointImpression: true
   });
-  return (0, i.jsx)($, W(H({}, e), {
+  return (0, i.jsx)($, Y(H({}, e), {
     onOpenGameProfileModal: a
   }))
 };

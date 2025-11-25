@@ -229,7 +229,7 @@ let V = e => {
           selectedEmoji: c,
           isReaction: u
         })
-      }), (0, r.jsx)(W, {
+      }), (0, r.jsx)(Y, {
         buttonPurchaseState: n,
         buttonDisabledState: a,
         price: o,
@@ -270,7 +270,7 @@ let V = e => {
         children: [(0, r.jsx)(u.Text, {
           variant: "eyebrow",
           children: P.intl.string(P.t.o8XwoI)
-        }), (0, r.jsx)(Y, {
+        }), (0, r.jsx)(W, {
           channel: t,
           selectedEmoji: n,
           isReaction: i
@@ -278,7 +278,7 @@ let V = e => {
       })]
     })
   },
-  Y = e => {
+  W = e => {
     let {
       channel: t,
       selectedEmoji: n,
@@ -340,7 +340,7 @@ let V = e => {
       })
     })
   },
-  W = e => {
+  Y = e => {
     let {
       buttonPurchaseState: t,
       buttonDisabledState: n,

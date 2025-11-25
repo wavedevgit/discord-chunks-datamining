@@ -653,7 +653,7 @@
                           _[G] = p[G] = F(t, n, B)
                         }
                     },
-                    Y = function() {
+                    W = function() {
                       var e = 0 | (j += 2 * U);
                       j -= e;
                       for (var t = 0; t < s; t++) l.m_re[t] = p[t] * u[t], l.m_im[t] = p[t] * u[f + t];
@@ -700,7 +700,7 @@
                         r.blit(i, y, u, G, n - y), G += n - y, y = n;
                         break
                       }
-                      T <= 0 ? G -= 2 * f : (r.blit(i, y, u, G, T), y += T, G = s - f), I = Y(), D += 2 * f / t, w += I / t, (v = O + I - E) < 0 && (v = 0), r.blit(d, 0, b, O, I - v), O += I
+                      T <= 0 ? G -= 2 * f : (r.blit(i, y, u, G, T), y += T, G = s - f), I = W(), D += 2 * f / t, w += I / t, (v = O + I - E) < 0 && (v = 0), r.blit(d, 0, b, O, I - v), O += I
                     }
                     r.blit(d, I - v, d, 0, v), B = v;
                     var S = [];

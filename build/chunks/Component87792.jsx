@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   I: () => V,
-  Z: () => W
+  Z: () => Y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -250,7 +250,7 @@ let H = () => {
       options: o
     })
   },
-  Y = () => {
+  W = () => {
     let e = (0, Chunk652262.M)(),
       t = (0, Chunk880257.Z)(),
       n = (0, Chunk631885.ZM)(),
@@ -261,7 +261,7 @@ let H = () => {
       subText: Chunk120356
     })
   },
-  W = () => {
+  Y = () => {
     let e = (0, Chunk277537.PO)("family_center_activity_card"),
       t = (0, Chunk546791._p)(module),
       n = (0, Chunk858719.kE)(),
@@ -276,7 +276,7 @@ let H = () => {
         className: Chunk519279.box,
         children: [(0, Chunk54381.jsx)("div", {
           className: Chunk37742.header,
-          children: (0, Chunk54381.jsx)(Y, {})
+          children: (0, Chunk54381.jsx)(W, {})
         }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
           gap: 32,
           padding: 32,

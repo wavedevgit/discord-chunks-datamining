@@ -8,9 +8,9 @@ require.d(exports, {
   Bd: () => eU,
   Fy: () => eN,
   GI: () => ew,
-  Gd: () => eW,
+  Gd: () => eY,
   I: () => ej,
-  J2: () => W,
+  J2: () => Y,
   Jf: () => eT,
   KX: () => ex,
   MP: () => eJ,
@@ -40,8 +40,8 @@ require.d(exports, {
   tP: () => ep,
   tR: () => eu,
   uA: () => eS,
-  vf: () => eY,
-  wF: () => Y,
+  vf: () => eW,
+  wF: () => W,
   z: () => eO,
   z1: () => eQ,
   z6: () => eD,
@@ -91,9 +91,9 @@ var Chunk703656 = require("./703656.js"),
   Chunk388032 = require("./388032.jsx");
 let V = false,
   H = 1,
-  Y = "1410358070831480904";
+  W = "1410358070831480904";
 
-function W() {
+function Y() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {
       fetchPolicy: "cache-only",
       callerSource: "unknown"
@@ -134,8 +134,8 @@ function W() {
 
 function K(e, t) {
   var n, r, i, a, o, s;
-  let l = e.id === Y,
-    c = t.id === Y,
+  let l = e.id === W,
+    c = t.id === W,
     u = l && (null == (n = e.userStatus) ? true : n.completedAt) == null;
   if (u !== (c && (null == (r = t.userStatus) ? true : r.completedAt) == null)) return u ? V : H;
   let d = !(0, w.zi)(e),
@@ -303,7 +303,7 @@ function ed(e) {
       excludedQuests: r,
       isFetchingCurrentQuests: i,
       hasFetched: a
-    } = W({
+    } = Y({
       fetchPolicy: "cache-and-network",
       callerSource: "use_filtered_quests"
     }),
@@ -500,7 +500,7 @@ function eC() {
   let {
     quests: e,
     isFetchingCurrentQuests: t
-  } = W({
+  } = Y({
     fetchPolicy: "cache-or-network",
     callerSource: "settings_badge"
   }), n = e_();
@@ -813,7 +813,7 @@ function eH(e) {
   return a === D.LI.SELECT ? F.intl.string(F.t.EMrUHQ) : (0, w.$J)(e) ? F.intl.string(F.t.mOrpXG) : F.intl.string(F.t["7e5k7L"])
 }
 
-function eY(e) {
+function eW(e) {
   var t, n;
   let {
     quest: r,
@@ -856,7 +856,7 @@ function eY(e) {
   return F.intl.string(F.t.S6UUc5)
 }
 
-function eW(e, t) {
+function eY(e, t) {
   let n = (0, c.e7)([P.Z], () => P.Z.getQuest(e), [e]),
     i = (0, u.ZP)();
   return r.useMemo(() => {

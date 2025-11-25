@@ -11,13 +11,13 @@ require.d(exports, {
   PZ: () => q,
   WA: () => j,
   Wx: () => P,
-  XZ: () => Y,
+  XZ: () => W,
   Y$: () => B,
   Yn: () => H,
   dF: () => U,
   jD: () => L,
   lf: () => k,
-  pF: () => W,
+  pF: () => Y,
   sl: () => Z,
   vJ: () => M,
   yJ: () => G,
@@ -233,11 +233,11 @@ function H(e) {
   return e === b._b.TEXT
 }
 
-function Y(e) {
+function W(e) {
   return null == e ? "" : (e.charAt(0).toLocaleUpperCase() + e.slice(1)).replaceAll("_", " ")
 }
 
-function W(e) {
+function Y(e) {
   let t = [];
   for (let n of e) {
     let e = n.application_directory_collection_items.filter(e => e.type === r.C.APPLICATION && x(e.application));

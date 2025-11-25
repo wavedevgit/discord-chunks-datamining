@@ -163,15 +163,15 @@ function D(e) {
     isBurstReaction: U,
     rowPosition: G,
     inNitroLockedSection: B
-  } = e, [Z, F] = i.useState(""), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(p), [p]), Y = i.useRef(null), {
-    emoji: W,
+  } = e, [Z, F] = i.useState(""), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(p), [p]), W = i.useRef(null), {
+    emoji: Y,
     size: K,
     isDisabled: z,
     columnIndex: q
   } = t, X = e => {
     if (e.stopPropagation(), y.current || v.current) return;
     let n = e.altKey;
-    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(W) && k(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), E(t, {
+    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(Y) && k(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), E(t, {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: n
     })
@@ -196,11 +196,11 @@ function D(e) {
     } = s, d = C(s, ["ref", "tabIndex", "onFocus"]);
     return (0, i.createElement)("li", A(T({}, d), {
       key: a,
-      ref: Y
+      ref: W
     }), Z !== R(q, f) && (0, r.jsx)(P, {
       ref: l,
-      emoji: W,
-      isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(W),
+      emoji: Y,
+      isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(Y),
       isLargeSize: L,
       isMediumSize: w,
       isInspected: o,
@@ -212,10 +212,10 @@ function D(e) {
       onMouseEnter: t,
       onMouseLeave: n,
       onClick: e => {
-        if (null != Y.current && null != G && null != j && !e.shiftKey && null != W.name && U && !V && M) {
-          let e = null == W.id ? _.ZP.convertNameToSurrogate(W.name) : W.name,
-            t = Y.current.getBoundingClientRect();
-          t.x = G.x + (q + 1) * K, F(R(q, f)), (0, m.U)(j, e, W.id, t)
+        if (null != W.current && null != G && null != j && !e.shiftKey && null != Y.name && U && !V && M) {
+          let e = null == Y.id ? _.ZP.convertNameToSurrogate(Y.name) : Y.name,
+            t = W.current.getBoundingClientRect();
+          t.x = G.x + (q + 1) * K, F(R(q, f)), (0, m.U)(j, e, Y.id, t)
         }
         X(e)
       },

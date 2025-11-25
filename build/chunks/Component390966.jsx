@@ -188,7 +188,7 @@ function T(e) {
       Icon: F,
       iconColor: V,
       textColor: H,
-      tooltipText: Y
+      tooltipText: W
     } = i.useMemo(() => O({
       timeStatus: B,
       textBrand: R,
@@ -197,20 +197,20 @@ function T(e) {
       endDateTimeString: x,
       startDateTimeString: L
     }), [B, R, P, D, x, L]),
-    W = null;
+    Y = null;
   if (null != A) {
     let e = (0, _.Ho)(A);
-    W = m.intl.formatToPlainString(m.t.HmKEqW, {
+    Y = m.intl.formatToPlainString(m.t.HmKEqW, {
       recurrenceRule: e.toText()
     });
     let n = l()(t);
-    W = b((0, _.zi)(n, A), n)
+    Y = b((0, _.zi)(n, A), n)
   }
   return (0, r.jsxs)(I, {
     className: o()(s, {
-      [g.isRecurring]: null != W
+      [g.isRecurring]: null != Y
     }),
-    tooltipText: Y,
+    tooltipText: W,
     children: [S && n === h.p1.SCHEDULED ? (0, r.jsx)(v, {}) : (0, r.jsx)(F, {
       color: V,
       size: "custom",
@@ -222,10 +222,10 @@ function T(e) {
         color: H,
         variant: T,
         children: Z
-      }), null != W && (0, r.jsx)(d.Text, {
+      }), null != Y && (0, r.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-xs/normal",
-        children: W
+        children: Y
       })]
     })]
   })

@@ -229,7 +229,7 @@ let k = "sprigReplayIframeLoaded",
       e.position = V(n)
     }
     return "/" + t.reverse().map(e => null !== e.position ? `/${e.name}[${e.position}]` : `/${e.name}`).join("")
-  }, Y = e => e && e.trim().substring(0, 500).replace(/\s\s+/g, " ").replace(/\r?\n|\r/g, " ").substring(0, 250), W = {
+  }, W = e => e && e.trim().substring(0, 500).replace(/\s\s+/g, " ").replace(/\r?\n|\r/g, " ").substring(0, 250), Y = {
     capture: true,
     passive: true
   }, K = ["a", "button", "input", "option", "li", "link"], z = ["Escape", "Enter", "Backspace", "F5", "Tab"], q = false, X = null, Q = null, J = e => {
@@ -265,7 +265,7 @@ let k = "sprigReplayIframeLoaded",
         rect: null == a ? true : a.getBoundingClientRect(),
         xPath: H(a)
       } : {}
-    }).elementAttributes) && r.text && (i.elementAttributes.text = Y(i.elementAttributes.text)), null == X || X("Sprig_Click", i)
+    }).elementAttributes) && r.text && (i.elementAttributes.text = W(i.elementAttributes.text)), null == X || X("Sprig_Click", i)
   }, et = e => {
     var t;
     z.includes(e.key) && (t = {
@@ -283,7 +283,7 @@ let k = "sprigReplayIframeLoaded",
       curUrl: window.location.href,
       fromUrl: document.referrer,
       currentPageTitle: document.title
-    }).currentPageTitle && (module.currentPageTitle = Y(module.currentPageTitle)), null == X || X("Sprig_BackForward", module))
+    }).currentPageTitle && (module.currentPageTitle = W(module.currentPageTitle)), null == X || X("Sprig_BackForward", module))
   }, ei = ((e, t) => {
     let n;
     return r => {
@@ -358,7 +358,7 @@ let ep = (e, t) => {
   }, em = () => {
     el.stopRecording && (el.stopRecording(), el.stopRecording = true), el.isRecording = false, ["cleanupInterval", "inactivityInterval", "pendingCheckInterval"].forEach(e => {
       el[e] && (clearInterval(el[e]), el[e] = true)
-    }), q && (window.removeEventListener("click", ea, W), window.removeEventListener("pointerdown", es, W), window.removeEventListener("mousedown", eo, W), window.removeEventListener("keydown", et, W), window.removeEventListener("scroll", ei, W), q = false), B.forEach(e => {
+    }), q && (window.removeEventListener("click", ea, Y), window.removeEventListener("pointerdown", es, Y), window.removeEventListener("mousedown", eo, Y), window.removeEventListener("keydown", et, Y), window.removeEventListener("scroll", ei, Y), q = false), B.forEach(e => {
       var t;
       null == (t = e.source) || t.postMessage({
         type: G
@@ -594,16 +594,16 @@ let ev = new class {
     if (module) {
       Chunk555256.b.info("Read stored session state", module);
       let t = JSON.parse(module);
-      eD = exports.disabled, eT = exports.metadata, eP = exports.uploadUrls, ew = exports.currentIndex, eA = exports.expirationTimestamp, exports.pendingEventTimestamp && (Chunk555256.b.info(`Uploading with pending timestamp: ${exports.pendingEventTimestamp}`), eY(exports.pendingEventTimestamp))
+      eD = exports.disabled, eT = exports.metadata, eP = exports.uploadUrls, ew = exports.currentIndex, eA = exports.expirationTimestamp, exports.pendingEventTimestamp && (Chunk555256.b.info(`Uploading with pending timestamp: ${exports.pendingEventTimestamp}`), eW(exports.pendingEventTimestamp))
     } else eA = 1e3 * eC + Date.now()
-  }, eY = async e => {
+  }, eW = async e => {
     let t = Date.now(),
       n = (await ev.getEventsBetween(e, t)).map(e => JSON.parse(e.event));
     if (!eZ(n)) return;
     eX(n);
     let r = await eq();
     r && await eK(r, n)
-  }, eW = async (e, t) => {
+  }, eY = async (e, t) => {
     try {
       let n = await e();
       if (!n.ok) throw Error(`Error ${t}`);
@@ -620,7 +620,7 @@ let ev = new class {
         i = t.encode(JSON.stringify(e));
       return r.write(i), r.close(), new Uint8Array(await new Response(n.readable).arrayBuffer())
     })(t);
-    l.b.info("Uploading always-on events with presigned url"), await eW(() => (0, l.s)(e, {
+    l.b.info("Uploading always-on events with presigned url"), await eY(() => (0, l.s)(e, {
       body: n,
       method: "PUT"
     }), "uploading always-on with presigned url")
@@ -635,7 +635,7 @@ let ev = new class {
       index: ew + 1
     };
     Chunk555256.b.info("Fetching always-on upload urls", require);
-    let r = await eW(() => (0, Chunk555256.s)(`${eS}/sdk/1/replayUrls`, {
+    let r = await eY(() => (0, Chunk555256.s)(`${eS}/sdk/1/replayUrls`, {
       method: "POST",
       body: JSON.stringify(require),
       headers: (0, Chunk555256.g)(window.UserLeap)
@@ -993,7 +993,7 @@ let eJ = async (e, t) => {
     ep("Sprig_TrackEvent", e)
   },
   RecordPageView: e => {
-    e.description && (e.description = Y(e.description)), ep("Sprig_PageView", e)
+    e.description && (e.description = W(e.description)), ep("Sprig_PageView", e)
   },
   RecordSurveyShown: e => {
     ep("Sprig_ShowSurvey", e)
@@ -1138,7 +1138,7 @@ let eJ = async (e, t) => {
           id: e,
           userAgent: window.navigator.userAgent
         })
-      }), r = ep, i = eh, q || (X = r, Q = i, window.addEventListener("click", ea, W), window.addEventListener("pointerdown", es, W), window.addEventListener("mousedown", eo, W), window.addEventListener("keydown", et, W), window.addEventListener("scroll", ei, W), q = true, en(), er()))
+      }), r = ep, i = eh, q || (X = r, Q = i, window.addEventListener("click", ea, Y), window.addEventListener("pointerdown", es, Y), window.addEventListener("mousedown", eo, Y), window.addEventListener("keydown", et, Y), window.addEventListener("scroll", ei, Y), q = true, en(), er()))
     }, "Error initializing replay")
   },
   isReplayPaused: e_,

@@ -56,7 +56,7 @@ let N = {
       isPurchased: B = false,
       skipEffectDisplayName: Z = false,
       width: F
-    } = e, V = (0, u.ZP)(), H = (0, l.wj)(V), Y = null != a ? (0, _.EU)(a) : R, W = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), K = H ? "#706F74" : "#aaaab2", z = i.useRef(null), q = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), X = null != t ? (0, b.Ly)({
+    } = e, V = (0, u.ZP)(), H = (0, l.wj)(V), W = null != a ? (0, _.EU)(a) : R, Y = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), K = H ? "#706F74" : "#aaaab2", z = i.useRef(null), q = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), X = null != t ? (0, b.Ly)({
       pendingNickname: k,
       pendingGlobalName: M,
       user: t,
@@ -89,8 +89,8 @@ let N = {
           [S.xlarge]: "xlarge" === G,
           [S.inheritWidth]: null != F
         }),
-        children: [null != Y && (0, r.jsx)(I.Z, {
-          nameplate: Y,
+        children: [null != W && (0, r.jsx)(I.Z, {
+          nameplate: W,
           hovered: w,
           placement: v.i.PREVIEW,
           content: x ? true : z
@@ -104,7 +104,7 @@ let N = {
                 user: t,
                 guildId: n,
                 avatarSize: J,
-                status: L ? W : true,
+                status: L ? Y : true,
                 avatarDecorationOverride: Q,
                 "aria-hidden": true
               }),

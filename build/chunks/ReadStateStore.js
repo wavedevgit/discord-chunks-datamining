@@ -201,7 +201,7 @@ function eM(e) {
   let t = F.Z.getChannel(e.channelId),
     n = null != t && t.isForumPost();
   if (null != p.ZP.getConnectedActivityLocation() && p.ZP.getActivityPanelMode() === et.Ez.PANEL && p.ZP.getFocusedLayout() === et.MI.NO_CHAT) return ex(e, "In activity"), false;
-  if (W.Z.isIdle()) return ex(e, "Is idle"), false;
+  if (Y.Z.isIdle()) return ex(e, "Is idle"), false;
   if (!e.canTrackUnreads()) return ex(e, "Cannot track unreads"), false;
   if ((null == t ? true : t.isForumLikeChannel()) !== true) {
     let t = ey.isAnyWindowFocused(e.channelId),
@@ -674,7 +674,7 @@ class ek {
   getAckTimestamp() {
     let e, t;
     if (0 !== this._ackMessageTimestamp && !isNaN(this._ackMessageTimestamp)) return this._ackMessageTimestamp;
-    if (this._isThread) return this._ackMessageTimestamp = eW(this.guildId, this.channelId), this._ackMessageId = Chunk709054.default.fromTimestamp(this._ackMessageTimestamp), this._ackMessageTimestamp;
+    if (this._isThread) return this._ackMessageTimestamp = eY(this.guildId, this.channelId), this._ackMessageId = Chunk709054.default.fromTimestamp(this._ackMessageTimestamp), this._ackMessageTimestamp;
     if (this.type === Chunk490897.W.GUILD_EVENT || this.type === Chunk490897.W.GUILD_ONBOARDING_QUESTION) e = Chunk430824.Z.getGuild(this.channelId);
     else if ((0, Chunk176505.AB)(this.channelId)) e = Chunk430824.Z.getGuild(this.guildId);
     else {
@@ -730,7 +730,7 @@ function eU(e) {
 }
 
 function eG(e) {
-  eV(e), eH(e), eF(e), eY(e)
+  eV(e), eH(e), eF(e), eW(e)
 }
 
 function eB(e) {
@@ -758,7 +758,7 @@ function eV(e) {
   null == (t = e.threads) || t.forEach(t => {
     if (!x.AW.has(t.type)) return;
     let n = ek.get(t.id);
-    n.lastMessageId = t.lastMessageId, n.lastPinTimestamp = eC(t.lastPinTimestamp), n._isThread = true, n._isActiveThread = true, n._isJoinedThread = null != t.member, null == n.ackMessageId && (n.ackMessageId = G.default.fromTimestamp(eW(e.id, t.id))), null == n.ackPinTimestamp && (n.ackPinTimestamp = eW(e.id, t.id))
+    n.lastMessageId = t.lastMessageId, n.lastPinTimestamp = eC(t.lastPinTimestamp), n._isThread = true, n._isActiveThread = true, n._isJoinedThread = null != t.member, null == n.ackMessageId && (n.ackMessageId = G.default.fromTimestamp(eY(e.id, t.id))), null == n.ackPinTimestamp && (n.ackPinTimestamp = eY(e.id, t.id))
   })
 }
 
@@ -775,8 +775,8 @@ function eH(e) {
   }), r.lastMessageId = a, r.mentionCount = i
 }
 
-function eY(e) {
-  let t = Y.Z.getGuild(e.id);
+function eW(e) {
+  let t = W.Z.getGuild(e.id);
   if (null == t) return;
   let n = null == t ? true : t.latestOnboardingQuestionId;
   if (null == n) return;
@@ -784,10 +784,10 @@ function eY(e) {
   r._guildId = t.id, r.lastMessageId = n
 }
 
-function eW(e, t) {
+function eY(e, t) {
   var n, r, i;
   let a = F.Z.getChannel(t),
-    o = Y.Z.getGuild(null != e ? e : null == a ? true : a.guild_id),
+    o = W.Z.getGuild(null != e ? e : null == a ? true : a.guild_id),
     s = (null == a ? true : a.isForumPost()) ? 0 : eK(o),
     l = (null != (i = null == (n = P.Z.joinTimestamp(t)) ? true : n.getTime()) ? i : 0) - 5e3;
   isNaN(l) && (l = false);
@@ -825,7 +825,7 @@ function eX(e) {
     case ei.W.GUILD_HOME:
     case ei.W.GUILD_EVENT:
     case ei.W.GUILD_ONBOARDING_QUESTION:
-      return null != Y.Z.getGuild(e.channelId);
+      return null != W.Z.getGuild(e.channelId);
     case ei.W.NOTIFICATION_CENTER:
       var t;
       return G.default.cast(null == (t = J.default.getCurrentUser()) ? true : t.id) === e.channelId;
@@ -876,7 +876,7 @@ function e$(e) {
     let i = ek.get(e.id, r);
     i._persisted = true, i._mentionCount = null != (n = e.mention_count) ? n : 0, i.flags = e.flags, i.lastViewed = e.last_viewed;
     let a = F.Z.getBasicChannel(e.id);
-    null != a && (0, x.Q5)(a.type) && (null == e.last_message_id || 0 === e.last_message_id) ? i.ackMessageId = G.default.fromTimestamp(eW(a.guild_id, a.id)) : i.ackedWhileCached ? false === G.default.compare(i.ackMessageId, e.last_message_id) && (i.ackMessageId = e.last_message_id) : i.ackMessageId = e.last_message_id, i.ackedWhileCached = true, i.ackPinTimestamp = eC(e.last_pin_timestamp), ek._mentionChannels.delete(i.channelId), i._mentionCount > 0 && i.canHaveMentions() && ek._mentionChannels.add(i.channelId)
+    null != a && (0, x.Q5)(a.type) && (null == e.last_message_id || 0 === e.last_message_id) ? i.ackMessageId = G.default.fromTimestamp(eY(a.guild_id, a.id)) : i.ackedWhileCached ? false === G.default.compare(i.ackMessageId, e.last_message_id) && (i.ackMessageId = e.last_message_id) : i.ackMessageId = e.last_message_id, i.ackedWhileCached = true, i.ackPinTimestamp = eC(e.last_pin_timestamp), ek._mentionChannels.delete(i.channelId), i._mentionCount > 0 && i.canHaveMentions() && ek._mentionChannels.add(i.channelId)
   }), ek.resetGuildSentinels();
   let o = null == (t = J.default.getCurrentUser()) ? true : t.id;
   for (let e of (null != o && (ek.get(o, ei.W.NOTIFICATION_CENTER).lastMessageId = G.default.fromTimestamp(Date.now())), eB(r), ej(i), n)) ej("full_sync" === e.channels.op ? e.channels.items : e.channels.writes), null != e.channelTimestampUpdates && e2(e.channelTimestampUpdates), eG(e);
@@ -1490,7 +1490,7 @@ function tH(e) {
   tV(t.filter(e => null != e.messageId && t0.hasUnreadOrMentions(e.channelId, e.readStateType)), n, r)
 }
 
-function tY(e) {
+function tW(e) {
   let {
     channelId: t,
     windowId: n
@@ -1502,7 +1502,7 @@ function tY(e) {
   }, t))
 }
 
-function tW(e) {
+function tY(e) {
   let {
     channelId: t,
     windowId: n
@@ -1679,7 +1679,7 @@ class t$ extends(i = Chunk442837.ZP.Store) {
         case ei.W.GUILD_HOME:
         case ei.W.GUILD_EVENT:
         case ei.W.GUILD_ONBOARDING_QUESTION:
-          null != Y.Z.getGuild(n.channelId) && t.push(n.serialize(e));
+          null != W.Z.getGuild(n.channelId) && t.push(n.serialize(e));
           break;
         case ei.W.NOTIFICATION_CENTER:
         case ei.W.MESSAGE_REQUESTS:
@@ -1746,8 +1746,8 @@ let t0 = new t$(Chunk570140.Z, {
     UPDATE_CHANNEL_DIMENSIONS: tP,
     CURRENT_USER_UPDATE: tB,
     BULK_ACK: tH,
-    ENABLE_AUTOMATIC_ACK: tY,
-    DISABLE_AUTOMATIC_ACK: tW,
+    ENABLE_AUTOMATIC_ACK: tW,
+    DISABLE_AUTOMATIC_ACK: tY,
     GUILD_FEATURE_ACK: tM,
     GUILD_SCHEDULED_EVENT_CREATE: t_,
     GUILD_SCHEDULED_EVENT_UPDATE: tp,

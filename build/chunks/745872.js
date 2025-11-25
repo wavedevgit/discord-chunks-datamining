@@ -211,15 +211,15 @@ var M = function e(t) {
   F = Chunk390976.call(Chunk947599, String.prototype.slice),
   V = Chunk390976.call(Chunk947599, RegExp.prototype.exec),
   H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
-  Y = /\\(\\)?/g,
-  W = function(e) {
+  W = /\\(\\)?/g,
+  Y = function(e) {
     var t = F(e, 0, 1),
       n = F(e, false);
     if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
     if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
     var r = [];
     return Z(e, H, function(e, t, n, i) {
-      r[r.length] = n ? Z(i, Y, "$1") : t || e
+      r[r.length] = n ? Z(i, W, "$1") : t || e
     }), r
   },
   K = function(e, t) {
@@ -239,7 +239,7 @@ module.exports = function(e, t) {
   if ("string" != typeof e || 0 === e.length) throw new u("intrinsic name must be a non-empty string");
   if (arguments.length > 1 && "boolean" != typeof t) throw new u('"allowMissing" argument must be a boolean');
   if (null === V(/^%?[^%]*%?$/, e)) throw new c("`%` may not be present anywhere but at the beginning and end of the intrinsic name");
-  var n = W(e),
+  var n = Y(e),
     r = n.length > 0 ? n[0] : "",
     i = K("%" + r + "%", t),
     a = i.name,

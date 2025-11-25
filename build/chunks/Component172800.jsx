@@ -104,8 +104,8 @@ let x = e => {
     channelGuildId: F,
     category: V,
     selectedItemClassName: H,
-    channelId: Y,
-    messageId: W,
+    channelId: W,
+    messageId: Y,
     isBurstReaction: K,
     inNitroLockedSection: z,
     handleScrollUpOnSectionCollapse: q
@@ -240,7 +240,7 @@ let x = e => {
             pulseItemKey: eu,
             setPulseItemKey: ed,
             showEmojiFavoriteTooltip: Z,
-            messageId: W,
+            messageId: Y,
             isBurstReaction: K,
             rowPosition: null == ef || null == (a = ef.current) ? true : a.getBoundingClientRect(),
             inNitroLockedSection: z
@@ -262,7 +262,7 @@ let x = e => {
     className: C.emojiListRow,
     ref: ef,
     children: (0, r.jsx)(g.Z, {
-      channelId: Y,
+      channelId: W,
       onSelectSoundmoji: P
     })
   });

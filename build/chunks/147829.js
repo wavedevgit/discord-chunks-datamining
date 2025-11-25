@@ -267,8 +267,8 @@
           F = j.call(P, String.prototype.slice),
           V = j.call(P, RegExp.prototype.exec),
           H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
-          Y = /\\(\\)?/g,
-          W = function(e, t) {
+          W = /\\(\\)?/g,
+          Y = function(e, t) {
             var n, r = e;
             if (U(k, r) && (r = "%" + (n = k[r])[0] + "%"), U(L, r)) {
               var i = L[r];
@@ -292,11 +292,11 @@
               if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
               var r = [];
               return Z(e, H, function(e, t, n, i) {
-                r[r.length] = n ? Z(i, Y, "$1") : t || e
+                r[r.length] = n ? Z(i, W, "$1") : t || e
               }), r
             }(e),
             r = n.length > 0 ? n[0] : "",
-            i = W("%" + r + "%", t),
+            i = Y("%" + r + "%", t),
             a = i.name,
             o = i.value,
             s = false,
@@ -843,7 +843,7 @@
         }
         var M = n(2634),
           k = M.custom,
-          j = Y(k) ? k : null,
+          j = W(k) ? k : null,
           U = {
             __proto__: null,
             double: '"',
@@ -876,7 +876,7 @@
           return "[object RegExp]" === z(e) && F(e)
         }
 
-        function Y(e) {
+        function W(e) {
           if (P) return e && "object" == typeof e && e instanceof Symbol;
           if ("symbol" == typeof e) returntrue;
           if (!e || "object" != typeof e || !R) returnfalse;
@@ -924,7 +924,7 @@
           if (true === s) s = [];
           else if (q(s, t) >= 0) return "[Circular]";
 
-          function W(t, n, r) {
+          function Y(t, n, r) {
             if (n && (s = S.call(s)).push(n), r) {
               var a = {
                 depth: l.depth
@@ -939,10 +939,10 @@
                 var t = g.call(m.call(e), /^function\s*([\w$]+)/);
                 return t ? t[1] : null
               }(t),
-              er = en(t, W);
+              er = en(t, Y);
             return "[Function" + (Q ? ": " + Q : " (anonymous)") + "]" + (er.length > 0 ? " { " + T.call(er, ", ") + " }" : "")
           }
-          if (Y(t)) {
+          if (W(t)) {
             var ei = P ? b.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : R.call(t);
             return "object" != typeof t || P ? ei : J(ei)
           }
@@ -952,7 +952,7 @@
           }
           if (V(t)) {
             if (0 === t.length) return "[]";
-            var el = en(t, W);
+            var el = en(t, Y);
             return G && ! function(e) {
               for (var t = 0; t < e.length; t++)
                 if (q(e[t], "\n") >= 0) returnfalse;
@@ -962,8 +962,8 @@
           if (function(e) {
               return "[object Error]" === z(e) && F(e)
             }(t)) {
-            var ec = en(t, W);
-            return "cause" in Error.prototype || !("cause" in t) || w.call(t, "cause") ? 0 === ec.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + T.call(ec, ", ") + " }" : "{ [" + String(t) + "] " + T.call(I.call("[cause]: " + W(t.cause), ec), ", ") + " }"
+            var ec = en(t, Y);
+            return "cause" in Error.prototype || !("cause" in t) || w.call(t, "cause") ? 0 === ec.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + T.call(ec, ", ") + " }" : "{ [" + String(t) + "] " + T.call(I.call("[cause]: " + Y(t.cause), ec), ", ") + " }"
           }
           if ("object" == typeof t && h) {
             if (j && "function" == typeof t[j] && M) return M(t, {
@@ -986,7 +986,7 @@
             }(t)) {
             var eu = [];
             return o && o.call(t, function(e, n) {
-              eu.push(W(n, t, true) + " => " + W(e, t))
+              eu.push(Y(n, t, true) + " => " + Y(e, t))
             }), ee("Map", a.call(t), eu, G)
           }
           if (function(e) {
@@ -1004,7 +1004,7 @@
             }(t)) {
             var ed = [];
             return u && u.call(t, function(e) {
-              ed.push(W(e, t))
+              ed.push(Y(e, t))
             }), ee("Set", c.call(t), ed, G)
           }
           if (function(e) {
@@ -1042,26 +1042,26 @@
             }(t)) return $("WeakRef");
           if (function(e) {
               return "[object Number]" === z(e) && F(e)
-            }(t)) return J(W(Number(t)));
+            }(t)) return J(Y(Number(t)));
           if (function(e) {
               if (!e || "object" != typeof e || !C) returnfalse;
               try {
                 return C.call(e), true
               } catch (e) {}
               returnfalse
-            }(t)) return J(W(C.call(t)));
+            }(t)) return J(Y(C.call(t)));
           if (function(e) {
               return "[object Boolean]" === z(e) && F(e)
             }(t)) return J(p.call(t));
           if (function(e) {
               return "[object String]" === z(e) && F(e)
-            }(t)) return J(W(String(t)));
+            }(t)) return J(Y(String(t)));
           if ("undefined" != typeof window && t === window) return "{ [object Window] }";
           if ("undefined" != typeof globalThis && t === globalThis || true !== n.g && t === n.g) return "{ [object globalThis] }";
           if (! function(e) {
               return "[object Date]" === z(e) && F(e)
             }(t) && !H(t)) {
-            var ef = en(t, W),
+            var ef = en(t, Y),
               e_ = L ? L(t) === Object.prototype : t instanceof Object || t.constructor === Object,
               ep = t instanceof Object ? "" : "null prototype",
               eh = !e_ && D && Object(t) === t && D in t ? E.call(z(t), 8, false) : ep ? "Object" : "",
@@ -1070,12 +1070,12 @@
           }
           return String(t)
         };
-        var W = Object.prototype.hasOwnProperty || function(e) {
+        var Y = Object.prototype.hasOwnProperty || function(e) {
           return e in this
         };
 
         function K(e, t) {
-          return W.call(e, t)
+          return Y.call(e, t)
         }
 
         function z(e) {
@@ -1764,8 +1764,8 @@
           F = j.call(P, String.prototype.slice),
           V = j.call(P, RegExp.prototype.exec),
           H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
-          Y = /\\(\\)?/g,
-          W = function(e, t) {
+          W = /\\(\\)?/g,
+          Y = function(e, t) {
             var n, r = e;
             if (U(k, r) && (r = "%" + (n = k[r])[0] + "%"), U(L, r)) {
               var i = L[r];
@@ -1789,11 +1789,11 @@
               if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
               var r = [];
               return Z(e, H, function(e, t, n, i) {
-                r[r.length] = n ? Z(i, Y, "$1") : t || e
+                r[r.length] = n ? Z(i, W, "$1") : t || e
               }), r
             }(e),
             r = n.length > 0 ? n[0] : "",
-            i = W("%" + r + "%", t),
+            i = Y("%" + r + "%", t),
             a = i.name,
             o = i.value,
             s = false,
@@ -2121,8 +2121,8 @@
           F = j.call(P, String.prototype.slice),
           V = j.call(P, RegExp.prototype.exec),
           H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
-          Y = /\\(\\)?/g,
-          W = function(e, t) {
+          W = /\\(\\)?/g,
+          Y = function(e, t) {
             var n, r = e;
             if (U(k, r) && (r = "%" + (n = k[r])[0] + "%"), U(L, r)) {
               var i = L[r];
@@ -2146,11 +2146,11 @@
               if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
               var r = [];
               return Z(e, H, function(e, t, n, i) {
-                r[r.length] = n ? Z(i, Y, "$1") : t || e
+                r[r.length] = n ? Z(i, W, "$1") : t || e
               }), r
             }(e),
             r = n.length > 0 ? n[0] : "",
-            i = W("%" + r + "%", t),
+            i = Y("%" + r + "%", t),
             a = i.name,
             o = i.value,
             s = false,

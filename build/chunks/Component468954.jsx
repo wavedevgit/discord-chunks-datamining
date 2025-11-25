@@ -83,7 +83,7 @@ function p(e) {
     gridNotice: j,
     renderHeader: U,
     renderUpsell: G
-  } = e, B = i.useRef(null), Z = i.useRef(null), F = i.useRef(null), V = 0 === t.length, H = (0, a.Iu)(e => e.searchQuery), Y = f.useStore(e => e.inspectedExpressionPosition), W = (0, o.ep)({
+  } = e, B = i.useRef(null), Z = i.useRef(null), F = i.useRef(null), V = 0 === t.length, H = (0, a.Iu)(e => e.searchQuery), W = f.useStore(e => e.inspectedExpressionPosition), Y = (0, o.ep)({
     gridWrapperRef: B,
     containerWidth: u,
     showingEmptyState: V
@@ -96,7 +96,7 @@ function p(e) {
   } = (0, o.yi)({
     categories: t,
     collapsedCategories: n,
-    gridWidth: W,
+    gridWidth: Y,
     listPaddingRight: L,
     itemNodeWidth: w,
     itemNodeMargin: x
@@ -121,8 +121,8 @@ function p(e) {
     sectionIndex: t.sectionIndex
   }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, Q, en, O, f, z]), ei = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), ea = i.useCallback(e => null == T ? true : T(t[e], e), [t, T]), eo = i.useCallback(() => {
     var e;
-    return null == S ? true : S(null == K || null == (e = K[Y.rowIndex]) ? true : e[Y.columnIndex])
-  }, [K, Y.columnIndex, Y.rowIndex, S]);
+    return null == S ? true : S(null == K || null == (e = K[W.rowIndex]) ? true : e[W.columnIndex])
+  }, [K, W.columnIndex, W.rowIndex, S]);
   i.useEffect(() => {
     h(H)
   }, [h, H]), i.useEffect(() => {
@@ -157,7 +157,7 @@ function p(e) {
         className: c.listWrapper,
         id: k
       }, ee), {
-        children: null != W ? (0, r.jsx)(s.Z, {
+        children: null != Y ? (0, r.jsx)(s.Z, {
           categories: t,
           ref: Z,
           store: f,

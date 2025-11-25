@@ -90,7 +90,7 @@ let J = (0, Chunk663993.Un)({
     } = e, a = (0, V.getPlatform)(), d = s.tq || s.Em, m = (0, u.e7)([g.Z], () => g.Z.useForcedColors ? "yes" : "no"), G = i.useRef(document.body), Z = "".concat(m);
     return (0, C.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(U.w, {
       children: (0, r.jsxs)(E.Z, {
-        children: [(0, r.jsx)(Y.Z, {
+        children: [(0, r.jsx)(W.Z, {
           skipsSettingDefaultPageTitle: n
         }), (0, r.jsx)(h.T, {
           children: (0, r.jsx)(R.Z, {
@@ -122,7 +122,7 @@ let J = (0, Chunk663993.Un)({
                           })
                         })
                       })
-                    }), (0, r.jsx)(I.Z, {}), (0, r.jsx)(W.Z, {
+                    }), (0, r.jsx)(I.Z, {}), (0, r.jsx)(Y.Z, {
                       mobile: d
                     }), (0, r.jsx)(N.Z, {
                       mobile: d

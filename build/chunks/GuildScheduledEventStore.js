@@ -230,14 +230,14 @@ function H(e) {
   })), true)
 }
 
-function Y(e) {
+function W(e) {
   let {
     guildScheduledEventUsers: t
   } = e;
   return t.forEach(e => R(e, false, false)), O += 1, true
 }
 
-function W(e) {
+function Y(e) {
   let {
     guildScheduledEventUsers: t
   } = e;
@@ -386,8 +386,8 @@ let er = new en(Chunk570140.Z, {
   GUILD_SCHEDULED_EVENT_DELETE: Z,
   GUILD_SCHEDULED_EVENT_USER_ADD: K,
   GUILD_SCHEDULED_EVENT_USER_REMOVE: z,
-  GUILD_SCHEDULED_EVENT_RSVPS_FETCH_SUCESS: Y,
-  GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: W,
+  GUILD_SCHEDULED_EVENT_RSVPS_FETCH_SUCESS: W,
+  GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: Y,
   GUILD_SCHEDULED_EVENT_USER_COUNTS_FETCH_SUCCESS: q,
   INVITE_RESOLVE_SUCCESS: Q,
   GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: F,

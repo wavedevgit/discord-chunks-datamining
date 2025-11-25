@@ -5,7 +5,7 @@ require.d(exports, {
   ZP: () => X,
   jK: () => H,
   mQ: () => B,
-  tS: () => Y,
+  tS: () => W,
   xG: () => K
 }), require("./388685.js"), require("./35282.js"), require("./704826.js"), require("./415506.js"), require("./49124.js"), require("./539854.js");
 var r, i, a, o, Chunk512722 = require("./512722.js"),
@@ -106,11 +106,11 @@ function V(e) {
 var H = function(e) {
     return e[e.Camera = 0] = "Camera", e[e.Microphone = 1] = "Microphone", e[e.Photo = 2] = "Photo", e[e.InputMonitoring = 3] = "InputMonitoring", e[e.ScreenRecording = 4] = "ScreenRecording", e
   }({}),
-  Y = function(e) {
+  W = function(e) {
     return e.VIDEO = "VIDEO", e.MUTE = "MUTE", e.DEAFEN = "DEAFEN", e.DISCONNECT = "DISCONNECT", e
   }({});
 
-function W(e) {
+function Y(e) {
   var t, n, r, i, a, o, s, l, c;
   return {
     id: D[null != (t = e.id) ? t : ""],
@@ -195,12 +195,12 @@ let q = {
             cmdline: e.cmdLine,
             id: t
           })
-        }), e => n(e.map(W)))
+        }), e => n(e.map(Y)))
       } catch (e) {}
     },
     setGameDetectionCallback(e) {
       var t, n;
-      null == (t = (n = this.getDiscordUtils()).setGameDetectionCallback) || t.call(n, (t, n) => e(t.map(W), n.map(W)))
+      null == (t = (n = this.getDiscordUtils()).setGameDetectionCallback) || t.call(n, (t, n) => e(t.map(Y), n.map(Y)))
     },
     setGameDetectionErrorCallback(e) {
       var t, n;
@@ -216,7 +216,7 @@ let q = {
     },
     setCandidateGamesCallback(e) {
       this.getDiscordUtils().setCandidateGamesCallback(t => {
-        e(t.map(W))
+        e(t.map(Y))
       })
     },
     clearCandidateGamesCallback() {

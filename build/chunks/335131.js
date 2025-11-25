@@ -15,9 +15,9 @@ require.d(exports, {
   mK: () => P,
   oK: () => w,
   oc: () => x,
-  p8: () => Y,
+  p8: () => W,
   qg: () => k,
-  wW: () => W
+  wW: () => Y
 }), require("./388685.js"), require("./49124.js");
 var Chunk561842 = require("./561842.js"),
   Chunk664081 = require("./664081.js"),
@@ -333,12 +333,12 @@ let P = e => {
       type: "COLLECTIBLES_SET_SHOP_HOME_CONFIG_OVERRIDE",
       shopHomeConfigOverride: e
     })
-  }, Y = e => {
+  }, W = e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SKIP_NUM_CATEGORIES",
       skipNumCategories: e
     })
-  }, W = async (e, t) => {
+  }, Y = async (e, t) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_CLAIM",
       skuId: t

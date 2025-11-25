@@ -126,9 +126,9 @@ function C(e) {
       for (let n of (t.didFirePressStart && null != t.pointerType && F(P(t.target, e), t.pointerType, false), t.isPressed = false, t.isOverTarget = false, t.activePointerId = null, t.pointerType = null, B(), L || (0, i.A)(t.target), t.disposables)) n();
       t.disposables = []
     }
-  }), Y = (0, f.i)(e => {
-    D && H(e)
   }), W = (0, f.i)(e => {
+    D && H(e)
+  }), Y = (0, f.i)(e => {
     u || null == l || l(e)
   }), K = (0, f.i)((e, t) => {
     if (!u && l) {
@@ -161,12 +161,12 @@ function C(e) {
               let e = Z(t, "virtual"),
                 r = V(t, "virtual"),
                 i = F(t, "virtual");
-              W(t), n = e && r && i
+              Y(t), n = e && r && i
             } else if (e.isPressed && "keyboard" !== e.pointerType) {
               let r = e.pointerType || t.nativeEvent.pointerType || "virtual",
                 i = V(P(t.currentTarget, t), r),
                 a = F(P(t.currentTarget, t), r, true);
-              n = i && a, e.isOverTarget = false, W(t), H(t)
+              n = i && a, e.isOverTarget = false, Y(t), H(t)
             }
             e.ignoreEmulatedMouseEvents = false, n && t.stopPropagation()
           }
@@ -212,7 +212,7 @@ function C(e) {
       }, t.onPointerEnter = t => {
         t.pointerId === e.activePointerId && e.target && !e.isOverTarget && null != e.pointerType && (e.isOverTarget = true, Z(P(e.target, t), e.pointerType))
       }, t.onPointerLeave = t => {
-        t.pointerId === e.activePointerId && e.target && e.isOverTarget && null != e.pointerType && (e.isOverTarget = false, F(P(e.target, t), e.pointerType, false), Y(t))
+        t.pointerId === e.activePointerId && e.target && e.isOverTarget && null != e.pointerType && (e.isOverTarget = false, F(P(e.target, t), e.pointerType, false), W(t))
       };
       let n = t => {
           if (t.pointerId === e.activePointerId && e.isPressed && 0 === t.button && e.target) {
@@ -234,7 +234,7 @@ function C(e) {
       }
     }
     return t
-  }, [G, u, C, B, L, H, Y, F, Z, V, W, K]);
+  }, [G, u, C, B, L, H, W, F, Z, V, Y, K]);
   return (0, y.useEffect)(() => {
     if (!x) return;
     let e = (0, p.r3)(x.current);

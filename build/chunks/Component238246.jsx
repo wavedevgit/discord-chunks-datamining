@@ -47,7 +47,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk501787 = require("./501787.js"),
   Chunk413943 = require("./413943.js");
 
-function Y(e, t, n) {
+function W(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -56,14 +56,14 @@ function Y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function W(e) {
+function Y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Y(e, t, n[t])
+      W(e, t, n[t])
     })
   }
   return e
@@ -111,7 +111,7 @@ class X extends(r = Chunk473749.Component) {
     let {
       guestWindow: e
     } = this.props, t = module.document;
-    this.unregisterPopoutGlobalKeybinds(), module.removeEventListener("blur", this.handleBlur), Chunk358085.isPlatformEmbedded ? exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackNative) : exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackWeb), (0, Chunk731965.j)(() => Chunk481060.s9z.setState(e => z(W({}, e), {
+    this.unregisterPopoutGlobalKeybinds(), module.removeEventListener("blur", this.handleBlur), Chunk358085.isPlatformEmbedded ? exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackNative) : exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackWeb), (0, Chunk731965.j)(() => Chunk481060.s9z.setState(e => z(Y({}, e), {
       [h.u1M]: []
     }))), module.removeEventListener("beforeunload", this.beforeUnload)
   }
@@ -206,7 +206,7 @@ class X extends(r = Chunk473749.Component) {
     })
   }
   constructor(...e) {
-    super(...e), Y(this, "rootRef", a.createRef()), Y(this, "_cleanupWindowActionCreators", true), Y(this, "_combokeys", null), Y(this, "beforeUnload", e => {
+    super(...e), W(this, "rootRef", a.createRef()), W(this, "_cleanupWindowActionCreators", true), W(this, "_combokeys", null), W(this, "beforeUnload", e => {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
@@ -216,13 +216,13 @@ class X extends(r = Chunk473749.Component) {
         e,
         unmountWindow: n
       }) : n()
-    }), Y(this, "handleBlur", () => {
+    }), W(this, "handleBlur", () => {
       var e, t;
       null == (e = (t = this.props).onBlur) || e.call(t)
     })
   }
 }
-Y(X, "defaultProps", {
+W(X, "defaultProps", {
   withTitleBar: true
 });
 let Q = Chunk473749.forwardRef(function(e, t) {
@@ -275,7 +275,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
     return null == r ? null : (0, i.jsx)(h.Sle, {
       children: (0, i.jsx)(I.Gt, {
         value: l,
-        children: (0, i.jsx)(X, z(W({
+        children: (0, i.jsx)(X, z(Y({
           ref: t
         }, e), {
           titleBarTheme: _,

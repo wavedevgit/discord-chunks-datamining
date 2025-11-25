@@ -108,8 +108,8 @@ function P(e) {
       fieldProps: H
     } = (0, l.X)(F),
     {
-      id: Y,
-      required: W,
+      id: W,
+      required: Y,
       label: K,
       disabled: z
     } = H,
@@ -248,8 +248,8 @@ function P(e) {
         children: (0, r.jsxs)(d.kL8, {
           "aria-label": K,
           buttonRef: ea,
-          buttonProps: S(I({}, null != Y ? {
-            id: Y
+          buttonProps: S(I({}, null != W ? {
+            id: W
           } : {}), {
             style: {
               marginLeft: false
@@ -298,7 +298,7 @@ function P(e) {
         children: (0, r.jsx)(d.VqE, {
           children: (0, r.jsx)(u.w, {
             id: en,
-            required: W,
+            required: Y,
             items: er,
             selectionMode: t,
             selectedItems: em,

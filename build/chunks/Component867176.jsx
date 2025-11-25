@@ -113,7 +113,7 @@ function N(e) {
     pendingBanner: O,
     size: N,
     canAnimate: w || !j ? x : k
-  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), Z = n.getAvatarURL(b, (0, u.pxk)(T)), F = (0, s._i)((0, d.ZP)(Z, B, false)), V = (0, f.Z)(null != (t = null != D ? D : null == a ? true : a.primaryColor) ? t : F).hex, H = C(T), Y = H + S - P, W = R - A - P;
+  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), Z = n.getAvatarURL(b, (0, u.pxk)(T)), F = (0, s._i)((0, d.ZP)(Z, B, false)), V = (0, f.Z)(null != (t = null != D ? D : null == a ? true : a.primaryColor) ? t : F).hex, H = C(T), W = H + S - P, Y = R - A - P;
   return (0, r.jsxs)("svg", {
     className: y.mask,
     viewBox: "0 0 ".concat(N, " ").concat(R),
@@ -131,8 +131,8 @@ function N(e) {
         height: "100%"
       }), (0, r.jsx)("circle", {
         fill: "black",
-        cx: Y,
-        cy: W,
+        cx: W,
+        cy: Y,
         r: H
       })]
     }), (0, r.jsxs)("foreignObject", {

@@ -118,7 +118,7 @@ function S(e) {
     H = i.useCallback(() => {
       null !== B.current && B.current.pause(), null == L || L()
     }, [L]),
-    Y = i.useCallback(() => {
+    W = i.useCallback(() => {
       null !== B.current && B.current.pause();
       let e = F();
       (0, c.K)({
@@ -128,7 +128,7 @@ function S(e) {
         shouldHideMediaOptions: true
       }), null == L || L(), null == w || w()
     }, [F, w, L]),
-    W = Z ? (0, r.jsx)(o.zsu, {
+    Y = Z ? (0, r.jsx)(o.zsu, {
       type: "image",
       src: A
     }) : (0, r.jsxs)(r.Fragment, {
@@ -149,7 +149,7 @@ function S(e) {
           playing: false,
           size: "sm",
           "aria-label": g.intl.string(m.default.YpT3kk),
-          onClick: Y
+          onClick: W
         })
       })]
     }),
@@ -174,7 +174,7 @@ function S(e) {
         onClick: H
       }), (0, r.jsx)(f.$, {}), (0, r.jsx)("div", {
         className: E.assetContainer,
-        children: W
+        children: Y
       }), (0, r.jsx)(_.Y, {
         title: O,
         body: T,

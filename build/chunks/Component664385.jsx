@@ -68,8 +68,8 @@ function j(e) {
     position: F,
     closePopout: V,
     updatePosition: H,
-    impressionRef: Y,
-    name: W
+    impressionRef: W,
+    name: Y
   } = e, K = (0, s.e7)([g.Z], () => {
     var e;
     return null != (e = g.Z.getChannel(null == Z ? true : Z.channelId)) ? e : null
@@ -163,7 +163,7 @@ function j(e) {
           default: e
         } = await n.e("85045").then(n.bind(n, 748862));
         return t => (0, r.jsx)(e, L({
-          username: null != W ? W : "",
+          username: null != Y ? Y : "",
           onConfirm: () => ((0, E._3)({
             questId: G.id,
             questContent: b.jn.MEMBERS_LIST,
@@ -206,7 +206,7 @@ function j(e) {
     })();
   return (0, r.jsx)(a.animated.div, {
     ref: e => {
-      Y.current = e
+      W.current = e
     },
     "aria-expanded": er,
     className: D.wrapper,

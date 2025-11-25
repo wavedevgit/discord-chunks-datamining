@@ -139,7 +139,7 @@ function ej(e) {
   } = e, {
     id: s,
     author: l
-  } = t, u = j.default.getId(), d = t.getChannelId(), f = (0, a.e7)([U.Z], () => U.Z.isCallActive(d, s), [d, s]), _ = (0, a.e7)([Y.Z], () => Y.Z.getVoiceState(eR.ME, u)), p = !f && null != t.call && !t.call.participants.includes(u), h = f && (null == _ || _.channelId !== d), m = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), g = (0, et.l)({
+  } = t, u = j.default.getId(), d = t.getChannelId(), f = (0, a.e7)([U.Z], () => U.Z.isCallActive(d, s), [d, s]), _ = (0, a.e7)([W.Z], () => W.Z.getVoiceState(eR.ME, u)), p = !f && null != t.call && !t.call.participants.includes(u), h = f && (null == _ || _.channelId !== d), m = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), g = (0, et.l)({
     user: l,
     channelId: d,
     guildId: o.guild_id,
@@ -209,7 +209,7 @@ function eB(e) {
       let e = G.Z.getChannel(s);
       null != e && (0, P.XU)(e.guild_id, e.id)
     }
-    setTimeout(() => W.S.dispatch(eR.CkL.TOGGLE_CHANNEL_PINS), 0)
+    setTimeout(() => Y.S.dispatch(eR.CkL.TOGGLE_CHANNEL_PINS), 0)
   }, [s]), c = (0, et.l)({
     user: o,
     channelId: s,
@@ -371,7 +371,7 @@ function eH(e) {
   })
 }
 
-function eY(e) {
+function eW(e) {
   let {
     message: t,
     channel: n,
@@ -404,7 +404,7 @@ function eY(e) {
   })
 }
 
-function eW(e) {
+function eY(e) {
   let {
     message: t,
     compact: n,
@@ -815,11 +815,11 @@ let to = Object.freeze({
   [Chunk981631.uaV.CHANNEL_ICON_CHANGE]: eG,
   [Chunk981631.uaV.CHANNEL_PINNED_MESSAGE]: eB,
   [Chunk981631.uaV.USER_JOIN]: eH,
-  [Chunk981631.uaV.GUILD_BOOST]: eY,
-  [Chunk981631.uaV.GUILD_BOOST_TIER_1]: eY,
-  [Chunk981631.uaV.GUILD_BOOST_TIER_2]: eY,
-  [Chunk981631.uaV.GUILD_BOOST_TIER_3]: eY,
-  [Chunk981631.uaV.CHANNEL_FOLLOW_ADD]: eW,
+  [Chunk981631.uaV.GUILD_BOOST]: eW,
+  [Chunk981631.uaV.GUILD_BOOST_TIER_1]: eW,
+  [Chunk981631.uaV.GUILD_BOOST_TIER_2]: eW,
+  [Chunk981631.uaV.GUILD_BOOST_TIER_3]: eW,
+  [Chunk981631.uaV.CHANNEL_FOLLOW_ADD]: eY,
   [Chunk981631.uaV.GUILD_STREAM]: eK,
   [Chunk981631.uaV.GUILD_DISCOVERY_DISQUALIFIED]: ez,
   [Chunk981631.uaV.GUILD_DISCOVERY_REQUALIFIED]: Chunk502115.xe,

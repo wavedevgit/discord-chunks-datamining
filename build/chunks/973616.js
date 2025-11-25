@@ -155,7 +155,7 @@ class m extends h {
     }))
   }
   mergeFromApplicationUpdate(e) {
-    var t, n, r, i, a, o, s, l, c, d, f, _, p, h, g, E, b, y, O, v, I, T, S, A, C, N, R, P, D, w, L, x, M, k, j, U, G, B, Z, F, V, H, Y, W, K;
+    var t, n, r, i, a, o, s, l, c, d, f, _, p, h, g, E, b, y, O, v, I, T, S, A, C, N, R, P, D, w, L, x, M, k, j, U, G, B, Z, F, V, H, W, Y, K;
     return new m({
       id: null != (t = e.id) ? t : this.id,
       name: null != (n = e.name) ? n : this.name,
@@ -199,8 +199,8 @@ class m extends h {
       installParams: null != (F = e.installParams) ? F : this.installParams,
       isDiscoverable: null != (V = e.isDiscoverable) ? V : this.isDiscoverable,
       directoryEntry: null != (H = e.directoryEntry) ? H : this.directoryEntry,
-      categories: null != (Y = e.categories) ? Y : this.categories,
-      linkedGames: null != (W = e.linkedGames) ? W : this.linkedGames,
+      categories: null != (W = e.categories) ? W : this.categories,
+      linkedGames: null != (Y = e.linkedGames) ? Y : this.linkedGames,
       deepLinkUri: null != (K = e.deepLinkUri) ? K : this.deepLinkUri
     })
   }

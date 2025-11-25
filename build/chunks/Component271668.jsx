@@ -48,7 +48,7 @@ let w = 512,
     let {
       channel: n,
       canOnlyUseTextCommands: a
-    } = e, s = i.useRef(false), l = i.useRef(0), [Z, V] = i.useState(0), H = i.useRef(null), [Y, W] = i.useState(false), K = m.Xn.useStore(e => e.activeCategoryIndex);
+    } = e, s = i.useRef(false), l = i.useRef(0), [Z, V] = i.useState(0), H = i.useRef(null), [W, Y] = i.useState(false), K = m.Xn.useStore(e => e.activeCategoryIndex);
     i.useEffect(() => {
       (0, d.yw)(N.rMx.APPLICATION_COMMAND_BROWSER_OPENED)
     }, []);
@@ -102,8 +102,8 @@ let w = 512,
     let ea = i.useCallback(e => e !== q.length - 1 || Q ? M : 0, [q.length, Q]),
       eo = X.map(e => e.data.length);
     i.useEffect(() => {
-      null != H.current && Y && null != Z && H.current.scrollRowIntoView(Z)
-    }, [Y, Z]), i.useLayoutEffect(() => {
+      null != H.current && W && null != Z && H.current.scrollRowIntoView(Z)
+    }, [W, Z]), i.useLayoutEffect(() => {
       if (null != $) {
         var e;
         null == (e = H.current) || e.scrollToSectionTop(0)
@@ -143,7 +143,7 @@ let w = 512,
         let t = Q ? L : 0,
           n = J.length + t,
           r = null == Z ? 0 : Z + e;
-        return r >= n ? r = n - 1 : r < 0 && (r = 0), V(r), W(true), true
+        return r >= n ? r = n - 1 : r < 0 && (r = 0), V(r), Y(true), true
       }
     }), [J.length, X, Q, z, el, Z]);
     let ec = i.useCallback(e => {
@@ -201,7 +201,7 @@ let w = 512,
           section: l,
           onClick: () => el(o, l, (0, I.tI)(a.section)),
           onHover: () => {
-            V(null), W(false)
+            V(null), Y(false)
           }
         }, s)
       }, [n, X, el, z, Z]),

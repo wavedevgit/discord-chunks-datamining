@@ -264,8 +264,8 @@ function V(e) {
     className: C.scrollingFooterWrap,
     children: m()
   }));
-  let Y = null == E ? true : E(),
-    W = V && null != Y ? (0, r.jsx)("div", {
+  let W = null == E ? true : E(),
+    Y = V && null != W ? (0, r.jsx)("div", {
       className: C.footer,
       children: (0, r.jsx)(p.Z, {
         style: {
@@ -273,7 +273,7 @@ function V(e) {
           paddingTop: 10,
           paddingBottom: 10
         },
-        children: Y
+        children: W
       })
     }) : null,
     K = {
@@ -308,7 +308,7 @@ function V(e) {
             }
           })
         }), H]
-      }), W]
+      }), Y]
     })
   })
 }

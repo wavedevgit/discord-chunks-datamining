@@ -77,7 +77,7 @@ function H(e) {
   return e
 }
 
-function Y(e, t) {
+function W(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -88,8 +88,8 @@ function Y(e, t) {
   return n
 }
 
-function W(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
+function Y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -445,7 +445,7 @@ class es extends ei {
   updateChannel(e, t) {
     let n = e.id in this.channels && D.ZP.isFavorite(e.guild_id, e.id),
       r = h.Z.getSuggestedChannelId(e.guild_id);
-    return (e.id !== r || n || (t = W(H({}, t), {
+    return (e.id !== r || n || (t = Y(H({}, t), {
       activeJoinedRelevantThreads: {},
       activeJoinedUnreadThreads: {}
     })), e.id in this.channels && this.channels[e.id].updateChannel(e, t)) ? (this.invalidate(), true) : e.id in this.channels && e.id !== r && !n && (delete this.channels[e.id], this.invalidate(), true)
@@ -459,7 +459,7 @@ class es extends ei {
     this.channels = o()(null != (n = D.ZP.getGuildFavorites(e.id)) ? n : []).map(e => S.Z.getChannel(e)).filter(x.lm).map(e => new em(this, e, t)).keyBy(e => e.id).value();
     let r = h.Z.getSuggestedChannelId(e.id),
       i = S.Z.getChannel(r);
-    null != i && null != r && (this.channels[r] = new em(this, i, W(H({}, t), {
+    null != i && null != r && (this.channels[r] = new em(this, i, Y(H({}, t), {
       activeJoinedRelevantThreads: {},
       activeJoinedUnreadThreads: {}
     })))

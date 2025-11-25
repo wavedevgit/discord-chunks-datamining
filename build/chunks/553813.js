@@ -298,14 +298,14 @@ function H(e, t) {
   this.format()
 }
 
-function Y(e, t) {
+function W(e, t) {
   for (var n = true, r = e.slice(), i = r.pop(); n && r.length;) n = r.every(function(e) {
     return i.intersects(e, t)
   }), i = r.pop();
   return n
 }
 
-function W(e, t) {
+function Y(e, t) {
   return new H(e, t).set.map(function(e) {
     return e.map(function(e) {
       return e.value
@@ -560,15 +560,15 @@ F.prototype.parse = function(e) {
 }, H.prototype.intersects = function(e, t) {
   if (!(e instanceof H)) throw TypeError("a Range is required");
   return this.set.some(function(n) {
-    return Y(n, t) && e.set.some(function(e) {
-      return Y(e, t) && n.every(function(n) {
+    return W(n, t) && e.set.some(function(e) {
+      return W(e, t) && n.every(function(n) {
         return e.every(function(e) {
           return n.intersects(e, t)
         })
       })
     })
   })
-}, exports.toComparators = W, H.prototype.test = function(e) {
+}, exports.toComparators = Y, H.prototype.test = function(e) {
   if (!e) returnfalse;
   if ("string" == typeof e) try {
     e = new y(e, this.options)

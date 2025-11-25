@@ -188,11 +188,11 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   R = T({}, R), delete R[e.code]
 }
 
-function W(e) {
+function Y(e) {
   R = A(T({}, R), {
     [e.invite.code]: V(e.invite)
   })
@@ -295,7 +295,7 @@ let $ = new J(Chunk570140.Z, {
     CHANNEL_SETTINGS_LOADED_INVITES: H,
     CHANNEL_UPDATES: z,
     CHANNEL_DELETE: X,
-    INSTANT_INVITE_REVOKE_SUCCESS: Y,
-    INSTANT_INVITE_CREATE_SUCCESS: W
+    INSTANT_INVITE_REVOKE_SUCCESS: W,
+    INSTANT_INVITE_CREATE_SUCCESS: Y
   }),
   ee = $

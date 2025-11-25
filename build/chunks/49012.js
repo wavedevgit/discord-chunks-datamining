@@ -117,7 +117,7 @@ function R(e, t) {
         }), null != R) return void R();
       (0, s.Z)(M)
     },
-    Y = null != P ? P : () => {};
+    W = null != P ? P : () => {};
   if (null !== c.Z.isBlockedDomain(M)) {
     null == t || t.preventDefault(), l.Z.show(M);
     return
@@ -130,10 +130,10 @@ function R(e, t) {
     null == t || t.preventDefault(), d.Z.show(M);
     return
   }
-  let W = "function" == typeof T ? T() : T,
+  let Y = "function" == typeof T ? T() : T,
     K = (0, O.E)(M),
     z = "http:" !== K && "https:" !== K;
-  if (!z && (W || y.Z.isTrustedDomain(M)) || z && y.Z.isTrustedProtocol(M)) return void(null == t || null != D && D ? H() : j && _.Z.trackAnnouncementMessageLinkClicked({
+  if (!z && (Y || y.Z.isTrustedDomain(M)) || z && y.Z.isTrustedProtocol(M)) return void(null == t || null != D && D ? H() : j && _.Z.trackAnnouncementMessageLinkClicked({
     messageId: U,
     channelId: L,
     guildId: k,
@@ -144,7 +144,7 @@ function R(e, t) {
     url: M,
     trustUrl: o.u,
     onConfirm: H,
-    onCancel: Y,
+    onCancel: W,
     isProtocol: true,
     contextKey: I
   });
@@ -155,7 +155,7 @@ function R(e, t) {
       url: t,
       trustUrl: o.o,
       onConfirm: H,
-      onCancel: Y,
+      onCancel: W,
       isProtocol: false,
       contextKey: I
     })

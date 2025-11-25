@@ -180,14 +180,14 @@ function H(e) {
   let i = null != (t = Z[n]) ? t : f.wB.SUBMITTED;
   "REVIEW_APPLICATION" !== i && ((0, d.bk)(i) && x.clear(), (0, d.Nd)(i) && L.clear())
 }
-let Y = {};
+let W = {};
 
-function W(e) {
+function Y(e) {
   let {
     guildId: t,
     request: n
   } = e;
-  Y[t] = n
+  W[t] = n
 }
 let K = {},
   z = 10 * Chunk70956.Z.Seconds.MINUTE;
@@ -223,7 +223,7 @@ class q extends(r = Chunk442837.ZP.Store) {
     return null != (t = V[e]) ? t : f.Nw.TIMESTAMP_DESC
   }
   getSelectedGuildJoinRequest(e) {
-    let t = Y[e];
+    let t = W[e];
     return null != t ? M(t.joinRequestId) : null
   }
 }
@@ -239,5 +239,5 @@ let X = new q(Chunk570140.Z, {
   GUILD_JOIN_REQUEST_DELETE: G,
   GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB: F,
   GUILD_JOIN_REQUESTS_SET_SORT_ORDER: H,
-  GUILD_JOIN_REQUESTS_SET_SELECTED: W
+  GUILD_JOIN_REQUESTS_SET_SELECTED: Y
 })

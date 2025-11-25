@@ -140,7 +140,7 @@ function eI(e, t, a, o, s) {
     if (l) return;
     c(true);
     let y = null != (E = null == (g = j.Z.getStickerPreview(s, t.drafts.type)) ? true : g.map(e => e.id)) ? E : [],
-      O = null != (b = W.Z.getUploads(s, t.drafts.type)) ? b : [],
+      O = null != (b = Y.Z.getUploads(s, t.drafts.type)) ? b : [],
       v = (0, k.q5)(s);
     if (null == d && !_ && !m && (0, D.CB)(O, s)) {
       c(false), (0, p.ZDy)(async () => {
@@ -433,7 +433,7 @@ function eG(e, t) {
     error: F,
     renderAttachButton: V,
     renderApplicationCommandIcon: H,
-    pendingReply: W,
+    pendingReply: Y,
     onChange: K,
     onResize: z,
     onBlur: q,
@@ -454,8 +454,8 @@ function eG(e, t) {
     autoCompletePosition: eF,
     children: eV,
     disableThemedBackground: eH = false,
-    emojiPickerCloseOnModalOuterClick: eY,
-    parentModalKey: eW,
+    emojiPickerCloseOnModalOuterClick: eW,
+    parentModalKey: eY,
     pendingScheduledMessage: eK,
     showValueWhenDisabled: ez = false
   } = e;
@@ -492,7 +492,7 @@ function eG(e, t) {
     fontSize: ts
   } = (0, _.cj)([g.Z], () => ({
     fontSize: g.Z.fontSize
-  })), tl = (0, _.e7)([Y.Z], () => Y.Z.isEnabled());
+  })), tl = (0, _.e7)([W.Z], () => W.Z.isEnabled());
   eN(G, e9);
   let {
     eventEmitter: tc,
@@ -557,7 +557,7 @@ function eG(e, t) {
       type: G
     });
   (0, J.S)(tc, U.guild_id, U.id);
-  let tU = null != W,
+  let tU = null != Y,
     tG = e9 && !((e6 || e7) && tn) || t_ && (null == (s = G.submit) ? true : s.useDisabledStylesOnSubmit),
     tB = null;
   null != e5 ? tB = null == H ? true : H(e5, e8, ep.attachButton) : (!e9 || tt) && (tB = null == V ? true : V(tU, ep.attachButton));
@@ -567,13 +567,13 @@ function eG(e, t) {
       channel: U,
       type: G,
       activeCommand: e5,
-      pendingReply: W,
+      pendingReply: Y,
       pendingScheduledMessage: eK,
       selectedAutocompleteInputType: tw
     }),
     tH = 0 === f.trim().length,
-    tY = G.layout === ee.gy.INLINE,
-    tW = G.layout === ee.gy.FLUSH,
+    tW = G.layout === ee.gy.INLINE,
+    tY = G.layout === ee.gy.FLUSH,
     tK = (0, r.jsx)("div", {
       ref: eJ,
       className: ep.hiddenAppLauncherAnchor
@@ -618,11 +618,11 @@ function eG(e, t) {
           [ep.channelTextAreaDisabled]: tG,
           [ep.highlighted]: eh,
           [ep.textAreaMobileThemed]: d.tq,
-          [ep.inlineContainer]: tY,
-          [ep.flushContainer]: tW,
+          [ep.inlineContainer]: tW,
+          [ep.flushContainer]: tY,
           [ep.error]: null != F
         }),
-        children: [tY || tW ? null : (0, r.jsx)(ei.Z, {
+        children: [tW || tY ? null : (0, r.jsx)(ei.Z, {
           bars: tV
         }), (0, r.jsxs)("div", {
           ref: e0,
@@ -741,8 +741,8 @@ function eG(e, t) {
         onSelectSticker: tO,
         onSelectSound: tv,
         channel: U,
-        closeOnModalOuterClick: eY,
-        parentModalKey: eW,
+        closeOnModalOuterClick: eW,
+        parentModalKey: eY,
         position: "top",
         align: "right",
         positionLayerClassName: ep.expressionPickerPositionLayer

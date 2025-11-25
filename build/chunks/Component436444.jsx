@@ -142,7 +142,7 @@ let S = {
       H = F ? {
         onClick: Z
       } : {},
-      Y = M ? g.intl.formatToPlainString(g.t["1o48ki"], {
+      W = M ? g.intl.formatToPlainString(g.t["1o48ki"], {
         tierName: (0, f.nW)(C, {
           useLevels: false
         })
@@ -156,7 +156,7 @@ let S = {
           useLevels: false
         })
       }),
-      W = (0, r.jsxs)(V, I(O({
+      Y = (0, r.jsxs)(V, I(O({
         className: a()(b.progressBarMarker, {
           [b.progressBarMarkerUnlocked]: M,
           [b.progressBarMarkerLocked]: F,
@@ -185,7 +185,7 @@ let S = {
         })]
       }));
     return C !== h.Eu4.NONE ? (0, r.jsx)(s.u, {
-      text: Y,
-      children: W
-    }) : W
+      text: W,
+      children: Y
+    }) : Y
   }

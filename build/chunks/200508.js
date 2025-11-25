@@ -54,7 +54,7 @@ function Z(e) {
   for (; O + c + 5 <= e.byteLength;) {
     if (i.Z.USE_FILE && F(e, O)) t = e.getUint16(O + u), n = O + u;
     else if (i.Z.USE_FILE && V(e, O)) t = e.getUint16(O + u), r = O + u;
-    else if (i.Z.USE_JFIF && W(e, O)) t = e.getUint16(O + u), a = O + d;
+    else if (i.Z.USE_JFIF && Y(e, O)) t = e.getUint16(O + u), a = O + d;
     else if (i.Z.USE_EXIF && K(e, O)) t = e.getUint16(O + u), o = O + f;
     else if (i.Z.USE_XMP && z(e, O)) p || (p = []), t = e.getUint16(O + u), p.push(J(O, t));
     else if (i.Z.USE_XMP && X(e, O)) p || (p = []), t = e.getUint16(O + u), p.push($(O, t));
@@ -71,7 +71,7 @@ function Z(e) {
         chunkNumber: i,
         chunksTotal: a
       })
-    } else if (i.Z.USE_MPF && Y(e, O)) t = e.getUint16(O + u), E = O + g;
+    } else if (i.Z.USE_MPF && W(e, O)) t = e.getUint16(O + u), E = O + g;
     else if (et(e, O)) t = e.getUint16(O + u);
     else if (en(e, O)) {
       O++;
@@ -104,12 +104,12 @@ function H(e, t) {
   return e.getUint16(t) === P && (0, r.oH)(e, t + c, n) === E
 }
 
-function Y(e, t) {
+function W(e, t) {
   let n = O.length;
   return e.getUint16(t) === P && (0, r.oH)(e, t + c, n) === O
 }
 
-function W(e, t) {
+function Y(e, t) {
   let n = M.length;
   return e.getUint16(t) === N && (0, r.oH)(e, t + c, n) === M && 0 === e.getUint8(t + c + n)
 }

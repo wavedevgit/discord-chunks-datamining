@@ -138,14 +138,14 @@ let j = e => {
           subsection: x.cP
         })))
       },
-      Y = () => {
+      W = () => {
         null != l && (0, P.h)({
           groupListing: a,
           listing: n,
           subscription: t
         })
       },
-      W = async () => {
+      Y = async () => {
         try {
           A(true), await d.pl(t, Z), (0, D.h)()
         } finally {
@@ -193,9 +193,9 @@ let j = e => {
           isCancelled: K,
           isResubscribing: O,
           shouldHideRoleSubscriptionEntryPoints: F,
-          onCancelSubscriptionClick: Y,
+          onCancelSubscriptionClick: W,
           onChangePlanClick: H,
-          onResubscribeClick: W
+          onResubscribeClick: Y
         })]
       }) : null, en = () => K ? (0, r.jsx)(u.IGR, {
         text: M.intl.string(M.t["7uFZGt"])

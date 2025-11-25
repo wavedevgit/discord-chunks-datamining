@@ -203,18 +203,18 @@ function T(e) {
   }, H = e => {
     var t, n;
     null == (t = k.onBlur) || t.call(k, e), null == (n = B.setIsFocused) || n.call(B, false)
-  }, Y = e => {
+  }, W = e => {
     if (null != k.onClear) k.onClear(e);
     else {
       var t;
       null == (t = k.onChange) || t.call(k, "", u)
     }
-  }, W = i.useRef(null), K = k.readOnly;
+  }, Y = i.useRef(null), K = k.readOnly;
   null == K && false === a && (K = true);
   let z = null;
   ("boolean" == typeof x ? x && null != y && "" !== y && !K : x.show) ? z = (0, r.jsx)(I, {
     inputSize: w,
-    onClick: Y
+    onClick: W
   }): null != P && (z = (0, r.jsx)(v, {
     accessory: P,
     inputSize: w
@@ -232,7 +232,7 @@ function T(e) {
     errorMessage: U.hasError && null != (t = U.errorMessage) ? t : true,
     trailingAuxiliaryContent: X,
     children: (0, r.jsxs)(s.UPk, {
-      ref: W,
+      ref: Y,
       disabled: n,
       validation: U,
       fullWidth: L,
@@ -243,7 +243,7 @@ function T(e) {
         [p.hasTags]: Z
       }),
       children: [q, (0, r.jsx)(s.tEY, E(m({
-        ringTarget: W
+        ringTarget: Y
       }, c), {
         children: (0, r.jsx)(S, E(m({
           name: u,

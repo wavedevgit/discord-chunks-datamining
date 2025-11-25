@@ -70,10 +70,10 @@ function k(e) {
     embeddedActivity: j
   } = e, U = (0, p.bp)() === P.IlC.POPOUT, G = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), B = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), Z = false === (null == (t = null == B ? true : B.disabled) || t), F = (0, u.Z)([s])[0], V = (0, m.Z)(a), {
     parentAnalyticsLocation: H
-  } = (0, c.ZP)(), Y = e => {
+  } = (0, c.ZP)(), W = e => {
     (0, f.v)(H, f.d.CAMERA, e), l.Z.setVideoEnabled(e)
-  }, W = () => {
-    Z ? Y(true) : (0, g.Z)()
+  }, Y = () => {
+    Z ? W(true) : (0, g.Z)()
   }, K = () => {
     (0, f.v)(H, f.d.POPOUT, true), null != a && (0, R.Z)({
       onConfirm: async () => {
@@ -106,8 +106,8 @@ function k(e) {
           enabled: G,
           cameraUnavailable: !Z,
           hasPermission: V,
-          onChange: Y,
-          onCameraUnavailable: W
+          onChange: W,
+          onCameraUnavailable: Y
         }), null != a && (0, r.jsx)(E.Z, {
           children: (0, r.jsx)(d.Z, {
             channelId: a.id,

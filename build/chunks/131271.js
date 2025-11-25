@@ -2,7 +2,7 @@
 /** chunk id: 131271, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B6: () => Y,
+  B6: () => W,
   ql: () => $
 });
 var Chunk473749 = require("./473749.js"),
@@ -358,7 +358,7 @@ var m = {
     })
   }),
   H = "undefined" != typeof document,
-  Y = function(e) {
+  W = function(e) {
     function t(n) {
       var r;
       return (r = e.call(this, n) || this).helmetData = new Z(r.props.context, t.canUseDOM), r
@@ -369,15 +369,15 @@ var m = {
       }, this.props.children)
     }, t
   }(Chunk473749.Component);
-Y.canUseDOM = H, Y.propTypes = {
+W.canUseDOM = H, W.propTypes = {
   context: a().shape({
     helmet: a().shape()
   }),
   children: a().node.isRequired
-}, Y.defaultProps = {
+}, W.defaultProps = {
   context: {}
-}, Y.displayName = "HelmetProvider";
-var W = function(e, t) {
+}, W.displayName = "HelmetProvider";
+var Y = function(e, t) {
     var n, r = document.head || document.querySelector(m.HEAD),
       i = r.querySelectorAll(e + "[data-rh]"),
       a = [].slice.call(i),
@@ -427,12 +427,12 @@ var W = function(e, t) {
         true !== e && document.title !== e && (document.title = P(e)), K(m.TITLE, t)
       }(u, d);
     var f = {
-        baseTag: W(m.BASE, n),
-        linkTags: W(m.LINK, i),
-        metaTags: W(m.META, a),
-        noscriptTags: W(m.NOSCRIPT, o),
-        scriptTags: W(m.SCRIPT, l),
-        styleTags: W(m.STYLE, c)
+        baseTag: Y(m.BASE, n),
+        linkTags: Y(m.LINK, i),
+        metaTags: Y(m.META, a),
+        noscriptTags: Y(m.NOSCRIPT, o),
+        scriptTags: Y(m.SCRIPT, l),
+        styleTags: Y(m.STYLE, c)
       },
       _ = {},
       p = {};
@@ -480,7 +480,7 @@ var W = function(e, t) {
           titleAttributes: A("titleAttributes", e),
           prioritizeSeoTags: R(e, "prioritizeSeoTags")
         };
-      Y.canUseDOM ? (t = a, q && cancelAnimationFrame(q), t.defer ? q = requestAnimationFrame(function() {
+      W.canUseDOM ? (t = a, q && cancelAnimationFrame(q), t.defer ? q = requestAnimationFrame(function() {
         z(t, function() {
           q = null
         })

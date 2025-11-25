@@ -96,7 +96,7 @@ function H(e) {
   return "".concat((t - n) / 60, ":").concat(String(n).padStart(2, "0"))
 }
 
-function Y(e) {
+function W(e) {
   let t = [],
     {
       duration: n
@@ -111,7 +111,7 @@ function Y(e) {
   }
   return t
 }
-let W = e => {
+let Y = e => {
   let {
     current: t,
     duration: n
@@ -231,7 +231,7 @@ class K extends(r = Chunk473749.Component) {
       onClick: e => e.stopPropagation(),
       onDoubleClick: e => e.stopPropagation(),
       style: this.getAnimatedStyle(),
-      children: [this.renderPlayIcon(), Chunk167080 ? (0, Chunk54381.jsx)(W, {
+      children: [this.renderPlayIcon(), Chunk167080 ? (0, Chunk54381.jsx)(Y, {
         current: require,
         duration: r
       }) : null, (0, Chunk54381.jsx)(Chunk540026.Z, {
@@ -984,7 +984,7 @@ class J extends(i = Chunk473749.PureComponent) {
         buffers: []
       });
       this.setState({
-        buffers: Y(e)
+        buffers: W(e)
       })
     }, 400)), x(this, "handleEnded", e => {
       let {

@@ -1149,7 +1149,7 @@ class V extends Chunk495852.C {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          a.version = W.internalBinaryRead(e, e.uint32(), n, a.version);
+          a.version = Y.internalBinaryRead(e, e.uint32(), n, a.version);
           break;
         case 2:
           a.inclusive = e.bool();
@@ -1164,7 +1164,7 @@ class V extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.version && W.internalBinaryWrite(e.version, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), false !== e.inclusive && t.tag(2, r.TD.Varint).bool(e.inclusive);
+    e.version && Y.internalBinaryWrite(e.version, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), false !== e.inclusive && t.tag(2, r.TD.Varint).bool(e.inclusive);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -1173,7 +1173,7 @@ class V extends Chunk495852.C {
       no: 1,
       name: "version",
       kind: "message",
-      T: () => W
+      T: () => Y
     }, {
       no: 2,
       name: "inclusive",
@@ -1183,7 +1183,7 @@ class V extends Chunk495852.C {
   }
 }
 let H = new V;
-class Y extends Chunk495852.C {
+class W extends Chunk495852.C {
   create(e) {
     let t = {
       version: 0
@@ -1222,7 +1222,7 @@ class Y extends Chunk495852.C {
     }])
   }
 }
-let W = new Y;
+let Y = new W;
 class K extends Chunk495852.C {
   create(e) {
     let t = {

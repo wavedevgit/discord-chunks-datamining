@@ -86,10 +86,10 @@ function V(e, t) {
 function H(e) {
   null != F[e] && (F[e] = new Set)
 }
-let Y = (0, Chunk575140.r4)();
+let W = (0, Chunk575140.r4)();
 
-function W() {
-  Y = (0, Chunk575140.r4)()
+function Y() {
+  W = (0, Chunk575140.r4)()
 }
 
 function K(e, t) {
@@ -182,7 +182,7 @@ function ee() {
 }
 
 function et(e) {
-  if (Y.allDone) {
+  if (W.allDone) {
     if (!D.has(e)) return void o.Z.updateOverlayState(e, f.mM.WAITING_FOR_SUCCESSFUL_SHOW, "maybeTrackSuccessfullyShown");
     o.Z.successfullyShown(e)
   }
@@ -199,11 +199,11 @@ function er(e) {
   let {
     initialized: t
   } = e;
-  if (Y = N(A({}, Y), {
+  if (W = N(A({}, W), {
       windowHandleSentToNative: t
     }), t) {
     let e = null != M ? M : d.UNSET_PID;
-    Y.reactInitializationStarted ? o.Z.updateOverlayState(e, f.mM.WAITING_FOR_SUCCESSFUL_SHOW, "handleOverlayV3WindowHandleInitialized") : o.Z.updateOverlayState(e, f.mM.WAITING_FOR_REACT_INITIALIZATION, "handleOverlayV3WindowHandleInitialized"), (0, p.bs)(e, "window_handle_initialized")
+    W.reactInitializationStarted ? o.Z.updateOverlayState(e, f.mM.WAITING_FOR_SUCCESSFUL_SHOW, "handleOverlayV3WindowHandleInitialized") : o.Z.updateOverlayState(e, f.mM.WAITING_FOR_REACT_INITIALIZATION, "handleOverlayV3WindowHandleInitialized"), (0, p.bs)(e, "window_handle_initialized")
   }
 }
 async function ei() {
@@ -214,14 +214,14 @@ async function ea(e) {
 }
 
 function eo() {
-  W(), G = null
+  Y(), G = null
 }
 
 function es(e) {
   let {
     createWindowTriggeringPID: t
   } = e;
-  Y = N(A({}, Y), {
+  W = N(A({}, W), {
     popoutOpened: true
   }), Q(t), U = t, M = t, (0, d.setPID)(t)
 }
@@ -240,16 +240,16 @@ function ec(e) {
     error: n,
     nativeWindowHandle: r
   } = e;
-  o.Z.updateOverlayState(t, f.mM.OVERLAY_CRASHED_DISABLED, "handleOverlayWindowCreationFailure"), Y = N(A({}, Y), {
+  o.Z.updateOverlayState(t, f.mM.OVERLAY_CRASHED_DISABLED, "handleOverlayWindowCreationFailure"), W = N(A({}, W), {
     errorMessage: "Error in _createOutOfProcessOverlayHostWindow: " + n
   }), (0, p.bs)(t, "renderer_window_mounting_failed", {
     error: n,
-    popoutInitializationStages: Y
+    popoutInitializationStages: W
   })
 }
 
 function eu() {
-  ee(), null != U && H(U), U = null, M = null, (0, Chunk145597.setPID)(Chunk145597.UNSET_PID), W()
+  ee(), null != U && H(U), U = null, M = null, (0, Chunk145597.setPID)(Chunk145597.UNSET_PID), Y()
 }
 
 function ed(e) {
@@ -291,13 +291,13 @@ function ep(e) {
 
 function eh() {
   var e;
-  Y = N(A({}, Y), {
+  W = N(A({}, W), {
     showInactiveCalled: true
   }), null == w || null == (e = w.onNativePopoutShowInactiveSuccess) || module.call(w)
 }
 
 function em() {
-  Y = N(A({}, Y), {
+  W = N(A({}, W), {
     allDone: true
   }), P.forEach(e => {
     et(e)
@@ -308,7 +308,7 @@ function eg(e) {
   let {
     update: t
   } = e;
-  Y = A({}, Y, t)
+  W = A({}, W, t)
 }
 
 function eE(e) {
@@ -382,10 +382,10 @@ class eI extends(r = Chunk442837.ZP.Store) {
     return null == L ? null : null != (e = Chunk594190.ZP.getGameOrTransformedSubgameForPID(L)) ? module : null
   }
   getPopoutInitializationStages() {
-    return Y
+    return W
   }
   isWindowHandleInitialized() {
-    return Y.windowHandleSentToNative
+    return W.windowHandleSentToNative
   }
   isReady(e) {
     return !!P.has(e) && B[e] === f.mM.OVERLAY_RENDERING

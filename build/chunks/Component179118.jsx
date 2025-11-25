@@ -52,13 +52,13 @@ function k(e) {
     isSendingMessage: y
   } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), k = _ || null != l && null != p, U = (null == a ? true : a.productLine) === D.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
-  } = (0, P.wD)(), Z = null == G ? true : G.giftPurchaseConfirmation, F = (0, b.tK)(null == B ? true : B.skuId), V = (0, b.a5)(s) && null != F && null != Z, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
+  } = (0, P.wD)(), Z = null == G ? true : G.giftPurchaseConfirmation, F = (0, b.tK)(null == B ? true : B.skuId), V = (0, b.a5)(s) && null != F && null != Z, H = () => null != s ? s.skuId : null != a ? a.id : null, W = () => {
     let e;
     return null != g ? L.intl.string(L.t.qB8aya) : null == s ? null : (e = s.interval === w.rV.MONTH ? k ? V ? Z.monthGiftText : L.t["4ZJ+7Z"] : L.t["P+z55d"] : k ? V ? Z.yearGiftText : L.t.p0pZXP : L.t.bXqk3o, L.intl.format(e, {
       skuName: (0, N.aq)(s.id),
       intervalCount: s.intervalCount
     }))
-  }, W = () => null != p || _ && null == g ? L.intl.string(L.t.zOmK9N) : null != g ? L.intl.string(L.t.d1lrmU) : L.intl.string(L.t["/s1xR7"]), K = (e, t) => {
+  }, Y = () => null != p || _ && null == g ? L.intl.string(L.t.zOmK9N) : null != g ? L.intl.string(L.t.d1lrmU) : L.intl.string(L.t["/s1xR7"]), K = (e, t) => {
     null != a && (0, C.dM)(new v.Z({
       code: t,
       maxUses: 1
@@ -101,7 +101,7 @@ function k(e) {
   }, q = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: x.blurb,
-      children: Y()
+      children: W()
     }), null == g && (0, r.jsx)(j, {
       giftCode: t,
       onClose: u
@@ -126,7 +126,7 @@ function k(e) {
       })]
     }), (0, r.jsx)("div", {
       className: x.giftSentMessage,
-      children: Y()
+      children: W()
     })]
   });
   return y ? (0, r.jsxs)("div", {
@@ -154,7 +154,7 @@ function k(e) {
         [x.header]: null == l && !U,
         [x.headerCustomGifting]: null != l && !U
       }),
-      children: W()
+      children: Y()
     }), _ && null != p && null == g || k ? X() : q()]
   })
 }

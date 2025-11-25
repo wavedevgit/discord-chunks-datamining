@@ -398,7 +398,7 @@ function F(e, t, n, r, a) {
     case "emoji":
     case "customEmoji": {
       let i = t.substring(r);
-      if (i.startsWith(l[0]) || (r = q(e, t, r, t.length), i = t.substring(r)), i.startsWith(l[0])) return W({
+      if (i.startsWith(l[0]) || (r = q(e, t, r, t.length), i = t.substring(r)), i.startsWith(l[0])) return Y({
         result: e,
         sourceText: t,
         text: l[0],
@@ -409,7 +409,7 @@ function F(e, t, n, r, a) {
       throw Error("Slate: Unable to find emoji: ".concat(l[0], " in ").concat(t, " at ").concat(r))
     }
     case "soundboard":
-      return W({
+      return Y({
         result: e,
         sourceText: t,
         text: l[0],
@@ -430,7 +430,7 @@ function F(e, t, n, r, a) {
         text: a,
         id: o
       } = n;
-      if (null != a) return i()(a === l[0], "Slate: text mentions must exactly match the regex match"), W({
+      if (null != a) return i()(a === l[0], "Slate: text mentions must exactly match the regex match"), Y({
         result: e,
         sourceText: t,
         text: a,
@@ -440,7 +440,7 @@ function F(e, t, n, r, a) {
           text: a
         }
       });
-      return W({
+      return Y({
         result: e,
         sourceText: t,
         text: l[0],
@@ -455,7 +455,7 @@ function F(e, t, n, r, a) {
       let {
         applicationId: i
       } = n;
-      return W({
+      return Y({
         result: e,
         sourceText: t,
         text: l[0],
@@ -470,7 +470,7 @@ function F(e, t, n, r, a) {
       let {
         id: c, itemId: u
       } = n;
-      return W({
+      return Y({
         result: e,
         sourceText: t,
         text: l[0],
@@ -489,7 +489,7 @@ function F(e, t, n, r, a) {
           location: "c70cbb_1"
         }, {
           autoTrackExposure: false
-        }).enabled || d) return W({
+        }).enabled || d) return Y({
         result: e,
         sourceText: t,
         text: l[0],
@@ -501,7 +501,7 @@ function F(e, t, n, r, a) {
     case "timestampMentionInput":
       if (m.Z.getConfig({
           location: "flattenMarkdown-input"
-        }).enabled) return W({
+        }).enabled) return Y({
         result: e,
         sourceText: t,
         text: l[0],
@@ -530,7 +530,7 @@ function F(e, t, n, r, a) {
         before: n,
         after: i
       } = V(t, s, r, l);
-      return r = Y(e, t, n, r, "syntaxBefore"), a.push(s), r = H(e, t, null != o ? o : "", r, a), a.pop(), r = Y(e, t, i, r, "syntaxAfter"), K(t, r)
+      return r = W(e, t, n, r, "syntaxBefore"), a.push(s), r = H(e, t, null != o ? o : "", r, a), a.pop(), r = W(e, t, i, r, "syntaxAfter"), K(t, r)
     }
     default:
       throw Error("Slate: Unknown rule type: ".concat(s))
@@ -556,7 +556,7 @@ function V(e, t, n, r) {
 }
 
 function H(e, t, n, r, i) {
-  return "string" == typeof n ? r = W({
+  return "string" == typeof n ? r = Y({
     result: e,
     sourceText: t,
     text: n,
@@ -568,7 +568,7 @@ function H(e, t, n, r, i) {
   })), K(t, r)
 }
 
-function Y(e, t, n, r, i) {
+function W(e, t, n, r, i) {
   if (n.length > 0) {
     let a = t.indexOf(n, r);
     if (false === a) return z('Slate: Unable to find syntax characters "'.concat(n, '" at position ').concat(r), n, r);
@@ -583,7 +583,7 @@ function Y(e, t, n, r, i) {
   return r
 }
 
-function W(e) {
+function Y(e) {
   let {
     result: t,
     sourceText: n,
@@ -619,7 +619,7 @@ function z(e, t, n) {
 
 function q(e, t, n, r) {
   for (; n < r;)
-    if (S.has(t[n])) n = Y(e, t, t[n], n, "syntaxBefore"), n = K(t, n);
+    if (S.has(t[n])) n = W(e, t, t[n], n, "syntaxBefore"), n = K(t, n);
     else break;
   return n
 }

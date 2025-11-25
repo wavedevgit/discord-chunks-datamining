@@ -165,10 +165,10 @@ module.exports = function(e) {
       scope: "regexp",
       variants: [V("###"), V("##"), V("#"), F]
     },
-    Y = {
+    W = {
       match: r(/`/, y, /`/)
     },
-    W = [Y, {
+    Y = [W, {
       className: "variable",
       match: /\$\d+/
     }, {
@@ -230,7 +230,7 @@ module.exports = function(e) {
         match: r(y, /\s*:/),
         keywords: "_|0",
         relevance: 0
-      }, ...h, H, ...N, ...R, ...D, x, B, ...W, ...K, z]
+      }, ...h, H, ...N, ...R, ...D, x, B, ...Y, ...K, z]
     },
     Q = {
       begin: /</,
@@ -258,7 +258,7 @@ module.exports = function(e) {
       illegal: /["']/
     },
     $ = {
-      match: [/(func|macro)/, /\s+/, a(Y.match, y, g)],
+      match: [/(func|macro)/, /\s+/, a(W.match, y, g)],
       className: {
         1: "keyword",
         3: "title.function"
@@ -327,7 +327,7 @@ module.exports = function(e) {
   for (let e of B.variants) {
     let t = e.contains.find(e => "interpol" === e.label);
     t.keywords = C;
-    let n = [...N, ...R, ...D, x, B, ...W];
+    let n = [...N, ...R, ...D, x, B, ...Y];
     t.contains = [...n, {
       begin: /\(/,
       end: /\)/,
@@ -342,6 +342,6 @@ module.exports = function(e) {
       end: /$/,
       contains: [...h],
       relevance: 0
-    }, H, ...N, ...R, ...D, x, B, ...W, ...K, z, X]
+    }, H, ...N, ...R, ...D, x, B, ...Y, ...K, z, X]
   }
 }

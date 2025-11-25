@@ -71,7 +71,7 @@ function x(e) {
     H = () => t === C.hX.FRIEND_ANNIVERSARY ? D.intl.formatToPlainString(D.t.PpG27s, {
       numberOfYears: F
     }) : (0, I.Ou)(t),
-    Y = () => {
+    W = () => {
       switch (G) {
         case C.X2.VIEW_ALL:
           return D.intl.string(D.t.WkxniM);
@@ -81,7 +81,7 @@ function x(e) {
           return
       }
     },
-    W = () => t === C.hX.FRIEND_ANNIVERSARY ? D.intl.string(D.t.OrwKgi) : (0, I.Ou)(t),
+    Y = () => t === C.hX.FRIEND_ANNIVERSARY ? D.intl.string(D.t.OrwKgi) : (0, I.Ou)(t),
     K = e => {
       e.stopPropagation();
       let r = (0, A.F)(t);
@@ -97,7 +97,7 @@ function x(e) {
           object: N.qAy.BUTTON_CTA,
           objectType: N.AnalyticsObjectTypes.GIFT
         },
-        giftMessage: W()
+        giftMessage: Y()
       })
     },
     z = e => {
@@ -180,7 +180,7 @@ function x(e) {
             children: (0, r.jsx)(d.Text, {
               variant: "text-sm/medium",
               className: o()(w.buttonText, ea),
-              children: Y()
+              children: W()
             })
           })
         }), (0, r.jsx)(u.zx, {

@@ -132,7 +132,7 @@ function Z(e) {
     }, [y, m]),
     S = T.length > 0,
     A = f && !S && !v;
-  return d ? (0, r.jsx)(W, {}) : A ? (0, r.jsx)(I.A, {
+  return d ? (0, r.jsx)(Y, {}) : A ? (0, r.jsx)(I.A, {
     type: g.LG.SEARCH_EMPTY,
     searchQuery: n,
     textContent: a === g._b.TEXT ? R.intl.string(R.t.LSNOYf) : R.intl.string(R.t.Clu7Qh)
@@ -264,7 +264,7 @@ function H(e) {
           application: i,
           installOnDemand: o
         } = e;
-        return (0, r.jsx)(Y, {
+        return (0, r.jsx)(W, {
           context: t,
           application: i,
           location: d.Vh.APP_LAUNCHER_HOME_SEARCH,
@@ -302,7 +302,7 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     onClickAppCard: t
   } = (0, b.cG)(e);
@@ -314,7 +314,7 @@ function Y(e) {
   })
 }
 
-function W() {
+function Y() {
   return (0, Chunk54381.jsxs)("div", {
     children: [(0, Chunk54381.jsx)(Chunk41558.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["0hKkS+"])

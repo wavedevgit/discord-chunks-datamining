@@ -78,8 +78,8 @@ let k = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY),
   F = 5 * Chunk70956.Z.Millis.MINUTE,
   V = 5 * Chunk70956.Z.Millis.SECOND,
   H = 1.5 * Chunk70956.Z.Millis.SECOND,
-  Y = "Computer",
-  W = 5,
+  W = "Computer",
+  Y = 5,
   K = +Chunk70956.Z.Millis.MINUTE,
   z = 3 * Chunk70956.Z.Millis.SECOND,
   q = 128,
@@ -604,7 +604,7 @@ class eG extends(o = Chunk442837.ZP.Store) {
     for (let t in ea) {
       let n = ea[exports];
       if (!require.connected || null == eo[exports]) continue;
-      let r = eo[exports].find(e => !e.is_restricted && e.type === Y);
+      let r = eo[exports].find(e => !e.is_restricted && e.type === W);
       null != r && module.push({
         socket: require,
         device: r
@@ -652,7 +652,7 @@ class eG extends(o = Chunk442837.ZP.Store) {
       },
       startTime: f,
       context: _
-    } = r, p = a.slice(0, W);
+    } = r, p = a.slice(0, Y);
     a.length > 0 && (e = Chunk586902.map(e => {
       let {
         name: t

@@ -193,8 +193,8 @@ class I extends(r = Chunk473749.PureComponent) {
           })
         }, t)
       }) : null,
-      Y = null != P ? P(exports) : "".concat(F.toFixed(0), "%"),
-      W = null != (e = null == w ? true : w(exports)) ? module : true;
+      W = null != P ? P(exports) : "".concat(F.toFixed(0), "%"),
+      Y = null != (e = null == w ? true : w(exports)) ? module : true;
     return (0, Chunk54381.jsx)(Chunk793030.gNt, b(g({}, Z), {
       children: e => (0, i.jsx)(T, {
         active: n,
@@ -223,7 +223,7 @@ class I extends(r = Chunk473749.PureComponent) {
               "aria-describedby": null != B ? B : e.describedById,
               "aria-errormessage": e.errorMessageId,
               "aria-invalid": null != e.errorMessageId,
-              "aria-valuetext": W,
+              "aria-valuetext": Y,
               role: "slider",
               tabIndex: 0,
               onKeyDown: this.handleKeyDown,
@@ -255,7 +255,7 @@ class I extends(r = Chunk473749.PureComponent) {
                   "data-migration-pending": true,
                   color: _.aM.Colors.GREY,
                   hideOnClick: false,
-                  text: C || y ? null : Y,
+                  text: C || y ? null : W,
                   forceOpen: n || r && p.Z.keyboardModeEnabled,
                   children: e => (0, i.jsx)("div", b(g({}, e), {
                     className: s()(h.grabber, x),

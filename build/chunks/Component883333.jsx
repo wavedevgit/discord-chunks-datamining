@@ -201,7 +201,7 @@ let x = e => {
       questContentCTA: p.jZ.LEARN_MORE,
       sourceQuestContent: T
     })
-  }, H = (0, o.e7)([d.default], () => d.default.locale), Y = f && !M;
+  }, H = (0, o.e7)([d.default], () => d.default.locale), W = f && !M;
   return (0, r.jsx)("div", {
     className: N.root,
     children: (0, r.jsxs)("div", {
@@ -214,8 +214,8 @@ let x = e => {
       },
       "aria-hidden": !j,
       children: [(0, r.jsx)(s.u, {
-        text: Y ? C.intl.string(C.t["04MTGf"]) : null,
-        shouldShow: Y,
+        text: W ? C.intl.string(C.t["04MTGf"]) : null,
+        shouldShow: W,
         children: (0, r.jsxs)("div", {
           className: N.rewardTileWrapper,
           children: [f && (0, r.jsx)("div", {
@@ -279,7 +279,7 @@ let x = e => {
           containerSize: l,
           onClick: V,
           text: C.intl.string(C.t.LLLLPD)
-        }), !Y && (0, r.jsx)(w, {
+        }), !W && (0, r.jsx)(w, {
           quest: n,
           progressState: A,
           isCollectibleQuest: k,

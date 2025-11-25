@@ -2,7 +2,7 @@
 /** chunk id: 293273, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Y
+  Z: () => W
 }), require("./539854.js"), require("./388685.js"), require("./997841.js");
 var r, Chunk348327 = require("./348327.js"),
   a = require.n(Chunk348327),
@@ -204,7 +204,7 @@ class H extends(r = Chunk442837.ZP.Store) {
   }
 }
 D(H, "displayName", "LocalActivityStore");
-let Y = new H(Chunk570140.Z, {
+let W = new H(Chunk570140.Z, {
   ROBLOX_SUBGAME_UPDATE: j,
   ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: j,
   OVERLAY_INITIALIZE: Z,

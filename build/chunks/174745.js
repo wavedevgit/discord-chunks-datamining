@@ -114,22 +114,22 @@ module.exports = function(e) {
         F = f(F, p(P, Z, V, M))
       }
       var H = w || l,
-        Y = {
+        W = {
           className: F,
           "data-block": true,
           "data-editor": h,
           "data-offset-key": k,
           key: R
         };
-      true !== x && (Y = a({}, Y, {
+      true !== x && (W = a({}, W, {
         contentEditable: x,
         suppressContentEditableWarning: true
       }));
-      var W = u.createElement(B, Y, u.createElement(H, i({}, j, {
+      var Y = u.createElement(B, W, u.createElement(H, i({}, j, {
         key: R
       })));
       T.push({
-        block: W,
+        block: Y,
         wrapperTemplate: G,
         key: R,
         offsetKey: k

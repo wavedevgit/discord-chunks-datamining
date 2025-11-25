@@ -845,21 +845,21 @@
         return s(e, r = i(t, n))
       }
     },
-    Y = a(B),
-    W = function(e, t) {
-      return (t = t || {}).inline = false, Y(e, t)
+    W = a(B),
+    Y = function(e, t) {
+      return (t = t || {}).inline = false, W(e, t)
     },
     K = function(e, t) {
-      return (t = t || {}).inline = true, Y(e, t)
+      return (t = t || {}).inline = true, W(e, t)
     },
     z = function(e, t) {
       var n = C.test(e);
-      return (t = t || {}).inline = !n, Y(e, t)
+      return (t = t || {}).inline = !n, W(e, t)
     },
     q = H(B, "react"),
     X = H(B, "html"),
     Q = function(e, t) {
-      return q(W(e, t), t)
+      return q(Y(e, t), t)
     },
     J = function(e) {
       var t = {};
@@ -877,10 +877,10 @@
     parseBlock: y,
     markdownToReact: Q,
     markdownToHtml: function(e, t) {
-      return X(W(e, t), t)
+      return X(Y(e, t), t)
     },
     ReactMarkdown: J,
-    defaultBlockParse: W,
+    defaultBlockParse: Y,
     defaultInlineParse: K,
     defaultImplicitParse: z,
     defaultReactOutput: q,
@@ -891,7 +891,7 @@
     unescapeUrl: E,
     htmlTag: d,
     reactElement: u,
-    defaultRawParse: Y,
+    defaultRawParse: W,
     ruleOutput: Z,
     reactFor: F,
     htmlFor: V,

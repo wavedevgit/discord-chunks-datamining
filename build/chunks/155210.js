@@ -171,14 +171,14 @@ function O(e, t, n) {
         s && t.setSegment(e.type, a), true !== e.maxValue && (Number(i + "0") > e.maxValue || r.length >= String(e.maxValue).length) ? (O.current = "", s && R.focusNext()) : O.current = r
       }
     }
-  }, Y = () => {
+  }, W = () => {
     O.current = "", n.current && (0, l.G)(n.current, {
       containingElement: (0, c.r)(n.current)
     });
     let e = window.getSelection();
     null == e || e.collapse(n.current)
-  }, W = (0, m.useRef)("undefined" != typeof document ? document : null);
-  (0, u.z)(W, "selectionchange", () => {
+  }, Y = (0, m.useRef)("undefined" != typeof document ? document : null);
+  (0, u.z)(Y, "selectionchange", () => {
     var e;
     let t = window.getSelection();
     (null == t ? true : t.anchorNode) && (null == (e = n.current) ? true : e.contains(null == t ? true : t.anchorNode)) && t.collapse(n.current)
@@ -252,7 +252,7 @@ function O(e, t, n) {
       inputMode: t.isDisabled || "dayPeriod" === e.type || "era" === e.type || !X ? true : "numeric",
       tabIndex: t.isDisabled ? true : 0,
       onKeyDown: j,
-      onFocus: Y,
+      onFocus: W,
       style: $,
       onPointerDown(e) {
         e.stopPropagation()

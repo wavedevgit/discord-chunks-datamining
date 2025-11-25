@@ -69,7 +69,7 @@ let d = {
               })
             });
             if (t) return w = t, "break"
-          }, Y = V; Y > 0 && "break" !== H(Y); Y--);
+          }, W = V; W > 0 && "break" !== H(W); W--);
       t.placement !== w && (t.modifiersData[a]._skip = true, t.placement = w, t.reset = true)
     }
   },

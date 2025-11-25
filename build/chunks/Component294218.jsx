@@ -103,8 +103,8 @@ function x(e) {
     renderThreadAccessory: G,
     trackAnnouncementViews: B = false
   } = e, Z = w(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), F = i.type === A.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, V = i.isFirstMessageInForumPost(M), H = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
-    content: Y,
-    hasSpoilerEmbeds: W
+    content: W,
+    hasSpoilerEmbeds: Y
   } = (0, E.Z)(i, {
     hideSimpleEmbedContent: x,
     allowList: V || H,
@@ -133,8 +133,8 @@ function x(e) {
       author: X,
       roleIcon: J
     })),
-    childrenAccessories: e.hideAccessories ? true : (0, y.Q)(e, W),
-    childrenMessageContent: (0, O.Z)(e, Y),
+    childrenAccessories: e.hideAccessories ? true : (0, y.Q)(e, Y),
+    childrenMessageContent: (0, O.Z)(e, W),
     childrenSystemMessage: (0, I.Z)(D(R({}, e), {
       disableInteraction: F
     })),

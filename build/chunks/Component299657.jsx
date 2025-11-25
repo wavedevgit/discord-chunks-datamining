@@ -55,7 +55,7 @@ let j = function(e) {
     F = (0, D.N)(),
     V = (0, P.N)(),
     H = (0, g.V)(x.nS),
-    [Y, W] = i.useState(true),
+    [W, Y] = i.useState(true),
     K = i.useRef(0),
     z = (0, A.M5)(B, x.PremiumTypes.TIER_2),
     q = (0, R.Z)({
@@ -67,14 +67,14 @@ let j = function(e) {
   }, [X]), i.useEffect(() => {
     c.Z.wait(async () => {
       let e = Date.now();
-      await Promise.all([u.jg(), u.tZ(), (0, d.Y2)(null, null, M.JjL.DISCOVERY)]), K.current = Date.now() - e, W(false)
+      await Promise.all([u.jg(), u.tZ(), (0, d.Y2)(null, null, M.JjL.DISCOVERY)]), K.current = Date.now() - e, Y(false)
     })
   }, []), i.useEffect(() => {
-    Y || S.default.track(M.rMx.PREMIUM_MARKETING_PAGE_VIEWED, {
+    W || S.default.track(M.rMx.PREMIUM_MARKETING_PAGE_VIEWED, {
       location_stack: a,
       load_duration_ms: K.current
     })
-  }, [a, Y]), i.useEffect(() => {
+  }, [a, W]), i.useEffect(() => {
     n && (null != F || null != V) && (0, N.ab)(F, V)
   }, [n, F, V]);
   let Q = (0, s.e7)([O.Z], () => O.Z.enabled),

@@ -610,7 +610,7 @@ function V(e) {
     avatarTooltipAsset: L,
     avatarTooltipText: M,
     avatarTooltipTitle: k
-  } = e, B = n !== h.Skl.UNKNOWN ? n : null, V = (0, g.UC)(a), H = null != B ? Math.ceil((V.status * g.D6 - V.status) / 2) : 0, Y = V.size + H, W = (0, u.vj)(B, s), K = i.useId();
+  } = e, B = n !== h.Skl.UNKNOWN ? n : null, V = (0, g.UC)(a), H = null != B ? Math.ceil((V.status * g.D6 - V.status) / 2) : 0, W = V.size + H, Y = (0, u.vj)(B, s), K = i.useId();
   return (0, r.jsx)(Z, I(O({}, e), {
     ariaLabel: C,
     ariaHidden: A,
@@ -619,9 +619,9 @@ function V(e) {
     typingOffset: H,
     children: (0, r.jsxs)("svg", {
       ref: R,
-      width: Y,
-      height: Y,
-      viewBox: "0 0 ".concat(Y, " ").concat(Y),
+      width: W,
+      height: W,
+      viewBox: "0 0 ".concat(W, " ").concat(W),
       className: o()(b.mask, b.svg),
       "aria-hidden": true,
       children: [null != L && j(K, V, {
@@ -650,7 +650,7 @@ function V(e) {
         delay: T,
         children: e => (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("rect", I(O({}, e, w(V, B, l, f)), {
-            fill: W,
+            fill: Y,
             mask: "url(#".concat((0, u.rs)(B, l, f), ")"),
             className: b.pointerEvents
           })), f ? (0, r.jsx)(c.b, {
@@ -673,7 +673,7 @@ function H(e, t, n) {
   return 5 - (n && !r ? 0 : .5 * e) + 1.5 * t
 }
 
-function Y(e, t, n) {
+function W(e, t, n) {
   let r = e.status * t,
     i = null != n ? (r * g.D6 - r) / 2 : 0,
     a = (e.status - r) / 2,
@@ -684,7 +684,7 @@ function Y(e, t, n) {
   return "translate(".concat(l, ", ").concat(c, ")")
 }
 
-function W(e) {
+function Y(e) {
   let {
     fromIsMobile: t = true,
     fromStatus: n,
@@ -705,7 +705,7 @@ function W(e) {
     "aria-label": M,
     imageClassName: j,
     pulseStatusIcon: V,
-    CutoutIcon: W,
+    CutoutIcon: Y,
     avatarTooltipAsset: K,
     avatarTooltipText: z,
     avatarTooltipTitle: q
@@ -801,7 +801,7 @@ function W(e) {
         spacing: H(eu.status, eu.stroke, f, _),
         delay: D,
         children: e => (0, r.jsxs)(s.animated.g, {
-          transform: eh.scale.to(e => "scale(".concat(e, ") ").concat(Y(eu, e, S))),
+          transform: eh.scale.to(e => "scale(".concat(e, ") ").concat(W(eu, e, S))),
           children: [(0, r.jsxs)("svg", {
             width: ed,
             height: ef,
@@ -826,7 +826,7 @@ function W(e) {
             className: b.pointerEvents
           }, e))]
         })
-      }), null != W && U(eu, W), null != q && G(eu, f, _, {
+      }), null != Y && U(eu, Y), null != q && G(eu, f, _, {
         avatarTooltipTitle: q,
         avatarTooltipText: z
       }, K)]
@@ -849,7 +849,7 @@ let z = Chunk473749.memo(function(e) {
   } = a, l = i.useRef(n), c = i.useRef(o), d = (0, u.vj)(n, t), f = i.useRef(d), _ = i.useRef(false), p = _.current || K(s, n, l.current, o, c.current);
   return i.useLayoutEffect(() => {
     _.current = p, l.current = n, c.current = o, f.current = d
-  }, [n, o, d, p]), null != n && null != l.current && p ? (0, r.jsx)(W, I(O({}, a), {
+  }, [n, o, d, p]), null != n && null != l.current && p ? (0, r.jsx)(Y, I(O({}, a), {
     status: n,
     statusColor: d,
     fromStatus: l.current,

@@ -240,12 +240,12 @@ function Z(e) {
       application_id: i.clientId
     }), r(i), true)
   }
-  let Y = (0, O.Ao)(Z);
-  if (null != Z && H && null != Y) return e => {
+  let W = (0, O.Ao)(Z);
+  if (null != Z && H && null != W) return e => {
     null == e || e.preventDefault();
     let t = D.Z.getGuildId();
-    null != Y.guildId && "" !== Y.guildId && Y.guildId !== t && (0, v.Z)(k.Z5c.CHANNEL(Y.guildId));
-    let n = b.ZP.getGuildScheduledEvent(Y.guildEventId);
+    null != W.guildId && "" !== W.guildId && W.guildId !== t && (0, v.Z)(k.Z5c.CHANNEL(W.guildId));
+    let n = b.ZP.getGuildScheduledEvent(W.guildEventId);
     return null != n && (0, E.bO)({
       eventId: n.id
     }), true

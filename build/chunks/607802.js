@@ -24,7 +24,7 @@ require.d(exports, {
   g9: () => U,
   i3: () => Z,
   jW: () => x,
-  kG: () => W,
+  kG: () => Y,
   nI: () => j,
   nl: () => $,
   qc: () => G,
@@ -370,14 +370,14 @@ function V(e) {
   return null == e ? "" : e.map(e => e.getFullMatch()).join("")
 }
 let H = new Chunk349033.ZP,
-  Y = new Chunk349033.ZP;
+  W = new Chunk349033.ZP;
 
-function W(e) {
+function Y(e) {
   return H.tokenize(e)
 }
 
 function K() {
-  H.clearCache(), Y.clearCache()
+  H.clearCache(), W.clearCache()
 }
 
 function z(e) {
@@ -392,9 +392,9 @@ function q(e, t) {
 function X() {
   (0, Chunk532428.WK)(), H.reset(), i()(Chunk532428.ZP).forOwn((e, t) => H.addRule(I({
     type: t
-  }, e))), Y.reset();
+  }, e))), W.reset();
   let e = (0, Chunk532428.mh)();
-  i()(module).forOwn((e, t) => Y.addRule(I({
+  i()(module).forOwn((e, t) => W.addRule(I({
     type: t
   }, e))), Chunk748610.Z.markSearchTokensRefreshed()
 }
@@ -439,7 +439,7 @@ function ee() {
 }
 
 function et(e) {
-  let t = Y.tokenize(e),
+  let t = W.tokenize(e),
     n = [];
   t.forEach(e => {
     e.type !== y.dCx.FILTER_IN && e.type !== y.dCx.ANSWER_IN && n.push(e)

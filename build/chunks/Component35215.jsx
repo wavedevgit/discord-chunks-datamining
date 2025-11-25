@@ -2,7 +2,7 @@
 /** chunk id: 35215, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => W
+  Z: () => Y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -289,7 +289,7 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     targetElementRef: t,
     applications: n,
@@ -341,12 +341,12 @@ function Y(e) {
     children: e => a(e, m)
   })
 }
-let W = function(e) {
+let Y = function(e) {
   return null == e.quest || e.applications.length <= 1 ? null : (0, r.jsx)(I.A, {
     questOrQuests: e.quest,
     questContent: O.jn.SPONSORED_QUEST_SHEET,
     sourceQuestContent: e.sourceQuestContent,
-    children: t => (0, r.jsx)(Y, w(P({}, e), {
+    children: t => (0, r.jsx)(W, w(P({}, e), {
       impressionRef: t
     }))
   })

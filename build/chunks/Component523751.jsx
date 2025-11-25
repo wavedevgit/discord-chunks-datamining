@@ -236,12 +236,12 @@ function M(e) {
     backgroundLightColor: F,
     foregroundDarkColor: V,
     foregroundLightColor: H,
-    premiumBackgroundColor: Y,
-    premiumForegroundColor: W,
+    premiumBackgroundColor: W,
+    premiumForegroundColor: Y,
     sizeAdjustment: K
   } = w[j];
   if (null == B) return null;
-  k.premium && (t = W, n = Y);
+  k.premium && (t = Y, n = W);
   let z = (0, c.wj)(M) ? V : H,
     q = (0, c.wj)(M) ? Z : F;
   t = null != t ? t : z, n = null != n ? n : q;

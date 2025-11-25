@@ -70,13 +70,13 @@ let Z = {
   F = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
   V = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && v.Z.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
   H = (0, Chunk251625.oH)((e, t) => e.filter(e => a()(t.toLowerCase(), e.application.name.toLowerCase()))),
-  Y = (0, Chunk251625.oH)((e, t, n, r) => {
+  W = (0, Chunk251625.oH)((e, t, n, r) => {
     let i = Z[t];
     if (null == i) return e;
     let a = [...e].sort(i);
     return n === w.sHY.DESCENDING ? a.reverse() : a
   }),
-  W = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && e.libraryApplication.isHidden()));
+  Y = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && e.libraryApplication.isHidden()));
 
 function K(e, t) {
   let n = y.Z.getCurrentUserStatisticsForApplication(e.id);
@@ -179,10 +179,10 @@ class J extends(r = Chunk442837.ZP.Store) {
     return H(this.libraryApplicationViewItems, j)
   }
   get sortedFilteredLibraryApplicationViewItems() {
-    return Y(this.filteredLibraryApplicationViewItems, Chunk799777.Z.sortKey, Chunk799777.Z.sortDirection, Chunk706454.default.locale)
+    return W(this.filteredLibraryApplicationViewItems, Chunk799777.Z.sortKey, Chunk799777.Z.sortDirection, Chunk706454.default.locale)
   }
   get hiddenLibraryApplicationViewItems() {
-    return W(k)
+    return Y(k)
   }
   get hasFetchedApplications() {
     return U

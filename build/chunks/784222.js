@@ -92,7 +92,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
       emojiSpriteSize: x,
       shouldShowSoundmojiInEmojiPicker: k,
       showOnlyUnicode: U
-    } = e, G = (0, s.e7)([c.ZP], () => c.ZP.categories), B = r.useMemo(() => U ? d.ZP.getCategories() : G, [G, U]), Z = (0, s.e7)([E.Z], () => E.Z.getGuild(null == t ? true : t.getGuildId()), [t]), F = null == t ? null : t.getGuildId(), V = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(F), [F]), H = (0, A.NJ)(F), Y = (0, A.wC)(F), W = (0, A.q5)(F), {
+    } = e, G = (0, s.e7)([c.ZP], () => c.ZP.categories), B = r.useMemo(() => U ? d.ZP.getCategories() : G, [G, U]), Z = (0, s.e7)([E.Z], () => E.Z.getGuild(null == t ? true : t.getGuildId()), [t]), F = null == t ? null : t.getGuildId(), V = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(F), [F]), H = (0, A.NJ)(F), W = (0, A.wC)(F), Y = (0, A.q5)(F), {
       topEmojis: K,
       newlyAddedEmojis: z
     } = (0, N.Z)(F, l), q = (0, s.Wu)([y.ZP], () => y.ZP.getFlattenedGuildIds(), []), X = (0, s.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds), {
@@ -287,7 +287,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
               })
             }
           } else if (e === R.UX.RECENT) {
-            let n = (l === P.Hz.REACTION ? W : Y).filter(e => !v.ZP.isEmojiFiltered({
+            let n = (l === P.Hz.REACTION ? Y : W).filter(e => !v.ZP.isEmojiFiltered({
               emoji: e,
               channel: t,
               intention: l
@@ -330,7 +330,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
         rowCountBySection: e,
         sectionDescriptors: r
       }
-    }, [V, _, x, w, f, n, ei, ea, er, i, Q, X, t, l, K, z, $, B, Z, q, W, Y, H, ee, eo, k])
+    }, [V, _, x, w, f, n, ei, ea, er, i, Q, X, t, l, K, z, $, B, Z, q, Y, W, H, ee, eo, k])
   };
 var G = function(e) {
   return e[e.PREMIUM = 0] = "PREMIUM", e[e.ROLE_SUBSCRIPTION = 1] = "ROLE_SUBSCRIPTION", e

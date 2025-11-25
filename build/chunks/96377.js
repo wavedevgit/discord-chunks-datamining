@@ -70,8 +70,8 @@ let p = {
           F = "y" === D ? r.I : r.F2,
           V = "y" === D ? "height" : "width",
           H = L[D],
-          Y = H + C[Z],
-          W = H - C[F],
+          W = H + C[Z],
+          Y = H - C[F],
           K = T ? -M[V] / 2 : 0,
           z = R === r.BL ? x[V] : M[V],
           q = R === r.BL ? -M[V] : -x[V],
@@ -91,7 +91,7 @@ let p = {
           eo = null != (B = null == U ? true : U[D]) ? B : 0,
           es = H + en - eo - ea,
           el = H + er - eo,
-          ec = (0, s.u)(T ? (0, _.VV)(Y, es) : Y, H, T ? (0, _.Fp)(W, el) : W);
+          ec = (0, s.u)(T ? (0, _.VV)(W, es) : W, H, T ? (0, _.Fp)(Y, el) : Y);
         L[D] = ec, G[D] = ec - H
       }
       if (E) {

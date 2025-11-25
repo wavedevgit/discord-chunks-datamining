@@ -45,8 +45,8 @@ let C = 10,
   F = Q(window.GLOBAL_ENV.INVITE_HOST),
   V = Q(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
   H = Q(null != (o = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? o : "//canary.".concat(Chunk981631.$R1)),
-  Y = Q("//canary.".concat(Chunk981631.$R1)),
-  W = Q("//ptb.".concat(Chunk981631.$R1)),
+  W = Q("//canary.".concat(Chunk981631.$R1)),
+  Y = Q("//ptb.".concat(Chunk981631.$R1)),
   K = Q("discordapp.com"),
   z = Q("discord.com"),
   q = [Chunk226951.Z.escape(null != (s = F.host) ? s : ""), Chunk226951.Z.escape(null != (l = V.host) ? l : ""), Chunk226951.Z.escape(null != (c = H.host) ? c : ""), Chunk226951.Z.escape(null != (u = K.host) ? u : ""), Chunk226951.Z.escape(null != (d = z.host) ? d : "")].filter(Boolean),
@@ -91,7 +91,7 @@ function en(e, t) {
 
 function er(e) {
   var t, n, r, i;
-  return null != (i = null != (r = null != (n = null != (t = en(H, e)) ? t : en(Y, e)) ? n : en(W, e)) ? r : en(K, e)) ? i : en(z, e)
+  return null != (i = null != (r = null != (n = null != (t = en(H, e)) ? t : en(W, e)) ? n : en(Y, e)) ? r : en(K, e)) ? i : en(z, e)
 }
 
 function ei(e) {
@@ -115,7 +115,7 @@ function ea(e) {
   };
   let o = en(F, a),
     s = en(V, a),
-    l = null != (i = null != (r = null != (n = null != (t = en(H, a)) ? t : en(Y, a)) ? n : en(W, a)) ? r : en(K, a)) ? i : en(z, a);
+    l = null != (i = null != (r = null != (n = null != (t = en(H, a)) ? t : en(W, a)) ? n : en(Y, a)) ? r : en(K, a)) ? i : en(z, a);
   return {
     url: a,
     inviteHostRemainingPath: o,
@@ -129,7 +129,7 @@ function eo(e) {
     let r = ec(e);
     if (null == r) returnfalse;
     if (et(F, r)) returntrue;
-    if ([H, Y, W, K, z].some(e => et(e, r))) {
+    if ([H, W, Y, K, z].some(e => et(e, r))) {
       var t, n;
       return null != (n = null == (t = r.pathname) ? true : t.toUpperCase().includes(S.g.INVITE)) && n
     }

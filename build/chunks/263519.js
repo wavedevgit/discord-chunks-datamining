@@ -45,7 +45,7 @@ function y(e) {
   null == i && (F = true);
   let V = (0, f.Z)(),
     H = null != U && (0, E.Jf)(U, T),
-    Y = r.useMemo(() => {
+    W = r.useMemo(() => {
       if (!F || null == M || null == O) return u.rf.LOADING;
       if (!x) return u.rf.UNAVAILABLE;
       if (!D) {
@@ -72,7 +72,7 @@ function y(e) {
         null == v || v()
       })
     }, [M, O, x, A, T, P, i, I, k, y, v]),
-    subscriptionPurchaseButtonState: Y,
+    subscriptionPurchaseButtonState: W,
     isGuildSubscribed: w
   }
 }

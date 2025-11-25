@@ -211,14 +211,14 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     channelId: t
   } = e;
   S = t
 }
 
-function W(e) {
+function Y(e) {
   let {
     channelId: t
   } = e;
@@ -547,8 +547,8 @@ let ec = new el(Chunk570140.Z, {
     CLIPS_DELETE_CLIP: J,
     CLIPS_UPDATE_METADATA: j,
     RTC_CONNECTION_FLAGS: et,
-    CLIPS_SHOW_CALL_WARNING: Y,
-    VOICE_CHANNEL_SELECT: W,
+    CLIPS_SHOW_CALL_WARNING: W,
+    VOICE_CHANNEL_SELECT: Y,
     CLIPS_CLASSIFY_HARDWARE: k,
     CLIPS_INIT: K,
     CLIPS_INIT_FAILURE: z,

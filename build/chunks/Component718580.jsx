@@ -170,7 +170,7 @@ function N(e) {
   }, null == P ? "animate-never" : "respect-motion-settings"), F = (0, c.Z)(D), {
     width: V,
     centered: H = true
-  } = I, Y = u.tq && !I.shouldUseMediaQueriesForSizing ? "100%" : B.width.to(e => "string" == typeof e ? e : Math.round(e)), W = u.tq && !I.shouldUseMediaQueriesForSizing ? "100%" : B.height.to(e => Math.round(e)), K = u.tq ? {} : H ? {
+  } = I, W = u.tq && !I.shouldUseMediaQueriesForSizing ? "100%" : B.width.to(e => "string" == typeof e ? e : Math.round(e)), Y = u.tq && !I.shouldUseMediaQueriesForSizing ? "100%" : B.height.to(e => Math.round(e)), K = u.tq ? {} : H ? {
     transform: "translate3d(0, -50%, 0) scale(1.0, 1.0)",
     top: "50%"
   } : {
@@ -183,8 +183,8 @@ function N(e) {
   return (0, r.jsx)(s.animated.div, {
     style: b({
       position: "relative",
-      minWidth: Y,
-      minHeight: W
+      minWidth: W,
+      minHeight: Y
     }, z),
     className: o()({
       [g.outerAnimatedDivDynamicSizing]: I.shouldUseMediaQueriesForSizing

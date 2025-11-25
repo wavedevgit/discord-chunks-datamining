@@ -69,8 +69,8 @@ function T(e) {
     F = null != G && G.isGuildVocal(),
     V = null != G && G.isGuildStageVoice(),
     H = (0, o.yE)(null != (t = D.flags) ? t : 0, a.$.IS_GUEST_INVITE),
-    Y = null != (v = null == P ? true : P.features.has(b.GuildFeatures.HUB)) && v,
-    W = null == P ? true : P.id,
+    W = null != (v = null == P ? true : P.features.has(b.GuildFeatures.HUB)) && v,
+    Y = null == P ? true : P.id,
     {
       analyticsLocations: K
     } = (0, d.ZP)(u.Z.INVITE_EMBED),
@@ -78,8 +78,8 @@ function T(e) {
     X = i.useCallback(() => q(false), []),
     Q = i.useRef(null),
     J = i.useCallback(() => {
-      q(true), (0, c.CB)(W, "show profile", K)
-    }, [W, K]),
+      q(true), (0, c.CB)(Y, "show profile", K)
+    }, [Y, K]),
     $ = i.useCallback(() => {
       let e = "noop";
       B ? (N(), e = "transition") : (R(), e = "accept"), (0, c.r$)({
@@ -97,7 +97,7 @@ function T(e) {
     isVoiceChannel: F,
     isOwnInvite: x,
     isGuest: H,
-    isHubGuild: Y,
+    isHubGuild: W,
     isStage: V,
     isStream: false
   });

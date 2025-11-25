@@ -73,7 +73,7 @@ var r, i, a, Chunk848120 = require("./848120.js"),
     if (c(e) && (!b || g(R, e))) return e;
     throw new w(_(e) + " is not a typed array constructor")
   },
-  Y = function(e, t, n, r) {
+  W = function(e, t, n, r) {
     if (s) {
       if (n)
         for (var i in U) {
@@ -88,7 +88,7 @@ var r, i, a, Chunk848120 = require("./848120.js"),
         }(!P[e] || n) && h(P, e, n ? t : k && A[e] || t, r)
     }
   },
-  W = function(e, t, n) {
+  Y = function(e, t, n) {
     var r, i;
     if (s) {
       if (b) {
@@ -126,8 +126,8 @@ module.exports = {
   TYPED_ARRAY_TAG: j && x,
   aTypedArray: V,
   aTypedArrayConstructor: H,
-  exportTypedArrayMethod: Y,
-  exportTypedArrayStaticMethod: W,
+  exportTypedArrayMethod: W,
+  exportTypedArrayStaticMethod: Y,
   getTypedArrayConstructor: Z,
   isView: B,
   isTypedArray: F,

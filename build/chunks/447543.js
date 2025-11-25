@@ -188,7 +188,7 @@ function eh(e) {
           commandOrigin: y.bB.CHAT
         }))
       };
-      !d && (0, T.n)(t, [Z.Z, Y.default, B.ZP]) ? (0, I.hk)(t, o) : o()
+      !d && (0, T.n)(t, [Z.Z, W.default, B.ZP]) ? (0, I.hk)(t, o) : o()
     })
   }) : (0, m.l5)(h) && c === er.Iq.EMBEDDED_APPLICATION && null != u && ((0, x.uL)($.Z5c.CHANNEL(null != t ? t : $.ME, E)), (0, g.Z)({
     channelId: E,
@@ -242,7 +242,7 @@ let eE = function(e, t) {
     U.Z.addConditionalChangeListener(() => {
       var r;
       let i = U.Z.getChannel(e),
-        a = Y.default.getCurrentUser();
+        a = W.default.getCurrentUser();
       return null == i || null == a || !(i.nsfw && !a.nsfwAllowed || i.isGuildVocal() && (0, b.RW)(e)) && ((null == t ? true : t.guildScheduledEvent) != null ? em(t) : eh({
         guildId: null != (r = i.getGuildId()) ? r : $.ME,
         channel: i,
@@ -267,7 +267,7 @@ function ey(e, t) {
     inviter_id: a,
     invite_message_id: o
   } = e;
-  W.default.track($.rMx.INVITE_EMBED_ACTIONED, {
+  Y.default.track($.rMx.INVITE_EMBED_ACTIONED, {
     action: i,
     invite_code: r.code,
     invite_type: null == (n = r.type) ? true : n.toString(),
@@ -278,7 +278,7 @@ function ey(e, t) {
 }
 
 function eO(e, t, n) {
-  W.default.track($.rMx.INVITE_SERVER_CLICKED, {
+  Y.default.track($.rMx.INVITE_SERVER_CLICKED, {
     guild_id: e,
     action: t,
     location_stack: null != n ? n : null
@@ -433,7 +433,7 @@ let ev = {
       context: i,
       callback: a,
       skipOnboarding: o
-    } = e, s = (0, P.fU)(r), l = s.baseCode, c = j.default.getSessionId(), u = ef(i, s), f = Y.default.getCurrentUser();
+    } = e, s = (0, P.fU)(r), l = s.baseCode, c = j.default.getSessionId(), u = ef(i, s), f = W.default.getCurrentUser();
     return null != (t = null == f ? true : f.hasFlag($.xW$.QUARANTINED)) && t ? ((0, w.default)(), new Promise((e, t) => t(Error()))) : (0, b.hO)(i.location_guild_id) ? ((0, E.mN)(ee.L0.JOIN_LARGE_GUILD_UNDERAGE), new Promise((e, t) => t(Error()))) : (_.Z.dispatch({
       type: "INVITE_ACCEPT",
       code: l
@@ -550,7 +550,7 @@ let ev = {
         attemptId: t,
         event: null == f ? true : f.guildScheduledEventId,
         iosFallbackLink: "https://discord.com/api/download/mobile?invite_code=".concat(p)
-      }), W.default.track($.rMx.DEEP_LINK_CLICKED, {
+      }), Y.default.track($.rMx.DEEP_LINK_CLICKED, {
         fingerprint: (0, u.K)(n),
         attempt_id: t,
         source: ec,

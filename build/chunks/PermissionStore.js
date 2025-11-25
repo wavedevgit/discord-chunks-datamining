@@ -158,14 +158,14 @@ function H(e) {
   return !!(0, _.s)(e) && (x(e.guildId), true)
 }
 
-function Y(e) {
+function W(e) {
   let {
     messages: t
   } = e;
   return t.some(e => null != e.thread)
 }
 
-function W(e) {
+function Y(e) {
   let {
     data: t
   } = e;
@@ -348,9 +348,9 @@ let ee = new J(Chunk570140.Z, {
   LOAD_THREADS_SUCCESS: F,
   LOAD_ARCHIVED_THREADS_SUCCESS: F,
   CHANNEL_UPDATES: Z,
-  LOAD_MESSAGES_SUCCESS: Y,
-  SEARCH_MESSAGES_SUCCESS: W,
-  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: W,
+  LOAD_MESSAGES_SUCCESS: W,
+  SEARCH_MESSAGES_SUCCESS: Y,
+  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: Y,
   THREAD_MEMBER_UPDATE: V,
   THREAD_MEMBERS_UPDATE: H,
   CHANNEL_DELETE: K,

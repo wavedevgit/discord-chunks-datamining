@@ -177,7 +177,7 @@ function H(e) {
   k(t)
 }
 
-function Y(e) {
+function W(e) {
   let {
     familyCenterTeenActivity: t
   } = e;
@@ -197,7 +197,7 @@ function Y(e) {
   h = a, m = o, U(n), j(r), G(i), null != f && B(f), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now()), R = u, P = d
 }
 
-function W(e) {
+function Y(e) {
   let {
     familyCenterTeenActivity: t
   } = e, {
@@ -381,8 +381,8 @@ class ei extends Chunk750041.Z {
       FAMILY_CENTER_INITIAL_LOAD: F,
       FAMILY_CENTER_FETCH_START: Z,
       FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: V,
-      FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: Y,
-      FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: W,
+      FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: W,
+      FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: Y,
       FAMILY_CENTER_REQUEST_LINK_SUCCESS: H,
       FAMILY_CENTER_REQUEST_LINK_UPDATE_SUCCESS: K,
       FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS: z,

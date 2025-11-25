@@ -242,15 +242,15 @@ function H(e) {
   return o({}, e)
 }
 
-function Y(e) {
+function W(e) {
   var t = a.getFluidConfig(e);
-  return t ? Y(t.get()) : a.is.arr(e) ? e.map(Y) : a.isAnimatedString(e) ? _.createStringInterpolator({
+  return t ? W(t.get()) : a.is.arr(e) ? e.map(W) : a.isAnimatedString(e) ? _.createStringInterpolator({
     range: [0, 1],
     output: [e, e]
   })(1) : e
 }
 
-function W(e, t) {
+function Y(e, t) {
   var n = t.key,
     r = t.props,
     i = t.state,
@@ -723,7 +723,7 @@ var er = function(e) {
         };
       i("cancel"), i("pause");
       var o = this._prepareNode(e);
-      return W(++this._lastCallId, {
+      return Y(++this._lastCallId, {
         key: this.key,
         props: e,
         state: this._state,
@@ -780,7 +780,7 @@ var er = function(e) {
       if (!R || a.is.und(m)) return n(q(this, true));
       var P = a.is.und(t.reset) ? l && !t.default : !a.is.und(E) && M(t.reset, r),
         D = P ? E : this.get(),
-        w = Y(m),
+        w = W(m),
         L = a.is.num(w) || a.is.arr(w) || a.isAnimatedString(w),
         k = !T && (!L || M(o.immediate || t.immediate, r));
       if (O)
@@ -793,7 +793,7 @@ var er = function(e) {
         Z = false;
       if (!G) {
         var F = P || this.is(es) && y;
-        (O || F) && (G = !(Z = a.isEqual(Y(D), w))), a.isEqual(S.decay, C) && a.isEqual(S.velocity, N) || (G = true)
+        (O || F) && (G = !(Z = a.isEqual(W(D), w))), a.isEqual(S.decay, C) && a.isEqual(S.velocity, N) || (G = true)
       }
       if (Z && this.is(ec) && (i.changed && !P ? G = true : G || this._stop()), !T) {
         (G || a.getFluidConfig(d)) && (i.values = R.getPayload(), i.toValues = v ? null : U == f.AnimatedString ? [1] : a.toArray(w)), i.immediate = k, i.onStart = ep(c("onStart"), r), i.onChange = ep(c("onChange"), r);
@@ -801,9 +801,9 @@ var er = function(e) {
           H = P && !t.onRest ? V[0] || a.noop : eh(ep(c("onRest"), r), this);
         if (G) {
           i.onRest = [H, eh(n, this)];
-          var W = +!P;
-          W < V.length && _.batchedUpdates(function() {
-            for (; W < V.length; W++) V[W]()
+          var Y = +!P;
+          Y < V.length && _.batchedUpdates(function() {
+            for (; Y < V.length; Y++) V[Y]()
           })
         } else(P || t.onRest) && (i.onRest[0] = H)
       }
@@ -886,8 +886,8 @@ var eh = function(e, t) {
   return e ? function(r) {
     if (r) e(X(t));
     else {
-      var i = Y(n),
-        o = Y(t.get());
+      var i = W(n),
+        o = W(t.get());
       e(q(t, a.isEqual(o, i)))
     }
   } : a.noop
@@ -1063,7 +1063,7 @@ function eT(e, t, n) {
       return e.springs[n].start(t)
     }),
     c = e._state;
-  return s ? l.push(W(++e._lastAsyncId, {
+  return s ? l.push(Y(++e._lastAsyncId, {
     props: t,
     state: c,
     actions: {
@@ -1482,13 +1482,13 @@ function eH(e) {
   })
 }
 
-function eY(e) {
+function eW(e) {
   var t = e.items,
     n = e.children,
     r = g(e, ["items", "children"]);
   return s.createElement(s.Fragment, null, eZ(t, r)(n))
 }
-var eW = function(e) {
+var eY = function(e) {
     function t(t, n) {
       (r = e.call(this) || this).source = t, r.key = true, r.idle = true, r.calc = true, r.calc = a.createInterpolator.apply(true, n);
       var r, i = r._get(),
@@ -1536,16 +1536,16 @@ var eW = function(e) {
   }(eo),
   eK = function(e) {
     for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
-    return new eW(e, n)
+    return new eY(e, n)
   },
   ez = function(e) {
     for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
-    return m.deprecateInterpolate(), new eW(e, n)
+    return m.deprecateInterpolate(), new eY(e, n)
   };
 Chunk698091.Globals.assign({
   createStringInterpolator: Chunk179237.createStringInterpolator,
   to: function(e, t) {
-    return new eW(e, t)
+    return new eY(e, t)
   }
 });
 var eq = function() {
@@ -1573,4 +1573,4 @@ Object.keys(Chunk467568).forEach(function(e) {
   get: function() {
     return Chunk698091.createInterpolator
   }
-}), exports.BailSignal = er, exports.Controller = ev, exports.FrameValue = eo, exports.Interpolation = eW, exports.Spring = eV, exports.SpringContext = eD, exports.SpringHandle = eL, exports.SpringValue = ef, exports.Trail = eH, exports.Transition = eY, exports.config = v, exports.inferTo = H, exports.interpolate = ez, exports.to = eK, exports.update = eq, exports.useChain = O, exports.useSpring = eM, exports.useSprings = ex, exports.useTrail = ek, exports.useTransition = eZ
+}), exports.BailSignal = er, exports.Controller = ev, exports.FrameValue = eo, exports.Interpolation = eY, exports.Spring = eV, exports.SpringContext = eD, exports.SpringHandle = eL, exports.SpringValue = ef, exports.Trail = eH, exports.Transition = eW, exports.config = v, exports.inferTo = H, exports.interpolate = ez, exports.to = eK, exports.update = eq, exports.useChain = O, exports.useSpring = eM, exports.useSprings = ex, exports.useTrail = ek, exports.useTransition = eZ

@@ -1,7 +1,7 @@
 /** Chunk was on 62934 **/
 /** chunk id: 941762, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk613275 = require("./613275.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk799070 = require("./799070.js");
-let _ = {
+let v = {
   steps: {
     [Chunk619733.EK.SERVER_SETTINGS]: {
       onBack: {
@@ -29,11 +29,11 @@ let _ = {
   }
 };
 
-function v(e) {
+function _(e) {
   let {
     guildId: n,
     instance: t
-  } = e, m = a.useRef(null), v = (0, d.Z)(t.providerType, t.gameServerPanelUrl);
+  } = e, m = a.useRef(null), _ = (0, d.Z)(t.providerType, t.gameServerPanelUrl);
   return (0, c.Z)(n) ? (0, r.jsx)(i.yRy, {
     targetElementRef: m,
     align: "top",
@@ -52,13 +52,13 @@ function v(e) {
         "aria-label": f.intl.string(g.default["yb+ork"]),
         onSelect: true,
         children: (0, r.jsxs)(i.kSQ, {
-          children: [null != v && (0, r.jsx)(i.sNh, {
+          children: [null != _ && (0, r.jsx)(i.sNh, {
             id: "get-support",
             icon: i.kBi,
             label: f.intl.string(g.default.bBkeMs),
             action: () => {
               (0, o.q)({
-                href: v
+                href: _
               })
             }
           }), (0, r.jsx)(i.sNh, {
@@ -68,7 +68,7 @@ function v(e) {
             action: () => {
               (0, u.Z)({
                 guildId: n,
-                stepConfig: _,
+                stepConfig: v,
                 initialGameServerInstance: t,
                 analyticsLocation: s.Z.GAME_SERVER_PAGE
               })

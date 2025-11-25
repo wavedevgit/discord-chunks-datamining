@@ -91,20 +91,20 @@ function H(e) {
   return e.resetSocket && (T.Wb.close(), T.Wb.dispatcher.clear(), T.Wb.connect()), false
 }
 
-function Y(e) {
+function W(e) {
   return T.GC.update({
     guildId: e.guildId,
     channelId: e.channelId
   }), j = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, v.isIOS)() && k === C.$7l.BACKGROUND && (null == e.channelId ? T.Wb.close(true) : T.Wb.isClosed() && (S.Y(false), T.Wb.connect())), false
 }
 
-function W() {
+function Y() {
   Chunk955132.GC.update()
 }
 
 function K(e) {
   var t;
-  e.settings.type === N.yP.PRELOADED_USER_SETTINGS && (null == (t = e.settings.proto.clips) ? true : t.allowVoiceRecording) != null && W()
+  e.settings.type === N.yP.PRELOADED_USER_SETTINGS && (null == (t = e.settings.proto.clips) ? true : t.allowVoiceRecording) != null && Y()
 }
 
 function z(e) {
@@ -280,7 +280,7 @@ function ep(e) {
   let {
     streamKey: t
   } = e;
-  return el(t), W(), false
+  return el(t), Y(), false
 }
 
 function eh() {
@@ -338,7 +338,7 @@ let ey = new eb(Chunk570140.Z, {
   CONNECTION_RESUMED: V,
   CONNECTION_CLOSED: F,
   RTC_CONNECTION_STATE: J,
-  VOICE_CHANNEL_SELECT: Y,
+  VOICE_CHANNEL_SELECT: W,
   VOICE_STATE_UPDATES: z,
   GUILD_DELETE: q,
   CHANNEL_DELETE: Q,
@@ -349,7 +349,7 @@ let ey = new eb(Chunk570140.Z, {
   GUILD_SUBSCRIPTIONS_FLUSH: ei,
   CALL_CONNECT: ea,
   CALL_CONNECT_MULTIPLE: eo,
-  STREAM_CREATE: W,
+  STREAM_CREATE: Y,
   STREAM_START: ed,
   STREAM_WATCH: e_,
   STREAM_STOP: ep,
@@ -359,7 +359,7 @@ let ey = new eb(Chunk570140.Z, {
   REQUEST_SOUNDBOARD_SOUNDS: eE,
   REMOTE_COMMAND: es,
   RESET_SOCKET: eg,
-  CLIPS_SETTINGS_UPDATE: W,
-  RUNNING_GAMES_CHANGE: W,
+  CLIPS_SETTINGS_UPDATE: Y,
+  RUNNING_GAMES_CHANGE: Y,
   USER_SETTINGS_PROTO_UPDATE: K
 })

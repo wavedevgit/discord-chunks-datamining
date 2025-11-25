@@ -132,13 +132,13 @@ function H(e) {
   return n
 }
 
-function Y(e) {
+function W(e) {
   let t = false;
   for (let n of D(e.guildId)) t = x(n).rebuild() || t;
   return t
 }
 
-function W(e) {
+function Y(e) {
   let {
     user: t
   } = e;
@@ -248,9 +248,9 @@ let en = new et(Chunk570140.Z, {
   VOICE_STATE_UPDATES: V,
   CHANNEL_DELETE: Q,
   GUILD_MEMBERS_CHUNK_BATCH: H,
-  USER_UPDATE: W,
-  GUILD_MEMBER_REMOVE: W,
-  GUILD_MEMBER_UPDATE: W,
+  USER_UPDATE: Y,
+  GUILD_MEMBER_REMOVE: Y,
+  GUILD_MEMBER_UPDATE: Y,
   CHANNEL_UPDATES: J,
   GUILD_ROLE_UPDATE: $,
   RTC_CONNECTION_VIDEO: q,
@@ -261,5 +261,5 @@ let en = new et(Chunk570140.Z, {
   RELATIONSHIP_UPDATE: K,
   GUILD_CREATE: z,
   GUILD_DELETE: z,
-  PASSIVE_UPDATE_V2: Y
+  PASSIVE_UPDATE_V2: W
 })

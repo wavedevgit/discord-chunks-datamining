@@ -87,11 +87,11 @@ function X(e, t) {
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-md/bold",
       className: K.accountCreditTitle,
-      children: W.intl.string(W.t.Obre8v)
+      children: Y.intl.string(Y.t.Obre8v)
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       className: K.accountCreditDescription,
-      children: W.intl.format(W.t["7Zi06b"], {
+      children: Y.intl.format(Y.t["7Zi06b"], {
         helpCenterLink: M.Z.getArticleURL(V.BhN.FRACTIONAL_PREMIUM_ABOUT)
       })
     }), (0, r.jsx)(U.Z, {
@@ -130,7 +130,7 @@ let J = function() {
       forceFetch: true
     }),
     G = (0, Chunk695349.W)(),
-    W = null !== module ? module.currentPeriodEnd : true,
+    Y = null !== module ? module.currentPeriodEnd : true,
     z = !(Chunk639056 && !(Chunk391077.unactivatedUnits.length > 0)) && (Chunk391077.fractionalState !== Chunk474936.a$.NONE || Chunk391077.unactivatedUnits.length > 0);
   return (Chunk473749.useEffect(() => (Chunk570140.Z.wait(() => {
     (0, Chunk821849.Y2)(), Chunk355467.jg(), (0, Chunk179360.X8)(), Chunk355467.tZ()

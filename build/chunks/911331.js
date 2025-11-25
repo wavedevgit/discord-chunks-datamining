@@ -67,23 +67,23 @@ var s = function(e, t) {
       F = parseInt(B.borderTopWidth, 10),
       V = parseInt(B.borderRightWidth, 10),
       H = parseInt(B.borderBottomWidth, 10),
-      Y = 0,
       W = 0,
+      Y = 0,
       K = "offsetWidth" in w ? w.offsetWidth - w.clientWidth - Z - V : 0,
       z = "offsetHeight" in w ? w.offsetHeight - w.clientHeight - F - H : 0,
       q = "offsetWidth" in w ? 0 === w.offsetWidth ? 0 : M / w.offsetWidth : 0,
       X = "offsetHeight" in w ? 0 === w.offsetHeight ? 0 : x / w.offsetHeight : 0;
-    if (p === w) Y = "start" === s ? N : "end" === s ? N - E : "nearest" === s ? o(y, y + E, E, F, H, y + N, y + N + v, v) : N - E / 2, W = "start" === l ? R : "center" === l ? R - g / 2 : "end" === l ? R - g : o(b, b + g, g, Z, V, b + R, b + R + I, I), Y = Math.max(0, Y + y), W = Math.max(0, W + b);
+    if (p === w) W = "start" === s ? N : "end" === s ? N - E : "nearest" === s ? o(y, y + E, E, F, H, y + N, y + N + v, v) : N - E / 2, Y = "start" === l ? R : "center" === l ? R - g / 2 : "end" === l ? R - g : o(b, b + g, g, Z, V, b + R, b + R + I, I), W = Math.max(0, W + y), Y = Math.max(0, Y + b);
     else {
-      Y = "start" === s ? N - k - F : "end" === s ? N - U + H + z : "nearest" === s ? o(k, U, x, F, H + z, N, N + v, v) : N - (k + x / 2) + z / 2, W = "start" === l ? R - G - Z : "center" === l ? R - (G + M / 2) + K / 2 : "end" === l ? R - j + V + K : o(G, j, M, Z, V + K, R, R + I, I);
+      W = "start" === s ? N - k - F : "end" === s ? N - U + H + z : "nearest" === s ? o(k, U, x, F, H + z, N, N + v, v) : N - (k + x / 2) + z / 2, Y = "start" === l ? R - G - Z : "center" === l ? R - (G + M / 2) + K / 2 : "end" === l ? R - j + V + K : o(G, j, M, Z, V + K, R, R + I, I);
       var Q = w.scrollLeft,
         J = w.scrollTop;
-      N += J - (Y = Math.max(0, Math.min(J + Y / X, w.scrollHeight - x / X + z))), R += Q - (W = Math.max(0, Math.min(Q + W / q, w.scrollWidth - M / q + K)))
+      N += J - (W = Math.max(0, Math.min(J + W / X, w.scrollHeight - x / X + z))), R += Q - (Y = Math.max(0, Math.min(Q + Y / q, w.scrollWidth - M / q + K)))
     }
     P.push({
       el: w,
-      top: Y,
-      left: W
+      top: W,
+      left: Y
     })
   }
   return P

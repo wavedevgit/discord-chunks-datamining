@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => X,
-  uh: () => Y
+  uh: () => W
 }), require("./35282.js"), require("./704826.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -56,8 +56,8 @@ function H(e, t, n) {
   }) : e[t] = n, e
 }
 require("./478691.js");
-let Y = 512,
-  W = (0, Chunk313201.hQ)(),
+let W = 512,
+  Y = (0, Chunk313201.hQ)(),
   K = c()(Chunk611004.Z.fetchMessages, 500);
 class z extends Chunk473749.PureComponent {
   componentDidMount() {
@@ -126,7 +126,7 @@ class z extends Chunk473749.PureComponent {
       onChange: this.setEditorState,
       role: "combobox",
       ariaExpanded: e,
-      ariaControls: e ? W : true,
+      ariaControls: e ? Y : true,
       ariaLabel: F.intl.string(F.t["5h0QOP"]),
       ariaAutoComplete: "list"
     })
@@ -195,14 +195,14 @@ class z extends Chunk473749.PureComponent {
       } = e, {
         editorState: o
       } = this.props, s = v.Sq(o);
-      " " !== t.charAt(t.length - 1) && (t += " "), null != n && 0 !== n && " " !== s.charAt(n - 1) && " " !== t.charAt(0) && (t = " " + t), a ? (o = v.c2(t, o), n = 0) : o = v.x0(t, o, n, r), o = v.Hl(o, Y), o = this.tokenize(o);
+      " " !== t.charAt(t.length - 1) && (t += " "), null != n && 0 !== n && " " !== s.charAt(n - 1) && " " !== t.charAt(0) && (t = " " + t), a ? (o = v.c2(t, o), n = 0) : o = v.x0(t, o, n, r), o = v.Hl(o, W), o = this.tokenize(o);
       let l = Number(n) + t.length;
       o = v.iK(l, o), this.setEditorState(o), i && this.search({
         queryString: v.Sq(o)
       })
     }), H(this, "handleSelectedIndexChanged", e => {
       var t, n;
-      null == (n = this._editorRef) || null == (t = n.editor) || t.setAttribute("aria-activedescendant", null != e ? "".concat(W, "-").concat(e) : true), this.setState({
+      null == (n = this._editorRef) || null == (t = n.editor) || t.setAttribute("aria-activedescendant", null != e ? "".concat(Y, "-").concat(e) : true), this.setState({
         selectedIndex: e
       })
     }), H(this, "renderPopout", () => {
@@ -212,12 +212,12 @@ class z extends Chunk473749.PureComponent {
       return e ? (0, r.jsx)(w.Z, {
         ref: this._searchFiltersRedesignPopoutRef,
         searchContext: this.props.searchContext,
-        navId: W,
+        navId: Y,
         onSelectedIndexChanged: this.handleSelectedIndexChanged
       }) : (0, r.jsx)(M.ZP, {
         ref: this._searchPopoutRef,
         searchContext: this.props.searchContext,
-        navId: W,
+        navId: Y,
         onSelectedIndexChanged: this.handleSelectedIndexChanged
       })
     }), H(this, "search", e => {
@@ -349,7 +349,7 @@ class z extends Chunk473749.PureComponent {
       } = this.props, {
         focused: n
       } = this.state;
-      return v.Sq(t).length >= Y || (t = v.x0(e, t), t = v.Hl(t, Y), t = this.tokenize(t), this.setEditorState(t), n || this.setState({
+      return v.Sq(t).length >= W || (t = v.x0(e, t), t = v.Hl(t, W), t = this.tokenize(t), this.setEditorState(t), n || this.setState({
         focused: true
       })), "handled"
     }), H(this, "handleKeyCommand", e => {
@@ -384,7 +384,7 @@ class z extends Chunk473749.PureComponent {
       } = this.props, {
         focused: n
       } = this.state;
-      return e = null != e ? e.replace(/\n/g, "") : "", t = v.x0(e, t), t = v.Hl(t, Y), t = this.tokenize(t), n || this.setState({
+      return e = null != e ? e.replace(/\n/g, "") : "", t = v.x0(e, t), t = v.Hl(t, W), t = this.tokenize(t), n || this.setState({
         focused: true
       }), this.setEditorState(t), "handled"
     }), H(this, "setEditorState", e => {
@@ -524,15 +524,15 @@ function q(e) {
       }
       return null
     }),
-    Y = (0, R.kU)({
+    W = (0, R.kU)({
       location: "Search"
     }),
-    W = (0, N.UX)({
+    Y = (0, N.UX)({
       location: "Search"
     }),
-    q = i.useMemo(() => t.type === Z.aib.DMS ? F.intl.string(F.t.m7OrlR) : t.type === Z.aib.CHANNEL && W || Y ? F.intl.formatToPlainString(F.t.LDZtFO, {
+    q = i.useMemo(() => t.type === Z.aib.DMS ? F.intl.string(F.t.m7OrlR) : t.type === Z.aib.CHANNEL && Y || W ? F.intl.formatToPlainString(F.t.LDZtFO, {
       name: H
-    }) : F.intl.string(F.t["5h0QOP"]), [t.type, W, Y, H]);
+    }) : F.intl.string(F.t["5h0QOP"]), [t.type, Y, W, H]);
   return (0, r.jsx)(z, {
     className: n,
     searchContext: t,
@@ -543,7 +543,7 @@ function q(e) {
     onSearch: V,
     isSearchSidebarOrModalOpen: G,
     placeholder: q,
-    isSearchFiltersRedesignEnabled: Y
+    isSearchFiltersRedesignEnabled: W
   })
 }
 

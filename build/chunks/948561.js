@@ -229,7 +229,7 @@ function H(e) {
   }
 }
 
-function Y(e) {
+function W(e) {
   function t(e) {
     return null != e
   }
@@ -251,7 +251,7 @@ function Y(e) {
   }
 }
 
-function W(e, t) {
+function Y(e, t) {
   let {
     messagesPendingScan: n,
     attributesByChannelId: r,
@@ -288,7 +288,7 @@ function K(e) {
     messagesPendingScan: t,
     attributesByChannelId: n,
     attributesByMessageId: r
-  } = Y(e);
+  } = W(e);
   return b.default.entries(n).forEach(e => {
     let [t, n] = e;
     (0, I.IV)({
@@ -329,7 +329,7 @@ function z(e) {
     c = p.ZP.getCurrentSidebarChannelId(l);
   if (s.channel_id !== l && s.channel_id !== c) returnfalse;
   let d = m.Z.getMessage(s.channel_id, s.id);
-  return null != d && W([d], {
+  return null != d && Y([d], {
     isMessageUpdate: true
   })
 }
@@ -350,7 +350,7 @@ function q(e) {
   if (!c) returnfalse;
   let d = null == (n = null == u ? true : u.isPrivate()) || n,
     f = (null == u ? true : u.memberCount) == null || (null == u ? true : u.memberCount) > 100;
-  return W([i], {
+  return Y([i], {
     jitter: d && f
   })
 }
@@ -363,7 +363,7 @@ function X(e) {
   if (null == t || null == n) returnfalse;
   let r = g.Z.getChannelId(),
     i = p.ZP.getCurrentSidebarChannelId(r);
-  return (t === r || t === i) && W(n)
+  return (t === r || t === i) && Y(n)
 }
 
 function Q(e) {
@@ -374,7 +374,7 @@ function Q(e) {
     let {
       messages: t
     } = e, r = i()(t);
-    n = W(o()(r, (e, t) => e.id === t.id && e.channel_id === t.channel_id)) || n
+    n = Y(o()(r, (e, t) => e.id === t.id && e.channel_id === t.channel_id)) || n
   }), n
 }
 
@@ -382,7 +382,7 @@ function J(e) {
   let {
     pins: t
   } = e;
-  return W(t.map(e => {
+  return Y(t.map(e => {
     let {
       message: t
     } = e;
@@ -395,7 +395,7 @@ function $(e) {
     guildId: t,
     threads: n
   } = e;
-  return null != n && E.Z.getGuildId() === t && W(b.default.keys(n).map(e => n[e].first_message))
+  return null != n && E.Z.getGuildId() === t && Y(b.default.keys(n).map(e => n[e].first_message))
 }
 
 function ee(e) {
@@ -403,7 +403,7 @@ function ee(e) {
     guildId: t,
     firstMessages: n
   } = e;
-  return null != n && E.Z.getGuildId() === t && W(n, {
+  return null != n && E.Z.getGuildId() === t && Y(n, {
     forceBatchScan: true
   })
 }

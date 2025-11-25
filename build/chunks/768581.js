@@ -359,7 +359,7 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     id: t,
     icon: n,
@@ -401,7 +401,7 @@ function Y(e) {
   if (o) return _
 }
 
-function W(e) {
+function Y(e) {
   let {
     id: t,
     hash: n,
@@ -453,7 +453,7 @@ function q(e) {
     applicationId: o,
     size: s
   } = e;
-  return null != o ? null != (t = Y({
+  return null != o ? null != (t = W({
     id: o,
     icon: a,
     size: s
@@ -548,10 +548,10 @@ let et = {
   getGuildTemplateIconURL: H,
   getChannelIconURL: q,
   getEmojiURL: C,
-  getApplicationIconURL: Y,
-  getGameAssetURL: W,
+  getApplicationIconURL: W,
+  getGameAssetURL: Y,
   getVideoFilterAssetURL: K,
-  getGameAssetSource: e => ee(W(e)),
+  getGameAssetSource: e => ee(Y(e)),
   getGuildIconSource: e => ee(V(e)),
   getGuildTemplateIconSource: e => ee(H(e)),
   getGuildBannerSource(e) {
@@ -560,7 +560,7 @@ let et = {
   },
   getGuildHomeHeaderSource: e => ee(B(e)),
   getChannelIconSource: e => ee(q(e)),
-  getApplicationIconSource: e => ee(Y(e)),
+  getApplicationIconSource: e => ee(W(e)),
   makeSource: ee,
   getAnimatableSourceWithFallback(e, t) {
     let n = t(e);

@@ -10,10 +10,10 @@ require.d(exports, {
   MG: () => en,
   OR: () => z,
   QB: () => B,
-  T0: () => W,
+  T0: () => Y,
   Wf: () => H,
   cT: () => $,
-  eT: () => Y,
+  eT: () => W,
   gU: () => et,
   gl: () => F,
   is: () => L,
@@ -391,7 +391,7 @@ async function H(e) {
     })
   }
 }
-async function Y(e) {
+async function W(e) {
   try {
     let t = await i.tn.del({
       url: S.ANM.QUESTS_PREVIEW_STATUS(e),
@@ -410,7 +410,7 @@ async function Y(e) {
     })
   }
 }
-async function W(e) {
+async function Y(e) {
   try {
     a.Z.dispatch({
       type: "QUESTS_DOCK_RESET_SOFT_DISMISSAL"

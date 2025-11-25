@@ -139,7 +139,7 @@ function H(e) {
   }
 }
 
-function Y(e) {
+function W(e) {
   let {
     channel: t,
     isNewlyCreated: n
@@ -148,7 +148,7 @@ function Y(e) {
   t.ownerId !== p.default.getId() ? C++ : v = t.id
 }
 
-function W(e) {
+function Y(e) {
   let {
     channel: t
   } = e;
@@ -223,9 +223,9 @@ let Q = new X(Chunk570140.Z, {
   CHANNEL_SELECT: B,
   CHANNEL_DELETE: K,
   THREAD_LIST_SYNC: V,
-  THREAD_CREATE: Y,
+  THREAD_CREATE: W,
   THREAD_UPDATE: H,
-  THREAD_DELETE: W,
+  THREAD_DELETE: Y,
   RESORT_THREADS: z,
   CHANNEL_ACK: q
 })

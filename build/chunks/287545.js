@@ -56,14 +56,14 @@ let Z = 2e3,
   V = {},
   H = {};
 
-function Y(e) {
+function W(e) {
   var t;
   return {
     releasePhase: null == e || null == (t = e.activity) ? true : t.client_platform_config[(0, M.Z)((0, I.getOS)())].release_phase
   }
 }
 
-function W(e) {
+function Y(e) {
   let {
     applicationId: t,
     nonce: n,
@@ -93,7 +93,7 @@ function q(e) {
     analyticsLocations: r,
     source: i
   } = e;
-  W({
+  Y({
     applicationId: t,
     nonce: n,
     locations: r,
@@ -128,7 +128,7 @@ async function X(e) {
     }),
     {
       releasePhase: E
-    } = Y(h),
+    } = W(h),
     b = p.Z.getRawThermalState();
   O.default.track(U.rMx.ACTIVITY_SESSION_LEFT, {
     channel_id: c,
@@ -187,14 +187,14 @@ function Q(e) {
     B = 1 + j.findIndex(e => e === r),
     {
       releasePhase: Z
-    } = Y(G),
+    } = W(G),
     H = p.Z.getRawThermalState(),
-    W = null != R ? [R] : [],
+    Y = null != R ? [R] : [],
     K = {
       activitySessionId: P,
       activityUserSessionId: w,
       launchId: c.launchId,
-      mediaSessionIds: W,
+      mediaSessionIds: Y,
       activitiesInfraVersion: L
     };
   F[r] = K;
@@ -202,7 +202,7 @@ function Q(e) {
   (0, T.Ew)(b.nonce) || b.nonce === (null == z ? true : z.nonce) || (z = true), O.default.track(U.rMx.ACTIVITY_SESSION_JOINED, {
     channel_id: v,
     guild_id: I,
-    media_session_id: W[0],
+    media_session_id: Y[0],
     activity_session_id: P,
     application_id: r,
     location_stack: null == z ? true : z.locations,
@@ -227,7 +227,7 @@ function Q(e) {
     guild_id: I,
     application_id: r,
     instance_id: c.launchId,
-    initial_media_session_id: W[0],
+    initial_media_session_id: Y[0],
     activity_user_session_id: w,
     raw_thermal_state: H,
     is_activity_start: o,
@@ -437,7 +437,7 @@ class $ extends Chunk317770.Z {
       } = e;
       if (null == V[n.applicationId]) {
         let e;
-        n.interactionType === l.B8.APPLICATION_COMMAND ? e = [u.Z.INTERACTION_APPLICATION_COMMAND] : n.interactionType === l.B8.MESSAGE_COMPONENT ? e = [u.Z.INTERACTION_MESSAGE_COMPONENT] : n.interactionType === l.B8.MODAL_SUBMIT && (e = [u.Z.INTERACTION_MODAL_SUBMIT]), W({
+        n.interactionType === l.B8.APPLICATION_COMMAND ? e = [u.Z.INTERACTION_APPLICATION_COMMAND] : n.interactionType === l.B8.MESSAGE_COMPONENT ? e = [u.Z.INTERACTION_MESSAGE_COMPONENT] : n.interactionType === l.B8.MODAL_SUBMIT && (e = [u.Z.INTERACTION_MODAL_SUBMIT]), Y({
           applicationId: n.applicationId,
           nonce: t,
           locations: e

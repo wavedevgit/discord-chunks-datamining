@@ -129,12 +129,12 @@ let x = (0, Chunk663993.Un)({
     webpackId: 822699,
     name: "ViewsWithAuth"
   }),
-  Y = (0, Chunk663993.Un)({
+  W = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("12581"), require.e("96858")]).then(require.bind(require, 285773)),
     webpackId: 285773,
     name: "ViewsWithOAuth2"
   }),
-  W = (0, Chunk663993.Un)({
+  Y = (0, Chunk663993.Un)({
     createPromise: () => require.e("57047").then(require.bind(require, 549652)),
     webpackId: 549652,
     name: "BrowserHandoff"
@@ -267,7 +267,7 @@ class ei extends Chunk473749.Component {
         component: Q
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.HANDOFF,
-        component: W
+        component: Y
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.MOBILE_WEB_HANDOFF,
         component: K
@@ -338,7 +338,7 @@ class ei extends Chunk473749.Component {
         })
       }), (0, Chunk54381.jsx)(Chunk828700.AW, {
         path: [Chunk981631.Z5c.OAUTH2_AUTHORIZED, Chunk981631.Z5c.OAUTH2_AUTHORIZE, Chunk981631.Z5c.OAUTH2_ERROR, Chunk981631.Z5c.OAUTH2_WHITELIST_ACCEPT],
-        component: Y
+        component: W
       }), exports ? null : (0, Chunk54381.jsx)(Chunk828700.AW, {
         path: [Chunk981631.Z5c.ACCOUNT_STANDING],
         component: q

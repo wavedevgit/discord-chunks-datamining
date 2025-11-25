@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => eK,
-  c: () => eY
+  c: () => eW
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -158,7 +158,7 @@ let ek = e => {
       children: [(0, r.jsx)(f.RyX, {
         noticeType: t,
         onClick: () => {
-          eY()
+          eW()
         }
       }), eP.intl.string(eP.t.o3zuYz), (0, r.jsx)(ek, {
         error: G.u.NO_INPUT_DEVICES
@@ -184,7 +184,7 @@ let eB = e => {
       children: [(0, r.jsx)(f.RyX, {
         noticeType: n,
         onClick: () => {
-          eY(), (0, e_.b)()
+          eW(), (0, e_.b)()
         }
       }), eP.intl.string(eP.t.ppW3ri), (0, r.jsx)(ek, {
         error: G.u.NO_AUDIO_INPUT_DETECTED
@@ -205,7 +205,7 @@ let eB = e => {
       children: [(0, r.jsx)(f.RyX, {
         noticeType: n,
         onClick: () => {
-          eY(), (0, e_.b)()
+          eW(), (0, e_.b)()
         }
       }), eP.intl.string(eP.t.j4gGA4), (0, r.jsx)(ek, {
         error: G.u.NO_AUDIO_INPUT_DETECTED
@@ -225,7 +225,7 @@ let eB = e => {
       children: [(0, r.jsx)(f.RyX, {
         noticeType: t,
         onClick: () => {
-          eY(), (0, e_.b)()
+          eW(), (0, e_.b)()
         }
       }), eP.intl.string(eP.t.nCO9bI), (0, r.jsx)(ek, {
         error: G.u.NO_AUDIO_INPUT_DETECTED
@@ -245,7 +245,7 @@ let eB = e => {
       children: [(0, r.jsx)(f.RyX, {
         noticeType: t,
         onClick: () => {
-          eY(), (0, e_.b)()
+          eW(), (0, e_.b)()
         }
       }), eP.intl.string(eP.t.dNAJ18), (0, r.jsx)(ek, {
         allowClick: true,
@@ -268,12 +268,12 @@ function eH(e, t) {
   null != t && (n.guild_id = t), ev.default.track(eS.rMx.APP_NOTICE_VIEWED, n)
 }
 
-function eY(e) {
+function eW(e) {
   g.Z.dismiss(null != e ? {
     untilAtLeast: o()(e)
   } : true)
 }
-let eW = Chunk473749.memo(function() {
+let eY = Chunk473749.memo(function() {
   var e, t;
   let a = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     l = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
@@ -319,15 +319,15 @@ let eW = Chunk473749.memo(function() {
       }
     }, [Chunk100527, Chunk475808.guid]), null == c) return null;
   let eG = null != c.type ? Chunk933429.zD[c.type] : null,
-    eW = null != c.type ? Chunk933429.o[c.type] : null,
+    eY = null != c.type ? Chunk933429.o[c.type] : null,
     eK = null != c.type ? Chunk933429.nA[c.type] : null,
     ez = Chunk933429.m9[c.type];
   if (null != eG) return (0, Chunk54381.jsx)(Chunk132144.W, {
     dismissibleContent: eG,
     noticeType: c.type
   });
-  if (null != eW) return (0, Chunk54381.jsx)(Chunk131130.q, {
-    dismissibleContent: eW,
+  if (null != eY) return (0, Chunk54381.jsx)(Chunk131130.q, {
+    dismissibleContent: eY,
     noticeType: c.type
   });
   if (null != eK) return (0, Chunk54381.jsx)(Chunk196068.c, {
@@ -350,7 +350,7 @@ let eW = Chunk473749.memo(function() {
         dismissUntil: eX
       } = c.metadata;
       return (0, Chunk54381.jsx)(Chunk506357.Z, {
-        onDismiss: () => eY(eX)
+        onDismiss: () => eW(eX)
       });
     case Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE:
       let {
@@ -359,7 +359,7 @@ let eW = Chunk473749.memo(function() {
       return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.WARNING,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => eY(eQ),
+          onClick: () => eW(eQ),
           noticeType: c.type
         }), Chunk388032.intl.format(Chunk388032.t["08KQ1P"], {
           helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.WIN32_DEPRECATE)
@@ -372,7 +372,7 @@ let eW = Chunk473749.memo(function() {
       return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.WARNING,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => eY(eJ),
+          onClick: () => eW(eJ),
           noticeType: c.type
         }), Chunk388032.intl.format(Chunk388032.t["8Je+dX"], {
           helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.WIN7_8_DEPRECATE)
@@ -385,7 +385,7 @@ let eW = Chunk473749.memo(function() {
       return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.WARNING,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => eY(e$),
+          onClick: () => eW(e$),
           noticeType: c.type
         }), Chunk388032.intl.format(Chunk388032.t.q8VPLo, {
           helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.MACOS_19_DEPRECATE)
@@ -395,7 +395,7 @@ let eW = Chunk473749.memo(function() {
       return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.DEFAULT,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => eY(),
+          onClick: () => eW(),
           noticeType: c.type
         }), c.message, null != c.buttonText ? (0, Chunk54381.jsx)(Chunk481060.NoS, {
           onClick: c.callback,
@@ -407,7 +407,7 @@ let eW = Chunk473749.memo(function() {
       return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.DANGER,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => eY(),
+          onClick: () => eW(),
           noticeType: c.type
         }), c.message, null != c.buttonText ? (0, Chunk54381.jsx)(Chunk481060.NoS, {
           onClick: c.callback,
@@ -420,7 +420,7 @@ let eW = Chunk473749.memo(function() {
         color: Chunk481060.DM8.WARNING,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
           onClick: () => {
-            Chunk195500.Z.clearRemoteDisconnectVoiceChannelId(), eY()
+            Chunk195500.Z.clearRemoteDisconnectVoiceChannelId(), eW()
           },
           noticeType: c.type
         }), Chunk388032.intl.string(Chunk388032.t.bOQ3jV), (0, Chunk54381.jsx)(Chunk481060.NoS, {
@@ -437,7 +437,7 @@ let eW = Chunk473749.memo(function() {
         color: Chunk481060.DM8.DEFAULT,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
           onClick: () => {
-            Chunk195500.Z.clearLastSessionVoiceChannelId(), eY()
+            Chunk195500.Z.clearLastSessionVoiceChannelId(), eW()
           },
           noticeType: c.type
         }), Chunk388032.intl.string(Chunk388032.t.jY2lUA), (0, Chunk54381.jsx)(Chunk481060.NoS, {
@@ -454,7 +454,7 @@ let eW = Chunk473749.memo(function() {
       return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.DANGER,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => eY(),
+          onClick: () => eW(),
           noticeType: c.type
         }), (0, Chunk54381.jsx)("img", {
           alt: "",
@@ -549,7 +549,7 @@ let eW = Chunk473749.memo(function() {
         }), (0, Chunk54381.jsx)(Chunk481060.RyX, {
           noticeType: c.type,
           onClick: () => {
-            Chunk846027.Z.setEnableHardwareMuteNotice(false), eY()
+            Chunk846027.Z.setEnableHardwareMuteNotice(false), eW()
           }
         }), (0, Chunk54381.jsx)(Chunk481060.u3T, {
           href: e3.url,
@@ -563,7 +563,7 @@ let eW = Chunk473749.memo(function() {
       return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.STREAMER_MODE,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => eY(),
+          onClick: () => eW(),
           noticeType: Chunk981631.kVF.STREAMER_MODE
         }), Chunk388032.intl.string(Chunk388032.t.iEgBXp), (0, Chunk54381.jsx)(Chunk481060.NoS, {
           onClick: () => Chunk223245.Z.setEnabled(false),
@@ -622,7 +622,7 @@ let eW = Chunk473749.memo(function() {
       return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.PREMIUM_TIER_1,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => eY(),
+          onClick: () => eW(),
           noticeType: Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL
         }), (0, Chunk54381.jsx)(Chunk481060.SrA, {
           size: "md",
@@ -633,7 +633,7 @@ let eW = Chunk473749.memo(function() {
           skuName: require.name
         }), (0, Chunk54381.jsx)(Chunk481060.EyT, {
           children: (0, Chunk54381.jsx)(Chunk319498.rU, {
-            onClick: () => eY(),
+            onClick: () => eW(),
             to: {
               pathname: Chunk981631.Z5c.APPLICATION_STORE_LISTING_SKU(require.id),
               state: {
@@ -686,7 +686,7 @@ let eW = Chunk473749.memo(function() {
       return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.WARNING,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => eY(),
+          onClick: () => eW(),
           noticeType: Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER
         }), Chunk388032.intl.string(Chunk388032.t.wVjKGi), (0, Chunk54381.jsx)(Chunk481060.NoS, {
           noticeType: Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER,
@@ -711,7 +711,7 @@ let eW = Chunk473749.memo(function() {
       return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.DANGER,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => eY(),
+          onClick: () => eW(),
           noticeType: Chunk981631.kVF.DISPATCH_ERROR
         }), null == e7 ? true : e7.displayMessage, (0, Chunk54381.jsx)(Chunk481060.NoS, {
           noticeType: Chunk981631.kVF.DISPATCH_ERROR,
@@ -732,7 +732,7 @@ let eW = Chunk473749.memo(function() {
       return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.DEFAULT,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => eY(),
+          onClick: () => eW(),
           noticeType: Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS
         }), (0, Chunk54381.jsxs)(Chunk600164.Z, {
           justify: Chunk600164.Z.Justify.CENTER,
@@ -805,7 +805,7 @@ let eW = Chunk473749.memo(function() {
           noticeType: Chunk981631.kVF.PREMIUM_UNCANCEL,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
+            eW(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
           }
         }), (0, Chunk54381.jsx)(Chunk481060.SrA, {
           size: "md",
@@ -821,7 +821,7 @@ let eW = Chunk473749.memo(function() {
           noticeType: Chunk981631.kVF.PREMIUM_UNCANCEL,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk481060.ZDy)(async () => {
+            eW(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk481060.ZDy)(async () => {
               let {
                 default: e
               } = await Promise.all([require.e("84992"), require.e("56158")]).then(require.bind(require, 561623));
@@ -845,14 +845,14 @@ let eW = Chunk473749.memo(function() {
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
           noticeType: c.type,
           onClick: () => {
-            eY(tr)
+            eW(tr)
           }
         }), Chunk388032.intl.format(Chunk388032.t.zxU0Kp, {
           daysPastDue: tn
         }), (0, Chunk54381.jsx)(Chunk481060.NoS, {
           noticeType: Chunk981631.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT,
           onClick: () => {
-            eY(tr), (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
+            eW(tr), (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
               section: Chunk981631.oAB.SUBSCRIPTIONS
             })
           },
@@ -866,13 +866,13 @@ let eW = Chunk473749.memo(function() {
           noticeType: Chunk981631.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
+            eW(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
           }
         }), Chunk388032.intl.string(Chunk388032.t.LlZaoX), (0, Chunk54381.jsx)(Chunk481060.NoS, {
           noticeType: Chunk981631.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
+            eW(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
               section: Chunk981631.oAB.SUBSCRIPTIONS
             })
           },
@@ -886,13 +886,13 @@ let eW = Chunk473749.memo(function() {
           noticeType: Chunk981631.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
+            eW(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
           }
         }), Chunk388032.intl.string(Chunk388032.t["30YfCr"]), (0, Chunk54381.jsx)(Chunk481060.NoS, {
           noticeType: Chunk981631.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
+            eW(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
               section: Chunk981631.oAB.SUBSCRIPTIONS
             })
           },
@@ -906,7 +906,7 @@ let eW = Chunk473749.memo(function() {
           noticeType: Chunk981631.kVF.PREMIUM_MISSING_PAYMENT,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
+            eW(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
           }
         }), eq === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.b6QUvf, {
           daysLeft: c.metadata.daysLeft
@@ -918,7 +918,7 @@ let eW = Chunk473749.memo(function() {
           noticeType: Chunk981631.kVF.PREMIUM_MISSING_PAYMENT,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
+            eW(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
               section: Chunk981631.oAB.SUBSCRIPTIONS
             })
           },
@@ -929,7 +929,7 @@ let eW = Chunk473749.memo(function() {
       return (0, Chunk54381.jsx)(Chunk665302.h, {
         buttonText: null != (t = c.buttonText) ? exports : Chunk388032.intl.string(Chunk388032.t["/g10LC"]),
         onGoBack: c.callback,
-        onDismiss: () => eY(),
+        onDismiss: () => eW(),
         showCloseButton: true
       });
     case Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_PROFILE:
@@ -960,7 +960,7 @@ let eW = Chunk473749.memo(function() {
           noticeType: c.type,
           children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
         }), (0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => eY(),
+          onClick: () => eW(),
           noticeType: Chunk981631.kVF.BLOCKED_BY_PROXY
         })]
       });
@@ -973,12 +973,12 @@ let eW = Chunk473749.memo(function() {
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
           noticeType: Chunk981631.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION,
           onClick: () => {
-            null != Chunk209739 && (0, Chunk36459.T9)(Chunk209739), eY(ti)
+            null != Chunk209739 && (0, Chunk36459.T9)(Chunk209739), eW(ti)
           }
         }), Chunk388032.intl.string(Chunk388032.t.B8ruyY), (0, Chunk54381.jsx)(Chunk481060.EyT, {
           onClick: () => {
             null != Chunk209739 && (0, Chunk36459.UE)(Chunk209739, ta, () => {
-              eY(ti), (0, Chunk36459.T9)(Chunk209739)
+              eW(ti), (0, Chunk36459.T9)(Chunk209739)
             })
           },
           children: Chunk388032.intl.string(Chunk388032.t.oX14El)
@@ -993,7 +993,7 @@ let eW = Chunk473749.memo(function() {
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
           noticeType: Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR,
           onClick: () => {
-            Chunk523255.hZ(), eY()
+            Chunk523255.hZ(), eW()
           }
         }), Chunk388032.intl.string(Chunk388032.t.I1nKfO), (0, Chunk54381.jsx)(Chunk481060.NoS, {
           noticeType: Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR,
@@ -1003,7 +1003,7 @@ let eW = Chunk473749.memo(function() {
                 default: e
               } = await Promise.all([require.e("26860"), require.e("52432")]).then(require.bind(require, 349994));
               return t => (0, r.jsx)(e, eL({}, t))
-            }), Chunk523255.hZ(), eY()
+            }), Chunk523255.hZ(), eW()
           },
           children: Chunk388032.intl.string(Chunk388032.t.l5xYnH)
         })]
@@ -1012,7 +1012,7 @@ let eW = Chunk473749.memo(function() {
       let to = o()().add(5, "days").toDate();
       return (0, Chunk54381.jsx)(Chunk246965.Z, {
         dismissCurrentNotice: () => {
-          (0, Chunk266454.Q3)(Chunk933429.m9[Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING]), eY(to)
+          (0, Chunk266454.Q3)(Chunk933429.m9[Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING]), eW(to)
         },
         subscriptionTier: Chunk474936.Si.TIER_2
       });
@@ -1020,7 +1020,7 @@ let eW = Chunk473749.memo(function() {
       let ts = o()().add(5, "days").toDate();
       return (0, Chunk54381.jsx)(Chunk535278.Z, {
         dismissCurrentNotice: () => {
-          eY(ts)
+          eW(ts)
         },
         subscriptionTier: Chunk474936.Si.TIER_2
       });
@@ -1041,13 +1041,13 @@ let eW = Chunk473749.memo(function() {
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
           onClick: () => {
             var e;
-            eY(null == (e = c.metadata) ? true : module.dismissUntil)
+            eW(null == (e = c.metadata) ? true : module.dismissUntil)
           },
           noticeType: Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR
         }), Chunk388032.intl.string(Chunk388032.t["0klLS7"]), (0, Chunk54381.jsx)(Chunk481060.NoS, {
           onClick: () => {
             var e;
-            (0, Chunk496729.ZZ)(), eY(null == (e = c.metadata) ? true : module.dismissUntil)
+            (0, Chunk496729.ZZ)(), eW(null == (e = c.metadata) ? true : module.dismissUntil)
           },
           noticeType: Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR,
           children: Chunk388032.intl.string(Chunk388032.t.e4y2VM)
@@ -1068,6 +1068,6 @@ function eK() {
   } = (0, Chunk906732.ZP)(Chunk100527.Z.NOTICE);
   return (0, Chunk54381.jsx)(Chunk906732.Gt, {
     value: module,
-    children: (0, Chunk54381.jsx)(eW, {})
+    children: (0, Chunk54381.jsx)(eY, {})
   })
 }

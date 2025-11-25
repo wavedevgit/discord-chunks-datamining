@@ -154,7 +154,7 @@ function N(e) {
     null != s && t.push((0, p.LF)(s, o, a))
   }), e.guilds.forEach(e => {
     e.guild_scheduled_events.forEach(e => {
-      Y(e)
+      W(e)
     })
   }), y.notifCenterLocalItems = t
 }
@@ -302,16 +302,16 @@ function H(e) {
   let {
     guildScheduledEvent: t
   } = e;
-  Y(t)
+  W(t)
 }
 
-function Y(e) {
+function W(e) {
   (0, s.Z2)(e) && (y.notifCenterItems = y.notifCenterItems.map(t => t.type === _.DY.GUILD_SCHEDULED_EVENT_STARTED && t.guild_scheduled_event_id === e.id ? b(g({}, t), {
     disable_action: true
   }) : t))
 }
 
-function W(e) {
+function Y(e) {
   let {
     newBuild: t
   } = e;
@@ -395,6 +395,6 @@ let z = new K(Chunk570140.Z, {
   GAME_RELATIONSHIP_REMOVE: F,
   NOTIFICATION_CENTER_ITEM_COMPLETED: V,
   SET_RECENT_MENTIONS_FILTER: () => I(),
-  MOBILE_NATIVE_UPDATE_CHECK_FINISHED: W,
+  MOBILE_NATIVE_UPDATE_CHECK_FINISHED: Y,
   APPLICATIONS_FETCH_SUCCESS: C
 })

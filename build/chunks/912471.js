@@ -144,7 +144,7 @@ function V() {
 
 function H() {}
 
-function Y() {
+function W() {
   let e = [];
   return null != j && (k && module.push("foregrounded"), M !== Chunk981631.hes.DISCONNECTED && M !== Chunk981631.hes.RTC_DISCONNECTED && module.push("rtc_connected")), {
     active: module.length > 0,
@@ -153,12 +153,12 @@ function Y() {
   }
 }
 
-function W() {
-  return Y().active
+function Y() {
+  return W().active
 }
 
 function K() {
-  W() ? U() : B(), J()
+  Y() ? U() : B(), J()
 }
 
 function z() {
@@ -192,7 +192,7 @@ function Q() {
 
 function J() {
   var e;
-  null == (e = Chunk38618.Z.getSocket()) || module.handleActiveStateChange(Y())
+  null == (e = Chunk38618.Z.getSocket()) || module.handleActiveStateChange(W())
 }
 async function $() {
   let e = await eo(false);
@@ -247,7 +247,7 @@ async function eo() {
   }
   return (() => {
     let e = Date.now();
-    if (W() ? ((null == require || (0, Chunk686325.qK)(require)) && (n = {
+    if (Y() ? ((null == require || (0, Chunk686325.qK)(require)) && (n = {
         uuid: (0, Chunk772848.Z)(),
         createdAtTimestamp: module,
         lastUsedTimestamp: module,

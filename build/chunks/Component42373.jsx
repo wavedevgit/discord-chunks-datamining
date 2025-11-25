@@ -205,17 +205,17 @@ let A = e => {
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(F, {}), (0, r.jsx)(Z, {})]
       }),
-      Y = {
+      W = {
         className: o()(w ? y.backgroundColor : k, B.boxContainer, B["".concat(D)], w && y.gradientBackground),
         onMouseEnter: U,
         onFocus: U,
         onBlur: G,
         onMouseLeave: G
       };
-    return w ? (0, r.jsx)(d.$1m, T(v({}, Y), {
+    return w ? (0, r.jsx)(d.$1m, T(v({}, W), {
       color: "purple",
       children: (0, r.jsx)(H, {})
-    })) : (0, r.jsx)("div", T(v({}, Y), {
+    })) : (0, r.jsx)("div", T(v({}, W), {
       children: (0, r.jsx)(H, {})
     }))
   }

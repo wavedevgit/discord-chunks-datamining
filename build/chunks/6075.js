@@ -184,12 +184,12 @@ function V(e, {
     let n = u.Z.read(e, P);
     t ? C.file = n : C = (0, r.wB)({}, C, n)
   }
-  if (a.Z.USE_JPEG && a.Z.USE_JFIF && Y(D)) {
+  if (a.Z.USE_JPEG && a.Z.USE_JFIF && W(D)) {
     A = true;
     let n = d.Z.read(e, D);
     t ? C.jfif = n : C = (0, r.wB)({}, C, n)
   }
-  if (a.Z.USE_EXIF && W(w)) {
+  if (a.Z.USE_EXIF && Y(w)) {
     A = true;
     let {
       tags: n,
@@ -301,11 +301,11 @@ function H(e) {
   return true !== e
 }
 
-function Y(e) {
+function W(e) {
   return true !== e
 }
 
-function W(e) {
+function Y(e) {
   return true !== e
 }
 

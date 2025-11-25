@@ -184,8 +184,8 @@ function H(e) {
   } = e;
   I[t] = 0
 }
-let Y = [];
-class W extends(r = Chunk442837.ZP.Store) {
+let W = [];
+class Y extends(r = Chunk442837.ZP.Store) {
   getSubscriptionGroupListingsForGuildFetchState(e) {
     var t;
     return null != (t = E[e]) ? t : 0
@@ -209,7 +209,7 @@ class W extends(r = Chunk442837.ZP.Store) {
   getSubscriptionListingsForGuild(e) {
     var t;
     let n = null == (t = this.getSubscriptionGroupListingsForGuild(e)[0]) ? true : t.application_id;
-    return null != n ? g.values(p(n)) : Y
+    return null != n ? g.values(p(n)) : W
   }
   getSubscriptionListingForPlan(e) {
     let t = g.values(h(e));
@@ -232,8 +232,8 @@ class W extends(r = Chunk442837.ZP.Store) {
     return T.get(e)
   }
 }
-u(W, "displayName", "GuildRoleSubscriptionsStore");
-let K = new W(Chunk570140.Z, {
+u(Y, "displayName", "GuildRoleSubscriptionsStore");
+let K = new Y(Chunk570140.Z, {
   CONNECTION_OPEN: N,
   GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS: R,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS: P,

@@ -85,10 +85,10 @@ let D = (0, Chunk790519.animated)(Chunk481060.CJ0),
     } = e, {
       ref: G,
       height: B
-    } = (0, d.ZP)(), [Z, F] = i.useState(null), [V, H] = i.useState(null), Y = (0, _.Z)(e => {
+    } = (0, d.ZP)(), [Z, F] = i.useState(null), [V, H] = i.useState(null), W = (0, _.Z)(e => {
       let t = e.target;
       F(t.offsetWidth), H(t.scrollWidth)
-    }), W = (0, f.y)(Y), K = (0, v.uq)(C), z = C === m.jn.QUESTS_EMBED, q = (0, h.t5)(a, I.dr.QUESTS_CARD, C, U), X = (null == (t = a.userStatus) ? true : t.completedAt) != null, Q = (0, p.O5)(), J = (0, h.B6)(a.config.expiresAt), $ = (0, h.B6)(a.config.rewardsConfig.rewardsExpireAt), ee = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), et = e => {
+    }), Y = (0, f.y)(W), K = (0, v.uq)(C), z = C === m.jn.QUESTS_EMBED, q = (0, h.t5)(a, I.dr.QUESTS_CARD, C, U), X = (null == (t = a.userStatus) ? true : t.completedAt) != null, Q = (0, p.O5)(), J = (0, h.B6)(a.config.expiresAt), $ = (0, h.B6)(a.config.rewardsConfig.rewardsExpireAt), ee = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), et = e => {
       e.stopPropagation(), e.currentTarget.blur(), j(), Q({
         questId: a.id,
         questContent: C,
@@ -202,7 +202,7 @@ let D = (0, Chunk790519.animated)(Chunk481060.CJ0),
                   __unsupportedReactNodeAsText: a.config.messages.questName,
                   shouldShow: en(),
                   children: (0, r.jsx)(u.Heading, {
-                    ref: W,
+                    ref: Y,
                     variant: "lg" === R ? "heading-xxl/bold" : "sm" === R ? "heading-xl/bold" : "heading-lg/bold",
                     className: A.heading,
                     color: "always-white",

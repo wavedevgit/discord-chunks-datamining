@@ -7,7 +7,7 @@ require.d(exports, {
   W8: () => eV,
   _x: () => eH,
   c$: () => eZ,
-  ec: () => eY,
+  ec: () => eW,
   iE: () => eK
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
@@ -165,14 +165,14 @@ let eB = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
       location: "SettingsRendererConfig"
     }).enabled && module.push(Chunk704215.z.NITRO_PRIVACY_PERK_NEW_BADGE), module
   },
-  eY = () => {
+  eW = () => {
     let e = eH(),
       [t] = (0, Chunk243778.US)(module);
     return Chunk704215.z.NITRO_PRIVACY_PERK_NEW_BADGE === exports ? (0, Chunk54381.jsx)(Chunk481060.IGR, {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     }) : null
   },
-  eW = Chunk200645.Z,
+  eY = Chunk200645.Z,
   eK = e => {
     let {
       unseenGiftCount: t,
@@ -1022,7 +1022,7 @@ let eB = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         predicate: () => {
           let {
             enabledInputProfiles: e
-          } = (0, W.P)({
+          } = (0, Y.P)({
             location: "SettingsRendererConfig"
           });
           return e.length > 0
@@ -1504,7 +1504,7 @@ let eB = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eR.oAB.LINUX,
         searchableTitles: [eD.intl.string(eD.t["7pPjTW"])],
         label: eD.intl.string(eD.t["7pPjTW"]),
-        element: eW,
+        element: eY,
         predicate: () => F.isPlatformEmbedded && (0, F.isLinux)()
       },
       [eC.s6.STREAMER_MODE]: {
@@ -1596,7 +1596,7 @@ let eB = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         predicate: () => P.H.getConfig({
           location: "SettingsRendererConfig"
         }).enabled,
-        newIndicator: (0, r.jsx)(eY, {}),
+        newIndicator: (0, r.jsx)(eW, {}),
         newIndicatorDismissibleContentTypes: [a.z.NITRO_PRIVACY_PERK_NEW_BADGE],
         url: eR.Z5c.SETTINGS("private-browsing")
       },
@@ -1934,7 +1934,7 @@ let eB = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
       },
       [eC.s6.CLIENT_DEBUG_INFO]: {
         section: f.ID.CUSTOM,
-        element: Y.Z
+        element: W.Z
       }
     })
   }

@@ -128,7 +128,7 @@ function D(e) {
     isHovered: G
   } = (0, o.X)({
     isDisabled: n
-  }), B = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), Z = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), F = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT_SELECTED).spring(), V = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), H = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT).spring(), Y = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT_SELECTED).spring(), W = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), K = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER_SELECTED).spring(), z = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER).spring(), q = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER_SELECTED).spring(), X = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_DEFAULT).spring(), Q = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_ACTIVE).spring(), J = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), $ = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT_SELECTED).spring(), {
+  }), B = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), Z = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), F = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT_SELECTED).spring(), V = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), H = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT).spring(), W = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT_SELECTED).spring(), Y = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), K = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER_SELECTED).spring(), z = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER).spring(), q = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER_SELECTED).spring(), X = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_DEFAULT).spring(), Q = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_ACTIVE).spring(), J = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), $ = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT_SELECTED).spring(), {
     state: ee,
     opacity: et
   } = (0, u.q)({
@@ -163,13 +163,13 @@ function D(e) {
           opacity: et,
           backgroundColor: ee.to({
             range: C,
-            output: [G ? W : B, Z, V, G ? K : F],
+            output: [G ? Y : B, Z, V, G ? K : F],
             extrapolate: "clamp"
           }),
           border: "1px solid",
           borderColor: ee.to({
             range: C,
-            output: [G ? z : H, G ? z : H, G ? q : Y, G ? q : Y],
+            output: [G ? z : H, G ? z : H, G ? q : W, G ? q : W],
             extrapolate: "clamp"
           })
         },

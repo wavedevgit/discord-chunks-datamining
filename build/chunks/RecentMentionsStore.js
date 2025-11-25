@@ -160,7 +160,7 @@ function H(e) {
   }) && (k = false), e) : null
 }
 
-function Y(e) {
+function W(e) {
   let {
     channelId: t,
     message: n
@@ -178,7 +178,7 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   let t = e.message.id;
   if (null == t || null == P[t]) returnfalse;
   let n = a().findIndex(N, e => {
@@ -345,8 +345,8 @@ let eo = new ea(Chunk570140.Z, {
   CHANNEL_SELECT: Q,
   CONNECTION_OPEN: J,
   GUILD_DELETE: $,
-  MESSAGE_CREATE: Y,
-  MESSAGE_UPDATE: W,
+  MESSAGE_CREATE: W,
+  MESSAGE_UPDATE: Y,
   MESSAGE_DELETE: z,
   RECENT_MENTION_DELETE: z,
   MESSAGE_DELETE_BULK: q,

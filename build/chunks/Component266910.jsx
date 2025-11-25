@@ -118,21 +118,21 @@ let C = function(e) {
         dispatchWait: true
       })
     }, [H, P, D]), null == N) return null;
-  let Y = (0, r.jsx)(l.qEK, v({
+  let W = (0, r.jsx)(l.qEK, v({
       className: y.avatarWrapper,
       src: N
     }, x)),
-    W = T(v({}, C), {
+    Y = T(v({}, C), {
       backgroundColor: k
     });
-  return null != F && L && j && (W.backgroundImage = "url(".concat(F, ")"), W.backgroundSize = "cover"), (0, r.jsx)("div", {
-    style: V ? v({}, C, B) : v({}, W),
+  return null != F && L && j && (Y.backgroundImage = "url(".concat(F, ")"), Y.backgroundSize = "cover"), (0, r.jsx)("div", {
+    style: V ? v({}, C, B) : v({}, Y),
     className: o()(y.background, {
       [Z]: V
     }),
     children: w ? (0, r.jsx)(d.Z, {
       shouldAnimate: L,
-      children: Y
-    }) : Y
+      children: W
+    }) : W
   })
 }

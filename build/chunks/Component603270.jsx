@@ -252,7 +252,7 @@ function x(e) {
         area: "purchase_button"
       })
     },
-    Y = () => {
+    W = () => {
       (0, I.X)(b.id, I.B.SKU_EMBED, c)
     };
   return (0, r.jsx)(M, {
@@ -260,7 +260,7 @@ function x(e) {
     title: m.name,
     description: Z,
     link: "".concat(location.protocol, "//").concat(location.host).concat(A.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(b.id, C.GlobalDiscoveryAppsSections.STORE)),
-    onLinkCopy: Y,
+    onLinkCopy: W,
     iconSrc: P,
     onIconClick: F,
     children: (0, r.jsxs)("div", {

@@ -208,7 +208,7 @@ function ed(e) {
       planName: K.ZP.getDisplayPremiumType(p.planId)
     }) : ee.intl.format(eh ? ee.t.ba1L74 : ee.t.fkffDT, {
       onPremiumSubscriptionClick: m,
-      discountPercentage: (0, W.T3)(j.default.locale, J.Rr / 100),
+      discountPercentage: (0, Y.T3)(j.default.locale, J.Rr / 100),
       freeSubscriptionCount: J.cb
     }),
     ev = g.filter(e => (0, H.tl)(e)).length,
@@ -303,7 +303,7 @@ function ed(e) {
       })
     }), (0, r.jsx)(h.Z, {
       message: ee.intl.format(ee.t.Om31w8, {
-        documentationLink: Y.Z.getArticleURL(X.BhN.LOCALIZED_PRICING)
+        documentationLink: W.Z.getArticleURL(X.BhN.LOCALIZED_PRICING)
       })
     }), ey ? (0, r.jsx)(k.e, {}) : (0, r.jsx)(k.Z, {
       text: eO,
@@ -519,7 +519,7 @@ function ep(e) {
   return n = l ? null == y ? ee.intl.format(ee.t.P52e1r, {}) : ee.intl.format(ee.t["4UnIk9"], {
     guildName: y
   }) : d ? ee.intl.format(ee.t.gFaKd1, {
-    helpCenterLink: Y.Z.getArticleURL(X.BhN.FRACTIONAL_PREMIUM_ABOUT)
+    helpCenterLink: W.Z.getArticleURL(X.BhN.FRACTIONAL_PREMIUM_ABOUT)
   }) : null == y ? ee.intl.format(ee.t.SZ5ohR, {
     guildSubscriptionQuantity: s
   }) : ee.intl.format(ee.t.GxK3Mv, {

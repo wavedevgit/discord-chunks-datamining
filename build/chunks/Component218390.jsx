@@ -261,7 +261,7 @@ function e_(e) {
         style: h,
         variant: "text-xxs/normal",
         children: a.additionalTerm()
-      }), (0, r.jsx)(W.Z, {
+      }), (0, r.jsx)(Y.Z, {
         variant: "primary",
         size: "md",
         onClick: () => {

@@ -43,8 +43,8 @@ var Chunk98405 = require("./98405.js"),
   F = Chunk391246.ArrayBuffer,
   V = F.prototype,
   H = Chunk391246.DataView,
-  Y = Chunk840475.NATIVE_ARRAY_BUFFER_VIEWS,
-  W = Chunk840475.TYPED_ARRAY_TAG,
+  W = Chunk840475.NATIVE_ARRAY_BUFFER_VIEWS,
+  Y = Chunk840475.TYPED_ARRAY_TAG,
   K = Chunk840475.TypedArray,
   z = Chunk840475.TypedArrayPrototype,
   q = Chunk840475.isTypedArray,
@@ -71,10 +71,10 @@ var Chunk98405 = require("./98405.js"),
   en = function(e, t, n) {
     return ee(e, t = E(t)) && O(n) && b(n, "value") && !b(n, "get") && !b(n, "set") && !n.configurable && (!b(n, "writable") || n.writable) && (!b(n, "enumerable") || n.enumerable) ? (e[t] = n.value, e) : G(e, t, n)
   };
-Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLength"), J(z, "length")), Chunk98405({
+Chunk507604 ? (W || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLength"), J(z, "length")), Chunk98405({
   target: "Object",
   stat: true,
-  forced: !Y
+  forced: !W
 }, {
   getOwnPropertyDescriptor: et,
   defineProperty: en
@@ -106,7 +106,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
         enumerable: true
       })
     };
-  Y ? s && (E = t(function(e, t, n, r) {
+  W ? s && (E = t(function(e, t, n, r) {
     return u(e, b), M(function() {
       return O(t) ? $(t) ? true !== r ? new _(t, m(n, o), r) : true !== n ? new _(t, m(n, o)) : new _(t) : q(t) ? L(E, t) : a(C, E, t) : new _(h(t))
     }(), e, E)
@@ -134,12 +134,12 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
         length: l,
         view: new H(i)
       }); c < l;) P(e, c++)
-  }), S && S(E, K), b = E.prototype = I(z)), b.constructor !== E && f(b, "constructor", E), U(b).TypedArrayConstructor = E, W && f(b, W, l);
+  }), S && S(E, K), b = E.prototype = I(z)), b.constructor !== E && f(b, "constructor", E), U(b).TypedArrayConstructor = E, Y && f(b, Y, l);
   var D = E !== _;
   y[l] = E, r({
     global: true,
     constructor: true,
     forced: D,
-    sham: !Y
+    sham: !W
   }, y), X in E || f(E, X, o), X in b || f(b, X, o), R(l)
 }) : module.exports = function() {}

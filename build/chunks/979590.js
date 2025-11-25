@@ -28,7 +28,7 @@
       a = null,
       l = false,
       c = false;
-    return "string" == typeof e && (e = K(e)), "object" == typeof e && (W(e.r) && W(e.g) && W(e.b) ? (t = d(e.r, e.g, e.b), l = true, c = "%" === String(e.r).substr(false) ? "prgb" : "rgb") : W(e.h) && W(e.s) && W(e.v) ? (r = F(e.s), i = F(e.v), t = h(e.h, r, i), l = true, c = "hsv") : W(e.h) && W(e.s) && W(e.l) && (r = F(e.s), a = F(e.l), t = _(e.h, r, a), l = true, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = M(n), {
+    return "string" == typeof e && (e = K(e)), "object" == typeof e && (Y(e.r) && Y(e.g) && Y(e.b) ? (t = d(e.r, e.g, e.b), l = true, c = "%" === String(e.r).substr(false) ? "prgb" : "rgb") : Y(e.h) && Y(e.s) && Y(e.v) ? (r = F(e.s), i = F(e.v), t = h(e.h, r, i), l = true, c = "hsv") : Y(e.h) && Y(e.s) && Y(e.l) && (r = F(e.s), a = F(e.l), t = _(e.h, r, a), l = true, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = M(n), {
       ok: l,
       format: e.format || c,
       r: o(255, s(t.r, 0)),
@@ -676,7 +676,7 @@
   function H(e) {
     return U(e) / 255
   }
-  var Y = function() {
+  var W = function() {
     var e = "(?:[-\\+]?\\d*\\.\\d+%?)|(?:[-\\+]?\\d+%?)",
       t = "[\\s|\\(]+(" + e + ")[,|\\s]+(" + e + ")[,|\\s]+(" + e + ")\\s*\\)?",
       n = "[\\s|\\(]+(" + e + ")[,|\\s]+(" + e + ")[,|\\s]+(" + e + ")[,|\\s]+(" + e + ")\\s*\\)?";
@@ -695,8 +695,8 @@
     }
   }();
 
-  function W(e) {
-    return !!Y.CSS_UNIT.exec(e)
+  function Y(e) {
+    return !!W.CSS_UNIT.exec(e)
   }
 
   function K(e) {
@@ -710,51 +710,51 @@
       a: 0,
       format: "name"
     };
-    return (t = Y.rgb.exec(e)) ? {
+    return (t = W.rgb.exec(e)) ? {
       r: t[1],
       g: t[2],
       b: t[3]
-    } : (t = Y.rgba.exec(e)) ? {
+    } : (t = W.rgba.exec(e)) ? {
       r: t[1],
       g: t[2],
       b: t[3],
       a: t[4]
-    } : (t = Y.hsl.exec(e)) ? {
+    } : (t = W.hsl.exec(e)) ? {
       h: t[1],
       s: t[2],
       l: t[3]
-    } : (t = Y.hsla.exec(e)) ? {
+    } : (t = W.hsla.exec(e)) ? {
       h: t[1],
       s: t[2],
       l: t[3],
       a: t[4]
-    } : (t = Y.hsv.exec(e)) ? {
+    } : (t = W.hsv.exec(e)) ? {
       h: t[1],
       s: t[2],
       v: t[3]
-    } : (t = Y.hsva.exec(e)) ? {
+    } : (t = W.hsva.exec(e)) ? {
       h: t[1],
       s: t[2],
       v: t[3],
       a: t[4]
-    } : (t = Y.hex8.exec(e)) ? {
+    } : (t = W.hex8.exec(e)) ? {
       r: U(t[1]),
       g: U(t[2]),
       b: U(t[3]),
       a: H(t[4]),
       format: i ? "name" : "hex8"
-    } : (t = Y.hex6.exec(e)) ? {
+    } : (t = W.hex6.exec(e)) ? {
       r: U(t[1]),
       g: U(t[2]),
       b: U(t[3]),
       format: i ? "name" : "hex"
-    } : (t = Y.hex4.exec(e)) ? {
+    } : (t = W.hex4.exec(e)) ? {
       r: U(t[1] + "" + t[1]),
       g: U(t[2] + "" + t[2]),
       b: U(t[3] + "" + t[3]),
       a: H(t[4] + "" + t[4]),
       format: i ? "name" : "hex8"
-    } : !!(t = Y.hex3.exec(e)) && {
+    } : !!(t = W.hex3.exec(e)) && {
       r: U(t[1] + "" + t[1]),
       g: U(t[2] + "" + t[2]),
       b: U(t[3] + "" + t[3]),

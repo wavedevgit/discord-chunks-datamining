@@ -197,7 +197,7 @@ function ey(e) {
       emoji: i
     } = e;
     if (null != i) {
-      if (Y.default.track(es.rMx.CONTENT_POPOUT_EMOJI_CLICKED, {
+      if (W.default.track(es.rMx.CONTENT_POPOUT_EMOJI_CLICKED, {
           surface_type: eo.Kd.GUILD_MEMBER_LIST,
           channel_id: null == t ? true : t.id,
           guild_id: null == t ? true : t.guild_id
@@ -207,7 +207,7 @@ function ey(e) {
         let e = await h.Z.getOrEnsurePrivateChannel(n.id);
         r = null != (o = j.Z.getChannel(e)) ? o : null
       }
-      return l()(null != r, "Send channel must be defined"), W({
+      return l()(null != r, "Send channel must be defined"), Y({
         reply: ":".concat(i.name, ":"),
         sendToChannel: r,
         onComplete: (e, t) => {
@@ -230,14 +230,14 @@ function ey(e) {
       l()(null != t, "DM channel must be defined"), r = t
     }
     let i = r.type === es.d4z.DM ? eo.xP.DM_REACTION_MESSAGE_SENT : eo.xP.CHANNEL_REACTION_MESSAGE_SENT;
-    return W({
+    return Y({
       reply: e,
       sendToChannel: r,
       interactionType: i,
       onComplete: a,
       requiresChannelReadiness: true
     })
-  }, W = async e => {
+  }, Y = async e => {
     let {
       reply: t,
       sendToChannel: n,
@@ -344,7 +344,7 @@ let eO = e => {
       url: e.url
     } : {
       emoji: e,
-      url: (0, W.gT)({
+      url: (0, Y.gT)({
         id: e.id,
         animated: e.animated,
         size: 58

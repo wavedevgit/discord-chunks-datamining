@@ -121,9 +121,9 @@ function x(e) {
     } = (0, v.pi)(x),
     {
       primaryColor: H,
-      secondaryColor: Y
+      secondaryColor: W
     } = (0, O.Z)(null == U ? true : U.src),
-    W = (0, y.Z)(A.ABu.SPOTIFY),
+    Y = (0, y.Z)(A.ABu.SPOTIFY),
     K = (0, o.e7)([u.Z, p.default], () => (null == G ? true : G.type) === A.IIU.LISTENING && null != V ? (0, f.Z)(u.Z, p.default, V, G) : true, [G, V], s.Z),
     z = i.useCallback(() => {
       var e;
@@ -141,12 +141,12 @@ function x(e) {
           artist: Z,
           media: F
         }, R, V),
-        colors: [H, Y],
+        colors: [H, W],
         badges: (0, b.jE)({
           timestamp: n
         })
       })
-    }, [G, Z, R, x, null == U ? true : U.src, H, Y, F, V]);
+    }, [G, Z, R, x, null == U ? true : U.src, H, W, F, V]);
   if (null == G || null == B) return null;
   let q = Z,
     X = [];
@@ -157,7 +157,7 @@ function x(e) {
       (0, c.Z5)(G, V.id)
     }, n = () => {
       var e;
-      null != (e = null == W ? true : W()) || (0, c.aG)(G)
+      null != (e = null == Y ? true : Y()) || (0, c.aG)(G)
     };
     let e = e => {
       (0, c.d$)(G, V.id, e)

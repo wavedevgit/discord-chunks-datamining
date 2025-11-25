@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   Q2: () => B,
-  Rv: () => Y,
+  Rv: () => W,
   U6: () => F,
   UD: () => Z,
-  ZP: () => W,
+  ZP: () => Y,
   oT: () => H
 }), require("./415506.js"), require("./539854.js");
 var Chunk2818 = require("./2818.js"),
@@ -137,7 +137,7 @@ let H = {
   [Chunk981631.EkH.BROWSER_DEVTOOLS]: Chunk775774.p
 };
 
-function Y() {
+function W() {
   let e = [{
       description: Chunk388032.intl.string(Chunk388032.t.bx4Uyz),
       binds: V(Chunk981631.EkH.SERVER_PREV, Chunk981631.EkH.SERVER_NEXT),
@@ -343,4 +343,4 @@ function Y() {
     group: "CHAT"
   }), module
 }
-let W = H
+let Y = H

@@ -173,7 +173,7 @@ function H(e) {
   return null
 }
 
-function Y() {
+function W() {
   switch (Math.floor(Math.random() * Object.keys(P).length)) {
     case 0:
       return "TOP_LEFT";
@@ -185,7 +185,7 @@ function Y() {
       return "BOTTOM_RIGHT"
   }
 }
-let W = 45,
+let Y = 45,
   K = ["#61D5B2"],
   Chunk303893 = require("./303893.js"),
   Chunk313226 = require("./313226.js"),
@@ -250,7 +250,7 @@ function et(e) {
     onClick: n,
     position: a,
     size: c
-  } = e, u = i.useRef(null), [_, p] = i.useState(null), [h] = i.useState(null != a ? a : Y()), {
+  } = e, u = i.useRef(null), [_, p] = i.useState(null), [h] = i.useState(null != a ? a : W()), {
     createMultipleConfettiAt: m,
     confettiCanvas: g
   } = i.useContext(f.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = J(_, h), v = D.includes(h), T = v && "exit" === _, S = i.useCallback(e => {
@@ -290,7 +290,7 @@ function et(e) {
         },
         size: {
           type: "static",
-          value: W
+          value: Y
         },
         rotation: {
           type: "linear-random",
@@ -324,8 +324,8 @@ function et(e) {
       ref: b,
       sprites: X,
       colors: K,
-      spriteWidth: W,
-      spriteHeight: W
+      spriteWidth: Y,
+      spriteHeight: Y
     }), (0, r.jsx)(d.P3F, {
       onClick: n,
       className: o()(I.easterEggAnimationClickTarget, {

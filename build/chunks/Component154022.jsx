@@ -205,7 +205,7 @@ function er() {
           className: Chunk953752.previewAvatars,
           children: [Chunk981631.Skl.ONLINE, Chunk981631.Skl.DND, Chunk981631.Skl.IDLE].map(e => (0, r.jsx)(c.Xo$, {
             "aria-label": V.intl.string(V.t.lqaIxI),
-            src: W,
+            src: Y,
             size: c.EFr.SIZE_32,
             status: e
           }, e))

@@ -125,7 +125,7 @@ function D(e) {
     modal: G = false,
     returnRef: B,
     experimental_ignoreModalClicks: Z = true
-  } = e, [F, V] = i.useState(h), [H, Y] = i.useState(b), W = i.useRef(b), K = i.useRef(0), {
+  } = e, [F, V] = i.useState(h), [H, W] = i.useState(b), Y = i.useRef(b), K = i.useRef(0), {
     ref: z,
     width: q,
     height: X
@@ -135,7 +135,7 @@ function D(e) {
   }, [k]);
   let ee = i.useCallback(e => {
       var t;
-      null != e && e !== W.current && (W.current = e, Y(e), null == (t = $.current) || t.call($, e))
+      null != e && e !== Y.current && (Y.current = e, W(e), null == (t = $.current) || t.call($, e))
     }, []),
     et = i.useMemo(() => {
       var e, t;

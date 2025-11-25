@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.r(exports), require.d(exports, {
-  OverlayPIDStatus: () => W,
+  OverlayPIDStatus: () => Y,
   default: () => e1,
   getOverlayURL: () => eT
 }), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./853839.js"), require("./570086.js"), require("./479048.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./358797.js"), require("./415506.js"), require("./49124.js");
@@ -78,12 +78,12 @@ function H(e, t) {
   return n
 }
 
-function Y(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : H(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var W = function(e) {
+var Y = function(e) {
   return e.ATTACHING = "ATTACHING", e.CONNECTING = "CONNECTING", e.CONNECTED = "CONNECTED", e.READY = "READY", e.CRASHED = "CRASHED", e.CONNECT_FAILED = "CONNECT_FAILED", e.HOOK_FAILED = "HOOK_FAILED", e.DISCONNECTING = "DISCONNECTING", e
 }({});
 let K = {},
@@ -115,7 +115,7 @@ class er {
       }), this.actionsToFlush.clear()), this.waitingActionsToFlush.size > 0 && this.enqueueWaitingActions()
     }), F(this, "dispatchPayloads", e => {
       this.isDispatching = true, e.forEach(e => l.Z.dispatch(e)), this.isDispatching = false
-    }), F(this, "queueDispatch", e => !(!X() || ea.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = Y(V({}, e), {
+    }), F(this, "queueDispatch", e => !(!X() || ea.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = W(V({}, e), {
       settings: {
         type: e.settings.type,
         proto: (0, P.cv)(e.settings.type, e.settings.proto)
@@ -175,7 +175,7 @@ let e_ = "none",
       let n = "overlayLock: lastMutexCall ".concat(e_, "}");
       el.error(n);
       let r = eu((0, U.getPID)());
-      ed((0, U.getPID)(), Y(V({}, r), {
+      ed((0, U.getPID)(), W(V({}, r), {
         error_description: n,
         success: false
       })), x.default.track(B.rMx.OVERLAY_HOOK_RESULT, eu((0, U.getPID)()))
@@ -420,7 +420,7 @@ function eP(e) {
           payloads: [n]
         }), eg(i, "READY"), (0, U.setPID)(i), f.Z.overlayReady(i);
         let o = eu(i);
-        ed(i, Y(V({}, o), {
+        ed(i, W(V({}, o), {
           total_mount_time_ms: null != o.mounting_started_at ? new Date().getTime() - o.mounting_started_at : true
         }))
       });
@@ -482,7 +482,7 @@ function ej(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "a7451c633b51a13d014a130495df39b443b90760"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "8976a55010d86a4c18f45ebe1ab1b521052fbdaf"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {
@@ -536,7 +536,7 @@ function eH(e) {
   return eS(t), false
 }
 
-function eY(e) {
+function eW(e) {
   let {
     userId: t,
     sessionId: n,
@@ -555,7 +555,7 @@ function eY(e) {
   })
 }
 
-function eW(e) {
+function eY(e) {
   let {
     normalizedMouseX: t,
     normalizedMouseY: n
@@ -657,7 +657,7 @@ class e$ extends(i = Chunk442837.ZP.Store) {
 }
 F(e$, "displayName", "OverlayBridgeStore");
 let e0 = new e$(Chunk570140.Z, __OVERLAY__ ? {
-    OVERLAY_RELAY_CLICK_ZONE_CLICKED: eW
+    OVERLAY_RELAY_CLICK_ZONE_CLICKED: eY
   } : {
     LOGIN: eQ,
     LOGOUT: eJ,
@@ -673,7 +673,7 @@ let e0 = new e$(Chunk570140.Z, __OVERLAY__ ? {
     OVERLAY_DEACTIVATE_ALL_REGIONS: ek,
     RPC_SERVER_READY: ej,
     OVERLAY_CALL_PRIVATE_CHANNEL: eU,
-    OVERLAY_JOIN_GAME: eY,
+    OVERLAY_JOIN_GAME: eW,
     OVERLAY_CRASHED: eB,
     OVERLAY_UPDATE_OVERLAY_METHOD: eq
   }),

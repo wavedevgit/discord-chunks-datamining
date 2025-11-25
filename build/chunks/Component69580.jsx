@@ -275,7 +275,7 @@ function ec(e) {
   i.useEffect(() => {
     L.default.isAuthenticated() && !eR && b.Z.getExperiments()
   }, [eR]);
-  let [eP, eD] = i.useState(null), [ew, eL] = i.useState(null), [ex, eM] = i.useState(null), [ek, ej] = i.useState(false), [eU, eG] = i.useState(false), eB = null == eP ? true : eP.guilds, [eZ, eF] = i.useState(null != e_ ? e_ : null), [eV, eH] = i.useState(null != ep ? ep : null), [eY, eW] = i.useState(x.Hn), [eK, ez] = i.useState(false), eq = i.useMemo(() => (null == eP ? true : eP.user) != null ? new w.Z(eP.user) : null, [null == eP ? true : eP.user]), eX = (0, S.Z)(null != (t = null == eP ? true : eP.application) ? t : null), eQ = i.useMemo(() => null == eB ? true : eB.find(e => e.id === eZ), [eB, eZ]), [eJ, e$] = i.useState(null), e0 = i.useMemo(() => {
+  let [eP, eD] = i.useState(null), [ew, eL] = i.useState(null), [ex, eM] = i.useState(null), [ek, ej] = i.useState(false), [eU, eG] = i.useState(false), eB = null == eP ? true : eP.guilds, [eZ, eF] = i.useState(null != e_ ? e_ : null), [eV, eH] = i.useState(null != ep ? ep : null), [eW, eY] = i.useState(x.Hn), [eK, ez] = i.useState(false), eq = i.useMemo(() => (null == eP ? true : eP.user) != null ? new w.Z(eP.user) : null, [null == eP ? true : eP.user]), eX = (0, S.Z)(null != (t = null == eP ? true : eP.application) ? t : null), eQ = i.useMemo(() => null == eB ? true : eB.find(e => e.id === eZ), [eB, eZ]), [eJ, e$] = i.useState(null), e0 = i.useMemo(() => {
     var e;
     return null == eC && null == eh && (null != (e = null == ed ? true : ed.length) ? e : 0) === 0 && null == er
   }, [eC, null == ed ? true : ed.length, er, eh]), [e1, e3] = i.useState(null);
@@ -361,7 +361,7 @@ function ec(e) {
           state: eo,
           nonce: es,
           integrationType: eJ,
-          permissions: f.Od(e6, eY),
+          permissions: f.Od(e6, eW),
           guildId: eJ === u.Y.GUILD_INSTALL && null != eZ ? eZ : true,
           channelId: eJ === u.Y.GUILD_INSTALL && null != eV ? eV : true,
           dmSettings: {
@@ -387,7 +387,7 @@ function ec(e) {
         let e = t.body;
         (null == e ? true : e.message) != null && "" !== e.message ? eM(Error(e.message)) : eM(e), eL("AUTHORIZE_SCOPES"), ej(false)
       }
-    }, [ev, eE, eO, null == eP ? true : eP.application, eQ, eI, $, e5, en, er, ei, ea, eo, es, e6, eY, eZ, eJ, eV, e9, eK]),
+    }, [ev, eE, eO, null == eP ? true : eP.application, eQ, eI, $, e5, en, er, ei, ea, eo, es, e6, eW, eZ, eJ, eV, e9, eK]),
     ti = i.useRef(false),
     ta = i.useCallback(async () => {
       if (!L.default.isAuthenticated()) return void(0, j.c$)(eN, "oauth2_error_not_authenticated");
@@ -490,7 +490,7 @@ function ec(e) {
       e$(e), eD(null), eL("AUTHORIZE_SCOPES")
     },
     td = (e, t) => {
-      eW(n => e ? f.Od(n, t) : f.IH(n, t))
+      eY(n => e ? f.Od(n, t) : f.IH(n, t))
     },
     tf = false,
     t_ = false,
@@ -546,7 +546,7 @@ function ec(e) {
         }) : null, (0, r.jsx)("div", {
           className: et.intObserver,
           ref: tc
-        }), tO ? (0, r.jsx)(W.Z, {
+        }), tO ? (0, r.jsx)(Y.Z, {
           error: (null != (o = null != (a = tE[d.x.BOT]) ? a : tE[d.x.APPLICATIONS_COMMANDS]) ? o : [])[0],
           selectedGuildId: eZ,
           onGuildChange: eF,
@@ -565,10 +565,10 @@ function ec(e) {
         label: ee.intl.string(ee.t.ZTNur7),
         body: (0, r.jsx)(el, {})
       };
-      O = (0, r.jsx)(Y.Z, {
+      O = (0, r.jsx)(W.Z, {
         application: eP.application,
         permissions: e6,
-        deniedPermissions: eY,
+        deniedPermissions: eW,
         onPermissionsChange: td,
         guild: eQ
       }), A = "AUTHORIZE_SCOPES", tf = true

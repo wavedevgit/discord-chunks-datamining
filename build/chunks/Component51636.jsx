@@ -94,8 +94,8 @@ let R = Chunk473749.memo(e => {
   }, e), {
     onCtaClick: null != y ? H : true
   });
-  let Y = k !== a || null == a || w,
-    W = e => {
+  let W = k !== a || null == a || w,
+    Y = e => {
       C && "transform" === e.propertyName && e.target.classList.contains(T.flipCard) && (L(true), p.default.track(O.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
         card_type: t
       }), null != a && j(v.L.TAKE_ACTION))
@@ -140,7 +140,7 @@ let R = Chunk473749.memo(e => {
         })]
       })
     })
-  }) : Y ? (0, r.jsx)("div", {
+  }) : W ? (0, r.jsx)("div", {
     className: T.hoverWrapper,
     children: (0, r.jsx)("div", {
       className: o()({
@@ -164,7 +164,7 @@ let R = Chunk473749.memo(e => {
           [T.partialFlipCard]: !w && !C,
           [T.reducedMotion]: S
         }),
-        onTransitionEnd: W,
+        onTransitionEnd: Y,
         children: [(0, r.jsx)("div", {
           className: T.flipCardHidden,
           "aria-hidden": true,

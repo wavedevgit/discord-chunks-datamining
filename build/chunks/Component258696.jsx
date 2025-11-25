@@ -62,8 +62,8 @@ function k(e) {
     isEmpty: Z,
     showAllButtons: F
   } = e, V = (0, c.e7)([d.Z], () => d.Z.isSubmitButtonEnabled), H = j(G.id, k, Z), {
-    activeCommand: Y,
-    activeCommandOption: W
+    activeCommand: W,
+    activeCommandOption: Y
   } = (0, c.cj)([_.Z], () => ({
     activeCommand: _.Z.getActiveCommand(G.id),
     activeCommandOption: _.Z.getActiveOption(G.id)
@@ -83,25 +83,25 @@ function k(e) {
     channel: G,
     chatInputType: k
   }), er = (0, g.Nt)() && (null == (i = k.confetti) ? true : i.button) != null, ei = (null == (a = k.submit) ? true : a.button) != null && ((null == (E = k.submit) ? true : E.ignorePreference) || V);
-  if (!l.tq && ((null == (y = k.gifts) ? true : y.button) != null && null == Y && !K && (null == et || v.ZP.isPremiumEligible(et)) && $.push({
+  if (!l.tq && ((null == (y = k.gifts) ? true : y.button) != null && null == W && !K && (null == et || v.ZP.isPremiumEligible(et)) && $.push({
       key: "gift",
       node: (0, r.jsx)(M, {
         disabled: U,
         channel: G
       }, "gift")
-    }), (null == (N = k.gifs) ? true : N.button) != null && null == Y && F && $.push({
+    }), (null == (N = k.gifs) ? true : N.button) != null && null == W && F && $.push({
       key: "gif",
       node: (0, r.jsx)(A.Z, {
         disabled: U,
         type: k
       }, "gif")
-    }), er && null == Y && $.push({
+    }), er && null == W && $.push({
       key: "confetti",
       node: (0, r.jsx)(C.Z, {
         disabled: U,
         channel: G
       }, "confetti")
-    }), !er && (null == (R = k.stickers) ? true : R.button) != null && null == Y && F && $.push({
+    }), !er && (null == (R = k.stickers) ? true : R.button) != null && null == W && F && $.push({
       key: "sticker",
       node: (0, r.jsx)(D.Z, {
         disabled: U,
@@ -119,7 +119,7 @@ function k(e) {
       node: (0, r.jsx)("div", {
         className: x.spacer
       }, "spacer")
-    })), (null == (b = k.emojis) ? true : b.button) != null && (null == Y || null != W && W.type !== u.jw.ATTACHMENT)) {
+    })), (null == (b = k.emojis) ? true : b.button) != null && (null == W || null != Y && Y.type !== u.jw.ATTACHMENT)) {
     let e = q ? J : L.X1.EMOJI;
     $.push({
       key: "emoji",

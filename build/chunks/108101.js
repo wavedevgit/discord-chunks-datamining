@@ -42,8 +42,8 @@ var Chunk687249 = require("./687249.js"),
   F = "[object ArrayBuffer]",
   V = "[object DataView]",
   H = "[object Float32Array]",
-  Y = "[object Float64Array]",
-  W = "[object Int8Array]",
+  W = "[object Float64Array]",
+  Y = "[object Int8Array]",
   K = "[object Int16Array]",
   z = "[object Int32Array]",
   q = "[object Uint8Array]",
@@ -86,4 +86,4 @@ function ee(e, t, n, N, R, P) {
     V && (r = e[i = r]), a(D, i, ee(r, t, n, i, e, P))
   }), D
 }
-$[C] = $[N] = $[F] = $[V] = $[R] = $[P] = $[H] = $[Y] = $[W] = $[K] = $[z] = $[x] = $[M] = $[k] = $[j] = $[U] = $[G] = $[B] = $[q] = $[X] = $[Q] = $[J] = true, $[D] = $[w] = $[Z] = false, module.exports = ee
+$[C] = $[N] = $[F] = $[V] = $[R] = $[P] = $[H] = $[W] = $[Y] = $[K] = $[z] = $[x] = $[M] = $[k] = $[j] = $[U] = $[G] = $[B] = $[q] = $[X] = $[Q] = $[J] = true, $[D] = $[w] = $[Z] = false, module.exports = ee

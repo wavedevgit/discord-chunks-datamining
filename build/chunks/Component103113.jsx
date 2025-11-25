@@ -85,8 +85,8 @@ function P(e) {
         hideRestrictedProfile: true
       }, Z))
     },
-    Y = !k && (0, l.Z)(n.id),
-    W = () => Y ? (0, r.jsx)(a.sNh, {
+    W = !k && (0, l.Z)(n.id),
+    Y = () => W ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3hq"]),
       action: () => {
@@ -124,7 +124,7 @@ function P(e) {
           children: [(0, r.jsx)(T.Z, {
             children: (0, r.jsx)(I.Z, {
               user: n,
-              viewProfileItem: W()
+              viewProfileItem: Y()
             })
           }), (0, r.jsxs)("div", {
             className: C.header,
@@ -139,7 +139,7 @@ function P(e) {
               guildId: N,
               channelId: P,
               themeType: S.l.POPOUT,
-              onOpenProfile: Y ? H : true
+              onOpenProfile: W ? H : true
             })]
           }), (0, r.jsxs)(a.Ttm, {
             fade: true,
@@ -148,7 +148,7 @@ function P(e) {
               user: n,
               guildId: N,
               nickname: f.ZP.getName(N, P, n),
-              onOpenProfile: Y ? H : true,
+              onOpenProfile: W ? H : true,
               tags: (0, r.jsx)(E.Z, {
                 displayProfile: G,
                 themeType: S.l.POPOUT,

@@ -97,7 +97,7 @@ let M = {
         gift: "true"
       }), Z = "true" !== G.gift && null != P, [F, V] = Chunk473749.useState(w.length > 0 ? w[0].value : null), {
         analyticsLocations: H
-      } = (0, Chunk906732.ZP)(Chunk100527.Z.PAYMENT_FLOW_TEST_PAGE), [Y, W] = Chunk473749.useState(""), [K, z] = Chunk473749.useState(Chunk981631.lds), {
+      } = (0, Chunk906732.ZP)(Chunk100527.Z.PAYMENT_FLOW_TEST_PAGE), [W, Y] = Chunk473749.useState(""), [K, z] = Chunk473749.useState(Chunk981631.lds), {
         balance: q,
         isFetching: X,
         error: Q
@@ -320,8 +320,8 @@ let M = {
                 children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
                   label: "Application Id",
                   placeholder: "Application Id",
-                  value: Y,
-                  onChange: W
+                  value: W,
+                  onChange: Y
                 }), (0, Chunk54381.jsx)(Chunk481060.oil, {
                   label: "Sku Id",
                   placeholder: "Sku Id",
@@ -332,7 +332,7 @@ let M = {
                 variant: "primary",
                 text: "Open App Subs Modal for Activity",
                 onClick: () => (0, Chunk72924.S)({
-                  applicationId: Y,
+                  applicationId: W,
                   skuId: K,
                   openPremiumPaymentModal: () => true,
                   analyticsLocations: [],

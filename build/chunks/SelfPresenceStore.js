@@ -113,10 +113,10 @@ function H() {
   D = false, A = Chunk981631.Skl.UNKNOWN, Z(), Chunk158776.Z.setCurrentUserOnConnectionOpen(S, x)
 }
 
-function Y() {
+function W() {
   H()
 }
-class W extends(r = Chunk442837.ZP.Store) {
+class Y extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk77498.Z, Chunk517100.Z, Chunk283595.Z, Chunk293273.Z, Chunk158776.Z, Chunk797258.Z, Chunk768419.Z, Chunk581883.Z), this.syncWith([Chunk293273.Z], Z)
   }
@@ -155,10 +155,10 @@ class W extends(r = Chunk442837.ZP.Store) {
     return this.getActivities(t).find(e)
   }
 }
-I(W, "displayName", "SelfPresenceStore");
-let K = new W(Chunk570140.Z, {
+I(Y, "displayName", "SelfPresenceStore");
+let K = new Y(Chunk570140.Z, {
   START_SESSION: Z,
-  CONNECTION_OPEN: Y,
+  CONNECTION_OPEN: W,
   CONNECTION_OPEN_SUPPLEMENTAL: H,
   OVERLAY_INITIALIZE: H,
   CONNECTION_CLOSED: Z,

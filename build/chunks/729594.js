@@ -116,11 +116,11 @@ i.prototype.parse = function(e, t, n) {
     }
   var H = y.indexOf("#");
   false !== H && (this.hash = y.substr(H), y = y.slice(0, H));
-  var Y = y.indexOf("?");
-  if (false !== Y ? (this.search = y.substr(Y), this.query = y.substr(Y + 1), t && (this.query = g.parse(this.query)), y = y.slice(0, Y)) : t && (this.search = "", this.query = {}), y && (this.pathname = y), m[I] && this.hostname && !this.pathname && (this.pathname = "/"), this.pathname || this.search) {
+  var W = y.indexOf("?");
+  if (false !== W ? (this.search = y.substr(W), this.query = y.substr(W + 1), t && (this.query = g.parse(this.query)), y = y.slice(0, W)) : t && (this.search = "", this.query = {}), y && (this.pathname = y), m[I] && this.hostname && !this.pathname && (this.pathname = "/"), this.pathname || this.search) {
     var B = this.pathname || "",
-      W = this.search || "";
-    this.path = B + W
+      Y = this.search || "";
+    this.path = B + Y
   }
   return this.href = this.format(), this
 }, i.prototype.format = function() {

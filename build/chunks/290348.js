@@ -10,7 +10,7 @@ require.d(exports, {
   H9: () => ee,
   Lo: () => $,
   PK: () => j,
-  R7: () => W,
+  R7: () => Y,
   TT: () => X,
   UE: () => H,
   XZ: () => q,
@@ -192,10 +192,10 @@ function H(e) {
   let t = x(e, e => null == e ? V : e.role_benefits.benefits.filter(m.rC));
   return L(e, "channelBenefits", t)
 }
-let Y = [];
+let W = [];
 
-function W(e) {
-  let t = x(e, e => null == e ? Y : e.role_benefits.benefits.filter(m.lL));
+function Y(e) {
+  let t = x(e, e => null == e ? W : e.role_benefits.benefits.filter(m.lL));
   return L(e, "intangibleBenefits", t)
 }
 let K = new Set;

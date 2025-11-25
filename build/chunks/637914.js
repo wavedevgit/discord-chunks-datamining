@@ -105,7 +105,7 @@ var a, Chunk50153 = require("./50153.js"),
   H = function(e) {
     return "ul" === e || "ol" === e
   },
-  Y = function() {
+  W = function() {
     function e(e, t) {
       i(this, "characterList", g()), i(this, "currentBlockType", "unstyled"), i(this, "currentDepth", 0), i(this, "currentEntity", null), i(this, "currentText", ""), i(this, "wrapper", null), i(this, "blockConfigs", []), i(this, "contentBlocks", []), i(this, "entityMap", u), i(this, "blockTypeMap", true), i(this, "disambiguate", true), this.clear(), this.blockTypeMap = e, this.disambiguate = t
     }
@@ -264,7 +264,7 @@ module.exports = function(e) {
   var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p,
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : c,
     r = t(e = e.trim().replace(C, "").replace(P, A).replace(D, "").replace(w, ""));
-  return r ? new Y(G(n), function(e, t) {
+  return r ? new W(G(n), function(e, t) {
     return "li" === e ? "ol" === t ? "ordered-list-item" : "unordered-list-item" : null
   }).addDOMNode(r).getContentBlocks() : null
 }

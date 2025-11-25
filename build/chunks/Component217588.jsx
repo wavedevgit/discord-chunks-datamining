@@ -81,8 +81,8 @@ let B = 80,
   F = 32,
   V = 2,
   H = 3,
-  Y = 12,
-  W = (e, t) => t ? L.intl.format(L.t.auckXz, {
+  W = 12,
+  Y = (e, t) => t ? L.intl.format(L.t.auckXz, {
     stickerPackName: e.name
   }) : L.intl.format(L.t.OzB6e3, {
     stickerPackName: e.name
@@ -178,7 +178,7 @@ let X = e => {
         children: n.name
       }), (0, r.jsx)(d.Text, {
         variant: "text-sm/normal",
-        children: W(l, u)
+        children: Y(l, u)
       }), (0, r.jsx)("ul", {
         className: x.stickersList,
         children: f.map(e => (0, r.jsx)(R.Z, {
@@ -210,7 +210,7 @@ let X = e => {
       U = S.ZP.canUseCustomStickersEverywhere(k),
       B = (0, s.e7)([v.Z], () => v.Z.getGuild(n.guild_id)),
       Z = null != B,
-      [H, W] = i.useState(false),
+      [H, Y] = i.useState(false),
       [K, X] = i.useState(null),
       Q = i.useMemo(() => ({
         page: null != a.guild_id ? D.ZY5.GUILD_CHANNEL : D.ZY5.DM_CHANNEL,
@@ -300,9 +300,9 @@ let X = e => {
         i = () => {
           var e;
           if (!en && !Z) return;
-          let t = (null != (e = null == A ? true : A.stickers) ? e : []).slice(0, Y + 1).filter(e => e.id !== n.id).slice(0, Y),
+          let t = (null != (e = null == A ? true : A.stickers) ? e : []).slice(0, W + 1).filter(e => e.id !== n.id).slice(0, W),
             i = () => {
-              y(), W(!H)
+              y(), Y(!H)
             },
             a = null != A ? m.JO.createFromDiscoverableGuild(A) : m.JO.createFromGuildRecord(B);
           return (0, r.jsxs)("div", {

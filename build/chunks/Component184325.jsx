@@ -104,8 +104,8 @@ function Z(e) {
     analyticsLocations: V
   } = (0, u.ZP)(c.Z.BADGE), {
     context: H,
-    trackUserProfileAction: Y
-  } = (0, S.KZ)(), W = O.default.getCurrentUser(), K = (0, I.yd)(null == W ? true : W.premiumType, w.PremiumTypes.TIER_2), z = (0, N.Of)(null != (t = null == W ? true : W.id) ? t : null), q = (0, C.Z)(z).some(e => e.id === b.l.ORB_PROFILE_BADGE), X = (0, f.c)(W, "UserProfileBadgeList");
+    trackUserProfileAction: W
+  } = (0, S.KZ)(), Y = O.default.getCurrentUser(), K = (0, I.yd)(null == Y ? true : Y.premiumType, w.PremiumTypes.TIER_2), z = (0, N.Of)(null != (t = null == Y ? true : Y.id) ? t : null), q = (0, C.Z)(z).some(e => e.id === b.l.ORB_PROFILE_BADGE), X = (0, f.c)(Y, "UserProfileBadgeList");
   return (0, r.jsx)("div", {
     className: o()(M.container, a),
     "aria-label": x.intl.string(x.t.VWV0y5),
@@ -115,9 +115,9 @@ function Z(e) {
       let i = e.id === b.l.ORB_PROFILE_BADGE,
         a = (0, T.fv)(e.id),
         u = null != a || e.id === L.a,
-        O = (null == y ? true : y.userId) === (null == W ? true : W.id),
+        O = (null == y ? true : y.userId) === (null == Y ? true : Y.id),
         I = t => {
-          if (Y({
+          if (W({
               action: "PRESS_BADGE"
             }), (0, A.NE)(j({
               badge: e.id,
@@ -159,7 +159,7 @@ function Z(e) {
         S = () => {
           e.id === C.i && v.default.track(P.rMx.QUEST_CONTENT_VIEWED, G(j({}, (0, m.mH)(g.jn.QUEST_BADGE)), {
             is_targeted: false
-          })), Y({
+          })), W({
             action: "HOVER_BADGE"
           }), (0, A.Qf)(j({
             badge: e.id,

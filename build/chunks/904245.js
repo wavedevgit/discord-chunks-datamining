@@ -2,7 +2,7 @@
 /** chunk id: 904245, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eY
+  Z: () => eW
 }), require("./953529.js"), require("./415506.js"), require("./314940.js"), require("./49124.js"), require("./388685.js"), require("./642613.js"), require("./997841.js");
 var Chunk278074 = require("./278074.js"),
   Chunk636977 = require("./636977.js"),
@@ -921,7 +921,7 @@ let eV = {
           allowedMentions: x,
           flags: 0 !== eo ? eo : true,
           nonce: e_,
-          poll: (0, W.x9)(M),
+          poll: (0, Y.x9)(M),
           sharedCustomTheme: j
         });
       if (false !== n.eagerDispatch && ((0, H.EL)(e, eE.id), null != N && (eE.sticker_items = N.map(e => er.Z.getStickerById(e)).filter(e => null != e)), eH.receiveMessage(e, eE, true, n)), !ek && null != b && b.length > 0) {
@@ -960,7 +960,7 @@ let eV = {
           null != n.party && null != n.party.id && (t.party_id = n.party.id), eb.message.application_id = n.application_id, eb.message.activity = t
         }
       }
-      if (null != M && (eb.message.poll = M), null != j && (eb.message.shared_client_theme = j), null != N && (eb.message.sticker_ids = N), Y.Z.isEnabled() && (eb.message.has_poggermode_enabled = true), ea && (eb.message.with_checkpoint = true), null != U && (eb.message.content_inventory_entry = U), null != w && (eb.message.confetti_potion = (0, X.vY)(w), w.callback()), null != z && z.length > 0 && (eb.message.attachments = z), null != ee && ee.length > 0) try {
+      if (null != M && (eb.message.poll = M), null != j && (eb.message.shared_client_theme = j), null != N && (eb.message.sticker_ids = N), W.Z.isEnabled() && (eb.message.has_poggermode_enabled = true), ea && (eb.message.with_checkpoint = true), null != U && (eb.message.content_inventory_entry = U), null != w && (eb.message.confetti_potion = (0, X.vY)(w), w.callback()), null != z && z.length > 0 && (eb.message.attachments = z), null != ee && ee.length > 0) try {
         let t = await (0, k.c)({
           channelId: e,
           nonce: e_,
@@ -1275,4 +1275,4 @@ let eV = {
     }),
     trackInvite: eG
   },
-  eY = eH
+  eW = eH

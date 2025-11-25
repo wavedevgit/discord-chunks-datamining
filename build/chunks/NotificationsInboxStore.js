@@ -77,7 +77,7 @@ function H() {
   })
 }
 
-function Y(e) {
+function W(e) {
   var t;
   if (!E.Z.isReady(e)) return;
   let n = m.Z.getBasicChannel(e),
@@ -89,7 +89,7 @@ function Y(e) {
   }), r
 }
 
-function W() {
+function Y() {
   if (null == w) {
     G = Chunk709054.default.fromTimestamp(Date.now());
     return
@@ -119,12 +119,12 @@ function K() {
         loadState: Chunk982183.a7.UNLOADED,
         mostRecentMessageId: Chunk306680.ZP.lastMessageId(module)
       }, Chunk375954.Z.isReady(module)) {
-      let t = Y(module);
+      let t = W(module);
       if (null != exports) {
         var i, o;
         D[module].loadState = Chunk982183.a7.LOADED, D[module].mostRecentMessageId = null != (o = null == (i = exports.last()) ? true : Chunk512722.id) ? Chunk442837 : D[module].mostRecentMessageId
       }
-    } x.updateChannelIds(w), W()
+    } x.updateChannelIds(w), Y()
 }
 
 function z() {
@@ -134,8 +134,8 @@ function z() {
 function q() {
   var e, t, n;
   for (let n of (K(), null != w ? w : [])) {
-    let r = Y(require);
-    null != r && (D[require].loadState = Chunk982183.a7.LOADED, D[require].mostRecentMessageId = null != (t = null == (e = r.last()) ? true : module.id) ? exports : null, W())
+    let r = W(require);
+    null != r && (D[require].loadState = Chunk982183.a7.LOADED, D[require].mostRecentMessageId = null != (t = null == (e = r.last()) ? true : module.id) ? exports : null, Y())
   }
   let r = null != (n = Chunk455199.ZP.getSettingsFilteredMentions()) ? require : [];
   x.addMessages(r.map(e => {
@@ -194,10 +194,10 @@ function ee(e) {
     channelId: t
   } = e;
   if (!(null == w ? true : w.includes(t))) returnfalse;
-  let n = Y(t);
+  let n = W(t);
   if (null == n) returnfalse;
   let r = n.length >= C.AQ || n.hasFetched && !n.hasMoreBefore;
-  D[t].loadState !== C.a7.LOADED && (D[t].loadState = r ? C.a7.LOADED : C.a7.LOADED_UNREAD), W()
+  D[t].loadState !== C.a7.LOADED && (D[t].loadState = r ? C.a7.LOADED : C.a7.LOADED_UNREAD), Y()
 }
 
 function et(e) {

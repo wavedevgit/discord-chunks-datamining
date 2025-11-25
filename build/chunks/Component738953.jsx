@@ -88,8 +88,8 @@ function Z(e) {
     messageId: F,
     roleId: V,
     openedAt: H,
-    closePopout: Y,
-    setPopoutRef: W,
+    closePopout: W,
+    setPopoutRef: Y,
     disableUserProfileLink: K = __OVERLAY__,
     newAnalyticsLocations: z = [],
     appContext: q,
@@ -121,8 +121,8 @@ function Z(e) {
       }
     });
   i.useEffect(() => {
-    null == W || W(null == et ? true : et.current)
-  }, [et, W]);
+    null == Y || Y(null == et ? true : et.current)
+  }, [et, Y]);
   let es = i.useRef(null),
     el = n.id === j.id,
     ec = (0, _.p)({
@@ -130,7 +130,7 @@ function Z(e) {
     }),
     eu = i.useMemo(() => (0, p.Z)(), []),
     ed = e => {
-      null == Y || Y(), (0, v.openUserProfileModal)(B(U({
+      null == W || W(), (0, v.openUserProfileModal)(B(U({
         sourceAnalyticsLocations: Q,
         hideRestrictedProfile: true,
         customStatusPrompt: eu
@@ -184,7 +184,7 @@ function Z(e) {
                 user: n,
                 guildId: G,
                 channelId: Z,
-                onClose: Y,
+                onClose: W,
                 appContext: q
               }), (0, r.jsx)(N.Z, {
                 themeType: x.l.POPOUT,
@@ -205,7 +205,7 @@ function Z(e) {
               }), (0, r.jsx)(S.Z, {
                 userId: n.id,
                 className: k.toast,
-                onClose: Y
+                onClose: W
               }), (0, r.jsx)(I.Z, {
                 user: n,
                 displayProfile: en,
@@ -219,7 +219,7 @@ function Z(e) {
                 guildId: G,
                 channelId: Z,
                 themeType: x.l.POPOUT,
-                onCloseProfile: Y,
+                onCloseProfile: W,
                 prompt: ec ? eu : null
               })]
             }), (0, r.jsx)(w.Z, {
@@ -230,12 +230,12 @@ function Z(e) {
               isHoveringOrFocusing: null == ea.interactionType && er,
               onOpenProfile: K ? true : ed,
               channelId: Z,
-              onClose: Y
+              onClose: W
             }), (0, r.jsx)(L.Z, {
               user: n,
               guildId: G,
               channelId: Z,
-              onClose: Y,
+              onClose: W,
               appContext: q,
               disableAutoFocus: X
             }), (null == en ? true : en.profileEffect) != null && (0, r.jsx)(h.Z, {

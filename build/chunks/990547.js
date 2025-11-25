@@ -238,22 +238,22 @@ function H() {
   return null == require && (n = V(F(), "_current"), Chunk298444.x.set(C, require)), I({}, module, Z(), exports, require)
 }
 
-function Y() {
+function W() {
   try {
     if (__OVERLAY__) return "OVERLAY"
   } catch (e) {}
   return null
 }
 
-function W() {
+function Y() {
   var e, t;
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
-  let i = parseInt("472639", 10);
+  let i = parseInt("472655", 10);
   isNaN(i) || (require.client_build_number = i);
   let a = null == P || null == (e = (t = P.remoteApp).getBuildNumber) ? true : module.call(exports);
-  return isNaN(a) || (require.native_build_number = a), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require
+  return isNaN(a) || (require.native_build_number = a), require.client_event_source = W(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require
 }
 
 function K(e) {
@@ -268,7 +268,7 @@ if (null == r) try {
 function z(e) {
   r = I({}, r, e), i = (0, E.Z)(r)
 }
-z(W());
+z(Y());
 let q = e => {
   let {
     analyticEventConfigs: t,

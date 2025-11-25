@@ -2,7 +2,7 @@
 /** chunk id: 293389, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Y
+  Z: () => W
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -162,11 +162,11 @@ function Z(e) {
     I.name !== G && u.Z.editName(I, G)
   }
 
-  function Y(e) {
+  function W(e) {
     e.key === A.vn.ENTER && (e.currentTarget.blur(), e.preventDefault())
   }
 
-  function W(e) {
+  function Y(e) {
     u.Z.toggleOverlay(I, e, e)
   }
 
@@ -249,7 +249,7 @@ function Z(e) {
       maxLength: 128,
       value: G,
       onBlur: H,
-      onKeyDown: Y,
+      onKeyDown: W,
       onChange: e => B(e.target.value)
     })
   }
@@ -300,7 +300,7 @@ function Z(e) {
         children: t => (0, r.jsx)(c.P3F, M(L({}, t), {
           "aria-label": C.intl.string(C.t["1+O+Tu"]),
           className: N.toggleIcon,
-          onClick: () => W(!e),
+          onClick: () => Y(!e),
           children: n
         }))
       })]
@@ -422,7 +422,7 @@ let H = (0, Chunk251625.oH)(function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
     return new Set(exports.map(e => e.exePath))
   }),
-  Y = function(e) {
+  W = function(e) {
     let {
       className: t,
       showHeader: n = true

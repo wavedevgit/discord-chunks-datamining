@@ -503,15 +503,15 @@ let H = (e, t, n) => {
         return null
     }
   },
-  Y = 500,
-  W = e => 0 === e ? u.n.LEFT : u.n.RIGHT;
+  W = 500,
+  Y = e => 0 === e ? u.n.LEFT : u.n.RIGHT;
 
 function K() {
-  let [e, t] = Chunk473749.useState(0), [n, a] = Chunk473749.useState(W(module)), [s, d] = Chunk473749.useState(false), f = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion), _ = Chunk692547 && !Chunk342386;
+  let [e, t] = Chunk473749.useState(0), [n, a] = Chunk473749.useState(Y(module)), [s, d] = Chunk473749.useState(false), f = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion), _ = Chunk692547 && !Chunk342386;
   return Chunk473749.useEffect(() => {
     let t = setTimeout(() => {
-      Chunk392711(W(module))
-    }, Y);
+      Chunk392711(Y(module))
+    }, W);
     return () => clearTimeout(exports)
   }, [module]), Chunk473749.useEffect(() => {
     Math.random() > .99 && (0, Chunk57562.T)(Chunk955204.hn.VISITOR_100)

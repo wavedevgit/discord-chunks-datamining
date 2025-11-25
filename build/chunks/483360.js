@@ -146,8 +146,8 @@ let ey = new Chunk710845.Z("AutocompleteUtils"),
   eF = (r = require("./786074.js").Z).MENTION_EVERYONE,
   eV = r.MENTION_HERE,
   eH = r.MENTION_GAME,
-  eY = r.MENTION_TIMESTAMP,
-  eW = r.LAUNCHABLE_APPLICATIONS;
+  eW = r.MENTION_TIMESTAMP,
+  eY = r.LAUNCHABLE_APPLICATIONS;
 
 function eK() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0,
@@ -363,7 +363,7 @@ function e7(e, t) {
 
 function e9(e, t) {
   let n = U.Z.getChannel(e);
-  return null == e || null == n ? [] : s()(Y.Z.getMessages(e).toArray()).reverse().uniqBy(e => e.author.id).map(e => Q.default.getUser(e.author.id)).filter(e => {
+  return null == e || null == n ? [] : s()(W.Z.getMessages(e).toArray()).reverse().uniqBy(e => e.author.id).map(e => Q.default.getUser(e.author.id)).filter(e => {
     if (null == e || e.isNonUserBot()) returnfalse;
     let t = n.getGuildId();
     return null == t || eJ(F.ZP.getMember(t, e.id))
@@ -553,7 +553,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         y = G.Z.getMaxScore();
       for (let e of t) {
         var O;
-        if (!e2(l, e.type, null != r) || (0, x.Km)(e.type) && !W.Z.can(u ? e.accessPermissions : ec.Plq.VIEW_CHANNEL, e) || !o(e)) continue;
+        if (!e2(l, e.type, null != r) || (0, x.Km)(e.type) && !Y.Z.can(u ? e.accessPermissions : ec.Plq.VIEW_CHANNEL, e) || !o(e)) continue;
         let t = [...m],
           i = e.name.toLocaleLowerCase(),
           s = p && n === e.id,
@@ -681,7 +681,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         exactQuery: RegExp("^".concat(ea.Z.escape(a)), "i"),
         containQuery: RegExp(ea.Z.escape(a), "i"),
         queryLower: a
-      }, s = eW(), l = [];
+      }, s = eY(), l = [];
       for (let {
           application: e
         }
@@ -861,7 +861,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
       }).enabled;
       return r && T && null != eH && (y < h || 0 === O.length) && a()(O, eH().test) && (y >= h && (I.length > 0 ? I.pop() : v.length > 0 ? v.pop() : E.length > 0 && E.pop()), I.push(eH()), y += 1), p.Z.getConfig({
         location: "mention autocomplete"
-      }).enabled && u && null != eY && ((y < h || 0 === O.length) && a()(O, eY().test) || O === eY().test) && (y >= h && (v.length > 0 ? v.pop() : E.length > 0 && E.pop()), I.push(eY()), y += 1), {
+      }).enabled && u && null != eW && ((y < h || 0 === O.length) && a()(O, eW().test) || O === eW().test) && (y >= h && (v.length > 0 ? v.pop() : E.length > 0 && E.pop()), I.push(eW()), y += 1), {
         users: E,
         globals: I,
         roles: v

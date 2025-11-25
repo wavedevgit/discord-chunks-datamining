@@ -2,7 +2,7 @@
 /** chunk id: 736752, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => W,
+  D: () => Y,
   Z: () => z
 });
 var Chunk54381 = require("./54381.js"),
@@ -78,12 +78,12 @@ function H(e, t) {
   return n
 }
 
-function Y(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : H(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var W = function(e) {
+var Y = function(e) {
   return e.SECURITY = "SECURITY", e.STANDING = "STANDING", e
 }({});
 class K extends Chunk473749.PureComponent {
@@ -166,7 +166,7 @@ class K extends Chunk473749.PureComponent {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t["FRep5/"]),
-          onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(k.default, Y(V({}, e), {
+          onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(k.default, W(V({}, e), {
             onSuccess: e.onClose
           })))
         })
@@ -338,7 +338,7 @@ class K extends Chunk473749.PureComponent {
       shouldRenderOwnedTeamsModal: true
     }) : Chunk512722.length > 0 ? void this.setState({
       shouldRenderOwnedGuildsModal: true
-    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(O.Z, Y(V({}, e), {
+    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(O.Z, W(V({}, e), {
       handleSubmit: e => this.handleSubmitDisableAccount(e, t),
       title: t ? B.intl.string(B.t["8lQ2rR"]) : B.intl.string(B.t.jf5GGb),
       actionText: t ? B.intl.string(B.t["8lQ2rR"]) : B.intl.string(B.t.jf5GGb),

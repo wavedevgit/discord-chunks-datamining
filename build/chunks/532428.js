@@ -119,14 +119,14 @@ let B = "([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})",
   F = "([0-9]{4})-([0-9]{1,2})",
   V = "([^\\d\\s]+)",
   H = RegExp("(?:\\s*(".concat(B, "|").concat(F, "|").concat(Z, "|").concat(V, "))"), "i"),
-  Y = RegExp("\\s*(true|false)", "i");
+  W = RegExp("\\s*(true|false)", "i");
 
-function W(e) {
+function Y(e) {
   return "".concat(e, ":")
 }
 
 function K(e) {
-  return RegExp(W(e), "i")
+  return RegExp(Y(e), "i")
 }
 
 function z(e) {
@@ -459,7 +459,7 @@ function ep(e) {
     [C.dCx.FILTER_FROM]: {
       regex: K(N.intl.string(N.t["1TUdFo"])),
       componentType: "FILTER",
-      key: W(N.intl.string(N.t["1TUdFo"])),
+      key: Y(N.intl.string(N.t["1TUdFo"])),
       plainText: N.intl.string(N.t["1TUdFo"]),
       validator: es,
       getAutocompletions: eo
@@ -475,7 +475,7 @@ function ep(e) {
     [C.dCx.FILTER_MENTIONS]: {
       regex: K(N.intl.string(N.t["i96lO+"])),
       componentType: "FILTER",
-      key: W(N.intl.string(N.t["i96lO+"])),
+      key: Y(N.intl.string(N.t["i96lO+"])),
       plainText: N.intl.string(N.t["i96lO+"]),
       validator: es,
       getAutocompletions: eo
@@ -491,7 +491,7 @@ function ep(e) {
     [C.dCx.FILTER_HAS]: {
       regex: K(N.intl.string(N.t.CqCvir)),
       componentType: "FILTER",
-      key: W(N.intl.string(N.t.CqCvir)),
+      key: Y(N.intl.string(N.t.CqCvir)),
       plainText: N.intl.string(N.t.CqCvir),
       getAutocompletions(e) {
         let {
@@ -510,7 +510,7 @@ function ep(e) {
     },
     [C.dCx.FILTER_FILE_TYPE]: {
       regex: K(N.intl.string(N.t.TMNjFm)),
-      key: W(N.intl.string(N.t.TMNjFm)),
+      key: Y(N.intl.string(N.t.TMNjFm)),
       plainText: N.intl.string(N.t.TMNjFm),
       componentType: "FILTER"
     },
@@ -523,7 +523,7 @@ function ep(e) {
     },
     [C.dCx.FILTER_FILE_NAME]: {
       regex: K(N.intl.string(N.t["5xtLRC"])),
-      key: W(N.intl.string(N.t["5xtLRC"])),
+      key: Y(N.intl.string(N.t["5xtLRC"])),
       plainText: N.intl.string(N.t["5xtLRC"]),
       componentType: "FILTER"
     },
@@ -537,7 +537,7 @@ function ep(e) {
     [C.dCx.FILTER_BEFORE]: {
       regex: K(N.intl.string(N.t["qZ+7BA"])),
       componentType: "FILTER",
-      key: W(N.intl.string(N.t["qZ+7BA"])),
+      key: Y(N.intl.string(N.t["qZ+7BA"])),
       plainText: N.intl.string(N.t["qZ+7BA"]),
       getAutocompletions(e) {
         let {
@@ -550,7 +550,7 @@ function ep(e) {
     [C.dCx.FILTER_ON]: {
       regex: K("(".concat(N.intl.string(N.t.tIxkOo), "|").concat(N.intl.string(N.t.h2NzSd), ")")),
       componentType: "FILTER",
-      key: W(N.intl.string(N.t.h2NzSd)),
+      key: Y(N.intl.string(N.t.h2NzSd)),
       plainText: N.intl.string(N.t.h2NzSd),
       getAutocompletions(e) {
         let {
@@ -563,7 +563,7 @@ function ep(e) {
     [C.dCx.FILTER_AFTER]: {
       regex: K(N.intl.string(N.t.KSDx7M)),
       componentType: "FILTER",
-      key: W(N.intl.string(N.t.KSDx7M)),
+      key: Y(N.intl.string(N.t.KSDx7M)),
       plainText: N.intl.string(N.t.KSDx7M),
       getAutocompletions(e) {
         let {
@@ -597,7 +597,7 @@ function ep(e) {
     [C.dCx.FILTER_IN]: {
       regex: K(N.intl.string(N.t.WNpFHa)),
       componentType: "FILTER",
-      key: W(N.intl.string(N.t.WNpFHa)),
+      key: Y(N.intl.string(N.t.WNpFHa)),
       plainText: N.intl.string(N.t.WNpFHa),
       validator: () => {
         let t = null != e ? e : y.Z.getSelectedSearchContext();
@@ -619,7 +619,7 @@ function ep(e) {
     [C.dCx.FILTER_PINNED]: {
       regex: K(N.intl.string(N.t["0B74eY"])),
       componentType: "FILTER",
-      key: W(N.intl.string(N.t["0B74eY"])),
+      key: Y(N.intl.string(N.t["0B74eY"])),
       plainText: N.intl.string(N.t["0B74eY"]),
       getAutocompletions: () => [{
         text: "true"
@@ -628,7 +628,7 @@ function ep(e) {
       }]
     },
     [C.dCx.ANSWER_PINNED]: {
-      regex: Y,
+      regex: W,
       componentType: "ANSWER",
       follows: [C.dCx.FILTER_PINNED],
       queryKey: "pinned",
@@ -640,7 +640,7 @@ function ep(e) {
     [C.dCx.FILTER_AUTHOR_TYPE]: {
       regex: K(N.intl.string(N.t.us8IQi)),
       componentType: "FILTER",
-      key: W(N.intl.string(N.t.us8IQi)),
+      key: Y(N.intl.string(N.t.us8IQi)),
       validator: () => (0, T.Z)({
         location: "SearchTokens"
       }),

@@ -216,7 +216,7 @@ function M(e, t) {
     value: "",
     attributes: {},
     description: ""
-  } : G(e) ? B(e, t) : H(e) ? Y(e, t) : W(e) ? K(e, t) : z(e) ? X(e, t) : J(e, t)
+  } : G(e) ? B(e, t) : H(e) ? W(e, t) : Y(e) ? K(e, t) : z(e) ? X(e, t) : J(e, t)
 }
 
 function k(e) {
@@ -266,7 +266,7 @@ function H(e) {
   return "Resource" === e.attributes["rdf:parseType"] || true !== e.value["rdf:Description"] && true === e.value["rdf:Description"].value["rdf:value"]
 }
 
-function Y(e, t) {
+function W(e, t) {
   let n = {
     value: {},
     attributes: {}
@@ -274,7 +274,7 @@ function Y(e, t) {
   return true !== e.value["rdf:Description"] && ((0, r.wB)(n.value, A(e.value["rdf:Description"].attributes)), (0, r.wB)(n.attributes, Z(e)), e = e.value["rdf:Description"]), (0, r.wB)(n.value, x(e.value)), n.description = P(n.value, t), n
 }
 
-function W(e) {
+function Y(e) {
   return 0 === Object.keys(e.value).length && true === e.attributes["xml:lang"] && true === e.attributes["rdf:resource"]
 }
 
@@ -309,7 +309,7 @@ function X(e, t) {
 }
 
 function Q(e) {
-  return G(e) ? B(e) : H(e) ? Y(e).value : W(e) ? K(e).value : J(e)
+  return G(e) ? B(e) : H(e) ? W(e).value : Y(e) ? K(e).value : J(e)
 }
 
 function J(e, t) {

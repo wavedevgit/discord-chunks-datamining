@@ -84,10 +84,10 @@ function v(e, t, n) {
     navId: "channel-autocomplete",
     scrollerRef: n,
     state: L,
-    onFocus: e => W.setSelectedIndex(e)
+    onFocus: e => Y.setSelectedIndex(e)
   }), F = null == (E = e.editorRef.current) ? true : E.getCurrentWord(), V = null == (y = e.editorRef.current) ? true : y.getSlateEditor(), H = null;
   null != V && (H = null != (A = null == (S = c.bN.getSelectedParentOfType(V, p.un)) ? true : S[0]) ? A : null);
-  let Y = O(b({}, e), {
+  let W = O(b({}, e), {
       navigator: Z,
       activeCommand: G,
       activeCommandOption: B,
@@ -104,23 +104,23 @@ function v(e, t, n) {
         [B.name]: null != (P = null == (I = e.editorRef.current) ? true : I.getCurrentCommandOptionValue()) ? P : []
       }, B.name) : ""
     }),
-    [W] = r.useState(() => new p.ZP(Y));
+    [Y] = r.useState(() => new p.ZP(W));
   return r.useEffect(() => {
-    W.updateProps(Y)
-  }), r.useImperativeHandle(t, () => W, [W]), r.useEffect(() => {
+    Y.updateProps(W)
+  }), r.useImperativeHandle(t, () => Y, [Y]), r.useEffect(() => {
     let e = e => x(e);
-    return W.on("change", e), W.on("update", M), () => {
-      W.off("change", e), W.off("update", M)
+    return Y.on("change", e), Y.on("update", M), () => {
+      Y.off("change", e), Y.off("update", M)
     }
-  }, [M, W]), r.useEffect(() => {
+  }, [M, Y]), r.useEffect(() => {
     var e;
     let t = null == (e = L.query) ? true : e.typeInfo.stores;
     if (null != t) {
-      let e = () => W.queryResults();
+      let e = () => Y.queryResults();
       for (let n of t) n.addChangeListener(e);
       return () => {
         for (let n of t) n.removeChangeListener(e)
       }
     }
-  }, [W, null == (T = L.query) ? true : T.typeInfo]), [L, W, Z]
+  }, [Y, null == (T = L.query) ? true : T.typeInfo]), [L, Y, Z]
 }

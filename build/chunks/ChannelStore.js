@@ -81,8 +81,8 @@ let N = new Chunk710845.Z("ChannelStore"),
   F = 0,
   V = {},
   H = 0,
-  Y = 0,
-  W = false;
+  W = 0,
+  Y = false;
 class K {
   static loadAllMissingChannels() {
     let e = Chunk430824.Z.getGuildIds().filter(e => !B.has(e));
@@ -140,8 +140,8 @@ function z(e, t, n) {
     return
   }
   let [a, s] = i;
-  for (let n of ((0, _.ZP)(a), 0 !== t && (Y += 1), B.add(e), f.Z.restored(e), o.Z.mark("❗", "loaded guild channels (guild: ".concat(e, ")"), s), a)) Object.hasOwn(P, n.id) || en((0, g._H)(n));
-  N.verbose("hydration complete (guild: ".concat(e, ", channels: ").concat(a.length, ", guilds_loaded: ").concat(Y, ")"))
+  for (let n of ((0, _.ZP)(a), 0 !== t && (W += 1), B.add(e), f.Z.restored(e), o.Z.mark("❗", "loaded guild channels (guild: ".concat(e, ")"), s), a)) Object.hasOwn(P, n.id) || en((0, g._H)(n));
+  N.verbose("hydration complete (guild: ".concat(e, ", channels: ").concat(a.length, ", guilds_loaded: ").concat(W, ")"))
 }
 
 function q(e, t, n) {
@@ -288,7 +288,7 @@ function ef(e) {
 }
 
 function e_(e) {
-  for (let [t, n] of(W = true, e.guildChannels))
+  for (let [t, n] of(Y = true, e.guildChannels))
     for (let e of (N.fileOnly("Lazy cache contained full guild channels for ".concat(t, " #:").concat(n.length)), B.add(t), n)) $((0, g._H)(e))
 }
 

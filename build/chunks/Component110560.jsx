@@ -6,10 +6,10 @@ require.r(exports), require.d(exports, {
   getPrimaryCtaIcon: () => er,
   loadVideoQuestModal: () => q,
   maybeShowSurveyForQuest: () => z,
-  navigateToQuestHome: () => W,
+  navigateToQuestHome: () => Y,
   openAppWithQuest: () => J,
   openAppWithQuestPreview: () => ee,
-  openDisclosureModal: () => Y,
+  openDisclosureModal: () => W,
   openPushToPhoneModal: () => et,
   openQuestCollectibleRewardModal: () => V,
   openQuestInGameRewardModal: () => Z,
@@ -224,7 +224,7 @@ function H(e, t, i) {
   })
 }
 
-function Y(e, t) {
+function W(e, t) {
   (0, g._3)({
     questId: e.id,
     questContent: t.content,
@@ -243,7 +243,7 @@ function Y(e, t) {
   })
 }
 
-function W() {
+function Y() {
   let {
     fromContent: e,
     questId: t,

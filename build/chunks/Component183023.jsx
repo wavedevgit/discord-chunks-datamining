@@ -129,7 +129,7 @@ let J = 32,
               })
             }), (0, r.jsx)(_.Text, {
               variant: "text-sm/normal",
-              children: W.intl.string(W.t.sXdH8c)
+              children: Y.intl.string(Y.t.sXdH8c)
             })]
           })]
         })
@@ -185,7 +185,7 @@ let J = 32,
         children: [(0, r.jsx)(_.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: W.intl.format(W.t["LC+S+m"], {
+          children: Y.intl.format(Y.t["LC+S+m"], {
             membersOnline: t.presenceCount
           })
         }), (0, r.jsx)("div", {
@@ -196,18 +196,18 @@ let J = 32,
           children: (0, r.jsx)(_.Text, {
             variant: "text-xs/normal",
             color: "text-link",
-            children: W.intl.string(W.t.riu2R5)
+            children: Y.intl.string(Y.t.riu2R5)
           })
         }) : (0, r.jsx)(_.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: W.intl.string(W.t.inyJqO)
+          children: Y.intl.string(Y.t.inyJqO)
         })]
       })
     }, O = () => g ? E() : (0, r.jsx)(_.Text, {
       variant: "text-xs/normal",
       color: "header-secondary",
-      children: W.intl.string(W.t.H29mx4)
+      children: Y.intl.string(Y.t.H29mx4)
     });
     return (0, r.jsxs)(b.Z, {
       align: b.Z.Align.CENTER,
@@ -355,7 +355,7 @@ let J = 32,
           }, H.oC.ROLE_SUBSCRIPTIONS)
         }, n = !Q && J, i = () => ep ? (0, r.jsx)(w.Z, {
           className: K.ctaButton,
-          subscriptionTier: Y.Si.TIER_2,
+          subscriptionTier: W.Si.TIER_2,
           size: f.zx.Sizes.SMALL,
           fullWidth: true,
           textOptions: {
@@ -399,7 +399,7 @@ let J = 32,
               })]
             })]
           }), i(), eu && (0, r.jsx)(R.Z, {
-            text: ei ? W.intl.string(W.t.yma8Vp) : W.intl.string(W.t.nN2DIo),
+            text: ei ? Y.intl.string(Y.t.yma8Vp) : Y.intl.string(Y.t.nN2DIo),
             size: "sm",
             fullWidth: true,
             onClick: t
@@ -414,7 +414,7 @@ let J = 32,
             n && (null == P || P(), em || x || j.default.track(V.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!em))
           },
           a = () => {
-            let e = W.intl.string(W.t.pnsAS2);
+            let e = Y.intl.string(Y.t.pnsAS2);
             return (0, r.jsx)(_.P3F, {
               onClick: i,
               className: K.showMoreEmojis,
@@ -441,7 +441,7 @@ let J = 32,
             className: K.guildTitle,
             variant: "text-sm/medium",
             color: "text-secondary",
-            children: Q ? W.intl.string(W.t.ohTzZH) : W.intl.string(W.t["eLfh+a"])
+            children: Q ? Y.intl.string(Y.t.ohTzZH) : Y.intl.string(Y.t["eLfh+a"])
           }), (0, r.jsx)(en, {
             expressionSourceGuild: null != v ? v : I.JO.createFromGuildRecord(S),
             hasJoinedExpressionSourceGuild: Q,
@@ -486,7 +486,7 @@ let J = 32,
       description: p
     } = o, m = () => f === Z.$.GET_PREMIUM ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(w.Z, {
-        subscriptionTier: Y.Si.TIER_2,
+        subscriptionTier: W.Si.TIER_2,
         textOptions: {
           textOverride: o.text
         },

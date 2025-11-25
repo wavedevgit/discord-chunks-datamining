@@ -378,7 +378,7 @@ function H(e) {
   }
 }
 
-function Y(e) {
+function W(e) {
   return "string" == typeof e ? {
     source: e
   } : {
@@ -389,10 +389,10 @@ function Y(e) {
     source_promotion_id: e.promotionId
   }
 }
-let W = () => Chunk94752.E.NONE;
+let Y = () => Chunk94752.E.NONE;
 
 function K(e) {
-  W = e
+  Y = e
 }
 let z = (0, Chunk990547.trackMaker)({
   analyticEventConfigs: V,
@@ -417,9 +417,9 @@ function X(e) {
     let {
       source: e
     } = a;
-    a = v({}, S(a, ["source"]), Y(e))
+    a = v({}, S(a, ["source"]), W(e))
   }
-  a.client_performance_cpu = h.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = h.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = h.Z.getCPUCoreCount(), a.accessibility_features = W(), a.rendered_locale = y.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - G) / P);
+  a.client_performance_cpu = h.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = h.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = h.Z.getCPUCoreCount(), a.accessibility_features = Y(), a.rendered_locale = y.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - G) / P);
   let o = h.Z.getProcessUptime();
   null != o && (a.uptime_process_renderer = Math.floor(o));
   let {

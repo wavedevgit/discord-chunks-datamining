@@ -131,7 +131,7 @@ function T(e) {
       targetElementRef: k.targetElementRef
     }, M)),
     H = null != L ? L : "".concat((0, _.Sw)(null != a ? a : ""), "|").concat((0, _.Sw)(E)),
-    Y = (0, h.Q)({
+    W = (0, h.Q)({
       shouldShow: F
     });
   if (T) {
@@ -165,7 +165,7 @@ function T(e) {
     if (!i.isValidElement(n)) return null;
     t = (0, _.C9)(n, V, U, k.triggerRef)
   }
-  let W = Y((e, t) => t ? (0, r.jsx)(f.pn, {
+  let Y = W((e, t) => t ? (0, r.jsx)(f.pn, {
     isRichTooltip: true,
     children: (0, r.jsx)(d.N, {
       isVisible: F,
@@ -188,6 +188,6 @@ function T(e) {
     children: [t, x || null == Z ? null : (0, r.jsx)(s.n, {
       id: j,
       children: Z
-    }), W]
+    }), Y]
   })
 }

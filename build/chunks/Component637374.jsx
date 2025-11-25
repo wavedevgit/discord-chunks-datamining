@@ -67,7 +67,7 @@ function H(e) {
   return e
 }
 
-function Y(e, t) {
+function W(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,8 +78,8 @@ function Y(e, t) {
   return n
 }
 
-function W(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
+function Y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -147,7 +147,7 @@ class q extends Chunk473749.Component {
         location: e
       }
     } = this.props;
-    return W(H({}, module), {
+    return Y(H({}, module), {
       section: Chunk981631.jXE.GIFT_CODE_EMBED
     })
   }
@@ -193,7 +193,7 @@ class q extends Chunk473749.Component {
       onClick: this.handleAccept,
       color: u.zx.Colors.BRAND
     }, o = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, M.I5)(n);
-    return (e.redeemed || o || e.isClaimed || !n.verified) && (a.color = u.zx.Colors.BRAND, a.disabled = true), (0, r.jsx)(u.zx, W(H({}, a), {
+    return (e.redeemed || o || e.isClaimed || !n.verified) && (a.color = u.zx.Colors.BRAND, a.disabled = true), (0, r.jsx)(u.zx, Y(H({}, a), {
       className: (0, g.mO)(e) ? F.collectiblesAcceptButton : null,
       size: u.zx.Sizes.SMALL,
       children: e.redeemed ? Z.intl.string(Z.t.BTihou) : null != e.giftStyle ? Z.intl.string(Z.t.TiZFqX) : Z.intl.string(Z.t.bUvv1f)
@@ -360,7 +360,7 @@ class q extends Chunk473749.Component {
       } = this.props;
       e.preventDefault(), e.stopPropagation(), L.default.track(G.rMx.OPEN_MODAL, {
         type: "gift_accept",
-        location: W(H({}, this.analyticsLocation), {
+        location: Y(H({}, this.analyticsLocation), {
           object: G.qAy.BUTTON_CTA
         })
       });
@@ -432,7 +432,7 @@ let X = (0, Chunk112724.Z)((0, Chunk730749.Z)(q)),
       giftCode: N.Z.get(t),
       resolved: N.Z.getIsResolved(t)
     })), o = (0, c.e7)([P.default], () => null != i && null != i.userId ? P.default.getUser(i.userId) : null), s = (0, c.e7)([D.Z], () => null != i ? D.Z.get(i.skuId) : null), l = (0, c.e7)([R.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? x.z2(i.entitlementBranches, s, R.Z) : null), u = (0, m.q)(null == s ? true : s.applicationId), d = (0, k.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([C.default], () => null != i ? C.default.getId() === i.userId : C.default.getId() === n.id);
-    return (0, r.jsx)(X, W(H({}, e), {
+    return (0, r.jsx)(X, Y(H({}, e), {
       skuApplication: u,
       giftCode: i,
       resolved: a,

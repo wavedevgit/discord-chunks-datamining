@@ -251,14 +251,14 @@ function H(e) {
   return y(t).initialize()
 }
 
-function Y(e) {
+function W(e) {
   let {
     guildId: t
   } = e;
   return y(t).refreshNewMembersAndSearchResults()
 }
 
-function W(e) {
+function Y(e) {
   let {
     guildId: t,
     pagination: n
@@ -421,8 +421,8 @@ let J = new Q(Chunk570140.Z, {
   LOAD_ARCHIVED_THREADS_SUCCESS: x,
   LOAD_FORUM_POSTS: M,
   INITIALIZE_MEMBER_SAFETY_STORE: H,
-  MEMBER_SAFETY_NEW_MEMBER_TIMESTAMP_REFRESH: Y,
-  MEMBER_SAFETY_PAGINATION_UPDATE: W,
+  MEMBER_SAFETY_NEW_MEMBER_TIMESTAMP_REFRESH: W,
+  MEMBER_SAFETY_PAGINATION_UPDATE: Y,
   MEMBER_SAFETY_PAGINATION_TOKEN_UPDATE: K,
   MEMBER_SAFETY_SEARCH_STATE_UPDATE: z,
   FETCH_GUILD_MEMBER_SUPPLEMENTAL_SUCCESS: q,

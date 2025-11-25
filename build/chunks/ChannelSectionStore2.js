@@ -184,7 +184,7 @@ function H(e) {
   delete R[t.parent_id]
 }
 
-function Y(e) {
+function W(e) {
   var t;
   let {
     channel: n
@@ -197,7 +197,7 @@ function Y(e) {
   })
 }
 
-function W() {
+function Y() {
   let e = false;
   for (let t in R) {
     let n = R[exports];
@@ -235,7 +235,7 @@ class Q extends(r = Chunk442837.ZP.PersistedStore) {
       var t, n, r, i, a;
       A = null != (t = e.isMembersOpen) && t, C = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, R = null != (i = e.sidebars) ? i : {}, P = null != (a = e.guildSidebars) ? a : {}
     }
-    this.syncWith([l.Z], z), this.syncWith([p.Z], W), this.waitFor(f.Z, s.Z, _.Z, p.Z, l.Z, h.Z, m.Z, g.default)
+    this.syncWith([l.Z], z), this.syncWith([p.Z], Y), this.waitFor(f.Z, s.Z, _.Z, p.Z, l.Z, h.Z, m.Z, g.default)
   }
   getState() {
     return {
@@ -288,6 +288,6 @@ let J = new Q(Chunk570140.Z, {
   SIDEBAR_CLOSE_GUILD: B,
   CHANNEL_DELETE: V,
   CHANNEL_SELECT: q,
-  THREAD_CREATE: Y,
+  THREAD_CREATE: W,
   THREAD_DELETE: H
 })

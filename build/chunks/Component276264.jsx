@@ -112,7 +112,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })
     }) : null
   }),
-  Y = Chunk473749.memo(function(e) {
+  W = Chunk473749.memo(function(e) {
     let {
       premiumSince: t,
       onClickPremiumGuildIcon: n
@@ -132,7 +132,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })
     })
   }),
-  W = Chunk473749.memo(function(e) {
+  Y = Chunk473749.memo(function(e) {
     let {
       user: t
     } = e;
@@ -154,13 +154,13 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       onClickPremiumGuildIcon: s
     } = e;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(W, {
+      children: [(0, r.jsx)(Y, {
         user: t
       }), (0, r.jsx)(H, {
         isOwner: n,
         lostPermissionTooltipText: i,
         ownerTooltipText: a
-      }), (0, r.jsx)(Y, {
+      }), (0, r.jsx)(W, {
         premiumSince: o,
         onClickPremiumGuildIcon: s
       })]
@@ -303,8 +303,8 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       hideClanTag: Z = false,
       hideSubtext: F = false,
       hideTooltip: H = false,
-      onMouseDown: Y,
-      onKeyDown: W,
+      onMouseDown: W,
+      onKeyDown: Y,
       onClick: Q,
       onContextMenu: J,
       onClickPremiumGuildIcon: $,
@@ -386,8 +386,8 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         }),
         innerClassName: M.memberInner,
         onClick: Q,
-        onKeyDown: W,
-        onMouseDown: Y,
+        onKeyDown: Y,
+        onMouseDown: W,
         onContextMenu: J,
         onMouseEnter: ew,
         onMouseLeave: eL,

@@ -56,9 +56,9 @@ function B(e) {
     F = (0, u.O)(),
     V = (0, s.e7)([A.Z], () => A.Z.getChannel(I), [I]),
     H = (null == V || null == (t = V.isThread) ? true : t.call(V)) ? null == V ? true : V.parent_id : I,
-    Y = (0, s.e7)([S.default], () => S.default.getId()),
+    W = (0, s.e7)([S.default], () => S.default.getId()),
     {
-      embeddedActivity: W,
+      embeddedActivity: Y,
       currentEmbeddedActivity: K,
       activityLaunchState: z
     } = (0, s.cj)([f.ZP], () => ({
@@ -66,7 +66,7 @@ function B(e) {
       currentEmbeddedActivity: f.ZP.getCurrentEmbeddedActivity(),
       activityLaunchState: f.ZP.getLaunchState(d.id, null != H ? H : true)
     }), [H, d.id]),
-    q = null == W ? true : W.userIds,
+    q = null == Y ? true : Y.userIds,
     X = (0, s.Wu)([N.default], () => Array.from(null != q ? q : []).map(e => N.default.getUser(e)).filter(w.lm), [q]),
     Q = (0, s.e7)([C.Z], () => {
       if (null == q) return null;
@@ -82,13 +82,13 @@ function B(e) {
       return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.wT), e
     }, [d]),
     ee = (0, h.s5)({
-      userId: Y,
+      userId: W,
       channelId: I,
       application: $
     }),
-    et = null == W,
+    et = null == Y,
     en = (0, x.NL)({
-      embeddedActivity: W,
+      embeddedActivity: Y,
       joinability: ee,
       currentEmbeddedActivity: K,
       channel: V
@@ -110,7 +110,7 @@ function B(e) {
         componentId: er,
         commandOrigin: E.bB.ACTIVITY_INSTANCE_EMBED
       }) : await (0, _.Z)({
-        applicationId: W.applicationId,
+        applicationId: Y.applicationId,
         activityChannelId: I,
         locationObject: F.location,
         analyticsLocations: B,

@@ -80,8 +80,8 @@ function F(e, t) {
 }
 let V = "party-",
   H = "channel-",
-  Y = "user-",
-  W = 1e3,
+  W = "user-",
+  Y = 1e3,
   K = false,
   z = false,
   q = [],
@@ -148,7 +148,7 @@ function ec(e) {
     var t;
     let n = el(e.id),
       r = en(e.id);
-    return null != n ? "".concat(H).concat(n) : (null == r || null == (t = r.party) ? true : t.id) != null ? "".concat(V).concat(r.party.id) : "".concat(Y).concat(e.id)
+    return null != n ? "".concat(H).concat(n) : (null == r || null == (t = r.party) ? true : t.id) != null ? "".concat(V).concat(r.party.id) : "".concat(W).concat(e.id)
   })
 }
 
@@ -346,7 +346,7 @@ function ev() {
 }
 let eI = a().throttle(() => {
   ev(), eR.emitChange()
-}, W);
+}, Y);
 
 function eT() {
   return !!eO() && (eI(), false)

@@ -98,14 +98,14 @@ let N = Chunk473749.memo(function(e) {
     [G, B] = i.useState(M),
     [Z, F] = i.useState(y),
     [V, H] = i.useState(false),
-    [Y, W] = i.useState(false),
+    [W, Y] = i.useState(false),
     [K, z] = i.useState(false),
     [q, X] = i.useState(false),
     [Q, J] = i.useState("none"),
     [$, ee] = i.useState(() => "function" == typeof a ? a() : a),
     et = i.useRef(true),
     en = i.useCallback(() => {
-      W(e => !e), X(true)
+      Y(e => !e), X(true)
     }, []),
     er = i.useCallback(() => {
       J("metadata")
@@ -118,7 +118,7 @@ let N = Chunk473749.memo(function(e) {
       null != y && null != L && (0, u.U)(L, e, y)
     }, [L, y]),
     eo = i.useCallback(() => {
-      W(false), null == et.current && (et.current = setTimeout(() => {
+      Y(false), null == et.current && (et.current = setTimeout(() => {
         U(false), X(false), et.current = true
       }, 500))
     }, []),
@@ -153,8 +153,8 @@ let N = Chunk473749.memo(function(e) {
       null != Z && null != t && (el(e * Z), clearTimeout(et.current), et.current = true)
     }, [Z, el]);
   i.useEffect(() => {
-    !j && Y && U(true)
-  }, [Y, j]);
+    !j && W && U(true)
+  }, [W, j]);
   let eh = i.useRef(null),
     em = {
       played: q,
@@ -169,21 +169,21 @@ let N = Chunk473749.memo(function(e) {
     M > 0 && el(M)
   }, [M, el]), i.useEffect(() => {
     let e;
-    return Y && !K && (e = setInterval(() => {
+    return W && !K && (e = setInterval(() => {
       var e, t;
       ea(null != (t = null == (e = x.current) ? true : e.currentTime) ? t : 0)
     }, m.Z.Millis.SECOND)), () => {
       null != e && clearInterval(e)
     }
-  }, [Y, K, ea]), i.useEffect(() => {
+  }, [W, K, ea]), i.useEffect(() => {
     let {
       played: e,
       currentTime: t,
       onPause: n,
       onPlay: r
     } = eg.current;
-    if (e || Y)
-      if (Y) {
+    if (e || W)
+      if (W) {
         var i, a;
         eh.current = performance.now(), null == r || r(false, t, (null != (a = null == (i = x.current) ? true : i.duration) ? a : 0) * m.Z.Millis.SECOND)
       } else {
@@ -192,9 +192,9 @@ let N = Chunk473749.memo(function(e) {
           i = null != r ? (e - r) / 1e3 : 0;
         null == n || n(t, i), ea(t), eh.current = null
       }
-  }, [Y, n, Z, ea]), A(x, Y, B), C(n, Y, W);
-  let eE = Y ? l.fpf : l.o1U,
-    eb = Y ? O.intl.string(O.t.ZcgDJX) : O.intl.string(O.t.RscU7I),
+  }, [W, n, Z, ea]), A(x, W, B), C(n, W, Y);
+  let eE = W ? l.fpf : l.o1U,
+    eb = W ? O.intl.string(O.t.ZcgDJX) : O.intl.string(O.t.RscU7I),
     ey = O.intl.formatToPlainString(O.t.LgCPMt, {
       playbackRate: k
     }),
@@ -205,7 +205,7 @@ let N = Chunk473749.memo(function(e) {
       className: v.audioElement,
       src: n,
       preload: Q,
-      playing: Y && !K,
+      playing: W && !K,
       onEnded: es,
       onLoadedMetadata: ei,
       onError: ec,
@@ -224,7 +224,7 @@ let N = Chunk473749.memo(function(e) {
     muted: V,
     volume: $,
     playbackRate: k,
-    playing: Y && !K,
+    playing: W && !K,
     children: (0, r.jsx)("source", {
       src: n
     })
@@ -232,7 +232,7 @@ let N = Chunk473749.memo(function(e) {
   let ev = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
     className: o()(v.container, {
-      [v.playing]: Y
+      [v.playing]: W
     }),
     onMouseEnter: er,
     children: [(0, r.jsx)("div", {
@@ -256,7 +256,7 @@ let N = Chunk473749.memo(function(e) {
       waveform: b,
       currentTime: G,
       duration: null != Z ? Z : 1,
-      playing: Y,
+      playing: W,
       played: j,
       onDrag: ep,
       onDragStart: ef,

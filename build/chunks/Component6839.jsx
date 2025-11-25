@@ -123,7 +123,7 @@ let er = e => {
         messageId: a
       });
       return (0, r.jsx)(T.Z, {
-        className: Y.__invalid_effect,
+        className: W.__invalid_effect,
         effect: e,
         emojiSize: T.M.LARGE,
         onComplete: () => l(false)
@@ -138,10 +138,10 @@ let er = e => {
         e = true
       }
     }, [t]), (0, r.jsxs)("div", {
-      className: Y.burstEmojiSection,
+      className: W.burstEmojiSection,
       children: [d, (0, r.jsx)(p.Z, {
-        className: o()(Y.burstEmoji, {
-          [Y.hideEmoji]: s
+        className: o()(W.burstEmoji, {
+          [W.hideEmoji]: s
         }),
         emojiId: t.id,
         emojiName: t.name,
@@ -161,7 +161,7 @@ let er = e => {
       setSelected: s,
       reactionType: l,
       colors: u
-    } = e, f = i.useMemo(() => et(t), [t]), p = i.useMemo(() => en(t, $, Y.emoji, o()(Y.emoji, Y.emojiText)), [t]), h = l === I.O.BURST, m = h ? H.t.VmiNjd : H.t["cNfs1/"], g = H.intl.formatToPlainString(m, {
+    } = e, f = i.useMemo(() => et(t), [t]), p = i.useMemo(() => en(t, $, W.emoji, o()(W.emoji, W.emojiText)), [t]), h = l === I.O.BURST, m = h ? H.t.VmiNjd : H.t["cNfs1/"], g = H.intl.formatToPlainString(m, {
       name: f,
       n: n
     }), E = i.useMemo(() => {
@@ -196,8 +196,8 @@ let er = e => {
       asContainer: true,
       children: (0, r.jsxs)(_.P3F, {
         className: o()({
-          [Y.reactionDefault]: !a,
-          [Y.reactionSelected]: a
+          [W.reactionDefault]: !a,
+          [W.reactionSelected]: a
         }),
         "aria-label": g,
         "aria-selected": a,
@@ -237,7 +237,7 @@ function ea(e) {
     }), null == l || l()
   }
   return (0, r.jsxs)(E.Z, {
-    className: Y.reactorDefault,
+    className: W.reactorDefault,
     onContextMenu: e => (0, B.Pv)(e, n, a),
     align: E.Z.Align.CENTER,
     tabIndex: 0,
@@ -246,7 +246,7 @@ function ea(e) {
       wrap: true,
       grow: 0,
       shrink: 0,
-      className: W.marginReset,
+      className: Y.marginReset,
       children: (0, r.jsx)(m.Z, {
         user: null != f ? f : n,
         size: _.EFr.SIZE_24
@@ -255,15 +255,15 @@ function ea(e) {
       children: (0, r.jsxs)(_.Text, {
         tag: "strong",
         variant: "text-md/normal",
-        className: Y.name,
+        className: W.name,
         children: [null != b && "" !== b && (0, r.jsx)("span", {
-          className: n.hasUniqueUsername() ? "" : Y.nickname,
+          className: n.hasUniqueUsername() ? "" : W.nickname,
           children: b
         }), (0, r.jsx)(h.Z, {
           user: n,
-          className: null != b && "" !== b ? Y.tagFaded : null,
-          usernameClass: Y.username,
-          discriminatorClass: Y.discriminator,
+          className: null != b && "" !== b ? W.tagFaded : null,
+          usernameClass: W.username,
+          discriminatorClass: W.discriminator,
           forceUsername: true
         })]
       })
@@ -273,7 +273,7 @@ function ea(e) {
       children: (0, r.jsx)(_.Dio, {
         size: "xs",
         color: "currentColor",
-        className: Y.remove
+        className: W.remove
       })
     })]
   })
@@ -378,9 +378,9 @@ class eo extends Chunk473749.PureComponent {
         disableManage: u
       } = this.props, d = l[n];
       return 1 === t ? 0 === n ? (0, r.jsx)(_.$jN, {
-        className: Y.spinnerMore
+        className: W.spinnerMore
       }, "hasMore") : null : 0 === l.length && this.state.loadingMore ? (0, r.jsx)(_.$jN, {
-        className: Y.spinner
+        className: W.spinner
       }, "loadingMore") : null != d && (0, r.jsx)(ea, {
         message: i,
         emoji: s.emoji,
@@ -470,10 +470,10 @@ function eu(e) {
       "aria-label": c,
       transitionState: l,
       size: _.CgR.DYNAMIC,
-      className: Y.container,
+      className: W.container,
       parentComponent: "MessageReactions",
       children: [o ? null : (0, r.jsx)(_.Ttm, {
-        className: Y.scroller,
+        className: W.scroller,
         fade: true,
         children: m.map(e => {
           var t;

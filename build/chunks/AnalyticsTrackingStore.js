@@ -93,8 +93,8 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     handleFingerprint: () => {},
     handleTrack: () => {}
   },
-  Y = [],
-  W = null,
+  W = [],
+  Y = null,
   K = () => Promise.resolve({
     sessionId: true
   }),
@@ -120,22 +120,22 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     }
 
     function Q() {
-      return 0 !== Y.length && (null != i ? null != r : null != u())
+      return 0 !== W.length && (null != i ? null != r : null != u())
     }
 
     function J(e) {
       let {
         shouldFlushOnNextTick: t = false
       } = e;
-      null == W && Q() && (W = t ? setTimeout($, 0) : z($, {
+      null == Y && Q() && (Y = t ? setTimeout($, 0) : z($, {
         timeout: S
       }))
     }
 
     function $() {
-      if (W = null, !Q()) return Promise.resolve();
-      let e = Y.slice();
-      Y = [], w = Z(w);
+      if (Y = null, !Q()) return Promise.resolve();
+      let e = W.slice();
+      W = [], w = Z(w);
       let t = e.length;
       L = Math.min(L, t), x = Math.max(x, t), M = Z(M, t);
       let n = ee(e);
@@ -145,7 +145,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           null == (t = e.resolve) || t.call(e)
         }), N = Z(N)
       }, t => {
-        Y.unshift(...e), R = Z(R);
+        W.unshift(...e), R = Z(R);
         let {
           message: n
         } = t.body || t;
@@ -274,9 +274,9 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           }, n),
           resolve: a
         }, l = X(s);
-        if (null != l && (s.properties.client_uuid = V.generate(l)), Y.push(s), Y.length > E) {
-          let e = Y.length - E;
-          C = Z(C, e), Y = Y.slice(-E)
+        if (null != l && (s.properties.client_uuid = V.generate(l)), W.push(s), W.length > E) {
+          let e = W.length - E;
+          C = Z(C, e), W = W.slice(-E)
         }
         r ? J({
           shouldFlushOnNextTick: true

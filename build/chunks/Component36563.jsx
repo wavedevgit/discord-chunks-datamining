@@ -134,7 +134,7 @@ function I(e) {
         })
       }, e.id))
     })
-  }), Y = () => {
+  }), W = () => {
     let e = V ? a - 1 : Math.min(t.length, a),
       n = e - 1,
       i = l()(t).take(e).map((e, t) => {
@@ -168,7 +168,7 @@ function I(e) {
       className: m.avatars,
       children: i
     })
-  }, W = () => {
+  }, Y = () => {
     if (!V) return null;
     let e = null != T ? T : v(I);
     return (0, r.jsx)(u.yRy, {
@@ -201,6 +201,6 @@ function I(e) {
     "aria-labelledby": M,
     className: o()(b, m.avatars),
     "aria-hidden": k,
-    children: [Y(), W()]
+    children: [W(), Y()]
   })
 }

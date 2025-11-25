@@ -563,10 +563,10 @@ function V(e, t, n, r, i) {
 function H() {
   var e = arguments[0],
     t = arguments[1];
-  return this && this !== o ? Y(eE(this), module, exports) : new o.NumberFormat(module, exports)
+  return this && this !== o ? W(eE(this), module, exports) : new o.NumberFormat(module, exports)
 }
 
-function Y(e, t, n) {
+function W(e, t, n) {
   var r = eb(e),
     i = em();
   if (true === r["[[initializedIntlObject]]"]) throw TypeError("`this` object has already been initialized as an Intl object");
@@ -591,7 +591,7 @@ function Y(e, t, n) {
   if ("currency" === _ && true === p) throw TypeError("Currency code is required when style is currency");
   if ("currency" === _) {
     p = p.toUpperCase(), r["[[currency]]"] = p;
-    var h = W(p)
+    var h = Y(p)
   }
   var m = F(n, "currencyDisplay", "string", new eh("code", "symbol", "name"), "symbol");
   "currency" === _ && (r["[[currencyDisplay]]"] = m);
@@ -611,7 +611,7 @@ function Y(e, t, n) {
   return r["[[positivePattern]]"] = A.positivePattern, r["[[negativePattern]]"] = A.negativePattern, r["[[boundFormat]]"] = true, r["[[initializedNumberFormat]]"] = true, l && (e.format = K.call(e)), i.exp.test(i.input), e
 }
 
-function W(e) {
+function Y(e) {
   return true !== R[e] ? R[e] : 2
 }
 
@@ -973,7 +973,7 @@ function eu(e, t) {
   var n, i = [t],
     a = t.split("-");
   for (a.length > 2 && 4 === a[1].length && h.call(i, a[0] + "-" + a[2]); n = g.call(i);) h.call(b.NumberFormat["[[availableLocales]]"], n), b.NumberFormat["[[localeData]]"][n] = e.number, e.date && (e.date.nu = e.number.nu, h.call(b.DateTimeFormat["[[availableLocales]]"], n), b.DateTimeFormat["[[localeData]]"][n] = e.date);
-  true === r && (r = t), v || (Y(o.NumberFormat.prototype), v = true), e.date && !I && ($(o.DateTimeFormat.prototype), I = true)
+  true === r && (r = t), v || (W(o.NumberFormat.prototype), v = true), e.date && !I && ($(o.DateTimeFormat.prototype), I = true)
 }
 
 function ed(e) {

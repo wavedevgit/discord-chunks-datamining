@@ -551,7 +551,7 @@ let eR = function(e) {
       discount_id: null == h ? true : h.discount_id
     })
   }, [y, f, h]), p) ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(W.Z, {
+    children: [(0, r.jsx)(Y.Z, {
       premiumType: t,
       onClose: s
     }), (0, r.jsx)(_.hzk, {
@@ -562,7 +562,7 @@ let eR = function(e) {
       })
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(W.Z, {
+    children: [(0, r.jsx)(Y.Z, {
       premiumType: t,
       onClose: s
     }), (0, r.jsxs)(_.hzk, {
@@ -588,7 +588,7 @@ let eR = function(e) {
     }), !y && (0, r.jsx)(_.mzw, {
       "data-migration-pending": true,
       children: o
-    }), y && (0, r.jsx)(Y.Z, {
+    }), y && (0, r.jsx)(W.Z, {
       churnUserDiscountOffer: h,
       onDiscountClaim: c,
       onContinue: u

@@ -105,9 +105,9 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
       enlargeOnInteraction: F = false,
       channel: V,
       currentUser: H,
-      checkSendability: Y = true
+      checkSendability: W = true
     } = e, {
-      location: W
+      location: Y
     } = (0, d.O)(), K = B + 2 * G, z = i.useMemo(() => ({
       gridColumnGap: S,
       gridTemplateColumns: "repeat(auto-fill, ".concat(K, "px)"),
@@ -137,7 +137,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
           P = () => {
             e.type === m.al.CREATE_STICKER && (p.default.track(y.rMx.OPEN_MODAL, {
               type: y.jXE.CREATE_STICKER_MODAL,
-              location: W
+              location: Y
             }), (0, c.ZDy)(async () => {
               let {
                 default: t
@@ -220,7 +220,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
                   className: o()(v.stickerNode, {
                     [v.stickerNodeDimmed]: F && !f && null != N && false !== N.rowIndex && false !== N.columnIndex,
                     [v.stickerNodeHidden]: I,
-                    [v.stickerUnsendable]: Y && !(0, h.kl)(e.sticker, H, V)
+                    [v.stickerUnsendable]: W && !(0, h.kl)(e.sticker, H, V)
                   }),
                   disableAnimation: !f && !a,
                   enlargeOnInteraction: F,

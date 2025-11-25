@@ -86,7 +86,7 @@ let H = e => {
   return R.Z.DEFAULT_AVATARS[t]
 };
 
-function Y(e) {
+function W(e) {
   var t, n;
   let {
     hiddenVoiceStates: i,
@@ -121,7 +121,7 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   let [t, n] = e;
   return new Set(n)
 }
@@ -142,7 +142,7 @@ let K = Chunk473749.memo(function(e) {
     anchorLeft: g,
     avatarSizeMode: b,
     maxDisplayedVoiceStates: y = M.At
-  } = e, O = (0, P.ee)(() => W(o), [o]), [v, I] = o, T = I.length > 0 && null != n && null != a && (!d || f), S = (0, s.Wu)([E.Z], () => Array.from(O).map(e => E.Z.getStreamForUser(e, _)).filter(C.lm).map(e => e.ownerId), [_, O]);
+  } = e, O = (0, P.ee)(() => Y(o), [o]), [v, I] = o, T = I.length > 0 && null != n && null != a && (!d || f), S = (0, s.Wu)([E.Z], () => Array.from(O).map(e => E.Z.getStreamForUser(e, _)).filter(C.lm).map(e => e.ownerId), [_, O]);
   i.useEffect(() => {
     T && (0, P.zi)(k.Odu.VOICE_V3, {
       locked: A.default.isInstanceLocked(),
@@ -188,7 +188,7 @@ let K = Chunk473749.memo(function(e) {
       displayNameMode: c,
       displayUserMode: u,
       locked: d
-    }, w[0]), B && w.length > 1 && (0, r.jsx)(Y, {
+    }, w[0]), B && w.length > 1 && (0, r.jsx)(W, {
       hiddenVoiceStates: w,
       voiceStateMap: v,
       size: (0, x.px)(b),

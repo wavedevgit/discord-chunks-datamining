@@ -121,10 +121,10 @@ function R(e) {
   }), {
     id: F
   } = (0, E.p6)(t), V = null != _ ? _ : F, H = (0, s.e7)([h.Z], () => w(h.Z)), {
-    showDeviceSelectionImprovements: Y
+    showDeviceSelectionImprovements: W
   } = (0, g.V)({
     location: "".concat(G, "/SingleSelectDevices")
-  }), W = (0, r.jsx)(c.Wn, {
+  }), Y = (0, r.jsx)(c.Wn, {
     messageType: c.QYI.WARNING,
     children: L()
   }), K = i.useCallback(e => {
@@ -227,12 +227,12 @@ function R(e) {
       options: q(),
       isDisabled: !H,
       popoutPosition: "bottom",
-      renderOptionLabel: e => z(e, Y),
+      renderOptionLabel: e => z(e, W),
       renderOptionValue: e => {
         let [t] = e;
         return z(t)
       },
       optionClassName: v.singleSelectOption
-    }, R)), !H && W]
+    }, R)), !H && Y]
   })
 }

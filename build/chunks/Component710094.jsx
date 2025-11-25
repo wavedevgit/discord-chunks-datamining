@@ -50,10 +50,10 @@ function x(e) {
       referralTrialOfferId: F,
       initialPlanId: V,
       subscriptionTier: H,
-      handleClose: Y
+      handleClose: W
     } = e,
     {
-      activeSubscription: W,
+      activeSubscription: Y,
       setUpdatedSubscription: K,
       contextMetadata: z,
       currencies: q,
@@ -127,10 +127,10 @@ function x(e) {
       selectedSkuId: er,
       startedPaymentFlowWithPaymentSources: em.current
     }),
-    eY = eO && e_ === P.GZ.ONE_TIME,
-    eW = eY || (eH ? eV && ed : ed),
+    eW = eO && e_ === P.GZ.ONE_TIME,
+    eY = eW || (eH ? eV && ed : ed),
     eK = (0, u.id)(en, eO, eT),
-    ez = i.useCallback(() => eH ? void x(E.h8.SKU_SELECT) : eK ? void x(E.h8.SELECT_FREE_SKU) : eY ? x(E.h8.GIFT_CUSTOMIZATION) : x(E.h8.PLAN_SELECT), [x, eH, eY, eK]),
+    ez = i.useCallback(() => eH ? void x(E.h8.SKU_SELECT) : eK ? void x(E.h8.SELECT_FREE_SKU) : eW ? x(E.h8.GIFT_CUSTOMIZATION) : x(E.h8.PLAN_SELECT), [x, eH, eW, eK]),
     eq = false,
     eX = () => {
       x(E.h8.ADD_PAYMENT_STEPS)
@@ -140,7 +140,7 @@ function x(e) {
     legalTermsNodeRef: ek,
     onPaymentSourceChange: e => eo(null != e ? e.id : null),
     handlePaymentSourceAdd: () => x(E.h8.ADD_PAYMENT_STEPS)
-  })) : (eq = null == eg || !eO && null != ex && e_ === P.GZ.SUBSCRIPTION && eG && !ex.canRedeemTrial(), null == W || eE || eO ? (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
+  })) : (eq = null == eg || !eO && null != ex && e_ === P.GZ.SUBSCRIPTION && eG && !ex.canRedeemTrial(), null == Y || eE || eO ? (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
     selectedPlanId: en.id,
     planGroup: U,
     paymentSources: Q,
@@ -159,9 +159,9 @@ function x(e) {
     referralTrialOfferId: F,
     isTrial: eG || null != M && null != k,
     isDiscount: eZ,
-    handleClose: Y
+    handleClose: W
   })) : (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(p.Z, {
-    premiumSubscription: W,
+    premiumSubscription: Y,
     paymentSources: Q,
     priceOptions: J,
     onPaymentSourceChange: e => {
@@ -178,7 +178,7 @@ function x(e) {
     onCurrencyChange: e => ea(e),
     hasOpenInvoice: null != G,
     purchaseState: eu,
-    handleClose: Y
+    handleClose: W
   }))), ey && (eq = true), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(b.P, {
       giftMessage: ev
@@ -194,7 +194,7 @@ function x(e) {
       }), a]
     }), (0, r.jsx)(N.O3, {
       children: (0, r.jsx)(C.Z, {
-        premiumSubscription: null != W ? W : null,
+        premiumSubscription: null != Y ? Y : null,
         setPurchaseState: es,
         onBack: ez,
         onNext: eL,
@@ -210,7 +210,7 @@ function x(e) {
         planGroup: U,
         purchaseTokenAuthState: et,
         openInvoiceId: G,
-        backButtonEligible: eW,
+        backButtonEligible: eY,
         metadata: ew,
         isTrial: eG,
         disablePurchase: eq,

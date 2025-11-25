@@ -108,8 +108,8 @@ let U = new Chunk710845.Z("ApplicationCommandIndexStore"),
       fetching: false
     }
   }),
-  Y = 5e3,
-  W = {
+  W = 5e3,
+  Y = {
     sensitivity: "accent",
     numeric: true
   },
@@ -250,7 +250,7 @@ function ea(e) {
   X(t, {
     fetchState: {
       fetching: false,
-      retryAfter: Date.now() + Y
+      retryAfter: Date.now() + W
     }
   })
 }
@@ -478,7 +478,7 @@ class ep extends(r = Chunk442837.ZP.Store) {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "indices", {}), x(this, "applicationIndices", new Map), x(this, "applicationIndicesVersion", 0), x(this, "oldLocale", p.default.locale), x(this, "collator", new Intl.Collator(p.default.locale, W))
+    super(...e), x(this, "indices", {}), x(this, "applicationIndices", new Map), x(this, "applicationIndicesVersion", 0), x(this, "oldLocale", p.default.locale), x(this, "collator", new Intl.Collator(p.default.locale, Y))
   }
 }
 x(ep, "displayName", "ApplicationCommandIndexStore");

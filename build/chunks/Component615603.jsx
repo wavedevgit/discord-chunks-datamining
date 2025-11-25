@@ -195,7 +195,7 @@ let k = function(e) {
     F = j > B,
     V = B === c.length,
     H = V ? Z : 1,
-    Y = i.useMemo(() => {
+    W = i.useMemo(() => {
       let e = [];
       for (let t = 0; t < H; t++) e.push((0, r.jsx)(O.Z, {
         className: C.headerBoostGem,
@@ -203,7 +203,7 @@ let k = function(e) {
       }, t));
       return e
     }, [H, v]),
-    W = i.useMemo(() => k.find(e => e.isAvailable()), [k]);
+    Y = i.useMemo(() => k.find(e => e.isAvailable()), [k]);
   if (0 === k.length) return null;
   let K = k.length;
   if (t = V ? A.intl.formatToPlainString(G ? A.t["3DW6Dc"] : A.t["/u15Qc"], {
@@ -238,7 +238,7 @@ let k = function(e) {
           className: C.headerContentPrimary,
           children: [(0, r.jsx)("div", {
             className: C.headerBoostGems,
-            children: Y
+            children: W
           }), (0, r.jsxs)("div", {
             className: C.__invalid_headerCopy,
             children: [(0, r.jsx)(u.Heading, {
@@ -255,15 +255,15 @@ let k = function(e) {
         }), (0, r.jsx)("div", {
           className: C.headerContentSecondary,
           children: (0, r.jsx)(l.Z, {
-            shouldShow: null == W || N,
+            shouldShow: null == Y || N,
             text: a,
             "aria-label": a.toString(),
             children: e => (0, r.jsx)(u.Button, D(R({
               variant: "primary",
               text: A.intl.string(A.t.BMx1iy)
             }, e), {
-              disabled: null == W || N,
-              onClick: null != W ? () => L(W) : true
+              disabled: null == Y || N,
+              onClick: null != Y ? () => L(Y) : true
             }))
           })
         })]

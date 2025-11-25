@@ -142,7 +142,7 @@ function S(e) {
         callback: () => requestAnimationFrame(() => e())
       })
     }), []),
-    Y = i.useCallback((e, t) => {
+    W = i.useCallback((e, t) => {
       k(t);
       let n = document.querySelector(e),
         r = U.current;
@@ -150,16 +150,16 @@ function S(e) {
         node: n
       })
     }, []),
-    W = (0, s.ZP)({
+    Y = (0, s.ZP)({
       id: F,
       isEnabled: true,
       useVirtualFocus: true,
       scrollToStart: V,
       scrollToEnd: H,
-      setFocus: Y
+      setFocus: W
     });
   return (0, r.jsx)(l.bG, {
-    navigator: W,
+    navigator: Y,
     children: (0, r.jsx)(l.SJ, {
       children: e => {
         var {

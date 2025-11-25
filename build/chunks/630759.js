@@ -10,9 +10,9 @@ require.d(exports, {
   Zn: () => x,
   aZ: () => R,
   bo: () => M,
-  fz: () => W,
+  fz: () => Y,
   kK: () => k,
-  lg: () => Y,
+  lg: () => W,
   om: () => F,
   pL: () => P,
   uV: () => N,
@@ -231,7 +231,7 @@ function H(e, t) {
   returnfalse
 }
 
-function Y(e) {
+function W(e) {
   let {
     userId: t,
     channelId: n,
@@ -250,7 +250,7 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   let {
     userId: t,
     guildId: n,
@@ -260,7 +260,7 @@ function W(e) {
   {
     let e = h.default.getUser(t),
       i = E.ZP.getName(n, r, e);
-    return Y({
+    return W({
       userId: t,
       channelId: r,
       nickname: i

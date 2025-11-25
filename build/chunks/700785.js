@@ -2,7 +2,7 @@
 /** chunk id: 700785, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BT: () => W,
+  BT: () => Y,
   Hn: () => A,
   Hu: () => H,
   I0: () => j,
@@ -15,7 +15,7 @@ require.d(exports, {
   oz: () => z,
   r6: () => F,
   uB: () => U,
-  we: () => Y,
+  we: () => W,
   ym: () => L
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
@@ -233,7 +233,7 @@ function B(e, t) {
   if (null == t || null == n || n !== t.guild_id) returnfalse;
   let r = S({}, e.permissionOverwrites),
     i = S({}, t.permissionOverwrites);
-  return null == r[n] && (r[n] = Y(n)), null == i[n] && (i[n] = Y(n)), Object.keys(r).length === Object.keys(i).length && !Object.keys(r).some(e => {
+  return null == r[n] && (r[n] = W(n)), null == i[n] && (i[n] = W(n)), Object.keys(r).length === Object.keys(i).length && !Object.keys(r).some(e => {
     let t = r[e],
       n = i[e];
     return !(null != n && a.fS(n.deny, t.deny) && a.fS(n.allow, t.allow))
@@ -258,7 +258,7 @@ function H(e, t) {
   return null == t.hoistRoleId ? null : E.Z.getRole(e.id, t.hoistRoleId)
 }
 
-function Y(e) {
+function W(e) {
   return {
     id: e,
     type: o.BN.ROLE,
@@ -267,7 +267,7 @@ function Y(e) {
   }
 }
 
-function W(e) {
+function Y(e) {
   let {
     permission: t,
     user: n,

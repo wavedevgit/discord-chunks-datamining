@@ -181,11 +181,11 @@ function H() {
   I.hiddenSurveys = {}
 }
 
-function Y(e) {
+function W(e) {
   return !!M(e) || (C = null, false)
 }
 
-function W() {
+function Y() {
   let e = Object.values(A = null != A ? A : {})[0];
   return null != module && M(module) ? void G({
     type: "SURVEY_FETCHED",
@@ -194,8 +194,8 @@ function W() {
 }
 
 function K() {
-  if (null != C && Y(C)) returnfalse;
-  W()
+  if (null != C && W(C)) returnfalse;
+  Y()
 }
 
 function z() {

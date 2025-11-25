@@ -284,7 +284,7 @@ class U extends Chunk473749.Component {
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
-    }, Y = Chunk117530 ? (0, Chunk54381.jsx)(Chunk4484.Z, M(L({
+    }, W = Chunk117530 ? (0, Chunk54381.jsx)(Chunk4484.Z, M(L({
       ref: this.ref
     }, H), {
       type: Chunk710845,
@@ -303,7 +303,7 @@ class U extends Chunk473749.Component {
       }), (0, Chunk54381.jsx)(Chunk459273.d9, {
         event: Chunk981631.CkL.CLEAR_TEXT,
         handler: this.handleClearText
-      }), Y]
+      }), W]
     })
   }
   constructor(e) {

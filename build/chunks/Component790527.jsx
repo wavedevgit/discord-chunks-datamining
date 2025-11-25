@@ -80,8 +80,8 @@ function w(e) {
       artClassName: F,
       headerClassName: V,
       bodyClassName: H,
-      transitionState: Y,
-      onClose: W,
+      transitionState: W,
+      onClose: Y,
       onSubscribeClick: K,
       onSubscribeFinish: z,
       onSecondaryClick: q,
@@ -156,7 +156,7 @@ function w(e) {
       if (em) return (0, r.jsx)(p.Z, {
         analyticsLocation: M,
         guild: L.guild,
-        onClose: W
+        onClose: Y
       });
       let e = eo ? A.intl.string(A.t.pj0XBN) : true;
       if (eb)
@@ -177,7 +177,7 @@ function w(e) {
         size: l.zx.Sizes.SMALL,
         color: eo || es ? l.zx.Colors.CUSTOM : l.zx.Colors.GREEN,
         onClick: () => {
-          null == K || K(), W()
+          null == K || K(), Y()
         },
         onSubscribeModalClose: z,
         textOptions: {
@@ -195,7 +195,7 @@ function w(e) {
     "data-migration-pending": true,
     className: o()(C.root, !eb && G),
     "aria-label": P,
-    transitionState: Y,
+    transitionState: W,
     parentComponent: "PremiumUpsellModal",
     children: [null != eN && (0, r.jsxs)("div", {
       className: eC,
@@ -209,7 +209,7 @@ function w(e) {
       scrollbarType: "none",
       className: o()(eo ? C.enhancedContent : C.content, !eb && B),
       children: er ? (0, r.jsx)(c.$jN, {}) : eb ? (0, r.jsx)(v.ZP, {
-        onClose: W,
+        onClose: Y,
         type: w,
         subscriptionTier: null != (a = null == eg || null == (n = eg.subscription_trial) ? true : n.sku_id) ? a : T.Si.TIER_2,
         headingText: P,
@@ -263,11 +263,11 @@ function w(e) {
         variant: "secondary",
         size: "sm",
         text: null != ea ? ea : A.intl.string(A.t["13/7kX"]),
-        onClick: W
+        onClick: Y
       })]
     }), eo ? (0, r.jsx)(c.olH, {
       "data-migration-pending": true,
-      onClick: W,
+      onClick: Y,
       className: C.closeButton
     }) : null, ef]
   })

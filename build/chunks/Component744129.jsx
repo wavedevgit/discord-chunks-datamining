@@ -144,7 +144,7 @@ function F(e) {
     showPromotionalGiftBanner: g = false,
     wumpusPosition: y = "inCard",
     isApplicationHome: T = false
-  } = e, S = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), j = (0, s.e7)([h.default], () => h.default.getCurrentUser()), U = (0, I.N)(), G = null == U || null == (t = U.subscription_trial) ? true : t.sku_id, B = (null == S ? true : S.hasActiveTrial) ? null == j ? true : j.premiumType : null, Z = (0, v.N)(), F = (0, b.t7)(), V = null != G || null != B ? D.C.PREMIUM_TRIAL : null != Z || F ? D.C.PREMIUM_DISCOUNT : null, H = (0, c.ap)((0, d.ZP)()), Y = (0, N.A1)(F, B, Z, U, G), W = () => (0, r.jsxs)(r.Fragment, {
+  } = e, S = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), j = (0, s.e7)([h.default], () => h.default.getCurrentUser()), U = (0, I.N)(), G = null == U || null == (t = U.subscription_trial) ? true : t.sku_id, B = (null == S ? true : S.hasActiveTrial) ? null == j ? true : j.premiumType : null, Z = (0, v.N)(), F = (0, b.t7)(), V = null != G || null != B ? D.C.PREMIUM_TRIAL : null != Z || F ? D.C.PREMIUM_DISCOUNT : null, H = (0, c.ap)((0, d.ZP)()), W = (0, N.A1)(F, B, Z, U, G), Y = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       src: M,
       alt: "",
@@ -164,8 +164,8 @@ function F(e) {
     className: a()(L.card, l, {
       [L.withGiftBanner]: g
     }),
-    children: [(0, r.jsx)(W, {}), (0, r.jsx)(C.E, {
-      text: null != Y ? Y : w.intl.string(w.t["6bEcYr"]),
+    children: [(0, r.jsx)(Y, {}), (0, r.jsx)(C.E, {
+      text: null != W ? W : w.intl.string(w.t["6bEcYr"]),
       className: L.pill
     }), (0, r.jsx)(E.Z, {
       className: L.wordmark,

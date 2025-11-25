@@ -53,8 +53,8 @@ let D = "seenQSTutorial",
   F = null,
   V = 0,
   H = [],
-  Y = [],
-  W = null;
+  W = [],
+  Y = null;
 
 function K() {
   G = Chunk430824.Z.getGuildCount() >= 3 || o().size(Chunk592125.Z.getMutablePrivateChannels()) >= 20, H = []
@@ -130,28 +130,28 @@ function X() {
   }
   let i = [],
     a = new Set,
-    o = z(e => e === r || Y.includes(e) || a.has(e));
+    o = z(e => e === r || W.includes(e) || a.has(e));
   if (o.length > 0)
     for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["4B63jZ"]))), o)) Chunk392711.add(module.channelId), i.push(module.record);
-  let s = Chunk306680.ZP.getMentionChannelIds().filter(e => e !== r && !Y.includes(e) && !a.has(e)).map(e => q(e)).filter(Chunk823379.lm).reverse();
+  let s = Chunk306680.ZP.getMentionChannelIds().filter(e => e !== r && !W.includes(e) && !a.has(e)).map(e => q(e)).filter(Chunk823379.lm).reverse();
   if (Chunk442837.length > 0)
     for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["61Df13"]))), Chunk442837)) Chunk392711.add(module.record.id), i.push(module);
   if (null != require) {
     let e = Chunk984933.ZP.getSelectableChannelIds(require).filter(e => {
       let t = m.Z.getChannel(e);
-      return !(null == t || e === r || Y.includes(e) || a.has(e) || S.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && S.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
+      return !(null == t || e === r || W.includes(e) || a.has(e) || S.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && S.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
     }).map(e => q(e)).filter(e => e);
     Object.values(Chunk601070.Z.getActiveJoinedUnreadThreadsForGuild(require)).forEach(t => {
       for (let n in t) {
         let t = q(n);
-        null == t || a.has(t.record.id) || Y.includes(n) || e.push(t)
+        null == t || a.has(t.record.id) || W.includes(n) || e.push(t)
       }
     }), module.length > 0 && (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t.ieCAhD))), i = i.concat(module))
   }
-  let l = Math.min((i.length > 0 ? x : L) + 1, Y.length),
+  let l = Math.min((i.length > 0 ? x : L) + 1, W.length),
     c = [];
   for (let e = 1; module < Chunk433517; e += 1) {
-    let t = q(Y[module]);
+    let t = q(W[module]);
     null != exports && (exports.type !== Chunk212819.h8.TEXT_CHANNEL && exports.type !== Chunk212819.h8.VOICE_CHANNEL || Chunk496675.Z.can(Chunk981631.Plq.VIEW_CHANNEL, exports.record)) && (Chunk570140.push(exports), Chunk392711.add(exports.record.id))
   }
   return Chunk570140.length > 0 && (i = [(0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["80lOZ1"])), ...Chunk570140, ...i]), i
@@ -195,7 +195,7 @@ function J(e) {
     query: n,
     queryMode: i
   } = e, a = n.trim(), o = null != (t = T.Z.getGuildId()) ? t : true, s = new Set(["user:".concat(h.default.getId())]);
-  null != o && s.add("guild:".concat(o)), W = Date.now(), r = null != r ? r : new u.ZP(et, k, null != i ? M : w, {
+  null != o && s.add("guild:".concat(o)), Y = Date.now(), r = null != r ? r : new u.ZP(et, k, null != i ? M : w, {
     frecencyBoosters: true,
     blacklist: s,
     allowSnowflake: true
@@ -207,7 +207,7 @@ function $(e) {
     channelId: t
   } = e;
   if (null == t) returnfalse;
-  (Y = Y.filter(e => e !== t)).unshift(t), Y.length > L + 1 && (Y.length = L + 1)
+  (W = W.filter(e => e !== t)).unshift(t), W.length > L + 1 && (W.length = L + 1)
 }
 
 function ee(e, t) {
@@ -267,11 +267,11 @@ function ea() {
 class eo extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(_.Z, h.default, m.Z, g.Z, E.ZP, b.ZP, y.Z, O.Z, v.ZP, I.Z, T.Z, p.Z, S.ZP), this.syncWith([p.Z], () => true), U = l.K.get(D) || false, Y = null != (t = null == e ? true : e.channelHistory) ? t : []
+    this.waitFor(_.Z, h.default, m.Z, g.Z, E.ZP, b.ZP, y.Z, O.Z, v.ZP, I.Z, T.Z, p.Z, S.ZP), this.syncWith([p.Z], () => true), U = l.K.get(D) || false, W = null != (t = null == e ? true : e.channelHistory) ? t : []
   }
   getState() {
     return {
-      channelHistory: Y
+      channelHistory: W
     }
   }
   isOpen() {
@@ -291,10 +291,10 @@ class eo extends(i = Chunk442837.ZP.PersistedStore) {
     return null != r ? r.queryGuilds("", 100).length : 0
   }
   getChannelHistory() {
-    return Y
+    return W
   }
   getLastShowTimestamp() {
-    return W
+    return Y
   }
   getProps() {
     return {

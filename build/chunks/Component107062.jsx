@@ -81,18 +81,18 @@ let R = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       displayParticipants: F,
       participant1: V,
       participant2: H,
-      numOtherParticipants: Y
-    } = (0, y.Z)(n, 3), W = () => {
+      numOtherParticipants: W
+    } = (0, y.Z)(n, 3), Y = () => {
       f._(_._b.TEXT, h.Ie.NORMAL, {
         applicationId: n.extra.application_id
       })
     }, K = i.useCallback(e => {
       if ((null == x ? true : x.src) == null || null == t || null == M) return;
-      let r = Y > 0 ? D({
+      let r = W > 0 ? D({
         entry: n,
         channel: t,
         users: [V, H],
-        countOthers: Y
+        countOthers: W
       }) : P(n, t, M);
       return (0, v.C4)({
         entry: n,
@@ -103,7 +103,7 @@ let R = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
         colors: [G, B],
         channelId: e
       })
-    }, [null == x ? true : x.src, t, F, n, Z, Y, V, H, G, B, M]), {
+    }, [null == x ? true : x.src, t, F, n, Z, W, V, H, G, B, M]), {
       data: z
     } = (0, p.IX)(n.extra.application_id), q = (0, c.Z)({
       application: z,
@@ -122,9 +122,9 @@ let R = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
         badges: X,
         entry: n,
         showCoverImage: false,
-        onClickTitle: L ? true : W,
-        onClickSubtitle: L ? true : W,
-        onClickThumbnail: L ? true : W
+        onClickTitle: L ? true : Y,
+        onClickSubtitle: L ? true : Y,
+        onClickThumbnail: L ? true : Y
       }),
       J = (0, s.Z)(j, C.xjy.JOIN) || (0, l.Z)(j),
       $ = J ? (0, r.jsx)(u.Z, {
@@ -147,7 +147,7 @@ let R = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
         variant: "primary",
         size: "md",
         fullWidth: true,
-        onClick: W,
+        onClick: Y,
         text: N.intl.string(N.t.GDWYR8),
         icon: o.jje
       }),

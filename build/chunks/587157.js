@@ -197,10 +197,10 @@ function v(e) {
     var t;
     e.stopPropagation(), n.setFocused(false), (null == (t = e.detail) ? true : t.clearFocusKey) && n.setFocusedKey(null)
   } : true);
-  let Y = (0, E.useRef)(T),
-    W = (0, E.useRef)(false);
+  let W = (0, E.useRef)(T),
+    Y = (0, E.useRef)(false);
   (0, E.useEffect)(() => {
-    if (Y.current) {
+    if (W.current) {
       var e, t, r, i;
       let a = null;
       "first" === T && (a = null != (r = null == (e = v.getFirstKey) ? true : e.call(v)) ? r : null), "last" === T && (a = null != (i = null == (t = v.getLastKey) ? true : t.call(v)) ? i : null);
@@ -212,22 +212,22 @@ function v(e) {
             break
           }
       }
-      n.setFocused(true), n.setFocusedKey(a), null == a && !D && I.current && (0, y.e)(I.current), n.collection.size > 0 && (Y.current = false, W.current = true)
+      n.setFocused(true), n.setFocusedKey(a), null == a && !D && I.current && (0, y.e)(I.current), n.collection.size > 0 && (W.current = false, Y.current = true)
     }
   });
   let K = (0, E.useRef)(n.focusedKey),
     z = (0, E.useRef)(null);
   (0, E.useEffect)(() => {
-    if (n.isFocused && null != n.focusedKey && (n.focusedKey !== K.current || W.current) && x.current && I.current) {
+    if (n.isFocused && null != n.focusedKey && (n.focusedKey !== K.current || Y.current) && x.current && I.current) {
       let e = (0, b.Jz)(),
         t = (0, r.D0)(I, n.focusedKey);
       if (!(t instanceof HTMLElement)) return;
-      ("keyboard" === e || W.current) && (z.current && cancelAnimationFrame(z.current), z.current = requestAnimationFrame(() => {
+      ("keyboard" === e || Y.current) && (z.current && cancelAnimationFrame(z.current), z.current = requestAnimationFrame(() => {
         x.current && ((0, c.z)(x.current, t), "virtual" !== e && (0, c.G)(t, {
           containingElement: I.current
         }))
       }))
-    }!D && n.isFocused && null == n.focusedKey && null != K.current && I.current && (0, y.e)(I.current), K.current = n.focusedKey, W.current = false
+    }!D && n.isFocused && null == n.focusedKey && null != K.current && I.current && (0, y.e)(I.current), K.current = n.focusedKey, Y.current = false
   }), (0, E.useEffect)(() => () => {
     z.current && cancelAnimationFrame(z.current)
   }, []), (0, l.z)(I, "react-aria-focus-scope-restore", e => {

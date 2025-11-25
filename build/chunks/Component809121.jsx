@@ -59,7 +59,7 @@ function G(e) {
     guildId: n,
     instance: t
   } = e, [i, l] = a.useState(false), s = a.useCallback(() => {
-    l(true), (0, p.WX)(n, t.id).finally(() => {
+    l(true), (0, j.WX)(n, t.id).finally(() => {
       l(false)
     })
   }, [n, t.id]);
@@ -104,7 +104,7 @@ function B(e) {
   let {
     guildId: n
   } = e, [t, i] = a.useState(false), l = a.useCallback(() => {
-    i(true), (0, p.mF)(n).finally(() => {
+    i(true), (0, j.mF)(n).finally(() => {
       i(false)
     })
   }, [n]);
@@ -120,13 +120,13 @@ function B(e) {
 function V(e) {
   let {
     instance: n
-  } = e, t = (0, N.Z)(n.providerType, n.gameServerPanelUrl);
+  } = e, t = (0, S.Z)(n.providerType, n.gameServerPanelUrl);
   return (0, r.jsx)(u.Button, {
     fullWidth: true,
     text: Z.intl.string(w.default.bBkeMs),
     variant: "secondary",
     onClick: () => {
-      null != t && (0, v.q)({
+      null != t && (0, _.q)({
         href: t
       })
     }
@@ -137,9 +137,9 @@ function W(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, S.Z)(t), [p, k] = (0, g.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), W = p !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, L = (0, o.e7)([x.Z], () => x.Z.getDetectableGame(t.gameId)), U = (0, N.Z)(t.providerType, t.gameServerPanelUrl), z = a.useCallback(() => {
+  } = e, i = (0, N.Z)(t), [j, k] = (0, g.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), W = j !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, L = (0, o.e7)([x.Z], () => x.Z.getDetectableGame(t.gameId)), U = (0, S.Z)(t.providerType, t.gameServerPanelUrl), z = a.useCallback(() => {
     var e;
-    (0, j.wz)(n, t.gameId, null != (e = null == L ? true : L.name) ? e : "", t.id), W || null == t.providerType ? (0, P.Z)(n, t) : (0, E.Z)({
+    (0, p.wz)(n, t.gameId, null != (e = null == L ? true : L.name) ? e : "", t.id), W || null == t.providerType ? (0, P.Z)(n, t) : (0, E.Z)({
       provider: t.providerType,
       onAccept: () => {
         k(T.L.TAKE_ACTION), (0, P.Z)(n, t)
@@ -148,9 +148,9 @@ function W(e) {
   }, [t, W, k, n, null == L ? true : L.name]), {
     handleCopyServerIp: F,
     animateCopyIcon: K
-  } = (0, O.Z)(n, t.id, m.Z.GAME_SERVER_GAME, null != i ? i : ""), q = (0, I.Z)(t.gameId, "cover"), H = (0, b.Z)(n), X = a.useCallback(() => {
+  } = (0, O.Z)(n, t.id, m.Z.GAME_SERVER_GAME, null != i ? i : ""), X = (0, I.Z)(t.gameId, "cover"), q = (0, b.Z)(n), H = a.useCallback(() => {
     var e;
-    (0, j.$M)(n, t.id), (0, v.q)({
+    (0, p.$M)(n, t.id), (0, _.q)({
       href: null != (e = t.gameServerPanelUrl) ? e : ""
     })
   }, [t.gameServerPanelUrl, n, t.id]), Y = a.useMemo(() => {
@@ -160,8 +160,8 @@ function W(e) {
           children: [(0, r.jsx)(G, {
             guildId: n,
             instance: t
-          }), H && (0, r.jsx)(A, {
-            onClick: X,
+          }), q && (0, r.jsx)(A, {
+            onClick: H,
             disabled: null == t.gameServerPanelUrl
           })]
         });
@@ -171,22 +171,22 @@ function W(e) {
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(D, {
             onClick: z
-          }), H && (0, r.jsx)(A, {
-            onClick: X,
+          }), q && (0, r.jsx)(A, {
+            onClick: H,
             disabled: null == t.gameServerPanelUrl
           })]
         });
       case s.V.STARTUP_FAILED:
       case s.V.MISSING_STOCK:
-        return H ? (0, r.jsx)(M, {
-          onClick: X
+        return q ? (0, r.jsx)(M, {
+          onClick: H
         }) : (0, r.jsx)(D, {
           onClick: z,
           disabled: true
         });
       case s.V.DELETED:
-        return H ? (0, r.jsx)(A, {
-          onClick: X,
+        return q ? (0, r.jsx)(A, {
+          onClick: H,
           disabled: null == t.gameServerPanelUrl
         }) : (0, r.jsx)(D, {
           onClick: z,
@@ -194,7 +194,7 @@ function W(e) {
         });
       case s.V.PROVIDER_ERRORED:
         return (0, r.jsxs)(r.Fragment, {
-          children: [H && null != U ? (0, r.jsx)(V, {
+          children: [q && null != U ? (0, r.jsx)(V, {
             guildId: n,
             instance: t
           }) : (0, r.jsx)(D, {
@@ -208,9 +208,9 @@ function W(e) {
       default:
         return null
     }
-  }, [t, z, H, X, n, U]), J = a.useMemo(() => {
+  }, [t, z, q, H, n, U]), J = a.useMemo(() => {
     if (null == t.gameConfig) return null;
-    let e = [t.gameConfig.type, t.gameConfig.version].filter(_.lm).join(" ");
+    let e = [t.gameConfig.type, t.gameConfig.version].filter(v.lm).join(" ");
     return "" === e ? null : e
   }, [t.gameConfig]), $ = a.useMemo(() => {
     switch (t.status) {
@@ -218,15 +218,15 @@ function W(e) {
         if (null == t.gameServerPanelUrl) return Z.intl.string(w.default["1A3US2"]);
         return null;
       case s.V.STARTUP_FAILED:
-        return Z.intl.string(H ? w.default.Mdoc98 : w.default.osZiRl);
+        return Z.intl.string(q ? w.default.Mdoc98 : w.default.osZiRl);
       case s.V.MISSING_STOCK:
-        return Z.intl.string(H ? w.default.YCakvM : w.default.osZiRl);
+        return Z.intl.string(q ? w.default.YCakvM : w.default.osZiRl);
       case s.V.PROVIDER_ERRORED:
-        return Z.intl.string(H ? w.default.NRyCeY : w.default.osZiRl);
+        return Z.intl.string(q ? w.default.NRyCeY : w.default.osZiRl);
       default:
         return null
     }
-  }, [t.status, t.gameServerPanelUrl, H]);
+  }, [t.status, t.gameServerPanelUrl, q]);
   return (0, r.jsxs)(C.Z, {
     actions: Y,
     children: [(0, r.jsxs)("div", {
@@ -234,7 +234,7 @@ function W(e) {
       children: [(0, r.jsxs)("div", {
         className: R.serverHeader,
         children: [(0, r.jsx)("img", {
-          src: null != q ? q : "",
+          src: null != X ? X : "",
           alt: "",
           className: R.gameImage
         }), (0, r.jsxs)("div", {
@@ -245,7 +245,7 @@ function W(e) {
           }), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "text-tertiary",
-            children: [null == L ? true : L.name, J].filter(_.lm).join(" • ")
+            children: [null == L ? true : L.name, J].filter(v.lm).join(" • ")
           })]
         })]
       }), (0, r.jsx)("div", {
@@ -357,7 +357,7 @@ function W(e) {
           })]
         })
       })]
-    }), H && (0, r.jsx)("div", {
+    }), q && (0, r.jsx)("div", {
       className: R.overflowMenu,
       children: (0, r.jsx)(y.Z, {
         guildId: n,
@@ -366,7 +366,7 @@ function W(e) {
     }), (0, r.jsx)("div", {
       className: R.imageBackground,
       children: (0, r.jsx)(h.b, {
-        imageUrl: null != q ? q : ""
+        imageUrl: null != X ? X : ""
       })
     })]
   })

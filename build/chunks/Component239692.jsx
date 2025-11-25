@@ -183,8 +183,8 @@ function v(e, t, n, a) {
       fade: F = false,
       customTheme: V = false,
       chunkSize: H,
-      style: Y,
-      innerId: W,
+      style: W,
+      innerId: Y,
       innerRole: K,
       innerAriaLabel: z,
       innerAriaMultiselectable: q,
@@ -287,10 +287,10 @@ function v(e, t, n, a) {
         [n]: V,
         [d.scrolling]: en
       }),
-      style: (0, u.uT)(Y)
+      style: (0, u.uT)(W)
     }, $), {
       children: [i.useMemo(() => (0, r.jsx)(J, {
-        id: W,
+        id: Y,
         role: K,
         "aria-label": z,
         "aria-multiselectable": q,
@@ -313,7 +313,7 @@ function v(e, t, n, a) {
             spacerTop: es
           })
         })
-      }), [J, W, K, z, q, X, el, Q, ec, k, j, w, L, x, U, es]), i.useMemo(() => O({
+      }), [J, Y, K, z, q, X, el, Q, ec, k, j, w, L, x, U, es]), i.useMemo(() => O({
         isSidebarVisible: eu,
         renderSidebar: M,
         sidebarHeight: P,

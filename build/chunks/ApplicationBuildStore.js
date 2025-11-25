@@ -167,11 +167,11 @@ function H() {
   w(P)
 }
 
-function Y() {
+function W() {
   D.stop()
 }
 
-function W(e) {
+function Y(e) {
   let {
     entitlements: t
   } = e;
@@ -218,7 +218,7 @@ let z = new K(Chunk570140.Z, {
   APPLICATION_BUILD_SIZE_FETCH_FAIL: F,
   APPLICATION_BRANCHES_FETCH_SUCCESS: V,
   APPLICATION_BRANCHES_FETCH_FAIL: H,
-  CONNECTION_CLOSED: Y,
-  LOGOUT: Y,
-  SKU_PURCHASE_SUCCESS: W
+  CONNECTION_CLOSED: W,
+  LOGOUT: W,
+  SKU_PURCHASE_SUCCESS: Y
 })

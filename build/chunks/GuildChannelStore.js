@@ -66,7 +66,7 @@ function k(e) {
 
 function j(e) {
   let t = C[e];
-  return null == t && (t = Y(e)), t
+  return null == t && (t = W(e)), t
 }
 
 function U(e, t) {
@@ -126,15 +126,15 @@ function V(e) {
 }
 
 function H() {
-  C = {}, D = {}, N = {}, R = {}, null != A && Y(A)
-}
-
-function Y(e) {
-  let t = k(e);
-  return C[e] = t, D[e] = [], V(t), G(t), W(t), en(e), t
+  C = {}, D = {}, N = {}, R = {}, null != A && W(A)
 }
 
 function W(e) {
+  let t = k(e);
+  return C[e] = t, D[e] = [], V(t), G(t), Y(t), en(e), t
+}
+
+function Y(e) {
   let t = N[e.id] = {},
     n = {};
   e[T].forEach(e => {
@@ -155,7 +155,7 @@ function K(e) {
     }
   } = e;
   if (null == t) returnfalse;
-  C[t] = true, A === t && Y(t)
+  C[t] = true, A === t && W(t)
 }
 
 function z(e) {
@@ -173,12 +173,12 @@ function q(e) {
     user: n
   } = e;
   if (h.default.getId() !== n.id) returnfalse;
-  C[t] = true, t === A && Y(t)
+  C[t] = true, t === A && W(t)
 }
 
 function X(e) {
   let t = m.Z.getBasicChannel(e.id);
-  null != t && null != t.guild_id && Y(t.guild_id)
+  null != t && null != t.guild_id && W(t.guild_id)
 }
 
 function Q(e) {
@@ -188,7 +188,7 @@ function Q(e) {
     }
   } = e;
   if (null == t) returnfalse;
-  C[t] = true, t === A && Y(t)
+  C[t] = true, t === A && W(t)
 }
 
 function J(e) {
@@ -199,7 +199,7 @@ function J(e) {
     let {
       guild_id: t
     } = e;
-    null != t && (C[t] = true, n = true, A === t && Y(t))
+    null != t && (C[t] = true, n = true, A === t && W(t))
   }
   return n
 }
@@ -208,7 +208,7 @@ function $(e) {
   let {
     guildId: t
   } = e;
-  C[t] = true, t === A && Y(t)
+  C[t] = true, t === A && W(t)
 }
 
 function ee(e, t) {
@@ -223,7 +223,7 @@ function et(e, t) {
   let n = E.Z.getGuild(t);
   if (null != n && ee(e, n)) returntrue;
   let r = C[t];
-  null == r && (r = Y(t));
+  null == r && (r = W(t));
   let {
     [T]: i, [S]: a
   } = r;
@@ -249,7 +249,7 @@ function er(e, t) {
   P = t;
   let r = null != (n = null == e ? true : e.getGuildId()) ? n : null;
   if (null == r) returnfalse;
-  C[r] = true, r === A && Y(r)
+  C[r] = true, r === A && W(r)
 }
 
 function ei(e) {
@@ -277,11 +277,11 @@ function eo(e) {
     guildId: t
   } = e;
   if (A = null != t ? t : null, null == t || null != C[t]) returnfalse;
-  Y(t)
+  W(t)
 }
 
 function es() {
-  Y(Chunk981631.I_8)
+  W(Chunk981631.I_8)
 }
 class el extends(r = Chunk442837.ZP.Store) {
   initialize() {

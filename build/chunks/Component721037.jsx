@@ -120,12 +120,12 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     F = null != m,
     V = F ? b.Z.getWindow(m) : null,
     H = !!F && b.Z.isWindowFullScreen(m),
-    Y = A.Z.windowSize();
-  F && (Y = null == V ? Y : {
+    W = A.Z.windowSize();
+  F && (W = null == V ? W : {
     width: V.innerWidth,
     height: V.innerHeight
   });
-  let W = F ? N.IlC.POPOUT : N.IlC.APP,
+  let Y = F ? N.IlC.POPOUT : N.IlC.APP,
     K = e => F && (0, E.Y)({
       withTitleBar: g,
       isFullScreen: H
@@ -149,14 +149,14 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     selectedPIPWindow: h,
     pipWindows: 0 === J.length ? k : J,
     pipWidth: q,
-    maxX: Y.width - (ea ? $ : 0),
-    maxY: Y.height,
+    maxX: W.width - (ea ? $ : 0),
+    maxY: W.height,
     theme: y.Z.theme,
     dockedRect: T.Z.getDockedRect(null != (d = null == h ? true : h.id) ? d : ""),
     getDockedRectPositionY: K,
-    appContext: W,
+    appContext: Y,
     roundCorners: !ei,
-    windowSize: Y,
+    windowSize: W,
     inPopoutWindow: F,
     activityPIPWindow: Q,
     chatOpen: en,

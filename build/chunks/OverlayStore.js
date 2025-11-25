@@ -600,14 +600,14 @@ function H(e) {
   }), t
 }
 
-function Y(e) {
+function W(e) {
   let t = {};
   return s().forEach(e, (e, n) => {
     t[n] = new f.Z(e)
   }), t
 }
 
-function W(e) {
+function Y(e) {
   let t = {};
   return s().forEach(e, (e, n) => {
     t[n] = new _.Z(e)
@@ -620,7 +620,7 @@ function K(e) {
 }
 class z extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && null != e.layouts && null != e.widgets ? (r = Y(e.layouts), i = W(e.widgets)) : (r = {}, i = {});
+    null != e && null != e.layouts && null != e.widgets ? (r = W(e.layouts), i = Y(e.widgets)) : (r = {}, i = {});
     let t = false,
       n = [];
     s().forEach(S, (e, t) => {

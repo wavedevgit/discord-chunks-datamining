@@ -108,7 +108,7 @@ let ec = Chunk474936.Xh.NONE_MONTH,
   ef = 500;
 async function e_(e, t) {
   await (0, h.X8)();
-  let n = (0, W.vx)(B.Z.boostSlots);
+  let n = (0, Y.vx)(B.Z.boostSlots);
   return (0, h.W3)(e, n.map(e => e.id), t)
 }
 
@@ -141,7 +141,7 @@ function ep(e) {
     eN = (0, u.e7)([V.Z], () => null == ey || null != V.Z.get(ey.planId)),
     eR = (0, u.e7)([V.Z], () => null == eC ? V.Z.get(ec) : eC),
     eP = (0, u.e7)([U.Z], () => U.Z.theme),
-    eD = i.useRef((0, W.vx)(B.Z.boostSlots)).current,
+    eD = i.useRef((0, Y.vx)(B.Z.boostSlots)).current,
     ew = (0, u.e7)([C.Z], () => null != el ? C.Z.getGuild(el) : true, [el]),
     eL = (0, u.e7)([F.Z], () => F.Z.defaultPaymentSourceId),
     ex = (0, k.fL)(null != eA ? eA : eS ? eL : null),
@@ -157,15 +157,15 @@ function ep(e) {
       purchaseError: eV,
       purchaseErrorBlockRef: eH
     } = ex,
-    eY = Object.keys(eM).length > 0,
-    [eW, eK] = i.useState(eh - eD.length),
+    eW = Object.keys(eM).length > 0,
+    [eY, eK] = i.useState(eh - eD.length),
     [ez, eq] = i.useState(false),
     eX = (0, u.e7)([Z.Z], () => Z.Z.popupCallbackCalled),
     eQ = (0, v.V)(),
-    eJ = i.useMemo(() => null != ey && eN && eQ ? (0, x.g)(ey, eW) : [{
+    eJ = i.useMemo(() => null != ey && eN && eQ ? (0, x.g)(ey, eY) : [{
       planId: ee.Xh.PREMIUM_MONTH_GUILD,
-      quantity: eW
-    }], [ey, eN, eW, eQ]),
+      quantity: eY
+    }], [ey, eN, eY, eQ]),
     e$ = i.useMemo(() => (0, w.b)(), []),
     [e0, e1] = (0, g.Z)(() => [null != e$ ? e$ : (0, c.Z)(), Date.now()]),
     {
@@ -184,19 +184,19 @@ function ep(e) {
           } = e;
           return ee.Z1.has(t)
         })) ? true : e.planId) ? t : ee.Xh.PREMIUM_MONTH_GUILD,
-        quantity: eW,
+        quantity: eY,
         location: ei,
         source: eo,
         location_stack: e3
       }
-    }, [e0, ei, e3, eo, eJ, eW]);
+    }, [e0, ei, e3, eo, eJ, eY]);
   i.useEffect(() => {
     (0, z.i1)(ej)
   }, [ej]);
   let [e4, e5] = i.useState(R.h8.PLAN_SELECT), e8 = i.useMemo(() => Date.now(), [e4]), e6 = i.useCallback((e, t) => {
     e5(e), ek(null);
     let n = Date.now();
-    Y.default.track($.rMx.PAYMENT_FLOW_STEP, es(ea({}, e2), {
+    W.default.track($.rMx.PAYMENT_FLOW_STEP, es(ea({}, e2), {
       from_step: null != t ? t : e4,
       to_step: e === R.h8.ADD_PAYMENT_STEPS ? R.h8.PAYMENT_TYPE : e,
       step_duration_ms: n - e8,
@@ -232,7 +232,7 @@ function ep(e) {
         if (null == Z.Z.redirectedPaymentId) return;
         await (0, p.OP)(Z.Z.redirectedPaymentId), r(R.h8.CONFIRM), tr(P.A.COMPLETED), null != n && await e_(n, 0 !== eb), null == i || i()
       } catch (n) {
-        tr(P.A.FAIL), s(n), Y.default.track($.rMx.PAYMENT_FLOW_FAILED, es(ea({}, e), {
+        tr(P.A.FAIL), s(n), W.default.track($.rMx.PAYMENT_FLOW_FAILED, es(ea({}, e), {
           payment_error_code: null == n ? true : n.code,
           payment_gateway: $.gg$.STRIPE,
           payment_source_id: a,
@@ -247,7 +247,7 @@ function ep(e) {
       guild_id: el,
       application_id: eE,
       custom_checkout_flow: eT
-    })), null != ey && null != ey.renewalMutations && Y.default.track($.rMx.PREMIUM_GUILD_PENDING_MODAL, {
+    })), null != ey && null != ey.renewalMutations && W.default.track($.rMx.PREMIUM_GUILD_PENDING_MODAL, {
       location: ei,
       guild_id: el
     })
@@ -286,7 +286,7 @@ function ep(e) {
         currentStep: t,
         toStep: n
       } = e, r = Date.now();
-      Y.default.track($.rMx.PAYMENT_FLOW_STEP, es(ea({}, e2), {
+      W.default.track($.rMx.PAYMENT_FLOW_STEP, es(ea({}, e2), {
         from_step: t,
         to_step: n,
         step_duration_ms: r - e8,
@@ -327,7 +327,7 @@ function ep(e) {
       analyticsSourceLocation: eo,
       onClose: to,
       onBack: () => e6(R.h8.PLAN_SELECT),
-      onSkip: () => e6(null != eA || eY ? R.h8.REVIEW : R.h8.ADD_PAYMENT_STEPS),
+      onSkip: () => e6(null != eA || eW ? R.h8.REVIEW : R.h8.ADD_PAYMENT_STEPS),
       onSubscriptionConfirmation: eg,
       priceOptions: e
     })
@@ -346,7 +346,7 @@ function ep(e) {
       case R.h8.PLAN_SELECT:
         l()(null != el, "Missing guildId"), l()(null != eR, "Missing nextPremiumSubscriptionPlan"), e = (0, r.jsx)(Q.CP, {
           premiumSubscriptionPlan: eR,
-          numGuildBoosts: eW,
+          numGuildBoosts: eY,
           setNumGuildBoosts: eK,
           setForceDisableSubmitButton: ta,
           premiumSubscription: ey,
@@ -383,10 +383,10 @@ function ep(e) {
           variant: "primary",
           text: en.intl.string(en.t["3PatSz"]),
           type: "submit",
-          disabled: ti || 0 === eW || ts || u,
+          disabled: ti || 0 === eY || ts || u,
           onClick: () => {
             if (!em && (null == eC || eC.premiumSubscriptionType !== ee.PremiumTypes.TIER_2)) return void e6(R.h8.PREMIUM_UPSELL);
-            e6(null != eA || eY ? R.h8.REVIEW : R.h8.ADD_PAYMENT_STEPS)
+            e6(null != eA || eW ? R.h8.REVIEW : R.h8.ADD_PAYMENT_STEPS)
           }
         });
         break;
@@ -428,7 +428,7 @@ function ep(e) {
                   currency: eI.currency
                 },
                 n = (0, K.sG)(ey, eJ, o.currency.toLowerCase(), o.paymentSourceId);
-              if (Y.default.track($.rMx.PAYMENT_FLOW_COMPLETED, es(ea({}, e2), {
+              if (W.default.track($.rMx.PAYMENT_FLOW_COMPLETED, es(ea({}, e2), {
                   duration_ms: Date.now() - e1,
                   guild_id: el,
                   application_id: eE
@@ -453,7 +453,7 @@ function ep(e) {
               }
               0 === eb && e6(R.h8.CONFIRM), tr(P.A.COMPLETED), null != el && await e_(el, 0 !== eb), 0 !== eb && to(), null == ep || ep()
             } catch (t) {
-              tr(P.A.FAIL), ek(t), Y.default.track($.rMx.PAYMENT_FLOW_FAILED, es(ea({}, e2), {
+              tr(P.A.FAIL), ek(t), W.default.track($.rMx.PAYMENT_FLOW_FAILED, es(ea({}, e2), {
                 payment_error_code: null == t ? true : t.code,
                 payment_gateway: null != e ? e.type === $.HeQ.CARD ? $.gg$.STRIPE : $.gg$.BRAINTREE : null,
                 payment_source_id: ej,
@@ -486,7 +486,7 @@ function ep(e) {
           E = (0, q.qH)(ev.current) && null != eC && !ee.F$.has(eC.id);
         e = (0, r.jsx)(Q.R7, {
           guild: c,
-          guildBoostQuantity: eW + eD.length,
+          guildBoostQuantity: eY + eD.length,
           onClose: to,
           withAnimation: false,
           paymentSourceType: g,

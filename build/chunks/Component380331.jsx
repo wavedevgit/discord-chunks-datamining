@@ -81,8 +81,8 @@ let x = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_
   F = k + M + 2 * U,
   V = x + M,
   H = V + (B + 2 * Z),
-  Y = k + j + 2 * U,
-  W = 7;
+  W = k + j + 2 * U,
+  Y = 7;
 
 function K(e) {
   let {
@@ -164,7 +164,7 @@ let z = e => {
       let e = A[t + 1];
       return null != e && e.type !== S.En.GUILD ? H : V
     }
-    return Y
+    return W
   }, [A]), {
     nonUnicodeCategoryCount: U,
     firstUnicodeCategoryIndex: z,
@@ -187,7 +187,7 @@ let z = e => {
     }
   }, [A]), [Q, J] = i.useState(true);
   i.useLayoutEffect(() => {
-    J(U >= W)
+    J(U >= Y)
   }, [U]);
   let $ = i.useCallback(e => {
       var t;
@@ -229,7 +229,7 @@ let z = e => {
     categoryHeight: x,
     getScrollOffsetForIndex: et,
     rowCountBySection: X,
-    children: e => U >= W && (0, r.jsx)(f.P3F, {
+    children: e => U >= Y && (0, r.jsx)(f.P3F, {
       "aria-hidden": !Q,
       "aria-label": N.intl.string(N.t.dT0ctw),
       className: o()(R.unicodeShortcut, {

@@ -111,7 +111,7 @@ function H(e) {
   return null == n ? true : n.id
 }
 
-function Y() {
+function W() {
   let e = false,
     t = Chunk430824.Z.getGuildsArray();
   return f().each(k, (t, n) => {
@@ -124,16 +124,16 @@ function Y() {
   }), null != l && Date.now() - l >= x && (s = null, e = true), module
 }
 
-function W(e) {
+function Y(e) {
   if (r = e.sessionId, null != s) {
     let e = O.Z.getChannel(s);
     null != e && S.Z.can(_.$e(C.Plq.VIEW_CHANNEL, C.Plq.CONNECT), e) || (s = null)
   }
-  Y() && Z()
+  W() && Z()
 }
 
 function K(e) {
-  r = e.sessionId, s = e.selectedVoiceChannelId, k = {}, j = {}, a = e.selectedChannelId, k[e.selectedGuildId] = e.selectedChannelId, V(e.selectedGuildId, a), Y()
+  r = e.sessionId, s = e.selectedVoiceChannelId, k = {}, j = {}, a = e.selectedChannelId, k[e.selectedGuildId] = e.selectedChannelId, V(e.selectedGuildId, a), W()
 }
 
 function z() {
@@ -308,7 +308,7 @@ class eo extends(u = Chunk442837.ZP.Store) {
 }
 R(eo, "displayName", "SelectedChannelStore");
 let es = new eo(Chunk570140.Z, {
-  CONNECTION_OPEN: W,
+  CONNECTION_OPEN: Y,
   OVERLAY_INITIALIZE: K,
   CONNECTION_CLOSED: z,
   CHANNEL_SELECT: q,

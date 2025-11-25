@@ -236,25 +236,25 @@ let j = Chunk473749.forwardRef(function(e, t) {
         callback: () => requestAnimationFrame(() => e())
       })
     }), []),
-    eY = i.useCallback(() => new Promise(e => {
+    eW = i.useCallback(() => new Promise(e => {
       let t = eR.current;
       if (null == t) return e();
       t.scrollToBottom({
         callback: () => requestAnimationFrame(() => e())
       })
     }), []),
-    eW = (0, c.ZP)({
+    eY = (0, c.ZP)({
       id: eG,
       defaultFocused: null != ek ? String(ek.value) : true,
       scrollToStart: eH,
-      scrollToEnd: eY,
+      scrollToEnd: eW,
       isEnabled: eI,
       wrap: true,
       useVirtualFocus: true,
       setFocus: eV,
       disableClickOnSpace: true
     }),
-    eK = (0, f.Z)(eW),
+    eK = (0, f.Z)(eY),
     ez = (0, f.Z)(eD);
   i.useEffect(() => {
     let e = ez.current,
@@ -328,16 +328,16 @@ let j = Chunk473749.forwardRef(function(e, t) {
     let e = eR.current;
     null == e || e.scrollToTop()
   }, [eS]), i.useEffect(() => {
-    !ew && eC && null !== eS && requestAnimationFrame(() => eW.focusFirstVisibleItem())
-  }, [ew, eC, eS, eW]);
-  let e$ = h ? W : Y,
+    !ew && eC && null !== eS && requestAnimationFrame(() => eY.focusFirstVisibleItem())
+  }, [ew, eC, eS, eY]);
+  let e$ = h ? Y : W,
     e0 = i.useRef(null),
     {
       focusPreviousItem: e1,
       focusNextItem: e3
     } = Z(e0, ey, ex);
   return (0, r.jsxs)(u.bG, {
-    navigator: eW,
+    navigator: eY,
     children: [(0, r.jsx)(g.y, {
       targetElementRef: eP,
       spacing: 0,
@@ -381,7 +381,7 @@ let j = Chunk473749.forwardRef(function(e, t) {
         } = t, s = a ? y.u04 : y.CJ0, {
           ref: l,
           onKeyDown: c
-        } = eW.containerProps, u = e => {
+        } = eY.containerProps, u = e => {
           var t;
           null == (t = ef.onKeyDown) || t.call(ef, e), c(e), eQ(e)
         };
@@ -872,7 +872,7 @@ function H(e) {
   }) : null
 }
 
-function Y(e) {
+function W(e) {
   var {
     selectedOptions: t,
     renderOptionPrefix: n,
@@ -900,7 +900,7 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   var {
     query: t,
     placeholder: n,

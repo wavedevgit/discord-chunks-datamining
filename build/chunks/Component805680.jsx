@@ -67,7 +67,7 @@ function H(e) {
   return e
 }
 
-function Y(e, t) {
+function W(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,8 +78,8 @@ function Y(e, t) {
   return n
 }
 
-function W(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
+function Y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -110,7 +110,7 @@ let q = Chunk957825.Om + Chunk149203.Su.MEDIUM,
       autoFocus: a = false,
       "aria-controls": s
     } = e, l = K(e, ["isActive", "className", "viewType", "autoFocus", "aria-controls"]);
-    return (0, r.jsx)(p.P3F, W(H({
+    return (0, r.jsx)(p.P3F, Y(H({
       role: "tab",
       autoFocus: a,
       "aria-controls": t ? s : true
@@ -179,8 +179,8 @@ function J(e) {
     includeCreateEmojiButton: D,
     onSelectGIF: V,
     onSelectEmoji: H,
-    onSelectSticker: Y,
-    onSelectSound: W,
+    onSelectSticker: W,
+    onSelectSound: Y,
     channel: K,
     type: z,
     position: J,
@@ -204,7 +204,7 @@ function J(e) {
     reorderExpressionPickerTabs: eE
   } = b.n.useConfig({
     location: "expression_picker"
-  }), eb = (null == (t = z.gifs) ? true : t.allowSending) && !c.tq && null != V, ey = (null == (n = z.stickers) ? true : n.allowSending) && null != Y, eO = !(null == (a = z.expressionPicker) ? true : a.onlyEmojis) && (eb || ey), ev = (0, v.qt)({
+  }), eb = (null == (t = z.gifs) ? true : t.allowSending) && !c.tq && null != V, ey = (null == (n = z.stickers) ? true : n.allowSending) && null != W, eO = !(null == (a = z.expressionPicker) ? true : a.onlyEmojis) && (eb || ey), ev = (0, v.qt)({
     location: "expression_picker",
     autoTrackExposure: true,
     disable: !eO || ec !== M.X1.EMOJI
@@ -252,9 +252,9 @@ function J(e) {
       }), ei.current = true)
     }
   });
-  let eR = i.useCallback((e, t) => null == W ? true : W(e, "emoji_picker", t), [W]),
-    eP = i.useCallback((e, t) => null == W ? true : W(e, "soundboard_picker", t), [W]),
-    eD = (null == (s = z.soundmoji) ? true : s.allowSending) === true && null != W,
+  let eR = i.useCallback((e, t) => null == Y ? true : Y(e, "emoji_picker", t), [Y]),
+    eP = i.useCallback((e, t) => null == Y ? true : Y(e, "soundboard_picker", t), [Y]),
+    eD = (null == (s = z.soundmoji) ? true : s.allowSending) === true && null != Y,
     ew = "left" === $ ? "right" : "left",
     eL = null != ee ? ee : "left" === $ ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight,
     ex = eb ? (0, r.jsx)(X, {
@@ -350,7 +350,7 @@ function J(e) {
                 isLoading: e_,
                 channel: K,
                 containerWidth: es,
-                onSelectSticker: Y,
+                onSelectSticker: W,
                 closePopout: eT,
                 ref: e => {
                   ea.current = e

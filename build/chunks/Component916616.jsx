@@ -121,8 +121,8 @@ let A = Chunk473749.forwardRef((e, t) => {
     useFullWidth: F = false,
     srcIsAnimated: V
   } = e, H = T(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth", "srcIsAnimated"]);
-  let Y = i.useRef(null),
-    W = i.useRef(null);
+  let W = i.useRef(null),
+    Y = i.useRef(null);
   if (1 === y && 1 === v) return null;
   let K = (0, d.Tj)({
       width: y,
@@ -153,8 +153,8 @@ let A = Chunk473749.forwardRef((e, t) => {
   });
   let q = null != U ? U() : null;
   return q = null != q ? q : x, (0, r.jsx)(l.tEY, {
-    ringTarget: Y,
-    focusTarget: W,
+    ringTarget: W,
+    focusTarget: Y,
     children: (0, r.jsxs)("div", I(O({
       ref: t,
       className: o()("imageWrapper", g.imageWrapper, {
@@ -170,7 +170,7 @@ let A = Chunk473749.forwardRef((e, t) => {
         "aria-hidden": true,
         className: g.originalLink,
         href: k,
-        ref: Y,
+        ref: W,
         "data-role": "img",
         "data-safe-src": null != Z ? Z : f
       }), null != G ? (0, r.jsx)(l.P3F, {
@@ -179,7 +179,7 @@ let A = Chunk473749.forwardRef((e, t) => {
         onClick: G,
         "aria-label": null != b ? b : m.intl.string(m.t.X4IxWL),
         "aria-describedby": u.r5,
-        innerRef: W,
+        innerRef: Y,
         focusProps: {
           enabled: false
         },

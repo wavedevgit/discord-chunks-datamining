@@ -52,8 +52,8 @@ let R = new Chunk710845.Z("AuthenticationStore"),
   F = false,
   V = [],
   H = "",
-  Y = false,
-  W = null,
+  W = false,
+  Y = null,
   K = false,
   z = false,
   q = null,
@@ -150,7 +150,7 @@ function el(e) {
   let {
     isMultiAccount: t
   } = e;
-  Z = A.u34.NONE, H = "", Y = false, W = null, i = null, r = null, t || (ep(), eo(), et(false))
+  Z = A.u34.NONE, H = "", W = false, Y = null, i = null, r = null, t || (ep(), eo(), et(false))
 }
 
 function ec() {
@@ -161,14 +161,14 @@ function eu(e) {
   let {
     token: t
   } = e;
-  Z = A.u34.NONE, ei(t), er(), H = "", Y = false, W = null, i = null, ep(), Q = false
+  Z = A.u34.NONE, ei(t), er(), H = "", W = false, Y = null, i = null, ep(), Q = false
 }
 
 function ed(e) {
   let {
     error: t
   } = e;
-  H = "", Y = false, W = null, i = null, ep(), Z = null != (0, p.p)(t).date_of_birth ? A.u34.LOGIN_AGE_GATE : A.u34.NONE
+  H = "", W = false, Y = null, i = null, ep(), Z = null != (0, p.p)(t).date_of_birth ? A.u34.LOGIN_AGE_GATE : A.u34.NONE
 }
 
 function ef() {
@@ -179,19 +179,19 @@ function e_(e) {
   let {
     error: t
   } = e;
-  H = "", Y = false, W = null, Q = false, i = null, Z = null != (0, p.F)(t).date_of_birth ? A.u34.LOGIN_AGE_GATE : A.u34.NONE
+  H = "", W = false, Y = null, Q = false, i = null, Z = null != (0, p.F)(t).date_of_birth ? A.u34.LOGIN_AGE_GATE : A.u34.NONE
 }
 
 function ep() {
   let e = [];
-  null != W && module.push({
+  null != Y && module.push({
     type: "webauthn",
-    challenge: W
+    challenge: Y
   }), K && module.push({
     type: "totp"
   }), z && module.push({
     type: "backup"
-  }), Y && module.push({
+  }), W && module.push({
     type: "sms"
   }), $ = module
 }
@@ -205,7 +205,7 @@ function eh(e) {
     totp: o,
     loginInstanceId: s
   } = e;
-  null != t && (H = t, Y = n, W = null != r ? r : null, z = a, K = o, i = s, ep()), Z = A.u34.MFA_STEP
+  null != t && (H = t, W = n, Y = null != r ? r : null, z = a, K = o, i = s, ep()), Z = A.u34.MFA_STEP
 }
 
 function em() {
@@ -320,7 +320,7 @@ function eP(e) {
   null != (t = null == e ? true : e.isSwitchingAccount) && t || (n && er(), et()), l.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore", "ApexExperimentStore"],
     type: (null == e ? true : e.isSwitchingAccount) ? "user-data-only" : "all"
-  }), S.Z.clearAll(), m.ZH(), I.Z.clearUser(), u.K.remove(w), L = null, x = null, Z = (null == e ? true : e.isSwitchingAccount) ? A.u34.LOGGING_IN : A.u34.NONE, H = "", W = null, Y = false, Q = false, J = false, ep()
+  }), S.Z.clearAll(), m.ZH(), I.Z.clearUser(), u.K.remove(w), L = null, x = null, Z = (null == e ? true : e.isSwitchingAccount) ? A.u34.LOGGING_IN : A.u34.NONE, H = "", Y = null, W = false, Q = false, J = false, ep()
 }
 
 function eD() {

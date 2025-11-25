@@ -55,7 +55,7 @@ function H(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Y(e) {
+function W(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -68,7 +68,7 @@ function Y(e) {
   return e
 }
 
-function W(e, t) {
+function Y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -80,7 +80,7 @@ function W(e, t) {
 }
 
 function K(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -146,7 +146,7 @@ function q(e) {
     account: n,
     theme: a,
     locale: l
-  } = e, [c, p] = i.useState(n.friendSync), [m, g] = i.useState(n.visibility), [E, T] = i.useState(n.metadataVisibility), [S, C] = i.useState(n.showActivity), [N, R] = i.useState(null), [P, w] = i.useState(null), [k, Z] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), X = b.Z.get(q);
+  } = e, [c, p] = i.useState(n.friendSync), [m, g] = i.useState(n.visibility), [E, T] = i.useState(n.metadataVisibility), [S, C] = i.useState(n.showActivity), [N, R] = i.useState(null), [P, w] = i.useState(null), [k, Z] = i.useState(false), [H, Y] = i.useState([]), q = (0, y.rR)(n.type), X = b.Z.get(q);
   i.useEffect(() => {
     p(n.friendSync), g(n.visibility), T(n.metadataVisibility), C(n.showActivity)
   }, [n]);
@@ -278,7 +278,7 @@ function q(e) {
         onClick: o ? true : () => {
           Z(true), h.Z.refresh(e.type, e.id).finally(() => {
             setTimeout(() => {
-              H.push(e.id), W(H), Z(false)
+              H.push(e.id), Y(H), Z(false)
             }, 2e3)
           })
         }
@@ -344,7 +344,7 @@ function q(e) {
 
   function eo() {
     let e = b.Z.get(n.type);
-    (0, _.h7j)(i => (0, r.jsx)(s.Modal, K(Y({
+    (0, _.h7j)(i => (0, r.jsx)(s.Modal, K(W({
       title: F.intl.formatToPlainString(F.t.U5x12f, {
         name: e.name
       }),

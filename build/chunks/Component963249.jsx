@@ -106,8 +106,8 @@ function R(e) {
     openInvoiceId: F,
     applicationId: V,
     referralTrialOfferId: H,
-    giftRecipient: Y,
-    returnRef: W,
+    giftRecipient: W,
+    returnRef: Y,
     subscription: K,
     skipConfirm: z
   } = null != e ? e : {}, q = false, X = null != (t = (0, b.b)()) ? t : (0, o.Z)(), Q = h.default.getCurrentUser(), J = (0, E.M5)(Q, v.PremiumTypes.TIER_2), $ = a()("payment-modal"), ee = (0, E.Wz)(G), et = false;
@@ -127,7 +127,7 @@ function R(e) {
         giftMessage: k,
         giftStyle: j,
         giftingOrigin: U,
-        giftRecipient: Y,
+        giftRecipient: W,
         initialPlanId: i,
         followupSKUInfo: I,
         onClose: (e, t) => {
@@ -158,7 +158,7 @@ function R(e) {
         openInvoiceId: F,
         applicationId: V,
         referralTrialOfferId: H,
-        returnRef: W,
+        returnRef: Y,
         subscription: K,
         skipConfirm: !!z,
         wasTier2PremiumBeforePurchase: J

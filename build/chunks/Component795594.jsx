@@ -401,7 +401,7 @@ let ef = e => {
         })]
       })
     }, eh = e => {
-      W.hW.updateAsync("applications", t => {
+      Y.hW.updateAsync("applications", t => {
         b in t.appSettings ? null == t.appSettings[b].appDmSettings ? t.appSettings[b].appDmSettings = g.c$.create({
           allowMobilePush: e
         }) : t.appSettings[b].appDmSettings.allowMobilePush = e : t.appSettings[b] = g.dp.create({
@@ -409,7 +409,7 @@ let ef = e => {
             allowMobilePush: e
           })
         })
-      }, W.fy.INFREQUENT_USER_ACTION), S.ZP.trackWithMetadata(ee.rMx.NOTIFICATION_SETTINGS_UPDATED, {
+      }, Y.fy.INFREQUENT_USER_ACTION), S.ZP.trackWithMetadata(ee.rMx.NOTIFICATION_SETTINGS_UPDATED, {
         update_type: et.I.AUTHORIZED_APP_DM_PUSH_NOTIFICATION,
         application_id: a.id,
         label: e ? Z.ZB.Unmuted : Z.ZB.Muted
@@ -468,7 +468,7 @@ let ef = e => {
         className: er.warningContainer,
         text: en.intl.format(en.t.jUhnwb, {
           applicationName: a.name,
-          onConnectionPress: () => (0, $.openUserSettings)(Y.n.CONNECTIONS_PANEL, {
+          onConnectionPress: () => (0, $.openUserSettings)(W.n.CONNECTIONS_PANEL, {
             section: ee.oAB.CONNECTIONS
           })
         })

@@ -158,8 +158,8 @@ function F(e) {
 }
 let V = Chunk428595.Z.RULES,
   H = Chunk594199.ZP,
-  Y = /^<@!?(\d+)>/,
-  W = /^<@&(\d+)>/,
+  W = /^<@!?(\d+)>/,
+  Y = /^<@&(\d+)>/,
   K = /^<@\$(\d+)>/,
   z = /^<#(\d+)>/,
   q = /^<a?:(\w+):(\d+)>/,
@@ -171,8 +171,8 @@ let V = Chunk428595.Z.RULES,
     url: Z(o().defaultRules.url),
     inlineCode: Z(V.inlineCode),
     codeBlock: Z(V.codeBlock),
-    rawUserMention: F(Y),
-    rawRoleMention: F(W),
+    rawUserMention: F(W),
+    rawRoleMention: F(Y),
     rawChannelMention: F(z),
     rawEmoji: F(q),
     mention: {
@@ -267,7 +267,7 @@ let V = Chunk428595.Z.RULES,
     inlineCode: Z(V.inlineCode),
     codeBlock: Z(V.codeBlock),
     mention: {
-      match: o().anyScopeRegex(Y),
+      match: o().anyScopeRegex(W),
       parse(e, t, n) {
         let {
           isNotification: r,
@@ -302,7 +302,7 @@ let V = Chunk428595.Z.RULES,
       }
     },
     roleMention: {
-      match: o().anyScopeRegex(W),
+      match: o().anyScopeRegex(Y),
       parse(e, t, n) {
         let {
           guild: r

@@ -81,10 +81,10 @@ function L(e) {
     disabled: L = false
   } = e, M = (0, c.e7)([E.Z], () => E.Z.hidePersonalInformation), [k, j] = (0, c.Wu)([b.Z], () => [b.Z.paymentSources, b.Z.hasFetchedPaymentSources]), U = (0, g.V)((0, I.yb)(t)), {
     analyticsLocations: G
-  } = (0, m.ZP)(), B = i.useMemo(() => Object.values(k).filter(e => !e.invalid), [k]), [Z, F] = i.useState(false), [V, H] = i.useState(t.currency), Y = async (e, n, r) => {
+  } = (0, m.ZP)(), B = i.useMemo(() => Object.values(k).filter(e => !e.invalid), [k]), [Z, F] = i.useState(false), [V, H] = i.useState(t.currency), W = async (e, n, r) => {
     if (null == t) throw Error("missing subscription and paymentSource");
     null == e ? await f.fG(t, n, r, G, R) : await f.tq(t, e, n, r, G, R), F(false), H(n)
-  }, W = async (e, n, r) => {
+  }, Y = async (e, n, r) => {
     F(true);
     let i = await (0, T.hz)({
         subscriptionId: t.id,
@@ -109,10 +109,10 @@ function L(e) {
     let r = (0, v.DE)(n.id, e.id, false);
     return r.length > 0 ? r[0] : S.pKx.USD
   }, z = e => {
-    null != e && W(e, K(e), Y)
+    null != e && Y(e, K(e), W)
   }, q = e => {
     (0, v.i1)(e.id, (0, I.yb)(t)).then(() => {
-      W(e, K(e), Y)
+      Y(e, K(e), W)
     }), "function" == typeof n && n(e.id)
   }, X = () => {
     (0, u.ZDy)(async () => e => (0, r.jsx)(_.default, w(P({}, e), {
@@ -179,7 +179,7 @@ function L(e) {
             selectedCurrency: V,
             currencies: n,
             onChange: e => {
-              W(true, e, Y)
+              Y(true, e, W)
             }
           })]
         })

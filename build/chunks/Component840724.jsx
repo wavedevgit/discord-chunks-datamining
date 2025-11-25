@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   C: () => z,
-  Z: () => W
+  Z: () => Y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -52,8 +52,8 @@ let F = 80,
     [0, 0]
   ],
   H = 30,
-  Y = 3;
-var W = function(e) {
+  W = 3;
+var Y = function(e) {
   return e[e.SMALL = 0] = "SMALL", e[e.MEDIUM = 1] = "MEDIUM", e[e.EMBEDDED = 2] = "EMBEDDED", e
 }({});
 
@@ -75,7 +75,7 @@ function K(e) {
 }
 
 function z(e) {
-  var t, n, a, s, c, b, D, W, z, q, X, Q, J, $, ee, et;
+  var t, n, a, s, c, b, D, Y, z, q, X, Q, J, $, ee, et;
   let {
     positionInSection: en,
     applicationId: er,
@@ -136,7 +136,7 @@ function z(e) {
     if ((null == ed || null == (t = ed.tenantMetadata) || null == (e = t.socialLayer) ? true : e.expiresAt) == null) return null;
     let n = u()(),
       r = Math.max(u()(ed.tenantMetadata.socialLayer.expiresAt).diff(n, "days"), 1);
-    return r <= Y ? B.intl.format(B.t.PWw4Vp, {
+    return r <= W ? B.intl.format(B.t.PWw4Vp, {
       days: r
     }) : null
   }, [null == ed || null == (n = ed.tenantMetadata) || null == (t = n.socialLayer) ? true : t.expiresAt]), eA = (null == ed || null == (s = ed.tenantMetadata) || null == (a = s.socialLayer) ? true : a.cardBackgroundImageAssetId) != null && null != (X = A.Z.toURLSafe((0, S._W)(er, null == ed ? true : ed.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png"))) ? X : true, [eC, eN] = (0, E.Cf)(null == eA ? true : eA.toString(), "#000000"), eR = i.useMemo(() => {
@@ -227,7 +227,7 @@ function z(e) {
                 variant: "text-md/bold",
                 color: "always-white",
                 lineClamp: 1,
-                children: (0, T.T4)(null != (J = null == (D = ed.price) ? true : D.amount) ? J : 0, null != ($ = null == (W = ed.price) ? true : W.currency) ? $ : G.pK.USD)
+                children: (0, T.T4)(null != (J = null == (D = ed.price) ? true : D.amount) ? J : 0, null != ($ = null == (Y = ed.price) ? true : Y.currency) ? $ : G.pK.USD)
               })]
             })]
           }), (0, r.jsx)("div", {

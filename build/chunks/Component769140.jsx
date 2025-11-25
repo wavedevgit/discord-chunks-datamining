@@ -54,7 +54,7 @@ function Z(e) {
   } = e, {
     themeType: V,
     theme: H
-  } = (0, C.z)(), Y = (0, o.e7)([O.Z], () => O.Z.getGuild(null == i ? true : i.guildId)), W = (0, o.e7)([y.Z], () => y.Z.getChannel(null == i ? true : i.channelId)), K = (0, o.Wu)([T.ZP], () => null != W ? T.ZP.getVoiceStatesForChannel(W).map(e => {
+  } = (0, C.z)(), W = (0, o.e7)([O.Z], () => O.Z.getGuild(null == i ? true : i.guildId)), Y = (0, o.e7)([y.Z], () => y.Z.getChannel(null == i ? true : i.channelId)), K = (0, o.Wu)([T.ZP], () => null != Y ? T.ZP.getVoiceStatesForChannel(Y).map(e => {
     let {
       user: t
     } = e;
@@ -63,7 +63,7 @@ function Z(e) {
     analyticsLocations: q
   } = (0, m.ZP)(h.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), X = (0, S.Z)({
     display: "live",
-    voiceChannelId: null == W ? true : W.id,
+    voiceChannelId: null == Y ? true : Y.id,
     user: t,
     stream: i,
     analyticsLocations: q
@@ -73,8 +73,8 @@ function Z(e) {
   }), {
     previewUrl: J,
     isLoading: $
-  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(W), en = (0, p.Kt)() && (0, p.zd)(null == W ? true : W.id), er = (0, o.e7)([v.Z], () => null != W && !en && v.Z.canBasicChannel(x.S7T.CONNECT, W)), ei = (0, d.Z)($ ? null : J), ea = $ || null == J ? ei : J;
-  if (null == Y || null == W || false === i.discoverable) return null;
+  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(Y), en = (0, p.Kt)() && (0, p.zd)(null == Y ? true : Y.id), er = (0, o.e7)([v.Z], () => null != Y && !en && v.Z.canBasicChannel(x.S7T.CONNECT, Y)), ei = (0, d.Z)($ ? null : J), ea = $ || null == J ? ei : J;
+  if (null == W || null == Y || false === i.discoverable) return null;
   let eo = () => {
       let e = e => {
         e.stopPropagation(), ee && (X({
@@ -129,14 +129,14 @@ function Z(e) {
     es = () => V !== M.l.MODAL && V !== M.l.MODAL_V2 ? null : (0, r.jsxs)("div", {
       className: j.details,
       children: [(0, r.jsx)(P.Z, {
-        channel: W,
-        guild: Y,
+        channel: Y,
+        guild: W,
         onAction: X,
         onClose: F
       }), (0, r.jsx)(s.Z, {
         users: K,
-        guildId: Y.id,
-        channelId: W.id,
+        guildId: W.id,
+        channelId: Y.id,
         maxUsers: D.W,
         size: l.EFr.SIZE_16,
         onClickOverflow: e => {
@@ -152,15 +152,15 @@ function Z(e) {
     }),
     el = () => V === M.l.MODAL || V === M.l.MODAL_V2 ? null : (0, r.jsx)(D.Z, {
       user: t,
-      guild: Y,
-      channel: W,
+      guild: W,
+      channel: Y,
       onAction: X,
       onClose: F
     }),
     ec = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: j.actions,
       children: (0, r.jsx)(w.Z, {
-        channel: W,
+        channel: Y,
         onAction: X,
         onClose: F
       })

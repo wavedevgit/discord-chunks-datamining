@@ -222,7 +222,7 @@ function H(e) {
   return null != (n = null == (t = T(e)) ? true : t.surrogates) ? n : r
 }
 
-function Y(e) {
+function W(e) {
   var t, n;
   let r = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "",
@@ -230,8 +230,8 @@ function Y(e) {
   return r ? ":".concat(a, ":") : a
 }
 
-function W(e) {
-  return w(Y(d.reduce((e, t) => e.replace(t, ""), e), false))
+function Y(e) {
+  return w(W(d.reduce((e, t) => e.replace(t, ""), e), false))
 }
 let K = {
   getDefaultDiversitySurrogate: P,
@@ -245,14 +245,14 @@ let K = {
   findInlineEmojisFromSurrogates: Z,
   translateSurrogatesToInlineEmoji: F,
   convertNameToSurrogate: H,
-  convertSurrogateToName: Y,
+  convertSurrogateToName: W,
   convertShortcutToName: function e(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
       n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "",
       r = n;
     return Object.prototype.hasOwnProperty.call(p, e) && (r = p[e]), t ? ":".concat(r, ":") : r
   },
-  convertSurrogateToBase: W,
+  convertSurrogateToBase: Y,
   forEach: e => {
     for (let t of E) t.hasDiversityParent || t.hasMultiDiversityParent || e(C(t))
   },

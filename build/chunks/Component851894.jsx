@@ -119,12 +119,12 @@ function B(e) {
   })), {
     source: V,
     pendingAvatar: H,
-    pendingNameplate: Y
-  } = F, W = j(F, ["source", "pendingAvatar", "pendingNameplate"]), K = (0, E.SD)({
+    pendingNameplate: W
+  } = F, Y = j(F, ["source", "pendingAvatar", "pendingNameplate"]), K = (0, E.SD)({
     userId: M.id,
     image: H
   }), z = (0, h.Ys)({
-    pendingValue: Y,
+    pendingValue: W,
     userValue: null == M || null == (t = M.collectibles) ? true : t.nameplate,
     guildValue: null == U || null == (n = U.collectibles) ? true : n.nameplate,
     guildId: null == a ? true : a.id
@@ -158,7 +158,7 @@ function B(e) {
             guildName: null == a ? true : a.name
           })
         }),
-        profilePreview: (0, r.jsx)(g.Z, k(x({}, W), {
+        profilePreview: (0, r.jsx)(g.Z, k(x({}, Y), {
           pendingAvatar: K,
           pendingDisplayNameStyles: q,
           user: M,
@@ -166,7 +166,7 @@ function B(e) {
           canUsePremiumCustomization: T.ZP.canUsePremiumProfileCustomization(M),
           onUpsellClick: G
         })),
-        nameplatePreview: (0, r.jsx)(p.Z, k(x({}, W), {
+        nameplatePreview: (0, r.jsx)(p.Z, k(x({}, Y), {
           pendingDisplayNameStyles: q,
           user: M,
           guildId: null == a ? true : a.id,

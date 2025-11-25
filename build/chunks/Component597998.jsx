@@ -160,8 +160,8 @@ function k(e) {
     onAddHangStatusClicked: H
   } = e;
   if (h || E) return null;
-  let Y = [],
-    W = G({
+  let W = [],
+    Y = G({
       iconClassName: C,
       mute: n,
       localMute: i,
@@ -169,7 +169,7 @@ function k(e) {
       deaf: f,
       serverDeaf: p
     });
-  m && (a ? Y.push((0, r.jsx)(c.u, {
+  m && (a ? W.push((0, r.jsx)(c.u, {
     text: S.intl.string(S.t["PXMZ/+"]),
     children: (0, r.jsx)(u.Amn, {
       size: "md",
@@ -177,49 +177,49 @@ function k(e) {
       className: o()(A.icon, C),
       colorClass: A.strikethrough
     })
-  }, "video")) : Y.push((0, r.jsx)(c.u, {
+  }, "video")) : W.push((0, r.jsx)(c.u, {
     text: S.intl.string(S.t.FlNoSV),
     children: (0, r.jsx)(u.Odl, {
       size: "md",
       color: "currentColor",
       className: o()(A.icon, C)
     })
-  }, "video"))), k && Y.push((0, r.jsx)(c.u, {
+  }, "video"))), k && W.push((0, r.jsx)(c.u, {
     text: S.intl.string(S.t.HFwRpk),
     children: (0, r.jsx)(u.Mgn, {
       className: o()(A.icon, C),
       color: u.TVs.colors.STATUS_WARNING_BACKGROUND
     })
-  }, "disconnected")), null != N && Y.push((0, r.jsx)(c.u, {
+  }, "disconnected")), null != N && W.push((0, r.jsx)(c.u, {
     text: (0, d.Z)(N.name),
     children: (0, r.jsx)(u.nG3, {
       size: "md",
       color: "currentColor",
       className: o()(A.icon, C)
     })
-  }, "activity")), R === T.YE.XBOX || P === I.wR.XBOX ? Y.push((0, r.jsx)(y.Z, {
+  }, "activity")), R === T.YE.XBOX || P === I.wR.XBOX ? W.push((0, r.jsx)(y.Z, {
     className: o()(A.icon, C)
-  }, "xbox")) : (R === T.YE.PLAYSTATION || P === I.wR.PLAYSTATION) && Y.push((0, r.jsx)(b.Z, {
+  }, "xbox")) : (R === T.YE.PLAYSTATION || P === I.wR.PLAYSTATION) && W.push((0, r.jsx)(b.Z, {
     className: o()(A.icon, C)
-  }, "playstation")), O && Y.push((0, r.jsx)(c.u, {
+  }, "playstation")), O && W.push((0, r.jsx)(c.u, {
     text: S.intl.string(S.t["JH1SJ+"]),
     children: (0, r.jsx)(u.tEF, {
       size: "xs",
       color: "currentColor",
       className: o()(A.icon, C)
     })
-  }, "watch")), g && Y.push((0, r.jsx)(_.ZP, {
+  }, "watch")), g && W.push((0, r.jsx)(_.ZP, {
     size: _.ZP.Sizes.SMALL
   }, "stream"));
   let K = null != D && !(0, l.yE)(D.flags, v.udG.EMBEDDED),
     z = null == j && K;
-  return 0 !== Y.length || 0 !== W.length || B || z ? (0, r.jsxs)("div", {
+  return 0 !== W.length || 0 !== Y.length || B || z ? (0, r.jsxs)("div", {
     className: o()(A.icons, t),
     children: [(0, r.jsxs)("div", {
       className: A.iconGroup,
       onMouseEnter: () => null == V ? true : V(true),
       onMouseLeave: () => null == V ? true : V(false),
-      children: [W, Y]
+      children: [Y, W]
     }), B || z ? (0, r.jsx)("div", {
       className: A.iconGroup,
       onMouseEnter: () => null == F ? true : F(true),
@@ -272,22 +272,22 @@ let j = function(e) {
     overlap: F,
     "aria-label": V,
     ringing: H,
-    user: Y
-  } = _, W = (0, p.Z)({
-    userId: Y.id,
+    user: W
+  } = _, Y = (0, p.Z)({
+    userId: W.id,
     guildId: j
   }), K = (0, h.j)({
-    displayNameStyles: W
+    displayNameStyles: Y
   }), z = e => {
-    null == m || m(e, Y)
+    null == m || m(e, W)
   }, q = e => {
-    null == b || b(e, Y)
+    null == b || b(e, W)
   }, X = e => {
-    null == y || y(e, Y)
+    null == y || y(e, W)
   }, Q = e => {
-    null == I || I(e, Y)
+    null == I || I(e, W)
   }, J = e => {
-    null == T || T(e, Y)
+    null == T || T(e, W)
   };
 
   function $() {
@@ -310,7 +310,7 @@ let j = function(e) {
         [A.avatarLatched]: w && !R
       }),
       style: {
-        backgroundImage: "url(".concat(Y.getAvatarURL(j, a === v.ipw.LARGE ? 38 : 24), ")")
+        backgroundImage: "url(".concat(W.getAvatarURL(j, a === v.ipw.LARGE ? 38 : 24), ")")
       }
     })
   }
@@ -320,14 +320,14 @@ let j = function(e) {
         className: o()(i, A.username, K, {
           [A.usernameSpeaking]: !x && !M && R
         }),
-        children: [null != U ? U : O.ZP.getName(Y), G ? (0, r.jsxs)("span", {
+        children: [null != U ? U : O.ZP.getName(W), G ? (0, r.jsxs)("span", {
           className: A.guestSuffix,
           children: ["\xa0", S.intl.string(S.t["pFO/Ph"])]
         }) : ""]
       }),
       t = {
-        primaryGuild: Y.primaryGuild,
-        userId: Y.id,
+        primaryGuild: W.primaryGuild,
+        userId: W.id,
         contextGuildId: j,
         isOverlay: d,
         disableTooltip: true,
@@ -364,7 +364,7 @@ let j = function(e) {
     onMouseLeave: Q,
     onMouseDown: J,
     onKeyDown: E,
-    "aria-label": null != (t = null != V ? V : U) ? t : Y.username,
+    "aria-label": null != (t = null != V ? V : U) ? t : W.username,
     focusProps: {
       offset: {
         right: 4

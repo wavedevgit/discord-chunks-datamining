@@ -258,17 +258,17 @@ let T = f(b(function(e) {
   F = e => b(t => I(t) && t <= e),
   V = e => b(t => I(t) && t >= e),
   H = () => b(e => I(e) && e > 0),
-  Y = () => b(e => I(e) && e < 0),
-  W = e => Object.assign(f(e), {
-    between: (t, n) => W(g(e, G(t, n))),
-    lt: t => W(g(e, B(t))),
-    gt: t => W(g(e, Z(t))),
-    lte: t => W(g(e, F(t))),
-    gte: t => W(g(e, V(t))),
-    positive: () => W(g(e, H())),
-    negative: () => W(g(e, Y()))
+  W = () => b(e => I(e) && e < 0),
+  Y = e => Object.assign(f(e), {
+    between: (t, n) => Y(g(e, G(t, n))),
+    lt: t => Y(g(e, B(t))),
+    gt: t => Y(g(e, Z(t))),
+    lte: t => Y(g(e, F(t))),
+    gte: t => Y(g(e, V(t))),
+    positive: () => Y(g(e, H())),
+    negative: () => Y(g(e, W()))
   }),
-  K = W(b(I)),
+  K = Y(b(I)),
   z = f(b(function(e) {
     return "boolean" == typeof e
   })),
@@ -408,7 +408,7 @@ var Q = {
   lteBigInt: F,
   gteBigInt: V,
   positiveBigInt: H,
-  negativeBigInt: Y,
+  negativeBigInt: W,
   bigint: K,
   boolean: z,
   symbol: q,

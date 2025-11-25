@@ -144,7 +144,7 @@ function M(e) {
       let a = Array.from(e);
       "multiple" === d && a.length < 1 ? m([]) : "multiple" === d ? m(a.map(e => e.value)) : m(null != (n = null == (t = a[0]) ? true : t.value) ? n : null), p && o && (null == l || l(false)), "single" === d && G(null != (i = null == (r = a[0]) ? true : r.label) ? i : "", ""), N(false)
     }, [V, d, m, p, o, l, O, G]),
-    Y = F.length > 0;
+    W = F.length > 0;
   return (0, r.jsx)(y.Z.Provider, {
     value: R({
       activeDescendantIndex: S,
@@ -153,7 +153,7 @@ function M(e) {
       inputFieldRef: T,
       isInert: V,
       isCollapsible: n,
-      hasValue: Y,
+      hasValue: W,
       value: g,
       options: k,
       filteredOptions: B,
@@ -216,8 +216,8 @@ function j(e) {
     clearable: F,
     required: V,
     listBoxId: H,
-    inputFieldRef: Y,
-    shouldFocusWrap: W,
+    inputFieldRef: W,
+    shouldFocusWrap: Y,
     isInert: K,
     isCollapsible: z,
     hasValue: q,
@@ -290,7 +290,7 @@ function j(e) {
           j(e => {
             if (null === e) return 0;
             let r = e + n;
-            return r >= t && W ? 0 : Math.min(r, t - 1)
+            return r >= t && Y ? 0 : Math.min(r, t - 1)
           });
           break;
         case "ArrowUp":
@@ -299,7 +299,7 @@ function j(e) {
           e.preventDefault(), j(e => {
             if (null === e) return 0;
             let r = e - n;
-            return r < 0 && W ? t - 1 : Math.max(r, 0)
+            return r < 0 && Y ? t - 1 : Math.max(r, 0)
           }), null == $ || $(true);
           break;
         case "Enter":
@@ -326,7 +326,7 @@ function j(e) {
           j(t - 1)
       }
       null == v || v(e)
-    }, [U, V, F, q, W, v, eu, X, et, er, $, en, k, j]),
+    }, [U, V, F, q, Y, v, eu, X, et, er, $, en, k, j]),
     eE = i.useCallback(e => {
       eo(true), ei(e.target.value), null == $ || $(true), null == p || p(e), j(null)
     }, [p, eo, ei, $, j]),
@@ -363,7 +363,7 @@ function j(e) {
         onRemove: em
       })
     }, [U, G, eh, em, ea, et, s]),
-    ey = (0, l.Z)(Y, P);
+    ey = (0, l.Z)(W, P);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(O.q, {
       ref: ey,
@@ -388,7 +388,7 @@ function j(e) {
         children: (0, r.jsxs)("div", {
           className: A.comboBoxInputContainer,
           children: [eb, (0, r.jsx)(_.tEY, {
-            ringTarget: Y,
+            ringTarget: W,
             children: (0, r.jsx)(h.I, {
               ref: L,
               id: t,

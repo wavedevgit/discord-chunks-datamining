@@ -71,8 +71,8 @@ function Z(e, t) {
 let F = true,
   V = ["name", "description", "icon", "splash", "banner", "homeHeader", "afkChannelId", "afkTimeout", "systemChannelId", "verificationLevel", "defaultMessageNotifications", "explicitContentFilter", "features", "systemChannelFlags", "preferredLocale", "rulesChannelId", "safetyAlertsChannelId", "ownerConfiguredContentLevel", "discoverySplash", "publicUpdatesChannelId", "premiumProgressBarEnabled"],
   H = ["brandColorPrimary", "description", "icon", "name", "traits", "visibility", "gameApplicationIds", "customBanner", "tag", "badge", "badgeColorPrimary", "badgeColorSecondary"],
-  Y = new Set(["icon", "splash", "banner", "discoverySplash", "homeHeader"]),
-  W = false,
+  W = new Set(["icon", "splash", "banner", "discoverySplash", "homeHeader"]),
+  Y = false,
   K = Chunk981631.QZA.CLOSED,
   z = {},
   q = null,
@@ -113,7 +113,7 @@ function ep(e) {
 }
 
 function eh(e) {
-  W = true, em(e)
+  Y = true, em(e)
 }
 
 function em(e) {
@@ -133,7 +133,7 @@ function em(e) {
 }
 
 function eg() {
-  W = false, K = Chunk981631.QZA.CLOSED, o = s = null, X = false, J = false, ee = null, et = null, en = 0, ec = null, ef = null, e_ = null, r = null, i = null, a = null, er = Chunk981631.BpS.NONE, d = true
+  Y = false, K = Chunk981631.QZA.CLOSED, o = s = null, X = false, J = false, ee = null, et = null, en = 0, ec = null, ef = null, e_ = null, r = null, i = null, a = null, er = Chunk981631.BpS.NONE, d = true
 }
 
 function eE(e) {
@@ -297,7 +297,7 @@ function ek(e) {
     let t = o = e,
       n = G({}, s);
     V.forEach(r => {
-      if (!Y.has(r) && ("rulesChannelId" !== r && "publicUpdatesChannelId" !== r || n[r] !== j.b4) && "features" !== r) {
+      if (!W.has(r) && ("rulesChannelId" !== r && "publicUpdatesChannelId" !== r || n[r] !== j.b4) && "features" !== r) {
         if ("ownerConfiguredContentLevel" === r) {
           t = (0, v.t8)(t, r, e[r]);
           return
@@ -362,14 +362,14 @@ function eH(e) {
   et = null != (t = e.code) ? t : null, en = e.uses
 }
 
-function eY(e) {
+function eW(e) {
   let {
     level: t
   } = e;
   er = t
 }
 
-function eW(e) {
+function eY(e) {
   e_ = e.integrations
 }
 
@@ -547,7 +547,7 @@ class te extends(_ = Chunk442837.ZP.Store) {
     return !h().isEqual(s, o) || !h().isEqual(el, es) || !h().isEqual(c, l) || this.widgetHasChanges()
   }
   isOpen() {
-    return W
+    return Y
   }
   getSavedRouteState() {
     return d
@@ -649,9 +649,9 @@ let tt = new te(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_SETTINGS_LOADED_INVITES: eR,
   GUILD_SETTINGS_SET_WIDGET: eF,
   GUILD_SETTINGS_SET_VANITY_URL: eH,
-  GUILD_SETTINGS_SET_MFA_SUCCESS: eY,
+  GUILD_SETTINGS_SET_MFA_SUCCESS: eW,
   GUILD_SETTINGS_ROLE_SELECT: eU,
-  GUILD_SETTINGS_LOADED_INTEGRATIONS: eW,
+  GUILD_SETTINGS_LOADED_INTEGRATIONS: eY,
   GUILD_SETTINGS_PIN_PERMISSION_MIGRATED: ez,
   GUILD_SETTINGS_SLOWMODE_PERMISSION_MIGRATED: eq,
   GUILD_BAN_ADD: ex,

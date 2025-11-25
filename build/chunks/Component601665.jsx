@@ -81,17 +81,17 @@ function P(e) {
   i.useEffect(() => {
     null == M || M(null == V ? true : V.current)
   }, [V, M]);
-  let Y = e => {
+  let W = e => {
       null == x || x(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: G,
         hideRestrictedProfile: true
       }, B, e))
     },
-    W = () => k ? null : (0, r.jsx)(o.sNh, {
+    Y = () => k ? null : (0, r.jsx)(o.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3hq"]),
       action: () => {
-        Y(), (0, p.pQ)(R({
+        W(), (0, p.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: G
         }, B))
@@ -126,7 +126,7 @@ function P(e) {
             children: (0, r.jsx)(y.Z, {
               user: t,
               guildId: N,
-              viewProfileItem: W(),
+              viewProfileItem: Y(),
               onCloseProfile: x
             })
           }), (0, r.jsxs)("div", {
@@ -142,7 +142,7 @@ function P(e) {
               guildId: N,
               channelId: P,
               themeType: S.l.POPOUT,
-              onOpenProfile: k ? true : Y
+              onOpenProfile: k ? true : W
             }), (0, r.jsx)(v.Z, {
               user: t,
               themeType: S.l.POPOUT,
@@ -155,7 +155,7 @@ function P(e) {
             displayProfile: Z,
             guild: F,
             isHoveringOrFocusing: H,
-            onOpenProfile: k ? true : Y,
+            onOpenProfile: k ? true : W,
             channelId: P,
             onClose: x
           }), (0, r.jsx)(T.Z, {

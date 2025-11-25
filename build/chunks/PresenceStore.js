@@ -246,11 +246,11 @@ function H(e, t) {
   delete n[e], 0 === Object.keys(n).length && delete O[t], G(t)
 }
 
-function Y(e) {
+function W(e) {
   for (let t of h.default.keys(O)) H(e, t)
 }
 
-function W() {
+function Y() {
   returntrue
 }
 
@@ -323,7 +323,7 @@ function q(e) {
   let {
     presences: t
   } = e;
-  Y(E.ME), t.forEach(e => {
+  W(E.ME), t.forEach(e => {
     let {
       user: t,
       status: n,
@@ -373,7 +373,7 @@ function Q(e) {
   let {
     guild: t
   } = e;
-  Y(t.id)
+  W(t.id)
 }
 
 function J(e) {
@@ -549,7 +549,7 @@ class ei extends(r = Chunk442837.ZP.Store) {
 }
 b(ei, "displayName", "PresenceStore");
 let ea = new ei(Chunk570140.Z, {
-  CONNECTION_OPEN: W,
+  CONNECTION_OPEN: Y,
   CONNECTION_OPEN_SUPPLEMENTAL: K,
   OVERLAY_INITIALIZE: z,
   GUILD_CREATE: X,

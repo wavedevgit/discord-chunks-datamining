@@ -52,8 +52,8 @@ function T(e) {
     disabledInputs: F = false,
     hideCustomStatus: V = false,
     hideBioSection: H = false,
-    hideMessageInput: Y = true,
-    pendingBadges: W,
+    hideMessageInput: W = true,
+    pendingBadges: Y,
     shouldOpenBadgeTooltip: K,
     hideExampleButton: z = false,
     interactive: q = true
@@ -139,11 +139,11 @@ function T(e) {
       pendingDisplayNameStyles: U,
       isTryItOut: Z,
       hideBioSection: H,
-      pendingBadges: W,
+      pendingBadges: Y,
       shouldOpenBadgeTooltip: K
     }), (0, r.jsx)(b.Z, {
       user: i,
-      hideMessageInput: Y,
+      hideMessageInput: W,
       hideExampleButton: z
     }), null != et && (0, r.jsx)(l.Z, {
       skuId: et.skuId

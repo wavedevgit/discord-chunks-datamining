@@ -50,8 +50,8 @@ let j = Chunk473749.forwardRef(function(e, t) {
     placeholder: F,
     required: V,
     textAreaPaddingClassName: H,
-    onChange: Y,
-    onPaste: W,
+    onChange: W,
+    onPaste: Y,
     onResize: K,
     onFocus: z,
     onBlur: q,
@@ -195,13 +195,13 @@ let j = Chunk473749.forwardRef(function(e, t) {
   }), {
     handlePaste: ex,
     handleGlobalPaste: eM
-  } = (0, C.Z)(eR, eS, W), ek = i.useCallback(e => {
+  } = (0, C.Z)(eR, eS, Y), ek = i.useCallback(e => {
     null == et || et()
   }, [et]), ej = i.useCallback(e => {
-    e !== ev.current ? eT.current && (null == Y || Y(null, (0, g.sk)(e, {
+    e !== ev.current ? eT.current && (null == W || W(null, (0, g.sk)(e, {
       mode: "raw"
     }), e)) : eT.current && et()
-  }, [et, Y]);
+  }, [et, W]);
   i.useLayoutEffect(() => {
     eI.current && (ev.current = n, eA(eR, "parent", {
       value: n

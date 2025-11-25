@@ -71,8 +71,8 @@ function G(e) {
     paymentSourceId: F,
     setHasAcceptedTerms: V,
     skusById: H,
-    skuPricePreviewsById: Y,
-    selectedSkuId: W,
+    skuPricePreviewsById: W,
+    selectedSkuId: Y,
     isEmbeddedIAP: K,
     purchaseType: z,
     purchasePreviewError: q,
@@ -92,10 +92,10 @@ function G(e) {
     defaultPaymentSourceId: T.Z.defaultPaymentSourceId,
     hasFetchedPaymentSources: T.Z.hasFetchedPaymentSources
   }));
-  o()(null != W, "Expected selectedSkuId");
-  let eo = H[W],
+  o()(null != Y, "Expected selectedSkuId");
+  let eo = H[Y],
     es = null == eo ? true : eo.eligiblePaymentGateways,
-    el = Y[W],
+    el = W[Y],
     ec = null != F ? F : S.c,
     eu = null != el ? el[ec] : null;
   o()(null != eo, "SKU must exist and be fetched."), o()(null != G, "Application must exist.");

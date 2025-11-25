@@ -112,10 +112,10 @@ function G(e) {
     borderRadius: "0px",
     transformOrigin: "center 0%",
     config: V
-  }), Y = (0, d.q_F)({
+  }), W = (0, d.q_F)({
     y: B ? false : 0,
     config: V
-  }), W = (0, d.q_F)({
+  }), Y = (0, d.q_F)({
     opacity: +!!B,
     transform: B ? "translateY(0)" : "translateY(20px)",
     config: V
@@ -144,8 +144,8 @@ function G(e) {
         style: H
       })
     }), (0, r.jsxs)(s.animated.div, {
-      style: U(k({}, Y), {
-        transform: Y.y.to(e => "translateY(".concat(e, "px)"))
+      style: U(k({}, W), {
+        transform: W.y.to(e => "translateY(".concat(e, "px)"))
       }),
       className: o()(L.contentContainer, w.contentContainer),
       children: [(0, r.jsx)(h.xm, {
@@ -157,7 +157,7 @@ function G(e) {
         }),
         isEnabled: S
       }), (0, r.jsxs)(s.animated.div, {
-        style: W,
+        style: Y,
         className: L.buttonsContainer,
         children: [(0, r.jsx)("div", {
           className: L.button,

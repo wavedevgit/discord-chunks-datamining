@@ -108,8 +108,8 @@ function U(e) {
     setSelectedSkuId: F,
     selectedSkuPricePreview: V,
     paymentSourceId: H,
-    skuPricePreviewsById: Y,
-    skusById: W
+    skuPricePreviewsById: W,
+    skusById: Y
   } = (0, A.JL)(), K = (0, i.e7)([O.default], () => O.default.getCurrentUser()), {
     enabled: z,
     giftRecommendationAlgorithm: q
@@ -131,7 +131,7 @@ function U(e) {
       }), null != x && $(x, e), F(e)
     },
     et = e => {
-      let t = Y[e],
+      let t = W[e],
         n = null;
       if (null != t) {
         var i;
@@ -187,8 +187,8 @@ function U(e) {
         selectedSkuPricePreview: V,
         paymentSourceId: H,
         selectedSkuId: Z,
-        skuPricePreviewsById: Y,
-        skusById: W,
+        skuPricePreviewsById: W,
+        skusById: Y,
         formatPrice: T.T4
       });
       return k === P.Wt.USER_PROFILE_WISHLIST || k === P.Wt.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {

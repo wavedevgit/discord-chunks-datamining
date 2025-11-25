@@ -106,8 +106,8 @@ let P = e => {
   i.useEffect(() => {
     H || (0, f.X8)()
   }, [H]);
-  let Y = (0, E.vx)(m.Z.boostSlots),
-    W = null != A ? Math.max((0, E.KK)(a, A), 1) : 1,
+  let W = (0, E.vx)(m.Z.boostSlots),
+    Y = null != A ? Math.max((0, E.KK)(a, A), 1) : 1,
     K = (0, E.aq)({
       fractionalState: V
     }),
@@ -117,7 +117,7 @@ let P = e => {
         analyticsLocation: t,
         analyticsSourceLocation: n,
         guild: a,
-        numberOfBoostsToAdd: W,
+        numberOfBoostsToAdd: Y,
         onClose: R,
         closeLayer: P,
         inPopout: B,
@@ -129,7 +129,7 @@ let P = e => {
       className: I.button,
       children: [M, null != T ? T : v.intl.string(v.t.gKmQ1G)]
     }), Q = false;
-  return ((Q = null !== q && !(Y.length > 0) && (null == q ? true : q.isPausedOrPausePending) && V === O.a$.NONE) && (X = (0, r.jsxs)("div", {
+  return ((Q = null !== q && !(W.length > 0) && (null == q ? true : q.isPausedOrPausePending) && V === O.a$.NONE) && (X = (0, r.jsxs)("div", {
     className: I.button,
     children: [(0, r.jsx)(d.mBM, {
       size: "xs",

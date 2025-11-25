@@ -100,7 +100,7 @@ function y(e, t) {
       return n;
     case "utf8":
     case "utf-8":
-      return W(e).length;
+      return Y(e).length;
     case "ucs2":
     case "ucs-2":
     case "utf16le":
@@ -111,7 +111,7 @@ function y(e, t) {
     case "base64":
       return q(e).length;
     default:
-      if (i) return r ? false : W(e).length;
+      if (i) return r ? false : Y(e).length;
       t = ("" + t).toLowerCase(), i = true
   }
 }
@@ -210,7 +210,7 @@ function S(e, t, n, r) {
 }
 
 function A(e, t, n, r) {
-  return X(W(t, e.length - n), e, n, r)
+  return X(Y(t, e.length - n), e, n, r)
 }
 
 function C(e, t, n, r) {
@@ -617,13 +617,13 @@ c.prototype.slice = function(e, t) {
 };
 var H = /[^+/0-9A-Za-z-_]/g;
 
-function Y(e) {
+function W(e) {
   if ((e = (e = e.split("=")[0]).trim().replace(H, "")).length < 2) return "";
   for (; e.length % 4 != 0;) e += "=";
   return e
 }
 
-function W(e, t) {
+function Y(e, t) {
   t = t || 1 / 0;
   for (var n, r = e.length, i = null, a = [], o = 0; o < r; ++o) {
     if ((n = e.charCodeAt(o)) > 55295 && n < 57344) {
@@ -669,7 +669,7 @@ function z(e, t) {
 }
 
 function q(e) {
-  return i.toByteArray(Y(e))
+  return i.toByteArray(W(e))
 }
 
 function X(e, t, n, r) {

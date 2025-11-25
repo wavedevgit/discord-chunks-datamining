@@ -51,12 +51,12 @@ function H(e, t) {
   return n
 }
 
-function Y(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : H(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let W = 6 * Chunk70956.Z.Millis.HOUR,
+let Y = 6 * Chunk70956.Z.Millis.HOUR,
   K = new Map,
   z = null,
   q = null,
@@ -97,7 +97,7 @@ function ea(e, t) {
   let n = l.get(e),
     r = null == n ? true : n.userStatus;
   null != r && null == r.claimedAt && er(e, {
-    userStatus: Y(V({}, r), {
+    userStatus: W(V({}, r), {
       claimedAt: t.claimedAt
     })
   })
@@ -122,7 +122,7 @@ function es(e, t) {
       entitlements: t
     });
     null != n && ei(e, n), er(e, {
-      userStatus: Y(V({}, i), {
+      userStatus: W(V({}, i), {
         claimedAt: t.claimedAt,
         claimedTier: null != (a = null == n ? true : n.tier) ? a : null
       })
@@ -430,7 +430,7 @@ function eH(e) {
     let e = {
       questId: null != (d = null == t ? true : t.id) ? d : null,
       fetchedAt: c,
-      ttlMillis: eY(s),
+      ttlMillis: eW(s),
       adSetId: null != (_ = null == r ? true : r.ad_set_id) ? _ : null,
       adRequestId: null != (p = null == r ? true : r.decision_id) ? p : null
     };
@@ -443,13 +443,13 @@ function eH(e) {
   })
 }
 
-function eY(e) {
-  if (null == e) return W;
+function eW(e) {
+  if (null == e) return Y;
   let t = 1e3 * e;
-  return t < W && t > 0 ? t : W
+  return t < Y && t > 0 ? t : Y
 }
 
-function eW(e) {
+function eY(e) {
   let {
     placement: t
   } = e;
@@ -620,7 +620,7 @@ let e3 = new e1(Chunk570140.Z, {
     QUESTS_FETCH_CLAIMED_QUESTS_FAILURE: eb,
     QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN: e_,
     QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: eH,
-    QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eW,
+    QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eY,
     QUESTS_FETCH_PREVIEW_BEGIN: ep,
     QUESTS_FETCH_PREVIEW_SUCCESS: eh,
     QUESTS_FETCH_PREVIEW_FAILURE: em,

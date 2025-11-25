@@ -105,19 +105,19 @@ function A(e) {
   let [k, j] = i.useState(false), [U, G] = i.useState(true), B = i.useRef(true), {
     triggerAnimation: Z,
     untriggerAnimation: F
-  } = i.useContext(u.Rm), V = _.Yk.useSetting(), H = S(), Y = null == D ? V : D, W = E.kV[T], K = i.useRef(null), z = i.useMemo(() => {
+  } = i.useContext(u.Rm), V = _.Yk.useSetting(), H = S(), W = null == D ? V : D, Y = E.kV[T], K = i.useRef(null), z = i.useMemo(() => {
     if (null != a) return a;
     if (null != f) {
-      let e = true === C && Y;
+      let e = true === C && W;
       return h.ZP.getEmojiURL({
         id: f,
         animated: H && true === O && (e || k || true === A),
-        size: W
+        size: Y
       })
     }
     if (null != p) return m.ZP.getURL(p);
     throw Error("Unknown Src for Emoji")
-  }, [O, Y, f, p, W, H, k, A, C, a]), q = i.useCallback(() => {
+  }, [O, W, f, p, Y, H, k, A, C, a]), q = i.useCallback(() => {
     null != z && (B.current = (0, d.po)(z, e => {
       e || G(Date.now())
     }))
@@ -158,7 +158,7 @@ function A(e) {
       channelId: g,
       messageId: b,
       emojiName: p,
-      disable: false === Y || false === V,
+      disable: false === W || false === V,
       emojiRef: ee
     }), P ? (0, r.jsx)("img", v(y({}, J), {
       ref: $,

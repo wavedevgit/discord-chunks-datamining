@@ -263,11 +263,11 @@ function H(e) {
   S = performance.now()
 }
 
-function Y(e) {
+function W(e) {
   return e.connection === r
 }
 
-function W(e) {
+function Y(e) {
   let {
     userId: t,
     context: n,
@@ -391,7 +391,7 @@ let q = new z(Chunk570140.Z, __OVERLAY__ ? {} : {
   RTC_CONNECTION_STATE: Z,
   RTC_CONNECTION_PING: V,
   RTC_CONNECTION_LOSS_RATE: V,
-  RTC_CONNECTION_UPDATE_ID: Y,
+  RTC_CONNECTION_UPDATE_ID: W,
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: V,
   RTC_CONNECTION_CLIENT_CONNECT: V,
   RTC_CONNECTION_CLIENT_DISCONNECT: V,
@@ -409,7 +409,7 @@ let q = new z(Chunk570140.Z, __OVERLAY__ ? {} : {
   THREAD_DELETE: U,
   CALL_DELETE: j,
   APP_STATE_UPDATE: B,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: W
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: Y
 });
 Promise.resolve().then(require.bind(require, 626135)).then(e => {
   let {

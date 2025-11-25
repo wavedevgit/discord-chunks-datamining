@@ -55,7 +55,7 @@ function H(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Y(e) {
+function W(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -68,7 +68,7 @@ function Y(e) {
   return e
 }
 
-function W(e, t) {
+function Y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -80,7 +80,7 @@ function W(e, t) {
 }
 
 function K(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -89,7 +89,7 @@ function z(e) {
   var t, n;
   let {
     user: H,
-    isVisible: W,
+    isVisible: Y,
     shouldShow: z
   } = e, q = N.ZP.isPremium(H), X = N.ZP.canUseAnimatedAvatar(H), {
     pendingAvatar: Q,
@@ -102,7 +102,7 @@ function z(e) {
   } = (0, a.cj)([A.Z], () => {
     let e = A.Z.getAllPending(),
       t = A.Z.getErrors();
-    return K(Y({}, e, A.Z.getAllTryItOut()), {
+    return K(W({}, e, A.Z.getAllTryItOut()), {
       errors: t
     })
   }), {
@@ -132,14 +132,14 @@ function z(e) {
       }
     };
   i.useEffect(() => {
-    W && C.default.track(G.rMx.PREMIUM_UPSELL_VIEWED, {
+    Y && C.default.track(G.rMx.PREMIUM_UPSELL_VIEWED, {
       type: B.cd.PREMIUM_PROFILE_TRY_IT_OUT,
       location: {
         page: G.ZY5.USER_SETTINGS
       },
       location_stack: eu
     })
-  }, [eu, H, W]);
+  }, [eu, H, Y]);
   let ef = (null == (n = (0, m.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === B.Si.TIER_2,
     e_ = (0, h.N)(),
     ep = (0, b.Wp)(e_, B.Si.TIER_2),

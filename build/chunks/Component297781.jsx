@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Af: () => j,
-  An: () => W,
-  E6: () => Y,
+  An: () => Y,
+  E6: () => W,
   EE: () => G,
   Gk: () => Q,
   Gt: () => w,
@@ -102,9 +102,9 @@ function P(e, t) {
   return i
 }
 let D = {
-  [Chunk876215.s.TOP_ARTIST]: [W],
+  [Chunk876215.s.TOP_ARTIST]: [Y],
   [Chunk876215.s.PLAYED_GAME]: [U, G, j, z, Z, H, K, V, F],
-  [Chunk876215.s.TOP_GAME]: [Y],
+  [Chunk876215.s.TOP_GAME]: [W],
   [Chunk876215.s.WATCHED_MEDIA]: [q, X],
   [Chunk876215.s.LAUNCHED_ACTIVITY]: [U, G, j, z, K, F]
 };
@@ -311,7 +311,7 @@ function H(e) {
   }) : null
 }
 
-function Y(e) {
+function W(e) {
   let {
     entry: t
   } = e, {
@@ -330,7 +330,7 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   var t;
   let {
     entry: n

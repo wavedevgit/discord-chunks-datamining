@@ -60,8 +60,8 @@ function k(e) {
   }, [H, k]), i.useEffect(() => {
     h.default.track(A.rMx.PREMIUM_UPSELL_VIEWED, U), null == B || B()
   }, [B, U]);
-  let Y = V.length > 1 && k,
-    W = () => 2 === t ? R.hasTabParentContainer : 1 === t ? R.hasParentContainer : R.noParentContainer,
+  let W = V.length > 1 && k,
+    Y = () => 2 === t ? R.hasTabParentContainer : 1 === t ? R.hasParentContainer : R.noParentContainer,
     K = () => {
       h.default.track(A.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: j,
@@ -153,7 +153,7 @@ function k(e) {
       onClick: G,
       isVisible: true
     }), (0, r.jsxs)("div", {
-      className: o()(R.container, W()),
+      className: o()(R.container, Y()),
       children: [(0, r.jsx)(u.olH, {
         "data-migration-pending": true,
         onClick: G,
@@ -168,11 +168,11 @@ function k(e) {
           alt: "Nitro Perk"
         }), (0, r.jsx)(u.Heading, {
           className: o()(R.title, {
-            [R.titleNoSocialProof]: !Y
+            [R.titleNoSocialProof]: !W
           }),
           variant: "heading-xl/bold",
           children: a
-        }), Y && (0, r.jsx)(T.Z, {
+        }), W && (0, r.jsx)(T.Z, {
           affinities: V
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/medium",

@@ -152,8 +152,8 @@
       return "hsl" == r.substr(0, 3) ? B(Z(n), r) : (n[0] = F(n[0]), n[1] = F(n[1]), n[2] = F(n[2]), ("rgba" === r || n.length > 3 && n[3] < 1) && (n[3] = n.length > 3 ? n[3] : 1, r = "rgba"), r + "(" + n.slice(0, "rgb" === r ? 3 : 4).join(",") + ")")
     },
     H = d.unpack,
-    Y = Math.round,
-    W = function() {
+    W = Math.round,
+    Y = function() {
       for (var e, t, n, r, i = [], a = arguments.length; a--;) i[a] = arguments[a];
       var o = (i = H(i, "hsl"))[0],
         s = i[1],
@@ -167,11 +167,11 @@
           _ = o / 360;
         c[0] = _ + 1 / 3, c[1] = _, c[2] = _ - 1 / 3;
         for (var p = 0; p < 3; p++) c[p] < 0 && (c[p] += 1), c[p] > 1 && (c[p] -= 1), 6 * c[p] < 1 ? u[p] = f + (d - f) * 6 * c[p] : 2 * c[p] < 1 ? u[p] = d : 3 * c[p] < 2 ? u[p] = f + (d - f) * (2 / 3 - c[p]) * 6 : u[p] = f;
-        t = (e = [Y(255 * u[0]), Y(255 * u[1]), Y(255 * u[2])])[0], n = module[1], r = module[2]
+        t = (e = [W(255 * u[0]), W(255 * u[1]), W(255 * u[2])])[0], n = module[1], r = module[2]
       }
       return i.length > 3 ? [t, n, r, i[3]] : [t, n, r, 1]
     },
-    K = W,
+    K = Y,
     z = f,
     q = /^rgb\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*\)$/,
     X = /^rgba\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*([01]|[01]?\.\d+)\)$/,
@@ -396,15 +396,15 @@
     },
     eV = d.unpack,
     eH = d.limit,
-    eY = d.TWOPI,
-    eW = d.PITHIRD,
+    eW = d.TWOPI,
+    eY = d.PITHIRD,
     eK = Math.cos,
     ez = function() {
       for (var e, t, n, r = [], i = arguments.length; i--;) r[i] = arguments[i];
       var a = (r = eV(r, "hsi"))[0],
         o = r[1],
         s = r[2];
-      return isNaN(a) && (a = 0), isNaN(o) && (o = 0), a > 360 && (a -= 360), a < 0 && (a += 360), (a /= 360) < 1 / 3 ? t = 1 - ((n = (1 - o) / 3) + (e = (1 + o * eK(eY * a) / eK(eW - eY * a)) / 3)) : a < 2 / 3 ? (a -= 1 / 3, n = 1 - ((e = (1 - o) / 3) + (t = (1 + o * eK(eY * a) / eK(eW - eY * a)) / 3))) : (a -= 2 / 3, e = 1 - ((t = (1 - o) / 3) + (n = (1 + o * eK(eY * a) / eK(eW - eY * a)) / 3))), e = eH(s * module * 3), [255 * module, 255 * (t = eH(s * t * 3)), 255 * (n = eH(s * n * 3)), r.length > 3 ? r[3] : 1]
+      return isNaN(a) && (a = 0), isNaN(o) && (o = 0), a > 360 && (a -= 360), a < 0 && (a += 360), (a /= 360) < 1 / 3 ? t = 1 - ((n = (1 - o) / 3) + (e = (1 + o * eK(eW * a) / eK(eY - eW * a)) / 3)) : a < 2 / 3 ? (a -= 1 / 3, n = 1 - ((e = (1 - o) / 3) + (t = (1 + o * eK(eW * a) / eK(eY - eW * a)) / 3))) : (a -= 2 / 3, e = 1 - ((t = (1 - o) / 3) + (n = (1 + o * eK(eW * a) / eK(eY - eW * a)) / 3))), e = eH(s * module * 3), [255 * module, 255 * (t = eH(s * t * 3)), 255 * (n = eH(s * n * 3)), r.length > 3 ? r[3] : 1]
     },
     eq = d.unpack,
     eX = d.type,
@@ -435,7 +435,7 @@
   }, e2.hsl = function() {
     for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
     return new(Function.prototype.bind.apply(e4, [null].concat(module, ["hsl"])))
-  }, e5.format.hsl = W, e5.autodetect.push({
+  }, e5.format.hsl = Y, e5.autodetect.push({
     p: 2,
     test: function() {
       for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
@@ -612,12 +612,12 @@
         a = n[2];
       return isNaN(a) && (a = 0), [r, tV(a *= tZ) * i, tF(a) * i]
     },
-    tY = d.unpack,
-    tW = tH,
+    tW = d.unpack,
+    tY = tH,
     tK = tI,
     tz = function() {
       for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
-      var n = tW((e = tY(module, "lch"))[0], module[1], module[2]),
+      var n = tY((e = tW(module, "lch"))[0], module[1], module[2]),
         r = tK(n[0], n[1], n[2]);
       return [r[0], r[1], r[2], module.length > 3 ? module[3] : 1]
     },
@@ -974,18 +974,18 @@
   var nF = d.unpack,
     nV = nR,
     nH = tM,
-    nY = function() {
+    nW = function() {
       for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
       var n = nF(module, "rgb"),
         r = nV(n[0], n[1], n[2]);
       return nH(r[0], r[1], r[2])
     },
-    nW = d.unpack,
+    nY = d.unpack,
     nK = tH,
     nz = nx,
     nq = function() {
       for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
-      var n = nK((e = nW(module, "lch"))[0], module[1], module[2]),
+      var n = nK((e = nY(module, "lch"))[0], module[1], module[2]),
         r = nz(n[0], n[1], n[2]);
       return [r[0], r[1], r[2], module.length > 3 ? module[3] : 1]
     },
@@ -994,7 +994,7 @@
     nJ = y,
     n$ = E,
     n0 = f,
-    n1 = nY;
+    n1 = nW;
   n$.prototype.oklch = function() {
     return n1(this._rgb)
   }, nJ.oklch = function() {
@@ -1390,7 +1390,7 @@
         else if (t > 1) {
           var a = i[0],
             o = i[1] - a;
-          r = rY(0, t, false).map(function(e) {
+          r = rW(0, t, false).map(function(e) {
             return v(a + e / (t - 1) * o)
           })
         } else {
@@ -1415,11 +1415,11 @@
       }, v
     };
 
-  function rY(e, t, n) {
+  function rW(e, t, n) {
     for (var r = [], i = e < t, a = n ? i ? t + 1 : t - 1 : t, o = e; i ? o < a : o > a; i ? o++ : o--) r.push(o);
     return r
   }
-  var rW = E,
+  var rY = E,
     rK = rH,
     rz = function(e) {
       for (var t = [1, 1], n = 1; n < e; n++) {
@@ -1431,25 +1431,25 @@
     rq = function(e) {
       var t, n, r, i, a, o, s, l, c, u, d;
       if (2 === (e = e.map(function(e) {
-          return new rW(e)
+          return new rY(e)
         })).length) a = (t = e.map(function(e) {
         return e.lab()
       }))[0], o = t[1], i = function(e) {
-        return new rW([0, 1, 2].map(function(t) {
+        return new rY([0, 1, 2].map(function(t) {
           return a[t] + e * (o[t] - a[t])
         }), "lab")
       };
       else if (3 === e.length) a = (n = e.map(function(e) {
         return e.lab()
       }))[0], o = n[1], s = n[2], i = function(e) {
-        return new rW([0, 1, 2].map(function(t) {
+        return new rY([0, 1, 2].map(function(t) {
           return (1 - e) * (1 - e) * a[t] + 2 * (1 - e) * e * o[t] + e * e * s[t]
         }), "lab")
       };
       else if (4 === e.length) a = (r = e.map(function(e) {
         return e.lab()
       }))[0], o = r[1], s = r[2], l = r[3], i = function(e) {
-        return new rW([0, 1, 2].map(function(t) {
+        return new rY([0, 1, 2].map(function(t) {
           return (1 - e) * (1 - e) * (1 - e) * a[t] + 3 * (1 - e) * (1 - e) * e * o[t] + 3 * (1 - e) * e * e * s[t] + e * e * e * l[t]
         }), "lab")
       };
@@ -1457,7 +1457,7 @@
         return e.lab()
       }), u = rz(d = e.length - 1), i = function(e) {
         var t = 1 - e;
-        return new rW([0, 1, 2].map(function(n) {
+        return new rY([0, 1, 2].map(function(n) {
           return c.reduce(function(r, i, a) {
             return r + u[a] * Math.pow(t, d - a) * Math.pow(e, a) * i[n]
           }, 0)
@@ -1733,8 +1733,8 @@
       Paired: ["#a6cee3", "#1f78b4", "#b2df8a", "#33a02c", "#fb9a99", "#e31a1c", "#fdbf6f", "#ff7f00", "#cab2d6", "#6a3d9a", "#ffff99", "#b15928"],
       Pastel2: ["#b3e2cd", "#fdcdac", "#cbd5e8", "#f4cae4", "#e6f5c9", "#fff2ae", "#f1e2cc", "#cccccc"],
       Pastel1: ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]
-    }, iY = 0, iW = Object.keys(iH); iY < iW.length; iY += 1) {
-    var iK = iW[iY];
+    }, iW = 0, iY = Object.keys(iH); iW < iY.length; iW += 1) {
+    var iK = iY[iW];
     iH[iK.toLowerCase()] = iH[iK]
   }
   var iz = iH,

@@ -274,27 +274,27 @@ function A(e) {
   function H() {
     F(1)
   }
-  var Y = 0;
+  var W = 0;
 
-  function W(e) {
-    1 === (Y += e) && 1 === e ? (window.addEventListener(I, w), i && window.addEventListener(T, L)) : 0 === Y && (window.removeEventListener(I, w), i && window.removeEventListener(T, L))
+  function Y(e) {
+    1 === (W += e) && 1 === e ? (window.addEventListener(I, w), i && window.addEventListener(T, L)) : 0 === W && (window.removeEventListener(I, w), i && window.removeEventListener(T, L))
   }
   var K = false;
 
   function z(e) {
     true === e && (e = false);
     var t = P.setPrompt(e);
-    return K || (W(1), K = true),
+    return K || (Y(1), K = true),
       function() {
-        return K && (K = false, W(false)), t()
+        return K && (K = false, Y(false)), t()
       }
   }
 
   function q(e) {
     var t = P.appendListener(e);
-    return W(1),
+    return Y(1),
       function() {
-        W(false), t()
+        Y(false), t()
       }
   }
   var X = {
@@ -470,11 +470,11 @@ function L(e) {
     t.go(e)
   }
 
-  function Y() {
+  function W() {
     H(false)
   }
 
-  function W() {
+  function Y() {
     H(1)
   }
   var K = 0;
@@ -508,8 +508,8 @@ function L(e) {
     push: F,
     replace: V,
     go: H,
-    goBack: Y,
-    goForward: W,
+    goBack: W,
+    goForward: Y,
     block: X,
     listen: Q
   };

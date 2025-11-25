@@ -6,9 +6,9 @@ require.d(exports, {
   C1: () => H,
   DV: () => B,
   Gn: () => M,
-  IP: () => W,
+  IP: () => Y,
   J1: () => j,
-  MZ: () => Y,
+  MZ: () => W,
   NJ: () => V,
   Nf: () => U,
   PC: () => D,
@@ -408,13 +408,13 @@ function H(e, t) {
   }, []), (0, o.e7)([l.ZP], () => null != t && l.ZP.getDisambiguatedEmojiContext(e).isFavoriteEmojiWithoutFetchingLatest(t))
 }
 
-function Y(e) {
+function W(e) {
   return r.useEffect(() => {
     f.DZ.loadIfNecessary()
   }, []), (0, o.Wu)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(e).getEmojiInPriorityOrderWithoutFetchingLatest())
 }
 
-function W(e, t, n) {
+function Y(e, t, n) {
   if (null == n) return v.t0.NONE;
   let r = e.map(e => {
       var t, n;

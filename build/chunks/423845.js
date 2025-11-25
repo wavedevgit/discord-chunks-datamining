@@ -42,8 +42,8 @@ var Chunk620014 = require("./620014.js"),
   F = "[object WeakMap]",
   V = "[object ArrayBuffer]",
   H = "[object DataView]",
-  Y = "[object Float32Array]",
-  W = "[object Float64Array]",
+  W = "[object Float32Array]",
+  Y = "[object Float64Array]",
   K = "[object Int8Array]",
   z = "[object Int16Array]",
   q = "[object Int32Array]",
@@ -87,4 +87,4 @@ function et(e, t, n, R, P, D) {
     H && (r = e[i = r]), a(w, i, et(r, t, n, i, e, D))
   }), w
 }
-ee[N] = ee[R] = ee[V] = ee[H] = ee[P] = ee[D] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[M] = ee[k] = ee[j] = ee[U] = ee[G] = ee[B] = ee[Z] = ee[X] = ee[Q] = ee[J] = ee[$] = true, ee[w] = ee[L] = ee[F] = false, module.exports = et
+ee[N] = ee[R] = ee[V] = ee[H] = ee[P] = ee[D] = ee[W] = ee[Y] = ee[K] = ee[z] = ee[q] = ee[M] = ee[k] = ee[j] = ee[U] = ee[G] = ee[B] = ee[Z] = ee[X] = ee[Q] = ee[J] = ee[$] = true, ee[w] = ee[L] = ee[F] = false, module.exports = et

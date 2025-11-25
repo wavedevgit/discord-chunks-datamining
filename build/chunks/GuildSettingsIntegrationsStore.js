@@ -217,11 +217,11 @@ function H() {
   O = null, S = {}, A = false
 }
 
-function Y() {
+function W() {
   return P(false)
 }
 
-function W() {
+function Y() {
   return P(true)
 }
 
@@ -301,8 +301,8 @@ class q extends(a = Chunk442837.ZP.Store) {
 }
 h(q, "displayName", "GuildSettingsIntegrationsStore");
 let X = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
-    INTEGRATION_SETTINGS_INIT: Y,
-    INTEGRATION_SETTINGS_SAVE_SUCCESS: W,
+    INTEGRATION_SETTINGS_INIT: W,
+    INTEGRATION_SETTINGS_SAVE_SUCCESS: Y,
     GUILD_SETTINGS_INIT: N,
     GUILD_SETTINGS_SET_SECTION: N,
     INTEGRATION_SETTINGS_SET_SECTION: R,

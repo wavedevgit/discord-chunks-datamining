@@ -96,9 +96,9 @@ let w = new Chunk710845.Z("OverlayRenderStore"),
   F = new Set([Chunk593472.Jx.FULLSCREEN, Chunk593472.Jx.BORDERLESS_FULLSCREEN, Chunk593472.Jx.UNKNOWN, Chunk593472.Jx.MINIMIZED]),
   V = new Set([Chunk593472.Jx.MINIMIZED, Chunk593472.Jx.UNKNOWN]),
   H = false,
-  Y = new Chunk188274.Z(1e4);
+  W = new Chunk188274.Z(1e4);
 
-function W(e, t, n) {
+function Y(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : g.l6.Info;
   (0, I._l)({
     pid: e,
@@ -322,7 +322,7 @@ async function eo(e) {
   if (!q()) return void w.verbose("Skipping track for pid ".concat(e, " - overlay is disabled"));
   let t = await ei(e);
   if (null == t) return void w.error("Failed to track game ".concat(e));
-  W(e, "game_tracking_starting", {
+  Y(e, "game_tracking_starting", {
     game_name: t.gameName,
     fullscreen_type: t.fullscreenType
   }), et(e, "state", b.mM.WAITING_FOR_SCREEN_TYPE_RESOLUTION, "maybeTrackGame - 1"), eU.emitChange(), w.verbose("Determining initial overlay method for pid ".concat(e));
@@ -460,7 +460,7 @@ function ep(e, t) {
 async function eh(e) {
   let t = false;
   for (let n of e) t = await ef(n) || t, await (0, a._v)(16);
-  t && (w.info("determineFullscreenOverlayMethodSwaps has changes"), eU.emitChange(), W(null, "fullscreen_overlay_method_swap_changes", {
+  t && (w.info("determineFullscreenOverlayMethodSwaps has changes"), eU.emitChange(), Y(null, "fullscreen_overlay_method_swap_changes", {
     tracked_game_pids: Array.from(e)
   }))
 }
@@ -579,20 +579,20 @@ function eP(e) {
 }
 
 function eD() {
-  return Y = new Chunk188274.Z(1e4), true
+  return W = new Chunk188274.Z(1e4), true
 }
 
 function ew(e) {
   if (j = e.pid, H) {
     var t;
     let n = [performance.timeOrigin + performance.now(), null != (t = e.pid) ? t : null, e.trackMode];
-    Y.push(n)
+    W.push(n)
   }
   return !(0, m.isValidGamePID)(e.pid) || ((0, m.setPID)(e.pid), true)
 }
 
 function eL(e) {
-  s.Z.updateOverlayState(e.pid, b.mM.OVERLAY_RENDERING, "handleOverlaySuccessfullyShown"), ee(e.pid) && et(e.pid, "successfullyShown", true, "handleOverlaySuccessfullyShown"), W(e.pid, "overlay_successfully_shown", {
+  s.Z.updateOverlayState(e.pid, b.mM.OVERLAY_RENDERING, "handleOverlaySuccessfullyShown"), ee(e.pid) && et(e.pid, "successfullyShown", true, "handleOverlaySuccessfullyShown"), Y(e.pid, "overlay_successfully_shown", {
     pid: e.pid
   });
   let t = X(e.pid);
@@ -615,7 +615,7 @@ class ej extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk353926.Z, Chunk77498.Z, Chunk624864.Z, Chunk594190.ZP, Chunk509140.Z), this.syncWith([Chunk353926.Z], ex)
   }
   getDevToolsFocusedPidsWithTimestamp() {
-    return Y
+    return W
   }
   getHasLoadedExperiments() {
     return M

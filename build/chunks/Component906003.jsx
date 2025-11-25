@@ -118,8 +118,8 @@ function C(e) {
       onKeyDown: F,
       disabled: V,
       minWidth: H,
-      className: Y,
-      style: W,
+      className: W,
+      style: Y,
       buttonRef: K
     } = e,
     z = v(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "fullWidth", "focusProps", "loading", "loadingStartedLabel", "loadingFinishedLabel", "rounded", "type", "rel", "onClick", "onDoubleClick", "onMouseEnter", "onMouseLeave", "onMouseUp", "onMouseDown", "onKeyDown", "disabled", "minWidth", "className", "style", "buttonRef"]);

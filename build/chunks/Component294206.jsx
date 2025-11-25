@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => X,
-  hU: () => W
+  hU: () => Y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -98,9 +98,9 @@ let Z = "1",
   F = .01,
   V = .1,
   H = .01,
-  Y = 1e3;
+  W = 1e3;
 
-function W(e) {
+function Y(e) {
   let {
     disabled: t = false,
     onClick: n,
@@ -140,7 +140,7 @@ function K(e) {
       location_guild_id: o
     }), e.stopPropagation(), e.currentTarget.blur(), n()
   }
-  return (0, r.jsx)(W, {
+  return (0, r.jsx)(Y, {
     tooltipPosition: a,
     disabled: i,
     onClick: s,
@@ -170,7 +170,7 @@ function z(e) {
       })
     }), (0, T.TB)(t.soundId))
   }, [s, t, a]);
-  return (0, r.jsx)(W, {
+  return (0, r.jsx)(Y, {
     disabled: n,
     onClick: c,
     text: L.intl.formatToPlainString(s ? L.t.lQLsjc : L.t.Y5DOs4, {
@@ -210,7 +210,7 @@ let X = Chunk473749.forwardRef(function(e, t) {
       className: M,
       focused: j,
       forceSecondaryActions: B = false,
-      interactive: W = true,
+      interactive: Y = true,
       enableSecondaryActions: X = false,
       suppressPlaySound: Q,
       onMouseEnter: J,
@@ -277,7 +277,7 @@ let X = Chunk473749.forwardRef(function(e, t) {
       onMouseLeave: eM,
       children: (0, r.jsx)(z, {
         sound: T,
-        disabled: !W && !B
+        disabled: !Y && !B
       })
     }),
     eF = () => ek && !er ? (0, r.jsxs)(r.Fragment, {
@@ -341,7 +341,7 @@ let X = Chunk473749.forwardRef(function(e, t) {
   }
   i.useEffect(() => {
     let e = eI.current;
-    return eT && e.start(Y, () => {
+    return eT && e.start(W, () => {
       ev.current = Math.max(ev.current - H, F)
     }), () => e.stop()
   }, [eT]);
@@ -369,11 +369,11 @@ let X = Chunk473749.forwardRef(function(e, t) {
           [x.animated]: ei,
           [x.playing]: null != ea ? ea : eg,
           [x.hoverActiveBackground]: Q,
-          [x.soundButtonInteractive]: W,
-          [x.buttonDisabled]: !W && !B,
+          [x.soundButtonInteractive]: Y,
+          [x.buttonDisabled]: !Y && !B,
           [x.premiumDisabled]: eN && !B,
-          [x.buttonDisabledSecondaryActionsEnabled]: !W && B,
-          [x.focused]: W && j
+          [x.buttonDisabledSecondaryActionsEnabled]: !Y && B,
+          [x.focused]: Y && j
         }, M),
         onClick: e => {
           null == eU || eU(e)
@@ -391,7 +391,7 @@ let X = Chunk473749.forwardRef(function(e, t) {
             className: x.emoji
           }), (0, r.jsx)(f.Text, {
             variant: "text-xs/medium",
-            color: W ? true : "text-muted",
+            color: Y ? true : "text-muted",
             className: o()(x.soundName, {
               [x.hasEmoji]: eC
             }),

@@ -53,8 +53,8 @@ function P(e) {
     metadata: F,
     backButtonEligible: V,
     disablePurchase: H,
-    isTrial: Y = false,
-    onPaymentSourceAdd: W
+    isTrial: W = false,
+    onPaymentSourceAdd: Y
   } = e, {
     selectedPlan: K,
     priceOptions: z,
@@ -173,12 +173,12 @@ function P(e) {
       isGift: el,
       planGroup: U,
       isPrepaid: eC,
-      isTrial: Y,
+      isTrial: W,
       makePurchase: ex,
       needsPaymentSource: null == eO && !eN,
       onNext: s,
       inReverseTrial: eo,
-      onPaymentSourceAdd: W
+      onPaymentSourceAdd: Y
     }), (0, r.jsx)(C.Z, {}), eU ? (0, r.jsx)("div", {
       className: R.back,
       children: (0, r.jsx)(h.Z, {

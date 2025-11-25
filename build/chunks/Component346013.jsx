@@ -84,7 +84,7 @@ function G(e) {
     channel: B
   } = e, Z = i.useRef(null), F = i.useRef(null), V = (0, R.J)(j, G), {
     setPopout: H
-  } = (0, b.Z)(G.id, D.d$), Y = (0, E.qo)(G, B, H, true), W = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [X, Q] = i.useState((null == V ? true : V.coverImage) == null), J = (0, c.e7)([I.ZP, T.default], () => {
+  } = (0, b.Z)(G.id, D.d$), W = (0, E.qo)(G, B, H, true), Y = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [X, Q] = i.useState((null == V ? true : V.coverImage) == null), J = (0, c.e7)([I.ZP, T.default], () => {
     var e;
     return I.ZP.isMember(null == V ? true : V.guildId, null == (e = T.default.getCurrentUser()) ? true : e.id)
   }, [V]), $ = (0, c.e7)([I.ZP], () => (null == V ? true : V.authorId) != null ? I.ZP.getMember(V.guildId, V.authorId) : null), ee = (0, _.Z)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == V || null == (t = V.user) ? true : t.avatarDecoration), [et, en, er] = i.useMemo(() => {
@@ -140,7 +140,7 @@ function G(e) {
     }, (0, s.Z)()),
     eh = V.coverImage,
     em = null != eh && (0, g.d$)(eh),
-    eg = K && (W || z);
+    eg = K && (Y || z);
   return (0, r.jsxs)("div", {
     className: L.postPreviewContainer,
     children: [(0, r.jsxs)("div", {
@@ -153,7 +153,7 @@ function G(e) {
         className: o()(L.thumbnail, {
           [L.spoiler]: V.shouldSpoiler
         }),
-        onContextMenu: Y,
+        onContextMenu: W,
         onError: () => Q(true)
       }) : (0, r.jsx)(h.Z, {
         src: !eg && em ? "".concat(eh, "?format=png") : eh,
@@ -164,7 +164,7 @@ function G(e) {
           [L.spoiler]: V.shouldSpoiler
         }),
         imageChildClassName: L.thumbnailImage,
-        onContextMenu: Y,
+        onContextMenu: W,
         onError: () => Q(true)
       })), null != V.coverImageOverlayText && (0, r.jsx)(u.P3F, {
         onClick: eu,

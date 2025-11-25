@@ -111,7 +111,7 @@ let m = new Map,
   H = () => {
     O = m, v = g, A = y, i = true, N = false, R = new Set, r = true, a = true, w = {}, L = 0
   },
-  Y = () => {
+  W = () => {
     if (!Chunk353926.Z.hasLoadedExperiments) return;
     let {
       giftRecommendationAlgorithm: e
@@ -122,12 +122,12 @@ let m = new Map,
     });
     module !== C && (i = true), C = module
   },
-  W = e => {
+  Y = e => {
     L = e.skipNumCategories
   };
 class K extends(o = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk706454.default], H), this.syncWith([Chunk353926.Z], Y)
+    this.syncWith([Chunk706454.default], H), this.syncWith([Chunk353926.Z], W)
   }
   get isFetchingCategories() {
     return N
@@ -198,6 +198,6 @@ let z = new K(Chunk570140.Z, {
   COLLECTIBLES_PRODUCT_FETCH_SUCCESS: k,
   COLLECTIBLES_PRODUCT_FETCH_FAILURE: M,
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: F,
-  COLLECTIBLES_SKIP_NUM_CATEGORIES: W,
+  COLLECTIBLES_SKIP_NUM_CATEGORIES: Y,
   LOGOUT: H
 })

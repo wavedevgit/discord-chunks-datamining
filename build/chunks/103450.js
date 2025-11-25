@@ -49,12 +49,12 @@ function G(e) {
       user: F,
       onGameJoin: V,
       onClose: H,
-      location: Y,
-      supportsAskToJoin: W = true
+      location: W,
+      supportsAskToJoin: Y = true
     } = e,
     {
       analyticsLocations: K
-    } = (0, E.ZP)(null != Y ? Y : []),
+    } = (0, E.ZP)(null != W ? W : []),
     [z, q] = r.useState(false),
     X = null != (t = null == Z ? true : Z.applicationId) ? t : null == B ? true : B.application_id,
     Q = null != Z || (0, m.Z)(B),
@@ -179,7 +179,7 @@ function G(e) {
         await t()
       }
     };
-  if (!es && !W || !ef && null == G) return null;
+  if (!es && !Y || !ef && null == G) return null;
   let em = es ? U.intl.string(U.t.VJlc0S) : U.intl.string(U.t.OKsSCR);
   return el && (em = U.intl.string(U.t.DPfdsq)), {
     buttonCTA: em,

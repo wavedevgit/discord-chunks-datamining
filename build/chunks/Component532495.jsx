@@ -86,8 +86,8 @@ function G() {
     V = (0, Chunk442837.e7)([Chunk621853.Z], () => Chunk621853.Z.getUserProfile(F.id)),
     {
       pendingAvatar: H,
-      pendingGlobalName: Y,
-      pendingBanner: W,
+      pendingGlobalName: W,
+      pendingBanner: Y,
       pendingBio: K,
       pendingPronouns: z,
       pendingAccentColor: q,
@@ -109,7 +109,7 @@ function G() {
     et = (0, Chunk295474.gS)(),
     en = Chunk74538.ZP.canUsePremiumProfileCustomization(F),
     er = (0, Chunk150039.gd)(H, F.avatar),
-    ei = (0, Chunk150039.f$)(W, null == V ? true : V.banner),
+    ei = (0, Chunk150039.f$)(Y, null == V ? true : V.banner),
     ea = (0, Chunk687158.ZP)(F.id),
     eo = null == ea ? true : ea.getLegacyUsername(),
     es = (null != (i = null == (e = $.global_name) ? true : module.length) ? Chunk512722 : 0) > 0 ? $.global_name : null != (M = null == et ? true : et.nick) ? M : [],
@@ -145,7 +145,7 @@ function G() {
       placeholder: F.username,
       errors: es,
       currentGlobalName: F.globalName,
-      pendingGlobalName: Y,
+      pendingGlobalName: W,
       onGlobalNameChange: Chunk809206.W0,
       user: F
     }), (0, Chunk54381.jsx)(Chunk906364.Z, {

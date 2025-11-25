@@ -100,7 +100,7 @@ function ea(e) {
       ref: s,
       className: X.scrollableContent,
       fade: true,
-      children: R ? (0, r.jsx)(Y.Z, {
+      children: R ? (0, r.jsx)(W.Z, {
         context: t,
         query: a,
         entrypoint: n,
@@ -525,7 +525,7 @@ function e_(e) {
         return null != a && null != o && (i = (0, R.$_)({
           itemId: a,
           hash: o,
-          containerWidth: W.Gy
+          containerWidth: Y.Gy
         })), (0, r.jsx)(G.kA, {
           context: p,
           application: s,

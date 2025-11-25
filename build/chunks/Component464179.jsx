@@ -289,7 +289,7 @@ let k = {
       }
     }
   },
-  Y = {
+  W = {
     modalUS: [
       [G],
       [B],
@@ -368,7 +368,7 @@ let k = {
       [G]
     ]
   };
-class W extends(r = Chunk473749.PureComponent) {
+class Y extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.handleInfoChange()
   }
@@ -417,7 +417,7 @@ class W extends(r = Chunk473749.PureComponent) {
       mode: r,
       className: a,
       error: o
-    } = this.props, s = Y[require];
+    } = this.props, s = W[require];
     if (null == Chunk217986) throw Error("Provide a proper layout property.");
     let l = exports.country,
       c = Chunk217986.map(e => {
@@ -474,7 +474,7 @@ class W extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-h(W, "Layouts", x), h(W, "Modes", M), h(W, "defaultProps", {
+h(Y, "Layouts", x), h(Y, "Modes", M), h(Y, "defaultProps", {
   name: "",
   country: "",
   line1: "",
@@ -486,4 +486,4 @@ h(W, "Layouts", x), h(W, "Modes", M), h(W, "defaultProps", {
   mode: "create",
   error: null
 });
-let K = W
+let K = Y

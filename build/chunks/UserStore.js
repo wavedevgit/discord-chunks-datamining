@@ -258,7 +258,7 @@ function H(e) {
   return null == t || t.forEach(e => L(e, false)), false
 }
 
-function Y(e) {
+function W(e) {
   let {
     data: t
   } = e;
@@ -280,7 +280,7 @@ function Y(e) {
   }), false
 }
 
-function W(e) {
+function Y(e) {
   let {
     firstMessages: t,
     owners: n
@@ -727,8 +727,8 @@ class ek extends Chunk750041.Z {
       USER_PROFILE_FETCH_SUCCESS: G,
       CURRENT_USER_UPDATE: B,
       PRESENCE_UPDATES: en,
-      SEARCH_MESSAGES_SUCCESS: Y,
-      MOD_VIEW_SEARCH_MESSAGES_SUCCESS: Y,
+      SEARCH_MESSAGES_SUCCESS: W,
+      MOD_VIEW_SEARCH_MESSAGES_SUCCESS: W,
       LOAD_MESSAGES_SUCCESS: F,
       LOAD_MESSAGES_AROUND_SUCCESS: F,
       LOAD_RECENT_MENTIONS_SUCCESS: F,
@@ -763,8 +763,8 @@ class ek extends Chunk750041.Z {
       AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: ey,
       GIFT_CODE_RESOLVE_SUCCESS: eO,
       GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: ev,
-      LOAD_THREADS_SUCCESS: W,
-      LOAD_ARCHIVED_THREADS_SUCCESS: W,
+      LOAD_THREADS_SUCCESS: Y,
+      LOAD_ARCHIVED_THREADS_SUCCESS: Y,
       LOAD_FORUM_POSTS: K,
       GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: q,
       LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: X,

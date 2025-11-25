@@ -185,7 +185,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
       trackUserProfileAction: R
     } = (0, y.KZ)(), P = (0, m.p)({
       location: "CustomStatusBubble"
-    }), D = null != _ ? A.Hp : 0, w = A.hT + D, L = A.YF + D, x = i.useRef(null), k = i.useRef(null), j = i.useRef(null), U = i.useRef(w), G = i.useRef(L), B = null != _ && null == p, [Z, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!B && I), K = I && Z, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
+    }), D = null != _ ? A.Hp : 0, w = A.hT + D, L = A.YF + D, x = i.useRef(null), k = i.useRef(null), j = i.useRef(null), U = i.useRef(w), G = i.useRef(L), B = null != _ && null == p, [Z, F] = i.useState(false), [V, H] = i.useState(true), [W, Y] = i.useState(!B && I), K = I && Z, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
     i.useEffect(() => () => q.stop(), [q]), i.useEffect(() => {
       null == T || T.onInteractionPopoutTargetRefChange(x)
     }, [T]);
@@ -200,12 +200,12 @@ let k = Chunk473749.forwardRef(function(e, t) {
       if (F(true), null == k.current || null == j.current || !K) return;
       let e = k.current.getBoundingClientRect().height,
         t = j.current.getBoundingClientRect().height;
-      W(t > e), U.current = e, G.current = t, Q({
+      Y(t > e), U.current = e, G.current = t, Q({
         maxHeight: "".concat(Math.min(V ? U.current : G.current, V ? w : L), "px")
       })
     }, [K, p, _, Q, V, w, L]);
     let J = e => {
-        Y && (e ? Q({
+        W && (e ? Q({
           maxHeight: "".concat(Math.min(G.current, L), "px"),
           delay: z ? 0 : A.zS,
           config: {
@@ -289,7 +289,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
             }),
             children: ea
           })
-        }), null == E ? true : E(Y)]
+        }), null == E ? true : E(W)]
       })]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [eo, (0, r.jsxs)("div", {
@@ -321,7 +321,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
             }),
             children: ea
           })
-        }), null == E ? true : E(Y)]
+        }), null == E ? true : E(W)]
       })]
     })
   }),

@@ -82,11 +82,11 @@ function H(e) {
   return "[object Date]" === ee(e) && F(e)
 }
 
-function Y(e) {
+function W(e) {
   return "[object RegExp]" === ee(e) && F(e)
 }
 
-function W(e) {
+function Y(e) {
   return "[object Error]" === ee(e) && F(e)
 }
 
@@ -156,7 +156,7 @@ module.exports = function e(t, r, i, s) {
     }
     return e(t, l, i + 1, s)
   }
-  if ("function" == typeof t && !Y(t)) {
+  if ("function" == typeof t && !W(t)) {
     var v = et(t),
       A = eg(t, y);
     return "[Function" + (v ? ": " + v : " (anonymous)") + "]" + (A.length > 0 ? " { " + T.call(A, ", ") + " }" : "")
@@ -174,7 +174,7 @@ module.exports = function e(t, r, i, s) {
     var J = eg(t, y);
     return g && !ep(J) ? "[" + em(J, g) + "]" : "[ " + T.call(J, ", ") + " ]"
   }
-  if (W(t)) {
+  if (Y(t)) {
     var eu = eg(t, y);
     return "cause" in Error.prototype || !("cause" in t) || w.call(t, "cause") ? 0 === eu.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + T.call(eu, ", ") + " }" : "{ [" + String(t) + "] " + T.call(I.call("[cause]: " + y(t.cause), eu), ", ") + " }"
   }
@@ -205,7 +205,7 @@ module.exports = function e(t, r, i, s) {
   if (K(t)) return ed(y(String(t)));
   if ("undefined" != typeof window && t === window) return "{ [object Window] }";
   if ("undefined" != typeof globalThis && t === globalThis || true !== n.g && t === n.g) return "{ [object globalThis] }";
-  if (!H(t) && !Y(t)) {
+  if (!H(t) && !W(t)) {
     var ey = eg(t, y),
       eO = L ? L(t) === Object.prototype : t instanceof Object || t.constructor === Object,
       ev = t instanceof Object ? "" : "null prototype",

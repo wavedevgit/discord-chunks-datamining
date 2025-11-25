@@ -188,8 +188,8 @@ function D(e, t) {
     submitting: F,
     tapShouldOpenVotersModal: V,
     showResults: H
-  } = S, Y = (0, E.cZ)(B), W = T.intl.formatToPlainString(T.t.XRkuof, {
-    count: Y
+  } = S, W = (0, E.cZ)(B), Y = T.intl.formatToPlainString(T.t.XRkuof, {
+    count: W
   }), K = Math.max(...v.map(e => {
     var t, n;
     let r = A(B, "".concat(e.answer_id));
@@ -199,7 +199,7 @@ function D(e, t) {
     let o = "".concat(e.answer_id),
       l = A(B, o),
       c = null != (n = null == l || null == (t = l.count_details) ? true : t.vote) ? n : 0,
-      u = 0 === Y ? 0 : c / Y,
+      u = 0 === W ? 0 : c / W,
       d = Z.has(o),
       f = c >= K && 0 !== c,
       _ = k && null != (a = null == l ? true : l.me_vote) && a,
@@ -289,7 +289,7 @@ function D(e, t) {
     enabled: true,
     type: "cancel"
   })).otherwise(() => ({
-    label: W,
+    label: Y,
     secondaryLabel: x,
     accessibilityHint: X,
     presentation: "text",

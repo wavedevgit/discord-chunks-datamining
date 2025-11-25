@@ -86,7 +86,7 @@ function V(e) {
   let {
     channel: _,
     isLoading: p
-  } = e, [C, G] = i.useState(false), B = (0, s.e7)([S.ZP], () => S.ZP.getCurrentEmbeddedActivity()), Z = null == B ? true : B.applicationId, F = (0, s.e7)([S.ZP], () => null != Z && S.ZP.isProxyTicketRefreshing(Z), [Z]), V = (0, s.e7)([S.ZP], () => S.ZP.getActivityPanelMode()), H = (0, h.q)(Z), Y = null == B ? true : B.launchId, W = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == _ ? true : _.id)), {
+  } = e, [C, G] = i.useState(false), B = (0, s.e7)([S.ZP], () => S.ZP.getCurrentEmbeddedActivity()), Z = null == B ? true : B.applicationId, F = (0, s.e7)([S.ZP], () => null != Z && S.ZP.isProxyTicketRefreshing(Z), [Z]), V = (0, s.e7)([S.ZP], () => S.ZP.getActivityPanelMode()), H = (0, h.q)(Z), W = null == B ? true : B.launchId, Y = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == _ ? true : _.id)), {
     dockedRect: K,
     isHidden: z
   } = (0, s.cj)([O.Z], () => {
@@ -108,7 +108,7 @@ function V(e) {
     })) : null,
     selectedParticipant: null != _ ? g.Z.getSelectedParticipant(_.id) : null,
     participantsOpen: null != _ && g.Z.getParticipantsOpen(_.id)
-  })), $ = W || null != q, ee = (0, R.Z)(null == _ ? true : _.id), et = ee && (null == Q ? true : Q.type) !== M.fO.ACTIVITY, en = !ee && V === L.Ez.PIP, er = $ && (et || en) && null == K, ei = (!$ || er) && !z, ea = ei && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
+  })), $ = Y || null != q, ee = (0, R.Z)(null == _ ? true : _.id), et = ee && (null == Q ? true : Q.type) !== M.fO.ACTIVITY, en = !ee && V === L.Ez.PIP, er = $ && (et || en) && null == K, ei = (!$ || er) && !z, ea = ei && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
 
   function eo() {
     if (null != _) {
@@ -189,7 +189,7 @@ function V(e) {
           applicationId: Z
         })
       }
-    }, [Z, ei]), null == B || null == Y || (0, R.Z)(null == _ ? true : _.id) && null == X || null == H) return null;
+    }, [Z, ei]), null == B || null == W || (0, R.Z)(null == _ ? true : _.id) && null == X || null == H) return null;
   let ec = Array.from(B.userIds).map(e => I.default.getUser(e)).filter(e => null != e),
     eu = {
       instance_id: null != (a = null != (n = B.compositeInstanceId) ? n : B.launchId) ? a : "",
@@ -242,7 +242,7 @@ function V(e) {
             [k.pipModeTall]: ei && C,
             [k.pipNonInteractive]: ei && !(null == (n = B.config) ? true : n.useInteractivePIP)
           }),
-          shouldRefocus: !ei && W
+          shouldRefocus: !ei && Y
         }), !ei && null != _ && (0, r.jsx)(D.Ds, {
           participantsOpen: J,
           showToggleParticipants: false,

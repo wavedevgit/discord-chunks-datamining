@@ -91,12 +91,12 @@ function x(e) {
     label: N.intl.string(N.t["+NP/b2"])
   }), H = (0, S.P)({
     application: a
-  }), Y = (0, s.yE)(null != (t = a.flags) ? t : 0, C.udG.EMBEDDED), W = "channel" === P.type ? P.channel : true;
+  }), W = (0, s.yE)(null != (t = a.flags) ? t : 0, C.udG.EMBEDDED), Y = "channel" === P.type ? P.channel : true;
   return (0, r.jsxs)("div", {
     className: R.container,
     children: [(0, r.jsx)(c.P3F, {
       onClick: () => {
-        let e = Y ? (0, _.H)({
+        let e = W ? (0, _.H)({
           applicationId: a.id,
           referrerId: null == F ? true : F.id
         }) : (0, _.J)(D({
@@ -165,8 +165,8 @@ function x(e) {
                 (0, m.uu)({
                   application: a,
                   entrypoint: "app_launcher",
-                  contextualGuildId: null != (e = null == W ? true : W.getGuildId()) ? e : true,
-                  contextualChannelId: null == W ? true : W.id
+                  contextualGuildId: null != (e = null == Y ? true : Y.getGuildId()) ? e : true,
+                  contextualChannelId: null == Y ? true : Y.id
                 })
               }
             }) : null, H]

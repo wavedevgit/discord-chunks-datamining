@@ -43,8 +43,8 @@
     F = "Facebook",
     V = "Chromium OS",
     H = "Mac OS",
-    Y = " Browser",
-    W = function(e, t) {
+    W = " Browser",
+    Y = function(e, t) {
       var n = {};
       for (var r in e) t[r] && t[r].length % 2 == 0 ? n[r] = t[r].concat(e[r]) : n[r] = e[r];
       return n
@@ -147,7 +147,7 @@
         [/coast\/([\w\.]+)/i],
         [h, [f, k + " Coast"]],
         [/miuibrowser\/([\w\.]+)/i],
-        [h, [f, "MIUI" + Y]],
+        [h, [f, "MIUI" + W]],
         [/fxios\/([\w\.-]+)/i],
         [h, [f, P]],
         [/\bqihoobrowser\/?([\w\.]*)/i],
@@ -158,7 +158,7 @@
         ],
         [/(oculus|sailfish|huawei|vivo|pico)browser\/([\w\.]+)/i],
         [
-          [f, /(.+)/, "$1" + Y], h
+          [f, /(.+)/, "$1" + W], h
         ],
         [/samsungbrowser\/([\w\.]+)/i],
         [h, [f, j + " Internet"]],
@@ -741,7 +741,7 @@
       var a = typeof n !== s && n.navigator ? n.navigator : r,
         g = e || (a && a.userAgent ? a.userAgent : i),
         y = a && a.userAgentData ? a.userAgentData : r,
-        O = t ? W(et, t) : et,
+        O = t ? Y(et, t) : et,
         v = a && a.userAgent == g;
       return this.getBrowser = function() {
         var e = {};

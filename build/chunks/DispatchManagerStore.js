@@ -183,20 +183,20 @@ function H(e) {
   }), L(), (r || n !== T) && D()
 }
 
-function Y() {
+function W() {
   let e = Chunk314897.default.getToken(),
     t = Chunk314897.default.getId();
   null != module && Chunk830168.Z.setCredentials(exports, module)
 }
 
-function W(e) {
+function Y(e) {
   let {
     error: t
   } = e, {
     code: n
   } = t;
   if (null != n) {
-    if (y.includes(n)) Y();
+    if (y.includes(n)) W();
     else if (n === E.ff.APPLICATION_NOT_FOUND) {
       let {
         context: e
@@ -219,7 +219,7 @@ function K() {
 }
 
 function z() {
-  (0, Chunk358085.isDesktop)() && Y()
+  (0, Chunk358085.isDesktop)() && W()
 }
 
 function q() {
@@ -273,7 +273,7 @@ let J = new Q(Chunk570140.Z, {
   DISPATCH_APPLICATION_MOVE_UP: F,
   DISPATCH_APPLICATION_REMOVE_FINISHED: V,
   DISPATCH_APPLICATION_STATE_UPDATE: H,
-  DISPATCH_APPLICATION_ERROR: W,
+  DISPATCH_APPLICATION_ERROR: Y,
   CONNECTION_OPEN: z,
   LOGOUT: q
 })

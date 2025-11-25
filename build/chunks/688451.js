@@ -10,7 +10,7 @@ function r(e) {
 }
 
 function i(e) {
-  return !!e && !!e[W]
+  return !!e && !!e[Y]
 }
 
 function a(e) {
@@ -21,7 +21,7 @@ function a(e) {
     if (null === t) returntrue;
     var n = Object.hasOwnProperty.call(t, "constructor") && t.constructor;
     return n === Object || "function" == typeof n && Function.toString.call(n) === z
-  }(e) || Array.isArray(e) || !!e[Y] || !!(null == (t = e.constructor) ? true : t[Y]) || f(e) || _(e))
+  }(e) || Array.isArray(e) || !!e[W] || !!(null == (t = e.constructor) ? true : t[W]) || f(e) || _(e))
 }
 
 function o(e, t, n) {
@@ -33,7 +33,7 @@ function o(e, t, n) {
 }
 
 function s(e) {
-  var t = e[W];
+  var t = e[Y];
   return t ? t.i > 3 ? t.i - 4 : t.i : Array.isArray(e) ? 1 : f(e) ? 2 : 3 * !!_(e)
 }
 
@@ -69,7 +69,7 @@ function p(e) {
 function h(e) {
   if (Array.isArray(e)) return Array.prototype.slice.call(e);
   var t = X(e);
-  delete t[W];
+  delete t[Y];
   for (var n = q(t), r = 0; r < n.length; r++) {
     var i = n[r],
       a = t[i];
@@ -133,7 +133,7 @@ function S(e) {
 }
 
 function A(e) {
-  var t = e[W];
+  var t = e[Y];
   0 === t.i || 1 === t.i ? t.j() : t.g = true
 }
 
@@ -141,12 +141,12 @@ function C(e, t) {
   t._ = t.p.length;
   var n = t.p[0],
     i = true !== e && e !== n;
-  return t.h.O || b("ES5").S(t, e, i), i ? (n[W].P && (I(t), r(4)), a(e) && (e = N(t, e), t.l || P(t, e)), t.u && b("Patches").M(n[W].t, e, t.u, t.s)) : e = N(t, n, []), I(t), t.u && t.v(t.u, t.s), e !== H ? e : true
+  return t.h.O || b("ES5").S(t, e, i), i ? (n[Y].P && (I(t), r(4)), a(e) && (e = N(t, e), t.l || P(t, e)), t.u && b("Patches").M(n[Y].t, e, t.u, t.s)) : e = N(t, n, []), I(t), t.u && t.v(t.u, t.s), e !== H ? e : true
 }
 
 function N(e, t, n) {
   if (E(t)) return t;
-  var r = t[W];
+  var r = t[Y];
   if (!r) return o(t, function(i, a) {
     return R(e, r, t, i, a, n)
   }, true), t;
@@ -181,7 +181,7 @@ function P(e, t, n) {
 }
 
 function D(e, t) {
-  var n = e[W];
+  var n = e[Y];
   return (n ? p(n) : e)[t]
 }
 
@@ -233,7 +233,7 @@ function k(e) {
   return i(e) || r(22, e),
     function e(t) {
       if (!a(t)) return t;
-      var n, r = t[W],
+      var n, r = t[Y],
         i = s(t);
       if (r) {
         if (!r.P && (r.i < 4 || !b("ES5").K(r))) return r.t;
@@ -265,8 +265,8 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
   F = "undefined" != typeof Set,
   V = "undefined" != typeof Proxy && true !== Proxy.revocable && "undefined" != typeof Reflect,
   H = B ? Symbol.for("immer-nothing") : ((U = {})["immer-nothing"] = true, U),
-  Y = B ? Symbol.for("immer-draftable") : "__$immer_draftable",
-  W = B ? Symbol.for("immer-state") : "__$immer_state",
+  W = B ? Symbol.for("immer-draftable") : "__$immer_draftable",
+  Y = B ? Symbol.for("immer-state") : "__$immer_state",
   K = "undefined" != typeof Symbol && Symbol.iterator || "@@iterator",
   z = "" + Object.prototype.constructor,
   q = "undefined" != typeof Reflect && Reflect.ownKeys ? Reflect.ownKeys : true !== Object.getOwnPropertySymbols ? function(e) {
@@ -281,7 +281,7 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
   Q = {},
   J = {
     get: function(e, t) {
-      if (t === W) return e;
+      if (t === Y) return e;
       var n = p(e);
       if (!l(n, t)) return function(e, t, n) {
         var r, i = w(t, n);
@@ -301,7 +301,7 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
       if (null == r ? true : r.set) return r.set.call(e.k, n), true;
       if (!e.P) {
         var i = D(p(e), t),
-          a = null == i ? true : i[W];
+          a = null == i ? true : i[Y];
         if (a && a.t === n) return e.o[t] = n, e.R[t] = false, true;
         if (d(n, i) && (true !== n || l(e.t, t))) returntrue;
         x(e), L(e)
@@ -403,9 +403,9 @@ var ee = new(function() {
       a(e) || r(8), i(e) && (e = k(e));
       var t = S(this),
         n = M(this, e, true);
-      return n[W].C = true, T(t), n
+      return n[Y].C = true, T(t), n
     }, exports.finishDraft = function(e, t) {
-      var n = (e && e[W]).A;
+      var n = (e && e[Y]).A;
       return v(n, t), C(true, n)
     }, exports.setAutoFreeze = function(e) {
       this.D = e

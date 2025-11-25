@@ -141,8 +141,8 @@ function D(e) {
     autoTrackExposure: true
   }).enabled, V = (0, h.Z)(R, __OVERLAY__ || N), H = 0;
   1 !== x && (H = (0, u.OdO)(H, u.bgu.REDUCE_SATURATION_ENABLED));
-  let Y = (0, A.A)(),
-    W = (0, m.Ml)("RootThemeContextProvider"),
+  let W = (0, A.A)(),
+    Y = (0, m.Ml)("RootThemeContextProvider"),
     K = (0, m.CL)("RootThemeContextProvider"),
     z = (0, m.VM)("RootThemeContextProvider"),
     q = (0, g.U)("RootThemeContextProvider"),
@@ -152,19 +152,19 @@ function D(e) {
     }),
     J = P(b, x, i.useMemo(() => {
       let e = [];
-      return W && e.push("refresh-fast-follow-avatars"), K && e.push("refresh-fast-follow-guild-bg"), z && e.push("refresh-fast-follow-distinct-borders"), q && e.push("mana-text-inputs"), X && e.push("mana-toggle-inputs"), e
-    }, [W, K, z, q, X]), N, _);
+      return Y && e.push("refresh-fast-follow-avatars"), K && e.push("refresh-fast-follow-guild-bg"), z && e.push("refresh-fast-follow-distinct-borders"), q && e.push("mana-text-inputs"), X && e.push("mana-toggle-inputs"), e
+    }, [Y, K, z, q, X]), N, _);
   return (0, r.jsx)(u.kb5, {
     value: J,
     children: (0, r.jsx)(u.wMY, {
       theme: b,
       flags: H,
       saturation: x,
-      density: Y,
+      density: W,
       children: (0, r.jsx)(C.cE, {
         lang: _,
         theme: b,
-        density: Y,
+        density: W,
         focused: N,
         fontScale: D,
         fontScaleClass: w,
@@ -181,7 +181,7 @@ function D(e) {
         isPopoutWindow: o,
         rootClassName: s()(Q, {
           "confetti-mode": B,
-          "refresh-fast-follow-avatars": W,
+          "refresh-fast-follow-avatars": Y,
           "refresh-fast-follow-guild-bg": K,
           "refresh-fast-follow-distinct-borders": z
         }),

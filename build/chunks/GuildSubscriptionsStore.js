@@ -187,14 +187,14 @@ function H(e) {
   return t.isArchivedThread() ? S.unsubscribeThreadMemberList(t.guild_id, t.id) : !!t.isActiveThread() && O.Z.getChannelId() === t.id && void S.subscribeThreadMemberList(t.guild_id, t.id, O.Z.getChannelId())
 }
 
-function Y(e) {
+function W(e) {
   let {
     channel: t
   } = e;
   return S.unsubscribeThreadMemberList(t.guild_id, t.id)
 }
 
-function W() {
+function Y() {
   let e = Chunk768419.Z.getSyncingWith();
   if (null == module) null != r && (S.unsubscribeUser(r.guildId, r.userId), r = null);
   else {
@@ -222,7 +222,7 @@ function K(e) {
 }
 class z extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk433355.ZP, Chunk592125.Z, Chunk353926.Z, Chunk486472.Z, Chunk271383.ZP, Chunk430824.Z, Chunk19780.Z, Chunk699516.Z, Chunk944486.Z, Chunk914010.Z, Chunk768419.Z), this.syncWith([Chunk768419.Z], W), this.syncWith([Chunk433355.ZP], V)
+    this.waitFor(Chunk314897.default, Chunk433355.ZP, Chunk592125.Z, Chunk353926.Z, Chunk486472.Z, Chunk271383.ZP, Chunk430824.Z, Chunk19780.Z, Chunk699516.Z, Chunk944486.Z, Chunk914010.Z, Chunk768419.Z), this.syncWith([Chunk768419.Z], Y), this.syncWith([Chunk433355.ZP], V)
   }
   getSubscribedThreadIds() {
     return S.getSubscribedThreadIds()
@@ -261,6 +261,6 @@ let q = new z(Chunk570140.Z, {
   CHANNEL_PRELOAD: Z,
   INBOX_OPEN: K,
   THREAD_UPDATE: H,
-  THREAD_DELETE: Y,
+  THREAD_DELETE: W,
   THREAD_LIST_SYNC: V
 })

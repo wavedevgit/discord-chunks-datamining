@@ -424,8 +424,8 @@ class y extends Chunk47770.Z {
         cryptorInvalidNonceCount: F,
         qualityDecodeErrors: V,
         qualityDecoderReboots: H,
-        qualityScoreErrors: Y,
-        qualityFrameDrops: W,
+        qualityScoreErrors: W,
+        qualityFrameDrops: Y,
         qualitySizeMismatches: K
       } = e.aggregatedProperties,
       z = (null != U ? U : 0) - (null != (t = e.cryptorFailureBeforeSuccessCount) ? t : 0);
@@ -453,8 +453,8 @@ class y extends Chunk47770.Z {
       cryptor_failure_after_success_count: z,
       encoder_quality_decode_errors: V,
       encoder_quality_decoder_reboots: H,
-      encoder_quality_score_errors: Y,
-      encoder_quality_frame_drops: W,
+      encoder_quality_score_errors: W,
+      encoder_quality_frame_drops: Y,
       encoder_quality_size_mismatches: K
     })
   }

@@ -201,7 +201,7 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   var t;
   let n, r, i;
   if (null != e) {
@@ -225,7 +225,7 @@ function Y(e) {
   }
 }
 
-function W(e, t) {
+function Y(e, t) {
   var n, r, i, a, o, l, c, u, d, f, p;
   let h = new Map;
   for (let e in t.framesEncodedByEncoder) {
@@ -274,7 +274,7 @@ async function K(e) {
     d = m.Z.getMediaEngine(),
     f = JSON.stringify(s),
     _ = null != e ? (0, c.my)(e).ownerId : true,
-    p = Y(e);
+    p = W(e);
   null != e && a.Z.dispatch({
     type: "CLIPS_SAVE_CLIP_PLACEHOLDER",
     clip: k(x({}, s), {
@@ -286,7 +286,7 @@ async function K(e) {
     let {
       duration: e,
       clipStats: t
-    } = await (null != _ ? d.saveClipForUser(_, u, f) : d.saveClip(u, f)), n = W(p, t);
+    } = await (null != _ ? d.saveClipForUser(_, u, f) : d.saveClip(u, f)), n = Y(p, t);
     n.clip_save_time_ms = t.clipSaveTimeMs, n.clip_size_bytes = t.clipSizeBytes, null != t.viewerDecodeFps && (n.decode_fps_during_clip = t.viewerDecodeFps, n.encode_fps_during_clip = t.viewerEncodeFps, n.target_fps = null), y.default.track(w.rMx.CLIP_SAVED, n);
     let r = "";
     try {
@@ -303,7 +303,7 @@ async function K(e) {
         clipId: s.id
       }), !("errorMessage" in r)) throw y.default.track(w.rMx.CLIP_SAVE_FAILURE, p), r;
     let t = r,
-      n = W(p, t);
+      n = Y(p, t);
     throw n.error_at = t.errorAt, n.error_message = t.errorMessage, y.default.track(w.rMx.CLIP_SAVE_FAILURE, n), t.errorMessage
   }
 }

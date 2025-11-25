@@ -220,7 +220,7 @@ function F(e) {
     v = (0, R.Qs)(s.guild)
   }
   a = H ? w ? x.intl.string(x.t.DPfdsq) : M ? x.intl.string(x.t.sqe0hj) : x.intl.string(x.t.RscU7I) : x.intl.string(x.t["2BP08E"]);
-  let Y = H && !j || H && w;
+  let W = H && !j || H && w;
   return (j || (o = x.intl.string(x.t.hHGrWz)), null == s.code || "" === s.code || null == N) ? null : (0, r.jsx)(h.Gt, {
     value: U,
     children: (0, r.jsx)(V, {
@@ -235,7 +235,7 @@ function F(e) {
       isActivityActive: M,
       submitting: F,
       buttonLabel: a,
-      disabled: Y,
+      disabled: W,
       disabledReason: o,
       handleAcceptInvite: Z,
       onView: y

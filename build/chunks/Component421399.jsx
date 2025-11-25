@@ -110,8 +110,8 @@ function k(e) {
     onPopoutRequestClose: F,
     renderPopout: V,
     decorations: H,
-    previewGuildId: Y,
-    subscribeToGroupId: W
+    previewGuildId: W,
+    subscribeToGroupId: Y
   } = e, K = i.useRef(null), z = i.useContext(E.Z), q = null != (t = null == R ? true : R.guild_id) ? t : z, {
     analyticsLocations: X
   } = (0, p.ZP)(_.Z.USERNAME), Q = M ? "@" : "", {
@@ -122,10 +122,10 @@ function k(e) {
     displayNameStyles: en
   } = n, er = (0, l.e7)([f.Z], () => f.Z.roleStyle), ei = "username" === er, ea = "dot" === er, eo = (0, g.j)({
     displayNameStyles: en
-  }), es = (0, l.e7)([I.Z], () => null == n.guildId || null == n.colorRoleId ? null : I.Z.getRole(n.guildId, n.colorRoleId)), el = (0, O.yH)(null != Y ? Y : q, es), ec = (0, S.Z)(a), eu = i.useContext(c.d), ed = (null == eu ? true : eu.animate) || k, ef = el && (0, y.S2)(n), e_ = ei && ef, ep = (null == R ? true : R.isPrivate()) && null != en;
+  }), es = (0, l.e7)([I.Z], () => null == n.guildId || null == n.colorRoleId ? null : I.Z.getRole(n.guildId, n.colorRoleId)), el = (0, O.yH)(null != W ? W : q, es), ec = (0, S.Z)(a), eu = i.useContext(c.d), ed = (null == eu ? true : eu.animate) || k, ef = el && (0, y.S2)(n), e_ = ei && ef, ep = (null == R ? true : R.isPrivate()) && null != en;
   (0, A.Z)({
     shouldSubscribe: ep || e_,
-    subscribeToGroupId: W,
+    subscribeToGroupId: Y,
     authorId: a.author.id
   });
   let {

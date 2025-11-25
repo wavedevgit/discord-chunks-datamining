@@ -151,8 +151,8 @@ let B = () => {
   F = {},
   V = 0,
   H = true,
-  Y = {},
-  W = false,
+  W = {},
+  Y = false,
   K = false,
   z = [Chunk981631.kg4.PUSH_TO_TALK, Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK, Chunk981631.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET],
   q = [];
@@ -184,11 +184,11 @@ function $(e, t) {
   var n;
   let r = X(e);
   if (null == r) return;
-  let i = null == (n = Y[r.action]) ? true : n.keyEvents;
+  let i = null == (n = W[r.action]) ? true : n.keyEvents;
   if (null == i) return;
-  let a = Y[r.action];
+  let a = W[r.action];
   if (i.keydown && i.keyup) {
-    null != a && J(t, Y[r.action], r);
+    null != a && J(t, W[r.action], r);
     return
   }
   q.push(e), setTimeout(() => {
@@ -226,12 +226,12 @@ function en() {
   } = Chunk658785.Z.getCurrentConfig({
     location: "KeybindsStore"
   });
-  null == l().find(F, e => w.action === e.action && e.enabled && e.shortcut.length > 0) && !__OVERLAY__ && !W && H && module && (es(w), W = true)
+  null == l().find(F, e => w.action === e.action && e.enabled && e.shortcut.length > 0) && !__OVERLAY__ && !Y && H && module && (es(w), Y = true)
 }
 
 function er() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  (W || module) && (eo(w.id), W = false)
+  (Y || module) && (eo(w.id), Y = false)
 }
 
 function ei(e) {
@@ -263,7 +263,7 @@ function eo(e) {
     if (null != t) {
       let n = F[e];
       if (null != n) {
-        let e = Y[n.action];
+        let e = W[n.action];
         (null == e ? true : e.isPressed) === true && A.nextTick(() => J(false, e, n))
       }
       t.reset(), Z[e] = null
@@ -279,13 +279,13 @@ function es(e) {
     enabled: r
   } = e;
   if (0 === t.length || null == t || n === v.kg4.UNASSIGNED || !r) return;
-  if (null == Y[n]) return void D.error("[kb store] KeybindStore: Looking for callback action ".concat(n, " but it doesn't exist in this version. Skipping"));
+  if (null == W[n]) return void D.error("[kb store] KeybindStore: Looking for callback action ".concat(n, " but it doesn't exist in this version. Skipping"));
   let i = e.id,
     a = parseInt(i, 10);
   if (isNaN(a)) return void D.error("[kb store] KeybindStore: Keybind id is not a number. Skipping registration.", {
     keybind: e
   });
-  let o = Y[n].keyEvents;
+  let o = W[n].keyEvents;
   e.action === v.kg4.TOGGLE_MUTE && er(), e.action === v.kg4.TOGGLE_OVERLAY_INPUT_LOCK && et(), ea(a, t, e => $(i, e), N({
     focused: true,
     blurred: true,
@@ -358,7 +358,7 @@ function ep(e) {
   let {
     keybinds: t
   } = e;
-  Y = t, Z = {}, V = 0, Object.values(F).filter(e => z.includes(e.action) && e.managed).length !== z.length && eE(), l().forEach(F, e => {
+  W = t, Z = {}, V = 0, Object.values(F).filter(e => z.includes(e.action) && e.managed).length !== z.length && eE(), l().forEach(F, e => {
     V = Math.max(parseInt(e.id, 10), V) + 1;
     try {
       es(e)

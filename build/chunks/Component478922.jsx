@@ -112,7 +112,7 @@ function g(e, t, n) {
     let F = i.useRef(null),
       V = i.useRef(null),
       H = i.useRef({}),
-      [Y, W] = i.useState(false),
+      [W, Y] = i.useState(false),
       {
         scrollerRef: K,
         scrollerState: z,
@@ -174,8 +174,8 @@ function g(e, t, n) {
       getScrollerState: q
     }, (0, s.Ue)(K, q, ei)), [K, q, ea, ei, eo]);
     let el = (0, i.useCallback)(e => {
-      er(1), null == F.current ? W(true) : clearTimeout(F.current), F.current = setTimeout(() => {
-        F.current = null, W(false)
+      er(1), null == F.current ? Y(true) : clearTimeout(F.current), F.current = setTimeout(() => {
+        F.current = null, Y(false)
       }, 200), null != E && E(e)
     }, [E, er]);
     return i.useLayoutEffect(() => {
@@ -186,7 +186,7 @@ function g(e, t, n) {
       className: o()(k, {
         [e]: true,
         [t]: M,
-        [u.scrolling]: Y
+        [u.scrolling]: W
       }),
       style: (0, s.uT)(j)
     }, Z), {

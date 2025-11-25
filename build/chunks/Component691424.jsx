@@ -137,7 +137,7 @@ function H(e) {
   }
 }
 
-function Y(e, t, n) {
+function W(e, t, n) {
   let r = T.Z.getGuild(e);
   if (null == e || null == r) return;
   let i = t => {
@@ -174,7 +174,7 @@ function Y(e, t, n) {
   }
 }
 
-function W(e) {
+function Y(e) {
   let {
     text: t
   } = e, [n, a] = i.useState(false), o = () => {
@@ -236,7 +236,7 @@ let K = {
           className: j.codeContainer,
           children: [S.wS ? (0, r.jsx)("div", {
             className: j.codeActions,
-            children: (0, r.jsx)(W, {
+            children: (0, r.jsx)(Y, {
               text: e.content
             })
           }) : null, (0, r.jsx)(d.GI, {
@@ -289,7 +289,7 @@ let K = {
   staticRouteLink: {
     react(e, t, n) {
       let i = () => {
-        Y(e.guildId, e.id, e.itemId)
+        W(e.guildId, e.id, e.itemId)
       };
       return (0, A.k)(e.id) ? (0, r.jsxs)(h.Z, {
         role: "link",

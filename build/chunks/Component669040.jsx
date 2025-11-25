@@ -82,7 +82,7 @@ let z = 0,
       channelId: x,
       messageId: M,
       isBurstReaction: k,
-      listHeaderClassName: Y,
+      listHeaderClassName: W,
       activeSectionIndex: z,
       upsellGlowOpacity: er,
       emojiListRef: eo
@@ -185,10 +185,10 @@ let z = 0,
             onClick: () => {
               (0, b.hr)(H.X1.SOUNDBOARD), w.default.track(V.rMx.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
             },
-            children: W.intl.string(W.t.rUEjBe)
+            children: Y.intl.string(Y.t.rUEjBe)
           }) : true;
         return (0, r.jsx)(I.Z, {
-          className: o()(K.header, Y, {
+          className: o()(K.header, W, {
             [K.inactiveNitroHeader]: p,
             [K.activeNitroHeader]: h
           }),
@@ -198,7 +198,7 @@ let z = 0,
           trailing: g,
           children: u
         }, l)
-      }), [m, t, e_, Y, z]),
+      }), [m, t, e_, W, z]),
       eE = (0, S.B4)(),
       eb = i.useCallback((e, n) => {
         let i = m[e],
@@ -330,8 +330,8 @@ let z = 0,
       ey = f.length > 0;
 
     function eO() {
-      let e = (0, M.Px)(Y.PremiumTypes.TIER_2);
-      return W.intl.format(W.t.gMVjeS, {
+      let e = (0, M.Px)(W.PremiumTypes.TIER_2);
+      return Y.intl.format(Y.t.gMVjeS, {
         nitroTierName: e,
         onClick: () => {
           d({
@@ -345,11 +345,11 @@ let z = 0,
     function ev() {
       var e;
       let t = (0, A.J0)();
-      return null != (e = (0, M.fr)(t, Y.Si.TIER_2)) ? e : W.intl.string(W.t.BmJkbd)
+      return null != (e = (0, M.fr)(t, W.Si.TIER_2)) ? e : Y.intl.string(Y.t.BmJkbd)
     }
     return i.useEffect(() => {
       et && w.default.track(V.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: Y.cd.EMOJI_PICKER_FLOATING_UPSELL,
+        type: W.cd.EMOJI_PICKER_FLOATING_UPSELL,
         location: Q,
         location_stack: J
       })
@@ -375,7 +375,7 @@ let z = 0,
         stickyHeaders: true,
         ref: a
       }) : (0, r.jsx)(p.Z, {
-        message: W.intl.string(W.t.IxxiKF),
+        message: Y.intl.string(Y.t.IxxiKF),
         className: K.noSearchResultsContainer
       }), X || c.tq ? null : (0, r.jsx)(N.p, {
         showUpsell: et,

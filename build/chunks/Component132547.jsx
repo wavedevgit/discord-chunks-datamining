@@ -56,9 +56,9 @@ let x = e => {
     [Z, F] = i.useState(false),
     V = null != j && null != x && x.status === P.O0b.CANCELED,
     H = (0, O.W7)(R.Xh.PREMIUM_MONTH_TIER_2, j, x),
-    Y = !Z && V,
+    W = !Z && V,
     {
-      analyticsLocations: W
+      analyticsLocations: Y
     } = (0, f.ZP)(d.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [K, z] = i.useState(false),
     q = (0, s.e7)([h.Z], () => null != t ? h.Z.getUserProfile(t) : null),
@@ -78,7 +78,7 @@ let x = e => {
           [w.hiddenGradient]: !X
         }),
         children: (0, r.jsxs)(f.Gt, {
-          value: W,
+          value: Y,
           children: [(0, r.jsx)(l.$, {
             innerRef: U,
             onChange: e => F(e),
@@ -118,7 +118,7 @@ let x = e => {
             innerRef: a,
             onChange: e => {
               e && !K && (E.default.track(P.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-                location_stack: W
+                location_stack: Y
               }), z(true))
             },
             children: (0, r.jsx)("div", {
@@ -134,7 +134,7 @@ let x = e => {
           })]
         })
       }), V && null != H && (0, r.jsx)(v.Z, {
-        isVisible: Y && M,
+        isVisible: W && M,
         premiumSubscription: x,
         churnDiscountOffer: j,
         discountedPrice: H

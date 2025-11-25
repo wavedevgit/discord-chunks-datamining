@@ -105,8 +105,8 @@ function w() {
     name: b,
     setName: w,
     planId: R,
-    setPlanId: Z,
-    planCost: G,
+    setPlanId: G,
+    planCost: Z,
     stepLoading: k,
     error: M,
     gameProvider: B
@@ -115,16 +115,16 @@ function w() {
     (0, Chunk905551._k)(module)
   }, [module]);
   let L = (0, Chunk442837.e7)([Chunk802659.Z], () => Chunk802659.Z.getRegions()),
-    D = (0, Chunk442837.e7)([Chunk802659.Z], () => Chunk802659.Z.getRegionState()),
-    H = Chunk473749.useMemo(() => {
+    z = (0, Chunk442837.e7)([Chunk802659.Z], () => Chunk802659.Z.getRegionState()),
+    D = Chunk473749.useMemo(() => {
       var e;
-      return null != (e = L.sort((e, n) => (0, C.Z)(e, n, D)).map(e => ({
+      return null != (e = L.sort((e, n) => (0, C.Z)(e, n, z)).map(e => ({
         value: e,
         label: e.name,
         disabled: true !== e.enabled
       }))) ? module : []
-    }, [D, L]),
-    z = Chunk473749.useMemo(() => L.some(e => "" !== e.pingUrl), [L]),
+    }, [z, L]),
+    H = Chunk473749.useMemo(() => L.some(e => "" !== e.pingUrl), [L]),
     U = Chunk473749.useMemo(() => {
       var e;
       return null != (e = null == exports ? true : exports.plans.map(e => ({
@@ -135,10 +135,10 @@ function w() {
     F = (0, Chunk281014.Z)(),
     {
       isValid: V,
-      errors: A
+      errors: W
     } = (0, Chunk281014.a)(Chunk837329),
-    K = null != Chunk120356,
-    W = (0, Chunk531508.Z)(Chunk120356),
+    A = null != Chunk120356,
+    K = (0, Chunk531508.Z)(Chunk120356),
     J = (0, Chunk669460.Z)(B),
     Y = null != B && null != Chunk619733.nd[B] ? Chunk619733.nd[B] : "";
   return null == exports ? (0, Chunk54381.jsx)("div", {
@@ -174,8 +174,8 @@ function w() {
             onChange: w,
             placeholder: Chunk388032.intl.string(Chunk613275.default.ElVYr3),
             maxLength: Chunk619733.Sg,
-            disabled: k || !W,
-            error: A.name
+            disabled: k || !K,
+            error: W.name
           })]
         }), (0, Chunk54381.jsxs)("div", {
           className: Chunk817121.sectionContainer,
@@ -193,7 +193,7 @@ function w() {
                 className: Chunk817121.sectionHeaderIcon,
                 size: "xs"
               })
-            }), !K && z && (0, Chunk54381.jsx)("div", {
+            }), !A && H && (0, Chunk54381.jsx)("div", {
               className: Chunk817121.refresh,
               children: (0, Chunk54381.jsx)(Chunk681715.u, {
                 asContainer: true,
@@ -208,15 +208,15 @@ function w() {
                 })
               })
             })]
-          }), K ? (0, Chunk54381.jsx)(Chunk481060.oil, {
+          }), A ? (0, Chunk54381.jsx)(Chunk481060.oil, {
             value: null == Chunk120356 ? true : Chunk120356.regionName,
             disabled: true,
             placeholder: Chunk388032.intl.string(Chunk613275.default["k+RTIm"])
           }) : (0, Chunk54381.jsx)(Chunk481060.PhF, {
             serialize: e => e.id,
             isSelected: e => e.id === t,
-            isDisabled: k || K || !W,
-            options: H,
+            isDisabled: k || A || !K,
+            options: D,
             optionClassName: Chunk817121.option,
             select: e => a(e.id),
             placeholder: Chunk388032.intl.string(Chunk613275.default["k+RTIm"]),
@@ -258,10 +258,10 @@ function w() {
           }), (0, Chunk54381.jsx)(Chunk481060.PhF, {
             serialize: e => e.id,
             isSelected: e => e.id === R,
-            isDisabled: k || !W,
+            isDisabled: k || !K,
             options: U,
             optionClassName: Chunk817121.option,
-            select: e => Z(e.id),
+            select: e => G(e.id),
             placeholder: Chunk388032.intl.string(Chunk613275.default.JdMW0i),
             renderOptionValue: e => {
               var n, t, i;
@@ -281,17 +281,17 @@ function w() {
         className: Chunk817121.gameDetailsContainer,
         children: (0, Chunk54381.jsx)(Chunk241306.Z, {})
       })]
-    }), null != Chunk120356 && 0 !== G && (0, Chunk54381.jsx)(Chunk494620.Z, {
+    }), null != Chunk120356 && 0 !== Z && (0, Chunk54381.jsx)(Chunk494620.Z, {
       className: Chunk817121.infoBox,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
-        children: G < 0 ? Chunk388032.intl.format(Chunk613275.default.SorKas, {
-          boostCount: Math.abs(G)
+        children: Z < 0 ? Chunk388032.intl.format(Chunk613275.default.SorKas, {
+          boostCount: Math.abs(Z)
         }) : Chunk388032.intl.format(Chunk613275.default.n2wpym, {
-          boostCount: G
+          boostCount: Z
         })
       })
-    }), !W && (0, Chunk54381.jsx)(Chunk494620.Z, {
+    }), !K && (0, Chunk54381.jsx)(Chunk494620.Z, {
       className: Chunk817121.infoBox,
       look: Chunk494620.z.WARNING,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -301,7 +301,7 @@ function w() {
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
-      children: null != B && Chunk388032.intl.format(K ? Chunk613275.default.num0a6 : Chunk613275.default.p5KZDr, {
+      children: null != B && Chunk388032.intl.format(A ? Chunk613275.default.num0a6 : Chunk613275.default.p5KZDr, {
         provider: J,
         termsOfServiceUrl: () => (0, Chunk49012.q)({
           href: Y

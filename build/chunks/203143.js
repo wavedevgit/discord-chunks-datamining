@@ -228,7 +228,7 @@ async function H(e) {
   });
   null != f && await f
 }
-async function Y(e) {
+async function W(e) {
   let {
     channelId: t,
     messageId: n
@@ -280,7 +280,7 @@ async function Y(e) {
     })
   }
 }
-async function W(e) {
+async function Y(e) {
   let {
     channelId: t,
     messageId: n
@@ -298,7 +298,7 @@ async function W(e) {
       editing: false,
       showResults: null != (n = null == e ? true : e.showResults) && n
     }
-  }), await Y({
+  }), await W({
     channelId: t,
     messageId: n
   }))
@@ -339,13 +339,13 @@ async function z(e) {
   } = e;
   switch (r) {
     case "submit":
-      await Y({
+      await W({
         channelId: t,
         messageId: n
       });
       break;
     case "remove":
-      await W({
+      await Y({
         channelId: t,
         messageId: n
       });
@@ -436,7 +436,7 @@ let q = {
       }), s
     })
   },
-  handlePollSubmitVote: Y,
+  handlePollSubmitVote: W,
   handleUpdateVoteEditingState: F,
   handlePollActionTapped: z,
   createPoll: async function(e) {

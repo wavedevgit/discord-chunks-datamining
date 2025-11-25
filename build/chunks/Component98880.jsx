@@ -58,7 +58,7 @@ function H(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Y(e) {
+function W(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -71,7 +71,7 @@ function Y(e) {
   return e
 }
 
-function W(e, t) {
+function Y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -83,7 +83,7 @@ function W(e, t) {
 }
 
 function K(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -167,7 +167,7 @@ function J(e) {
   } = e, m = i.useCallback(e => {
     if ((0, w.BQ)(t)) {
       let n = t instanceof A.ZP ? t : A.ZP.createFromServer(t);
-      (0, u.vq)(e, e => (0, r.jsx)(k.Z, Y({
+      (0, u.vq)(e, e => (0, r.jsx)(k.Z, W({
         application: n
       }, e)))
     }
@@ -517,7 +517,7 @@ function el(e) {
   let {
     onClickAppCard: t
   } = es(e);
-  return (0, r.jsx)(Q, K(Y({}, e), {
+  return (0, r.jsx)(Q, K(W({}, e), {
     onClick: t
   }))
 }
@@ -548,7 +548,7 @@ function ec(e) {
       launchingComponentId: f,
       fetchesApplication: u
     });
-  return y === E.JS.START || y === E.JS.JOIN ? l ? (0, r.jsx)(Q, K(Y({}, d), {
+  return y === E.JS.START || y === E.JS.JOIN ? l ? (0, r.jsx)(Q, K(W({}, d), {
     sectionName: o,
     application: n,
     onClick: b,
@@ -558,12 +558,12 @@ function ec(e) {
       type: c.$jN.Type.PULSING_ELLIPSIS,
       className: Z.spinner
     }) : null
-  })) : (0, r.jsx)(el, K(Y({}, d), {
+  })) : (0, r.jsx)(el, K(W({}, d), {
     context: t,
     sectionName: o,
     application: n,
     location: a
-  })) : (0, r.jsx)(Q, K(Y({}, d), {
+  })) : (0, r.jsx)(Q, K(W({}, d), {
     sectionName: o,
     application: n,
     onClick: e => {

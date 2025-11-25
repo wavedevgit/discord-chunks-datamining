@@ -104,8 +104,8 @@ let H = e => {
     let t = f.Z.getChannel(e);
     return null == t ? true : t.getGuildId()
   },
-  Y = e => null != e.guildId ? p.Z.getGuild(e.guildId) : null != e.channelId ? p.Z.getGuild(H(e.channelId)) : null,
-  W = {
+  W = e => null != e.guildId ? p.Z.getGuild(e.guildId) : null != e.channelId ? p.Z.getGuild(H(e.channelId)) : null,
+  Y = {
     newline: o().defaultRules.newline,
     paragraph: o().defaultRules.paragraph,
     escape: j(M({}, o().defaultRules.escape), {
@@ -234,7 +234,7 @@ let H = e => {
           type: "roleMention",
           id: s
         };
-        let l = Y(n),
+        let l = W(n),
           d = null != l ? _.Z.getRole(l.id, s) : null;
         if (null == d) return {
           type: "text",
@@ -445,7 +445,7 @@ let H = e => {
       match: e => D.PEY.exec(e),
       parse(e, t, n) {
         var r;
-        let [, i, a] = e, o = (0, N.l)(i), s = (0, N.W)(i, a, null == (r = Y(n)) ? true : r.id);
+        let [, i, a] = e, o = (0, N.l)(i), s = (0, N.W)(i, a, null == (r = W(n)) ? true : r.id);
 
         function l(e) {
           return null == e ? null : [{
@@ -468,7 +468,7 @@ let H = e => {
     list: Chunk800927.Z,
     subtext: Chunk945884.Z
   },
-  K = (0, Chunk364458.Z)([W, Chunk97734.Z]),
+  K = (0, Chunk364458.Z)([Y, Chunk97734.Z]),
   z = i().omit(K, ["inlineCode", "codeBlock", "br", "blockQuote", "subtext", "soundboard"]),
   q = i().omit(K, ["inlineCode", "codeBlock", "br", "blockQuote", "autolink", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext", "soundboard", "gameMention"]),
   X = i().omit(K, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard", "gameMention"]),

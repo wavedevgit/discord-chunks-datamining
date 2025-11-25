@@ -565,15 +565,15 @@ var r = function(e) {
   var V = 0x40000000,
     H = (t & -t) * (t & -t) | 0x40000000;
 
-  function Y(e) {
+  function W(e) {
     var n = e.value,
       r = "number" == typeof n ? n | V : "bigint" == typeof n ? n | BigInt(V) : n[0] + n[1] * t | H;
     return r & -r
   }
 
-  function W(e, t) {
+  function Y(e, t) {
     if (0 >= t.compareTo(e)) {
-      var n = W(e, t.square(t)),
+      var n = Y(e, t.square(t)),
         i = n.p,
         a = n.e,
         o = i.multiply(t);
@@ -603,10 +603,10 @@ var r = function(e) {
     if (e = ea(e).abs(), t = ea(t).abs(), e.equals(t)) return e;
     if (e.isZero()) return t;
     if (t.isZero()) return e;
-    for (var n, r, i = l[1]; e.isEven() && t.isEven();) n = z(Y(e), Y(t)), e = e.divide(n), t = t.divide(n), i = i.multiply(n);
-    for (; e.isEven();) e = e.divide(Y(e));
+    for (var n, r, i = l[1]; e.isEven() && t.isEven();) n = z(W(e), W(t)), e = e.divide(n), t = t.divide(n), i = i.multiply(n);
+    for (; e.isEven();) e = e.divide(W(e));
     do {
-      for (; t.isEven();) t = t.divide(Y(t));
+      for (; t.isEven();) t = t.divide(W(t));
       e.greater(t) && (r = t, t = e, e = r), t = t.subtract(e)
     } while (!t.isZero());
     return i.isUnit() ? e : e.multiply(i)
@@ -631,7 +631,7 @@ var r = function(e) {
   }
   c.prototype.bitLength = function() {
     var e = this;
-    return (0 > e.compareTo(r(0)) && (e = e.negate().subtract(r(1))), 0 === e.compareTo(r(0))) ? r(0) : r(W(e, r(2)).e).add(r(1))
+    return (0 > e.compareTo(r(0)) && (e = e.negate().subtract(r(1))), 0 === e.compareTo(r(0))) ? r(0) : r(Y(e, r(2)).e).add(r(1))
   }, d.prototype.bitLength = u.prototype.bitLength = c.prototype.bitLength;
   var J = function(e, t, n, r) {
     n = n || o, e = String(e), r || (e = e.toLowerCase(), n = n.toLowerCase());

@@ -168,7 +168,7 @@ let eU = (0, Chunk608787.Un)({
     renderLoader: eG
   }),
   eK = (0, Chunk608787.Un)({
-    createPromise: () => Promise.all([require.e("63639"), require.e("62934")]).then(require.bind(require, 109838)),
+    createPromise: () => Promise.all([require.e("67365"), require.e("62934")]).then(require.bind(require, 109838)),
     webpackId: 109838,
     name: "GameServerPage",
     renderLoader: eG

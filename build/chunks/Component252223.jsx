@@ -172,8 +172,8 @@ function B(e) {
         return t !== N.IIU.CUSTOM_STATUS && t !== N.IIU.HANG_STATUS && n !== (null == k ? true : k.name)
       })) ? e : [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name)
     }, [n, null == k ? true : k.name]),
-    Y = null == n ? true : n.find(e => e.name === (null == k ? true : k.name)),
-    W = (null == t ? true : t.bot) === true,
+    W = null == n ? true : n.find(e => e.name === (null == k ? true : k.name)),
+    Y = (null == t ? true : t.bot) === true,
     K = (0, c.e7)([b.Z], () => b.Z.isBlockedOrIgnored(null == t ? true : t.id)),
     z = (null == Z ? true : Z.state) != null,
     q = null != M,
@@ -182,7 +182,7 @@ function B(e) {
     J = Q > 1,
     $ = ((null == Z ? true : Z.state) != null || null != V) && "xs" === y,
     ee = j({
-      streamActivity: Y,
+      streamActivity: W,
       otherActivities: H,
       voiceActivityChannel: X ? l : null
     });
@@ -192,12 +192,12 @@ function B(e) {
         t = true === e || L;
       if (null != M) return (0, r.jsx)(I.Z, {
         stream: M,
-        game: Y,
+        game: W,
         textVariant: "text-".concat(y, "/medium"),
         textClassName: _,
         iconClassName: p,
         hideText: $,
-        hideIcon: W,
+        hideIcon: Y,
         hideTooltip: t
       });
       let n = null == H ? true : H[0];
@@ -207,7 +207,7 @@ function B(e) {
         textClassName: _,
         iconClassName: p,
         hideText: $,
-        hideIcon: W,
+        hideIcon: Y,
         hideTooltip: t
       }) : null != l ? (0, r.jsx)(A.Z, {
         channel: l,
@@ -248,7 +248,7 @@ function B(e) {
       hasCustomStatusText: z,
       totalActivityCount: Q
     }),
-    ei = () => 0 === Q ? null : J && !W ? L ? (0, r.jsxs)("div", {
+    ei = () => 0 === Q ? null : J && !Y ? L ? (0, r.jsxs)("div", {
       className: o()(P.activityContainer, $ && P.iconOnly),
       children: [et(), er()]
     }) : (0, r.jsx)(u.aML, {

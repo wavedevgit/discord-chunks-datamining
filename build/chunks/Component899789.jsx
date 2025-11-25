@@ -1,5 +1,5 @@
-/** Chunk was on 63639 **/
-/** chunk id: 899789, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 67365 **/
+/** chunk id: 899789, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   C: () => h,
   Z: () => S
@@ -39,8 +39,8 @@ function h() {
 function S() {
   let {
     guildId: e,
-    gameServerGames: t,
-    instances: n,
+    gameServerGames: n,
+    instances: t,
     gameServerInstance: a,
     setGameServerInstance: c,
     setCurrentGame: S,
@@ -50,10 +50,10 @@ function S() {
   let O = Chunk473749.useCallback(e => {
       S(e), y()
     }, [S, y]),
-    I = Chunk473749.useCallback(e => {
+    k = Chunk473749.useCallback(e => {
       c(e), y()
     }, [Chunk494620, y]),
-    k = require.length >= Chunk619733.YX,
+    I = require.length >= Chunk619733.YX,
     C = require.length > 0,
     P = (0, Chunk639777.Z)(module);
   return 0 === Object.values(exports).length ? (0, Chunk54381.jsx)("div", {
@@ -69,35 +69,35 @@ function S() {
         children: Chunk388032.intl.string(Chunk613275.default.BOWmmT)
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk755350.gameInstanceContainer,
-        children: require.map((t, n) => (0, l.jsx)(v.Z, {
+        children: require.map((n, t) => (0, l.jsx)(v.Z, {
           guildId: e,
-          gameInstance: t,
-          onClick: I
-        }, "instance-".concat(t.id, "-").concat(n)))
-      }), k && (0, Chunk54381.jsx)(h, {})]
+          gameInstance: n,
+          onClick: k
+        }, "instance-".concat(n.id, "-").concat(t)))
+      }), I && (0, Chunk54381.jsx)(h, {})]
     }), (0, Chunk54381.jsxs)("div", {
       className: r()(Chunk755350.gameSection, {
-        [Chunk755350.disabled]: k
+        [Chunk755350.disabled]: I
       }),
       children: [C && (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
         children: Chunk388032.intl.string(Chunk613275.default.NIwDqW)
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk755350.gameContainer,
-        children: Object.values(exports).map((t, n) => (0, l.jsx)(s.u, {
+        children: Object.values(exports).map((n, t) => (0, l.jsx)(s.u, {
           asContainer: true,
-          text: t.disabled ? j.intl.formatToPlainString(x.default.uVpJYf, {
-            gameName: t.name
+          text: n.disabled ? j.intl.formatToPlainString(x.default.uVpJYf, {
+            gameName: n.name
           }) : null,
           position: "top",
-          children: (0, l.jsx)(g.Z, {
+          children: (0, l.jsx)(f.Z, {
             guildId: e,
-            game: t,
-            disabled: k || !P || t.disabled,
+            game: n,
+            disabled: I || !P || n.disabled,
             onClick: O,
             location: o.Z.GAME_SERVER_SETUP_MODAL
           })
-        }, "game-".concat(t.id, "-").concat(n)))
+        }, "game-".concat(n.id, "-").concat(t)))
       })]
     }), (0, Chunk54381.jsxs)(Chunk30910.o2, {
       step: Chunk619733.EK.SELECT_GAME,

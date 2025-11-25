@@ -94,16 +94,16 @@ async function F(e) {
   } = e;
   if (null == k.channel) return;
   let H = null != (r = w.Z.getSource(k.channel.id)) ? r : F,
-    W = null != (o = w.Z.getCommandOrigin(k.channel.id)) ? o : G;
+    Y = null != (o = w.Z.getCommandOrigin(k.channel.id)) ? o : G;
   null == k.autocomplete && a.Z.dispatch({
     type: "APPLICATION_COMMAND_USED",
     context: k,
     command: C,
-    commandOrigin: W
+    commandOrigin: Y
   }), await y.Z.unarchiveThreadIfNecessary(k.channel.id);
   let q = [],
     X = [],
-    Q = (0, x.D7)(W);
+    Q = (0, x.D7)(Y);
   if (null != C.options)
     for (let e of C.options) {
       let t;
@@ -220,7 +220,7 @@ async function F(e) {
     command_id: C.id,
     application_id: C.applicationId,
     command_type: C.type,
-    location: z(W),
+    location: z(Y),
     source: H
   }), C.execute(q, k);
   if (C.inputType === L.iw.BUILT_IN || C.inputType === L.iw.BUILT_IN_TEXT || C.inputType === L.iw.BUILT_IN_INTEGRATION) return;
@@ -236,14 +236,14 @@ async function F(e) {
     $ = () => {
       V(D)
     };
-  null != j && (J.target_id = j), null != k.autocomplete ? (0, N.GV)(C, k, J) : (s.Z.clearAll(k.channel.id, Q), Y({
+  null != j && (J.target_id = j), null != k.autocomplete ? (0, N.GV)(C, k, J) : (s.Z.clearAll(k.channel.id, Q), W({
     applicationId: C.applicationId,
     data: J,
     context: k,
     attachments: X,
     maxSizeCallback: U,
     onMessageSuccess: $,
-    analytics_location: z(W),
+    analytics_location: z(Y),
     sectionName: B,
     source: H,
     interactionLifecycleOptions: await Z(C, k, J)
@@ -266,14 +266,14 @@ let V = e => {
         channel: t,
         guild: null != t.guild_id ? v.Z.getGuild(t.guild_id) : null
       };
-      Y({
+      W({
         applicationId: n.command.applicationId,
         data: e.interactionData,
         context: r,
         interactionLifecycleOptions: await K(n.command, r, e.interactionData)
       })
     }
-  }, Y = e => {
+  }, W = e => {
     var t;
     let {
       applicationId: n,
@@ -314,11 +314,11 @@ let V = e => {
         channelId: h
       }
     }), null != a && a.length > 0 ? X(a, E.nonce, g, o).then(e => {
-      e && W(E, s)
-    }) : W(E, s)
+      e && Y(E, s)
+    }) : Y(E, s)
   };
 
-function W(e, t) {
+function Y(e, t) {
   u.ZP.enqueue({
     type: u.$V.COMMAND,
     message: e

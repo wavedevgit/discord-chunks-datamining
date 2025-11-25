@@ -119,14 +119,14 @@ function ee(e) {
       onMouseLeave: u,
       src: t,
       "aria-hidden": true,
-      className: o()(_, W.avatar, {
-        [W.compact]: i,
-        [W.clickable]: null != a,
-        [W.communicationDisabledOpacity]: f
+      className: o()(_, Y.avatar, {
+        [Y.compact]: i,
+        [Y.clickable]: null != a,
+        [Y.communicationDisabledOpacity]: f
       }),
       alt: " "
     }), null == n || i ? null : (0, r.jsx)("img", {
-      className: W.avatarDecoration,
+      className: Y.avatarDecoration,
       src: n,
       alt: " ",
       "aria-hidden": true
@@ -175,12 +175,12 @@ let et = Chunk473749.memo(function(e) {
       return (0, r.jsx)(v.Z, Q(q({
         ref: S
       }, l), {
-        className: W.roleIcon,
+        className: Y.roleIcon,
         onClick: t
       }))
     }
   }, "role-icon-children") : 2 === C ? (0, r.jsx)(v.Z, Q(q({}, l), {
-    className: W.roleIcon
+    className: Y.roleIcon
   }), "role-icon-children") : null, [C, l, A]), R = (0, c.e7)([w.default], () => w.default.getCurrentUser()), D = i.useMemo(() => {
     let e = [],
       n = M.ZP.isPremium(t.author),
@@ -221,7 +221,7 @@ let et = Chunk473749.memo(function(e) {
       hideGuildTag: O
     }), s && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("i", {
-        className: W.separator,
+        className: Y.separator,
         children: ":"
       }), " "]
     })]
@@ -256,7 +256,7 @@ function en(e, t, n) {
       preview: true
     }), s && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("i", {
-        className: W.separator,
+        className: Y.separator,
         children: ":"
       }), " "]
     })]
@@ -297,8 +297,8 @@ function er(e) {
     guildId: l
   }), {
     avatarSrc: F,
-    avatarDecorationSrc: Y,
-    eventHandlers: W
+    avatarDecorationSrc: W,
+    eventHandlers: Y
   } = (0, A.Z)({
     userId: h.author.id,
     guildId: l,
@@ -337,9 +337,9 @@ function er(e) {
       avatarUrl: z,
       onRequestClose: I,
       clickTrap: T,
-      children: e => ee(Q(q({}, W), {
+      children: e => ee(Q(q({}, Y), {
         avatarSrc: z,
-        avatarDecorationSrc: Y,
+        avatarDecorationSrc: W,
         compact: g,
         onClick: v,
         onContextMenu: O,
@@ -352,9 +352,9 @@ function er(e) {
     })
   }) : (0, r.jsx)(_.Gt, {
     value: M,
-    children: ee(Q(q({}, W), {
+    children: ee(Q(q({}, Y), {
       avatarSrc: z,
-      avatarDecorationSrc: Y,
+      avatarDecorationSrc: W,
       compact: g,
       onClick: v,
       onContextMenu: O,
@@ -384,7 +384,7 @@ function ei(e) {
   } = e, b = (0, l.yE)(t.flags, H.iLy.SENT_BY_SOCIAL_LAYER_INTEGRATION) ? t.applicationId : null, y = (0, p.q)(b);
   return (0, r.jsxs)(r.Fragment, {
     children: [!c && n, (0, r.jsxs)(d.H, {
-      className: o()(W.header, m),
+      className: o()(Y.header, m),
       "aria-describedby": h,
       "aria-labelledby": _,
       children: [u && c && (0, r.jsx)(B.Z, {
@@ -405,7 +405,7 @@ function ei(e) {
         className: g,
         application: y
       }), null != E && E.length > 0 ? (0, r.jsx)("div", {
-        className: W.badgesContainer,
+        className: Y.badgesContainer,
         children: E
       }) : null]
     })]
@@ -429,19 +429,19 @@ let es = Chunk473749.memo(function(e) {
     return (0, r.jsx)(u.u, {
       asContainer: true,
       shouldShow: null != i,
-      text: Y.intl.formatToPlainString(Y.t["8zbGNR"], {
+      text: W.intl.formatToPlainString(W.t["8zbGNR"], {
         date: i
       }),
       onTooltipShow: () => (0, C.Z)(n.id),
       children: (0, r.jsx)(d.P3F, {
-        className: W.nitroAuthorBadgeContainer,
+        className: Y.nitroAuthorBadgeContainer,
         onClick: () => ea(t),
-        "aria-label": Y.intl.formatToPlainString(Y.t["8zbGNR"], {
+        "aria-label": W.intl.formatToPlainString(W.t["8zbGNR"], {
           date: i
         }),
         children: (0, r.jsx)("img", {
           alt: "",
-          className: W.nitroBadgeSvg,
+          className: Y.nitroBadgeSvg,
           src: K
         })
       })
@@ -489,14 +489,14 @@ let es = Chunk473749.memo(function(e) {
       avatar: N,
       username: (0, r.jsxs)(r.Fragment, {
         children: [C && (0, r.jsx)(u.u, {
-          text: Y.intl.string(Y.t["AeYyL+"]),
+          text: W.intl.string(W.t["AeYyL+"]),
           children: (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(d.YlB, {
               size: "xxs",
               color: "currentColor",
-              className: a ? W.compactCommunicationDisabled : W.communicationDisabled
+              className: a ? Y.compactCommunicationDisabled : Y.communicationDisabled
             }), (0, r.jsx)(d.nn4, {
-              children: Y.intl.string(Y.t.AmHag5)
+              children: W.intl.string(W.t.AmHag5)
             })]
           })
         }), (0, r.jsx)(et, Q(q({}, e), {
@@ -511,9 +511,9 @@ let es = Chunk473749.memo(function(e) {
         }))]
       }),
       usernameSpanId: (0, G.XX)(t, p),
-      usernameClassName: o()(W.headerText, {
-        [W.hasRoleIcon]: 0 !== x,
-        [W.hasBadges]: null != L || M.length > 0
+      usernameClassName: o()(Y.headerText, {
+        [Y.hasRoleIcon]: 0 !== x,
+        [Y.hasBadges]: null != L || M.length > 0
       }),
       compact: a,
       showTimestamp: Z,

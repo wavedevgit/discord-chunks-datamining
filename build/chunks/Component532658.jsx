@@ -117,7 +117,7 @@ let B = () => require.e("43841").then(require.t.bind(require, 737848, 19)).then(
       }
     }
   },
-  Y = {
+  W = {
     entering: {
       config: {
         mass: .5,
@@ -136,7 +136,7 @@ let B = () => require.e("43841").then(require.t.bind(require, 737848, 19)).then(
     }
   };
 
-function W(e, t) {
+function Y(e, t) {
   let [n, r] = i.useState(null != e && e > Date.now() - Z), [a, o] = i.useState(false), [s, l] = i.useState(true);
   return (0, m.ZP)(() => {
     n && !t && (l(false), setTimeout(() => {
@@ -168,7 +168,7 @@ let K = Chunk473749.memo(function(e) {
       recentlyConnected: _,
       hideConnectedAnimation: h,
       setHideConnectedAnimation: m
-    } = W(n, a), {
+    } = Y(n, a), {
       ref: E,
       width: b
     } = (0, p.ZP)(), y = (0, l.e7)([g.Z], () => g.Z.useReducedMotion), O = _ ? "entering" : "exiting", {
@@ -177,7 +177,7 @@ let K = Chunk473749.memo(function(e) {
       width: f ? b : u
     })), {
       opacity: I
-    } = (0, s.useSpring)(j(M({}, Y[O]), {
+    } = (0, s.useSpring)(j(M({}, W[O]), {
       opacity: +!!f,
       onRest: () => {
         f || m(true)
@@ -274,10 +274,10 @@ let K = Chunk473749.memo(function(e) {
       width: V
     } = (0, p.ZP)(), {
       showConnectedAnimation: H
-    } = W(j, R), Y = null == w ? true : w.sessionId, X = t.id, Q = s.id, [J] = (0, l.e7)([C.Z], () => {
+    } = Y(j, R), W = null == w ? true : w.sessionId, X = t.id, Q = s.id, [J] = (0, l.e7)([C.Z], () => {
       var e;
-      return [null != (e = C.Z.getVoiceStateForChannel(X, Q)) ? e : C.Z.getVoiceStateForSession(Q, Y), C.Z.getVoiceStateVersion()]
-    }, [X, Q, Y], N.Q), $ = R ? w : null != J ? J : w, [ee, et, en] = (0, l.Wu)([A.Z], () => Z ? [!A.Z.isSupported() || A.Z.isSelfMute() || A.Z.isSelfMutedTemporarily(), A.Z.isSelfDeaf(), false] : [!A.Z.isSupported() || A.Z.isLocalMute(s.id), false, A.Z.isLocalVideoDisabled(s.id)], [Z, s.id]), er = (0, l.e7)([I.Z], () => {
+      return [null != (e = C.Z.getVoiceStateForChannel(X, Q)) ? e : C.Z.getVoiceStateForSession(Q, W), C.Z.getVoiceStateVersion()]
+    }, [X, Q, W], N.Q), $ = R ? w : null != J ? J : w, [ee, et, en] = (0, l.Wu)([A.Z], () => Z ? [!A.Z.isSupported() || A.Z.isSelfMute() || A.Z.isSelfMutedTemporarily(), A.Z.isSelfDeaf(), false] : [!A.Z.isSupported() || A.Z.isLocalMute(s.id), false, A.Z.isLocalVideoDisabled(s.id)], [Z, s.id]), er = (0, l.e7)([I.Z], () => {
       let e = I.Z.getCurrentUserActiveStream();
       return null != e && e.ownerId !== s.id && I.Z.getViewerIds(e).filter(e => e === s.id).length > 0
     }, [s.id]), ei = R && (null == w ? true : w.discoverable), ea = (0, h.Z)({

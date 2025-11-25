@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Gj: () => K,
-  Pt: () => W,
+  Pt: () => Y,
   VO: () => Q,
   ji: () => ee,
   q8: () => J
@@ -121,7 +121,7 @@ function H(e) {
   return t ? i : i.toSpliced(3, 0, a)
 }
 
-function Y() {
+function W() {
   let {
     shouldMergeGameSettings: e
   } = Chunk202527.b.useExperiment({
@@ -145,7 +145,7 @@ function Y() {
   }], [require])
 }
 
-function W() {
+function Y() {
   var e, t, n, o;
   let I = (0, Chunk725727.YO)().length,
     D = (0, Chunk160913.U)(),
@@ -163,10 +163,10 @@ function W() {
       location: "settings"
     }),
     H = null != (n = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && require,
-    Y = (0, Chunk237292.y0)({
+    W = (0, Chunk237292.y0)({
       location: "settings"
     }),
-    W = (0, Chunk667172.v4)({
+    Y = (0, Chunk667172.v4)({
       location: "settings"
     }),
     K = (0, Chunk211242.Q)(),
@@ -215,8 +215,8 @@ function W() {
     shouldMergeGameSettings: F,
     isKeywordFilteringEnabled: V,
     isStaff: H,
-    isInappropriateConversationWarningEnabled: Y,
-    isInapproprateConversationsDefaultOn: W,
+    isInappropriateConversationWarningEnabled: W,
+    isInapproprateConversationsDefaultOn: Y,
     paymentsBlocked: K,
     isEligibleForQuests: z,
     isStricterMessageRequestsEnabled: J,
@@ -234,12 +234,12 @@ function W() {
     isDataUsage3PToggleEnabled: es,
     isChatMentionSuggestionsSettingEnabled: el,
     isCrossDMSearchEnabledSettingVisible: ec
-  }), [Q, Z, et, en, q, ee, X, Chunk839469, $, z, W, Y, V, Chunk388032, H, J, Chunk726985, K, F, Chunk413182, Chunk906467, er, ei, ea, eo, es, el, ec])
+  }), [Q, Z, et, en, q, ee, X, Chunk839469, $, z, Y, W, V, Chunk388032, H, J, Chunk726985, K, F, Chunk413182, Chunk906467, er, ei, ea, eo, es, el, ec])
 }
 
 function K(e) {
   let t = k.R.useField("searchResults"),
-    n = W(),
+    n = Y(),
     r = n[e],
     i = Object.fromEntries(Object.entries(n).filter(e => {
       let [t, n] = e;
@@ -320,7 +320,7 @@ function X(e, t) {
 }
 
 function Q() {
-  let e = W(),
+  let e = Y(),
     {
       shouldMergeGameSettings: t
     } = Chunk202527.b.useExperiment({
@@ -339,8 +339,8 @@ function Q() {
 }
 
 function J(e) {
-  let t = W(),
-    n = Y();
+  let t = Y(),
+    n = W();
   return r.useMemo(() => q(n, t, new Set(e)), [n, t, e])
 }
 

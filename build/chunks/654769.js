@@ -106,23 +106,23 @@ async function H() {
   return (null == module ? true : module.authorizationStatus) === "authorized" && (null == module ? true : module.sound) === true
 }
 
-function Y(e, t) {
+function W(e, t) {
   var n;
   return null != (n = (0, b.Z)(null != t ? t : E.Z.getSoundpack())[e]) ? n : e
 }
-async function W(e) {
+async function Y(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
     n = arguments.length > 2 ? arguments[2] : true;
   if (await H()) try {
     await P.ZP.invoke("NOTIFICATIONS_SEND_NOTIFICATION", {
-      sound: Y(e, n)
+      sound: W(e, n)
     });
     return
   } catch (e) {
     G.warn("Native notification sound failed with error: ", e)
   }(0, g.GN)(e, t, true, n)
 }
-let K = a().throttle(W, 1e3, {
+let K = a().throttle(Y, 1e3, {
   leading: true
 });
 
@@ -216,7 +216,7 @@ async function $() {
 function ee(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
     n = arguments.length > 2 ? arguments[2] : true;
-  e.includes("message") ? K(e, t, n) : W(e, t, n)
+  e.includes("message") ? K(e, t, n) : Y(e, t, n)
 }
 async function et(e, t, n, r, i) {
   var a, o, s, c, d, f, g;
@@ -227,14 +227,14 @@ async function et(e, t, n, r, i) {
     F = T.Z.disableNotifications && null == i.overrideStreamerMode,
     V = !R.isPlatformEmbedded || (0, R.isMac)() && j || P.ZP.shouldDisplayNotifications(),
     H = !F && x && V,
-    W = M(L({}, r), {
+    Y = M(L({}, r), {
       action: true,
       ping: true,
       banner: true,
       badge: true
     }),
-    K = W,
-    z = W;
+    K = Y,
+    z = Y;
   if (r.banner = await (0, h.K)(), !H) {
     null != i.sound && false !== i.playSoundIfDisabled && (ee(i.sound, null != (a = i.volume) ? a : 1, i.soundpack), r.ping = true, i.omitViewTracking || A.default.track(D.rMx.NOTIFICATION_ACTION, L({
       action: "VIEW"
@@ -255,7 +255,7 @@ async function et(e, t, n, r, i) {
       title: t,
       body: n
     };
-    null != e && (a.icon = e), (null == i ? true : i.sound) != null && (a.sound = Y(i.sound, i.soundpack)), (null == i ? true : i.tag) != null && (a.identifier = i.tag), (null == i ? true : i.fallbackDeepLink) != null && (a.fallbackDeepLink = i.fallbackDeepLink), Array.isArray(i.actions) && (a.actions = i.actions);
+    null != e && (a.icon = e), (null == i ? true : i.sound) != null && (a.sound = W(i.sound, i.soundpack)), (null == i ? true : i.tag) != null && (a.identifier = i.tag), (null == i ? true : i.fallbackDeepLink) != null && (a.fallbackDeepLink = i.fallbackDeepLink), Array.isArray(i.actions) && (a.actions = i.actions);
     let o = p.Z.getCurrentConfig({
       location: "showNotification"
     }, {
@@ -354,5 +354,5 @@ let en = {
   hasPermission: J,
   requestPermission: Q,
   showNotification: et,
-  playNotificationSound: W
+  playNotificationSound: Y
 }

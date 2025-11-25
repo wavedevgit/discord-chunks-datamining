@@ -44,8 +44,8 @@ var Chunk98405 = require("./98405.js"),
   F = B && B.prototype,
   V = Z && Z.prototype,
   H = Chunk127849.TypeError,
-  Y = Chunk127849.encodeURIComponent,
-  W = String.fromCharCode,
+  W = Chunk127849.encodeURIComponent,
+  Y = String.fromCharCode,
   K = Chunk154028("String", "fromCodePoint"),
   z = parseInt,
   q = Chunk46015("".charAt),
@@ -100,7 +100,7 @@ var Chunk98405 = require("./98405.js"),
         }
         r += 2;
         var o = el(a);
-        if (0 === o) i = W(a);
+        if (0 === o) i = Y(a);
         else {
           if (1 === o || o > 4) {
             n += ea, r++;
@@ -140,7 +140,7 @@ var Chunk98405 = require("./98405.js"),
     return ef[e]
   },
   ep = function(e) {
-    return J(Y(e), ed, e_)
+    return J(W(e), ed, e_)
   },
   eh = Chunk280481(function(e, t) {
     k(this, {

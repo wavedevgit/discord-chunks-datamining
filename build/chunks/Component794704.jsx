@@ -353,8 +353,8 @@ function eU(e) {
     F = !g && !R && y && !A,
     V = !y && !L && g && !N,
     H = (null == u ? true : u.overlayMethod) === x.gl.Disabled,
-    Y = (null == u ? true : u.state) === x.mM.OVERLAY_RENDERING && !H,
-    W = (null == u ? true : u.state) != null && ek.has(u.state) && !H,
+    W = (null == u ? true : u.state) === x.mM.OVERLAY_RENDERING && !H,
+    Y = (null == u ? true : u.state) != null && ek.has(u.state) && !H,
     K = (null == u ? true : u.overlayMethod) === x.gl.OutOfProcess,
     z = (null == u ? true : u.overlayMethod) === x.gl.OutOfProcessLimitedInteraction,
     X = (null == u ? true : u.overlayMethod) === x.gl.Hook,
@@ -362,7 +362,7 @@ function eU(e) {
     J = !g && !y,
     [ee, en] = (() => {
       switch (true) {
-        case Y && K:
+        case W && K:
           function e(e, t) {
             return (0, r.jsx)(h.Text, {
               tag: "span",
@@ -375,7 +375,7 @@ function eU(e) {
             overlayMethod: em.intl.string(em.t.a3eXSw),
             overlayMethodHook: e
           }), null];
-        case Y && z:
+        case W && z:
           function t(e, t) {
             return (0, r.jsx)(h.Text, {
               tag: "span",
@@ -388,7 +388,7 @@ function eU(e) {
             overlayMethod: em.intl.string(em.t["506Aba"]),
             overlayMethodHook: t
           }), null];
-        case Y && X:
+        case W && X:
           function n() {
             var e, t;
             switch (true) {
@@ -430,7 +430,7 @@ function eU(e) {
         case F:
         case V:
           return [em.intl.string(em.t.VWUn0a), null];
-        case W:
+        case Y:
           if (K) return [em.intl.string(em.t["s8+CFq"]), null];
           if (X) return [em.intl.string(em.t.JEEdqt), null];
           if (z) return [em.intl.string(em.t.pzBMwY), null];
@@ -448,7 +448,7 @@ function eU(e) {
   (0, v.ZP)(() => {
     m.Z.getDetectableGames()
   });
-  let [er, ei] = i.useMemo(() => W ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : Y && z ? ["text-feedback-warning", h.TVs.colors.TEXT_FEEDBACK_WARNING.css] : Y && K ? ["text-feedback-positive", h.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : Y && X ? ["text-primary", h.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", h.TVs.colors.INTERACTIVE_NORMAL.css], [W, Y, z, K, X]);
+  let [er, ei] = i.useMemo(() => Y ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : W && z ? ["text-feedback-warning", h.TVs.colors.TEXT_FEEDBACK_WARNING.css] : W && K ? ["text-feedback-positive", h.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : W && X ? ["text-primary", h.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", h.TVs.colors.INTERACTIVE_NORMAL.css], [Y, W, z, K, X]);
   return null == o ? null : (0, r.jsxs)(eM, {
     onExpand: S,
     className: T ? eg.expandedContainer : true,
@@ -472,7 +472,7 @@ function eU(e) {
     description: ee,
     hint: null != en ? en : true,
     header: (0, r.jsxs)(r.Fragment, {
-      children: [Y || W ? (0, r.jsx)(h.pzj, {
+      children: [W || Y ? (0, r.jsx)(h.pzj, {
         size: "xxs",
         color: ei
       }) : (0, r.jsx)("div", {
@@ -797,7 +797,7 @@ function eH() {
     })
   })
 }
-let eY = e => [{
+let eW = e => [{
   title: em.t.eVE4LX,
   description: em.t["72WNqk"],
   disabledSetting: L.i.TEXT_CHAT
@@ -823,10 +823,10 @@ let eY = e => [{
   disabledSetting: L.i.FRIEND_STREAM_WATCH_NUDGE
 }].filter(e => false !== e).filter(Boolean);
 
-function eW() {
+function eY() {
   let {
     enabled: e
-  } = (0, Chunk32300.aq)("OverlayV3StreamWatchNudge"), t = eY(module), n = e => t => {
+  } = (0, Chunk32300.aq)("OverlayV3StreamWatchNudge"), t = eW(module), n = e => t => {
     b.Z.setNotificationDisabledSetting(e, !t)
   }, i = (0, Chunk442837.e7)([Chunk624864.Z], () => Chunk624864.Z.getDisabledNotifications());
   return (0, Chunk54381.jsxs)("div", {
@@ -975,7 +975,7 @@ function eX() {
           className: o()(eg.widgetContainer, e),
           children: [(0, r.jsx)("div", {
             className: eg.voiceWidgetContainer,
-            children: (0, r.jsx)(Y.kI, {
+            children: (0, r.jsx)(W.kI, {
               id: "voice-widget",
               title: em.intl.string(em.t.KNJ6Vq),
               channel: eq(),
@@ -997,9 +997,9 @@ function eX() {
             })
           }), (0, r.jsxs)("div", {
             className: eg.widgetHeaderContainer,
-            children: [(0, r.jsx)(W.PI, {
+            children: [(0, r.jsx)(Y.PI, {
               children: em.intl.string(em.t.KNJ6Vq)
-            }), (0, r.jsx)(W.ls, {}), (0, r.jsx)(W.RT, {
+            }), (0, r.jsx)(Y.ls, {}), (0, r.jsx)(Y.RT, {
               id: null != (t = null == u ? true : u.id) ? t : "voice-widget",
               pinned: null != (i = null == u ? true : u.pinned) && i
             })]
@@ -1185,6 +1185,6 @@ function e$(e) {
       children: [(0, r.jsx)(eX, {}), (0, r.jsx)("div", {
         className: eg.settingsDivider
       })]
-    }), (0, r.jsx)(eW, {})]
+    }), (0, r.jsx)(eY, {})]
   })
 }

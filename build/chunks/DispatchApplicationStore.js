@@ -212,7 +212,7 @@ function H(e) {
   }, ...M]).slice(0, S)
 }
 
-function Y(e) {
+function W(e) {
   let t = Date.now(),
     n = t - A;
   x = (x = [{
@@ -226,15 +226,15 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   k = (k = [{
     bytes: e,
     timestamp: Date.now()
   }, ...k]).slice(0, S)
 }
 let K = a().throttle(H, T),
-  z = a().throttle(Y, T),
-  q = a().throttle(W, T);
+  z = a().throttle(W, T),
+  q = a().throttle(Y, T);
 
 function X(e, t, n) {
   let r = n(C[t]),

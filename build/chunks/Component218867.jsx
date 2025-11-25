@@ -70,8 +70,8 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
     V = i.useRef([]),
     {
       totalHeight: H,
-      rowDescriptors: Y,
-      sectionDescriptors: W
+      rowDescriptors: W,
+      sectionDescriptors: Y
     } = i.useMemo(() => {
       let e = 0,
         t = null != E,
@@ -109,7 +109,7 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
         sectionDescriptors: a
       }
     }, [U, B, G, Z, d, g, E, j]);
-  F.current = W, V.current = Y;
+  F.current = Y, V.current = W;
   let K = i.useCallback(() => {
     var e;
     let t = null == (e = x.current) ? true : e.getScrollerNode();
@@ -238,14 +238,14 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
       i = [],
       a = j();
     null != m && e < a ? i.push(m()) : r += a;
-    for (let a = 0; a < W.length; a++) {
+    for (let a = 0; a < Y.length; a++) {
       let {
         firstRowIndex: o,
         offset: {
           top: s,
           bottom: l
         }
-      } = W[a], c = l - s;
+      } = Y[a], c = l - s;
       if (0 === c) continue;
       let u = G(a),
         d = B(a),
@@ -279,7 +279,7 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
       visibleItems: i,
       listOffset: r
     }
-  }, [U, B, G, Z, d, f, _, h, p, P, W, T, m, j, w]), Q = i.useMemo(() => {
+  }, [U, B, G, Z, d, f, _, h, p, P, Y, T, m, j, w]), Q = i.useMemo(() => {
     var e, t, n;
     return {
       top: X,

@@ -106,10 +106,10 @@ function p(e) {
   let {
     pressProps: V,
     isPressed: H
-  } = (0, u.r)(F), Y = x ? e => {
+  } = (0, u.r)(F), W = x ? e => {
     "mouse" === k.current && (e.stopPropagation(), e.preventDefault(), Z(e))
   } : true, {
-    longPressProps: W
+    longPressProps: Y
   } = (0, d.T)({
     isDisabled: !j,
     onLongPress(e) {
@@ -121,8 +121,8 @@ function p(e) {
     i.nG.isOpening || e.preventDefault()
   } : true;
   return {
-    itemProps: (0, s.d)(C, D || L || b && !O ? V : {}, j ? W : {}, {
-      onDoubleClick: Y,
+    itemProps: (0, s.d)(C, D || L || b && !O ? V : {}, j ? Y : {}, {
+      onDoubleClick: W,
       onDragStartCapture: K,
       onClick: z,
       id: t

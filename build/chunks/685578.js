@@ -8,7 +8,7 @@ require.d(exports, {
   UE: () => tk,
   _7: () => eL,
   mH: () => tF,
-  vt: () => eY
+  vt: () => eW
 });
 var Chunk653603 = require("./653603.js"),
   i = require.n(Chunk653603),
@@ -80,8 +80,8 @@ var y = new WeakMap,
   F = Symbol("mark-placeholder"),
   V = globalThis.Text,
   H = e => e && e.ownerDocument && e.ownerDocument.defaultView || null,
-  Y = e => K(e) && 8 === e.nodeType,
-  W = e => K(e) && 1 === e.nodeType,
+  W = e => K(e) && 8 === e.nodeType,
+  Y = e => K(e) && 1 === e.nodeType,
   K = e => {
     var t = H(e);
     return !!t && e instanceof t.Node
@@ -94,10 +94,10 @@ var y = new WeakMap,
   X = e => e.clipboardData && "" !== e.clipboardData.getData("text/plain") && 1 === e.clipboardData.types.length,
   Q = e => {
     var [t, n] = e;
-    if (W(t) && t.childNodes.length) {
+    if (Y(t) && t.childNodes.length) {
       var r = n === t.childNodes.length,
         i = r ? n - 1 : n;
-      for ([t, i] = $(t, i, r ? "backward" : "forward"), r = i < n; W(t) && t.childNodes.length;) {
+      for ([t, i] = $(t, i, r ? "backward" : "forward"), r = i < n; Y(t) && t.childNodes.length;) {
         var a = r ? t.childNodes.length - 1 : 0;
         t = ee(t, a, r ? "backward" : "forward")
       }
@@ -116,7 +116,7 @@ var y = new WeakMap,
     for (var {
         childNodes: r
       } = e, i = r[t], a = t, o = false, s = false;
-      (Y(i) || W(i) && 0 === i.childNodes.length || W(i) && "false" === i.getAttribute("contenteditable")) && (!o || !s);) {
+      (W(i) || Y(i) && 0 === i.childNodes.length || Y(i) && "false" === i.getAttribute("contenteditable")) && (!o || !s);) {
       if (a >= r.length) {
         o = true, a = t - 1, n = "backward";
         continue
@@ -136,7 +136,7 @@ var y = new WeakMap,
   et = e => {
     var t = "";
     if (q(e) && e.nodeValue) return e.nodeValue;
-    if (W(e)) {
+    if (Y(e)) {
       for (var n of Array.from(e.childNodes)) t += et(n);
       var r = getComputedStyle(e).getPropertyValue("display");
       ("block" === r || "list" === r || "BR" === e.tagName) && (t += "\n")
@@ -152,7 +152,7 @@ var y = new WeakMap,
     var {
       target: r
     } = t;
-    if (W(r) && r.matches('[contentEditable="false"]')) returnfalse;
+    if (Y(r) && r.matches('[contentEditable="false"]')) returnfalse;
     var {
       document: i
     } = ey.getWindow(e);
@@ -241,7 +241,7 @@ var y = new WeakMap,
         } = r,
         a = ey.toDOMNode(e, e);
       try {
-        n = W(t) ? t : t.parentElement
+        n = Y(t) ? t : t.parentElement
       } catch (e) {
         if (!e.message.includes('Permission denied to access property "nodeType"')) throw e
       }
@@ -295,11 +295,11 @@ var y = new WeakMap,
       var {
         anchor: n,
         focus: r
-      } = t, i = d.e6.isBackward(t), a = ey.toDOMPoint(e, n), o = d.e6.isCollapsed(t) ? a : ey.toDOMPoint(e, r), s = ey.getWindow(e).document.createRange(), [l, c] = i ? o : a, [u, f] = i ? a : o, _ = !!(W(l) ? l : l.parentElement).getAttribute("data-slate-zero-width"), p = !!(W(u) ? u : u.parentElement).getAttribute("data-slate-zero-width");
+      } = t, i = d.e6.isBackward(t), a = ey.toDOMPoint(e, n), o = d.e6.isCollapsed(t) ? a : ey.toDOMPoint(e, r), s = ey.getWindow(e).document.createRange(), [l, c] = i ? o : a, [u, f] = i ? a : o, _ = !!(Y(l) ? l : l.parentElement).getAttribute("data-slate-zero-width"), p = !!(Y(u) ? u : u.parentElement).getAttribute("data-slate-zero-width");
       return s.setStart(l, _ ? 1 : c), s.setEnd(u, p ? 1 : f), s
     },
     toSlateNode(e, t) {
-      var n = W(t) ? t : t.parentElement;
+      var n = Y(t) ? t : t.parentElement;
       n && !n.hasAttribute("data-slate-node") && (n = n.closest("[data-slate-node]"));
       var r = n ? S.get(n) : null;
       if (!r) throw Error("Cannot resolve a Slate node from DOM node: ".concat(n));
@@ -428,7 +428,7 @@ var y = new WeakMap,
         anchor: f,
         focus: _
       };
-      return d.e6.isExpanded(m) && d.e6.isForward(m) && W(a) && d.ML.void(e, {
+      return d.e6.isExpanded(m) && d.e6.isForward(m) && Y(a) && d.ML.void(e, {
         at: m.focus,
         mode: "highest"
       }) && (m = d.ML.unhangRange(e, m, {
@@ -648,7 +648,7 @@ var y = new WeakMap,
     } = e, l = eL(), u = ez(), f = l.isInline(n), _ = ey.findKey(l, n), p = (0, c.useCallback)(e => {
       var t = N.get(l);
       e ? (null == t || t.set(_, e), A.set(n, e), S.set(e, n)) : (null == t || t.delete(_), A.delete(n))
-    }, [l, _, n]), h = eW({
+    }, [l, _, n]), h = eY({
       decorations: t,
       node: n,
       renderElement: r,
@@ -709,8 +709,8 @@ var y = new WeakMap,
   eF = (0, Chunk473749.createContext)(() => []),
   eV = () => (0, Chunk473749.useContext)(eF),
   eH = (0, Chunk473749.createContext)(false),
-  eY = () => (0, Chunk473749.useContext)(eH),
-  eW = e => {
+  eW = () => (0, Chunk473749.useContext)(eH),
+  eY = e => {
     for (var {
         decorations: t,
         node: n,
@@ -1621,7 +1621,7 @@ function tC(e) {
   }
   return e
 }
-var tN = e => c.createElement(c.Fragment, null, eW(e)),
+var tN = e => c.createElement(c.Fragment, null, eY(e)),
   tR = e => {
     var t, n, r = (0, c.useCallback)(e => c.createElement(tP, Object.assign({}, e)), []),
       {
@@ -1647,8 +1647,8 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
         onUserInput: G,
         receivedUserInput: V
       } = tI(),
-      [, Y] = (0, c.useReducer)(e => e + 1, 0);
-    B.set(N, Y), R.set(N, _);
+      [, W] = (0, c.useReducer)(e => e + 1, 0);
+    B.set(N, W), R.set(N, _);
     var z = (0, c.useMemo)(() => ({
       isDraggingInternally: false,
       isUpdatingSelection: false,
@@ -1971,7 +1971,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
           var {
             relatedTarget: n
           } = e;
-          if (n !== ey.toDOMNode(N, N) && !(W(n) && n.hasAttribute("data-slate-spacer"))) {
+          if (n !== ey.toDOMNode(N, N) && !(Y(n) && n.hasAttribute("data-slate-spacer"))) {
             if (null != n && K(n) && ey.hasDOMNode(N, n)) {
               var r = ey.toSlateNode(N, n);
               if (d.W_.isElement(r) && !N.isVoid(r)) return
@@ -2389,7 +2389,7 @@ var tZ = ["editor", "children", "onChange", "value"],
       i = ey.toDOMRange(e, n).getBoundingClientRect();
     return tV(r, i) && tV(i, r)
   },
-  tY = (e, t) => {
+  tW = (e, t) => {
     var n = d.ML.range(e, d.e6.end(t)),
       r = Array.from(d.ML.positions(e, {
         at: t
@@ -2403,7 +2403,7 @@ var tZ = ["editor", "children", "onChange", "value"],
     return d.ML.range(e, r[a], n)
   };
 
-function tW(e, t) {
+function tY(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -2417,9 +2417,9 @@ function tW(e, t) {
 function tK(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? tW(Object(n), true).forEach(function(t) {
+    t % 2 ? tY(Object(n), true).forEach(function(t) {
       h(e, t, n[t])
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : tW(Object(n)).forEach(function(t) {
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : tY(Object(n)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
     })
   }
@@ -2449,7 +2449,7 @@ var tz = function(e) {
           at: n.selection
         });
         if (t) {
-          var [, r] = t, i = d.ML.range(n, r, n.selection.anchor), o = tY(n, i);
+          var [, r] = t, i = d.ML.range(n, r, n.selection.anchor), o = tW(n, i);
           d.e6.isCollapsed(o) || d.YR.delete(n, {
             at: o
           })

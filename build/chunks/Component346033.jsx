@@ -57,7 +57,7 @@ let U = e => {
       B = (0, Chunk780384.wj)(G),
       [Z, F] = Chunk473749.useState(false),
       [V, H] = Chunk473749.useState(false),
-      [Y, W] = Chunk473749.useState(false),
+      [W, Y] = Chunk473749.useState(false),
       K = !Z && !V,
       [z, q] = Chunk473749.useState(false),
       X = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
@@ -166,9 +166,9 @@ let U = e => {
       }), (0, Chunk54381.jsx)(Chunk622535.$, {
         innerRef: Chunk498765,
         onChange: e => {
-          e && !Y && (g.default.track(L.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+          e && !W && (g.default.track(L.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: eo
-          }), W(true))
+          }), Y(true))
         },
         children: (0, Chunk54381.jsx)("div", {
           ref: Chunk498765,

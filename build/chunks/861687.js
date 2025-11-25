@@ -154,7 +154,7 @@ class eN extends Chunk47770.Z {
       let {
         hostname: n,
         port: r
-      } = null != (t = W.Z.toURLSafe(e)) ? t : {}, i = null != r ? parseInt(r) : NaN;
+      } = null != (t = Y.Z.toURLSafe(e)) ? t : {}, i = null != r ? parseInt(r) : NaN;
       null != n && (80 === i || 443 === i) && (e = "".concat(ep, "//").concat(n)), this._endpoint = e + "/", this.hostname = n
     }
   }
@@ -1005,7 +1005,7 @@ class eN extends Chunk47770.Z {
         var n;
         null == (n = this._connection) || n.executeSecureFramesTransition(ev)
       } catch (e) {
-        t = true, Y.Z.captureException(e)
+        t = true, W.Z.captureException(e)
       }
       this._storeSecureFrameTransitionData(ev, {
         initReceivedTime: r,
@@ -1074,7 +1074,7 @@ class eN extends Chunk47770.Z {
       var r;
       null == (r = this._connection) || r.executeSecureFramesTransition(e)
     } catch (e) {
-      n = true, Y.Z.captureException(e)
+      n = true, W.Z.captureException(e)
     }
     this._storeSecureFrameTransitionData(e, {
       executeReceivedTime: t,
@@ -1321,7 +1321,7 @@ class eN extends Chunk47770.Z {
     }), this.context = i, this.recordEvent({
       c: 0
     }), this._fetchAsyncResourcesPromise = k.Z.fetchAsyncResources().catch(e => {
-      Y.Z.captureException(e)
+      W.Z.captureException(e)
     }), this.userId = e, this.sessionId = t, this.guildId = n, this._channelId = r, this.channelIds = new Set([r]), this.streamServerId = a, this.streamChannelId = s, this.parentMediaSessionId = l, this.joinVoiceId = d, this._connectionSerial = eT++, this.logger = new y.Z("RTCConnection(".concat(this.trueServerId, ", ").concat(this.context, ")")), this.logger.enableNativeLogger(true), this._endpoint = null, this.hostname = null, this.port = null, this.token = null, this.voiceVersion = null, this.rtcWorkerVersion = null, this.state = es.hes.AWAITING_ENDPOINT, this.stateHistory = new X.K(this.state), this._socket = null, this._backoff = new u.Z(1e3, 1e4), this._destroyed = false, this._pings = [], this._pingBadCount = 0, this._pingTimeouts = [], this._mediaSessionId = null, this._voiceQuality = null, this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._systemResponsiveness = null, this._noiseCancellationError = 0, this._voiceDuration = null, this._videoQuality = null, this._videoHealthManager = null, this._sentVideo = false, this._outboundLossRate = null, this._createdTime = (0, p.zO)(), this._connectStartTime = 0, this._connectCompletedTime = 0, this._rtcConnectionId = (0, c.Z)(), this._connectCount = 0, this._connected = false, this._connecting = false, this._encountered_socket_failure = false, this._inputDetected = false, this._selectedExperiments = [], this._secureFramesState = null, this._userIds = new Set([e]), this._secureFramesRosterMap.clear(), this._mlsFailures = [], this._nextFailureId = 0, this._mediaEngineConnectionId = null, this._lastSentSpeakingStatus = 0, this._lastSentSSRC = true;
     let f = k.Z.supports(el.AN.FIRST_FRAME_CALLBACK) && k.Z.supports(el.AN.REMOTE_USER_MULTI_STREAM);
     if (i === el.Yn.DEFAULT) {

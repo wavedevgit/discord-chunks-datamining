@@ -200,20 +200,20 @@ function U(e) {
     forcePlaceholder: V
   } = e, {
     width: H,
-    height: Y,
-    spoiler: W,
+    height: W,
+    spoiler: Y,
     type: K,
     contentType: z
   } = n, [q, X] = i.useState(false), Q = t.getChannelId(), J = E.Z.getChannel(Q), $ = (0, m.Z)(Q), ee = i.useMemo(() => null != z && false !== z.indexOf("/") ? z.split("/") : ["unknown", "unknown"], [z]), et = false;
   if (B) {
-    (null == H || null == Y) && (et = true);
+    (null == H || null == W) && (et = true);
     let e = (0, y.Dc)({
       width: null != H ? H : 0,
-      height: null != Y ? Y : 0,
+      height: null != W ? W : 0,
       maxWidth: null != M ? M : v.mT,
       maxHeight: null != k ? k : v.Jj
     });
-    !G && (e * (null != H ? H : 0) < v.OF || e * (null != Y ? Y : 0) < v.OF) && (et = true)
+    !G && (e * (null != H ? H : 0) < v.OF || e * (null != W ? W : 0) < v.OF) && (et = true)
   }
   let en = i.useCallback(() => {
       l(n)
@@ -237,7 +237,7 @@ function U(e) {
         })
       }
       return s && (0, r.jsx)(c.P3F, {
-        className: W ? S.spoilerRemoveMosaicItemButton : S.removeMosaicItemButton,
+        className: Y ? S.spoilerRemoveMosaicItemButton : S.removeMosaicItemButton,
         focusProps: {
           offset: {
             bottom: 4
@@ -250,13 +250,13 @@ function U(e) {
           color: "currentColor"
         })
       })
-    }, [x, s, W, $, K, et, q, ee, n, en, B, l]);
+    }, [x, s, Y, $, K, et, q, ee, n, en, B, l]);
   if (V) return (0, r.jsx)(c.Eep, {
     className: R,
     readyState: I.zo9.READY,
     src: "",
     width: null != H ? H : 350,
-    height: null != Y ? Y : 350,
+    height: null != W ? W : 350,
     maxWidth: M,
     maxHeight: k,
     mediaLayoutType: x,
@@ -270,7 +270,7 @@ function U(e) {
           item: n,
           message: t,
           width: H,
-          height: Y,
+          height: W,
           autoPlay: a && !L,
           onClick: u,
           onContextMenu: f,
@@ -297,12 +297,12 @@ function U(e) {
         item: n,
         message: t,
         width: H,
-        height: Y,
+        height: W,
         onClick: u,
         onContextMenu: f,
         renderAdjacentContent: ei,
         naturalWidth: H,
-        naturalHeight: Y,
+        naturalHeight: W,
         className: o()(R, {
           [S.hasFooter]: U
         }),
@@ -407,7 +407,7 @@ let B = function(e) {
     F(true)
   }, H = () => {
     F(false)
-  }, Y = function() {
+  }, W = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     return (0, r.jsx)(U, P(N({}, m), {
       item: n,
@@ -454,7 +454,7 @@ let B = function(e) {
         [S.obscureVideoSpacing]: "VIDEO" === y && u && !T && Z
       }),
       onToggleObscurity: () => A(e => !e),
-      children: e => Y(e)
-    }) : Y(), d]
+      children: e => W(e)
+    }) : W(), d]
   })
 }

@@ -206,14 +206,14 @@ function H(e) {
   w.has(e) && (F(e), w.delete(e), $.emitChange())
 }
 
-function Y(e) {
+function W(e) {
   let t = R[e];
   null != t && (t.closed || U(e), G(e), setTimeout(() => {
     K(t)
   }, 100), $.emitChange())
 }
 
-function W(e) {
+function Y(e) {
   let {
     data: t
   } = e;
@@ -223,7 +223,7 @@ function W(e) {
     case b.l9w.LOADED:
       return H(n.key);
     case b.l9w.UNLOADED:
-      return Y(n.key)
+      return W(n.key)
   }
 }
 
@@ -266,7 +266,7 @@ function Q(e) {
 }
 class J extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(p.default), window.addEventListener("message", W), window.addEventListener("beforeunload", q), C = null != e ? e : {}
+    this.waitFor(p.default), window.addEventListener("message", Y), window.addEventListener("beforeunload", q), C = null != e ? e : {}
   }
   getWindow(e) {
     return R[e]
@@ -306,7 +306,7 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
     return (null == r || null == (n = r.document) || null == (t = n.fullscreenElement) ? true : t.id) === L
   }
   unmountWindow(e) {
-    return this.isWindowFullyInitialized(e) || A.warn("Attempted to unmount partially initialized window ".concat(e)), Y(e)
+    return this.isWindowFullyInitialized(e) || A.warn("Attempted to unmount partially initialized window ".concat(e)), W(e)
   }
 }
 y(J, "displayName", "PopoutWindowStore"), y(J, "persistKey", "PopoutWindowStore");

@@ -290,14 +290,14 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     application: t
   } = e;
   b(o.ZP.createFromServer(t))
 }
 
-function W(e) {
+function Y(e) {
   e.tokens.forEach(e => {
     b(o.ZP.createFromServer(e.application));
     let t = e.application.bot;
@@ -391,9 +391,9 @@ let q = new z(Chunk570140.Z, {
   LOAD_MESSAGES_SUCCESS: V,
   USER_PROFILE_FETCH_SUCCESS: L,
   APP_DM_OPEN: x,
-  USER_AUTHORIZED_APPS_UPDATE: W,
+  USER_AUTHORIZED_APPS_UPDATE: Y,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: K,
-  OAUTH2_TOKEN_CREATE: Y,
+  OAUTH2_TOKEN_CREATE: W,
   WISHLIST_FETCH_SUCCESS: O,
   WISHLIST_ADD_SKU_SUCCESS: O,
   WISHLIST_REMOVE_SKU_SUCCESS: O,

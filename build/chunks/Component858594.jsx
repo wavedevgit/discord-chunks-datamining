@@ -1,5 +1,5 @@
-/** Chunk was on 63639 **/
-/** chunk id: 858594, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 67365 **/
+/** chunk id: 858594, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => m
 });
@@ -16,22 +16,22 @@ var Chunk120356 = require("./120356.js"),
 
 function m(e) {
   let {
-    className: t,
-    guildId: n,
+    className: n,
+    guildId: t,
     game: i,
     onClick: m,
     imageClassName: v,
-    titleClassName: g,
-    disabled: f = false,
+    titleClassName: f,
+    disabled: g = false,
     location: p
   } = e, b = (0, u.Z)(i.gameId, "cover");
   return (0, l.jsxs)(r.P3F, {
-    "aria-disabled": f,
+    "aria-disabled": g,
     className: a()(d.game, {
-      [d.disabled]: f
-    }, t),
-    onClick: f ? true : () => {
-      (0, s.GA)(n, i.id, i.name, p), m(i)
+      [d.disabled]: g
+    }, n),
+    onClick: g ? true : () => {
+      (0, s.GA)(t, i.id, i.name, p), m(i)
     },
     children: [(0, l.jsxs)("div", {
       className: a()(d.gameImageContainer, v),
@@ -45,7 +45,7 @@ function m(e) {
         className: d.gameImageOverlay
       })]
     }), (0, l.jsxs)("div", {
-      className: a()(d.textContainer, g),
+      className: a()(d.textContainer, f),
       children: [(0, l.jsx)(r.Heading, {
         variant: "heading-sm/semibold",
         lineClamp: 1,

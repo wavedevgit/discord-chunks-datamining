@@ -67,7 +67,7 @@ function H(e) {
   return e
 }
 
-function Y(e, t) {
+function W(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,8 +78,8 @@ function Y(e, t) {
   return n
 }
 
-function W(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
+function Y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -90,7 +90,7 @@ function K(e) {
     currentUser: n,
     activity: i,
     application: V,
-    voiceGuild: Y,
+    voiceGuild: W,
     voiceChannel: K,
     className: z,
     onClose: q,
@@ -187,13 +187,13 @@ function K(e) {
     id: Q
   }), ef = () => {
     if (i.type === U.IIU.HANG_STATUS) return null;
-    if ((0, d.Z)(i) && null != Y) return (0, r.jsx)(L.Z, {
+    if ((0, d.Z)(i) && null != W) return (0, r.jsx)(L.Z, {
       variant: "text-xs/normal",
       text: Z.intl.formatToPlainString(Z.t["hq/Qze"], {
-        guildName: Y.name
+        guildName: W.name
       }),
       onClick: () => {
-        (0, O.X)(Y.id), en({
+        (0, O.X)(W.id), en({
           action: "OPEN_VOICE_GUILD"
         }), null == q || q()
       }
@@ -301,9 +301,9 @@ function K(e) {
       }), el(e)
     },
     children: [ed(), ef(), e_()]
-  }), eg = () => null == Y || null == K ? null : (0, r.jsx)(x.Z, {
+  }), eg = () => null == W || null == K ? null : (0, r.jsx)(x.Z, {
     user: t,
-    guild: Y,
+    guild: W,
     channel: K,
     onAction: en,
     onClose: q
@@ -325,7 +325,7 @@ function K(e) {
       onAction: en,
       onClose: q,
       "aria-labelledby": ea ? "".concat(J, " ").concat(Q) : Q,
-      children: [(0, r.jsx)(w.Z, W(H({
+      children: [(0, r.jsx)(w.Z, Y(H({
         textId: J,
         tags: ec()
       }, ei), {

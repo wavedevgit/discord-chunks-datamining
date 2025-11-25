@@ -93,8 +93,8 @@ function P(e) {
     status: (0, c.Z)(G) ? O.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
   })), F = true !== w ? w : B, V = [I.l.MODAL, I.l.MODAL_V2].includes(S) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(T.avatar, D), {
-    avatarDecorationSrc: Y,
-    avatarSrc: W,
+    avatarDecorationSrc: W,
+    avatarSrc: Y,
     eventHandlers: K
   } = (0, E.Z)({
     userId: t.id,
@@ -102,8 +102,8 @@ function P(e) {
     size: V,
     animateOnHover: C
   }), z = (0, r.jsx)(R, {
-    src: W,
-    avatarDecoration: Y,
+    src: Y,
+    avatarDecoration: W,
     size: V,
     "aria-label": t.username,
     imageClassName: null != P ? T.overlay : true,

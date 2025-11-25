@@ -107,22 +107,22 @@ function I(e) {
   } = j.useComponentState(t, R.size > 0 ? {
     type: b,
     selectedOptions: Array.from(R.values())
-  } : true), V = null != j.modal, H = v > 1, Y = B === _.gH.LOADING;
+  } : true), V = null != j.modal, H = v > 1, W = B === _.gH.LOADING;
   i.useEffect(() => {
     if ((null == U ? true : U.type) === u.re.USER_SELECT || (null == U ? true : U.type) === u.re.ROLE_SELECT || (null == U ? true : U.type) === u.re.MENTIONABLE_SELECT || (null == U ? true : U.type) === u.re.CHANNEL_SELECT) {
       let e = new Map(U.selectedOptions.map(e => [e.value, e]));
       P(e), w(new Set(e.keys()))
     }
   }, [U]);
-  let W = i.useCallback(() => {
+  let Y = i.useCallback(() => {
     G({
       type: b,
       selectedOptions: Array.from(R.values())
     }) && w(new Set(R.keys()))
   }, [G, b, R]);
   i.useEffect(() => {
-    !S && !C && (R.size === D.size && Array.from(R.keys()).every(e => D.has(e)) || W())
-  }, [S, C, D, R, W]);
+    !S && !C && (R.size === D.size && Array.from(R.keys()).every(e => D.has(e)) || Y())
+  }, [S, C, D, R, Y]);
   let K = e => {
       S || N(true), P(new Map(e.map(e => [e.value, e])))
     },
@@ -143,7 +143,7 @@ function I(e) {
     },
     Q = 0 === R.size || S,
     J = {
-      isProcessing: Y,
+      isProcessing: W,
       isDisabled: I || B === _.gH.DISABLED || Z,
       wrapperClassName: o()(h.select, {
         [h.inModal]: V

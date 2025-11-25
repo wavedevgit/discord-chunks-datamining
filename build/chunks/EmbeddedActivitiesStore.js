@@ -90,8 +90,8 @@ let U = new Map,
   F = new Map,
   V = new Map,
   H = new Map,
-  Y = new Map,
-  W = 216e5,
+  W = new Map,
+  Y = 216e5,
   K = new Map,
   z = Chunk918559.Ez.DISCONNECTED,
   q = Chunk918559.MI.RESIZABLE,
@@ -499,7 +499,7 @@ function eS(e) {
     applicationId: t,
     layoutMode: n
   } = e;
-  Y.set(t, n)
+  W.set(t, n)
 }
 
 function eA(e) {
@@ -585,7 +585,7 @@ class eR extends(i = Chunk442837.ZP.PersistedStore) {
       i = null != (t = Z.get(r)) ? t : {
         isFetching: false
       },
-      a = Date.now() - (null != (n = null == i ? true : i.lastFetchTimestampMs) ? n : 0) > W;
+      a = Date.now() - (null != (n = null == i ? true : i.lastFetchTimestampMs) ? n : 0) > Y;
     return !(null == i ? true : i.isFetching) && a
   }
   getOrientationLockStateForApp(e) {
@@ -600,7 +600,7 @@ class eR extends(i = Chunk442837.ZP.PersistedStore) {
     return null != (n = null != (t = H.get(e)) ? t : V.get(e)) ? n : this.getOrientationLockStateForApp(e)
   }
   getLayoutModeForApp(e) {
-    return Y.get(e)
+    return W.get(e)
   }
   getConnectedActivityChannelId() {
     if (null != r) return (0, Chunk16609.p)(r)

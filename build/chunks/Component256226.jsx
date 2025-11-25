@@ -117,9 +117,9 @@ let N = Chunk473749.forwardRef(function(e, t) {
     F = (0, _.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
     V = null != (v = P.colorString) ? v : F,
     H = null != (T = (0, l.wK)(V, .6)) ? T : true,
-    Y = u.Z.unsafe_rawColors.WHITE_500.css,
-    W = (0, l._i)(V);
-  null != W && .3 > (0, l.Bd)(W) && (Y = u.Z.unsafe_rawColors.PRIMARY_630.css);
+    W = u.Z.unsafe_rawColors.WHITE_500.css,
+    Y = (0, l._i)(V);
+  null != Y && .3 > (0, l.Bd)(Y) && (W = u.Z.unsafe_rawColors.PRIMARY_630.css);
   let K = (0, E._f)(w, P, P.colorStrings);
   C = B ? (0, r.jsx)(m.Z, {
     className: O.roleFlowerStar,
@@ -159,7 +159,7 @@ let N = Chunk473749.forwardRef(function(e, t) {
         }),
         children: [C, (0, r.jsx)(_.Dio, {
           size: "md",
-          color: Y,
+          color: W,
           className: O.roleRemoveIcon,
           "aria-hidden": true
         })]

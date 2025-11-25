@@ -89,7 +89,7 @@ function M(e) {
     returnRef: F
   } = e, {
     analyticsLocations: V
-  } = (0, d.ZP)([...Z, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [Y, W] = i.useState(null), [K, z] = i.useState(false), q = i.useMemo(() => (0, C.UY)({
+  } = (0, d.ZP)([...Z, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [W, Y] = i.useState(null), [K, z] = i.useState(false), q = i.useMemo(() => (0, C.UY)({
     purchaseType: N.o8.FIAT,
     skuId: k
   }), [k]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != k ? [k] : X, J = null != (t = Q[0]) ? t : null, $ = null != k && p.Rm.has(k), ee = i.useCallback(() => {
@@ -109,7 +109,7 @@ function M(e) {
   }), er = i.useMemo(() => [y.WA, ...j ? [T.Dd] : [], v.n, ...y.yp, y.wo, {
     key: g.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(I.x, x(w({}, e), {
-      confettiCanvas: Y,
+      confettiCanvas: W,
       analyticsLocations: V,
       hideConfetti: null != q
     })),
@@ -117,11 +117,11 @@ function M(e) {
       bodyClassName: P.modalOverrideBody,
       sliderBodyClassName: P.modalOverrideSliderBody
     }
-  }], [V, Y, q, j]);
+  }], [V, W, q, j]);
   return (0, r.jsxs)(d.Gt, {
     value: V,
     children: [(0, r.jsx)(s.O_, {
-      ref: W,
+      ref: Y,
       className: P.confettiCanvas,
       environment: H.current
     }), (0, r.jsx)(_.i, {

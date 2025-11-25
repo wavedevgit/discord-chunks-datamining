@@ -528,7 +528,7 @@ function H(e) {
   t.gameSetFocused(true)
 }
 
-function Y(e) {
+function W(e) {
   var t;
   if (w.verbose("SOUNDBOARD_SET_OVERLAY_ENABLED", e), e.pid === y.DEV_PID) return;
   let n = U.getByPid(e.pid);
@@ -536,7 +536,7 @@ function Y(e) {
   n.setSoundboardShown(e.enabled, !!e.enabled && null != (t = e.keepOpen) && t)
 }
 
-function W(e) {
+function Y(e) {
   var t;
   if (w.verbose("OVERLAY_MESSAGE_EVENT_ACTION", e), null == e.gameName && null == e.gameId) return;
   let n = U.getByName(null != (t = e.gameName) ? t : e.gameId);
@@ -669,9 +669,9 @@ class en extends Chunk147913.Z {
       OVERLAY_NOTIFICATION_EVENT: F,
       OVERLAY_SET_INPUT_LOCKED: Z,
       OVERLAY_WIDGET_CHANGED: V,
-      OVERLAY_MESSAGE_EVENT_ACTION: W,
+      OVERLAY_MESSAGE_EVENT_ACTION: Y,
       RUNNING_GAMES_CHANGE: B,
-      SOUNDBOARD_SET_OVERLAY_ENABLED: Y,
+      SOUNDBOARD_SET_OVERLAY_ENABLED: W,
       MESSAGE_ACKED: K,
       MESSAGE_CREATE: z,
       WINDOW_FOCUS: X,

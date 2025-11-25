@@ -7,7 +7,7 @@ require.d(exports, {
   Hl: () => Q,
   Je: () => N,
   Jh: () => x,
-  KK: () => W,
+  KK: () => Y,
   Oe: () => I,
   Qi: () => F,
   Ro: () => O,
@@ -25,7 +25,7 @@ require.d(exports, {
   tb: () => M,
   tl: () => K,
   vx: () => k,
-  y4: () => Y,
+  y4: () => W,
   yw: () => V
 }), require("./583741.js"), require("./415506.js"), require("./388685.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
@@ -377,13 +377,13 @@ function H(e) {
   return Math.max(e.features.has(g.GuildFeatures.MORE_SOUNDBOARD) ? b.w1 : b.XB, r)
 }
 
-function Y(e) {
+function W(e) {
   var t, n;
   let r = E.xD + (null != (n = null == (t = e.premiumFeatures) ? true : t.additionalEmojiSlots) ? n : 0);
   return Math.max(e.features.has(g.GuildFeatures.MORE_EMOJI) ? E.IE : E.xD, r)
 }
 
-function W(e, t) {
+function Y(e, t) {
   let n = (0, s.I)(e.id).available;
   return Math.max(0, g.oCV[t] - n)
 }

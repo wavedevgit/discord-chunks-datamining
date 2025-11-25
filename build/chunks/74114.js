@@ -138,7 +138,7 @@ function E(e, t, n) {
       });
       t.currentNode = document.activeElement, (e.shiftKey ? t.previousNode() : t.nextNode()) && e.stopPropagation()
     }
-  }, V = (0, l.fU)(S.props), H = G.hasAction ? V : {}, Y = (0, c.d)(U, H, {
+  }, V = (0, l.fU)(S.props), H = G.hasAction ? V : {}, W = (0, c.d)(U, H, {
     role: "row",
     onKeyDownCapture: B,
     onKeyDown: F,
@@ -153,20 +153,20 @@ function E(e, t, n) {
     let {
       collection: e
     } = t, n = [...e];
-    Y["aria-rowindex"] = n.find(e => "section" === e.type) ? [...e.getKeys()].filter(t => {
+    W["aria-rowindex"] = n.find(e => "section" === e.type) ? [...e.getKeys()].filter(t => {
       var n;
       return (null == (n = e.getItem(t)) ? true : n.type) !== "section"
     }).findIndex(e => e === S.key) + 1 : S.index + 1
   }
-  let W = {
+  let Y = {
     role: "gridcell",
     "aria-colindex": 1
   };
   return {
     rowProps: {
-      ...(0, c.d)(Y, M)
+      ...(0, c.d)(W, M)
     },
-    gridCellProps: W,
+    gridCellProps: Y,
     descriptionProps: {
       id: w
     },

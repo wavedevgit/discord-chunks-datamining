@@ -7,7 +7,7 @@ require.d(exports, {
   bL: () => et,
   iA: () => B,
   sg: () => z,
-  xD: () => Y
+  xD: () => W
 });
 var Chunk23893 = require("./23893.js"),
   Chunk900090 = require("./900090.js"),
@@ -198,16 +198,16 @@ function Z({
   (0, x.useRef)(B), (0, x.useRef)(Z), (0, x.useEffect)(() => {}, [B, Z]);
   let V = false,
     H = null,
-    Y = (0, x.useRef)(null);
+    W = (0, x.useRef)(null);
   if (B && L) {
     u = L.useDraggableCollectionState({
       collection: S.collection,
       selectionManager: j,
-      preview: L.renderDragPreview ? Y : true
+      preview: L.renderDragPreview ? W : true
     }), L.useDraggableCollection({}, u, t);
     let e = L.DragPreview;
     H = L.renderDragPreview ? x.createElement(e, {
-      ref: Y
+      ref: W
     }, L.renderDragPreview) : null
   }
   if (Z && L) {
@@ -231,7 +231,7 @@ function Z({
     })
   }
   let {
-    focusProps: W,
+    focusProps: Y,
     isFocused: K,
     isFocusVisible: z
   } = (0, E.F)(), q = (0, o.aX)({
@@ -272,7 +272,7 @@ function Z({
       [i.LE, null]
     ]
   }, x.createElement(b.MT, null, x.createElement($, {
-    ...(0, y.d)(ee, q, M, W, null == f ? true : f.collectionProps),
+    ...(0, y.d)(ee, q, M, Y, null == f ? true : f.collectionProps),
     style: Q,
     ref: t,
     slot: e.slot || true,
@@ -297,12 +297,12 @@ function F(e) {
 let V = (0, Chunk473749.createContext)(null);
 class H extends Chunk557635.S3 {}
 H.type = "tableheader";
-let Y = (0, Chunk406581.IW)(H, (e, t) => {
+let W = (0, Chunk406581.IW)(H, (e, t) => {
   let n = (0, x.useContext)(U).collection,
     r = (0, f.H)({
       items: n.headerRows,
       children: (0, x.useCallback)(e => {
-        if ("headerrow" === e.type) return x.createElement(W, {
+        if ("headerrow" === e.type) return x.createElement(Y, {
           item: e
         });
         throw Error("Unsupported node type in TableHeader: " + e.type)
@@ -341,7 +341,7 @@ let Y = (0, Chunk406581.IW)(H, (e, t) => {
   items: e.columns
 }, e.children));
 
-function W({
+function Y({
   item: e
 }) {
   let t = (0, x.useRef)(null),
@@ -600,7 +600,7 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
       children: V,
       ...H
     } = e,
-    Y = (0, o.aX)({
+    W = (0, o.aX)({
       ...H,
       id: true,
       defaultClassName: "react-aria-Row",
@@ -617,12 +617,12 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
         id: n.key
       }
     }),
-    W = F("tr"),
+    Y = F("tr"),
     K = F("td"),
     z = (0, D.z)(e, {
       global: true
     });
-  return delete z.id, delete z.onClick, x.createElement(x.Fragment, null, u && !u.isHidden && x.createElement(W, {
+  return delete z.id, delete z.onClick, x.createElement(x.Fragment, null, u && !u.isHidden && x.createElement(Y, {
     role: "row",
     style: {
       height: 0
@@ -638,8 +638,8 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
     ...G,
     ...u.dropIndicatorProps,
     ref: j
-  }))), x.createElement(W, {
-    ...(0, y.d)(z, Y, b, N, L, null == c ? true : c.dragProps, w),
+  }))), x.createElement(Y, {
+    ...(0, y.d)(z, W, b, N, L, null == c ? true : c.dragProps, w),
     ref: d,
     "data-disabled": O.isDisabled || true,
     "data-selected": O.isSelected || true,

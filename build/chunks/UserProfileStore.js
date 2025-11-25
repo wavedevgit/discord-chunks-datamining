@@ -108,7 +108,7 @@ function F(e) {
 let V = false,
   H = null;
 
-function Y(e) {
+function W(e) {
   let t = D.get(e);
   if (null == t) return;
   let n = t.profileEffect;
@@ -119,10 +119,10 @@ function Y(e) {
     return
   }
   let i = L.get(e);
-  null != i && i.start(Math.min(P, r), () => Y(e))
+  null != i && i.start(Math.min(P, r), () => W(e))
 }
 
-function W(e, t) {
+function Y(e, t) {
   var n, r;
   let i = w.get(e);
   if (null == i) return;
@@ -138,7 +138,7 @@ function W(e, t) {
     return
   }
   let l = null == (n = x.get(e)) ? true : n.get(t);
-  null != l && l.start(Math.min(P, s), () => W(e, t))
+  null != l && l.start(Math.min(P, s), () => Y(e, t))
 }
 
 function K() {
@@ -261,7 +261,7 @@ function J(e) {
       wishlistSettings: z.wishlist_settings
     }), (null == (E = z.user_profile) || null == (g = E.profile_effect) ? true : g.expires_at) != null) {
     let e = new o.V7;
-    L.set(z.user.id, e), Y(z.user.id)
+    L.set(z.user.id, e), W(z.user.id)
   }
   if (null != z.guild_member_profile) {
     let e = z.guild_member_profile.profile_effect,
@@ -294,7 +294,7 @@ function J(e) {
         let t = new Map;
         t.set(z.guild_member_profile.guild_id, e), x.set(z.user.id, t)
       }
-      W(z.user.id, z.guild_member_profile.guild_id)
+      Y(z.user.id, z.guild_member_profile.guild_id)
     }
   }
 }
@@ -374,7 +374,7 @@ function en(e) {
       } : true
     })), (null == c ? true : c.expires_at) != null) {
     let e = new o.V7;
-    L.set(t, e), Y(t)
+    L.set(t, e), W(t)
   }
 }
 
@@ -412,7 +412,7 @@ function er(e) {
       let r = new Map;
       r.set(n, e), x.set(t, r)
     }
-    W(t, n)
+    Y(t, n)
   }
 }
 

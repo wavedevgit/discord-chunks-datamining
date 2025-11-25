@@ -77,12 +77,12 @@ function H(e, t) {
   return n
 }
 
-function Y(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : H(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let W = 32,
+let Y = 32,
   K = 12,
   z = 150,
   q = 144,
@@ -138,17 +138,17 @@ function et(e) {
     F && N.S.unsubscribe(j.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V)
   }, [F, V]);
   let {
-    width: Y,
-    height: W
+    width: W,
+    height: Y
   } = u;
-  null != d && (Y = d.width, W = d.height);
+  null != d && (W = d.width, Y = d.height);
   let K = (0, D.Tj)({
-    width: Y,
-    height: W,
+    width: W,
+    height: Y,
     maxWidth: l,
     maxHeight: c
   });
-  Y = Math.max(K.width, z), W = Math.max(K.height, q);
+  W = Math.max(K.width, z), Y = Math.max(K.height, q);
   let X = (0, A.q)(u);
   if (null != d && null != d.proxyURL) return (0, i.jsx)("div", {
     className: s()(B.embedVideo, r),
@@ -157,8 +157,8 @@ function et(e) {
       src: d.proxyURL,
       placeholder: M,
       placeholderVersion: k,
-      width: Y,
-      height: W,
+      width: W,
+      height: Y,
       responsive: p,
       autoPlay: y,
       onEnded: S,
@@ -179,15 +179,15 @@ function et(e) {
   if (G && null != d) {
     let e, t = true === O || "function" == typeof O && O(),
       n = {
-        width: Y,
-        height: W
+        width: W,
+        height: Y
       },
       a = {
-        width: Y,
-        height: W
+        width: W,
+        height: Y
       };
     if (p) {
-      let t = 0 !== Y ? W / Y : 1;
+      let t = 0 !== W ? Y / W : 1;
       n = {
         maxWidth: l,
         maxHeight: c,
@@ -195,13 +195,13 @@ function et(e) {
         height: true
       }, a = {
         paddingBottom: "".concat(100 * t, "%"),
-        maxWidth: Y
+        maxWidth: W
       }, e = {
         position: "absolute",
         top: 0,
         left: 0,
-        maxWidth: Y,
-        maxHeight: W
+        maxWidth: W,
+        maxHeight: Y
       }
     }
     return (0, i.jsx)("div", {
@@ -214,8 +214,8 @@ function et(e) {
           provider: f,
           src: d.url,
           style: e,
-          width: Y,
-          height: W,
+          width: W,
+          height: Y,
           allowFullScreen: _,
           autoMute: t
         })
@@ -225,17 +225,17 @@ function et(e) {
   return (0, i.jsxs)("div", {
     className: s()(B.embedVideo, r),
     style: p ? {
-      maxWidth: Y
+      maxWidth: W
     } : {
-      width: Y,
-      height: W
+      width: W,
+      height: Y
     },
     children: [h({
       src: X,
-      width: Y,
-      height: W,
-      maxWidth: Y,
-      maxHeight: W,
+      width: W,
+      height: Y,
+      maxWidth: W,
+      maxHeight: Y,
       responsive: p,
       containerClassName: B.embedVideoImageComponent,
       imageClassName: B.embedVideoImageComponentInner,
@@ -598,7 +598,7 @@ class er extends(r = Chunk473749.PureComponent) {
       } = null == Chunk607070 ? {
         srcToOnClickOverride: {},
         srcToHandlePreloadImage: {}
-      } : (0, Chunk120324.G)(Chunk607070.map(e => Y(V({}, (0, p.Hv)(e, E, "IMAGE")), {
+      } : (0, Chunk120324.G)(Chunk607070.map(e => W(V({}, (0, p.Hv)(e, E, "IMAGE")), {
         original: e.url,
         srcIsAnimated: e.srcIsAnimated
       })), {}, "Embed"),
@@ -640,7 +640,7 @@ class er extends(r = Chunk473749.PureComponent) {
           let {
             disableAnimations: r
           } = t;
-          return u(Y(V({}, T), {
+          return u(W(V({}, T), {
             autoPlay: f && !r && !n,
             renderAccessory: I ? e : null,
             handlePreloadImage: v[y],
@@ -890,7 +890,7 @@ class er extends(r = Chunk473749.PureComponent) {
       maxWidth: o,
       maxHeight: s
     });
-    if (!e && (i === j.hBH.VIDEO || c >= 300)) return c + W;
+    if (!e && (i === j.hBH.VIDEO || c >= 300)) return c + Y;
     if (i === j.hBH.RICH && true !== n) return X;
     if (i === j.hBH.GIFV) {
       var u, d, f, _;

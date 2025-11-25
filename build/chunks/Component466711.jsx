@@ -160,7 +160,7 @@ function B(e) {
     giftRecipient: F
   });
   if (a) return null;
-  let Y = () => {
+  let W = () => {
       H && V && null != F ? (0, E.Z)({
         giftRecipient: F,
         analyticsLocations: u,
@@ -183,17 +183,17 @@ function B(e) {
         }
       })
     },
-    W = () => {
-      v(false), k(R.L.TAKE_ACTION), Y()
+    Y = () => {
+      v(false), k(R.L.TAKE_ACTION), W()
     },
     K = true !== w ? (0, r.jsx)(j, {
       config: w,
       hovered: Z,
-      onClick: W
+      onClick: Y
     }) : true !== L ? (0, r.jsx)(U, {
       config: L,
       hovered: Z,
-      onClick: W
+      onClick: Y
     }) : (0, r.jsx)(A.Z, {
       disabled: a,
       channel: c
@@ -210,7 +210,7 @@ function B(e) {
     },
     children: true !== n.firstTimeNotice && B ? (0, r.jsx)(g.Z, {
       onComplete: () => v(false),
-      onCheckItOutClick: Y,
+      onCheckItOutClick: W,
       markAsDismissed: k,
       config: n.firstTimeNotice,
       children: K

@@ -153,14 +153,14 @@ function H(e) {
   null == A.messageGiftIntentLastShownMap[e] && (A.messageGiftIntentLastShownMap[e] = Date.now())
 }
 
-function Y() {
+function W() {
   for (let e in A.messageGiftIntentLastShownMap) {
     let t = A.messageGiftIntentLastShownMap[module];
     Date.now() - exports > v && delete A.messageGiftIntentLastShownMap[module]
   }
 }
 
-function W() {
+function Y() {
   A.lastShownFriendsListGiftIntents = []
 }
 
@@ -209,7 +209,7 @@ class Q extends(r = Chunk442837.ZP.PersistedStore) {
       var t;
       A.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, A.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), A.messageGiftIntentLastShownMap = g({}, e.messageGiftIntentLastShownMap), A.giftUnreadNotificationLastDismissedTimes = Array.from(null != (t = e.giftUnreadNotificationLastDismissedTimes) ? t : [])
     }
-    this.syncWith([_.Z, d.Z, f.Z, u.Z], L), Y(), F()
+    this.syncWith([_.Z, d.Z, f.Z, u.Z], L), W(), F()
   }
   getState() {
     return A
@@ -269,7 +269,7 @@ let J = new Q(Chunk570140.Z, {
   FRIENDS_LIST_GIFT_INTENTS_SHOWN: G,
   GIFT_UNREAD_NOTIFICATION_DISMISS: Z,
   GIFT_INTENT_FLOW_PURCHASED_GIFT: V,
-  DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: W,
+  DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: Y,
   DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET: K,
   DEV_TOOLS_GIFT_UNREAD_NOTIFICATION_COOLDOWN_RESET: z,
   DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT: q

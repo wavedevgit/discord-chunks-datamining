@@ -57,16 +57,16 @@ let v = (0, Chunk473749.createContext)(null),
     });
     let {
       focusProps: H,
-      isFocused: Y,
-      isFocusVisible: W
+      isFocused: W,
+      isFocusVisible: Y
     } = (0, m.F)({
       within: true
     }), K = (0, a.aX)({
       ...e,
       values: {
         state: N,
-        isFocusWithin: Y,
-        isFocusVisible: W,
+        isFocusWithin: W,
+        isFocusVisible: Y,
         isDisabled: e.isDisabled || false,
         isInvalid: N.isInvalid,
         isOpen: N.isOpen,
@@ -118,9 +118,9 @@ let v = (0, Chunk473749.createContext)(null),
       ...(0, y.d)(z, K, H),
       ref: t,
       slot: e.slot || true,
-      "data-focus-within": Y || true,
+      "data-focus-within": W || true,
       "data-invalid": N.isInvalid || true,
-      "data-focus-visible": W || true,
+      "data-focus-visible": Y || true,
       "data-disabled": e.isDisabled || true,
       "data-readonly": e.isReadOnly || true,
       "data-open": N.isOpen || true

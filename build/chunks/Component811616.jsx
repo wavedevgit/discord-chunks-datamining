@@ -75,17 +75,17 @@ function I(e) {
         discount: (0, p.T3)(N, M / 100)
       })
     }),
-    Y = () => Z ? V() : R.interval === y.rV.YEAR && null != t || G && !L ? R.interval === y.rV.YEAR && null != t ? (0, r.jsxs)("span", {
+    W = () => Z ? V() : R.interval === y.rV.YEAR && null != t || G && !L ? R.interval === y.rV.YEAR && null != t ? (0, r.jsxs)("span", {
       className: v.planOptionMonthsFree,
       children: ["(", O.intl.string(O.t["122kWB"]), ")"]
     }) : G && !L ? H() : true : null,
-    W = () => (0, r.jsxs)("div", {
+    Y = () => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: a()(v.planOptionInterval, {
           [v.optionSelected]: o || w,
           [v.updatedOptionSelected]: T && (o || w)
         }),
-        children: [(0, h.L7)(R.interval, P, U, R.intervalCount, w, (0, h.Rd)(R.id)), w && Y()]
+        children: [(0, h.L7)(R.interval, P, U, R.intervalCount, w, (0, h.Rd)(R.id)), w && W()]
       }), w && (0, r.jsx)("div", {
         className: v.planOneTimeCost,
         children: O.intl.format(O.t.ori2Jm, {
@@ -143,10 +143,10 @@ function I(e) {
             label: "",
             description: ""
           })
-        }), W(), L && (0, r.jsxs)("span", {
+        }), Y(), L && (0, r.jsxs)("span", {
           className: v.planOptionCurrentPlan,
           children: ["(", O.intl.string(O.t.ymSxhy), ")"]
-        }), !w && Y()]
+        }), !w && W()]
       }), T ? (0, r.jsx)("div", {
         className: a()({
           [v.optionPriceSelected]: o

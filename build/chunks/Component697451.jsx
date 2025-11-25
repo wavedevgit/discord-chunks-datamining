@@ -215,7 +215,7 @@ function H(e, t, n, i, a) {
   })
 }
 
-function Y(e, t, n) {
+function W(e, t, n) {
   let {
     showDataPopout: i,
     message: a,
@@ -281,7 +281,7 @@ function Y(e, t, n) {
     }
   })
 }
-let W = () => (0, Chunk54381.jsx)(Chunk481060.Fbu, {
+let Y = () => (0, Chunk54381.jsx)(Chunk481060.Fbu, {
   size: "xxs",
   color: "currentColor",
   className: Chunk724913.executedCommandSeparator
@@ -339,7 +339,7 @@ function K(e) {
     };
   if ((null == a ? true : a.activityInstance) === null || (0, O.g)(a)) {
     let t = () => {
-      let t = Y(e, M, R);
+      let t = W(e, M, R);
       return (0, r.jsx)(i.Fragment, {
         children: t
       }, "command")
@@ -348,9 +348,9 @@ function K(e) {
       userHook: X,
       commandHook: t
     }), B && null != e.renderTargetMessage ? n = (0, r.jsxs)(r.Fragment, {
-      children: [n, (0, r.jsx)(W, {}), e.renderTargetMessage()]
+      children: [n, (0, r.jsx)(Y, {}), e.renderTargetMessage()]
     }) : null != G && (n = (0, r.jsxs)(r.Fragment, {
-      children: [n, (0, r.jsx)(W, {}), (0, r.jsx)(Q, {})]
+      children: [n, (0, r.jsx)(Y, {}), (0, r.jsx)(Q, {})]
     }))
   } else {
     let e = () => {

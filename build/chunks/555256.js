@@ -9,7 +9,7 @@ require.d(exports, {
   S: () => u,
   a: () => S,
   b: () => g,
-  c: () => Y,
+  c: () => W,
   d: () => en,
   e: () => O,
   f: () => R,
@@ -430,13 +430,13 @@ function H(e, t) {
   }
   return a
 }
-let Y = e => {
+let W = e => {
     let {
       pageUrlEvents: t
     } = window.UserLeap._config, n = null == t ? true : t.find(t => t.id === e);
     return !!n && H(n, window.location.href)
   },
-  W = true,
+  Y = true,
   K = false,
   z = () => K = true,
   q = ["sdk_event_queue_latency_seconds", "sdk_replay_add_event_batch_seconds", "sdk_replay_cleanup_seconds", "sdk_replay_compression_seconds", "sdk_replay_get_events_between_seconds", "sdk_replay_snapshot_seconds", "sdk_mutations_nodes_added", "sdk_mutations_nodes_removed", "sdk_mutations_attributes_changed", "sdk_mutations_character_data", "sdk_dom_nodes_count", "sdk_page_html_characters"],
@@ -446,7 +446,7 @@ class J {
     l(this, "_values", []), l(this, "_isWebMetric"), this.name = e, this._isWebMetric = q.includes(this.name)
   }
   report(e) {
-    if (W && this._values.push({
+    if (Y && this._values.push({
         time: Date.now(),
         value: e
       }), K || !this._isWebMetric) return;
@@ -501,5 +501,5 @@ let $ = (e, t) => {
           })
         }
       })(t)
-    }, 1e3 * e) : W = false
+    }, 1e3 * e) : Y = false
   }

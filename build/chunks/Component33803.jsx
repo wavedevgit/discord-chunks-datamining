@@ -55,7 +55,7 @@ function H(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Y(e) {
+function W(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -68,7 +68,7 @@ function Y(e) {
   return e
 }
 
-function W(e, t) {
+function Y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -80,7 +80,7 @@ function W(e, t) {
 }
 
 function K(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -131,7 +131,7 @@ function X(e, t) {
 
 function Q(e, t, n) {
   return i.useMemo(() => {
-    if (null != t && null != n) return i => (0, r.jsx)(I.Z, K(Y({}, i), {
+    if (null != t && null != n) return i => (0, r.jsx)(I.Z, K(W({}, i), {
       user: t,
       currentUser: n,
       guildId: e.guild_id,
@@ -262,7 +262,7 @@ let ei = Chunk473749.memo(function(e) {
     l = X(n, i),
     c = Q(i, n.author),
     u = (0, R.ZP)(n),
-    d = (0, w.CF)(Y({
+    d = (0, w.CF)(W({
       message: n,
       channel: i,
       author: u,
@@ -275,7 +275,7 @@ let ei = Chunk473749.memo(function(e) {
     m = Q(i, p, S.default.getCurrentUser());
   if (null != p) {
     let e = (0, R.ij)(p, i),
-      r = (0, w.CF)(Y({
+      r = (0, w.CF)(W({
         message: n,
         channel: i,
         author: e,
@@ -321,7 +321,7 @@ function ea(e) {
     handleFocus: L,
     handleBlur: M
   } = (0, x.bb)(C), U = (0, d.e7)([h.Z], () => h.Z.keyboardModeEnabled), H = (0, d.e7)([T.Z], () => T.Z.can(G.Plq.MANAGE_MESSAGES, l), [l]), {
-    ruleName: W,
+    ruleName: Y,
     embedChannel: q,
     decisionId: Q,
     keywordMatchedContent: ee,
@@ -398,7 +398,7 @@ function ea(e) {
           className: o()(V.messageContent, {
             [V.compact]: a
           }),
-          children: (0, r.jsx)(D.Z, K(Y({}, R), {
+          children: (0, r.jsx)(D.Z, K(W({}, R), {
             message: s,
             channel: q,
             content: ed,
@@ -424,12 +424,12 @@ function ea(e) {
                   }), (0, r.jsx)("div", {
                     className: o()(V.dot, V.dotMargin)
                   })]
-                }), null != W && (0, r.jsx)(_.Text, {
+                }), null != Y && (0, r.jsx)(_.Text, {
                   variant: "text-xs/medium",
                   color: "text-muted",
                   tag: "span",
                   children: F.intl.format(F.t.ZoOyKB, {
-                    ruleName: W
+                    ruleName: Y
                   })
                 }), null != eO && (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)("div", {

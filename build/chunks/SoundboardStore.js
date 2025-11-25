@@ -137,7 +137,7 @@ function H(e) {
   } = e, a = (null != (t = O.get(r)) ? t : 0) - 1, o = (null != (n = N.get(i)) ? n : 0) - 1;
   a <= 0 ? O.delete(r) : O.set(r, a), o <= 0 ? N.delete(i) : N.set(i, o)
 }
-let Y = a().debounce((e, t) => {
+let W = a().debounce((e, t) => {
   d.default.track(m.rMx.UPDATE_SOUNDBOARD_SETTINGS, {
     volume: Math.round((0, f.P)(e)),
     location_stack: t
@@ -146,12 +146,12 @@ let Y = a().debounce((e, t) => {
   })
 }, 1e3);
 
-function W(e) {
+function Y(e) {
   let {
     volume: t,
     location: n
   } = e;
-  Y(t, n)
+  W(t, n)
 }
 
 function K(e) {
@@ -272,7 +272,7 @@ let J = new Q(Chunk570140.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_START: V,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: H,
   GUILD_SOUNDBOARD_SOUNDS_UPDATE: k,
-  USER_SOUNDBOARD_SET_VOLUME: W,
+  USER_SOUNDBOARD_SET_VOLUME: Y,
   VOICE_CHANNEL_SELECT: D,
   USER_SETTINGS_PROTO_UPDATE: z,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS: U,

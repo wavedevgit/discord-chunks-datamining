@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   $5: () => Q,
-  I8: () => W,
+  I8: () => Y,
   Kt: () => U,
   Lj: () => N,
-  RW: () => Y,
+  RW: () => W,
   Y3: () => X,
   Yt: () => P,
   _I: () => x,
@@ -247,9 +247,9 @@ let Z = () => {
   },
   V = e => !!Z() && null != e && X(d.Z.getChannel(e)),
   H = e => j() && V(e),
-  Y = e => !!H(e) && ((0, g.mN)(E.L0.NSFW_VOICE_CHANNEL), true);
+  W = e => !!H(e) && ((0, g.mN)(E.L0.NSFW_VOICE_CHANNEL), true);
 
-function W(e, t, n) {
+function Y(e, t, n) {
   if (D(e)) return void(0, g.mN)(E.L0.ACCESS_LARGE_GUILD_UNDERAGE);
   if (F(e)) {
     let e = null != n && N.has(n) ? n : E.L0.NSFW_SERVER;

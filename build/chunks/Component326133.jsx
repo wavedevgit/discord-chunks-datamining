@@ -96,13 +96,13 @@ let P = 490,
       onVisibilityChange: F,
       editorScrollerRef: V,
       barsHeight: H
-    } = e, Y = (0, h.Dt)(), W = (0, l.e7)([E.Z], () => {
+    } = e, W = (0, h.Dt)(), Y = (0, l.e7)([E.Z], () => {
       var e;
       return null != (e = E.Z.getGuild(G.guild_id)) ? e : null
     }, [G.guild_id]), K = i.useRef(null), [z, q, X] = (0, O.Z)(C(S({}, e), {
-      guild: W
+      guild: Y
     }), t, K), Q = (null == (n = B.autocomplete) ? true : n.forceChatLayer) ? g.ZP : m.ZP, J = (0, _.DJ)(z.selectedIndex);
-    (0, p.KR)(Y, z.isVisible, J);
+    (0, p.KR)(W, z.isVisible, J);
     let $ = (0, y.Z)({
         editorHeight: Z,
         type: B,
@@ -122,7 +122,7 @@ let P = 490,
       results: z.query.results,
       selectedIndex: z.selectedIndex,
       channel: G,
-      guild: W,
+      guild: Y,
       query: z.query.queryText,
       options: z.query.options,
       onHover: e => q.onResultHover(e),
@@ -142,7 +142,7 @@ let P = 490,
       eo = Math.min(.5 * window.innerHeight, ea);
     ei = Math.min(window.innerHeight - x - eo - (null != H ? H : 0), ei);
     let es = (0, r.jsx)(_.ZP, {
-      id: Y,
+      id: W,
       className: o()(I.autocomplete, er),
       innerClassName: I.autocompleteInner,
       onMouseDown: e => e.preventDefault(),
@@ -154,7 +154,7 @@ let P = 490,
               ref: t
             } = e, n = N(e, ["ref"]);
             return (0, r.jsx)(c.h21, C(S({
-              id: Y,
+              id: W,
               ref: e => {
                 var n;
                 t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null, K.current = e
@@ -167,7 +167,7 @@ let P = 490,
                 maxHeight: ei
               },
               role: "listbox",
-              "aria-labelledby": (0, _.rp)(Y),
+              "aria-labelledby": (0, _.rp)(W),
               children: en
             }))
           }

@@ -85,8 +85,8 @@ function Z(e, t) {
 let F = new Chunk710845.Z("RunningGameStore"),
   V = "RunningGameStore",
   H = false,
-  Y = "4294967293",
-  W = [],
+  W = "4294967293",
+  Y = [],
   K = [{
     executables: [{
       os: "win32",
@@ -502,14 +502,14 @@ function eH(e) {
   ec = t, eu = null
 }
 
-function eY(e) {
+function eW(e) {
   let {
     pid: t
   } = e;
   eu = t, ec = null
 }
 
-function eW() {
+function eY() {
   ec = null
 }
 
@@ -610,7 +610,7 @@ function e3(e) {
 }
 
 function e2() {
-  Chunk353926.Z.hasLoadedExperiments && W.length > 0 && (eU(W), W = [])
+  Chunk353926.Z.hasLoadedExperiments && Y.length > 0 && (eU(Y), Y = [])
 }
 
 function e4(e) {
@@ -691,7 +691,7 @@ function e4(e) {
         let e = t[a],
           s = T.Z.getGameByName(o.name),
           l = T.Z.getGameByName(e.name),
-          c = null != (n = (null == e ? true : e.id) !== Y ? null == e ? true : e.id : null == l ? true : l.id) ? n : "";
+          c = null != (n = (null == e ? true : e.id) !== W ? null == e ? true : e.id : null == l ? true : l.id) ? n : "";
         C.default.track(k.rMx.GAME_DETECTION_COMPARISON, {
           game_platform: k.M7m.DESKTOP,
           detection_method: "process_observer_v2",
@@ -750,7 +750,7 @@ class e5 extends(i = Chunk442837.ZP.Store) {
         (0, I.le)(e) || (ea.gameOverrides[t] = e)
       }), ea.enableOverlay = null != (n = Chunk392711.enableOverlay) ? require : {}, ea.enableOverlayV3 = null != (r = Chunk392711.enableOverlayV3) ? r : {}, ea.enableDetection = null != (i = Chunk392711.enableDetection) ? i : {}, ek(), Array.isArray(Chunk392711.gamesSeen))
       for (let e of Chunk392711.gamesSeen) "number" == typeof module.id && (module.nativeProcessObserverId = module.id, delete module.id, s = true);
-    this.waitFor(Chunk417363.Z, Chunk353926.Z, Chunk77498.Z, Chunk283595.Z), W = Chunk392711.gamesSeen.filter(e => !(0, I.le)(e)), this.syncWith([Chunk353926.Z], e2), this.syncWith([Chunk283595.Z, Chunk77498.Z, Chunk417363.Z], o().throttle(eM, 1e3)), Chunk913527 && ew()
+    this.waitFor(Chunk417363.Z, Chunk353926.Z, Chunk77498.Z, Chunk283595.Z), Y = Chunk392711.gamesSeen.filter(e => !(0, I.le)(e)), this.syncWith([Chunk353926.Z], e2), this.syncWith([Chunk283595.Z, Chunk77498.Z, Chunk417363.Z], o().throttle(eM, 1e3)), Chunk913527 && ew()
   }
   getVisibleGame() {
     return null == et || eD(et) ? et : null
@@ -805,7 +805,7 @@ class e5 extends(i = Chunk442837.ZP.Store) {
     return $.filter(e => e.hidden || null == e.id).filter(e => true === ea.gameOverrides[eS(e)])
   }
   isGamesSeenLoaded() {
-    return 0 === W.length
+    return 0 === Y.length
   }
   getGamesSeen(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
@@ -872,8 +872,8 @@ let e8 = new e5(Chunk570140.Z, {
     CANDIDATE_GAMES_CHANGE: eF,
     PERMISSION_CLEAR_PTT_ADMIN_WARNING: eV,
     PERMISSION_REQUEST_ELEVATED_PROCESS: eH,
-    PERMISSION_CLEAR_ELEVATED_PROCESS: eW,
-    PERMISSION_CONTINUE_NONELEVATED_PROCESS: eY,
+    PERMISSION_CLEAR_ELEVATED_PROCESS: eY,
+    PERMISSION_CONTINUE_NONELEVATED_PROCESS: eW,
     RUNNING_GAME_ADD_OVERRIDE: eK,
     RUNNING_GAME_TOGGLE_OVERLAY: eJ,
     RUNNING_GAME_TOGGLE_DETECTION: e$,

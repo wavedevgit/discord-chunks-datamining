@@ -118,13 +118,13 @@ let eu = (e, t) => {
       isBurstReaction: d
     } = e, f = (0, u.e7)([O.ZP], () => O.ZP.getDisambiguatedEmojiContext(l), [l]), _ = i.useCallback((e, r) => {
       switch (e.type) {
-        case Y.ld.CREATE_EMOJI:
+        case W.ld.CREATE_EMOJI:
           a({
             emoji: true,
             willClose: true
           }), R.Z.open(e.guildId, Q.pNK.EMOJI);
           return;
-        case Y.ld.EMOJI: {
+        case W.ld.EMOJI: {
           if (null != e.emoji && r.altKey) return void(f.isFavoriteEmojiWithoutFetchingLatest(e.emoji) ? (0, p.Xe)(e.emoji) : ((0, U.J1)({
             emoji: e.emoji,
             location: ei(en({}, t), {
@@ -261,7 +261,7 @@ let eu = (e, t) => {
       eV = i.useRef(null);
     null == c && null != ek && (c = ek);
     let eH = null != (a = null != (n = null == c ? true : c.getGuildId()) ? n : f) ? a : null,
-      [eY, eW] = i.useState(false),
+      [eW, eY] = i.useState(false),
       eK = x.default.getCurrentUser(),
       ez = (0, k.I5)(eK);
     i.useImperativeHandle(t, () => ({
@@ -295,7 +295,7 @@ let eu = (e, t) => {
       sectionDescriptors: tt,
       emojiGrid: tn,
       columnCounts: tr
-    } = (0, Y.YH)({
+    } = (0, W.YH)({
       gridWidth: e9,
       channel: c,
       includeCreateEmojiButton: et,
@@ -311,18 +311,18 @@ let eu = (e, t) => {
     } = (0, B.Z)(eH, l);
     (0, G.b)({
       intention: l,
-      isBurstReaction: eY,
+      isBurstReaction: eW,
       analyticsObject: eJ
     });
     let ta = i.useCallback(() => {
         let e = ti.length > 0 ? ti[0].id : null;
         (0, I.pr)(eH, e), (0, G.Z)({
           intention: l,
-          isBurstReaction: eY,
+          isBurstReaction: eW,
           analyticsObject: eJ
         })
-      }, [ti, eH, l, eY, eJ]),
-      to = (0, Y.rf)({
+      }, [ti, eH, l, eW, eJ]),
+      to = (0, W.rf)({
         pickerIntention: l,
         selectedChannel: c,
         closePopout: p,
@@ -348,7 +348,7 @@ let eu = (e, t) => {
             subCategory: e.subCategory,
             position: e.columnIndex + 1,
             newlyAddedHighlight: e.subCategory === X.t0.NEWLY_ADDED_EMOJI && v.Z.isNewerThanLastSeen(eH, e.emoji.id),
-            isBurstReaction: eY
+            isBurstReaction: eW
           })
         },
         trackEmojiFavorited: e => {
@@ -377,7 +377,7 @@ let eu = (e, t) => {
         emojiGrid: tn,
         emojiList: eF,
         channelGuildId: eH,
-        isBurstReaction: eY
+        isBurstReaction: eW
       });
     ef(eu, eF), e_(eu, e2, eV, ex), i.useEffect(() => {
       eE || (0, S.ql)("")
@@ -402,7 +402,7 @@ let eu = (e, t) => {
     }, [eB, e1, e5, e4, l]);
     let t_ = null != eI ? eI : R ? "div" : _.VqE,
       tp = null != e9;
-    if ((null == ej ? true : ej.type) === Y.Bg.PREMIUM) {
+    if ((null == ej ? true : ej.type) === W.Bg.PREMIUM) {
       let e = D.p.NONE;
       2 === j ? e = D.p.PARENT_CONTAINER : 1 === j && (e = D.p.TAB_PARENT_CONTAINER), s = (0, r.jsx)(q.Z, {
         onLearnMore: ts,
@@ -413,21 +413,21 @@ let eu = (e, t) => {
         channel: c,
         containerContext: e
       })
-    } else(null == ej ? true : ej.type) === Y.Bg.ROLE_SUBSCRIPTION ? s = (0, r.jsx)(N.Z, {
+    } else(null == ej ? true : ej.type) === W.Bg.ROLE_SUBSCRIPTION ? s = (0, r.jsx)(N.Z, {
       onClose: () => eU(null),
       guildId: ej.guildId,
       emojiId: ej.emojiId
-    }) : eY && !ez && (s = (0, r.jsx)(Z.Z, {
-      onDismiss: () => eW(false)
+    }) : eW && !ez && (s = (0, r.jsx)(Z.Z, {
+      onDismiss: () => eY(false)
     }));
     let th = (e, t) => {
         to(e, ei(en({}, t), {
-          isBurst: eY
+          isBurst: eW
         }))
       },
       tm = () => {
         var e;
-        eW(!eY), null == (e = eV.current) || e.focus()
+        eY(!eW), null == (e = eV.current) || e.focus()
       },
       tg = (0, r.jsx)(H.Z, {
         channel: c,
@@ -442,7 +442,7 @@ let eu = (e, t) => {
         accessory: eM,
         headerClassName: ey,
         diversitySurrogate: e2,
-        isBurstReaction: eY,
+        isBurstReaction: eW,
         onBurstReactionToggle: tm,
         renderHeader: eA,
         showAddEmojiButton: eD
@@ -456,7 +456,7 @@ let eu = (e, t) => {
         role: R ? "tabpanel" : true,
         className: o()(ee.wrapper, {
           [ee.emojiPickerHasTabWrapper]: R,
-          [ee.isBurstReactionPicker]: eY && ez
+          [ee.isBurstReactionPicker]: eW && ez
         }),
         children: [R ? null : tg, (0, r.jsxs)("div", {
           className: o()(ee.emojiPicker, eb),
@@ -502,11 +502,11 @@ let eu = (e, t) => {
                 channelGuildId: eH,
                 channelId: null == c ? true : c.id,
                 messageId: eS,
-                isBurstReaction: eY,
+                isBurstReaction: eW,
                 listHeaderClassName: eC
               }) : null
             }))]
-          }), (0, r.jsx)(W.k, {
+          }), (0, r.jsx)(Y.k, {
             emojiGrid: tn,
             className: ee.inspector,
             guildId: eH,

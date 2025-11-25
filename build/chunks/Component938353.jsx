@@ -378,7 +378,7 @@ class tn extends(r = Chunk473749.Component) {
       channel: l,
       forceAddReactions: c
     } = this.props;
-    return n ? null : (0, i.jsx)(eY.Z, {
+    return n ? null : (0, i.jsx)(eW.Z, {
       message: e,
       channel: l,
       disableReactionCreates: t,
@@ -691,10 +691,10 @@ class tn extends(r = Chunk473749.Component) {
     })
   }
   renderEditedTag(e, t) {
-    return (0, i.jsx)(eW.Z, {
+    return (0, i.jsx)(eY.Z, {
       message: e,
       compact: t,
-      location: eW.H.AFTER_ACCESSORIES
+      location: eY.H.AFTER_ACCESSORIES
     })
   }
   render() {
@@ -758,9 +758,9 @@ class tn extends(r = Chunk473749.Component) {
           shouldAgeVerify: null != _ && _
         }, n))
       }, e.id)
-    }), e0(this, "renderEmbedTitle", (e, t) => e.type === eq.hBH.RICH ? W.Z.parseEmbedTitle(t, true, {
+    }), e0(this, "renderEmbedTitle", (e, t) => e.type === eq.hBH.RICH ? Y.Z.parseEmbedTitle(t, true, {
       channelId: this.props.channel.id
-    }) : t), e0(this, "renderEmbedDescription", (e, t, n) => e.type === eq.hBH.RICH ? W.Z.parse(t, true, {
+    }) : t), e0(this, "renderEmbedDescription", (e, t, n) => e.type === eq.hBH.RICH ? Y.Z.parse(t, true, {
       channelId: this.props.channel.id,
       allowLinks: true,
       allowEmojiLinks: true,
@@ -812,7 +812,7 @@ function tr(e) {
     communicationDisabled: v,
     isActiveChannelOrUnarchivableThread: I,
     isAutomodQuarantined: O
-  }), D = (0, Y.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), w = (0, q.Z)(null == n ? true : n.id), L = (0, J.Z)(r), x = (0, P.v)(r), M = (0, eN._)(n), U = (0, eT.ro)(r.id, r.channel_id), G = (0, N.m8)();
+  }), D = (0, W.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), w = (0, q.Z)(null == n ? true : n.id), L = (0, J.Z)(r), x = (0, P.v)(r), M = (0, eN._)(n), U = (0, eT.ro)(r.id, r.channel_id), G = (0, N.m8)();
   return (0, i.jsx)(tn, e2(e1(e2(e1({
     canSuppressEmbeds: T,
     canDeleteAttachments: S
@@ -857,7 +857,7 @@ let ti = e => {
     f = ed.RS.useSetting(),
     _ = ed.NA.useSetting(),
     p = ed.QK.useSetting(),
-    h = (0, Y.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()),
+    h = (0, W.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()),
     m = (0, q.Z)(null == r ? true : r.id),
     g = (0, P.v)(n),
     E = (0, eT.ro)(n.id, n.channel_id),

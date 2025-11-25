@@ -235,7 +235,7 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     id: t,
     channelId: n
@@ -250,7 +250,7 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   let {
     ids: t,
     channelId: n
@@ -334,7 +334,7 @@ let X = new q(Chunk570140.Z, {
   CHANNEL_DELETE: B,
   MESSAGE_CREATE: F,
   MESSAGE_UPDATE: H,
-  MESSAGE_DELETE: Y,
-  MESSAGE_DELETE_BULK: W,
+  MESSAGE_DELETE: W,
+  MESSAGE_DELETE_BULK: Y,
   LOAD_MESSAGES_SUCCESS: K
 })

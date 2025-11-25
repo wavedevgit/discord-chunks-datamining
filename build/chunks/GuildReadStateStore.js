@@ -149,7 +149,7 @@ function V(e, t) {
       } : delete i.mentionCounts[t.id]
     }), i.unreadByType[I.W.CHANNEL] = a, i.unreadByType[I.W.CHANNEL] !== r.unreadByType[I.W.CHANNEL] && !i.unreadByType[I.W.CHANNEL]) {
     let e = _.Z.getChannel(r.unreadChannelId);
-    if (!(null != e && !t.includes(e.id) && g.ZP.hasUnread(e.id) && x(e))) return Y(n);
+    if (!(null != e && !t.includes(e.id) && g.ZP.hasUnread(e.id) && x(e))) return W(n);
     null != n && N.add(n), i.unreadByType[I.W.CHANNEL] = true
   }
   return F(n, i, r)
@@ -162,7 +162,7 @@ function H(e, t) {
   return r.unreadByType[I.W.GUILD_EVENT] = U(e, t), F(e, r, n)
 }
 
-function Y(e, t) {
+function W(e, t) {
   let n = j(e),
     r = P(n);
   if (null == n) {
@@ -216,17 +216,17 @@ function Y(e, t) {
   return (r.unread !== i.unread || r.highImportanceMentionCount !== i.highImportanceMentionCount || r.lowImportanceMentionCount !== i.lowImportanceMentionCount) && (C[null != n ? n : A] = r, null != n && (r.unread ? N.add(n) : N.delete(n)), R++, w(null != n ? n : A), Z(r, i), true)
 }
 
-function W(e) {
+function Y(e) {
   let {
     guilds: t
   } = e;
-  C = {}, R = 0, N = new Set, Y(null);
+  C = {}, R = 0, N = new Set, W(null);
   let {
     length: n
   } = t;
   for (let e = 0; e < n; e++) {
     let n = t[e];
-    null != n && Y(n.properties.id)
+    null != n && W(n.properties.id)
   }
 }
 
@@ -244,18 +244,18 @@ function K(e) {
           var t;
           i.add(null == (t = _.Z.getChannel(e.id)) ? true : t.guild_id)
         } else i.add(e.id)
-    }), Y(null), t)) Y(e.id, r ? i.has(e.id) : true)
+    }), W(null), t)) W(e.id, r ? i.has(e.id) : true)
 }
 
 function z() {
-  for (let e of (C = {}, N = new Set, Y(null), Object.values(Chunk430824.Z.getGuildIds()))) Y(module)
+  for (let e of (C = {}, N = new Set, W(null), Object.values(Chunk430824.Z.getGuildIds()))) W(module)
 }
 
 function q(e) {
   let {
     guild: t
   } = e;
-  return Y(t.id)
+  return W(t.id)
 }
 
 function X(e) {
@@ -285,7 +285,7 @@ function $(e) {
     user: t,
     guildId: n
   } = e;
-  return t.id === f.default.getId() && Y(n)
+  return t.id === f.default.getId() && W(n)
 }
 
 function ee(e) {
@@ -401,14 +401,14 @@ function ep(e) {
   let {
     guildId: t
   } = e;
-  return Y(t)
+  return W(t)
 }
 
 function eh(e) {
   let {
     guildId: t
   } = e;
-  return Y(t)
+  return W(t)
 }
 
 function em(e) {
@@ -418,7 +418,7 @@ function em(e) {
     var t;
     return null != (t = e.guild_id) ? t : A
   }));
-  return d.default.keys(C).reduce((e, t) => n.has(t) && Y(t) || e, false)
+  return d.default.keys(C).reduce((e, t) => n.has(t) && W(t) || e, false)
 }
 
 function eg() {
@@ -429,7 +429,7 @@ function eE(e) {
   let {
     guildId: t
   } = e;
-  return Y(t)
+  return W(t)
 }
 
 function eb(e) {
@@ -524,7 +524,7 @@ class ey extends Chunk750041.Z {
   constructor() {
     super({
       CONNECTION_OPEN: K,
-      OVERLAY_INITIALIZE: W,
+      OVERLAY_INITIALIZE: Y,
       CACHE_LOADED_LAZY: () => this.loadCache(),
       GUILD_CREATE: q,
       GUILD_DELETE: X,

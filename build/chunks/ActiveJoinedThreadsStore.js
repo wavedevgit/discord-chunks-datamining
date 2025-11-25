@@ -251,11 +251,11 @@ function H() {
   x()
 }
 
-function Y(e) {
+function W(e) {
   if (e.channels.length > 0) return w(e.guildId)
 }
 
-function W(e) {
+function Y(e) {
   let {
     guild: t
   } = e;
@@ -419,7 +419,7 @@ let eu = new ec(Chunk570140.Z, {
   LOAD_ARCHIVED_THREADS_SUCCESS: D,
   SEARCH_MESSAGES_SUCCESS: D,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: D,
-  GUILD_CREATE: W,
+  GUILD_CREATE: Y,
   GUILD_DELETE: D,
   CURRENT_USER_UPDATE: D,
   THREAD_CREATE: U,
@@ -437,7 +437,7 @@ let eu = new ec(Chunk570140.Z, {
   CHANNEL_ACK: V,
   CHANNEL_LOCAL_ACK: V,
   CHANNEL_SELECT: z,
-  PASSIVE_UPDATE_V2: Y,
+  PASSIVE_UPDATE_V2: W,
   WINDOW_FOCUS: H,
   UPDATE_CHANNEL_DIMENSIONS: H,
   TRY_ACK: H,

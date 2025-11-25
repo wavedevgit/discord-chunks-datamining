@@ -5,7 +5,7 @@ require.d(exports, {
   $Z: () => B,
   Cp: () => Z,
   F_: () => k,
-  Se: () => Y,
+  Se: () => W,
   ZN: () => F,
   tF: () => H,
   yC: () => V
@@ -191,7 +191,7 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let t, E = arguments.length > 1 && true !== arguments[1] && arguments[1];
   G(), (0, r.pTH)(), U(C.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
   let {

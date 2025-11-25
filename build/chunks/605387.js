@@ -802,17 +802,17 @@ var t = function() {
       var Z = 4 * M,
         F = 4;
       if (U <= 256 && false == u) {
-        for (var V = new Uint8Array((Z = Math.ceil(p * M / 8)) * G), H = S[m], Y = 0; Y < G; Y++) {
-          var y = Y * Z,
-            W = Y * M;
+        for (var V = new Uint8Array((Z = Math.ceil(p * M / 8)) * G), H = S[m], W = 0; W < G; W++) {
+          var y = W * Z,
+            Y = W * M;
           if (8 == p)
-            for (var K = 0; K < M; K++) V[y + K] = H[W + K];
+            for (var K = 0; K < M; K++) V[y + K] = H[Y + K];
           else if (4 == p)
-            for (var K = 0; K < M; K++) V[y + (K >> 1)] |= H[W + K] << 4 - (1 & K) * 4;
+            for (var K = 0; K < M; K++) V[y + (K >> 1)] |= H[Y + K] << 4 - (1 & K) * 4;
           else if (2 == p)
-            for (var K = 0; K < M; K++) V[y + (K >> 2)] |= H[W + K] << 6 - (3 & K) * 2;
+            for (var K = 0; K < M; K++) V[y + (K >> 2)] |= H[Y + K] << 6 - (3 & K) * 2;
           else if (1 == p)
-            for (var K = 0; K < M; K++) V[y + (K >> 3)] |= H[W + K] << 7 - (7 & K) * 1
+            for (var K = 0; K < M; K++) V[y + (K >> 3)] |= H[Y + K] << 7 - (7 & K) * 1
         }
         B = V, f = 3, F = 1
       } else if (false == O && 1 == v.length) {

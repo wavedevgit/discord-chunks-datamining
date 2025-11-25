@@ -7,12 +7,12 @@ require.d(exports, {
   C: () => E,
   D: () => d,
   E: () => h,
-  a: () => Y,
+  a: () => W,
   b: () => p,
   d: () => _,
   e: () => F,
   i: () => B,
-  r: () => W,
+  r: () => Y,
   s: () => e$
 });
 var Chunk555256 = require("./555256.js"),
@@ -315,7 +315,7 @@ let C = async (e, t, r) => {
       let e = document.createElement("script");
       return window.UserLeap.nonce && e.setAttribute("nonce", window.UserLeap.nonce), e.id = b, e
     }(),
-    Y = () => {
+    W = () => {
       window.UserLeap.container && Object.assign(window.UserLeap.container.style, {
         display: "flex"
       })
@@ -324,9 +324,9 @@ let C = async (e, t, r) => {
     let {
       default: e
     } = await n.e("47832").then(n.bind(n, 773341));
-    e.configure(Z), U && window.UserLeap.container && Y()
+    e.configure(Z), U && window.UserLeap.container && W()
   } else F && (H.src = F, U && H.addEventListener("load", () => {
-    window.UserLeap.container && Y()
+    window.UserLeap.container && W()
   }), null == j || j.addEventListener("error", e => {
     e.target instanceof HTMLScriptElement && e.target.src === F && window.UserLeap.reportError("loadFrameScript", Error("Frame script failed to load"))
   }, {
@@ -334,13 +334,13 @@ let C = async (e, t, r) => {
     once: true
   }));
   null == M || M.appendChild(H);
-  let W = {
+  let Y = {
     success: true,
     surveyState: "ready",
     surveyId: O,
     responseGroupUid: y
   };
-  return window.UserLeap.isMobileSDK && c && (W.delay = c), W
+  return window.UserLeap.isMobileSDK && c && (Y.delay = c), Y
 };
 
 function N(e) {
@@ -549,7 +549,7 @@ let D = "0px",
     let r = getComputedStyle(n);
     return parseFloat(r.paddingLeft) + parseFloat(r.paddingRight) + (parseFloat(r.marginLeft) + parseFloat(r.marginRight)) + (parseFloat(r.borderLeftWidth) + parseFloat(r.borderRightWidth))
   },
-  Y = (e, t, n) => {
+  W = (e, t, n) => {
     let r = e.querySelector(".ul-card__container"),
       i = e.querySelector(".ul-app"),
       a = 600,
@@ -578,7 +578,7 @@ let D = "0px",
     }
     return [a + 1, o, V(s, e)]
   },
-  W = e => {
+  Y = e => {
     let t = e.querySelector(".ul-card__container");
     t && (t.scrollTop = 0)
   },
@@ -969,7 +969,7 @@ function eG(e) {
   }), eU = window.location.href;
   let l = eV().trackStartUrl,
     c = l ? String(l) : null;
-  r && eY(window.location.href), i && (eF(), eZ()), K() && (() => {
+  r && eW(window.location.href), i && (eF(), eZ()), K() && (() => {
     if (ei()) return;
     let e = z();
     e && ((0, s.c)(et) || (e.remove(), et = null, J = null))
@@ -1020,7 +1020,7 @@ function eH() {
   })
 }
 
-function eY(e, t, n, r) {
+function eW(e, t, n, r) {
   var i, a;
   try {
     if (e.endsWith("mock_snippet.html")) return;
@@ -1051,7 +1051,7 @@ function eY(e, t, n, r) {
   }
 }
 
-function eW() {
+function eY() {
   let e, t, n = "Backbone" in window && window.Backbone && window.Backbone.history ? window.Backbone.history : window.history;
   "pushState" in require && (e = require.pushState, require.pushState = function(...t) {
     let n = e.apply(this, t),
@@ -1126,7 +1126,7 @@ function ez(e) {
         r = e[t -= 1];
       e[t] = e[n], e[n] = r
     }
-  }(t), (t || n || r) && (eW(), eG())
+  }(t), (t || n || r) && (eY(), eG())
 }
 let eq = function(e) {
   if (!window.UserLeap) return;
@@ -1412,7 +1412,7 @@ let eq = function(e) {
     }),
     identifyAndTrack: async e => await t(e),
     trackPageView(e, t, n, r = true) {
-      o = e, eY(e, t, n, r)
+      o = e, eW(e, t, n, r)
     },
     applyFeedbackStyles({
       button: e = "",
@@ -1441,7 +1441,7 @@ let eq = function(e) {
         c = "web" === o["userleap-platform"];
       if (!window.UserLeap.frameId) return;
       let u = document.getElementById(window.UserLeap.frameId);
-      u && (window.UserLeap.useMobileStyling && (null != (n = window.UserLeap.windowDimensions) && n.width && (u.style.width = `${window.UserLeap.windowDimensions.width}px`), null != (r = window.UserLeap.windowDimensions) && r.height && (u.style.maxHeight = window.UserLeap.windowDimensions.height - 20 + "px"), u.contentDocument && (u.style.height = String(Y(u.contentDocument, c && !l, (0, s.h)(o))[0]) + "px")), s.e.emit(s.S.SurveyDimensions, {
+      u && (window.UserLeap.useMobileStyling && (null != (n = window.UserLeap.windowDimensions) && n.width && (u.style.width = `${window.UserLeap.windowDimensions.width}px`), null != (r = window.UserLeap.windowDimensions) && r.height && (u.style.maxHeight = window.UserLeap.windowDimensions.height - 20 + "px"), u.contentDocument && (u.style.height = String(W(u.contentDocument, c && !l, (0, s.h)(o))[0]) + "px")), s.e.emit(s.S.SurveyDimensions, {
         name: s.S.SurveyDimensions,
         contentFrameWidth: u.clientWidth,
         contentFrameHeight: u.clientHeight,

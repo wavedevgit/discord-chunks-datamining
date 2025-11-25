@@ -67,7 +67,7 @@ function H(e) {
   return e
 }
 
-function Y(e, t) {
+function W(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,8 +78,8 @@ function Y(e, t) {
   return n
 }
 
-function W(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
+function Y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -98,8 +98,8 @@ function K(e) {
       onInvoiceError: Z,
       planGroup: V,
       currencies: H,
-      onCurrencyChange: Y,
-      hasOpenInvoice: W,
+      onCurrencyChange: W,
+      hasOpenInvoice: Y,
       purchaseState: K,
       handleClose: $
     } = e,
@@ -136,11 +136,11 @@ function K(e) {
       currentSubscription: n,
       defaultPlanId: et
     }), [ee, n, et, en]);
-  t = W || eh ? B.intl.string(B.t.nyzoFb) : (0, R.PV)(D) ? (0, R.W_)(n, ec) : B.intl.formatToPlainString(B.t["sBpy9/"], {
+  t = Y || eh ? B.intl.string(B.t.nyzoFb) : (0, R.PV)(D) ? (0, R.W_)(n, ec) : B.intl.formatToPlainString(B.t["sBpy9/"], {
     planName: ec.name
   });
   let eg = null;
-  null != n && (eg = W ? (0, r.jsx)(z, {
+  null != n && (eg = Y ? (0, r.jsx)(z, {
     premiumSubscription: n,
     onInvoiceError: Z,
     priceOptions: s,
@@ -211,7 +211,7 @@ function K(e) {
         label: B.intl.string(B.t["/AAR02"]),
         selectedCurrency: s.currency,
         currencies: H,
-        onChange: Y,
+        onChange: W,
         disabled: e_
       })
     }), (0, r.jsx)(x.Z, {
@@ -566,10 +566,10 @@ let $ = e => {
     preventFetch: i,
     analyticsLocations: a,
     analyticsLocation: m.Z.BILLING_SWITCH_PLAN_IMMEDIATE_PRORATED_INVOICE_PREVIEW
-  }, [s, l] = (0, D.ED)(W(H({}, o), {
+  }, [s, l] = (0, D.ED)(Y(H({}, o), {
     renewal: false,
     applyEntitlements: true
-  })), [c, u] = (0, D.ED)(W(H({}, o), {
+  })), [c, u] = (0, D.ED)(Y(H({}, o), {
     renewal: true
   }));
   return {

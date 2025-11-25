@@ -221,13 +221,13 @@ function G(e) {
         subscriptionPeriodEnd: en,
         renewalPlan: G
       })]
-    }), (0, r.jsx)(W, {
+    }), (0, r.jsx)(Y, {
       subscription: p,
       currentInvoicePreview: $,
       loadingState: b,
       isDeleted: q,
       isCancelled: U
-    }), null != K && (null == x ? true : x.benefits) != null && x.benefits.length > 0 && (0, r.jsx)(Y, {
+    }), null != K && (null == x ? true : x.benefits) != null && x.benefits.length > 0 && (0, r.jsx)(W, {
       appId: K.id,
       listingBenefits: x.benefits
     })]
@@ -411,7 +411,7 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     appId: t,
     listingBenefits: n
@@ -445,7 +445,7 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   let {
     subscription: t,
     currentInvoicePreview: n,

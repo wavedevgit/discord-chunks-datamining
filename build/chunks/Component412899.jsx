@@ -98,8 +98,8 @@ function V(e, t) {
   return i
 }
 let H = 30,
-  Y = 4,
-  W = () => Promise.resolve();
+  W = 4,
+  Y = () => Promise.resolve();
 
 function K(e) {
   let {
@@ -176,8 +176,8 @@ let z = Chunk473749.forwardRef(function(e, t) {
     B = null != (s = E.colorString) ? s : U,
     V = null != (l = (0, f.wK)(B, .6)) ? l : true,
     H = p.Z.unsafe_rawColors.WHITE_500.css,
-    Y = (0, f._i)(B);
-  null != Y && .3 > (0, f.Bd)(Y) && (H = p.Z.unsafe_rawColors.PRIMARY_630.css), c = x ? (0, r.jsx)(y.Z, {
+    W = (0, f._i)(B);
+  null != W && .3 > (0, f.Bd)(W) && (H = p.Z.unsafe_rawColors.PRIMARY_630.css), c = x ? (0, r.jsx)(y.Z, {
     className: j.roleFlowerStar,
     iconClassName: d ? j.roleVerifiedIcon : true,
     color: B,
@@ -192,7 +192,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
     color: B,
     colors: L
   });
-  let W = i.useMemo(() => {
+  let Y = i.useMemo(() => {
     var t;
     return G({
       borderColor: T ? true : V
@@ -202,7 +202,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
     children: (0, r.jsxs)("div", Z(G({
       ref: t,
       className: o()(j.role, g),
-      style: W,
+      style: Y,
       onContextMenu: M,
       onMouseDown: C,
       "aria-label": E.name,
@@ -357,12 +357,12 @@ function Q(e) {
     if ("number" != typeof p) throw Error("Unexpected null width");
     let e = 0,
       t = 0,
-      n = p - H - Y;
+      n = p - H - W;
     for (let r = 0; r < R.length; r++) {
       let i = R[r],
         a = y.current[i.id];
       if (null != a) {
-        if ((t += a.offsetWidth + Y) > n) break;
+        if ((t += a.offsetWidth + W) > n) break;
         e++
       }
     }
@@ -376,8 +376,8 @@ function Q(e) {
     Q = (0, d.ZP)({
       id: K,
       isEnabled: true,
-      scrollToStart: W,
-      scrollToEnd: W,
+      scrollToStart: Y,
+      scrollToEnd: Y,
       wrap: true
     }),
     J = R.map(e => {

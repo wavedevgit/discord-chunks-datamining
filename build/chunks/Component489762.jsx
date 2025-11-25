@@ -81,8 +81,8 @@ function H(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
-  W = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_MEDIUM),
+let W = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
+  Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_MEDIUM),
   K = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_TOP),
   z = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_TOP_SEARCH_RESULTS),
   q = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_RIGHT),
@@ -197,8 +197,8 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         rowIndex: e,
         stickerClassName: G.sticker,
         stickerDescriptors: t,
-        stickerSize: n > Y ? ee : et,
-        preferAnimation: n <= W,
+        stickerSize: n > W ? ee : et,
+        preferAnimation: n <= Y,
         ownedStickerPacks: T,
         isDisplayingIndividualStickers: true,
         channel: S,
@@ -448,7 +448,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           renderSectionFooter: j,
           rowCount: O,
           rowCountBySection: v,
-          rowHeight: s > Y ? ei : ea,
+          rowHeight: s > W ? ei : ea,
           sectionHeaderHeight: V,
           sectionFooterHeight: Z,
           stickyHeaders: true,

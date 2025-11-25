@@ -2,8 +2,8 @@
 /** chunk id: 453473, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => Y,
-  P: () => W
+  K: () => W,
+  P: () => Y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -114,14 +114,14 @@ function H(e) {
       children: [(0, r.jsx)(y.h4, {
         icon: p.plf,
         title: M.intl.string(M.t["2pAkDA"])
-      }), (0, r.jsx)(Y, {
+      }), (0, r.jsx)(W, {
         closePopout: t
       })]
     })
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     closePopout: t
   } = e, n = (0, P.Z)();
@@ -138,7 +138,7 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   let {
     onOpen: t,
     onClose: n,

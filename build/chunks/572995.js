@@ -100,7 +100,7 @@ let ef = (e, t) => ec({
     },
     customThemes: {
       thumbnail: K.Z,
-      assetUrl: e ? W.Z : z.Z
+      assetUrl: e ? Y.Z : z.Z
     },
     displayNameStyles: {
       thumbnail: R.Z,
@@ -121,7 +121,7 @@ let ef = (e, t) => ec({
     },
     yourSpace: {
       thumbnail: H.Z,
-      assetUrl: e ? V.Z : Y.Z
+      assetUrl: e ? V.Z : W.Z
     },
     emojis: {
       thumbnail: w.Z,

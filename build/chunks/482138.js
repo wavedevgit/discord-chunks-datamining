@@ -43,8 +43,8 @@ var r, Chunk98405 = require("./98405.js"),
   F = Chunk46015("".slice),
   V = Chunk46015("".toLowerCase),
   H = Chunk46015([].unshift),
-  Y = "Invalid authority",
-  W = "Invalid scheme",
+  W = "Invalid authority",
+  Y = "Invalid scheme",
   K = "Invalid host",
   z = "Invalid port",
   q = /[a-z]/i,
@@ -243,7 +243,7 @@ eF.prototype = {
         case eO:
           if (a && x(q, a)) d += V(a), c = ev;
           else {
-            if (t) return W;
+            if (t) return Y;
             c = eI;
             continue
           }
@@ -258,13 +258,13 @@ eF.prototype = {
             }
             d = "", "file" === l.scheme ? c = ex : l.isSpecial() && n && n.scheme === l.scheme ? c = eT : l.isSpecial() ? c = eN : "/" === i[u + 1] ? (c = eS, u++) : (l.cannotBeABaseURL = true, U(l.path, ""), c = eG)
           } else {
-            if (t) return W;
+            if (t) return Y;
             d = "", c = eI, u = 0;
             continue
           }
           break;
         case eI:
-          if (!n || n.cannotBeABaseURL && "#" !== a) return W;
+          if (!n || n.cannotBeABaseURL && "#" !== a) return Y;
           if (n.cannotBeABaseURL && "#" === a) {
             l.scheme = n.scheme, l.path = m(n.path), l.query = n.query, l.fragment = "", l.cannotBeABaseURL = true, c = eZ;
             break
@@ -327,7 +327,7 @@ eF.prototype = {
             }
             d = ""
           } else if (a === r || "/" === a || "?" === a || "#" === a || "\\" === a && l.isSpecial()) {
-            if (f && "" === d) return Y;
+            if (f && "" === d) return W;
             u -= h(d).length + 1, d = "", c = eD
           } else d += a;
           break;
@@ -578,7 +578,7 @@ var eV = function(e) {
     a || (t.href = r.serialize(), t.origin = r.getOrigin(), t.protocol = r.getProtocol(), t.username = r.getUsername(), t.password = r.getPassword(), t.host = r.getHost(), t.hostname = r.getHostname(), t.port = r.getPort(), t.pathname = r.getPathname(), t.search = r.getSearch(), t.searchParams = r.getSearchParams(), t.hash = r.getHash())
   },
   eH = eV.prototype,
-  eY = function(e, t) {
+  eW = function(e, t) {
     return {
       get: function() {
         return S(this)[e]()
@@ -590,7 +590,7 @@ var eV = function(e) {
       enumerable: true
     }
   };
-if (Chunk507604 && (Chunk573078(eH, "href", eY("serialize", "setHref")), Chunk573078(eH, "origin", eY("getOrigin")), Chunk573078(eH, "protocol", eY("getProtocol", "setProtocol")), Chunk573078(eH, "username", eY("getUsername", "setUsername")), Chunk573078(eH, "password", eY("getPassword", "setPassword")), Chunk573078(eH, "host", eY("getHost", "setHost")), Chunk573078(eH, "hostname", eY("getHostname", "setHostname")), Chunk573078(eH, "port", eY("getPort", "setPort")), Chunk573078(eH, "pathname", eY("getPathname", "setPathname")), Chunk573078(eH, "search", eY("getSearch", "setSearch")), Chunk573078(eH, "searchParams", eY("getSearchParams")), Chunk573078(eH, "hash", eY("getHash", "setHash"))), Chunk556585(eH, "toJSON", function() {
+if (Chunk507604 && (Chunk573078(eH, "href", eW("serialize", "setHref")), Chunk573078(eH, "origin", eW("getOrigin")), Chunk573078(eH, "protocol", eW("getProtocol", "setProtocol")), Chunk573078(eH, "username", eW("getUsername", "setUsername")), Chunk573078(eH, "password", eW("getPassword", "setPassword")), Chunk573078(eH, "host", eW("getHost", "setHost")), Chunk573078(eH, "hostname", eW("getHostname", "setHostname")), Chunk573078(eH, "port", eW("getPort", "setPort")), Chunk573078(eH, "pathname", eW("getPathname", "setPathname")), Chunk573078(eH, "search", eW("getSearch", "setSearch")), Chunk573078(eH, "searchParams", eW("getSearchParams")), Chunk573078(eH, "hash", eW("getHash", "setHash"))), Chunk556585(eH, "toJSON", function() {
     return S(this).serialize()
   }, {
     enumerable: true
@@ -599,9 +599,9 @@ if (Chunk507604 && (Chunk573078(eH, "href", eY("serialize", "setHref")), Chunk57
   }, {
     enumerable: true
   }), N) {
-  var eW = N.createObjectURL,
+  var eY = N.createObjectURL,
     eK = N.revokeObjectURL;
-  eW && Chunk556585(eV, "createObjectURL", Chunk48657(eW, N)), eK && Chunk556585(eV, "revokeObjectURL", Chunk48657(eK, N))
+  eY && Chunk556585(eV, "createObjectURL", Chunk48657(eY, N)), eK && Chunk556585(eV, "revokeObjectURL", Chunk48657(eK, N))
 }
 Chunk25124(eV, "URL"), Chunk98405({
   global: true,

@@ -48,7 +48,7 @@ var r, Chunk512722 = require("./512722.js"),
   Chunk149203 = require("./149203.js"),
   Chunk526761 = require("./526761.js");
 
-function W(e, t, n) {
+function Y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -64,7 +64,7 @@ function K(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      W(e, t, n[t])
+      Y(e, t, n[t])
     })
   }
   return e
@@ -118,7 +118,7 @@ class J {
     return null == this._usableEmojis && (this._usableEmojis = s().sortBy(this.emojis.filter(e => this.isUsable(e)), e => e.name)), this._usableEmojis
   }
   constructor(e, t, n, r = false) {
-    W(this, "id", true), W(this, "_userId", true), W(this, "_emojis", null), W(this, "_emojiMap", true), W(this, "_emoticons", null), W(this, "_usableEmojis", null), W(this, "_canSeeServerSubIAP", false), this.id = e, this._userId = t, this._emojiMap = n, this._canSeeServerSubIAP = r
+    Y(this, "id", true), Y(this, "_userId", true), Y(this, "_emojis", null), Y(this, "_emojiMap", true), Y(this, "_emoticons", null), Y(this, "_usableEmojis", null), Y(this, "_canSeeServerSubIAP", false), this.id = e, this._userId = t, this._emojiMap = n, this._canSeeServerSubIAP = r
   }
 }
 let $ = 42,
@@ -322,7 +322,7 @@ class em {
     })
   }
   constructor(e) {
-    W(this, "favorites", null), W(this, "favoriteNamesAndIds", null), W(this, "topEmojis", null), W(this, "guildId", true), W(this, "escapedEmoticonNames", true), W(this, "disambiguatedEmoji", []), W(this, "emoticonRegex", null), W(this, "frequentlyUsed", null), W(this, "frequentlyUsedReactionEmojis", null), W(this, "frequentlyUsedReactionNamesAndIds", null), W(this, "unicodeAliases", {}), W(this, "customEmojis", {}), W(this, "groupedCustomEmojis", {}), W(this, "emoticonsByName", {}), W(this, "emojisByName", {}), W(this, "emojisById", {}), W(this, "newlyAddedEmoji", {}), W(this, "isFavoriteEmojiWithoutFetchingLatest", e => {
+    Y(this, "favorites", null), Y(this, "favoriteNamesAndIds", null), Y(this, "topEmojis", null), Y(this, "guildId", true), Y(this, "escapedEmoticonNames", true), Y(this, "disambiguatedEmoji", []), Y(this, "emoticonRegex", null), Y(this, "frequentlyUsed", null), Y(this, "frequentlyUsedReactionEmojis", null), Y(this, "frequentlyUsedReactionNamesAndIds", null), Y(this, "unicodeAliases", {}), Y(this, "customEmojis", {}), Y(this, "groupedCustomEmojis", {}), Y(this, "emoticonsByName", {}), Y(this, "emojisByName", {}), Y(this, "emojisById", {}), Y(this, "newlyAddedEmoji", {}), Y(this, "isFavoriteEmojiWithoutFetchingLatest", e => {
       var t;
       if (null == e) returnfalse;
       let {
@@ -371,7 +371,7 @@ class em {
     }), this.escapedEmoticonNames = n.join("|")
   }
 }
-W(em, "_lastInstance", null);
+Y(em, "_lastInstance", null);
 let eg = ep(em.resetFrequentlyUsed),
   eE = eh(em.resetFrequentlyUsedReactionEmojis);
 
@@ -454,9 +454,9 @@ function ew(e) {
 }
 
 function eL(e, t) {
-  if (s().isEmpty(e) && s().isEmpty(Q.pendingUsages) && T.Z.hasLoaded(Y.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+  if (s().isEmpty(e) && s().isEmpty(Q.pendingUsages) && T.Z.hasLoaded(W.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["thumbsup", "eyes", "laughing", "watermelon", "fork_and_knife", "yum", "weary", "tired_face", "poop", "100"]) eg.track(e);
-  if (s().isEmpty(t) && s().isEmpty(Q.emojiReactionPendingUsages) && T.Z.hasLoaded(Y.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+  if (s().isEmpty(t) && s().isEmpty(Q.emojiReactionPendingUsages) && T.Z.hasLoaded(W.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["100", "100", "thumbsup", "thumbsup", "thumbsdown", "thumbsdown", "heart", "point_up", "eyes", "weary", "laughing", "white_check_mark", "x"]) eE.track(e)
 }
 
@@ -481,7 +481,7 @@ function eM(e) {
     },
     wasSaved: n
   } = e;
-  if (g.Z.setEmojiLocale(I.default.locale), t !== Y.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
+  if (g.Z.setEmojiLocale(I.default.locale), t !== W.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
   Q.pendingUsages = [], Q.emojiReactionPendingUsages = []
 }
 
@@ -683,7 +683,7 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
     return null != t && t.favoriteEmojisWithoutFetchingLatest.length > 0
   }
 }
-W(eF, "displayName", "EmojiStore"), W(eF, "persistKey", "EmojiStoreV2"), W(eF, "migrations", [e => K({}, e)]);
+Y(eF, "displayName", "EmojiStore"), Y(eF, "persistKey", "EmojiStoreV2"), Y(eF, "migrations", [e => K({}, e)]);
 let eV = new eF(Chunk570140.Z, {
   LOGOUT: eS,
   BACKGROUND_SYNC: eA,

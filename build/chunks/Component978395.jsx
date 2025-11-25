@@ -52,9 +52,9 @@ function x(e) {
   } = (0, i.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), V = (0, o.vh)(t.id), H = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), Y = (0, f.b)({
+  })), V = (0, o.vh)(t.id), H = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), W = (0, f.b)({
     location: "UserProfilePopoutBody"
-  }), W = t.id === n.id, K = (0, _.Z)({
+  }), Y = t.id === n.id, K = (0, _.Z)({
     location: "UserProfilePopoutBody"
   }), z = (null == x ? true : x.widgets) != null && x.widgets.length > 0, q = K && z, X = (0, d.I5)(n);
   return (0, r.jsxs)(a.Ttm, {
@@ -101,7 +101,7 @@ function x(e) {
       })
     }, e.applicationId)), (0, r.jsx)(b.Z, {
       user: t
-    }), !W && (0, r.jsx)(R.Z, {
+    }), !Y && (0, r.jsx)(R.Z, {
       user: t,
       onOpenProfile: e => null == j ? true : j({
         section: e
@@ -128,10 +128,10 @@ function x(e) {
       user: t,
       widgets: null == x ? true : x.widgets,
       onOpenUserProfileModal: j
-    }), W && (0, r.jsx)(h.Z, {
+    }), Y && (0, r.jsx)(h.Z, {
       isPremiumUser: X,
       onInteraction: G
-    }), Y ? (0, r.jsx)(O.Z, {
+    }), W ? (0, r.jsx)(O.Z, {
       user: t,
       currentUser: n,
       guildId: null == M ? true : M.id,

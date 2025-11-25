@@ -2,7 +2,7 @@
 /** chunk id: 705262, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Yk: () => W,
+  Yk: () => Y,
   ZP: () => et,
   yH: () => V
 }), require("./314940.js"), require("./388685.js");
@@ -104,8 +104,8 @@ let H = Object.freeze({
     EDITOR: Chunk526761.fy.SLOW_USER_ACTION,
     SETTINGS: Chunk526761.fy.INFREQUENT_USER_ACTION
   }),
-  Y = Chunk473749.createContext({}),
-  W = e => {
+  W = Chunk473749.createContext({}),
+  Y = e => {
     let {
       isPersisted: t,
       themeName: n,
@@ -188,7 +188,7 @@ let H = Object.freeze({
       isCoachmark: s
     } = e, {
       type: l
-    } = i.useContext(Y), [c] = (0, o.Wu)([A.Z], () => [A.Z.isPreview]), u = (null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === D.Si.TIER_2;
+    } = i.useContext(W), [c] = (0, o.Wu)([A.Z], () => [A.Z.isPreview]), u = (null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === D.Si.TIER_2;
     return "EDITOR" === l && c && u ? (0, r.jsx)(E.ZP, {
       type: D.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       subscriptionTier: D.Si.TIER_2,
@@ -217,7 +217,7 @@ let H = Object.freeze({
     } = e, {
       type: a,
       delay: l
-    } = i.useContext(Y), {
+    } = i.useContext(W), {
       analyticsLocations: h
     } = (0, _.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [m, g] = (0, o.Wu)([A.Z], () => {
       var e;
@@ -227,7 +227,7 @@ let H = Object.freeze({
       (y === R.XV.length - 2 && "EDITOR" === a || g === s.Us.EASTER_EGG) && b(true)
     }, [y, a, g]);
     let T = (e, t) => {
-        if ((0, S.zO)(e.id), W({
+        if ((0, S.zO)(e.id), Y({
             isPersisted: !m,
             analyticsLocations: h,
             themeName: s.Us[e.id]
@@ -324,10 +324,10 @@ let H = Object.freeze({
       hideSystemSelector: n = false
     } = e, {
       delay: a
-    } = i.useContext(Y), {
+    } = i.useContext(W), {
       analyticsLocations: s
     } = (0, _.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, o.Wu)([y.Z, O.ZP, A.Z], () => [y.Z.theme, null == A.Z.gradientPreset && null == v.L1.getSetting().customUserThemeSettings, O.ZP.useSystemTheme === w.KW.ON]), p = e => {
-      (0, S.xs)(), W({
+      (0, S.xs)(), Y({
         isPersisted: true,
         analyticsLocations: s,
         themeName: "default ".concat(e)
@@ -408,7 +408,7 @@ let H = Object.freeze({
       type: t,
       delay: H[t]
     }), [t]);
-    return (0, r.jsx)(Y.Provider, {
+    return (0, r.jsx)(W.Provider, {
       value: u,
       children: (0, r.jsx)("div", B(U({
         ref: s

@@ -43,8 +43,8 @@ var Chunk127849 = require("./127849.js"),
   F = Chunk127849.Array,
   V = Chunk127849.RangeError,
   H = Chunk46015(Chunk760751),
-  Y = Chunk46015([].reverse),
-  W = Chunk125328.pack,
+  W = Chunk46015([].reverse),
+  Y = Chunk125328.pack,
   K = Chunk125328.unpack,
   z = function(e) {
     return [255 & e]
@@ -59,10 +59,10 @@ var Chunk127849 = require("./127849.js"),
     return e[3] << 24 | e[2] << 16 | e[1] << 8 | e[0]
   },
   J = function(e) {
-    return W(m(e), 23, 4)
+    return Y(m(e), 23, 4)
   },
   $ = function(e) {
-    return W(e, 52, 8)
+    return Y(e, 52, 8)
   },
   ee = function(e, t, n) {
     c(e[P], t, {
@@ -80,7 +80,7 @@ var Chunk127849 = require("./127849.js"),
     var s = i.bytes,
       l = a + i.byteOffset,
       c = O(s, l, l + t);
-    return o ? c : Y(c)
+    return o ? c : W(c)
   },
   en = function(e, t, n, r, i, a) {
     var o = x(e),

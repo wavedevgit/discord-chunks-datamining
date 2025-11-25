@@ -142,14 +142,14 @@ function H(e) {
   }))
 }
 
-function Y(e) {
+function W(e) {
   let {
     message: t
   } = e;
   (null == t ? true : t.nonce) != null && x.add(t.nonce)
 }
 
-function W(e) {
+function Y(e) {
   let {
     channelId: t,
     messageId: n
@@ -476,7 +476,7 @@ let em = new eh(Chunk570140.Z, {
   MESSAGE_REACTION_REMOVE_ALL: ec,
   MESSAGE_REACTION_REMOVE_EMOJI: eu,
   LOGOUT: ed,
-  UPLOAD_START: Y,
-  UPLOAD_FAIL: W,
+  UPLOAD_START: W,
+  UPLOAD_FAIL: Y,
   LOCAL_MESSAGE_CREATE: ep
 })

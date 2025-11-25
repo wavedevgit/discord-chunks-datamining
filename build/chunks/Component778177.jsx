@@ -82,9 +82,9 @@ function H(e, t) {
   }), e
 }
 
-function Y(e, t) {
+function W(e, t) {
   if (null == e) return {};
-  var n, r, i = W(e, t);
+  var n, r, i = Y(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -92,7 +92,7 @@ function Y(e, t) {
   return i
 }
 
-function W(e, t) {
+function Y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -225,7 +225,7 @@ function en(e) {
     searchContext: l,
     renderResult: c,
     group: u
-  } = e, d = Y(e, ["onSelect", "onFocus", "result", "showFilter", "searchContext", "renderResult", "group"]);
+  } = e, d = W(e, ["onSelect", "onFocus", "result", "showFilter", "searchContext", "renderResult", "group"]);
   let f = "",
     _ = i.useMemo(() => et(a.text), [a.text]).map(e => {
       let t = e.getFullMatch();
@@ -329,7 +329,7 @@ let er = {
           showFilter: s,
           searchContext: l
         } = e,
-        c = Y(e, ["result", "onSelect", "onFocus", "showFilter", "searchContext"]);
+        c = W(e, ["result", "onSelect", "onFocus", "showFilter", "searchContext"]);
       let u = n.token === U.dCx.FILTER_AUTHOR_TYPE ? [_.z.SEARCH_AUTHOR_TYPE_FILTER_NEW_BADGE] : [],
         [d, f] = (0, b.US)(u),
         p = d === _.z.SEARCH_AUTHOR_TYPE_FILTER_NEW_BADGE,

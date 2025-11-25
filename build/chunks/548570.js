@@ -82,7 +82,7 @@ function F(e, t) {
 let V = new Chunk710845.Z("GatewaySocket"),
   H = new Chunk610308.Z;
 
-function Y(e) {
+function W(e) {
   let {
     actuallySkipped: t,
     reason: n
@@ -110,7 +110,7 @@ function Y(e) {
   }, 200)
 }
 
-function W(e) {
+function Y(e) {
   let t, {
     gatewayURL: n,
     newCallback: r,
@@ -202,7 +202,7 @@ class ei extends Chunk183139.Z {
   _connect(e) {
     if (!this.willReconnect()) return void V.verbose("Skipping _connect because willReconnect is false");
     let t = M.a();
-    if ((t || !k.RZ()) && (V.info("Skipping _connect because socket is paused"), Y({
+    if ((t || !k.RZ()) && (V.info("Skipping _connect because socket is paused"), W({
         reason: e
       }), t)) return;
     this.connectionState = C.Z.CONNECTING, this.nextReconnectIsImmediate = false;
@@ -215,7 +215,7 @@ class ei extends Chunk183139.Z {
       this._handleClose(false, 0, "The connection timed out after ".concat(e, " ms - did not receive OP_HELLO in time.")), this.setResumeUrl(null)
     }, J);
     let s = new URL(i);
-    s.searchParams.append("encoding", r), s.searchParams.append("v", a.toString()), null != n && s.searchParams.append("compress", n), W({
+    s.searchParams.append("encoding", r), s.searchParams.append("v", a.toString()), null != n && s.searchParams.append("compress", n), Y({
       gatewayURL: s.toString(),
       newCallback: e => {
         this.webSocket = e, this.compressionHandler.bindWebSocket(e)
@@ -527,7 +527,7 @@ class ei extends Chunk183139.Z {
   }
   networkStateChange(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
-    k.RZ() || Y({
+    k.RZ() || W({
       reason: t,
       actuallySkipped: false
     }), this.expeditedHeartbeat(e, t, n, false)

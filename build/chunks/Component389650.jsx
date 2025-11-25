@@ -2,7 +2,7 @@
 /** chunk id: 389650, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => W
+  Z: () => Y
 }), require("./953529.js"), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -194,7 +194,7 @@ class H extends Chunk473749.PureComponent {
     })
   }
 }
-class Y extends Chunk473749.PureComponent {
+class W extends Chunk473749.PureComponent {
   componentDidMount() {
     Chunk660216.Z.enableAll(false)
   }
@@ -418,14 +418,14 @@ class Y extends Chunk473749.PureComponent {
   }
 }
 
-function W() {
+function Y() {
   let e = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getState()),
     t = (0, Chunk442837.e7)([Chunk131951.Z], () => (0, Chunk74299.Z)(Chunk131951.Z)),
     n = (0, Chunk442837.e7)([Chunk509140.Z], () => Chunk509140.Z.isSupported),
     i = (0, Chunk924557.w9)(),
     a = (0, Chunk924557.PP)(),
     o = (0, Chunk526665.wy)("UserSettingsKeybindsConnected");
-  return (0, Chunk54381.jsx)(Y, {
+  return (0, Chunk54381.jsx)(W, {
     keybinds: module,
     canGoLive: exports,
     overlaySupported: require,

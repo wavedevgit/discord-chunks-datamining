@@ -164,7 +164,7 @@ let A = Chunk473749.memo(function(e) {
     })
   }
 
-  function Y() {
+  function W() {
     return null == I ? null : "string" == typeof I ? (0, r.jsx)(c.qEK, {
       src: I,
       size: c.EFr.SIZE_40,
@@ -176,7 +176,7 @@ let A = Chunk473749.memo(function(e) {
     })
   }
 
-  function W() {
+  function Y() {
     let e = null == C ? true : C(M, k);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.animated.div, {
@@ -184,7 +184,7 @@ let A = Chunk473749.memo(function(e) {
         style: {
           opacity: N
         },
-        children: [Y(), (0, r.jsxs)("div", {
+        children: [W(), (0, r.jsxs)("div", {
           className: E.details,
           children: [(0, r.jsx)(c.Text, {
             color: "interactive-normal",
@@ -219,7 +219,7 @@ let A = Chunk473749.memo(function(e) {
         className: o()(E.container, {
           [E.clickable]: null != b
         }, D),
-        children: W()
+        children: Y()
       })
     }), F()]
   })
@@ -332,12 +332,12 @@ function D(e) {
     },
     status: Z
   } = t, F = I(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), V = !o && a, H = 0 === n && !B && !V, {
-    ref: Y,
-    springs: W
+    ref: W,
+    springs: Y
   } = (0, h.X4)(t.id, s, l);
   return (0, r.jsx)(C, {
     transitionState: s,
-    springs: W,
+    springs: Y,
     scaleOverride: null == T ? true : T.scale,
     index: n,
     locked: a,
@@ -346,7 +346,7 @@ function D(e) {
       observe: H,
       children: (0, r.jsx)(A, v(y({}, F), {
         title: "function" == typeof F.title ? F.title(O) : F.title,
-        containerRef: Y,
+        containerRef: W,
         notificationId: t.id,
         onNotificationShow: 0 === n ? b : true,
         onDismissClick: O,
@@ -358,7 +358,7 @@ function D(e) {
         index: n,
         locked: a,
         status: Z,
-        contentOpacity: W.contentOpacity
+        contentOpacity: Y.contentOpacity
       }))
     })
   })

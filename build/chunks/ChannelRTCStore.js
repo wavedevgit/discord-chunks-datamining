@@ -80,9 +80,9 @@ let w = new Chunk710845.Z("ChannelRTCStore"),
   F = {},
   V = {},
   H = {},
-  Y = {};
+  W = {};
 
-function W(e) {
+function Y(e) {
   let t = M[e];
   return null == t && (t = new S.ZP(e), M[e] = t), t
 }
@@ -107,7 +107,7 @@ function z() {
 
 function q(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : x;
-  return t.reduce((t, n) => e(W(n)) ? (er(n), en(n), true) : t, false)
+  return t.reduce((t, n) => e(Y(n)) ? (er(n), en(n), true) : t, false)
 }
 
 function X(e) {
@@ -157,7 +157,7 @@ function et(e) {
 
 function en(e) {
   let t = m.default.getId(),
-    n = W(e);
+    n = Y(e);
   if (0 === n.size() || y.Z.getVoiceChannelId() !== e) return void ee(e, null);
   let r = A.dF.NONE,
     i = n.toArray(S.sI.STREAM).find(e => e.type === A.fO.STREAM && h.Z.getActiveStreamForStreamKey(e.id));
@@ -180,7 +180,7 @@ function en(e) {
 }
 
 function er(e) {
-  let t = W(e);
+  let t = Y(e);
   if (0 === t.size()) return;
   let n = eU(e) || et(t) ? C.WtW.VIDEO : C.WtW.VOICE;
   n === C.WtW.VOICE ? (delete U[e], delete G[e]) : U[e] = n
@@ -228,7 +228,7 @@ function el(e) {
       location: "voice_status_update"
     }, {
       autoTrackExposure: false
-    }).enabled && W(i).updateGuildRingingUsers(r, false), n && null != i && !x.includes(i)) ? e : X(r) || e
+    }).enabled && Y(i).updateGuildRingingUsers(r, false), n && null != i && !x.includes(i)) ? e : X(r) || e
   }, false)
 }
 
@@ -324,7 +324,7 @@ function eO(e) {
     channelId: t,
     dismissed: n
   } = e;
-  Y[t] = n
+  W[t] = n
 }
 
 function ev(e) {
@@ -347,7 +347,7 @@ function eT(e) {
   let {
     channelId: t,
     id: n
-  } = e, r = W(t);
+  } = e, r = Y(t);
   null == n && r.toArray(S.sI.STREAM).forEach(e => {
     (0, A._5)(e) && r.updateParticipant(e.user.id)
   });
@@ -371,7 +371,7 @@ function eS(e) {
     participantId: n
   } = e, [r] = Q(t);
   r === n && ee(t, null);
-  let i = W(t),
+  let i = Y(t),
     a = i.getParticipant(n);
   null != a && a.type !== A.fO.ACTIVITY && (i.updateParticipantPoppedOut(n, true), X(a.user.id, [t]))
 }
@@ -380,7 +380,7 @@ function eA(e) {
   let {
     channelId: t,
     participantId: n
-  } = e, r = W(t);
+  } = e, r = Y(t);
   r.updateParticipantPoppedOut(n, false);
   let i = r.getParticipant(n);
   null != i && i.type !== A.fO.ACTIVITY && X(i.user.id, [t])
@@ -485,7 +485,7 @@ function ek(e) {
       guildId: n,
       location: "guild_ring_start"
     }).enabled) returnfalse;
-  let i = W(t);
+  let i = Y(t);
   return r.forEach(e => i.updateGuildRingingUsers(e, true)), q(e => e.rebuild(), [t])
 }
 
@@ -499,7 +499,7 @@ function ej(e) {
       guildId: n,
       location: "guild_ring_start"
     }).enabled) returnfalse;
-  let i = W(t);
+  let i = Y(t);
   return r.forEach(e => i.updateGuildRingingUsers(e, false)), q(e => e.rebuild(), [t])
 }
 
@@ -522,38 +522,38 @@ class eB extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
   getParticipantsVersion(e) {
-    return W(e).version
+    return Y(e).version
   }
   getParticipants(e) {
     var t;
-    return null != (t = W(e).toArray()) ? t : L
+    return null != (t = Y(e).toArray()) ? t : L
   }
   getSpeakingParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.SPEAKING)) ? t : L
+    return null != (t = Y(e).toArray(S.sI.SPEAKING)) ? t : L
   }
   getFilteredParticipants(e) {
     var t;
-    let n = W(e);
+    let n = Y(e);
     return null != (t = Z[e]) && t ? n.toArray(S.sI.FILTERED) : n.toArray(S.sI.NOT_POPPED_OUT)
   }
   getVideoParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.VIDEO)) ? t : L
+    return null != (t = Y(e).toArray(S.sI.VIDEO)) ? t : L
   }
   getStreamParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.STREAM)) ? t : L
+    return null != (t = Y(e).toArray(S.sI.STREAM)) ? t : L
   }
   getActivityParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.ACTIVITY)) ? t : L
+    return null != (t = Y(e).toArray(S.sI.ACTIVITY)) ? t : L
   }
   getParticipant(e, t) {
-    return W(e).getParticipant(t)
+    return Y(e).getParticipant(t)
   }
   getUserParticipantCount(e) {
-    let t = W(e);
+    let t = Y(e);
     return t.size() - t.size(S.sI.STREAM) - t.size(S.sI.ACTIVITY)
   }
   getParticipantsOpen(e) {
@@ -570,7 +570,7 @@ class eB extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getSelectedParticipant(e) {
     let t = this.getSelectedParticipantId(e);
-    return null == t ? null : W(e).getParticipant(t)
+    return null == t ? null : Y(e).getParticipant(t)
   }
   getSelectedParticipantStats(e) {
     let t = j[e];
@@ -581,7 +581,7 @@ class eB extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
   getGuildRingingUsers(e) {
-    return W(e).guildRingingUsers
+    return Y(e).guildRingingUsers
   }
   getMode(e) {
     var t;
@@ -613,7 +613,7 @@ class eB extends(r = Chunk442837.ZP.PersistedStore) {
     return H[e]
   }
   getStageVideoLimitBoostUpsellDismissed(e) {
-    return Y[e]
+    return W[e]
   }
   isParticipantPoppedOut(e, t) {
     let n = this.getParticipant(e, t);

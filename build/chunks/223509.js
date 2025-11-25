@@ -41,8 +41,8 @@ var r, i, Chunk754793 = require("./754793.js"),
   F = 19,
   V = 20,
   H = 21,
-  Y = 22,
-  W = 23,
+  W = 22,
+  Y = 23,
   K = 24,
   z = 25,
   q = 26,
@@ -383,8 +383,8 @@ function ep(e, t) {
         e.msg = "invalid literal/length code", n.mode = $;
         break
       }
-      n.extra = 15 & em, n.mode = Y;
-    case Y:
+      n.extra = 15 & em, n.mode = W;
+    case W:
       if (n.extra) {
         for (eT = n.extra; es < eT;) {
           if (0 === er) break i;
@@ -392,8 +392,8 @@ function ep(e, t) {
         }
         n.length += eo & (1 << n.extra) - 1, eo >>>= n.extra, es -= n.extra, n.back += n.extra
       }
-      n.was = n.length, n.mode = W;
-    case W:
+      n.was = n.length, n.mode = Y;
+    case Y:
       for (; eh = (eS = n.distcode[eo & (1 << n.distbits) - 1]) >>> 24, em = eS >>> 16 & 255, eg = 65535 & eS, !(eh <= es);) {
         if (0 === er) break i;
         er--, eo += r[et++] << es, es += 8

@@ -198,11 +198,11 @@ function H(e) {
   D = t, Object.values(w).forEach(e => e.layoutChange(t))
 }
 
-function Y() {
+function W() {
   returntrue
 }
 
-function W(e) {
+function Y(e) {
   let {
     context: t,
     wants: n,
@@ -346,12 +346,12 @@ T(J, "displayName", "StreamRTCConnectionStore");
 let $ = new J(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : {
   CONNECTION_OPEN: M,
   CONNECTION_CLOSED: k,
-  RTC_CONNECTION_STATE: Y,
-  RTC_CONNECTION_PING: Y,
-  RTC_CONNECTION_LOSS_RATE: Y,
+  RTC_CONNECTION_STATE: W,
+  RTC_CONNECTION_PING: W,
+  RTC_CONNECTION_LOSS_RATE: W,
   RTC_CONNECTION_UPDATE_ID: K,
-  RTC_CONNECTION_SECURE_FRAMES_UPDATE: Y,
-  RTC_CONNECTION_REMOTE_VIDEO_SINK_WANTS: W,
+  RTC_CONNECTION_SECURE_FRAMES_UPDATE: W,
+  RTC_CONNECTION_REMOTE_VIDEO_SINK_WANTS: Y,
   STREAM_START: j,
   STREAM_STOP: U,
   STREAM_CREATE: G,

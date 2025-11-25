@@ -48,7 +48,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk226518 = require("./226518.js"),
   Chunk197571 = require("./197571.js");
 
-function W(e, t, n) {
+function Y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -64,7 +64,7 @@ function K(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      W(e, t, n[t])
+      Y(e, t, n[t])
     })
   }
   return e
@@ -364,20 +364,20 @@ class ei extends Chunk473749.Component {
     })
   }
   constructor(...e) {
-    super(...e), W(this, "darkMessages", et(B.BRd.DARK)), W(this, "lightMessages", et(B.BRd.LIGHT)), W(this, "handleDisplayCompactAvatarsChanged", e => {
+    super(...e), Y(this, "darkMessages", et(B.BRd.DARK)), Y(this, "lightMessages", et(B.BRd.LIGHT)), Y(this, "handleDisplayCompactAvatarsChanged", e => {
       f.ZP.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })
-    }), W(this, "handleDesktopRefreshEnabledChanged", e => {
+    }), Y(this, "handleDesktopRefreshEnabledChanged", e => {
       f.ZP.updatedUnsyncedSettings({
         disableVisualRefresh: !e
       })
-    }), W(this, "handleMessageDisplayModeChange", e => {
+    }), Y(this, "handleMessageDisplayModeChange", e => {
       let {
         value: t
       } = e;
       L.jU.updateSetting(t === Q), (0, h.ZZ)()
-    }), W(this, "handleUIDensityChange", e => {
+    }), Y(this, "handleUIDensityChange", e => {
       let {
         value: t
       } = e;

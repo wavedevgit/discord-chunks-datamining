@@ -67,7 +67,7 @@ function H(e) {
   return e
 }
 
-function Y(e, t) {
+function W(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,8 +78,8 @@ function Y(e, t) {
   return n
 }
 
-function W(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
+function Y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -144,7 +144,7 @@ function Q() {
       pendingValue: Chunk243778,
       userValue: null == exports || null == (e = exports.collectibles) ? true : module.nameplate
     }),
-    Y = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.showNotice()),
+    W = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.showNotice()),
     z = Chunk695346.dN.useSetting() && null != Chunk704215 ? Chunk957730.ZP.parse(true, Chunk704215).content : Chunk704215,
     Q = Chunk74538.ZP.canUsePremiumProfileCustomization(exports),
     {
@@ -160,7 +160,7 @@ function Q() {
   return require ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (0, Chunk54381.jsxs)(Chunk906732.Gt, {
     value: J,
     children: [(0, Chunk54381.jsx)(Chunk475977.Z, {}), (0, Chunk54381.jsx)(Chunk296810.Z, {
-      profilePreview: (0, Chunk54381.jsx)(Chunk678135.Z, W(H({
+      profilePreview: (0, Chunk54381.jsx)(Chunk678135.Z, Y(H({
         user: exports,
         canUsePremiumCustomization: Q,
         onUpsellClick: Chunk265159.Z,
@@ -168,7 +168,7 @@ function Q() {
       }, Chunk373230), {
         pendingAvatar: Chunk921944
       })),
-      nameplatePreview: (0, Chunk54381.jsx)(Chunk566697.Z, W(H({
+      nameplatePreview: (0, Chunk54381.jsx)(Chunk566697.Z, Y(H({
         user: exports,
         nameplate: V
       }, Chunk373230), {
@@ -189,7 +189,7 @@ function Q() {
           isVisible: ee
         })
       })
-    }), er && !Y && (0, Chunk54381.jsx)(Chunk53691.p, {
+    }), er && !W && (0, Chunk54381.jsx)(Chunk53691.p, {
       className: Chunk391371.floatingNitroUpsell,
       showUpsell: er && !ee,
       text: Chunk388032.intl.format(Chunk388032.t.TmfgI2, {

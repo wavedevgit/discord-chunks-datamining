@@ -281,7 +281,7 @@ async function eu(e) {
       r = H.ZP.getCurrentEmbeddedActivity();
     (null == r ? true : r.applicationId) != null && (e = b.Z.getApplication(null == r ? true : r.applicationId));
     let i = U.default.getCurrentUser();
-    if (null != i && !await (0, Y.p)({
+    if (null != i && !await (0, W.p)({
         applicationId: t,
         application: n,
         channel: _,
@@ -384,7 +384,7 @@ async function ed(e) {
     }
   }
   let h = H.ZP.getCurrentEmbeddedActivity();
-  if ((null == h ? true : h.applicationId) != null && (t = b.Z.getApplication(null == h ? true : h.applicationId)), !(!o || await (0, Y.p)({
+  if ((null == h ? true : h.applicationId) != null && (t = b.Z.getApplication(null == h ? true : h.applicationId)), !(!o || await (0, W.p)({
       applicationId: n,
       application: f,
       channel: _,
@@ -452,7 +452,7 @@ function ef(e) {
     instanceId: null == i ? true : i.launchId,
     showFeedback: r
   });
-  let a = (0, W.p)(t);
+  let a = (0, Y.p)(t);
   if (null != a) {
     var o;
     let e = v.Z.getSelectedParticipantId(a),
