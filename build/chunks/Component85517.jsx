@@ -131,8 +131,8 @@ function j(e) {
             alt: t.assetSponsorImage.altText,
             className: C.logo
           }), (0, r.jsx)(u.Text, {
-            color: "text-secondary",
-            variant: "text-sm/semibold",
+            color: "text-primary",
+            variant: "text-sm/normal",
             className: C.sponsoredTag,
             children: I.intl.string(I.t.OJjFi5)
           })]
