@@ -70,7 +70,11 @@ class E extends Chunk839548.Z {
     })
   }
   setSelfDeaf(e) {
-    for (let t of (this.selfDeaf = e, Object.keys(this.outputs))) this.outputs[t].mute = e || this.localMutes[t]
+    for (let t of (this.selfDeaf = e, Object.keys(this.outputs))) this.outputs[t].mute = e || this.localMutes[t];
+    this.emit(l.Sh.Deafen, e)
+  }
+  getSelfDeaf() {
+    return this.selfDeaf
   }
   setLocalMute(e, t) {
     this.localMutes[e] = t, null != this.outputs[e] && (this.outputs[e].mute = this.selfDeaf || t), this.emit(l.Sh.LocalMute, e, t)

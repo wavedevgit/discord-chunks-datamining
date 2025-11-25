@@ -621,7 +621,7 @@ class eN extends Chunk47770.Z {
             type: "AUDIO_INPUT_DEVICE_SAMPLE_RATE_CHANGED",
             sampleRate: e
           })
-        }), this._voiceQualityPeriodicStatsSequenceId = 0, this._voiceQualityPeriodicStatsInterval = setInterval(this._handleVoiceQualityPeriodicsStats, 3e5), this._systemResponsiveness = new et.Z(f), this._systemResponsiveness.start(), this._systemResources = new ee.Z, this._systemResources.setLastBattery(), this._noiseCancellationError = 0, this._voiceDuration = new ei.Z(this.userId, f), this._voiceDuration.start(f.getSelfMute(), f.getVoiceFilterId()), this.protocol = r, r) {
+        }), this._voiceQualityPeriodicStatsSequenceId = 0, this._voiceQualityPeriodicStatsInterval = setInterval(this._handleVoiceQualityPeriodicsStats, 3e5), this._systemResponsiveness = new et.Z(f), this._systemResponsiveness.start(), this._systemResources = new ee.Z, this._systemResources.setLastBattery(), this._noiseCancellationError = 0, this._voiceDuration = new ei.Z(this.userId, f), this._voiceDuration.start(f.getSelfMute(), f.getSelfDeaf(), f.getVoiceFilterId()), this.protocol = r, r) {
         case "udp":
           this.logger.info("Sending UDP info to RTC server.", i, this._selectedExperiments), e.once(Q.V.Encryption, (e, t) => {
             f === this._connection && (f.setEncryption(e, t), this._encryptionMode = e)
