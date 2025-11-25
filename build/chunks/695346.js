@@ -427,21 +427,24 @@ let eg = new Set(Object.values(Chunk981631.Skl)),
     value: e
   })), "text", "renderReactions");
 (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "defaultReactionEmoji", e => {
+  var t, n;
   let {
-    emojiId: t,
-    emojiName: n,
-    animated: r
+    emojiId: r,
+    emojiName: i,
+    animated: a
   } = null != e ? e : {};
   return {
-    emojiId: null == t ? true : t.value,
-    emojiName: null == n ? true : n.value,
-    animated: null == r ? true : r.value
+    emojiId: null == r ? true : r.value,
+    emojiName: null == i ? true : i.value,
+    animated: null == a ? true : a.value,
+    disableDoubleTap: null != (n = null == e || null == (t = e.disableDoubleTap) ? true : t.value) && n
   }
 }, e => {
   let {
     emojiId: t,
     emojiName: n,
-    animated: r
+    animated: r,
+    disableDoubleTap: i
   } = e;
   return {
     emojiId: o.wA.create({
@@ -452,6 +455,9 @@ let eg = new Set(Object.values(Chunk981631.Skl)),
     }),
     animated: o.D5.create({
       value: r
+    }),
+    disableDoubleTap: o.D5.create({
+      value: i
     })
   }
 }, {
