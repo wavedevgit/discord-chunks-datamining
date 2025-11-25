@@ -112,7 +112,7 @@ function H(e) {
     settings: [j.s6.LOGOUT]
   }, {
     divider: true,
-    settings: [j.s6.SOCIAL_LINKS, j.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM, j.s6.CLIENT_DEBUG_INFO]
+    settings: [j.s6.SOCIAL_LINKS, j.s6.CLIENT_DEBUG_INFO]
   }], a = {
     header: G.intl.string(G.t.SmHCFf),
     divider: true,
@@ -347,7 +347,7 @@ function J(e) {
 function $(e) {
   return new Map(Object.entries(e).filter(e => {
     let [t, n] = e;
-    return (n.section !== o.ID.CUSTOM || t === j.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM) && null != n.searchableTitles && (null == n.predicate || n.predicate()) && (null == n.unsearchable || false === n.unsearchable)
+    return null != n.searchableTitles && (null == n.predicate || n.predicate()) && (null == n.unsearchable || false === n.unsearchable)
   }))
 }
 

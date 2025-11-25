@@ -22,16 +22,16 @@ function b(e) {
     isOpen: i,
     setIsOpen: b,
     children: y
-  } = e, v = l.useRef(null), [g, h] = l.useState(null), m = i && null != g;
+  } = e, g = l.useRef(null), [v, h] = l.useState(null), m = i && null != v;
   return l.useLayoutEffect(() => {
-    null != v.current && null == g && h(v.current.clientHeight)
-  }, [g]), (0, r.jsxs)(a.pJ, {
+    null != g.current && null == v && h(g.current.clientHeight)
+  }, [v]), (0, r.jsxs)(a.pJ, {
     isExpanded: i,
     onExpandedChange: b,
     children: [(0, r.jsx)(f.x, {
-      ref: v,
-      style: null != g ? {
-        minHeight: g
+      ref: g,
+      style: null != v ? {
+        minHeight: v
       } : true,
       title: t,
       description: m ? true : n,
@@ -51,7 +51,13 @@ function b(e) {
       headingColor: "text-link"
     }), (0, r.jsx)(a.V2, {
       className: p.panel,
-      children: y
+      children: (0, r.jsx)(d.Kqy, {
+        gap: 16,
+        padding: {
+          top: 16
+        },
+        children: y
+      })
     })]
   })
 }

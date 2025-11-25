@@ -19,7 +19,7 @@ let c = Chunk473749.memo(function(e) {
     init: d,
     useBadge: f,
     useNotice: p
-  } = t, b = null == n ? true : n(), y = null == f ? true : f(), v = null == p ? true : p();
+  } = t, b = null == n ? true : n(), y = null == f ? true : f(), g = null == p ? true : p();
   return l.useEffect(() => {
     null == d || d()
   }, [d]), (0, r.jsxs)(r.Fragment, {
@@ -34,8 +34,8 @@ let c = Chunk473749.memo(function(e) {
       }
     }), (0, r.jsxs)(i.Kqy, {
       gap: 16,
-      children: [null != v && (0, r.jsx)(s.Z, {
-        notice: v
+      children: [null != g && (0, r.jsx)(s.Z, {
+        notice: g
       }), u.map(e => (0, r.jsx)(o.Z, {
         node: e
       }, e.key))]

@@ -99,8 +99,7 @@ function S(e) {
               children: (0, l.jsx)(b.Z, {
                 user: n,
                 guildId: W,
-                viewProfileItem: X,
-                onCloseProfile: G
+                viewProfileItem: X
               })
             }), (0, l.jsxs)("div", {
               children: [(0, l.jsx)(x.Z, {

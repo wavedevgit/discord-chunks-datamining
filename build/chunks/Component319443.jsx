@@ -123,8 +123,8 @@ let U = function() {
     U = (0, Chunk881294.nu)(),
     F = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.CATEGORY ? Chunk548514.categoryId : true,
     {
-      applicationId: z,
-      section: H
+      applicationId: H,
+      section: z
     } = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.APPLICATION ? Chunk548514 : {},
     {
       query: V,
@@ -165,7 +165,7 @@ let U = function() {
   }, [U]), Chunk473749.useEffect(() => Chunk258971.aQ.setState({
     lastItem: Chunk548514
   }), [Chunk548514]);
-  let ea = null != z,
+  let ea = null != H,
     ei = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.SEARCH,
     {
       searchQuery: el,
@@ -229,7 +229,7 @@ let U = function() {
         children: [!e_ && (0, Chunk54381.jsx)(Chunk611928.z6, {
           scrollPosition: Chunk120356
         }), ea ? (0, Chunk54381.jsx)(G, {
-          applicationId: z,
+          applicationId: H,
           hideDetailHeaderButtons: $,
           onClickBack: ef
         }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -266,8 +266,8 @@ let U = function() {
       }), ea ? (0, Chunk54381.jsx)(Chunk666697.Z, {
         onScroll: e => ex(e, E.m_.APPLICATION),
         onSelectApplication: eg,
-        applicationId: z,
-        initialTab: H,
+        applicationId: H,
+        initialTab: z,
         onButtonsVisibilityChange: ee
       }) : ei ? (0, Chunk54381.jsx)(Chunk569527.Z, {
         onSelectApplication: eg,

@@ -126,8 +126,7 @@ function P(e) {
             children: (0, r.jsx)(y.Z, {
               user: t,
               guildId: N,
-              viewProfileItem: Y(),
-              onCloseProfile: x
+              viewProfileItem: Y()
             })
           }), (0, r.jsxs)("div", {
             className: C.header,

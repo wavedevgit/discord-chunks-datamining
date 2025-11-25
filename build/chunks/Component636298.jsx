@@ -1,7 +1,7 @@
 /** Chunk was on 46984 **/
 /** chunk id: 636298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,7 +31,7 @@ function y(e) {
   })
 }
 
-function v(e) {
+function g(e) {
   let {
     title: t,
     badge: n,
@@ -62,7 +62,7 @@ function v(e) {
     })
   })
 }
-let g = Chunk473749.memo(function(e) {
+let v = Chunk473749.memo(function(e) {
   var t, n;
   let {
     onClose: l,
@@ -73,7 +73,7 @@ let g = Chunk473749.memo(function(e) {
       [b.mobile]: a.tq,
       [b.mobileNavigationOpen]: u
     }),
-    children: [(0, r.jsx)(v, {
+    children: [(0, r.jsx)(g, {
       title: s,
       badge: c,
       onClose: l

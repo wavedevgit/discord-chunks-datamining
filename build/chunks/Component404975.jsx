@@ -25,7 +25,7 @@ function m(e) {
     root: t,
     header: n,
     footer: i,
-    onClose: v,
+    onClose: g,
     emptyState: m
   } = e, j = y.Z.useField("showNavigationMobile"), O = l.useRef(null), C = l.useMemo(() => {
     let e = [];
@@ -44,7 +44,7 @@ function m(e) {
         }
       })
     }), e
-  }, [t.layout]), [P, S] = l.useMemo(() => {
+  }, [t.layout]), [S, P] = l.useMemo(() => {
     let e = [],
       n = [];
     return t.layout.forEach(t => {
@@ -79,18 +79,18 @@ function m(e) {
               className: h.mobileCloseButton,
               children: (0, r.jsx)(c.hU, {
                 icon: c.Uz9,
-                onClick: v,
+                onClick: g,
                 variant: "icon-only",
                 size: "sm",
-                "aria-label": g.intl.string(g.t.cpT0Cq)
+                "aria-label": v.intl.string(v.t.cpT0Cq)
               })
             }), (0, r.jsx)("div", {
-              children: P.map(e => (0, r.jsx)(x, {
+              children: S.map(e => (0, r.jsx)(x, {
                 section: e,
                 visibleContent: l,
                 hoisted: true
               }, e.key))
-            }), null != n && (0, r.jsx)(n, {}), null != m && 0 === S.length && (0, r.jsx)(m, {})]
+            }), null != n && (0, r.jsx)(n, {}), null != m && 0 === P.length && (0, r.jsx)(m, {})]
           }), (0, r.jsx)(a.bG, {
             navigator: E,
             children: (0, r.jsx)(a.SJ, {
@@ -140,7 +140,7 @@ function m(e) {
                 }, a), n = n = {
                   children: [(0, r.jsx)("nav", {
                     className: h.nav,
-                    children: S.map(e => (0, r.jsx)(x, {
+                    children: P.map(e => (0, r.jsx)(x, {
                       section: e,
                       visibleContent: l
                     }, e.key))
@@ -182,7 +182,7 @@ function x(e) {
         color: "text-tertiary",
         children: o
       })
-    }), n.layout.map(e => (0, r.jsx)(v.y, {
+    }), n.layout.map(e => (0, r.jsx)(g.y, {
       node: e,
       visibleContent: l,
       hoisted: i

@@ -2,7 +2,7 @@
 /** chunk id: 952124, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,11 +10,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk279332 = require("./279332.js"),
   Chunk14491 = require("./14491.jsx"),
   Chunk423086 = require("./423086.jsx"),
   Chunk299206 = require("./299206.jsx"),
-  Chunk276022 = require("./276022.jsx"),
   Chunk389052 = require("./389052.jsx"),
   Chunk158508 = require("./158508.jsx"),
   Chunk785717 = require("./785717.jsx"),
@@ -22,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk475413 = require("./475413.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function y(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,99 +29,84 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
 }
 
-function v(e) {
+function y(e) {
   let {
     user: t,
     guildId: n,
-    viewProfileItem: y,
-    onCloseProfile: v
-  } = e, I = i.useRef(null), {
-    trackUserProfileAction: T
-  } = (0, m.KZ)(), {
-    analyticsLocations: S,
-    newestAnalyticsLocation: A
-  } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), C = c.J.useExperiment({
-    location: "UserSettingsAuthedApps"
-  }, {
-    autoTrackExposure: true
-  }).enabled, N = (0, a.e7)([g.Z], () => g.Z.getUserProfile(t.id)), R = null == N ? true : N.application, P = (0, _.Z)({
-    user: t,
-    application: null != R ? R : true,
-    guildId: n,
-    onItemClick: () => {
-      T({
-        action: "MANAGE_APP",
-        analyticsLocations: S
-      }), null == v || v()
-    }
-  }), D = (0, p.Z)({
+    viewProfileItem: E
+  } = e, y = i.useRef(null), {
+    trackUserProfileAction: O
+  } = (0, p.KZ)(), {
+    analyticsLocations: v,
+    newestAnalyticsLocation: I
+  } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), T = (0, a.e7)([h.Z], () => h.Z.getUserProfile(t.id)), S = null == T ? true : T.application, A = (0, f.Z)({
     user: t,
     guildId: n,
-    location: A,
+    location: I,
     color: "danger",
-    onBlock: () => T({
+    onBlock: () => O({
       action: "BLOCK",
-      analyticsLocations: S
+      analyticsLocations: v
     }),
-    onUnblock: () => T({
+    onUnblock: () => O({
       action: "UNBLOCK",
-      analyticsLocations: S
+      analyticsLocations: v
     })
-  }), w = (0, h.Z)({
+  }), C = (0, _.Z)({
     user: t,
     guildId: n,
-    location: A,
-    onIgnore: () => T({
+    location: I,
+    onIgnore: () => O({
       action: "IGNORE",
-      analyticsLocations: S
+      analyticsLocations: v
     }),
-    onUnignore: () => T({
+    onUnignore: () => O({
       action: "UNIGNORE",
-      analyticsLocations: S
+      analyticsLocations: v
     })
-  }), L = (0, d.Z)({
-    applicationId: null == R ? true : R.id,
+  }), N = (0, u.Z)({
+    applicationId: null == S ? true : S.id,
     user: t,
     guildId: n,
-    onSubmit: () => T({
+    onSubmit: () => O({
       action: "REPORT",
-      analyticsLocations: S
+      analyticsLocations: v
     }),
     color: "danger"
-  }), x = (0, f.Z)({
-    id: null == R ? true : R.id,
-    label: b.intl.string(b.t["+NP/b2"]),
-    onSuccess: () => T({
+  }), R = (0, d.Z)({
+    id: null == S ? true : S.id,
+    label: g.intl.string(g.t["+NP/b2"]),
+    onSuccess: () => O({
       action: "COPY_APP_ID",
-      analyticsLocations: S
+      analyticsLocations: v
     })
-  }), M = [
-    [y], C ? [P] : [],
-    [w, D, L],
-    [(0, u.Z)({
-      application: R,
-      label: b.intl.string(b.t.WqhZss),
-      onSuccess: () => T({
+  }), P = [
+    [E],
+    [C, A, N],
+    [(0, c.Z)({
+      application: S,
+      label: g.intl.string(g.t.WqhZss),
+      onSuccess: () => O({
         action: "COPY_APP_LINK",
-        analyticsLocations: S
+        analyticsLocations: v
       })
-    }), x]
+    }), R]
   ];
-  return M.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
-    targetElementRef: I,
+  return P.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
+    targetElementRef: y,
     renderPopout: e => {
       let {
         closePopout: t
@@ -132,17 +115,17 @@ function v(e) {
         navId: "user-bot-profile-overflow-menu",
         onSelect: true,
         onClose: t,
-        "aria-label": b.intl.string(b.t.AXIHpV),
-        children: M.map((e, t) => (0, r.jsx)(o.kSQ, {
+        "aria-label": g.intl.string(g.t.AXIHpV),
+        children: P.map((e, t) => (0, r.jsx)(o.kSQ, {
           children: e.map(e => e)
         }, t))
       })
     },
-    children: e => (0, r.jsx)(E.oY, O({
-      ref: I,
+    children: e => (0, r.jsx)(m.oY, b({
+      ref: y,
       action: "PRESS_OPTIONS",
       icon: o.xhG,
-      tooltipText: b.intl.string(b.t["UKOtz+"])
+      tooltipText: g.intl.string(g.t["UKOtz+"])
     }, e))
   })
 }

@@ -26,8 +26,8 @@ function p(e) {
     listItemProps: b,
     children: y
   } = e, {
-    icon: v,
-    stronglyDiscouragedCustomComponent: g,
+    icon: g,
+    stronglyDiscouragedCustomComponent: v,
     trailing: h,
     useTitle: m
   } = c, x = null == m ? true : m();
@@ -56,9 +56,9 @@ function p(e) {
         [f.active]: a
       }),
       onClick: i,
-      children: [null != g ? (0, r.jsx)(g, {}) : (0, r.jsxs)("div", {
+      children: [null != v ? (0, r.jsx)(v, {}) : (0, r.jsxs)("div", {
         className: f.itemContent,
-        children: [(0, r.jsx)(v, {
+        children: [(0, r.jsx)(g, {
           color: "currentColor",
           size: "refresh_sm",
           className: f.icon

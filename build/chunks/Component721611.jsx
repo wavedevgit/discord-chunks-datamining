@@ -1,7 +1,7 @@
 /** Chunk was on 46984 **/
 /** chunk id: 721611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk700425 = require("./700425.js"),
   Chunk910557 = require("./910557.js");
 
-function v(e) {
+function g(e) {
   var t;
   let {
     category: n,
@@ -71,7 +71,7 @@ function v(e) {
   })
 }
 
-function g(e) {
+function v(e) {
   let {
     categories: t
   } = e, n = p.Z.useField("activeCategoryKey");
@@ -100,7 +100,7 @@ function g(e) {
         style: o
       })
     }), (0, r.jsx)("ul", {
-      children: t.map(e => (0, r.jsx)(v, {
+      children: t.map(e => (0, r.jsx)(g, {
         onClick: () => {
           var t;
           return t = e.key, void p.Z.setState({

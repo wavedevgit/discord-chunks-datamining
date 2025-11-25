@@ -22,14 +22,14 @@ function a(e) {
     onValueRender: p,
     asValueChanges: b,
     markers: y,
-    onMarkerRender: v
-  } = t, [g] = l.useState(() => a()), h = u(), m = null == d ? true : d(), x = null == f ? true : f();
+    onMarkerRender: g
+  } = t, [v] = l.useState(() => a()), h = u(), m = null == d ? true : d(), x = null == f ? true : f();
   return (0, r.jsx)(o.X, {
     children: (0, r.jsx)(i.iRW, {
       label: h,
       description: m,
       disabled: x,
-      initialValue: g,
+      initialValue: v,
       minValue: s,
       maxValue: c,
       onValueRender: p,
@@ -37,7 +37,7 @@ function a(e) {
       onValueChange: n,
       orientation: "horizontal",
       markers: y,
-      onMarkerRender: v
+      onMarkerRender: g
     })
   })
 }

@@ -1,1 +1,0 @@
-{"id":"279332","type":"experiment","data":{"kind":"user","id":"2025-02_app_dm_opt_out_settings","label":"App DM Opt Out Settings","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable user to opt out of DMs from apps","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

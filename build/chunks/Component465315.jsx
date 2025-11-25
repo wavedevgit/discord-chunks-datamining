@@ -19,9 +19,9 @@ function u(e) {
     destinationKey: p
   } = f, b = null == (t = f.useSubtitle) ? true : t.call(f), {
     directory: y
-  } = (0, i.t)(), v = null == y ? true : y.entry(p), g = (null == v ? true : v.targetPanelKey) != null ? null == y ? true : y.get(v.targetPanelKey) : true, h = null == (n = f.useTitle) ? true : n.call(f), m = null == g || null == (u = g.useTitle) ? true : u.call(g);
-  if (null == g) return null;
-  let x = (null == (d = g.parent) ? true : d.type) === o.Jq.SIDEBAR_ITEM ? g.parent.icon : true;
+  } = (0, i.t)(), g = null == y ? true : y.entry(p), v = (null == g ? true : g.targetPanelKey) != null ? null == y ? true : y.get(g.targetPanelKey) : true, h = null == (n = f.useTitle) ? true : n.call(f), m = null == v || null == (u = v.useTitle) ? true : u.call(v);
+  if (null == v) return null;
+  let x = (null == (d = v.parent) ? true : d.type) === o.Jq.SIDEBAR_ITEM ? v.parent.icon : true;
   return (0, r.jsx)(s.x, {
     title: null != h ? h : m,
     description: b,

@@ -19,7 +19,7 @@ function o(e) {
     useDisabled: u,
     useDisabledMessage: d,
     useBadge: f
-  } = n, p = s(), b = null == c ? true : c(), y = o(), v = null != (t = null == u ? true : u()) && t, g = null == d ? true : d(), h = null == f ? true : f();
+  } = n, p = s(), b = null == c ? true : c(), y = o(), g = null != (t = null == u ? true : u()) && t, v = null == d ? true : d(), h = null == f ? true : f();
   return (0, r.jsxs)(i.X, {
     children: [(0, r.jsx)(l.rsf, {
       label: p,
@@ -27,10 +27,10 @@ function o(e) {
       badge: h,
       checked: y,
       onChange: e => a(e),
-      disabled: v
-    }), v && null != g ? (0, r.jsx)(l.Wn, {
+      disabled: g
+    }), g && null != v ? (0, r.jsx)(l.Wn, {
       messageType: l.QYI.WARNING,
-      children: g
+      children: v
     }) : null]
   })
 }

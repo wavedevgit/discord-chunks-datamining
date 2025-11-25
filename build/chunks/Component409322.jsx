@@ -23,8 +23,8 @@ function d(e) {
     [p, b] = l.useState(false),
     {
       layout: y,
-      collapseAfter: v,
-      ContextProvider: g,
+      collapseAfter: g,
+      ContextProvider: v,
       useCollapsibleTitle: h,
       useCollapsedSubtitle: m
     } = d,
@@ -32,11 +32,11 @@ function d(e) {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    j = null != v ? x.slice(0, v) : x,
-    O = null != v ? x.slice(v) : [],
-    C = null != g ? g : l.Fragment,
-    P = null == f ? true : f(),
-    S = null != (t = null == h ? true : h(p, O.length)) ? t : (n = O.length, p ? c.intl.formatToPlainString(c.t["3SHL+d"], {
+    j = null != g ? x.slice(0, g) : x,
+    O = null != g ? x.slice(g) : [],
+    C = null != v ? v : l.Fragment,
+    S = null == f ? true : f(),
+    P = null != (t = null == h ? true : h(p, O.length)) ? t : (n = O.length, p ? c.intl.formatToPlainString(c.t["3SHL+d"], {
       count: n
     }) : c.intl.formatToPlainString(c.t["8JRFyZ"], {
       count: n
@@ -45,11 +45,11 @@ function d(e) {
   return (0, r.jsx)(C, {
     children: (0, r.jsxs)(i.Kqy, {
       gap: 8,
-      children: [null != P && (0, r.jsx)(i.Heading, {
+      children: [null != S && (0, r.jsx)(i.Heading, {
         variant: "heading-md/semibold",
         color: "header-secondary",
         className: u.listTitle,
-        children: P
+        children: S
       }), j.map((e, t) => (0, r.jsxs)(l.Fragment, {
         children: [(0, r.jsx)(o.Z, {
           node: e
@@ -59,7 +59,7 @@ function d(e) {
         children: [(0, r.jsx)(a.Z, {
           className: u.hoverDivider
         }), (0, r.jsx)(s.I, {
-          title: S,
+          title: P,
           collapsedSubtitle: _,
           isOpen: p,
           setIsOpen: b,

@@ -41,11 +41,11 @@ function j(e) {
         node: t
       });
     case l.Jq.LIST:
-      return (0, r.jsx)(g.Z, {
+      return (0, r.jsx)(v.Z, {
         node: t
       });
     case l.Jq.FIELD_SET:
-      return (0, r.jsx)(v.Z, {
+      return (0, r.jsx)(g.Z, {
         node: t
       });
     case l.Jq.CATEGORY:

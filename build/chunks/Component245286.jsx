@@ -1,7 +1,7 @@
 /** Chunk was on 46984 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -38,7 +38,7 @@ function C(e) {
   })
 }
 
-function P(e) {
+function S(e) {
   var {
     target: t
   } = e, n = function(e, t) {
@@ -56,7 +56,7 @@ function P(e) {
     }
     return l
   }(e, ["target"]);
-  let o = v.Z.useField("query"),
+  let o = g.Z.useField("query"),
     {
       node: a,
       directory: c
@@ -89,7 +89,7 @@ function P(e) {
   }({
     root: a,
     directory: c,
-    sidebarHeader: S,
+    sidebarHeader: P,
     emptyState: _,
     sidebarFooter: h.Z,
     onPanelChange: e => {
@@ -100,11 +100,11 @@ function P(e) {
       }), y.current = t)
     },
     target: u,
-    defaultTarget: g.n.ACCOUNT_PANEL
+    defaultTarget: v.n.ACCOUNT_PANEL
   }, n)) : null
 }
 
-function S() {
+function P() {
   let e = Chunk996733.Z.useField("query"),
     t = Chunk473749.useRef(null),
     [n, i] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),
@@ -117,7 +117,7 @@ function S() {
       scrollBehavior: "sticky"
     }), []),
     d = Chunk473749.useCallback(e => {
-      v.Z.setState({
+      g.Z.setState({
         query: e
       })
     }, []),
