@@ -45,17 +45,17 @@ let b = 1e3,
     let {
       mediaUrls: R,
       isSuccess: P
-    } = (0, p.Z)(!y && a && C), D = (0, i.useRef)(null), [w, L] = (0, i.useState)(false), [x, M] = (0, i.useState)(false), [j, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
+    } = (0, p.Z)(!y && a && C), D = (0, i.useRef)(null), [w, L] = (0, i.useState)(false), [x, M] = (0, i.useState)(false), [k, j] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
-        a && n && !U && "none" === j && (y || !P ? (k("static"), y || (G(true), f.default.track(h.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (k("animated"), M(true), e = true), c.Z.dispatch({
+        a && n && !U && "none" === k && (y || !P ? (j("static"), y || (G(true), f.default.track(h.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (j("animated"), M(true), e = true), c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: true,
           isAnimated: e
         }), f.default.track(h.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
           wow_moment_type: e ? "animated" : "static"
         }))
-      }, [y, a, n, P, U, j]), (0, i.useEffect)(() => {
+      }, [y, a, n, P, U, k]), (0, i.useEffect)(() => {
         function e() {
           L(true), A()
         }
@@ -68,7 +68,7 @@ let b = 1e3,
           value: false,
           isAnimated: false
         })
-      }, []), "animated" === j) return (0, r.jsxs)("div", {
+      }, []), "animated" === k) return (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: m.videoContainer,
         children: [(0, r.jsx)("div", {
@@ -118,7 +118,7 @@ let b = 1e3,
       })]
     });
     let B = !w;
-    return "static" === j ? (0, r.jsxs)(r.Fragment, {
+    return "static" === k ? (0, r.jsxs)(r.Fragment, {
       children: [B && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("img", {
           src: g.Z,

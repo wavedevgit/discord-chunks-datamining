@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Iu: () => G,
-  Jw: () => k,
+  Jw: () => j,
   _r: () => B,
   cX: () => F,
   lv: () => U,
@@ -45,10 +45,10 @@ let x = {
     end: 15
   },
   M = [Chunk490757],
-  j = [Chunk429827, Chunk353928, Chunk336892, Chunk624833, Chunk944314, Chunk399358, Chunk945835, Chunk912931, Chunk966552, Chunk561763, Chunk529306, Chunk90075, Chunk862666, Chunk252611, Chunk136144, Chunk316137, Chunk654123, Chunk660020, Chunk980084, Chunk24688, Chunk200997],
-  k = {
+  k = [Chunk429827, Chunk353928, Chunk336892, Chunk624833, Chunk944314, Chunk399358, Chunk945835, Chunk912931, Chunk966552, Chunk561763, Chunk529306, Chunk90075, Chunk862666, Chunk252611, Chunk136144, Chunk316137, Chunk654123, Chunk660020, Chunk980084, Chunk24688, Chunk200997],
+  j = {
     [Chunk353368.q.BASIC]: M,
-    [Chunk353368.q.PREMIUM]: j
+    [Chunk353368.q.PREMIUM]: k
   },
   U = i().memoize(e => new Promise(t => {
     let n = new Image;
@@ -63,7 +63,7 @@ let x = {
     }
   })),
   G = (e, t) => {
-    let n = k[e];
+    let n = j[e];
     if (null != t && e === w.q.PREMIUM) {
       let e = t.end + 1;
       return Math.floor(Math.random() * (t.start - e) + e)

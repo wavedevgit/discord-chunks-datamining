@@ -57,8 +57,8 @@ function E(e, t, n) {
     }) : "",
     x = (0, l.P)(L),
     M = [x["aria-describedby"], A["aria-describedby"]].filter(Boolean).join(" ") || true,
-    j = (0, c.z)(e),
-    k = (0, m.useMemo)(() => (0, o.E7)(n), [n]),
+    k = (0, c.z)(e),
+    j = (0, m.useMemo)(() => (0, o.E7)(n), [n]),
     U = (0, m.useRef)(false),
     {
       focusWithinProps: G
@@ -80,7 +80,7 @@ function E(e, t, n) {
       }
     });
   return {
-    groupProps: (0, u.d)(j, R, A, x, G, {
+    groupProps: (0, u.d)(k, R, A, x, G, {
       role: "group",
       "aria-disabled": e.isDisabled || null,
       "aria-labelledby": P,
@@ -95,7 +95,7 @@ function E(e, t, n) {
     labelProps: {
       ...S,
       onClick: () => {
-        k.focusFirst()
+        j.focusFirst()
       }
     },
     fieldProps: {

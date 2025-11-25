@@ -2,7 +2,7 @@
 /** chunk id: 117652, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dd: () => j
+  Dd: () => k
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -58,7 +58,7 @@ function M(e) {
   }
   return e
 }
-let j = {
+let k = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
   renderStep: e => (0, r.jsx)(U, M({}, e)),
   options: {
@@ -67,7 +67,7 @@ let j = {
   }
 };
 
-function k(e) {
+function j(e) {
   let {
     onStepChange: t,
     onBackClick: n,
@@ -101,7 +101,7 @@ function U(e) {
     validatingGiftRecipient: C,
     giftRecipient: x,
     recommendedGiftSkuIds: M,
-    giftingOrigin: j,
+    giftingOrigin: k,
     setValidatingGiftRecipient: U
   } = (0, S.wD)(), {
     selectedSkuId: Z,
@@ -117,16 +117,16 @@ function U(e) {
     location: "CollectiblesPaymentModalGiftCustomizationStep"
   }, {
     autoTrackExposure: false
-  }), X = (0, _.Z)({}), Q = z && j === P.Wt.DM_CHANNEL, J = q === h.u.POPULAR ? D.intl.string(D.t.Kwgrrr) : D.intl.string(D.t.r1huYR), $ = async (e, t) => {
+  }), X = (0, _.Z)({}), Q = z && k === P.Wt.DM_CHANNEL, J = q === h.u.POPULAR ? D.intl.string(D.t.Kwgrrr) : D.intl.string(D.t.r1huYR), $ = async (e, t) => {
     U(true), null != E && y(), await (0, c.B1)(e.id, t) || y(D.intl.string(D.t["4kgVqQ"])), U(false)
   };
   (0, o.ZP)(() => {
-    null != Z && null != x && (j !== P.Wt.DM_CHANNEL_WISHLIST && I.default.track(R.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != Z && null != x && (k !== P.Wt.DM_CHANNEL_WISHLIST && I.default.track(R.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: Z
     }), $(x, Z))
   });
   let ee = e => {
-      j !== P.Wt.DM_CHANNEL_WISHLIST && I.default.track(R.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+      k !== P.Wt.DM_CHANNEL_WISHLIST && I.default.track(R.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
       }), null != x && $(x, e), F(e)
     },
@@ -191,7 +191,7 @@ function U(e) {
         skusById: W,
         formatPrice: T.T4
       });
-      return j === P.Wt.USER_PROFILE_WISHLIST || j === P.Wt.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {
+      return k === P.Wt.USER_PROFILE_WISHLIST || k === P.Wt.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {
         className: w.bodyColumnRight,
         children: [(0, r.jsx)(b.s, {
           giftRecipient: x
@@ -237,7 +237,7 @@ function U(e) {
         "data-migration-pending": true,
         justify: p.Z.Justify.BETWEEN,
         align: p.Z.Align.CENTER,
-        children: (0, r.jsx)(k, {
+        children: (0, r.jsx)(j, {
           onStepChange: t,
           onBackClick: n,
           disabled: null != E || null == x || x.id === (null == K ? true : K.id) || s.length > P.$n,

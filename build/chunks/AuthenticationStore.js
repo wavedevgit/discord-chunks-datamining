@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.r(exports), require.d(exports, {
-  default: () => ek
+  default: () => ej
 }), require("./539854.js"), require("./358797.js"), require("./415506.js");
 var a, Chunk213919 = require("./213919.js"),
   Chunk756647 = require("./756647.js"),
@@ -43,8 +43,8 @@ let R = new Chunk710845.Z("AuthenticationStore"),
   L = null,
   x = null,
   M = null,
-  j = null,
   k = null,
+  j = null,
   U = null,
   G = null,
   B = null,
@@ -74,8 +74,8 @@ function ee(e) {
 function et() {
   var e;
   let t = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  if (k = Chunk433517.K.get(P), G = null != (e = Chunk433517.K.get(D)) ? module : null, null != q) return q;
-  let n = null != k ? k : Chunk213919.getToken();
+  if (j = Chunk433517.K.get(P), G = null != (e = Chunk433517.K.get(D)) ? module : null, null != q) return q;
+  let n = null != j ? j : Chunk213919.getToken();
   !(0, Chunk703656.m1)() || !exports && null != require || Chunk117240.Z.isHandoffAvailable() || en({
     withGuildExperiments: true
   })
@@ -85,7 +85,7 @@ function en(e) {
   let {
     withGuildExperiments: t
   } = e, n = {}, r = O.default.getSuperPropertiesBase64();
-  null != r && (n["X-Super-Properties"] = r), null != k && (n["X-Fingerprint"] = k), null != G && (n["X-Installation-ID"] = G), q = c.tn.get({
+  null != r && (n["X-Super-Properties"] = r), null != j && (n["X-Fingerprint"] = j), null != G && (n["X-Installation-ID"] = G), q = c.tn.get({
     url: A.ANM.EXPERIMENTS,
     query: {
       with_guild_experiments: t
@@ -124,7 +124,7 @@ function en(e) {
 }
 
 function er() {
-  U = k, k = null, Chunk433517.K.remove(P)
+  U = j, j = null, Chunk433517.K.remove(P)
 }
 
 function ei(e, t) {
@@ -230,11 +230,11 @@ function ey(e) {
 
 function eO(e) {
   let t = e.fingerprint;
-  null == k ? null != t ? (O.default.track(A.rMx.USER_FINGERPRINT_CHANGED, {
+  null == j ? null != t ? (O.default.track(A.rMx.USER_FINGERPRINT_CHANGED, {
     old_fingerprint: null != U ? (0, s.s)(U) : null,
     new_fingerprint: (0, s.s)(t)
-  }), k = t, U = t, u.K.set(P, k)) : et() : null != t && k !== t && O.default.track(A.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
-    fingerprint: (0, s.s)(k),
+  }), j = t, U = t, u.K.set(P, j)) : et() : null != t && j !== t && O.default.track(A.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
+    fingerprint: (0, s.s)(j),
     dropped_fingerprint: (0, s.s)(t)
   })
 }
@@ -264,7 +264,7 @@ function eT(e) {
     auth: o,
     staticAuthSessionId: s
   } = e;
-  ee("handleConnectionOpen called"), I.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, y.Z)(n)), x = r, M = i, j = s, ea(a), L = n.id, true !== o && (V = o.authenticator_types), u.K.set(w, n.id)
+  ee("handleConnectionOpen called"), I.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, y.Z)(n)), x = r, M = i, k = s, ea(a), L = n.id, true !== o && (V = o.authenticator_types), u.K.set(w, n.id)
 }
 
 function eS(e) {
@@ -348,7 +348,7 @@ function ex(e) {
 function eM() {
   X = null, Z = Chunk981631.u34.NONE, eP(), setImmediate(() => (0, Chunk703656.uL)(Chunk981631.Z5c.DEFAULT_LOGGED_OUT))
 }
-class ej extends(a = Chunk442837.ZP.Store) {
+class ek extends(a = Chunk442837.ZP.Store) {
   initialize() {
     L = Chunk433517.K.get(w), null == Chunk213919.getToken() && et(), this.addChangeListener(() => (0, Chunk670890.u)(L))
   }
@@ -365,7 +365,7 @@ class ej extends(a = Chunk442837.ZP.Store) {
     return M
   }
   getStaticAuthSessionId() {
-    return j
+    return k
   }
   getToken() {
     return (0, Chunk449934.LP)()
@@ -374,7 +374,7 @@ class ej extends(a = Chunk442837.ZP.Store) {
     return (0, Chunk449934.$8)()
   }
   getFingerprint() {
-    return k
+    return j
   }
   getInstallationForTracking() {
     return Chunk625143.Z.canUseInstallationId() ? G : null
@@ -411,8 +411,8 @@ class ej extends(a = Chunk442837.ZP.Store) {
     return J
   }
 }
-N(ej, "displayName", "AuthenticationStore");
-let ek = new ej(Chunk570140.Z, {
+N(ek, "displayName", "AuthenticationStore");
+let ej = new ek(Chunk570140.Z, {
   CONNECTION_OPEN: eT,
   OVERLAY_INITIALIZE: eS,
   CONNECTION_CLOSED: eA,

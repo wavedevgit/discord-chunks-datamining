@@ -172,7 +172,7 @@ function M() {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     sectionType: t,
     sectionTitle: n,
@@ -229,7 +229,7 @@ function j(e) {
     })
   })
 }
-let k = () => {
+let j = () => {
     let e = (0, Chunk880257.Z)(),
       t = (0, Chunk631885.zu)(),
       n = module ? Chunk292352.AG : Chunk292352.i0,
@@ -238,7 +238,7 @@ let k = () => {
         max: require
       },
       a = (0, Chunk785681.o)(Chunk388032.intl.formatToPlainString(Chunk744038.default["+tnO34"], Chunk473749), Chunk388032.intl.formatToPlainString(Chunk744038.default["pu6/U0"], Chunk473749));
-    return exports.length > 0 ? (0, Chunk54381.jsx)(j, {
+    return exports.length > 0 ? (0, Chunk54381.jsx)(k, {
       sectionType: Chunk292352.ne.ACTIVE,
       sectionTitle: Chunk120356,
       requests: exports
@@ -311,7 +311,7 @@ let k = () => {
       }), Chunk388032.intl.formatToPlainString(Chunk744038.default.Q8XnAa, {
         count: module.length
       }));
-    return 0 === module.length ? null : (0, Chunk54381.jsx)(j, {
+    return 0 === module.length ? null : (0, Chunk54381.jsx)(k, {
       sectionType: Chunk292352.ne.PENDING,
       sectionTitle: exports,
       requests: module
@@ -321,6 +321,6 @@ let k = () => {
     let e = (0, Chunk880257.Z)();
     return (0, Chunk54381.jsxs)("div", {
       className: Chunk790680.container,
-      children: [module ? (0, Chunk54381.jsx)(x, {}) : (0, Chunk54381.jsx)(M, {}), (0, Chunk54381.jsx)(k, {}), (0, Chunk54381.jsx)(B, {}), (0, Chunk54381.jsx)(U, {}), (0, Chunk54381.jsx)(G, {})]
+      children: [module ? (0, Chunk54381.jsx)(x, {}) : (0, Chunk54381.jsx)(M, {}), (0, Chunk54381.jsx)(j, {}), (0, Chunk54381.jsx)(B, {}), (0, Chunk54381.jsx)(U, {}), (0, Chunk54381.jsx)(G, {})]
     })
   }

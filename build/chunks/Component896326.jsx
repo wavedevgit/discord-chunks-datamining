@@ -1,7 +1,7 @@
 /** Chunk was on 53159 **/
 /** chunk id: 896326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => Z
+  default: () => R
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,14 +33,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk88490 = require("./88490.js"),
   Chunk466674 = require("./466674.js");
 
-function R() {
+function I() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     [t, n] = Chunk473749.useState(!module),
     [a, d] = Chunk473749.useState(false),
-    m = Chunk473749.useRef(null),
-    p = (0, Chunk410030.ZP)(),
-    h = (0, Chunk481060.apv)(Chunk335131),
-    _ = Chunk507808 ? Chunk345554.Z : Chunk582425.Z,
+    p = Chunk473749.useRef(null),
+    m = (0, Chunk410030.ZP)(),
+    _ = (0, Chunk481060.apv)(Chunk335131),
+    h = Chunk507808 ? Chunk345554.Z : Chunk582425.Z,
     j = Chunk507808 ? Chunk466674.Z : Chunk88490.Z;
   Chunk473749.useEffect(() => {
     if (!exports && !module) {
@@ -48,7 +48,7 @@ function R() {
       null == (n = Chunk100527.current) || require.play()
     }
   }, [exports, module]);
-  let y = (0, Chunk481060.q_F)({
+  let g = (0, Chunk481060.q_F)({
     from: {
       y: 50
     },
@@ -99,7 +99,7 @@ function R() {
   })
 }
 
-function T(e) {
+function Z(e) {
   let {
     transitionState: t,
     balance: n,
@@ -126,13 +126,13 @@ function T(e) {
         type: l.RAz.SPINNING_CIRCLE
       })
     }) : "success" === o ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(R, {}), (0, r.jsx)(l.Heading, {
+      children: [(0, r.jsx)(I, {}), (0, r.jsx)(l.Heading, {
         variant: "heading-lg/medium",
         className: N.title,
         children: S.intl.format(S.t["8l9H0s"], {
           balanceHook: () => (0, r.jsxs)("span", {
             className: N.orbsBalance,
-            children: [(0, r.jsx)(y.Z, {
+            children: [(0, r.jsx)(g.Z, {
               shouldUseThemeColor: true,
               className: N.orbsBalanceIcon
             }), n]
@@ -156,7 +156,7 @@ function T(e) {
           variant: "secondary",
           fullWidth: true,
           text: S.intl.string(S.t["7kTAgJ"]),
-          onClick: () => window.open(g.EYA.PAID_TERMS_ORBS)
+          onClick: () => window.open(O.EYA.PAID_TERMS_ORBS)
         })]
       })]
     }) : (0, r.jsxs)("div", {
@@ -189,7 +189,7 @@ function T(e) {
   })
 }
 
-function Z(e) {
+function R(e) {
   var t, n, {
       quest: a,
       onClose: o
@@ -211,10 +211,10 @@ function Z(e) {
     }(e, ["quest", "onClose"]);
   let {
     balance: c
-  } = (0, _.A)(), l = function(e, t, n) {
+  } = (0, h.A)(), l = function(e, t, n) {
     let [r, a] = s.useState("loading"), [o, i] = s.useState(false), {
       balance: c
-    } = (0, _.A)(), l = (0, d.Z)(c), [u, b] = s.useState(false);
+    } = (0, h.A)(), l = (0, d.Z)(c), [u, b] = s.useState(false);
     return (s.useEffect(() => {
       let e = null;
       return "success" === r && t && (e = setTimeout(() => {
@@ -225,7 +225,7 @@ function Z(e) {
     }, [r, t]), s.useEffect(() => {
       !o && null != c && null != l && c > l && i(true)
     }, [c, l, o]), s.useEffect(() => {
-      (0, O.QB)(e, x.y$.CROSS_PLATFORM, n).then(e => {
+      (0, x.QB)(e, y.y$.CROSS_PLATFORM, n).then(e => {
         if ((null == e ? true : e.claimedAt) != null) return void a("success");
         a("error")
       }).catch(() => {
@@ -233,18 +233,18 @@ function Z(e) {
       })
     }, [e, n]), "error" === r) ? r : "success" === r && (o || u) ? "success" : "loading"
   }(a.id, a.preview, i.location), u = s.useCallback(() => {
-    o(), (0, h.Y)({
-      pageType: g.ZY5.GLOBAL_DISCOVERY_QUESTS,
-      sectionType: g.jXE.ORBS_REWARD_MODAL,
-      ctaObject: g.qAy.CTA_TO_ORBS_SHOP
-    }), (0, p.mK)({
+    o(), (0, _.Y)({
+      pageType: O.ZY5.GLOBAL_DISCOVERY_QUESTS,
+      sectionType: O.jXE.ORBS_REWARD_MODAL,
+      ctaObject: O.qAy.CTA_TO_ORBS_SHOP
+    }), (0, m.mK)({
       tab: C.AW.ORBS,
       analyticsLocations: [],
-      analyticsSource: a.id === v.V6 ? m.Z.INTRO_TO_ORBS_QUEST : m.Z.QUEST_HOME_PAGE
+      analyticsSource: a.id === v.V6 ? p.Z.INTRO_TO_ORBS_QUEST : p.Z.QUEST_HOME_PAGE
     })
   }, [o, a.id]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(j.o, {}), (0, r.jsx)(T, (t = function(e) {
+    children: [(0, r.jsx)(j.o, {}), (0, r.jsx)(Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

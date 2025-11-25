@@ -335,9 +335,9 @@ function P(e) {
   i.useEffect(() => {
     M.isUsingKeyboardNavigation ? f.Z.keyboardModeEnabled || (0, d.Qj)() : f.Z.keyboardModeEnabled && (0, d.rf)()
   }, [M.isUsingKeyboardNavigation]);
-  let j = i.useRef(null);
-  (0, u.Tbt)(j);
-  let k = s ? u.u2D : u.zJl,
+  let k = i.useRef(null);
+  (0, u.Tbt)(k);
+  let j = s ? u.u2D : u.zJl,
     U = i.useMemo(() => ({
       onSelect: I,
       onInteraction: T
@@ -350,9 +350,9 @@ function P(e) {
         "--custom-menu-viewport-padding": L ? "".concat(g.sb, "px") : "".concat(g.F3, "px")
       }
     }, M.getContainerProps()), {
-      ref: j,
+      ref: k,
       "aria-label": e["aria-label"],
-      children: (0, r.jsxs)(k, {
+      children: (0, r.jsxs)(j, {
         className: E.scroller,
         children: [0 === A.length && (0, r.jsx)(m.ck, {
           disabled: true,

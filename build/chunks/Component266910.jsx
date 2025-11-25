@@ -91,8 +91,8 @@ let C = function(e) {
     } = e,
     x = S(e, ["style", "src", "backgroundSrc", "userId", "guildId", "pulseSpeakingIndicator", "speaking"]);
   let M = null != R ? R : N,
-    j = (0, c.ZP)(M, s.Z.unsafe_rawColors.PRIMARY_800.css),
-    k = (0, u.c)(true, "VideoBackground-web").enabled,
+    k = (0, c.ZP)(M, s.Z.unsafe_rawColors.PRIMARY_800.css),
+    j = (0, u.c)(true, "VideoBackground-web").enabled,
     U = (0, _.ZP)(null != P ? P : E.lds, D),
     G = null != (O = (0, f.V3)(null == U || null == (t = U.themeColors) ? true : t[0])) ? O : E.BRd.DARK,
     {
@@ -111,7 +111,7 @@ let C = function(e) {
     {
       useProfileColors: V
     } = (0, g.$i)("VideoBackground-web"),
-    H = V || k;
+    H = V || j;
   if (i.useEffect(() => {
       null != P && H && (0, h.Z)(P, true, {
         guildId: D,
@@ -123,9 +123,9 @@ let C = function(e) {
       src: N
     }, x)),
     W = T(v({}, C), {
-      backgroundColor: j
+      backgroundColor: k
     });
-  return null != F && L && k && (W.backgroundImage = "url(".concat(F, ")"), W.backgroundSize = "cover"), (0, r.jsx)("div", {
+  return null != F && L && j && (W.backgroundImage = "url(".concat(F, ")"), W.backgroundSize = "cover"), (0, r.jsx)("div", {
     style: V ? v({}, C, B) : v({}, W),
     className: o()(y.background, {
       [Z]: V

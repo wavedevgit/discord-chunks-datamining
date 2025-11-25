@@ -1,7 +1,7 @@
 /** Chunk was on 64271 **/
 /** chunk id: 608949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -34,13 +34,13 @@ u(f, "displayName", "GuildPowerupsNotificationStore"), u(f, "persistKey", "Guild
   let [n, r] = t;
   e[n] = r
 }), e)]);
-let h = new f(Chunk570140.Z, {
+let p = new f(Chunk570140.Z, {
   GUILD_POWERUPS_ACK_NOTIFICATION: function(e) {
-    var t, n, r, i, l, f, h, p;
+    var t, n, r, i, l, f, p, h;
     let {
       guildId: g
     } = e, m = null != (r = null == (t = o.Z.getGuild(g)) ? true : t.premiumSubscriberCount) ? r : 0, b = s.Z.getStateForGuild(g), _ = a.Z.getStateForGuild(g), y = (0, c.h)([...Object.values(null != (i = null == b ? true : b.unlockedPowerups) ? i : {}), ...Object.values(null != (l = null == _ ? true : _.entitlements) ? l : {})]);
-    h = function(e) {
+    p = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -51,21 +51,21 @@ let h = new f(Chunk570140.Z, {
         })
       }
       return e
-    }({}, d), p = p = {
+    }({}, d), h = h = {
       [g]: {
         lastSeenWarningNotification: new Date(null != (f = null == (n = y[y.length - 1]) ? true : n.ends_at) ? f : Date.now()).getTime(),
         lastBoostCount: m
       }
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(h, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(p, Object.getOwnPropertyDescriptors(h)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(p)).forEach(function(e) {
-      Object.defineProperty(h, e, Object.getOwnPropertyDescriptor(p, e))
-    }), d = h
+    })(Object(h)).forEach(function(e) {
+      Object.defineProperty(p, e, Object.getOwnPropertyDescriptor(h, e))
+    }), d = p
   },
   GUILD_POWERUPS_RESET_NOTIFICATIONS: function() {
     d = {}

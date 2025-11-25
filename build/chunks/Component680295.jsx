@@ -65,14 +65,14 @@ let I = e => {
     } = E, D = v ? f.JH : .1, [w, L] = i.useState(-D), {
       stop: x,
       reset: M,
-      ticking: j
+      ticking: k
     } = (0, p.Z)(e => {
       L(t => t + e)
-    }), k = i.useRef(D);
+    }), j = i.useRef(D);
     i.useEffect(() => {
-      k.current = D
+      j.current = D
     }), i.useEffect(() => {
-      L(-k.current), S((0, m.H)(E.effects))
+      L(-j.current), S((0, m.H)(E.effects))
     }, [E]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
@@ -83,8 +83,8 @@ let I = e => {
     }, [R, T]);
     let [U, G] = i.useState(false);
     return i.useEffect(() => {
-      true === u || l || (x(), L(0)), !l && U && j.current && (x(), L(0)), a && l && !j.current && (M(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? L(d === _.Q.FromStart ? 0 : A) : L(0))
-    }, [l, U, A, a, x, M, j, E.animationType, u, d]), (0, r.jsx)("div", {
+      true === u || l || (x(), L(0)), !l && U && k.current && (x(), L(0)), a && l && !k.current && (M(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? L(d === _.Q.FromStart ? 0 : A) : L(0))
+    }, [l, U, A, a, x, M, k, E.animationType, u, d]), (0, r.jsx)("div", {
       ref: I,
       className: o()(y.profileEffects, {
         [y.hovered]: l && c
@@ -94,7 +94,7 @@ let I = e => {
       children: (0, r.jsx)("div", {
         className: O ? y.innerNoRadius : y.inner,
         children: T.map((e, i) => {
-          if (!j.current && E.animationType === s.y.ANIMATION_TYPE_PERSISTENT && null != E.staticFrameSrc && 0 === i && true === u) {
+          if (!k.current && E.animationType === s.y.ANIMATION_TYPE_PERSISTENT && null != E.staticFrameSrc && 0 === i && true === u) {
             var a, o, l, c;
             let {
               staticFrameSrc: n
@@ -113,7 +113,7 @@ let I = e => {
           return (0, r.jsx)(g.Z, {
             layerConfig: e,
             animationType: E.animationType,
-            ticking: j.current,
+            ticking: k.current,
             time: w,
             hasPlayedThrough: U,
             setHasPlayedThrough: G,

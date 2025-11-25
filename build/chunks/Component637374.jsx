@@ -212,7 +212,7 @@ class q extends Chunk473749.Component {
       sku: r
     } = this.props;
     return this.isCustomGiftMessage() && !n ? Z.intl.formatToPlainString(Z.t.t1SOId, {
-      recipientDisplayName: k.ZP.getName(t)
+      recipientDisplayName: j.ZP.getName(t)
     }) : null == r ? null : e.isSubscription ? n ? Z.intl.string(Z.t["2PJ1NP"]) : Z.intl.string(Z.t.hrnGng) : n ? Z.intl.string(Z.t.QLEMld) : Z.intl.string(Z.t.W4DBcy)
   }
   renderBody(e) {
@@ -246,11 +246,11 @@ class q extends Chunk473749.Component {
     });
     if (e.isExistingPremiumSubscriptionDisallowed) return Z.intl.string(Z.t.UCIU9y);
     if (e.hasMultipleCopies) return null != i ? e.isSubscription ? Z.intl.format(Z.t.l3VxgG, {
-      username: k.ZP.getUserTag(i),
+      username: j.ZP.getUserTag(i),
       maxUses: e.maxUses,
       skuName: s
     }) : Z.intl.format(Z.t["9cYrw5"], {
-      username: k.ZP.getUserTag(i),
+      username: j.ZP.getUserTag(i),
       totalCopies: e.maxUses,
       skuName: s
     }) : e.isSubscription ? Z.intl.formatToPlainString(Z.t.svrO3W, {
@@ -265,7 +265,7 @@ class q extends Chunk473749.Component {
       if (null != i) {
         let e = a.interval === B.rV.MONTH ? Z.t["/RDIEA"] : Z.t["3CX6Ev"];
         return Z.intl.format(e, {
-          username: k.ZP.getUserTag(i),
+          username: j.ZP.getUserTag(i),
           skuName: s,
           intervalCount: a.intervalCount
         })
@@ -277,7 +277,7 @@ class q extends Chunk473749.Component {
       })
     }
     return null != i ? Z.intl.format(Z.t["3HsdQ/"], {
-      username: k.ZP.getUserTag(i)
+      username: j.ZP.getUserTag(i)
     }) : Z.intl.string(Z.t.Jdnjjj)
   }
   renderPromotionActions() {
@@ -431,7 +431,7 @@ let X = (0, Chunk112724.Z)((0, Chunk730749.Z)(q)),
     } = (0, c.cj)([N.Z], () => ({
       giftCode: N.Z.get(t),
       resolved: N.Z.getIsResolved(t)
-    })), o = (0, c.e7)([P.default], () => null != i && null != i.userId ? P.default.getUser(i.userId) : null), s = (0, c.e7)([D.Z], () => null != i ? D.Z.get(i.skuId) : null), l = (0, c.e7)([R.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? x.z2(i.entitlementBranches, s, R.Z) : null), u = (0, m.q)(null == s ? true : s.applicationId), d = (0, j.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([C.default], () => null != i ? C.default.getId() === i.userId : C.default.getId() === n.id);
+    })), o = (0, c.e7)([P.default], () => null != i && null != i.userId ? P.default.getUser(i.userId) : null), s = (0, c.e7)([D.Z], () => null != i ? D.Z.get(i.skuId) : null), l = (0, c.e7)([R.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? x.z2(i.entitlementBranches, s, R.Z) : null), u = (0, m.q)(null == s ? true : s.applicationId), d = (0, k.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([C.default], () => null != i ? C.default.getId() === i.userId : C.default.getId() === n.id);
     return (0, r.jsx)(X, W(H({}, e), {
       skuApplication: u,
       giftCode: i,

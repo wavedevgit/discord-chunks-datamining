@@ -196,7 +196,7 @@ class M {
     })
   }
 }
-class j {
+class k {
   update() {
     let e = this.game,
       t = Chunk998502.ZP.GetWindowFullscreenTypeByPid(module.pid, module.name, module.fullscreenType);
@@ -265,7 +265,7 @@ class j {
   }
 }
 
-function k() {
+function j() {
   try {
     return crypto.randomUUID()
   } catch (e) {
@@ -470,7 +470,7 @@ class U {
   }
   constructor(e) {
     var t, n;
-    A(this, "game", true), A(this, "uuid", true), A(this, "overlayStatus", true), A(this, "overlayMethod", true), A(this, "overlayMethodStats", true), A(this, "overlayState", true), A(this, "overlayStateRaw", true), A(this, "overlayStateReason", true), A(this, "overlayStateRawReason", true), A(this, "notificationAnalytics", true), A(this, "widgetAnalytics", true), A(this, "screenAnalytics", true), A(this, "uiUnlockedCount", true), A(this, "uiLockedCount", true), A(this, "gameFocusChangedCount", true), A(this, "gameConcurrentGameCount", true), A(this, "overlayMessageAckCount", true), A(this, "overlayMessageCreateCount", true), A(this, "gameTimer", true), A(this, "gameFocusedTimer", true), A(this, "unlockedTimer", true), A(this, "rtcConnectionTimer", true), A(this, "desktopFocusedTimer", true), A(this, "desktopFocusChangedCount", true), A(this, "desktopMessageAckCount", true), A(this, "desktopMessageCreateCount", true), A(this, "soundboardShownTimer", true), A(this, "soundboardShownCount", true), A(this, "soundboardKeepOpenCount", true), A(this, "muteToggledCount", true), A(this, "_successfullyShown", true), this.game = e, this.uuid = k(), this.overlayMethod = null, this.overlayMethodStats = null, this.overlayState = null, this.overlayStateRaw = null, this.overlayStateReason = null, this.overlayStateRawReason = null, this.notificationAnalytics = new x, this.widgetAnalytics = new M, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = i.G9.startNew(), this.gameFocusedTimer = new i.G9, this.unlockedTimer = new i.G9, this.rtcConnectionTimer = new i.G9, this.desktopFocusedTimer = new i.G9, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new i.G9, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.muteToggledCount = 0, this._successfullyShown = false, this.screenAnalytics = new j(e), this.overlayStatus = (0, d.b6)(e), this.overlayMethod = null != (n = null == (t = this.overlayStatus) ? true : t.overlayMethod) ? n : null, this.overlayMethodStats = this.buildOverlayMethodStats(this.overlayMethod, e), U.desktopMainWindowHasFocus && this.desktopFocusedTimer.start(), ee.hasConnection() && this.rtcConnectionTimer.start()
+    A(this, "game", true), A(this, "uuid", true), A(this, "overlayStatus", true), A(this, "overlayMethod", true), A(this, "overlayMethodStats", true), A(this, "overlayState", true), A(this, "overlayStateRaw", true), A(this, "overlayStateReason", true), A(this, "overlayStateRawReason", true), A(this, "notificationAnalytics", true), A(this, "widgetAnalytics", true), A(this, "screenAnalytics", true), A(this, "uiUnlockedCount", true), A(this, "uiLockedCount", true), A(this, "gameFocusChangedCount", true), A(this, "gameConcurrentGameCount", true), A(this, "overlayMessageAckCount", true), A(this, "overlayMessageCreateCount", true), A(this, "gameTimer", true), A(this, "gameFocusedTimer", true), A(this, "unlockedTimer", true), A(this, "rtcConnectionTimer", true), A(this, "desktopFocusedTimer", true), A(this, "desktopFocusChangedCount", true), A(this, "desktopMessageAckCount", true), A(this, "desktopMessageCreateCount", true), A(this, "soundboardShownTimer", true), A(this, "soundboardShownCount", true), A(this, "soundboardKeepOpenCount", true), A(this, "muteToggledCount", true), A(this, "_successfullyShown", true), this.game = e, this.uuid = j(), this.overlayMethod = null, this.overlayMethodStats = null, this.overlayState = null, this.overlayStateRaw = null, this.overlayStateReason = null, this.overlayStateRawReason = null, this.notificationAnalytics = new x, this.widgetAnalytics = new M, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = i.G9.startNew(), this.gameFocusedTimer = new i.G9, this.unlockedTimer = new i.G9, this.rtcConnectionTimer = new i.G9, this.desktopFocusedTimer = new i.G9, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new i.G9, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.muteToggledCount = 0, this._successfullyShown = false, this.screenAnalytics = new k(e), this.overlayStatus = (0, d.b6)(e), this.overlayMethod = null != (n = null == (t = this.overlayStatus) ? true : t.overlayMethod) ? n : null, this.overlayMethodStats = this.buildOverlayMethodStats(this.overlayMethod, e), U.desktopMainWindowHasFocus && this.desktopFocusedTimer.start(), ee.hasConnection() && this.rtcConnectionTimer.start()
   }
 }
 

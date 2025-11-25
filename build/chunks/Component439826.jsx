@@ -109,8 +109,8 @@ function B(e) {
     month: "numeric",
     day: "numeric"
   }), U = (null == (n = m.userStatus) ? true : n.enrolledAt) != null, F = (null == (o = m.userStatus) ? true : o.completedAt) != null, {
-    onAssetLoadComplete: z
-  } = s.useContext(O.k), G = s.useCallback(async () => {
+    onAssetLoadComplete: G
+  } = s.useContext(O.k), z = s.useCallback(async () => {
     Q && ((0, _.zi)(m) || U ? (0, E.openVideoQuestModal)({
       quest: m,
       questContent: x.jn.QUEST_HOME_DESKTOP,
@@ -174,7 +174,7 @@ function B(e) {
             children: (0, r.jsx)(d.P3F, {
               className: A.utilButtonWrapper,
               "aria-label": N.intl.string(N.t.RscU7I),
-              onClick: G,
+              onClick: z,
               children: (0, r.jsx)(d.o1U, {
                 color: "currentColor",
                 className: A.utilButtonIcon
@@ -240,7 +240,7 @@ function B(e) {
             quest: m,
             separatorSpacing: y.US.MEDIUM,
             withGameTile: false,
-            onLoadComplete: z
+            onLoadComplete: G
           })
         }), (0, r.jsxs)("div", {
           className: A.bottomRow,

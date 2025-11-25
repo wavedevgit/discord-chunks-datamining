@@ -20,15 +20,15 @@ function d(e) {
       checked: !(null == n ? true : n.disableRaidAlertNag),
       label: o.intl.string(o.t.u6dc5B),
       description: o.intl.string(o.t.z8Td48),
-      onChange: () => (0, a.PS)(t, e => {
-        e.disableRaidAlertNag = !e.disableRaidAlertNag
+      onChange: e => (0, a.PS)(t, t => {
+        t.disableRaidAlertNag = !e
       }, a.fy.INFREQUENT_USER_ACTION)
     }), (0, i.jsx)(s.rsf, {
       checked: !(null == n ? true : n.disableRaidAlertPush),
       label: o.intl.string(o.t.P8MG6q),
       description: o.intl.string(o.t.PyxXs8),
-      onChange: () => (0, a.PS)(t, e => {
-        e.disableRaidAlertPush = !e.disableRaidAlertPush
+      onChange: e => (0, a.PS)(t, t => {
+        t.disableRaidAlertPush = !e
       }, a.fy.INFREQUENT_USER_ACTION)
     })]
   })

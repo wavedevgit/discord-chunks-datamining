@@ -4,7 +4,7 @@
 require.d(exports, {
   $z: () => S,
   Dp: () => O,
-  Ew: () => k,
+  Ew: () => j,
   HO: () => E,
   Jk: () => T,
   Jp: () => P,
@@ -110,9 +110,9 @@ function M(e) {
     filter: e
   } : null
 }
-let j = ["reward", "task"],
-  k = Object.entries((0, Chunk392711.groupBy)(x, "group")).sort((e, t) => {
-    let n = j.indexOf(e[0]),
-      r = j.indexOf(t[0]);
+let k = ["reward", "task"],
+  j = Object.entries((0, Chunk392711.groupBy)(x, "group")).sort((e, t) => {
+    let n = k.indexOf(e[0]),
+      r = k.indexOf(t[0]);
     return n < r ? false : +(r < n)
   })

@@ -101,7 +101,7 @@ let p = function(e) {
     })
   }
 
-  function j() {
+  function k() {
     switch (n) {
       case "cardNumber":
         return (0, r.jsxs)("div", {
@@ -160,7 +160,7 @@ let p = function(e) {
     children: [(0, r.jsx)("div", {
       ref: t,
       className: s()(f.hiddenDiv, _.input)
-    }), j(), (0, r.jsx)(c.pdY, {
+    }), k(), (0, r.jsx)(c.pdY, {
       error: I
     })]
   })

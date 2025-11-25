@@ -46,7 +46,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,7 +71,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -235,7 +235,7 @@ function Y(e, t, n) {
       var {
         onClick: t
       } = e, i = G(e, ["onClick"]);
-      if (a.type === w.uaV.CHAT_INPUT_COMMAND || a.type === w.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(f.P3F, U(j({}, i), {
+      if (a.type === w.uaV.CHAT_INPUT_COMMAND || a.type === w.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(f.P3F, U(k({}, i), {
         tag: "span",
         onClick: s,
         innerRef: n,
@@ -262,7 +262,7 @@ function Y(e, t, n) {
             })
           },
           t = (0, E.XZ)(c);
-        return (0, r.jsx)(f.P3F, U(j({}, i), {
+        return (0, r.jsx)(f.P3F, U(k({}, i), {
           tag: "span",
           onClick: e,
           innerRef: n,
@@ -300,7 +300,7 @@ function K(e) {
     S = (0, d.e7)([T.default], () => T.default.getCurrentUser()),
     A = i.useRef(null),
     R = i.useRef(null),
-    w = i.useMemo(() => (e, t, n) => (l()(null != t, "ExecutedCommand: user cannot be undefined"), l()(null != S, "ExecutedCommand: currentUser cannot be undefined"), l()(null != s, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(v.Z, U(j({}, e), {
+    w = i.useMemo(() => (e, t, n) => (l()(null != t, "ExecutedCommand: user cannot be undefined"), l()(null != S, "ExecutedCommand: currentUser cannot be undefined"), l()(null != s, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(v.Z, U(k({}, e), {
       user: t,
       currentUser: S,
       guildId: s.guild_id,
@@ -308,14 +308,14 @@ function K(e) {
       messageId: a.id,
       newAnalyticsLocations: n
     }))), [S, s, a.id]),
-    M = i.useMemo(() => e => (l()(null != s, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(P.Z, U(j({}, e), {
+    M = i.useMemo(() => e => (l()(null != s, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(P.Z, U(k({}, e), {
       channel: s,
       messageId: a.id,
       interactionData: a.interactionData
     }))), [s, a.id, a.interactionData]),
-    k = (0, y.t0)(a),
-    G = (null == k ? true : k.type) === _.B8.APPLICATION_COMMAND && null != k.target_user ? new I.Z(k.target_user) : null,
-    B = (null == k ? true : k.type) === _.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
+    j = (0, y.t0)(a),
+    G = (null == j ? true : j.type) === _.B8.APPLICATION_COMMAND && null != j.target_user ? new I.Z(j.target_user) : null,
+    B = (null == j ? true : j.type) === _.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
     Z = (0, N.Sw)(null == (t = a.interaction) ? true : t.user, s),
     F = (0, N.Sw)(G, s),
     K = i.useMemo(() => e.compact ? (0, D.Z)((0, C.vc)(u()(), "LT")) : null, [e.compact]),

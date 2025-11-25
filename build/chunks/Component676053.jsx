@@ -96,9 +96,9 @@ function S(e) {
       popoverRef: x,
       position: M
     } = e,
-    j = I(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef", "position"]);
+    k = I(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef", "position"]);
   let {
-    reducedMotion: k
+    reducedMotion: j
   } = i.useContext(o.Sfi), U = (0, a.C)(), G = null != (b = null == (t = (n = (0, o.ZFG)()).isWindowFocused) ? true : t.call(n)) ? b : U, B = i.useRef(null), Z = (0, o.j1L)(A), F = i.useCallback(() => ({
     type: "VIDEO",
     url: S,
@@ -110,8 +110,8 @@ function S(e) {
   }), [S, O]);
   i.useEffect(() => {
     var e, t;
-    null != B.current && (!k.enabled && G ? null == (e = B.current) || e.play().catch(h.dG) : null == (t = B.current) || t.pause())
-  }, [G, k.enabled]);
+    null != B.current && (!j.enabled && G ? null == (e = B.current) || e.play().catch(h.dG) : null == (t = B.current) || t.pause())
+  }, [G, j.enabled]);
   let V = i.useCallback(() => {
       null !== B.current && B.current.pause(), null == L || L()
     }, [L]),
@@ -137,7 +137,7 @@ function S(e) {
         src: A,
         width: 232,
         height: 131,
-        autoPlay: !k.enabled && G,
+        autoPlay: !j.enabled && G,
         muted: true,
         loop: true,
         playsInline: true,
@@ -154,16 +154,16 @@ function S(e) {
       })]
     }),
     K = y({
-      targetElementRef: j.targetElementRef,
-      shouldShow: j.shouldShow,
-      scrollBehavior: j.scrollBehavior,
+      targetElementRef: k.targetElementRef,
+      shouldShow: k.shouldShow,
+      scrollBehavior: k.scrollBehavior,
       position: M,
       onRequestClose: V,
       hasVideo: true,
       caretConfig: R
-    }, "edge" === j.alignmentStrategy ? {
+    }, "edge" === k.alignmentStrategy ? {
       alignmentStrategy: "edge",
-      align: j.align
+      align: k.align
     } : {
       alignmentStrategy: "trigger-center"
     });

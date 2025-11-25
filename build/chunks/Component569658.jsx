@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let j = e => {
+let v = e => {
   let {
     channel: {
       type: t
@@ -37,7 +37,7 @@ function f(e) {
   } = (0, r.cj)([g.Z], () => {
     let e = g.Z.getCategories(t);
     return {
-      channels: (0, o.Z)(e._categories, e, j),
+      channels: (0, o.Z)(e._categories, e, v),
       categories: e
     }
   }), f = l()(s).filter(e => {
@@ -55,7 +55,7 @@ function f(e) {
     }
   }).value();
   return (0, i.jsx)(a.VcW, {
-    description: v.intl.string(v.t["2Y9ZfA"]),
+    description: j.intl.string(j.t["2Y9ZfA"]),
     value: p.lds,
     onChange: n,
     options: f,
@@ -70,6 +70,6 @@ function f(e) {
         subtitle: s
       })
     },
-    placeholder: v.intl.string(v.t["Z+oF8h"])
+    placeholder: j.intl.string(j.t["Z+oF8h"])
   })
 }

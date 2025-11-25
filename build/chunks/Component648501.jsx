@@ -50,9 +50,9 @@ function N(e) {
     locked: F,
     video: (H || W) && null == V,
     selected: N
-  }), K = (0, i.e7)([h.Z], () => h.Z.getNewThreadCount(n.guild_id, n.id)), Y = (0, u.n2)(n.guild_id, n.id), q = (0, i.e7)([p.Z], () => {
+  }), K = (0, i.e7)([p.Z], () => p.Z.getNewThreadCount(n.guild_id, n.id)), Y = (0, u.n2)(n.guild_id, n.id), q = (0, i.e7)([h.Z], () => {
     var e, t;
-    return null != (t = null == (e = p.Z.getGuild(n.guild_id)) ? true : e.features.has(E.GuildFeatures.COMMUNITY)) && t
+    return null != (t = null == (e = h.Z.getGuild(n.guild_id)) ? true : e.features.has(E.GuildFeatures.COMMUNITY)) && t
   });
   if ((0, O.Z)(G)) return (0, r.jsx)(C.Z, {
     mentionsCount: G,

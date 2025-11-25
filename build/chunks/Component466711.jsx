@@ -68,13 +68,13 @@ function M(e, t) {
   return n
 }
 
-function j(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e) {
+function j(e) {
   let {
     tooltipsWithKeybinds: t
   } = S.n.useConfig({
@@ -116,7 +116,7 @@ function U(e) {
   return (0, r.jsx)(u.u, {
     shouldShow: a,
     text: P.intl.string(P.t.Ve9Ge6),
-    children: (0, r.jsx)(C.Z, j(x({
+    children: (0, r.jsx)(C.Z, k(x({
       className: w.button,
       "aria-label": P.intl.string(P.t.Z1RnTk),
       isActive: false,
@@ -154,7 +154,7 @@ function B(e) {
   } = (0, _.ZP)(f.Z.GIFT_BUTTON), [d, v] = i.useState(false), S = (0, s.e7)([y.Z], () => !(null === y.Z || true === y.Z ? true : y.Z.hasLayers())), C = (0, s.e7)([O.default], () => O.default.getCurrentUser()), P = null != C ? I.default.age(C.id) : 0, {
     giftBoxAnimation: w,
     trinketsAnimation: L
-  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, x = null != n.firstTimeNotice && !a && S && P >= G, [M, j] = (0, h.XR)(x ? l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, p.t)(l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), B = null != M, Z = d || B, F = (0, T.Ft)(c), V = c.type === N.d4z.DM, H = (0, b.ao)({
+  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, x = null != n.firstTimeNotice && !a && S && P >= G, [M, k] = (0, h.XR)(x ? l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, p.t)(l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), B = null != M, Z = d || B, F = (0, T.Ft)(c), V = c.type === N.d4z.DM, H = (0, b.ao)({
     location: "gift-promotion-button",
     isGift: true,
     giftRecipient: F
@@ -184,9 +184,9 @@ function B(e) {
       })
     },
     W = () => {
-      v(false), j(R.L.TAKE_ACTION), Y()
+      v(false), k(R.L.TAKE_ACTION), Y()
     },
-    K = true !== w ? (0, r.jsx)(k, {
+    K = true !== w ? (0, r.jsx)(j, {
       config: w,
       hovered: Z,
       onClick: W
@@ -211,7 +211,7 @@ function B(e) {
     children: true !== n.firstTimeNotice && B ? (0, r.jsx)(g.Z, {
       onComplete: () => v(false),
       onCheckItOutClick: Y,
-      markAsDismissed: j,
+      markAsDismissed: k,
       config: n.firstTimeNotice,
       children: K
     }) : K

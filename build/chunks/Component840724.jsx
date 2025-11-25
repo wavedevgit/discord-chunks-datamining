@@ -97,7 +97,7 @@ function z(e) {
     handleCardUnhover: eb
   } = (0, M.A)(ei, eh, en, em), {
     handleCardVisibilityChange: ey
-  } = (0, j.X)(ei, eh, en, em), eO = i.useCallback(e => {
+  } = (0, k.X)(ei, eh, en, em), eO = i.useCallback(e => {
     let {
       analyticsLocations: t,
       positionInSection: n
@@ -145,9 +145,9 @@ function z(e) {
       [n, r] = V[ea];
     return 0 === n && 0 === r ? "none" : "linear-gradient(to top, ".concat(e, " ").concat(H + n, "%, ").concat(t, " ").concat(H + r, "%)")
   }, [eC, ea]), eP = i.useCallback(() => {
-    eO(k.rZ.WISHLIST_BUTTON)
+    eO(j.rZ.WISHLIST_BUTTON)
   }, [eO]), eD = i.useCallback(e => {
-    if (eO(k.rZ.CARD), null != es) return void es(e);
+    if (eO(j.rZ.CARD), null != es) return void es(e);
     null != eo && (0, P.Z)({
       guildId: eo,
       pageIndex: eT,
@@ -238,7 +238,7 @@ function z(e) {
               children: [(0, r.jsx)(d.zxk, {
                 variant: "primary",
                 onClick: e => {
-                  e.stopPropagation(), eO(k.rZ.BUY_BUTTON), (0, w.P)(ed, {
+                  e.stopPropagation(), eO(j.rZ.BUY_BUTTON), (0, w.P)(ed, {
                     isGift: false
                   }, {
                     analyticsLocations: [m.Z.SLAYER_STOREFRONT_CARD_PURCHASE_BUTTON]
@@ -250,7 +250,7 @@ function z(e) {
                 fullWidth: true
               }), (0, r.jsx)(x.Z, {
                 onGift: e => {
-                  e.stopPropagation(), eO(k.rZ.GIFT_BUTTON), (0, w.P)(ed, {
+                  e.stopPropagation(), eO(j.rZ.GIFT_BUTTON), (0, w.P)(ed, {
                     isGift: true
                   }, {
                     analyticsLocations: [m.Z.SLAYER_STOREFRONT_CARD_GIFT_BUTTON]

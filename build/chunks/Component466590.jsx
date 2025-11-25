@@ -107,12 +107,12 @@ function O(e) {
       null == T || T()
     }, [T]);
   if (!A || null == D) return null;
-  let j = m({
+  let k = m({
       text: null != (a = null == (t = D.action) ? true : t.text) ? a : w ? _.intl.string(_.t.i4jeWR) : _.intl.string(_.t.PDTjLN),
       variant: null != (h = null == (n = D.action) ? true : n.variant) ? h : "primary",
       onClick: L
     }, D.action),
-    k = m({
+    j = m({
       targetElementRef: N.targetElementRef,
       hasVideo: N.hasVideo,
       scrollBehavior: N.scrollBehavior,
@@ -127,7 +127,7 @@ function O(e) {
     } : {
       alignmentStrategy: "trigger-center"
     });
-  return (0, r.jsx)(c.m, E(m({}, k), {
+  return (0, r.jsx)(c.m, E(m({}, j), {
     children: (0, r.jsxs)("div", {
       ref: S,
       children: [(0, r.jsx)(d.u, {
@@ -158,7 +158,7 @@ function O(e) {
             })
           }), (0, r.jsx)(l.zxk, m({
             size: "sm"
-          }, j))]
+          }, k))]
         })
       }), (0, r.jsx)(u.$, {})]
     })

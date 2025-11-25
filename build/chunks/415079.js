@@ -130,8 +130,8 @@ b(e => ({
   get: (t, n, r) => M(t, n) ? x : e.get(t, n, r),
   has: (t, n) => M(t, n) || e.has(t, n)
 }));
-let j = "sprigReplayIframeLoaded",
-  k = "sprigReplayIframeSettings",
+let k = "sprigReplayIframeLoaded",
+  j = "sprigReplayIframeSettings",
   U = "sprigReplayIframeTakeFullSnapshot",
   G = "sprigReplayTeardown",
   B = [],
@@ -560,8 +560,8 @@ let ev = new class {
   eL = false,
   ex = false,
   eM = [],
-  ej = false,
-  ek = () => eL && !eD && Date.now() <= eA,
+  ek = false,
+  ej = () => eL && !eD && Date.now() <= eA,
   eU = ({
     apiUrl: e,
     config: t,
@@ -579,16 +579,16 @@ let ev = new class {
   eB = e => e.type === f.Custom || e.type === f.IncrementalSnapshot && eG.includes(e.data.source),
   eZ = e => e.some(eB),
   eF = async () => {
-    if (!ek()) return void window.clearInterval(eR);
+    if (!ej()) return void window.clearInterval(eR);
     if (eV(), !eZ(eI)) return;
     let e = eI[0].timestamp;
     Date.now() - module > 35e3 && (null == eN || eN())
   }, eV = async () => {
-    if (eP.length || ej) return;
-    ej = true;
+    if (eP.length || ek) return;
+    ek = true;
     let e = await ez();
     if (!module) return void(eD = true);
-    eM.splice(0, module.length).forEach(t => t(e.shift())), module.forEach(e => eP.push(e)), ej = false
+    eM.splice(0, module.length).forEach(t => t(e.shift())), module.forEach(e => eP.push(e)), ek = false
   }, eH = () => {
     let e = Chunk555256.a.getItem("sprig.alwayson.info");
     if (module) {
@@ -612,7 +612,7 @@ let ev = new class {
       eD = true
     }
   }, eK = async (e, t) => {
-    if (!ek() || !e) return;
+    if (!ej() || !e) return;
     let n = await (async e => {
       let t = new TextEncoder,
         n = new CompressionStream("gzip"),
@@ -625,7 +625,7 @@ let ev = new class {
       method: "PUT"
     }), "uploading always-on with presigned url")
   }, ez = async () => {
-    if (!ek()) return;
+    if (!ej()) return;
     let {
       surveyId: e,
       responseGroupUuid: t
@@ -672,7 +672,7 @@ let ev = new class {
       }
     })
   }, eQ = (e, t) => {
-    ek() && !ex && (e || eI.length) && (e && eI.length && (async () => {
+    ej() && !ex && (e || eI.length) && (e && eI.length && (async () => {
       let e = eI.splice(0);
       if (!eZ(e)) return;
       l.b.info("Capturing always-on event array to upload"), eX(e);
@@ -681,7 +681,7 @@ let ev = new class {
     })(), eI.push(t))
   };
 window.addEventListener("beforeunload", async () => {
-  ex = true, ek() && (Chunk555256.b.info("Always On handle page unload"), (() => {
+  ex = true, ej() && (Chunk555256.b.info("Always On handle page unload"), (() => {
     let e;
     eI.length && (e = eI[0].timestamp);
     let t = {
@@ -1077,7 +1077,7 @@ let eJ = async (e, t) => {
     ey(async () => {
       await tt(true)
     }, "Error uploading ready pending captures");
-    let o = Math.max(e ?? 0, 30 * !!ek());
+    let o = Math.max(e ?? 0, 30 * !!ej());
     if (!o) return l.b.debug("MissingDuration");
     l.b.debug("ReplayInit"), await ey(async () => {
       var e, r, i;
@@ -1122,11 +1122,11 @@ let eJ = async (e, t) => {
       }), el.isRecording = !!el.stopRecording, el.isRecording && (((e, t) => {
         window.addEventListener("message", n => {
           var r;
-          n.data.type === j && (B.push({
+          n.data.type === k && (B.push({
             source: n.source,
             origin: n.origin
           }), null == (r = n.source) || r.postMessage({
-            type: k,
+            type: j,
             settings: e,
             replayLibraryUrl: t
           }, {

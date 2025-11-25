@@ -115,7 +115,7 @@ function F(e) {
   })
 }
 
-function z(e) {
+function G(e) {
   return (0, r.jsx)(m.Text, {
     className: H.description,
     variant: "text-xs/normal",
@@ -132,7 +132,7 @@ function z(e) {
   })
 }
 
-function G(e) {
+function z(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -172,7 +172,7 @@ function G(e) {
             children: W.intl.format(W.t.EQa7os, {
               questName: t.config.messages.questName
             })
-          }), (0, r.jsx)(z, {
+          }), (0, r.jsx)(G, {
             quest: t,
             taskDetails: n,
             popoutTargetElementRef: C,
@@ -308,14 +308,14 @@ function X(e) {
     onGameSheetClosed: _
   } = e, v = (null == (t = n.userStatus) ? true : t.completedAt) != null, E = o.percentComplete > 0, O = (0, j.z)(n), [S, T, w] = (0, j.me)(n, o), P = s.useRef(null), N = s.useRef(null), A = (0, j._s)({
     quest: n
-  }), W = (0, y.q8)(n), F = (0, j.Jf)(n), z = s.useCallback(() => {
+  }), W = (0, y.q8)(n), F = (0, j.Jf)(n), G = s.useCallback(() => {
     (0, R.openVideoQuestModal)({
       quest: n,
       questContent: C.jn.QUEST_BAR_V2,
       sourceQuestContent: C.jn.QUEST_BAR_V2,
       sourceQuestContentCTA: b.jZ.QUEST_BAR_VIDEO_QUEST_PREVIEW
     })
-  }, [n]), G = null != F ? F.percentComplete : o.percentComplete;
+  }, [n]), z = null != F ? F.percentComplete : o.percentComplete;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.animated.div, {
       className: a()(H.postEnrollmentBackground, H.postEnrollmentBackgroundCollapsed),
@@ -350,7 +350,7 @@ function X(e) {
         quest: n,
         progressBarRef: P,
         isExpanded: true,
-        percentComplete: G,
+        percentComplete: z,
         activeScreen: S,
         popoutTargetElementRef: N,
         onGameSheetOpened: x,
@@ -369,7 +369,7 @@ function X(e) {
         children: [W && (0, r.jsx)(U, {
           isExpanded: u,
           quest: n,
-          onClick: z,
+          onClick: G,
           reducedMotion: p
         }), (0, r.jsx)(k.y, {
           quest: n,
@@ -473,7 +473,7 @@ let J = Chunk473749.forwardRef(function(e, t) {
         containerRef: t,
         onGameSheetOpened: h,
         onGameSheetClosed: x
-      }) : (0, r.jsx)(G, {
+      }) : (0, r.jsx)(z, {
         quest: v,
         taskDetails: O,
         expansionSpring: p,

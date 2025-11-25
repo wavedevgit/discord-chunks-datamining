@@ -71,8 +71,8 @@ let R = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       showCoverImage: false
     }), {
       user: M,
-      details: j,
-      activity: k,
+      details: k,
+      activity: j,
       embeddedActivity: U
     } = (0, A.n)(n), {
       primaryColor: G,
@@ -118,7 +118,7 @@ let R = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
         channel: t,
         userDescription: (0, O.kr)(n) ? N.t.vPg1JT : N.t.rPqqts,
         title: n.extra.activity_name,
-        subtitle: j,
+        subtitle: k,
         badges: X,
         entry: n,
         showCoverImage: false,
@@ -126,10 +126,10 @@ let R = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
         onClickSubtitle: L ? true : W,
         onClickThumbnail: L ? true : W
       }),
-      J = (0, s.Z)(k, C.xjy.JOIN) || (0, l.Z)(k),
+      J = (0, s.Z)(j, C.xjy.JOIN) || (0, l.Z)(j),
       $ = J ? (0, r.jsx)(u.Z, {
         embeddedActivity: U,
-        activity: k,
+        activity: j,
         user: M,
         variant: "primary",
         size: "md",

@@ -27,7 +27,7 @@ function h(e) {
     autoFocus: s
   } = e, l = (0, d.useRef)(null), c = (0, d.useRef)(null), u = (0, d.useRef)([]), {
     parentNode: h
-  } = (0, d.useContext)(f) || {}, g = (0, d.useMemo)(() => new k({
+  } = (0, d.useContext)(f) || {}, g = (0, d.useMemo)(() => new j({
     scopeRef: u
   }), [u]);
   (0, r.b)(() => {
@@ -476,7 +476,7 @@ function M(e) {
   do(t = e.lastChild()) && (n = t); while (t);
   return n
 }
-class j {
+class k {
   get size() {
     return this.fastMap.size
   }
@@ -486,7 +486,7 @@ class j {
   addTreeNode(e, t, n) {
     let r = this.fastMap.get(null != t ? t : null);
     if (!r) return;
-    let i = new k({
+    let i = new j({
       scopeRef: e
     });
     r.addChild(i), i.parent = r, this.fastMap.set(e, i), n && (i.nodeToRestore = n)
@@ -508,17 +508,17 @@ class j {
   }
   clone() {
     var e, t;
-    let n = new j;
+    let n = new k;
     for (let r of this.traverse()) require.addTreeNode(Chunk159447.scopeRef, null != (t = null == (e = Chunk159447.parent) ? true : module.scopeRef) ? exports : null, Chunk159447.nodeToRestore);
     return require
   }
   constructor() {
-    this.fastMap = new Map, this.root = new k({
+    this.fastMap = new Map, this.root = new j({
       scopeRef: null
     }), this.fastMap.set(null, this.root)
   }
 }
-class k {
+class j {
   addChild(e) {
     this.children.add(e), e.parent = this
   }
@@ -529,4 +529,4 @@ class k {
     this.children = new Set, this.contain = false, this.scopeRef = e.scopeRef
   }
 }
-let U = new j
+let U = new k

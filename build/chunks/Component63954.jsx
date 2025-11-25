@@ -183,7 +183,7 @@ function W() {
     H(I(k({}, e), {
       preview: true
     }))
-  }, []), [F, z] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [G, K] = Chunk473749.useState(false), [X, Y] = Chunk473749.useState(false), [J, $] = Chunk473749.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
+  }, []), [F, G] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [z, K] = Chunk473749.useState(false), [X, Y] = Chunk473749.useState(false), [J, $] = Chunk473749.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -324,7 +324,7 @@ function W() {
       className: Chunk188764.fields,
       children: (0, Chunk54381.jsx)(Chunk916028.Z, {
         onSelect: function(e) {
-          $(e), null != e && (z(function(e) {
+          $(e), null != e && (G(function(e) {
             if (null == e.userStatus) return P.a.UNENROLLED;
             if (null != e.userStatus.claimedAt) return P.a.CLAIMED;
             if (null != e.userStatus.completedAt) return P.a.COMPLETED_100;
@@ -552,7 +552,7 @@ function W() {
         children: (0, Chunk54381.jsx)(Chunk815183.Z, {})
       }), (0, Chunk54381.jsx)(Chunk899457.Z, {
         onChange: function(e) {
-          switch (z(e), e) {
+          switch (G(e), e) {
             case P.a.UNENROLLED:
               U(I(k({}, W), {
                 userStatus: null
@@ -680,7 +680,7 @@ function W() {
               children: (0, Chunk54381.jsx)(Chunk801604.Z, {
                 channelId: "123",
                 previewQuest: W,
-                isParticipatingOverride: G
+                isParticipatingOverride: z
               })
             })
           })
@@ -689,7 +689,7 @@ function W() {
         className: Chunk188764.toggleSwitch,
         children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Is Participating:",
-          checked: G,
+          checked: z,
           onChange: function(e) {
             K(e)
           }

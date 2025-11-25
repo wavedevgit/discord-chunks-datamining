@@ -176,7 +176,7 @@ let k = Chunk473749.memo(function(e) {
     f.Z.preload(t.guild_id, t.id)
   }, [t.guild_id, t.id]), Y = i.useCallback(e => {
     let i = _.Z.getChannel(t.id);
-    null != i && (0, h.jW)(e, async () => {
+    null != i && (0, p.jW)(e, async () => {
       let {
         default: e
       } = await n.e("40157").then(n.bind(n, 422200));
@@ -257,7 +257,7 @@ let k = Chunk473749.memo(function(e) {
               className: T.threadIconWithAvatar,
               children: [(0, r.jsx)(M, {
                 thread: t
-              }), null == W ? null : (0, r.jsx)(p.Z, {
+              }), null == W ? null : (0, r.jsx)(h.Z, {
                 user: W,
                 size: d.EFr.SIZE_16
               })]

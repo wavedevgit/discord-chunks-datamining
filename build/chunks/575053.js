@@ -264,7 +264,7 @@
       if (!e) throw Error("Could not find Elements context; You need to wrap the part of your app that ".concat(t, " in an <Elements> provider."));
       return e
     },
-    j = function(e) {
+    k = function(e) {
       var n = e.stripe,
         r = e.options,
         i = e.children,
@@ -312,18 +312,18 @@
         value: s
       }, i)
     };
-  j.propTypes = {
+  k.propTypes = {
     stripe: O.any,
     options: O.object
   };
-  var k = function(e) {
+  var j = function(e) {
       return M(t.useContext(x), e)
     },
     U = function() {
-      return k("calls useElements()").elements
+      return j("calls useElements()").elements
     },
     G = function(e) {
-      return (0, e.children)(k("mounts <ElementsConsumer>"))
+      return (0, e.children)(j("mounts <ElementsConsumer>"))
     };
   G.propTypes = {
     children: O.func.isRequired
@@ -651,5 +651,5 @@
     eS = J("paymentMethodMessaging", $),
     eA = J("affirmMessage", $),
     eC = J("afterpayClearpayMessage", $);
-  e.AddressElement = eI, e.AffirmMessageElement = eA, e.AfterpayClearpayMessageElement = eC, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = W, e.CurrencySelectorElement = ey, e.Elements = j, e.ElementsConsumer = G, e.EmbeddedCheckout = eo, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ev, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eT, e.useCheckout = q, e.useElements = U, e.useStripe = es
+  e.AddressElement = eI, e.AffirmMessageElement = eA, e.AfterpayClearpayMessageElement = eC, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = W, e.CurrencySelectorElement = ey, e.Elements = k, e.ElementsConsumer = G, e.EmbeddedCheckout = eo, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ev, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eT, e.useCheckout = q, e.useElements = U, e.useStripe = es
 })

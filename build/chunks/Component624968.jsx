@@ -105,12 +105,12 @@ let f = 200,
           }
         }, 10)
       },
-      j = {
+      k = {
         "--custom-edge-fade-width": _(a)
       };
     return (0, r.jsxs)("div", {
       ref: P,
-      style: j,
+      style: k,
       className: d.container,
       children: [O && (0, r.jsxs)("div", {
         className: d.actions,

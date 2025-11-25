@@ -92,7 +92,7 @@ let I = new S(Chunk570140.Z, {
             } = e;
             if (null != t) {
               let e = u.Z.getChannel(t.id);
-              if (h.Z.can(b.Plq.VIEW_CHANNEL, e)) return t.id
+              if (p.Z.can(b.Plq.VIEW_CHANNEL, e)) return t.id
             }
             return null
           }(t);

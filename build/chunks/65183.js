@@ -78,17 +78,17 @@
     return r
   }
 
-  function j(e) {
+  function k(e) {
     return true === e.size && (e.size = e.__iterate(U)), e.size
   }
 
-  function k(e, t) {
+  function j(e, t) {
     if ("number" != typeof t) {
       var n = t >>> 0;
       if ("" + n !== t || 0xffffffff === n) return NaN;
       t = n
     }
-    return t < 0 ? j(e) + t : t
+    return t < 0 ? k(e) + t : t
   }
 
   function U() {
@@ -370,7 +370,7 @@
 
   function ew() {}
   er.prototype[es] = true, d(el, ea), el.prototype.get = function(e, t) {
-    return this.has(e) ? this._array[k(this, e)] : t
+    return this.has(e) ? this._array[j(this, e)] : t
   }, el.prototype.__iterate = function(e, t) {
     for (var n = this._array, r = n.length - 1, i = 0; i <= r; i++)
       if (false === e(n[t ? r - i : i], i, this)) return i + 1;
@@ -469,7 +469,7 @@
   }, d(eN, ea), eN.prototype.toString = function() {
     return 0 === this.size ? "Range []" : "Range [ " + this._start + "..." + this._end + (this._step > 1 ? " by " + this._step : "") + " ]"
   }, eN.prototype.get = function(e, t) {
-    return this.has(e) ? this._start + k(this, e) * this._step : t
+    return this.has(e) ? this._start + j(this, e) * this._step : t
   }, eN.prototype.includes = function(e) {
     var t = (e - this._start) / this._step;
     return t >= 0 && t < this.size && t === Math.floor(t)
@@ -521,19 +521,19 @@
       for (n !== e && (n ^= 0xffffffff * e); e > 0xffffffff;) e /= 0xffffffff, n ^= e;
       return ex(n)
     }
-    if ("string" === t) return e.length > eY ? ej(e) : ek(e);
+    if ("string" === t) return e.length > eY ? ek(e) : ej(e);
     if ("function" == typeof e.hashCode) return e.hashCode();
     if ("object" === t) return eU(e);
-    if ("function" == typeof e.toString) return ek(e.toString());
+    if ("function" == typeof e.toString) return ej(e.toString());
     throw Error("Value type " + t + " cannot be hashed.")
   }
 
-  function ej(e) {
+  function ek(e) {
     var t = ez[e];
-    return true === t && (t = ek(e), eK === eW && (eK = 0, ez = {}), eK++, ez[e] = t), t
+    return true === t && (t = ej(e), eK === eW && (eK = 0, ez = {}), eK++, ez[e] = t), t
   }
 
-  function ek(e) {
+  function ej(e) {
     for (var t = 0, n = 0; n < e.length; n++) t = 31 * t + e.charCodeAt(n) | 0;
     return ex(t)
   }
@@ -977,7 +977,7 @@
   }, tb.prototype.toString = function() {
     return this.__toString("List [", "]")
   }, tb.prototype.get = function(e, t) {
-    if ((e = k(this, e)) >= 0 && e < this.size) {
+    if ((e = j(this, e)) >= 0 && e < this.size) {
       var n = tD(this, e += this._origin);
       return n && n.array[e & N]
     }
@@ -1122,7 +1122,7 @@
   }
 
   function tN(e, t, n) {
-    if ((t = k(e, t)) != t) return e;
+    if ((t = j(e, t)) != t) return e;
     if (t >= e.size || t < 0) return e.withMutations(function(e) {
       t < 0 ? tw(e, t).set(0, n) : tw(e, 0, t + 1).set(t, n)
     });
@@ -1206,7 +1206,7 @@
   }
 
   function tM(e) {
-    return null == e ? tU() : tj(e) ? e : tU().withMutations(function(t) {
+    return null == e ? tU() : tk(e) ? e : tU().withMutations(function(t) {
       var n = _(e);
       eq(n.size), n.forEach(function(e, n) {
         return t.set(n, e)
@@ -1214,17 +1214,17 @@
     })
   }
 
-  function tj(e) {
+  function tk(e) {
     return eQ(e) && y(e)
   }
 
-  function tk(e, t, n, r) {
+  function tj(e, t, n, r) {
     var i = Object.create(tM.prototype);
     return i.size = e ? e.size : 0, i._map = e, i._list = t, i.__ownerID = n, i.__hash = r, i
   }
 
   function tU() {
-    return o || (o = tk(e9(), tC()))
+    return o || (o = tj(e9(), tC()))
   }
 
   function tG(e, t, n) {
@@ -1243,7 +1243,7 @@
       if (n === o.get(s)[1]) return e;
       r = a, i = o.set(s, [t, n])
     } else r = a.set(t, o.size), i = o.set(o.size, [t, n]);
-    return e.__ownerID ? (e.size = r.size, e._map = r, e._list = i, e.__hash = true, e) : tk(r, i)
+    return e.__ownerID ? (e.size = r.size, e._map = r, e._list = i, e.__hash = true, e) : tj(r, i)
   }
 
   function tB(e, t) {
@@ -1408,7 +1408,7 @@
     l == l && (i = l < 0 ? 0 : l);
     var c = nt(e);
     return c.size = 0 === i ? i : e.size && i || true, !r && ef(e) && i >= 0 && (c.get = function(t, n) {
-      return (t = k(this, t)) >= 0 && t < i ? e.get(t + o, n) : n
+      return (t = j(this, t)) >= 0 && t < i ? e.get(t + o, n) : n
     }), c.__iterateUncached = function(t, n) {
       var a = this;
       if (0 === i) return 0;
@@ -1636,7 +1636,7 @@
   }
 
   function t9(e) {
-    return eq(e.size), j(e)
+    return eq(e.size), k(e)
   }
 
   function ne(e) {
@@ -1704,8 +1704,8 @@
     if (e === this.__ownerID) return this;
     var t = this._map.__ensureOwner(e),
       n = this._list.__ensureOwner(e);
-    return e ? tk(t, n, e, this.__hash) : (this.__ownerID = e, this._map = t, this._list = n, this)
-  }, tM.isOrderedMap = tj, tM.prototype[T] = true, tM.prototype[S] = tM.prototype.remove, d(tB, ei), tB.prototype.get = function(e, t) {
+    return e ? tj(t, n, e, this.__hash) : (this.__ownerID = e, this._map = t, this._list = n, this)
+  }, tM.isOrderedMap = tk, tM.prototype[T] = true, tM.prototype[S] = tM.prototype.remove, d(tB, ei), tB.prototype.get = function(e, t) {
     return this._iter.get(e, t)
   }, tB.prototype.has = function(e) {
     return this._iter.has(e)
@@ -2003,7 +2003,7 @@
     return this.__toString("Stack [", "]")
   }, nI.prototype.get = function(e, t) {
     var n = this._head;
-    for (e = k(this, e); n && e--;) n = n.next;
+    for (e = j(this, e); n && e--;) n = n.next;
     return n ? n.value : t
   }, nI.prototype.peek = function() {
     return this._head && this._head.value
@@ -2224,7 +2224,7 @@
       })
     },
     count: function(e, t) {
-      return j(e ? this.toSeq().filter(e, t) : this)
+      return k(e ? this.toSeq().filter(e, t) : this)
     },
     countBy: function(e, t) {
       return tz(this, e, t)
@@ -2343,7 +2343,7 @@
     }
   });
   var nP = f.prototype;
-  nP[O] = true, nP[z] = nP.values, nP.__toJS = nP.toArray, nP.__toStringMapper = nj, nP.inspect = nP.toSource = function() {
+  nP[O] = true, nP[z] = nP.values, nP.__toJS = nP.toArray, nP.__toStringMapper = nk, nP.inspect = nP.toSource = function() {
       return this.toString()
     }, nP.chain = nP.flatMap, nP.contains = nP.includes,
     function() {
@@ -2419,11 +2419,11 @@
     }
   }
 
-  function nj(e) {
+  function nk(e) {
     return "string" == typeof e ? JSON.stringify(e) : e
   }
 
-  function nk() {
+  function nj() {
     return M(arguments)
   }
 
@@ -2455,7 +2455,7 @@
     return e ^ t + 0x9e3779b9 + (e << 6) + (e >> 2)
   }
   return nD[v] = true, nD[z] = nP.entries, nD.__toJS = nP.toObject, nD.__toStringMapper = function(e, t) {
-    return JSON.stringify(t) + ": " + nj(e)
+    return JSON.stringify(t) + ": " + nk(e)
   }, nR(p, {
     toKeyedSeq: function() {
       return new tB(this, false)
@@ -2499,12 +2499,12 @@
       return t6(this, t0(this, e, false))
     },
     get: function(e, t) {
-      return (e = k(this, e)) < 0 || this.size === 1 / 0 || true !== this.size && e > this.size ? t : this.find(function(t, n) {
+      return (e = j(this, e)) < 0 || this.size === 1 / 0 || true !== this.size && e > this.size ? t : this.find(function(t, n) {
         return n === e
       }, true, t)
     },
     has: function(e) {
-      return (e = k(this, e)) >= 0 && (true !== this.size ? this.size === 1 / 0 || e < this.size : false !== this.indexOf(e))
+      return (e = j(this, e)) >= 0 && (true !== this.size ? this.size === 1 / 0 || e < this.size : false !== this.indexOf(e))
     },
     interpose: function(e) {
       return t6(this, t3(this, e))
@@ -2523,7 +2523,7 @@
     },
     zip: function() {
       var e = [this].concat(M(arguments));
-      return t6(this, t8(this, nk, module))
+      return t6(this, t8(this, nj, module))
     },
     zipWith: function(e) {
       var t = M(arguments);

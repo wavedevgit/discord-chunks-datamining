@@ -96,16 +96,16 @@ function O(e) {
     isClaiming: m.Z.isClaimingReward(T.id) || m.Z.isFetchingRewardCode(T.id),
     isEnrolling: m.Z.isEnrolling(T.id),
     isQuestEnrollmentBlocked: null != m.Z.questEnrollmentBlockedUntil
-  })), Z = (null == (t = T.userStatus) ? true : t.enrolledAt) != null, W = (null == (n = T.userStatus) ? true : n.completedAt) != null, H = W && (null == (O = T.userStatus) ? true : O.claimedAt) == null, U = (0, f.iQ)(T), F = !(0, f.zi)(T), z = (0, p._Q)(T), G = (0, f.Xv)(T.config), K = (0, f.PB)(T), X = (0, f.HJ)(T), Y = (0, f.Vl)(T), J = (0, p.Rf)(T), [$, ee, et] = (0, p.me)(T, J), en = F && z === p.OH.ACCEPTED, er = en && $ === g.LI.SELECT, es = en && !er && ee.length > 1, eo = s.useCallback(e => {
+  })), Z = (null == (t = T.userStatus) ? true : t.enrolledAt) != null, W = (null == (n = T.userStatus) ? true : n.completedAt) != null, H = W && (null == (O = T.userStatus) ? true : O.claimedAt) == null, U = (0, f.iQ)(T), F = !(0, f.zi)(T), G = (0, p._Q)(T), z = (0, f.Xv)(T.config), K = (0, f.PB)(T), X = (0, f.HJ)(T), Y = (0, f.Vl)(T), J = (0, p.Rf)(T), [$, ee, et] = (0, p.me)(T, J), en = F && G === p.OH.ACCEPTED, er = en && $ === g.LI.SELECT, es = en && !er && ee.length > 1, eo = s.useCallback(e => {
     et(e), e === b.cd.DESKTOP && P([])
   }, [et, P]), {
     text: ea,
     onClick: ei
   } = (0, x.Ks)({
-    progressState: z,
+    progressState: G,
     quest: T,
     questContent: w,
-    isCollectibleQuest: G,
+    isCollectibleQuest: z,
     questContentPosition: N,
     questContentRowIndex: A,
     inGiftInventory: true,

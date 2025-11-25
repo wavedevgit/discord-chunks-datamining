@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 336079, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 22002 **/
+/** chunk id: 336079, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => p,
-  d: () => _
+  CH: () => x,
+  dv: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,63 +13,97 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk43747 = require("./43747.js");
-let f = (0, Chunk473749.createContext)({
+let p = (0, Chunk473749.createContext)({
     skuId: "123",
     loadId: (0, Chunk772848.Z)(),
     analyticsLocations: [],
+    analyticsSourceLocation: true,
     isRedeeming: false,
     orbRedemptionError: null,
     orbProductContext: null,
     onRedeemVirtualCurrency: () => {},
     isRental: false
   }),
-  _ = e => {
+  b = e => {
     let {
       skuId: t,
       loadId: n,
-      analyticsLocations: a,
-      onCheckoutSuccess: _,
-      isRental: p = false,
-      children: h
-    } = e, m = (0, o.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
-      product: g
-    } = (0, s.T)(t), E = (0, i.useMemo)(() => {
-      if (null == g) return null;
-      let e = (0, l.T4)({
-          product: g,
-          isPremiumUser: m,
-          isRental: p
-        }),
-        t = null !== e ? e.amount : null;
+      analyticsSourceLocation: i,
+      analyticsLocations: b,
+      onCheckoutSuccess: x,
+      isRental: y = false,
+      children: f
+    } = e, {
+      orbProductContext: m,
+      onRedeemVirtualCurrency: j,
+      isRedeeming: O,
+      orbRedemptionError: g
+    } = (e => {
+      let {
+        skuId: t,
+        loadId: n,
+        analyticsLocations: r,
+        onCheckoutSuccess: i,
+        isRental: p = false
+      } = e, b = (0, s.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
+        product: x
+      } = (0, o.T)(t), y = (0, l.useMemo)(() => {
+        if (null == x) return null;
+        let e = (0, a.T4)({
+            product: x,
+            isPremiumUser: b,
+            isRental: p
+          }),
+          t = null !== e ? e.amount : null;
+        return {
+          orbPrice: e,
+          orbPriceAmount: t,
+          product: x
+        }
+      }, [x, b, p]), {
+        redeemVirtualCurrency: f,
+        isSubmitting: m,
+        error: j
+      } = (0, d.f)(), O = (0, l.useCallback)(e => {
+        f(t, n, n => {
+          i({
+            entitlements: n,
+            skuId: t
+          }), e()
+        }, p)
+      }, [t, n, f, i, p]);
       return {
-        orbPrice: e,
-        orbPriceAmount: t,
-        product: g
+        skuId: t,
+        loadId: n,
+        analyticsLocations: null != r ? r : [],
+        product: x,
+        orbProductContext: y,
+        onRedeemVirtualCurrency: O,
+        isRedeeming: m,
+        orbRedemptionError: j,
+        isRental: p
       }
-    }, [g, m, p]), {
-      redeemVirtualCurrency: b,
-      isSubmitting: y,
-      error: O
-    } = (0, d.f)(), v = (0, i.useCallback)(e => {
-      b(t, n, n => {
-        _({
-          entitlements: n,
-          skuId: t
-        }), e()
-      }, p)
-    }, [t, n, b, _, p]);
-    return (0, r.jsx)(f.Provider, {
+    })({
+      skuId: t,
+      loadId: n,
+      analyticsLocations: b,
+      analyticsSourceLocation: i,
+      onCheckoutSuccess: x,
+      isRental: y
+    });
+    return (0, r.jsx)(p.Provider, {
       value: {
         skuId: t,
         loadId: n,
-        analyticsLocations: null != a ? a : [],
-        orbProductContext: E,
-        onRedeemVirtualCurrency: v,
-        isRedeeming: y,
-        orbRedemptionError: O,
-        isRental: p
+        analyticsLocations: null != b ? b : [],
+        analyticsSourceLocation: i,
+        orbProductContext: m,
+        onRedeemVirtualCurrency: j,
+        isRedeeming: O,
+        orbRedemptionError: g,
+        isRental: y
       },
-      children: h
+      children: f
     })
   },
-  p = () => (0, Chunk473749.useContext)(f)
+  x = () => (0, Chunk473749.useContext)(p)

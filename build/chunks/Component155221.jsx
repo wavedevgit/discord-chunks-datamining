@@ -82,12 +82,12 @@ let x = (0, Chunk663993.Un)({
     webpackId: 431583,
     name: "DownloadApps"
   }),
-  j = (0, Chunk663993.Un)({
+  k = (0, Chunk663993.Un)({
     createPromise: () => require.e("81226").then(require.bind(require, 484097)),
     webpackId: 484097,
     name: "InviteProxy"
   }),
-  k = (0, Chunk663993.Un)({
+  j = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("800"), require.e("30556")]).then(require.bind(require, 675207)),
     webpackId: 675207,
     name: "VerifyConnectedAccount"
@@ -215,7 +215,7 @@ class ei extends Chunk473749.Component {
         component: H
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.INVITE_PROXY(Chunk893607.Hw.channelId()),
-        component: j
+        component: k
       }), (0, Chunk54381.jsx)(Chunk828700.l_, {
         from: Chunk981631.Z5c.INVITE(""),
         to: Chunk981631.Z5c.LOGIN
@@ -246,7 +246,7 @@ class ei extends Chunk473749.Component {
         to: Chunk981631.Z5c.LOGIN
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.INVITE_PROXY(Chunk893607.Hw.channelId()),
-        component: j
+        component: k
       }), (0, Chunk54381.jsx)(Chunk828700.l_, {
         from: Chunk981631.Z5c.GIFT_CODE(""),
         to: Chunk981631.Z5c.LOGIN
@@ -294,7 +294,7 @@ class ei extends Chunk473749.Component {
         component: G
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.CONNECTIONS(":type"),
-        component: k
+        component: j
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.DOWNLOAD_QR_CODE_REDIRECT,
         render: () => {

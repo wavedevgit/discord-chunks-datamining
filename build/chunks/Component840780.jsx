@@ -118,7 +118,7 @@ let eP = (0, Chunk438139.Z)(function(e) {
   let {
     message: t
   } = e;
-  return (0, r.jsx)(ep.Z, {
+  return (0, r.jsx)(eh.Z, {
     children: t
   })
 });
@@ -158,7 +158,7 @@ class eN extends Chunk473749.PureComponent {
       analyticsContext: a,
       runningGame: c,
       parentAnalyticsLocation: u,
-      canStartAuthorization: p,
+      canStartAuthorization: h,
       accountLinkButtonRef: g,
       startAuthorization: b
     } = this.props, _ = (0, Chunk339144.y)(Chunk473749, Chunk120356, o), y = [];
@@ -171,7 +171,7 @@ class eN extends Chunk473749.PureComponent {
           visibleContent: t,
           markAsDismissed: n
         } = e;
-        return t === d.z.ACCOUNT_LINK_INVITE_FRIENDS ? (0, r.jsx)(h.J2, {
+        return t === d.z.ACCOUNT_LINK_INVITE_FRIENDS ? (0, r.jsx)(p.J2, {
           title: ex.intl.string(ex.t["0l2pEt"]),
           body: ex.intl.string(ex.t["DSZUK/"]),
           targetElementRef: this.inviteButtonRef,
@@ -196,7 +196,7 @@ class eN extends Chunk473749.PureComponent {
               }), (0, m.h7)(l, false)
             }
           }]
-        }) : t === d.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER ? (0, r.jsx)(h.J2, {
+        }) : t === d.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER ? (0, r.jsx)(p.J2, {
           title: ex.intl.string(ex.t.MxAlrB),
           body: ex.intl.string(ex.t["/UTTEg"]),
           targetElementRef: this.accountLinkUpsellTargetRef,
@@ -213,7 +213,7 @@ class eN extends Chunk473749.PureComponent {
           }],
           shouldShow: true,
           onRequestClose: () => n(eO.L.USER_DISMISS)
-        }) : t === d.z.ACCOUNT_LINK_PROMPT ? (0, r.jsx)(h.J2, {
+        }) : t === d.z.ACCOUNT_LINK_PROMPT ? (0, r.jsx)(p.J2, {
           graphic: {
             type: "dynamic",
             component: f.DynamicGraphicComponent.ACCOUNT_LINK_DISPLAY,
@@ -331,7 +331,7 @@ class eN extends Chunk473749.PureComponent {
           children: exports.name
         })
       }),
-      h = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      p = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk925329.Z, {
           className: Chunk800339.gameIcon,
           game: exports,
@@ -478,8 +478,8 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     s = (0, u.e7)([ea.Z, ee.Z], () => ee.Z.getChannel(ea.Z.getVoiceChannelId())),
     d = (0, u.e7)([C.ZP], () => C.ZP.getConnectedActivityChannelId()),
     f = (0, u.e7)([ee.Z], () => ee.Z.getChannel(d)),
-    h = (0, u.e7)([en.Z], () => en.Z.getGuild(null == f ? true : f.guild_id)),
-    [p, g] = (0, u.Wu)([J.Z], () => [J.Z.getCurrentUserActiveStream(), J.Z.getStreamerActiveStreamMetadata()]),
+    p = (0, u.e7)([en.Z], () => en.Z.getGuild(null == f ? true : f.guild_id)),
+    [h, g] = (0, u.Wu)([J.Z], () => [J.Z.getCurrentUserActiveStream(), J.Z.getStreamerActiveStreamMetadata()]),
     m = (0, u.e7)([v.Z], () => v.Z.useReducedMotion),
     b = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
     _ = (0, u.e7)([k.Z], () => k.Z.getConnectedFrame()),
@@ -490,7 +490,7 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     Z = (0, E.Z)() && null != S && (0, j.R)(),
     w = (0, u.e7)([er.Z], () => (0, F.Z)(er.Z) && (0, ef.isWindows)()),
     A = (0, u.e7)([el.Z], () => null != o ? el.Z.findActivity(o, e => e.type === e_.IIU.PLAYING) : null),
-    D = null != p && p.ownerId === o && p.state !== e_.jm8.ENDED,
+    D = null != h && h.ownerId === o && h.state !== e_.jm8.ENDED,
     L = (0, u.e7)([es.default, eo.Z], () => null != f ? (0, T.F6)(f, es.default, eo.Z) : true),
     M = (0, Y.Z)(),
     [U, V] = i.useState(false),
@@ -504,12 +504,12 @@ let eZ = (0, Chunk730749.Z)(function(e) {
       allowedFlows: [P.r.RPC, P.r.WEB]
     }),
     {
-      isQuestBarEmpty: ep,
+      isQuestBarEmpty: eh,
       hasLoadedQuestBar: eg
     } = (0, X.Ws)({
       location: ej.dr.CONFLICT_CHECKS
     }),
-    em = eh.Z.useConfig({
+    em = ep.Z.useConfig({
       location: "RunningGameCard"
     }).enabled,
     {
@@ -537,16 +537,16 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     isStreaming: D,
     channel: f,
     canStream: y,
-    stream: p,
+    stream: h,
     streamMetadata: g,
     channelName: L,
-    guildForConnectedChannel: h,
+    guildForConnectedChannel: p,
     streamQualityIndicator: M,
     isForceShowSharingPopout: U,
     setIsForceShowSharingPopout: V,
     isActivityPopoutOpen: H,
     hasAlreadyLinked: z,
-    blockAccountLinkDismissibleContent: !eg || !ep,
+    blockAccountLinkDismissibleContent: !eg || !eh,
     accountLinkExperimentEnabled: em,
     parentAnalyticsLocation: eb,
     canStartAuthorization: q,

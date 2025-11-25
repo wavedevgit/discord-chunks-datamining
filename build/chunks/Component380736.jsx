@@ -103,11 +103,11 @@ let A = Chunk473749.memo(function(e) {
     containerRef: P,
     className: D,
     wrapperClassName: w
-  } = e, [L, x] = i.useState(false), M = n || L || R === m._1z.FOCUSED, j = (0, l.e7)([p.Z, _.Z], () => p.Z.isInputLocked(_.Z.getTargetPID()));
+  } = e, [L, x] = i.useState(false), M = n || L || R === m._1z.FOCUSED, k = (0, l.e7)([p.Z, _.Z], () => p.Z.isInputLocked(_.Z.getTargetPID()));
   i.useEffect(() => {
     null == a || a()
   }, [a]);
-  let k = i.useCallback(e => {
+  let j = i.useCallback(e => {
       e.stopPropagation(), null == u || u(e)
     }, [u]),
     U = i.useCallback(e => {
@@ -126,13 +126,13 @@ let A = Chunk473749.memo(function(e) {
   function F() {
     return (0, r.jsx)(d.Z, {
       className: E.dismissButton,
-      onDismiss: k,
+      onDismiss: j,
       "aria-label": g.intl.string(g.t.LnEgqX)
     })
   }
 
   function V() {
-    let e = "function" == typeof y ? y(M, j) : y;
+    let e = "function" == typeof y ? y(M, k) : y;
     return null != y ? (0, r.jsx)(c.Text, {
       className: E.hint,
       color: "text-muted",
@@ -177,7 +177,7 @@ let A = Chunk473749.memo(function(e) {
   }
 
   function W() {
-    let e = null == C ? true : C(M, j);
+    let e = null == C ? true : C(M, k);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.animated.div, {
         className: E.iconAndDetails,
@@ -324,8 +324,8 @@ function D(e) {
     props: {
       onNotificationShow: x,
       onDismissClick: M,
-      renderFooter: j,
-      onNotificationClick: k,
+      renderFooter: k,
+      onNotificationClick: j,
       onConfirmClick: U,
       onCancelClick: G,
       disableClickableRegions: B = false

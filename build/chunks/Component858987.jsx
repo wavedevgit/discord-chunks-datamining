@@ -113,8 +113,8 @@ function I(e) {
     hasAcceptedTerms: L,
     purchaseType: x,
     paymentSourceId: M,
-    activeSubscription: j,
-    devShelfFetchState: k,
+    activeSubscription: k,
+    devShelfFetchState: j,
     hasPaymentSources: U
   } = (0, u.JL)(), G = O({
     purchaseType: x,
@@ -158,7 +158,7 @@ function I(e) {
       disabled: true
     }))
   });
-  if ((0, o.yE)(null != (t = null == D ? true : D.flags) ? t : 0, p.udG.EMBEDDED) && k === l.O.LOADING) return (0, r.jsx)(s.aML, {
+  if ((0, o.yE)(null != (t = null == D ? true : D.flags) ? t : 0, p.udG.EMBEDDED) && j === l.O.LOADING) return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: m.intl.string(m.t.cjA5tj),
     children: e => (0, r.jsx)(s.Button, y(E({
@@ -193,8 +193,8 @@ function I(e) {
       "data-testid": "submitButton"
     }))
   });
-  else if (N && null != j && null != M) return (0, r.jsx)(_.Z, {
-    activeSubscription: j,
+  else if (N && null != k && null != M) return (0, r.jsx)(_.Z, {
+    activeSubscription: k,
     onNext: R,
     isSubmitting: h,
     paymentSourceId: M,

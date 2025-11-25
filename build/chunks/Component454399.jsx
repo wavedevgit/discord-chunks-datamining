@@ -97,9 +97,9 @@ function T(e) {
     positionKey: L,
     ariaHidden: x = false
   } = e, M = v(e, ["children", "title", "body", "asset", "assetSize", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]);
-  let j = (0, m.c)(D),
-    k = i.useId(),
-    U = x ? true : k,
+  let k = (0, m.c)(D),
+    j = i.useId(),
+    U = x ? true : j,
     G = null != a && ("string" != typeof a || "" !== a),
     B = null != y && !i.isValidElement(y),
     Z = i.useMemo(() => (0, r.jsxs)("div", {
@@ -128,7 +128,7 @@ function T(e) {
       isVisible: F,
       triggerProps: V
     } = (0, p.l)(b({
-      targetElementRef: j.targetElementRef
+      targetElementRef: k.targetElementRef
     }, M)),
     H = null != L ? L : "".concat((0, _.Sw)(null != a ? a : ""), "|").concat((0, _.Sw)(E)),
     Y = (0, h.Q)({
@@ -140,7 +140,7 @@ function T(e) {
         let t = e.target;
         if (null != t) {
           var n;
-          let e = (0, _.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, k);
+          let e = (0, _.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, j);
           t.setAttribute("aria-describedby", e)
         }
       }),
@@ -149,7 +149,7 @@ function T(e) {
         if (null != t) {
           let e = t.getAttribute("aria-describedby");
           if (null != e) {
-            let n = e.split(" ").filter(e => e !== k);
+            let n = e.split(" ").filter(e => e !== j);
             n.length > 0 ? t.setAttribute("aria-describedby", n.join(" ")) : t.removeAttribute("aria-describedby")
           }
         }
@@ -159,20 +159,20 @@ function T(e) {
       tag: S,
       children: n,
       triggerHandlers: e,
-      triggerRef: j.triggerRef
+      triggerRef: k.triggerRef
     })
   } else {
     if (!i.isValidElement(n)) return null;
-    t = (0, _.C9)(n, V, U, j.triggerRef)
+    t = (0, _.C9)(n, V, U, k.triggerRef)
   }
   let W = Y((e, t) => t ? (0, r.jsx)(f.pn, {
     isRichTooltip: true,
     children: (0, r.jsx)(d.N, {
       isVisible: F,
       isRendered: true,
-      targetElementRef: j.targetElementRef,
+      targetElementRef: k.targetElementRef,
       anchorRef: w,
-      id: k,
+      id: j,
       content: Z,
       position: A,
       align: C,
@@ -186,7 +186,7 @@ function T(e) {
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
     children: [t, x || null == Z ? null : (0, r.jsx)(s.n, {
-      id: k,
+      id: j,
       children: Z
     }), W]
   })

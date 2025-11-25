@@ -120,7 +120,7 @@ function w(e) {
     sourceAnalyticsLocations: L
   } = (0, f.ZP)(d.Z.GUILD_BOOSTING_PREMIUM_UPSELL), {
     theme: x
-  } = (0, u.TCT)(), M = (0, l.ap)(x) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, j = null == n || null == n.premiumSubscriptionType, k = O.ZP.getPrice(T.Xh.PREMIUM_MONTH_TIER_2, false, false, R), U = (0, v.T4)(k.amount, k.currency), G = (0, h.N)(), B = null == G ? true : G.trial_id, Z = (null == G || null == (t = G.subscription_trial) ? true : t.sku_id) === T.Si.TIER_2;
+  } = (0, u.TCT)(), M = (0, l.ap)(x) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, k = null == n || null == n.premiumSubscriptionType, j = O.ZP.getPrice(T.Xh.PREMIUM_MONTH_TIER_2, false, false, R), U = (0, v.T4)(j.amount, j.currency), G = (0, h.N)(), B = null == G ? true : G.trial_id, Z = (null == G || null == (t = G.subscription_trial) ? true : t.sku_id) === T.Si.TIER_2;
   return i.useEffect(() => {
     b.default.track(I.rMx.PREMIUM_UPSELL_VIEWED, {
       type: T.cd.GUILD_PREMIUM_UPSELL_MODAL,
@@ -146,7 +146,7 @@ function w(e) {
           monthlyPrice: U
         })
       }), (0, r.jsx)(D, {
-        shouldUpsellFromNoneTier: j
+        shouldUpsellFromNoneTier: k
       })]
     }), (0, r.jsxs)(u.mzw, {
       "data-migration-pending": true,

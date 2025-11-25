@@ -135,9 +135,9 @@ let O = Chunk473749.forwardRef(function(e, t) {
     M = null != x && "" !== x ? h.intl.formatToPlainString(h.t.tiKyYg, {
       applicationName: x
     }) : h.intl.string(h.t["2B/phM"]),
-    j = (0, _.pU)(n),
-    k = (0, d.Vv)(n),
-    U = C === n || j || k;
+    k = (0, _.pU)(n),
+    j = (0, d.Vv)(n),
+    U = C === n || k || j;
   return (0, r.jsxs)(r.Fragment, {
     children: [U ? null : (0, r.jsx)("div", {
       className: o()(m.gameIconLoading, S, I)

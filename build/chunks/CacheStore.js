@@ -45,8 +45,8 @@ let w = new Chunk710845.Z("CacheStore"),
   L = false,
   x = false,
   M = "initializing",
-  j = 0,
-  k = false,
+  k = 0,
+  j = false,
   U = false,
   G = false;
 
@@ -59,11 +59,11 @@ function Z() {
 }
 
 function F() {
-  k = true
+  j = true
 }
 
 function V() {
-  k = true, M = "cache-loaded"
+  j = true, M = "cache-loaded"
 }
 
 function H() {
@@ -71,11 +71,11 @@ function H() {
 }
 
 function Y(e) {
-  w.log("Clearing cache store"), j = Date.now(), o.K.remove(P.FsG), o.K.remove(P.ihW), o.K.remove(P.O42), M = "no-cache", "CLEAR_CACHES" === e.type && e.preventWritingCachesAgainThisSession && (x = true)
+  w.log("Clearing cache store"), k = Date.now(), o.K.remove(P.FsG), o.K.remove(P.ihW), o.K.remove(P.O42), M = "no-cache", "CLEAR_CACHES" === e.type && e.preventWritingCachesAgainThisSession && (x = true)
 }
 
 function W() {
-  w.verbose("Writing cache now"), j = Date.now(), k = true, Chunk433517.K.remove(Chunk981631.FsG), Chunk433517.K.remove(Chunk981631.O42), Chunk433517.K.remove(Chunk981631.ihW)
+  w.verbose("Writing cache now"), k = Date.now(), j = true, Chunk433517.K.remove(Chunk981631.FsG), Chunk433517.K.remove(Chunk981631.O42), Chunk433517.K.remove(Chunk981631.ihW)
 }
 
 function K(e) {
@@ -121,7 +121,7 @@ async function q(e, t, n) {
     A = null == e ? Promise.resolve([]) : i.Z.timeAsync("\uD83D\uDCBE", "cache: read_states", () => p.Z.getAll(e)),
     C = null == e ? Promise.resolve([]) : i.Z.timeAsync("\uD83D\uDCBE", "cache: user_guild_settings", () => h.Z.getAll(e)),
     [
-      [N, P], D, L, x, M, j, k
+      [N, P], D, L, x, M, k, j
     ] = await Promise.all([_, E, b, O, I, A, C]),
     U = performance.now() - f;
   if (w.verbose("cache loaded in ".concat(U, "ms (channel_history ").concat(N, "ms)")), null == P) return (0, R.Z)("database:history_cache_null"), w.verbose("finished without dispatching CACHE_LOADED"), [false, null, 0];
@@ -145,11 +145,11 @@ async function q(e, t, n) {
             [P.guildId]: r
           },
           userSettings: M,
-          userGuildSettings: k,
-          readStates: j
+          userGuildSettings: j,
+          readStates: k
         })
       }), i.Z.time("\uD83D\uDCBE", "socket.processFirstQueuedDispatch()", () => c.dispatcher.processFirstQueuedDispatch(new Set(["INITIAL_GUILD"])))
-    }), w.verbose("early_cache_summary: (\n        ok: true\n        meta:\n          auth_user_id: ".concat(t, "\n          selected_guild: ").concat(u, "\n          selected_channel: ").concat(d, "\n          navigation_state: ").concat(JSON.stringify(n), "\n          database: ").concat(null != e, "\n            name: ").concat(null == e ? true : e.name, "\n        data:\n          database:\n            private_channels: ").concat(x.length, "\n            channel_history:\n              guild: ").concat(P.guildId, "\n              channel: ").concat(P.channelId, "\n              messages: ").concat(P.messages.length, "\n                members: ").concat(P.members.length, "\n                users: ").concat(P.users.length, "\n            initial_guild:\n              id: ").concat(f, "\n              channels: ").concat(null == (l = L.channels) ? true : l.length, "\n            user_settings: ").concat(Object.keys(M).length, "\n            read_states: ").concat(j.length, "\n            user_guild_settings: ").concat(k.length, "\n      )")), w.verbose("finished dispatching CACHE_LOADED"), [true, o && null != f ? f : null, x.length]
+    }), w.verbose("early_cache_summary: (\n        ok: true\n        meta:\n          auth_user_id: ".concat(t, "\n          selected_guild: ").concat(u, "\n          selected_channel: ").concat(d, "\n          navigation_state: ").concat(JSON.stringify(n), "\n          database: ").concat(null != e, "\n            name: ").concat(null == e ? true : e.name, "\n        data:\n          database:\n            private_channels: ").concat(x.length, "\n            channel_history:\n              guild: ").concat(P.guildId, "\n              channel: ").concat(P.channelId, "\n              messages: ").concat(P.messages.length, "\n                members: ").concat(P.members.length, "\n                users: ").concat(P.users.length, "\n            initial_guild:\n              id: ").concat(f, "\n              channels: ").concat(null == (l = L.channels) ? true : l.length, "\n            user_settings: ").concat(Object.keys(M).length, "\n            read_states: ").concat(k.length, "\n            user_guild_settings: ").concat(j.length, "\n      )")), w.verbose("finished dispatching CACHE_LOADED"), [true, o && null != f ? f : null, x.length]
   }
 }
 
@@ -307,13 +307,13 @@ class er extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk38618.Z, Chunk944486.Z, Chunk914010.Z), L || Chunk38618.Z.getSocket().dispatcher.unpauseDispatchQueue()
   }
   hasCache() {
-    return !L || k
+    return !L || j
   }
   getLazyCacheStatus() {
     return L ? M : "no-cache"
   }
   get lastWriteTime() {
-    return j
+    return k
   }
   canWriteCaches(e) {
     return (0, A.$8)() ? x ? (w.log("Not writing cache because caches cleared"), false) : !!e || !!G || (w.log("Not writing cache because never connected"), false) : (w.log("Not writing cache because not authenticated"), false)

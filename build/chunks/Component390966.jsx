@@ -167,8 +167,8 @@ function T(e) {
       startDateTimeString: L,
       endDateTimeString: x,
       currentOrPastEvent: M,
-      upcomingEvent: j,
-      diffMinutes: k
+      upcomingEvent: k,
+      diffMinutes: j
     }, U] = i.useState((0, _.ub)(t, u));
   i.useEffect(() => {
     U((0, _.ub)(t, u));
@@ -182,8 +182,8 @@ function T(e) {
     start: L,
     end: x
   }));
-  let B = i.useMemo(() => n === h.p1.CANCELED || (null == w ? true : w.is_canceled) ? 5 : n === h.p1.ACTIVE ? 3 : h.$I.has(n) ? 4 : M ? 2 : +!!j, [n, null == w ? true : w.is_canceled, M, j]),
-    Z = y(B, G, p, x, k),
+  let B = i.useMemo(() => n === h.p1.CANCELED || (null == w ? true : w.is_canceled) ? 5 : n === h.p1.ACTIVE ? 3 : h.$I.has(n) ? 4 : M ? 2 : +!!k, [n, null == w ? true : w.is_canceled, M, k]),
+    Z = y(B, G, p, x, j),
     {
       Icon: F,
       iconColor: V,

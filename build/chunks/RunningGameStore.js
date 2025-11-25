@@ -425,17 +425,17 @@ function eM() {
       })
     }
     return t
-  }, []), module && ej(), module
+  }, []), module && ek(), module
 }
 
-function ej() {
+function ek() {
   if (!__OVERLAY__ && Chunk358085.isPlatformEmbedded) {
     let e = [...J, ...o().values(ea.gameOverrides)];
     Chunk998502.ZP.setGameCandidateOverrides(module)
   }
 }
 
-function ek(e, t) {
+function ej(e, t) {
   let n = ea.gameOverrides[e];
   null != n && (ea.gameOverrides[t] = n, delete ea.gameOverrides[e]);
   let r = ea.enableOverlay[e];
@@ -455,7 +455,7 @@ function eU(e) {
             let n = ea.gameOverrides[eS(e)];
             null != n && (n.lastFocused = e.lastFocused)
           }
-          return t.distributor !== e.distributor && (t.distributor = e.distributor), t.gameName !== e.gameName && (t.gameName = e.gameName), t.id === e.id && eS(t) !== eS(e) && (ek(eS(t), eS(e)), t.exePath = e.exePath), eO(t, e), true
+          return t.distributor !== e.distributor && (t.distributor = e.distributor), t.gameName !== e.gameName && (t.gameName = e.gameName), t.id === e.id && eS(t) !== eS(e) && (ej(eS(t), eS(e)), t.exePath = e.exePath), eO(t, e), true
         }
         returnfalse
       }));
@@ -523,11 +523,11 @@ function eK(e) {
   } else t = eS(r), r.hidden && (ei[t] = true), r.hidden = false;
   (null == r.lastFocused || 0 === r.lastFocused) && (r.lastFocused = Math.floor(Date.now() / 1e3)), ea.gameOverrides[t] = Z(G({}, r), {
     add: true
-  }), eU(ee), ej(), ew(), eT()
+  }), eU(ee), ek(), ew(), eT()
 }
 
 function ez() {
-  ej()
+  ek()
 }
 
 function eq(e) {
@@ -550,7 +550,7 @@ function eQ(e) {
     let t = z.some(t => e.cleanedExePath.includes(t));
     return t && ef.add(e.pid), t
   }).map(e => e.cleanedExePath);
-  t.length > 0 && C.default.track(j.rMx.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH, {
+  t.length > 0 && C.default.track(k.rMx.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH, {
     keywords: z,
     paths: t,
     debugging_level: ep,
@@ -574,7 +574,7 @@ function e$(e) {
   let {
     game: t
   } = e, n = eP(t);
-  ea.enableDetection[eS(t)] = !n, ew(), C.default.track(j.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
+  ea.enableDetection[eS(t)] = !n, ew(), C.default.track(k.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
     enabled: !n
   })
 }
@@ -590,14 +590,14 @@ function e0(e) {
   let i = false;
   ee.forEach(n => {
     eS(n) === t && (n.name = e.newName, i = true)
-  }), ej(), ew(), i && eT()
+  }), ek(), ew(), i && eT()
 }
 
 function e1(e) {
   let t = eS(e.game);
   delete ea.gameOverrides[t], delete ea.enableOverlay[t], delete ea.enableDetection[t], ea.gamesSeen = ea.gamesSeen.filter(e => eS(e) !== t), ei[t] && (ee.forEach(e => {
     t === eS(e) && (e.hidden = true)
-  }), delete ei[t]), ee.some(e => eS(e) === t) && eT(), ej(), ew()
+  }), delete ei[t]), ee.some(e => eS(e) === t) && eT(), ek(), ew()
 }
 
 function e3(e) {
@@ -684,7 +684,7 @@ function e4(e) {
       type: "RUNNING_STREAMER_TOOLS_CHANGE",
       count: el
     })), ee = e, en = n, r = i, eT()
-  }), ej(), Chunk998502.ZP.setGameDetectionCallback((e, t) => {
+  }), ek(), Chunk998502.ZP.setGameDetectionCallback((e, t) => {
     if (e.length === t.length)
       for (let [a, o] of e.entries()) {
         var n, r, i;
@@ -692,8 +692,8 @@ function e4(e) {
           s = T.Z.getGameByName(o.name),
           l = T.Z.getGameByName(e.name),
           c = null != (n = (null == e ? true : e.id) !== Y ? null == e ? true : e.id : null == l ? true : l.id) ? n : "";
-        C.default.track(j.rMx.GAME_DETECTION_COMPARISON, {
-          game_platform: j.M7m.DESKTOP,
+        C.default.track(k.rMx.GAME_DETECTION_COMPARISON, {
+          game_platform: k.M7m.DESKTOP,
           detection_method: "process_observer_v2",
           game_v1: o.name,
           orig_game_name_v1: o.origGameName,
@@ -724,7 +724,7 @@ function e4(e) {
     location: "RunningGameStore.handleGamesDatabaseUpdate"
   }).enabled;
   Chunk998502.ZP.setGameDetectionErrorCallback((e, t, n, r, i) => {
-    u && C.default.track(j.rMx.GAME_DETECTION_ERROR, {
+    u && C.default.track(k.rMx.GAME_DETECTION_ERROR, {
       error_code: e.toString(),
       distributor: t,
       commit_hash: n,
@@ -748,7 +748,7 @@ class e5 extends(i = Chunk442837.ZP.Store) {
     if (o().values(null != (t = Chunk392711.gameOverrides) ? exports : {}).forEach(e => {
         let t = eS(e);
         (0, I.le)(e) || (ea.gameOverrides[t] = e)
-      }), ea.enableOverlay = null != (n = Chunk392711.enableOverlay) ? require : {}, ea.enableOverlayV3 = null != (r = Chunk392711.enableOverlayV3) ? r : {}, ea.enableDetection = null != (i = Chunk392711.enableDetection) ? i : {}, ej(), Array.isArray(Chunk392711.gamesSeen))
+      }), ea.enableOverlay = null != (n = Chunk392711.enableOverlay) ? require : {}, ea.enableOverlayV3 = null != (r = Chunk392711.enableOverlayV3) ? r : {}, ea.enableDetection = null != (i = Chunk392711.enableDetection) ? i : {}, ek(), Array.isArray(Chunk392711.gamesSeen))
       for (let e of Chunk392711.gamesSeen) "number" == typeof module.id && (module.nativeProcessObserverId = module.id, delete module.id, s = true);
     this.waitFor(Chunk417363.Z, Chunk353926.Z, Chunk77498.Z, Chunk283595.Z), W = Chunk392711.gamesSeen.filter(e => !(0, I.le)(e)), this.syncWith([Chunk353926.Z], e2), this.syncWith([Chunk283595.Z, Chunk77498.Z, Chunk417363.Z], o().throttle(eM, 1e3)), Chunk913527 && ew()
   }

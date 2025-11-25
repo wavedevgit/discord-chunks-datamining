@@ -29,7 +29,7 @@ let E = Chunk473749.memo(function(e) {
   let {
     guild: t,
     selected: l
-  } = e, E = i.useRef(null), S = i.useRef(null), I = (0, c.f9)(), P = (0, a.e7)([y.Z], () => y.Z.hasLayers()), [N, Z] = (0, h.ZT)([s.z.GAME_SHOP_NEW_BADGE], t.id);
+  } = e, E = i.useRef(null), S = i.useRef(null), I = (0, c.f9)(), P = (0, a.e7)([y.Z], () => y.Z.hasLayers()), [N, Z] = (0, p.ZT)([s.z.GAME_SHOP_NEW_BADGE], t.id);
   i.useEffect(() => {
     l && N === s.z.GAME_SHOP_NEW_BADGE && Z(j.L.INDIRECT_ACTION)
   }, [Z, l, N]);
@@ -37,7 +37,7 @@ let E = Chunk473749.memo(function(e) {
       var e, n;
       Z(j.L.USER_DISMISS);
       let r = null != (n = null == (e = m.Z.getStorefrontState(t.id)) ? true : e.activePage) ? n : 0;
-      (0, p.uL)(v.Z5c.CHANNELS_GAME_SHOP(t.id, r))
+      (0, h.uL)(v.Z5c.CHANNELS_GAME_SHOP(t.id, r))
     }, [t, Z]),
     T = i.useCallback(() => {
       Z(j.L.USER_DISMISS)

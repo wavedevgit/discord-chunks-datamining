@@ -84,7 +84,7 @@ class C extends Chunk98597.ZP {
     super(...e), v(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, i = p.Z.getGuild(t.getGuildId());
+      } = this.props, i = h.Z.getGuild(t.getGuildId());
       null != i && (0, c.jW)(e, async () => {
         let {
           default: e
@@ -128,8 +128,8 @@ let E = (0, Chunk146773.B)(C),
       channel: t,
       guild: n,
       disableSorting: i
-    } = e, l = (0, a.cj)([h.Z, g.Z], () => {
-      let e = h.Z.getChannel(t.parent_id);
+    } = e, l = (0, a.cj)([p.Z, g.Z], () => {
+      let e = p.Z.getChannel(t.parent_id);
       return {
         canManageChannel: g.Z.can(_.Plq.MANAGE_CHANNELS, t),
         canReorderChannel: true !== i && null != e ? g.Z.can(_.Plq.MANAGE_CHANNELS, e) : g.Z.can(_.Plq.MANAGE_CHANNELS, n)

@@ -3,8 +3,8 @@
 require.d(exports, {
   Vk: () => f,
   g3: () => b,
-  jF: () => h,
-  jk: () => p,
+  jF: () => p,
+  jk: () => h,
   wt: () => g
 });
 var Chunk990547 = require("./990547.js"),
@@ -24,12 +24,12 @@ function f(e) {
   })
 }
 
-function h() {
+function p() {
   Chunk570140.Z.dispatch({
     type: "RESET_NOTIFICATION_CENTER"
   })
 }
-async function p(e, t) {
+async function h(e, t) {
   if (c.Z.loading) return;
   await o.Z.dispatch({
     type: "LOAD_NOTIFICATION_CENTER_ITEMS"

@@ -72,20 +72,20 @@ function L(e) {
   } = (0, T.qN)({
     quest: o,
     location: R.dr.QUESTS_BAR
-  }), M = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), Z = (0, c.e7)([f.Z], () => f.Z.hasLayers()), W = s.useRef(null), H = s.useMemo(() => (0, v.q8)(o), [o]), U = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, F = (0, u.Z)(U), z = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
-    hasError: G,
+  }), M = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), Z = (0, c.e7)([f.Z], () => f.Z.hasLayers()), W = s.useRef(null), H = s.useMemo(() => (0, v.q8)(o), [o]), U = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, F = (0, u.Z)(U), G = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
+    hasError: z,
     isLoading: K
   } = (0, O.kC)(), X = s.useContext(N.T) || _ && Q && !K && !L, Y = s.useRef(X), J = s.useRef(false), $ = s.useRef(false), [ee, et] = s.useState(false), [en, er] = s.useState(false), [es, eo] = s.useState(false), [ea, ei] = s.useState(true), [el, ec] = s.useState(true), ed = s.useRef(null), eu = s.useCallback(e => {
-    z || (ei(false), eo(e))
-  }, [z]), ep = s.useCallback(() => {
+    G || (ei(false), eo(e))
+  }, [G]), ep = s.useCallback(() => {
     eu(true)
   }, [eu]), em = s.useCallback(() => {
     et(true)
   }, []), eg = s.useCallback(() => {
-    et(false), $.current || z || eu(false)
-  }, [z, eu]), ef = s.useCallback(() => {
-    et(false), z || eu(false), $.current = false
-  }, [z, eu]), eh = s.useCallback(() => {
+    et(false), $.current || G || eu(false)
+  }, [G, eu]), ef = s.useCallback(() => {
+    et(false), G || eu(false), $.current = false
+  }, [G, eu]), eh = s.useCallback(() => {
     er(true)
   }, []), ex = s.useCallback(() => {
     er(false), eu(false)
@@ -133,8 +133,8 @@ function L(e) {
   }, [en, eC]), s.useLayoutEffect(() => {
     U && !F && $.current && ep()
   }, [ep, U, F]), s.useLayoutEffect(() => {
-    z || !U || F || $.current || eu(false)
-  }, [U, z, F, eu]), s.useLayoutEffect(() => {
+    G || !U || F || $.current || eu(false)
+  }, [U, G, F, eu]), s.useLayoutEffect(() => {
     X !== Y.current && ec(false), Y.current = X
   }, [X]);
   let ey = U ? R.XZ : R.R4,
@@ -182,7 +182,7 @@ function L(e) {
   s.useEffect(() => {
     H && (0, w.loadVideoQuestModal)()
   }, [H]), s.useEffect(() => {
-    if (G) {
+    if (z) {
       var e;
       (0, h.dA)({
         questId: o.id,
@@ -199,7 +199,7 @@ function L(e) {
         tags: ["quest_id:".concat(o.id), "reason:asset_loading_error"]
       })
     }
-  }, [G, o.id]), s.useEffect(() => {
+  }, [z, o.id]), s.useEffect(() => {
     if (!_) {
       var e;
       (0, h.dA)({
@@ -230,8 +230,8 @@ function L(e) {
       })
     }
   }, [X, el, K, o.id, V]), s.useEffect(() => {
-    (!Q || L) && x.Z.clearTracking(), X && el && !K && !G && _ && x.Z.stopTracking(o.id)
-  }, [Q, L, X, el, K, G, _, o.id]);
+    (!Q || L) && x.Z.clearTracking(), X && el && !K && !z && _ && x.Z.stopTracking(o.id)
+  }, [Q, L, X, el, K, z, _, o.id]);
   let {
     enabled: eT,
     status: ew
@@ -239,8 +239,8 @@ function L(e) {
     location: R.dr.QUESTS_BAR,
     questConfig: o.config
   }), eP = (null == ew ? true : ew.progressBlur) && !U ? 88 : 70;
-  if (!_ || !X && el && !K || G) return G ? m.log("Not rendered due to asset error") : _ || m.log("Not rendered due to ineligibility"), null;
-  let eN = eP + 78 * !!z;
+  if (!_ || !X && el && !K || z) return z ? m.log("Not rendered due to asset error") : _ || m.log("Not rendered due to ineligibility"), null;
+  let eN = eP + 78 * !!G;
   return (0, r.jsx)(S.A, {
     questOrQuests: o,
     questContent: j.jn.QUEST_BAR_V2,

@@ -90,14 +90,14 @@ function M(e) {
   }))
 }
 
-function j(e, t) {
+function k(e, t) {
   return null == e || "" === e ? null : {
     distributor: e,
     sku: t
   }
 }
 
-function k(e) {
+function j(e) {
   return s.tn.post({
     url: P.ANM.OAUTH2_AUTHORIZE,
     query: {
@@ -159,7 +159,7 @@ async function U(e) {
     if (null == e) throw Error("Missing dispatch game when launching");
     let i = O.Z.getLibraryApplication(t, n);
     if (null == i) throw Error("Missing library application when launching");
-    l = k(t).then(t => T.Z.launchDispatchApplication(e, t, E.default.locale, i.getBranchName(), r))
+    l = j(t).then(t => T.Z.launchDispatchApplication(e, t, E.default.locale, i.getBranchName(), r))
   } else {
     let e = d.Z.getApplication(t);
     l = null != e ? T.Z.launch(e) : T.Z.launchGame(t)
@@ -332,7 +332,7 @@ let G = {
         name: t,
         os: (0, S.getPlatformName)(),
         icon: n,
-        distributor_application: j(i, a),
+        distributor_application: k(i, a),
         executable: l,
         publisher: r,
         report_version: L

@@ -2,9 +2,9 @@
 /** chunk id: 597998, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => k,
+  ZP: () => j,
   eJ: () => M,
-  nm: () => j
+  nm: () => k
 }), require("./539854.js"), require("./997841.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -129,7 +129,7 @@ let L = 16,
     })
   };
 
-function j(e) {
+function k(e) {
   let {
     className: t,
     mute: n,
@@ -151,8 +151,8 @@ function j(e) {
     guildId: w,
     channelId: L,
     user: M,
-    disconnected: j,
-    hangStatusActivity: k,
+    disconnected: k,
+    hangStatusActivity: j,
     showHangStatus: B,
     isSelf: Z,
     handleHoverHangStatus: F,
@@ -184,7 +184,7 @@ function j(e) {
       color: "currentColor",
       className: o()(A.icon, C)
     })
-  }, "video"))), j && Y.push((0, r.jsx)(c.u, {
+  }, "video"))), k && Y.push((0, r.jsx)(c.u, {
     text: S.intl.string(S.t.HFwRpk),
     children: (0, r.jsx)(u.Mgn, {
       className: o()(A.icon, C),
@@ -212,7 +212,7 @@ function j(e) {
     size: _.ZP.Sizes.SMALL
   }, "stream"));
   let K = null != D && !(0, l.yE)(D.flags, v.udG.EMBEDDED),
-    z = null == k && K;
+    z = null == j && K;
   return 0 !== Y.length || 0 !== W.length || B || z ? (0, r.jsxs)("div", {
     className: o()(A.icons, t),
     children: [(0, r.jsxs)("div", {
@@ -232,7 +232,7 @@ function j(e) {
         userId: M.id
       }, "".concat(M.id, "-game")) : (0, r.jsx)(x, {
         userId: M.id,
-        hangStatusActivity: k,
+        hangStatusActivity: j,
         iconClassName: C,
         isSelf: Z,
         onAddHangStatusClicked: H
@@ -240,7 +240,7 @@ function j(e) {
     }) : null]
   }) : null
 }
-let k = function(e) {
+let j = function(e) {
   var t, {
       avatarContainerClass: n = A.avatarContainer,
       userNameClassName: i = A.usernameFont,
@@ -264,7 +264,7 @@ let k = function(e) {
     collapsed: L,
     mute: x,
     serverMute: M,
-    guildId: k,
+    guildId: j,
     nick: U,
     isGuest: G,
     flipped: B,
@@ -275,7 +275,7 @@ let k = function(e) {
     user: Y
   } = _, W = (0, p.Z)({
     userId: Y.id,
-    guildId: k
+    guildId: j
   }), K = (0, h.j)({
     displayNameStyles: W
   }), z = e => {
@@ -310,7 +310,7 @@ let k = function(e) {
         [A.avatarLatched]: w && !R
       }),
       style: {
-        backgroundImage: "url(".concat(Y.getAvatarURL(k, a === v.ipw.LARGE ? 38 : 24), ")")
+        backgroundImage: "url(".concat(Y.getAvatarURL(j, a === v.ipw.LARGE ? 38 : 24), ")")
       }
     })
   }
@@ -328,7 +328,7 @@ let k = function(e) {
       t = {
         primaryGuild: Y.primaryGuild,
         userId: Y.id,
-        contextGuildId: k,
+        contextGuildId: j,
         isOverlay: d,
         disableTooltip: true,
         className: o()(A.clanTag, d && A.isOverlay),
@@ -342,7 +342,7 @@ let k = function(e) {
   }
 
   function en() {
-    return (0, r.jsx)(j, N({
+    return (0, r.jsx)(k, N({
       disabled: l
     }, _))
   }

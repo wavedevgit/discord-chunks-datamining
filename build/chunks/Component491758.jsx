@@ -88,9 +88,9 @@ function D() {
     }, {
       autoTrackExposure: false
     }),
-    j = (0, Chunk924557.PP)();
+    k = (0, Chunk924557.PP)();
   o()(null != w, "Save clip keybind unset"), o()(null != L, "Save screenshot keybind unset");
-  let k = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
+  let j = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     U = Chunk473749.useMemo(() => [{
       value: Chunk356659.OT.SECONDS_30,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv/3"], {
@@ -106,7 +106,7 @@ function D() {
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nk, {
         count: 2
       })
-    }], [k]),
+    }], [j]),
     G = Chunk473749.useMemo(() => [{
       value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_480,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
@@ -130,7 +130,7 @@ function D() {
     }, {
       value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE,
       label: Chunk388032.intl.string(Chunk388032.t.XjXqzh)
-    }], [k]),
+    }], [j]),
     B = Chunk473749.useMemo(() => [{
       value: Chunk37113.ApplicationStreamFPS.FPS_15,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
@@ -146,7 +146,7 @@ function D() {
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
         fps: Chunk37113.ApplicationStreamFPS.FPS_60
       })
-    }], [k]),
+    }], [j]),
     Z = Chunk473749.useCallback(e => {
       c.Z.setKeybind(P(N({}, w), {
         shortcut: e
@@ -221,7 +221,7 @@ function D() {
           onChange: Z
         })
       })
-    }), j && (0, Chunk54381.jsx)(Chunk481060.gNt, {
+    }), k && (0, Chunk54381.jsx)(Chunk481060.gNt, {
       label: Chunk388032.intl.string(Chunk388032.t["0U/hj7"]),
       description: Chunk388032.intl.string(Chunk388032.t["5zxkdo"]),
       layout: "horizontal",
