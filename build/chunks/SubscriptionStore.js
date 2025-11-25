@@ -239,6 +239,9 @@ class B extends(r = Chunk442837.ZP.Store) {
   getLastLazyPerkSync() {
     return A
   }
+  getPremiumGroupSubscription() {
+    return G(Chunk981631.NYc.PREMIUM, e => e.hasAnyPremiumGroup, true)
+  }
 }
 d(B, "displayName", "SubscriptionStore");
 let Z = new B(Chunk570140.Z, {

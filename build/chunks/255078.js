@@ -176,6 +176,9 @@ class b extends Chunk81825.Z {
   get hasAnyPremiumNitro() {
     return this.items.some(e => _.dJ.has(e.planId))
   }
+  get hasAnyPremiumGroup() {
+    return this.items.some(e => e.planId === _.Xh.PREMIUM_GROUP_MONTH)
+  }
   hasPremiumAtLeast(e) {
     return !!this.isPremium && this.items.some(t => {
       let n = _.GP[t.planId];
