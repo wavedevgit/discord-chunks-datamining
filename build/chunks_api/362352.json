@@ -1,1 +1,1 @@
-{"id":"362352","type":"experiment","data":{"kind":"user","id":"2025-01_default_activity_status_new_users","label":"Guild activity status defaults","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable new defaults","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
+{"id":"362352","type":"experiment","data":{"name":"2025-11-guild-activity-aggregate-carve-out","kind":"user","defaultConfig":{"aggregateDefaultEnabled":true},"variations":{"undefined":{"aggregateDefaultEnabled":false}}},"fromModule":{"id":"web.js"}}

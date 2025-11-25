@@ -2,12 +2,13 @@
 /** chunk id: 362352, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Yd: () => l,
-  o0: () => s
+  Yd: () => d,
+  o0: () => u
 });
 var Chunk818083 = require("./818083.js"),
+  Chunk427164 = require("./427164.js"),
   Chunk128064 = require("./128064.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-01_default_activity_status",
     label: "Guild activity status defaults",
@@ -22,7 +23,7 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = (0, Chunk818083.B)({
+  s = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-01_default_activity_status_new_users",
     label: "Guild activity status defaults",
@@ -37,26 +38,47 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  s = e => a.getCurrentConfig({
+  l = (0, Chunk427164.le)({
+    name: "2025-11-guild-activity-aggregate-carve-out",
+    kind: "user",
+    defaultConfig: {
+      aggregateDefaultEnabled: true
+    },
+    variations: {
+      0: {
+        aggregateDefaultEnabled: true
+      },
+      1: {
+        aggregateDefaultEnabled: false
+      }
+    }
+  }),
+  c = e => l.getConfig({
+    location: e
+  }).aggregateDefaultEnabled && (0, a.c_)("DefaultGuildActivityExperiment"),
+  u = e => o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
-  }).enabled || o.getCurrentConfig({
+  }).enabled || s.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
-  }).enabled || (0, i.c_)("DefaultGuildActivityExperiment"),
-  l = e => {
-    let t = a.useExperiment({
+  }).enabled || c(e),
+  d = e => {
+    let t = o.useExperiment({
         location: e
       }, {
         autoTrackExposure: false
       }).enabled,
-      n = o.useExperiment({
+      n = s.useExperiment({
         location: e
       }, {
         autoTrackExposure: false
       }).enabled,
-      r = (0, i.pY)("DefaultGuildActivityExperiment");
-    return t || n || r
+      r = l.useConfig({
+        location: e
+      }).aggregateDefaultEnabled,
+      i = (0, a.pY)("DefaultGuildActivityExperiment");
+    return t || n || r && i
   }
