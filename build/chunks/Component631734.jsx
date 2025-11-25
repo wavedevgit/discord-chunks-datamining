@@ -1,17 +1,17 @@
 /** Chunk was on 50751 **/
 /** chunk id: 631734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => a
+  a: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk692547 = require("./692547.js"),
   Chunk390507 = require("./390507.js"),
   Chunk325767 = require("./325767.js");
-let a = e => {
-  var t, n, a, s, {
-      size: c = "md",
-      width: u,
+let o = e => {
+  var t, n, o, s, {
+      size: u = "md",
+      width: c,
       height: d,
       color: h = r.Z.colors.INTERACTIVE_NORMAL,
       colorClass: p = ""
@@ -31,8 +31,8 @@ let a = e => {
       }
       return r
     }(e, ["size", "width", "height", "color", "colorClass"]);
-  let m = (0, l.m)(c),
-    g = null != (a = null == m ? true : m.width) ? a : u,
+  let m = (0, l.m)(u),
+    g = null != (o = null == m ? true : m.width) ? o : c,
     y = null != (s = null == m ? true : m.height) ? s : d;
   return (0, i.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -51,7 +51,7 @@ let a = e => {
       })
     }
     return e
-  }({}, (0, o.Z)(f)), n = n = {
+  }({}, (0, a.Z)(f)), n = n = {
     xmlns: "http://www.w3.org/2000/svg",
     width: g,
     height: y,

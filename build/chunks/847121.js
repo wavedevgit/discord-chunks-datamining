@@ -1,5 +1,5 @@
-/** Chunk was on 50751 **/
-/** chunk id: 847121, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 27278 **/
+/** chunk id: 847121, original params: e,n,t (module,exports,require) **/
 module.exports = {
   container: "container__2af41",
   activityCard: "activityCard__2af41",
@@ -11,10 +11,7 @@ module.exports = {
   details: "details__2af41",
   usernameWrapper: "usernameWrapper__2af41",
   username: "username__2af41",
-  inviteButton: "inviteButton__2af41",
-  inviteButtonWrapper: "inviteButtonWrapper__2af41",
-  inviteButtonSubtle: "inviteButtonSubtle__2af41",
-  inviteButtonInner: "inviteButtonInner__2af41",
+  inviteButtons: "inviteButtons__2af41",
   liveIndicator: "liveIndicator__2af41",
   badgesContainer: "badgesContainer__2af41"
 }

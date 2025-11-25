@@ -24,27 +24,27 @@ function g(e, t, n, g) {
       username: "",
       game: n.name
     }),
-    v = t.getAvatarURL(e.guild_id, 80),
+    E = t.getAvatarURL(e.guild_id, 80),
     {
-      trackView: E,
-      trackClick: b
-    } = (0, u.Rg)(d.n0.RequestToStream, {
+      trackView: v,
+      trackClick: S
+    } = (0, c.Rg)(d.n0.RequestToStream, {
       notif_type: d.n0.RequestToStream,
       notif_user_id: t.id,
       activity_type: h.mFx.STREAM_REQUEST,
       activity_name: g.name
     });
   return {
-    icon: v,
+    icon: E,
     title: y,
     body: O,
     confirmText: f.intl.string(m.default.UGbmBp),
     cancelText: f.intl.string(f.t["tpXzJ+"]),
     onNotificationShow: () => {
-      E()
+      v()
     },
     onConfirmClick: (e, t) => {
-      let n = a.Z.getState().preset;
+      let n = o.Z.getState().preset;
       if (n === p.ApplicationStreamPresets.PRESET_DOCUMENTS) {
         let {
           allowAutoQuality: e
@@ -52,19 +52,19 @@ function g(e, t, n, g) {
           location: "requestToStreamNotification"
         });
         n = e ? p.ApplicationStreamPresets.PRESET_AUTO : p.ApplicationStreamPresets.PRESET_VIDEO
-      }(0, o.Z)(c.Z.getTargetPID(), {
+      }(0, a.Z)(u.Z.getTargetPID(), {
         preset: n
-      }), b("request-to-stream"), i.Z.updateNotificationStatus(t)
+      }), S("request-to-stream"), i.Z.updateNotificationStatus(t)
     },
     onCancelClick: (t, n) => {
       (0, r.ack)(e.id, {
         section: h.jXE.OVERLAY,
         object: h.qAy.ACK_DECLINE_REQUEST_TO_STREAM,
         objectType: h.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-      }, true, true), i.Z.updateNotificationStatus(n), b("decline")
+      }, true, true), i.Z.updateNotificationStatus(n), S("decline")
     },
     onDismissClick: () => {
-      b("dismiss")
+      S("dismiss")
     }
   }
 }

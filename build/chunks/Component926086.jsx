@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk348327 = require("./348327.js"),
   s = require.n(Chunk348327),
   Chunk790519 = require("./790519.js"),
@@ -25,19 +25,19 @@ function m(e) {
   let {
     locked: t,
     pinned: n
-  } = e, [l, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), v = r.useRef(0), [E, b] = r.useState(0), {
-    timeToLiveMs: _,
-    reappearTimeMs: S
+  } = e, [l, o] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), E = r.useRef(0), [v, S] = r.useState(0), {
+    timeToLiveMs: b,
+    reappearTimeMs: x
   } = d.ZP.useState(e => ({
     timeToLiveMs: e.timeToLiveMs,
     reappearTimeMs: e.reappearTimeMs
-  }), s()), x = {
-    timeToLiveMs: _,
-    reappearTimeMs: S
-  }, I = r.useRef(x);
+  }), s()), j = {
+    timeToLiveMs: b,
+    reappearTimeMs: x
+  }, I = r.useRef(j);
   r.useEffect(() => {
-    I.current = x
-  }), r.useEffect(() => (v.current = setInterval(() => {
+    I.current = j
+  }), r.useEffect(() => (E.current = setInterval(() => {
     let e = Date.now();
     g(e), O(t => {
       if (0 === t) return e;
@@ -47,13 +47,13 @@ function m(e) {
       return n > i ? t + r : t
     })
   }, 100), () => {
-    clearInterval(v.current)
+    clearInterval(E.current)
   }), []);
   let C = () => {
-      a(Date.now()), b(e => e + 1)
+      o(Date.now()), S(e => e + 1)
     },
-    j = l > 0 && m - l < 1e3,
-    N = (0, u.Yzy)(y > 0 && y < m && m - y < _, {
+    Z = l > 0 && m - l < 1e3,
+    N = (0, c.Yzy)(y > 0 && y < m && m - y < b, {
       from: {
         opacity: 0
       },
@@ -65,23 +65,23 @@ function m(e) {
       },
       config: f
     }),
-    [Z, w] = r.useState(false);
+    [w, T] = r.useState(false);
   if (r.useEffect(() => {
-      E > 10 && w(true)
-    }, [E]), Z) throw Error("ClickZoneDebugWidget crashed, too many clicks");
+      v > 10 && T(true)
+    }, [v]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
   return t && !n ? null : (0, i.jsx)(i.Fragment, {
-    children: N((e, t) => t && (0, i.jsx)(c.animated.div, {
+    children: N((e, t) => t && (0, i.jsx)(u.animated.div, {
       style: e,
       className: p.clickZoneDebugContainer,
       children: (0, i.jsx)(h.Z, {
-        className: o()(p.clickZone, j && p.clickBackground),
-        children: (0, i.jsx)(u.P3F, {
+        className: a()(p.clickZone, Z && p.clickBackground),
+        children: (0, i.jsx)(c.P3F, {
           onClick: C,
           className: p.clickable,
-          children: (0, i.jsxs)(u.Text, {
+          children: (0, i.jsxs)(c.Text, {
             variant: "text-md/semibold",
             color: "always-white",
-            children: ["Click Me (", E, ")"]
+            children: ["Click Me (", v, ")"]
           })
         })
       })

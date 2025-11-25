@@ -1,8 +1,8 @@
 /** Chunk was on 50751 **/
 /** chunk id: 371053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => _,
-  P: () => b
+  N: () => b,
+  P: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,61 +23,61 @@ var Chunk54381 = require("./54381.js"),
   Chunk37113 = require("./37113.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function S(e) {
   let {
     pid: t,
     analyticsLocation: n,
     allowOneClickGoLive: i = false,
-    onBeforeShowModal: o,
-    onOneClickGoLive: a,
-    appContext: u
-  } = e, d = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), O = (0, l.e7)([h.Z], () => h.Z.getChannel(d), [d]), v = (0, l.e7)([y.default], () => y.default.getCurrentUser()), E = null == O ? true : O.getGuildId(), b = (0, l.e7)([f.Z], () => (0, c.Z)(f.Z)), _ = (0, l.e7)([p.Z, m.Z], () => null != O && (0, s.JL)(O, p.Z, m.Z));
+    onBeforeShowModal: a,
+    onOneClickGoLive: o,
+    appContext: c
+  } = e, d = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), O = (0, l.e7)([h.Z], () => h.Z.getChannel(d), [d]), E = (0, l.e7)([y.default], () => y.default.getCurrentUser()), v = null == O ? true : O.getGuildId(), S = (0, l.e7)([f.Z], () => (0, u.Z)(f.Z)), b = (0, l.e7)([p.Z, m.Z], () => null != O && (0, s.JL)(O, p.Z, m.Z));
   return r.useCallback(async () => {
-    await S({
+    await x({
       pid: t,
       voiceChannelId: d,
-      user: v,
-      targetGuildId: E,
-      canGoLive: b,
-      canStream: _,
+      user: E,
+      targetGuildId: v,
+      canGoLive: S,
+      canStream: b,
       analyticsLocation: n,
       allowOneClickGoLive: i,
-      onBeforeShowModal: o,
-      onOneClickGoLive: a,
-      appContext: u
+      onBeforeShowModal: a,
+      onOneClickGoLive: o,
+      appContext: c
     })
-  }, [t, d, v, E, b, _, n, i, o, a, u])
+  }, [t, d, E, v, S, b, n, i, a, o, c])
 }
-async function _(e) {
+async function b(e) {
   let {
     pid: t,
     analyticsLocation: n,
     allowOneClickGoLive: i = false,
     onBeforeShowModal: r,
     onOneClickGoLive: l,
-    appContext: o
-  } = e, a = g.Z.getVoiceChannelId(), u = h.Z.getChannel(a), d = y.default.getCurrentUser(), O = null == u ? true : u.getGuildId(), v = null != u && (0, s.JL)(u, p.Z, m.Z), E = (0, c.Z)(f.Z);
-  await S({
+    appContext: a
+  } = e, o = g.Z.getVoiceChannelId(), c = h.Z.getChannel(o), d = y.default.getCurrentUser(), O = null == c ? true : c.getGuildId(), E = null != c && (0, s.JL)(c, p.Z, m.Z), v = (0, u.Z)(f.Z);
+  await x({
     pid: t,
-    voiceChannelId: a,
+    voiceChannelId: o,
     user: d,
     targetGuildId: O,
-    canGoLive: E,
-    canStream: v,
+    canGoLive: v,
+    canStream: E,
     analyticsLocation: n,
     allowOneClickGoLive: i,
     onBeforeShowModal: r,
     onOneClickGoLive: l,
-    appContext: o
+    appContext: a
   })
 }
-async function S(e) {
+async function x(e) {
   let {
     pid: t,
     voiceChannelId: r,
     user: l,
     targetGuildId: s,
-    canGoLive: c,
+    canGoLive: u,
     canStream: h,
     analyticsLocation: p,
     allowOneClickGoLive: f,
@@ -85,18 +85,18 @@ async function S(e) {
     onOneClickGoLive: g,
     appContext: y
   } = e;
-  if (c && h) {
+  if (u && h) {
     if (f && null !== r) {
       let e = d.Z.getState().preset;
-      if (e === v.ApplicationStreamPresets.PRESET_DOCUMENTS) {
+      if (e === E.ApplicationStreamPresets.PRESET_DOCUMENTS) {
         let {
           allowAutoQuality: t
-        } = (0, a.IK)({
+        } = (0, o.IK)({
           location: "overlay _goLive"
         });
-        e = t ? v.ApplicationStreamPresets.PRESET_AUTO : v.ApplicationStreamPresets.PRESET_VIDEO
+        e = t ? E.ApplicationStreamPresets.PRESET_AUTO : E.ApplicationStreamPresets.PRESET_VIDEO
       }
-      let [n] = await (0, u.Z)(t, {
+      let [n] = await (0, c.Z)(t, {
         preset: e
       });
       if (n) {
@@ -104,10 +104,10 @@ async function S(e) {
         return
       }
     }
-    if (null == l) return void(0, o.showToast)((0, o.createToast)(E.intl.string(E.t.OKnWyb), o.ToastType.FAILURE, {
+    if (null == l) return void(0, a.showToast)((0, a.createToast)(v.intl.string(v.t.OKnWyb), a.ToastType.FAILURE, {
       appContext: O.IlC.OVERLAY
     }));
-    null == m || m(), (0, o.ZDy)(async () => {
+    null == m || m(), (0, a.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("38697"), n.e("4093"), n.e("47863"), n.e("59416")]).then(n.bind(n, 60594));
@@ -148,7 +148,7 @@ async function S(e) {
         }), r))
       }
     }, {
-      contextKey: null != y ? (0, o.VnL)(y) : true
+      contextKey: null != y ? (0, a.VnL)(y) : true
     })
   }
 }

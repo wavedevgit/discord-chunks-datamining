@@ -1,7 +1,7 @@
 /** Chunk was on 27278 **/
 /** chunk id: 870745, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -10,20 +10,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk592125 = require("./592125.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e, n, t) {
-  let u = (0, o.e7)([a.Z], () => a.Z.getChannel(n)),
-    s = null == u ? true : u.getGuildId();
-  return (0, r.jsx)(i.sNh, {
+function _(e, n, t) {
+  let _ = (0, r.e7)([c.Z], () => c.Z.getChannel(n)),
+    u = null == _ ? true : _.getGuildId();
+  return (0, o.jsx)(a.sNh, {
     id: "report-app",
     color: "danger",
-    label: c.intl.string(c.t.NgA5vp),
-    action: () => (0, l.uu)({
+    label: l.intl.string(l.t.NgA5vp),
+    action: () => (0, i.uu)({
       application: e,
       entrypoint: "activity_ui_popout",
-      contextualGuildId: null != s ? s : true,
-      contextualChannelId: null == u ? true : u.id,
+      contextualGuildId: null != u ? u : true,
+      contextualChannelId: null == _ ? true : _.id,
       appContext: t
     }),
-    icon: i.U65
+    icon: a.U65
   })
 }

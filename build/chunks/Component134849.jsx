@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 134849, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,34 +20,34 @@ var Chunk54381 = require("./54381.js"),
   Chunk63452 = require("./63452.js");
 let O = [];
 
-function v(e) {
+function E(e) {
   return e.notification.id
 }
 
-function E(e, t, n, r) {
+function v(e, t, n, r) {
   let {
     index: l,
-    notification: o,
-    locked: a,
+    notification: a,
+    locked: o,
     pinned: s
   } = t;
   return (0, i.jsx)(d.Z, {
     index: l,
-    notification: o,
-    locked: a,
+    notification: a,
+    locked: o,
     pinned: s,
     transitionState: n,
     cleanUp: r
   }, e)
 }
 
-function b(e) {
+function S(e) {
   return (0, i.jsx)("div", {
     className: y.container,
     children: e
   })
 }
-let _ = Chunk473749.memo(function(e) {
+let b = Chunk473749.memo(function(e) {
   let {
     locked: t,
     pinned: n,
@@ -66,18 +66,18 @@ let _ = Chunk473749.memo(function(e) {
       }), i++)
     }
     return e
-  }, [t, n], c.E6), _ = r.useState(() => new h.AS(t))[0];
-  return (r.useLayoutEffect(() => _.updateState(y, t)), r.useLayoutEffect(() => (_.initialize((0, u.i)()), () => _.cleanUp()), [_]), 0 !== y.length || t) ? (0, i.jsx)(h.S4.Provider, {
-    value: _,
-    children: (0, i.jsx)(o.W3x, {
+  }, [t, n], u.E6), b = r.useState(() => new h.AS(t))[0];
+  return (r.useLayoutEffect(() => b.updateState(y, t)), r.useLayoutEffect(() => (b.initialize((0, c.i)()), () => b.cleanUp()), [b]), 0 !== y.length || t) ? (0, i.jsx)(h.S4.Provider, {
+    value: b,
+    children: (0, i.jsx)(a.W3x, {
       items: y,
-      renderItem: E,
-      getItemKey: v,
-      wrapChildren: b
+      renderItem: v,
+      getItemKey: E,
+      wrapChildren: S
     })
-  }) : d ? t ? null : (0, i.jsx)(a.E, {
+  }) : d ? t ? null : (0, i.jsx)(o.E, {
     emptyText: g.intl.string(g.t.O1Nbjq),
-    icon: o.Dkj,
+    icon: a.Dkj,
     absolute: true
   }) : null
 })
