@@ -553,7 +553,7 @@ let eP = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
   eligibleDefault: () => Chunk524437.E5.ON_FOR_LARGE_GUILDS
 });
 let eB = (0, Chunk560997.TG)({
-    baseSetting: (0, Chunk560997.Zc)("privacy", "defaultGuildsActivityRestrictedV2", e => e, e => null != e ? e : a.GI.ACTIVITY_STATUS_OFF),
+    baseSetting: (0, Chunk560997.Zc)("privacy", "defaultGuildsActivityRestrictedV2", e => e === a.GI.ACTIVITY_STATUS_UNSET ? null : e, e => null != e ? e : a.GI.ACTIVITY_STATUS_OFF),
     isEligible: () => (0, Chunk362352.o0)("user_settings"),
     useIsEligible: () => (0, Chunk362352.Yd)("user_settings"),
     ineligibleDefault: Chunk524437.GI.ACTIVITY_STATUS_OFF,

@@ -110,7 +110,7 @@ var h = function(e) {
     return e.ONLINE = "online", e.OFFLINE = "offline", e.IDLE = "idle", e.DND = "dnd", e.INVISIBLE = "invisible", e.STREAMING = "streaming", e.UNKNOWN = "unknown", e
   }({}),
   m = function(e) {
-    return e.DESKTOP = "desktop", e.WEB = "web", e.MOBILE = "mobile", e.UNKNOWN = "unknown", e
+    return e.DESKTOP = "desktop", e.WEB = "web", e.MOBILE = "mobile", e.VR = "vr", e.UNKNOWN = "unknown", e
   }({});
 let g = "6Lef5iQTAAAAAKeIvIY-DeexoO3gj7ryl9rLMEnn";
 var E = function(e) {
