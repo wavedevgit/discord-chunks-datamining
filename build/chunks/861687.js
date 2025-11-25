@@ -529,7 +529,8 @@ class eN extends Chunk47770.Z {
           secure_frames_transition_execute_count: this._secureFramesTransitionExecuteCount,
           vad_use_advanced_voice_activity: i.modeOptions.vadUseKrisp,
           soundshare_experimental: k.Z.getExperimentalSoundshare(),
-          join_voice_id: this.joinVoiceId
+          join_voice_id: this.joinVoiceId,
+          bypass_system_input_processing: i.bypassSystemInputProcessing
         });
       Promise.all([(async () => {
         var e, t;

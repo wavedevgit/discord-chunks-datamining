@@ -2,7 +2,7 @@
 /** chunk id: 696011, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => g
 }), require("./388685.js");
 var Chunk704215 = require("./704215.js"),
   Chunk147913 = require("./147913.js"),
@@ -25,8 +25,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = new Set([Chunk582113.t9, Chunk582113.h4]);
-class g extends Chunk147913.Z {
+class m extends Chunk147913.Z {
   constructor(...e) {
     super(...e), h(this, "_didAttemptToOpenModal", false), h(this, "_didConnectionOpen", false), h(this, "_didUserSettingsProtoLoad", false), h(this, "_didGamesSeenLoad", false), h(this, "actions", {
       POST_CONNECTION_OPEN: () => this._handlePostConnectionOpen()
@@ -44,9 +43,9 @@ class g extends Chunk147913.Z {
         }) && (this._didAttemptToOpenModal = true, !(0, a.zu)(r.z.GAME_SHOP_ANNOUNCEMENT_MODAL))) {
         if (null != c.Z.getGuild((0, u.ac)())) return void(0, f.b)();
         for (let e of s.ZP.getGamesSeen(false, false))
-          if (null != e.id && m.has(e.id)) return void(0, f.b)()
+          if (null != e.id && _.RI.has(e.id)) return void(0, f.b)()
       }
     })
   }
 }
-let E = new g
+let g = new m
