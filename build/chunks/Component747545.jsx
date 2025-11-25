@@ -63,16 +63,15 @@ function w(e) {
     onSelectBackgroundOption: l,
     renderCamera: d,
     hidePreviewToggle: y = false,
-    showSmallBackgroundOptions: A = false,
-    onCancelPreview: C
+    onCancelPreview: A
   } = e, {
-    analyticsLocations: N
+    analyticsLocations: C
   } = (0, f.ZP)(), {
-    id: D
-  } = (0, p.p6)(I.h7.VIDEO_INPUT), w = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), L = m.qF.useSetting();
+    id: N
+  } = (0, p.p6)(I.h7.VIDEO_INPUT), D = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), w = m.qF.useSetting();
   return (0, r.jsxs)(c.Kqy, {
     gap: 20,
-    children: [d(D), E.Z.isEnabled() ? null : (0, r.jsx)(c.Text, {
+    children: [d(N), E.Z.isEnabled() ? null : (0, r.jsx)(c.Text, {
       className: S.permissionWarning,
       color: "interactive-normal",
       variant: "text-sm/normal",
@@ -82,7 +81,7 @@ function w(e) {
     }), y ? null : (0, r.jsx)(c.rsf, {
       label: T.intl.string(T.t["3Ppr1h"]),
       description: T.intl.string(T.t.WNbX4O),
-      checked: L,
+      checked: w,
       onChange: e => {
         m.qF.updateSetting(e), b.default.track(O.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
@@ -94,14 +93,14 @@ function w(e) {
         label: n ? true : T.intl.string(T.t.FsQ3OR),
         helperText: !i && R() ? T.intl.format(T.t.aJYgRt, {
           onCameraSettingsClick: () => {
-            null == C || C(), window.open(P(D)), b.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
-              location_stack: N
+            null == A || A(), window.open(P(N)), b.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
+              location_stack: C
             })
           }
         }) : true,
         deviceType: I.h7.VIDEO_INPUT,
         location: "CameraSettings",
-        isDisabled: !w,
+        isDisabled: !D,
         showAllDevices: true
       })
     }), (0, r.jsx)(h.F, {
@@ -111,8 +110,7 @@ function w(e) {
         onLearnMore: a,
         selectedBackgroundOption: o,
         onSelectBackgroundOption: l,
-        currentDeviceId: D,
-        smallerBackgroundOptions: A
+        currentDeviceId: N
       })
     })]
   })

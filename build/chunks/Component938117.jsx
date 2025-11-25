@@ -67,7 +67,7 @@ function T(e) {
     selectedBackgroundOption: y,
     onSelectBackgroundOption: v,
     currentDeviceId: T,
-    smallerBackgroundOptions: S,
+    responsiveBackgroundOptions: S,
     className: A
   } = e, C = (0, a.e7)([l.default], () => l.default.getCurrentUser()), [N, R] = i.useState(null), P = (0, p.Z)(), D = c.ZP.canUseCustomBackgrounds(C);
   i.useEffect(() => {
@@ -140,7 +140,7 @@ function T(e) {
         onSelectOption: U,
         onUpsellClick: G,
         onAddBackgroundImage: j,
-        smallerOptions: S
+        responsive: S
       })
     })
   }) : null

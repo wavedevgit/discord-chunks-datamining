@@ -4,7 +4,6 @@
 module.exports = {
   backgroundIconOptionIcon: "backgroundIconOptionIcon__53965",
   backgroundOptions: "backgroundOptions__53965",
-  backgroundOptionsSmall: "backgroundOptionsSmall__53965 backgroundOptions__53965",
   backgroundOptionsLarge: "backgroundOptionsLarge__53965 backgroundOptions__53965",
   backgroundImageOption: "backgroundImageOption__53965",
   backgroundOptionBackgroundBlurred: "backgroundOptionBackgroundBlurred__53965 backgroundImageOption__53965",
