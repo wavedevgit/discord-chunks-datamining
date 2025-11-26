@@ -1,7 +1,7 @@
 /** Chunk was on 76212 **/
 /** chunk id: 846632, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -20,8 +20,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk541673 = require("./541673.js"),
   Chunk265227 = require("./265227.js");
 
-function m(e) {
-  var t, n, r, m, {
+function h(e) {
+  var t, n, r, h, {
       guildId: j
     } = e,
     v = function(e, t) {
@@ -68,19 +68,20 @@ function m(e) {
     }
     return e
   }({
-    className: h.modal,
+    "data-migration-pending": true,
+    className: m.modal,
     size: d.CgR.DYNAMIC
   }, v), n = n = {
     parentComponent: "GuildTagAdoptModal",
     children: [(0, a.jsxs)(d.hzk, {
-      className: h.modalContent,
+      className: m.modalContent,
       scrollbarType: "none",
       children: [(0, a.jsx)("div", {
-        className: h.modalContentChild,
+        className: m.modalContentChild,
         children: (0, a.jsxs)("div", {
-          className: h.left,
+          className: m.left,
           children: [(0, a.jsxs)("div", {
-            className: h.headerContainer,
+            className: m.headerContainer,
             children: [(0, a.jsx)(d.Heading, {
               variant: "heading-lg/bold",
               children: p.intl.string(C.default.OvKPi0)
@@ -89,7 +90,7 @@ function m(e) {
               children: p.intl.string(C.default.kHxfDw)
             })]
           }), (0, a.jsx)(c.Z, {
-            className: h.guildRow,
+            className: m.guildRow,
             guildId: _.id,
             guildName: _.name,
             guildIcon: _.icon,
@@ -97,7 +98,7 @@ function m(e) {
             guildTag: _.profile.tag,
             guildBadge: null != (r = _.profile.badge) ? r : ""
           }), (0, a.jsxs)("div", {
-            className: h.buttonContainer,
+            className: m.buttonContainer,
             children: [(0, a.jsx)(l.u, {
               text: p.intl.string(C.default.WlENZt),
               shouldShow: y,
@@ -118,16 +119,16 @@ function m(e) {
           })]
         })
       }), (0, a.jsx)("div", {
-        className: i()(h.modalContentChild, h.right),
+        className: i()(m.modalContentChild, m.right),
         children: (0, a.jsx)(s.Z, {
-          className: h.rightContent,
+          className: m.rightContent,
           guildId: _.id,
           tag: _.profile.tag,
-          badge: null != (m = _.profile.badge) ? m : ""
+          badge: null != (h = _.profile.badge) ? h : ""
         })
       })]
     }), (0, a.jsx)(d.olH, {
-      className: h.close,
+      className: m.close,
       onClick: v.onClose
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
