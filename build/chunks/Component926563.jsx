@@ -25,13 +25,13 @@ function b(e) {
     user: n,
     previewText: b,
     previewEmoji: h,
-    previewStatus: T,
-    placeHolderText: v,
-    transitionState: S
+    previewStatus: S,
+    placeHolderText: T,
+    transitionState: v
   } = e, j = (0, a.ZP)(n.id), P = null != b && "" !== b || null != h ? O.intl.formatToPlainString(O.t.UpF5Qa, {
     emoji: null != (t = null == h ? true : h.name) ? t : "",
     status: b
-  }) : "".concat(O.intl.string(O.t.EVV6uZ), ": ").concat(v);
+  }) : "".concat(O.intl.string(O.t.EVV6uZ), ": ").concat(T);
   return (0, r.jsx)("div", {
     role: "img",
     "aria-label": P,
@@ -52,7 +52,7 @@ function b(e) {
             user: n,
             displayProfile: j,
             themeType: p.l.POPOUT,
-            previewStatus: T,
+            previewStatus: S,
             className: g.avatar
           })
         }), (0, r.jsx)(m.Z, {
@@ -60,10 +60,10 @@ function b(e) {
           themeType: p.l.POPOUT,
           previewText: b,
           previewEmoji: h,
-          placeholderText: v,
-          hasEntered: S === l.Dvm.ENTERED
+          placeholderText: T,
+          hasEntered: v === i.Dvm.ENTERED
         })]
-      }), (null == j ? true : j.profileEffect) != null && (0, r.jsx)(i.Z, {
+      }), (null == j ? true : j.profileEffect) != null && (0, r.jsx)(l.Z, {
         skuId: j.profileEffect.skuId
       }), (0, r.jsx)("div", {
         className: g.usernameContainer,

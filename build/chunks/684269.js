@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk695346 = require("./695346.js"),
   Chunk875425 = require("./875425.js");
-let i = [Chunk875425.FO.MINUTES_30, Chunk875425.FO.HOURS_1, Chunk875425.FO.HOURS_4];
+let l = [Chunk875425.FO.MINUTES_30, Chunk875425.FO.HOURS_1, Chunk875425.FO.HOURS_4];
 
 function a() {
   var e;
@@ -18,5 +18,5 @@ function a() {
     o = new Date(require);
   if (a.getFullYear() !== o.getFullYear() || a.getMonth() !== o.getMonth() || a.getDate() !== o.getDate()) return Chunk875425.FO.TODAY;
   let u = Number(require) - Date.now();
-  return null != (e = i.find(e => u <= e)) ? module : Chunk875425.FO.TODAY
+  return null != (e = l.find(e => u <= e)) ? module : Chunk875425.FO.TODAY
 }

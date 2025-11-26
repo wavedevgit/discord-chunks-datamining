@@ -4,7 +4,7 @@ require.d(exports, {
   Z: () => c
 }), require("./781311.js");
 var Chunk913527 = require("./913527.js"),
-  l = require.n(Chunk913527),
+  i = require.n(Chunk913527),
   Chunk695346 = require("./695346.js"),
   Chunk626135 = require("./626135.js"),
   Chunk337953 = require("./337953.js"),
@@ -21,14 +21,14 @@ function c(e) {
     prompt: m,
     analyticsLocations: f
   } = e, p = t.trim();
-  if (!(p.length > 0) && null == n) return i.Ok.updateSetting(true);
+  if (!(p.length > 0) && null == n) return l.Ok.updateSetting(true);
   {
-    let e = i.Ok.updateSetting({
+    let e = l.Ok.updateSetting({
       text: p.length > 0 ? p : "",
-      expiresAtMs: null != r && r !== u.FO.DONT_CLEAR ? String(l()().add((0, o.Z)(r), "ms").toDate().getTime()) : "0",
+      expiresAtMs: null != r && r !== u.FO.DONT_CLEAR ? String(i()().add((0, o.Z)(r), "ms").toDate().getTime()) : "0",
       emojiId: null != n && null != n.id ? n.id : "0",
       emojiName: null != n ? n.name : "",
-      createdAtMs: String(null != d ? d : l()().toDate().getTime())
+      createdAtMs: String(null != d ? d : i()().toDate().getTime())
     });
     return a.default.track(s.rMx.CUSTOM_STATUS_UPDATED, {
       location: null != c ? c.location : null,
