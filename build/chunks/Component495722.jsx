@@ -105,7 +105,7 @@ function F(e) {
   let {
     quest: t
   } = e;
-  return (0, r.jsx)(A.Z, {
+  return (0, r.jsx)(R.Z, {
     className: a()(H.rewardTile, H.hiddenRewardTile),
     learnMoreStyle: "text",
     quest: t,
@@ -115,7 +115,7 @@ function F(e) {
   })
 }
 
-function G(e) {
+function z(e) {
   return (0, r.jsx)(m.Text, {
     className: H.description,
     variant: "text-xs/normal",
@@ -132,7 +132,7 @@ function G(e) {
   })
 }
 
-function z(e) {
+function G(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -148,7 +148,7 @@ function z(e) {
     quest: t
   }), {
     enabled: P,
-    status: A
+    status: R
   } = (0, O.n)({
     location: M.dr.QUESTS_BAR,
     questConfig: t.config
@@ -172,7 +172,7 @@ function z(e) {
             children: W.intl.format(W.t.EQa7os, {
               questName: t.config.messages.questName
             })
-          }), (0, r.jsx)(G, {
+          }), (0, r.jsx)(z, {
             quest: t,
             taskDetails: n,
             popoutTargetElementRef: C,
@@ -187,7 +187,7 @@ function z(e) {
             loading: y,
             text: S,
             size: "sm",
-            icon: (0, R.getPrimaryCtaIcon)(t),
+            icon: (0, A.getPrimaryCtaIcon)(t),
             fullWidth: true
           })
         })]
@@ -197,7 +197,7 @@ function z(e) {
       style: {
         opacity: o.to([0, 1], [1, 0])
       },
-      children: [(null == A ? true : A.progressBlur) ? (0, r.jsxs)(r.Fragment, {
+      children: [(null == R ? true : R.progressBlur) ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: H.contentCollapsedBackground,
           style: k
@@ -214,7 +214,7 @@ function z(e) {
       }) : (0, r.jsx)("div", {
         className: a()(H.contentCollapsedBackground, H.blur),
         style: k
-      }), (null == A ? true : A.shineWipe) && (0, r.jsx)(m.ZX5, {
+      }), (null == R ? true : R.shineWipe) && (0, r.jsx)(m.ZX5, {
         className: H.shine,
         "data-migration-pending": true,
         shineSize: m.rHe.DEFAULT,
@@ -306,16 +306,16 @@ function X(e) {
     onCtxMenuSelect: h,
     onGameSheetOpened: x,
     onGameSheetClosed: _
-  } = e, v = (null == (t = n.userStatus) ? true : t.completedAt) != null, E = o.percentComplete > 0, O = (0, j.z)(n), [S, T, w] = (0, j.me)(n, o), P = s.useRef(null), N = s.useRef(null), A = (0, j._s)({
+  } = e, v = (null == (t = n.userStatus) ? true : t.completedAt) != null, E = o.percentComplete > 0, O = (0, j.z)(n), [S, T, w] = (0, j.me)(n, o), P = s.useRef(null), N = s.useRef(null), R = (0, j._s)({
     quest: n
-  }), W = (0, y.q8)(n), F = (0, j.Jf)(n), G = s.useCallback(() => {
-    (0, R.openVideoQuestModal)({
+  }), W = (0, y.q8)(n), F = (0, j.Jf)(n), z = s.useCallback(() => {
+    (0, A.openVideoQuestModal)({
       quest: n,
       questContent: C.jn.QUEST_BAR_V2,
       sourceQuestContent: C.jn.QUEST_BAR_V2,
       sourceQuestContentCTA: b.jZ.QUEST_BAR_VIDEO_QUEST_PREVIEW
     })
-  }, [n]), z = null != F ? F.percentComplete : o.percentComplete;
+  }, [n]), G = null != F ? F.percentComplete : o.percentComplete;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.animated.div, {
       className: a()(H.postEnrollmentBackground, H.postEnrollmentBackgroundCollapsed),
@@ -350,7 +350,7 @@ function X(e) {
         quest: n,
         progressBarRef: P,
         isExpanded: true,
-        percentComplete: z,
+        percentComplete: G,
         activeScreen: S,
         popoutTargetElementRef: N,
         onGameSheetOpened: x,
@@ -369,13 +369,13 @@ function X(e) {
         children: [W && (0, r.jsx)(U, {
           isExpanded: u,
           quest: n,
-          onClick: G,
+          onClick: z,
           reducedMotion: p
         }), (0, r.jsx)(k.y, {
           quest: n,
           useReducedMotion: p,
           isExpanded: u,
-          awaitingConsoleConnections: A,
+          awaitingConsoleConnections: R,
           hasMadeProgress: E,
           isProgressing: O,
           activeScreen: S,
@@ -397,7 +397,7 @@ function X(e) {
 }
 async function Y(e, t, n, r) {
   let s = (0, y.q8)(e);
-  return s && (0, S.R)(M.dr.QUESTS_BAR) ? void await (0, R.enrollAndStartVideoQuestWithErrorHandling)(e, {
+  return s && (0, S.R)(M.dr.QUESTS_BAR) ? void await (0, A.enrollAndStartVideoQuestWithErrorHandling)(e, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: r,
@@ -410,7 +410,7 @@ async function Y(e, t, n, r) {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: r
-  }), s && (0, R.openVideoQuestModal)({
+  }), s && (0, A.openVideoQuestModal)({
     quest: e,
     questContent: t,
     sourceQuestContent: r,
@@ -473,7 +473,7 @@ let J = Chunk473749.forwardRef(function(e, t) {
         containerRef: t,
         onGameSheetOpened: h,
         onGameSheetClosed: x
-      }) : (0, r.jsx)(z, {
+      }) : (0, r.jsx)(G, {
         quest: v,
         taskDetails: O,
         expansionSpring: p,

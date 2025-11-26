@@ -50,10 +50,10 @@ let v = (0, Chunk790519.animated)(Chunk685613.ZP),
         impressionId: S,
         sourceQuestContent: u.jn.QUEST_BAR_V2
       })
-    }, [S, t]), A = E && O, R = (0, r.jsx)(l.P3F, {
+    }, [S, t]), R = E && O, A = (0, r.jsx)(l.P3F, {
       onClick: N,
       className: a()(j.clickable, {
-        [j.logo]: A
+        [j.logo]: R
       }),
       children: (0, r.jsx)(v, {
         quest: t,
@@ -71,7 +71,7 @@ let v = (0, Chunk790519.animated)(Chunk685613.ZP),
     });
     return (0, r.jsxs)(i.animated.div, {
       className: a()(j.wrapper, j.rewardHighlightWrapper, {
-        [j.interactable]: A
+        [j.interactable]: R
       }),
       style: {
         transform: (0, i.to)([n.to({
@@ -90,8 +90,8 @@ let v = (0, Chunk790519.animated)(Chunk685613.ZP),
       }), (0, r.jsx)(x.Z, {
         quest: t,
         expansionSpring: n,
-        isFullyExpanded: A,
-        partnerBranding: R,
+        isFullyExpanded: R,
+        partnerBranding: A,
         useReducedMotion: y
       }), (0, r.jsxs)(i.animated.div, {
         className: j.promotedBadgeWrapper,

@@ -115,7 +115,7 @@ function _(e) {
     title: R,
     subtitle: I
   } = {
-    title: (0, f.B2)(_),
+    title: (0, f.V_)(_),
     subtitle: null != (t = _.ctaConfig.subtitle) ? t : b.intl.string(b.t.mxaHfx)
   };
   return (0, r.jsxs)(r.Fragment, {

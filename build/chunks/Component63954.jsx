@@ -170,7 +170,8 @@ let M = "1193992107035983872",
       features: [],
       sharePolicy: Chunk820827.X.SHAREABLE_EVERYWHERE,
       ctaConfig: {
-        link: "https://discord.com/"
+        link: "https://discord.com/",
+        buttonLabel: "Learn More"
       }
     },
     userStatus: null,
@@ -183,7 +184,7 @@ function W() {
     H(I(k({}, e), {
       preview: true
     }))
-  }, []), [F, G] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [z, K] = Chunk473749.useState(false), [X, Y] = Chunk473749.useState(false), [J, $] = Chunk473749.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
+  }, []), [F, z] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [G, K] = Chunk473749.useState(false), [X, Y] = Chunk473749.useState(false), [J, $] = Chunk473749.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -324,7 +325,7 @@ function W() {
       className: Chunk188764.fields,
       children: (0, Chunk54381.jsx)(Chunk916028.Z, {
         onSelect: function(e) {
-          $(e), null != e && (G(function(e) {
+          $(e), null != e && (z(function(e) {
             if (null == e.userStatus) return P.a.UNENROLLED;
             if (null != e.userStatus.claimedAt) return P.a.CLAIMED;
             if (null != e.userStatus.completedAt) return P.a.COMPLETED_100;
@@ -476,10 +477,10 @@ function W() {
     }), ee.map((e, t) => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)(p.Heading, {
         variant: "heading-md/semibold",
-        className: R.subheading,
+        className: A.subheading,
         children: ["Reward #", t + 1]
       }), (0, r.jsxs)("div", {
-        className: R.fields,
+        className: A.fields,
         children: [(0, r.jsx)(O.Z, {
           title: "Name",
           assetKey: "name",
@@ -552,7 +553,7 @@ function W() {
         children: (0, Chunk54381.jsx)(Chunk815183.Z, {})
       }), (0, Chunk54381.jsx)(Chunk899457.Z, {
         onChange: function(e) {
-          switch (G(e), e) {
+          switch (z(e), e) {
             case P.a.UNENROLLED:
               U(I(k({}, W), {
                 userStatus: null
@@ -680,7 +681,7 @@ function W() {
               children: (0, Chunk54381.jsx)(Chunk801604.Z, {
                 channelId: "123",
                 previewQuest: W,
-                isParticipatingOverride: z
+                isParticipatingOverride: G
               })
             })
           })
@@ -689,7 +690,7 @@ function W() {
         className: Chunk188764.toggleSwitch,
         children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Is Participating:",
-          checked: z,
+          checked: G,
           onChange: function(e) {
             K(e)
           }

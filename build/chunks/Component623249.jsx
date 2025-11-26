@@ -35,7 +35,7 @@ function O(e) {
     transitionState: j,
     onClose: O,
     sourceQuestContent: T
-  } = e, [w, P] = (0, s.useState)(o), N = (0, h.KX)(), A = (0, g.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, v.g2)({
+  } = e, [w, P] = (0, s.useState)(o), N = (0, h.KX)(), R = (0, g.O5)(), A = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, v.g2)({
     useReducedMotion: B,
     className: E.colorTransition
   }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, _.Bz)(n), q = (0, l.e7)([m.Z], () => m.Z.getState().theme), L = (0, d.wj)(q) ? C.BRd.DARK : C.BRd.LIGHT, {
@@ -44,7 +44,7 @@ function O(e) {
   } = (0, h.GI)({
     questId: n.id,
     beforeRequest: () => {
-      k.startAnimation(), A({
+      k.startAnimation(), R({
         questId: n.id,
         questContent: x.jn.CONNECTIONS_MODAL,
         questContentCTA: g.jZ.DEFIBRILLATOR,
@@ -67,7 +67,7 @@ function O(e) {
       }, {
         content: x.jn.CONNECTIONS_MODAL,
         ctaContent: g.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
-        impressionId: R,
+        impressionId: A,
         sourceQuestContent: T
       })),
       text: y.intl.string(y.t["qiS+xj"])

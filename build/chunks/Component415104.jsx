@@ -41,7 +41,7 @@ function b(e) {
       },
       sourceQuestContent: C
     }), w && (0, p.loadVideoQuestModal)()
-  }, [P, o.id, u, w, C, b]), A = s.useCallback(() => {
+  }, [P, o.id, u, w, C, b]), R = s.useCallback(() => {
     E(false), P({
       questId: o.id,
       event: x.rMx.QUEST_HOVER_OFF,
@@ -52,7 +52,7 @@ function b(e) {
       },
       sourceQuestContent: C
     })
-  }, [P, o.id, u, C, b]), R = s.useContext(g.t), {
+  }, [P, o.id, u, C, b]), A = s.useContext(g.t), {
     visibilityElementRef: B,
     almostVisibleInViewport: k
   } = function(e) {
@@ -67,7 +67,7 @@ function b(e) {
       }, true),
       almostVisibleInViewport: t
     }
-  }(null != (n = null == R || null == (t = R.current) ? true : t.getScrollerNode()) ? n : null);
+  }(null != (n = null == A || null == (t = A.current) ? true : t.getScrollerNode()) ? n : null);
   return (0, r.jsxs)("div", {
     id: "quest-tile-".concat(o.id),
     ref: e => {
@@ -75,9 +75,9 @@ function b(e) {
     },
     className: a()(_.container, c),
     onMouseEnter: N,
-    onMouseLeave: A,
+    onMouseLeave: R,
     onFocus: N,
-    onBlur: A,
+    onBlur: R,
     children: [(0, r.jsx)(f.Z, {
       quest: o,
       isHovering: y,

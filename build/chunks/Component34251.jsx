@@ -68,13 +68,13 @@ function C(e) {
     transitionState: x,
     location: f,
     sourceQuestContent: C
-  } = e, h = null != (n = (0, s.B4)(a.id)) ? n : a, g = i.useMemo(() => (0, l.K)(h.config), [h]), j = (null == (t = h.userStatus) ? true : t.claimedAt) != null, _ = !h.preview && !j, [v, N] = i.useState(_ ? "loading" : "claimed");
+  } = e, h = null != (n = (0, s.B4)(a.id)) ? n : a, g = i.useMemo(() => (0, l.K)(h.config), [h]), _ = (null == (t = h.userStatus) ? true : t.claimedAt) != null, j = !h.preview && !_, [v, N] = i.useState(j ? "loading" : "claimed");
   i.useEffect(() => {
-    if (_) {
+    if (j) {
       let e = (0, l.zG)(h.config);
       (0, o.QB)(h.id, e, f).then(() => N("claimed")).catch(() => N("error"))
     }
-  }, [h, f, _]);
+  }, [h, f, j]);
   let y = "error" === v || null == g;
   return (0, r.jsx)(d.Z, {
     onClose: c,

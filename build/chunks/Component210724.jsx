@@ -44,7 +44,7 @@ function D(e) {
     questId: n
   } = e;
   return (0, _.qI)({
-    mode: t ? R.NH.EXPANDED : R.NH.COLLAPSED,
+    mode: t ? A.NH.EXPANDED : A.NH.COLLAPSED,
     questContent: j.jn.QUEST_BAR_V2,
     questId: n,
     sourceQuestContent: j.jn.QUEST_BAR_V2
@@ -63,29 +63,29 @@ function L(e) {
     quest: o
   } = e, m = (0, E.T)({
     quest: o,
-    location: R.dr.QUESTS_BAR
+    location: A.dr.QUESTS_BAR
   }), _ = (0, y.Z)({
-    location: R.dr.QUESTS_BAR
+    location: A.dr.QUESTS_BAR
   }), L = (0, c.e7)([b.Z], () => null != b.Z.questEnrollmentBlockedUntil), {
     isQuestBarVisible: Q,
     reason: V
   } = (0, T.qN)({
     quest: o,
-    location: R.dr.QUESTS_BAR
-  }), M = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), Z = (0, c.e7)([f.Z], () => f.Z.hasLayers()), W = s.useRef(null), H = s.useMemo(() => (0, v.q8)(o), [o]), U = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, F = (0, u.Z)(U), G = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
-    hasError: z,
+    location: A.dr.QUESTS_BAR
+  }), M = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), Z = (0, c.e7)([f.Z], () => f.Z.hasLayers()), W = s.useRef(null), H = s.useMemo(() => (0, v.q8)(o), [o]), U = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, F = (0, u.Z)(U), z = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
+    hasError: G,
     isLoading: K
   } = (0, O.kC)(), X = s.useContext(N.T) || _ && Q && !K && !L, Y = s.useRef(X), J = s.useRef(false), $ = s.useRef(false), [ee, et] = s.useState(false), [en, er] = s.useState(false), [es, eo] = s.useState(false), [ea, ei] = s.useState(true), [el, ec] = s.useState(true), ed = s.useRef(null), eu = s.useCallback(e => {
-    G || (ei(false), eo(e))
-  }, [G]), ep = s.useCallback(() => {
+    z || (ei(false), eo(e))
+  }, [z]), ep = s.useCallback(() => {
     eu(true)
   }, [eu]), em = s.useCallback(() => {
     et(true)
   }, []), eg = s.useCallback(() => {
-    et(false), $.current || G || eu(false)
-  }, [G, eu]), ef = s.useCallback(() => {
-    et(false), G || eu(false), $.current = false
-  }, [G, eu]), eh = s.useCallback(() => {
+    et(false), $.current || z || eu(false)
+  }, [z, eu]), ef = s.useCallback(() => {
+    et(false), z || eu(false), $.current = false
+  }, [z, eu]), eh = s.useCallback(() => {
     er(true)
   }, []), ex = s.useCallback(() => {
     er(false), eu(false)
@@ -133,11 +133,11 @@ function L(e) {
   }, [en, eC]), s.useLayoutEffect(() => {
     U && !F && $.current && ep()
   }, [ep, U, F]), s.useLayoutEffect(() => {
-    G || !U || F || $.current || eu(false)
-  }, [U, G, F, eu]), s.useLayoutEffect(() => {
+    z || !U || F || $.current || eu(false)
+  }, [U, z, F, eu]), s.useLayoutEffect(() => {
     X !== Y.current && ec(false), Y.current = X
   }, [X]);
-  let ey = U ? R.XZ : R.R4,
+  let ey = U ? A.XZ : A.R4,
     [{
       expansionSpring: eE
     }, eO] = (0, d.q_F)(() => ({
@@ -182,7 +182,7 @@ function L(e) {
   s.useEffect(() => {
     H && (0, w.loadVideoQuestModal)()
   }, [H]), s.useEffect(() => {
-    if (z) {
+    if (G) {
       var e;
       (0, h.dA)({
         questId: o.id,
@@ -199,7 +199,7 @@ function L(e) {
         tags: ["quest_id:".concat(o.id), "reason:asset_loading_error"]
       })
     }
-  }, [z, o.id]), s.useEffect(() => {
+  }, [G, o.id]), s.useEffect(() => {
     if (!_) {
       var e;
       (0, h.dA)({
@@ -230,17 +230,17 @@ function L(e) {
       })
     }
   }, [X, el, K, o.id, V]), s.useEffect(() => {
-    (!Q || L) && x.Z.clearTracking(), X && el && !K && !z && _ && x.Z.stopTracking(o.id)
-  }, [Q, L, X, el, K, z, _, o.id]);
+    (!Q || L) && x.Z.clearTracking(), X && el && !K && !G && _ && x.Z.stopTracking(o.id)
+  }, [Q, L, X, el, K, G, _, o.id]);
   let {
     enabled: eT,
     status: ew
   } = (0, C.n)({
-    location: R.dr.QUESTS_BAR,
+    location: A.dr.QUESTS_BAR,
     questConfig: o.config
   }), eP = (null == ew ? true : ew.progressBlur) && !U ? 88 : 70;
-  if (!_ || !X && el && !K || z) return z ? m.log("Not rendered due to asset error") : _ || m.log("Not rendered due to ineligibility"), null;
-  let eN = eP + 78 * !!G;
+  if (!_ || !X && el && !K || G) return G ? m.log("Not rendered due to asset error") : _ || m.log("Not rendered due to ineligibility"), null;
+  let eN = eP + 78 * !!z;
   return (0, r.jsx)(S.A, {
     questOrQuests: o,
     questContent: j.jn.QUEST_BAR_V2,
@@ -283,7 +283,7 @@ function L(e) {
           children: (0, r.jsx)(P.t, {
             springConfig: ey,
             isExpanded: es,
-            children: (0, r.jsx)(A.Z, {
+            children: (0, r.jsx)(R.Z, {
               expandedContentRef: ed,
               expansionSpring: eE,
               isExpanded: es,

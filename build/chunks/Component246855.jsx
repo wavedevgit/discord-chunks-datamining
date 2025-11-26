@@ -56,10 +56,10 @@ function E(e) {
   let {
     onVideoLoaded: n,
     isLoading: t
-  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), b = (0, c.ZP)(), f = (0, l.apv)(b), x = f ? w.Z : S.Z, h = f ? L.Z : Z.Z, _ = r.useRef(null), C = r.useRef(null), [g, j] = r.useState(false), [y, v] = r.useState(false), [N, O] = r.useState(false);
+  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), b = (0, c.ZP)(), f = (0, l.apv)(b), x = f ? w.Z : S.Z, h = f ? L.Z : Z.Z, _ = r.useRef(null), C = r.useRef(null), [g, j] = r.useState(false), [v, y] = r.useState(false), [N, O] = r.useState(false);
   r.useEffect(() => {
-    g && y && N && n()
-  }, [g, y, N, n]), r.useEffect(() => {
+    g && v && N && n()
+  }, [g, v, N, n]), r.useEffect(() => {
     t || i || setTimeout(() => {
       var e;
       null == (e = _.current) || e.play()
@@ -83,7 +83,7 @@ function E(e) {
         [T.hidden]: u
       }),
       controls: false,
-      onCanPlayThrough: r.useCallback(() => v(true), []),
+      onCanPlayThrough: r.useCallback(() => y(true), []),
       children: (0, a.jsx)("source", {
         src: h,
         type: "video/webm"
@@ -194,10 +194,10 @@ function I(e) {
     transitionState: o,
     quest: d,
     sourceQuestContent: l,
-    location: v.dr.ORBS_REWARD_MODAL,
+    location: y.dr.ORBS_REWARD_MODAL,
     isRewardContentLoading: w,
     rewardContentHasError: Z,
-    rewardContent: Z ? null : (0, a.jsx)(y.Z, {
+    rewardContent: Z ? null : (0, a.jsx)(v.Z, {
       rewardName: P.intl.string(P.t.Lmysvd),
       children: (0, a.jsx)(D, {
         onClose: s,

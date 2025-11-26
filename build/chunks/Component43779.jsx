@@ -32,8 +32,8 @@ function O(e) {
     quest: w,
     questContent: P,
     isHovering: N,
-    contentPosition: A,
-    rowIndex: R,
+    contentPosition: R,
+    rowIndex: A,
     isVisibleInViewport: B,
     onReceiveErrorHints: k,
     sourceQuestContent: I
@@ -75,36 +75,36 @@ function O(e) {
     })(Object(T)).forEach(function(e) {
       Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(T, e))
     }), O)
-  }), U = (null == (n = w.userStatus) ? true : n.completedAt) != null, F = (null == (o = w.userStatus) ? true : o.claimedAt) != null, G = (0, g.xN)(w.config), z = (0, g.LM)(w.config), {
+  }), U = (null == (n = w.userStatus) ? true : n.completedAt) != null, F = (null == (o = w.userStatus) ? true : o.claimedAt) != null, z = (0, g.xN)(w.config), G = (0, g.LM)(w.config), {
     completedRatio: K,
     completedRatioDisplay: X
-  } = (0, m.I)(w), Y = (0, m.Bd)(w, I, D), J = s.useMemo(() => F && G ? C.intl.format(C.t["8Op4c4"], {
+  } = (0, m.I)(w), Y = (0, m.Bd)(w, I, D), J = s.useMemo(() => F && z ? C.intl.format(C.t["8Op4c4"], {
     balanceHook: () => (0, r.jsxs)(S, {
       questId: w.id,
       children: [(0, r.jsx)(p.Z, {
         shouldUseThemeColor: true,
         className: y.orbsBalanceIcon,
         customSize: 14
-      }), z]
+      }), G]
     }, w.id)
   }) : F ? (0, r.jsx)(S, {
     questId: w.id,
     children: q
-  }) : G ? C.intl.format(C.t.ro1sze, {
+  }) : z ? C.intl.format(C.t.ro1sze, {
     balanceHook: () => (0, r.jsxs)(S, {
       questId: w.id,
       children: [(0, r.jsx)(p.Z, {
         shouldUseThemeColor: true,
         className: y.orbsBalanceIcon,
         customSize: 14
-      }), z]
+      }), G]
     }, w.id)
   }) : C.intl.format(C.t["0IUT4Y"], {
     rewardWithArticleHook: () => (0, r.jsx)(S, {
       questId: w.id,
       children: L
     }, w.id)
-  }), [q, F, L, w.id, z, G]), $ = s.useMemo(() => {
+  }), [q, F, L, w.id, G, z]), $ = s.useMemo(() => {
     if (null != Y) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -193,8 +193,8 @@ function O(e) {
     }), (0, r.jsx)(b.Z, {
       quest: w,
       questContent: P,
-      contentPosition: A,
-      rowIndex: R,
+      contentPosition: R,
+      rowIndex: A,
       onReceiveErrorHints: k,
       sourceQuestContent: I
     })]
