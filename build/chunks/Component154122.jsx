@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
   Chunk518950 = require("./518950.js"),
@@ -25,11 +25,11 @@ let m = e => {
     eventHandlers: b
   } = (0, l.Z)({
     userId: null == t ? true : t.id,
-    size: s.EFr.SIZE_56
+    size: a.EFr.SIZE_56
   }), y = u.ZP.getName(t), h = !r;
   return (0, n.jsxs)("div", {
     className: f.row,
-    children: [(0, n.jsx)(s.qEK, function(e) {
+    children: [(0, n.jsx)(a.qEK, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -47,19 +47,19 @@ let m = e => {
       }
       return e
     }({
-      imageClassName: a()({
+      imageClassName: s()({
         [f.erroredAvatar]: h
       }),
       src: m,
       "aria-label": y,
-      size: s.EFr.SIZE_32
+      size: a.EFr.SIZE_32
     }, b)), h ? (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(s.Text, {
+      children: [(0, n.jsx)(a.Text, {
         className: f.error,
         variant: "text-md/medium",
         color: "text-primary",
         children: y
-      }), (0, n.jsx)(s.Text, {
+      }), (0, n.jsx)(a.Text, {
         variant: "text-md/medium",
         className: f.error,
         color: "text-primary",
@@ -67,16 +67,16 @@ let m = e => {
           userName: y
         })
       })]
-    }) : (0, n.jsx)(s.Text, {
+    }) : (0, n.jsx)(a.Text, {
       variant: "text-md/medium",
       className: f.displayName,
       color: "text-primary",
       children: y
-    }), (0, n.jsx)(s.Button, {
+    }), (0, n.jsx)(a.Button, {
       variant: "secondary",
       size: "sm",
       text: p.intl.string(p.t["g33r/P"]),
-      icon: s.kBi,
+      icon: a.kBi,
       onClick: () => {
         var e;
         return e = t.id, void((0, c.default)(), o.Z.openPrivateChannel({

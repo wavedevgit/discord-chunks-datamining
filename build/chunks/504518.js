@@ -3,7 +3,7 @@
 var Chunk81825 = require("./81825.js"),
   Chunk598077 = require("./598077.js");
 
-function a(e, t, r) {
+function s(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
@@ -11,9 +11,9 @@ function a(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-class s extends Chunk81825.Z {
+class a extends Chunk81825.Z {
   static createFromServer(e) {
-    return new s(e)
+    return new a(e)
   }
   isPrimary() {
     return 1 === this.member_type
@@ -25,6 +25,6 @@ class s extends Chunk81825.Z {
     return 2 === this.member_type && null == this.accepted_at
   }
   constructor(e) {
-    super(), a(this, "user", true), a(this, "member_type", true), a(this, "accepted_at", true), this.user = new i.Z(e.user), this.member_type = e.member_type, this.accepted_at = e.accepted_at
+    super(), s(this, "user", true), s(this, "member_type", true), s(this, "accepted_at", true), this.user = new i.Z(e.user), this.member_type = e.member_type, this.accepted_at = e.accepted_at
   }
 }
