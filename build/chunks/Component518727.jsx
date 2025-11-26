@@ -59,8 +59,8 @@ let b = 1e3,
         function e() {
           L(true), A()
         }
-        return _.S.subscribe(h.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e), () => {
-          _.S.unsubscribe(h.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e)
+        return _.S.subscribe(h.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
+          _.S.unsubscribe(h.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
         }
       }, [A]), (0, i.useEffect)(() => () => {
         c.Z.dispatch({

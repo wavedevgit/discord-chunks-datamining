@@ -2,7 +2,8 @@
 /** chunk id: 80721, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   MT: () => a,
-  cD: () => o
+  cD: () => o,
+  r7: () => l
 });
 var Chunk544891 = require("./544891.js"),
   Chunk598077 = require("./598077.js");
@@ -42,4 +43,10 @@ async function o(e, t) {
   } catch (e) {
     return null
   }
+}
+async function l(e, t) {
+  await n.tn.patch({
+    url: s.ANM.BILLING_SUBSCRIPTION_INVITE(e, t),
+    rejectWithError: true
+  })
 }

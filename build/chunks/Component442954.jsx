@@ -1161,6 +1161,16 @@ let j = {
       default: e
     } = await require.e("86948").then(require.bind(require, 153241));
     return t => (0, a.jsx)(e, b({}, t))
+  },
+  PremiumGroupAcceptInviteModal: async () => {
+    let {
+      default: e
+    } = await require.e("26450").then(require.bind(require, 382927));
+    return t => (0, a.jsx)(e, v(b({}, t), {
+      premiumGroupSubscriptionId: "1234567890",
+      isExistingSub: false,
+      premiumGroupPrimaryName: "Test User"
+    }))
   }
 };
 

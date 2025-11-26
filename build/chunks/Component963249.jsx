@@ -132,7 +132,7 @@ function R(e) {
         followupSKUInfo: I,
         onClose: (e, t) => {
           if (et) return;
-          et = true, g.S.dispatch(O.CkL.PREMIUM_PAYMENT_MODAL_CLOSED);
+          et = true, g.S.dispatch(O.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED);
           let r = () => {
             n(), null == S || S(e), e && (null == R || R(), (0, p.M)(M, J, t) && g.S.dispatch(O.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
               type: "PREMIUM_PAYMENT_MODAL_CLOSE",
@@ -166,7 +166,7 @@ function R(e) {
     }
   }, {
     onCloseRequest: () => {
-      et || (et = true, g.S.dispatch(O.CkL.PREMIUM_PAYMENT_MODAL_CLOSED), _.Z.isDisplayingWowMomentConfirmation && _.Z.isAnimated ? setTimeout(() => {
+      et || (et = true, g.S.dispatch(O.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), _.Z.isDisplayingWowMomentConfirmation && _.Z.isAnimated ? setTimeout(() => {
         (0, s.Mr3)($)
       }, y.P) : (0, s.Mr3)($))
     },
