@@ -116,8 +116,8 @@ let S = Chunk473749.memo(function(e) {
     }
     return null
   }, [M, R, P, k, L, D]), {
-    isReplyAuthorBlocked: B,
-    isReplyAuthorIgnored: F
+    isReplyAuthorBlocked: F,
+    isReplyAuthorIgnored: B
   } = (0, l.cj)([m.Z], () => ({
     isReplyAuthorBlocked: null != M && m.Z.isBlockedForMessage(M),
     isReplyAuthorIgnored: null != M && m.Z.isIgnoredForMessage(M)
@@ -135,8 +135,8 @@ let S = Chunk473749.memo(function(e) {
     referencedMessage: S,
     content: U,
     compact: I,
-    isReplyAuthorBlocked: B,
-    isReplyAuthorIgnored: F,
+    isReplyAuthorBlocked: F,
+    isReplyAuthorIgnored: B,
     showAvatarPopout: T,
     showUsernamePopout: Z,
     renderPopout: v.Z,

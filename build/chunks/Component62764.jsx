@@ -145,7 +145,7 @@ function V(e) {
           [U.loading]: ea
         }),
         children: [!es && !J && null != ei && (0, i.jsx)("div", {
-          className: B.reactions,
+          className: F.reactions,
           children: (0, i.jsx)(x.le, {
             message: K,
             readOnly: false,
@@ -179,7 +179,7 @@ function V(e) {
           message: K,
           channel: q,
           useChatFontScaling: false,
-          className: a()(F.secondary, U.addReactButton, {
+          className: a()(B.secondary, U.addReactButton, {
             [U.hasNoReactions]: !es
           }),
           isForumToolbar: true,

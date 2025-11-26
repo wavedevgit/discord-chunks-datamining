@@ -576,7 +576,7 @@ class e2 extends Chunk473749.PureComponent {
     }), eY(this, "handleSetValue", e => {
       var t, n;
       let i = null == (t = this.editorRef) ? true : t.getSlateEditor();
-      null != i && (B.Q.select(i, []), i.insertText(e), null == (n = this.editorRef) || n.focus())
+      null != i && (F.Q.select(i, []), i.insertText(e), null == (n = this.editorRef) || n.focus())
     }), eY(this, "renderAttachButton", (e, t) => (0, i.jsx)(k.Z, {
       className: t,
       channel: this.props.channel,
@@ -867,7 +867,7 @@ let e4 = Chunk473749.memo(function(e) {
     return null != d && null != (i = null == (e = eO.ZP.getMember(null != (t = null == n ? true : n.id) ? t : ez.lds, null == d ? true : d.id)) ? true : e.isPending) && i
   }), m = (0, p.e7)([er.Z], () => er.Z.isEnabled()), g = (0, eo.Z)(t.id), b = (0, K.Z)(t.id), C = (0, eh.k)(t.id), v = (0, p.e7)([eS.Z], () => eS.Z.getVoiceChannelId()), x = (0, p.e7)([ev.Z], () => ev.Z.getChannel(v)), O = (0, p.e7)([eI.default], () => t.type !== ez.d4z.DM ? null : eI.default.getUser(t.getRecipientId())), j = (0, p.e7)([el.ZP, ey.default], () => el.ZP.getUserCombo(ey.default.getId(), t.id)), E = (0, y.iD)(t), S = (0, y.d7)(t), P = E.length > 0 || t.rateLimitPerUser > 0 || null != j || null != S, {
     showLinkedLobbyApplicationLoadingIndicator: I
-  } = (0, eD.Z)(t.linkedLobby), Z = (0, F.Z)("ChannelChat");
+  } = (0, eD.Z)(t.linkedLobby), Z = (0, B.Z)("ChannelChat");
   return (0, i.jsx)(e3, {
     channel: t,
     isEditing: null != (0, p.e7)([ex.Z], () => ex.Z.getEditingMessageId(t.id)),

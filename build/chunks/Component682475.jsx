@@ -261,6 +261,7 @@ function ec() {
       id: "offers",
       name: "Offers",
       group: Chunk621060.v0.PREMIUM,
+      tags: ["discounts", "trials", "reverse trials", "churn"],
       render: () => (0, Chunk54381.jsx)(Chunk925124.Z, {})
     }), module.push({
       id: "payments",
@@ -311,6 +312,7 @@ function ec() {
       id: "language",
       name: "Language",
       group: Chunk621060.v0.UI,
+      tags: ["locale"],
       render: () => (0, Chunk54381.jsx)(Chunk636500.Z, {})
     }), module.push({
       id: "word_frequency",

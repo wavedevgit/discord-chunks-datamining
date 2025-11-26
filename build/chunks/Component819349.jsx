@@ -50,7 +50,7 @@ function O(e) {
     isHoveringOrFocusing: R
   } = (0, g.Tu)(null == T ? M : l), [L, D] = r.useState(false), k = R || L, U = r.useCallback(() => {
     j(false), null == n || n()
-  }, [n]), B = (0, u.q_F)({
+  }, [n]), F = (0, u.q_F)({
     from: {
       height: "0px"
     },
@@ -66,11 +66,11 @@ function O(e) {
     onRest: () => {
       A && U()
     }
-  }), F = r.useCallback(() => {
+  }), B = r.useCallback(() => {
     w(true)
-  }, []), H = r.useCallback(() => (null != E.current && clearTimeout(E.current), E.current = setTimeout(F, 1e4), I(e => e + 1), () => {
+  }, []), H = r.useCallback(() => (null != E.current && clearTimeout(E.current), E.current = setTimeout(B, 1e4), I(e => e + 1), () => {
     null != E.current && clearTimeout(E.current)
-  }), [F]), V = r.useCallback(() => (null != S.current && clearTimeout(S.current), S.current = setTimeout(() => {
+  }), [B]), V = r.useCallback(() => (null != S.current && clearTimeout(S.current), S.current = setTimeout(() => {
     j(false)
   }, 150), () => {
     null != S.current && clearTimeout(S.current)
@@ -121,7 +121,7 @@ function O(e) {
       var t, n;
       return (0, i.jsx)(o.animated.div, {
         className: C.animation,
-        style: B,
+        style: F,
         children: (0, i.jsx)(u.P3F, (t = _({
           innerRef: l,
           className: a()({
@@ -168,7 +168,7 @@ function O(e) {
               })
             }), R ? (0, i.jsx)(u.P3F, {
               className: C.close,
-              onClick: F,
+              onClick: B,
               "aria-label": y.intl.string(y.t.cpT0Cq),
               children: (0, i.jsx)(u.Dio, {
                 size: "xs",

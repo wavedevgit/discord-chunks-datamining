@@ -205,15 +205,15 @@ class W extends Chunk473749.PureComponent {
         guild: e
       } = this.props;
       null != e && (0, c.h7j)(t => (0, i.jsx)(c.ConfirmModal, z(G({
-        header: F.intl.string(F.t.aIz1oV),
-        confirmText: F.intl.string(F.t["cY+Oob"]),
-        cancelText: F.intl.string(F.t["ETE/oC"]),
+        header: B.intl.string(B.t.aIz1oV),
+        confirmText: B.intl.string(B.t["cY+Oob"]),
+        cancelText: B.intl.string(B.t["ETE/oC"]),
         onConfirm: () => m.Z.removeGuildJoinRequest(e.id),
         confirmButtonColor: s.Tt.BRAND
       }, t), {
         children: (0, i.jsx)(c.Text, {
           variant: "text-md/normal",
-          children: F.intl.string(F.t["13tjTU"])
+          children: B.intl.string(B.t["13tjTU"])
         })
       })))
     }), V(this, "handleViewApplicationRejection", () => {
@@ -244,19 +244,19 @@ class W extends Chunk473749.PureComponent {
           reason: S.L.GUILD_PHONE_REQUIRED
         }, t))
       }, {
-        modalKey: B.M
+        modalKey: F.M
       })
     }), V(this, "handleResendVerification", () => {
       var e;
       u.Z.verifyResend();
       let t = null == (e = M.default.getCurrentUser()) ? true : e.email;
       null != t && (0, c.h7j)(e => (0, i.jsx)(c.ConfirmModal, z(G({}, e), {
-        header: F.intl.string(F.t.LykQYk),
-        confirmText: F.intl.string(F.t.BddRzS),
+        header: B.intl.string(B.t.LykQYk),
+        confirmText: B.intl.string(B.t.BddRzS),
         confirmButtonColor: s.Tt.BRAND,
         children: (0, i.jsx)(c.Text, {
           variant: "text-md/normal",
-          children: F.intl.format(F.t.azKEPy, {
+          children: B.intl.format(B.t.azKEPy, {
             email: t
           })
         })

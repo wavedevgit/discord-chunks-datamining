@@ -189,8 +189,8 @@ function ei(e) {
     onFocus: I
   } = S, N = ee(S, ["onFocus"]), {
     isFocused: k,
-    handleFocus: B,
-    handleBlur: F
+    handleFocus: F,
+    handleBlur: B
   } = (0, M.bb)(I), {
     popouts: G,
     selected: J,
@@ -242,8 +242,8 @@ function ei(e) {
       }),
       zalgo: true,
       onKeyDown: em,
-      onFocus: B,
-      onBlur: F,
+      onFocus: F,
+      onBlur: B,
       childrenRepliedMessage: o.type === K.uaV.REPLY && (0, z.Z)($(Q({}, e), {
         setPopout: et,
         referencedUsernameProfile: G.referencedUsernameProfile,
@@ -361,8 +361,8 @@ let er = Chunk473749.memo(function(e) {
       allowDevLinks: eD,
       previewLinkTarget: true
     }),
-    eB = (0, R.Z)(I, et, eN),
-    eF = (0, T.ZP)(_),
+    eF = (0, R.Z)(I, et, eN),
+    eB = (0, T.ZP)(_),
     eH = (0, u.e7)([C.Z], () => C.Z.getPendingReply(et)),
     eV = function(e) {
       let t = r.useRef(e);
@@ -372,7 +372,7 @@ let er = Chunk473749.memo(function(e) {
     }(er),
     eG = (0, f.p9)({
       guildId: J.guild_id,
-      roleId: eF.iconRoleId
+      roleId: eB.iconRoleId
     }),
     ez = (0, w.iG)(_, el),
     eW = (0, w.Gx)(_),
@@ -384,7 +384,7 @@ let er = Chunk473749.memo(function(e) {
     eY = r.useRef(window),
     eX = null != eq,
     eJ = r.useMemo(() => Object.values(em).some(e => e), [em]);
-  l = _.type === K.uaV.CUSTOM_GIFT ? "" : !eT && eX ? (0, B.Z)(e, ek) : (0, V.Z)(e, ek, eT);
+  l = _.type === K.uaV.CUSTOM_GIFT ? "" : !eT && eX ? (0, F.Z)(e, ek) : (0, V.Z)(e, ek, eT);
   let eQ = _.id === el,
     e$ = (0, i.jsx)(d.tEY, {
       offset: {
@@ -407,7 +407,7 @@ let er = Chunk473749.memo(function(e) {
           onFocus: eI,
           onBlur: eZ,
           onContextMenu: ey,
-          onKeyDown: eB,
+          onKeyDown: eF,
           onClick: eC,
           compact: en,
           contentOnly: ea,
@@ -442,7 +442,7 @@ let er = Chunk473749.memo(function(e) {
             setPopout: eb,
             messagePopouts: em,
             replyReference: eo,
-            author: eF,
+            author: eB,
             repliedMessage: ef,
             roleIcon: eG
           }),
@@ -454,7 +454,7 @@ let er = Chunk473749.memo(function(e) {
             isAutomodBlockedMessage: eX,
             forceAddReactions: _.type === K.uaV.EMOJI_ADDED
           }),
-          childrenButtons: ex || eE ? (0, F.Z)({
+          childrenButtons: ex || eE ? (0, B.Z)({
             buttonProps: e,
             setPopout: eb,
             messagePopouts: em,
@@ -472,7 +472,7 @@ let er = Chunk473749.memo(function(e) {
             var t, n;
             eK.current = e, eY.current = null != (n = null == e || null == (t = e.ownerDocument) ? true : t.defaultView) ? n : window
           },
-          author: eF
+          author: eB
         }))]
       })
     });

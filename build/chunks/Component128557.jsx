@@ -116,9 +116,9 @@ function M(e) {
   }), {
     guildPopulated: k,
     guildMessaged: U,
-    guildPersonalized: B
+    guildPersonalized: F
   } = (0, f.h_)(l), {
-    handleInvite: F,
+    handleInvite: B,
     handleMessage: H,
     handlePersonalize: V,
     handleDownload: G,
@@ -194,7 +194,7 @@ function M(e) {
         }))
       }, [e])
     }
-  }(l), W = !(D || k || U || B), {
+  }(l), W = !(D || k || U || F), {
     titleAnimatedStyle: q,
     opacities: K
   } = function(e) {
@@ -253,7 +253,7 @@ function M(e) {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0Ta),
       completed: k,
-      onClick: F
+      onClick: B
     })
   }, "invite")), R && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -263,7 +263,7 @@ function M(e) {
     children: (0, i.jsx)(w, {
       iconUrl: u.$_T,
       header: Z.intl.string(Z.t.c5kxPh),
-      completed: B,
+      completed: F,
       onClick: V
     })
   }, "customize")), L && Q.push((0, i.jsx)(o.Z.div, {

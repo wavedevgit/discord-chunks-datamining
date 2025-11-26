@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 655018, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $: () => B
+  $: () => F
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -71,22 +71,22 @@ function U(e, t) {
   }), e
 }
 
-function B(e) {
+function F(e) {
   var t, n, l, o;
   let {
-    channel: B,
-    setIsHangStatusInputFocused: F,
+    channel: F,
+    setIsHangStatusInputFocused: B,
     setIsEmojiPickerOpen: H,
     setPopoutRef: V
   } = e, G = r.useRef(null), z = (0, u.e7)([v.Z], () => v.Z.getCustomHangStatus()), W = (0, E.Z)(), q = (0, u.e7)([v.Z], () => v.Z.getFavoritedStatuses()), {
     defaultStatusVariant: K,
     allowPermanentClear: Y
   } = (0, C.bN)({
-    guildId: B.guild_id,
+    guildId: F.guild_id,
     location: "HangStatusPicker"
-  }), X = (0, _.V)(K), J = r.useRef(null), [Q, $] = r.useState(null != (n = null == z ? true : z.status) ? n : ""), [ee, et] = r.useState(null != (l = null == z ? true : z.emoji) ? l : null), [en, ei] = r.useState(false), er = (0, u.e7)([v.Z], () => v.Z.getCurrentHangStatus()), el = X[er], ea = q.length > 0, eo = null == Q || "" === Q.trim(), es = (0, j.Z)(B), ec = Q.trim().length > 0 && Q.trim() !== (null == z || null == (t = z.status) ? true : t.trim()) || null != ee && !s()(ee, null == z ? true : z.emoji), [eu, ed] = r.useState(false), ep = (0, u.e7)([v.Z], () => v.Z.getFavoritedStatuses().length >= v.o), eh = Q.length > 0 || null != ee, [ef, em] = (0, m.US)([d.z.HANG_STATUS_POPOVER_NUX]);
+  }), X = (0, _.V)(K), J = r.useRef(null), [Q, $] = r.useState(null != (n = null == z ? true : z.status) ? n : ""), [ee, et] = r.useState(null != (l = null == z ? true : z.emoji) ? l : null), [en, ei] = r.useState(false), er = (0, u.e7)([v.Z], () => v.Z.getCurrentHangStatus()), el = X[er], ea = q.length > 0, eo = null == Q || "" === Q.trim(), es = (0, j.Z)(F), ec = Q.trim().length > 0 && Q.trim() !== (null == z || null == (t = z.status) ? true : t.trim()) || null != ee && !s()(ee, null == z ? true : z.emoji), [eu, ed] = r.useState(false), ep = (0, u.e7)([v.Z], () => v.Z.getFavoritedStatuses().length >= v.o), eh = Q.length > 0 || null != ee, [ef, em] = (0, m.US)([d.z.HANG_STATUS_POPOVER_NUX]);
   r.useEffect(() => {
-    b.default.track(A.rMx.HANG_STATUS_PICKER_OPENED, U(k({}, (0, x.Z)(B.id)), {
+    b.default.track(A.rMx.HANG_STATUS_PICKER_OPENED, U(k({}, (0, x.Z)(F.id)), {
       num_favorites: q.length,
       num_recents: W.length
     }))
@@ -94,8 +94,8 @@ function B(e) {
     Q.trim().length > 0 && eu && ed(false), null == ee && eu && ed(false)
   }, [Q, ee, eu]), r.useEffect(() => {
     var e;
-    en || Q !== (null != (e = null == z ? true : z.status) ? e : "") && "" !== Q.trim() ? F(true) : F(false)
-  }, [Q, null == z ? true : z.status, ee, null == z ? true : z.emoji, F, en]), r.useEffect(() => {
+    en || Q !== (null != (e = null == z ? true : z.status) ? e : "") && "" !== Q.trim() ? B(true) : B(false)
+  }, [Q, null == z ? true : z.status, ee, null == z ? true : z.emoji, B, en]), r.useEffect(() => {
     null == V || V(null == J ? true : J.current)
   }, [J, V]);
   let eg = r.useCallback(e => {
@@ -136,20 +136,20 @@ function B(e) {
             name: null != (t = null == n ? true : n.optionallyDiverseSequence) ? t : "",
             animated: false
           }, 1 === es.length)) break; while (null == n || (null == n ? true : n.name) == null || s()(ee, i));
-      null != i && (null == n ? true : n.name) != null && (et(i), $(n.name), ei(true), null == (e = G.current) || e.focus(), b.default.track(A.rMx.HANG_STATUS_RANDOMIZER_CLICKED, (0, x.Z)(B.id)))
-    }, [es, ee, B.id]),
+      null != i && (null == n ? true : n.name) != null && (et(i), $(n.name), ei(true), null == (e = G.current) || e.focus(), b.default.track(A.rMx.HANG_STATUS_RANDOMIZER_CLICKED, (0, x.Z)(F.id)))
+    }, [es, ee, F.id]),
     e_ = r.useCallback((e, t) => {
       let n = (0, O.Z)(t);
-      (!ep || e) && ((0, y.tg)(n ? t : t.status, n ? null : t.emoji), b.default.track(A.rMx.HANG_STATUS_FAVORITE_CLICKED, U(k({}, (0, x.Z)(B.id)), {
+      (!ep || e) && ((0, y.tg)(n ? t : t.status, n ? null : t.emoji), b.default.track(A.rMx.HANG_STATUS_FAVORITE_CLICKED, U(k({}, (0, x.Z)(F.id)), {
         favorited: !e
       })))
-    }, [B.id, ep]),
+    }, [F.id, ep]),
     ex = r.useCallback(() => {
-      F(false)
-    }, [F]),
+      B(false)
+    }, [B]),
     eO = r.useCallback(() => {
-      F(true)
-    }, [F]),
+      B(true)
+    }, [B]),
     ej = r.useCallback((e, t, n) => {
       var r;
       let l = (0, O.Z)(e),
@@ -255,7 +255,7 @@ function B(e) {
       role: "group",
       className: a()(L.groupLabel, R.group, R.scroller),
       children: [(0, i.jsx)(Z.d, {
-        guildId: B.guild_id,
+        guildId: F.guild_id,
         onSetActivityStatus: eb
       }), ea && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {

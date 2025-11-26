@@ -144,7 +144,7 @@ let D = Chunk473749.forwardRef(function(e, t) {
     let e = setTimeout(() => P.ux(), 1e3);
     return () => clearTimeout(e)
   }, []);
-  let B = r.useCallback(() => {
+  let F = r.useCallback(() => {
       (0, y.Z)({
         context: null != l ? {
           type: "channel",
@@ -156,7 +156,7 @@ let D = Chunk473749.forwardRef(function(e, t) {
         analyticsLocation: D
       }), u(), g()
     }, [l, D, g, u, k]),
-    F = r.useCallback(e => {
+    B = r.useCallback(e => {
       c(), S.default.track(N.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
         channel_id: l.id,
         guild_id: l.getGuildId()
@@ -179,7 +179,7 @@ let D = Chunk473749.forwardRef(function(e, t) {
           })
         }), (0, i.jsxs)("div", {
           className: w.container,
-          onMouseEnter: F,
+          onMouseEnter: B,
           onMouseLeave: u,
           children: [(0, i.jsxs)("div", {
             className: w.titleContainer,
@@ -195,7 +195,7 @@ let D = Chunk473749.forwardRef(function(e, t) {
               })]
             }), (0, i.jsxs)(p.P3F, {
               className: w.titleRight,
-              onClick: B,
+              onClick: F,
               children: [(0, i.jsx)(p.Text, {
                 variant: "eyebrow",
                 children: A.intl.string(A.t["K8+z4S"])

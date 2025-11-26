@@ -75,8 +75,8 @@ function I(e) {
       className: D,
       width: k,
       height: U,
-      layout: B,
-      idle: F
+      layout: F,
+      idle: B
     } = e,
     H = h.Z.getVideoComponent(),
     V = p.default.getId(),
@@ -90,7 +90,7 @@ function I(e) {
     ee = U <= 2 * P + 144,
     et = L && !ee,
     en = (0, c.Z)(et),
-    ei = B === v.AEg.MINIMUM || B === v.AEg.NORMAL,
+    ei = F === v.AEg.MINIMUM || F === v.AEg.NORMAL,
     er = !ee && (!ei || J),
     el = (0, m.Z)(er, 100),
     ea = (null != (t = (0, c.Z)(R.id)) ? t : R.id) !== R.id,
@@ -217,7 +217,7 @@ function I(e) {
           })
         }), er ? (0, i.jsx)(o.animated.div, {
           className: a()(O.actionRow, {
-            [O.idle]: F
+            [O.idle]: B
           }),
           style: {
             bottom: eC.value

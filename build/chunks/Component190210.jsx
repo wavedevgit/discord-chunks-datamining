@@ -158,8 +158,8 @@ let ei = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     isPendingMember: eD,
     disabled: ek,
     canAttachFiles: eU,
-    canEveryoneSendMessages: eB
-  } = (0, V.TE)(L, k, eR, I), eF = !A.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eH = !eF || !(null == (n = k.commands) ? true : n.enabled) || !G || p !== q.GI, eV = (0, T.Z)(), {
+    canEveryoneSendMessages: eF
+  } = (0, V.TE)(L, k, eR, I), eB = !A.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eH = !eB || !(null == (n = k.commands) ? true : n.enabled) || !G || p !== q.GI, eV = (0, T.Z)(), {
     fontSize: eG
   } = (0, d.cj)([y.Z], () => ({
     fontSize: y.Z.fontSize,
@@ -351,20 +351,20 @@ let ei = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
                 children: (0, i.jsx)(f.tEY, {
                   ringTarget: eT,
                   ringClassName: Q.focusRing,
-                  children: (0, i.jsx)(F.Z, {
+                  children: (0, i.jsx)(B.Z, {
                     ref: eA,
                     id: E,
                     focused: G,
-                    useSlate: eF,
+                    useSlate: eB,
                     textValue: p,
                     richValue: h,
                     disabled: ek,
                     placeholder: eg,
                     required: P,
                     accessibilityLabel: Z,
-                    isPreviewing: (eL || eD) && eB,
+                    isPreviewing: (eL || eD) && eF,
                     channel: L,
-                    type: B.Ie.CREATE_ANNOUNCEMENT_POST,
+                    type: F.Ie.CREATE_ANNOUNCEMENT_POST,
                     canPasteFiles: eU,
                     uploadPromptCharacterCount: W.en1,
                     maxCharacterCount: null != em ? em : eV,
@@ -412,7 +412,7 @@ let ei = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
             children: [(0, i.jsx)(ea, {
               channel: L
             }), (0, i.jsx)(H.Z, {
-              type: B.Ie.CREATE_ANNOUNCEMENT_POST,
+              type: F.Ie.CREATE_ANNOUNCEMENT_POST,
               disabled: ek,
               channel: L,
               handleSubmit: eJ,
@@ -473,7 +473,7 @@ let ei = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
           channel: L,
           canMentionRoles: eh,
           canMentionChannels: ef,
-          useNewSlashCommands: eF,
+          useNewSlashCommands: eB,
           canOnlyUseTextCommands: false,
           canSendStickers: true,
           textValue: p,

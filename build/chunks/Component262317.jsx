@@ -2,8 +2,8 @@
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   XX: () => U,
-  ZP: () => F,
-  ul: () => B
+  ZP: () => B,
+  ul: () => F
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -86,7 +86,7 @@ function U(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     numAudience: t,
     collapsed: n
@@ -111,14 +111,14 @@ function B(e) {
     })]
   })
 }
-let F = (0, Chunk888651.$)(function(e) {
+let B = (0, Chunk888651.$)(function(e) {
   var t;
   let {
     collapsed: l,
     user: h,
     channel: U,
-    mute: B,
-    localMute: F,
+    mute: F,
+    localMute: B,
     localVideoDisabled: H,
     deaf: V,
     video: G,
@@ -176,7 +176,7 @@ let F = (0, Chunk888651.$)(function(e) {
       };
       I.default.getId() !== h.id && d.default.selectVoiceChannel(U.id), en ? ((0, _.Z)(e), c.Z.selectParticipant(e.channelId, (0, C.V9)(e))) : (0, p.iV)(e), null == ea || ea(h.id)
     },
-    eB = e => {
+    eF = e => {
       (0, u.jW)(e, async () => {
         let {
           default: e
@@ -193,7 +193,7 @@ let F = (0, Chunk888651.$)(function(e) {
         }))
       })
     },
-    eF = e => ef ? (0, i.jsx)(O.$, k(D({}, e), {
+    eB = e => ef ? (0, i.jsx)(O.$, k(D({}, e), {
       channel: U,
       setIsHangStatusInputFocused: eS,
       setIsEmojiPickerOpen: eT
@@ -236,8 +236,8 @@ let F = (0, Chunk888651.$)(function(e) {
               speaking: X,
               latched: J,
               disconnected: Q,
-              mute: B,
-              localMute: F,
+              mute: F,
+              localMute: B,
               localVideoDisabled: H,
               isStreaming: et,
               isGuest: ei,
@@ -261,7 +261,7 @@ let F = (0, Chunk888651.$)(function(e) {
               selected: ev,
               onClick: t ? true : eM,
               onDoubleClick: eU,
-              onContextMenu: eB,
+              onContextMenu: eF,
               guildId: U.guild_id,
               isSelf: ef,
               application: em,
@@ -279,7 +279,7 @@ let F = (0, Chunk888651.$)(function(e) {
             })
           }
           let c = () => null;
-          return ey && eA ? c = eF : et ? c = eV : ew && h.id !== I.default.getId() ? c = eH : ey && (c = eF), (0, i.jsx)(s.yRy, {
+          return ey && eA ? c = eB : et ? c = eV : ew && h.id !== I.default.getId() ? c = eH : ey && (c = eB), (0, i.jsx)(s.yRy, {
             targetElementRef: eC,
             position: "right",
             renderPopout: c,

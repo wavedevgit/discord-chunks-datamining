@@ -42,7 +42,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk39219 = require("./39219.js"),
   Chunk430864 = require("./430864.js");
 
-function B(e) {
+function F(e) {
   let {
     focusedParticipant: t,
     channel: n
@@ -58,7 +58,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     user: t,
     channel: n,
@@ -101,7 +101,7 @@ function H(e) {
       variant: "text-md/normal",
       color: "none",
       children: (0, u.Z)(n.name)
-    }), a && (0, i.jsx)(B, {
+    }), a && (0, i.jsx)(F, {
       channel: l,
       focusedParticipant: r
     })]
@@ -112,12 +112,12 @@ function H(e) {
     t = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(C.ZP.Divider, {
         className: k.divider
-      }), (0, i.jsx)(F, {
+      }), (0, i.jsx)(B, {
         user: e,
         channel: l,
         stream: n,
         color: a ? "header-primary" : "none"
-      }), a && (0, i.jsx)(B, {
+      }), a && (0, i.jsx)(F, {
         channel: l,
         focusedParticipant: r
       })]
@@ -150,7 +150,7 @@ function V(e) {
   let T = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     A = t.isGuildVoice() && u && null != T && T.length > 0,
     R = (0, Z.ZP)(t),
-    B = A ? (0, i.jsx)(o.u, {
+    F = A ? (0, i.jsx)(o.u, {
       asContainer: true,
       text: D.intl.string(D.t.Mgpxiw),
       delay: 500,
@@ -206,7 +206,7 @@ function V(e) {
         })]
       })
     }) : null,
-    F = (0, E.m$)({
+    B = (0, E.m$)({
       channelId: t.id
     });
   return (0, i.jsxs)("div", {
@@ -219,7 +219,7 @@ function V(e) {
         className: l()(e, k.headerBar),
         innerClassName: k.headerBarChildren,
         toolbarClassName: k.toolbar,
-        childrenBottom: B,
+        childrenBottom: F,
         toolbar: (0, i.jsx)(N.Z, {
           channel: t,
           appContext: c,
@@ -233,7 +233,7 @@ function V(e) {
             children: [null != x ? (0, i.jsx)(C.ZP.ChannelIcon, {
               icon: x,
               "aria-label": P
-            }) : null, y, F && (0, i.jsx)(o.u, {
+            }) : null, y, B && (0, i.jsx)(o.u, {
               text: D.intl.string(D.t.QyZ4Td),
               children: (0, i.jsx)(s.tQf, {
                 size: "xs",

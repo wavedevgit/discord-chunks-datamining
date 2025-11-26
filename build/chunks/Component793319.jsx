@@ -142,7 +142,7 @@ function eP(e) {
   } = (0, _.ZP)(), f = (0, k.bp)(), m = (0, u.Wu)([en.Z], () => en.Z.getAllActiveStreams()), g = m.find(e => e.ownerId === n.id), b = r.useRef(null), y = r.useRef(null), C = t.getGuildId(), v = r.useCallback(() => {
     if (null == l || l(), !a) return (0, eg.Z)();
     (0, eb.Z)(C, t.id, h)
-  }, [C, t.id, a, l, h]), x = (0, B.B4)(), [O, j] = r.useState(false), E = () => {
+  }, [C, t.id, a, l, h]), x = (0, F.B4)(), [O, j] = r.useState(false), E = () => {
     if ((0, P.v)(c, P.d.STREAM, true), a) return void v();
     (0, eg.Z)()
   }, S = () => {
@@ -158,7 +158,7 @@ function eP(e) {
             visibleContent: t,
             markAsDismissed: n
           } = e;
-          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return j(true), (0, i.jsx)(F.h, {
+          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return j(true), (0, i.jsx)(B.h, {
             buttonRef: b,
             dismissed: false,
             onDismiss: () => {
@@ -452,7 +452,7 @@ let eA = function(e) {
     canGoLive: R
   } = (0, u.cj)([er.Z], () => ({
     canGoLive: (0, w.Z)(er.Z)
-  })), L = (0, N.Z)(), k = (0, u.e7)([T.default], () => null != T.default.getAwaitingRemoteSessionInfo()), B = null != L, F = (0, u.e7)([el.Z], () => {
+  })), L = (0, N.Z)(), k = (0, u.e7)([T.default], () => null != T.default.getAwaitingRemoteSessionInfo()), F = null != L, B = (0, u.e7)([el.Z], () => {
     var e;
     return (null != (e = null == L ? true : L.channelId) ? e : el.Z.getVoiceChannelId()) === n.id
   }), G = (0, H.Z)({
@@ -483,7 +483,7 @@ let eA = function(e) {
       onInteraction: eN("AudioDeviceMenu")
     })))
   } : true;
-  return F ? (0, i.jsx)(_.Gt, {
+  return B ? (0, i.jsx)(_.Gt, {
     value: Y,
     children: (0, i.jsxs)(b.Z, {
       section: eC.jXE.VOICE_CONTROL_TRAY,
@@ -546,7 +546,7 @@ let eA = function(e) {
               return (0, i.jsx)(X.Z, {
                 ref: ed,
                 centerButton: true,
-                onPopoutClick: B ? null : n,
+                onPopoutClick: F ? null : n,
                 selfMute: A,
                 serverMute: M,
                 suppress: Z,
@@ -556,7 +556,7 @@ let eA = function(e) {
                 onContextMenu: eg
               })
             }
-          }), !B && (0, i.jsx)(p.yRy, {
+          }), !F && (0, i.jsx)(p.yRy, {
             targetElementRef: ef,
             renderPopout: e => {
               let {
@@ -597,13 +597,13 @@ let eA = function(e) {
           })]
         }), (0, i.jsxs)("div", {
           className: ex.buttonSection,
-          children: [!B && (0, i.jsx)(eP, {
+          children: [!F && (0, i.jsx)(eP, {
             channel: n,
             currentUser: C,
             exitFullScreen: c,
             canGoLive: R,
             hasPermission: I
-          }), !B && (0, i.jsx)(eI, {
+          }), !F && (0, i.jsx)(eI, {
             channel: n,
             idle: null == (t = null == d ? true : d.idle) || t,
             whichPopoutIsOpen: m,
@@ -622,7 +622,7 @@ let eA = function(e) {
             channel: n,
             whichPopoutIsOpen: m,
             setWhichPopoutIsOpen: g,
-            remoteMode: B
+            remoteMode: F
           })]
         }), (0, i.jsx)(eZ, {
           connectedEmbeddedActivity: W,

@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 207055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => F
+  Z: () => B
 }), require("./388685.js"), require("./290780.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -48,7 +48,7 @@ let U = Chunk473749.memo(e => {
     channel: C,
     sessionId: j,
     nick: Z
-  } = e, T = y.id, k = (0, o.e7)([S.default], () => S.default.getId() === T, [T]), [U, B, F] = (0, o.Wu)([I.Z], () => k ? [!I.Z.isSupported() || I.Z.isSelfMute() || I.Z.isSelfMutedTemporarily(), I.Z.isSelfDeaf(), false] : [!I.Z.isSupported() || I.Z.isLocalMute(T), false, I.Z.isLocalVideoDisabled(T)], [k, T]), H = (0, o.e7)([A.Z], () => A.Z.isPrioritySpeaker(T)), V = (0, c.Z)({
+  } = e, T = y.id, k = (0, o.e7)([S.default], () => S.default.getId() === T, [T]), [U, F, B] = (0, o.Wu)([I.Z], () => k ? [!I.Z.isSupported() || I.Z.isSelfMute() || I.Z.isSelfMutedTemporarily(), I.Z.isSelfDeaf(), false] : [!I.Z.isSupported() || I.Z.isLocalMute(T), false, I.Z.isLocalVideoDisabled(T)], [k, T]), H = (0, o.e7)([A.Z], () => A.Z.isPrioritySpeaker(T)), V = (0, c.Z)({
     userId: T,
     checkSoundSharing: true
   }), G = (0, o.e7)([A.Z], () => A.Z.isCurrentUserPTTLatched()), z = k && G, W = (0, o.e7)([P.ZP], () => P.ZP.isGuestOrLurker(C.guild_id, T)), q = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(C.id).has(T)), K = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(C.id).find(e => {
@@ -97,9 +97,9 @@ let U = Chunk473749.memo(e => {
       otherClientSessionType: null == ee || null == (t = ee.clientInfo) ? true : t.os,
       voicePlatform: en,
       localMute: U && !k,
-      localVideoDisabled: F,
+      localVideoDisabled: B,
       mute: a || U,
-      deaf: s || B,
+      deaf: s || F,
       speaking: V,
       latched: z,
       ringing: q,
@@ -126,8 +126,8 @@ let U = Chunk473749.memo(e => {
   })
 });
 U.displayName = "ConnectedVoiceUser";
-let B = [],
-  F = function(e) {
+let F = [],
+  B = function(e) {
     let {
       allowPreviews: t = true,
       allowDragging: n = true,
@@ -142,17 +142,17 @@ let B = [],
       className: v,
       children: _,
       isThread: x = false
-    } = e, [E, P] = r.useState(null), [I, N] = r.useState(false), A = r.useRef(null), w = (0, O.Es)(l.id, null != c ? c : B), {
+    } = e, [E, P] = r.useState(null), [I, N] = r.useState(false), A = r.useRef(null), w = (0, O.Es)(l.id, null != c ? c : F), {
       shouldShow: M,
       dismiss: D
-    } = (0, C.UM)(l), F = r.useRef(new s.sW(50, () => {
+    } = (0, C.UM)(l), B = r.useRef(new s.sW(50, () => {
       P(A.current), A.current = null
     })), H = r.useRef(new s.sW(175, () => {
       P(null)
     })), V = r.useCallback(e => {
-      t && (N(true), H.current.cancel(), A.current = e, F.current.delay())
+      t && (N(true), H.current.cancel(), A.current = e, B.current.delay())
     }, [t]), G = r.useCallback(e => {
-      t && (F.current.cancel(), A.current = null, N(false), H.current.delay())
+      t && (B.current.cancel(), A.current = null, N(false), H.current.delay())
     }, [t]), z = (0, o.Wu)([T.Z], () => {
       if (u) return [];
       let e = new Set;

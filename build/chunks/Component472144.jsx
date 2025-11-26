@@ -29,7 +29,7 @@ let p = Chunk473749.forwardRef((e, t) => {
     strokeDasharray: "".concat(j, " ").concat(j),
     strokeDashoffset: -s * j
   }, E = {
-    boxShadow: "0 0 30px 0px ".concat(x.glow)
+    boxShadow: "0 0 20px 0px ".concat(x.glow)
   }, {
     progressTextAnimation: O
   } = (0, l.q_F)({

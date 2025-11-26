@@ -145,13 +145,13 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
       isEditing: null != S,
       keyboardModeEnabled: I,
       hasMoreAfter: g.hasMoreAfter
-    }), Q = (0, c.e7)([C.Z], () => Z.Z.can(F.Plq.READ_MESSAGE_HISTORY, m) ? null : C.Z.getViewingRolesTimestamp(m.getGuildId())), {
+    }), Q = (0, c.e7)([C.Z], () => Z.Z.can(B.Plq.READ_MESSAGE_HISTORY, m) ? null : C.Z.getViewingRolesTimestamp(m.getGuildId())), {
       channelStreamMarkup: $,
       newMessagesBar: ee,
       jumpToPresentBar: et,
       forumPostActionBar: en,
       safetyWarningBanner: ei
-    } = (0, B.Z)({
+    } = (0, F.Z)({
       channel: m,
       messages: g,
       unreadCount: b,
@@ -171,7 +171,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
           null == (e = X.ref.current) || e.scrollToBottom({
             animate: !f.Z.useReducedMotion
           })
-        } else d.Z.jumpToPresent(m.id, F.AQB)
+        } else d.Z.jumpToPresent(m.id, B.AQB)
       },
       jumpBarClassName: M
     });
@@ -193,13 +193,13 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
           })
         }, [e]);
       (0, w.yp)({
-        event: F.CkL.SCROLLTO_PRESENT,
+        event: B.CkL.SCROLLTO_PRESENT,
         handler: t
       }), (0, w.yp)({
-        event: F.CkL.SCROLL_PAGE_UP,
+        event: B.CkL.SCROLL_PAGE_UP,
         handler: n
       }), (0, w.yp)({
-        event: F.CkL.SCROLL_PAGE_DOWN,
+        event: B.CkL.SCROLL_PAGE_DOWN,
         handler: i
       })
     }(X.ref);
@@ -283,7 +283,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
           canManageMessages: i,
           permissionVersion: r
         } = (0, c.cj)([Z.Z], () => ({
-          canManageMessages: Z.Z.can(F.Plq.MANAGE_MESSAGES, e),
+          canManageMessages: Z.Z.can(B.Plq.MANAGE_MESSAGES, e),
           permissionVersion: null != t ? Z.Z.getGuildVersion(t) : null
         }), [e, t]);
       return {
@@ -325,7 +325,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
       }
     }(), {
       messages: U,
-      channelStream: B,
+      channelStream: F,
       oldestUnreadMessageId: H,
       editingMessageId: V
     } = function(e) {
@@ -342,7 +342,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
         }, {
           autoTrackExposure: false
         }),
-        o = null != (n = null == (t = A.default.getUser(j.default.getId())) ? true : t.hasFlag(F.xW$.SPAMMER)) && n,
+        o = null != (n = null == (t = A.default.getUser(j.default.getId())) ? true : t.hasFlag(B.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, b.Z)("use_topic_dividers_in_chat"),
         d = (0, c.Wu)([_.Z], () => {
@@ -387,7 +387,7 @@ let q = (0, Chunk790519.animated)(Chunk481060.eTT),
           channel: t,
           messageDisplayCompact: !o && (a || w),
           messages: U,
-          channelStream: B,
+          channelStream: F,
           permissionVersion: h,
           uploads: (0, c.e7)([N.Z], () => N.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([T.ZP], () => T.ZP.getUnreadCount(t.id), [t]),

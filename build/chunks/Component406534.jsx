@@ -182,7 +182,7 @@ function et(e) {
       }, "forum-post-action-bar-".concat(U.id));
       if (e.type === Y.ys_.MESSAGE_GROUP_BLOCKED || e.type === Y.ys_.MESSAGE_GROUP_IGNORED || e.type === Y.ys_.MESSAGE_GROUP_SPAMMER) {
         let t;
-        return t = e.type === Y.ys_.MESSAGE_GROUP_BLOCKED ? J.t["+FcYM/"] : e.type === Y.ys_.MESSAGE_GROUP_IGNORED ? J.t["VFWjc+"] : J.t.xfkfTK, (0, i.jsx)(F.Z, {
+        return t = e.type === Y.ys_.MESSAGE_GROUP_BLOCKED ? J.t["+FcYM/"] : e.type === Y.ys_.MESSAGE_GROUP_IGNORED ? J.t["VFWjc+"] : J.t.xfkfTK, (0, i.jsx)(B.Z, {
           unreadId: K.j1,
           messages: e,
           channel: U,
@@ -194,7 +194,7 @@ function et(e) {
       e.type === Y.ys_.MESSAGE && null == eP && (eP = e);
       let l = e.groupId === (null == eP ? true : eP.groupId) ? eP.content.id : e.groupId,
         a = eS && e.content.isFirstMessageInForumPost(U),
-        o = e.type === Y.ys_.THREAD_STARTER_MESSAGE ? B.Ru : B.ZP;
+        o = e.type === Y.ys_.THREAD_STARTER_MESSAGE ? F.Ru : F.ZP;
       return (0, i.jsx)(o, {
         compact: er && !a,
         channel: U,
