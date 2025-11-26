@@ -13,7 +13,7 @@ var Chunk979554 = require("./979554.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk178368 = require("./178368.js");
 
-function d(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -38,15 +38,15 @@ function m(e) {
     onClose: m
   } = e, {
     newestAnalyticsLocation: p
-  } = (0, s.ZP)(), h = t.type === i.Z.AVATAR_DECORATION ? o.cd.AVATAR_DECORATION_MODAL_UPSELL : t.type === i.Z.PROFILE_EFFECT ? o.cd.PROFILE_EFFECT_MODAL_UPSELL : t.type === i.Z.NAMEPLATE ? o.cd.NAMEPLATE_MODAL_UPSELL : null;
+  } = (0, a.ZP)(), h = t.type === i.Z.AVATAR_DECORATION ? o.cd.AVATAR_DECORATION_MODAL_UPSELL : t.type === i.Z.PROFILE_EFFECT ? o.cd.PROFILE_EFFECT_MODAL_UPSELL : t.type === i.Z.NAMEPLATE ? o.cd.NAMEPLATE_MODAL_UPSELL : null;
   return null == h ? null : (0, n.jsxs)("div", {
-    className: u.nitroUpsellContainer,
+    className: d.nitroUpsellContainer,
     children: [(0, n.jsx)(l.SrA, {
-      className: u.nitroWheel,
+      className: d.nitroWheel,
       size: "md",
-      color: a.JX.PREMIUM_TIER_2
+      color: s.JX.PREMIUM_TIER_2
     }), (0, n.jsx)(l.Text, {
-      className: u.nitroText,
+      className: d.nitroText,
       variant: "text-md/medium",
       children: h === o.cd.AVATAR_DECORATION_MODAL_UPSELL ? c.intl.format(c.t["aFR/EI"], {
         onClick: () => {
@@ -54,7 +54,7 @@ function m(e) {
             let {
               default: e
             } = await r.e("43360").then(r.bind(r, 73415));
-            return t => (0, n.jsx)(e, d({
+            return t => (0, n.jsx)(e, u({
               premiumUpsellType: h,
               title: c.intl.string(c.t.JI7uhc),
               body: c.intl.string(c.t["5XvsdZ"]),
@@ -70,7 +70,7 @@ function m(e) {
             let {
               default: e
             } = await r.e("43360").then(r.bind(r, 73415));
-            return t => (0, n.jsx)(e, d({
+            return t => (0, n.jsx)(e, u({
               premiumUpsellType: h,
               title: c.intl.string(c.t.sYm15X),
               body: c.intl.string(c.t["Hza+Bu"]),
@@ -86,7 +86,7 @@ function m(e) {
             let {
               default: e
             } = await r.e("43360").then(r.bind(r, 73415));
-            return t => (0, n.jsx)(e, d({
+            return t => (0, n.jsx)(e, u({
               premiumUpsellType: h,
               title: c.intl.string(c.t.k7UN4k),
               body: c.intl.string(c.t["0/QPxO"]),

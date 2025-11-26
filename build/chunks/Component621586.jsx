@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 621586, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,71 +20,72 @@ var Chunk54381 = require("./54381.js"),
   Chunk582113 = require("./582113.js"),
   Chunk981631 = require("./981631.js"),
   Chunk701488 = require("./701488.js"),
+  Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk842350 = require("./842350.js");
-let x = "vc-gifting-".concat((0, Chunk772848.Z)());
+let O = "vc-gifting-".concat((0, Chunk772848.Z)());
 
-function O(e) {
+function j(e) {
   var t;
   let {
     isHovered: n,
     closePopout: l,
-    onMouseEnter: O,
-    onMouseLeave: j,
-    channel: E
+    onMouseEnter: j,
+    onMouseLeave: E,
+    channel: S
   } = e;
   r.useEffect(() => {
     n || l()
   }, [l, n]);
-  let S = (0, o.e7)([c.Z], () => c.Z.getApplication(b.t9)),
-    P = r.useMemo(() => {
-      let e = null != S ? S.getIconURL(C.Si.SMALL) : true;
-      return null != e && null != S ? (0, i.jsx)("img", {
+  let P = (0, o.e7)([c.Z], () => c.Z.getApplication(b.t9)),
+    I = r.useMemo(() => {
+      let e = null != P ? P.getIconURL(C.Si.SMALL) : true;
+      return null != e && null != P ? (0, i.jsx)("img", {
         src: e,
-        alt: S.name
+        alt: P.name
       }) : null
-    }, [S]),
+    }, [P]),
     {
-      loading: I,
-      wishlistItems: Z,
-      wishlistItemSkuIds: T
+      loading: Z,
+      wishlistItems: T,
+      wishlistItemSkuIds: N
     } = (0, m.Z)({
       guildId: (0, f.ac)(),
       numWishlistItems: m.W
     });
   return r.useEffect(() => {
-    0 !== T.length && h.default.track(y.rMx.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
-      guild_id: E.guild_id,
-      channel_id: E.id,
-      sku_ids: T
+    0 !== N.length && h.default.track(y.rMx.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+      guild_id: S.guild_id,
+      channel_id: S.id,
+      sku_ids: N
     })
-  }, [E.id, E.guild_id, T]), (0, i.jsx)(d.Z, {
+  }, [S.id, S.guild_id, N]), (0, i.jsx)(d.Z, {
     children: (0, i.jsx)(a.VqE, {
-      "aria-labelledby": x,
+      "aria-labelledby": O,
       modal: false,
       children: (0, i.jsxs)("div", {
-        className: _.container,
-        onMouseEnter: O,
-        onMouseLeave: j,
+        className: x.container,
+        onMouseEnter: j,
+        onMouseLeave: E,
         children: [(0, i.jsx)(a.X6q, {
-          className: _.title,
+          className: x.title,
           variant: "text-lg/bold",
           color: "text-primary",
-          children: v.intl.string(v.t.xLP3bi)
+          children: _.intl.string(_.t.xLP3bi)
         }), (0, i.jsx)(a.xvT, {
-          className: _.subtitle,
+          className: x.subtitle,
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: v.intl.format(v.t["+SqhBF"], {
-            applicationName: null != (t = null == S ? true : S.name) ? t : v.intl.string(v.t["/1hhto"])
+          children: _.intl.format(_.t["+SqhBF"], {
+            applicationName: null != (t = null == P ? true : P.name) ? t : _.intl.string(_.t["/1hhto"])
           })
         }), (0, i.jsx)("div", {
-          className: _.wishlistItemsContainer,
-          children: I || 0 === Z.length ? (0, i.jsx)(a.$jN, {
-            className: _.loading
-          }) : Z.map(e => (0, i.jsx)(s.i_, {
-            body: v.intl.string(v.t["4yiU7x"]),
-            asset: P,
+          className: x.wishlistItemsContainer,
+          children: Z || 0 === T.length ? (0, i.jsx)(a.$jN, {
+            className: x.loading
+          }) : T.map(e => (0, i.jsx)(s.i_, {
+            body: _.intl.string(_.t["4yiU7x"]),
+            asset: I,
             assetSize: p.EU,
             position: "top",
             asContainer: true,
@@ -97,7 +98,8 @@ function O(e) {
               showOverlayButton: true,
               hideButtonIcon: true,
               showPrice: true,
-              showIcons: false
+              showIcons: false,
+              giftingOrigin: v.Wt.SHOP_PAGE
             })
           }, e.skuId))
         })]

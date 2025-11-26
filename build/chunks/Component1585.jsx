@@ -64,7 +64,7 @@ let d = e => {
   (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("79589"), n.e("87510")]).then(n.bind(n, 235400));
+    } = await n.e("79589").then(n.bind(n, 235400));
     return n => (0, r.jsx)(e, c(s({}, n), {
       onCloseModal: n.onClose,
       onClose: u,

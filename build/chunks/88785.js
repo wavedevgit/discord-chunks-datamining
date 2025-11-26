@@ -1,5 +1,5 @@
-/** Chunk was on 87510 **/
-/** chunk id: 88785, original params: e,o,n (module,exports,require) **/
+/** Chunk was on 79589 **/
+/** chunk id: 88785, original params: e,t,r (module,exports,require) **/
 module.exports = {
   spinner: "spinner_ced2f2",
   modal: "modal_ced2f2",

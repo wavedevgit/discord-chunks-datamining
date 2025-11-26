@@ -1,8 +1,8 @@
 /** Chunk was on 79589 **/
 /** chunk id: 439959, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  $0: () => u,
-  Tm: () => d,
+  $0: () => d,
+  Tm: () => u,
   ZP: () => p,
   oT: () => m
 }), require("./388685.js"), require("./539854.js");
@@ -12,8 +12,8 @@ var n, Chunk473749 = require("./473749.js"),
   Chunk1870 = require("./1870.js"),
   Chunk884697 = require("./884697.js"),
   Chunk388032 = require("./388032.jsx"),
-  u = ((n = {}).PURCHASE = "purchase", n.PREMIUM_PURCHASE = "premium_purchase", n.PREVIEW = "preview", n);
-let d = {
+  d = ((n = {}).PURCHASE = "purchase", n.PREMIUM_PURCHASE = "premium_purchase", n.PREVIEW = "preview", n);
+let u = {
     skuId: "None"
   },
   m = {
@@ -33,7 +33,7 @@ let d = {
       });
       return [{
         section: "purchase",
-        items: [d, m, ...n.purchase],
+        items: [u, m, ...n.purchase],
         height: 12,
         header: Chunk388032.intl.string(Chunk388032.t.VqmVqE)
       }, {

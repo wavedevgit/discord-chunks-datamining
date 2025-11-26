@@ -16,15 +16,15 @@ function c(e) {
     step: t,
     onClose: n,
     isGift: c
-  } = e, d = (0, l.EQ)(t).with(r.h8.REVIEW, () => c ? s.intl.string(s.t.wKaVLC) : s.intl.string(s.t.Whxhpm)).with(r.h8.ADD_PAYMENT_STEPS, () => s.intl.string(s.t.QiGOak)).with(r.h8.GIFT_CUSTOMIZATION, () => s.intl.string(s.t["JCFN/y"])).with(r.h8.AWAITING_PURCHASE_TOKEN_AUTH, () => s.intl.string(s.t.lDbi6H)).with(r.h8.CONFIRM, () => "").otherwise(() => null);
-  return null == d ? null : (0, i.jsxs)(a.xBx, {
+  } = e, d = (0, l.EQ)(t).with(a.h8.REVIEW, () => c ? s.intl.string(s.t.wKaVLC) : s.intl.string(s.t.Whxhpm)).with(a.h8.ADD_PAYMENT_STEPS, () => s.intl.string(s.t.QiGOak)).with(a.h8.GIFT_CUSTOMIZATION, () => s.intl.string(s.t["JCFN/y"])).with(a.h8.AWAITING_PURCHASE_TOKEN_AUTH, () => s.intl.string(s.t.lDbi6H)).with(a.h8.CONFIRM, () => "").otherwise(() => null);
+  return null == d ? null : (0, i.jsxs)(r.xBx, {
     "data-migration-pending": true,
     className: o.headerContainerGift,
-    separator: t !== r.h8.CONFIRM,
-    children: [(0, i.jsx)(a.Heading, {
+    separator: t !== a.h8.CONFIRM,
+    children: [(0, i.jsx)(r.Heading, {
       variant: "heading-lg/semibold",
       children: d
-    }), (0, i.jsx)(a.olH, {
+    }), (0, i.jsx)(r.olH, {
       "data-migration-pending": true,
       onClick: n,
       className: o.closeButtonGift

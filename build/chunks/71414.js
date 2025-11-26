@@ -1,5 +1,5 @@
-/** Chunk was on 87510 **/
-/** chunk id: 71414, original params: e,o,n (module,exports,require) **/
+/** Chunk was on 79589 **/
+/** chunk id: 71414, original params: e,t,r (module,exports,require) **/
 module.exports = {
   newBadge: "newBadge__03991",
   newBadgeText: "newBadgeText__03991",

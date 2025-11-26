@@ -3,8 +3,7 @@
 "use strict";
 require.d(exports, {
   ZO: () => u,
-  df: () => d,
-  qD: () => f
+  df: () => d
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -85,11 +84,4 @@ async function d(e) {
       error: e
     }), _ && u(), null == f || f(e)
   }
-}
-
-function f(e) {
-  return i.Z.dispatch({
-    type: "VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY",
-    balancePillOverlay: e
-  })
 }
