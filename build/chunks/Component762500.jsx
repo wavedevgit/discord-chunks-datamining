@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 762500, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,94 +17,95 @@ var Chunk54381 = require("./54381.js"),
   Chunk752048 = require("./752048.js"),
   Chunk699516 = require("./699516.js"),
   Chunk626135 = require("./626135.js"),
+  Chunk795448 = require("./795448.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk934422 = require("./934422.js");
 
-function y(e) {
+function v(e) {
   let {
     ref: t,
-    isFocused: y,
-    isActive: v,
-    status: I,
-    activities: C,
-    applicationStream: S,
-    isGameRelationship: T,
-    isMobile: N,
-    onOtherHover: j,
-    onClick: P,
-    recipientUser: x,
-    giftIntentType: A
+    isFocused: v,
+    isActive: I,
+    status: C,
+    activities: S,
+    applicationStream: T,
+    isGameRelationship: N,
+    isMobile: j,
+    onOtherHover: P,
+    onClick: x,
+    recipientUser: A,
+    giftIntentType: Z
   } = e, {
-    analyticsLocations: Z
+    analyticsLocations: w
   } = (0, o.ZP)(), {
-    Component: w
+    Component: L
   } = (0, a.V)();
   i.useEffect(() => {
-    let e = h.Z.getUserAffinity(x.id);
+    let e = h.Z.getUserAffinity(A.id);
     (0, c.h)({
       name: l.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
       type: l.ImpressionTypes.VIEW,
       properties: {
-        gift_intent_type: A,
+        gift_intent_type: Z,
         affinity: null == e ? true : e.communicationProbability
       }
     })
-  }, [x, A]);
-  let L = e => {
+  }, [A, Z]);
+  let R = e => {
       e.stopPropagation();
-      let t = h.Z.getUserAffinity(x.id);
-      m.default.track(b.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
-        gift_intent_type: A,
+      let t = h.Z.getUserAffinity(A.id);
+      m.default.track(E.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+        gift_intent_type: Z,
         affinity: null == t ? true : t.communicationProbability
       }), (0, u.Z)({
         isGift: true,
         initialPlanId: null,
-        giftRecipient: x,
-        analyticsLocations: Z,
+        giftRecipient: A,
+        analyticsLocations: w,
         analyticsObject: {
-          page: b.ZY5.FRIENDS_LIST,
-          section: b.jXE.FRIENDS_LIST_FRIEND_ROW,
-          object: b.qAy.BUTTON_CTA,
-          objectType: b.AnalyticsObjectTypes.GIFT
+          page: E.ZY5.FRIENDS_LIST,
+          section: E.jXE.FRIENDS_LIST_FRIEND_ROW,
+          object: E.qAy.BUTTON_CTA,
+          objectType: E.AnalyticsObjectTypes.GIFT
         },
-        giftMessage: R()
+        giftMessage: D()
       })
     },
-    R = () => A === _.hX.FRIEND_ANNIVERSARY ? E.intl.string(E.t.OrwKgi) : true;
+    D = () => Z === b.hX.FRIEND_ANNIVERSARY ? O.intl.string(O.t.OrwKgi) : true;
   return (0, r.jsx)(d.Z, {
     ref: t,
-    isFocused: y,
-    isActive: v,
-    user: x,
-    onOtherHover: j,
-    onClick: P,
+    isFocused: v,
+    isActive: I,
+    user: A,
+    onOtherHover: P,
+    onClick: x,
     children: e => (0, r.jsxs)("div", {
-      className: O.listItemContents,
+      className: y.listItemContents,
       children: [(0, r.jsx)(f.Z, {
-        user: x,
-        status: I,
-        isMobile: N,
+        user: A,
+        status: C,
+        isMobile: j,
         subText: (0, r.jsx)(p.Z, {
           hovered: e,
-          activities: C,
-          applicationStream: S,
-          status: I,
-          user: x,
-          userIgnored: g.Z.isIgnored(x.id)
+          activities: S,
+          applicationStream: T,
+          status: C,
+          user: A,
+          userIgnored: g.Z.isIgnored(A.id)
         }),
         hovered: e,
-        showAccountIdentifier: !T && !x.isProvisional
+        showAccountIdentifier: !N && !A.isProvisional
       }), (0, r.jsxs)("div", {
-        className: O.actions,
+        className: y.actions,
         children: [(0, r.jsx)(s.hU, {
           size: "sm",
           variant: "secondary",
-          icon: w,
-          "aria-label": E.intl.string(E.t.I61IsE),
+          icon: L,
+          "aria-label": O.intl.string(O.t.I61IsE),
           onClick: () => {
-            (0, s.ZDy)(async () => {
+            (0, _.PV)(A.id), (0, s.ZDy)(async () => {
               let {
                 default: e
               } = await n.e("5890").then(n.bind(n, 171793));
@@ -130,10 +131,10 @@ function y(e) {
           }
         }), (0, r.jsx)(s.Button, {
           size: "sm",
-          text: E.intl.string(E.t.PEjaCx),
+          text: O.intl.string(O.t.PEjaCx),
           icon: s.OgN,
-          "aria-label": E.intl.string(E.t.PEjaCx),
-          onClick: L
+          "aria-label": O.intl.string(O.t.PEjaCx),
+          onClick: R
         })]
       })]
     })

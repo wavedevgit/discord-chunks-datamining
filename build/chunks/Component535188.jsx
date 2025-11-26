@@ -1,26 +1,26 @@
 /** Chunk was on 45476 **/
 /** chunk id: 535188, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => r
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk132392 = require("./132392.js"),
   Chunk342781 = require("./342781.js");
-let i = e => {
+let r = e => {
   var t;
   let {
     onSubmit: n,
-    disabled: i
+    disabled: r
   } = e, {
     task: s
-  } = (0, l.T)(), o = r.o[s.ui_component.component.type];
+  } = (0, l.T)(), o = i.o[s.ui_component.component.type];
   return null == o ? null : (0, a.jsx)(o, {
     configData: s.ui_component.component.data,
     onSubmit: n,
     taskId: s.task_id,
     flowId: null == (t = s.flow_context) ? true : t.flow_id,
     assignmentId: s.assignment_id,
-    disabled: i
+    disabled: r
   })
 }

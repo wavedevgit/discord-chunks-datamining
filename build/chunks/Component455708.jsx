@@ -2,13 +2,12 @@
 /** chunk id: 455708, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => N
 }), require("./35282.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk55160 = require("./55160.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -25,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk577021 = require("./577021.js");
 
-function I(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +33,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,27 +57,24 @@ function S(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = e => e.stopPropagation();
-class N extends Chunk473749.PureComponent {
+let A = e => e.stopPropagation();
+class C extends Chunk473749.PureComponent {
   componentDidMount() {
     Chunk68405.gK(), document.addEventListener("keydown", this.backToFrontPage), "" !== this.props.query && this.search(this.props.query, Chunk981631.wI2.SEARCH)
   }
   componentWillUnmount() {
     Chunk570140.Z.wait(() => Chunk68405.v2()), document.removeEventListener("keydown", this.backToFrontPage)
   }
-  componentDidUpdate() {
-    this.state.resultType !== Chunk981631.wI2.SEARCH && "" !== this.props.query && this.search(this.props.query, Chunk981631.wI2.SEARCH)
-  }
   search(e, t, n) {
-    d.yC(e, t, n), "" === e ? this.setState({
+    u.yC(e, t, n), "" === e ? this.setState({
       resultType: null
-    }) : this.state.resultType !== E.wI2.SEARCH && this.setState({
-      resultType: E.wI2.SEARCH
+    }) : this.state.resultType !== g.wI2.SEARCH && this.setState({
+      resultType: g.wI2.SEARCH
     })
   }
   renderHeaderContent() {
@@ -147,21 +143,21 @@ class N extends Chunk473749.PureComponent {
     } = this.props, {
       resultType: d
     } = this.state;
-    return null == Chunk68405 ? (0, Chunk54381.jsx)(Chunk653235.Z, {
+    return null == Chunk600164 ? (0, Chunk54381.jsx)(Chunk653235.Z, {
       className: module,
-      hideFavoritesTile: Chunk570140,
+      hideFavoritesTile: Chunk68405,
       onSelectItem: this.handleSelectItem
     }) : (0, Chunk54381.jsx)(Chunk215016.ZP, {
       className: module,
-      data: Chunk68405 === Chunk981631.wI2.FAVORITES ? Chunk120356 : exports,
+      data: Chunk600164 === Chunk981631.wI2.FAVORITES ? Chunk120356 : exports,
       onSelectGIF: this.handleSelectGIF,
-      resultType: Chunk68405,
+      resultType: Chunk600164,
       resultQuery: require,
       query: Chunk473749,
       searchOffset: o,
-      searchLimit: Chunk55160,
-      searchTotalResults: Chunk442837,
-      suggestions: Chunk481060,
+      searchLimit: Chunk442837,
+      searchTotalResults: Chunk481060,
+      suggestions: Chunk570140,
       onSelectSuggestion: this.handleSelectSuggestion,
       selectedGIF: this.props.selectedGIF
     })
@@ -176,7 +172,7 @@ class N extends Chunk473749.PureComponent {
       role: "tabpanel",
       "aria-labelledby": Chunk149203._3,
       className: o()(Chunk577021.container, module),
-      onClick: C,
+      onClick: A,
       ref: exports,
       children: [(0, Chunk54381.jsx)("div", {
         className: Chunk577021.header,
@@ -188,39 +184,39 @@ class N extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), I(this, "state", {
+    super(...e), v(this, "state", {
       resultType: null
-    }), I(this, "backToFrontPage", e => {
+    }), v(this, "backToFrontPage", e => {
       let {
         resultType: t
       } = this.state;
-      e.key === y.vn.ESCAPE && null != t && (e.stopPropagation(), e.preventDefault(), this.handleClearQuery())
-    }), I(this, "handleChangeQuery", e => {
-      (0, _.ql)(e), this.search(e, E.wI2.SEARCH)
-    }), I(this, "handleSelectSuggestion", e => {
-      (0, _.ql)(""), d.v2(), this.search(e, E.wI2.SEARCH_SUGGESTION, true)
-    }), I(this, "handleClearQuery", () => {
+      e.key === b.vn.ESCAPE && null != t && (e.stopPropagation(), e.preventDefault(), this.handleClearQuery())
+    }), v(this, "handleChangeQuery", e => {
+      (0, f.ql)(e), this.search(e, g.wI2.SEARCH)
+    }), v(this, "handleSelectSuggestion", e => {
+      (0, f.ql)(""), u.v2(), this.search(e, g.wI2.SEARCH_SUGGESTION, true)
+    }), v(this, "handleClearQuery", () => {
       let {
         current: e
       } = this.props.searchBarRef;
-      (0, _.ql)(""), d.v2(), this.setState({
+      (0, f.ql)(""), u.v2(), this.setState({
         resultType: null
       }), null != e && e.focus()
-    }), I(this, "handleSelectGIF", e => {
+    }), v(this, "handleSelectGIF", e => {
       let {
         onSelectGIF: t
       } = this.props;
       null != t && t(e)
-    }), I(this, "handleSelectItem", (e, t) => {
+    }), v(this, "handleSelectItem", (e, t) => {
       let {
         current: n
       } = this.props.searchBarRef;
       switch (e) {
-        case E.wI2.TRENDING_CATEGORY:
-          d.yC(t, E.wI2.TRENDING_CATEGORY, true), null != n && n.focus();
+        case g.wI2.TRENDING_CATEGORY:
+          u.yC(t, g.wI2.TRENDING_CATEGORY, true), null != n && n.focus();
           break;
-        case E.wI2.TRENDING_GIFS:
-          d.UU()
+        case g.wI2.TRENDING_GIFS:
+          u.UU()
       }
       this.setState({
         resultType: e
@@ -228,41 +224,31 @@ class N extends Chunk473749.PureComponent {
     })
   }
 }
-let R = Chunk473749.forwardRef((e, t) => {
-  e.persistSearch || (0, _.ql)("");
+let N = Chunk473749.forwardRef((e, t) => {
+  var n;
+  e.persistSearch || (0, f.ql)(null != (n = e.initialQuery) ? n : "");
   let {
-    query: n,
-    resultQuery: a,
-    resultItems: o,
+    query: a,
+    resultQuery: o,
+    resultItems: l,
     suggestions: c
-  } = (0, l.cj)([p.Z], () => ({
-    query: p.Z.getQuery(),
-    resultQuery: p.Z.getResultQuery(),
-    resultItems: p.Z.getResultItems(),
-    suggestions: p.Z.getSuggestions()
-  })), {
-    expressionPickerQuery: u,
-    isSearchSuggestion: d
-  } = (0, _.Iu)(e => ({
-    expressionPickerQuery: e.searchQuery,
-    isSearchSuggestion: e.isSearchSuggestion
-  }), s.X), f = null != u && "" !== u ? u : n, m = (0, h.HI)(), g = i.useRef(null);
-  return i.useLayoutEffect(() => {
-    if (d) {
-      var e;
-      null == (e = g.current) || e.focus()
-    }
-  }, [d, g]), (0, r.jsx)(N, A(T({}, e), {
+  } = (0, s.cj)([_.Z], () => ({
+    query: _.Z.getQuery(),
+    resultQuery: _.Z.getResultQuery(),
+    resultItems: _.Z.getResultItems(),
+    suggestions: _.Z.getSuggestions()
+  })), u = (0, f.Iu)(e => e.searchQuery), d = null != a && "" !== a ? a : u, h = (0, p.HI)(), m = i.useRef(null);
+  return (0, r.jsx)(C, S(I({}, e), {
     forwardedRef: t,
-    query: f,
-    resultQuery: a,
-    resultItems: o,
+    query: d,
+    resultQuery: o,
+    resultItems: l,
     suggestions: c,
-    favorites: m,
+    favorites: h,
     searchOffset: 0,
-    searchTotalResults: p.Z.getResultItems().length,
+    searchTotalResults: _.Z.getResultItems().length,
     searchLimit: null,
-    searchBarRef: g,
+    searchBarRef: m,
     selectedGIF: e.selectedGIF
   }))
 })

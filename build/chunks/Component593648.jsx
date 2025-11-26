@@ -350,7 +350,7 @@ class Q extends Chunk473749.PureComponent {
             checked: Chunk473749,
             onChange: this.handleToggleShowFlash
           })
-        }), (0, Chunk54381.jsx)(ee, {}), (0, Chunk54381.jsx)(eo, {}), (0, Chunk54381.jsx)(es, {}), (0, Chunk54381.jsx)(el, {}), (0, Chunk54381.jsx)(ea, {}), (0, Chunk54381.jsxs)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)(ee, {}), (0, Chunk54381.jsx)(eo, {}), (0, Chunk54381.jsx)(es, {}), (0, Chunk54381.jsx)(el, {}), (0, Chunk54381.jsx)(ec, {}), (0, Chunk54381.jsx)(ea, {}), (0, Chunk54381.jsxs)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_PUSH_INACTIVE_TIMEOUT,
           children: [(0, Chunk54381.jsx)(Chunk481060.q4e, {
             label: Chunk388032.intl.string(Chunk388032.t.TTvjd9),
@@ -544,6 +544,20 @@ function eo() {
 }
 
 function es() {
+  let e = Chunk695346.vc.useSetting();
+  return (0, Chunk54381.jsx)(Chunk921801.F, {
+    setting: Chunk726985.s6.NOTIFICATIONS_FRIEND_ANNIVERSARY,
+    children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
+      label: Chunk388032.intl.string(Chunk388032.t.hi4dSk),
+      description: Chunk388032.intl.string(Chunk388032.t["00TNo7"]),
+      badge: "beta",
+      checked: module,
+      onChange: Chunk695346.vc.updateSetting
+    })
+  })
+}
+
+function el() {
   let e = Chunk695346.JY.useSetting();
   return (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_FRIEND_ONLINE,
@@ -556,7 +570,7 @@ function es() {
   })
 }
 
-function el() {
+function ec() {
   let e = Chunk695346.V6.useSetting();
   return (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_USER_RESURRECTION,

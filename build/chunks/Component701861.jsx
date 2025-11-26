@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 701861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,11 +26,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk825682 = require("./825682.jsx"),
   Chunk170245 = require("./170245.jsx"),
   Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk934422 = require("./934422.js");
 
-function P(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,7 +40,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function A(e) {
   let {
     user: t,
     applicationId: n,
@@ -63,32 +64,32 @@ function x(e) {
       location: "Friends"
     })
   }, [n, l, t.id]), g = i.useCallback(() => {
-    let e = l ? N.intl.string(N.t.RLcE6x) : N.intl.string(N.t.cvSt1J);
+    let e = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
     c.Z.show({
-      title: N.intl.formatToPlainString(N.t.fPLvZd, {
+      title: j.intl.formatToPlainString(j.t.fPLvZd, {
         name: E.ZP.getName(t)
       }),
-      body: N.intl.formatToPlainString(N.t.l5FFq6, {
+      body: j.intl.formatToPlainString(j.t.l5FFq6, {
         name: E.ZP.getName(t)
       }),
       confirmText: e,
       confirmVariant: "critical-primary",
-      cancelText: N.intl.string(N.t["ETE/oC"]),
+      cancelText: j.intl.string(j.t["ETE/oC"]),
       onConfirm: h
     })
-  }, [h, l, t]), m = (0, s.e7)([_.Z], () => _.Z.supports(T.AN.VIDEO)), b = t.isProvisional, y = l ? N.intl.string(N.t.RLcE6x) : N.intl.string(N.t.cvSt1J);
+  }, [h, l, t]), m = (0, s.e7)([_.Z], () => _.Z.supports(N.AN.VIDEO)), b = t.isProvisional, y = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
   return (0, r.jsxs)(o.v2r, {
     navId: "friend-row",
-    "aria-label": N.intl.string(N.t.liqwPJ),
+    "aria-label": j.intl.string(j.t.liqwPJ),
     onClose: d.Zy,
     onSelect: a,
     children: [!b && m ? (0, r.jsx)(o.sNh, {
       id: "start-video-call",
-      label: N.intl.string(N.t.oCqlGG),
+      label: j.intl.string(j.t.oCqlGG),
       action: f
     }) : null, !b && (0, r.jsx)(o.sNh, {
       id: "start-voice-call",
-      label: N.intl.string(N.t.focH1t),
+      label: j.intl.string(j.t.focH1t),
       action: p
     }), (0, r.jsx)(o.sNh, {
       id: "remove-friend",
@@ -98,7 +99,7 @@ function x(e) {
     })]
   })
 }
-class A extends Chunk473749.PureComponent {
+class Z extends Chunk473749.PureComponent {
   componentWillLeave(e) {
     null != this.peopleListItemRef.current && this.peopleListItemRef.current.componentWillLeave(e)
   }
@@ -114,16 +115,17 @@ class A extends Chunk473749.PureComponent {
       status: l,
       isMobile: a,
       isGameRelationship: s,
-      giftIntentType: c
+      giftIntentType: c,
+      hasFriendAnniversarySection: u
     } = this.props, {
-      isActiveRow: u
+      isActiveRow: g
     } = this.state;
-    return (0, Chunk522558.i)(Chunk100527.Z.FRIENDS_LIST) && null != Chunk668781 ? (0, Chunk54381.jsx)(Chunk762500.Z, {
+    return (0, Chunk522558.i)(Chunk100527.Z.FRIENDS_LIST) && Chunk668781 === Chunk474936.hX.FRIEND_ANNIVERSARY && Chunk493683 ? (0, Chunk54381.jsx)(Chunk762500.Z, {
       ref: this.peopleListItemRef,
       isFocused: exports,
-      isActive: Chunk493683,
+      isActive: Chunk703656,
       recipientUser: module,
-      onOtherHover: () => Chunk493683 ? null : (0, Chunk239091.Zy)(),
+      onOtherHover: () => Chunk703656 ? null : (0, Chunk239091.Zy)(),
       onClick: this.handleOpenPrivateChannel,
       giftIntentType: Chunk668781,
       status: Chunk392711,
@@ -134,12 +136,12 @@ class A extends Chunk473749.PureComponent {
     }) : (0, Chunk54381.jsx)(Chunk417183.Z, {
       ref: this.peopleListItemRef,
       isFocused: exports,
-      isActive: Chunk493683,
+      isActive: Chunk703656,
       user: module,
-      onOtherHover: () => Chunk493683 ? null : (0, Chunk239091.Zy)(),
+      onOtherHover: () => Chunk703656 ? null : (0, Chunk239091.Zy)(),
       onClick: this.handleOpenPrivateChannel,
       children: t => (0, r.jsxs)("div", {
-        className: j.listItemContents,
+        className: P.listItemContents,
         children: [(0, r.jsx)(C.Z, {
           user: e,
           status: l,
@@ -155,15 +157,15 @@ class A extends Chunk473749.PureComponent {
           hovered: t,
           showAccountIdentifier: !s && !e.isProvisional
         }), (0, r.jsxs)("div", {
-          className: j.actions,
+          className: P.actions,
           children: [(0, r.jsx)(y.Z, {
             icon: o.kBi,
-            tooltip: N.intl.string(N.t["g33r/P"]),
+            tooltip: j.intl.string(j.t["g33r/P"]),
             onClick: this.handleOpenPrivateChannel,
             shouldHighlight: t
           }), (0, r.jsx)(y.Z, {
             icon: o.Huf,
-            tooltip: N.intl.string(N.t["UKOtz+"]),
+            tooltip: j.intl.string(j.t["UKOtz+"]),
             onClick: this.handleOpenActionsMenu,
             shouldHighlight: t
           })]
@@ -172,9 +174,9 @@ class A extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), P(this, "peopleListItemRef", i.createRef()), P(this, "state", {
+    super(...e), x(this, "peopleListItemRef", i.createRef()), x(this, "state", {
       isActiveRow: false
-    }), P(this, "handleOpenPrivateChannel", e => {
+    }), x(this, "handleOpenPrivateChannel", e => {
       let {
         user: t
       } = this.props;
@@ -183,13 +185,13 @@ class A extends Chunk473749.PureComponent {
       null != n ? (0, g.uL)(S.Z5c.CHANNEL(S.ME, n.id)) : u.Z.openPrivateChannel({
         recipientIds: t.id
       })
-    }), P(this, "handleOpenActionsMenu", e => {
+    }), x(this, "handleOpenActionsMenu", e => {
       let {
         user: t,
         isGameRelationship: n,
         applicationId: i
       } = this.props;
-      (0, d.vq)(e, e => (0, r.jsx)(x, function(e, t) {
+      (0, d.vq)(e, e => (0, r.jsx)(A, function(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -207,7 +209,7 @@ class A extends Chunk473749.PureComponent {
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            P(e, t, n[t])
+            x(e, t, n[t])
           })
         }
         return e
@@ -227,4 +229,4 @@ class A extends Chunk473749.PureComponent {
     })
   }
 }
-let Z = A
+let w = Z

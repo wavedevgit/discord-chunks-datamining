@@ -4,6 +4,7 @@
 require.d(exports, {
   Ni: () => o,
   PV: () => a,
+  Zm: () => s,
   d$: () => i
 });
 var Chunk570140 = require("./570140.js");
@@ -25,5 +26,11 @@ function o(e) {
   r.Z.dispatch({
     type: "GIFT_INTENT_FLOW_PURCHASED_GIFT",
     recipientUserId: e
+  })
+}
+
+function s() {
+  Chunk570140.Z.dispatch({
+    type: "GIFT_UNREAD_NOTIFICATION_DISMISS"
   })
 }

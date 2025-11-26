@@ -41,7 +41,7 @@ let p = {
           gap: 0,
           children: module.flow_context.tasks.map((e, n) => {
             var l;
-            return (0, a.jsx)(r.q, {
+            return (0, a.jsx)(i.q, {
               title: null != (l = p[e.task_type]) ? l : "",
               listType: "numbered",
               index: n,

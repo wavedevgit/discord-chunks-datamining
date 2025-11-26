@@ -21,21 +21,21 @@ function o(e) {
       className: s.content,
       children: [(0, a.jsx)(l.P3F, {
         className: s.closeIcon,
-        onClick: () => t(r.L.USER_DISMISS),
+        onClick: () => t(i.L.USER_DISMISS),
         children: (0, a.jsx)(l.Dio, {
           size: "xs"
         })
       }), (0, a.jsx)(l.Text, {
         className: s.description,
         variant: "text-md/normal",
-        children: i.intl.string(i.t["Ny/0ui"])
+        children: r.intl.string(r.t["Ny/0ui"])
       }), (0, a.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
-        text: i.intl.string(i.t.TYo738),
+        text: r.intl.string(r.t.TYo738),
         fullWidth: true,
         onClick: () => {
-          t(r.L.TAKE_ACTION), n()
+          t(i.L.TAKE_ACTION), n()
         }
       })]
     })

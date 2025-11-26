@@ -9,7 +9,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk780384 = require("./780384.js"),
   Chunk570140 = require("./570140.js"),
-  Chunk244827 = require("./244827.js"),
+  Chunk661247 = require("./661247.js"),
   Chunk695346 = require("./695346.js"),
   Chunk581883 = require("./581883.js"),
   Chunk12647 = require("./12647.js"),
@@ -348,7 +348,7 @@ class J extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return v.prefersReducedMotion
   }
   get useReducedMotion() {
-    if (Chunk244827.Z.active) returntrue;
+    if (Chunk661247.Z.active) returntrue;
     switch (v.prefersReducedMotion) {
       case "no-preference":
         returnfalse;

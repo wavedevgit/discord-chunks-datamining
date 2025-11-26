@@ -8,8 +8,8 @@ var Chunk106351 = require("./106351.js"),
   Chunk846519 = require("./846519.js"),
   Chunk904245 = require("./904245.js"),
   Chunk147913 = require("./147913.js"),
+  Chunk695346 = require("./695346.js"),
   Chunk592125 = require("./592125.js"),
-  Chunk271383 = require("./271383.js"),
   Chunk375954 = require("./375954.js"),
   Chunk944486 = require("./944486.js"),
   Chunk522558 = require("./522558.js"),
@@ -40,41 +40,57 @@ class g extends Chunk147913.Z {
   maybeSendGiftingPromptSystemMessageDelayed(e, t, n, r) {
     new i.sW(m, () => {
       let i = u.Z.getChannelId();
-      !_.Z.isGiftIntentMessageInCooldown(n) && e === i && c.Z.isReady(e) && (a.Z.sendGiftingPromptSystemMessage(e, {
+      !_.ZP.isGiftIntentMessageInCooldown(n) && e === i && c.Z.isReady(e) && (a.Z.sendGiftingPromptSystemMessage(e, {
         giftIntentType: t,
         recipientUserId: n,
         giftIntentSecondaryAction: r
       }), (0, f.PV)(n))
     }).delay()
   }
-  handleChannelSelect(e, t) {
+  handleChannelSelect(e) {
     let {
-      enabled: n
+      enabled: t
     } = d.w.getConfig({
       location: "PremiumGiftingIntentManager handleChannelSelect"
-    }), r = s.Z.getChannel(t);
-    if (n && null != r && this.isChannelEligible(r)) {
-      let t = new Set(null != e ? l.ZP.getMemberIds(e) : r.recipients),
-        i = _.Z.getFriendAnniversaries().filter(e => t.has(e));
-      if (n && i.length > 0) {
-        let e = i[0];
-        this.maybeSendGiftingPromptSystemMessageDelayed(r.id, p.hX.FRIEND_ANNIVERSARY, e, i.length > 1 ? p.X2.VIEW_ALL : p.X2.SEND_MESSAGE)
+    }), n = l.Z.getChannel(e);
+    if (t && null != n && this.isChannelEligible(n)) {
+      let e = new Set(n.recipients),
+        t = _.ZP.getFriendAnniversaries().filter(t => e.has(t));
+      if (t.length > 0) {
+        let e = t[0];
+        this.maybeSendGiftingPromptSystemMessageDelayed(n.id, p.hX.FRIEND_ANNIVERSARY, e, p.X2.SEND_MESSAGE)
       }
     }
   }
+  handleTopAffinityUnreadNotification() {
+    let {
+      enabled: e
+    } = Chunk522558.w.getConfig({
+      location: "PremiumGiftingIntentManager handleTopAffinityUnreadNotification"
+    }), t = Chunk695346.vc.getSetting();
+    module && exports && Chunk441623.ZP.getFriendAnniversaries().filter(e => _.ZP.isTopAffinityFriendAnniversary({
+      userId: e
+    })).forEach(e => {
+      let t = l.Z.getDMChannelFromUserId(e);
+      null != t && new i.sW(m, () => {
+        _.ZP.canShowGiftUnreadNotification() && (a.Z.sendGiftingPromptSystemMessage(t.id, {
+          giftIntentType: p.hX.FRIEND_ANNIVERSARY,
+          recipientUserId: e,
+          giftIntentSecondaryAction: p.X2.SEND_MESSAGE
+        }), (0, f.Zm)())
+      }).delay()
+    })
+  }
   onChannelSelect(e) {
     let {
-      guildId: t,
-      channelId: n
+      channelId: t
     } = e;
-    this.handleChannelSelect(t, n)
+    this.handleTopAffinityUnreadNotification(), this.handleChannelSelect(t)
   }
   onPostConnectionOpen() {
+    this.handleTopAffinityUnreadNotification();
     let e = Chunk944486.Z.getChannelId();
-    if (null != module) {
-      let t = Chunk592125.Z.getChannel(module);
-      this.handleChannelSelect(null == exports ? true : exports.guild_id, null == exports ? true : exports.id)
-    }
+    null != module && this.handleChannelSelect(module)
   }
   constructor(...e) {
     super(...e), h(this, "actions", {

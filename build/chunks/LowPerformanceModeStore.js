@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
-/** chunk id: 244827, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 471411, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => l
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -15,83 +15,25 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-
-function s(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      o(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function l(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let u = {
-  enabled: false,
-  visible: false
-};
-
-function d(e) {
-  let {
-    enabled: t
-  } = e;
-  if (u.enabled === t) returnfalse;
-  u = c(s({}, u), {
-    enabled: t
-  })
-}
-
-function f(e) {
-  let {
-    visible: t
-  } = e;
-  if (u.visible === t) returnfalse;
-  u = c(s({}, u), {
-    visible: t
-  })
-}
-class _ extends(r = Chunk442837.ZP.PersistedStore) {
-  initialize(e) {
-    var t, n;
-    u = {
-      enabled: null != (t = null == e ? true : e.enabled) && t,
-      visible: null != (n = null == e ? true : e.visible) && n
+class s extends(r = Chunk442837.ZP.Store) {
+  getState() {
+    return {
+      enabled: false,
+      optedOut: false
     }
   }
-  getState() {
-    return u
+  get optedOut() {
+    returnfalse
   }
   get enabled() {
-    return u.enabled
+    returnfalse
   }
   get visible() {
-    return u.visible
+    returnfalse
   }
   get active() {
-    return u.enabled && u.visible
+    returnfalse
   }
 }
-o(_, "displayName", "LowPerformanceModeStore"), o(_, "persistKey", "LowPerformanceModeStore");
-let p = new _(Chunk570140.Z, {
-  LOW_PERFORMANCE_MODE_SET_ENABLED: d,
-  LOW_PERFORMANCE_MODE_SET_VISIBLE: f
-})
+o(s, "displayName", "LowPerformanceModeStore");
+let l = new s(Chunk570140.Z, {})

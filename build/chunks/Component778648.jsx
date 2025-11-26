@@ -82,7 +82,7 @@ let D = function() {
   let [e, t] = Chunk473749.useState(Chunk474936.Si.TIER_2), [n, v] = Chunk473749.useState(null), j = (0, Chunk442837.Wu)([Chunk430824.Z], () => Chunk430824.Z.getGuildsArray()), [D] = (0, Chunk442837.Wu)([Chunk78839.Z], () => [Chunk78839.Z.getPremiumSubscription()]), L = Chunk305342.map(e => ({
     value: e,
     label: e.name
-  })), [M, U] = Chunk473749.useState(L.length > 0 ? L[0].value : null), [B, F] = Chunk473749.useState(""), [G, z] = Chunk473749.useState({
+  })), [M, U] = Chunk473749.useState(L.length > 0 ? L[0].value : null), [F, B] = Chunk473749.useState(""), [G, z] = Chunk473749.useState({
     plan_id: Chunk474936.Xh.PREMIUM_MONTH_TIER_2,
     gift: "true"
   }), H = "true" !== G.gift && null != D, [V, W] = Chunk473749.useState(L.length > 0 ? L[0].value : null), {
@@ -95,7 +95,7 @@ let D = function() {
     isSubmitting: et,
     responseMessage: en,
     redeemVirtualCurrency: ea
-  } = (0, Chunk43747.f)(), [el, er] = Chunk473749.useState(Chunk981631.lds), [ei, es] = Chunk473749.useState(""), [eo, ec] = Chunk473749.useState(Chunk981631.lds), [ed, eu] = Chunk473749.useState(Chunk981631.lds);
+  } = (0, Chunk43747.f)(), [el, ei] = Chunk473749.useState(Chunk981631.lds), [er, es] = Chunk473749.useState(""), [eo, ec] = Chunk473749.useState(Chunk981631.lds), [ed, eu] = Chunk473749.useState(Chunk981631.lds);
   return (0, Chunk54381.jsx)(Chunk906732.Gt, {
     value: K,
     children: (0, Chunk54381.jsx)(Chunk481060.zJl, {
@@ -189,19 +189,19 @@ let D = function() {
             children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
               label: "Standalone: Trial Promotion Redemption",
               placeholder: "Promotion Code",
-              value: B,
-              onChange: e => F(e)
+              value: F,
+              onChange: e => B(e)
             }), (0, Chunk54381.jsx)(Chunk481060.aML, {
               "data-migration-pending": true,
               text: "Need Promotion Code",
-              shouldShow: B.length < 1,
+              shouldShow: F.length < 1,
               children: e => (0, a.jsx)(d.Button, A(R({
                 variant: "primary",
                 text: "Open Link",
-                disabled: B.length < 1
+                disabled: F.length < 1
               }, e), {
                 onClick: () => {
-                  window.open(I.Z5c.BILLING_PROMOTION_REDEMPTION(B))
+                  window.open(I.Z5c.BILLING_PROMOTION_REDEMPTION(F))
                 }
               }))
             })]
@@ -250,7 +250,7 @@ let D = function() {
           }, e), {
             disabled: H,
             onClick: () => {
-              window.open(I.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + r.stringify(R({}, G)))
+              window.open(I.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(R({}, G)))
             }
           }))
         }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
@@ -281,7 +281,7 @@ let D = function() {
             label: "SKU ID",
             placeholder: "SKU ID",
             value: el,
-            onChange: e => er(e)
+            onChange: e => ei(e)
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Redeem Virtual Currency for SKU",
@@ -348,7 +348,7 @@ let D = function() {
                 label: "Application Id",
                 hideLabel: true,
                 placeholder: "Application Id",
-                value: ei,
+                value: er,
                 onChange: es
               }), (0, Chunk54381.jsx)(Chunk481060.oil, {
                 label: "SKU ID",
@@ -360,7 +360,7 @@ let D = function() {
                 variant: "primary",
                 text: "Open Standard Payment Modal for SKU",
                 onClick: () => (0, Chunk87484.Z)({
-                  applicationId: ei,
+                  applicationId: er,
                   skuId: eo,
                   analyticsLocations: K
                 })

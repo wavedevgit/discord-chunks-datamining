@@ -41,7 +41,7 @@ function p() {
         includeGDMs: n,
         includeDMs: a,
         includeQuickSwitcherState: l,
-        includeUserSearchWorkerState: r,
+        includeUserSearchWorkerState: i,
         isUploading: s
       } = m.getState();
       if (!Chunk972959) try {

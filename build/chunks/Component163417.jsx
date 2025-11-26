@@ -16,7 +16,8 @@ function a(e) {
     isVirtualizedList: s,
     hasSearchQuery: o,
     sectionFilter: c,
-    footer: u
+    footer: u,
+    renderSectionFooter: d
   } = e;
   return s ? (0, r.jsx)(i.Z, {
     rows: t,
@@ -29,6 +30,7 @@ function a(e) {
     renderSection: a,
     sectionFilter: c,
     hasSearchQuery: o,
-    footer: u
+    footer: u,
+    renderSectionFooter: d
   })
 }

@@ -1,12 +1,11 @@
 /** Chunk was on 45476 **/
 /** chunk id: 272193, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk441623 = require("./441623.js"),
@@ -14,10 +13,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk636503 = require("./636503.js"),
   Chunk451429 = require("./451429.js");
 
-function m() {
-  let e = (0, Chunk442837.e7)([Chunk441623.Z], () => Chunk441623.Z.getDevToolTotalFriendAnniversaries()),
+function u() {
+  let e = (0, Chunk442837.e7)([Chunk441623.ZP], () => Chunk441623.ZP.getDevToolTotalFriendAnniversaries()),
     t = e => {
-      s.Z.dispatch({
+      r.Z.dispatch({
         type: "DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT",
         total: e
       })
@@ -81,7 +80,7 @@ function m() {
           variant: "text-md/normal",
           children: "Select number of friend anniversaries to generate"
         }), (0, Chunk54381.jsx)(Chunk481060.q4e, {
-          className: Chunk636503.anniversaryCountSelect,
+          size: "sm",
           options: [{
             label: "None",
             value: null
@@ -112,13 +111,13 @@ function m() {
             t(e)
           },
           popoutLayerContext: Chunk246992.O$
-        }), (0, Chunk54381.jsx)(Chunk755721.zx, {
-          look: Chunk755721.zx.Looks.LINK,
-          className: Chunk636503.anniversaryCountResetButton,
+        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+          size: "sm",
+          variant: "secondary",
+          text: "Reset to None",
           onClick: () => {
             exports(null)
-          },
-          children: "Reset to None"
+          }
         })]
       })]
     })

@@ -717,8 +717,7 @@ function e9(e) {
   return null == i || null == o ? null : (0, r.jsx)(Q.Z, {
     giftIntentType: i.giftIntentType,
     recipientUser: o,
-    channel: n,
-    giftIntentSecondaryAction: i.giftIntentSecondaryAction
+    channel: n
   })
 }
 

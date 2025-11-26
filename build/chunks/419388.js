@@ -455,9 +455,9 @@ class O {
     let i = this.getElementFromMessageId(e);
     this.isJumping() || !t || null == n || u.Z.useReducedMotion || (m.default.extractTimestamp(e) > n ? this.scrollTo(0) : this.scrollTo(Number.MAX_SAFE_INTEGER)), this.pinned = false, this.jumping = true;
     let r = () => {
-      this.jumping = false, (0, a.kK)(i) && u.Z.keyboardModeEnabled && i.focus({
+      this.jumping = false, (0, a.kK)(i) && (i.tabIndex = false, i.focus({
         preventScroll: true
-      }), this.scrollCounter = 0, this.handleScroll(), this._scrollCompleteCallbacks.forEach(e => e())
+      })), this.scrollCounter = 0, this.handleScroll(), this._scrollCompleteCallbacks.forEach(e => e())
     };
     (0, a.kK)(i) ? this.scrollTo(this.getOffsetOrientationFromNode(i, "middle", this.props.hasUnreads ? this.newMessageBarBuffer() : y.kQ), t, r): this.scrollToNewMessages(t, "middle", r)
   }

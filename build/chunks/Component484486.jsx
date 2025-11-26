@@ -20,7 +20,7 @@ let c = () => {
     }), (0, Chunk54381.jsx)(Chunk481060.FiK, {
       value: module,
       onChange: e => {
-        (0, i.p8)(e)
+        (0, r.p8)(e)
       },
       minValue: 0,
       maxValue: 100

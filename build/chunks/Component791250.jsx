@@ -146,7 +146,7 @@ let eE = e => {
     } = e, n = eb(e, ["selected"]);
     let l = (0, u.JA)("friends"),
       a = (0, B.If)(),
-      s = (0, p.e7)([V.Z], () => V.Z.canShowFriendsTabBadge()),
+      s = (0, p.e7)([V.ZP], () => V.ZP.canShowFriendsTabBadge()),
       o = (0, p.e7)([C.Z], () => C.Z.useReducedMotion),
       {
         enabled: d
@@ -154,7 +154,7 @@ let eE = e => {
         location: "Friends Tab"
       }),
       [g, m] = (0, x.bf)(s && d ? f.z.GIFTING_INTENT_FRIENDS_TAB_BADGE : null, {
-        cooldownDurationMs: V.n
+        cooldownDurationMs: V.n3
       }),
       E = g === f.z.GIFTING_INTENT_FRIENDS_TAB_BADGE;
     i.useEffect(() => {

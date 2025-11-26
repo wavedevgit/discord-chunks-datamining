@@ -337,7 +337,7 @@ function V(e) {
     size: r,
     canAnimate: i,
     lossless: a,
-    canWebP: false
+    canWebP: O
   })
 }
 

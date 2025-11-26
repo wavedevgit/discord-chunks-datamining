@@ -113,7 +113,7 @@ let h = Chunk473749.createContext({
       setPreviewAvatarDecorationSkuId: t
     } = (0, Chunk619899.N9)(), {
       avatarDecorationAssets: n
-    } = (0, Chunk619899.xq)(), i = Chunk473749.useMemo(() => [f, ...require.map(e => ({
+    } = (0, Chunk619899.xq)(), r = Chunk473749.useMemo(() => [f, ...require.map(e => ({
       label: e.name,
       value: e.name
     }))], [require]);
@@ -137,25 +137,25 @@ let h = Chunk473749.createContext({
       clearAssets: t,
       clearIgnoredFiles: n
     } = e, {
-      collectionAssets: i
+      collectionAssets: r
     } = (0, o.xq)(), {
       deleteCollectionAsset: s,
       clearAssets: c
-    } = (0, o.N9)(), d = l.useMemo(() => Object.values(i).map(e => ({
+    } = (0, o.N9)(), d = l.useMemo(() => Object.values(r).map(e => ({
       label: e.name,
       value: e.type
-    })), [i]), u = l.useCallback(e => s(e), [s]), p = l.useCallback(() => {
+    })), [r]), u = l.useCallback(e => s(e), [s]), p = l.useCallback(() => {
       c(), t(), n()
     }, [c, t, n]);
     return 0 === d.length ? null : (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(r.LZC, {
+      children: [(0, a.jsx)(i.LZC, {
         size: 16
       }), (0, a.jsxs)("div", {
         className: m.headingContainer,
-        children: [(0, a.jsx)(r.Heading, {
+        children: [(0, a.jsx)(i.Heading, {
           variant: "heading-lg/bold",
           children: "Uploaded Assets"
-        }), (0, a.jsx)(r.Button, {
+        }), (0, a.jsx)(i.Button, {
           variant: "critical-primary",
           size: "sm",
           onClick: p,
@@ -164,13 +164,13 @@ let h = Chunk473749.createContext({
       }), (0, a.jsx)("ul", {
         children: d.map(e => (0, a.jsxs)("li", {
           className: m.uploadedFileListItem,
-          children: [(0, a.jsx)(r.hU, {
+          children: [(0, a.jsx)(i.hU, {
             variant: "icon-only",
             size: "sm",
             onClick: () => u(e.value),
-            icon: r.Dio,
+            icon: i.Dio,
             "aria-label": "Remove asset"
-          }), (0, a.jsx)(r.Text, {
+          }), (0, a.jsx)(i.Text, {
             variant: "text-md/normal",
             children: e.label
           })]
@@ -184,14 +184,14 @@ let h = Chunk473749.createContext({
       handleClearIgnoredFiles: n
     } = e;
     return 0 === t.length ? null : (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(r.LZC, {
+      children: [(0, a.jsx)(i.LZC, {
         size: 16
       }), (0, a.jsxs)("div", {
         className: m.headingContainer,
-        children: [(0, a.jsx)(r.Heading, {
+        children: [(0, a.jsx)(i.Heading, {
           variant: "heading-lg/bold",
           children: "Ignored Files"
-        }), (0, a.jsx)(r.Button, {
+        }), (0, a.jsx)(i.Button, {
           variant: "primary",
           size: "sm",
           onClick: n,
@@ -200,7 +200,7 @@ let h = Chunk473749.createContext({
       }), (0, a.jsx)("ul", {
         children: t.map((e, t) => (0, a.jsx)("li", {
           className: m.ignoredFileListItem,
-          children: (0, a.jsx)(r.Text, {
+          children: (0, a.jsx)(i.Text, {
             variant: "text-md/normal",
             children: e
           })
@@ -213,7 +213,7 @@ let h = Chunk473749.createContext({
       validateShopAssetPackage: e,
       reset: t,
       validationComplete: n,
-      warnings: i,
+      warnings: r,
       errors: s
     } = (0, Chunk206878.g)(), o = Object.entries(Chunk637443), c = Object.entries(Chunk373071), d = Chunk619899.length > 0, p = Chunk18868.length > 0, {
       setDropHandler: x
@@ -255,14 +255,14 @@ let h = Chunk473749.createContext({
           children: Chunk619899.map((e, t) => {
             let [n, l] = e;
             return (0, a.jsxs)("li", {
-              children: [(0, a.jsx)(r.Text, {
+              children: [(0, a.jsx)(i.Text, {
                 variant: "text-md/bold",
                 color: "text-danger",
                 children: n
               }), l.length > 0 && (0, a.jsx)("ul", {
                 className: m.validationIssuesList,
                 children: l.map((e, t) => (0, a.jsx)("li", {
-                  children: (0, a.jsx)(r.Text, {
+                  children: (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-danger",
                     children: e
@@ -283,14 +283,14 @@ let h = Chunk473749.createContext({
           children: Object.entries(Chunk373071).map((e, t) => {
             let [n, l] = e;
             return (0, a.jsxs)("li", {
-              children: [(0, a.jsx)(r.Text, {
+              children: [(0, a.jsx)(i.Text, {
                 variant: "text-md/bold",
                 color: "text-feedback-warning",
                 children: n
               }), l.length > 0 && (0, a.jsx)("ul", {
                 className: m.validationIssuesList,
                 children: l.map((e, t) => (0, a.jsx)("li", {
-                  children: (0, a.jsx)(r.Text, {
+                  children: (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-feedback-warning",
                     children: e
@@ -309,7 +309,7 @@ let h = Chunk473749.createContext({
       setPreviewEnabled: t,
       clearAssets: n
     } = (0, Chunk619899.N9)(), {
-      ignoredFilenames: i,
+      ignoredFilenames: r,
       clearAssets: s,
       clearIgnoredFilenames: c,
       processAndUpsertAssets: u
@@ -373,11 +373,11 @@ let h = Chunk473749.createContext({
   T = e => {
     let {
       children: t
-    } = e, [n, r] = l.useState(() => () => {}), i = l.useMemo(() => ({
-      setDropHandler: e => r(() => e)
+    } = e, [n, i] = l.useState(() => () => {}), r = l.useMemo(() => ({
+      setDropHandler: e => i(() => e)
     }), []);
     return (0, a.jsx)(h.Provider, {
-      value: i,
+      value: r,
       children: (0, a.jsx)(c.L, {
         onDrop: n,
         children: t

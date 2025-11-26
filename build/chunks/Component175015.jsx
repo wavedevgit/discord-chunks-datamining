@@ -23,20 +23,20 @@ function u(e, t, n, u, m) {
       analyticsLocations: t
     });
   return (0, a.jsxs)(a.Fragment, {
-    children: [null != p ? (0, a.jsx)(r.sNh, {
+    children: [null != p ? (0, a.jsx)(i.sNh, {
       id: "edit-server-profile",
       "aria-label": c.intl.string(c.t["9ESaO7"]),
       label: () => (0, a.jsxs)("div", {
         className: d.item,
-        children: [(0, a.jsx)(i.Z, {
+        children: [(0, a.jsx)(r.Z, {
           guild: p,
-          size: i.Z.Sizes.SMOL,
+          size: r.Z.Sizes.SMOL,
           className: d.guildIcon
         }), (0, a.jsxs)("div", {
-          children: [(0, a.jsx)(r.Text, {
+          children: [(0, a.jsx)(i.Text, {
             variant: "text-sm/medium",
             children: c.intl.string(c.t["9ESaO7"])
-          }), (0, a.jsx)(r.Text, {
+          }), (0, a.jsx)(i.Text, {
             variant: "text-xs/normal",
             lineClamp: 1,
             style: {
@@ -49,19 +49,19 @@ function u(e, t, n, u, m) {
       action: () => {
         h(), null == m || m(), null == u || u()
       }
-    }, "edit-server-profile") : null, (0, a.jsx)(r.sNh, {
+    }, "edit-server-profile") : null, (0, a.jsx)(i.sNh, {
       id: "edit-main-profile",
       "aria-label": c.intl.string(c.t.HmFaFB),
       label: () => (0, a.jsxs)("div", {
         className: d.item,
-        children: [(0, a.jsx)(r.kYE, {
+        children: [(0, a.jsx)(i.kYE, {
           size: "custom",
           width: 18,
           height: 18
-        }), (0, a.jsx)(r.Text, {
+        }), (0, a.jsx)(i.Text, {
           variant: "text-sm/medium",
           children: c.intl.string(c.t.HmFaFB)
-        }), n ? (0, a.jsx)(r.IGR, {
+        }), n ? (0, a.jsx)(i.IGR, {
           text: c.intl.string(c.t.y2b7CA)
         }) : true]
       }),
