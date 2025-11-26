@@ -18,11 +18,11 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       } = Chunk246946.Z.getSettings();
       return module
     }),
-    setValue: t => l.Z.update({
+    setValue: t => r.Z.update({
       hidePersonalInformation: t
     })
   }),
-  E = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_INVITE_LINKS, {
+  d = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_INVITE_LINKS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.uWBOri),
     useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
       let {
@@ -30,11 +30,11 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       } = Chunk246946.Z.getSettings();
       return module
     }),
-    setValue: t => l.Z.update({
+    setValue: t => r.Z.update({
       hideInstantInvites: t
     })
   }),
-  d = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_DISABLE_SOUNDS, {
+  E = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_DISABLE_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.OrqYDP),
     useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
       let {
@@ -42,7 +42,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       } = Chunk246946.Z.getSettings();
       return module
     }),
-    setValue: t => l.Z.update({
+    setValue: t => r.Z.update({
       disableSounds: t
     })
   }),
@@ -54,7 +54,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       } = Chunk246946.Z.getSettings();
       return module
     }),
-    setValue: t => l.Z.update({
+    setValue: t => r.Z.update({
       disableNotifications: t
     })
   }),
@@ -71,12 +71,12 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       } = Chunk246946.Z.getSettings();
       return module
     }),
-    setValue: t => l.Z.update({
+    setValue: t => r.Z.update({
       enableContentProtection: t
     })
   }),
   I = (0, Chunk509613.Uc)(Chunk313789.n.STREAMER_MODE_OPTIONS_LIST, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.UtW8R6),
     variant: "separators",
-    buildLayout: () => [c, E, d, S, T]
+    buildLayout: () => [c, d, E, S, T]
   })

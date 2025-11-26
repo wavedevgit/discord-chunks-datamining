@@ -4,7 +4,7 @@ require.d(exports, {
   D: () => S
 });
 var Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  r = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk197344 = require("./197344.js"),
   Chunk509613 = require("./509613.js"),
@@ -27,7 +27,7 @@ let S = (0, Chunk509613.qs)(Chunk313789.n.NOTIFICATION_HOLIDAY_SOUNDPACK, {
   },
   setValue: function(t) {
     let e = u.Z.getHolidaySoundpack();
-    l()(null != e, "predicate should fail if no soundpack is available"), (0, a.c)(t ? e : E.Y.CLASSIC)
+    r()(null != e, "predicate should fail if no soundpack is available"), (0, a.c)(t ? e : d.Y.CLASSIC)
   },
   usePredicate: Chunk197344.Z.useIsEligible
 })

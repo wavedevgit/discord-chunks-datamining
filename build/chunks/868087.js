@@ -15,7 +15,7 @@ let s = () => {
     a = (0, Chunk773275.xf)(t => t.setInstallationStatus);
   return (0, Chunk473749.useEffect)(() => {
     module && require === Chunk5900._n.NOT_INSTALLED && (s(false), a(Chunk5900._n.INSTALLING), exports().catch(t => {
-      a(l._n.ERROR), u.Z.captureException(t, {
+      a(r._n.ERROR), u.Z.captureException(t, {
         tags: {
           source: "WARP_INSTALL_HELPER"
         }

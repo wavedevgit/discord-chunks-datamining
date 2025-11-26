@@ -14,7 +14,7 @@ let o = (0, Chunk509613.qs)(Chunk313789.n.CAMERA_PREVIEW_PREFERENCE, {
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.WNbX4O),
   useValue: Chunk695346.qF.useSetting,
   setValue: t => {
-    r.qF.updateSetting(t), l.default.track(s.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+    l.qF.updateSetting(t), r.default.track(s.rMx.UPDATE_USER_SETTINGS_LOCAL, {
       always_preview_video: t
     })
   }

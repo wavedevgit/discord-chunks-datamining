@@ -20,6 +20,6 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.VOICE_SILENCE_WARNING_SETTING, {
     return Chunk358085.isPlatformEmbedded
   },
   setValue: function(t) {
-    l.Z.setSilenceWarning(t)
+    r.Z.setSilenceWarning(t)
   }
 })

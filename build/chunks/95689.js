@@ -21,7 +21,7 @@ let O = (0, Chunk509613.qs)(Chunk313789.n.EXPERIMENTAL_UNREADS, {
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.LGynPs),
   useValue: () => (0, Chunk442837.e7)([Chunk9156.ZP], () => Chunk9156.ZP.useNewNotifications),
   setValue: function(t) {
-    r.Z.setAccountFlag(S.c.USE_NEW_NOTIFICATIONS, t), t || (l.K.set("turnedOffNewNotifications", true), c.default.track(d.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
+    l.Z.setAccountFlag(S.c.USE_NEW_NOTIFICATIONS, t), t || (r.K.set("turnedOffNewNotifications", true), c.default.track(E.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
       num_guilds_with_new_setting: s.Z.getGuildsArray().filter(t => a.ZP.resolveGuildUnreadSetting(t) === T.i.ONLY_MENTIONS).length
     }))
   },

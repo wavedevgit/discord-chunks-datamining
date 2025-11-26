@@ -20,6 +20,6 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.VOICE_QUALITY_OF_SERVICE_SETTING, {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getQoS())
   },
   setValue: function(t) {
-    l.Z.setQoS(t)
+    r.Z.setQoS(t)
   }
 })

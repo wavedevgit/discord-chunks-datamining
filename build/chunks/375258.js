@@ -34,7 +34,7 @@ function f() {
 
 function A(t) {
   let e = (0, i.e7)([u.Z], () => u.Z.isInputProfileCustom());
-  return (0, l.u)(t, {
+  return (0, r.u)(t, {
     limit: e ? 3 : 2
   })
 }

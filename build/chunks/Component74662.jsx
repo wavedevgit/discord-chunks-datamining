@@ -40,7 +40,7 @@ let g = (0, Chunk509613.x1)(Chunk313789.n.PRIVATE_BROWSING_PANE, {
           perkAvailableToUser: i
         } = (0, Chunk773275.xf)(),
         {
-          enabled: l
+          enabled: r
         } = Chunk299886.H.useConfig({
           location: "private_browsing_perk_settings_page"
         });

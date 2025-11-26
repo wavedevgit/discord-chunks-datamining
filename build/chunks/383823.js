@@ -21,7 +21,7 @@ let o = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_STREAMER_MODE, {
     })
   },
   setValue: function(t) {
-    l.Z.update({
+    r.Z.update({
       enabled: t
     })
   }

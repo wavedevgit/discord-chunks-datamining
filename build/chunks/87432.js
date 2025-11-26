@@ -2,23 +2,23 @@
 /** chunk id: 87432, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => function t(e, n, u) {
-    var s, a, o, c, E, d;
+    var s, a, o, c, d, E;
     let S = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
     if (!n.has(e.key)) return null;
-    if (!(0, i.Lk)(e)) return u.register(e, null == (c = S.panel) ? true : c.key, null == (E = S.category) ? true : E.key, null == (d = S.accordion) ? true : d.key), e;
+    if (!(0, i.Lk)(e)) return u.register(e, null == (c = S.panel) ? true : c.key, null == (d = S.category) ? true : d.key, null == (E = S.accordion) ? true : E.key), e;
     let T = S;
-    e.type === i.Jq.SIDEBAR_ITEM && (T = r(l({}, S), {
+    e.type === i.Jq.SIDEBAR_ITEM && (T = l(r({}, S), {
       panel: e.layout[0]
-    })), e.type === i.Jq.PANEL && (T = r(l({}, S), {
+    })), e.type === i.Jq.PANEL && (T = l(r({}, S), {
       panel: e
-    })), e.type === i.Jq.CATEGORY && (T = r(l({}, S), {
+    })), e.type === i.Jq.CATEGORY && (T = l(r({}, S), {
       category: e
-    })), e.type === i.Jq.ACCORDION && (T = r(l({}, S), {
+    })), e.type === i.Jq.ACCORDION && (T = l(r({}, S), {
       accordion: e
     }));
     let I = e.layout.map(e => t(e, n, u, T)).filter(t => null != t);
     if (0 === I.length && !("render" in e || e.type === i.Jq.SIDEBAR_ITEM && "onClick" in e)) return null;
-    let O = r(l({}, e), {
+    let O = l(r({}, e), {
       layout: I
     });
     return u.register(O, null == (s = T.panel) ? true : s.key, null == (a = T.category) ? true : a.key, null == (o = T.accordion) ? true : o.key), O
@@ -26,7 +26,7 @@ require.d(exports, {
 });
 var Chunk28682 = require("./28682.js");
 
-function l(t) {
+function r(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
       i = Object.keys(n);
@@ -45,7 +45,7 @@ function l(t) {
   return t
 }
 
-function r(t, e) {
+function l(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {

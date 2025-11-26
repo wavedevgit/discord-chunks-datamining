@@ -12,14 +12,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk781652 = require("./781652.js");
-let d = (0, Chunk509613.x1)(Chunk313789.n.POGGERMODE_PANE, {
+let E = (0, Chunk509613.x1)(Chunk313789.n.POGGERMODE_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AtCukI),
     buildLayout: () => [],
     render: Chunk231765.Z
   }),
   S = (0, Chunk509613.wf)(Chunk313789.n.POGGERMODE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AtCukI),
-    buildLayout: () => [d]
+    buildLayout: () => [E]
   }),
   T = (0, Chunk509613.m7)(Chunk313789.n.POGGERMODE_SIDEBAR_ITEM, {
     icon: () => (0, Chunk54381.jsx)("img", {

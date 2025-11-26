@@ -12,14 +12,14 @@ let u = Chunk473749.createContext(true);
 function s(t) {
   let {
     children: e
-  } = t, n = l.useRef(null), s = l.useCallback(t => {
-    null != n.current && n.current.stop(), n.current = (0, r.GN)(t)
+  } = t, n = r.useRef(null), s = r.useCallback(t => {
+    null != n.current && n.current.stop(), n.current = (0, l.GN)(t)
   }, []);
-  l.useEffect(() => () => {
+  r.useEffect(() => () => {
     var t;
     null == (t = n.current) || t.stop()
   }, []);
-  let a = l.useMemo(() => ({
+  let a = r.useMemo(() => ({
     handlePreviewSound: s
   }), [s]);
   return (0, i.jsx)(u.Provider, {

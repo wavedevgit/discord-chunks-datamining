@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 116282, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  R: () => E
+  R: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,12 +11,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk773275 = require("./773275.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk163646 = require("./163646.js");
-let E = () => {
+let d = () => {
   let {
     isWeb: t,
     installationStatus: e,
     connectionStatus: n
-  } = (0, Chunk773275.xf)(), E = (0, Chunk473749.useMemo)(() => {
+  } = (0, Chunk773275.xf)(), d = (0, Chunk473749.useMemo)(() => {
     switch (require) {
       case Chunk5900.Ij.CONNECTED:
         return Chunk388032.intl.format(Chunk163646.default.EVQZqy, {
@@ -35,7 +35,7 @@ let E = () => {
           helpdeskArticle: Chunk323183.w
         })
     }
-  }, [require]), d = (0, Chunk473749.useMemo)(() => {
+  }, [require]), E = (0, Chunk473749.useMemo)(() => {
     if (module) return Chunk388032.intl.format(Chunk163646.default.z6v0w5, {
       helpdeskArticle: Chunk323183.w
     });
@@ -56,7 +56,7 @@ let E = () => {
       case Chunk5900._n.ZERO_TRUST:
         return Chunk388032.intl.string(Chunk163646.default.KVSUDs);
       case Chunk5900._n.INSTALLED:
-        return E;
+        return d;
       case Chunk5900._n.NOT_INSTALLED:
       case Chunk5900._n.UNKNOWN:
       default:
@@ -64,10 +64,10 @@ let E = () => {
           helpdeskArticle: Chunk323183.w
         })
     }
-  }, [module, exports, E]);
+  }, [module, exports, d]);
   return (0, Chunk54381.jsx)(Chunk159691.xvT, {
     variant: "text-sm/normal",
     color: "text-secondary",
-    children: d
+    children: E
   })
 }

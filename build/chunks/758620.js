@@ -15,8 +15,8 @@ let o = (0, Chunk509613.qs)(Chunk313789.n.CLIPS_ENABLE_GAME_SIGNALS, {
   useValue: () => (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().clipSignals.enableGameSignals),
   setValue: t => {
     var e, n;
-    let i = l.Z.getSettings().clipSignals;
-    r.Rr((e = function(t) {
+    let i = r.Z.getSettings().clipSignals;
+    l.Rr((e = function(t) {
       for (var e = 1; e < arguments.length; e++) {
         var n = null != arguments[e] ? arguments[e] : {},
           i = Object.keys(n);

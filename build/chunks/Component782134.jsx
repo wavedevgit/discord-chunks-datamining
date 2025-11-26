@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk269876 = require("./269876.jsx"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
-let d = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_SLIDER, {
+let E = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_SLIDER, {
     useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["sqUm+k"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)],
     render: () => (0, Chunk54381.jsx)(Chunk269876.B, {})
   }),
@@ -30,7 +30,7 @@ let d = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_SLIDER, {
         {
           threshold: n
         } = s.Z.getModeOptions();
-      r.Z.setMode(e, {
+      l.Z.setMode(e, {
         autoThreshold: t,
         threshold: n
       })
@@ -44,5 +44,5 @@ let d = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_SLIDER, {
         e = Chunk131951.Z.isInputProfileCustom();
       return module === Chunk65154.pM.VOICE_ACTIVITY && exports
     }),
-    buildLayout: () => [S, d]
+    buildLayout: () => [S, E]
   })

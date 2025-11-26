@@ -21,7 +21,7 @@ function S() {
     let e = Chunk594174.default.getCurrentUser(),
       n = null != (t = null == exports ? true : exports.isStaff()) && module,
       i = "canary" === Chunk998502.ZP.releaseChannel || "development" === Chunk998502.ZP.releaseChannel,
-      l = Chunk131951.Z.supports(Chunk65154.AN.CONNECTION_REPLAY);
+      r = Chunk131951.Z.supports(Chunk65154.AN.CONNECTION_REPLAY);
     return require && Chunk442837 && Chunk304680
   })
 }

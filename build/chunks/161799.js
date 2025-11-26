@@ -21,7 +21,7 @@ let o = (() => {
     minValue: Chunk356659.qb,
     maxValue: Chunk356659.b0,
     onValueRender: t => "".concat(Math.floor(t)),
-    asValueChanges: t => l.W6(Math.floor(t)),
+    asValueChanges: t => r.W6(Math.floor(t)),
     markers: o,
     onMarkerRender: t => "".concat(Math.floor(t))
   })

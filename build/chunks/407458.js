@@ -12,7 +12,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(t) {
-  return (0, r.qs)("".concat(s.n.SOUNDS_LIST_ITEM_PREFIX).concat(t.sound), {
+  return (0, l.qs)("".concat(s.n.SOUNDS_LIST_ITEM_PREFIX).concat(t.sound), {
     useTitle: t.useLabel,
     useSubtitle: () => {
       let {
@@ -25,18 +25,18 @@ function c(t) {
     useValue: () => {
       var e;
       let n = (0, i.e7)([u.Z], () => u.Z.isSoundDisabled(t.sound)),
-        l = null == (e = t.useDisabled) ? true : e.call(t);
-      return !n && !l
+        r = null == (e = t.useDisabled) ? true : e.call(t);
+      return !n && !r
     },
     setValue: e => {
       let n = u.Z.getDisabledSounds().filter(e => e !== t.sound);
-      e || n.push(t.sound), l.default.setDisabledSounds(n)
+      e || n.push(t.sound), r.default.setDisabledSounds(n)
     },
     useDisabled: () => {
       var e;
       let n = null == (e = t.useDisabled) ? true : e.call(t),
-        l = (0, i.e7)([u.Z], () => u.Z.getDisableAllSounds());
-      return n || l
+        r = (0, i.e7)([u.Z], () => u.Z.getDisableAllSounds());
+      return n || r
     },
     useDisabledMessage: t.useDisabledMessage
   })

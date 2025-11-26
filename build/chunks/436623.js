@@ -24,7 +24,7 @@ let o = (0, Chunk509613.UO)(Chunk313789.n.SOUNDMOJI_VOLUME_SETTING, {
     })
   },
   setValue: function(t) {
-    let e = (0, r.A)(t);
+    let e = (0, l.A)(t);
     u.AY.updateSetting(e)
   },
   onValueRender: function(t) {

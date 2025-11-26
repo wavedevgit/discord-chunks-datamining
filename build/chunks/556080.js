@@ -31,8 +31,8 @@ let S = (0, Chunk509613.J9)(Chunk313789.n.VOICE_INPUT_PROFILE_SETTING, {
       })
     },
     setValue: function(t) {
-      let e = [r.Z.USER_SETTINGS_VOICE_AND_VIDEO];
-      l.Z.setActiveInputProfile(t, {
+      let e = [l.Z.USER_SETTINGS_VOICE_AND_VIDEO];
+      r.Z.setActiveInputProfile(t, {
         analyticsLocations: e
       })
     },
