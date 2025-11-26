@@ -306,7 +306,7 @@ function w() {
         termsOfServiceUrl: () => (0, Chunk49012.q)({
           href: Y
         }),
-        helpCenterUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.GAME_SERVER_HOSTING)
+        helpCenterUrl: Chunk63063.Z.getEnglishArticleURL(Chunk981631.BhN.GAME_SERVER_HOSTING)
       })
     }), null != M && (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/medium",

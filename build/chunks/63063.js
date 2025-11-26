@@ -24,6 +24,7 @@ function f() {
 }
 let _ = {
   getArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e)),
+  getEnglishArticleURL: e => d("/hc/en-us/articles/".concat(e)),
   getDevArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e), l),
   getCreatorSupportArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e), c),
   getTwitterURL: () => (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
