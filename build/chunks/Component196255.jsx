@@ -1,19 +1,19 @@
 /** Chunk was on 22173 **/
-/** chunk id: 196255, original params: e,t,n (module,exports,require) **/
+/** chunk id: 196255, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk942951 = require("./942951.jsx"),
   Chunk456269 = require("./456269.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk423046 = require("./423046.js");
 let d = e => {
-  var t, n;
+  var n, t;
   let {
     message: l,
     channel: d,
@@ -22,7 +22,7 @@ let d = e => {
   } = e, {
     user: g,
     author: f
-  } = (0, o.AJ)(d), x = null != (n = null != (t = null == f ? true : f.nick) ? t : null == g ? true : g.username) ? n : "", j = (0, i.l)({
+  } = (0, o.AJ)(d), x = null != (t = null != (n = null == f ? true : f.nick) ? n : null == g ? true : g.username) ? t : "", j = (0, i.l)({
     user: null == l ? true : l.author,
     channelId: d.id,
     guildId: d.guild_id,
@@ -32,9 +32,9 @@ let d = e => {
       name: x
     })
   })(null != f ? f : true)(x, d.id);
-  return (0, a.jsxs)(r.Text, {
+  return (0, s.jsxs)(r.Text, {
     tag: "span",
-    className: s()(u.author, {
+    className: a()(u.author, {
       [u.hasUnreads]: h
     }),
     variant: "text-sm/semibold",
