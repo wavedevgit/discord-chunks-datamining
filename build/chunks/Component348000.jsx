@@ -211,9 +211,10 @@ let h = {
         caretAlign: h,
         customOffset: m,
         delay: g,
-        spacing: E
-      } = e, b = _(e, ["title", "body", "showAsset", "assetSize", "position", "align", "caretAlign", "customOffset", "delay", "spacing"]);
-      let y = i.useMemo(() => {
+        spacing: E,
+        forceOpen: b
+      } = e, y = _(e, ["title", "body", "showAsset", "assetSize", "position", "align", "caretAlign", "customOffset", "delay", "spacing", "forceOpen"]);
+      let O = i.useMemo(() => {
           if ("center" !== h && null != h) return "custom" === h ? {
             align: h,
             customOffset: m
@@ -221,7 +222,7 @@ let h = {
             align: h
           }
         }, [h, m]),
-        O = i.useMemo(() => s ? {
+        v = i.useMemo(() => s ? {
           type: "image",
           src: l.Z,
           aspectRatio: "1/1"
@@ -233,10 +234,11 @@ let h = {
         align: p,
         delay: g,
         spacing: E,
-        caretConfig: y,
-        asset: O,
-        assetSize: c
-      }, b), {
+        caretConfig: O,
+        asset: v,
+        assetSize: c,
+        forceOpen: b
+      }, y), {
         children: (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Hover me (rich)"
@@ -254,15 +256,10 @@ let h = {
         type: "text",
         defaultValue: "Body copy goes in this section."
       },
-      showAsset: {
-        label: "Show Asset",
-        type: "boolean",
-        defaultValue: true
-      },
       assetSize: {
         label: "Asset Size",
         type: "select",
-        defaultValue: 48,
+        defaultValue: 16,
         options: [{
           label: "16px",
           value: 16
@@ -351,6 +348,16 @@ let h = {
         label: "Spacing (px)",
         type: "number",
         defaultValue: 11
+      },
+      forceOpen: {
+        label: "Force Open",
+        type: "boolean",
+        defaultValue: false
+      },
+      showAsset: {
+        label: "Show Asset",
+        type: "boolean",
+        defaultValue: true
       }
     }
   }]
