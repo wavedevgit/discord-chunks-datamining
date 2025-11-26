@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 32832, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => g
 }), require("./54381.js"), require("./473749.js");
 var Chunk442837 = require("./442837.js");
 require("./481060.js");
@@ -36,7 +36,7 @@ let E = {
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
     setValue: t => r.default.toggleDisableAllSounds(t)
   }),
-  O = (0, Chunk509613.Uc)(Chunk313789.n.NOTIFICATION_SOUNDS_FIELD_SET, {
+  g = (0, Chunk509613.Uc)(Chunk313789.n.NOTIFICATION_SOUNDS_FIELD_SET, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.ONU22R),
     variant: "separators",
     ContextProvider: Chunk299426.u,

@@ -20,7 +20,7 @@ let I = (0, Chunk509613.x1)(Chunk313789.n.CLIPS_PANE, {
     render: () => (0, Chunk54381.jsx)(Chunk574755.Z, {}),
     usePredicate: () => !(0, Chunk526665.BK)("LegacyClipsPane")
   }),
-  O = (0, Chunk509613.x1)(Chunk313789.n.CLIPS_PANE, {
+  g = (0, Chunk509613.x1)(Chunk313789.n.CLIPS_PANE, {
     buildLayout: () => [Chunk183353.Z, Chunk698151.Z],
     usePredicate: () => {
       let t = (0, Chunk526665.BK)("ClipsPanel"),
@@ -28,14 +28,14 @@ let I = (0, Chunk509613.x1)(Chunk313789.n.CLIPS_PANE, {
       return module && exports
     }
   }),
-  g = (0, Chunk509613.wf)(Chunk313789.n.CLIPS_PANEL, {
+  O = (0, Chunk509613.wf)(Chunk313789.n.CLIPS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.z2jK6X),
     useBadge: () => (0, Chunk54381.jsx)(Chunk703288.Z, {}),
-    buildLayout: () => (0, Chunk526665.Ml)("ClipsPanel") ? [O] : [I]
+    buildLayout: () => (0, Chunk526665.Ml)("ClipsPanel") ? [g] : [I]
   }),
   _ = (0, Chunk509613.m7)(Chunk313789.n.CLIPS_SIDEBAR_ITEM, {
     icon: Chunk657707.AlX,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.z2jK6X),
     getLegacySearchKey: () => (0, Chunk526665.Ml)("ClipsPanel") ? true : Chunk726985.s6.CLIPS,
-    buildLayout: () => [g]
+    buildLayout: () => [O]
   })

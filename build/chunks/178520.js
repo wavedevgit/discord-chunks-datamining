@@ -22,20 +22,20 @@ function s(t, e, n) {
           if (t.type === u.Jq.SECTION && t.hoisted) returntrue;
           let T = "useTitle" in t ? null == (a = t.useTitle) ? true : a.call(t, false) : true,
             I = "useNavigationTitle" in t ? null == (o = t.useNavigationTitle) ? true : o.call(t) : true,
-            O = "useSearchTerms" in t ? null == (c = t.useSearchTerms) ? true : c.call(t) : true;
-          if (n || null == T && null == I && null == O) returnfalse;
+            g = "useSearchTerms" in t ? null == (c = t.useSearchTerms) ? true : c.call(t) : true;
+          if (n || null == T && null == I && null == g) returnfalse;
           if ("" === e) returntrue;
-          let g = e.toLowerCase();
-          for (let t of null != O ? O : [])
-            if (r()(g, t.toLowerCase())) returntrue;
+          let O = e.toLowerCase();
+          for (let t of null != g ? g : [])
+            if (r()(O, t.toLowerCase())) returntrue;
           let _ = false;
           if (null != T) {
             let t = null == (d = (0, l.qgQ)(T)) ? true : d.toLowerCase();
-            null != t && (_ = r()(g, t))
+            null != t && (_ = r()(O, t))
           }
           if (null != I && !_) {
             let t = null == (E = (0, l.qgQ)(I)) ? true : E.toLowerCase();
-            null != t && (_ = r()(g, t))
+            null != t && (_ = r()(O, t))
           }
           return _
         }(t, e, d, n) || c,

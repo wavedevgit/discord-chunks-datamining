@@ -1,8 +1,7 @@
-/** Chunk was on 70363 **/
+/** Chunk was on 88569 **/
 /** chunk id: 484944, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  q: () => d
+  q: () => c
 });
 var Chunk24156 = require("./24156.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,46 +10,46 @@ var Chunk24156 = require("./24156.js"),
   Chunk159447 = require("./159447.js"),
   Chunk112683 = require("./112683.js");
 
-function d(e, t, n) {
+function c(e, t, n) {
   let {
-    isDisabled: d
-  } = e, f = (0, i.Me)(), l = (0, i.Me)(), c = (0, s.Av)(), p = (0, r.useRef)(null), x = (0, r.useCallback)(() => {
+    isDisabled: c
+  } = e, u = (0, i.Me)(), d = (0, i.Me)(), f = (0, s.Av)(), p = (0, l.useRef)(null), b = (0, l.useCallback)(() => {
     p.current = requestAnimationFrame(() => {
       n.current && n.current.setAttribute("hidden", "until-found")
-    }), (0, u.flushSync)(() => {
+    }), (0, r.flushSync)(() => {
       t.toggle()
     })
   }, [n, t]);
-  (0, o.z)(n, "beforematch", x);
-  let h = (0, r.useRef)(null);
+  (0, o.z)(n, "beforematch", b);
+  let y = (0, l.useRef)(null);
   return (0, a.b)(() => {
-    if (p.current && cancelAnimationFrame(p.current), n.current && !d && !c) {
+    if (p.current && cancelAnimationFrame(p.current), n.current && !c && !f) {
       let e = n.current;
-      null == h.current || "function" != typeof e.getAnimations ? t.isExpanded ? (e.removeAttribute("hidden"), e.style.setProperty("--disclosure-panel-width", "auto"), e.style.setProperty("--disclosure-panel-height", "auto")) : (e.setAttribute("hidden", "until-found"), e.style.setProperty("--disclosure-panel-width", "0px"), e.style.setProperty("--disclosure-panel-height", "0px")) : t.isExpanded !== h.current && (t.isExpanded ? (e.removeAttribute("hidden"), e.style.setProperty("--disclosure-panel-width", e.scrollWidth + "px"), e.style.setProperty("--disclosure-panel-height", e.scrollHeight + "px"), Promise.all(e.getAnimations().map(e => e.finished)).then(() => {
+      null == y.current || "function" != typeof e.getAnimations ? t.isExpanded ? (e.removeAttribute("hidden"), e.style.setProperty("--disclosure-panel-width", "auto"), e.style.setProperty("--disclosure-panel-height", "auto")) : (e.setAttribute("hidden", "until-found"), e.style.setProperty("--disclosure-panel-width", "0px"), e.style.setProperty("--disclosure-panel-height", "0px")) : t.isExpanded !== y.current && (t.isExpanded ? (e.removeAttribute("hidden"), e.style.setProperty("--disclosure-panel-width", e.scrollWidth + "px"), e.style.setProperty("--disclosure-panel-height", e.scrollHeight + "px"), Promise.all(e.getAnimations().map(e => e.finished)).then(() => {
         e.style.setProperty("--disclosure-panel-width", "auto"), e.style.setProperty("--disclosure-panel-height", "auto")
-      }).catch(() => {})) : (e.style.setProperty("--disclosure-panel-width", e.scrollWidth + "px"), e.style.setProperty("--disclosure-panel-height", e.scrollHeight + "px"), window.getComputedStyle(e).height, e.style.setProperty("--disclosure-panel-width", "0px"), e.style.setProperty("--disclosure-panel-height", "0px"), Promise.all(e.getAnimations().map(e => e.finished)).then(() => e.setAttribute("hidden", "until-found")).catch(() => {}))), h.current = t.isExpanded
+      }).catch(() => {})) : (e.style.setProperty("--disclosure-panel-width", e.scrollWidth + "px"), e.style.setProperty("--disclosure-panel-height", e.scrollHeight + "px"), window.getComputedStyle(e).height, e.style.setProperty("--disclosure-panel-width", "0px"), e.style.setProperty("--disclosure-panel-height", "0px"), Promise.all(e.getAnimations().map(e => e.finished)).then(() => e.setAttribute("hidden", "until-found")).catch(() => {}))), y.current = t.isExpanded
     }
-  }, [d, n, t.isExpanded, c]), (0, r.useEffect)(() => () => {
+  }, [c, n, t.isExpanded, f]), (0, l.useEffect)(() => () => {
     p.current && cancelAnimationFrame(p.current)
   }, []), {
     buttonProps: {
-      id: f,
+      id: u,
       "aria-expanded": t.isExpanded,
-      "aria-controls": l,
+      "aria-controls": d,
       onPress: e => {
-        d || "keyboard" === e.pointerType || t.toggle()
+        c || "keyboard" === e.pointerType || t.toggle()
       },
-      isDisabled: d,
+      isDisabled: c,
       onPressStart(e) {
-        "keyboard" !== e.pointerType || d || t.toggle()
+        "keyboard" !== e.pointerType || c || t.toggle()
       }
     },
     panelProps: {
-      id: l,
+      id: d,
       role: "group",
-      "aria-labelledby": f,
+      "aria-labelledby": u,
       "aria-hidden": !t.isExpanded,
-      hidden: c || d ? d || !t.isExpanded : true
+      hidden: f || c ? c || !t.isExpanded : true
     }
   }
 }

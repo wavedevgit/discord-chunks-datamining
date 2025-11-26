@@ -18,14 +18,14 @@ var Chunk657707 = require("./657707.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk163646 = require("./163646.js");
-let g = (0, Chunk509613.x1)(Chunk313789.n.PRIVATE_BROWSING_PANE, {
+let O = (0, Chunk509613.x1)(Chunk313789.n.PRIVATE_BROWSING_PANE, {
     buildLayout: () => [],
     render: () => (0, Chunk54381.jsx)(Chunk55467.R, {})
   }),
   _ = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk163646.default.bU5ANm),
     useBadge: () => (0, Chunk54381.jsx)(Chunk688465.Z, {}),
-    buildLayout: () => [g]
+    buildLayout: () => [O]
   }),
   N = (0, Chunk509613.m7)(Chunk313789.n.PRIVATE_BROWSING_SIDEBAR_ITEM, {
     icon: Chunk657707.enf,

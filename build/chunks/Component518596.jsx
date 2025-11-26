@@ -94,7 +94,7 @@ async function O(e) {
   }) : await (0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("9452"), n.e("46984")]).then(n.bind(n, 245286));
+    } = await Promise.all([n.e("9452"), n.e("88569")]).then(n.bind(n, 245286));
     return n => (0, r.jsx)(t, g(h({}, n), {
       target: e
     }))

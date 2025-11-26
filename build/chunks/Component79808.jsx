@@ -1,4 +1,4 @@
-/** Chunk was on 46984 **/
+/** Chunk was on 88569 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -79,7 +79,7 @@ function y(e) {
       complete: k
     }),
     {
-      navigateWithValidation: I
+      navigateWithValidation: D
     } = (0, c.Cu)();
   l.useEffect(() => {
     if (null == _) return;
@@ -97,7 +97,7 @@ function y(e) {
     };
     if (e.targetPanelKey !== P) {
       let n = e.targetPanelKey;
-      I(() => {
+      D(() => {
         d.Z.setState({
           targetKey: true,
           currentPanelKey: n,
@@ -111,16 +111,16 @@ function y(e) {
     })), d.Z.setState({
       targetKey: true
     })
-  }, [P, _, k, g, I, O]);
-  let D = l.useMemo(() => ({
+  }, [P, _, k, g, D, O]);
+  let I = l.useMemo(() => ({
       navTransition: Z,
       directory: g,
       fallbackDirectory: E
     }), [Z, g, E]),
-    A = () => I(m),
+    A = () => D(m),
     R = null != P ? g.get(P) : true;
   return (0, r.jsx)(u.j.Provider, {
-    value: D,
+    value: I,
     children: (0, r.jsxs)("div", {
       className: f.container,
       children: [(0, r.jsx)(s.P, {

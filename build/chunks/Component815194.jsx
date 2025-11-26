@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 815194, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => O
 });
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk53179 = require("./53179.js");
 
-function O() {
+function g() {
   let t = (0, Chunk442837.e7)([Chunk131951.Z], () => {
       let {
         shortcut: t
@@ -44,8 +44,8 @@ function O() {
     })
   })
 }
-let g = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
+let O = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
   usePredicate: Chunk595373.J,
-  render: () => (0, Chunk54381.jsx)(O, {}),
+  render: () => (0, Chunk54381.jsx)(g, {}),
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)]
 })

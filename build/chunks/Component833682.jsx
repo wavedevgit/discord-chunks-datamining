@@ -46,7 +46,7 @@ function f() {
       isNoiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported()
     })),
     S = require ? Chunk803567.Q4.STANDARD : Chunk803567.Q4.NONE,
-    g = exports ? Chunk803567.Q4.KRISP : Chunk313789,
+    O = exports ? Chunk803567.Q4.KRISP : Chunk313789,
     _ = Chunk473749.useMemo(() => {
       let t = [];
       return Chunk210887 && module.push({

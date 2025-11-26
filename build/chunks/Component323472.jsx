@@ -60,12 +60,12 @@ function T(t, e) {
   let {
     directory: T,
     fallbackDirectory: I
-  } = (0, s.t)(), O = null != (n = T.get(t)) ? n : I.get(t);
-  u()(null != O && (O.type === a.Jq.ACCORDION || S(O)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
-  let g = S(O) && null != (i = O.collapseAfter) ? i : 0,
-    _ = O.layout;
+  } = (0, s.t)(), g = null != (n = T.get(t)) ? n : I.get(t);
+  u()(null != g && (g.type === a.Jq.ACCORDION || S(g)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
+  let O = S(g) && null != (i = g.collapseAfter) ? i : 0,
+    _ = g.layout;
   return r.useMemo(() => {
-    let t = g,
+    let t = O,
       e = [];
     for (let n of _)
       if ("useTitle" in n && null != n.useTitle) {
@@ -150,5 +150,5 @@ function T(t, e) {
         index: 2
       })
     })
-  }, [l, g, _, d])
+  }, [l, O, _, d])
 }
