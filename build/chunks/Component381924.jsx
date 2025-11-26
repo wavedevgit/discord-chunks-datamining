@@ -1,7 +1,7 @@
 /** Chunk was on 83331 **/
-/** chunk id: 381924, original params: e,t,n (module,exports,require) **/
+/** chunk id: 381924, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,16 +15,16 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e, t) {
-  let n = (0, r.e7)([s.Z], () => s.Z.can(d.Plq.CONNECT, e), [e]),
-    f = (0, r.e7)([u.Z], () => u.Z.getVoiceChannelId()),
-    b = (0, c.tT)(t),
-    g = f === e.id;
-  return e.isGuildVocal() && n && null != b && !g ? (0, i.jsx)(l.sN, {
+function h(n, t) {
+  let e = (0, l.e7)([o.Z], () => o.Z.can(u.Plq.CONNECT, n), [n]),
+    h = (0, l.e7)([d.Z], () => d.Z.getVoiceChannelId()),
+    g = (0, s.tT)(t),
+    f = h === n.id;
+  return n.isGuildVocal() && e && null != g && !f ? (0, i.jsx)(r.sN, {
     id: "join-muted-custom-join-sound",
     label: Z.intl.string(Z.t.saLMWc),
     action: () => {
-      (0, o.Db)(e.id), a.default.selectVoiceChannel(e.id)
+      (0, c.Db)(n.id), a.default.selectVoiceChannel(n.id)
     }
   }) : null
 }

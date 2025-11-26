@@ -36,6 +36,7 @@ function P(e, t, n, r, o) {
   let s = i.useContext(_.Z),
     l = i.useCallback(() => ({
       i18n: {
+        CANCEL: R.intl.string(R.t["ETE/oC"]),
         SPINNER_LOADING_LABEL: R.intl.string(R.t.ZTNur7),
         BUTTON_LOADING_STARTED_LABEL: R.intl.string(R.t.pfChQr),
         BUTTON_LOADING_FINISHED_LABEL: R.intl.string(R.t.SVParY),

@@ -12,6 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk227399 = require("./227399.js");
 let o = {
     i18n: {
+      CANCEL: "Cancel",
       SPINNER_LOADING_LABEL: "Loading",
       BUTTON_LOADING_STARTED_LABEL: "Loading",
       BUTTON_LOADING_FINISHED_LABEL: "Loading",

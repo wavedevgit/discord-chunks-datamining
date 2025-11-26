@@ -12,20 +12,21 @@ function o(e) {
   let {
     applicationId: t,
     size: n,
-    names: o = a
-  } = e, [s, l] = r.useState(null), [c, u] = r.useState(true), d = (0, i.xF)(t, s, n), f = c ? "loading" : null != d ? "fetched" : "not-found", _ = r.useRef(o);
+    names: o = a,
+    format: s = "png"
+  } = e, [l, c] = r.useState(null), [u, d] = r.useState(true), f = (0, i.xF)(t, l, n, s), _ = u ? "loading" : null != f ? "fetched" : "not-found", p = r.useRef(o);
   return r.useEffect(() => {
-    _.current = o
+    p.current = o
   }), r.useEffect(() => {
     let {
       current: e
-    } = _;
+    } = p;
     null != t && (0, i.Vh)(t).then(t => {
-      for (let [n, r] of(u(false), Object.entries(t)))
-        if (null != r && "" !== r.id && e.includes(r.name)) return void l(r.id)
+      for (let [n, r] of(d(false), Object.entries(t)))
+        if (null != r && "" !== r.id && e.includes(r.name)) return void c(r.id)
     })
   }, [t]), {
-    url: d,
-    state: f
+    url: f,
+    state: _
   }
 }

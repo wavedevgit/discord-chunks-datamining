@@ -1,7 +1,7 @@
 /** Chunk was on 83331 **/
-/** chunk id: 601274, original params: e,t,n (module,exports,require) **/
+/** chunk id: 601274, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,12 +13,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e, t) {
-  return (0, r.e7)([c.Z], () => c.Z.can(s.Plq.CONNECT, e), [e]) && e.isGuildVocal() ? (0, i.jsx)(l.sNh, {
+function u(n, t) {
+  return (0, l.e7)([s.Z], () => s.Z.can(o.Plq.CONNECT, n), [n]) && n.isGuildVocal() ? (0, i.jsx)(r.sNh, {
     id: "open-chat",
-    label: u.intl.string(u.t.ZXxLQg),
+    label: d.intl.string(d.t.ZXxLQg),
     action: () => {
-      a.Z.updateChatOpen(e.id, true), (0, o.XU)(t.id, e.id)
+      a.Z.updateChatOpen(n.id, true), (0, c.XU)(t.id, n.id)
     }
   }) : null
 }

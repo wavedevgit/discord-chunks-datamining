@@ -405,7 +405,8 @@ function ei(e) {
   } = e, s = (0, b.Z)({
     applicationId: t.id,
     size: 600,
-    names: ["embedded_cover"]
+    names: ["embedded_cover"],
+    format: "webp"
   }), l = i.useMemo(() => {
     let e = (0, w.yJ)(t);
     return null != e && null != e.activity_preview_video_asset_id ? (0, g.Z)(t.id, e.activity_preview_video_asset_id) : null

@@ -1,1 +1,0 @@
-{"id":"691698","type":"experiment","data":{"kind":"guild","id":"2025-08_boost_progress_bar_cta","label":"Boost Progress Bar CTA","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"enabled","config":{"enabled":true}}]},"fromModule":{"id":"1272"}}

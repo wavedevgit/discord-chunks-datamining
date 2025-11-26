@@ -84,14 +84,15 @@ function I(e, t) {
 }
 
 function T(e, t, n) {
+  let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "png";
   if (null != t && t.includes(":")) {
     let [e, r] = t.split(":");
     return e === u.ABu.TWITCH ? null == n || "number" == typeof n ? void new l.Z("ApplicationAssetUtils").warn("getAssetImage: size must === [number, number] for Twitch") : E[u.ABu.TWITCH].deserialize(r, n) : Object.prototype.hasOwnProperty.call(E, e) ? E[e].deserialize(r) : true
   }
   if (null == e || null == t) return;
-  let r = Array.isArray(n) ? Math.max(...n) : n,
-    i = "number" == typeof r ? "?size=".concat((0, c.oO)(r)) : "";
-  return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/app-assets/").concat(e, "/").concat(t, ".png").concat(i) : "".concat((0, a.K0)(), "/applications/").concat(e, "/app-assets/").concat(t, ".png").concat(i)
+  let i = Array.isArray(n) ? Math.max(...n) : n,
+    o = "number" == typeof i ? "?size=".concat((0, c.oO)(i)) : "";
+  return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/app-assets/").concat(e, "/").concat(t, ".").concat(r).concat(o) : "".concat((0, a.K0)(), "/applications/").concat(e, "/app-assets/").concat(t, ".").concat(r).concat(o)
 }
 async function S(e) {
   let t = await v(e);

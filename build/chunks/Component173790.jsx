@@ -86,7 +86,8 @@ function A(e) {
   } = e, o = (0, c.Z)({
     applicationId: n.id,
     size: I,
-    names: ["embedded_cover"]
+    names: ["embedded_cover"],
+    format: "webp"
   }), s = (0, p.yJ)(n), u = null != s && null != s.activity_preview_video_asset_id ? (0, l.Z)(n.id, s.activity_preview_video_asset_id) : null;
   return (0, r.jsx)(E.Z, {
     context: t,

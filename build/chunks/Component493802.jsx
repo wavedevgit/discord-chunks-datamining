@@ -1,7 +1,7 @@
 /** Chunk was on 83331 **/
-/** chunk id: 493802, original params: e,t,n (module,exports,require) **/
+/** chunk id: 493802, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,12 +11,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk58468 = require("./58468.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
-  let t = (0, r.e7)([o.Z], () => o.Z.isCollapsed(e.id), [e.id]);
-  return __OVERLAY__ ? null : (0, i.jsx)(l.S89, {
+function o(n) {
+  let t = (0, l.e7)([c.Z], () => c.Z.isCollapsed(n.id), [n.id]);
+  return __OVERLAY__ ? null : (0, i.jsx)(r.S89, {
     id: "hide-voice-names",
-    label: c.intl.string(c.t.LxzNiu),
-    action: () => a.Z.update(e.id),
+    label: s.intl.string(s.t.LxzNiu),
+    action: () => a.Z.update(n.id),
     checked: t
   })
 }
