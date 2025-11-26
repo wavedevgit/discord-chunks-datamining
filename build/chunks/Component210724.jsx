@@ -75,7 +75,7 @@ function L(e) {
   }), M = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), Z = (0, c.e7)([f.Z], () => f.Z.hasLayers()), W = s.useRef(null), H = s.useMemo(() => (0, v.q8)(o), [o]), U = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, F = (0, u.Z)(U), z = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
     hasError: G,
     isLoading: K
-  } = (0, O.kC)(), X = s.useContext(N.T) || _ && Q && !K && !L, Y = s.useRef(X), J = s.useRef(false), $ = s.useRef(false), [ee, et] = s.useState(false), [en, er] = s.useState(false), [es, eo] = s.useState(false), [ea, ei] = s.useState(true), [el, ec] = s.useState(true), ed = s.useRef(null), eu = s.useCallback(e => {
+  } = (0, O.kC)(), Y = s.useContext(N.T) || _ && Q && !K && !L, X = s.useRef(Y), J = s.useRef(false), $ = s.useRef(false), [ee, et] = s.useState(false), [en, er] = s.useState(false), [es, eo] = s.useState(false), [ea, ei] = s.useState(true), [el, ec] = s.useState(true), ed = s.useRef(null), eu = s.useCallback(e => {
     z || (ei(false), eo(e))
   }, [z]), ep = s.useCallback(() => {
     eu(true)
@@ -135,8 +135,8 @@ function L(e) {
   }, [ep, U, F]), s.useLayoutEffect(() => {
     z || !U || F || $.current || eu(false)
   }, [U, z, F, eu]), s.useLayoutEffect(() => {
-    X !== Y.current && ec(false), Y.current = X
-  }, [X]);
+    Y !== X.current && ec(false), X.current = Y
+  }, [Y]);
   let ey = U ? A.XZ : A.R4,
     [{
       expansionSpring: eE
@@ -165,7 +165,7 @@ function L(e) {
       visibilitySpring: 0
     },
     to: {
-      visibilitySpring: +!!X
+      visibilitySpring: +!!Y
     },
     config: {
       tension: 250,
@@ -215,7 +215,7 @@ function L(e) {
       })
     }
   }, [_, o.id]), s.useEffect(() => {
-    if (!X && el && !K) {
+    if (!Y && el && !K) {
       var e;
       (0, h.dA)({
         questId: o.id,
@@ -229,9 +229,9 @@ function L(e) {
         sourceQuestContent: j.jn.QUEST_BAR_V2
       })
     }
-  }, [X, el, K, o.id, V]), s.useEffect(() => {
-    (!Q || L) && x.Z.clearTracking(), X && el && !K && !G && _ && x.Z.stopTracking(o.id)
-  }, [Q, L, X, el, K, G, _, o.id]);
+  }, [Y, el, K, o.id, V]), s.useEffect(() => {
+    (!Q || L) && x.Z.clearTracking(), Y && el && !K && !G && _ && x.Z.stopTracking(o.id)
+  }, [Q, L, Y, el, K, G, _, o.id]);
   let {
     enabled: eT,
     status: ew
@@ -239,29 +239,29 @@ function L(e) {
     location: A.dr.QUESTS_BAR,
     questConfig: o.config
   }), eP = (null == ew ? true : ew.progressBlur) && !U ? 88 : 70;
-  if (!_ || !X && el && !K || G) return G ? m.log("Not rendered due to asset error") : _ || m.log("Not rendered due to ineligibility"), null;
+  if (!_ || !Y && el && !K || G) return G ? m.log("Not rendered due to asset error") : _ || m.log("Not rendered due to ineligibility"), null;
   let eN = eP + 78 * !!z;
   return (0, r.jsx)(S.A, {
     questOrQuests: o,
     questContent: j.jn.QUEST_BAR_V2,
-    overrideVisibility: !Z && X,
+    overrideVisibility: !Z && Y,
     sourceQuestContent: j.jn.QUEST_BAR_V2,
     children: (e, t) => (W.current = t.current, (0, r.jsxs)("div", {
       className: I.mask,
-      children: [X && (0, r.jsxs)(r.Fragment, {
+      children: [Y && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(D, {
           questId: o.id,
           isExpanded: es
         }), (0, r.jsx)(q, {})]
       }), (0, r.jsx)(i.animated.div, {
-        "aria-hidden": !X,
+        "aria-hidden": !Y,
         onMouseLeave: eC,
         onMouseEnter: ev,
         onFocus: eb,
         onBlur: ej,
         className: a()(I.wrapper, {
-          [I.wrapperInvisible]: !X,
-          [I.wrapperVisible]: X && el
+          [I.wrapperInvisible]: !Y,
+          [I.wrapperVisible]: Y && el
         }),
         style: {
           color: eT ? true : o.config.colors.secondary,

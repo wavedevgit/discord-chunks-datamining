@@ -252,7 +252,7 @@ function U(e) {
     }), 0 === h || f ? null : (0, r.jsx)(v.B1, {
       label: (0, r.jsx)(k, {
         label: A.intl.formatToPlainString(A.t.ZSVged, {
-          planName: (0, g.PV)(n.id) ? (0, g.aq)(n.id) : n.name
+          planName: (0, g.PV)(n.id) ? (0, g.MF)(n.id) : n.name
         }),
         tooltipText: A.intl.string(A.t.JmwQJM)
       }),

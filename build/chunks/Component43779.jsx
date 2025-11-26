@@ -77,8 +77,8 @@ function O(e) {
     }), O)
   }), U = (null == (n = w.userStatus) ? true : n.completedAt) != null, F = (null == (o = w.userStatus) ? true : o.claimedAt) != null, z = (0, g.xN)(w.config), G = (0, g.LM)(w.config), {
     completedRatio: K,
-    completedRatioDisplay: X
-  } = (0, m.I)(w), Y = (0, m.Bd)(w, I, D), J = s.useMemo(() => F && z ? C.intl.format(C.t["8Op4c4"], {
+    completedRatioDisplay: Y
+  } = (0, m.I)(w), X = (0, m.Bd)(w, I, D), J = s.useMemo(() => F && z ? C.intl.format(C.t["8Op4c4"], {
     balanceHook: () => (0, r.jsxs)(S, {
       questId: w.id,
       children: [(0, r.jsx)(p.Z, {
@@ -105,13 +105,13 @@ function O(e) {
       children: L
     }, w.id)
   }), [q, F, L, w.id, G, z]), $ = s.useMemo(() => {
-    if (null != Y) return (0, r.jsx)(c.Text, {
+    if (null != X) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
       className: y.description,
-      children: Y
+      children: X
     })
-  }, [Y]), ee = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
+  }, [X]), ee = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
     className: y.container,
     ref: D,
@@ -140,7 +140,7 @@ function O(e) {
               quest: w,
               size: 76,
               percentComplete: K,
-              percentCompleteText: N && !(0, g.zi)(w) ? X : true,
+              percentCompleteText: N && !(0, g.zi)(w) ? Y : true,
               children: (0, r.jsx)("div", {
                 className: y.circularRewardTileWrapper,
                 children: (0, r.jsx)(h.Z, {

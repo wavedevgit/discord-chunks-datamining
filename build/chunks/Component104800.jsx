@@ -7,7 +7,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
-  Chunk754700 = require("./754700.js"),
   Chunk793030 = require("./793030.js"),
   Chunk228488 = require("./228488.js"),
   Chunk617136 = require("./617136.js"),
@@ -15,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
   Chunk184299 = require("./184299.js"),
-  Chunk720293 = require("./720293.js"),
+  Chunk475595 = require("./475595.js"),
   Chunk602667 = require("./602667.jsx"),
   Chunk215113 = require("./215113.jsx"),
   Chunk874010 = require("./874010.jsx"),
@@ -27,10 +26,10 @@ function C(e) {
   let {
     quest: t,
     sourceQuestContent: n
-  } = e, l = o.useMemo(() => (0, v.z0)(t, a.X.WATCH_VIDEO, v.n1.VIDEO, v.O.THUMBNAIL), [t]);
-  return null == l ? null : (0, r.jsx)(E.A, {
+  } = e, l = o.useMemo(() => (0, p.fh)(t, p.eC.VIDEO_PLAYER_THUMBNAIL, true, false), [t]);
+  return null == l ? null : (0, r.jsx)(v.A, {
     questOrQuests: t,
-    questContent: m.jn.VIDEO_MODAL_END_CARD,
+    questContent: d.jn.VIDEO_MODAL_END_CARD,
     sourceQuestContent: n,
     children: e => (0, r.jsx)("img", {
       ref: t => {
@@ -38,49 +37,49 @@ function C(e) {
       },
       src: l.url,
       alt: "Video thumbnail",
-      className: S.stillFrameImageCard
+      className: b.stillFrameImageCard
     })
   })
 }
 
-function y(e) {
+function S(e) {
   let {
     title: t,
     subtitle: n,
     icon: l,
-    onClick: a,
+    onClick: s,
     className: c
   } = e, [u, d] = o.useState(false), m = () => {
     d(true)
   }, f = () => {
     d(false)
   };
-  return (0, r.jsx)(s.P3F, {
-    className: i()(S.endScreenPanel, S.accentOnHover, c),
+  return (0, r.jsx)(a.P3F, {
+    className: i()(b.endScreenPanel, b.accentOnHover, c),
     onMouseEnter: m,
     onMouseLeave: f,
     onFocus: m,
     onBlur: f,
-    onClick: a,
+    onClick: s,
     children: (0, r.jsxs)("div", {
-      className: S.endScreenPanelInner,
+      className: b.endScreenPanelInner,
       children: [(0, r.jsxs)("div", {
-        className: S.endScreenPanelTextCont,
-        children: [(0, r.jsx)(s.X6q, {
+        className: b.endScreenPanelTextCont,
+        children: [(0, r.jsx)(a.X6q, {
           variant: "heading-md/semibold",
-          className: S.endScreenPanelTextTitle,
+          className: b.endScreenPanelTextTitle,
           children: t
-        }), (0, r.jsx)(s.X6q, {
+        }), (0, r.jsx)(a.X6q, {
           variant: "heading-sm/normal",
-          className: S.endScreenPanelTextSubtitle,
+          className: b.endScreenPanelTextSubtitle,
           children: n
         })]
-      }), (0, r.jsx)(O.Z, {
+      }), (0, r.jsx)(g.Z, {
         color: "#747783"
       }), (0, r.jsx)(l, {
         size: "md",
         color: u ? "#FFFFFF" : "#B5BAC1",
-        className: S.endScreenIcon
+        className: b.endScreenIcon
       })]
     })
   })
@@ -92,42 +91,42 @@ function _(e) {
     videoRef: n,
     onExitFullScreen: l,
     onTrackQuestVideoFullscreenChanged: i,
-    onTrackQuestContentClick: a
+    onTrackQuestContentClick: p
   } = e, {
     onClose: v,
-    sourceQuestContent: E,
-    quest: O
-  } = o.useContext(g.VideoQuestModalContext), _ = (0, p.ZP)(e => e.fullScreenEnabled), x = (0, p.ZP)(e => e.setFullScreenEnabled), j = (0, d.aM)(), D = (0, h.e)({
-    quest: O,
+    sourceQuestContent: g,
+    quest: _
+  } = o.useContext(E.VideoQuestModalContext), y = (0, f.ZP)(e => e.fullScreenEnabled), x = (0, f.ZP)(e => e.setFullScreenEnabled), j = (0, u.aM)(), P = (0, O.e)({
+    quest: _,
     onClose: v,
-    sourceQuestContent: E,
+    sourceQuestContent: g,
     impressionId: j
-  }), P = o.useCallback(e => {
-    if (_) {
+  }), D = o.useCallback(e => {
+    if (y) {
       var t;
-      let e = (0, c.fn)(null == (t = n.current) ? true : t.parentNode, n.current);
-      null != e && (e.removeEventListener(c.NO, l), (0, c.Pr)(e), x(false), i(false))
+      let e = (0, s.fn)(null == (t = n.current) ? true : t.parentNode, n.current);
+      null != e && (e.removeEventListener(s.NO, l), (0, s.Pr)(e), x(false), i(false))
     }
-    a(e, u.jZ.LEARN_MORE), D(e, u.jZ.OPEN_GAME_LINK)
-  }, [_, n, l, x, i, D, a]), {
-    title: T,
-    subtitle: R
+    p(e, c.jZ.LEARN_MORE), P(e, c.jZ.OPEN_GAME_LINK)
+  }, [y, n, l, x, i, P, p]), {
+    title: R,
+    subtitle: T
   } = {
-    title: (0, f.V_)(O),
-    subtitle: null != (t = O.config.ctaConfig.subtitle) ? t : b.intl.string(b.t.mxaHfx)
+    title: (0, m.V_)(_),
+    subtitle: null != (t = _.config.ctaConfig.subtitle) ? t : h.intl.string(h.t.mxaHfx)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(C, {
-      quest: O,
-      sourceQuestContent: E
+      quest: _,
+      sourceQuestContent: g
     }), (0, r.jsx)("div", {
-      className: S.videoContOverlay
-    }), (0, r.jsx)(y, {
-      title: T,
-      subtitle: R,
-      icon: s.d4D,
-      className: S.endScreenPanelRight,
-      onClick: () => P(m.jn.VIDEO_MODAL)
+      className: b.videoContOverlay
+    }), (0, r.jsx)(S, {
+      title: R,
+      subtitle: T,
+      icon: a.d4D,
+      className: b.endScreenPanelRight,
+      onClick: () => D(d.jn.VIDEO_MODAL)
     })]
   })
 }

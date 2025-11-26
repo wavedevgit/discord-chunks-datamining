@@ -48,7 +48,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
   Chunk184299 = require("./184299.js"),
-  Chunk720293 = require("./720293.js"),
+  Chunk475595 = require("./475595.js"),
   Chunk324805 = require("./324805.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
@@ -563,8 +563,9 @@ async function $(e, t) {
     rejectWithError: false
   })
 }
-async function ee(e, t) {
-  let n = (0, I.z0)(e, t, I.n1.VIDEO, I.O.TRANSCRIPT);
+async function ee(e) {
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    n = (0, I.fh)(e, I.eC.VIDEO_PLAYER_TRANSCRIPT, true, t);
   if (null == n) return void v.ZP.getState().setTranscriptAsset({
     questId: e.id,
     fetchStatus: v.iF.FAILURE

@@ -64,7 +64,7 @@ let p = () => {
       size: "md",
       transitionState: exports,
       title: "".concat(Chunk388032.intl.format(Chunk388032.t.LZunzZ, {
-        planPremiumType: Chunk74538.ZP.getDisplayPremiumType("".concat(g))
+        planPremiumType: Chunk74538.ZP.getTierDisplayNameByPlanId("".concat(g))
       })),
       subtitle: h(m, Chunk63063, p),
       actions: S,

@@ -2,110 +2,111 @@
 /** chunk id: 474936, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $7: () => j,
-  $8: () => ex,
-  $X: () => eb,
+  $7: () => U,
+  $8: () => eM,
+  $X: () => ey,
   $e: () => f,
-  $n: () => eQ,
-  A5: () => B,
-  AU: () => X,
-  Bo: () => e2,
+  $n: () => eJ,
+  A5: () => Z,
+  AU: () => Q,
+  Bo: () => e4,
   C: () => s,
-  C2: () => J,
+  C2: () => $,
   CL: () => _,
-  CR: () => eo,
-  Cj: () => eH,
-  Cn: () => z,
-  Cx: () => e9,
+  CR: () => es,
+  Cj: () => eW,
+  Cn: () => q,
+  Cx: () => te,
   EA: () => N,
-  ET: () => ee,
-  EZ: () => eV,
+  ET: () => et,
+  EZ: () => eH,
   F$: () => T,
   F_: () => c,
-  GP: () => R,
-  HO: () => ek,
+  GP: () => P,
+  HO: () => ej,
+  HS: () => R,
   IW: () => S,
-  Lw: () => eC,
-  M_: () => e3,
-  NV: () => W,
-  Nl: () => eh,
-  OT: () => el,
+  Lw: () => eN,
+  M_: () => e2,
+  NV: () => Y,
+  Nl: () => em,
+  OT: () => ec,
   PremiumTypes: () => l,
-  QF: () => ew,
-  QI: () => eX,
-  QP: () => eU,
-  Qh: () => e5,
-  RU: () => eu,
-  Rg: () => Y,
-  Rr: () => x,
-  Rt: () => er,
-  Se: () => e7,
+  QF: () => eL,
+  QI: () => eQ,
+  QP: () => eG,
+  Qh: () => e8,
+  RU: () => ed,
+  Rg: () => K,
+  Rr: () => M,
+  Rt: () => ei,
+  Se: () => e9,
   Si: () => p,
-  T7: () => eK,
-  TD: () => eW,
-  TL: () => Q,
-  Tp: () => ez,
-  UA: () => k,
+  T7: () => ez,
+  TD: () => eY,
+  TL: () => J,
+  Tp: () => eq,
+  UA: () => j,
   UD: () => O,
-  Ue: () => U,
-  Uq: () => eR,
-  VU: () => e4,
-  Wt: () => e0,
-  X2: () => e$,
-  XB: () => eO,
+  Ue: () => G,
+  Uq: () => eP,
+  VU: () => e5,
+  Wt: () => e1,
+  X2: () => e0,
+  XB: () => ev,
   Xh: () => b,
-  Y1: () => ej,
+  Y1: () => eU,
   YQ: () => m,
   Z1: () => v,
   Zh: () => u,
-  _k: () => eM,
-  a$: () => e6,
-  a1: () => eY,
-  a7: () => $,
+  _k: () => ek,
+  a$: () => e7,
+  a1: () => eK,
+  a7: () => ee,
   b6: () => d,
-  bg: () => eF,
-  cb: () => M,
-  cd: () => eT,
-  dB: () => ef,
+  bg: () => eV,
+  cb: () => k,
+  cd: () => eS,
+  dB: () => e_,
   dJ: () => y,
-  dO: () => et,
-  dT: () => ed,
-  ee: () => eg,
-  gW: () => em,
-  gh: () => Z,
-  h1: () => eG,
-  h8: () => es,
-  hX: () => eJ,
-  hs: () => ec,
-  i_: () => K,
-  ih: () => ep,
-  in: () => eS,
-  jy: () => eq,
-  jz: () => ea,
-  m8: () => F,
+  dO: () => en,
+  dT: () => ef,
+  ee: () => eE,
+  gW: () => eg,
+  gh: () => F,
+  h1: () => eB,
+  h8: () => el,
+  hX: () => e$,
+  hs: () => eu,
+  i_: () => z,
+  ih: () => eh,
+  in: () => eA,
+  jy: () => eX,
+  jz: () => eo,
+  m8: () => V,
   mn: () => A,
-  nC: () => ey,
-  nG: () => eI,
-  nH: () => eB,
+  nC: () => eO,
+  nG: () => eT,
+  nH: () => eZ,
   nS: () => h,
   o4: () => I,
-  pH: () => eL,
-  pj: () => P,
-  rB: () => e_,
+  pH: () => ex,
+  pj: () => D,
+  rB: () => ep,
   rV: () => C,
-  rX: () => V,
-  rt: () => e1,
-  tL: () => H,
-  u6: () => eE,
+  rX: () => H,
+  rt: () => e3,
+  tL: () => W,
+  u6: () => eb,
   uM: () => E,
-  vK: () => e8,
-  vL: () => eA,
-  w1: () => ev,
-  wh: () => q,
-  xT: () => en,
+  vK: () => e6,
+  vL: () => eC,
+  w1: () => eI,
+  wh: () => X,
+  xT: () => er,
   y7: () => g,
-  ys: () => eZ,
-  zp: () => G
+  ys: () => eF,
+  zp: () => B
 }), require("./388685.js");
 var Chunk314794 = require("./314794.js"),
   Chunk981631 = require("./981631.js"),
@@ -186,6 +187,11 @@ var C = function(e) {
     return e[e.DAY = 1] = "DAY", e[e.WEEK = 2] = "WEEK", e[e.MONTH = 3] = "MONTH", e[e.YEAR = 4] = "YEAR", e
   }({});
 let R = Object.freeze({
+    3: Chunk388032.t["t9uG/o"],
+    1: Chunk388032.t.FSOz78,
+    2: Chunk388032.t.lG6a5x
+  }),
+  P = Object.freeze({
     "628379151761408000": {
       id: "628379151761408000",
       name: "None Monthly",
@@ -330,58 +336,54 @@ let R = Object.freeze({
       intervalCount: 1
     }
   }),
-  P = new Set(["511651880837840896"]),
-  D = 16,
-  w = 8,
-  L = 5,
-  x = 30,
-  M = 2,
-  k = 3,
-  j = 28,
-  U = 30,
+  D = new Set(["511651880837840896"]),
+  w = 16,
+  L = 8,
+  x = 5,
+  M = 30,
+  k = 2,
+  j = 3,
+  U = 28,
   G = 30,
-  B = 7,
-  Z = 30,
-  F = "775514091874680832",
-  V = "845031178288889946",
-  H = 432e6,
-  W = 3456e5,
-  Y = 14,
-  K = "520373071933079552",
-  z = "902329034132684800",
-  q = "983601860436819968",
-  X = "983601860436819969",
-  Q = "984244797441048577",
-  J = "1004850445463584768",
-  $ = "1073698058383917056",
-  ee = "1070132870233980928",
-  et = "1267968635301789696",
-  en = "1267969164312576000",
-  er = "1268347360493174784",
-  ei = "1271484512081285191",
-  ea = "1161363847311785984",
-  eo = [K, z, q, X, Q, J, $, ee, et, en, er, ei, ea],
-  es = [et, en, ei],
-  el = [et, ei],
-  ec = "1150904354090532864",
-  eu = "1199128659810582528",
-  ed = "1204865493622587392",
-  ef = "1204867673024888832",
-  e_ = "1215346678383509504",
-  ep = "1215366184820539392",
-  eh = "1223319122125783040",
-  em = "1223380890109870080",
-  eg = [eh, em],
-  eE = "1414731366406422628",
-  eb = "1397626558063050855",
-  ey = "1397609029626232955",
-  eO = 8,
-  ev = 96,
-  eI = Object.freeze({
-    [K]: {
-      id: K,
-      skus: ["521847234246082599"]
-    },
+  B = 30,
+  Z = 7,
+  F = 30,
+  V = "775514091874680832",
+  H = "845031178288889946",
+  W = 432e6,
+  Y = 3456e5,
+  K = 14,
+  z = "520373071933079552",
+  q = "902329034132684800",
+  X = "983601860436819968",
+  Q = "983601860436819969",
+  J = "984244797441048577",
+  $ = "1004850445463584768",
+  ee = "1073698058383917056",
+  et = "1070132870233980928",
+  en = "1267968635301789696",
+  er = "1267969164312576000",
+  ei = "1268347360493174784",
+  ea = "1271484512081285191",
+  eo = "1161363847311785984",
+  es = [z, q, X, Q, J, $, ee, et, en, er, ei, ea, eo],
+  el = [en, er, ea],
+  ec = [en, ea],
+  eu = "1150904354090532864",
+  ed = "1199128659810582528",
+  ef = "1204865493622587392",
+  e_ = "1204867673024888832",
+  ep = "1215346678383509504",
+  eh = "1215366184820539392",
+  em = "1223319122125783040",
+  eg = "1223380890109870080",
+  eE = [em, eg],
+  eb = "1414731366406422628",
+  ey = "1397626558063050855",
+  eO = "1397609029626232955",
+  ev = 8,
+  eI = 96,
+  eT = Object.freeze({
     [z]: {
       id: z,
       skus: ["521847234246082599"]
@@ -402,60 +404,64 @@ let R = Object.freeze({
       id: J,
       skus: ["521847234246082599"]
     },
-    [ee]: {
-      id: ee,
-      skus: ["978380684370378762"]
-    },
     [$]: {
       id: $,
       skus: ["521847234246082599"]
     },
-    [er]: {
-      id: er,
+    [et]: {
+      id: et,
+      skus: ["978380684370378762"]
+    },
+    [ee]: {
+      id: ee,
       skus: ["521847234246082599"]
     },
-    [ea]: {
-      id: ea,
+    [ei]: {
+      id: ei,
+      skus: ["521847234246082599"]
+    },
+    [eo]: {
+      id: eo,
       skus: ["521847234246082599"]
     }
   });
-var eT = function(e) {
+var eS = function(e) {
     return e.ANIMATED_GUILD_BANNER_TOOLTIP = "animated_guild_banner_tooltip", e.EMOJI_PICKER_SEARCH = "emoji_picker_search", e.EMOJI_PICKER_EMOJI_CLICKED = "emoji_picker_emoji_clicked", e.EMOJI_PICKER_STICKER_CLICKED = "emoji_picker_sticker_clicked", e.EMOJI_PICKER_REACTION_EMOJI_CLICKED = "emoji_picker_reaction_emoji_clicked", e.EMOJI_PICKER_SUPER_REACTION_EMOJI_CLICKED = "emoji_picker_super_reaction_emoji_clicked", e.EMOJI_PICKER_STATUS_EMOJI_CLICKED = "emoji_picker_status_emoji_clicked", e.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED = "emoji_picker_top_server_emoji_clicked", e.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED = "emoji_picker_newly_added_emoji_clicked", e.EMOJI_AUTOSUGGEST_CLICKED = "emoji_autosuggest_clicked", e.EMOJI_AUTOCOMPLETE_INLINE = "emoji_autocomplete_inline", e.EMOJI_AUTOCOMPLETE_MODAL = "emoji_autocomplete_modal", e.EMOJI_IN_MESSAGE_HOVER = "emoji_in_message_hover", e.EMOJI_IN_REACTION_HOVER = "emoji_in_reaction_hover", e.EMOJI_IN_BURST_REACTION_HOVER = "emoji_in_burst_reaction_hover", e.EMOJI_IN_BURST_REACTION_HOVER_UPSELL = "emoji_in_burst_reaction_hover_upsell", e.EMOJI_PICKER_FLOATING_UPSELL = "emoji_picker_floating_upsell", e.STICKER_IN_MESSAGE_HOVER = "sticker_in_message_hover", e.EMPTY_STICKER_PICKER_UPSELL = "empty_sticker_picker_upsell", e.STREAM_QUALITY_INDICATOR = "stream_quality_indicator", e.GIFT_STREAM_QUALITY_INDICATOR = "gift_stream_quality_indicator", e.STREAM_QUALITY_UPSELL = "stream_quality_upsell", e.MESSAGE_LENGTH_UPSELL = "message_length_upsell", e.MESSAGE_LENGTH_IN_EDITOR_UPSELL = "message_length_in_editor_upsell", e.CUSTOM_PROFILE_UPSELL = "custom profiles upsell modal", e.CUSTOM_PROFILE_TRY_OUT_UPSELL = "try out custom profile in settings upsell", e.VIDEO_BACKGROUNDS_MODAL = "video backgrounds modal", e.VIDEO_BACKGROUNDS_INLINE = "video backgrounds inline", e.GUILD_CAP_INLINE_SERVER_LIST = "guild_cap_inline_server_list", e.GUILD_PREMIUM_UPSELL_MODAL = "premium guild premium upsell modal", e.GUILD_CAP_INLINE_INVITE_MODAL = "guild_cap_inline_invite_modal", e.GUILD_CAP_MODAL_UPSELL = "guild_cap_modal_upsell", e.PREMIUM_GUILD_IDENTITY_MODAL = "premium guild identity upsell alert", e.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON = "custom profiles settings banner upsell", e.STICKER_PICKER_UPSELL = "sticker_picker_upsell", e.ANIMATED_AVATAR_PREVIEW_GIF_MODAL = "animated avatar preview gif modal", e.ANIMATED_USER_AVATAR_MODAL = "animated user avatar upsell modal", e.UPLOAD_ERROR_UPSELL = "upload error upsell", e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE = "premium guild member profile upsell inline", e.CONCURRENT_ACTIVITIES = "Concurrent Activities", e.PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED = "premium_uncancel_winback_modal_viewed", e.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET = "animated_video_background_new_preset", e.LOW_PRICE_EXPERIMENT_TOOLTIP = "low_price_experiment_tooltip", e.PREMIUM_PROFILE_BADGE_UPSELL = "premium_profile_badge_upsell", e.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "emoji", e.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "profile customization", e.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "hd streaming", e.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "larger file uploads", e.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "bogo", e.VOICE_CHANNEL_EFFECTS_UPSELL = "voice_channel_effects_upsell", e.VOICE_CHANNEL_EFFECTS_BAR_EMOJI_UPSELL = "Voice Channel Effect Bar Emoji Upsell", e.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED = "voice_channel_effects_toggle_clicked", e.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED = "voice_channel_effects_toggle_clicked_expanded", e.PROFILE_EFFECTS_INLINE_SETTINGS = "profile_effects_inline_settings", e.PROFILE_EFFECTS_INLINE_SETTINGS_MOBILE = "profile_effects_inline_settings_mobile", e.HIGH_VIDEO_QUALITY_UPSELL = "high_video_quality_upsell", e.PREMIUM_PROFILE_TRY_IT_OUT = "premium_profile_try_it_out", e.BURST_REACTION_RAIL_UPSELL = "burst_reaction_rail_upsell", e.BURST_REACTION_UPSELL = "burst_reaction_upsell", e.BURST_REACTION_QUICK_ACTION_UPSELL = "burst_reaction_quick_action_upsell", e.BURST_REACTION_CONTEXT_MENU_UPSELL = "burst_reaction_context_menu_upsell", e.PREMIUM_CLIENT_THEME_TRY_IT_OUT = "premium_client_theme_try_it_out", e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL = "premium_client_theme_settings_upsell", e.VIDEO_STAGE_LIMIT = "video_stage_limit", e.SOUND_PICKER_SOUND_CLICKED = "sound_picker_sound_clicked", e.APP_ICON_UPSELL = "app_icon_upsell", e.COLLECTIBLES_SHOP = "collectibles_shop", e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles_profile_settings_upsell", e.COLLECTIBLES_PREMIUM_MARKETING_PAGE_UPSELL = "collectibles_premium_marketing_page_upsell", e.CLIPS_GUILD_SIDEBAR_COACHMARK_PREMIUM_EARLY_ACCESS_UPSELL = "clips_guild_sidebar_coachmark_premium_early_access_upsell", e.CLIPS_GO_LIVE_PREMIUM_EARLY_ACCESS_ROADBLOCK_UPSELL = "clips_go_live_premium_early_access_roadblock_upsell", e.CUSTOM_NOTIFICATION_SOUNDS_UPSELL = "custom_notification_sounds_upsell", e.CUSTOM_NOTIFICATION_SOUNDS_SETTINGS_UPSELL = "custom_notification_sounds_settings_inline_upsell", e.HD_STREAMING_VIEWER_UPSELL = "hd_streaming_viewer_upsell", e.REVERSE_TRIAL_ENDED_UPSELL = "reverse_trial_ended_upsell", e.REVERSE_TRIAL_FOLLOWUP_UPSELL = "reverse_trial_followup_upsell", e.FOR_LATER_MODAL_UPSELL = "for_later_modal_upsell", e.TRY_IT_OUT_MODAL_UPSELL = "try_it_out_modal_upsell", e.ANIMATED_BANNER_MODAL_UPSELL = "animated_banner_modal_upsell", e.ANIMATED_AVATAR_MODAL_UPSELL = "animated_avatar_modal_upsell", e.PROFILE_EFFECT_MODAL_UPSELL = "profile_effect_modal_upsell", e.AVATAR_DECORATION_MODAL_UPSELL = "avatar_decoration_modal_upsell", e.NAMEPLATE_MODAL_UPSELL = "nameplate_modal_upsell", e.VOICE_FILTERS_UPSELL = "voice_filters_upsell", e.RECENT_AVATARS_ROADBLOCK_UPSELL = "recent_avatars_roadblock_upsell", e.EMOJI_EVERYWHERE_INLINE_UPSELL = "emoji_everywhere_inline_upsell", e.EMOJI_EVERYWHERE_UPSELL = "emoji_everywhere_upsell", e.SOUNDBOARD_EVERYWHERE_INLINE_UPSELL = "soundboard_everywhere_inline_upsell", e.SOUNDBOARD_EVERYWHERE_UPSELL = "soundboard_everywhere_upsell", e.LARGER_FILE_UPLOAD_INLINE_UPSELL = "larger_file_upload_inline_upsell", e.LARGER_FILE_UPLOAD_UPSELL = "larger_file_upload_upsell", e.ANIMATED_EMOJI_UPSELL = "animated_emoji_upsell", e.CLIENT_THEMES_UPSELL = "client_themes_upsell", e.CUSTOM_THEMES_UPSELL = "custom_themes_upsell", e.APP_ICON_INLINE_UPSELL = "app_icons_inline_upsell", e
   }({}),
-  eS = function(e) {
+  eA = function(e) {
     return e[e.PREMIUM_TIER_1 = 1] = "PREMIUM_TIER_1", e[e.PREMIUM_TIER_2 = 2] = "PREMIUM_TIER_2", e[e.GUILD_BOOST = 4] = "GUILD_BOOST", e[e.PREMIUM_TIER_0 = 8] = "PREMIUM_TIER_0", e[e.ON_REVERSE_TRIAL = 16] = "ON_REVERSE_TRIAL", e
   }({});
-let eA = Object.freeze({
+let eC = Object.freeze({
     "978380684370378762": 8,
     "521846918637420545": 1,
     "521847234246082599": 2,
     "590663762298667008": 4
   }),
-  eC = 0x3200000,
   eN = 0x3200000,
-  eR = 524288e3,
-  eP = 0x3200000,
-  eD = 0x6400000,
-  ew = 5,
-  eL = {
-    [Chunk981631.Eu4.NONE]: ew,
+  eR = 0x3200000,
+  eP = 524288e3,
+  eD = 0x3200000,
+  ew = 0x6400000,
+  eL = 5,
+  ex = {
+    [Chunk981631.Eu4.NONE]: eL,
     [Chunk981631.Eu4.TIER_1]: 10,
     [Chunk981631.Eu4.TIER_2]: 15,
     [Chunk981631.Eu4.TIER_3]: 30
   },
-  ex = {
-    [Chunk981631.Eu4.NONE]: eL[Chunk981631.Eu4.NONE],
-    [Chunk981631.Eu4.TIER_1]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1],
-    [Chunk981631.Eu4.TIER_2]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1] + eL[Chunk981631.Eu4.TIER_2],
-    [Chunk981631.Eu4.TIER_3]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1] + eL[Chunk981631.Eu4.TIER_2] + eL[Chunk981631.Eu4.TIER_3]
-  },
   eM = {
-    [Chunk981631.Eu4.NONE]: eO,
+    [Chunk981631.Eu4.NONE]: ex[Chunk981631.Eu4.NONE],
+    [Chunk981631.Eu4.TIER_1]: ex[Chunk981631.Eu4.NONE] + ex[Chunk981631.Eu4.TIER_1],
+    [Chunk981631.Eu4.TIER_2]: ex[Chunk981631.Eu4.NONE] + ex[Chunk981631.Eu4.TIER_1] + ex[Chunk981631.Eu4.TIER_2],
+    [Chunk981631.Eu4.TIER_3]: ex[Chunk981631.Eu4.NONE] + ex[Chunk981631.Eu4.TIER_1] + ex[Chunk981631.Eu4.TIER_2] + ex[Chunk981631.Eu4.TIER_3]
+  },
+  ek = {
+    [Chunk981631.Eu4.NONE]: ev,
     [Chunk981631.Eu4.TIER_1]: 24,
     [Chunk981631.Eu4.TIER_2]: 36,
     [Chunk981631.Eu4.TIER_3]: 48
   },
-  ek = Object.freeze({
+  ej = Object.freeze({
     [Chunk981631.Eu4.NONE]: {
       features: [],
       limits: {
@@ -464,8 +470,8 @@ let eA = Object.freeze({
         fileSize: Chunk981631.mBz,
         screenShareQualityFramerate: 30,
         screenShareQualityResolution: "720p",
-        soundboardSounds: eM[Chunk981631.Eu4.NONE],
-        stickers: ex[Chunk981631.Eu4.NONE],
+        soundboardSounds: ek[Chunk981631.Eu4.NONE],
+        stickers: eM[Chunk981631.Eu4.NONE],
         stageVideoUsers: Chunk981631.B9o
       }
     },
@@ -477,8 +483,8 @@ let eA = Object.freeze({
         fileSize: Chunk981631.mBz,
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "720p",
-        soundboardSounds: eM[Chunk981631.Eu4.TIER_1],
-        stickers: ex[Chunk981631.Eu4.TIER_1],
+        soundboardSounds: ek[Chunk981631.Eu4.TIER_1],
+        stickers: eM[Chunk981631.Eu4.TIER_1],
         stageVideoUsers: Chunk981631.B9o
       }
     },
@@ -487,11 +493,11 @@ let eA = Object.freeze({
       limits: {
         emoji: 150,
         bitrate: 256e3,
-        fileSize: eP,
+        fileSize: eD,
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
-        soundboardSounds: eM[Chunk981631.Eu4.TIER_2],
-        stickers: ex[Chunk981631.Eu4.TIER_2],
+        soundboardSounds: ek[Chunk981631.Eu4.TIER_2],
+        stickers: eM[Chunk981631.Eu4.TIER_2],
         stageVideoUsers: Chunk981631.eez
       }
     },
@@ -500,83 +506,83 @@ let eA = Object.freeze({
       limits: {
         emoji: 250,
         bitrate: 384e3,
-        fileSize: eD,
+        fileSize: ew,
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
-        soundboardSounds: eM[Chunk981631.Eu4.TIER_3],
-        stickers: ex[Chunk981631.Eu4.TIER_3],
+        soundboardSounds: ek[Chunk981631.Eu4.TIER_3],
+        stickers: eM[Chunk981631.Eu4.TIER_3],
         stageVideoUsers: Chunk981631.RcX
       }
     }
   }),
-  ej = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
-var eU = function(e) {
+  eU = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
+var eG = function(e) {
     return e.SOUNDBOARD_PLAY = "soundboard play", e.PROFILE_THEME_COLOR = "profile_theme_color", e.PROFILE_BANNER = "profile_banner", e.ANIMATED_AVATAR = "animated_avatar", e.AVATAR_DECORATION = "avatar_decoration", e.CLIENT_THEME = "client_theme", e.SHARED_CANVAS = "shared_canvas", e.PROFILE_EFFECT = "profile_effect", e.PRESET = "preset", e
   }({}),
-  eG = function(e) {
+  eB = function(e) {
     return e.FREE = "free", e.PREMIUM_STANDARD = "premium-standard", e
   }({});
-let eB = {
-  "1024422698568122368": D,
-  "511651876987469824": D,
-  "511651885459963904": D,
-  "944037208325619722": w,
-  "642251038925127690": L
+let eZ = {
+  "1024422698568122368": w,
+  "511651876987469824": w,
+  "511651885459963904": w,
+  "944037208325619722": L,
+  "642251038925127690": x
 };
-var eZ = function(e) {
+var eF = function(e) {
   return e.HIGH_STREAMING_QUALITY = "high_streaming_quality", e.MID_STREAMING_QUALITY = "mid_streaming_quality", e
 }({});
-let eF = Object.freeze({
+let eV = Object.freeze({
   high_streaming_quality: 2,
   mid_streaming_quality: 1
 });
-var eV = function(e) {
+var eH = function(e) {
     return e[e.UserSettings = 0] = "UserSettings", e[e.ApplicationStoreHome = 1] = "ApplicationStoreHome", e
   }({}),
-  eH = function(e) {
+  eW = function(e) {
     return e[e.SNOWGLOBE = 1] = "SNOWGLOBE", e[e.BOX = 2] = "BOX", e[e.CUP = 3] = "CUP", e[e.STANDARD_BOX = 4] = "STANDARD_BOX", e[e.CAKE = 5] = "CAKE", e[e.CHEST = 6] = "CHEST", e[e.COFFEE = 7] = "COFFEE", e[e.SEASONAL_STANDARD_BOX = 8] = "SEASONAL_STANDARD_BOX", e[e.SEASONAL_CAKE = 9] = "SEASONAL_CAKE", e[e.SEASONAL_CHEST = 10] = "SEASONAL_CHEST", e[e.SEASONAL_COFFEE = 11] = "SEASONAL_COFFEE", e[e.NITROWEEN_STANDARD = 12] = "NITROWEEN_STANDARD", e
   }({});
-let eW = Object.freeze({
+let eY = Object.freeze({
     IS_BLOCKED_IOS: 32,
     IS_OUTBOUND_REDEEMABLE_BY_TRIAL_USERS: 64,
     SUPPRESS_NOTIFICATION: 128
   }),
-  eY = Object.freeze({
+  eK = Object.freeze({
     3: {
-      fileSize: eC
-    },
-    1: {
       fileSize: eN
     },
-    2: {
+    1: {
       fileSize: eR
+    },
+    2: {
+      fileSize: eP
     }
   });
-var eK = function(e) {
+var ez = function(e) {
   return e.BOOST = "boost", e.DISMISS = "dismiss", e
 }({});
-let ez = new Set(["PL", "TR"]),
-  eq = [1, 2, 3],
-  eX = [4, 5, 7, 6];
-[8, 9, 11, 10].concat(eq);
-let eQ = 190;
-var eJ = function(e) {
+let eq = new Set(["PL", "TR"]),
+  eX = [1, 2, 3],
+  eQ = [4, 5, 7, 6];
+[8, 9, 11, 10].concat(eX);
+let eJ = 190;
+var e$ = function(e) {
     return e[e.FRIEND_ANNIVERSARY = 0] = "FRIEND_ANNIVERSARY", e
   }({}),
-  e$ = function(e) {
+  e0 = function(e) {
     return e.VIEW_ALL = "view_all", e.SEND_MESSAGE = "send_message", e
   }({}),
-  e0 = function(e) {
+  e1 = function(e) {
     return e[e.DM_CHANNEL = 0] = "DM_CHANNEL", e[e.SHOP_PAGE = 1] = "SHOP_PAGE", e[e.USER_PROFILE_WISHLIST = 2] = "USER_PROFILE_WISHLIST", e[e.DM_CHANNEL_WISHLIST = 3] = "DM_CHANNEL_WISHLIST", e
   }({});
-let e1 = 1,
-  e3 = 30,
-  e2 = 20;
-var e4 = function(e) {
+let e3 = 1,
+  e2 = 30,
+  e4 = 20;
+var e5 = function(e) {
   return e.PREMIUM_TENURE_1_MONTH = "premium_tenure_1_month_v2", e.PREMIUM_TENURE_3_MONTH = "premium_tenure_3_month_v2", e.PREMIUM_TENURE_6_MONTH = "premium_tenure_6_month_v2", e.PREMIUM_TENURE_12_MONTH = "premium_tenure_12_month_v2", e.PREMIUM_TENURE_24_MONTH = "premium_tenure_24_month_v2", e.PREMIUM_TENURE_36_MONTH = "premium_tenure_36_month_v2", e.PREMIUM_TENURE_60_MONTH = "premium_tenure_60_month_v2", e.PREMIUM_TENURE_72_MONTH = "premium_tenure_72_month_v2", e
 }({});
-let e5 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_tenure_6_month_v2", "premium_tenure_12_month_v2", "premium_tenure_24_month_v2", "premium_tenure_36_month_v2", "premium_tenure_60_month_v2", "premium_tenure_72_month_v2"],
-  e8 = {
+let e8 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_tenure_6_month_v2", "premium_tenure_12_month_v2", "premium_tenure_24_month_v2", "premium_tenure_36_month_v2", "premium_tenure_60_month_v2", "premium_tenure_72_month_v2"],
+  e6 = {
     premium_tenure_1_month_v2: {
       id: "premium_tenure_1_month_v2",
       nameUnformatted: Chunk388032.t.LR1C0a,
@@ -634,13 +640,13 @@ let e5 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
       glowColor: "#078292"
     }
   };
-var e6 = function(e) {
+var e7 = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.FP_ONLY = 1] = "FP_ONLY", e[e.FP_SUB_PAUSED = 2] = "FP_SUB_PAUSED", e
   }({}),
-  e7 = function(e) {
+  e9 = function(e) {
     return e[e.HOUR = 1] = "HOUR", e[e.DAY = 2] = "DAY", e
   }({});
-let e9 = {
+let te = {
   [Chunk314794.a.PREMIUM_TIER_2_1_HOUR]: [1, 1],
   [Chunk314794.a.PREMIUM_TIER_2_1_DAY]: [2, 1],
   [Chunk314794.a.PREMIUM_TIER_2_3_DAY]: [2, 3]

@@ -55,7 +55,7 @@ function k(e) {
   } = (0, P.wD)(), Z = null == G ? true : G.giftPurchaseConfirmation, F = (0, b.tK)(null == B ? true : B.skuId), V = (0, b.a5)(s) && null != F && null != Z, H = () => null != s ? s.skuId : null != a ? a.id : null, W = () => {
     let e;
     return null != g ? L.intl.string(L.t.qB8aya) : null == s ? null : (e = s.interval === w.rV.MONTH ? k ? V ? Z.monthGiftText : L.t["4ZJ+7Z"] : L.t["P+z55d"] : k ? V ? Z.yearGiftText : L.t.p0pZXP : L.t.bXqk3o, L.intl.format(e, {
-      skuName: (0, N.aq)(s.id),
+      skuName: (0, N.MF)(s.id),
       intervalCount: s.intervalCount
     }))
   }, Y = () => null != p || _ && null == g ? L.intl.string(L.t.zOmK9N) : null != g ? L.intl.string(L.t.d1lrmU) : L.intl.string(L.t["/s1xR7"]), K = (e, t) => {

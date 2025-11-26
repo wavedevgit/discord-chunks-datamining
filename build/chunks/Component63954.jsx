@@ -184,7 +184,7 @@ function W() {
     H(I(k({}, e), {
       preview: true
     }))
-  }, []), [F, z] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [G, K] = Chunk473749.useState(false), [X, Y] = Chunk473749.useState(false), [J, $] = Chunk473749.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
+  }, []), [F, z] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [G, K] = Chunk473749.useState(false), [Y, X] = Chunk473749.useState(false), [J, $] = Chunk473749.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -700,7 +700,7 @@ function W() {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-sm/semibold",
           children: "Quest Card Embed"
-        }), X ? (0, Chunk54381.jsx)(Chunk557843.W, {
+        }), Y ? (0, Chunk54381.jsx)(Chunk557843.W, {
           questId: W.id
         }) : (0, Chunk54381.jsx)(Chunk686834.X, {
           quest: W,
@@ -711,8 +711,8 @@ function W() {
         className: Chunk188764.toggleSwitch,
         children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Invalid Quests Embed:",
-          checked: X,
-          onChange: Y
+          checked: Y,
+          onChange: X
         })
       }), ec && (0, Chunk54381.jsxs)(Chunk456799.Z, {
         withBorder: true,

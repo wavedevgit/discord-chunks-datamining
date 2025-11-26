@@ -29,39 +29,39 @@ function E(e) {
     variant: b
   } = d.EO.useConfig({
     location: p.dr.VIDEO_MODAL
-  }), S = b === d.m_.OVERLAY_SHARE_ON_VIDEO, [C, y] = (0, f.G6)(v.intl.string(v.t.RDE0Sc), v.intl.string(v.t["+5kSoW"]), 1700), [_, x] = o.useState(false), j = o.useRef(null), D = (0, u.vB)(n.config), P = o.useCallback(() => {
-    D && ((0, u.f2)(n.id, {
+  }), C = b === d.m_.OVERLAY_SHARE_ON_VIDEO, [S, _] = (0, f.G6)(v.intl.string(v.t.RDE0Sc), v.intl.string(v.t["+5kSoW"]), 1700), [y, x] = o.useState(false), j = o.useRef(null), P = (0, u.vB)(n.config), D = o.useCallback(() => {
+    P && ((0, u.f2)(n.id, {
       content: c.jn.VIDEO_MODAL,
       ctaContent: a.jZ.COPY_QUEST_URL,
       impressionId: O,
       sourceQuestContent: E
-    }), (h || g) && (0, i.showToast)((0, i.createToast)(v.intl.string(v.t["+5kSoW"]), i.ToastType.SUCCESS)), y(), x(true), null != j.current && clearTimeout(j.current), j.current = setTimeout(() => {
+    }), (h || g) && (0, i.showToast)((0, i.createToast)(v.intl.string(v.t["+5kSoW"]), i.ToastType.SUCCESS)), _(), x(true), null != j.current && clearTimeout(j.current), j.current = setTimeout(() => {
       x(false)
     }, 1700))
-  }, [O, D, n.id, E, y, h, g]);
+  }, [O, P, n.id, E, _, h, g]);
   return (o.useEffect(() => () => {
     null != j.current && clearTimeout(j.current)
-  }, []), D) ? h || g ? (0, r.jsx)("div", {
+  }, []), P) ? h || g ? (0, r.jsx)("div", {
     style: {
       marginLeft: t ? "auto" : true
     },
-    children: _ ? (0, r.jsx)(i.hU, {
+    children: y ? (0, r.jsx)(i.hU, {
       variant: "active",
       icon: i.owK,
-      onClick: P,
+      onClick: D,
       "aria-label": v.intl.string(v.t.RDE0Sc)
     }) : (0, r.jsx)(l.u, {
-      text: S || !h ? true : v.intl.string(v.t.WqhZss),
+      text: C || !h ? true : v.intl.string(v.t.WqhZss),
       children: (0, r.jsx)(i.hU, {
-        variant: S ? "overlay-secondary" : "secondary",
+        variant: C ? "overlay-secondary" : "secondary",
         icon: h ? i.aAc : i.TIy,
         "aria-label": v.intl.string(v.t.RDE0Sc),
-        onClick: P
+        onClick: D
       })
     })
   }) : (0, r.jsx)(i.Button, {
     variant: "secondary",
-    text: C,
-    onClick: P
+    text: S,
+    onClick: D
   }) : null
 }

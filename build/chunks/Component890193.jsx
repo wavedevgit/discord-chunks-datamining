@@ -1,58 +1,57 @@
 /** Chunk was on 75909 **/
 /** chunk id: 890193, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => d
+  E: () => u
 }), require("./35282.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk754700 = require("./754700.js"),
   Chunk481060 = require("./481060.js"),
   Chunk22095 = require("./22095.js"),
   Chunk184299 = require("./184299.js"),
-  Chunk720293 = require("./720293.js"),
+  Chunk475595 = require("./475595.js"),
   Chunk273339 = require("./273339.js");
 
-function d(e) {
+function u(e) {
   var t;
   let {
     quest: n,
-    onClose: d
-  } = e, m = (0, s.km)(e => e.transcript);
+    onClose: u
+  } = e, d = (0, a.km)(e => e.transcript);
   o.useEffect(() => {
-    let e = (0, c.z0)(n, l.X.WATCH_VIDEO, c.n1.VIDEO, c.O.TRANSCRIPT);
-    (null == m || m.questId !== n.id || m.fetchStatus === s.iF.NONE || m.fetchStatus === s.iF.SUCCESS && (null == e ? true : e.url) !== m.url) && (0, a.lL)(n, l.X.WATCH_VIDEO)
-  }, [m, n]);
-  let f = (null == m ? true : m.questId) === n.id && (null == m ? true : m.fetchStatus) === s.iF.SUCCESS && null != (t = m.text) ? t : "",
-    p = o.useMemo(() => f.split("\n").map(e => e.trim()).filter(e => e.length > 0), [f]);
+    let e = (0, s.fh)(n, s.eC.VIDEO_PLAYER_TRANSCRIPT, true, false);
+    (null == d || d.questId !== n.id || d.fetchStatus === a.iF.NONE || d.fetchStatus === a.iF.SUCCESS && (null == e ? true : e.url) !== d.url) && (0, i.lL)(n)
+  }, [d, n]);
+  let m = (null == d ? true : d.questId) === n.id && (null == d ? true : d.fetchStatus) === a.iF.SUCCESS && null != (t = d.text) ? t : "",
+    f = o.useMemo(() => m.split("\n").map(e => e.trim()).filter(e => e.length > 0), [m]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: u.transcriptHeader,
-      children: [(0, r.jsx)(i.Heading, {
+      className: c.transcriptHeader,
+      children: [(0, r.jsx)(l.Heading, {
         variant: "heading-md/semibold",
         color: "currentColor",
         children: "Transcript"
-      }), (0, r.jsx)(i.P3F, {
-        onClick: d,
-        className: u.transcriptBackBtn,
-        children: (0, r.jsx)(i.Dio, {
+      }), (0, r.jsx)(l.P3F, {
+        onClick: u,
+        className: c.transcriptBackBtn,
+        children: (0, r.jsx)(l.Dio, {
           color: "currentColor"
         })
       })]
-    }), (0, r.jsx)(i.tEY, {
-      children: (0, r.jsx)(i.w0Z, {
-        className: u.transcriptScroller,
+    }), (0, r.jsx)(l.tEY, {
+      children: (0, r.jsx)(l.w0Z, {
+        className: c.transcriptScroller,
         fade: true,
         children: (0, r.jsx)("div", {
-          className: u.transcriptBody,
-          children: (null == m ? true : m.fetchStatus) === s.iF.FETCHING ? (0, r.jsx)("div", {
-            className: u.transcriptBodySpinner,
-            children: (0, r.jsx)(i.$jN, {
-              type: i.$jN.Type.WANDERING_CUBES
+          className: c.transcriptBody,
+          children: (null == d ? true : d.fetchStatus) === a.iF.FETCHING ? (0, r.jsx)("div", {
+            className: c.transcriptBodySpinner,
+            children: (0, r.jsx)(l.$jN, {
+              type: l.$jN.Type.WANDERING_CUBES
             })
-          }) : (0, r.jsx)(i.Heading, {
+          }) : (0, r.jsx)(l.Heading, {
             variant: "heading-md/normal",
             color: "text-muted",
-            children: p.map((e, t) => (0, r.jsx)("p", {
+            children: f.map((e, t) => (0, r.jsx)("p", {
               children: e
             }, t))
           })

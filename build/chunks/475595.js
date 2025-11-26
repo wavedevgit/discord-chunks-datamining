@@ -2,16 +2,14 @@
 /** chunk id: 475595, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dm: () => y,
-  N0: () => _,
-  Q2: () => b,
-  eC: () => p,
-  f0: () => T,
-  fh: () => g,
-  nK: () => v,
-  sN: () => I
+  eC: () => h,
+  f0: () => A,
+  fh: () => b,
+  nK: () => T,
+  sN: () => S
 }), require("./35282.js"), require("./784620.js"), require("./973216.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
-var Chunk887003 = require("./887003.js"),
+var Chunk754700 = require("./754700.js"),
+  Chunk887003 = require("./887003.js"),
   Chunk591759 = require("./591759.js"),
   Chunk921948 = require("./921948.js"),
   Chunk509212 = require("./509212.js"),
@@ -19,17 +17,17 @@ var Chunk887003 = require("./887003.js"),
   Chunk981631 = require("./981631.js"),
   Chunk380299 = require("./380299.js"),
   Chunk772400 = require("./772400.js");
-let d = 3,
-  f = /\.([a-zA-Z0-9]+)$/,
-  _ = ["video/mp4", "video/webm"];
-var p = function(e) {
-  return e.HERO = "hero", e.HERO_IMAGE = "hero_image", e.HERO_VIDEO = "hero_video", e.QUEST_BAR_HERO = "quest_bar_hero", e.QUEST_BAR_HERO_VIDEO = "quest_bar_hero_video", e.REWARD = "reward", e.REWARD_IMAGE = "reward_image", e.GAME_TILE = "game_tile", e.LOGO_TYPE = "logo_type", e.COSPONSOR_LOGO_TYPE = "cosponsor_logo_type", e
+let f = 3,
+  _ = /\.([a-zA-Z0-9]+)$/,
+  p = ["video/mp4", "video/webm"];
+var h = function(e) {
+  return e.HERO = "hero", e.HERO_IMAGE = "hero_image", e.HERO_VIDEO = "hero_video", e.QUEST_BAR_HERO = "quest_bar_hero", e.QUEST_BAR_HERO_VIDEO = "quest_bar_hero_video", e.REWARD = "reward", e.REWARD_IMAGE = "reward_image", e.GAME_TILE = "game_tile", e.LOGO_TYPE = "logo_type", e.COSPONSOR_LOGO_TYPE = "cosponsor_logo_type", e.VIDEO_PLAYER_VIDEO = "video_player_video", e.VIDEO_PLAYER_VIDEO_LOW_RES = "video_player_video_low_res", e.VIDEO_PLAYER_VIDEO_HLS = "video_player_video_hls", e.VIDEO_PLAYER_THUMBNAIL = "video_player_thumbnail", e.VIDEO_PLAYER_CAPTION = "video_player_caption", e.VIDEO_PLAYER_TRANSCRIPT = "video_player_transcript", e
 }({});
 
-function h(e, t, n) {
-  let r = b(e, t, n),
-    i = y(t),
-    a = null != i && _.includes(i);
+function m(e, t, n) {
+  let r = O(e, t, n),
+    i = v(t),
+    a = null != i && p.includes(i);
   return {
     url: r,
     mimetype: i,
@@ -37,92 +35,134 @@ function h(e, t, n) {
   }
 }
 
-function m(e, t) {
+function g(e, t) {
   return null != e ? e : t
 }
+let E = {
+  video_player_video: {
+    variant: "video",
+    property: "url"
+  },
+  video_player_video_low_res: {
+    variant: "videoLowRes",
+    property: "url"
+  },
+  video_player_video_hls: {
+    variant: "videoHls",
+    property: "url"
+  },
+  video_player_thumbnail: {
+    variant: "video",
+    property: "thumbnail"
+  },
+  video_player_caption: {
+    variant: "video",
+    property: "caption"
+  },
+  video_player_transcript: {
+    variant: "video",
+    property: "transcript"
+  }
+};
 
-function g(e, t, n, i) {
-  var a, s;
-  let l, d = false;
+function b(e, t, n, a) {
+  var o, l, c;
+  let f, _ = false,
+    p = false;
   switch (t) {
     case "hero":
-      l = m(e.config.assets.heroVideo, e.config.assets.hero);
+      f = g(e.config.assets.heroVideo, e.config.assets.hero);
       break;
     case "hero_image":
-      l = e.config.assets.hero;
+      f = e.config.assets.hero;
       break;
     case "hero_video": {
       let t = e.config.assets.heroVideo,
-        n = "videoMetadata" in e.config ? null == (a = e.config.videoMetadata) ? true : a.assets.questHomeVideo : null,
+        n = "videoMetadata" in e.config ? null == (o = e.config.videoMetadata) ? true : o.assets.questHomeVideo : null,
         r = null != t ? t : n;
       if (null == r) return null;
-      l = r;
+      f = r;
       break
     }
     case "quest_bar_hero":
-      l = m(e.config.assets.questBarHeroVideo, e.config.assets.questBarHero);
+      f = g(e.config.assets.questBarHeroVideo, e.config.assets.questBarHero);
       break;
     case "quest_bar_hero_video": {
       let t = e.config.assets.questBarHeroVideo,
-        n = "videoMetadata" in e.config ? null == (s = e.config.videoMetadata) ? true : s.assets.questBarPreviewVideo : null,
+        n = "videoMetadata" in e.config ? null == (l = e.config.videoMetadata) ? true : l.assets.questBarPreviewVideo : null,
         r = null != t ? t : n;
       if (null == r) return null;
-      l = r;
+      f = r;
       break
     }
     case "reward": {
-      let t = (0, o.hF)(e);
-      if (t.type === r.w.VIRTUAL_CURRENCY) return i ? {
-        url: u.Z,
+      let t = (0, s.hF)(e);
+      if (t.type === i.w.VIRTUAL_CURRENCY) return a ? {
+        url: d.Z,
         mimetype: "video/mp4",
         isAnimated: true
       } : {
-        url: c.Z,
+        url: u.Z,
         mimetype: "video/webm",
         isAnimated: true
       };
-      l = m(t.assetVideo, t.asset);
+      f = g(t.assetVideo, t.asset);
       break
     }
     case "reward_image": {
-      let t = (0, o.hF)(e);
-      if (t.type === r.w.VIRTUAL_CURRENCY) return null;
-      l = t.asset;
+      let t = (0, s.hF)(e);
+      if (t.type === i.w.VIRTUAL_CURRENCY) return null;
+      f = t.asset;
       break
     }
     case "game_tile":
-      "dark" === n && null != e.config.assets.gameTileDark ? l = e.config.assets.gameTileDark : "light" === n && null != e.config.assets.gameTileLight ? l = e.config.assets.gameTileLight : (l = e.config.assets.gameTile, d = true);
+      "dark" === n && null != e.config.assets.gameTileDark ? f = e.config.assets.gameTileDark : "light" === n && null != e.config.assets.gameTileLight ? f = e.config.assets.gameTileLight : (f = e.config.assets.gameTile, _ = true);
       break;
     case "logo_type":
-      "dark" === n && null != e.config.assets.logotypeDark ? l = e.config.assets.logotypeDark : "light" === n && null != e.config.assets.logotypeLight ? l = e.config.assets.logotypeLight : (l = e.config.assets.logotype, d = true);
+      "dark" === n && null != e.config.assets.logotypeDark ? f = e.config.assets.logotypeDark : "light" === n && null != e.config.assets.logotypeLight ? f = e.config.assets.logotypeLight : (f = e.config.assets.logotype, _ = true);
       break;
     case "cosponsor_logo_type":
       if (null == e.config.cosponsorMetadata) return null;
-      "dark" === n && null != e.config.cosponsorMetadata.logotypeDark ? l = e.config.cosponsorMetadata.logotypeDark : "light" === n && null != e.config.cosponsorMetadata.logotypeLight ? l = e.config.cosponsorMetadata.logotypeLight : (l = e.config.cosponsorMetadata.logotype, d = true)
+      "dark" === n && null != e.config.cosponsorMetadata.logotypeDark ? f = e.config.cosponsorMetadata.logotypeDark : "light" === n && null != e.config.cosponsorMetadata.logotypeLight ? f = e.config.cosponsorMetadata.logotypeLight : (f = e.config.cosponsorMetadata.logotype, _ = true);
+      break;
+    case "video_player_video":
+    case "video_player_video_low_res":
+    case "video_player_video_hls":
+    case "video_player_thumbnail":
+    case "video_player_caption":
+    case "video_player_transcript": {
+      if (!("taskConfigV2" in e.config)) return null;
+      let n = e.config.taskConfigV2.tasks[a ? r.X.WATCH_VIDEO_ON_MOBILE : r.X.WATCH_VIDEO],
+        i = E[t],
+        o = null == n || null == (c = n.assets[i.variant]) ? true : c[i.property];
+      if (null == o) return null;
+      f = o, p = true
+    }
   }
-  return h(e.id, l, {
-    theme: d ? n : true
-  })
+  let h = m(e.id, f, {
+    theme: _ ? n : true
+  });
+  return p && null == h.mimetype ? null : h
 }
 
-function E(e) {
+function y(e) {
   var t;
   return null != (t = e.split("?", 1).at(0)) ? t : e
 }
 
-function b(e, t, n) {
-  if (t.startsWith("blob:")) return E(t);
-  let r = s.HO;
-  return t.includes("/") ? (r = s.tD, "".concat(r).concat(t)) : "".concat(r).concat(e).concat((null == n ? true : n.theme) != null ? "/".concat(n.theme) : "", "/").concat(t)
+function O(e, t, n) {
+  if (t.startsWith("blob:")) return y(t);
+  let r = l.HO;
+  return t.includes("/") ? (r = l.tD, "".concat(r).concat(t)) : "".concat(r).concat(e).concat((null == n ? true : n.theme) != null ? "/".concat(n.theme) : "", "/").concat(t)
 }
 
-function y(e) {
+function v(e) {
   var t, n, r;
   if (e.startsWith("blob:")) {
     let t = null != (r = new URL(e).searchParams.get("mimetype")) ? r : true;
     return null != t ? decodeURIComponent(t) : null
   }
-  switch (null == (n = f.exec(e)) || null == (t = n[1]) ? true : t.toLowerCase()) {
+  switch (null == (n = _.exec(e)) || null == (t = n[1]) ? true : t.toLowerCase()) {
     case "webm":
       return "video/webm";
     case "mp4":
@@ -151,13 +191,13 @@ function y(e) {
   }
 }
 
-function O(e) {
-  return Math.min(Math.ceil(e), l.hiG)
+function I(e) {
+  return Math.min(Math.ceil(e), c.hiG)
 }
 
-function v(e, t) {
-  let n = (0, a.Z)();
-  return n < d ? {
+function T(e, t) {
+  let n = (0, o.Z)();
+  return n < f ? {
     width: e,
     height: t
   } : {
@@ -166,15 +206,15 @@ function v(e, t) {
   }
 }
 
-function I(e) {
+function S(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   if (e.startsWith("blob:")) return e;
-  let n = i.Z.toURLSafe(e);
-  return null == n ? e : (null != t.format && n.searchParams.append("format", t.format), null != t.width && n.searchParams.append("width", "".concat(O(t.width))), null != t.height && n.searchParams.append("height", "".concat(O(t.height))), n.toString())
+  let n = a.Z.toURLSafe(e);
+  return null == n ? e : (null != t.format && n.searchParams.append("format", t.format), null != t.width && n.searchParams.append("width", "".concat(I(t.width))), null != t.height && n.searchParams.append("height", "".concat(I(t.height))), n.toString())
 }
 
-function T(e, t) {
+function A(e, t) {
   if (e.startsWith("blob:")) return e;
-  let n = i.Z.toURLSafe(e);
-  return null == n ? null : (n.searchParams.append("format", "webp"), null != t && (n.searchParams.append("width", "".concat(O(t.width))), n.searchParams.append("height", "".concat(O(t.height)))), n.toString())
+  let n = a.Z.toURLSafe(e);
+  return null == n ? null : (n.searchParams.append("format", "webp"), null != t && (n.searchParams.append("width", "".concat(I(t.width))), n.searchParams.append("height", "".concat(I(t.height)))), n.toString())
 }

@@ -53,7 +53,7 @@ let v = () => (0, Chunk45521.f)(false),
         type: E.cd.STICKER_PICKER_UPSELL,
         subscriptionTier: null != (a = null == T || null == (n = T.subscription_trial) ? true : n.sku_id) ? a : E.Si.TIER_2,
         children: A ? b.intl.format(b.t.MAGagw, {
-          planName: (0, p.aq)(E.Xh.PREMIUM_MONTH_TIER_0),
+          planName: (0, p.MF)(E.Xh.PREMIUM_MONTH_TIER_0),
           onClick: h
         }) : b.intl.format(b.t.jt7JX6, {
           onClick: h

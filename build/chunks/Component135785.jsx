@@ -27,7 +27,7 @@ let m = e => {
     E = (0, d.Nx)();
   if (null == i) return null;
   let b = null != i ? u.ZP.getPremiumPlanItem(i) : null;
-  if (u.ZP.isBoostOnlySubscription(i) ? t = p.intl.string(p.t.Uj0md3) : null != b && (t = u.ZP.getDisplayPremiumType(b.planId)), null == t) return null;
+  if (u.ZP.isBoostOnlySubscription(i) ? t = p.intl.string(p.t.Uj0md3) : null != b && (t = u.ZP.getTierDisplayNameByPlanId(b.planId)), null == t) return null;
   let y = () => (0, l.openUserSettings)(s.n.SUBSCRIPTIONS_PANEL, {
       section: _.oAB.SUBSCRIPTIONS
     }),

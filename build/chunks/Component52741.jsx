@@ -90,7 +90,7 @@ function v(e) {
         color: R,
         className: a()(y.trialHeader, C),
         children: b.intl.format(b.t["9vyovu"], {
-          planName: (0, f.aq)(null != (B = E.IW[null != (G = null == U ? true : U.sku_id) ? G : E.Si.NONE]) ? B : E.Xh.PREMIUM_MONTH_TIER_2),
+          planName: (0, f.MF)(null != (B = E.IW[null != (G = null == U ? true : U.sku_id) ? G : E.Si.NONE]) ? B : E.Xh.PREMIUM_MONTH_TIER_2),
           duration: (0, f.if)({
             intervalType: null != (Z = null == U ? true : U.interval) ? Z : E.rV.DAY,
             intervalCount: null != (F = null == U ? true : U.interval_count) ? F : 30,

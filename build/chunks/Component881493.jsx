@@ -41,7 +41,7 @@ let h = () => {
     variant: "secondary"
   }, {
     text: "".concat(Chunk388032.intl.format(Chunk388032.t.yxFzdO, {
-      planPremiumType: Chunk74538.ZP.getDisplayPremiumType("".concat(exports))
+      planPremiumType: Chunk74538.ZP.getTierDisplayNameByPlanId("".concat(exports))
     })),
     onClick: I,
     disabled: b,
@@ -57,7 +57,7 @@ let h = () => {
     size: "md",
     transitionState: module,
     title: "".concat(Chunk388032.intl.format(Chunk388032.t.LZunzZ, {
-      planPremiumType: Chunk74538.ZP.getDisplayPremiumType("".concat(exports))
+      planPremiumType: Chunk74538.ZP.getTierDisplayNameByPlanId("".concat(exports))
     })),
     subtitle: 0 !== require.total ? Chunk388032.intl.format(Chunk388032.t.ycyeBx, {
       renewalDate: require.subscriptionPeriodStart,

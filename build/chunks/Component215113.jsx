@@ -3,7 +3,7 @@
 require.r(exports), require.d(exports, {
   VideoQuestConfigContext: () => F,
   VideoQuestModalContext: () => Z,
-  default: () => H
+  default: () => U
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -40,7 +40,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk273339 = require("./273339.js");
 
-function L(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -88,58 +88,58 @@ function B(e) {
     transitionState: l,
     onClose: a,
     quest: O,
-    autoplay: y,
+    autoplay: _,
     videoSessionId: I,
     impressionRef: F,
     parentModalOpenStartClockTime: B,
-    sourceQuestContent: H
-  } = e, U = (0, b.il)(O), q = (0, g.tP)(O), Y = (0, E.aM)(), [Q, G] = o.useState(U.progressSeconds), [W, z] = o.useState(142), {
-    variant: K,
+    sourceQuestContent: U
+  } = e, q = (0, b.il)(O), Y = (0, g.tP)(O), H = (0, E.aM)(), [Q, G] = o.useState(q.progressSeconds), [K, W] = o.useState(142), {
+    variant: z,
     enabled: X
-  } = S.EO.useConfig({
+  } = C.EO.useConfig({
     location: A.dr.VIDEO_MODAL
   }), J = null == (n = O.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.X.WATCH_VIDEO];
   s()(null != J, "VideoQuestModal: videoTask must not be null");
   let $ = (0, b.ZS)(J),
     ee = "portrait" === $,
     et = (0, f.Z)(e => {
-      z(e.target.offsetHeight)
+      W(e.target.offsetHeight)
     }),
     en = (0, m.y)(et),
-    er = K === S.m_.OVERLAY_SHARE_ON_VIDEO,
+    er = z === C.m_.OVERLAY_SHARE_ON_VIDEO,
     eo = (0, N.e)({
       quest: O,
       onClose: a,
-      sourceQuestContent: H,
-      impressionId: Y
+      sourceQuestContent: U,
+      impressionId: H
     }),
     el = (0, u.e7)([p.Z], () => p.Z.getState().theme),
     ei = (0, d.wjy)(el) ? w.BR.DARK : w.BR.LIGHT,
     ea = o.useMemo(() => ({
       quest: O,
-      sourceQuestContent: H,
+      sourceQuestContent: U,
       videoSessionId: I,
       isPortrait: ee,
       onClose: a
-    }), [O, H, I, ee, a]);
+    }), [O, U, I, ee, a]);
   return (0, r.jsx)(Z.Provider, {
     value: ea,
     children: (0, r.jsxs)(d.Y0X, {
       "data-migration-pending": true,
       transitionState: l,
       size: d.CgR.DYNAMIC,
-      className: i()(M.modalRoot, {
-        [M.modalRootLandscape]: "landscape" === $,
-        [M.modalRootPortrait]: "portrait" === $,
-        [M.modalRootV2]: X,
-        [M.modalRootPortraitV2]: X && "portrait" === $
+      className: i()(L.modalRoot, {
+        [L.modalRootLandscape]: "landscape" === $,
+        [L.modalRootPortrait]: "portrait" === $,
+        [L.modalRootV2]: X,
+        [L.modalRootPortraitV2]: X && "portrait" === $
       }),
       parentComponent: "Modal",
       children: [X && (0, r.jsx)("div", {
-        className: M.closeModalBtnWrapper,
+        className: L.closeModalBtnWrapper,
         children: (0, r.jsx)(d.hU, {
           variant: "icon-only",
-          icon: e => (0, r.jsx)(d.Dio, V(L({}, e), {
+          icon: e => (0, r.jsx)(d.Dio, V(M({}, e), {
             color: d.TVs.colors.CONTROL_TEXT_OVERLAY_SECONDARY_DEFAULT
           })),
           "aria-label": k.intl.string(k.t.cpT0Cq),
@@ -149,33 +149,33 @@ function B(e) {
         ref: e => {
           F.current = e
         },
-        className: i()(M.modalBg, {
-          [M.modalBgV2]: X,
-          [M.modalBgV2Portrait]: X && ee
+        className: i()(L.modalBg, {
+          [L.modalBgV2]: X,
+          [L.modalBgV2Portrait]: X && ee
         }),
         style: ee && X ? {
-          "--custom-portrait-footer-height": "".concat(W, "px")
+          "--custom-portrait-footer-height": "".concat(K, "px")
         } : true,
         children: (0, r.jsx)("div", {
-          className: i()(M.modalBody, {
-            [M.modalBodyWithBorder]: X
+          className: i()(L.modalBody, {
+            [L.modalBodyWithBorder]: X
           }),
           children: (0, r.jsxs)("div", {
-            className: M.modalContent,
+            className: L.modalContent,
             style: {
               backgroundColor: X ? d.TVs.colors.BACKGROUND_BASE_LOWER.css : true
             },
             children: [X ? null : (0, r.jsxs)("div", {
-              className: M.contentHeader,
+              className: L.contentHeader,
               children: [(0, r.jsxs)(d.P3F, {
-                className: M.contentHeaderGameInfo,
+                className: L.contentHeaderGameInfo,
                 onClick: () => eo(h.jn.VIDEO_MODAL, v.jZ.OPEN_GAME_LINK),
                 children: [(0, r.jsx)("img", {
                   alt: O.config.messages.gameTitle,
-                  className: i()(M.contentHeaderLogotype, M.accentOnHover),
-                  src: (0, C.fh)(O, C.eC.LOGO_TYPE, ei).url
-                }), (0, r.jsx)(T.Z, {}), (0, r.jsxs)("div", {
-                  className: M.questHeading,
+                  className: i()(L.contentHeaderLogotype, L.accentOnHover),
+                  src: (0, S.fh)(O, S.eC.LOGO_TYPE, ei).url
+                }), (0, r.jsx)(R.Z, {}), (0, r.jsxs)("div", {
+                  className: L.questHeading,
                   children: [(0, r.jsx)(d.Heading, {
                     variant: "heading-md/semibold",
                     color: "header-primary",
@@ -188,45 +188,45 @@ function B(e) {
                     children: O.config.messages.gameTitle
                   })]
                 })]
-              }), !q && (0, r.jsx)(D.Z, {
+              }), !Y && (0, r.jsx)(P.Z, {
                 tooltipPosition: "left"
               })]
-            }), (0, r.jsx)(R.Z, {
+            }), (0, r.jsx)(T.Z, {
               videoTask: J,
               parentTransitionState: l,
               onOptimisticProgressUpdate: G,
-              autoplay: y,
+              autoplay: _,
               performanceClockStartTime: B,
               orientation: $
             }), ee ? (0, r.jsxs)("div", {
               ref: en,
-              className: X ? M.contentFooterPortraitV2 : M.contentFooterPortraitV1,
+              className: X ? L.contentFooterPortraitV2 : L.contentFooterPortraitV1,
               children: [X ? (0, r.jsxs)("div", {
-                className: M.portraitContentRow,
-                children: [q ? null : (0, r.jsx)(D.Z, {
+                className: L.portraitContentRow,
+                children: [Y ? null : (0, r.jsx)(P.Z, {
                   tooltipPosition: "top"
-                }), (0, r.jsx)(j.Z, {}), !er && (0, r.jsx)(P.Z, {
+                }), (0, r.jsx)(j.Z, {}), !er && (0, r.jsx)(D.Z, {
                   floatRight: true
                 })]
               }) : null, (0, r.jsxs)("div", {
-                className: M.portraitButtonsContainer,
+                className: L.portraitButtonsContainer,
                 children: [(0, r.jsxs)("div", {
-                  className: M.portraitButtonRow,
-                  children: [X ? null : (0, r.jsx)(_.Z, {
+                  className: L.portraitButtonRow,
+                  children: [X ? null : (0, r.jsx)(y.Z, {
                     handlePrimaryCtaClick: eo
                   }), (0, r.jsx)("div", {
-                    className: M.portraitCtaBtnWrapper,
+                    className: L.portraitCtaBtnWrapper,
                     children: (0, r.jsx)(x.Z, {})
                   })]
-                }), X ? (0, r.jsx)(_.Z, {
+                }), X ? (0, r.jsx)(y.Z, {
                   handlePrimaryCtaClick: eo
-                }) : (0, r.jsx)(P.Z, {})]
+                }) : (0, r.jsx)(D.Z, {})]
               })]
             }) : (0, r.jsxs)("div", {
-              className: i()(M.contentFooter, X ? M.contentFooterV2 : M.contentFooterV1),
+              className: i()(L.contentFooter, X ? L.contentFooterV2 : L.contentFooterV1),
               children: [X ? (0, r.jsxs)("div", {
-                className: M.contentFooterAdInfo,
-                children: [q ? null : (0, r.jsx)(D.Z, {
+                className: L.contentFooterAdInfo,
+                children: [Y ? null : (0, r.jsx)(P.Z, {
                   tooltipPosition: "top"
                 }), (0, r.jsx)(j.Z, {})]
               }) : (0, r.jsx)(d.Button, {
@@ -234,10 +234,10 @@ function B(e) {
                 text: k.intl.string(k.t.cpT0Cq),
                 onClick: a
               }), (0, r.jsxs)("div", {
-                className: i()(M.contentFooterButtonCont, {
-                  [M.contentFooterButtonContV2]: X
+                className: i()(L.contentFooterButtonCont, {
+                  [L.contentFooterButtonContV2]: X
                 }),
-                children: [!er && (0, r.jsx)(P.Z, {}), (0, r.jsx)(x.Z, {}), X ? (0, r.jsx)(_.Z, {
+                children: [!er && (0, r.jsx)(D.Z, {}), (0, r.jsx)(x.Z, {}), X ? (0, r.jsx)(y.Z, {
                   handlePrimaryCtaClick: eo
                 }) : null]
               })]
@@ -249,7 +249,7 @@ function B(e) {
   })
 }
 
-function H(e) {
+function U(e) {
   var {
     questId: t,
     overrideQuest: n,
@@ -279,13 +279,13 @@ function H(e) {
     } : null, [m]);
   return null != d && null != m && null != f ? (0, r.jsx)(F.Provider, {
     value: f,
-    children: (0, r.jsx)(y.A, {
+    children: (0, r.jsx)(_.A, {
       questOrQuests: d,
       questContent: h.jn.VIDEO_MODAL,
       minViewTimeSeconds: I.zw,
       trackGuildAndChannelMetadata: true,
       sourceQuestContent: a.sourceQuestContent,
-      children: e => (0, r.jsx)(B, V(L({}, a), {
+      children: e => (0, r.jsx)(B, V(M({}, a), {
         parentModalOpenStartClockTime: i,
         impressionRef: e,
         quest: d,

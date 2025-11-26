@@ -205,7 +205,7 @@ function ed(e) {
     eb = s * eE.amount,
     ey = (0, u.e7)([V.Z], () => V.Z.inReverseTrial() && K.ZP.hasBoostDiscount(M) && null != p),
     eO = K.ZP.hasBoostDiscount(M) && null != p && K.ZP.isPremiumAtLeast(K.ZP.getPremiumType(p.planId), J.PremiumTypes.TIER_1) ? ee.intl.format(ee.t.hf6YOY, {
-      planName: K.ZP.getDisplayPremiumType(p.planId)
+      planName: K.ZP.getTierDisplayNameByPlanId(p.planId)
     }) : ee.intl.format(eh ? ee.t.ba1L74 : ee.t.fkffDT, {
       onPremiumSubscriptionClick: m,
       discountPercentage: (0, Y.T3)(j.default.locale, J.Rr / 100),
@@ -365,7 +365,7 @@ function ef(e) {
       }), 0 !== g ? (0, r.jsx)(R.B1, {
         label: (0, r.jsx)(M.As, {
           label: ee.intl.formatToPlainString(ee.t.ZSVged, {
-            planName: (0, K.aq)(m[0].subscriptionPlanId)
+            planName: (0, K.MF)(m[0].subscriptionPlanId)
           }),
           tooltipText: ee.intl.string(ee.t.JmwQJM)
         }),
