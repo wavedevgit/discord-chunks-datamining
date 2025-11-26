@@ -18,18 +18,18 @@ function g(e) {
     guild: t,
     error: n,
     onClose: g
-  } = e, h = t.id, v = l.useCallback(() => {
+  } = e, h = t.id, p = l.useCallback(() => {
     g(), a.Z.open(h, u.pNK.INVITES)
-  }, [h, g]), p = l.useCallback(e => (0, i.jsx)(s.P3F, {
+  }, [h, g]), v = l.useCallback(e => (0, i.jsx)(s.P3F, {
     className: c.errorLink,
-    onClick: v,
+    onClick: p,
     children: (0, i.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "text-link",
       tag: "span",
       children: e
     })
-  }), [v]), I = l.useCallback(e => (0, i.jsx)(s.Anchor, {
+  }), [p]), I = l.useCallback(e => (0, i.jsx)(s.Anchor, {
     href: u.EYA.INVITES_HELP,
     target: "_blank",
     children: (0, i.jsx)(s.Text, {
@@ -39,7 +39,7 @@ function g(e) {
       children: e
     })
   }), []), m = n instanceof r.Z ? n.code !== u.evJ.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.Z.can(u.Plq.MANAGE_GUILD, t) ? d.intl.format(d.t["H/RUY1"], {
-    inviteListHook: p,
+    inviteListHook: v,
     inviteHelpHook: I
   }) : d.intl.string(d.t["/FxH6G"]) : "message" in n ? n.message : d.intl.string(d.t.eAn6z2);
   return (0, i.jsx)(s.Text, {

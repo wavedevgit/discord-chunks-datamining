@@ -28,7 +28,7 @@ class l extends Chunk651655.Z {
         break;
       case 1:
         o.Z.ensurePrivateChannel(e.user.id).then(o => {
-          let a = s.Z.getChannel(o);
+          let a = _.Z.getChannel(o);
           null != a && this._sendInvite(a, e.inviteKey, t, i, n)
         }, () => n(null, false))
     }

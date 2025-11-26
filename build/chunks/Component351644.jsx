@@ -72,8 +72,8 @@ function W(e) {
     builtInIntegrations: F,
     customWebhooks: K,
     followedChannelWebhooks: z,
-    isLoadingWebhooks: V,
-    canCreateWebhook: q,
+    isLoadingWebhooks: q,
+    canCreateWebhook: V,
     onManageBuiltIn: Y,
     onManageCustomWebhooks: J,
     onManageFollowedChannels: Q,
@@ -91,7 +91,7 @@ function W(e) {
   } = (0, c.cj)([_.Z], () => ({
     canManageWebhooks: null != W && _.Z.can(Z.Plq.MANAGE_WEBHOOKS, W) || null != H && _.Z.can(Z.Plq.MANAGE_WEBHOOKS, H),
     canManageGuild: null != W && null == H && _.Z.can(Z.Plq.MANAGE_GUILD, W)
-  }), [W, H]), eo = (0, v.Y)(H), es = (0, g.q)(null == H || null == (t = H.linkedLobby) ? true : t.application_id), ec = (0, O.F)(null == W ? true : W.id), {
+  }), [W, H]), eo = (0, O.Y)(H), es = (0, g.q)(null == H || null == (t = H.linkedLobby) ? true : t.application_id), ec = (0, v.F)(null == W ? true : W.id), {
     availableTwitchIntegrations: ed,
     availableYoutubeIntegrations: eu,
     guildTwitchIntegrations: ep,
@@ -130,14 +130,14 @@ function W(e) {
     })
   }, [G, ef, et]), ex = (0, c.e7)([T.Z], () => {
     if (null != W) return eh.find(e => T.Z.canShowOverviewTooltip(W.id, e.integration.id))
-  }, [eh, W]), ej = r.useMemo(() => true !== ex ? [ex, ...eh.filter(e => e.integration.id !== ex.integration.id)] : eh, [eh, ex]), ev = (0, u.s9z)(u.JQI), [eO, ey] = r.useState(false), e_ = r.useRef(0), eC = () => {
+  }, [eh, W]), ej = r.useMemo(() => true !== ex ? [ex, ...eh.filter(e => e.integration.id !== ex.integration.id)] : eh, [eh, ex]), eO = (0, u.s9z)(u.JQI), [ev, ey] = r.useState(false), e_ = r.useRef(0), eC = () => {
     ey(true), clearTimeout(e_.current), e_.current = setTimeout(() => {
       ey(false)
     }, 200)
   };
   r.useEffect(() => (window.addEventListener("scroll", eC, true), () => window.removeEventListener("scroll", eC)));
   let eN = ej.map(e => {
-      let t = !ev && e.integration.id === (null == ex ? true : ex.integration.id),
+      let t = !eO && e.integration.id === (null == ex ? true : ex.integration.id),
         {
           application: n,
           integration: r
@@ -146,15 +146,15 @@ function W(e) {
       return null != r.user ? l.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.Nu9sat, {
-          timestamp: E.default.extractTimestamp(r.id),
-          user: I.ZP.getUserTag(r.user)
+          timestamp: P.default.extractTimestamp(r.id),
+          user: w.ZP.getUserTag(r.user)
         })
       }) : l.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.gcdJ8J, {
-          timestamp: E.default.extractTimestamp(r.id)
+          timestamp: P.default.extractTimestamp(r.id)
         })
-      }), (0, i.jsx)(w.Z, {
+      }), (0, i.jsx)(I.Z, {
         name: n.name,
         imageSrc: N.ZP.getApplicationIconURL({
           id: n.id,
@@ -173,7 +173,7 @@ function W(e) {
         },
         details: l,
         guildId: null == W ? true : W.id,
-        isScrolling: eO,
+        isScrolling: ev,
         canShowMigrationTooltip: t
       }, "integration-".concat(r.id))
     }),
@@ -234,18 +234,18 @@ function W(e) {
       });
     return t > 0 ? l : a
   }(ee, ef, null == W ? true : W.id), eS = null);
-  let eE = S.Z.getArticleURL(Z.BhN.INTEGRATIONS),
-    eI = null != H ? A.t.YV0vh6 : A.t.FnZEJs,
-    eP = [];
+  let eP = S.Z.getArticleURL(Z.BhN.INTEGRATIONS),
+    ew = null != H ? A.t.YV0vh6 : A.t.FnZEJs,
+    eE = [];
   if (el) {
     let e, t, r, a, o;
-    eP.push((n = K.length, n > 0 ? t = (0, i.jsx)(u.LJT, {
+    eE.push((n = K.length, n > 0 ? t = (0, i.jsx)(u.LJT, {
       size: "xs"
-    }) : e = A.intl.string(A.t.lOQqJK), (0, i.jsx)(w.Z, {
+    }) : e = A.intl.string(A.t.lOQqJK), (0, i.jsx)(I.Z, {
       name: A.intl.string(A.t.xOg4SP),
       icon: u.tYf,
       buttonText: e,
-      buttonDisabled: !q,
+      buttonDisabled: !V,
       trailing: t,
       onButtonClick: J,
       hasNextSection: n > 0,
@@ -254,9 +254,9 @@ function W(e) {
           count: n
         })
       }]
-    }, "webhooks"))), (null == H ? true : H.type) === Z.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && Z.TPd.GUILD_THREADS_ONLY.has(H.type) || eP.push((l = z.length, l > 0 ? (o = (0, i.jsx)(u.LJT, {
+    }, "webhooks"))), (null == H ? true : H.type) === Z.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && Z.TPd.GUILD_THREADS_ONLY.has(H.type) || eE.push((l = z.length, l > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
-    }), a = Q) : (r = A.intl.string(A.t["ZwSt+T"]), a = () => open(S.Z.getArticleURL(Z.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(w.Z, {
+    }), a = Q) : (r = A.intl.string(A.t["ZwSt+T"]), a = () => open(S.Z.getArticleURL(Z.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(I.Z, {
       name: A.intl.string(A.t.OrV60r),
       icon: u.AsW,
       buttonText: r,
@@ -270,7 +270,7 @@ function W(e) {
       }]
     }, "channels-followed")))
   }
-  null == H && ec.length > 0 && eP.push((o = ec.length, (0, i.jsx)(w.Z, {
+  null == H && ec.length > 0 && eE.push((o = ec.length, (0, i.jsx)(I.Z, {
     name: A.intl.string(A.t.tqtDXC),
     icon: u.DuK,
     trailing: (0, i.jsx)(u.LJT, {
@@ -283,7 +283,7 @@ function W(e) {
         count: o
       })
     }]
-  }, "channels-syncing"))), eb && eP.push(function(e, t, n) {
+  }, "channels-syncing"))), eb && eE.push(function(e, t, n) {
     let r, l, a, o, s = b.Z.get(Z.ABu.TWITCH);
     return e > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
@@ -292,7 +292,7 @@ function W(e) {
     }), a = () => n(Z.ABu.TWITCH)) : (r = A.intl.string(A.t.bkvGkn), l = A.intl.string(A.t.Qq3X2M), a = () => (0, f.Z)({
       platformType: Z.ABu.TWITCH,
       location: "Integration Settings"
-    })), (0, i.jsx)(w.Z, {
+    })), (0, i.jsx)(I.Z, {
       name: A.intl.string(A.t.q4pBG3),
       icon: s.icon.whiteSVG,
       iconBackgroundColor: s.color,
@@ -305,7 +305,7 @@ function W(e) {
         text: l
       }]
     }, "integrations-twitch")
-  }(ed, ep, Y)), eg && eP.push(function(e, t, n) {
+  }(ed, ep, Y)), eg && eE.push(function(e, t, n) {
     let r, l, a, o, s = b.Z.get(Z.ABu.YOUTUBE);
     return e > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
@@ -314,7 +314,7 @@ function W(e) {
     }), a = () => n(Z.ABu.YOUTUBE)) : (r = A.intl.string(A.t.xEyQ3X), l = A.intl.string(A.t.T0ivgQ), a = () => (0, f.Z)({
       platformType: Z.ABu.YOUTUBE,
       location: "Integration Settings"
-    })), (0, i.jsx)(w.Z, {
+    })), (0, i.jsx)(I.Z, {
       name: A.intl.string(A.t.aS6cK4),
       icon: s.icon.whiteSVG,
       iconBackgroundColor: s.color,
@@ -328,28 +328,28 @@ function W(e) {
       }]
     }, "integrations-youtube")
   }(eu, em, Y));
-  let ew = null != H && eo && null != es;
+  let eI = null != H && eo && null != es;
   return (0, i.jsxs)("div", {
     className: a()(null != eS ? D.footerPlaceholder : null),
     children: [(0, i.jsx)(u.Text, {
       variant: "text-sm/normal",
-      children: A.intl.format(eI, {
-        helpdeskArticle: eE
+      children: A.intl.format(ew, {
+        helpdeskArticle: eP
       })
     }), (0, i.jsx)(u.izJ, {
       className: D.divider
-    }), V || ei || null == W ? (0, i.jsx)(u.$jN, {
+    }), q || ei || null == W ? (0, i.jsx)(u.$jN, {
       className: D.__invalid_spinner,
       type: u.$jN.Type.SPINNING_CIRCLE
     }) : (0, i.jsxs)(i.Fragment, {
-      children: [eP, ew && (0, i.jsxs)(i.Fragment, {
-        children: [eP.length > 0 ? (0, i.jsx)(u.izJ, {
+      children: [eE, eI && (0, i.jsxs)(i.Fragment, {
+        children: [eE.length > 0 ? (0, i.jsx)(u.izJ, {
           className: D.divider
         }) : null, (0, i.jsx)(u.Heading, {
           variant: "heading-md/semibold",
           className: D.sectionHeader,
           children: A.intl.string(A.t.oAvIAg)
-        }), (0, i.jsx)(P.t, {
+        }), (0, i.jsx)(E.t, {
           channel: H,
           application: es,
           showApplicationImage: true,
@@ -361,7 +361,7 @@ function W(e) {
           })
         })]
       }), ea ? (0, i.jsxs)(i.Fragment, {
-        children: [eP.length > 0 || ew ? (0, i.jsx)(u.izJ, {
+        children: [eE.length > 0 || eI ? (0, i.jsx)(u.izJ, {
           className: D.divider
         }) : null, (0, i.jsx)(u.Heading, {
           variant: "heading-md/semibold",

@@ -22,14 +22,14 @@ function u(e) {
     isChannelPublic: _ = true,
     entityType: p,
     onJoinClick: f,
-    onRsvpClick: m,
-    onStartClick: v,
-    onInviteClick: g,
-    onEndClick: h,
+    onRsvpClick: h,
+    onStartClick: g,
+    onInviteClick: m,
+    onEndClick: v,
     onJoinGuildClick: b,
     isJoined: x = false,
     channel: C
-  } = e, I = true !== f, j = function(e) {
+  } = e, j = true !== f, k = function(e) {
     let {
       onInviteClick: n,
       canInvite: t,
@@ -55,12 +55,12 @@ function u(e) {
       "aria-label": d.intl.string(d.t.WqhZss)
     }
   }({
-    onInviteClick: g,
+    onInviteClick: m,
     canInvite: u,
     isChannelPublic: _,
     channel: C
-  }), k = [];
-  if (null != j && k.push(j), n && p !== s.WX.EXTERNAL && k.push({
+  }), I = [];
+  if (null != k && I.push(k), n && p !== s.WX.EXTERNAL && I.push({
       variant: "active",
       size: "sm",
       onClick: f,
@@ -73,37 +73,37 @@ function u(e) {
         return t ? n ? d.intl.string(d.t.aW2YlJ) : i ? d.intl.string(d.t.nxUtoQ) : d.intl.string(d.t.ZYO5OK) : d.intl.string(d.t.TVBCKZ)
       }({
         isJoined: x,
-        canJoin: I,
+        canJoin: j,
         isVoiceChannel: p === s.WX.VOICE
       }),
-      disabled: !I
-    }), t && null != b && k.push({
+      disabled: !j
+    }), t && null != b && I.push({
       variant: "active",
       size: "sm",
       text: d.intl.string(d.t["2BP08E"]),
       onClick: b
-    }), !t && !n && null != m) {
+    }), !t && !n && null != h) {
     let e = i && !t;
-    k.push({
+    I.push({
       variant: e ? "active" : "secondary",
       size: "sm",
       icon: e ? l.dz2 : l.Dkj,
       text: d.intl.string(d.t.DlcqlU),
-      onClick: m,
+      onClick: h,
       disabled: t
     })
   }
-  return n || null == v || k.push({
+  return n || null == g || I.push({
     variant: "primary",
     size: "sm",
-    onClick: v,
+    onClick: g,
     text: d.intl.string(d.t.I0v0Qv)
-  }), n && null != h && k.push({
+  }), n && null != v && I.push({
     variant: "secondary",
     size: "sm",
-    onClick: h,
+    onClick: v,
     text: d.intl.string(d.t.qaYzPA)
-  }), k
+  }), I
 }
 
 function _(e) {

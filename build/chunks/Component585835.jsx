@@ -1,7 +1,7 @@
 /** Chunk was on 86736 **/
 /** chunk id: 585835, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,46 +22,46 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk473059 = require("./473059.js");
 
-function O(e) {
+function v(e) {
   var t, n, l;
   let {
-    name: O,
+    name: v,
     icon: y,
     imageSrc: _,
     iconBackgroundColor: C,
     iconClassName: N,
     iconWrapperClassName: S,
-    details: E,
-    integration: I,
-    buttonText: P,
-    buttonDisabled: w,
+    details: P,
+    integration: w,
+    buttonText: E,
+    buttonDisabled: I,
     hasNextSection: T,
     onButtonClick: Z,
     guildId: k,
     isScrolling: A,
     canShowMigrationTooltip: D,
     trailing: R
-  } = e, [L, M] = r.useState(false), U = D && !A && !L && true !== k && null != I, B = r.useRef(null), W = r.useRef(null), H = null == P || null == Z ? null : T ? (0, i.jsxs)(d.Kqy, {
+  } = e, [L, M] = r.useState(false), U = D && !A && !L && true !== k && null != w, B = r.useRef(null), W = r.useRef(null), H = null == E || null == Z ? null : T ? (0, i.jsxs)(d.Kqy, {
     direction: "horizontal",
     fullWidth: false,
     align: "center",
     ref: W,
     children: [(0, i.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: P
+      children: E
     }), T ? (0, i.jsx)(d.Fbu, {
       size: "custom",
       color: "currentColor",
       width: 10,
       height: 10,
-      className: v.caret
+      className: O.caret
     }) : null]
   }) : (0, i.jsx)(d.Button, {
     size: "sm",
     buttonRef: B,
-    disabled: w,
+    disabled: I,
     onClick: Z,
-    text: P
+    text: E
   });
   r.useEffect(() => {
     var e, t;
@@ -83,7 +83,7 @@ function O(e) {
       }
       return e
     }({}, (0, u.hH)(k)), t = t = {
-      application_id: null == I ? true : I.application.id,
+      application_id: null == w ? true : w.application.id,
       location: "overview"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -95,13 +95,13 @@ function O(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [k, null == I ? true : I.application.id, U]);
+  }, [k, null == w ? true : w.application.id, U]);
   let G = U && (null != W.current || null != B.current) ? (0, i.jsx)(c.J2, {
       targetElementRef: T ? W : B,
       title: j.intl.string(j.t.ufFDiC),
       body: j.intl.string(j.t.TyMJwC),
       onRequestClose: () => {
-        M(true), h.Z.dismissOverviewTooltip(k, I.integration)
+        M(true), h.Z.dismissOverviewTooltip(k, w.integration)
       },
       position: "bottom",
       align: "center",
@@ -111,21 +111,21 @@ function O(e) {
     }) : null,
     F = (0, s.Wu)([m.Z], () => {
       var e;
-      return null != I && null != k && null != (e = m.Z.getApplicationEntitlementsForGuild(I.application.id, k)) ? e : []
+      return null != w && null != k && null != (e = m.Z.getApplicationEntitlementsForGuild(w.application.id, k)) ? e : []
     }),
     K = (0, p.LD)(k, true),
-    z = (null == I ? true : I.application) != null && Object.keys(null != (l = null == (n = K.result) || null == (t = n.sections[I.application.id]) ? true : t.commands) ? l : {}).length > 0,
-    V = (0, i.jsxs)(d.Kqy, {
+    z = (null == w ? true : w.application) != null && Object.keys(null != (l = null == (n = K.result) || null == (t = n.sections[w.application.id]) ? true : t.commands) ? l : {}).length > 0,
+    q = (0, i.jsxs)(d.Kqy, {
       direction: "horizontal",
       align: "center",
       children: [(0, i.jsx)(f.Z, {
-        name: O,
+        name: v,
         icon: y,
         imageSrc: _,
         iconBackgroundColor: C,
         iconClassName: N,
         iconWrapperClassName: S,
-        details: E,
+        details: P,
         isPremium: F.length > 0,
         children: function(e, t) {
           var n, r;
@@ -159,21 +159,21 @@ function O(e) {
               items: l
             })
           })
-        }(I, z)
+        }(w, z)
       }), G, H, R]
     });
   return T ? (0, i.jsx)(d.P3F, {
     onClick: () => {
-      D && null != k && null != I && h.Z.dismissOverviewTooltip(k, I.integration), null == Z || Z()
+      D && null != k && null != w && h.Z.dismissOverviewTooltip(k, w.integration), null == Z || Z()
     },
     children: (0, i.jsx)(d.Zbd, {
       editable: true,
-      className: a()(v.card, v.clickable),
-      children: V
+      className: a()(O.card, O.clickable),
+      children: q
     })
   }) : (0, i.jsx)(d.Zbd, {
     editable: true,
-    className: v.card,
-    children: V
+    className: O.card,
+    children: q
   })
 }

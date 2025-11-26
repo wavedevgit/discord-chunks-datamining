@@ -44,8 +44,8 @@ function Z(e) {
   } = e, g = (0, o.e7)([j.Z], () => j.Z.getGuild(l));
   a()(null != g, "");
   let h = (0, o.e7)([x.Z], () => x.Z.getSortedRoles(l)),
-    [O, E] = r.useState(new Set),
-    I = r.useMemo(() => {
+    [v, P] = r.useState(new Set),
+    w = r.useMemo(() => {
       let e = (0, b.bD)(l),
         t = h.toReversed().reduce((e, t, n) => (e[t.id] = n, e), {});
       return Object.values(c).filter(e => e.canRead).sort((n, i) => {
@@ -56,8 +56,8 @@ function Z(e) {
             return function(e, t, n) {
               let i = Number(e.canWrite) - Number(t.canWrite);
               if (0 !== i) return i;
-              let r = v.default.getUser(e.id),
-                l = v.default.getUser(t.id);
+              let r = O.default.getUser(e.id),
+                l = O.default.getUser(t.id);
               if (null != r && null != l) {
                 let e = y.ZP.getName(n, true, r),
                   t = y.ZP.getName(n, true, l);
@@ -77,10 +77,10 @@ function Z(e) {
         }
       })
     }, [l, c, h]),
-    P = r.useCallback((e, t) => {
+    E = r.useCallback((e, t) => {
       n({}, [(0, S.rE)(e, t)])
     }, [n]),
-    w = r.useCallback((e, t, i) => {
+    I = r.useCallback((e, t, i) => {
       let r = (0, S.rE)(e, t);
       null != c[r] && n({
         [r]: {
@@ -91,20 +91,20 @@ function Z(e) {
       }, [])
     }, [n, c]);
   r.useEffect(() => {
-    let e = Object.values(c).filter(e => e.type === m.Kw.USER && !e.canRead && !O.has(e.id)).map(e => e.id);
-    0 !== e.length && (u.Z.requestMembersById(l, e, false), E(t => new Set([...t, ...e])))
-  }, [l, c, O, E]);
+    let e = Object.values(c).filter(e => e.type === m.Kw.USER && !e.canRead && !v.has(e.id)).map(e => e.id);
+    0 !== e.length && (u.Z.requestMembersById(l, e, false), P(t => new Set([...t, ...e])))
+  }, [l, c, v, P]);
   let Z = (0, o.e7)([N.Z], () => N.Z.getApplicationId()),
     A = (0, o.e7)([C.default], () => null == Z ? true : C.default.integrations.find(e => {
       var t;
       return (null == (t = e.application) ? true : t.id) === Z
     })),
     D = (0, o.e7)([f.Z], () => true !== A && f.Z.canShowToggleTooltip(A.id));
-  return I.length > 0 ? I.map(e => (0, i.jsx)(k, {
+  return w.length > 0 ? w.map(e => (0, i.jsx)(k, {
     guild: g,
     commandId: t,
-    onChange: t => w(e.id, e.type, t),
-    onRemove: () => P(e.id, e.type),
+    onChange: t => I(e.id, e.type, t),
+    onRemove: () => E(e.id, e.type),
     overwrite: e,
     integration: A,
     canShowMigrationTooltip: D,
@@ -128,19 +128,19 @@ function k(e) {
       onRemove: f,
       overwrite: x,
       integration: j,
-      canShowMigrationTooltip: v,
+      canShowMigrationTooltip: O,
       hasAccessToMutatePermissions: y
     } = e,
     _ = x.id === o.id || x.id === (0, b.bD)(o.id),
     C = null == j || null == (n = j.application) || null == (t = n.bot) ? true : t.username,
     N = !x.canWrite || !y,
     S = h.default.getId();
-  y ? x.canWrite || (x.type === m.Kw.USER ? a = x.id === S ? w.intl.string(w.t["1VF/0x"]) : w.intl.string(w.t.P1GnEd) : x.type === m.Kw.ROLE && (a = w.intl.string(w.t.mcAijf))) : a = null != d ? w.intl.string(w.t.tybdas) : w.intl.string(w.t["z2hjk/"]);
-  let Z = v && null != j && x.id === o.id && true !== C && !x.permission;
+  y ? x.canWrite || (x.type === m.Kw.USER ? a = x.id === S ? I.intl.string(I.t["1VF/0x"]) : I.intl.string(I.t.P1GnEd) : x.type === m.Kw.ROLE && (a = I.intl.string(I.t.mcAijf))) : a = null != d ? I.intl.string(I.t.tybdas) : I.intl.string(I.t["z2hjk/"]);
+  let Z = O && null != j && x.id === o.id && true !== C && !x.permission;
   r.useEffect(() => {
     if (Z) {
       var e, t, n;
-      O.default.track(P.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (t = function(e) {
+      v.default.track(E.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -179,7 +179,7 @@ function k(e) {
       position: "left",
       children: (0, i.jsx)("div", {
         ref: k,
-        children: (0, i.jsx)(I.Z, {
+        children: (0, i.jsx)(w.Z, {
           isDisabled: N,
           currentValue: x.permission,
           onChange: Z ? e => {
@@ -190,8 +190,8 @@ function k(e) {
     }),
     R = (0, i.jsx)(s.J2, {
       targetElementRef: k,
-      title: w.intl.string(w.t.ufFDiC),
-      body: w.intl.format(w.t.pW4Crz, {
+      title: I.intl.string(I.t.ufFDiC),
+      body: I.intl.format(I.t.pW4Crz, {
         botName: C,
         link: "https://discord.com/blog/welcome-to-the-new-era-of-discord-apps/"
       }),
@@ -207,7 +207,7 @@ function k(e) {
     className: T.entryItem,
     children: [(0, i.jsx)("div", {
       className: T.entryName,
-      children: (0, i.jsx)(E.Z, {
+      children: (0, i.jsx)(P.Z, {
         guild: o,
         id: x.id,
         type: x.type,
@@ -237,7 +237,7 @@ function A(e) {
     className: T.removeActions,
     children: (0, i.jsx)(d.P3F, {
       className: T.removeContainer,
-      "aria-label": w.intl.string(w.t.mT0CQM),
+      "aria-label": I.intl.string(I.t.mT0CQM),
       onClick: l,
       children: (0, i.jsx)(d.XHJ, {
         size: "md",

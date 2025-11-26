@@ -33,7 +33,7 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     } = e;
     return (0, i.jsx)(d.Z, {
       value: t,
-      hideMessage: l ? x.intl.string(x.t["6HzNgZ"]) : null,
+      hideMessage: l ? S.intl.string(S.t["6HzNgZ"]) : null,
       buttonColor: o.zx.Colors.BRAND,
       onCopy: s,
       autoFocus: n,
@@ -50,10 +50,10 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       isApplicationBypassToggleEnabled: g,
       setInviteFlags: y,
       copyValue: E,
-      changePage: C,
-      inviteChannel: _,
-      source: b,
-      code: T,
+      changePage: _,
+      inviteChannel: C,
+      source: T,
+      code: b,
       guildScheduledEvent: N,
       disabled: A,
       application: P
@@ -66,14 +66,14 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     } = d, O = l.useCallback(() => {
       h.default.track(m.rMx.COPY_INSTANT_INVITE, {
         server: c.Z.getGuildId(),
-        channel: null == _ ? true : _.id,
-        channel_type: null == _ ? true : _.type,
-        location: b,
-        code: T,
+        channel: null == C ? true : C.id,
+        channel_type: null == C ? true : C.type,
+        location: T,
+        code: b,
         guild_scheduled_event_id: null == N ? true : N.id,
         application_id: null == P ? true : P.id
       })
-    }, [null == P ? true : P.id, _, b, T, N]);
+    }, [null == P ? true : P.id, C, T, b, N]);
     return (0, i.jsxs)(u.Kqy, {
       gap: 16,
       children: [(0, i.jsx)(f, {
@@ -85,20 +85,20 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
         checked: (0, r.yE)(V, s.$.IS_APPLICATION_BYPASS),
         onChange: e => y((0, r.mB)(V, s.$.IS_APPLICATION_BYPASS, e)),
         disabled: A,
-        label: x.intl.string(x.t["1i1bUl"]),
-        description: x.intl.string(x.t["jvd/LF"])
+        label: S.intl.string(S.t["1i1bUl"]),
+        description: S.intl.string(S.t["jvd/LF"])
       }), n || j ? null : (0, i.jsxs)(u.Text, {
         variant: "text-xs/normal",
-        className: S.footerText,
-        children: [(0, v.Vg)(M, Z), " ", a ? (0, i.jsx)(u.Anchor, {
-          onClick: () => C(I.RV.SETTINGS),
-          children: x.intl.string(x.t["VNe8P/"])
+        className: x.footerText,
+        children: [(0, p.Vg)(M, Z), " ", a ? (0, i.jsx)(u.Anchor, {
+          onClick: () => _(I.RV.SETTINGS),
+          children: S.intl.string(S.t["VNe8P/"])
         }) : null]
       }), !n && a && j ? (0, i.jsxs)(u.Text, {
         variant: "text-xs/normal",
-        className: S.footerText,
-        children: [x.intl.string(x.t["0M2U95"]), " "]
-      }) : null, null != w ? (0, i.jsx)(p.W, {
+        className: x.footerText,
+        children: [S.intl.string(S.t["0M2U95"]), " "]
+      }) : null, null != w ? (0, i.jsx)(v.W, {
         guild: t,
         error: w,
         onClose: o

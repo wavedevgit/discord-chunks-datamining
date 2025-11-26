@@ -1,7 +1,7 @@
 /** Chunk was on 86736 **/
 /** chunk id: 664452, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -39,7 +39,7 @@ function j(e) {
   return e
 }
 
-function v(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,14 +52,14 @@ function v(e, t) {
   }), e
 }
 
-function O(e) {
+function v(e) {
   let {
     guildId: t,
     transitionState: n,
-    onClose: O,
+    onClose: v,
     analyticsData: y
-  } = e, _ = (0, a.e7)([s.Z], () => s.Z.getGuild(t), [t]), C = !!(null == _ ? true : _.features.has(f.GuildFeatures.INVITES_DISABLED)), [N] = r.useState(false), [S, E] = r.useState(g.Fl), I = (0, a.e7)([m.Z], () => m.Z.getGuildIncident(t)), P = (0, u.BT)(_), w = (0, p.SG)(I) || C, T = (0, p.sN)(I), [Z, k] = r.useState(w), [A, D] = r.useState(T), [R, L] = r.useState(false), M = Z !== w || A !== T || R, U = C && !P;
-  if (null == _) return O(), null;
+  } = e, _ = (0, a.e7)([s.Z], () => s.Z.getGuild(t), [t]), C = !!(null == _ ? true : _.features.has(f.GuildFeatures.INVITES_DISABLED)), [N] = r.useState(false), [S, P] = r.useState(g.Fl), w = (0, a.e7)([m.Z], () => m.Z.getGuildIncident(t)), E = (0, u.BT)(_), I = (0, p.SG)(w) || C, T = (0, p.sN)(w), [Z, k] = r.useState(I), [A, D] = r.useState(T), [R, L] = r.useState(false), M = Z !== I || A !== T || R, U = C && !E;
+  if (null == _) return v(), null;
 
   function B() {
     k(e => !e)
@@ -69,13 +69,13 @@ function O(e) {
     title: h.intl.string(h.t.oCYAc7),
     actions: [{
       text: h.intl.string(h.t["ETE/oC"]),
-      onClick: O,
+      onClick: v,
       variant: "secondary",
       disabled: N
     }, {
       text: h.intl.string(h.t["pwm/z0"]),
       onClick: () => {
-        (w || T) && !Z && !A ? ((0, d.n)(_.id, false, false), (0, o.ZDy)(() => Promise.resolve(e => (0, i.jsx)(b.default, v(j({}, e), {
+        (I || T) && !Z && !A ? ((0, d.n)(_.id, false, false), (0, o.ZDy)(() => Promise.resolve(e => (0, i.jsx)(b.default, O(j({}, e), {
           guildId: t
         }))))) : (0, d.n)(_.id, Z, A, S);
         let {
@@ -91,19 +91,19 @@ function O(e) {
           intervention_type_enabled: (0, p.sO)(Z, A),
           intervention_type_disabled: (0, p.lk)(Z, A),
           duration: 60 * S
-        }), O()
+        }), v()
       },
       loading: N,
       disabled: !M
     }],
-    onClose: O,
+    onClose: v,
     children: (0, i.jsxs)("div", {
       className: x.mainContainer,
       children: [(0, i.jsx)(o.PhF, {
         placeholder: h.intl.string(h.t.vKYZzc),
         options: (0, g.c1)(),
         select: e => {
-          E(e), L(true)
+          P(e), L(true)
         },
         isSelected: e => e === S,
         serialize: e => String(e)
@@ -124,7 +124,7 @@ function O(e) {
           "data-migration-pending": true,
           text: h.intl.string(h.t["9GPbsV"]),
           shouldShow: C,
-          children: e => (0, i.jsx)("div", v(j({}, e), {
+          children: e => (0, i.jsx)("div", O(j({}, e), {
             className: x.toggle,
             children: (0, i.jsx)(o.rsf, {
               onChange: B,

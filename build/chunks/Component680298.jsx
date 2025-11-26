@@ -76,7 +76,7 @@ function p(e) {
         }), n))
       }
     })
-  }, [b]), j = b.type === o.yU.CHAT ? l.SsZ : l.hH0, v = (0, s.gw)(b.type, b.displayName);
+  }, [b]), j = b.type === o.yU.CHAT ? l.SsZ : l.hH0, O = (0, s.gw)(b.type, b.displayName);
   return (0, i.jsxs)(l.P3F, {
     onClick: h,
     className: d.item,
@@ -89,7 +89,7 @@ function p(e) {
         color: "currentColor"
       }), (0, i.jsx)(l.Text, {
         variant: "text-md/normal",
-        children: v
+        children: O
       })]
     }), (0, i.jsx)("div", {
       className: d.statusContainer,

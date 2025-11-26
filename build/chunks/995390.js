@@ -22,7 +22,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk399860 = require("./399860.js"),
   Chunk981631 = require("./981631.js");
 
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -44,7 +44,7 @@ function O(e) {
 function y(e, t, n) {
   let r = (0, s.e7)([x.Z], () => x.Z.getApplicationPermissions()),
     a = i.useMemo(() => (function(e, t) {
-      let n = O({}, t),
+      let n = v({}, t),
         i = (0, u.bD)(e),
         r = (0, j.rE)(i, d.Kw.CHANNEL),
         l = (0, j.rE)(e, d.Kw.ROLE);
@@ -70,12 +70,12 @@ function y(e, t, n) {
     }, [n]),
     C = null != n ? n : t,
     N = null != n ? y : a,
-    S = i.useMemo(() => null != _ ? _ : O({}, null != N ? N : {}), [_, N]),
-    E = i.useMemo(() => Object.keys(S).length, [S]),
-    I = i.useMemo(() => null == N || null == S ? null : !o().isEqual(N, S), [N, S]);
+    S = i.useMemo(() => null != _ ? _ : v({}, null != N ? N : {}), [_, N]),
+    P = i.useMemo(() => Object.keys(S).length, [S]),
+    w = i.useMemo(() => null == N || null == S ? null : !o().isEqual(N, S), [N, S]);
   return i.useEffect(() => {
-    C === t && (I ? c.Z.startEditingCommandPermissions(C) : c.Z.stopEditingCommandPermissions(C))
-  }, [t, I, C]), {
+    C === t && (w ? c.Z.startEditingCommandPermissions(C) : c.Z.stopEditingCommandPermissions(C))
+  }, [t, w, C]), {
     originalApplicationPermissions: a,
     originalCommandPermissions: y,
     editedTargetPermissions: function(e, t) {
@@ -116,14 +116,14 @@ function y(e, t, n) {
           if (s.type === d.Kw.CHANNEL) {
             let e = s.id === i,
               n = y[s.id];
-            t = e || g.Z.can(v.Plq.VIEW_CHANNEL, n), c = true
+            t = e || g.Z.can(O.Plq.VIEW_CHANNEL, n), c = true
           } else if (s.type === d.Kw.ROLE) {
             let i = s.id === e,
               l = _[s.id];
             t = i || null != l, c = o || i || g.Z.isRoleHigher(n, r, l)
           } else if (s.type === d.Kw.USER) {
             let e = C[s.id];
-            t = null != e, c = null != e && (o || g.Z.canManageUser(v.Plq.USE_APPLICATION_COMMANDS, e, n))
+            t = null != e, c = null != e && (o || g.Z.canManageUser(O.Plq.USE_APPLICATION_COMMANDS, e, n))
           }
           l[a] = function(e, t) {
             return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -136,7 +136,7 @@ function y(e, t, n) {
             })(Object(t)).forEach(function(n) {
               Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
             }), e
-          }(O({}, s), {
+          }(v({}, s), {
             canRead: t,
             canWrite: c
           })
@@ -144,7 +144,7 @@ function y(e, t, n) {
         return l
       }, [y, n, r, o, t, _, C])
     }(e, S),
-    hasChanges: I,
-    selectedPermissionCount: E
+    hasChanges: w,
+    selectedPermissionCount: P
   }
 }

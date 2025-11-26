@@ -24,9 +24,9 @@ function p(e) {
     helpText: f,
     errors: h,
     canNavigate: x
-  } = e, j = o.Z.get(m), v = r.useCallback(async e => {
+  } = e, j = o.Z.get(m), O = r.useCallback(async e => {
     x() && (await s.Z.enableIntegration(p.id, e.type, e.id), a.Z.startEditingIntegration(e.id))
-  }, [x, p.id]), O = r.useCallback(e => {
+  }, [x, p.id]), v = r.useCallback(e => {
     x() && (e.id === (null == n ? true : n.id) && a.Z.stopEditingIntegration(), s.Z.disableIntegration(p.id, e.id))
   }, [x, n, p.id]), y = r.useCallback(e => {
     x() && (e === (null == n ? true : n.id) ? a.Z.stopEditingIntegration() : a.Z.startEditingIntegration(e))
@@ -51,8 +51,8 @@ function p(e) {
       editedIntegration: n,
       guild: p,
       isExpanded: (null == n ? true : n.id) === e.id,
-      onEnable: v,
-      onDisable: O,
+      onEnable: O,
+      onDisable: v,
       onToggleExpand: () => y(e.id)
     }, e.id)), (0, i.jsx)(l.Text, {
       className: u.helpText,

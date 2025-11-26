@@ -1,7 +1,7 @@
 /** Chunk was on 86736 **/
 /** chunk id: 270394, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => q
+  Z: () => V
 }), require("./997841.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -88,21 +88,21 @@ function K(e) {
     expiresAt: d,
     onRevokeInvite: u
   } = e;
-  return (0, i.jsxs)(E.Z, {
+  return (0, i.jsxs)(P.Z, {
     className: a()(B.inviteSettingsInviteRow, W.card, {
       [B.inviteDisabledRow]: t
     }),
-    children: [(0, i.jsxs)(E.Z, {
+    children: [(0, i.jsxs)(P.Z, {
       grow: 3,
       basis: 0,
-      align: E.Z.Align.CENTER,
+      align: P.Z.Align.CENTER,
       className: B.text,
       children: [null != n && (0, i.jsx)(y.Z, {
         user: n,
         size: f.EFr.SIZE_24,
         className: B.avatar
       }), (0, i.jsxs)("div", {
-        children: [null != n && (0, i.jsx)(v.Z, {
+        children: [null != n && (0, i.jsx)(O.Z, {
           discriminatorClass: B.discriminator,
           user: n
         }), r && null != l && (0, i.jsx)(f.Text, {
@@ -111,30 +111,30 @@ function K(e) {
           children: (0, N.F6)(l, D.default, A.Z, true)
         })]
       })]
-    }), (0, i.jsx)(E.Z, {
+    }), (0, i.jsx)(P.Z, {
       grow: 3,
       shrink: 1,
       basis: 0,
-      align: E.Z.Align.CENTER,
+      align: P.Z.Align.CENTER,
       className: B.text,
       children: (0, i.jsxs)("div", {
         className: B.inviteSourceContainer,
         children: [o, s]
       })
-    }), (0, i.jsx)(E.Z, {
+    }), (0, i.jsx)(P.Z, {
       grow: 1,
       basis: 0,
-      align: E.Z.Align.CENTER,
+      align: P.Z.Align.CENTER,
       className: B.text,
       children: (0, i.jsx)(f.Text, {
         className: B.uses,
         variant: "text-sm/normal",
         children: c
       })
-    }), (0, i.jsx)(E.Z, {
+    }), (0, i.jsx)(P.Z, {
       grow: 2,
       basis: 0,
-      align: E.Z.Align.CENTER,
+      align: P.Z.Align.CENTER,
       className: a()(B.text, B.countdownColumn),
       children: (0, i.jsx)(f.Text, {
         className: B.countdown,
@@ -192,7 +192,7 @@ function z(e) {
   })
 }
 
-function V(e) {
+function q(e) {
   let {
     applicationId: t,
     channel: r,
@@ -209,9 +209,9 @@ function V(e) {
     channel: r,
     inviteSource: (0, i.jsxs)("div", {
       className: B.linkedChannelJoinSource,
-      children: [(0, i.jsx)(I.Z, {
+      children: [(0, i.jsx)(w.Z, {
         game: o,
-        size: I.A.XXSMALL
+        size: w.A.XXSMALL
       }), (0, i.jsx)(f.Text, {
         className: B.linkedChannelJoinSourceText,
         variant: "text-sm/normal",
@@ -238,7 +238,7 @@ function V(e) {
   })
 }
 
-function q(e) {
+function V(e) {
   let {
     invites: t,
     guild: l,
@@ -253,18 +253,18 @@ function q(e) {
   let h = (0, _.ZP)(),
     x = (0, R.MQ)(l),
     j = (0, R.O4)(l),
-    v = r.useMemo(() => null == t || g ? [] : d()(t).sortBy(e => {
+    O = r.useMemo(() => null == t || g ? [] : d()(t).sortBy(e => {
       var t, n;
       return (null != (n = null == (t = e.inviter) ? true : t.username) ? n : "").toLowerCase()
     }).value(), [t, g]),
     y = (0, m.Wu)([k.Z], () => k.Z.getSortedLinkedChannelsForGuild(l.id).filter(e => null == u || e.id === u.id)),
-    C = r.useMemo(() => g ? [] : [...v.map(e => ({
+    C = r.useMemo(() => g ? [] : [...O.map(e => ({
       type: "invite",
       data: e
     })), ...y.map(e => ({
       type: "channel",
       data: e
-    }))], [v, y, g]),
+    }))], [O, y, g]),
     N = () => {
       (0, f.ZDy)(async () => e => (0, i.jsx)(T.default, F(G({}, e), {
         channel: u,
@@ -272,17 +272,17 @@ function q(e) {
         source: M.t4x.SETTINGS_INVITE
       })))
     },
-    [S, I] = r.useState(62),
+    [S, w] = r.useState(62),
     Z = () => {
       let e = {
-        source: P.Zu.GUILD_SETTINGS
+        source: E.Zu.GUILD_SETTINGS
       };
-      (0, f.ZDy)(async () => t => (0, i.jsx)(w.default, F(G({}, t), {
+      (0, f.ZDy)(async () => t => (0, i.jsx)(I.default, F(G({}, t), {
         guildId: l.id,
         analyticsData: e
       })))
     };
-  return (0, i.jsx)(O.Xi, {
+  return (0, i.jsx)(v.Xi, {
     sections: [1, +!c, +!!c, Math.max(1, C.length)],
     renderSection: e => {
       let {
@@ -303,8 +303,8 @@ function q(e) {
             })]
           })
         }, "empty-state");
-        else return (0, i.jsxs)(E.Z, {
-          children: [(0, i.jsx)(E.Z.Child, {
+        else return (0, i.jsxs)(P.Z, {
+          children: [(0, i.jsx)(P.Z.Child, {
             grow: 3,
             basis: 0,
             className: H.marginReset,
@@ -312,7 +312,7 @@ function q(e) {
               variant: "text-md/medium",
               children: U.intl.string(U.t.EgHyKy)
             })
-          }), (0, i.jsx)(E.Z.Child, {
+          }), (0, i.jsx)(P.Z.Child, {
             basis: 0,
             grow: 3,
             className: H.marginReset,
@@ -320,14 +320,14 @@ function q(e) {
               variant: "text-md/medium",
               children: y.length > 0 ? U.intl.string(U.t.l7VISQ) : U.intl.string(U.t.LBlFEN)
             })
-          }), (0, i.jsx)(E.Z.Child, {
+          }), (0, i.jsx)(P.Z.Child, {
             grow: 1,
             basis: 0,
             children: (0, i.jsx)(f.Text, {
               variant: "text-md/medium",
               children: U.intl.string(U.t.erWrmA)
             })
-          }), (0, i.jsx)(E.Z.Child, {
+          }), (0, i.jsx)(P.Z.Child, {
             grow: 2,
             basis: 0,
             children: (0, i.jsx)(f.Text, {
@@ -383,8 +383,8 @@ function q(e) {
         })]
       });
       if (2 === t) return (0, i.jsx)(L.Y, {
-        hasInvites: v.length > 0,
-        setHeight: I,
+        hasInvites: O.length > 0,
+        setHeight: w,
         onShowDisableInvites: Z,
         onShowInviteModal: N,
         hasInviteDisabledPermission: x,
@@ -407,7 +407,7 @@ function q(e) {
             }, e.data.code);
           case "channel":
             var r;
-            return (0, i.jsx)(V, {
+            return (0, i.jsx)(q, {
               applicationId: null == (r = e.data.linkedLobby) ? true : r.application_id,
               channel: e.data,
               showChannel: p,

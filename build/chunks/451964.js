@@ -2,6 +2,7 @@
 /** chunk id: 451964, original params: e,n,t (module,exports,require) **/
 module.exports = {
   wrapper: "wrapper__67dba",
+  hasSections: "hasSections__67dba",
   channelIcon: "channelIcon__67dba",
   inviteSectionHeader: "inviteSectionHeader__67dba",
   inviteSectionToggleIcon: "inviteSectionToggleIcon__67dba",
@@ -17,6 +18,5 @@ module.exports = {
   errorMessage: "errorMessage__67dba",
   errorLink: "errorLink__67dba",
   acronym: "acronym__67dba",
-  isFriendsInVCInvitesExperiment: "isFriendsInVCInvitesExperiment__67dba",
   footerWithCheckbox: "footerWithCheckbox__67dba"
 }

@@ -18,18 +18,18 @@ let a = e => {
     onSelectMaxUses: c,
     isGuestInviteCreationToggleEnabled: g,
     onSetInviteFlags: h,
-    onClose: v,
-    transitionState: p
+    onClose: p,
+    transitionState: v
   } = e, {
     maxAgeOptions: I,
     maxAge: m,
-    maxUses: x,
-    temporary: S,
+    maxUses: S,
+    temporary: x,
     flags: f
   } = n;
   return (0, i.jsx)(l.Modal, {
-    transitionState: p,
-    onClose: v,
+    transitionState: v,
+    onClose: p,
     title: r.intl.string(r.t.Atdlyu),
     actions: [{
       variant: "secondary",
@@ -46,8 +46,8 @@ let a = e => {
       shouldHideTemporaryInviteToggle: a,
       maxAgeOptions: I,
       maxAge: m,
-      maxUses: x,
-      temporary: S,
+      maxUses: S,
+      temporary: x,
       onToggleTemporary: u,
       onSelectMaxAge: d,
       onSelectMaxUses: c,

@@ -2,11 +2,10 @@
 /** chunk id: 751771, original params: e,t,n (module,exports,require) **/
 let i, l, s, r, a, o;
 require.d(exports, {
-  Z: () => M
+  Z: () => P
 }), require("./388685.js"), require("./642613.js");
 var u, d, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
-  Chunk559310 = require("./559310.js"),
   Chunk823385 = require("./823385.js"),
   Chunk752048 = require("./752048.js"),
   Chunk823379 = require("./823379.js"),
@@ -16,9 +15,9 @@ var u, d, Chunk442837 = require("./442837.js"),
   Chunk699516 = require("./699516.js"),
   Chunk981631 = require("./981631.js"),
   Chunk245335 = require("./245335.js");
-let C = new Set,
+let E = new Set,
   _ = [],
-  b = new Map,
+  C = new Map,
   T = {
     numFriends: 0,
     numDms: 0,
@@ -26,37 +25,33 @@ let C = new Set,
     numChannels: 0
   };
 
-function N(e) {
-  let {
-    isFriendsInVCInvitesEnabled: t
-  } = (0, h.s6)({
-    guildId: null == s ? true : s.id,
-    location: "InviteSuggestionsStore",
-    autoTrackExposure: false
-  }), n = new Set, i = (null == r ? true : r.type) === y.d4z.GUILD_VOICE, l = null;
-  null == s || o === E.Iq.EMBEDDED_APPLICATION || t && i || (l = s.id);
-  let a = (0, m.rh)(C, l);
-  for (let e of (null == a || f.Z.isBlockedOrIgnored(a.id) || n.add(a.id), p.Z.getUserAffinities())) n.add(e.otherUserId);
-  let u = new Set;
-  return o === E.Iq.EMBEDDED_APPLICATION && v.Z.getChannelHistory().map(e => x.Z.getChannel(e)).filter(I.lm).filter(e => e.type === y.d4z.GUILD_TEXT).filter(e => S.Z.can(y.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => u.add(e.id)), (0, m.an)({
+function b(e) {
+  let t = new Set,
+    n = (null == r ? true : r.type) === f.d4z.GUILD_VOICE,
+    i = null;
+  null == s || o === y.Iq.EMBEDDED_APPLICATION || n || (i = s.id);
+  let l = (0, I.rh)(E, i);
+  for (let e of (null == l || x.Z.isBlockedOrIgnored(l.id) || t.add(l.id), p.Z.getUserAffinities())) t.add(e.otherUserId);
+  let a = new Set;
+  return o === y.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => m.Z.getChannel(e)).filter(v.lm).filter(e => e.type === f.d4z.GUILD_TEXT).filter(e => S.Z.can(f.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => a.add(e.id)), (0, I.an)({
     query: e,
-    omitUserIds: C,
-    suggestedUserIds: n,
+    omitUserIds: E,
+    suggestedUserIds: t,
     maxRowsWithoutQuery: 100,
-    omitGuildId: l,
-    suggestedChannelIds: u,
+    omitGuildId: i,
+    suggestedChannelIds: a,
     inviteTargetType: o
   })
 }
 
-function A(e) {
-  _ = e, b = new Map, e.forEach((e, t) => {
-    b.set(e, {
+function N(e) {
+  _ = e, C = new Map, e.forEach((e, t) => {
+    C.set(e, {
       index: t
     })
   })
 }
-class P extends(u = Chunk442837.ZP.Store) {
+class A extends(u = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk496675.Z, Chunk823385.Z, Chunk699516.Z, Chunk752048.Z)
   }
@@ -70,7 +65,7 @@ class P extends(u = Chunk442837.ZP.Store) {
     return T
   }
   getSelectedInviteMetadata(e) {
-    let t = b.get(e),
+    let t = C.get(e),
       n = p.Z.getUserAffinities().map(e => e.otherUserId);
     if (null != t) return {
       rowNum: t.index,
@@ -80,13 +75,13 @@ class P extends(u = Chunk442837.ZP.Store) {
       isFiltered: l
     }
   }
-}(d = "displayName") in P ? Object.defineProperty(P, d, {
+}(d = "displayName") in A ? Object.defineProperty(A, d, {
   value: "InviteSuggestionsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : P[d] = "InviteSuggestionsStore";
-let M = new P(Chunk570140.Z, {
+}) : A[d] = "InviteSuggestionsStore";
+let P = new A(Chunk570140.Z, {
   LOAD_INVITE_SUGGESTIONS: function(e) {
     let {
       omitUserIds: t,
@@ -95,7 +90,7 @@ let M = new P(Chunk570140.Z, {
       applicationId: d,
       inviteTargetType: c
     } = e;
-    s = null != u ? n : null, r = u, a = d, o = c, C = new Set([...t, ...f.Z.getBlockedOrIgnoredIDs(), ...(0, m.Sz)({
+    s = null != u ? n : null, r = u, a = d, o = c, E = new Set([...t, ...x.Z.getBlockedOrIgnoredIDs(), ...(0, I.Sz)({
       channel: r,
       applicationId: a,
       inviteTargetType: c
@@ -103,8 +98,8 @@ let M = new P(Chunk570140.Z, {
     let {
       rows: g,
       counts: h
-    } = N("");
-    A(g), T = h, i = _.length
+    } = b("");
+    N(g), T = h, i = _.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {
@@ -113,7 +108,7 @@ let M = new P(Chunk570140.Z, {
     l = "" !== t;
     let {
       rows: n
-    } = N(t);
-    n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), A(n)
+    } = b(t);
+    n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), N(n)
   }
 })
