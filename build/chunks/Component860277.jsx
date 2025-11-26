@@ -18,10 +18,10 @@ function p(t) {
   let {
     step: e
   } = t, {
-    users: i,
+    users: i = [],
     sidekick: p
   } = (0, l.e7)([s.Z], () => s.Z.getCheckpointData());
-  return (0, n.jsxs)(d.Z, {
+  if (null != p) return (0, n.jsxs)(d.Z, {
     children: [e === c.ij.FRIENDS_INTRO && (0, n.jsxs)("div", {
       children: [(0, n.jsx)(r.xvT, {
         variant: "display-md",
@@ -49,7 +49,7 @@ function p(t) {
         variant: "display-md",
         color: "text-primary",
         children: x.intl.format(u.default.wz2JuF, {
-          user: p.user.username,
+          user: null == p ? true : p.user.username,
           userHook: (t, e) => (0, n.jsx)(r.xvT, {
             variant: "display-lg",
             color: "text-primary",

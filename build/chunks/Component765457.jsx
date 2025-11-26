@@ -26,8 +26,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk691446 = require("./691446.js");
 
 function T(t) {
-  let {} = t, [e, i] = r.useState(v.ij.WELCOME), l = v.bq[e], T = r.useCallback(() => {
-    if (e >= v.ij.END_SUMMARY) return void(0, d.xf)();
+  let {} = t, [e, i] = r.useState(E.ij.WELCOME), l = E.bq[e], T = r.useCallback(() => {
+    if (e >= E.ij.END_SUMMARY) return void(0, d.xf)();
     i(e + 1)
   }, [e]);
   return (0, n.jsx)(s.f6W, {
@@ -38,33 +38,33 @@ function T(t) {
       children: [(0, n.jsxs)(s.MyZ, {
         activeSlide: l,
         children: [(0, n.jsx)(s.Mi4, {
-          id: v.yD.WELCOME,
-          children: (0, n.jsx)(E.Z, {})
+          id: E.yD.WELCOME,
+          children: (0, n.jsx)(v.Z, {})
         }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.MESSAGES,
+          id: E.yD.MESSAGES,
           children: (0, n.jsx)(m.Z, {})
         }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.EMOJIS,
+          id: E.yD.EMOJIS,
           children: (0, n.jsx)(o.Z, {})
         }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.VOICE,
+          id: E.yD.VOICE,
           children: (0, n.jsx)(y.Z, {})
         }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.GUILDS,
+          id: E.yD.GUILDS,
           children: (0, n.jsx)(h.Z, {})
         }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.FRIENDS,
+          id: E.yD.FRIENDS,
           children: (0, n.jsx)(x.Z, {
             step: e
           })
         }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.GAMING,
+          id: E.yD.GAMING,
           children: (0, n.jsx)(p.Z, {})
         }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.QUESTS,
+          id: E.yD.QUESTS,
           children: (0, n.jsx)(f.Z, {})
         }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.END,
+          id: E.yD.END,
           children: (0, n.jsx)(u.Z, {
             step: e
           })
@@ -83,7 +83,7 @@ function T(t) {
           })]
         }), (0, n.jsx)(c.Z, {
           activeSlide: l,
-          totalSlides: Object.keys(v.yD).length,
+          totalSlides: Object.keys(E.yD).length,
           className: D.stepIndicator
         }), (0, n.jsx)(s.P3F, {
           onClick: d.xf,

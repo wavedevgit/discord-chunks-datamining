@@ -16,6 +16,9 @@ function o() {
     voice: {
       totalVoiceMinutes: t,
       totalVoiceMinutesPercentile: e
+    } = {
+      totalVoiceMinutes: 0,
+      totalVoiceMinutesPercentile: 0
     }
   } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData());
   return (0, Chunk54381.jsxs)(Chunk198358.Z, {
