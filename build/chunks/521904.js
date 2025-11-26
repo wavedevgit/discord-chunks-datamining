@@ -172,6 +172,16 @@ let {
       [r.DARKER]: {
         raw: "NEUTRAL_82",
         opacity: 1
+      },
+      gradient: {
+        light: {
+          color: "WHITE_500",
+          opacity: .8
+        },
+        dark: {
+          color: "BLACK_500",
+          opacity: .7
+        }
       }
     },
     BACKGROUND_BASE_LOWER: {
@@ -191,6 +201,16 @@ let {
       [r.DARKER]: {
         raw: "NEUTRAL_86",
         opacity: 1
+      },
+      gradient: {
+        light: {
+          color: "WHITE_500",
+          opacity: .8
+        },
+        dark: {
+          color: "BLACK_500",
+          opacity: .7
+        }
       }
     },
     BACKGROUND_BASE_LOWEST: {
@@ -210,6 +230,16 @@ let {
       [r.DARKER]: {
         raw: "NEUTRAL_92",
         opacity: 1
+      },
+      gradient: {
+        light: {
+          color: "WHITE_500",
+          opacity: .8
+        },
+        dark: {
+          color: "BLACK_500",
+          opacity: .7
+        }
       }
     },
     BACKGROUND_CODE: {

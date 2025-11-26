@@ -1,17 +1,20 @@
 /** Chunk was on 13587 **/
 /** chunk id: 689201, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  c: () => u,
-  g: () => a
+  c: () => m,
+  g: () => f
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk525302 = require("./525302.jsx"),
+  Chunk594174 = require("./594174.js"),
+  Chunk823379 = require("./823379.js"),
   Chunk51144 = require("./51144.js"),
   Chunk602733 = require("./602733.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e, t) {
+function f(e, t) {
   return n.useMemo(() => {
     let r = e.map(e => {
         let {
@@ -21,13 +24,13 @@ function a(e, t) {
         return {
           productLine: t.skuProductLine,
           source: r,
-          renderIcon: i.Q
+          renderIcon: l.Q
         }
       }),
-      n = l.ZP.getName(t),
+      n = c.ZP.getName(t),
       {
-        hasMultipleTypes: a,
-        hasMultipleSources: u
+        hasMultipleTypes: i,
+        hasMultipleSources: o
       } = function(e) {
         if (0 === e.length) return {
           hasMultipleTypes: false,
@@ -39,21 +42,21 @@ function a(e, t) {
           hasMultipleSources: e.some(e => e.source !== t.source)
         }
       }(r);
-    return a || u ? r.map(e => !a && u ? {
-      title: e.source === o.lr.WISHLIST ? s.intl.formatToPlainString(s.t.p3RmJF, {
+    return i || o ? r.map(e => !i && o ? {
+      title: e.source === a.lr.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
         username: n
-      }) : s.intl.string(s.t.Ig6VDH),
-      renderIcon: e.productLine !== c.POd.COLLECTIBLES ? e.renderIcon : true,
+      }) : d.intl.string(d.t.Ig6VDH),
+      renderIcon: e.productLine !== u.POd.COLLECTIBLES ? e.renderIcon : true,
       shouldShow: true
-    } : a && !u ? {
-      title: e.productLine === c.POd.SOCIAL_LAYER_GAME_ITEM ? s.intl.string(s.t["4yiU7x"]) : s.intl.string(s.t.HFhcqh),
+    } : i && !o ? {
+      title: e.productLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
       renderIcon: e.renderIcon,
       shouldShow: true
     } : {
-      title: e.productLine === c.POd.SOCIAL_LAYER_GAME_ITEM ? s.intl.string(s.t["4yiU7x"]) : s.intl.string(s.t.HFhcqh),
-      body: e.source === o.lr.WISHLIST ? s.intl.formatToPlainString(s.t.p3RmJF, {
+      title: e.productLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
+      body: e.source === a.lr.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
         username: n
-      }) : s.intl.string(s.t.Ig6VDH),
+      }) : d.intl.string(d.t.Ig6VDH),
       renderIcon: e.renderIcon,
       shouldShow: true
     }) : r.map(() => ({
@@ -62,12 +65,17 @@ function a(e, t) {
   }, [e, t])
 }
 
-function u(e) {
-  return n.useMemo(() => new Set(e.map(e => e.skuProductLine)).size > 1 ? e.map(e => ({
-    title: e.skuProductLine === c.POd.SOCIAL_LAYER_GAME_ITEM ? s.intl.string(s.t["4yiU7x"]) : s.intl.string(s.t.HFhcqh),
-    renderIcon: e.skuProductLine === c.POd.SOCIAL_LAYER_GAME_ITEM ? i.Q : true,
-    shouldShow: true
-  })) : e.map(() => ({
+function m(e, t) {
+  let r = (0, i.Wu)([o.default], () => e.map(e => o.default.getUser(e.gifterUserId)).filter(s.lm), [e]),
+    c = n.useMemo(() => r.reduce((e, t) => (e[t.id] = t, e), {}), [r]);
+  return n.useMemo(() => new Set(e.map(e => e.skuProductLine)).size > 1 ? e.map(e => {
+    let r = t && e.isOwned && null != e.gifterUserId && null != c[e.gifterUserId];
+    return {
+      title: e.skuProductLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
+      renderIcon: e.skuProductLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? l.Q : true,
+      shouldShow: !r
+    }
+  }) : e.map(() => ({
     shouldShow: false
-  })), [e])
+  })), [e, t, c])
 }

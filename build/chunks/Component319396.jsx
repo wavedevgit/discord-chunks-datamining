@@ -24,7 +24,7 @@ function g(e) {
     defaultWishlistId: m
   } = (0, i.cj)([u.Z], () => ({
     defaultWishlistId: u.Z.getFirstWishlistId(n.id)
-  })), b = (0, c.c)(t);
+  })), b = (0, c.c)(t, g);
   return null == p || null == m ? null : (0, r.jsx)("ul", {
     className: f.grid,
     children: t.map((e, t) => {

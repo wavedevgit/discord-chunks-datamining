@@ -16,8 +16,8 @@ function u(e) {
   let {
     location: r,
     wishlist: u
-  } = e, d = (0, s.cZ)({
+  } = e, d = (0, c.cZ)({
     location: r
-  }), f = (0, n.e7)([o.Z], () => o.Z.getGuild((0, c.ac)())), m = null != (t = null == u ? true : u.items.some(e => (0, l.F)(e))) && t, O = (0, n.e7)([i.ZP], () => i.ZP.getGamesSeen(false, false).some(e => null != e.id && a.RI.has(e.id)));
+  }), f = (0, n.e7)([o.Z], () => o.Z.getGuild((0, s.ac)())), m = null != (t = null == u ? true : u.items.some(e => (0, l.F)(e))) && t, O = (0, n.e7)([i.ZP], () => i.ZP.getGamesSeen(false, false).some(e => null != e.id && a.RI.has(e.id)));
   return d && (null != f || O || m)
 }

@@ -600,7 +600,7 @@ let j = {
               padding: "8px",
               border: "1px solid var(--background-modifier-accent)",
               borderRadius: "4px",
-              backgroundColor: "var(--background-primary)",
+              backgroundColor: "var(--background-base-low)",
               color: "var(--text-primary)",
               resize: "vertical"
             }
@@ -665,7 +665,7 @@ let j = {
         }), (0, a.jsxs)("div", {
           className: "mb-4",
           style: {
-            backgroundColor: "var(--background-secondary)",
+            backgroundColor: "var(--background-base-lower)",
             padding: "16px",
             borderRadius: "8px",
             border: "1px solid var(--background-modifier-accent)"
