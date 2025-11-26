@@ -417,29 +417,31 @@ function eH(e) {
     adContext: o,
     responseTtlSeconds: s,
     metadataRaw: l,
-    fetchedAt: c
+    metadataSealed: c,
+    fetchedAt: u
   } = e;
   f = Date.now(), i = false, (a = new Map(a)).set(n, false);
   let {
-    enableNewRequestBehavior: u
+    enableNewRequestBehavior: d
   } = G.Z.getConfig({
     location: "handleFetchQuestToDeliverSuccess"
   });
-  if (u) {
-    var d, _, p;
+  if (d) {
+    var _, p, h;
     let e = {
-      questId: null != (d = null == t ? true : t.id) ? d : null,
-      fetchedAt: c,
+      questId: null != (_ = null == t ? true : t.id) ? _ : null,
+      fetchedAt: u,
       ttlMillis: eW(s),
-      adSetId: null != (_ = null == r ? true : r.ad_set_id) ? _ : null,
-      adRequestId: null != (p = null == r ? true : r.decision_id) ? p : null
+      adSetId: null != (p = null == r ? true : r.ad_set_id) ? p : null,
+      adRequestId: null != (h = null == r ? true : r.decision_id) ? h : null
     };
     (C = new Map(C)).set(n, e)
   } else null == t ? T.delete(n) : T.set(n, {
     quest: t,
     adDecisionData: r,
     adContext: o,
-    metadataRaw: l
+    metadataRaw: l,
+    metadataSealed: c
   })
 }
 

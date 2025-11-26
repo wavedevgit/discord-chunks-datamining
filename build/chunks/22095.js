@@ -515,6 +515,7 @@ async function J(e, t) {
           is_targeted: null != v.ad_identifiers
         },
         metadataRaw: v.metadata_raw,
+        metadataSealed: v.metadata_sealed,
         adContext: v.ad_context,
         responseTtlSeconds: v.response_ttl_seconds,
         placement: e,

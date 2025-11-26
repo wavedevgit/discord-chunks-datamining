@@ -190,12 +190,14 @@ function eU(e) {
     else if (t === v.g.SERVER_SHOP);
     else if (t === v.g.SOCIAL_LAYER_STOREFRONT);
     else if (t === v.g.QUESTS_EMBED) {
-      let e = (0, et.jY)(i.j.QUESTS_EMBED);
+      let e = (0, et.jY)(i.j.QUESTS_EMBED),
+        t = (0, et.R_)(i.j.QUESTS_EMBED);
       (0, ee.dA)({
         questId: c,
         event: eT.rMx.QUEST_LINK_SHARED,
         properties: {
-          metadata_raw: null != e ? e : null
+          metadata_raw: null != e ? e : null,
+          metadata_sealed: null != t ? t : null
         },
         trackGuildAndChannelMetadata: true,
         sourceQuestContent: i.j.QUESTS_EMBED
