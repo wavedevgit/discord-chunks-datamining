@@ -93,10 +93,10 @@ function B(e) {
     impressionRef: F,
     parentModalOpenStartClockTime: B,
     sourceQuestContent: H
-  } = e, U = (0, b.il)(O), q = (0, g.tP)(O), Q = (0, E.aM)(), [Y, G] = o.useState(U.progressSeconds), [W, z] = o.useState(142), {
+  } = e, U = (0, b.il)(O), q = (0, g.tP)(O), Y = (0, E.aM)(), [Q, G] = o.useState(U.progressSeconds), [W, z] = o.useState(142), {
     variant: K,
     enabled: X
-  } = C.EO.useConfig({
+  } = S.EO.useConfig({
     location: A.dr.VIDEO_MODAL
   }), J = null == (n = O.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.X.WATCH_VIDEO];
   s()(null != J, "VideoQuestModal: videoTask must not be null");
@@ -106,12 +106,12 @@ function B(e) {
       z(e.target.offsetHeight)
     }),
     en = (0, m.y)(et),
-    er = K === C.m_.OVERLAY_SHARE_ON_VIDEO,
+    er = K === S.m_.OVERLAY_SHARE_ON_VIDEO,
     eo = (0, N.e)({
       quest: O,
       onClose: a,
       sourceQuestContent: H,
-      impressionId: Q
+      impressionId: Y
     }),
     el = (0, u.e7)([p.Z], () => p.Z.getState().theme),
     ei = (0, d.wjy)(el) ? w.BR.DARK : w.BR.LIGHT,
@@ -173,7 +173,7 @@ function B(e) {
                 children: [(0, r.jsx)("img", {
                   alt: O.config.messages.gameTitle,
                   className: i()(M.contentHeaderLogotype, M.accentOnHover),
-                  src: (0, S.fh)(O, S.eC.LOGO_TYPE, ei).url
+                  src: (0, C.fh)(O, C.eC.LOGO_TYPE, ei).url
                 }), (0, r.jsx)(T.Z, {}), (0, r.jsxs)("div", {
                   className: M.questHeading,
                   children: [(0, r.jsx)(d.Heading, {

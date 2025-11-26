@@ -1,12 +1,12 @@
 /** Chunk was on 86948 **/
 /** chunk id: 154122, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  J: () => b
+  J: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
   Chunk518950 = require("./518950.js"),
@@ -15,21 +15,21 @@ var Chunk120356 = require("./120356.js"),
   Chunk606097 = require("./606097.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk456577 = require("./456577.js");
-let b = e => {
+let m = e => {
   let {
     recipient: t,
     isSuccess: r,
     onClose: i
   } = e, {
-    avatarSrc: b,
-    eventHandlers: m
-  } = (0, c.Z)({
+    avatarSrc: m,
+    eventHandlers: b
+  } = (0, l.Z)({
     userId: null == t ? true : t.id,
-    size: a.EFr.SIZE_56
+    size: s.EFr.SIZE_56
   }), y = u.ZP.getName(t), h = !r;
   return (0, n.jsxs)("div", {
     className: f.row,
-    children: [(0, n.jsx)(a.qEK, function(e) {
+    children: [(0, n.jsx)(s.qEK, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -47,19 +47,19 @@ let b = e => {
       }
       return e
     }({
-      imageClassName: s()({
+      imageClassName: a()({
         [f.erroredAvatar]: h
       }),
-      src: b,
+      src: m,
       "aria-label": y,
-      size: a.EFr.SIZE_32
-    }, m)), h ? (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(a.Text, {
+      size: s.EFr.SIZE_32
+    }, b)), h ? (0, n.jsxs)(n.Fragment, {
+      children: [(0, n.jsx)(s.Text, {
         className: f.error,
         variant: "text-md/medium",
         color: "text-primary",
         children: y
-      }), (0, n.jsx)(a.Text, {
+      }), (0, n.jsx)(s.Text, {
         variant: "text-md/medium",
         className: f.error,
         color: "text-primary",
@@ -67,19 +67,19 @@ let b = e => {
           userName: y
         })
       })]
-    }) : (0, n.jsx)(a.Text, {
+    }) : (0, n.jsx)(s.Text, {
       variant: "text-md/medium",
       className: f.displayName,
       color: "text-primary",
       children: y
-    }), (0, n.jsx)(a.Button, {
+    }), (0, n.jsx)(s.Button, {
       variant: "secondary",
       size: "sm",
       text: p.intl.string(p.t["g33r/P"]),
-      icon: a.kBi,
+      icon: s.kBi,
       onClick: () => {
         var e;
-        return e = t.id, void((0, l.default)(), o.Z.openPrivateChannel({
+        return e = t.id, void((0, c.default)(), o.Z.openPrivateChannel({
           recipientIds: e
         }), i())
       }

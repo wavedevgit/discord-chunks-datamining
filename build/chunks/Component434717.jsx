@@ -27,7 +27,7 @@ function v(e) {
     quest: t,
     sourceQuestContent: n,
     onLoadComplete: v
-  } = e, b = (0, l.ZP)(), _ = (0, o.wjy)(b) ? x.BR.DARK : x.BR.LIGHT, w = (0, m.V_)(t.config), O = (0, u.aM)(), N = (0, m.vB)(t.config), P = a.useMemo(() => {
+  } = e, b = (0, l.ZP)(), _ = (0, o.wjy)(b) ? x.BR.DARK : x.BR.LIGHT, w = (0, m.V_)(t), O = (0, u.aM)(), N = (0, m.vB)(t.config), P = a.useMemo(() => {
     var e;
     let n = null == (e = t.config.ctaConfig) ? true : e.subtitle;
     return null != n ? n : (0, m.BI)(t.config) !== i.W.GAMEPLAY || t.config.features.includes(j.S7.NON_GAMING_PLAY_QUEST) || (0, m.Pb)(t) ? y.intl.string(y.t.y8Xf3k) : y.intl.string(y.t["wirwN+"])

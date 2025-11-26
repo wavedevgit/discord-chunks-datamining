@@ -1,7 +1,7 @@
 /** Chunk was on 75909 **/
 /** chunk id: 656357, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Y
+  Z: () => Q
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -50,7 +50,7 @@ let q = {
   clamp: true
 };
 
-function Q() {
+function Y() {
   let e = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.getState().theme);
   return (0, Chunk54381.jsx)("div", {
     className: Chunk273339.pauseText,
@@ -65,8 +65,8 @@ function Q() {
   })
 }
 
-function Y(e) {
-  var t, n, l, d, E, H, Y, G, W;
+function Q(e) {
+  var t, n, l, d, E, H, Q, G, W;
   let {
     videoTask: z,
     onOptimisticProgressUpdate: K,
@@ -90,9 +90,9 @@ function Y(e) {
     visible: ev,
     visibleChanged: eE,
     targetRef: eg
-  } = (0, M.Yy)(), [eO, eh] = o.useState(true === X ? w.rq.PLAYING : w.rq.PAUSED), [eb, eC] = o.useState(false), [eS, ey] = o.useState(false), e_ = (0, S.il)(en), [ex, ej] = o.useState(e_.percentComplete), eD = o.useCallback(e => {
+  } = (0, M.Yy)(), [eO, eh] = o.useState(true === X ? w.rq.PLAYING : w.rq.PAUSED), [eb, eS] = o.useState(false), [eC, ey] = o.useState(false), e_ = (0, C.il)(en), [ex, ej] = o.useState(e_.percentComplete), eD = o.useCallback(e => {
     eG(null), ej(e)
-  }, []), [eP, eT] = o.useState(false), [eR, eI] = o.useState(true), [eN, eA] = o.useState(false), [ew, ek] = o.useState([]), [eM, eL] = o.useState(g.Z.getEffectiveConnectionSpeed()), [eV, eZ] = o.useState(0), [eF, eB] = o.useState(0), [eH, eU] = o.useState(false), [eq, eQ] = o.useState(false), [eY, eG] = o.useState(null), eW = o.useRef(true), ez = o.useRef(null), eK = o.useRef(null), eX = (0, y.km)(e => {
+  }, []), [eP, eT] = o.useState(false), [eR, eI] = o.useState(true), [eN, eA] = o.useState(false), [ew, ek] = o.useState([]), [eM, eL] = o.useState(g.Z.getEffectiveConnectionSpeed()), [eV, eZ] = o.useState(0), [eF, eB] = o.useState(0), [eH, eU] = o.useState(false), [eq, eY] = o.useState(false), [eQ, eG] = o.useState(null), eW = o.useRef(true), ez = o.useRef(null), eK = o.useRef(null), eX = (0, y.km)(e => {
     var t;
     return null != (t = e.videoProgress[en.id]) ? t : {
       timestampSec: 0,
@@ -120,8 +120,8 @@ function Y(e) {
     trackQuestVideoResumed: tO,
     trackQuestVideoPaused: th,
     trackQuestVideoFocusChange: tb,
-    trackQuestContentClick: tC,
-    trackQuestVideoBufferingStarted: tS,
+    trackQuestContentClick: tS,
+    trackQuestVideoBufferingStarted: tC,
     trackQuestVideoBufferingEnded: ty,
     trackWatchTimeAnalytics: t_,
     trackQuestVideoTimeToFirstFrame: tx,
@@ -178,10 +178,10 @@ function Y(e) {
   }, [ef, ep, eO, tb]);
   let tN = o.useCallback(e => {
     var t;
-    e8 || (null == (t = en.userStatus) ? true : t.enrolledAt) == null || (tl.info("[QV] sendServerProgressUpdate: ".concat(e)), (0, S.FI)(en, e)), tg()
+    e8 || (null == (t = en.userStatus) ? true : t.enrolledAt) == null || (tl.info("[QV] sendServerProgressUpdate: ".concat(e)), (0, C.FI)(en, e)), tg()
   }, [e8, en, tl, tg]);
   o.useEffect(() => {
-    J !== m.Dvm.HIDDEN && J !== m.Dvm.EXITING && J !== m.Dvm.EXITED && (null == J || !eE || ev || e8) && (!ep || ef || e8) || null == e2.current || eO !== w.rq.PLAYING || (tl.info("[QV] | Pausing video | playerState: ".concat(eO, ", parentTransitionState: ").concat(J, ", visible: ").concat(ev, ", focused: ").concat(ef, ", isQuestCompleted: ").concat(e8)), tI(w.rq.PAUSED), e8 || e9(C.yE.LOST_FOCUS))
+    J !== m.Dvm.HIDDEN && J !== m.Dvm.EXITING && J !== m.Dvm.EXITED && (null == J || !eE || ev || e8) && (!ep || ef || e8) || null == e2.current || eO !== w.rq.PLAYING || (tl.info("[QV] | Pausing video | playerState: ".concat(eO, ", parentTransitionState: ").concat(J, ", visible: ").concat(ev, ", focused: ").concat(ef, ", isQuestCompleted: ").concat(e8)), tI(w.rq.PAUSED), e8 || e9(S.yE.LOST_FOCUS))
   }, [J, ef, ep, ev, eE, eO, e8, tI, tN, tl]);
   let [tA, tw] = o.useState(false), tk = o.useRef(null), tM = o.useRef(performance.now()), tL = o.useCallback(() => {
     null != tk.current && clearTimeout(tk.current), eO === w.rq.PLAYING && (tk.current = setTimeout(() => {
@@ -199,7 +199,7 @@ function Y(e) {
       null != tk.current && clearTimeout(tk.current)
     }
   }, [eO, tL]);
-  let tZ = !tA && (eS || eb || eO === w.rq.ENDED),
+  let tZ = !tA && (eC || eb || eO === w.rq.ENDED),
     tF = o.useCallback(() => {
       var e;
       tl.info("[QV] | handleFullScreenExit");
@@ -209,12 +209,12 @@ function Y(e) {
     tB = () => {
       if (null == e2.current) return;
       let e = Math.max(e2.current.currentTime - 10, 0);
-      tl.info("[QV] | handleSeekBackIncrement | newTime: ".concat(e)), tU(e), eO === w.rq.ENDED && tI(w.rq.PAUSED), tC(C.jn.VIDEO_MODAL, b.jZ.SEEK_BACKWARD)
+      tl.info("[QV] | handleSeekBackIncrement | newTime: ".concat(e)), tU(e), eO === w.rq.ENDED && tI(w.rq.PAUSED), tS(S.jn.VIDEO_MODAL, b.jZ.SEEK_BACKWARD)
     },
     tH = () => {
       if (null == e2.current || !t4) return;
       let e = Math.min(e2.current.currentTime + 10, to);
-      tl.info("[QV] | handleSeekForwardIncrement | newTime: ".concat(e)), tU(e), eO !== w.rq.ENDED && e >= e2.current.duration && tI(w.rq.ENDED), tC(C.jn.VIDEO_MODAL, b.jZ.SEEK_FORWARD)
+      tl.info("[QV] | handleSeekForwardIncrement | newTime: ".concat(e)), tU(e), eO !== w.rq.ENDED && e >= e2.current.duration && tI(w.rq.ENDED), tS(S.jn.VIDEO_MODAL, b.jZ.SEEK_FORWARD)
     };
   o.useEffect(() => {
     let e = e2.current;
@@ -233,16 +233,16 @@ function Y(e) {
           tU(0), tI(w.rq.PLAYING);
           break;
         case w.rq.PLAYING:
-          tI(w.rq.PAUSED), e9(C.yE.PAUSE_BUTTON);
+          tI(w.rq.PAUSED), e9(S.yE.PAUSE_BUTTON);
           break;
         default:
           tI(w.rq.PLAYING)
       }
     },
-    tQ = e => {
+    tY = e => {
       tr(e)
     },
-    tY = e => {
+    tQ = e => {
       tr(t => (null == t ? true : t.id) === e.id ? null : t)
     },
     tG = o.useCallback(() => {
@@ -251,7 +251,7 @@ function Y(e) {
       if (e.mode = "hidden", null != e.cues)
         for (let t = 0; t < e.cues.length; t++) {
           let n = e.cues[t];
-          (0, k.JC)(n) && (n.id = "cue-".concat(t), n.onenter = () => tQ(n), n.onexit = () => tY(n))
+          (0, k.JC)(n) && (n.id = "cue-".concat(t), n.onenter = () => tY(n), n.onexit = () => tQ(n))
         }
     }, [e2, tl]);
   o.useEffect(() => {
@@ -283,10 +283,10 @@ function Y(e) {
     },
     config: q,
     onStart: () => {
-      eQ(false)
+      eY(false)
     },
     onRest: e => {
-      1 === e.value && eQ(true)
+      1 === e.value && eY(true)
     }
   })), tJ = (0, o.useRef)(null), [{
     captionHeightSpring: t$
@@ -332,10 +332,10 @@ function Y(e) {
     "data-fullscreen": es,
     tabIndex: false,
     onMouseEnter: () => {
-      eC(true), tw(false), tM.current = performance.now(), null != tk.current && clearTimeout(tk.current)
+      eS(true), tw(false), tM.current = performance.now(), null != tk.current && clearTimeout(tk.current)
     },
     onMouseLeave: () => {
-      eC(false), tw(false)
+      eS(false), tw(false)
     },
     onMouseMove: tV,
     onKeyDown: tV,
@@ -348,7 +348,7 @@ function Y(e) {
         videoRef: e2,
         onExitFullScreen: tF,
         onTrackQuestVideoFullscreenChanged: tj,
-        onTrackQuestContentClick: tC
+        onTrackQuestContentClick: tS
       }), (0, r.jsxs)(v.Z, {
         ref: e => {
           e2.current = e, eg.current = e
@@ -384,7 +384,7 @@ function Y(e) {
           tl.info("[QV] | ⏰ Video FCP: ".concat(e, "ms")), tx(e), eW.current = false
         },
         onWaiting: e => {
-          eK.current = performance.now(), tl.info("[QV] | handleWaitingForData: bufferingStartTime: ".concat(eK.current)), tS(), eA(true)
+          eK.current = performance.now(), tl.info("[QV] | handleWaitingForData: bufferingStartTime: ".concat(eK.current)), tC(), eA(true)
         },
         onProgress: e => {
           if (null == e2.current) return;
@@ -428,7 +428,7 @@ function Y(e) {
       }), (eR || eN) && eO === w.rq.PLAYING && (0, r.jsx)(m.$jN, {
         type: m.$jN.Type.WANDERING_CUBES,
         className: U.loadingSpinner
-      }), eO === w.rq.PAUSED && e7 === C.yE.LOST_FOCUS && (0, r.jsx)(Q, {}), em && (0, r.jsx)(a.animated.div, {
+      }), eO === w.rq.PAUSED && e7 === S.yE.LOST_FOCUS && (0, r.jsx)(Y, {}), em && (0, r.jsx)(a.animated.div, {
         className: U.floatingShareButtonContainer,
         style: {
           opacity: (0, a.to)([tK.to({
@@ -456,7 +456,7 @@ function Y(e) {
           children: (0, r.jsx)(A.E, {
             quest: en,
             onClose: () => {
-              el(false), tC(C.jn.VIDEO_MODAL, b.jZ.TRANSCRIPT_DISABLE)
+              el(false), tS(S.jn.VIDEO_MODAL, b.jZ.TRANSCRIPT_DISABLE)
             }
           })
         })]
@@ -529,12 +529,12 @@ function Y(e) {
           Object.defineProperty(G, e, Object.getOwnPropertyDescriptor(W, e))
         }), G),
         children: [(0, r.jsx)(N.Z, {
-          percent: null != eY ? eY : ex,
+          percent: null != eQ ? eQ : ex,
           animate: true !== e4.current && !eP,
           interactionEnabled: e8 && eq,
           backgroundColor: tZ ? true : "rgba(0, 0, 0, 0.0)",
           preloadedBuffers: tZ ? ew : true,
-          duration: null != (Y = null == (d = e2.current) ? true : d.duration) ? Y : 1,
+          duration: null != (Q = null == (d = e2.current) ? true : d.duration) ? Q : 1,
           maxSeekableTime: tZ && eq ? to : true,
           onClick: e => {
             tU(e), eO === w.rq.ENDED && tI(w.rq.PLAYING)
@@ -572,10 +572,10 @@ function Y(e) {
             size: ta,
             handlePlaybackBtnClick: tq,
             handleTranscriptBtnClick: () => {
-              el(!eo), tC(C.jn.VIDEO_MODAL, eo ? b.jZ.TRANSCRIPT_DISABLE : b.jZ.TRANSCRIPT_ENABLE)
+              el(!eo), tS(S.jn.VIDEO_MODAL, eo ? b.jZ.TRANSCRIPT_DISABLE : b.jZ.TRANSCRIPT_ENABLE)
             },
             handleCaptionBtnClick: () => {
-              ea(!ei), tC(C.jn.VIDEO_MODAL, ei ? b.jZ.CLOSED_CAPTIONING_DISABLE : b.jZ.CLOSED_CAPTIONING_ENABLE)
+              ea(!ei), tS(S.jn.VIDEO_MODAL, ei ? b.jZ.CLOSED_CAPTIONING_DISABLE : b.jZ.CLOSED_CAPTIONING_ENABLE)
             },
             handleFullScreenBtnClick: () => {
               var e;

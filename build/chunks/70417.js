@@ -21,7 +21,7 @@ function m(e, t, n) {
     questConfig: f
   } = r.useContext(s.VideoQuestConfigContext), p = r.useRef(false), v = r.useRef(null), E = (0, i.z)(m, c.dr.VIDEO_MODAL), g = null == (u = f.taskConfigV2.tasks[l.X.WATCH_VIDEO]) ? true : u.assets, O = r.useMemo(() => null != g ? E && o.ZP.isSupported() && null != g.videoHls ? a.n1.VIDEO_HLS : d.has(t) || null == g.videoLowRes ? a.n1.VIDEO : a.n1.VIDEO_LOW_RES : null, [g, t, E]), h = r.useMemo(() => null != O ? (0, a.z0)(m, l.X.WATCH_VIDEO, O, a.O.VIDEO) : null, [m, O]), b = () => {
     null != v.current && 8e5 !== v.current.config.minAutoBitrate && (v.current.config.minAutoBitrate = 8e5)
-  }, C = r.useCallback(() => {
+  }, S = r.useCallback(() => {
     null != v.current && (v.current.config.minAutoBitrate = 8e5)
   }, []);
   return r.useEffect(() => {
@@ -41,6 +41,6 @@ function m(e, t, n) {
     videoVariant: O,
     videoAsset: h,
     hlsRef: v,
-    onFirstChunkLoaded: C
+    onFirstChunkLoaded: S
   }
 }

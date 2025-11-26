@@ -83,7 +83,7 @@ let S = e => {
     let {
       quest: t,
       sourceQuestContent: n
-    } = e, s = (0, u.aM)(), a = (0, g.V_)(t.config);
+    } = e, s = (0, u.aM)(), a = (0, g.V_)(t);
     return (0, r.jsx)(o.zxk, {
       size: "sm",
       fullWidth: true,
