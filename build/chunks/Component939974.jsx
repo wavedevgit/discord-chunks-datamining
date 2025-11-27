@@ -1,7 +1,7 @@
 /** Chunk was on 44097 **/
 /** chunk id: 939974, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -9,6 +9,7 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk85707 = require("./85707.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk607070 = require("./607070.js"),
@@ -22,7 +23,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk680604 = require("./680604.js");
 
-function O(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +42,7 @@ function O(e) {
   return e
 }
 
-function j(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,62 +55,61 @@ function j(e, t) {
   }), e
 }
 
-function x(e) {
+function _(e) {
   let {
     widget: t,
     className: n,
     buttonRef: i,
     additionalMenuItems: l
-  } = e, o = (0, m.mR)(t), s = (0, d.Dt)();
-  return (0, r.jsx)(_, {
+  } = e, o = (0, b.mR)(t), c = (0, f.Dt)();
+  return (0, r.jsx)(I, {
+    targetRef: i,
+    widget: t,
+    additionalMenuItems: l,
     children: e => (0, r.jsx)(P, {
-      targetRef: i,
-      widget: t,
-      additionalMenuItems: l,
-      children: t => (0, r.jsxs)(c.P3F, j(O({
+      children: (0, r.jsxs)(s.P3F, x(j({
         innerRef: i,
-        className: a()(v.button, n),
+        className: a()(O.button, n),
         "data-dnd-name": o,
-        "aria-label": y.intl.formatToPlainString(y.t.HWNJJN, {
+        "aria-label": v.intl.formatToPlainString(v.t.HWNJJN, {
           widgetTitle: o
         }),
-        "aria-describedby": s,
+        "aria-describedby": c,
         "aria-keyshortcuts": "Control+D, Meta+D"
-      }, e, t), {
-        children: [(0, r.jsx)(c.Vni, {
+      }, e), {
+        children: [(0, r.jsx)(s.Vni, {
           size: "sm"
-        }), (0, r.jsx)(c.nn4, {
-          id: s,
-          children: y.intl.string(y.t.bsuqFn)
+        }), (0, r.jsx)(s.nn4, {
+          id: c,
+          children: v.intl.string(v.t.bsuqFn)
         })]
       }))
     })
   })
 }
-let _ = e => {
+let P = e => {
     let {
       children: t
-    } = e, n = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), {
+    } = e, n = (0, o.e7)([d.Z], () => d.Z.keyboardModeEnabled), {
       isDragging: i
     } = (0, l.f)(e => ({
       isDragging: e.isDragging()
     }));
-    return (0, r.jsx)(c.aML, {
-      "aria-label": false,
-      text: () => (0, r.jsxs)("div", {
-        className: v.tooltipText,
-        children: [(0, r.jsx)(c.Text, {
+    return (0, r.jsx)(c.u, {
+      __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
+        className: O.tooltipText,
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "none",
-          children: y.intl.format(n ? y.t["zvln/l"] : y.t["7cdwhg"], {
+          children: v.intl.format(n ? v.t["zvln/l"] : v.t["7cdwhg"], {
             emphasizeHook: e => (0, r.jsx)("strong", {
               children: e
             })
           })
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "none",
-          children: y.intl.format(y.t["4e0rM4"], {
+          children: v.intl.format(v.t["4e0rM4"], {
             emphasizeHook: e => (0, r.jsx)("strong", {
               children: e
             })
@@ -118,10 +118,11 @@ let _ = e => {
       }),
       position: "top",
       shouldShow: true !== i,
+      ariaHidden: true,
       children: t
     })
   },
-  P = e => {
+  I = e => {
     let {
       children: t,
       widget: i,
@@ -129,20 +130,20 @@ let _ = e => {
       additionalMenuItems: l
     } = e, {
       trackUserProfileEditAction: o
-    } = (0, g.KZ)(), u = e => {
+    } = (0, p.KZ)(), c = e => {
       if (e.shiftKey) {
-        (0, m.y8)(i.type), o({
+        (0, b.y8)(i.type), o({
           action: "WIDGET_REMOVED",
           widgetEdited: i.type,
-          applicationId: i instanceof p.q ? i.applicationId : true
-        }), (0, b.L$)(h.qb.WIDGET_REMOVED);
+          applicationId: i instanceof m.q ? i.applicationId : true
+        }), (0, h.L$)(y.qb.WIDGET_REMOVED);
         return
-      }(0, c.ZDy)(async () => {
+      }(0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("70887").then(n.bind(n, 37668));
-        return t => (0, r.jsx)(e, j(O({}, t), {
-          userId: f.default.getId(),
+        return t => (0, r.jsx)(e, x(j({}, t), {
+          userId: g.default.getId(),
           widget: i,
           trackUserProfileEditAction: o
         }))
@@ -150,7 +151,7 @@ let _ = e => {
         stackingBehavior: "stack"
       })
     };
-    return (0, r.jsx)(c.yRy, {
+    return (0, r.jsx)(s.yRy, {
       targetElementRef: a,
       align: "top",
       position: "right",
@@ -159,21 +160,21 @@ let _ = e => {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(c.v2r, {
+        return (0, r.jsx)(s.v2r, {
           navId: "user-profile-widget-context-menu",
           onClose: () => {
-            (0, s.Zy)(), t()
+            (0, u.Zy)(), t()
           },
           onSelect: () => {},
-          "aria-label": y.intl.string(y.t.xpSHSk),
-          className: v.menu,
-          children: (0, r.jsxs)(c.kSQ, {
-            children: [l, (0, r.jsx)(c.sNh, {
+          "aria-label": v.intl.string(v.t.xpSHSk),
+          className: O.menu,
+          children: (0, r.jsxs)(s.kSQ, {
+            children: [l, (0, r.jsx)(s.sNh, {
               id: "remove-widget",
-              label: y.intl.string(y.t.Mm07Yc),
-              action: u,
+              label: v.intl.string(v.t.Mm07Yc),
+              action: c,
               color: "danger",
-              icon: c.XHJ
+              icon: s.XHJ
             })]
           })
         })

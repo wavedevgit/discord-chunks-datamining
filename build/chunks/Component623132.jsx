@@ -309,10 +309,7 @@ function Z(e) {
         className: w.dragHandleContainer,
         children: [V(), (0, r.jsx)(b.e_, {
           buttonRef: K(o.applicationId),
-          className: w.dragHandle,
-          focusProps: {
-            ringTarget: q
-          }
+          className: w.dragHandle
         })]
       }) : V(), (0, r.jsxs)("div", {
         className: w.details,

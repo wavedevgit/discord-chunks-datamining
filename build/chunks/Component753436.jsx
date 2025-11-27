@@ -56,10 +56,7 @@ function O(e) {
       className: v.dragHandleContainer,
       children: [c, (0, r.jsx)(u.e_, {
         buttonRef: f(a.applicationId),
-        className: v.dragHandle,
-        focusProps: {
-          ringTarget: p
-        }
+        className: v.dragHandle
       })]
     })
   })
