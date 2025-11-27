@@ -53,8 +53,8 @@ function E(e, t) {
 }
 
 function O(e) {
-  var t, n, O, y;
-  let v, {
+  var t, n, O, v;
+  let y, {
       componentId: I,
       content: C,
       renderModalProps: S,
@@ -66,16 +66,16 @@ function O(e) {
     {
       onClose: x
     } = S,
-    A = null != (y = null == (t = C.button) ? true : t.copy) ? y : m.intl.string(m.t.YScQSF),
+    A = null != (v = null == (t = C.button) ? true : t.copy) ? v : m.intl.string(m.t.YScQSF),
     Z = (null == (n = C.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null == (O = C.button) ? true : O.buttonAction) {
     case a.Wc.OPEN_MARKETING_PAGE:
-      v = () => {
+      y = () => {
         (0, u.uL)(g.Z5c.APPLICATION_STORE), x()
       };
       break;
     case a.Wc.OPEN_TIER_1_PAYMENT_MODAL:
-      v = () => (0, c.Z)({
+      y = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_1,
         analyticsLocations: T,
         analyticsObject: E(b({}, N), {
@@ -90,7 +90,7 @@ function O(e) {
     case a.Wc.OPEN_TIER_2_PAYMENT_MODAL:
     case a.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
     default:
-      v = () => (0, c.Z)({
+      y = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_2,
         analyticsLocations: T,
         analyticsObject: E(b({}, N), {
@@ -152,7 +152,7 @@ function O(e) {
             cta_type: Z,
             seconds_open: Math.round((Date.now() - e) / 1e3),
             target: P
-          }), v()
+          }), y()
         },
         text: A,
         icon: i.SrA

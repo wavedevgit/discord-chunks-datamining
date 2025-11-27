@@ -145,7 +145,7 @@ function x(e) {
       className: N.utils,
       children: [G ? (0, r.jsx)(P, {
         quest: _
-      }) : (0, r.jsx)(y.Z, {}), (0, r.jsx)(E.i, {
+      }) : (0, r.jsx)(v.Z, {}), (0, r.jsx)(E.i, {
         quest: _,
         questContent: h.jn.ACTIVITY_PANEL,
         shouldShowDisclosure: (null == (l = _.userStatus) ? true : l.enrolledAt) == null,
@@ -183,7 +183,7 @@ function x(e) {
           children: V
         })
       })]
-    }), G && !B && (0, r.jsx)(v.Z, {
+    }), G && !B && (0, r.jsx)(y.Z, {
       autoplay: x,
       className: N.rewardTileWithInstructions,
       quest: _,

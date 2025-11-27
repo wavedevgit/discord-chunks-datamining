@@ -27,13 +27,13 @@ let f = function(e) {
     isEnabled: b,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), y = g !== d.pJs.ONLINE && g !== d.pJs.ALL, v = E || h || y, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : v ? (0, r.jsxs)("div", {
+  }), v = g !== d.pJs.ONLINE && g !== d.pJs.ALL, y = E || h || v, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
     children: [f(t), e.map(n), null == _ ? true : _(t)]
   }, t) : (0, r.jsxs)(o.W, {
     transitionAppear: false,
     component: "div",
     children: [f(t), e.map(n), null == _ ? true : _(t)]
-  }, t)), [n, f, _, t, v]);
+  }, t)), [n, f, _, t, y]);
   return (0, r.jsx)(a.bG, {
     navigator: O,
     children: (0, r.jsx)(a.SJ, {

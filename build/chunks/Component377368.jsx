@@ -24,7 +24,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,13 +42,13 @@ class C extends Chunk131468.Z {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, v(this, "playingSoundsWeb", new Map), v(this, "_stopAndClearSounds", () => {
-      u.Z.supports(y.AN.SAMPLE_PLAYBACK) && u.Z.getMediaEngine().eachConnection(e => {
+    super(...e), t = this, y(this, "playingSoundsWeb", new Map), y(this, "_stopAndClearSounds", () => {
+      u.Z.supports(v.AN.SAMPLE_PLAYBACK) && u.Z.getMediaEngine().eachConnection(e => {
         e.stopAllSamplesLocalPlayback()
       }), this.playingSoundsWeb.forEach(e => {
         e.pause(), e.src = ""
       }), this.playingSoundsWeb = new Map
-    }), v(this, "_playSound", async function(e) {
+    }), y(this, "_playSound", async function(e) {
       let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
         r = arguments.length > 2 ? arguments[2] : true,
         i = arguments.length > 3 ? arguments[3] : true,
@@ -60,15 +60,15 @@ class C extends Chunk131468.Z {
           soundVolume: (0, b.Z)(n),
           reportSoundStartedPlaying: () => (0, h.xR)(e, r)
         };
-        u.Z.supports(y.AN.SAMPLE_PLAYBACK) ? await (0, E.$)(i) : await (0, E.h)(i, t.playingSoundsWeb)
+        u.Z.supports(v.AN.SAMPLE_PLAYBACK) ? await (0, E.$)(i) : await (0, E.h)(i, t.playingSoundsWeb)
       } catch (e) {
         I.warn("Error playing soundboard sound: ".concat(e.message))
       } finally {
         (0, h.R)(e, r)
       }
-    }), v(this, "_handleOverlaySoundboardSoundsFetchRequest", () => {
+    }), y(this, "_handleOverlaySoundboardSoundsFetchRequest", () => {
       (0, h.w)()
-    }), v(this, "_handleOpenEducationModal", (e, t) => {
+    }), y(this, "_handleOpenEducationModal", (e, t) => {
       if (null == e) return;
       let l = c.Z.getChannel(t),
         a = p.ZP.getKeybindForAction(O.kg4.SOUNDBOARD_HOLD);
@@ -94,7 +94,7 @@ class C extends Chunk131468.Z {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              v(e, t, n[t])
+              y(e, t, n[t])
             })
           }
           return e

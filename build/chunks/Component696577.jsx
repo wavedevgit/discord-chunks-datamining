@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk507694 = require("./507694.js");
 
-function v(e) {
+function y(e) {
   var t;
   let {
     user: n,
@@ -45,7 +45,7 @@ function v(e) {
   }, [p]);
   return (0, r.jsxs)(r.Fragment, {
     children: [u && (0, r.jsx)("div", {
-      className: y.staffIndicator,
+      className: v.staffIndicator,
       children: (0, r.jsx)(s.IGR, {
         color: a.Z.unsafe_rawColors.BRAND_500.css,
         text: O.intl.string(O.t.oMx98L)
@@ -99,7 +99,7 @@ function C(e) {
     isProvisional: o
   } = e, p = i.useMemo(() => t ? O.intl.string(O.t["Uv/eTx"]) : a, [t, a]), f = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
   return (0, r.jsxs)("div", {
-    className: y.applicationSublabel,
+    className: v.applicationSublabel,
     children: [!o && (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
@@ -161,7 +161,7 @@ function T(e) {
     user: t,
     onClick: f,
     children: e => (0, r.jsxs)("div", {
-      className: y.listItemContents,
+      className: v.listItemContents,
       children: [(0, r.jsx)(S, {
         user: t,
         hovered: e,
@@ -169,8 +169,8 @@ function T(e) {
         isGameRelationship: c,
         applicationId: s
       }), (0, r.jsx)("div", {
-        className: y.actions,
-        children: n === E.OGo.PENDING_INCOMING ? (0, r.jsx)(v, {
+        className: v.actions,
+        children: n === E.OGo.PENDING_INCOMING ? (0, r.jsx)(y, {
           user: t,
           applicationId: s,
           isGameRelationship: c,

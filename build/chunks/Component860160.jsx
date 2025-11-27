@@ -54,9 +54,9 @@ function b(e) {
       let e = c.ZP.getGuildScheduledEvent(n.data.eventId);
       return null == e ? true : e.guild_id
     }
-  }, [n]), y = i.useMemo(() => {
-    if ("contentInventory" === n.data.kind) return n.data.content.author_id
   }, [n]), v = i.useMemo(() => {
+    if ("contentInventory" === n.data.kind) return n.data.content.author_id
+  }, [n]), y = i.useMemo(() => {
     switch (n.data.kind) {
       case "message":
       case "forumThread":
@@ -70,7 +70,7 @@ function b(e) {
       default:
         return n.timestamp
     }
-  }, [n]), I = (0, a.e7)([d.Z], () => d.Z.getChannel(E), [E]), C = null != (t = null == I ? true : I.guild_id) ? t : O, S = (0, a.e7)([p.Z], () => null != C ? p.Z.getGuild(C) : null, [C]), T = (0, a.e7)([f.default], () => null != y ? f.default.getUser(y) : null, [y]);
+  }, [n]), I = (0, a.e7)([d.Z], () => d.Z.getChannel(E), [E]), C = null != (t = null == I ? true : I.guild_id) ? t : O, S = (0, a.e7)([p.Z], () => null != C ? p.Z.getGuild(C) : null, [C]), T = (0, a.e7)([f.default], () => null != v ? f.default.getUser(v) : null, [v]);
   return "unknown" === b ? null : (0, r.jsx)("div", {
     className: _.container,
     children: (0, r.jsxs)("div", {
@@ -109,7 +109,7 @@ function b(e) {
               children: T.username
             }) : null, (0, r.jsx)("div", {
               className: _.timestamp,
-              children: (0, u.a3)(v)
+              children: (0, u.a3)(y)
             })]
           })
         }), (() => {

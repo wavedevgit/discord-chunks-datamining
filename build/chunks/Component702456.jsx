@@ -73,9 +73,9 @@ function w(e) {
   } = e, {
     status: s,
     isMobile: u
-  } = (0, o.cj)([y.Z], () => ({
-    status: y.Z.getStatus(i.id),
-    isMobile: y.Z.isMobileOnline(i.id)
+  } = (0, o.cj)([v.Z], () => ({
+    status: v.Z.getStatus(i.id),
+    isMobile: v.Z.isMobileOnline(i.id)
   })), p = (0, o.e7)([I.Z, E.Z], () => {
     let e = E.Z.getDMFromUserId(i.id);
     return null != e && I.Z.isTyping(e, i.id)
@@ -95,7 +95,7 @@ function w(e) {
     null != e && (0, g.yw)(j.rMx.CHANNEL_OPENED, Z(A({}, (0, g.$H)(e)), {
       location: "".concat(h.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
     }))
-  }, O = 0 === l, v = O ? c.YqE : a ? c.XcD : true, C = O ? P.intl.string(P.t.aI4VOL) : a ? P.intl.string(P.t.kABl2x) : true;
+  }, O = 0 === l, y = O ? c.YqE : a ? c.XcD : true, C = O ? P.intl.string(P.t.aI4VOL) : a ? P.intl.string(P.t.kABl2x) : true;
   return (0, r.jsx)(c.P3F, {
     className: x.frequentFriendAvatarButton,
     onClick: _,
@@ -111,7 +111,7 @@ function w(e) {
       isTyping: p,
       isMobile: u && !p,
       size: c.EFr.SIZE_32,
-      CutoutIcon: v,
+      CutoutIcon: y,
       avatarTooltipAsset: O ? "\uD83D\uDD25" : a ? "❄️" : true,
       avatarTooltipText: C,
       statusTooltip: true,
@@ -153,7 +153,7 @@ function L() {
     scrollLeft: 0,
     scrollWidth: 0,
     clientWidth: 0
-  }), g = Chunk473749.useRef(null), b = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk351402.Z.ipCountryCode), E = (0, Chunk81643.gD)(), y = Chunk473749.useCallback(() => {
+  }), g = Chunk473749.useRef(null), b = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk351402.Z.ipCountryCode), E = (0, Chunk81643.gD)(), v = Chunk473749.useCallback(() => {
     var e;
     let t = null == (e = Chunk367907.current) ? true : module.getScrollerNode();
     null != exports && Chunk100527({

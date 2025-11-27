@@ -16,7 +16,7 @@ require.d(exports, {
   mV: () => L,
   rK: () => w,
   wV: () => P,
-  y_: () => v,
+  y_: () => y,
   ye: () => U
 }), require("./539854.js"), require("./472816.js"), require("./794429.js"), require("./388685.js");
 var r, Chunk661869 = require("./661869.js"),
@@ -40,7 +40,7 @@ var Chunk306680 = require("./306680.js"),
   Chunk981631 = require("./981631.js"),
   Chunk764051 = require("./764051.js");
 
-function v(e, t) {
+function y(e, t) {
   return "hydration-".concat(e, "-").concat(t)
 }
 require("./388032.jsx");
@@ -57,7 +57,7 @@ async function T(e, t, n) {
   let r = _.Z.getHydratedItems(),
     i = e.slice(t, n);
   if (0 === i.length) return;
-  h.Z.loadHydratedAttempt(v(t, n));
+  h.Z.loadHydratedAttempt(y(t, n));
   let l = i.filter(e => null == r[e.id]),
     a = l.filter(e => e.type === b.Ni.MESSAGE).map(e => ({
       channel_id: e.data.channel_id,
@@ -192,7 +192,7 @@ function x(e) {
 function A(e, t) {
   var n, r;
   let i, l;
-  return null != e.before_messages && (i = j(e.before_messages).slice(-y.h9)), null != e.after_messages && (l = j(e.after_messages).slice(0, y.Ml)), n = function(e) {
+  return null != e.before_messages && (i = j(e.before_messages).slice(-v.h9)), null != e.after_messages && (l = j(e.after_messages).slice(0, v.Ml)), n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

@@ -177,9 +177,9 @@ let eU = (0, Chunk608787.Un)({
     var t, n;
     let {
       match: i
-    } = e, l = (0, C.l)(), a = (0, p.e7)([ey.Z, eS.Z], () => {
+    } = e, l = (0, C.l)(), a = (0, p.e7)([ev.Z, eS.Z], () => {
       let e = eS.Z.getChannelId();
-      return ey.Z.getChannel(e)
+      return ev.Z.getChannel(e)
     }), {
       guildId: s,
       channelId: c,
@@ -459,13 +459,13 @@ function ta(e) {
     hideChannelList: s,
     isSidebarOpen: o
   } = e;
-  (0, v.t)(true);
+  (0, y.t)(true);
   let c = "app view user trigger debugging";
-  y.R6.useExperiment({
+  v.R6.useExperiment({
     location: c
   }, {
     autoTrackExposure: false
-  }), y.R6.trackExposure({
+  }), v.R6.trackExposure({
     location: c
   });
   let u = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()),
@@ -611,7 +611,7 @@ function ts() {
     b = (0, Chunk540059.T)("AppView"),
     E = (0, Chunk267161.useAppSidebarState)(e => !e.isOpen),
     O = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
-    y = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
+    v = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk54381.jsx)("div", {
     className: Chunk822338.container,
     children: (0, Chunk54381.jsx)(Chunk372900.Z.Provider, {

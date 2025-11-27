@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 635395, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -54,14 +54,14 @@ class O extends Chunk473749.PureComponent {
       })
   }
 }
-let y = () => null;
+let v = () => null;
 Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_MUTE", () => Chunk846027.Z.toggleSelfMute({
   location: "System Tray"
 })), Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => Chunk846027.Z.toggleSelfDeaf()), Chunk998502.ZP.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
   (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
     section: Chunk981631.oAB.VOICE
   })
-}), y = Chunk442837.ZP.connectStores([Chunk19780.Z, Chunk131951.Z, Chunk606304.Z, Chunk888369.default, Chunk699516.Z, Chunk292959.Z, Chunk91896.Z], () => {
+}), v = Chunk442837.ZP.connectStores([Chunk19780.Z, Chunk131951.Z, Chunk606304.Z, Chunk888369.default, Chunk699516.Z, Chunk292959.Z, Chunk91896.Z], () => {
   let e = Chunk888369.default.getTotalMentionCount(),
     t = Chunk888369.default.hasAnyUnread(),
     n = (0, Chunk849862.m$)([Chunk699516.Z, Chunk91896.Z]),
@@ -74,4 +74,4 @@ Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_MUTE", 
     unread: Chunk473749
   }
 })(O));
-let v = y
+let y = v

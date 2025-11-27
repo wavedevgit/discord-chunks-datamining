@@ -77,7 +77,7 @@ function A(e) {
       cancelText: j.intl.string(j.t["ETE/oC"]),
       onConfirm: h
     })
-  }, [h, l, t]), m = (0, s.e7)([_.Z], () => _.Z.supports(N.AN.VIDEO)), b = t.isProvisional, y = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
+  }, [h, l, t]), m = (0, s.e7)([_.Z], () => _.Z.supports(N.AN.VIDEO)), b = t.isProvisional, v = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
   return (0, r.jsxs)(o.v2r, {
     navId: "friend-row",
     "aria-label": j.intl.string(j.t.liqwPJ),
@@ -93,7 +93,7 @@ function A(e) {
       action: p
     }), (0, r.jsx)(o.sNh, {
       id: "remove-friend",
-      label: y,
+      label: v,
       action: g,
       color: "danger"
     })]
@@ -158,12 +158,12 @@ class Z extends Chunk473749.PureComponent {
           showAccountIdentifier: !s && !e.isProvisional
         }), (0, r.jsxs)("div", {
           className: P.actions,
-          children: [(0, r.jsx)(y.Z, {
+          children: [(0, r.jsx)(v.Z, {
             icon: o.kBi,
             tooltip: j.intl.string(j.t["g33r/P"]),
             onClick: this.handleOpenPrivateChannel,
             shouldHighlight: t
-          }), (0, r.jsx)(y.Z, {
+          }), (0, r.jsx)(v.Z, {
             icon: o.Huf,
             tooltip: j.intl.string(j.t["UKOtz+"]),
             onClick: this.handleOpenActionsMenu,

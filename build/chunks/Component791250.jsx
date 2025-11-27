@@ -126,7 +126,7 @@ let eb = e => {
       l = (0, u.JA)("icymi");
     return i ? (0, r.jsx)("div", {
       className: eh.friendsButtonContainer,
-      children: (0, r.jsx)(y.Qj, eg({
+      children: (0, r.jsx)(v.Qj, eg({
         selected: t,
         route: eo.Z5c.ICYMI,
         icon: b.qOE,
@@ -165,7 +165,7 @@ let eb = e => {
         }
       })
     }, [E]);
-    let v = () => {
+    let y = () => {
         let e;
         E ? (ea.default.track(eo.rMx.GIFT_INTENT_BADGE_CLICKED, {
           gift_intent_type: ed.hX.FRIEND_ANNIVERSARY
@@ -180,8 +180,8 @@ let eb = e => {
       P = () => {
         N(true)
       },
-      A = () => (0, r.jsx)(y.Qj, em(eg({
-        onClick: v,
+      A = () => (0, r.jsx)(v.Qj, em(eg({
+        onClick: y,
         interactiveClassName: E ? eh.friendsBadge : true,
         selected: t,
         route: eo.Z5c.FRIENDS,
@@ -236,7 +236,7 @@ let eb = e => {
     let i = (0, u.JA)("activity");
     return (0, r.jsx)("div", {
       className: eh.friendsButtonContainer,
-      children: (0, r.jsx)(y.Qj, eg({
+      children: (0, r.jsx)(v.Qj, eg({
         selected: t,
         route: eo.Z5c.ME_ACTIVITY,
         icon: b.g8d,
@@ -244,13 +244,13 @@ let eb = e => {
       }, n, i))
     })
   },
-  ey = e => {
+  ev = e => {
     var {
       selected: t,
       hideGameUpdateProgressIndicator: n
     } = e, i = e_(e, ["selected", "hideGameUpdateProgressIndicator"]);
     let l = (0, u.JA)("library");
-    return (0, r.jsx)(y.Qj, em(eg({
+    return (0, r.jsx)(v.Qj, em(eg({
       selected: t,
       route: eo.Z5c.APPLICATION_LIBRARY,
       icon: b.vqy,
@@ -263,7 +263,7 @@ let eb = e => {
       })
     }))
   },
-  ev = () => {
+  ey = () => {
     let e = (0, Chunk899740.q)();
     return module > 0 ? (0, Chunk54381.jsx)(Chunk481060.mAB, {
       count: module
@@ -277,21 +277,21 @@ let eb = e => {
     } = (0, L._)();
     if (!(0, D.a)()) return null;
     let l = null == i ? true : () => E.Z.preload(eo.ME, i);
-    return (0, r.jsx)(y.Qj, em(eg({
+    return (0, r.jsx)(v.Qj, em(eg({
       selected: t,
       route: eo.Z5c.MESSAGE_REQUESTS,
       icon: b._XJ,
       text: ep.intl.string(ep.t.e7GWjQ),
       onClick: l
     }, n), {
-      children: (0, r.jsx)(ev, {})
+      children: (0, r.jsx)(ey, {})
     }))
   },
   eC = e => {
     let {
       selected: t
     } = e, n = ep.intl.string(ef.default.Rkdixs), l = (0, u.JA)("family-center"), [a, s] = i.useState(true);
-    return (0, r.jsx)(y.Qj, em(eg({
+    return (0, r.jsx)(v.Qj, em(eg({
       selected: t,
       route: eo.Z5c.FAMILY_CENTER,
       icon: b.BFJ,
@@ -315,7 +315,7 @@ let eb = e => {
     } = e, i = (0, k.gU)();
     return t ? (0, r.jsx)("div", {
       className: eh.familyCenterButtonContainer,
-      children: (0, r.jsx)(y.bU, {
+      children: (0, r.jsx)(v.bU, {
         onClick: () => {
           (0, g.ZD)(async () => {
             let {
@@ -389,7 +389,7 @@ let eP = Chunk473749.memo(function(e) {
     path: g,
     onlyShowDMs: _,
     hideAllDMs: E
-  } = e, O = i.useRef(null), y = i.useRef(null), I = i.useRef(null), C = i.useRef(null), S = U.o.useConfig({
+  } = e, O = i.useRef(null), v = i.useRef(null), I = i.useRef(null), C = i.useRef(null), S = U.o.useConfig({
     location: "privatechannels"
   }).friendsTab, T = (0, w.b5)("PrivateChannels"), j = null;
   return c ? j = (0, r.jsx)(Y.F, {
@@ -421,7 +421,7 @@ let eP = Chunk473749.memo(function(e) {
           })
         })
       })
-    }), (0, r.jsxs)(v.Z, em(eg({}, e), {
+    }), (0, r.jsxs)(y.Z, em(eg({}, e), {
       version: g,
       selectedChannelId: h,
       showDMHeader: !E && !_,
@@ -433,7 +433,7 @@ let eP = Chunk473749.memo(function(e) {
         selected: null != g ? g === eo.Z5c.FRIENDS : l === eo.Z5c.FRIENDS
       }, "friends"), !_ && T ? (0, r.jsx)(eb, {
         selected: null != g ? g === eo.Z5c.ICYMI : l === eo.Z5c.ICYMI
-      }, "icymi") : null, n && t && !_ ? (0, r.jsx)(ey, {
+      }, "icymi") : null, n && t && !_ ? (0, r.jsx)(ev, {
         selected: null == g ? null != l && l.startsWith(eo.Z5c.APPLICATION_LIBRARY) : g.startsWith(eo.Z5c.APPLICATION_LIBRARY),
         hideGameUpdateProgressIndicator: l === eo.Z5c.APPLICATION_LIBRARY
       }, "library") : null, p && !_ ? (0, r.jsx)(eI, {
@@ -453,7 +453,7 @@ let eP = Chunk473749.memo(function(e) {
         }), j]
       }, "nitro-tab-group") : null, _ ? null : (0, r.jsx)(N.i, {
         selected: g === eo.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(eo.Z5c.COLLECTIBLES_SHOP)),
-        listItemRef: y,
+        listItemRef: v,
         locationState: {
           analyticsSource: {
             page: ej(l),
@@ -514,8 +514,8 @@ function eA() {
       t = (0, Chunk880257.Z)();
     returntrue === module && true === exports
   }(), {
-    pathname: y
-  } = (0, Chunk828700.TH)(), v = Chunk515753.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.ME)) && Chunk515753 !== Chunk981631.Z5c.CHANNEL(Chunk981631.ME) && Chunk515753 !== Chunk981631.Z5c.ME_ACTIVITY, I = Chunk365113.o.useConfig({
+    pathname: v
+  } = (0, Chunk828700.TH)(), y = Chunk515753.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.ME)) && Chunk515753 !== Chunk981631.Z5c.CHANNEL(Chunk981631.ME) && Chunk515753 !== Chunk981631.Z5c.ME_ACTIVITY, I = Chunk365113.o.useConfig({
     location: "privatechannels"
   }).dmsTab;
   return (0, Chunk54381.jsx)(eP, {
