@@ -190,9 +190,11 @@ async function main() {
       }
     }
     const stats = {};
-    for (let [type] of Object.entries(all)) {
+    for (let [type,chunks] of Object.entries(all)) {
       if (!stats[type]) stats[type] = 0
-      stats[type] += 1
+      for (let i = 0; i< chunks.length; i++) {
+          stats[type] += 1
+      }
     }
     for (let chunk of all["unknown"]) {
       try {
