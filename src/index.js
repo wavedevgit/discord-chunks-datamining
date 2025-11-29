@@ -189,6 +189,11 @@ async function main() {
         names[chunk] = `IntlMessagesDefinitions${data.data.language}_${chunk}`;
       }
     }
+    const stats = {};
+    for (let [type] of Object.entries(all)) {
+      if (!stats[type]) stats[type] = 0
+      stats[type] += 1
+    }
     for (let chunk of all["unknown"]) {
       try {
         const [type, chunkData] = determineType(
@@ -214,6 +219,12 @@ async function main() {
     await fs.writeFile(
       "./build/chunks_api/all.json",
       JSON.stringify(all),
+      "utf-8"
+    );
+
+    await fs.writeFile(
+      "./build/stats.json",
+      JSON.stringify(stats),
       "utf-8"
     );
   }, "Generating json list of chunks");
