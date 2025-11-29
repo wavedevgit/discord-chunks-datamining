@@ -190,10 +190,13 @@ async function main() {
       }
     }
     const stats = {};
+    const ids = {};
     for (let [type,chunks] of Object.entries(all)) {
       if (!stats[type]) stats[type] = 0
+      if (!ids[type]) ids[type] = []
       for (let i = 0; i< chunks.length; i++) {
           stats[type] += 1
+          ids[type].push(chunks[i].id)
       }
     }
     for (let chunk of all["unknown"]) {
@@ -227,6 +230,11 @@ async function main() {
     await fs.writeFile(
       "./build/stats.json",
       JSON.stringify(stats),
+      "utf-8"
+    );
+    await fs.writeFile(
+      "./build/ids.json",
+      JSON.stringify(ids),
       "utf-8"
     );
   }, "Generating json list of chunks");
