@@ -45,16 +45,16 @@ function E(e) {
     style: {
       marginLeft: t ? "auto" : true
     },
-    children: y ? (0, r.jsx)(i.hU, {
+    children: y && !h ? (0, r.jsx)(i.hU, {
       variant: "active",
       icon: i.owK,
       onClick: D,
       "aria-label": v.intl.string(v.t.RDE0Sc)
     }) : (0, r.jsx)(l.u, {
-      text: C || !h ? true : v.intl.string(v.t.WqhZss),
+      text: h ? v.intl.string(v.t.WmfZHZ) : true,
       children: (0, r.jsx)(i.hU, {
         variant: C ? "overlay-secondary" : "secondary",
-        icon: h ? i.aAc : i.TIy,
+        icon: h ? i.xPt : i.TIy,
         "aria-label": v.intl.string(v.t.RDE0Sc),
         onClick: D
       })

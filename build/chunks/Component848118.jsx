@@ -2,8 +2,8 @@
 /** chunk id: 848118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => _,
-  p: () => f
+  A: () => p,
+  p: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,43 +14,44 @@ var Chunk54381 = require("./54381.js"),
   Chunk220082 = require("./220082.js"),
   Chunk164670 = require("./164670.js"),
   Chunk239100 = require("./239100.js");
+let f = "#000000";
 
-function f(e) {
+function _(e) {
   let {
     cardImage: t,
     cardBackgroundImage: n,
     altText: a,
     containerClassName: s,
     backgroundImageClassName: u,
-    foregroundImageClassName: f,
-    shape: _
-  } = e, [p, h] = (0, c.Cf)(t.toString(), "#000000"), m = i.useMemo(() => {
-    let e = o()(p).brighten(1.5).saturate(.3).alpha(.8).hex(),
-      t = null != h ? h : o()(p).saturate(1.2).alpha(.9).hex();
+    foregroundImageClassName: _,
+    shape: p
+  } = e, [h, m] = (0, c.Cf)(t.toString(), f), g = i.useMemo(() => {
+    let e = o()(h).brighten(1.5).saturate(.3).alpha(.8).hex(),
+      t = null != m ? m : o()(h).saturate(1.2).alpha(.9).hex();
     return "linear-gradient(135deg, ".concat(e, ", ").concat(t, ")")
-  }, [p, h]);
+  }, [h, m]);
   return (0, r.jsxs)("div", {
     className: l()(d.cardContainer, {
-      [d.square]: "square" === _
+      [d.square]: "square" === p
     }, s),
     children: [(0, r.jsx)("div", {
       className: l()(d.cardBackgroundImage, u),
       style: null != n ? {
         backgroundImage: "url(".concat(n.toString(), ")")
       } : {
-        backgroundImage: m
+        backgroundImage: g
       }
     }), (0, r.jsx)("img", {
       src: t.toString(),
       alt: a,
       className: l()(d.skuImage, {
-        [d.square]: "square" === _
-      }, f)
+        [d.square]: "square" === p
+      }, _)
     })]
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     sku: t,
     containerClassName: n,
@@ -58,7 +59,7 @@ function _(e) {
     foregroundImageClassName: a,
     shape: o
   } = e, s = (0, u.Do)(t), l = (0, u.a7)(t);
-  return null == s ? null : (0, r.jsx)(f, {
+  return null == s ? null : (0, r.jsx)(_, {
     cardImage: s,
     cardBackgroundImage: l,
     altText: t.name,
