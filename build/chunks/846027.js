@@ -515,10 +515,8 @@ let N = i()((e, t, n) => {
         enabled: e
       })
     },
-    resetMediaEngineSettings(e) {
-      a.Z.dispatch({
-        type: "MEDIA_ENGINE_RESET_SETTINGS",
-        overrides: e
-      })
-    }
+    resetMediaEngineSettings: e => a.Z.dispatch({
+      type: "MEDIA_ENGINE_RESET_SETTINGS",
+      overrides: e
+    })
   }
