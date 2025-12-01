@@ -40,11 +40,11 @@ function d(e) {
   let {
     parentAnalyticsLocation: y
   } = (0, a.ZP)(), C = t || n || d, v = p ? u.d : u.Z, _ = (0, o.Z)(t, n, d, h), {
-    events: x,
-    play: O,
+    events: O,
+    play: x,
     Component: j
   } = (0, c.b)(C), E = n || d ? l.v0G : j;
-  return r.useEffect(() => () => O(), [O, C]), (0, i.jsx)(v, function(e) {
+  return r.useEffect(() => () => x(), [x, C]), (0, i.jsx)(v, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -68,10 +68,10 @@ function d(e) {
     color: C ? "red" : true,
     label: _,
     onMouseEnter: e => {
-      null == f || f(e), x.onMouseEnter()
+      null == f || f(e), O.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == m || m(e), x.onMouseLeave()
+      null == m || m(e), O.onMouseLeave()
     },
     onClick: e => {
       null == g || g(e), (0, s.v)(y, s.d.MIC, t)

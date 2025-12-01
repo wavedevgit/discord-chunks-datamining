@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 185413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => x
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -41,7 +41,7 @@ function _(e) {
   return e
 }
 
-function x(e, t) {
+function O(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -57,10 +57,10 @@ function x(e, t) {
   return r
 }
 
-function O(e) {
+function x(e) {
   var {
     channelId: t
-  } = e, n = x(e, ["channelId"]);
+  } = e, n = O(e, ["channelId"]);
   let l = (0, a.e7)([d.Z], () => d.Z.getChannel(t), [t]),
     o = (0, a.e7)([p.Z], () => p.Z.getGuild(null == l ? true : l.getGuildId()));
   return (r.useEffect(() => {
@@ -81,7 +81,7 @@ function j(e) {
       newChannel: h,
       inSettings: y
     } = e,
-    O = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
+    x = O(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
   let [j, E] = r.useState(""), [S, P] = r.useState({}), [I, Z] = r.useState(false), [T, N] = r.useState(null), A = r.useRef(null), {
     roles: w,
     members: M,
@@ -119,7 +119,7 @@ function j(e) {
     roles: w,
     members: M,
     getRichTag: R,
-    children: (0, i.jsx)(l.Modal, (t = _({}, O), n = n = {
+    children: (0, i.jsx)(l.Modal, (t = _({}, x), n = n = {
       title: C.intl.string(C.t.dMJ3Y6),
       onClose: p,
       input: (0, i.jsxs)("div", {

@@ -71,7 +71,7 @@ function B(e) {
     showingBanner: p
   } = e, h = (0, d.ZP)(n), {
     type: y
-  } = n, v = (0, l.e7)([x.default], () => n.isPrivate() ? x.default.getUser(n.getRecipientId()) : null), S = O.ZP.useUserTag(v), {
+  } = n, v = (0, l.e7)([O.default], () => n.isPrivate() ? O.default.getUser(n.getRecipientId()) : null), S = x.ZP.useUserTag(v), {
     canManageRoles: N,
     canReadMessageHistory: A
   } = (0, l.cj)([_.Z], () => ({

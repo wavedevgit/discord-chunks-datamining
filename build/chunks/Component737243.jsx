@@ -26,8 +26,8 @@ let h = Chunk473749.memo(function(e) {
     referencedAvatarProfile: v,
     setPopout: _
   } = e, {
-    isInteractionUserBlocked: x,
-    isInteractionUserIgnored: O
+    isInteractionUserBlocked: O,
+    isInteractionUserIgnored: x
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
@@ -55,8 +55,8 @@ let h = Chunk473749.memo(function(e) {
     message: h,
     channel: f,
     compact: m,
-    isInteractionUserBlocked: x,
-    isInteractionUserIgnored: O,
+    isInteractionUserBlocked: O,
+    isInteractionUserIgnored: x,
     showAvatarPopout: b,
     showUsernamePopout: g,
     showDataPopout: y,

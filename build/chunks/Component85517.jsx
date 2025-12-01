@@ -106,13 +106,13 @@ function j(e) {
     fireOnMount: true
   }), R = (0, c.e7)([_.Z], () => _.Z.quests);
   return i.useEffect(() => {
-    g.default.track(v.rMx.QUEST_CONTENT_VIEWED, T(S({}, (0, m.mH)(b.jn.QUEST_HOME_TAKEOVER)), {
+    g.default.track(y.rMx.QUEST_CONTENT_VIEWED, T(S({}, (0, m.mH)(b.jn.QUEST_HOME_TAKEOVER)), {
       quest_id: t.campaignId,
       is_targeted: false
     }))
   }, [t.campaignId]), (0, r.jsx)("div", {
     className: a()(C.wrapper, {
-      "theme-dark": x === y.BR.LIGHT,
+      "theme-dark": x === v.BR.LIGHT,
       [C.wrapperWithOldDiscoveryHeader]: !P
     }),
     ref: L,
@@ -155,7 +155,7 @@ function j(e) {
           }), (0, r.jsxs)(u.ButtonGroup, {
             children: [(0, r.jsx)(u.Button, {
               onClick: () => {
-                (0, f.Z)(t.ctaSponsorUrl.url), g.default.track(v.rMx.QUEST_CONTENT_CLICKED, S({
+                (0, f.Z)(t.ctaSponsorUrl.url), g.default.track(y.rMx.QUEST_CONTENT_CLICKED, S({
                   quest_id: t.campaignId,
                   cta_name: m.jZ.OPEN_GAME_LINK,
                   click_id: (0, o.Z)(),
@@ -173,7 +173,7 @@ function j(e) {
                   (0, E.navigateToQuestHome)({
                     questId: e.questId
                   })
-                }), g.default.track(v.rMx.QUEST_CONTENT_CLICKED, S({
+                }), g.default.track(y.rMx.QUEST_CONTENT_CLICKED, S({
                   quest_id: t.campaignId,
                   cta_name: m.jZ.LEARN_MORE,
                   click_id: (0, o.Z)(),

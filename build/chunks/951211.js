@@ -29,8 +29,8 @@ function f(e) {
     canLaunchActivities: C,
     appContext: v,
     canSendScheduledMessages: _,
-    canSummarizeThreads: x,
-    showAppLauncher: O
+    canSummarizeThreads: O,
+    showAppLauncher: x
   } = e, j = [];
   t && (j.push({
     type: "UPLOAD_A_FILE",
@@ -61,7 +61,7 @@ function f(e) {
   } = u.n.getConfig({
     location: "getChannelAttachOptions"
   });
-  return S ? O && j.push({
+  return S ? x && j.push({
     type: "APP_LAUNCHER",
     icon: r.jje,
     display: p.intl.string(p.t.nqswKn)
@@ -103,7 +103,7 @@ function f(e) {
     type: "SCHEDULED_MESSAGE",
     icon: r.T39,
     display: p.intl.string(p.t["3+ii4F"])
-  }), m.isThread() && x && j.push({
+  }), m.isThread() && O && j.push({
     type: "SUMMARIZE_THREAD",
     icon: r.$2U,
     display: p.intl.string(p.t.EXfguE)

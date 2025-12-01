@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk149623 = require("./149623.js");
 
-function x(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -42,7 +42,7 @@ function x(e) {
   return e
 }
 
-function O(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -70,7 +70,7 @@ function j(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("70675"), n.e("85994")]).then(n.bind(n, 654663));
-      return t => (0, i.jsx)(e, O(x({}, t), {
+      return t => (0, i.jsx)(e, x(O({}, t), {
         user: E,
         guildId: C.guild_id,
         channel: C
@@ -91,7 +91,7 @@ function j(e) {
       channelId: C.id,
       roleId: null == S ? true : S.colorRoleId,
       clickTrap: true,
-      children: e => (0, i.jsx)(s.P3F, O(x({}, e), {
+      children: e => (0, i.jsx)(s.P3F, x(O({}, e), {
         innerRef: v,
         tag: "span",
         className: _.threadCreatorName,

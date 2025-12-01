@@ -99,7 +99,7 @@ class x {
     let e = new Set,
       t = Array.from(Chunk699516.Z.getMutableRelationships().entries()).map(t => {
         let [n, r] = t;
-        return r === v.OGo.FRIEND && e.add(n), new P(S(C({
+        return r === y.OGo.FRIEND && e.add(n), new P(S(C({
           key: n,
           type: r,
           userId: n,
@@ -107,7 +107,7 @@ class x {
         }, T(n), N(n), j(n)), {
           spam: E.Z.isSpam(n),
           ignoredUser: E.Z.isIgnored(n),
-          giftIntentType: r === v.OGo.FRIEND && h.ZP.getFriendAnniversaries().includes(n) ? y.hX.FRIEND_ANNIVERSARY : true,
+          giftIntentType: r === y.OGo.FRIEND && h.ZP.getFriendAnniversaries().includes(n) ? v.hX.FRIEND_ANNIVERSARY : true,
           applicationId: E.Z.getOriginApplicationId(n)
         }))
       }),
@@ -120,7 +120,7 @@ class x {
         applicationId: l,
         type: a
       } = t;
-      !(a === v.OGo.FRIEND && e.has(r)) && (a === v.OGo.FRIEND && i.has(r) || (a === v.OGo.FRIEND && i.add(r), n.push(new P(S(C({
+      !(a === y.OGo.FRIEND && e.has(r)) && (a === y.OGo.FRIEND && i.has(r) || (a === y.OGo.FRIEND && i.add(r), n.push(new P(S(C({
         key: "".concat(r, "-").concat(l),
         type: a,
         userId: r,
@@ -162,19 +162,19 @@ class x {
       returntrue
     }).filter(t => {
       switch (e) {
-        case v.pJs.ONLINE:
-          return t.type === v.OGo.FRIEND && t.status !== v.Skl.OFFLINE;
-        case v.pJs.PENDING:
-          return t.type === v.OGo.PENDING_INCOMING && !t.spam && !t.ignoredUser || t.type === v.OGo.PENDING_OUTGOING;
-        case v.pJs.SPAM:
-          return t.type === v.OGo.PENDING_INCOMING && t.spam;
-        case v.pJs.PENDING_IGNORED:
-          return t.type === v.OGo.PENDING_INCOMING && t.ignoredUser;
-        case v.pJs.SUGGESTIONS:
+        case y.pJs.ONLINE:
+          return t.type === y.OGo.FRIEND && t.status !== y.Skl.OFFLINE;
+        case y.pJs.PENDING:
+          return t.type === y.OGo.PENDING_INCOMING && !t.spam && !t.ignoredUser || t.type === y.OGo.PENDING_OUTGOING;
+        case y.pJs.SPAM:
+          return t.type === y.OGo.PENDING_INCOMING && t.spam;
+        case y.pJs.PENDING_IGNORED:
+          return t.type === y.OGo.PENDING_INCOMING && t.ignoredUser;
+        case y.pJs.SUGGESTIONS:
           return 99 === t.type;
-        case v.pJs.ALL:
+        case y.pJs.ALL:
         default:
-          return t.type === v.OGo.FRIEND
+          return t.type === y.OGo.FRIEND
       }
     }).sortBy(e => e.comparator).value()
   }

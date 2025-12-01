@@ -22,14 +22,14 @@ function g(e) {
     channel: t,
     user: g,
     guild: b
-  } = e, y = (0, l.e7)([p.Z], () => null != g && p.Z.isUserBanned(g.id)), C = null != g && null == y, [v, _] = r.useState(C), x = (0, l.e7)([d.Z], () => null != g && null != b && (0, u.lD)(g, b, [d.Z]));
+  } = e, y = (0, l.e7)([p.Z], () => null != g && p.Z.isUserBanned(g.id)), C = null != g && null == y, [v, _] = r.useState(C), O = (0, l.e7)([d.Z], () => null != g && null != b && (0, u.lD)(g, b, [d.Z]));
   if ((0, c.ZP)(() => {
       C && s.Z.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => _(false))
-    }), !x) return null;
-  let O = true === y ? m.intl.string(f.default.dpfwQ1) : m.intl.string(f.default.ASv23S),
+    }), !O) return null;
+  let x = true === y ? m.intl.string(f.default.dpfwQ1) : m.intl.string(f.default.ASv23S),
     j = "ban-user-".concat(null == g ? true : g.id);
   return (0, i.jsx)(h.Z, {
-    text: O,
+    text: x,
     icon: o.pgN,
     onClick: () => {
       null != g && (0, o.ZDy)(async () => {

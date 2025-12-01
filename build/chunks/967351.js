@@ -43,7 +43,7 @@ function b(e) {
 function E(e) {
   return new Promise((t, n) => {
     "string" == typeof e && (e = h.net.createConnection(e));
-    let r = new v(e, "json");
+    let r = new y(e, "json");
     e.on("data", t => {
       try {
         r.read(t)
@@ -81,7 +81,7 @@ function O(e, t) {
     i = r.Buffer.alloc(8 + n);
   return i.writeInt32LE(e, 0), i.writeInt32LE(n, 4), i.write(t, 8, n), i.buffer.slice(i.byteOffset, i.byteOffset + i.byteLength)
 }
-class v extends Chunk76238.Z {
+class y extends Chunk76238.Z {
   copyBuffer(e, t, n) {
     let i = r.Buffer.allocUnsafe(n - t);
     return e.copy(i, 0, t, n), i
@@ -148,9 +148,9 @@ class v extends Chunk76238.Z {
     super("ipc", p.X6Q, t), f(this, "messageBuffer", r.Buffer.alloc(0)), f(this, "currentHeader", null), f(this, "MAX_BUFFER_SIZE", 5242880), f(this, "socket", true), f(this, "clientId", null), this.socket = e, _(e, false)
   }
 }
-class y extends Chunk836560.EventEmitter {
+class v extends Chunk836560.EventEmitter {
   handleConnection(e) {
-    let t = new v(e, "json");
+    let t = new y(e, "json");
     e.on("readable", () => {
       let n = e.read();
       null != n && t.read(r.Buffer.from(n))
@@ -190,4 +190,4 @@ class y extends Chunk836560.EventEmitter {
     })
   }
 }
-let I = new y
+let I = new v

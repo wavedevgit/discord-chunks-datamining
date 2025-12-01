@@ -98,15 +98,15 @@ function S(e) {
     }, [I, T, t, n.id, l]);
   return (0, i.jsxs)("div", {
     ref: P,
-    className: a()(O.popover, x.container),
+    className: a()(x.popover, O.container),
     children: [(0, i.jsx)(y.Z, {
       userId: l,
       size: 32,
-      className: x.icon,
+      className: O.icon,
       hangStatusActivity: t
     }), (0, i.jsx)(s.Text, {
       variant: "text-md/medium",
-      className: x.statusText,
+      className: O.statusText,
       children: (0, f.O8)(l, t)
     }), I ? (0, i.jsx)(s.aML, {
       "data-migration-pending": true,

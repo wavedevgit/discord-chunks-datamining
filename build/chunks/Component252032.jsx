@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk224837 = require("./224837.js"),
   Chunk360514 = require("./360514.js");
 
-function O(e) {
+function x(e) {
   let {
     value: t,
     channel: n
@@ -92,7 +92,7 @@ function j(e) {
       }
       return e
     }({}, e), n = n = {
-      className: x.channelTextArea,
+      className: O.channelTextArea,
       key: u
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -115,7 +115,7 @@ function j(e) {
     onChange: o.Z.updateEditMessage,
     onConfirmDelete: b.Z.confirmDelete,
     saveMessage: N,
-    validateEdit: O,
+    validateEdit: x,
     children: A
   }) : null
 }
@@ -134,7 +134,7 @@ function E(e) {
   return r.useEffect(() => (m.S.subscribe(v.CkL.TEXTAREA_FOCUS, g), m.S.subscribe(v.CkL.TEXTAREA_BLUR, b), () => {
     m.S.unsubscribe(v.CkL.TEXTAREA_FOCUS, g), m.S.unsubscribe(v.CkL.TEXTAREA_BLUR, b)
   }), [g, b]), (0, i.jsx)(u.ZP, {
-    className: x.channelTextArea,
+    className: O.channelTextArea,
     textValue: t,
     richValue: n,
     channel: a,

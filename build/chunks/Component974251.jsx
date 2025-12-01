@@ -86,7 +86,7 @@ let W = Chunk473749.memo(function(e) {
     setValue: X,
     canOnlyUseTextCommands: J,
     chatInputType: Q
-  } = e, $ = (0, x.bp)(), ee = r.useRef(null), et = r.useRef(null), en = (0, o.e7)([N.Z], () => N.Z.getActivities()), ei = (0, b.z8)(), er = (0, o.e7)([g.Z], () => g.Z.getLastClipsSession()), el = (0, o.Wu)([g.Z], () => g.Z.getNewClipIds()), ea = (0, o.e7)([P.ZP], () => null == P.ZP.getCurrentSidebarChannelId(q.id)), {
+  } = e, $ = (0, O.bp)(), ee = r.useRef(null), et = r.useRef(null), en = (0, o.e7)([N.Z], () => N.Z.getActivities()), ei = (0, b.z8)(), er = (0, o.e7)([g.Z], () => g.Z.getLastClipsSession()), el = (0, o.Wu)([g.Z], () => g.Z.getNewClipIds()), ea = (0, o.e7)([P.ZP], () => null == P.ZP.getCurrentSidebarChannelId(q.id)), {
     showClipsHeaderEntrypoint: eo
   } = m.NV.useExperiment({
     location: "ChannelAttachButton"
@@ -128,13 +128,13 @@ let W = Chunk473749.memo(function(e) {
     }
   });
   let e_ = (0, E.NE)(q),
-    ex = (0, E.Xu)(q),
-    eO = !S.dN.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver,
+    eO = (0, E.Xu)(q),
+    ex = !S.dN.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver,
     ej = (0, f.R)({
       channel: q,
       chatInputType: Q
     }),
-    eE = (0, O.UI)(null != q ? q : true),
+    eE = (0, x.UI)(null != q ? q : true),
     eS = (0, p.qB)(),
     eP = (0, j.Us)({
       location: "ChannelAttachButton"
@@ -143,8 +143,8 @@ let W = Chunk473749.memo(function(e) {
     eZ = null != (l = null == el ? true : el.length) ? l : 0,
     eT = (0, k.Z)({
       canAttachFiles: eb,
-      canStartThreads: e_ || ex,
-      useSlate: eO,
+      canStartThreads: e_ || eO,
+      useSlate: ex,
       hasClips: em,
       canUseApplicationCommands: !J,
       channel: q,

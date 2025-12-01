@@ -26,9 +26,9 @@ let d = function(e) {
     onSecondaryButtonClick: C,
     children: v,
     useReducedMotion: _ = false,
-    buttonVariant: x
-  } = e, O = (0, a.e7)([c.ZP], () => c.ZP.getState().isMembersOpen);
-  if (l.tq && O) return null;
+    buttonVariant: O
+  } = e, x = (0, a.e7)([c.ZP], () => c.ZP.getState().isMembersOpen);
+  if (l.tq && x) return null;
   if (null == t) return (0, i.jsx)(i.Fragment, {
     children: r.Children.only(v)
   });
@@ -71,7 +71,7 @@ let d = function(e) {
         children: (0, i.jsx)(o.Button, {
           text: p,
           size: "sm",
-          variant: null != x ? x : "secondary",
+          variant: null != O ? O : "secondary",
           onClick: m,
           loading: f,
           icon: h

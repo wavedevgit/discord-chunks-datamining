@@ -40,8 +40,8 @@ function p(e) {
     width: b,
     height: y
   } = m, C = null != (t = null == l ? true : l.length) ? t : 0, v = b - 16, _ = y - (h + f), {
-    tileStyle: x,
-    tileWidth: O,
+    tileStyle: O,
+    tileWidth: x,
     rows: j,
     columns: E
   } = r.useMemo(() => (function(e, t, n) {
@@ -80,7 +80,7 @@ function p(e) {
       rows: i,
       columns: r
     }
-  })(C, v, _), [C, v, _]), S = E + 1, P = S * O + (S - 1) * 8 <= b, I = Math.floor(O / c) + 8, Z = Math.max(0, _ - I * j) / 2;
+  })(C, v, _), [C, v, _]), S = E + 1, P = S * x + (S - 1) * 8 <= b, I = Math.floor(x / c) + 8, Z = Math.max(0, _ - I * j) / 2;
   return (0, i.jsx)(o.Z, {
     fade: true,
     className: n,
@@ -94,7 +94,7 @@ function p(e) {
           var r;
           let l = n + t;
           return (0, i.jsx)("div", {
-            style: x,
+            style: O,
             className: a()(s.tile, {
               [s.padColumn]: P,
               [s.noVerticalMargin]: l >= (j - 1) * E,
@@ -102,7 +102,7 @@ function p(e) {
             }),
             children: (0, i.jsx)("div", {
               className: s.tileSizer,
-              children: e(O)
+              children: e(x)
             })
           }, null != (r = null == p ? true : p(l)) ? r : l)
         })

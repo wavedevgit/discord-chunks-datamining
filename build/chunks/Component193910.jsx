@@ -64,7 +64,7 @@ function L(e) {
     channel: t,
     chatInputType: g,
     options: b,
-    onFileUpload: x,
+    onFileUpload: O,
     onClose: L,
     onSelect: D,
     draftType: k,
@@ -83,7 +83,7 @@ function L(e) {
   }
 
   function q() {
-    O.default.track(Z.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), F("/", (0, P.JM)("/"))
+    x.default.track(Z.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), F("/", (0, P.JM)("/"))
   }
 
   function K() {
@@ -135,7 +135,7 @@ function L(e) {
   }
 
   function X() {
-    O.default.track(Z.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
+    x.default.track(Z.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
       guild_id: t.guild_id
@@ -165,7 +165,7 @@ function L(e) {
     })
   }
   return r.useEffect(() => {
-    O.default.track(Z.rMx.OPEN_POPOUT, {
+    x.default.track(Z.rMx.OPEN_POPOUT, {
       type: "Send Attachment",
       channel_id: t.id,
       guild_id: t.guild_id
@@ -197,7 +197,7 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "upload-file",
             label: r,
-            action: x
+            action: O
           }, "upload-file");
         case I.r.UPLOAD_TEXT_AS_FILE:
           if ("" === U) return null;

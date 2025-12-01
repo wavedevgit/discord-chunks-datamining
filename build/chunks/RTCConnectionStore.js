@@ -355,6 +355,9 @@ class z extends(a = Chunk442837.ZP.Store) {
   getVoiceStateStats() {
     return null == v ? true : v.getStats()
   }
+  getUserVoiceSettingsStats(e) {
+    return null == v ? true : v.getUserVoiceSettingsStats(e)
+  }
   getWasEverMultiParticipant() {
     return I
   }

@@ -37,9 +37,9 @@ var Chunk54381 = require("./54381.js"),
 function w(e) {
   let {
     channel: t
-  } = e, [n, l] = r.useState(false), o = (0, m.ZP)(t, true), w = t.guild_id, M = (0, u.e7)([_.Z], () => null != w ? _.Z.getSortedRoles(w) : true), R = (0, u.e7)([j.default, x.Z], () => {
+  } = e, [n, l] = r.useState(false), o = (0, m.ZP)(t, true), w = t.guild_id, M = (0, u.e7)([_.Z], () => null != w ? _.Z.getSortedRoles(w) : true), R = (0, u.e7)([j.default, O.Z], () => {
     var e;
-    return j.default.getUser(null == (e = x.Z.getGuild(w)) ? true : e.ownerId)
+    return j.default.getUser(null == (e = O.Z.getGuild(w)) ? true : e.ownerId)
   }), L = r.useMemo(() => null != M ? M.filter(e => !(0, v.fI)(e)) : [], [M]), D = r.useMemo(() => s()(L).filter(e => {
     if (null == w) returnfalse;
     let n = E.I0({
@@ -67,7 +67,7 @@ function w(e) {
         l = c.e$(r.allow, Z.Plq.VIEW_CHANNEL);
       return i || l
     }).value()
-  }, [t, R]), U = O.Z.can(Z.Plq.MANAGE_CHANNELS, t) || O.Z.can(Z.Plq.MANAGE_ROLES, t), F = r.useCallback(() => l(false), []);
+  }, [t, R]), U = x.Z.can(Z.Plq.MANAGE_CHANNELS, t) || x.Z.can(Z.Plq.MANAGE_ROLES, t), F = r.useCallback(() => l(false), []);
   return (0, i.jsxs)(P.ZP, {
     channelId: t.id,
     children: [(0, i.jsx)(P.Kq, {

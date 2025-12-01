@@ -81,7 +81,7 @@ let N = Chunk473749.memo(function(e) {
     allowHeading: U || G,
     allowLinks: true,
     previewLinkTarget: true
-  }), V = (0, s.JA)(N.id), F = (0, p.ZP)(N), z = (0, o.e7)([v.Z], () => N.hasFlag(I.iLy.HAS_THREAD) && v.Z.getChannel(y.default.castMessageIdAsChannelId(N.id))), Y = (0, c.p9)({
+  }), V = (0, s.JA)(N.id), F = (0, p.ZP)(N), z = (0, o.e7)([y.Z], () => N.hasFlag(I.iLy.HAS_THREAD) && y.Z.getChannel(v.default.castMessageIdAsChannelId(N.id))), Y = (0, c.p9)({
     guildId: Z.guild_id,
     roleId: F.iconRoleId
   }), W = (0, h.iG)(N), q = (0, h.Gx)(N);

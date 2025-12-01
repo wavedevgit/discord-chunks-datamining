@@ -32,13 +32,13 @@ let _ = function(e) {
       dismissAction: y.L.AUTO
     })
   }, []);
-  let x = r.useCallback(() => {
+  let O = r.useCallback(() => {
       o.Z.updateChatOpen(t.id, false), m.S.safeDispatch(b.CkL.FOCUS_CHAT_BUTTON)
     }, [t.id]),
-    O = (0, i.jsx)(h.ZP.Icon, {
+    x = (0, i.jsx)(h.ZP.Icon, {
       icon: a.Dio,
       tooltip: C.intl.string(C.t.cpT0Cq),
-      onClick: x
+      onClick: O
     });
   return (0, i.jsxs)(u.Z, {
     sidebarType: u.y.CallChatSidebar,
@@ -48,7 +48,7 @@ let _ = function(e) {
       channel: t,
       draftType: f.d.ChannelMessage
     }), (0, i.jsxs)(h.ZP, {
-      toolbar: O,
+      toolbar: x,
       "aria-label": C.intl.string(C.t.BIYAqa),
       children: [(0, i.jsx)(h.ZP.ChannelIcon, {
         icon: a.kBi,

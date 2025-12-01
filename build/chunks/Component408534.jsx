@@ -44,11 +44,11 @@ function E(e) {
     onSelect: n,
     onInteraction: P,
     navId: "more-settings-context",
-    "aria-label": O.intl.string(O.t.FTLzdR),
+    "aria-label": x.intl.string(x.t.FTLzdR),
     children: [(0, i.jsx)(l.kSQ, {
-      children: T !== x.d4z.GUILD_STAGE_VOICE ? D : null
+      children: T !== O.d4z.GUILD_STAGE_VOICE ? D : null
     }), (0, i.jsxs)(l.kSQ, {
-      children: [T === x.d4z.GUILD_STAGE_VOICE ? F : null, T === x.d4z.GUILD_STAGE_VOICE ? B : null, S || T === x.d4z.GUILD_STAGE_VOICE ? null : k, G, T !== x.d4z.GUILD_STAGE_VOICE ? R : null, T === x.d4z.GUILD_STAGE_VOICE || T === x.d4z.GUILD_VOICE ? L : null]
+      children: [T === O.d4z.GUILD_STAGE_VOICE ? F : null, T === O.d4z.GUILD_STAGE_VOICE ? B : null, S || T === O.d4z.GUILD_STAGE_VOICE ? null : k, G, T !== O.d4z.GUILD_STAGE_VOICE ? R : null, T === O.d4z.GUILD_STAGE_VOICE || T === O.d4z.GUILD_VOICE ? L : null]
     }), (0, i.jsx)(l.kSQ, {
       children: z
     }), (0, i.jsxs)(l.kSQ, {

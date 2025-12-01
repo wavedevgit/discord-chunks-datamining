@@ -134,7 +134,7 @@ let V = Chunk473749.memo(function() {
           trailing: (0, r.jsxs)(r.Fragment, {
             children: [B && (0, r.jsx)(g.Z, {
               className: Q
-            }), (0, r.jsx)(v.Z, {
+            }), (0, r.jsx)(y.Z, {
               className: Q
             }), (0, r.jsx)(m.Z, {
               canShowReminder: true,
@@ -171,7 +171,7 @@ let V = Chunk473749.memo(function() {
               children: [(0, r.jsx)(C.H, {
                 focusSectionProps: "HELP" === K ? e : true,
                 className: Q
-              }), V ? (0, r.jsx)(y.M, {
+              }), V ? (0, r.jsx)(v.M, {
                 className: Q
               }) : null]
             }) : (0, r.jsx)(I.Z, {

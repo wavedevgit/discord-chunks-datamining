@@ -105,7 +105,7 @@ let q = (0, Chunk666917.animated)(Chunk481060.eTT),
       showNewMessagesBar: y,
       messageDisplayCompact: v,
       channelStream: _,
-      uploads: x,
+      uploads: O,
       hasUnreads: j,
       editingMessageId: S,
       fontSize: P,
@@ -158,7 +158,7 @@ let q = (0, Chunk666917.animated)(Chunk481060.eTT),
       showNewMessagesBar: y,
       messageDisplayCompact: v,
       channelStream: _,
-      uploads: x,
+      uploads: O,
       loadMore: X.loadMore,
       scrollManager: X,
       specs: Y,
@@ -213,9 +213,9 @@ let q = (0, Chunk666917.animated)(Chunk481060.eTT),
         var t;
         X.ref.current = e, ea.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
       }),
-      ec = (0, c.e7)([O.Z], () => {
+      ec = (0, c.e7)([x.Z], () => {
         var e;
-        let t = null == (e = O.Z.settings.appearance) ? true : e.clientThemeSettings;
+        let t = null == (e = x.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
       eu = r.useMemo(() => R ? D ? V.chatTypingGradientAtBottom : V.chatTypingGradientNotAtBottom : V.chatGradient, [R, D]),
@@ -292,14 +292,14 @@ let q = (0, Chunk666917.animated)(Chunk481060.eTT),
         canManageMessages: i
       }
     }(t), {
-      messageGroupSpacing: O,
+      messageGroupSpacing: x,
       fontSize: E,
       messageDisplayCompact: w,
       renderSpoilers: L,
       keyboardModeEnabled: k
     } = function() {
-      let e = x.jU.useSetting(),
-        t = x.cC.useSetting(),
+      let e = O.jU.useSetting(),
+        t = O.cC.useSetting(),
         {
           messageGroupSpacing: n,
           fontSize: i,
@@ -382,7 +382,7 @@ let q = (0, Chunk666917.animated)(Chunk481060.eTT),
       value: (0, M.Z)(L, d),
       children: (0, i.jsx)(D.v, {
         children: (0, i.jsx)(K, z(G({}, u), {
-          messageGroupSpacing: O,
+          messageGroupSpacing: x,
           showNewMessagesBar: true,
           channel: t,
           messageDisplayCompact: !o && (a || w),

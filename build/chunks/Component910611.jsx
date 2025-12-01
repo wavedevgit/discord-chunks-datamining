@@ -207,22 +207,22 @@ function D(e) {
     case A.d4z.ANNOUNCEMENT_THREAD:
     case A.d4z.PUBLIC_THREAD:
     case A.d4z.PRIVATE_THREAD:
-      let x = null;
+      let O = null;
       if (!s && null != l) {
         let e = (0, f.KS)(l, o);
-        x = (0, i.jsxs)(r.Fragment, {
+        O = (0, i.jsxs)(r.Fragment, {
           children: [F(e, M.intl.string(M.t.Pnajj0)), (0, i.jsx)(T.Z.Title, {
             level: C,
             onContextMenu: m,
             onClick: p,
             className: a()(R.parentChannelName, R.cursorPointer),
-            children: (0, h.F6)(l, O.default, _.Z)
+            children: (0, h.F6)(l, x.default, _.Z)
           }), (0, i.jsx)(T.Z.Caret, {})]
         })
       }
       let j = (null == l ? true : l.type) != null && A.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, i.jsxs)(r.Fragment, {
-        children: [x, F(j ? null : b, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(T.Z.Title, {
+        children: [O, F(j ? null : b, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(T.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: c,
@@ -259,7 +259,7 @@ let k = e => {
   var t, n, l;
   let {
     channel: a
-  } = e, s = (0, o.e7)([O.default], () => O.default.getCurrentUser()), c = (0, o.e7)([O.default], () => O.default.getUser(a.getRecipientId())), u = (0, S.G)(), d = (0, o.e7)([C.Z], () => null != c ? C.Z.getUserProfile(c.id) : null), h = null != d && (null != (t = null == d ? true : d.fetchEndedAt) ? t : 0) > 0;
+  } = e, s = (0, o.e7)([x.default], () => x.default.getCurrentUser()), c = (0, o.e7)([x.default], () => x.default.getUser(a.getRecipientId())), u = (0, S.G)(), d = (0, o.e7)([C.Z], () => null != c ? C.Z.getUserProfile(c.id) : null), h = null != d && (null != (t = null == d ? true : d.fetchEndedAt) ? t : 0) > 0;
   return (r.useEffect(() => {
     (null == s ? true : s.isStaff()) && null != c && !c.isStaff() && (0, v.Z)(c.id, c.getAvatarURL(true, 80), {
       dispatchWait: true,
@@ -313,7 +313,7 @@ function B(e) {
     guild: t,
     channel: n,
     caretPosition: l = "left"
-  } = e, a = (0, o.e7)([x.Z], () => x.Z.getGuildId()), s = (0, b.D)(), d = r.useRef(null);
+  } = e, a = (0, o.e7)([O.Z], () => O.Z.getGuildId()), s = (0, b.D)(), d = r.useRef(null);
   return (a === A.I_8 || s) && null != t ? (0, i.jsx)(c.u, {
     asContainer: true,
     text: t.name,

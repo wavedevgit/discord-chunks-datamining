@@ -93,7 +93,7 @@ class P {
         channel_id: n
       }, {
         channel_id: n,
-        message: (0, v.Xb)(r)
+        message: (0, y.Xb)(r)
       }, i)
     }), j(this, "handleSpeaking", e => {
       if (0 === this.rpcServer.subscriptions.length) return;
@@ -132,8 +132,8 @@ class P {
       } = e;
       0 !== this.rpcServer.subscriptions.length && this.rpcServer.dispatchToSubscriptions(C.zMe.NOTIFICATION_CREATE, {}, {
         channel_id: t,
-        message: (0, v.Xb)(n),
-        icon_url: null != r ? (0, v.RE)(r) : null,
+        message: (0, y.Xb)(n),
+        icon_url: null != r ? (0, y.RE)(r) : null,
         title: i,
         body: l
       })
@@ -192,7 +192,7 @@ class P {
       })
     }), j(this, "handleEmbeddedActivityUpdate", () => {
       if (0 === this.rpcServer.subscriptions.length) return;
-      let e = (0, y.dO)();
+      let e = (0, v.dO)();
       this.rpcServer.dispatchToSubscriptions(C.zMe.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE, {}, e)
     }), j(this, "handleActivityMessage", e => {
       var t;
@@ -274,8 +274,8 @@ class P {
       if (0 === this.rpcServer.subscriptions.length) return;
       let r = m.default.getUser(t);
       if (null == r) return;
-      let i = (0, v._J)(n, r);
-      this.rpcServer.dispatchToSubscriptions(C.zMe.RELATIONSHIP_UPDATE, {}, e => (0, v.kb)(i, e.socket.application.id))
+      let i = (0, y._J)(n, r);
+      this.rpcServer.dispatchToSubscriptions(C.zMe.RELATIONSHIP_UPDATE, {}, e => (0, y.kb)(i, e.socket.application.id))
     }), j(this, "handleRelationshipUpdate", e => {
       let {
         relationship: {
@@ -286,8 +286,8 @@ class P {
       if (0 === this.rpcServer.subscriptions.length) return;
       let r = m.default.getUser(t);
       if (null == r) return;
-      let i = (0, v._J)(n, r);
-      this.rpcServer.dispatchToSubscriptions(C.zMe.RELATIONSHIP_UPDATE, {}, e => (0, v.kb)(i, e.socket.application.id))
+      let i = (0, y._J)(n, r);
+      this.rpcServer.dispatchToSubscriptions(C.zMe.RELATIONSHIP_UPDATE, {}, e => (0, y.kb)(i, e.socket.application.id))
     }), j(this, "handleRelationshipRemove", e => {
       let {
         relationship: {
@@ -297,8 +297,8 @@ class P {
       if (0 === this.rpcServer.subscriptions.length) return;
       let n = m.default.getUser(t);
       if (null == n) return;
-      let r = (0, v._J)(C.OGo.NONE, n);
-      this.rpcServer.dispatchToSubscriptions(C.zMe.RELATIONSHIP_UPDATE, {}, e => (0, v.kb)(r, e.socket.application.id))
+      let r = (0, y._J)(C.OGo.NONE, n);
+      this.rpcServer.dispatchToSubscriptions(C.zMe.RELATIONSHIP_UPDATE, {}, e => (0, y.kb)(r, e.socket.application.id))
     }), j(this, "handlePresenceUpdates", e => {
       let {
         updates: t
@@ -314,8 +314,8 @@ class P {
           if (t === C.OGo.NONE) continue;
           let n = m.default.getUser(e);
           if (null == n) continue;
-          let r = (0, v._J)(t, n);
-          this.rpcServer.dispatchToSubscriptions(C.zMe.RELATIONSHIP_UPDATE, {}, e => (0, v.kb)(r, e.socket.application.id))
+          let r = (0, y._J)(t, n);
+          this.rpcServer.dispatchToSubscriptions(C.zMe.RELATIONSHIP_UPDATE, {}, e => (0, y.kb)(r, e.socket.application.id))
         }
     }), j(this, "handlePresencesReplace", () => {
       if (0 !== this.rpcServer.subscriptions.length)
@@ -323,8 +323,8 @@ class P {
           if (t === C.OGo.NONE) continue;
           let n = m.default.getUser(e);
           if (null == n) continue;
-          let r = (0, v._J)(t, n);
-          this.rpcServer.dispatchToSubscriptions(C.zMe.RELATIONSHIP_UPDATE, {}, e => (0, v.kb)(r, e.socket.application.id))
+          let r = (0, y._J)(t, n);
+          this.rpcServer.dispatchToSubscriptions(C.zMe.RELATIONSHIP_UPDATE, {}, e => (0, y.kb)(r, e.socket.application.id))
         }
     }), j(this, "handleUserUpdate", e => {
       let {
@@ -337,8 +337,8 @@ class P {
       if (n === C.OGo.NONE) return;
       let r = m.default.getUser(t);
       if (null == r) return;
-      let i = (0, v._J)(n, r);
-      this.rpcServer.dispatchToSubscriptions(C.zMe.RELATIONSHIP_UPDATE, {}, e => (0, v.kb)(i, e.socket.application.id))
+      let i = (0, y._J)(n, r);
+      this.rpcServer.dispatchToSubscriptions(C.zMe.RELATIONSHIP_UPDATE, {}, e => (0, y.kb)(i, e.socket.application.id))
     }), j(this, "handleEntitlementCreate", e => {
       let {
         entitlement: t

@@ -196,7 +196,7 @@ let M = {
         case Z.jE.QUEST_HOME:
           if (null != n) {
             let e = new URLSearchParams;
-            null != n.sort && e.set(v.tR.SORT, n.sort), null != n.filter && e.set(v.tR.FILTER, n.filter), (0, I.dL)({
+            null != n.sort && e.set(y.tR.SORT, n.sort), null != n.filter && e.set(y.tR.FILTER, n.filter), (0, I.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               hash: n.questId,
               search: "?".concat(e.toString())
@@ -204,11 +204,11 @@ let M = {
           } else(0, I.dL)(w.Z5c.QUEST_HOME_V2);
           break;
         case Z.jE.QUEST_PREVIEW_TOOL:
-          if ((0, y.T)({
+          if ((0, v.T)({
               location: L.dr.QUEST_PREVIEW_TOOL_2
             }) && null != n) {
             let e = new URLSearchParams;
-            e.set(v.tR.TAB, v.e5.PREVIEW_TOOL), null != n.questId && e.set(v.tR.QUEST_ID, n.questId), (0, I.dL)({
+            e.set(y.tR.TAB, y.e5.PREVIEW_TOOL), null != n.questId && e.set(y.tR.QUEST_ID, n.questId), (0, I.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               search: "?".concat(e.toString())
             }), D(n.fingerprint, (0, Z.O)(t))

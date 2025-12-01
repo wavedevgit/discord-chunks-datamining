@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk842350 = require("./842350.js");
-let O = "vc-gifting-".concat((0, Chunk772848.Z)());
+let x = "vc-gifting-".concat((0, Chunk772848.Z)());
 
 function j(e) {
   var t;
@@ -61,28 +61,28 @@ function j(e) {
     })
   }, [S.id, S.guild_id, N]), (0, i.jsx)(d.Z, {
     children: (0, i.jsx)(a.VqE, {
-      "aria-labelledby": O,
+      "aria-labelledby": x,
       modal: false,
       children: (0, i.jsxs)("div", {
-        className: x.container,
+        className: O.container,
         onMouseEnter: j,
         onMouseLeave: E,
         children: [(0, i.jsx)(a.X6q, {
-          className: x.title,
+          className: O.title,
           variant: "text-lg/bold",
           color: "text-primary",
           children: _.intl.string(_.t.xLP3bi)
         }), (0, i.jsx)(a.xvT, {
-          className: x.subtitle,
+          className: O.subtitle,
           variant: "text-sm/medium",
           color: "text-secondary",
           children: _.intl.format(_.t["+SqhBF"], {
             applicationName: null != (t = null == P ? true : P.name) ? t : _.intl.string(_.t["/1hhto"])
           })
         }), (0, i.jsx)("div", {
-          className: x.wishlistItemsContainer,
+          className: O.wishlistItemsContainer,
           children: Z || 0 === T.length ? (0, i.jsx)(a.$jN, {
-            className: x.loading
+            className: O.loading
           }) : T.map(e => (0, i.jsx)(s.i_, {
             body: _.intl.string(_.t["4yiU7x"]),
             asset: I,

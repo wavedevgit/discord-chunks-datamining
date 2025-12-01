@@ -59,36 +59,36 @@ function _(e) {
   let {
     channelId: t,
     warningId: _,
-    senderId: x
+    senderId: O
   } = e, {
-    isBlocked: O
+    isBlocked: x
   } = (0, a.cj)([p.Z], () => ({
-    isBlocked: p.Z.isBlocked(x)
-  }), [x]), j = r.useCallback(() => {
+    isBlocked: p.Z.isBlocked(O)
+  }), [O]), j = r.useCallback(() => {
     (0, h.T)(t, [_])
   }, [t, _]), E = (0, b.C2)(), S = r.useCallback(e => () => {
-    s.Z.blockUser(x, {
+    s.Z.blockUser(O, {
       location: b.zr
     }).then(() => {
       j()
     }), (0, m.qc)({
       channelId: t,
       warningId: _,
-      senderId: x,
+      senderId: O,
       warningType: f.pj.STRANGER_DANGER,
       cta: e
     })
-  }, [j, t, _, x]);
+  }, [j, t, _, O]);
   r.useEffect(() => {
     (0, m.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
       warningId: _,
-      senderId: x,
+      senderId: O,
       warningType: f.pj.STRANGER_DANGER
     }), c.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [t, _, x]);
+  }, [t, _, O]);
   let P = () => {
       (0, o.ZDy)(async () => {
         let {
@@ -104,7 +104,7 @@ function _(e) {
             onClose: l,
             channelId: t,
             warningId: _,
-            senderId: x,
+            senderId: O,
             description: C.intl.string(C.t.DJMZX6),
             safetyTipRows: E.map((e, t) => (0, i.jsx)(u.q, {
               index: t,
@@ -113,7 +113,7 @@ function _(e) {
             }, t)),
             actionRows: (0, i.jsxs)(i.Fragment, {
               children: [(0, i.jsx)(v, {
-                senderId: x,
+                senderId: O,
                 channelId: t,
                 warningId: _
               }, "more-tips-button"), (0, i.jsx)(d.JZ, {
@@ -155,13 +155,13 @@ function _(e) {
             }
             return e
           }({}, n), s = s = {
-            userId: x,
+            userId: O,
             confirmBlock: S(e),
             onCancel: () => {
               null == l || l(), (0, m.qc)({
                 channelId: t,
                 warningId: _,
-                senderId: x,
+                senderId: O,
                 warningType: f.pj.STRANGER_DANGER,
                 cta: r
               })
@@ -182,7 +182,7 @@ function _(e) {
   return (0, i.jsx)(g.Q, {
     channelId: t,
     warningId: _,
-    senderId: x,
+    senderId: O,
     warningType: f.pj.STRANGER_DANGER,
     header: C.intl.string(C.t.iOkDpM),
     description: C.intl.string(C.t.ISUbcM),
@@ -194,12 +194,12 @@ function _(e) {
         P(), (0, m.qc)({
           channelId: t,
           warningId: _,
-          senderId: x,
+          senderId: O,
           warningType: f.pj.STRANGER_DANGER,
           cta: m.NM.OPEN_MORE_TIPS
         })
       }
-    }, ...O ? [] : [{
+    }, ...x ? [] : [{
       text: C.intl.string(C.t.ie0QdN),
       variant: "critical-primary",
       onClick: () => I(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)

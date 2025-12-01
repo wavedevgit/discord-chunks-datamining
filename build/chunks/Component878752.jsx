@@ -38,17 +38,17 @@ function g(e) {
     autoTrackExposure: false
   }), _ = (0, a.Z)(u.Z);
   if (null == t || null != y) return null;
-  let x = v && _,
-    O = C && n;
-  return x || O ? (0, i.jsxs)(l.Gt, {
+  let O = v && _,
+    x = C && n;
+  return O || x ? (0, i.jsxs)(l.Gt, {
     value: b,
     children: [(0, i.jsxs)("div", {
       className: m.voiceEffectsActionBar,
-      children: [x && (0, i.jsx)(d.Z, {
+      children: [O && (0, i.jsx)(d.Z, {
         channel: t
-      }), O && (0, i.jsx)(p.Z, {}), O && (0, i.jsx)(h.Z, {
+      }), x && (0, i.jsx)(p.Z, {}), x && (0, i.jsx)(h.Z, {
         channel: t
-      }), O && (0, i.jsx)(f.Z, {})]
+      }), x && (0, i.jsx)(f.Z, {})]
     }), g && (0, i.jsx)("div", {
       className: m.divider
     })]

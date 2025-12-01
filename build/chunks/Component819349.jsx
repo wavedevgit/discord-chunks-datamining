@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 819349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => O
+  S: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -40,13 +40,13 @@ function _(e) {
   }
   return e
 }
-let x = e => 1 - Math.pow(1 - e, 4);
+let O = e => 1 - Math.pow(1 - e, 4);
 
-function O(e) {
+function x(e) {
   let {
     channel: t,
     onClose: n
-  } = e, l = r.useRef(null), [O, j] = r.useState(false), E = r.useRef(null), S = r.useRef(null), [P, I] = r.useState(0), Z = (0, s.e7)([f.Z], () => f.Z.can(b.Plq.CREATE_INSTANT_INVITE, t), [t]), [T, N] = r.useState(null), [A, w] = r.useState(false), M = r.useRef(null), {
+  } = e, l = r.useRef(null), [x, j] = r.useState(false), E = r.useRef(null), S = r.useRef(null), [P, I] = r.useState(0), Z = (0, s.e7)([f.Z], () => f.Z.can(b.Plq.CREATE_INSTANT_INVITE, t), [t]), [T, N] = r.useState(null), [A, w] = r.useState(false), M = r.useRef(null), {
     isHoveringOrFocusing: R
   } = (0, g.Tu)(null == T ? M : l), [L, D] = r.useState(false), k = R || L, U = r.useCallback(() => {
     j(false), null == n || n()
@@ -60,7 +60,7 @@ function O(e) {
     reverse: A,
     config: {
       duration: 200,
-      easing: x,
+      easing: O,
       clamp: true
     },
     onRest: () => {
@@ -105,7 +105,7 @@ function O(e) {
     }, []);
   return null == T ? null : (0, i.jsx)(u.yRy, {
     targetElementRef: l,
-    shouldShow: O,
+    shouldShow: x,
     position: "right",
     align: "top",
     spacing: 8,

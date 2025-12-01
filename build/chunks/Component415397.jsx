@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 415397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => x
+  B: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -41,7 +41,7 @@ function _(e) {
   return e
 }
 
-function x(e) {
+function O(e) {
   let {
     channel: t,
     inviteKey: l,
@@ -56,7 +56,7 @@ function x(e) {
   }, [c]), r.useEffect(() => {
     null == o || o(h.isHoveringOrFocusing)
   }, [o, h]);
-  let x = r.useCallback(() => {
+  let O = r.useCallback(() => {
     let e = f.Z.getGuild(t.guild_id);
     s()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, u.ZDy)(async () => {
       let {
@@ -89,13 +89,13 @@ function x(e) {
       className: C.inner,
       children: (0, i.jsxs)("ul", {
         className: C.list,
-        children: [m.map(e => (0, i.jsx)(O, {
+        children: [m.map(e => (0, i.jsx)(x, {
           channel: t,
           user: e,
           inviteKey: l
         }, e.id)), (0, i.jsxs)(u.P3F, {
           tag: "li",
-          onClick: x,
+          onClick: O,
           className: a()(C.row, C.clickable),
           children: [(0, i.jsx)("div", {
             className: C.leading,
@@ -115,15 +115,15 @@ function x(e) {
   })
 }
 
-function O(e) {
+function x(e) {
   let {
     channel: t,
     user: n,
     inviteKey: l
   } = e, o = r.useRef(null), s = (0, c.e7)([h.ZP], () => h.ZP.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
     isHoveringOrFocusing: f
-  } = (0, g.Tu)(o), [b, v] = r.useState(null), x = "success" === b || "sending" === b || null == l, O = r.useCallback(() => {
-    x || null != l && (v("sending"), d.Z.enqueue({
+  } = (0, g.Tu)(o), [b, v] = r.useState(null), O = "success" === b || "sending" === b || null == l, x = r.useCallback(() => {
+    O || null != l && (v("sending"), d.Z.enqueue({
       type: d.m.USER,
       user: n,
       inviteKey: l,
@@ -132,7 +132,7 @@ function O(e) {
     }, e => {
       v(e ? "success" : null)
     }))
-  }, [x, l, n]), {
+  }, [O, l, n]), {
     avatarDecorationSrc: j,
     avatarSrc: E,
     eventHandlers: S
@@ -149,10 +149,10 @@ function O(e) {
     innerRef: o,
     tag: "li",
     className: a()(C.row, {
-      [C.clickable]: !x
+      [C.clickable]: !O
     }),
-    "aria-disabled": x,
-    onClick: O,
+    "aria-disabled": O,
+    onClick: x,
     "aria-label": I,
     children: [(0, i.jsx)(u.qEK, _({
       className: C.avatar,

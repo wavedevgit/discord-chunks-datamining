@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e) {
+function O(e) {
   let t = (0, s.e7)([m.Z], () => !(0, o.isEmpty)(m.Z.getTypingUsers(e)), [e]),
     n = (0, s.e7)([f.Z], () => f.Z.getVoiceChannelId() === e, [e]),
     {
@@ -41,7 +41,7 @@ function x(e) {
   }
 }
 
-function O(e) {
+function x(e) {
   let {
     className: t,
     channelId: n
@@ -50,7 +50,7 @@ function O(e) {
     mentionCount: l,
     isTyping: a,
     voiceChannelIsSelected: o
-  } = x(n);
+  } = O(n);
   return (0, i.jsx)(y.Z, {
     className: t,
     unreadCount: r,
@@ -98,7 +98,7 @@ function j(e) {
       unreadCount: t,
       mentionCount: n,
       isTyping: i
-    } = x(e), [l, a] = r.useState(false);
+    } = O(e), [l, a] = r.useState(false);
     return r.useEffect(() => {
       a(t > 0);
       let e = setTimeout(() => {
@@ -118,7 +118,7 @@ function j(e) {
     let {
       className: t
     } = e;
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(x, {
       className: t,
       channelId: n
     })

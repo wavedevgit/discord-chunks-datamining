@@ -51,7 +51,7 @@ let Z = 15 * Chunk70956.Z.Millis.MINUTE,
       applicationStreams: h,
       currentActivities: g,
       voiceChannels: m
-    } = t, _ = f.length, b = h.length, E = g.length, v = m.length > 0, y = p.o.useConfig({
+    } = t, _ = f.length, b = h.length, E = g.length, y = m.length > 0, v = p.o.useConfig({
       location: "itemcard"
     }).demureActivityCards, N = i.useCallback(() => {
       let e = g.filter(e => {
@@ -62,10 +62,10 @@ let Z = 15 * Chunk70956.Z.Millis.MINUTE,
         num_users: _,
         num_streams: b,
         num_activities: E,
-        in_voice_channel: v,
+        in_voice_channel: y,
         games_detected: e
       })
-    }, [_, b, E, v, g]), P = i.useMemo(() => o()(N, Z), [N]);
+    }, [_, b, E, y, g]), P = i.useMemo(() => o()(N, Z), [N]);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: s,
       position: "left",
@@ -107,7 +107,7 @@ let Z = 15 * Chunk70956.Z.Millis.MINUTE,
           "aria-haspopup": "menu",
           className: A.itemCard,
           active: l,
-          flat: y,
+          flat: v,
           children: (0, r.jsxs)("div", {
             children: [c, d]
           })

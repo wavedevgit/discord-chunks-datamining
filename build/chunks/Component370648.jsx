@@ -30,7 +30,6 @@ let p = function(e) {
         children: [(0, r.jsx)(c.Z, {
           onSelectApplication: n
         }), (0, r.jsx)(a.Z, {
-          showImage: false,
           padding: true
         })]
       })

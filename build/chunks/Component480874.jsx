@@ -61,7 +61,7 @@ function N() {
       let {
         row: s
       } = e, o = t[s], c = null == (i = t[s + 1]) || null == (n = i.channel) ? true : n.id, u = o.channel.id;
-      return (0, r.jsx)(y.Z, {
+      return (0, r.jsx)(v.Z, {
         index: s,
         className: a()({
           [T.selected]: null != P && P === u,

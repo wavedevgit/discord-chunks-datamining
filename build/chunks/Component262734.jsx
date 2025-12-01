@@ -47,7 +47,7 @@ function j(e) {
   }), M = i.useCallback(() => {
     E.Z.updateFrameLayoutMode({
       applicationId: t.applicationId,
-      layoutMode: y.U.PIP
+      layoutMode: v.U.PIP
     })
   }, [t.applicationId]), k = i.useCallback(() => {
     E.Z.stopFrame({
@@ -68,7 +68,7 @@ function j(e) {
     let e = e => {
       null == w.current || w.current.contains(e.target) || l || E.Z.updateFrameLayoutMode({
         applicationId: t.applicationId,
-        layoutMode: y.U.PIP
+        layoutMode: v.U.PIP
       })
     };
     return document.addEventListener("mousedown", e), () => {
@@ -87,7 +87,7 @@ function j(e) {
   let V = C.MI.NO_CHAT;
   if (null == n) return null;
   let F = (null != A ? A : I.$Y6) + Z,
-    z = (0, v.ro)(t);
+    z = (0, y.ro)(t);
   return (0, r.jsx)(u.f6W, {
     theme: I.BRd.DARK,
     children: e => (0, r.jsxs)("div", {

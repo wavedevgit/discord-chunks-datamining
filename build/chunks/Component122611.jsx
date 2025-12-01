@@ -71,7 +71,7 @@ function j(e) {
               markAsDismissed: l
             });
           case a.z.CHANNEL_NOTICE_QUICKSWITCHER:
-            return (0, r.jsx)(y.Z, {
+            return (0, r.jsx)(v.Z, {
               guild: n,
               markAsDismissed: l
             });
@@ -106,7 +106,7 @@ let P = e => {
         guild: t
       });
     case I.R.MAX_MEMBER_COUNT:
-      return (0, r.jsx)(v.Z, {
+      return (0, r.jsx)(y.Z, {
         guild: t
       });
     case I.R.GUILD_LIVE_CHANNEL:

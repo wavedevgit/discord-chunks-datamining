@@ -87,13 +87,13 @@ let b = ["1402418171662569542"],
           pid: g,
           activity: E
         }), Promise.resolve(E);
-        let v = {};
+        let y = {};
         E.name || (E.name = a.application.name);
-        let y = a.application.id;
-        E.application_id = y;
+        let v = a.application.id;
+        E.application_id = v;
         let I = a.transport === m.He.POST_MESSAGE;
         E.platform = I ? _.M7m.EMBEDDED : _.M7m.DESKTOP;
-        let C = c.Z.getApplication(null != y ? y : true),
+        let C = c.Z.getApplication(null != v ? v : true),
           S = null != (r = E.instance) && r,
           T = null == (t = E.party) ? true : t.privacy;
         delete E.instance, null == (n = E.party) || delete n.privacy;
@@ -119,7 +119,7 @@ let b = ["1402418171662569542"],
             errorCode: _.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot currently be sent with buttons")
         }
-        if (null != Z && (v.button_urls = Z.map(e => e.url), E.buttons = Z.map(e => e.label)), E.metadata = v, null != A)
+        if (null != Z && (y.button_urls = Z.map(e => e.url), E.buttons = Z.map(e => e.label)), E.metadata = y, null != A)
           for (let e of Object.keys(A)) Date.now().toString().length - A[e].toString().length > 2 && (A[e] = Math.floor(A[e] * f.Z.Millis.SECOND));
         if (null == j) l = Promise.resolve([]);
         else {

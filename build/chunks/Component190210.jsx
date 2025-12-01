@@ -134,8 +134,8 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     autoCompletePosition: eC,
     disableThemedBackground: ev = false,
     emojiPickerCloseOnModalOuterClick: e_,
-    parentModalKey: ex
-  } = e, eO = O.Z.useField("channelDrafts")[L.id], ej = null != (l = null == eO ? true : eO.title) ? l : "", eE = null == eO ? true : eO.heroFile, eS = null == (o = null == eO ? true : eO.publish) || o, eP = null == (u = null == eO ? true : eO.createThread) || u;
+    parentModalKey: eO
+  } = e, ex = x.Z.useField("channelDrafts")[L.id], ej = null != (l = null == ex ? true : ex.title) ? l : "", eE = null == ex ? true : ex.heroFile, eS = null == (o = null == ex ? true : ex.publish) || o, eP = null == (u = null == ex ? true : ex.createThread) || u;
   s()(null != k, "chat input type must be set");
   let {
     analyticsLocations: eI
@@ -169,7 +169,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     let t = e => {
         if (e.shouldClear) {
           var t;
-          (0, O.c)(L.id, {
+          (0, x.c)(L.id, {
             title: "",
             heroFile: null
           }), null == (t = eN.current) || t.blur()
@@ -294,7 +294,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     var e;
     if (null == eE) return;
     let t = null == (e = R.Z.getUploads(L.id, k.drafts.type).find(e => e.filename === eE.name)) ? true : e.id;
-    null != t && m.Z.remove(L.id, t, w.d.ChannelMessage), (0, O.c)(L.id, {
+    null != t && m.Z.remove(L.id, t, w.d.ChannelMessage), (0, x.c)(L.id, {
       heroFile: null
     })
   }, [L.id, eE, k.drafts.type]);
@@ -327,7 +327,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
                   onRemoveHeroImage: tg
                 }) : null, null != eE ? null : (0, i.jsx)(ea, {
                   channel: L,
-                  onImageUploaded: e => (0, O.c)(L.id, {
+                  onImageUploaded: e => (0, x.c)(L.id, {
                     heroFile: e
                   }),
                   onFocus: () => ta(true)
@@ -338,7 +338,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
                   className: J.titleInput,
                   placeholder: X.intl.string(X.t.Z8fYjO),
                   value: ej,
-                  onChange: e => (0, O.c)(L.id, {
+                  onChange: e => (0, x.c)(L.id, {
                     title: e.target.value
                   })
                 })]
@@ -463,7 +463,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
               })
             })
           })]
-        }), (0, i.jsx)(x.Z, {
+        }), (0, i.jsx)(O.Z, {
           targetRef: eZ,
           ref: eJ,
           channel: L,
@@ -493,7 +493,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
         onSelectSticker: tr,
         channel: L,
         closeOnModalOuterClick: e_,
-        parentModalKey: ex,
+        parentModalKey: eO,
         position: "top",
         align: "right",
         positionLayerClassName: Q.expressionPickerPositionLayer
@@ -507,7 +507,7 @@ function ei(e) {
   let {
     channelId: r,
     canCreateThread: l
-  } = e, a = O.Z.useField("channelDrafts")[r], o = null == (t = null == a ? true : a.createThread) || t, s = null == (n = null == a ? true : a.publish) || n;
+  } = e, a = x.Z.useField("channelDrafts")[r], o = null == (t = null == a ? true : a.createThread) || t, s = null == (n = null == a ? true : a.publish) || n;
   return (0, i.jsxs)(f.v2r, {
     "aria-label": X.intl.string(X.t["9WnJyo"]),
     navId: "send-announcement-options",
@@ -519,7 +519,7 @@ function ei(e) {
       checked: l && o,
       disabled: !l,
       action: () => {
-        (0, O.c)(r, {
+        (0, x.c)(r, {
           createThread: !o
         })
       }
@@ -528,7 +528,7 @@ function ei(e) {
       label: X.intl.string(X.t.MFGE51),
       checked: s,
       action: () => {
-        (0, O.c)(r, {
+        (0, x.c)(r, {
           publish: !s
         })
       }

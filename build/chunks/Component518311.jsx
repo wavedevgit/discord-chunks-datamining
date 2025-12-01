@@ -687,7 +687,7 @@ class eu extends(i = Chunk473749.PureComponent) {
     }), ei(this, "handleQueryChange", e => {
       let {
         channel: t
-      } = this.props, n = (0, O.v_)(t);
+      } = this.props, n = (0, x.v_)(t);
       y.Z.search(e, null == t ? true : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
         G.default.track($.rMx.SEARCH_USER_LIST_STARTED, el(er({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -738,7 +738,7 @@ class eu extends(i = Chunk473749.PureComponent) {
         {
           channel: n
         } = this.props,
-        i = (0, O.v_)(n),
+        i = (0, x.v_)(n),
         r = true;
       1 === e.length && (r = null == m.Z._openCachedDMChannel(e[0])), G.default.track($.rMx.CREATE_DM_USER_LIST_CLICKED, el(er({}, i), {
         is_new_dm: r,
@@ -754,17 +754,17 @@ class eu extends(i = Chunk473749.PureComponent) {
         location: "New Group DM"
       }).then(e => {
         let t = {};
-        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && m.Z.updateChannel(e, t, x.Z.NEW_GROUP_DM_INVITE_MODAL), G.default.track($.rMx.GDM_EDIT_INTERACTED, {
+        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && m.Z.updateChannel(e, t, O.Z.NEW_GROUP_DM_INVITE_MODAL), G.default.track($.rMx.GDM_EDIT_INTERACTED, {
           channel_id: e,
           channel_type: $.d4z.GROUP_DM,
-          location: x.Z.NEW_GROUP_DM_INVITE_MODAL,
+          location: O.Z.NEW_GROUP_DM_INVITE_MODAL,
           new_name_set: "" !== this.state.newChannelName,
           new_icon_set: null != this.state.previewIcon
         })
       })
     }), ei(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
-        i = (0, O.v_)(e),
+        i = (0, x.v_)(e),
         r = U.Z.getChannelId() === e.id;
       m.Z.addRecipients(e.id, t, $.Sbl.ADD_FRIENDS_TO_DM).then(n => {
         if (r) {
@@ -836,8 +836,8 @@ function ed(e) {
     onChange: o
   } = e, {
     analyticsLocations: s
-  } = (0, j.ZP)(x.Z.NEW_GROUP_DM_INVITE_MODAL);
-  if (!(0, I.a)(x.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
+  } = (0, j.ZP)(O.Z.NEW_GROUP_DM_INVITE_MODAL);
+  if (!(0, I.a)(O.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
   let c = (0, S.pT)(Array.from(t), V.default, B.Z);
   return (0, r.jsxs)("div", {
     className: en.customizationContainer,
@@ -929,8 +929,8 @@ function ef(e) {
     showModal: C,
     renderPopout: v,
     toggleVisible: _,
-    popoutOpen: x,
-    setPopoutOpen: O,
+    popoutOpen: O,
+    setPopoutOpen: x,
     inBornThisNamedExperiment: j
   } = eh({
     initialPopoutOpen: null != i && i.isGroupDM() && 0 === i.recipients.length,
@@ -950,11 +950,11 @@ function ef(e) {
     targetElementRef: b,
     renderPopout: v,
     position: h,
-    shouldShow: x,
+    shouldShow: O,
     nudgeAlignIntoViewport: true,
     autoInvert: true,
     align: f,
-    onRequestClose: () => O(false),
+    onRequestClose: () => x(false),
     animation: p.yRy.Animation.NONE,
     ignoreModalClicks: true,
     clickTrap: true,

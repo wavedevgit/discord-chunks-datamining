@@ -20,24 +20,24 @@ var r, l, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 let v = false,
   _ = "",
-  x = 0,
-  O = [],
+  O = 0,
+  x = [],
   j = false,
   E = new Set,
   S = null;
 
 function P() {
-  _ = "", x = 0, O = [], E = new Set, v = false, S = null
+  _ = "", O = 0, x = [], E = new Set, v = false, S = null
 }
 
 function I(e) {
-  _ = e, x = 0, Z()
+  _ = e, O = 0, Z()
 }
 
 function Z() {
   if (!v) returnfalse;
   let e = Chunk592125.Z.getChannel(S);
-  if (0 === _.trim().length) return null != i && i.clearQuery(), O = function(e) {
+  if (0 === _.trim().length) return null != i && i.clearQuery(), x = function(e) {
     let t = b.Z.getFriendIDs(),
       n = y.default.getCurrentUser();
     return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...y.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
@@ -116,7 +116,7 @@ function A(e) {
       comparator: i
     })
   }
-  O = n, k.emitChange()
+  x = n, k.emitChange()
 }
 
 function w() {
@@ -141,7 +141,7 @@ class D extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk592125.Z, Chunk480294.Z, Chunk353926.Z, Chunk580005.Z, Chunk699516.Z, Chunk752048.Z, Chunk594174.default), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
   }
   getResults() {
-    return O
+    return x
   }
   hasFriends() {
     return j
@@ -155,9 +155,9 @@ class D extends(r = Chunk442837.ZP.Store) {
   getState() {
     return {
       query: _,
-      selectedRow: x,
+      selectedRow: O,
       selectedUsers: E,
-      results: O,
+      results: x,
       hasFriends: j
     }
   }
@@ -192,7 +192,7 @@ let k = new D(Chunk570140.Z, {
       S = e.channelId, I(e.query)
     },
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
-      x = e.row
+      O = e.row
     },
     PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function(e) {
       let {

@@ -104,14 +104,14 @@ function x(e) {
       serverMute: L,
       serverDeaf: R
     } = e,
-    D = (0, s.e7)([v.Z], () => v.Z.isLocalMute(x.id)),
+    D = (0, s.e7)([y.Z], () => y.Z.isLocalMute(x.id)),
     M = (0, d.Z)({
       userId: x.id,
       checkSoundSharing: true
     }),
     k = null != (t = O.getGuildId()) ? t : true,
     U = x.getAvatarURL(O.guild_id, 24),
-    G = null != A ? A : y.ZP.getName(x),
+    G = null != A ? A : v.ZP.getName(x),
     {
       icon: B,
       colorize: H,
@@ -248,8 +248,8 @@ function A(e) {
       color: "currentColor"
     }),
     focusProps: j
-  }), v = _ && o ? t : m;
-  return v.length <= 0 ? null : (0, r.jsx)(c.zJl, {
+  }), y = _ && o ? t : m;
+  return y.length <= 0 ? null : (0, r.jsx)(c.zJl, {
     className: a()(S.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
@@ -257,7 +257,7 @@ function A(e) {
       className: a()(S.voiceUsers, !o && S.collapsed),
       role: "group",
       "aria-label": C.intl.string(C.t["/ZgaVU"]),
-      children: [v.map(e => {
+      children: [y.map(e => {
         let {
           user: t,
           nick: i,

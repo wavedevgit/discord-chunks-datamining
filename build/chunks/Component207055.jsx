@@ -56,12 +56,12 @@ let U = Chunk473749.memo(e => {
       userIds: t
     } = e;
     return t.has(T)
-  }), [T, C.id]), Y = (0, p.Z)(null != K ? [K.applicationId] : []), X = (0, x.Z)(T, C.guild_id)[0], J = null != (n = (0, d.IX)(null == X ? true : X.application_id).data) ? n : true, [Q, $] = (0, o.Wu)([E.Z], () => [E.Z.getStreamForUser(T, C.getGuildId()), E.Z.getActiveStreamForUser(T, C.getGuildId())], [C, T]), ee = (0, o.e7)([N.Z], () => N.Z.getSessionById(j)), et = M.ZP.useName(y), en = (0, o.e7)([w.Z], () => w.Z.getVoicePlatformForChannel(C.id, T), [C.id, T]), {
+  }), [T, C.id]), Y = (0, p.Z)(null != K ? [K.applicationId] : []), X = (0, O.Z)(T, C.guild_id)[0], J = null != (n = (0, d.IX)(null == X ? true : X.application_id).data) ? n : true, [Q, $] = (0, o.Wu)([E.Z], () => [E.Z.getStreamForUser(T, C.getGuildId()), E.Z.getActiveStreamForUser(T, C.getGuildId())], [C, T]), ee = (0, o.e7)([N.Z], () => N.Z.getSessionById(j)), et = M.ZP.useName(y), en = (0, o.e7)([w.Z], () => w.Z.getVoicePlatformForChannel(C.id, T), [C.id, T]), {
     enableHangStatus: ei
   } = (0, m.bN)({
     guildId: C.guild_id,
     location: "VoiceUsers"
-  }), er = (0, f.ZP)(C, true, y), el = (0, o.e7)([g.Z], () => k ? g.Z.getHangStatusActivity() : null, [k]), ea = (0, b.j)(T), eo = (0, O.Eu)(C.id, T), {
+  }), er = (0, f.ZP)(C, true, y), el = (0, o.e7)([g.Z], () => k ? g.Z.getHangStatusActivity() : null, [k]), ea = (0, b.j)(T), eo = (0, x.Eu)(C.id, T), {
     enableVCStatusIcons: es,
     enableRequestToStream: ec
   } = _.A.useExperiment({
@@ -141,8 +141,8 @@ let F = [],
       withGuildIcon: b = false,
       className: v,
       children: _,
-      isThread: x = false
-    } = e, [E, P] = r.useState(null), [I, N] = r.useState(false), A = r.useRef(null), w = (0, O.Es)(l.id, null != c ? c : F), {
+      isThread: O = false
+    } = e, [E, P] = r.useState(null), [I, N] = r.useState(false), A = r.useRef(null), w = (0, x.Es)(l.id, null != c ? c : F), {
       shouldShow: M,
       dismiss: D
     } = (0, C.UM)(l), B = r.useRef(new s.sW(50, () => {
@@ -212,7 +212,7 @@ let F = [],
       className: a()(v, k.list, {
         [k.collapsed]: u,
         [k.withGuildIcon]: b,
-        [k.isThread]: x
+        [k.isThread]: O
       }),
       collapsed: u,
       children: [W, _]

@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 921235, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 }), require("./388685.js"), require("./583741.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,30 +22,30 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk315146 = require("./315146.js");
-let x = "749054660769218631";
+let O = "749054660769218631";
 
-function O(e) {
+function x(e) {
   var t;
   let {
     channel: n
-  } = e, [l, O] = r.useState("");
+  } = e, [l, x] = r.useState("");
   r.useEffect(() => {
     (0, u.FQ)("847199849233514549", true)
   }, []);
   let j = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === C.yb.SENT && !(0, y.Z)(e))),
     E = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
     S = null != (t = b.ZP.useName(E)) ? t : v.intl.string(v.t.y1Wu2f),
-    P = (0, o.e7)([d.Z], () => d.Z.getStickerById(x)),
+    P = (0, o.e7)([d.Z], () => d.Z.getStickerById(O)),
     I = r.useCallback(async () => {
       if (null == l || "" === l) try {
-        await c.Z.sendGreetMessage(n.id, x), g.default.track(C.rMx.DM_EMPTY_ACTION, {
+        await c.Z.sendGreetMessage(n.id, O), g.default.track(C.rMx.DM_EMPTY_ACTION, {
           channel_id: n.id,
           channel_type: n.type,
           source: "Wave",
           type: "Send wave"
         })
       } catch (e) {
-        e.ok || 429 !== e.status || O(v.intl.string(v.t.Whhv4w))
+        e.ok || 429 !== e.status || x(v.intl.string(v.t.Whhv4w))
       }
     }, [n.id, n.type, l]),
     Z = v.intl.formatToPlainString(v.t.m0zYbV, {

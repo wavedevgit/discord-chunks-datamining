@@ -40,16 +40,16 @@ function S(e) {
     popoutType: A
   } = e, w = (0, m.bp)() === j.IlC.POPOUT, M = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
-  } = (0, x.d)(), L = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), D = (0, b.bt)(I.id, t), k = r.useCallback(() => {
+  } = (0, O.d)(), L = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), D = (0, b.bt)(I.id, t), k = r.useCallback(() => {
     (0, a.j)(() => {
-      x.d.setState({
+      O.d.setState({
         dismissedActivityEntryPointTileChannel: I.id
       })
     })
   }, [I.id]);
   r.useEffect(() => {
     null != R && I.id !== R && (0, a.j)(() => {
-      x.d.setState({
+      O.d.setState({
         dismissedActivityEntryPointTileChannel: null
       })
     })
@@ -90,7 +90,7 @@ function S(e) {
     inPopout: w,
     handleClose: k,
     userParticipantCount: L
-  })) : W.push(e => (0, i.jsx)(O.Z, {
+  })) : W.push(e => (0, i.jsx)(x.Z, {
     width: e,
     channel: I,
     guild: M,

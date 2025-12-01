@@ -127,11 +127,11 @@ function et(e) {
     eg = et.length > 0 && (null == (t = et.first()) ? true : t.isFirstMessageInForumPost(U)),
     eb = (0, s.ts)(U),
     ey = (0, l.e7)([E.Z], () => E.Z.shouldShowTopicsBar() && !ed),
-    eC = (0, O.P)(U.id),
+    eC = (0, x.P)(U.id),
     ev = (0, _.z)(U.id, X.zr),
     e_ = (0, d.k)(U.id),
-    ex = (0, D.Z)(),
-    eO = function(e, t) {
+    eO = (0, D.Z)(),
+    ex = function(e, t) {
       if (e.isDM() && null != t)
         if (t.type === v.pj.STRANGER_DANGER) return (0, i.jsx)(j.M, {
           channelId: e.id,
@@ -143,7 +143,7 @@ function et(e) {
         warningId: t.id,
         senderId: e.getRecipientId()
       });
-      else return (0, i.jsx)(x.Y, {
+      else return (0, i.jsx)(O.Y, {
         channelId: e.id,
         warningId: t.id,
         senderId: e.getRecipientId()
@@ -245,7 +245,7 @@ function et(e) {
     let e, t, n = Z.ZP.getOldestUnreadTimestamp(U.id),
       l = 0 !== n ? n : M.default.extractTimestamp(U.id),
       o = (0, A.KC)(new Date, new Date(l));
-    if (Z.ZP.isEstimated(U.id) ? (e = o ? J.t.wvtbbG : J.t.tHqbtg, t = J.t.vaPWFe) : (e = o ? J.t["BctFH/"] : J.t["3wXb9P"], t = J.t["4H8ldG"]), eb && (0, s.tW)(U) && ex.includes(q.E.SUMMARIES)) {
+    if (Z.ZP.isEstimated(U.id) ? (e = o ? J.t.wvtbbG : J.t.tHqbtg, t = J.t.vaPWFe) : (e = o ? J.t["BctFH/"] : J.t["3wXb9P"], t = J.t["4H8ldG"]), eb && (0, s.tW)(U) && eO.includes(q.E.SUMMARIES)) {
       let n = Z.ZP.ackMessageId(U.id),
         o = (0, S.q)(U.id, Z.ZP.getOldestUnreadMessageId(U.id));
       if ((0, u.yw)(Y.rMx.SUMMARIES_UNREAD_BAR_VIEWED, {
@@ -333,7 +333,7 @@ function et(e) {
           })
         }
       }
-    } else ex.includes(q.E.NEW_MESSAGES) && (r = (0, i.jsx)(V.LE, {
+    } else eO.includes(q.E.NEW_MESSAGES) && (r = (0, i.jsx)(V.LE, {
       content: J.intl.format(e, {
         count: en,
         timestamp: l
@@ -341,7 +341,7 @@ function et(e) {
       channelId: U.id
     }))
   }
-  if (null == r && (0, s.Lp)(U) && ey && ex.includes(q.E.SUMMARIES) && (r = (0, i.jsx)(V.BO, {
+  if (null == r && (0, s.Lp)(U) && ey && eO.includes(q.E.SUMMARIES) && (r = (0, i.jsx)(V.BO, {
       channel: U,
       scrollManager: eo
     })), et.error) h = (0, i.jsx)(V.Rp, {
@@ -386,6 +386,6 @@ function et(e) {
     newMessagesBar: r,
     jumpToPresentBar: h,
     forumPostActionBar: ej,
-    safetyWarningBanner: eO
+    safetyWarningBanner: ex
   }
 }

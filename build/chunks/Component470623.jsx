@@ -136,7 +136,7 @@ class m {
       m = null == a.template ? "" : a.template.trim(),
       b = p.Z.getDraft(a.id, p.d.FirstThreadMessage),
       _ = (0, d.eK)(null != b && "" !== b.trim() ? b : m);
-    this.name = null != (i = s.name) ? i : "", l = new Set(s.appliedTags), this.appliedTags = true !== l ? l : new Set, this.formOpen = this.name.length > 0 && _.textValue.length > 0, this.textAreaState = _
+    this.name = null != (i = s.name) ? i : "", l = new Set(s.appliedTags), this.appliedTags = true !== l ? l : new Set, this.textAreaState = _, this.formOpen = _.textValue !== m
   }
 }
 let b = Chunk473749.createContext(null);

@@ -28,8 +28,8 @@ function C(e) {
     showTrailingDivider: C = false
   } = e, v = p.default.cast(t), {
     joinRequest: _,
-    isModmin: x,
-    guildId: O,
+    isModmin: O,
+    guildId: x,
     maxMembers: j
   } = (0, r.cj)([h.Z, u.Z, d.Z], () => {
     let e = h.Z.getRequest(v),
@@ -40,12 +40,12 @@ function C(e) {
       guildId: null == t ? true : t.id,
       maxMembers: null == t ? true : t.maxMembers
     }
-  }), E = (0, r.e7)([c.Z], () => null != O ? c.Z.getMemberCount(O) : 0), S = null != j && (null != E ? E : 0) >= j, {
+  }), E = (0, r.e7)([c.Z], () => null != x ? c.Z.getMemberCount(x) : 0), S = null != j && (null != E ? E : 0) >= j, {
     approveRequest: P,
     rejectRequest: I,
     submitting: Z
   } = (0, m.s)(null == _ ? true : _.guildId, null == _ ? true : _.userId, null == _ ? true : _.joinRequestId);
-  return null != _ && _.applicationStatus === f.wB.SUBMITTED && x ? (0, i.jsxs)("div", {
+  return null != _ && _.applicationStatus === f.wB.SUBMITTED && O ? (0, i.jsxs)("div", {
     className: y.buttons,
     children: [(0, i.jsx)(l.u, {
       text: b.intl.string(b.t.cdPGbE),

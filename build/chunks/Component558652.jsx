@@ -21,10 +21,10 @@ let _ = [],
   b = Chunk313481.tR.SORT,
   E = Chunk313481.tR.FILTER,
   O = Chunk473749.forwardRef(function(e, t) {
-    let [n, O] = (0, f.P)(), v = i.useMemo(() => {
+    let [n, O] = (0, f.P)(), y = i.useMemo(() => {
       var e, t;
       return null !== (t = n.get(b), e = (0, o.Ew)(t) ? null : Object.values(h.yq).find(e => e === t) || null) && true !== e ? e : h.yq.SUGGESTED
-    }, [n]), y = i.useMemo(() => {
+    }, [n]), v = i.useMemo(() => {
       var e;
       return null != (e = function(e) {
         if ((0, o.Ew)(e)) return null;
@@ -50,15 +50,15 @@ let _ = [],
       isFetchingCurrentQuests: N,
       hasFetched: j
     } = (0, c.bA)(c.e5.ALL, i.useMemo(() => ({
-      sortMethod: v,
-      filters: y
-    }), [v, y])), P = i.useCallback(() => {
+      sortMethod: y,
+      filters: v
+    }), [y, v])), P = i.useCallback(() => {
       C(_)
     }, [C]), x = i.useRef(null), A = i.useRef(null), Z = (0, l.TH)(), w = (0, l.k6)();
     return i.useEffect(() => {
       if ("" !== Z.hash && null != x.current && null != A.current) {
         var e, t;
-        (v !== x.current || y !== A.current) && w.replace((e = function(e) {
+        (y !== x.current || v !== A.current) && w.replace((e = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -88,13 +88,13 @@ let _ = [],
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e))
       }
-    }, [v, y, Z, w]), i.useEffect(() => {
-      x.current = v
-    }, [v]), i.useEffect(() => {
-      A.current = y
-    }, [y]), (0, c.SU)({
-      selectedSortMethod: v,
-      selectedFilters: y,
+    }, [y, v, Z, w]), i.useEffect(() => {
+      x.current = y
+    }, [y]), i.useEffect(() => {
+      A.current = v
+    }, [v]), (0, c.SU)({
+      selectedSortMethod: y,
+      selectedFilters: v,
       numQuestsVisible: S.length
     }), i.useImperativeHandle(t, () => ({
       resetSortingFiltering: () => {
@@ -111,10 +111,10 @@ let _ = [],
           children: [(0, r.jsx)(d.Z, {
             onChange: I,
             optionClassName: m.filterSortOption,
-            selectedSortMethod: v
+            selectedSortMethod: y
           }), (0, r.jsx)(u.Z, {
             onChange: C,
-            selectedFilters: y
+            selectedFilters: v
           })]
         })]
       }), (0, r.jsx)(p.Z, {
@@ -122,7 +122,7 @@ let _ = [],
         excludedQuests: T,
         isFetching: N,
         hasFetched: j,
-        hasFiltersApplied: y.length > 0,
+        hasFiltersApplied: v.length > 0,
         onClearFilters: P
       })]
     })

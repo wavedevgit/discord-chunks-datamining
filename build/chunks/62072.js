@@ -49,7 +49,7 @@ let I = function(e, t, n) {
         ((0, _.isMac)() ? N : T) && C.wS && (n.preventDefault(), (0, C.JG)(w.content));
         break;
       case "e":
-        i && !M.isSystemDM() && (0, O.Z)(w, R) && (n.preventDefault(), (0, S.Hd)(M, w));
+        i && !M.isSystemDM() && (0, x.Z)(w, R) && (n.preventDefault(), (0, S.Hd)(M, w));
         break;
       case "p":
         (i || A) && (0, j.Z)(w, M) && (n.preventDefault(), (0, S.rY)(M, w, n));
@@ -86,7 +86,7 @@ let I = function(e, t, n) {
       case "t":
         if (i && (0, c.ki)(M, w)) n.preventDefault(), (0, u.R6)(M, w, "Message Shortcut");
         else if (w.hasFlag(P.iLy.HAS_THREAD)) {
-          let e = h.Z.getChannel(x.default.castMessageIdAsChannelId(w.id));
+          let e = h.Z.getChannel(O.default.castMessageIdAsChannelId(w.id));
           null != e && (i || A) && (n.preventDefault(), (0, u.ok)(e, A))
         }
         break;

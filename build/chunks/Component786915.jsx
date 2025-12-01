@@ -46,8 +46,8 @@ function C(e) {
     channel: C,
     exitFullScreen: v,
     appContext: _,
-    analyticsLocation: x,
-    guildScheduledEvent: O,
+    analyticsLocation: O,
+    guildScheduledEvent: x,
     shouldPrioritizeGroupPlusIcon: j = false,
     isRichPresenceInvite: E = false,
     iconClassName: S,
@@ -140,8 +140,8 @@ function C(e) {
           applicationId: t,
           appContext: null != _ ? _ : A,
           exitFullScreen: v,
-          analyticsLocation: x,
-          guildScheduledEvent: O
+          analyticsLocation: O,
+          guildScheduledEvent: x
         })
     },
     iconComponent: D,

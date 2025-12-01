@@ -98,12 +98,12 @@ function j(e) {
   }
 
   function W() {
-    (0, d.v)(P, d.d.SOUNDBOARD), E === x.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != E ? (Z(), V()) : Z(), null == S || S(x.D.SOUNDBOARD))
+    (0, d.v)(P, d.d.SOUNDBOARD), E === O.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != E ? (Z(), V()) : Z(), null == S || S(O.D.SOUNDBOARD))
   }
   let q = r.useRef(null);
   return (0, i.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: B && (E === x.D.SOUNDBOARD || null == E) || E === x.D.SOUNDBOARD,
+    shouldShow: B && (E === O.D.SOUNDBOARD || null == E) || E === O.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
@@ -137,7 +137,7 @@ function j(e) {
       ref: q,
       isTrayButton: true,
       themeable: j,
-      label: w ? O.intl.string(O.t["Ox4/zU"]) : M ? O.intl.string(O.t["+YBKYI"]) : R ? O.intl.string(O.t.X1lQli) : true,
+      label: w ? x.intl.string(x.t["Ox4/zU"]) : M ? x.intl.string(x.t["+YBKYI"]) : R ? x.intl.string(x.t.X1lQli) : true,
       iconComponent: I,
       disabled: L,
       onContextMenu: z,
@@ -148,8 +148,8 @@ function j(e) {
       onMouseLeave: () => {
         null == E && (G(), N())
       },
-      isActive: B || E === x.D.SOUNDBOARD,
-      color: B || E === x.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: B || E === O.D.SOUNDBOARD,
+      color: B || E === O.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

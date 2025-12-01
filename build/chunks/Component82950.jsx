@@ -48,8 +48,8 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       trackingSource: b,
       undismissable: E,
       onDismissed: O,
-      onClick: v,
-      cta: y,
+      onClick: y,
+      cta: v,
       ctaColor: I
     } = e;
     i.useEffect(() => {
@@ -59,7 +59,7 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       })
     }, [t.id, d]);
     let C = null;
-    "function" == typeof y ? C = y() : null != y && (C = (0, r.jsx)(s.zx, {
+    "function" == typeof v ? C = v() : null != v && (C = (0, r.jsx)(s.zx, {
       "data-migration-pending": true,
       className: g.btn,
       size: s.zx.Sizes.SMALL,
@@ -68,11 +68,11 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
           source: b,
           guild_id: t.id,
           notice_type: d
-        }), null == v || v()
+        }), null == y || y()
       },
       fullWidth: true,
       color: I,
-      children: y
+      children: v
     }));
     let S = null != p ? "".concat(p, "px") : "16px";
     return (0, r.jsxs)("div", {

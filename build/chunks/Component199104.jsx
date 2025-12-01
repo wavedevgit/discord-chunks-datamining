@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 199104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -23,14 +23,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk708567 = require("./708567.js");
 
-function v(e) {
+function y(e) {
   let {
     isStandalone: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([m.Z], () => m.Z.hasConsented(b.pjP.PERSONALIZATION)) ? [] : [s.z.NOW_PLAYING_CONSENT_CARD], v = h.o.useConfig({
+  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([m.Z], () => m.Z.hasConsented(b.pjP.PERSONALIZATION)) ? [] : [s.z.NOW_PLAYING_CONSENT_CARD], y = h.o.useConfig({
     location: "nowplaying"
-  }).demureActivityCards, y = h.o.useConfig({
+  }).demureActivityCards, v = h.o.useConfig({
     location: "nowplaying"
   }).friendsTab, I = (0, p.Dt)();
   return (0, r.jsx)(d.Gt, {
@@ -39,8 +39,8 @@ function v(e) {
       section: b.jXE.ACTIVE_NOW_COLUMN,
       children: (0, r.jsx)("aside", {
         className: l()(O.container, {
-          [O.refreshActiveNow]: v,
-          "refresh-active-now": v
+          [O.refreshActiveNow]: y,
+          "refresh-active-now": y
         }),
         "aria-labelledby": I,
         children: (0, r.jsx)(o.Ttm, {
@@ -51,7 +51,7 @@ function v(e) {
             className: l()({
               [O.standaloneContainer]: t
             }),
-            children: [y ? null : (0, r.jsx)(o.Heading, {
+            children: [v ? null : (0, r.jsx)(o.Heading, {
               variant: "heading-lg/semibold",
               className: O.header,
               id: I,

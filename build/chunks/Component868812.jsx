@@ -29,8 +29,8 @@ function f(e) {
     onMouseEnter: v,
     onMouseLeave: _
   } = (0, c.Z)(200, 300), {
-    Component: x,
-    play: O,
+    Component: O,
+    play: x,
     events: {
       onMouseEnter: j,
       onMouseLeave: E
@@ -40,8 +40,8 @@ function f(e) {
   }, [v, j]), P = r.useCallback(() => {
     null == f && (_(), E())
   }, [_, E, f]), I = r.useCallback(() => {
-    (0, s.v)(g, s.d.GIFTING), f === p.D.GIFTING ? (null == m || m(true), _()) : (null != f ? (O(), v()) : O(), null == m || m(p.D.GIFTING))
-  }, [v, _, g, O, m, f]);
+    (0, s.v)(g, s.d.GIFTING), f === p.D.GIFTING ? (null == m || m(true), _()) : (null != f ? (x(), v()) : x(), null == m || m(p.D.GIFTING))
+  }, [v, _, g, x, m, f]);
   return (0, i.jsx)(a.y, {
     targetElementRef: b,
     shouldShow: y && (f === p.D.GIFTING || null == f) || f === p.D.GIFTING,
@@ -70,7 +70,7 @@ function f(e) {
       isTrayButton: true,
       themeable: n,
       "aria-label": h.intl.string(h.t.PEjaCx),
-      iconComponent: x,
+      iconComponent: O,
       onClick: I,
       onMouseEnter: S,
       onMouseLeave: P,

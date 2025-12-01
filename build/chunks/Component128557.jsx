@@ -145,7 +145,7 @@ function M(e) {
         h.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
           setup_type: I.Ft.CHANNEL_WELCOME,
           action: I.j7.SEND_MESSAGE
-        }), x.S.dispatch(P.CkL.TEXTAREA_FOCUS, {
+        }), O.S.dispatch(P.CkL.TEXTAREA_FOCUS, {
           highlight: true,
           channelId: P.lds
         })
@@ -302,7 +302,7 @@ function M(e) {
   }, "addapp")));
   let $ = _ ? Z.intl.string(Z.t["1ach9C"]) : Z.intl.string(Z.t["ezm+/j"]);
   p && ($ = Z.intl.string(Z.t["gwyU/J"]));
-  let ee = "".concat(O.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
+  let ee = "".concat(x.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, i.jsx)(S.ZP, {
     channelId: t.id,
     children: (0, i.jsx)("div", {

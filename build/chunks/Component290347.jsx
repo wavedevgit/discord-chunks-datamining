@@ -161,7 +161,7 @@ function Z(e) {
         });
         eu(await Promise.all(t))
       } catch (e) {
-        y.Z.captureException(e), eu(P)
+        v.Z.captureException(e), eu(P)
       }
     };
     true !== ed.current && e(), ed.current = true
@@ -174,10 +174,10 @@ function Z(e) {
   }, [q, Q, X, ee, en]), i.useEffect(() => () => {
     if ("video" === x.type || "embed" === x.type) {
       let [e, t] = ep();
-      v.default.track(I.rMx.CHANGE_LOG_VIDEO_PLAYED, {
+      y.default.track(I.rMx.CHANGE_LOG_VIDEO_PLAYED, {
         change_log_id: G,
         seconds_played: Math.round(e / 1e3)
-      }), v.default.track(I.rMx.CHANGE_LOG_VIDEO_UNMUTE, {
+      }), y.default.track(I.rMx.CHANGE_LOG_VIDEO_UNMUTE, {
         change_log_id: G,
         seconds_unmuted: Math.round(t / 1e3)
       })
@@ -185,10 +185,10 @@ function Z(e) {
   }, [G, x.type]), i.useEffect(() => {
     null != w && (0, E.kk)(w);
     let e = Date.now();
-    return v.default.track(I.rMx.CHANGE_LOG_OPENED, {
+    return y.default.track(I.rMx.CHANGE_LOG_OPENED, {
       change_log_id: G
     }), () => {
-      v.default.track(I.rMx.CHANGE_LOG_CLOSED, {
+      y.default.track(I.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: G,
         seconds_open: Math.round((Date.now() - e) / 1e3)
       }), null != w && (0, b.Q3)(w, {
@@ -222,7 +222,7 @@ function Z(e) {
           src: x.src,
           poster: x.poster,
           onPlay: e => {
-            v.default.track(I.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
+            y.default.track(I.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: G
             }), K(Date.now()), et(true), er(e.currentTarget.muted)
           },
@@ -259,7 +259,7 @@ function Z(e) {
           renderImageComponent: O.Yi,
           renderLinkComponent: O.iT,
           onPlay: () => {
-            v.default.track(I.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
+            y.default.track(I.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: G
             })
           }

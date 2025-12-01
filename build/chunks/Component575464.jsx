@@ -28,8 +28,8 @@ function m(e) {
     checked: C,
     disabled: v = false,
     inlineUsername: _ = true,
-    onClick: x,
-    onMouseEnter: O,
+    onClick: O,
+    onMouseEnter: x,
     "aria-setsize": j,
     "aria-posinset": E
   } = e, S = (0, o.e7)([p.Z], () => p.Z.getStatus(r.id)), P = (0, a.JA)(String(r.id));
@@ -56,10 +56,10 @@ function m(e) {
       [f.disabled]: v
     }),
     onClick: () => {
-      null != x && x(r.id)
+      null != O && O(r.id)
     },
     onMouseEnter: () => {
-      null != O && O(m)
+      null != x && x(m)
     }
   }, P), n = n = {
     role: "option",
