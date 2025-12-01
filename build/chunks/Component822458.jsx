@@ -18,7 +18,7 @@ function c(e) {
     guildId: c,
     sectionTitle: u,
     skuIds: g,
-    variant: p = r.Z.SMALL
+    variant: p = s.Z.SMALL
   } = e, _ = i.useMemo(() => ({
     pageSection: n,
     pageSectionTitle: u
@@ -27,13 +27,13 @@ function c(e) {
     newValue: _,
     children: (0, l.jsxs)("div", {
       className: d.sectionContainer,
-      children: [null != u && (0, l.jsx)(a.Heading, {
+      children: [null != u && u.length > 0 && (0, l.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         lineClamp: 1,
         className: d.sectionTitle,
         children: u
-      }), (0, l.jsx)(s.t, {
+      }), (0, l.jsx)(r.t, {
         applicationId: t,
         skuIds: g,
         variant: p,

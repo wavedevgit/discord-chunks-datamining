@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk9156 = require("./9156.js"),
   Chunk451478 = require("./451478.js");
 
-function h(e) {
+function p(e) {
   let t = u.Z.getChannel(e);
   return null != t && null != t.getGuildId() && !(t.isThread() ? c.Z.isMuted(t.id) : f.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, s.d)(t)
 }
@@ -55,7 +55,7 @@ let m = Chunk473749.forwardRef(function(e, t) {
     }, {
       ignoreRecents: true
     }),
-    m = (0, l.e7)([p.Z], () => p.Z.isFocused());
+    m = (0, l.e7)([h.Z], () => h.Z.isFocused());
   return (0, r.jsx)(a.Z, (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -76,7 +76,7 @@ let m = Chunk473749.forwardRef(function(e, t) {
   }({
     ref: t
   }, d), i = i = {
-    isUnread: h,
+    isUnread: p,
     isMentioned: g,
     items: f,
     animate: m

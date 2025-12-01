@@ -95,18 +95,18 @@ function R() {
         a = (0, s.e7)([f.ZP], () => Array.from(f.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
-          } = t, r = (0, p.p)(n);
+          } = t, r = (0, h.p)(n);
           return null != r && null != e[r]
         })),
         c = o.length > 0,
         u = false,
         d = false,
-        h = false,
+        p = false,
         g = false;
-      return n ? (u = !l, d = l, h = r, g = a) : (h = i, g = c), (0, m.Or)({
+      return n ? (u = !l, d = l, p = r, g = a) : (p = i, g = c), (0, m.Or)({
         audio: u,
         video: d,
-        screenshare: h,
+        screenshare: p,
         liveStage: false,
         isCurrentUserConnected: n,
         activity: g

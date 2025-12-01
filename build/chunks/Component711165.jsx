@@ -196,7 +196,7 @@ let R = Chunk473749.memo(function(e) {
       default:
         (0, C.vE)(e)
     }
-  }(t.state), p = i.useCallback(() => {
+  }(t.state), h = i.useCallback(() => {
     (0, m.gD)(t.scheduledMessageId).then(() => {
       (0, y.C$)()
     }).catch(e => {
@@ -222,7 +222,7 @@ let R = Chunk473749.memo(function(e) {
         children: d
       }), (0, r.jsxs)("div", {
         className: N.channelMessageAndButtons,
-        children: [(0, r.jsx)(h.Z, {
+        children: [(0, r.jsx)(p.Z, {
           message: a,
           channel: n,
           className: N.message,
@@ -238,7 +238,7 @@ let R = Chunk473749.memo(function(e) {
             "aria-label": P.intl.string(P.t.SBcdAN)
           }), (0, r.jsx)(u.hU, {
             icon: f.k$p,
-            onClick: p,
+            onClick: h,
             "aria-label": P.intl.string(P.t.O3sL8F),
             variant: "icon-only"
           })]

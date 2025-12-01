@@ -394,6 +394,26 @@ let ev = {
     url: $.ANM.INVITE(e),
     rejectWithError: false
   }),
+  async fetchFriendMembers(e) {
+    try {
+      let {
+        body: t
+      } = await d.tn.get({
+        url: $.ANM.INVITE_FRIEND_MEMBERS(e),
+        rejectWithError: true
+      });
+      p.Z.dispatch({
+        type: "INVITE_FRIEND_MEMBERS_FETCH_SUCCESS",
+        code: e,
+        friendMemberIds: t.friend_member_ids
+      })
+    } catch (t) {
+      p.Z.dispatch({
+        type: "INVITE_FRIEND_MEMBERS_FETCH_FAILURE",
+        code: e
+      })
+    }
+  },
   clearInviteFromStore(e) {
     p.Z.dispatch({
       type: "INSTANT_INVITE_CLEAR",

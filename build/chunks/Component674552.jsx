@@ -3,8 +3,8 @@
 require.d(exports, {
   Ne: () => d,
   Ny: () => f,
-  Or: () => p,
-  jt: () => h
+  Or: () => h,
+  jt: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -32,7 +32,7 @@ function f() {
   })
 }
 
-function p(e) {
+function h(e) {
   let t, {
     audio: n,
     video: r,
@@ -57,7 +57,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function p(e) {
   let {
     guildJoinRequestStatus: t
   } = e, [n, r] = function(e) {

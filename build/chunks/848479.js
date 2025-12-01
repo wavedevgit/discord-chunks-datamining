@@ -132,6 +132,50 @@ class c extends Chunk77450.h {
       return null
     }
   }
+  enablePAMemoryProfiler(e) {
+    try {
+      var t;
+      let n = null === r.Z || true === r.Z || null == (t = r.Z.processUtils) ? true : t.enablePAMemoryProfiler;
+      if (true === n) return null;
+      return n(e), true
+    } catch (e) {
+      return null
+    }
+  }
+  disablePAMemoryProfiler() {
+    try {
+      var e;
+      let t = null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.processUtils) ? true : module.disablePAMemoryProfiler;
+      if (true === exports) return null;
+      return exports(), true
+    } catch (e) {
+      return null
+    }
+  }
+  getPerfAttributedPAMemory() {
+    try {
+      var e, t;
+      return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getPerfAttributedPAMemory) ? true : module.call(exports)
+    } catch (e) {
+      return null
+    }
+  }
+  getPerfAttributedPAMemoryCallstacks(e) {
+    try {
+      var t, n;
+      return null === r.Z || true === r.Z || null == (n = r.Z.processUtils) || null == (t = n.getPerfAttributedPAMemoryCallstacks) ? true : t.call(n, e)
+    } catch (e) {
+      return null
+    }
+  }
+  getPartitionAllocatorStats() {
+    try {
+      var e, t;
+      return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getPartitionAllocatorStats) ? true : module.call(exports)
+    } catch (e) {
+      return null
+    }
+  }
   constructor() {
     var e, t;
     super(), s(this, "lastMemoryUsageKB", true), this.cpuCoreCount = null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getCPUCoreCount) ? true : module.call(exports), this.setupReportingTimer()

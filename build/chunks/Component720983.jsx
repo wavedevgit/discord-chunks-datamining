@@ -1,7 +1,7 @@
 /** Chunk was on 77033 **/
 /** chunk id: 720983, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => L
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,7 +34,7 @@ function Z(e) {
     ariaLabel: i,
     className: a
   } = e;
-  return (0, l.jsx)(r.P3F, {
+  return (0, l.jsx)(s.P3F, {
     className: o()(S.iconButton, a),
     onClick: t,
     "aria-label": i,
@@ -42,37 +42,37 @@ function Z(e) {
   })
 }
 
-function E(e) {
+function L(e) {
   let {
     guildId: n,
     storefront: t,
     selectedPageIndex: a
-  } = e, E = (0, r.wjy)((0, d.ZP)()), N = (0, p.Y)({
+  } = e, L = (0, s.wjy)((0, d.ZP)()), N = (0, p.Y)({
     location: "SocialLayerStorefrontHeader"
-  }), R = (0, s.e7)([f.default], () => f.default.getCurrentUser()), L = (0, m.oR)(), {
+  }), E = (0, r.e7)([I.default], () => I.default.getCurrentUser()), R = (0, m.oR)(), {
     analyticsLocations: T
   } = (0, u.ZP)(), A = i.useCallback(() => {
-    (null == R ? true : R.id) != null && (0, _.openUserProfileModal)({
-      userId: R.id,
-      section: k.oh.WISHLIST,
+    (null == E ? true : E.id) != null && (0, _.openUserProfileModal)({
+      userId: E.id,
+      section: j.oh.WISHLIST,
       showGuildProfile: false,
       sourceAnalyticsLocations: [c.Z.SOCIAL_LAYER_STOREFRONT]
     })
-  }, [R]), M = i.useCallback(() => {
-    I.default.track(b.rMx.SLAYER_STOREFRONT_PAGE_ELEMENT_CLICKED, {
-      slayer_storefront_session_id: null == L ? true : L.sessionId,
+  }, [E]), M = i.useCallback(() => {
+    h.default.track(k.rMx.SLAYER_STOREFRONT_PAGE_ELEMENT_CLICKED, {
+      slayer_storefront_session_id: null == R ? true : R.sessionId,
       cta_type: C.US.LEARN_MORE,
       location_stack: T
-    }), window.open(h.Z.getArticleURL(b.BhN.SOCIAL_LAYER_STOREFRONT))
-  }, [L, T]);
+    }), window.open(f.Z.getArticleURL(k.BhN.SOCIAL_LAYER_STOREFRONT))
+  }, [R, T]);
   if (null == t) return null;
-  let O = null != t.logoAssetId ? (0, x._W)(t.applicationId, t.logoAssetId, 75) : null,
-    P = null != t.lightThemeLogoAssetId ? (0, x._W)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
-    y = null;
-  return y = E ? null != O ? O : P : null != P ? P : O, (0, l.jsxs)(g.Z, {
+  let y = null != t.logoAssetId ? (0, x._W)(t.applicationId, t.logoAssetId, 75) : null,
+    O = null != t.lightThemeLogoAssetId ? (0, x._W)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
+    P = null;
+  return P = L ? null != y ? y : O : null != O ? O : y, (0, l.jsxs)(g.Z, {
     disableDoubleClick: true,
     className: S.headerContainer,
-    children: [(0, l.jsxs)(r.P3F, {
+    children: [(0, l.jsxs)(s.P3F, {
       onClick: () => {
         (0, v.Z)({
           guildId: n,
@@ -80,9 +80,9 @@ function E(e) {
         })
       },
       className: S.titleContainer,
-      children: [null != y && (0, l.jsx)("img", {
+      children: [null != P && (0, l.jsx)("img", {
         className: S.logo,
-        src: y,
+        src: P,
         alt: t.title
       }), (0, l.jsx)(g.Z.Title, {
         children: t.title
@@ -100,7 +100,7 @@ function E(e) {
         className: o()(S.pageTitleContainer, {
           [S.selectedPageIndicator]: a === t
         }),
-        children: (0, l.jsx)(r.xvT, {
+        children: (0, l.jsx)(s.xvT, {
           variant: "text-sm/medium",
           children: e.title
         })
@@ -108,19 +108,19 @@ function E(e) {
     }), N && (0, l.jsxs)("div", {
       className: S.alignedRightContent,
       children: [(0, l.jsx)(Z, {
-        content: (0, l.jsx)(r.h_8, {
+        content: (0, l.jsx)(s.h_8, {
           size: "xs",
           color: "currentColor"
         }),
         onClick: A,
-        ariaLabel: j.intl.string(j.t["7lZ31J"]),
+        ariaLabel: b.intl.string(b.t["7lZ31J"]),
         className: S.wishlistButton
       }), (0, l.jsx)(Z, {
         onClick: M,
-        ariaLabel: j.intl.string(j.t.hvVgAZ),
-        content: (0, l.jsx)(r.xvT, {
+        ariaLabel: b.intl.string(b.t.hvVgAZ),
+        content: (0, l.jsx)(s.xvT, {
           variant: "text-sm/medium",
-          children: j.intl.string(j.t.hvVgAZ)
+          children: b.intl.string(b.t.hvVgAZ)
         }),
         className: S.learnMoreButton
       })]

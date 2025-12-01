@@ -15,12 +15,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk906530 = require("./906530.js");
 
-function h(e) {
+function p(e) {
   let {
     children: t
   } = e;
   return (0, r.jsx)(a.ZP, {
-    className: p.facepileItemContainer,
+    className: h.facepileItemContainer,
     mask: a.ZP.Masks.SQUIRCLE,
     width: 25,
     height: 25,
@@ -34,16 +34,16 @@ function g(e) {
     numTruncated: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.guildIconList,
+    className: h.guildIconList,
     children: [t.map(e => (0, r.jsxs)("div", {
-      className: p.guildIconItem,
+      className: h.guildIconItem,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(u.V, {
           guild: e,
           size: 20
         })
       }), (0, r.jsx)(o.Text, {
-        className: p.guildIconItemText,
+        className: h.guildIconItemText,
         variant: "text-xs/medium",
         children: e.name
       })]
@@ -91,15 +91,15 @@ function m(e) {
     }),
     position: "top",
     children: (0, r.jsxs)("div", {
-      className: p.facepile,
-      children: [b.map(e => (0, r.jsx)(h, {
+      className: h.facepile,
+      children: [b.map(e => (0, r.jsx)(p, {
         children: (0, r.jsx)(u.V, {
           guild: e,
           size: 20
         })
-      }, e.id)), _ > 0 && (0, r.jsx)(h, {
+      }, e.id)), _ > 0 && (0, r.jsx)(p, {
         children: (0, r.jsxs)(o.Text, {
-          className: p.textItem,
+          className: h.textItem,
           color: "text-secondary",
           variant: "text-xxs/semibold",
           children: ["+", _]

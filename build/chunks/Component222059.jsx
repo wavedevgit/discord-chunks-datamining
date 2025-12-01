@@ -53,12 +53,12 @@ function L(e) {
   let {
     selected: o,
     user: d,
-    badge: p,
+    badge: h,
     link: g,
     showProgressBadge: _
   } = e, [y, O] = i.useState(false), [v, j] = i.useState(false), [x, C] = i.useState(null), [E, w] = i.useState(0), L = (0, l.Ie)("home"), M = (0, f.oq)().activePanel === f.wh.APP_ICON, k = () => {
     C(null), w(0), clearTimeout(x)
-  }, G = h.o.useConfig({
+  }, G = p.o.useConfig({
     location: "home button"
   }).dmsTab;
   if (null == d) return null;
@@ -72,10 +72,10 @@ function L(e) {
   let F = o || y || M,
     V = (0, r.jsx)(s.aRk, {
       selected: true,
-      lowerBadge: p > 0 ? (0, N.Ne)(p) : null,
+      lowerBadge: h > 0 ? (0, N.Ne)(h) : null,
       upperBadge: B,
       lowerBadgeSize: {
-        width: (0, s.OVM)(p)
+        width: (0, s.OVM)(h)
       },
       children: (0, r.jsx)(s.LYs, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -178,7 +178,7 @@ function M() {
     })),
     u = Chunk91192.fractionalState === Chunk474936.a$.NONE ? Chunk433517 + Chunk481060 : 0,
     f = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    h = (0, Chunk899740.q)(),
+    p = (0, Chunk899740.q)(),
     m = require + Chunk864682 + Chunk365113,
     b = Chunk460181 === Chunk864682 && Chunk864682 > 0 && require + Chunk365113 === 0,
     S = Chunk774343.Z.getHomeLink();

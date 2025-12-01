@@ -1,0 +1,1 @@
+{"id":"756679","type":"experiment","data":{"kind":"user","id":"2025-11_invite_friend_members","label":"Show Friends in Server on Invite Modal","defaultConfig":{"showFriendsInServer":false},"treatments":[{"id":1,"label":"Show Friends in Server","config":{"showFriendsInServer":true}}]},"fromModule":{"id":"64271"}}

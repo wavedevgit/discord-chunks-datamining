@@ -41,13 +41,13 @@ function R(e, t, n) {
   if (null != n) return n.applicationId === e.id;
   if (null != t) {
     var r;
-    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === Z.IIU.PLAYING && (0, p.Z)(t, Z.xjy.JOIN)
+    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === Z.IIU.PLAYING && (0, h.Z)(t, Z.xjy.JOIN)
   }
   returnfalse
 }
 let D = Chunk473749.memo(function(e) {
     var t, l;
-    let a, s, p, y, {
+    let a, s, h, y, {
         stream: C,
         canGoLive: E,
         guildId: w,
@@ -87,7 +87,7 @@ let D = Chunk473749.memo(function(e) {
         }), (0, d.h7)(V, false)
       }, [V, W, q, U]),
       $ = i.useCallback((e, t) => () => {
-        (0, b.v)(q, b.d.LEAVE_ACTIVITY), h.Z.leaveActivity({
+        (0, b.v)(q, b.d.LEAVE_ACTIVITY), p.Z.leaveActivity({
           location: t,
           applicationId: e,
           showFeedback: true
@@ -167,26 +167,26 @@ let D = Chunk473749.memo(function(e) {
       }),
       ef = (null != U || null == B || (0, f.R)()) && (D || E) ? (D ? (a = false, s = () => {
         et(), (0, b.v)(q, b.d.STREAM, false)
-      }, p = u.g5r, y = T.intl.string(T.t.S5anIc)) : G ? (a = false, s = () => {
+      }, h = u.g5r, y = T.intl.string(T.t.S5anIc)) : G ? (a = false, s = () => {
         en(), (0, b.v)(q, b.d.STREAM, true)
-      }, p = u.hGI, y = null != U ? T.intl.formatToPlainString(T.t.AB5gTy, {
+      }, h = u.hGI, y = null != U ? T.intl.formatToPlainString(T.t.AB5gTy, {
         game: U.name
-      }) : T.intl.string(T.t.FeUKeA)) : (a = true, s = null, p = u.hGI, y = null != k && (0, S.vd)(k.type) ? T.intl.string(T.t.uQn9B8) : null != w ? T.intl.string(T.t.fBXEoJ) : T.intl.string(T.t.n3feNG)), (0, r.jsx)("div", {
+      }) : T.intl.string(T.t.FeUKeA)) : (a = true, s = null, h = u.hGI, y = null != k && (0, S.vd)(k.type) ? T.intl.string(T.t.uQn9B8) : null != w ? T.intl.string(T.t.fBXEoJ) : T.intl.string(T.t.n3feNG)), (0, r.jsx)("div", {
         className: A.panelButtonContainer,
         children: (0, r.jsx)(N.Z, {
           tooltipText: y,
           disabled: a,
           onClick: s,
-          icon: p
+          icon: h
         })
       })) : null,
-      ep = X && null == B ? (0, r.jsx)(N.Z, {
+      eh = X && null == B ? (0, r.jsx)(N.Z, {
         ref: z,
         tooltipText: T.intl.string(T.t["hC/Zey"]),
         onClick: J,
         icon: u.ejJ
       }) : null,
-      eh = null == B ? null : (0, r.jsx)(N.Z, {
+      ep = null == B ? null : (0, r.jsx)(N.Z, {
         tooltipText: T.intl.string(T.t["R/FK4A"]),
         onClick: $(B.applicationId, B.location),
         icon: u.PBZ
@@ -221,9 +221,9 @@ let D = Chunk473749.memo(function(e) {
           eu(false), null != es.current && (clearTimeout(es.current), es.current = null)
         }
       });
-    return null == ef && null == ep && null == eh && null == eg && null == eb && null == ed ? null : (0, r.jsxs)("div", {
+    return null == ef && null == eh && null == ep && null == eg && null == eb && null == ed ? null : (0, r.jsxs)("div", {
       className: A.actions,
-      children: [null != (t = null != ed ? ed : eb) ? t : ep, ef, null != (l = null != eh ? eh : eg) ? l : em, e_]
+      children: [null != (t = null != ed ? ed : eb) ? t : eh, ef, null != (l = null != ep ? ep : eg) ? l : em, e_]
     })
   }),
   L = Chunk473749.forwardRef(function(e, t) {

@@ -56,7 +56,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       id: H,
       name: W,
       children: z
-    } = t, [K, Y] = i.useState(false), [q, Q] = i.useState(false), X = K || q, J = (0, h.Ml)("FolderItem");
+    } = t, [K, Y] = i.useState(false), [q, Q] = i.useState(false), X = K || q, J = (0, p.Ml)("FolderItem");
     i.useEffect(() => {
       R && Y(false)
     }, [R]);
@@ -69,7 +69,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         nodeId: t.id
       }),
       end() {
-        null == L || L(), (0, p.V1)(g.ZP.getCompatibleGuildFolders())
+        null == L || L(), (0, h.V1)(g.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
