@@ -70,7 +70,7 @@ let y = function(e) {
     } finally {
       x(false)
     }
-  }, [t]), N = l.useCallback(async e => {
+  }, [t]), O = l.useCallback(async e => {
     if (null !== n) {
       E(true);
       try {
@@ -90,19 +90,19 @@ let y = function(e) {
   (0, r.ZP)(() => {
     T()
   });
-  let O = l.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
+  let N = l.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
     className: v.background,
     children: [(0, a.jsx)("img", {
       className: v.artwork,
       src: j,
       alt: ""
-    }), O ? (0, a.jsx)(o.default, {
+    }), N ? (0, a.jsx)(o.default, {
       transitionState: i.Dvm.ENTERED,
       entryPoint: s.cU.SAFETY_FLOWS,
       onClose: f.dG,
       onComplete: async () => {
-        await N({
+        await O({
           type: m.rY.Empty
         })
       },
@@ -155,7 +155,7 @@ let y = function(e) {
             })]
           }), null === y && null != n && (0, a.jsx)(_, {
             task: n,
-            handleSubmit: N,
+            handleSubmit: O,
             disabled: S
           })]
         })

@@ -134,7 +134,7 @@ let y = e => {
     })
   },
   C = () => {
-    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [C, S] = Chunk473749.useState(false), [E, T] = Chunk473749.useState(5e3), [N, O] = Chunk473749.useState(false), P = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), w = (0, Chunk848984.u)(), [k] = Chunk473749.useState(() => (0, Chunk773275.o8)({
+    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [C, S] = Chunk473749.useState(false), [E, T] = Chunk473749.useState(5e3), [O, N] = Chunk473749.useState(false), P = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), w = (0, Chunk848984.u)(), [k] = Chunk473749.useState(() => (0, Chunk773275.o8)({
       finishSetup: async () => true,
       perkAvailableToUser: w
     })), {
@@ -356,16 +356,16 @@ let y = e => {
           }), (0, Chunk54381.jsx)(Chunk159691.zxk, {
             text: "Show exit modal",
             onClick: () => {
-              O(true)
+              N(true)
             }
-          }), N && (0, Chunk54381.jsx)(Chunk720553.default, {
+          }), O && (0, Chunk54381.jsx)(Chunk720553.default, {
             url: "https://www.discord.com",
             trustUrl: () => false,
-            onCancel: () => O(false),
+            onCancel: () => N(false),
             isProtocol: false,
             onConfirm: () => {},
             onClose: async () => {
-              O(false)
+              N(false)
             },
             transitionState: Chunk481060.Dvm.ENTERED
           })]
