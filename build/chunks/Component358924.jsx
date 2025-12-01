@@ -2,7 +2,7 @@
 /** chunk id: 358924, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ey
-}), require("./388685.js"), require("./472816.js"), require("./794429.js");
+}), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./472816.js"), require("./794429.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
@@ -586,7 +586,7 @@ eO.Header = eE, eO.Body = e => {
           color: d.Z.unsafe_rawColors.SPOTIFY.css
         })]
       }) : (0, i.jsx)("div", {}), (0, i.jsxs)("div", {
-        children: [null != r ? eo(r) : null, null != l ? ec(l) : null]
+        children: [null != r ? eo(r) : null, null != l ? ec(l.replace(/; /g, ", ")) : null]
       }), (0, i.jsx)(er.Z, {
         minAvatarsShown: u ? 2 : 1,
         partySize: o,

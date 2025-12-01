@@ -5,7 +5,7 @@ require.d(exports, {
   ZP: () => m,
   pi: () => p,
   te: () => _
-}), require("./388685.js");
+}), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -57,7 +57,7 @@ function h(e) {
         channelId: n.id,
         guildId: n.guild_id
       }), (0, r.jsx)(d.ll, {
-        children: l
+        children: l.replace(/; /g, ", ")
       }), (0, r.jsx)(u.Gk, {
         location: u.Gt.CARD,
         children: _.map((e, n) => (0, r.jsx)(e, {

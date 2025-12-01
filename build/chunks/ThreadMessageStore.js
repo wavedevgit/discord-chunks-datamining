@@ -2,7 +2,7 @@
 /** chunk id: 144140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => X
+  Z: () => Q
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -82,8 +82,8 @@ function C(e, t) {
 }
 
 function N(e) {
-  var t;
-  null == (t = e.threads) || t.forEach(P)
+  var t, n;
+  null == (t = e.threads) || t.forEach(D), null == (n = e.threadMessages) || n.forEach(P)
 }
 
 function R(e) {
@@ -101,6 +101,14 @@ function R(e) {
 }
 
 function P(e) {
+  if (e.type === m.uaV.THREAD_STARTER_MESSAGE) return;
+  let t = f.Z.getChannel(e.channel_id);
+  null != t && A(t, t => {
+    t.mostRecentRawMessage = e, t.mostRecentMessage = null
+  })
+}
+
+function D(e) {
   A(e, t => {
     var n;
     null != e.messageCount && (t.count = e.messageCount);
@@ -109,19 +117,19 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   if (null != e && !(e.id in v)) {
     let t = f.Z.getChannel(e.id);
-    if (null != t) return P(t), true
+    if (null != t) return D(t), true
   }
   returnfalse
 }
 
-function w(e) {
+function L(e) {
   I = {}, O.clear(), e.guilds.forEach(N)
 }
 
-function L(e) {
+function x(e) {
   let {
     threadMessages: t
   } = e;
@@ -133,33 +141,33 @@ function L(e) {
   }
 }
 
-function x(e) {
+function M(e) {
   let {
     guild: t
   } = e;
   N(t)
 }
 
-function M(e) {
+function k(e) {
   let {
     guild: t
   } = e;
   T(t.id)
 }
 
-function k(e) {
+function j(e) {
   let {
     channel: t
   } = e;
-  P(t)
+  D(t)
 }
 
-function j(e) {
+function U(e) {
   let {
     threads: t,
     mostRecentMessages: n
   } = e;
-  t.forEach(P), null == n || n.forEach(e => {
+  t.forEach(D), null == n || n.forEach(e => {
     let t = f.Z.getChannel(e.channel_id);
     null != t && e.type !== m.uaV.THREAD_STARTER_MESSAGE && A(t, t => {
       t.mostRecentRawMessage = e, t.mostRecentMessage = null
@@ -167,14 +175,14 @@ function j(e) {
   })
 }
 
-function U(e) {
+function G(e) {
   let {
     threads: t
   } = e;
-  t.forEach(D)
+  t.forEach(w)
 }
 
-function G(e) {
+function B(e) {
   let {
     data: t
   } = e;
@@ -185,27 +193,27 @@ function G(e) {
     } = e;
     t.forEach(e => {
       e.forEach(e => {
-        D(e.thread)
+        w(e.thread)
       })
-    }), n.forEach(D)
+    }), n.forEach(w)
   })
-}
-
-function B(e) {
-  let {
-    channel: t
-  } = e;
-  S(t.id)
 }
 
 function Z(e) {
   let {
     channel: t
   } = e;
-  delete v[t.id]
+  S(t.id)
 }
 
 function F(e) {
+  let {
+    channel: t
+  } = e;
+  delete v[t.id]
+}
+
+function V(e) {
   let {
     message: t,
     optimistic: n,
@@ -214,17 +222,17 @@ function F(e) {
   } = e;
   if (n || r || null != i) returnfalse;
   let a = f.Z.getChannel(t.channel_id);
-  if (null == a || !c.Ec.has(a.type) || !V(a, t)) returnfalse;
+  if (null == a || !c.Ec.has(a.type) || !H(a, t)) returnfalse;
   A(a, e => {
     e.count = Math.min(e.count + 1, h.M3), e.mostRecentRawMessage = t, e.mostRecentMessage = null
   })
 }
 
-function V(e, t) {
+function H(e, t) {
   return !(t.type === m.uaV.THREAD_STARTER_MESSAGE || e.isForumPost() && t.id === p.default.castChannelIdAsMessageId(e.id))
 }
 
-function H(e) {
+function W(e) {
   var t;
   let {
     message: n
@@ -235,7 +243,7 @@ function H(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   let {
     id: t,
     channelId: n
@@ -250,7 +258,7 @@ function W(e) {
   })
 }
 
-function Y(e) {
+function K(e) {
   let {
     ids: t,
     channelId: n
@@ -268,9 +276,9 @@ function Y(e) {
   })
 }
 
-function K(e) {
+function z(e) {
   let t = false;
-  for (let n of e.messages) t = D(n.thread) || t;
+  for (let n of e.messages) t = w(n.thread) || t;
   if (e.isAfter || e.isBefore || e.hasMoreAfter) return t;
   let n = f.Z.getChannel(e.channelId);
   if (null == n || !c.Ec.has(n.type)) return t;
@@ -284,7 +292,7 @@ function K(e) {
   })
 }
 
-function z() {
+function q() {
   for (let e in v) {
     let t = v[module];
     if (null != exports && null != exports.mostRecentMessage) {
@@ -294,7 +302,7 @@ function z() {
     }
   }
 }
-class q extends(r = Chunk442837.ZP.Store) {
+class X extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk375954.Z)
   }
@@ -314,27 +322,27 @@ class q extends(r = Chunk442837.ZP.Store) {
     return v
   }
 }
-g(q, "displayName", "ThreadMessageStore");
-let X = new q(Chunk570140.Z, {
-  CONNECTION_OPEN: w,
-  OVERLAY_INITIALIZE: L,
-  GUILD_CREATE: x,
-  GUILD_DELETE: M,
-  THREAD_CREATE: k,
-  THREAD_UPDATE: k,
-  THREAD_LIST_SYNC: j,
-  LOAD_THREADS_SUCCESS: U,
-  LOAD_ARCHIVED_THREADS_SUCCESS: U,
-  RELATIONSHIP_ADD: z,
-  RELATIONSHIP_UPDATE: z,
-  RELATIONSHIP_REMOVE: z,
-  SEARCH_MESSAGES_SUCCESS: G,
-  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: G,
-  THREAD_DELETE: Z,
-  CHANNEL_DELETE: B,
-  MESSAGE_CREATE: F,
-  MESSAGE_UPDATE: H,
-  MESSAGE_DELETE: W,
-  MESSAGE_DELETE_BULK: Y,
-  LOAD_MESSAGES_SUCCESS: K
+g(X, "displayName", "ThreadMessageStore");
+let Q = new X(Chunk570140.Z, {
+  CONNECTION_OPEN: L,
+  OVERLAY_INITIALIZE: x,
+  GUILD_CREATE: M,
+  GUILD_DELETE: k,
+  THREAD_CREATE: j,
+  THREAD_UPDATE: j,
+  THREAD_LIST_SYNC: U,
+  LOAD_THREADS_SUCCESS: G,
+  LOAD_ARCHIVED_THREADS_SUCCESS: G,
+  RELATIONSHIP_ADD: q,
+  RELATIONSHIP_UPDATE: q,
+  RELATIONSHIP_REMOVE: q,
+  SEARCH_MESSAGES_SUCCESS: B,
+  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: B,
+  THREAD_DELETE: F,
+  CHANNEL_DELETE: Z,
+  MESSAGE_CREATE: V,
+  MESSAGE_UPDATE: W,
+  MESSAGE_DELETE: Y,
+  MESSAGE_DELETE_BULK: K,
+  LOAD_MESSAGES_SUCCESS: z
 })
