@@ -1,23 +1,23 @@
 /** Chunk was on 1272 **/
 /** chunk id: 613928, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $U: () => Z,
-  FJ: () => D,
-  HG: () => k,
-  IC: () => A,
-  NV: () => x,
-  Rm: () => R,
-  _e: () => C,
-  aL: () => I,
-  eO: () => M,
-  em: () => T,
-  es: () => N,
-  jv: () => S,
-  mV: () => L,
-  rK: () => w,
-  wV: () => P,
-  y_: () => y,
-  ye: () => U
+  $U: () => A,
+  FJ: () => R,
+  HG: () => M,
+  IC: () => x,
+  NV: () => P,
+  Rm: () => L,
+  _e: () => I,
+  aL: () => y,
+  eO: () => D,
+  em: () => S,
+  es: () => T,
+  jv: () => C,
+  mV: () => w,
+  rK: () => Z,
+  wV: () => j,
+  y_: () => v,
+  ye: () => k
 }), require("./539854.js"), require("./472816.js"), require("./794429.js"), require("./388685.js");
 var r, Chunk661869 = require("./661869.js"),
   Chunk876215 = require("./876215.js");
@@ -37,27 +37,26 @@ var Chunk306680 = require("./306680.js"),
   Chunk144725 = require("./144725.js"),
   Chunk797394 = require("./797394.js"),
   Chunk634773 = require("./634773.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk764051 = require("./764051.js");
+  Chunk981631 = require("./981631.js");
 
-function y(e, t) {
+function v(e, t) {
   return "hydration-".concat(e, "-").concat(t)
 }
 require("./388032.jsx");
-var I = ((r = {})[r.UNKNOWN = 0] = "UNKNOWN", r[r.DEFAULT = 1] = "DEFAULT", r[r.MORE = 2] = "MORE", r[r.LESS = 3] = "LESS", r[r.MUTED = 4] = "MUTED", r);
+var y = ((r = {})[r.UNKNOWN = 0] = "UNKNOWN", r[r.DEFAULT = 1] = "DEFAULT", r[r.MORE = 2] = "MORE", r[r.LESS = 3] = "LESS", r[r.MUTED = 4] = "MUTED", r);
 
-function C(e) {
+function I(e) {
   return e.type === b.Ni.MESSAGE || e.type === b.Ni.SUMMARY || e.type === b.Ni.GENERATED_CANDIDATE || e.type === b.Ni.GUILD_EVENT
 }
 
-function S(e) {
+function C(e) {
   return e < false ? 4 : e < 0 ? 3 : e > 0 ? 2 : 1
 }
-async function T(e, t, n) {
+async function S(e, t, n) {
   let r = _.Z.getHydratedItems(),
     i = e.slice(t, n);
   if (0 === i.length) return;
-  h.Z.loadHydratedAttempt(y(t, n));
+  h.Z.loadHydratedAttempt(v(t, n));
   let l = i.filter(e => null == r[e.id]),
     a = l.filter(e => e.type === b.Ni.MESSAGE).map(e => ({
       channel_id: e.data.channel_id,
@@ -101,14 +100,14 @@ async function T(e, t, n) {
     generatedCandidateItems: u
   })
 }
-async function N() {
+async function T() {
   let e = Chunk144725.Z.getUnreadDisplayItems(),
     t = Chunk144725.Z.getReadDisplayItems(),
     n = Chunk144725.Z.getNextIndexToHydrate();
-  await T([...module, ...exports], require, require + Chunk797394.xy)
+  await S([...module, ...exports], require, require + Chunk797394.xy)
 }
 
-function j(e, t, n) {
+function N(e, t, n) {
   let r = [],
     i = null;
   for (let l of e) {
@@ -119,7 +118,7 @@ function j(e, t, n) {
   return r
 }
 
-function P(e, t) {
+function j(e, t) {
   let {
     reactions: n,
     reactionCount: r
@@ -148,7 +147,7 @@ function P(e, t) {
       reactions: t,
       reactionCount: n
     }
-  }(e.messages), i = j(e.messages, true, 3);
+  }(e.messages), i = N(e.messages, true, 3);
   return {
     id: e.id,
     topic: e.topic,
@@ -169,10 +168,10 @@ function P(e, t) {
   }
 }
 
-function x(e) {
+function P(e) {
   let t = [];
   null != e.messages && (t = e.messages);
-  let n = j(t);
+  let n = N(t);
   return {
     guild_id: e.guild_id,
     content_id: e.content_id,
@@ -189,10 +188,9 @@ function x(e) {
   }
 }
 
-function A(e, t) {
+function x(e, t) {
   var n, r;
-  let i, l;
-  return null != e.before_messages && (i = j(e.before_messages).slice(-v.h9)), null != e.after_messages && (l = j(e.after_messages).slice(0, v.Ml)), n = function(e) {
+  return n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -211,9 +209,7 @@ function A(e, t) {
     return e
   }({}, t), r = r = {
     message: (0, s.e5)(e.message),
-    threadChannel: null != e.thread_channel ? o.dy.fromServer(e.thread_channel, e.guild_id) : true,
-    beforeMessages: i,
-    afterMessages: l
+    threadChannel: null != e.thread_channel ? o.dy.fromServer(e.thread_channel, e.guild_id) : true
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -226,16 +222,16 @@ function A(e, t) {
   }), n
 }
 
-function Z(e, t) {
+function A(e, t) {
   let n = p.ZP.getTrackedAckMessageId(e);
   return null == n || f.default.extractTimestamp(t) > f.default.extractTimestamp(n)
 }
 
-function w(e) {
+function Z(e) {
   return (0, g.VZ)(e)
 }
 
-function L(e) {
+function w(e) {
   var t;
   return {
     id: e.id,
@@ -261,14 +257,14 @@ function L(e) {
   }
 }
 
-function R(e, t, n) {
+function L(e, t, n) {
   let r = E.Z.getReadTimestamp(e);
   null == r && (r = null == n ? true : n[e]);
   let i = E.Z.getReadTimestamp(t);
   return (null == i && (i = null == n ? true : n[t]), null == r && null == i) ? 0 : null == r ? false : null == i ? 1 : i - r
 }
 
-function D(e) {
+function R(e) {
   let t = [..._.Z.getUnreadDisplayItems(), ..._.Z.getReadDisplayItems()],
     n = null;
   for (let t = e.length - 1; t >= 0; t--) {
@@ -283,7 +279,7 @@ function D(e) {
   return r < 0 ? [] : t.slice(0, r + 1)
 }
 
-function M(e) {
+function D(e) {
   var t, n;
   let r, i;
   switch (e.data.kind) {
@@ -311,7 +307,7 @@ function M(e) {
   return (null == s ? true : s.nsfwLevel) === O.V_K.EXPLICIT || (null == s ? true : s.nsfwLevel) === O.V_K.AGE_RESTRICTED
 }
 
-function k(e) {
+function M(e) {
   switch (e.data.kind) {
     case "end":
       return "end";
@@ -343,7 +339,7 @@ function k(e) {
       return "unknown"
   }
 }
-async function U(e) {
+async function k(e) {
   let {
     ack: t
   } = await Promise.resolve().then(n.bind(n, 45114)), {

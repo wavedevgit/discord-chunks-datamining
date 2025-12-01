@@ -2,18 +2,17 @@
 /** chunk id: 518929, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  VZ: () => d,
-  ZY: () => f,
-  b5: () => u,
-  q3: () => p
-}), require("./473749.js");
+  VZ: () => u,
+  ZY: () => d,
+  b5: () => c,
+  q3: () => _
+});
 var Chunk818083 = require("./818083.js"),
-  Chunk427164 = require("./427164.js"),
   Chunk638395 = require("./638395.js"),
   Chunk171393 = require("./171393.js"),
   Chunk987338 = require("./987338.js");
-let l = "hide_icymi_tab",
-  c = (0, Chunk818083.B)({
+let s = "hide_icymi_tab",
+  l = (0, Chunk818083.B)({
     kind: "user",
     id: "2024-07_icymi",
     label: "In-case-you-missed-it tab",
@@ -30,16 +29,16 @@ let l = "hide_icymi_tab",
     }]
   });
 
-function u(e) {
+function c(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = (0, o.Z)(l),
-    r = c.useExperiment({
+    n = (0, a.Z)(s),
+    r = l.useExperiment({
       location: e
     }, {
       autoTrackExposure: t,
       disable: n
     }),
-    i = g.useExperiment({
+    i = p.useExperiment({
       location: e
     }, {
       autoTrackExposure: false,
@@ -48,17 +47,17 @@ function u(e) {
   return r.enabled && i.icymiDesktopEnabled
 }
 
-function d(e) {
+function u(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = a.Z.get(l),
-    r = c.getCurrentConfig({
+    n = i.Z.get(s),
+    r = l.getCurrentConfig({
       location: e
     }, {
       autoTrackExposure: t,
       disable: n
     });
   {
-    let t = g.getCurrentConfig({
+    let t = p.getCurrentConfig({
       location: e
     }, {
       autoTrackExposure: false,
@@ -67,7 +66,7 @@ function d(e) {
     return r.enabled && t.icymiDesktopEnabled
   }
 }
-let f = (0, Chunk818083.B)({
+let d = (0, Chunk818083.B)({
     kind: "user",
     id: "2024-07_icymi_negative_items",
     label: "icymi negative content (debugging only)",
@@ -82,7 +81,7 @@ let f = (0, Chunk818083.B)({
       }
     }]
   }),
-  _ = (0, Chunk818083.B)({
+  f = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-05_icymi_new_conversation_summaries",
     label: "New conversation summary in ICYMI",
@@ -98,65 +97,28 @@ let f = (0, Chunk818083.B)({
     }]
   });
 
-function p(e) {
+function _(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    n = d(e, false);
-  return _.getCurrentConfig({
+    n = u(e, false);
+  return f.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t,
     disable: !n
   })
 }
-let h = {
-    isNewHeaderAndInteractions: false,
-    isNewCardDesign: false,
-    isBottomSheetInteractions: false,
-    uxVariation: "default"
+let p = (0, Chunk818083.B)({
+  kind: "user",
+  id: "2025-10_icymi_desktop_client",
+  label: "ICYMI desktop client",
+  defaultConfig: {
+    icymiDesktopEnabled: false
   },
-  m = (0, Chunk427164.le)({
-    name: "2025-09-destination-icymi-ux-v2",
-    kind: "user",
-    defaultConfig: h,
-    variations: {
-      1: {
-        isNewHeaderAndInteractions: true,
-        isNewCardDesign: false,
-        isBottomSheetInteractions: false,
-        uxVariation: "destination_icymi_ia"
-      },
-      2: {
-        isNewHeaderAndInteractions: true,
-        isNewCardDesign: true,
-        isBottomSheetInteractions: false,
-        uxVariation: "destination_icymi_ia_card"
-      },
-      3: {
-        isNewHeaderAndInteractions: true,
-        isNewCardDesign: false,
-        isBottomSheetInteractions: true,
-        uxVariation: "destination_icymi_ia_bottom_sheet"
-      },
-      4: {
-        isNewHeaderAndInteractions: true,
-        isNewCardDesign: true,
-        isBottomSheetInteractions: true,
-        uxVariation: "destination_icymi_ia_bottom_sheet_card"
-      }
+  treatments: [{
+    id: 1,
+    label: "Enable ICYMI desktop client",
+    config: {
+      icymiDesktopEnabled: true
     }
-  }),
-  g = (0, Chunk818083.B)({
-    kind: "user",
-    id: "2025-10_icymi_desktop_client",
-    label: "ICYMI desktop client",
-    defaultConfig: {
-      icymiDesktopEnabled: false
-    },
-    treatments: [{
-      id: 1,
-      label: "Enable ICYMI desktop client",
-      config: {
-        icymiDesktopEnabled: true
-      }
-    }]
-  })
+  }]
+})
