@@ -70,7 +70,17 @@ let p = Chunk473749.memo(function(e) {
   }), [y, t.key]);
   let h = null == n ? true : n(y),
     x = null == p ? true : p(),
-    j = null == b ? true : b();
+    j = null == b ? true : b(),
+    O = l.useCallback(e => {
+      e && s.Z.setState({
+        navTransition: {
+          targetKey: t.key,
+          targetAccordionKey: t.key,
+          animateScroll: true,
+          scrollBlock: "nearest"
+        }
+      })
+    }, [t.key]);
   return (0, r.jsx)("div", {
     className: o()({
       [f.open]: y
@@ -78,8 +88,9 @@ let p = Chunk473749.memo(function(e) {
     children: (0, r.jsxs)(u.I, {
       title: h,
       collapsedSubtitle: x,
-      isOpen: y,
-      setIsOpen: g,
+      isExpanded: y,
+      onExpandedChange: g,
+      onExpandedChangeComplete: O,
       animate: v,
       children: [null != j && (0, r.jsx)(d.Z, {
         notice: j

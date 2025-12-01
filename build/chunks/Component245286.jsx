@@ -1,7 +1,7 @@
 /** Chunk was on 88569 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => P
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk942408 = require("./942408.js");
 
-function P(e) {
+function C(e) {
   let {
     destinationPanel: t,
     originPanel: n
@@ -38,7 +38,7 @@ function P(e) {
   })
 }
 
-function C(e) {
+function P(e) {
   var {
     target: t
   } = e, n = function(e, t) {
@@ -65,7 +65,7 @@ function C(e) {
     y = l.useRef(null);
   return ((0, s.ZP)(() => {
     let e = p.Z.getSection();
-    null != e && (P({
+    null != e && (C({
       destinationPanel: e,
       originPanel: null
     }), y.current = e)
@@ -94,7 +94,7 @@ function C(e) {
     sidebarFooter: m.Z,
     onPanelChange: e => {
       let t = (0, x.getUserSettingsSectionsByWebUserSettings)().get(e);
-      null != t && (P({
+      null != t && (C({
         destinationPanel: t,
         originPanel: y.current
       }), y.current = t)

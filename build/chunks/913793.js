@@ -39,8 +39,8 @@ let p = (0, Chunk473749.createContext)(null),
       j = f.useRef(null),
       O = e.isDisabled || (null == n ? true : n.isDisabled) || false,
       {
-        buttonProps: P,
-        panelProps: C
+        buttonProps: C,
+        panelProps: P
       } = (0, i.q)({
         ...e,
         isExpanded: h,
@@ -71,11 +71,11 @@ let p = (0, Chunk473749.createContext)(null),
         [r.b, {
           slots: {
             [l.hO]: {},
-            trigger: P
+            trigger: C
           }
         }],
         [g, {
-          panelProps: C,
+          panelProps: P,
           panelRef: j
         }],
         [y, x]

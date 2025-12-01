@@ -2,7 +2,7 @@
 /** chunk id: 675047, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -12,7 +12,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk630759 = require("./630759.js"),
   Chunk398826 = require("./398826.js"),
   Chunk526665 = require("./526665.js"),
-  Chunk695463 = require("./695463.js"),
   Chunk10298 = require("./10298.jsx"),
   Chunk623196 = require("./623196.jsx"),
   Chunk993315 = require("./993315.jsx"),
@@ -27,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S() {
+function T() {
   return (0, Chunk54381.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.WWaFn5),
     description: Chunk388032.intl.format(Chunk388032.t["/6sFWa"], {
@@ -38,7 +37,7 @@ function S() {
   })
 }
 
-function A() {
+function S() {
   return (0, Chunk54381.jsx)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.BG7QsQ),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
@@ -46,17 +45,16 @@ function A() {
   })
 }
 
-function C() {
-  let e = (0, Chunk695463.W)("UserSettingsDataAndPrivacy"),
-    t = (0, Chunk526665.BK)("UserSettingsDataAndPrivacy");
+function A() {
+  let e = (0, Chunk526665.BK)("UserSettingsDataAndPrivacy");
   return (0, Chunk54381.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.SRZyHg),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
-    children: [(0, Chunk54381.jsx)(Chunk402583.Z, {}), (0, Chunk54381.jsx)(Chunk940021.Z, {}), module && (0, Chunk54381.jsx)(Chunk265390.Z, {}), (0, Chunk54381.jsx)(Chunk883382.Z, {}), exports && (0, Chunk54381.jsx)(Chunk902451.Z, {}), (0, Chunk54381.jsx)(Chunk993315.Z, {})]
+    children: [(0, Chunk54381.jsx)(Chunk402583.Z, {}), (0, Chunk54381.jsx)(Chunk940021.Z, {}), (0, Chunk54381.jsx)(Chunk265390.Z, {}), (0, Chunk54381.jsx)(Chunk883382.Z, {}), module && (0, Chunk54381.jsx)(Chunk902451.Z, {}), (0, Chunk54381.jsx)(Chunk993315.Z, {})]
   })
 }
 
-function N() {
+function C() {
   return (0, Chunk493773.ZP)(() => {
     (0, Chunk924628.I)(), (0, Chunk398826.A)()
   }), (0, Chunk54381.jsx)(Chunk10298.N, {
@@ -65,7 +63,7 @@ function N() {
       page: Chunk441007.N.DATA_AND_PRIVACY
     }),
     children: (0, Chunk54381.jsxs)(Chunk481060.l09, {
-      children: [(0, Chunk54381.jsx)(C, {}), (0, Chunk54381.jsx)(A, {}), (0, Chunk54381.jsx)(S, {})]
+      children: [(0, Chunk54381.jsx)(A, {}), (0, Chunk54381.jsx)(S, {}), (0, Chunk54381.jsx)(T, {})]
     })
   })
 }

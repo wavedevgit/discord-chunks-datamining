@@ -27,7 +27,7 @@ function b(e) {
     sidebarFooter: h,
     onPanelChange: x,
     emptyState: j
-  } = e, O = null != y && (null == (t = b.entry(y)) ? true : t.parentPanelKey) != null ? y : g, P = f.Z.useField("currentPanelKey"), [C, S] = l.useState(b), _ = l.useMemo(() => C.get(null != P ? P : O), [C, P, O]), {
+  } = e, O = null != y && (null == (t = b.entry(y)) ? true : t.parentPanelKey) != null ? y : g, C = f.Z.useField("currentPanelKey"), [P, S] = l.useState(b), _ = l.useMemo(() => P.get(null != C ? C : O), [P, C, O]), {
     navigateWithValidation: E
   } = (0, u.Cu)();
   (0, o.ZP)(() => {
@@ -84,10 +84,10 @@ function b(e) {
   }), [b, E, x]);
   let w = l.useMemo(() => ({
       directory: b,
-      fallbackDirectory: C
-    }), [b, C]),
-    N = () => E(v),
-    Z = null != P ? b.get(P) : true;
+      fallbackDirectory: P
+    }), [b, P]),
+    k = () => E(v),
+    N = null != C ? b.get(C) : true;
   return (0, r.jsx)(d.j.Provider, {
     value: w,
     children: (0, r.jsxs)("div", {
@@ -96,11 +96,11 @@ function b(e) {
         root: n,
         header: m,
         footer: h,
-        onClose: N,
+        onClose: k,
         emptyState: j
       }), (0, r.jsx)(s.Z, {
-        onClose: N,
-        setting: null != Z ? Z : _
+        onClose: k,
+        setting: null != N ? N : _
       })]
     })
   })

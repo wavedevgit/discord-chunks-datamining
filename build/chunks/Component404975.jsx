@@ -27,7 +27,7 @@ function h(e) {
     footer: i,
     onClose: g,
     emptyState: h
-  } = e, j = y.Z.useField("showNavigationMobile"), O = l.useRef(null), P = l.useMemo(() => {
+  } = e, j = y.Z.useField("showNavigationMobile"), O = l.useRef(null), C = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -44,7 +44,7 @@ function h(e) {
         }
       })
     }), e
-  }, [t.layout]), [C, S] = l.useMemo(() => {
+  }, [t.layout]), [P, S] = l.useMemo(() => {
     let e = [],
       n = [];
     return t.layout.forEach(t => {
@@ -65,7 +65,7 @@ function h(e) {
   }, [w]), (0, r.jsx)(c.f6W, {
     theme: _,
     children: e => (0, r.jsx)(f.ZP, {
-      contentTypes: P,
+      contentTypes: C,
       children: t => {
         let {
           visibleContent: l
@@ -87,7 +87,7 @@ function h(e) {
                 "aria-label": v.intl.string(v.t.cpT0Cq)
               })
             }), (0, r.jsx)("div", {
-              children: C.map(e => (0, r.jsx)(x, {
+              children: P.map(e => (0, r.jsx)(x, {
                 section: e,
                 visibleContent: l,
                 hoisted: true
