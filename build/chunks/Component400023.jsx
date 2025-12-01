@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk790519 = require("./790519.js"),
+  Chunk666917 = require("./666917.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -92,7 +92,7 @@ function W(e, t) {
   }
   return r
 }
-let q = (0, Chunk790519.animated)(Chunk481060.eTT),
+let q = (0, Chunk666917.animated)(Chunk481060.eTT),
   K = Chunk473749.memo(function(e) {
     var t, n;
     let {

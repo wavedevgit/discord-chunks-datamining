@@ -8,7 +8,7 @@ var i, r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk790519 = require("./790519.js"),
+  Chunk666917 = require("./666917.js"),
   Chunk902704 = require("./902704.js"),
   Chunk585483 = require("./585483.js"),
   Chunk434529 = require("./434529.js"),
@@ -411,7 +411,7 @@ class C extends(i = Chunk473749.Component) {
       dragStart: this.handleOperationStart,
       dragOperation: this.state.operation,
       anchorTop: null != s ? s : null != Chunk473749.top,
-      anchorLeft: null != Chunk790519 ? Chunk790519 : null != Chunk473749.left,
+      anchorLeft: null != Chunk666917 ? Chunk666917 : null != Chunk473749.left,
       size: Chunk54381,
       padding: require,
       borderWidth: i,
@@ -435,7 +435,7 @@ class C extends(i = Chunk473749.Component) {
         lockExtras: o
       }
     } = this;
-    return (0, Chunk54381.jsxs)(Chunk790519.animated.div, {
+    return (0, Chunk54381.jsxs)(Chunk666917.animated.div, {
       ref: this.ref,
       style: this.getInlineStyles(),
       className: s()({
