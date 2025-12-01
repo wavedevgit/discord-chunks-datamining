@@ -35,7 +35,7 @@ function j() {
 function C(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([c.Z], () => {
+  } = e, n = (0, l.e7)([c.Z], () => {
     var e;
     return (null == (e = c.Z.getGuild(t)) ? true : e.features.has(v.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true
   }), C = (0, d.Z)(t), w = (0, u.Z)(t), I = C.length > 0 || w.length > 0, {
@@ -49,12 +49,12 @@ function C(e) {
     let n = [];
     if (I) {
       let e = C.some(e => e.skuId === i.A$),
-        l = w.length > 0 ? b.intl.string(x.default["B3OfL/"]) : true,
-        o = [];
-      e && o.push(b.intl.string(_.default.Sfr0Jw)), w.length > 0 && o.push(b.intl.string(x.default.wiungr)), n.push((0, r.jsx)(m.Z, {
+        o = w.length > 0 ? b.intl.string(x.default["B3OfL/"]) : true,
+        l = [];
+      e && l.push(b.intl.string(_.default.Sfr0Jw)), w.length > 0 && l.push(b.intl.string(x.default.wiungr)), n.push((0, r.jsx)(m.Z, {
         guildId: t,
-        powerupNames: [...C.map(e => e.title), ...null != l ? [l] : []],
-        warnings: o
+        powerupNames: [...C.map(e => e.title), ...null != o ? [o] : []],
+        warnings: l
       }, "expiring-powerups"))
     }
     return N && n.push((0, r.jsx)(f.Z, {
@@ -68,7 +68,7 @@ function C(e) {
   })(S);
   return 0 !== k.length || n ? (0, r.jsxs)("div", {
     className: h.container,
-    children: [(0, r.jsx)(l.xvT, {
+    children: [(0, r.jsx)(o.xvT, {
       variant: "eyebrow",
       color: "text-secondary",
       children: b.intl.string(_.default["3FRirU"])

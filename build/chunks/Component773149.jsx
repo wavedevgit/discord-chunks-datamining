@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -29,7 +29,7 @@ function w(e) {
     guildId: t
   } = e, {
     state: n,
-    lowestGameServerCost: l
+    lowestGameServerCost: o
   } = (0, s.cj)([f.Z], () => ({
     state: f.Z.getStateForGuild(t),
     lowestGameServerCost: f.Z.getLowestGameCostForGuild(t)
@@ -55,17 +55,17 @@ function w(e) {
     children: [(0, r.jsxs)("div", {
       className: j.imageContainer,
       children: [(0, r.jsx)("img", {
-        className: o()(h.background, b.image, j.image),
+        className: l()(h.background, b.image, j.image),
         src: C.Z,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: o()(b.image, j.gradient)
+        className: l()(b.image, j.gradient)
       })]
     }), (0, r.jsx)(d.Q9, {
       title: _.intl.string(x.default["B3OfL/"]),
       textColor: E,
       footer: (0, r.jsx)(d.uf, {
-        cost: null != l ? l : 0,
+        cost: null != o ? o : 0,
         costDecorator: "+",
         status: I
       }),

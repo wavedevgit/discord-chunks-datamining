@@ -26,7 +26,7 @@ function v(e) {
     dismissibleContent: t
   } = e, n = p.Z.useIsEligible(), m = (0, s.Nj)(t), {
     analyticsLocations: v
-  } = (0, i.ZP)(l.Z.HOLIDAY_COACHMARK), j = e => {
+  } = (0, r.ZP)(i.Z.HOLIDAY_COACHMARK), j = e => {
     (0, s.Q3)(t, {
       dismissAction: e
     })
@@ -35,7 +35,7 @@ function v(e) {
     (0, u.openUserSettings)(e ? c.n.NOTIFICATIONS_PANEL : c.n.LEGACY_NOTIFICATIONS_SETTINGS_PANEL, {
       section: x.oAB.NOTIFICATIONS,
       analyticsLocations: v
-    }), j(g.L.TAKE_ACTION)
+    }), j(f.L.TAKE_ACTION)
   };
   return n && !m ? (0, a.jsx)(o.ZP, {
     children: (0, a.jsxs)("div", {
@@ -53,16 +53,16 @@ function v(e) {
       }), (0, a.jsxs)("div", {
         className: b.content,
         children: [(0, a.jsxs)("div", {
-          children: [(0, a.jsx)(r.Heading, {
+          children: [(0, a.jsx)(l.Heading, {
             variant: "heading-md/bold",
             color: true,
             className: b.specialText,
-            children: f.intl.string(f.t.zUhr3D)
-          }), (0, a.jsx)(r.Text, {
+            children: g.intl.string(g.t.zUhr3D)
+          }), (0, a.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "always-white",
-            children: f.intl.format(f.t.Xw2XUT, {
-              settingsHook: (e, t) => (0, a.jsx)(r.P3F, {
+            children: g.intl.format(g.t.Xw2XUT, {
+              settingsHook: (e, t) => (0, a.jsx)(l.P3F, {
                 tag: "span",
                 className: b.specialTextLink,
                 onClick: _,
@@ -70,10 +70,10 @@ function v(e) {
               }, t)
             })
           })]
-        }), (0, a.jsx)(r.P3F, {
+        }), (0, a.jsx)(l.P3F, {
           className: b.closeClickable,
-          onClick: () => j(g.L.USER_DISMISS),
-          children: (0, a.jsx)(r.Dio, {
+          onClick: () => j(f.L.USER_DISMISS),
+          children: (0, a.jsx)(l.Dio, {
             color: "currentColor",
             size: "xs"
           })

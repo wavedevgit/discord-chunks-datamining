@@ -15,9 +15,9 @@ let d = t => {
   let {
     className: e = ""
   } = t;
-  return (0, a.jsx)(i.IG, {
+  return (0, a.jsx)(l.IG, {
     text: c.intl.string(c.t.oW0eUd),
     className: s()(o.betaBadge, e),
-    color: l.Z.colors.BADGE_BACKGROUND_EXPRESSIVE.css
+    color: i.Z.colors.BADGE_BACKGROUND_EXPRESSIVE.css
   })
 }

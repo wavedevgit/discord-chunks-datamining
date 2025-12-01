@@ -19,7 +19,7 @@ function u(e) {
     trackClick: m,
     closeModal: g
   } = e, f = i.useCallback(() => {
-    (null == u ? true : u.guild) != null && ((0, s.Z)({
+    (null == u ? true : u.guild) != null && ((0, s.default)({
       invite: u
     }), g(), m(o.as.GameShop))
   }, [g, u, m]);

@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk246992 = require("./246992.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
-let f = [{
+let g = [{
   label: "1 Week",
   value: 0
 }, {
@@ -56,7 +56,7 @@ function b() {
       endedAt: true,
       premium_streak_started_at: p.default.fromTimestamp(t.getTime())
     };
-    b(true), await i.tn.patch({
+    b(true), await r.tn.patch({
       url: "/debug/subscriptions/".concat(_.id),
       body: n,
       rejectWithError: false
@@ -66,7 +66,7 @@ function b() {
     isDisabled: require,
     serialize: e => "".concat(e),
     isSelected: e => e === y,
-    options: f,
+    options: g,
     select: C,
     popoutLayerContext: Chunk246992.O$,
     popoutWidth: 200

@@ -22,7 +22,7 @@ function v(e) {
     powerup: t,
     targetRef: n,
     isCardVisible: v
-  } = e, x = (0, o.e7)([d.Z], () => d.Z.hasLayers()), _ = (0, s.f9)(), b = t.skuId === l.A$ ? {
+  } = e, x = (0, l.e7)([d.Z], () => d.Z.hasLayers()), _ = (0, s.f9)(), b = t.skuId === o.A$ ? {
     title: g.intl.string(m.default.YWo6VL),
     body: g.intl.string(m.default.gXVvKc),
     dismissibleContentType: a.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER

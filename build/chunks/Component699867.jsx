@@ -13,10 +13,10 @@ function o(e) {
   let {
     items: t,
     onChange: n
-  } = e, [o, c] = (0, i.Z)(), d = (0, r.useCallback)(e => {
+  } = e, [o, c] = (0, r.Z)(), d = (0, l.useCallback)(e => {
     c(e), null == n || n(e)
   }, [c, n]);
-  return (0, a.jsx)(l.Kqy, {
+  return (0, a.jsx)(i.Kqy, {
     gap: 16,
     children: t.filter(e => isNaN(Number(e))).map(e => (0, a.jsx)(s.Z, {
       content: e,

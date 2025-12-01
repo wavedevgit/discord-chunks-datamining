@@ -166,6 +166,19 @@ function B(e) {
       n(t, r)
     }), true
   };
+  if (null != P && P.type === h.g.SOCIAL_LAYER_STOREFRONT) return e => {
+    null == e || e.preventDefault();
+    let [t, r] = P.code.split("-");
+    return Promise.resolve().then(n.bind(n, 705338)).then(e => {
+      let {
+        default: n
+      } = e;
+      n({
+        guildId: r,
+        skuId: t
+      })
+    }), true
+  };
   if (null != P && P.type === h.g.QUESTS_EMBED && (0, S.c)({
       location: k.dr.EMBED_MOBILE
     })) return e => {

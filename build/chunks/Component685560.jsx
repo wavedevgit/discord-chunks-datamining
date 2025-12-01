@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk913527 = require("./913527.js"),
-  l = require.n(Chunk913527),
+  i = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk704215 = require("./704215.js"),
@@ -49,7 +49,7 @@ async function O(e, t, n) {
     url: _.ANM.APPLIED_BOOST_MODIFY_END_DATE,
     body: {
       applied_boost_ids: t.map(e => e.id),
-      ends_at: n ? null : l()().add(1, "day")
+      ends_at: n ? null : i()().add(1, "day")
     },
     rejectWithError: true
   }), (0, d.C0)(e), (0, x.BN)(e, true)
@@ -68,7 +68,7 @@ function I() {
       return null == (t = Chunk430824.Z.getGuild(module)) ? true : exports.name
     }),
     n = (0, Chunk442837.Wu)([Chunk581883.Z], () => [...S, ...E].filter(t => null != e && (0, p.OY)(t, e))),
-    r = (0, Chunk442837.Wu)([Chunk899667.Z], () => {
+    l = (0, Chunk442837.Wu)([Chunk899667.Z], () => {
       var t;
       return null != module && null != (t = Chunk899667.Z.getAppliedGuildBoostsForGuild(module)) ? exports : []
     });
@@ -145,7 +145,7 @@ function I() {
           label: N(t),
           checked: n.includes(t),
           onChange: n => {
-            n ? (0, p.Qd)(t, e, false) : ((0, g.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
+            n ? (0, p.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
           }
         }, t))
       })
@@ -157,7 +157,7 @@ function I() {
           label: N(t),
           checked: n.includes(t),
           onChange: n => {
-            n ? (0, p.Qd)(t, e, false) : ((0, g.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
+            n ? (0, p.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
           }
         }, t))
       })

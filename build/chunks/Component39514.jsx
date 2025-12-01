@@ -189,7 +189,7 @@ class R extends Chunk473749.PureComponent {
       giftCodeCode: e.code,
       transitionTo: i,
       children: (0, r.jsxs)(m.ZP, {
-        children: [(0, r.jsx)(S.Z, {
+        children: [(0, r.jsx)(N.Z, {
           giftCode: e
         }), (0, r.jsx)("div", {
           className: Z.marginTop40,
@@ -205,7 +205,7 @@ class R extends Chunk473749.PureComponent {
         }) : (0, r.jsx)(m.i_, {
           className: Z.marginTop20,
           children: A.intl.format(A.t.NYM08s, {
-            userTag: N.ZP.getUserTag(t),
+            userTag: S.ZP.getUserTag(t),
             onLogoutClick: this.handleLogout
           })
         })]

@@ -13,8 +13,8 @@ var Chunk473749 = require("./473749.js"),
 function c(e) {
   let {
     shouldFetchIfMissing: t
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = (0, o.K$)(e), c = null == e ? true : e.applicationId, d = (0, l.e7)([a.Z], () => null != c ? a.Z.getApplication(c) : null, [c]), u = null == d ? true : d.guildId, f = (0, l.e7)([s.Z], () => null != u ? s.Z.getGuild(u) : null, [u]);
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = (0, o.K$)(e), c = null == e ? true : e.applicationId, d = (0, l.e7)([r.Z], () => null != c ? r.Z.getApplication(c) : null, [c]), u = null == d ? true : d.guildId, f = (0, l.e7)([s.Z], () => null != u ? s.Z.getGuild(u) : null, [u]);
   return i.useEffect(() => {
-    n && t && null == f && null != e && r.ZP.fetchApplication(e.applicationId, true)
+    n && t && null == f && null != e && a.ZP.fetchApplication(e.applicationId, true)
   }, [f, e, t, n]), n ? f : null
 }

@@ -1,8 +1,10 @@
-/** Chunk was on 837 **/
-/** chunk id: 651667, original params: e,t,n (module,exports,require) **/
-function a(e) {
-  var t, n, a, r, l, i, s, o, c, d;
-  let u = e.skus.map(e => {
+/** Chunk was on web.js **/
+/** chunk id: 651667, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+
+function r(e) {
+  var t, n, r, i, a, o, s, l, c, u;
+  let d = e.skus.map(e => {
       let t = e.tenant_metadata.plan_features.map(e => ({
         title: e.title,
         description: e.description
@@ -14,17 +16,17 @@ function a(e) {
         specifications: t
       }
     }).sort((e, t) => t.cost - e.cost),
-    m = u.length > 0 ? Math.min(...u.map(e => e.cost)) : 0;
+    f = d.length > 0 ? Math.min(...d.map(e => e.cost)) : 0;
   return {
     id: e.id,
     name: e.name,
-    gameId: null != (d = null == (a = e.tenant_metadata) || null == (n = a.guild_monetization) || null == (t = n.game_server) ? true : t.game_application_id) ? d : "",
-    provider: null == (i = e.tenant_metadata) || null == (l = i.guild_monetization) || null == (r = l.game_server) ? true : r.provider,
-    plans: u,
-    baseCost: m,
-    disabled: null == (c = e.tenant_metadata) || null == (o = c.guild_monetization) || null == (s = o.game_server) ? true : s.disabled
+    gameId: null != (u = null == (r = e.tenant_metadata) || null == (n = r.guild_monetization) || null == (t = n.game_server) ? true : t.game_application_id) ? u : "",
+    provider: null == (o = e.tenant_metadata) || null == (a = o.guild_monetization) || null == (i = a.game_server) ? true : i.provider,
+    plans: d,
+    baseCost: f,
+    disabled: null == (c = e.tenant_metadata) || null == (l = c.guild_monetization) || null == (s = l.game_server) ? true : s.disabled
   }
 }
 require.d(exports, {
-  m: () => a
+  m: () => r
 }), require("./953529.js"), require("./642613.js"), require("./388685.js")

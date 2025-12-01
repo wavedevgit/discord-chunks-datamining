@@ -68,7 +68,7 @@ function b(e) {
         error_message: e
       }), b("error")
     }
-  }, []), N = i.useCallback(e => {
+  }, []), S = i.useCallback(e => {
     var t;
     let n = null != (t = g.default.getFingerprint()) ? t : g.default.getId(),
       r = "discord://login/one-time?token=".concat(encodeURIComponent(e));
@@ -80,7 +80,7 @@ function b(e) {
         fingerprint: n
       }), b("app_launched")) : b("app_launch_not_supported")
     })
-  }, []), S = i.useCallback(e => {
+  }, []), N = i.useCallback(e => {
     var t;
     let r = null != (t = g.default.getFingerprint()) ? t : g.default.getId();
     Promise.resolve().then(n.bind(n, 536285)).then(t => {
@@ -99,12 +99,12 @@ function b(e) {
           destination: "one_time_login_modal",
           deep_link_provider: "rpc",
           fingerprint: r
-        }), b("app_launched")) : N(e)
+        }), b("app_launched")) : S(e)
       }).catch(() => {
-        N(e)
+        S(e)
       }).then(() => n.disconnect())
     })
-  }, [N]);
+  }, [S]);
   if (i.useEffect(() => {
       let e = null != o && "string" == typeof o,
         t = a.tq ? "mobile" : a.Em ? "tablet" : (0, p.isDesktop)() ? "desktop_app" : "web";
@@ -123,8 +123,8 @@ function b(e) {
         return
       }
       if ((0, p.isDesktop)()) return void y(o);
-      I.current || (I.current = true, b("rpc_attempting"), S(o))
-    }, [o, l, y, S]), a.tq || a.Em) {
+      I.current || (I.current = true, b("rpc_attempting"), N(o))
+    }, [o, l, y, N]), a.tq || a.Em) {
     let e = null == o || "string" != typeof o ? "missing_token" : "invalid_token";
     return (0, r.jsx)(_.e, {
       token: o,

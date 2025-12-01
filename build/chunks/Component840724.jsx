@@ -148,7 +148,7 @@ function z(e) {
     eO(k.rZ.WISHLIST_BUTTON)
   }, [eO]), ew = i.useCallback(e => {
     if (eO(k.rZ.CARD), null != es) return void es(e);
-    null != eo && (0, R.Z)({
+    null != eo && (0, R.default)({
       guildId: eo,
       pageIndex: eI,
       skuId: ei,

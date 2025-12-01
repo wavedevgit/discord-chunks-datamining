@@ -40,27 +40,27 @@ function A(e) {
     let e = new Image;
     e.src = C, e.onload = () => s(true), e.onerror = () => s(true)
   }, [C]), i.useEffect(() => {
-    n && c.uvj.announce(N.intl.string(N.t.j2p125))
+    n && c.uvj.announce(S.intl.string(S.t.j2p125))
   }, [n]), (0, r.jsx)("div", {
-    className: S.qrCodeContainer,
+    className: N.qrCodeContainer,
     children: "" !== t && n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p.ZP, {
-        className: S.qrCode,
+        className: N.qrCode,
         size: 160,
         text: t
       }), (0, r.jsx)("div", {
-        className: S.qrCodeOverlay,
+        className: N.qrCodeOverlay,
         children: (0, r.jsx)("img", {
           src: C,
           alt: ""
         })
       })]
     }) : (0, r.jsx)("div", {
-      className: S.qrCodeOverlay,
-      "aria-label": N.intl.string(N.t.BUGkVF),
+      className: N.qrCodeOverlay,
+      "aria-label": S.intl.string(S.t.BUGkVF),
       "aria-busy": true,
       children: (0, r.jsx)(c.$jN, {
-        className: S.qrCode,
+        className: N.qrCode,
         type: c.$jN.Type.WANDERING_CUBES,
         "aria-hidden": true
       })
@@ -96,16 +96,16 @@ function P(e) {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
         }), (0, r.jsx)(m.Dx, {
           className: O.marginBottom8,
-          children: N.intl.string(N.t.UPiHaL)
+          children: S.intl.string(S.t.UPiHaL)
         }), null != i ? (0, r.jsx)(Z, {
           children: i
         }) : (0, r.jsx)(m.DK, {
-          children: N.intl.format(N.t["Qq+A6i"], {})
+          children: S.intl.format(S.t["Qq+A6i"], {})
         }), (0, r.jsx)(c.Kqy, {
           padding: 8,
           align: "center",
           children: (0, r.jsx)(c.Avr, {
-            text: N.intl.string(N.t["/kpMDt"]),
+            text: S.intl.string(S.t["/kpMDt"]),
             textVariant: "text-sm/normal",
             onClick: () => (function(e) {
               let t = E.isPlatformEmbedded && b.ZP.supportsFeature(I.eRX.WEBAUTHN) ? b.ZP.webAuthnAuthenticate : e => {
@@ -128,22 +128,22 @@ function P(e) {
       } = t;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Z, {
-          className: S.qrAvatar,
+          className: N.qrAvatar,
           user: e,
           size: c.EFr.SIZE_120,
           isMobile: true,
           status: y.Sk.ONLINE
         }), (0, r.jsx)(m.Dx, {
           className: O.marginBottom8,
-          children: N.intl.string(N.t.apGCUT)
+          children: S.intl.string(S.t.apGCUT)
         }), (0, r.jsx)(m.DK, {
-          children: N.intl.format(N.t.Cbl5JK, {
+          children: S.intl.format(S.t.Cbl5JK, {
             username: "".concat(j.ZP.getUserTag(e))
           })
         }), (0, r.jsx)("div", {
-          className: S.startOverButton,
+          className: N.startOverButton,
           children: (0, r.jsx)(c.Avr, {
-            text: N.intl.string(N.t.nOOhwo),
+            text: S.intl.string(S.t.nOOhwo),
             textVariant: "text-sm/normal",
             onClick: n
           })
@@ -328,14 +328,14 @@ function R(e) {
     })
   }, [u, t, d, p]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: S.verticalSeparator
+      className: N.verticalSeparator
     }), (0, r.jsx)(c.qBt, {
       fillParent: true,
-      className: S.qrLogin,
+      className: N.qrLogin,
       step: f,
       steps: [0, 1],
       children: (0, r.jsx)("div", {
-        className: S.qrLoginInner,
+        className: N.qrLoginInner,
         children: (0, r.jsx)(P, {
           state: u,
           cancel: m,

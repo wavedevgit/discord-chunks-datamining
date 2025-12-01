@@ -26,7 +26,7 @@ function x(e) {
     setSlide: s,
     ready: x,
     token: E
-  } = e, [v, j] = i.useState(false), [b, I] = i.useState(null), [y, N] = i.useState(null), [S, O] = i.useState(""), C = i.useRef(null);
+  } = e, [v, j] = i.useState(false), [b, I] = i.useState(null), [y, S] = i.useState(null), [N, O] = i.useState(""), C = i.useRef(null);
   return i.useEffect(() => {
     if (x) {
       var e;
@@ -50,7 +50,7 @@ function x(e) {
         label: p.intl.string(p.t["8dM4FO"]),
         setRef: C,
         className: _.marginBottom20,
-        value: S,
+        value: N,
         onChange: O,
         error: b,
         autoComplete: "new-password",
@@ -63,15 +63,15 @@ function x(e) {
           fullWidth: true,
           onClick: () => {
             if (!v) {
-              if (0 === S.length) {
+              if (0 === N.length) {
                 I(p.intl.string(p.t.R98xD5)), d.S.dispatch(m.CkL.WAVE_EMPHASIZE);
                 return
               }
-              return null != y && N(null), null != b && I(null), t(""), j(true), h.Z.post({
+              return null != y && S(null), null != b && I(null), t(""), j(true), h.Z.post({
                 url: m.ANM.ACCOUNT_REVERT,
                 body: {
                   token: E,
-                  password: S
+                  password: N
                 },
                 trackedActionData: {
                   event: a.NetworkActionNames.ACCOUNT_REVERT
@@ -85,12 +85,12 @@ function x(e) {
                 } = e;
                 O(""), t(n), s(g.n.SUCCESS)
               }).catch(e => {
-                if (e instanceof Error) N(p.intl.formatToPlainString(p.t.aTVNes, {
+                if (e instanceof Error) S(p.intl.formatToPlainString(p.t.aTVNes, {
                   statusPageURL: m.yXt.STATUS
                 }));
                 else {
                   let t = new c.Z(e);
-                  t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : N((function(e) {
+                  t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : S((function(e) {
                     switch (e) {
                       case m.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
                         return p.intl.string(p.t["11zzGR"]);

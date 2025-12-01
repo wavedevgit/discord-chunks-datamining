@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk299608 = require("./299608.js"),
   o = require.n(Chunk299608),
   Chunk913527 = require("./913527.js"),
@@ -56,7 +56,7 @@ let I = [{
 function w(e) {
   let {
     actionLog: t
-  } = e, n = r.useMemo(() => t.traces.map(e => ({
+  } = e, n = l.useMemo(() => t.traces.map(e => ({
     key: e.name,
     trace: e
   })), [t]);
@@ -75,7 +75,7 @@ let k = [{
     var t;
     let {
       actionLog: n
-    } = e, r = d()(n.createdAt);
+    } = e, l = d()(n.createdAt);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)(y.E, {
         className: N.actionProperties,
@@ -83,8 +83,8 @@ let k = [{
           name: "Created at",
           children: (0, a.jsx)("time", {
             dateTime: null == (t = n.createdAt) ? true : t.toISOString(),
-            title: (0, j.vc)(r, "LLLL"),
-            children: (0, j.Y4)(r)
+            title: (0, j.vc)(l, "LLLL"),
+            children: (0, j.Y4)(l)
           })
         }), (0, a.jsxs)(y.Z9, {
           name: "Total Time",
@@ -116,7 +116,7 @@ function R(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, l = r.useMemo(() => t.error ? [...k, {
+  } = e, i = l.useMemo(() => t.error ? [...k, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(b.Z, {
@@ -130,7 +130,7 @@ function R(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: i()(N.errorToolbar, O.toolbar),
+          className: r()(N.errorToolbar, O.toolbar),
           children: (0, a.jsx)("div", {
             className: O.toolbarGroup,
             children: (0, a.jsx)(m.zx, {
@@ -152,19 +152,19 @@ function R(e) {
     TabBar: s,
     renderSelectedTab: o
   } = (0, E.ZP)({
-    tabs: l
-  }, [l]);
+    tabs: i
+  }, [i]);
   return (0, a.jsxs)(C.Z, {
     className: N.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(s, {}), (0, a.jsxs)(x.ZP, {
-      className: i()(O.headerBar, N.subPanelHeaderBar),
+      className: r()(O.headerBar, N.subPanelHeaderBar),
       children: [(0, a.jsx)(x.ZP.Icon, {
         icon: p.xVZ,
         tooltip: t.name
       }), (0, a.jsx)(x.ZP.Title, {
-        wrapperClassName: i()(O.headerTitle, O.dispatcherHeader),
+        wrapperClassName: r()(O.headerTitle, O.dispatcherHeader),
         className: O.headerTitleText,
         children: t.name
       }), (0, a.jsx)(x.ZP.Icon, {
@@ -234,9 +234,9 @@ let A = [{
 function D() {
   let e = Chunk473749.useRef(null),
     [t, n] = Chunk473749.useState(""),
-    l = function(e) {
-      let [t, n] = r.useState(e.logs);
-      return r.useEffect(() => {
+    i = function(e) {
+      let [t, n] = l.useState(e.logs);
+      return l.useEffect(() => {
         let t = o()(() => {
           n([...e.logs])
         }, 500);
@@ -251,7 +251,7 @@ function D() {
     })).toReversed(), [Chunk120356]),
     [c, d] = Chunk473749.useState(Chunk299608),
     [m, x] = Chunk473749.useState(Chunk299608),
-    [g, b] = Chunk473749.useState(false),
+    [f, b] = Chunk473749.useState(false),
     [v, j] = Chunk473749.useState(),
     _ = Chunk473749.useCallback(e => {
       x(e)
@@ -265,7 +265,7 @@ function D() {
     T = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: i()(Chunk451429.panel, Chunk687278.panel),
+    className: r()(Chunk451429.panel, Chunk687278.panel),
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk687278.toolbar,
       children: [(0, Chunk54381.jsx)(Chunk28664.u, {

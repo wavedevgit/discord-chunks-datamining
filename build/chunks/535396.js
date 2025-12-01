@@ -17,6 +17,7 @@ require.d(exports, {
   Us: () => u,
   ad: () => f,
   am: () => N,
+  br: () => P,
   cG: () => v,
   d5: () => y,
   os: () => C,
@@ -159,4 +160,7 @@ let A = new Set([Chunk494497.MB, Chunk494497.Vk]),
     2: A,
     3: new Set
   },
-  N = "powerupId"
+  N = "powerupId";
+var P = function(e) {
+  return e[e.AVAILABLE = 0] = "AVAILABLE", e[e.SPENT = 1] = "SPENT", e[e.TOTAL = 2] = "TOTAL", e
+}({})

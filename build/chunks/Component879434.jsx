@@ -1,12 +1,12 @@
 /** Chunk was on 837 **/
 /** chunk id: 879434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk678717 = require("./678717.jsx"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk383036 = require("./383036.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk511130 = require("./511130.js");
-let g = e => {
+let f = e => {
     let {
       setTab: t
     } = e, n = (0, o.e7)([u.Z], () => u.Z.getWindowOpen(h.KJ3.DEVTOOLS_POPOUT));
@@ -27,7 +27,7 @@ let g = e => {
           t(1)
         },
         children: (0, a.jsx)("div", {
-          className: i()(x.banner, x.pfxBanner),
+          className: r()(x.banner, x.pfxBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -39,7 +39,7 @@ let g = e => {
           t(2)
         },
         children: (0, a.jsx)("div", {
-          className: i()(x.banner, x.nameplateBanner),
+          className: r()(x.banner, x.nameplateBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -51,7 +51,7 @@ let g = e => {
           t(3)
         },
         children: (0, a.jsx)("div", {
-          className: i()(x.banner, x.bundlesBanner),
+          className: r()(x.banner, x.bundlesBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -84,7 +84,7 @@ let g = e => {
       })]
     })
   },
-  f = () => {
+  g = () => {
     let [e, t] = Chunk473749.useState(0);
     return (0, Chunk54381.jsxs)(Chunk793030.zJl, {
       className: Chunk511130.wrapper,
@@ -107,7 +107,7 @@ let g = e => {
           case 3:
             return (0, Chunk54381.jsx)(Chunk383036.Z, {});
           default:
-            return (0, Chunk54381.jsx)(g, {
+            return (0, Chunk54381.jsx)(f, {
               setTab: exports
             })
         }

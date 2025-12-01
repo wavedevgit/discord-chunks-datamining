@@ -20,7 +20,7 @@ let u = "/users/@me/debug/consumables/",
 function p() {
   let e, [t, n] = (0, Chunk473749.useState)([]),
     [p, h] = (0, Chunk473749.useState)(null),
-    [x, g] = (0, Chunk473749.useState)(false);
+    [x, f] = (0, Chunk473749.useState)(false);
   return (0, Chunk473749.useEffect)(() => ((async () => {
     try {
       let e = (await Chunk544891.tn.get(u)).body.entitlements.map(e => c.Z.createFromServer(e));
@@ -41,7 +41,7 @@ function p() {
         children: "Create Entitlements"
       }), (0, Chunk54381.jsx)(Chunk755721.zx, {
         onClick: (e = Chunk317951.D1, async () => {
-          g(true);
+          f(true);
           try {
             let a = await Chunk544891.tn.post({
                 url: u,
@@ -50,12 +50,12 @@ function p() {
                 },
                 rejectWithError: true
               }),
-              r = new Chunk959546.Z(Chunk54381.body.entitlement);
+              l = new Chunk959546.Z(Chunk54381.body.entitlement);
             require([...exports, Chunk473749])
           } catch (e) {
             h("Failed to create entitlement")
           } finally {
-            g(false)
+            f(false)
           }
         }),
         className: Chunk625299.button,

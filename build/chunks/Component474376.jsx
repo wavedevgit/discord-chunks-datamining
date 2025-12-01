@@ -24,19 +24,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk681285 = require("./681285.js");
 
 function _(e) {
-  let t = (0, r.e7)([u.default], () => u.default.getCurrentUser()),
-    n = (0, r.e7)([d.Z], () => d.Z.hidePersonalInformation),
-    _ = (0, r.e7)([o.Z], () => (0, i.wj)(o.Z.theme)),
+  let t = (0, l.e7)([u.default], () => u.default.getCurrentUser()),
+    n = (0, l.e7)([d.Z], () => d.Z.hidePersonalInformation),
+    _ = (0, l.e7)([o.Z], () => (0, r.wj)(o.Z.theme)),
     {
       multiAccountUsers: y
-    } = (0, g.L)(),
-    C = y.map(r => {
-      let i = new c.Z(r),
-        o = i.id === (null == t ? true : t.id),
-        d = r.tokenStatus === x.q.INVALID,
-        u = n ? null : "#".concat(i.discriminator);
+    } = (0, f.L)(),
+    C = y.map(l => {
+      let r = new c.Z(l),
+        o = r.id === (null == t ? true : t.id),
+        d = l.tokenStatus === x.q.INVALID,
+        u = n ? null : "#".concat(r.discriminator);
       return (0, a.jsx)(s.sNh, {
-        id: i.id,
+        id: r.id,
         focusedClassName: j.focused,
         label: e => {
           let {
@@ -45,55 +45,55 @@ function _(e) {
           return (0, a.jsxs)("div", {
             className: j.userMenuItem,
             children: [(0, a.jsx)(s.qEK, {
-              src: i.getAvatarURL(true, 40),
+              src: r.getAvatarURL(true, 40),
               size: s.EFr.SIZE_24,
-              "aria-label": r.username
+              "aria-label": l.username
             }), (0, a.jsxs)("div", {
               className: j.userMenuUsername,
               children: [(0, a.jsx)(s.Text, {
                 className: j.userMenuText,
                 variant: "text-sm/normal",
-                children: p.ZP.getUserTag(i, {
+                children: p.ZP.getUserTag(r, {
                   mode: "username",
                   identifiable: n ? "never" : "always"
                 })
-              }), !i.hasUniqueUsername() && (0, a.jsx)(s.Text, {
+              }), !r.hasUniqueUsername() && (0, a.jsx)(s.Text, {
                 className: j.userMenuDiscriminator,
                 variant: "text-sm/normal",
                 children: u
               })]
             }), o && (0, a.jsx)(s.owK, {
               size: "sm",
-              color: t ? l.Z.unsafe_rawColors.WHITE_500.css : l.Z.unsafe_rawColors.BRAND_500.css,
-              secondaryColor: t && _ || t && !_ ? l.Z.unsafe_rawColors.BRAND_500.css : l.Z.unsafe_rawColors.WHITE_500.css,
+              color: t ? i.Z.unsafe_rawColors.WHITE_500.css : i.Z.unsafe_rawColors.BRAND_500.css,
+              secondaryColor: t && _ || t && !_ ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE_500.css,
               className: j.activeIcon
             }), d && (0, a.jsx)(s.Mgn, {
-              color: l.Z.unsafe_rawColors.RED_400.css,
-              secondaryColor: t && _ || t && !_ ? l.Z.unsafe_rawColors.BRAND_500.css : l.Z.unsafe_rawColors.WHITE_500.css,
+              color: i.Z.unsafe_rawColors.RED_400.css,
+              secondaryColor: t && _ || t && !_ ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE_500.css,
               size: "xs",
               className: j.activeIcon
             })]
           })
         },
         action: () => {
-          if (null == e || e(), d)(0, f.Z)();
+          if (null == e || e(), d)(0, g.Z)();
           else {
             var n;
-            (n = i.id) !== (null == t ? true : t.id) && (m.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+            (n = r.id) !== (null == t ? true : t.id) && (m.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
               location: {
                 section: b.jXE.USER_PROFILE
               }
             }), h.yD(n))
           }
         }
-      }, i.id)
+      }, r.id)
     });
   return C.push((0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.Clw, {}), (0, a.jsx)(s.sNh, {
       id: "manage-accounts",
       label: v.intl.string(v.t.WbFpq4),
       action: () => {
-        null == e || e(), (0, f.Z)()
+        null == e || e(), (0, g.Z)()
       }
     })]
   })), C

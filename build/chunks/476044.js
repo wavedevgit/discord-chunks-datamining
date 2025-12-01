@@ -1,17 +1,17 @@
 /** Chunk was on 44799 **/
 /** chunk id: 476044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => o
 });
 var Chunk473749 = require("./473749.js"),
   Chunk374470 = require("./374470.js");
 
-function l(e) {
+function o(e) {
   let {
     targetRef: t,
     onShouldClose: n,
-    topThreshold: l = 40,
-    bottomThreshold: o = 60,
+    topThreshold: o = 40,
+    bottomThreshold: l = 60,
     enabled: a = true
   } = e;
   r.useEffect(() => {
@@ -28,7 +28,7 @@ function l(e) {
         }
         let c = s - e,
           u = Math.abs(c);
-        (c < 0 && u > l || c > 0 && u > o) && n()
+        (c < 0 && u > o || c > 0 && u > l) && n()
       };
     return document.addEventListener("scroll", r, {
       passive: true,
@@ -38,5 +38,5 @@ function l(e) {
         capture: true
       })
     }
-  }, [a, t, n, l, o])
+  }, [a, t, n, o, l])
 }

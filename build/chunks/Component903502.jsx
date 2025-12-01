@@ -28,7 +28,7 @@ let p = [{
 }];
 
 function h() {
-  let [e, t] = Chunk473749.useState(null), [n, h] = Chunk473749.useState(0), [x, g] = Chunk473749.useState(1e3), [f, b] = Chunk473749.useState(0), v = (0, Chunk442837.e7)([Chunk115470.Z], () => {
+  let [e, t] = Chunk473749.useState(null), [n, h] = Chunk473749.useState(0), [x, f] = Chunk473749.useState(1e3), [g, b] = Chunk473749.useState(0), v = (0, Chunk442837.e7)([Chunk115470.Z], () => {
     var t;
     return null === module ? null : null != (t = Chunk115470.Z.getFeedbackConfig(Chunk531578.nw[module])) ? exports : Chunk178635.R[Chunk531578.nw[module]]
   }), j = Object.entries(Chunk531578.nw), _ = j.slice(j.length / 2).map(e => {
@@ -37,7 +37,7 @@ function h() {
       label: t,
       value: t
     }
-  }), y = Chunk473749.useMemo(() => null != module && f >= 0 && f <= 100 && require >= 0, [module, f, require]);
+  }), y = Chunk473749.useMemo(() => null != module && g >= 0 && g <= 100 && require >= 0, [module, g, require]);
   return (0, Chunk54381.jsx)("div", {
     className: Chunk584314.container,
     children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
@@ -84,7 +84,7 @@ function h() {
             options: p,
             value: x,
             onChange: e => {
-              g(e)
+              f(e)
             },
             popoutLayerContext: Chunk246992.O$
           })]
@@ -97,7 +97,7 @@ function h() {
           helperText: "As a percentage",
           min: 0,
           max: 100,
-          value: f.toString(),
+          value: g.toString(),
           type: "number",
           onChange: e => b(parseFloat(e))
         })
@@ -117,7 +117,7 @@ function h() {
             type: "FEEDBACK_OVERRIDE_SET",
             feedbackType: v.feedbackType,
             cooldown: require * x,
-            chance: f / 100
+            chance: g / 100
           })),
           disabled: !y
         })]
@@ -129,7 +129,7 @@ function h() {
         variant: "text-sm/normal",
         color: "text-danger",
         children: "Error: cooldown needs to be a number greater than 0"
-      }), !(f >= 0 && f <= 100) && (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), !(g >= 0 && g <= 100) && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "text-danger",
         children: "Error: chance needs to be a number between 0 and 100"

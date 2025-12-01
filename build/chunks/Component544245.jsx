@@ -32,16 +32,16 @@ function p() {
     p = m.useField("includeQuickSwitcherState"),
     h = m.useField("includeUserSearchWorkerState"),
     x = m.useField("isUploading"),
-    g = m.useField("isSuccess"),
-    f = m.useField("errorMessage"),
+    f = m.useField("isSuccess"),
+    g = m.useField("errorMessage"),
     b = Chunk473749.useCallback(async () => {
       let {
         includeFrecency: e,
         includeFriends: t,
         includeGDMs: n,
         includeDMs: a,
-        includeQuickSwitcherState: r,
-        includeUserSearchWorkerState: l,
+        includeQuickSwitcherState: l,
+        includeUserSearchWorkerState: i,
         isUploading: s
       } = m.getState();
       if (!Chunk972959) try {
@@ -111,8 +111,8 @@ function p() {
       })
     }), (0, Chunk54381.jsx)(Chunk608934.a, {
       isUploading: x,
-      isSuccess: g,
-      errorMessage: f,
+      isSuccess: f,
+      errorMessage: g,
       onClick: b,
       title: "Upload Snapshot Logs"
     })]

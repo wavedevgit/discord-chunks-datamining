@@ -139,7 +139,7 @@ function k(e) {
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
     })
   }, [N]), V = i.useCallback(() => {
-    (0, o.pT)(), (0, m.Z)({
+    (0, o.pT)(), (0, m.default)({
       guildId: (0, g.ac)()
     })
   }, []);

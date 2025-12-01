@@ -86,7 +86,7 @@ function Z(e) {
           icon: u.EOn,
           variant: "secondary",
           onClick: () => {
-            d(E.o4.VISIT_SHOP), (0, y.Z)({
+            d(E.o4.VISIT_SHOP), (0, y.default)({
               guildId: i
             }), c()
           },

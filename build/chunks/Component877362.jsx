@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -55,10 +55,10 @@ function y(e) {
       src: P
     }), (0, r.jsxs)("div", {
       className: Z.textContainer,
-      children: [(0, r.jsx)(o.xvT, {
+      children: [(0, r.jsx)(l.xvT, {
         variant: "text-md/semibold",
         children: E.intl.string(S ? I.default.KSWK1U : I.default.XXXX5l)
-      }), (0, r.jsx)(o.xvT, {
+      }), (0, r.jsx)(l.xvT, {
         variant: "text-sm/medium",
         children: E.intl.format(S ? I.default["7fWTg4"] : I.default["7PXeeQ"], {
           onClick: () => {
@@ -113,7 +113,7 @@ function y(e) {
         colorString: C.colorString,
         colorStrings: C.colorStrings
       }),
-      className: l()(Z.content, Z.exampleMessage),
+      className: o()(Z.content, Z.exampleMessage),
       message: E.intl.string(E.t["6OSasb"]),
       decorations: (0, r.jsx)(c.Ucv, {
         color: c.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,

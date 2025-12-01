@@ -36,43 +36,43 @@ let x = [{
     duration: true,
     label: () => Chunk388032.intl.string(Chunk388032.t["46dqJY"])
   }],
-  g = "forever";
+  f = "forever";
 
-function f(e) {
+function g(e) {
   let {
     status: t,
     currentStatus: n,
-    description: l
-  } = e, i = t !== m.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
+    description: i
+  } = e, r = t !== m.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
     children: x.map(e => {
       let {
-        duration: l,
-        label: i
+        duration: i,
+        label: r
       } = e;
-      return (0, a.jsx)(r.sNh, {
-        id: "".concat(t, "-").concat(l),
-        label: i(),
+      return (0, a.jsx)(l.sNh, {
+        id: "".concat(t, "-").concat(i),
+        label: r(),
         action: () => (0, u.Z)({
           nextStatus: t,
           prevStatus: n,
-          durationMillis: l
+          durationMillis: i
         }),
         dontCloseOnAction: true
-      }, null != l ? l : g)
+      }, null != i ? i : f)
     })
   });
-  return (0, a.jsx)(r.sNh, {
+  return (0, a.jsx)(l.sNh, {
     id: t,
     className: h.expiringStatusMenuItem,
     keepItemStyles: true,
-    hasSubmenu: i,
+    hasSubmenu: r,
     label: e => {
       let {
         isFocused: n
       } = e;
       return (0, a.jsxs)("div", {
         className: h.statusItem,
-        children: [(0, a.jsx)(r.qbd, {
+        children: [(0, a.jsx)(l.qbd, {
           status: t,
           className: h.icon,
           size: 10,
@@ -80,9 +80,9 @@ function f(e) {
         }), (0, a.jsx)("div", {
           className: h.status,
           children: (0, c.u5)(t)
-        }), null != l && (0, a.jsx)("div", {
+        }), null != i && (0, a.jsx)("div", {
           className: h.description,
-          children: l
+          children: i
         })]
       })
     },
@@ -93,7 +93,7 @@ function f(e) {
       })
     },
     dontCloseOnAction: true,
-    children: i ? s : true
+    children: r ? s : true
   })
 }
 
@@ -114,8 +114,8 @@ function b(e) {
 
 function v(e) {
   let t = s.Cr.useSetting(),
-    n = (0, l.p)(),
-    o = i.e.useExperiment({
+    n = (0, i.p)(),
+    o = r.e.useExperiment({
       location: "UserProfileAccountPopout"
     }).allowQuietMode || n,
     c = s.fv.useSetting(),
@@ -136,40 +136,40 @@ function v(e) {
       children: x.map(t => {
         let {
           duration: n,
-          label: i
+          label: r
         } = t;
-        return (0, a.jsx)(r.sNh, {
+        return (0, a.jsx)(l.sNh, {
           id: "".concat(e, "-").concat(n),
-          label: i(),
+          label: r(),
           action: () => {
-            (0, l.oW)(true, n)
+            (0, i.oW)(true, n)
           },
           dontCloseOnAction: true
-        }, null != n ? n : g)
+        }, null != n ? n : f)
       })
     }),
-    j = f({
+    j = g({
       status: m.Skl.ONLINE,
       currentStatus: e
     }),
-    _ = f({
+    _ = g({
       status: m.Skl.IDLE,
       currentStatus: e,
       description: u(m.Skl.IDLE)
     }),
-    y = f({
+    y = g({
       status: m.Skl.DND,
       currentStatus: e,
       description: u(m.Skl.DND)
     }),
-    C = f({
+    C = g({
       status: m.Skl.INVISIBLE,
       currentStatus: e,
       description: u(m.Skl.INVISIBLE)
     });
   return (0, a.jsxs)(a.Fragment, {
-    children: [j, (0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), _, y, C, o || n ? (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(r.sNh, {
+    children: [j, (0, a.jsx)(l.Clw, {}, "menu-separator-statuses"), _, y, C, o || n ? (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsx)(l.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(l.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
         className: h.expiringStatusMenuItem,
@@ -177,14 +177,14 @@ function v(e) {
         hasSubmenu: true,
         label: () => (0, a.jsxs)("div", {
           className: h.statusItem,
-          children: [(0, a.jsx)(r.owu, {
+          children: [(0, a.jsx)(l.owu, {
             size: "xxs",
             className: h.icon
           }), (0, a.jsxs)("div", {
             className: h.focusModeTitle,
-            children: [p.intl.string(p.t.gJRnwK), (0, a.jsx)(r.IGR, {
+            children: [p.intl.string(p.t.gJRnwK), (0, a.jsx)(l.IGR, {
               text: n ? p.intl.string(p.t.ApAu9f) : d ? p.intl.string(p.t.gH3Frd) : p.intl.string(p.t["64pl82"]),
-              color: n ? r.TVs.unsafe_rawColors.BRAND_500.css : d ? r.TVs.unsafe_rawColors.RED_400.css : r.TVs.unsafe_rawColors.PRIMARY_500.css
+              color: n ? l.TVs.unsafe_rawColors.BRAND_500.css : d ? l.TVs.unsafe_rawColors.RED_400.css : l.TVs.unsafe_rawColors.PRIMARY_500.css
             })]
           }), (0, a.jsx)("div", {
             className: h.description,
@@ -199,7 +199,7 @@ function v(e) {
           })]
         }),
         action: () => {
-          (0, l.oW)(!n)
+          (0, i.oW)(!n)
         },
         dontCloseOnAction: true,
         children: v

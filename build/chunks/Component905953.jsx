@@ -28,9 +28,9 @@ function y(e) {
   let {
     targetElementRef: n,
     onClose: y
-  } = e, [C, S] = r.useState(false), {
+  } = e, [C, S] = l.useState(false), {
     trackUserProfileEditAction: E
-  } = (0, u.KZ)(), T = (0, i.e7)([b.default], () => b.default.getId()), {
+  } = (0, u.KZ)(), T = (0, r.e7)([b.default], () => b.default.getId()), {
     config: N,
     application: O
   } = (0, h.G)(), {
@@ -44,10 +44,10 @@ function y(e) {
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: r
+        markAsDismissed: l
       } = e;
       if (null == t) return null;
-      let i = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
+      let r = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
       return (0, a.jsx)(o.J2, {
         targetElementRef: n,
         position: "right",
@@ -59,25 +59,25 @@ function y(e) {
         title: _.intl.format(_.t.TXDztH, {
           applicationName: O.name
         }),
-        body: i ? _.intl.string(_.t["63Kso0"]) : _.intl.string(_.t.HwXoeC),
+        body: r ? _.intl.string(_.t["63Kso0"]) : _.intl.string(_.t.HwXoeC),
         onRequestClose: () => {
-          r(v.L.USER_DISMISS)
+          l(v.L.USER_DISMISS)
         },
-        actions: [i ? {
+        actions: [r ? {
           text: _.intl.string(_.t.VSLDly),
           onClick: () => {
-            S(true), (0, g.openUserProfileModal)({
+            S(true), (0, f.openUserProfileModal)({
               userId: T,
               section: j.oh.WIDGETS
             }).then(() => {
-              r(v.L.TAKE_ACTION), y(), (0, p.qH)(l.l.APPLICATION, new m.q({
+              l(v.L.TAKE_ACTION), y(), (0, p.qH)(i.l.APPLICATION, new m.q({
                 applicationId: O.id,
-                type: l.l.APPLICATION
+                type: i.l.APPLICATION
               })), E({
                 action: "WIDGET_ADDED",
-                widgetEdited: l.l.APPLICATION,
+                widgetEdited: i.l.APPLICATION,
                 applicationId: O.id
-              }), (0, f.L$)(j.qb.WIDGET_ADDED)
+              }), (0, g.L$)(j.qb.WIDGET_ADDED)
             }).finally(() => S(false))
           },
           loading: C
@@ -86,11 +86,11 @@ function y(e) {
           onClick: () => {
             k({
               onConfirm: () => {
-                S(true), (0, g.openUserProfileModal)({
+                S(true), (0, f.openUserProfileModal)({
                   userId: T,
                   section: j.oh.WIDGETS
                 }).then(() => {
-                  r(v.L.TAKE_ACTION), y()
+                  l(v.L.TAKE_ACTION), y()
                 }).finally(() => S(false))
               }
             })

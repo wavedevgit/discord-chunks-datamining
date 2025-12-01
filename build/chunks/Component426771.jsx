@@ -27,7 +27,7 @@ function x(e) {
     } = e,
     [C, w] = i.useState(false),
     I = (0, c.Gv)(b, j),
-    E = (0, l.e7)([s.Z], () => s.Z.useReducedMotion),
+    E = (0, o.e7)([s.Z], () => s.Z.useReducedMotion),
     Z = (0, d.Z)(h, b);
   if (true === Z || j.length <= 0) return null;
   let P = I.some(e => e.type !== f.A3.INACTIVE),
@@ -98,7 +98,7 @@ function x(e) {
         children: Z.description
       })
     }), (0, r.jsx)(u.N4, {
-      children: null != U ? (0, r.jsx)(o.u, {
+      children: null != U ? (0, r.jsx)(l.u, {
         asContainer: true,
         text: U,
         delay: 100,

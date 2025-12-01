@@ -1,7 +1,7 @@
 /** Chunk was on 837 **/
 /** chunk id: 895182, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,7 +47,7 @@ function x(e, t) {
   }), e
 }
 
-function g() {
+function f() {
   let e = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     t = (0, Chunk442837.e7)([Chunk430824.Z], () => {
       var t;
@@ -57,34 +57,34 @@ function g() {
       var t;
       return null == (t = Chunk60482.Z.getStateForGuild(module)) ? true : exports.instances
     }),
-    g = Chunk473749.useMemo(() => Object.values(null != require ? require : {})[0], [require]),
-    f = Chunk473749.useCallback(t => {
-      null != g && null != e && o.Z.dispatch({
+    f = Chunk473749.useMemo(() => Object.values(null != require ? require : {})[0], [require]),
+    g = Chunk473749.useCallback(t => {
+      null != f && null != e && o.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: e,
-        instance: x(h({}, g), {
+        instance: x(h({}, f), {
           status: t
         })
       })
-    }, [g, module]),
+    }, [f, module]),
     b = Chunk473749.useMemo(() => Object.values(Chunk660815.V).map(e => (0, a.jsx)(s.Button, {
       variant: "primary",
       text: e,
       onClick: () => {
-        f(e)
+        g(e)
       }
-    }, e)), [f]),
+    }, e)), [g]),
     v = Chunk473749.useCallback(() => {
-      null != g && null != module && Chunk570140.Z.dispatch({
+      null != f && null != module && Chunk570140.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: module,
-        instance: x(h({}, g), {
+        instance: x(h({}, f), {
           serverIP: true,
           port: true,
           gameServerPanelUrl: true
         })
       })
-    }, [g, module]);
+    }, [f, module]);
   return null == module ? null : (0, Chunk54381.jsxs)(Chunk481060.zJl, {
     className: Chunk238642.container,
     children: [(0, Chunk54381.jsx)("div", {
@@ -97,7 +97,7 @@ function g() {
       className: Chunk238642.section,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
-        children: "Set server state for first server: ".concat(null == g ? true : g.name)
+        children: "Set server state for first server: ".concat(null == f ? true : f.name)
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk238642.buttonContainer,
         children: b

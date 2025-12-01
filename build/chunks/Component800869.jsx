@@ -33,14 +33,14 @@ function p(e) {
       children: c.intl.string(s.default.pycxTr)
     }), (0, r.jsx)("div", {
       className: u.close,
-      children: (0, r.jsx)(l.hU, {
+      children: (0, r.jsx)(o.hU, {
         variant: "icon-only",
         size: "md",
         "aria-label": c.intl.string(c.t.cpT0Cq),
         onClick: () => {
           t(a.L.USER_DISMISS)
         },
-        icon: o.Dio
+        icon: l.Dio
       })
     })]
   })

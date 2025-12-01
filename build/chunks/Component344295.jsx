@@ -138,7 +138,7 @@ class J extends Chunk473749.PureComponent {
     if (s !== this.getInviteKey(e)) Y(s);
     else if (t.state === D.r2o.APP_NOT_OPENED) this.handleContinue();
     else if (this.getMode() === z && r !== e.authenticated && r) {
-      let e = S.default.getFingerprint();
+      let e = N.default.getFingerprint();
       if (null != e) {
         let t = (0, c.s)(e);
         this.track(D.rMx.INVITE_LOGIN_SUCCESSFUL, true, {
@@ -394,7 +394,7 @@ let Q = Chunk442837.ZP.connectStores([Chunk701190.Z, Chunk896797.Z, Chunk314897.
   return {
     invite: null != (t = C.Z.getInvite(n)) ? t : {},
     nativeAppState: v.Z.getState(n),
-    authenticated: S.default.isAuthenticated(),
+    authenticated: N.default.isAuthenticated(),
     defaultRoute: O.Z.defaultRoute,
     isUnderage: p.Z.isUnderageAnonymous()
   }

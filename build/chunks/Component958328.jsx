@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -25,16 +25,16 @@ function v(e) {
   let {
     title: t,
     can: n
-  } = e, r = n ? o.dz2 : o.Dio, i = (0, a.jsx)("div", {
-    className: l()(f.iconOuter, n ? f.iconCheck : f.iconCross),
-    children: (0, a.jsx)(r, {
-      className: f.icon
+  } = e, l = n ? o.dz2 : o.Dio, r = (0, a.jsx)("div", {
+    className: i()(g.iconOuter, n ? g.iconCheck : g.iconCross),
+    children: (0, a.jsx)(l, {
+      className: g.icon
     })
   });
   return (0, a.jsxs)("div", {
-    className: f.scope,
-    children: [i, (0, a.jsx)("div", {
-      className: f.scopeInner,
+    className: g.scope,
+    children: [r, (0, a.jsx)("div", {
+      className: g.scopeInner,
       children: (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
@@ -47,7 +47,7 @@ function j() {
   let e = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()),
     t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     n = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(module)),
-    r = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)),
+    l = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)),
     j = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(require)),
     _ = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(Chunk120356)),
     y = (0, Chunk933557.ZP)(require, true),
@@ -57,24 +57,24 @@ function j() {
       let {
         title: t,
         flag: n
-      } = e, r = i.e$(j, n);
+      } = e, l = r.e$(j, n);
       return (0, a.jsx)(v, {
         title: t,
-        can: r
+        can: l
       }, t)
     }),
     T = Object.values(null != S ? S : {}).map(e => {
       let {
         title: t,
         flag: n
-      } = e, r = i.e$(_, n);
+      } = e, l = r.e$(_, n);
       return (0, a.jsx)(v, {
         title: t,
-        can: r
+        can: l
       }, t)
     });
   return (0, Chunk54381.jsx)("div", {
-    className: l()(Chunk451429.panel, Chunk989295.panel),
+    className: i()(Chunk451429.panel, Chunk989295.panel),
     children: (0, Chunk54381.jsxs)("div", {
       className: Chunk989295.panelInner,
       children: [(0, Chunk54381.jsxs)("section", {

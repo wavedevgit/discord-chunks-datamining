@@ -21,22 +21,22 @@ function c(e) {
 }
 
 function d(e, t) {
-  let [n, o] = r.useState(""), d = r.useMemo(() => {
+  let [n, o] = l.useState(""), d = l.useMemo(() => {
     if ("" === n.trim()) return e;
     let t = n.toLowerCase().trim();
     return e.filter(e => {
-      var n, a, r;
-      let i = (null != (n = (0, l.q)(e.name)) ? n : "").toLowerCase(),
+      var n, a, l;
+      let r = (null != (n = (0, i.q)(e.name)) ? n : "").toLowerCase(),
         s = (null != (a = e.group) ? a : "").toLowerCase(),
-        o = null != (r = e.tags) ? r : [];
-      return i.includes(t) || e.id.toLowerCase().includes(t) || s.includes(t) || o.some(e => e.toLowerCase().includes(t))
+        o = null != (l = e.tags) ? l : [];
+      return r.includes(t) || e.id.toLowerCase().includes(t) || s.includes(t) || o.some(e => e.toLowerCase().includes(t))
     })
   }, [e, n]);
-  return [r.useMemo(() => (0, a.jsx)(i.II_, {
+  return [l.useMemo(() => (0, a.jsx)(r.II_, {
     id: "devtools-search",
     control: (e, t) => {
-      var r, l;
-      return (0, a.jsx)(i.ne, (r = function(e) {
+      var l, i;
+      return (0, a.jsx)(r.ne, (l = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(n);
@@ -53,31 +53,31 @@ function d(e, t) {
           })
         }
         return e
-      }({}, e), l = l = {
+      }({}, e), i = i = {
         query: n,
         onChange: o,
         placeholder: "Search DevTools...",
         ref: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var a = Object.getOwnPropertySymbols(e);
           n.push.apply(n, a)
         }
         return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
-      }), r))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
+      }), l))
     }
-  }, "devtools-search"), [n]), ...r.useMemo(() => {
+  }, "devtools-search"), [n]), ...l.useMemo(() => {
     let e = [];
-    if ("" !== n.trim() && 0 === d.length) e.push((0, a.jsx)(i.sNh, {
+    if ("" !== n.trim() && 0 === d.length) e.push((0, a.jsx)(r.sNh, {
       id: "devtools-no-results",
       label: 'No DevTools found for "'.concat(n, '"'),
       disabled: true
     }, "devtools-no-results"));
     else {
-      let r = d.filter(e => e.group === s.v0.NONE),
+      let l = d.filter(e => e.group === s.v0.NONE),
         o = function(e) {
           let t = new Map;
           for (let a of e) {
@@ -87,32 +87,32 @@ function d(e, t) {
           }
           return t
         }(d.filter(e => e.group !== s.v0.NONE));
-      r.forEach(n => {
+      l.forEach(n => {
         let {
-          id: r,
-          name: l
+          id: l,
+          name: i
         } = n;
-        return e.push((0, a.jsx)(i.sNh, {
-          id: r,
+        return e.push((0, a.jsx)(r.sNh, {
+          id: l,
           label: (0, a.jsx)(c, {
-            label: l
+            label: i
           }),
-          action: () => t(r)
-        }, r))
-      }), s.Zj.forEach(r => {
-        let s = o.get(r);
+          action: () => t(l)
+        }, l))
+      }), s.Zj.forEach(l => {
+        let s = o.get(l);
         if (null != s && s.length > 0) {
           let o = s.sort((e, t) => {
             var n, a;
-            return (null != (n = (0, l.q)(e.name)) ? n : "").localeCompare(null != (a = (0, l.q)(t.name)) ? a : "")
+            return (null != (n = (0, i.q)(e.name)) ? n : "").localeCompare(null != (a = (0, i.q)(t.name)) ? a : "")
           });
-          "" === n.trim() ? e.push((0, a.jsx)(i.sNh, {
-            id: "devtools-".concat(r),
+          "" === n.trim() ? e.push((0, a.jsx)(r.sNh, {
+            id: "devtools-".concat(l),
             label: (0, a.jsx)(c, {
-              label: r
+              label: l
             }),
-            children: (0, a.jsx)(i.kSQ, {
-              children: o.map(e => (0, a.jsx)(i.sNh, {
+            children: (0, a.jsx)(r.kSQ, {
+              children: o.map(e => (0, a.jsx)(r.sNh, {
                 id: "devtools-".concat(e.id),
                 label: (0, a.jsx)(c, {
                   label: e.name
@@ -120,16 +120,16 @@ function d(e, t) {
                 action: () => t(e.id)
               }, e.id))
             })
-          }, "devtools-".concat(r))) : e.push((0, a.jsx)(i.kSQ, {
-            label: r,
-            children: o.map(e => (0, a.jsx)(i.sNh, {
+          }, "devtools-".concat(l))) : e.push((0, a.jsx)(r.kSQ, {
+            label: l,
+            children: o.map(e => (0, a.jsx)(r.sNh, {
               id: "devtools-filtered-".concat(e.id),
               label: (0, a.jsx)(c, {
                 label: e.name
               }),
               action: () => t(e.id)
             }, e.id))
-          }, "devtools-filtered-".concat(r)))
+          }, "devtools-filtered-".concat(l)))
         }
       })
     }

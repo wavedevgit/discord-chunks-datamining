@@ -23,11 +23,11 @@ var Chunk54381 = require("./54381.js"),
 function _(e, t) {
   var _;
   let b = null != (_ = (0, u.Z)(t)) && _,
-    h = (0, o.e7)([c.Z], () => {
+    h = (0, l.e7)([c.Z], () => {
       var e;
       return null == (e = c.Z.getStateForGuild(t)) ? true : e.allPowerups
     }),
-    j = (0, o.e7)([c.Z], () => {
+    j = (0, l.e7)([c.Z], () => {
       var e;
       return null == (e = c.Z.getStateForGuild(t)) ? true : e.unlockedPowerups
     });
@@ -36,22 +36,22 @@ function _(e, t) {
         let {
           guildId: t,
           canUseBoosts: i,
-          allPowerups: o,
+          allPowerups: l,
           unlockedPowerups: c,
           skuIds: u
-        } = e, d = g.intl.string(m.default.KC9HRW), _ = g.intl.string(m.default.GJiSmP), b = null == o ? true : o[l.IN], h = (null == c ? true : c[l.IN]) != null, j = g.intl.string(m.default["/egwJA"]), C = h ? true : g.intl.string(m.default.W6Vwn3), w = h ? true : g.intl.string(m.default.lvk1Gc), I = h ? g.intl.string(m.default["9CfkLO"]) : g.intl.string(g.t["+7XY31"]), E = h ? "secondary" : "expressive", Z = i ? () => {
+        } = e, d = g.intl.string(m.default.KC9HRW), _ = g.intl.string(m.default.GJiSmP), b = null == l ? true : l[o.IN], h = (null == c ? true : c[o.IN]) != null, j = g.intl.string(m.default["/egwJA"]), C = h ? true : g.intl.string(m.default.W6Vwn3), w = h ? true : g.intl.string(m.default.lvk1Gc), I = h ? g.intl.string(m.default["9CfkLO"]) : g.intl.string(g.t["+7XY31"]), E = h ? "secondary" : "expressive", Z = i ? () => {
           h ? s.Z.open(t, f.pNK.TAG, f.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != b && (0, p.KE)(t, b), (0, a.pTH)()
         } : true;
         return {
           title: d,
           description: _,
           openModal: function(e) {
-            let l = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
+            let o = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
             (0, a.ZDy)(async () => {
               let {
-                default: l
+                default: o
               } = await n.e("64767").then(n.bind(n, 754887));
-              return n => (0, r.jsx)(l, function(e) {
+              return n => (0, r.jsx)(o, function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);
@@ -82,7 +82,7 @@ function _(e, t) {
                 } : true
               }, n))
             }, {
-              onCloseCallback: null == l ? true : l.onModalClose
+              onCloseCallback: null == o ? true : o.onModalClose
             })
           },
           viewCta: j,
@@ -100,12 +100,12 @@ function _(e, t) {
         unlockedPowerups: j,
         skuIds: d.z[e]
       }) : true,
-      o = {};
+      l = {};
     for (let t of e) {
       let e = i(t);
-      null != e && (o[t] = e)
+      null != e && (l[t] = e)
     }
-    return o
+    return l
   }, [e, t, b, h, j])
 }
 

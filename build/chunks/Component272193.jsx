@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
 function u() {
   let e = (0, Chunk442837.e7)([Chunk441623.ZP], () => Chunk441623.ZP.getDevToolTotalFriendAnniversaries()),
     t = e => {
-      i.Z.dispatch({
+      r.Z.dispatch({
         type: "DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT",
         total: e
       })

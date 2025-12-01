@@ -1,7 +1,7 @@
 /** Chunk was on 837 **/
 /** chunk id: 383036, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk832149 = require("./832149.jsx"),
   Chunk215023 = require("./215023.js"),
   Chunk277790 = require("./277790.js");
-let g = e => {
-    let [t, n] = r.useState(0);
-    return r.useLayoutEffect(() => {
+let f = e => {
+    let [t, n] = l.useState(0);
+    return l.useLayoutEffect(() => {
       let e = d.Z.getPurchase;
       return d.Z.getPurchase = e => true, d.Z.emitChange(), n(1), () => {
         d.Z.getPurchase = e, d.Z.emitChange()
@@ -42,22 +42,22 @@ let g = e => {
       return e
     }({}, e), t)
   },
-  f = () => {
+  g = () => {
     let e = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
       t = (0, Chunk399606.e7)([Chunk597688.Z], () => Chunk597688.Z.categories),
       n = (0, Chunk399606.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
       m = (0, Chunk399606.e7)([Chunk597688.Z], () => Chunk597688.Z.lastSuccessfulFetch),
-      f = exports.size > 0 && require.size > 0 && null != Chunk709999,
+      g = exports.size > 0 && require.size > 0 && null != Chunk709999,
       {
         isFetching: b,
         categories: v
       } = (0, Chunk223143.ZP)({
         logPerf: false,
         stalePurchasesOK: true,
-        noOp: f
+        noOp: g
       }),
-      j = f ? exports : v,
-      _ = f || !b && j.size > 0,
+      j = g ? exports : v,
+      _ = g || !b && j.size > 0,
       [y, C] = Chunk473749.useState(""),
       [S, E] = Chunk473749.useState(null),
       [T, N] = Chunk473749.useState(null);
@@ -113,7 +113,7 @@ let g = e => {
           children: "Product Preview"
         }), null != S && null != T ? (0, Chunk54381.jsxs)("div", {
           className: Chunk277790.previewContainer,
-          children: [(0, Chunk54381.jsx)(g, {
+          children: [(0, Chunk54381.jsx)(f, {
             product: S,
             user: module,
             category: T,

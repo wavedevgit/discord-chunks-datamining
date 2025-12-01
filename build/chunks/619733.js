@@ -1,22 +1,26 @@
-/** Chunk was on 837 **/
-/** chunk id: 619733, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 619733, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  AK: () => c,
-  EK: () => i,
-  IX: () => s,
-  SW: () => h,
-  SY: () => d,
-  Sg: () => m,
-  TG: () => o,
+  AK: () => l,
+  EK: () => a,
+  IX: () => o,
+  SW: () => p,
+  SY: () => c,
+  Sg: () => d,
+  TG: () => s,
   YX: () => u,
-  Z4: () => g,
-  nd: () => x,
-  tq: () => p
+  Z4: () => m,
+  fj: () => h,
+  nd: () => _,
+  tq: () => f
 });
-var a, Chunk763600 = require("./763600.js"),
+var Chunk763600 = require("./763600.js"),
   Chunk48541 = require("./48541.js"),
-  i = 12633 == require.j ? ((a = {}).SELECT_GAME = "select-game", a.SERVER_SETTINGS = "server-settings", a) : null;
-let s = {
+  a = function(e) {
+    return e.SELECT_GAME = "select-game", e.SERVER_SETTINGS = "server-settings", e
+  }({});
+let o = {
     steps: {
       "select-game": {
         onBack: {
@@ -38,15 +42,16 @@ let s = {
       }
     }
   },
-  o = 24,
-  c = 680,
-  d = 12633 == require.j ? c - 2 * o : null,
+  s = 24,
+  l = 680,
+  c = 632,
   u = 10,
-  m = 32,
-  p = 1e3,
-  h = "production" === window.GLOBAL_ENV.PROJECT_ENV ? "1425215263548117002" : "staging" === window.GLOBAL_ENV.PROJECT_ENV ? "1415044199572832256" : "1415025086791942144";
+  d = 32,
+  f = 1e3,
+  p = "production" === window.GLOBAL_ENV.PROJECT_ENV ? "1425215263548117002" : "staging" === window.GLOBAL_ENV.PROJECT_ENV ? "1415044199572832256" : "1415025086791942144";
 Chunk763600.Z.SHOCKBYTE, window.GLOBAL_ENV.RELEASE_CHANNEL, Chunk48541.C.STAGING;
-let x = {
+let _ = {
     [Chunk763600.Z.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy"
   },
-  g = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t)
+  m = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t),
+  h = "0"

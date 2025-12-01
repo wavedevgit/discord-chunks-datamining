@@ -1,7 +1,7 @@
 /** Chunk was on 77033 **/
 /** chunk id: 323540, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  $: () => f
+  $: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,10 +18,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk329353 = require("./329353.js");
 
-function f(e) {
+function h(e) {
   var n, t;
   let {
-    applicationId: f,
+    applicationId: h,
     guildId: x,
     page: m
   } = e, {
@@ -31,7 +31,7 @@ function f(e) {
     analyticsLocations: j
   } = (0, s.ZP)(), b = i.useRef(null), {
     handleScroll: S
-  } = (0, _.I)(b, k, j), [Z, L] = i.useMemo(() => {
+  } = (0, _.I)(b, k, j), [L, N] = i.useMemo(() => {
     if ((null == m ? true : m.skuIds) == null || 0 === m.skuIds.length) return [
       [],
       []
@@ -42,7 +42,7 @@ function f(e) {
     ] : e < 1104 ? m.skuIds.length >= 2 ? [
       [], m.skuIds
     ] : [m.skuIds.slice(0, 1), m.skuIds.slice(1)] : [m.skuIds.slice(0, 2), m.skuIds.slice(2)]
-  }, [m, C]), N = 1 === Z.length && null != C && C >= 834;
+  }, [m, C]), E = 1 === L.length && null != C && C >= 834;
   return (i.useEffect(() => {
     let {
       sessionId: e,
@@ -66,34 +66,34 @@ function f(e) {
     onScroll: S,
     children: (0, l.jsxs)("section", {
       ref: v,
-      className: h.container,
+      className: f.container,
       children: [(0, l.jsx)(g.n, {
-        applicationId: f,
+        applicationId: h,
         backgroundImageAssetId: null == (n = m.leaderboard) ? true : n.backgroundImageAssetId
       }), (0, l.jsx)(u.t, {
         analyticsSectionId: "leaderboard",
         leaderboard: m.leaderboard,
-        skuId: N ? Z[0] : true,
-        applicationId: f,
+        skuId: E ? L[0] : true,
+        applicationId: h,
         guildId: x,
         analyticsLocations: j
       }), (0, l.jsx)(p.Z, {
         analyticsSectionId: "featured-top-section",
-        applicationId: f,
+        applicationId: h,
         guildId: x,
-        skuIds: N ? true : Z,
+        skuIds: E ? true : L,
         variant: c.Z.MEDIUM
       }), (0, l.jsx)(p.Z, {
         analyticsSectionId: "non-featured-top-section",
-        applicationId: f,
+        applicationId: h,
         guildId: x,
-        skuIds: L
+        skuIds: N
       }), null == (t = m.sections) ? true : t.map((e, n) => {
         var t;
         return (0, l.jsx)(p.Z, {
           analyticsSectionId: "index:".concat(n),
           guildId: x,
-          applicationId: f,
+          applicationId: h,
           sectionTitle: null != (t = e.title) ? t : true,
           skuIds: e.skuIds
         }, "".concat(e.title, "-").concat(n))

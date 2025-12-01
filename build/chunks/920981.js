@@ -1,6 +1,6 @@
 /** Chunk was on 837 **/
 /** chunk id: 920981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  H: () => r
+  H: () => l
 });
-var a, r = ((a = {}).DEFAULT = "default", a.DEFAULT_WITH_ORB_SHELF = "default_with_orb_shelf", a.ORB_TAB = "orb_tab", a.SUMMER_SALE_TAKEOVER = "summer_sale_takeover", a)
+var a, l = ((a = {}).DEFAULT = "default", a.DEFAULT_WITH_ORB_SHELF = "default_with_orb_shelf", a.ORB_TAB = "orb_tab", a.SUMMER_SALE_TAKEOVER = "summer_sale_takeover", a)

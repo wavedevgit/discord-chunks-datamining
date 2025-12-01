@@ -1,15 +1,18 @@
 /** Chunk was on 9452 **/
 /** chunk id: 868802, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  M: () => v
+  M: () => x
 });
-var Chunk54381 = require("./54381.js");
-require("./473749.js");
-var Chunk793030 = require("./793030.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk952265 = require("./952265.js"),
   Chunk159691 = require("./159691.js"),
   Chunk511857 = require("./511857.js"),
+  Chunk594421 = require("./594421.js"),
   Chunk410030 = require("./410030.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.jsx"),
   Chunk740594 = require("./740594.jsx"),
   Chunk612659 = require("./612659.js"),
   Chunk5900 = require("./5900.js"),
@@ -19,6 +22,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk584197 = require("./584197.jsx"),
   Chunk703656 = require("./703656.js"),
   Chunk589072 = require("./589072.jsx"),
+  Chunk626135 = require("./626135.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk116282 = require("./116282.jsx"),
   Chunk614074 = require("./614074.jsx"),
@@ -32,9 +36,17 @@ var Chunk793030 = require("./793030.js"),
   Chunk93109 = require("./93109.js"),
   Chunk446818 = require("./446818.js"),
   Chunk932889 = require("./932889.js");
-let v = () => {
-    let t = (0, Chunk511857.a)((0, Chunk410030.ZP)());
-    return (0, Chunk54381.jsxs)("div", {
+let x = () => {
+    let t = (0, Chunk511857.a)((0, Chunk410030.ZP)()),
+      {
+        analyticsLocations: e
+      } = (0, Chunk906732.ZP)(Chunk100527.Z.CF_WARP_SETTINGS);
+    return (0, Chunk473749.useEffect)(() => {
+      Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UPSELL_VIEWED, {
+        type: Chunk474936.cd.PRIVACY_PERK_SETTINGS,
+        location_stack: exports
+      })
+    }, [exports]), (0, Chunk54381.jsxs)("div", {
       className: Chunk498374.settingsContainer,
       children: [(0, Chunk54381.jsxs)(Chunk793030.$1m, {
         color: "pink",
@@ -69,20 +81,20 @@ let v = () => {
             className: Chunk498374.contentSpacer
           }), (0, Chunk54381.jsx)("div", {
             className: Chunk498374.ctaContainer,
-            children: (0, Chunk54381.jsx)(m, {})
+            children: (0, Chunk54381.jsx)(M, {})
           })]
         })]
       }), (0, Chunk54381.jsx)(Chunk868087.p, {})]
     })
   },
-  m = () => {
+  M = () => {
     let {
       installationStatus: t,
       isWeb: e,
       setInstallationStatus: n
-    } = (0, Chunk773275.xf)(), s = (0, Chunk612659.m)();
+    } = (0, Chunk773275.xf)(), r = (0, Chunk612659.m)();
     if (exports) return (0, Chunk54381.jsx)(Chunk969521.U, {});
-    if (!Chunk511857) return (0, Chunk54381.jsxs)("div", {
+    if (!Chunk473749) return (0, Chunk54381.jsxs)("div", {
       className: Chunk498374.subscribeBtnContainer,
       children: [(0, Chunk54381.jsx)(Chunk740594.Z, {
         buttonTextOverride: Chunk388032.intl.string(Chunk388032.t["8x0jKT"]),
@@ -110,7 +122,9 @@ let v = () => {
         return (0, Chunk54381.jsx)(Chunk159691.zxk, {
           variant: "primary",
           onClick: () => {
-            require(Chunk5900._n.READY_FOR_LICENSE)
+            (0, Chunk594421.j)(Chunk981631.rMx.NITRO_WARP_CTA_CLICKED, {
+              is_enable_warp: true
+            }), require(Chunk5900._n.READY_FOR_LICENSE)
           },
           text: Chunk388032.intl.string(Chunk163646.default.J09UWz)
         });

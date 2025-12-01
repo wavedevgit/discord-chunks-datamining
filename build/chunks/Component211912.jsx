@@ -31,28 +31,28 @@ function b(e) {
   s.useEffect(() => {
     m.default.track(x.rMx.OPEN_MODAL, {
       type: "Social Layer Storefront Announcement Modal"
-    }), (0, d.bj)(c.z.GAME_SHOP_ANNOUNCEMENT_MODAL, {
+    }), (0, o.bj)(c.z.GAME_SHOP_ANNOUNCEMENT_MODAL, {
       dismissAction: h.L.AUTO_DISMISS
     })
   }, []);
   let b = s.useCallback(() => {
-    (0, f.Z)({
+    (0, f.default)({
       guildId: (0, u.ac)()
     }), n()
   }, [n]);
   return (0, r.jsx)(l.f6W, {
     theme: p.BR.DARK,
-    children: e => (0, r.jsx)(o.Y0X, {
+    children: e => (0, r.jsx)(d.Y0X, {
       transitionState: t,
       parentComponent: "SocialLayerStorefrontAnnouncementModal",
-      size: o.CgR.DYNAMIC,
+      size: d.CgR.DYNAMIC,
       className: i()(e, v.modal),
       returnRef: a,
-      children: (0, r.jsxs)(o.hzk, {
+      children: (0, r.jsxs)(d.hzk, {
         className: v.content,
         children: [(0, r.jsx)("div", {
           className: v.closeButton,
-          children: (0, r.jsx)(o.olH, {
+          children: (0, r.jsx)(d.olH, {
             onClick: n
           })
         }), (0, r.jsx)("div", {

@@ -1,17 +1,18 @@
-/** Chunk was on 837 **/
-/** chunk id: 905551, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 905551, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  EY: () => _,
-  NE: () => j,
-  UM: () => b,
-  WX: () => S,
-  WY: () => f,
-  _k: () => C,
-  ce: () => h,
-  hz: () => v,
-  iX: () => g,
-  mF: () => x,
-  s9: () => y
+  EY: () => O,
+  NE: () => y,
+  UM: () => E,
+  WX: () => I,
+  WY: () => g,
+  _k: () => S,
+  ce: () => _,
+  hz: () => b,
+  iX: () => h,
+  mF: () => m,
+  s9: () => v
 }), require("./642613.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -25,33 +26,33 @@ var Chunk544891 = require("./544891.js"),
   Chunk619733 = require("./619733.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e) {
+function _(e) {
   var t, n;
-  let a = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  if (a) return void setTimeout(() => {
-    r.Z.dispatch({
+  let r = arguments.length > 1 && true !== arguments[1] && arguments[1];
+  if (r) return void setTimeout(() => {
+    i.Z.dispatch({
       type: "GAME_SERVER_FETCH_CATALOG_SUCCESS",
       guildId: e,
-      catalog: o.j.reduce((e, t) => (e[t.id] = t, e), {})
+      catalog: l.j.reduce((e, t) => (e[t.id] = t, e), {})
     })
   }, 5e3);
-  let i = null != (n = null == (t = l.default.getCurrentUser()) ? true : t.isStaff()) && n;
+  let o = null != (n = null == (t = a.default.getCurrentUser()) ? true : t.isStaff()) && n;
   return (0, s.Kb)({
-    url: p.ANM.COLLECTION_PUBLISHED_LISTINGS_SKU(m.SW),
+    url: p.ANM.COLLECTION_PUBLISHED_LISTINGS_SKU(f.SW),
     query: {
       guild_id: e,
-      include_unpublished_products: i,
-      include_unpublished_collection: i
+      include_unpublished_products: o,
+      include_unpublished_collection: o
     },
     oldFormErrors: true,
     rejectWithError: false,
     retries: 2
   }).then(t => {
     let n = t.body.products.reduce((e, t) => {
-      let n = (0, d.m)(t);
+      let n = (0, u.m)(t);
       return e[n.id] = n, e
     }, {});
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "GAME_SERVER_FETCH_CATALOG_SUCCESS",
       guildId: e,
       catalog: n
@@ -59,16 +60,16 @@ function h(e) {
   })
 }
 
-function x(e) {
+function m(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = arguments.length > 2 ? arguments[2] : true;
   return t ? (setTimeout(() => {
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "GAME_SERVER_FETCH_INSTANCES_SUCCESS",
       guildId: e,
-      instances: o.K.reduce((e, t) => (e[t.id] = t, e), {})
+      instances: l.K.reduce((e, t) => (e[t.id] = t, e), {})
     })
-  }, 5e3), Promise.resolve()) : a.tn.get({
+  }, 5e3), Promise.resolve()) : r.tn.get({
     url: p.ANM.GAME_SERVERS(e),
     rejectWithError: true,
     retries: 2,
@@ -76,7 +77,7 @@ function x(e) {
   }).then(t => {
     if (null != t.body) {
       let n = t.body.reduce((e, t) => (e[t.id] = (0, c.Z)(t), e), {});
-      r.Z.dispatch({
+      i.Z.dispatch({
         type: "GAME_SERVER_FETCH_INSTANCES_SUCCESS",
         guildId: e,
         instances: n
@@ -85,66 +86,66 @@ function x(e) {
   })
 }
 
-function g(e, t) {
-  return a.tn.get({
+function h(e, t) {
+  return r.tn.get({
     url: p.ANM.PRODUCT_FOR_SKU(t),
     rejectWithError: true,
     retries: 3
   }).then(n => {
     if (null != n.body) {
-      var a, l, i, s;
-      let o = null != (s = null == (i = n.body.tenant_metadata) || null == (l = i.guild_monetization) || null == (a = l.game_server) ? true : a.instructions.pc) ? s : [];
-      r.Z.dispatch({
+      var r, a, o, s;
+      let l = null != (s = null == (o = n.body.tenant_metadata) || null == (a = o.guild_monetization) || null == (r = a.game_server) ? true : r.instructions.pc) ? s : [];
+      i.Z.dispatch({
         type: "GAME_SERVER_FETCH_GAME_INSTRUCTIONS_SUCCESS",
         guildId: e,
         skuId: t,
-        instructions: o
+        instructions: l
       })
     }
   })
 }
 
-function f(e, t) {
+function g(e, t) {
   if (e) {
     var n;
-    i.default.track(p.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {
-      user_id: null == (n = l.default.getCurrentUser()) ? true : n.id,
+    o.default.track(p.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {
+      user_id: null == (n = a.default.getCurrentUser()) ? true : n.id,
       provider: t
     })
   }
 }
 
-function b() {
+function E() {
   Chunk570140.Z.dispatch({
     type: "GAME_SERVER_REGION_PING_STATE_RESET"
   })
 }
 
-function v(e, t) {
-  r.Z.dispatch({
+function b(e, t) {
+  i.Z.dispatch({
     type: "GAME_SERVER_REGION_PING_STATE_UPDATE",
     pingUrl: e,
     state: t
   })
 }
 
-function j(e, t, n, r) {
-  return a.tn.post({
+function y(e, t, n, i) {
+  return r.tn.post({
     url: p.ANM.GUILD_POWERUP_TOGGLE(e, t),
     body: {
       game_server_name: n,
-      game_server_region: r
+      game_server_region: i
     },
     rejectWithError: true,
     oldFormErrors: true
   })
 }
 
-function _(e, t, n, r) {
-  return a.tn.patch({
+function O(e, t, n, i) {
+  return r.tn.patch({
     url: p.ANM.GUILD_POWERUP_UPDATE(e, t),
     body: {
-      game_server_name: r,
+      game_server_name: i,
       sku_id: n
     },
     rejectWithError: true,
@@ -152,8 +153,8 @@ function _(e, t, n, r) {
   })
 }
 
-function y(e, t, n) {
-  return a.tn.del({
+function v(e, t, n) {
+  return r.tn.del({
     url: p.ANM.GUILD_POWERUP_TOGGLE(e, t),
     query: {
       entitlement_id: n
@@ -163,26 +164,26 @@ function y(e, t, n) {
   })
 }
 
-function C(e) {
-  return a.tn.get({
+function S(e) {
+  return r.tn.get({
     url: p.ANM.GAME_SERVER_REGIONS(e),
     rejectWithError: true,
     oldFormErrors: true,
     retries: 3
   }).then(e => {
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "GAME_SERVER_FETCH_REGIONS_SUCCESS",
-      regions: e.body.map(u.Z).sort((e, t) => e.name.localeCompare(t.name))
+      regions: e.body.map(d.Z).sort((e, t) => e.name.localeCompare(t.name))
     })
   })
 }
 
-function S(e, t) {
-  return a.tn.post({
+function I(e, t) {
+  return r.tn.post({
     url: p.ANM.GAME_SERVER_WAKE(e, t),
     rejectWithError: true
   }).then(t => {
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
       guildId: e,
       instance: (0, c.Z)(t.body)

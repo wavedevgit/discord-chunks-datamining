@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk446094 = require("./446094.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
-let f = new Chunk710845.Z("GuildTagCoachmark");
+let g = new Chunk710845.Z("GuildTagCoachmark");
 
 function b(e) {
   function t(t) {
@@ -33,16 +33,16 @@ function b(e) {
   }
   let {
     isAdopting: n,
-    onAdoptTag: r,
-    onEditProfile: l
+    onAdoptTag: l,
+    onEditProfile: i
   } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), c = [{
-    text: g.intl.string(g.t.jwEaiX),
+    text: f.intl.string(f.t.jwEaiX),
     loading: n,
-    onClick: r,
+    onClick: l,
     variant: "primary"
   }, {
-    text: g.intl.string(g.t.s5vZlQ),
-    onClick: l,
+    text: f.intl.string(f.t.s5vZlQ),
+    onClick: i,
     variant: "secondary"
   }];
   return (0, a.jsxs)(a.Fragment, {
@@ -52,16 +52,16 @@ function b(e) {
       position: "top",
       graphic: {
         type: "dynamic",
-        component: i.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+        component: r.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile
         }
       },
-      title: g.intl.formatToPlainString(g.t["m/Tc3n"], {
+      title: f.intl.formatToPlainString(f.t["m/Tc3n"], {
         guildName: e.guild.name
       }),
-      body: g.intl.string(g.t.DrAXIr),
+      body: f.intl.string(f.t.DrAXIr),
       actions: c,
       size: "md",
       onRequestClose: () => t(x.L.USER_DISMISS)
@@ -78,19 +78,19 @@ function v(e) {
       lastSeenInfo: {
         tag: e.guild.profile.tag
       }
-    }), (0, d.Qd)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, x.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
+    }), (0, d.Qd)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, x.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
   }
   let {
     isAdopting: n,
-    onAdoptTag: r,
+    onAdoptTag: l,
     onEditProfile: c
   } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), u = [{
-    text: g.intl.string(g.t.jwEaiX),
+    text: f.intl.string(f.t.jwEaiX),
     loading: n,
-    onClick: r,
+    onClick: l,
     variant: "primary"
   }, {
-    text: g.intl.string(g.t.s5vZlQ),
+    text: f.intl.string(f.t.s5vZlQ),
     onClick: c,
     variant: "secondary"
   }];
@@ -101,16 +101,16 @@ function v(e) {
       position: "top",
       graphic: {
         type: "dynamic",
-        component: i.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+        component: r.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile
         }
       },
-      title: g.intl.formatToPlainString(g.t.VFqnyU, {
+      title: f.intl.formatToPlainString(f.t.VFqnyU, {
         guildName: e.guild.name
       }),
-      body: g.intl.string(g.t.DrAXIr),
+      body: f.intl.string(f.t.DrAXIr),
       actions: u,
       size: "md",
       onRequestClose: () => t(x.L.USER_DISMISS)
@@ -119,7 +119,7 @@ function v(e) {
 }
 
 function j(e) {
-  let t = (0, r.e7)([u.Z], () => u.Z.getGuild(e.guildId)),
+  let t = (0, l.e7)([u.Z], () => u.Z.getGuild(e.guildId)),
     n = (0, m.S3)(e.guildId);
   return null != t && (0, p.jq)(t) && null !== n ? "changed" === n ? (0, a.jsx)(b, {
     guild: t,
@@ -131,5 +131,5 @@ function j(e) {
     onDismiss: e.onDismiss,
     targetElementRef: e.targetElementRef,
     children: e.children
-  }) : (f.error("GuildTagCoachmark rendered without guildId or coachmark type."), e.children)
+  }) : (g.error("GuildTagCoachmark rendered without guildId or coachmark type."), e.children)
 }

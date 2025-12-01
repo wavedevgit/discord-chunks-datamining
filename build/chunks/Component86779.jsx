@@ -26,8 +26,8 @@ let j = "mweb_handoff_nonce",
   b = "mweb_handoff_nonce_expiration",
   I = +Chunk70956.Z.Millis.MINUTE,
   y = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
-  N = new Set(["deep_link_failed"]),
-  S = () => {
+  S = new Set(["deep_link_failed"]),
+  N = () => {
     Chunk433517.K.remove(j), Chunk433517.K.remove(b)
   },
   O = () => {
@@ -55,7 +55,7 @@ let j = "mweb_handoff_nonce",
     if ("null" === require && null === C && A("deep_link_failed"), null != require && "null" !== require && null == Z && null === C && A("nonce_missing"), Chunk473749.useEffect(() => {
         if (null != Z) {
           let e = Chunk433517.K.get(b);
-          (null == module || Date.now() >= module) && (A("nonce_expired"), S())
+          (null == module || Date.now() >= module) && (A("nonce_expired"), N())
         }
       }, [Z, A]), Chunk473749.useEffect(() => {
         null != require && "null" !== require && null != Z && null == C && Chunk544891.tn.post({
@@ -77,13 +77,13 @@ let j = "mweb_handoff_nonce",
         }).catch(() => {
           A("handoff_exchange")
         }).finally(() => {
-          S()
+          N()
         })
       }, [require, Z, C, O, A]), null == O) return null;
     let P = null == C ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [Chunk388032.intl.string(Chunk388032.t.uJ1JsY), (0, Chunk54381.jsx)("br", {}), Chunk388032.intl.string(Chunk388032.t.GHVWAs)]
-    }) : N.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55r) : y.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTp) : true;
-    return null != C && N.has(C) ? (0, Chunk54381.jsx)("div", {
+    }) : S.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55r) : y.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTp) : true;
+    return null != C && S.has(C) ? (0, Chunk54381.jsx)("div", {
       className: Chunk78224.errorContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         color: "interactive-normal",

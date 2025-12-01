@@ -27,7 +27,7 @@ function h() {
     s = p.useField("errorMessage"),
     h = Chunk473749.useRef([]),
     x = Chunk473749.useRef(""),
-    g = Chunk473749.useCallback(() => {
+    f = Chunk473749.useCallback(() => {
       let {
         results: e,
         query: t
@@ -35,9 +35,9 @@ function h() {
       (h.current !== module || x.current !== exports) && (h.current = module, x.current = exports, (0, Chunk620481.OC)())
     }, []);
   Chunk473749.useEffect(() => {
-    if (module) return Chunk823385.Z.addChangeListener(g), () => Chunk823385.Z.removeChangeListener(g)
-  }, [g, module]);
-  let f = Chunk473749.useCallback(async () => {
+    if (module) return Chunk823385.Z.addChangeListener(f), () => Chunk823385.Z.removeChangeListener(f)
+  }, [f, module]);
+  let g = Chunk473749.useCallback(async () => {
     let {
       isUploading: e
     } = p.getState();
@@ -79,7 +79,7 @@ function h() {
         isUploading: exports,
         isSuccess: require,
         errorMessage: Chunk972959,
-        onClick: f,
+        onClick: g,
         title: "Upload Session Logs"
       })]
     })]

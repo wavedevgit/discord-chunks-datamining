@@ -9,8 +9,8 @@ var Chunk37234 = require("./37234.js"),
   Chunk951366 = require("./951366.js"),
   Chunk981631 = require("./981631.js");
 let s = e => {
-  r.PlaygroundStore.setState({
+  l.PlaygroundStore.setState({
     selectedCollection: e,
     selectedStory: null
-  }), (0, a.jN)(i.S9g.COMPONENT_PLAYGROUND)
+  }), (0, a.jN)(r.S9g.COMPONENT_PLAYGROUND)
 }

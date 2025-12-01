@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk481060 = require("./481060.js"),
@@ -40,7 +40,7 @@ let C = [{
 function S() {
   let e = Chunk473749.useRef(null),
     t = Chunk695346.JG.useSetting(),
-    [n, l] = Chunk473749.useState(""),
+    [n, i] = Chunk473749.useState(""),
     o = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
     S = (0, Chunk835473.q)(require),
     E = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
@@ -59,7 +59,7 @@ function S() {
       deauthorize: I
     } = function(e) {
       let t = (0, s.e7)([b.default], () => b.default.getNewestTokenForApplication(e)),
-        n = r.useCallback(() => {
+        n = l.useCallback(() => {
           null != t && d.Z.delete(t.id)
         }, [t]);
       return {
@@ -69,7 +69,7 @@ function S() {
     }(null == S ? true : S.id);
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: i()(Chunk451429.panel, Chunk441900.panel),
+    className: r()(Chunk451429.panel, Chunk441900.panel),
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk441900.container,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {

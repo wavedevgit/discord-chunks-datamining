@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -23,7 +23,7 @@ function p() {
       value: a,
       idx: t
     }
-  }), [], Chunk442837.pF), l = Chunk473749.useMemo(() => 0 === module.length ? require : require.filter(t => {
+  }), [], Chunk442837.pF), i = Chunk473749.useMemo(() => 0 === module.length ? require : require.filter(t => {
     let {
       word: n
     } = t;
@@ -34,7 +34,7 @@ function p() {
     })
   }, []);
   return (0, Chunk54381.jsxs)("div", {
-    className: i()(Chunk451429.panel, Chunk603473.panel),
+    className: r()(Chunk451429.panel, Chunk603473.panel),
     children: [require.length > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/semibold",
@@ -64,7 +64,7 @@ function p() {
           children: (0, Chunk54381.jsxs)("div", {
             className: Chunk603473.resultsTable,
             children: [(0, Chunk54381.jsxs)("div", {
-              className: i()(Chunk451429.tableHeader, Chunk603473.tableHeader),
+              className: r()(Chunk451429.tableHeader, Chunk603473.tableHeader),
               children: [(0, Chunk54381.jsx)("div", {
                 className: Chunk603473.indexColumn,
                 children: "Index"
@@ -79,15 +79,15 @@ function p() {
               let {
                 word: t,
                 value: n,
-                idx: r
+                idx: l
               } = e;
               return (0, a.jsxs)("div", {
-                className: i()(u.tableRow, m.tableRow),
+                className: r()(u.tableRow, m.tableRow),
                 children: [(0, a.jsx)("div", {
                   className: m.indexColumn,
                   children: (0, a.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    children: r + 1
+                    children: l + 1
                   })
                 }), (0, a.jsx)("div", {
                   className: m.wordColumn,
@@ -102,7 +102,7 @@ function p() {
                     children: n
                   })
                 })]
-              }, "".concat(t, "-").concat(r))
+              }, "".concat(t, "-").concat(l))
             })]
           })
         })
