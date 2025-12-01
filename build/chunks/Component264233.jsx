@@ -60,14 +60,14 @@ function m(e) {
     title: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.headerContainer,
+    className: h.headerContainer,
     children: [(0, r.jsx)(s.Text, {
-      className: p.headerTitle,
+      className: h.headerTitle,
       variant: "text-xs/semibold",
       color: "interactive-normal",
       children: t
     }), (0, r.jsx)("div", {
-      className: p.headerDivider
+      className: h.headerDivider
     })]
   })
 }

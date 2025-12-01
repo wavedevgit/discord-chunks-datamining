@@ -1,7 +1,7 @@
 /** Chunk was on 64271 **/
 /** chunk id: 185666, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk590965 = require("./590965.js"),
   Chunk981631 = require("./981631.js");
 let f = "INVITE_MODAL_KEY";
-class h extends Chunk317770.Z {
+class p extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("INVITE_MODAL_OPEN", this.handleOpenModal), Chunk570140.Z.subscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
   }
@@ -64,4 +64,4 @@ class h extends Chunk317770.Z {
     (0, Chunk481060.Mr3)(f)
   }
 }
-let p = new h
+let h = new p

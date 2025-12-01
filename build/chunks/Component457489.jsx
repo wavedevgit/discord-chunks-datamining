@@ -1,7 +1,7 @@
 /** Chunk was on 77033 **/
 /** chunk id: 457489, original params: e,n,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => R
+  default: () => Z
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -67,20 +67,20 @@ function E(e) {
   })
 }
 
-function R(e) {
+function Z(e) {
   var n, t, a, p, j;
   let {
     match: b
   } = e, {
     guildId: S,
     gameShopPageIndex: L,
-    gameShopSkuId: R
+    gameShopSkuId: Z
   } = b.params, {
-    analyticsLocations: Z
+    analyticsLocations: R
   } = (0, g.ZP)(u.Z.SOCIAL_LAYER_STOREFRONT), T = (0, k.Z)({
     guildId: S,
     location: "Social Layer Storefront"
-  }), A = (0, r.e7)([I.default], () => I.default.getSessionId(), []), M = (0, r.e7)([x.Z], () => x.Z.get(R), [R]);
+  }), A = (0, r.e7)([I.default], () => I.default.getSessionId(), []), M = (0, r.e7)([x.Z], () => x.Z.get(Z), [Z]);
   (0, _.p2)();
   let y = (0, c.Z)((0, s.Z)()),
     O = (0, r.e7)([f.ZP, I.default], () => f.ZP.isMember(S, I.default.getId())),
@@ -100,8 +100,8 @@ function R(e) {
       pageHasLeaderboard: G
     }), [y, S, P, w, O, G]);
   return (i.useEffect(() => {
-    null != S && (0, v.m0)(S, P, null != R ? R : null)
-  }, [S, P, R]), i.useEffect(() => {
+    null != S && (0, v.m0)(S, P, null != Z ? Z : null)
+  }, [S, P, Z]), i.useEffect(() => {
     null != S && null != A && null == h.Z.getGuild(S) && (0, m.Ub)(S, {}, {
       shouldNavigate: false
     })
@@ -109,7 +109,7 @@ function R(e) {
     className: o()(N.spinner, N.container),
     children: (0, l.jsx)(d.$jN, {})
   }) : (0, l.jsx)(g.Gt, {
-    value: Z,
+    value: R,
     children: (0, l.jsx)(C.hL, {
       newValue: B,
       children: (0, l.jsx)(E, {

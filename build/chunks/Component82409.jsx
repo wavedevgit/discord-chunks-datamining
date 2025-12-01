@@ -141,7 +141,7 @@ function U(e) {
     }), [K]),
     q = F(Z, c, P),
     Q = F(D, c, null);
-  (0, h.ZP)(() => {
+  (0, p.ZP)(() => {
     var e;
     d.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_OPEN"
@@ -191,7 +191,7 @@ function U(e) {
       track: false,
       viewId: a
     })
-  }), (0, h.zq)(() => {
+  }), (0, p.zq)(() => {
     d.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_CLOSE"
     })
@@ -209,7 +209,7 @@ function U(e) {
     }),
     children: (0, r.jsxs)(u.y5t, {
       forceLevel: 1,
-      component: (0, r.jsx)(p.ZP, (t = M({
+      component: (0, r.jsx)(h.ZP, (t = M({
         hasSubheader: true,
         guild: ee
       }, G), n = n = {

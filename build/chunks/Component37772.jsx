@@ -85,12 +85,12 @@ let B = Chunk473749.memo(function e(t) {
       treatSpam: z
     } = t,
     K = D.OBS.has(s.type) ? s.messageReference : true,
-    Y = (0, a.e7)([h.Z], () => h.Z.getMessageByReference(K)),
-    q = (0, a.e7)([g.Z], () => s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED ? g.Z.getChannel(Y.message.channel_id) : null),
-    Q = p.x4.useSetting(),
-    X = p.RS.useSetting(),
-    J = p.NA.useSetting(),
-    $ = p.QK.useSetting(),
+    Y = (0, a.e7)([p.Z], () => p.Z.getMessageByReference(K)),
+    q = (0, a.e7)([g.Z], () => s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === p.Y.LOADED ? g.Z.getChannel(Y.message.channel_id) : null),
+    Q = h.x4.useSetting(),
+    X = h.RS.useSetting(),
+    J = h.NA.useSetting(),
+    $ = h.QK.useSetting(),
     ee = (0, u.A)((null != (n = s.editedTimestamp) ? n : s.timestamp).valueOf()),
     et = (0, d.Z)(null == l ? true : l.id),
     {
@@ -108,7 +108,7 @@ let B = Chunk473749.memo(function e(t) {
     }),
     el = (0, j.ZP)(s),
     eo = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
-    ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED && null != q,
+    ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === p.Y.LOADED && null != q,
     es = !ea && true === i,
     ec = (0, P.Z)({
       message: s,
@@ -118,7 +118,7 @@ let B = Chunk473749.memo(function e(t) {
     eu = (0, c.v)(s),
     ed = (0, _.ro)(s.id, s.channel_id),
     ef = (0, f.Z)(s),
-    eh = (0, E.iG)(s);
+    ep = (0, E.iG)(s);
   return ea ? (0, r.jsx)(e, U(G({}, t), {
     message: Y.message,
     channel: q,
@@ -173,7 +173,7 @@ let B = Chunk473749.memo(function e(t) {
     isSystemMessage: (0, v.Z)(s),
     messageRef: ec,
     author: el,
-    "aria-labelledby": eh,
+    "aria-labelledby": ep,
     "aria-roledescription": L.intl.string(L.t.BAB0yK)
   })
 });

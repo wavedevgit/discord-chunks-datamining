@@ -338,7 +338,7 @@ class U extends(r = Chunk473749.Component) {
     }), L(this, "handleScroll", a()(() => {
       if (null != this._list) {
         let e = this._list.getScrollerNode();
-        null != e && h.Z.updateChannelListScroll(A.ME, e.scrollTop)
+        null != e && p.Z.updateChannelListScroll(A.ME, e.scrollTop)
       }
       true !== this.props.onHandleScroll && this.props.onHandleScroll()
     }, 100)), L(this, "renderDM", (e, t) => {
@@ -426,20 +426,20 @@ let B = e => {
     children: o,
     showDMHeader: a,
     listScrollerRef: d,
-    hideAllDMs: h
-  } = e, m = l.Children.count(o), _ = N.Z.getMutablePrivateChannels(), y = h ? {} : (0, S.k1)(_), O = (0, u.Wu)([w.Z, E.Z, I.Z], () => {
+    hideAllDMs: p
+  } = e, m = l.Children.count(o), _ = N.Z.getMutablePrivateChannels(), y = p ? {} : (0, S.k1)(_), O = (0, u.Wu)([w.Z, E.Z, I.Z], () => {
     let e = w.Z.getPrivateChannelIds(),
       t = (0, S.tU)(e, [E.Z, I.Z]);
-    return h ? [] : t
-  }, [h]);
+    return p ? [] : t
+  }, [p]);
   (0, x.z)(j.R);
   let {
     analyticsLocations: C
   } = (0, b.ZP)(g.Z.CONTACTS_LIST), Z = (0, P.Ll)(), {
     keyboardModeEnabled: T,
     version: A
-  } = (0, u.cj)([p.Z, N.Z], () => ({
-    keyboardModeEnabled: p.Z.keyboardModeEnabled,
+  } = (0, u.cj)([h.Z, N.Z], () => ({
+    keyboardModeEnabled: h.Z.keyboardModeEnabled,
     version: null != n ? "".concat(n, ":").concat(N.Z.getPrivateChannelsVersion()) : N.Z.getPrivateChannelsVersion()
   })), R = l.useRef(null), D = null != d ? d : R, L = l.useCallback(e => {
     let t = D.current,

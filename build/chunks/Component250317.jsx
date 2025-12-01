@@ -135,13 +135,13 @@ function W(e) {
           type: "video",
           src: (0, P._W)(t, e, O.Q, "mp4"),
           videoThumbnailSrc: (0, P._W)(t, e, O.Q, "webp"),
-          thumbnailSrc: null != r.thumbnailAssetId ? (0, P._W)(t, r.thumbnailAssetId, O.Q, "webp") : true,
-          backgroundSrc: null != r.backgroundAssetId ? (0, P._W)(t, r.backgroundAssetId, O.Q, "webp") : true
+          thumbnailSrc: null != r.thumbnailAssetId ? (0, P._W)(t, r.thumbnailAssetId, 112, "webp") : true,
+          backgroundSrc: null != r.backgroundAssetId ? (0, P._W)(t, r.backgroundAssetId, O.Q, k._Z) : true
         }) : a.push({
           type: "image",
           src: (0, P._W)(t, e, O.Q, "webp"),
-          thumbnailSrc: null != r.thumbnailAssetId ? (0, P._W)(t, r.thumbnailAssetId, O.Q, "webp") : true,
-          backgroundSrc: null != r.backgroundAssetId ? (0, P._W)(t, r.backgroundAssetId, O.Q, "webp") : true
+          thumbnailSrc: null != r.thumbnailAssetId ? (0, P._W)(t, r.thumbnailAssetId, 112, "webp") : true,
+          backgroundSrc: null != r.backgroundAssetId ? (0, P._W)(t, r.backgroundAssetId, O.Q, k._Z) : true
         }))
       }
       return [l, a]

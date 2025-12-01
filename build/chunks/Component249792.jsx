@@ -20,15 +20,15 @@ function d(e) {
     active: i,
     onAnimationStart: d,
     onAnimationRest: f
-  } = e, h = {}, p = {};
-  h.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", p.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
+  } = e, p = {}, h = {};
+  p.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", h.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
   let g = (0, s.dQu)(a.Z.unsafe_rawColors.BRAND_500).hex(),
     m = (0, s.dQu)(a.Z.unsafe_rawColors.PRIMARY_630).hex();
-  i && null == t.icon && (h.backgroundColor = g, p.backgroundColor = m);
+  i && null == t.icon && (p.backgroundColor = g, h.backgroundColor = m);
   let b = (0, s.Yzy)(n, {
-    from: h,
-    enter: p,
-    leave: h,
+    from: p,
+    enter: h,
+    leave: p,
     config: {
       duration: 100
     },

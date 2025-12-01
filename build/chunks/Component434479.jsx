@@ -1,7 +1,7 @@
 /** Chunk was on 64271 **/
 /** chunk id: 434479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => p
+  m: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function h(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,11 +46,11 @@ function h(e, t) {
   }), e
 }
 
-function p(e) {
+function h(e) {
   var t, {
       id: n,
       className: i,
-      innerClassName: p,
+      innerClassName: h,
       renderIcon: g,
       text: m,
       selected: b,
@@ -78,8 +78,8 @@ function p(e) {
     C = null != (t = (0, a.q)(m)) ? t : "";
   return (0, r.jsx)("li", {
     ref: v,
-    children: (0, r.jsxs)(s.kL8, h(f({}, j), {
-      buttonProps: h(f({}, x), {
+    children: (0, r.jsxs)(s.kL8, p(f({}, j), {
+      buttonProps: p(f({}, x), {
         id: n,
         role: "button"
       }),
@@ -101,7 +101,7 @@ function p(e) {
       children: [y, O ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
-        className: l()([d.link, d.basicChannelRowLink, p]),
+        className: l()([d.link, d.basicChannelRowLink, h]),
         children: (0, r.jsxs)("div", {
           className: c.content,
           children: [(0, r.jsx)("div", {

@@ -111,7 +111,7 @@ function Z(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, a.e7)([C.default], () => t.isDM() ? C.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, p.x)(t) : i.getAvatarURL(true, 40);
+  } = e, i = (0, a.e7)([C.default], () => t.isDM() ? C.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, h.x)(t) : i.getAvatarURL(true, 40);
   return (0, r.jsx)(c.P3F, {
     onClick: n,
     tabIndex: false,
@@ -145,14 +145,14 @@ function T(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), u = (0, a.e7)([O.Z], () => O.Z.getChannel(t.parent_id)), d = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), f = (0, m.KS)(t, o), h = (0, g.ZP)(t, false), p = null == u ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(u.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
+  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), u = (0, a.e7)([O.Z], () => O.Z.getChannel(t.parent_id)), d = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), f = (0, m.KS)(t, o), p = (0, g.ZP)(t, false), h = null == u ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(u.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(A, {
     channel: t
   }) : (0, r.jsx)(c.P3F, {
     className: l()(S.subtext, S.guildName),
     onClick: n,
-    children: p
+    children: h
   });
   return (0, r.jsxs)("div", {
     className: S.channelNameSection,
@@ -170,7 +170,7 @@ function T(e) {
           color: "currentColor"
         }), (0, r.jsx)("span", {
           className: S.channelNameSpan,
-          children: h
+          children: p
         }), null != i && i > 0 ? (0, r.jsx)("div", {
           className: S.badge,
           children: (0, r.jsx)(c.mAB, {
@@ -212,18 +212,18 @@ function A(e) {
     voiceChannel: c
   } = (0, f.Z)({
     userId: null == n ? true : n.id
-  }), p = s ? c : true;
+  }), h = s ? c : true;
   return (0, d.Z)({
     activities: l,
     status: i,
     applicationStream: o,
-    voiceChannel: p
-  }) ? (0, r.jsx)(h.Z, {
+    voiceChannel: h
+  }) ? (0, r.jsx)(p.Z, {
     location: "RecentsChannelHeader",
     user: n,
     activities: l,
     applicationStream: o,
-    voiceChannel: p,
+    voiceChannel: h,
     hideTooltip: true
   }) : null
 }

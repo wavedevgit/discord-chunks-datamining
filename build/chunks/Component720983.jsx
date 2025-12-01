@@ -49,22 +49,22 @@ function N(e) {
     selectedPageIndex: a
   } = e, N = (0, s.wjy)((0, d.ZP)()), E = (0, p.Y)({
     location: "SocialLayerStorefrontHeader"
-  }), R = (0, r.e7)([I.default], () => I.default.getCurrentUser()), Z = (0, m.oR)(), {
+  }), Z = (0, r.e7)([I.default], () => I.default.getCurrentUser()), R = (0, m.oR)(), {
     analyticsLocations: T
   } = (0, u.ZP)(), A = i.useCallback(() => {
-    (null == R ? true : R.id) != null && (0, _.openUserProfileModal)({
-      userId: R.id,
+    (null == Z ? true : Z.id) != null && (0, _.openUserProfileModal)({
+      userId: Z.id,
       section: j.oh.WISHLIST,
       showGuildProfile: false,
       sourceAnalyticsLocations: [c.Z.SOCIAL_LAYER_STOREFRONT]
     })
-  }, [R]), M = i.useCallback(() => {
+  }, [Z]), M = i.useCallback(() => {
     f.default.track(k.rMx.SLAYER_STOREFRONT_PAGE_ELEMENT_CLICKED, {
-      slayer_storefront_session_id: null == Z ? true : Z.sessionId,
+      slayer_storefront_session_id: null == R ? true : R.sessionId,
       cta_type: C.US.LEARN_MORE,
       location_stack: T
     }), window.open(h.Z.getArticleURL(k.BhN.SOCIAL_LAYER_STOREFRONT))
-  }, [Z, T]);
+  }, [R, T]);
   if (null == t) return null;
   let y = null != t.logoAssetId ? (0, x._W)(t.applicationId, t.logoAssetId, 75) : null,
     O = null != t.lightThemeLogoAssetId ? (0, x._W)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,

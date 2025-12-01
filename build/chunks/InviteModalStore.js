@@ -88,7 +88,7 @@ let w = new Z(Chunk570140.Z, {
         if (null != f.Z.getChannel(e.id)) return (0, c.XU)(v.ME, e.id), y.ZP.focus(), false
       } else {
         if (null == n) returnfalse;
-        if (null != h.Z.getGuild(n.id) && !(0, s.TY)(t)) {
+        if (null != p.Z.getGuild(n.id) && !(0, s.TY)(t)) {
           let e = function(e) {
             if ((0, s.W6)(e)) return j.oC.ROLE_SUBSCRIPTIONS;
             let {
