@@ -90,7 +90,7 @@ async function O(e) {
     type: "USER_SETTINGS_MODAL_OPEN",
     subsection: null != l ? l : null
   }, d)), (0, f.yP)("openUserSettings") ? (0, i.nfh)(y) ? c.Z.setState({
-    targetKey: e
+    requestedTargetKey: e
   }) : await (0, i.ZDy)(async () => {
     let {
       default: t

@@ -19,12 +19,12 @@ function o(e) {
     useDisabled: u,
     useDisabledMessage: d,
     useBadge: f
-  } = n, p = s(), b = null == c ? true : c(), y = o(), g = null != (t = null == u ? true : u()) && t, v = null == d ? true : d(), h = null == f ? true : f();
+  } = n, p = s(), b = null == c ? true : c(), y = o(), g = null != (t = null == u ? true : u()) && t, v = null == d ? true : d(), m = null == f ? true : f();
   return (0, r.jsxs)(i.X, {
     children: [(0, r.jsx)(l.rsf, {
       label: p,
       description: b,
-      badge: h,
+      badge: m,
       checked: y,
       onChange: e => a(e),
       disabled: g

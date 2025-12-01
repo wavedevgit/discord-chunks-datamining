@@ -1,7 +1,7 @@
 /** Chunk was on 88569 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => m
+  P: () => h
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,14 +20,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk845435 = require("./845435.js");
 
-function m(e) {
+function h(e) {
   let {
     root: t,
     header: n,
     footer: i,
     onClose: g,
-    emptyState: m
-  } = e, j = y.Z.useField("showNavigationMobile"), O = l.useRef(null), C = l.useMemo(() => {
+    emptyState: h
+  } = e, j = y.Z.useField("showNavigationMobile"), O = l.useRef(null), P = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -44,7 +44,7 @@ function m(e) {
         }
       })
     }), e
-  }, [t.layout]), [S, P] = l.useMemo(() => {
+  }, [t.layout]), [C, S] = l.useMemo(() => {
     let e = [],
       n = [];
     return t.layout.forEach(t => {
@@ -54,29 +54,31 @@ function m(e) {
   return l.useEffect(() => {
     var e;
     if (null == O.current || null == w) return;
-    let t = null == (e = O.current.getScrollerNode()) ? true : e.querySelector('[data-settings-sidebar-item="'.concat(w, '"]'));
-    null != t && O.current.scrollIntoViewNode({
-      node: t,
+    let t = y.Z.getField("navTransition"),
+      n = null == t || t.animateScroll,
+      r = null == (e = O.current.getScrollerNode()) ? true : e.querySelector('[data-settings-sidebar-item="'.concat(w, '"]'));
+    null != r && O.current.scrollIntoViewNode({
+      node: r,
       padding: 8,
-      animate: !u.Z.useReducedMotion
+      animate: !u.Z.useReducedMotion && n
     })
   }, [w]), (0, r.jsx)(c.f6W, {
     theme: _,
     children: e => (0, r.jsx)(f.ZP, {
-      contentTypes: C,
+      contentTypes: P,
       children: t => {
         let {
           visibleContent: l
         } = t;
         return (0, r.jsxs)("div", {
-          className: o()(h.sidebar, e, {
-            [h.mobile]: s.tq,
-            [h.mobileNavigationOpen]: j
+          className: o()(m.sidebar, e, {
+            [m.mobile]: s.tq,
+            [m.mobileNavigationOpen]: j
           }),
           children: [(0, r.jsxs)("div", {
-            className: h.fixedContent,
+            className: m.fixedContent,
             children: [s.tq && (0, r.jsx)("div", {
-              className: h.mobileCloseButton,
+              className: m.mobileCloseButton,
               children: (0, r.jsx)(c.hU, {
                 icon: c.Uz9,
                 onClick: g,
@@ -85,12 +87,12 @@ function m(e) {
                 "aria-label": v.intl.string(v.t.cpT0Cq)
               })
             }), (0, r.jsx)("div", {
-              children: S.map(e => (0, r.jsx)(x, {
+              children: C.map(e => (0, r.jsx)(x, {
                 section: e,
                 visibleContent: l,
                 hoisted: true
               }, e.key))
-            }), null != n && (0, r.jsx)(n, {}), null != m && 0 === P.length && (0, r.jsx)(m, {})]
+            }), null != n && (0, r.jsx)(n, {}), null != h && 0 === S.length && (0, r.jsx)(h, {})]
           }), (0, r.jsx)(a.bG, {
             navigator: E,
             children: (0, r.jsx)(a.SJ, {
@@ -135,12 +137,12 @@ function m(e) {
                     var t;
                     O.current = e, o.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
                   },
-                  className: h.navScroller,
+                  className: m.navScroller,
                   fade: true
                 }, a), n = n = {
                   children: [(0, r.jsx)("nav", {
-                    className: h.nav,
-                    children: P.map(e => (0, r.jsx)(x, {
+                    className: m.nav,
+                    children: S.map(e => (0, r.jsx)(x, {
                       section: e,
                       visibleContent: l
                     }, e.key))
@@ -172,12 +174,12 @@ function x(e) {
     hoisted: i = false
   } = e, o = null == (t = n.useLabel) ? true : t.call(n);
   return (0, r.jsxs)("ul", {
-    className: h.section,
+    className: m.section,
     "aria-label": o,
     children: [null != o && (0, r.jsx)("div", {
-      className: h.sectionLabel,
+      className: m.sectionLabel,
       children: (0, r.jsx)(c.Heading, {
-        className: h.label,
+        className: m.label,
         variant: "heading-sm/medium",
         color: "text-tertiary",
         children: o

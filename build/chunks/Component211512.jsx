@@ -21,18 +21,18 @@ function a(e) {
   } = t, [f, p] = l.useState(false), b = l.useCallback(() => {
     let e = d();
     e instanceof Promise && (p(true), e.finally(() => p(false)))
-  }, [d]), y = a(), g = null == s ? true : s(), v = n(), h = null == c ? true : c(), m = null == u ? true : u();
+  }, [d]), y = a(), g = null == s ? true : s(), v = n(), m = null == c ? true : c(), h = null == u ? true : u();
   return (0, r.jsx)(o.X, {
     children: (0, r.jsx)(i.gNt, {
       label: y,
       description: g,
-      disabled: m,
+      disabled: h,
       layout: "horizontal",
       children: (0, r.jsx)(i.Button, {
         onClick: b,
         text: v,
-        variant: h,
-        disabled: m,
+        variant: m,
+        disabled: h,
         loading: f
       })
     })

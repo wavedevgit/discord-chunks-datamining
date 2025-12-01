@@ -34,8 +34,8 @@ function a(e, t) {
           l.current.has(e) && t.push(e)
         }), 0 === t.length) return;
       let n = t[0];
-      o.Z.getField("activeCategoryKey") !== n && o.Z.setState({
-        activeCategoryKey: n
+      o.Z.getField("currentCategoryKey") !== n && o.Z.setState({
+        currentCategoryKey: n
       })
     }, {
       root: e,

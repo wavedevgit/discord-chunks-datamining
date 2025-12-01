@@ -74,14 +74,16 @@ function g(e) {
 function v(e) {
   let {
     categories: t
-  } = e, n = p.Z.useField("activeCategoryKey");
-  (0, f.ZP)(() => (p.Z.setState({
-    activeCategoryKey: t[0].key
-  }), () => {
-    p.Z.setState({
-      activeCategoryKey: true
+  } = e, n = p.Z.useField("currentCategoryKey");
+  (0, f.ZP)(() => {
+    t.some(e => e.key === n) || p.Z.setState({
+      currentCategoryKey: t[0].key
     })
-  }));
+  }), l.useEffect(() => () => {
+    p.Z.setState({
+      currentCategoryKey: true
+    })
+  }, []);
   let i = l.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
     o = (0, d.q_F)({
       y: 36 * i,
@@ -104,10 +106,8 @@ function v(e) {
         onClick: () => {
           var t;
           return t = e.key, void p.Z.setState({
-            activeCategoryKey: t,
-            targetKey: t,
-            showNavigationMobile: false,
-            disableSidebarCategoryAutoSelect: true
+            requestedTargetKey: t,
+            showNavigationMobile: false
           })
         },
         active: e.key === n,

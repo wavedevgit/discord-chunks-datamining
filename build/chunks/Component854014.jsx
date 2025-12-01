@@ -28,9 +28,9 @@ function p(e) {
   } = e, {
     icon: g,
     stronglyDiscouragedCustomComponent: v,
-    trailing: h,
-    useTitle: m
-  } = c, x = null == m ? true : m();
+    trailing: m,
+    useTitle: h
+  } = c, x = null == h ? true : h();
   return (0, r.jsxs)(l, {
     "data-settings-sidebar-item": p,
     className: f.itemContainer,
@@ -67,10 +67,10 @@ function p(e) {
           color: "currentColor",
           children: x
         })]
-      }), null != h && (0, r.jsx)("div", {
+      }), null != m && (0, r.jsx)("div", {
         className: f.itemContent,
         children: (0, r.jsx)(u.W, {
-          trailing: h,
+          trailing: m,
           visibleContent: d,
           isSelected: a
         })
@@ -94,7 +94,7 @@ function b(e) {
     visibleContent: n,
     hoisted: i = false
   } = e, o = l.useMemo(() => t.layout[0], [t]), s = c.Z.useField("currentPanelKey"), u = null != s && s === (null == o ? true : o.key), f = null != o ? () => c.Z.setState({
-    targetKey: o.key,
+    requestedTargetKey: o.key,
     showNavigationMobile: false
   }) : t.onClick, b = l.useMemo(() => {
     var e;

@@ -15,7 +15,7 @@ class r {
   register(t, e, n, i) {
     this.map.set(t.key, {
       node: t,
-      targetPanelKey: e,
+      parentPanelKey: e,
       parentCategoryKey: n,
       parentAccordionKey: i
     })

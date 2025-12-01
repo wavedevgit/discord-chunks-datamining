@@ -23,11 +23,11 @@ function a(e) {
     asValueChanges: b,
     markers: y,
     onMarkerRender: g
-  } = t, [v] = l.useState(() => a()), h = u(), m = null == d ? true : d(), x = null == f ? true : f();
+  } = t, [v] = l.useState(() => a()), m = u(), h = null == d ? true : d(), x = null == f ? true : f();
   return (0, r.jsx)(o.X, {
     children: (0, r.jsx)(i.iRW, {
-      label: h,
-      description: m,
+      label: m,
+      description: h,
       disabled: x,
       initialValue: v,
       minValue: s,

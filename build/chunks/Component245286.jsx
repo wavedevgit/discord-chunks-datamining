@@ -1,7 +1,7 @@
 /** Chunk was on 88569 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => S
+  default: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk942408 = require("./942408.js");
 
-function C(e) {
+function P(e) {
   let {
     destinationPanel: t,
     originPanel: n
@@ -38,7 +38,7 @@ function C(e) {
   })
 }
 
-function S(e) {
+function C(e) {
   var {
     target: t
   } = e, n = function(e, t) {
@@ -60,12 +60,12 @@ function S(e) {
     {
       node: a,
       directory: c
-    } = (0, f.Z)(m.Z, o),
+    } = (0, f.Z)(h.Z, o),
     u = null != t && null != c.entry(t) ? t : true,
     y = l.useRef(null);
   return ((0, s.ZP)(() => {
     let e = p.Z.getSection();
-    null != e && (C({
+    null != e && (P({
       destinationPanel: e,
       originPanel: null
     }), y.current = e)
@@ -89,12 +89,12 @@ function S(e) {
   }({
     root: a,
     directory: c,
-    sidebarHeader: P,
+    sidebarHeader: S,
     emptyState: _,
-    sidebarFooter: h.Z,
+    sidebarFooter: m.Z,
     onPanelChange: e => {
       let t = (0, x.getUserSettingsSectionsByWebUserSettings)().get(e);
-      null != t && (C({
+      null != t && (P({
         destinationPanel: t,
         originPanel: y.current
       }), y.current = t)
@@ -104,7 +104,7 @@ function S(e) {
   }, n)) : null
 }
 
-function P() {
+function S() {
   let e = Chunk996733.Z.useField("query"),
     t = Chunk473749.useRef(null),
     [n, i] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),

@@ -21,20 +21,21 @@ function b(e) {
     collapsedSubtitle: n,
     isOpen: i,
     setIsOpen: b,
-    children: y
-  } = e, g = l.useRef(null), [v, h] = l.useState(null), m = i && null != v;
+    children: y,
+    animate: g = true
+  } = e, v = l.useRef(null), [m, h] = l.useState(null), x = i && null != m;
   return l.useLayoutEffect(() => {
-    null != g.current && null == v && h(g.current.clientHeight)
-  }, [v]), (0, r.jsxs)(a.pJ, {
+    null != v.current && null == m && h(v.current.clientHeight)
+  }, [m]), (0, r.jsxs)(a.pJ, {
     isExpanded: i,
     onExpandedChange: b,
     children: [(0, r.jsx)(f.x, {
-      ref: g,
-      style: null != v ? {
-        minHeight: v
+      ref: v,
+      style: null != m ? {
+        minHeight: m
       } : true,
       title: t,
-      description: m ? true : n,
+      description: x ? true : n,
       secondaryTrailingElement: (0, r.jsx)(d.tEY, {
         children: (0, r.jsx)(s.z, {
           slot: "trigger",
@@ -50,7 +51,9 @@ function b(e) {
       onClick: () => b(!i),
       headingColor: "text-link"
     }), (0, r.jsx)(a.V2, {
-      className: p.panel,
+      className: o()(p.panel, {
+        [p.disablePanelAnimation]: !g
+      }),
       children: (0, r.jsx)(d.Kqy, {
         gap: 16,
         padding: {

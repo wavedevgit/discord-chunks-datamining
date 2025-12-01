@@ -21,8 +21,8 @@ function p(e) {
       target: y,
       defaultTarget: g,
       onPanelChange: v,
-      sidebarHeader: h,
-      sidebarFooter: m,
+      sidebarHeader: m,
+      sidebarFooter: h,
       emptyState: x
     } = e,
     j = function(e, t) {
@@ -40,21 +40,21 @@ function p(e) {
       }
       return l
     }(e, ["root", "directory", "target", "defaultTarget", "onPanelChange", "sidebarHeader", "sidebarFooter", "emptyState"]);
-  let [O, C] = l.useState(false), [S, P] = l.useState(1.4), _ = l.useRef(null), E = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), w = (0, i.e7)([c.Z], () => c.Z.isFocused());
+  let [O, P] = l.useState(false), [C, S] = l.useState(1.4), _ = l.useRef(null), E = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), w = (0, i.e7)([c.Z], () => c.Z.isFocused());
   return l.useEffect(() => {
     let e = e => {
       let {
         intensity: t,
         duration: n
       } = e;
-      !E && w && (C(true), P(null != t ? t : 1.4), clearTimeout(_.current), _.current = setTimeout(() => C(false), null != n ? n : 1e3))
+      !E && w && (P(true), S(null != t ? t : 1.4), clearTimeout(_.current), _.current = setTimeout(() => P(false), null != n ? n : 1e3))
     };
     return u.S.subscribe(f.CkL.SHAKE_SETTINGS_MODAL, e), () => {
       u.S.unsubscribe(f.CkL.SHAKE_SETTINGS_MODAL, e), clearTimeout(_.current)
     }
   }, [E, w]), (0, r.jsx)(a.UkV, {
     isShaking: O,
-    intensity: S,
+    intensity: C,
     children: (0, r.jsx)(o.A, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -80,9 +80,9 @@ function p(e) {
         target: y,
         defaultTarget: g,
         onPanelChange: v,
-        sidebarHeader: h,
+        sidebarHeader: m,
         emptyState: x,
-        sidebarFooter: m
+        sidebarFooter: h
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

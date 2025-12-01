@@ -33,11 +33,11 @@ function j(e) {
     case l.Jq.SIDEBAR_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
     case l.Jq.PANEL:
-      return (0, r.jsx)(m.T, {
+      return (0, r.jsx)(h.T, {
         node: t
       });
     case l.Jq.PANE:
-      return (0, r.jsx)(h.Z, {
+      return (0, r.jsx)(m.Z, {
         node: t
       });
     case l.Jq.LIST:

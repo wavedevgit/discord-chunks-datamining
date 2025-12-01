@@ -25,8 +25,8 @@ function d(e) {
       layout: y,
       collapseAfter: g,
       ContextProvider: v,
-      useCollapsibleTitle: h,
-      useCollapsedSubtitle: m
+      useCollapsibleTitle: m,
+      useCollapsedSubtitle: h
     } = d,
     x = y.filter(e => {
       var t, n;
@@ -34,22 +34,22 @@ function d(e) {
     }),
     j = null != g ? x.slice(0, g) : x,
     O = null != g ? x.slice(g) : [],
-    C = null != v ? v : l.Fragment,
-    S = null == f ? true : f(),
-    P = null != (t = null == h ? true : h(p, O.length)) ? t : (n = O.length, p ? c.intl.formatToPlainString(c.t["3SHL+d"], {
+    P = null != v ? v : l.Fragment,
+    C = null == f ? true : f(),
+    S = null != (t = null == m ? true : m(p, O.length)) ? t : (n = O.length, p ? c.intl.formatToPlainString(c.t["3SHL+d"], {
       count: n
     }) : c.intl.formatToPlainString(c.t["8JRFyZ"], {
       count: n
     })),
-    _ = null == m ? true : m();
-  return (0, r.jsx)(C, {
+    _ = null == h ? true : h();
+  return (0, r.jsx)(P, {
     children: (0, r.jsxs)(i.Kqy, {
       gap: 8,
-      children: [null != S && (0, r.jsx)(i.Heading, {
+      children: [null != C && (0, r.jsx)(i.Heading, {
         variant: "heading-md/semibold",
         color: "header-secondary",
         className: u.listTitle,
-        children: S
+        children: C
       }), j.map((e, t) => (0, r.jsxs)(l.Fragment, {
         children: [(0, r.jsx)(o.Z, {
           node: e
@@ -59,7 +59,7 @@ function d(e) {
         children: [(0, r.jsx)(a.Z, {
           className: u.hoverDivider
         }), (0, r.jsx)(s.I, {
-          title: P,
+          title: S,
           collapsedSubtitle: _,
           isOpen: p,
           setIsOpen: b,

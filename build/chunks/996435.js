@@ -6,8 +6,9 @@ require.d(exports, {
 });
 let r = (0, require("./972959.js").H)(() => ({
   currentPanelKey: true,
-  targetKey: true,
-  showNavigationMobile: true,
-  activeCategoryKey: true,
-  disableSidebarCategoryAutoSelect: false
+  currentCategoryKey: true,
+  disableSidebarCategoryAutoSelect: false,
+  requestedTargetKey: true,
+  navTransition: true,
+  showNavigationMobile: true
 }))
