@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 5888, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h,
-  p: () => o
+  Z: () => m,
+  p: () => c
 });
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -15,53 +15,70 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var o = ((r = {})[r.INIT = 0] = "INIT", r[r.FETCHING = 1] = "FETCHING", r[r.SUCCESS = 2] = "SUCCESS", r[r.ERROR = 3] = "ERROR", r);
-let c = {},
-  u = 0,
-  d = {
+
+function o(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      s(e, t, n[t])
+    })
+  }
+  return e
+}
+var c = ((r = {})[r.INIT = 0] = "INIT", r[r.FETCHING = 1] = "FETCHING", r[r.SUCCESS = 2] = "SUCCESS", r[r.ERROR = 3] = "ERROR", r);
+let u = {},
+  d = 0,
+  p = {
     volume: 1,
     isMuted: false
-  };
+  },
+  f = o({}, p);
 
-function p() {
-  c = {}, u = 0
+function h() {
+  u = {}, d = 0
 }
-class f extends(i = Chunk442837.ZP.PersistedStore) {
+class g extends(i = Chunk442837.ZP.PersistedStore) {
   getState() {
-    return d
+    return f
   }
   initialize(e) {
-    p(), null != e && (d = e)
+    h(), null != e && (f = e)
   }
   getCheckpointData() {
-    return c
-  }
-  getFetchState() {
     return u
   }
+  getFetchState() {
+    return d
+  }
   get volume() {
-    return d.volume
+    return f.volume
   }
   get isMuted() {
-    return d.isMuted
+    return f.isMuted
   }
 }
-s(f, "displayName", "CheckpointStore"), s(f, "persistKey", "CheckpointStore");
-let h = new f(Chunk570140.Z, {
-  CONNECTION_OPEN: p,
+s(g, "displayName", "CheckpointStore"), s(g, "persistKey", "CheckpointStore");
+let m = new g(Chunk570140.Z, {
+  CONNECTION_OPEN: h,
   CHECKPOINT_FETCH_START: function() {
-    u = 1
+    d = 1
   },
   CHECKPOINT_FETCH_SUCCESS: function(e) {
-    c = e.data, u = 2
+    u = e.data, d = 2
   },
   CHECKPOINT_FETCH_FAILED: function() {
-    u = 3
+    d = 3
   },
   CHECKPOINT_SET_VOLUME: function(e) {
-    d.volume = e.volume
+    f.volume = e.volume
   },
   CHECKPOINT_TOGGLE_MUTE: function() {
-    d.isMuted = !d.isMuted
+    f.isMuted = !f.isMuted
+  },
+  LOGOUT: function() {
+    h(), f = o({}, p)
   }
 })
