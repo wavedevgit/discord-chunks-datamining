@@ -66,50 +66,51 @@ let g = e => {
     progressCirclePercent: O,
     progressCircleUrgency: v,
     actions: I,
-    onShow: T
-  } = e, S = u.vK[t].nameUnformatted, A = (f.intl.string(f.t.lG6a5x) + " " + f.intl.string(S)).toLocaleUpperCase(), C = (0, o.Z)(t), N = (0, s.J)(t);
+    onShow: T,
+    estimatedTooltipHeight: S = 300
+  } = e, A = u.vK[t].nameUnformatted, C = (f.intl.string(f.t.lG6a5x) + " " + f.intl.string(A)).toLocaleUpperCase(), N = (0, o.Z)(t), R = (0, s.J)(t);
   (0, i.useEffect)(() => {
-    a.a[a.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE](), new Image().src = N
-  }, [N]);
-  let R = (0, i.useCallback)(() => {
+    a.a[a.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE](), new Image().src = R
+  }, [R]);
+  let P = (0, i.useCallback)(() => {
       null == n || n(d.L.USER_DISMISS)
     }, [n]),
-    P = {
-      gradientColor: C,
+    D = {
+      gradientColor: N,
       size: "lg",
       graphic: {
         type: "dynamic",
         component: a.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
         aspectRatio: "6/4",
         props: {
-          src: N,
-          alt: A,
+          src: R,
+          alt: C,
           progressCircleText: y,
           progressCirclePercent: O,
           progressCircleUrgency: v
         }
       },
-      title: A,
+      title: C,
       body: b,
       actions: I
     };
   return "tooltip" === h ? (0, r.jsx)(c.Z, m(p({
     targetElementRef: E,
-    estimatedTooltipHeight: 300,
+    estimatedTooltipHeight: S,
     delay: g,
     onShow: T
-  }, P), {
+  }, D), {
     children: _
   })) : (0, r.jsxs)(r.Fragment, {
     children: [_, (0, r.jsx)(l.Z, p({
       targetElementRef: E,
       shouldShow: true,
-      onRequestClose: R,
+      onRequestClose: P,
       align: "right",
       position: "top",
       caretConfig: {
         align: "center"
       }
-    }, P))]
+    }, D))]
   })
 }

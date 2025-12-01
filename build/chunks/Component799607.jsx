@@ -71,13 +71,13 @@ function _(e) {
   }, [w]);
   i.useEffect(() => w, [w]);
   let x = i.useCallback(() => {
-      "closed" === y && (w(), O("opening-mouse"))
+      ("closed" === y || "closing" === y) && (w(), O("opening-mouse"))
     }, [w, y]),
     M = i.useCallback(() => {
       T && L(false)
     }, [L, T]),
     k = i.useCallback(() => {
-      if (I.current || "closed" !== y) {
+      if (I.current || "closed" !== y && "closing" !== y) {
         I.current = false;
         return
       }
@@ -88,20 +88,17 @@ function _(e) {
     }, [L, y]);
   i.useEffect(() => {
     if ("opening-mouse" === y) return v.current = window.setTimeout(() => {
-      O("open-mouse"), null == _ || _()
+      v.current = null, O("open-mouse"), null == _ || _()
     }, u), w
   }, [y, u, _, w]), i.useEffect(() => {
     if ("opening-keyboard" === y) return v.current = window.setTimeout(() => {
-      O("open-keyboard"), null == _ || _()
+      v.current = null, O("open-keyboard"), null == _ || _()
     }, u), w
   }, [y, u, _, w]), i.useEffect(() => {
-    if ("closing" === y) {
-      let e = window.setTimeout(() => {
-        O("closed")
-      }, f);
-      return () => clearTimeout(e)
-    }
-  }, [y]), i.useEffect(() => {
+    if ("closing" === y) return v.current = window.setTimeout(() => {
+      v.current = null, O("closed")
+    }, f), w
+  }, [y, w]), i.useEffect(() => {
     if (!A) return;
     let e = e => {
       ("Escape" === e.key || "Esc" === e.key) && (e.preventDefault(), e.stopPropagation(), L(true))

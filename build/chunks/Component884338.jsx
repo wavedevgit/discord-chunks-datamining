@@ -12,7 +12,7 @@ var r, Chunk54381 = require("./54381.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
-  Chunk456077 = require("./456077.jsx"),
+  Chunk670188 = require("./670188.jsx"),
   Chunk598077 = require("./598077.js"),
   Chunk594174 = require("./594174.js"),
   Chunk426563 = require("./426563.js"),
@@ -128,20 +128,20 @@ class P extends(r = Chunk473749.PureComponent) {
       size: r,
       extraDetail: a
     } = this.props, o = [], s = module.length === exports ? module.length : exports - 1, l = this.renderMoreUsers(s), u = 0;
-    for (; Chunk456077 < s && Chunk456077 < module.length;) {
+    for (; Chunk670188 < s && Chunk670188 < module.length;) {
       var d;
-      let t = null == Chunk481060 && null == Chunk473749 && Chunk456077 === module.length - 1,
-        s = require(module[Chunk456077], exports, Chunk456077);
+      let t = null == Chunk481060 && null == Chunk473749 && Chunk670188 === module.length - 1,
+        s = require(module[Chunk670188], exports, Chunk670188);
       Chunk120356.push(exports ? (0, Chunk54381.jsx)("div", {
         className: Chunk245141.avatarContainer,
         children: s
-      }, S(null != (d = module[Chunk456077]) ? Chunk598077 : null, Chunk456077)) : (0, Chunk54381.jsx)(Chunk686546.ZP, {
+      }, S(null != (d = module[Chunk670188]) ? Chunk598077 : null, Chunk670188)) : (0, Chunk54381.jsx)(Chunk686546.ZP, {
         className: Chunk245141.avatarContainerMasked,
         height: r,
         width: r,
         mask: Chunk686546.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
         children: s
-      }, S(module[Chunk456077], Chunk456077))), Chunk456077++
+      }, S(module[Chunk670188], Chunk670188))), Chunk670188++
     }
     return null != Chunk473749 ? Chunk120356.push(Chunk473749) : null != Chunk481060 && Chunk120356.push(Chunk481060), Chunk120356
   }
@@ -198,7 +198,7 @@ class P extends(r = Chunk473749.PureComponent) {
     });
     let c = require.find(e => e instanceof d.Z && e.id === l),
       _ = Chunk120356 && null == Chunk594174.default.getUser(Chunk481060);
-    return (0, Chunk54381.jsx)(Chunk456077.Z, {
+    return (0, Chunk54381.jsx)(Chunk670188.Z, {
       targetElementRef: this._ref,
       userId: Chunk481060,
       user: Chunk426563 && null != Chunk686546 ? Chunk686546 : true,

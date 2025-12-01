@@ -210,6 +210,7 @@ function Z(e) {
               type: "tiered_tenure_badge_profile_" + (O ? "self" : "other")
             })
           },
+          estimatedTooltipHeight: 220,
           children: n
         }, "".concat(e.id, "-").concat(t))
       }

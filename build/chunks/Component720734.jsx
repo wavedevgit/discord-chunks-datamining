@@ -72,7 +72,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk768419 = require("./768419.js"),
   Chunk172416 = require("./172416.js"),
   Chunk184301 = require("./184301.js"),
-  Chunk456077 = require("./456077.jsx"),
+  Chunk670188 = require("./670188.jsx"),
   Chunk620799 = require("./620799.jsx"),
   Chunk313789 = require("./313789.js"),
   Chunk846071 = require("./846071.js"),
@@ -893,7 +893,7 @@ function tv() {
       avatar: [],
       settings: []
     };
-  !Chunk659580 && (Chunk72897 && Chunk456077.avatar.push(Chunk704215.z.DISPLAY_NAME_STYLES_COACHMARK), Chunk78933 && Chunk456077.avatar.push(Chunk704215.z.TENURE_BADGE_CHURN_REMINDER), Chunk184301 && Chunk456077.avatar.push(Chunk704215.z.WIDGETS_RTC_UPSELL_COACHMARK), Chunk379839 && Chunk456077.settings.push(Chunk704215.z.NITRO_PRIVACY_PERK_BETA_COACHMARK));
+  !Chunk659580 && (Chunk72897 && Chunk670188.avatar.push(Chunk704215.z.DISPLAY_NAME_STYLES_COACHMARK), Chunk78933 && Chunk670188.avatar.push(Chunk704215.z.TENURE_BADGE_CHURN_REMINDER), Chunk184301 && Chunk670188.avatar.push(Chunk704215.z.WIDGETS_RTC_UPSELL_COACHMARK), Chunk379839 && Chunk670188.settings.push(Chunk704215.z.NITRO_PRIVACY_PERK_BETA_COACHMARK));
   let {
     shouldShowTooltip: eb,
     dismissTooltip: ev
@@ -910,7 +910,7 @@ function tv() {
       activities: Chunk120356,
       applicationStream: Chunk374470,
       voiceChannel: Chunk239091,
-      dismissibleContents: Chunk456077,
+      dismissibleContents: Chunk670188,
       visibleRecurringAvatarDc: Chunk287647,
       markRecurringAvatarDcAsDismissed: Chunk892567,
       visibleRecurringDoNotDisturbReminderPopoverDc: Chunk53891,

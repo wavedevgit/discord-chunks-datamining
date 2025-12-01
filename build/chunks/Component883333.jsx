@@ -182,7 +182,7 @@ let x = e => {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), L = T >= h.OH.ACCEPTED, x = T >= h.OH.COMPLETED, M = _ || E, k = (0, h.t5)(n, S.dr.QUESTS_CARD, i, O), j = (0, p.O5)(), U = (0, h.Rf)(n), G = (0, y.DD)({
+  }), L = T >= h.OH.ACCEPTED, x = T >= h.OH.COMPLETED, M = _ || E, k = (0, y.t5)(n, S.dr.QUESTS_CARD, i, O), j = (0, p.O5)(), U = (0, h.Rf)(n), G = (0, y.DD)({
     quest: n,
     taskDetails: U,
     location: S.dr.QUESTS_CARD,
